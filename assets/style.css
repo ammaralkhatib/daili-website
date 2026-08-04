@@ -59,7 +59,8 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(15,29
 .hero .copy>*:nth-child(4){animation-delay:.42s}
 @keyframes rise{to{opacity:1;transform:none}}
 .badges{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center}
-.store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:12px;padding:10px 16px;text-decoration:none;line-height:1.15;opacity:.55;cursor:default}
+.store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:12px;padding:10px 16px;text-decoration:none;line-height:1.15;cursor:pointer;transition:opacity .15s}
+.store-badge:hover{opacity:.85}
 .store-badge svg{width:22px;height:22px;fill:#fff;flex:none}
 .store-badge small{display:block;font-size:.65rem;font-weight:400;opacity:.8}
 .store-badge span{font-weight:600;font-size:.98rem}
