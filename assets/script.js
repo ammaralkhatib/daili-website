@@ -1,4 +1,4 @@
-/* FamCanvas site — tiny, dependency-free interactions. */
+/* Daili site — tiny, dependency-free interactions. */
 (function () {
   "use strict";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
