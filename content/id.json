@@ -1,0 +1,245 @@
+{
+  "@@locale": "id",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Pengatur keluarga: kalender bersama, daftar, dan tugas",
+    "description": "Daili adalah cara sederhana mengurus hidup berkeluarga bersama-sama: satu kalender bersama, daftar belanja yang langsung diperbarui, dan tugas untuk seluruh keluarga. Gratis, tanpa iklan.",
+    "ogTitle": "Daili — Pengatur keluarga",
+    "ogDescription": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang.",
+    "supportTitle": "Bantuan — Daili",
+    "supportDescription": "Dapatkan bantuan soal Daili, atau hapus akunmu. Kami biasanya membalas dalam satu sampai dua hari.",
+    "notfoundTitle": "Halaman tidak ditemukan — Daili"
+  },
+
+  "nav": {
+    "features": "Fitur",
+    "pricing": "Harga",
+    "support": "Bantuan",
+    "download": "Unduh",
+    "language": "Bahasa",
+    "skip": "Lompat ke konten"
+  },
+
+  "cta": {
+    "sticky": "Pakai Daili — gratis"
+  },
+
+  "store": {
+    "appleSmall": "Unduh di",
+    "googleSmall": "Dapatkan di"
+  },
+
+  "hero": {
+    "h1a": "Satu keluarga,",
+    "h1b": "satu halaman.",
+    "lead": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang. Dibuat untuk orang tua, untuk anak dengan akun sendiri, dan untuk si kecil yang kamu kelola.",
+    "note": "Gratis · Tanpa iklan · Datamu tetap di Uni Eropa",
+    "altCalendar": "Kalender bulanan Daili",
+    "altHome": "Layar utama Daili dengan kotak-kotak fitur"
+  },
+
+  "howItWorks": {
+    "h2": "Siap dalam waktu sekitar satu menit",
+    "steps": [
+      {
+        "h3": "Unduh aplikasinya",
+        "p": "Gratis di iPhone dan Android. Tanpa kartu kredit, tanpa masa coba yang habis."
+      },
+      {
+        "h3": "Buat keluargamu",
+        "p": "Undang semua orang dengan kode 6 digit atau tautan. Orang tua jadi admin, anak dan remaja punya akun sendiri, dan si kecil yang belum punya email dapat profil yang dikelola."
+      },
+      {
+        "h3": "Semua di satu halaman",
+        "p": "Apa yang kamu tambahkan di ponselmu muncul di ponsel yang lain sekitar satu detik kemudian — kalender, daftar, dan tugas sama saja."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "Lihat ke dalam",
+    "lead": "Seluruh aplikasi, dalam enam layar.",
+    "captions": [
+      "Layar utama — semuanya sejauh satu ketukan",
+      "Kumpulan resep keluargamu, lengkap dengan foto dan impor sekali ketuk",
+      "Foto dan dokumen, disimpan hanya di ponselmu sendiri",
+      "Daftar belanja yang diperbarui saat kamu sedang di toko",
+      "Dari sarapan sampai makan malam, terencana untuk sepekan",
+      "Ulang tahun dan perayaan, diingat setiap tahun"
+    ]
+  },
+
+  "compare": {
+    "h2": "Kenapa tidak pakai kalender bersama saja?",
+    "lead": "Google Kalender sangat bagus untuk urusan kalender. Tapi hidup berkeluarga bukan cuma soal jadwal — dan papan tulis di dapur tidak ikut ke supermarket.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Kalender bersama", "paper": "Kertas dan papan" },
+    "rows": [
+      "Jadwal semua orang di satu tempat",
+      "Pengingat di setiap ponsel",
+      "Daftar belanja yang langsung diperbarui",
+      "Tugas yang ada namanya",
+      "Rencana makan sepekan dan resep",
+      "Anak punya akun sendiri",
+      "Ulang tahun diingat setiap tahun",
+      "Tanpa iklan, tidak ada yang dijual"
+    ],
+    "legend": "✓ ya · ~ sebagian · — tidak"
+  },
+
+  "pricing": {
+    "h2": "Gratis — dan gratis untukmu, selamanya",
+    "lead": "Daili hari ini tidak memungut biaya apa pun. Tanpa iklan, tanpa pelacakan, dan tanpa apa pun yang dijual ke siapa pun.",
+    "points": [
+      "Semua yang ada di halaman ini sudah gratis sekarang",
+      "Tanpa kartu kredit, tanpa masa coba, tanpa fitur yang dikunci",
+      "Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis untukmu"
+    ],
+    "earlyBirdTitle": "Keluarga pertama",
+    "earlyBird": "1000 keluarga pertama yang bergabung tetap dapat semuanya gratis selamanya — termasuk yang kami tambahkan nanti.",
+    "cta": "Pakai Daili gratis"
+  },
+
+  "trust": {
+    "h2": "Rencana keluargamu milik keluargamu",
+    "pills": [
+      { "strong": "Tanpa iklan", "span": "Tidak ada yang perlu ditutup — sekarang tidak, nanti pun tidak." },
+      { "strong": "Tanpa pelacakan", "span": "Tidak ada analitik, tidak ada profiling — situs ini bahkan tidak memakai cookie." },
+      { "strong": "Tidak menjual datamu", "span": "Aplikasi gratis, server di Uni Eropa, dan hakmu sudah menyatu di dalamnya." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Kalender",
+      "h2": "Satu kalender untuk semua",
+      "p": "Sepekan dan sebulan penuh milik keluarga dalam sekali lihat — dan kamu tidak akan lupa menjemput lagi.",
+      "bullets": [
+        "Acara berwarna lengkap dengan kategori, lokasi, dan catatan",
+        "Pengulangan yang benar — sepak bola tiap Selasa, piano dua pekan sekali",
+        "Pengingat di setiap ponsel di keluarga",
+        "Hari libur untuk 36 negara; acara pribadi tetap pribadi"
+      ],
+      "alt": "Kalender bulanan dengan acara berwarna"
+    },
+    "shopping": {
+      "eyebrow": "Belanja",
+      "h2": "Daftar belanja yang ikut berubah",
+      "p": "Kamu ketik \"susu\" di ponselmu — sekitar satu detik kemudian sudah muncul di ponsel pasanganmu yang sedang di toko.",
+      "bullets": [
+        "Daftar bersama yang bisa diubah seluruh keluarga",
+        "Jumlah, kategori, dan catatan di tiap barang",
+        "Barang yang sudah dicentang turun rapi ke bawah"
+      ],
+      "alt": "Daftar belanja bersama"
+    },
+    "todos": {
+      "eyebrow": "Tugas",
+      "h2": "Setiap tugas ada namanya",
+      "p": "Tidak ada lagi \"kupikir kamu yang mengerjakan\". Anak-anak melihat tugasnya sendiri dan mencentangnya sendiri.",
+      "bullets": [
+        "Penanggung jawab, tenggat, dan pengingat",
+        "Cocok untuk pekerjaan rumah, urusan di luar, dan semua di antaranya"
+      ],
+      "alt": "Daftar tugas keluarga beserta penanggung jawabnya"
+    },
+    "meals": {
+      "eyebrow": "Rencana makan",
+      "h2": "Makan malam sudah diputuskan sejak Minggu",
+      "p": "Rencanakan dari sarapan sampai makan malam untuk sepekan penuh, langsung dari kumpulan resep keluargamu sendiri — lalu kirim bahan-bahannya ke daftar belanja.",
+      "bullets": [
+        "Rencana makan sepekan dengan empat waktu makan per hari",
+        "Kumpulan resep berfoto dan impor lewat tautan",
+        "Bahan sebuah resep masuk ke daftar mana pun sekali ketuk"
+      ],
+      "alt": "Rencana makan sepekan"
+    },
+    "birthdays": {
+      "eyebrow": "Perayaan",
+      "h2": "Tidak akan lupa ulang tahun lagi",
+      "p": "Ulang tahun, hari jadi, dan perayaan keluarga — diingat setiap tahun, lengkap dengan hitung mundur dan pengingat untuk semua orang.",
+      "bullets": [],
+      "alt": "Layar ulang tahun dan perayaan"
+    },
+    "vault": {
+      "eyebrow": "Privat sejak awal",
+      "h2": "Foto dan dokumen tetap di ponselmu",
+      "p": "Brankas Daili menjaga foto keluarga dan dokumen penting tetap rapi — disimpan hanya di perangkatmu dan tidak pernah diunggah ke server kami.",
+      "bullets": [],
+      "alt": "Brankas dokumen"
+    },
+    "family": {
+      "eyebrow": "Keluarga",
+      "h2": "Orang tua, anak, dan nenek — semua ikut",
+      "p": "Undang keluargamu dengan kode 6 digit sederhana atau sebuah tautan. Orang tua jadi admin, anak dan remaja punya akun sendiri, dan si kecil yang belum punya email dapat profil yang dikelola dan bisa dijadikan akun sungguhan nanti.",
+      "bullets": [],
+      "alt": "Ilustrasi sebuah keluarga"
+    }
+  },
+
+  "faq": {
+    "h2": "Pertanyaan dan jawaban",
+    "items": [
+      {
+        "q": "Berapa harga Daili?",
+        "a": "Tidak ada. Daili 1.0 gratis — tanpa iklan dan tanpa penjualan data. Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis."
+      },
+      {
+        "q": "Aplikasinya berbahasa apa saja?",
+        "a": "Sebelas bahasa, sepenuhnya — termasuk pengingat yang dikirimnya: Inggris, Jerman, Belanda, Prancis, Italia, Spanyol, Portugis, Polandia, Swedia, Denmark, dan Norwegia. Bahasa Indonesia belum termasuk: situs ini berbahasa Indonesia, tetapi aplikasinya sendiri untuk sementara masih berbahasa Inggris."
+      },
+      {
+        "q": "Jalan di ponsel apa saja?",
+        "a": "Di iPhone dan Android, dari satu akun keluarga yang sama. Semuanya tersinkron di antara keduanya."
+      },
+      {
+        "q": "Anak-anakku boleh memakainya?",
+        "a": "Boleh — justru itu intinya. Anak dan remaja punya akun sendiri dan melihat tugas serta jadwalnya sendiri. Si kecil yang belum punya alamat email dapat profil yang dikelola orang tua, dan nanti bisa dijadikan akun sungguhan. Orang tua adalah admin dan bisa menghapus sebuah profil beserta datanya kapan saja."
+      },
+      {
+        "q": "Bisa dipakai tanpa internet?",
+        "a": "Kalender, daftar, dan tugas bisa kamu baca tanpa koneksi, dan perubahannya tersinkron begitu kamu online lagi. Foto dan dokumen di brankas selalu offline — semuanya hanya ada di ponselmu."
+      },
+      {
+        "q": "Bisa membawa kalender yang sudah kupakai?",
+        "a": "Bisa. Daili bisa menampilkan kalender bawaan ponselmu di perangkat, dan kamu bisa menghubungkan kalender Google atau Outlook supaya acaranya muncul di kalender keluarga. Kamu yang memilih mana saja, dan bisa memutusnya kapan pun."
+      },
+      {
+        "q": "Di mana datanya disimpan?",
+        "a": "Kalender, daftar, dan data keluargamu ada di server kami di Uni Eropa. Foto dan dokumen di brankas tidak pernah keluar dari ponselmu. Rinciannya ada di <a href=\"/privacy.html\">kebijakan privasi</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Bantuan",
+    "intro": "Kami tim kecil dan kami membaca semuanya. Tulis ke <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — pertanyaan, masalah, atau ide.",
+    "helpsIntro": "Kalau ada yang tidak jalan, sangat membantu kalau kamu sertakan:",
+    "helps": [
+      "Model ponselmu dan apakah itu iPhone atau Android",
+      "Apa yang kamu lakukan, apa yang kamu harapkan — dan apa yang terjadi",
+      "Tangkapan layar, kalau ada"
+    ],
+    "replyTime": "Kami biasanya membalas dalam satu sampai dua hari.",
+    "deleteH2": "Menghapus akunmu",
+    "deleteIntro": "Kamu bisa menghapus akun Daili beserta datanya kapan saja, lewat dua cara:",
+    "deleteWays": [
+      "<strong>Di aplikasi:</strong> Pengaturan &rarr; Profil &rarr; Hapus akun.",
+      "<strong>Lewat email:</strong> tulis ke <a href=\"mailto:support@daili.app?subject=Hapus%20akun%20saya\"><strong>support@daili.app</strong></a> dari alamat email akunmu, dengan subjek \"Hapus akun saya\"."
+    ],
+    "deleteWhat": "Apa yang terjadi berikutnya: akunmu langsung dinonaktifkan dan kamu menerima email berisi tautan pembatalan. Setelah masa tenggang 30 hari, akunmu dan data yang terkait dengannya (profil, serta acara, daftar, resep, dan foto yang kamu buat) dihapus permanen dari server kami. Kalau kamu berubah pikiran dalam 30 hari itu, tautan di email akan memulihkan semuanya. Berkas di brankas luring hanya ada di ponselmu dan ikut terhapus saat akun dihapus di perangkat tersebut."
+  },
+
+  "notfound": {
+    "h1": "Halaman tidak ditemukan",
+    "lead": "Halaman itu sudah dipindahkan atau memang tidak pernah ada.",
+    "home": "Kembali ke halaman utama"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "imprint": "Informasi penerbit"
+  }
+}

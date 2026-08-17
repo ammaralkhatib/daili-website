@@ -1,0 +1,245 @@
+{
+  "@@locale": "cs",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Rodinný organizér: sdílený kalendář, seznamy a úkoly",
+    "description": "Daili je jednoduchý způsob, jak zvládat rodinný život společně: jeden sdílený kalendář, nákupní seznamy, které se aktualizují hned, a úkoly pro celou rodinu. Zdarma, bez reklam.",
+    "ogTitle": "Daili — Rodinný organizér",
+    "ogDescription": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni.",
+    "supportTitle": "Podpora — Daili",
+    "supportDescription": "Získejte pomoc s Daili nebo smažte svůj účet. Obvykle odpovídáme do jednoho až dvou dnů.",
+    "notfoundTitle": "Stránka nenalezena — Daili"
+  },
+
+  "nav": {
+    "features": "Funkce",
+    "pricing": "Cena",
+    "support": "Podpora",
+    "download": "Stáhnout",
+    "language": "Jazyk",
+    "skip": "Přejít k obsahu"
+  },
+
+  "cta": {
+    "sticky": "Získat Daili — zdarma"
+  },
+
+  "store": {
+    "appleSmall": "Stáhnout v",
+    "googleSmall": "Nyní na"
+  },
+
+  "hero": {
+    "h1a": "Celá rodina",
+    "h1b": "na jedné vlně.",
+    "lead": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni. Pro rodiče, pro děti s vlastním přihlášením i pro ty nejmenší, které spravujete vy.",
+    "note": "Zdarma · Bez reklam · Vaše data zůstávají v EU",
+    "altCalendar": "Měsíční kalendář v Daili",
+    "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
+  },
+
+  "howItWorks": {
+    "h2": "Hotovo asi za minutu",
+    "steps": [
+      {
+        "h3": "Stáhněte si aplikaci",
+        "p": "Zdarma na iPhone i Android. Bez karty a bez zkušební doby, která jednou skončí."
+      },
+      {
+        "h3": "Založte rodinu",
+        "p": "Pozvěte všechny šestimístným kódem nebo odkazem. Rodiče jsou správci, děti a teenageři mají vlastní přihlášení a ti nejmenší bez e-mailu dostanou spravovaný profil."
+      },
+      {
+        "h3": "Všichni na jedné vlně",
+        "p": "Co přidáte na svém telefonu, je asi za sekundu na telefonech ostatních — kalendář, seznamy i úkoly stejně."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "Pohled dovnitř",
+    "lead": "Celá aplikace na šesti obrazovkách.",
+    "captions": [
+      "Úvodní obrazovka — všechno na jedno klepnutí",
+      "Recepty vaší rodiny, s fotkami a importem jedním klepnutím",
+      "Fotky a dokumenty, uložené jen ve vašem telefonu",
+      "Nákupní seznamy, které se mění, zatímco stojíte v obchodě",
+      "Od snídaně po večeři, naplánováno na celý týden",
+      "Narozeniny a oslavy, připomenuté každý rok"
+    ]
+  },
+
+  "compare": {
+    "h2": "Proč ne prostě sdílený kalendář?",
+    "lead": "Kalendář Google zvládá kalendáře opravdu dobře. Jenže rodinný život nejsou jen termíny — a tabule v kuchyni s vámi do obchodu nepůjde.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Sdílený kalendář", "paper": "Papír a tabule" },
+    "rows": [
+      "Termíny všech na jednom místě",
+      "Připomenutí na každém telefonu",
+      "Nákupní seznam, který se mění v reálném čase",
+      "Úkoly, na kterých stojí jméno",
+      "Jídelníček na týden a recepty",
+      "Děti mají vlastní přihlášení",
+      "Narozeniny připomenuté každý rok",
+      "Bez reklam, nic na prodej"
+    ],
+    "legend": "✓ ano · ~ částečně · — ne"
+  },
+
+  "pricing": {
+    "h2": "Zdarma — a pro vás zdarma navždy",
+    "lead": "Daili dnes nic nestojí. Bez reklam, bez sledování a bez prodeje čehokoli komukoli.",
+    "points": [
+      "Všechno na této stránce je zdarma už teď",
+      "Bez karty, bez zkušební doby a bez zamčených funkcí",
+      "Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane pro vás zdarma"
+    ],
+    "earlyBirdTitle": "První rodiny",
+    "earlyBird": "Prvních 1000 rodin, které se přidají, si nechá všechno zdarma navždy — včetně toho, co přidáme později.",
+    "cta": "Získat Daili zdarma"
+  },
+
+  "trust": {
+    "h2": "Plány vaší rodiny patří vaší rodině",
+    "pills": [
+      { "strong": "Žádné reklamy", "span": "Není co zavírat — ani teď, ani později." },
+      { "strong": "Žádné sledování", "span": "Žádná analytika, žádné profilování — tyto stránky nepoužívají ani cookies." },
+      { "strong": "Žádný prodej dat", "span": "Aplikace zdarma, servery v EU a vaše práva zabudovaná od začátku." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Kalendář",
+      "h2": "Jeden kalendář pro všechny",
+      "p": "Celý týden i celý měsíc rodiny na jeden pohled — a už nikdy nezapomenete někoho vyzvednout.",
+      "bullets": [
+        "Barevné události s kategoriemi, místy a poznámkami",
+        "Opakování udělané pořádně — fotbal každé úterý, klavír každý druhý týden",
+        "Připomenutí na každém telefonu v rodině",
+        "Svátky pro 36 zemí; soukromé události zůstávají soukromé"
+      ],
+      "alt": "Měsíční kalendář s barevnými událostmi"
+    },
+    "shopping": {
+      "eyebrow": "Nákupy",
+      "h2": "Nákupní seznamy, které stíhají",
+      "p": "Napíšete „mléko“ na svém telefonu — a asi za sekundu to má váš protějšek na svém, přímo v obchodě.",
+      "bullets": [
+        "Sdílené seznamy, které může upravovat celá rodina",
+        "Množství, kategorie a poznámka u každé položky",
+        "Odškrtnuté položky sjedou úhledně dolů"
+      ],
+      "alt": "Sdílený nákupní seznam"
+    },
+    "todos": {
+      "eyebrow": "Úkoly",
+      "h2": "Na každém úkolu stojí jméno",
+      "p": "Konec s „myslel jsem, že to děláš ty“. Děti vidí své vlastní úkoly a samy si je odškrtávají.",
+      "bullets": [
+        "Odpovědná osoba, termín a připomenutí",
+        "Hodí se na domácí práce, pochůzky i všechno mezi tím"
+      ],
+      "alt": "Rodinný seznam úkolů s odpovědnými osobami"
+    },
+    "meals": {
+      "eyebrow": "Jídelníček",
+      "h2": "Večeře rozhodnutá už v neděli",
+      "p": "Naplánujte od snídaně po večeři na celý týden, rovnou z vlastních receptů vaší rodiny — a pak pošlete suroviny na nákupní seznam.",
+      "bullets": [
+        "Jídelníček na týden se čtyřmi jídly denně",
+        "Recepty s fotkami a importem přes odkaz",
+        "Suroviny receptu na libovolný seznam jedním klepnutím"
+      ],
+      "alt": "Jídelníček na týden"
+    },
+    "birthdays": {
+      "eyebrow": "Oslavy",
+      "h2": "Už nikdy nezapomenout na narozeniny",
+      "p": "Narozeniny, výročí a rodinné oslavy — připomenuté každý rok, s odpočtem a upozorněním pro všechny.",
+      "bullets": [],
+      "alt": "Obrazovka narozenin a oslav"
+    },
+    "vault": {
+      "eyebrow": "Soukromé záměrně",
+      "h2": "Fotky a dokumenty zůstávají v telefonu",
+      "p": "Trezor Daili drží rodinné fotky a důležité dokumenty v pořádku — uložené jen ve vašem zařízení a nikdy nenahrané na naše servery.",
+      "bullets": [],
+      "alt": "Trezor na dokumenty"
+    },
+    "family": {
+      "eyebrow": "Rodina",
+      "h2": "Rodiče, děti i babička — všichni",
+      "p": "Pozvěte rodinu jednoduchým šestimístným kódem nebo odkazem. Rodiče jsou správci, děti a teenageři mají vlastní přihlášení a ti nejmenší bez e-mailu dostanou spravovaný profil, ze kterého může později být plnohodnotný účet.",
+      "bullets": [],
+      "alt": "Ilustrace rodiny"
+    }
+  },
+
+  "faq": {
+    "h2": "Otázky a odpovědi",
+    "items": [
+      {
+        "q": "Kolik Daili stojí?",
+        "a": "Nic. Daili 1.0 je zdarma — bez reklam a bez prodeje dat. Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane zdarma."
+      },
+      {
+        "q": "Jakými jazyky aplikace mluví?",
+        "a": "Jedenácti, kompletně — včetně připomenutí, která posílá: anglicky, německy, nizozemsky, francouzsky, italsky, španělsky, portugalsky, polsky, švédsky, dánsky a norsky. Čeština mezi nimi zatím není: tyto stránky jsou česky, ale samotná aplikace je prozatím v angličtině."
+      },
+      {
+        "q": "Na jakých telefonech běží?",
+        "a": "Na iPhonu i Androidu, z jednoho sdíleného rodinného účtu. Všechno se mezi nimi synchronizuje."
+      },
+      {
+        "q": "Můžou ji používat mé děti?",
+        "a": "Ano — přesně o to jde. Děti a teenageři mají vlastní přihlášení a vidí své vlastní úkoly a termíny. Ti nejmenší bez e-mailové adresy dostanou spravovaný profil, který řídí rodič a ze kterého může později být plnohodnotné přihlášení. Rodiče jsou správci a mohou profil i s jeho daty kdykoli smazat."
+      },
+      {
+        "q": "Funguje offline?",
+        "a": "Kalendář, seznamy a úkoly si přečtete i bez připojení a změny se synchronizují, jakmile budete zase online. Fotky a dokumenty v trezoru jsou offline vždycky — leží výhradně ve vašem telefonu."
+      },
+      {
+        "q": "Můžu si vzít svůj současný kalendář?",
+        "a": "Ano. Daili umí zobrazit kalendář z vašeho telefonu přímo v zařízení a můžete připojit kalendář Google nebo Outlook, aby se jeho události objevily v rodinném kalendáři. Vyberete si které a kdykoli je můžete odpojit."
+      },
+      {
+        "q": "Kde jsou uložená moje data?",
+        "a": "Váš kalendář, seznamy a data rodiny leží na našem serveru v EU. Fotky a dokumenty v trezoru váš telefon nikdy neopustí. Podrobnosti v <a href=\"/privacy.html\">zásadách ochrany osobních údajů</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Podpora",
+    "intro": "Jsme malý tým a čteme všechno. Napište na <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — dotazy, problémy nebo nápady.",
+    "helpsIntro": "Pokud něco nefunguje, hodně nám pomůže, když připojíte:",
+    "helps": [
+      "Model svého telefonu a jestli je to iPhone, nebo Android",
+      "Co jste udělali, co jste čekali — a co se stalo místo toho",
+      "Snímek obrazovky, pokud ho máte"
+    ],
+    "replyTime": "Obvykle odpovídáme do jednoho až dvou dnů.",
+    "deleteH2": "Smazání účtu",
+    "deleteIntro": "Svůj účet Daili i jeho data můžete smazat kdykoli, dvěma způsoby:",
+    "deleteWays": [
+      "<strong>V aplikaci:</strong> Nastavení &rarr; Profil &rarr; Smazat účet.",
+      "<strong>E-mailem:</strong> napište na <a href=\"mailto:support@daili.app?subject=Smazat%20m%C5%AFj%20%C3%BA%C4%8Det\"><strong>support@daili.app</strong></a> z e-mailové adresy svého účtu, s předmětem „Smazat můj účet“."
+    ],
+    "deleteWhat": "Co se stane dál: účet se okamžitě deaktivuje a vy dostanete e-mail s odkazem pro zrušení. Po 30denní lhůtě se váš účet a data, která k němu patří (profil a události, seznamy, recepty a fotky, které jste vytvořili), trvale smažou z našich serverů. Pokud si to během těch 30 dnů rozmyslíte, odkaz z e-mailu všechno obnoví. Soubory v offline trezoru leží jen ve vašem telefonu a odstraní se, jakmile se na tom zařízení smaže účet."
+  },
+
+  "notfound": {
+    "h1": "Stránka nenalezena",
+    "lead": "Tato stránka se přesunula, nebo nikdy neexistovala.",
+    "home": "Zpět na úvodní stránku"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Soukromí",
+    "terms": "Podmínky",
+    "imprint": "Tiráž"
+  }
+}

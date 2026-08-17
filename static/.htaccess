@@ -46,7 +46,14 @@ Options -Indexes -MultiViews
   #    a case-sensitive filesystem plus a mixed-case URL is a 404 waiting to
   #    happen. The hreflang ATTRIBUTE keeps correct BCP-47 casing
   #    (hreflang="zh-Hans"); only the path is lowered. Catch the guesses.
+  #
+  #    The RewriteCond is load-bearing: [NC] makes the pattern match its own
+  #    output, so without it /zh-hans/ redirects to /zh-hans/ forever. The cond
+  #    is deliberately case-SENSITIVE (no [NC]) so it means "not already
+  #    lowercase". Caught by deploy.sh's smoke test, which is why that exists.
+  RewriteCond %{REQUEST_URI} !^/zh-hans
   RewriteRule ^zh-Hans(/.*)?$ /zh-hans$1 [R=301,L,NC]
+  RewriteCond %{REQUEST_URI} !^/zh-hant
   RewriteRule ^zh-Hant(/.*)?$ /zh-hant$1 [R=301,L,NC]
 
   # 6. Nothing else is rewritten. mod_dir already issues the /de -> /de/

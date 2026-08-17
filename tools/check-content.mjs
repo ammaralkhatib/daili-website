@@ -19,8 +19,15 @@ const warn = (loc, key, msg) => warnings.push(`${loc.padEnd(8)} ${key.padEnd(44)
 
 // Expected length band vs English. Outside it is a warning, not an error:
 // legitimate translations do vary, and a checker that cries wolf gets ignored.
+// Chinese in particular runs far shorter than English — a 55-character English
+// bullet is routinely 14 characters of Hanzi. The lower bound was 0.30 at first
+// and fired on a dozen perfectly good strings, which is worse than not checking
+// at all: a warning list nobody reads is a warning list that hides real ones.
 const RATIO = {
-  ja: [0.30, 1.20], ko: [0.30, 1.20], 'zh-Hans': [0.30, 1.20], 'zh-Hant': [0.30, 1.20], th: [0.30, 1.40],
+  'zh-Hans': [0.18, 1.20], 'zh-Hant': [0.18, 1.20],
+  ja: [0.25, 1.30], ko: [0.25, 1.30], th: [0.30, 1.40],
+  // Arabic and Hindi both run consistently shorter than English prose.
+  ar: [0.50, 1.60], hi: [0.50, 1.80],
   de: [0.80, 2.40], fi: [0.80, 2.40], pl: [0.80, 2.40], cs: [0.80, 2.40], tr: [0.80, 2.40], ru: [0.80, 2.40],
 };
 const bandFor = (loc) => RATIO[loc] || [0.70, 2.00];

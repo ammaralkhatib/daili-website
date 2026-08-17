@@ -1,0 +1,245 @@
+{
+  "@@locale": "fi",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Perhekalenteri: yhteinen kalenteri, listat ja tehtävät",
+    "description": "Daili on helppo tapa pitää perhe-elämä kasassa yhdessä: yksi yhteinen kalenteri, kauppalistat jotka päivittyvät heti ja tehtävät koko perheelle. Ilmainen, ei mainoksia.",
+    "ogTitle": "Daili — Perhekalenteri",
+    "ogDescription": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät.",
+    "supportTitle": "Tuki — Daili",
+    "supportDescription": "Saat apua Dailin käyttöön tai voit poistaa tilisi. Vastaamme yleensä päivän tai kahden kuluessa.",
+    "notfoundTitle": "Sivua ei löytynyt — Daili"
+  },
+
+  "nav": {
+    "features": "Ominaisuudet",
+    "pricing": "Hinta",
+    "support": "Tuki",
+    "download": "Lataa",
+    "language": "Kieli",
+    "skip": "Siirry sisältöön"
+  },
+
+  "cta": {
+    "sticky": "Hanki Daili — ilmaiseksi"
+  },
+
+  "store": {
+    "appleSmall": "Lataa",
+    "googleSmall": "Hanki se"
+  },
+
+  "hero": {
+    "h1a": "Koko perhe",
+    "h1b": "samalla sivulla.",
+    "lead": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät. Tehty vanhemmille, omilla tunnuksilla kirjautuville lapsille ja niille pienimmille, joita hoidat heidän puolestaan.",
+    "note": "Ilmainen · Ei mainoksia · Tietosi pysyvät EU:ssa",
+    "altCalendar": "Dailin kuukausikalenteri",
+    "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
+  },
+
+  "howItWorks": {
+    "h2": "Valmista noin minuutissa",
+    "steps": [
+      {
+        "h3": "Hanki sovellus",
+        "p": "Ilmainen iPhonelle ja Androidille. Ei korttia eikä kokeilujaksoa, joka loppuu kesken."
+      },
+      {
+        "h3": "Luo perheesi",
+        "p": "Kutsu kaikki kuusinumeroisella koodilla tai linkillä. Vanhemmat ovat ylläpitäjiä, lapset ja teinit saavat omat tunnukset, ja pienimmät ilman sähköpostia saavat hallitun profiilin."
+      },
+      {
+        "h3": "Kaikki samalla sivulla",
+        "p": "Se mitä lisäät omalla puhelimellasi, on muiden puhelimissa noin sekunnissa — kalenteri, listat ja tehtävät samalla tavalla."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "Katsaus sisälle",
+    "lead": "Koko sovellus kuudella näytöllä.",
+    "captions": [
+      "Aloitusnäyttö — kaikki yhden napautuksen päässä",
+      "Perheen omat reseptit, kuvien kanssa ja tuonti yhdellä napautuksella",
+      "Kuvat ja asiakirjat, tallennettuna vain omaan puhelimeesi",
+      "Kauppalistat, jotka päivittyvät kun seisot kaupassa",
+      "Aamiaisesta illalliseen, suunniteltuna koko viikolle",
+      "Syntymäpäivät ja juhlat, muistissa joka vuosi"
+    ]
+  },
+
+  "compare": {
+    "h2": "Miksei vain jaettu kalenteri?",
+    "lead": "Google-kalenteri on kalentereissa todella hyvä. Mutta perhe-elämä ei ole pelkkiä menoja — eikä keittiön taulu lähde mukaan kauppaan.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Jaettu kalenteri", "paper": "Paperi ja taulu" },
+    "rows": [
+      "Kaikkien menot yhdessä paikassa",
+      "Muistutukset jokaiseen puhelimeen",
+      "Kauppalista, joka päivittyy heti",
+      "Tehtävät, joissa lukee nimi",
+      "Viikon ruokalista ja reseptit",
+      "Lapsille omat tunnukset",
+      "Syntymäpäivät muistissa joka vuosi",
+      "Ei mainoksia, ei mitään myytävänä"
+    ],
+    "legend": "✓ kyllä · ~ osittain · — ei"
+  },
+
+  "pricing": {
+    "h2": "Ilmainen — ja sinulle ilmainen ikuisesti",
+    "lead": "Daili ei maksa tänään mitään. Ei mainoksia, ei seurantaa eikä mitään myytävää kenellekään.",
+    "points": [
+      "Kaikki tällä sivulla on ilmaista jo nyt",
+      "Ei korttia, ei kokeilujaksoa eikä lukittuja ominaisuuksia",
+      "Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy sinulle ilmaisena"
+    ],
+    "earlyBirdTitle": "Ensimmäiset perheet",
+    "earlyBird": "Ensimmäiset 1000 mukaan tullutta perhettä pitävät kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin.",
+    "cta": "Hanki Daili ilmaiseksi"
+  },
+
+  "trust": {
+    "h2": "Perheen suunnitelmat kuuluvat perheelle",
+    "pills": [
+      { "strong": "Ei mainoksia", "span": "Ei mitään klikattavaa pois — ei nyt eikä myöhemmin." },
+      { "strong": "Ei seurantaa", "span": "Ei analytiikkaa, ei profilointia — tämä sivusto ei käytä edes evästeitä." },
+      { "strong": "Tietojasi ei myydä", "span": "Ilmainen sovellus, palvelimet EU:ssa ja oikeutesi sisäänrakennettuina." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Kalenteri",
+      "h2": "Yksi kalenteri kaikille",
+      "p": "Koko perheen viikko ja kuukausi yhdellä silmäyksellä — etkä unohda enää koskaan hakea ketään.",
+      "bullets": [
+        "Värikoodatut menot kategorioineen, paikkoineen ja muistiinpanoineen",
+        "Toistot kunnolla tehtyinä — jalkapallo joka tiistai, piano joka toinen viikko",
+        "Muistutukset jokaiseen perheen puhelimeen",
+        "Pyhäpäivät 36 maasta; yksityiset menot pysyvät yksityisinä"
+      ],
+      "alt": "Kuukausikalenteri värillisine menoineen"
+    },
+    "shopping": {
+      "eyebrow": "Ostokset",
+      "h2": "Kauppalistat, jotka pysyvät perässä",
+      "p": "Kirjoitat ”maito” omaan puhelimeesi — ja se ilmestyy kumppanisi puhelimeen kaupassa noin sekunnissa.",
+      "bullets": [
+        "Jaetut listat, joita koko perhe voi muokata",
+        "Määrä, kategoria ja muistiinpano jokaiselle riville",
+        "Kuitatut rivit valuvat siististi alas"
+      ],
+      "alt": "Jaettu kauppalista"
+    },
+    "todos": {
+      "eyebrow": "Tehtävät",
+      "h2": "Jokaisessa tehtävässä lukee nimi",
+      "p": "Loppu ”luulin että sinä teet sen” -keskusteluille. Lapset näkevät omat tehtävänsä ja kuittaavat ne itse.",
+      "bullets": [
+        "Vastuuhenkilö, määräpäivä ja muistutus",
+        "Sopii kotitöihin, asiointiin ja kaikkeen siltä väliltä"
+      ],
+      "alt": "Perheen tehtävälista vastuuhenkilöineen"
+    },
+    "meals": {
+      "eyebrow": "Ruokalista",
+      "h2": "Illallinen päätettynä jo sunnuntaina",
+      "p": "Suunnittele aamiaisesta illalliseen koko viikoksi, suoraan perheen omista resepteistä — ja lähetä sitten ainekset kauppalistalle.",
+      "bullets": [
+        "Viikon ruokalista, neljä ateriaa päivässä",
+        "Reseptit kuvineen ja tuonti linkin kautta",
+        "Reseptin ainekset mille tahansa listalle yhdellä napautuksella"
+      ],
+      "alt": "Viikon ruokalista"
+    },
+    "birthdays": {
+      "eyebrow": "Juhlat",
+      "h2": "Älä unohda enää koskaan syntymäpäivää",
+      "p": "Syntymäpäivät, merkkipäivät ja perhejuhlat — muistissa joka vuosi, laskurin ja muistutusten kanssa kaikille.",
+      "bullets": [],
+      "alt": "Syntymäpäivien ja juhlien näkymä"
+    },
+    "vault": {
+      "eyebrow": "Yksityinen lähtökohtaisesti",
+      "h2": "Kuvat ja asiakirjat pysyvät puhelimessa",
+      "p": "Dailin holvi pitää perhekuvat ja tärkeät asiakirjat järjestyksessä — tallennettuna vain omaan laitteeseesi eikä koskaan ladattuna palvelimillemme.",
+      "bullets": [],
+      "alt": "Asiakirjaholvi"
+    },
+    "family": {
+      "eyebrow": "Perhe",
+      "h2": "Vanhemmat, lapset ja mummo — kaikki mukana",
+      "p": "Kutsu perheesi yksinkertaisella kuusinumeroisella koodilla tai linkillä. Vanhemmat ovat ylläpitäjiä, lapset ja teinit saavat omat tunnukset, ja pienimmät ilman sähköpostia saavat hallitun profiilin, josta voi myöhemmin tehdä oikean tilin.",
+      "bullets": [],
+      "alt": "Kuvitus perheestä"
+    }
+  },
+
+  "faq": {
+    "h2": "Kysymyksiä ja vastauksia",
+    "items": [
+      {
+        "q": "Mitä Daili maksaa?",
+        "a": "Ei mitään. Daili 1.0 on ilmainen — ei mainoksia eikä tietojen myyntiä. Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy ilmaisena."
+      },
+      {
+        "q": "Mitä kieliä sovellus puhuu?",
+        "a": "Yhtätoista, kokonaan — myös lähettämänsä muistutukset: englantia, saksaa, hollantia, ranskaa, italiaa, espanjaa, portugalia, puolaa, ruotsia, tanskaa ja norjaa. Suomi ei ole vielä joukossa: tämä sivusto on suomeksi, mutta itse sovellus on toistaiseksi englanniksi."
+      },
+      {
+        "q": "Millä puhelimilla se toimii?",
+        "a": "iPhonella ja Androidilla, yhdestä ja samasta jaetusta perhetilistä. Kaikki synkronoituu niiden välillä."
+      },
+      {
+        "q": "Voivatko lapseni käyttää sitä?",
+        "a": "Kyllä — juuri siitä on kyse. Lapset ja teinit saavat omat tunnukset ja näkevät omat tehtävänsä ja menonsa. Pienimmät ilman sähköpostiosoitetta saavat hallitun profiilin, jota vanhempi ohjaa ja josta voi myöhemmin tulla oikeat tunnukset. Vanhemmat ovat ylläpitäjiä ja voivat poistaa profiilin ja sen tiedot milloin tahansa."
+      },
+      {
+        "q": "Toimiiko se ilman verkkoa?",
+        "a": "Kalenterin, listat ja tehtävät voit lukea ilman yhteyttä, ja muutokset synkronoituvat heti kun olet taas verkossa. Holvin kuvat ja asiakirjat ovat aina ilman verkkoa — ne ovat vain sinun puhelimessasi."
+      },
+      {
+        "q": "Voinko tuoda nykyisen kalenterini?",
+        "a": "Voit. Daili osaa näyttää puhelimesi oman kalenterin laitteella, ja voit yhdistää Google- tai Outlook-kalenterin niin että sen menot näkyvät perhekalenterissa. Valitset itse mitkä, ja voit katkaista yhteyden milloin tahansa."
+      },
+      {
+        "q": "Missä tietoni säilytetään?",
+        "a": "Kalenterisi, listasi ja perheen tiedot ovat palvelimellamme EU:ssa. Holvin kuvat ja asiakirjat eivät poistu puhelimestasi koskaan. Tarkemmin <a href=\"/privacy.html\">tietosuojaselosteessa</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Tuki",
+    "intro": "Olemme pieni tiimi ja luemme kaiken. Kirjoita osoitteeseen <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — kysymyksiä, ongelmia tai ideoita.",
+    "helpsIntro": "Jos jokin ei toimi, meitä auttaa paljon jos kerrot:",
+    "helps": [
+      "Puhelimesi mallin ja onko se iPhone vai Android",
+      "Mitä teit, mitä odotit — ja mitä tapahtui sen sijaan",
+      "Kuvakaappauksen, jos sinulla on sellainen"
+    ],
+    "replyTime": "Vastaamme yleensä päivän tai kahden kuluessa.",
+    "deleteH2": "Tilin poistaminen",
+    "deleteIntro": "Voit poistaa Daili-tilisi ja sen tiedot milloin tahansa, kahdella tavalla:",
+    "deleteWays": [
+      "<strong>Sovelluksessa:</strong> Asetukset &rarr; Profiili &rarr; Poista tili.",
+      "<strong>Sähköpostilla:</strong> kirjoita osoitteeseen <a href=\"mailto:support@daili.app?subject=Poista%20tilini\"><strong>support@daili.app</strong></a> tilisi sähköpostiosoitteesta, aiheena ”Poista tilini”."
+    ],
+    "deleteWhat": "Mitä sitten tapahtuu: tilisi suljetaan heti ja saat sähköpostin, jossa on peruutuslinkki. Kolmenkymmenen päivän määräajan jälkeen tilisi ja siihen liittyvät tiedot (profiili sekä luomasi menot, listat, reseptit ja kuvat) poistetaan lopullisesti palvelimiltamme. Jos muutat mielesi noiden 30 päivän aikana, sähköpostin linkki palauttaa kaiken. Offline-holvin tiedostot ovat vain puhelimessasi ja poistuvat, kun tili poistetaan siltä laitteelta."
+  },
+
+  "notfound": {
+    "h1": "Sivua ei löytynyt",
+    "lead": "Sivu on siirtynyt tai sitä ei ole koskaan ollutkaan.",
+    "home": "Takaisin etusivulle"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Tietosuoja",
+    "terms": "Ehdot",
+    "imprint": "Julkaisijatiedot"
+  }
+}

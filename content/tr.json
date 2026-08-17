@@ -1,0 +1,245 @@
+{
+  "@@locale": "tr",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Aile organizatörü: ortak takvim, listeler ve görevler",
+    "description": "Daili, aile hayatını birlikte yürütmenin kolay yolu: tek bir ortak takvim, anında güncellenen alışveriş listeleri ve tüm ailenin görevleri. Ücretsiz, reklamsız.",
+    "ogTitle": "Daili — Aile organizatörü",
+    "ogDescription": "Ailenizin haftası için sakin bir yer: ortak takvim, alışveriş listeleri ve herkesin gördüğü görevler.",
+    "supportTitle": "Destek — Daili",
+    "supportDescription": "Daili hakkında yardım alın veya hesabınızı silin. Genellikle bir iki gün içinde yanıtlıyoruz.",
+    "notfoundTitle": "Sayfa bulunamadı — Daili"
+  },
+
+  "nav": {
+    "features": "Özellikler",
+    "pricing": "Fiyat",
+    "support": "Destek",
+    "download": "İndir",
+    "language": "Dil",
+    "skip": "İçeriğe geç"
+  },
+
+  "cta": {
+    "sticky": "Daili'yi al — ücretsiz"
+  },
+
+  "store": {
+    "appleSmall": "İndir:",
+    "googleSmall": "Şurada bul:"
+  },
+
+  "hero": {
+    "h1a": "Bütün aile",
+    "h1b": "aynı sayfada.",
+    "lead": "Ailenizin haftası için sakin bir yer: ortak bir takvim, alışveriş listeleri ve herkesin gördüğü görevler. Anne babalar, kendi girişi olan çocuklar ve onlar adına yönettiğiniz küçükler için tasarlandı.",
+    "note": "Ücretsiz · Reklamsız · Verileriniz AB'de kalır",
+    "altCalendar": "Daili aylık takvim",
+    "altHome": "Daili ana ekranı ve özellik kutucukları"
+  },
+
+  "howItWorks": {
+    "h2": "Yaklaşık bir dakikada hazır",
+    "steps": [
+      {
+        "h3": "Uygulamayı indirin",
+        "p": "iPhone ve Android'de ücretsiz. Kredi kartı yok, biten bir deneme süresi yok."
+      },
+      {
+        "h3": "Ailenizi oluşturun",
+        "p": "Herkesi 6 haneli bir kod veya bağlantıyla davet edin. Anne babalar yönetici olur, çocuklar ve gençler kendi girişini alır, e-postası olmayan küçükler ise yönetilen bir profil edinir."
+      },
+      {
+        "h3": "Herkes aynı sayfada",
+        "p": "Kendi telefonunuza eklediğiniz şey yaklaşık bir saniye sonra diğerlerinin telefonunda olur — takvim, listeler ve görevler aynı şekilde."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "İçeriden bir bakış",
+    "lead": "Bütün uygulama, altı ekranda.",
+    "captions": [
+      "Ana ekran — her şey tek dokunuş uzakta",
+      "Ailenizin tarif defteri, fotoğraflarıyla ve tek dokunuşla içe aktarmayla",
+      "Fotoğraflar ve belgeler, yalnızca kendi telefonunuzda saklanır",
+      "Siz marketteyken güncellenen alışveriş listeleri",
+      "Kahvaltıdan akşam yemeğine, bütün hafta için planlanmış",
+      "Doğum günleri ve kutlamalar, her yıl hatırlanır"
+    ]
+  },
+
+  "compare": {
+    "h2": "Neden sadece ortak bir takvim olmasın?",
+    "lead": "Google Takvim, takvim işini gerçekten iyi yapıyor. Ama aile hayatı yalnızca randevulardan ibaret değil — ve mutfaktaki tahta sizinle markete gelmiyor.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Ortak takvim", "paper": "Kâğıt ve tahta" },
+    "rows": [
+      "Herkesin planı tek bir yerde",
+      "Her telefonda hatırlatmalar",
+      "Anında güncellenen bir alışveriş listesi",
+      "Üzerinde bir isim yazan görevler",
+      "Haftalık yemek planı ve tarifler",
+      "Çocuklara kendi girişleri",
+      "Doğum günleri her yıl hatırlanır",
+      "Reklam yok, satılan hiçbir şey yok"
+    ],
+    "legend": "✓ var · ~ kısmen · — yok"
+  },
+
+  "pricing": {
+    "h2": "Ücretsiz — ve sizin için sonsuza dek ücretsiz",
+    "lead": "Daili bugün hiçbir şeye mal olmuyor. Reklam yok, takip yok, kimseye satılan hiçbir şey yok.",
+    "points": [
+      "Bu sayfadaki her şey şu anda ücretsiz",
+      "Kredi kartı yok, deneme süresi yok, kilitli özellik yok",
+      "Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey sizin için ücretsiz kalır"
+    ],
+    "earlyBirdTitle": "İlk aileler",
+    "earlyBird": "Katılan ilk 1000 aile her şeyi sonsuza dek ücretsiz tutar — sonradan ekleyeceklerimiz dahil.",
+    "cta": "Daili'yi ücretsiz al"
+  },
+
+  "trust": {
+    "h2": "Ailenizin planları ailenize aittir",
+    "pills": [
+      { "strong": "Reklam yok", "span": "Kapatılacak hiçbir şey yok — ne şimdi ne sonra." },
+      { "strong": "Takip yok", "span": "Analitik yok, profilleme yok — bu site çerez bile kullanmıyor." },
+      { "strong": "Veri satışı yok", "span": "Ücretsiz uygulama, AB'de sunucular ve haklarınız en baştan yerinde." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Takvim",
+      "h2": "Herkes için tek takvim",
+      "p": "Ailenin bütün haftası ve bütün ayı tek bakışta — ve bir daha asla okuldan almayı unutmayın.",
+      "bullets": [
+        "Kategorileri, yerleri ve notlarıyla renkli etkinlikler",
+        "Doğru düzgün tekrarlar — her salı futbol, iki haftada bir piyano",
+        "Ailedeki her telefonda hatırlatmalar",
+        "36 ülkenin resmî tatilleri; özel etkinlikler özel kalır"
+      ],
+      "alt": "Renkli etkinlikleriyle aylık takvim"
+    },
+    "shopping": {
+      "eyebrow": "Alışveriş",
+      "h2": "Anında güncellenen alışveriş listeleri",
+      "p": "Kendi telefonunuza «süt» yazarsınız — ve yaklaşık bir saniye sonra markette olan eşinizin telefonunda belirir.",
+      "bullets": [
+        "Bütün ailenin düzenleyebildiği ortak listeler",
+        "Her satır için miktar, kategori ve not",
+        "İşaretlenen satırlar düzgünce en alta kayar"
+      ],
+      "alt": "Ortak alışveriş listesi"
+    },
+    "todos": {
+      "eyebrow": "Görevler",
+      "h2": "Her görevin üzerinde bir isim var",
+      "p": "«Ben senin yaptığını sanıyordum» devri bitti. Çocuklar kendi görevlerini görür ve kendileri işaretler.",
+      "bullets": [
+        "Sorumlu kişi, teslim tarihi ve hatırlatma",
+        "Ev işleri, dışarıdaki işler ve arasındaki her şey için"
+      ],
+      "alt": "Sorumlularıyla birlikte aile görev listesi"
+    },
+    "meals": {
+      "eyebrow": "Yemek planı",
+      "h2": "Akşam yemeği daha pazar günü belli",
+      "p": "Kahvaltıdan akşam yemeğine bütün haftayı, doğrudan ailenizin kendi tarif defterinden planlayın — sonra malzemeleri bir alışveriş listesine gönderin.",
+      "bullets": [
+        "Günde dört öğünlük haftalık yemek planı",
+        "Fotoğraflı tarif defteri ve bağlantıyla içe aktarma",
+        "Bir tarifin malzemeleri tek dokunuşla istediğiniz listeye"
+      ],
+      "alt": "Haftalık yemek planı"
+    },
+    "birthdays": {
+      "eyebrow": "Kutlamalar",
+      "h2": "Bir daha asla doğum günü kaçırmayın",
+      "p": "Doğum günleri, yıl dönümleri ve aile kutlamaları — her yıl hatırlanır, geri sayımla ve herkese hatırlatmayla.",
+      "bullets": [],
+      "alt": "Doğum günleri ve kutlamalar ekranı"
+    },
+    "vault": {
+      "eyebrow": "Tasarımı gereği özel",
+      "h2": "Fotoğraflar ve belgeler telefonunuzda kalır",
+      "p": "Daili kasası aile fotoğraflarını ve önemli belgeleri düzenli tutar — yalnızca kendi cihazınızda saklanır, sunucularımıza asla yüklenmez.",
+      "bullets": [],
+      "alt": "Belge kasası"
+    },
+    "family": {
+      "eyebrow": "Aile",
+      "h2": "Anne baba, çocuklar ve babaanne — hepsi içinde",
+      "p": "Ailenizi basit bir 6 haneli kodla ya da bağlantıyla davet edin. Anne babalar yönetici olur, çocuklar ve gençler kendi girişini alır, e-postası olmayan küçükler ise sonradan gerçek bir hesaba dönüştürebileceğiniz yönetilen bir profil edinir.",
+      "bullets": [],
+      "alt": "Bir ailenin çizimi"
+    }
+  },
+
+  "faq": {
+    "h2": "Sorular ve yanıtlar",
+    "items": [
+      {
+        "q": "Daili ne kadar?",
+        "a": "Hiç. Daili 1.0 ücretsiz — reklamsız ve veri satışı olmadan. Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey ücretsiz kalır."
+      },
+      {
+        "q": "Uygulama hangi dilleri konuşuyor?",
+        "a": "On bir dili, eksiksiz — gönderdiği hatırlatmalar dahil: İngilizce, Almanca, Felemenkçe, Fransızca, İtalyanca, İspanyolca, Portekizce, Lehçe, İsveççe, Danca ve Norveççe. Türkçe henüz aralarında değil: bu site Türkçe, ama uygulamanın kendisi şimdilik İngilizce."
+      },
+      {
+        "q": "Hangi telefonlarda çalışıyor?",
+        "a": "iPhone ve Android'de, tek bir ortak aile hesabından. Her şey ikisi arasında eşitlenir."
+      },
+      {
+        "q": "Çocuklarım kullanabilir mi?",
+        "a": "Evet — zaten olay bu. Çocuklar ve gençler kendi girişini alır, kendi görevlerini ve planlarını görür. E-posta adresi olmayan küçükler bir ebeveynin yönettiği, sonradan gerçek bir girişe dönüşebilen yönetilen bir profil edinir. Anne babalar yöneticidir ve bir profili verileriyle birlikte istedikleri zaman silebilir."
+      },
+      {
+        "q": "İnternetsiz çalışıyor mu?",
+        "a": "Takviminizi, listelerinizi ve görevlerinizi bağlantı olmadan okuyabilirsiniz; değişiklikler yeniden çevrimiçi olur olmaz eşitlenir. Kasadaki fotoğraflar ve belgeler her zaman çevrimdışıdır — yalnızca telefonunuzda dururlar."
+      },
+      {
+        "q": "Şu anki takvimimi getirebilir miyim?",
+        "a": "Evet. Daili telefonunuzun kendi takvimini cihazda gösterebilir ve etkinlikleri aile takviminde görünsün diye bir Google veya Outlook takvimi bağlayabilirsiniz. Hangilerini siz seçersiniz ve istediğiniz zaman bağlantıyı kesebilirsiniz."
+      },
+      {
+        "q": "Verilerim nerede tutuluyor?",
+        "a": "Takviminiz, listeleriniz ve ailenizin verileri AB'deki sunucumuzda. Kasadaki fotoğraflar ve belgeler telefonunuzdan asla çıkmaz. Ayrıntılar <a href=\"/privacy.html\">gizlilik politikasında</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Destek",
+    "intro": "Küçük bir ekibiz ve her şeyi okuyoruz. <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> adresine yazın — sorular, sorunlar ya da fikirler.",
+    "helpsIntro": "Bir şey çalışmıyorsa, şunları eklemeniz bize çok yardımcı olur:",
+    "helps": [
+      "Telefon modeliniz ve iPhone mu Android mi olduğu",
+      "Ne yaptığınız, ne beklediğiniz — ve onun yerine ne olduğu",
+      "Varsa bir ekran görüntüsü"
+    ],
+    "replyTime": "Genellikle bir iki gün içinde yanıtlıyoruz.",
+    "deleteH2": "Hesabınızı silme",
+    "deleteIntro": "Daili hesabınızı ve verilerini istediğiniz zaman, iki yoldan silebilirsiniz:",
+    "deleteWays": [
+      "<strong>Uygulamada:</strong> Ayarlar &rarr; Profil &rarr; Hesabı sil.",
+      "<strong>E-postayla:</strong> hesabınızın e-posta adresinden <a href=\"mailto:support@daili.app?subject=Hesab%C4%B1m%C4%B1%20sil\"><strong>support@daili.app</strong></a> adresine «Hesabımı sil» konusuyla yazın."
+    ],
+    "deleteWhat": "Sonrasında ne oluyor: hesabınız hemen devre dışı bırakılır ve size iptal bağlantısı içeren bir e-posta gelir. 30 günlük süre dolduktan sonra hesabınız ve ona bağlı veriler (profil ile oluşturduğunuz etkinlikler, listeler, tarifler ve fotoğraflar) sunucularımızdan kalıcı olarak silinir. O 30 gün içinde fikrinizi değiştirirseniz e-postadaki bağlantı her şeyi geri getirir. Çevrimdışı kasadaki dosyalar yalnızca telefonunuzdadır ve hesap o cihazda silindiğinde kaldırılır."
+  },
+
+  "notfound": {
+    "h1": "Sayfa bulunamadı",
+    "lead": "Bu sayfa taşındı ya da hiç var olmadı.",
+    "home": "Ana sayfaya dön"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Gizlilik",
+    "terms": "Koşullar",
+    "imprint": "Künye"
+  }
+}
