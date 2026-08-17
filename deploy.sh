@@ -52,7 +52,16 @@ echo "==> smoke"
 fail=0
 check() { # check <path> <expected-code> [label]
   local code
-  code=$(curl -sS -o /dev/null -w '%{http_code}' "https://daili.app$1")
+  # --retry and a generous timeout on purpose: this host intermittently drops a
+  # TLS connection, and a transient blip used to print "SMOKE FAILED" plus a
+  # rollback command for a deploy that was perfectly fine. A smoke test that
+  # cries wolf gets ignored, and then it is worth nothing on the day it is right.
+  # -s not -sS: with --retry, curl prints a message for every attempt it had to
+  # retry, so a recovered blip printed a scary connection error right above
+  # "==> ok". A hard failure is still reported — it comes back as 000 and is
+  # caught by the comparison below.
+  code=$(curl -s --max-time 30 --retry 3 --retry-delay 2 --retry-all-errors \
+              -o /dev/null -w '%{http_code}' "https://daili.app$1" || echo 000)
   if [ "$code" != "$2" ]; then
     printf '  FAIL %-34s got %s, want %s %s\n' "$1" "$code" "$2" "${3:-}"
     fail=1
@@ -95,9 +104,9 @@ check /this-does-not-exist 404
 # The check that catches the Plesk "serve static files directly by nginx"
 # regression: if that toggle is ever switched on, every Header rule dies
 # silently and this is the only symptom.
-css=$(curl -sS https://daili.app/ | grep -o '/assets/style\.[a-f0-9]*\.css' | head -1)
+css=$(curl -s --max-time 30 --retry 3 --retry-delay 2 --retry-all-errors https://daili.app/ | grep -o '/assets/style\.[a-f0-9]*\.css' | head -1)
 if [ -n "$css" ]; then
-  if ! curl -sSI "https://daili.app$css" | grep -qi 'cache-control'; then
+  if ! curl -sI --max-time 30 --retry 3 --retry-delay 2 --retry-all-errors "https://daili.app$css" | grep -qi 'cache-control'; then
     echo "  FAIL no Cache-Control on $css — nginx is serving static files directly,"
     echo "       so every .htaccess Header rule is dead. Fix in Plesk > Apache & nginx Settings."
     fail=1
