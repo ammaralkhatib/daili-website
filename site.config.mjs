@@ -15,7 +15,7 @@ export const BASE_URL = 'https://daili.app';
  * The target is 23. They arrive in batches (see the plan's Phase 5); this array
  * is the switch that ships them.
  */
-export const LOCALES = ['en', 'de'];
+export const LOCALES = ['en', 'de', 'fr', 'es', 'it', 'nl', 'pt', 'sv', 'da', 'nb', 'pl'];
 
 /** The full 23-locale target, kept here so the endonym map below stays honest. */
 export const PLANNED_LOCALES = [

@@ -1,0 +1,245 @@
+{
+  "@@locale": "sv",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Familjekalender: delad kalender, listor och uppgifter",
+    "description": "Daili är det enkla sättet att sköta familjelivet tillsammans: en delad kalender, inköpslistor som uppdateras direkt och uppgifter för hela familjen. Gratis, utan reklam.",
+    "ogTitle": "Daili — Familjekalender",
+    "ogDescription": "En lugn plats för familjens vecka: delad kalender, inköpslistor och uppgifter som alla ser.",
+    "supportTitle": "Support — Daili",
+    "supportDescription": "Få hjälp med Daili eller radera ditt konto. Vi svarar oftast inom en eller två dagar.",
+    "notfoundTitle": "Sidan hittades inte — Daili"
+  },
+
+  "nav": {
+    "features": "Funktioner",
+    "pricing": "Pris",
+    "support": "Support",
+    "download": "Ladda ner",
+    "language": "Språk",
+    "skip": "Hoppa till innehållet"
+  },
+
+  "cta": {
+    "sticky": "Skaffa Daili — gratis"
+  },
+
+  "store": {
+    "appleSmall": "Ladda ner på",
+    "googleSmall": "Hämta på"
+  },
+
+  "hero": {
+    "h1a": "Hela familjen,",
+    "h1b": "på samma sida.",
+    "lead": "En lugn plats för familjens vecka: en delad kalender, inköpslistor och uppgifter som alla ser. Gjord för föräldrar, för barn med egen inloggning och för de små som du sköter åt dem.",
+    "note": "Gratis · Utan reklam · Dina uppgifter stannar i EU",
+    "altCalendar": "Månadskalender i Daili",
+    "altHome": "Startskärmen i Daili med rutorna för funktionerna"
+  },
+
+  "howItWorks": {
+    "h2": "Klart på ungefär en minut",
+    "steps": [
+      {
+        "h3": "Hämta appen",
+        "p": "Gratis på iPhone och Android. Utan kort och utan provperiod som tar slut."
+      },
+      {
+        "h3": "Skapa din familj",
+        "p": "Bjud in alla med en sexsiffrig kod eller en länk. Föräldrar är administratörer, barn och tonåringar får egen inloggning, och de små utan e-post får en hanterad profil."
+      },
+      {
+        "h3": "Alla på samma sida",
+        "p": "Det du lägger till i din telefon syns i de andras på ungefär en sekund — kalender, listor och uppgifter lika snabbt."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "En titt inuti",
+    "lead": "Hela appen, på sex skärmar.",
+    "captions": [
+      "Startskärmen — allt en tryckning bort",
+      "Familjens receptsamling, med foton och import med en tryckning",
+      "Foton och dokument, sparade bara i din telefon",
+      "Inköpslistor som uppdateras medan du står i butiken",
+      "Från frukost till middag, planerat för veckan",
+      "Födelsedagar och fester, ihågkomna varje år"
+    ]
+  },
+
+  "compare": {
+    "h2": "Varför inte bara en delad kalender?",
+    "lead": "Google Kalender är mycket bra på kalendrar. Men familjelivet består inte bara av tider — och en tavla i köket följer inte med till affären.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Delad kalender", "paper": "Papper och tavla" },
+    "rows": [
+      "Allas tider på ett ställe",
+      "Påminnelser i varje telefon",
+      "En inköpslista som uppdateras direkt",
+      "Uppgifter med ett namn på",
+      "Matsedel för veckan och recept",
+      "Barnen får egen inloggning",
+      "Födelsedagar ihågkomna varje år",
+      "Ingen reklam, inget sålt"
+    ],
+    "legend": "✓ ja · ~ delvis · — nej"
+  },
+
+  "pricing": {
+    "h2": "Gratis — och gratis för dig, för alltid",
+    "lead": "Daili kostar ingenting i dag. Ingen reklam, ingen spårning och ingenting som säljs till någon.",
+    "points": [
+      "Allt på den här sidan är gratis redan nu",
+      "Inget kort, ingen provperiod och inga låsta funktioner",
+      "Om vi någon gång lägger till betalda tillägg förblir allt som är gratis i dag gratis för dig"
+    ],
+    "earlyBirdTitle": "Först på plats",
+    "earlyBird": "De första 1000 familjerna som går med behåller allt gratis för alltid — även det vi lägger till senare.",
+    "cta": "Skaffa Daili gratis"
+  },
+
+  "trust": {
+    "h2": "Familjens planer tillhör familjen",
+    "pills": [
+      { "strong": "Ingen reklam", "span": "Inget att klicka bort — varken nu eller sedan." },
+      { "strong": "Ingen spårning", "span": "Ingen statistik, ingen profilering — den här webbplatsen använder inte ens kakor." },
+      { "strong": "Inga sålda uppgifter", "span": "Gratis app, servrar i EU och dina rättigheter inbyggda." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Kalender",
+      "h2": "En kalender för alla",
+      "p": "Hela familjens vecka och månad med en blick — och du glömmer aldrig mer att hämta.",
+      "bullets": [
+        "Färgsatta händelser med kategorier, platser och anteckningar",
+        "Upprepningar som stämmer — fotboll varje tisdag, piano varannan vecka",
+        "Påminnelser i varje telefon i familjen",
+        "Helgdagar för 36 länder; privata händelser förblir privata"
+      ],
+      "alt": "Månadskalender med färgade händelser"
+    },
+    "shopping": {
+      "eyebrow": "Inköp",
+      "h2": "Inköpslistor som uppdateras direkt",
+      "p": "Du skriver ”mjölk” i din telefon — och det dyker upp i din partners, i butiken, på ungefär en sekund.",
+      "bullets": [
+        "Delade listor som hela familjen kan ändra i",
+        "Antal, kategori och anteckning för varje vara",
+        "Avbockade varor glider snyggt ner till botten"
+      ],
+      "alt": "Delad inköpslista"
+    },
+    "todos": {
+      "eyebrow": "Uppgifter",
+      "h2": "På varje uppgift står det ett namn",
+      "p": "Slut på ”jag trodde att du skulle göra det”. Barnen ser sina egna uppgifter och bockar av dem själva.",
+      "bullets": [
+        "Ansvarig person, förfallodatum och påminnelse",
+        "Funkar för sysslor, ärenden och allt däremellan"
+      ],
+      "alt": "Familjens uppgiftslista med ansvariga"
+    },
+    "meals": {
+      "eyebrow": "Matsedel",
+      "h2": "Middagen, bestämd redan på söndagen",
+      "p": "Planera från frukost till middag för hela veckan, direkt ur familjens egen receptsamling — och skicka sedan ingredienserna till en inköpslista.",
+      "bullets": [
+        "Matsedel för veckan med fyra måltider per dag",
+        "Receptsamling med foton och import via länk",
+        "Ett recepts ingredienser till vilken lista som helst med en tryckning"
+      ],
+      "alt": "Matsedel för veckan"
+    },
+    "birthdays": {
+      "eyebrow": "Fester",
+      "h2": "Glöm aldrig en födelsedag igen",
+      "p": "Födelsedagar, bemärkelsedagar och familjefester — ihågkomna varje år, med nedräkning och påminnelser till alla.",
+      "bullets": [],
+      "alt": "Skärmen med födelsedagar och fester"
+    },
+    "vault": {
+      "eyebrow": "Privat från början",
+      "h2": "Foton och dokument stannar i telefonen",
+      "p": "Kassaskåpet i Daili håller familjefoton och viktiga dokument i ordning — sparade bara på din enhet och aldrig uppladdade till våra servrar.",
+      "bullets": [],
+      "alt": "Kassaskåp för dokument"
+    },
+    "family": {
+      "eyebrow": "Familj",
+      "h2": "Föräldrar, barn och mormor — alla med",
+      "p": "Bjud in familjen med en enkel sexsiffrig kod eller en länk. Föräldrar är administratörer, barn och tonåringar får egen inloggning, och de små utan e-post får en hanterad profil som du kan uppgradera senare.",
+      "bullets": [],
+      "alt": "Illustration av en familj"
+    }
+  },
+
+  "faq": {
+    "h2": "Frågor, besvarade",
+    "items": [
+      {
+        "q": "Vad kostar Daili?",
+        "a": "Ingenting. Daili 1.0 är gratis — utan reklam och utan att uppgifter säljs. Om vi någon gång lägger till betalda tillägg förblir allt som är gratis i dag gratis."
+      },
+      {
+        "q": "Vilka språk talar appen?",
+        "a": "Elva, fullt ut — även påminnelserna den skickar: svenska, engelska, tyska, nederländska, franska, italienska, spanska, portugisiska, polska, danska och norska."
+      },
+      {
+        "q": "Vilka telefoner funkar den på?",
+        "a": "iPhone och Android, från ett och samma delade familjekonto. Allt synkroniseras mellan dem."
+      },
+      {
+        "q": "Kan mina barn använda den?",
+        "a": "Ja — det är hela poängen. Barn och tonåringar får egen inloggning och ser sina egna uppgifter och tider. De små utan e-postadress får en hanterad profil som en förälder styr och som kan bli en riktig inloggning senare. Föräldrar är administratörer och kan ta bort en profil och dess uppgifter när som helst."
+      },
+      {
+        "q": "Funkar den utan nät?",
+        "a": "Du kan läsa kalendern, listorna och uppgifterna utan uppkoppling, och ändringar synkroniseras så snart du är online igen. Foton och dokument i kassaskåpet är alltid offline — de finns bara i din telefon."
+      },
+      {
+        "q": "Kan jag ta med min nuvarande kalender?",
+        "a": "Ja. Daili kan visa telefonens egen kalender på enheten, och du kan koppla en Google- eller Outlook-kalender så att dess händelser syns i familjekalendern. Du väljer vilka, och du kan koppla bort när som helst."
+      },
+      {
+        "q": "Var sparas mina uppgifter?",
+        "a": "Din kalender, dina listor och familjens uppgifter ligger på vår server i EU. Foton och dokument i kassaskåpet lämnar aldrig din telefon. Mer i <a href=\"/privacy.html\">integritetspolicyn</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Support",
+    "intro": "Vi är ett litet team och vi läser allt. Skriv till <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — frågor, problem eller idéer.",
+    "helpsIntro": "Om något inte funkar hjälper det oss mycket om du skriver med:",
+    "helps": [
+      "Din telefonmodell och om det är iPhone eller Android",
+      "Vad du gjorde, vad du väntade dig — och vad som hände i stället",
+      "En skärmbild, om du har en"
+    ],
+    "replyTime": "Vi svarar oftast inom en eller två dagar.",
+    "deleteH2": "Radera ditt konto",
+    "deleteIntro": "Du kan radera ditt Daili-konto och dess uppgifter när som helst, på två sätt:",
+    "deleteWays": [
+      "<strong>I appen:</strong> Inställningar &rarr; Profil &rarr; Radera konto.",
+      "<strong>Via e-post:</strong> skriv till <a href=\"mailto:support@daili.app?subject=Radera%20mitt%20konto\"><strong>support@daili.app</strong></a> från kontots e-postadress, med ämnet ”Radera mitt konto”."
+    ],
+    "deleteWhat": "Vad som händer sedan: ditt konto stängs av direkt och du får ett e-postmeddelande med en länk för att ångra. Efter en frist på 30 dagar raderas ditt konto och de uppgifter som hör till det (profilen samt de händelser, listor, recept och foton du skapat) slutgiltigt från våra servrar. Ångrar du dig inom de 30 dagarna återställer länken i mejlet allt. Filer i kassaskåpet offline finns bara i din telefon och tas bort när kontot raderas på den enheten."
+  },
+
+  "notfound": {
+    "h1": "Sidan hittades inte",
+    "lead": "Sidan har flyttat eller har aldrig funnits.",
+    "home": "Tillbaka till startsidan"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Integritet",
+    "terms": "Villkor",
+    "imprint": "Utgivare"
+  }
+}

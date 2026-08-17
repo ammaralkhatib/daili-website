@@ -1,0 +1,245 @@
+{
+  "@@locale": "nl",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — Gezinsplanner: gedeelde agenda, lijsten en taken",
+    "description": "Daili is de simpele manier om het gezinsleven samen te regelen: één gedeelde agenda, boodschappenlijsten die live meelopen en taken voor iedereen. Gratis, zonder reclame.",
+    "ogTitle": "Daili — Gezinsplanner",
+    "ogDescription": "Eén rustige plek voor de week van je gezin: gedeelde agenda, boodschappenlijsten en taken die iedereen ziet.",
+    "supportTitle": "Support — Daili",
+    "supportDescription": "Hulp bij Daili, of je account verwijderen. We antwoorden meestal binnen een dag of twee.",
+    "notfoundTitle": "Pagina niet gevonden — Daili"
+  },
+
+  "nav": {
+    "features": "Functies",
+    "pricing": "Prijs",
+    "support": "Support",
+    "download": "Download",
+    "language": "Taal",
+    "skip": "Naar de inhoud"
+  },
+
+  "cta": {
+    "sticky": "Daili halen — gratis"
+  },
+
+  "store": {
+    "appleSmall": "Download in de",
+    "googleSmall": "Ontdek het op"
+  },
+
+  "hero": {
+    "h1a": "Jullie gezin,",
+    "h1b": "op één lijn.",
+    "lead": "Eén rustige plek voor de week van je gezin: een gedeelde agenda, boodschappenlijsten en taken die iedereen ziet. Gemaakt voor ouders, voor kinderen met een eigen login en voor de kleintjes die jij voor hen beheert.",
+    "note": "Gratis · Zonder reclame · Je gegevens blijven in de EU",
+    "altCalendar": "Maandagenda van Daili",
+    "altHome": "Beginscherm van Daili met de tegels van de functies"
+  },
+
+  "howItWorks": {
+    "h2": "In ongeveer een minuut geregeld",
+    "steps": [
+      {
+        "h3": "Haal de app",
+        "p": "Gratis op iPhone en Android. Zonder creditcard en zonder proefperiode die afloopt."
+      },
+      {
+        "h3": "Maak je gezin aan",
+        "p": "Nodig iedereen uit met een code van 6 cijfers of een link. Ouders zijn beheerder, kinderen en tieners krijgen een eigen login, en de kleintjes zonder e-mailadres krijgen een beheerd profiel."
+      },
+      {
+        "h3": "Iedereen op één lijn",
+        "p": "Wat jij op je telefoon zet, staat ongeveer een seconde later op die van de anderen — agenda, lijsten en taken net zo goed."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "Een kijkje binnenin",
+    "lead": "De hele app, in zes schermen.",
+    "captions": [
+      "Het beginscherm — alles één tik ver weg",
+      "Het receptenboek van jullie gezin, met foto's en importeren in één tik",
+      "Foto's en documenten, alleen op je eigen telefoon bewaard",
+      "Boodschappenlijsten die bijwerken terwijl je in de winkel staat",
+      "Van ontbijt tot avondeten, gepland voor de hele week",
+      "Verjaardagen en feesten, elk jaar onthouden"
+    ]
+  },
+
+  "compare": {
+    "h2": "Waarom niet gewoon een gedeelde agenda?",
+    "lead": "Google Agenda is heel goed in agenda's. Maar het gezinsleven bestaat niet alleen uit afspraken — en een bord in de keuken gaat niet mee naar de supermarkt.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Gedeelde agenda", "paper": "Papier en bord" },
+    "rows": [
+      "Ieders afspraken op één plek",
+      "Herinneringen op elke telefoon",
+      "Een boodschappenlijst die live bijwerkt",
+      "Taken met een naam erop",
+      "Weekmenu en receptenboek",
+      "Kinderen met een eigen login",
+      "Verjaardagen elk jaar onthouden",
+      "Geen reclame, niets verkocht"
+    ],
+    "legend": "✓ ja · ~ deels · — nee"
+  },
+
+  "pricing": {
+    "h2": "Gratis — en voor jou gratis, voor altijd",
+    "lead": "Daili kost vandaag niets. Geen reclame, geen tracking, niets dat aan wie dan ook verkocht wordt.",
+    "points": [
+      "Alles op deze pagina is nu al gratis",
+      "Geen creditcard, geen proefperiode, geen functies op slot",
+      "Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is voor jou gratis"
+    ],
+    "earlyBirdTitle": "Eerste gezinnen",
+    "earlyBird": "De eerste 1000 gezinnen die meedoen houden alles voor altijd gratis — ook wat we er later bij bouwen.",
+    "cta": "Daili gratis halen"
+  },
+
+  "trust": {
+    "h2": "De plannen van jullie gezin zijn van jullie gezin",
+    "pills": [
+      { "strong": "Geen reclame", "span": "Niets om weg te klikken — nu niet en later niet." },
+      { "strong": "Geen tracking", "span": "Geen statistieken, geen profielen — deze site gebruikt niet eens cookies." },
+      { "strong": "Geen verkoop van gegevens", "span": "Gratis app, servers in de EU, jouw rechten ingebouwd." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Agenda",
+      "h2": "Eén agenda voor iedereen",
+      "p": "De hele week en de hele maand van het gezin in één oogopslag — en je vergeet nooit meer iemand op te halen.",
+      "bullets": [
+        "Afspraken met kleur, categorie, locatie en notities",
+        "Herhalingen die kloppen — voetbal elke dinsdag, piano om de week",
+        "Herinneringen op elke telefoon in het gezin",
+        "Feestdagen van 36 landen; privé-afspraken blijven privé"
+      ],
+      "alt": "Maandagenda met gekleurde afspraken"
+    },
+    "shopping": {
+      "eyebrow": "Boodschappen",
+      "h2": "Boodschappenlijsten die live meelopen",
+      "p": "Jij zet \"melk\" op je telefoon — en het staat ongeveer een seconde later op die van je partner, in de winkel.",
+      "bullets": [
+        "Gedeelde lijsten die het hele gezin kan bijwerken",
+        "Aantal, categorie en notitie per product",
+        "Afgevinkte producten zakken netjes naar onderen"
+      ],
+      "alt": "Gedeelde boodschappenlijst"
+    },
+    "todos": {
+      "eyebrow": "Taken",
+      "h2": "Op elke taak staat een naam",
+      "p": "Nooit meer \"ik dacht dat jij het deed\". Kinderen zien hun eigen taken en vinken ze zelf af.",
+      "bullets": [
+        "Wie het doet, wanneer het af moet en een herinnering",
+        "Voor klusjes, boodschappen en alles daartussen"
+      ],
+      "alt": "Takenlijst van het gezin met wie wat doet"
+    },
+    "meals": {
+      "eyebrow": "Menu",
+      "h2": "Het avondeten, zondag al beslist",
+      "p": "Plan van ontbijt tot avondeten voor de hele week, rechtstreeks uit het eigen receptenboek van jullie gezin — en stuur de ingrediënten daarna naar een boodschappenlijst.",
+      "bullets": [
+        "Weekmenu met vier maaltijden per dag",
+        "Receptenboek met foto's en importeren via een link",
+        "De ingrediënten van een recept met één tik op elke lijst"
+      ],
+      "alt": "Weekmenu"
+    },
+    "birthdays": {
+      "eyebrow": "Feesten",
+      "h2": "Nooit meer een verjaardag vergeten",
+      "p": "Verjaardagen, jubilea en familiefeesten — elk jaar onthouden, met een aftelling en herinneringen voor iedereen.",
+      "bullets": [],
+      "alt": "Scherm met verjaardagen en feesten"
+    },
+    "vault": {
+      "eyebrow": "Privé van opzet",
+      "h2": "Foto's en documenten blijven op je telefoon",
+      "p": "De kluis van Daili houdt gezinsfoto's en belangrijke documenten geordend — alleen op je eigen apparaat bewaard, nooit naar onze servers gestuurd.",
+      "bullets": [],
+      "alt": "Documentenkluis"
+    },
+    "family": {
+      "eyebrow": "Gezin",
+      "h2": "Ouders, kinderen en oma — iedereen erbij",
+      "p": "Nodig je gezin uit met een simpele code van 6 cijfers of een link. Ouders zijn beheerder, kinderen en tieners krijgen een eigen login, en de kleintjes zonder e-mailadres krijgen een beheerd profiel dat je later kunt omzetten.",
+      "bullets": [],
+      "alt": "Illustratie van een gezin"
+    }
+  },
+
+  "faq": {
+    "h2": "Vragen, beantwoord",
+    "items": [
+      {
+        "q": "Wat kost Daili?",
+        "a": "Niets. Daili 1.0 is gratis — zonder reclame en zonder verkoop van gegevens. Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is gratis."
+      },
+      {
+        "q": "Welke talen spreekt de app?",
+        "a": "Elf, volledig — ook de herinneringen die hij stuurt: Nederlands, Engels, Duits, Frans, Italiaans, Spaans, Portugees, Pools, Zweeds, Deens en Noors."
+      },
+      {
+        "q": "Op welke telefoons werkt hij?",
+        "a": "Op iPhone en Android, vanuit één gedeeld gezinsaccount. Alles synchroniseert tussen beide."
+      },
+      {
+        "q": "Kunnen mijn kinderen hem gebruiken?",
+        "a": "Ja — daar is hij juist voor. Kinderen en tieners krijgen een eigen login en zien hun eigen taken en afspraken. De kleintjes zonder e-mailadres krijgen een beheerd profiel dat een ouder bestuurt en dat later een echte login kan worden. Ouders zijn beheerder en kunnen een profiel en de gegevens ervan altijd verwijderen."
+      },
+      {
+        "q": "Werkt hij offline?",
+        "a": "Je agenda, lijsten en taken kun je zonder verbinding bekijken, en wijzigingen synchroniseren zodra je weer online bent. Foto's en documenten in de kluis staan altijd offline — die blijven alleen op je telefoon."
+      },
+      {
+        "q": "Kan ik mijn huidige agenda meenemen?",
+        "a": "Ja. Daili kan de agenda van je eigen telefoon op het apparaat tonen, en je kunt een Google- of Outlook-agenda koppelen zodat die afspraken in de gezinsagenda verschijnen. Jij kiest welke, en je kunt altijd weer ontkoppelen."
+      },
+      {
+        "q": "Waar staan mijn gegevens?",
+        "a": "Je agenda, lijsten en gezinsgegevens staan op onze server in de EU. Foto's en documenten in de kluis verlaten je telefoon nooit. Details in de <a href=\"/privacy.html\">privacyverklaring</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Support",
+    "intro": "We zijn een klein team en we lezen alles. Schrijf naar <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — vragen, problemen of ideeën.",
+    "helpsIntro": "Werkt er iets niet, dan helpt het ons enorm als je dit erbij zet:",
+    "helps": [
+      "Je telefoonmodel en of het een iPhone of Android is",
+      "Wat je deed, wat je verwachtte — en wat er in plaats daarvan gebeurde",
+      "Een schermafbeelding, als je die hebt"
+    ],
+    "replyTime": "We antwoorden meestal binnen een dag of twee.",
+    "deleteH2": "Je account verwijderen",
+    "deleteIntro": "Je kunt je Daili-account en de bijbehorende gegevens altijd verwijderen, op twee manieren:",
+    "deleteWays": [
+      "<strong>In de app:</strong> Instellingen &rarr; Profiel &rarr; Account verwijderen.",
+      "<strong>Per e-mail:</strong> schrijf naar <a href=\"mailto:support@daili.app?subject=Mijn%20account%20verwijderen\"><strong>support@daili.app</strong></a> vanaf het e-mailadres van je account, met als onderwerp &bdquo;Mijn account verwijderen&rdquo;."
+    ],
+    "deleteWhat": "Wat er daarna gebeurt: je account wordt meteen uitgeschakeld en je krijgt een e-mail met een annuleerlink. Na een periode van 30 dagen worden je account en de gegevens die eraan hangen (je profiel en de afspraken, lijsten, recepten en foto's die je hebt gemaakt) definitief van onze servers verwijderd. Bedenk je je binnen die 30 dagen, dan zet de link in de e-mail alles terug. Bestanden in de offline kluis staan alleen op je telefoon en worden verwijderd zodra het account op dat apparaat wordt verwijderd."
+  },
+
+  "notfound": {
+    "h1": "Pagina niet gevonden",
+    "lead": "Die pagina is verplaatst of heeft nooit bestaan.",
+    "home": "Terug naar de beginpagina"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "imprint": "Colofon"
+  }
+}
