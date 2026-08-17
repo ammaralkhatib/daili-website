@@ -1,0 +1,21 @@
+<div class="legal" id="main">
+<h1>{{ support.h1 }}</h1>
+
+<p>{{{ support.intro }}}</p>
+<p>{{ support.helpsIntro }}</p>
+<ul>
+{{# support.helps }}
+<li>{{ . }}</li>
+{{/}}
+</ul>
+<p>{{ support.replyTime }}</p>
+
+<h2 id="delete-account">{{ support.deleteH2 }}</h2>
+<p>{{ support.deleteIntro }}</p>
+<ul>
+{{# support.deleteWays }}
+<li>{{{ . }}}</li>
+{{/}}
+</ul>
+<p>{{ support.deleteWhat }}</p>
+</div>

@@ -1,0 +1,128 @@
+# daili.app — hand-written static site.
+#
+# Apache runs behind Plesk's nginx proxy; these rules are the ones that execute.
+# mod_rewrite and mod_headers are loaded. mod_expires is NOT, so every cache
+# directive below is a `Header`, never an ExpiresByType.
+#
+# Verified 2026-08-17: nginx is NOT serving static files directly — the ETag on
+# /assets/style.css is Apache's size-first form ("2bee-658c06c20a478"), not
+# nginx's mtime-first form. So these Header rules do reach CSS, JS and WebP.
+# If Plesk's "serve static files directly by nginx" is ever switched on they
+# stop applying silently. The check is:
+#   curl -sSI https://daili.app/assets/style.css | grep -i cache-control
+
+DirectoryIndex index.html
+AddDefaultCharset utf-8
+
+# -MultiViews matters: with it on, a request for /de could be content-negotiated
+# to /de.html instead of the /de/ directory. That is exactly the collision this
+# site is about to have, so turn it off before it can happen.
+Options -Indexes -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1. Certificate validation is never rewritten. Always first.
+  RewriteCond %{REQUEST_URI} ^/\.well-known/ [NC]
+  RewriteRule ^ - [L]
+
+  # 2. The old German landing page. /privacy.html, /datenschutz.html and
+  #    /support.html deliberately do NOT appear here: they are printed in the
+  #    live App Store and Play listings and still resolve to real files, which
+  #    is stronger than any redirect.
+  RewriteRule ^de\.html$ /de/ [R=301,L]
+
+  # 3. One canonical URL for the home page.
+  RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # 4. There is deliberately no /en/ directory — English lives at the root, to
+  #    keep the SEO the root has already earned. People and old links will
+  #    guess /en/ anyway, so send them home rather than 404.
+  RewriteRule ^en/?$    /    [R=301,L]
+  RewriteRule ^en/(.*)$ /$1  [R=301,L]
+
+  # 5. Chinese directories are lowercase on disk (/zh-hans/, /zh-hant/) because
+  #    a case-sensitive filesystem plus a mixed-case URL is a 404 waiting to
+  #    happen. The hreflang ATTRIBUTE keeps correct BCP-47 casing
+  #    (hreflang="zh-Hans"); only the path is lowered. Catch the guesses.
+  RewriteRule ^zh-Hans(/.*)?$ /zh-hans$1 [R=301,L,NC]
+  RewriteRule ^zh-Hant(/.*)?$ /zh-hant$1 [R=301,L,NC]
+
+  # 6. Nothing else is rewritten. mod_dir already issues the /de -> /de/
+  #    trailing-slash redirect with the correct absolute HTTPS URL through the
+  #    proxy (verified: GET /assets/img -> 301 https://daili.app/assets/img/).
+  #
+  #    NOTE what is deliberately absent: any RewriteCond on
+  #    %{HTTP:Accept-Language}. Language detection happens in the browser so
+  #    that every response for / is byte-identical, and the nginx cache in front
+  #    of Apache cannot serve one visitor's language to everybody.
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  # ---- caching ------------------------------------------------------------
+  # There was no Cache-Control of any kind before this file existed; browsers
+  # were caching CSS heuristically off Last-Modified.
+
+  # HTML is unhashed and is what names every other file. Revalidate every time:
+  # the 304 is cheap, and a stale page would hide a whole deploy.
+  <FilesMatch "\.html$">
+    Header always set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Images are unhashed and change a few times a year. Thirty days.
+  <FilesMatch "\.(webp|png|ico|svg|jpg|jpeg)$">
+    Header always set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # Any unhashed CSS/JS gets a week, never a year — a deploy must not be
+  # invisible for a year. Stated first so the hashed rule below can override it.
+  <FilesMatch "\.(css|js)$">
+    Header always set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # build.mjs writes style.<8 hex>.css and script.<8 hex>.js. The name changes
+  # whenever the bytes do, so a year is safe and correct. This block comes after
+  # the one above on purpose: for a hashed file both match, and the last
+  # `Header always set` for a given header wins.
+  <FilesMatch "\.[a-f0-9]{8}\.(css|js)$">
+    Header always set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "^(robots\.txt|sitemap\.xml)$">
+    Header always set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
+  # ---- security -----------------------------------------------------------
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+
+  # Deliberately WITHOUT includeSubDomains: that would silently commit
+  # api.daili.app and app.daili.app too, and it is the one header here that is
+  # painful to walk back. Both are HTTPS-only today, so adding it later is a
+  # one-line change. No `preload` either — that is a one-way door.
+  Header always set Strict-Transport-Security "max-age=31536000"
+
+  # The site makes zero external requests by design — no CDN, no fonts, no
+  # analytics — which is what lets it run with no cookie banner. This CSP is the
+  # machine-readable version of that promise, so a future "just one little
+  # script tag" fails visibly instead of quietly creating a consent obligation.
+  #
+  # 'unsafe-inline' for script is temporary: it covers nothing today (all JS is
+  # in assets/script.js) but avoids a surprise if an inline snippet exists in a
+  # page I have not touched. The build step replaces it with a sha256 hash.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' __CSP_SCRIPT_HASHES__; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'; upgrade-insecure-requests"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+
+# Never serve the repo's own files, whatever ends up in the document root.
+<FilesMatch "^(\.git.*|.*\.mjs|.*\.json|README\.md|deploy\.sh|package.*\.json)$">
+  Require all denied
+</FilesMatch>

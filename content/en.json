@@ -1,0 +1,258 @@
+{
+  "@@locale": "en",
+  "@@dir": "ltr",
+  "@@doNotTranslate": ["Daili", "App Store", "Google Play", "iPhone", "Android"],
+
+  "@@identicalOk": [
+    "footer.copyright",
+    "nav.support",
+    "nav.download",
+    "support.h1"
+  ],
+  "@@identicalOkWhy": "Keys that may legitimately come back byte-identical to English — a brand name, an email address, or a word many languages borrow unchanged. Everything NOT listed here and identical to English is treated as untranslated and fails the build. Keep this list short: it is an exemption from the check that catches the most common translation failure.",
+
+  "meta": {
+    "title": "Daili — Family Organizer: Shared Calendar, Lists & To-Dos",
+    "@title": { "description": "Browser tab and search result title.", "maxLength": 60 },
+    "description": "Daili is the simple way to run family life together: one shared calendar, live shopping lists and family to-dos. Free, no ads.",
+    "@description": { "description": "Search result snippet.", "maxLength": 155 },
+    "ogTitle": "Daili — Family Organizer",
+    "ogDescription": "One calm place for your family's week: shared calendar, shopping lists and to-dos everyone can see.",
+    "supportTitle": "Support — Daili",
+    "supportDescription": "Get help with Daili, or delete your account. We usually answer within a day or two.",
+    "notfoundTitle": "Page not found — Daili"
+  },
+
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "support": "Support",
+    "download": "Download",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+
+  "cta": {
+    "sticky": "Get Daili — free"
+  },
+
+  "store": {
+    "appleSmall": "Download on the",
+    "googleSmall": "Get it on"
+  },
+
+  "hero": {
+    "h1a": "Your family,",
+    "h1b": "on the same page.",
+    "@h1b": { "description": "Highlighted in forest green with a hand-drawn underline beneath it. Keep it short — this is the emphasised half of the headline." },
+    "lead": "One calm place for your family's week: a shared calendar, shopping lists and to-dos everyone can see. Made for parents, kids with their own login, and the little ones you manage for them.",
+    "note": "Free · No ads · Your data stays in the EU",
+    "altCalendar": "Daili month calendar",
+    "altHome": "Daili home screen with feature tiles"
+  },
+
+  "howItWorks": {
+    "h2": "Set up in about a minute",
+    "steps": [
+      {
+        "h3": "Get the app",
+        "p": "Free on iPhone and Android. No credit card, no trial that runs out."
+      },
+      {
+        "h3": "Create your family",
+        "p": "Invite everyone with a 6-digit code or a link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile."
+      },
+      {
+        "h3": "You're on the same page",
+        "p": "Add something on your phone and it's on everyone else's in about a second — calendar, lists and to-dos alike."
+      }
+    ]
+  },
+
+  "gallery": {
+    "h2": "A look inside",
+    "lead": "The whole app, in six screens.",
+    "captions": [
+      "The home screen — everything one tap away",
+      "Your family's recipe box, with photos and one-tap import",
+      "Photos and documents, stored only on your phone",
+      "Shopping lists that update while you're in the store",
+      "Breakfast to dinner, planned for the week",
+      "Birthdays and celebrations, remembered every year"
+    ]
+  },
+
+  "compare": {
+    "h2": "Why not just a shared calendar?",
+    "lead": "Google Calendar is very good at calendars. But family life is not only calendars — and a whiteboard in the kitchen doesn't come to the supermarket with you.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Shared calendar", "paper": "Paper & whiteboard" },
+    "rows": [
+      "Everyone's events in one place",
+      "Reminders on every phone",
+      "A shopping list that updates live",
+      "To-dos with a name on them",
+      "Meal plan and recipe box",
+      "Kids get their own login",
+      "Birthdays remembered every year",
+      "No ads, nothing sold"
+    ],
+    "legend": "✓ yes · ~ partly · — no"
+  },
+
+  "pricing": {
+    "h2": "Free — and free for you, forever",
+    "lead": "Daili costs nothing today. No ads, no tracking, nothing sold to anyone.",
+    "points": [
+      "Every feature on this page is free right now",
+      "No credit card, no trial period, no locked features",
+      "If we ever add paid extras, everything that is free today stays free for you"
+    ],
+    "earlyBirdTitle": "Early bird",
+    "earlyBird": "The first 1000 families to join keep everything free forever — including anything we add later.",
+    "cta": "Get Daili free"
+  },
+
+  "trust": {
+    "h2": "Your family's plans belong to your family",
+    "pills": [
+      { "strong": "No ads", "span": "Nothing to click away — not now, not later." },
+      { "strong": "No tracking", "span": "No analytics, no profiling — this site doesn't even use cookies." },
+      { "strong": "No selling your data", "span": "Free app, servers in the EU, your rights built in." }
+    ]
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Calendar",
+      "@eyebrow": { "description": "Canonical feature name. Must match the app's own label for this locale — see content/glossary.md." },
+      "h2": "One calendar for everyone",
+      "p": "See the whole family's week and month at a glance — and never miss pickup again.",
+      "bullets": [
+        "Color-coded events with categories, locations and notes",
+        "Repeating events done right — soccer every Tuesday, piano every other week",
+        "Reminders on every phone in the family",
+        "Public holidays for 36 countries, private events stay private"
+      ],
+      "alt": "Month calendar with event pills"
+    },
+    "shopping": {
+      "eyebrow": "Shopping",
+      "h2": "Shopping lists that update live",
+      "p": "Add \"milk\" on your phone — it appears on your partner's in the store, in about a second.",
+      "bullets": [
+        "Shared lists the whole family can edit",
+        "Quantities, categories and notes per item",
+        "Checked items drop neatly to the bottom"
+      ],
+      "alt": "Shared shopping list"
+    },
+    "todos": {
+      "eyebrow": "To-dos",
+      "h2": "Every task has a name on it",
+      "p": "No more \"I thought you were doing it.\" Kids see their own tasks and can check them off.",
+      "bullets": [
+        "Assignees, due dates and reminders",
+        "Works for chores, errands and everything between"
+      ],
+      "alt": "Family to-do list with assignees"
+    },
+    "meals": {
+      "eyebrow": "Meals",
+      "h2": "Dinner, decided by Sunday",
+      "p": "Plan breakfast to dinner for the whole week, straight from your family's own recipe box — then send the ingredients to a shopping list.",
+      "bullets": [
+        "Weekly meal plan with four slots per day",
+        "Recipe box with photos and URL import",
+        "Add a recipe's ingredients to any list in one tap"
+      ],
+      "alt": "Weekly meal plan"
+    },
+    "birthdays": {
+      "eyebrow": "Celebrations",
+      "h2": "Never miss a birthday again",
+      "p": "Birthdays, anniversaries and family celebrations — remembered every year, with a countdown and reminders for everyone.",
+      "bullets": [],
+      "alt": "Birthdays and celebrations screen"
+    },
+    "vault": {
+      "eyebrow": "Private by design",
+      "h2": "Photos & documents stay on your phone",
+      "p": "The Daili vault keeps family photos and important documents organized — stored only on your device, never uploaded to our servers.",
+      "bullets": [],
+      "alt": "Documents vault"
+    },
+    "family": {
+      "eyebrow": "Family",
+      "h2": "Parents, kids & grandma — all in",
+      "p": "Invite your family with a simple 6-digit code or link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile you can upgrade later.",
+      "bullets": [],
+      "alt": "Illustration of a family"
+    }
+  },
+
+  "faq": {
+    "h2": "Questions, answered",
+    "items": [
+      {
+        "q": "What does Daili cost?",
+        "a": "Nothing. Daili 1.0 is free — no ads, no data selling. If we ever add paid extras, everything that is free today stays free."
+      },
+      {
+        "q": "Which languages does it speak?",
+        "a": "The app speaks eleven, fully — including the reminders it sends: English, German, Dutch, French, Italian, Spanish, Portuguese, Polish, Swedish, Danish and Norwegian."
+      },
+      {
+        "q": "Which phones does it run on?",
+        "a": "iPhone and Android, from one shared family account. Everything syncs between them."
+      },
+      {
+        "q": "Can my kids use it?",
+        "a": "Yes — that's the point. Kids and teens get their own login and see their own tasks and events. Little ones without an email address get a managed profile a parent controls, which can be upgraded to a real login later. Parents are admins and can remove a profile and its data at any time."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "You can read your calendar, lists and to-dos without a connection, and changes sync as soon as you're back online. Photos and documents in the vault are always offline — they live only on your phone."
+      },
+      {
+        "q": "Can I bring my existing calendar?",
+        "a": "Yes. Daili can show your phone's own calendar on your device, and you can connect a Google or Outlook calendar so its events appear in the family calendar. You choose which ones, and you can disconnect at any time."
+      },
+      {
+        "q": "Where is my data stored?",
+        "a": "Your calendar, lists and family data live on our server in the EU. Photos and documents in the vault never leave your phone. Details in the <a href=\"/privacy.html\">privacy policy</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Support",
+    "intro": "We're a small team and we read everything. Write to <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — questions, problems or ideas.",
+    "helpsIntro": "If something isn't working, it helps us a lot if you include:",
+    "helps": [
+      "Your phone model and whether it's iPhone or Android",
+      "What you did, what you expected, and what happened instead",
+      "A screenshot, if you have one"
+    ],
+    "replyTime": "We usually answer within a day or two.",
+    "deleteH2": "Delete your account",
+    "deleteIntro": "You can delete your Daili account and its data at any time, in two ways:",
+    "deleteWays": [
+      "<strong>In the app:</strong> Settings &rarr; Profile &rarr; Delete account.",
+      "<strong>By email:</strong> write to <a href=\"mailto:support@daili.app?subject=Delete%20my%20account\"><strong>support@daili.app</strong></a> from the email address of your account, with the subject &ldquo;Delete my account&rdquo;."
+    ],
+    "deleteWhat": "What happens next: your account is deactivated immediately and you receive an email with a cancellation link. After a 30-day grace period, your account and the data linked to it (profile, and any events, lists, recipes and photos you created) are permanently deleted from our servers. If you change your mind within those 30 days, the link in the email restores everything. Files in the offline vault live only on your phone and are removed when the account is deleted on that device."
+  },
+
+  "notfound": {
+    "h1": "Page not found",
+    "lead": "That page moved or never existed.",
+    "home": "Back to the home page"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "imprint": "Impressum"
+  }
+}

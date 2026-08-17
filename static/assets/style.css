@@ -1,0 +1,338 @@
+/* Daili — daili.app
+ *
+ * Two conventions run through this file, both load-bearing:
+ *
+ * 1. LOGICAL PROPERTIES, not physical ones. margin-inline-start, not
+ *    margin-left. That is what lets the Arabic build mirror itself from a
+ *    single stylesheet instead of a generated second copy that drifts.
+ *    Transforms have no logical form, so their direction lives in the
+ *    --rot-* / --dir custom properties below and is flipped in one place.
+ *
+ * 2. EVERY COLOUR IS A TOKEN. Nothing below :root hard-codes a colour, which
+ *    is what makes the dark-mode block at the end ~20 lines instead of a
+ *    second stylesheet.
+ */
+
+:root{
+  --paper:#FCFAF4; --card:#FFFFFF; --cream:#F4EDDE;
+  --forest:#04613C; --forest-deep:#0B4A30; --ink:#0F1D16;
+  --mint:#DCEFDF; --mint-strong:#A9D9B8;
+  --muted:#5B6B62; --line:#E7E2D5;
+  --body:#2A3830;
+  --frame:#0F1D16;                 /* the phone bezel — must stay dark in dark mode */
+  --trust-a:#EFF6EF; --trust-b:#FAF5E9;
+  --shadow:15,29,22;
+  --radius:22px;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,.8,.3,1);
+
+  /* Direction-dependent geometry. Transforms cannot be expressed logically, so
+     the sign lives here and [dir="rtl"] flips it exactly once. */
+  --dir:1;
+  --rot-hp-l:-9deg; --rot-hp-r:7deg;
+  --rot-phone-hover:-1.2deg; --rot-ill-hover:.6deg; --rot-brand-hover:-8deg;
+}
+
+[dir="rtl"]{
+  --dir:-1;
+  --rot-hp-l:9deg; --rot-hp-r:-7deg;
+  --rot-phone-hover:1.2deg; --rot-ill-hover:-.6deg; --rot-brand-hover:8deg;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* height:auto is required now that every <img> carries width/height attributes:
+   without it the attribute height wins over the CSS width and images squash. */
+img{max-width:100%;height:auto;display:block}
+a{color:var(--forest)}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:20px}
+
+/* Arabic and Thai need more leading than Latin at the same size. */
+[lang="ar"] body,[lang="th"] body,body[lang="ar"],body[lang="th"]{line-height:1.85}
+:is([lang="ar"],[lang="th"]) body{line-height:1.85}
+
+/* Negative tracking makes CJK glyphs collide; unspaced strings must still wrap. */
+:is([lang="ja"],[lang="ko"],[lang^="zh"]) h1,
+:is([lang="ja"],[lang="ko"],[lang^="zh"]) h2,
+:is([lang="ja"],[lang="ko"],[lang^="zh"]) h3{letter-spacing:0}
+h1,h2,h3,p,li,summary,figcaption{overflow-wrap:anywhere}
+
+/* Visible focus. There was none at all before, which made the whole site
+   unusable by keyboard. :focus-visible so it never shows on a mouse click. */
+:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:4px}
+
+.skip{position:absolute;inset-inline-start:-9999px;top:0;z-index:100;background:var(--forest);color:#fff;padding:10px 18px;border-radius:0 0 12px 0;text-decoration:none}
+.skip:focus{inset-inline-start:0}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;z-index:20;transition:border-color .3s,box-shadow .3s}
+header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(--shadow),.06)}
+.nav{display:flex;align-items:center;gap:18px;padding:14px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:11px;transition:transform .5s var(--ease)}
+.brand:hover img{transform:rotate(var(--rot-brand-hover)) scale(1.06)}
+.nav .links{margin-inline-start:auto;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px 18px;align-items:center}
+.nav .links>a{text-decoration:none;color:var(--ink);font-size:.95rem;position:relative}
+.nav .links>a::after{content:"";position:absolute;inset-inline-start:0;bottom:-4px;height:2px;width:0;background:var(--forest);border-radius:2px;transition:width .3s var(--ease)}
+.nav .links>a:hover::after{width:100%}
+.nav .links>a:hover{color:var(--forest)}
+.lang{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;background:var(--card);transition:background .3s,border-color .3s}
+.lang:hover{background:var(--mint);border-color:var(--mint-strong)}
+.nav .links>a.lang::after{display:none}
+
+/* ---------- language picker (used once there are more than two locales) ---- */
+.langpicker{position:relative}
+.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;background:var(--card);transition:background .3s,border-color .3s}
+.langpicker summary::-webkit-details-marker{display:none}
+.langpicker summary:hover{background:var(--mint);border-color:var(--mint-strong)}
+.langpicker summary svg{width:15px;height:15px;stroke:var(--muted);flex:none}
+.langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 20px 50px rgba(var(--shadow),.16);z-index:30;min-width:min(560px,86vw)}
+.langpicker-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 14px}
+.langpicker-menu a{display:block;padding:6px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.langpicker-menu a:hover{background:var(--mint)}
+.langpicker-menu a[aria-current]{background:var(--mint);font-weight:600}
+.langpicker-menu a[aria-current]::after{content:" ✓";color:var(--forest)}
+
+/* download dropdown */
+.dl{position:relative}
+.dl-btn{display:inline-block;background:var(--forest);color:#fff;border:none;border-radius:999px;padding:9px 20px;font-family:var(--sans);font-size:.92rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .3s,transform .3s var(--ease),box-shadow .3s}
+.dl-btn:hover{background:var(--forest-deep);transform:translateY(-2px);box-shadow:0 10px 22px rgba(4,97,60,.25);color:#fff}
+.dl-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 20px 50px rgba(var(--shadow),.16);min-width:250px;display:none;flex-direction:column;gap:10px;z-index:30}
+.dl.open .dl-menu{display:flex;animation:menuIn .3s var(--ease)}
+@keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.dl-menu .store-badge{width:100%;justify-content:start}
+.dl-menu small{color:var(--muted);font-size:.78rem;line-height:1.4}
+
+/* ---------- hero ---------- */
+.hero{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:64px 0 30px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);z-index:-1;animation:blob 14s ease-in-out infinite alternate}
+.hero::before{width:420px;height:420px;background:var(--blob-a,rgba(169,217,184,.45));top:-60px;inset-inline-end:4%}
+.hero::after{width:340px;height:340px;background:var(--blob-b,rgba(244,237,222,.9));bottom:40px;inset-inline-start:-120px;animation-delay:-7s}
+@keyframes blob{from{transform:translate(0,0) scale(1)}to{transform:translate(calc(30px * var(--dir)),24px) scale(1.12)}}
+.hero .copy{max-width:760px}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.13;letter-spacing:-.02em}
+
+/* The highlighted half of the headline.
+ *
+ * This used to be white-space:nowrap with an absolutely-positioned SVG
+ * underline stretched across it. That worked in English (16 characters) and
+ * would have pushed the headline off-screen in German, Finnish, Turkish and
+ * Polish. The underline is now a background gradient on the inline box, so it
+ * wraps with the text; box-decoration-break:clone draws it under every line. */
+.hero h1 em{color:var(--forest);font-style:normal;
+  background-image:linear-gradient(var(--mint-strong),var(--mint-strong));
+  background-repeat:no-repeat;background-size:100% .18em;background-position:0 88%;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+  padding-bottom:.05em}
+.hero p.lead{margin:18px auto 26px;font-size:1.12rem;color:var(--muted);max-width:36rem}
+.hero .copy>*{opacity:0;transform:translateY(22px);animation:rise .8s var(--ease) forwards}
+.hero .copy>*:nth-child(1){animation-delay:.05s}
+.hero .copy>*:nth-child(2){animation-delay:.18s}
+.hero .copy>*:nth-child(3){animation-delay:.31s}
+.hero .copy>*:nth-child(4){animation-delay:.42s}
+@keyframes rise{to{opacity:1;transform:none}}
+.badges{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center}
+.store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--frame);color:#fff;border-radius:12px;padding:10px 16px;text-decoration:none;line-height:1.15;cursor:pointer;transition:opacity .15s,transform .3s var(--ease)}
+.store-badge:hover{opacity:.85;color:#fff}
+.store-badge svg{width:22px;height:22px;fill:#fff;flex:none}
+.store-badge small{display:block;font-size:.65rem;font-weight:400;opacity:.8;color:#fff}
+.store-badge span{font-weight:600;font-size:.98rem}
+/* The platform the visitor is actually on gets the emphasis; the other stays
+   available. Applied by script.js — with no JS both simply render equal. */
+.store-badge.primary{outline:2px solid var(--mint-strong);outline-offset:2px}
+.store-badge.secondary{opacity:.72}
+.store-badge.secondary:hover{opacity:1}
+.soon{font-size:.85rem;color:var(--muted);margin-top:10px}
+
+.hero-phones{display:flex;justify-content:center;align-items:flex-start;margin-top:56px;opacity:0;transform:translateY(46px);animation:phonesIn 1.1s .4s var(--ease) forwards}
+@keyframes phonesIn{to{opacity:1;transform:none}}
+.hp{width:min(268px,56vw)}
+.hp.l{transform:rotate(var(--rot-hp-l)) translateY(40px);margin-inline-end:-38px;z-index:1}
+.hp.r{transform:rotate(var(--rot-hp-r));z-index:2}
+.hp .phone{width:100%;animation:float 6s ease-in-out infinite alternate}
+.hp.l .phone{animation-delay:1.9s}
+.hp.r .phone{animation-delay:1.5s}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+
+/* ---------- phone frame ---------- */
+.phone{width:min(290px,80vw);border-radius:40px;border:10px solid var(--frame);box-shadow:0 24px 60px rgba(var(--shadow),.18);overflow:hidden;background:#000;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.phone img{width:100%}
+.phone.small{width:min(250px,72vw)}
+section.feature .phone:hover{transform:translateY(-8px) rotate(var(--rot-phone-hover));box-shadow:0 34px 70px rgba(var(--shadow),.22)}
+
+/* ---------- shared section furniture ---------- */
+section.trust,section.steps,section.gallery,section.compare,section.pricing,section.faq,section.testimonials{padding-block:48px}
+.section-lead{color:var(--muted);max-width:44rem;margin-bottom:24px}
+section.steps h2,section.gallery h2,section.compare h2,section.pricing h2,.faq h2{font-size:1.75rem;letter-spacing:-.01em;margin-bottom:10px}
+
+/* ---------- trust ---------- */
+.trust{background:linear-gradient(135deg,var(--trust-a),var(--trust-b));border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);padding:72px 30px;text-align:center;margin:36px 0 64px}
+.trust h2{font-size:1.5rem;letter-spacing:-.01em;margin-bottom:34px;color:var(--forest-deep)}
+.trust-pills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pill{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s}
+.pill:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(4,97,60,.10);border-color:var(--mint-strong)}
+.pill-icon{width:46px;height:46px;border-radius:14px;background:var(--mint);display:grid;place-items:center;margin-bottom:4px}
+.pill-icon svg{width:24px;height:24px;stroke:var(--forest)}
+.pill strong{font-size:1.02rem;color:var(--ink)}
+.pill>span:not(.pill-icon){font-size:.88rem;color:var(--muted);line-height:1.45}
+
+/* ---------- how it works ---------- */
+.step-list{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:22px}
+.step-list li{counter-increment:step;position:relative;padding-top:52px}
+.step-list li::before{content:counter(step);position:absolute;top:0;inset-inline-start:0;width:38px;height:38px;border-radius:50%;background:var(--mint);color:var(--forest-deep);font-weight:700;display:grid;place-items:center}
+.step-list h3{font-size:1.08rem;margin-bottom:6px}
+.step-list p{color:var(--muted);font-size:.95rem}
+
+/* ---------- features ---------- */
+section.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:52px 0;border-top:1px solid var(--line)}
+.feature-list>section.feature:first-child{border-top:none;padding-top:8px}
+section.feature .txt h2{font-size:1.75rem;letter-spacing:-.01em;margin-bottom:12px}
+section.feature .txt p{color:var(--muted);max-width:30rem}
+section.feature ul{margin:14px 0 0 0;list-style:none}
+section.feature li{padding-inline-start:28px;position:relative;margin-bottom:8px;color:var(--ink)}
+section.feature li::before{content:"✓";position:absolute;inset-inline-start:0;top:0;color:var(--forest);font-weight:700}
+section.feature .art{justify-self:center}
+section.feature.alt .art{order:-1}
+.ill{max-width:420px;border-radius:var(--radius);transition:transform .6s var(--ease)}
+.ill:hover{transform:scale(1.03) rotate(var(--rot-ill-hover))}
+.duo{display:flex;gap:18px}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);background:var(--mint);border-radius:999px;padding:3px 12px;margin-bottom:10px}
+
+/* ---------- gallery ---------- */
+.gallery-strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-block:8px 18px;-webkit-overflow-scrolling:touch}
+.gallery-item{flex:0 0 auto;width:210px;scroll-snap-align:start}
+.gallery-item img{border-radius:14px;border:1px solid var(--line);background:var(--card)}
+.gallery-item.shot img{border-radius:18px;border:6px solid var(--frame)}
+.gallery-item figcaption{font-size:.83rem;color:var(--muted);margin-top:10px;line-height:1.4}
+
+/* ---------- comparison ---------- */
+.table-scroll{overflow-x:auto}
+.compare-table{border-collapse:collapse;width:100%;min-width:520px;font-size:.94rem}
+.compare-table th,.compare-table td{border-bottom:1px solid var(--line);padding:11px 12px;text-align:start}
+/* The row-label column takes the slack; the three mark columns are sized to
+   their headings. Without an explicit width the label column collapses and the
+   headings wrap one letter per line. */
+.compare-table tbody th{width:auto;font-weight:500;color:var(--ink)}
+.compare-table thead th:not(:first-child){width:8.5rem;text-align:center}
+.compare-table thead th{font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;vertical-align:bottom;overflow-wrap:normal}
+.compare-table thead th.us{color:var(--forest)}
+.compare-table td.mark{text-align:center;font-size:1.05rem;white-space:nowrap}
+.compare-table td.yes{color:var(--forest);font-weight:700}
+.compare-table td.partly{color:var(--muted)}
+.compare-table td.no{color:var(--muted);opacity:.5;font-weight:700}
+.legend{font-size:.83rem;color:var(--muted);margin-top:12px}
+
+/* ---------- pricing ---------- */
+.pricing{background:var(--cream);border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);padding:48px 34px;margin:24px 0}
+.pricing-points{list-style:none;margin:6px 0 22px}
+.pricing-points li{padding-inline-start:28px;position:relative;margin-bottom:8px}
+.pricing-points li::before{content:"✓";position:absolute;inset-inline-start:0;color:var(--forest);font-weight:700}
+.earlybird{background:var(--card);border:1px solid var(--mint-strong);border-radius:16px;padding:16px 20px;margin-bottom:24px;display:flex;flex-direction:column;gap:4px}
+.earlybird strong{color:var(--forest-deep);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+.earlybird span{color:var(--body)}
+.pricing .badges{justify-content:start}
+
+/* ---------- scroll reveal (classes added by script.js) ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.from-left{transform:translateX(calc(-36px * var(--dir)))}
+.reveal.from-right{transform:translateX(calc(36px * var(--dir)))}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+
+/* ---------- faq ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq h2{margin-bottom:18px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px;transition:border-color .3s,box-shadow .3s}
+.faq details:hover{border-color:var(--mint-strong)}
+.faq details[open]{box-shadow:0 10px 26px rgba(var(--shadow),.07)}
+.faq summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.3rem;color:var(--forest);transition:transform .35s var(--ease);line-height:1;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:8px;color:var(--muted);animation:fadeIn .45s var(--ease)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- sticky mobile CTA ---------- */
+.sticky-cta{position:fixed;inset-inline:0;bottom:0;z-index:40;display:none;align-items:center;gap:10px;justify-content:center;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.sticky-cta[hidden]{display:none}
+.sticky-cta .dl-btn{flex:1;max-width:22rem;text-align:center}
+.sticky-close{background:none;border:none;font-size:1.5rem;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0 42px;font-size:.9rem;color:var(--muted)}
+footer .cols{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between}
+footer a{color:var(--muted);transition:color .25s}
+footer a:hover{color:var(--forest)}
+
+/* ---------- legal pages ---------- */
+.legal{max-width:760px;margin:0 auto;padding:48px 20px}
+.legal h1{font-size:2rem;margin-bottom:6px}
+.legal .updated{color:var(--muted);font-size:.9rem;margin-bottom:26px}
+.legal h2{font-size:1.25rem;margin:28px 0 8px}
+.legal h3{font-size:1.08rem;margin:22px 0 8px}
+.legal p,.legal li{color:var(--body);font-size:.98rem}
+.legal ul{margin-block:8px;margin-inline-start:22px}
+.notice{background:var(--mint);border:1px solid var(--mint-strong);border-radius:14px;padding:12px 16px;margin:18px 0;font-size:.92rem}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .step-list{grid-template-columns:1fr;gap:18px}
+  .step-list li{padding-top:0;padding-inline-start:54px;min-height:38px}
+}
+@media(max-width:820px){
+  section.feature{grid-template-columns:1fr;gap:26px;text-align:center;padding:40px 0}
+  section.feature .txt p,section.feature ul{margin-inline:auto;text-align:start}
+  section.feature.alt .art{order:0}
+  .duo{justify-content:center}
+  .trust{padding:52px 22px}
+  .trust-pills{grid-template-columns:1fr}
+  .pricing{padding:34px 22px}
+  .pricing .badges{justify-content:center}
+  .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
+  /* Only shown on small screens, and only after script.js unhides it. */
+  .sticky-cta:not([hidden]){display:flex}
+  body{padding-bottom:76px}
+}
+@media(max-width:560px){
+  .nav{gap:12px}
+  .nav .links{gap:12px}
+  .langpicker-menu ul{grid-template-columns:1fr}
+  /* The two tilted phones at -38px overlap are cramped below ~400px. */
+  .hp{width:min(268px,46vw)}
+  .hp.l{margin-inline-end:-18px;transform:rotate(var(--rot-hp-l)) translateY(26px)}
+  .hero-phones{margin-top:40px}
+  .gallery-item{width:170px}
+}
+
+/* ---------- dark mode ---------- */
+/* Only the tokens are redefined. Everything above inherits, which is the whole
+   point of having tokenised the palette. */
+@media(prefers-color-scheme:dark){
+  :root{
+    --paper:#0E1512; --card:#16201B; --cream:#141D18;
+    --forest:#7FD3A6; --forest-deep:#A9E6C4; --ink:#E8F0EA;
+    --mint:#1D3329; --mint-strong:#2F5744;
+    --muted:#9BAEA3; --line:#25332C;
+    --body:#C9D6CE;
+    --trust-a:#152019; --trust-b:#141C18;
+    --shadow:0,0,0;
+    --blob-a:rgba(47,87,68,.40);
+    --blob-b:rgba(30,45,36,.55);
+    /* --frame stays dark: a phone bezel that inverts to white reads as a
+       rendering bug, and the store badges sit on it with white text. */
+  }
+  .store-badge{background:#000;border:1px solid var(--line)}
+  .compare-table td.no{color:#33453B}
+  .phone{box-shadow:0 24px 60px rgba(0,0,0,.5)}
+}
+
+/* ---------- reduced motion ---------- */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .hero .copy>*,.hero-phones{opacity:1;transform:none}
+  .hp.l{transform:rotate(var(--rot-hp-l)) translateY(40px)}
+  .hp.r{transform:rotate(var(--rot-hp-r))}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}

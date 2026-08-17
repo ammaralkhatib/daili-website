@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.htmlLang }}" dir="{{ page.dir }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ meta.title }}</title>
+<meta name="description" content="{{ meta.description }}">
+{{{ page.headExtra }}}
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="{{ page.cssHref }}">
+<script src="{{ page.jsHref }}" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">{{ nav.skip }}</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="{{ page.homeHref }}"><img src="/assets/img/logo.webp" alt="Daili" width="512" height="512">Daili</a>
+    <nav class="links">
+      <a href="{{ page.featuresHref }}">{{ nav.features }}</a>
+      <a href="{{ page.pricingHref }}">{{ nav.pricing }}</a>
+      <a href="{{ page.supportHref }}">{{ nav.support }}</a>
+      <div class="dl">
+        <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false">{{ nav.download }}</button>
+        <div class="dl-menu">
+{{> storebadges }}
+        </div>
+      </div>
+{{{ page.langNav }}}
+    </nav>
+  </div>
+</header>
+
+{{{ page.body }}}
+
+<footer>
+  <div class="wrap cols">
+    <div>{{{ footer.copyright }}}</div>
+    <div>{{{ page.footerLinks }}}</div>
+  </div>
+</footer>
+
+</body>
+</html>

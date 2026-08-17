@@ -1,0 +1,94 @@
+<main class="wrap" id="main">
+
+  <section class="hero">
+    <div class="copy">
+      <h1>{{ hero.h1a }} <em>{{ hero.h1b }}</em></h1>
+      <p class="lead">{{ hero.lead }}</p>
+      <div class="badges">
+{{> storebadges }}
+      </div>
+      <p class="soon">{{ hero.note }}</p>
+    </div>
+    <div class="hero-phones">
+      <div class="hp l"><div class="phone"><img src="/assets/img/shot-calendar.webp" alt="{{ hero.altCalendar }}" width="640" height="1391" fetchpriority="high" decoding="async"></div></div>
+      <div class="hp r"><div class="phone"><img src="/assets/img/shot-home.webp" alt="{{ hero.altHome }}" width="640" height="1391" fetchpriority="high" decoding="async"></div></div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>{{ trust.h2 }}</h2>
+    <div class="trust-pills">
+{{{ page.trustPills }}}
+    </div>
+  </section>
+
+  <section class="steps">
+    <h2>{{ howItWorks.h2 }}</h2>
+    <ol class="step-list">
+{{# howItWorks.steps }}
+      <li>
+        <h3>{{ .h3 }}</h3>
+        <p>{{ .p }}</p>
+      </li>
+{{/}}
+    </ol>
+  </section>
+
+  <section class="feature-list" id="features">
+{{{ page.features }}}
+  </section>
+
+  <section class="gallery">
+    <h2>{{ gallery.h2 }}</h2>
+    <p class="section-lead">{{ gallery.lead }}</p>
+    <div class="gallery-strip" tabindex="0" role="group" aria-label="{{ gallery.h2 }}">
+{{{ page.gallery }}}
+    </div>
+  </section>
+
+  <section class="compare">
+    <h2>{{ compare.h2 }}</h2>
+    <p class="section-lead">{{ compare.lead }}</p>
+    <div class="table-scroll">
+{{{ page.compareTable }}}
+    </div>
+    <p class="legend">{{ compare.legend }}</p>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>{{ pricing.h2 }}</h2>
+    <p class="section-lead">{{ pricing.lead }}</p>
+    <ul class="pricing-points">
+{{# pricing.points }}
+      <li>{{ . }}</li>
+{{/}}
+    </ul>
+    <div class="earlybird">
+      <strong>{{ pricing.earlyBirdTitle }}</strong>
+      <span>{{ pricing.earlyBird }}</span>
+    </div>
+    <div class="badges">
+{{> storebadges }}
+    </div>
+  </section>
+
+{{? testimonials.items }}
+  <section class="testimonials">
+    <h2>{{ testimonials.h2 }}</h2>
+{{{ page.testimonials }}}
+  </section>
+{{/}}
+
+  <section class="faq">
+    <h2>{{ faq.h2 }}</h2>
+{{# faq.items }}
+    <details><summary>{{ .q }}</summary><p>{{{ .a }}}</p></details>
+{{/}}
+  </section>
+
+</main>
+
+<div class="sticky-cta" hidden>
+  <a class="dl-btn" href="#" data-sticky-cta>{{ cta.sticky }}</a>
+  <button type="button" class="sticky-close" aria-label="Close">&times;</button>
+</div>

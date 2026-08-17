@@ -1,2 +1,12 @@
 .DS_Store
 Thumbs.db
+
+# Build output. Gitignored because a one-word copy change would otherwise
+# produce a 20+ file diff that buries the one-line change in content/en.json —
+# and unreadable diffs are exactly the failure an i18n build exists to prevent.
+#
+# Safe to ignore only because the build is deterministic and has zero npm
+# dependencies: `git checkout <sha> && npm run build` reproduces any past
+# deploy, with no lockfile and no registry in the way. deploy.sh also keeps a
+# server-side rollback copy at $DOC.prev.
+dist/
