@@ -26,6 +26,7 @@
       e.stopPropagation();
       var open = dl.classList.toggle("open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
+      closeCards(); // a card inside the menu must not outlive the menu
     });
   }
   function closeAll(except) {
@@ -40,11 +41,28 @@
   document.addEventListener("click", function (e) {
     var inDl = dl && dl.contains(e.target);
     var picker = e.target.closest ? e.target.closest("details.langpicker") : null;
+    /* Any click at all dismisses an open "coming soon" card. The chip stops
+       propagation so it never reaches here, and the card itself is
+       pointer-events:none, so e.target is always something behind it — which
+       is how a tap on a badge the card is covering still reaches the badge.
+       (closeCards and openChip live in the chips block further down.) */
+    closeCards();
     if (!inDl && !picker) closeAll(null);
     else closeAll(inDl ? dl : picker);
   });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeAll(null);
+    if (e.key !== "Escape") return;
+    /* A card inside the nav dropdown is the inner layer, so Escape peels it
+       off first and hands focus back to the chip that opened it. Closing the
+       menu in the same keystroke would strand that focus on a display:none
+       button; a second Escape closes the menu, as it always did. */
+    if (openChip) {
+      var chip = openChip;
+      closeCards();
+      chip.focus();
+      return;
+    }
+    closeAll(null);
   });
 
   /* ---------- remember an explicitly chosen language ----------
@@ -92,22 +110,112 @@
 
   /* ---------- "coming soon" chips ----------
    * The note ships visible in the HTML, so with JS off the sentence is simply
-   * always there. Only once we can toggle it do we hide it. The partial is on
-   * the page three times (nav menu, hero, bottom CTA), so each chip finds its
-   * own note by walking up to the shared container — never by id. */
+   * always there, a plain line under the badges. Only once we can toggle it do
+   * we hide it and promote it to a small card pointing at the chip: sitting in
+   * the flow it read as one more line of page copy, so the link between "I
+   * tapped App Store" and "here is why nothing happened" was lost.
+   *
+   * The <p> is never replaced or re-created — it is styled, positioned and
+   * hidden in place — so the sentence still comes from the translation file
+   * and never from here. The partial is on the page three times (nav menu,
+   * hero, bottom CTA), so each chip finds its own note by walking up to the
+   * shared container, never by id; the ids handed out below for
+   * aria-describedby are generated for the same reason. */
+  var GAP = 8;    // chip bottom → card top. The arrow spans exactly this much.
+  var EDGE = 16;  // smallest gap the card keeps from the viewport edge
+  var ARROW = 12; // the rotated square's side, mirrored in style.css
+  var openChip = null;
+
+  function boxFor(chip) { return chip.closest(".badges, .dl-menu"); }
   function noteFor(chip) {
-    var box = chip.closest(".badges, .dl-menu");
+    var box = boxFor(chip);
     return box ? box.querySelector(".store-soon") : null;
   }
-  document.querySelectorAll(".store-soon").forEach(function (n) { n.hidden = true; });
-  document.querySelectorAll(".store-badge.soon").forEach(function (chip) {
-    chip.addEventListener("click", function (e) {
-      e.stopPropagation();
+
+  /* Distance from ref's inline-start edge to box's — the left edge in LTR, the
+     right one in RTL. Placement is computed entirely in this one axis, which
+     is what lets /ar/ mirror without a second code path. */
+  function inlineStart(box, ref, rtl) {
+    return rtl ? ref.right - box.right : box.left - ref.left;
+  }
+
+  /* Absolute, inside the chip's own container, so the card travels with the
+     page on scroll and needs no scroll listener. */
+  function place(chip, note) {
+    var box = boxFor(chip);
+    if (!box) return;
+    var rtl = getComputedStyle(note).direction === "rtl";
+    var b = box.getBoundingClientRect();
+    var c = chip.getBoundingClientRect();
+    var vw = document.documentElement.clientWidth;
+    var w = note.offsetWidth;
+
+    /* Centre on the chip, then clamp to the viewport. Both bounds are in the
+       container's coordinates, which is why the container's own distance from
+       the viewport edge is subtracted out of each. A card too wide to fit at
+       all (viewport under ~312px) parks at the start edge rather than
+       oscillating between two impossible bounds. */
+    var boxStart = rtl ? vw - b.right : b.left;
+    var chipMid = inlineStart(c, b, rtl) + c.width / 2;
+    var lo = EDGE - boxStart;
+    var hi = vw - EDGE - w - boxStart;
+    var start = hi < lo ? lo : Math.min(Math.max(chipMid - w / 2, lo), hi);
+
+    /* Clamping moved the card off the chip, so the arrow moves back by the
+       same amount and keeps pointing at it. Its own limits stop it from
+       climbing out over the card's rounded corners. */
+    var pad = 10;
+    var arrow = chipMid - start - ARROW / 2;
+    arrow = Math.min(Math.max(arrow, pad), Math.max(w - ARROW - pad, pad));
+
+    note.style.insetInlineStart = Math.round(start) + "px";
+    note.style.insetBlockStart = Math.round(c.bottom - b.top + GAP) + "px";
+    note.style.setProperty("--soon-arrow", Math.round(arrow) + "px");
+  }
+
+  /* One card open at a time. It sweeps every chip rather than trusting
+     openChip, so whatever state the page is left in it converges on "all
+     closed, all aria-expanded=false". */
+  function closeCards() {
+    document.querySelectorAll(".store-badge.soon").forEach(function (chip) {
       var note = noteFor(chip);
-      if (!note) return;
-      note.hidden = !note.hidden;
-      chip.setAttribute("aria-expanded", note.hidden ? "false" : "true");
+      if (!note || note.hidden) return;
+      note.hidden = true;
+      chip.setAttribute("aria-expanded", "false");
+      if (openChip === chip) openChip = null;
     });
+  }
+
+  var soonId = 0;
+  document.querySelectorAll(".store-badge.soon").forEach(function (chip) {
+    var note = noteFor(chip);
+    if (!note) return;
+    note.classList.add("soon-pop");
+    note.hidden = true;
+    if (!note.id) note.id = "store-soon-" + ++soonId;
+    chip.setAttribute("aria-describedby", note.id);
+    // Only a still-static container needs promoting to the card's containing
+    // block: .dl-menu is absolutely positioned already and has to stay so.
+    var box = boxFor(chip);
+    if (getComputedStyle(box).position === "static") box.classList.add("soon-anchor");
+
+    chip.addEventListener("click", function (e) {
+      e.stopPropagation();   // this is what keeps the nav dropdown open
+      var show = note.hidden;
+      closeCards();
+      if (!show) return;     // a second tap on the same chip just closes it
+      note.hidden = false;   // visible before measuring, or offsetWidth is 0
+      place(chip, note);
+      chip.setAttribute("aria-expanded", "true");
+      openChip = chip;
+    });
+  });
+
+  // No scroll listener — absolute positioning covers that. A resize can change
+  // both the clamp and the chip's own place in a wrapping row, so that one is
+  // worth recomputing.
+  window.addEventListener("resize", function () {
+    if (openChip) place(openChip, noteFor(openChip));
   });
 
   /* ---------- sticky CTA on small screens ---------- */
