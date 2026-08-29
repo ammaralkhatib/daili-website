@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "نزّله من",
-    "googleSmall": "احصل عليه من"
+    "appleSoon": "قريبًا على",
+    "googleSmall": "احصل عليه من",
+    "iosSoon": "سيصل Daili إلى App Store قريبًا جدًا."
   },
 
   "hero": {

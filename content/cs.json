@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Stáhnout v",
-    "googleSmall": "Nyní na"
+    "appleSoon": "Již brzy v",
+    "googleSmall": "Nyní na",
+    "iosSoon": "Daili bude už brzy k dispozici v App Store."
   },
 
   "hero": {

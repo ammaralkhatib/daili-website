@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Last ned på",
-    "googleSmall": "Hent den på"
+    "appleSoon": "Kommer snart på",
+    "googleSmall": "Hent den på",
+    "iosSoon": "Daili kommer til App Store veldig snart."
   },
 
   "hero": {

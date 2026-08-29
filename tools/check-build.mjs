@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores } from '../site.config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -148,6 +148,46 @@ for (const f of [...htmlFiles, path.join(DIST, 'sitemap.xml')]) {
 // --- 9. no forbidden strings in output -------------------------------------
 for (const f of htmlFiles) {
   if (/famcanvas/i.test(read(f))) fail(rel(f), 'contains "FamCanvas"');
+}
+
+// --- 10. store availability matches the built output ------------------------
+// The App Store listing is not public (site.config.mjs: stores.ios.available).
+// A dead link in a badge is worse than no badge, so the URL must not survive
+// into dist/ AT ALL — not in the HTML, not in the hashed JS or CSS, not in the
+// JSON-LD. Files are read as buffers so this covers every artefact, whatever
+// its type. The `available: true` arm is not decoration: without it this
+// section would quietly pass forever once the flag flips back, which is
+// exactly when you want it checking again.
+{
+  const APPLE = 'apps.apple.com';
+  const allFiles = [];
+  (function walk(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const f = path.join(d, e.name);
+      if (e.isDirectory()) walk(f); else allFiles.push(f);
+    }
+  })(DIST);
+
+  if (stores.ios.available === false) {
+    for (const f of allFiles) {
+      if (fs.readFileSync(f).includes(APPLE)) {
+        fail(rel(f), `contains ${APPLE} but stores.ios.available is false — that URL 404s, and the badge is supposed to render as a non-link "coming soon" chip`);
+      }
+    }
+  } else {
+    const landing = PAGES.find((pg) => pg.id === 'landing');
+    const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
+    for (const loc of locs) {
+      const f = path.join(DIST, landing.out(loc));
+      if (!fs.existsSync(f)) continue; // section 1 already reported it
+      // Specifically as an href: the same URL also appears in the JSON-LD
+      // installUrl, and a bare substring check would be satisfied by that
+      // while the visible badge was still an inert "coming soon" chip.
+      if (!read(f).includes(`href="${stores.ios.url}"`)) {
+        fail(landing.out(loc), `has no href="${stores.ios.url}" but stores.ios.available is true — the App Store badge is not linking anywhere`);
+      }
+    }
+  }
 }
 
 if (errors.length) {

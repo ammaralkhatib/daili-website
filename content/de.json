@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Laden im",
-    "googleSmall": "Jetzt bei"
+    "appleSoon": "Bald im",
+    "googleSmall": "Jetzt bei",
+    "iosSoon": "Daili kommt schon bald in den App Store."
   },
 
   "hero": {

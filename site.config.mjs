@@ -81,14 +81,17 @@ export const RTL = new Set(['ar']);
 export const stores = {
   ios: {
     url: 'https://apps.apple.com/app/id6800427546',
-    // NOTE 2026-08-17: this URL 404s in every storefront and
-    // itunes.apple.com/lookup?id=6800427546 returns resultCount:0 — the app is
-    // not public on the App Store yet. Shown anyway by an explicit decision.
-    // When the real listing exists, change this line and rebuild.
+    // 2026-08-29: the build was REJECTED by App Review; a new build has not
+    // been submitted. `available: false` is the switch — the badge renders as
+    // a non-link "coming soon" chip and this URL is never written into the
+    // HTML. Flip to true (and re-check the URL resolves) when the listing is
+    // actually public.
+    available: false,
     verified: false,
   },
   android: {
     url: 'https://play.google.com/store/apps/details?id=app.daili',
+    available: true,
     verified: true,
   },
 };

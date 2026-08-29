@@ -70,28 +70,73 @@
     return null;
   }
   var plat = platform();
-  if (plat) {
-    document.querySelectorAll(".badges .store-badge").forEach(function (a) {
-      var isIos = a.href.indexOf("apps.apple.com") > -1;
-      var mine = (plat === "ios") === isIos;
-      a.classList.add(mine ? "primary" : "secondary");
+
+  /* A store the app cannot be installed from renders as a .soon chip instead
+     of a link. That chip is the only signal JS gets — the dead URL is not in
+     the page at all — so both the badge identity and availability come from
+     the markup: data-store says which store, .soon says it is not live yet. */
+  function soonBadge(store) {
+    return document.querySelector('.store-badge.soon[data-store="' + store + '"]');
+  }
+
+  /* Promote the store the visitor can actually install from. If that store is
+     the unavailable one, promote nothing: dressing the other platform's badge
+     up as "yours" would send iPhone visitors to Google Play. */
+  if (plat && !soonBadge(plat)) {
+    document.querySelectorAll(".badges .store-badge").forEach(function (el) {
+      if (el.classList.contains("soon")) return;
+      var mine = (plat === "ios") === (el.dataset.store === "ios");
+      el.classList.add(mine ? "primary" : "secondary");
     });
   }
+
+  /* ---------- "coming soon" chips ----------
+   * The note ships visible in the HTML, so with JS off the sentence is simply
+   * always there. Only once we can toggle it do we hide it. The partial is on
+   * the page three times (nav menu, hero, bottom CTA), so each chip finds its
+   * own note by walking up to the shared container — never by id. */
+  function noteFor(chip) {
+    var box = chip.closest(".badges, .dl-menu");
+    return box ? box.querySelector(".store-soon") : null;
+  }
+  document.querySelectorAll(".store-soon").forEach(function (n) { n.hidden = true; });
+  document.querySelectorAll(".store-badge.soon").forEach(function (chip) {
+    chip.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var note = noteFor(chip);
+      if (!note) return;
+      note.hidden = !note.hidden;
+      chip.setAttribute("aria-expanded", note.hidden ? "false" : "true");
+    });
+  });
 
   /* ---------- sticky CTA on small screens ---------- */
   var sticky = document.querySelector(".sticky-cta");
   var hero = document.querySelector(".hero");
   if (sticky && hero && "IntersectionObserver" in window) {
     var link = sticky.querySelector("[data-sticky-cta]");
-    var badges = document.querySelectorAll(".hero .store-badge");
-    if (link && badges.length) {
+    var heroChip = document.querySelector(".hero .store-badge.soon");
+    var heroNote = document.querySelector(".hero .store-soon");
+    // Real links only — the "coming soon" chip is a <button> with no href.
+    var badges = [].slice.call(document.querySelectorAll(".hero a.store-badge"));
+
+    if (link && plat === "ios" && heroChip) {
+      // The one case where there is nothing to link to. Copying the first
+      // badge's href here would silently hand iPhone visitors the Google Play
+      // listing, so the CTA stops being a link at all and just says why. The
+      // sentence is read from the hero note, so there is no second string to
+      // translate and no template change.
+      var msg = document.createElement("span");
+      msg.className = "sticky-soon";
+      msg.textContent = heroNote ? heroNote.textContent : "";
+      link.parentNode.replaceChild(msg, link);
+    } else if (link && badges.length) {
       // Point it at whichever store matches this device, falling back to the
       // first badge — so the button is never a dead link.
       var target = badges[0];
       if (plat) {
         badges.forEach(function (b) {
-          var isIos = b.href.indexOf("apps.apple.com") > -1;
-          if ((plat === "ios") === isIos) target = b;
+          if ((plat === "ios") === (b.dataset.store === "ios")) target = b;
         });
       }
       link.href = target.href;

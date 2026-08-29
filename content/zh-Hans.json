@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "下载于",
-    "googleSmall": "获取于"
+    "appleSoon": "即将上架",
+    "googleSmall": "获取于",
+    "iosSoon": "Daili 即将登陆 App Store。"
   },
 
   "hero": {

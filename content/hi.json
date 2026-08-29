@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "डाउनलोड करें",
-    "googleSmall": "पाएँ"
+    "appleSoon": "जल्द आ रहा है",
+    "googleSmall": "पाएँ",
+    "iosSoon": "Daili बहुत जल्द App Store पर आ रहा है."
   },
 
   "hero": {

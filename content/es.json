@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Descárgala en el",
-    "googleSmall": "Disponible en"
+    "appleSoon": "Muy pronto en el",
+    "googleSmall": "Disponible en",
+    "iosSoon": "Daili llegará muy pronto a la App Store."
   },
 
   "hero": {

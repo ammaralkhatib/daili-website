@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Download in de",
-    "googleSmall": "Ontdek het op"
+    "appleSoon": "Binnenkort in de",
+    "googleSmall": "Ontdek het op",
+    "iosSoon": "Daili komt heel binnenkort in de App Store."
   },
 
   "hero": {

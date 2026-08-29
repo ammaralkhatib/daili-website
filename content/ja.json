@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "ダウンロード：",
-    "googleSmall": "入手先："
+    "appleSoon": "近日公開：",
+    "googleSmall": "入手先：",
+    "iosSoon": "Daili は App Store でまもなく公開されます。"
   },
 
   "hero": {

@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "ดาวน์โหลดบน",
-    "googleSmall": "ดาวน์โหลดได้ที่"
+    "appleSoon": "เร็ว ๆ นี้บน",
+    "googleSmall": "ดาวน์โหลดได้ที่",
+    "iosSoon": "Daili กำลังจะมาบน App Store เร็ว ๆ นี้"
   },
 
   "hero": {

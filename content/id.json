@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Unduh di",
-    "googleSmall": "Dapatkan di"
+    "appleSoon": "Segera hadir di",
+    "googleSmall": "Dapatkan di",
+    "iosSoon": "Daili akan segera hadir di App Store."
   },
 
   "hero": {

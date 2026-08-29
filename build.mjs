@@ -311,7 +311,10 @@ function renderHead(pg, loc, cssHref, detector) {
         inLanguage: loc,
         url: canonical,
         description: c.meta.description,
-        installUrl: [stores.ios.url, stores.android.url],
+        // Only stores the app can actually be installed from. A rejected
+        // build is not an installUrl, and schema.org markup is exactly the
+        // wrong place to promise a 404.
+        installUrl: [stores.ios, stores.android].filter((st) => st.available).map((st) => st.url),
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
       },
       {
@@ -431,7 +434,15 @@ function build() {
           title: pg.id === 'landing' ? c.meta.title : c.meta[titleKey],
           description: c.meta[descKey],
         },
-        site: { iosUrl: stores.ios.url, androidUrl: stores.android.url },
+        // iosUrl is only in the view object when the listing is actually
+        // available. Not merely unused when it is not — absent, so a stray
+        // {{ site.iosUrl }} would throw rather than quietly write a dead link.
+        site: {
+          ...(stores.ios.available ? { iosUrl: stores.ios.url } : {}),
+          androidUrl: stores.android.url,
+          iosAvailable: stores.ios.available,
+          iosSoon: !stores.ios.available,
+        },
         page: {
           htmlLang: loc,
           dir: RTL.has(loc) ? 'rtl' : 'ltr',
@@ -483,8 +494,12 @@ function build() {
 
   console.log(`built ${written.length} pages · ${LOCALES.length} locale(s) · ${urls.length} sitemap entries`);
   console.log(`assets: ${cssName}  ${jsName}`);
-  if (!stores.ios.verified) {
-    console.warn('WARN  stores.ios.url is marked unverified in site.config.mjs — the App Store listing was not public when this was last checked.');
+  for (const [name, st] of Object.entries(stores)) {
+    if (!st.available) {
+      console.log(`INFO  stores.${name}.available is false — the badge renders as a non-link "coming soon" chip and ${name === 'ios' ? 'the App Store URL' : 'the store URL'} is not written into dist/.`);
+    } else if (!st.verified) {
+      console.warn(`WARN  stores.${name}.url is marked unverified in site.config.mjs — the listing was not public when this was last checked.`);
+    }
   }
 }
 

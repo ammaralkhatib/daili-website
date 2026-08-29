@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Lataa",
-    "googleSmall": "Hanki se"
+    "appleSoon": "Tulossa pian",
+    "googleSmall": "Hanki se",
+    "iosSoon": "Daili tulee App Storeen aivan lähiaikoina."
   },
 
   "hero": {

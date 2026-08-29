@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Baixe na",
-    "googleSmall": "Disponível no"
+    "appleSoon": "Em breve na",
+    "googleSmall": "Disponível no",
+    "iosSoon": "O Daili chega muito em breve na App Store."
   },
 
   "hero": {

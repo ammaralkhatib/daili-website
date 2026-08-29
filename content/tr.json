@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "İndir:",
-    "googleSmall": "Şurada bul:"
+    "appleSoon": "Çok yakında:",
+    "googleSmall": "Şurada bul:",
+    "iosSoon": "Daili çok yakında App Store'da olacak."
   },
 
   "hero": {

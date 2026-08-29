@@ -38,7 +38,9 @@
 
   "store": {
     "appleSmall": "Download on the",
-    "googleSmall": "Get it on"
+    "appleSoon": "Coming soon to the",
+    "googleSmall": "Get it on",
+    "iosSoon": "Daili is coming to the App Store very soon."
   },
 
   "hero": {

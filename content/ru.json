@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "Загрузите в",
-    "googleSmall": "Доступно в"
+    "appleSoon": "Скоро в",
+    "googleSmall": "Доступно в",
+    "iosSoon": "Daili совсем скоро появится в App Store."
   },
 
   "hero": {

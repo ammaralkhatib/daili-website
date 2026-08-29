@@ -27,7 +27,9 @@
 
   "store": {
     "appleSmall": "다운로드",
-    "googleSmall": "다운로드"
+    "appleSoon": "곧 출시",
+    "googleSmall": "다운로드",
+    "iosSoon": "Daili가 곧 App Store에 출시됩니다."
   },
 
   "hero": {
