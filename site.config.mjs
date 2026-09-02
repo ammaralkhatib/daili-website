@@ -382,6 +382,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
     },
   },
+  {
+    slug: 'cozi-free-plan-what-you-get',
+    cluster: 'cozi',
+    title: 'What Cozi\'s Free Plan Actually Includes in 2026',
+    description: 'Cozi now has three tiers, not two. What free really gives you, what the 30-day calendar limit is, and why so many 2026 blog posts get the timeline wrong.',
+    h1: 'What Cozi\'s Free Plan Actually Includes in 2026',
+    published: '2026-09-06',
+    updated: '2026-09-06',
+    body: 'cozi-free-plan-what-you-get.en.html',
+    image: '/assets/img/blog/cozi-free-plan-what-you-get.webp',
+    imageAlt: 'A father checking his phone in the kitchen while his children eat breakfast',
+    imageWidth: 1200,
+    imageHeight: 801,
+    faq: [
+      {
+        q: 'Is Cozi still free in 2026?',
+        a: 'Yes. There is a free plan with a shared calendar, shopping and to-do lists and a recipe box. What is limited on free is how far ahead you can add and view events, month view on mobile, calendar search, reminders beyond one per event, and an ad-free experience.',
+      },
+      {
+        q: 'When did Cozi change its free plan?',
+        a: 'The user reports cluster in May 2024, not 2026. We found no announcement from Cozi at any point, which is why the change surprised people. Posts dated 2026 claiming a fresh paywall are re-dating a two-year-old change.',
+      },
+      {
+        q: 'Is Cozi Gold worth $39?',
+        a: 'If your family plans further than a month ahead, probably yes — it is one subscription for everyone and it removes the limit that causes most of the complaints. If you only ever use this week, free is genuinely fine.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>We make a family planner, so treat this as interested rather than neutral. Two things we can state plainly: daili does not limit how far ahead you can look, and there are no ads on any plan.</p>
+<p>Cozi is a good app with a large, happy user base. If it fits your family, use it.</p>
+<p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
+    },
+  },
 ];
 
 /**
