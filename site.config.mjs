@@ -348,6 +348,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'shared-family-calendar-rules',
+    cluster: 'adoption',
+    title: '7 Rules for a Shared Family Calendar That Everyone Follows',
+    description: 'Most shared calendars fail on habits, not features. Seven house rules — who adds what, how far ahead, what a colour means — that keep a family calendar trusted.',
+    h1: '7 Rules for a Shared Family Calendar Everyone Actually Follows',
+    published: '2026-09-05',
+    updated: '2026-09-05',
+    body: 'shared-family-calendar-rules.en.html',
+    image: '/assets/img/blog/shared-family-calendar-rules.webp',
+    imageAlt: 'A large family gathered around a laid dinner table at home, one man talking to the group',
+    imageWidth: 1200,
+    imageHeight: 801,
+    faq: [
+      {
+        q: 'What if one person refuses to use it?',
+        a: 'Then you have a relationship conversation, not a calendar problem, and no app fixes it. What does help: stop reminding them verbally. Every time you relay what is on the calendar, you prove they do not need to open it. Let one small thing be missed. That is uncomfortable, and it is usually the only thing that works.',
+      },
+      {
+        q: 'How much detail is too much?',
+        a: 'If an event needs scrolling to read, it is too much. When, where, who, and anything a stand-in would need. Everything else — the address you already know, the kit list, the group chat context — belongs in a note or nowhere.',
+      },
+      {
+        q: 'Should children be able to add events?',
+        a: 'Yes, from about ten. A child who can add their own football match is a child who has some ownership of the family\'s time, and it is one fewer thing routed through an adult. Expect a few mistakes and some very optimistic entries. That is a small price.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili gives every family member their own colour, so rule 4 works without anyone maintaining a legend. Events carry a place, an end time and the person responsible, and there is no limit on how far ahead you can look — which is what rule 6 needs.</p>
+<p>The rules matter more than the app. If you follow all seven in a shared Google Calendar, that works too.</p>
+<p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
+    },
+  },
 ];
 
 /**
