@@ -456,6 +456,40 @@ for (const f of htmlFiles) {
   }
 }
 
+// --- 12. what's new -------------------------------------------------------
+// The release notes are prepended to by a release prompt, one <section> at a
+// time, and nothing else in the build looks at that file. These two checks are
+// what stand between "the prompt prepended a block" and "the block is on the
+// page, at the top". Newest-first is the whole contract: a release note that
+// silently renders second is worse than one that fails to render at all.
+{
+  const wn = PAGES.find((pg) => pg.id === 'whats-new');
+  if (!wn) fail('site.config.mjs', "no PAGES entry with id 'whats-new'");
+  else {
+    const firstId = (html) => (html.match(/<section class="release" id="([^"]+)"/) || [])[1];
+    for (const loc of wn.locales) {
+      const out = wn.out(loc);
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file)) continue; // section 1 already reported it
+      const html = read(file);
+
+      const n = (html.match(/<section class="release"/g) || []).length;
+      if (n < 1) {
+        fail(out, 'has no <section class="release"> — the release notes did not reach the page');
+        continue;
+      }
+      const src = path.join(ROOT, wn.body[loc]);
+      if (!fs.existsSync(src)) { fail(out, `source body ${wn.body[loc]} does not exist`); continue; }
+      const want = firstId(read(src));
+      const got = firstId(html);
+      if (!want) fail(wn.body[loc], 'has no <section class="release" id="…"> — the body file is empty or off-contract');
+      else if (got !== want) {
+        fail(out, `first release block is '${got}' but ${wn.body[loc]} starts with '${want}' — newest-first did not survive the build`);
+      }
+    }
+  }
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} build error(s):`);
   console.error(errors.join('\n'));

@@ -151,6 +151,21 @@ export const PAGES = [
     priority: () => '0.3',
   },
   {
+    id: 'whats-new',
+    template: 'whats-new.html',
+    locales: ['en', 'de'],
+    cluster: 'whats-new',
+    // EN + DE only, deliberately: a release-notes page in 23 languages would
+    // cost 23 translations every release, forever. The legal pages already
+    // establish that the site can carry an en+de-only cluster.
+    body: { en: 'changelog/whats-new.en.html', de: 'changelog/whats-new.de.html' },
+    // Per-locale meta, so `meta` is a function here where the blog's is a plain
+    // object. build.mjs resolves either.
+    meta: (loc) => WHATS_NEW[loc],
+    out: (loc) => (loc === 'en' ? 'whats-new.html' : 'neuigkeiten.html'),
+    priority: () => '0.4',
+  },
+  {
     id: 'impressum',
     template: 'legal.html',
     locales: ['de'],
@@ -294,6 +309,33 @@ export const BLOG_INDEX = {
   description: 'Practical writing on running a family: documents, calendars, lists, and getting everyone to actually use the system.',
   h1: 'The Daili blog',
   intro: 'Practical writing on running a family — documents, calendars, lists, and getting everyone to actually use the system.',
+};
+
+/**
+ * The "what's new" page's own copy, EN + DE.
+ *
+ * Literals here rather than keys in content/<locale>.json for the same reason
+ * BLOG_INDEX is: check-content.mjs enforces key-set equality across all 23
+ * locale files, so four keys for a two-language page would mean 84 untranslated
+ * entries in files that will never render them.
+ *
+ * The release notes themselves are NOT here — they live in changelog/, one
+ * <section class="release"> per version, because a release prompt prepends a
+ * block to a file and must never have to edit config.
+ */
+export const WHATS_NEW = {
+  en: {
+    title: "What's new in Daili — release notes",
+    description: 'Every Daili update in plain words: what was added, what was fixed, and when. One entry per released version.',
+    h1: "What's new in Daili",
+    intro: 'Every update, in plain words.',
+  },
+  de: {
+    title: 'Neu in Daili — Was sich geändert hat',
+    description: 'Jedes Daili-Update in einfachen Worten: was neu ist, was repariert wurde und wann. Ein Eintrag pro veröffentlichter Version.',
+    h1: 'Neu in Daili',
+    intro: 'Jedes Update, in einfachen Worten.',
+  },
 };
 
 export const FEATURES = [

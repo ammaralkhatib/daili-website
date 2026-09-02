@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, FEATURES, TRUST_ICONS, GALLERY, COMPARE_ROWS, COMPARE_MARKS, imageSize,
-  BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX,
+  BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
 } from './site.config.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -117,6 +117,10 @@ const includes = { storebadges: templates['_storebadges.html'] };
 // ---------------------------------------------------------------------------
 
 const pageById = Object.fromEntries(PAGES.map((pg) => [pg.id, pg]));
+
+/** A page's own literal meta, if it carries any. Plain object, or a function of
+ *  locale for a page that exists in more than one language. */
+const metaFor = (pg, loc) => (typeof pg.meta === 'function' ? pg.meta(loc) : pg.meta);
 
 /**
  * Blog posts become pages here rather than being hand-written into PAGES.
@@ -256,6 +260,9 @@ ${rows}
 function renderFooterLinks(loc) {
   const c = content[loc];
   const support = loc === DEFAULT_LOCALE ? '/support.html' : `${dirFor(loc)}support.html`;
+  const whatsNew = loc === 'de' ? '/neuigkeiten.html' : '/whats-new.html';
+  const whatsNewLang = loc === 'de' ? 'de' : 'en';
+  const whatsNewLabel = loc === 'de' ? 'Neuigkeiten' : "What's new";
   const privacy = loc === 'de' ? '/datenschutz.html' : '/privacy.html';
   const terms = loc === 'de' ? '/nutzungsbedingungen.html' : '/terms.html';
   const parts = [
@@ -264,6 +271,11 @@ function renderFooterLinks(loc) {
     // whatever locale the footer around it is written in, and hreflang/lang say
     // so rather than leaving a reader to find out by clicking.
     `<a href="/blog/" hreflang="en" lang="en">${escapeHtml(c.nav.blog)}</a>`,
+    // The release notes exist in English and German only. Every other locale's
+    // footer points at the English page and says so, the same way the blog link
+    // does. The label is a literal rather than a content key: adding one to all
+    // 23 files for a two-language page would be 23 untranslated entries.
+    `<a href="${whatsNew}" hreflang="${whatsNewLang}" lang="${whatsNewLang}">${escapeHtml(whatsNewLabel)}</a>`,
     `<a href="${privacy}">${escapeHtml(c.footer.privacy)}</a>`,
     `<a href="${terms}">${escapeHtml(c.footer.terms)}</a>`,
     `<a href="/impressum.html">${escapeHtml(c.footer.imprint)}</a>`,
@@ -385,8 +397,9 @@ function renderHead(pg, loc, cssHref, detector) {
     out.push(`<link rel="alternate" hreflang="x-default" href="${absUrl(pg, DEFAULT_LOCALE)}">`);
   }
 
-  const ogTitle = pg.meta ? pg.meta.title : pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
-  const ogDesc = pg.meta ? pg.meta.description : pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
+  const pgMeta = metaFor(pg, loc);
+  const ogTitle = pgMeta ? pgMeta.title : pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
+  const ogDesc = pgMeta ? pgMeta.description : pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
   out.push(`<meta property="og:type" content="${post ? 'article' : 'website'}">`);
   out.push(`<meta property="og:url" content="${canonical}">`);
   out.push(`<meta property="og:title" content="${escapeHtml(ogTitle)}">`);
@@ -567,8 +580,14 @@ function build() {
         : pg.id === 'notfound' ? 'notfoundTitle' : 'title';
       const descKey = pg.id === 'support' ? 'supportDescription' : 'description';
 
+      const pgMeta = metaFor(pg, loc);
+
+      // Body paths are relative to legal/ unless they name their own folder.
+      // The legal bodies are bare filenames and resolve exactly as before; the
+      // release notes live in changelog/ because a release prompt prepends to
+      // them and they are not legal text.
       let legalBody = '';
-      if (pg.body) legalBody = read(`legal/${pg.body[loc]}`);
+      if (pg.body) legalBody = read(pg.body[loc].includes('/') ? pg.body[loc] : `legal/${pg.body[loc]}`);
 
       let postBody = '';
       if (pg.post) postBody = read(`blog/${pg.post.body}`);
@@ -579,6 +598,7 @@ function build() {
         // gets neither, so a stray {{ posts }} throws rather than rendering
         // nothing.
         ...(pg.id === 'blogindex' ? { posts: blogList, blog: BLOG_INDEX } : {}),
+        ...(pg.id === 'whats-new' ? { whatsNew: WHATS_NEW[loc] } : {}),
         // Only blog pages have a post. Anywhere else `post` is absent, so a
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
@@ -594,8 +614,8 @@ function build() {
         // will never render it.
         meta: {
           ...c.meta,
-          title: pg.meta ? pg.meta.title : pg.id === 'landing' ? c.meta.title : c.meta[titleKey],
-          description: pg.meta ? pg.meta.description : c.meta[descKey],
+          title: pgMeta ? pgMeta.title : pg.id === 'landing' ? c.meta.title : c.meta[titleKey],
+          description: pgMeta ? pgMeta.description : c.meta[descKey],
         },
         // iosUrl is only in the view object when the listing is actually
         // available. Not merely unused when it is not — absent, so a stray

@@ -459,6 +459,14 @@ footer a:hover{color:var(--forest)}
   .post-cta{padding:22px 18px}
 }
 
+/* ---------- what's new (release notes) ---------- */
+/* Built on .legal, so measure, headings and dark mode all come for free; these
+   are only the rules that separate one release block from the next. */
+.release+.release{margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+.release h2{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.release h2 small{font-size:.82rem;font-weight:500;color:var(--muted)}
+.release ul{margin-block:10px}
+
 /* ---------- blog link in the nav ---------- */
 /* The header was already five items wide on a phone. A sixth fits in every
    left-to-right locale, but not in Arabic: at 360px the RTL nav ran 32px off
