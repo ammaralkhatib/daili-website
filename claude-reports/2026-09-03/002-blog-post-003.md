@@ -1,6 +1,6 @@
 # Post 3 — The Family Document Checklist
 
-Live at `/blog/family-document-checklist/`. The two files the recipe describes,
+Live at `/blog/family-document-checklist/`. Commit `5113464`. The two files the recipe describes,
 plus three more the "it has to print" requirement forced: `style.css`,
 `build.mjs` and `tools/check-build.mjs`. All three are explained below.
 
