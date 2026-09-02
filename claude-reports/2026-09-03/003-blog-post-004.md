@@ -1,6 +1,6 @@
 # Post 4 — 7 Rules for a Shared Family Calendar (pillar C)
 
-Live at `/blog/shared-family-calendar-rules/`. Commit `TBD`. Two files, exactly
+Live at `/blog/shared-family-calendar-rules/`. Commit `19b2895`. Two files, exactly
 as the recipe describes: the body fragment and one `BLOG_POSTS` entry. Nothing
 in `build.mjs`, `style.css` or the guards needed touching — the first post in
 this batch that the engine took without a change.
