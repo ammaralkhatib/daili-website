@@ -125,7 +125,7 @@ Self-correction: none needed — the build was clean on the first run.
 
 ## Commit & push
 
-- **Commit:** `<sha>` — `feat(site): what's-new page (en+de) fed by the app changelog`
+- **Commit:** `842bee2` — `feat(site): what's-new page (en+de) fed by the app changelog`
 - **Push:** `origin/main` — ok
 
 ## Open items for the owner
