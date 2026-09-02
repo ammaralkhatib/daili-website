@@ -273,6 +273,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'digital-family-emergency-binder',
+    cluster: 'documents',
+    title: 'The Digital Family Emergency Binder: What Goes In It',
+    description: 'The paper emergency binder has one flaw — it is at home. How to build a digital version you actually carry, what belongs in it, and what must stay on paper.',
+    h1: 'The Digital Family Emergency Binder',
+    published: '2026-09-03',
+    updated: '2026-09-03',
+    body: 'digital-family-emergency-binder.en.html',
+    image: '/assets/img/blog/digital-family-emergency-binder.webp',
+    imageAlt: 'A woman filing a page into a ring binder at a white desk, with a smartphone and a cup of coffee beside her',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Should I keep a paper binder as well?',
+        a: 'Yes, for the top two tiers. Certificates, deeds, wills and insurance policies need to survive as originals, and paper in a rated safe does that better than anything digital. The digital binder is not a replacement for the safe — it is the half the safe was never able to do.',
+      },
+      {
+        q: 'Is a phone safe enough for these documents?',
+        a: 'For tier-three copies, yes, provided the phone is locked with a passcode or biometrics and the files are not sitting loose in the camera roll where they end up in shared albums and automatic cloud backups. Keep them somewhere separate and named. And leave out anything that works on its own for a thief: card numbers, passwords, signed blank forms.',
+      },
+      {
+        q: 'What if my phone is destroyed in the same emergency?',
+        a: 'That is exactly why the other adult has a copy, and why the originals are in the safe. The binder is one of three places, not the only one. If all three go at once, you have a much larger problem than paperwork — and the certificates in the safe are the ones you will actually need to rebuild from.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili's documents vault is built for the second half of this article. Files you put in it are stored <strong>on your device only</strong> — never uploaded to our servers, and not part of any backup we hold. So they open in airplane mode, in a hospital basement, abroad with the data switched off.</p>
+<p>That also means the vault is not a backup. Your originals still belong in the safe, and the other adult still needs their own copy. The vault is the part that is in your pocket.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
 ];
 
 /**

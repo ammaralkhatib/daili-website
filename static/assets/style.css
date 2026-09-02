@@ -434,6 +434,11 @@ footer a:hover{color:var(--forest)}
 .post li{margin-bottom:9px}
 .post strong{color:var(--ink)}
 .post a{text-underline-offset:3px}
+/* Post 2 names files inline (`emma-vaccinations`, not IMG_4471). Without a
+   rule the UA's monospace default shrinks them mid-sentence. Monospace alone is
+   enough to mark a filename in prose — a boxed chip reads as developer docs and
+   its padding leaves the following full stop floating away from the word. */
+.post code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;color:var(--ink)}
 
 /* The one table in the post is wider than a phone. It scrolls inside its own
    box; the page itself must never scroll sideways. */
