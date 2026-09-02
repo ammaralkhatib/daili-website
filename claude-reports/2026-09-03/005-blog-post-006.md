@@ -1,10 +1,10 @@
 # Post 6 — What to Leave with a Babysitter or Grandparent (linkable asset)
 
-Live at `/blog/what-to-leave-with-a-babysitter/`. Two files, exactly as the
-recipe describes: the body fragment and one `BLOG_POSTS` entry. **Nothing in
-`build.mjs`, `style.css` or the guards needed touching** — including the print
-sheet, which is the point of the next section. Fourth post in the `documents`
-cluster.
+Live at `/blog/what-to-leave-with-a-babysitter/`. Commit `76936f5`. Two files,
+exactly as the recipe describes: the body fragment and one `BLOG_POSTS` entry.
+**Nothing in `build.mjs`, `style.css` or the guards needed touching** —
+including the print sheet, which is the point of the next section. Fourth post
+in the `documents` cluster.
 
 No prose was changed. Not a word.
 
