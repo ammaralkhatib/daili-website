@@ -1,0 +1,19 @@
+<main class="wrap blogindex" id="main">
+
+  <h1>{{ blog.h1 }}</h1>
+  <p class="blogindex-intro">{{ blog.intro }}</p>
+
+  <ul class="postlist">
+{{# posts }}
+    <li class="postlist-item">
+      <a class="postlist-art" href="{{ .url }}" tabindex="-1" aria-hidden="true"><img src="{{ .image }}" alt="" width="{{ .imageWidth }}" height="{{ .imageHeight }}" loading="lazy" decoding="async"></a>
+      <div class="postlist-txt">
+        <h2><a href="{{ .url }}">{{ .title }}</a></h2>
+        <p>{{ .description }}</p>
+        <time datetime="{{ .published }}">{{ .publishedLabel }}</time>
+      </div>
+    </li>
+{{/}}
+  </ul>
+
+</main>

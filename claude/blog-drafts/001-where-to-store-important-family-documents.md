@@ -9,7 +9,7 @@ secondary_keywords:
   - safe vs cloud documents
   - digital document storage for families
   - keep documents on your phone
-title_tag: "Where to Store Important Family Documents (Safe, Cloud or Phone?)"
+title_tag: "Where to Store Important Family Documents: Safe or Phone?"
 meta_description: "Fireproof safe, cloud drive or your phone? Compare the three ways families store passports, birth certificates and insurance papers — and when each one fails."
 word_count: ~1,520
 hero_image: https://www.pexels.com/photo/polish-passports-and-travel-documents-on-a-table-33497885/

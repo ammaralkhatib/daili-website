@@ -458,3 +458,35 @@ footer a:hover{color:var(--forest)}
   .post-hero{border-radius:16px}
   .post-cta{padding:22px 18px}
 }
+
+/* ---------- blog link in the nav ---------- */
+/* The header was already five items wide on a phone. A sixth fits in every
+   left-to-right locale, but not in Arabic: at 360px the RTL nav ran 32px off
+   the right edge and clipped "المزايا", and five locales (th, tr, ko, hi,
+   zh-Hant) gained a third nav row that made the header ~45px taller.
+   Measured, not guessed — six items first fit Arabic at 400px.
+   Below 560px the link is hidden and the header keeps exactly the shape it has
+   today; the footer carries the same /blog/ link at every width, so the blog is
+   still one tap away. The <a> stays in the markup for all 23 locales either
+   way, which is what check-build section 11b check 11 asserts. */
+@media(max-width:560px){
+  .nav-blog{display:none}
+}
+
+/* ---------- blog index ---------- */
+.blogindex{max-width:820px;padding-block:44px 64px}
+.blogindex h1{font-size:clamp(1.8rem,5vw,2.4rem);letter-spacing:-.02em;margin-bottom:8px}
+.blogindex-intro{color:var(--muted);font-size:1.02rem;max-width:60ch;margin-bottom:34px}
+.postlist{list-style:none}
+.postlist-item{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:start;padding:24px 0;border-top:1px solid var(--line)}
+.postlist-art{display:block;border-radius:14px;overflow:hidden;background:var(--cream)}
+.postlist-art img{width:100%}
+.postlist-txt h2{font-size:1.22rem;line-height:1.32;letter-spacing:-.01em;margin-bottom:8px}
+.postlist-txt h2 a{color:var(--ink);text-decoration:none}
+.postlist-txt h2 a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.postlist-txt p{color:var(--body);font-size:.97rem;margin-bottom:10px}
+.postlist-txt time{color:var(--muted);font-size:.86rem}
+@media(max-width:640px){
+  .postlist-item{grid-template-columns:1fr;gap:14px}
+  .postlist-art{max-width:100%}
+}

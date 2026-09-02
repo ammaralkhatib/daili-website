@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, BLOG_POSTS } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, BLOG_POSTS, BLOG_INDEX } from '../site.config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -25,6 +25,45 @@ const htmlFiles = [];
 })(DIST);
 
 const rel = (f) => path.relative(DIST, f);
+/**
+ * Minimal XML well-formedness scan. Node ships no XML parser and this repo has
+ * no dependencies on purpose, so rather than pull one in, this checks the
+ * things that actually break a feed: an unescaped &, a stray < in text, and
+ * elements that do not nest. Returns a list of problems, empty when clean.
+ */
+function xmlProblems(src) {
+  const problems = [];
+  const s = src.replace(/^<\?xml[^>]*\?>/, '').replace(/<!--[\s\S]*?-->/g, '');
+  const amp = /&(#\d+|#x[0-9a-fA-F]+|[A-Za-z][\w.-]*)?;?/g;
+  const badAmps = (text, where) => {
+    for (const m of text.matchAll(amp)) {
+      if (!m[1] || !m[0].endsWith(';')) problems.push(`unescaped '&' in ${where}`);
+    }
+  };
+  const stack = [];
+  const tag = /<(\/?)([A-Za-z_][\w.:-]*)((?:"[^"]*"|'[^']*'|[^>"'])*?)(\/?)>/g;
+  let last = 0, m;
+  while ((m = tag.exec(s))) {
+    const text = s.slice(last, m.index);
+    if (text.includes('<')) problems.push("unescaped '<' in element text");
+    badAmps(text, 'element text');
+    last = tag.lastIndex;
+    const [, close, name, attrs, selfClose] = m;
+    badAmps(attrs, `an attribute of <${name}>`);
+    if (close) {
+      const open = stack.pop();
+      if (open !== name) problems.push(`</${name}> closes ${open ? `<${open}>` : 'nothing'}`);
+    } else if (!selfClose) {
+      stack.push(name);
+    }
+  }
+  const tail = s.slice(last);
+  if (tail.includes('<')) problems.push("unescaped '<' in element text");
+  badAmps(tail, 'element text');
+  if (stack.length) problems.push(`unclosed element(s): ${stack.map((n) => `<${n}>`).join(', ')}`);
+  return [...new Set(problems)];
+}
+
 const read = (f) => fs.readFileSync(f, 'utf8');
 
 // --- 1. manifest completeness ----------------------------------------------
@@ -35,6 +74,7 @@ for (const pg of PAGES) {
 }
 // Blog pages are expanded out of BLOG_POSTS by build.mjs rather than listed in
 // PAGES, so the expected set has to be expanded the same way here.
+expected.add('blog/index.html');
 for (const post of BLOG_POSTS) expected.add(`blog/${post.slug}/index.html`);
 for (const e of expected) {
   if (!fs.existsSync(path.join(DIST, e))) fail(e, 'MISSING from dist/');
@@ -258,19 +298,23 @@ for (const f of htmlFiles) {
 
     // 4. no hreflang declarations, at all. See the note at the top of this
     // section. Scoped to the <head>, because that is where an hreflang set is
-    // declared and where the damage is done. The 23 hreflang= attributes lower
-    // down are the language picker's <a> tags — an advisory hint about the
-    // language of a linked page, which forms no cluster and asks for no return
-    // tag. `<link rel="alternate"` is checked across the whole document so it
-    // cannot reappear below the head either.
+    // declared and where the damage is done. The hreflang= attributes lower
+    // down are on <a> tags — the language picker's, and the nav and footer
+    // links to /blog/ — an advisory hint about the language of a linked page,
+    // which forms no cluster and asks for no return tag.
+    //
+    // The second assertion is about alternates that carry an hreflang, not
+    // alternates as such: RSS autodiscovery is a <link rel="alternate"> too,
+    // and it belongs on this page. Narrowing it that way keeps the guard on
+    // the only kind of alternate that can join an hreflang cluster.
     const head = html.slice(0, html.indexOf('</head>'));
     const hreflangs = (head.match(/hreflang=/g) || []).length;
     if (hreflangs !== 0) {
       fail(out, `${post.slug}: <head> carries ${hreflangs} hreflang= declaration(s) — the blog is English-only and must claim no alternates`);
     }
-    const alternates = (html.match(/<link rel="alternate"/g) || []).length;
+    const alternates = (html.match(/<link rel="alternate"[^>]*hreflang=/g) || []).length;
     if (alternates !== 0) {
-      fail(out, `${post.slug}: carries ${alternates} <link rel="alternate"> — a blog page must never join an hreflang cluster`);
+      fail(out, `${post.slug}: carries ${alternates} <link rel="alternate" … hreflang=> — a blog page must never join an hreflang cluster`);
     }
 
     // 5. article-shaped Open Graph, with the post's own hero image
@@ -319,6 +363,95 @@ for (const f of htmlFiles) {
     if (!entry) fail('sitemap.xml', `${post.slug}: ${wantCanonical} is missing from the sitemap`);
     else if (entry.includes('xhtml:link')) {
       fail('sitemap.xml', `${post.slug}: sitemap entry carries xhtml:link alternates — the blog has no translations`);
+    }
+  }
+}
+
+// --- 11b. blog front door: index, nav link, feed --------------------------
+{
+  const INDEX_OUT = 'blog/index.html';
+  const indexFile = path.join(DIST, INDEX_OUT);
+  const indexHtml = fs.existsSync(indexFile) ? read(indexFile) : null;
+  const feedRel = 'blog/feed.xml';
+  const feedFile = path.join(DIST, feedRel);
+  const feed = fs.existsSync(feedFile) ? read(feedFile) : null;
+  const sitemapPath = path.join(DIST, 'sitemap.xml');
+  const sitemap = fs.existsSync(sitemapPath) ? read(sitemapPath) : '';
+
+  // 10. the index links to every post there is. A post that builds but is
+  // listed nowhere is a post nobody will read.
+  if (!indexHtml) fail(INDEX_OUT, 'MISSING — the blog index did not build');
+  else {
+    for (const post of BLOG_POSTS) {
+      if (!indexHtml.includes(`href="/blog/${post.slug}/"`)) {
+        fail(INDEX_OUT, `does not link to /blog/${post.slug}/ — every post in BLOG_POSTS must be listed on the index`);
+      }
+    }
+  }
+
+  // 11. every landing page carries the Blog link in its nav, exactly once, and
+  // says the target is English. 23 locales, so a template edit that only works
+  // in English gets caught here rather than by a reader in Arabic.
+  {
+    const landing = PAGES.find((pg) => pg.id === 'landing');
+    const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
+    for (const loc of locs) {
+      const out = landing.out(loc);
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file)) continue; // section 1 already reported it
+      const html = read(file);
+      const nav = (html.match(/<nav class="links">[\s\S]*?<\/nav>/) || [])[0];
+      if (!nav) { fail(out, 'has no <nav class="links"> — cannot check the Blog link'); continue; }
+      const links = [...nav.matchAll(/<a\b[^>]*href="\/blog\/"[^>]*>/g)].map((m) => m[0]);
+      if (links.length !== 1) {
+        fail(out, `nav has ${links.length} links to /blog/, expected exactly 1`);
+      } else if (!/hreflang="en"/.test(links[0])) {
+        fail(out, 'nav Blog link has no hreflang="en" — the blog is English whatever locale links to it');
+      }
+    }
+  }
+
+  // 12. the feed is well-formed, complete, and shaped the way a reader expects
+  if (!feed) fail(feedRel, 'MISSING from dist/');
+  else {
+    for (const p of xmlProblems(feed)) fail(feedRel, `is not well-formed XML: ${p}`);
+
+    const items = [...feed.matchAll(/<item>[\s\S]*?<\/item>/g)].map((m) => m[0]);
+    if (items.length !== BLOG_POSTS.length) {
+      fail(feedRel, `has ${items.length} <item> element(s), expected ${BLOG_POSTS.length} — one per post in BLOG_POSTS`);
+    }
+    // RFC 822, not ISO 8601. A feed dated "2026-09-02" sorts to the bottom of
+    // every reader that manages to parse it at all.
+    const RFC822 = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun), \d{2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4} \d{2}:\d{2}:\d{2} (GMT|[+-]\d{4})$/;
+    const dates = [...feed.matchAll(/<(?:pubDate|lastBuildDate)>([^<]*)<\/(?:pubDate|lastBuildDate)>/g)];
+    if (!dates.length) fail(feedRel, 'has no <pubDate> at all');
+    for (const [, d] of dates) {
+      if (!RFC822.test(d)) fail(feedRel, `date "${d}" is not RFC 822 (want e.g. "Wed, 02 Sep 2026 00:00:00 GMT")`);
+    }
+    for (const [, href] of feed.matchAll(/<link>([^<]*)<\/link>/g)) {
+      if (!href.startsWith(`${BASE_URL}/`)) {
+        fail(feedRel, `<link>${href}</link> is not an absolute ${BASE_URL} URL — a feed is read away from the site, so relative links resolve nowhere`);
+      }
+    }
+  }
+
+  // 13. the feed is not a page, and the index is
+  if (sitemap.includes('feed.xml')) {
+    fail('sitemap.xml', 'lists blog/feed.xml — a feed is not a page and must not be submitted as one');
+  }
+  if (!sitemap.includes(`<loc>${BASE_URL}/blog/</loc>`)) {
+    fail('sitemap.xml', `does not list ${BASE_URL}/blog/ — the index is a page and belongs in the sitemap`);
+  }
+
+  // 14. autodiscovery on the blog and nowhere else. On the wrong page it tells
+  // a reader that /support.html has a feed, which it does not.
+  {
+    const wantsFeed = new Set([INDEX_OUT, ...BLOG_POSTS.map((p) => `blog/${p.slug}/index.html`)]);
+    for (const f of htmlFiles) {
+      const r = rel(f);
+      const has = /<link rel="alternate" type="application\/rss\+xml"/.test(read(f));
+      if (wantsFeed.has(r) && !has) fail(r, 'has no RSS autodiscovery link — every blog page must advertise the feed');
+      if (!wantsFeed.has(r) && has) fail(r, 'has an RSS autodiscovery link but is not a blog page — it advertises a feed that does not cover it');
     }
   }
 }

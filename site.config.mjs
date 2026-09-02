@@ -177,6 +177,25 @@ export const PAGES = [
 export const BLOG_AUTHOR = { name: 'Ammar Khatib', url: '/impressum.html' };
 
 /**
+ * The blog's topic clusters, from claude/blog-seo-plan-2026-09.md section 1.
+ * Key = the id a post carries, value = how it would be displayed.
+ *
+ * Nothing renders this yet. It is recorded now because tagging a post costs one
+ * word while the post is being written and is archaeology afterwards — and
+ * because /blog/ will want to group by it once there are enough posts for
+ * grouping to look deliberate rather than broken. build.mjs throws on a
+ * `cluster` that is not a key here, so a typo cannot create a silent sixth
+ * cluster of one.
+ */
+export const BLOG_CLUSTERS = {
+  documents: 'Family documents',
+  cozi: 'Leaving Cozi',
+  adoption: 'Getting the family to use it',
+  privacy: 'Privacy and children’s data',
+  devices: 'Mixed-device households',
+};
+
+/**
  * The post manifest — one object per post, and the ONLY place a post is
  * defined. Same contract PAGES has for pages: structure and identity here,
  * prose in blog/<body>.
@@ -204,7 +223,8 @@ export const BLOG_AUTHOR = { name: 'Ammar Khatib', url: '/impressum.html' };
 export const BLOG_POSTS = [
   {
     slug: 'where-to-store-important-family-documents',
-    title: 'Where to Store Important Family Documents (Safe, Cloud or Phone?)',
+    cluster: 'documents',
+    title: 'Where to Store Important Family Documents: Safe or Phone?',
     description: 'Fireproof safe, cloud drive or your phone? Compare the three ways families store passports, birth certificates and insurance papers — and when each one fails.',
     h1: 'Where to Store Important Family Documents (Safe, Cloud, or Phone?)',
     published: '2026-09-02',
@@ -252,6 +272,30 @@ export const BLOG_POSTS = [
  * 'ill' = a flat illustration. The alternating .alt class is derived from the
  * index, exactly as the hand-written page had it.
  */
+/**
+ * The /blog/ index's own copy.
+ *
+ * These are literals here, not keys in content/<locale>.json, and that is
+ * deliberate: check-content.mjs enforces key-set equality across all 23 locale
+ * files, so one English-only key would have to be added — untranslated — to 22
+ * files that will never render it. The blog is English-only, so its page copy
+ * lives with the rest of the blog's structure, exactly as each post's title
+ * does in BLOG_POSTS.
+ *
+ * `h1` doubles as the RSS channel title and `description` as the channel
+ * description, so the feed and the page introduce the blog with the same words.
+ *
+ * nav.blog is the one exception and DOES live in all 23 content files: it
+ * renders in the header and footer of every locale, so it is real translated
+ * copy rather than English-only page text.
+ */
+export const BLOG_INDEX = {
+  title: 'Blog — Daili',
+  description: 'Practical writing on running a family: documents, calendars, lists, and getting everyone to actually use the system.',
+  h1: 'The Daili blog',
+  intro: 'Practical writing on running a family — documents, calendars, lists, and getting everyone to actually use the system.',
+};
+
 export const FEATURES = [
   { key: 'calendar',  img: 'shot-calendar',  art: 'phone' },
   { key: 'shopping',  img: 'shot-shopping',  art: 'phone' },

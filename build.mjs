@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, FEATURES, TRUST_ICONS, GALLERY, COMPARE_ROWS, COMPARE_MARKS, imageSize,
-  BLOG_POSTS, BLOG_AUTHOR,
+  BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX,
 } from './site.config.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -141,14 +141,63 @@ const blogPages = BLOG_POSTS.map((post) => ({
   post,
 }));
 
-/** Everything the build loops over: the manifest, plus one page per post. */
-const allPages = [...PAGES, ...blogPages];
+/**
+ * A post's cluster has to be one of the five in BLOG_CLUSTERS. Nothing renders
+ * clusters yet, which is exactly why this throws: an unrendered typo is
+ * invisible until the day /blog/ starts grouping by it, and then it is a silent
+ * sixth cluster containing one post.
+ */
+for (const post of BLOG_POSTS) {
+  if (!(post.cluster in BLOG_CLUSTERS)) {
+    throw new Error(`BLOG_POSTS '${post.slug}' has cluster '${post.cluster}', which is not a key in BLOG_CLUSTERS (${Object.keys(BLOG_CLUSTERS).join(', ')})`);
+  }
+}
+
+/** The blog index. English-only and outside every cluster, like the posts. */
+const blogIndexPage = {
+  id: 'blogindex',
+  template: 'blogindex.html',
+  locales: ['en'],
+  cluster: null,
+  out: () => 'blog/index.html',
+  priority: () => '0.6',
+  meta: { title: BLOG_INDEX.title, description: BLOG_INDEX.description },
+};
+
+/** Everything the build loops over: the manifest, the index, one page per post. */
+const allPages = [...PAGES, blogIndexPage, ...blogPages];
 
 /** "2 September 2026" — the byline's readable half. The machine-readable half
  *  is the raw ISO string in <time datetime>. */
 const formatDate = (iso) => new Intl.DateTimeFormat('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
 }).format(new Date(`${iso}T00:00:00Z`));
+
+/** RFC 822, which is what RSS requires — not ISO 8601. Built by hand from UTC
+ *  parts rather than toUTCString() so the format cannot drift with the locale
+ *  or the host's clock: 'Wed, 02 Sep 2026 00:00:00 GMT'. */
+const RFC822_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const RFC822_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const rfc822 = (iso) => {
+  const d = new Date(`${iso}T00:00:00Z`);
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  return `${RFC822_DAYS[d.getUTCDay()]}, ${dd} ${RFC822_MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()} 00:00:00 GMT`;
+};
+
+/**
+ * Posts newest first, with the derived fields the index and the feed both need.
+ * One list, so the page and the feed can never disagree about what exists or
+ * what order it is in.
+ */
+const blogList = [...BLOG_POSTS]
+  .sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug))
+  .map((post) => ({
+    ...post,
+    url: `/blog/${post.slug}/`,
+    absUrl: `${BASE_URL}/blog/${post.slug}/`,
+    publishedLabel: formatDate(post.published),
+    pubDate: rfc822(post.published),
+  }));
 
 const localesFor = (pg) => (pg.locales === 'all' ? LOCALES : pg.locales.filter((l) => LOCALES.includes(l)));
 const urlFor = (pg, loc) => {
@@ -211,6 +260,10 @@ function renderFooterLinks(loc) {
   const terms = loc === 'de' ? '/nutzungsbedingungen.html' : '/terms.html';
   const parts = [
     `<a href="${support}">${escapeHtml(c.nav.support)}</a>`,
+    // Same target and same attributes as the header link: the blog is English
+    // whatever locale the footer around it is written in, and hreflang/lang say
+    // so rather than leaving a reader to find out by clicking.
+    `<a href="/blog/" hreflang="en" lang="en">${escapeHtml(c.nav.blog)}</a>`,
     `<a href="${privacy}">${escapeHtml(c.footer.privacy)}</a>`,
     `<a href="${terms}">${escapeHtml(c.footer.terms)}</a>`,
     `<a href="/impressum.html">${escapeHtml(c.footer.imprint)}</a>`,
@@ -304,10 +357,23 @@ function renderHead(pg, loc, cssHref, detector) {
   const c = content[loc];
   const out = [];
   const canonical = absUrl(pg, loc);
+  // A blog page carries its own meta (pg.meta) and, for a post, its own hero
+  // image; every other page still reads both out of content/<loc>.json exactly
+  // as before.
+  const post = pg.post;
+  const isBlog = Boolean(post) || pg.id === 'blogindex';
 
   out.push(`<link rel="canonical" href="${canonical}">`);
 
   if (pg.noindex) out.push('<meta name="robots" content="noindex">');
+
+  // RSS autodiscovery, on the index and every post and NOWHERE else — it is a
+  // feed of the blog, not of the site. This is a <link rel="alternate">
+  // without an hreflang, which is why check-build's section 11 check 4 asks
+  // about alternates carrying hreflang rather than about alternates at all.
+  if (isBlog) {
+    out.push(`<link rel="alternate" type="application/rss+xml" title="Daili blog" href="/blog/feed.xml">`);
+  }
 
   // hreflang — only within this page's own cluster. Letting a locale claim a
   // page from a different cluster as its alternate is the classic route to
@@ -319,11 +385,8 @@ function renderHead(pg, loc, cssHref, detector) {
     out.push(`<link rel="alternate" hreflang="x-default" href="${absUrl(pg, DEFAULT_LOCALE)}">`);
   }
 
-  // A blog page carries its own meta (pg.meta) and its own hero image; every
-  // other page still reads both out of content/<loc>.json exactly as before.
-  const post = pg.post;
-  const ogTitle = post ? pg.meta.title : pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
-  const ogDesc = post ? pg.meta.description : pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
+  const ogTitle = pg.meta ? pg.meta.title : pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
+  const ogDesc = pg.meta ? pg.meta.description : pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
   out.push(`<meta property="og:type" content="${post ? 'article' : 'website'}">`);
   out.push(`<meta property="og:url" content="${canonical}">`);
   out.push(`<meta property="og:title" content="${escapeHtml(ogTitle)}">`);
@@ -512,6 +575,10 @@ function build() {
 
       const data = {
         ...c,
+        // The index gets the post list and its own literals; every other page
+        // gets neither, so a stray {{ posts }} throws rather than rendering
+        // nothing.
+        ...(pg.id === 'blogindex' ? { posts: blogList, blog: BLOG_INDEX } : {}),
         // Only blog pages have a post. Anywhere else `post` is absent, so a
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
@@ -586,11 +653,42 @@ function build() {
   fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset ${NS}>\n${urls.join('\n')}\n</urlset>\n`);
 
+  // ---- RSS ---------------------------------------------------------------
+  // Deliberately not a page: it is not in `written`, so it cannot reach the
+  // sitemap. Every value goes through escapeHtml — its five entities are all
+  // valid XML, and a single unescaped & in a post title produces a feed no
+  // reader will open, which nothing else in this build would notice.
+  const feedItems = blogList.map((post) => `  <item>
+    <title>${escapeHtml(post.title)}</title>
+    <link>${escapeHtml(post.absUrl)}</link>
+    <description>${escapeHtml(post.description)}</description>
+    <pubDate>${post.pubDate}</pubDate>
+    <guid isPermaLink="true">${escapeHtml(post.absUrl)}</guid>
+  </item>`).join('\n');
+  // The newest post's date, not the build date: a feed whose lastBuildDate
+  // moves every time the site is rebuilt tells a reader nothing.
+  const lastBuild = blogList.length ? rfc822(blogList[0].updated) : rfc822(BUILD_DATE);
+  fs.writeFileSync(path.join(DIST, 'blog/feed.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>${escapeHtml(BLOG_INDEX.h1)}</title>
+  <link>${BASE_URL}/blog/</link>
+  <description>${escapeHtml(BLOG_INDEX.description)}</description>
+  <language>en</language>
+  <lastBuildDate>${lastBuild}</lastBuildDate>
+  <atom:link href="${BASE_URL}/blog/feed.xml" rel="self" type="application/rss+xml"/>
+${feedItems}
+</channel>
+</rss>
+`);
+
   fs.writeFileSync(path.join(DIST, 'robots.txt'),
     `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`);
 
   console.log(`built ${written.length} pages · ${LOCALES.length} locale(s) · ${urls.length} sitemap entries`);
   console.log(`assets: ${cssName}  ${jsName}`);
+  console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml`);
   for (const [name, st] of Object.entries(stores)) {
     if (!st.available) {
       console.log(`INFO  stores.${name}.available is false — the badge renders as a non-link "coming soon" chip and ${name === 'ios' ? 'the App Store URL' : 'the store URL'} is not written into dist/.`);
