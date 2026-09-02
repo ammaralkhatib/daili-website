@@ -170,6 +170,77 @@ export const PAGES = [
 ];
 
 /**
+ * The blog's author. One person, one place: the byline the template prints and
+ * the `author` in every post's Article JSON-LD read from this object, so they
+ * cannot disagree with each other.
+ */
+export const BLOG_AUTHOR = { name: 'Ammar Khatib', url: '/impressum.html' };
+
+/**
+ * The post manifest — one object per post, and the ONLY place a post is
+ * defined. Same contract PAGES has for pages: structure and identity here,
+ * prose in blog/<body>.
+ *
+ * `slug` is the URL. It NEVER changes once a post is published.
+ *
+ * `faq` lives here and nowhere else. templates/blogpost.html renders the
+ * visible FAQ from this array and build.mjs's renderHead builds the FAQPage
+ * JSON-LD from the same array, so the markup and the visible text are the same
+ * strings by construction. Google requires FAQ markup to match visible text
+ * exactly, and the only way to guarantee that is to never type a question
+ * twice — the landing page's FAQ is wired the same way for the same reason.
+ *
+ * `title` and `h1` are deliberately allowed to differ: the title tag is
+ * competing in a search result, the H1 is being read on the page.
+ *
+ * `imageWidth`/`imageHeight` are the intrinsic pixels, measured from the file,
+ * exactly as IMAGE_SIZES above records them for the app screenshots. They are
+ * what stops the hero shifting the layout while it loads.
+ *
+ * The pages derived from this array carry `cluster: null` (see build.mjs). The
+ * blog is English-only; a blog page must never claim a landing page in another
+ * locale as its hreflang alternate.
+ */
+export const BLOG_POSTS = [
+  {
+    slug: 'where-to-store-important-family-documents',
+    title: 'Where to Store Important Family Documents (Safe, Cloud or Phone?)',
+    description: 'Fireproof safe, cloud drive or your phone? Compare the three ways families store passports, birth certificates and insurance papers — and when each one fails.',
+    h1: 'Where to Store Important Family Documents (Safe, Cloud, or Phone?)',
+    published: '2026-09-02',
+    updated: '2026-09-02',
+    body: 'where-to-store-important-family-documents.en.html',
+    image: '/assets/img/blog/where-to-store-important-family-documents.webp',
+    imageAlt: 'Several EU passports and travel documents fanned out on a grey fabric surface',
+    imageWidth: 1200,
+    imageHeight: 801,
+    faq: [
+      {
+        q: 'Is a photo of a passport legally valid?',
+        a: 'Usually not as proof of identity. A copy is for reference — giving a hospital your insurance number, giving an airline a document number, proving to yourself which passport expires when. For anything official, you still need the original. That is exactly why copies and originals live in different places.',
+      },
+      {
+        q: 'Where should the originals live?',
+        a: 'In one place, and everyone who might need them should know where. A rated safe at home is right for most families because it stays accessible. A bank box is better protection but worse access; use it for things you will not need at short notice.',
+      },
+      {
+        q: 'Do I need a safe AND a cloud folder AND the phone copies?',
+        a: 'No. Most families need two: something that protects the originals, and one place that gives instant access. The phone set is small enough that adding it takes an evening, and it is the half most households are missing.',
+      },
+    ],
+    // The closing CTA. It is per-post prose, not boilerplate — it names what
+    // this particular article was about — so it lives with the post rather than
+    // being hard-coded into a template twenty posts have to share.
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili has a documents vault built for exactly the second half of this article. Files you put in it are stored <strong>on your device only</strong> — they are never uploaded to our servers and are not part of any backup we hold. That means they are there with no signal, and they are not sitting in a company's cloud waiting on an account password.</p>
+<p>It also means the vault is not a backup. Your originals still need the safe, and anything irreplaceable still needs a copy somewhere else. The vault is the ten-second answer, not the fire answer.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
+];
+
+/**
  * The landing page's feature sections, in order.
  *
  * Structure lives here, words live in content/<locale>.json under

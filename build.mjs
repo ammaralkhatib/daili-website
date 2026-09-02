@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, FEATURES, TRUST_ICONS, GALLERY, COMPARE_ROWS, COMPARE_MARKS, imageSize,
+  BLOG_POSTS, BLOG_AUTHOR,
 } from './site.config.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -116,6 +117,39 @@ const includes = { storebadges: templates['_storebadges.html'] };
 // ---------------------------------------------------------------------------
 
 const pageById = Object.fromEntries(PAGES.map((pg) => [pg.id, pg]));
+
+/**
+ * Blog posts become pages here rather than being hand-written into PAGES.
+ * Twenty posts is twenty near-identical entries, and the one thing that must be
+ * identical across all of them is the line below.
+ *
+ * `cluster: null` is load-bearing. The blog is English-only; the landing page
+ * has 23 translated alternates. A blog page that carried a cluster would emit
+ * hreflang links to pages that never point back — exactly the "hreflang has no
+ * return tag" trap the comment above renderHead's hreflang block warns about.
+ * tools/check-build.mjs section 11 asserts zero `hreflang=` on every built blog
+ * page, so a refactor cannot quietly undo this.
+ */
+const blogPages = BLOG_POSTS.map((post) => ({
+  id: `blog:${post.slug}`,
+  template: 'blogpost.html',
+  locales: ['en'],
+  cluster: null,
+  out: () => `blog/${post.slug}/index.html`,
+  priority: () => '0.6',
+  meta: { title: post.title, description: post.description },
+  post,
+}));
+
+/** Everything the build loops over: the manifest, plus one page per post. */
+const allPages = [...PAGES, ...blogPages];
+
+/** "2 September 2026" — the byline's readable half. The machine-readable half
+ *  is the raw ISO string in <time datetime>. */
+const formatDate = (iso) => new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+}).format(new Date(`${iso}T00:00:00Z`));
+
 const localesFor = (pg) => (pg.locales === 'all' ? LOCALES : pg.locales.filter((l) => LOCALES.includes(l)));
 const urlFor = (pg, loc) => {
   const out = pg.out(loc);
@@ -285,15 +319,61 @@ function renderHead(pg, loc, cssHref, detector) {
     out.push(`<link rel="alternate" hreflang="x-default" href="${absUrl(pg, DEFAULT_LOCALE)}">`);
   }
 
-  const ogTitle = pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
-  const ogDesc = pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
-  out.push(`<meta property="og:type" content="website">`);
+  // A blog page carries its own meta (pg.meta) and its own hero image; every
+  // other page still reads both out of content/<loc>.json exactly as before.
+  const post = pg.post;
+  const ogTitle = post ? pg.meta.title : pg.id === 'landing' ? c.meta.ogTitle : c.meta.title;
+  const ogDesc = post ? pg.meta.description : pg.id === 'landing' ? c.meta.ogDescription : c.meta.description;
+  out.push(`<meta property="og:type" content="${post ? 'article' : 'website'}">`);
   out.push(`<meta property="og:url" content="${canonical}">`);
   out.push(`<meta property="og:title" content="${escapeHtml(ogTitle)}">`);
   out.push(`<meta property="og:description" content="${escapeHtml(ogDesc)}">`);
-  out.push(`<meta property="og:image" content="${BASE_URL}/assets/img/logo.webp">`);
+  out.push(`<meta property="og:image" content="${BASE_URL}${post ? post.image : '/assets/img/logo.webp'}">`);
   out.push(`<meta property="og:locale" content="${loc.replace('-', '_')}">`);
+  if (post) {
+    out.push(`<meta property="article:published_time" content="${post.published}">`);
+    out.push(`<meta property="article:modified_time" content="${post.updated}">`);
+  }
   out.push(`<meta name="twitter:card" content="summary">`);
+
+  if (post) {
+    // headline is post.h1, not post.title: Google wants the headline to be the
+    // heading the reader actually sees, and the two are deliberately allowed to
+    // differ. The FAQPage below is built from the same post.faq array that
+    // templates/blogpost.html renders the visible questions from — the markup
+    // and the visible text cannot drift because they are the same strings.
+    const ld = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: post.h1,
+        description: post.description,
+        image: `${BASE_URL}${post.image}`,
+        datePublished: post.published,
+        dateModified: post.updated,
+        inLanguage: loc,
+        author: { '@type': 'Person', name: BLOG_AUTHOR.name, url: BASE_URL + BLOG_AUTHOR.url },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Daili',
+          logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/img/logo.webp` },
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faq.map((it) => ({
+          '@type': 'Question',
+          name: it.q,
+          acceptedAnswer: { '@type': 'Answer', text: it.a },
+        })),
+      },
+    ];
+    for (const obj of ld) {
+      out.push(`<script type="application/ld+json">${JSON.stringify(obj)}</script>`);
+    }
+  }
 
   if (pg.id === 'landing') {
     // Built from the same content that renders the visible FAQ, so the two can
@@ -414,7 +494,7 @@ function build() {
 
   const written = [];
 
-  for (const pg of PAGES) {
+  for (const pg of allPages) {
     for (const loc of localesFor(pg)) {
       const c = content[loc];
       const where = `content/${loc}.json`;
@@ -427,12 +507,28 @@ function build() {
       let legalBody = '';
       if (pg.body) legalBody = read(`legal/${pg.body[loc]}`);
 
+      let postBody = '';
+      if (pg.post) postBody = read(`blog/${pg.post.body}`);
+
       const data = {
         ...c,
+        // Only blog pages have a post. Anywhere else `post` is absent, so a
+        // stray {{ post.x }} throws rather than rendering an empty string.
+        ...(pg.post ? {
+          post: {
+            ...pg.post,
+            author: BLOG_AUTHOR.name,
+            publishedLabel: formatDate(pg.post.published),
+          },
+        } : {}),
+        // A page may carry its own literal meta (blog posts do). Without this
+        // every new blog post would be another arm on the titleKey ternary,
+        // and its title would have to be written into 23 content files that
+        // will never render it.
         meta: {
           ...c.meta,
-          title: pg.id === 'landing' ? c.meta.title : c.meta[titleKey],
-          description: c.meta[descKey],
+          title: pg.meta ? pg.meta.title : pg.id === 'landing' ? c.meta.title : c.meta[titleKey],
+          description: pg.meta ? pg.meta.description : c.meta[descKey],
         },
         // iosUrl is only in the view object when the listing is actually
         // available. Not merely unused when it is not — absent, so a stray
@@ -453,6 +549,7 @@ function build() {
           langNav: renderLangNav(pg, loc),
           footerLinks: renderFooterLinks(loc),
           legalBody,
+          postBody,
           trustPills: pg.id === 'landing' ? renderTrustPills(loc) : '',
           features: pg.id === 'landing' ? renderFeatures(loc) : '',
           gallery: pg.id === 'landing' ? renderGallery(loc) : '',

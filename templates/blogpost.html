@@ -1,0 +1,25 @@
+<article class="post" id="main">
+
+  <figure class="post-hero">
+    <img src="{{ post.image }}" alt="{{ post.imageAlt }}" width="{{ post.imageWidth }}" height="{{ post.imageHeight }}" fetchpriority="high" decoding="async">
+  </figure>
+
+  <h1>{{ post.h1 }}</h1>
+  <p class="post-byline">{{ post.author }} &middot; <time datetime="{{ post.published }}">{{ post.publishedLabel }}</time></p>
+
+{{{ page.postBody }}}
+
+  <section class="post-faq">
+    <h2>Frequently asked questions</h2>
+{{# post.faq }}
+    <h3>{{ .q }}</h3>
+    <p>{{ .a }}</p>
+{{/}}
+  </section>
+
+  <aside class="post-cta">
+    <h2>{{ post.cta.h2 }}</h2>
+{{{ post.cta.html }}}
+  </aside>
+
+</article>

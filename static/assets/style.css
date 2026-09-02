@@ -417,3 +417,44 @@ footer a:hover{color:var(--forest)}
   .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+/* ---------- blog post ---------- */
+/* Every rule here is built on the tokens redefined in the dark-mode block
+   above, so the post gets dark mode for free — no colour literal below. */
+.post{max-width:68ch;margin:0 auto;padding:40px 20px 64px}
+.post-hero{margin-bottom:26px;border-radius:var(--radius);overflow:hidden;background:var(--cream)}
+.post-hero img{width:100%}
+.post h1{font-size:clamp(1.7rem,4.6vw,2.3rem);line-height:1.2;letter-spacing:-.02em;margin-bottom:10px}
+.post-byline{color:var(--muted);font-size:.9rem;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.post h2{font-size:1.38rem;line-height:1.3;letter-spacing:-.01em;margin:38px 0 12px}
+.post h3{font-size:1.06rem;margin:24px 0 6px}
+.post p,.post li{color:var(--body);font-size:1.02rem}
+.post p{margin-bottom:16px}
+.post ul,.post ol{margin-bottom:18px;padding-inline-start:24px}
+.post li{margin-bottom:9px}
+.post strong{color:var(--ink)}
+.post a{text-underline-offset:3px}
+
+/* The one table in the post is wider than a phone. It scrolls inside its own
+   box; the page itself must never scroll sideways. */
+.table-wrap{overflow-x:auto;margin-bottom:22px;border:1px solid var(--line);border-radius:14px}
+.post-table{border-collapse:collapse;width:100%;min-width:500px;font-size:.93rem}
+.post-table th,.post-table td{border-bottom:1px solid var(--line);padding:11px 14px;text-align:start;color:var(--body)}
+.post-table thead th{background:var(--cream);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+.post-table tbody th{font-weight:600;color:var(--ink)}
+.post-table tbody tr:last-child>*{border-bottom:0}
+
+/* The FAQ is the last section of the article, not a widget bolted on after it:
+   same type scale as the prose above, one rule to mark the seam. */
+.post-faq{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+
+.post-cta{margin-top:42px;background:var(--mint);border:1px solid var(--mint-strong);border-radius:calc(var(--radius) - 4px);padding:26px 24px}
+.post-cta h2{margin-top:0;font-size:1.18rem;color:var(--forest-deep)}
+.post-cta p:last-child{margin-bottom:0}
+.post-cta-link a{font-weight:600}
+
+@media(max-width:560px){
+  .post{padding:22px 18px 48px}
+  .post-hero{border-radius:16px}
+  .post-cta{padding:22px 18px}
+}
