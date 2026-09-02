@@ -416,6 +416,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
     },
   },
+  {
+    slug: 'what-to-leave-with-a-babysitter',
+    cluster: 'documents',
+    title: 'What to Leave with a Babysitter or Grandparent',
+    description: 'The one-page handover every sitter needs: contacts, medical details, routines, house rules and the permissions they need — plus what to deliberately leave out.',
+    h1: 'What to Leave with a Babysitter or Grandparent for a Weekend Away',
+    published: '2026-09-07',
+    updated: '2026-09-07',
+    body: 'what-to-leave-with-a-babysitter.en.html',
+    image: '/assets/img/blog/what-to-leave-with-a-babysitter.webp',
+    imageAlt: 'A grandmother sitting with two grandchildren as they draw at a table',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'What does a grandparent need that a paid sitter does not?',
+        a: 'Less instruction and more updates. Grandparents know how to look after children; what they need is what has changed since they last did it — current allergies, current bedtime, current rules — plus a clear line about medication.',
+      },
+      {
+        q: 'How much medical detail is appropriate?',
+        a: 'Enough to act on, no more. Allergies and what to do, current medication with doses, what has been given today, what is allowed for ordinary aches, and the GP\'s number. Not a full history, and nothing about a diagnosis a carer does not need in order to keep your child safe.',
+      },
+      {
+        q: 'Do I need all this for one evening out?',
+        a: 'No. For a few hours: your numbers, one nearby adult, allergies and medication, bedtime, and the wifi. The full page is for overnight and longer, when the sitter has to make decisions without you.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>The handover page is the sort of thing you write once and then cannot find. Keep the filled-in version in daili's documents vault with the insurance card and the vaccination record, and it is <a href="/blog/digital-family-emergency-binder/">on your phone next time</a> — including the version you can send to a sitter in seconds.</p>
+<p>Vault files are stored <strong>on your device only</strong>: never uploaded to our servers, and not part of any backup we hold.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
 ];
 
 /**
