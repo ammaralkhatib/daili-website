@@ -1,6 +1,6 @@
 # Post 5 — What Cozi's Free Plan Actually Includes in 2026 (pillar B)
 
-Live at `/blog/cozi-free-plan-what-you-get/`. Two files, as the recipe describes:
+Live at `/blog/cozi-free-plan-what-you-get/`. Commit `60b1412`. Two files, as the recipe describes:
 the body fragment and one `BLOG_POSTS` entry. Nothing in `build.mjs`,
 `style.css` or the guards needed touching. First post in the `cozi` cluster.
 
