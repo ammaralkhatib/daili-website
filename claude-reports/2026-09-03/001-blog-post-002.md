@@ -1,6 +1,6 @@
 # Post 2 — The Digital Family Emergency Binder
 
-Live at `/blog/digital-family-emergency-binder/`. Two files changed as the
+Live at `/blog/digital-family-emergency-binder/`. Commit `d42305c`. Two files changed as the
 recipe describes, plus one CSS rule (below).
 
 ## The `BLOG_POSTS` entry
