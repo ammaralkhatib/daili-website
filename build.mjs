@@ -365,7 +365,7 @@ function renderCompareTable(loc) {
 // head: canonical, hreflang, Open Graph, JSON-LD
 // ---------------------------------------------------------------------------
 
-function renderHead(pg, loc, cssHref, detector) {
+function renderHead(pg, loc, cssHref, detector, postBody) {
   const c = content[loc];
   const out = [];
   const canonical = absUrl(pg, loc);
@@ -446,6 +446,31 @@ function renderHead(pg, loc, cssHref, detector) {
         })),
       },
     ];
+
+    // A third block, only for a post that declares `itemList` — and only a post
+    // that IS a list of named things should. The names are read back out of the
+    // body that was just rendered, never taken from a second copy in
+    // site.config.mjs: the same reasoning that keeps `faq` in one place.
+    // Structured data that disagrees with the visible page is worse than none,
+    // and the only way to guarantee they agree is to have one source.
+    if (post.itemList) {
+      const names = [];
+      for (const [, block] of postBody.matchAll(/<ol class="doc-checklist"[^>]*>([\s\S]*?)<\/ol>/g)) {
+        for (const [, name] of block.matchAll(/<li>\s*<strong>([^<]+)<\/strong>/g)) names.push(name.trim());
+      }
+      if (names.length === 0) {
+        throw new Error(`BLOG_POSTS '${post.slug}' declares itemList, but blog/${post.body} has no <ol class="doc-checklist"> items to build it from`);
+      }
+      ld.push({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: post.itemList,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        numberOfItems: names.length,
+        itemListElement: names.map((name, i) => ({ '@type': 'ListItem', position: i + 1, name })),
+      });
+    }
+
     for (const obj of ld) {
       out.push(`<script type="application/ld+json">${JSON.stringify(obj)}</script>`);
     }
@@ -646,7 +671,7 @@ function build() {
           headExtra: '',
         },
       };
-      data.page.headExtra = renderHead(pg, loc, cssHref, isRootLanding ? detector : null);
+      data.page.headExtra = renderHead(pg, loc, cssHref, isRootLanding ? detector : null, postBody);
 
       const body = render(templates[pg.template], data, includes, where);
       data.page.body = body;

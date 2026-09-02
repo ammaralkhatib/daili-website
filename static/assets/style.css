@@ -464,6 +464,56 @@ footer a:hover{color:var(--forest)}
   .post-cta{padding:22px 18px}
 }
 
+/* ---------- printing a post ---------- */
+/* Post 3 is a 27-item checklist, and a checklist is printed and stuck to the
+   inside of a cupboard door. That is the whole reason the post exists — people
+   link to what prints well — so the print sheet is part of the article, not a
+   nicety.
+
+   What goes: the header (and with it the language picker), the footer, the skip
+   link, the hero photo and the CTA. None of them are the checklist, and the
+   hero alone is half a sheet of ink. What stays: the h1, the byline, the prose
+   and every numbered item.
+
+   The ☐ is scoped to .doc-checklist rather than to .post ol, so a future post
+   with an ordinary numbered list does not print as a to-do list. The list
+   marker still supplies the number; the box sits after it. */
+@page{margin:16mm}
+
+@media print{
+  /* Black on white whatever the screen was doing. The dark-mode block above is
+     a media query, not a class, so a laptop set to dark would otherwise print
+     the checklist as pale grey on near-black — 27 items of it. Every rule in
+     this file reads a token, so putting the tokens back here is the whole fix;
+     this block comes later in the file, so it wins. */
+  :root{
+    --paper:#fff; --card:#fff; --cream:#fff;
+    --ink:#000; --body:#1a1a1a; --muted:#3f3f3f; --line:#b9b9b9;
+  }
+  html,body{background:#fff}
+
+  header,footer,.skip,.post-hero,.post-cta{display:none}
+
+  .post{max-width:none;margin:0;padding:0}
+  .post h1{font-size:19pt}
+  .post h2{font-size:13pt;margin:18pt 0 6pt}
+  .post h3{font-size:11.5pt}
+  .post p,.post li{font-size:10.5pt}
+  .post-byline{margin-bottom:14pt;padding-bottom:8pt}
+
+  /* A printed link cannot be clicked, and blue underlines all down a checklist
+     read as noise. The href is not printed after the text either: three of them
+     are internal and one is a 130-character German URL. */
+  .post a{color:inherit;text-decoration:none}
+
+  .doc-checklist li{margin-bottom:6pt;break-inside:avoid}
+  .doc-checklist li::before{content:"\2610\00a0\00a0"}
+
+  /* A heading stranded at the foot of a page takes its section's first items
+     with it and the printed list stops looking like one list. */
+  .post h2{break-after:avoid}
+}
+
 /* ---------- what's new (release notes) ---------- */
 /* Built on .legal, so measure, headings and dark mode all come for free; these
    are only the rules that separate one release block from the next. */

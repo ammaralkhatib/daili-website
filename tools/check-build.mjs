@@ -347,6 +347,37 @@ for (const f of htmlFiles) {
       }
     }
 
+    // 10. a post that declares `itemList` carries an ItemList block, and every
+    // name in it is on the visible page. build.mjs derives the names from the
+    // rendered body, so this is not checking a copy against a copy — it is
+    // checking that the derivation still finds the list. Rename the class on
+    // the <ol>, or drop the <strong>, and the markup would quietly describe a
+    // shorter list than the page shows; that is the failure this catches.
+    if (post.itemList) {
+      let itemLd = null;
+      for (const [, raw] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+        let obj;
+        try { obj = JSON.parse(raw); } catch { continue; } // check 6 already reported it
+        if (obj['@type'] === 'ItemList') itemLd = obj;
+      }
+      if (!itemLd) {
+        fail(out, `${post.slug}: declares itemList in BLOG_POSTS but the page has no ItemList JSON-LD block`);
+      } else {
+        const els = itemLd.itemListElement || [];
+        if (els.length !== itemLd.numberOfItems) {
+          fail(out, `${post.slug}: ItemList says numberOfItems ${itemLd.numberOfItems} but carries ${els.length} items`);
+        }
+        els.forEach((el, i) => {
+          if (el.position !== i + 1) {
+            fail(out, `${post.slug}: ItemList item ${i + 1} has position ${el.position} — the positions must run 1..n in order`);
+          }
+          if (!visible.includes(esc(el.name))) {
+            fail(out, `${post.slug}: ItemList names "${el.name}", which is not on the visible page`);
+          }
+        });
+      }
+    }
+
     // 7. the hero image is a real file, and the page actually points at it
     const src = path.join(ROOT, 'static', post.image.replace(/^\//, ''));
     if (!fs.existsSync(src)) {

@@ -307,6 +307,47 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'family-document-checklist',
+    cluster: 'documents',
+    title: 'The Family Document Checklist: 27 Papers to Have Ready',
+    description: 'A room-by-room checklist of the 27 documents every household needs to find fast — identity, medical, money, property, school — and which need the original.',
+    h1: 'The Family Document Checklist: 27 Papers Every Household Should Have Ready',
+    published: '2026-09-04',
+    updated: '2026-09-04',
+    body: 'family-document-checklist.en.html',
+    image: '/assets/img/blog/family-document-checklist.webp',
+    imageAlt: 'A hand ticking off items on a handwritten checklist in a notebook',
+    imageWidth: 1200,
+    imageHeight: 675,
+    // The one post on the blog that is literally a list of named things, so it
+    // is the one post where ItemList is a description rather than decoration.
+    // Declaring the list's NAME here is the whole opt-in: renderHead reads the
+    // 27 items back out of the rendered body (see the ol.doc-checklist blocks
+    // in blog/family-document-checklist.en.html) rather than taking a second
+    // copy of them here, for the same reason `faq` is never typed twice.
+    itemList: 'The family document checklist — 27 documents every household should have ready',
+    faq: [
+      {
+        q: 'How often should I update this?',
+        a: 'Once a year is enough for the list as a whole. Two things need updating the day they change: the medication page and anyone\'s insurance card. Everything else can wait for the annual pass.',
+      },
+      {
+        q: 'What if I am renting?',
+        a: 'Items 19 and 20 become the tenancy agreement and your deposit paperwork, and contents insurance matters more, not less — the building is insured by the landlord, everything inside it is not. The rest of the list is unchanged.',
+      },
+      {
+        q: 'Do I need originals, or are copies enough?',
+        a: 'It depends on the tier. Certificates need originals. Contracts, policies and wills need an original or a certified copy. For everything in the third tier a plain copy does the job, which is why that tier is the one worth having on your phone.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili has a documents vault for the instant set — the six or seven files you need at a school office or a hospital desk. Files in it are stored <strong>on your device only</strong>: never uploaded to our servers, not part of any backup we hold. They open with no signal.</p>
+<p>It is not a filing cabinet and it is not a backup. The originals still belong in the safe. The vault is the part you carry.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
 ];
 
 /**
