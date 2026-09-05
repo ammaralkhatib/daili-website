@@ -2,6 +2,7 @@
 
 Prompt: `claude-prompts/2026-09-05/013-content-facts-23-locales.md`
 Date: 2026-09-05
+Commit: ba5d6ef
 
 ## Result
 
