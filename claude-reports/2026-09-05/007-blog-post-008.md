@@ -1,6 +1,6 @@
 # Post 8 — When the School Calls: The 6 Documents to Keep on Your Phone
 
-Live at `/blog/documents-to-keep-on-your-phone/`. Commit `PENDING`. Two files,
+Live at `/blog/documents-to-keep-on-your-phone/`. Commit `48f384c`. Two files,
 exactly as the recipe describes: the body fragment and one `BLOG_POSTS` entry.
 **Nothing else was touched** — no `build.mjs`, no `style.css`, no guards, and no
 edit to any already-published post this time. Fifth post in the `documents`
