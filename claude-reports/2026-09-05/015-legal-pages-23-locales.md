@@ -1,7 +1,7 @@
 # 015 — legal pages: corrections, the web app, and 23 languages
 
 Prompt: `claude-prompts/2026-09-05/015-legal-pages-23-locales.md`
-Commit: `PENDING`
+Commit: `0cea166`
 
 Prerequisite checked first: 014 `7fbf72d` is on `main`. Nothing was blocked.
 
