@@ -594,6 +594,43 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
     },
   },
+  {
+    slug: 'medical-consent-grandparents-babysitting',
+    cluster: 'documents',
+    title: 'Medical Consent for Grandparents Babysitting: What You Need',
+    description: 'What a carer can and cannot authorise, what a consent letter should say, and where to keep it so it is there at the hospital desk. With a template.',
+    h1: 'Medical Consent for Grandparents Babysitting: What You Actually Need',
+    published: '2026-09-12',
+    updated: '2026-09-12',
+    body: 'medical-consent-grandparents-babysitting.en.html',
+    image: '/assets/img/blog/medical-consent-grandparents-babysitting.webp',
+    imageAlt: 'A hand signing printed documents with a pen on a dark wooden table',
+    imageWidth: 1200,
+    imageHeight: 800,
+    // No `itemList` here, and deliberately no HowTo anywhere: a legal-adjacent
+    // document is not a set of steps, and marking one up as a procedure claims
+    // more for it than the post is willing to say. Article + FAQPage only.
+    faq: [
+      {
+        q: 'Is a consent letter legally binding?',
+        a: 'That depends on the country, and often it is better described as evidence of your wishes than as a binding instrument. Its practical value — making a clinic\'s own policy easy to apply and removing a delay at the desk — does not depend on that distinction.',
+      },
+      {
+        q: 'Do grandparents need one for a single evening?',
+        a: 'No. For a few hours nearby, contact numbers, allergies and medication are enough. The letter is for overnight stays and weekends, where a decision might have to be made without you on the phone.',
+      },
+      {
+        q: 'Does a hospital have to honour it?',
+        a: 'Not automatically. Hospitals apply their own policies and their own clinical judgement, and in an emergency they treat regardless. The letter makes the non-urgent situations easier, which is most of them.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Write it once, then keep the signed copy in daili's documents vault with the insurance card and the vaccination record. It is on your phone when a clinic asks, and you can send it in seconds.</p>
+<p>Vault files are stored <strong>on your device only</strong> — never uploaded to our servers and not part of any backup we hold.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
 ];
 
 /**
