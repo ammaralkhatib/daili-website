@@ -1,6 +1,6 @@
 # Post 7 — Nobody in My Family Uses the Calendar App
 
-Live at `/blog/nobody-uses-the-family-calendar-app/`. Commit `PENDING`. Two new
+Live at `/blog/nobody-uses-the-family-calendar-app/`. Commit `36cc4c4`. Two new
 files as the recipe describes (body fragment + one `BLOG_POSTS` entry), **plus
 one deliberate edit to post 4**, which the prompt asked for and which is written
 up in its own section below. Second post in the `adoption` cluster.
