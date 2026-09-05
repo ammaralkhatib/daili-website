@@ -1,6 +1,7 @@
 # Redesign 1/5 — fonts, tokens, header, language chip, footer
 
 Prompt: `claude-prompts/2026-09-05/011-redesign-foundation.md`.
+Commit `4d82f80`.
 Build clean: `content OK · 23 locale(s) · 160 keys each` → `built 66 pages` →
 `build OK · 66 pages · 52 in hreflang clusters` → `detector OK · 32 cases`.
 
