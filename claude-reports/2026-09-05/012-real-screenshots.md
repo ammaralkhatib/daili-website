@@ -1,7 +1,7 @@
 # Redesign 2/5 — real screenshots, localized per page
 
 Prompt: `claude-prompts/2026-09-05/012-real-screenshots.md`.
-Commit `<sha>`.
+Commit `9205975`.
 Build clean: `content OK · 23 locale(s) · 160 keys each` → `built 66 pages` →
 `build OK · 66 pages · 52 in hreflang clusters` → `detector OK · 32 cases`.
 
