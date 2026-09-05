@@ -1,7 +1,7 @@
 # 014 — rebuild the home page from the mock
 
 Prompt: `claude-prompts/2026-09-05/014-home-page-rebuild.md`
-Commit: _(filled in below)_
+Commit: `7fbf72d`
 
 Prerequisites checked first: 011 `4d82f80`, 012 `9205975`, 013 `ba5d6ef` are all
 on `main`. Nothing was blocked.
