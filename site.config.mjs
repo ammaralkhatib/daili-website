@@ -484,6 +484,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
     },
   },
+  {
+    slug: 'documents-to-keep-on-your-phone',
+    cluster: 'documents',
+    title: 'The 6 Documents to Keep on Your Phone for Your Kids',
+    description: 'Six documents worth having on your phone before you need them — insurance card, vaccination record, consent letter and three more. Plus three to never keep there.',
+    h1: 'When the School Calls: The 6 Documents to Keep on Your Phone',
+    published: '2026-09-09',
+    updated: '2026-09-09',
+    body: 'documents-to-keep-on-your-phone.en.html',
+    image: '/assets/img/blog/documents-to-keep-on-your-phone.webp',
+    imageAlt: 'A woman standing in a kitchen taking a phone call, one hand to her chest, looking concerned',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Is a photo accepted at a hospital?',
+        a: 'For information, almost always — a number to read, an allergy to check, a vaccination date to confirm. For proof of identity, usually not; that still needs the original. The copies on your phone are for answering questions quickly, not for proving who you are.',
+      },
+      {
+        q: 'What if my phone is locked and I am not there?',
+        a: 'Then these files do not help, and that is the point of the consent letter and the emergency contact. Most phones also have a medical ID or emergency information screen reachable from the lock screen — put the allergy line and one phone number there. It is the one thing that works without you.',
+      },
+      {
+        q: 'Should my teenager have these too?',
+        a: 'From secondary school age, yes — their own insurance card, their own allergy page, and your number. A teenager at a sports fixture forty minutes away is exactly the case this list is for, and they are the one holding a phone.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili's documents vault holds this set. Files in it are stored <strong>on your device only</strong> — never uploaded to our servers, and not part of any backup we hold. So they open in airplane mode, in a hospital basement, or abroad with data off.</p>
+<p>That also means it is not a backup. The originals still belong somewhere safe.</p>
+<p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
+    },
+  },
 ];
 
 /**
