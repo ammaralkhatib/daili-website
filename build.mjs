@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, FEATURES, TRUST_ICONS, GALLERY, COMPARE_ROWS, COMPARE_MARKS, imageSize,
+  SHOT_LOCALE,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
 } from './site.config.mjs';
 
@@ -314,12 +315,52 @@ function renderTrustPills(loc) {
       </div>`).join('\n');
 }
 
+/**
+ * Where a screenshot lives for a given locale.
+ *
+ * Screenshots are the one asset that is translated: `shots/<loc>/<name>.webp`
+ * when the file exists, `shots/en/` when it does not. Two locales fall back for
+ * two different reasons and both end up here — a locale with no capture set at
+ * all (ja, ar, …: absent from SHOT_LOCALE) and a single screen no locale has
+ * yet (shot-recipes, shot-photos, shot-documents: in shots/en/ only). Missing
+ * in both places throws, because a broken <img> is not something to discover in
+ * production.
+ *
+ * Illustrations (`ill-*`) and the logo are not localized and keep their paths.
+ * The existence check reads static/, not dist/, because this runs while dist/
+ * is still being written.
+ */
+function imgSrc(name, loc) {
+  if (!name.startsWith('shot-')) return `/assets/img/${name}.webp`;
+  const dir = loc in SHOT_LOCALE ? loc : DEFAULT_LOCALE;
+  for (const d of dir === DEFAULT_LOCALE ? [dir] : [dir, DEFAULT_LOCALE]) {
+    const url = `/assets/img/shots/${d}/${name}.webp`;
+    if (fs.existsSync(p('static', url.slice(1)))) return url;
+  }
+  throw new Error(`no screenshot '${name}' in static/assets/img/shots/${dir}/ or shots/${DEFAULT_LOCALE}/ — run tools/make-site-shots.py`);
+}
+
 /** Everything below the fold is lazy; width/height on every image so the page
  *  stops shifting layout while they load. */
-const imgTag = (name, alt, cls = '') => {
+const imgTag = (name, alt, cls, loc) => {
   const { width, height } = imageSize(name);
-  return `<img${cls ? ` class="${cls}"` : ''} src="/assets/img/${name}.webp" alt="${escapeHtml(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async">`;
+  return `<img${cls ? ` class="${cls}"` : ''} src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async">`;
 };
+
+/**
+ * The two hero phones. They are the only images the page does NOT lazy-load —
+ * they are the largest contentful paint — so they stay written out in
+ * landing.html with `fetchpriority="high"` and take only their src and their
+ * intrinsic size from here, rather than going through imgTag.
+ */
+function renderHeroShots(loc) {
+  const { width, height } = imageSize('shot-');
+  return {
+    width, height,
+    calendar: imgSrc('shot-calendar', loc),
+    home: imgSrc('shot-home', loc),
+  };
+}
 
 function renderFeatures(loc) {
   const where = `content/${loc}.json`;
@@ -329,9 +370,9 @@ function renderFeatures(loc) {
       if (!(k in c)) throw new Error(`missing key 'features.${f.key}.${k}' in ${where}`);
     }
     const alt = i % 2 === 1 ? ' alt' : '';
-    const img = imgTag(f.img, c.alt);
+    const img = imgTag(f.img, c.alt, '', loc);
     const art =
-      f.art === 'ill' ? `    <div class="art">${imgTag(f.img, c.alt, 'ill')}</div>`
+      f.art === 'ill' ? `    <div class="art">${imgTag(f.img, c.alt, 'ill', loc)}</div>`
       : f.art === 'duo' ? `    <div class="art duo">\n      <div class="phone small">${img}</div>\n    </div>`
       : `    <div class="art phone small">${img}</div>`;
     const bullets = c.bullets.length
@@ -357,7 +398,7 @@ function renderGallery(loc) {
   return GALLERY.map((name, i) => {
     const shot = name.startsWith('shot-');
     return `      <figure class="gallery-item${shot ? ' shot' : ''}">
-        ${imgTag(name, caps[i])}
+        ${imgTag(name, caps[i], '', loc)}
         <figcaption>${escapeHtml(caps[i])}</figcaption>
       </figure>`;
   }).join('\n');
@@ -681,6 +722,7 @@ function build() {
           footerLinks: renderFooterLinks(loc),
           legalBody,
           postBody,
+          heroShots: pg.id === 'landing' ? renderHeroShots(loc) : '',
           trustPills: pg.id === 'landing' ? renderTrustPills(loc) : '',
           features: pg.id === 'landing' ? renderFeatures(loc) : '',
           gallery: pg.id === 'landing' ? renderGallery(loc) : '',

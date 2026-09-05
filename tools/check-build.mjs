@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, BLOG_POSTS, BLOG_INDEX } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE } from '../site.config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -571,6 +571,32 @@ for (const f of htmlFiles) {
       }
     }
   })(DIST);
+}
+
+// --- 14. the screenshots are the reader's language --------------------------
+// The whole point of shots/<loc>/ is that /de/ shows German screenshots. That
+// is invisible in a diff and invisible in a build log — the wrong set still
+// renders a perfectly valid page — so it is asserted here from both sides:
+// a locale that HAS its own capture set must actually use it, and a locale that
+// does not must show English and nothing else. Without the second half, a typo
+// in SHOT_LOCALE that points ja at a folder of German screenshots would ship.
+//
+// shot-recipes, shot-photos and shot-documents are English everywhere (no demo
+// capture exists yet), which is why the first half asks for "at least one".
+for (const loc of LOCALES) {
+  const file = path.join(DIST, dirFor(loc).slice(1), 'index.html');
+  if (!fs.existsSync(file)) continue;            // section 1 already reported it
+  const out = rel(file);
+  const dirs = new Set([...read(file).matchAll(/\/assets\/img\/shots\/([\w-]+)\//g)].map((m) => m[1]));
+  if (!dirs.size) { fail(out, 'references no /assets/img/shots/ file — the screenshots vanished'); continue; }
+  const own = loc in SHOT_LOCALE;
+  const stray = [...dirs].filter((d) => d !== DEFAULT_LOCALE && d !== (own ? loc : null));
+  if (stray.length) {
+    fail(out, `shows screenshots from shots/${stray.join('/, shots/')}/ — a ${loc} page may only use shots/${own ? `${loc}/ or shots/` : ''}${DEFAULT_LOCALE}/`);
+  }
+  if (own && !dirs.has(loc)) {
+    fail(out, `SHOT_LOCALE maps ${loc} to '${SHOT_LOCALE[loc]}' but the page uses no shots/${loc}/ file — the set was never generated, or the resolver fell back silently`);
+  }
 }
 
 if (errors.length) {

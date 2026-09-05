@@ -26,6 +26,7 @@ one-line copy change under a 20-file diff.
 | `legal/` | Privacy, Terms and Impressum bodies. Hand-written, English + German only, deliberately outside the translation pipeline. |
 | `static/` | Copied verbatim into `dist/` — CSS, JS, images, fonts, and `.htaccess`. |
 | `static/assets/fonts/` | The two brand faces, self-hosted. See below. |
+| `static/assets/img/shots/<loc>/` | The app screenshots, one set per language. Generated, committed. See below. |
 | `tools/` | The three guards described below. |
 
 ## The guards
@@ -74,6 +75,23 @@ Never link Google Fonts back in. The CSP in `static/.htaccess` is
 `font-src 'self'`, so it would fail silently in production, and check-build
 section 13 fails it loudly here first. To add a weight or a subset, copy the
 file in and add the `@font-face` with the range from the package.
+
+## Screenshots
+
+The phone screenshots are translated like everything else: `/de/` shows German
+screens, `/ja/` shows English ones. They are generated from the store-screenshot
+pipeline's plain captures in `../store-shots/raw/<store-locale>/` by
+`python3 tools/make-site-shots.py` (Pillow, the one dependency that folder
+already has — Node's standard library has no image support and this repo still
+has no npm dependencies), which writes `static/assets/img/shots/<site-locale>/`
+at 640 px wide. **The output is committed and the build never touches
+`store-shots/`**, so a clone without the sibling folder still builds. `build.mjs`
+resolves each `shot-*` name per file: the reader's locale if that file exists,
+`shots/en/` if it does not, and an error if neither — which is what makes
+`SHOT_LOCALE` in `site.config.mjs` the only thing to edit when a language gains
+its own captures, and check-build section 14 the thing that notices when one
+silently loses them. `shot-recipes`, `shot-photos` and `shot-documents` have no
+demo-family capture yet and are English in every locale.
 
 ## Adding a language
 

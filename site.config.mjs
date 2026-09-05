@@ -748,6 +748,48 @@ export const TRUST_ICONS = [
   '<path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>',
 ];
 
+/**
+ * Which store-screenshot set each site locale shows.
+ *
+ * The screenshots come from the store pipeline in ../store-shots/raw/, whose
+ * folders are store locales (`en-US`, `pt-PT`) rather than the site's short
+ * codes, so the two have to be mapped. A site locale that is absent here has no
+ * capture of its own: build.mjs resolves it to `en`, per file.
+ *
+ * That fallback is deliberate, and it is only for screenshots. A missing
+ * *string* is still a hard error (check-content.mjs), because a silently
+ * English sentence rots unnoticed — a silently English screenshot is just a
+ * screenshot of an app the reader is about to see in English anyway.
+ *
+ * tools/make-site-shots.py reads this map out of this file, so adding a
+ * language is one line here plus a re-run of the converter.
+ */
+export const SHOT_LOCALE = {
+  en: 'en-US', de: 'de', fr: 'fr-FR', es: 'es-ES', it: 'it', nl: 'nl',
+  pt: 'pt-PT', sv: 'sv', da: 'da', nb: 'nb', pl: 'pl', cs: 'cs', fi: 'fi',
+  tr: 'tr',
+  // id, ja, ko, zh-Hans, zh-Hant, th, ru, hi, ar — no capture yet, so they
+  // resolve to en. Add the line when ../store-shots/raw/<store-locale>/ exists.
+};
+
+/**
+ * The raw store-screenshot file names and the site names they become. Also read
+ * by tools/make-site-shots.py, which is the only thing that writes shots/.
+ *
+ * shot-recipes, shot-photos and shot-documents are missing from this map on
+ * purpose: the demo family has no capture of those three screens yet, so their
+ * files live in shots/en/ only and every locale falls back to them.
+ */
+export const SHOT_SOURCES = {
+  '01-dashboard': 'shot-home',
+  '02-calendar': 'shot-calendar',
+  '03-shopping': 'shot-shopping',
+  '04-todos': 'shot-todos',
+  '05-mealplan': 'shot-mealplan',
+  '06-birthdays': 'shot-birthdays',
+  '07-family': 'shot-family',
+};
+
 /** Intrinsic pixel sizes, measured from the files. Used for width/height so the
  *  page stops shifting layout on every load. */
 export const IMAGE_SIZES = {
