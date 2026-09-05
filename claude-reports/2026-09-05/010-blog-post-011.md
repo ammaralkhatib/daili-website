@@ -1,6 +1,6 @@
 # Post 11 — Medical Consent for Grandparents Babysitting
 
-Live at `/blog/medical-consent-grandparents-babysitting/`. Fourth post in the
+Live at `/blog/medical-consent-grandparents-babysitting/`. Commit `b6518b6`. Fourth post in the
 `documents` cluster. Two files as the recipe describes, **plus post 6's ⏳
 backlink that this publish unblocks**, and **two CSS rules** — post 11 is the
 first post on the blog to carry a `<blockquote>`, and there was no rule for one.
