@@ -1,5 +1,5 @@
 <h1>Datenschutzerklärung</h1>
-<p class="updated">Daili-App und daili.app · Stand: 16. August 2026</p>
+<p class="updated">Daili-App, app.daili.app und daili.app · Stand: <time datetime="2026-09-05">5. September 2026</time></p>
 
 <p>Daili ist ein privater Familienplaner. Wir haben ihn so gebaut, dass die Pläne eurer Familie eurer Familie gehören: <strong>keine Werbung, kein Tracking, kein Datenverkauf.</strong> Diese Seite erklärt in einfacher Sprache, welche Daten die App braucht, wozu — und welche Rechte du hast.</p>
 
@@ -11,7 +11,13 @@ E-Mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 <h2>2. Diese Website</h2>
 <p>daili.app ist eine statische Website. Sie setzt <strong>keine Cookies</strong>, nutzt <strong>keine Analyse-Tools</strong> und lädt <strong>keine fremden Schriften oder Skripte</strong>. Unser Hoster speichert automatisch kurzlebige Server-Logs (IP-Adresse, Zeitpunkt, aufgerufene Seite) zur Absicherung des Betriebs; für etwas anderes verwenden wir sie nicht. Rechtsgrundlage: berechtigtes Interesse an einer sicheren Website (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
-<h2>3. Daten, die die App verarbeitet</h2>
+<h2>3. Die Web-App (app.daili.app)</h2>
+<p>Daili läuft auch im Browser unter app.daili.app. Die Web-App setzt <strong>keine Cookies</strong> und nutzt <strong>keine Analyse-Tools</strong>. Die Schriften kommen von unserem eigenen Server, die Web-App lädt beim Start also <strong>keine fremden Schriften oder Skripte</strong>.</p>
+<p>Statt eines Cookies legt dein Browser deinen Anmelde-Token in seinem eigenen <strong>lokalen Speicher</strong> ab. Dieser Token weist unserem Server nach, dass eine Anfrage von dir kommt; beim Abmelden wird er gelöscht. Daneben speichert der Browser einige Anzeige-Einstellungen, damit die App beim nächsten Mal gleich aussieht: Sprache und Farbschema, die zuletzt genutzte Kalenderansicht, welche Kacheln auf der Startseite sichtbar sind, ob die Seitenleiste eingeklappt ist, und deine Standard-Erinnerungszeit. Diese Einstellungen bleiben auf deinem Gerät, werden nie an uns gesendet und bleiben, bis du die Website-Daten deines Browsers löschst. Alles, was hier liegt, ist entweder für die Anmeldung unbedingt erforderlich oder eine Einstellung, die du selbst gewählt hast — deshalb gibt es kein Cookie-Banner.</p>
+<p><strong>Anmeldung mit Google oder Apple (optional).</strong> Nur wenn du Social-Login wählst, öffnet sich ein Pop-up, das über Firebase Authentication läuft — genau wie in der Telefon-App. Meldest du dich mit E-Mail-Adresse und Passwort an, läuft überhaupt kein Code von Google oder Apple.</p>
+<p><strong>Browser-Benachrichtigungen (optional).</strong> Nur wenn du sie einschaltest und dein Browser die Erlaubnis erteilt, registriert die Web-App einen Service Worker und holt sich einen Geräte-Token von Firebase Cloud Messaging. Dieser Token und seine Gerätenummer liegen dann im lokalen Speicher, und eine Kopie deines Anmelde-Tokens liegt in der Browser-Datenbank (IndexedDB), damit die Schaltflächen einer Benachrichtigung auch dann funktionieren, wenn kein Daili-Tab offen ist. Schaltest du Benachrichtigungen ab oder meldest du dich ab, wird das alles entfernt.</p>
+
+<h2>4. Daten, die die App verarbeitet</h2>
 <p><strong>Kontodaten.</strong> Bei der Registrierung speichern wir Anzeigename, E-Mail-Adresse und Passwort (nur als sicherer Hash — wir können es nicht lesen). Optional: Profilbild und Spracheinstellung. Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
 <p><strong>Anmeldung mit Google oder Apple (optional).</strong> Bei Social-Login läuft die Anmeldung über Firebase Authentication (Google Ireland Ltd.). Wir erhalten Name, E-Mail-Adresse (bei Apple auf Wunsch eine Weiterleitungs-Adresse) und eine technische Nutzer-ID. Dein Google- oder Apple-Passwort sehen wir nie.</p>
 <p><strong>Familieninhalte.</strong> Alles, was eure Familie in der App anlegt, liegt auf unserem Server, damit eure Familienmitglieder es sehen können: Termine und Erinnerungen, Einkaufs- und To-do-Listen, Rezepte und Essenspläne, Geburtstage und Feste, Adressen abonnierter externer Kalender sowie Mitglieder-Profile — auch verwaltete Profile für Kinder (Name, optional Geburtstag, optional Bild), die ein Elternteil anlegt und kontrolliert. Diese Inhalte sehen nur Mitglieder eurer Familie — nie andere Nutzer, nie die Öffentlichkeit.</p>
@@ -22,16 +28,16 @@ E-Mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 <p><strong>E-Mails.</strong> Konto-E-Mails (Bestätigung, Passwort-Zurücksetzen, Einladungen) versenden wir über Brevo, einen EU-Anbieter. Newsletter oder Werbe-E-Mails gibt es nicht.</p>
 <p><strong>Was die App <em>nicht</em> sammelt.</strong> Kein Standort. Keine Werbe-ID. Keine Analyse- oder Tracking-Tools in der App. Dein Adressbuch und der Kalender deines Telefons bleiben auf deinem Gerät.</p>
 
-<h2>4. Wo deine Daten liegen</h2>
+<h2>5. Wo deine Daten liegen</h2>
 <p>Der Daili-Server wird von der Host Europe GmbH in der Europäischen Union (Deutschland) betrieben. Firebase Authentication und Firebase Cloud Messaging sind Dienste von Google; Google kann begrenzte technische Daten (etwa Geräte-Tokens) unter den EU-Standardvertragsklauseln auch außerhalb der EU verarbeiten.</p>
 
-<h2>5. Speicherdauer</h2>
-<p>Deine Daten bleiben, solange dein Konto besteht. Löschst du dein Konto, wird es sofort deaktiviert, <strong>30 Tage</strong> aufbewahrt (falls du es dir anders überlegst — per E-Mail-Link wiederherstellbar) und danach <strong>endgültig gelöscht</strong>. Deine Daten kannst du jederzeit in der App als Datei exportieren (Einstellungen → Datenexport).</p>
+<h2>6. Speicherdauer</h2>
+<p>Deine Daten bleiben, solange dein Konto besteht. Löschst du dein Konto, wird es sofort deaktiviert, <strong>30 Tage</strong> aufbewahrt (falls du es dir anders überlegst — per E-Mail-Link wiederherstellbar) und danach <strong>endgültig gelöscht</strong>. Deine Daten kannst du jederzeit als Datei exportieren (Einstellungen → Profil → Meine Daten herunterladen).</p>
 
-<h2>6. Kinder</h2>
+<h2>7. Kinder</h2>
 <p>Daili ist für Familien gemacht. Konten für Kinder legt ein Elternteil bzw. Erziehungsberechtigter an und verwaltet sie: entweder als verwaltetes Profil ohne Login oder über eine persönliche Einladung durch einen Familien-Admin. Eltern können das Profil eines Kindes samt Daten jederzeit entfernen.</p>
 
-<h2>7. Deine Rechte</h2>
+<h2>8. Deine Rechte</h2>
 <ul>
 <li>Auskunft über deine gespeicherten Daten (der In-App-Export deckt das ab)</li>
 <li>Berichtigung falscher Daten, Löschung, Einschränkung der Verarbeitung</li>
@@ -40,5 +46,8 @@ E-Mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 </ul>
 <p>Schreib einfach an <a href="mailto:support@daili.app">support@daili.app</a>. Außerdem hast du das Recht auf Beschwerde bei der österreichischen Datenschutzbehörde (dsb.gv.at).</p>
 
-<h2>8. Änderungen</h2>
+<h2>9. Änderungen</h2>
 <p>Wenn Daili neue Funktionen bekommt, die den Umgang mit Daten ändern, aktualisieren wir diese Seite und passen das Datum oben an.</p>
+
+<h2>10. Sprache</h2>
+<p>Diese Erklärung ist auf Englisch und Deutsch verfasst. Übersetzungen in andere Sprachen dienen der Verständlichkeit; bei Abweichungen gilt die englische Fassung.</p>

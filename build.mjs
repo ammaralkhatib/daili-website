@@ -277,8 +277,15 @@ function renderFooterLinks(loc) {
   const whatsNew = loc === 'de' ? '/neuigkeiten.html' : '/whats-new.html';
   const whatsNewLang = loc === 'de' ? 'de' : 'en';
   const whatsNewLabel = loc === 'de' ? 'Neuigkeiten' : "What's new";
-  const privacy = loc === 'de' ? '/datenschutz.html' : '/privacy.html';
-  const terms = loc === 'de' ? '/nutzungsbedingungen.html' : '/terms.html';
+  // Privacy and Terms exist in all 23 locales now, so the footer resolves them
+  // through the page objects rather than the old two-arm ternary — a Japanese
+  // footer that linked to the English policy was correct while only en+de
+  // existed and is simply wrong now that /ja/privacy.html is a real page.
+  const legalHref = (id) => (pageExistsIn(pageById[id], loc)
+    ? urlFor(pageById[id], loc)
+    : urlFor(pageById[id], DEFAULT_LOCALE));
+  const privacy = legalHref('privacy');
+  const terms = legalHref('terms');
   const parts = [
     // Absolute, because the web app is a different host. Same tab and the same
     // account, so it is not marked up as leaving the site — only rel=noopener,

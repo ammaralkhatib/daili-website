@@ -6,7 +6,7 @@
   "scripts": {
     "check": "node tools/check-content.mjs",
     "test": "node tools/test-detector.mjs",
-    "build": "node tools/check-content.mjs && node build.mjs && node tools/check-build.mjs && node tools/test-detector.mjs",
+    "build": "node tools/check-content.mjs && node tools/check-legal.mjs && node build.mjs && node tools/check-build.mjs && node tools/test-detector.mjs",
     "serve": "python3 -m http.server 8080 --directory dist",
     "deploy": "./deploy.sh"
   }

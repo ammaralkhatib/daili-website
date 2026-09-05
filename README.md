@@ -23,7 +23,7 @@ one-line copy change under a 20-file diff.
 | `site.config.mjs` | Locales, endonyms, RTL set, store URLs, page manifest, feature/gallery/comparison structure. **The one file you edit to add a language.** |
 | `content/<loc>.json` | Every translatable string. `en.json` is the source of truth and carries the `@`-descriptions. |
 | `templates/` | The page shells. `{{ }}` escapes, `{{{ }}}` does not, `{{# }}` loops, `{{? }}` conditionals, `{{> }}` includes. |
-| `legal/` | Privacy, Terms and Impressum bodies. Hand-written, English + German only, deliberately outside the translation pipeline. |
+| `legal/` | Privacy, Terms and Impressum bodies. Privacy and Terms exist in all 23 locales (`privacy.<loc>.html`, `terms.<loc>.html`); English is the binding version and every translation says so. German keeps its own filenames (`datenschutz.de.html`, `nutzungsbedingungen.de.html`) because it is an authoritative version, not a translation. Impressum stays German-only. |
 | `static/` | Copied verbatim into `dist/` — CSS, JS, images, fonts, and `.htaccess`. |
 | `static/assets/fonts/` | The two brand faces, self-hosted. See below. |
 | `static/assets/img/shots/<loc>/` | The app screenshots, one set per language. Generated, committed. See below. |
@@ -124,7 +124,9 @@ three or more it becomes a `<details>` disclosure that works with no JavaScript.
   `curl -sSI https://daili.app/assets/style.*.css | grep -i cache-control`.
 - **These three URLs are printed in live store listings** and must never move:
   `/privacy.html`, `/datenschutz.html`, `/support.html`. They are real files, not
-  redirects, and `deploy.sh` asserts all three return 200.
+  redirects, and `deploy.sh` asserts all three return 200. `/terms.html` and
+  `/nutzungsbedingungen.html` are flat for the same reason. Every other locale's
+  legal pages live under its directory (`/fr/privacy.html`, `/ar/terms.html`).
 - **English is served from `/`, not `/en/`** — that is where the existing search
   ranking lives. `/en/` 301s to `/`.
 - **Chinese directories are lowercase** (`/zh-hans/`) while the `hreflang`
@@ -134,6 +136,14 @@ three or more it becomes a `<details>` disclosure that works with no JavaScript.
   click**, never on auto-detection. That distinction is what keeps the site
   inside the "strictly necessary" exemption and free of a consent banner.
   `test-detector.mjs` enforces it.
+- **A legal translation is checked structurally, not linguistically.**
+  `tools/check-legal.mjs` runs before the build and fails if any of the 46 legal
+  bodies has a different `<h2>` count from English, is missing the binding-language
+  note, or carries a different date. The date is compared through the
+  `<time datetime="…">` inside the `.updated` line — the visible date is localised,
+  that attribute is the one value that is identical in all 23. A translation with a
+  section quietly missing does not look broken; it looks like a different policy,
+  which is exactly what this guard exists to catch.
 
 ## Known open items
 
@@ -141,7 +151,8 @@ three or more it becomes a `<details>` disclosure that works with no JavaScript.
   2026-08-17 that App Store ID returned 404 in every storefront and the iTunes
   lookup API returned no results. The build prints a warning. Change the one line
   and rebuild when the real listing exists.
-- `impressum.html` links to the EU ODR platform, which ceased operating on
-  20 July 2025. The reference is obsolete and should be removed — flagged rather
-  than silently edited, because it is a legal page.
+- **Whether the Impressum has to name the business identity** (Gewerbe, WKO
+  membership, supervising authority per § 5 ECG) is undecided. It is a legal
+  question about the operator, not something the site can settle; the page ships
+  without those lines until Ammar decides.
 - Native review of the translations has not happened.

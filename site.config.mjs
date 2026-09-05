@@ -115,6 +115,22 @@ export const contact = {
  * `cluster` groups pages that are translations of each other for hreflang.
  * Pages in different clusters must never reference each other as alternates.
  */
+/**
+ * The body map for a legal page that exists in all 23 locales.
+ *
+ * `build.mjs` resolves a page body as `pg.body[loc]`, so a 23-entry object is
+ * all a translated legal page needs — no build change, and a missing file
+ * throws at read time rather than rendering an empty page.
+ *
+ * German is the one exception the map has to spell out: `datenschutz.de.html`
+ * and `nutzungsbedingungen.de.html` are AUTHORITATIVE versions with their own
+ * filenames, not `privacy.de.html` translations, and renaming them would move
+ * nothing on disk but would quietly lose that distinction.
+ */
+const LEGAL_BODIES = (id, deFile) => Object.fromEntries(
+  LOCALES.map((loc) => [loc, loc === 'de' ? deFile : `${id}.${loc}.html`]),
+);
+
 export const PAGES = [
   {
     id: 'landing',
@@ -132,22 +148,32 @@ export const PAGES = [
     out: (loc) => (loc === DEFAULT_LOCALE ? 'support.html' : `${loc.toLowerCase()}/support.html`),
     priority: () => '0.5',
   },
+  // Privacy and Terms are the only legal pages that exist in every locale. The
+  // English text is the binding one and every other language says so in its
+  // first paragraph (`p.translated`, written into the body files, checked by
+  // tools/check-legal.mjs) — which is what makes shipping 23 translations of a
+  // legal document defensible at all.
+  //
+  // The two English and the two German URLs are FLAT and must never move: they
+  // are printed in the live store listings. Everything else lives under its
+  // locale directory. Same cluster names as before, so the hreflang set grows
+  // from 2 members to 23 with no other change.
   {
     id: 'privacy',
     template: 'legal.html',
-    locales: ['en', 'de'],
+    locales: 'all',
     cluster: 'privacy',
-    body: { en: 'privacy.en.html', de: 'datenschutz.de.html' },
-    out: (loc) => (loc === 'en' ? 'privacy.html' : 'datenschutz.html'),
+    body: LEGAL_BODIES('privacy', 'datenschutz.de.html'),
+    out: (loc) => (loc === 'en' ? 'privacy.html' : loc === 'de' ? 'datenschutz.html' : `${loc.toLowerCase()}/privacy.html`),
     priority: () => '0.3',
   },
   {
     id: 'terms',
     template: 'legal.html',
-    locales: ['en', 'de'],
+    locales: 'all',
     cluster: 'terms',
-    body: { en: 'terms.en.html', de: 'nutzungsbedingungen.de.html' },
-    out: (loc) => (loc === 'en' ? 'terms.html' : 'nutzungsbedingungen.html'),
+    body: LEGAL_BODIES('terms', 'nutzungsbedingungen.de.html'),
+    out: (loc) => (loc === 'en' ? 'terms.html' : loc === 'de' ? 'nutzungsbedingungen.html' : `${loc.toLowerCase()}/terms.html`),
     priority: () => '0.3',
   },
   {
