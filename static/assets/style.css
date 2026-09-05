@@ -1,30 +1,82 @@
 /* Daili — daili.app
  *
- * Two conventions run through this file, both load-bearing:
+ * Three conventions run through this file, all load-bearing:
  *
  * 1. LOGICAL PROPERTIES, not physical ones. margin-inline-start, not
  *    margin-left. That is what lets the Arabic build mirror itself from a
  *    single stylesheet instead of a generated second copy that drifts.
  *    Transforms have no logical form, so their direction lives in the
  *    --rot-* / --dir custom properties below and is flipped in one place.
+ *    The redesign mock is written with physical right:/left:; everything
+ *    lifted from it is converted on the way in.
  *
  * 2. EVERY COLOUR IS A TOKEN. Nothing below :root hard-codes a colour, which
- *    is what makes the dark-mode block at the end ~20 lines instead of a
+ *    is what makes the dark-mode block near the end ~20 lines instead of a
  *    second stylesheet.
+ *
+ * 3. THE FONTS ARE OURS. Both families are served from /assets/fonts/, never
+ *    from Google. See the block immediately below.
  */
 
+/* ---------- brand fonts ----------------------------------------------------
+ * Sofia Sans Condensed (display) and Figtree (text): the same two faces the
+ * app and the web app use. The woff2 subsets are copied verbatim out of the
+ * @fontsource packages (figtree 5.3.0, sofia-sans-condensed 5.3.0) into
+ * static/assets/fonts/; static/assets/fonts/LICENSE.txt carries both SIL OFL
+ * texts. Self-hosted rather than linked from Google Fonts so that the CSP can
+ * stay `font-src 'self'` and no reader's browser is made to announce itself to
+ * a third party in order to read this page — the same reason this site has no
+ * analytics and no cookie banner.
+ *
+ * Every face keeps the unicode-range of its subset, copied verbatim from the
+ * package's own CSS, so a Russian page fetches the Cyrillic cut of the display
+ * face and nothing else. Neither family has Arabic, Thai, Devanagari or CJK
+ * glyphs, so /ar/, /th/, /hi/, /ja/, /ko/ and the two Chinese builds match no
+ * range, download no font at all, and fall through to the system stack at the
+ * end of --display / --sans. That is intended: a system font in those scripts
+ * beats a Latin display face that cannot render them.
+ * ------------------------------------------------------------------------- */
+
+/* Figtree — body text */
+@font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/figtree-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Figtree;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/figtree-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Figtree;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/figtree-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Figtree;font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/figtree-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Figtree;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/figtree-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Figtree;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/figtree-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+/* Sofia Sans Condensed — headlines, the wordmark, the language codes.
+   500/600 are never asked for; 700 and 800 are the only weights the design
+   uses, in four scripts (Latin runs the whole site, Cyrillic is /ru/, Greek is
+   here because the family ships it and a stray ° or Ω in any locale would
+   otherwise fall out of the face mid-word). */
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-cyrillic-700-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-greek-700-normal.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-latin-ext-800-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-cyrillic-800-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Sofia Sans Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/sofia-sans-condensed-greek-800-normal.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+
 :root{
-  --paper:#FCFAF4; --card:#FFFFFF; --cream:#F4EDDE;
-  --forest:#04613C; --forest-deep:#0B4A30; --ink:#0F1D16;
-  --mint:#DCEFDF; --mint-strong:#A9D9B8;
-  --muted:#5B6B62; --line:#E7E2D5;
-  --body:#2A3830;
-  --frame:#0F1D16;                 /* the phone bezel — must stay dark in dark mode */
-  --trust-a:#EFF6EF; --trust-b:#FAF5E9;
-  --shadow:15,29,22;
-  --radius:22px;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* The redesign palette, lifted from claude-prompts/2026-09-05/redesign-mock.html */
+  --paper:#FBF9F2; --card:#FFFFFF; --ink:#10201A; --body:#2B3A32; --muted:#5E6D64;
+  --forest:#04613C; --forest-deep:#0B4A30; --on-forest:#FFFFFF;
+  --mint:#DCEFDF; --mint-strong:#A9D9B8; --mint-soft:#EEF6EF;
+  --amber:#E9A93B; --amber-soft:#FBF0D6;
+  --line:#E4DFD1;
+  --frame:#10201A;                 /* the phone bezel — must stay dark in dark mode */
+  --shadow:16,29,22;
+  --display:"Sofia Sans Condensed","Arial Narrow",Impact,sans-serif;
+  --sans:Figtree,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --ease:cubic-bezier(.22,.8,.3,1);
+  color-scheme:light;
+
+  /* Legacy tokens. Only the landing-page sections that prompt 014 rebuilds
+     still read these; they are deleted with those rules, not before, or the
+     current home page renders unstyled between here and there. */
+  --cream:#F4EDDE; --trust-a:#EFF6EF; --trust-b:#FAF5E9; --radius:22px;
 
   /* Direction-dependent geometry. Transforms cannot be expressed logically, so
      the sign lives here and [dir="rtl"] flips it exactly once. */
@@ -41,12 +93,26 @@
 
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* clip, not hidden: `overflow-x:hidden` on an ancestor silently kills
+   position:sticky, which is what holds the header up. */
+html,body{overflow-x:clip}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 /* height:auto is required now that every <img> carries width/height attributes:
    without it the attribute height wins over the CSS width and images squash. */
 img{max-width:100%;height:auto;display:block}
 a{color:var(--forest)}
-.wrap{max-width:1060px;margin:0 auto;padding-inline:20px}
+p{color:var(--body)}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+h3{font-weight:700}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+
+/* 1.02 is the mock's leading, and it is right for display type at 3rem and up.
+   Every heading the redesign has not reached yet is 1.1–2rem, where two lines
+   that tight touch — and most of these headings wrap in German. 014 rebuilds
+   the landing page against the mock and takes the landing selectors here with
+   it; the .legal arm stays. */
+.legal :is(h1,h2,h3),section.feature .txt h2,.trust h2,section.steps h2,
+section.gallery h2,section.compare h2,section.pricing h2,.faq h2{line-height:1.2}
 
 /* Arabic and Thai need more leading than Latin at the same size. */
 [lang="ar"] body,[lang="th"] body,body[lang="ar"],body[lang="th"]{line-height:1.85}
@@ -60,45 +126,97 @@ h1,h2,h3,p,li,summary,figcaption{overflow-wrap:anywhere}
 
 /* Visible focus. There was none at all before, which made the whole site
    unusable by keyboard. :focus-visible so it never shows on a mouse click. */
-:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:6px}
 
-.skip{position:absolute;inset-inline-start:-9999px;top:0;z-index:100;background:var(--forest);color:#fff;padding:10px 18px;border-radius:0 0 12px 0;text-decoration:none}
+.skip{position:absolute;inset-inline-start:-9999px;top:0;z-index:100;background:var(--forest);color:var(--on-forest);padding:10px 18px;border-radius:0 0 12px 0;text-decoration:none}
 .skip:focus{inset-inline-start:0}
 
-/* ---------- header ---------- */
-header{position:sticky;top:0;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;z-index:20;transition:border-color .3s,box-shadow .3s}
+/* ---------- header ----------------------------------------------------------
+ * Layout note, because the DOM order and the visual order differ on purpose.
+ *
+ * The design wants, left to right: brand · the five links · the language chip ·
+ * Download. On a phone it wants: brand · the language chip · a burger, with the
+ * links AND Download dropping into a panel the burger opens.
+ *
+ * So the chip cannot live inside the panel, and Download must. .menu is that
+ * panel — and on desktop it is `display:contents`, which dissolves it: .links,
+ * .langpicker and .dl all become direct flex items of .nav and `order` puts the
+ * chip between the links and the pill. Below 860px .menu becomes a real box
+ * again and the chip, which was never inside it, simply stays in the header row.
+ *
+ * One DOM, one language picker, at every width — the mock reaches the same
+ * result by shipping a second, abbreviated picker for phones.
+ * ------------------------------------------------------------------------- */
+header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
 header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(--shadow),.06)}
-.nav{display:flex;align-items:center;gap:18px;padding:14px 0;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
-.brand img{width:38px;height:38px;border-radius:11px;transition:transform .5s var(--ease)}
+.nav{display:flex;align-items:center;gap:22px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:0}
+.brand img{width:36px;height:36px;border-radius:10px;transition:transform .5s var(--ease)}
 .brand:hover img{transform:rotate(var(--rot-brand-hover)) scale(1.06)}
-.nav .links{margin-inline-start:auto;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px 18px;align-items:center}
-.nav .links>a{text-decoration:none;color:var(--ink);font-size:.95rem;position:relative}
-.nav .links>a::after{content:"";position:absolute;inset-inline-start:0;bottom:-4px;height:2px;width:0;background:var(--forest);border-radius:2px;transition:width .3s var(--ease)}
-.nav .links>a:hover::after{width:100%}
-.nav .links>a:hover{color:var(--forest)}
-.lang{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;background:var(--card);transition:background .3s,border-color .3s}
-.lang:hover{background:var(--mint);border-color:var(--mint-strong)}
-.nav .links>a.lang::after{display:none}
 
-/* ---------- language picker (used once there are more than two locales) ---- */
+.menu{display:contents}
+.links{order:1;margin-inline-start:auto;display:flex;align-items:center;gap:6px}
+.links a.nl{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
+.links a.nl:hover{background:var(--mint-soft);color:var(--forest)}
+.links a.nl-web{color:var(--forest);font-weight:600}
+.langpicker{order:2;margin-inline-start:4px}
+.dl{order:3}
+.burger{order:4}
+
+/* The two-locale pill. Dead at 23 locales, kept because LOCALES is a list
+   anyone may shorten. */
+.lang{border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.85rem;background:var(--card);text-decoration:none;color:var(--ink);transition:background .3s,border-color .3s}
+.lang:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+
+/* ---------- language picker ---------- */
 .langpicker{position:relative}
-.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;background:var(--card);transition:background .3s,border-color .3s}
+.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:999px;padding-block:6px;padding-inline:9px 10px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:var(--card);color:var(--ink);transition:background .3s,border-color .3s}
 .langpicker summary::-webkit-details-marker{display:none}
-.langpicker summary:hover{background:var(--mint);border-color:var(--mint-strong)}
-.langpicker summary svg{width:15px;height:15px;stroke:var(--muted);flex:none}
-.langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 20px 50px rgba(var(--shadow),.16);z-index:30;min-width:min(560px,86vw)}
-.langpicker-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 14px}
-.langpicker-menu a{display:block;padding:6px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.langpicker-menu a:hover{background:var(--mint)}
+.langpicker summary:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+.langpicker summary svg{width:15px;height:15px;stroke:var(--muted);fill:none;stroke-width:1.8;flex:none}
+.langpicker summary .chev{width:10px;height:10px;stroke:var(--muted);opacity:.8}
+.langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 22px 48px rgba(var(--shadow),.16);z-index:40;width:min(560px,88vw)}
+.langpicker-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 10px}
+.langpicker-menu a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap;overflow:hidden}
+/* The code is set in the display face, which is condensed: 2.6em of it holds
+   every two-letter code at this size without the endonyms losing their column. */
+.langpicker-menu a small{font-family:var(--display);font-weight:700;letter-spacing:.06em;font-size:.72rem;color:var(--muted);width:2.6em;flex:none}
+.langpicker-menu a:hover{background:var(--mint-soft)}
 .langpicker-menu a[aria-current]{background:var(--mint);font-weight:600}
-.langpicker-menu a[aria-current]::after{content:" ✓";color:var(--forest)}
+
+/* ---------- burger ---------- */
+/* display:none until 860px, and `align-items` is set here rather than in the
+   media query so the flex centring survives the display flip. */
+.burger{display:none;align-items:center;justify-content:center;margin-inline-start:6px;width:40px;height:40px;flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;cursor:pointer;transition:background .3s,border-color .3s}
+.burger:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+.burger svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
+
+@media(max-width:860px){
+  .nav{gap:10px}
+  .menu{display:none}
+  /* .links carries the auto margin that pushes everything right, and .links is
+     inside the panel — so on a phone the chip takes it over. */
+  .langpicker{margin-inline-start:auto}
+  .burger{display:inline-flex}
+  /* Absolute inside the sticky <header>, so the panel is full-bleed, needs no
+     hard-coded header height, and overlays the page instead of shoving it
+     down. In RTL `inset-inline` covers both edges, so nothing to mirror. */
+  body.menu-open .menu{display:flex;flex-direction:column;align-items:stretch;
+    position:absolute;top:100%;inset-inline:0;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:14px 22px 22px;gap:10px;
+    box-shadow:0 30px 50px rgba(var(--shadow),.14)}
+  body.menu-open .links{flex-direction:column;align-items:stretch;gap:4px;margin-inline-start:0}
+  body.menu-open .links a.nl{font-size:1.05rem;padding:12px 10px}
+  body.menu-open .dl{align-self:start}
+  .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
+}
 
 /* download dropdown */
 .dl{position:relative}
-.dl-btn{display:inline-block;background:var(--forest);color:#fff;border:none;border-radius:999px;padding:9px 20px;font-family:var(--sans);font-size:.92rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .3s,transform .3s var(--ease),box-shadow .3s}
-.dl-btn:hover{background:var(--forest-deep);transform:translateY(-2px);box-shadow:0 10px 22px rgba(4,97,60,.25);color:#fff}
-.dl-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 20px 50px rgba(var(--shadow),.16);min-width:250px;display:none;flex-direction:column;gap:10px;z-index:30}
+.dl-btn{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:var(--on-forest);border:1.5px solid transparent;border-radius:999px;padding:11px 22px;font-family:var(--sans);font-size:.98rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .25s,transform .25s var(--ease),box-shadow .25s}
+.dl-btn:hover{background:var(--forest-deep);transform:translateY(-1px);box-shadow:0 10px 24px rgba(4,97,60,.22);color:var(--on-forest)}
+.dl-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 22px 48px rgba(var(--shadow),.16);min-width:250px;display:none;flex-direction:column;gap:10px;z-index:40}
 .dl.open .dl-menu{display:flex;animation:menuIn .3s var(--ease)}
 @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .dl-menu .store-badge{width:100%;justify-content:start}
@@ -331,10 +449,14 @@ section.feature.alt .art{order:-1}
 .sticky-close{background:none;border:none;font-size:1.5rem;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px}
 
 /* ---------- footer ---------- */
-footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0 42px;font-size:.9rem;color:var(--muted)}
-footer .cols{display:flex;gap:30px;flex-wrap:wrap;justify-content:space-between}
-footer a{color:var(--muted);transition:color .25s}
-footer a:hover{color:var(--forest)}
+footer{border-top:1px solid var(--line);margin-top:90px;padding:38px 0 44px;font-size:.9rem;color:var(--muted)}
+footer .cols{display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+/* The links are a row with its own gaps rather than a sentence with separators:
+   at 390px the row wraps to three lines and a trailing "·" at the end of a line
+   reads as a typo. */
+footer .flinks{display:flex;gap:6px 18px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none;transition:color .25s}
+footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- legal pages ---------- */
 .legal{max-width:760px;margin:0 auto;padding:48px 20px}
@@ -366,9 +488,8 @@ footer a:hover{color:var(--forest)}
   body{padding-bottom:76px}
 }
 @media(max-width:560px){
-  .nav{gap:12px}
-  .nav .links{gap:12px}
-  .langpicker-menu ul{grid-template-columns:1fr}
+  /* The picker stays two columns all the way down — one column turns 23 rows
+     into a menu taller than the phone. */
   /* The two tilted phones at -38px overlap are cramped below ~400px. */
   .hp{width:min(268px,46vw)}
   .hp.l{margin-inline-end:-18px;transform:rotate(var(--rot-hp-l)) translateY(26px)}
@@ -381,17 +502,19 @@ footer a:hover{color:var(--forest)}
    point of having tokenised the palette. */
 @media(prefers-color-scheme:dark){
   :root{
-    --paper:#0E1512; --card:#16201B; --cream:#141D18;
-    --forest:#7FD3A6; --forest-deep:#A9E6C4; --ink:#E8F0EA;
-    --mint:#1D3329; --mint-strong:#2F5744;
-    --muted:#9BAEA3; --line:#25332C;
-    --body:#C9D6CE;
-    --trust-a:#152019; --trust-b:#141C18;
-    --shadow:0,0,0;
-    --blob-a:rgba(47,87,68,.40);
-    --blob-b:rgba(30,45,36,.55);
+    --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
+    --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
+    --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
+    --amber:#F0BC5E; --amber-soft:#2E2718;
+    --line:#263A2E;
     /* --frame stays dark: a phone bezel that inverts to white reads as a
        rendering bug, and the store badges sit on it with white text. */
+    --frame:#0A110D;
+    --shadow:0,0,0;
+    color-scheme:dark;
+    --cream:#141D18; --trust-a:#152019; --trust-b:#141C18;
+    --blob-a:rgba(47,87,68,.40);
+    --blob-b:rgba(30,45,36,.55);
   }
   .store-badge{background:#000;border:1px solid var(--line)}
   /* The border above comes from a shorthand the <button> reset zeroes out. */
@@ -542,19 +665,12 @@ footer a:hover{color:var(--forest)}
 .release h2 small{font-size:.82rem;font-weight:500;color:var(--muted)}
 .release ul{margin-block:10px}
 
-/* ---------- blog link in the nav ---------- */
-/* The header was already five items wide on a phone. A sixth fits in every
-   left-to-right locale, but not in Arabic: at 360px the RTL nav ran 32px off
-   the right edge and clipped "المزايا", and five locales (th, tr, ko, hi,
-   zh-Hant) gained a third nav row that made the header ~45px taller.
-   Measured, not guessed — six items first fit Arabic at 400px.
-   Below 560px the link is hidden and the header keeps exactly the shape it has
-   today; the footer carries the same /blog/ link at every width, so the blog is
-   still one tap away. The <a> stays in the markup for all 23 locales either
-   way, which is what check-build section 11b check 11 asserts. */
-@media(max-width:560px){
-  .nav-blog{display:none}
-}
+/* The nav no longer hides the Blog link below 560px. That rule existed because
+   the old header wrapped: six items ran off the right edge in Arabic and grew a
+   third row in five other locales. Under 860px the links are now a panel, one
+   per line, so width is no longer what decides whether the link fits — and the
+   Blog link is reachable in every locale at every size, which the footer alone
+   used to have to cover. */
 
 /* ---------- blog index ---------- */
 .blogindex{max-width:820px;padding-block:44px 64px}

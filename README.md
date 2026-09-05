@@ -24,7 +24,8 @@ one-line copy change under a 20-file diff.
 | `content/<loc>.json` | Every translatable string. `en.json` is the source of truth and carries the `@`-descriptions. |
 | `templates/` | The page shells. `{{ }}` escapes, `{{{ }}}` does not, `{{# }}` loops, `{{? }}` conditionals, `{{> }}` includes. |
 | `legal/` | Privacy, Terms and Impressum bodies. Hand-written, English + German only, deliberately outside the translation pipeline. |
-| `static/` | Copied verbatim into `dist/` — CSS, JS, images, and `.htaccess`. |
+| `static/` | Copied verbatim into `dist/` — CSS, JS, images, fonts, and `.htaccess`. |
+| `static/assets/fonts/` | The two brand faces, self-hosted. See below. |
 | `tools/` | The three guards described below. |
 
 ## The guards
@@ -41,11 +42,38 @@ The build is `check-content → build → check-build → test-detector`, chaine
 - **`check-build.mjs`** — every internal link resolves, every `hreflang` pair is
   reciprocal with exactly one `x-default` per cluster, canonicals match their own
   path, `<html lang>` matches the directory, `dir="rtl"` appears only in RTL
-  locales, the detector appears in exactly one file, and the CSP hash matches the
-  inline script it authorises.
+  locales, the detector appears in exactly one file, the CSP hash matches the
+  inline script it authorises, and every `@font-face` in the stylesheet the pages
+  load points at a file that really exists under `dist/assets/fonts/` with
+  nothing in the built tree mentioning Google Fonts.
 - **`test-detector.mjs`** — runs the detector that actually ships in
   `dist/index.html` against a stubbed browser. Chrome's `--lang` flag does **not**
   change `navigator.languages`, so this cannot be checked by hand in a browser.
+
+## Fonts
+
+Two families, both self-hosted from `static/assets/fonts/`: **Sofia Sans
+Condensed** for display (headlines, the `daili` wordmark, the language codes)
+and **Figtree** for text. They are the same faces the app and the web app use.
+
+The `.woff2` files are copied verbatim out of the `@fontsource` packages
+(`figtree`, `sofia-sans-condensed`) in the web app's `node_modules`; both SIL
+OFL licence texts are in `static/assets/fonts/LICENSE.txt`. Copied files, not a
+dependency — this repo still has none.
+
+Each `@font-face` in `static/assets/style.css` carries the `unicode-range` of
+its subset, taken verbatim from the package's own CSS, so a Russian page fetches
+the Cyrillic cut of the display face and nothing else. **Neither family has
+Arabic, Thai, Devanagari or CJK glyphs**, so `/ar/`, `/th/`, `/hi/`, `/ja/`,
+`/ko/` and the two Chinese builds match no range, download no font at all and
+fall through to the system stack at the end of `--display` / `--sans`. That is
+intended, and it is why the per-language line-height rules near the top of the
+stylesheet still matter.
+
+Never link Google Fonts back in. The CSP in `static/.htaccess` is
+`font-src 'self'`, so it would fail silently in production, and check-build
+section 13 fails it loudly here first. To add a weight or a subset, copy the
+file in and add the `@font-face` with the range from the package.
 
 ## Adding a language
 

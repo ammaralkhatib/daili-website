@@ -213,6 +213,11 @@ const absUrl = (pg, loc) => BASE_URL + urlFor(pg, loc);
 /** Pages that exist in a given locale, used by the language picker. */
 const pageExistsIn = (pg, loc) => localesFor(pg).includes(loc);
 
+/** The chip's label. Both Chinese builds read ZH — 3.5 characters of "简体中文"
+ *  in a pill is unreadable, and the menu underneath is where 简体 and 繁體 are
+ *  told apart. */
+const langCode = (loc) => loc.split('-')[0].toUpperCase();
+
 /**
  * The language navigation.
  *
@@ -241,12 +246,20 @@ function renderLangNav(pg, loc) {
     .sort((a, b) => new Intl.Collator('en').compare(endonyms[a], endonyms[b]))
     .map((l) => {
       const current = l === loc ? ' aria-current="true"' : '';
-      const dir = RTL.has(l) ? ' dir="rtl"' : '';
-      return `          <li><a href="${target(l)}" hreflang="${l}" lang="${l}"${dir} data-lang="${l}"${current}>${endonyms[l]}</a></li>`;
+      // <bdi>, not dir="rtl" on the row. The row is a flex line — code, then
+      // endonym — and dir on the <a> reverses that line, so on an LTR page the
+      // Arabic row alone came out mirrored and fell out of the column. <bdi>
+      // isolates the name's own direction without touching the layout, and it
+      // needs no attribute: it detects RTL from the text itself.
+      return `          <li><a href="${target(l)}" hreflang="${l}" lang="${l}" data-lang="${l}"${current}><small>${langCode(l)}</small><bdi>${endonyms[l]}</bdi></a></li>`;
     }).join('\n');
 
+  // The summary is the code, not the endonym: at 23 locales the chip has to fit
+  // beside a burger on a 390px phone, and "Bahasa Indonesia" does not. The
+  // aria-label stays the translated word for "Language", so what a screen
+  // reader announces is a sentence rather than two letters.
   return `      <details class="langpicker">
-        <summary aria-label="${escapeHtml(content[loc].nav.language)}"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg><span>${endonyms[loc]}</span></summary>
+        <summary aria-label="${escapeHtml(content[loc].nav.language)}"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>${langCode(loc)}<svg class="chev" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
         <div class="langpicker-menu">
           <ul>
 ${rows}
@@ -266,6 +279,10 @@ function renderFooterLinks(loc) {
   const privacy = loc === 'de' ? '/datenschutz.html' : '/privacy.html';
   const terms = loc === 'de' ? '/nutzungsbedingungen.html' : '/terms.html';
   const parts = [
+    // Absolute, because the web app is a different host. Same tab and the same
+    // account, so it is not marked up as leaving the site — only rel=noopener,
+    // which costs nothing and is the right default for any cross-origin link.
+    `<a href="https://app.daili.app" rel="noopener">${escapeHtml(c.nav.webApp)}</a>`,
     `<a href="${support}">${escapeHtml(c.nav.support)}</a>`,
     // Same target and same attributes as the header link: the blog is English
     // whatever locale the footer around it is written in, and hreflang/lang say
@@ -280,7 +297,9 @@ function renderFooterLinks(loc) {
     `<a href="${terms}">${escapeHtml(c.footer.terms)}</a>`,
     `<a href="/impressum.html">${escapeHtml(c.footer.imprint)}</a>`,
   ];
-  return parts.join(' · ');
+  // No separator: .flinks is a flex row with its own gaps, so a wrapped line
+  // never ends on a stranded "·".
+  return parts.join('\n      ');
 }
 
 function renderTrustPills(loc) {

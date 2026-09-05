@@ -15,6 +15,31 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  /* ---------- mobile menu ----------
+   * Below 860px the five links and the Download pill live in a panel the
+   * burger opens. All this adds is the class: the panel, its position and its
+   * animation are CSS, and every link is in the markup at every width — it is
+   * hidden, never built here. With this file blocked the <noscript> block in
+   * layout.html puts the same links back into the header, so the menu is not
+   * something JavaScript grants. */
+  var burger = document.querySelector(".burger");
+  var menu = document.querySelector(".menu");
+  function setMenu(open) {
+    document.body.classList.toggle("menu-open", open);
+    if (burger) burger.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  if (burger) {
+    burger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      setMenu(!document.body.classList.contains("menu-open"));
+    });
+  }
+  /* An in-page link (#features, #pricing) never reloads, so without this the
+     panel stays open over the section it just scrolled to. */
+  document.querySelectorAll(".links a.nl").forEach(function (a) {
+    a.addEventListener("click", function () { setMenu(false); });
+  });
+
   /* ---------- disclosure widgets: download menu + language picker ----------
    * One implementation for both. The download menu is a div toggled by class;
    * the picker is a native <details>, which already opens on its own and only
@@ -39,6 +64,7 @@
     });
   }
   document.addEventListener("click", function (e) {
+    if (menu && !menu.contains(e.target) && !(burger && burger.contains(e.target))) setMenu(false);
     var inDl = dl && dl.contains(e.target);
     var picker = e.target.closest ? e.target.closest("details.langpicker") : null;
     /* Any click at all dismisses an open "coming soon" card. The chip stops
@@ -61,6 +87,13 @@
       closeCards();
       chip.focus();
       return;
+    }
+    /* The panel is the outermost layer and the burger is what opened it, so
+       Escape hands focus back there rather than leaving it on a link that has
+       just been hidden. */
+    if (document.body.classList.contains("menu-open")) {
+      setMenu(false);
+      if (burger) burger.focus();
     }
     closeAll(null);
   });

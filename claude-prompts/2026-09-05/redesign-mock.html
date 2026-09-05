@@ -1,0 +1,544 @@
+<!-- Redesign mock for daili.app, approved by Ammar 2026-09-05. Reference for prompts 011-015.
+     Standalone: open in a browser. {{IMG:name}} placeholders = data: URIs in the published artifact;
+     in the real site they are /assets/img/shots/<loc>/shot-*.webp (012) and web-calendar.webp (014).
+     The Google Fonts link is mock-only: the site self-hosts the same two fonts (011). -->
+<title>Daili Home Redesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@600;700;800&display=swap">
+<style>
+:root{
+  --paper:#FBF9F2; --card:#FFFFFF; --ink:#10201A; --body:#2B3A32; --muted:#5E6D64;
+  --forest:#04613C; --forest-deep:#0B4A30; --on-forest:#FFFFFF;
+  --mint:#DCEFDF; --mint-strong:#A9D9B8; --mint-soft:#EEF6EF;
+  --amber:#E9A93B; --amber-soft:#FBF0D6; --plum:#B85C9E; --sky:#3B82C4;
+  --line:#E4DFD1; --frame:#10201A; --shadow:16,29,22;
+  --display:"Sofia Sans Condensed","Arial Narrow",Impact,sans-serif;
+  --sans:Figtree,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --ease:cubic-bezier(.22,.8,.3,1);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
+    --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
+    --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
+    --amber:#F0BC5E; --amber-soft:#2E2718; --line:#263A2E; --frame:#0A110D; --shadow:0,0,0;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
+  --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
+  --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
+  --amber:#F0BC5E; --amber-soft:#2E2718; --line:#263A2E; --frame:#0A110D; --shadow:0,0,0;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--forest)}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;font-weight:800}
+h2{font-size:clamp(2rem,4.4vw,3.1rem)}
+h3{font-size:1.45rem;font-weight:700}
+p{color:var(--body)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+.eyebrow{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;color:var(--forest);display:inline-flex;align-items:center;gap:8px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--forest);border-radius:2px}
+.section-lead{font-size:1.12rem;color:var(--muted);max-width:38rem;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;border-radius:999px;padding:12px 22px;font-size:.98rem;transition:transform .25s var(--ease),background .25s,box-shadow .25s;border:1.5px solid transparent}
+.btn-primary{background:var(--forest);color:var(--on-forest)}
+.btn-primary:hover{background:var(--forest-deep);transform:translateY(-1px);box-shadow:0 10px 24px rgba(4,97,60,.22)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--card)}
+.btn-ghost:hover{border-color:var(--mint-strong);background:var(--mint-soft)}
+:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:6px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent}
+header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:0}
+.brand img{width:36px;height:36px;border-radius:10px}
+.links{margin-left:auto;display:flex;align-items:center;gap:6px}
+.links a.nl{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:999px;transition:background .2s}
+.links a.nl:hover{background:var(--mint-soft);color:var(--forest)}
+.links a.nl-web{color:var(--forest);font-weight:600}
+.lang{position:relative;margin-left:4px}
+.lang summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:999px;padding:6px 10px 6px 9px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:var(--card);color:var(--ink)}
+.lang summary::-webkit-details-marker{display:none}
+.lang summary:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+.lang summary svg{width:15px;height:15px;stroke:var(--muted);fill:none;stroke-width:1.8}
+.lang summary .chev{width:10px;height:10px;stroke:var(--muted);opacity:.8}
+.lang-menu{position:absolute;right:0;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 22px 48px rgba(var(--shadow),.16);z-index:40;width:min(560px,88vw)}
+.lang-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 10px}
+.lang-menu a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap}
+.lang-menu a small{font-family:var(--display);font-weight:700;letter-spacing:.06em;font-size:.72rem;color:var(--muted);width:2.6em}
+.lang-menu a:hover{background:var(--mint-soft)}
+.lang-menu a[aria-current]{background:var(--mint);font-weight:600}
+.lang-menu .note{grid-column:1/-1;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted)}
+.burger{display:none;margin-left:6px;border:1.5px solid var(--line);background:var(--card);border-radius:999px;width:40px;height:40px;align-items:center;justify-content:center;cursor:pointer}
+.burger svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
+@media (max-width:860px){
+  .nav{gap:10px}
+  .links .nl,.links .btn{display:none}
+  .burger{display:inline-flex}
+  body.menu-open .links{position:fixed;inset:66px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:14px 22px 22px;gap:4px;box-shadow:0 30px 50px rgba(var(--shadow),.14)}
+  body.menu-open .links .nl{display:block;font-size:1.05rem;padding:12px 10px}
+  body.menu-open .links .btn{display:inline-flex;margin-top:8px;justify-content:center}
+  body.menu-open .links .lang,body.menu-open .burger{display:none}
+  .lang-mobile{display:inline-flex}
+}
+.lang-mobile{display:none}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:56px 0 40px;position:relative}
+.hero::before{content:"";position:absolute;inset:auto -10% -80px auto;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,var(--mint) 0%,transparent 72%);z-index:-1;opacity:.9}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--forest);background:var(--mint-soft);border:1px solid var(--mint);border-radius:999px;padding:6px 12px 6px 8px}
+.hero .kicker .dots{display:inline-flex;gap:3px}
+.hero .kicker .dots i{width:8px;height:8px;border-radius:50%;display:block}
+.hero h1{font-size:clamp(3rem,7vw,5.4rem);margin:18px 0 16px;line-height:.98}
+.hero h1 em{font-style:normal;color:var(--forest);background-image:linear-gradient(var(--mint-strong),var(--mint-strong));background-repeat:no-repeat;background-size:100% .16em;background-position:0 92%;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hero .lead{font-size:1.18rem;max-width:34rem;color:var(--muted)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}
+.store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--frame);color:#fff;border-radius:13px;padding:9px 16px 9px 13px;text-decoration:none;line-height:1.1;transition:transform .25s var(--ease),opacity .2s}
+.store-badge:hover{transform:translateY(-1px);opacity:.92}
+.store-badge svg{width:22px;height:22px;fill:#fff;flex:none}
+.store-badge small{display:block;font-size:.62rem;font-weight:400;opacity:.8}
+.store-badge span{font-weight:700;font-size:1rem;font-family:var(--sans)}
+.web-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;color:var(--forest);padding:10px 4px}
+.web-link svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.web-link:hover{text-decoration:underline;text-underline-offset:4px}
+.hero .note{margin-top:18px;font-size:.9rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.hero .note span::before{content:"✓";color:var(--forest);margin-right:6px;font-weight:700}
+
+/* device stack */
+.stack{position:relative;height:560px}
+.laptop{position:absolute;right:0;top:20px;width:88%;border-radius:14px;background:var(--card);border:1px solid var(--line);box-shadow:0 30px 70px rgba(var(--shadow),.16);overflow:hidden;transform:rotate(1.2deg)}
+.laptop .bar{display:flex;align-items:center;gap:6px;padding:9px 12px;border-bottom:1px solid var(--line);background:var(--mint-soft)}
+.laptop .bar i{width:9px;height:9px;border-radius:50%;background:var(--line);display:block}
+.laptop .bar .url{margin-left:10px;flex:1;font-size:.7rem;color:var(--muted);background:var(--card);border-radius:6px;padding:3px 8px;border:1px solid var(--line)}
+.phone{position:absolute;left:0;bottom:0;width:44%;border-radius:36px;background:var(--frame);padding:9px;box-shadow:0 34px 70px rgba(var(--shadow),.26);transform:rotate(-3deg)}
+.phone img{border-radius:28px}
+.float{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:0 16px 40px rgba(var(--shadow),.14);display:flex;align-items:center;gap:10px;font-size:.85rem;font-weight:600}
+.float .av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;color:#fff;font-weight:700}
+.float small{display:block;font-weight:400;color:var(--muted);font-size:.72rem}
+.f1{right:-6px;bottom:88px;animation:bob 6s ease-in-out infinite}
+.f2{left:30%;top:-16px;animation:bob 7s ease-in-out infinite reverse}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}}
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr;padding-top:36px}
+  .stack{height:auto;aspect-ratio:1/0.95;max-width:560px;margin:10px auto 0;width:100%}
+}
+@media (max-width:600px){
+  .stack{aspect-ratio:auto;height:auto;padding:10px 0 0}
+  .stack .laptop,.stack .f2{display:none}
+  .phone{position:relative;width:62%;margin:0 auto;transform:none}
+  .f1{right:2%;bottom:60px}
+}
+
+/* web mock (CSS drawn) */
+.webmock{color:var(--ink);display:grid;grid-template-columns:118px 1fr;height:330px;font-size:.66rem}
+.webmock .side{border-right:1px solid var(--line);padding:12px 10px;display:flex;flex-direction:column;gap:2px;background:var(--card)}
+.webmock .side b{font-family:var(--display);font-size:1rem;letter-spacing:0;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.webmock .side b img{width:18px;height:18px;border-radius:5px}
+.webmock .side span{padding:5px 8px;border-radius:7px;color:var(--body)}
+.webmock .side span.on{background:var(--mint);color:var(--forest);font-weight:700}
+.webmock .main{padding:10px 12px;display:flex;flex-direction:column;gap:8px;background:var(--paper)}
+.webmock .head{display:flex;align-items:center;justify-content:space-between}
+.webmock .head b{font-family:var(--display);font-size:1.05rem}
+.webmock .head .pill{background:var(--forest);color:var(--on-forest);border-radius:999px;padding:3px 9px;font-weight:700}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;flex:1}
+.day{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px 5px;display:flex;flex-direction:column;gap:3px;min-height:0}
+.day em{font-style:normal;color:var(--muted);font-size:.62rem;font-weight:600}
+.day.today em{color:var(--forest)}
+.day.today{border-color:var(--mint-strong);background:var(--mint-soft)}
+.ev{min-width:0;border-radius:4px;padding:2px 4px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#10201A;border-left:3px solid transparent}
+.ev.g{background:#CFEBD9;border-color:#1F8A55}.ev.a{background:#FBE8C2;border-color:#D48B12}.ev.p{background:#F0D7EA;border-color:#B85C9E}.ev.b{background:#D6E6F7;border-color:#3B82C4}.ev.r{background:#F9DAD4;border-color:#D4553F}
+
+/* ---------- trust ---------- */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:28px 0 10px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:24px}
+.trust>div{display:flex;gap:12px;align-items:flex-start;padding:12px 0}
+.trust svg{width:26px;height:26px;stroke:var(--forest);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.trust strong{display:block;font-family:var(--display);font-size:1.2rem;font-weight:700}
+.trust p{font-size:.9rem;color:var(--muted)}
+@media (max-width:760px){.trust{grid-template-columns:1fr;gap:0}}
+
+/* ---------- sections ---------- */
+section.block{padding:84px 0 20px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(150px,auto);gap:16px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;transition:transform .3s var(--ease),box-shadow .3s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(var(--shadow),.12)}
+.tile h3{margin-top:2px}
+.tile p{font-size:.95rem;color:var(--muted);max-width:30rem}
+.tile ul{list-style:none;display:flex;flex-direction:column;gap:6px;font-size:.92rem;margin-top:4px}
+.tile ul li::before{content:"✓";color:var(--forest);font-weight:700;margin-right:8px}
+.tile .shot{position:absolute;right:-8%;bottom:-38%;width:56%;border-radius:22px;background:var(--frame);padding:6px;box-shadow:0 20px 40px rgba(var(--shadow),.25);transform:rotate(-4deg)}
+.tile .shot img{border-radius:17px}
+.t-cal{grid-column:span 4;grid-row:span 2;min-height:420px}
+.t-cal .shot{width:31%;right:5%;bottom:-20%;transform:rotate(3deg)}
+.t-cal .copy{max-width:52%}
+.t-shop{grid-column:span 2;grid-row:span 2}
+.t-shop .shot{width:58%;right:-16%;bottom:-46%;transform:rotate(-6deg)}
+.t-shop p{max-width:62%}
+.t-todo{grid-column:span 2}
+.t-meal{grid-column:span 2}
+.t-bday{grid-column:span 2}
+.t-vault{grid-column:span 3;background:var(--mint-soft)}
+.t-fam{grid-column:span 3;background:var(--amber-soft)}
+.tile .ic{width:40px;height:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center}
+.tile .ic svg{width:20px;height:20px;stroke:var(--forest);fill:none;stroke-width:2}
+.t-fam .ic{background:#F3DFB4}.t-fam .ic svg{stroke:#8A5A00}
+.t-fam .avs{display:flex;margin-top:auto}
+.t-fam .avs i{width:38px;height:38px;border-radius:50%;border:3px solid var(--card);margin-left:-10px;display:grid;place-items:center;font-size:.75rem;color:#fff;font-weight:700;font-style:normal}
+.t-fam .avs i:first-child{margin-left:0}
+@media (max-width:960px){
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .t-cal,.t-shop,.t-todo,.t-meal,.t-bday,.t-vault,.t-fam{grid-column:span 2;grid-row:auto}
+  .t-cal{min-height:380px}.t-cal .copy{max-width:60%}
+  .t-shop{min-height:300px}
+}
+@media (max-width:600px){
+  .t-cal .copy{max-width:100%}.t-cal .shot{display:none}.t-shop .shot{display:none}.t-cal{min-height:0}.t-shop{min-height:0}
+}
+
+/* web section */
+.web{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;background:var(--frame);color:#fff;border-radius:28px;padding:48px;margin-top:20px}
+.web h2,.web p,.web li{color:#fff}
+.web p{opacity:.85}
+.web .eyebrow{color:var(--mint-strong)}.web .eyebrow::before{background:var(--mint-strong)}
+.web ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin:18px 0 26px;font-size:1rem}
+.web ul li{display:flex;gap:10px;align-items:flex-start}
+.web ul li::before{content:"";width:18px;height:18px;flex:none;margin-top:3px;border-radius:50%;background:var(--mint-strong);mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+.web .btn-primary{background:var(--mint-strong);color:#10201A}
+.web .btn-primary:hover{background:#fff}
+.web .laptop{position:static;width:100%;transform:none;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.web .muted{font-size:.85rem;opacity:.65;margin-top:12px}
+@media (max-width:900px){.web{grid-template-columns:1fr;padding:32px 24px}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+.step{position:relative;padding:26px 24px 26px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.step::before{counter-increment:step;content:counter(step);font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--mint-strong);line-height:1;display:block;margin-bottom:10px}
+.step h3{font-size:1.35rem}
+.step p{font-size:.95rem;color:var(--muted);margin-top:6px}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* compare */
+.cmp{width:100%;border-collapse:collapse;margin-top:8px;font-size:.98rem}
+.cmp th{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;color:var(--muted);padding:12px 10px;text-align:center}
+.cmp th:first-child{text-align:left}
+.cmp th.d{color:var(--forest)}
+.cmp td{padding:14px 10px;border-top:1px solid var(--line);text-align:center;font-weight:600}
+.cmp td:first-child{text-align:left;font-weight:500;color:var(--body)}
+.cmp td.y{color:var(--forest)}.cmp td.n,.cmp td.p{color:var(--muted);font-weight:400}
+.cmp tr:has(td) td:nth-child(2){background:var(--mint-soft)}
+.cmp th:nth-child(2){background:var(--mint-soft);border-radius:14px 14px 0 0}
+.cmp tr:last-child td:nth-child(2){border-radius:0 0 14px 14px}
+.table-scroll{overflow-x:auto}
+.legend{font-size:.85rem;color:var(--muted);margin-top:10px}
+
+/* pricing */
+.price{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:var(--mint-soft);border:1px solid var(--mint);border-radius:28px;padding:48px}
+.price .big{font-family:var(--display);font-size:clamp(4rem,10vw,7rem);font-weight:800;line-height:.9;color:var(--forest)}
+.price .big small{display:block;font-size:1.1rem;font-family:var(--sans);font-weight:600;color:var(--muted);letter-spacing:0;margin-top:8px}
+.price ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin:18px 0 24px}
+.price ul li::before{content:"✓";color:var(--forest);font-weight:700;margin-right:10px}
+.price .promise{background:var(--card);border:1px solid var(--mint-strong);border-radius:16px;padding:14px 16px;font-size:.95rem}
+.price .promise strong{font-family:var(--display);letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;color:var(--forest);display:block;margin-bottom:4px}
+@media (max-width:860px){.price{grid-template-columns:1fr;padding:32px 24px}}
+
+/* faq */
+.faq{max-width:760px}
+.faq details{border-top:1px solid var(--line);padding:6px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 4px;font-weight:600;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.6rem;color:var(--forest);font-weight:700;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 4px 18px;color:var(--body);max-width:62ch}
+
+/* footer */
+footer{margin-top:90px;border-top:1px solid var(--line);padding:38px 0 44px}
+footer .cols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;font-size:.9rem;color:var(--muted)}
+footer .flinks{display:flex;gap:6px 18px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.ribbon{background:var(--amber-soft);color:#5C3D00;font-size:.85rem;padding:8px 14px;text-align:center;border-bottom:1px solid var(--line)}
+:root[data-theme="dark"] .ribbon,:root:not([data-theme="light"]) .ribbon{color:var(--ink)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .ribbon{color:#5C3D00}}
+</style>
+
+<div class="ribbon">Design mock — proposed new daili.app home page (English). Copy is the proposed final text; the browser window is a CSS illustration until a real web screenshot is captured.</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#"><img src="{{IMG:logo}}" alt="" width="36" height="36">daili</a>
+    <nav class="links" aria-label="Main">
+      <a class="nl" href="#features">Features</a>
+      <a class="nl nl-web" href="#web">Web app</a>
+      <a class="nl" href="#pricing">Pricing</a>
+      <a class="nl" href="#">Support</a>
+      <a class="nl" href="#">Blog</a>
+      <details class="lang">
+        <summary aria-label="Language: English">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>EN<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="lang-menu">
+          <ul>
+            <li><a href="#" lang="id"><small>ID</small>Bahasa Indonesia</a></li>
+            <li><a href="#" lang="cs"><small>CS</small>Čeština</a></li>
+            <li><a href="#" lang="da"><small>DA</small>Dansk</a></li>
+            <li><a href="#" lang="de"><small>DE</small>Deutsch</a></li>
+            <li><a href="#" lang="en" aria-current="true"><small>EN</small>English</a></li>
+            <li><a href="#" lang="es"><small>ES</small>Español</a></li>
+            <li><a href="#" lang="fr"><small>FR</small>Français</a></li>
+            <li><a href="#" lang="it"><small>IT</small>Italiano</a></li>
+            <li><a href="#" lang="nl"><small>NL</small>Nederlands</a></li>
+            <li><a href="#" lang="nb"><small>NB</small>Norsk</a></li>
+            <li><a href="#" lang="pl"><small>PL</small>Polski</a></li>
+            <li><a href="#" lang="pt"><small>PT</small>Português</a></li>
+            <li><a href="#" lang="fi"><small>FI</small>Suomi</a></li>
+            <li><a href="#" lang="sv"><small>SV</small>Svenska</a></li>
+            <li><a href="#" lang="tr"><small>TR</small>Türkçe</a></li>
+            <li><a href="#" lang="ru"><small>RU</small>Русский</a></li>
+            <li><a href="#" lang="ar" dir="rtl"><small>AR</small>العربية</a></li>
+            <li><a href="#" lang="hi"><small>HI</small>हिन्दी</a></li>
+            <li><a href="#" lang="th"><small>TH</small>ไทย</a></li>
+            <li><a href="#" lang="ja"><small>JA</small>日本語</a></li>
+            <li><a href="#" lang="ko"><small>KO</small>한국어</a></li>
+            <li><a href="#" lang="zh-Hans"><small>ZH</small>简体中文</a></li>
+            <li><a href="#" lang="zh-Hant"><small>ZH</small>繁體中文</a></li>
+            <li class="note">This website is in 23 languages. The app itself speaks 19 — see the questions below.</li>
+          </ul>
+        </div>
+      </details>
+      <a class="btn btn-primary" href="#pricing">Download</a>
+    </nav>
+    <details class="lang lang-mobile"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>EN</summary><div class="lang-menu"><ul><li><a href="#" aria-current="true"><small>EN</small>English</a></li><li><a href="#"><small>DE</small>Deutsch</a></li><li><a href="#"><small>FR</small>Français</a></li><li><a href="#"><small>ES</small>Español</a></li><li><a href="#"><small>IT</small>Italiano</a></li><li><a href="#"><small>NL</small>Nederlands</a></li></ul></div></details>
+    <button class="burger" type="button" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+
+  <section class="hero">
+    <div class="copy">
+      <span class="kicker"><span class="dots"><i style="background:#1F8A55"></i><i style="background:#D48B12"></i><i style="background:#B85C9E"></i><i style="background:#3B82C4"></i></span>iPhone · Android · web browser</span>
+      <h1>Your family, <em>on the same page.</em></h1>
+      <p class="lead">One calm place for your family's week: a shared calendar, shopping lists and to-dos everyone can see. On every phone — and on the computer, too.</p>
+      <div class="ctas">
+        <a class="store-badge" href="#"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Download on the</small>App Store</span></a>
+        <a class="store-badge" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2.5v19c0 .4.5.7.9.4l16.3-9.1c.4-.2.4-.8 0-1L3.9 2.1c-.4-.2-.9 0-.9.4z"/></svg><span><small>Get it on</small>Google Play</span></a>
+        <a class="web-link" href="#web"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Open in your browser</a>
+      </div>
+      <p class="note"><span>Free</span><span>No ads</span><span>Servers in the EU</span></p>
+    </div>
+
+    <div class="stack" aria-hidden="true">
+      <div class="laptop">
+        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app</span></div>
+        <div class="webmock">
+          <div class="side"><b><img src="{{IMG:logo}}" alt="">daili</b><span>Home</span><span class="on">Calendar</span><span>Shopping</span><span>To-dos</span><span>Recipes</span><span>Meal plan</span><span>Birthdays</span><span>Family</span></div>
+          <div class="main">
+            <div class="head"><b>17 – 23 August</b><span class="pill">+ New</span></div>
+            <div class="week">
+              <div class="day"><em>Mon 17</em><div class="ev b">Piano lesson</div><div class="ev a">Dentist</div></div>
+              <div class="day today"><em>Tue 18</em><div class="ev g">Swimming class</div><div class="ev p">Family dinner</div></div>
+              <div class="day"><em>Wed 19</em><div class="ev b">Piano lesson</div></div>
+              <div class="day"><em>Thu 20</em><div class="ev r">Parents' evening</div><div class="ev g">Soccer</div></div>
+              <div class="day"><em>Fri 21</em><div class="ev a">Movie night</div></div>
+              <div class="day"><em>Sat 22</em><div class="ev p">Grandma's birthday</div></div>
+              <div class="day"><em>Sun 23</em><div class="ev g">Hike</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="phone"><img src="{{IMG:dashboard}}" alt="" width="440" height="956"></div>
+      <div class="float f2"><span class="av" style="background:#1F8A55">L</span><div>Lena added <b>milk</b><small>Shopping · just now</small></div></div>
+      <div class="float f1"><span class="av" style="background:#B85C9E">M</span><div>Swimming class<small>Today 16:30 · Max</small></div></div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="5.5" y1="5.5" x2="18.5" y2="18.5"/></svg><div><strong>No ads</strong><p>Nothing to click away — not now, not later.</p></div></div>
+    <div><svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><line x1="4" y1="4" x2="20" y2="20"/></svg><div><strong>No tracking</strong><p>No analytics, no profiling — this site doesn't even use cookies.</p></div></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><div><strong>No selling your data</strong><p>Free app, servers in the EU, your rights built in.</p></div></div>
+  </div>
+
+  <section class="block" id="features">
+    <div class="sec-head">
+      <div><span class="eyebrow">Features</span><h2 style="margin-top:10px">Everything your family juggles, in one app</h2></div>
+      <p class="section-lead" style="margin:0;max-width:26rem">Calendar, lists, meals and birthdays — shared with the people who need to see them, and nobody else.</p>
+    </div>
+    <div class="bento">
+      <article class="tile t-cal">
+        <div class="copy">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <h3>One calendar for everyone</h3>
+          <p>See the whole family's week and month at a glance — and never miss pickup again.</p>
+          <ul>
+            <li>Color-coded events with categories, locations and notes</li>
+            <li>Repeating events done right — soccer every Tuesday, piano every other week</li>
+            <li>Reminders on every phone in the family</li>
+            <li>Public holidays for 35 countries, private events stay private</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="{{IMG:calendar}}" alt="" width="440" height="956"></div>
+      </article>
+      <article class="tile t-shop">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg></span>
+        <h3>Shopping lists that update live</h3>
+        <p>Add "milk" on your phone — it appears on your partner's in the store, in about a second.</p>
+        <div class="shot"><img src="{{IMG:shopping}}" alt="" width="440" height="956"></div>
+      </article>
+      <article class="tile t-todo">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <h3>Every task has a name on it</h3>
+        <p>No more "I thought you were doing it." Kids see their own tasks and can check them off.</p>
+      </article>
+      <article class="tile t-meal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg></span>
+        <h3>Dinner, decided by Sunday</h3>
+        <p>Plan the week from your own recipe box, then send the ingredients to a shopping list.</p>
+      </article>
+      <article class="tile t-bday">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/></svg></span>
+        <h3>Never miss a birthday again</h3>
+        <p>Birthdays and celebrations, remembered every year — with a countdown and reminders for everyone.</p>
+      </article>
+      <article class="tile t-vault">
+        <span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+        <h3>Photos &amp; documents stay on your phone</h3>
+        <p>The vault keeps family photos and important papers organized — stored only on your device, never uploaded to our servers.</p>
+      </article>
+      <article class="tile t-fam">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17.5" cy="10" r="2.5"/><path d="M16 20a5 5 0 0 1 6-5"/></svg></span>
+        <h3>Parents, kids &amp; grandma — all in</h3>
+        <p>Invite everyone with a 6-digit code or link. Parents are admins, kids get their own login, little ones get a managed profile.</p>
+        <div class="avs"><i style="background:#1F8A55">A</i><i style="background:#D48B12">L</i><i style="background:#B85C9E">M</i><i style="background:#3B82C4">O</i><i style="background:#D4553F">+</i></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="web">
+    <div class="web">
+      <div>
+        <span class="eyebrow">Web app</span>
+        <h2 style="margin-top:10px">Also on your computer</h2>
+        <p style="margin-top:12px">The same family, the same plans — in a browser window at <strong>app.daili.app</strong>. Plan the week on a big screen, add the shopping in the kitchen on your phone.</p>
+        <ul>
+          <li>Sign in with the same account; everything stays in sync</li>
+          <li>Calendar, shopping lists, to-dos, recipes, meal plan, birthdays and family</li>
+          <li>Nothing to install — works in any modern browser</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Open app.daili.app</a>
+        <p class="muted">Photos and documents live only on your phone, so they are not shown in the browser. The web app is available in English and German.</p>
+      </div>
+      <div class="laptop" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
+        <div class="webmock">
+          <div class="side"><b><img src="{{IMG:logo}}" alt="">daili</b><span>Home</span><span class="on">Calendar</span><span>Shopping</span><span>To-dos</span><span>Recipes</span><span>Meal plan</span><span>Birthdays</span><span>Family</span></div>
+          <div class="main">
+            <div class="head"><b>17 – 23 August</b><span class="pill">+ New</span></div>
+            <div class="week">
+              <div class="day"><em>Mon 17</em><div class="ev b">Piano lesson</div><div class="ev a">Dentist</div></div>
+              <div class="day today"><em>Tue 18</em><div class="ev g">Swimming class</div><div class="ev p">Family dinner</div></div>
+              <div class="day"><em>Wed 19</em><div class="ev b">Piano lesson</div></div>
+              <div class="day"><em>Thu 20</em><div class="ev r">Parents' evening</div><div class="ev g">Soccer</div></div>
+              <div class="day"><em>Fri 21</em><div class="ev a">Movie night</div></div>
+              <div class="day"><em>Sat 22</em><div class="ev p">Grandma's birthday</div></div>
+              <div class="day"><em>Sun 23</em><div class="ev g">Hike</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="sec-head"><div><span class="eyebrow">Getting started</span><h2 style="margin-top:10px">Set up in about a minute</h2></div></div>
+    <div class="steps">
+      <div class="step"><h3>Get the app</h3><p>Free on iPhone and Android — or open app.daili.app on your computer. No credit card, no trial that runs out.</p></div>
+      <div class="step"><h3>Create your family</h3><p>Invite everyone with a 6-digit code or a link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile.</p></div>
+      <div class="step"><h3>You're on the same page</h3><p>Add something on your phone and it's on everyone else's in about a second — calendar, lists and to-dos alike.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="compare">
+    <div class="sec-head"><div><span class="eyebrow">Compare</span><h2 style="margin-top:10px">Why not just a shared calendar?</h2><p class="section-lead">Google Calendar is very good at calendars. But family life is not only calendars — and a whiteboard in the kitchen doesn't come to the supermarket with you.</p></div></div>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead><tr><th></th><th class="d">Daili</th><th>Shared calendar</th><th>Paper &amp; whiteboard</th></tr></thead>
+        <tbody>
+          <tr><td>Everyone's events in one place</td><td class="y">✓</td><td class="y">✓</td><td class="p">~</td></tr>
+          <tr><td>Reminders on every phone</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+          <tr><td>A shopping list that updates live</td><td class="y">✓</td><td class="n">—</td><td class="p">~</td></tr>
+          <tr><td>To-dos with a name on them</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td>Meal plan and recipe box</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td>Kids get their own login</td><td class="y">✓</td><td class="p">~</td><td class="n">—</td></tr>
+          <tr><td>Birthdays remembered every year</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td>Works on the phone and in the browser</td><td class="y">✓</td><td class="y">✓</td><td class="n">—</td></tr>
+          <tr><td>No ads, nothing sold</td><td class="y">✓</td><td class="n">—</td><td class="y">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="legend">✓ yes · ~ partly · — no</p>
+  </section>
+
+  <section class="block" id="pricing">
+    <div class="price">
+      <div>
+        <span class="eyebrow">Pricing</span>
+        <h2 style="margin-top:10px">Free — and free for you, forever</h2>
+        <ul>
+          <li>Every feature on this page is free right now</li>
+          <li>No credit card, no trial period, no locked features</li>
+          <li>If we ever add paid extras, everything that is free today stays free for you</li>
+        </ul>
+        <div class="promise"><strong>Our promise</strong>Every family that joins before we add paid extras keeps everything free forever — including anything we add later.</div>
+        <div class="ctas" style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="store-badge" href="#"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span><small>Download on the</small>App Store</span></a>
+          <a class="store-badge" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2.5v19c0 .4.5.7.9.4l16.3-9.1c.4-.2.4-.8 0-1L3.9 2.1c-.4-.2-.9 0-.9.4z"/></svg><span><small>Get it on</small>Google Play</span></a>
+        </div>
+      </div>
+      <div class="big">€0<small>per family · no catch</small></div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="sec-head"><div><span class="eyebrow">FAQ</span><h2 style="margin-top:10px">Questions, answered</h2></div></div>
+    <div class="faq">
+      <details open><summary>What does Daili cost?</summary><p>Nothing. Daili is free — no ads, no data selling. If we ever add paid extras, everything that is free today stays free.</p></details>
+      <details><summary>Is there a web version?</summary><p>Yes. Open <a href="#">app.daili.app</a> in any browser on your computer and sign in with the same account. Calendar, lists, meals, birthdays and family are all there; photos and documents stay on your phone. The web app is in English and German.</p></details>
+      <details><summary>Which languages does it speak?</summary><p>The app speaks 19 languages, fully — including the reminders it sends: English, German, French, Spanish, Italian, Dutch, Portuguese, Polish, Czech, Slovak, Swedish, Danish, Norwegian, Finnish, Turkish, Romanian, Bulgarian, Greek and Ukrainian.</p></details>
+      <details><summary>Which phones does it run on?</summary><p>iPhone and Android, from one shared family account. Everything syncs between them — and with the web app.</p></details>
+      <details><summary>Can my kids use it?</summary><p>Yes — that's the point. Kids and teens get their own login and see their own tasks and events. Little ones without an email address get a managed profile a parent controls, which can be upgraded to a real login later. Parents are admins and can remove a profile and its data at any time.</p></details>
+      <details><summary>Does it work offline?</summary><p>You can read your calendar, lists and to-dos without a connection, and changes sync as soon as you're back online. Photos and documents in the vault are always offline — they live only on your phone.</p></details>
+      <details><summary>Can I bring my existing calendar?</summary><p>Daili can show your phone's own calendar next to the family calendar, on your device. Connecting a Google or Outlook calendar is coming soon.</p></details>
+      <details><summary>Where is my data stored?</summary><p>Your calendar, lists and family data live on our server in the EU. Photos and documents in the vault never leave your phone. Details in the <a href="#">privacy policy</a>.</p></details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>© 2026 Daili · <a href="#">support@daili.app</a></div>
+    <div class="flinks"><a href="#">Web app</a><a href="#">Support</a><a href="#">Blog</a><a href="#">What's new</a><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Impressum</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h=document.getElementById('hdr');
+  addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>8)},{passive:true});
+  document.addEventListener('click',function(e){
+    document.querySelectorAll('details.lang[open]').forEach(function(d){ if(!d.contains(e.target)) d.open=false; });
+  });
+})();
+</script>

@@ -9,6 +9,13 @@
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="{{ page.cssHref }}">
+<!-- Below 860px the nav links live in a panel the burger opens, and the burger
+     is the one control on this site that needs script.js to do anything. So
+     when script.js cannot run, the panel is not the way in: the links go back
+     into the header as a wrapped row and the dead burger is removed. Inline and
+     in <noscript> rather than a class on <html>, so a reader with JavaScript
+     off never sees the menu flash open and closed. -->
+<noscript><style>@media(max-width:860px){.nav{height:auto;flex-wrap:wrap;padding-block:12px}.menu{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex-basis:100%}.links{margin-inline-start:0;flex-wrap:wrap}.burger{display:none}}</style></noscript>
 <script src="{{ page.jsHref }}" defer></script>
 </head>
 <body>
@@ -17,20 +24,24 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="{{ page.homeHref }}"><img src="/assets/img/logo.webp" alt="Daili" width="512" height="512">Daili</a>
-    <nav class="links">
-      <a href="{{ page.featuresHref }}">{{ nav.features }}</a>
-      <a href="{{ page.pricingHref }}">{{ nav.pricing }}</a>
-      <a href="{{ page.supportHref }}">{{ nav.support }}</a>
-      <a class="nav-blog" href="/blog/" hreflang="en" lang="en">{{ nav.blog }}</a>
+    <a class="brand" href="{{ page.homeHref }}"><img src="/assets/img/logo.webp" alt="" width="512" height="512">daili</a>
+    <div class="menu" id="navmenu">
+      <nav class="links">
+        <a class="nl" href="{{ page.featuresHref }}">{{ nav.features }}</a>
+        <a class="nl nl-web" href="https://app.daili.app" rel="noopener">{{ nav.webApp }}</a>
+        <a class="nl" href="{{ page.pricingHref }}">{{ nav.pricing }}</a>
+        <a class="nl" href="{{ page.supportHref }}">{{ nav.support }}</a>
+        <a class="nl" href="/blog/" hreflang="en" lang="en">{{ nav.blog }}</a>
+      </nav>
       <div class="dl">
         <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false">{{ nav.download }}</button>
         <div class="dl-menu">
 {{> storebadges }}
         </div>
       </div>
+    </div>
 {{{ page.langNav }}}
-    </nav>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navmenu"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
@@ -39,7 +50,7 @@
 <footer>
   <div class="wrap cols">
     <div>{{{ footer.copyright }}}</div>
-    <div>{{{ page.footerLinks }}}</div>
+    <div class="flinks">{{{ page.footerLinks }}}</div>
   </div>
 </footer>
 

@@ -521,6 +521,58 @@ for (const f of htmlFiles) {
   }
 }
 
+// --- 13. the brand fonts are ours ------------------------------------------
+// Self-hosting the two fonts is a privacy promise, not a performance tweak:
+// this site has no analytics and no cookie banner, and a <link> to Google would
+// hand every reader's IP address to a third party on every page view anyway.
+// It is also a one-line regression — a stray @import, a copied snippet from the
+// mock, a "quick fix" for a missing weight — so it is checked rather than
+// trusted. Two halves: every @font-face the pages actually load points at a
+// file that is really in dist/assets/fonts/, and nothing in the built tree
+// mentions Google Fonts at all.
+{
+  const GOOGLE = ['fonts.googleapis.com', 'fonts.gstatic.com'];
+  const checked = new Set();
+
+  for (const f of htmlFiles) {
+    const href = (read(f).match(/<link rel="stylesheet" href="([^"]+)">/) || [])[1];
+    if (!href) { fail(rel(f), 'has no stylesheet <link> — cannot verify the fonts are self-hosted'); continue; }
+    if (!href.startsWith('/')) { fail(rel(f), `stylesheet href "${href}" is not site-absolute`); continue; }
+    const cssPath = path.join(DIST, href.slice(1));
+    if (!fs.existsSync(cssPath)) { fail(rel(f), `stylesheet ${href} does not exist in dist/`); continue; }
+    if (checked.has(cssPath)) continue;   // one hashed stylesheet, 40-odd pages
+    checked.add(cssPath);
+
+    const where = rel(cssPath);
+    const faces = read(cssPath).match(/@font-face[^{]*\{[^}]*\}/g) || [];
+    if (!faces.length) { fail(where, 'declares no @font-face — the brand fonts did not reach the build'); continue; }
+    for (const face of faces) {
+      const urls = [...face.matchAll(/url\(\s*['"]?([^'")\s]+)['"]?\s*\)/g)].map((m) => m[1]);
+      if (!urls.length) { fail(where, '@font-face has no src url()'); continue; }
+      for (const u of urls) {
+        if (!u.startsWith('/assets/fonts/')) {
+          fail(where, `@font-face src "${u}" is not under /assets/fonts/ — the brand fonts are self-hosted, never fetched from anywhere else`);
+        } else if (!fs.existsSync(path.join(DIST, u.slice(1)))) {
+          fail(where, `@font-face src "${u}" does not exist in dist/ — the face is declared but the file was never copied`);
+        }
+      }
+    }
+  }
+
+  // Buffers, so this covers the HTML, the hashed CSS and JS, the sitemap and
+  // anything else a future step writes.
+  (function walk(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const f = path.join(d, e.name);
+      if (e.isDirectory()) { walk(f); continue; }
+      const buf = fs.readFileSync(f);
+      for (const host of GOOGLE) {
+        if (buf.includes(host)) fail(rel(f), `references ${host} — the fonts are served from /assets/fonts/, and the CSP is font-src 'self'`);
+      }
+    }
+  })(DIST);
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} build error(s):`);
   console.error(errors.join('\n'));
