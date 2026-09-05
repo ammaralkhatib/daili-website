@@ -1,6 +1,6 @@
 # Post 9 — Where Does Your Family App Store Your Children's Data? (PILLAR D)
 
-Live at `/blog/family-app-children-data/`. Commit `PENDING`. Two files as the
+Live at `/blog/family-app-children-data/`. Commit `fab34a8`. Two files as the
 recipe describes, **plus one deliberate edit to post 8** (its ⏳ link to here),
 which the prompt asked for. First post in the `privacy` cluster and its pillar,
 so the slug is now fixed.
