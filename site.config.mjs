@@ -560,6 +560,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
     },
   },
+  {
+    slug: 'get-partner-to-use-family-calendar',
+    cluster: 'adoption',
+    title: 'How to Get Your Partner to Use the Family Calendar',
+    description: 'Nagging does not work and neither does a better app. Six things that do — starting with giving up the habit that keeps you as the family\'s only scheduler.',
+    h1: 'How to Get Your Partner to Actually Use the Family Calendar',
+    published: '2026-09-11',
+    updated: '2026-09-11',
+    body: 'get-partner-to-use-family-calendar.en.html',
+    image: '/assets/img/blog/get-partner-to-use-family-calendar.webp',
+    imageAlt: 'A couple standing indoors looking at one phone together, one of them pointing at the screen',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'What if they genuinely will not engage at all?',
+        a: 'Then stop investing effort in adoption and use the calendar for yourself. It still reduces your own load. Keep one shared list — usually shopping — because that one has an immediate payoff for everyone, and leave the rest. A calendar one person actually uses beats a shared one nobody does.',
+      },
+      {
+        q: 'Is it fair to let something be missed?',
+        a: 'Only if it is small and no child bears the cost. A missed swimming lesson is a lesson. A missed hospital appointment is not a teaching tool, it is a consequence for someone who did not choose any of this. Keep the stakes on the adults.',
+      },
+      {
+        q: 'Does a wall calendar work better for some people?',
+        a: 'Often, yes. A paper calendar in the kitchen is visible without anyone deciding to look, which is its enormous advantage. Plenty of households run both — paper for ambient awareness, the app for the parent who is not in the kitchen. That is not a failure, it is a sensible split.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Two things here are product decisions rather than advice. Notifications are off by default and set per person, so nobody gets pinged for events that are not theirs — that is point 4 handled before it becomes a problem. And adding an event is deliberately short, because point 5 is where most shared calendars are lost.</p>
+<p>The rest of this article works in any app, including the one you already have.</p>
+<p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
+    },
+  },
 ];
 
 /**
