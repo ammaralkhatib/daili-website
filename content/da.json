@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Familiekalender: fælles kalender, lister og opgaver",
-    "description": "Daili er den enkle måde at få familielivet til at hænge sammen: én fælles kalender, indkøbslister der opdaterer med det samme og opgaver til hele familien. Gratis, uden reklamer.",
+    "description": "Daili er den enkle måde at få familielivet til at hænge sammen: fælles kalender, indkøbslister i realtid og opgaver til hele familien — også på nettet.",
     "ogTitle": "Daili — Familiekalender",
-    "ogDescription": "Ét roligt sted til familiens uge: fælles kalender, indkøbslister og opgaver, som alle kan se.",
+    "ogDescription": "Ét roligt sted til familiens uge: fælles kalender, indkøbslister og opgaver, som alle kan se — på hver telefon og i browseren.",
     "supportTitle": "Support — Daili",
     "supportDescription": "Få hjælp til Daili, eller slet din konto. Vi svarer som regel inden for en dag eller to.",
     "notfoundTitle": "Siden blev ikke fundet — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · webbrowser",
     "h1a": "Hele familien,",
     "h1b": "på samme side.",
-    "lead": "Ét roligt sted til familiens uge: en fælles kalender, indkøbslister og opgaver, som alle kan se. Lavet til forældre, til børn med deres eget login og til de små, som du styrer for dem.",
+    "lead": "Ét roligt sted til familiens uge: en fælles kalender, indkøbslister og opgaver, som alle kan se. På hver telefon — og på computeren også.",
     "note": "Gratis · Uden reklamer · Dine data bliver i EU",
+    "webLink": "Åbn i browseren",
+    "notes": [
+      "Gratis",
+      "Uden reklamer",
+      "Servere i EU"
+    ],
     "altCalendar": "Månedskalender i Daili",
     "altHome": "Startskærmen i Daili med felterne til funktionerne"
   },
 
   "howItWorks": {
+    "eyebrow": "Kom i gang",
     "h2": "Klar på cirka et minut",
     "steps": [
       {
         "h3": "Hent appen",
-        "p": "Gratis på iPhone og Android. Uden betalingskort og uden en prøveperiode, der løber ud."
+        "p": "Gratis på iPhone og Android — eller åbn app.daili.app på computeren. Uden betalingskort og uden en prøveperiode, der løber ud."
       },
       {
         "h3": "Opret din familie",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Sammenligning",
     "h2": "Hvorfor ikke bare en fælles kalender?",
     "lead": "Google Kalender er rigtig god til kalendere. Men familielivet er ikke kun aftaler — og en tavle i køkkenet tager ikke med i supermarkedet.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Fælles kalender", "paper": "Papir og tavle" },
@@ -86,12 +95,14 @@
       "Madplan for ugen og opskrifter",
       "Børn får deres eget login",
       "Fødselsdage husket hvert år",
+      "Virker på telefonen og i browseren",
       "Ingen reklamer, intet solgt"
     ],
     "legend": "✓ ja · ~ delvist · — nej"
   },
 
   "pricing": {
+    "eyebrow": "Pris",
     "h2": "Gratis — og gratis for dig, for altid",
     "lead": "Daili koster ingenting i dag. Ingen reklamer, ingen sporing og intet, der sælges til nogen.",
     "points": [
@@ -99,6 +110,10 @@
       "Intet betalingskort, ingen prøveperiode og ingen låste funktioner",
       "Hvis vi en dag tilføjer betalte ekstrafunktioner, bliver alt, der er gratis i dag, ved med at være gratis for dig"
     ],
+    "big": "€0",
+    "bigNote": "pr. familie · uden hage ved",
+    "promiseTitle": "Vores løfte",
+    "promise": "Enhver familie, der er med, før vi tilføjer betalte ekstrafunktioner, beholder alt gratis for altid — også det, vi tilføjer senere.",
     "earlyBirdTitle": "Først med",
     "earlyBird": "De første 1000 familier, der kommer med, beholder alt gratis for altid — også det, vi bygger til senere.",
     "cta": "Hent Daili gratis"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Funktioner",
+    "h2": "Alt det, familien jonglerer med, i én app",
+    "lead": "Kalender, lister, madplan og fødselsdage — delt med dem, der skal se det, og ingen andre."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Kalender",
@@ -122,7 +143,7 @@
         "Aftaler med farver, kategorier, steder og noter",
         "Gentagelser, der passer — fodbold hver tirsdag, klaver hver anden uge",
         "Påmindelser på hver telefon i familien",
-        "Helligdage for 36 lande; private aftaler bliver private"
+        "Helligdage for 35 lande; private aftaler bliver private"
       ],
       "alt": "Månedskalender med farvede aftaler"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Webapp",
+    "h2": "Også på computeren",
+    "p": "Samme familie, samme planer — i et browservindue på app.daili.app. Planlæg ugen på den store skærm, og skriv indkøbene på telefonen i køkkenet.",
+    "points": [
+      "Log ind med den samme konto; alt bliver ved med at være synkroniseret",
+      "Kalender, indkøbslister, opgaver, opskrifter, madplan, fødselsdage og familie",
+      "Intet at installere — virker i enhver moderne browser"
+    ],
+    "cta": "Åbn app.daili.app",
+    "note": "Billeder og dokumenter ligger kun på telefonen og vises derfor ikke i browseren. Webappen findes på engelsk og tysk."
+  },
+
   "faq": {
+    "eyebrow": "Spørgsmål",
     "h2": "Spørgsmål, besvaret",
     "items": [
       {
         "q": "Hvad koster Daili?",
-        "a": "Ingenting. Daili 1.0 er gratis — uden reklamer og uden salg af data. Hvis vi en dag tilføjer betalte ekstrafunktioner, bliver alt, der er gratis i dag, ved med at være gratis."
+        "a": "Ingenting. Daili er gratis — uden reklamer og uden salg af data. Hvis vi en dag tilføjer betalte ekstrafunktioner, bliver alt, der er gratis i dag, ved med at være gratis."
+      },
+      {
+        "q": "Findes der en webudgave?",
+        "a": "Ja. Åbn <a href=\"https://app.daili.app\">app.daili.app</a> i en hvilken som helst browser på computeren, og log ind med den samme konto. Kalender, lister, madplan, fødselsdage og familie er der alle sammen; billeder og dokumenter bliver på telefonen. Webappen findes på engelsk og tysk."
       },
       {
         "q": "Hvilke sprog taler appen?",
-        "a": "Elleve, fuldt ud — også de påmindelser, den sender: dansk, engelsk, tysk, nederlandsk, fransk, italiensk, spansk, portugisisk, polsk, svensk og norsk."
+        "a": "Appen taler 19 sprog, fuldt ud — også de påmindelser, den sender: dansk, engelsk, tysk, fransk, spansk, italiensk, nederlandsk, portugisisk, polsk, tjekkisk, slovakisk, svensk, norsk, finsk, tyrkisk, rumænsk, bulgarsk, græsk og ukrainsk."
       },
       {
         "q": "Hvilke telefoner virker den på?",
-        "a": "iPhone og Android, fra én og samme fælles familiekonto. Alt synkroniserer mellem dem."
+        "a": "iPhone og Android, fra én og samme fælles familiekonto. Alt synkroniserer mellem dem — og med webappen."
       },
       {
         "q": "Må mine børn bruge den?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Kan jeg tage min nuværende kalender med?",
-        "a": "Ja. Daili kan vise telefonens egen kalender på enheden, og du kan koble en Google- eller Outlook-kalender til, så dens aftaler dukker op i familiekalenderen. Du vælger hvilke, og du kan koble fra når som helst."
+        "a": "Daili kan vise telefonens egen kalender ved siden af familiekalenderen, på enheden. At koble en Google- eller Outlook-kalender til kommer snart."
       },
       {
         "q": "Hvor ligger mine data?",

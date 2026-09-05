@@ -27,3 +27,13 @@ Two to watch, because they are not the obvious cognate:
 | pl     | Kalendarz  | Zakupy       | Zadania   | Listy   | Jadłospis   | Przepisy    | Urodziny      | Dokumenty  | Zdjęcia  | Rodzina  |
 | pt     | Calendário | Compras      | Tarefas   | Listas  | Cardápio    | Receitas    | Aniversários  | Documentos | Fotos    | Família  |
 | sv     | Kalender   | Inköp        | Uppgifter | Listor  | Matsedel    | Recept      | Födelsedagar  | Dokument   | Foton    | Familj   |
+
+## Decided on the website first
+
+The app has no label for these yet, because the feature does not exist in the
+app. The website picks the word; hand it back when the app grows one. The other
+twelve locales' wording lives in `nav.webApp` / `web.eyebrow` in `content/*.json`.
+
+| term    | da     | de      | en      | es      | fr              | it      | nb      | nl     | pl            | pt      | sv      |
+|---------|--------|---------|---------|---------|-----------------|---------|---------|--------|---------------|---------|---------|
+| Web app | Webapp | Web-App | Web app | App web | Application web | App web | Nettapp | Webapp | Aplikacja web | App web | Webbapp |

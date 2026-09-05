@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Organiseur familial : agenda, listes et tâches",
-    "description": "Daili, la façon simple d'organiser la vie de famille à plusieurs : un agenda partagé, des listes de courses en direct et les tâches de toute la famille. Gratuit, sans publicité.",
+    "description": "Daili, la façon simple d'organiser la vie de famille : agenda partagé, listes de courses en direct et tâches de toute la famille — sur mobile et sur le web.",
     "ogTitle": "Daili — Organiseur familial",
-    "ogDescription": "Un endroit calme pour la semaine de votre famille : agenda partagé, listes de courses et tâches que tout le monde voit.",
+    "ogDescription": "Un endroit calme pour la semaine de votre famille : agenda partagé, listes de courses et tâches que tout le monde voit — sur chaque téléphone et dans le navigateur.",
     "supportTitle": "Aide — Daili",
     "supportDescription": "Obtenez de l'aide sur Daili, ou supprimez votre compte. Nous répondons en général sous un à deux jours.",
     "notfoundTitle": "Page introuvable — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · navigateur web",
     "h1a": "Toute la famille,",
     "h1b": "au même diapason.",
-    "lead": "Un endroit calme pour la semaine de votre famille : un agenda partagé, des listes de courses et des tâches que tout le monde voit. Pensé pour les parents, les enfants avec leur propre compte, et les petits que vous gérez pour eux.",
+    "lead": "Un endroit calme pour la semaine de votre famille : un agenda partagé, des listes de courses et des tâches que tout le monde voit. Sur chaque téléphone — et sur l'ordinateur aussi.",
     "note": "Gratuit · Sans publicité · Vos données restent dans l'UE",
+    "webLink": "Ouvrir dans le navigateur",
+    "notes": [
+      "Gratuit",
+      "Sans publicité",
+      "Serveurs dans l'UE"
+    ],
     "altCalendar": "Agenda mensuel de Daili",
     "altHome": "Écran d'accueil de Daili avec les tuiles des fonctions"
   },
 
   "howItWorks": {
+    "eyebrow": "Premiers pas",
     "h2": "Installé en une minute environ",
     "steps": [
       {
         "h3": "Installez l'application",
-        "p": "Gratuite sur iPhone et Android. Sans carte bancaire, sans période d'essai qui s'arrête."
+        "p": "Gratuite sur iPhone et Android — ou ouvrez app.daili.app sur votre ordinateur. Sans carte bancaire, sans période d'essai qui s'arrête."
       },
       {
         "h3": "Créez votre famille",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Comparatif",
     "h2": "Pourquoi pas simplement un agenda partagé ?",
     "lead": "Google Agenda gère très bien les agendas. Mais la vie de famille ne se résume pas aux rendez-vous — et un tableau dans la cuisine ne vous accompagne pas au supermarché.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Agenda partagé", "paper": "Papier & tableau" },
@@ -86,12 +95,14 @@
       "Menus de la semaine et recettes",
       "Les enfants ont leur propre compte",
       "Les anniversaires retenus chaque année",
+      "Fonctionne sur le téléphone et dans le navigateur",
       "Pas de publicité, rien de revendu"
     ],
     "legend": "✓ oui · ~ en partie · — non"
   },
 
   "pricing": {
+    "eyebrow": "Tarif",
     "h2": "Gratuit — et gratuit pour vous, pour toujours",
     "lead": "Daili ne coûte rien aujourd'hui. Pas de publicité, pas de pistage, rien de revendu à personne.",
     "points": [
@@ -99,6 +110,10 @@
       "Pas de carte bancaire, pas de période d'essai, pas de fonction verrouillée",
       "Si nous ajoutons un jour des options payantes, tout ce qui est gratuit aujourd'hui le reste pour vous"
     ],
+    "big": "€0",
+    "bigNote": "par famille · sans piège",
+    "promiseTitle": "Notre promesse",
+    "promise": "Chaque famille inscrite avant l'arrivée des options payantes garde tout gratuitement, pour toujours — y compris ce que nous ajouterons plus tard.",
     "earlyBirdTitle": "Première heure",
     "earlyBird": "Les 1000 premières familles inscrites gardent tout gratuitement pour toujours — y compris ce que nous ajouterons plus tard.",
     "cta": "Installer Daili gratuitement"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Fonctions",
+    "h2": "Tout ce que votre famille jongle, dans une seule app",
+    "lead": "Agenda, listes, menus et anniversaires — partagés avec les personnes qui doivent les voir, et personne d'autre."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Agenda",
@@ -122,7 +143,7 @@
         "Des événements en couleur avec catégories, lieux et notes",
         "Des répétitions bien faites — le foot chaque mardi, le piano une semaine sur deux",
         "Des rappels sur chaque téléphone de la famille",
-        "Les jours fériés de 36 pays, les événements privés restent privés"
+        "Les jours fériés de 35 pays, les événements privés restent privés"
       ],
       "alt": "Agenda mensuel avec des pastilles d'événements"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Application web",
+    "h2": "Aussi sur votre ordinateur",
+    "p": "La même famille, les mêmes plans — dans une fenêtre de navigateur, sur app.daili.app. Préparez la semaine sur grand écran et ajoutez les courses depuis la cuisine, sur votre téléphone.",
+    "points": [
+      "Connectez-vous avec le même compte ; tout reste synchronisé",
+      "Agenda, listes de courses, tâches, recettes, menus, anniversaires et famille",
+      "Rien à installer — fonctionne dans tout navigateur moderne"
+    ],
+    "cta": "Ouvrir app.daili.app",
+    "note": "Les photos et les documents ne vivent que sur votre téléphone : ils ne sont donc pas affichés dans le navigateur. L'application web existe en anglais et en allemand."
+  },
+
   "faq": {
+    "eyebrow": "FAQ",
     "h2": "Vos questions, nos réponses",
     "items": [
       {
         "q": "Combien coûte Daili ?",
-        "a": "Rien. Daili 1.0 est gratuit — sans publicité, sans revente de données. Si nous ajoutons un jour des options payantes, tout ce qui est gratuit aujourd'hui le restera."
+        "a": "Rien. Daili est gratuit — sans publicité, sans revente de données. Si nous ajoutons un jour des options payantes, tout ce qui est gratuit aujourd'hui le restera."
+      },
+      {
+        "q": "Existe-t-il une version web ?",
+        "a": "Oui. Ouvrez <a href=\"https://app.daili.app\">app.daili.app</a> dans n'importe quel navigateur sur votre ordinateur et connectez-vous avec le même compte. Agenda, listes, menus, anniversaires et famille sont tous là ; les photos et les documents restent sur votre téléphone. L'application web existe en anglais et en allemand."
       },
       {
         "q": "Quelles langues l'application parle-t-elle ?",
-        "a": "Onze, entièrement — y compris les rappels qu'elle envoie : français, anglais, allemand, néerlandais, italien, espagnol, portugais, polonais, suédois, danois et norvégien."
+        "a": "L'application parle 19 langues, entièrement — y compris les rappels qu'elle envoie : français, anglais, allemand, espagnol, italien, néerlandais, portugais, polonais, tchèque, slovaque, suédois, danois, norvégien, finnois, turc, roumain, bulgare, grec et ukrainien."
       },
       {
         "q": "Sur quels téléphones fonctionne-t-elle ?",
-        "a": "iPhone et Android, depuis un même compte familial partagé. Tout se synchronise entre les deux."
+        "a": "iPhone et Android, depuis un même compte familial partagé. Tout se synchronise entre les deux — et avec l'application web."
       },
       {
         "q": "Mes enfants peuvent-ils l'utiliser ?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Puis-je récupérer mon agenda actuel ?",
-        "a": "Oui. Daili peut afficher l'agenda de votre téléphone sur votre appareil, et vous pouvez connecter un agenda Google ou Outlook pour que ses événements apparaissent dans l'agenda familial. Vous choisissez lesquels, et vous pouvez vous déconnecter à tout moment."
+        "a": "Daili peut afficher l'agenda de votre téléphone à côté de l'agenda familial, sur votre appareil. La connexion d'un agenda Google ou Outlook arrive bientôt."
       },
       {
         "q": "Où mes données sont-elles stockées ?",

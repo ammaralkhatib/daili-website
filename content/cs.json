@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Rodinný organizér: sdílený kalendář, seznamy a úkoly",
-    "description": "Daili je jednoduchý způsob, jak zvládat rodinný život společně: jeden sdílený kalendář, nákupní seznamy, které se aktualizují hned, a úkoly pro celou rodinu. Zdarma, bez reklam.",
+    "description": "Daili je jednoduchý způsob, jak zvládat rodinný život společně: sdílený kalendář, nákupní seznamy hned a úkoly pro celou rodinu — i v prohlížeči.",
     "ogTitle": "Daili — Rodinný organizér",
-    "ogDescription": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni.",
+    "ogDescription": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni — na každém telefonu i v prohlížeči.",
     "supportTitle": "Podpora — Daili",
     "supportDescription": "Získejte pomoc s Daili nebo smažte svůj účet. Obvykle odpovídáme do jednoho až dvou dnů.",
     "notfoundTitle": "Stránka nenalezena — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · webový prohlížeč",
     "h1a": "Celá rodina",
     "h1b": "na jedné vlně.",
-    "lead": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni. Pro rodiče, pro děti s vlastním přihlášením i pro ty nejmenší, které spravujete vy.",
+    "lead": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni. Na každém telefonu — a taky na počítači.",
     "note": "Zdarma · Bez reklam · Vaše data zůstávají v EU",
+    "webLink": "Otevřít v prohlížeči",
+    "notes": [
+      "Zdarma",
+      "Bez reklam",
+      "Servery v EU"
+    ],
     "altCalendar": "Měsíční kalendář v Daili",
     "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
   },
 
   "howItWorks": {
+    "eyebrow": "Začínáme",
     "h2": "Hotovo asi za minutu",
     "steps": [
       {
         "h3": "Stáhněte si aplikaci",
-        "p": "Zdarma na iPhone i Android. Bez karty a bez zkušební doby, která jednou skončí."
+        "p": "Zdarma na iPhone i Android — nebo si na počítači otevřete app.daili.app. Bez karty a bez zkušební doby, která jednou skončí."
       },
       {
         "h3": "Založte rodinu",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Srovnání",
     "h2": "Proč ne prostě sdílený kalendář?",
     "lead": "Kalendář Google zvládá kalendáře opravdu dobře. Jenže rodinný život nejsou jen termíny — a tabule v kuchyni s vámi do obchodu nepůjde.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Sdílený kalendář", "paper": "Papír a tabule" },
@@ -86,12 +95,14 @@
       "Jídelníček na týden a recepty",
       "Děti mají vlastní přihlášení",
       "Narozeniny připomenuté každý rok",
+      "Funguje v telefonu i v prohlížeči",
       "Bez reklam, nic na prodej"
     ],
     "legend": "✓ ano · ~ částečně · — ne"
   },
 
   "pricing": {
+    "eyebrow": "Cena",
     "h2": "Zdarma — a pro vás zdarma navždy",
     "lead": "Daili dnes nic nestojí. Bez reklam, bez sledování a bez prodeje čehokoli komukoli.",
     "points": [
@@ -99,6 +110,10 @@
       "Bez karty, bez zkušební doby a bez zamčených funkcí",
       "Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane pro vás zdarma"
     ],
+    "big": "€0",
+    "bigNote": "na rodinu · bez háčku",
+    "promiseTitle": "Náš slib",
+    "promise": "Každá rodina, která se přidá dřív, než přidáme placené doplňky, si nechá všechno zdarma navždy — včetně toho, co přidáme později.",
     "earlyBirdTitle": "První rodiny",
     "earlyBird": "Prvních 1000 rodin, které se přidají, si nechá všechno zdarma navždy — včetně toho, co přidáme později.",
     "cta": "Získat Daili zdarma"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Funkce",
+    "h2": "Všechno, co vaše rodina žongluje, v jedné aplikaci",
+    "lead": "Kalendář, seznamy, jídelníček a narozeniny — sdílené s těmi, kdo to mají vidět, a s nikým jiným."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Kalendář",
@@ -122,7 +143,7 @@
         "Barevné události s kategoriemi, místy a poznámkami",
         "Opakování udělané pořádně — fotbal každé úterý, klavír každý druhý týden",
         "Připomenutí na každém telefonu v rodině",
-        "Svátky pro 36 zemí; soukromé události zůstávají soukromé"
+        "Svátky pro 35 zemí; soukromé události zůstávají soukromé"
       ],
       "alt": "Měsíční kalendář s barevnými událostmi"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Webová aplikace",
+    "h2": "Taky na počítači",
+    "p": "Stejná rodina, stejné plány — v okně prohlížeče na app.daili.app. Naplánujte týden na velké obrazovce a nákup dopište v kuchyni na telefonu.",
+    "points": [
+      "Přihlaste se stejným účtem; všechno zůstane sesynchronizované",
+      "Kalendář, nákupní seznamy, úkoly, recepty, jídelníček, narozeniny a rodina",
+      "Není co instalovat — funguje v každém moderním prohlížeči"
+    ],
+    "cta": "Otevřít app.daili.app",
+    "note": "Fotky a dokumenty jsou jen v telefonu, takže se v prohlížeči nezobrazují. Webová aplikace je v angličtině a němčině."
+  },
+
   "faq": {
+    "eyebrow": "Otázky",
     "h2": "Otázky a odpovědi",
     "items": [
       {
         "q": "Kolik Daili stojí?",
-        "a": "Nic. Daili 1.0 je zdarma — bez reklam a bez prodeje dat. Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane zdarma."
+        "a": "Nic. Daili je zdarma — bez reklam a bez prodeje dat. Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane zdarma."
+      },
+      {
+        "q": "Existuje webová verze?",
+        "a": "Ano. Otevřete <a href=\"https://app.daili.app\">app.daili.app</a> v jakémkoli prohlížeči na počítači a přihlaste se stejným účtem. Kalendář, seznamy, jídelníček, narozeniny i rodina tam jsou všechny; fotky a dokumenty zůstávají v telefonu. Webová aplikace je v angličtině a němčině."
       },
       {
         "q": "Jakými jazyky aplikace mluví?",
-        "a": "Jedenácti, kompletně — včetně připomenutí, která posílá: anglicky, německy, nizozemsky, francouzsky, italsky, španělsky, portugalsky, polsky, švédsky, dánsky a norsky. Čeština mezi nimi zatím není: tyto stránky jsou česky, ale samotná aplikace je prozatím v angličtině."
+        "a": "Aplikace mluví 19 jazyky, kompletně — včetně připomenutí, která posílá: česky, anglicky, německy, francouzsky, španělsky, italsky, nizozemsky, portugalsky, polsky, slovensky, švédsky, dánsky, norsky, finsky, turecky, rumunsky, bulharsky, řecky a ukrajinsky."
       },
       {
         "q": "Na jakých telefonech běží?",
-        "a": "Na iPhonu i Androidu, z jednoho sdíleného rodinného účtu. Všechno se mezi nimi synchronizuje."
+        "a": "Na iPhonu i Androidu, z jednoho sdíleného rodinného účtu. Všechno se mezi nimi synchronizuje — a s webovou aplikací taky."
       },
       {
         "q": "Můžou ji používat mé děti?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Můžu si vzít svůj současný kalendář?",
-        "a": "Ano. Daili umí zobrazit kalendář z vašeho telefonu přímo v zařízení a můžete připojit kalendář Google nebo Outlook, aby se jeho události objevily v rodinném kalendáři. Vyberete si které a kdykoli je můžete odpojit."
+        "a": "Daili umí zobrazit kalendář z vašeho telefonu vedle rodinného kalendáře, přímo v zařízení. Připojení kalendáře Google nebo Outlook bude brzy."
       },
       {
         "q": "Kde jsou uložená moje data?",

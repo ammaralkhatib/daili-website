@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Pengatur keluarga: kalender bersama, daftar, dan tugas",
-    "description": "Daili adalah cara sederhana mengurus hidup berkeluarga bersama-sama: satu kalender bersama, daftar belanja yang langsung diperbarui, dan tugas untuk seluruh keluarga. Gratis, tanpa iklan.",
+    "description": "Daili adalah cara sederhana mengurus hidup berkeluarga bersama: kalender bersama, daftar belanja langsung, dan tugas seluruh keluarga — juga di web.",
     "ogTitle": "Daili — Pengatur keluarga",
-    "ogDescription": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang.",
+    "ogDescription": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang — di setiap ponsel dan di peramban.",
     "supportTitle": "Bantuan — Daili",
     "supportDescription": "Dapatkan bantuan soal Daili, atau hapus akunmu. Kami biasanya membalas dalam satu sampai dua hari.",
     "notfoundTitle": "Halaman tidak ditemukan — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · peramban web",
     "h1a": "Satu keluarga,",
     "h1b": "satu halaman.",
-    "lead": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang. Dibuat untuk orang tua, untuk anak dengan akun sendiri, dan untuk si kecil yang kamu kelola.",
+    "lead": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang. Di setiap ponsel — dan di komputer juga.",
     "note": "Gratis · Tanpa iklan · Datamu tetap di Uni Eropa",
+    "webLink": "Buka di peramban",
+    "notes": [
+      "Gratis",
+      "Tanpa iklan",
+      "Server di Uni Eropa"
+    ],
     "altCalendar": "Kalender bulanan Daili",
     "altHome": "Layar utama Daili dengan kotak-kotak fitur"
   },
 
   "howItWorks": {
+    "eyebrow": "Mulai",
     "h2": "Siap dalam waktu sekitar satu menit",
     "steps": [
       {
         "h3": "Unduh aplikasinya",
-        "p": "Gratis di iPhone dan Android. Tanpa kartu kredit, tanpa masa coba yang habis."
+        "p": "Gratis di iPhone dan Android — atau buka app.daili.app di komputer. Tanpa kartu kredit, tanpa masa coba yang habis."
       },
       {
         "h3": "Buat keluargamu",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Perbandingan",
     "h2": "Kenapa tidak pakai kalender bersama saja?",
     "lead": "Google Kalender sangat bagus untuk urusan kalender. Tapi hidup berkeluarga bukan cuma soal jadwal — dan papan tulis di dapur tidak ikut ke supermarket.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Kalender bersama", "paper": "Kertas dan papan" },
@@ -86,12 +95,14 @@
       "Rencana makan sepekan dan resep",
       "Anak punya akun sendiri",
       "Ulang tahun diingat setiap tahun",
+      "Jalan di ponsel dan di peramban",
       "Tanpa iklan, tidak ada yang dijual"
     ],
     "legend": "✓ ya · ~ sebagian · — tidak"
   },
 
   "pricing": {
+    "eyebrow": "Harga",
     "h2": "Gratis — dan gratis untukmu, selamanya",
     "lead": "Daili hari ini tidak memungut biaya apa pun. Tanpa iklan, tanpa pelacakan, dan tanpa apa pun yang dijual ke siapa pun.",
     "points": [
@@ -99,6 +110,10 @@
       "Tanpa kartu kredit, tanpa masa coba, tanpa fitur yang dikunci",
       "Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis untukmu"
     ],
+    "big": "€0",
+    "bigNote": "per keluarga · tanpa jebakan",
+    "promiseTitle": "Janji kami",
+    "promise": "Setiap keluarga yang bergabung sebelum kami menambah fitur berbayar tetap mendapat semuanya gratis selamanya — termasuk yang kami tambahkan nanti.",
     "earlyBirdTitle": "Keluarga pertama",
     "earlyBird": "1000 keluarga pertama yang bergabung tetap dapat semuanya gratis selamanya — termasuk yang kami tambahkan nanti.",
     "cta": "Pakai Daili gratis"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Fitur",
+    "h2": "Semua yang diurus keluargamu, dalam satu aplikasi",
+    "lead": "Kalender, daftar, menu makan, dan ulang tahun — dibagikan kepada yang perlu melihatnya, dan tidak ke siapa pun lagi."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Kalender",
@@ -122,7 +143,7 @@
         "Acara berwarna lengkap dengan kategori, lokasi, dan catatan",
         "Pengulangan yang benar — sepak bola tiap Selasa, piano dua pekan sekali",
         "Pengingat di setiap ponsel di keluarga",
-        "Hari libur untuk 36 negara; acara pribadi tetap pribadi"
+        "Hari libur untuk 35 negara; acara pribadi tetap pribadi"
       ],
       "alt": "Kalender bulanan dengan acara berwarna"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Aplikasi web",
+    "h2": "Juga di komputer",
+    "p": "Keluarga yang sama, rencana yang sama — di jendela peramban, di app.daili.app. Susun pekanmu di layar besar, dan tambahkan belanjaan dari ponsel di dapur.",
+    "points": [
+      "Masuk dengan akun yang sama; semuanya tetap tersinkron",
+      "Kalender, daftar belanja, tugas, resep, menu makan, ulang tahun, dan keluarga",
+      "Tidak ada yang perlu dipasang — jalan di peramban modern mana pun"
+    ],
+    "cta": "Buka app.daili.app",
+    "note": "Foto dan dokumen hanya ada di ponselmu, jadi tidak ditampilkan di peramban. Aplikasi web tersedia dalam bahasa Inggris dan Jerman."
+  },
+
   "faq": {
+    "eyebrow": "Tanya jawab",
     "h2": "Pertanyaan dan jawaban",
     "items": [
       {
         "q": "Berapa harga Daili?",
-        "a": "Tidak ada. Daili 1.0 gratis — tanpa iklan dan tanpa penjualan data. Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis."
+        "a": "Tidak ada. Daili gratis — tanpa iklan dan tanpa penjualan data. Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis."
+      },
+      {
+        "q": "Apakah ada versi web?",
+        "a": "Ada. Buka <a href=\"https://app.daili.app\">app.daili.app</a> di peramban mana pun di komputer dan masuk dengan akun yang sama. Kalender, daftar, menu makan, ulang tahun, dan keluarga semuanya ada; foto dan dokumen tetap di ponsel. Aplikasi web tersedia dalam bahasa Inggris dan Jerman."
       },
       {
         "q": "Aplikasinya berbahasa apa saja?",
-        "a": "Sebelas bahasa, sepenuhnya — termasuk pengingat yang dikirimnya: Inggris, Jerman, Belanda, Prancis, Italia, Spanyol, Portugis, Polandia, Swedia, Denmark, dan Norwegia. Bahasa Indonesia belum termasuk: situs ini berbahasa Indonesia, tetapi aplikasinya sendiri untuk sementara masih berbahasa Inggris."
+        "a": "Sembilan belas bahasa, sepenuhnya — termasuk pengingat yang dikirimnya: Inggris, Jerman, Prancis, Spanyol, Italia, Belanda, Portugis, Polandia, Ceko, Slovakia, Swedia, Denmark, Norwegia, Finlandia, Turki, Rumania, Bulgaria, Yunani, dan Ukraina. Bahasa Indonesia belum ada — sampai saat itu aplikasinya berjalan dalam bahasa Inggris."
       },
       {
         "q": "Jalan di ponsel apa saja?",
-        "a": "Di iPhone dan Android, dari satu akun keluarga yang sama. Semuanya tersinkron di antara keduanya."
+        "a": "Di iPhone dan Android, dari satu akun keluarga yang sama. Semuanya tersinkron di antara keduanya — dan dengan aplikasi web."
       },
       {
         "q": "Anak-anakku boleh memakainya?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Bisa membawa kalender yang sudah kupakai?",
-        "a": "Bisa. Daili bisa menampilkan kalender bawaan ponselmu di perangkat, dan kamu bisa menghubungkan kalender Google atau Outlook supaya acaranya muncul di kalender keluarga. Kamu yang memilih mana saja, dan bisa memutusnya kapan pun."
+        "a": "Daili bisa menampilkan kalender bawaan ponselmu di samping kalender keluarga, di perangkat. Menghubungkan kalender Google atau Outlook segera hadir."
       },
       {
         "q": "Di mana datanya disimpan?",

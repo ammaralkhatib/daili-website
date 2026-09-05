@@ -736,6 +736,7 @@ export const COMPARE_ROWS = [
   { daili: 'y', gcal: 'n', paper: 'n' }, // meal plan and recipes
   { daili: 'y', gcal: 'p', paper: 'n' }, // kids get their own login
   { daili: 'y', gcal: 'n', paper: 'n' }, // birthdays remembered every year
+  { daili: 'y', gcal: 'y', paper: 'n' }, // works on the phone and in the browser
   { daili: 'y', gcal: 'n', paper: 'y' }, // no ads, nothing sold
 ];
 

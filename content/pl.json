@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Organizer rodzinny: wspólny kalendarz, listy i zadania",
-    "description": "Daili to prosty sposób, żeby ogarnąć życie rodzinne razem: jeden wspólny kalendarz, listy zakupów aktualizowane na bieżąco i zadania dla całej rodziny. Za darmo, bez reklam.",
+    "description": "Daili to prosty sposób, żeby ogarnąć życie rodzinne razem: wspólny kalendarz, listy zakupów na bieżąco i zadania dla całej rodziny — także w przeglądarce.",
     "ogTitle": "Daili — Organizer rodzinny",
-    "ogDescription": "Jedno spokojne miejsce na tydzień waszej rodziny: wspólny kalendarz, listy zakupów i zadania, które widzą wszyscy.",
+    "ogDescription": "Jedno spokojne miejsce na tydzień waszej rodziny: wspólny kalendarz, listy zakupów i zadania, które widzą wszyscy — na każdym telefonie i w przeglądarce.",
     "supportTitle": "Pomoc — Daili",
     "supportDescription": "Uzyskaj pomoc z Daili albo usuń konto. Zwykle odpowiadamy w ciągu dnia lub dwóch.",
     "notfoundTitle": "Nie znaleziono strony — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · przeglądarka",
     "h1a": "Cała rodzina",
     "h1b": "na jednej stronie.",
-    "lead": "Jedno spokojne miejsce na tydzień waszej rodziny: wspólny kalendarz, listy zakupów i zadania, które widzą wszyscy. Dla rodziców, dla dzieci z własnym logowaniem i dla najmłodszych, którymi zarządzacie wy.",
+    "lead": "Jedno spokojne miejsce na tydzień waszej rodziny: wspólny kalendarz, listy zakupów i zadania, które widzą wszyscy. Na każdym telefonie — i na komputerze też.",
     "note": "Za darmo · Bez reklam · Twoje dane zostają w UE",
+    "webLink": "Otwórz w przeglądarce",
+    "notes": [
+      "Za darmo",
+      "Bez reklam",
+      "Serwery w UE"
+    ],
     "altCalendar": "Kalendarz miesięczny w Daili",
     "altHome": "Ekran główny Daili z kafelkami funkcji"
   },
 
   "howItWorks": {
+    "eyebrow": "Pierwsze kroki",
     "h2": "Gotowe w mniej więcej minutę",
     "steps": [
       {
         "h3": "Pobierz aplikację",
-        "p": "Za darmo na iPhone'a i Androida. Bez karty i bez okresu próbnego, który się kończy."
+        "p": "Za darmo na iPhone'a i Androida — albo otwórz app.daili.app na komputerze. Bez karty i bez okresu próbnego, który się kończy."
       },
       {
         "h3": "Załóż rodzinę",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Porównanie",
     "h2": "Dlaczego nie po prostu wspólny kalendarz?",
     "lead": "Kalendarz Google świetnie radzi sobie z kalendarzami. Ale życie rodzinne to nie tylko terminy — a tablica w kuchni nie pójdzie z tobą do sklepu.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Wspólny kalendarz", "paper": "Kartka i tablica" },
@@ -86,12 +95,14 @@
       "Jadłospis na tydzień i przepisy",
       "Dzieci z własnym logowaniem",
       "Urodziny pamiętane co roku",
+      "Działa na telefonie i w przeglądarce",
       "Bez reklam, nic na sprzedaż"
     ],
     "legend": "✓ tak · ~ częściowo · — nie"
   },
 
   "pricing": {
+    "eyebrow": "Cena",
     "h2": "Za darmo — i za darmo dla ciebie, na zawsze",
     "lead": "Daili dziś nic nie kosztuje. Bez reklam, bez śledzenia i bez sprzedawania czegokolwiek komukolwiek.",
     "points": [
@@ -99,6 +110,10 @@
       "Bez karty, bez okresu próbnego i bez zablokowanych funkcji",
       "Jeśli kiedyś dodamy płatne dodatki, wszystko, co dziś jest darmowe, zostanie darmowe dla ciebie"
     ],
+    "big": "€0",
+    "bigNote": "na rodzinę · bez haczyka",
+    "promiseTitle": "Nasza obietnica",
+    "promise": "Każda rodzina, która dołączy, zanim dodamy płatne dodatki, zachowa wszystko za darmo na zawsze — łącznie z tym, co dodamy później.",
     "earlyBirdTitle": "Pierwsze rodziny",
     "earlyBird": "Pierwsze 1000 rodzin, które dołączą, zachowa wszystko za darmo na zawsze — również to, co dodamy później.",
     "cta": "Pobierz Daili za darmo"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Funkcje",
+    "h2": "Wszystko, czym żongluje wasza rodzina, w jednej aplikacji",
+    "lead": "Kalendarz, listy, jadłospis i urodziny — udostępnione tym, którzy mają to widzieć, i nikomu więcej."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Kalendarz",
@@ -122,7 +143,7 @@
         "Kolorowe wydarzenia z kategoriami, miejscami i notatkami",
         "Powtarzanie zrobione porządnie — piłka w każdy wtorek, pianino co dwa tygodnie",
         "Przypomnienia na każdym telefonie w rodzinie",
-        "Święta dla 36 krajów; wydarzenia prywatne zostają prywatne"
+        "Święta dla 35 krajów; wydarzenia prywatne zostają prywatne"
       ],
       "alt": "Kalendarz miesięczny z kolorowymi wydarzeniami"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Aplikacja web",
+    "h2": "Także na komputerze",
+    "p": "Ta sama rodzina, te same plany — w oknie przeglądarki, na app.daili.app. Zaplanujcie tydzień na dużym ekranie, a zakupy dopiszcie w kuchni z telefonu.",
+    "points": [
+      "Zaloguj się tym samym kontem; wszystko zostaje zsynchronizowane",
+      "Kalendarz, listy zakupów, zadania, przepisy, jadłospis, urodziny i rodzina",
+      "Nic do instalowania — działa w każdej nowoczesnej przeglądarce"
+    ],
+    "cta": "Otwórz app.daili.app",
+    "note": "Zdjęcia i dokumenty są tylko na telefonie, więc w przeglądarce się nie pokazują. Aplikacja web jest po angielsku i po niemiecku."
+  },
+
   "faq": {
+    "eyebrow": "Pytania",
     "h2": "Pytania i odpowiedzi",
     "items": [
       {
         "q": "Ile kosztuje Daili?",
-        "a": "Nic. Daili 1.0 jest darmowe — bez reklam i bez sprzedaży danych. Jeśli kiedyś dodamy płatne dodatki, wszystko, co dziś jest darmowe, zostanie darmowe."
+        "a": "Nic. Daili jest darmowe — bez reklam i bez sprzedaży danych. Jeśli kiedyś dodamy płatne dodatki, wszystko, co dziś jest darmowe, zostanie darmowe."
+      },
+      {
+        "q": "Czy jest wersja przeglądarkowa?",
+        "a": "Tak. Otwórz <a href=\"https://app.daili.app\">app.daili.app</a> w dowolnej przeglądarce na komputerze i zaloguj się tym samym kontem. Kalendarz, listy, jadłospis, urodziny i rodzina — wszystko tam jest; zdjęcia i dokumenty zostają na telefonie. Aplikacja web jest po angielsku i po niemiecku."
       },
       {
         "q": "W jakich językach mówi aplikacja?",
-        "a": "W jedenastu, w pełni — łącznie z przypomnieniami, które wysyła: po polsku, angielsku, niemiecku, niderlandzku, francusku, włosku, hiszpańsku, portugalsku, szwedzku, duńsku i norwesku."
+        "a": "Aplikacja mówi w 19 językach, w pełni — łącznie z przypomnieniami, które wysyła: po polsku, angielsku, niemiecku, francusku, hiszpańsku, włosku, niderlandzku, portugalsku, czesku, słowacku, szwedzku, duńsku, norwesku, fińsku, turecku, rumuńsku, bułgarsku, grecku i ukraińsku."
       },
       {
         "q": "Na jakich telefonach działa?",
-        "a": "Na iPhonie i Androidzie, z jednego wspólnego konta rodzinnego. Wszystko synchronizuje się między nimi."
+        "a": "Na iPhonie i Androidzie, z jednego wspólnego konta rodzinnego. Wszystko synchronizuje się między nimi — i z aplikacją web."
       },
       {
         "q": "Czy moje dzieci mogą z niej korzystać?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Czy mogę przenieść swój obecny kalendarz?",
-        "a": "Tak. Daili pokaże kalendarz z twojego telefonu na samym urządzeniu, a kalendarz Google albo Outlooka możesz podłączyć tak, żeby jego wydarzenia pojawiały się w kalendarzu rodzinnym. Sam wybierasz które i w każdej chwili możesz je odłączyć."
+        "a": "Daili pokaże kalendarz z twojego telefonu obok kalendarza rodzinnego, na samym urządzeniu. Podłączenie kalendarza Google albo Outlooka będzie wkrótce."
       },
       {
         "q": "Gdzie są przechowywane moje dane?",

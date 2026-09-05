@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Perhekalenteri: yhteinen kalenteri, listat ja tehtävät",
-    "description": "Daili on helppo tapa pitää perhe-elämä kasassa yhdessä: yksi yhteinen kalenteri, kauppalistat jotka päivittyvät heti ja tehtävät koko perheelle. Ilmainen, ei mainoksia.",
+    "description": "Daili on helppo tapa pitää perhe-elämä kasassa yhdessä: yhteinen kalenteri, kauppalistat heti ja tehtävät koko perheelle — myös selaimessa.",
     "ogTitle": "Daili — Perhekalenteri",
-    "ogDescription": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät.",
+    "ogDescription": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät — joka puhelimessa ja selaimessa.",
     "supportTitle": "Tuki — Daili",
     "supportDescription": "Saat apua Dailin käyttöön tai voit poistaa tilisi. Vastaamme yleensä päivän tai kahden kuluessa.",
     "notfoundTitle": "Sivua ei löytynyt — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · selain",
     "h1a": "Koko perhe",
     "h1b": "samalla sivulla.",
-    "lead": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät. Tehty vanhemmille, omilla tunnuksilla kirjautuville lapsille ja niille pienimmille, joita hoidat heidän puolestaan.",
+    "lead": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät. Joka puhelimessa — ja tietokoneellakin.",
     "note": "Ilmainen · Ei mainoksia · Tietosi pysyvät EU:ssa",
+    "webLink": "Avaa selaimessa",
+    "notes": [
+      "Ilmainen",
+      "Ei mainoksia",
+      "Palvelimet EU:ssa"
+    ],
     "altCalendar": "Dailin kuukausikalenteri",
     "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
   },
 
   "howItWorks": {
+    "eyebrow": "Näin aloitat",
     "h2": "Valmista noin minuutissa",
     "steps": [
       {
         "h3": "Hanki sovellus",
-        "p": "Ilmainen iPhonelle ja Androidille. Ei korttia eikä kokeilujaksoa, joka loppuu kesken."
+        "p": "Ilmainen iPhonelle ja Androidille — tai avaa app.daili.app tietokoneella. Ei korttia eikä kokeilujaksoa, joka loppuu kesken."
       },
       {
         "h3": "Luo perheesi",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Vertailu",
     "h2": "Miksei vain jaettu kalenteri?",
     "lead": "Google-kalenteri on kalentereissa todella hyvä. Mutta perhe-elämä ei ole pelkkiä menoja — eikä keittiön taulu lähde mukaan kauppaan.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Jaettu kalenteri", "paper": "Paperi ja taulu" },
@@ -86,12 +95,14 @@
       "Viikon ruokalista ja reseptit",
       "Lapsille omat tunnukset",
       "Syntymäpäivät muistissa joka vuosi",
+      "Toimii puhelimessa ja selaimessa",
       "Ei mainoksia, ei mitään myytävänä"
     ],
     "legend": "✓ kyllä · ~ osittain · — ei"
   },
 
   "pricing": {
+    "eyebrow": "Hinta",
     "h2": "Ilmainen — ja sinulle ilmainen ikuisesti",
     "lead": "Daili ei maksa tänään mitään. Ei mainoksia, ei seurantaa eikä mitään myytävää kenellekään.",
     "points": [
@@ -99,6 +110,10 @@
       "Ei korttia, ei kokeilujaksoa eikä lukittuja ominaisuuksia",
       "Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy sinulle ilmaisena"
     ],
+    "big": "€0",
+    "bigNote": "perhettä kohti · ei koukkuja",
+    "promiseTitle": "Lupauksemme",
+    "promise": "Jokainen perhe, joka tulee mukaan ennen kuin lisäämme maksullisia lisiä, pitää kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin.",
     "earlyBirdTitle": "Ensimmäiset perheet",
     "earlyBird": "Ensimmäiset 1000 mukaan tullutta perhettä pitävät kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin.",
     "cta": "Hanki Daili ilmaiseksi"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Ominaisuudet",
+    "h2": "Kaikki mitä perheesi jongleeraa, yhdessä sovelluksessa",
+    "lead": "Kalenteri, listat, ruokalista ja syntymäpäivät — jaettuna niiden kanssa, joiden ne kuuluu nähdä, eikä kenenkään muun."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Kalenteri",
@@ -122,7 +143,7 @@
         "Värikoodatut menot kategorioineen, paikkoineen ja muistiinpanoineen",
         "Toistot kunnolla tehtyinä — jalkapallo joka tiistai, piano joka toinen viikko",
         "Muistutukset jokaiseen perheen puhelimeen",
-        "Pyhäpäivät 36 maasta; yksityiset menot pysyvät yksityisinä"
+        "Pyhäpäivät 35 maasta; yksityiset menot pysyvät yksityisinä"
       ],
       "alt": "Kuukausikalenteri värillisine menoineen"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Verkkosovellus",
+    "h2": "Myös tietokoneella",
+    "p": "Sama perhe, samat suunnitelmat — selainikkunassa osoitteessa app.daili.app. Suunnittele viikko isolta näytöltä ja lisää ostokset keittiössä puhelimella.",
+    "points": [
+      "Kirjaudu samalla tilillä; kaikki pysyy synkassa",
+      "Kalenteri, kauppalistat, tehtävät, reseptit, ruokalista, syntymäpäivät ja perhe",
+      "Ei mitään asennettavaa — toimii jokaisessa nykyselaimessa"
+    ],
+    "cta": "Avaa app.daili.app",
+    "note": "Kuvat ja asiakirjat ovat vain puhelimessa, joten niitä ei näytetä selaimessa. Verkkosovellus on englanniksi ja saksaksi."
+  },
+
   "faq": {
+    "eyebrow": "Kysymykset",
     "h2": "Kysymyksiä ja vastauksia",
     "items": [
       {
         "q": "Mitä Daili maksaa?",
-        "a": "Ei mitään. Daili 1.0 on ilmainen — ei mainoksia eikä tietojen myyntiä. Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy ilmaisena."
+        "a": "Ei mitään. Daili on ilmainen — ei mainoksia eikä tietojen myyntiä. Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy ilmaisena."
+      },
+      {
+        "q": "Onko siitä selainversio?",
+        "a": "On. Avaa <a href=\"https://app.daili.app\">app.daili.app</a> millä tahansa selaimella tietokoneella ja kirjaudu samalla tilillä. Kalenteri, listat, ruokalista, syntymäpäivät ja perhe ovat kaikki siellä; kuvat ja asiakirjat pysyvät puhelimessa. Verkkosovellus on englanniksi ja saksaksi."
       },
       {
         "q": "Mitä kieliä sovellus puhuu?",
-        "a": "Yhtätoista, kokonaan — myös lähettämänsä muistutukset: englantia, saksaa, hollantia, ranskaa, italiaa, espanjaa, portugalia, puolaa, ruotsia, tanskaa ja norjaa. Suomi ei ole vielä joukossa: tämä sivusto on suomeksi, mutta itse sovellus on toistaiseksi englanniksi."
+        "a": "Sovellus puhuu 19 kieltä, kokonaan — myös lähettämänsä muistutukset: suomea, englantia, saksaa, ranskaa, espanjaa, italiaa, hollantia, portugalia, puolaa, tšekkiä, slovakkia, ruotsia, tanskaa, norjaa, turkkia, romaniaa, bulgariaa, kreikkaa ja ukrainaa."
       },
       {
         "q": "Millä puhelimilla se toimii?",
-        "a": "iPhonella ja Androidilla, yhdestä ja samasta jaetusta perhetilistä. Kaikki synkronoituu niiden välillä."
+        "a": "iPhonella ja Androidilla, yhdestä ja samasta jaetusta perhetilistä. Kaikki synkronoituu niiden välillä — ja verkkosovelluksen kanssa."
       },
       {
         "q": "Voivatko lapseni käyttää sitä?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Voinko tuoda nykyisen kalenterini?",
-        "a": "Voit. Daili osaa näyttää puhelimesi oman kalenterin laitteella, ja voit yhdistää Google- tai Outlook-kalenterin niin että sen menot näkyvät perhekalenterissa. Valitset itse mitkä, ja voit katkaista yhteyden milloin tahansa."
+        "a": "Daili osaa näyttää puhelimesi oman kalenterin perhekalenterin rinnalla laitteella. Google- tai Outlook-kalenterin yhdistäminen tulee pian."
       },
       {
         "q": "Missä tietoni säilytetään?",

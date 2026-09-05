@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Gezinsplanner: gedeelde agenda, lijsten en taken",
-    "description": "Daili is de simpele manier om het gezinsleven samen te regelen: één gedeelde agenda, boodschappenlijsten die live meelopen en taken voor iedereen. Gratis, zonder reclame.",
+    "description": "Daili is de simpele manier om het gezinsleven samen te regelen: gedeelde agenda, boodschappenlijsten en taken voor iedereen — op telefoon en op het web.",
     "ogTitle": "Daili — Gezinsplanner",
-    "ogDescription": "Eén rustige plek voor de week van je gezin: gedeelde agenda, boodschappenlijsten en taken die iedereen ziet.",
+    "ogDescription": "Eén rustige plek voor de week van je gezin: gedeelde agenda, boodschappenlijsten en taken die iedereen ziet — op elke telefoon en in de browser.",
     "supportTitle": "Support — Daili",
     "supportDescription": "Hulp bij Daili, of je account verwijderen. We antwoorden meestal binnen een dag of twee.",
     "notfoundTitle": "Pagina niet gevonden — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · webbrowser",
     "h1a": "Jullie gezin,",
     "h1b": "op één lijn.",
-    "lead": "Eén rustige plek voor de week van je gezin: een gedeelde agenda, boodschappenlijsten en taken die iedereen ziet. Gemaakt voor ouders, voor kinderen met een eigen login en voor de kleintjes die jij voor hen beheert.",
+    "lead": "Eén rustige plek voor de week van je gezin: een gedeelde agenda, boodschappenlijsten en taken die iedereen ziet. Op elke telefoon — en ook op de computer.",
     "note": "Gratis · Zonder reclame · Je gegevens blijven in de EU",
+    "webLink": "Openen in je browser",
+    "notes": [
+      "Gratis",
+      "Zonder reclame",
+      "Servers in de EU"
+    ],
     "altCalendar": "Maandagenda van Daili",
     "altHome": "Beginscherm van Daili met de tegels van de functies"
   },
 
   "howItWorks": {
+    "eyebrow": "Aan de slag",
     "h2": "In ongeveer een minuut geregeld",
     "steps": [
       {
         "h3": "Haal de app",
-        "p": "Gratis op iPhone en Android. Zonder creditcard en zonder proefperiode die afloopt."
+        "p": "Gratis op iPhone en Android — of open app.daili.app op de computer. Zonder creditcard en zonder proefperiode die afloopt."
       },
       {
         "h3": "Maak je gezin aan",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Vergelijking",
     "h2": "Waarom niet gewoon een gedeelde agenda?",
     "lead": "Google Agenda is heel goed in agenda's. Maar het gezinsleven bestaat niet alleen uit afspraken — en een bord in de keuken gaat niet mee naar de supermarkt.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Gedeelde agenda", "paper": "Papier en bord" },
@@ -86,12 +95,14 @@
       "Weekmenu en receptenboek",
       "Kinderen met een eigen login",
       "Verjaardagen elk jaar onthouden",
+      "Werkt op de telefoon en in de browser",
       "Geen reclame, niets verkocht"
     ],
     "legend": "✓ ja · ~ deels · — nee"
   },
 
   "pricing": {
+    "eyebrow": "Prijs",
     "h2": "Gratis — en voor jou gratis, voor altijd",
     "lead": "Daili kost vandaag niets. Geen reclame, geen tracking, niets dat aan wie dan ook verkocht wordt.",
     "points": [
@@ -99,6 +110,10 @@
       "Geen creditcard, geen proefperiode, geen functies op slot",
       "Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is voor jou gratis"
     ],
+    "big": "€0",
+    "bigNote": "per gezin · geen addertje",
+    "promiseTitle": "Onze belofte",
+    "promise": "Elk gezin dat erbij komt voordat we betaalde extra's toevoegen, houdt alles voor altijd gratis — ook alles wat we later toevoegen.",
     "earlyBirdTitle": "Eerste gezinnen",
     "earlyBird": "De eerste 1000 gezinnen die meedoen houden alles voor altijd gratis — ook wat we er later bij bouwen.",
     "cta": "Daili gratis halen"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Functies",
+    "h2": "Alles wat je gezin jongleert, in één app",
+    "lead": "Agenda, lijsten, maaltijden en verjaardagen — gedeeld met de mensen die het moeten zien, en met niemand anders."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Agenda",
@@ -122,7 +143,7 @@
         "Afspraken met kleur, categorie, locatie en notities",
         "Herhalingen die kloppen — voetbal elke dinsdag, piano om de week",
         "Herinneringen op elke telefoon in het gezin",
-        "Feestdagen van 36 landen; privé-afspraken blijven privé"
+        "Feestdagen van 35 landen; privé-afspraken blijven privé"
       ],
       "alt": "Maandagenda met gekleurde afspraken"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Webapp",
+    "h2": "Ook op de computer",
+    "p": "Hetzelfde gezin, dezelfde plannen — in een browservenster op app.daili.app. Plan de week op een groot scherm en zet de boodschappen erbij op je telefoon in de keuken.",
+    "points": [
+      "Log in met hetzelfde account; alles blijft synchroon",
+      "Agenda, boodschappenlijsten, taken, recepten, menuplanner, verjaardagen en gezin",
+      "Niets te installeren — werkt in elke moderne browser"
+    ],
+    "cta": "app.daili.app openen",
+    "note": "Foto's en documenten staan alleen op je telefoon en zijn daarom niet zichtbaar in de browser. De webapp is beschikbaar in het Engels en Duits."
+  },
+
   "faq": {
+    "eyebrow": "Vragen",
     "h2": "Vragen, beantwoord",
     "items": [
       {
         "q": "Wat kost Daili?",
-        "a": "Niets. Daili 1.0 is gratis — zonder reclame en zonder verkoop van gegevens. Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is gratis."
+        "a": "Niets. Daili is gratis — zonder reclame en zonder verkoop van gegevens. Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is gratis."
+      },
+      {
+        "q": "Is er een webversie?",
+        "a": "Ja. Open <a href=\"https://app.daili.app\">app.daili.app</a> in een willekeurige browser op de computer en log in met hetzelfde account. Agenda, lijsten, maaltijden, verjaardagen en gezin staan er allemaal; foto's en documenten blijven op je telefoon. De webapp is in het Engels en Duits."
       },
       {
         "q": "Welke talen spreekt de app?",
-        "a": "Elf, volledig — ook de herinneringen die hij stuurt: Nederlands, Engels, Duits, Frans, Italiaans, Spaans, Portugees, Pools, Zweeds, Deens en Noors."
+        "a": "De app spreekt 19 talen, volledig — ook de herinneringen die hij stuurt: Nederlands, Engels, Duits, Frans, Spaans, Italiaans, Portugees, Pools, Tsjechisch, Slowaaks, Zweeds, Deens, Noors, Fins, Turks, Roemeens, Bulgaars, Grieks en Oekraïens."
       },
       {
         "q": "Op welke telefoons werkt hij?",
-        "a": "Op iPhone en Android, vanuit één gedeeld gezinsaccount. Alles synchroniseert tussen beide."
+        "a": "Op iPhone en Android, vanuit één gedeeld gezinsaccount. Alles synchroniseert tussen beide — en met de webapp."
       },
       {
         "q": "Kunnen mijn kinderen hem gebruiken?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Kan ik mijn huidige agenda meenemen?",
-        "a": "Ja. Daili kan de agenda van je eigen telefoon op het apparaat tonen, en je kunt een Google- of Outlook-agenda koppelen zodat die afspraken in de gezinsagenda verschijnen. Jij kiest welke, en je kunt altijd weer ontkoppelen."
+        "a": "Daili kan de agenda van je eigen telefoon naast de gezinsagenda tonen, op het apparaat. Een Google- of Outlook-agenda koppelen komt binnenkort."
       },
       {
         "q": "Waar staan mijn gegevens?",

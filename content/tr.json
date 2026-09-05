@@ -4,9 +4,9 @@
 
   "meta": {
     "title": "Daili — Aile organizatörü: ortak takvim, listeler ve görevler",
-    "description": "Daili, aile hayatını birlikte yürütmenin kolay yolu: tek bir ortak takvim, anında güncellenen alışveriş listeleri ve tüm ailenin görevleri. Ücretsiz, reklamsız.",
+    "description": "Daili, aile hayatını birlikte yürütmenin kolay yolu: ortak takvim, anında güncellenen alışveriş listeleri ve tüm ailenin görevleri — web'de de var.",
     "ogTitle": "Daili — Aile organizatörü",
-    "ogDescription": "Ailenizin haftası için sakin bir yer: ortak takvim, alışveriş listeleri ve herkesin gördüğü görevler.",
+    "ogDescription": "Ailenizin haftası için sakin bir yer: ortak takvim, alışveriş listeleri ve herkesin gördüğü görevler — her telefonda ve tarayıcıda.",
     "supportTitle": "Destek — Daili",
     "supportDescription": "Daili hakkında yardım alın veya hesabınızı silin. Genellikle bir iki gün içinde yanıtlıyoruz.",
     "notfoundTitle": "Sayfa bulunamadı — Daili"
@@ -35,20 +35,28 @@
   },
 
   "hero": {
+    "kicker": "iPhone · Android · web tarayıcı",
     "h1a": "Bütün aile",
     "h1b": "aynı sayfada.",
-    "lead": "Ailenizin haftası için sakin bir yer: ortak bir takvim, alışveriş listeleri ve herkesin gördüğü görevler. Anne babalar, kendi girişi olan çocuklar ve onlar adına yönettiğiniz küçükler için tasarlandı.",
+    "lead": "Ailenizin haftası için sakin bir yer: ortak bir takvim, alışveriş listeleri ve herkesin gördüğü görevler. Her telefonda — ve bilgisayarda da.",
     "note": "Ücretsiz · Reklamsız · Verileriniz AB'de kalır",
+    "webLink": "Tarayıcıda aç",
+    "notes": [
+      "Ücretsiz",
+      "Reklamsız",
+      "Sunucular AB'de"
+    ],
     "altCalendar": "Daili aylık takvim",
     "altHome": "Daili ana ekranı ve özellik kutucukları"
   },
 
   "howItWorks": {
+    "eyebrow": "Başlarken",
     "h2": "Yaklaşık bir dakikada hazır",
     "steps": [
       {
         "h3": "Uygulamayı indirin",
-        "p": "iPhone ve Android'de ücretsiz. Kredi kartı yok, biten bir deneme süresi yok."
+        "p": "iPhone ve Android'de ücretsiz — ya da bilgisayarınızda app.daili.app adresini açın. Kredi kartı yok, biten bir deneme süresi yok."
       },
       {
         "h3": "Ailenizi oluşturun",
@@ -75,6 +83,7 @@
   },
 
   "compare": {
+    "eyebrow": "Karşılaştırma",
     "h2": "Neden sadece ortak bir takvim olmasın?",
     "lead": "Google Takvim, takvim işini gerçekten iyi yapıyor. Ama aile hayatı yalnızca randevulardan ibaret değil — ve mutfaktaki tahta sizinle markete gelmiyor.",
     "cols": { "feature": "", "daili": "Daili", "gcal": "Ortak takvim", "paper": "Kâğıt ve tahta" },
@@ -86,12 +95,14 @@
       "Haftalık yemek planı ve tarifler",
       "Çocuklara kendi girişleri",
       "Doğum günleri her yıl hatırlanır",
+      "Telefonda ve tarayıcıda çalışır",
       "Reklam yok, satılan hiçbir şey yok"
     ],
     "legend": "✓ var · ~ kısmen · — yok"
   },
 
   "pricing": {
+    "eyebrow": "Fiyat",
     "h2": "Ücretsiz — ve sizin için sonsuza dek ücretsiz",
     "lead": "Daili bugün hiçbir şeye mal olmuyor. Reklam yok, takip yok, kimseye satılan hiçbir şey yok.",
     "points": [
@@ -99,6 +110,10 @@
       "Kredi kartı yok, deneme süresi yok, kilitli özellik yok",
       "Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey sizin için ücretsiz kalır"
     ],
+    "big": "€0",
+    "bigNote": "aile başına · kancasız",
+    "promiseTitle": "Sözümüz",
+    "promise": "Ücretli ekler gelmeden katılan her aile her şeyi sonsuza dek ücretsiz tutar — sonradan eklediklerimiz dahil.",
     "earlyBirdTitle": "İlk aileler",
     "earlyBird": "Katılan ilk 1000 aile her şeyi sonsuza dek ücretsiz tutar — sonradan ekleyeceklerimiz dahil.",
     "cta": "Daili'yi ücretsiz al"
@@ -113,6 +128,12 @@
     ]
   },
 
+  "featuresSection": {
+    "eyebrow": "Özellikler",
+    "h2": "Ailenizin idare ettiği her şey, tek uygulamada",
+    "lead": "Takvim, listeler, yemekler ve doğum günleri — görmesi gerekenlerle paylaşılır, başka kimseyle değil."
+  },
+
   "features": {
     "calendar": {
       "eyebrow": "Takvim",
@@ -122,7 +143,7 @@
         "Kategorileri, yerleri ve notlarıyla renkli etkinlikler",
         "Doğru düzgün tekrarlar — her salı futbol, iki haftada bir piyano",
         "Ailedeki her telefonda hatırlatmalar",
-        "36 ülkenin resmî tatilleri; özel etkinlikler özel kalır"
+        "35 ülkenin resmî tatilleri; özel etkinlikler özel kalır"
       ],
       "alt": "Renkli etkinlikleriyle aylık takvim"
     },
@@ -181,20 +202,38 @@
     }
   },
 
+  "web": {
+    "eyebrow": "Web uygulaması",
+    "h2": "Bilgisayarda da",
+    "p": "Aynı aile, aynı planlar — app.daili.app adresinde bir tarayıcı penceresinde. Haftayı büyük ekranda planlayın, alışverişi mutfakta telefondan ekleyin.",
+    "points": [
+      "Aynı hesapla girin; her şey eşitlenmiş kalır",
+      "Takvim, alışveriş listeleri, görevler, tarifler, yemek planı, doğum günleri ve aile",
+      "Kurulacak bir şey yok — her modern tarayıcıda çalışır"
+    ],
+    "cta": "app.daili.app adresini aç",
+    "note": "Fotoğraflar ve belgeler yalnızca telefonunuzda durur, bu yüzden tarayıcıda gösterilmez. Web uygulaması İngilizce ve Almanca."
+  },
+
   "faq": {
+    "eyebrow": "SSS",
     "h2": "Sorular ve yanıtlar",
     "items": [
       {
         "q": "Daili ne kadar?",
-        "a": "Hiç. Daili 1.0 ücretsiz — reklamsız ve veri satışı olmadan. Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey ücretsiz kalır."
+        "a": "Hiç. Daili ücretsiz — reklamsız ve veri satışı olmadan. Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey ücretsiz kalır."
+      },
+      {
+        "q": "Web sürümü var mı?",
+        "a": "Var. Bilgisayarınızda herhangi bir tarayıcıda <a href=\"https://app.daili.app\">app.daili.app</a> adresini açın ve aynı hesapla girin. Takvim, listeler, yemekler, doğum günleri ve aile hepsi orada; fotoğraflar ve belgeler telefonunuzda kalır. Web uygulaması İngilizce ve Almanca."
       },
       {
         "q": "Uygulama hangi dilleri konuşuyor?",
-        "a": "On bir dili, eksiksiz — gönderdiği hatırlatmalar dahil: İngilizce, Almanca, Felemenkçe, Fransızca, İtalyanca, İspanyolca, Portekizce, Lehçe, İsveççe, Danca ve Norveççe. Türkçe henüz aralarında değil: bu site Türkçe, ama uygulamanın kendisi şimdilik İngilizce."
+        "a": "Uygulama 19 dili eksiksiz konuşuyor — gönderdiği hatırlatmalar dahil: Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Felemenkçe, Portekizce, Lehçe, Çekçe, Slovakça, İsveççe, Danca, Norveççe, Fince, Romence, Bulgarca, Yunanca ve Ukraynaca."
       },
       {
         "q": "Hangi telefonlarda çalışıyor?",
-        "a": "iPhone ve Android'de, tek bir ortak aile hesabından. Her şey ikisi arasında eşitlenir."
+        "a": "iPhone ve Android'de, tek bir ortak aile hesabından. Her şey ikisi arasında eşitlenir — web uygulamasıyla da."
       },
       {
         "q": "Çocuklarım kullanabilir mi?",
@@ -206,7 +245,7 @@
       },
       {
         "q": "Şu anki takvimimi getirebilir miyim?",
-        "a": "Evet. Daili telefonunuzun kendi takvimini cihazda gösterebilir ve etkinlikleri aile takviminde görünsün diye bir Google veya Outlook takvimi bağlayabilirsiniz. Hangilerini siz seçersiniz ve istediğiniz zaman bağlantıyı kesebilirsiniz."
+        "a": "Daili telefonunuzun kendi takvimini aile takviminin yanında, cihazda gösterebilir. Google veya Outlook takvimi bağlamak yakında geliyor."
       },
       {
         "q": "Verilerim nerede tutuluyor?",
