@@ -450,6 +450,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'nobody-uses-the-family-calendar-app',
+    cluster: 'adoption',
+    title: 'Nobody in My Family Uses the Calendar App — 5 Reasons Why',
+    description: 'You installed it, added everything, and you are still the only one who opens it. The five reasons family apps get abandoned, and the fix for each one.',
+    h1: 'Nobody in My Family Uses the Calendar App',
+    published: '2026-09-08',
+    updated: '2026-09-08',
+    body: 'nobody-uses-the-family-calendar-app.en.html',
+    image: '/assets/img/blog/nobody-uses-the-family-calendar-app.webp',
+    imageAlt: 'A tired mother working at a laptop while her children play around her',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Should I just go back to a paper calendar on the fridge?',
+        a: 'For some households, genuinely yes. A fridge calendar has one enormous advantage: it is visible without anyone deciding to look. Its limits are that only people standing in the kitchen can see it and only one person tends to write on it. Many families end up with both — the wall calendar as the ambient display, the app as the thing that reaches the parent who is not at home.',
+      },
+      {
+        q: 'How long before a new habit sticks?',
+        a: 'Two weeks of daily use is the realistic marker, and the signal is not enthusiasm — it is somebody else entering something without being asked. If that has not happened by week two, adding features will not fix it.',
+      },
+      {
+        q: 'What if only one child refuses?',
+        a: 'Usually a teenager, and usually about privacy rather than the app. It is worth asking directly whether they mind everyone seeing everything they do. Many family apps allow private events; agreeing that some of their life stays theirs tends to end the resistance quickly.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Nothing here is specific to daili — the restart works in any app, including the one you already have.</p>
+<p>Two things we did build for reason 3: notifications are off by default and set per person, so nobody gets pinged for events that are not theirs. And there is no limit on how far ahead you can look, which is what makes the fortnightly review worth doing.</p>
+<p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
+    },
+  },
 ];
 
 /**
