@@ -1,6 +1,6 @@
 # Post 10 — How to Get Your Partner to Actually Use the Family Calendar
 
-Live at `/blog/get-partner-to-use-family-calendar/`. Two files as the recipe
+Live at `/blog/get-partner-to-use-family-calendar/`. Commit `f0efcc2`. Two files as the recipe
 describes, **plus the two ⏳ backlinks in posts 4 and 7 that this publish
 unblocks** — the recipe says to add each when its target publishes, and post 10
 is the target both were waiting on. Second post in the `adoption` cluster.
