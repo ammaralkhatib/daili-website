@@ -518,6 +518,48 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'family-app-children-data',
+    cluster: 'privacy',
+    title: 'Where Does Your Family App Store Your Children\'s Data?',
+    description: 'Family apps hold your children\'s schedules, schools and photos. Six questions to ask before you invite your kids in — and how to find the real answers.',
+    h1: 'Where Does Your Family App Store Your Children\'s Data?',
+    published: '2026-09-10',
+    updated: '2026-09-10',
+    body: 'family-app-children-data.en.html',
+    image: '/assets/img/blog/family-app-children-data.webp',
+    imageAlt: 'A woman sitting beside her young son while he uses a tablet',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Are family calendar apps safe for children?',
+        a: 'Most are, in the ordinary sense that they are not doing anything sinister. The question worth asking is narrower: how much do they collect, where does it live, and can you get it back or delete it. An app that answers all three clearly is usually a safe bet regardless of size.',
+      },
+      {
+        q: 'What is the difference between encrypted and on-device?',
+        a: 'Encrypted usually means the company holds your file in a scrambled form and can unscramble it. On-device means the file never left your phone. Both are reasonable; only one removes the company from the picture entirely.',
+      },
+      {
+        q: 'Should I use my child\'s real name in a family app?',
+        a: 'For a shared calendar, a first name is usually enough, and there is no benefit to a full legal name. Save the full details for the places that genuinely need them — school forms, medical records — rather than every app the family uses.',
+      },
+    ],
+    // Every line below is checkable against /privacy.html — that is the whole
+    // point of this box, and of the post it closes. Do not add a claim here
+    // that is not written there; in particular the Firebase sentence must stay
+    // beside "Germany", because "EU-hosted" on its own is a half-truth.
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Since this article is a list of questions, here are our own answers, so you can hold us to the same standard.</p>
+<p><strong>Server:</strong> Germany, with Host Europe GmbH. <strong>Firebase</strong> (Google) handles Google and Apple sign-in and push notifications, and processes limited technical data such as device tokens outside the EU under standard contractual clauses. Both halves are true and we would rather say both.</p>
+<p><strong>Funding:</strong> free today, with no ads, no advertising networks, no data sold, and no analytics on this website — no cookies either. By our own question 2 that should make you suspicious, so: daili is free because it is new and small, and if we ever add paid extras, everything free today stays free for the people already here.</p>
+<p><strong>Export:</strong> there is a data export endpoint.</p>
+<p><strong>Deletion:</strong> account deletion with a 30-day grace period, then a hard delete.</p>
+<p><strong>Photos and documents:</strong> the vault is stored <strong>on your device only</strong>. Vault files are never uploaded to our servers and are not in any backup we hold.</p>
+<p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
+    },
+  },
 ];
 
 /**
