@@ -53,7 +53,6 @@
     "h1b": "on the same page.",
     "@h1b": { "description": "Highlighted in forest green with a hand-drawn underline beneath it. Keep it short — this is the emphasised half of the headline." },
     "lead": "One calm place for your family's week: a shared calendar, shopping lists and to-dos everyone can see. On every phone — and on the computer, too.",
-    "note": "Free · No ads · Your data stays in the EU",
     "webLink": "Open in your browser",
     "notes": [
       "Free",
@@ -81,19 +80,6 @@
         "h3": "You're on the same page",
         "p": "Add something on your phone and it's on everyone else's in about a second — calendar, lists and to-dos alike."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "A look inside",
-    "lead": "The whole app, in six screens.",
-    "captions": [
-      "The home screen — everything one tap away",
-      "Your family's recipe box, with photos and one-tap import",
-      "Photos and documents, stored only on your phone",
-      "Shopping lists that update while you're in the store",
-      "Breakfast to dinner, planned for the week",
-      "Birthdays and celebrations, remembered every year"
     ]
   },
 
@@ -130,10 +116,7 @@
     "bigNote": "per family · no catch",
     "@bigNote": { "description": "Small line directly under the big price." },
     "promiseTitle": "Our promise",
-    "promise": "Every family that joins before we add paid extras keeps everything free forever — including anything we add later.",
-    "earlyBirdTitle": "Early bird",
-    "earlyBird": "The first 1000 families to join keep everything free forever — including anything we add later.",
-    "cta": "Get Daili free"
+    "promise": "Every family that joins before we add paid extras keeps everything free forever — including anything we add later."
   },
 
   "trust": {

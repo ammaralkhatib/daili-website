@@ -5,7 +5,6 @@
  * and nothing is hidden behind a script. */
 (function () {
   "use strict";
-  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- header shadow on scroll ---------- */
   var header = document.querySelector("header");
@@ -294,44 +293,4 @@
       sticky.hidden = entries[0].isIntersecting;
     }, { threshold: 0 }).observe(hero);
   }
-
-  if (reduced || !("IntersectionObserver" in window)) return;
-
-  /* ---------- scroll reveal ---------- */
-  var targets = [];
-  document.querySelectorAll("section.feature").forEach(function (sec) {
-    var txt = sec.querySelector(".txt");
-    var art = sec.querySelector(".art");
-    var alt = sec.classList.contains("alt");
-    if (txt) { txt.classList.add("reveal", alt ? "from-right" : "from-left"); targets.push(txt); }
-    if (art) { art.classList.add("reveal", alt ? "from-left" : "from-right", "d1"); targets.push(art); }
-  });
-  document.querySelectorAll(".trust h2, .faq h2, .steps h2, .gallery h2, .compare h2, .pricing h2").forEach(function (el) {
-    el.classList.add("reveal"); targets.push(el);
-  });
-  document.querySelectorAll(".trust .pill, .step-list li").forEach(function (el, i) {
-    el.classList.add("reveal", "d" + Math.min(i % 3 + 1, 3)); targets.push(el);
-  });
-  document.querySelectorAll(".faq details").forEach(function (el, i) {
-    el.classList.add("reveal", "d" + Math.min(i % 4, 3)); targets.push(el);
-  });
-
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-    });
-  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-  targets.forEach(function (el) { io.observe(el); });
-
-  /* Safety net. .reveal sets opacity:0 and only the observer above clears it,
-     so anything that stops the observer firing would leave real content
-     permanently invisible. Three seconds after load, reveal whatever is still
-     hidden and inside the viewport — the animation is a nicety, the text is not. */
-  setTimeout(function () {
-    targets.forEach(function (el) {
-      if (el.classList.contains("in")) return;
-      var r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight && r.bottom > 0) { el.classList.add("in"); io.unobserve(el); }
-    });
-  }, 3000);
 })();

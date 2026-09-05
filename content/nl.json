@@ -39,7 +39,6 @@
     "h1a": "Jullie gezin,",
     "h1b": "op één lijn.",
     "lead": "Eén rustige plek voor de week van je gezin: een gedeelde agenda, boodschappenlijsten en taken die iedereen ziet. Op elke telefoon — en ook op de computer.",
-    "note": "Gratis · Zonder reclame · Je gegevens blijven in de EU",
     "webLink": "Openen in je browser",
     "notes": [
       "Gratis",
@@ -66,19 +65,6 @@
         "h3": "Iedereen op één lijn",
         "p": "Wat jij op je telefoon zet, staat ongeveer een seconde later op die van de anderen — agenda, lijsten en taken net zo goed."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Een kijkje binnenin",
-    "lead": "De hele app, in zes schermen.",
-    "captions": [
-      "Het beginscherm — alles één tik ver weg",
-      "Het receptenboek van jullie gezin, met foto's en importeren in één tik",
-      "Foto's en documenten, alleen op je eigen telefoon bewaard",
-      "Boodschappenlijsten die bijwerken terwijl je in de winkel staat",
-      "Van ontbijt tot avondeten, gepland voor de hele week",
-      "Verjaardagen en feesten, elk jaar onthouden"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "per gezin · geen addertje",
     "promiseTitle": "Onze belofte",
-    "promise": "Elk gezin dat erbij komt voordat we betaalde extra's toevoegen, houdt alles voor altijd gratis — ook alles wat we later toevoegen.",
-    "earlyBirdTitle": "Eerste gezinnen",
-    "earlyBird": "De eerste 1000 gezinnen die meedoen houden alles voor altijd gratis — ook wat we er later bij bouwen.",
-    "cta": "Daili gratis halen"
+    "promise": "Elk gezin dat erbij komt voordat we betaalde extra's toevoegen, houdt alles voor altijd gratis — ook alles wat we later toevoegen."
   },
 
   "trust": {

@@ -39,7 +39,6 @@
     "h1a": "Tu familia,",
     "h1b": "en la misma página.",
     "lead": "Un lugar tranquilo para la semana de tu familia: un calendario compartido, listas de la compra y tareas que todos ven. En cada móvil — y también en el ordenador.",
-    "note": "Gratis · Sin anuncios · Tus datos se quedan en la UE",
     "webLink": "Abrir en el navegador",
     "notes": [
       "Gratis",
@@ -66,19 +65,6 @@
         "h3": "Todos en la misma página",
         "p": "Lo que añades en tu móvil aparece en el de los demás en aproximadamente un segundo: calendario, listas y tareas por igual."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Un vistazo por dentro",
-    "lead": "Toda la aplicación, en seis pantallas.",
-    "captions": [
-      "La pantalla de inicio: todo a un toque",
-      "El recetario de tu familia, con fotos e importación con un toque",
-      "Fotos y documentos, guardados solo en tu móvil",
-      "Listas de la compra que se actualizan mientras estás en la tienda",
-      "Del desayuno a la cena, planificado para toda la semana",
-      "Cumpleaños y celebraciones, recordados cada año"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "por familia · sin trampa",
     "promiseTitle": "Nuestra promesa",
-    "promise": "Cada familia que entre antes de que añadamos extras de pago se queda con todo gratis para siempre — incluido lo que añadamos más adelante.",
-    "earlyBirdTitle": "Primeras familias",
-    "earlyBird": "Las primeras 1000 familias que se unan lo conservan todo gratis para siempre, incluido lo que añadamos más adelante.",
-    "cta": "Consigue Daili gratis"
+    "promise": "Cada familia que entre antes de que añadamos extras de pago se queda con todo gratis para siempre — incluido lo que añadamos más adelante."
   },
 
   "trust": {

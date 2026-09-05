@@ -15,7 +15,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
-  PAGES, FEATURES, TRUST_ICONS, GALLERY, COMPARE_ROWS, COMPARE_MARKS, imageSize,
+  PAGES, FEATURES, TILE_ICONS, TRUST_ICONS, COMPARE_ROWS, COMPARE_MARKS, imageSize,
   SHOT_LOCALE,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
 } from './site.config.mjs';
@@ -303,15 +303,22 @@ function renderFooterLinks(loc) {
   return parts.join('\n      ');
 }
 
+/**
+ * The trust strip under the hero: three claims in a row, ruled top and bottom.
+ *
+ * Not cards. The old page put three bordered pills inside a bordered, tinted
+ * panel, and a card inside a card is the one thing the redesign review called
+ * out by name — so this is an inline row and the only chrome is the two rules
+ * .trust draws itself.
+ */
 function renderTrustPills(loc) {
   const pills = lookup(content[loc], 'trust.pills', `content/${loc}.json`);
   if (pills.length !== TRUST_ICONS.length) {
     throw new Error(`content/${loc}.json: trust.pills has ${pills.length} entries, expected ${TRUST_ICONS.length}`);
   }
-  return pills.map((pill, i) => `      <div class="pill">
-        <span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${TRUST_ICONS[i]}</svg></span>
-        <strong>${escapeHtml(pill.strong)}</strong>
-        <span>${escapeHtml(pill.span)}</span>
+  return pills.map((pill, i) => `      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TRUST_ICONS[i]}</svg>
+        <div><strong>${escapeHtml(pill.strong)}</strong><p>${escapeHtml(pill.span)}</p></div>
       </div>`).join('\n');
 }
 
@@ -348,59 +355,73 @@ const imgTag = (name, alt, cls, loc) => {
 };
 
 /**
- * The two hero phones. They are the only images the page does NOT lazy-load —
- * they are the largest contentful paint — so they stay written out in
- * landing.html with `fetchpriority="high"` and take only their src and their
- * intrinsic size from here, rather than going through imgTag.
+ * The hero device stack: the phone in front, the browser window behind it.
+ *
+ * These are the only images the page does NOT lazy-load — they are the largest
+ * contentful paint — so they stay written out in landing.html with
+ * `fetchpriority="high"` and take only their src and their intrinsic size from
+ * here, rather than going through imgTag.
+ *
+ * The phone screenshot is localized (shots/<loc>/shot-home.webp, from 012). The
+ * browser window is one file for every locale: web-calendar.webp is a capture of
+ * app.daili.app, and the web app speaks English and German only, so there is no
+ * 23-locale set to point at.
  */
 function renderHeroShots(loc) {
-  const { width, height } = imageSize('shot-');
+  const phone = imageSize('shot-');
+  const web = imageSize('web-');
   return {
-    width, height,
-    calendar: imgSrc('shot-calendar', loc),
+    width: phone.width, height: phone.height,
     home: imgSrc('shot-home', loc),
+    web: { src: imgSrc('web-calendar', loc), width: web.width, height: web.height },
   };
 }
 
+/**
+ * The feature grid — seven tiles, one per FEATURES entry, in one bento.
+ *
+ * This replaced seven full-width alternating text/screenshot blocks plus a
+ * six-screen gallery strip. Same seven features, same words, roughly a third of
+ * the scrolling: everything the app does is visible in one screenful instead of
+ * being paged through.
+ *
+ * `features.<key>.eyebrow` is deliberately not rendered. Every tile carries a
+ * glyph instead of a word, and the h3 already names the feature — but the key
+ * stays in content, because the eyebrows are the app's own canonical feature
+ * names (content/glossary.md) and re-translating them later is worse than
+ * leaving them.
+ */
 function renderFeatures(loc) {
   const where = `content/${loc}.json`;
-  return FEATURES.map((f, i) => {
+  return FEATURES.map((f) => {
     const c = lookup(content[loc], `features.${f.key}`, where);
     for (const k of ['eyebrow', 'h2', 'p', 'bullets', 'alt']) {
       if (!(k in c)) throw new Error(`missing key 'features.${f.key}.${k}' in ${where}`);
     }
-    const alt = i % 2 === 1 ? ' alt' : '';
-    const img = imgTag(f.img, c.alt, '', loc);
-    const art =
-      f.art === 'ill' ? `    <div class="art">${imgTag(f.img, c.alt, 'ill', loc)}</div>`
-      : f.art === 'duo' ? `    <div class="art duo">\n      <div class="phone small">${img}</div>\n    </div>`
-      : `    <div class="art phone small">${img}</div>`;
+    if (!(f.tile in TILE_ICONS)) {
+      throw new Error(`FEATURES '${f.key}' has tile '${f.tile}', which is not a key in TILE_ICONS (${Object.keys(TILE_ICONS).join(', ')})`);
+    }
     const bullets = c.bullets.length
-      ? `      <ul>\n${c.bullets.map((b) => `        <li>${escapeHtml(b)}</li>`).join('\n')}\n      </ul>\n`
+      ? `\n        <ul>\n${c.bullets.map((b) => `          <li>${escapeHtml(b)}</li>`).join('\n')}\n        </ul>`
       : '';
-    return `  <section class="feature${alt}">
-    <div class="txt">
-      <span class="eyebrow">${escapeHtml(c.eyebrow)}</span>
-      <h2>${escapeHtml(c.h2)}</h2>
-      <p>${escapeHtml(c.p)}</p>
-${bullets}    </div>
-${art}
-  </section>`;
-  }).join('\n\n');
-}
-
-function renderGallery(loc) {
-  const where = `content/${loc}.json`;
-  const caps = lookup(content[loc], 'gallery.captions', where);
-  if (caps.length !== GALLERY.length) {
-    throw new Error(`${where}: gallery.captions has ${caps.length} entries, GALLERY has ${GALLERY.length}`);
-  }
-  return GALLERY.map((name, i) => {
-    const shot = name.startsWith('shot-');
-    return `      <figure class="gallery-item${shot ? ' shot' : ''}">
-        ${imgTag(name, caps[i], '', loc)}
-        <figcaption>${escapeHtml(caps[i])}</figcaption>
-      </figure>`;
+    const copy = `        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TILE_ICONS[f.tile]}</svg></span>
+        <h3>${escapeHtml(c.h2)}</h3>
+        <p>${escapeHtml(c.p)}</p>${bullets}`;
+    // The family tile's five avatars: dots, no initials. A letter per dot would
+    // be five strings in 23 files for decoration nobody reads.
+    const avatars = f.tile === 'fam'
+      ? '\n      <div class="avs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>'
+      : '';
+    // A tile with a screenshot needs its words boxed away from the phone; the
+    // rest fill the tile.
+    const shot = f.shot
+      ? `\n      <div class="shot">${imgTag(f.shot, c.alt, '', loc)}</div>`
+      : '';
+    return `    <article class="tile t-${f.tile}">
+      <div class="copy">
+${copy}
+      </div>${avatars}${shot}
+    </article>`;
   }).join('\n');
 }
 
@@ -410,15 +431,38 @@ function renderCompareTable(loc) {
   if (cmp.rows.length !== COMPARE_ROWS.length) {
     throw new Error(`${where}: compare.rows has ${cmp.rows.length} labels, COMPARE_ROWS has ${COMPARE_ROWS.length} mark sets`);
   }
-  const cell = (mark) => {
+  // `d` marks every cell of the Daili column. The mock tints that column with
+  // `tr:has(td) td:nth-child(2)`, which Firefox ESR 115 — still shipping in
+  // Debian and on managed desktops — does not support, and an untinted column
+  // is a comparison table with no answer in it. So the class is on the cell as
+  // well, and the :has() rule in style.css is the progressive half.
+  const cell = (mark, daili) => {
     const glyph = COMPARE_MARKS[mark];
-    const cls = mark === 'y' ? 'yes' : mark === 'p' ? 'partly' : 'no';
-    return `<td class="mark ${cls}"><span aria-hidden="true">${glyph}</span></td>`;
+    return `<td class="${daili ? 'd ' : ''}${mark}"><span aria-hidden="true">${glyph}</span></td>`;
   };
-  const head = `        <tr><th scope="col">${escapeHtml(cmp.cols.feature)}</th><th scope="col" class="us">${escapeHtml(cmp.cols.daili)}</th><th scope="col">${escapeHtml(cmp.cols.gcal)}</th><th scope="col">${escapeHtml(cmp.cols.paper)}</th></tr>`;
+  const head = `        <tr><th scope="col">${escapeHtml(cmp.cols.feature)}</th><th scope="col" class="d">${escapeHtml(cmp.cols.daili)}</th><th scope="col">${escapeHtml(cmp.cols.gcal)}</th><th scope="col">${escapeHtml(cmp.cols.paper)}</th></tr>`;
   const body = COMPARE_ROWS.map((r, i) =>
-    `        <tr><th scope="row">${escapeHtml(cmp.rows[i])}</th>${cell(r.daili)}${cell(r.gcal)}${cell(r.paper)}</tr>`).join('\n');
-  return `      <table class="compare-table">\n        <thead>\n${head}\n        </thead>\n        <tbody>\n${body}\n        </tbody>\n      </table>`;
+    `        <tr><th scope="row">${escapeHtml(cmp.rows[i])}</th>${cell(r.daili, true)}${cell(r.gcal)}${cell(r.paper)}</tr>`).join('\n');
+  return `      <table class="cmp">\n        <thead>\n${head}\n        </thead>\n        <tbody>\n${body}\n        </tbody>\n      </table>`;
+}
+
+/**
+ * The FAQ. Rendered here rather than looped in the template for one reason: the
+ * first question is open on load, as in the mock, and the template engine's
+ * `{{# }}` has no index. A page whose FAQ is eight identical closed rows reads
+ * as a wall of chrome; one open answer shows the reader what they are.
+ */
+function renderFaq(loc) {
+  const where = `content/${loc}.json`;
+  const items = lookup(content[loc], 'faq.items', where);
+  return items.map((item, i) => {
+    for (const k of ['q', 'a']) {
+      if (!(k in item)) throw new Error(`missing field '${k}' in faq.items[${i}] in ${where}`);
+    }
+    // .a carries inline <a> markup in every locale, so it is written raw — the
+    // tag parity between locales is what check-content.mjs guards.
+    return `      <details${i === 0 ? ' open' : ''}><summary>${escapeHtml(item.q)}</summary><p>${item.a}</p></details>`;
+  }).join('\n');
 }
 
 // ---------------------------------------------------------------------------
@@ -725,9 +769,8 @@ function build() {
           heroShots: pg.id === 'landing' ? renderHeroShots(loc) : '',
           trustPills: pg.id === 'landing' ? renderTrustPills(loc) : '',
           features: pg.id === 'landing' ? renderFeatures(loc) : '',
-          gallery: pg.id === 'landing' ? renderGallery(loc) : '',
           compareTable: pg.id === 'landing' ? renderCompareTable(loc) : '',
-          testimonials: '',
+          faq: pg.id === 'landing' ? renderFaq(loc) : '',
           pricingHref: pg.id === 'landing' ? '#pricing' : `${dirFor(loc)}#pricing`,
           headExtra: '',
         },

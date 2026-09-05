@@ -1,89 +1,133 @@
+<!-- The home page, rebuilt from claude-prompts/2026-09-05/redesign-mock.html.
+     Section order is the mock's and is asserted in tools/check-build.mjs 15:
+     hero, trust strip, feature grid, web app, steps, comparison, price, FAQ.
+
+     Three blocks come out of build.mjs rather than a template loop, and each for
+     a reason the engine cannot express: the trust strip and the tiles need an
+     icon per item (site.config.mjs, not content), and the FAQ needs `open` on
+     the first <details> only, which needs a loop index. -->
 <main class="wrap" id="main">
 
   <section class="hero">
     <div class="copy">
+      <span class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>{{ hero.kicker }}</span>
       <h1>{{ hero.h1a }} <em>{{ hero.h1b }}</em></h1>
       <p class="lead">{{ hero.lead }}</p>
-      <div class="badges">
+      <div class="ctas badges">
 {{> storebadges }}
+          <a class="web-link" href="https://app.daili.app" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
       </div>
-      <p class="soon">{{ hero.note }}</p>
+      <p class="note">
+{{# hero.notes }}<span>{{ . }}</span>
+{{/}}      </p>
     </div>
-    <div class="hero-phones">
-      <div class="hp l"><div class="phone"><img src="{{ page.heroShots.calendar }}" alt="{{ hero.altCalendar }}" width="{{ page.heroShots.width }}" height="{{ page.heroShots.height }}" fetchpriority="high" decoding="async"></div></div>
-      <div class="hp r"><div class="phone"><img src="{{ page.heroShots.home }}" alt="{{ hero.altHome }}" width="{{ page.heroShots.width }}" height="{{ page.heroShots.height }}" fetchpriority="high" decoding="async"></div></div>
+
+    <!-- The phone is the product and keeps a real alt. The browser window
+         behind it is scenery for the same screenshot the web section shows in
+         full, so it is aria-hidden rather than described twice. -->
+    <div class="stack">
+      <div class="laptop" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app</span></div>
+        <img src="{{ page.heroShots.web.src }}" alt="" width="{{ page.heroShots.web.width }}" height="{{ page.heroShots.web.height }}" fetchpriority="high" decoding="async">
+      </div>
+      <div class="phone"><img src="{{ page.heroShots.home }}" alt="{{ hero.altHome }}" width="{{ page.heroShots.width }}" height="{{ page.heroShots.height }}" fetchpriority="high" decoding="async"></div>
     </div>
   </section>
 
-  <section class="trust">
-    <h2>{{ trust.h2 }}</h2>
-    <div class="trust-pills">
+  <div class="trust" role="group" aria-label="{{ trust.h2 }}">
 {{{ page.trustPills }}}
+  </div>
+
+  <section class="block" id="features">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">{{ featuresSection.eyebrow }}</span>
+        <h2>{{ featuresSection.h2 }}</h2>
+      </div>
+      <p class="section-lead">{{ featuresSection.lead }}</p>
+    </div>
+    <div class="bento">
+{{{ page.features }}}
     </div>
   </section>
 
-  <section class="steps">
-    <h2>{{ howItWorks.h2 }}</h2>
-    <ol class="step-list">
+  <section class="block" id="web">
+    <div class="web">
+      <div class="copy">
+        <span class="eyebrow">{{ web.eyebrow }}</span>
+        <h2>{{ web.h2 }}</h2>
+        <p>{{ web.p }}</p>
+        <ul>
+{{# web.points }}          <li>{{ . }}</li>
+{{/}}        </ul>
+        <a class="btn btn-primary" href="https://app.daili.app" rel="noopener">{{ web.cta }}</a>
+        <p class="muted">{{ web.note }}</p>
+      </div>
+      <div class="laptop" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
+        <img src="{{ page.heroShots.web.src }}" alt="" width="{{ page.heroShots.web.width }}" height="{{ page.heroShots.web.height }}" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">{{ howItWorks.eyebrow }}</span>
+        <h2>{{ howItWorks.h2 }}</h2>
+      </div>
+    </div>
+    <div class="steps">
 {{# howItWorks.steps }}
-      <li>
+      <div class="step">
         <h3>{{ .h3 }}</h3>
         <p>{{ .p }}</p>
-      </li>
+      </div>
 {{/}}
-    </ol>
-  </section>
-
-  <section class="feature-list" id="features">
-{{{ page.features }}}
-  </section>
-
-  <section class="gallery">
-    <h2>{{ gallery.h2 }}</h2>
-    <p class="section-lead">{{ gallery.lead }}</p>
-    <div class="gallery-strip" tabindex="0" role="group" aria-label="{{ gallery.h2 }}">
-{{{ page.gallery }}}
     </div>
   </section>
 
-  <section class="compare">
-    <h2>{{ compare.h2 }}</h2>
-    <p class="section-lead">{{ compare.lead }}</p>
+  <section class="block" id="compare">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">{{ compare.eyebrow }}</span>
+        <h2>{{ compare.h2 }}</h2>
+        <p class="section-lead">{{ compare.lead }}</p>
+      </div>
+    </div>
     <div class="table-scroll">
 {{{ page.compareTable }}}
     </div>
     <p class="legend">{{ compare.legend }}</p>
   </section>
 
-  <section class="pricing" id="pricing">
-    <h2>{{ pricing.h2 }}</h2>
-    <p class="section-lead">{{ pricing.lead }}</p>
-    <ul class="pricing-points">
-{{# pricing.points }}
-      <li>{{ . }}</li>
-{{/}}
-    </ul>
-    <div class="earlybird">
-      <strong>{{ pricing.earlyBirdTitle }}</strong>
-      <span>{{ pricing.earlyBird }}</span>
-    </div>
-    <div class="badges">
+  <section class="block" id="pricing">
+    <div class="price">
+      <div class="copy">
+        <span class="eyebrow">{{ pricing.eyebrow }}</span>
+        <h2>{{ pricing.h2 }}</h2>
+        <ul>
+{{# pricing.points }}          <li>{{ . }}</li>
+{{/}}        </ul>
+        <div class="promise"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
+        <div class="ctas badges">
 {{> storebadges }}
+        </div>
+      </div>
+      <p class="big">{{ pricing.big }}<small>{{ pricing.bigNote }}</small></p>
     </div>
   </section>
 
-{{? testimonials.items }}
-  <section class="testimonials">
-    <h2>{{ testimonials.h2 }}</h2>
-{{{ page.testimonials }}}
-  </section>
-{{/}}
-
-  <section class="faq">
-    <h2>{{ faq.h2 }}</h2>
-{{# faq.items }}
-    <details><summary>{{ .q }}</summary><p>{{{ .a }}}</p></details>
-{{/}}
+  <section class="block" id="faq">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">{{ faq.eyebrow }}</span>
+        <h2>{{ faq.h2 }}</h2>
+      </div>
+    </div>
+    <div class="faq">
+{{{ page.faq }}}
+    </div>
   </section>
 
 </main>

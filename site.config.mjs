@@ -696,29 +696,49 @@ export const WHATS_NEW = {
   },
 };
 
+/**
+ * The seven feature tiles of the bento grid, in grid order.
+ *
+ * `tile` is the CSS hook (`.t-cal`, `.t-shop`, …) that decides how many columns
+ * and rows the tile spans and which ground it sits on — the layout lives in
+ * style.css, keyed off this name, because a span count is not content.
+ *
+ * `shot` is optional and only two tiles have one: the grid shows a screenshot
+ * where the screen is the argument (calendar, shopping) and nothing where the
+ * words are (to-dos, meals, birthdays, vault, family). The tall alternating
+ * blocks this replaced showed all seven, which is what made the old page
+ * 8,700 px long.
+ *
+ * The copy — eyebrow, h2, p, bullets, alt — stays in content/<locale>.json
+ * under features.<key>, unchanged since 013.
+ */
 export const FEATURES = [
-  { key: 'calendar',  img: 'shot-calendar',  art: 'phone' },
-  { key: 'shopping',  img: 'shot-shopping',  art: 'phone' },
-  { key: 'todos',     img: 'shot-todos',     art: 'phone' },
-  { key: 'meals',     img: 'shot-mealplan',  art: 'duo'   },
-  { key: 'birthdays', img: 'shot-birthdays', art: 'phone' },
-  { key: 'vault',     img: 'shot-documents', art: 'phone' },
-  { key: 'family',    img: 'ill-family',     art: 'ill'   },
+  { key: 'calendar',  tile: 'cal',   shot: 'shot-calendar' },
+  { key: 'shopping',  tile: 'shop',  shot: 'shot-shopping' },
+  { key: 'todos',     tile: 'todo'  },
+  { key: 'meals',     tile: 'meal'  },
+  { key: 'birthdays', tile: 'bday'  },
+  { key: 'vault',     tile: 'vault' },
+  { key: 'family',    tile: 'fam'   },
 ];
 
 /**
- * The screenshot strip. These six files shipped with the site but were
- * referenced by nothing — free content that was already paid for.
- * Captions live in content under gallery.captions[], same order.
+ * One line-art glyph per tile, keyed by FEATURES[].tile. Here rather than in
+ * content for the same reason TRUST_ICONS is: a path is not translated.
+ *
+ * The family tile's five avatars are NOT here. They are five coloured dots with
+ * no letters in them, drawn entirely in CSS — deliberately, so the one tile that
+ * would otherwise need five initials per locale needs no strings at all.
  */
-// Phone screenshots only, deliberately: the illustrations are 840x688 and the
-// screenshots 640x1391, and a strip mixing both leaves the captions at wildly
-// different heights. The illustrations keep their home inside the feature
-// sections instead.
-export const GALLERY = [
-  'shot-home', 'shot-recipes', 'shot-photos',
-  'shot-shopping', 'shot-mealplan', 'shot-birthdays',
-];
+export const TILE_ICONS = {
+  cal: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  shop: '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="17" cy="20" r="1"/>',
+  todo: '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>',
+  meal: '<path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>',
+  bday: '<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/>',
+  vault: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  fam: '<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17.5" cy="10" r="2.5"/><path d="M16 20a5 5 0 0 1 6-5"/>',
+};
 
 /**
  * The comparison table's marks. Words live in content under compare.rows[]
@@ -796,12 +816,17 @@ export const SHOT_SOURCES = {
 export const IMAGE_SIZES = {
   'shot-': { width: 640, height: 1391 },
   'ill-': { width: 840, height: 688 },
+  // The web app in a browser window: static/assets/img/web-calendar.webp.
+  // 16:10, the aspect the browser frame in the hero and in the "also on your
+  // computer" block are both drawn to.
+  'web-': { width: 1600, height: 1000 },
   'logo': { width: 512, height: 512 },
 };
 
 export const imageSize = (name) => {
   if (name.startsWith('shot-')) return IMAGE_SIZES['shot-'];
   if (name.startsWith('ill-')) return IMAGE_SIZES['ill-'];
+  if (name.startsWith('web-')) return IMAGE_SIZES['web-'];
   return IMAGE_SIZES['logo'];
 };
 

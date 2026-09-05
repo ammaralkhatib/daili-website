@@ -39,7 +39,6 @@
     "h1a": "Koko perhe",
     "h1b": "samalla sivulla.",
     "lead": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät. Joka puhelimessa — ja tietokoneellakin.",
-    "note": "Ilmainen · Ei mainoksia · Tietosi pysyvät EU:ssa",
     "webLink": "Avaa selaimessa",
     "notes": [
       "Ilmainen",
@@ -66,19 +65,6 @@
         "h3": "Kaikki samalla sivulla",
         "p": "Se mitä lisäät omalla puhelimellasi, on muiden puhelimissa noin sekunnissa — kalenteri, listat ja tehtävät samalla tavalla."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Katsaus sisälle",
-    "lead": "Koko sovellus kuudella näytöllä.",
-    "captions": [
-      "Aloitusnäyttö — kaikki yhden napautuksen päässä",
-      "Perheen omat reseptit, kuvien kanssa ja tuonti yhdellä napautuksella",
-      "Kuvat ja asiakirjat, tallennettuna vain omaan puhelimeesi",
-      "Kauppalistat, jotka päivittyvät kun seisot kaupassa",
-      "Aamiaisesta illalliseen, suunniteltuna koko viikolle",
-      "Syntymäpäivät ja juhlat, muistissa joka vuosi"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "perhettä kohti · ei koukkuja",
     "promiseTitle": "Lupauksemme",
-    "promise": "Jokainen perhe, joka tulee mukaan ennen kuin lisäämme maksullisia lisiä, pitää kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin.",
-    "earlyBirdTitle": "Ensimmäiset perheet",
-    "earlyBird": "Ensimmäiset 1000 mukaan tullutta perhettä pitävät kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin.",
-    "cta": "Hanki Daili ilmaiseksi"
+    "promise": "Jokainen perhe, joka tulee mukaan ennen kuin lisäämme maksullisia lisiä, pitää kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin."
   },
 
   "trust": {

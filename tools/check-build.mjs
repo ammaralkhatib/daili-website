@@ -6,7 +6,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE } from '../site.config.mjs';
+
+/** The web app the landing page's dark block sends people to. */
+const WEB_APP_URL = 'https://app.daili.app';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -596,6 +599,71 @@ for (const loc of LOCALES) {
   }
   if (own && !dirs.has(loc)) {
     fail(out, `SHOT_LOCALE maps ${loc} to '${SHOT_LOCALE[loc]}' but the page uses no shots/${loc}/ file — the set was never generated, or the resolver fell back silently`);
+  }
+}
+
+// --- 15. the landing page is the page the mock describes --------------------
+// The home page is one <main> of eight blocks in a fixed order, and every one of
+// them is assembled from a different place: two from build.mjs helpers, one from
+// FEATURES, the rest from the template. Nothing else in the pipeline notices if
+// a block goes missing — a page with no feature grid still validates, still
+// carries every content key, and still builds clean in all 23 locales.
+//
+// So the shape is asserted here, on all 23 built pages:
+//   - the eight blocks exist, in the mock's order;
+//   - the feature grid has exactly one bento with exactly seven tiles (FEATURES
+//     is seven entries; a tile silently dropped from renderFeatures is the one
+//     failure mode a content check cannot see);
+//   - the "also on your computer" block exists once and actually links to the
+//     web app. The header, the hero and one FAQ answer all mention
+//     app.daili.app too, so the link is looked for INSIDE that block.
+{
+  const landing = PAGES.find((pg) => pg.id === 'landing');
+  const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
+  // In DOM order, as the mock lays them out.
+  const BLOCKS = [
+    ['hero', '<section class="hero">'],
+    ['trust strip', '<div class="trust"'],
+    ['feature grid', 'id="features"'],
+    ['web app', 'id="web"'],
+    ['steps', 'id="how"'],
+    ['comparison', 'id="compare"'],
+    ['pricing', 'id="pricing"'],
+    ['faq', 'id="faq"'],
+  ];
+  const count = (s, needle) => s.split(needle).length - 1;
+
+  for (const loc of locs) {
+    const file = path.join(DIST, landing.out(loc));
+    if (!fs.existsSync(file)) continue;          // section 1 already reported it
+    const out = rel(file);
+    const html = read(file);
+
+    let at = -1;
+    for (const [name, needle] of BLOCKS) {
+      const i = html.indexOf(needle, at + 1);
+      if (i === -1) { fail(out, `has no ${name} block (${needle}) — the landing page is missing a section`); break; }
+      if (i < at) { fail(out, `${name} block (${needle}) is out of order — the sections must follow the mock: ${BLOCKS.map((b) => b[0]).join(' → ')}`); break; }
+      at = i;
+    }
+
+    const bentos = count(html, '<div class="bento">');
+    if (bentos !== 1) fail(out, `has ${bentos} <div class="bento"> — expected exactly 1`);
+    const tiles = count(html, '<article class="tile t-');
+    if (tiles !== FEATURES.length) {
+      fail(out, `has ${tiles} feature tiles, FEATURES has ${FEATURES.length} — a tile was dropped from the grid`);
+    }
+
+    const webs = count(html, '<div class="web">');
+    if (webs !== 1) {
+      fail(out, `has ${webs} <div class="web"> — expected exactly 1`);
+    } else {
+      const from = html.indexOf('<div class="web">');
+      const to = html.indexOf('</section>', from);
+      if (!html.slice(from, to).includes(`href="${WEB_APP_URL}"`)) {
+        fail(out, `the web-app block does not link to ${WEB_APP_URL} — that block is the only reason the section exists`);
+      }
+    }
   }
 }
 

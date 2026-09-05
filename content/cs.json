@@ -39,7 +39,6 @@
     "h1a": "Celá rodina",
     "h1b": "na jedné vlně.",
     "lead": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni. Na každém telefonu — a taky na počítači.",
-    "note": "Zdarma · Bez reklam · Vaše data zůstávají v EU",
     "webLink": "Otevřít v prohlížeči",
     "notes": [
       "Zdarma",
@@ -66,19 +65,6 @@
         "h3": "Všichni na jedné vlně",
         "p": "Co přidáte na svém telefonu, je asi za sekundu na telefonech ostatních — kalendář, seznamy i úkoly stejně."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Pohled dovnitř",
-    "lead": "Celá aplikace na šesti obrazovkách.",
-    "captions": [
-      "Úvodní obrazovka — všechno na jedno klepnutí",
-      "Recepty vaší rodiny, s fotkami a importem jedním klepnutím",
-      "Fotky a dokumenty, uložené jen ve vašem telefonu",
-      "Nákupní seznamy, které se mění, zatímco stojíte v obchodě",
-      "Od snídaně po večeři, naplánováno na celý týden",
-      "Narozeniny a oslavy, připomenuté každý rok"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "na rodinu · bez háčku",
     "promiseTitle": "Náš slib",
-    "promise": "Každá rodina, která se přidá dřív, než přidáme placené doplňky, si nechá všechno zdarma navždy — včetně toho, co přidáme později.",
-    "earlyBirdTitle": "První rodiny",
-    "earlyBird": "Prvních 1000 rodin, které se přidají, si nechá všechno zdarma navždy — včetně toho, co přidáme později.",
-    "cta": "Získat Daili zdarma"
+    "promise": "Každá rodina, která se přidá dřív, než přidáme placené doplňky, si nechá všechno zdarma navždy — včetně toho, co přidáme později."
   },
 
   "trust": {

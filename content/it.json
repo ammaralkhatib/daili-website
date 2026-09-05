@@ -39,7 +39,6 @@
     "h1a": "La tua famiglia,",
     "h1b": "sulla stessa pagina.",
     "lead": "Un posto tranquillo per la settimana della tua famiglia: un calendario condiviso, liste della spesa e attività che vedono tutti. Su ogni telefono — e anche sul computer.",
-    "note": "Gratis · Senza pubblicità · I tuoi dati restano nell'UE",
     "webLink": "Apri nel browser",
     "notes": [
       "Gratis",
@@ -66,19 +65,6 @@
         "h3": "Tutti sulla stessa pagina",
         "p": "Quello che aggiungi dal tuo telefono compare su quello degli altri in circa un secondo: calendario, liste e attività allo stesso modo."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Uno sguardo dentro",
-    "lead": "Tutta l'app, in sei schermate.",
-    "captions": [
-      "La schermata iniziale: tutto a un tocco",
-      "Il ricettario della tua famiglia, con foto e importazione con un tocco",
-      "Foto e documenti, salvati solo sul tuo telefono",
-      "Liste della spesa che si aggiornano mentre sei al supermercato",
-      "Dalla colazione alla cena, pianificato per la settimana",
-      "Compleanni e ricorrenze, ricordati ogni anno"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "per famiglia · senza trucchi",
     "promiseTitle": "La nostra promessa",
-    "promise": "Ogni famiglia che entra prima che aggiungiamo extra a pagamento tiene tutto gratis per sempre — compreso quello che aggiungeremo dopo.",
-    "earlyBirdTitle": "Prime famiglie",
-    "earlyBird": "Le prime 1000 famiglie iscritte tengono tutto gratis per sempre, comprese le funzioni che aggiungeremo più avanti.",
-    "cta": "Scarica Daili gratis"
+    "promise": "Ogni famiglia che entra prima che aggiungiamo extra a pagamento tiene tutto gratis per sempre — compreso quello che aggiungeremo dopo."
   },
 
   "trust": {

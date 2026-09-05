@@ -39,7 +39,6 @@
     "h1a": "Hele familien,",
     "h1b": "på samme side.",
     "lead": "Ét roligt sted til familiens uge: en fælles kalender, indkøbslister og opgaver, som alle kan se. På hver telefon — og på computeren også.",
-    "note": "Gratis · Uden reklamer · Dine data bliver i EU",
     "webLink": "Åbn i browseren",
     "notes": [
       "Gratis",
@@ -66,19 +65,6 @@
         "h3": "Alle på samme side",
         "p": "Det, du skriver ind på din telefon, står på de andres cirka et sekund efter — kalender, lister og opgaver på samme måde."
       }
-    ]
-  },
-
-  "gallery": {
-    "h2": "Et kig indenfor",
-    "lead": "Hele appen, på seks skærme.",
-    "captions": [
-      "Startskærmen — alt ét tryk væk",
-      "Familiens opskrifter, med billeder og import med ét tryk",
-      "Billeder og dokumenter, gemt kun på din egen telefon",
-      "Indkøbslister, der opdaterer, mens du står i butikken",
-      "Fra morgenmad til aftensmad, planlagt for hele ugen",
-      "Fødselsdage og fester, husket hvert år"
     ]
   },
 
@@ -113,10 +99,7 @@
     "big": "€0",
     "bigNote": "pr. familie · uden hage ved",
     "promiseTitle": "Vores løfte",
-    "promise": "Enhver familie, der er med, før vi tilføjer betalte ekstrafunktioner, beholder alt gratis for altid — også det, vi tilføjer senere.",
-    "earlyBirdTitle": "Først med",
-    "earlyBird": "De første 1000 familier, der kommer med, beholder alt gratis for altid — også det, vi bygger til senere.",
-    "cta": "Hent Daili gratis"
+    "promise": "Enhver familie, der er med, før vi tilføjer betalte ekstrafunktioner, beholder alt gratis for altid — også det, vi tilføjer senere."
   },
 
   "trust": {
