@@ -1,0 +1,271 @@
+{
+  "@@locale": "ro",
+  "@@dir": "ltr",
+
+  "meta": {
+    "title": "Daili — organizator de familie: calendar comun și liste",
+    "description": "Daili este modul simplu de a organiza împreună viața de familie: un calendar comun, liste de cumpărături live și sarcini — pe iPhone, Android și în browser.",
+    "ogTitle": "Daili — organizator de familie",
+    "ogDescription": "Un loc liniștit pentru săptămâna familiei tale: calendar comun, liste de cumpărături și sarcini pe care le vede toată lumea — pe orice telefon și în browser.",
+    "supportTitle": "Asistență — Daili",
+    "supportDescription": "Ajutor pentru Daili sau ștergerea contului tău. De obicei răspundem într-o zi sau două.",
+    "notfoundTitle": "Pagina nu a fost găsită — Daili"
+  },
+
+  "nav": {
+    "features": "Funcții",
+    "webApp": "Aplicație web",
+    "pricing": "Preț",
+    "support": "Asistență",
+    "blog": "Blog",
+    "download": "Descarcă",
+    "language": "Limbă",
+    "skip": "Sari la conținut"
+  },
+
+  "cta": {
+    "sticky": "Ia Daili — gratuit"
+  },
+
+  "store": {
+    "appleSmall": "Descarcă din",
+    "appleSoon": "În curând în",
+    "googleSmall": "Disponibil pe",
+    "iosSoon": "Daili ajunge foarte curând în App Store."
+  },
+
+  "hero": {
+    "kicker": "iPhone · Android · browser web",
+    "h1a": "Familia ta,",
+    "h1b": "pe aceeași pagină.",
+    "lead": "Un loc liniștit pentru săptămâna familiei tale: un calendar comun, liste de cumpărături și sarcini pe care le vede toată lumea. Pe orice telefon — și pe calculator.",
+    "webLink": "Deschide în browser",
+    "notes": [
+      "Gratuit",
+      "Fără reclame",
+      "Servere în UE"
+    ],
+    "altCalendar": "Calendar lunar Daili",
+    "altHome": "Ecranul principal Daili, cu plăci de funcții"
+  },
+
+  "howItWorks": {
+    "eyebrow": "Primii pași",
+    "h2": "Gata în aproximativ un minut",
+    "steps": [
+      {
+        "h3": "Descarcă aplicația",
+        "p": "Gratuit pe iPhone și Android — sau deschide app.daili.app pe calculator. Fără card bancar, fără perioadă de probă care se termină cândva."
+      },
+      {
+        "h3": "Creează-ți familia",
+        "p": "Invită pe toată lumea cu un cod din 6 cifre sau cu un link. Părinții sunt administratori, copiii și adolescenții primesc propriul cont, iar cei mici fără e-mail primesc un profil gestionat."
+      },
+      {
+        "h3": "Sunteți pe aceeași pagină",
+        "p": "Ce adaugi pe telefonul tău ajunge pe telefoanele celorlalți în aproximativ o secundă — calendar, liste și sarcini deopotrivă."
+      }
+    ]
+  },
+
+  "compare": {
+    "eyebrow": "Comparație",
+    "h2": "De ce nu doar un calendar partajat?",
+    "lead": "Google Calendar se descurcă foarte bine cu calendarele. Dar viața de familie nu înseamnă doar evenimente — iar tabla din bucătărie nu vine cu tine la supermarket.",
+    "cols": { "feature": "", "daili": "Daili", "gcal": "Calendar partajat", "paper": "Hârtie și tablă" },
+    "rows": [
+      "Evenimentele tuturor într-un singur loc",
+      "Memento-uri pe fiecare telefon",
+      "O listă de cumpărături care se actualizează live",
+      "Sarcini cu un nume pe ele",
+      "Meniu săptămânal și colecție de rețete",
+      "Copiii au propriul cont",
+      "Zile de naștere reținute în fiecare an",
+      "Merge pe telefon și în browser",
+      "Fără reclame, nimic vândut"
+    ],
+    "legend": "✓ da · ~ parțial · — nu"
+  },
+
+  "pricing": {
+    "eyebrow": "Preț",
+    "h2": "Gratuit — și gratuit pentru tine, pentru totdeauna",
+    "lead": "Daili nu costă nimic astăzi. Fără reclame, fără urmărire, nimic vândut nimănui.",
+    "points": [
+      "Tot ce se vede pe această pagină este gratuit chiar acum",
+      "Fără card bancar, fără perioadă de probă, fără funcții blocate",
+      "Dacă vom adăuga vreodată opțiuni cu plată, tot ce e gratuit azi rămâne gratuit pentru tine"
+    ],
+    "big": "€0",
+    "bigNote": "pe familie · fără șmecherii",
+    "promiseTitle": "Promisiunea noastră",
+    "promise": "Orice familie care intră înainte să adăugăm opțiuni cu plată păstrează totul gratuit pentru totdeauna — inclusiv ce adăugăm mai târziu."
+  },
+
+  "trust": {
+    "h2": "Planurile familiei tale aparțin familiei tale",
+    "pills": [
+      { "strong": "Fără reclame", "span": "Nimic de închis — nici acum, nici mai târziu." },
+      { "strong": "Fără urmărire", "span": "Fără analize, fără profilare — acest site nu folosește nici măcar cookie-uri." },
+      { "strong": "Nu îți vindem datele", "span": "Aplicație gratuită, servere în UE, drepturile tale incluse." }
+    ]
+  },
+
+  "featuresSection": {
+    "eyebrow": "Funcții",
+    "h2": "Tot ce jonglează familia ta, într-o singură aplicație",
+    "lead": "Calendar, liste, mese și zile de naștere — împărțite cu oamenii care trebuie să le vadă și cu nimeni altcineva."
+  },
+
+  "features": {
+    "calendar": {
+      "eyebrow": "Calendar",
+      "h2": "Un calendar pentru toată lumea",
+      "p": "Vezi dintr-o privire săptămâna și luna întregii familii — și nu mai uita niciodată să iei pe cineva de la școală.",
+      "bullets": [
+        "Evenimente colorate, cu categorii, locuri și notițe",
+        "Repetări făcute cum trebuie — fotbal în fiecare marți, pian o dată la două săptămâni",
+        "Memento-uri pe fiecare telefon din familie",
+        "Sărbători legale pentru 35 de țări, evenimentele private rămân private"
+      ],
+      "alt": "Calendar lunar cu etichete de evenimente"
+    },
+    "shopping": {
+      "eyebrow": "Cumpărături",
+      "h2": "Liste de cumpărături care se actualizează live",
+      "p": "Adaugi „lapte” pe telefonul tău — și apare pe telefonul partenerului, în magazin, în aproximativ o secundă.",
+      "bullets": [
+        "Liste comune, pe care le poate edita toată familia",
+        "Cantitate, categorie și notiță pentru fiecare produs",
+        "Produsele bifate coboară frumos la final"
+      ],
+      "alt": "Listă de cumpărături comună"
+    },
+    "todos": {
+      "eyebrow": "Sarcini",
+      "h2": "Fiecare sarcină are un nume pe ea",
+      "p": "Gata cu „credeam că te ocupi tu”. Copiii își văd propriile sarcini și le bifează singuri.",
+      "bullets": [
+        "Responsabil, termen și memento",
+        "Pentru treburi casnice, comisioane și tot ce e între ele"
+      ],
+      "alt": "Listă de sarcini a familiei, cu responsabili"
+    },
+    "meals": {
+      "eyebrow": "Meniu",
+      "h2": "Cina, decisă încă de duminică",
+      "p": "Planifică de la micul dejun la cină pentru toată săptămâna, direct din rețetele familiei tale — apoi trimite ingredientele pe o listă de cumpărături.",
+      "bullets": [
+        "Meniu săptămânal cu patru mese pe zi",
+        "Colecție de rețete cu poze și import după link",
+        "Ingredientele unei rețete pe orice listă, dintr-o atingere"
+      ],
+      "alt": "Meniu săptămânal"
+    },
+    "birthdays": {
+      "eyebrow": "Sărbători",
+      "h2": "Nu mai uita nicio zi de naștere",
+      "p": "Zile de naștere, aniversări și sărbători de familie — reținute în fiecare an, cu numărătoare inversă și memento-uri pentru toți.",
+      "bullets": [],
+      "alt": "Ecran cu zile de naștere și sărbători"
+    },
+    "vault": {
+      "eyebrow": "Privat din construcție",
+      "h2": "Pozele și documentele rămân pe telefonul tău",
+      "p": "Seiful Daili ține pozele de familie și documentele importante în ordine — păstrate doar pe dispozitivul tău, niciodată încărcate pe serverele noastre.",
+      "bullets": [],
+      "alt": "Seif de documente"
+    },
+    "family": {
+      "eyebrow": "Familie",
+      "h2": "Părinți, copii și bunica — toți înăuntru",
+      "p": "Invită-ți familia cu un simplu cod din 6 cifre sau cu un link. Părinții sunt administratori, copiii și adolescenții primesc propriul cont, iar cei mici fără e-mail primesc un profil gestionat, pe care îl poți transforma mai târziu.",
+      "bullets": [],
+      "alt": "Ilustrație cu o familie"
+    }
+  },
+
+  "web": {
+    "eyebrow": "Aplicație web",
+    "h2": "Și pe calculatorul tău",
+    "p": "Aceeași familie, aceleași planuri — într-o fereastră de browser, la app.daili.app. Planifică săptămâna pe ecran mare și adaugă cumpărăturile din bucătărie, de pe telefon.",
+    "points": [
+      "Conectează-te cu același cont; totul rămâne sincronizat",
+      "Calendar, liste de cumpărături, sarcini, rețete, meniu, zile de naștere și familie",
+      "Nimic de instalat — merge în orice browser modern"
+    ],
+    "cta": "Deschide app.daili.app",
+    "note": "Pozele și documentele stau doar pe telefonul tău, așa că nu apar în browser. Aplicația web există în engleză și germană."
+  },
+
+  "faq": {
+    "eyebrow": "Întrebări",
+    "h2": "Întrebări și răspunsuri",
+    "items": [
+      {
+        "q": "Cât costă Daili?",
+        "a": "Nimic. Daili este gratuit — fără reclame, fără vânzare de date. Dacă vom adăuga vreodată opțiuni cu plată, tot ce e gratuit azi rămâne gratuit."
+      },
+      {
+        "q": "Există o versiune web?",
+        "a": "Da. Deschide <a href=\"https://app.daili.app\">app.daili.app</a> în orice browser de pe calculator și conectează-te cu același cont. Calendarul, listele, mesele, zilele de naștere și familia sunt toate acolo; pozele și documentele rămân pe telefon. Aplicația web există în engleză și germană."
+      },
+      {
+        "q": "Ce limbi vorbește aplicația?",
+        "a": "Aplicația vorbește 19 limbi, complet — inclusiv memento-urile pe care le trimite: engleză, germană, franceză, spaniolă, italiană, neerlandeză, portugheză, poloneză, cehă, slovacă, suedeză, daneză, norvegiană, finlandeză, turcă, română, bulgară, greacă și ucraineană."
+      },
+      {
+        "q": "Pe ce telefoane merge?",
+        "a": "Pe iPhone și Android, dintr-un singur cont de familie comun. Totul se sincronizează între ele — și cu aplicația web."
+      },
+      {
+        "q": "Pot să o folosească și copiii mei?",
+        "a": "Da — tocmai asta e ideea. Copiii și adolescenții primesc propriul cont și își văd propriile sarcini și evenimente. Cei mici, fără adresă de e-mail, primesc un profil gestionat, controlat de un părinte, care poate deveni mai târziu un cont adevărat. Părinții sunt administratori și pot șterge oricând un profil împreună cu datele lui."
+      },
+      {
+        "q": "Merge fără internet?",
+        "a": "Poți citi calendarul, listele și sarcinile fără conexiune, iar modificările se sincronizează imediat ce revii online. Pozele și documentele din seif sunt mereu offline — stau doar pe telefonul tău."
+      },
+      {
+        "q": "Pot să aduc calendarul pe care îl am deja?",
+        "a": "Daili poate arăta calendarul telefonului tău lângă cel al familiei, chiar pe dispozitiv. Conectarea unui calendar Google sau Outlook vine în curând."
+      },
+      {
+        "q": "Unde îmi sunt stocate datele?",
+        "a": "Calendarul, listele și datele familiei stau pe serverul nostru din UE. Pozele și documentele din seif nu îți părăsesc niciodată telefonul. Detalii în <a href=\"/privacy.html\">politica de confidențialitate</a>."
+      }
+    ]
+  },
+
+  "support": {
+    "h1": "Asistență",
+    "intro": "Suntem o echipă mică și citim tot. Scrie la <a href=\"mailto:support@daili.app\"><strong>support@daili.app</strong></a> — întrebări, probleme sau idei.",
+    "helpsIntro": "Dacă ceva nu merge, ne ajută foarte mult dacă incluzi:",
+    "helps": [
+      "Modelul telefonului tău și dacă e iPhone sau Android",
+      "Ce ai făcut, ce te așteptai și ce s-a întâmplat în schimb",
+      "O captură de ecran, dacă ai una"
+    ],
+    "replyTime": "De obicei răspundem într-o zi sau două.",
+    "deleteH2": "Ștergerea contului",
+    "deleteIntro": "Poți șterge oricând contul tău Daili și datele lui, în două feluri:",
+    "deleteWays": [
+      "<strong>În aplicație:</strong> Setări &rarr; Profil &rarr; Șterge contul.",
+      "<strong>Prin e-mail:</strong> scrie la <a href=\"mailto:support@daili.app?subject=%C8%98terge-mi%20contul\"><strong>support@daili.app</strong></a> de pe adresa de e-mail a contului tău, cu subiectul „Șterge-mi contul”."
+    ],
+    "deleteWhat": "Ce se întâmplă apoi: contul tău este dezactivat imediat și primești un e-mail cu un link de anulare. După o perioadă de grație de 30 de zile, contul tău și datele legate de el (profilul, precum și evenimentele, listele, rețetele și pozele pe care le-ai creat) sunt șterse definitiv de pe serverele noastre. Dacă te răzgândești în aceste 30 de zile, linkul din e-mail readuce totul. Fișierele din seiful offline stau doar pe telefonul tău și sunt eliminate de pe acel dispozitiv când contul este șters."
+  },
+
+  "notfound": {
+    "h1": "Pagina nu a fost găsită",
+    "lead": "Această pagină s-a mutat sau nu a existat niciodată.",
+    "home": "Înapoi la pagina principală"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni",
+    "imprint": "Date despre editor"
+  }
+}

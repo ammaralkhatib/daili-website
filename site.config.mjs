@@ -15,12 +15,13 @@ export const BASE_URL = 'https://daili.app';
  * The target is 23. They arrive in batches (see the plan's Phase 5); this array
  * is the switch that ships them.
  */
-export const LOCALES = ['en', 'de', 'fr', 'es', 'it', 'nl', 'pt', 'sv', 'da', 'nb', 'pl', 'cs', 'fi', 'tr', 'id', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'ru', 'hi', 'ar'];
+export const LOCALES = ['en', 'de', 'fr', 'es', 'it', 'nl', 'pt', 'sv', 'da', 'nb', 'pl', 'cs', 'fi', 'tr', 'id', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'ru', 'hi', 'ar', 'el', 'uk', 'bg', 'ro', 'sk'];
 
-/** The full 23-locale target, kept here so the endonym map below stays honest. */
+/** The full 28-locale target, kept here so the endonym map below stays honest. */
 export const PLANNED_LOCALES = [
   'en', 'de', 'ja', 'fr', 'ko', 'es', 'zh-Hans', 'zh-Hant', 'it', 'nl', 'pt',
   'sv', 'da', 'nb', 'pl', 'tr', 'ar', 'cs', 'fi', 'th', 'ru', 'id', 'hi',
+  'el', 'uk', 'bg', 'ro', 'sk',
 ];
 
 /**
@@ -72,6 +73,11 @@ export const endonyms = {
   ru: 'Русский',
   id: 'Bahasa Indonesia',
   hi: 'हिन्दी',
+  el: 'Ελληνικά',
+  uk: 'Українська',
+  bg: 'Български',
+  ro: 'Română',
+  sk: 'Slovenčina',
 };
 
 /** Right-to-left locales. Drives <html dir> and the mirrored CSS custom properties. */
@@ -815,6 +821,7 @@ export const SHOT_LOCALE = {
   en: 'en-US', de: 'de', fr: 'fr-FR', es: 'es-ES', it: 'it', nl: 'nl',
   pt: 'pt-PT', sv: 'sv', da: 'da', nb: 'nb', pl: 'pl', cs: 'cs', fi: 'fi',
   tr: 'tr',
+  el: 'el', uk: 'uk', bg: 'bg', ro: 'ro', sk: 'sk',
   // id, ja, ko, zh-Hans, zh-Hant, th, ru, hi, ar — no capture yet, so they
   // resolve to en. Add the line when ../store-shots/raw/<store-locale>/ exists.
 };
