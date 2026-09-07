@@ -1,7 +1,7 @@
 # 001 — five languages: Greek, Ukrainian, Bulgarian, Romanian, Slovak
 
 Prompt: `claude-prompts/2026-09-07/001-five-locales-el-uk-bg-ro-sk.md`
-Commit: `PENDING`
+Commit: `50d0e56`
 
 The site was 23 locales. It is now **28**. `/el/ /uk/ /bg/ /ro/ /sk/` exist with
 translated content, translated Privacy and Terms, and their own screenshots.
