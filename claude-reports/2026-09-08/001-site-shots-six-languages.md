@@ -2,7 +2,7 @@
 
 Prompt: `claude-prompts/2026-09-08/001-site-shots-six-languages.md`
 Status: **blocked** — the prompt's own precondition is not met.
-Commit: `<pending>`
+Commit: `eaabe99`
 
 ## The gate
 
