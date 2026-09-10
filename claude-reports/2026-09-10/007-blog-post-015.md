@@ -1,6 +1,6 @@
 # Post 15 — Family Organiser Apps and GDPR
 
-Live at `/blog/family-organiser-apps-gdpr/`, published `2026-09-16`. Two files as
+Live at `/blog/family-organiser-apps-gdpr/`, published `2026-09-16`. Commit `c8e97d4`. Two files as
 the recipe describes. Fourth post in the `privacy` cluster and post 9's spoke.
 
 ## 🔴 1. The article numbers, checked at the canonical text
