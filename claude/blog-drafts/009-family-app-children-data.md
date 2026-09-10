@@ -190,7 +190,8 @@ is long and getting one wrong in a privacy post is the worst place to be sloppy.
 - ✅ "where the data goes" (intro) →
   `/blog/where-to-store-important-family-documents/`
 - ⏳ Question 3 and the EU one-month line → `/blog/family-organiser-apps-gdpr`
-- ⏳ Question 5 → `/blog/teenagers-private-events-family-calendar`
+- ✅ Question 5 → `/blog/teenagers-private-events-family-calendar/` — added
+  2026-09-10 on "this stops being hypothetical sooner than parents expect"
 
 **External link (one), `rel="noopener"`:** the European Commission's
 plain-language page for individuals —
