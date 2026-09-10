@@ -1,6 +1,6 @@
 # Post 12 — The Mixed iPhone and Android Household (PILLAR E)
 
-Live at `/blog/mixed-iphone-android-family-calendar/`. First post in the
+Live at `/blog/mixed-iphone-android-family-calendar/`. Commit `8d89fbc`. First post in the
 `devices` cluster and its pillar. Two files as the recipe describes, nothing
 else touched — no CSS, no template, no other post.
 
