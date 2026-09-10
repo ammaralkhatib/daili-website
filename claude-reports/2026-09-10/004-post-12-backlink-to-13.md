@@ -1,5 +1,7 @@
 # Post 12 → post 13: the ⏳ link, now that its target exists
 
+Commit `1e80ad4`.
+
 Post 13 published this morning (`50e403b`), so the one link post 12's draft was
 holding open could be added. From `claude/blog-drafts/012-…`:
 
