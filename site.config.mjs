@@ -673,9 +673,9 @@ export const BLOG_POSTS = [
     updated: '2026-09-13',
     body: 'mixed-iphone-android-family-calendar.en.html',
     image: '/assets/img/blog/mixed-iphone-android-family-calendar.webp',
-    imageAlt: 'Two smartphones lying side by side on a grey surface, each showing a different screen',
+    imageAlt: 'A couple sitting together on a sofa at home, each using their own phone',
     imageWidth: 1200,
-    imageHeight: 900,
+    imageHeight: 800,
     faq: [
       {
         q: 'Can an Android user join Apple Family Sharing?',

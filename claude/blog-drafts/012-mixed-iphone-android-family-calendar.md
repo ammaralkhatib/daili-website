@@ -13,10 +13,10 @@ published: "2026-09-13"
 updated: "2026-09-13"
 body: mixed-iphone-android-family-calendar.en.html
 image: /assets/img/blog/mixed-iphone-android-family-calendar.webp
-imageAlt: "Two smartphones lying side by side on a grey surface, each showing a different screen"
+imageAlt: "A couple sitting together on a sofa at home, each using their own phone"
 imageWidth: 1200
-imageHeight: 900
-hero_source: https://www.pexels.com/photo/comparative-display-of-two-modern-smartphones-34190305/
+imageHeight: 800
+hero_source: https://www.pexels.com/photo/multiethnic-couple-browsing-smartphones-on-couch-6303540/  # swapped 2026-09-10: the two-phones flat-lay showed what looked like the same brand on a post about two platforms, and was 215 KB because photographed screens compress badly
 ---
 
 # The Mixed iPhone and Android Household
