@@ -1,6 +1,7 @@
 # Post 13 — Switch Family Apps Without Losing Your Lists
 
 Live at `/blog/switch-family-app-without-losing-lists/`, published `2026-09-14`.
+Commit `50e403b`.
 Two files exactly as the recipe describes — the body fragment and one
 `BLOG_POSTS` entry. Nothing else touched: no CSS, no template, no `build.mjs`,
 no other post. Second post in the `cozi` cluster.
