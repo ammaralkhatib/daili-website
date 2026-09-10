@@ -1,5 +1,7 @@
 # Post 12 — hero swapped, and the two values that did not follow it
 
+Commit `b127ce5`.
+
 Follow-up to `claude-reports/2026-09-05/005-blog-post-012.md`, which shipped the
 post with an 🟠 on its hero: two Xiaomi phones, one showing a launcher overlay in
 Russian, on an article about *one iPhone and one Android*.
