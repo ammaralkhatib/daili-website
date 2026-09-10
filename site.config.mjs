@@ -697,6 +697,39 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how it works on both platforms →</a></p>`,
     },
   },
+  {
+    slug: 'switch-family-app-without-losing-lists',
+    cluster: 'cozi',
+    title: 'Switch Family Apps Without Losing Your Lists',
+    description: 'Calendars move with a feed. Shopping lists, to-dos and recipes do not. A step-by-step switch plan that keeps both apps running until the new one is trusted.',
+    h1: 'Switch Family Apps Without Losing Your Lists',
+    published: '2026-09-14',
+    updated: '2026-09-14',
+    body: 'switch-family-app-without-losing-lists.en.html',
+    image: '/assets/img/blog/switch-family-app-without-losing-lists.webp',
+    imageAlt: 'A mother and daughter shopping together in a supermarket aisle',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'How long should I run both apps?',
+        a: 'Two weeks is enough for most families. Longer than three and you have two live systems rather than a transition, which is worse than either app on its own.',
+      },
+      {
+        q: 'What if my partner keeps using the old one?',
+        a: 'Expect it for the first week — it is habit, not resistance. Move their entries across and tell them you did, without making it a thing. If it is still happening in week three, the problem is adoption rather than migration, and that is a different conversation.',
+      },
+      {
+        q: 'Can I import a CSV of my lists?',
+        a: 'Rarely. Most family apps have no list import. Copy-and-paste from a printed or web view is the realistic route, which is why moving only active items matters — you are doing this by hand.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili can subscribe to an external calendar feed, so the calendar half of the overlap plan works without re-typing. Lists are the part you move by hand, in daili as anywhere else — which is why the advice above is to move only what is still alive.</p>
+<p class="post-cta-link"><a href="/">See how shared lists work →</a></p>`,
+    },
+  },
 ];
 
 /**
