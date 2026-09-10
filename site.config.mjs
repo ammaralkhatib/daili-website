@@ -730,6 +730,45 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how shared lists work →</a></p>`,
     },
   },
+  {
+    slug: 'teenagers-private-events-family-calendar',
+    cluster: 'adoption',
+    title: 'Should Teenagers Have Private Events on the Family Calendar?',
+    description: 'Where the line sits between coordinating and monitoring — what to insist on, what to let go, and how to set it up so the argument happens only once.',
+    h1: 'Should Teenagers Have Private Events on the Family Calendar?',
+    published: '2026-09-15',
+    updated: '2026-09-15',
+    body: 'teenagers-private-events-family-calendar.en.html',
+    image: '/assets/img/blog/teenagers-private-events-family-calendar.webp',
+    // Describes the photo, not the post, and not the relationship: a woman
+    // watching from across a room is what is in the frame. The draft's front
+    // matter said "living room" and "her mother standing behind her"; neither
+    // survives looking at the file.
+    imageAlt: 'A teenage girl sitting on a bed looking at her phone, with a woman standing across the room watching her',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Should a 13-year-old have a private calendar?',
+        a: 'Usually partial rather than full: private events allowed, time blocks still visible, and anything needing a lift or money stays open. Thirteen is a good age to start practising the arrangement while most plans still involve you anyway.',
+      },
+      {
+        q: 'What if they hide something important?',
+        a: 'Then the arrangement gets revisited, calmly and once. But be careful about reading a private block as concealment — a teenager wanting privacy about an ordinary evening is developmentally normal, not evidence of a problem.',
+      },
+      {
+        q: 'Can I see the location without seeing the event?',
+        a: 'That is exactly what a time block with a rough area does, and it is the honest middle ground. Live location tracking is a different thing with a different weight, and it deserves its own conversation rather than being folded silently into the calendar.',
+      },
+    ],
+    // States a feature and stops. An article about a family's trust boundaries
+    // that ends with a hard sell reads badly and deservedly; do not expand this.
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili has private events and per-person roles, so a teenager can hold their own account and mark an event private while it still occupies a visible block in the family week. That is the arrangement this article describes, without anyone having to police it.</p>
+<p class="post-cta-link"><a href="/">See how member roles work →</a></p>`,
+    },
+  },
 ];
 
 /**
