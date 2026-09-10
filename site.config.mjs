@@ -769,6 +769,49 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how member roles work →</a></p>`,
     },
   },
+  {
+    slug: 'family-organiser-apps-gdpr',
+    cluster: 'privacy',
+    title: 'Family Organiser Apps and GDPR: What Parents Should Ask',
+    description: 'GDPR gives you six concrete rights over your family\'s data, and children get extra protection. How to test whether a family app actually honours any of them.',
+    h1: 'Family Organiser Apps and GDPR: What Parents in Europe Should Ask',
+    published: '2026-09-16',
+    updated: '2026-09-16',
+    body: 'family-organiser-apps-gdpr.en.html',
+    image: '/assets/img/blog/family-organiser-apps-gdpr.webp',
+    imageAlt: 'A woman reading printed papers beside an open laptop at a kitchen table',
+    imageWidth: 1200,
+    imageHeight: 895,
+    faq: [
+      {
+        q: 'Does GDPR apply to a US family app?',
+        a: 'Generally yes, if it offers its service to people in the EU. Where the company is based does not remove the obligation. What differs is how easy it is to enforce in practice, which is a real consideration.',
+      },
+      {
+        q: 'Can I demand my child\'s data be deleted?',
+        a: 'You can make the request as the holder of parental responsibility. Erasure is not absolute — a company may keep data where it has a legal reason to — but for a family calendar there is rarely such a reason, so a refusal deserves a follow-up question.',
+      },
+      {
+        q: 'Is a parent\'s consent enough for a child\'s account?',
+        a: 'Under Article 8, where consent is the legal basis, yes — consent given or authorised by the holder of parental responsibility is what the law asks for below the applicable age. The company is also expected to make reasonable efforts to verify that.',
+      },
+    ],
+    // Every line here is checkable against /privacy.html, and the Firebase
+    // sentence stays next to "Germany" for the same reason it does on post 9:
+    // "EU-hosted" on its own is a half-truth, and this post spends a whole
+    // section saying so. Do not trim this box to make it read cleaner — the
+    // article's argument is that a company should state its exceptions.
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>The point of this article is to be tested rather than trusted, so:</p>
+<p><strong>Where the data lives:</strong> Germany, with Host Europe GmbH. <strong>Firebase</strong> (Google) handles sign-in and push notifications and processes limited technical data, such as device tokens, outside the EU under standard contractual clauses.</p>
+<p><strong>Portability:</strong> there is a data export endpoint.</p>
+<p><strong>Erasure:</strong> account deletion with a 30-day grace period, then a hard delete.</p>
+<p><strong>Children's data in the vault:</strong> photos and documents are stored <strong>on your device only</strong> — never uploaded to our servers, not in any backup we hold.</p>
+<p>Run the test in this article on us.</p>
+<p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
+    },
+  },
 ];
 
 /**
