@@ -1,7 +1,7 @@
 # Post 14 — Should Teenagers Have Private Events on the Family Calendar?
 
 Live at `/blog/teenagers-private-events-family-calendar/`, published
-`2026-09-15`. Two files as the recipe describes — the body fragment and one
+`2026-09-15`. Commit `2803327`. Two files as the recipe describes — the body fragment and one
 `BLOG_POSTS` entry. Nothing else touched. Third post in the `adoption` cluster.
 
 ## The two sentences that carry the tone

@@ -1,5 +1,7 @@
 # Post 9 → post 14: the ⏳ link, now that its target exists
 
+Commit `bd828e8`.
+
 Post 14 published this morning, so post 9's held-open link goes in. From
 `claude/blog-drafts/009-…`:
 
