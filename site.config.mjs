@@ -663,6 +663,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how the documents vault works →</a></p>`,
     },
   },
+  {
+    slug: 'mixed-iphone-android-family-calendar',
+    cluster: 'devices',
+    title: 'The Mixed iPhone and Android Household: What Works',
+    description: 'Apple Family Sharing stops at Android. Google\'s family group is built for Google accounts. What actually works when half the house is on the other platform.',
+    h1: 'The Mixed iPhone and Android Household',
+    published: '2026-09-13',
+    updated: '2026-09-13',
+    body: 'mixed-iphone-android-family-calendar.en.html',
+    image: '/assets/img/blog/mixed-iphone-android-family-calendar.webp',
+    imageAlt: 'Two smartphones lying side by side on a grey surface, each showing a different screen',
+    imageWidth: 1200,
+    imageHeight: 900,
+    faq: [
+      {
+        q: 'Can an Android user join Apple Family Sharing?',
+        a: 'No. Apple requires a personal Apple Account signed in to iCloud, and there is no Android client. This is not a setting you have missed.',
+      },
+      {
+        q: 'Why does a shared calendar take so long to update?',
+        a: 'If it is a subscribed calendar (an ICS feed), the receiving app only refreshes periodically, and Google does not publish how often. If it is a genuinely shared calendar where you have edit rights, updates should be quick — so a long delay usually means you are subscribed to a feed rather than sharing a calendar, which are different things.',
+      },
+      {
+        q: 'Do we all need the same app?',
+        a: 'For a calendar everyone can add to, effectively yes — everyone needs to be in the same system, whether that is a Google calendar or a family app. What you do not need is the same phone.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili runs on iOS and Android, and both are the same app: everyone in the family can add, edit and see the same events, shopping lists and to-dos, whichever phone they have. There is no read-only tier for the person on the wrong platform.</p>
+<p>It can also subscribe to external calendars, so school terms and fixtures land in the same place as everything else.</p>
+<p class="post-cta-link"><a href="/">See how it works on both platforms →</a></p>`,
+    },
+  },
 ];
 
 /**
