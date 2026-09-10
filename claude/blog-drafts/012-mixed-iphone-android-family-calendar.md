@@ -212,8 +212,9 @@ the post and it is the thing rivals get wrong.
 - ✅ "the hard part regardless of platform" →
   `/blog/nobody-uses-the-family-calendar-app/`
 - ✅ "school term dates" → `/blog/shared-family-calendar-rules/` (rule 6)
-- ⏳ The lists section → `/blog/switch-family-app-without-losing-lists` (post 13,
-  next day — add it then)
+- ✅ The lists section → `/blog/switch-family-app-without-losing-lists/` (post 13)
+  — added 2026-09-10 on "the shopping list is usually the thing worth solving
+  first", which is post 13's closing argument
 - ⏳ The Google-age paragraph → `/blog/family-app-children-data/` — ✅ live, add it
 
 **Schema:** Article + FAQPage.
