@@ -189,7 +189,10 @@ is long and getting one wrong in a privacy post is the worst place to be sloppy.
   `/blog/documents-to-keep-on-your-phone/` (post 8, published the day before)
 - ✅ "where the data goes" (intro) →
   `/blog/where-to-store-important-family-documents/`
-- ⏳ Question 3 and the EU one-month line → `/blog/family-organiser-apps-gdpr`
+- ✅ Question 3 → `/blog/family-organiser-apps-gdpr/` — added 2026-09-10 on "a
+  legal right you have to email someone to exercise". NOT on the one-month
+  line: that sentence already carries the Commission link, and two links on one
+  phrase help nobody.
 - ✅ Question 5 → `/blog/teenagers-private-events-family-calendar/` — added
   2026-09-10 on "this stops being hypothetical sooner than parents expect"
 
