@@ -1,7 +1,7 @@
 # Post 16 — How to Share a Calendar With Someone on Android
 
 Live at `/blog/share-calendar-with-android-family-member/`, published
-`2026-09-17`. Two files as the recipe describes. Second post in the `devices`
+`2026-09-17`. Commit `4d78a1e`. Two files as the recipe describes. Second post in the `devices`
 cluster and post 12's spoke.
 
 ## 🟠 The hero is a phone running Android 11
