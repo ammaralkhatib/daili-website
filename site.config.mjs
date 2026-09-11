@@ -849,6 +849,43 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how it works on both platforms →</a></p>`,
     },
   },
+  {
+    slug: 'family-app-month-three-cleanup',
+    cluster: 'adoption',
+    title: 'Month Three: When the Family App Is Full of Dead To-Dos',
+    description: 'Every family app works in week one. By month three the list has 200 items nobody trusts. A 30-minute reset, and four habits that stop it happening again.',
+    h1: 'Month Three: When the Family App Is Full of Dead To-Dos',
+    published: '2026-09-18',
+    updated: '2026-09-18',
+    body: 'family-app-month-three-cleanup.en.html',
+    image: '/assets/img/blog/family-app-month-three-cleanup.webp',
+    imageAlt: 'A desk covered in colourful sticky notes, checklists and notebooks around a laptop',
+    imageWidth: 1200,
+    imageHeight: 725,
+    faq: [
+      {
+        q: 'How often should we clear the list?',
+        a: 'Ten minutes monthly. Families who do it quarterly end up doing the full thirty-minute reset every time, because three months is long enough for the list to become unpleasant to look at, and unpleasant tasks get postponed.',
+      },
+      {
+        q: 'What if my partner adds things and never finishes them?',
+        a: 'Then the item has an owner, which is progress. The problem is capacity or priority, not the app. It is worth looking at the list together and asking which things are genuinely going to happen — deleting the ones that are not is kinder than leaving them as a standing reproach.',
+      },
+      {
+        q: 'Is it better to start a fresh account?',
+        a: 'Almost never. A new account means everyone re-installs, re-invites and re-learns, and you lose the calendar history along with the mess. Deleting one bad list is cheap; restarting the whole system costs you the adoption you already have.',
+      },
+    ],
+    // The last line stays. A cleanup article that ends by implying the right
+    // app makes cleanup unnecessary is selling something untrue, and this box
+    // is the only place the post speaks as us.
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili keeps completed items out of the way rather than deleting them, so a monthly sweep does not mean losing the record of what was actually done. To-dos carry an owner and a date, which is the rule above built into the form rather than left to discipline.</p>
+<p>None of that removes the need for the ten minutes a month. No app does.</p>
+<p class="post-cta-link"><a href="/">See how shared to-dos work →</a></p>`,
+    },
+  },
 ];
 
 /**

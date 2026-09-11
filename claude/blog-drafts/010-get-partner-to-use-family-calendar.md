@@ -178,8 +178,9 @@ The rest of this article works in any app, including the one you already have.
 **Internal links, both live:**
 - ✅ Point 6 → `/blog/shared-family-calendar-rules/` (rule 7 is this habit)
 - ✅ "muted it in week one" → `/blog/nobody-uses-the-family-calendar-app/`
-- ⏳ "When it is not really about the calendar" →
-  `/blog/family-app-month-three-cleanup` (post 17)
+- ✅ "When it is not really about the calendar" →
+  `/blog/family-app-month-three-cleanup/` (post 17) — added 2026-09-11 on
+  "Sometimes none of this works", the section's opening line
 
 **No external links.** Experience, not facts. Do not add a study about
 household labour to sound authoritative — the honest version of this post does
