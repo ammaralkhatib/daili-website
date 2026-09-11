@@ -812,6 +812,43 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
     },
   },
+  {
+    slug: 'share-calendar-with-android-family-member',
+    cluster: 'devices',
+    title: 'How to Share a Calendar With Someone on Android',
+    description: 'You are on iPhone, they are on Android. Three ways to share a calendar that survive both phones — the public link, a shared Google Calendar, and a family app.',
+    h1: 'How to Share a Calendar with a Family Member Who Has an Android',
+    published: '2026-09-17',
+    updated: '2026-09-17',
+    body: 'share-calendar-with-android-family-member.en.html',
+    image: '/assets/img/blog/share-calendar-with-android-family-member.webp',
+    // Describes the photo: the screen is the Android version screen, not a
+    // setup screen as the draft's front matter had it. See the report — the
+    // legible "11" is why this hero wants swapping.
+    imageAlt: 'A hand holding an Android phone showing the Android version screen, over a patterned tiled floor',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Can an Android phone edit a shared Apple calendar?',
+        a: 'Not through a public link — Apple states that subscribers can view but not change. Apple\'s editing option requires the other person to have an Apple account, so for an Android user the practical answer is no. Use a shared Google Calendar instead.',
+      },
+      {
+        q: 'Why does the shared calendar take hours to update?',
+        a: 'Because it is almost certainly a subscription rather than a share. Subscribed calendars are refreshed periodically by the receiving app, and Google does not publish the interval. A properly shared calendar with edit rights does not have this problem.',
+      },
+      {
+        q: 'Is there a way to do this without a Google account?',
+        a: 'Yes — a cross-platform family app, which is method 3. Every other route ends up depending on either an Apple account or a Google account, and your Android family member is unlikely to get the first.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili is method 3. iOS and Android are the same app: everyone in the family can add and edit the same events, and shared shopping lists and to-dos come with it, which is where the calendar-only methods stop.</p>
+<p>It can also subscribe to external calendar feeds, so school terms and fixtures sit alongside everything else.</p>
+<p class="post-cta-link"><a href="/">See how it works on both platforms →</a></p>`,
+    },
+  },
 ];
 
 /**
