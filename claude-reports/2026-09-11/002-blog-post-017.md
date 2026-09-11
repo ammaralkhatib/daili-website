@@ -1,6 +1,6 @@
 # Post 17 — Month Three: When the Family App Is Full of Dead To-Dos
 
-Live at `/blog/family-app-month-three-cleanup/`, published `2026-09-18`. Two
+Live at `/blog/family-app-month-three-cleanup/`, published `2026-09-18`. Commit `e4c3c3b`. Two
 files as the recipe describes, **plus one deliberate edit to a published post** —
 post 10's ⏳ link, which the prompt asks for and which is described below.
 
