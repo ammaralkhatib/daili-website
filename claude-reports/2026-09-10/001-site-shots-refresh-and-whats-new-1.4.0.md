@@ -2,7 +2,7 @@
 
 Prompt: `claude-prompts/2026-09-10/001-site-shots-refresh-and-whats-new-1.4.0.md`
 Status: **done** — not deployed; `./deploy.sh` is Ammar's.
-Commits: `<shots>` (shots), `<changelog>` (What's-New)
+Commits: `a11cdea` (shots), `2b0c1f1` (What's-New)
 
 ## The six new locales
 
