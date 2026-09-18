@@ -1045,8 +1045,10 @@ export const SHOT_LOCALE = {
   pt: 'pt-PT', sv: 'sv', da: 'da', nb: 'nb', pl: 'pl', cs: 'cs', fi: 'fi',
   tr: 'tr',
   el: 'el', uk: 'uk', bg: 'bg', ro: 'ro', sk: 'sk',
-  // id, ja, ko, zh-Hans, zh-Hant, th, ru, hi, ar — no capture yet, so they
-  // resolve to en. Add the line when ../store-shots/raw/<store-locale>/ exists.
+  id: 'id', th: 'th', ja: 'ja', ko: 'ko',
+  'zh-Hans': 'zh-Hans', 'zh-Hant': 'zh-Hant',
+  // ru, hi, ar — no capture yet, so they resolve to en. Add the line when
+  // ../store-shots/raw/<store-locale>/ exists.
 };
 
 /**
