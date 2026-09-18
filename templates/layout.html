@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.htmlLang }}" dir="{{ page.dir }}">
+<html lang="{{ page.htmlLang }}" dir="{{ page.dir }}" class="{{ page.htmlClass }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -41,18 +41,18 @@
       </div>
     </div>
 {{{ page.langNav }}}
-    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navmenu"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <button class="burger" type="button" aria-label="{{ nav.menu }}" aria-expanded="false" aria-controls="navmenu"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
 {{{ page.body }}}
 
-<footer>
-  <div class="wrap cols">
-    <div>{{{ footer.copyright }}}</div>
-    <div class="flinks">{{{ page.footerLinks }}}</div>
-  </div>
-</footer>
+<!-- The landing page renders this same footer (build.mjs, renderFooter) inside
+     its own last slide instead: with `scroll-snap-type: y mandatory` a footer
+     that sits outside the last snap target cannot be scrolled to. -->
+{{? page.siteFooter }}
+{{{ page.footerHtml }}}
+{{/}}
 
 </body>
 </html>

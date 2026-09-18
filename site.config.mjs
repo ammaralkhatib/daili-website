@@ -952,47 +952,120 @@ export const WHATS_NEW = {
 };
 
 /**
- * The seven feature tiles of the bento grid, in grid order.
+ * The seven feature chapters of the scroll story, in story order.
  *
- * `tile` is the CSS hook (`.t-cal`, `.t-shop`, …) that decides how many columns
- * and rows the tile spans and which ground it sits on — the layout lives in
- * style.css, keyed off this name, because a span count is not content.
+ * `shot` is the screenshot the sticky phone shows while that chapter is on
+ * screen, and every entry has one now: the story is one screen per feature, so
+ * there is no chapter whose phone could be empty. build.mjs resolves the name
+ * per locale through imgSrc(), so /de/ shows the German capture and a locale
+ * without one falls back to shots/en/.
  *
- * `shot` is optional and only two tiles have one: the grid shows a screenshot
- * where the screen is the argument (calendar, shopping) and nothing where the
- * words are (to-dos, meals, birthdays, vault, family). The tall alternating
- * blocks this replaced showed all seven, which is what made the old page
- * 8,700 px long.
+ * The `tile` field and TILE_ICONS went with the bento grid in 016 — a span
+ * count and a glyph were the grid's layout, and the grid is gone.
  *
  * The copy — eyebrow, h2, p, bullets, alt — stays in content/<locale>.json
- * under features.<key>, unchanged since 013.
+ * under features.<key>, unchanged since 013. The story renders `eyebrow` now:
+ * it is the small uppercase label above each chapter's headline.
  */
 export const FEATURES = [
-  { key: 'calendar',  tile: 'cal',   shot: 'shot-calendar' },
-  { key: 'shopping',  tile: 'shop',  shot: 'shot-shopping' },
-  { key: 'todos',     tile: 'todo'  },
-  { key: 'meals',     tile: 'meal'  },
-  { key: 'birthdays', tile: 'bday'  },
-  { key: 'vault',     tile: 'vault' },
-  { key: 'family',    tile: 'fam'   },
+  { key: 'calendar',  shot: 'shot-calendar' },
+  { key: 'shopping',  shot: 'shot-shopping' },
+  { key: 'todos',     shot: 'shot-todos' },
+  { key: 'meals',     shot: 'shot-mealplan' },
+  { key: 'birthdays', shot: 'shot-birthdays' },
+  { key: 'vault',     shot: 'shot-documents' },
+  { key: 'family',    shot: 'shot-family' },
 ];
 
+/** The web app the story's web slide, the header and the footer all point at. */
+export const WEB_APP_URL = 'https://app.daili.app';
+
 /**
- * One line-art glyph per tile, keyed by FEATURES[].tile. Here rather than in
- * content for the same reason TRUST_ICONS is: a path is not translated.
- *
- * The family tile's five avatars are NOT here. They are five coloured dots with
- * no letters in them, drawn entirely in CSS — deliberately, so the one tile that
- * would otherwise need five initials per locale needs no strings at all.
+ * The line-art glyphs the floating cards use, keyed by the name STORY_CARDS
+ * refers to as `ico:<glyph>`. Here rather than in content for the same reason
+ * the tile icons were: a path is not translated.
  */
-export const TILE_ICONS = {
-  cal: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',
-  shop: '<path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="17" cy="20" r="1"/>',
-  todo: '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>',
-  meal: '<path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>',
-  bday: '<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/>',
-  vault: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
-  fam: '<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17.5" cy="10" r="2.5"/><path d="M16 20a5 5 0 0 1 6-5"/>',
+export const STORY_ICONS = {
+  repeat: '<path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
+  bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/>',
+  cake: '<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/>',
+  pot: '<path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  photo: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>',
+  link: '<path d="M15 7h3a5 5 0 0 1 0 10h-3M9 17H6A5 5 0 0 1 6 7h3M8 12h8"/>',
+};
+
+/**
+ * The SHAPE of the three floating cards beside the phone in each chapter —
+ * never their words. The words are `story.cards.<key>[i].t` / `.s` in all 28
+ * content files (001); this is the drawing around them, lifted card by card
+ * from the approved mock (claude-prompts/2026-09-08/scroll-story-mock.html v7).
+ *
+ * Keyed by chapter: `hero` first, then one key per FEATURES entry, in order.
+ *
+ *   kind  pill        a green event pill, the way the calendar draws one
+ *         av          a coloured monogram avatar (`color` + `initial`)
+ *         avs         the family's five avatars, overlapping
+ *         ico:<name>  a square icon chip, glyph from STORY_ICONS
+ *         tick        a checked-off row: green tick, `t` struck through
+ *         badge       a small dark status pill with a blinking dot
+ *   pos   where it hangs off the phone, as CSS declarations. LOGICAL
+ *         properties (inset-inline-start/end), so /ar/ mirrors from the same
+ *         string; a negative value is the overhang the design is made of.
+ *   dur   the drift loop's period (default 6s). Three different values per
+ *         chapter so the cards never bob in unison.
+ *   box   an unchecked checkbox before the text and the avatar after it — the
+ *         to-do row, which is the one card the five kinds cannot draw.
+ *   tone  'amber' recolours an icon chip, as the mock's meal card is.
+ *
+ * The avatar letters are decoration, not content: they never carry meaning a
+ * reader needs, so they stay here rather than becoming five more strings in 28
+ * files. They are the English demo family's initials; the localized screenshots
+ * name their families differently (see the 001 report), which is why the
+ * letters are set in one place and can be dropped in one place.
+ */
+export const STORY_CARDS = {
+  hero: [
+    { kind: 'pill', pos: 'inset-inline-start:-36%;top:5%' },
+    { kind: 'av', color: 'cat-red', initial: 'M', pos: 'inset-inline-end:-32%;top:24%', dur: '7s' },
+    { kind: 'tick', pos: 'inset-inline-start:-40%;bottom:12%', dur: '8s' },
+  ],
+  calendar: [
+    { kind: 'pill', pos: 'inset-inline-end:-30%;top:6%' },
+    { kind: 'ico:repeat', pos: 'inset-inline-start:-42%;top:38%', dur: '7s' },
+    { kind: 'ico:bell', pos: 'inset-inline-end:-34%;bottom:14%', dur: '8s' },
+  ],
+  shopping: [
+    { kind: 'av', color: 'cat-plum', initial: 'L', pos: 'inset-inline-start:-40%;top:8%' },
+    { kind: 'tick', pos: 'inset-inline-end:-32%;top:40%', dur: '7s' },
+    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
+  ],
+  todos: [
+    { kind: 'av', color: 'cat-sky', initial: 'E', box: true, pos: 'inset-inline-end:-36%;top:7%' },
+    { kind: 'tick', pos: 'inset-inline-start:-44%;top:44%', dur: '7s' },
+    { kind: 'ico:bell', pos: 'inset-inline-end:-28%;bottom:12%', dur: '8s' },
+  ],
+  meals: [
+    { kind: 'ico:pot', tone: 'amber', pos: 'inset-inline-start:-44%;top:8%' },
+    { kind: 'ico:arrow', pos: 'inset-inline-end:-38%;top:42%', dur: '7s' },
+    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
+  ],
+  birthdays: [
+    { kind: 'ico:cake', pos: 'inset-inline-end:-34%;top:8%' },
+    { kind: 'ico:bell', pos: 'inset-inline-start:-44%;top:42%', dur: '7s' },
+    { kind: 'av', color: 'cat-amber', initial: 'M', pos: 'inset-inline-end:-30%;bottom:12%', dur: '8s' },
+  ],
+  vault: [
+    { kind: 'ico:lock', pos: 'inset-inline-start:-40%;top:9%' },
+    { kind: 'ico:photo', pos: 'inset-inline-end:-36%;top:44%', dur: '7s' },
+    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
+  ],
+  family: [
+    { kind: 'avs', group: ['cat-plum', 'cat-red', 'cat-sky', 'cat-green', 'cat-amber'], initials: ['L', 'M', 'E', 'N', 'Mi'], pos: 'inset-inline-end:-30%;top:6%' },
+    { kind: 'ico:link', pos: 'inset-inline-start:-42%;top:42%', dur: '7s' },
+    { kind: 'av', color: 'cat-green', initial: 'N', pos: 'inset-inline-end:-36%;bottom:12%', dur: '8s' },
+  ],
 };
 
 /**
@@ -1017,12 +1090,11 @@ export const COMPARE_ROWS = [
 
 export const COMPARE_MARKS = { y: '✓', p: '~', n: '—' };
 
-/** The three trust pills' icons. Words live in content under trust.pills[]. */
-export const TRUST_ICONS = [
-  '<circle cx="12" cy="12" r="9"/><line x1="5.5" y1="5.5" x2="18.5" y2="18.5"/>',
-  '<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><line x1="4" y1="4" x2="20" y2="20"/>',
-  '<path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>',
-];
+/* The trust strip's three icons went with the strip itself in 016 — the story
+   has no room for a claims row between two chapters. `trust.pills[]` stays in
+   all 28 content files, idle: Ammar has not decided whether the strip comes
+   back somewhere, and re-translating 28 × 3 lines costs more than three unused
+   keys. Whatever renders it next needs its own icons. */
 
 /**
  * Which store-screenshot set each site locale shows.

@@ -6,10 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE } from '../site.config.mjs';
-
-/** The web app the landing page's dark block sends people to. */
-const WEB_APP_URL = 'https://app.daili.app';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL } from '../site.config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -603,28 +600,30 @@ for (const loc of LOCALES) {
 }
 
 // --- 15. the landing page is the page the mock describes --------------------
-// The home page is one <main> of eight blocks in a fixed order, and every one of
-// them is assembled from a different place: two from build.mjs helpers, one from
-// FEATURES, the rest from the template. Nothing else in the pipeline notices if
-// a block goes missing — a page with no feature grid still validates, still
-// carries every content key, and still builds clean in all 23 locales.
+// The home page is the scroll story: six blocks in a fixed order, and the first
+// of them is assembled from three lists that must stay in step — one chapter,
+// one screenshot and one group of three cards per FEATURES entry, plus the hero.
+// Nothing else in the pipeline notices if they fall out of step: a story with
+// seven chapters and eight screens still validates, still carries every content
+// key and still builds clean in all 28 locales — the phone simply shows the
+// wrong screen from chapter three onwards, which no content check can see.
 //
-// So the shape is asserted here, on all 23 built pages:
-//   - the eight blocks exist, in the mock's order;
-//   - the feature grid has exactly one bento with exactly seven tiles (FEATURES
-//     is seven entries; a tile silently dropped from renderFeatures is the one
-//     failure mode a content check cannot see);
-//   - the "also on your computer" block exists once and actually links to the
-//     web app. The header, the hero and one FAQ answer all mention
-//     app.daili.app too, so the link is looked for INSIDE that block.
+// So the shape is asserted here, on all 28 built pages:
+//   - the six blocks exist, in the mock's order;
+//   - the story has exactly FEATURES.length + 1 chapters, the same number of
+//     screens and of card groups, and every group has exactly three cards;
+//   - the web slide exists once and actually links to the web app. The header,
+//     the hero and one FAQ answer all mention app.daili.app too, so the link is
+//     looked for INSIDE that slide;
+//   - the footer is inside the last slide. With `scroll-snap-type: y mandatory`
+//     a footer after </main> is a snap target that cannot be reached;
+//   - nothing is left of the bento grid the story replaced.
 {
   const landing = PAGES.find((pg) => pg.id === 'landing');
   const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
   // In DOM order, as the mock lays them out.
   const BLOCKS = [
-    ['hero', '<section class="hero">'],
-    ['trust strip', '<div class="trust"'],
-    ['feature grid', 'id="features"'],
+    ['story', '<section class="story"'],
     ['web app', 'id="web"'],
     ['steps', 'id="how"'],
     ['comparison', 'id="compare"'],
@@ -647,22 +646,48 @@ for (const loc of LOCALES) {
       at = i;
     }
 
-    const bentos = count(html, '<div class="bento">');
-    if (bentos !== 1) fail(out, `has ${bentos} <div class="bento"> — expected exactly 1`);
-    const tiles = count(html, '<article class="tile t-');
-    if (tiles !== FEATURES.length) {
-      fail(out, `has ${tiles} feature tiles, FEATURES has ${FEATURES.length} — a tile was dropped from the grid`);
+    // The three lists that have to agree: chapters, screens, card groups.
+    const want = FEATURES.length + 1;            // the seven features plus the hero
+    const chapters = count(html, 'data-chapter="');
+    if (chapters !== want) {
+      fail(out, `has ${chapters} story chapters, expected ${want} (FEATURES + the hero) — a chapter was dropped`);
+    }
+    const storyFrom = html.indexOf('<section class="story"');
+    const storyTo = html.indexOf('</section>', storyFrom);
+    const storyHtml = storyFrom === -1 ? '' : html.slice(storyFrom, storyTo);
+    // `--k` is the stack position, and only the eight images inside the sticky
+    // phone carry it — the per-chapter copies shown on a phone do not.
+    const screens = count(storyHtml, 'style="--k:');
+    if (screens !== want) {
+      fail(out, `has ${screens} phone screenshots in the story stage, expected ${want} — the phone and the chapters are out of step`);
+    }
+    const groups = storyHtml.split('<div class="floats"').slice(1);
+    if (groups.length !== want) {
+      fail(out, `has ${groups.length} groups of floating cards, expected ${want} — one per chapter`);
+    }
+    // Each split segment runs to the next group, so the cards it contains are
+    // its own. The last one also holds the progress dots, which are not cards.
+    groups.forEach((group, i) => {
+      const cards = count(group, '<div class="fc');
+      if (cards !== 3) fail(out, `floats group ${i} has ${cards} cards, expected 3 from story.cards`);
+    });
+
+    const webFrom = html.indexOf('id="web"');
+    if (webFrom !== -1) {
+      const webTo = html.indexOf('</section>', webFrom);
+      if (!html.slice(webFrom, webTo).includes(`href="${WEB_APP_URL}"`)) {
+        fail(out, `the web slide does not link to ${WEB_APP_URL} — that link is the only reason the slide exists`);
+      }
     }
 
-    const webs = count(html, '<div class="web">');
-    if (webs !== 1) {
-      fail(out, `has ${webs} <div class="web"> — expected exactly 1`);
-    } else {
-      const from = html.indexOf('<div class="web">');
-      const to = html.indexOf('</section>', from);
-      if (!html.slice(from, to).includes(`href="${WEB_APP_URL}"`)) {
-        fail(out, `the web-app block does not link to ${WEB_APP_URL} — that block is the only reason the section exists`);
-      }
+    const faqFrom = html.indexOf('id="faq"');
+    const footerAt = html.indexOf('<footer>');
+    if (faqFrom !== -1 && !(footerAt > faqFrom && footerAt < html.lastIndexOf('</main>'))) {
+      fail(out, 'the footer is not inside the last slide — with mandatory scroll-snap a footer after </main> can never be scrolled to');
+    }
+
+    for (const dead of ['class="bento"', 'class="tile"']) {
+      if (html.includes(dead)) fail(out, `still contains ${dead} — the bento grid was replaced by the story`);
     }
   }
 }

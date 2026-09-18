@@ -88,6 +88,34 @@
   --ease:cubic-bezier(.22,.8,.3,1);
   color-scheme:light;
 
+  /* The sticky header's height. It is the top edge of every snapped slide, the
+     scroll-padding of the whole page and the amount each chapter is shorter
+     than the viewport, so it is one number in one place — script.js reads it
+     back off <html> rather than hard-coding 64 a fourth time. */
+  --header-h:64px;
+
+  /* The story's stage colours. Each chapter swaps these four and everything
+     inside .story reads them, so a chapter change is eight custom properties
+     and one transition instead of eight sets of rules. */
+  --stage-bg:var(--paper); --stage-fg:var(--ink); --stage-body:var(--body);
+  --stage-muted:var(--muted); --stage-eyebrow:var(--forest);
+
+  /* White ON one of the five category colours. Not --on-forest: that token
+     flips to near-black in dark mode, and the event pill stays green in both
+     modes because the app draws it green in both modes. */
+  --on-cat:#FFFFFF;
+
+  /* The two dark chapter grounds and the text on them. Their own tokens, not
+     --forest-deep / --ink, because both of those go LIGHT in dark mode (they
+     are a hover colour and body text there) and a full-screen chapter that
+     turns near-white in dark mode with white text on it is unreadable. These
+     two stay dark in both modes and --on-dark stays white on both. */
+  --stage-forest:#0B4A30; --stage-ink:#10201A; --on-dark:#FFFFFF;
+
+  /* How wide the sticky phone is. 38vh so it shrinks on a short laptop screen
+     instead of pushing the chapter's text off the slide. */
+  --pw:min(340px,38vh);
+
   /* Blog and legal furniture: the cream ground behind a post hero, a
      blockquote and a table head, and the radius they share. */
   --cream:#F4EDDE; --radius:22px;
@@ -122,12 +150,28 @@ h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spac
 h3{font-weight:700}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
 
+/* ---------- the one reveal primitive -------------------------------------
+ * Everything on the home page that builds up as you scroll is this rule with
+ * different numbers. --p (0..1) is how far the slide it lives in has settled,
+ * set by script.js; --a is where in that progress the element starts
+ * appearing and --w how much progress it needs to be fully in.
+ *
+ * The default is --p:1 — fully built, nothing hidden — and script.js is what
+ * turns the animation ON by writing real values in its first frame. That way
+ * round a blocked, failed or slow script leaves the complete page rather than a
+ * blank one, which is the same "everything here is an enhancement" rule the
+ * rest of this site follows. */
+.by{--a:0;--w:.15;--lift:28px;--v:clamp(0,calc((var(--p) - var(--a)) / var(--w)),1);
+  opacity:var(--v);transform:translateY(calc((1 - var(--v)) * var(--lift)))}
+/* The horizontal variant slides in from the inline-end side, so /ar/ mirrors. */
+.by.x{transform:translateX(calc((1 - var(--v)) * var(--lift) * var(--dir)))}
+
 /* 1.02 is the mock's leading, and it is right for display type at 3rem and up.
    Everything set smaller — the legal pages, a step or tile heading at 1.35rem —
    needs air or two lines touch, and most of these wrap in German. */
-.legal :is(h1,h2,h3),.tile h3,.step h3{line-height:1.2}
+.legal :is(h1,h2,h3),.step h3{line-height:1.2}
 /* Arabic and Thai carry marks above and below the line, which .98 clips. */
-:is([lang="ar"],[lang="th"]) .hero h1{line-height:1.2}
+:is([lang="ar"],[lang="th"]) .chapter :is(h1,h2){line-height:1.25}
 
 /* Arabic and Thai need more leading than Latin at the same size. */
 [lang="ar"] body,[lang="th"] body,body[lang="ar"],body[lang="th"]{line-height:1.85}
@@ -164,7 +208,10 @@ h1,h2,h3,p,li,summary,figcaption{overflow-wrap:anywhere}
  * ------------------------------------------------------------------------- */
 header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
 header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(--shadow),.06)}
-.nav{display:flex;align-items:center;gap:22px;height:66px}
+/* 64px, and it is --header-h everywhere else on the page: the story's slides
+   are exactly one viewport minus this header, and script.js measures the slide
+   under the header line from the same number. */
+.nav{display:flex;align-items:center;gap:22px;height:var(--header-h)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:0}
 .brand img{width:36px;height:36px;border-radius:10px;transition:transform .5s var(--ease)}
 .brand:hover img{transform:rotate(var(--rot-brand-hover)) scale(1.06)}
@@ -237,53 +284,168 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .dl-menu .store-badge{width:100%;justify-content:start}
 .dl-menu small{color:var(--muted);font-size:.78rem;line-height:1.4}
 
-/* ---------- hero ------------------------------------------------------------
- * Two columns: the words, then the device stack. The old hero was one centred
- * column with two tilted phones under it, which pushed everything else below
- * the fold; this puts the headline and the download buttons next to the product
- * instead of above it.
+/* ---------- the scroll story ------------------------------------------------
+ * Eight chapters in the left column, one sticky phone in the right one. Each
+ * chapter is exactly one screen, the browser snaps from one to the next, and
+ * the phone's next screenshot slides UP OVER the previous one, which stays
+ * still underneath. Lifted from the approved mock
+ * (claude-prompts/2026-09-08/scroll-story-mock.html v7), converted to logical
+ * properties and tokens on the way in.
  *
- * The mint glow is one radial-gradient on ::before. It replaces two blurred,
- * keyframed "blobs" — 60px of blur animated forever is a repaint per frame on
- * every phone that loads the page, and the gradient is indistinguishable. */
-.hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding-block:56px 40px}
-.hero::before{content:"";position:absolute;inset-block:auto -80px;inset-inline:auto -10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,var(--mint) 0%,transparent 72%);z-index:-1;opacity:.9}
-.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--forest);background:var(--mint-soft);border:1px solid var(--mint);border-radius:999px;padding-block:6px;padding-inline:8px 12px}
-.hero .kicker .dots{display:inline-flex;gap:3px;flex:none}
-.hero .kicker .dots i{display:block;width:8px;height:8px;border-radius:50%}
-.hero .kicker .dots i:nth-child(1){background:var(--cat-green)}
-.hero .kicker .dots i:nth-child(2){background:var(--cat-amber)}
-.hero .kicker .dots i:nth-child(3){background:var(--cat-plum)}
-.hero .kicker .dots i:nth-child(4){background:var(--cat-sky)}
-.hero h1{font-size:clamp(2.7rem,6.4vw,5.4rem);margin-block:18px 16px;line-height:.98}
+ * Snap lives on <html> — the scroll container — behind the `landing` class
+ * build.mjs puts there, so the blog and the legal pages never snap. It is also
+ * desktop-only: on a phone this is a plain page that reads top to bottom.
+ * ------------------------------------------------------------------------- */
+@media(min-width:901px){
+  html.landing{scroll-snap-type:y mandatory;scroll-padding-top:var(--header-h)}
+  .chapter,.scene{scroll-snap-align:start}
+}
 
-/* The highlighted half of the headline.
+.story{position:relative;background:var(--stage-bg);color:var(--stage-fg);
+  transition:background-color .7s var(--ease),color .7s var(--ease)}
+.story p,.story li{color:var(--stage-body)}
+.story .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start}
+
+/* One chapter = one screen. --p: 0 while the previous chapter is showing, 1
+   once this one has settled; --q: 0..1 as it leaves upwards. min-height, not
+   height: a long translation is allowed to make a chapter taller than the
+   viewport rather than overflowing it, which is also why script.js reads the
+   chapter's own height instead of assuming one screen. */
+.chapter{--p:1;--q:0;min-height:calc(100vh - var(--header-h));display:flex;align-items:center}
+.chapter .txt{max-width:32rem;opacity:calc(1 - var(--q))}
+.chapter .num{font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.1em;color:var(--stage-muted);margin-block-end:6px;display:block}
+.chapter .eyebrow{color:var(--stage-eyebrow)}
+.chapter .eyebrow::before{background:var(--stage-eyebrow)}
+.chapter h1{font-size:clamp(2.6rem,5vw,4.5rem);margin-block:16px;line-height:.98}
+.chapter h2{font-size:clamp(2.2rem,4.4vw,3.8rem);margin-block:14px 16px;line-height:1}
+.chapter .lead{font-size:1.18rem;color:var(--stage-muted);max-width:34rem}
+.chapter .p{font-size:1.15rem;margin-block-end:18px}
+.chapter ul{list-style:none;display:grid;gap:10px}
+.chapter li{display:flex;gap:10px;align-items:flex-start;font-size:1rem}
+.chapter li::before{content:"";flex:none;width:18px;height:18px;margin-block-start:4px;border-radius:50%;background:var(--stage-eyebrow);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+.chapter .ctas{margin-block-start:26px}
+.chapter .note{display:flex;gap:14px;flex-wrap:wrap;margin-block-start:18px;font-size:.9rem;color:var(--stage-muted)}
+.chapter .note span::before{content:"✓";color:var(--stage-eyebrow);font-weight:700;margin-inline-end:6px}
+
+/* The highlighted half of the headline, with the mock's hand-drawn underline.
  *
- * This used to be white-space:nowrap with an absolutely-positioned SVG
- * underline stretched across it. That worked in English (16 characters) and
- * would have pushed the headline off-screen in German, Finnish, Turkish and
- * Polish. The underline is now a background gradient on the inline box, so it
- * wraps with the text; box-decoration-break:clone draws it under every line. */
-.hero h1 em{color:var(--forest);font-style:normal;
-  background-image:linear-gradient(var(--mint-strong),var(--mint-strong));
-  background-repeat:no-repeat;background-size:100% .18em;background-position:0 88%;
+ * The mock stretches an absolutely positioned SVG under a `white-space:nowrap`
+ * span, which works in English (16 characters) and pushes the headline off
+ * screen in German, Finnish, Turkish and Polish. Same drawing, applied as a
+ * background on the inline box instead: it wraps with the text, and
+ * box-decoration-break:clone draws it under every line. */
+.chapter h1 em{color:var(--stage-eyebrow);font-style:normal;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='none'%3E%3Cpath d='M2 14 C 40 4, 90 18, 198 8' fill='none' stroke='%23A9D9B8' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-size:100% .22em;background-position:0 96%;
   -webkit-box-decoration-break:clone;box-decoration-break:clone;
-  padding-bottom:.05em}
-.hero .lead{font-size:1.18rem;color:var(--muted);max-width:34rem}
-.hero .ctas{margin-block-start:26px}
-.hero .note{display:flex;gap:14px;flex-wrap:wrap;margin-block-start:18px;font-size:.9rem;color:var(--muted)}
-.hero .note span::before{content:"✓";color:var(--forest);font-weight:700;margin-inline-end:6px}
+  padding-bottom:.06em}
 
-/* ---------- device stack: the phone in front, the browser window behind ---- */
-.stack{position:relative;height:560px}
-.laptop{position:absolute;top:20px;inset-inline-end:0;width:88%;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 30px 70px rgba(var(--shadow),.16);overflow:hidden;transform:rotate(var(--rot-laptop))}
+/* The phone's own screenshot, under the text. Desktop shows the sticky stage
+   instead and hides this; a phone hides the stage and shows this. Both point
+   at the same file, so the browser downloads it once. */
+.mshot{display:none}
+
+/* ---------- the stage: one sticky phone, eight screens ---------------------- */
+.stage{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center}
+.device{position:relative;width:var(--pw)}
+/* No bezel — the screenshot itself, rounded and lifted. Ammar's call in v4. */
+.phone{position:relative;width:100%;border-radius:32px;box-shadow:0 40px 80px rgba(var(--shadow),.26),0 0 0 1px rgba(var(--shadow),.08)}
+.phone .screen{--idx:0;position:relative;border-radius:32px;overflow:hidden;aspect-ratio:640/1391;background:var(--cream)}
+/* Eight screens stacked, screen k above screen k-1. --idx (0..7, fractional) is
+   how far the story has scrolled, set by script.js. Screen k waits one frame
+   below the phone until the scroll reaches it, then slides up over the one
+   before, which never moves. --t is 1 while waiting, 0 once in place. */
+.phone .screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:32px;z-index:var(--k);
+  --t:clamp(0,calc(var(--k) - var(--idx)),1);
+  transform:translateY(calc(var(--t) * 100%));
+  /* The lip shadow exists only mid-slide: t·(1−t) is 0 at both ends and ¼ in
+     the middle, so a settled screen casts nothing at its bottom edge. */
+  box-shadow:0 -14px 34px rgba(var(--shadow),calc(var(--t) * (1 - var(--t)) * .9));
+  will-change:transform}
+
+/* ---------- the floating cards --------------------------------------------- */
+/* Positioned against the phone, so a card always touches it, and above the
+   stacked screens — with z-index on the images and none here, the cards
+   disappeared behind the phone (v3). */
+.floats{--p:1;--q:0;position:absolute;inset:0;pointer-events:none;z-index:10}
+.fc{position:absolute;display:flex;align-items:center;gap:12px;background:var(--card);color:var(--ink);border-radius:18px;padding:14px 18px;font-size:1rem;font-weight:500;line-height:1.25;white-space:nowrap;
+  box-shadow:0 18px 44px rgba(var(--shadow),.18),0 0 0 1px rgba(var(--shadow),.06);
+  --in:clamp(0,calc((var(--p) - .55) / .2),1);
+  opacity:calc(var(--in) * (1 - var(--q)));
+  transform:translateY(calc((1 - var(--in)) * 26px)) scale(calc(.94 + .06 * var(--in)));
+  animation:drift var(--dur,6s) ease-in-out infinite}
+@keyframes drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+.fc b{font-weight:700}
+.fc small{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
+.fc .dot{width:12px;height:12px;border-radius:50%;flex:none;background:var(--on-cat)}
+.fc .av{width:34px;height:34px;border-radius:50%;flex:none;display:grid;place-items:center;color:var(--on-cat);font-weight:700;font-size:.85rem}
+.fc .avs{display:flex;flex:none}
+.fc .avs .av{margin-inline-start:-10px;border:2px solid var(--card)}
+.fc .avs .av:first-child{margin-inline-start:0}
+.fc .ico{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--mint-soft);color:var(--forest)}
+.fc .ico.amber{background:var(--amber-soft);color:var(--amber-ink)}
+.fc .ico svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fc .tick{width:24px;height:24px;border-radius:50%;flex:none;background:var(--forest);display:grid;place-items:center}
+.fc .tick svg{width:14px;height:14px;stroke:var(--on-forest);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.fc .box{width:22px;height:22px;border-radius:7px;border:2px solid var(--line);flex:none}
+/* The event pill the calendar draws, and the ticked-off row under it. */
+.fc.pill{border-radius:999px;padding:11px 18px;background:var(--cat-green);color:var(--on-cat);box-shadow:0 14px 30px rgba(31,138,85,.35)}
+.fc.pill b{font-weight:600}
+.fc.pill small{color:color-mix(in srgb,var(--on-cat) 80%,transparent)}
+.fc.chk b{text-decoration:line-through;color:var(--muted);font-weight:500}
+.fc.badge-s{background:var(--ink);color:var(--paper);font-size:.88rem;padding:10px 16px;border-radius:999px}
+.fc.badge-s small{color:color-mix(in srgb,var(--paper) 65%,transparent)}
+.fc.badge-s i{width:9px;height:9px;border-radius:50%;flex:none;background:var(--mint-strong);animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.3}}
+
+/* ---------- progress dots --------------------------------------------------- */
+.progress{position:absolute;inset-inline:0;bottom:26px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+.progress i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.25;transition:opacity .3s,width .3s}
+.progress i.on{opacity:1;width:18px;border-radius:3px}
+
+/* ---------- one ground per chapter ------------------------------------------ */
+/* The eight swaps, in story order: paper, forest, paper, mint, amber, paper,
+   ink, mint. data-active is set by script.js. */
+.story[data-active="0"]{--stage-bg:var(--paper)}
+.story[data-active="1"]{--stage-bg:var(--stage-forest);--stage-fg:var(--on-dark);--stage-body:color-mix(in srgb,var(--on-dark) 82%,transparent);--stage-muted:color-mix(in srgb,var(--on-dark) 62%,transparent);--stage-eyebrow:var(--mint-strong)}
+.story[data-active="2"]{--stage-bg:var(--paper)}
+.story[data-active="3"]{--stage-bg:var(--mint-soft)}
+.story[data-active="4"]{--stage-bg:var(--amber-soft);--stage-eyebrow:var(--amber-ink)}
+.story[data-active="5"]{--stage-bg:var(--paper)}
+.story[data-active="6"]{--stage-bg:var(--stage-ink);--stage-fg:var(--on-dark);--stage-body:color-mix(in srgb,var(--on-dark) 80%,transparent);--stage-muted:color-mix(in srgb,var(--on-dark) 55%,transparent);--stage-eyebrow:var(--mint-strong)}
+.story[data-active="7"]{--stage-bg:var(--mint)}
+
+/* ---------- the slides after the story -------------------------------------- */
+/* Each is one screen, centred, and builds up as it settles under the header.
+   min-height, like the chapters: the FAQ has eight questions in the content and
+   four in the mock, and it is allowed to be taller than one screen. */
+.scene{--p:1;position:relative;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;overflow:clip;padding-block:40px}
+.scene>.pin{width:100%}
+.scene.last{align-items:stretch;padding-block:0}
+.scene.last>.pin{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - var(--header-h));padding-block-start:40px}
+.scene.last footer{margin-block-start:auto;width:100%}
+
+/* ---------- web app: the window fills the slide, then steps aside ----------- */
+.web-pin{position:relative}
+.web-copy{position:absolute;inset-inline-start:0;top:50%;transform:translateY(-50%);width:42%;z-index:0;--a:.55;--w:.3;--lift:0px}
+.web-copy h2{font-size:clamp(1.9rem,4vw,3.2rem);margin-block:10px 14px}
+.web-copy ul{list-style:none;display:grid;gap:8px;margin-block:14px 22px}
+.web-copy li{display:flex;gap:10px}
+.web-copy li::before{content:"✓";color:var(--forest);font-weight:700}
+.web-copy .muted{font-size:.85rem;color:var(--muted);margin-block-start:12px}
+/* The browser frame from the old hero, in the flow and driven by the scroll.
+   --k is its own progress: full width at 0, 55% and shifted to the inline-end
+   side at 1. translateX has no logical form, so --dir carries the direction. */
+.laptop{position:relative;z-index:1;width:min(100%,1080px);margin-inline:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 40px 90px rgba(var(--shadow),.28);
+  --k:clamp(0,calc((var(--p) - .3) / .55),1);
+  transform:translateX(calc(30% * var(--k) * var(--dir))) scale(calc(1 - .45 * var(--k)));transform-origin:center}
 .laptop .bar{display:flex;align-items:center;gap:6px;padding-block:9px;padding-inline:12px;border-bottom:1px solid var(--line);background:var(--mint-soft)}
 .laptop .bar i{display:block;width:9px;height:9px;flex:none;border-radius:50%;background:var(--line)}
 /* A URL is LTR even in /ar/, and it is ellipsised rather than wrapped: this is
    a drawing of a browser, and browsers do not wrap their address bar. */
 .laptop .bar .url{flex:1;min-width:0;margin-inline-start:10px;padding-block:3px;padding-inline:8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);font-size:.7rem;direction:ltr;text-align:start;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.phone{position:absolute;bottom:0;inset-inline-start:0;width:44%;padding:9px;border-radius:36px;background:var(--frame);box-shadow:0 34px 70px rgba(var(--shadow),.26);transform:rotate(var(--rot-phone))}
-.phone img{width:100%;border-radius:28px}
 
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;gap:8px;border:1.5px solid transparent;border-radius:999px;padding-block:12px;padding-inline:22px;font-size:.98rem;font-weight:600;text-decoration:none;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
@@ -370,109 +532,42 @@ button.store-badge{border:0;margin:0;font-family:inherit;font-size:inherit;text-
   transform:rotate(45deg)}
 
 /* ---------- section furniture ---------- */
-section.block{padding-block:84px 20px}
 .sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-block-end:34px}
 .sec-head>div{max-width:36rem}
 .sec-head h2{margin-block-start:10px}
-/* The display size lives on these three selectors rather than on h2, so the
-   legal pages, the blog and the release notes keep the sizes they set. */
-.sec-head h2,.web h2,.price h2{font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.06}
+/* The display size lives on these selectors rather than on h2, so the legal
+   pages, the blog and the release notes keep the sizes they set. */
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1.06}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;color:var(--forest)}
 .eyebrow::before{content:"";width:22px;height:2px;flex:none;border-radius:2px;background:var(--forest)}
 .section-lead{font-size:1.12rem;color:var(--muted);max-width:38rem;margin-block-start:12px}
 /* Second column of a two-part section head, so it wraps under at 760px. */
 .sec-head>.section-lead{max-width:26rem;margin:0}
 
-/* ---------- trust strip ---------- */
-/* Three claims in a row between two rules. Not three bordered cards inside a
-   bordered, tinted panel, which is what this replaced. */
-.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-block:28px 10px;margin-block-start:24px;border-block:1px solid var(--line)}
-.trust>div{display:flex;gap:12px;align-items:flex-start;padding-block:12px}
-.trust svg{width:26px;height:26px;flex:none;margin-block-start:2px;stroke:var(--forest);fill:none;stroke-width:1.8}
-.trust strong{display:block;font-family:var(--display);font-size:1.2rem;font-weight:700}
-.trust p{font-size:.9rem;color:var(--muted)}
-@media(max-width:760px){.trust{grid-template-columns:1fr;gap:0}}
+/* The trust strip and the bento feature grid were both deleted with the
+   redesign of the home page into the scroll story (016): the claims row has no
+   place between two full-screen chapters, and the seven tiles ARE the seven
+   chapters now. trust.pills[] stays in content, idle — see site.config.mjs.
+   Nothing else on the site used .trust, .bento or .tile. */
 
-/* ---------- feature grid ---------- */
-/* Seven tiles in one bento, replacing seven full-width alternating blocks and a
-   six-screen gallery strip. Two tiles carry a screenshot that leans out of the
-   bottom corner; the rest are words, which is why the grid is readable at all. */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(150px,auto);gap:16px}
-.tile{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--card);transition:transform .3s var(--ease),box-shadow .3s}
-.tile:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(var(--shadow),.12)}
-.tile .copy{display:flex;flex-direction:column;gap:10px;min-width:0}
-.tile h3{font-size:1.45rem;margin-block-start:2px}
-.tile p{font-size:.95rem;color:var(--muted);max-width:30rem}
-.tile ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-block-start:4px;font-size:.92rem}
-.tile ul li::before{content:"✓";color:var(--forest);font-weight:700;margin-inline-end:8px}
-.tile .ic{width:40px;height:40px;flex:none;border-radius:12px;background:var(--mint);display:grid;place-items:center}
-.tile .ic svg{width:20px;height:20px;stroke:var(--forest);fill:none;stroke-width:2}
-.tile .shot{position:absolute;bottom:-38%;inset-inline-end:-8%;width:56%;padding:6px;border-radius:22px;background:var(--frame);box-shadow:0 20px 40px rgba(var(--shadow),.25);transform:rotate(var(--rot-shot))}
-.tile .shot img{width:100%;border-radius:17px}
-.t-cal{grid-column:span 4;grid-row:span 2;min-height:420px}
-.t-cal .copy{max-width:52%}
-.t-cal .shot{width:31%;bottom:-20%;inset-inline-end:5%;transform:rotate(var(--rot-shot-cal))}
-.t-shop{grid-column:span 2;grid-row:span 2}
-/* The narrowest tile that carries both a screenshot and bullets, so it is the
-   one place the two can collide: the copy stops at 56% and the phone starts at
-   about 68% of the tile. The mock's 62%/56% left the last two bullets running
-   under the bezel. */
-.t-shop .copy{max-width:56%}
-.t-shop .shot{width:52%;bottom:-52%;inset-inline-end:-20%;transform:rotate(var(--rot-shot-shop))}
-.t-todo,.t-meal,.t-bday{grid-column:span 2}
-.t-vault{grid-column:span 3;background:var(--mint-soft)}
-.t-fam{grid-column:span 3;background:var(--amber-soft)}
-.t-fam .ic{background:var(--amber-ic)}
-.t-fam .ic svg{stroke:var(--amber-ink)}
-/* Five overlapping avatars, and deliberately no initials in them: a letter per
-   dot would be five more strings in 23 content files for decoration. */
-.t-fam .avs{display:flex;margin-block-start:auto}
-.t-fam .avs i{width:38px;height:38px;border-radius:50%;border:3px solid var(--card);margin-inline-start:-10px}
-.t-fam .avs i:first-child{margin-inline-start:0}
-.t-fam .avs i:nth-child(1){background:var(--cat-green)}
-.t-fam .avs i:nth-child(2){background:var(--cat-amber)}
-.t-fam .avs i:nth-child(3){background:var(--cat-plum)}
-.t-fam .avs i:nth-child(4){background:var(--cat-sky)}
-.t-fam .avs i:nth-child(5){background:var(--cat-red)}
-@media(max-width:960px){
-  .bento{grid-template-columns:repeat(2,1fr)}
-  .tile{grid-column:span 2;grid-row:auto}
-  .t-cal{min-height:380px}
-  .t-cal .copy{max-width:60%}
-  .t-shop{min-height:300px}
-  .t-shop .copy{max-width:70%}
-}
-@media(max-width:600px){
-  .bento{grid-template-columns:1fr}
-  .tile{grid-column:span 1}
-  .t-cal,.t-shop{min-height:0}
-  .t-cal .copy,.t-shop .copy{max-width:100%}
-  .t-cal .shot,.t-shop .shot{display:none}
-}
-
-/* ---------- also on your computer ---------- */
-.web{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;margin-block-start:20px;padding:48px;border-radius:28px;background:var(--frame);color:#fff}
-.web h2,.web p,.web li{color:#fff}
-.web p{opacity:.85}
-.web .eyebrow{color:var(--web-mint)}
-.web .eyebrow::before{background:var(--web-mint)}
-.web ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-block:18px 26px;font-size:1rem}
-.web ul li{display:flex;gap:10px;align-items:flex-start}
-.web ul li::before{content:"";width:18px;height:18px;flex:none;margin-block-start:3px;border-radius:50%;background:var(--web-mint);mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
-.web .btn-primary{background:var(--web-mint);color:var(--web-mint-ink)}
-.web .btn-primary:hover{background:#fff;color:var(--web-mint-ink)}
-.web .muted{font-size:.85rem;opacity:.65;margin-block-start:12px}
-/* The same browser frame as the hero, but in the flow rather than tilted
-   behind a phone. */
-.web .laptop{position:static;width:100%;transform:none;box-shadow:0 30px 60px rgba(0,0,0,.35)}
-@media(max-width:900px){.web{grid-template-columns:1fr;gap:32px;padding-block:32px;padding-inline:24px}}
+/* The boxed dark "also on your computer" panel and the three bordered step
+   cards are gone: the web slide draws the browser window itself (.laptop,
+   .web-copy, above) and the steps are a plain three-column row that slides in
+   one step at a time. */
 
 /* ---------- steps ---------- */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
-.step{position:relative;padding-block:26px;padding-inline:24px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
-.step::before{counter-increment:step;content:counter(step);display:block;margin-block-end:10px;font-family:var(--display);font-weight:800;font-size:2.6rem;line-height:1;color:var(--mint-strong)}
-.step h3{font-size:1.35rem}
-.step p{font-size:.95rem;color:var(--muted);margin-block-start:6px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-block-start:34px;counter-reset:step}
+.step{padding-block:26px 0;border-top:3px solid var(--mint-strong);--lift:60px}
+/* The number is a counter, not a string: three digits are not content and the
+   template's loop has no index. The same counter carried the old cards. */
+.step::before{counter-increment:step;content:counter(step);display:block;font-family:var(--display);font-weight:800;font-size:2.8rem;line-height:1;color:var(--forest)}
+.step h3{font-size:1.4rem;margin-block:8px;line-height:1.2}
+.step p{font-size:.98rem;color:var(--muted)}
+/* When each step arrives. In the template they are one loop with no index, so
+   the three start times live here. */
+.step:nth-child(1){--a:.52;--w:.14}
+.step:nth-child(2){--a:.66;--w:.14}
+.step:nth-child(3){--a:.8;--w:.14}
 @media(max-width:760px){.steps{grid-template-columns:1fr}}
 
 /* ---------- comparison ---------- */
@@ -494,23 +589,40 @@ section.block{padding-block:84px 20px}
 .cmp tr:has(td) td:nth-child(2){background:var(--mint-soft)}
 .cmp thead th.d{color:var(--forest);border-radius:14px 14px 0 0}
 .cmp tbody tr:last-child td.d{border-radius:0 0 14px 14px}
+/* The table builds column by column. The reveal is on a span INSIDE each cell,
+   never on the cell: a transform on a <td> would relayout the table, and the
+   column widths have to be the same at --p 0 and 1 or the rows jump as the
+   slide settles. transform needs a block box, hence inline-block. */
+.cmp .by{display:inline-block}
+.col1{--a:.55;--w:.12}
+.col2{--a:.7;--w:.12}
+.col3{--a:.85;--w:.12}
 .legend{font-size:.85rem;color:var(--muted);margin-block-start:10px}
 
 /* ---------- pricing ---------- */
-.price{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:48px;border:1px solid var(--mint);border-radius:28px;background:var(--mint-soft)}
-.price .big{font-family:var(--display);font-size:clamp(4rem,10vw,7rem);font-weight:800;line-height:.9;color:var(--forest)}
-.price .big small{display:block;margin-block-start:8px;font-family:var(--sans);font-size:1.1rem;font-weight:600;line-height:1.4;letter-spacing:0;color:var(--muted)}
-.price ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-block:18px 24px}
-.price ul li::before{content:"✓";color:var(--forest);font-weight:700;margin-inline-end:10px}
-.price .promise{padding-block:14px;padding-inline:16px;border:1px solid var(--mint-strong);border-radius:16px;background:var(--card);font-size:.95rem;color:var(--body)}
-.price .promise strong{display:block;margin-block-end:4px;font-family:var(--display);letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;color:var(--forest)}
-.price .ctas{margin-block-start:22px}
-@media(max-width:860px){.price{grid-template-columns:1fr;gap:28px;padding-block:32px;padding-inline:24px}}
+/* No mint box and no border any more: the words build up on one side, the price
+   rises on the other, and the slide's own ground is the only background. */
+.price{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.price h2{font-size:clamp(1.9rem,4.2vw,3.4rem);margin-block:10px 16px}
+.price ul{list-style:none;display:grid;gap:10px;margin-block:18px 22px}
+.price li{display:flex;gap:10px}
+.price li::before{content:"✓";color:var(--forest);font-weight:700}
+/* The three points arrive one after another; like the steps, their start times
+   cannot come from the template's loop. */
+.price li:nth-child(1){--a:.58;--w:.08}
+.price li:nth-child(2){--a:.65;--w:.08}
+.price li:nth-child(3){--a:.72;--w:.08}
+.price .promise{border-inline-start:3px solid var(--mint-strong);padding-block:4px;padding-inline:16px;font-size:.95rem;margin-block-end:22px;color:var(--body)}
+.price .promise strong{display:block;font-family:var(--display);font-size:1.1rem;margin-block-end:2px;color:var(--forest)}
+.price .ctas{margin-block-start:0}
+.price .big{font-family:var(--display);font-weight:800;font-size:clamp(5rem,13vw,11rem);line-height:.9;color:var(--forest);text-align:center;--lift:80px}
+.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;letter-spacing:0;color:var(--muted);margin-block-start:10px;--lift:20px}
+@media(max-width:860px){.price{grid-template-columns:1fr;gap:28px}}
 
 /* ---------- faq ---------- */
-.faq{max-width:760px}
-.faq details{border-top:1px solid var(--line);padding-block:6px}
-.faq details:last-child{border-bottom:1px solid var(--line)}
+/* Plain rows, no card: the slide is the container. */
+.faq{max-width:760px;margin-block-start:24px}
+.faq details{border-bottom:1px solid var(--line);padding-block:6px}
 .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;padding-inline:4px;font-weight:600;font-size:1.05rem}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-family:var(--display);font-size:1.6rem;font-weight:700;line-height:1;flex:none;color:var(--forest);transition:transform .25s}
@@ -548,19 +660,48 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 .legal .translated{color:var(--muted);font-size:.88rem;margin-bottom:18px}
 .notice{background:var(--mint);border:1px solid var(--mint-strong);border-radius:14px;padding:12px 16px;margin:18px 0;font-size:.92rem}
 
-/* ---------- responsive ----------
-   The grid's own breakpoints live with the grid (feature tiles at 960/600, the
-   web block at 900, the price at 860). What is left here is everything that
-   crosses sections. */
-@media(max-width:960px){
-  .hero{grid-template-columns:1fr;gap:24px;padding-block-start:36px}
-  /* The glow is 520px wide and hangs 10% past the hero's end edge, which at
-     360px is 10px past the viewport. Pulled back to the edge once the hero is
-     one column, so nothing but overflow-x:clip stands between the page and a
-     horizontal scrollbar. */
-  .hero::before{inset-inline-end:0;width:min(520px,100%)}
-  .stack{height:auto;aspect-ratio:1/.95;width:100%;max-width:560px;margin-block-start:10px;margin-inline:auto}
-  section.block{padding-block:64px 16px}
+/* ---------- short screens ---------- */
+/* A 13" laptop at 1280×720 has 656px of slide. The table and the headings are
+   what overflow first, so they lose a little air rather than the slide losing
+   its snap. */
+@media(max-height:760px){
+  .cmp td,.cmp tbody th,.cmp thead th{padding-block:8px}
+  .sec-head h2{font-size:2rem}
+  .chapter h2{font-size:2.4rem}
+  .chapter h1{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+}
+
+/* ---------- 900px and down: a plain page -----------------------------------
+ * No snapping, no sticky phone, no floating cards, no colour per chapter —
+ * Ammar's call: "simple design for mobile, no slides". Every chapter becomes a
+ * block of text with its own screenshot under it, and the slides after the
+ * story stack with ordinary padding. script.js sets every --p to 1 here and
+ * then does nothing, so nothing on this page depends on scroll position.
+ * ------------------------------------------------------------------------- */
+@media(max-width:900px){
+  html.landing{scroll-snap-type:none}
+  .story .wrap{display:block}
+  .stage{display:none}
+  .chapter{min-height:0;display:flex;flex-direction:column;padding-block:48px 8px}
+  .chapter .txt{max-width:none;opacity:1}
+  .chapter+.chapter{border-top:1px solid var(--line)}
+  .chapter h1{font-size:clamp(2.2rem,8vw,2.8rem)}
+  .chapter h2{font-size:clamp(1.9rem,7vw,2.3rem)}
+  /* The screenshot goes under the words, whatever order the markup is in. */
+  .mshot{display:block;order:2;width:min(72%,280px);margin-block:28px 8px;margin-inline:auto}
+  .mshot img{border-radius:26px;box-shadow:0 24px 50px rgba(var(--shadow),.22),0 0 0 1px rgba(var(--shadow),.08)}
+  /* One ground for the whole story: eight colours that swap on scroll are the
+     desktop story, and there is no scroll driver here. */
+  .story{--stage-bg:var(--paper);--stage-fg:var(--ink);--stage-body:var(--body);--stage-muted:var(--muted);--stage-eyebrow:var(--forest)}
+  .scene{min-height:0;display:block;overflow:visible;padding-block:56px 16px}
+  .scene.last{padding-block:56px 0}
+  .scene.last>.pin{display:block;min-height:0;padding-block-start:0}
+  .scene.last footer{margin-block-start:40px}
+  .web-copy{position:static;transform:none;width:auto;margin-block-start:24px}
+  .laptop{transform:none}
+  .steps,.price{grid-template-columns:1fr}
+  .price .big{font-size:5rem}
+  .progress{display:none}
 }
 @media(max-width:820px){
   .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
@@ -569,13 +710,8 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   body{padding-bottom:76px}
 }
 @media(max-width:600px){
-  /* One column, phone centred, no browser window behind it: at 390px the frame
-     is 340px wide and the screenshot inside it is unreadable anyway. */
-  .stack{aspect-ratio:auto;height:auto;padding-block-start:10px}
-  .stack .laptop{display:none}
-  .phone{position:relative;bottom:auto;width:62%;margin-inline:auto;transform:none}
-  .web{padding:26px 18px}
-  .price{padding:26px 18px}
+  .mshot{width:min(86%,280px)}
+  .chapter{padding-block:40px 4px}
 }
 
 /* ---------- dark mode ---------- */
@@ -612,8 +748,15 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   /* A dash at .5 opacity of --muted disappears on a near-black ground; this is
      the one mark in the table that needs its own dark value. */
   .cmp td.n{color:#5A6B61}
-  .phone{box-shadow:0 34px 70px rgba(0,0,0,.5)}
+  /* --shadow is 0,0,0 here, and a black shadow on a near-black page is
+     invisible: the phone and the browser window would float with nothing under
+     them, so both keep an explicit, stronger one. */
+  .phone{box-shadow:0 40px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
   .laptop{box-shadow:0 30px 70px rgba(0,0,0,.45)}
+  .fc{box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06)}
+  /* The two dark chapters go a shade deeper than the page rather than lighter,
+     so the story still changes ground under a dark reader. */
+  :root{--stage-forest:#0B3323;--stage-ink:#060C09}
 }
 
 /* ---------- reduced motion ---------- */
@@ -621,8 +764,19 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   *,*::before,*::after{animation:none!important;transition:none!important}
   /* The hover lifts are the only motion left on the page that a transition
      rule does not already stop — a transform with no transition still jumps. */
-  .tile:hover,.btn-primary:hover,.store-badge:hover,.dl-btn:hover{transform:none}
+  .btn-primary:hover,.store-badge:hover,.dl-btn:hover{transform:none}
   html{scroll-behavior:auto}
+  /* The story still tells itself — the phone still stacks its screens by --idx
+     and the chapters still snap — but nothing lifts, drifts or slides in.
+     script.js pins each chapter's --p to 1 and --q to 0, so the text is simply
+     there; these rules drop the transforms the custom properties would
+     otherwise still apply.
+     The CARDS keep their own --p: it is not decoration but which three cards
+     belong to the chapter you are on, and pinning them would stack all
+     twenty-four over the phone at once. */
+  .by,.fc{transform:none!important}
+  .by{opacity:1!important}
+  .laptop{transform:none!important}
 }
 
 /* ---------- blog post ---------- */

@@ -15,8 +15,8 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
-  PAGES, FEATURES, TILE_ICONS, TRUST_ICONS, COMPARE_ROWS, COMPARE_MARKS, imageSize,
-  SHOT_LOCALE,
+  PAGES, FEATURES, COMPARE_ROWS, COMPARE_MARKS, imageSize,
+  SHOT_LOCALE, STORY_CARDS, STORY_ICONS, WEB_APP_URL,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
 } from './site.config.mjs';
 
@@ -310,23 +310,17 @@ function renderFooterLinks(loc) {
   return parts.join('\n      ');
 }
 
-/**
- * The trust strip under the hero: three claims in a row, ruled top and bottom.
- *
- * Not cards. The old page put three bordered pills inside a bordered, tinted
- * panel, and a card inside a card is the one thing the redesign review called
- * out by name — so this is an inline row and the only chrome is the two rules
- * .trust draws itself.
- */
-function renderTrustPills(loc) {
-  const pills = lookup(content[loc], 'trust.pills', `content/${loc}.json`);
-  if (pills.length !== TRUST_ICONS.length) {
-    throw new Error(`content/${loc}.json: trust.pills has ${pills.length} entries, expected ${TRUST_ICONS.length}`);
-  }
-  return pills.map((pill, i) => `      <div>
-        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TRUST_ICONS[i]}</svg>
-        <div><strong>${escapeHtml(pill.strong)}</strong><p>${escapeHtml(pill.span)}</p></div>
-      </div>`).join('\n');
+/** One consistent footer everywhere. On the landing page it is rendered inside
+ *  the last slide instead of after <main>: with mandatory scroll-snap a footer
+ *  that sits outside the last snap target can never be scrolled to. Same markup
+ *  either way, built here so the two placements cannot drift. */
+function renderFooter(loc) {
+  return `<footer>
+  <div class="wrap cols">
+    <div>${content[loc].footer.copyright}</div>
+    <div class="flinks">${renderFooterLinks(loc)}</div>
+  </div>
+</footer>`;
 }
 
 /**
@@ -354,82 +348,164 @@ function imgSrc(name, loc) {
   throw new Error(`no screenshot '${name}' in static/assets/img/shots/${dir}/ or shots/${DEFAULT_LOCALE}/ — run tools/make-site-shots.py`);
 }
 
-/** Everything below the fold is lazy; width/height on every image so the page
- *  stops shifting layout while they load. */
-const imgTag = (name, alt, cls, loc) => {
-  const { width, height } = imageSize(name);
-  return `<img${cls ? ` class="${cls}"` : ''} src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async">`;
-};
-
 /**
- * The hero device stack: the phone in front, the browser window behind it.
- *
- * These are the only images the page does NOT lazy-load — they are the largest
- * contentful paint — so they stay written out in landing.html with
- * `fetchpriority="high"` and take only their src and their intrinsic size from
- * here, rather than going through imgTag.
- *
- * The phone screenshot is localized (shots/<loc>/shot-home.webp, from 012). The
- * browser window is one file for every locale: web-calendar.webp is a capture of
- * app.daili.app, and the web app speaks English and German only, so there is no
- * 23-locale set to point at.
+ * The web app's browser window, the one image on the page that is NOT localized:
+ * web-calendar.webp is a capture of app.daili.app, and the web app speaks
+ * English and German only, so there is no 28-locale set to point at. It is the
+ * first thing the web slide shows, full width, so it keeps its intrinsic size.
  */
-function renderHeroShots(loc) {
-  const phone = imageSize('shot-');
-  const web = imageSize('web-');
-  return {
-    width: phone.width, height: phone.height,
-    home: imgSrc('shot-home', loc),
-    web: { src: imgSrc('web-calendar', loc), width: web.width, height: web.height },
-  };
+function renderWebShot(loc) {
+  const { width, height } = imageSize('web-');
+  return { src: imgSrc('web-calendar', loc), width, height };
 }
 
 /**
- * The feature grid — seven tiles, one per FEATURES entry, in one bento.
- *
- * This replaced seven full-width alternating text/screenshot blocks plus a
- * six-screen gallery strip. Same seven features, same words, roughly a third of
- * the scrolling: everything the app does is visible in one screenful instead of
- * being paged through.
- *
- * `features.<key>.eyebrow` is deliberately not rendered. Every tile carries a
- * glyph instead of a word, and the h3 already names the feature — but the key
- * stays in content, because the eyebrows are the app's own canonical feature
- * names (content/glossary.md) and re-translating them later is worse than
- * leaving them.
+ * One floating card: the drawing from STORY_CARDS around the two strings from
+ * story.cards.<chapter>[i]. `t` is the bold line, `s` the small one under it —
+ * every card has exactly those two, and a card that does not names its locale
+ * and its chapter on the way out rather than rendering half a card.
  */
-function renderFeatures(loc) {
+function storyCard(spec, card, chapter, i, where) {
+  for (const k of ['t', 's']) {
+    if (!card || typeof card !== 'object' || !(k in card) || !String(card[k]).trim()) {
+      throw new Error(`story.cards.${chapter}[${i}] has no non-empty '${k}' in ${where}`);
+    }
+  }
+  const av = (color, initial) => `<span class="av" style="background:var(--${color})">${escapeHtml(initial)}</span>`;
+  const cls = ['fc'];
+  let lead = '', trail = '';
+
+  if (spec.kind === 'pill') {
+    cls.push('pill');
+    lead = '<span class="dot"></span>';
+  } else if (spec.kind === 'av') {
+    // `box` is the to-do row: an empty checkbox in front, the assignee behind.
+    lead = spec.box ? '<span class="box"></span>' : av(spec.color, spec.initial);
+    if (spec.box) trail = av(spec.color, spec.initial);
+  } else if (spec.kind === 'avs') {
+    lead = `<span class="avs">${spec.group.map((c, j) => av(c, spec.initials[j])).join('')}</span>`;
+  } else if (spec.kind === 'tick') {
+    cls.push('chk');
+    lead = '<span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>';
+  } else if (spec.kind === 'badge') {
+    cls.push('badge-s');
+    lead = '<i></i>';
+  } else if (spec.kind.startsWith('ico:')) {
+    const glyph = spec.kind.slice(4);
+    if (!(glyph in STORY_ICONS)) {
+      throw new Error(`STORY_CARDS.${chapter}[${i}] wants icon '${glyph}', which is not a key in STORY_ICONS (${Object.keys(STORY_ICONS).join(', ')})`);
+    }
+    lead = `<span class="ico${spec.tone === 'amber' ? ' amber' : ''}"><svg viewBox="0 0 24 24">${STORY_ICONS[glyph]}</svg></span>`;
+  } else {
+    throw new Error(`STORY_CARDS.${chapter}[${i}] has kind '${spec.kind}', which nothing renders`);
+  }
+
+  const dur = spec.dur ? `;--dur:${spec.dur}` : '';
+  return `        <div class="${cls.join(' ')}" style="${spec.pos}${dur}">${lead}<span><b>${escapeHtml(card.t)}</b><small>${escapeHtml(card.s)}</small></span>${trail}</div>`;
+}
+
+/**
+ * The scroll story: eight chapters (the hero, then one per FEATURES entry), one
+ * sticky phone holding eight stacked screenshots, and eight groups of three
+ * floating cards.
+ *
+ * Returns the pieces rather than one blob, because they land in three different
+ * places in landing.html — the text column, the phone, and the card layer over
+ * it — and every piece has to stay in the same order as the other two. Chapter 0
+ * is the hero and stays written out in the template: it is the only chapter with
+ * store badges, and those come from the `storebadges` partial, which the engine
+ * resolves in the template and not inside a string this file hands it.
+ *
+ * `--a` / `--w` on each element are the mock's build-up numbers: where in the
+ * chapter's 0..1 scroll progress it starts appearing and how long it takes.
+ */
+function renderStory(loc) {
   const where = `content/${loc}.json`;
-  return FEATURES.map((f) => {
-    const c = lookup(content[loc], `features.${f.key}`, where);
-    for (const k of ['eyebrow', 'h2', 'p', 'bullets', 'alt']) {
-      if (!(k in c)) throw new Error(`missing key 'features.${f.key}.${k}' in ${where}`);
+  const c = content[loc];
+  const chapterKeys = ['hero', ...FEATURES.map((f) => f.key)];
+  const cards = lookup(c, 'story.cards', where);
+
+  for (const key of chapterKeys) {
+    if (!(key in cards)) throw new Error(`missing key 'story.cards.${key}' in ${where}`);
+    if (!Array.isArray(cards[key]) || cards[key].length !== STORY_CARDS[key].length) {
+      throw new Error(`story.cards.${key} in ${where} has ${cards[key].length} cards, STORY_CARDS has ${STORY_CARDS[key].length}`);
     }
-    if (!(f.tile in TILE_ICONS)) {
-      throw new Error(`FEATURES '${f.key}' has tile '${f.tile}', which is not a key in TILE_ICONS (${Object.keys(TILE_ICONS).join(', ')})`);
+  }
+
+  // The store the family chapter's button sends people to: the first one the app
+  // can actually be installed from, which is the same rule the sticky CTA uses.
+  // With no store live at all it points at the web app rather than at nothing.
+  const store = [stores.ios, stores.android].find((st) => st.available);
+  const ctaHref = store ? store.url : WEB_APP_URL;
+
+  const shot = (name, alt, k) => {
+    const { width, height } = imageSize(name);
+    const load = k === 0
+      ? 'fetchpriority="high"'      // chapter 0's screen is the LCP
+      : 'loading="lazy"';
+    return `<img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" style="--k:${k}" ${load} decoding="async">`;
+  };
+  // The same screenshot again, for the plain page a phone gets. Chapter 0's
+  // copy is the mobile LCP, so it is the one image here that is not lazy.
+  const mshot = (name, alt, eager) => {
+    const { width, height } = imageSize(name);
+    return `<div class="mshot"><img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>`;
+  };
+
+  const screens = [`          ${shot('shot-home', c.hero.altHome, 0)}`];
+  const floats = [];
+  const chapters = [];
+
+  chapterKeys.forEach((key, k) => {
+    floats.push(`      <div class="floats" data-floats="${k}" aria-hidden="true">
+${cards[key].map((card, i) => storyCard(STORY_CARDS[key][i], card, key, i, where)).join('\n')}
+      </div>`);
+  });
+
+  FEATURES.forEach((f, n) => {
+    const k = n + 1;
+    const fc = lookup(c, `features.${f.key}`, where);
+    for (const key of ['eyebrow', 'h2', 'p', 'bullets', 'alt']) {
+      if (!(key in fc)) throw new Error(`missing key 'features.${f.key}.${key}' in ${where}`);
     }
-    const bullets = c.bullets.length
-      ? `\n        <ul>\n${c.bullets.map((b) => `          <li>${escapeHtml(b)}</li>`).join('\n')}\n        </ul>`
+    screens.push(`          ${shot(f.shot, fc.alt, k)}`);
+
+    const bullets = fc.bullets.length
+      ? `\n          <ul>\n${fc.bullets.map((b, i) =>
+        `            <li class="by" style="--a:${(0.7 + i * 0.06).toFixed(2)};--w:.08">${escapeHtml(b)}</li>`).join('\n')}\n          </ul>`
       : '';
-    const copy = `        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TILE_ICONS[f.tile]}</svg></span>
-        <h3>${escapeHtml(c.h2)}</h3>
-        <p>${escapeHtml(c.p)}</p>${bullets}`;
-    // The family tile's five avatars: dots, no initials. A letter per dot would
-    // be five strings in 23 files for decoration nobody reads.
-    const avatars = f.tile === 'fam'
-      ? '\n      <div class="avs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>'
+    // Only the last chapter ends with a button: it is the end of the story, and
+    // a call to action on every chapter is a page that keeps interrupting itself.
+    const cta = f.key === 'family'
+      ? `\n          <div class="ctas by" style="--a:.8;--w:.1"><a class="btn btn-primary" href="${ctaHref}" rel="noopener">${escapeHtml(c.cta.sticky)}</a></div>`
       : '';
-    // A tile with a screenshot needs its words boxed away from the phone; the
-    // rest fill the tile.
-    const shot = f.shot
-      ? `\n      <div class="shot">${imgTag(f.shot, c.alt, '', loc)}</div>`
-      : '';
-    return `    <article class="tile t-${f.tile}">
-      <div class="copy">
-${copy}
-      </div>${avatars}${shot}
-    </article>`;
-  }).join('\n');
+
+    // The header's "Features" link lands on the first feature chapter, not on
+    // the hero above it: #features is where the old grid was, and a link that
+    // scrolls to the top of the page does nothing visible.
+    //
+    // <bdi> around "1 / 7" because /ar/ is an RTL paragraph: digits are a weak
+    // LTR run and the slash is neutral, so the bare string renders as "7 / 1"
+    // — the counter counting backwards. Same reason the language picker wraps
+    // its endonyms.
+    chapters.push(`      <div class="chapter" data-chapter="${k}"${k === 1 ? ' id="features"' : ''}>
+        ${mshot(f.shot, fc.alt)}
+        <div class="txt">
+          <span class="num by" style="--a:.42;--w:.12"><bdi>${k} / ${FEATURES.length}</bdi></span>
+          <span class="eyebrow by" style="--a:.42;--w:.12">${escapeHtml(fc.eyebrow)}</span>
+          <h2 class="by" style="--a:.45;--w:.14">${escapeHtml(fc.h2)}</h2>
+          <p class="p by" style="--a:.6;--w:.12">${escapeHtml(fc.p)}</p>${bullets}${cta}
+        </div>
+      </div>`);
+  });
+
+  return {
+    chapters: chapters.join('\n\n'),
+    screens: screens.join('\n'),
+    floats: floats.join('\n'),
+    dots: chapterKeys.map((_, k) => `<i${k === 0 ? ' class="on"' : ''}></i>`).join(''),
+    heroMshot: mshot('shot-home', c.hero.altHome, true),
+  };
 }
 
 function renderCompareTable(loc) {
@@ -443,13 +519,18 @@ function renderCompareTable(loc) {
   // Debian and on managed desktops — does not support, and an untinted column
   // is a comparison table with no answer in it. So the class is on the cell as
   // well, and the :has() rule in style.css is the progressive half.
-  const cell = (mark, daili) => {
+  // The table builds column by column as the slide settles: .by is the reveal
+  // primitive, .col1/.col2/.col3 are the three start times. The span is INSIDE
+  // the cell and the cell itself never moves, so the table's geometry — column
+  // widths, row heights, the tinted Daili column — is identical at --p 0 and 1.
+  const cell = (mark, col) => {
     const glyph = COMPARE_MARKS[mark];
-    return `<td class="${daili ? 'd ' : ''}${mark}"><span aria-hidden="true">${glyph}</span></td>`;
+    return `<td class="${col === 1 ? 'd ' : ''}${mark}"><span class="by col${col}" aria-hidden="true">${glyph}</span></td>`;
   };
-  const head = `        <tr><th scope="col">${escapeHtml(cmp.cols.feature)}</th><th scope="col" class="d">${escapeHtml(cmp.cols.daili)}</th><th scope="col">${escapeHtml(cmp.cols.gcal)}</th><th scope="col">${escapeHtml(cmp.cols.paper)}</th></tr>`;
+  const th = (label, col) => `<th scope="col"${col === 1 ? ' class="d"' : ''}><span class="by col${col}">${escapeHtml(label)}</span></th>`;
+  const head = `        <tr><th scope="col">${escapeHtml(cmp.cols.feature)}</th>${th(cmp.cols.daili, 1)}${th(cmp.cols.gcal, 2)}${th(cmp.cols.paper, 3)}</tr>`;
   const body = COMPARE_ROWS.map((r, i) =>
-    `        <tr><th scope="row">${escapeHtml(cmp.rows[i])}</th>${cell(r.daili, true)}${cell(r.gcal)}${cell(r.paper)}</tr>`).join('\n');
+    `        <tr><th scope="row">${escapeHtml(cmp.rows[i])}</th>${cell(r.daili, 1)}${cell(r.gcal, 2)}${cell(r.paper, 3)}</tr>`).join('\n');
   return `      <table class="cmp">\n        <thead>\n${head}\n        </thead>\n        <tbody>\n${body}\n        </tbody>\n      </table>`;
 }
 
@@ -765,17 +846,28 @@ function build() {
         page: {
           htmlLang: loc,
           dir: RTL.has(loc) ? 'rtl' : 'ltr',
+          // The class on <html> the scroll-snap rules hang off. Snap has to be
+          // set on the scroll container, which is <html>, and only the landing
+          // page snaps — `html:has(.story)` would have done it without a class
+          // and is not an option: Firefox ESR 115 ships no :has().
+          htmlClass: pg.id === 'landing' ? 'landing' : '',
           cssHref, jsHref,
           homeHref: dirFor(loc),
+          // The grid became the story; #features is now its first feature
+          // chapter, so the header link and any old bookmark still land right.
           featuresHref: pg.id === 'landing' ? '#features' : `${dirFor(loc)}#features`,
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
           footerLinks: renderFooterLinks(loc),
+          footerHtml: renderFooter(loc),
+          // Every page but the landing one closes with the footer after <main>.
+          // The landing page renders the same markup inside its last slide.
+          siteFooter: pg.id !== 'landing',
           legalBody,
           postBody,
-          heroShots: pg.id === 'landing' ? renderHeroShots(loc) : '',
-          trustPills: pg.id === 'landing' ? renderTrustPills(loc) : '',
-          features: pg.id === 'landing' ? renderFeatures(loc) : '',
+          webAppUrl: WEB_APP_URL,
+          story: pg.id === 'landing' ? renderStory(loc) : '',
+          webShot: pg.id === 'landing' ? renderWebShot(loc) : '',
           compareTable: pg.id === 'landing' ? renderCompareTable(loc) : '',
           faq: pg.id === 'landing' ? renderFaq(loc) : '',
           pricingHref: pg.id === 'landing' ? '#pricing' : `${dirFor(loc)}#pricing`,

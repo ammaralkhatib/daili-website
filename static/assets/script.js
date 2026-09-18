@@ -293,4 +293,112 @@
       sticky.hidden = entries[0].isIntersecting;
     }, { threshold: 0 }).observe(hero);
   }
+
+  /* ---------- the scroll story ----------
+   * One listener, one function, three custom properties.
+   *
+   *   --idx  on .screen — how far the story has scrolled, in chapters, with a
+   *          fraction. The eight stacked screenshots read it and slide.
+   *   --p    on each chapter, its cards and each slide below the story — 0
+   *          before it arrives, 1 once it has settled. Everything that builds
+   *          up is the .by rule in style.css reading this.
+   *   --q    on each chapter and its cards — 0..1 as it leaves upwards.
+   *
+   * The CSS defaults are the finished state (--p:1, --q:0), so a blocked or
+   * failed script leaves the whole page visible rather than blank. That is why
+   * nothing here unhides anything: it only animates what is already there.
+   *
+   * idx comes from the chapters' own geometry rather than from "scrolled
+   * pixels ÷ one screen": chapters have a min-height, so a long translation is
+   * allowed to make one taller than the viewport, and a fixed slide height
+   * would put the phone out of step with the words. */
+  var story = document.querySelector(".story");
+  if (story) {
+    var chapters = [].slice.call(story.querySelectorAll(".chapter"));
+    var floats = [].slice.call(story.querySelectorAll(".floats"));
+    var screenEl = story.querySelector(".screen");
+    var dots = [].slice.call(story.querySelectorAll(".progress i"));
+    var scenes = [].slice.call(document.querySelectorAll("[data-scene]"));
+    var calmQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+    var activeChapter = -1;
+
+    var clamp01 = function (v) { return v < 0 ? 0 : v > 1 ? 1 : v; };
+    var setVar = function (el, name, v) { if (el) el.style.setProperty(name, v.toFixed(3)); };
+
+    /* The header's height is the top edge of every slide. It is --header-h in
+       style.css; reading it back is how the two cannot drift apart. */
+    function headerHeight() {
+      var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h"));
+      return isNaN(v) ? 64 : v;
+    }
+
+    function activate(i) {
+      if (i === activeChapter) return;
+      activeChapter = i;
+      story.setAttribute("data-active", i);
+      dots.forEach(function (d, k) { d.classList.toggle("on", k === i); });
+    }
+
+    function frame() {
+      var vh = window.innerHeight;
+      var top = headerHeight();
+      /* 900px and down is the plain page: no snap, no sticky phone, no cards.
+         Everything is visible and nothing else here runs. */
+      if (window.innerWidth <= 900) {
+        chapters.forEach(function (c, i) {
+          setVar(c, "--p", 1); setVar(c, "--q", 0);
+          setVar(floats[i], "--p", 1); setVar(floats[i], "--q", 0);
+        });
+        scenes.forEach(function (s) { setVar(s, "--p", 1); });
+        activate(0);
+        return;
+      }
+      /* Reduced motion keeps the story — the phone still stacks the right
+         screen, the chapters still snap — and drops the building up. */
+      var calm = calmQuery ? calmQuery.matches : false;
+
+      var idx = 0;
+      for (var i = 0; i < chapters.length; i++) {
+        var r = chapters[i].getBoundingClientRect();
+        /* The last chapter whose top has passed under the header, plus how far
+           it has scrolled past as a fraction of its own height. */
+        if (r.top - top <= 1) idx = i + clamp01((top - r.top) / r.height);
+      }
+      /* Once the last chapter has scrolled past, idx would run to 8 — one more
+         than there are chapters — and the story would lose its ground colour
+         and its active dot while it is still partly on screen. */
+      if (idx > chapters.length - 1) idx = chapters.length - 1;
+      setVar(screenEl, "--idx", idx);
+
+      chapters.forEach(function (c, i) {
+        var p = clamp01(1 - (i - idx));
+        var q = clamp01((idx - i) / 0.5);
+        /* Reduced motion: the words are simply there, no building up. The
+           cards keep the real values — theirs is not an effect, it is which
+           three cards belong to the chapter you are on, and pinning them would
+           put all twenty-four over the phone at once. */
+        setVar(c, "--p", calm ? 1 : p); setVar(c, "--q", calm ? 0 : q);
+        setVar(floats[i], "--p", p); setVar(floats[i], "--q", q);
+      });
+      activate(Math.round(idx));
+
+      /* The slides after the story: 0 as the slide's top edge enters at the
+         bottom of the viewport, 1 once it sits under the header. */
+      scenes.forEach(function (s) {
+        var r = s.getBoundingClientRect();
+        setVar(s, "--p", calm ? 1 : clamp01((vh - (r.top - top)) / vh));
+      });
+    }
+
+    var queued = false;
+    function onFrame() {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(function () { frame(); queued = false; });
+    }
+    window.addEventListener("scroll", onFrame, { passive: true });
+    window.addEventListener("resize", onFrame);
+    if (calmQuery && calmQuery.addEventListener) calmQuery.addEventListener("change", onFrame);
+    frame();
+  }
 })();

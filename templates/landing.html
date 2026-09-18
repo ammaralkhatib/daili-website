@@ -1,132 +1,154 @@
-<!-- The home page, rebuilt from claude-prompts/2026-09-05/redesign-mock.html.
-     Section order is the mock's and is asserted in tools/check-build.mjs 15:
-     hero, trust strip, feature grid, web app, steps, comparison, price, FAQ.
+<!-- The home page: the scroll story from claude-prompts/2026-09-08/scroll-story-mock.html
+     (v7, approved 2026-09-18). Six blocks in a fixed order, asserted in
+     tools/check-build.mjs 15: the story, then the web app, the steps, the
+     comparison, the price and the FAQ — one screen each, the browser snapping
+     from one to the next above 900px.
 
-     Three blocks come out of build.mjs rather than a template loop, and each for
-     a reason the engine cannot express: the trust strip and the tiles need an
-     icon per item (site.config.mjs, not content), and the FAQ needs `open` on
-     the first <details> only, which needs a loop index. -->
-<main class="wrap" id="main">
+     The story's eight chapters are the hero plus one per FEATURES entry. Only
+     chapter 0 is written out here, because it is the one chapter with store
+     badges and those come from the `storebadges` partial, which the engine
+     resolves in a template and not inside a string build.mjs hands it. The
+     other seven, the eight stacked screenshots and the eight groups of floating
+     cards come from renderStory() — three lists that have to stay in the same
+     order, which is why one function builds all three.
 
-  <section class="hero">
-    <div class="copy">
-      <span class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>{{ hero.kicker }}</span>
-      <h1>{{ hero.h1a }} <em>{{ hero.h1b }}</em></h1>
-      <p class="lead">{{ hero.lead }}</p>
-      <div class="ctas badges">
+     Every `--a` / `--w` pair is where in a slide's own 0..1 scroll progress an
+     element starts appearing and how long it takes; script.js sets --p and --q,
+     and the single `.by` rule in style.css turns them into opacity and lift.
+     With JavaScript off every --p stays 0 — so the reduced-motion rule in
+     style.css also covers "no script": .by elements are simply visible. -->
+<main id="main">
+
+  <section class="story" id="story" data-active="0">
+    <div class="wrap">
+      <div class="chapters">
+
+        <div class="chapter hero" data-chapter="0">
+          {{{ page.story.heroMshot }}}
+          <div class="txt">
+            <h1 class="by" style="--a:0;--w:.06">{{ hero.h1a }} <em>{{ hero.h1b }}</em></h1>
+            <p class="lead by" style="--a:.04;--w:.06">{{ hero.lead }}</p>
+            <div class="ctas badges by" style="--a:.08;--w:.06">
 {{> storebadges }}
-          <a class="web-link" href="https://app.daili.app" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
-      </div>
-      <p class="note">
+              <a class="web-link" href="{{ page.webAppUrl }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
+            </div>
+            <p class="note by" style="--a:.12;--w:.06">
 {{# hero.notes }}<span>{{ . }}</span>
-{{/}}      </p>
-    </div>
+{{/}}            </p>
+          </div>
+        </div>
 
-    <!-- The phone is the product and keeps a real alt. The browser window
-         behind it is scenery for the same screenshot the web section shows in
-         full, so it is aria-hidden rather than described twice. -->
-    <div class="stack">
+{{{ page.story.chapters }}}
+
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="device">
+          <div class="phone">
+            <div class="screen">
+{{{ page.story.screens }}}
+            </div>
+          </div>
+{{{ page.story.floats }}}
+        </div>
+        <div class="progress">{{{ page.story.dots }}}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The browser window arrives full width and shrinks aside as the copy fades
+       in behind it. The image is the only one on the page that is not
+       localized: the web app speaks English and German. -->
+  <section class="scene" id="web" data-scene>
+    <div class="pin"><div class="wrap web-pin">
       <div class="laptop" aria-hidden="true">
-        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app</span></div>
-        <img src="{{ page.heroShots.web.src }}" alt="" width="{{ page.heroShots.web.width }}" height="{{ page.heroShots.web.height }}" fetchpriority="high" decoding="async">
+        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
+        <img src="{{ page.webShot.src }}" alt="" width="{{ page.webShot.width }}" height="{{ page.webShot.height }}" loading="lazy" decoding="async">
       </div>
-      <div class="phone"><img src="{{ page.heroShots.home }}" alt="{{ hero.altHome }}" width="{{ page.heroShots.width }}" height="{{ page.heroShots.height }}" fetchpriority="high" decoding="async"></div>
-    </div>
-  </section>
-
-  <div class="trust" role="group" aria-label="{{ trust.h2 }}">
-{{{ page.trustPills }}}
-  </div>
-
-  <section class="block" id="features">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow">{{ featuresSection.eyebrow }}</span>
-        <h2>{{ featuresSection.h2 }}</h2>
-      </div>
-      <p class="section-lead">{{ featuresSection.lead }}</p>
-    </div>
-    <div class="bento">
-{{{ page.features }}}
-    </div>
-  </section>
-
-  <section class="block" id="web">
-    <div class="web">
-      <div class="copy">
+      <div class="web-copy by">
         <span class="eyebrow">{{ web.eyebrow }}</span>
         <h2>{{ web.h2 }}</h2>
         <p>{{ web.p }}</p>
         <ul>
 {{# web.points }}          <li>{{ . }}</li>
 {{/}}        </ul>
-        <a class="btn btn-primary" href="https://app.daili.app" rel="noopener">{{ web.cta }}</a>
+        <a class="btn btn-primary" href="{{ page.webAppUrl }}" rel="noopener">{{ web.cta }}</a>
         <p class="muted">{{ web.note }}</p>
       </div>
-      <div class="laptop" aria-hidden="true">
-        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
-        <img src="{{ page.heroShots.web.src }}" alt="" width="{{ page.heroShots.web.width }}" height="{{ page.heroShots.web.height }}" loading="lazy" decoding="async">
-      </div>
-    </div>
+    </div></div>
   </section>
 
-  <section class="block" id="how">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow">{{ howItWorks.eyebrow }}</span>
-        <h2>{{ howItWorks.h2 }}</h2>
+  <section class="scene" id="how" data-scene>
+    <div class="pin"><div class="wrap">
+      <div class="sec-head by" style="--a:.35;--w:.15">
+        <div>
+          <span class="eyebrow">{{ howItWorks.eyebrow }}</span>
+          <h2>{{ howItWorks.h2 }}</h2>
+        </div>
       </div>
-    </div>
-    <div class="steps">
+      <!-- The three steps slide in one after another; their start times are
+           :nth-child rules in style.css, because the engine's loop has no
+           index and three numbers are not worth a build.mjs helper. -->
+      <div class="steps">
 {{# howItWorks.steps }}
-      <div class="step">
-        <h3>{{ .h3 }}</h3>
-        <p>{{ .p }}</p>
-      </div>
+        <div class="step by x">
+          <h3>{{ .h3 }}</h3>
+          <p>{{ .p }}</p>
+        </div>
 {{/}}
-    </div>
-  </section>
-
-  <section class="block" id="compare">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow">{{ compare.eyebrow }}</span>
-        <h2>{{ compare.h2 }}</h2>
-        <p class="section-lead">{{ compare.lead }}</p>
       </div>
-    </div>
-    <div class="table-scroll">
-{{{ page.compareTable }}}
-    </div>
-    <p class="legend">{{ compare.legend }}</p>
+    </div></div>
   </section>
 
-  <section class="block" id="pricing">
-    <div class="price">
+  <section class="scene" id="compare" data-scene>
+    <div class="pin"><div class="wrap">
+      <div class="sec-head by" style="--a:.35;--w:.15">
+        <div>
+          <span class="eyebrow">{{ compare.eyebrow }}</span>
+          <h2>{{ compare.h2 }}</h2>
+          <p class="section-lead">{{ compare.lead }}</p>
+        </div>
+      </div>
+      <div class="table-scroll">
+{{{ page.compareTable }}}
+      </div>
+      <p class="legend by col3">{{ compare.legend }}</p>
+    </div></div>
+  </section>
+
+  <section class="scene" id="pricing" data-scene>
+    <div class="pin"><div class="wrap price">
       <div class="copy">
-        <span class="eyebrow">{{ pricing.eyebrow }}</span>
-        <h2>{{ pricing.h2 }}</h2>
+        <span class="eyebrow by" style="--a:.35;--w:.1">{{ pricing.eyebrow }}</span>
+        <h2 class="by" style="--a:.4;--w:.12">{{ pricing.h2 }}</h2>
         <ul>
-{{# pricing.points }}          <li>{{ . }}</li>
+{{# pricing.points }}          <li class="by">{{ . }}</li>
 {{/}}        </ul>
-        <div class="promise"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
-        <div class="ctas badges">
+        <div class="promise by" style="--a:.8;--w:.1"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
+        <div class="ctas badges by" style="--a:.88;--w:.1">
 {{> storebadges }}
         </div>
       </div>
-      <p class="big">{{ pricing.big }}<small>{{ pricing.bigNote }}</small></p>
-    </div>
+      <p class="big by" style="--a:.45;--w:.25">{{ pricing.big }}<small class="by" style="--a:.75;--w:.1">{{ pricing.bigNote }}</small></p>
+    </div></div>
   </section>
 
-  <section class="block" id="faq">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow">{{ faq.eyebrow }}</span>
-        <h2>{{ faq.h2 }}</h2>
-      </div>
-    </div>
-    <div class="faq">
+  <!-- The last slide carries the footer. With mandatory snap a footer after
+       </main> is a snap target nobody can reach. -->
+  <section class="scene last" id="faq" data-scene>
+    <div class="pin">
+      <div class="wrap">
+        <div class="sec-head by" style="--a:.4;--w:.2">
+          <div>
+            <span class="eyebrow">{{ faq.eyebrow }}</span>
+            <h2>{{ faq.h2 }}</h2>
+          </div>
+        </div>
+        <div class="faq by" style="--a:.55;--w:.25">
 {{{ page.faq }}}
+        </div>
+      </div>
+{{{ page.footerHtml }}}
     </div>
   </section>
 
