@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Download",
     "language": "Taal",
-    "skip": "Naar de inhoud"
+    "skip": "Naar de inhoud",
+    "menu": "Menu openen"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Maandagenda van Daili",
     "altHome": "Beginscherm van Daili met de tegels van de functies"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Zwemles", "s": "Vandaag · 16:30" },
+        { "t": "Melk · 2 l", "s": "Marco is in de winkel" },
+        { "t": "Vuilnis buitenzetten", "s": "Noah · klaar" }
+      ],
+      "calendar": [
+        { "t": "Zwemles", "s": "Vandaag · 16:30 · Emma" },
+        { "t": "Pianoles", "s": "om de week op woensdag" },
+        { "t": "Herinnering op 4 telefoons", "s": "15 minuten van tevoren" }
+      ],
+      "shopping": [
+        { "t": "Melk · 2 l", "s": "Lena zette het erop — thuis" },
+        { "t": "Brood", "s": "Marco · in de winkel" },
+        { "t": "In een seconde gesynct", "s": "op elke telefoon in het gezin" }
+      ],
+      "todos": [
+        { "t": "Planten water geven", "s": "Emma · vrijdag" },
+        { "t": "Vuilnis buitenzetten", "s": "Noah · klaar 🎉" },
+        { "t": "Herinnering", "s": "Donderdag · 18:00" }
+      ],
+      "meals": [
+        { "t": "Dinsdag · Avondeten", "s": "Pasta — uit het receptenboek" },
+        { "t": "6 ingrediënten → lijst", "s": "met één tik toegevoegd" },
+        { "t": "De week rond op zondag", "s": "van ontbijt tot avondeten" }
+      ],
+      "birthdays": [
+        { "t": "Emma wordt 12", "s": "over 22 dagen · 29 augustus" },
+        { "t": "Herinnering voor iedereen", "s": "een week van tevoren" },
+        { "t": "Marco wordt 41", "s": "over 3 weken — elk jaar" }
+      ],
+      "vault": [
+        { "t": "Verzekeringspas.pdf", "s": "alleen op deze telefoon" },
+        { "t": "Vakantie 2026 · 48 foto's", "s": "nooit geüpload" },
+        { "t": "Geen server ziet ze ooit", "s": "de onze ook niet" }
+      ],
+      "family": [
+        { "t": "Familie Berger", "s": "5 leden" },
+        { "t": "Uitnodigingscode 482913", "s": "of deel de link" },
+        { "t": "Noah · beheerd profiel", "s": "zonder e-mail — later omzetten" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Prijs",
     "h2": "Gratis — en voor jou gratis, voor altijd",
-    "lead": "Daili kost vandaag niets. Geen reclame, geen tracking, niets dat aan wie dan ook verkocht wordt.",
     "points": [
       "Alles op deze pagina is nu al gratis",
       "Geen creditcard, geen proefperiode, geen functies op slot",
@@ -181,7 +226,7 @@
       "h2": "Ouders, kinderen en oma — iedereen erbij",
       "p": "Nodig je gezin uit met een simpele code van 6 cijfers of een link. Ouders zijn beheerder, kinderen en tieners krijgen een eigen login, en de kleintjes zonder e-mailadres krijgen een beheerd profiel dat je later kunt omzetten.",
       "bullets": [],
-      "alt": "Illustratie van een gezin"
+      "alt": "Gezinsscherm met de leden en de uitnodigingscode"
     }
   },
 

@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Stiahnuť",
     "language": "Jazyk",
-    "skip": "Preskočiť na obsah"
+    "skip": "Preskočiť na obsah",
+    "menu": "Otvoriť ponuku"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Mesačný kalendár Daili",
     "altHome": "Domovská obrazovka Daili s dlaždicami funkcií"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Plávanie", "s": "Dnes · 16:30" },
+        { "t": "Mlieko · 2 l", "s": "Marco je v obchode" },
+        { "t": "Vyniesť smeti", "s": "Noah · hotovo" }
+      ],
+      "calendar": [
+        { "t": "Plávanie", "s": "Dnes · 16:30 · Emma" },
+        { "t": "Hodina klavíra", "s": "každú druhú stredu" },
+        { "t": "Pripomienka na 4 telefóny", "s": "15 minút vopred" }
+      ],
+      "shopping": [
+        { "t": "Mlieko · 2 l", "s": "Lena ho pridala — z domu" },
+        { "t": "Chlieb", "s": "Marco · v obchode" },
+        { "t": "Zosynchronizované za sekundu", "s": "na každom telefóne v rodine" }
+      ],
+      "todos": [
+        { "t": "Poliať kvety", "s": "Emma · piatok" },
+        { "t": "Vyniesť smeti", "s": "Noah · hotovo 🎉" },
+        { "t": "Pripomienka", "s": "Štvrtok · 18:00" }
+      ],
+      "meals": [
+        { "t": "Utorok · Večera", "s": "Cestoviny — z receptov" },
+        { "t": "6 surovín → Nákupy", "s": "pridané jedným ťuknutím" },
+        { "t": "Týždeň hotový v nedeľu", "s": "od raňajok po večeru" }
+      ],
+      "birthdays": [
+        { "t": "Emma má 12", "s": "o 22 dní · 29. augusta" },
+        { "t": "Pripomienka pre všetkých", "s": "týždeň vopred" },
+        { "t": "Marco má 41", "s": "o 3 týždne — každý rok" }
+      ],
+      "vault": [
+        { "t": "Kartička poistenca.pdf", "s": "len v tomto telefóne" },
+        { "t": "Dovolenka 2026 · 48 fotiek", "s": "nikdy nenahraté" },
+        { "t": "Žiadny server ich nevidí", "s": "ani ten náš" }
+      ],
+      "family": [
+        { "t": "Bergerovci", "s": "5 členov" },
+        { "t": "Kód pozvánky 482913", "s": "alebo zdieľaj odkaz" },
+        { "t": "Noah · spravovaný profil", "s": "bez e-mailu — účet neskôr" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Cena",
     "h2": "Zadarmo — a pre teba zadarmo navždy",
-    "lead": "Daili dnes nestojí nič. Bez reklám, bez sledovania, nič sa nikomu nepredáva.",
     "points": [
       "Všetko na tejto stránke je práve teraz zadarmo",
       "Bez platobnej karty, bez skúšobnej doby, bez zamknutých funkcií",
@@ -181,7 +226,7 @@
       "h2": "Rodičia, deti aj babka — všetci vnútri",
       "p": "Pozvi svoju rodinu jednoduchým šesťmiestnym kódom alebo odkazom. Rodičia sú správcovia, deti a tínedžeri dostanú vlastné prihlásenie a najmenší bez e-mailu spravovaný profil, ktorý môžeš neskôr povýšiť.",
       "bullets": [],
-      "alt": "Ilustrácia rodiny"
+      "alt": "Obrazovka rodiny s členmi a kódom pozvánky"
     }
   },
 

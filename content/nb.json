@@ -20,7 +20,8 @@
     "blog": "Blogg",
     "download": "Last ned",
     "language": "Språk",
-    "skip": "Gå til innholdet"
+    "skip": "Gå til innholdet",
+    "menu": "Åpne menyen"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Månedskalender i Daili",
     "altHome": "Startskjermen i Daili med rutene for funksjonene"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Svømming", "s": "I dag · 16:30" },
+        { "t": "Melk · 2 l", "s": "Marco er i butikken" },
+        { "t": "Kaste søpla", "s": "Noah · gjort" }
+      ],
+      "calendar": [
+        { "t": "Svømming", "s": "I dag · 16:30 · Emma" },
+        { "t": "Pianotime", "s": "annenhver onsdag" },
+        { "t": "Påminnelse på 4 telefoner", "s": "15 minutter før" }
+      ],
+      "shopping": [
+        { "t": "Melk · 2 l", "s": "Lena skrev den opp — hjemmefra" },
+        { "t": "Brød", "s": "Marco · i butikken" },
+        { "t": "Synket på ett sekund", "s": "på hver telefon i familien" }
+      ],
+      "todos": [
+        { "t": "Vanne plantene", "s": "Emma · fredag" },
+        { "t": "Kaste søpla", "s": "Noah · gjort 🎉" },
+        { "t": "Påminnelse", "s": "Torsdag · 18:00" }
+      ],
+      "meals": [
+        { "t": "Tirsdag · Middag", "s": "Pasta — fra oppskriftene" },
+        { "t": "6 ingredienser → Innkjøp", "s": "lagt til med ett trykk" },
+        { "t": "Uka klar til søndag", "s": "fra frokost til middag" }
+      ],
+      "birthdays": [
+        { "t": "Emma fyller 12", "s": "om 22 dager · 29. august" },
+        { "t": "Påminnelse til alle", "s": "en uke før" },
+        { "t": "Marco fyller 41", "s": "om 3 uker — hvert år" }
+      ],
+      "vault": [
+        { "t": "Forsikringskort.pdf", "s": "kun på denne telefonen" },
+        { "t": "Ferie 2026 · 48 bilder", "s": "aldri lastet opp" },
+        { "t": "Ingen server ser dem", "s": "ikke vår heller" }
+      ],
+      "family": [
+        { "t": "Familien Berger", "s": "5 medlemmer" },
+        { "t": "Invitasjonskode 482913", "s": "eller del lenken" },
+        { "t": "Noah · styrt profil", "s": "uten e-post — oppgraderes siden" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Pris",
     "h2": "Gratis — og gratis for deg, for alltid",
-    "lead": "Daili koster ingenting i dag. Ingen reklame, ingen sporing og ingenting som selges til noen.",
     "points": [
       "Alt på denne siden er gratis allerede nå",
       "Ingen betalingskort, ingen prøveperiode og ingen låste funksjoner",
@@ -181,7 +226,7 @@
       "h2": "Foreldre, barn og bestemor — alle med",
       "p": "Inviter familien med en enkel kode på 6 sifre eller en lenke. Foreldre er administratorer, barn og tenåringer får egen innlogging, og de små uten e-post får en styrt profil som du kan oppgradere senere.",
       "bullets": [],
-      "alt": "Illustrasjon av en familie"
+      "alt": "Familieskjermen med medlemmene og invitasjonskoden"
     }
   },
 

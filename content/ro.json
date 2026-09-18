@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Descarcă",
     "language": "Limbă",
-    "skip": "Sari la conținut"
+    "skip": "Sari la conținut",
+    "menu": "Deschide meniul"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Calendar lunar Daili",
     "altHome": "Ecranul principal Daili, cu plăci de funcții"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Curs de înot", "s": "Azi · 16:30" },
+        { "t": "Lapte · 2 l", "s": "Marco e în magazin" },
+        { "t": "Scoate gunoiul", "s": "Noah · gata" }
+      ],
+      "calendar": [
+        { "t": "Curs de înot", "s": "Azi · 16:30 · Emma" },
+        { "t": "Lecție de pian", "s": "din două în două miercuri" },
+        { "t": "Memento pe 4 telefoane", "s": "cu 15 minute înainte" }
+      ],
+      "shopping": [
+        { "t": "Lapte · 2 l", "s": "Lena l-a adăugat — de acasă" },
+        { "t": "Pâine", "s": "Marco · în magazin" },
+        { "t": "Sincronizat într-o secundă", "s": "pe fiecare telefon din casă" }
+      ],
+      "todos": [
+        { "t": "Udă plantele", "s": "Emma · vineri" },
+        { "t": "Scoate gunoiul", "s": "Noah · gata 🎉" },
+        { "t": "Memento", "s": "Joi · 18:00" }
+      ],
+      "meals": [
+        { "t": "Marți · Cină", "s": "Paste — din caietul de rețete" },
+        { "t": "6 ingrediente → Cumpărături", "s": "adăugate dintr-o atingere" },
+        { "t": "Săptămâna gata duminică", "s": "de la mic dejun la cină" }
+      ],
+      "birthdays": [
+        { "t": "Emma face 12 ani", "s": "peste 22 de zile · 29 august" },
+        { "t": "Memento pentru toți", "s": "cu o săptămână înainte" },
+        { "t": "Marco face 41 de ani", "s": "peste 3 săptămâni — anual" }
+      ],
+      "vault": [
+        { "t": "Card de asigurare.pdf", "s": "doar pe telefonul acesta" },
+        { "t": "Vacanță 2026 · 48 poze", "s": "niciodată încărcate" },
+        { "t": "Niciun server nu le vede", "s": "nici al nostru" }
+      ],
+      "family": [
+        { "t": "Familia Berger", "s": "5 membri" },
+        { "t": "Cod de invitație 482913", "s": "sau trimite linkul" },
+        { "t": "Noah · profil gestionat", "s": "fără e-mail — cont mai târziu" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Preț",
     "h2": "Gratuit — și gratuit pentru tine, pentru totdeauna",
-    "lead": "Daili nu costă nimic astăzi. Fără reclame, fără urmărire, nimic vândut nimănui.",
     "points": [
       "Tot ce se vede pe această pagină este gratuit chiar acum",
       "Fără card bancar, fără perioadă de probă, fără funcții blocate",
@@ -181,7 +226,7 @@
       "h2": "Părinți, copii și bunica — toți înăuntru",
       "p": "Invită-ți familia cu un simplu cod din 6 cifre sau cu un link. Părinții sunt administratori, copiii și adolescenții primesc propriul cont, iar cei mici fără e-mail primesc un profil gestionat, pe care îl poți transforma mai târziu.",
       "bullets": [],
-      "alt": "Ilustrație cu o familie"
+      "alt": "Ecranul Familie cu membrii și codul de invitație"
     }
   },
 

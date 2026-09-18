@@ -20,7 +20,8 @@
     "blog": "Blogi",
     "download": "Lataa",
     "language": "Kieli",
-    "skip": "Siirry sisältöön"
+    "skip": "Siirry sisältöön",
+    "menu": "Avaa valikko"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Dailin kuukausikalenteri",
     "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Uimakoulu", "s": "Tänään · 16.30" },
+        { "t": "Maito · 2 l", "s": "Marco on kaupassa" },
+        { "t": "Roskat ulos", "s": "Noah · tehty" }
+      ],
+      "calendar": [
+        { "t": "Uimakoulu", "s": "Tänään · 16.30 · Emma" },
+        { "t": "Pianotunti", "s": "joka toinen keskiviikko" },
+        { "t": "Muistutus 4 puhelimeen", "s": "15 minuuttia ennen" }
+      ],
+      "shopping": [
+        { "t": "Maito · 2 l", "s": "Lena lisäsi sen — kotoa" },
+        { "t": "Leipä", "s": "Marco · kaupassa" },
+        { "t": "Synkassa sekunnissa", "s": "jokaisessa perheen puhelimessa" }
+      ],
+      "todos": [
+        { "t": "Kastele kukat", "s": "Emma · perjantai" },
+        { "t": "Roskat ulos", "s": "Noah · tehty 🎉" },
+        { "t": "Muistutus", "s": "Torstai · 18.00" }
+      ],
+      "meals": [
+        { "t": "Tiistai · Päivällinen", "s": "Pastaa — resepteistä" },
+        { "t": "6 ainesta → Ostokset", "s": "lisätty yhdellä napautuksella" },
+        { "t": "Viikko valmis sunnuntaina", "s": "aamiaisesta päivälliseen" }
+      ],
+      "birthdays": [
+        { "t": "Emma täyttää 12", "s": "22 päivän päästä · 29. elokuuta" },
+        { "t": "Muistutus kaikille", "s": "viikkoa aiemmin" },
+        { "t": "Marco täyttää 41", "s": "3 viikon päästä — joka vuosi" }
+      ],
+      "vault": [
+        { "t": "Vakuutuskortti.pdf", "s": "vain tässä puhelimessa" },
+        { "t": "Loma 2026 · 48 kuvaa", "s": "ei koskaan ladattu" },
+        { "t": "Yksikään palvelin ei näe", "s": "ei edes meidän" }
+      ],
+      "family": [
+        { "t": "Bergerin perhe", "s": "5 jäsentä" },
+        { "t": "Kutsukoodi 482913", "s": "tai jaa linkki" },
+        { "t": "Noah · hallittu profiili", "s": "ilman sähköpostia — päivitä" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Hinta",
     "h2": "Ilmainen — ja sinulle ilmainen ikuisesti",
-    "lead": "Daili ei maksa tänään mitään. Ei mainoksia, ei seurantaa eikä mitään myytävää kenellekään.",
     "points": [
       "Kaikki tällä sivulla on ilmaista jo nyt",
       "Ei korttia, ei kokeilujaksoa eikä lukittuja ominaisuuksia",
@@ -181,7 +226,7 @@
       "h2": "Vanhemmat, lapset ja mummo — kaikki mukana",
       "p": "Kutsu perheesi yksinkertaisella kuusinumeroisella koodilla tai linkillä. Vanhemmat ovat ylläpitäjiä, lapset ja teinit saavat omat tunnukset, ja pienimmät ilman sähköpostia saavat hallitun profiilin, josta voi myöhemmin tehdä oikean tilin.",
       "bullets": [],
-      "alt": "Kuvitus perheestä"
+      "alt": "Perhenäkymä jäsenineen ja kutsukoodeineen"
     }
   },
 

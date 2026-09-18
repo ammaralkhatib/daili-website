@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Descargar",
     "language": "Idioma",
-    "skip": "Ir al contenido"
+    "skip": "Ir al contenido",
+    "menu": "Abrir el menú"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Calendario mensual de Daili",
     "altHome": "Pantalla de inicio de Daili con los accesos a las funciones"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Clase de natación", "s": "Hoy · 16:30" },
+        { "t": "Leche · 2 l", "s": "Marco está en la tienda" },
+        { "t": "Sacar la basura", "s": "Noah · hecho" }
+      ],
+      "calendar": [
+        { "t": "Clase de natación", "s": "Hoy · 16:30 · Emma" },
+        { "t": "Clase de piano", "s": "cada dos miércoles" },
+        { "t": "Aviso en 4 móviles", "s": "15 minutos antes" }
+      ],
+      "shopping": [
+        { "t": "Leche · 2 l", "s": "Lena la añadió — desde casa" },
+        { "t": "Pan", "s": "Marco · en la tienda" },
+        { "t": "Sincronizado en un segundo", "s": "en todos los móviles de casa" }
+      ],
+      "todos": [
+        { "t": "Regar las plantas", "s": "Emma · viernes" },
+        { "t": "Sacar la basura", "s": "Noah · hecho 🎉" },
+        { "t": "Aviso", "s": "Jueves · 18:00" }
+      ],
+      "meals": [
+        { "t": "Martes · Cena", "s": "Pasta — del recetario" },
+        { "t": "6 ingredientes → Compras", "s": "añadidos con un toque" },
+        { "t": "La semana lista el domingo", "s": "del desayuno a la cena" }
+      ],
+      "birthdays": [
+        { "t": "Emma cumple 12", "s": "en 22 días · 29 de agosto" },
+        { "t": "Aviso para toda la familia", "s": "una semana antes" },
+        { "t": "Marco cumple 41", "s": "en 3 semanas — cada año" }
+      ],
+      "vault": [
+        { "t": "Tarjeta del seguro.pdf", "s": "solo en este móvil" },
+        { "t": "Vacaciones 2026 · 48 fotos", "s": "nunca subidas" },
+        { "t": "Ningún servidor las ve", "s": "tampoco el nuestro" }
+      ],
+      "family": [
+        { "t": "Familia Berger", "s": "5 miembros" },
+        { "t": "Código de invitación 482913", "s": "o comparte el enlace" },
+        { "t": "Noah · perfil gestionado", "s": "sin correo — se amplía después" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Precio",
     "h2": "Gratis — y gratis para ti, para siempre",
-    "lead": "Daili hoy no cuesta nada. Sin anuncios, sin rastreo y sin vender nada a nadie.",
     "points": [
       "Todo lo que aparece en esta página es gratis ahora mismo",
       "Sin tarjeta de crédito, sin periodo de prueba y sin funciones bloqueadas",
@@ -181,7 +226,7 @@
       "h2": "Madres, padres, hijos y la abuela: todos dentro",
       "p": "Invita a tu familia con un sencillo código de 6 dígitos o un enlace. Las madres y los padres son administradores, los hijos y adolescentes tienen su propia cuenta, y los pequeños sin correo electrónico reciben un perfil gestionado que podrás convertir más adelante.",
       "bullets": [],
-      "alt": "Ilustración de una familia"
+      "alt": "Pantalla de familia con los miembros y el código de invitación"
     }
   },
 

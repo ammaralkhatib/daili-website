@@ -32,7 +32,9 @@
     "blog": "Blog",
     "download": "Download",
     "language": "Language",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "menu": "Open menu",
+    "@menu": { "description": "aria-label on the burger button that opens the mobile navigation. Never shown as visible text." }
   },
 
   "cta": {
@@ -62,6 +64,52 @@
     "@notes": { "description": "Three short trust chips under the download buttons. Two or three words each." },
     "altCalendar": "Daili month calendar",
     "altHome": "Daili home screen with feature tiles"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Swimming class", "s": "Today · 16:30" },
+        { "t": "Milk · 2 l", "s": "Marco is in the store" },
+        { "t": "Take out the bins", "s": "Noah · done" }
+      ],
+      "calendar": [
+        { "t": "Swimming class", "s": "Today · 16:30 · Emma" },
+        { "t": "Piano lesson", "s": "every other Wednesday" },
+        { "t": "Reminder on 4 phones", "s": "15 minutes before" }
+      ],
+      "shopping": [
+        { "t": "Milk · 2 l", "s": "Lena added it — at home" },
+        { "t": "Bread", "s": "Marco · in the store" },
+        { "t": "Synced in about a second", "s": "on every phone in the family" }
+      ],
+      "todos": [
+        { "t": "Water the plants", "s": "Emma · Friday" },
+        { "t": "Take out the bins", "s": "Noah · done 🎉" },
+        { "t": "Reminder", "s": "Thursday · 18:00" }
+      ],
+      "meals": [
+        { "t": "Tuesday · Dinner", "s": "Pasta — from the recipe box" },
+        { "t": "6 ingredients → Groceries", "s": "added in one tap" },
+        { "t": "The week, planned by Sunday", "s": "breakfast to dinner" }
+      ],
+      "birthdays": [
+        { "t": "Emma turns 12", "s": "in 22 days · August 29" },
+        { "t": "Reminder for everyone", "s": "one week before" },
+        { "t": "Marco turns 41", "s": "in 3 weeks — every year" }
+      ],
+      "vault": [
+        { "t": "Insurance card.pdf", "s": "on this phone only" },
+        { "t": "Holiday 2026 · 48 photos", "s": "never uploaded" },
+        { "t": "No server ever sees these", "s": "not even ours" }
+      ],
+      "family": [
+        { "t": "The Bergers", "s": "5 members" },
+        { "t": "Invite code 482913", "s": "or share the link" },
+        { "t": "Noah · managed profile", "s": "no email needed — upgrade later" }
+      ]
+    },
+    "@cards": { "description": "Tiny UI cards floating next to the phone in the home-page story. They imitate app content: an event pill, a shopping row, a to-do, a reminder. `t` is the bold line, `s` the small grey line under it. Keep each line short (t ≤ 28 characters, s ≤ 36) — they must not wrap. The people are the demo family from that locale's own screenshots in static/assets/img/shots/<loc>/ — en keeps Lena, Marco, Emma, Noah, Mia and the Bergers, ja uses 佐藤家 with 美咲, 健太, 陽菜, 蒼, and id, ko, th, zh-Hans and zh-Hant have their own; check shot-family.webp before changing a name. The invite code 482913 is the same in every locale. Times follow the locale’s own convention (16:30 / 4:30 PM), dates too (August 29 / 29. August)." }
   },
 
   "howItWorks": {
@@ -105,7 +153,6 @@
   "pricing": {
     "eyebrow": "Pricing",
     "h2": "Free — and free for you, forever",
-    "lead": "Daili costs nothing today. No ads, no tracking, nothing sold to anyone.",
     "points": [
       "Every feature on this page is free right now",
       "No credit card, no trial period, no locked features",
@@ -199,7 +246,7 @@
       "h2": "Parents, kids & grandma — all in",
       "p": "Invite your family with a simple 6-digit code or link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile you can upgrade later.",
       "bullets": [],
-      "alt": "Illustration of a family"
+      "alt": "Family screen with members and the invite code"
     }
   },
 

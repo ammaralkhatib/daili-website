@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Hent",
     "language": "Sprog",
-    "skip": "Gå til indholdet"
+    "skip": "Gå til indholdet",
+    "menu": "Åbn menuen"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Månedskalender i Daili",
     "altHome": "Startskærmen i Daili med felterne til funktionerne"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Svømning", "s": "I dag · 16.30" },
+        { "t": "Mælk · 2 l", "s": "Marco er i butikken" },
+        { "t": "Tage skraldet ud", "s": "Noah · klaret" }
+      ],
+      "calendar": [
+        { "t": "Svømning", "s": "I dag · 16.30 · Emma" },
+        { "t": "Klavertime", "s": "hver anden onsdag" },
+        { "t": "Påmindelse på 4 telefoner", "s": "15 minutter før" }
+      ],
+      "shopping": [
+        { "t": "Mælk · 2 l", "s": "Lena skrev den på — hjemmefra" },
+        { "t": "Brød", "s": "Marco · i butikken" },
+        { "t": "Synket på et sekund", "s": "på hver telefon i familien" }
+      ],
+      "todos": [
+        { "t": "Vande planterne", "s": "Emma · fredag" },
+        { "t": "Tage skraldet ud", "s": "Noah · klaret 🎉" },
+        { "t": "Påmindelse", "s": "Torsdag · 18.00" }
+      ],
+      "meals": [
+        { "t": "Tirsdag · Aftensmad", "s": "Pasta — fra opskrifterne" },
+        { "t": "6 ingredienser → Indkøb", "s": "tilføjet med ét tryk" },
+        { "t": "Ugen på plads om søndagen", "s": "fra morgenmad til aftensmad" }
+      ],
+      "birthdays": [
+        { "t": "Emma fylder 12", "s": "om 22 dage · 29. august" },
+        { "t": "Påmindelse til alle", "s": "en uge før" },
+        { "t": "Marco fylder 41", "s": "om 3 uger — hvert år" }
+      ],
+      "vault": [
+        { "t": "Forsikringskort.pdf", "s": "kun på denne telefon" },
+        { "t": "Ferie 2026 · 48 billeder", "s": "aldrig uploadet" },
+        { "t": "Ingen server ser dem", "s": "heller ikke vores" }
+      ],
+      "family": [
+        { "t": "Familien Berger", "s": "5 medlemmer" },
+        { "t": "Invitationskode 482913", "s": "eller del linket" },
+        { "t": "Noah · administreret profil", "s": "uden e-mail — opgraderes senere" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Pris",
     "h2": "Gratis — og gratis for dig, for altid",
-    "lead": "Daili koster ingenting i dag. Ingen reklamer, ingen sporing og intet, der sælges til nogen.",
     "points": [
       "Alt på denne side er gratis allerede nu",
       "Intet betalingskort, ingen prøveperiode og ingen låste funktioner",
@@ -181,7 +226,7 @@
       "h2": "Forældre, børn og mormor — alle med",
       "p": "Inviter familien med en simpel kode på 6 cifre eller et link. Forældre er administratorer, børn og teenagere får deres eget login, og de små uden e-mail får en styret profil, som du kan opgradere senere.",
       "bullets": [],
-      "alt": "Illustration af en familie"
+      "alt": "Familieskærmen med medlemmerne og invitationskoden"
     }
   },
 

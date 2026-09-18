@@ -20,7 +20,8 @@
     "blog": "Blogg",
     "download": "Ladda ner",
     "language": "Språk",
-    "skip": "Hoppa till innehållet"
+    "skip": "Hoppa till innehållet",
+    "menu": "Öppna menyn"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Månadskalender i Daili",
     "altHome": "Startskärmen i Daili med rutorna för funktionerna"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Simskola", "s": "I dag · 16.30" },
+        { "t": "Mjölk · 2 l", "s": "Marco är i butiken" },
+        { "t": "Slänga soporna", "s": "Noah · klart" }
+      ],
+      "calendar": [
+        { "t": "Simskola", "s": "I dag · 16.30 · Emma" },
+        { "t": "Pianolektion", "s": "varannan onsdag" },
+        { "t": "Påminnelse i 4 telefoner", "s": "15 minuter innan" }
+      ],
+      "shopping": [
+        { "t": "Mjölk · 2 l", "s": "Lena la till den — hemifrån" },
+        { "t": "Bröd", "s": "Marco · i butiken" },
+        { "t": "Synkat på en sekund", "s": "i varje telefon i familjen" }
+      ],
+      "todos": [
+        { "t": "Vattna blommorna", "s": "Emma · fredag" },
+        { "t": "Slänga soporna", "s": "Noah · klart 🎉" },
+        { "t": "Påminnelse", "s": "Torsdag · 18.00" }
+      ],
+      "meals": [
+        { "t": "Tisdag · Middag", "s": "Pasta — ur receptsamlingen" },
+        { "t": "6 ingredienser → Inköp", "s": "tillagda med en tryckning" },
+        { "t": "Veckan klar på söndagen", "s": "från frukost till middag" }
+      ],
+      "birthdays": [
+        { "t": "Emma fyller 12", "s": "om 22 dagar · 29 augusti" },
+        { "t": "Påminnelse till alla", "s": "en vecka innan" },
+        { "t": "Marco fyller 41", "s": "om 3 veckor — varje år" }
+      ],
+      "vault": [
+        { "t": "Försäkringskort.pdf", "s": "bara i den här telefonen" },
+        { "t": "Semester 2026 · 48 foton", "s": "aldrig uppladdade" },
+        { "t": "Ingen server ser dem", "s": "inte ens vår" }
+      ],
+      "family": [
+        { "t": "Familjen Berger", "s": "5 medlemmar" },
+        { "t": "Inbjudningskod 482913", "s": "eller dela länken" },
+        { "t": "Noah · hanterad profil", "s": "utan e-post — uppgraderas sen" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Pris",
     "h2": "Gratis — och gratis för dig, för alltid",
-    "lead": "Daili kostar ingenting i dag. Ingen reklam, ingen spårning och ingenting som säljs till någon.",
     "points": [
       "Allt på den här sidan är gratis redan nu",
       "Inget kort, ingen provperiod och inga låsta funktioner",
@@ -181,7 +226,7 @@
       "h2": "Föräldrar, barn och mormor — alla med",
       "p": "Bjud in familjen med en enkel sexsiffrig kod eller en länk. Föräldrar är administratörer, barn och tonåringar får egen inloggning, och de små utan e-post får en hanterad profil som du kan uppgradera senare.",
       "bullets": [],
-      "alt": "Illustration av en familj"
+      "alt": "Familjeskärmen med medlemmarna och inbjudningskoden"
     }
   },
 

@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Download",
     "language": "Sprache",
-    "skip": "Zum Inhalt springen"
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü öffnen"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Daili Monatskalender",
     "altHome": "Daili Startbildschirm mit Funktions-Kacheln"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Schwimmkurs", "s": "Heute · 16:30" },
+        { "t": "Milch · 2 l", "s": "Marco ist im Supermarkt" },
+        { "t": "Müll rausbringen", "s": "Noah · erledigt" }
+      ],
+      "calendar": [
+        { "t": "Schwimmkurs", "s": "Heute · 16:30 · Emma" },
+        { "t": "Klavierstunde", "s": "alle zwei Wochen mittwochs" },
+        { "t": "Erinnerung auf 4 Handys", "s": "15 Minuten vorher" }
+      ],
+      "shopping": [
+        { "t": "Milch · 2 l", "s": "Lena hat sie eingetragen — zu Hause" },
+        { "t": "Brot", "s": "Marco · im Supermarkt" },
+        { "t": "In einer Sekunde synchron", "s": "auf jedem Handy der Familie" }
+      ],
+      "todos": [
+        { "t": "Blumen gießen", "s": "Emma · Freitag" },
+        { "t": "Müll rausbringen", "s": "Noah · erledigt 🎉" },
+        { "t": "Erinnerung", "s": "Donnerstag · 18:00" }
+      ],
+      "meals": [
+        { "t": "Dienstag · Abendessen", "s": "Pasta — aus der Rezeptbox" },
+        { "t": "6 Zutaten → Einkaufen", "s": "mit einem Tipp hinzugefügt" },
+        { "t": "Die Woche steht am Sonntag", "s": "vom Frühstück bis zum Abendessen" }
+      ],
+      "birthdays": [
+        { "t": "Emma wird 12", "s": "in 22 Tagen · 29. August" },
+        { "t": "Erinnerung für alle", "s": "eine Woche vorher" },
+        { "t": "Marco wird 41", "s": "in 3 Wochen — jedes Jahr" }
+      ],
+      "vault": [
+        { "t": "Versicherungskarte.pdf", "s": "nur auf diesem Handy" },
+        { "t": "Urlaub 2026 · 48 Fotos", "s": "nie hochgeladen" },
+        { "t": "Kein Server sieht das je", "s": "auch unserer nicht" }
+      ],
+      "family": [
+        { "t": "Familie Berger", "s": "5 Mitglieder" },
+        { "t": "Einladungscode 482913", "s": "oder den Link teilen" },
+        { "t": "Noah · verwaltetes Profil", "s": "ohne E-Mail — später upgraden" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Preis",
     "h2": "Kostenlos — und für dich für immer kostenlos",
-    "lead": "Daili kostet heute nichts. Keine Werbung, kein Tracking, nichts, was an irgendwen verkauft wird.",
     "points": [
       "Alles auf dieser Seite ist gerade kostenlos",
       "Keine Kreditkarte, keine Testphase, keine gesperrten Funktionen",
@@ -181,7 +226,7 @@
       "h2": "Eltern, Kinder & Oma — alle dabei",
       "p": "Ladet eure Familie mit einem einfachen 6-stelligen Code oder Link ein. Eltern sind Admins, Kinder und Teenager bekommen einen eigenen Login — und die Kleinen ohne E-Mail ein verwaltetes Profil, das ihr später upgraden könnt.",
       "bullets": [],
-      "alt": "Illustration einer Familie"
+      "alt": "Familienbildschirm mit Mitgliedern und Einladungscode"
     }
   },
 

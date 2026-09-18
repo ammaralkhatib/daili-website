@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "İndir",
     "language": "Dil",
-    "skip": "İçeriğe geç"
+    "skip": "İçeriğe geç",
+    "menu": "Menüyü aç"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Daili aylık takvim",
     "altHome": "Daili ana ekranı ve özellik kutucukları"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Yüzme kursu", "s": "Bugün · 16.30" },
+        { "t": "Süt · 2 l", "s": "Marco markette" },
+        { "t": "Çöpü çıkar", "s": "Noah · bitti" }
+      ],
+      "calendar": [
+        { "t": "Yüzme kursu", "s": "Bugün · 16.30 · Emma" },
+        { "t": "Piyano dersi", "s": "iki haftada bir çarşamba" },
+        { "t": "4 telefonda hatırlatma", "s": "15 dakika önce" }
+      ],
+      "shopping": [
+        { "t": "Süt · 2 l", "s": "Lena ekledi — evden" },
+        { "t": "Ekmek", "s": "Marco · markette" },
+        { "t": "Bir saniyede eşitlendi", "s": "ailedeki her telefonda" }
+      ],
+      "todos": [
+        { "t": "Çiçekleri sula", "s": "Emma · cuma" },
+        { "t": "Çöpü çıkar", "s": "Noah · bitti 🎉" },
+        { "t": "Hatırlatma", "s": "Perşembe · 18.00" }
+      ],
+      "meals": [
+        { "t": "Salı · Akşam yemeği", "s": "Makarna — tarif defterinden" },
+        { "t": "6 malzeme → Alışveriş", "s": "tek dokunuşla eklendi" },
+        { "t": "Hafta pazardan belli", "s": "kahvaltıdan akşam yemeğine" }
+      ],
+      "birthdays": [
+        { "t": "Emma 12 yaşına giriyor", "s": "22 gün sonra · 29 Ağustos" },
+        { "t": "Herkese hatırlatma", "s": "bir hafta önce" },
+        { "t": "Marco 41 yaşına giriyor", "s": "3 hafta sonra — her yıl" }
+      ],
+      "vault": [
+        { "t": "Sigorta kartı.pdf", "s": "sadece bu telefonda" },
+        { "t": "Tatil 2026 · 48 fotoğraf", "s": "hiç yüklenmedi" },
+        { "t": "Hiçbir sunucu görmüyor", "s": "bizimki bile" }
+      ],
+      "family": [
+        { "t": "Berger Ailesi", "s": "5 üye" },
+        { "t": "Davet kodu 482913", "s": "ya da bağlantıyı paylaş" },
+        { "t": "Noah · yönetilen profil", "s": "e-posta yok — sonra hesap" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Fiyat",
     "h2": "Ücretsiz — ve sizin için sonsuza dek ücretsiz",
-    "lead": "Daili bugün hiçbir şeye mal olmuyor. Reklam yok, takip yok, kimseye satılan hiçbir şey yok.",
     "points": [
       "Bu sayfadaki her şey şu anda ücretsiz",
       "Kredi kartı yok, deneme süresi yok, kilitli özellik yok",
@@ -181,7 +226,7 @@
       "h2": "Anne baba, çocuklar ve babaanne — hepsi içinde",
       "p": "Ailenizi basit bir 6 haneli kodla ya da bağlantıyla davet edin. Anne babalar yönetici olur, çocuklar ve gençler kendi girişini alır, e-postası olmayan küçükler ise sonradan gerçek bir hesaba dönüştürebileceğiniz yönetilen bir profil edinir.",
       "bullets": [],
-      "alt": "Bir ailenin çizimi"
+      "alt": "Üyeleri ve davet kodunu gösteren Aile ekranı"
     }
   },
 

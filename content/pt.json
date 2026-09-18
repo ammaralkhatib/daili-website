@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Baixar",
     "language": "Idioma",
-    "skip": "Ir para o conteúdo"
+    "skip": "Ir para o conteúdo",
+    "menu": "Abrir o menu"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Calendário mensal do Daili",
     "altHome": "Tela inicial do Daili com os atalhos dos recursos"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Aula de natação", "s": "Hoje · 16h30" },
+        { "t": "Leite · 2 l", "s": "Marco está no mercado" },
+        { "t": "Levar o lixo para fora", "s": "Noah · feito" }
+      ],
+      "calendar": [
+        { "t": "Aula de natação", "s": "Hoje · 16h30 · Emma" },
+        { "t": "Aula de piano", "s": "quarta sim, quarta não" },
+        { "t": "Lembrete em 4 celulares", "s": "15 minutos antes" }
+      ],
+      "shopping": [
+        { "t": "Leite · 2 l", "s": "Lena colocou — de casa" },
+        { "t": "Pão", "s": "Marco · no mercado" },
+        { "t": "Sincronizado num segundo", "s": "em todos os celulares da casa" }
+      ],
+      "todos": [
+        { "t": "Regar as plantas", "s": "Emma · sexta" },
+        { "t": "Levar o lixo para fora", "s": "Noah · feito 🎉" },
+        { "t": "Lembrete", "s": "Quinta · 18h00" }
+      ],
+      "meals": [
+        { "t": "Terça · Jantar", "s": "Macarrão — do livro de receitas" },
+        { "t": "6 ingredientes → Compras", "s": "adicionados com um toque" },
+        { "t": "A semana pronta no domingo", "s": "do café da manhã ao jantar" }
+      ],
+      "birthdays": [
+        { "t": "Emma faz 12 anos", "s": "em 22 dias · 29 de agosto" },
+        { "t": "Lembrete para todo mundo", "s": "uma semana antes" },
+        { "t": "Marco faz 41 anos", "s": "em 3 semanas — todo ano" }
+      ],
+      "vault": [
+        { "t": "Carteirinha do plano.pdf", "s": "só neste celular" },
+        { "t": "Férias 2026 · 48 fotos", "s": "nunca enviadas" },
+        { "t": "Nenhum servidor vê isso", "s": "nem o nosso" }
+      ],
+      "family": [
+        { "t": "Família Berger", "s": "5 membros" },
+        { "t": "Código de convite 482913", "s": "ou compartilhe o link" },
+        { "t": "Noah · perfil gerenciado", "s": "sem e-mail — vira conta depois" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Preço",
     "h2": "Grátis — e grátis para você, para sempre",
-    "lead": "O Daili não custa nada hoje. Sem anúncios, sem rastreamento e sem vender nada para ninguém.",
     "points": [
       "Tudo o que está nesta página já é grátis agora",
       "Sem cartão de crédito, sem período de teste e sem recurso bloqueado",
@@ -181,7 +226,7 @@
       "h2": "Pais, filhos e a vó — todo mundo junto",
       "p": "Convide sua família com um código simples de 6 dígitos ou um link. Pais e mães são administradores, filhos e adolescentes têm o próprio login, e os pequenos sem e-mail ganham um perfil administrado que você pode transformar em conta depois.",
       "bullets": [],
-      "alt": "Ilustração de uma família"
+      "alt": "Tela de família com os membros e o código de convite"
     }
   },
 

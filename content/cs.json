@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Stáhnout",
     "language": "Jazyk",
-    "skip": "Přejít k obsahu"
+    "skip": "Přejít k obsahu",
+    "menu": "Otevřít nabídku"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Měsíční kalendář v Daili",
     "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Plavání", "s": "Dnes · 16:30" },
+        { "t": "Mléko · 2 l", "s": "Marco je v obchodě" },
+        { "t": "Vynést koš", "s": "Noah · hotovo" }
+      ],
+      "calendar": [
+        { "t": "Plavání", "s": "Dnes · 16:30 · Emma" },
+        { "t": "Hodina klavíru", "s": "každou druhou středu" },
+        { "t": "Připomenutí na 4 telefony", "s": "15 minut předem" }
+      ],
+      "shopping": [
+        { "t": "Mléko · 2 l", "s": "Lena ho přidala — z domova" },
+        { "t": "Chleba", "s": "Marco · v obchodě" },
+        { "t": "Sladěno za sekundu", "s": "na každém telefonu v rodině" }
+      ],
+      "todos": [
+        { "t": "Zalít kytky", "s": "Emma · pátek" },
+        { "t": "Vynést koš", "s": "Noah · hotovo 🎉" },
+        { "t": "Připomenutí", "s": "Čtvrtek · 18:00" }
+      ],
+      "meals": [
+        { "t": "Úterý · Večeře", "s": "Těstoviny — z receptů" },
+        { "t": "6 surovin → Nákupy", "s": "přidáno jedním klepnutím" },
+        { "t": "Týden hotový v neděli", "s": "od snídaně po večeři" }
+      ],
+      "birthdays": [
+        { "t": "Emmě bude 12", "s": "za 22 dní · 29. srpna" },
+        { "t": "Připomenutí pro všechny", "s": "týden předem" },
+        { "t": "Marcovi bude 41", "s": "za 3 týdny — každý rok" }
+      ],
+      "vault": [
+        { "t": "Karta pojištěnce.pdf", "s": "jen v tomhle telefonu" },
+        { "t": "Dovolená 2026 · 48 fotek", "s": "nikdy nenahrané" },
+        { "t": "Žádný server je nevidí", "s": "ani ten náš" }
+      ],
+      "family": [
+        { "t": "Bergerovi", "s": "5 členů" },
+        { "t": "Kód pozvánky 482913", "s": "nebo sdílejte odkaz" },
+        { "t": "Noah · spravovaný profil", "s": "bez e-mailu — účet až později" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Cena",
     "h2": "Zdarma — a pro vás zdarma navždy",
-    "lead": "Daili dnes nic nestojí. Bez reklam, bez sledování a bez prodeje čehokoli komukoli.",
     "points": [
       "Všechno na této stránce je zdarma už teď",
       "Bez karty, bez zkušební doby a bez zamčených funkcí",
@@ -181,7 +226,7 @@
       "h2": "Rodiče, děti i babička — všichni",
       "p": "Pozvěte rodinu jednoduchým šestimístným kódem nebo odkazem. Rodiče jsou správci, děti a teenageři mají vlastní přihlášení a ti nejmenší bez e-mailu dostanou spravovaný profil, ze kterého může později být plnohodnotný účet.",
       "bullets": [],
-      "alt": "Ilustrace rodiny"
+      "alt": "Obrazovka rodiny se členy a kódem pozvánky"
     }
   },
 

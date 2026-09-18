@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Pobierz",
     "language": "Język",
-    "skip": "Przejdź do treści"
+    "skip": "Przejdź do treści",
+    "menu": "Otwórz menu"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Kalendarz miesięczny w Daili",
     "altHome": "Ekran główny Daili z kafelkami funkcji"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Basen", "s": "Dziś · 16:30" },
+        { "t": "Mleko · 2 l", "s": "Marco jest w sklepie" },
+        { "t": "Wynieść śmieci", "s": "Noah · zrobione" }
+      ],
+      "calendar": [
+        { "t": "Basen", "s": "Dziś · 16:30 · Emma" },
+        { "t": "Lekcja pianina", "s": "co drugą środę" },
+        { "t": "Przypomnienie na 4 telefony", "s": "15 minut wcześniej" }
+      ],
+      "shopping": [
+        { "t": "Mleko · 2 l", "s": "Lena dopisała je — z domu" },
+        { "t": "Chleb", "s": "Marco · w sklepie" },
+        { "t": "Zsynchronizowane w sekundę", "s": "na każdym telefonie w rodzinie" }
+      ],
+      "todos": [
+        { "t": "Podlać kwiaty", "s": "Emma · piątek" },
+        { "t": "Wynieść śmieci", "s": "Noah · zrobione 🎉" },
+        { "t": "Przypomnienie", "s": "Czwartek · 18:00" }
+      ],
+      "meals": [
+        { "t": "Wtorek · Kolacja", "s": "Makaron — z przepisów" },
+        { "t": "6 składników → Zakupy", "s": "dodane jednym dotknięciem" },
+        { "t": "Tydzień gotowy w niedzielę", "s": "od śniadania do kolacji" }
+      ],
+      "birthdays": [
+        { "t": "Emma kończy 12 lat", "s": "za 22 dni · 29 sierpnia" },
+        { "t": "Przypomnienie dla wszystkich", "s": "tydzień wcześniej" },
+        { "t": "Marco kończy 41 lat", "s": "za 3 tygodnie — co roku" }
+      ],
+      "vault": [
+        { "t": "Karta ubezpieczenia.pdf", "s": "tylko na tym telefonie" },
+        { "t": "Wakacje 2026 · 48 zdjęć", "s": "nigdy nie wysłane" },
+        { "t": "Żaden serwer ich nie widzi", "s": "nasz też nie" }
+      ],
+      "family": [
+        { "t": "Rodzina Berger", "s": "5 członków" },
+        { "t": "Kod zaproszenia 482913", "s": "albo udostępnij link" },
+        { "t": "Noah · profil zarządzany", "s": "bez e-maila — później konto" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Cena",
     "h2": "Za darmo — i za darmo dla ciebie, na zawsze",
-    "lead": "Daili dziś nic nie kosztuje. Bez reklam, bez śledzenia i bez sprzedawania czegokolwiek komukolwiek.",
     "points": [
       "Wszystko, co jest na tej stronie, jest darmowe już teraz",
       "Bez karty, bez okresu próbnego i bez zablokowanych funkcji",
@@ -181,7 +226,7 @@
       "h2": "Rodzice, dzieci i babcia — wszyscy razem",
       "p": "Zaproście rodzinę prostym 6-cyfrowym kodem albo linkiem. Rodzice są administratorami, dzieci i nastolatki mają własne logowanie, a najmłodsi bez adresu e-mail dostają profil zarządzany, który później można zamienić na prawdziwe konto.",
       "bullets": [],
-      "alt": "Ilustracja rodziny"
+      "alt": "Ekran rodziny z członkami i kodem zaproszenia"
     }
   },
 

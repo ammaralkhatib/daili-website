@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Unduh",
     "language": "Bahasa",
-    "skip": "Lompat ke konten"
+    "skip": "Lompat ke konten",
+    "menu": "Buka menu"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Kalender bulanan Daili",
     "altHome": "Layar utama Daili dengan kotak-kotak fitur"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Les renang", "s": "Hari ini · 16.30" },
+        { "t": "Susu · 2 l", "s": "Andi sedang di toko" },
+        { "t": "Buang sampah", "s": "Bayu · selesai" }
+      ],
+      "calendar": [
+        { "t": "Les renang", "s": "Hari ini · 16.30 · Putri" },
+        { "t": "Les piano", "s": "dua pekan sekali, Rabu" },
+        { "t": "Pengingat di 4 ponsel", "s": "15 menit sebelumnya" }
+      ],
+      "shopping": [
+        { "t": "Susu · 2 l", "s": "Sari menambahkan — dari rumah" },
+        { "t": "Roti", "s": "Andi · di toko" },
+        { "t": "Tersinkron sekitar sedetik", "s": "di semua ponsel keluarga" }
+      ],
+      "todos": [
+        { "t": "Siram tanaman", "s": "Putri · Jumat" },
+        { "t": "Buang sampah", "s": "Bayu · selesai 🎉" },
+        { "t": "Pengingat", "s": "Kamis · 18.00" }
+      ],
+      "meals": [
+        { "t": "Selasa · Makan malam", "s": "Pasta — dari kumpulan resep" },
+        { "t": "6 bahan → Belanja", "s": "masuk sekali ketuk" },
+        { "t": "Sepekan beres hari Minggu", "s": "dari sarapan sampai malam" }
+      ],
+      "birthdays": [
+        { "t": "Putri berulang tahun ke-12", "s": "22 hari lagi · 29 Agustus" },
+        { "t": "Pengingat untuk semua", "s": "seminggu sebelumnya" },
+        { "t": "Andi berulang tahun ke-41", "s": "3 pekan lagi — tiap tahun" }
+      ],
+      "vault": [
+        { "t": "Kartu asuransi.pdf", "s": "hanya di ponsel ini" },
+        { "t": "Liburan 2026 · 48 foto", "s": "tidak pernah diunggah" },
+        { "t": "Tak ada server yang lihat", "s": "punya kami pun tidak" }
+      ],
+      "family": [
+        { "t": "Keluarga Wijaya", "s": "5 anggota" },
+        { "t": "Kode undangan 482913", "s": "atau bagikan tautannya" },
+        { "t": "Bayu · profil dikelola", "s": "tanpa email — bisa ditingkatkan" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Harga",
     "h2": "Gratis — dan gratis untukmu, selamanya",
-    "lead": "Daili hari ini tidak memungut biaya apa pun. Tanpa iklan, tanpa pelacakan, dan tanpa apa pun yang dijual ke siapa pun.",
     "points": [
       "Semua yang ada di halaman ini sudah gratis sekarang",
       "Tanpa kartu kredit, tanpa masa coba, tanpa fitur yang dikunci",
@@ -181,7 +226,7 @@
       "h2": "Orang tua, anak, dan nenek — semua ikut",
       "p": "Undang keluargamu dengan kode 6 digit sederhana atau sebuah tautan. Orang tua jadi admin, anak dan remaja punya akun sendiri, dan si kecil yang belum punya email dapat profil yang dikelola dan bisa dijadikan akun sungguhan nanti.",
       "bullets": [],
-      "alt": "Ilustrasi sebuah keluarga"
+      "alt": "Layar keluarga dengan anggota dan kode undangan"
     }
   },
 

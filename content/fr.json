@@ -20,7 +20,8 @@
     "blog": "Blog",
     "download": "Télécharger",
     "language": "Langue",
-    "skip": "Aller au contenu"
+    "skip": "Aller au contenu",
+    "menu": "Ouvrir le menu"
   },
 
   "cta": {
@@ -47,6 +48,51 @@
     ],
     "altCalendar": "Agenda mensuel de Daili",
     "altHome": "Écran d'accueil de Daili avec les tuiles des fonctions"
+  },
+
+  "story": {
+    "cards": {
+      "hero": [
+        { "t": "Cours de natation", "s": "Aujourd'hui · 16h30" },
+        { "t": "Lait · 2 l", "s": "Marco est en magasin" },
+        { "t": "Sortir les poubelles", "s": "Noah · fait" }
+      ],
+      "calendar": [
+        { "t": "Cours de natation", "s": "Aujourd'hui · 16h30 · Emma" },
+        { "t": "Cours de piano", "s": "un mercredi sur deux" },
+        { "t": "Rappel sur 4 téléphones", "s": "15 minutes avant" }
+      ],
+      "shopping": [
+        { "t": "Lait · 2 l", "s": "Lena l'a ajouté — à la maison" },
+        { "t": "Pain", "s": "Marco · en magasin" },
+        { "t": "Synchro en une seconde", "s": "sur tous les téléphones" }
+      ],
+      "todos": [
+        { "t": "Arroser les plantes", "s": "Emma · vendredi" },
+        { "t": "Sortir les poubelles", "s": "Noah · fait 🎉" },
+        { "t": "Rappel", "s": "Jeudi · 18h00" }
+      ],
+      "meals": [
+        { "t": "Mardi · Dîner", "s": "Pâtes — du carnet de recettes" },
+        { "t": "6 ingrédients → Courses", "s": "ajoutés en un geste" },
+        { "t": "La semaine prête dimanche", "s": "du petit-déjeuner au dîner" }
+      ],
+      "birthdays": [
+        { "t": "Emma fête ses 12 ans", "s": "dans 22 jours · 29 août" },
+        { "t": "Rappel pour tout le monde", "s": "une semaine avant" },
+        { "t": "Marco fête ses 41 ans", "s": "dans 3 semaines — chaque année" }
+      ],
+      "vault": [
+        { "t": "Carte d'assurance.pdf", "s": "sur ce téléphone seulement" },
+        { "t": "Vacances 2026 · 48 photos", "s": "jamais envoyées" },
+        { "t": "Aucun serveur ne les voit", "s": "pas même le nôtre" }
+      ],
+      "family": [
+        { "t": "Famille Berger", "s": "5 membres" },
+        { "t": "Code d'invitation 482913", "s": "ou partager le lien" },
+        { "t": "Noah · profil géré", "s": "sans e-mail — à faire évoluer" }
+      ]
+    }
   },
 
   "howItWorks": {
@@ -90,7 +136,6 @@
   "pricing": {
     "eyebrow": "Tarif",
     "h2": "Gratuit — et gratuit pour vous, pour toujours",
-    "lead": "Daili ne coûte rien aujourd'hui. Pas de publicité, pas de pistage, rien de revendu à personne.",
     "points": [
       "Tout ce qui figure sur cette page est gratuit dès maintenant",
       "Pas de carte bancaire, pas de période d'essai, pas de fonction verrouillée",
@@ -181,7 +226,7 @@
       "h2": "Parents, enfants et grand-mère — tout le monde",
       "p": "Invitez votre famille avec un simple code à 6 chiffres ou un lien. Les parents sont administrateurs, les enfants et les ados ont leur propre compte, et les petits sans adresse e-mail reçoivent un profil géré que vous pourrez faire évoluer plus tard.",
       "bullets": [],
-      "alt": "Illustration d'une famille"
+      "alt": "Écran Famille avec les membres et le code d'invitation"
     }
   },
 
