@@ -831,10 +831,46 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 .post-cta p:last-child{margin-bottom:0}
 .post-cta-link a{font-weight:600}
 
+/* The newsletter sign-up, directly under the CTA. Same card geometry as
+   .post-cta — border, radius, padding — on the quieter mint, so two panels in
+   a row read as two things rather than one long one and the CTA above stays
+   the louder of the pair. Every value is a token, so dark mode and the print
+   sheet below both come for free. */
+.post-newsletter{margin-top:24px;background:var(--mint-soft);border:1px solid var(--mint-strong);border-radius:calc(var(--radius) - 4px);padding:26px 24px}
+.post-newsletter h2{margin-top:0;font-size:1.18rem;color:var(--forest-deep)}
+.nl-label{display:block;font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+/* One row while there is room for it, stacked on a phone (below): an input
+   squeezed down to leave space for a button beside it is the wrong trade on
+   the one screen where the address is actually typed. */
+.nl-row{display:flex;gap:10px;flex-wrap:wrap}
+.nl-input{flex:1 1 220px;min-width:0;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:11px 18px;font-family:var(--sans);font-size:1rem}
+.nl-input::placeholder{color:var(--muted)}
+.nl-input:hover{border-color:var(--mint-strong)}
+/* Same shape as .btn-primary, written out rather than reused: the blog post is
+   the one place a <button> submits a form, and .btn carries link rules it does
+   not need. The focus ring is the global :focus-visible outline near the top of
+   this file — both the field and the button get it for free. */
+.nl-btn{flex:0 0 auto;background:var(--forest);color:var(--on-forest);border:1.5px solid transparent;border-radius:999px;padding:11px 24px;font-family:var(--sans);font-size:.98rem;font-weight:600;cursor:pointer;transition:background .25s,transform .25s var(--ease)}
+.nl-btn:hover{background:var(--forest-deep);transform:translateY(-1px)}
+/* The honeypot, hidden by the WRAPPER rather than by display:none on the input
+   itself: a field the browser never lays out is one a bot can recognise as a
+   trap, while a clipped one is laid out, focusable in principle, and filled.
+   tabindex="-1" and aria-hidden on the wrapper keep it away from people. */
+.nl-hp{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.post-newsletter .nl-small{margin:14px 0 0;font-size:.86rem;color:var(--muted)}
+
 @media(max-width:560px){
   .post{padding:22px 18px 48px}
   .post-hero{border-radius:16px}
   .post-cta{padding:22px 18px}
+  .post-newsletter{padding:22px 18px}
+  /* Full-width field over full-width button: wrapping alone would leave a
+     "Subscribe" pill the width of its own label under a full-width input.
+     The field's flex must be reset with the direction — a 220px basis is a
+     width in a row and a 220px-TALL text box in a column. */
+  .nl-row{flex-direction:column}
+  .nl-input{flex:0 0 auto;width:100%}
+  .nl-btn{width:100%}
 }
 
 /* ---------- printing a post ---------- */
@@ -844,9 +880,10 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
    nicety.
 
    What goes: the header (and with it the language picker), the footer, the skip
-   link, the hero photo and the CTA. None of them are the checklist, and the
-   hero alone is half a sheet of ink. What stays: the h1, the byline, the prose
-   and every numbered item.
+   link, the hero photo, the CTA and the newsletter form. None of them are the
+   checklist, the hero alone is half a sheet of ink, and a form that cannot be
+   submitted from paper is worse than absent. What stays: the h1, the byline,
+   the prose and every numbered item.
 
    The ☐ is scoped to .doc-checklist rather than to .post ol, so a future post
    with an ordinary numbered list does not print as a to-do list. The list
@@ -865,7 +902,7 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   }
   html,body{background:#fff}
 
-  header,footer,.skip,.post-hero,.post-cta{display:none}
+  header,footer,.skip,.post-hero,.post-cta,.post-newsletter{display:none}
 
   .post{max-width:none;margin:0;padding:0}
   .post h1{font-size:19pt}

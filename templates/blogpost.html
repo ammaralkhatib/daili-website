@@ -22,4 +22,32 @@
 {{{ post.cta.html }}}
   </aside>
 
+  <!-- A plain form POST, no JavaScript: the api answers with its own
+       confirmation page and Brevo sends the confirm mail, so the blog still
+       loads no script and sets no cookie and the policy's promises stay
+       literally true. The strings are English inline, exactly like
+       "Frequently asked questions" above — the blog is English-only.
+
+       `website` is the honeypot. Not type="hidden": bots skip those. It is
+       hidden from the eye and from screen readers by its wrapper, and
+       tabindex="-1" keeps it out of the tab order, so the keyboard runs
+       email -> Subscribe -> Privacy policy. -->
+  <section class="post-newsletter">
+    <h2>Get one short email a month</h2>
+    <p>What's new in daili and one tip for your family's week. No ads, no tracking. You'll get an email to confirm.</p>
+    <form class="nl-form" method="post" action="https://api.daili.app/newsletter/subscribe">
+      <input type="hidden" name="lang" value="en">
+      <label class="nl-label" for="nl-email">Your email</label>
+      <div class="nl-row">
+        <input class="nl-input" id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button class="nl-btn" type="submit">Subscribe</button>
+      </div>
+      <div class="nl-hp" aria-hidden="true">
+        <label for="nl-website">Leave this field empty</label>
+        <input id="nl-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <p class="nl-small">Unsubscribe any time. <a href="/privacy.html">Privacy policy</a></p>
+    </form>
+  </section>
+
 </article>
