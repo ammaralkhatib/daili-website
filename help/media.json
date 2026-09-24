@@ -1,5 +1,22 @@
 {
   "family-invite": { "file": "family-invite.webp", "w": 720, "h": 720, "kind": "image" },
   "calendar-phone-calendars": { "file": "calendar-phone-calendars.webp", "w": 720, "h": 622, "kind": "image" },
-  "start-home": { "file": "start-home.webp", "w": 720, "h": 1564, "kind": "image" }
+  "start-home": { "file": "start-home.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-sign-in": { "file": "start-sign-in.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-create-family": { "file": "start-create-family.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-join": { "file": "start-join.webp", "w": 720, "h": 720, "kind": "image" },
+  "start-edit-home": { "file": "start-edit-home.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-today": { "file": "start-today.webp", "w": 720, "h": 622, "kind": "image" },
+  "family-children": { "file": "family-children.webp", "w": 720, "h": 720, "kind": "image" },
+  "family-roles": { "file": "family-roles.webp", "w": 720, "h": 720, "kind": "image" },
+  "family-groups": { "file": "family-groups.webp", "w": 720, "h": 1564, "kind": "image" },
+  "family-activity": { "file": "family-activity.webp", "w": 720, "h": 622, "kind": "image" },
+  "calendar-views": { "file": "calendar-views.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-add-event": { "file": "calendar-add-event.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-repeating": { "file": "calendar-repeating.webp", "w": 720, "h": 721, "kind": "image" },
+  "calendar-reminders": { "file": "calendar-reminders.webp", "w": 720, "h": 720, "kind": "image" },
+  "calendar-private": { "file": "calendar-private.webp", "w": 720, "h": 720, "kind": "image" },
+  "calendar-categories": { "file": "calendar-categories.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-search": { "file": "calendar-search.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-edit-delete": { "file": "calendar-edit-delete.webp", "w": 720, "h": 1564, "kind": "image" }
 }
