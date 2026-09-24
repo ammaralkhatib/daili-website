@@ -4,18 +4,6 @@
     "/dev/assets": "Developer-only asset gallery; not in store builds."
   },
   "pending": {
-    "/welcome": "article not written yet",
-    "/login": "article not written yet",
-    "/register": "article not written yet",
-    "/forgot-password": "article not written yet",
-    "/onboarding": "article not written yet",
-    "/onboarding/create": "article not written yet",
-    "/onboarding/join": "article not written yet",
-    "/onboarding/join/scan": "article not written yet",
-    "/calendar": "article not written yet",
-    "/calendar/new": "article not written yet",
-    "/calendar/edit": "article not written yet",
-    "/calendar/search": "article not written yet",
     "/lists": "article not written yet",
     "/lists/shopping": "article not written yet",
     "/lists/todos": "article not written yet",
@@ -47,10 +35,6 @@
     "/photos/:albumId": "article not written yet",
     "/settings": "article not written yet",
     "/settings/profile": "article not written yet",
-    "/settings/notifications": "article not written yet",
-    "/family": "article not written yet",
-    "/family/event-categories": "article not written yet",
-    "/activities": "article not written yet",
-    "/today": "article not written yet"
+    "/settings/notifications": "article not written yet"
   }
 }
