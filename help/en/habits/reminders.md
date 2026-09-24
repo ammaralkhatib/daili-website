@@ -8,10 +8,13 @@ routes: /habits/:id
 tryIt: /habits
 since: 1.6.0
 updated: 2026-09-24
+media: habits-reminders
 order: 7
 related: habits-create, habits-tick
 ---
 A nudge at the right time makes a habit easier to keep.
+
+![The More part of the New habit form. The Reminder switch is circled.](habits-reminders)
 
 1. Start a new habit, or open one and tap the pencil.
 2. Under **More**, turn on **Reminder** and pick a time.

@@ -8,6 +8,7 @@ routes: /celebrations/import
 tryIt: /celebrations
 since: 1.2.0
 updated: 2026-09-24
+media: birthdays-import
 order: 2
 related: birthdays-add, birthdays-reminders
 tipTitle: Bring in birthdays from your contacts
@@ -16,6 +17,8 @@ tipSkipIf: hasCelebrations
 tipPriority: 65
 ---
 Your phone may already know your family's birthdays. Bring them in, in one go.
+
+![The Birthday settings sheet. The Import from contacts row is circled.](birthdays-import)
 
 1. On Home, tap **Birthdays**, then the gear at the top.
 2. Tap **Import from contacts**, then **Continue**, and allow access to your contacts.

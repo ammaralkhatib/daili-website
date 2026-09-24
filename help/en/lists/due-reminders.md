@@ -8,10 +8,13 @@ routes: /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
 updated: 2026-09-24
+media: lists-due-reminders
 order: 6
 related: lists-todos, lists-repeating, lists-assign
 ---
 A to-do can have a due day and a reminder. The reminder goes to the people the task is given to, or to everyone if nobody has it.
+
+![The Edit item sheet for a to-do with a due date and time. The Reminder field is circled.](lists-due-reminders)
 
 1. While you type a new task, tap **Today**, **Tomorrow** or **Pick a date…** above the add bar.
 2. For a reminder, tap the task. Under **Due date**, tap **Add due date** if it has none, and **Add time** if you need one.

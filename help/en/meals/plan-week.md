@@ -8,10 +8,13 @@ routes: /meal-plan
 tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-09-24
+media: meals-plan-week
 order: 5
 related: meals-to-shopping, meals-copy-week, meals-add-recipe
 ---
 Decide once what's for dinner, and the whole family can see it.
+
+![The Meal plan for one week. The + next to Monday is circled.](meals-plan-week)
 
 1. On Home, tap **Meal plan**.
 2. Tap **+** on a day.

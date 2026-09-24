@@ -8,10 +8,13 @@ routes: /celebrations/:id
 tryIt: /celebrations
 since: 1.0.0
 updated: 2026-09-24
+media: birthdays-comments
 order: 4
 related: birthdays-add
 ---
 A birthday is a good reason to say something nice. Everyone in your family sees the comments and hearts.
+
+![A birthday with a heart and two comments. The Add a comment… field at the bottom is circled.](birthdays-comments)
 
 1. On Home, tap **Birthdays** and open one.
 2. Tap the heart to give it a like. Tap it again to take it back.

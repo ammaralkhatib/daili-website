@@ -8,10 +8,13 @@ routes: /celebrations/:id
 tryIt: /celebrations
 since: 1.0.0
 updated: 2026-09-24
+media: birthdays-reminders
 order: 3
 related: birthdays-add, birthdays-import
 ---
 Each birthday can have up to 5 reminders. One a few days before gives you time to buy a present.
+
+![The Edit celebration screen with two reminders. The Add reminder button is circled.](birthdays-reminders)
 
 1. Open the birthday, tap the menu button at the top, then **Edit**.
 2. Tap **Add reminder**.

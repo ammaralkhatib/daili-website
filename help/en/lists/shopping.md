@@ -8,12 +8,15 @@ routes: /lists, /lists/shopping, /lists/new, /lists/:id
 tryIt: /lists/shopping
 since: 1.0.0
 updated: 2026-09-24
+media: lists-shopping
 order: 1
 related: lists-categories, lists-move-items, meals-to-shopping
 checklist: 4
 checklistDoneIf: hasListItem
 ---
 Everyone in your family sees the same shopping lists. When someone adds or ticks an item, everyone sees it.
+
+![The Groceries list with open items and two ticked ones under Completed. The Add item bar at the bottom is circled.](lists-shopping)
 
 1. On Home, tap **Shopping**, then tap a list. For a new list, tap **+**, type a **Name** and tap **Create**.
 2. Type what you need in **Add item** at the bottom and add it.

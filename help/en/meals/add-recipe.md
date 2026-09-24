@@ -8,10 +8,13 @@ routes: /recipes, /recipes/new, /recipes/:id, /recipes/:id/edit
 tryIt: /recipes
 since: 1.0.0
 updated: 2026-09-24
+media: meals-add-recipe
 order: 1
 related: meals-import-link, meals-paste, meals-plan-week
 ---
 Grandma's lasagne belongs in the family recipe box, where everyone can find it.
+
+![The Recipes screen with the + menu open. New recipe is circled.](meals-add-recipe)
 
 1. On Home, tap **Recipes**, then **+**.
 2. Tap **New recipe**.

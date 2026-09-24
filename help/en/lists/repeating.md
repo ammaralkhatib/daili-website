@@ -8,10 +8,13 @@ routes: /lists/:id
 tryIt: /lists/todos
 since: 1.0.0
 updated: 2026-09-24
+media: lists-repeating
 order: 7
 related: lists-due-reminders, lists-todos
 ---
 A repeating to-do is one task that comes back. When you tick it, it moves on to its next due date.
+
+![The Edit item sheet for a to-do. The Repeat choices None, Daily, Every few days, Weekly and Monthly are circled.](lists-repeating)
 
 1. Open a to-do list and tap the task.
 2. Give it a **Due date**.

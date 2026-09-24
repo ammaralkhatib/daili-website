@@ -8,10 +8,13 @@ routes: /lists/todos, /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
 updated: 2026-09-24
+media: lists-all-mine
 order: 8
 related: lists-assign, lists-todos
 ---
 In a busy family it helps to see only your own tasks.
+
+![The top of the To-dos screen. The family circle and your own picture at the top right are circled.](lists-all-mine)
 
 1. On Home, tap **To-dos**.
 2. At the top, tap your own picture on the right. That's **Mine**: every task given to you, from all lists.

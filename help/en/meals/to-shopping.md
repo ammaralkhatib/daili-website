@@ -8,6 +8,7 @@ routes: /add-to-shopping
 tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-09-24
+media: meals-to-shopping
 order: 6
 related: meals-plan-week, lists-shopping
 tipTitle: From meal plan to shopping list
@@ -16,6 +17,8 @@ tipSkipIf: hasMealPlan
 tipPriority: 50
 ---
 No more copying ingredients by hand.
+
+![A recipe with its ingredients. The shopping cart button at the top is circled.](meals-to-shopping)
 
 1. Open a recipe and tap the shopping cart button at the top. Or on **Meal plan**, tap the cart button to take the whole week.
 2. Under **Add to**, pick the shopping list.

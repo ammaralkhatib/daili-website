@@ -8,10 +8,13 @@ routes: /habits/minzi
 tryIt: /habits/minzi
 since: 1.6.0
 updated: 2026-09-24
+media: habits-minzi
 order: 5
 related: habits-what, habits-tick, habits-streaks
 ---
 Minzi is your family's cat. She lives in her room on the **Habits** screen, where she naps, sits and watches you tick.
+
+![The Habits screen with Minzi in her room. The Family energy bar is circled.](habits-minzi)
 
 1. Tick your habits. Each tick adds to the **Family energy** bar.
 2. When the bar is full, Minzi sets off on a trip that night.

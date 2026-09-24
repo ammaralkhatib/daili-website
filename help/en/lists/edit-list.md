@@ -8,10 +8,13 @@ routes: /lists/:id/edit
 tryIt: /lists/shopping
 since: 1.0.0
 updated: 2026-09-24
+media: lists-edit-list
 order: 9
 related: lists-shopping, lists-categories
 ---
 These steps work the same for shopping lists and to-do lists.
+
+![The Shopping screen with a list's ⋯ menu open. Edit is circled, with Delete under it.](lists-edit-list)
 
 1. On Home, tap **Shopping** or **To-dos**.
 2. On the list's card, tap **⋯**, then **Edit**.

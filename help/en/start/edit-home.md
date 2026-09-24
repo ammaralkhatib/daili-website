@@ -14,7 +14,7 @@ related: start-home
 ---
 You can change which tiles Home shows, and in which order.
 
-![The Home screen settings with a switch and a drag handle for each tile. The drag handle next to Shopping is circled.](start-edit-home)
+![The Home screen in edit mode, with an × on each tile. The Done button at the bottom right is circled.](start-edit-home)
 
 1. On Home, press and hold any tile until the tiles start to wiggle.
 2. Drag a tile to a new place.

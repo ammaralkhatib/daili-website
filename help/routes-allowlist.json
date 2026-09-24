@@ -3,14 +3,5 @@
     "/maintenance": "Shown automatically while the server is down; nobody opens it on purpose.",
     "/dev/assets": "Developer-only asset gallery; not in store builds."
   },
-  "pending": {
-    "/documents": "article not written yet",
-    "/documents/:folderId": "article not written yet",
-    "/photos": "article not written yet",
-    "/photos/all": "article not written yet",
-    "/photos/:albumId": "article not written yet",
-    "/settings": "article not written yet",
-    "/settings/profile": "article not written yet",
-    "/settings/notifications": "article not written yet"
-  }
+  "pending": {}
 }

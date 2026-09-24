@@ -8,6 +8,7 @@ routes: /recipes, /recipes/:id/edit
 tryIt: /recipes
 since: 1.4.0
 updated: 2026-09-24
+media: meals-import-link
 order: 2
 related: meals-paste, meals-search-online, meals-add-recipe
 tipTitle: Save recipes from any website
@@ -16,6 +17,8 @@ tipSkipIf: hasRecipes
 tipPriority: 55
 ---
 Found a good recipe online? Save it without typing it out.
+
+![The Recipes screen with the + menu open. Import from link is circled.](meals-import-link)
 
 1. Copy the link to the recipe page.
 2. On Home, tap **Recipes**, then **+**, then **Import from link**.

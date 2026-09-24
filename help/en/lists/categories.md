@@ -8,10 +8,13 @@ routes: /lists/:id
 tryIt: /lists/shopping
 since: 1.5.0
 updated: 2026-09-24
+media: lists-categories
 order: 2
 related: lists-shopping, lists-edit-list
 ---
 New items get a category from their name, so milk lands in **Dairy**. Group the list by category and you walk through the shop once.
+
+![The ⋯ menu of the Groceries list. The Group by category switch and the Categories row are circled.](lists-categories)
 
 1. Open a shopping list and tap **⋯** at the top.
 2. Turn on **Group by category**.

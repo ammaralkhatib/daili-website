@@ -8,10 +8,13 @@ routes: /habits/new, /habits/:id/edit
 tryIt: /habits
 since: 1.6.0
 updated: 2026-09-24
+media: habits-create
 order: 2
 related: habits-what, habits-private, habits-reminders
 ---
 Start from one of the 12 ready-made habits, or make your own.
+
+![The New habit form. The Who choices Just me, Each of us and Together are circled.](habits-create)
 
 1. On Home, tap **Habits**, then **+** at the bottom.
 2. Tap a template, or **Make your own**.

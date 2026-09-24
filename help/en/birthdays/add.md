@@ -8,12 +8,15 @@ routes: /celebrations, /celebrations/new, /celebrations/:id, /celebrations/:id/e
 tryIt: /celebrations
 since: 1.0.0
 updated: 2026-09-24
+media: birthdays-add
 order: 1
 related: birthdays-reminders, birthdays-import, birthdays-comments
 checklist: 5
 checklistDoneIf: hasCelebrations
 ---
 Never miss a birthday again. Everyone in your family sees the same list, with the next one at the top.
+
+![The Birthdays screen with the next birthday and a countdown. The + button at the bottom right is circled.](birthdays-add)
 
 1. On Home, tap **Birthdays**, then **+**.
 2. Pick **Birthday**, **Anniversary** or **Celebration**.

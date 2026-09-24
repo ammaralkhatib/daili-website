@@ -8,10 +8,13 @@ routes: /recipes/paste
 tryIt: /recipes/paste
 since: 1.4.0
 updated: 2026-09-24
+media: meals-paste
 order: 3
 related: meals-import-link, meals-add-recipe
 ---
 Some recipes only live in a post or a message. Paste the text and daili does the sorting.
+
+![The Recipes screen with the + menu open. Paste recipe text is circled.](meals-paste)
 
 1. Copy the recipe text from the page, post or message.
 2. On Home, tap **Recipes**, then **+**, then **Paste recipe text**.

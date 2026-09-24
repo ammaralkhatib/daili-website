@@ -8,10 +8,13 @@ routes: /habits/:id
 tryIt: /habits
 since: 1.6.0
 updated: 2026-09-24
+media: habits-streaks
 order: 4
 related: habits-tick, habits-minzi
 ---
 A streak counts the days in a row you did a habit. For a habit you do a few times a week, it counts weeks.
+
+![A habit's own page with this week's ticks and a calendar. The Current streak card is circled.](habits-streaks)
 
 1. Open a habit to see your **Current streak** and your **Best**.
 2. Busy day? Press and hold a habit, then tap **Rest day today**. It covers all your habits today.

@@ -8,10 +8,13 @@ routes: /habits/new
 tryIt: /habits
 since: 1.6.0
 updated: 2026-09-24
+media: habits-private
 order: 6
 related: habits-create, habits-what
 ---
 Some habits are nobody else's business. A private habit is for your eyes only.
+
+![The More part of the New habit form. The Private switch is circled.](habits-private)
 
 1. Start a new habit, or open one of yours and tap the pencil.
 2. Under **Who**, pick **Just me**.

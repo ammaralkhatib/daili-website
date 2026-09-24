@@ -8,10 +8,13 @@ routes: /meal-plan
 tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-09-24
+media: meals-copy-week
 order: 7
 related: meals-plan-week, meals-to-shopping
 ---
 Lots of families eat the same things most weeks. Copy them instead of adding each meal again.
+
+![The top of the Meal plan. The copy button next to the shopping cart is circled.](meals-copy-week)
 
 1. On Home, tap **Meal plan** and go to the week you want to fill.
 2. Tap the copy button at the top (**Copy from last week**). On an empty week, you can also tap the button in the middle.

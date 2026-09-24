@@ -8,10 +8,13 @@ routes: /lists/:id
 tryIt: /lists/shopping
 since: 1.4.0
 updated: 2026-09-24
+media: lists-move-items
 order: 3
 related: lists-shopping, lists-todos
 ---
 Shampoo on the grocery list? Move it to the list where it belongs.
+
+![The Edit item sheet for Milk. The Move to list… row is circled.](lists-move-items)
 
 1. Open the list and tap the item.
 2. Tap **Move to list…**.

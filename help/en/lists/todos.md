@@ -8,10 +8,13 @@ routes: /lists/todos, /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
 updated: 2026-09-24
+media: lists-todos
 order: 4
 related: lists-assign, lists-due-reminders, lists-repeating
 ---
 To-do lists work like shopping lists, but a task can also have a person, a due date and a reminder.
+
+![The To-dos screen with one list. The Household list card is circled.](lists-todos)
 
 1. On Home, tap **To-dos**, then tap a list. For a new list, tap **+**, type a **Name** and tap **Create**.
 2. Type the task in **Add item** at the bottom and add it.

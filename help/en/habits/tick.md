@@ -8,10 +8,13 @@ routes: /habits/:id
 tryIt: /habits
 since: 1.6.0
 updated: 2026-09-24
+media: habits-tick
 order: 3
 related: habits-streaks, habits-minzi, family-children
 ---
 Tick a habit the moment you've done it. Each tick gives the family energy.
+
+![The Habits screen. The round tick button next to Stretch is circled.](habits-tick)
 
 1. On Home, tap **Habits**.
 2. Tap the round button at the right of a habit. For a counter, tap **One more** until you reach the target.

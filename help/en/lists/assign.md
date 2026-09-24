@@ -8,10 +8,13 @@ routes: /lists/:id
 tryIt: /lists/todos
 since: 1.5.0
 updated: 2026-09-24
+media: lists-assign
 order: 5
 related: lists-todos, lists-all-mine, family-children
 ---
 A task with a name on it gets done. You can give it to one person or to several.
+
+![The Edit item sheet for a to-do. The Assignee field, set to Lena, is circled.](lists-assign)
 
 1. Open a to-do list and tap the task.
 2. Under **Assignee**, tap the field.
