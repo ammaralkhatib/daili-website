@@ -952,6 +952,48 @@ export const WHATS_NEW = {
 };
 
 /**
+ * The help center (daili.app/help/ plus help/en.json for the app).
+ *
+ * The articles themselves live in help/en/<topic>/<slug>.md and are parsed by
+ * tools/help-lib.mjs; what is here is the structure around them.
+ *
+ * HELP_PUBLIC is the switch. While it is false every help page is noindex, none
+ * is in the sitemap and the footer has no Help link — the pages build and can
+ * be previewed, but nothing points at them. en.json is built either way,
+ * because the app reads it.
+ *
+ * LIVE_APP_VERSION is the version people can download today. The pages hide an
+ * article whose `since` is newer, so a help page never explains a button the
+ * reader's app does not have yet. en.json keeps every article: the app filters
+ * by its own version. The release help sync bumps this on release day.
+ */
+export const HELP_PUBLIC = false;
+export const LIVE_APP_VERSION = '1.6.0';
+
+/**
+ * The topic icons, a fixed vocabulary: the app maps each name to its own icon
+ * and the site to its own glyph, so a name outside this list is something one
+ * of them cannot draw. tools/check-help.mjs fails on it.
+ */
+export const HELP_ICONS = ['start', 'people', 'calendar', 'list', 'meal', 'cake', 'paw', 'folder', 'widget', 'bell', 'user'];
+
+/** The help topics, in the order the help home and the app list them. The key
+ *  is the folder name under help/en/ and the `topic` every article declares. */
+export const HELP_TOPICS = {
+  start:         { title: 'Getting started',       icon: 'start',    summary: 'Your first minutes in daili: the Home screen and the basics.' },
+  family:        { title: 'Family & groups',       icon: 'people',   summary: 'Invite people, add kids without a phone, and switch between groups.' },
+  calendar:      { title: 'Calendar',              icon: 'calendar', summary: 'Events, reminders, repeats, and the calendars you already use.' },
+  lists:         { title: 'Lists & to-dos',        icon: 'list',     summary: 'Shopping lists everyone can tick off, and to-dos with a name on them.' },
+  meals:         { title: 'Meals & recipes',       icon: 'meal',     summary: 'Plan the week’s meals and keep the family’s recipes in one place.' },
+  birthdays:     { title: 'Birthdays',             icon: 'cake',     summary: 'Birthdays and celebrations, with a reminder before each one.' },
+  habits:        { title: 'Habits & Minzi',        icon: 'paw',      summary: 'Build habits together and keep Minzi the cat happy.' },
+  vault:         { title: 'Documents & photos',    icon: 'folder',   summary: 'Keep papers and photos on your phone, sorted into folders and albums.' },
+  anywhere:      { title: 'Widgets, web & wall',   icon: 'widget',   summary: 'daili on your home screen, in the browser and on a wall display.' },
+  notifications: { title: 'Notifications',         icon: 'bell',     summary: 'Choose what daili tells you about, and when.' },
+  account:       { title: 'Settings & account',    icon: 'user',     summary: 'Your profile, your settings, and your account.' },
+};
+
+/**
  * The seven feature chapters of the scroll story, in story order.
  *
  * `shot` is the screenshot the sticky phone shows while that chapter is on

@@ -84,6 +84,14 @@ ErrorDocument 404 /404.html
     Header always set Cache-Control "public, max-age=2592000"
   </FilesMatch>
 
+  # help/en.json, the app's copy of the help center. The app refetches it, so
+  # five minutes: a fixed article reaches phones the same afternoon. (The
+  # repo-files rule at the end of this file denies *.json everywhere else;
+  # help/.htaccess re-allows it in /help/ only.)
+  <FilesMatch "\.json$">
+    Header always set Cache-Control "public, max-age=300"
+  </FilesMatch>
+
   # Any unhashed CSS/JS gets a week, never a year — a deploy must not be
   # invisible for a year. Stated first so the hashed rule below can override it.
   <FilesMatch "\.(css|js)$">

@@ -1,0 +1,22 @@
+<article class="wrap help help-article" id="main">
+
+  <a class="help-crumb" href="{{ help.topicHref }}">{{ help.topicTitle }}</a>
+  <h1>{{ help.title }}</h1>
+  <p class="help-lede">{{ help.summary }}</p>
+
+{{{ help.body }}}
+
+{{{ help.related }}}
+
+  <aside class="help-stuck">
+    <h2>Still stuck?</h2>
+    <p><a href="mailto:support@daili.app">Write to us</a> and a real person answers, usually within a day or two.</p>
+  </aside>
+
+  <p class="help-updated">Updated <time datetime="{{ help.updated }}">{{ help.updatedLabel }}</time></p>
+
+  <div class="help-badges">
+{{> storebadges }}
+  </div>
+
+</article>

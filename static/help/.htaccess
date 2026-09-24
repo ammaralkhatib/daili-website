@@ -1,0 +1,8 @@
+# The root .htaccess denies every *.json file, so that a repo file such as
+# package.json can never be served even if it lands in the document root. The
+# help center's data files (en.json, later de.json, …) are the one deliberate
+# exception: the app downloads them from here. This directory's rule is merged
+# after the root one, so it wins for /help/ and nowhere else.
+<FilesMatch "^[a-z]{2}(-[a-z]+)?\.json$">
+  Require all granted
+</FilesMatch>

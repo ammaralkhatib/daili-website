@@ -1,0 +1,18 @@
+[
+  "hasOtherLoginMember",
+  "hasManagedMember",
+  "hasSecondFamily",
+  "hasGoogleCalendar",
+  "hasPhoneCalendars",
+  "hasHabits",
+  "hasRecipes",
+  "hasMealPlan",
+  "hasCelebrations",
+  "hasCalendarLink",
+  "digestOn",
+  "notificationsOn",
+  "hasWidget",
+  "hasEvent",
+  "hasListItem",
+  "hasInvitePending"
+]

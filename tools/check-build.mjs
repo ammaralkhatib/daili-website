@@ -6,7 +6,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS } from '../site.config.mjs';
+import { loadHelp, visibleHelp } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -76,6 +77,12 @@ for (const pg of PAGES) {
 // PAGES, so the expected set has to be expanded the same way here.
 expected.add('blog/index.html');
 for (const post of BLOG_POSTS) expected.add(`blog/${post.slug}/index.html`);
+// The help pages, from the same parser and the same since-filter build.mjs uses.
+const helpShown = visibleHelp(loadHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS }), LIVE_APP_VERSION);
+const helpOuts = new Set(['help/index.html',
+  ...helpShown.topics.map((t) => `help/${t}/index.html`),
+  ...helpShown.articles.map((a) => `help/${a.topic}/${a.slug}/index.html`)]);
+for (const h of helpOuts) expected.add(h);
 for (const e of expected) {
   if (!fs.existsSync(path.join(DIST, e))) fail(e, 'MISSING from dist/');
 }
@@ -688,6 +695,65 @@ for (const loc of LOCALES) {
 
     for (const dead of ['class="bento"', 'class="tile"']) {
       if (html.includes(dead)) fail(out, `still contains ${dead} — the bento grid was replaced by the story`);
+    }
+  }
+}
+
+// --- 16. help center ------------------------------------------------------
+// The help pages follow the blog's rule — English only, no hreflang in the
+// <head>, ever — plus the HELP_PUBLIC switch: while it is false every page is
+// noindex, none is in the sitemap and no footer links to /help/. And the one
+// inline <script> a help page may carry is the search index, which must be
+// data (type="application/json"), never code: the CSP allows exactly one
+// inline script hash, the language detector's.
+{
+  const sitemapPath = path.join(DIST, 'sitemap.xml');
+  const sitemap = fs.existsSync(sitemapPath) ? read(sitemapPath) : '';
+  for (const out of helpOuts) {
+    const file = path.join(DIST, out);
+    if (!fs.existsSync(file)) continue; // section 1 already reported it
+    const html = read(file);
+    const head = html.slice(0, html.indexOf('</head>'));
+    const n = (head.match(/hreflang=/g) || []).length;
+    if (n) fail(out, `<head> carries ${n} hreflang= declaration(s) — the help center is English-only and must claim no alternates`);
+    const noindex = head.includes('<meta name="robots" content="noindex">');
+    if (!HELP_PUBLIC && !noindex) fail(out, 'has no noindex, but HELP_PUBLIC is false — the preview must not be indexed');
+    if (HELP_PUBLIC && noindex) fail(out, 'is noindex, but HELP_PUBLIC is true');
+    const url = `${BASE_URL}/${out.replace(/index\.html$/, '')}`;
+    const inMap = sitemap.includes(`<loc>${url}</loc>`);
+    if (!HELP_PUBLIC && inMap) fail('sitemap.xml', `lists ${url} while HELP_PUBLIC is false`);
+    if (HELP_PUBLIC && !inMap) fail('sitemap.xml', `does not list ${url} although HELP_PUBLIC is true`);
+    for (const [tag] of html.matchAll(/<script\b[^>]*>/g)) {
+      if (!/\ssrc="/.test(tag) && !/type="application\/(ld\+)?json"/.test(tag)) {
+        fail(out, `has an inline executable ${tag} — the CSP would block it`);
+      }
+    }
+  }
+  if (!HELP_PUBLIC) {
+    for (const f of htmlFiles) {
+      if (/<footer>[\s\S]*href="\/help\/"/.test(read(f))) fail(rel(f), 'footer links to /help/ while HELP_PUBLIC is false');
+    }
+  }
+
+  // help/en.json: parses, is shaped for the app, and every image has a cache-buster.
+  const jsonRel = 'help/en.json';
+  const jsonFile = path.join(DIST, jsonRel);
+  if (!fs.existsSync(jsonFile)) fail(jsonRel, 'MISSING — the app reads this file');
+  else {
+    let j = null;
+    try { j = JSON.parse(read(jsonFile)); } catch (e) { fail(jsonRel, `does not parse: ${e.message}`); }
+    if (j) {
+      if (j.schema !== 1 || j.locale !== 'en') fail(jsonRel, `schema/locale is ${j.schema}/${j.locale}, expected 1/en`);
+      for (const k of ['topics', 'articles', 'tips', 'checklist']) if (!Array.isArray(j[k])) fail(jsonRel, `"${k}" is not an array`);
+      const ids = new Set((j.articles || []).map((a) => a.id));
+      for (const t of j.topics || []) for (const id of t.articles) if (!ids.has(id)) fail(jsonRel, `topic ${t.id} lists unknown article ${id}`);
+      for (const a of j.articles || []) {
+        for (const b of a.blocks) {
+          if ((b.type === 'image' || b.type === 'clip') && !/^https:\/\/daili\.app\/help\/media\/en\/[^?]+\?v=[0-9a-f]{8}$/.test(b.src)) {
+            fail(jsonRel, `${a.id}: image src "${b.src}" is not an absolute help media URL with ?v=`);
+          }
+        }
+      }
     }
   }
 }

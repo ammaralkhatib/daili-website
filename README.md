@@ -27,11 +27,13 @@ one-line copy change under a 20-file diff.
 | `static/` | Copied verbatim into `dist/` — CSS, JS, images, fonts, and `.htaccess`. |
 | `static/assets/fonts/` | The two brand faces, self-hosted. See below. |
 | `static/assets/img/shots/<loc>/` | The app screenshots, one set per language. Generated, committed. See below. |
-| `tools/` | The three guards described below. |
+| `tools/` | The guards described below, and `help-lib.mjs` (the help parser). |
+| `help/` | Help center articles and their media/allowlist data. See "Help center" below. |
 
 ## The guards
 
-The build is `check-content → build → check-build → test-detector`, chained with
+The build is `check-content → check-legal → check-help → test-check-help → build →
+check-build → test-detector`, chained with
 `&&`, so nothing broken can reach `deploy.sh`.
 
 - **`check-content.mjs`** — every locale must have exactly English's keys, the
@@ -50,6 +52,35 @@ The build is `check-content → build → check-build → test-detector`, chaine
 - **`test-detector.mjs`** — runs the detector that actually ships in
   `dist/index.html` against a stubbed browser. Chrome's `--lang` flag does **not**
   change `navigator.languages`, so this cannot be checked by hand in a browser.
+
+## Help center
+
+`help/en/<topic>/<slug>.md` is one help article: flat `key: value` front
+matter and a small Markdown subset (paragraphs, one numbered list, up to two
+`![alt](media-id)` images, `> Note:` lines, `**bold**` for button names —
+anything else fails the build with file:line). The rules and the full key
+table are at the top of `tools/help-lib.mjs`. One source, three places: the
+build renders `/help/`, `/help/<topic>/` and `/help/<topic>/<slug>/`, and
+writes `help/en.json`, which the app downloads for its Help screen and tips.
+
+- `help/media.json` maps a media id to a file in `static/help/media/en/` with
+  its `w`/`h`. Page and JSON URLs carry `?v=<sha8>`, so a re-shot picture
+  shows up despite the 30-day image cache.
+- `help/skip-keys.json` is the vocabulary for `tipSkipIf` / `checklistDoneIf`.
+- `help/routes-allowlist.json`: app routes with no article yet (`pending`,
+  the to-do list for new articles) or never (`never`).
+- `site.config.mjs`: `HELP_TOPICS`, `HELP_ICONS`, `LIVE_APP_VERSION` (pages
+  hide articles whose `since` is newer; `en.json` keeps all) and
+  `HELP_PUBLIC` (false = every help page noindex, not in the sitemap, no
+  footer link).
+
+**`check-help.mjs`** reads the app's `lib/core/routing/route_names.dart`
+(`DAILI_APP_REPO`, default `../familyplanner-app`) and fails when an article
+names a route the app no longer has, when an app route has neither an article
+nor an allowlist entry, or when an allowlist entry is stale — so renaming a
+screen in the app turns the website build red. `HELP_SKIP_ROUTE_CHECK=1`
+skips the route checks, loudly. **`test-check-help.mjs`** plants one bad case
+per rule in a throwaway fixture and fails if the guard lets any through.
 
 ## Fonts
 

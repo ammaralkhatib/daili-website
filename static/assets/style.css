@@ -964,3 +964,83 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   .postlist-item{grid-template-columns:1fr;gap:14px}
   .postlist-art{max-width:100%}
 }
+
+/* ---------- help center ----------
+ * /help/, /help/<topic>/ and /help/<topic>/<slug>/. The blog post is the
+ * model: same measure, same type scale, same tokens — so dark mode and RTL
+ * come for free from the blocks above. The shapes (topic cards with an icon
+ * badge, rows with a chevron, round step numbers, a soft note box) follow the
+ * app's own Help screen, because the same articles are shown there. */
+.help{max-width:760px;padding-block:40px 64px}
+.help h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.12;letter-spacing:-.02em;margin-bottom:8px}
+.help h2{font-size:1.2rem;line-height:1.3;margin:34px 0 12px}
+.help-lede{color:var(--muted);font-size:1.04rem;max-width:60ch}
+.help-crumb{display:inline-block;font-size:.9rem;font-weight:600;text-decoration:none;margin-bottom:12px}
+.help-crumb::before{content:"← "}
+[dir="rtl"] .help-crumb::before{content:"→ "}
+.help-crumb:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* Minzi sits beside the title, vertically centred; under it on a phone. */
+.help-hero{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.help-minzi{width:96px;height:96px;flex:none}
+
+.help-search{margin-top:24px}
+.help-search label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px;color:var(--ink)}
+.help-search input{width:100%;font:inherit;font-size:1.02rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 16px;-webkit-appearance:none;appearance:none}
+.help-search input::placeholder{color:var(--muted)}
+.help-search input:focus{outline:2px solid var(--forest);outline-offset:1px;border-color:transparent}
+.help-none{color:var(--muted);font-size:.95rem}
+
+/* The icon badge: a mint chip, like the app's topic tiles. */
+.help-ico{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--mint);flex:none}
+.help-ico svg{width:22px;height:22px;fill:none;stroke:var(--forest);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.help-grid{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.help-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;height:100%;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .3s var(--ease)}
+.help-card .help-ico{margin-bottom:8px}
+.help-card b{font-size:1.02rem;line-height:1.3}
+.help-card small{color:var(--muted);font-size:.88rem}
+.help-card:hover{border-color:var(--mint-strong);transform:translateY(-1px)}
+.help-card-stuck{background:transparent;border-style:dashed;border-width:1.5px}
+
+/* A list of articles: one card, rows divided by a hairline, a chevron each. */
+.help-list{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.help-list li+li{border-top:1px solid var(--line)}
+.help-row{display:flex;align-items:center;gap:14px;padding:15px 18px;text-decoration:none;color:var(--ink)}
+.help-row span{flex:1;min-width:0}
+.help-row b{display:block;font-size:1rem;line-height:1.35}
+.help-row small{display:block;color:var(--muted);font-size:.9rem;line-height:1.45;margin-top:2px}
+.help-row:hover{background:var(--mint-soft)}
+.help-chev{width:18px;height:18px;flex:none;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+[dir="rtl"] .help-chev{transform:scaleX(-1)}
+.help-topic-head{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.help-topic-head h1{margin-bottom:4px}
+
+/* The article. */
+.help-article{max-width:68ch}
+.help-article .help-lede{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.help-article p{color:var(--body);font-size:1.02rem;margin-bottom:16px}
+.help-article strong{color:var(--ink);font-weight:700}
+.help-steps{list-style:none;counter-reset:step;margin:0 0 22px}
+.help-steps li{counter-increment:step;position:relative;padding-inline-start:44px;margin-bottom:14px;color:var(--body);font-size:1.02rem;min-height:30px;padding-top:2px}
+.help-steps li::before{content:counter(step);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--on-forest);font-weight:700;font-size:.9rem}
+.help-fig{margin:6px 0 24px;background:var(--cream);border-radius:var(--radius);padding:14px}
+.help-fig img{margin-inline:auto;max-height:560px;width:auto;border-radius:14px}
+.help-fig figcaption{text-align:center;color:var(--muted);font-size:.88rem;margin-top:10px}
+.help-note{background:var(--mint-soft);border:1px solid var(--mint-strong);border-radius:14px;padding:14px 16px}
+.help-note b{color:var(--forest-deep)}
+.help-stuck{margin-top:36px;background:var(--mint);border:1px solid var(--mint-strong);border-radius:calc(var(--radius) - 4px);padding:22px 24px}
+.help-stuck h2{margin:0 0 6px;font-size:1.15rem;color:var(--forest-deep)}
+.help-stuck p{margin-bottom:0}
+.help-stuck a{font-weight:600}
+.help-updated{color:var(--muted);font-size:.9rem;margin-top:22px}
+.help-article .help-updated{color:var(--muted);font-size:.9rem}
+.help-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+
+@media(max-width:380px){.help-hero{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){
+  .help-minzi{width:80px;height:80px}
+  .help-card{padding:14px}
+  .help-fig img{max-height:460px}
+}
+@media(max-width:340px){.help-grid{grid-template-columns:1fr}}

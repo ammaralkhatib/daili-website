@@ -30,6 +30,8 @@
     "pricing": "Pricing",
     "support": "Support",
     "blog": "Blog",
+    "help": "Help",
+    "@help": { "description": "Footer link to the help center (daili.app/help/, English only). Shown once the help center is public. One short word, like the Blog link." },
     "download": "Download",
     "language": "Language",
     "skip": "Skip to content",

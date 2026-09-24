@@ -18,7 +18,9 @@ import {
   PAGES, FEATURES, COMPARE_ROWS, COMPARE_MARKS, imageSize,
   SHOT_LOCALE, STORY_CARDS, STORY_ICONS, WEB_APP_URL,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
+  HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS,
 } from './site.config.mjs';
+import { loadHelp, visibleHelp } from './tools/help-lib.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, 'dist');
@@ -169,8 +171,55 @@ const blogIndexPage = {
   meta: { title: BLOG_INDEX.title, description: BLOG_INDEX.description },
 };
 
-/** Everything the build loops over: the manifest, the index, one page per post. */
-const allPages = [...PAGES, blogIndexPage, ...blogPages];
+/**
+ * The help center: help/en/<topic>/<slug>.md, parsed by tools/help-lib.mjs.
+ * tools/check-help.mjs has already run by the time this does, so an error here
+ * means someone ran build.mjs on its own — it still refuses to render a broken
+ * article rather than half of one.
+ *
+ * Pages follow the blog's rules (English only, `cluster: null`, no hreflang)
+ * and add one of their own: while HELP_PUBLIC is false every help page is
+ * noindex, which also keeps it out of the sitemap. They show only what the
+ * live app has (`since` <= LIVE_APP_VERSION); help/en.json carries everything.
+ */
+const help = loadHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS });
+if (help.errors.length) {
+  throw new Error(`help/ has ${help.errors.length} error(s) — run node tools/check-help.mjs:\n${help.errors.join('\n')}`);
+}
+const helpShown = visibleHelp(help, LIVE_APP_VERSION);
+const helpArticleUrl = (a) => `/help/${a.topic}/${a.slug}/`;
+
+const helpBase = { locales: ['en'], cluster: null, noindex: !HELP_PUBLIC, priority: () => '0.5' };
+const helpPages = [
+  {
+    ...helpBase,
+    id: 'helpindex',
+    template: 'helpindex.html',
+    out: () => 'help/index.html',
+    meta: { title: 'Help — daili', description: 'Short guides for everything in daili: the calendar, lists, meals, birthdays, your family and your account.' },
+    help: { kind: 'index' },
+  },
+  ...helpShown.topics.map((t) => ({
+    ...helpBase,
+    id: `help:${t}`,
+    template: 'helptopic.html',
+    out: () => `help/${t}/index.html`,
+    meta: { title: `${HELP_TOPICS[t].title} — daili Help`, description: HELP_TOPICS[t].summary },
+    help: { kind: 'topic', topic: t },
+  })),
+  ...helpShown.articles.map((a) => ({
+    ...helpBase,
+    id: `help:${a.id}`,
+    template: 'helparticle.html',
+    out: () => `help/${a.topic}/${a.slug}/index.html`,
+    meta: { title: `${a.title} — daili Help`, description: a.summary },
+    help: { kind: 'article', article: a },
+  })),
+];
+
+/** Everything the build loops over: the manifest, the index, one page per post,
+ *  and the help center. */
+const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages];
 
 /** "2 September 2026" — the byline's readable half. The machine-readable half
  *  is the raw ISO string in <time datetime>. */
@@ -296,6 +345,9 @@ function renderFooterLinks(loc) {
     // whatever locale the footer around it is written in, and hreflang/lang say
     // so rather than leaving a reader to find out by clicking.
     `<a href="/blog/" hreflang="en" lang="en">${escapeHtml(c.nav.blog)}</a>`,
+    // The help center is English-only like the blog, and linked from nowhere
+    // until HELP_PUBLIC flips: before that its pages are a noindex preview.
+    ...(HELP_PUBLIC ? [`<a href="/help/" hreflang="en" lang="en">${escapeHtml(c.nav.help)}</a>`] : []),
     // The release notes exist in English and German only. Every other locale's
     // footer points at the English page and says so, the same way the blog link
     // does. The label is a literal rather than a content key: adding one to all
@@ -554,6 +606,180 @@ function renderFaq(loc) {
 }
 
 // ---------------------------------------------------------------------------
+// help center
+// ---------------------------------------------------------------------------
+
+/**
+ * The topic glyphs, keyed by the HELP_ICONS vocabulary. The app maps the same
+ * names to its own icons; these are the site's drawings of them. A name in
+ * HELP_ICONS with no glyph here throws, so the vocabulary cannot grow on one
+ * side only.
+ */
+const HELP_GLYPHS = {
+  start: '<path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/>',
+  people: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  list: '<path d="M10 6h10M10 12h10M10 18h10M4 6l1.2 1.2L7.5 5M4 12l1.2 1.2L7.5 11M4 18l1.2 1.2L7.5 17"/>',
+  meal: '<path d="M6 3v7a2 2 0 0 0 2 2v9M10 3v7a2 2 0 0 1-2 2M8 3v5M18 21V3c-2 1-3.5 3.5-3.5 7v4H18"/>',
+  cake: '<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/>',
+  paw: '<circle cx="5.5" cy="10" r="1.8"/><circle cx="9.5" cy="5.5" r="1.8"/><circle cx="14.5" cy="5.5" r="1.8"/><circle cx="18.5" cy="10" r="1.8"/><path d="M12 11c-3 0-5.5 3.5-5.5 6a3 3 0 0 0 3 3c1 0 1.6-.5 2.5-.5s1.5.5 2.5.5a3 3 0 0 0 3-3c0-2.5-2.5-6-5.5-6z"/>',
+  folder: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  widget: '<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
+  bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+};
+for (const name of HELP_ICONS) {
+  if (!(name in HELP_GLYPHS)) throw new Error(`HELP_ICONS has '${name}' but build.mjs HELP_GLYPHS has no drawing for it`);
+}
+const helpIcon = (name) => `<span class="help-ico" aria-hidden="true"><svg viewBox="0 0 24 24">${HELP_GLYPHS[name]}</svg></span>`;
+const CHEVRON = '<svg class="help-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
+/** A file's cache-buster. Help pictures are re-shot under the same name and
+ *  images are cached for 30 days, so the URL has to change when the bytes do. */
+const fileSha8 = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 8);
+
+/** Site-absolute URL of a help media file, with its ?v= cache-buster. */
+function helpMediaUrl(file, locale = 'en') {
+  return `/help/media/${locale}/${file}?v=${fileSha8(p('static/help/media', locale, file))}`;
+}
+
+/** Article text: escaped, then **bold** — the only inline markup there is. */
+const helpInline = (s) => escapeHtml(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+/** Plain text of an article's body, for the search index. */
+const helpPlain = (a) => a.blocks.map((b) => (b.type === 'steps' ? b.items.join(' ') : b.text || ''))
+  .join(' ').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+
+const helpRow = (a) => `      <li><a class="help-row" href="${helpArticleUrl(a)}"><span><b>${escapeHtml(a.title)}</b><small>${escapeHtml(a.summary)}</small></span>${CHEVRON}</a></li>`;
+
+/**
+ * Everything a help page's template needs, pre-rendered. The template engine
+ * has one level of loops and no conditionals inside them, and a help page is
+ * nested lists all the way down — the same reason the story and the FAQ are
+ * rendered here rather than in their templates.
+ */
+function renderHelp(spec) {
+  const shown = helpShown.articles;
+
+  if (spec.kind === 'index') {
+    const newOnes = shown.filter((a) => a.since === LIVE_APP_VERSION);
+    const newSection = newOnes.length ? `  <section class="help-new" aria-labelledby="help-new-h">
+    <h2 id="help-new-h">New in version ${escapeHtml(LIVE_APP_VERSION)}</h2>
+    <ul class="help-list">
+${newOnes.map(helpRow).join('\n')}
+    </ul>
+  </section>` : '';
+
+    const cards = helpShown.topics.map((t) => {
+      const count = shown.filter((a) => a.topic === t).length;
+      return `      <li><a class="help-card" href="/help/${t}/">${helpIcon(HELP_TOPICS[t].icon)}<b>${escapeHtml(HELP_TOPICS[t].title)}</b><small>${count} article${count === 1 ? '' : 's'}</small></a></li>`;
+    }).join('\n');
+
+    // The search index, as data. type="application/json" is never executed,
+    // so the CSP (script-src 'self' + one hash) does not have to change and
+    // nothing is fetched. `<` is escaped so no string in it can close the tag.
+    const index = shown.map((a) => ({
+      url: helpArticleUrl(a),
+      title: a.title,
+      summary: a.summary,
+      topic: HELP_TOPICS[a.topic].title,
+      keywords: a.keywords.join(' '),
+      text: helpPlain(a),
+    }));
+    return {
+      newSection,
+      cards,
+      indexJson: JSON.stringify(index).replace(/</g, '\\u003c'),
+      minziSrc: `/help/media/minzi-look-right.webp?v=${fileSha8(p('static/help/media/minzi-look-right.webp'))}`,
+    };
+  }
+
+  if (spec.kind === 'topic') {
+    const t = HELP_TOPICS[spec.topic];
+    return {
+      title: t.title,
+      summary: t.summary,
+      icon: helpIcon(t.icon),
+      rows: shown.filter((a) => a.topic === spec.topic).map(helpRow).join('\n'),
+    };
+  }
+
+  const a = spec.article;
+  const body = a.blocks.map((b) => {
+    if (b.type === 'p') return `  <p>${helpInline(b.text)}</p>`;
+    if (b.type === 'note') return `  <p class="help-note"><b>Note:</b> ${helpInline(b.text)}</p>`;
+    if (b.type === 'steps') {
+      return `  <ol class="help-steps">\n${b.items.map((it) => `    <li>${helpInline(it)}</li>`).join('\n')}\n  </ol>`;
+    }
+    const m = help.media[b.media];
+    return `  <figure class="help-fig">
+    <img src="${helpMediaUrl(m.file)}" alt="${escapeHtml(b.alt)}" width="${m.w}" height="${m.h}" decoding="async">
+    <figcaption>${escapeHtml(b.alt)}</figcaption>
+  </figure>`;
+  }).join('\n');
+
+  // Related articles the reader can open today — one the live app does not
+  // have yet has no page to link to.
+  const related = a.related.map((id) => shown.find((x) => x.id === id)).filter(Boolean);
+  return {
+    topicHref: `/help/${a.topic}/`,
+    topicTitle: HELP_TOPICS[a.topic].title,
+    title: a.title,
+    summary: a.summary,
+    body,
+    related: related.length ? `  <section class="help-related" aria-labelledby="help-related-h">
+    <h2 id="help-related-h">Related</h2>
+    <ul class="help-list">
+${related.map(helpRow).join('\n')}
+    </ul>
+  </section>` : '',
+    updated: a.updated,
+    updatedLabel: formatDate(a.updated),
+  };
+}
+
+/**
+ * help/en.json — the app's copy of the help center. Every article, whatever
+ * its `since`: the app hides what is newer than itself. Image blocks become
+ * absolute URLs with their size, so the app can lay a picture out before it
+ * has loaded.
+ */
+function buildHelpJson() {
+  const mediaSrc = (id) => {
+    const m = help.media[id];
+    return `${BASE_URL}${helpMediaUrl(m.file)}`;
+  };
+  const block = (b) => {
+    if (b.type !== 'image') return b;
+    const m = help.media[b.media];
+    return m.kind === 'clip'
+      ? { type: 'clip', src: mediaSrc(b.media), poster: `${BASE_URL}${helpMediaUrl(m.poster)}`, alt: b.alt, w: m.w, h: m.h }
+      : { type: 'image', src: mediaSrc(b.media), alt: b.alt, w: m.w, h: m.h };
+  };
+  const arts = help.articles;
+  return {
+    schema: 1,
+    locale: 'en',
+    generated: new Date().toISOString(),
+    liveAppVersion: LIVE_APP_VERSION,
+    topics: Object.entries(HELP_TOPICS)
+      .filter(([t]) => arts.some((a) => a.topic === t))
+      .map(([id, t]) => ({ id, title: t.title, icon: t.icon, summary: t.summary, articles: arts.filter((a) => a.topic === id).map((a) => a.id) })),
+    articles: arts.map((a) => ({
+      id: a.id, topic: a.topic, title: a.title, summary: a.summary, keywords: a.keywords,
+      routes: a.routes, tryIt: a.tryIt, since: a.since, updated: a.updated,
+      blocks: a.blocks.map(block), related: a.related,
+    })),
+    tips: arts.filter((a) => a.tip).map((a) => ({
+      id: a.id, article: a.id, title: a.tip.title, body: a.tip.body, skipIf: a.tip.skipIf,
+      priority: a.tip.priority, since: a.since, media: a.media ? mediaSrc(a.media) : null,
+    })),
+    checklist: arts.filter((a) => a.checklist).sort((x, y) => x.checklist.order - y.checklist.order)
+      .map((a) => ({ order: a.checklist.order, article: a.id, title: a.title, doneIf: a.checklist.doneIf, tryIt: a.tryIt })),
+  };
+}
+
+// ---------------------------------------------------------------------------
 // head: canonical, hreflang, Open Graph, JSON-LD
 // ---------------------------------------------------------------------------
 
@@ -772,6 +998,11 @@ function build() {
   fs.renameSync(path.join(DIST, 'assets/style.css'), path.join(DIST, 'assets', cssName));
   fs.renameSync(path.join(DIST, 'assets/script.js'), path.join(DIST, 'assets', jsName));
   const cssHref = `/assets/${cssName}`, jsHref = `/assets/${jsName}`;
+  // The help search, hashed the same way. Loaded by /help/ only.
+  const helpJs = fs.readFileSync(p('static/assets/help-search.js'));
+  const helpJsName = `help-search.${sha8(helpJs)}.js`;
+  fs.renameSync(path.join(DIST, 'assets/help-search.js'), path.join(DIST, 'assets', helpJsName));
+  const helpSearchHref = `/assets/${helpJsName}`;
 
   const detector = buildDetector();
   const cspHash = `'sha256-${crypto.createHash('sha256')
@@ -816,6 +1047,8 @@ function build() {
         // nothing.
         ...(pg.id === 'blogindex' ? { posts: blogList, blog: BLOG_INDEX } : {}),
         ...(pg.id === 'whats-new' ? { whatsNew: WHATS_NEW[loc] } : {}),
+        // Only help pages have `help`, pre-rendered for their kind.
+        ...(pg.help ? { help: renderHelp(pg.help) } : {}),
         // Only blog pages have a post. Anywhere else `post` is absent, so a
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
@@ -851,7 +1084,7 @@ function build() {
           // page snaps — `html:has(.story)` would have done it without a class
           // and is not an option: Firefox ESR 115 ships no :has().
           htmlClass: pg.id === 'landing' ? 'landing' : '',
-          cssHref, jsHref,
+          cssHref, jsHref, helpSearchHref,
           homeHref: dirFor(loc),
           // The grid became the story; #features is now its first feature
           // chapter, so the header link and any old bookmark still land right.
@@ -931,12 +1164,19 @@ ${feedItems}
 </rss>
 `);
 
+  // ---- help/en.json (the app's data file) ----------------------------------
+  // Not a page either: never in `written`, never in the sitemap.
+  const helpJson = buildHelpJson();
+  fs.writeFileSync(path.join(DIST, 'help/en.json'), JSON.stringify(helpJson));
+
   fs.writeFileSync(path.join(DIST, 'robots.txt'),
     `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`);
 
   console.log(`built ${written.length} pages · ${LOCALES.length} locale(s) · ${urls.length} sitemap entries`);
   console.log(`assets: ${cssName}  ${jsName}`);
   console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml`);
+  console.log(`help: ${helpShown.articles.length} of ${help.articles.length} article(s) on pages (live ${LIVE_APP_VERSION}) · ${helpShown.topics.length} topic(s) · en.json ${helpJson.articles.length} articles, ${helpJson.tips.length} tips, ${helpJson.checklist.length} checklist · ${HELP_PUBLIC ? 'PUBLIC' : 'noindex preview'}`);
+  for (const w of help.warnings) console.warn(`WARN  ${w}`);
   for (const [name, st] of Object.entries(stores)) {
     if (!st.available) {
       console.log(`INFO  stores.${name}.available is false — the badge renders as a non-link "coming soon" chip and ${name === 'ios' ? 'the App Store URL' : 'the store URL'} is not written into dist/.`);
