@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Bantuan — daili",
+  "metaDescription": "Panduan singkat untuk semua hal di daili: kalender, daftar, menu makan, ulang tahun, keluarga, dan akun Anda.",
+  "pageTitle": "{title} — Bantuan daili",
+  "heroTitle": "Ada yang bisa kami bantu?",
+  "heroLede": "Panduan singkat untuk semua hal di daili.",
+  "minziAlt": "Minzi si kucing",
+  "searchLabel": "Cari di bantuan",
+  "searchPlaceholder": "Coba “undang” atau “kalender”",
+  "results": "Hasil",
+  "noResult": "Belum ada panduan yang cocok. Coba kata lain, atau kirim email ke {email}.",
+  "newInVersion": "Baru di versi {version}",
+  "browseByTopic": "Jelajahi menurut topik",
+  "articleCount": {
+    "other": "{n} artikel"
+  },
+  "stillStuck": "Masih bingung?",
+  "writeToUs": "Tulis ke kami",
+  "stuckBody": "{writeToUs}, dan orang sungguhan akan menjawab, biasanya dalam satu atau dua hari.",
+  "crumbHelp": "Bantuan",
+  "note": "Catatan:",
+  "related": "Terkait",
+  "helpfulQuestion": "Apakah ini membantu?",
+  "helpfulYes": "Ya, membantu",
+  "helpfulNo": "Tidak membantu",
+  "thanks": "Terima kasih!",
+  "updated": "Diperbarui",
+  "topics": {
+    "start": { "title": "Memulai", "summary": "Menit pertama Anda di daili: Beranda dan dasar-dasarnya." },
+    "family": { "title": "Keluarga & grup", "summary": "Undang orang, tambahkan anak tanpa ponsel, dan pindah antar grup." },
+    "calendar": { "title": "Kalender", "summary": "Acara, pengingat, pengulangan, dan kalender yang sudah Anda pakai." },
+    "lists": { "title": "Daftar & tugas", "summary": "Daftar belanja yang bisa dicentang semua orang, dan tugas dengan nama penanggung jawab." },
+    "meals": { "title": "Menu & resep", "summary": "Rencanakan menu seminggu dan simpan resep keluarga di satu tempat." },
+    "birthdays": { "title": "Ulang tahun", "summary": "Ulang tahun dan hari spesial, dengan pengingat sebelum setiap harinya." },
+    "habits": { "title": "Kebiasaan & Minzi", "summary": "Bangun kebiasaan bersama dan buat Minzi si kucing senang." },
+    "vault": { "title": "Dokumen & foto", "summary": "Simpan dokumen dan foto di ponsel, rapi dalam folder dan album." },
+    "anywhere": { "title": "Widget, web & layar dinding", "summary": "daili di layar utama ponsel, di browser, dan di layar dinding." },
+    "notifications": { "title": "Notifikasi", "summary": "Pilih apa yang diberitahukan daili kepada Anda, dan kapan." },
+    "account": { "title": "Pengaturan & akun", "summary": "Profil, pengaturan, dan akun Anda." }
+  }
+}
