@@ -13,7 +13,7 @@ Kleine Kinder brauchen kein eigenes Konto. Du fügst sie hinzu, und sie erschein
 
 1. Tippe auf dem Startbildschirm auf **Familie**.
 2. Tippe unter **Kinder** auf **Kind hinzufügen**.
-3. Gib den **Namen** ein, wähle eine **Farbe** und tippe auf **Hinzufügen**.
+3. Gib unter **Name** den Namen ein, wähle eine **Farbe** und tippe auf **Hinzufügen**.
 
 Jetzt kannst du das Kind auswählen, wenn du jemandem eine Aufgabe gibst.
 

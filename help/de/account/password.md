@@ -11,7 +11,7 @@ Dein Passwort änderst du in deinem Profil.
 
 1. Öffne die **Einstellungen** und tippe oben auf deinen Namen.
 2. Tippe unter **Konto** auf **Passwort ändern**.
-3. Gib dein **Aktuelles Passwort** ein. Gib dann das **Neue Passwort** ein und wiederhole es bei **Neues Passwort bestätigen**. Es braucht mindestens 8 Zeichen.
+3. Gib dein **Aktuelles Passwort** ein. Gib dann das neue unter **Neues Passwort** ein und wiederhole es bei **Neues Passwort bestätigen**. Es braucht mindestens 8 Zeichen.
 4. Tippe auf **Speichern**. Deine anderen Handys und Browser werden abgemeldet, also melde dich dort mit dem neuen Passwort an.
 
 Mit Google oder Apple registriert? Dann hast du noch kein Passwort, und in der Zeile steht **Passwort festlegen**. Tippe darauf, und daili schickt dir einen Link per E-Mail, um eins festzulegen.

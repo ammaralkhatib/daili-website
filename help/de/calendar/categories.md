@@ -11,7 +11,7 @@ Die Farbe eines Termins kommt von seiner Kategorie. So sieht „Sport“ überal
 
 1. Tippe auf dem Startbildschirm auf **Familie**.
 2. Tippe unter **Kalender** auf **Terminkategorien**.
-3. Tippe auf **Kategorie hinzufügen**, gib einen **Namen** ein, wähle eine **Farbe** und tippe auf **Hinzufügen**.
+3. Tippe auf **Kategorie hinzufügen**, gib unter **Name** einen Namen ein, wähle eine **Farbe** und tippe auf **Hinzufügen**.
 4. Tippe auf eine Kategorie, um sie umzubenennen oder ihre Farbe zu ändern. Tippe auf **⋮**, um sie zu löschen.
 
 Um einem Termin eine Kategorie zu geben, tippe im Termin auf **Kategorie**. Im **Kalender** tippst du auf **Filter**, um nur eine Kategorie zu sehen.

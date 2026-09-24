@@ -9,7 +9,7 @@ Alle in deiner Familie sehen dieselben Einkaufslisten. Wenn jemand etwas hinzuf�
 
 ![Die Liste Lebensmittel mit offenen Eintr채gen und zwei abgehakten unter Erledigt. Die Leiste Eintrag hinzuf체gen unten ist eingekreist.](lists-shopping)
 
-1. Tippe auf dem Startbildschirm auf **Einkaufen** und dann auf eine Liste. F체r eine neue Liste tippst du auf **+**, gibst einen **Namen** ein und tippst auf **Erstellen**.
+1. Tippe auf dem Startbildschirm auf **Einkaufen** und dann auf eine Liste. F체r eine neue Liste tippst du auf **+**, gibst unter **Name** einen Namen ein und tippst auf **Erstellen**.
 2. Gib unten in **Eintrag hinzuf체gen** ein, was du brauchst, und f체g es hinzu.
 3. Tippe auf einen Eintrag, um die **Menge** zu 채ndern oder eine **Notiz** hinzuzuf체gen, und tippe dann auf **Speichern**.
 4. Im Laden tippst du auf das K채stchen vor einem Eintrag. Er rutscht nach unten zu **Erledigt**.

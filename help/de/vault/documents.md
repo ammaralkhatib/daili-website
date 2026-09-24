@@ -10,7 +10,7 @@ Bewahre Versicherungspapiere, Elternbriefe und Belege in Ordnern auf, direkt in 
 ![Der Ordner Wichtige Papiere mit drei Dateien. Der Button + unten rechts ist eingekreist.](vault-documents)
 
 1. Tippe auf dem Startbildschirm auf **Dokumente** und dann auf einen Ordner.
-2. Für einen neuen Ordner tippst du unten rechts auf den Ordner-Button (**Neuer Ordner**). Gib einen **Ordnernamen** ein, wähle eine **Farbe** und tippe auf **Speichern**.
+2. Für einen neuen Ordner tippst du unten rechts auf den Ordner-Button (**Neuer Ordner**). Gib unter **Ordnername** einen Namen ein, wähle eine **Farbe** und tippe auf **Speichern**.
 3. Tippe in einem Ordner auf **+** und wähle **Datei**, **Aus dem Fotoalbum** oder **Foto aufnehmen**.
 4. Tippe auf eine Datei, um sie zu öffnen. Tippe auf **⋮** daneben für **Umbenennen**, **Verschieben**, **Teilen** oder **Löschen**.
 5. Um einen Ordner umzubenennen oder zu löschen, halte ihn gedrückt.

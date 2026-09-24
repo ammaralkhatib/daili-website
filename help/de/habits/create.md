@@ -11,7 +11,7 @@ Starte mit einer der 12 fertigen Gewohnheiten oder erstelle deine eigene.
 
 1. Tippe auf dem Startbildschirm auf **Gewohnheiten** und dann unten auf **+**.
 2. Tippe auf eine Vorlage oder auf **Eigene erstellen**.
-3. Gib ihr einen **Namen** und wähle **Wer**. Bei **Jeder für sich** wählst du die Personen unter **Wer macht mit?**.
+3. Gib ihr unter **Name** einen Namen und wähle **Wer**. Bei **Jeder für sich** wählst du die Personen unter **Wer macht mit?**.
 4. Wähle die **Art**: **Ja / nein** oder **Zähler** mit einem **Ziel** und einer **Einheit**, zum Beispiel 8 Gläser.
 5. Wähle unter **Wie oft** die Option **Jeden Tag**, **An bestimmten Tagen** oder **Ein paar Mal pro Woche**.
 6. Tippe auf **Gewohnheit starten**.

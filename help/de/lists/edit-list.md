@@ -11,7 +11,7 @@ Diese Schritte funktionieren für Einkaufslisten und Aufgabenlisten gleich.
 
 1. Tippe auf dem Startbildschirm auf **Einkaufen** oder **Aufgaben**.
 2. Tippe auf der Karte der Liste auf **⋯** und dann auf **Bearbeiten**.
-3. Ändere den **Namen**, die **Farbe** oder das **Symbol** und tippe auf **Speichern**.
+3. Ändere **Name**, **Farbe** oder **Symbol** und tippe auf **Speichern**.
 4. Um die Reihenfolge zu ändern, halte eine Karte gedrückt und zieh sie an ihren neuen Platz.
 5. Um eine Liste zu löschen, tippe auf ihrer Karte auf **⋯** und dann auf **Löschen**. Doch nicht? Tippe in der Meldung auf **Rückgängig**.
 

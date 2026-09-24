@@ -11,7 +11,7 @@ Nie wieder einen Geburtstag vergessen. Alle in deiner Familie sehen dieselbe Lis
 
 1. Tippe auf dem Startbildschirm auf **Geburtstage** und dann auf **+**.
 2. Wähle **Geburtstag**, **Jahrestag** oder **Feier**.
-3. Gib den **Namen** ein und wähle **Monat** und **Tag**.
+3. Gib unter **Name** den Namen ein und wähle **Monat** und **Tag**.
 4. Du kennst das Jahr? Schalte **Jahr anzeigen** ein und wähle das **Jahr**. daili zeigt dann, wie alt die Person wird.
 5. Tippe auf **Erstellen**.
 
