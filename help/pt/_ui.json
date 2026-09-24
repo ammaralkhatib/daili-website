@@ -1,0 +1,43 @@
+{
+  "metaTitle": "Ajuda — daili",
+  "metaDescription": "Guias curtos para tudo no daili: o calendário, as listas, as refeições, os aniversários, sua família e sua conta.",
+  "pageTitle": "{title} — Ajuda do daili",
+  "heroTitle": "Como podemos ajudar?",
+  "heroLede": "Guias curtos para tudo no daili.",
+  "minziAlt": "O gato Minzi",
+  "searchLabel": "Pesquisar na ajuda",
+  "searchPlaceholder": "Experimente “convidar” ou “calendário”",
+  "results": "Resultados",
+  "noResult": "Ainda não temos um guia para isso. Tente outra palavra ou escreva para nós em {email}.",
+  "newInVersion": "Novidades da versão {version}",
+  "browseByTopic": "Navegar por tópico",
+  "articleCount": {
+    "one": "{n} artigo",
+    "many": "{n} de artigos",
+    "other": "{n} artigos"
+  },
+  "stillStuck": "Ainda com dúvidas?",
+  "writeToUs": "Escreva para nós",
+  "stuckBody": "{writeToUs} e uma pessoa de verdade responde, normalmente em um ou dois dias.",
+  "crumbHelp": "Ajuda",
+  "note": "Observação:",
+  "related": "Relacionados",
+  "helpfulQuestion": "Isso foi útil?",
+  "helpfulYes": "Sim, foi útil",
+  "helpfulNo": "Não, não foi útil",
+  "thanks": "Obrigado!",
+  "updated": "Atualizado",
+  "topics": {
+    "start": { "title": "Primeiros passos", "summary": "Seus primeiros minutos no daili: a tela inicial e o básico." },
+    "family": { "title": "Família e grupos", "summary": "Convide pessoas, adicione crianças sem celular e troque de grupo." },
+    "calendar": { "title": "Calendário", "summary": "Eventos, lembretes, repetições e os calendários que você já usa." },
+    "lists": { "title": "Listas e tarefas", "summary": "Listas de compras que todos podem marcar, e tarefas com o nome de alguém." },
+    "meals": { "title": "Refeições e receitas", "summary": "Planeje as refeições da semana e guarde as receitas da família em um só lugar." },
+    "birthdays": { "title": "Aniversários", "summary": "Aniversários e comemorações, com um lembrete antes de cada um." },
+    "habits": { "title": "Hábitos e Minzi", "summary": "Criem hábitos juntos e deixem o gato Minzi feliz." },
+    "vault": { "title": "Documentos e fotos", "summary": "Papéis e fotos no seu celular, organizados em pastas e álbuns." },
+    "anywhere": { "title": "Widgets, web e tela na parede", "summary": "O daili na tela inicial do celular, no navegador e em uma tela na parede." },
+    "notifications": { "title": "Notificações", "summary": "Escolha sobre o que o daili avisa você, e quando." },
+    "account": { "title": "Configurações e conta", "summary": "Seu perfil, suas configurações e sua conta." }
+  }
+}
