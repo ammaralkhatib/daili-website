@@ -960,14 +960,14 @@ export const WHATS_NEW = {
  * HELP_PUBLIC is the switch. While it is false every help page is noindex, none
  * is in the sitemap and the footer has no Help link — the pages build and can
  * be previewed, but nothing points at them. en.json is built either way,
- * because the app reads it.
+ * because the app reads it. Public since 2026-09-24.
  *
  * LIVE_APP_VERSION is the version people can download today. The pages hide an
  * article whose `since` is newer, so a help page never explains a button the
  * reader's app does not have yet. en.json keeps every article: the app filters
  * by its own version. The release help sync bumps this on release day.
  */
-export const HELP_PUBLIC = false;
+export const HELP_PUBLIC = true;
 export const LIVE_APP_VERSION = '1.6.0';
 
 /**
