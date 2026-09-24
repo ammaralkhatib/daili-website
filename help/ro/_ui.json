@@ -1,0 +1,43 @@
+{
+  "metaTitle": "Ajutor — daili",
+  "metaDescription": "Ghiduri scurte pentru tot ce e în daili: calendarul, listele, mesele, zilele de naștere, familia ta și contul tău.",
+  "pageTitle": "{title} — Ajutor daili",
+  "heroTitle": "Cu ce te putem ajuta?",
+  "heroLede": "Ghiduri scurte pentru tot ce e în daili.",
+  "minziAlt": "Pisica Minzi",
+  "searchLabel": "Caută în ajutor",
+  "searchPlaceholder": "Încearcă „invită” sau „calendar”",
+  "results": "Rezultate",
+  "noResult": "Încă nu avem un ghid pentru asta. Încearcă alt cuvânt sau scrie-ne la {email}.",
+  "newInVersion": "Nou în versiunea {version}",
+  "browseByTopic": "Răsfoiește după subiect",
+  "articleCount": {
+    "one": "{n} articol",
+    "few": "{n} articole",
+    "other": "{n} de articole"
+  },
+  "stillStuck": "Tot nu te descurci?",
+  "writeToUs": "Scrie-ne",
+  "stuckBody": "{writeToUs} și îți răspunde un om adevărat, de obicei în una sau două zile.",
+  "crumbHelp": "Ajutor",
+  "note": "Notă:",
+  "related": "Articole similare",
+  "helpfulQuestion": "Ți-a fost de folos?",
+  "helpfulYes": "Da, mi-a fost de folos",
+  "helpfulNo": "Nu, nu mi-a fost de folos",
+  "thanks": "Mulțumim!",
+  "updated": "Actualizat",
+  "topics": {
+    "start": { "title": "Primii pași", "summary": "Primele tale minute în daili: ecranul principal și lucrurile de bază." },
+    "family": { "title": "Familie și grupuri", "summary": "Invită oameni, adaugă copii fără telefon și treci de la un grup la altul." },
+    "calendar": { "title": "Calendar", "summary": "Evenimente, mementouri, repetări și calendarele pe care le folosești deja." },
+    "lists": { "title": "Liste și sarcini", "summary": "Liste de cumpărături pe care le poate bifa oricine și sarcini cu un nume pe ele." },
+    "meals": { "title": "Mese și rețete", "summary": "Planifică mesele săptămânii și ține rețetele familiei într-un singur loc." },
+    "birthdays": { "title": "Zile de naștere", "summary": "Zile de naștere și aniversări, cu un memento înainte de fiecare." },
+    "habits": { "title": "Obiceiuri și Minzi", "summary": "Construiți obiceiuri împreună și faceți-o fericită pe pisica Minzi." },
+    "vault": { "title": "Documente și poze", "summary": "Acte și poze pe telefonul tău, sortate în dosare și albume." },
+    "anywhere": { "title": "Widgeturi, web și perete", "summary": "daili pe ecranul telefonului, în browser și pe un ecran pe perete." },
+    "notifications": { "title": "Notificări", "summary": "Alege despre ce te anunță daili și când." },
+    "account": { "title": "Setări și cont", "summary": "Profilul tău, setările tale și contul tău." }
+  }
+}
