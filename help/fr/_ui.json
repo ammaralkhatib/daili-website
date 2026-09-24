@@ -1,0 +1,43 @@
+{
+  "metaTitle": "Aide — daili",
+  "metaDescription": "Des guides courts pour tout daili : l’agenda, les listes, les repas, les anniversaires, ta famille et ton compte.",
+  "pageTitle": "{title} — Aide daili",
+  "heroTitle": "Comment pouvons-nous t’aider ?",
+  "heroLede": "Des guides courts pour tout daili.",
+  "minziAlt": "Minzi, le chat",
+  "searchLabel": "Chercher dans l’aide",
+  "searchPlaceholder": "Essaie « inviter » ou « agenda »",
+  "results": "Résultats",
+  "noResult": "Aucun guide ne correspond pour l’instant. Essaie un autre mot, ou écris-nous à {email}.",
+  "newInVersion": "Nouveau dans la version {version}",
+  "browseByTopic": "Parcourir par thème",
+  "articleCount": {
+    "one": "{n} article",
+    "many": "{n} d’articles",
+    "other": "{n} articles"
+  },
+  "stillStuck": "Toujours bloqué ?",
+  "writeToUs": "Écris-nous",
+  "stuckBody": "{writeToUs} et une vraie personne te répond, en général sous un ou deux jours.",
+  "crumbHelp": "Aide",
+  "note": "Remarque :",
+  "related": "À lire aussi",
+  "helpfulQuestion": "Cet article t’a-t-il aidé ?",
+  "helpfulYes": "Oui, utile",
+  "helpfulNo": "Non, pas utile",
+  "thanks": "Merci !",
+  "updated": "Mis à jour",
+  "topics": {
+    "start": { "title": "Premiers pas", "summary": "Tes premières minutes dans daili : l’écran d’accueil et l’essentiel." },
+    "family": { "title": "Famille et groupes", "summary": "Invite des proches, ajoute des enfants sans téléphone et passe d’un groupe à l’autre." },
+    "calendar": { "title": "Agenda", "summary": "Événements, rappels, répétitions et les agendas que tu utilises déjà." },
+    "lists": { "title": "Listes et tâches", "summary": "Des listes de courses que tout le monde peut cocher, et des tâches avec un nom dessus." },
+    "meals": { "title": "Repas et recettes", "summary": "Planifie les repas de la semaine et garde les recettes de la famille au même endroit." },
+    "birthdays": { "title": "Anniversaires", "summary": "Anniversaires et fêtes, avec un rappel avant chacun." },
+    "habits": { "title": "Habitudes et Minzi", "summary": "Prenez de bonnes habitudes ensemble et faites le bonheur de Minzi, le chat." },
+    "vault": { "title": "Documents et photos", "summary": "Tes papiers et tes photos sur ton téléphone, rangés en dossiers et en albums." },
+    "anywhere": { "title": "Widgets, web et écran mural", "summary": "daili sur ton écran d’accueil, dans le navigateur et sur un écran mural." },
+    "notifications": { "title": "Notifications", "summary": "Choisis ce que daili te signale, et quand." },
+    "account": { "title": "Paramètres et compte", "summary": "Ton profil, tes paramètres et ton compte." }
+  }
+}
