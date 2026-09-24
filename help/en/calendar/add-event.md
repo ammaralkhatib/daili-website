@@ -8,12 +8,15 @@ routes: /calendar/new
 tryIt: /calendar/new
 since: 1.3.0
 updated: 2026-09-24
+media: calendar-add-event
 order: 2
 related: calendar-repeating, calendar-reminders, calendar-private
 checklist: 2
 checklistDoneIf: hasEvent
 ---
 Everyone in your family sees a new event straight away.
+
+![The calendar in Month view. The + button at the bottom right is circled.](calendar-add-event)
 
 1. Open **Calendar** and tap the round **+** button at the bottom right.
 2. Type a **Title**.

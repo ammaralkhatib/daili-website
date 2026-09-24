@@ -8,10 +8,13 @@ routes: /calendar/search
 tryIt: /calendar/search
 since: 1.0.0
 updated: 2026-09-24
+media: calendar-search
 order: 8
 related: calendar-views, calendar-edit-delete
 ---
 Can't remember when the dentist is? Search for it.
+
+![The calendar in Month view. The Search button in the bottom bar is circled.](calendar-search)
 
 1. In **Calendar**, tap **Search** in the bar at the bottom.
 2. Type a word from the event's name or location.

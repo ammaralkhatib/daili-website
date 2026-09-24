@@ -8,10 +8,13 @@ routes: /calendar/edit
 tryIt: /calendar
 since: 1.4.0
 updated: 2026-09-24
+media: calendar-edit-delete
 order: 6
 related: calendar-repeating, calendar-private, family-activity
 ---
 Plans change. Here's how to change the calendar with them.
+
+![An event opened from the calendar. The Edit event button is circled, with the delete button next to it.](calendar-edit-delete)
 
 1. In **Calendar**, tap the event.
 2. Tap **Edit event**, make your changes and tap **Save**.

@@ -8,10 +8,13 @@ routes: /calendar
 tryIt: /calendar
 since: 1.0.0
 updated: 2026-09-24
+media: calendar-views
 order: 1
 related: calendar-add-event, calendar-search, calendar-categories
 ---
 The calendar can show your family's plans in five ways.
+
+![The calendar in Month view. The View button in the bottom bar is circled.](calendar-views)
 
 1. On Home, tap **Calendar**.
 2. Tap **View** in the bar at the bottom.

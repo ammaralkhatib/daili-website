@@ -8,10 +8,13 @@ routes: /calendar/new, /calendar/settings
 tryIt: /calendar/settings
 since: 1.0.0
 updated: 2026-09-24
+media: calendar-reminders
 order: 4
 related: calendar-add-event, calendar-private
 ---
 A reminder is a notification before the event starts. An event can have up to 5.
+
+![The Reminder section of the event form with two reminders. The Add reminder button is circled.](calendar-reminders)
 
 1. In a new event, tap **Add reminder** under **Reminder**.
 2. Tick one or more times, like 15 minutes or 1 day before. For another time, tap **Custom…**.

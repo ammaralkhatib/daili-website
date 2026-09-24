@@ -8,6 +8,7 @@ routes: /family
 tryIt: /family
 since: 1.0.0
 updated: 2026-09-24
+media: family-children
 related: family-roles, family-invite
 tipTitle: Add your kids, even without a phone
 tipBody: Add a child to your family, then give them to-dos. No login needed.
@@ -15,6 +16,8 @@ tipSkipIf: hasManagedMember
 tipPriority: 60
 ---
 Young kids don't need their own account. You add them, and they show up under **Children**.
+
+![The Children section on the Family screen with two children. The Add child row is circled.](family-children)
 
 1. On Home, tap **Family**.
 2. Under **Children**, tap **Add child**.

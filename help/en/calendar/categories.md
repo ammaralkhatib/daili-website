@@ -8,10 +8,13 @@ routes: /family/event-categories
 tryIt: /family/event-categories
 since: 1.3.0
 updated: 2026-09-24
+media: calendar-categories
 order: 7
 related: calendar-add-event, calendar-views
 ---
 An event's colour comes from its category. So "Sport" looks the same everywhere. Every family starts with six: Family, Work, School, Sport, Health and Free time.
+
+![The Event categories screen with six categories. The Add category row is circled.](calendar-categories)
 
 1. On Home, tap **Family**.
 2. Under **Calendar**, tap **Event categories**.

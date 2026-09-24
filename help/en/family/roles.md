@@ -8,9 +8,12 @@ routes: /family
 tryIt: /family
 since: 1.4.0
 updated: 2026-09-24
+media: family-roles
 related: family-children, family-invite
 ---
 Everyone in the family shares the same calendar and lists, and anyone can edit or delete shared events and list items. Roles only decide who runs the family.
+
+![The Members list on the Family screen with Owner and Admin labels. The Admin label and the ⋮ button next to Marco are circled.](family-roles)
 
 The **Owner** created the family. There is only one. Only the owner can change roles and hand the family to someone else.
 

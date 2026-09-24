@@ -8,9 +8,12 @@ routes: /activities
 tryIt: /activities
 since: 1.1.0
 updated: 2026-09-24
+media: family-activity
 related: family-roles, calendar-edit-delete
 ---
 Anyone can change a shared event or list. The activity list shows who did it.
+
+![The top of Home. The bell button at the top right is circled.](family-activity)
 
 1. On Home, tap the bell at the top right. A number on it means there's something new.
 2. Scroll the list. Changes are grouped under **Today**, **Yesterday** and older dates.

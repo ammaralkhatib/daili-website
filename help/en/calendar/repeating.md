@@ -8,10 +8,13 @@ routes: /calendar/new
 tryIt: /calendar/new
 since: 1.0.0
 updated: 2026-09-24
+media: calendar-repeating
 order: 3
 related: calendar-add-event, calendar-edit-delete
 ---
 Swimming every Tuesday? Add it once and let it repeat.
+
+![The new event form. The Repeats row is circled.](calendar-repeating)
 
 1. In a new event, tap **Repeats**.
 2. Pick **Daily**, **Weekly**, **Monthly** or **Yearly**.

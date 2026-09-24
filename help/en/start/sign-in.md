@@ -7,10 +7,13 @@ keywords: sign in, log in, login, sign up, register, account, google, apple, ema
 routes: /welcome, /login, /register, /forgot-password
 since: 1.0.0
 updated: 2026-09-24
+media: start-sign-in
 order: 2
 related: start-create-family, start-join
 ---
 You need an account to use daili. It takes a minute.
+
+![The Sign in screen. The Continue with Google button is circled.](start-sign-in)
 
 1. Open daili and tap **Get started**.
 2. Tap **Continue with Google** or **Continue with Apple**. Or type your email and password, then tap **Sign in**.

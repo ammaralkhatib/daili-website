@@ -8,10 +8,13 @@ routes: /calendar/new
 tryIt: /calendar/new
 since: 1.0.0
 updated: 2026-09-24
+media: calendar-private
 order: 5
 related: calendar-add-event, calendar-edit-delete
 ---
 Planning a surprise, or a doctor's visit that's nobody's business? Make the event private.
+
+![The event form. The Private event switch is circled.](calendar-private)
 
 1. In a new event, switch on **Private event**. It says **Only you can see this**.
 2. Fill in the rest and tap **Save**.
