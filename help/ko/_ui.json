@@ -1,0 +1,41 @@
+{
+  "metaTitle": "도움말 — daili",
+  "metaDescription": "daili의 모든 것을 담은 짧은 안내: 캘린더, 목록, 식단, 생일, 가족, 계정.",
+  "pageTitle": "{title} — daili 도움말",
+  "heroTitle": "무엇을 도와드릴까요?",
+  "heroLede": "daili의 모든 것을 담은 짧은 안내예요.",
+  "minziAlt": "고양이 Minzi",
+  "searchLabel": "도움말 검색",
+  "searchPlaceholder": "‘초대’나 ‘캘린더’로 검색해 보세요",
+  "results": "검색 결과",
+  "noResult": "아직 맞는 안내가 없어요. 다른 단어로 찾아보거나 {email}로 메일을 보내 주세요.",
+  "newInVersion": "버전 {version}의 새 기능",
+  "browseByTopic": "주제별로 보기",
+  "articleCount": {
+    "other": "글 {n}개"
+  },
+  "stillStuck": "아직 해결되지 않았나요?",
+  "writeToUs": "메일을 보내 주세요",
+  "stuckBody": "{writeToUs}. 실제 사람이 보통 하루이틀 안에 답해 드려요.",
+  "crumbHelp": "도움말",
+  "note": "참고:",
+  "related": "관련 글",
+  "helpfulQuestion": "도움이 되었나요?",
+  "helpfulYes": "네, 도움이 됐어요",
+  "helpfulNo": "아니요, 도움이 안 됐어요",
+  "thanks": "고마워요!",
+  "updated": "업데이트",
+  "topics": {
+    "start": { "title": "시작하기", "summary": "daili를 처음 쓰는 몇 분: 홈 화면과 기본 사용법." },
+    "family": { "title": "가족과 그룹", "summary": "가족을 초대하고, 휴대폰 없는 아이를 추가하고, 그룹을 전환해요." },
+    "calendar": { "title": "캘린더", "summary": "일정, 알림, 반복, 그리고 이미 쓰고 있는 캘린더." },
+    "lists": { "title": "목록과 할 일", "summary": "모두가 체크하는 장보기 목록과 담당자가 정해진 할 일." },
+    "meals": { "title": "식단과 레시피", "summary": "한 주 식단을 짜고 가족 레시피를 한곳에 모아요." },
+    "birthdays": { "title": "생일", "summary": "생일과 기념일, 그리고 미리 받는 알림." },
+    "habits": { "title": "습관과 Minzi", "summary": "가족이 함께 습관을 만들고 고양이 Minzi를 행복하게 해 주세요." },
+    "vault": { "title": "문서와 사진", "summary": "서류와 사진을 휴대폰에 두고 폴더와 앨범으로 정리해요." },
+    "anywhere": { "title": "위젯, 웹, 벽걸이 화면", "summary": "홈 화면, 브라우저, 벽걸이 화면에서도 daili를 써요." },
+    "notifications": { "title": "알림", "summary": "daili가 무엇을, 언제 알려 줄지 골라요." },
+    "account": { "title": "설정과 계정", "summary": "프로필, 설정, 그리고 계정." }
+  }
+}
