@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Yardım — daili",
+  "metaDescription": "daili'deki her şey için kısa rehberler: takvim, listeler, yemekler, doğum günleri, ailen ve hesabın.",
+  "pageTitle": "{title} — daili Yardım",
+  "heroTitle": "Sana nasıl yardımcı olabiliriz?",
+  "heroLede": "daili'deki her şey için kısa rehberler.",
+  "minziAlt": "Kedi Minzi",
+  "searchLabel": "Yardımda ara",
+  "searchPlaceholder": "“davet” ya da “takvim” yazmayı dene",
+  "results": "Sonuçlar",
+  "noResult": "Buna uyan bir rehber henüz yok. Başka bir kelime dene ya da bize {email} adresinden yaz.",
+  "newInVersion": "{version} sürümünde yeni",
+  "browseByTopic": "Konulara göz at",
+  "articleCount": {
+    "one": "{n} makale",
+    "other": "{n} makale"
+  },
+  "stillStuck": "Hâlâ takıldın mı?",
+  "writeToUs": "Bize yaz",
+  "stuckBody": "{writeToUs}, gerçek bir insan genellikle bir iki gün içinde yanıt verir.",
+  "crumbHelp": "Yardım",
+  "note": "Not:",
+  "related": "İlgili",
+  "helpfulQuestion": "Bu yardımcı oldu mu?",
+  "helpfulYes": "Evet, yardımcı oldu",
+  "helpfulNo": "Hayır, yardımcı olmadı",
+  "thanks": "Teşekkürler!",
+  "updated": "Güncellendi",
+  "topics": {
+    "start": { "title": "Başlarken", "summary": "daili'deki ilk dakikaların: ana ekran ve temel bilgiler." },
+    "family": { "title": "Aile ve gruplar", "summary": "İnsanları davet et, telefonu olmayan çocukları ekle ve gruplar arasında geçiş yap." },
+    "calendar": { "title": "Takvim", "summary": "Etkinlikler, hatırlatıcılar, tekrarlar ve zaten kullandığın takvimler." },
+    "lists": { "title": "Listeler ve görevler", "summary": "Herkesin işaretleyebildiği alışveriş listeleri ve üzerinde isim olan görevler." },
+    "meals": { "title": "Yemekler ve tarifler", "summary": "Haftanın yemeklerini planla ve ailenin tariflerini tek yerde tut." },
+    "birthdays": { "title": "Doğum günleri", "summary": "Doğum günleri ve özel günler, her birinden önce bir hatırlatıcıyla." },
+    "habits": { "title": "Alışkanlıklar ve Minzi", "summary": "Birlikte alışkanlık edinin ve kedi Minzi'yi mutlu edin." },
+    "vault": { "title": "Belgeler ve fotoğraflar", "summary": "Evrakları ve fotoğrafları telefonunda, klasör ve albümlere ayrılmış olarak tut." },
+    "anywhere": { "title": "Widget'lar, web ve duvar", "summary": "daili ana ekranında, tarayıcıda ve duvardaki bir ekranda." },
+    "notifications": { "title": "Bildirimler", "summary": "daili'nin sana neyi ve ne zaman bildireceğini seç." },
+    "account": { "title": "Ayarlar ve hesap", "summary": "Profilin, ayarların ve hesabın." }
+  }
+}
