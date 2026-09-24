@@ -45,5 +45,19 @@
   "habits-streaks": { "file": "habits-streaks.webp", "w": 720, "h": 1564, "kind": "image" },
   "habits-minzi": { "file": "habits-minzi.webp", "w": 720, "h": 1564, "kind": "image" },
   "habits-private": { "file": "habits-private.webp", "w": 720, "h": 1564, "kind": "image" },
-  "habits-reminders": { "file": "habits-reminders.webp", "w": 720, "h": 1564, "kind": "image" }
+  "habits-reminders": { "file": "habits-reminders.webp", "w": 720, "h": 1564, "kind": "image" },
+  "vault-where": { "file": "vault-where.webp", "w": 720, "h": 1564, "kind": "image" },
+  "vault-documents": { "file": "vault-documents.webp", "w": 720, "h": 1564, "kind": "image" },
+  "vault-photos": { "file": "vault-photos.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notifications-turn-on": { "file": "notifications-turn-on.webp", "w": 720, "h": 673, "kind": "image" },
+  "notifications-choose": { "file": "notifications-choose.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-profile": { "file": "account-profile.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-preferences": { "file": "account-preferences.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-password": { "file": "account-password.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-verify-email": { "file": "account-verify-email.webp", "w": 720, "h": 1018, "kind": "image" },
+  "account-download-data": { "file": "account-download-data.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-delete": { "file": "account-delete.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-feedback": { "file": "account-feedback.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notifications-help": { "file": "notifications-help.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-newsletter": { "file": "account-newsletter.webp", "w": 720, "h": 1564, "kind": "image" }
 }
