@@ -1,0 +1,41 @@
+{
+  "metaTitle": "說明 — daili",
+  "metaDescription": "daili 各項功能的簡短指南：行事曆、清單、用餐、生日、家庭和帳號。",
+  "pageTitle": "{title} — daili 說明",
+  "heroTitle": "需要什麼幫忙？",
+  "heroLede": "daili 各項功能的簡短指南。",
+  "minziAlt": "小貓 Minzi",
+  "searchLabel": "搜尋說明",
+  "searchPlaceholder": "試試「邀請」或「行事曆」",
+  "results": "搜尋結果",
+  "noResult": "還沒有符合的指南。換個詞試試，或寫信到 {email} 給我們。",
+  "newInVersion": "{version} 版新功能",
+  "browseByTopic": "依主題瀏覽",
+  "articleCount": {
+    "other": "{n} 篇文章"
+  },
+  "stillStuck": "還是沒解決？",
+  "writeToUs": "寫信給我們",
+  "stuckBody": "{writeToUs}，會有真人回覆你，通常在一兩天內。",
+  "crumbHelp": "說明",
+  "note": "注意：",
+  "related": "相關文章",
+  "helpfulQuestion": "這篇文章有幫助嗎？",
+  "helpfulYes": "有幫助",
+  "helpfulNo": "沒幫助",
+  "thanks": "謝謝！",
+  "updated": "更新於",
+  "topics": {
+    "start": { "title": "開始使用", "summary": "剛開始用 daili 的幾分鐘：首頁和基本操作。" },
+    "family": { "title": "家庭和群組", "summary": "邀請家人、新增沒有手機的孩子，並在群組之間切換。" },
+    "calendar": { "title": "行事曆", "summary": "行程、提醒、重複，以及你已經在用的行事曆。" },
+    "lists": { "title": "清單和待辦", "summary": "全家都能勾選的購物清單，還有寫上負責人的待辦。" },
+    "meals": { "title": "用餐和食譜", "summary": "安排一週的菜色，把家裡的食譜放在同一個地方。" },
+    "birthdays": { "title": "生日", "summary": "生日和紀念日，每一個都會提前提醒你。" },
+    "habits": { "title": "習慣和 Minzi", "summary": "全家一起養成習慣，讓小貓 Minzi 開開心心。" },
+    "vault": { "title": "文件和相片", "summary": "把文件和相片存在手機上，分好資料夾和相簿。" },
+    "anywhere": { "title": "小工具、網頁版和掛牆螢幕", "summary": "在手機主畫面、瀏覽器和掛牆螢幕上使用 daili。" },
+    "notifications": { "title": "通知", "summary": "選擇 daili 要通知你什麼，以及什麼時候通知。" },
+    "account": { "title": "設定和帳號", "summary": "你的個人資料、設定和帳號。" }
+  }
+}
