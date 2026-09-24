@@ -1,0 +1,41 @@
+{
+  "metaTitle": "ヘルプ — daili",
+  "metaDescription": "dailiのすべてがわかる短いガイド：カレンダー、リスト、献立、誕生日、家族、アカウント。",
+  "pageTitle": "{title} — daili ヘルプ",
+  "heroTitle": "どんなことでお困りですか？",
+  "heroLede": "dailiのすべてがわかる短いガイドです。",
+  "minziAlt": "ねこのMinzi",
+  "searchLabel": "ヘルプを検索",
+  "searchPlaceholder": "「招待」や「カレンダー」で検索",
+  "results": "検索結果",
+  "noResult": "まだ合うガイドがありません。別の言葉で探すか、{email} までメールしてください。",
+  "newInVersion": "バージョン {version} の新機能",
+  "browseByTopic": "トピックから探す",
+  "articleCount": {
+    "other": "{n} 件の記事"
+  },
+  "stillStuck": "解決しませんか？",
+  "writeToUs": "メールする",
+  "stuckBody": "{writeToUs}と、スタッフが直接お返事します。たいてい1〜2日以内です。",
+  "crumbHelp": "ヘルプ",
+  "note": "メモ：",
+  "related": "関連記事",
+  "helpfulQuestion": "この記事は役に立ちましたか？",
+  "helpfulYes": "はい、役に立った",
+  "helpfulNo": "いいえ、役に立たなかった",
+  "thanks": "ありがとうございます！",
+  "updated": "更新日",
+  "topics": {
+    "start": { "title": "はじめに", "summary": "dailiを使いはじめる最初の数分：ホーム画面と基本の使いかた。" },
+    "family": { "title": "家族とグループ", "summary": "家族を招待したり、スマホのない子どもを追加したり、グループを切り替えたりできます。" },
+    "calendar": { "title": "カレンダー", "summary": "予定、リマインダー、繰り返し、そしていつも使っているカレンダー。" },
+    "lists": { "title": "リストとやること", "summary": "みんなでチェックできる買い物リストと、担当者つきのやること。" },
+    "meals": { "title": "献立とレシピ", "summary": "1週間の献立を立てて、家族のレシピを1か所にまとめます。" },
+    "birthdays": { "title": "誕生日", "summary": "誕生日やお祝いの日を、前もってリマインダーでお知らせします。" },
+    "habits": { "title": "習慣とMinzi", "summary": "家族で習慣をつくって、ねこのMinziを元気にしましょう。" },
+    "vault": { "title": "書類と写真", "summary": "書類や写真をスマホに保存して、フォルダやアルバムに整理します。" },
+    "anywhere": { "title": "ウィジェット・Web・壁掛け", "summary": "ホーム画面、ブラウザ、壁掛けの画面でもdailiを使えます。" },
+    "notifications": { "title": "通知", "summary": "dailiが何を、いつお知らせするかを選べます。" },
+    "account": { "title": "設定とアカウント", "summary": "プロフィール、設定、アカウントについて。" }
+  }
+}
