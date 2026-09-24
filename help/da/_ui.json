@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Hjælp — daili",
+  "metaDescription": "Korte vejledninger til alt i daili: kalenderen, lister, mad, fødselsdage, din familie og din konto.",
+  "pageTitle": "{title} — daili Hjælp",
+  "heroTitle": "Hvordan kan vi hjælpe?",
+  "heroLede": "Korte vejledninger til alt i daili.",
+  "minziAlt": "Katten Minzi",
+  "searchLabel": "Søg i hjælpen",
+  "searchPlaceholder": "Prøv „inviter“ eller „kalender“",
+  "results": "Resultater",
+  "noResult": "Der er ingen vejledning om det endnu. Prøv et andet ord, eller skriv til os på {email}.",
+  "newInVersion": "Nyt i version {version}",
+  "browseByTopic": "Se efter emne",
+  "articleCount": {
+    "one": "{n} artikel",
+    "other": "{n} artikler"
+  },
+  "stillStuck": "Sidder du stadig fast?",
+  "writeToUs": "Skriv til os",
+  "stuckBody": "{writeToUs}, så svarer et rigtigt menneske, som regel inden for en dag eller to.",
+  "crumbHelp": "Hjælp",
+  "note": "Bemærk:",
+  "related": "Relateret",
+  "helpfulQuestion": "Var det en hjælp?",
+  "helpfulYes": "Ja, det hjalp",
+  "helpfulNo": "Nej, det hjalp ikke",
+  "thanks": "Tak!",
+  "updated": "Opdateret",
+  "topics": {
+    "start": { "title": "Kom i gang", "summary": "Dine første minutter i daili: startskærmen og det grundlæggende." },
+    "family": { "title": "Familie & grupper", "summary": "Inviter folk, tilføj børn uden telefon, og skift mellem grupper." },
+    "calendar": { "title": "Kalender", "summary": "Begivenheder, påmindelser, gentagelser og de kalendere, du allerede bruger." },
+    "lists": { "title": "Lister & opgaver", "summary": "Indkøbslister, alle kan sætte flueben i, og opgaver med et navn på." },
+    "meals": { "title": "Mad & opskrifter", "summary": "Planlæg ugens mad, og saml familiens opskrifter ét sted." },
+    "birthdays": { "title": "Fødselsdage", "summary": "Fødselsdage og mærkedage, med en påmindelse før hver af dem." },
+    "habits": { "title": "Vaner & Minzi", "summary": "Byg vaner op sammen, og hold katten Minzi glad." },
+    "vault": { "title": "Dokumenter & billeder", "summary": "Gem papirer og billeder på din telefon, sorteret i mapper og album." },
+    "anywhere": { "title": "Widgets, web & væg", "summary": "daili på din hjemmeskærm, i browseren og på en skærm på væggen." },
+    "notifications": { "title": "Notifikationer", "summary": "Vælg, hvad daili fortæller dig om, og hvornår." },
+    "account": { "title": "Indstillinger & konto", "summary": "Din profil, dine indstillinger og din konto." }
+  }
+}
