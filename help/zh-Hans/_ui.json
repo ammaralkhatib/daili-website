@@ -1,0 +1,41 @@
+{
+  "metaTitle": "帮助 — daili",
+  "metaDescription": "daili 各项功能的简短指南：日历、清单、用餐、生日、家庭和账户。",
+  "pageTitle": "{title} — daili 帮助",
+  "heroTitle": "需要什么帮助？",
+  "heroLede": "daili 各项功能的简短指南。",
+  "minziAlt": "小猫 Minzi",
+  "searchLabel": "搜索帮助",
+  "searchPlaceholder": "试试“邀请”或“日历”",
+  "results": "搜索结果",
+  "noResult": "还没有相关的指南。换个词试试，或者写信到 {email}。",
+  "newInVersion": "{version} 版新功能",
+  "browseByTopic": "按主题浏览",
+  "articleCount": {
+    "other": "{n} 篇文章"
+  },
+  "stillStuck": "还是没解决？",
+  "writeToUs": "写信给我们",
+  "stuckBody": "{writeToUs}，会有真人回复你，通常在一两天内。",
+  "crumbHelp": "帮助",
+  "note": "注意：",
+  "related": "相关文章",
+  "helpfulQuestion": "这篇文章有帮助吗？",
+  "helpfulYes": "有帮助",
+  "helpfulNo": "没帮助",
+  "thanks": "谢谢！",
+  "updated": "更新于",
+  "topics": {
+    "start": { "title": "入门", "summary": "刚开始用 daili 的几分钟：主页和基本操作。" },
+    "family": { "title": "家庭和群组", "summary": "邀请家人，添加没有手机的孩子，在群组之间切换。" },
+    "calendar": { "title": "日历", "summary": "日程、提醒、重复，以及你已经在用的日历。" },
+    "lists": { "title": "清单和待办", "summary": "全家都能勾选的购物清单，以及写上负责人的待办。" },
+    "meals": { "title": "用餐和食谱", "summary": "安排一周的饭菜，把家里的食谱放在一个地方。" },
+    "birthdays": { "title": "生日", "summary": "生日和纪念日，每个都会提前提醒。" },
+    "habits": { "title": "习惯和 Minzi", "summary": "全家一起养成习惯，让小猫 Minzi 开开心心。" },
+    "vault": { "title": "文件和照片", "summary": "把证件和照片存在手机上，分好文件夹和相册。" },
+    "anywhere": { "title": "小组件、网页版和挂墙屏幕", "summary": "在手机桌面、浏览器和挂墙屏幕上使用 daili。" },
+    "notifications": { "title": "通知", "summary": "选择 daili 通知你什么，以及什么时候通知。" },
+    "account": { "title": "设置和账户", "summary": "你的个人资料、设置和账户。" }
+  }
+}
