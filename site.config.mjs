@@ -1004,7 +1004,7 @@ export const HELP_TOPICS = {
  * checked, just not built. Only the app's languages get a help center — ru, hi
  * and ar are website-only and keep linking to the English one.
  */
-export const HELP_LOCALES = ['en', 'de', 'nl', 'sv', 'da', 'nb', 'fi', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'sk', 'ro', 'tr', 'el', 'uk', 'bg', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
+export const HELP_LOCALES = ['en', 'de', 'nl', 'sv', 'da', 'nb', 'fi', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'sk', 'ro', 'tr', 'el', 'uk', 'bg', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th'];
 
 /**
  * The seven feature chapters of the scroll story, in story order.
