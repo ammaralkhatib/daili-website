@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Ohjeet — daili",
+  "metaDescription": "Lyhyet ohjeet kaikkeen dailissa: kalenteri, listat, ateriat, syntymäpäivät, perheesi ja tilisi.",
+  "pageTitle": "{title} — dailin ohjeet",
+  "heroTitle": "Miten voimme auttaa?",
+  "heroLede": "Lyhyet ohjeet kaikkeen dailissa.",
+  "minziAlt": "Minzi-kissa",
+  "searchLabel": "Hae ohjeista",
+  "searchPlaceholder": "Kokeile ”kutsu” tai ”kalenteri”",
+  "results": "Tulokset",
+  "noResult": "Tähän ei ole vielä ohjetta. Kokeile toista sanaa tai kirjoita meille osoitteeseen {email}.",
+  "newInVersion": "Uutta versiossa {version}",
+  "browseByTopic": "Selaa aiheittain",
+  "articleCount": {
+    "one": "{n} artikkeli",
+    "other": "{n} artikkelia"
+  },
+  "stillStuck": "Vieläkin jumissa?",
+  "writeToUs": "Kirjoita meille",
+  "stuckBody": "{writeToUs}, niin oikea ihminen vastaa, yleensä päivän tai kahden sisällä.",
+  "crumbHelp": "Ohjeet",
+  "note": "Huomaa:",
+  "related": "Aiheeseen liittyvät",
+  "helpfulQuestion": "Oliko tästä apua?",
+  "helpfulYes": "Kyllä, oli apua",
+  "helpfulNo": "Ei, ei ollut apua",
+  "thanks": "Kiitos!",
+  "updated": "Päivitetty",
+  "topics": {
+    "start": { "title": "Aloittaminen", "summary": "Ensimmäiset minuuttisi dailissa: aloitusnäyttö ja perusasiat." },
+    "family": { "title": "Perhe ja ryhmät", "summary": "Kutsu ihmisiä, lisää lapset ilman puhelinta ja vaihda ryhmästä toiseen." },
+    "calendar": { "title": "Kalenteri", "summary": "Tapahtumat, muistutukset, toistot ja kalenterit, joita jo käytät." },
+    "lists": { "title": "Listat ja tehtävät", "summary": "Ostoslistat, joista kaikki voivat merkitä ostetut, ja tehtävät, joissa on nimi." },
+    "meals": { "title": "Ateriat ja reseptit", "summary": "Suunnittele viikon ateriat ja pidä perheen reseptit yhdessä paikassa." },
+    "birthdays": { "title": "Syntymäpäivät", "summary": "Syntymäpäivät ja juhlat, ja muistutus ennen jokaista." },
+    "habits": { "title": "Tavat ja Minzi", "summary": "Rakentakaa tapoja yhdessä ja pitäkää Minzi-kissa tyytyväisenä." },
+    "vault": { "title": "Asiakirjat ja kuvat", "summary": "Paperit ja kuvat puhelimellasi, järjestettynä kansioihin ja albumeihin." },
+    "anywhere": { "title": "Widgetit, verkko ja seinä", "summary": "daili puhelimen kotinäytöllä, selaimessa ja seinänäytöllä." },
+    "notifications": { "title": "Ilmoitukset", "summary": "Valitse, mistä daili kertoo sinulle ja milloin." },
+    "account": { "title": "Asetukset ja tili", "summary": "Profiilisi, asetuksesi ja tilisi." }
+  }
+}
