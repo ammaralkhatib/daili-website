@@ -14,7 +14,7 @@
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { HELP_TOPICS, HELP_ICONS } from '../site.config.mjs';
+import { HELP_TOPICS, HELP_ICONS, HELP_LOCALES, LOCALES } from '../site.config.mjs';
 import { checkHelp, readAppRoutes } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -35,9 +35,12 @@ if (process.env.HELP_SKIP_ROUTE_CHECK === '1') {
   }
 }
 
-const { errors, warnings, help } = checkHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS, appRoutes });
+const { errors, warnings, notes, help, all } = checkHelp({
+  root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS, appRoutes, helpLocales: HELP_LOCALES, locales: LOCALES,
+});
 
 for (const w of warnings) console.warn(`WARN  ${w}`);
+for (const n of notes) console.log(n);
 if (errors.length) {
   console.error(`\n${errors.length} help error(s):`);
   console.error(errors.join('\n'));
@@ -49,4 +52,4 @@ if (pending.length) {
   console.log(`help: ${pending.length} article(s) waiting for a picture:`);
   for (const a of pending) console.log(`  ${a.id} — ${a.mediaPending}`);
 }
-console.log(`help OK · ${help.articles.length} article(s)${appRoutes ? ` · ${appRoutes.size} app routes checked` : ' · route checks SKIPPED'}`);
+console.log(`help OK · ${help.articles.length} article(s) · locale(s) ${all.built.map((h) => h.locale).join(', ')}${appRoutes ? ` · ${appRoutes.size} app routes checked` : ' · route checks SKIPPED'}`);

@@ -18,16 +18,16 @@ import {
   PAGES, FEATURES, COMPARE_ROWS, COMPARE_MARKS, imageSize,
   SHOT_LOCALE, STORY_CARDS, STORY_ICONS, WEB_APP_URL,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
-  HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS,
+  HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
 } from './site.config.mjs';
-import { loadHelp, visibleHelp } from './tools/help-lib.mjs';
+import { loadAllHelp, visibleHelp, mediaFor } from './tools/help-lib.mjs';
 
 /** Where the help pages send their anonymous counts (api commit a19d079).
  *  static/.htaccess allows exactly this origin in connect-src. */
 const HELP_EVENTS_URL = 'https://api.daili.app/v1/help/events';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
-const DIST = path.join(ROOT, 'dist');
+let DIST = path.join(ROOT, 'dist'); // a help test build moves it (see HELP_TEST_ROOT)
 const p = (...s) => path.join(ROOT, ...s);
 
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
@@ -176,48 +176,90 @@ const blogIndexPage = {
 };
 
 /**
- * The help center: help/en/<topic>/<slug>.md, parsed by tools/help-lib.mjs.
+ * The help center: help/<locale>/<topic>/<slug>.md, parsed by
+ * tools/help-lib.mjs. English is the source; a translation is its text only.
  * tools/check-help.mjs has already run by the time this does, so an error here
  * means someone ran build.mjs on its own — it still refuses to render a broken
  * article rather than half of one.
  *
- * Pages follow the blog's rules (English only, `cluster: null`, no hreflang)
- * and add one of their own: while HELP_PUBLIC is false every help page is
- * noindex, which also keeps it out of the sitemap. They show only what the
- * live app has (`since` <= LIVE_APP_VERSION); help/en.json carries everything.
+ * Every HELP_LOCALES locale gets the same pages under dirFor(loc) + 'help/'
+ * (English at /help/), in that locale's layout. With more than one of them the
+ * pages form their own hreflang cluster ('help'), x-default English; with
+ * English alone there is no cluster and no hreflang, as before. While
+ * HELP_PUBLIC is false every help page is noindex, which also keeps it out of
+ * the sitemap. Pages show only what the live app has (`since` <=
+ * LIVE_APP_VERSION); help/<locale>.json carries everything.
+ *
+ * HELP_TEST_ROOT / HELP_TEST_LOCALES / HELP_TEST_DIST exist for
+ * tools/test-check-help.mjs alone: they build a fixture's help (and the rest of
+ * the site) into a scratch folder, to prove a translated locale renders. Such a
+ * build never passes check-build, and says so loudly.
  */
-const help = loadHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS });
-if (help.errors.length) {
-  throw new Error(`help/ has ${help.errors.length} error(s) — run node tools/check-help.mjs:\n${help.errors.join('\n')}`);
+const HELP_TEST = Boolean(process.env.HELP_TEST_ROOT);
+if (HELP_TEST && !(process.env.HELP_TEST_LOCALES && process.env.HELP_TEST_DIST)) {
+  throw new Error('HELP_TEST_ROOT needs HELP_TEST_LOCALES and HELP_TEST_DIST too');
 }
-const helpShown = visibleHelp(help, LIVE_APP_VERSION);
-const helpArticleUrl = (a) => `/help/${a.topic}/${a.slug}/`;
+if (HELP_TEST) console.warn(`!! HELP_TEST_ROOT=${process.env.HELP_TEST_ROOT} — a help test build into ${process.env.HELP_TEST_DIST}, never deploy it`);
+const HELP_ROOT = HELP_TEST ? path.resolve(process.env.HELP_TEST_ROOT) : ROOT;
+const helpLocales = HELP_TEST ? process.env.HELP_TEST_LOCALES.split(',') : HELP_LOCALES;
+if (HELP_TEST) DIST = path.resolve(process.env.HELP_TEST_DIST);
 
-const helpBase = { locales: ['en'], cluster: null, noindex: !HELP_PUBLIC, priority: () => '0.5' };
+const helpAll = loadAllHelp({ root: HELP_ROOT, topics: HELP_TOPICS, icons: HELP_ICONS, helpLocales, locales: LOCALES });
+if (helpAll.errors.length) {
+  throw new Error(`help/ has ${helpAll.errors.length} error(s) — run node tools/check-help.mjs:\n${helpAll.errors.join('\n')}`);
+}
+const help = helpAll.en;
+/** locale → its help (loadHelp/loadTranslation shape), for every built locale. */
+const helpByLocale = Object.fromEntries(helpAll.built.map((h) => [h.locale, h]));
+/** locale → what its pages show. Every built locale has every article, so the
+ *  set is the same everywhere; only the words differ. */
+const helpShownByLocale = Object.fromEntries(helpAll.built.map((h) => [h.locale, visibleHelp(h, LIVE_APP_VERSION)]));
+const helpShown = helpShownByLocale.en;
+/** '/help/' for English, '/de/help/', '/zh-hant/help/', … */
+const helpHome = (loc) => `${dirFor(loc)}help/`;
+const helpOut = (loc, rest) => `${helpHome(loc).slice(1)}${rest}`;
+const helpArticleUrl = (a, loc) => `${helpHome(loc)}${a.topic}/${a.slug}/`;
+/** A _ui.json string, escaped, with its {placeholders} filled by ready HTML. */
+const uiHtml = (s, vars = {}) => escapeHtml(s).replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m));
+const uiText = (s, vars = {}) => s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m));
+
+const helpBase = {
+  locales: helpLocales,
+  cluster: helpLocales.length > 1 ? 'help' : null,
+  noindex: !HELP_PUBLIC,
+  priority: () => '0.5',
+};
+const helpArticleIn = (id, loc) => helpByLocale[loc].articles.find((a) => a.id === id);
 const helpPages = [
   {
     ...helpBase,
     id: 'helpindex',
     template: 'helpindex.html',
-    out: () => 'help/index.html',
-    meta: { title: 'Help — daili', description: 'Short guides for everything in daili: the calendar, lists, meals, birthdays, your family and your account.' },
+    out: (loc) => helpOut(loc, 'index.html'),
+    meta: (loc) => ({ title: helpByLocale[loc].ui.metaTitle, description: helpByLocale[loc].ui.metaDescription }),
     help: { kind: 'index' },
   },
   ...helpShown.topics.map((t) => ({
     ...helpBase,
     id: `help:${t}`,
     template: 'helptopic.html',
-    out: () => `help/${t}/index.html`,
-    meta: { title: `${HELP_TOPICS[t].title} — daili Help`, description: HELP_TOPICS[t].summary },
+    out: (loc) => helpOut(loc, `${t}/index.html`),
+    meta: (loc) => {
+      const { ui } = helpByLocale[loc];
+      return { title: uiText(ui.pageTitle, { title: ui.topics[t].title }), description: ui.topics[t].summary };
+    },
     help: { kind: 'topic', topic: t },
   })),
-  ...helpShown.articles.map((a) => ({
+  ...helpShown.articles.map((en) => ({
     ...helpBase,
-    id: `help:${a.id}`,
+    id: `help:${en.id}`,
     template: 'helparticle.html',
-    out: () => `help/${a.topic}/${a.slug}/index.html`,
-    meta: { title: `${a.title} — daili Help`, description: a.summary },
-    help: { kind: 'article', article: a },
+    out: (loc) => helpOut(loc, `${en.topic}/${en.slug}/index.html`),
+    meta: (loc) => {
+      const a = helpArticleIn(en.id, loc);
+      return { title: uiText(helpByLocale[loc].ui.pageTitle, { title: a.title }), description: a.summary };
+    },
+    help: { kind: 'article', id: en.id },
   })),
 ];
 
@@ -227,7 +269,7 @@ const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages];
 
 /** "2 September 2026" — the byline's readable half. The machine-readable half
  *  is the raw ISO string in <time datetime>. */
-const formatDate = (iso) => new Intl.DateTimeFormat('en-GB', {
+const formatDate = (iso, loc = 'en') => new Intl.DateTimeFormat(loc === 'en' ? 'en-GB' : loc, {
   day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
 }).format(new Date(`${iso}T00:00:00Z`));
 
@@ -349,9 +391,12 @@ function renderFooterLinks(loc) {
     // whatever locale the footer around it is written in, and hreflang/lang say
     // so rather than leaving a reader to find out by clicking.
     `<a href="/blog/" hreflang="en" lang="en">${escapeHtml(c.nav.blog)}</a>`,
-    // The help center is English-only like the blog, and linked from nowhere
-    // until HELP_PUBLIC flips: before that its pages are a noindex preview.
-    ...(HELP_PUBLIC ? [`<a href="/help/" hreflang="en" lang="en">${escapeHtml(c.nav.help)}</a>`] : []),
+    // The help center, linked from nowhere until HELP_PUBLIC flips: before that
+    // its pages are a noindex preview. A locale with its own help links there;
+    // every other one to the English help, and says so like the blog link.
+    ...(HELP_PUBLIC ? [helpLocales.includes(loc) && loc !== DEFAULT_LOCALE
+      ? `<a href="${helpHome(loc)}">${escapeHtml(c.nav.help)}</a>`
+      : `<a href="/help/" hreflang="en" lang="en">${escapeHtml(c.nav.help)}</a>`] : []),
     // The release notes exist in English and German only. Every other locale's
     // footer points at the English page and says so, the same way the blog link
     // does. The label is a literal rather than a content key: adding one to all
@@ -644,7 +689,7 @@ const fileSha8 = (file) => crypto.createHash('sha256').update(fs.readFileSync(fi
 
 /** Site-absolute URL of a help media file, with its ?v= cache-buster. */
 function helpMediaUrl(file, locale = 'en') {
-  return `/help/media/${locale}/${file}?v=${fileSha8(p('static/help/media', locale, file))}`;
+  return `/help/media/${locale}/${file}?v=${fileSha8(path.join(HELP_ROOT, 'static/help/media', locale, file))}`;
 }
 
 /** Article text: escaped, then **bold** — the only inline markup there is. */
@@ -654,70 +699,88 @@ const helpInline = (s) => escapeHtml(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</s
 const helpPlain = (a) => a.blocks.map((b) => (b.type === 'steps' ? b.items.join(' ') : b.text || ''))
   .join(' ').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
 
-const helpRow = (a) => `      <li><a class="help-row" href="${helpArticleUrl(a)}"><span><b>${escapeHtml(a.title)}</b><small>${escapeHtml(a.summary)}</small></span>${CHEVRON}</a></li>`;
+const helpRow = (a, loc) => `      <li><a class="help-row" href="${helpArticleUrl(a, loc)}"><span><b>${escapeHtml(a.title)}</b><small>${escapeHtml(a.summary)}</small></span>${CHEVRON}</a></li>`;
+
+/** support@daili.app as a link, for the _ui.json strings that name it. */
+const SUPPORT_MAIL = '<a href="mailto:support@daili.app">support@daili.app</a>';
 
 /**
- * Everything a help page's template needs, pre-rendered. The template engine
- * has one level of loops and no conditionals inside them, and a help page is
- * nested lists all the way down — the same reason the story and the FAQ are
- * rendered here rather than in their templates.
+ * Everything a help page's template needs, pre-rendered, in the page's locale.
+ * The template engine has one level of loops and no conditionals inside them,
+ * and a help page is nested lists all the way down — the same reason the story
+ * and the FAQ are rendered here rather than in their templates. `ui` is the
+ * locale's _ui.json, for the template's plain strings.
  */
-function renderHelp(spec) {
-  const shown = helpShown.articles;
+function renderHelp(spec, loc) {
+  const h = helpByLocale[loc];
+  const { ui } = h;
+  const shownLoc = helpShownByLocale[loc];
+  const shown = shownLoc.articles;
+  const row = (a) => helpRow(a, loc);
+  const common = {
+    ui,
+    home: helpHome(loc),
+    stuckBody: uiHtml(ui.stuckBody, { writeToUs: `<a href="mailto:support@daili.app">${escapeHtml(ui.writeToUs)}</a>` }),
+  };
 
   if (spec.kind === 'index') {
     const newOnes = shown.filter((a) => a.since === LIVE_APP_VERSION);
     const newSection = newOnes.length ? `  <section class="help-new" aria-labelledby="help-new-h">
-    <h2 id="help-new-h">New in version ${escapeHtml(LIVE_APP_VERSION)}</h2>
+    <h2 id="help-new-h">${uiHtml(ui.newInVersion, { version: escapeHtml(LIVE_APP_VERSION) })}</h2>
     <ul class="help-list">
-${newOnes.map(helpRow).join('\n')}
+${newOnes.map(row).join('\n')}
     </ul>
   </section>` : '';
 
-    const cards = helpShown.topics.map((t) => {
+    const plural = new Intl.PluralRules(loc);
+    const cards = shownLoc.topics.map((t) => {
       const count = shown.filter((a) => a.topic === t).length;
-      return `      <li><a class="help-card" href="/help/${t}/">${helpIcon(HELP_TOPICS[t].icon)}<b>${escapeHtml(HELP_TOPICS[t].title)}</b><small>${count} article${count === 1 ? '' : 's'}</small></a></li>`;
+      const countLabel = uiHtml(ui.articleCount[plural.select(count)], { n: String(count) });
+      return `      <li><a class="help-card" href="${helpHome(loc)}${t}/">${helpIcon(HELP_TOPICS[t].icon)}<b>${escapeHtml(ui.topics[t].title)}</b><small>${countLabel}</small></a></li>`;
     }).join('\n');
 
     // The search index, as data. type="application/json" is never executed,
     // so the CSP (script-src 'self' + one hash) does not have to change and
     // nothing is fetched. `<` is escaped so no string in it can close the tag.
     const index = shown.map((a) => ({
-      url: helpArticleUrl(a),
+      url: helpArticleUrl(a, loc),
       title: a.title,
       summary: a.summary,
-      topic: HELP_TOPICS[a.topic].title,
+      topic: ui.topics[a.topic].title,
       keywords: a.keywords.join(' '),
       text: helpPlain(a),
     }));
     return {
+      ...common,
       newSection,
       cards,
+      noResult: uiHtml(ui.noResult, { email: SUPPORT_MAIL }),
       indexJson: JSON.stringify(index).replace(/</g, '\\u003c'),
       minziSrc: `/help/media/minzi-look-right.webp?v=${fileSha8(p('static/help/media/minzi-look-right.webp'))}`,
     };
   }
 
   if (spec.kind === 'topic') {
-    const t = HELP_TOPICS[spec.topic];
+    const t = ui.topics[spec.topic];
     return {
+      ...common,
       title: t.title,
       summary: t.summary,
-      icon: helpIcon(t.icon),
-      rows: shown.filter((a) => a.topic === spec.topic).map(helpRow).join('\n'),
+      icon: helpIcon(HELP_TOPICS[spec.topic].icon),
+      rows: shown.filter((a) => a.topic === spec.topic).map(row).join('\n'),
     };
   }
 
-  const a = spec.article;
+  const a = helpArticleIn(spec.id, loc);
   const body = a.blocks.map((b) => {
     if (b.type === 'p') return `  <p>${helpInline(b.text)}</p>`;
-    if (b.type === 'note') return `  <p class="help-note"><b>Note:</b> ${helpInline(b.text)}</p>`;
+    if (b.type === 'note') return `  <p class="help-note"><b>${escapeHtml(ui.note)}</b> ${helpInline(b.text)}</p>`;
     if (b.type === 'steps') {
       return `  <ol class="help-steps">\n${b.items.map((it) => `    <li>${helpInline(it)}</li>`).join('\n')}\n  </ol>`;
     }
-    const m = help.media[b.media];
+    const { m, locale } = mediaFor(h, b.media);
     return `  <figure class="help-fig">
-    <img src="${helpMediaUrl(m.file)}" alt="${escapeHtml(b.alt)}" width="${m.w}" height="${m.h}" decoding="async">
+    <img src="${helpMediaUrl(m.file, locale)}" alt="${escapeHtml(b.alt)}" width="${m.w}" height="${m.h}" decoding="async">
     <figcaption>${escapeHtml(b.alt)}</figcaption>
   </figure>`;
   }).join('\n');
@@ -726,50 +789,54 @@ ${newOnes.map(helpRow).join('\n')}
   // have yet has no page to link to.
   const related = a.related.map((id) => shown.find((x) => x.id === id)).filter(Boolean);
   return {
+    ...common,
     id: a.id,
-    topicHref: `/help/${a.topic}/`,
-    topicTitle: HELP_TOPICS[a.topic].title,
+    topicHref: `${helpHome(loc)}${a.topic}/`,
+    topicTitle: ui.topics[a.topic].title,
     title: a.title,
     summary: a.summary,
     body,
     related: related.length ? `  <section class="help-related" aria-labelledby="help-related-h">
-    <h2 id="help-related-h">Related</h2>
+    <h2 id="help-related-h">${escapeHtml(ui.related)}</h2>
     <ul class="help-list">
-${related.map(helpRow).join('\n')}
+${related.map(row).join('\n')}
     </ul>
   </section>` : '',
     updated: a.updated,
-    updatedLabel: formatDate(a.updated),
+    updatedLabel: formatDate(a.updated, loc),
   };
 }
 
 /**
- * help/en.json — the app's copy of the help center. Every article, whatever
- * its `since`: the app hides what is newer than itself. Image blocks become
- * absolute URLs with their size, so the app can lay a picture out before it
- * has loaded.
+ * help/<locale>.json — the app's copy of the help center, one per built
+ * locale, all in schema 1. Every article, whatever its `since`: the app hides
+ * what is newer than itself. Image blocks become absolute URLs with their size
+ * (the locale's own picture if it has one, else the English one), so the app
+ * can lay a picture out before it has loaded. Tip and checklist titles are the
+ * locale's words; everything else comes from English.
  */
-function buildHelpJson() {
-  const mediaSrc = (id) => {
-    const m = help.media[id];
-    return `${BASE_URL}${helpMediaUrl(m.file)}`;
+function buildHelpJson(h) {
+  const src = (id, key = 'file') => {
+    const { m, locale } = mediaFor(h, id);
+    return `${BASE_URL}${helpMediaUrl(m[key], locale)}`;
   };
   const block = (b) => {
     if (b.type !== 'image') return b;
-    const m = help.media[b.media];
+    const { m } = mediaFor(h, b.media);
     return m.kind === 'clip'
-      ? { type: 'clip', src: mediaSrc(b.media), poster: `${BASE_URL}${helpMediaUrl(m.poster)}`, alt: b.alt, w: m.w, h: m.h }
-      : { type: 'image', src: mediaSrc(b.media), alt: b.alt, w: m.w, h: m.h };
+      ? { type: 'clip', src: src(b.media), poster: src(b.media, 'poster'), alt: b.alt, w: m.w, h: m.h }
+      : { type: 'image', src: src(b.media), alt: b.alt, w: m.w, h: m.h };
   };
-  const arts = help.articles;
+  const arts = h.articles;
+  const mediaSrc = (id) => src(id);
   return {
     schema: 1,
-    locale: 'en',
+    locale: h.locale,
     generated: new Date().toISOString(),
     liveAppVersion: LIVE_APP_VERSION,
     topics: Object.entries(HELP_TOPICS)
       .filter(([t]) => arts.some((a) => a.topic === t))
-      .map(([id, t]) => ({ id, title: t.title, icon: t.icon, summary: t.summary, articles: arts.filter((a) => a.topic === id).map((a) => a.id) })),
+      .map(([id, t]) => ({ id, title: h.ui.topics[id].title, icon: t.icon, summary: h.ui.topics[id].summary, articles: arts.filter((a) => a.topic === id).map((a) => a.id) })),
     articles: arts.map((a) => ({
       id: a.id, topic: a.topic, title: a.title, summary: a.summary, keywords: a.keywords,
       routes: a.routes, tryIt: a.tryIt, since: a.since, updated: a.updated,
@@ -1060,7 +1127,7 @@ function build() {
         ...(pg.id === 'blogindex' ? { posts: blogList, blog: BLOG_INDEX } : {}),
         ...(pg.id === 'whats-new' ? { whatsNew: WHATS_NEW[loc] } : {}),
         // Only help pages have `help`, pre-rendered for their kind.
-        ...(pg.help ? { help: renderHelp(pg.help) } : {}),
+        ...(pg.help ? { help: renderHelp(pg.help, loc) } : {}),
         // Only blog pages have a post. Anywhere else `post` is absent, so a
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
@@ -1176,10 +1243,14 @@ ${feedItems}
 </rss>
 `);
 
-  // ---- help/en.json (the app's data file) ----------------------------------
-  // Not a page either: never in `written`, never in the sitemap.
-  const helpJson = buildHelpJson();
-  fs.writeFileSync(path.join(DIST, 'help/en.json'), JSON.stringify(helpJson));
+  // ---- help/<locale>.json (the app's data files) ---------------------------
+  // Not pages either: never in `written`, never in the sitemap.
+  const helpJsons = helpAll.built.map((h) => {
+    const j = buildHelpJson(h);
+    fs.writeFileSync(path.join(DIST, `help/${h.locale}.json`), JSON.stringify(j));
+    return j;
+  });
+  const helpJson = helpJsons[0];
 
   fs.writeFileSync(path.join(DIST, 'robots.txt'),
     `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`);
@@ -1188,7 +1259,13 @@ ${feedItems}
   console.log(`assets: ${cssName}  ${jsName}`);
   console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml`);
   console.log(`help: ${helpShown.articles.length} of ${help.articles.length} article(s) on pages (live ${LIVE_APP_VERSION}) · ${helpShown.topics.length} topic(s) · en.json ${helpJson.articles.length} articles, ${helpJson.tips.length} tips, ${helpJson.checklist.length} checklist · ${HELP_PUBLIC ? 'PUBLIC' : 'noindex preview'}`);
-  for (const w of help.warnings) console.warn(`WARN  ${w}`);
+  for (const [k, j] of helpJsons.entries()) {
+    if (!k) continue;
+    console.log(`help ${j.locale}: pages + ${j.locale}.json ${j.articles.length} articles, ${j.tips.length} tips, ${j.checklist.length} checklist`);
+    const english = helpAll.built[k].englishPictures;
+    if (english) console.log(`help ${j.locale}: ${english} picture(s) in English for now`);
+  }
+  for (const w of helpAll.warnings) console.warn(`WARN  ${w}`);
   for (const [name, st] of Object.entries(stores)) {
     if (!st.available) {
       console.log(`INFO  stores.${name}.available is false — the badge renders as a non-link "coming soon" chip and ${name === 'ios' ? 'the App Store URL' : 'the store URL'} is not written into dist/.`);

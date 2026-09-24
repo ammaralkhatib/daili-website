@@ -73,10 +73,33 @@ writes `help/en.json`, which the app downloads for its Help screen and tips.
 - `help/skip-keys.json` is the vocabulary for `tipSkipIf` / `checklistDoneIf`.
 - `help/routes-allowlist.json`: app routes with no article yet (`pending`,
   the to-do list for new articles) or never (`never`).
-- `site.config.mjs`: `HELP_TOPICS`, `HELP_ICONS`, `LIVE_APP_VERSION` (pages
-  hide articles whose `since` is newer; `en.json` keeps all) and
-  `HELP_PUBLIC` (false = every help page noindex, not in the sitemap, no
-  footer link).
+- `help/en/_ui.json` holds every word of the help pages that isn't an
+  article: headings, the search hint, "Was this helpful?", the `<title>`
+  pattern, `articleCount` (one string per plural form of the language), and
+  the 11 topic titles + summaries (`HELP_TOPICS` keeps only the icon).
+- `site.config.mjs`: `HELP_TOPICS`, `HELP_ICONS`, `HELP_LOCALES`,
+  `LIVE_APP_VERSION` (pages hide articles whose `since` is newer; the json
+  keeps all) and `HELP_PUBLIC` (false = every help page noindex, not in the
+  sitemap, no footer link).
+
+**Translations.** `help/<code>/` (the site's codes: `de`, `zh-Hans`, …) holds
+a text-only copy of each English article plus its own `_ui.json`. A
+translation's front matter may carry only `id`, `title`, `summary`,
+`keywords`, `tipTitle`/`tipBody` (exactly when English has a tip) and
+`translatedFrom` (the English `updated` it was translated from); everything
+else comes from English. Its body has the same blocks in the same order —
+paragraphs, steps (same count), notes (still written `> Note:`), images (same
+id, alt translated). Title/summary/tip limits are English × 1.4 in
+characters; the body is ≤ 210 words, or for `ja ko zh-Hans zh-Hant th` a
+character cap (`CHAR_LOCALES` in `help-lib.mjs`). An English `updated` newer
+than `translatedFrom` is a warning (`help de: N article(s) older than
+English`). A code in `HELP_LOCALES` is built — pages under `/<code>/help/`
+in an hreflang cluster with the other help locales (x-default English), the
+footer Help link, `help/<code>.json` — and must be complete; a folder not
+listed is checked but not built. Own-language pictures go in
+`static/help/media/<code>/` with sizes in `help/media.<code>.json` (a subset
+of the ids in `help/media.json`); every other picture falls back to English,
+and the build says how many (`help de: 61 picture(s) in English for now`).
 
 **Help counts.** `static/assets/help-search.js` (loaded on `/help/` and every
 article) sends two anonymous counts to `https://api.daili.app/v1/help/events`:
@@ -95,7 +118,10 @@ names a route the app no longer has, when an app route has neither an article
 nor an allowlist entry, or when an allowlist entry is stale — so renaming a
 screen in the app turns the website build red. `HELP_SKIP_ROUTE_CHECK=1`
 skips the route checks, loudly. **`test-check-help.mjs`** plants one bad case
-per rule in a throwaway fixture and fails if the guard lets any through.
+per rule in a throwaway fixture and fails if the guard lets any through; it
+also builds a tiny German fixture (`tools/fixtures/help-i18n/`) with
+`HELP_TEST_ROOT`/`HELP_TEST_LOCALES`/`HELP_TEST_DIST` to prove a translated
+locale renders its pages and json.
 
 ## Fonts
 

@@ -5,13 +5,21 @@
  * executes, so the CSP stays exactly as it is. This file only reads it.
  *
  * Every word typed has to appear somewhere in an article's title, summary,
- * keywords, topic or text. Results are built with textContent, never
- * innerHTML. Without this file the page still lists every topic.
+ * keywords, topic or text. In the languages written without spaces between
+ * words (ja, ko, zh-Hans, zh-Hant, th: help-lib.mjs CHAR_LOCALES) there are no
+ * words to split on, so there the whole query, spaces dropped, may also match
+ * anywhere in the text with its spaces dropped. Accents never matter. Results
+ * are built with textContent, never innerHTML. Without this file the page
+ * still lists every topic.
+ *
+ * The page's words are all in the page already; this file has none of its
+ * own. The help locale is the page's <html lang> — a help page only exists in
+ * the locales that have a help center.
  *
  * The counts (privacy policy, section 2): "Was this helpful?" on an article,
  * and a search that finds nothing. Each is one POST to our own api with the
- * event and nothing else: no cookie (credentials: "omit"), no id, no
- * app_version. Fire and forget: never an error shown, never a retry. */
+ * event and its help locale, nothing else: no cookie (credentials: "omit"), no
+ * id, no app_version. Fire and forget: never an error shown, never a retry. */
 (function () {
   "use strict";
 
@@ -19,10 +27,13 @@
   // test build — check-build refuses to pass anything but the real one).
   var EVENTS_URL = "__HELP_EVENTS_URL__";
 
+  var LOCALE = document.documentElement.getAttribute("lang") || "en";
+  var NO_SPACES = ["ja", "ko", "zh-Hans", "zh-Hant", "th"].indexOf(LOCALE) >= 0;
+
   function send(ev) {
     ev.source = "web";
     ev.platform = "web";
-    ev.locale = "en";
+    ev.locale = LOCALE;
     try {
       fetch(EVENTS_URL, {
         method: "POST",
@@ -80,9 +91,11 @@
     s = String(s).toLowerCase();
     return s.normalize ? s.normalize("NFD").replace(/[̀-ͯ]/g, "") : s;
   };
+  var squash = function (s) { return s.replace(/\s+/g, ""); };
   items.forEach(function (it) {
     it.title_ = norm(it.title);
     it.hay = norm([it.title, it.summary, it.keywords, it.topic, it.text].join(" "));
+    if (NO_SPACES) it.hay_ = squash(it.hay);
   });
 
   var chevron = '<svg class="help-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
@@ -126,13 +139,19 @@
     clearTimeout(missTimer);
     missText = null;
     if (!words.length) { box.hidden = true; return; }
+    var whole = squash(words.join(""));
     var hits = items.filter(function (it) {
+      if (NO_SPACES && it.hay_.indexOf(whole) >= 0) return true;
       return words.every(function (w) { return it.hay.indexOf(w) >= 0; });
     });
     // A match in the title first, then the page's own order.
+    var inTitle = function (it) {
+      if (NO_SPACES && squash(it.title_).indexOf(whole) >= 0) return true;
+      return words.some(function (w) { return it.title_.indexOf(w) >= 0; });
+    };
     hits.sort(function (x, y) {
-      var tx = words.some(function (w) { return x.title_.indexOf(w) >= 0; }) ? 0 : 1;
-      var ty = words.some(function (w) { return y.title_.indexOf(w) >= 0; }) ? 0 : 1;
+      var tx = inTitle(x) ? 0 : 1;
+      var ty = inTitle(y) ? 0 : 1;
       return tx - ty || items.indexOf(x) - items.indexOf(y);
     });
     hits.forEach(function (it) { list.appendChild(row(it)); });

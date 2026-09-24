@@ -2,7 +2,8 @@
 # package.json can never be served even if it lands in the document root. The
 # help center's data files (en.json, later de.json, …) are the one deliberate
 # exception: the app downloads them from here. This directory's rule is merged
-# after the root one, so it wins for /help/ and nowhere else.
-<FilesMatch "^[a-z]{2}(-[a-z]+)?\.json$">
+# after the root one, so it wins for /help/ and nowhere else. The codes are the
+# site's (de, zh-Hans, zh-Hant), hence the capital in the script subtag.
+<FilesMatch "^[a-z]{2}(-[A-Z][a-z]+)?\.json$">
   Require all granted
 </FilesMatch>

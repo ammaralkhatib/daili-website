@@ -6,8 +6,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS } from '../site.config.mjs';
-import { loadHelp, visibleHelp } from './help-lib.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -77,11 +77,16 @@ for (const pg of PAGES) {
 // PAGES, so the expected set has to be expanded the same way here.
 expected.add('blog/index.html');
 for (const post of BLOG_POSTS) expected.add(`blog/${post.slug}/index.html`);
-// The help pages, from the same parser and the same since-filter build.mjs uses.
-const helpShown = visibleHelp(loadHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS }), LIVE_APP_VERSION);
-const helpOuts = new Set(['help/index.html',
-  ...helpShown.topics.map((t) => `help/${t}/index.html`),
-  ...helpShown.articles.map((a) => `help/${a.topic}/${a.slug}/index.html`)]);
+// The help pages, from the same parser and the same since-filter build.mjs
+// uses, once per HELP_LOCALES locale under dirFor(loc) + 'help/'.
+const helpShown = visibleHelp(loadAllHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS, helpLocales: HELP_LOCALES, locales: LOCALES }).en, LIVE_APP_VERSION);
+const helpOutsFor = (loc) => {
+  const d = `${dirFor(loc).slice(1)}help/`;
+  return [`${d}index.html`,
+    ...helpShown.topics.map((t) => `${d}${t}/index.html`),
+    ...helpShown.articles.map((a) => `${d}${a.topic}/${a.slug}/index.html`)];
+};
+const helpOuts = new Set(HELP_LOCALES.flatMap(helpOutsFor));
 for (const h of helpOuts) expected.add(h);
 for (const e of expected) {
   if (!fs.existsSync(path.join(DIST, e))) fail(e, 'MISSING from dist/');
@@ -700,22 +705,31 @@ for (const loc of LOCALES) {
 }
 
 // --- 16. help center ------------------------------------------------------
-// The help pages follow the blog's rule — English only, no hreflang in the
-// <head>, ever — plus the HELP_PUBLIC switch: while it is false every page is
-// noindex, none is in the sitemap and no footer links to /help/. And the one
-// inline <script> a help page may carry is the search index, which must be
-// data (type="application/json"), never code: the CSP allows exactly one
-// inline script hash, the language detector's.
+// The help pages exist in the HELP_LOCALES locales. With English alone they
+// follow the blog's rule — no hreflang in the <head>, ever; with more, each
+// page carries exactly the help cluster (every help locale + x-default), and
+// section 3 checks the return tags. Plus the HELP_PUBLIC switch: while it is
+// false every page is noindex, none is in the sitemap and no footer links to
+// /help/. And the one inline <script> a help page may carry is the search
+// index, which must be data (type="application/json"), never code: the CSP
+// allows exactly one inline script hash, the language detector's.
 {
   const sitemapPath = path.join(DIST, 'sitemap.xml');
   const sitemap = fs.existsSync(sitemapPath) ? read(sitemapPath) : '';
+  // A noindex page claims no alternates (renderHead), so the preview has none.
+  const wantHreflang = HELP_PUBLIC && HELP_LOCALES.length > 1 ? HELP_LOCALES.length + 1 : 0;
+  const helpOutLoc = new Map(HELP_LOCALES.flatMap((l) => helpOutsFor(l).map((o) => [o, l])));
   for (const out of helpOuts) {
     const file = path.join(DIST, out);
     if (!fs.existsSync(file)) continue; // section 1 already reported it
     const html = read(file);
     const head = html.slice(0, html.indexOf('</head>'));
     const n = (head.match(/hreflang=/g) || []).length;
-    if (n) fail(out, `<head> carries ${n} hreflang= declaration(s) — the help center is English-only and must claim no alternates`);
+    if (n !== wantHreflang) {
+      fail(out, `<head> carries ${n} hreflang= declaration(s), expected ${wantHreflang} — ${wantHreflang ? 'one per HELP_LOCALES locale plus x-default' : 'English alone claims no alternates'}`);
+    }
+    const loc = helpOutLoc.get(out);
+    if (!html.includes(`<html lang="${loc}"`)) fail(out, `is a ${loc} help page without <html lang="${loc}"`);
     const noindex = head.includes('<meta name="robots" content="noindex">');
     if (!HELP_PUBLIC && !noindex) fail(out, 'has no noindex, but HELP_PUBLIC is false — the preview must not be indexed');
     if (HELP_PUBLIC && noindex) fail(out, 'is noindex, but HELP_PUBLIC is true');
@@ -731,8 +745,27 @@ for (const loc of LOCALES) {
   }
   if (!HELP_PUBLIC) {
     for (const f of htmlFiles) {
-      if (/<footer>[\s\S]*href="\/help\/"/.test(read(f))) fail(rel(f), 'footer links to /help/ while HELP_PUBLIC is false');
+      if (/<footer>[\s\S]*href="(\/[a-z-]+)?\/help\/"/.test(read(f))) fail(rel(f), 'footer links to the help while HELP_PUBLIC is false');
     }
+  } else {
+    // Each locale's landing page footer: its own help if it has one, else the
+    // English help marked as English.
+    for (const loc of LOCALES) {
+      const out = `${dirFor(loc).slice(1)}index.html`;
+      if (!fs.existsSync(path.join(DIST, out))) continue;
+      const footer = read(path.join(DIST, out)).split('<footer>')[1] || '';
+      const want = HELP_LOCALES.includes(loc) && loc !== DEFAULT_LOCALE
+        ? `<a href="${dirFor(loc)}help/">`
+        : '<a href="/help/" hreflang="en" lang="en">';
+      if (!footer.includes(want)) fail(out, `footer has no Help link ${want}`);
+    }
+  }
+
+  // The search script's no-spaces list is help-lib's CHAR_LOCALES.
+  const helpSrc = read(path.join(ROOT, 'static/assets/help-search.js'));
+  const noSpaces = (helpSrc.match(/NO_SPACES = \[([^\]]*)\]/) || [, ''])[1].match(/"[^"]+"/g)?.map((s) => s.slice(1, -1)).sort().join(',');
+  if (noSpaces !== Object.keys(CHAR_LOCALES).sort().join(',')) {
+    fail('assets/help-search.js', `NO_SPACES (${noSpaces}) is not help-lib CHAR_LOCALES (${Object.keys(CHAR_LOCALES).join(',')})`);
   }
 
   // The help counts: the shipped script posts to the real endpoint (a
@@ -747,26 +780,32 @@ for (const loc of LOCALES) {
     fail('.htaccess', "CSP connect-src is not exactly https://api.daili.app — the help counts would be blocked, or more is allowed than needed");
   }
 
-  // help/en.json: parses, is shaped for the app, and every image has a cache-buster.
-  const jsonRel = 'help/en.json';
-  const jsonFile = path.join(DIST, jsonRel);
-  if (!fs.existsSync(jsonFile)) fail(jsonRel, 'MISSING — the app reads this file');
-  else {
+  // help/<locale>.json: parses, is shaped for the app, and every image has a
+  // cache-buster and is the locale's own picture or the English one.
+  let enShape = null;
+  for (const loc of HELP_LOCALES) {
+    const jsonRel = `help/${loc}.json`;
+    const jsonFile = path.join(DIST, jsonRel);
+    if (!fs.existsSync(jsonFile)) { fail(jsonRel, 'MISSING — the app reads this file'); continue; }
     let j = null;
     try { j = JSON.parse(read(jsonFile)); } catch (e) { fail(jsonRel, `does not parse: ${e.message}`); }
-    if (j) {
-      if (j.schema !== 1 || j.locale !== 'en') fail(jsonRel, `schema/locale is ${j.schema}/${j.locale}, expected 1/en`);
-      for (const k of ['topics', 'articles', 'tips', 'checklist']) if (!Array.isArray(j[k])) fail(jsonRel, `"${k}" is not an array`);
-      const ids = new Set((j.articles || []).map((a) => a.id));
-      for (const t of j.topics || []) for (const id of t.articles) if (!ids.has(id)) fail(jsonRel, `topic ${t.id} lists unknown article ${id}`);
-      for (const a of j.articles || []) {
-        for (const b of a.blocks) {
-          if ((b.type === 'image' || b.type === 'clip') && !/^https:\/\/daili\.app\/help\/media\/en\/[^?]+\?v=[0-9a-f]{8}$/.test(b.src)) {
-            fail(jsonRel, `${a.id}: image src "${b.src}" is not an absolute help media URL with ?v=`);
-          }
+    if (!j) continue;
+    if (j.schema !== 1 || j.locale !== loc) fail(jsonRel, `schema/locale is ${j.schema}/${j.locale}, expected 1/${loc}`);
+    for (const k of ['topics', 'articles', 'tips', 'checklist']) if (!Array.isArray(j[k])) fail(jsonRel, `"${k}" is not an array`);
+    const ids = new Set((j.articles || []).map((a) => a.id));
+    for (const t of j.topics || []) for (const id of t.articles) if (!ids.has(id)) fail(jsonRel, `topic ${t.id} lists unknown article ${id}`);
+    const src = new RegExp(`^https://daili\\.app/help/media/(en|${loc})/[^?]+\\?v=[0-9a-f]{8}$`);
+    for (const a of j.articles || []) {
+      for (const b of a.blocks) {
+        if ((b.type === 'image' || b.type === 'clip') && !src.test(b.src)) {
+          fail(jsonRel, `${a.id}: image src "${b.src}" is not an absolute help media URL (en or ${loc}) with ?v=`);
         }
       }
     }
+    // Every locale carries the same articles, tips and checklist rows as English.
+    const shape = (x) => JSON.stringify([(x.articles || []).map((a) => a.id), (x.tips || []).map((t) => t.id), (x.checklist || []).map((c) => c.article)]);
+    if (loc === 'en') enShape = shape(j);
+    else if (enShape !== null && shape(j) !== enShape) fail(jsonRel, 'does not have the same articles, tips and checklist rows as help/en.json');
   }
 }
 

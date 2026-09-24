@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Help — daili",
+  "metaDescription": "Short guides for everything in daili: the calendar, lists, meals, birthdays, your family and your account.",
+  "pageTitle": "{title} — daili Help",
+  "heroTitle": "How can we help?",
+  "heroLede": "Short guides for everything in daili.",
+  "minziAlt": "Minzi the cat",
+  "searchLabel": "Search the help",
+  "searchPlaceholder": "Try “invite” or “calendar”",
+  "results": "Results",
+  "noResult": "No guide matches that yet. Try another word, or write to us at {email}.",
+  "newInVersion": "New in version {version}",
+  "browseByTopic": "Browse by topic",
+  "articleCount": {
+    "one": "{n} article",
+    "other": "{n} articles"
+  },
+  "stillStuck": "Still stuck?",
+  "writeToUs": "Write to us",
+  "stuckBody": "{writeToUs} and a real person answers, usually within a day or two.",
+  "crumbHelp": "Help",
+  "note": "Note:",
+  "related": "Related",
+  "helpfulQuestion": "Was this helpful?",
+  "helpfulYes": "Yes, helpful",
+  "helpfulNo": "No, not helpful",
+  "thanks": "Thanks!",
+  "updated": "Updated",
+  "topics": {
+    "start": { "title": "Getting started", "summary": "Your first minutes in daili: the Home screen and the basics." },
+    "family": { "title": "Family & groups", "summary": "Invite people, add kids without a phone, and switch between groups." },
+    "calendar": { "title": "Calendar", "summary": "Events, reminders, repeats, and the calendars you already use." },
+    "lists": { "title": "Lists & to-dos", "summary": "Shopping lists everyone can tick off, and to-dos with a name on them." },
+    "meals": { "title": "Meals & recipes", "summary": "Plan the week’s meals and keep the family’s recipes in one place." },
+    "birthdays": { "title": "Birthdays", "summary": "Birthdays and celebrations, with a reminder before each one." },
+    "habits": { "title": "Habits & Minzi", "summary": "Build habits together and keep Minzi the cat happy." },
+    "vault": { "title": "Documents & photos", "summary": "Keep papers and photos on your phone, sorted into folders and albums." },
+    "anywhere": { "title": "Widgets, web & wall", "summary": "daili on your home screen, in the browser and on a wall display." },
+    "notifications": { "title": "Notifications", "summary": "Choose what daili tells you about, and when." },
+    "account": { "title": "Settings & account", "summary": "Your profile, your settings, and your account." }
+  }
+}

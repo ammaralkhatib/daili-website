@@ -2,32 +2,32 @@
 
   <div class="help-hero">
     <div>
-      <h1>How can we help?</h1>
-      <p class="help-lede">Short guides for everything in daili.</p>
+      <h1>{{ help.ui.heroTitle }}</h1>
+      <p class="help-lede">{{ help.ui.heroLede }}</p>
     </div>
-    <img class="help-minzi" src="{{ help.minziSrc }}" alt="Minzi the cat" width="96" height="96" decoding="async">
+    <img class="help-minzi" src="{{ help.minziSrc }}" alt="{{ help.ui.minziAlt }}" width="96" height="96" decoding="async">
   </div>
 
   <!-- The search needs help-search.js. Without it the field does nothing and
        the topics below are the way in, which is why they are always shown. -->
   <div class="help-search" role="search">
-    <label for="help-q">Search the help</label>
-    <input id="help-q" type="search" placeholder="Try “invite” or “calendar”" autocomplete="off" spellcheck="false">
+    <label for="help-q">{{ help.ui.searchLabel }}</label>
+    <input id="help-q" type="search" placeholder="{{ help.ui.searchPlaceholder }}" autocomplete="off" spellcheck="false">
   </div>
 
   <section class="help-results" id="help-results" aria-labelledby="help-results-h" hidden>
-    <h2 id="help-results-h">Results</h2>
+    <h2 id="help-results-h">{{ help.ui.results }}</h2>
     <ul class="help-list" id="help-results-list"></ul>
-    <p class="help-none" id="help-none" hidden>No guide matches that yet. Try another word, or write to us at <a href="mailto:support@daili.app">support@daili.app</a>.</p>
+    <p class="help-none" id="help-none" hidden>{{{ help.noResult }}}</p>
   </section>
 
 {{{ help.newSection }}}
 
   <section class="help-topics" aria-labelledby="help-topics-h">
-    <h2 id="help-topics-h">Browse by topic</h2>
+    <h2 id="help-topics-h">{{ help.ui.browseByTopic }}</h2>
     <ul class="help-grid">
 {{{ help.cards }}}
-      <li><a class="help-card help-card-stuck" href="mailto:support@daili.app"><span class="help-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span><b>Still stuck?</b><small>Write to us</small></a></li>
+      <li><a class="help-card help-card-stuck" href="mailto:support@daili.app"><span class="help-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span><b>{{ help.ui.stillStuck }}</b><small>{{ help.ui.writeToUs }}</small></a></li>
     </ul>
   </section>
 

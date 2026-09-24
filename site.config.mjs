@@ -978,20 +978,33 @@ export const LIVE_APP_VERSION = '1.6.0';
 export const HELP_ICONS = ['start', 'people', 'calendar', 'list', 'meal', 'cake', 'paw', 'folder', 'widget', 'bell', 'user'];
 
 /** The help topics, in the order the help home and the app list them. The key
- *  is the folder name under help/en/ and the `topic` every article declares. */
+ *  is the folder name under help/<locale>/ and the `topic` every article
+ *  declares. Their titles and summaries are words, so they live with the other
+ *  page words in help/<locale>/_ui.json under `topics`. */
 export const HELP_TOPICS = {
-  start:         { title: 'Getting started',       icon: 'start',    summary: 'Your first minutes in daili: the Home screen and the basics.' },
-  family:        { title: 'Family & groups',       icon: 'people',   summary: 'Invite people, add kids without a phone, and switch between groups.' },
-  calendar:      { title: 'Calendar',              icon: 'calendar', summary: 'Events, reminders, repeats, and the calendars you already use.' },
-  lists:         { title: 'Lists & to-dos',        icon: 'list',     summary: 'Shopping lists everyone can tick off, and to-dos with a name on them.' },
-  meals:         { title: 'Meals & recipes',       icon: 'meal',     summary: 'Plan the week’s meals and keep the family’s recipes in one place.' },
-  birthdays:     { title: 'Birthdays',             icon: 'cake',     summary: 'Birthdays and celebrations, with a reminder before each one.' },
-  habits:        { title: 'Habits & Minzi',        icon: 'paw',      summary: 'Build habits together and keep Minzi the cat happy.' },
-  vault:         { title: 'Documents & photos',    icon: 'folder',   summary: 'Keep papers and photos on your phone, sorted into folders and albums.' },
-  anywhere:      { title: 'Widgets, web & wall',   icon: 'widget',   summary: 'daili on your home screen, in the browser and on a wall display.' },
-  notifications: { title: 'Notifications',         icon: 'bell',     summary: 'Choose what daili tells you about, and when.' },
-  account:       { title: 'Settings & account',    icon: 'user',     summary: 'Your profile, your settings, and your account.' },
+  start:         { icon: 'start' },
+  family:        { icon: 'people' },
+  calendar:      { icon: 'calendar' },
+  lists:         { icon: 'list' },
+  meals:         { icon: 'meal' },
+  birthdays:     { icon: 'cake' },
+  habits:        { icon: 'paw' },
+  vault:         { icon: 'folder' },
+  anywhere:      { icon: 'widget' },
+  notifications: { icon: 'bell' },
+  account:       { icon: 'user' },
 };
+
+/**
+ * The help locales that are complete and get built: pages under
+ * dirFor(code) + 'help/' and a dist/help/<code>.json for the app. English
+ * first, always. A code joins once help/<code>/ has every article and a full
+ * _ui.json and the build is green (tools/check-help.mjs refuses a listed locale
+ * with anything missing). A help/<code>/ folder not listed here is still
+ * checked, just not built. Only the app's languages get a help center — ru, hi
+ * and ar are website-only and keep linking to the English one.
+ */
+export const HELP_LOCALES = ['en'];
 
 /**
  * The seven feature chapters of the scroll story, in story order.

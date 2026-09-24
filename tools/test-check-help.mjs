@@ -14,16 +14,29 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { checkHelp, readAppRoutes } from './help-lib.mjs';
+import { HELP_TOPICS, HELP_ICONS } from '../site.config.mjs';
 
 const REPO = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const TMP = fs.mkdtempSync(path.join(os.tmpdir(), 'daili-help-test-'));
 process.on('exit', () => fs.rmSync(TMP, { recursive: true, force: true }));
 
-const TOPICS = {
-  start: { title: 'Getting started', icon: 'start', summary: 'The basics.' },
-  family: { title: 'Family', icon: 'people', summary: 'People.' },
-};
+const TOPICS = { start: { icon: 'start' }, family: { icon: 'people' } };
 const ICONS = ['start', 'people'];
+
+// The page words: the real help/en/_ui.json, so the build case renders the
+// real templates. Its topics are cut down to the fixture's.
+const REAL_UI = JSON.parse(fs.readFileSync(path.join(REPO, 'help/en/_ui.json'), 'utf8'));
+const uiFor = (topicIds) => ({ ...REAL_UI, topics: Object.fromEntries(topicIds.map((t) => [t, REAL_UI.topics[t]])) });
+/** A stand-in translation of the page words: every string marked, {placeholders} kept. */
+const markUi = (v, mark) => (typeof v === 'string' ? `${mark} ${v}`
+  : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, markUi(x, mark)])));
+
+// The tiny German translation of the two fixture articles.
+const FIXTURE_DE = path.join(REPO, 'tools/fixtures/help-i18n/de');
+const TR_DE = {
+  'family/invite.md': fs.readFileSync(path.join(FIXTURE_DE, 'family/invite.md'), 'utf8'),
+  'start/home.md': fs.readFileSync(path.join(FIXTURE_DE, 'start/home.md'), 'utf8'),
+};
 const APP_ROUTES = ['/', '/family', '/family/invite', '/lists/:id', '/maintenance'];
 
 const dart = (routes) => `class RouteNames {
@@ -63,7 +76,7 @@ const BASE_BODY = {
  * paths so each case below reads as the one thing it plants.
  */
 let n = 0;
-function run(mutate = () => {}) {
+function write(mutate = () => {}) {
   const root = path.join(TMP, `f${n++}`);
   const w = (rel, s) => { fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true }); fs.writeFileSync(path.join(root, rel), s); };
   const state = {
@@ -79,22 +92,40 @@ function run(mutate = () => {}) {
     allow: { never: { '/maintenance': 'automatic' }, pending: { '/family': 'article not written yet', '/lists/:id': 'article not written yet' } },
     routes: [...APP_ROUTES],
     topics: structuredClone(TOPICS),
+    icons: ICONS,
     noAppRepo: false,
+    // translations: locale -> { '<topic>/<slug>.md': source }, and their _ui.json
+    tr: { de: { ...TR_DE } },
+    ui: null,                     // filled below from the topics, unless a case sets it
+    helpLocales: ['en'],
+    locales: ['en', 'de', 'ja', 'pl'],
+    localeMedia: {},              // locale -> media.<locale>.json object
+    localeMediaFiles: {},         // locale -> [file names in static/help/media/<locale>/]
   };
+  state.ui = { en: uiFor(Object.keys(state.topics)) };
+  state.ui.de = markUi(state.ui.en, 'DE');
   mutate(state);
 
   w('help/en/family/invite.md', article(state.fm.invite, state.body.invite));
   w('help/en/start/home.md', article(state.fm.home, state.body.home));
   for (const [rel, s] of state.extra) w(rel, s);
+  for (const [loc, files] of Object.entries(state.tr)) for (const [rel, s] of Object.entries(files)) w(`help/${loc}/${rel}`, s);
+  for (const [loc, ui] of Object.entries(state.ui)) if (ui) w(`help/${loc}/_ui.json`, JSON.stringify(ui));
+  for (const [loc, m] of Object.entries(state.localeMedia)) w(`help/media.${loc}.json`, JSON.stringify(m));
+  for (const [loc, fs_] of Object.entries(state.localeMediaFiles)) for (const f of fs_) w(`static/help/media/${loc}/${f}`, 'RIFF');
   w('help/media.json', JSON.stringify(state.media));
   w('help/skip-keys.json', JSON.stringify(state.skipKeys));
   w('help/routes-allowlist.json', JSON.stringify(state.allow));
   for (const f of state.mediaFiles) w(`static/help/media/en/${f}`, 'RIFF');
   if (!state.noAppRepo) w('app/lib/core/routing/route_names.dart', dart(state.routes));
-
-  const appRoutes = readAppRoutes(path.join(root, 'app'));
-  return checkHelp({ root, topics: state.topics, icons: ICONS, appRoutes }).errors;
+  return { root, state };
 }
+
+function check({ root, state }) {
+  const appRoutes = readAppRoutes(path.join(root, 'app'));
+  return checkHelp({ root, topics: state.topics, icons: state.icons, appRoutes, helpLocales: state.helpLocales, locales: state.locales });
+}
+const run = (mutate) => check(write(mutate)).errors;
 
 const failures = [];
 let passed = 0;
@@ -204,10 +235,131 @@ expectFail('media without w/h', /needs integer "w" and "h"/, (st) => { delete st
     errors = run((st) => {
       delete st.fm.home.media; st.fm.home.mediaPending = 'hand-made screenshot of the phone home screen';
       st.body.home = 'Home is where daili opens.';
+      st.tr.de['start/home.md'] = st.tr.de['start/home.md'].replace('\n\n![Die Startseite](start-home)', '');
       delete st.media['start-home']; st.mediaFiles = st.mediaFiles.filter((f) => f !== 'start-home.webp');
     });
   } catch (e) { errors = [`(threw) ${e.message}`]; }
   if (errors.length) failures.push(`mediaPending instead of media: expected no errors, got:\n    ${errors.join('\n    ')}`);
+  else passed++;
+}
+
+// ---- translations (help/<code>/) ---------------------------------------------
+const listDe = (st) => { st.helpLocales = ['en', 'de']; };
+const deEdit = (file, fn) => (st) => { listDe(st); st.tr.de[file] = fn(st.tr.de[file]); };
+function expectClean(name, mutate) {
+  let errors;
+  try { errors = run(mutate); } catch (e) { errors = [`(threw) ${e.message}`]; }
+  if (errors.length) failures.push(`${name}: expected no errors, got:\n    ${errors.join('\n    ')}`);
+  else passed++;
+}
+expectClean('German translation, listed in HELP_LOCALES', listDe);
+expectClean('half-done German, not listed: missing article and _ui key are fine', (st) => {
+  delete st.tr.de['start/home.md']; delete st.ui.de.results;
+});
+expectFail('translation with an unknown id', /help\/de\/family\/ghost\.md:\d+ +"family-ghost" is not an English article/, (st) => {
+  st.tr.de['family/ghost.md'] = TR_DE['family/invite.md'].replace('id: family-invite', 'id: family-ghost');
+});
+expectFail('translation with a forbidden key (routes)', /de\/family\/invite\.md:\d+ +"routes" is not allowed in a translation/,
+  deEdit('family/invite.md', (s) => s.replace('translatedFrom:', 'routes: /family\ntranslatedFrom:')));
+expectFail('translation with one step fewer', /de\/family\/invite\.md:\d+ +block 2 is 1 step\(s\), but help\/en\/family\/invite\.md has 2 step\(s\)/,
+  deEdit('family/invite.md', (s) => s.replace('2. Tippe auf **Mitglied einladen**.\n', '')));
+expectFail('translation with a different image id', /block 3 is image "start-home", but .* has image "family-invite"/,
+  deEdit('family/invite.md', (s) => s.replace('(family-invite)', '(start-home)')));
+expectFail('translation with a block too many', /block 4 is a paragraph, but .* has a note/,
+  deEdit('family/invite.md', (s) => s.replace('> Note:', 'Noch ein Absatz.\n\n> Note:')));
+expectFail('translation without the English tip', /"tipBody" is required — the English article has a tip/,
+  deEdit('family/invite.md', (s) => s.replace(/tipBody: .*\n/, '')));
+expectFail('translation with a tip English lacks', /"tipTitle" is not allowed — the English article has no tip/,
+  deEdit('start/home.md', (s) => s.replace('translatedFrom:', 'tipTitle: Hallo\ntranslatedFrom:')));
+expectFail('translatedFrom newer than English', /translatedFrom 2026-09-25 is newer/,
+  deEdit('start/home.md', (s) => s.replace('translatedFrom: 2026-09-24', 'translatedFrom: 2026-09-25')));
+expectFail('translated title over 1.4 × the limit', /title is 99 characters, the limit for a translation is 98/,
+  deEdit('start/home.md', (s) => s.replace('title: Startseite', `title: ${'x'.repeat(99)}`)));
+expectFail('upper-case translated keyword', /keyword "Übersicht" must be lower case/,
+  deEdit('start/home.md', (s) => s.replace('übersicht', 'Übersicht')));
+expectFail('German body over 210 words', /body is 211 words, the limit is 210/,
+  deEdit('start/home.md', (s) => s.replace('Mit der Startseite öffnet sich daili.', Array(211).fill('Wort').join(' '))));
+expectFail('missing _ui.json key (listed)', /help\/de\/_ui\.json:1 +missing "results"/, (st) => { listDe(st); delete st.ui.de.results; });
+expectFail('missing _ui.json topic (listed)', /help\/de\/_ui\.json:1 +missing "topics\.family\.summary"/, (st) => { listDe(st); delete st.ui.de.topics.family.summary; });
+expectFail('_ui.json placeholder dropped', /"noResult" has placeholders \{\}, English has \{email\}/, (st) => { st.ui.de.noResult = 'Nichts gefunden.'; });
+expectFail('_ui.json unknown key', /unknown key "colour"/, (st) => { st.ui.de.colour = 'grün'; });
+expectFail('_ui.json missing file (listed)', /help\/de\/_ui\.json:1 +missing — every help locale/, (st) => { listDe(st); st.ui.de = null; });
+expectFail('plural forms per language', /missing "articleCount\.few"/, (st) => {
+  st.helpLocales = ['en', 'pl']; st.tr.pl = { ...TR_DE }; st.ui.pl = markUi(st.ui.en, 'PL');
+});
+expectFail('listed locale missing an article', /help\/de\/start\/home\.md:1 +missing — every English article needs a translation while "de" is in HELP_LOCALES/, (st) => {
+  listDe(st); delete st.tr.de['start/home.md'];
+});
+expectFail('HELP_LOCALES code not in LOCALES', /HELP_LOCALES has "xx", which is not in LOCALES/, (st) => { st.helpLocales = ['en', 'xx']; });
+expectFail('help folder not a site locale', /help\/de-at\/:1 +"de-at" is not a site locale/, (st) => { st.tr['de-at'] = { ...TR_DE }; });
+expectFail('locale picture for an unknown id', /help\/media\.de\.json:1 +"spare" is not in help\/media\.json/, (st) => {
+  st.localeMedia.de = { spare: { file: 'spare.webp', w: 1, h: 1, kind: 'image' } }; st.localeMediaFiles.de = ['spare.webp'];
+});
+expectFail('locale picture file missing', /"family-invite" names family-invite\.webp, which is not in static\/help\/media\/de\//, (st) => {
+  st.localeMedia.de = { 'family-invite': { file: 'family-invite.webp', w: 720, h: 688, kind: 'image' } };
+});
+{
+  // stale: English moved on after the translation — a warning, not an error
+  const r = check(write((st) => { listDe(st); st.fm.home.updated = '2026-10-01'; }));
+  if (!r.errors.length && r.warnings.some((w) => w === 'help de: 1 article(s) older than English: start-home')) passed++;
+  else failures.push(`stale translation: expected no errors and a "help de: 1 article(s) older than English" warning, got:\n    ${[...r.errors, ...r.warnings].join('\n    ')}`);
+}
+
+// ---- CJK: characters, not words ------------------------------------------------
+const jaTitle = (title) => (st) => { st.tr.ja = { ...TR_DE, 'start/home.md': TR_DE['start/home.md'].replace('title: Startseite', `title: ${title}`) }; };
+const jaBody = (body) => (st) => { st.tr.ja = { ...TR_DE, 'start/home.md': TR_DE['start/home.md'].replace('Mit der Startseite öffnet sich daili.', body) }; };
+expectClean('ja title of 98 characters', jaTitle('家'.repeat(98)));
+expectFail('ja title of 99 characters', /help\/ja\/start\/home\.md:\d+ +title is 99 characters/, jaTitle('家'.repeat(99)));
+expectFail('ja body over its character cap, though it is one "word"', /body is 601 characters, the limit for ja is 600/, jaBody('あ'.repeat(601)));
+expectClean('ja body of 211 space-separated "words" (no word count in ja)', jaBody(Array(211).fill('あ').join(' ')));
+expectClean('th title of 98 graphemes (more UTF-16 units)', (st) => {
+  st.tr.th = { ...TR_DE, 'start/home.md': TR_DE['start/home.md'].replace('title: Startseite', `title: ${'กี่'.repeat(98)}`) };
+  st.locales.push('th');
+});
+
+// ---- the build: a translated locale renders pages and its json -----------------
+{
+  const topicIds = Object.keys(HELP_TOPICS);
+  const fx = write((st) => {
+    st.topics = HELP_TOPICS; st.icons = HELP_ICONS;
+    st.ui.en = uiFor(topicIds); st.ui.de = markUi(st.ui.en, 'DE');
+    st.localeMedia.de = { 'family-invite': { file: 'family-invite.webp', w: 720, h: 688, kind: 'image' } };
+    st.localeMediaFiles.de = ['family-invite.webp'];
+  });
+  const dist = path.join(TMP, 'dist');
+  const b = spawnSync(process.execPath, [path.join(REPO, 'build.mjs')], {
+    env: { ...process.env, HELP_TEST_ROOT: fx.root, HELP_TEST_LOCALES: 'en,de', HELP_TEST_DIST: dist }, encoding: 'utf8',
+  });
+  const problems = [];
+  if (b.status !== 0) problems.push(`build exited ${b.status}: ${b.stderr.trim().split('\n').slice(-3).join(' | ')}`);
+  else {
+    const page = (rel) => (fs.existsSync(path.join(dist, rel)) ? fs.readFileSync(path.join(dist, rel), 'utf8') : '');
+    const art = page('de/help/family/invite/index.html');
+    if (!art) problems.push('no de/help/family/invite/index.html');
+    else {
+      if (!art.includes('<html lang="de"')) problems.push('German article is not <html lang="de">');
+      if (!art.includes('<h1>Jemanden einladen</h1>')) problems.push('German article has no German title');
+      if (!art.includes('<b>DE Note:</b> Ein Code gilt 7 Tage.')) problems.push('German note has no German label/text');
+      if (!art.includes('src="/help/media/de/family-invite.webp?v=')) problems.push('German article does not use its own picture');
+      if (!art.includes('<link rel="alternate" hreflang="en" href="https://daili.app/help/family/invite/">')
+        || !art.includes('<link rel="alternate" hreflang="x-default" href="https://daili.app/help/family/invite/">')) problems.push('German article has no hreflang cluster with x-default English');
+    }
+    const home = page('de/help/start/home/index.html');
+    if (!home.includes('src="/help/media/en/start-home.webp?v=')) problems.push('German article without its own picture does not fall back to English');
+    if (!page('de/help/index.html').includes('DE How can we help?')) problems.push('German help home is not in German');
+    if (!page('de/index.html').includes('<a href="/de/help/">')) problems.push('German footer does not link to /de/help/');
+    let j = null;
+    try { j = JSON.parse(page('help/de.json')); } catch { problems.push('help/de.json missing or not JSON'); }
+    if (j) {
+      if (j.schema !== 1 || j.locale !== 'de') problems.push(`de.json schema/locale ${j.schema}/${j.locale}`);
+      const inv = j.articles.find((a) => a.id === 'family-invite');
+      if (inv?.title !== 'Jemanden einladen' || inv?.routes.join() !== '/family/invite') problems.push('de.json article is not German text over English data');
+      if (j.tips[0]?.title !== 'Gemeinsam planen' || j.tips[0]?.priority !== 90) problems.push('de.json tip is not German text over English data');
+      if (j.checklist[0]?.title !== 'Jemanden einladen') problems.push('de.json checklist title is not German');
+      if (j.topics.find((t) => t.id === 'family')?.title !== `DE ${REAL_UI.topics.family.title}`) problems.push('de.json topic title is not from de/_ui.json');
+    }
+  }
+  if (problems.length) failures.push(`build of a German fixture:\n    ${problems.join('\n    ')}`);
   else passed++;
 }
 

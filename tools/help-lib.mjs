@@ -1,10 +1,17 @@
 // The help center's parser and rules. Shared by build.mjs (which renders the
-// pages and help/en.json from what this returns) and tools/check-help.mjs (the
-// guard). Node standard library only, like everything else in this repo.
+// pages and help/<locale>.json from what this returns) and tools/check-help.mjs
+// (the guard). Node standard library only, like everything else in this repo.
 //
 // An article is a small Markdown file with flat `key: value` front matter:
 //
-//   help/<locale>/<topic>/<slug>.md
+//   help/en/<topic>/<slug>.md
+//
+// English is the source. A translation, help/<code>/<topic>/<slug>.md, is a
+// text-only copy of one: its front matter may carry only TRANSLATION_KEYS, and
+// its body has the same blocks in the same order (the parity guard). Everything
+// else — routes, since, media, tip priority, checklist — is taken from the
+// English article, so a translation cannot drift from what the app does.
+// help/<code>/_ui.json holds the page's own words (and the topic names).
 //
 // The body is a deliberately tiny subset of Markdown — paragraphs, one
 // numbered list, one or two images, notes and **bold** — because the app draws
@@ -31,6 +38,29 @@ export const LIMITS = {
   steps: 7, images: 2, words: 150,
   tipTitle: 60, tipBody: 120, topicSummary: 90, mediaPending: 80,
 };
+
+/** The only front-matter keys a translation may carry. */
+const TRANSLATION_KEYS = new Set(['id', 'title', 'summary', 'keywords', 'tipTitle', 'tipBody', 'translatedFrom']);
+
+/** A translation may be this much longer than the English limits allow
+ *  (title, summary, tip texts, topic summary, and the body's word count). */
+export const TRANSLATION_FACTOR = 1.4;
+
+/**
+ * Scripts written without spaces between words have no word count; their body
+ * is measured in characters (graphemes, whitespace and ** not counted) with
+ * these caps. English's 150 words are ~800 characters; Chinese says the same in
+ * roughly half of that, Japanese and Korean in a bit more, and Thai spells its
+ * vowels and tones as separate marks inside one grapheme-heavy line.
+ * help-search.js matches these locales by substring for the same reason.
+ */
+export const CHAR_LOCALES = { ja: 600, ko: 600, 'zh-Hans': 450, 'zh-Hant': 450, th: 900 };
+
+const SEGMENTER = new Intl.Segmenter('en', { granularity: 'grapheme' });
+/** Characters as a reader counts them: a Thai syllable or an emoji is one. */
+export const graphemes = (s) => { let n = 0; for (const _ of SEGMENTER.segment(s)) n++; return n; };
+/** A translated text limit: the English one × TRANSLATION_FACTOR. */
+const trLimit = (n) => Math.floor(n * TRANSLATION_FACTOR);
 
 const list = (v) => v.split(',').map((s) => s.trim()).filter(Boolean);
 const isInt = (v) => /^-?\d+$/.test(v);
@@ -67,9 +97,11 @@ function inlineProblems(text) {
 /**
  * Parse one article file into { meta, blocks } plus its problems. `rel` is the
  * path used in messages (help/en/family/invite.md), so every error is
- * clickable.
+ * clickable. `translation` is the locale code when the file is a translation:
+ * then only TRANSLATION_KEYS are allowed and the body limit is the
+ * translated one.
  */
-export function parseArticle(src, rel) {
+export function parseArticle(src, rel, translation = null) {
   const errors = [];
   const at = (line, msg) => errors.push(`${rel}:${line}  ${msg}`);
   const lines = src.replace(/\r\n?/g, '\n').split('\n');
@@ -87,7 +119,13 @@ export function parseArticle(src, rel) {
     const m = line.match(/^([A-Za-z]+):\s*(.*)$/);
     if (!m) { at(i + 1, `front matter must be flat "key: value" lines, got "${line}"`); continue; }
     const [, key, value] = m;
-    if (!KEYS.has(key)) { at(i + 1, `unknown front-matter key "${key}"`); continue; }
+    if (translation && !TRANSLATION_KEYS.has(key)) {
+      at(i + 1, KEYS.has(key)
+        ? `"${key}" is not allowed in a translation — it comes from the English article`
+        : `unknown front-matter key "${key}"`);
+      continue;
+    }
+    if (!translation && !KEYS.has(key)) { at(i + 1, `unknown front-matter key "${key}"`); continue; }
     if (key in meta) { at(i + 1, `"${key}" is set twice`); continue; }
     meta[key] = value.trim();
     metaLine[key] = i + 1;
@@ -104,7 +142,7 @@ export function parseArticle(src, rel) {
   let listsSeen = 0;
   let images = 0;
   const closePara = () => {
-    if (para) blocks.push({ type: 'p', text: para.text });
+    if (para) blocks.push({ type: 'p', text: para.text, line: para.line });
     para = null;
   };
 
@@ -151,7 +189,7 @@ export function parseArticle(src, rel) {
       const note = line.match(/^> Note: (.+)$/);
       if (!note) { at(ln, 'the only quote allowed is a note: "> Note: …"'); continue; }
       for (const p of inlineProblems(note[1])) at(ln, p);
-      blocks.push({ type: 'note', text: note[1].trim() });
+      blocks.push({ type: 'note', text: note[1].trim(), line: ln });
       continue;
     }
 
@@ -161,14 +199,39 @@ export function parseArticle(src, rel) {
   }
   closePara();
 
-  const words = blocks.reduce((sum, b) => sum
-    + (b.type === 'p' || b.type === 'note' ? countWords(b.text) : 0)
-    + (b.type === 'steps' ? b.items.reduce((s, it) => s + countWords(it), 0) : 0), 0);
-  if (words > LIMITS.words) at(i + 2, `body is ${words} words, the limit is ${LIMITS.words}`);
+  const texts = blocks.flatMap((b) => (b.type === 'steps' ? b.items : b.type === 'image' ? [] : [b.text]));
+  if (translation && translation in CHAR_LOCALES) {
+    const chars = texts.reduce((sum, s) => sum + graphemes(s.replace(/\*\*/g, '').replace(/\s+/g, '')), 0);
+    const cap = CHAR_LOCALES[translation];
+    if (chars > cap) at(i + 2, `body is ${chars} characters, the limit for ${translation} is ${cap}`);
+  } else {
+    const words = texts.reduce((sum, s) => sum + countWords(s), 0);
+    const cap = translation ? trLimit(LIMITS.words) : LIMITS.words;
+    if (words > cap) at(i + 2, `body is ${words} words, the limit is ${cap}`);
+  }
   if (!blocks.length) at(i + 2, 'body is empty');
 
-  // Keep `line` for the guard's messages, drop it from what is rendered.
-  return { meta, metaLine, blocks, errors };
+  // Keep `line` for the guard's messages; loadHelp drops it from what is rendered.
+  return { meta, metaLine, blocks, errors, lastLine: lines.length };
+}
+
+/** Every help/<locale>/<topic>/<slug>.md, plus an error for anything else in
+ *  there (other than _ui.json). */
+function articleFiles(root, locale, errors) {
+  const localeDir = path.join(root, 'help', locale);
+  const relTo = (f) => path.relative(root, f).split(path.sep).join('/');
+  const files = [];
+  if (!fs.existsSync(localeDir)) return files;
+  for (const t of fs.readdirSync(localeDir, { withFileTypes: true })) {
+    const tdir = path.join(localeDir, t.name);
+    if (t.name === '_ui.json' && t.isFile()) continue;
+    if (!t.isDirectory()) { errors.push(`${relTo(tdir)}:1  only topic folders and _ui.json belong in help/${locale}/`); continue; }
+    for (const f of fs.readdirSync(tdir)) {
+      if (!f.endsWith('.md')) { errors.push(`${relTo(path.join(tdir, f))}:1  not a .md article`); continue; }
+      files.push({ topicDir: t.name, slug: f.slice(0, -3), file: path.join(tdir, f) });
+    }
+  }
+  return files;
 }
 
 function readJson(file, rel, errors, fallback) {
@@ -179,17 +242,96 @@ function readJson(file, rel, errors, fallback) {
   }
 }
 
+const placeholders = (s) => [...String(s).matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
+const isObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+
 /**
- * Load and check every article of one locale.
+ * Check one help/<locale>/_ui.json. English (`en` null) is the shape every
+ * other locale must match: the same keys, each a non-empty string with the
+ * same {placeholders}. Two exceptions to "the same keys":
+ *   - articleCount holds one string per plural category OF THAT LANGUAGE
+ *     (Intl.PluralRules): en has one/other, pl one/few/many/other, ja other;
+ *   - topics must have exactly the HELP_TOPICS keys, each with title+summary.
+ * A missing key is an error only when `listed` (the locale is being built); an
+ * unknown key or a broken value always is.
+ */
+function checkUi({ ui, en, locale, rel, listed, topicIds, errors }) {
+  const at = (msg) => errors.push(`${rel}:1  ${msg}`);
+  if (!isObj(ui)) { at('must be a JSON object'); return; }
+  const summaryCap = en ? trLimit(LIMITS.topicSummary) : LIMITS.topicSummary;
+  const len = (s) => (en ? graphemes(s) : s.length);
+
+  const str = (key, v, want) => {
+    if (typeof v !== 'string' || !v.trim()) { at(`"${key}" must be a non-empty string`); return; }
+    if (want !== undefined && placeholders(v) !== placeholders(want)) {
+      at(`"${key}" has placeholders {${placeholders(v)}}, English has {${placeholders(want)}}`);
+    }
+  };
+
+  const shape = en || ui;
+  for (const key of Object.keys(ui)) {
+    if (!(key in shape)) at(`unknown key "${key}" (not in help/en/_ui.json)`);
+  }
+  for (const [key, want] of Object.entries(shape)) {
+    if (!(key in ui)) { if (listed) at(`missing "${key}"`); continue; }
+    const v = ui[key];
+    if (key === 'topics') {
+      if (!isObj(v)) { at('"topics" must be an object'); continue; }
+      for (const id of Object.keys(v)) if (!topicIds.includes(id)) at(`topics.${id} is not a key of HELP_TOPICS (${topicIds.join(', ')})`);
+      for (const id of topicIds) {
+        const t = v[id];
+        if (!isObj(t)) { if (listed || !en) at(`topics.${id} is missing`); continue; }
+        for (const k of Object.keys(t)) if (k !== 'title' && k !== 'summary') at(`unknown key "topics.${id}.${k}"`);
+        for (const k of ['title', 'summary']) {
+          if (!(k in t)) { if (listed || !en) at(`missing "topics.${id}.${k}"`); continue; }
+          str(`topics.${id}.${k}`, t[k]);
+        }
+        if (typeof t.summary === 'string' && len(t.summary) > summaryCap) {
+          at(`topics.${id}.summary is ${len(t.summary)} chars, the limit is ${summaryCap}`);
+        }
+      }
+    } else if (key === 'articleCount') {
+      if (!isObj(v)) { at('"articleCount" must be an object of plural forms'); continue; }
+      const cats = new Intl.PluralRules(locale).resolvedOptions().pluralCategories;
+      const other = en ? en.articleCount.other : v.other;
+      for (const k of Object.keys(v)) if (!cats.includes(k)) at(`articleCount.${k} is not a plural form of ${locale} (${cats.join(', ')})`);
+      for (const k of cats) {
+        if (!(k in v)) { if (listed || !en) at(`missing "articleCount.${k}"`); continue; }
+        str(`articleCount.${k}`, v[k], other);
+      }
+    } else if (isObj(want)) {
+      at(`"${key}" is an object — only topics and articleCount are`);
+    } else {
+      str(key, v, en ? want : undefined);
+    }
+  }
+}
+
+/** Read and check help/<locale>/_ui.json. Returns the object (or null). */
+function loadUi({ root, locale, en, listed, topicIds, errors }) {
+  const rel = `help/${locale}/_ui.json`;
+  const file = path.join(root, rel);
+  if (!fs.existsSync(file)) {
+    if (!en || listed) errors.push(`${rel}:1  missing — every help locale needs its page words${en ? ` while "${locale}" is in HELP_LOCALES` : ''}`);
+    return null;
+  }
+  const ui = readJson(file, rel, errors, null);
+  if (ui !== null) checkUi({ ui, en, locale, rel, listed, topicIds, errors });
+  return ui;
+}
+
+/**
+ * Load and check every English article (the source).
  *
- * Returns { topics, articles, media, errors, warnings }. `articles` is sorted
- * by topic order, then `order`, then title — the order every page and en.json
- * use. `errors` holds EVERY problem found, not the first, each as
- * "file:line  message". Checks that need the app (routes) are not here; see
- * checkHelp().
+ * Returns { locale, topics, ui, articles, media, errors, warnings }.
+ * `articles` is sorted by topic order, then `order`, then title — the order
+ * every page and every help/<locale>.json use. `errors` holds EVERY problem
+ * found, not the first, each as "file:line  message". Checks that need the app
+ * (routes) are not here; see checkHelp().
  *
- * `topics` and `icons` default to the site's, and are parameters so the guard's
- * test can run this against a fixture.
+ * `topics` (HELP_TOPICS: id → { icon }) and `icons` are parameters so the
+ * guard's test can run this against a fixture. The topic names are words, so
+ * they live in help/en/_ui.json.
  */
 export function loadHelp({ root, locale = 'en', topics, icons }) {
   const errors = [], warnings = [];
@@ -199,11 +341,9 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
   // topics
   const topicIds = Object.keys(topics);
   for (const [id, t] of Object.entries(topics)) {
-    if (!t || typeof t.title !== 'string' || !t.title) errors.push(`site.config.mjs:1  HELP_TOPICS.${id} has no title`);
-    if (!t || typeof t.summary !== 'string' || !t.summary) errors.push(`site.config.mjs:1  HELP_TOPICS.${id} has no summary`);
-    else if (t.summary.length > LIMITS.topicSummary) errors.push(`site.config.mjs:1  HELP_TOPICS.${id}.summary is ${t.summary.length} chars, the limit is ${LIMITS.topicSummary}`);
     if (!icons.includes(t?.icon)) errors.push(`site.config.mjs:1  HELP_TOPICS.${id} has icon "${t?.icon}", which is not in HELP_ICONS (${icons.join(', ')})`);
   }
+  const ui = loadUi({ root, locale, en: null, listed: true, topicIds, errors }) || {};
 
   const media = readJson(path.join(helpDir, 'media.json'), 'help/media.json', errors, {});
   const skipKeys = new Set(readJson(path.join(helpDir, 'skip-keys.json'), 'help/skip-keys.json', errors, []));
@@ -222,18 +362,7 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
   }
 
   // articles
-  const localeDir = path.join(helpDir, locale);
-  const files = [];
-  if (fs.existsSync(localeDir)) {
-    for (const t of fs.readdirSync(localeDir, { withFileTypes: true })) {
-      const tdir = path.join(localeDir, t.name);
-      if (!t.isDirectory()) { errors.push(`${relTo(tdir)}:1  only topic folders belong in help/${locale}/`); continue; }
-      for (const f of fs.readdirSync(tdir)) {
-        if (!f.endsWith('.md')) { errors.push(`${relTo(path.join(tdir, f))}:1  not a .md article`); continue; }
-        files.push({ topicDir: t.name, slug: f.slice(0, -3), file: path.join(tdir, f) });
-      }
-    }
-  }
+  const files = articleFiles(root, locale, errors);
 
   const articles = [];
   for (const { topicDir, slug, file } of files) {
@@ -378,7 +507,186 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
     || (a.order ?? Infinity) - (b.order ?? Infinity)
     || a.title.localeCompare(b.title, 'en'));
 
-  return { topics, articles, media, skipKeys, errors, warnings };
+  return { locale, topics, ui, articles, media, skipKeys, errors, warnings };
+}
+
+/**
+ * Load and check one translation, help/<locale>/, against the English help
+ * `en` (from loadHelp). `listed` = the locale is in HELP_LOCALES and gets
+ * built: then a missing article or _ui.json key is an error. An unlisted folder
+ * is checked all the same (a half-done language is caught early), it just may
+ * be incomplete.
+ *
+ * Returns the same shape as loadHelp — { locale, topics, ui, articles, media,
+ * errors, warnings, notes } — with each article the English one plus the
+ * translated text, in English order. `media` is help/media.<locale>.json: the
+ * pictures this locale has of its own. mediaFor() picks between the two.
+ */
+export function loadTranslation({ root, locale, en, listed }) {
+  const errors = [], warnings = [], notes = [];
+  const helpDir = path.join(root, 'help');
+  const relTo = (f) => path.relative(root, f).split(path.sep).join('/');
+  const topicIds = Object.keys(en.topics);
+  const cased = (s) => s !== s.toLocaleLowerCase(locale);
+
+  const ui = loadUi({ root, locale, en: en.ui, listed, topicIds, errors }) || {};
+
+  // media.<locale>.json: a subset of the English ids, each with its own file
+  const mediaRel = `help/media.${locale}.json`;
+  const mediaFile = path.join(helpDir, `media.${locale}.json`);
+  const media = fs.existsSync(mediaFile) ? readJson(mediaFile, mediaRel, errors, {}) : {};
+  const mediaDir = path.join(root, 'static', 'help', 'media', locale);
+  for (const [id, m] of Object.entries(media)) {
+    const where = `${mediaRel}:1  "${id}"`;
+    const enM = en.media[id];
+    if (!enM) { errors.push(`${where} is not in help/media.json — a locale picture replaces an English one, it never adds one`); continue; }
+    if (!m || typeof m.file !== 'string') { errors.push(`${where} has no "file"`); continue; }
+    if (!Number.isInteger(m.w) || !Number.isInteger(m.h) || m.w <= 0 || m.h <= 0) errors.push(`${where} needs integer "w" and "h"`);
+    if (m.kind !== enM.kind) errors.push(`${where} has kind "${m.kind}", the English one is "${enM.kind}"`);
+    if (!fs.existsSync(path.join(mediaDir, m.file))) errors.push(`${where} names ${m.file}, which is not in static/help/media/${locale}/`);
+    if (m.kind === 'clip' && (typeof m.poster !== 'string' || !fs.existsSync(path.join(mediaDir, m.poster)))) {
+      errors.push(`${where} is a clip and needs a "poster" file that exists`);
+    }
+  }
+
+  const enById = new Map(en.articles.map((a) => [a.id, a]));
+  const byId = new Map();
+  const stale = [];
+  for (const { topicDir, slug, file } of articleFiles(root, locale, errors)) {
+    const rel = relTo(file);
+    const parsed = parseArticle(fs.readFileSync(file, 'utf8'), rel, locale);
+    errors.push(...parsed.errors);
+    const { meta, metaLine, blocks, lastLine } = parsed;
+    const at = (key, msg) => errors.push(`${rel}:${metaLine[key] || 1}  ${msg}`);
+
+    const wantId = `${topicDir}-${slug}`;
+    const enA = enById.get(wantId);
+    if (!enA) { at('id', `"${wantId}" is not an English article (no help/en/${topicDir}/${slug}.md) — a translation needs its English original`); continue; }
+    if (!meta.id) at('id', '"id" is required');
+    else if (meta.id !== wantId) at('id', `id is "${meta.id}", expected "${wantId}" (<topic>-<slug> from the path)`);
+
+    for (const k of ['title', 'summary', 'keywords', 'translatedFrom']) if (!meta[k]) at(k, `"${k}" is required`);
+    for (const [k, cap] of [['title', LIMITS.title], ['summary', LIMITS.summary], ['tipTitle', LIMITS.tipTitle], ['tipBody', LIMITS.tipBody]]) {
+      const n = meta[k] ? graphemes(meta[k]) : 0;
+      if (n > trLimit(cap)) at(k, `${k} is ${n} characters, the limit for a translation is ${trLimit(cap)}`);
+    }
+
+    const keywords = meta.keywords ? list(meta.keywords) : [];
+    if (meta.keywords) {
+      if (keywords.length < LIMITS.keywordsMin || keywords.length > LIMITS.keywordsMax) at('keywords', `has ${keywords.length} keywords, expected ${LIMITS.keywordsMin}–${LIMITS.keywordsMax}`);
+      for (const k of keywords) if (cased(k)) at('keywords', `keyword "${k}" must be lower case`);
+    }
+
+    // the tip's words: exactly when English has a tip
+    if (enA.tip) {
+      for (const k of ['tipTitle', 'tipBody']) if (!meta[k]) at(k, `"${k}" is required — the English article has a tip`);
+    } else {
+      for (const k of ['tipTitle', 'tipBody']) if (k in meta) at(k, `"${k}" is not allowed — the English article has no tip`);
+    }
+
+    if (meta.translatedFrom) {
+      const d = meta.translatedFrom;
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(d) || new Date(`${d}T00:00:00Z`).toISOString().slice(0, 10) !== d) {
+        at('translatedFrom', `translatedFrom "${d}" is not a real YYYY-MM-DD date`);
+      } else if (d > enA.updated) {
+        at('translatedFrom', `translatedFrom ${d} is newer than the English "updated" (${enA.updated}) — it names the English version it was translated from`);
+      } else if (d < enA.updated) stale.push(enA.id);
+    }
+
+    // body parity: the same blocks, in the same order, as English
+    const what = (b) => (!b ? 'nothing'
+      : b.type === 'steps' ? `${b.items.length} step(s)`
+        : b.type === 'image' ? `image "${b.media}"`
+          : b.type === 'note' ? 'a note' : 'a paragraph');
+    const n = Math.max(blocks.length, enA.blocks.length);
+    for (let k = 0; k < n; k++) {
+      if (what(blocks[k]) !== what(enA.blocks[k])) {
+        errors.push(`${rel}:${blocks[k]?.line || lastLine}  block ${k + 1} is ${what(blocks[k])}, but ${enA.rel} has ${what(enA.blocks[k])} there — a translation keeps the English blocks in the same order`);
+        break;
+      }
+    }
+
+    byId.set(enA.id, {
+      ...enA,
+      rel, metaLine,
+      title: meta.title || '',
+      summary: meta.summary || '',
+      keywords,
+      tip: enA.tip ? { ...enA.tip, title: meta.tipTitle || '', body: meta.tipBody || '' } : null,
+      translatedFrom: meta.translatedFrom || '',
+      blocks: blocks.map(({ line, ...b }) => b),
+    });
+  }
+
+  const missing = en.articles.filter((a) => !byId.has(a.id));
+  if (listed) {
+    for (const a of missing) {
+      errors.push(`help/${locale}/${a.topic}/${a.slug}.md:1  missing — every English article needs a translation while "${locale}" is in HELP_LOCALES`);
+    }
+  }
+  if (stale.length) warnings.push(`help ${locale}: ${stale.length} article(s) older than English: ${stale.join(', ')}`);
+
+  const articles = en.articles.map((a) => byId.get(a.id)).filter(Boolean);
+  const help = { locale, topics: en.topics, ui, articles, media, enMedia: en.media, skipKeys: en.skipKeys, errors, warnings, notes, missing };
+  const english = usedMedia(articles).filter((id) => mediaFor(help, id).locale === 'en');
+  help.englishPictures = english.length;
+  if (english.length) notes.push(`help ${locale}: ${english.length} picture(s) in English for now`);
+  if (!listed) notes.push(`help ${locale}: not in HELP_LOCALES — checked, not built (${articles.length} of ${en.articles.length} article(s))`);
+  return help;
+}
+
+/** Every media id the articles use: the front-matter picture and body images. */
+function usedMedia(articles) {
+  const used = new Set();
+  for (const a of articles) {
+    if (a.media) used.add(a.media);
+    for (const b of a.blocks) if (b.type === 'image') used.add(b.media);
+  }
+  return [...used];
+}
+
+/**
+ * Which picture a locale shows for a media id: its own (help/media.<locale>.json
+ * and static/help/media/<locale>/) when it has one, the English one otherwise.
+ * Returns { m, locale } — the entry (file, w, h, kind, poster) and the folder.
+ */
+export function mediaFor(help, id) {
+  if (help.locale !== 'en' && help.media[id]) return { m: help.media[id], locale: help.locale };
+  return { m: (help.enMedia || help.media)[id], locale: 'en' };
+}
+
+/**
+ * English plus every translation: help/en/ always, then every locale in
+ * `helpLocales` and every help/<code>/ folder there is. Returns
+ * { en, byLocale, built, errors, warnings, notes } where `built` is the help of
+ * each HELP_LOCALES locale, in list order, English first.
+ */
+export function loadAllHelp({ root, topics, icons, helpLocales = ['en'], locales }) {
+  const en = loadHelp({ root, topics, icons });
+  const errors = [...en.errors], warnings = [...en.warnings], notes = [];
+  if (helpLocales[0] !== 'en') errors.push('site.config.mjs:1  HELP_LOCALES must start with "en" — English is the source every translation is checked against');
+  for (const code of helpLocales) {
+    if (!locales.includes(code)) errors.push(`site.config.mjs:1  HELP_LOCALES has "${code}", which is not in LOCALES`);
+  }
+  const helpDir = path.join(root, 'help');
+  const folders = fs.existsSync(helpDir)
+    ? fs.readdirSync(helpDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
+    : [];
+  const byLocale = new Map([['en', en]]);
+  for (const code of [...new Set([...helpLocales, ...folders])]) {
+    if (code === 'en') continue;
+    if (!locales.includes(code)) {
+      if (folders.includes(code)) errors.push(`help/${code}/:1  "${code}" is not a site locale (LOCALES) — translations use the site's codes (de, zh-Hans, …)`);
+      continue;
+    }
+    const t = loadTranslation({ root, locale: code, en, listed: helpLocales.includes(code) });
+    errors.push(...t.errors);
+    warnings.push(...t.warnings);
+    notes.push(...t.notes);
+    byLocale.set(code, t);
+  }
+  const built = helpLocales.filter((c) => byLocale.has(c)).map((c) => byLocale.get(c));
+  return { en, byLocale, built, errors, warnings, notes };
 }
 
 /**
@@ -418,15 +726,19 @@ export function readAppRoutes(appRepoPath) {
 }
 
 /**
- * The whole guard: loadHelp() plus everything that needs the app's routes and
- * the allowlist. Returns { errors, warnings, help }. `appRoutes` is a Set, or
- * null to skip the route checks (HELP_SKIP_ROUTE_CHECK=1).
+ * The whole guard: loadAllHelp() plus everything that needs the app's routes
+ * and the allowlist. Returns { errors, warnings, notes, help, all } — `help` is
+ * English, `all` what loadAllHelp returned. `appRoutes` is a Set, or null to
+ * skip the route checks (HELP_SKIP_ROUTE_CHECK=1). Routes are English-only data,
+ * so they are checked once, on English.
  */
-export function checkHelp({ root, locale = 'en', topics, icons, appRoutes }) {
-  const help = loadHelp({ root, locale, topics, icons });
-  const errors = [...help.errors];
-  const warnings = [...help.warnings];
-  if (!appRoutes) return { errors, warnings, help };
+export function checkHelp({ root, topics, icons, appRoutes, helpLocales = ['en'], locales = ['en'] }) {
+  const all = loadAllHelp({ root, topics, icons, helpLocales, locales });
+  const help = all.en;
+  const errors = [...all.errors];
+  const warnings = [...all.warnings];
+  const notes = all.notes;
+  if (!appRoutes) return { errors, warnings, notes, help, all };
 
   const allow = readJson(path.join(root, 'help', 'routes-allowlist.json'), 'help/routes-allowlist.json', errors, {});
   const never = allow.never || {};
@@ -463,5 +775,5 @@ export function checkHelp({ root, locale = 'en', topics, icons, appRoutes }) {
     if (r in pending) errors.push(`help/routes-allowlist.json:1  "${r}" is in both never and pending`);
   }
 
-  return { errors, warnings, help };
+  return { errors, warnings, notes, help, all };
 }
