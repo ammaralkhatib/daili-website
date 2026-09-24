@@ -9,6 +9,7 @@ tryIt: /documents
 since: 1.0.0
 updated: 2026-09-24
 order: 2
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: vault-where, vault-photos
 ---
 Keep insurance papers, school letters and receipts in folders, right in daili.
@@ -20,5 +21,7 @@ Keep insurance papers, school letters and receipts in folders, right in daili.
 5. To rename or delete a folder, press and hold it.
 
 **Share** sends a copy to another app, like your email or a messenger. That's how you give a file to someone in your family.
+
+daili keeps its own copy of each file. Deleting it here doesn't delete the original on your phone, and deleting the original doesn't delete it here.
 
 > Note: Deleting a folder deletes the files inside it too. This can't be undone.

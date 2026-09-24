@@ -9,6 +9,7 @@ tryIt: /settings/notifications
 since: 1.1.0
 updated: 2026-09-24
 order: 2
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: notifications-turn-on, notifications-help
 ---
 Too many notifications, or too few? You choose what daili tells you.

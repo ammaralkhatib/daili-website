@@ -8,6 +8,7 @@ routes: /
 since: 1.4.0
 updated: 2026-09-24
 order: 1
+mediaPending: hand-made screenshot of the phone home screen with daili widgets
 related: start-home, anywhere-web
 tipTitle: Your plan on your home screen
 tipBody: Add a daili widget and see what's next without opening the app.

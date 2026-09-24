@@ -9,6 +9,7 @@ tryIt: /settings/profile
 since: 1.0.0
 updated: 2026-09-24
 order: 6
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: account-download-data, family-roles, vault-where
 ---
 Want a copy of your data first? Download it before you start.

@@ -22,6 +22,10 @@ import {
 } from './site.config.mjs';
 import { loadHelp, visibleHelp } from './tools/help-lib.mjs';
 
+/** Where the help pages send their anonymous counts (api commit a19d079).
+ *  static/.htaccess allows exactly this origin in connect-src. */
+const HELP_EVENTS_URL = 'https://api.daili.app/v1/help/events';
+
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, 'dist');
 const p = (...s) => path.join(ROOT, ...s);
@@ -722,6 +726,7 @@ ${newOnes.map(helpRow).join('\n')}
   // have yet has no page to link to.
   const related = a.related.map((id) => shown.find((x) => x.id === id)).filter(Boolean);
   return {
+    id: a.id,
     topicHref: `/help/${a.topic}/`,
     topicTitle: HELP_TOPICS[a.topic].title,
     title: a.title,
@@ -998,10 +1003,17 @@ function build() {
   fs.renameSync(path.join(DIST, 'assets/style.css'), path.join(DIST, 'assets', cssName));
   fs.renameSync(path.join(DIST, 'assets/script.js'), path.join(DIST, 'assets', jsName));
   const cssHref = `/assets/${cssName}`, jsHref = `/assets/${jsName}`;
-  // The help search, hashed the same way. Loaded by /help/ only.
-  const helpJs = fs.readFileSync(p('static/assets/help-search.js'));
+  // The help search and the "Was this helpful?" counts, hashed the same way.
+  // Loaded by /help/ and the articles. The endpoint goes in before hashing;
+  // HELP_EVENTS_URL points it at a local mock for a test build only, and
+  // check-build fails any build that doesn't carry the real one.
+  const helpEventsUrl = process.env.HELP_EVENTS_URL || HELP_EVENTS_URL;
+  if (helpEventsUrl !== HELP_EVENTS_URL) console.warn(`!! HELP_EVENTS_URL=${helpEventsUrl} — a test build, never deploy it`);
+  const helpJs = Buffer.from(fs.readFileSync(p('static/assets/help-search.js'), 'utf8')
+    .replace('__HELP_EVENTS_URL__', helpEventsUrl));
   const helpJsName = `help-search.${sha8(helpJs)}.js`;
-  fs.renameSync(path.join(DIST, 'assets/help-search.js'), path.join(DIST, 'assets', helpJsName));
+  fs.rmSync(path.join(DIST, 'assets/help-search.js'));
+  fs.writeFileSync(path.join(DIST, 'assets', helpJsName), helpJs);
   const helpSearchHref = `/assets/${helpJsName}`;
 
   const detector = buildDetector();

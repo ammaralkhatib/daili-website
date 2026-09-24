@@ -8,6 +8,7 @@ routes: /
 since: 1.2.0
 updated: 2026-09-24
 order: 3
+mediaPending: hand-made photo or screenshot of the wall board on a tablet
 related: anywhere-web, start-today
 ---
 An old tablet can become your family board. It shows today and tomorrow, the to-dos due today, today's meals and the next birthdays, in letters you can read from across the room.

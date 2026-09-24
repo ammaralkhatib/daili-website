@@ -9,6 +9,7 @@ tryIt: /settings/profile
 since: 1.0.0
 updated: 2026-09-24
 order: 5
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: account-delete, vault-where
 ---
 You can ask for a copy of your data at any time.

@@ -192,7 +192,24 @@ expectFail('media file missing on disk', /names start-home\.webp, which is not i
 expectFail('orphan media entry', /"spare" is used by no article/, (st) => {
   st.media.spare = { file: 'start-home.webp', w: 1, h: 1, kind: 'image' };
 });
+expectFail('missing media', /invite\.md:\d+ +has no "media"/, (st) => { delete st.fm.invite.media; });
+expectFail('media and mediaPending', /has both "media" and "mediaPending"/, (st) => { st.fm.invite.mediaPending = 'hand-made screenshot'; });
+expectFail('mediaPending too long', /mediaPending is 81 chars/, (st) => { delete st.fm.invite.media; st.fm.invite.mediaPending = 'x'.repeat(81); });
 expectFail('media without w/h', /needs integer "w" and "h"/, (st) => { delete st.media['start-home'].h; });
+
+{
+  // mediaPending is the one allowed way to go without a picture
+  let errors;
+  try {
+    errors = run((st) => {
+      delete st.fm.home.media; st.fm.home.mediaPending = 'hand-made screenshot of the phone home screen';
+      st.body.home = 'Home is where daili opens.';
+      delete st.media['start-home']; st.mediaFiles = st.mediaFiles.filter((f) => f !== 'start-home.webp');
+    });
+  } catch (e) { errors = [`(threw) ${e.message}`]; }
+  if (errors.length) failures.push(`mediaPending instead of media: expected no errors, got:\n    ${errors.join('\n    ')}`);
+  else passed++;
+}
 
 // ---- the CLI itself: exit codes and the skip switch ---------------------------
 {

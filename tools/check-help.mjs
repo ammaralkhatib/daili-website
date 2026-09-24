@@ -43,4 +43,10 @@ if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
+// Articles allowed to go without a picture for now, so they stay visible.
+const pending = help.articles.filter((a) => a.mediaPending);
+if (pending.length) {
+  console.log(`help: ${pending.length} article(s) waiting for a picture:`);
+  for (const a of pending) console.log(`  ${a.id} — ${a.mediaPending}`);
+}
 console.log(`help OK · ${help.articles.length} article(s)${appRoutes ? ` · ${appRoutes.size} app routes checked` : ' · route checks SKIPPED'}`);

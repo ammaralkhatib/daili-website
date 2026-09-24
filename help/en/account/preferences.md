@@ -9,6 +9,7 @@ tryIt: /settings
 since: 1.3.0
 updated: 2026-09-24
 order: 2
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: account-profile, start-edit-home
 ---
 Tap your picture at the top of Home to open **Settings**. You find these under **Preferences**.

@@ -8,6 +8,7 @@ routes: /
 since: 1.1.0
 updated: 2026-09-24
 order: 2
+mediaPending: hand-made screenshot of daili in a computer browser
 related: anywhere-wall, anywhere-widgets
 ---
 On a computer, you can use daili in your browser. It's the same account and the same family, so everything you change shows up on everyone's phones.

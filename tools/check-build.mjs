@@ -735,6 +735,18 @@ for (const loc of LOCALES) {
     }
   }
 
+  // The help counts: the shipped script posts to the real endpoint (a
+  // HELP_EVENTS_URL test build must never pass), and the CSP lets it.
+  const helpJsFiles = fs.readdirSync(path.join(DIST, 'assets')).filter((f) => /^help-search\.[0-9a-f]{8}\.js$/.test(f));
+  if (helpJsFiles.length !== 1) fail('assets/', `expected one hashed help-search.*.js, found ${helpJsFiles.length}`);
+  else if (!read(path.join(DIST, 'assets', helpJsFiles[0])).includes('"https://api.daili.app/v1/help/events"')) {
+    fail(`assets/${helpJsFiles[0]}`, 'does not post to https://api.daili.app/v1/help/events — a HELP_EVENTS_URL test build must not ship');
+  }
+  const htFile = path.join(DIST, '.htaccess');
+  if (fs.existsSync(htFile) && !/connect-src https:\/\/api\.daili\.app;/.test(read(htFile))) {
+    fail('.htaccess', "CSP connect-src is not exactly https://api.daili.app — the help counts would be blocked, or more is allowed than needed");
+  }
+
   // help/en.json: parses, is shaped for the app, and every image has a cache-buster.
   const jsonRel = 'help/en.json';
   const jsonFile = path.join(DIST, jsonRel);

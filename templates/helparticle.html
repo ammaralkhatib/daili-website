@@ -6,6 +6,17 @@
 
 {{{ help.body }}}
 
+  <!-- Hidden until help-search.js un-hides it: without the script a tap
+       would do nothing. -->
+  <div class="help-helpful" id="help-helpful" data-article="{{ help.id }}" hidden>
+    <p class="help-helpful-q">Was this helpful?</p>
+    <div class="help-helpful-btns">
+      <button type="button" class="help-helpful-btn" data-value="1" aria-label="Yes, helpful"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v9H4v-9h3zm0 0l4-7c1.2 0 2 .9 2 2v3h5.2c1.2 0 2 1.1 1.8 2.3l-1.3 7c-.2.9-1 1.7-2 1.7H7"/></svg></button>
+      <button type="button" class="help-helpful-btn" data-value="0" aria-label="No, not helpful"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 13V4h3v9h-3zm0 0l-4 7c-1.2 0-2-.9-2-2v-3H5.8c-1.2 0-2-1.1-1.8-2.3l1.3-7c.2-.9 1-1.7 2-1.7H17"/></svg></button>
+    </div>
+    <p class="help-helpful-thanks" id="help-helpful-thanks" role="status" hidden>Thanks!</p>
+  </div>
+
 {{{ help.related }}}
 
   <aside class="help-stuck">
@@ -18,5 +29,7 @@
   <div class="help-badges">
 {{> storebadges }}
   </div>
+
+  <script src="{{ page.helpSearchHref }}" defer></script>
 
 </article>

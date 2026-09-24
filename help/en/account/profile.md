@@ -9,6 +9,7 @@ tryIt: /settings/profile
 since: 1.1.0
 updated: 2026-09-24
 order: 1
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: account-preferences, account-password
 ---
 Your family sees your name, picture and colour next to everything you add.

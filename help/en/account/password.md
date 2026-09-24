@@ -9,6 +9,7 @@ tryIt: /settings/profile
 since: 1.0.0
 updated: 2026-09-24
 order: 3
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: account-profile, start-sign-in
 ---
 You change your password on your profile.

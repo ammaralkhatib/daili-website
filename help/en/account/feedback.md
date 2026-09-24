@@ -9,6 +9,7 @@ tryIt: /settings
 since: 1.1.0
 updated: 2026-09-24
 order: 8
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: notifications-help
 ---
 Found a bug, or have an idea? We read every message.

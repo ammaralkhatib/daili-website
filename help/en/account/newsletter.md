@@ -9,6 +9,7 @@ tryIt: /settings/notifications
 since: 1.6.0
 updated: 2026-09-24
 order: 7
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: notifications-choose, account-verify-email
 ---
 The daili newsletter is about one email a month: new features and a tip for your family's week. No ads.

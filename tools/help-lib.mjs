@@ -18,7 +18,7 @@ import path from 'node:path';
 /** Every front-matter key an article may carry. Anything else is a typo. */
 const KEYS = new Set([
   'id', 'topic', 'title', 'summary', 'keywords', 'routes', 'tryIt', 'since',
-  'updated', 'order', 'media', 'related',
+  'updated', 'order', 'media', 'mediaPending', 'related',
   'tipTitle', 'tipBody', 'tipSkipIf', 'tipPriority',
   'checklist', 'checklistDoneIf',
 ]);
@@ -29,7 +29,7 @@ const CHECKLIST_KEYS = ['checklist', 'checklistDoneIf'];
 export const LIMITS = {
   title: 70, summary: 140, keywordsMin: 1, keywordsMax: 12,
   steps: 7, images: 2, words: 150,
-  tipTitle: 60, tipBody: 120, topicSummary: 90,
+  tipTitle: 60, tipBody: 120, topicSummary: 90, mediaPending: 80,
 };
 
 const list = (v) => v.split(',').map((s) => s.trim()).filter(Boolean);
@@ -281,12 +281,19 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
     }
 
     // media: the front-matter picture and every image in the body
+    // Every article has a picture. `mediaPending: <reason>` is the one way to
+    // go without, for a picture the help-shots tool can't take (the phone's
+    // home screen, a browser); the build lists those so they aren't forgotten.
     const mediaId = meta.media || null;
-    if (mediaId === null) {
-      // TODO(phase 2): a missing `media` becomes an error once the help-shots
-      // pipeline exists and every article can have its picture.
-      warnings.push(`${rel}:1  has no "media" — every article gets a picture in phase 2`);
-    } else if (!(mediaId in media)) at('media', `media "${mediaId}" is not in help/media.json`);
+    const mediaPending = meta.mediaPending || null;
+    if (mediaId !== null && mediaPending !== null) {
+      at('mediaPending', 'has both "media" and "mediaPending" — drop mediaPending once the picture exists');
+    } else if (mediaId === null && mediaPending === null) {
+      at('media', 'has no "media" — every article needs a picture (or "mediaPending: <reason>" until a hand-made one exists)');
+    } else if (mediaId !== null && !(mediaId in media)) at('media', `media "${mediaId}" is not in help/media.json`);
+    if (mediaPending !== null && mediaPending.length > LIMITS.mediaPending) {
+      at('mediaPending', `mediaPending is ${mediaPending.length} chars, the limit is ${LIMITS.mediaPending}`);
+    }
     for (const b of blocks) {
       if (b.type === 'image' && !(b.media in media)) errors.push(`${rel}:${b.line}  image "${b.media}" is not in help/media.json`);
     }
@@ -330,6 +337,7 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
       updated: meta.updated || '',
       order,
       media: mediaId,
+      mediaPending,
       related: meta.related ? list(meta.related) : [],
       tip,
       checklist,

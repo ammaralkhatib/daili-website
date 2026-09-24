@@ -9,6 +9,7 @@ tryIt: /photos
 since: 1.0.0
 updated: 2026-09-24
 order: 3
+mediaPending: help-shots batch 3 (app prompt 011) has not run yet
 related: vault-where, vault-documents
 ---
 Keep family photos sorted in albums, right in daili.
@@ -21,4 +22,4 @@ Keep family photos sorted in albums, right in daili.
 
 To rename or delete an album, press and hold it.
 
-> Note: daili keeps its own copy of each photo. Deleting it in daili doesn't touch your camera roll.
+> Note: daili keeps its own copy of each photo. Deleting it here doesn't delete the original in your camera roll, and deleting the original doesn't delete it here.

@@ -66,6 +66,10 @@ writes `help/en.json`, which the app downloads for its Help screen and tips.
 - `help/media.json` maps a media id to a file in `static/help/media/en/` with
   its `w`/`h`. Page and JSON URLs carry `?v=<sha8>`, so a re-shot picture
   shows up despite the 30-day image cache.
+- Every article needs a `media` picture. The one exception is
+  `mediaPending: <reason>` (≤ 80 chars, never together with `media`), for a
+  picture the help-shots tool can't take (the phone's home screen, a
+  browser). `check-help` lists every pending article on each build.
 - `help/skip-keys.json` is the vocabulary for `tipSkipIf` / `checklistDoneIf`.
 - `help/routes-allowlist.json`: app routes with no article yet (`pending`,
   the to-do list for new articles) or never (`never`).
@@ -73,6 +77,17 @@ writes `help/en.json`, which the app downloads for its Help screen and tips.
   hide articles whose `since` is newer; `en.json` keeps all) and
   `HELP_PUBLIC` (false = every help page noindex, not in the sitemap, no
   footer link).
+
+**Help counts.** `static/assets/help-search.js` (loaded on `/help/` and every
+article) sends two anonymous counts to `https://api.daili.app/v1/help/events`:
+👍/👎 from the "Was this helpful?" row (remembered per article in
+`localStorage`), and a search of 3+ characters that found nothing (after 2 s
+without typing, or on leaving the field; once per text per page view). One
+POST per event, no cookies (`credentials: "omit"`), no ids, fire and forget.
+The CSP allows exactly that origin (`connect-src https://api.daili.app`), and
+privacy section 2 describes it in every locale. `HELP_EVENTS_URL=<url> node
+build.mjs` points a test build at a local mock; `check-build` fails any build
+that doesn't carry the real endpoint, so such a build can't be deployed.
 
 **`check-help.mjs`** reads the app's `lib/core/routing/route_names.dart`
 (`DAILI_APP_REPO`, default `../familyplanner-app`) and fails when an article

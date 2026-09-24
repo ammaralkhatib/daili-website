@@ -1036,6 +1036,17 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 .help-updated{color:var(--muted);font-size:.9rem;margin-top:22px}
 .help-article .help-updated{color:var(--muted);font-size:.9rem}
 .help-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+/* "Was this helpful?": outlined pill buttons, like the app's. */
+.help-helpful{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:28px}
+.help-helpful[hidden]{display:none}
+.help-article .help-helpful-q{margin:0;font-weight:600;color:var(--ink)}
+.help-helpful-btns{display:flex;gap:10px}
+.help-helpful-btn{display:inline-grid;place-items:center;width:56px;height:40px;border-radius:999px;background:transparent;border:1.5px solid var(--mint-strong);color:var(--forest);cursor:pointer;transition:background .15s,border-color .15s}
+.help-helpful-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.help-helpful-btn:hover:not(:disabled){background:var(--mint-soft);border-color:var(--forest)}
+.help-helpful-btn:focus-visible{outline:2px solid var(--forest);outline-offset:2px}
+.help-helpful-btn:disabled{opacity:.5;cursor:default}
+.help-article .help-helpful-thanks{margin:0;color:var(--forest);font-weight:600}
 
 @media(max-width:380px){.help-hero{flex-direction:column;align-items:flex-start}}
 @media(max-width:560px){
