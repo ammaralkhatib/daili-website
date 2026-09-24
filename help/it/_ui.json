@@ -1,0 +1,43 @@
+{
+  "metaTitle": "Aiuto — daili",
+  "metaDescription": "Guide brevi per tutto daili: il calendario, le liste, i pasti, i compleanni, la tua famiglia e il tuo account.",
+  "pageTitle": "{title} — Aiuto daili",
+  "heroTitle": "Come possiamo aiutarti?",
+  "heroLede": "Guide brevi per tutto daili.",
+  "minziAlt": "Minzi, il gatto",
+  "searchLabel": "Cerca nell’aiuto",
+  "searchPlaceholder": "Prova «invita» o «calendario»",
+  "results": "Risultati",
+  "noResult": "Nessuna guida corrisponde, per ora. Prova un’altra parola o scrivici a {email}.",
+  "newInVersion": "Novità della versione {version}",
+  "browseByTopic": "Sfoglia per argomento",
+  "articleCount": {
+    "one": "{n} articolo",
+    "many": "{n} di articoli",
+    "other": "{n} articoli"
+  },
+  "stillStuck": "Ancora bloccato?",
+  "writeToUs": "Scrivici",
+  "stuckBody": "{writeToUs} e ti risponde una persona vera, di solito entro un giorno o due.",
+  "crumbHelp": "Aiuto",
+  "note": "Nota:",
+  "related": "Vedi anche",
+  "helpfulQuestion": "Ti è stato utile?",
+  "helpfulYes": "Sì, utile",
+  "helpfulNo": "No, non utile",
+  "thanks": "Grazie!",
+  "updated": "Aggiornato",
+  "topics": {
+    "start": { "title": "Primi passi", "summary": "I tuoi primi minuti in daili: la schermata iniziale e le basi." },
+    "family": { "title": "Famiglia e gruppi", "summary": "Invita persone, aggiungi bambini senza telefono e passa da un gruppo all’altro." },
+    "calendar": { "title": "Calendario", "summary": "Eventi, promemoria, ripetizioni e i calendari che usi già." },
+    "lists": { "title": "Liste e attività", "summary": "Liste della spesa che tutti possono spuntare, e attività con un nome sopra." },
+    "meals": { "title": "Pasti e ricette", "summary": "Pianifica i pasti della settimana e tieni le ricette di famiglia in un solo posto." },
+    "birthdays": { "title": "Compleanni", "summary": "Compleanni e ricorrenze, con un promemoria prima di ognuno." },
+    "habits": { "title": "Abitudini e Minzi", "summary": "Costruite abitudini insieme e rendete felice Minzi, il gatto." },
+    "vault": { "title": "Documenti e foto", "summary": "Documenti e foto sul tuo telefono, ordinati in cartelle e album." },
+    "anywhere": { "title": "Widget, web e schermo a parete", "summary": "daili sulla schermata Home, nel browser e su uno schermo a parete." },
+    "notifications": { "title": "Notifiche", "summary": "Scegli di cosa ti avvisa daili, e quando." },
+    "account": { "title": "Impostazioni e account", "summary": "Il tuo profilo, le tue impostazioni e il tuo account." }
+  }
+}
