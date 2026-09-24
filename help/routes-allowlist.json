@@ -1,7 +1,10 @@
 {
   "never": {
     "/maintenance": "Shown automatically while the server is down; nobody opens it on purpose.",
-    "/dev/assets": "Developer-only asset gallery; not in store builds."
+    "/dev/assets": "Developer-only asset gallery; not in store builds.",
+    "/help": "The help center itself.",
+    "/help/topic/:topicId": "The help center itself.",
+    "/help/article/:articleId": "The help center itself."
   },
   "pending": {}
 }

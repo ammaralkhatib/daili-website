@@ -8,7 +8,7 @@ routes: /documents, /documents/:folderId
 tryIt: /documents
 since: 1.0.0
 updated: 2026-09-24
-order: 2
+order: 1
 media: vault-documents
 related: vault-where, vault-photos
 ---

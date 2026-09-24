@@ -4,10 +4,11 @@ topic: family
 title: Invite someone to your family
 summary: Share a 6-digit code, a QR code or a link. They join in seconds.
 keywords: invite, add member, partner, code, qr, join, link, share
-routes: /family/invite
+routes: /family, /family/invite
 tryIt: /family/invite
 since: 1.3.0
 updated: 2026-09-24
+order: 1
 media: family-invite
 related: start-home
 tipTitle: Plan it together

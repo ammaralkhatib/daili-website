@@ -4,11 +4,11 @@ topic: vault
 title: Where your documents and photos are kept
 summary: Documents and Photos stay on this phone only. daili doesn't share them with your family, and it doesn't back them up.
 keywords: backup, back up, cloud, sync, private, safe, new phone, lost phone, documents, photos, share, where
-routes: /documents, /photos
+routes: /documents
 tryIt: /documents
 since: 1.0.0
 updated: 2026-09-24
-order: 1
+order: 2
 media: vault-where
 related: vault-documents, vault-photos, account-delete
 ---
