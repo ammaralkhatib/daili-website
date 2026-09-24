@@ -9,10 +9,12 @@ tryIt: /settings
 since: 1.1.0
 updated: 2026-09-24
 order: 8
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-feedback
 related: notifications-help
 ---
 Found a bug, or have an idea? We read every message.
+
+![The Settings screen. Send feedback, under About, is circled.](account-feedback)
 
 1. Open **Settings** and scroll down to **About**.
 2. Tap **Send feedback**. Your mail app opens a new email to us. Write what's on your mind and send it.

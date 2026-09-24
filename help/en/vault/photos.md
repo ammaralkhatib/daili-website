@@ -9,10 +9,12 @@ tryIt: /photos
 since: 1.0.0
 updated: 2026-09-24
 order: 3
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: vault-photos
 related: vault-where, vault-documents
 ---
 Keep family photos sorted in albums, right in daili.
+
+![The Family album with four pictures. The add-photo button at the bottom right is circled.](vault-photos)
 
 1. On Home, tap **Photos**, then tap an album.
 2. For a new album, tap the button at the bottom right (**New album**). Type an **Album name** and tap **Save**.

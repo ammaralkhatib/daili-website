@@ -9,10 +9,12 @@ tryIt: /settings/notifications
 since: 1.6.0
 updated: 2026-09-24
 order: 7
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-newsletter
 related: notifications-choose, account-verify-email
 ---
 The daili newsletter is about one email a month: new features and a tip for your family's week. No ads.
+
+![The bottom of the Notifications screen. The daili newsletter switch, under Email, is circled.](account-newsletter)
 
 1. Open **Settings** and tap **Notifications**.
 2. Scroll down to **Email**.

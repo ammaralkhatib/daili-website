@@ -9,10 +9,12 @@ tryIt: /settings/notifications
 since: 1.1.0
 updated: 2026-09-24
 order: 3
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: notifications-help
 related: notifications-turn-on, notifications-choose
 ---
 A reminder didn't come? Check these, in this order.
+
+![Further down the Notifications screen. The Quiet hours switch is circled.](notifications-help)
 
 1. **Your phone allows daili.** Open **Settings**, then **Notifications**. If a note at the top says notifications are off, tap its button.
 2. **The switch is on.** On the same screen, check the switch for that kind, like **To-do reminders**.

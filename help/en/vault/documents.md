@@ -9,10 +9,12 @@ tryIt: /documents
 since: 1.0.0
 updated: 2026-09-24
 order: 2
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: vault-documents
 related: vault-where, vault-photos
 ---
 Keep insurance papers, school letters and receipts in folders, right in daili.
+
+![The Important papers folder with three files. The + button at the bottom right is circled.](vault-documents)
 
 1. On Home, tap **Documents**, then tap a folder.
 2. For a new folder, tap the folder button at the bottom right (**New folder**). Type a **Folder name**, pick a **Color** and tap **Save**.

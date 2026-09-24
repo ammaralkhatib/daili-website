@@ -9,10 +9,12 @@ tryIt: /settings/profile
 since: 1.0.0
 updated: 2026-09-24
 order: 3
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-password
 related: account-profile, start-sign-in
 ---
 You change your password on your profile.
+
+![The Profile screen. Change password, under Account, is circled.](account-password)
 
 1. Open **Settings**, then tap your name at the top.
 2. Under **Account**, tap **Change password**.

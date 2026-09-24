@@ -9,10 +9,12 @@ tryIt: /settings/notifications
 since: 1.1.0
 updated: 2026-09-24
 order: 2
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: notifications-choose
 related: notifications-turn-on, notifications-help
 ---
 Too many notifications, or too few? You choose what daili tells you.
+
+![The Notifications screen. The Reminders (for you) group with its five switches is circled.](notifications-choose)
 
 1. Open **Settings** and tap **Notifications**.
 2. Under **Reminders (for you)**, switch on the reminders you want, like **Event reminders** or **Birthday reminders**.

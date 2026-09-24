@@ -9,10 +9,12 @@ tryIt: /settings
 since: 1.3.0
 updated: 2026-09-24
 order: 2
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-preferences
 related: account-profile, start-edit-home
 ---
 Tap your picture at the top of Home to open **Settings**. You find these under **Preferences**.
+
+![The Settings screen. The Preferences card with Language, Time format, Appearance, Home screen and Vibration is circled.](account-preferences)
 
 1. **Language**: pick one of daili's languages, or **System default** to follow your phone.
 2. **Time format**: **24-hour**, **12-hour**, or **System** to follow your phone.

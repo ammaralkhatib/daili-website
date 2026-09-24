@@ -9,12 +9,14 @@ tryIt: /settings/notifications
 since: 1.1.0
 updated: 2026-09-24
 order: 1
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: notifications-turn-on
 related: notifications-choose, notifications-help
 checklist: 3
 checklistDoneIf: notificationsOn
 ---
 daili can remind you about events, to-dos, birthdays and habits, and tell you when someone in your family changes something. For that, your phone has to allow it.
+
+![The top of the Notifications screen with a note that notifications are off. Turn on notifications is circled.](notifications-turn-on)
 
 1. Tap your picture at the top of Home to open **Settings**, then tap **Notifications**.
 2. While notifications are off, a note at the top says so. Tap **Turn on notifications** in it.

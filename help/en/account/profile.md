@@ -9,10 +9,12 @@ tryIt: /settings/profile
 since: 1.1.0
 updated: 2026-09-24
 order: 1
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-profile
 related: account-preferences, account-password
 ---
 Your family sees your name, picture and colour next to everything you add.
+
+![The Profile screen with the name, colours and account rows. Change picture is circled.](account-profile)
 
 1. Tap your picture at the top of Home to open **Settings**. Then tap your name at the top.
 2. Tap **Change picture**. Choose **Take photo** or **Choose from library**, or pick an avatar under **Adults** or **Kids**. Your picture changes right away.

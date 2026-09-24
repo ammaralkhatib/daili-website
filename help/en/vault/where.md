@@ -9,10 +9,12 @@ tryIt: /documents
 since: 1.0.0
 updated: 2026-09-24
 order: 1
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: vault-where
 related: vault-documents, vault-photos, account-delete
 ---
 Documents and Photos are your private drawer in daili. Everything you put there stays on this phone, and nowhere else.
+
+![The Documents screen with five folders: Important papers, Insurance, School, Car and Receipts.](vault-where)
 
 1. **Only you see them.** Your family can't, and nothing is sent to daili's servers.
 2. **daili doesn't back them up.** If you lose or reset your phone, or delete the daili app, the files are gone. Your phone's own backup may have saved them, but don't count on it.

@@ -9,10 +9,12 @@ tryIt: /settings/profile
 since: 1.0.0
 updated: 2026-09-24
 order: 5
-mediaPending: help-shots batch 3 (app prompt 011) has not run yet
+media: account-download-data
 related: account-delete, vault-where
 ---
 You can ask for a copy of your data at any time.
+
+![The Profile screen. Download my data, under Account, is circled.](account-download-data)
 
 1. Open **Settings**, then tap your name at the top.
 2. Under **Account**, tap **Download my data**.
