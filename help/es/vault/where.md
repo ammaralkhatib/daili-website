@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Documentos y Fotos son tu cajón privado en daili. Todo lo que guardas ahí se queda en este teléfono, y en ningún otro sitio.
 
-![La pantalla Documentos con cinco carpetas: Papeles importantes, Seguros, Colegio, Coche y Recibos.](vault-where)
+![La pantalla Documentos con cinco carpetas: Documentos importantes, Seguros, Colegio, Coche y Recibos.](vault-where)
 
 1. **Solo los ves tú.** Tu familia no, y no se envía nada a los servidores de daili.
 2. **daili no hace copia de seguridad.** Si pierdes o restableces tu teléfono, o borras la app daili, los archivos se pierden. Puede que la copia de seguridad del teléfono los guardara, pero no cuentes con ello.

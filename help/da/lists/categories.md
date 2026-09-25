@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Nye varer får en kategori ud fra deres navn, så mælk lander i **Mejeri**. Grupper listen efter kategori, så går du kun én gang gennem butikken.
 
-![Menuen ⋯ på listen Dagligvarer. Kontakten Gruppér efter kategori og rækken Kategorier er markeret med en cirkel.](lists-categories)
+![Menuen ⋯ på listen Indkøb. Kontakten Gruppér efter kategori og rækken Kategorier er markeret med en cirkel.](lists-categories)
 
 1. Åbn en indkøbsliste, og tryk på **⋯** øverst.
 2. Slå **Gruppér efter kategori** til.

@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Documenten en Foto’s zijn je eigen la in daili. Alles wat je daar bewaart, blijft op deze telefoon, en nergens anders.
 
-![Het scherm Documenten met vijf mappen: Belangrijke papieren, Verzekering, School, Auto en Bonnetjes.](vault-where)
+![Het scherm Documenten met vijf mappen: Belangrijke papieren, Verzekeringen, School, Auto en Bonnetjes.](vault-where)
 
 1. **Alleen jij ziet ze.** Je gezin niet, en er wordt niets naar de servers van daili gestuurd.
 2. **daili maakt er geen back-up van.** Raak je je telefoon kwijt, zet je hem terug naar de fabrieksinstellingen of verwijder je de daili-app, dan zijn de bestanden weg. De back-up van je telefoon heeft ze misschien bewaard, maar reken er niet op.

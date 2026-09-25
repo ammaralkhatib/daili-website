@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Guarda los papeles del seguro, las cartas del colegio y los recibos en carpetas, dentro de daili.
 
-![La carpeta Papeles importantes con tres archivos. El botón + abajo a la derecha está marcado con un círculo.](vault-documents)
+![La carpeta Documentos importantes con tres archivos. El botón + abajo a la derecha está marcado con un círculo.](vault-documents)
 
 1. En la pantalla de inicio, toca **Documentos** y luego una carpeta.
 2. Para una carpeta nueva, toca el botón de carpeta abajo a la derecha (**Carpeta nueva**). Escribe un **Nombre de la carpeta**, elige un **Color** y toca **Guardar**.

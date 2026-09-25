@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Dokumente und Fotos sind deine private Schublade in daili. Alles, was du dort ablegst, bleibt auf diesem Handy und nirgendwo sonst.
 
-![Der Bildschirm Dokumente mit fünf Ordnern: Wichtige Papiere, Versicherung, Schule, Auto und Belege.](vault-where)
+![Der Bildschirm Dokumente mit fünf Ordnern: Wichtige Unterlagen, Versicherungen, Schule, Auto und Belege.](vault-where)
 
 1. **Nur du siehst sie.** Deine Familie nicht, und nichts wird an die Server von daili geschickt.
 2. **daili sichert sie nicht.** Verlierst du dein Handy, setzt du es zurück oder löschst du die daili-App, sind die Dateien weg. Das Backup deines Handys hat sie vielleicht gesichert, aber verlass dich nicht darauf.

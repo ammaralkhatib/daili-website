@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Hold familiens bilder sortert i album, rett i daili.
 
-![Albumet Familie med fire bilder. Knappen for å legge til bilder nede til høyre er ringet inn.](vault-photos)
+![Albumet Familien med fire bilder. Knappen for å legge til bilder nede til høyre er ringet inn.](vault-photos)
 
 1. Trykk på **Bilder** på startskjermen, og så på et album.
 2. Vil du ha et nytt album, trykker du på knappen nede til høyre (**Nytt album**). Skriv inn et **Albumnavn**, og trykk på **Lagre**.

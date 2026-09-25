@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Bewahre Versicherungspapiere, Elternbriefe und Belege in Ordnern auf, direkt in daili.
 
-![Der Ordner Wichtige Papiere mit drei Dateien. Der Button + unten rechts ist eingekreist.](vault-documents)
+![Der Ordner Wichtige Unterlagen mit drei Dateien. Der Button + unten rechts ist eingekreist.](vault-documents)
 
 1. Tippe auf dem Startbildschirm auf **Dokumente** und dann auf einen Ordner.
 2. Für einen neuen Ordner tippst du unten rechts auf den Ordner-Button (**Neuer Ordner**). Gib unter **Ordnername** einen Namen ein, wähle eine **Farbe** und tippe auf **Speichern**.

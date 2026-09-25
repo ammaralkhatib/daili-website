@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Hold familiens billeder sorteret i album, direkte i daili.
 
-![Albummet Familie med fire billeder. Knappen til at tilføje billeder nederst til højre er markeret med en cirkel.](vault-photos)
+![Albummet Familien med fire billeder. Knappen til at tilføje billeder nederst til højre er markeret med en cirkel.](vault-photos)
 
 1. Tryk på **Billeder** på startskærmen, og tryk så på et album.
 2. Vil du have et nyt album, så tryk på knappen nederst til højre (**Nyt album**). Skriv et **Albumnavn**, og tryk på **Gem**.

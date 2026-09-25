@@ -1263,7 +1263,7 @@ ${feedItems}
     if (!k) continue;
     console.log(`help ${j.locale}: pages + ${j.locale}.json ${j.articles.length} articles, ${j.tips.length} tips, ${j.checklist.length} checklist`);
     const english = helpAll.built[k].englishPictures;
-    if (english) console.log(`help ${j.locale}: ${english} picture(s) in English for now`);
+    console.log(`help ${j.locale}: ${english} picture(s) in English${english ? ' (listed gaps, help/media-gaps.json)' : ''}`);
   }
   for (const w of helpAll.warnings) console.warn(`WARN  ${w}`);
   for (const [name, st] of Object.entries(stores)) {

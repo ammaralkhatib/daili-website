@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Nya poster får en kategori utifrån namnet, så mjölk hamnar under **Mejeri**. Gruppera listan efter kategori så går du bara igenom butiken en gång.
 
-![Menyn ⋯ för listan Matvaror. Reglaget Gruppera efter kategori och raden Kategorier är inringade.](lists-categories)
+![Menyn ⋯ för listan Handla. Reglaget Gruppera efter kategori och raden Kategorier är inringade.](lists-categories)
 
 1. Öppna en inköpslista och tryck på **⋯** högst upp.
 2. Slå på **Gruppera efter kategori**.

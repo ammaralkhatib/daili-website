@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Každý v rodině vidí stejné nákupní seznamy. Když někdo přidá nebo odškrtne položku, vidí to všichni.
 
-![Seznam Potraviny s otevřenými položkami a dvěma odškrtnutými v části Hotovo. Zakroužkovaná je lišta Přidat položku dole.](lists-shopping)
+![Seznam Nákup s otevřenými položkami a dvěma odškrtnutými v části Hotovo. Zakroužkovaná je lišta Přidat položku dole.](lists-shopping)
 
 1. Na domovské obrazovce klepni na **Nákupy** a pak na seznam. Pro nový seznam klepni na **+**, vyplň **Název** a klepni na **Vytvořit**.
 2. Napiš, co potřebuješ, do pole **Přidat položku** dole a přidej to.

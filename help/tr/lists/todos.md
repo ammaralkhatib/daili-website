@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Görev listeleri alışveriş listeleri gibi çalışır, ama bir görevin ayrıca bir sorumlusu, bitiş tarihi ve hatırlatıcısı olabilir.
 
-![Tek listeli Görevler ekranı. Ev listesinin kartı daire içine alınmış.](lists-todos)
+![Tek listeli Görevler ekranı. Ev işleri listesinin kartı daire içine alınmış.](lists-todos)
 
 1. Ana ekranda **Görevler** kutucuğuna, sonra bir listeye dokun. Yeni bir liste için **+** simgesine dokun, **Ad** alanına bir ad yaz ve **Oluştur** düğmesine dokun.
 2. Görevi alttaki **Öğe ekle** alanına yaz ve ekle.

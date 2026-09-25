@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Sæt flueben ved en vane, så snart du har gjort den. Hvert flueben giver familien energi.
 
-![Skærmen Vaner. Den runde fluebensknap ved siden af Udstrækning er markeret med en cirkel.](habits-tick)
+![Skærmen Vaner. Den runde fluebensknap ved siden af Stræk ud er markeret med en cirkel.](habits-tick)
 
 1. Tryk på **Vaner** på startskærmen.
 2. Tryk på den runde knap til højre for en vane. Ved en tæller trykker du på **En mere**, til du når målet.

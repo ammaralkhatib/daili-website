@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Dokumenter og Bilder er den private skuffen din i daili. Alt du legger der, blir på denne telefonen og ingen andre steder.
 
-![Skjermen Dokumenter med fem mapper: Viktige papirer, Forsikring, Skole, Bil og Kvitteringer.](vault-where)
+![Skjermen Dokumenter med fem mapper: Viktige papirer, Forsikringer, Skole, Bil og Kvitteringer.](vault-where)
 
 1. **Bare du ser dem.** Familien din kan ikke det, og ingenting sendes til dailis servere.
 2. **daili tar ikke sikkerhetskopi av dem.** Mister eller tilbakestiller du telefonen, eller sletter du daili-appen, er filene borte. Telefonens egen sikkerhetskopi kan ha lagret dem, men ikke regn med det.

@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Tehtävälistat toimivat kuin ostoslistat, mutta tehtävällä voi olla myös henkilö, eräpäivä ja muistutus.
 
-![Tehtävät-näkymä, jossa on yksi lista. Kotitalous-listan kortti on ympyröity.](lists-todos)
+![Tehtävät-näkymä, jossa on yksi lista. Kotityöt-listan kortti on ympyröity.](lists-todos)
 
 1. Napauta aloitusnäytöllä **Tehtävät** ja sitten listaa. Jos haluat uuden listan, napauta **+**, kirjoita **Nimi** ja napauta **Luo**.
 2. Kirjoita tehtävä alareunan kenttään **Lisää kohde** ja lisää se.

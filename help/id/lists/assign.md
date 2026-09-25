@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Tugas yang ada namanya akan dikerjakan. Anda bisa memberikannya ke satu orang atau beberapa.
 
-![Lembar Ubah barang untuk sebuah tugas. Kolom Ditugaskan ke, berisi Lena, dilingkari.](lists-assign)
+![Lembar Ubah barang untuk sebuah tugas. Kolom Ditugaskan ke, berisi Sari, dilingkari.](lists-assign)
 
 1. Buka daftar tugas dan ketuk tugasnya.
 2. Di bawah **Ditugaskan ke**, ketuk kolomnya.

@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Marque um hábito assim que tiver feito. Cada marcação dá energia à família.
 
-![A tela Hábitos. O botão redondo de marcar ao lado de Alongar está circulado.](habits-tick)
+![A tela Hábitos. O botão redondo de marcar ao lado de Alongamentos está circulado.](habits-tick)
 
 1. Na tela inicial, toque em **Hábitos**.
 2. Toque no botão redondo à direita de um hábito. Em um contador, toque em **Mais um** até chegar ao objetivo.

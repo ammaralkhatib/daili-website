@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Toată lumea din familia ta vede aceleași liste de cumpărături. Când cineva adaugă sau bifează un articol, toți văd asta.
 
-![Lista Alimente cu articole deschise și două bifate la Finalizate. Bara Adaugă articol de jos este încercuită.](lists-shopping)
+![Lista Cumpărături cu articole deschise și două bifate la Finalizate. Bara Adaugă articol de jos este încercuită.](lists-shopping)
 
 1. Pe ecranul principal, apasă pe **Cumpărături**, apoi pe o listă. Pentru o listă nouă, apasă pe **+**, scrie un **Nume** și apasă pe **Creează**.
 2. Scrie ce îți trebuie la **Adaugă articol**, jos, și adaugă.

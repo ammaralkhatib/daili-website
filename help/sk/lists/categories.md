@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Nové položky dostanú kategóriu podľa názvu, takže mlieko skončí v **Mliečne výrobky**. Zoskup zoznam podľa kategórie a obchodom prejdeš len raz.
 
-![Ponuka ⋯ zoznamu Potraviny. Zakrúžkovaný je prepínač Zoskupiť podľa kategórie a riadok Kategórie.](lists-categories)
+![Ponuka ⋯ zoznamu Nákup. Zakrúžkovaný je prepínač Zoskupiť podľa kategórie a riadok Kategórie.](lists-categories)
 
 1. Otvor nákupný zoznam a ťukni hore na **⋯**.
 2. Zapni **Zoskupiť podľa kategórie**.

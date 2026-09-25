@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Bewaar gezinsfoto’s geordend in albums, gewoon in daili.
 
-![Het album Gezin met vier foto’s. De knop om foto’s toe te voegen rechtsonder is omcirkeld.](vault-photos)
+![Het album Familie met vier foto’s. De knop om foto’s toe te voegen rechtsonder is omcirkeld.](vault-photos)
 
 1. Tik op het startscherm op **Foto's** en dan op een album.
 2. Voor een nieuw album tik je rechtsonder op de knop (**Nieuw album**). Typ een **Albumnaam** en tik op **Opslaan**.

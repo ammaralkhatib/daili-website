@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Articolele noi primesc o categorie după nume, așa că laptele ajunge la **Lactate**. Grupează lista pe categorii și treci prin magazin o singură dată.
 
-![Meniul ⋯ al listei Alimente. Comutatorul Grupează după categorie și rândul Categorii sunt încercuite.](lists-categories)
+![Meniul ⋯ al listei Cumpărături. Comutatorul Grupează după categorie și rândul Categorii sunt încercuite.](lists-categories)
 
 1. Deschide o listă de cumpărături și apasă pe **⋯** sus.
 2. Pornește **Grupează după categorie**.

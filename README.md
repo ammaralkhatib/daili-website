@@ -98,8 +98,14 @@ in an hreflang cluster with the other help locales (x-default English), the
 footer Help link, `help/<code>.json` — and must be complete; a folder not
 listed is checked but not built. Own-language pictures go in
 `static/help/media/<code>/` with sizes in `help/media.<code>.json` (a subset
-of the ids in `help/media.json`); every other picture falls back to English,
-and the build says how many (`help de: 61 picture(s) in English for now`).
+of the ids in `help/media.json`, shot by the app's `tool/help-shots.sh`). A
+`HELP_LOCALES` locale needs its own picture for every one its articles show:
+the only exceptions are listed in `help/media-gaps.json`
+(`{ "de": { "<media id>": "<reason>" } }`), which keep the English picture. An
+unlisted English picture is a build error, and so is a listed gap that has its
+own picture by now (stale). The build says it per locale
+(`help de: 0 picture(s) in English`). A folder not in `HELP_LOCALES` may still
+fall back to English freely.
 
 **Help counts.** `static/assets/help-search.js` (loaded on `/help/` and every
 article) sends two anonymous counts to `https://api.daili.app/v1/help/events`:

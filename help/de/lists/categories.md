@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Neue Einträge bekommen eine Kategorie aus ihrem Namen, so landet Milch bei **Milchprodukte**. Gruppierst du die Liste nach Kategorie, gehst du nur einmal durch den Laden.
 
-![Das Menü ⋯ der Liste Lebensmittel. Der Schalter Nach Kategorie gruppieren und die Zeile Kategorien sind eingekreist.](lists-categories)
+![Das Menü ⋯ der Liste Einkaufen. Der Schalter Nach Kategorie gruppieren und die Zeile Kategorien sind eingekreist.](lists-categories)
 
 1. Öffne eine Einkaufsliste und tippe oben auf **⋯**.
 2. Schalte **Nach Kategorie gruppieren** ein.

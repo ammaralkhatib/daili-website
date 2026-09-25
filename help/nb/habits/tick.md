@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Hak av en vane med en gang du har gjort den. Hver avhaking gir familien energi.
 
-![Skjermen Vaner. Den runde avhakingsknappen ved siden av Tøying er ringet inn.](habits-tick)
+![Skjermen Vaner. Den runde avhakingsknappen ved siden av Tøy ut er ringet inn.](habits-tick)
 
 1. Trykk på **Vaner** på startskjermen.
 2. Trykk på den runde knappen til høyre for en vane. For en teller trykker du på **Én til** til du når målet.

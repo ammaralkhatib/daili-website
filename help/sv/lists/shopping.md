@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Alla i din familj ser samma inköpslistor. När någon lägger till eller bockar av något ser alla det.
 
-![Listan Matvaror med öppna poster och två avbockade under Klart. Fältet Lägg till post längst ned är inringat.](lists-shopping)
+![Listan Handla med öppna poster och två avbockade under Klart. Fältet Lägg till post längst ned är inringat.](lists-shopping)
 
 1. Tryck på **Inköp** på startskärmen och sedan på en lista. För en ny lista trycker du på **+**, skriver ett **Namn** och trycker på **Skapa**.
 2. Skriv det du behöver i **Lägg till post** längst ned och lägg till det.

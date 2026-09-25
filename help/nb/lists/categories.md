@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Nye varer får en kategori ut fra navnet, så melk havner i **Meieri**. Grupper listen etter kategori, så går du bare én runde i butikken.
 
-![Menyen ⋯ i listen Dagligvarer. Bryteren Grupper etter kategori og raden Kategorier er ringet inn.](lists-categories)
+![Menyen ⋯ i listen Handleliste. Bryteren Grupper etter kategori og raden Kategorier er ringet inn.](lists-categories)
 
 1. Åpne en handleliste, og trykk på **⋯** øverst.
 2. Slå på **Grupper etter kategori**.

@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Alle i familien ser de samme handlelistene. Når noen legger til eller haker av en vare, ser alle det.
 
-![Listen Dagligvarer med åpne varer og to avhakede under Gjort. Feltet Legg til punkt nederst er ringet inn.](lists-shopping)
+![Listen Handleliste med åpne varer og to avhakede under Gjort. Feltet Legg til punkt nederst er ringet inn.](lists-shopping)
 
 1. Trykk på **Innkjøp** på startskjermen, og så på en liste. Vil du ha en ny liste, trykker du på **+**, skriver inn et **Navn** og trykker på **Opprett**.
 2. Skriv inn det du trenger i **Legg til punkt** nederst, og legg det til.

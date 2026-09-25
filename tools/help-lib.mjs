@@ -513,16 +513,20 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
 /**
  * Load and check one translation, help/<locale>/, against the English help
  * `en` (from loadHelp). `listed` = the locale is in HELP_LOCALES and gets
- * built: then a missing article or _ui.json key is an error. An unlisted folder
- * is checked all the same (a half-done language is caught early), it just may
- * be incomplete.
+ * built: then a missing article, _ui.json key or own picture is an error. An
+ * unlisted folder is checked all the same (a half-done language is caught
+ * early), it just may be incomplete.
+ *
+ * `gaps` is this locale's part of help/media-gaps.json — { mediaId: reason } —
+ * the only pictures a listed locale may still show in English. A gap the
+ * locale has its own picture for is stale, and an error either way.
  *
  * Returns the same shape as loadHelp — { locale, topics, ui, articles, media,
  * errors, warnings, notes } — with each article the English one plus the
  * translated text, in English order. `media` is help/media.<locale>.json: the
  * pictures this locale has of its own. mediaFor() picks between the two.
  */
-export function loadTranslation({ root, locale, en, listed }) {
+export function loadTranslation({ root, locale, en, listed, gaps = {} }) {
   const errors = [], warnings = [], notes = [];
   const helpDir = path.join(root, 'help');
   const relTo = (f) => path.relative(root, f).split(path.sep).join('/');
@@ -630,7 +634,15 @@ export function loadTranslation({ root, locale, en, listed }) {
   const help = { locale, topics: en.topics, ui, articles, media, enMedia: en.media, skipKeys: en.skipKeys, errors, warnings, notes, missing };
   const english = usedMedia(articles).filter((id) => mediaFor(help, id).locale === 'en');
   help.englishPictures = english.length;
-  if (english.length) notes.push(`help ${locale}: ${english.length} picture(s) in English for now`);
+  if (listed) {
+    for (const id of english) {
+      if (!(id in gaps)) errors.push(`help/media.${locale}.json:1  "${id}" missing — every picture of a HELP_LOCALES locale is its own; shoot it, or list it in help/media-gaps.json with a reason`);
+    }
+  }
+  for (const id of Object.keys(gaps)) {
+    if (media[id]) errors.push(`help/media-gaps.json:1  ${locale} "${id}" has its own picture now (help/media.${locale}.json) — delete the stale gap`);
+  }
+  if (english.length) notes.push(`help ${locale}: ${english.length} picture(s) in English ${listed ? '(listed gaps)' : 'for now'}`);
   if (!listed) notes.push(`help ${locale}: not in HELP_LOCALES — checked, not built (${articles.length} of ${en.articles.length} article(s))`);
   return help;
 }
@@ -672,6 +684,19 @@ export function loadAllHelp({ root, topics, icons, helpLocales = ['en'], locales
   const folders = fs.existsSync(helpDir)
     ? fs.readdirSync(helpDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
     : [];
+  // help/media-gaps.json: { locale: { mediaId: reason } }, the pictures a built
+  // locale may still show in English. Optional; no file = no gaps.
+  const gapsFile = path.join(helpDir, 'media-gaps.json');
+  const gaps = fs.existsSync(gapsFile) ? readJson(gapsFile, 'help/media-gaps.json', errors, {}) : {};
+  for (const [code, ids] of Object.entries(gaps)) {
+    const where = `help/media-gaps.json:1  "${code}"`;
+    if (code === 'en' || !helpLocales.includes(code)) { errors.push(`${where} is not a translated HELP_LOCALES locale — only a built translation has gaps`); continue; }
+    if (!ids || typeof ids !== 'object' || Array.isArray(ids)) { errors.push(`${where} must be an object { mediaId: reason }`); continue; }
+    for (const [id, why] of Object.entries(ids)) {
+      if (!(id in en.media)) errors.push(`${where} "${id}" is not in help/media.json`);
+      if (typeof why !== 'string' || !why.trim()) errors.push(`${where} "${id}" needs a reason`);
+    }
+  }
   const byLocale = new Map([['en', en]]);
   for (const code of [...new Set([...helpLocales, ...folders])]) {
     if (code === 'en') continue;
@@ -679,7 +704,8 @@ export function loadAllHelp({ root, topics, icons, helpLocales = ['en'], locales
       if (folders.includes(code)) errors.push(`help/${code}/:1  "${code}" is not a site locale (LOCALES) — translations use the site's codes (de, zh-Hans, …)`);
       continue;
     }
-    const t = loadTranslation({ root, locale: code, en, listed: helpLocales.includes(code) });
+    const own = gaps[code] && typeof gaps[code] === 'object' && !Array.isArray(gaps[code]) ? gaps[code] : {};
+    const t = loadTranslation({ root, locale: code, en, listed: helpLocales.includes(code), gaps: own });
     errors.push(...t.errors);
     warnings.push(...t.warnings);
     notes.push(...t.notes);

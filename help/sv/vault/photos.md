@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Förvara familjens foton sorterade i album, direkt i daili.
 
-![Albumet Familj med fyra bilder. Knappen för att lägga till foton längst ned till höger är inringad.](vault-photos)
+![Albumet Familjen med fyra bilder. Knappen för att lägga till foton längst ned till höger är inringad.](vault-photos)
 
 1. Tryck på **Foton** på startskärmen och sedan på ett album.
 2. För ett nytt album trycker du på knappen längst ned till höger (**Nytt album**). Skriv ett **Albumnamn** och tryck på **Spara**.

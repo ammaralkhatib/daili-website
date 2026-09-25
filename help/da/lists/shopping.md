@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Alle i familien ser de samme indkøbslister. Når nogen tilføjer en vare eller sætter flueben ved den, ser alle det.
 
-![Listen Dagligvarer med åbne varer og to afkrydsede under Klaret. Feltet Tilføj punkt forneden er markeret med en cirkel.](lists-shopping)
+![Listen Indkøb med åbne varer og to afkrydsede under Klaret. Feltet Tilføj punkt forneden er markeret med en cirkel.](lists-shopping)
 
 1. Tryk på **Indkøb** på startskærmen, og tryk så på en liste. Vil du have en ny liste, så tryk på **+**, skriv et **Navn**, og tryk på **Opret**.
 2. Skriv det, du mangler, i **Tilføj punkt** forneden, og tilføj det.

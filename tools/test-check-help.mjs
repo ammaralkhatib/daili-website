@@ -101,6 +101,7 @@ function write(mutate = () => {}) {
     locales: ['en', 'de', 'ja', 'pl'],
     localeMedia: {},              // locale -> media.<locale>.json object
     localeMediaFiles: {},         // locale -> [file names in static/help/media/<locale>/]
+    gaps: null,                   // help/media-gaps.json, when a case sets it
   };
   state.ui = { en: uiFor(Object.keys(state.topics)) };
   state.ui.de = markUi(state.ui.en, 'DE');
@@ -113,6 +114,7 @@ function write(mutate = () => {}) {
   for (const [loc, ui] of Object.entries(state.ui)) if (ui) w(`help/${loc}/_ui.json`, JSON.stringify(ui));
   for (const [loc, m] of Object.entries(state.localeMedia)) w(`help/media.${loc}.json`, JSON.stringify(m));
   for (const [loc, fs_] of Object.entries(state.localeMediaFiles)) for (const f of fs_) w(`static/help/media/${loc}/${f}`, 'RIFF');
+  if (state.gaps) w('help/media-gaps.json', JSON.stringify(state.gaps));
   w('help/media.json', JSON.stringify(state.media));
   w('help/skip-keys.json', JSON.stringify(state.skipKeys));
   w('help/routes-allowlist.json', JSON.stringify(state.allow));
@@ -244,7 +246,14 @@ expectFail('media without w/h', /needs integer "w" and "h"/, (st) => { delete st
 }
 
 // ---- translations (help/<code>/) ---------------------------------------------
-const listDe = (st) => { st.helpLocales = ['en', 'de']; };
+// Listed German with no pictures of its own: both are listed gaps.
+const DE_GAPS = { 'family-invite': 'not shot yet', 'start-home': 'not shot yet' };
+const listDe = (st) => { st.helpLocales = ['en', 'de']; st.gaps = { de: { ...DE_GAPS } }; };
+const DE_OWN = {
+  'family-invite': { file: 'family-invite.webp', w: 720, h: 688, kind: 'image' },
+  'start-home': { file: 'start-home.webp', w: 720, h: 1564, kind: 'image' },
+};
+const deOwnPictures = (st) => { st.localeMedia.de = structuredClone(DE_OWN); st.localeMediaFiles.de = ['family-invite.webp', 'start-home.webp']; };
 const deEdit = (file, fn) => (st) => { listDe(st); st.tr.de[file] = fn(st.tr.de[file]); };
 function expectClean(name, mutate) {
   let errors;
@@ -298,6 +307,20 @@ expectFail('locale picture for an unknown id', /help\/media\.de\.json:1 +"spare"
 expectFail('locale picture file missing', /"family-invite" names family-invite\.webp, which is not in static\/help\/media\/de\//, (st) => {
   st.localeMedia.de = { 'family-invite': { file: 'family-invite.webp', w: 720, h: 688, kind: 'image' } };
 });
+
+// ---- own-language pictures: required per listed locale, listed gaps only ------
+expectClean('listed German with all its own pictures and no gaps', (st) => { listDe(st); st.gaps = null; deOwnPictures(st); });
+expectClean('unlisted German with no pictures of its own and no gaps', () => {});
+expectFail('listed locale showing an English picture that is not a listed gap', /help\/media\.de\.json:1 +"start-home" missing — every picture of a HELP_LOCALES locale is its own/, (st) => {
+  listDe(st); deOwnPictures(st); delete st.localeMedia.de['start-home']; st.gaps = null;
+});
+expectFail('stale gap: the locale has its own picture now', /help\/media-gaps\.json:1 +de "family-invite" has its own picture now/, (st) => {
+  listDe(st); deOwnPictures(st); st.gaps = { de: { 'family-invite': 'not shot yet' } };
+});
+expectFail('gap without a reason', /help\/media-gaps\.json:1 +"de" "start-home" needs a reason/, (st) => { listDe(st); st.gaps.de['start-home'] = ' '; });
+expectFail('gap for an unknown media id', /help\/media-gaps\.json:1 +"de" "family-nope" is not in help\/media\.json/, (st) => { listDe(st); st.gaps.de['family-nope'] = 'why'; });
+expectFail('gap for a locale that is not built', /help\/media-gaps\.json:1 +"ja" is not a translated HELP_LOCALES locale/, (st) => { st.gaps = { ja: { 'start-home': 'why' } }; });
+expectFail('gaps as a list, not { id: reason }', /help\/media-gaps\.json:1 +"de" must be an object/, (st) => { listDe(st); st.gaps.de = ['start-home']; });
 {
   // stale: English moved on after the translation — a warning, not an error
   const r = check(write((st) => { listDe(st); st.fm.home.updated = '2026-10-01'; }));
@@ -325,6 +348,7 @@ expectClean('th title of 98 graphemes (more UTF-16 units)', (st) => {
     st.ui.en = uiFor(topicIds); st.ui.de = markUi(st.ui.en, 'DE');
     st.localeMedia.de = { 'family-invite': { file: 'family-invite.webp', w: 720, h: 688, kind: 'image' } };
     st.localeMediaFiles.de = ['family-invite.webp'];
+    st.gaps = { de: { 'start-home': 'not shot yet' } };
   });
   const dist = path.join(TMP, 'dist');
   const b = spawnSync(process.execPath, [path.join(REPO, 'build.mjs')], {
@@ -344,6 +368,7 @@ expectClean('th title of 98 graphemes (more UTF-16 units)', (st) => {
       if (!art.includes('<link rel="alternate" hreflang="en" href="https://daili.app/help/family/invite/">')
         || !art.includes('<link rel="alternate" hreflang="x-default" href="https://daili.app/help/family/invite/">')) problems.push('German article has no hreflang cluster with x-default English');
     }
+    if (!b.stdout.includes('help de: 1 picture(s) in English (listed gaps')) problems.push('build does not say "help de: 1 picture(s) in English (listed gaps…)"');
     const home = page('de/help/start/home/index.html');
     if (!home.includes('src="/help/media/en/start-home.webp?v=')) problems.push('German article without its own picture does not fall back to English');
     if (!page('de/help/index.html').includes('DE How can we help?')) problems.push('German help home is not in German');

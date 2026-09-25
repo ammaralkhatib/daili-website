@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Semua orang di keluarga berbagi kalender dan daftar yang sama, dan siapa pun bisa mengubah atau menghapus acara dan barang yang dibagikan. Peran hanya menentukan siapa yang mengurus keluarga.
 
-![Daftar Anggota di layar Keluarga dengan label Pemilik dan Admin. Label Admin dan tombol ⋮ di sebelah Marco dilingkari.](family-roles)
+![Daftar Anggota di layar Keluarga dengan label Pemilik dan Admin. Label Admin dan tombol ⋮ di sebelah Andi dilingkari.](family-roles)
 
 **Pemilik** membuat keluarga ini. Hanya ada satu. Hanya pemilik yang bisa mengubah peran dan menyerahkan keluarga ke orang lain.
 

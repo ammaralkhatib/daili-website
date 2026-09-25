@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Nové položky dostanou kategorii podle názvu, takže mléko skončí v kategorii **Mléčné výrobky**. Seskup seznam podle kategorií a obchodem projdeš jen jednou.
 
-![Nabídka ⋯ seznamu Potraviny. Zakroužkovaný je přepínač Seskupit podle kategorie a řádek Kategorie.](lists-categories)
+![Nabídka ⋯ seznamu Nákup. Zakroužkovaný je přepínač Seskupit podle kategorie a řádek Kategorie.](lists-categories)
 
 1. Otevři nákupní seznam a nahoře klepni na **⋯**.
 2. Zapni **Seskupit podle kategorie**.

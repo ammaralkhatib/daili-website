@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Documenti e Foto sono il tuo cassetto privato in daili. Tutto quello che ci metti resta su questo telefono, e da nessun'altra parte.
 
-![La schermata Documenti con cinque cartelle: Documenti importanti, Assicurazione, Scuola, Auto e Ricevute.](vault-where)
+![La schermata Documenti con cinque cartelle: Documenti importanti, Assicurazioni, Scuola, Auto e Scontrini.](vault-where)
 
 1. **Li vedi solo tu.** La tua famiglia no, e niente viene mandato ai server di daili.
 2. **daili non ne fa il backup.** Se perdi o ripristini il telefono, o elimini l'app daili, i file sono persi. Il backup del telefono potrebbe averli salvati, ma non contarci.

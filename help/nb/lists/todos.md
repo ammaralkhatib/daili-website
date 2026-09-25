@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Oppgavelister virker som handlelister, men en oppgave kan også ha en person, en frist og en påminnelse.
 
-![Skjermen Oppgaver med én liste. Kortet for listen Husholdning er ringet inn.](lists-todos)
+![Skjermen Oppgaver med én liste. Kortet for listen Husarbeid er ringet inn.](lists-todos)
 
 1. Trykk på **Oppgaver** på startskjermen, og så på en liste. Vil du ha en ny liste, trykker du på **+**, skriver inn et **Navn** og trykker på **Opprett**.
 2. Skriv inn oppgaven i **Legg til punkt** nederst, og legg den til.

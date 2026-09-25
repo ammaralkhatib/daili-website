@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Dokument och Foton är din privata byrålåda i daili. Allt du lägger där stannar på den här telefonen, och ingen annanstans.
 
-![Skärmen Dokument med fem mappar: Viktiga papper, Försäkring, Skola, Bil och Kvitton.](vault-where)
+![Skärmen Dokument med fem mappar: Viktiga papper, Försäkringar, Skola, Bil och Kvitton.](vault-where)
 
 1. **Bara du ser dem.** Din familj kan inte se dem, och inget skickas till dailis servrar.
 2. **daili säkerhetskopierar dem inte.** Om du tappar bort eller återställer telefonen, eller tar bort daili-appen, är filerna borta. Telefonens egen säkerhetskopia kan ha sparat dem, men räkna inte med det.

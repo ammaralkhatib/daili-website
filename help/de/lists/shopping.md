@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Alle in deiner Familie sehen dieselben Einkaufslisten. Wenn jemand etwas hinzufügt oder abhakt, sehen es alle.
 
-![Die Liste Lebensmittel mit offenen Einträgen und zwei abgehakten unter Erledigt. Die Leiste Eintrag hinzufügen unten ist eingekreist.](lists-shopping)
+![Die Liste Einkaufen mit offenen Einträgen und zwei abgehakten unter Erledigt. Die Leiste Eintrag hinzufügen unten ist eingekreist.](lists-shopping)
 
 1. Tippe auf dem Startbildschirm auf **Einkaufen** und dann auf eine Liste. Für eine neue Liste tippst du auf **+**, gibst unter **Name** einen Namen ein und tippst auf **Erstellen**.
 2. Gib unten in **Eintrag hinzufügen** ein, was du brauchst, und füg es hinzu.
