@@ -15,4 +15,4 @@ A newsletter do daili é mais ou menos um e-mail por mês: recursos novos e uma 
 
 Se o seu e-mail ainda não foi confirmado, primeiro enviamos um e-mail para você. Toque no link dele para confirmar, senão a newsletter não começa.
 
-> Note: O daili também pode perguntar uma vez: **Queres novidades do daili?** Toque em **Sim, inscreve-me** ou **Agora não**.
+> Note: O daili também pode perguntar uma vez: **Quer novidades do daili?** Toque em **Sim, quero me inscrever** ou **Agora não**.

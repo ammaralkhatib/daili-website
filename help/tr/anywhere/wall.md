@@ -3,7 +3,7 @@ id: anywhere-wall
 title: daili'yi bir duvar ekranına ya da eski bir tablete koy
 summary: Bugünün planını koridordaki ya da mutfaktaki bir tablette büyük ve net göster.
 keywords: duvar, tablet, ipad, eski tablet, mutfak, koridor, ekran, aile panosu, pano, buzdolabı
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Eski bir tablet ailenin panosu olabilir. Bugünü ve yarını, bugün yapılacak görevleri, bugünün yemeklerini ve sıradaki doğum günlerini odanın öbür ucundan okunabilen harflerle gösterir.
 
@@ -11,6 +11,6 @@ Eski bir tablet ailenin panosu olabilir. Bugünü ve yarını, bugün yapılacak
 2. daili hesabınla giriş yap.
 3. Tableti bir standa ya da duvara yerleştir ve şarja tak.
 
-Pano kendi kendine güncellenir ve kimse oradan ailenin ayarlarına giremez. Çıkmak için köşedeki **Hold to leave** düğmesine iki saniye basılı tut.
+Pano şimdilik yalnızca İngilizce ve Almanca. Pano kendi kendine güncellenir ve kimse oradan ailenin ayarlarına giremez. Çıkmak için köşedeki **Hold to leave** düğmesine iki saniye basılı tut.
 
 > Note: Çoğu tarayıcı, pano açıkken ekranı açık tutar. Tablet yine de kararıyorsa ayarlarından otomatik kilidi kapat.

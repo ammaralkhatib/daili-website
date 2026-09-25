@@ -3,7 +3,7 @@ id: lists-categories
 title: Einkaufskategorien und eigene Kategorien
 summary: Gruppiere eine Einkaufsliste nach Regalen, in der Reihenfolge deines Supermarkts, und füge eigene Kategorien hinzu.
 keywords: kategorie, kategorien, regal, supermarkt, lebensmittel, gruppieren, sortieren, reihenfolge, obst und gemüse, milchprodukte
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Neue Einträge bekommen eine Kategorie aus ihrem Namen, so landet Milch bei **Milchprodukte**. Gruppierst du die Liste nach Kategorie, gehst du nur einmal durch den Laden.
 
@@ -15,4 +15,4 @@ Neue Einträge bekommen eine Kategorie aus ihrem Namen, so landet Milch bei **Mi
 4. Tippe auf eine Kategorie, um sie umzubenennen, ihr Emoji zu ändern oder sie auszublenden. Tippe auf **Kategorie hinzufügen**, um eigene zu erstellen, bis zu 30.
 5. Um einen einzelnen Eintrag zu verschieben, tippe darauf, wähle eine **Kategorie** und tippe auf **Speichern**.
 
-> Note: Wenn du eine Kategorie löschst, wird kein Eintrag gelöscht. Die Einträge bleiben auf deinen Listen, nur ohne Kategorie.
+> Note: Löschen kannst du nur eigene Kategorien: Tippe auf eine und dann auf **Kategorie löschen**. Ihre Einträge bleiben auf deinen Listen, nur ohne Kategorie.

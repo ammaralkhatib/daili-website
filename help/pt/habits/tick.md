@@ -14,6 +14,6 @@ Marque um hábito assim que tiver feito. Cada marcação dá energia à família
 3. Esqueceu ontem? Toque e segure o hábito, depois toque em **Preencher ontem**.
 4. Para corrigir um dia anterior, toque na linha do hábito e depois no dia. Você pode mudar os últimos 7 dias.
 
-Você marca seus próprios hábitos e qualquer hábito **Juntos**. Um admin também pode marcar por uma criança sem acesso próprio. Aí a linha diz **Marca por** e o nome da criança.
+Você marca seus próprios hábitos e qualquer hábito **Juntos**. Um admin também pode marcar por uma criança sem acesso próprio. Aí a linha diz **Você marca por** e o nome da criança.
 
 > Note: Ninguém pode marcar por outro adulto. Todo mundo que tem acesso próprio marca os próprios hábitos.

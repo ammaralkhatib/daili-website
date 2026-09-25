@@ -15,6 +15,6 @@ Um hábito é uma coisa pequena que você quer fazer sempre, como ler ou beber �
 
 ![A tela Hábitos com o Minzi no quartinho dele, a barra Energia da família e três hábitos. O botão +, na barra de baixo, está circulado.](habits-what)
 
-Cada marcação dá energia à sua família. Quando a barra fica cheia, o gato Minzi sai de viagem e manda um postal para casa.
+Cada marcação dá energia à sua família. Quando a barra fica cheia, o gato Minzi sai de viagem e manda um cartão-postal para casa.
 
 > Note: Na primeira vez que você abre **Hábitos**, o daili pede para você dar um nome ao gato e escolher dois ou três hábitos para começar.

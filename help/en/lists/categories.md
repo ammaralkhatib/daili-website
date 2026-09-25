@@ -7,7 +7,7 @@ keywords: category, categories, aisle, supermarket, grocery, group, sort, order,
 routes: /lists/:id
 tryIt: /lists/shopping
 since: 1.5.0
-updated: 2026-09-24
+updated: 2026-09-25
 media: lists-categories
 order: 2
 related: lists-shopping, lists-edit-list
@@ -22,4 +22,4 @@ New items get a category from their name, so milk lands in **Dairy**. Group the 
 4. Tap a category to rename it, change its emoji or hide it. Tap **Add category** to make your own, up to 30.
 5. To move one item, tap it, pick a **Category** and tap **Save**.
 
-> Note: Deleting a category deletes no items. They stay on your lists, just without a category.
+> Note: You can delete only the categories you added: tap one, then tap **Delete category**. Its items stay on your lists, just without a category.

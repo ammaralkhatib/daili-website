@@ -1,7 +1,7 @@
 ---
 id: habits-minzi
-title: Energia, viagens e postais do Minzi
-summary: Cada marcação enche a barra de energia do Minzi. Quando ela fica cheia, ele sai de viagem e um postal chega em casa.
+title: Energia, viagens e cartões-postais do Minzi
+summary: Cada marcação enche a barra de energia do Minzi. Quando ela fica cheia, ele sai de viagem e um cartão-postal chega em casa.
 keywords: minzi, gato, energia, viagem, postal, cartão-postal, gato da família, renomear gato, barra de energia, recompensa
 translatedFrom: 2026-09-24
 ---
@@ -11,8 +11,8 @@ O Minzi é o gato da sua família. Ele mora no quartinho dele na tela **Hábitos
 
 1. Marque seus hábitos. Cada marcação soma na barra **Energia da família**.
 2. Quando a barra fica cheia, o Minzi sai de viagem naquela noite.
-3. De manhã, ele está de volta. Toque no cartão para abrir o postal dele.
-4. Toque em **Minzi**, embaixo, para ver todos os **Postais**, as viagens dele e a sequência da família.
+3. De manhã, ele está de volta. Toque no cartão para abrir o cartão-postal dele.
+4. Toque em **Minzi**, embaixo, para ver todos os **Cartões-postais**, as viagens dele e a sequência da família.
 
 Para dar outro nome ao gato, toque em **Mudar o nome** nessa tela.
 

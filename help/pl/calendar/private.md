@@ -9,7 +9,7 @@ Planujesz niespodziankę albo wizytę u lekarza, która nikogo nie powinna obcho
 
 ![Formularz wydarzenia. Zakreślony jest przełącznik Prywatne wydarzenie.](calendar-private)
 
-1. W nowym wydarzeniu włącz **Prywatne wydarzenie**. Pojawi się napis **Widzisz je tylko Ty**.
+1. W nowym wydarzeniu włącz **Prywatne wydarzenie**. Pojawi się napis **Widzisz je tylko ty**.
 2. Uzupełnij resztę i dotknij **Zapisz**.
 
 Nikt inny nie może go otworzyć, zmienić ani usunąć, a przypomnienia o nim dostajesz tylko ty.

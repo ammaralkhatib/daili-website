@@ -10,7 +10,7 @@ Commence avec une des 12 habitudes toutes prêtes, ou crée la tienne.
 ![Le formulaire de nouvelle habitude. Les choix de Qui, Moi seul, Chacun de nous et Ensemble, sont entourés.](habits-create)
 
 1. Sur l'écran d'accueil, touche **Habitudes**, puis **+** en bas.
-2. Touche un modèle, ou **Créer la vôtre**.
+2. Touche un modèle, ou **Créer la tienne**.
 3. Donne-lui un **Nom** et choisis **Qui**. Pour **Chacun de nous**, choisis les personnes sous **Qui participe ?**.
 4. Choisis le **Type** : **Oui / non**, ou **Compteur** avec un **Objectif** et une **Unité**, comme 8 verres.
 5. Sous **À quelle fréquence**, choisis **Tous les jours**, **Certains jours** ou **Quelques fois par semaine**.

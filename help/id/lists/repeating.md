@@ -7,7 +7,7 @@ translatedFrom: 2026-09-24
 ---
 Tugas berulang adalah satu tugas yang terus kembali. Saat Anda mencentangnya, tugas itu maju ke tanggal jatuh tempo berikutnya.
 
-![Lembar Ubah barang untuk sebuah tugas. Pilihan Ulangi: Tidak ada, Setiap hari, Setiap beberapa hari, Setiap minggu, dan Setiap bulan dilingkari.](lists-repeating)
+![Lembar Ubah item untuk sebuah tugas. Pilihan Ulangi: Tidak ada, Setiap hari, Setiap beberapa hari, Setiap minggu, dan Setiap bulan dilingkari.](lists-repeating)
 
 1. Buka daftar tugas dan ketuk tugasnya.
 2. Beri **Tanggal jatuh tempo**.

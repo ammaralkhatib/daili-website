@@ -10,7 +10,7 @@ Daftar tugas bekerja seperti daftar belanja, tapi tugas juga bisa punya orang, t
 ![Layar Tugas dengan satu daftar. Kartu daftar Rumah tangga dilingkari.](lists-todos)
 
 1. Di Beranda, ketuk **Tugas**, lalu ketuk sebuah daftar. Untuk daftar baru, ketuk **+**, ketik **Nama**, lalu ketuk **Buat**.
-2. Ketik tugasnya di **Tambah barang** di bawah, lalu tambahkan.
+2. Ketik tugasnya di **Tambah item** di bawah, lalu tambahkan.
 3. Ketuk tugas untuk memberinya **Ditugaskan ke**, **Tanggal jatuh tempo**, **Kategori**, atau **Catatan**. Lalu ketuk **Simpan**.
 4. Sudah selesai? Ketuk kotak di depan tugas. Tugas itu turun ke **Selesai**.
 5. Untuk mengurutkan daftar, ketuk **⋯** di atas, lalu **Kelompokkan menurut**. Pilih **Tanggal jatuh tempo**, **Orang**, atau **Kategori**.

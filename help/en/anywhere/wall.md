@@ -6,7 +6,7 @@ summary: Show today's plan big and clear on a tablet in the hallway or the kitch
 keywords: wall, tablet, ipad, old tablet, kitchen, hallway, display, family board, board, screen, fridge
 routes: /
 since: 1.2.0
-updated: 2026-09-24
+updated: 2026-09-25
 order: 3
 mediaPending: hand-made photo or screenshot of the wall board on a tablet
 related: anywhere-web, start-today
@@ -17,6 +17,6 @@ An old tablet can become your family board. It shows today and tomorrow, the to-
 2. Sign in with your daili account.
 3. Put the tablet on a stand or on the wall, and plug it in.
 
-The board updates by itself, and nobody can tap into your family's settings from it. To leave it, press and hold **Hold to leave** in the corner for two seconds.
+For now, the board is in English and German only. It updates by itself, and nobody can tap into your family's settings from it. To leave it, press and hold **Hold to leave** in the corner for two seconds.
 
 > Note: Most browsers keep the screen on while the board is open. If the tablet still goes dark, turn off auto-lock in its settings.

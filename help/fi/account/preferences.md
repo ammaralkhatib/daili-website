@@ -5,9 +5,9 @@ summary: Valitse tumma tila, kielesi, 12 tai 24 tunnin kello ja se, väriseekö 
 keywords: tumma tila, vaalea tila, teema, ulkoasu, kieli, 24 tuntia, 12 tuntia, ajan muoto, värinä, haptiikka
 translatedFrom: 2026-09-24
 ---
-Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löytyvät kortilta **Asetukset**.
+Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löytyvät kortilta **Yleiset**.
 
-![Asetukset-näkymä. Kortti, jossa ovat Kieli, Ajan muoto, Ulkoasu, Aloitusnäyttö ja Värinä, on ympyröity.](account-preferences)
+![Asetukset-näkymä. Yleiset-kortti, jossa ovat Kieli, Ajan muoto, Ulkoasu, Aloitusnäyttö ja Värinä, on ympyröity.](account-preferences)
 
 1. **Kieli**: valitse yksi dailin kielistä tai **Järjestelmän oletus**, jolloin kieli seuraa puhelinta.
 2. **Ajan muoto**: **24 tuntia**, **12 tuntia** tai **Järjestelmä**, jolloin se seuraa puhelinta.

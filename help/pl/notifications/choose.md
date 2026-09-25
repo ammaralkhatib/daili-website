@@ -7,10 +7,10 @@ translatedFrom: 2026-09-24
 ---
 Za dużo powiadomień albo za mało? To ty wybierasz, o czym daili cię informuje.
 
-![Ekran Powiadomienia. Zakreślona jest grupa Przypomnienia (dla Ciebie) z pięcioma przełącznikami.](notifications-choose)
+![Ekran Powiadomienia. Zakreślona jest grupa Przypomnienia (dla ciebie) z pięcioma przełącznikami.](notifications-choose)
 
 1. Otwórz **Ustawienia** i dotknij **Powiadomienia**.
-2. W grupie **Przypomnienia (dla Ciebie)** włącz przypomnienia, które chcesz dostawać, na przykład **Przypomnienia o wydarzeniach** albo **Przypomnienia o urodzinach**.
+2. W grupie **Przypomnienia (dla ciebie)** włącz przypomnienia, które chcesz dostawać, na przykład **Przypomnienia o wydarzeniach** albo **Przypomnienia o urodzinach**.
 3. W grupie **Zmiany w rodzinie (co robią członkowie)** wybierz obszary, w których chcesz wiedzieć, co robią inni, na przykład **Zakupy** albo **Kalendarz**.
 4. Włącz **Ciche godziny**. Na początek to 21:00–07:00. Dotknij **Od** albo **Do**, żeby zmienić godziny.
 

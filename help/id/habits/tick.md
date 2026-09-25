@@ -14,6 +14,6 @@ Centang kebiasaan begitu Anda selesai melakukannya. Setiap centang memberi kelua
 3. Lupa kemarin? Tekan lama kebiasaannya, lalu ketuk **Isi kemarin**.
 4. Untuk membetulkan hari sebelumnya, ketuk baris kebiasaan lalu harinya. Anda bisa mengubah 7 hari terakhir.
 
-Anda mencentang kebiasaan Anda sendiri dan setiap kebiasaan **Bersama**. Admin juga bisa mencentang untuk anak tanpa login. Barisnya lalu bertuliskan **Kamu mencentang untuk** dan nama anak itu.
+Anda mencentang kebiasaan Anda sendiri dan setiap kebiasaan **Bersama**. Admin juga bisa mencentang untuk anak tanpa login. Barisnya lalu bertuliskan **Anda mencentang untuk** dan nama anak itu.
 
 > Note: Tidak ada yang bisa mencentang untuk orang dewasa lain. Setiap orang yang punya login mencentang kebiasaannya sendiri.

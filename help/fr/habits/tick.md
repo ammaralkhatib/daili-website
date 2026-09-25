@@ -14,6 +14,6 @@ Coche une habitude dès que tu l'as faite. Chaque coche donne de l'énergie à l
 3. Tu as oublié hier ? Garde le doigt appuyé sur l'habitude, puis touche **Compléter hier**.
 4. Pour corriger un jour plus ancien, touche la ligne de l'habitude puis le jour. Tu peux changer les 7 derniers jours.
 
-Tu coches tes propres habitudes et toutes les habitudes **Ensemble**. Un admin peut aussi cocher pour un enfant sans compte. La ligne indique alors **Vous validez pour** et le nom de l'enfant.
+Tu coches tes propres habitudes et toutes les habitudes **Ensemble**. Un admin peut aussi cocher pour un enfant sans compte. La ligne indique alors **Tu valides pour** et le nom de l'enfant.
 
 > Note: Personne ne peut cocher pour un autre adulte. Chaque personne avec un compte coche ses propres habitudes.

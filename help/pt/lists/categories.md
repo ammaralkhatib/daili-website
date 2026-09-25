@@ -3,7 +3,7 @@ id: lists-categories
 title: Categorias de compras e as suas próprias
 summary: Agrupe uma lista de compras por seção, na ordem do seu supermercado, e crie suas próprias categorias.
 keywords: categoria, categorias, seção, corredor, supermercado, mercado, agrupar, ordenar, ordem, laticínios
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Os itens novos ganham uma categoria pelo nome, então o leite cai em **Laticínios**. Agrupe a lista por categoria e percorra a loja uma vez só.
 
@@ -15,4 +15,4 @@ Os itens novos ganham uma categoria pelo nome, então o leite cai em **Laticíni
 4. Toque em uma categoria para mudar o nome, o emoji ou para esconder. Toque em **Adicionar categoria** para criar as suas, até 30.
 5. Para mudar um item de categoria, toque nele, escolha uma **Categoria** e toque em **Salvar**.
 
-> Note: Excluir uma categoria não exclui nenhum item. Eles continuam nas suas listas, só que sem categoria.
+> Note: Você só pode excluir as categorias que você adicionou: toque em uma e depois em **Excluir categoria**. Os itens dela continuam nas suas listas, só que sem categoria.

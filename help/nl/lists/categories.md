@@ -3,7 +3,7 @@ id: lists-categories
 title: Categorieën voor boodschappen, en je eigen
 summary: Groepeer een boodschappenlijst per schap, in de volgorde van jouw supermarkt, en voeg je eigen categorieën toe.
 keywords: categorie, categorieën, schap, supermarkt, boodschappen, groeperen, sorteren, volgorde, groente en fruit, zuivel
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Nieuwe items krijgen een categorie op basis van hun naam, dus melk komt bij **Zuivel**. Groepeer de lijst per categorie en je loopt maar één keer door de winkel.
 
@@ -15,4 +15,4 @@ Nieuwe items krijgen een categorie op basis van hun naam, dus melk komt bij **Zu
 4. Tik op een categorie om de naam of de emoji te wijzigen, of om hem te verbergen. Tik op **Categorie toevoegen** om je eigen te maken, tot 30.
 5. Om één item te verplaatsen, tik je erop, kies je een **Categorie** en tik je op **Opslaan**.
 
-> Note: Als je een categorie verwijdert, worden er geen items verwijderd. Ze blijven op je lijsten staan, alleen zonder categorie.
+> Note: Je kunt alleen categorieën verwijderen die je zelf hebt toegevoegd: tik erop en dan op **Categorie verwijderen**. De items blijven op je lijsten staan, alleen zonder categorie.

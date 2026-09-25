@@ -3,7 +3,7 @@ id: lists-categories
 title: Categoriile de cumpărături și categoriile tale
 summary: Grupează lista de cumpărături pe raioane, în ordinea din supermarketul tău, și adaugă categorii proprii.
 keywords: categorie, categorii, raion, supermarket, alimente, grup, sortare, ordine, fructe și legume, lactate
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Articolele noi primesc o categorie după nume, așa că laptele ajunge la **Lactate**. Grupează lista pe categorii și treci prin magazin o singură dată.
 
@@ -15,4 +15,4 @@ Articolele noi primesc o categorie după nume, așa că laptele ajunge la **Lact
 4. Apasă pe o categorie ca s-o redenumești, să-i schimbi emoji-ul sau s-o ascunzi. Apasă pe **Adaugă categorie** ca să faci una proprie, până la 30.
 5. Ca să muți un singur articol, apasă pe el, alege o **Categorie** și apasă pe **Salvează**.
 
-> Note: Ștergerea unei categorii nu șterge niciun articol. Ele rămân pe liste, doar fără categorie.
+> Note: Poți șterge doar categoriile adăugate de tine: apasă pe una, apoi pe **Șterge categoria**. Articolele ei rămân pe liste, doar fără categorie.

@@ -3,7 +3,7 @@ id: lists-categories
 title: Kategorie nákupů a tvoje vlastní
 summary: Seskup nákupní seznam podle oddělení, v pořadí tvého obchodu, a přidej vlastní kategorie.
 keywords: kategorie, oddělení, ulička, supermarket, potraviny, seskupit, třídit, pořadí, ovoce a zelenina, mléčné výrobky
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-25
 ---
 Nové položky dostanou kategorii podle názvu, takže mléko skončí v kategorii **Mléčné výrobky**. Seskup seznam podle kategorií a obchodem projdeš jen jednou.
 
@@ -15,4 +15,4 @@ Nové položky dostanou kategorii podle názvu, takže mléko skončí v kategor
 4. Klepnutím na kategorii ji přejmenuješ, změníš jí emoji nebo ji skryješ. Klepnutím na **Přidat kategorii** vytvoříš vlastní, až 30.
 5. Pokud chceš přesunout jednu položku, klepni na ni, vyber **Kategorie** a klepni na **Uložit**.
 
-> Note: Smazání kategorie nesmaže žádné položky. Zůstanou na tvých seznamech, jen bez kategorie.
+> Note: Smazat můžeš jen vlastní kategorie: klepni na jednu a pak na **Smazat kategorii**. Její položky zůstanou na tvých seznamech, jen bez kategorie.
