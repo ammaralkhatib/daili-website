@@ -33,6 +33,7 @@
     "calendar": { "title": "Calendario", "summary": "Eventi, promemoria, ripetizioni e i calendari che usi già." },
     "lists": { "title": "Liste e attività", "summary": "Liste della spesa che tutti possono spuntare, e attività con un nome sopra." },
     "meals": { "title": "Pasti e ricette", "summary": "Pianifica i pasti della settimana e tieni le ricette di famiglia in un solo posto." },
+    "notes": { "title": "Note", "summary": "Salva un pensiero o un link con due tocchi, da ovunque — privato di base." },
     "birthdays": { "title": "Compleanni", "summary": "Compleanni e ricorrenze, con un promemoria prima di ognuno." },
     "habits": { "title": "Abitudini e Minzi", "summary": "Costruite abitudini insieme e rendete felice Minzi, il gatto." },
     "vault": { "title": "Documenti e foto", "summary": "Documenti e foto sul tuo telefono, ordinati in cartelle e album." },

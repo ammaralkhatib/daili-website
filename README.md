@@ -71,12 +71,13 @@ writes `help/en.json`, which the app downloads for its Help screen and tips.
   picture the help-shots tool can't take (the phone's home screen, a
   browser). `check-help` lists every pending article on each build.
 - `help/skip-keys.json` is the vocabulary for `tipSkipIf` / `checklistDoneIf`.
+  `tipSkipIf` is optional (no key = the tip can always show).
 - `help/routes-allowlist.json`: app routes with no article yet (`pending`,
   the to-do list for new articles) or never (`never`).
 - `help/en/_ui.json` holds every word of the help pages that isn't an
   article: headings, the search hint, "Was this helpful?", the `<title>`
   pattern, `articleCount` (one string per plural form of the language), and
-  the 11 topic titles + summaries (`HELP_TOPICS` keeps only the icon).
+  the 12 topic titles + summaries (`HELP_TOPICS` keeps only the icon).
 - `site.config.mjs`: `HELP_TOPICS`, `HELP_ICONS`, `HELP_LOCALES`,
   `LIVE_APP_VERSION` (pages hide articles whose `since` is newer; the json
   keeps all) and `HELP_PUBLIC` (false = every help page noindex, not in the

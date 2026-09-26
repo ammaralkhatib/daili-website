@@ -33,6 +33,7 @@
     "calendar": { "title": "Calendar", "summary": "Evenimente, mementouri, repetări și calendarele pe care le folosești deja." },
     "lists": { "title": "Liste și sarcini", "summary": "Liste de cumpărături pe care le poate bifa oricine și sarcini cu un nume pe ele." },
     "meals": { "title": "Mese și rețete", "summary": "Planifică mesele săptămânii și ține rețetele familiei într-un singur loc." },
+    "notes": { "title": "Notițe", "summary": "Salvează un gând sau un link din două atingeri, de oriunde — privat implicit." },
     "birthdays": { "title": "Zile de naștere", "summary": "Zile de naștere și aniversări, cu un memento înainte de fiecare." },
     "habits": { "title": "Obiceiuri și Minzi", "summary": "Construiți obiceiuri împreună și faceți-o fericită pe pisica Minzi." },
     "vault": { "title": "Documente și poze", "summary": "Acte și poze pe telefonul tău, sortate în dosare și albume." },

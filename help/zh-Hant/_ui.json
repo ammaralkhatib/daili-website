@@ -31,6 +31,7 @@
     "calendar": { "title": "行事曆", "summary": "行程、提醒、重複，以及你已經在用的行事曆。" },
     "lists": { "title": "清單和待辦", "summary": "全家都能勾選的購物清單，還有寫上負責人的待辦。" },
     "meals": { "title": "用餐和食譜", "summary": "安排一週的菜色，把家裡的食譜放在同一個地方。" },
+    "notes": { "title": "筆記", "summary": "隨時隨地點兩下，記下想法或連結——預設只有自己看得到。" },
     "birthdays": { "title": "生日", "summary": "生日和紀念日，每一個都會提前提醒你。" },
     "habits": { "title": "習慣和 Minzi", "summary": "全家一起養成習慣，讓小貓 Minzi 開開心心。" },
     "vault": { "title": "文件和相片", "summary": "把文件和相片存在手機上，分好資料夾和相簿。" },

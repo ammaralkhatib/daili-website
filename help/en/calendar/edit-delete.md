@@ -9,7 +9,7 @@ tryIt: /calendar
 since: 1.4.0
 updated: 2026-09-24
 media: calendar-edit-delete
-order: 6
+order: 7
 related: calendar-repeating, calendar-private, family-activity
 ---
 Plans change. Here's how to change the calendar with them.

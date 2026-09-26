@@ -9,7 +9,7 @@ tryIt: /calendar/new
 since: 1.0.0
 updated: 2026-09-24
 media: calendar-repeating
-order: 3
+order: 4
 related: calendar-add-event, calendar-edit-delete
 ---
 Swimming every Tuesday? Add it once and let it repeat.

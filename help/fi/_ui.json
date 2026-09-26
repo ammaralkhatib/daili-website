@@ -32,6 +32,7 @@
     "calendar": { "title": "Kalenteri", "summary": "Tapahtumat, muistutukset, toistot ja kalenterit, joita jo käytät." },
     "lists": { "title": "Listat ja tehtävät", "summary": "Ostoslistat, joista kaikki voivat merkitä ostetut, ja tehtävät, joissa on nimi." },
     "meals": { "title": "Ateriat ja reseptit", "summary": "Suunnittele viikon ateriat ja pidä perheen reseptit yhdessä paikassa." },
+    "notes": { "title": "Muistiinpanot", "summary": "Tallenna ajatus tai linkki kahdella napautuksella mistä tahansa – oletuksena yksityinen." },
     "birthdays": { "title": "Syntymäpäivät", "summary": "Syntymäpäivät ja juhlat, ja muistutus ennen jokaista." },
     "habits": { "title": "Tavat ja Minzi", "summary": "Rakentakaa tapoja yhdessä ja pitäkää Minzi-kissa tyytyväisenä." },
     "vault": { "title": "Asiakirjat ja kuvat", "summary": "Paperit ja kuvat puhelimellasi, järjestettynä kansioihin ja albumeihin." },

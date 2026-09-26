@@ -31,6 +31,10 @@ const KEYS = new Set([
 ]);
 const REQUIRED = ['id', 'topic', 'title', 'summary', 'keywords', 'routes', 'since', 'updated'];
 const TIP_KEYS = ['tipTitle', 'tipBody', 'tipSkipIf', 'tipPriority'];
+/** A tip needs these; `tipSkipIf` is optional — no key means "always show"
+ *  (the app treats a missing skipIf that way), for a feature with no
+ *  "already done it" signal yet. */
+const TIP_REQUIRED = ['tipTitle', 'tipBody', 'tipPriority'];
 const CHECKLIST_KEYS = ['checklist', 'checklistDoneIf'];
 
 export const LIMITS = {
@@ -430,15 +434,16 @@ export function loadHelp({ root, locale = 'en', topics, icons }) {
     // tip: all or nothing
     const tipSet = TIP_KEYS.filter((k) => k in meta);
     let tip = null;
-    if (tipSet.length && tipSet.length !== TIP_KEYS.length) {
-      at(tipSet[0], `tip fields are all-or-nothing: has ${tipSet.join(', ')}, missing ${TIP_KEYS.filter((k) => !(k in meta)).join(', ')}`);
+    const tipMissing = TIP_REQUIRED.filter((k) => !(k in meta));
+    if (tipSet.length && tipMissing.length) {
+      at(tipSet[0], `tip fields are all-or-nothing: has ${tipSet.join(', ')}, missing ${tipMissing.join(', ')}`);
     } else if (tipSet.length) {
       if (meta.tipTitle.length > LIMITS.tipTitle) at('tipTitle', `tipTitle is ${meta.tipTitle.length} chars, the limit is ${LIMITS.tipTitle}`);
       if (meta.tipBody.length > LIMITS.tipBody) at('tipBody', `tipBody is ${meta.tipBody.length} chars, the limit is ${LIMITS.tipBody}`);
-      if (!skipKeys.has(meta.tipSkipIf)) at('tipSkipIf', `tipSkipIf "${meta.tipSkipIf}" is not in help/skip-keys.json`);
+      if ('tipSkipIf' in meta && !skipKeys.has(meta.tipSkipIf)) at('tipSkipIf', `tipSkipIf "${meta.tipSkipIf}" is not in help/skip-keys.json`);
       const pr = Number(meta.tipPriority);
       if (!isInt(meta.tipPriority) || pr < 1 || pr > 100) at('tipPriority', `tipPriority "${meta.tipPriority}" must be an integer 1–100`);
-      tip = { title: meta.tipTitle, body: meta.tipBody, skipIf: meta.tipSkipIf, priority: pr };
+      tip = { title: meta.tipTitle, body: meta.tipBody, skipIf: meta.tipSkipIf || null, priority: pr };
     }
 
     // checklist: both or neither

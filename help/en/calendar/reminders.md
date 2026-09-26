@@ -9,7 +9,7 @@ tryIt: /calendar/settings
 since: 1.0.0
 updated: 2026-09-24
 media: calendar-reminders
-order: 4
+order: 5
 related: calendar-add-event, calendar-private
 ---
 A reminder is a notification before the event starts. An event can have up to 5.

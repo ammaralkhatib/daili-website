@@ -6,8 +6,5 @@
     "/help/topic/:topicId": "The help center itself.",
     "/help/article/:articleId": "The help center itself."
   },
-  "pending": {
-    "/notes": "Quick Notes (app, 2026-09-25): not released yet; needs its own help article.",
-    "/notes/new": "Quick Notes (app, 2026-09-25): not released yet; needs its own help article."
-  }
+  "pending": {}
 }

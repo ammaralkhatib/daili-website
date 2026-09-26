@@ -209,6 +209,7 @@ expectFail('unknown tip skip key', /tipSkipIf "hasDragons"/, (st) => { st.fm.inv
 expectFail('unknown checklist skip key', /checklistDoneIf "hasDragons"/, (st) => { st.fm.invite.checklistDoneIf = 'hasDragons'; });
 expectFail('unknown icon', /icon "rocket", which is not in HELP_ICONS/, (st) => { st.topics.start.icon = 'rocket'; });
 expectFail('tip half-filled', /tip fields are all-or-nothing/, (st) => { delete st.fm.invite.tipBody; });
+expectFail('tip with only a skip key', /tip fields are all-or-nothing/, (st) => { delete st.fm.invite.tipTitle; delete st.fm.invite.tipBody; delete st.fm.invite.tipPriority; });
 expectFail('tip priority out of range', /tipPriority "101"/, (st) => { st.fm.invite.tipPriority = '101'; });
 expectFail('tip title too long', /tipTitle is 61 chars/, (st) => { st.fm.invite.tipTitle = 'x'.repeat(61); });
 expectFail('checklist half-filled', /both-or-neither/, (st) => { delete st.fm.invite.checklistDoneIf; });

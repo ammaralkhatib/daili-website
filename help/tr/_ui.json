@@ -32,6 +32,7 @@
     "calendar": { "title": "Takvim", "summary": "Etkinlikler, hatırlatıcılar, tekrarlar ve zaten kullandığın takvimler." },
     "lists": { "title": "Listeler ve görevler", "summary": "Herkesin işaretleyebildiği alışveriş listeleri ve üzerinde isim olan görevler." },
     "meals": { "title": "Yemekler ve tarifler", "summary": "Haftanın yemeklerini planla ve ailenin tariflerini tek yerde tut." },
+    "notes": { "title": "Notlar", "summary": "Bir düşünceyi ya da bağlantıyı her yerden iki dokunuşla kaydet — varsayılan olarak gizli." },
     "birthdays": { "title": "Doğum günleri", "summary": "Doğum günleri ve özel günler, her birinden önce bir hatırlatıcıyla." },
     "habits": { "title": "Alışkanlıklar ve Minzi", "summary": "Birlikte alışkanlık edinin ve kedi Minzi'yi mutlu edin." },
     "vault": { "title": "Belgeler ve fotoğraflar", "summary": "Evrakları ve fotoğrafları telefonunda, klasör ve albümlere ayrılmış olarak tut." },

@@ -60,5 +60,9 @@
   "account-delete": { "file": "account-delete.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-newsletter": { "file": "account-newsletter.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-feedback": { "file": "account-feedback.webp", "w": 720, "h": 1564, "kind": "image" },
-  "meals-youtube": { "file": "meals-youtube.webp", "w": 720, "h": 1564, "kind": "image" }
+  "meals-youtube": { "file": "meals-youtube.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-photo": { "file": "calendar-photo.webp", "w": 720, "h": 622, "kind": "image" },
+  "notes-list": { "file": "notes-list.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-new": { "file": "notes-new.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-tile": { "file": "notes-tile.webp", "w": 720, "h": 1281, "kind": "image" }
 }

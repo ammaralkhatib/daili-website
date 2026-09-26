@@ -32,6 +32,7 @@
     "calendar": { "title": "Kalender", "summary": "Hendelser, påminnelser, gjentakelser og kalenderne du allerede bruker." },
     "lists": { "title": "Lister & oppgaver", "summary": "Handlelister alle kan hake av, og oppgaver med et navn på." },
     "meals": { "title": "Mat & oppskrifter", "summary": "Planlegg ukens måltider, og samle familiens oppskrifter på ett sted." },
+    "notes": { "title": "Notater", "summary": "Lagre en tanke eller en lenke med to trykk, uansett hvor du er – privat som standard." },
     "birthdays": { "title": "Bursdager", "summary": "Bursdager og merkedager, med en påminnelse før hver av dem." },
     "habits": { "title": "Vaner & Minzi", "summary": "Bygg vaner sammen, og hold katten Minzi fornøyd." },
     "vault": { "title": "Dokumenter & bilder", "summary": "Ha papirer og bilder på telefonen, sortert i mapper og album." },

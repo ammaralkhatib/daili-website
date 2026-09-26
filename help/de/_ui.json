@@ -32,6 +32,7 @@
     "calendar": { "title": "Kalender", "summary": "Termine, Erinnerungen, Wiederholungen und die Kalender, die du schon nutzt." },
     "lists": { "title": "Listen & Aufgaben", "summary": "Einkaufslisten, die alle abhaken können, und Aufgaben mit Namen dran." },
     "meals": { "title": "Essen & Rezepte", "summary": "Plane das Essen der Woche und sammle die Rezepte der Familie an einem Ort." },
+    "notes": { "title": "Notizen", "summary": "Speichere einen Gedanken oder Link mit zwei Tipps, von überall – standardmäßig privat." },
     "birthdays": { "title": "Geburtstage", "summary": "Geburtstage und Feiern, mit einer Erinnerung vor jedem." },
     "habits": { "title": "Gewohnheiten & Minzi", "summary": "Baut gemeinsam Gewohnheiten auf und haltet Minzi, die Katze, bei Laune." },
     "vault": { "title": "Dokumente & Fotos", "summary": "Papiere und Fotos auf deinem Handy, sortiert in Ordner und Alben." },

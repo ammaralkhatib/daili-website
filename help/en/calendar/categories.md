@@ -9,7 +9,7 @@ tryIt: /family/event-categories
 since: 1.3.0
 updated: 2026-09-24
 media: calendar-categories
-order: 7
+order: 8
 related: calendar-add-event, calendar-views
 ---
 An event's colour comes from its category. So "Sport" looks the same everywhere. Every family starts with six: Family, Work, School, Sport, Health and Free time.

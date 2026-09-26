@@ -34,6 +34,7 @@
     "calendar": { "title": "Kalendář", "summary": "Události, připomenutí, opakování a kalendáře, které už používáš." },
     "lists": { "title": "Seznamy a úkoly", "summary": "Nákupní seznamy, které může odškrtávat každý, a úkoly se jménem." },
     "meals": { "title": "Jídla a recepty", "summary": "Naplánuj jídla na týden a měj rodinné recepty na jednom místě." },
+    "notes": { "title": "Poznámky", "summary": "Ulož myšlenku nebo odkaz dvěma klepnutími, odkudkoli — standardně soukromě." },
     "birthdays": { "title": "Narozeniny", "summary": "Narozeniny a oslavy, s připomenutím před každou z nich." },
     "habits": { "title": "Návyky a Minzi", "summary": "Budujte návyky společně a dělejte radost kočce Minzi." },
     "vault": { "title": "Dokumenty a fotky", "summary": "Papíry a fotky v telefonu, roztříděné do složek a alb." },

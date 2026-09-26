@@ -9,7 +9,7 @@ tryIt: /calendar/new
 since: 1.0.0
 updated: 2026-09-24
 media: calendar-private
-order: 5
+order: 6
 related: calendar-add-event, calendar-edit-delete
 ---
 Planning a surprise, or a doctor's visit that's nobody's business? Make the event private.

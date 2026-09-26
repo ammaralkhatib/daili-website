@@ -32,6 +32,7 @@
     "calendar": { "title": "Agenda", "summary": "Afspraken, herinneringen, herhalingen en de agenda’s die je al gebruikt." },
     "lists": { "title": "Lijsten & taken", "summary": "Boodschappenlijsten die iedereen kan afvinken, en taken met een naam erop." },
     "meals": { "title": "Maaltijden & recepten", "summary": "Plan de maaltijden van de week en bewaar de recepten van het gezin op één plek." },
+    "notes": { "title": "Notities", "summary": "Bewaar een gedachte of een link in twee tikken, overal vandaan — standaard privé." },
     "birthdays": { "title": "Verjaardagen", "summary": "Verjaardagen en feestdagen, met een herinnering vooraf." },
     "habits": { "title": "Gewoontes & Minzi", "summary": "Bouw samen gewoontes op en houd Minzi de kat blij." },
     "vault": { "title": "Documenten & foto’s", "summary": "Papieren en foto’s op je telefoon, geordend in mappen en albums." },

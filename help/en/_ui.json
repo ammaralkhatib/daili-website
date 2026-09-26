@@ -32,6 +32,7 @@
     "calendar": { "title": "Calendar", "summary": "Events, reminders, repeats, and the calendars you already use." },
     "lists": { "title": "Lists & to-dos", "summary": "Shopping lists everyone can tick off, and to-dos with a name on them." },
     "meals": { "title": "Meals & recipes", "summary": "Plan the week’s meals and keep the family’s recipes in one place." },
+    "notes": { "title": "Notes", "summary": "Save a thought or a link in two taps, from anywhere — private by default." },
     "birthdays": { "title": "Birthdays", "summary": "Birthdays and celebrations, with a reminder before each one." },
     "habits": { "title": "Habits & Minzi", "summary": "Build habits together and keep Minzi the cat happy." },
     "vault": { "title": "Documents & photos", "summary": "Keep papers and photos on your phone, sorted into folders and albums." },

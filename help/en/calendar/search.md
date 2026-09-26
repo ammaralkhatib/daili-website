@@ -9,7 +9,7 @@ tryIt: /calendar/search
 since: 1.0.0
 updated: 2026-09-24
 media: calendar-search
-order: 8
+order: 9
 related: calendar-views, calendar-edit-delete
 ---
 Can't remember when the dentist is? Search for it.

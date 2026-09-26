@@ -34,6 +34,7 @@
     "calendar": { "title": "Kalendarz", "summary": "Wydarzenia, przypomnienia, powtórzenia i kalendarze, których już używasz." },
     "lists": { "title": "Listy i zadania", "summary": "Listy zakupów, które każdy może odhaczać, i zadania z czyimś imieniem." },
     "meals": { "title": "Posiłki i przepisy", "summary": "Zaplanuj posiłki na tydzień i trzymaj rodzinne przepisy w jednym miejscu." },
+    "notes": { "title": "Notatki", "summary": "Zapisz myśl albo link dwoma dotknięciami, skądkolwiek — domyślnie prywatnie." },
     "birthdays": { "title": "Urodziny", "summary": "Urodziny i inne okazje, z przypomnieniem przed każdą z nich." },
     "habits": { "title": "Nawyki i Minzi", "summary": "Budujcie nawyki razem i dbajcie, żeby kot Minzi był szczęśliwy." },
     "vault": { "title": "Dokumenty i zdjęcia", "summary": "Papiery i zdjęcia w telefonie, poukładane w folderach i albumach." },
