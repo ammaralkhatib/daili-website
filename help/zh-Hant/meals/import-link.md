@@ -3,7 +3,7 @@ id: meals-import-link
 title: 從網站連結儲存食譜
 summary: 貼上食譜網頁的連結，daili 會幫你填好食材、步驟和相片。
 keywords: 匯入, 連結, 網址, url, 網站, 食譜, 儲存食譜, 部落格, 貼上連結, 網頁
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 tipTitle: 從任何網站儲存食譜
 tipBody: 貼上食譜網頁的連結，daili 會幫你填好食材和步驟。
 ---
@@ -18,4 +18,4 @@ tipBody: 貼上食譜網頁的連結，daili 會幫你填好食材和步驟。
 
 如果網頁沒有食譜資料，daili 還是會存下標題和相片。食材和步驟就自己補上。
 
-> Note: Instagram、TikTok 和 YouTube 的連結沒有食譜資料。請改成複製食譜文字，再用**貼上食譜文字**。
+> Note: Instagram 和 TikTok 的連結沒有食譜資料。請改成複製食譜文字，再用**貼上食譜文字**。YouTube 影片請用**從YouTube影片**。

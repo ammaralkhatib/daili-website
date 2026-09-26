@@ -9,7 +9,7 @@ tryIt: /recipes/search-online
 since: 1.0.0
 updated: 2026-09-24
 media: meals-search-online
-order: 4
+order: 5
 related: meals-import-link, meals-plan-week
 ---
 Out of ideas? Search recipe sites without leaving daili. The results come from vegan and vegetarian recipe blogs.

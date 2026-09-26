@@ -5,7 +5,7 @@ summary: Wklej link do strony z przepisem, a daili samo uzupełni składniki, kr
 keywords: import, link, url, strona, przepis, zapisz przepis, blog, wklej link, internet, skopiuj przepis
 tipTitle: Zapisuj przepisy z dowolnej strony
 tipBody: Wklej link do strony z przepisem, a daili samo uzupełni składniki i kroki.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Trafił ci się dobry przepis w sieci? Zapisz go bez przepisywania.
 
@@ -18,4 +18,4 @@ Trafił ci się dobry przepis w sieci? Zapisz go bez przepisywania.
 
 Jeśli strona nie ma danych przepisu, daili i tak zapisze tytuł i zdjęcie. Składniki i kroki dodaj wtedy samodzielnie.
 
-> Note: Linki z Instagrama, TikToka i YouTube'a nie zawierają danych przepisu. Skopiuj zamiast tego tekst przepisu i użyj opcji **Wklej tekst przepisu**.
+> Note: Linki z Instagrama i TikToka nie zawierają danych przepisu. Skopiuj zamiast tego tekst przepisu i użyj opcji **Wklej tekst przepisu**. Dla YouTube'a użyj opcji **Z filmu na YouTube**.

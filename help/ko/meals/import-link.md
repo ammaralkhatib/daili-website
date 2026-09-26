@@ -3,7 +3,7 @@ id: meals-import-link
 title: 웹사이트 링크로 레시피 저장하기
 summary: 레시피 페이지 링크를 붙여 넣으면 daili가 재료, 조리 단계, 사진을 채워 줘요.
 keywords: 가져오기, 링크, url, 웹사이트, 레시피, 레시피 저장, 블로그, 링크 붙여넣기, 웹, 레시피 복사
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 tipTitle: 어느 웹사이트의 레시피든 저장하세요
 tipBody: 레시피 페이지 링크를 붙여 넣으면 daili가 재료와 조리 단계를 채워 줘요.
 ---
@@ -18,4 +18,4 @@ tipBody: 레시피 페이지 링크를 붙여 넣으면 daili가 재료와 조�
 
 페이지에 레시피 데이터가 없어도 daili는 제목과 사진을 저장해요. 재료와 조리 단계는 직접 넣으세요.
 
-> Note: Instagram, TikTok, YouTube 링크에는 레시피 데이터가 없어요. 대신 레시피 글을 복사해서 **레시피 글 붙여넣기**를 쓰세요.
+> Note: Instagram, TikTok 링크에는 레시피 데이터가 없어요. 대신 레시피 글을 복사해서 **레시피 글 붙여넣기**를 쓰세요. YouTube는 **YouTube 동영상에서**를 쓰세요.

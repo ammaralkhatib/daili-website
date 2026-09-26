@@ -59,5 +59,6 @@
   "account-delete": { "file": "account-delete.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-feedback": { "file": "account-feedback.webp", "w": 720, "h": 1564, "kind": "image" },
   "notifications-help": { "file": "notifications-help.webp", "w": 720, "h": 1564, "kind": "image" },
-  "account-newsletter": { "file": "account-newsletter.webp", "w": 720, "h": 1564, "kind": "image" }
+  "account-newsletter": { "file": "account-newsletter.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-youtube": { "file": "meals-youtube.webp", "w": 720, "h": 1564, "kind": "image" }
 }

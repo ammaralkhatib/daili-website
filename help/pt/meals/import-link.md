@@ -5,7 +5,7 @@ summary: Cole o link de uma página de receita, e o daili preenche os ingredient
 keywords: importar, link, url, site, receita, salvar receita, blog, colar link, web, copiar receita
 tipTitle: Salve receitas de qualquer site
 tipBody: Cole o link de uma página de receita, e o daili preenche os ingredientes e os passos para você.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Achou uma receita boa na internet? Salve sem precisar digitar tudo.
 
@@ -18,4 +18,4 @@ Achou uma receita boa na internet? Salve sem precisar digitar tudo.
 
 Se uma página não tiver dados de receita, o daili salva mesmo assim o título e a foto. Adicione você os ingredientes e os passos.
 
-> Note: Links do Instagram, do TikTok e do YouTube não têm dados de receita. Copie o texto da receita e use **Colar o texto da receita**.
+> Note: Links do Instagram e do TikTok não têm dados de receita. Copie o texto da receita e use **Colar o texto da receita**. Para o YouTube, use **De um vídeo do YouTube**.

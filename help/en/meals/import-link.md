@@ -7,10 +7,10 @@ keywords: import, link, url, website, recipe, save recipe, blog, paste link, web
 routes: /recipes, /recipes/:id/edit
 tryIt: /recipes
 since: 1.4.0
-updated: 2026-09-24
+updated: 2026-09-26
 media: meals-import-link
 order: 2
-related: meals-paste, meals-search-online, meals-add-recipe
+related: meals-paste, meals-youtube, meals-search-online, meals-add-recipe
 tipTitle: Save recipes from any website
 tipBody: Paste a link to a recipe page, and daili fills in the ingredients and steps for you.
 tipSkipIf: hasRecipes
@@ -27,4 +27,4 @@ Found a good recipe online? Save it without typing it out.
 
 If a page has no recipe data, daili still saves the title and photo. Add the ingredients and steps yourself.
 
-> Note: Instagram, TikTok and YouTube links don't contain recipe data. Copy the recipe text instead, and use **Paste recipe text**.
+> Note: Instagram and TikTok links don't contain recipe data. Copy the recipe text instead, and use **Paste recipe text**. For YouTube, use **From a YouTube video**.
