@@ -3,9 +3,9 @@ id: start-edit-home
 title: Upravit domovskou obrazovku: skrýt a přeskládat dlaždice
 summary: Dej dlaždice, které používáš nejvíc, nahoru a skryj ty, které nepotřebuješ.
 keywords: domovská obrazovka, dlaždice, pořadí, přeskládat, přesunout, skrýt, odebrat, zobrazit, přizpůsobit, rozložení
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořadí.
+Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořadí. Každou dlaždici jde přesunout nebo skrýt, i **Poznámky**.
 
 ![Domovská obrazovka v režimu úprav, s × na každé dlaždici. Zakroužkované je tlačítko Hotovo vpravo dole.](start-edit-home)
 

@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Etkinlik ekle
 summary: Bir randevuyu, geziyi ya da maçı aile takvimine ekle, herkes görsün.
 keywords: etkinlik ekle, yeni etkinlik, etkinlik oluştur, randevu, program, plan, tarih, takvim kaydı, tüm gün
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Ailendeki herkes yeni bir etkinliği hemen görür.
 
@@ -15,6 +15,6 @@ Ailendeki herkes yeni bir etkinliği hemen görür.
 4. İstersen daha fazlasını ekle: **Yineleme**, **Hatırlatıcı**, **Kategori** ya da **Konum**.
 5. **Kaydet** düğmesine dokun.
 
-Ardından daili etkinliğini açar, böylece ona bir görev, bir alışveriş öğesi, bir belge ya da bir fotoğraf ekleyebilirsin.
+Ardından daili etkinliğini açar, böylece ona bir görev, bir alışveriş öğesi, bir belge ya da bir fotoğraf ekleyebilirsin. Tarihler kâğıtta mı? **Bir etkinliği fotoğraftan doldur** rehberine bak.
 
 > Note: Ana ekrandan da etkinlik ekleyebilirsin: yuvarlak **+** düğmesine ya da hafta kartındaki **+** simgesine dokun.

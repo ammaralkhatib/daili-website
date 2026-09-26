@@ -1,16 +1,16 @@
 ---
 id: vault-where
 title: Unde sunt păstrate documentele și pozele tale
-summary: Documentele și Pozele rămân doar pe acest telefon. daili nu le împarte cu familia ta și nu face backup la ele.
+summary: Documentele și Fotografiile rămân pe acest telefon. daili nu le încarcă niciodată și nu le partajează cu familia; backupul telefonului le poate păstra.
 keywords: backup, copie de siguranță, cloud, sincronizare, privat, sigur, telefon nou, telefon pierdut, documente, poze, distribuie, unde
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Documentele și Pozele sunt sertarul tău privat din daili. Tot ce pui acolo rămâne pe acest telefon și nicăieri altundeva.
 
 ![Ecranul Documente cu cinci dosare: Acte importante, Asigurări, Școală, Mașină și Bonuri.](vault-where)
 
 1. **Doar tu le vezi.** Familia ta nu le vede și nu se trimite nimic pe serverele daili.
-2. **daili nu face backup la ele.** Dacă pierzi sau resetezi telefonul, ori ștergi aplicația daili, fișierele dispar. Poate le-a salvat backupul telefonului, dar nu te baza pe asta.
+2. **Backupul telefonului le poate păstra.** iPhone: sunt în backupul iCloud și revin pe un iPhone nou configurat din el (dacă iCloud are loc). Android: documentele sunt în backupul Google (până la 25 MB pentru daili); fotografiile se mută doar la un transfer direct de pe telefon pe telefon (cablu sau Wi-Fi).
 3. **Deconectarea le păstrează.** Conectează-te din nou cu același cont pe acest telefon și sunt înapoi.
 4. **Ștergerea contului le elimină** imediat de pe acest telefon.
 

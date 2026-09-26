@@ -3,9 +3,9 @@ id: start-edit-home
 title: Editar tu pantalla de inicio: ocultar y reordenar mosaicos
 summary: Pon arriba los mosaicos que más usas, y oculta los que no necesitas.
 keywords: inicio, mosaicos, reordenar, reorganizar, mover, ocultar, quitar, mostrar, personalizar, diseño
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Puedes cambiar qué mosaicos muestra la pantalla de inicio, y en qué orden.
+Puedes cambiar qué mosaicos muestra la pantalla de inicio, y en qué orden. Cada mosaico se puede mover u ocultar, **Notas** también.
 
 ![La pantalla de inicio en modo edición, con una × en cada mosaico. El botón Listo abajo a la derecha está marcado con un círculo.](start-edit-home)
 

@@ -3,13 +3,15 @@ id: start-home
 title: Petit tour de ton écran d'accueil
 summary: La semaine de ta famille en haut, une tuile pour chaque domaine, et un bouton + pour ajouter vite.
 keywords: accueil, tableau de bord, début, tuiles, semaine, aperçu, écran principal
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 L'écran d'accueil, c'est là que daili s'ouvre. Il montre ce qui arrive et t'emmène partout en une touche.
 
-1. La carte en haut, c'est la semaine de ta famille. Touche-la pour voir chaque jour et ajouter un événement.
-2. Chaque tuile ouvre un domaine, comme **Courses** ou **Famille**. La petite flèche sur une tuile montre un résumé rapide.
+1. La carte en haut montre le prochain événement de ta famille. Touche-la pour voir toute la semaine et ajouter un événement.
+2. Chaque tuile ouvre un domaine, comme **Courses** ou **Notes**. La petite flèche sur une tuile montre un résumé rapide.
 3. Touche le bouton rond **+** en bas à droite pour ajouter un événement, une liste de courses ou une liste de tâches.
+
+Un nouveau compte a aussi la carte **Bien démarrer avec daili** : inviter quelqu’un, ajouter un événement, activer les notifications et plus. Elle se coche toute seule. **Masquer cette liste** la retire pour de bon.
 
 ![L'écran d'accueil avec la carte de la semaine et les tuiles](start-home)
 

@@ -3,7 +3,7 @@ id: meals-search-online
 title: Buscar recetas en línea
 summary: Busca en webs de recetas veganas y vegetarianas desde daili, y guarda la que te guste.
 keywords: buscar, encontrar receta, en línea, internet, ideas, vegetariano, vegano, qué cocinar, inspiración, ideas para cenar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 ¿Sin ideas? Busca en webs de recetas sin salir de daili. Los resultados vienen de blogs de recetas veganas y vegetarianas.
 
@@ -14,4 +14,4 @@ translatedFrom: 2026-09-24
 3. Toca un resultado. daili lo importa por ti.
 4. Revisa la receta y toca **Guardar**.
 
-> Note: La búsqueda en línea necesita una dirección de correo confirmada. Si solo ves **La búsqueda falló**, abre **Ajustes** y confirma antes tu correo. También hay un límite diario de búsquedas.
+> Note: La búsqueda online necesita un correo verificado. Si el tuyo aún no lo está, la pantalla lo dice y tiene un botón **Reenviar** para el enlace. También hay un límite diario de búsquedas.

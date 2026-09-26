@@ -3,7 +3,7 @@ id: family-activity
 title: Pozri sa, kto čo zmenil
 summary: Zoznam aktivít ukazuje, čo tvoja rodina pridala, zmenila alebo vymazala, a kto to urobil.
 keywords: aktivita, história, zmeny, kto zmenil, kto vymazal, novinky, zvonček, prehľad, záznam
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Spoločnú udalosť alebo zoznam môže zmeniť ktokoľvek. Zoznam aktivít ukazuje, kto to bol.
 
@@ -13,4 +13,4 @@ Spoločnú udalosť alebo zoznam môže zmeniť ktokoľvek. Zoznam aktivít ukaz
 2. Prechádzaj zoznam. Zmeny sú zoskupené pod **Dnes**, **Včera** a staršie dátumy.
 3. Ťukni na zmenu a otvorí sa udalosť, zoznam alebo recept, ktorého sa týka.
 
-Nové zmeny majú pri prvom zobrazení svetlé pozadie.
+Nové zmeny majú pri prvom zobrazení svetlé pozadie. Keď niekto zdieľa poznámku s celou rodinou, uvidíš tu **Poznámka zdieľaná**, bez upozornenia.

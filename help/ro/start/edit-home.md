@@ -3,9 +3,9 @@ id: start-edit-home
 title: Editează ecranul principal: ascunde și reordonează dalele
 summary: Pune sus dalele pe care le folosești cel mai des și ascunde-le pe cele de care nu ai nevoie.
 keywords: ecran principal, dale, reordonare, rearanjare, mutare, ascundere, eliminare, afișare, personalizare, aspect
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Poți schimba ce dale apar pe ecranul principal și în ce ordine.
+Poți schimba ce dale apar pe ecranul principal și în ce ordine. Orice card poate fi mutat sau ascuns, inclusiv **Notițe**.
 
 ![Ecranul principal în modul de editare, cu un × pe fiecare dală. Butonul Gata din dreapta jos este încercuit.](start-edit-home)
 

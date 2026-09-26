@@ -3,9 +3,9 @@ id: start-edit-home
 title: Startbildschirm anpassen: Kacheln ausblenden und sortieren
 summary: Leg die Kacheln, die du am meisten nutzt, nach oben und blende die aus, die du nicht brauchst.
 keywords: startbildschirm, kacheln, sortieren, anordnen, verschieben, ausblenden, entfernen, anzeigen, anpassen, layout
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihenfolge.
+Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihenfolge. Jede Kachel lässt sich verschieben oder ausblenden, auch **Notizen**.
 
 ![Der Startbildschirm im Bearbeitungsmodus, mit einem × auf jeder Kachel. Der Button Fertig unten rechts ist eingekreist.](start-edit-home)
 

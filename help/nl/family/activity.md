@@ -3,7 +3,7 @@ id: family-activity
 title: Zien wie wat heeft veranderd
 summary: De activiteitenlijst laat zien wat je gezin heeft toegevoegd, veranderd of verwijderd, en wie het deed.
 keywords: activiteit, geschiedenis, wijzigingen, wie heeft veranderd, wie heeft verwijderd, wat is nieuw, bel, feed, logboek
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Iedereen kan een gedeelde afspraak of lijst veranderen. De activiteitenlijst laat zien wie het deed.
 
@@ -13,4 +13,4 @@ Iedereen kan een gedeelde afspraak of lijst veranderen. De activiteitenlijst laa
 2. Scrol door de lijst. Wijzigingen staan onder **Vandaag**, **Gisteren** en eerdere dagen.
 3. Tik op een wijziging om de afspraak, lijst of het recept te openen waar het over gaat.
 
-Nieuwe wijzigingen hebben een lichte achtergrond de eerste keer dat je ze ziet.
+Nieuwe wijzigingen hebben een lichte achtergrond de eerste keer dat je ze ziet. Deelt iemand een notitie met het hele gezin, dan zie je hier **Notitie gedeeld**, zonder melding.

@@ -3,7 +3,7 @@ id: family-activity
 title: Voir qui a changé quoi
 summary: La liste d'activité montre ce que ta famille a ajouté, modifié ou supprimé, et qui l'a fait.
 keywords: activité, historique, changements, qui a modifié, qui a supprimé, nouveautés, cloche, fil, journal
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Tout le monde peut modifier un événement ou une liste partagés. La liste d'activité montre qui l'a fait.
 
@@ -13,4 +13,4 @@ Tout le monde peut modifier un événement ou une liste partagés. La liste d'ac
 2. Fais défiler la liste. Les changements sont regroupés sous **Aujourd'hui**, **Hier** et des dates plus anciennes.
 3. Touche un changement pour ouvrir l'événement, la liste ou la recette concernés.
 
-Les nouveaux changements ont un fond clair la première fois que tu les vois.
+Les nouveaux changements ont un fond clair la première fois que tu les vois. Quand quelqu’un partage une note avec toute la famille, tu vois **Note partagée** ici, sans notification.

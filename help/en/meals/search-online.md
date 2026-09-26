@@ -7,7 +7,7 @@ keywords: search, find recipe, online, ideas, vegetarian, vegan, what to cook, i
 routes: /recipes/search-online
 tryIt: /recipes/search-online
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-26
 media: meals-search-online
 order: 5
 related: meals-import-link, meals-plan-week
@@ -21,4 +21,4 @@ Out of ideas? Search recipe sites without leaving daili. The results come from v
 3. Tap a result. daili imports it for you.
 4. Check the recipe and tap **Save**.
 
-> Note: Online search needs a verified email address. If you only see **Search failed**, open **Settings** and verify your email first. There is also a daily limit on searches.
+> Note: Online search needs a verified email address. If yours isn't verified yet, the screen says so and has a **Resend** button for the link. There is also a daily limit on searches.

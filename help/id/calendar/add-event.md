@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Tambah acara
 summary: Masukkan janji temu, perjalanan, atau pertandingan ke kalender keluarga, supaya semua orang melihatnya.
 keywords: tambah acara, acara baru, buat acara, janji temu, jadwal, rencana, tanggal, entri kalender, sepanjang hari
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Semua orang di keluarga Anda langsung melihat acara baru.
 
@@ -15,6 +15,6 @@ Semua orang di keluarga Anda langsung melihat acara baru.
 4. Tambahkan lagi kalau mau: **Pengulangan**, **Pengingat**, **Kategori**, atau **Lokasi**.
 5. Ketuk **Simpan**.
 
-Lalu daili membuka acara Anda, supaya Anda bisa melampirkan tugas, barang belanja, dokumen, atau foto.
+Lalu daili membuka acara Anda, supaya Anda bisa melampirkan tugas, barang belanja, dokumen, atau foto. Tanggalnya ada di kertas? Lihat **Isi acara dari foto**.
 
 > Note: Anda juga bisa menambah acara dari Beranda: ketuk tombol bulat **+**, atau **+** di kartu minggu.

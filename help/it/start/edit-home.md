@@ -3,9 +3,9 @@ id: start-edit-home
 title: Modificare la schermata iniziale: nascondere e riordinare i riquadri
 summary: Metti in alto i riquadri che usi di più, e nascondi quelli che non ti servono.
 keywords: schermata iniziale, riquadri, riordinare, sistemare, spostare, nascondere, togliere, mostrare, personalizzare, layout
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Puoi cambiare quali riquadri mostra la schermata iniziale, e in che ordine.
+Puoi cambiare quali riquadri mostra la schermata iniziale, e in che ordine. Ogni riquadro si può spostare o nascondere, anche **Note**.
 
 ![La schermata iniziale in modalità modifica, con una × su ogni riquadro. Il pulsante Fatto in basso a destra è cerchiato.](start-edit-home)
 

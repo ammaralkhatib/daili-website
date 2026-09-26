@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Přidat událost
 summary: Zapiš do rodinného kalendáře návštěvu lékaře, výlet nebo zápas, ať to vidí všichni.
 keywords: přidat událost, nová událost, vytvořit událost, schůzka, termín, naplánovat, plán, datum, záznam v kalendáři, celý den
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Novou událost hned vidí každý v rodině.
 
@@ -15,6 +15,6 @@ Novou událost hned vidí každý v rodině.
 4. Jestli chceš, přidej další: **Opakování**, **Připomenutí**, **Kategorie** nebo **Místo**.
 5. Klepni na **Uložit**.
 
-daili pak událost otevře a můžeš k ní připojit úkol, položku nákupu, dokument nebo fotku.
+daili pak událost otevře a můžeš k ní připojit úkol, položku nákupu, dokument nebo fotku. Máš data na papíře? Podívej se na **Vyplň událost z fotky**.
 
 > Note: Událost můžeš přidat i z domovské obrazovky: klepni na kulaté tlačítko **+**, nebo na **+** na kartě týdne.

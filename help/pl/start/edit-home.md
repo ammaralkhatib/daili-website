@@ -3,9 +3,9 @@ id: start-edit-home
 title: Edytuj ekran główny: ukryj i przestaw kafelki
 summary: Przenieś kafelki, których używasz najczęściej, na górę i ukryj te, których nie potrzebujesz.
 keywords: ekran główny, kafelki, kolejność, przestaw, przenieś, ukryj, usuń, pokaż, dostosuj, układ
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności.
+Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności. Każdy kafelek można przesunąć albo ukryć, także **Notatki**.
 
 ![Ekran główny w trybie edycji, z × na każdym kafelku. Zakreślony jest przycisk Gotowe w prawym dolnym rogu.](start-edit-home)
 

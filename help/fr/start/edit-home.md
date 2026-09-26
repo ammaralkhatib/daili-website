@@ -3,9 +3,9 @@ id: start-edit-home
 title: Modifier ton écran d'accueil : masquer et réordonner les tuiles
 summary: Mets en haut les tuiles que tu utilises le plus, et masque celles dont tu n'as pas besoin.
 keywords: accueil, tuiles, réordonner, réorganiser, déplacer, masquer, retirer, afficher, personnaliser, disposition
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Tu peux choisir quelles tuiles l'écran d'accueil affiche, et dans quel ordre.
+Tu peux choisir quelles tuiles l'écran d'accueil affiche, et dans quel ordre. Chaque tuile peut bouger ou se masquer, **Notes** aussi.
 
 ![L'écran d'accueil en mode modification, avec un × sur chaque tuile. Le bouton Terminé en bas à droite est entouré.](start-edit-home)
 

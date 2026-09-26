@@ -3,7 +3,7 @@ id: family-activity
 title: Vezi cine a schimbat ce
 summary: Lista de activitate arată ce a adăugat, a schimbat sau a șters familia ta, și cine a făcut-o.
 keywords: activitate, istoric, modificări, cine a schimbat, cine a șters, noutăți, clopoțel, flux, jurnal
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Oricine poate schimba un eveniment sau o listă comună. Lista de activitate arată cine a făcut-o.
 
@@ -13,4 +13,4 @@ Oricine poate schimba un eveniment sau o listă comună. Lista de activitate ara
 2. Derulează lista. Modificările sunt grupate la **Azi**, **Ieri** și date mai vechi.
 3. Apasă pe o modificare ca să deschizi evenimentul, lista sau rețeta la care se referă.
 
-Modificările noi au un fundal deschis prima dată când le vezi.
+Modificările noi au un fundal deschis prima dată când le vezi. Când cineva partajează o notiță cu toată familia, vezi aici **Notiță partajată**, fără notificare.

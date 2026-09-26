@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Lisää tapahtuma
 summary: Lisää meno, matka tai ottelu perheen kalenteriin, niin kaikki näkevät sen.
 keywords: lisää tapahtuma, uusi tapahtuma, luo tapahtuma, meno, aika, varaus, suunnittele, päivämäärä, kalenterimerkintä, koko päivä
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Kaikki perheessäsi näkevät uuden tapahtuman heti.
 
@@ -15,6 +15,6 @@ Kaikki perheessäsi näkevät uuden tapahtuman heti.
 4. Lisää halutessasi muuta: **Toisto**, **Muistutus**, **Luokka** tai **Paikka**.
 5. Napauta **Tallenna**.
 
-Sen jälkeen daili avaa tapahtumasi, jotta voit liittää siihen tehtävän, ostoksen, asiakirjan tai kuvan.
+Sen jälkeen daili avaa tapahtumasi, jotta voit liittää siihen tehtävän, ostoksen, asiakirjan tai kuvan. Ovatko päivämäärät paperilla? Katso **Täytä tapahtuma kuvasta**.
 
 > Note: Voit lisätä tapahtuman myös aloitusnäytöltä: napauta pyöreää **+**-painiketta tai viikkokortin **+**.

@@ -3,7 +3,7 @@ id: meals-search-online
 title: Nájdi recepty na internete
 summary: Hľadaj na stránkach s vegánskymi a vegetariánskymi receptami priamo v daili a ulož si ten, ktorý sa ti páči.
 keywords: hľadať, nájsť recept, internet, nápady, vegetariánske, vegánske, čo uvariť, inšpirácia, nápady na večeru
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Došli ti nápady? Hľadaj na stránkach s receptami a zostaň pritom v daili. Výsledky pochádzajú z blogov s vegánskymi a vegetariánskymi receptami.
 
@@ -14,4 +14,4 @@ Došli ti nápady? Hľadaj na stránkach s receptami a zostaň pritom v daili. V
 3. Ťukni na výsledok. daili ho za teba importuje.
 4. Skontroluj recept a ťukni na **Uložiť**.
 
-> Note: Hľadanie na internete vyžaduje overenú e-mailovú adresu. Ak vidíš len **Hľadanie zlyhalo**, otvor **Nastavenia** a najprv si over e-mail. Počet hľadaní za deň je tiež obmedzený.
+> Note: Online hľadanie potrebuje overenú e-mailovú adresu. Ak tvoja ešte nie je overená, obrazovka to povie a má tlačidlo **Poslať znova** pre odkaz. Hľadanie má aj denný limit.

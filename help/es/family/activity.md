@@ -3,7 +3,7 @@ id: family-activity
 title: Ver quién cambió qué
 summary: La lista de novedades muestra lo que tu familia añadió, cambió o eliminó, y quién lo hizo.
 keywords: novedades, actividad, historial, cambios, quién cambió, quién eliminó, campana, registro, feed
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Cualquiera puede cambiar un evento o una lista compartidos. La lista de novedades muestra quién lo hizo.
 
@@ -13,4 +13,4 @@ Cualquiera puede cambiar un evento o una lista compartidos. La lista de novedade
 2. Desplázate por la lista. Los cambios se agrupan en **Hoy**, **Ayer** y fechas anteriores.
 3. Toca un cambio para abrir el evento, la lista o la receta a la que se refiere.
 
-Los cambios nuevos tienen un fondo claro la primera vez que los ves.
+Los cambios nuevos tienen un fondo claro la primera vez que los ves. Cuando alguien comparte una nota con toda la familia, aquí ves **Nota compartida**, sin notificación.

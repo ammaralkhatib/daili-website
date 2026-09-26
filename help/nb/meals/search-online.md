@@ -3,7 +3,7 @@ id: meals-search-online
 title: Finn oppskrifter på nettet
 summary: Søk på veganske og vegetariske oppskriftssider fra daili, og lagre den du liker.
 keywords: søk, finn oppskrift, på nett, ideer, vegetar, vegansk, hva skal jeg lage, inspirasjon, middagstips
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Tom for ideer? Søk på oppskriftssider uten å forlate daili. Resultatene kommer fra veganske og vegetariske matblogger.
 
@@ -14,4 +14,4 @@ Tom for ideer? Søk på oppskriftssider uten å forlate daili. Resultatene komme
 3. Trykk på et resultat. daili importerer det for deg.
 4. Sjekk oppskriften, og trykk på **Lagre**.
 
-> Note: Søk på nettet krever en bekreftet e-postadresse. Ser du bare **Søket mislyktes**, åpner du **Innstillinger** og bekrefter e-posten din først. Det er også en daglig grense for antall søk.
+> Note: Nettsøk krever en bekreftet e-postadresse. Hvis din ikke er bekreftet ennå, sier skjermen det og har en knapp **Send på nytt** for lenken. Det er også en daglig grense for søk.

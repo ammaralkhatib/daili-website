@@ -3,9 +3,9 @@ id: start-edit-home
 title: Ändra din startskärm: dölj och sortera rutor
 summary: Lägg rutorna du använder mest överst, och dölj dem du inte behöver.
 keywords: startskärm, rutor, sortera, ordna om, flytta, dölja, ta bort, visa, anpassa, layout
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Du kan ändra vilka rutor startskärmen visar, och i vilken ordning.
+Du kan ändra vilka rutor startskärmen visar, och i vilken ordning. Varje ruta går att flytta eller dölja, även **Anteckningar**.
 
 ![Startskärmen i redigeringsläge, med ett × på varje ruta. Knappen Klar längst ned till höger är inringad.](start-edit-home)
 

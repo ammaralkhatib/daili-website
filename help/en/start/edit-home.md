@@ -7,12 +7,12 @@ keywords: home, tiles, reorder, rearrange, move, hide, remove, show, customise, 
 routes: /settings/home-tiles
 tryIt: /
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-09-26
 media: start-edit-home
 order: 5
 related: start-home
 ---
-You can change which tiles Home shows, and in which order.
+You can change which tiles Home shows, and in which order. Every tile can move or hide, **Notes** too.
 
 ![The Home screen in edit mode, with an × on each tile. The Done button at the bottom right is circled.](start-edit-home)
 

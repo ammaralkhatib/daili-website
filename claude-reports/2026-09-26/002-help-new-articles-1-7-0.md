@@ -31,7 +31,8 @@ None. `media-gaps.json` is still `{}`. All four ids (`notes-list`, `notes-new`, 
 
 ## SHAs
 - `7069b48` docs(plan): sync planning docs
-- feat commit: see `git log` (this report is part of it)
+- `71875fd` feat(help): Notes topic, Fill from a photo, Tips on/off — 1.7.0 part 1
+- Pushed to `origin/main`.
 
 ## Help impact
 notes-notes, calendar-photo, account-tips: new articles (1.7.0). New topic `notes`.

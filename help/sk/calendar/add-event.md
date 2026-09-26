@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Pridaj udalosť
 summary: Zapíš termín u lekára, výlet alebo zápas do rodinného kalendára, aby ho videli všetci.
 keywords: pridať udalosť, nová udalosť, vytvoriť udalosť, termín, stretnutie, plán, dátum, záznam v kalendári, celý deň
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Novú udalosť hneď uvidí každý v tvojej rodine.
 
@@ -15,6 +15,6 @@ Novú udalosť hneď uvidí každý v tvojej rodine.
 4. Ak chceš, pridaj ďalšie: **Opakovanie**, **Pripomienka**, **Kategória** alebo **Miesto**.
 5. Ťukni na **Uložiť**.
 
-daili potom udalosť otvorí a môžeš k nej pripojiť úlohu, položku na nákup, dokument alebo fotku.
+daili potom udalosť otvorí a môžeš k nej pripojiť úlohu, položku na nákup, dokument alebo fotku. Máš dátumy na papieri? Pozri si **Vyplň udalosť z fotky**.
 
 > Note: Udalosť môžeš pridať aj z domovskej obrazovky: ťukni na okrúhle tlačidlo **+** alebo na **+** na karte týždňa.

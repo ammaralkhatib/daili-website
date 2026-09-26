@@ -3,7 +3,7 @@ id: family-activity
 title: Lihat siapa mengubah apa
 summary: Daftar aktivitas menunjukkan apa yang ditambah, diubah, atau dihapus keluarga Anda, dan siapa pelakunya.
 keywords: aktivitas, riwayat, perubahan, siapa yang mengubah, siapa yang menghapus, apa yang baru, lonceng, feed, log
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
 Siapa pun bisa mengubah acara atau daftar yang dibagikan. Daftar aktivitas menunjukkan siapa yang melakukannya.
 
@@ -13,4 +13,4 @@ Siapa pun bisa mengubah acara atau daftar yang dibagikan. Daftar aktivitas menun
 2. Gulir daftarnya. Perubahan dikelompokkan di bawah **Hari ini**, **Kemarin**, dan tanggal sebelumnya.
 3. Ketuk sebuah perubahan untuk membuka acara, daftar, atau resep yang bersangkutan.
 
-Perubahan baru punya latar belakang terang saat pertama kali Anda melihatnya.
+Perubahan baru punya latar belakang terang saat pertama kali Anda melihatnya. Saat seseorang membagikan catatan ke seluruh keluarga, Anda melihat **Catatan dibagikan** di sini, tanpa notifikasi.

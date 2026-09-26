@@ -3,9 +3,9 @@ id: start-edit-home
 title: Ubah Beranda: sembunyikan dan urutkan kartu
 summary: Taruh kartu yang paling sering dipakai di atas, dan sembunyikan yang tidak Anda perlukan.
 keywords: beranda, kartu, urutkan, atur ulang, pindahkan, sembunyikan, hapus, tampilkan, sesuaikan, tata letak
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Anda bisa mengubah kartu mana yang tampil di Beranda, dan urutannya.
+Anda bisa mengubah kartu mana yang tampil di Beranda, dan urutannya. Setiap petak bisa dipindah atau disembunyikan, termasuk **Catatan**.
 
 ![Beranda dalam mode ubah, dengan × di tiap kartu. Tombol Selesai di kanan bawah dilingkari.](start-edit-home)
 

@@ -3,9 +3,9 @@ id: start-edit-home
 title: Tilpas din startskærm: skjul og flyt felter
 summary: Sæt de felter, du bruger mest, øverst, og skjul dem, du ikke har brug for.
 keywords: startskærm, felter, flyt, omarranger, rækkefølge, skjul, fjern, vis, tilpas, layout
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Du kan selv vælge, hvilke felter startskærmen viser, og i hvilken rækkefølge.
+Du kan selv vælge, hvilke felter startskærmen viser, og i hvilken rækkefølge. Alle felter kan flyttes eller skjules, også **Noter**.
 
 ![Startskærmen i redigeringstilstand med et × på hvert felt. Knappen Færdig nederst til højre er markeret med en cirkel.](start-edit-home)
 

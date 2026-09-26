@@ -3,9 +3,9 @@ id: start-edit-home
 title: Uprav si domovskú obrazovku: skry a presuň dlaždice
 summary: Daj dlaždice, ktoré používaš najčastejšie, navrch a skry tie, ktoré nepotrebuješ.
 keywords: domovská obrazovka, dlaždice, poradie, preusporiadať, presunúť, skryť, odstrániť, zobraziť, prispôsobiť, rozloženie
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-26
 ---
-Môžeš si zmeniť, ktoré dlaždice domovská obrazovka ukazuje a v akom poradí.
+Môžeš si zmeniť, ktoré dlaždice domovská obrazovka ukazuje a v akom poradí. Každú dlaždicu môžeš presunúť alebo skryť, aj **Poznámky**.
 
 ![Domovská obrazovka v režime úprav, na každej dlaždici je ×. Zakrúžkované je tlačidlo Hotovo vpravo dole.](start-edit-home)
 
