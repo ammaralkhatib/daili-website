@@ -29,7 +29,8 @@ All 25 locales have `meals-youtube` in `help/media*.json` and `static/help/media
 
 ## SHAs
 - `44adeaf` docs(plan): sync planning docs
-- see git log: docs(help): YouTube video → recipe article + import-link update, 25 languages (this report is in that commit)
+- `193f697` docs(help): YouTube video → recipe article + import-link update, 25 languages
+- Pushed to `origin/main`.
 
 ## Help impact
 meals-youtube: new article (1.7.0). meals-import-link: YouTube now points to **From a YouTube video**.
