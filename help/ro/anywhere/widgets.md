@@ -1,19 +1,21 @@
 ---
 id: anywhere-widgets
 title: Adaugă un widget daili pe ecranul telefonului
-summary: Vezi ce urmează, lista de cumpărături sau sarcinile pe ecranul telefonului, fără să deschizi daili.
-keywords: widget, widgeturi, ecran de pornire, iphone, android, widget calendar, widget cumpărături, widget sarcini, urmează, adaugă widget
+summary: Vezi-ți planurile, bifează sarcini și cumpărături sau adaugă ceva nou — direct de pe ecranul principal.
+keywords: widget, widgeturi, ecran principal, ecran de blocare, iphone, android, obiceiuri, cină, adăugare rapidă, zi de naștere, bifează, adaugă widget
 tipTitle: Planul tău pe ecranul telefonului
 tipBody: Adaugă un widget daili și vezi ce urmează fără să deschizi aplicația.
 translatedFrom: 2026-09-26
 ---
-daili are mai multe widgeturi. De exemplu, **Urmează** arată următoarele intrări din calendarul familiei, **Cumpărături** cea mai recentă listă de cumpărături, iar **Sarcini** ce e de făcut. **Notiță rapidă** deschide o notiță nouă dintr-o atingere și numără notițele scrise săptămâna asta.
+daili are widgeturi pentru calendar (**Urmează**, și ca numărătoare inversă până la următorul eveniment), **Cumpărături**, **Sarcini**, obiceiuri cu Minzi, numărătoarea până la zilele de naștere, cina de diseară, adăugare rapidă și **Notiță rapidă**.
 
 1. Ține apăsat pe un loc gol de pe ecranul de pornire al telefonului.
 2. Pe iPhone, apasă pe **Editează**, apoi pe **Adaugă un widget**. Pe Android, apasă pe **Widgeturi**.
 3. Găsește daili în listă și apasă pe el.
 4. Alege un widget și o mărime. Pe iPhone, apasă pe **Adaugă un widget**. Pe Android, trage-l într-un loc liber.
 
-Apasă pe un widget ca să deschizi partea respectivă din daili. Pe iPhone poți pune și un buton pentru o notiță nouă pe ecranul de blocare: personalizează ecranul de blocare, adaugă un widget și alege daili.
+Bifează o sarcină, un produs de cumpărat sau un obicei direct pe widget. **+** deschide ecranul potrivit ca să adaugi ceva. Apasă în altă parte ca să deschizi daili acolo.
 
-> Note: Un widget arată ce a încărcat daili ultima dată. Dacă unul pare depășit, deschide daili pentru o clipă.
+Pe iPhone, ecranul de blocare poate arăta următorul eveniment, un buton pentru o notiță nouă și contoare pentru sarcini, cumpărături și obiceiuri. Android nu are widgeturi pe ecranul de blocare.
+
+> Note: Widgeturile arată familia sau grupul tău activ. Dacă unul pare vechi, deschide daili pentru o clipă.

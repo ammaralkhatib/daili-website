@@ -64,5 +64,6 @@
   "notes-list": { "file": "notes-list.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-new": { "file": "notes-new.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-tile": { "file": "notes-tile.webp", "w": 720, "h": 1281, "kind": "image" },
-  "calendar-photo": { "file": "calendar-photo.webp", "w": 720, "h": 622, "kind": "image" }
+  "calendar-photo": { "file": "calendar-photo.webp", "w": 720, "h": 622, "kind": "image" },
+  "meals-photo": { "file": "meals-photo.webp", "w": 720, "h": 1564, "kind": "image" }
 }

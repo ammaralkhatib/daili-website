@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-09-24
 media: meals-to-shopping
-order: 7
+order: 8
 related: meals-plan-week, lists-shopping
 tipTitle: From meal plan to shopping list
 tipBody: Plan the week's meals, then put all their ingredients on your shopping list in one go.

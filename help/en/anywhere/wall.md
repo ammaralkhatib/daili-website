@@ -7,7 +7,7 @@ keywords: wall, tablet, ipad, old tablet, kitchen, hallway, display, family boar
 routes: /
 since: 1.2.0
 updated: 2026-09-25
-order: 3
+order: 4
 mediaPending: hand-made photo or screenshot of the wall board on a tablet
 related: anywhere-web, start-today
 ---

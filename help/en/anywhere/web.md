@@ -7,7 +7,7 @@ keywords: web, browser, computer, laptop, desktop, pc, mac, website, online, app
 routes: /
 since: 1.1.0
 updated: 2026-09-24
-order: 2
+order: 3
 mediaPending: hand-made screenshot of daili in a computer browser
 related: anywhere-wall, anywhere-widgets
 ---

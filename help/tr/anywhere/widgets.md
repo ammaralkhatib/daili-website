@@ -1,19 +1,21 @@
 ---
 id: anywhere-widgets
 title: Ana ekranına bir daili widget'ı ekle
-summary: Sırada ne olduğunu, alışveriş listeni ya da görevlerini daili'yi açmadan ana ekranında gör.
-keywords: widget, widget'lar, ana ekran, iphone, android, takvim widget'ı, alışveriş widget'ı, görev widget'ı, sıradaki, widget ekle
+summary: Planlarını gör, görevleri ve alışverişi işaretle ya da yeni bir şey ekle — doğrudan ana ekranından.
+keywords: widget, widget'lar, ana ekran, kilit ekranı, iphone, android, alışkanlıklar, akşam yemeği, hızlı ekle, doğum günü, işaretle, widget ekle
 tipTitle: Planın ana ekranında
 tipBody: Bir daili widget'ı ekle ve uygulamayı açmadan sırada ne olduğunu gör.
 translatedFrom: 2026-09-26
 ---
-daili'nin birkaç widget'ı var. Örneğin **Sıradaki** aile takviminden sıradaki kayıtları, **Alışveriş** en son alışveriş listeni, **Görevler** de yapılacakları gösterir. **Hızlı not** tek dokunuşla yeni bir not açar ve bu hafta yazdığın notları sayar.
+daili'nin takvimin için (**Sıradaki**, sıradaki etkinliğe geri sayım olarak da), **Alışveriş**, **Görevler**, Minzi'li alışkanlıklar, doğum günü geri sayımı, bu akşamın yemeği, hızlı ekleme ve **Hızlı not** için widget'ları var.
 
 1. Telefonunun ana ekranında boş bir yere basılı tut.
 2. iPhone'da **Düzenle**, sonra **Widget Ekle** seçeneğine dokun. Android'de **Widget'lar** seçeneğine dokun.
 3. Listede daili'yi bul ve ona dokun.
 4. Bir widget ve bir boyut seç. iPhone'da **Widget Ekle** düğmesine dokun. Android'de onu boş bir yere sürükle.
 
-daili'nin ilgili bölümünü açmak için bir widget'a dokun. iPhone'da kilit ekranına yeni not için bir düğme de koyabilirsin: kilit ekranını özelleştir, bir widget ekle ve daili'yi seç.
+Bir görevi, bir alışveriş ürününü ya da bir alışkanlığı doğrudan widget'ta işaretle. **+** bir şey eklemen için doğru ekranı açar. Başka bir yere dokunursan daili orada açılır.
 
-> Note: Widget, daili'nin en son yüklediğini gösterir. Biri eski görünüyorsa daili'yi kısa bir süre aç.
+iPhone'da kilit ekranı sıradaki etkinliğini, yeni not düğmesini ve görevler, alışveriş ve alışkanlıklar için sayaçları gösterebilir. Android'de kilit ekranı widget'ı yok.
+
+> Note: Widget'lar etkin aileni ya da grubunu gösterir. Biri eski görünüyorsa daili'yi kısa bir süre aç.

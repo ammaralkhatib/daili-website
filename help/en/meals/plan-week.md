@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-09-24
 media: meals-plan-week
-order: 6
+order: 7
 related: meals-to-shopping, meals-copy-week, meals-add-recipe
 ---
 Decide once what's for dinner, and the whole family can see it.
