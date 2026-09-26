@@ -53,3 +53,27 @@ guards passing on the new post, the word-count comparison, and anything in the
 prose you had to change (ideally nothing).
 
 Commit and push. **Do not run `./deploy.sh`** — Ammar deploys.
+
+## Picking a hero image — learned the hard way
+
+**Open the Pexels photo page before recommending it to Ammar.** Search-result
+descriptions are unreliable: `photo/family-sitting-together-6148871/` was
+described as "family talking in a bright living room". It is a PORTRAIT shot of
+a grandfather with his back to the camera, and Ammar downloaded it twice before
+anyone checked. Confirm two things from the photo page itself:
+
+1. **Orientation.** Portrait is wrong for a hero. Blog heroes are landscape,
+   ~3:2, resized to 1200px wide.
+2. **What is actually in it**, not what the filename says.
+
+Then, after converting, **look at the .webp** before declaring it done — post 2's
+first hero was a survival go-bag on an article about paperwork. A contact sheet
+(several thumbnails montaged into one PNG, staged and read once) checks a whole
+batch cheaply.
+
+**Also check it against its neighbours.** Two posts publishing days apart must
+not look alike — that is why post 4 could not be another grandparent shot after
+post 6, and why it should not be another white-kitchen-breakfast after post 5.
+
+**Alt text describes the photo, not the post.** "A grandmother drawing with her
+grandchildren" was wrong; she is watching them draw. Fix it after you look.

@@ -25,7 +25,7 @@ the structure. These rules are about **quality**.
   label as in English.
 - **Informal, friendly register**, as the app uses it: German du, French tu,
   Spanish tú, Portuguese você, Italian tu, Dutch je/jij, Polish ty, Czech/Slovak
-  ty, Turkish sen, Nordic du, Romanian tu, Greek εσύ, Ukrainian ти, Bulgarian ти, Indonesian kamu, Japanese です/ます, Korean 해요체, Chinese 你.
+  ty, Turkish sen, Nordic du, Romanian tu, Greek εσύ, Ukrainian ти, Bulgarian ти, Indonesian Anda (the app uses Anda since 2026-09-25), Japanese です/ます, Korean 해요체, Chinese 你.
   Check the ARB for how the app itself addresses the user and match it.
 - **Short, plain sentences.** The same meaning, no additions. Don't translate
   word by word: it must read like it was written in that language.
