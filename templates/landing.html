@@ -1,59 +1,101 @@
-<!-- The home page: the scroll story from claude-prompts/2026-09-08/scroll-story-mock.html
-     (v7, approved 2026-09-18). Six blocks in a fixed order, asserted in
-     tools/check-build.mjs 15: the story, then the web app, the steps, the
-     comparison, the price and the FAQ — one screen each, the browser snapping
-     from one to the next above 900px.
+<!-- The home page: Design B, "Paper & Mint editorial"
+     (claude-prompts/2026-09-27/design-b-mock.html, approved 2026-09-27), built
+     on the scroll-story machinery of 2026-09-18. Nine blocks in a fixed order,
+     asserted in tools/check-build.mjs 15: the hero, the video showcase, the
+     story, the life slide, the web app, the steps, the comparison, the price
+     and the FAQ — one screen each, the browser snapping from one to the next
+     above 900px.
 
-     The story's eight chapters are the hero plus one per FEATURES entry. Only
-     chapter 0 is written out here, because it is the one chapter with store
-     badges and those come from the `storebadges` partial, which the engine
-     resolves in a template and not inside a string build.mjs hands it. The
-     other seven, the eight stacked screenshots and the eight groups of floating
-     cards come from renderStory() — three lists that have to stay in the same
-     order, which is why one function builds all three.
+     The story's seven chapters, the seven stacked screenshots and the dots come
+     from renderStory(), the showcase's cards and chips from renderShowcase(),
+     the three fact cards from renderFacts() — lists that have to stay in step,
+     which is why each set is built by one function. The store badges stay here:
+     they come from the `storebadges` partial, which the engine resolves in a
+     template and not inside a string build.mjs hands it.
+
+     The two videos never autoplay from markup. script.js starts them (desktop,
+     motion allowed, no Save-Data, near the viewport); everyone else sees the
+     poster, which a paused <video> shows by itself. Paths are written out here
+     rather than passed through build.mjs: four fixed files, one place.
 
      Every `--a` / `--w` pair is where in a slide's own 0..1 scroll progress an
      element starts appearing and how long it takes; script.js sets --p and --q,
      and the single `.by` rule in style.css turns them into opacity and lift.
-     With JavaScript off every --p stays 0 — so the reduced-motion rule in
-     style.css also covers "no script": .by elements are simply visible. -->
+     With JavaScript off every --p stays 1, the CSS default: the page is simply
+     complete. -->
 <main id="main">
 
-  <section class="story" id="story" data-active="0">
-    <div class="wrap">
-      <div class="chapters">
-
-        <div class="chapter hero" data-chapter="0">
-          {{{ page.story.heroMshot }}}
-          <div class="txt">
-            <h1 class="by" style="--a:0;--w:.06">{{ hero.h1a }} <em>{{ hero.h1b }}</em></h1>
-            <p class="lead by" style="--a:.04;--w:.06">{{ hero.lead }}</p>
-            <div class="ctas badges by" style="--a:.08;--w:.06">
+  <section class="hero" id="hero" data-scene>
+    <div class="wrap wide">
+      <span class="chip by" style="--a:0;--w:.04"><i></i>{{ hero.chip }}</span>
+      <h1 class="by" style="--a:0;--w:.06">{{ hero.h1a }}<br> <em>{{ hero.h1b }}<svg viewBox="0 0 600 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 120 4, 300 2, 596 14"/></svg></em></h1>
+      <p class="lead by" style="--a:.04;--w:.06">{{ hero.lead }}</p>
+      <div class="ctas badges by" style="--a:.08;--w:.06">
 {{> storebadges }}
-              <a class="web-link" href="{{ page.webAppUrl }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
-            </div>
-            <p class="note by" style="--a:.12;--w:.06">
-{{# hero.notes }}<span>{{ . }}</span>
-{{/}}            </p>
-          </div>
-        </div>
-
-{{{ page.story.chapters }}}
-
+        <a class="web-link" href="{{ page.webAppUrl }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
       </div>
+      <p class="note by" style="--a:.12;--w:.06">
+{{# hero.notes }}<span>{{ . }}</span>
+{{/}}      </p>
+    </div>
+  </section>
 
+  <!-- The video panel: a slow loop behind the upright phone, the three cards
+       floating over it, and the feature chips under it. -->
+  <section class="scene showcase" id="showcase" data-scene>
+    <div class="pin"><div class="wrap wide">
+      <h2 class="sr-only">{{ showcase.h2 }}</h2>
+      <div class="panel">
+        <video class="panel-video" muted loop playsinline preload="none" poster="/assets/video/showcase.webp" aria-hidden="true" data-autoplay><source src="/assets/video/showcase.mp4" type="video/mp4"></video>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="rise">{{{ page.showcase.phone }}}</div>
+        <div class="cards" aria-hidden="true">
+{{{ page.showcase.cards }}}
+        </div>
+        <p class="sync"><i></i>{{ showcase.pill }}</p>
+      </div>
+      <ul class="chips">
+{{{ page.showcase.chips }}}
+      </ul>
+    </div></div>
+  </section>
+
+  <!-- The phone sits on the mint slab on the inline-start side, so /ar/ mirrors
+       it by itself; the chapters scroll past on the other side. -->
+  <section class="story" id="story">
+    <div class="wrap wide">
       <div class="stage" aria-hidden="true">
-        <div class="device">
+        <div class="slab">
+          <div class="slab-label"><span class="disp">daili</span><small>iPhone · Android</small></div>
+          <div class="progress">{{{ page.story.dots }}}</div>
           <div class="phone">
             <div class="screen">
 {{{ page.story.screens }}}
             </div>
           </div>
-{{{ page.story.floats }}}
         </div>
-        <div class="progress">{{{ page.story.dots }}}</div>
+      </div>
+
+      <div class="chapters">
+{{{ page.story.chapters }}}
       </div>
     </div>
+  </section>
+
+  <section class="scene" id="life" data-scene>
+    <div class="pin"><div class="wrap wide life">
+      <div class="life-card by" style="--a:.35;--w:.15">
+        <video class="panel-video" muted loop playsinline preload="none" poster="/assets/video/life.webp" aria-hidden="true" data-autoplay><source src="/assets/video/life.mp4" type="video/mp4"></video>
+        <div class="shade" aria-hidden="true"></div>
+        <div class="cap">
+          <h2>{{ life.h2 }}</h2>
+          <p>{{ life.p }}</p>
+        </div>
+      </div>
+      <div class="facts">
+{{{ page.facts }}}
+      </div>
+    </div></div>
   </section>
 
   <!-- The browser window arrives full width and shrinks aside as the copy fades
@@ -116,20 +158,22 @@
     </div></div>
   </section>
 
+  <!-- Centred: the giant price is the slide. The three points are short
+       enough to sit in a row as pills. -->
   <section class="scene" id="pricing" data-scene>
-    <div class="pin"><div class="wrap price">
-      <div class="copy">
-        <span class="eyebrow by" style="--a:.35;--w:.1">{{ pricing.eyebrow }}</span>
-        <h2 class="by" style="--a:.4;--w:.12">{{ pricing.h2 }}</h2>
-        <ul>
-{{# pricing.points }}          <li class="by">{{ . }}</li>
-{{/}}        </ul>
-        <div class="promise by" style="--a:.8;--w:.1"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
-        <div class="ctas badges by" style="--a:.88;--w:.1">
+    <div class="pin"><div class="wrap wide price">
+      <span class="eyebrow by" style="--a:.35;--w:.1">{{ pricing.eyebrow }}</span>
+      <p class="big by" style="--a:.4;--w:.2">{{ pricing.big }}<small class="by" style="--a:.55;--w:.1">{{ pricing.bigNote }}</small></p>
+      <h2 class="by" style="--a:.5;--w:.12">{{ pricing.h2 }}</h2>
+      <p class="lead by" style="--a:.58;--w:.1">{{ pricing.lead }}</p>
+      <ul class="points">
+{{# pricing.points }}        <li class="by">{{ . }}</li>
+{{/}}      </ul>
+      <div class="promise by" style="--a:.76;--w:.1"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
+      <div class="ctas badges by" style="--a:.85;--w:.1">
 {{> storebadges }}
-        </div>
+        <a class="btn btn-ghost" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a>
       </div>
-      <p class="big by" style="--a:.45;--w:.25">{{ pricing.big }}<small class="by" style="--a:.75;--w:.1">{{ pricing.bigNote }}</small></p>
     </div></div>
   </section>
 

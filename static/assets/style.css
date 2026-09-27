@@ -94,27 +94,22 @@
      back off <html> rather than hard-coding 64 a fourth time. */
   --header-h:64px;
 
-  /* The story's stage colours. Each chapter swaps these four and everything
-     inside .story reads them, so a chapter change is eight custom properties
-     and one transition instead of eight sets of rules. */
-  --stage-bg:var(--paper); --stage-fg:var(--ink); --stage-body:var(--body);
-  --stage-muted:var(--muted); --stage-eyebrow:var(--forest);
-
   /* White ON one of the five category colours. Not --on-forest: that token
      flips to near-black in dark mode, and the event pill stays green in both
      modes because the app draws it green in both modes. */
   --on-cat:#FFFFFF;
 
-  /* The two dark chapter grounds and the text on them. Their own tokens, not
-     --forest-deep / --ink, because both of those go LIGHT in dark mode (they
-     are a hover colour and body text there) and a full-screen chapter that
-     turns near-white in dark mode with white text on it is unreadable. These
-     two stay dark in both modes and --on-dark stays white on both. */
-  --stage-forest:#0B4A30; --stage-ink:#10201A; --on-dark:#FFFFFF;
+  /* Text on the two grounds that stay dark in both modes — the life slide's
+     video card and its inverted fact card, both on --frame. Not --on-forest or
+     --paper: those flip in dark mode. */
+  --on-dark:#FFFFFF;
 
-  /* How wide the sticky phone is. 38vh so it shrinks on a short laptop screen
-     instead of pushing the chapter's text off the slide. */
-  --pw:min(340px,38vh);
+  /* A veil over the two videos. Nothing in light mode; in dark mode the page
+     colour at 35 %, because both clips are light and would glare. */
+  --video-dim:transparent;
+
+  /* How wide the phone on the story's mint slab is (the mock's 300px). */
+  --pw:300px;
 
   /* Blog and legal furniture: the cream ground behind a post hero, a
      blockquote and a table head, and the radius they share. */
@@ -149,6 +144,14 @@ p{color:var(--body)}
 h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
 h3{font-weight:700}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+/* Design B's own measure: the hero, the showcase, the story, the life slide
+   and the price run at the mock's 1328px. */
+.wrap.wide{max-width:1328px;padding-inline:clamp(22px,4vw,56px)}
+/* The display face as a class, for the bits of the design that are type but
+   not headings: the slab's wordmark, the big price. */
+.disp{font-family:var(--display);font-weight:800;line-height:.9;letter-spacing:-.01em}
+/* A heading a screen reader needs and the design does not show. */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 
 /* ---------- the one reveal primitive -------------------------------------
  * Everything on the home page that builds up as you scroll is this rule with
@@ -170,8 +173,8 @@ h3{font-weight:700}
    Everything set smaller — the legal pages, a step or tile heading at 1.35rem —
    needs air or two lines touch, and most of these wrap in German. */
 .legal :is(h1,h2,h3),.step h3{line-height:1.2}
-/* Arabic and Thai carry marks above and below the line, which .98 clips. */
-:is([lang="ar"],[lang="th"]) .chapter :is(h1,h2){line-height:1.25}
+/* Arabic and Thai carry marks above and below the line, which .9 clips. */
+:is([lang="ar"],[lang="th"]) :is(.hero h1,.chapter h2,.life-card h2,.fact b,.price .big){line-height:1.25}
 
 /* Arabic and Thai need more leading than Latin at the same size. */
 [lang="ar"] body,[lang="th"] body,body[lang="ar"],body[lang="th"]{line-height:1.85}
@@ -232,11 +235,14 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 
 /* ---------- language picker ---------- */
 .langpicker{position:relative}
-.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:999px;padding-block:6px;padding-inline:9px 10px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:var(--card);color:var(--ink);transition:background .3s,border-color .3s}
+/* Design B: a 44px round outline button. It keeps the language code beside
+   the globe — the one hint a reader in the wrong language can read — so it is
+   a circle for two-letter codes' worth of width and a short pill beyond. */
+.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:44px;min-width:44px;border:1px solid var(--line);border-radius:999px;padding-inline:12px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:transparent;color:var(--body);transition:background .3s,border-color .3s}
 .langpicker summary::-webkit-details-marker{display:none}
 .langpicker summary:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
-.langpicker summary svg{width:15px;height:15px;stroke:var(--muted);fill:none;stroke-width:1.8;flex:none}
-.langpicker summary .chev{width:10px;height:10px;stroke:var(--muted);opacity:.8}
+.langpicker summary svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;flex:none}
+.langpicker summary .chev{display:none}
 .langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 22px 48px rgba(var(--shadow),.16);z-index:40;width:min(560px,88vw)}
 .langpicker-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 10px}
 .langpicker-menu a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap;overflow:hidden}
@@ -284,13 +290,11 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .dl-menu .store-badge{width:100%;justify-content:start}
 .dl-menu small{color:var(--muted);font-size:.78rem;line-height:1.4}
 
-/* ---------- the scroll story ------------------------------------------------
- * Eight chapters in the left column, one sticky phone in the right one. Each
- * chapter is exactly one screen, the browser snaps from one to the next, and
- * the phone's next screenshot slides UP OVER the previous one, which stays
- * still underneath. Lifted from the approved mock
- * (claude-prompts/2026-09-08/scroll-story-mock.html v7), converted to logical
- * properties and tokens on the way in.
+/* ---------- the home page: Design B ----------------------------------------
+ * Hero, video showcase, story, life, then the slides that were already there
+ * (claude-prompts/2026-09-27/design-b-mock.html, converted to logical
+ * properties and tokens on the way in). Every block is one screen and the
+ * browser snaps from one to the next.
  *
  * Snap lives on <html> — the scroll container — behind the `landing` class
  * build.mjs puts there, so the blog and the legal pages never snap. It is also
@@ -298,66 +302,109 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
  * ------------------------------------------------------------------------- */
 @media(min-width:901px){
   html.landing{scroll-snap-type:y mandatory;scroll-padding-top:var(--header-h)}
-  .chapter,.scene{scroll-snap-align:start}
+  .hero,.chapter,.scene{scroll-snap-align:start}
 }
 
-.story{position:relative;background:var(--stage-bg);color:var(--stage-fg);
-  transition:background-color .7s var(--ease),color .7s var(--ease)}
-.story p,.story li{color:var(--stage-body)}
-.story .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start}
+/* ---------- hero: the centred editorial headline --------------------------- */
+/* Text only. --p is set by script.js like any [data-scene] slide, and it is 1
+   whenever the hero is at or above the header line — so on load, whatever the
+   window height, the hero is complete. The h1 is the LCP. */
+.hero{--p:1;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;padding-block:40px}
+.hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px;width:100%}
+.hero .chip{display:inline-flex;align-items:center;gap:8px;padding-block:8px;padding-inline:14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.82rem;font-weight:600;color:var(--body)}
+.hero .chip i,.showcase .sync i{width:8px;height:8px;border-radius:50%;flex:none;background:var(--cat-green)}
+.hero h1{font-size:clamp(88px,10.5vw,156px);line-height:.9;max-width:1100px}
+/* The display face has no Arabic, Thai, Devanagari or CJK glyphs, and the
+   system faces those scripts fall back to are far wider and taller than
+   Sofia Sans Condensed at the same size: 156px of Arabic at its 1.25 leading
+   is three lines and a slide and a half. Two thirds of the size keeps the
+   headline two lines and the hero one screen. */
+:is([lang="ar"],[lang="th"],[lang="hi"],[lang="ja"],[lang="ko"],[lang^="zh"]) .hero h1{font-size:clamp(56px,7vw,104px)}
+/* The highlighted half with the mock's hand-drawn amber underline. The em is
+   an inline-block, so a long translation wraps INSIDE it and the stroke spans
+   the whole block under its last line, instead of the mock's nowrap span
+   running off the screen in German. */
+.hero h1 em{position:relative;display:inline-block;font-style:normal;color:var(--forest)}
+.hero h1 em svg{position:absolute;inset-inline:0;bottom:-14px;width:100%;height:20px;overflow:visible}
+.hero h1 em path{fill:none;stroke:var(--amber);stroke-width:7;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.hero .lead{margin-block-start:6px;font-size:22px;line-height:1.5;color:var(--body);max-width:680px}
+.hero .note{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;font-size:.88rem;font-weight:600;color:var(--muted)}
+/* The hairline middot between the notes, drawn rather than typed: a "·" in the
+   content would have to be translated and re-joined in 28 files. */
+.hero .note span+span::before{content:"·";color:var(--line);margin-inline-end:12px}
+
+/* ---------- showcase: the video panel --------------------------------------- */
+/* .scene.showcase, not .showcase: the generic .scene padding comes later in
+   this file and would otherwise win, pushing the chips 30px off the slide. */
+.scene.showcase{--q:0;padding-block:24px}
+.panel{position:relative;height:min(760px,calc(100vh - var(--header-h) - 120px));border-radius:40px;overflow:hidden;background:var(--mint-soft);box-shadow:0 60px 120px -50px rgba(var(--shadow),.45)}
+.panel-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.panel .panel-video{opacity:.9}
+.vignette{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(var(--video-dim),var(--video-dim)),
+    radial-gradient(ellipse at 50% 60%,transparent 30%,color-mix(in srgb,var(--paper) 55%,transparent) 100%)}
+/* The phone rising out of the panel's bottom edge: no bezel, round at the top
+   only, the screenshot's top in view. */
+.rise{position:absolute;inset-block-end:0;inset-inline:0;margin-inline:auto;width:300px;height:calc(100% - 64px);border-radius:36px 36px 0 0;overflow:hidden;background:var(--paper);box-shadow:0 -20px 60px -20px rgba(var(--shadow),.35)}
+.rise img{width:100%;height:100%;object-fit:cover;object-position:top}
+.showcase .cards{position:absolute;inset:0;pointer-events:none}
+/* The dark sync pill, centred on the bottom edge. */
+.showcase .sync{position:absolute;inset-block-end:28px;inset-inline:0;margin-inline:auto;width:max-content;max-width:calc(100% - 32px);display:flex;align-items:center;gap:8px;padding-block:8px;padding-inline:14px;border-radius:999px;background:color-mix(in srgb,var(--frame) 85%,transparent);color:var(--on-dark);font-size:.82rem;font-weight:600;line-height:1.3;backdrop-filter:blur(8px)}
+.showcase .sync i{background:var(--web-mint)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-block-start:24px}
+.chips li{padding-block:10px;padding-inline:16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:.88rem;white-space:nowrap}
+
+/* ---------- the scroll story ------------------------------------------------
+ * The mint slab with the phone on the inline-start side, seven chapters on the
+ * other. Each chapter is one screen, the browser snaps from one to the next,
+ * and the phone's next screenshot slides UP OVER the previous one, which stays
+ * still underneath. One calm ground throughout — Design B dropped the colour
+ * per chapter. Every rule that sets type here starts with .story or .chapter
+ * and none of them uppercases: text-transform breaks Turkish and Greek casing
+ * and does nothing for CJK (asserted in check-build 15).
+ * ------------------------------------------------------------------------- */
+.story{position:relative}
+.story .wrap{display:grid;grid-template-columns:min(520px,45%) minmax(0,1fr);gap:min(96px,6vw);align-items:start}
 
 /* One chapter = one screen. --p: 0 while the previous chapter is showing, 1
    once this one has settled; --q: 0..1 as it leaves upwards. min-height, not
    height: a long translation is allowed to make a chapter taller than the
    viewport rather than overflowing it, which is also why script.js reads the
    chapter's own height instead of assuming one screen. */
-.chapter{--p:1;--q:0;min-height:calc(100vh - var(--header-h));display:flex;align-items:center}
-.chapter .txt{max-width:32rem;opacity:calc(1 - var(--q))}
-.chapter .num{font-family:var(--display);font-weight:700;font-size:.9rem;letter-spacing:.1em;color:var(--stage-muted);margin-block-end:6px;display:block}
-.chapter .eyebrow{color:var(--stage-eyebrow)}
-.chapter .eyebrow::before{background:var(--stage-eyebrow)}
-.chapter h1{font-size:clamp(2.6rem,5vw,4.5rem);margin-block:16px;line-height:.98}
-.chapter h2{font-size:clamp(2.2rem,4.4vw,3.8rem);margin-block:14px 16px;line-height:1}
-.chapter .lead{font-size:1.18rem;color:var(--stage-muted);max-width:34rem}
+.chapter{--p:1;--q:0;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;border-block-end:1px solid var(--line)}
+.chapter:last-child{border-block-end:0}
+.chapter .txt{max-width:36rem;opacity:calc(1 - var(--q))}
+.story .num{display:block;font-family:var(--display);font-weight:800;font-size:20px;line-height:1.2;letter-spacing:.08em;color:var(--muted)}
+.chapter h2{font-size:clamp(44px,5vw,68px);margin-block:16px;line-height:.95}
 .chapter .p{font-size:1.15rem;margin-block-end:18px}
 .chapter ul{list-style:none;display:grid;gap:10px}
 .chapter li{display:flex;gap:10px;align-items:flex-start;font-size:1rem}
-.chapter li::before{content:"";flex:none;width:18px;height:18px;margin-block-start:4px;border-radius:50%;background:var(--stage-eyebrow);
+.chapter li::before{content:"";flex:none;width:18px;height:18px;margin-block-start:4px;border-radius:50%;background:var(--forest);
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;
   mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
 .chapter .ctas{margin-block-start:26px}
-.chapter .note{display:flex;gap:14px;flex-wrap:wrap;margin-block-start:18px;font-size:.9rem;color:var(--stage-muted)}
-.chapter .note span::before{content:"✓";color:var(--stage-eyebrow);font-weight:700;margin-inline-end:6px}
-
-/* The highlighted half of the headline, with the mock's hand-drawn underline.
- *
- * The mock stretches an absolutely positioned SVG under a `white-space:nowrap`
- * span, which works in English (16 characters) and pushes the headline off
- * screen in German, Finnish, Turkish and Polish. Same drawing, applied as a
- * background on the inline box instead: it wraps with the text, and
- * box-decoration-break:clone draws it under every line. */
-.chapter h1 em{color:var(--stage-eyebrow);font-style:normal;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20' preserveAspectRatio='none'%3E%3Cpath d='M2 14 C 40 4, 90 18, 198 8' fill='none' stroke='%23A9D9B8' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-size:100% .22em;background-position:0 96%;
-  -webkit-box-decoration-break:clone;box-decoration-break:clone;
-  padding-bottom:.06em}
 
 /* The phone's own screenshot, under the text. Desktop shows the sticky stage
    instead and hides this; a phone hides the stage and shows this. Both point
    at the same file, so the browser downloads it once. */
 .mshot{display:none}
 
-/* ---------- the stage: one sticky phone, eight screens ---------------------- */
-.stage{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center}
-.device{position:relative;width:var(--pw)}
-/* No bezel — the screenshot itself, rounded and lifted. Ammar's call in v4. */
-.phone{position:relative;width:100%;border-radius:32px;box-shadow:0 40px 80px rgba(var(--shadow),.26),0 0 0 1px rgba(var(--shadow),.08)}
-.phone .screen{--idx:0;position:relative;border-radius:32px;overflow:hidden;aspect-ratio:640/1391;background:var(--cream)}
-/* Eight screens stacked, screen k above screen k-1. --idx (0..7, fractional) is
+/* ---------- the stage: the mint slab, one phone, seven screens --------------- */
+.stage{position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));display:flex;align-items:center}
+.slab{position:relative;width:100%;height:min(720px,100%);border-radius:40px;background:var(--mint);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.slab-label{position:absolute;top:28px;inset-inline-start:32px;display:flex;flex-direction:column;gap:4px}
+.slab-label .disp{font-size:22px;color:var(--forest)}
+.slab-label small{font-size:13px;font-weight:500;color:var(--body)}
+/* No bezel: the screenshot itself, round at the top, rising out of the slab's
+   bottom edge. Its top is always in view (object-position), so a short
+   window crops the bottom of the screen, never the app bar. */
+.phone{position:relative;width:min(var(--pw),calc(100% - 48px));height:calc(100% - 80px);border-radius:36px 36px 0 0;box-shadow:0 -20px 60px -20px rgba(var(--shadow),.35)}
+.phone .screen{--idx:0;position:relative;height:100%;border-radius:36px 36px 0 0;overflow:hidden;background:var(--cream)}
+/* Seven screens stacked, screen k above screen k-1. --idx (0..6, fractional) is
    how far the story has scrolled, set by script.js. Screen k waits one frame
    below the phone until the scroll reaches it, then slides up over the one
    before, which never moves. --t is 1 while waiting, 0 once in place. */
-.phone .screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:32px;z-index:var(--k);
+.phone .screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:36px 36px 0 0;z-index:var(--k);
   --t:clamp(0,calc(var(--k) - var(--idx)),1);
   transform:translateY(calc(var(--t) * 100%));
   /* The lip shadow exists only mid-slide: t·(1−t) is 0 at both ends and ¼ in
@@ -366,17 +413,15 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
   will-change:transform}
 
 /* ---------- the floating cards --------------------------------------------- */
-/* Positioned against the phone, so a card always touches it, and above the
-   stacked screens — with z-index on the images and none here, the cards
-   disappeared behind the phone (v3). */
-.floats{--p:1;--q:0;position:absolute;inset:0;pointer-events:none;z-index:10}
+/* The showcase panel's three cards. Each fades in with the showcase slide's
+   own --p and drifts on its own period (--dur). */
 .fc{position:absolute;display:flex;align-items:center;gap:12px;background:var(--card);color:var(--ink);border-radius:18px;padding:14px 18px;font-size:1rem;font-weight:500;line-height:1.25;white-space:nowrap;
   box-shadow:0 18px 44px rgba(var(--shadow),.18),0 0 0 1px rgba(var(--shadow),.06);
   --in:clamp(0,calc((var(--p) - .55) / .2),1);
   opacity:calc(var(--in) * (1 - var(--q)));
   transform:translateY(calc((1 - var(--in)) * 26px)) scale(calc(.94 + .06 * var(--in)));
-  animation:drift var(--dur,6s) ease-in-out infinite}
-@keyframes drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+  animation:drift var(--dur,8s) ease-in-out infinite}
+@keyframes drift{0%,100%{translate:0 0}50%{translate:0 -12px}}
 .fc b{font-weight:700}
 .fc small{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
 .fc .dot{width:12px;height:12px;border-radius:50%;flex:none;background:var(--on-cat)}
@@ -401,21 +446,28 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 @keyframes blink{50%{opacity:.3}}
 
 /* ---------- progress dots --------------------------------------------------- */
-.progress{position:absolute;inset-inline:0;bottom:26px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+/* Top inline-end corner of the slab, level with its label: the bottom edge
+   belongs to the phone. */
+.progress{position:absolute;top:36px;inset-inline-end:32px;display:flex;gap:6px;pointer-events:none;color:var(--forest)}
 .progress i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.25;transition:opacity .3s,width .3s}
 .progress i.on{opacity:1;width:18px;border-radius:3px}
 
-/* ---------- one ground per chapter ------------------------------------------ */
-/* The eight swaps, in story order: paper, forest, paper, mint, amber, paper,
-   ink, mint. data-active is set by script.js. */
-.story[data-active="0"]{--stage-bg:var(--paper)}
-.story[data-active="1"]{--stage-bg:var(--stage-forest);--stage-fg:var(--on-dark);--stage-body:color-mix(in srgb,var(--on-dark) 82%,transparent);--stage-muted:color-mix(in srgb,var(--on-dark) 62%,transparent);--stage-eyebrow:var(--mint-strong)}
-.story[data-active="2"]{--stage-bg:var(--paper)}
-.story[data-active="3"]{--stage-bg:var(--mint-soft)}
-.story[data-active="4"]{--stage-bg:var(--amber-soft);--stage-eyebrow:var(--amber-ink)}
-.story[data-active="5"]{--stage-bg:var(--paper)}
-.story[data-active="6"]{--stage-bg:var(--stage-ink);--stage-fg:var(--on-dark);--stage-body:color-mix(in srgb,var(--on-dark) 80%,transparent);--stage-muted:color-mix(in srgb,var(--on-dark) 55%,transparent);--stage-eyebrow:var(--mint-strong)}
-.story[data-active="7"]{--stage-bg:var(--mint)}
+/* ---------- life: the video card and three facts ---------------------------- */
+.life{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:32px;align-items:stretch}
+.life-card{position:relative;border-radius:32px;overflow:hidden;min-height:440px;background:var(--frame)}
+.life-card .shade{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(var(--video-dim),var(--video-dim)),
+    linear-gradient(180deg,rgba(var(--shadow),0) 40%,rgba(var(--shadow),.75) 100%)}
+.life-card .cap{position:absolute;inset-inline:36px;bottom:32px;display:flex;flex-direction:column;gap:8px}
+.life-card h2{font-size:44px;line-height:.95;color:var(--on-dark)}
+.life-card p{font-size:15px;color:color-mix(in srgb,var(--on-dark) 80%,transparent)}
+.facts{display:flex;flex-direction:column;gap:16px}
+.fact{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:28px;border-radius:24px;background:var(--card);border:1px solid var(--line)}
+.fact b{font-family:var(--display);font-weight:800;font-size:40px;line-height:.95;color:var(--forest)}
+.fact span{font-size:15px;color:var(--body)}
+.fact.inv{background:var(--frame);border-color:transparent}
+.fact.inv b{color:var(--web-mint)}
+.fact.inv span{color:color-mix(in srgb,var(--on-dark) 80%,transparent)}
 
 /* ---------- the slides after the story -------------------------------------- */
 /* Each is one screen, centred, and builds up as it settles under the header.
@@ -438,7 +490,7 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 /* The browser frame from the old hero, in the flow and driven by the scroll.
    --k is its own progress: full width at 0, 55% and shifted to the inline-end
    side at 1. translateX has no logical form, so --dir carries the direction. */
-.laptop{position:relative;z-index:1;width:min(100%,1080px);margin-inline:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 40px 90px rgba(var(--shadow),.28);
+.laptop{position:relative;z-index:1;width:min(100%,1080px);margin-inline:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 60px 120px -40px rgba(var(--shadow),.4);
   --k:clamp(0,calc((var(--p) - .3) / .55),1);
   transform:translateX(calc(30% * var(--k) * var(--dir))) scale(calc(1 - .45 * var(--k)));transform-origin:center}
 .laptop .bar{display:flex;align-items:center;gap:6px;padding-block:9px;padding-inline:12px;border-bottom:1px solid var(--line);background:var(--mint-soft)}
@@ -451,16 +503,20 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .btn{display:inline-flex;align-items:center;gap:8px;border:1.5px solid transparent;border-radius:999px;padding-block:12px;padding-inline:22px;font-size:.98rem;font-weight:600;text-decoration:none;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
 .btn-primary{background:var(--forest);color:var(--on-forest)}
 .btn-primary:hover{background:var(--forest-deep);color:var(--on-forest);transform:translateY(-1px);box-shadow:0 10px 24px rgba(4,97,60,.22)}
+/* The white outlined button beside the store badges on the price slide. */
+.btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--mint-strong);background:var(--mint-soft);color:var(--ink)}
 .web-link{display:inline-flex;align-items:center;gap:8px;padding-block:10px;padding-inline:4px;color:var(--forest);font-weight:600;text-decoration:none}
 .web-link svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:2}
 .web-link:hover{text-decoration:underline;text-underline-offset:4px}
 
 /* ---------- store badges ---------- */
 /* .ctas is the row; .badges is what script.js looks for when it promotes the
-   store the visitor is actually on. Start-aligned, not centred: the hero copy
-   is a left column now, and the price block's badges sit under a left column
-   too — there is nowhere left on the page where a centred row is right. */
+   store the visitor is actually on. Start-aligned by default (the family
+   chapter's button sits under a left column); Design B centres the hero and
+   the price, so those two rows are centred. */
 .ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero .ctas,.price .ctas{justify-content:center}
 .store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--frame);color:#fff;border-radius:13px;padding-block:9px;padding-inline:13px 16px;text-decoration:none;line-height:1.15;cursor:pointer;transition:opacity .15s,transform .3s var(--ease)}
 .store-badge:hover{opacity:.85;color:#fff;transform:translateY(-1px)}
 .store-badge svg{width:22px;height:22px;fill:#fff;flex:none}
@@ -600,24 +656,24 @@ button.store-badge{border:0;margin:0;font-family:inherit;font-size:inherit;text-
 .legend{font-size:.85rem;color:var(--muted);margin-block-start:10px}
 
 /* ---------- pricing ---------- */
-/* No mint box and no border any more: the words build up on one side, the price
-   rises on the other, and the slide's own ground is the only background. */
-.price{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.price h2{font-size:clamp(1.9rem,4.2vw,3.4rem);margin-block:10px 16px}
-.price ul{list-style:none;display:grid;gap:10px;margin-block:18px 22px}
-.price li{display:flex;gap:10px}
-.price li::before{content:"✓";color:var(--forest);font-weight:700}
+/* Centred, one column: the giant €0 is the slide. The slide's own ground is
+   the only background. The price is capped by the window's height as well as
+   its width, so the whole block still fits a 720px-tall laptop. */
+.price{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.price .big{font-family:var(--display);font-weight:800;font-size:clamp(110px,min(16vw,24vh),220px);line-height:.85;color:var(--forest);--lift:80px}
+.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;line-height:1.4;letter-spacing:0;color:var(--muted);margin-block-start:12px;--lift:20px}
+.price h2{font-size:clamp(40px,5vw,64px);line-height:1}
+.price .lead{font-size:1.12rem;color:var(--body);max-width:640px}
+.price .points{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-block-start:4px}
+.price .points li{padding-block:8px;padding-inline:14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--body)}
 /* The three points arrive one after another; like the steps, their start times
    cannot come from the template's loop. */
-.price li:nth-child(1){--a:.58;--w:.08}
-.price li:nth-child(2){--a:.65;--w:.08}
+.price li:nth-child(1){--a:.64;--w:.08}
+.price li:nth-child(2){--a:.68;--w:.08}
 .price li:nth-child(3){--a:.72;--w:.08}
-.price .promise{border-inline-start:3px solid var(--mint-strong);padding-block:4px;padding-inline:16px;font-size:.95rem;margin-block-end:22px;color:var(--body)}
+.price .promise{max-width:640px;font-size:.95rem;color:var(--body)}
 .price .promise strong{display:block;font-family:var(--display);font-size:1.1rem;margin-block-end:2px;color:var(--forest)}
-.price .ctas{margin-block-start:0}
-.price .big{font-family:var(--display);font-weight:800;font-size:clamp(5rem,13vw,11rem);line-height:.9;color:var(--forest);text-align:center;--lift:80px}
-.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;letter-spacing:0;color:var(--muted);margin-block-start:10px;--lift:20px}
-@media(max-width:860px){.price{grid-template-columns:1fr;gap:28px}}
+.price .ctas{margin-block-start:6px}
 
 /* ---------- faq ---------- */
 /* Plain rows, no card: the slide is the container. */
@@ -667,12 +723,16 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 @media(max-height:760px){
   .cmp td,.cmp tbody th,.cmp thead th{padding-block:8px}
   .sec-head h2{font-size:2rem}
-  .chapter h2{font-size:2.4rem}
-  .chapter h1{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+  .chapter h2{font-size:clamp(40px,4vw,52px)}
+  .hero>.wrap{gap:20px}
+  .hero h1{font-size:clamp(72px,9vw,120px)}
+  .hero .lead{font-size:19px}
+  .price{gap:8px}
+  .price .big{font-size:clamp(110px,min(16vw,20vh),220px)}
 }
 
 /* ---------- 900px and down: a plain page -----------------------------------
- * No snapping, no sticky phone, no floating cards, no colour per chapter —
+ * No snapping, no sticky phone, no floating cards, no videos playing —
  * Ammar's call: "simple design for mobile, no slides". Every chapter becomes a
  * block of text with its own screenshot under it, and the slides after the
  * story stack with ordinary padding. script.js sets every --p to 1 here and
@@ -680,28 +740,39 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
  * ------------------------------------------------------------------------- */
 @media(max-width:900px){
   html.landing{scroll-snap-type:none}
+  .hero{min-height:0;padding-block:48px 24px}
+  .hero>.wrap{gap:20px}
+  .hero h1{font-size:clamp(56px,15vw,88px)}
+  .hero .lead{font-size:1.1rem}
+  .panel{height:520px}
+  .rise{width:min(60%,240px);height:calc(100% - 48px);border-radius:28px 28px 0 0}
+  .showcase .cards{display:none}
+  /* The chips run in one line and scroll sideways inside their own box — the
+     page itself never does. Bled to the screen edge, no visible scrollbar. */
+  .chips{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
+    margin-inline:calc(-1 * clamp(22px,4vw,56px));padding-inline:clamp(22px,4vw,56px)}
+  .chips::-webkit-scrollbar{display:none}
+  .chips li{scroll-snap-align:start}
   .story .wrap{display:block}
   .stage{display:none}
   .chapter{min-height:0;display:flex;flex-direction:column;padding-block:48px 8px}
   .chapter .txt{max-width:none;opacity:1}
-  .chapter+.chapter{border-top:1px solid var(--line)}
-  .chapter h1{font-size:clamp(2.2rem,8vw,2.8rem)}
   .chapter h2{font-size:clamp(1.9rem,7vw,2.3rem)}
   /* The screenshot goes under the words, whatever order the markup is in. */
   .mshot{display:block;order:2;width:min(72%,280px);margin-block:28px 8px;margin-inline:auto}
   .mshot img{border-radius:26px;box-shadow:0 24px 50px rgba(var(--shadow),.22),0 0 0 1px rgba(var(--shadow),.08)}
-  /* One ground for the whole story: eight colours that swap on scroll are the
-     desktop story, and there is no scroll driver here. */
-  .story{--stage-bg:var(--paper);--stage-fg:var(--ink);--stage-body:var(--body);--stage-muted:var(--muted);--stage-eyebrow:var(--forest)}
   .scene{min-height:0;display:block;overflow:visible;padding-block:56px 16px}
   .scene.last{padding-block:56px 0}
   .scene.last>.pin{display:block;min-height:0;padding-block-start:0}
   .scene.last footer{margin-block-start:40px}
+  .life{grid-template-columns:1fr}
+  .life-card{min-height:420px}
+  .life-card .cap{inset-inline:24px;bottom:24px}
+  .life-card h2{font-size:36px}
+  .fact b{font-size:34px}
   .web-copy{position:static;transform:none;width:auto;margin-block-start:24px}
   .laptop{transform:none}
-  .steps,.price{grid-template-columns:1fr}
-  .price .big{font-size:5rem}
-  .progress{display:none}
+  .steps{grid-template-columns:1fr}
 }
 @media(max-width:820px){
   .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
@@ -733,6 +804,9 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
     /* The dark block's accent goes lighter, not darker: see --web-mint above. */
     --web-mint:#7BD3A6; --web-mint-ink:#08160F;
     --cream:#141D18;
+    /* Both video posters are light; this veils them so the page does not
+       glare. It is --paper's dark value at 35 %. */
+    --video-dim:rgba(14,23,18,.35);
   }
   .store-badge{background:#000;border:1px solid var(--line)}
   /* The border above comes from a shorthand the <button> reset zeroes out. */
@@ -749,14 +823,14 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
      the one mark in the table that needs its own dark value. */
   .cmp td.n{color:#5A6B61}
   /* --shadow is 0,0,0 here, and a black shadow on a near-black page is
-     invisible: the phone and the browser window would float with nothing under
-     them, so both keep an explicit, stronger one. */
-  .phone{box-shadow:0 40px 80px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06)}
+     invisible: the phones and the browser window would float with nothing
+     under them, so they keep an explicit, stronger one. */
+  .phone,.rise{box-shadow:0 -20px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06)}
   .laptop{box-shadow:0 30px 70px rgba(0,0,0,.45)}
   .fc{box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06)}
-  /* The two dark chapters go a shade deeper than the page rather than lighter,
-     so the story still changes ground under a dark reader. */
-  :root{--stage-forest:#0B3323;--stage-ink:#060C09}
+  /* The inverted fact card sits on --card here, not on --paper, so it needs
+     its own edge to stay a card. */
+  .fact.inv{border-color:var(--line)}
 }
 
 /* ---------- reduced motion ---------- */
@@ -768,12 +842,10 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   html{scroll-behavior:auto}
   /* The story still tells itself — the phone still stacks its screens by --idx
      and the chapters still snap — but nothing lifts, drifts or slides in.
-     script.js pins each chapter's --p to 1 and --q to 0, so the text is simply
-     there; these rules drop the transforms the custom properties would
-     otherwise still apply.
-     The CARDS keep their own --p: it is not decoration but which three cards
-     belong to the chapter you are on, and pinning them would stack all
-     twenty-four over the phone at once. */
+     script.js pins every --p to 1 and --q to 0, so the text and the showcase
+     cards are simply there; these rules drop the transforms the custom
+     properties would otherwise still apply. The two videos are never started
+     (script.js), so each shows its poster. */
   .by,.fc{transform:none!important}
   .by{opacity:1!important}
   .laptop{transform:none!important}

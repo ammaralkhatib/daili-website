@@ -1020,8 +1020,9 @@ export const HELP_LOCALES = ['en', 'de', 'nl', 'sv', 'da', 'nb', 'fi', 'fr', 'it
  * count and a glyph were the grid's layout, and the grid is gone.
  *
  * The copy — eyebrow, h2, p, bullets, alt — stays in content/<locale>.json
- * under features.<key>, unchanged since 013. The story renders `eyebrow` now:
- * it is the small uppercase label above each chapter's headline.
+ * under features.<key>, unchanged since 013. The story renders `eyebrow` as
+ * the numbered label above each chapter's headline ("01 — Calendar"), and the
+ * showcase slide repeats it as its row of feature chips.
  */
 export const FEATURES = [
   { key: 'calendar',  shot: 'shot-calendar' },
@@ -1039,26 +1040,19 @@ export const WEB_APP_URL = 'https://app.daili.app';
 /**
  * The line-art glyphs the floating cards use, keyed by the name STORY_CARDS
  * refers to as `ico:<glyph>`. Here rather than in content for the same reason
- * the tile icons were: a path is not translated.
+ * the tile icons were: a path is not translated. Only the glyphs a card still
+ * draws: the per-chapter cards went with Design B (2026-09-27, 002).
  */
 export const STORY_ICONS = {
-  repeat: '<path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
-  bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/>',
-  cake: '<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16h16M12 11V7M12 7a2 2 0 1 0 0-4"/>',
-  pot: '<path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>',
-  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
-  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
-  photo: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>',
-  link: '<path d="M15 7h3a5 5 0 0 1 0 10h-3M9 17H6A5 5 0 0 1 6 7h3M8 12h8"/>',
+  cart: '<path d="M3 4h2l2.4 11h11l2-8H6.5"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/>',
 };
 
 /**
- * The SHAPE of the three floating cards beside the phone in each chapter —
- * never their words. The words are `story.cards.<key>[i].t` / `.s` in all 28
- * content files (001); this is the drawing around them, lifted card by card
- * from the approved mock (claude-prompts/2026-09-08/scroll-story-mock.html v7).
- *
- * Keyed by chapter: `hero` first, then one key per FEATURES entry, in order.
+ * The SHAPE of the three floating cards in the showcase panel — never their
+ * words. The words are `story.cards.hero[i].t` / `.s` in all 28 content files;
+ * this is the drawing around them. Design B (claude-prompts/2026-09-27/
+ * design-b-mock.html) moved the cards out of the story and into the video
+ * panel, so only the one set is left; `story.cards.<feature>` is idle content.
  *
  *   kind  pill        a green event pill, the way the calendar draws one
  *         av          a coloured monogram avatar (`color` + `initial`)
@@ -1066,61 +1060,23 @@ export const STORY_ICONS = {
  *         ico:<name>  a square icon chip, glyph from STORY_ICONS
  *         tick        a checked-off row: green tick, `t` struck through
  *         badge       a small dark status pill with a blinking dot
- *   pos   where it hangs off the phone, as CSS declarations. LOGICAL
+ *   pos   where it floats in the panel, as CSS declarations. LOGICAL
  *         properties (inset-inline-start/end), so /ar/ mirrors from the same
- *         string; a negative value is the overhang the design is made of.
- *   dur   the drift loop's period (default 6s). Three different values per
- *         chapter so the cards never bob in unison.
- *   box   an unchecked checkbox before the text and the avatar after it — the
- *         to-do row, which is the one card the five kinds cannot draw.
- *   tone  'amber' recolours an icon chip, as the mock's meal card is.
+ *         string. Percentages of the panel: its height follows the viewport.
+ *   dur   the drift loop's period. Three different values so the cards never
+ *         bob in unison.
+ *   box   an unchecked checkbox before the text and the avatar after it.
+ *   tone  'amber' recolours an icon chip.
  *
- * The avatar letters are decoration, not content: they never carry meaning a
- * reader needs, so they stay here rather than becoming five more strings in 28
- * files. They are the English demo family's initials; the localized screenshots
- * name their families differently (see the 001 report), which is why the
- * letters are set in one place and can be dropped in one place.
+ * Positions and periods are the mock's Piano / Milk / Birthday cards. The third
+ * card's words are "Take out the bins · Noah · done", so it keeps the ticked
+ * row it has always been drawn as rather than the mock's cake: the key wins.
  */
 export const STORY_CARDS = {
   hero: [
-    { kind: 'pill', pos: 'inset-inline-start:-36%;top:5%' },
-    { kind: 'av', color: 'cat-red', initial: 'M', pos: 'inset-inline-end:-32%;top:24%', dur: '7s' },
-    { kind: 'tick', pos: 'inset-inline-start:-40%;bottom:12%', dur: '8s' },
-  ],
-  calendar: [
-    { kind: 'pill', pos: 'inset-inline-end:-30%;top:6%' },
-    { kind: 'ico:repeat', pos: 'inset-inline-start:-42%;top:38%', dur: '7s' },
-    { kind: 'ico:bell', pos: 'inset-inline-end:-34%;bottom:14%', dur: '8s' },
-  ],
-  shopping: [
-    { kind: 'av', color: 'cat-plum', initial: 'L', pos: 'inset-inline-start:-40%;top:8%' },
-    { kind: 'tick', pos: 'inset-inline-end:-32%;top:40%', dur: '7s' },
-    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
-  ],
-  todos: [
-    { kind: 'av', color: 'cat-sky', initial: 'E', box: true, pos: 'inset-inline-end:-36%;top:7%' },
-    { kind: 'tick', pos: 'inset-inline-start:-44%;top:44%', dur: '7s' },
-    { kind: 'ico:bell', pos: 'inset-inline-end:-28%;bottom:12%', dur: '8s' },
-  ],
-  meals: [
-    { kind: 'ico:pot', tone: 'amber', pos: 'inset-inline-start:-44%;top:8%' },
-    { kind: 'ico:arrow', pos: 'inset-inline-end:-38%;top:42%', dur: '7s' },
-    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
-  ],
-  birthdays: [
-    { kind: 'ico:cake', pos: 'inset-inline-end:-34%;top:8%' },
-    { kind: 'ico:bell', pos: 'inset-inline-start:-44%;top:42%', dur: '7s' },
-    { kind: 'av', color: 'cat-amber', initial: 'M', pos: 'inset-inline-end:-30%;bottom:12%', dur: '8s' },
-  ],
-  vault: [
-    { kind: 'ico:lock', pos: 'inset-inline-start:-40%;top:9%' },
-    { kind: 'ico:photo', pos: 'inset-inline-end:-36%;top:44%', dur: '7s' },
-    { kind: 'badge', pos: 'inset-inline-start:-30%;bottom:12%', dur: '8s' },
-  ],
-  family: [
-    { kind: 'avs', group: ['cat-plum', 'cat-red', 'cat-sky', 'cat-green', 'cat-amber'], initials: ['L', 'M', 'E', 'N', 'Mi'], pos: 'inset-inline-end:-30%;top:6%' },
-    { kind: 'ico:link', pos: 'inset-inline-start:-42%;top:42%', dur: '7s' },
-    { kind: 'av', color: 'cat-green', initial: 'N', pos: 'inset-inline-end:-36%;bottom:12%', dur: '8s' },
+    { kind: 'pill', pos: 'inset-inline-start:10%;top:20%', dur: '8s' },
+    { kind: 'ico:cart', pos: 'inset-inline-end:11%;top:25%', dur: '10s' },
+    { kind: 'tick', pos: 'inset-inline-end:9%;top:58%', dur: '9s' },
   ],
 };
 

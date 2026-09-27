@@ -298,11 +298,12 @@
    * One listener, one function, three custom properties.
    *
    *   --idx  on .screen — how far the story has scrolled, in chapters, with a
-   *          fraction. The eight stacked screenshots read it and slide.
-   *   --p    on each chapter, its cards and each slide below the story — 0
-   *          before it arrives, 1 once it has settled. Everything that builds
-   *          up is the .by rule in style.css reading this.
-   *   --q    on each chapter and its cards — 0..1 as it leaves upwards.
+   *          fraction. The seven stacked screenshots read it and slide.
+   *   --p    on each chapter and on each [data-scene] slide around the story
+   *          (the hero, the showcase and everything below) — 0 before it
+   *          arrives, 1 once it has settled. Everything that builds up is the
+   *          .by rule in style.css reading this.
+   *   --q    on each chapter — 0..1 as it leaves upwards.
    *
    * The CSS defaults are the finished state (--p:1, --q:0), so a blocked or
    * failed script leaves the whole page visible rather than blank. That is why
@@ -315,7 +316,6 @@
   var story = document.querySelector(".story");
   if (story) {
     var chapters = [].slice.call(story.querySelectorAll(".chapter"));
-    var floats = [].slice.call(story.querySelectorAll(".floats"));
     var screenEl = story.querySelector(".screen");
     var dots = [].slice.call(story.querySelectorAll(".progress i"));
     var scenes = [].slice.call(document.querySelectorAll("[data-scene]"));
@@ -332,22 +332,22 @@
       return isNaN(v) ? 64 : v;
     }
 
+    /* The active chapter only lights its progress dot now: Design B keeps the
+       story on one calm ground, so there is no colour to swap. */
     function activate(i) {
       if (i === activeChapter) return;
       activeChapter = i;
-      story.setAttribute("data-active", i);
       dots.forEach(function (d, k) { d.classList.toggle("on", k === i); });
     }
 
     function frame() {
       var vh = window.innerHeight;
       var top = headerHeight();
-      /* 900px and down is the plain page: no snap, no sticky phone, no cards.
+      /* 900px and down is the plain page: no snap, no sticky phone.
          Everything is visible and nothing else here runs. */
       if (window.innerWidth <= 900) {
-        chapters.forEach(function (c, i) {
+        chapters.forEach(function (c) {
           setVar(c, "--p", 1); setVar(c, "--q", 0);
-          setVar(floats[i], "--p", 1); setVar(floats[i], "--q", 0);
         });
         scenes.forEach(function (s) { setVar(s, "--p", 1); });
         activate(0);
@@ -357,6 +357,9 @@
          screen, the chapters still snap — and drops the building up. */
       var calm = calmQuery ? calmQuery.matches : false;
 
+      /* Chapter 0 is the calendar: the hero is its own slide above the story
+         now. Until the first chapter reaches the header idx stays 0, so the
+         slab already shows the calendar screen as it scrolls into view. */
       var idx = 0;
       for (var i = 0; i < chapters.length; i++) {
         var r = chapters[i].getBoundingClientRect();
@@ -364,26 +367,23 @@
            it has scrolled past as a fraction of its own height. */
         if (r.top - top <= 1) idx = i + clamp01((top - r.top) / r.height);
       }
-      /* Once the last chapter has scrolled past, idx would run to 8 — one more
-         than there are chapters — and the story would lose its ground colour
-         and its active dot while it is still partly on screen. */
+      /* Once the last chapter has scrolled past, idx would run to 7 — one more
+         than there are chapters — and the story would lose its active dot
+         while it is still partly on screen. */
       if (idx > chapters.length - 1) idx = chapters.length - 1;
       setVar(screenEl, "--idx", idx);
 
       chapters.forEach(function (c, i) {
         var p = clamp01(1 - (i - idx));
         var q = clamp01((idx - i) / 0.5);
-        /* Reduced motion: the words are simply there, no building up. The
-           cards keep the real values — theirs is not an effect, it is which
-           three cards belong to the chapter you are on, and pinning them would
-           put all twenty-four over the phone at once. */
+        /* Reduced motion: the words are simply there, no building up. */
         setVar(c, "--p", calm ? 1 : p); setVar(c, "--q", calm ? 0 : q);
-        setVar(floats[i], "--p", p); setVar(floats[i], "--q", q);
       });
       activate(Math.round(idx));
 
-      /* The slides after the story: 0 as the slide's top edge enters at the
-         bottom of the viewport, 1 once it sits under the header. */
+      /* Every other slide: 0 as the slide's top edge enters at the bottom of
+         the viewport, 1 once it sits under the header — and 1 for good once
+         it is above that, which is why the hero is complete on load. */
       scenes.forEach(function (s) {
         var r = s.getBoundingClientRect();
         setVar(s, "--p", calm ? 1 : clamp01((vh - (r.top - top)) / vh));
@@ -400,5 +400,56 @@
     window.addEventListener("resize", onFrame);
     if (calmQuery && calmQuery.addEventListener) calmQuery.addEventListener("change", onFrame);
     frame();
+  }
+
+  /* ---------- the two background videos ----------
+   * Neither <video> has an autoplay attribute and both are preload="none", so
+   * by default the page downloads nothing but the poster, and a paused video
+   * shows its poster by itself. This is the only thing that ever starts one,
+   * and only while ALL of these hold:
+   *   - the viewport is wider than 900px (a phone gets the plain page);
+   *   - the visitor has not asked for reduced motion;
+   *   - the browser is not in Save-Data mode;
+   *   - the video's slide is within one viewport of the visible area.
+   * Leaving that range pauses it again. A play() the browser refuses (its own
+   * autoplay policy) is simply ignored: the poster stays, which is fine. */
+  var videos = [].slice.call(document.querySelectorAll("video[data-autoplay]"));
+  if (videos.length && window.matchMedia && "IntersectionObserver" in window) {
+    var wideQuery = window.matchMedia("(min-width: 901px)");
+    var motionQuery = window.matchMedia("(prefers-reduced-motion: no-preference)");
+
+    function mayPlay() {
+      var conn = navigator.connection;
+      return wideQuery.matches && motionQuery.matches && !(conn && conn.saveData === true);
+    }
+    function sync(v) {
+      if (mayPlay() && v._near) {
+        if (!v.paused) return;
+        v.muted = true;  // the attribute says so too; some engines only trust the property
+        var pr = v.play();
+        if (pr && pr.catch) pr.catch(function () { /* autoplay refused: the poster stays */ });
+      } else if (!v.paused) {
+        v.pause();
+      }
+    }
+    function syncAll() { videos.forEach(sync); }
+
+    var near = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target._video;
+        if (!v) return;
+        v._near = e.isIntersecting;
+        sync(v);
+      });
+    }, { rootMargin: "100% 0px" });
+    videos.forEach(function (v) {
+      var slide = v.closest("section") || v;
+      slide._video = v;
+      v._near = false;
+      near.observe(slide);
+    });
+
+    window.addEventListener("resize", syncAll);
+    if (motionQuery.addEventListener) motionQuery.addEventListener("change", syncAll);
   }
 })();

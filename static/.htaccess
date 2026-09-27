@@ -79,8 +79,9 @@ ErrorDocument 404 /404.html
     Header always set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
 
-  # Images are unhashed and change a few times a year. Thirty days.
-  <FilesMatch "\.(webp|png|ico|svg|jpg|jpeg)$">
+  # Images and the two home-page videos are unhashed and change a few times a
+  # year. Thirty days.
+  <FilesMatch "\.(webp|mp4|png|ico|svg|jpg|jpeg)$">
     Header always set Cache-Control "public, max-age=2592000"
   </FilesMatch>
 

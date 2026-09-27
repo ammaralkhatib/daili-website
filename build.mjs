@@ -506,16 +506,15 @@ function storyCard(spec, card, chapter, i, where) {
 }
 
 /**
- * The scroll story: eight chapters (the hero, then one per FEATURES entry), one
- * sticky phone holding eight stacked screenshots, and eight groups of three
- * floating cards.
+ * The scroll story: seven chapters, one per FEATURES entry, and one sticky
+ * phone on the mint slab holding seven stacked screenshots. Design B (002)
+ * took the hero out of the story — it is its own slide above the showcase now —
+ * and moved the floating cards into the showcase panel (renderShowcase).
  *
- * Returns the pieces rather than one blob, because they land in three different
- * places in landing.html — the text column, the phone, and the card layer over
- * it — and every piece has to stay in the same order as the other two. Chapter 0
- * is the hero and stays written out in the template: it is the only chapter with
- * store badges, and those come from the `storebadges` partial, which the engine
- * resolves in the template and not inside a string this file hands it.
+ * Returns the pieces rather than one blob, because they land in different
+ * places in landing.html — the text column, the phone and the dots — and every
+ * piece has to stay in the same order as the others. Each chapter carries its
+ * own copy of its screenshot (.mshot), shown instead of the stage on a phone.
  *
  * `--a` / `--w` on each element are the mock's build-up numbers: where in the
  * chapter's 0..1 scroll progress it starts appearing and how long it takes.
@@ -523,15 +522,6 @@ function storyCard(spec, card, chapter, i, where) {
 function renderStory(loc) {
   const where = `content/${loc}.json`;
   const c = content[loc];
-  const chapterKeys = ['hero', ...FEATURES.map((f) => f.key)];
-  const cards = lookup(c, 'story.cards', where);
-
-  for (const key of chapterKeys) {
-    if (!(key in cards)) throw new Error(`missing key 'story.cards.${key}' in ${where}`);
-    if (!Array.isArray(cards[key]) || cards[key].length !== STORY_CARDS[key].length) {
-      throw new Error(`story.cards.${key} in ${where} has ${cards[key].length} cards, STORY_CARDS has ${STORY_CARDS[key].length}`);
-    }
-  }
 
   // The store the family chapter's button sends people to: the first one the app
   // can actually be installed from, which is the same rule the sticky CTA uses.
@@ -539,32 +529,24 @@ function renderStory(loc) {
   const store = [stores.ios, stores.android].find((st) => st.available);
   const ctaHref = store ? store.url : WEB_APP_URL;
 
+  // Screen 0 is the slab's first paint, so it is the one not left lazy. It is
+  // not the LCP any more — the hero's headline is — so no fetchpriority either.
   const shot = (name, alt, k) => {
     const { width, height } = imageSize(name);
-    const load = k === 0
-      ? 'fetchpriority="high"'      // chapter 0's screen is the LCP
-      : 'loading="lazy"';
-    return `<img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" style="--k:${k}" ${load} decoding="async">`;
+    const load = k === 0 ? '' : ' loading="lazy"';
+    return `<img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" style="--k:${k}"${load} decoding="async">`;
   };
-  // The same screenshot again, for the plain page a phone gets. Chapter 0's
-  // copy is the mobile LCP, so it is the one image here that is not lazy.
-  const mshot = (name, alt, eager) => {
+  // The same screenshot again, for the plain page a phone gets. All lazy: on a
+  // phone the hero and the showcase come first.
+  const mshot = (name, alt) => {
     const { width, height } = imageSize(name);
-    return `<div class="mshot"><img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></div>`;
+    return `<div class="mshot"><img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async"></div>`;
   };
 
-  const screens = [`          ${shot('shot-home', c.hero.altHome, 0)}`];
-  const floats = [];
+  const screens = [];
   const chapters = [];
 
-  chapterKeys.forEach((key, k) => {
-    floats.push(`      <div class="floats" data-floats="${k}" aria-hidden="true">
-${cards[key].map((card, i) => storyCard(STORY_CARDS[key][i], card, key, i, where)).join('\n')}
-      </div>`);
-  });
-
-  FEATURES.forEach((f, n) => {
-    const k = n + 1;
+  FEATURES.forEach((f, k) => {
     const fc = lookup(c, `features.${f.key}`, where);
     for (const key of ['eyebrow', 'h2', 'p', 'bullets', 'alt']) {
       if (!(key in fc)) throw new Error(`missing key 'features.${f.key}.${key}' in ${where}`);
@@ -581,19 +563,15 @@ ${cards[key].map((card, i) => storyCard(STORY_CARDS[key][i], card, key, i, where
       ? `\n          <div class="ctas by" style="--a:.8;--w:.1"><a class="btn btn-primary" href="${ctaHref}" rel="noopener">${escapeHtml(c.cta.sticky)}</a></div>`
       : '';
 
-    // The header's "Features" link lands on the first feature chapter, not on
-    // the hero above it: #features is where the old grid was, and a link that
-    // scrolls to the top of the page does nothing visible.
+    // The header's "Features" link lands on the first chapter.
     //
-    // <bdi> around "1 / 7" because /ar/ is an RTL paragraph: digits are a weak
-    // LTR run and the slash is neutral, so the bare string renders as "7 / 1"
-    // — the counter counting backwards. Same reason the language picker wraps
-    // its endonyms.
-    chapters.push(`      <div class="chapter" data-chapter="${k}"${k === 1 ? ' id="features"' : ''}>
+    // "01 — Calendar": two digits, then the feature's own name. <bdi> around
+    // the number so /ar/ keeps it a unit at the start of its RTL line.
+    const num = String(k + 1).padStart(2, '0');
+    chapters.push(`      <div class="chapter" data-chapter="${k}"${k === 0 ? ' id="features"' : ''}>
         ${mshot(f.shot, fc.alt)}
         <div class="txt">
-          <span class="num by" style="--a:.42;--w:.12"><bdi>${k} / ${FEATURES.length}</bdi></span>
-          <span class="eyebrow by" style="--a:.42;--w:.12">${escapeHtml(fc.eyebrow)}</span>
+          <span class="num by" style="--a:.42;--w:.12"><bdi>${num}</bdi> — ${escapeHtml(fc.eyebrow)}</span>
           <h2 class="by" style="--a:.45;--w:.14">${escapeHtml(fc.h2)}</h2>
           <p class="p by" style="--a:.6;--w:.12">${escapeHtml(fc.p)}</p>${bullets}${cta}
         </div>
@@ -603,10 +581,46 @@ ${cards[key].map((card, i) => storyCard(STORY_CARDS[key][i], card, key, i, where
   return {
     chapters: chapters.join('\n\n'),
     screens: screens.join('\n'),
-    floats: floats.join('\n'),
-    dots: chapterKeys.map((_, k) => `<i${k === 0 ? ' class="on"' : ''}></i>`).join(''),
-    heroMshot: mshot('shot-home', c.hero.altHome, true),
+    dots: FEATURES.map((_, k) => `<i${k === 0 ? ' class="on"' : ''}></i>`).join(''),
   };
+}
+
+/**
+ * The showcase panel's three floating cards (STORY_CARDS.hero drawn around
+ * story.cards.hero) and the row of feature chips under the panel — one per
+ * FEATURES entry, reusing each feature's eyebrow, so the chips and the
+ * chapters below can never name the features differently.
+ */
+function renderShowcase(loc) {
+  const where = `content/${loc}.json`;
+  const c = content[loc];
+  const cards = lookup(c, 'story.cards.hero', where);
+  if (!Array.isArray(cards) || cards.length !== STORY_CARDS.hero.length) {
+    throw new Error(`story.cards.hero in ${where} has ${Array.isArray(cards) ? cards.length : 'no'} cards, STORY_CARDS.hero has ${STORY_CARDS.hero.length}`);
+  }
+  const { width, height } = imageSize('shot-home');
+  return {
+    cards: cards.map((card, i) => storyCard(STORY_CARDS.hero[i], card, 'hero', i, where)).join('\n'),
+    phone: `<img src="${imgSrc('shot-home', loc)}" alt="${escapeHtml(lookup(c, 'showcase.alt', where))}" width="${width}" height="${height}" loading="lazy" decoding="async">`,
+    chips: FEATURES.map((f) =>
+      `        <li>${escapeHtml(lookup(c, `features.${f.key}.eyebrow`, where))}</li>`).join('\n'),
+  };
+}
+
+/**
+ * The life slide's three fact cards from life.facts[]. Exactly three, each a
+ * {t, s} pair: the slide is laid out as a column of three beside the video, and
+ * the third one is the inverted card.
+ */
+function renderFacts(loc) {
+  const where = `content/${loc}.json`;
+  const facts = lookup(content[loc], 'life.facts', where);
+  if (!Array.isArray(facts) || facts.length !== 3
+    || !facts.every((f) => f && typeof f === 'object' && String(f.t ?? '').trim() && String(f.s ?? '').trim())) {
+    throw new Error(`life.facts in ${where} must be exactly 3 {t, s} objects with non-empty strings`);
+  }
+  return facts.map((f, i) =>
+    `        <div class="fact${i === 2 ? ' inv' : ''} by" style="--a:${(0.5 + i * 0.1).toFixed(1)};--w:.1"><b>${escapeHtml(f.t)}</b><span>${escapeHtml(f.s)}</span></div>`).join('\n');
 }
 
 function renderCompareTable(loc) {
@@ -1180,6 +1194,8 @@ function build() {
           postBody,
           webAppUrl: WEB_APP_URL,
           story: pg.id === 'landing' ? renderStory(loc) : '',
+          showcase: pg.id === 'landing' ? renderShowcase(loc) : '',
+          facts: pg.id === 'landing' ? renderFacts(loc) : '',
           webShot: pg.id === 'landing' ? renderWebShot(loc) : '',
           compareTable: pg.id === 'landing' ? renderCompareTable(loc) : '',
           faq: pg.id === 'landing' ? renderFaq(loc) : '',
