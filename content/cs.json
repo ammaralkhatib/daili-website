@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Nově na iPhonu, Androidu i na webu",
     "kicker": "iPhone · Android · webový prohlížeč",
     "h1a": "Celá rodina",
     "h1b": "na jedné vlně.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Měsíční kalendář v Daili",
     "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
+  },
+
+  "showcase": {
+    "pill": "Sladěno za sekundu — na každém telefonu v rodině",
+    "h2": "Jedna aplikace pro celou rodinu",
+    "alt": "Úvodní obrazovka Daili, vedle které se vznáší událost, položka nákupu a narozeniny"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · spravovaný profil", "s": "bez e-mailu — účet až později" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Naplánováno v neděli večer. Hotovo na celý týden.",
+    "p": "Pět minut u kuchyňského stolu — a čtyři telefony znají plán.",
+    "facts": [
+      { "t": "Zdarma. Bez reklam.", "s": "Nic neprodáváme, nic nesledujeme kvůli reklamě." },
+      { "t": "Servery v EU", "s": "Data vaší rodiny zůstávají v Evropě. Fotky a dokumenty nikdy neopustí telefon." },
+      { "t": "I pro děti a babičku", "s": "Vlastní přihlášení pro teenagery, spravované profily pro nejmenší. Pozvánka 6místným kódem." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "na rodinu · bez háčku",
+    "lead": "Bez karty, bez zkušební doby, bez zamčených funkcí.",
     "promiseTitle": "Náš slib",
     "promise": "Každá rodina, která se přidá dřív, než přidáme placené doplňky, si nechá všechno zdarma navždy — včetně toho, co přidáme později."
   },

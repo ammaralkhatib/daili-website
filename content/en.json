@@ -51,6 +51,8 @@
   },
 
   "hero": {
+    "chip": "Now on iPhone, Android and the web",
+    "@chip": { "description": "Pill above the headline. Product names stay in Latin letters (iPhone, Android). Under 40 characters." },
     "kicker": "iPhone · Android · web browser",
     "@kicker": { "description": "Platform strip above the headline. Product names stay in Latin letters." },
     "h1a": "Your family,",
@@ -66,6 +68,13 @@
     "@notes": { "description": "Three short trust chips under the download buttons. Two or three words each." },
     "altCalendar": "Daili month calendar",
     "altHome": "Daili home screen with feature tiles"
+  },
+
+  "showcase": {
+    "pill": "Synced in about a second — on every phone in the family",
+    "@pill": { "description": "Dark pill at the bottom of the video panel. One sentence, no full stop." },
+    "h2": "One app for the whole family",
+    "alt": "The Daili home screen with an event, a shopping item and a birthday floating next to it"
   },
 
   "story": {
@@ -112,6 +121,17 @@
       ]
     },
     "@cards": { "description": "Tiny UI cards floating next to the phone in the home-page story. They imitate app content: an event pill, a shopping row, a to-do, a reminder. `t` is the bold line, `s` the small grey line under it. Keep each line short (t ≤ 28 characters, s ≤ 36) — they must not wrap. The people are the demo family from that locale's own screenshots in static/assets/img/shots/<loc>/ — en keeps Lena, Marco, Emma, Noah, Mia and the Bergers, ja uses 佐藤家 with 美咲, 健太, 陽菜, 蒼, and id, ko, th, zh-Hans and zh-Hant have their own; check shot-family.webp before changing a name. The invite code 482913 is the same in every locale. Times follow the locale’s own convention (16:30 / 4:30 PM), dates too (August 29 / 29. August)." }
+  },
+
+  "life": {
+    "h2": "Plan it on Sunday evening. Live it all week.",
+    "p": "Five minutes at the kitchen table — and four phones know the plan.",
+    "facts": [
+      { "t": "Free. No ads.", "s": "Nothing sold, nothing tracked for advertising." },
+      { "t": "Servers in the EU", "s": "Your family's data stays in Europe. Photos and documents never leave the phone." },
+      { "t": "Kids & grandma too", "s": "Own logins for teens, managed profiles for little ones. Invite with a 6-digit code." }
+    ],
+    "@facts": { "description": "Three fact cards next to the video. `t` is one short bold line (under 22 characters), `s` one sentence." }
   },
 
   "howItWorks": {
@@ -164,6 +184,7 @@
     "@big": { "description": "The price, set very large. Stays €0 in every locale — see @@identicalOk." },
     "bigNote": "per family · no catch",
     "@bigNote": { "description": "Small line directly under the big price." },
+    "lead": "No credit card, no trial, no locked features.",
     "promiseTitle": "Our promise",
     "promise": "Every family that joins before we add paid extras keeps everything free forever — including anything we add later."
   },

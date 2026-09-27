@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Acum pe iPhone, Android și pe web",
     "kicker": "iPhone · Android · browser web",
     "h1a": "Familia ta,",
     "h1b": "pe aceeași pagină.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Calendar lunar Daili",
     "altHome": "Ecranul principal Daili, cu plăci de funcții"
+  },
+
+  "showcase": {
+    "pill": "Sincronizat într-o secundă — pe fiecare telefon din familie",
+    "h2": "O singură aplicație pentru toată familia",
+    "alt": "Ecranul principal Daili, cu un eveniment, un produs de cumpărat și o zi de naștere plutind alături"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · profil gestionat", "s": "fără e-mail — cont mai târziu" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Planificat duminică seara. Rezolvat toată săptămâna.",
+    "p": "Cinci minute la masa din bucătărie — și patru telefoane știu planul.",
+    "facts": [
+      { "t": "Gratis. Fără reclame.", "s": "Nu vindem nimic, nu urmărim nimic pentru reclame." },
+      { "t": "Servere în UE", "s": "Datele familiei tale rămân în Europa. Pozele și documentele nu părăsesc niciodată telefonul." },
+      { "t": "Și copiii, și bunica", "s": "Conturi proprii pentru adolescenți, profiluri gestionate pentru cei mici. Invitație cu un cod din 6 cifre." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "pe familie · fără șmecherii",
+    "lead": "Fără card, fără perioadă de probă, fără funcții blocate.",
     "promiseTitle": "Promisiunea noastră",
     "promise": "Orice familie care intră înainte să adăugăm opțiuni cu plată păstrează totul gratuit pentru totdeauna — inclusiv ce adăugăm mai târziu."
   },

@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Nu op iPhone, Android en het web",
     "kicker": "iPhone · Android · webbrowser",
     "h1a": "Jullie gezin,",
     "h1b": "op één lijn.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Maandagenda van Daili",
     "altHome": "Beginscherm van Daili met de tegels van de functies"
+  },
+
+  "showcase": {
+    "pill": "In een seconde gesynct — op elke telefoon in het gezin",
+    "h2": "Eén app voor het hele gezin",
+    "alt": "Het beginscherm van Daili met een afspraak, een boodschap en een verjaardag die ernaast zweven"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · beheerd profiel", "s": "zonder e-mail — later omzetten" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Zondagavond gepland. De hele week geregeld.",
+    "p": "Vijf minuten aan de keukentafel — en vier telefoons kennen het plan.",
+    "facts": [
+      { "t": "Gratis. Geen reclame.", "s": "Niets verkocht, niets gevolgd voor advertenties." },
+      { "t": "Servers in de EU", "s": "De gegevens van je gezin blijven in Europa. Foto's en documenten verlaten de telefoon nooit." },
+      { "t": "Ook kids en oma", "s": "Eigen accounts voor tieners, beheerde profielen voor de kleintjes. Uitnodigen met een 6-cijferige code." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "per gezin · geen addertje",
+    "lead": "Geen creditcard, geen proefperiode, niets op slot.",
     "promiseTitle": "Onze belofte",
     "promise": "Elk gezin dat erbij komt voordat we betaalde extra's toevoegen, houdt alles voor altijd gratis — ook alles wat we later toevoegen."
   },

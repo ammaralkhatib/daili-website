@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Nyt iPhonella, Androidilla ja verkossa",
     "kicker": "iPhone · Android · selain",
     "h1a": "Koko perhe",
     "h1b": "samalla sivulla.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Dailin kuukausikalenteri",
     "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
+  },
+
+  "showcase": {
+    "pill": "Synkassa sekunnissa — jokaisessa perheen puhelimessa",
+    "h2": "Yksi sovellus koko perheelle",
+    "alt": "Dailin aloitusnäyttö, jonka vieressä leijuvat tapahtuma, ostos ja syntymäpäivä"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · hallittu profiili", "s": "ilman sähköpostia — päivitä" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Sunnuntai-iltana suunniteltu. Koko viikko sujuu.",
+    "p": "Viisi minuuttia keittiön pöydän ääressä — ja neljä puhelinta tietää suunnitelman.",
+    "facts": [
+      { "t": "Ilmainen, mainokseton", "s": "Mitään ei myydä, mitään ei seurata mainontaa varten." },
+      { "t": "Palvelimet EU:ssa", "s": "Perheen tiedot pysyvät Euroopassa. Kuvat ja asiakirjat eivät koskaan lähde puhelimesta." },
+      { "t": "Myös lapset ja mummo", "s": "Omat tunnukset nuorille, hallitut profiilit pienille. Kutsu 6-numeroisella koodilla." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "perhettä kohti · ei koukkuja",
+    "lead": "Ei korttia, ei kokeilujaksoa, ei lukittuja ominaisuuksia.",
     "promiseTitle": "Lupauksemme",
     "promise": "Jokainen perhe, joka tulee mukaan ennen kuin lisäämme maksullisia lisiä, pitää kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin."
   },

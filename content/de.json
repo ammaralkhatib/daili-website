@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Jetzt auf iPhone, Android und im Web",
     "kicker": "iPhone · Android · Webbrowser",
     "h1a": "Eure Familie,",
     "h1b": "auf einer Seite.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Daili Monatskalender",
     "altHome": "Daili Startbildschirm mit Funktions-Kacheln"
+  },
+
+  "showcase": {
+    "pill": "In einer Sekunde synchron — auf jedem Handy der Familie",
+    "h2": "Eine App für die ganze Familie",
+    "alt": "Der Daili-Startbildschirm, daneben schweben ein Termin, ein Einkaufsartikel und ein Geburtstag"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · verwaltetes Profil", "s": "ohne E-Mail — später upgraden" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Am Sonntagabend geplant. Die ganze Woche gelebt.",
+    "p": "Fünf Minuten am Küchentisch — und vier Handys kennen den Plan.",
+    "facts": [
+      { "t": "Gratis. Ohne Werbung.", "s": "Wir verkaufen nichts und tracken nichts für Werbung." },
+      { "t": "Server in der EU", "s": "Eure Familiendaten bleiben in Europa. Fotos und Dokumente verlassen nie das Handy." },
+      { "t": "Auch Kinder und Oma", "s": "Eigene Logins für Teens, verwaltete Profile für die Kleinen. Einladen mit einem 6-stelligen Code." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "pro Familie · ohne Haken",
+    "lead": "Keine Kreditkarte, keine Testphase, keine gesperrten Funktionen.",
     "promiseTitle": "Unser Versprechen",
     "promise": "Jede Familie, die dabei ist, bevor wir bezahlte Extras einführen, behält alles für immer kostenlos — auch alles, was später dazukommt."
   },

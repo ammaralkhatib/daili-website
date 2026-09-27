@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Kini di iPhone, Android, dan web",
     "kicker": "iPhone · Android · peramban web",
     "h1a": "Satu keluarga,",
     "h1b": "satu halaman.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Kalender bulanan Daili",
     "altHome": "Layar utama Daili dengan kotak-kotak fitur"
+  },
+
+  "showcase": {
+    "pill": "Tersinkron sekitar sedetik — di semua ponsel keluarga",
+    "h2": "Satu aplikasi untuk seluruh keluarga",
+    "alt": "Layar utama Daili dengan sebuah acara, satu barang belanjaan, dan ulang tahun yang melayang di sampingnya"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Bayu · profil dikelola", "s": "tanpa email — bisa ditingkatkan" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Rencanakan Minggu malam. Jalani sepanjang pekan dengan tenang.",
+    "p": "Lima menit di meja dapur — dan empat ponsel sudah tahu rencananya.",
+    "facts": [
+      { "t": "Gratis. Tanpa iklan.", "s": "Tidak ada yang dijual, tidak ada yang dilacak untuk iklan." },
+      { "t": "Server di Uni Eropa", "s": "Data keluargamu tetap di Eropa. Foto dan dokumen tidak pernah keluar dari ponsel." },
+      { "t": "Anak dan nenek juga", "s": "Login sendiri untuk remaja, profil dikelola untuk si kecil. Undang dengan kode 6 digit." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "per keluarga · tanpa jebakan",
+    "lead": "Tanpa kartu kredit, tanpa masa coba, tanpa fitur terkunci.",
     "promiseTitle": "Janji kami",
     "promise": "Setiap keluarga yang bergabung sebelum kami menambah fitur berbayar tetap mendapat semuanya gratis selamanya — termasuk yang kami tambahkan nanti."
   },

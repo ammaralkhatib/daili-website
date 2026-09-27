@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Nu på iPhone, Android og nettet",
     "kicker": "iPhone · Android · webbrowser",
     "h1a": "Hele familien,",
     "h1b": "på samme side.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Månedskalender i Daili",
     "altHome": "Startskærmen i Daili med felterne til funktionerne"
+  },
+
+  "showcase": {
+    "pill": "Synket på et sekund — på hver telefon i familien",
+    "h2": "Én app til hele familien",
+    "alt": "Startskærmen i Daili med en aftale, en vare på indkøbslisten og en fødselsdag, der svæver ved siden af"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · administreret profil", "s": "uden e-mail — opgraderes senere" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Planlagt søndag aften. Klar hele ugen.",
+    "p": "Fem minutter ved køkkenbordet — og fire telefoner kender planen.",
+    "facts": [
+      { "t": "Gratis og reklamefri", "s": "Intet sælges, intet spores til reklamer." },
+      { "t": "Servere i EU", "s": "Familiens data bliver i Europa. Fotos og dokumenter forlader aldrig telefonen." },
+      { "t": "Også børn og mormor", "s": "Egne logins til teenagere, administrerede profiler til de små. Invitér med en 6-cifret kode." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "pr. familie · uden hage ved",
+    "lead": "Intet betalingskort, ingen prøveperiode, ingen låste funktioner.",
     "promiseTitle": "Vores løfte",
     "promise": "Enhver familie, der er med, før vi tilføjer betalte ekstrafunktioner, beholder alt gratis for altid — også det, vi tilføjer senere."
   },

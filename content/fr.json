@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Déjà sur iPhone, Android et le web",
     "kicker": "iPhone · Android · navigateur web",
     "h1a": "Toute la famille,",
     "h1b": "au même diapason.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Agenda mensuel de Daili",
     "altHome": "Écran d'accueil de Daili avec les tuiles des fonctions"
+  },
+
+  "showcase": {
+    "pill": "Synchro en une seconde — sur tous les téléphones de la famille",
+    "h2": "Une seule app pour toute la famille",
+    "alt": "L'écran d'accueil de Daili, avec un événement, un article de courses et un anniversaire qui flottent à côté"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · profil géré", "s": "sans e-mail — à faire évoluer" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "On planifie le dimanche soir. On est tranquille toute la semaine.",
+    "p": "Cinq minutes autour de la table de la cuisine — et quatre téléphones connaissent le programme.",
+    "facts": [
+      { "t": "Gratuit. Sans pub.", "s": "Rien n'est vendu, rien n'est pisté pour la publicité." },
+      { "t": "Serveurs dans l'UE", "s": "Les données de votre famille restent en Europe. Photos et documents ne quittent jamais le téléphone." },
+      { "t": "Ados, enfants, mamie", "s": "Des comptes à eux pour les ados, des profils gérés pour les petits. Invitation par code à 6 chiffres." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "par famille · sans piège",
+    "lead": "Pas de carte bancaire, pas d'essai, pas de fonction verrouillée.",
     "promiseTitle": "Notre promesse",
     "promise": "Chaque famille inscrite avant l'arrivée des options payantes garde tout gratuitement, pour toujours — y compris ce que nous ajouterons plus tard."
   },

@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Agora no iPhone, Android e na web",
     "kicker": "iPhone · Android · navegador web",
     "h1a": "Sua família,",
     "h1b": "na mesma página.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Calendário mensal do Daili",
     "altHome": "Tela inicial do Daili com os atalhos dos recursos"
+  },
+
+  "showcase": {
+    "pill": "Sincronizado em um segundo — em todos os celulares da família",
+    "h2": "Um app para a família toda",
+    "alt": "A tela inicial do Daili com um evento, um item de compras e um aniversário flutuando ao lado"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · perfil gerenciado", "s": "sem e-mail — vira conta depois" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Planeje no domingo à noite. Viva a semana inteira.",
+    "p": "Cinco minutos na mesa da cozinha — e quatro celulares já sabem o plano.",
+    "facts": [
+      { "t": "Grátis. Sem anúncios.", "s": "Nada é vendido, nada é rastreado para publicidade." },
+      { "t": "Servidores na UE", "s": "Os dados da sua família ficam na Europa. Fotos e documentos nunca saem do celular." },
+      { "t": "Para crianças e avós", "s": "Login próprio para adolescentes, perfis gerenciados para os pequenos. Convite com um código de 6 dígitos." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "por família · sem pegadinha",
+    "lead": "Sem cartão, sem teste, sem recursos bloqueados.",
     "promiseTitle": "Nossa promessa",
     "promise": "Toda família que entrar antes de adicionarmos extras pagos fica com tudo grátis para sempre — inclusive o que acrescentarmos depois."
   },

@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Już na iPhonie, Androidzie i w sieci",
     "kicker": "iPhone · Android · przeglądarka",
     "h1a": "Cała rodzina",
     "h1b": "na jednej stronie.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Kalendarz miesięczny w Daili",
     "altHome": "Ekran główny Daili z kafelkami funkcji"
+  },
+
+  "showcase": {
+    "pill": "Zsynchronizowane w sekundę — na każdym telefonie w rodzinie",
+    "h2": "Jedna aplikacja dla całej rodziny",
+    "alt": "Ekran główny Daili, obok którego unoszą się wydarzenie, pozycja z listy zakupów i urodziny"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · profil zarządzany", "s": "bez e-maila — później konto" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Zaplanowane w niedzielę wieczorem. Ogarnięte na cały tydzień.",
+    "p": "Pięć minut przy kuchennym stole — i cztery telefony znają plan.",
+    "facts": [
+      { "t": "Za darmo. Bez reklam.", "s": "Nic nie sprzedajemy, nic nie śledzimy dla reklam." },
+      { "t": "Serwery w UE", "s": "Dane waszej rodziny zostają w Europie. Zdjęcia i dokumenty nigdy nie opuszczają telefonu." },
+      { "t": "Dzieci i babcia też", "s": "Własne konta dla nastolatków, zarządzane profile dla maluchów. Zaproszenie 6-cyfrowym kodem." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "na rodzinę · bez haczyka",
+    "lead": "Bez karty, bez okresu próbnego, bez zablokowanych funkcji.",
     "promiseTitle": "Nasza obietnica",
     "promise": "Każda rodzina, która dołączy, zanim dodamy płatne dodatki, zachowa wszystko za darmo na zawsze — łącznie z tym, co dodamy później."
   },

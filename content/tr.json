@@ -37,6 +37,7 @@
   },
 
   "hero": {
+    "chip": "Artık iPhone, Android ve web'de",
     "kicker": "iPhone · Android · web tarayıcı",
     "h1a": "Bütün aile",
     "h1b": "aynı sayfada.",
@@ -49,6 +50,12 @@
     ],
     "altCalendar": "Daili aylık takvim",
     "altHome": "Daili ana ekranı ve özellik kutucukları"
+  },
+
+  "showcase": {
+    "pill": "Bir saniyede eşitlendi — ailedeki her telefonda",
+    "h2": "Bütün aile için tek uygulama",
+    "alt": "Yanında bir etkinlik, bir alışveriş ürünü ve bir doğum günü süzülen Daili ana ekranı"
   },
 
   "story": {
@@ -94,6 +101,16 @@
         { "t": "Noah · yönetilen profil", "s": "e-posta yok — sonra hesap" }
       ]
     }
+  },
+
+  "life": {
+    "h2": "Pazar akşamı planlayın. Bütün hafta rahat edin.",
+    "p": "Mutfak masasında beş dakika — ve dört telefon planı biliyor.",
+    "facts": [
+      { "t": "Ücretsiz. Reklamsız.", "s": "Hiçbir şey satılmaz, reklam için hiçbir şey izlenmez." },
+      { "t": "Sunucular AB'de", "s": "Ailenizin verileri Avrupa'da kalır. Fotoğraflar ve belgeler telefondan hiç çıkmaz." },
+      { "t": "Çocuklar ve nine de", "s": "Gençlere kendi girişi, küçüklere yönetilen profil. 6 haneli kodla davet edin." }
+    ]
   },
 
   "howItWorks": {
@@ -144,6 +161,7 @@
     ],
     "big": "€0",
     "bigNote": "aile başına · kancasız",
+    "lead": "Kredi kartı yok, deneme yok, kilitli özellik yok.",
     "promiseTitle": "Sözümüz",
     "promise": "Ücretli ekler gelmeden katılan her aile her şeyi sonsuza dek ücretsiz tutar — sonradan eklediklerimiz dahil."
   },
