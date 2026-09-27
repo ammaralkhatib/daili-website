@@ -1,0 +1,250 @@
+<!doctype html>
+<!-- design-b-mock.html — Design B "Paper & Mint editorial", exported 2026-09-27 from the
+     Claude Design canvas https://claude.ai/artifact/WWFDgAV7vajEdUgRvCQ7L3 (Ammar's pick).
+     Open this file in a browser from this folder: screenshots resolve to
+     ../../static/assets/img/shots/en/, the two videos load from Higgsfield's CDN
+     (the real site self-hosts them — see 002). Fonts come from Google Fonts here;
+     the site uses its own self-hosted Figtree + Sofia Sans Condensed.
+     This is the SPEC for claude-prompts/2026-09-27/002-home-page-design-b.md. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>daili home — B Paper and Mint</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@700;800&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FBF9F2;color:#10201A;font-family:Figtree,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#04613C}a:hover{color:#0B4A30}
+.disp{font-family:"Sofia Sans Condensed","Arial Narrow",Impact,sans-serif;font-weight:800;line-height:.9;letter-spacing:-.01em}
+.nav a{color:#2B3A32;text-decoration:none;font-weight:500;font-size:15px}
+.nav a:hover{color:#04613C}
+.foot a{color:#5E6D64;text-decoration:none;font-size:14px}
+.foot a:hover{color:#10201A}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;box-sizing:border-box;font-family:inherit}
+[data-ch]{opacity:var(--v,1);transform:translateY(calc((1 - var(--v,1)) * 28px))}
+[data-scr]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(-2deg)}}
+@keyframes drift2{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(12px) rotate(2deg)}}
+.card{animation:drift 8s ease-in-out infinite}
+.card2{animation:drift2 10s ease-in-out infinite}
+</style>
+
+<div style="position:relative;width:100%;min-height:100vh;box-sizing:border-box;background:#FBF9F2;overflow:hidden">
+
+  <!-- nav -->
+  <nav class="nav" style="display:flex;align-items:center;justify-content:space-between;height:80px;padding:0 56px;box-sizing:border-box;max-width:1440px;margin:0 auto">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <img src="../../static/assets/img/shots/en/../logo.webp" alt="" style="width:34px;height:34px;border-radius:9px">
+      <span class="disp" style="font-size:30px;color:#04613C;letter-spacing:0">daili</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px">
+      <a href="#features">Features</a><a href="#web">Web app</a><a href="#pricing">Pricing</a><a href="#support">Support</a><a href="#blog">Blog</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="#lang" aria-label="Language" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:999px;border:1px solid #E4DFD1;color:#2B3A32"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"></path></svg></a>
+      <a href="#download" class="btn" style="height:44px;padding:0 20px;background:#04613C;color:#fff">Get Daili — free</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO: centered editorial headline ===== -->
+  <section style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px;padding:56px 56px 0;box-sizing:border-box">
+    <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-size:13px;font-weight:600;color:#2B3A32"><span style="width:8px;height:8px;border-radius:99px;background:#1F8A55;display:inline-block"></span>Now on iPhone, Android and the web</span>
+    <h1 class="disp" style="margin:0;font-size:156px;max-width:1100px;position:relative">Your family,<br><span style="color:#04613C;position:relative;display:inline-block">on the same page.<svg viewBox="0 0 600 24" preserveAspectRatio="none" style="position:absolute;left:0;right:0;bottom:-14px;width:100%;height:20px" aria-hidden="true"><path d="M4 16 C 120 4, 300 2, 596 14" fill="none" stroke="#E9A93B" stroke-width="7" stroke-linecap="round"></path></svg></span></h1>
+    <p style="margin:6px 0 0;font-size:22px;line-height:1.5;color:#2B3A32;max-width:680px">One calm place for your family's week: a shared calendar, shopping lists and to-dos everyone can see. On every phone — and on the computer, too.</p>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:6px">
+      <a href="#appstore" class="btn" style="background:#10201A;color:#fff;padding:0 22px 0 18px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>
+        <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left"><span style="font-size:10px;font-weight:500;opacity:.7">Download on the</span><span style="font-size:16px">App Store</span></span>
+      </a>
+      <a href="#play" class="btn" style="background:#10201A;color:#fff;padding:0 22px 0 18px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>
+        <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left"><span style="font-size:10px;font-weight:500;opacity:.7">Get it on</span><span style="font-size:16px">Google Play</span></span>
+      </a>
+      <a href="#web" style="font-weight:600;font-size:15px;margin-left:8px">Open in your browser →</a>
+    </div>
+    <div style="display:flex;gap:26px;color:#5E6D64;font-size:14px;font-weight:600">
+      <span>Free</span><span style="color:#E4DFD1">·</span><span>No ads</span><span style="color:#E4DFD1">·</span><span>Servers in the EU</span><span style="color:#E4DFD1">·</span><span>Made in Austria</span>
+    </div>
+  </section>
+
+  <!-- ===== STAGE: video panel with phone + cards ===== -->
+  <section style="max-width:1328px;margin:48px auto 0;padding:0 56px;box-sizing:border-box">
+    <div style="position:relative;height:760px;border-radius:40px;overflow:hidden;background:#EEF6EF;box-shadow:0 60px 120px -50px rgba(16,29,22,.45)">
+      <video src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260926_212005_7d3e1afe-7a02-462e-88e5-72cca33e001e.mp4" autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9"></video>
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%, rgba(251,249,242,0) 30%, rgba(251,249,242,.55) 100%)"></div>
+
+      <div style="position:absolute;left:0;right:0;bottom:0;top:0;display:flex;align-items:flex-end;justify-content:center">
+        <div style="position:relative;width:330px;height:640px;border-radius:56px 56px 0 0;background:#10201A;padding:13px 13px 0;box-sizing:border-box;box-shadow:0 -10px 80px -20px rgba(16,29,22,.5), 0 0 0 1px rgba(255,255,255,.1)">
+          <div style="position:relative;width:100%;height:100%;border-radius:44px 44px 0 0;overflow:hidden;background:#FBF9F2">
+            <img src="../../static/assets/img/shots/en/shot-home.webp" alt="Daili home screen with feature tiles" style="position:absolute;inset:0;width:100%;height:auto;display:block">
+          </div>
+        </div>
+      </div>
+
+      <!-- floating cards -->
+      <div class="card" style="position:absolute;left:120px;top:150px;display:flex;align-items:center;gap:12px;padding:14px 18px 14px 14px;background:#fff;border-radius:18px;box-shadow:0 24px 60px -20px rgba(16,29,22,.35);width:260px;box-sizing:border-box">
+        <span style="width:6px;height:40px;border-radius:99px;background:#B85C9E;display:inline-block"></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:16px">Piano lesson</span><span style="font-size:13px;color:#5E6D64">every other Wednesday · Noah</span></span>
+      </div>
+      <div class="card2" style="position:absolute;left:170px;top:400px;display:flex;align-items:center;gap:12px;padding:14px 18px 14px 14px;background:#fff;border-radius:18px;box-shadow:0 24px 60px -20px rgba(16,29,22,.35);width:250px;box-sizing:border-box">
+        <span style="width:36px;height:36px;border-radius:11px;background:#FBF0D6;display:inline-flex;align-items:center;justify-content:center;color:#8A5A00"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 3v18M4 3v5a3 3 0 0 0 6 0V3M17 3c-2 1-3 4-3 8h3v10"></path></svg></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:16px">Tuesday · Dinner</span><span style="font-size:13px;color:#5E6D64">Pasta — from the recipe box</span></span>
+      </div>
+      <div class="card2" style="position:absolute;right:130px;top:190px;display:flex;align-items:center;gap:12px;padding:14px 18px 14px 14px;background:#fff;border-radius:18px;box-shadow:0 24px 60px -20px rgba(16,29,22,.35);width:262px;box-sizing:border-box;animation-delay:-4s">
+        <span style="width:36px;height:36px;border-radius:11px;background:#DCEFDF;display:inline-flex;align-items:center;justify-content:center;color:#04613C"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h11l2-8H6.5"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:16px">Milk · 2 l</span><span style="font-size:13px;color:#5E6D64">Lena added it — at home</span></span>
+      </div>
+      <div class="card" style="position:absolute;right:110px;top:440px;display:flex;align-items:center;gap:12px;padding:14px 18px 14px 14px;background:#fff;border-radius:18px;box-shadow:0 24px 60px -20px rgba(16,29,22,.35);width:262px;box-sizing:border-box;animation-delay:-2s">
+        <span style="width:36px;height:36px;border-radius:11px;background:#F3DFB4;display:inline-flex;align-items:center;justify-content:center;color:#8A5A00"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-8h14v8M12 8v5M12 8a2 2 0 0 0 2-2c0-1.5-2-3-2-3s-2 1.5-2 3a2 2 0 0 0 2 2z"></path></svg></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:16px">Emma turns 12</span><span style="font-size:13px;color:#5E6D64">in 22 days · reminder for everyone</span></span>
+      </div>
+      <div style="position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(16,29,22,.85);color:#fff;font-size:13px;font-weight:600;backdrop-filter:blur(8px)"><span style="width:8px;height:8px;border-radius:99px;background:#A9D9B8;display:inline-block"></span>Synced in about a second — on every phone in the family</div>
+    </div>
+  </section>
+
+  <!-- feature chips row -->
+  <section style="max-width:1328px;margin:36px auto 0;padding:0 56px;box-sizing:border-box;display:flex;justify-content:center;gap:10px;flex-wrap:wrap">
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Calendar</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Shopping lists</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">To-dos</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Meal plan &amp; recipes</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Birthdays</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Photos &amp; documents vault</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Family &amp; kids logins</span>
+    <span style="padding:10px 16px;border-radius:999px;background:#fff;border:1px solid #E4DFD1;font-weight:600;font-size:14px">Home-screen widgets</span>
+  </section>
+
+  <!-- ===== SCROLL STORY: phone left, numbered chapters right ===== -->
+  <section id="features" style="max-width:1328px;margin:0 auto;padding:120px 56px 60px;box-sizing:border-box">
+    <div style="display:grid;grid-template-columns:520px minmax(0,1fr);gap:96px;align-items:start">
+      <!-- sticky phone (no bezel, on a mint slab) -->
+      <div style="position:sticky;top:80px;height:720px;border-radius:40px;background:#DCEFDF;display:flex;align-items:flex-end;justify-content:center;overflow:hidden">
+        <div style="position:absolute;top:28px;left:32px;display:flex;flex-direction:column;gap:4px"><span class="disp" style="font-size:22px;color:#04613C">the daili app</span><span style="font-size:13px;color:#2B3A32;font-weight:500">iPhone · Android</span></div>
+        <div style="position:relative;width:300px;height:640px;border-radius:36px 36px 0 0;overflow:hidden;background:#FBF9F2;box-shadow:0 -20px 60px -20px rgba(16,29,22,.35)">
+          <img data-scr src="../../static/assets/img/shots/en/shot-calendar.webp" alt="Month calendar with event pills">
+          <img data-scr src="../../static/assets/img/shots/en/shot-shopping.webp" alt="Shared shopping list" style="transform:translateY(100%)">
+          <img data-scr src="../../static/assets/img/shots/en/shot-todos.webp" alt="Family to-do list with assignees" style="transform:translateY(100%)">
+          <img data-scr src="../../static/assets/img/shots/en/shot-mealplan.webp" alt="Weekly meal plan" style="transform:translateY(100%)">
+          <img data-scr src="../../static/assets/img/shots/en/shot-birthdays.webp" alt="Birthdays and celebrations" style="transform:translateY(100%)">
+        </div>
+      </div>
+
+      <!-- chapters -->
+      <div style="display:flex;flex-direction:column">
+        <div data-ch style="min-height:600px;display:flex;flex-direction:column;justify-content:center;gap:16px;box-sizing:border-box;padding:40px 0;border-bottom:1px solid #E4DFD1">
+          <span class="disp" style="font-size:20px;color:#5E6D64;letter-spacing:.08em">01 — CALENDAR</span>
+          <h3 class="disp" style="margin:0;font-size:68px">One calendar for everyone.</h3>
+          <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:520px">See the whole family's week and month at a glance — and never miss pickup again. Color-coded events, repeats done right, reminders on every phone.</p>
+        </div>
+        <div data-ch style="min-height:600px;display:flex;flex-direction:column;justify-content:center;gap:16px;box-sizing:border-box;padding:40px 0;border-bottom:1px solid #E4DFD1">
+          <span class="disp" style="font-size:20px;color:#5E6D64;letter-spacing:.08em">02 — SHOPPING</span>
+          <h3 class="disp" style="margin:0;font-size:68px">Lists that update live.</h3>
+          <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:520px">Add "milk" on your phone — it appears on your partner's in the store, in about a second. Quantities, categories and notes per item; checked items drop to the bottom.</p>
+        </div>
+        <div data-ch style="min-height:600px;display:flex;flex-direction:column;justify-content:center;gap:16px;box-sizing:border-box;padding:40px 0;border-bottom:1px solid #E4DFD1">
+          <span class="disp" style="font-size:20px;color:#5E6D64;letter-spacing:.08em">03 — TO-DOS</span>
+          <h3 class="disp" style="margin:0;font-size:68px">Every task has a name on it.</h3>
+          <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:520px">No more "I thought you were doing it." Assignees, due dates and reminders — and kids see their own tasks and can check them off.</p>
+        </div>
+        <div data-ch style="min-height:600px;display:flex;flex-direction:column;justify-content:center;gap:16px;box-sizing:border-box;padding:40px 0;border-bottom:1px solid #E4DFD1">
+          <span class="disp" style="font-size:20px;color:#5E6D64;letter-spacing:.08em">04 — MEALS</span>
+          <h3 class="disp" style="margin:0;font-size:68px">Dinner, decided by Sunday.</h3>
+          <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:520px">Plan breakfast to dinner from your family's own recipe box — import from a link or a YouTube video — then send the ingredients to a shopping list in one tap.</p>
+        </div>
+        <div data-ch style="min-height:600px;display:flex;flex-direction:column;justify-content:center;gap:16px;box-sizing:border-box;padding:40px 0">
+          <span class="disp" style="font-size:20px;color:#5E6D64;letter-spacing:.08em">05 — CELEBRATIONS</span>
+          <h3 class="disp" style="margin:0;font-size:68px">Never miss a birthday again.</h3>
+          <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:520px">Birthdays, anniversaries and family celebrations — remembered every year, with a countdown and one reminder for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REAL LIFE: video card + facts ===== -->
+  <section style="max-width:1328px;margin:0 auto;padding:60px 56px;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:32px;align-items:stretch">
+    <div style="position:relative;border-radius:32px;overflow:hidden;min-height:440px;background:#10201A">
+      <video src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260926_212005_fa9d741c-57d2-4960-86b6-c956171ff755.mp4" autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(16,29,22,0) 40%, rgba(16,29,22,.75) 100%)"></div>
+      <div style="position:absolute;left:36px;right:36px;bottom:32px;display:flex;flex-direction:column;gap:8px;color:#fff">
+        <span class="disp" style="font-size:44px">Plan it on Sunday evening. Live it all week.</span>
+        <span style="font-size:15px;color:rgba(255,255,255,.8)">Five minutes at the kitchen table — and four phones know the plan.</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:28px;border-radius:24px;background:#fff;border:1px solid #E4DFD1"><span class="disp" style="font-size:40px;color:#04613C">Free. No ads.</span><span style="font-size:15px;color:#2B3A32">Nothing sold, nothing tracked for advertising.</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:28px;border-radius:24px;background:#fff;border:1px solid #E4DFD1"><span class="disp" style="font-size:40px;color:#04613C">Servers in the EU</span><span style="font-size:15px;color:#2B3A32">Your family's data stays in Europe. Photos and documents never leave the phone.</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:28px;border-radius:24px;background:#10201A;color:#fff"><span class="disp" style="font-size:40px;color:#A9D9B8">Kids &amp; grandma too</span><span style="font-size:15px;color:rgba(255,255,255,.8)">Own logins for teens, managed profiles for little ones. Invite with a 6-digit code.</span></div>
+    </div>
+  </section>
+
+  <!-- ===== WEB APP ===== -->
+  <section id="web" style="max-width:1328px;margin:0 auto;padding:60px 56px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px">
+    <span style="color:#04613C;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Web app</span>
+    <h2 class="disp" style="margin:0;font-size:80px;max-width:900px">The same family, on the big screen.</h2>
+    <p style="margin:0;font-size:19px;line-height:1.55;color:#2B3A32;max-width:640px">Open app.daili.app in any browser. Plan the week on the laptop, check the list on the phone. Works on an old tablet on the kitchen wall, too.</p>
+    <div style="width:100%;margin-top:24px;border-radius:20px;background:#fff;box-shadow:0 60px 120px -40px rgba(16,29,22,.4);overflow:hidden;border:1px solid #E4DFD1">
+      <div style="display:flex;align-items:center;gap:8px;height:44px;padding:0 16px;background:#EEF6EF;border-bottom:1px solid #E4DFD1">
+        <span style="width:11px;height:11px;border-radius:99px;background:#D4553F;display:inline-block"></span><span style="width:11px;height:11px;border-radius:99px;background:#E9A93B;display:inline-block"></span><span style="width:11px;height:11px;border-radius:99px;background:#1F8A55;display:inline-block"></span>
+        <span style="margin-left:14px;width:360px;height:24px;border-radius:7px;background:#fff;border:1px solid #E4DFD1;font-size:12px;color:#5E6D64;display:flex;align-items:center;padding:0 10px">app.daili.app/calendar</span>
+      </div>
+      <img src="../../static/assets/img/shots/en/../web-calendar.webp" alt="Daili web app, calendar week view" style="width:100%;display:block">
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" style="max-width:1328px;margin:0 auto;padding:80px 56px 60px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px">
+    <span style="color:#04613C;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Pricing</span>
+    <span class="disp" style="font-size:220px;color:#04613C;line-height:.85">€0</span>
+    <h2 class="disp" style="margin:0;font-size:64px">Free — and free for you, forever.</h2>
+    <p style="margin:0;font-size:18px;line-height:1.55;color:#2B3A32;max-width:640px">No credit card, no trial, no locked features. Every family that joins before we add paid extras keeps everything free forever — including anything we add later.</p>
+    <div style="display:flex;gap:12px;margin-top:14px">
+      <a href="#appstore" class="btn" style="background:#10201A;color:#fff">Download on the App Store</a>
+      <a href="#play" class="btn" style="background:#10201A;color:#fff">Get it on Google Play</a>
+      <a href="#web" class="btn" style="background:#fff;color:#10201A;border:1px solid #E4DFD1">Open in your browser</a>
+    </div>
+  </section>
+
+  <footer class="foot" style="max-width:1328px;margin:0 auto;padding:40px 56px 60px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #E4DFD1">
+    <div style="display:flex;align-items:center;gap:10px"><img src="../../static/assets/img/shots/en/../logo.webp" alt="" style="width:28px;height:28px;border-radius:8px"><span class="disp" style="font-size:24px;color:#04613C">daili</span><span style="font-size:14px;color:#5E6D64;margin-left:8px">Made in Innsbruck, Austria</span></div>
+    <div style="display:flex;gap:24px"><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#imprint">Imprint</a><a href="#support">Support</a><a href="#help">Help</a><a href="#blog">Blog</a></div>
+  </footer>
+</div>
+<script>
+// Standalone mock: the same logic the Claude Design artboard runs. DCLogic is a stub here.
+class DCLogic { constructor() { this.props = {}; } }
+class Component extends DCLogic {
+  componentDidMount() {
+    this._on = true;
+    var vids = document.querySelectorAll('video');
+    for (var i = 0; i < vids.length; i++) { vids[i].muted = true; vids[i].defaultMuted = true; var p = vids[i].play(); if (p && p.catch) { p.catch(function () {}); } }
+    var self = this;
+    var tick = function () {
+      if (!self._on) { return; }
+      var H = window.innerHeight;
+      if (H > 0) {
+        var chs = document.querySelectorAll('[data-ch]');
+        var scr = document.querySelectorAll('[data-scr]');
+        for (var j = 0; j < chs.length; j++) {
+          var r = chs[j].getBoundingClientRect();
+          var vin = Math.max(0, Math.min(1, (0.9 * H - r.top) / (0.22 * H)));
+          var vout = Math.max(0, Math.min(1, (r.bottom - 0.1 * H) / (0.22 * H)));
+          chs[j].style.setProperty('--v', Math.min(vin, vout).toFixed(3));
+          if (j > 0 && scr[j]) {
+            var s = Math.max(0, Math.min(1, (0.78 * H - r.top) / (0.42 * H)));
+            var e = 1 - Math.pow(1 - s, 3);
+            scr[j].style.transform = 'translateY(' + ((1 - e) * 100).toFixed(2) + '%)';
+          }
+        }
+      }
+      window.requestAnimationFrame(tick);
+    };
+    window.requestAnimationFrame(tick);
+  }
+  componentWillUnmount() { this._on = false; }
+  renderVals() { return { videoOpacity: this.props.videoOpacity ?? 0.9 }; }
+}
+new Component().componentDidMount();
+</script>
+</body>
+</html>
