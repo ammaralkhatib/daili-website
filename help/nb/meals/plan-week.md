@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planlegg ukens måltider
 summary: Legg frokost, lunsj og middag inn i familiens uke, fra oppskriftene dine eller som vanlig tekst.
 keywords: matplan, måltidsplan, ukemeny, middag, lunsj, frokost, planlegg måltider, hva blir det til middag, meny, uke
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Bestem én gang hva det blir til middag, så ser hele familien det.
 
@@ -16,3 +16,5 @@ Bestem én gang hva det blir til middag, så ser hele familien det.
 5. Trykk på **Lagre**.
 
 Bruk pilene for å bytte mellom uker. Trykk på et måltid for å åpne oppskriften, redigere det eller slette det.
+
+Tom for idéer? Stjernene øverst ber daili om et middagsforslag for hver ledige kveld. Se **La Daili planlegge middagene**.

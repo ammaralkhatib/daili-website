@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planlæg ugens mad
 summary: Sæt morgenmad, frokost og aftensmad på familiens uge, fra dine opskrifter eller som almindelig tekst.
 keywords: madplan, madplanlægning, ugemenu, aftensmad, frokost, morgenmad, planlæg mad, hvad skal vi spise, menu, uge
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Bestem én gang, hvad der er til aftensmad, så kan hele familien se det.
 
@@ -16,3 +16,5 @@ Bestem én gang, hvad der er til aftensmad, så kan hele familien se det.
 5. Tryk på **Gem**.
 
 Brug pilene til at skifte mellem uger. Tryk på et måltid for at åbne opskriften, redigere det eller slette det.
+
+Løbet tør for idéer? Stjernerne øverst beder daili om et forslag til aftensmad for hver ledig aften. Se **Lad Daili planlægge aftensmaden**.

@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planera veckans måltider
 summary: Lägg in frukost, lunch och middag i familjens vecka, från dina recept eller som vanlig text.
 keywords: matsedel, veckomeny, måltidsplanering, middag, lunch, frukost, planera måltider, vad blir det till middag, meny, vecka
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Bestäm en gång vad det blir till middag, så kan hela familjen se det.
 
@@ -16,3 +16,5 @@ Bestäm en gång vad det blir till middag, så kan hela familjen se det.
 5. Tryck på **Spara**.
 
 Använd pilarna för att byta vecka. Tryck på en måltid för att öppna receptet, redigera den eller ta bort den.
+
+Slut på idéer? Stjärnorna högst upp ber daili om ett middagsförslag för varje ledig kväll. Se **Låt Daili planera middagarna**.

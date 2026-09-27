@@ -3,7 +3,7 @@ id: meals-plan-week
 title: De maaltijden van de week plannen
 summary: Zet ontbijt, lunch en avondeten in de week van het gezin, uit je recepten of als gewone tekst.
 keywords: menuplanner, maaltijdplanner, weekmenu, avondeten, lunch, ontbijt, maaltijden plannen, wat eten we, menu, week
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Beslis één keer wat de pot schaft, en het hele gezin kan het zien.
 
@@ -16,3 +16,5 @@ Beslis één keer wat de pot schaft, en het hele gezin kan het zien.
 5. Tik op **Opslaan**.
 
 Met de pijlen ga je naar een andere week. Tik op een maaltijd om het recept te openen, hem te bewerken of te verwijderen.
+
+Geen ideeën meer? De sterretjes bovenaan vragen daili om een avondeten voor elke vrije avond. Zie **Laat Daili je avondeten plannen**.

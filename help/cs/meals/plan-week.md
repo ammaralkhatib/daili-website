@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Naplánovat jídla na týden
 summary: Dej snídani, oběd a večeři do rodinného týdne, z tvých receptů nebo jako obyčejný text.
 keywords: jídelníček, plánovač jídel, týdenní menu, večeře, oběd, snídaně, plánovat jídla, co bude k večeři, menu, týden
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Rozhodni jednou, co bude k večeři, a uvidí to celá rodina.
 
@@ -16,3 +16,5 @@ Rozhodni jednou, co bude k večeři, a uvidí to celá rodina.
 5. Klepni na **Uložit**.
 
 Šipkami se přesouváš mezi týdny. Klepnutím na jídlo otevřeš jeho recept, můžeš ho upravit nebo smazat.
+
+Došly ti nápady? Jiskřičky nahoře požádají daili o návrh večeře na každý volný večer. Viz **Nech Daili naplánovat večeře**.

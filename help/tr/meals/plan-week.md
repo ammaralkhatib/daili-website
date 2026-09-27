@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Haftanın yemeklerini planla
 summary: Kahvaltıyı, öğle ve akşam yemeğini ailenin haftasına ekle, tariflerinden ya da düz metin olarak.
 keywords: yemek planı, yemek planlayıcı, haftalık menü, akşam yemeği, öğle yemeği, kahvaltı, yemek planla, akşama ne pişirsem, menü, hafta
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Akşam ne yeneceğine bir kez karar ver, tüm aile görsün.
 
@@ -16,3 +16,5 @@ Akşam ne yeneceğine bir kez karar ver, tüm aile görsün.
 5. **Kaydet** düğmesine dokun.
 
 Haftalar arasında geçmek için okları kullan. Tarifini açmak, düzenlemek ya da silmek için bir yemeğe dokun.
+
+Fikrin mi kalmadı? Üstteki pırıltı, her boş akşam için daili'den bir akşam yemeği önerisi ister. Bkz. **Akşam yemeklerini Daili planlasın**.

@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planifier les repas de la semaine
 summary: Mets le petit-déjeuner, le déjeuner et le dîner sur la semaine de la famille, à partir de tes recettes ou en texte libre.
 keywords: menus, planning des repas, menu de la semaine, dîner, déjeuner, petit-déjeuner, planifier les repas, qu'est-ce qu'on mange, menu, semaine
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Décide une fois ce qu'on mange ce soir, et toute la famille peut le voir.
 
@@ -16,3 +16,5 @@ Décide une fois ce qu'on mange ce soir, et toute la famille peut le voir.
 5. Touche **Enregistrer**.
 
 Utilise les flèches pour passer d'une semaine à l'autre. Touche un repas pour ouvrir sa recette, le modifier ou le supprimer.
+
+Plus d’idées ? Les étincelles en haut demandent à daili un dîner pour chaque soir libre. Voir **Laisse Daili planifier tes dîners**.

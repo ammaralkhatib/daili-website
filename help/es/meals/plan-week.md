@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planificar las comidas de la semana
 summary: Pon el desayuno, la comida y la cena en la semana de la familia, desde tus recetas o como texto libre.
 keywords: menú, menú semanal, planificador de comidas, cena, comida, desayuno, planificar comidas, qué cenamos, semana, platos
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Decide una vez qué se cena, y toda la familia lo ve.
 
@@ -16,3 +16,5 @@ Decide una vez qué se cena, y toda la familia lo ve.
 5. Toca **Guardar**.
 
 Usa las flechas para cambiar de semana. Toca una comida para abrir su receta, editarla o eliminarla.
+
+¿Sin ideas? El destello de arriba le pide a daili una cena para cada noche libre. Mira **Deja que Daili planifique tus cenas**.

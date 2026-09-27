@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Das Essen der Woche planen
 summary: Trag Frühstück, Mittag- und Abendessen in die Woche der Familie ein, aus deinen Rezepten oder als einfachen Text.
 keywords: essensplan, essensplaner, wochenmenü, abendessen, mittagessen, frühstück, essen planen, was gibt es heute, menü, woche
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Leg einmal fest, was es zum Abendessen gibt, und die ganze Familie sieht es.
 
@@ -16,3 +16,5 @@ Leg einmal fest, was es zum Abendessen gibt, und die ganze Familie sieht es.
 5. Tippe auf **Speichern**.
 
 Mit den Pfeilen wechselst du zwischen den Wochen. Tippe auf eine Mahlzeit, um ihr Rezept zu öffnen, sie zu bearbeiten oder zu löschen.
+
+Keine Ideen mehr? Über das Funkel-Symbol oben schlägt daili für jeden freien Abend ein Abendessen vor. Sieh dir **Lass Daili deine Abendessen planen** an.

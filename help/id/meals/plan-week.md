@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Rencanakan menu seminggu
 summary: Masukkan sarapan, makan siang, dan makan malam ke minggu keluarga, dari resep Anda atau sebagai teks biasa.
 keywords: rencana makan, perencana menu, menu mingguan, makan malam, makan siang, sarapan, rencanakan makan, makan apa malam ini, menu, minggu
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Tentukan sekali mau makan apa malam ini, dan seluruh keluarga bisa melihatnya.
 
@@ -16,3 +16,5 @@ Tentukan sekali mau makan apa malam ini, dan seluruh keluarga bisa melihatnya.
 5. Ketuk **Simpan**.
 
 Pakai panah untuk berpindah minggu. Ketuk sebuah menu untuk membuka resepnya, mengubahnya, atau menghapusnya.
+
+Kehabisan ide? Ikon kilau di atas meminta daili menyarankan makan malam untuk setiap malam kosong. Lihat **Biar Daili merencanakan makan malam Anda**.

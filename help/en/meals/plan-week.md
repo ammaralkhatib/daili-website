@@ -7,10 +7,10 @@ keywords: meal plan, meal planner, weekly menu, dinner, lunch, breakfast, plan m
 routes: /meal-plan
 tryIt: /meal-plan
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-27
 media: meals-plan-week
 order: 7
-related: meals-to-shopping, meals-copy-week, meals-add-recipe
+related: meals-to-shopping, meals-copy-week, meals-add-recipe, meals-suggest
 ---
 Decide once what's for dinner, and the whole family can see it.
 
@@ -23,3 +23,5 @@ Decide once what's for dinner, and the whole family can see it.
 5. Tap **Save**.
 
 Use the arrows to move between weeks. Tap a meal to open its recipe, edit it or delete it.
+
+Out of ideas? The sparkle at the top asks daili for a dinner suggestion for every open evening. See **Let Daili plan your dinners**.

@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planejar as refeições da semana
 summary: Coloque café da manhã, almoço e jantar na semana da família, a partir das suas receitas ou como texto livre.
 keywords: cardápio, planejador de refeições, menu da semana, jantar, almoço, café da manhã, planejar refeições, o que tem para jantar, menu, semana
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Decida uma vez o que tem para o jantar, e a família toda pode ver.
 
@@ -16,3 +16,5 @@ Decida uma vez o que tem para o jantar, e a família toda pode ver.
 5. Toque em **Salvar**.
 
 Use as setas para passar de uma semana para outra. Toque em uma refeição para abrir a receita, editar ou excluir.
+
+Sem ideias? O brilho no topo pede ao daili um jantar para cada noite livre. Veja **Deixe o Daili planejar seus jantares**.

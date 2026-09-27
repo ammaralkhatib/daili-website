@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Suunnittele viikon ateriat
 summary: Lisää aamiainen, lounas ja päivällinen perheen viikkoon, resepteistäsi tai pelkkänä tekstinä.
 keywords: ruokalista, ateriasuunnitelma, viikon menu, päivällinen, lounas, aamiainen, suunnittele ateriat, mitä syödään, menu, viikko
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Päätä kerran, mitä syödään, niin koko perhe näkee sen.
 
@@ -16,3 +16,5 @@ Päätä kerran, mitä syödään, niin koko perhe näkee sen.
 5. Napauta **Tallenna**.
 
 Siirry viikosta toiseen nuolilla. Napauta ateriaa, niin voit avata sen reseptin, muokata sitä tai poistaa sen.
+
+Ideat lopussa? Ylhäällä oleva kimallus pyytää dailia ehdottamaan illallisen jokaiselle vapaalle illalle. Katso **Anna Dailin suunnitella illalliset**.

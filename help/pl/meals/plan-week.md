@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Zaplanuj posiłki na tydzień
 summary: Wpisz śniadanie, obiad i kolację na tydzień rodziny, z twoich przepisów albo jako zwykły tekst.
 keywords: jadłospis, planer posiłków, menu na tydzień, kolacja, obiad, śniadanie, planowanie posiłków, co na obiad, menu, tydzień
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Zdecyduj raz, co będzie na kolację, a cała rodzina to zobaczy.
 
@@ -16,3 +16,5 @@ Zdecyduj raz, co będzie na kolację, a cała rodzina to zobaczy.
 5. Dotknij **Zapisz**.
 
 Strzałkami przechodzisz między tygodniami. Dotknij posiłku, żeby otworzyć jego przepis, edytować go albo usunąć.
+
+Brak pomysłów? Iskierki u góry proszą daili o propozycję kolacji na każdy wolny wieczór. Zobacz **Niech Daili zaplanuje kolacje**.

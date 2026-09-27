@@ -3,7 +3,7 @@ id: meals-plan-week
 title: Planifică mesele săptămânii
 summary: Pune micul dejun, prânzul și cina în săptămâna familiei, din rețetele tale sau ca text simplu.
 keywords: meniu, plan de mese, planificator de mese, meniul săptămânii, cină, prânz, mic dejun, ce mâncăm, planifică mesele, săptămână
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-27
 ---
 Hotărăște o dată ce mâncați la cină și toată familia vede.
 
@@ -16,3 +16,5 @@ Hotărăște o dată ce mâncați la cină și toată familia vede.
 5. Apasă pe **Salvează**.
 
 Folosește săgețile ca să treci de la o săptămână la alta. Apasă pe o masă ca să-i deschizi rețeta, s-o editezi sau s-o ștergi.
+
+Ai rămas fără idei? Steluțele de sus îi cer lui daili o cină pentru fiecare seară liberă. Vezi **Lasă Daili să-ți planifice cinele**.
