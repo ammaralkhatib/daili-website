@@ -640,7 +640,12 @@ for (const loc of LOCALES) {
 //   - round 2: no pill above the hero headline and three note pills under
 //     it, the bare wordmark on the slab, no points row on the price slide,
 //     and exactly four two-step slides (web, how, compare, pricing) with one
-//     .snap2 each and none on the FAQ.
+//     .snap2 each and none on the FAQ;
+//   - 006: every .by in a two-step slide is finished by --p .85 (--a + --w ≤
+//     .85), so the settled second stop is never half-faded. The timing is the
+//     inline style, else the class's rule in style.css (.colN, the
+//     .step:nth-child(n) start times), else the .by default; and the compare
+//     lead sits under the h2 inside the title block, not in a second column.
 {
   const landing = PAGES.find((pg) => pg.id === 'landing');
   const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
@@ -691,6 +696,34 @@ for (const loc of LOCALES) {
   for (const m of css.matchAll(/(^|[}\s])(\.story[^{}]*)\{([^{}]*)\}/g)) {
     if (/text-transform/.test(m[3])) fail('assets/style.css', `the rule '${m[2].trim()}' sets text-transform — it breaks Turkish/Greek casing in the story`);
   }
+
+  // --a / --w as style.css sets them per selector (a later rule wins), for the
+  // reveals whose timing lives in a class rather than an inline style.
+  const cssTiming = new Map();
+  for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
+    for (const sel of m[1].split(',').map((s) => s.trim())) {
+      const t = { ...(cssTiming.get(sel) || {}) };
+      for (const d of m[2].matchAll(/--([aw])\s*:\s*([\d.]+)/g)) t[d[1]] = parseFloat(d[2]);
+      if (t.a !== undefined || t.w !== undefined) cssTiming.set(sel, t);
+    }
+  }
+  const BY_END = 0.85;
+  // Every .by tag in a two-step slide, with where it ends.
+  const reveals = (part) => {
+    const found = [];
+    let step = 0;
+    for (const m of part.matchAll(/<[a-z][a-z0-9]*\b[^>]*\bclass="([^"]*)"[^>]*>/g)) {
+      const classes = m[1].split(/\s+/);
+      if (!classes.includes('by')) continue;
+      const t = { ...cssTiming.get('.by') };
+      for (const c of classes) Object.assign(t, cssTiming.get(`.${c}`));
+      if (classes.includes('step')) Object.assign(t, cssTiming.get(`.step:nth-child(${++step})`));
+      const style = (m[0].match(/\sstyle="([^"]*)"/) || [, ''])[1];
+      for (const d of style.matchAll(/--([aw])\s*:\s*([\d.]+)/g)) t[d[1]] = parseFloat(d[2]);
+      found.push({ tag: m[0].slice(0, 60), end: (t.a ?? 0) + (t.w ?? 0.15) });
+    }
+    return found;
+  };
 
   for (const loc of locs) {
     const file = path.join(DIST, landing.out(loc));
@@ -771,10 +804,19 @@ for (const loc of LOCALES) {
       fail(out, `the two-step slides are [${twoStep.join(', ')}], expected [${TWO_STEP.join(', ')}]`);
     }
     for (const id of TWO_STEP) {
-      const snaps = count(sectionAt(html, `id="${id}"`), 'class="snap2"');
+      const part = sectionAt(html, `id="${id}"`);
+      const snaps = count(part, 'class="snap2"');
       if (snaps !== 1) fail(out, `the ${id} slide has ${snaps} .snap2 elements, expected exactly 1 — it is a two-step slide`);
+      for (const r of reveals(part)) {
+        if (r.end > BY_END + 1e-9) fail(out, `the ${id} slide has a reveal that ends at --p ${r.end.toFixed(2)}, after ${BY_END} — the second stop would show it half-faded: ${r.tag}…`);
+      }
     }
     if (sectionAt(html, 'id="faq"').includes('class="snap2"')) fail(out, 'the faq slide has a .snap2 — it is a single slide');
+    // The compare lead: under the title, in the same block, arriving with it.
+    const gap = '(?:\\s|<!--[\\s\\S]*?-->)*';
+    if (!new RegExp(`<div class="sec-head">${gap}<div>${gap}<span class="eyebrow">[^<]*</span>${gap}<h2>[^<]*</h2>${gap}<p class="section-lead">`).test(sectionAt(html, 'id="compare"'))) {
+      fail(out, 'the compare lead is not the sibling after the h2 inside the title block (eyebrow → h2 → lead) — it must not sit in a second column');
+    }
   }
 }
 

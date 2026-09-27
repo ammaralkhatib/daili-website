@@ -105,8 +105,12 @@
        to sit in the middle of the pin. Below 900px and with reduced motion
        they are ordinary one-screen slides (style.css).
 
+       Every reveal in these four slides is finished by --p .85
+       (--a + --w ≤ .85, tools/check-build.mjs 15), so a settled second stop
+       is the complete slide, never a half-faded one.
+
        The web slide's "title" is the browser window: whole and centred at the
-       first stop, shrunk aside with the copy faded in behind it at the second.
+       first stop, shrunk into its own column beside the copy at the second.
        The image is the only one on the page that is not localized: the web
        app speaks English and German. -->
   <section class="scene two-step" id="web" data-scene>
@@ -116,7 +120,7 @@
         <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
         <img src="{{ page.webShot.src }}" alt="" width="{{ page.webShot.width }}" height="{{ page.webShot.height }}" loading="lazy" decoding="async">
       </div>
-      <div class="web-copy by">
+      <div class="web-copy by" style="--a:.45;--w:.35">
         <span class="eyebrow">{{ web.eyebrow }}</span>
         <h2>{{ web.h2 }}</h2>
         <p>{{ web.p }}</p>
@@ -160,10 +164,10 @@
         <div>
           <span class="eyebrow">{{ compare.eyebrow }}</span>
           <h2>{{ compare.h2 }}</h2>
+          <!-- Part of the title block: centred with it at the first stop,
+               travelling up with it to the second. -->
+          <p class="section-lead">{{ compare.lead }}</p>
         </div>
-        <!-- Beside the title rather than under it (the head's second column):
-             under it, the nine rows no longer fit one pinned screen. -->
-        <p class="section-lead by" style="--a:.45;--w:.35">{{ compare.lead }}</p>
       </div>
       <!-- The table's frame (rules, row labels, the tinted column) arrives
            first, then its columns one by one. -->
@@ -185,8 +189,8 @@
         <h2>{{ pricing.h2 }}</h2>
       </div>
       <p class="lead by" style="--a:.45;--w:.3">{{ pricing.lead }}</p>
-      <div class="promise by" style="--a:.55;--w:.3"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
-      <div class="ctas badges by" style="--a:.65;--w:.35">
+      <div class="promise by" style="--a:.5;--w:.3"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
+      <div class="ctas badges by" style="--a:.6;--w:.25">
 {{> storebadges }}
         <a class="btn btn-ghost" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a>
       </div>

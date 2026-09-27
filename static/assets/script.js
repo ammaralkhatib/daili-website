@@ -343,34 +343,86 @@
       return !!snap && getComputedStyle(snap).display !== "none";
     }
 
+    /* The web slide's window at the first stop: laid out in its settled
+       column (--p 1, transform none), then scaled to fill the slide — as wide
+       as the wrap allows up to 1080px, no taller than the pin's content box —
+       and moved to the pin's centre. Measuring the column itself is what
+       makes the shrink end exactly in it. */
+    function measureWindow(s, lap) {
+      lap.style.setProperty("--wx", "0px");
+      lap.style.setProperty("--wy", "0px");
+      lap.style.setProperty("--ws", "1");
+      if (!s._two) return;
+      s.style.setProperty("--p", "1");
+      var pinEl = s.querySelector(".pin");
+      var pin = pinEl.getBoundingClientRect();
+      var cs = getComputedStyle(pinEl);
+      var room = pin.height - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var wrap = s.querySelector(".wrap").getBoundingClientRect();
+      var l = lap.getBoundingClientRect();
+      var scale = Math.min(Math.min(wrap.width, 1080) / l.width, room / l.height);
+      lap.style.setProperty("--ws", scale.toFixed(4));
+      lap.style.setProperty("--wx", ((wrap.left + wrap.right) / 2 - (l.left + l.right) / 2).toFixed(1) + "px");
+      lap.style.setProperty("--wy", ((pin.top + pin.bottom) / 2 - (l.top + l.bottom) / 2).toFixed(1) + "px");
+    }
+
+    /* A how or compare title is two lines at both stops. At --p 0 (big type)
+       its one-line width is measured, and the h2 gets a max-width of a bit
+       over half of that — widened until it really is two lines — written in
+       em, so at the small size the lines break in the same places. */
+    function twoLines(h2) {
+      h2.style.maxWidth = "none";
+      h2.style.whiteSpace = "nowrap";
+      var range = document.createRange();
+      range.selectNodeContents(h2);
+      var one = range.getBoundingClientRect().width;
+      h2.style.whiteSpace = "";
+      var cs = getComputedStyle(h2);
+      var size = parseFloat(cs.fontSize), line = parseFloat(cs.lineHeight) || size * 1.1;
+      var w = one * 0.55;
+      for (var i = 0; i < 10; i++) {
+        h2.style.maxWidth = (w / size).toFixed(3) + "em";
+        if (h2.getBoundingClientRect().height < line * 2.5) break;
+        w *= 1.06;
+      }
+    }
+
     /* Where a two-step title has to travel from at the first stop: from its
        settled place to the middle of the pin, measured at --p 0 (big type) and
        with no offset applied. The box is the eyebrow plus the h2's actual text
-       (a Range, not the block, which is wider than a short title), so a
-       one-word title and a wrapped German one both land centred. Measured
-       only when the geometry can have changed: on load, on resize, once the
-       display face has loaded. */
+       (a Range, not the block, which is wider than a short title) plus the
+       compare lead, so a one-word title and a wrapped German one both land
+       centred. Measured only when the geometry can have changed: on load, on
+       resize, once the display face has loaded. */
     function measure() {
       stale = false;
       twoSteps.forEach(function (s) {
         s._two = twoStepOn(s);
+        var lap = s.querySelector(".laptop");
+        if (lap) measureWindow(s, lap);
         var head = s.querySelector(".sec-head, .price-head");
         var h2 = head && head.querySelector("h2");
         if (!h2) return;
         head.style.setProperty("--dx", "0px");
         head.style.setProperty("--dy", "0px");
+        if (head.classList.contains("sec-head")) h2.style.maxWidth = "";
         if (!s._two) return;
         s.style.setProperty("--p", "0");
+        if (head.classList.contains("sec-head")) twoLines(h2);
         var pin = s.querySelector(".pin").getBoundingClientRect();
         var range = document.createRange();
         range.selectNodeContents(h2);
         var t = range.getBoundingClientRect();
-        var eb = head.querySelector(".eyebrow");
-        var e = eb ? eb.getBoundingClientRect() : t;
-        var left = Math.min(t.left, e.left), right = Math.max(t.right, e.right);
-        var topY = Math.min(t.top, e.top);
+        var boxes = [t];
+        [].forEach.call(head.querySelectorAll(".eyebrow, .section-lead"), function (el) {
+          boxes.push(el.getBoundingClientRect());
+        });
+        var left = Math.min.apply(null, boxes.map(function (b) { return b.left; }));
+        var right = Math.max.apply(null, boxes.map(function (b) { return b.right; }));
+        var topY = Math.min.apply(null, boxes.map(function (b) { return b.top; }));
+        var bottom = Math.max.apply(null, boxes.map(function (b) { return b.bottom; }));
         head.style.setProperty("--dx", ((pin.left + pin.right) / 2 - (left + right) / 2).toFixed(1) + "px");
-        head.style.setProperty("--dy", ((pin.top + pin.bottom) / 2 - (topY + t.bottom) / 2).toFixed(1) + "px");
+        head.style.setProperty("--dy", ((pin.top + pin.bottom) / 2 - (topY + bottom) / 2).toFixed(1) + "px");
       });
     }
 
