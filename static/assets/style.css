@@ -93,6 +93,10 @@
      than the viewport, so it is one number in one place — script.js reads it
      back off <html> rather than hard-coding 64 a fourth time. */
   --header-h:64px;
+  /* How much of the showcase panel shows under the hero on the first screen:
+     the video, the two upper cards and the top of the phone. 260px on short
+     screens (below). */
+  --peek:300px;
 
   /* White ON one of the five category colours. Not --on-forest: that token
      flips to near-black in dark mode, and the event pill stays green in both
@@ -308,18 +312,21 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 /* ---------- hero: the centred editorial headline --------------------------- */
 /* Text only. --p is set by script.js like any [data-scene] slide, and it is 1
    whenever the hero is at or above the header line — so on load, whatever the
-   window height, the hero is complete. The h1 is the LCP. */
-.hero{--p:1;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;padding-block:40px}
-.hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px;width:100%}
-.hero .chip{display:inline-flex;align-items:center;gap:8px;padding-block:8px;padding-inline:14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.82rem;font-weight:600;color:var(--body)}
-.hero .chip i,.showcase .sync i{width:8px;height:8px;border-radius:50%;flex:none;background:var(--cat-green)}
-.hero h1{font-size:clamp(88px,10.5vw,156px);line-height:.9;max-width:1100px}
+   window height, the hero is complete. The h1 is the LCP.
+   It is --peek shorter than the screen, so the top of the showcase panel —
+   video, cards, the top of the phone — is already in view under it; both
+   still snap to the header line, so the first flick lands the panel there. */
+.hero{--p:1;min-height:max(540px,calc(100vh - var(--header-h) - var(--peek)));display:flex;align-items:center;padding-block:28px 20px}
+.hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;width:100%}
+.showcase .sync i{width:8px;height:8px;border-radius:50%;flex:none;background:var(--cat-green)}
+/* Capped by the height too: the whole hero has to fit above the --peek. */
+.hero h1{font-size:clamp(72px,min(10.5vw,12.5vh),156px);line-height:.9;max-width:1100px}
 /* The display face has no Arabic, Thai, Devanagari or CJK glyphs, and the
    system faces those scripts fall back to are far wider and taller than
    Sofia Sans Condensed at the same size: 156px of Arabic at its 1.25 leading
    is three lines and a slide and a half. Two thirds of the size keeps the
    headline two lines and the hero one screen. */
-:is([lang="ar"],[lang="th"],[lang="hi"],[lang="ja"],[lang="ko"],[lang^="zh"]) .hero h1{font-size:clamp(56px,7vw,104px)}
+:is([lang="ar"],[lang="th"],[lang="hi"],[lang="ja"],[lang="ko"],[lang^="zh"]) .hero h1{font-size:clamp(52px,min(7vw,9vh),104px)}
 /* The highlighted half with the mock's hand-drawn amber underline. The em is
    an inline-block, so a long translation wraps INSIDE it and the stroke spans
    the whole block under its last line, instead of the mock's nowrap span
@@ -327,11 +334,13 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .hero h1 em{position:relative;display:inline-block;font-style:normal;color:var(--forest)}
 .hero h1 em svg{position:absolute;inset-inline:0;bottom:-14px;width:100%;height:20px;overflow:visible}
 .hero h1 em path{fill:none;stroke:var(--amber);stroke-width:7;stroke-linecap:round;vector-effect:non-scaling-stroke}
-.hero .lead{margin-block-start:6px;font-size:22px;line-height:1.5;color:var(--body);max-width:680px}
-.hero .note{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;font-size:.88rem;font-weight:600;color:var(--muted)}
-/* The hairline middot between the notes, drawn rather than typed: a "·" in the
-   content would have to be translated and re-joined in 28 files. */
-.hero .note span+span::before{content:"·";color:var(--line);margin-inline-end:12px}
+.hero .lead{margin-block-start:6px;font-size:20px;line-height:1.5;color:var(--body);max-width:760px}
+/* The web link is its own row under the badges, pulled up against them: it is
+   the third way in, not a new block. */
+.hero .web-link{margin-block-start:-14px}
+/* The three notes as the same white pills as the feature chips under the
+   showcase (.chips li, below). */
+.hero .pills{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 
 /* ---------- showcase: the video panel --------------------------------------- */
 /* .scene.showcase, not .showcase: the generic .scene padding comes later in
@@ -352,7 +361,7 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .showcase .sync{position:absolute;inset-block-end:28px;inset-inline:0;margin-inline:auto;width:max-content;max-width:calc(100% - 32px);display:flex;align-items:center;gap:8px;padding-block:8px;padding-inline:14px;border-radius:999px;background:color-mix(in srgb,var(--frame) 85%,transparent);color:var(--on-dark);font-size:.82rem;font-weight:600;line-height:1.3;backdrop-filter:blur(8px)}
 .showcase .sync i{background:var(--web-mint)}
 .chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-block-start:24px}
-.chips li{padding-block:10px;padding-inline:16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:.88rem;white-space:nowrap}
+.chips li,.hero .pill{padding-block:10px;padding-inline:16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:.88rem;white-space:nowrap}
 
 /* ---------- the scroll story ------------------------------------------------
  * The mint slab with the phone on the inline-start side, seven chapters on the
@@ -392,9 +401,8 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 /* ---------- the stage: the mint slab, one phone, seven screens --------------- */
 .stage{position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));display:flex;align-items:center}
 .slab{position:relative;width:100%;height:min(720px,100%);border-radius:40px;background:var(--mint);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
-.slab-label{position:absolute;top:28px;inset-inline-start:32px;display:flex;flex-direction:column;gap:4px}
+.slab-label{position:absolute;top:28px;inset-inline-start:32px}
 .slab-label .disp{font-size:22px;color:var(--forest)}
-.slab-label small{font-size:13px;font-weight:500;color:var(--body)}
 /* No bezel: the screenshot itself, round at the top, rising out of the slab's
    bottom edge. Its top is always in view (object-position), so a short
    window crops the bottom of the screen, never the app bar. */
@@ -414,10 +422,12 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 
 /* ---------- the floating cards --------------------------------------------- */
 /* The showcase panel's three cards. Each fades in with the showcase slide's
-   own --p and drifts on its own period (--dur). */
+   own --p and drifts on its own period (--dur). They are in by --p .35 —
+   where the panel stands while it peeks under the hero at 1440×900 — so the
+   first screen already shows the upper two. */
 .fc{position:absolute;display:flex;align-items:center;gap:12px;background:var(--card);color:var(--ink);border-radius:18px;padding:14px 18px;font-size:1rem;font-weight:500;line-height:1.25;white-space:nowrap;
   box-shadow:0 18px 44px rgba(var(--shadow),.18),0 0 0 1px rgba(var(--shadow),.06);
-  --in:clamp(0,calc((var(--p) - .55) / .2),1);
+  --in:clamp(0,calc((var(--p) - .15) / .2),1);
   opacity:calc(var(--in) * (1 - var(--q)));
   transform:translateY(calc((1 - var(--in)) * 26px)) scale(calc(.94 + .06 * var(--in)));
   animation:drift var(--dur,8s) ease-in-out infinite}
@@ -479,6 +489,45 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .scene.last>.pin{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - var(--header-h));padding-block-start:40px}
 .scene.last footer{margin-block-start:auto;width:100%}
 
+/* ---------- two-step slides: title first, content second -------------------
+ * web, how, compare and pricing arrive in two snap stops. The scene is two
+ * screens tall, its .pin sticks under the header for both, and .snap2 is the
+ * second stop one screen down. script.js runs --p from 0 at the first stop to
+ * 1 at the second (not the entry-based --p of the other slides), so:
+ *   - the title block sits big in the middle of the pin at 0 and shrinks back
+ *     to 002's place and size by 1. --dx/--dy is the distance from its settled
+ *     place to the pin's centre, measured by script.js per slide, locale and
+ *     window, because it depends on how the translated title wraps;
+ *   - the content is .by with --a ≥ .45: invisible at the first stop, in at
+ *     the second.
+ * Only here: at 900px and down, and with reduced motion, .snap2 is gone and
+ * the scene is the ordinary one-screen slide above, with --p pinned to 1 — one
+ * stop, never two identical ones.
+ * ------------------------------------------------------------------------- */
+.snap2{display:none}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+  .scene.two-step{display:block;height:calc(2 * (100vh - var(--header-h)));min-height:0;padding-block:0}
+  .two-step>.pin{position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));display:flex;align-items:center;padding-block:32px}
+  .two-step>.pin>.wrap{width:100%}
+  .snap2{display:block;position:absolute;inset-inline-start:0;top:calc(100vh - var(--header-h));width:1px;height:1px;scroll-snap-align:start}
+  .two-step :is(.sec-head,.price-head){--dx:0px;--dy:0px;position:relative;z-index:1;will-change:transform;
+    transform:translate(calc((1 - var(--p)) * var(--dx)),calc((1 - var(--p)) * var(--dy)))}
+  /* One size formula for every shrinking title: --big at the first stop,
+     --small (002's size) at the second. */
+  .two-step :is(.sec-head h2,.price-head h2,.price-head .big){font-size:calc(var(--big) - (var(--big) - var(--small)) * var(--p))}
+  .two-step :is(.sec-head,.price-head) h2{--big:clamp(56px,6.5vw,96px)}
+  .two-step .sec-head h2{--small:clamp(1.9rem,4.4vw,3.4rem)}
+  .two-step .price-head h2{--small:clamp(40px,5vw,64px)}
+  .two-step .price-head .big{--big:clamp(110px,min(16vw,24vh),220px);--small:120px}
+  /* The window, whole at the first stop: as wide as the slide allows, and no
+     taller than the pin (16:10 screenshot plus its address bar). */
+  .two-step .laptop{width:min(100%,1080px,calc((100vh - var(--header-h) - 104px) * 1.6))}
+}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference) and (max-height:760px){
+  .two-step .sec-head h2{--small:2rem}
+  .two-step .price-head .big{--big:clamp(110px,min(16vw,20vh),220px);--small:104px}
+}
+
 /* ---------- web app: the window fills the slide, then steps aside ----------- */
 .web-pin{position:relative}
 .web-copy{position:absolute;inset-inline-start:0;top:50%;transform:translateY(-50%);width:42%;z-index:0;--a:.55;--w:.3;--lift:0px}
@@ -488,10 +537,11 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 .web-copy li::before{content:"✓";color:var(--forest);font-weight:700}
 .web-copy .muted{font-size:.85rem;color:var(--muted);margin-block-start:12px}
 /* The browser frame from the old hero, in the flow and driven by the scroll.
-   --k is its own progress: full width at 0, 55% and shifted to the inline-end
-   side at 1. translateX has no logical form, so --dir carries the direction. */
+   --k is its own progress: full width until --p .2 (the first stop is 0), 55%
+   and shifted to the inline-end side at 1. translateX has no logical form, so
+   --dir carries the direction. */
 .laptop{position:relative;z-index:1;width:min(100%,1080px);margin-inline:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 60px 120px -40px rgba(var(--shadow),.4);
-  --k:clamp(0,calc((var(--p) - .3) / .55),1);
+  --k:clamp(0,calc((var(--p) - .2) / .8),1);
   transform:translateX(calc(30% * var(--k) * var(--dir))) scale(calc(1 - .45 * var(--k)));transform-origin:center}
 .laptop .bar{display:flex;align-items:center;gap:6px;padding-block:9px;padding-inline:12px;border-bottom:1px solid var(--line);background:var(--mint-soft)}
 .laptop .bar i{display:block;width:9px;height:9px;flex:none;border-radius:50%;background:var(--line)}
@@ -619,11 +669,11 @@ button.store-badge{border:0;margin:0;font-family:inherit;font-size:inherit;text-
 .step::before{counter-increment:step;content:counter(step);display:block;font-family:var(--display);font-weight:800;font-size:2.8rem;line-height:1;color:var(--forest)}
 .step h3{font-size:1.4rem;margin-block:8px;line-height:1.2}
 .step p{font-size:.98rem;color:var(--muted)}
-/* When each step arrives. In the template they are one loop with no index, so
-   the three start times live here. */
-.step:nth-child(1){--a:.52;--w:.14}
-.step:nth-child(2){--a:.66;--w:.14}
-.step:nth-child(3){--a:.8;--w:.14}
+/* When each step arrives, inside the .45–1 half of the two-step slide. In the
+   template they are one loop with no index, so the three start times live here. */
+.step:nth-child(1){--a:.45;--w:.2}
+.step:nth-child(2){--a:.6;--w:.2}
+.step:nth-child(3){--a:.75;--w:.25}
 @media(max-width:760px){.steps{grid-template-columns:1fr}}
 
 /* ---------- comparison ---------- */
@@ -650,27 +700,21 @@ button.store-badge{border:0;margin:0;font-family:inherit;font-size:inherit;text-
    column widths have to be the same at --p 0 and 1 or the rows jump as the
    slide settles. transform needs a block box, hence inline-block. */
 .cmp .by{display:inline-block}
-.col1{--a:.55;--w:.12}
-.col2{--a:.7;--w:.12}
-.col3{--a:.85;--w:.12}
+.col1{--a:.45;--w:.18}
+.col2{--a:.6;--w:.18}
+.col3{--a:.75;--w:.25}
 .legend{font-size:.85rem;color:var(--muted);margin-block-start:10px}
 
 /* ---------- pricing ---------- */
 /* Centred, one column: the giant €0 is the slide. The slide's own ground is
    the only background. The price is capped by the window's height as well as
    its width, so the whole block still fits a 720px-tall laptop. */
-.price{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
-.price .big{font-family:var(--display);font-weight:800;font-size:clamp(110px,min(16vw,24vh),220px);line-height:.85;color:var(--forest);--lift:80px}
-.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;line-height:1.4;letter-spacing:0;color:var(--muted);margin-block-start:12px;--lift:20px}
+.price,.price-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.price-head{gap:inherit}
+.price .big{font-family:var(--display);font-weight:800;font-size:clamp(110px,min(16vw,24vh),220px);line-height:.85;color:var(--forest)}
+.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;line-height:1.4;letter-spacing:0;color:var(--muted);margin-block-start:12px}
 .price h2{font-size:clamp(40px,5vw,64px);line-height:1}
 .price .lead{font-size:1.12rem;color:var(--body);max-width:640px}
-.price .points{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-block-start:4px}
-.price .points li{padding-block:8px;padding-inline:14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.85rem;font-weight:600;color:var(--body)}
-/* The three points arrive one after another; like the steps, their start times
-   cannot come from the template's loop. */
-.price li:nth-child(1){--a:.64;--w:.08}
-.price li:nth-child(2){--a:.68;--w:.08}
-.price li:nth-child(3){--a:.72;--w:.08}
 .price .promise{max-width:640px;font-size:.95rem;color:var(--body)}
 .price .promise strong{display:block;font-family:var(--display);font-size:1.1rem;margin-block-end:2px;color:var(--forest)}
 .price .ctas{margin-block-start:6px}
@@ -721,11 +765,12 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
    what overflow first, so they lose a little air rather than the slide losing
    its snap. */
 @media(max-height:760px){
+  :root{--peek:260px}
   .cmp td,.cmp tbody th,.cmp thead th{padding-block:8px}
   .sec-head h2{font-size:2rem}
   .chapter h2{font-size:clamp(40px,4vw,52px)}
   .hero>.wrap{gap:20px}
-  .hero h1{font-size:clamp(72px,9vw,120px)}
+  .hero h1{font-size:clamp(64px,min(9vw,12.5vh),120px)}
   .hero .lead{font-size:19px}
   .price{gap:8px}
   .price .big{font-size:clamp(110px,min(16vw,20vh),220px)}

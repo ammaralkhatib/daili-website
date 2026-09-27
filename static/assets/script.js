@@ -332,6 +332,48 @@
       return isNaN(v) ? 64 : v;
     }
 
+    /* The two-step slides (web, how, compare, pricing). style.css decides when
+       they are two screens tall — above 900px, motion allowed — and says so
+       by showing their .snap2; this follows it rather than repeating both
+       media queries. */
+    var twoSteps = scenes.filter(function (s) { return s.classList.contains("two-step"); });
+    var stale = true;
+    function twoStepOn(s) {
+      var snap = s.querySelector(".snap2");
+      return !!snap && getComputedStyle(snap).display !== "none";
+    }
+
+    /* Where a two-step title has to travel from at the first stop: from its
+       settled place to the middle of the pin, measured at --p 0 (big type) and
+       with no offset applied. The box is the eyebrow plus the h2's actual text
+       (a Range, not the block, which is wider than a short title), so a
+       one-word title and a wrapped German one both land centred. Measured
+       only when the geometry can have changed: on load, on resize, once the
+       display face has loaded. */
+    function measure() {
+      stale = false;
+      twoSteps.forEach(function (s) {
+        s._two = twoStepOn(s);
+        var head = s.querySelector(".sec-head, .price-head");
+        var h2 = head && head.querySelector("h2");
+        if (!h2) return;
+        head.style.setProperty("--dx", "0px");
+        head.style.setProperty("--dy", "0px");
+        if (!s._two) return;
+        s.style.setProperty("--p", "0");
+        var pin = s.querySelector(".pin").getBoundingClientRect();
+        var range = document.createRange();
+        range.selectNodeContents(h2);
+        var t = range.getBoundingClientRect();
+        var eb = head.querySelector(".eyebrow");
+        var e = eb ? eb.getBoundingClientRect() : t;
+        var left = Math.min(t.left, e.left), right = Math.max(t.right, e.right);
+        var topY = Math.min(t.top, e.top);
+        head.style.setProperty("--dx", ((pin.left + pin.right) / 2 - (left + right) / 2).toFixed(1) + "px");
+        head.style.setProperty("--dy", ((pin.top + pin.bottom) / 2 - (topY + t.bottom) / 2).toFixed(1) + "px");
+      });
+    }
+
     /* The active chapter only lights its progress dot now: Design B keeps the
        story on one calm ground, so there is no colour to swap. */
     function activate(i) {
@@ -381,12 +423,19 @@
       });
       activate(Math.round(idx));
 
+      if (stale) measure();
+
       /* Every other slide: 0 as the slide's top edge enters at the bottom of
          the viewport, 1 once it sits under the header — and 1 for good once
-         it is above that, which is why the hero is complete on load. */
+         it is above that, which is why the hero is complete on load.
+         A two-step slide instead: 0 at its first stop (top under the header),
+         1 at its second, one screen further down. */
       scenes.forEach(function (s) {
         var r = s.getBoundingClientRect();
-        setVar(s, "--p", calm ? 1 : clamp01((vh - (r.top - top)) / vh));
+        var p = s._two
+          ? clamp01((top - r.top) / (vh - top))
+          : clamp01((vh - (r.top - top)) / vh);
+        setVar(s, "--p", calm ? 1 : p);
       });
     }
 
@@ -396,9 +445,11 @@
       queued = true;
       requestAnimationFrame(function () { frame(); queued = false; });
     }
+    function onResize() { stale = true; onFrame(); }
     window.addEventListener("scroll", onFrame, { passive: true });
-    window.addEventListener("resize", onFrame);
-    if (calmQuery && calmQuery.addEventListener) calmQuery.addEventListener("change", onFrame);
+    window.addEventListener("resize", onResize);
+    if (calmQuery && calmQuery.addEventListener) calmQuery.addEventListener("change", onResize);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(onResize);
     frame();
   }
 

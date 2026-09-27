@@ -636,7 +636,11 @@ for (const loc of LOCALES) {
 //   - nothing is left of the bento grid or of the per-chapter colour swaps;
 //   - no .story rule in style.css uppercases: text-transform breaks Turkish
 //     and Greek casing and does nothing for CJK (the chapter numbers are set
-//     in the display face instead).
+//     in the display face instead);
+//   - round 2: no pill above the hero headline and three note pills under
+//     it, the bare wordmark on the slab, no points row on the price slide,
+//     and exactly four two-step slides (web, how, compare, pricing) with one
+//     .snap2 each and none on the FAQ.
 {
   const landing = PAGES.find((pg) => pg.id === 'landing');
   const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
@@ -742,6 +746,35 @@ for (const loc of LOCALES) {
     for (const dead of ['class="bento"', 'class="tile"', 'data-active']) {
       if (html.includes(dead)) fail(out, `still contains ${dead} — retired with the bento grid / the per-chapter colours`);
     }
+
+    // Round 2 (claude-prompts/2026-09-27/004): the hero has no pill above the
+    // headline and its three notes are pills; the slab's wordmark stands
+    // alone; the price slide has no points row.
+    const heroHtml = sectionAt(html, 'class="hero"');
+    const h1At = heroHtml.indexOf('<h1');
+    if (h1At === -1 || /class="[^"]*\bchip\b/.test(heroHtml.slice(0, h1At))) {
+      fail(out, 'the hero has a .chip above the h1 (or no h1) — round 2 removed the pill over the headline');
+    }
+    const pills = count(heroHtml, 'class="pill"');
+    if (pills !== 3) fail(out, `the hero has ${pills} note pills (class="pill"), expected 3 from hero.notes`);
+    if (!/<div class="slab-label"><span class="disp">[^<]+<\/span><\/div>/.test(storyHtml)) {
+      fail(out, 'the slab label is not the bare wordmark — round 2 removed the caption line under it');
+    }
+    if (sectionAt(html, 'id="pricing"').includes('class="points"')) fail(out, 'the price slide still has its points row (class="points") — round 2 removed it');
+
+    // The two-step slides: exactly these four, each with exactly one second
+    // snap stop, and none on the FAQ. A missing .snap2 turns a slide back into
+    // one stop whose content never appears (its --p would stop at 0).
+    const TWO_STEP = ['web', 'how', 'compare', 'pricing'];
+    const twoStep = [...html.matchAll(/<section class="[^"]*\btwo-step\b[^"]*" id="([^"]+)"/g)].map((m) => m[1]);
+    if (twoStep.join() !== TWO_STEP.join()) {
+      fail(out, `the two-step slides are [${twoStep.join(', ')}], expected [${TWO_STEP.join(', ')}]`);
+    }
+    for (const id of TWO_STEP) {
+      const snaps = count(sectionAt(html, `id="${id}"`), 'class="snap2"');
+      if (snaps !== 1) fail(out, `the ${id} slide has ${snaps} .snap2 elements, expected exactly 1 — it is a two-step slide`);
+    }
+    if (sectionAt(html, 'id="faq"').includes('class="snap2"')) fail(out, 'the faq slide has a .snap2 — it is a single slide');
   }
 }
 
