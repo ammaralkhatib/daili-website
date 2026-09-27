@@ -1,7 +1,7 @@
 # Report — 006 two-step slides fixups
 
 Prompt: `claude-prompts/2026-09-27/006-two-step-slides-fixups.md`
-Commit: see `git log` — `fix(site): two-step slides settle complete, two-line titles, compare lead under title, looping showcase clip` (pushed)
+Commit: `0e2a7bd` — `fix(site): two-step slides settle complete, two-line titles, compare lead under title, looping showcase clip` (pushed)
 Status: **done**
 
 ## Build
