@@ -52,6 +52,194 @@
     "altHome": "Ekran główny Daili z kafelkami funkcji"
   },
 
+  "home": {
+    "nav": {
+      "features": "Funkcje",
+      "plus": "Daili Plus",
+      "screens": "Zegarek i widżety",
+      "privacy": "Prywatność",
+      "login": "Zaloguj się",
+      "cta": "Pobierz aplikację"
+    },
+    "qr": {
+      "t": "Pobierz daili gratis",
+      "s": "Zeskanuj aparatem w telefonie. iPhone i Android.",
+      "alt": "Kod QR, który otwiera daili.app"
+    },
+    "hero": {
+      "lead": "Jedno spokojne miejsce na tydzień waszej rodziny: kalendarz, listy, zadania, nawyki i notatki, które widzą wszyscy. Na każdym telefonie, na nadgarstku i w przeglądarce.",
+      "cta": "Pobierz za darmo",
+      "alt": "Ekran główny Daili na telefonie i Apple Watch z najbliższym wydarzeniem",
+      "cards": [
+        { "t": "Basen", "s": "Dziś · 16:30 · Noah" },
+        { "t": "Mleko · 2 l", "s": "Marco jest w sklepie" },
+        { "t": "Pieniądze na obiad", "s": "Przypięte na piątek" },
+        { "t": "Rozciąganie · 5 min", "s": "4 dni z rzędu" },
+        { "t": "Wynieść śmieci", "s": "Noah · wieczorem" },
+        { "t": "Curry z warzywami", "s": "Dziś na kolację" },
+        { "t": "Emma · prezent", "s": "Urodziny za 2 dni" }
+      ]
+    },
+    "watch": {
+      "upNext": "Następne",
+      "ev": "Basen",
+      "evs": "16:30 · Noah",
+      "list": "Zakupy · jeszcze 5"
+    },
+    "works": {
+      "label": "Działa z",
+      "items": ["iPhone", "Android", "Apple Watch", "Widżety na ekranie", "TRMNL", "Google Calendar", "Outlook", "Przeglądarka"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 języków", "s": "Od Deutsch po Türkçe" },
+        { "t": "Prosto z Tyrolu", "s": "Innsbruck, Austria" }
+      ],
+      "h2a": "Już ponad {count} użytkowników",
+      "h2b": "planuje razem codzienność",
+      "cards": [
+        { "cap": "Piątkowy obiad ogarnięty.", "t": "Na obiad w piątek", "s": "Przypięte · Rodzina" },
+        { "cap": "Sobotni targ z dziećmi", "t": "Kwiaty dla babci", "s": "Zakupy · 5 z 7" },
+        { "cap": "Dzień 12. Minzi jest dumna.", "t": "Czytanie 20 minut", "s": "12 dni z rzędu" },
+        { "cap": "Dziś kończy 12 lat!", "t": "Emma kończy 12 lat", "s": "Dziś · 3 życzenia na liście" },
+        { "cap": "Treningu nie odpuszczamy", "t": "Trening piłki nożnej", "s": "17:00 · Noah · co wtorek" },
+        { "cap": "Zakupy z pomocnikiem", "t": "Borówki", "s": "Dodała Lena · przed chwilą" },
+        { "cap": "Najpierw lekcje!", "t": "Sprawdzić lekcje", "s": "Mia · dziś" },
+        { "cap": "Nasza mała dżungla", "t": "Podlać kwiaty", "s": "Codziennie · z tatą" }
+      ],
+      "tiles": [
+        { "big": "0 €", "t": "Bez reklam, bez okresu próbnego, bez haczyka." },
+        { "t": "Minzi, wasza rodzinna kotka, kibicuje wam" }
+      ]
+    },
+    "day": {
+      "h2": "Zacznijcie dzień razem",
+      "sub": "Wszystko, co rodzina musi wiedzieć, tam, gdzie i tak zaglądacie.",
+      "cards": [
+        { "h3": "Kalendarz", "p": "Tydzień wszystkich w jednym spojrzeniu. Szkoła, basen i dentysta — każdy w swoim kolorze.", "t": "Basen", "s": "Wt. · 16:30 · Noah" },
+        { "h3": "Listy", "p": "Dopisz mleko w kuchni, odhacz je w sklepie. Wszyscy widzą to od razu.", "t": "Chleb", "s": "Marco odhaczył · przed chwilą" },
+        { "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34/40", "s": "Jeszcze 6 i Minzi rusza w podróż" }
+      ]
+    },
+    "dinner": {
+      "h3": "Obiad z głowy",
+      "p": "Zaplanuj posiłki na cały tydzień, trzymaj rodzinne przepisy w jednym miejscu i jednym dotknięciem wyślij składniki na listę zakupów.",
+      "chips": ["Jadłospis", "Przepisy", "Na listę zakupów"],
+      "t": "Tofu na słodko-kwaśno",
+      "s": "2 porcje · 13 składników",
+      "add": "Dodaj do Zakupów"
+    },
+    "calendars": {
+      "h3": "Połącz swoje kalendarze",
+      "p": "Dodaj Google, Outlook i kalendarz z telefonu. Włącz święta w swoim kraju. Wszystko widać obok planu rodziny.",
+      "t": "Google Calendar",
+      "s": "Połączono · 24 wydarzenia"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Więcej możliwości z",
+      "h2b": "Daili Intelligence",
+      "sub": "Sprytni pomocnicy, którzy zamieniają filmy, zdjęcia i pomysły w plany — a ty masz więcej czasu dla rodziny.",
+      "video": {
+        "h3": "Przepisy z dowolnego filmu",
+        "p": "Wklej link z YouTube. Daili zapisze za ciebie składniki i kolejne kroki.",
+        "hd": "Zaimportowano z filmu",
+        "title": "Curry z ciecierzycą",
+        "t": "12 składników · 6 kroków",
+        "s": "Zapisano w przepisach"
+      },
+      "letter": {
+        "h3": "Pstryk — i terminy w kalendarzu",
+        "p": "Zrób zdjęcie pisma ze szkoły. Daili znajdzie terminy i doda je do kalendarza.",
+        "hd": "Znaleziono 3 wydarzenia",
+        "rows": [
+          { "t": "Wycieczka szkolna", "s": "pt. 10.10 · 08:00" },
+          { "t": "Wywiadówka", "s": "wt. 14.10 · 18:30" },
+          { "t": "Zdjęcia klasowe", "s": "czw. 16.10" }
+        ],
+        "add": "Dodaj wszystkie 3"
+      },
+      "ideas": {
+        "h3": "Pomysły na obiady na cały tydzień",
+        "p": "Brak pomysłów? Dostaniesz propozycje obiadów na cały tydzień, a te, które ci się spodobają, dodasz do jadłospisu.",
+        "hd": "Propozycja na czwartek",
+        "title": "Lasagne z warzywami",
+        "t": "45 min · hit całej rodziny",
+        "s": "Dotknij, by dodać na czwartek",
+        "add": "Dodaj do jadłospisu"
+      },
+      "fine": "Funkcje Daili Plus korzystają z Google Gemini — i tylko wtedy, gdy ich używasz."
+    },
+    "flow": {
+      "h2": "Zobacz, jak to działa",
+      "sub": "Cztery zwyczajne chwile, od początku do końca.",
+      "items": [
+        { "t": "Zaplanuj tydzień", "d": "We wtorek Noah ma basen — dodaj go. Pojawi się na każdym telefonie w rodzinie, w jego kolorze." },
+        { "t": "Wspólne zakupy", "d": "Marco jest w sklepie i odhacza mleko. W domu widzisz to od razu — nic nie kupicie podwójnie." },
+        { "t": "Odhaczaj zadania", "d": "Noah kończy pranie i je odhacza. Cała rodzina widzi, co jeszcze zostało." },
+        { "t": "Trzymaj się nawyku", "d": "Pięć minut rozciągania, odhaczasz — a Minzi zbiera energię na kolejną podróż." }
+      ],
+      "toasts": [
+        { "t": "Dodano basen", "s": "Noah · wtorek 16:30" },
+        { "t": "Marco kupił mleko", "s": "Zakupy · 2 z 7" },
+        { "t": "Noah zrobił pranie", "s": "Dom · dziś jeszcze 1" },
+        { "t": "Rozciąganie zrobione", "s": "Energia rodziny +1" }
+      ],
+      "pill": "Basen 16:30"
+    },
+    "screens": {
+      "h2": "Na każdym ekranie w domu",
+      "sub": "Zerknij na nadgarstek, ekran główny albo ścianę w kuchni. Ten sam plan rodziny, wszędzie.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Co dalej i lista zakupów — prosto na nadgarstku."
+      },
+      "widgets": {
+        "h3": "Widżety",
+        "p": "Najbliższe wydarzenia, zakupy, zadania, nawyki, notatki i urodziny na ekranie głównym.",
+        "next": "Następne",
+        "swim": "Basen",
+        "habits": "Nawyki",
+        "done": "dziś gotowe",
+        "groceries": "Zakupy",
+        "items": ["Mleko", "Jajka", "Jabłka"]
+      },
+      "trmnl": {
+        "h3": "Na ścianie z TRMNL",
+        "p": "Pokaż tydzień rodziny na e-papierowym ekranie TRMNL w przedpokoju. Bez świecenia, bez hałasu.",
+        "days": [
+          { "d": "Pn", "ev": ["Pianino 15:00", "Dentysta"] },
+          { "d": "Wt", "ev": ["Basen 16:30", "Zebranie 18:30"] },
+          { "d": "Śr", "ev": ["Piłka 17:00"] },
+          { "d": "Czw", "ev": ["Wieczór filmowy"] }
+        ]
+      },
+      "web": {
+        "h3": "W przeglądarce",
+        "p": "Planuj tydzień na dużym ekranie w app.daili.app. Ta sama rodzina, te same plany.",
+        "alt": "Aplikacja webowa Daili z kalendarzem rodziny"
+      },
+      "phones": {
+        "h3": "I na każdym telefonie",
+        "p": "iPhone i Android, w 25 językach. Babcia ustawia Polski, a wnuki English? Żaden problem."
+      }
+    },
+    "privacy": {
+      "h2": "Prywatne z założenia",
+      "sub": "Plany twojej rodziny należą do twojej rodziny. To nie ustawienie, tylko sposób, w jaki zbudowano Daili.",
+      "chips": ["Bez reklam", "Bez śledzenia", "Nigdy nie sprzedajemy danych", "Serwery w UE", "Dokumenty i zdjęcia zostają na telefonie", "AI tylko wtedy, gdy chcesz"]
+    },
+    "care": {
+      "h2a": "Zrobione z troską,",
+      "h2b": "dla prawdziwego życia rodzinnego",
+      "sub": "Zaprojektowane i zbudowane w Tyrolu, w Austrii — na codzienny chaos zabieganych rodzin."
+    },
+    "final": {
+      "h2": "Zacznij, kiedy chcesz",
+      "sub": "Zacznij od jednej listy. Kalendarz dodasz, kiedy przyjdzie pora. Daili rośnie razem z rodziną."
+    }
+  },
+
   "showcase": {
     "pill": "Zsynchronizowane w sekundę — na każdym telefonie w rodzinie",
     "h2": "Jedna aplikacja dla całej rodziny",

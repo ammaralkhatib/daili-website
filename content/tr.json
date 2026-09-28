@@ -52,6 +52,194 @@
     "altHome": "Daili ana ekranı ve özellik kutucukları"
   },
 
+  "home": {
+    "nav": {
+      "features": "Özellikler",
+      "plus": "Daili Plus",
+      "screens": "Saat ve widget'lar",
+      "privacy": "Gizlilik",
+      "login": "Giriş yap",
+      "cta": "Uygulamayı indir"
+    },
+    "qr": {
+      "t": "daili'yi ücretsiz al",
+      "s": "Telefon kameranızla tarayın. iPhone ve Android.",
+      "alt": "daili.app'i açan QR kodu"
+    },
+    "hero": {
+      "lead": "Ailenizin haftası için sakin bir yer: takvim, listeler, görevler, alışkanlıklar ve notlar, herkesin gözü önünde. Her telefonda, bileğinizde ve tarayıcıda.",
+      "cta": "Ücretsiz indir",
+      "alt": "Telefonda Daili ana ekranı ve sıradaki etkinliği gösteren bir Apple Watch",
+      "cards": [
+        { "t": "Yüzme kursu", "s": "Bugün · 16.30 · Noah" },
+        { "t": "Süt · 2 l", "s": "Marco markette" },
+        { "t": "Yemek parası", "s": "Cuma için sabitlendi" },
+        { "t": "Esneme · 5 dk", "s": "4 günlük seri" },
+        { "t": "Çöpü çıkar", "s": "Noah · bu akşam" },
+        { "t": "Sebzeli köri", "s": "Bu akşamın yemeği" },
+        { "t": "Emma'ya hediye", "s": "Doğum günü 2 gün sonra" }
+      ]
+    },
+    "watch": {
+      "upNext": "Sıradaki",
+      "ev": "Yüzme kursu",
+      "evs": "16.30 · Noah",
+      "list": "Alışveriş · 5 kaldı"
+    },
+    "works": {
+      "label": "Şunlarla çalışır",
+      "items": ["iPhone", "Android", "Apple Watch", "Ana ekran widget'ları", "TRMNL", "Google Calendar", "Outlook", "Web tarayıcı"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 dil", "s": "Deutsch'tan Türkçe'ye" },
+        { "t": "Tirol yapımı", "s": "Innsbruck, Avusturya" }
+      ],
+      "h2a": "{count}+ üye",
+      "h2b": "hayatı birlikte planlıyor",
+      "cards": [
+        { "cap": "Cuma yemeği halloldu.", "t": "Cuma yemek parası", "s": "Sabitlendi · Aile" },
+        { "cap": "Cumartesi pazar turu", "t": "Babaanneye çiçek", "s": "Alışveriş · 7'de 5" },
+        { "cap": "12. gün. Minzi gururlu.", "t": "20 dakika kitap oku", "s": "12 günlük seri" },
+        { "cap": "Bugün 12 yaşında!", "t": "Emma 12 yaşına giriyor", "s": "Bugün · listesinde 3 dilek" },
+        { "cap": "Antrenman asla kaçmaz", "t": "Futbol antrenmanı", "s": "17.00 · Noah · her salı" },
+        { "cap": "Yedek kuvvetle alışveriş", "t": "Yaban mersini", "s": "Lena ekledi · az önce" },
+        { "cap": "Önce ödevler", "t": "Ödev kontrolü", "s": "Mia · bugün" },
+        { "cap": "Bizim küçük ormanımız", "t": "Çiçekleri sula", "s": "Her gün · babayla" }
+      ],
+      "tiles": [
+        { "big": "€0", "t": "Reklam yok, deneme yok, tuzak yok." },
+        { "t": "Ailenin kedisi Minzi sizi yüreklendiriyor" }
+      ]
+    },
+    "day": {
+      "h2": "Güne birlikte başlayın",
+      "sub": "Ailenizin bilmesi gereken her şey, zaten baktığınız yerlerde.",
+      "cards": [
+        { "h3": "Takvim", "p": "Herkesin haftası tek bakışta. Okul, yüzme ve dişçi; herkes kendi renginde.", "t": "Yüzme kursu", "s": "Sal · 16.30 · Noah" },
+        { "h3": "Listeler", "p": "Sütü mutfakta ekleyin, markette işaretleyin. Herkes anında görür.", "t": "Ekmek", "s": "Marco işaretledi · az önce" },
+        { "h3": "Alışkanlıklar", "p": "Küçük rutinler, hep birlikte. Her işaret ailenizin kedisi Minzi'ye daha fazla enerji verir.", "t": "Aile enerjisi · 34 / 40", "s": "6 daha ve Minzi geziye çıkıyor" }
+      ]
+    },
+    "dinner": {
+      "h3": "Akşam yemeği belli",
+      "p": "Haftanın yemeklerini planlayın, aile tariflerini saklayın ve malzemeleri tek dokunuşla alışveriş listesine gönderin.",
+      "chips": ["Yemek planı", "Tarif defteri", "Alışveriş listesine"],
+      "t": "Tatlı ekşi çıtır tofu",
+      "s": "2 porsiyon · 13 malzeme",
+      "add": "Alışverişe ekle"
+    },
+    "calendars": {
+      "h3": "Takvimlerinizi bağlayın",
+      "p": "Google, Outlook ve telefonunuzun takvimini getirin. Ülkenizin resmî tatillerini ekleyin. Hepsini aile planının yanında görün.",
+      "t": "Google Calendar",
+      "s": "Bağlı · 24 etkinlik eşitlendi"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Bir adım öteye:",
+      "h2b": "Daili Intelligence",
+      "sub": "Videoları, fotoğrafları ve fikirleri plana dönüştüren akıllı yardımcılar. Siz de ailenize vakit ayırın.",
+      "video": {
+        "h3": "Her videodan tarif",
+        "p": "Bir YouTube bağlantısı yapıştırın. Daili malzemeleri ve adımları sizin için yazar.",
+        "hd": "Videodan aktarıldı",
+        "title": "Çıtır nohut körisi",
+        "t": "12 malzeme · 6 adım",
+        "s": "Tarif defterine kaydedildi"
+      },
+      "letter": {
+        "h3": "Duyuruyu çekin, tarihler takvimde",
+        "p": "Okuldan gelen duyurunun fotoğrafını çekin. Daili tarihleri bulur ve takviminize ekler.",
+        "hd": "3 etkinlik bulundu",
+        "rows": [
+          { "t": "Okul gezisi", "s": "10 Eki Cum · 08.00" },
+          { "t": "Veli toplantısı", "s": "14 Eki Sal · 18.30" },
+          { "t": "Fotoğraf günü", "s": "16 Eki Per" }
+        ],
+        "add": "3'ünü de ekle"
+      },
+      "ideas": {
+        "h3": "Haftanız için akşam yemeği fikirleri",
+        "p": "Fikir mi kalmadı? Bütün hafta için akşam yemeği önerileri alın, beğendiklerinizi yemek planınıza ekleyin.",
+        "hd": "Perşembe için öneri",
+        "title": "Sebzeli lazanya",
+        "t": "45 dk · ailenin favorisi",
+        "s": "Dokun, perşembeye ekle",
+        "add": "Yemek planına ekle"
+      },
+      "fine": "Daili Plus özellikleri Google Gemini kullanır; o da yalnızca siz kullandığınızda."
+    },
+    "flow": {
+      "h2": "Nasıl çalıştığını görün",
+      "sub": "Dört gündelik an, baştan sona.",
+      "items": [
+        { "t": "Haftayı planlayın", "d": "Salı günü Noah için yüzmeyi ekleyin. Ailedeki her telefonda, onun renginde görünür." },
+        { "t": "Alışverişi paylaşın", "d": "Marco markette, sütü işaretliyor. Evde hemen görürsünüz; kimse iki kez süt almaz." },
+        { "t": "Görevleri işaretleyin", "d": "Noah çamaşırları bitirip işaretliyor. Bütün aile neyin kaldığını görüyor." },
+        { "t": "Alışkanlığı sürdürün", "d": "Beş dakika esneyin, işaretleyin ve Minzi'nin bir sonraki gezisi için enerji toplamasını izleyin." }
+      ],
+      "toasts": [
+        { "t": "Yüzme kursu eklendi", "s": "Noah · Salı 16.30" },
+        { "t": "Marco sütü aldı", "s": "Alışveriş · 7'de 2" },
+        { "t": "Noah çamaşırı bitirdi", "s": "Ev işleri · bugün 1 kaldı" },
+        { "t": "Esneme tamam", "s": "Aile enerjisi +1" }
+      ],
+      "pill": "Yüzme 16.30"
+    },
+    "screens": {
+      "h2": "Evinizdeki her ekranda",
+      "sub": "Bileğinize, ana ekranınıza ya da mutfak duvarına bir bakın. Aynı aile planı, her yerde.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Sıradaki etkinlik ve alışveriş listesi, tam bileğinizde."
+      },
+      "widgets": {
+        "h3": "Widget'lar",
+        "p": "Sıradakiler, alışveriş, görevler, alışkanlıklar, notlar ve doğum günleri ana ekranınızda.",
+        "next": "Sıradaki",
+        "swim": "Yüzme",
+        "habits": "Alışkanlık",
+        "done": "bugün bitti",
+        "groceries": "Alışveriş",
+        "items": ["Süt", "Yumurta", "Elma"]
+      },
+      "trmnl": {
+        "h3": "TRMNL ile duvarda",
+        "p": "Aile haftasını koridordaki bir TRMNL e-kâğıt ekranında gösterin. Parlama yok, gürültü yok.",
+        "days": [
+          { "d": "Pzt", "ev": ["Piyano 15.00", "Dişçi"] },
+          { "d": "Sal", "ev": ["Yüzme 16.30", "Veli 18.30"] },
+          { "d": "Çar", "ev": ["Futbol 17.00"] },
+          { "d": "Per", "ev": ["Film gecesi"] }
+        ]
+      },
+      "web": {
+        "h3": "Tarayıcınızda",
+        "p": "Haftayı app.daili.app adresinde, büyük ekranda planlayın. Aynı aile, aynı planlar.",
+        "alt": "Aile takvimini gösteren Daili web uygulaması"
+      },
+      "phones": {
+        "h3": "Ve her telefonda",
+        "p": "iPhone ve Android'de, 25 dilde. Babaanne Deutsch, çocuklar Türkçe mi konuşuyor? Hiç sorun değil."
+      }
+    },
+    "privacy": {
+      "h2": "Tasarımı gereği özel",
+      "sub": "Ailenizin planları ailenize aittir. Bu bir ayar değil; Daili böyle yapıldı.",
+      "chips": ["Reklam yok", "Takip yok", "Verilerinizi asla satmayız", "Sunucular AB'de", "Belgeler ve fotoğraflar telefonunuzda kalır", "Yapay zekâ yalnızca siz kullanınca"]
+    },
+    "care": {
+      "h2a": "Özenle yapıldı,",
+      "h2b": "gerçek aile hayatı için",
+      "sub": "Avusturya'nın Tirol bölgesinde, yoğun ailelerin gündelik koşturmacası için tasarlandı ve geliştirildi."
+    },
+    "final": {
+      "h2": "Siz hazır olduğunuzda",
+      "sub": "Tek bir listeyle başlayın. Hazır olunca takvimi ekleyin. Daili ailenizle birlikte büyür."
+    }
+  },
+
   "showcase": {
     "pill": "Bir saniyede eşitlendi — ailedeki her telefonda",
     "h2": "Bütün aile için tek uygulama",

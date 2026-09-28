@@ -52,6 +52,194 @@
     "altHome": "Écran d'accueil de Daili avec les tuiles des fonctions"
   },
 
+  "home": {
+    "nav": {
+      "features": "Fonctions",
+      "plus": "Daili Plus",
+      "screens": "Montre & widgets",
+      "privacy": "Confidentialité",
+      "login": "Connexion",
+      "cta": "Obtenir l'app"
+    },
+    "qr": {
+      "t": "daili, c'est gratuit",
+      "s": "Scannez avec l'appareil photo. iPhone et Android.",
+      "alt": "Code QR qui ouvre daili.app"
+    },
+    "hero": {
+      "lead": "Un endroit calme pour la semaine de votre famille : agenda, listes, tâches, habitudes et notes, visibles par tous. Sur chaque téléphone, au poignet et dans le navigateur.",
+      "cta": "Télécharger gratuitement",
+      "alt": "L'écran d'accueil de Daili sur un téléphone, avec une Apple Watch qui affiche le prochain événement",
+      "cards": [
+        { "t": "Cours de natation", "s": "Aujourd'hui · 16h30 · Noah" },
+        { "t": "Lait · 2 l", "s": "Marco est en magasin" },
+        { "t": "Argent de la cantine", "s": "Épinglé pour vendredi" },
+        { "t": "Étirements · 5 min", "s": "4 jours d'affilée" },
+        { "t": "Sortir les poubelles", "s": "Noah · ce soir" },
+        { "t": "Curry de légumes", "s": "Dîner de ce soir" },
+        { "t": "Cadeau pour Emma", "s": "Anniversaire dans 2 jours" }
+      ]
+    },
+    "watch": {
+      "upNext": "À suivre",
+      "ev": "Natation",
+      "evs": "16h30 · Noah",
+      "list": "Courses · reste 5"
+    },
+    "works": {
+      "label": "Fonctionne avec",
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets d'écran d'accueil", "TRMNL", "Google Calendar", "Outlook", "Navigateur web"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 langues", "s": "De Deutsch à Türkçe" },
+        { "t": "Conçu au Tyrol", "s": "Innsbruck, Autriche" }
+      ],
+      "h2a": "Déjà {count}+ membres",
+      "h2b": "organisent leur vie ensemble",
+      "cards": [
+        { "cap": "Cantine de vendredi : ok !", "t": "Cantine de vendredi", "s": "Épinglé · Famille" },
+        { "cap": "Marché du samedi matin", "t": "Fleurs pour Mamie", "s": "Courses · 5 sur 7" },
+        { "cap": "Jour 12. Minzi jubile.", "t": "Lire 20 minutes", "s": "12 jours d'affilée" },
+        { "cap": "12 ans aujourd'hui !", "t": "Emma fête ses 12 ans", "s": "Aujourd'hui · 3 idées cadeaux" },
+        { "cap": "Pas un entraînement raté", "t": "Entraînement de foot", "s": "17h00 · Noah · le mardi" },
+        { "cap": "Courses en équipe", "t": "Myrtilles", "s": "Ajouté par Lena · à l'instant" },
+        { "cap": "Les devoirs d'abord", "t": "Vérifier les devoirs", "s": "Mia · aujourd'hui" },
+        { "cap": "Notre petite jungle", "t": "Arroser les plantes", "s": "Tous les jours · avec Papa" }
+      ],
+      "tiles": [
+        { "big": "0 €", "t": "Sans pub, sans essai, sans piège." },
+        { "t": "Minzi, le chat de la famille, vous encourage" }
+      ]
+    },
+    "day": {
+      "h2": "Commencez la journée ensemble",
+      "sub": "Tout ce que votre famille doit savoir, là où vous regardez déjà.",
+      "cards": [
+        { "h3": "Agenda", "p": "La semaine de chacun en un coup d'œil. École, natation, dentiste : chacun a sa couleur.", "t": "Cours de natation", "s": "mar. · 16h30 · Noah" },
+        { "h3": "Listes", "p": "Ajoutez le lait dans la cuisine, cochez-le au magasin. Tout le monde le voit aussitôt.", "t": "Pain", "s": "Coché par Marco · à l'instant" },
+        { "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie · 34 / 40", "s": "Encore 6 et Minzi part en voyage" }
+      ]
+    },
+    "dinner": {
+      "h3": "Le dîner, c'est réglé",
+      "p": "Planifiez les menus de la semaine, gardez les recettes de famille et envoyez les ingrédients sur votre liste de courses en un geste.",
+      "chips": ["Menus de la semaine", "Carnet de recettes", "Vers la liste de courses"],
+      "t": "Tofu caramélisé aigre-doux",
+      "s": "2 portions · 13 ingrédients",
+      "add": "Ajouter aux Courses"
+    },
+    "calendars": {
+      "h3": "Connectez vos agendas",
+      "p": "Importez Google, Outlook et l'agenda de votre téléphone. Ajoutez les jours fériés de votre pays. Et voyez tout à côté du planning familial.",
+      "t": "Google Calendar",
+      "s": "Connecté · 24 événements"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Allez plus loin avec",
+      "h2b": "Daili Intelligence",
+      "sub": "Des assistants malins qui transforment vidéos, photos et idées en plans, pour vous laisser plus de temps en famille.",
+      "video": {
+        "h3": "Des recettes depuis n'importe quelle vidéo",
+        "p": "Collez un lien YouTube. Daili note pour vous les ingrédients et les étapes.",
+        "hd": "Importé d'une vidéo",
+        "title": "Curry aux pois chiches",
+        "t": "12 ingrédients · 6 étapes",
+        "s": "Enregistré dans vos recettes"
+      },
+      "letter": {
+        "h3": "Un courrier en photo, les dates dans l'agenda",
+        "p": "Prenez en photo le mot de l'école. Daili trouve les dates et les ajoute à votre agenda.",
+        "hd": "3 événements trouvés",
+        "rows": [
+          { "t": "Sortie scolaire", "s": "ven. 10 oct. · 08h00" },
+          { "t": "Réunion parents-profs", "s": "mar. 14 oct. · 18h30" },
+          { "t": "Photo de classe", "s": "jeu. 16 oct." }
+        ],
+        "add": "Ajouter les 3"
+      },
+      "ideas": {
+        "h3": "Des idées de dîner pour la semaine",
+        "p": "À court d'idées ? Recevez des suggestions de dîners pour toute la semaine, puis ajoutez celles qui vous plaisent à vos menus.",
+        "hd": "Suggéré pour jeudi",
+        "title": "Lasagnes aux légumes",
+        "t": "45 min · le préféré de tous",
+        "s": "Touchez pour l'ajouter jeudi",
+        "add": "Ajouter aux menus"
+      },
+      "fine": "Les fonctions Daili Plus utilisent Google Gemini, et uniquement quand vous vous en servez."
+    },
+    "flow": {
+      "h2": "Voyez-le en action",
+      "sub": "Quatre moments du quotidien, du début à la fin.",
+      "items": [
+        { "t": "Planifiez la semaine", "d": "Ajoutez la natation de Noah le mardi. Elle apparaît sur chaque téléphone de la famille, dans sa couleur." },
+        { "t": "Partagez les courses", "d": "Marco est au magasin et coche le lait. À la maison, vous le voyez aussitôt : pas d'achat en double." },
+        { "t": "Cochez les tâches", "d": "Noah termine la lessive et la coche. Toute la famille voit ce qui reste à faire." },
+        { "t": "Tenez une habitude", "d": "Cinq minutes d'étirements, une coche, et Minzi gagne de l'énergie pour son prochain voyage." }
+      ],
+      "toasts": [
+        { "t": "Natation ajoutée", "s": "Noah · mardi 16h30" },
+        { "t": "Marco a pris le lait", "s": "Courses · 2 sur 7" },
+        { "t": "Noah a fait la lessive", "s": "Maison · encore 1 à faire" },
+        { "t": "Étirements faits", "s": "Énergie familiale +1" }
+      ],
+      "pill": "Nage 16h30"
+    },
+    "screens": {
+      "h2": "Sur chaque écran de la maison",
+      "sub": "Un coup d'œil au poignet, à l'écran d'accueil ou au mur de la cuisine. Le même planning familial, partout.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Le prochain rendez-vous et la liste de courses, directement au poignet."
+      },
+      "widgets": {
+        "h3": "Widgets",
+        "p": "Prochain rendez-vous, courses, tâches, habitudes, notes et anniversaires sur votre écran d'accueil.",
+        "next": "À suivre",
+        "swim": "Nage",
+        "habits": "Habitudes",
+        "done": "faites ce jour",
+        "groceries": "Courses",
+        "items": ["Lait", "Œufs", "Pommes"]
+      },
+      "trmnl": {
+        "h3": "Au mur avec TRMNL",
+        "p": "Affichez la semaine de la famille sur un écran e-paper TRMNL dans l'entrée. Sans lumière, sans bruit.",
+        "days": [
+          { "d": "Lun", "ev": ["Piano 15h00", "Dentiste"] },
+          { "d": "Mar", "ev": ["Nage 16h30", "Réunion 18h30"] },
+          { "d": "Mer", "ev": ["Foot 17h00"] },
+          { "d": "Jeu", "ev": ["Soirée ciné"] }
+        ]
+      },
+      "web": {
+        "h3": "Dans votre navigateur",
+        "p": "Planifiez la semaine sur grand écran avec app.daili.app. La même famille, les mêmes plans.",
+        "alt": "L'app web Daili affichant un agenda familial"
+      },
+      "phones": {
+        "h3": "Et sur chaque téléphone",
+        "p": "iPhone et Android, en 25 langues. Mamie parle Português, les enfants français ? Aucun souci."
+      }
+    },
+    "privacy": {
+      "h2": "Privé par conception",
+      "sub": "Les plans de votre famille appartiennent à votre famille. Ce n'est pas un réglage, c'est ainsi que Daili est conçu.",
+      "chips": ["Sans publicité", "Sans pistage", "Vos données ne sont jamais vendues", "Serveurs dans l'UE", "Documents et photos restent sur votre téléphone", "IA seulement si vous l'utilisez"]
+    },
+    "care": {
+      "h2a": "Fait avec soin,",
+      "h2b": "pour la vraie vie de famille",
+      "sub": "Conçu et développé au Tyrol, en Autriche, pour le chaos quotidien des familles bien occupées."
+    },
+    "final": {
+      "h2": "Prêt quand vous l'êtes",
+      "sub": "Commencez par une liste. Ajoutez l'agenda quand vous voulez. Daili grandit avec votre famille."
+    }
+  },
+
   "showcase": {
     "pill": "Synchro en une seconde — sur tous les téléphones de la famille",
     "h2": "Une seule app pour toute la famille",

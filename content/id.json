@@ -52,6 +52,194 @@
     "altHome": "Layar utama Daili dengan kotak-kotak fitur"
   },
 
+  "home": {
+    "nav": {
+      "features": "Fitur",
+      "plus": "Daili Plus",
+      "screens": "Jam & widget",
+      "privacy": "Privasi",
+      "login": "Masuk",
+      "cta": "Unduh aplikasinya"
+    },
+    "qr": {
+      "t": "Unduh daili gratis",
+      "s": "Pindai dengan kamera ponselmu. iPhone & Android.",
+      "alt": "Kode QR untuk membuka daili.app"
+    },
+    "hero": {
+      "lead": "Satu tempat yang tenang untuk sepekan keluargamu: kalender, daftar, tugas, kebiasaan, dan catatan untuk semua. Di setiap ponsel, di pergelangan tangan, dan di browser.",
+      "cta": "Unduh gratis",
+      "alt": "Layar beranda Daili di ponsel, dengan Apple Watch yang menampilkan acara berikutnya",
+      "cards": [
+        { "t": "Les renang", "s": "Hari ini · 16.30 · Noah" },
+        { "t": "Susu · 2 l", "s": "Marco sedang di toko" },
+        { "t": "Uang jajan", "s": "Disematkan untuk Jumat" },
+        { "t": "Peregangan · 5 mnt", "s": "4 hari berturut-turut" },
+        { "t": "Buang sampah", "s": "Noah · malam ini" },
+        { "t": "Kari sayur", "s": "Makan malam hari ini" },
+        { "t": "Kado untuk Emma", "s": "Ulang tahun 2 hari lagi" }
+      ]
+    },
+    "watch": {
+      "upNext": "Berikutnya",
+      "ev": "Les renang",
+      "evs": "16.30 · Noah",
+      "list": "Belanja · sisa 5"
+    },
+    "works": {
+      "label": "Bisa dipakai di",
+      "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "Browser web"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 bahasa", "s": "Dari Deutsch ke Türkçe" },
+        { "t": "Buatan Tirol", "s": "Innsbruck, Austria" }
+      ],
+      "h2a": "Sudah {count}+ anggota",
+      "h2b": "merencanakan hari bersama",
+      "cards": [
+        { "cap": "Bekal Jumat, beres.", "t": "Uang jajan hari Jumat", "s": "Disematkan · Keluarga" },
+        { "cap": "Ke pasar tiap Sabtu", "t": "Bunga untuk Oma", "s": "Belanja · 5 dari 7" },
+        { "cap": "Hari ke-12. Minzi bangga.", "t": "Baca 20 menit", "s": "12 hari berturut-turut" },
+        { "cap": "Hari ini dia 12 tahun!", "t": "Emma genap 12 tahun", "s": "Hari ini · 3 keinginan" },
+        { "cap": "Nggak pernah bolos latihan", "t": "Latihan sepak bola", "s": "17.00 · Noah · tiap Selasa" },
+        { "cap": "Belanja bawa bala bantuan", "t": "Blueberry", "s": "Ditambah Lena · baru saja" },
+        { "cap": "PR dulu, baru main", "t": "Cek PR", "s": "Mia · hari ini" },
+        { "cap": "Hutan kecil kami", "t": "Siram tanaman", "s": "Tiap hari · bareng Papa" }
+      ],
+      "tiles": [
+        { "big": "€0", "t": "Tanpa iklan, tanpa masa coba, tanpa jebakan." },
+        { "t": "Minzi, kucing keluarga, menyemangatimu" }
+      ]
+    },
+    "day": {
+      "h2": "Mulai hari bersama",
+      "sub": "Semua yang perlu diketahui keluargamu, di tempat yang memang sudah kamu lihat.",
+      "cards": [
+        { "h3": "Kalender", "p": "Sepekan semua orang dalam sekali lihat. Sekolah, renang, dan dokter gigi, masing-masing dengan warnanya sendiri.", "t": "Les renang", "s": "Sel · 16.30 · Noah" },
+        { "h3": "Daftar", "p": "Tambahkan susu di dapur, centang di toko. Semua langsung melihatnya.", "t": "Roti", "s": "Dicentang Marco · baru saja" },
+        { "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi · 34 / 40", "s": "6 lagi, Minzi pergi jalan-jalan" }
+      ]
+    },
+    "dinner": {
+      "h3": "Makan malam, beres",
+      "p": "Rencanakan menu sepekan, simpan resep keluarga, dan kirim bahan-bahannya ke daftar belanja dengan sekali ketuk.",
+      "chips": ["Rencana makan", "Kumpulan resep", "Ke daftar belanja"],
+      "t": "Tahu crispy asam manis",
+      "s": "2 porsi · 13 bahan",
+      "add": "Tambah ke Belanja"
+    },
+    "calendars": {
+      "h3": "Hubungkan kalendermu",
+      "p": "Bawa kalender Google, Outlook, dan kalender ponselmu. Tambahkan hari libur nasional negaramu. Lihat semuanya di samping rencana keluarga.",
+      "t": "Google Calendar",
+      "s": "Terhubung · 24 acara tersinkron"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Lebih jauh dengan",
+      "h2b": "Daili Intelligence",
+      "sub": "Asisten pintar yang mengubah video, foto, dan ide jadi rencana, supaya kamu bisa kembali fokus ke keluarga.",
+      "video": {
+        "h3": "Resep dari video apa pun",
+        "p": "Tempel tautan YouTube. Daili mencatat bahan dan langkah-langkahnya untukmu.",
+        "hd": "Diimpor dari video",
+        "title": "Kari kacang arab renyah",
+        "t": "12 bahan · 6 langkah",
+        "s": "Tersimpan di kumpulan resep"
+      },
+      "letter": {
+        "h3": "Foto suratnya, tanggalnya beres",
+        "p": "Foto surat dari sekolah. Daili menemukan tanggal-tanggalnya dan menambahkannya ke kalendermu.",
+        "hd": "3 acara ditemukan",
+        "rows": [
+          { "t": "Karyawisata sekolah", "s": "Jum, 10 Okt · 08.00" },
+          { "t": "Pertemuan orang tua", "s": "Sel, 14 Okt · 18.30" },
+          { "t": "Hari foto", "s": "Kam, 16 Okt" }
+        ],
+        "add": "Tambah ketiganya"
+      },
+      "ideas": {
+        "h3": "Ide makan malam sepekan",
+        "p": "Kehabisan ide? Dapatkan saran makan malam untuk sepekan penuh, lalu tambahkan yang kamu suka ke rencana makan.",
+        "hd": "Saran untuk Kamis",
+        "title": "Lasagna sayur",
+        "t": "45 mnt · favorit keluarga",
+        "s": "Ketuk untuk hari Kamis",
+        "add": "Tambah ke rencana makan"
+      },
+      "fine": "Fitur Daili Plus memakai Google Gemini, dan hanya saat kamu menggunakannya."
+    },
+    "flow": {
+      "h2": "Lihat cara kerjanya",
+      "sub": "Empat momen sehari-hari, dari awal sampai akhir.",
+      "items": [
+        { "t": "Rencanakan sepekan", "d": "Tambahkan renang untuk Noah hari Selasa. Langsung muncul di semua ponsel keluarga, dengan warnanya." },
+        { "t": "Berbagi belanjaan", "d": "Marco sedang di toko dan mencentang susu. Di rumah kamu langsung melihatnya, tidak ada yang beli dobel." },
+        { "t": "Centang tugas", "d": "Noah selesai mencuci baju dan mencentangnya. Seluruh keluarga melihat apa yang masih tersisa." },
+        { "t": "Jaga kebiasaan", "d": "Peregangan lima menit, centang, dan lihat Minzi mendapat energi untuk perjalanan berikutnya." }
+      ],
+      "toasts": [
+        { "t": "Les renang ditambahkan", "s": "Noah · Selasa 16.30" },
+        { "t": "Marco sudah beli susu", "s": "Belanja · 2 dari 7" },
+        { "t": "Noah selesai mencuci", "s": "Rumah · sisa 1 hari ini" },
+        { "t": "Peregangan selesai", "s": "Energi keluarga +1" }
+      ],
+      "pill": "Renang 16.30"
+    },
+    "screens": {
+      "h2": "Di setiap layar di rumahmu",
+      "sub": "Lirik pergelangan tanganmu, layar utama, atau dinding dapur. Rencana keluarga yang sama, di mana saja.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Acara berikutnya dan daftar belanja, langsung di pergelangan tanganmu."
+      },
+      "widgets": {
+        "h3": "Widget",
+        "p": "Acara berikutnya, belanja, tugas, kebiasaan, catatan, dan ulang tahun di layar utamamu.",
+        "next": "Berikutnya",
+        "swim": "Renang",
+        "habits": "Kebiasaan",
+        "done": "selesai hari ini",
+        "groceries": "Belanja",
+        "items": ["Susu", "Telur", "Apel"]
+      },
+      "trmnl": {
+        "h3": "Di dinding dengan TRMNL",
+        "p": "Tampilkan sepekan keluarga di layar e-paper TRMNL di lorong. Tanpa silau, tanpa bising.",
+        "days": [
+          { "d": "Sen", "ev": ["Piano 15.00", "Dokter gigi"] },
+          { "d": "Sel", "ev": ["Renang 16.30", "Rapat 18.30"] },
+          { "d": "Rab", "ev": ["Bola 17.00"] },
+          { "d": "Kam", "ev": ["Nonton film"] }
+        ]
+      },
+      "web": {
+        "h3": "Di browsermu",
+        "p": "Rencanakan sepekan di layar besar lewat app.daili.app. Keluarga yang sama, rencana yang sama.",
+        "alt": "Aplikasi web Daili yang menampilkan kalender keluarga"
+      },
+      "phones": {
+        "h3": "Dan di setiap ponsel",
+        "p": "iPhone dan Android, dalam 25 bahasa. Oma bicara Nederlands, anak-anak Bahasa Indonesia? Tidak masalah."
+      }
+    },
+    "privacy": {
+      "h2": "Privat sejak awal",
+      "sub": "Rencana keluargamu milik keluargamu. Itu bukan pengaturan, memang begitulah Daili dibuat.",
+      "chips": ["Tanpa iklan", "Tanpa pelacakan", "Datamu tak pernah kami jual", "Server di Uni Eropa", "Dokumen & foto tetap di ponselmu", "AI hanya saat kamu memakainya"]
+    },
+    "care": {
+      "h2a": "Dibuat dengan sepenuh hati,",
+      "h2b": "untuk kehidupan keluarga yang nyata",
+      "sub": "Dirancang dan dibuat di Tirol, Austria, untuk riuhnya keseharian keluarga yang sibuk."
+    },
+    "final": {
+      "h2": "Siap kapan pun kamu siap",
+      "sub": "Mulai dengan satu daftar. Tambahkan kalender saat kamu siap. Daili tumbuh bersama keluargamu."
+    }
+  },
+
   "showcase": {
     "pill": "Tersinkron sekitar sedetik — di semua ponsel keluarga",
     "h2": "Satu aplikasi untuk seluruh keluarga",

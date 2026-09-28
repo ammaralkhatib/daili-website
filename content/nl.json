@@ -52,6 +52,194 @@
     "altHome": "Beginscherm van Daili met de tegels van de functies"
   },
 
+  "home": {
+    "nav": {
+      "features": "Functies",
+      "plus": "Daili Plus",
+      "screens": "Horloge & widgets",
+      "privacy": "Privacy",
+      "login": "Inloggen",
+      "cta": "Download de app"
+    },
+    "qr": {
+      "t": "daili gratis halen",
+      "s": "Scan met de camera van je telefoon. iPhone & Android.",
+      "alt": "QR-code die daili.app opent"
+    },
+    "hero": {
+      "lead": "Eén rustige plek voor de week van je gezin: agenda, lijsten, taken, gewoontes en notities die iedereen ziet. Op elke telefoon, om je pols en in de browser.",
+      "cta": "Gratis downloaden",
+      "alt": "Het beginscherm van Daili op een telefoon, met een Apple Watch die de volgende afspraak toont",
+      "cards": [
+        { "t": "Zwemles", "s": "Vandaag · 16:30 · Noah" },
+        { "t": "Melk · 2 l", "s": "Marco is in de winkel" },
+        { "t": "Overblijfgeld", "s": "Vastgepind voor vrijdag" },
+        { "t": "Rekken · 5 min", "s": "4 dagen op rij" },
+        { "t": "Vuilnis buitenzetten", "s": "Noah · vanavond" },
+        { "t": "Groentecurry", "s": "Vanavond op tafel" },
+        { "t": "Cadeau voor Emma", "s": "Over 2 dagen jarig" }
+      ]
+    },
+    "watch": {
+      "upNext": "Hierna",
+      "ev": "Zwemles",
+      "evs": "16:30 · Noah",
+      "list": "Boodschappen · nog 5"
+    },
+    "works": {
+      "label": "Werkt met",
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets op je beginscherm", "TRMNL", "Google Calendar", "Outlook", "Webbrowser"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 talen", "s": "Van Deutsch tot Türkçe" },
+        { "t": "Uit Tirol", "s": "Innsbruck, Oostenrijk" }
+      ],
+      "h2a": "Al {count}+ leden",
+      "h2b": "plannen samen hun leven",
+      "cards": [
+        { "cap": "Vrijdaglunch: geregeld.", "t": "Overblijfgeld vrijdag", "s": "Vastgepind · Gezin" },
+        { "cap": "Zaterdag naar de markt", "t": "Bloemen voor oma", "s": "Boodschappen · 5 van 7" },
+        { "cap": "Dag 12. Minzi is trots.", "t": "20 minuten lezen", "s": "12 dagen op rij" },
+        { "cap": "Vandaag wordt ze 12!", "t": "Emma wordt 12", "s": "Vandaag · 3 wensen genoteerd" },
+        { "cap": "Nooit meer training missen", "t": "Voetbaltraining", "s": "17:00 · Noah · elke di" },
+        { "cap": "Boodschappen met hulptroepen", "t": "Blauwe bessen", "s": "Door Lena · zojuist" },
+        { "cap": "Eerst huiswerk", "t": "Huiswerk nakijken", "s": "Mia · vandaag" },
+        { "cap": "Onze kleine jungle", "t": "Planten water geven", "s": "Elke dag · met papa" }
+      ],
+      "tiles": [
+        { "big": "€ 0", "t": "Geen reclame, geen proefperiode, geen addertje." },
+        { "t": "Minzi, de gezinskat, moedigt jullie aan" }
+      ]
+    },
+    "day": {
+      "h2": "Samen de dag beginnen",
+      "sub": "Alles wat je gezin moet weten, op de plekken waar je toch al kijkt.",
+      "cards": [
+        { "h3": "Agenda", "p": "Ieders week in één oogopslag. School, zwemmen en de tandarts, iedereen in een eigen kleur.", "t": "Zwemles", "s": "Di · 16:30 · Noah" },
+        { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
+        { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34/40", "s": "Nog 6 en Minzi gaat op reis" }
+      ]
+    },
+    "dinner": {
+      "h3": "Avondeten, geregeld",
+      "p": "Plan de maaltijden van de week, bewaar de familierecepten en zet de ingrediënten met één tik op je boodschappenlijst.",
+      "chips": ["Menuplanner", "Receptenboek", "Naar de boodschappenlijst"],
+      "t": "Zoetzure sticky tofu",
+      "s": "2 porties · 13 ingrediënten",
+      "add": "Naar Boodschappen"
+    },
+    "calendars": {
+      "h3": "Koppel je agenda's",
+      "p": "Haal Google, Outlook en de agenda van je telefoon erbij. Voeg de feestdagen van je land toe. En zie alles naast de gezinsplanning.",
+      "t": "Google Calendar",
+      "s": "Gekoppeld · 24 afspraken gesynct"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Een stap verder met",
+      "h2b": "Daili Intelligence",
+      "sub": "Slimme hulpjes die van video's, foto's en ideeën plannen maken, zodat jij weer tijd hebt voor je gezin.",
+      "video": {
+        "h3": "Recepten uit elke video",
+        "p": "Plak een YouTube-link. Daili schrijft de ingrediënten en de stappen voor je op.",
+        "hd": "Uit video geïmporteerd",
+        "title": "Krokante kikkererwtencurry",
+        "t": "12 ingrediënten · 6 stappen",
+        "s": "Bewaard in je receptenboek"
+      },
+      "letter": {
+        "h3": "Foto van de brief, data in je agenda",
+        "p": "Maak een foto van de brief van school. Daili vindt de data en zet ze in je agenda.",
+        "hd": "3 afspraken gevonden",
+        "rows": [
+          { "t": "Schoolreisje", "s": "vr 10 okt · 08:00" },
+          { "t": "Ouderavond", "s": "di 14 okt · 18:30" },
+          { "t": "Schoolfotograaf", "s": "do 16 okt" }
+        ],
+        "add": "Alle 3 toevoegen"
+      },
+      "ideas": {
+        "h3": "Ideeën voor het avondeten",
+        "p": "Geen inspiratie meer? Krijg voorstellen voor het avondeten van de hele week en zet wat je lekker vindt op je menu.",
+        "hd": "Voorstel voor donderdag",
+        "title": "Groentelasagne",
+        "t": "45 min · gezinsfavoriet",
+        "s": "Tik om op donderdag te zetten",
+        "add": "Op het menu zetten"
+      },
+      "fine": "Functies van Daili Plus gebruiken Google Gemini, en alleen als jij ze gebruikt."
+    },
+    "flow": {
+      "h2": "Zo werkt het",
+      "sub": "Vier alledaagse momenten, van begin tot eind.",
+      "items": [
+        { "t": "Plan de week", "d": "Zet zwemmen voor Noah op dinsdag. Het verschijnt op elke telefoon in het gezin, in zijn kleur." },
+        { "t": "Deel de boodschappen", "d": "Marco is in de winkel en vinkt de melk af. Thuis zie je het meteen, niets wordt dubbel gekocht." },
+        { "t": "Vink taken af", "d": "Noah is klaar met de was en vinkt het af. Het hele gezin ziet wat er nog openstaat." },
+        { "t": "Houd een gewoonte vol", "d": "Vijf minuten rekken, afvinken en zien hoe Minzi meer energie krijgt voor haar volgende reis." }
+      ],
+      "toasts": [
+        { "t": "Zwemles toegevoegd", "s": "Noah · dinsdag 16:30" },
+        { "t": "Marco heeft de melk", "s": "Boodschappen · 2 van 7" },
+        { "t": "Noah deed de was", "s": "Huishouden · nog 1 vandaag" },
+        { "t": "Rekken gedaan", "s": "Gezinsenergie +1" }
+      ],
+      "pill": "Zwem 16:30"
+    },
+    "screens": {
+      "h2": "Op elk scherm in huis",
+      "sub": "Een blik op je pols, je beginscherm of de keukenmuur. Dezelfde gezinsplanning, overal.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Wat er straks is en de boodschappenlijst, gewoon om je pols."
+      },
+      "widgets": {
+        "h3": "Widgets",
+        "p": "Wat er straks is, boodschappen, taken, gewoontes, notities en verjaardagen op je beginscherm.",
+        "next": "Hierna",
+        "swim": "Zwemmen",
+        "habits": "Gewoontes",
+        "done": "vandaag klaar",
+        "groceries": "Boodschappen",
+        "items": ["Melk", "Eieren", "Appels"]
+      },
+      "trmnl": {
+        "h3": "Aan de muur met TRMNL",
+        "p": "Toon de gezinsweek op een TRMNL-scherm van e-paper in de gang. Geen licht, geen herrie.",
+        "days": [
+          { "d": "ma", "ev": ["Piano 15:00", "Tandarts"] },
+          { "d": "di", "ev": ["Zwemmen 16:30", "Ouders 18:30"] },
+          { "d": "wo", "ev": ["Voetbal 17:00"] },
+          { "d": "do", "ev": ["Filmavond"] }
+        ]
+      },
+      "web": {
+        "h3": "In je browser",
+        "p": "Plan de week op een groot scherm via app.daili.app. Hetzelfde gezin, dezelfde plannen.",
+        "alt": "De webapp van Daili met een gezinsagenda"
+      },
+      "phones": {
+        "h3": "En op elke telefoon",
+        "p": "iPhone en Android, in 25 talen. Oma spreekt Türkçe, de kinderen Nederlands? Geen probleem."
+      }
+    },
+    "privacy": {
+      "h2": "Privé van opzet",
+      "sub": "De plannen van je gezin zijn van je gezin. Dat is geen instelling, zo is Daili gebouwd.",
+      "chips": ["Geen reclame", "Geen tracking", "We verkopen nooit je gegevens", "Servers in de EU", "Documenten & foto's blijven op je telefoon", "AI alleen als jij het gebruikt"]
+    },
+    "care": {
+      "h2a": "Met zorg gemaakt,",
+      "h2b": "voor het echte gezinsleven",
+      "sub": "Ontworpen en gebouwd in Tirol, Oostenrijk, voor de dagelijkse chaos van drukke gezinnen."
+    },
+    "final": {
+      "h2": "Klaar als jij het bent",
+      "sub": "Begin met één lijst. Neem de agenda erbij als je zover bent. Daili groeit mee met je gezin."
+    }
+  },
+
   "showcase": {
     "pill": "In een seconde gesynct — op elke telefoon in het gezin",
     "h2": "Eén app voor het hele gezin",

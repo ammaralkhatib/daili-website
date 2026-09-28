@@ -52,6 +52,194 @@
     "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
   },
 
+  "home": {
+    "nav": {
+      "features": "Funkce",
+      "plus": "Daili Plus",
+      "screens": "Hodinky a widgety",
+      "privacy": "Soukromí",
+      "login": "Přihlásit se",
+      "cta": "Stáhnout aplikaci"
+    },
+    "qr": {
+      "t": "Stáhněte si daili",
+      "s": "Naskenujte fotoaparátem. Zdarma pro iPhone i Android.",
+      "alt": "QR kód, který otevře daili.app"
+    },
+    "hero": {
+      "lead": "Jedno klidné místo pro týden vaší rodiny: kalendář, seznamy, úkoly, návyky a poznámky, které vidí všichni. Na každém telefonu, na zápěstí i v prohlížeči.",
+      "cta": "Stáhnout zdarma",
+      "alt": "Úvodní obrazovka Daili na telefonu a Apple Watch s další událostí",
+      "cards": [
+        { "t": "Plavání", "s": "Dnes · 16:30 · Noah" },
+        { "t": "Mléko · 2 l", "s": "Marco je v obchodě" },
+        { "t": "Peníze na obědy", "s": "Připnuto na pátek" },
+        { "t": "Protažení · 5 min", "s": "4 dny v řadě" },
+        { "t": "Vynést koš", "s": "Noah · dnes večer" },
+        { "t": "Zeleninové kari", "s": "Dnes k večeři" },
+        { "t": "Emma · dárek", "s": "Narozeniny za 2 dny" }
+      ]
+    },
+    "watch": {
+      "upNext": "Následuje",
+      "ev": "Plavání",
+      "evs": "16:30 · Noah",
+      "list": "Nákupy · zbývá 5"
+    },
+    "works": {
+      "label": "Funguje s",
+      "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploše", "TRMNL", "Google Calendar", "Outlook", "Webový prohlížeč"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 jazyků", "s": "Od Deutsch po Türkçe" },
+        { "t": "Z Tyrolska", "s": "Innsbruck, Rakousko" }
+      ],
+      "h2a": "Už přes {count} uživatelů",
+      "h2b": "plánuje život společně",
+      "cards": [
+        { "cap": "Páteční oběd vyřešen.", "t": "Peníze na oběd v pátek", "s": "Připnuto · Rodina" },
+        { "cap": "Sobotní trh s dětmi", "t": "Kytky pro babičku", "s": "Nákupy · 5 ze 7" },
+        { "cap": "Den 12. Minzi je pyšná.", "t": "Číst 20 minut", "s": "12 dní v řadě" },
+        { "cap": "Dneska je jí 12!", "t": "Emma slaví 12", "s": "Dnes · 3 přání na seznamu" },
+        { "cap": "Trénink nevynecháme", "t": "Trénink fotbalu", "s": "17:00 · Noah · každé út" },
+        { "cap": "Nákup s posilou", "t": "Borůvky", "s": "Přidala Lena · právě teď" },
+        { "cap": "Nejdřív úkoly!", "t": "Zkontrolovat úkoly", "s": "Mia · dnes" },
+        { "cap": "Naše malá džungle", "t": "Zalít kytky", "s": "Každý den · s tátou" }
+      ],
+      "tiles": [
+        { "big": "0 €", "t": "Bez reklam, bez zkušební doby, bez háčku." },
+        { "t": "Minzi, rodinná kočka, vám fandí" }
+      ]
+    },
+    "day": {
+      "h2": "Začněte den společně",
+      "sub": "Všechno, co vaše rodina potřebuje vědět, tam, kam se stejně díváte.",
+      "cards": [
+        { "h3": "Kalendář", "p": "Týden všech na jeden pohled. Škola, plavání i zubař — každý ve své barvě.", "t": "Plavání", "s": "Út · 16:30 · Noah" },
+        { "h3": "Seznamy", "p": "Mléko přidáte v kuchyni, odškrtnete v obchodě. Všichni to hned vidí.", "t": "Chleba", "s": "Odškrtl Marco · právě teď" },
+        { "h3": "Návyky", "p": "Malé zvyky, plněné společně. Každé zaškrtnutí dodá Minzi, vaší rodinné kočce, víc energie.", "t": "Energie rodiny · 34/40", "s": "Ještě 6 a Minzi jede na výlet" }
+      ]
+    },
+    "dinner": {
+      "h3": "Večeře vyřešena",
+      "p": "Naplánujte jídla na celý týden, mějte rodinné recepty pohromadě a suroviny pošlete jedním klepnutím do nákupního seznamu.",
+      "chips": ["Jídelníček", "Recepty", "Do nákupního seznamu"],
+      "t": "Sladkokyselé tofu",
+      "s": "2 porce · 13 surovin",
+      "add": "Přidat do Nákupů"
+    },
+    "calendars": {
+      "h3": "Propojte své kalendáře",
+      "p": "Přidejte Google, Outlook i kalendář z telefonu. Zapněte státní svátky své země. Všechno uvidíte vedle rodinného plánu.",
+      "t": "Google Calendar",
+      "s": "Propojeno · 24 událostí"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Víc možností s",
+      "h2b": "Daili Intelligence",
+      "sub": "Chytří pomocníci, kteří z videí, fotek a nápadů udělají plány — a vy máte víc času na rodinu.",
+      "video": {
+        "h3": "Recepty z jakéhokoli videa",
+        "p": "Vložte odkaz na YouTube. Daili za vás sepíše suroviny i postup.",
+        "hd": "Importováno z videa",
+        "title": "Křupavé cizrnové kari",
+        "t": "12 surovin · 6 kroků",
+        "s": "Uloženo do receptů"
+      },
+      "letter": {
+        "h3": "Vyfoťte dopis, termíny máte",
+        "p": "Vyfoťte dopis ze školy. Daili najde termíny a přidá je do kalendáře.",
+        "hd": "Nalezeny 3 události",
+        "rows": [
+          { "t": "Školní výlet", "s": "pá 10. 10. · 8:00" },
+          { "t": "Třídní schůzky", "s": "út 14. 10. · 18:30" },
+          { "t": "Focení tříd", "s": "čt 16. 10." }
+        ],
+        "add": "Přidat všechny 3"
+      },
+      "ideas": {
+        "h3": "Nápady na večeře na celý týden",
+        "p": "Došly vám nápady? Nechte si navrhnout večeře na celý týden a ty, které se vám líbí, přidejte do jídelníčku.",
+        "hd": "Návrh na čtvrtek",
+        "title": "Zeleninové lasagne",
+        "t": "45 min · rodinná klasika",
+        "s": "Klepněte a přidejte na čtvrtek",
+        "add": "Přidat do jídelníčku"
+      },
+      "fine": "Funkce Daili Plus využívají Google Gemini — a jen tehdy, když je použijete."
+    },
+    "flow": {
+      "h2": "Podívejte se, jak to funguje",
+      "sub": "Čtyři všední chvíle od začátku do konce.",
+      "items": [
+        { "t": "Naplánujte týden", "d": "V úterý má Noah plavání — přidejte ho. Objeví se na všech telefonech v rodině, v jeho barvě." },
+        { "t": "Nakupujte společně", "d": "Marco je v obchodě a odškrtne mléko. Doma to hned vidíte — nic nekoupíte dvakrát." },
+        { "t": "Odškrtávejte úkoly", "d": "Noah dokončí prádlo a odškrtne ho. Celá rodina vidí, co ještě zbývá." },
+        { "t": "Držte se návyku", "d": "Pět minut protahování, zaškrtnout — a Minzi má víc energie na další výlet." }
+      ],
+      "toasts": [
+        { "t": "Plavání přidáno", "s": "Noah · úterý 16:30" },
+        { "t": "Marco koupil mléko", "s": "Nákupy · 2 ze 7" },
+        { "t": "Noah složil prádlo", "s": "Domácnost · dnes zbývá 1" },
+        { "t": "Protažení hotovo", "s": "Energie rodiny +1" }
+      ],
+      "pill": "Bazén 16:30"
+    },
+    "screens": {
+      "h2": "Na každé obrazovce doma",
+      "sub": "Mrkněte na zápěstí, na plochu telefonu nebo na zeď v kuchyni. Stejný rodinný plán všude.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Co bude dál a nákupní seznam — přímo na zápěstí."
+      },
+      "widgets": {
+        "h3": "Widgety",
+        "p": "Další události, nákupy, úkoly, návyky, poznámky a narozeniny na ploše telefonu.",
+        "next": "Další",
+        "swim": "Bazén",
+        "habits": "Návyky",
+        "done": "dnes hotovo",
+        "groceries": "Nákupy",
+        "items": ["Mléko", "Vejce", "Jablka"]
+      },
+      "trmnl": {
+        "h3": "Na zdi s TRMNL",
+        "p": "Ukažte rodinný týden na e-inkovém displeji TRMNL v předsíni. Žádné světlo, žádný hluk.",
+        "days": [
+          { "d": "Po", "ev": ["Klavír 15:00", "Zubař"] },
+          { "d": "Út", "ev": ["Bazén 16:30", "Schůzky 18:30"] },
+          { "d": "St", "ev": ["Fotbal 17:00"] },
+          { "d": "Čt", "ev": ["Filmový večer"] }
+        ]
+      },
+      "web": {
+        "h3": "V prohlížeči",
+        "p": "Plánujte týden na velké obrazovce na app.daili.app. Stejná rodina, stejné plány.",
+        "alt": "Webová aplikace Daili s rodinným kalendářem"
+      },
+      "phones": {
+        "h3": "A na každém telefonu",
+        "p": "iPhone i Android, ve 25 jazycích. Babička si nastaví Slovenčina, děti Čeština? Žádný problém."
+      }
+    },
+    "privacy": {
+      "h2": "Soukromé záměrně",
+      "sub": "Plány vaší rodiny patří vaší rodině. Není to nastavení, takhle je Daili postavené.",
+      "chips": ["Bez reklam", "Bez sledování", "Vaše data nikdy neprodáme", "Servery v EU", "Dokumenty a fotky zůstávají v telefonu", "AI jen tehdy, když ji použijete"]
+    },
+    "care": {
+      "h2a": "Vyrobeno s péčí,",
+      "h2b": "pro skutečný rodinný život",
+      "sub": "Navrženo a vyvinuto v Tyrolsku v Rakousku — pro každodenní chaos zaneprázdněných rodin."
+    },
+    "final": {
+      "h2": "Až budete připraveni",
+      "sub": "Začněte jedním seznamem. Kalendář přidejte, až budete chtít. Daili roste s vaší rodinou."
+    }
+  },
+
   "showcase": {
     "pill": "Sladěno za sekundu — na každém telefonu v rodině",
     "h2": "Jedna aplikace pro celou rodinu",

@@ -52,6 +52,194 @@
     "altHome": "Ecranul principal Daili, cu plăci de funcții"
   },
 
+  "home": {
+    "nav": {
+      "features": "Funcții",
+      "plus": "Daili Plus",
+      "screens": "Ceas și widgeturi",
+      "privacy": "Confidențialitate",
+      "login": "Conectare",
+      "cta": "Descarcă aplicația"
+    },
+    "qr": {
+      "t": "Ia daili gratuit",
+      "s": "Scanează cu camera telefonului. iPhone și Android.",
+      "alt": "Cod QR care deschide daili.app"
+    },
+    "hero": {
+      "lead": "Un loc liniștit pentru săptămâna familiei: calendar, liste, sarcini, obiceiuri și notițe pe care le vede toată lumea. Pe orice telefon, la încheietură și în browser.",
+      "cta": "Descarcă gratuit",
+      "alt": "Ecranul principal Daili pe un telefon, cu un Apple Watch care arată următorul eveniment",
+      "cards": [
+        { "t": "Curs de înot", "s": "Azi · 16:30 · Noah" },
+        { "t": "Lapte · 2 l", "s": "Marco e în magazin" },
+        { "t": "Bani de prânz", "s": "Fixat pentru vineri" },
+        { "t": "Stretching · 5 min", "s": "4 zile la rând" },
+        { "t": "Scoate gunoiul", "s": "Noah · diseară" },
+        { "t": "Curry de legume", "s": "Cina de diseară" },
+        { "t": "Cadou pentru Emma", "s": "Aniversare peste 2 zile" }
+      ]
+    },
+    "watch": {
+      "upNext": "Urmează",
+      "ev": "Înot",
+      "evs": "16:30 · Noah",
+      "list": "Cumpărături · încă 5"
+    },
+    "works": {
+      "label": "Funcționează cu",
+      "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "Browser web"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 de limbi", "s": "De la Deutsch la Türkçe" },
+        { "t": "Făcut în Tirol", "s": "Innsbruck, Austria" }
+      ],
+      "h2a": "Peste {count} de membri",
+      "h2b": "își planifică viața împreună",
+      "cards": [
+        { "cap": "Vinerea, prânzul e rezolvat", "t": "Bani de prânz · vineri", "s": "Fixat · Familie" },
+        { "cap": "Sâmbătă, la piață", "t": "Flori pentru bunica", "s": "Cumpărături · 5 din 7" },
+        { "cap": "Ziua 12. Minzi e mândră.", "t": "Citit 20 de minute", "s": "12 zile la rând" },
+        { "cap": "Azi face 12 ani!", "t": "Emma face 12 ani", "s": "Azi · 3 dorințe pe listă" },
+        { "cap": "Niciun antrenament ratat", "t": "Antrenament de fotbal", "s": "17:00 · Noah · marțea" },
+        { "cap": "Cumpărături cu întăriri", "t": "Afine", "s": "Adăugat de Lena · acum" },
+        { "cap": "Întâi temele", "t": "Verifică temele", "s": "Mia · azi" },
+        { "cap": "Mica noastră junglă", "t": "Udă plantele", "s": "Zilnic · cu tata" }
+      ],
+      "tiles": [
+        { "big": "0 €", "t": "Fără reclame, fără probă, fără șmecherii." },
+        { "t": "Minzi, pisica familiei, te încurajează" }
+      ]
+    },
+    "day": {
+      "h2": "Începeți ziua împreună",
+      "sub": "Tot ce trebuie să știe familia ta, acolo unde te uiți deja.",
+      "cards": [
+        { "h3": "Calendar", "p": "Săptămâna tuturor dintr-o privire. Școală, înot și dentist, fiecare cu culoarea lui.", "t": "Curs de înot", "s": "mar. · 16:30 · Noah" },
+        { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
+        { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34/40", "s": "Încă 6 și Minzi pleacă la drum" }
+      ]
+    },
+    "dinner": {
+      "h3": "Cina, stabilită",
+      "p": "Planifică mesele săptămânii, păstrează rețetele familiei și trimite ingredientele pe lista de cumpărături dintr-o atingere.",
+      "chips": ["Meniul săptămânii", "Caietul de rețete", "Pe lista de cumpărături"],
+      "t": "Tofu dulce-acrișor caramelizat",
+      "s": "2 porții · 13 ingrediente",
+      "add": "Adaugă la Cumpărături"
+    },
+    "calendars": {
+      "h3": "Conectează-ți calendarele",
+      "p": "Adu Google, Outlook și calendarul telefonului. Adaugă sărbătorile legale din țara ta. Vezi totul lângă planul familiei.",
+      "t": "Google Calendar",
+      "s": "Conectat · 24 de evenimente"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Mergi mai departe cu",
+      "h2b": "Daili Intelligence",
+      "sub": "Asistenți inteligenți care transformă videoclipuri, poze și idei în planuri, ca să ai mai mult timp pentru familie.",
+      "video": {
+        "h3": "Rețete din orice videoclip",
+        "p": "Lipește un link de YouTube. Daili notează pentru tine ingredientele și pașii.",
+        "hd": "Importată din videoclip",
+        "title": "Curry de năut crocant",
+        "t": "12 ingrediente · 6 pași",
+        "s": "Salvată în caietul de rețete"
+      },
+      "letter": {
+        "h3": "Fă o poză, primești datele",
+        "p": "Fă o poză anunțului de la școală. Daili găsește datele și le adaugă în calendar.",
+        "hd": "3 evenimente găsite",
+        "rows": [
+          { "t": "Excursie cu școala", "s": "vin. 10 oct. · 08:00" },
+          { "t": "Ședința cu părinții", "s": "mar. 14 oct. · 18:30" },
+          { "t": "Ziua fotografiilor", "s": "joi 16 oct." }
+        ],
+        "add": "Adaugă-le pe toate 3"
+      },
+      "ideas": {
+        "h3": "Idei de cină pentru săptămână",
+        "p": "Nu mai ai idei? Primești sugestii de cină pentru toată săptămâna și le adaugi în meniu pe cele care îți plac.",
+        "hd": "Sugestie pentru joi",
+        "title": "Lasagna cu legume",
+        "t": "45 min · preferata familiei",
+        "s": "Atinge ca s-o pui joi",
+        "add": "Adaugă în meniu"
+      },
+      "fine": "Funcțiile Daili Plus folosesc Google Gemini și doar atunci când le folosești."
+    },
+    "flow": {
+      "h2": "Vezi cum funcționează",
+      "sub": "Patru momente de zi cu zi, de la început la sfârșit.",
+      "items": [
+        { "t": "Planifică săptămâna", "d": "Adaugi înotul lui Noah marți. Apare pe fiecare telefon din familie, în culoarea lui." },
+        { "t": "Împarte cumpărăturile", "d": "Marco e în magazin și bifează laptele. Acasă vezi imediat, fără cumpărături duble." },
+        { "t": "Bifează sarcinile", "d": "Noah termină rufele și le bifează. Toată familia vede ce mai e de făcut." },
+        { "t": "Păstrează un obicei", "d": "Cinci minute de stretching, o bifă, și Minzi prinde energie pentru următoarea călătorie." }
+      ],
+      "toasts": [
+        { "t": "Curs de înot adăugat", "s": "Noah · marți 16:30" },
+        { "t": "Marco a luat laptele", "s": "Cumpărături · 2 din 7" },
+        { "t": "Noah a spălat rufele", "s": "Casă · încă 1 azi" },
+        { "t": "Stretching gata", "s": "Energia familiei +1" }
+      ],
+      "pill": "Înot 16:30"
+    },
+    "screens": {
+      "h2": "Pe fiecare ecran din casă",
+      "sub": "O privire la încheietură, pe ecranul telefonului sau pe peretele din bucătărie. Același plan de familie, peste tot.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Ce urmează și lista de cumpărături, direct la încheietură."
+      },
+      "widgets": {
+        "h3": "Widgeturi",
+        "p": "Ce urmează, cumpărături, sarcini, obiceiuri, notițe și zile de naștere pe ecranul principal.",
+        "next": "Urmează",
+        "swim": "Înot",
+        "habits": "Obiceiuri",
+        "done": "gata azi",
+        "groceries": "Cumpărături",
+        "items": ["Lapte", "Ouă", "Mere"]
+      },
+      "trmnl": {
+        "h3": "Pe perete cu TRMNL",
+        "p": "Afișează săptămâna familiei pe un ecran e-paper TRMNL pe hol. Fără lumină, fără zgomot.",
+        "days": [
+          { "d": "Lun", "ev": ["Pian 15:00", "Dentist"] },
+          { "d": "Mar", "ev": ["Înot 16:30", "Ședință 18:30"] },
+          { "d": "Mie", "ev": ["Fotbal 17:00"] },
+          { "d": "Joi", "ev": ["Seară de film"] }
+        ]
+      },
+      "web": {
+        "h3": "În browser",
+        "p": "Planifică săptămâna pe ecran mare, pe app.daili.app. Aceeași familie, aceleași planuri.",
+        "alt": "Aplicația web Daili cu un calendar de familie"
+      },
+      "phones": {
+        "h3": "Și pe orice telefon",
+        "p": "iPhone și Android, în 25 de limbi. Bunica vorbește română, nepoții Italiano? Nicio problemă."
+      }
+    },
+    "privacy": {
+      "h2": "Privat din construcție",
+      "sub": "Planurile familiei tale sunt ale familiei tale. Nu e o setare, așa e construit Daili.",
+      "chips": ["Fără reclame", "Fără urmărire", "Nu îți vindem niciodată datele", "Servere în UE", "Documentele și pozele rămân pe telefon", "AI doar când îl folosești"]
+    },
+    "care": {
+      "h2a": "Făcut cu grijă,",
+      "h2b": "pentru viața reală de familie",
+      "sub": "Gândit și construit în Tirol, Austria, pentru haosul de zi cu zi al familiilor ocupate."
+    },
+    "final": {
+      "h2": "Gata când ești și tu",
+      "sub": "Începe cu o listă. Adaugă calendarul când ești pregătit. Daili crește odată cu familia ta."
+    }
+  },
+
   "showcase": {
     "pill": "Sincronizat într-o secundă — pe fiecare telefon din familie",
     "h2": "O singură aplicație pentru toată familia",

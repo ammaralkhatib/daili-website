@@ -52,6 +52,194 @@
     "altHome": "Startskärmen i Daili med rutorna för funktionerna"
   },
 
+  "home": {
+    "nav": {
+      "features": "Funktioner",
+      "plus": "Daili Plus",
+      "screens": "Klocka och widgets",
+      "privacy": "Integritet",
+      "login": "Logga in",
+      "cta": "Hämta appen"
+    },
+    "qr": {
+      "t": "Hämta daili gratis",
+      "s": "Skanna med mobilkameran. iPhone och Android.",
+      "alt": "QR-kod som öppnar daili.app"
+    },
+    "hero": {
+      "lead": "En lugn plats för familjens vecka: kalender, listor, uppgifter, vanor och anteckningar som alla ser. I varje mobil, på handleden och i webbläsaren.",
+      "cta": "Ladda ner gratis",
+      "alt": "Dailis startskärm i en mobil, med en Apple Watch som visar nästa händelse",
+      "cards": [
+        { "t": "Simskola", "s": "I dag · 16.30 · Noah" },
+        { "t": "Mjölk · 2 l", "s": "Marco är i butiken" },
+        { "t": "Utflyktspengar", "s": "Fäst till fredag" },
+        { "t": "Stretch · 5 min", "s": "4 dagar i rad" },
+        { "t": "Slänga soporna", "s": "Noah · i kväll" },
+        { "t": "Grönsakscurry", "s": "Middag i kväll" },
+        { "t": "Present till Emma", "s": "Fyller år om 2 dagar" }
+      ]
+    },
+    "watch": {
+      "upNext": "Härnäst",
+      "ev": "Simskola",
+      "evs": "16.30 · Noah",
+      "list": "Inköp · 5 kvar"
+    },
+    "works": {
+      "label": "Fungerar med",
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets på hemskärmen", "TRMNL", "Google Calendar", "Outlook", "Webbläsare"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 språk", "s": "Från Deutsch till Türkçe" },
+        { "t": "Gjord i Tyrolen", "s": "Innsbruck, Österrike" }
+      ],
+      "h2a": "Över {count} medlemmar",
+      "h2b": "planerar livet tillsammans",
+      "cards": [
+        { "cap": "Fredagen fixad.", "t": "Utflyktspengar fredag", "s": "Fäst · Familj" },
+        { "cap": "Lördagstur till torget", "t": "Blommor till mormor", "s": "Inköp · 5 av 7" },
+        { "cap": "Dag 12. Minzi är stolt.", "t": "Läsa 20 minuter", "s": "12 dagar i rad" },
+        { "cap": "Hon fyller 12 idag!", "t": "Emma fyller 12", "s": "I dag · 3 önskningar på listan" },
+        { "cap": "Aldrig missad träning", "t": "Fotbollsträning", "s": "17.00 · Noah · varje tis" },
+        { "cap": "Handla med backup", "t": "Blåbär", "s": "Tillagt av Lena · nyss" },
+        { "cap": "Läxorna först", "t": "Kolla läxorna", "s": "Mia · i dag" },
+        { "cap": "Vår lilla djungel", "t": "Vattna blommorna", "s": "Varje dag · med pappa" }
+      ],
+      "tiles": [
+        { "big": "€0", "t": "Ingen reklam, ingen provperiod, inga fällor." },
+        { "t": "Minzi, familjens katt, hejar på er" }
+      ]
+    },
+    "day": {
+      "h2": "Börja dagen tillsammans",
+      "sub": "Allt familjen behöver veta, där ni redan tittar.",
+      "cards": [
+        { "h3": "Kalender", "p": "Allas vecka i en överblick. Skola, simning och tandläkare, varje person i sin egen färg.", "t": "Simskola", "s": "Tis · 16.30 · Noah" },
+        { "h3": "Listor", "p": "Skriv upp mjölk i köket, bocka av den i affären. Alla ser det direkt.", "t": "Bröd", "s": "Avbockat av Marco · nyss" },
+        { "h3": "Vanor", "p": "Små rutiner, gjorda tillsammans. Varje bock ger Minzi, er familjekatt, mer energi.", "t": "Familjeenergi · 34 / 40", "s": "6 till, sen reser Minzi iväg" }
+      ]
+    },
+    "dinner": {
+      "h3": "Middagen är klar",
+      "p": "Planera veckans måltider, spara familjens recept och skicka ingredienserna till inköpslistan med ett tryck.",
+      "chips": ["Matsedel", "Receptsamling", "Till inköpslistan"],
+      "t": "Sötsur krispig tofu",
+      "s": "2 portioner · 13 ingredienser",
+      "add": "Lägg till i Inköp"
+    },
+    "calendars": {
+      "h3": "Koppla ihop era kalendrar",
+      "p": "Ta in Google, Outlook och mobilens kalender. Lägg till helgdagarna i ditt land. Se allt bredvid familjens plan.",
+      "t": "Google Calendar",
+      "s": "Ansluten · 24 händelser synkade"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Gå längre med",
+      "h2b": "Daili Intelligence",
+      "sub": "Smarta hjälpare som gör videor, foton och idéer till planer, så att ni får mer tid med familjen.",
+      "video": {
+        "h3": "Recept från vilken video som helst",
+        "p": "Klistra in en YouTube-länk. Daili skriver ner ingredienserna och stegen åt dig.",
+        "hd": "Importerat från video",
+        "title": "Krispig kikärtscurry",
+        "t": "12 ingredienser · 6 steg",
+        "s": "Sparat i receptsamlingen"
+      },
+      "letter": {
+        "h3": "Fota brevet, få datumen",
+        "p": "Ta en bild på brevet från skolan. Daili hittar datumen och lägger in dem i kalendern.",
+        "hd": "3 händelser hittade",
+        "rows": [
+          { "t": "Skolutflykt", "s": "fre 10 okt · 08.00" },
+          { "t": "Föräldramöte", "s": "tis 14 okt · 18.30" },
+          { "t": "Skolfoto", "s": "tor 16 okt" }
+        ],
+        "add": "Lägg till alla 3"
+      },
+      "ideas": {
+        "h3": "Middagstips för veckan",
+        "p": "Slut på idéer? Få middagsförslag för hela veckan och lägg till de du gillar i matsedeln.",
+        "hd": "Förslag för torsdag",
+        "title": "Grönsakslasagne",
+        "t": "45 min · familjefavorit",
+        "s": "Tryck för att lägga på torsdag",
+        "add": "Lägg i matsedeln"
+      },
+      "fine": "Funktionerna i Daili Plus använder Google Gemini, och bara när du använder dem."
+    },
+    "flow": {
+      "h2": "Se hur det funkar",
+      "sub": "Fyra vardagsögonblick, från början till slut.",
+      "items": [
+        { "t": "Planera veckan", "d": "Lägg in simning för Noah på tisdag. Det dyker upp i varje mobil i familjen, i hans färg." },
+        { "t": "Dela på handlingen", "d": "Marco är i affären och bockar av mjölken. Hemma ser du det direkt, inga dubbelköp." },
+        { "t": "Bocka av uppgifterna", "d": "Noah blir klar med tvätten och bockar av den. Hela familjen ser vad som är kvar." },
+        { "t": "Håll en vana", "d": "Stretcha i fem minuter, bocka av, och se Minzi få mer energi till nästa resa." }
+      ],
+      "toasts": [
+        { "t": "Simskola tillagd", "s": "Noah · tisdag 16.30" },
+        { "t": "Marco köpte mjölken", "s": "Inköp · 2 av 7" },
+        { "t": "Noah fixade tvätten", "s": "Hushåll · 1 kvar i dag" },
+        { "t": "Stretch klar", "s": "Familjeenergi +1" }
+      ],
+      "pill": "Sim 16.30"
+    },
+    "screens": {
+      "h2": "På varje skärm där hemma",
+      "sub": "En blick på handleden, hemskärmen eller köksväggen. Samma familjeplan, överallt.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Vad som händer härnäst, och inköpslistan, direkt på handleden."
+      },
+      "widgets": {
+        "h3": "Widgets",
+        "p": "Nästa händelse, inköp, uppgifter, vanor, anteckningar och födelsedagar på hemskärmen.",
+        "next": "Härnäst",
+        "swim": "Sim",
+        "habits": "Vanor",
+        "done": "klart i dag",
+        "groceries": "Inköp",
+        "items": ["Mjölk", "Ägg", "Äpplen"]
+      },
+      "trmnl": {
+        "h3": "På väggen med TRMNL",
+        "p": "Visa familjens vecka på en TRMNL-skärm med e-papper i hallen. Inget sken, inget brus.",
+        "days": [
+          { "d": "Mån", "ev": ["Piano 15.00", "Tandläkare"] },
+          { "d": "Tis", "ev": ["Sim 16.30", "Föräldrar 18.30"] },
+          { "d": "Ons", "ev": ["Fotboll 17.00"] },
+          { "d": "Tor", "ev": ["Filmkväll"] }
+        ]
+      },
+      "web": {
+        "h3": "I webbläsaren",
+        "p": "Planera veckan på stor skärm på app.daili.app. Samma familj, samma planer.",
+        "alt": "Dailis webbapp med en familjekalender"
+      },
+      "phones": {
+        "h3": "Och i varje mobil",
+        "p": "iPhone och Android, på 25 språk. Mormor pratar Suomi, barnen pratar svenska? Inga problem."
+      }
+    },
+    "privacy": {
+      "h2": "Privat från början",
+      "sub": "Familjens planer tillhör familjen. Det är ingen inställning, det är så Daili är byggt.",
+      "chips": ["Ingen reklam", "Ingen spårning", "Vi säljer aldrig din data", "Servrar i EU", "Dokument och foton stannar i mobilen", "AI bara när du använder den"]
+    },
+    "care": {
+      "h2a": "Gjord med omsorg,",
+      "h2b": "för riktigt familjeliv",
+      "sub": "Designad och byggd i Tyrolen i Österrike, för vardagskaoset i upptagna familjer."
+    },
+    "final": {
+      "h2": "Redo när ni är",
+      "sub": "Börja med en lista. Lägg till kalendern när ni är redo. Daili växer med er familj."
+    }
+  },
+
   "showcase": {
     "pill": "Synkat på en sekund — i varje telefon i familjen",
     "h2": "En app för hela familjen",

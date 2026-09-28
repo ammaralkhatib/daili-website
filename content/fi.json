@@ -52,6 +52,194 @@
     "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
   },
 
+  "home": {
+    "nav": {
+      "features": "Ominaisuudet",
+      "plus": "Daili Plus",
+      "screens": "Kello ja widgetit",
+      "privacy": "Yksityisyys",
+      "login": "Kirjaudu",
+      "cta": "Hanki sovellus"
+    },
+    "qr": {
+      "t": "Lataa daili maksutta",
+      "s": "Skannaa puhelimen kameralla. iPhone ja Android.",
+      "alt": "QR-koodi, joka avaa daili.appin"
+    },
+    "hero": {
+      "lead": "Yksi rauhallinen paikka perheen viikolle: kalenteri, listat, tehtävät, tavat ja muistiinpanot, jotka kaikki näkevät. Jokaisessa puhelimessa, ranteessa ja selaimessa.",
+      "cta": "Lataa ilmaiseksi",
+      "alt": "Dailin aloitusnäkymä puhelimessa ja Apple Watch, jossa näkyy seuraava tapahtuma",
+      "cards": [
+        { "t": "Uimakoulu", "s": "Tänään · 16.30 · Noah" },
+        { "t": "Maito · 2 l", "s": "Marco on kaupassa" },
+        { "t": "Retkirahat", "s": "Kiinnitetty perjantaille" },
+        { "t": "Venyttely · 5 min", "s": "4 päivää putkeen" },
+        { "t": "Roskat ulos", "s": "Noah · tänä iltana" },
+        { "t": "Kasviscurry", "s": "Tänään päivälliseksi" },
+        { "t": "Lahja Emmalle", "s": "Synttärit 2 päivän päästä" }
+      ]
+    },
+    "watch": {
+      "upNext": "Seuraavaksi",
+      "ev": "Uimakoulu",
+      "evs": "16.30 · Noah",
+      "list": "Ostokset · 5 jäljellä"
+    },
+    "works": {
+      "label": "Toimii näiden kanssa",
+      "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "Selain"]
+    },
+    "members": {
+      "badges": [
+        { "t": "25 kieltä", "s": "Deutschista Türkçeen" },
+        { "t": "Tehty Tirolissa", "s": "Innsbruck, Itävalta" }
+      ],
+      "h2a": "Jo yli {count} jäsentä",
+      "h2b": "suunnittelee arkea yhdessä",
+      "cards": [
+        { "cap": "Perjantai hoidossa.", "t": "Retkirahat perjantaiksi", "s": "Kiinnitetty · Perhe" },
+        { "cap": "Lauantaina torilla", "t": "Kukat mummille", "s": "Ostokset · 5/7" },
+        { "cap": "Päivä 12. Minzi on ylpeä.", "t": "Lue 20 minuuttia", "s": "12 päivää putkeen" },
+        { "cap": "Tänään 12 vuotta!", "t": "Emma täyttää 12", "s": "Tänään · 3 toivetta listalla" },
+        { "cap": "Treenit ei unohdu", "t": "Jalkapallotreenit", "s": "17.00 · Noah · joka ti" },
+        { "cap": "Kauppareissu apujoukoin", "t": "Mustikat", "s": "Lena lisäsi · juuri nyt" },
+        { "cap": "Läksyt ensin", "t": "Tarkista läksyt", "s": "Mia · tänään" },
+        { "cap": "Meidän pieni viidakko", "t": "Kastele kukat", "s": "Joka päivä · iskän kanssa" }
+      ],
+      "tiles": [
+        { "big": "0 €", "t": "Ei mainoksia, ei kokeilujaksoa, ei koukkuja." },
+        { "t": "Minzi, perheen kissa, kannustaa teitä" }
+      ]
+    },
+    "day": {
+      "h2": "Aloittakaa päivä yhdessä",
+      "sub": "Kaikki, mitä perheen pitää tietää, siellä minne jo katsotte.",
+      "cards": [
+        { "h3": "Kalenteri", "p": "Koko perheen viikko yhdellä silmäyksellä. Koulu, uinti ja hammaslääkäri, jokainen omalla värillään.", "t": "Uimakoulu", "s": "ti · 16.30 · Noah" },
+        { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
+        { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee reissuun" }
+      ]
+    },
+    "dinner": {
+      "h3": "Päivällinen päätetty",
+      "p": "Suunnittele viikon ateriat, säilytä perheen reseptit ja lähetä ainekset ostoslistalle yhdellä napautuksella.",
+      "chips": ["Ruokalista", "Reseptikirja", "Ostoslistalle"],
+      "t": "Hapanimelä rapea tofu",
+      "s": "2 annosta · 13 ainesta",
+      "add": "Lisää Ostoksiin"
+    },
+    "calendars": {
+      "h3": "Yhdistä kalenterisi",
+      "p": "Tuo mukaan Google, Outlook ja puhelimen kalenteri. Lisää oman maasi pyhäpäivät. Näe kaikki perheen suunnitelman vieressä.",
+      "t": "Google Calendar",
+      "s": "Yhdistetty · 24 tapahtumaa synkattu"
+    },
+    "plus": {
+      "eyebrow": "Daili Plus",
+      "h2a": "Enemmän irti:",
+      "h2b": "Daili Intelligence",
+      "sub": "Fiksut apurit tekevät videoista, kuvista ja ideoista suunnitelmia, jotta ehdit taas olla perheen kanssa.",
+      "video": {
+        "h3": "Reseptit mistä tahansa videosta",
+        "p": "Liitä YouTube-linkki. Daili kirjaa ainekset ja työvaiheet puolestasi.",
+        "hd": "Tuotu videosta",
+        "title": "Rapea kikhernecurry",
+        "t": "12 ainesta · 6 vaihetta",
+        "s": "Tallennettu reseptikirjaan"
+      },
+      "letter": {
+        "h3": "Kuvaa tiedote, saat päivämäärät",
+        "p": "Ota kuva koulun tiedotteesta. Daili löytää päivämäärät ja lisää ne kalenteriin.",
+        "hd": "3 tapahtumaa löytyi",
+        "rows": [
+          { "t": "Luokkaretki", "s": "pe 10.10. · 8.00" },
+          { "t": "Vanhempainilta", "s": "ti 14.10. · 18.30" },
+          { "t": "Kuvauspäivä", "s": "to 16.10." }
+        ],
+        "add": "Lisää kaikki 3"
+      },
+      "ideas": {
+        "h3": "Ruokaideoita viikollesi",
+        "p": "Ideat lopussa? Saat päivällisehdotukset koko viikolle ja lisäät mieleisesi ruokalistaan.",
+        "hd": "Ehdotus torstaille",
+        "title": "Kasvislasagne",
+        "t": "45 min · perheen suosikki",
+        "s": "Napauta, niin se on torstaina",
+        "add": "Lisää ruokalistaan"
+      },
+      "fine": "Daili Plus -toiminnot käyttävät Google Geminiä, ja vain kun käytät niitä."
+    },
+    "flow": {
+      "h2": "Katso, miten se toimii",
+      "sub": "Neljä arjen hetkeä alusta loppuun.",
+      "items": [
+        { "t": "Suunnittele viikko", "d": "Lisää Noahille uinti tiistaille. Se näkyy perheen jokaisessa puhelimessa, hänen värillään." },
+        { "t": "Jakakaa ostokset", "d": "Marco on kaupassa ja kuittaa maidon. Kotona näet sen heti, eikä mitään osteta kahdesti." },
+        { "t": "Kuittaa tehtävät", "d": "Noah saa pyykit valmiiksi ja kuittaa ne. Koko perhe näkee, mitä on vielä tekemättä." },
+        { "t": "Pidä kiinni tavasta", "d": "Venyttele viisi minuuttia, kuittaa ja katso, kun Minzi saa lisää energiaa seuraavaan reissuunsa." }
+      ],
+      "toasts": [
+        { "t": "Uimakoulu lisätty", "s": "Noah · tiistai 16.30" },
+        { "t": "Marco osti maidon", "s": "Ostokset · 2/7" },
+        { "t": "Noah hoiti pyykit", "s": "Kotityöt · 1 jäljellä" },
+        { "t": "Venyttely tehty", "s": "Perheen energia +1" }
+      ],
+      "pill": "Uinti 16.30"
+    },
+    "screens": {
+      "h2": "Jokaisella näytöllä kotonasi",
+      "sub": "Vilkaise rannetta, aloitusnäyttöä tai keittiön seinää. Sama perheen suunnitelma kaikkialla.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "Mitä seuraavaksi, ja ostoslista, suoraan ranteessa."
+      },
+      "widgets": {
+        "h3": "Widgetit",
+        "p": "Seuraava tapahtuma, ostokset, tehtävät, tavat, muistiinpanot ja syntymäpäivät aloitusnäytöllä.",
+        "next": "Seuraavaksi",
+        "swim": "Uinti",
+        "habits": "Tavat",
+        "done": "tehty tänään",
+        "groceries": "Ostokset",
+        "items": ["Maito", "Munat", "Omenat"]
+      },
+      "trmnl": {
+        "h3": "Seinällä TRMNL:n avulla",
+        "p": "Näytä perheen viikko eteisessä TRMNL-e-paperinäytöllä. Ei hehkua, ei hälyä.",
+        "days": [
+          { "d": "ma", "ev": ["Piano 15.00", "Hammaslääkäri"] },
+          { "d": "ti", "ev": ["Uinti 16.30", "Vanhemmat 18.30"] },
+          { "d": "ke", "ev": ["Jalkapallo 17.00"] },
+          { "d": "to", "ev": ["Leffailta"] }
+        ]
+      },
+      "web": {
+        "h3": "Selaimessa",
+        "p": "Suunnittele viikko isolla näytöllä osoitteessa app.daili.app. Sama perhe, samat suunnitelmat.",
+        "alt": "Dailin verkkosovellus, jossa näkyy perheen kalenteri"
+      },
+      "phones": {
+        "h3": "Ja jokaisessa puhelimessa",
+        "p": "iPhone ja Android, 25 kielellä. Mummi puhuu svenska, lapset suomea? Ei ongelmaa."
+      }
+    },
+    "privacy": {
+      "h2": "Yksityinen alusta asti",
+      "sub": "Perheen suunnitelmat kuuluvat perheelle. Se ei ole asetus, vaan tapa, jolla Daili on rakennettu.",
+      "chips": ["Ei mainoksia", "Ei seurantaa", "Emme koskaan myy tietojasi", "Palvelimet EU:ssa", "Asiakirjat ja kuvat pysyvät puhelimessa", "Tekoäly vain kun käytät sitä"]
+    },
+    "care": {
+      "h2a": "Huolella tehty,",
+      "h2b": "oikeaa perhearkea varten",
+      "sub": "Suunniteltu ja rakennettu Tirolissa, Itävallassa, kiireisten perheiden arjen kaaokseen."
+    },
+    "final": {
+      "h2": "Valmiina, kun te olette",
+      "sub": "Aloita yhdellä listalla. Ota kalenteri mukaan, kun olet valmis. Daili kasvaa perheesi mukana."
+    }
+  },
+
   "showcase": {
     "pill": "Synkassa sekunnissa — jokaisessa perheen puhelimessa",
     "h2": "Yksi sovellus koko perheelle",

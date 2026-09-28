@@ -70,6 +70,216 @@
     "altHome": "Daili home screen with feature tiles"
   },
 
+  "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\", \"Daili Plus\" and \"Minzi\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
+  "home": {
+    "nav": {
+      "@nav": { "description": "Top navigation of the home page: four section links, the web-app login link and the pill button. One or two words each." },
+      "features": "Features",
+      "plus": "Daili Plus",
+      "screens": "Watch & widgets",
+      "privacy": "Privacy",
+      "login": "Log in",
+      "cta": "Get the app"
+    },
+    "qr": {
+      "@qr": { "description": "Floating QR card at the bottom corner on desktop. t = bold title (≤ 20 chars, keeps \"daili\"), s = one short line, alt = the QR image's alt text." },
+      "t": "Get daili free",
+      "s": "Scan with your phone camera. iPhone & Android.",
+      "alt": "QR code that opens daili.app"
+    },
+    "hero": {
+      "@hero": { "description": "Hero under the headline (the headline itself reuses hero.h1a/h1b). lead = the paragraph under it (≤ 170 chars), cta = the dark download button, alt = the phone + watch image." },
+      "lead": "One calm place for your family's week: calendar, lists, to-dos, habits and notes that everyone can see. On every phone, on your wrist, and in the browser.",
+      "cta": "Download free",
+      "alt": "The Daili home screen on a phone, with an Apple Watch showing the next event",
+      "@cards": { "description": "7 small cards floating around the hero phone, top-left first. They imitate app content. t ≤ 20 chars (bold line), s ≤ 26 chars (small grey line). Names stay as written." },
+      "cards": [
+        { "t": "Swimming class", "s": "Today · 16:30 · Noah" },
+        { "t": "Milk · 2 l", "s": "Marco is at the store" },
+        { "t": "Lunch money", "s": "Pinned for Friday" },
+        { "t": "Stretch · 5 min", "s": "4-day streak" },
+        { "t": "Take out the bins", "s": "Noah · tonight" },
+        { "t": "Vegetable curry", "s": "Dinner tonight" },
+        { "t": "Gift for Emma", "s": "Birthday in 2 days" }
+      ]
+    },
+    "watch": {
+      "@watch": { "description": "Tiny texts on the drawn Apple Watch face next to the hero phone (~60 px wide). Keep them as short as the English." },
+      "upNext": "Up next",
+      "ev": "Swimming class",
+      "evs": "16:30 · Noah",
+      "list": "Groceries · 5 left"
+    },
+    "works": {
+      "@works": { "description": "Scrolling \"works with\" strip under the hero. label = the small caption. items = short labels, no full stop; product names stay in Latin letters, only \"Home-screen widgets\" and \"Web browser\" are translated." },
+      "label": "Works with",
+      "items": ["iPhone", "Android", "Apple Watch", "Home-screen widgets", "TRMNL", "Google Calendar", "Outlook", "Web browser"]
+    },
+    "members": {
+      "@badges": { "description": "Two badges above the members headline. t = bold (≤ 16 chars), s = small line (≤ 24 chars). \"From Deutsch to Türkçe\" keeps the two language names as endonyms." },
+      "badges": [
+        { "t": "25 languages", "s": "From Deutsch to Türkçe" },
+        { "t": "Made in Tirol", "s": "Innsbruck, Austria" }
+      ],
+      "@h2a": { "description": "First line of the members headline. {count} is filled by the build with the locale-formatted member number (1,000 / 1.000) and must appear exactly once." },
+      "h2a": "Joined by {count}+ members",
+      "h2b": "planning life together",
+      "@cards": { "description": "8 photo cards in the members carousel. cap = a short, casual, handwritten-style caption on the photo (≤ 28 chars) — write it the way a parent would caption their own photo in your language, not a translation of the English joke; \"Day 12. Minzi is proud.\" keeps Minzi. t/s = the Daili widget drawn on the photo (t ≤ 24, s ≤ 30). \"Oma\" and \"Papa\" may become your language's word for grandma / dad here only." },
+      "cards": [
+        { "cap": "Friday lunch, sorted.", "t": "Lunch money for Friday", "s": "Pinned · Family" },
+        { "cap": "Saturday market run", "t": "Flowers for Oma", "s": "Groceries · 5 of 7" },
+        { "cap": "Day 12. Minzi is proud.", "t": "Read 20 minutes", "s": "12-day streak" },
+        { "cap": "She turns 12 today!", "t": "Emma turns 12", "s": "Today · 3 wishes on her list" },
+        { "cap": "Never miss practice", "t": "Football practice", "s": "17:00 · Noah · every Tue" },
+        { "cap": "Shopping with backup", "t": "Blueberries", "s": "Added by Lena · just now" },
+        { "cap": "Homework first", "t": "Check homework", "s": "Mia · today" },
+        { "cap": "Our little jungle", "t": "Water the plants", "s": "Every day · with Papa" }
+      ],
+      "@tiles": { "description": "Two tiles at the end of the members carousel. First: big = the price (\"€0\" written the locale's way), t = one line. Second: t = one line next to Minzi the cat." },
+      "tiles": [
+        { "big": "€0", "t": "No ads, no trial, no catch." },
+        { "t": "Minzi, the family cat, cheers you on" }
+      ]
+    },
+    "day": {
+      "@day": { "description": "\"Start the day together\" section: headline, sub line (≤ 80 chars) and three feature cards. h3 = the feature name (use the app's word), p = two short sentences, t/s = the small app widget on the card (t ≤ 24, s ≤ 32)." },
+      "h2": "Start the day together",
+      "sub": "Everything your family needs to know, in the places you already look.",
+      "cards": [
+        { "h3": "Calendar", "p": "Everyone's week at a glance. School, swimming and the dentist, each person in their own colour.", "t": "Swimming class", "s": "Tue · 16:30 · Noah" },
+        { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
+        { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" }
+      ]
+    },
+    "dinner": {
+      "@dinner": { "description": "Meal-plan card. chips = three short labels, no full stop. t/s = the recipe widget, add = its button (use the locale's name of the shopping list)." },
+      "h3": "Dinner, decided",
+      "p": "Plan the week's meals, keep the family recipes, and send the ingredients to your shopping list in one tap.",
+      "chips": ["Meal plan", "Recipe box", "To the shopping list"],
+      "t": "Sweet & sour sticky tofu",
+      "s": "2 servings · 13 ingredients",
+      "add": "Add to Groceries"
+    },
+    "calendars": {
+      "@calendars": { "description": "Calendar-sync card. t/s = the connected-calendar widget (Google Calendar stays as written)." },
+      "h3": "Connect your calendars",
+      "p": "Bring in Google, Outlook and your phone's calendar. Add public holidays for your country. See it all next to the family plan.",
+      "t": "Google Calendar",
+      "s": "Connected · 24 events synced"
+    },
+    "plus": {
+      "@plus": { "description": "Daili Plus section (dark). \"Daili Plus\" and \"Daili Intelligence\" are product names and stay in Latin letters. Each card: h3 + p, then a drawn widget: hd = its small header, title/t/s = its lines, add = its button (all ≤ 28 chars)." },
+      "eyebrow": "Daili Plus",
+      "h2a": "Go deeper with",
+      "h2b": "Daili Intelligence",
+      "sub": "Smart helpers that turn videos, photos and ideas into plans, so you can get back to your family.",
+      "video": {
+        "h3": "Recipes from any video",
+        "p": "Paste a YouTube link. Daili writes down the ingredients and the steps for you.",
+        "hd": "Imported from video",
+        "title": "Crispy chickpea curry",
+        "t": "12 ingredients · 6 steps",
+        "s": "Saved to your recipe box"
+      },
+      "letter": {
+        "h3": "Snap a letter, get the dates",
+        "p": "Take a photo of the school letter. Daili finds the dates and adds them to your calendar.",
+        "hd": "3 events found",
+        "@rows": { "description": "Three events found in the school letter. s = the date in the locale's short style, 24-hour time." },
+        "rows": [
+          { "t": "School trip", "s": "Fri 10 Oct · 08:00" },
+          { "t": "Parents' evening", "s": "Tue 14 Oct · 18:30" },
+          { "t": "Photo day", "s": "Thu 16 Oct" }
+        ],
+        "add": "Add all 3"
+      },
+      "ideas": {
+        "h3": "Dinner ideas for your week",
+        "p": "Out of ideas? Get dinner suggestions for the whole week, then add the ones you like to your meal plan.",
+        "hd": "Suggested for Thursday",
+        "title": "Veggie lasagne",
+        "t": "45 min · family favourite",
+        "s": "Tap to add it to Thursday",
+        "add": "Add to meal plan"
+      },
+      "fine": "Daili Plus features use Google Gemini, and only when you use them."
+    },
+    "flow": {
+      "@flow": { "description": "\"See it in action\": four steps (t = title, d = one or two sentences) and, in the same order, four toast notifications on the drawn phone (t ≤ 24, s ≤ 26). pill = the tiny event pill on the drawn calendar (≤ 12 chars)." },
+      "h2": "See it in action",
+      "sub": "Four everyday moments, start to finish.",
+      "items": [
+        { "t": "Plan the week", "d": "Add swimming for Noah on Tuesday. It shows up on every phone in the family, in his colour." },
+        { "t": "Share the shopping", "d": "Marco is at the store and ticks off the milk. At home you see it right away, no double buying." },
+        { "t": "Tick off the to-dos", "d": "Noah finishes the laundry and ticks it. The whole family sees what is still open." },
+        { "t": "Keep a habit", "d": "Stretch for five minutes, tick it, and watch Minzi get more energy for her next trip." }
+      ],
+      "toasts": [
+        { "t": "Swimming class added", "s": "Noah · Tuesday 16:30" },
+        { "t": "Marco got the milk", "s": "Groceries · 2 of 7" },
+        { "t": "Noah did the laundry", "s": "Household · 1 left today" },
+        { "t": "Stretch done", "s": "Family energy +1" }
+      ],
+      "pill": "Swim 16:30"
+    },
+    "screens": {
+      "@screens": { "description": "\"On every screen\" section: five cards (h3 + p). widgets.* and trmnl.days are tiny texts inside drawn screens (~60–120 px) — keep them as short as the English. widgets.items = three grocery items, no full stop. trmnl.days = four short weekday names with their events." },
+      "h2": "On every screen in your home",
+      "sub": "Glance at your wrist, your home screen or the kitchen wall. The same family plan, everywhere.",
+      "watch": {
+        "h3": "Apple Watch",
+        "p": "What's next, and the shopping list, right on your wrist."
+      },
+      "widgets": {
+        "h3": "Widgets",
+        "p": "Next up, shopping, to-dos, habits, notes and birthdays on your home screen.",
+        "next": "Next up",
+        "swim": "Swim",
+        "habits": "Habits",
+        "done": "done today",
+        "groceries": "Groceries",
+        "items": ["Milk", "Eggs", "Apples"]
+      },
+      "trmnl": {
+        "h3": "On the wall with TRMNL",
+        "p": "Show the family week on a TRMNL e-paper screen in the hallway. No glow, no noise.",
+        "days": [
+          { "d": "Mon", "ev": ["Piano 15:00", "Dentist"] },
+          { "d": "Tue", "ev": ["Swim 16:30", "Parents 18:30"] },
+          { "d": "Wed", "ev": ["Football 17:00"] },
+          { "d": "Thu", "ev": ["Movie night"] }
+        ]
+      },
+      "web": {
+        "h3": "In your browser",
+        "p": "Plan the week on a big screen at app.daili.app. The same family, the same plans.",
+        "alt": "The Daili web app showing a family calendar"
+      },
+      "@phones": { "description": "phones.p: the two example languages may change to fit your locale (for tr: grandma speaks German, the kids speak Turkish). Keep the idea: two generations, two languages, one app. Name languages by their endonym." },
+      "phones": {
+        "h3": "And on every phone",
+        "p": "iPhone and Android, in 25 languages. Grandma speaks Türkçe, the kids speak English? No problem."
+      }
+    },
+    "privacy": {
+      "@privacy": { "description": "Privacy section. chips = six short labels, no full stop (\"EU\" may be the locale's usual abbreviation)." },
+      "h2": "Private by design",
+      "sub": "Your family's plans belong to your family. That is not a setting, it is how Daili is built.",
+      "chips": ["No ads", "No tracking", "We never sell your data", "Servers in the EU", "Documents & photos stay on your phone", "AI only when you use it"]
+    },
+    "care": {
+      "@care": { "description": "Two-line headline (h2b is the highlighted half) and one sentence under it." },
+      "h2a": "Made with care,",
+      "h2b": "for real family life",
+      "sub": "Designed and built in Tirol, Austria, for the everyday chaos of busy families."
+    },
+    "final": {
+      "@final": { "description": "Last call-to-action section above the FAQ/footer: headline and one line." },
+      "h2": "Ready when you are",
+      "sub": "Start with one list. Add the calendar when you're ready. Daili grows with your family."
+    }
+  },
+
   "showcase": {
     "pill": "Synced in about a second — on every phone in the family",
     "@pill": { "description": "Dark pill at the bottom of the video panel. One sentence, no full stop." },
