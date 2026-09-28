@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Functies",
     "webApp": "Webapp",
-    "pricing": "Prijs",
     "support": "Support",
     "blog": "Blog",
     "help": "Hulp",
-    "download": "Download",
     "language": "Taal",
     "skip": "Naar de inhoud",
     "menu": "Menu openen"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Nu op iPhone, Android en het web",
-    "kicker": "iPhone · Android · webbrowser",
     "h1a": "Jullie gezin,",
     "h1b": "op één lijn.",
-    "lead": "Eén rustige plek voor de week van je gezin: een gedeelde agenda, boodschappenlijsten en taken die iedereen ziet. Op elke telefoon — en ook op de computer.",
     "webLink": "Openen in je browser",
     "notes": [
       "Gratis",
       "Zonder reclame",
       "Servers in de EU"
-    ],
-    "altCalendar": "Maandagenda van Daili",
-    "altHome": "Beginscherm van Daili met de tegels van de functies"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Klaar als jij het bent",
       "sub": "Begin met één lijst. Neem de agenda erbij als je zover bent. Daili groeit mee met je gezin."
     }
-  },
-
-  "showcase": {
-    "pill": "In een seconde gesynct — op elke telefoon in het gezin",
-    "h2": "Eén app voor het hele gezin",
-    "alt": "Het beginscherm van Daili met een afspraak, een boodschap en een verjaardag die ernaast zweven"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Zwemles", "s": "Vandaag · 16:30" },
-        { "t": "Melk · 2 l", "s": "Marco is in de winkel" },
-        { "t": "Vuilnis buitenzetten", "s": "Noah · klaar" }
-      ],
-      "calendar": [
-        { "t": "Zwemles", "s": "Vandaag · 16:30 · Emma" },
-        { "t": "Pianoles", "s": "om de week op woensdag" },
-        { "t": "Herinnering op 4 telefoons", "s": "15 minuten van tevoren" }
-      ],
-      "shopping": [
-        { "t": "Melk · 2 l", "s": "Lena zette het erop — thuis" },
-        { "t": "Brood", "s": "Marco · in de winkel" },
-        { "t": "In een seconde gesynct", "s": "op elke telefoon in het gezin" }
-      ],
-      "todos": [
-        { "t": "Planten water geven", "s": "Emma · vrijdag" },
-        { "t": "Vuilnis buitenzetten", "s": "Noah · klaar 🎉" },
-        { "t": "Herinnering", "s": "Donderdag · 18:00" }
-      ],
-      "meals": [
-        { "t": "Dinsdag · Avondeten", "s": "Pasta — uit het receptenboek" },
-        { "t": "6 ingrediënten → lijst", "s": "met één tik toegevoegd" },
-        { "t": "De week rond op zondag", "s": "van ontbijt tot avondeten" }
-      ],
-      "birthdays": [
-        { "t": "Emma wordt 12", "s": "over 22 dagen · 29 augustus" },
-        { "t": "Herinnering voor iedereen", "s": "een week van tevoren" },
-        { "t": "Marco wordt 41", "s": "over 3 weken — elk jaar" }
-      ],
-      "vault": [
-        { "t": "Verzekeringspas.pdf", "s": "alleen op deze telefoon" },
-        { "t": "Vakantie 2026 · 48 foto's", "s": "nooit geüpload" },
-        { "t": "Geen server ziet ze ooit", "s": "de onze ook niet" }
-      ],
-      "family": [
-        { "t": "Familie Berger", "s": "5 leden" },
-        { "t": "Uitnodigingscode 482913", "s": "of deel de link" },
-        { "t": "Noah · beheerd profiel", "s": "zonder e-mail — later omzetten" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Zondagavond gepland. De hele week geregeld.",
-    "p": "Vijf minuten aan de keukentafel — en vier telefoons kennen het plan.",
-    "facts": [
-      { "t": "Gratis. Geen reclame.", "s": "Niets verkocht, niets gevolgd voor advertenties." },
-      { "t": "Servers in de EU", "s": "De gegevens van je gezin blijven in Europa. Foto's en documenten verlaten de telefoon nooit." },
-      { "t": "Ook kids en oma", "s": "Eigen accounts voor tieners, beheerde profielen voor de kleintjes. Uitnodigen met een 6-cijferige code." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Aan de slag",
-    "h2": "In ongeveer een minuut geregeld",
-    "steps": [
-      {
-        "h3": "Haal de app",
-        "p": "Gratis op iPhone en Android — of open app.daili.app op de computer. Zonder creditcard en zonder proefperiode die afloopt."
-      },
-      {
-        "h3": "Maak je gezin aan",
-        "p": "Nodig iedereen uit met een code van 6 cijfers of een link. Ouders zijn beheerder, kinderen en tieners krijgen een eigen login, en de kleintjes zonder e-mailadres krijgen een beheerd profiel."
-      },
-      {
-        "h3": "Iedereen op één lijn",
-        "p": "Wat jij op je telefoon zet, staat ongeveer een seconde later op die van de anderen — agenda, lijsten en taken net zo goed."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Vergelijking",
-    "h2": "Waarom niet gewoon een gedeelde agenda?",
-    "lead": "Google Agenda is heel goed in agenda's. Maar het gezinsleven bestaat niet alleen uit afspraken — en een bord in de keuken gaat niet mee naar de supermarkt.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Gedeelde agenda", "paper": "Papier en bord" },
-    "rows": [
-      "Ieders afspraken op één plek",
-      "Herinneringen op elke telefoon",
-      "Een boodschappenlijst die live bijwerkt",
-      "Taken met een naam erop",
-      "Weekmenu en receptenboek",
-      "Kinderen met een eigen login",
-      "Verjaardagen elk jaar onthouden",
-      "Werkt op de telefoon en in de browser",
-      "Geen reclame, niets verkocht"
-    ],
-    "legend": "✓ ja · ~ deels · — nee"
-  },
-
-  "pricing": {
-    "eyebrow": "Prijs",
-    "h2": "Gratis — en voor jou gratis, voor altijd",
-    "points": [
-      "Alles op deze pagina is nu al gratis",
-      "Geen creditcard, geen proefperiode, geen functies op slot",
-      "Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is voor jou gratis"
-    ],
-    "big": "€0",
-    "bigNote": "per gezin · geen addertje",
-    "lead": "Geen creditcard, geen proefperiode, niets op slot.",
-    "promiseTitle": "Onze belofte",
-    "promise": "Elk gezin dat erbij komt voordat we betaalde extra's toevoegen, houdt alles voor altijd gratis — ook alles wat we later toevoegen."
-  },
-
-  "trust": {
-    "h2": "De plannen van jullie gezin zijn van jullie gezin",
-    "pills": [
-      { "strong": "Geen reclame", "span": "Niets om weg te klikken — nu niet en later niet." },
-      { "strong": "Geen tracking", "span": "Geen statistieken, geen profielen — deze site gebruikt niet eens cookies." },
-      { "strong": "Geen verkoop van gegevens", "span": "Gratis app, servers in de EU, jouw rechten ingebouwd." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Functies",
-    "h2": "Alles wat je gezin jongleert, in één app",
-    "lead": "Agenda, lijsten, maaltijden en verjaardagen — gedeeld met de mensen die het moeten zien, en met niemand anders."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Agenda",
-      "h2": "Eén agenda voor iedereen",
-      "p": "De hele week en de hele maand van het gezin in één oogopslag — en je vergeet nooit meer iemand op te halen.",
-      "bullets": [
-        "Afspraken met kleur, categorie, locatie en notities",
-        "Herhalingen die kloppen — voetbal elke dinsdag, piano om de week",
-        "Herinneringen op elke telefoon in het gezin",
-        "Feestdagen van 35 landen; privé-afspraken blijven privé",
-        "Fotografeer een brief van school — de data komen in de agenda"
-      ],
-      "alt": "Maandagenda met gekleurde afspraken"
-    },
-    "shopping": {
-      "eyebrow": "Boodschappen",
-      "h2": "Boodschappenlijsten die live meelopen",
-      "p": "Jij zet \"melk\" op je telefoon — en het staat ongeveer een seconde later op die van je partner, in de winkel.",
-      "bullets": [
-        "Gedeelde lijsten die het hele gezin kan bijwerken",
-        "Aantal, categorie en notitie per product",
-        "Afgevinkte producten zakken netjes naar onderen"
-      ],
-      "alt": "Gedeelde boodschappenlijst"
-    },
-    "todos": {
-      "eyebrow": "Taken",
-      "h2": "Op elke taak staat een naam",
-      "p": "Nooit meer \"ik dacht dat jij het deed\". Kinderen zien hun eigen taken en vinken ze zelf af.",
-      "bullets": [
-        "Wie het doet, wanneer het af moet en een herinnering",
-        "Voor klusjes, boodschappen en alles daartussen"
-      ],
-      "alt": "Takenlijst van het gezin met wie wat doet"
-    },
-    "habits": {
-      "eyebrow": "Gewoontes",
-      "h2": "Kleine gewoontes, het hele gezin juicht",
-      "p": "Planten water geven, tien minuten lezen, de hond uitlaten — vink het af, houd je reeks vast, en elk vinkje geeft Minzi, jullie gezinskat, energie voor haar volgende reis.",
-      "bullets": [
-        "Ieder voor zich, samen of alleen voor jou — met een dagelijkse herinnering",
-        "Reeksen met rustdagen en pauzes, zodat een vakantie ze niet breekt",
-        "Een volle energiebalk stuurt Minzi op reis — en er komt een ansichtkaart thuis"
-      ],
-      "alt": "Gewoontescherm van het gezin met reeksen en Minzi de kat"
-    },
-    "meals": {
-      "eyebrow": "Menu",
-      "h2": "Het avondeten, zondag al beslist",
-      "p": "Plan van ontbijt tot avondeten voor de hele week, rechtstreeks uit het eigen receptenboek van jullie gezin — en stuur de ingrediënten daarna naar een boodschappenlijst.",
-      "bullets": [
-        "Weekmenu met vier maaltijden per dag",
-        "Receptenboek met foto's en importeren via een link",
-        "De ingrediënten van een recept met één tik op elke lijst",
-        "Geen inspiratie? Laat Daili avondeten voorstellen voor de vrije avonden"
-      ],
-      "alt": "Weekmenu"
-    },
-    "birthdays": {
-      "eyebrow": "Feesten",
-      "h2": "Nooit meer een verjaardag vergeten",
-      "p": "Verjaardagen, jubilea en familiefeesten — elk jaar onthouden, met een aftelling en herinneringen voor iedereen.",
-      "bullets": [],
-      "alt": "Scherm met verjaardagen en feesten"
-    },
-    "notes": {
-      "eyebrow": "Notities",
-      "h2": "Snelle notities, altijd bij de hand",
-      "p": "Het wifi-wachtwoord, het nummer van de oppas, een link die je wilt bewaren — in twee tikken opgeslagen, standaard privé, gedeeld wanneer je wilt.",
-      "bullets": [
-        "Deel een link vanuit elke app met Daili — het wordt een notitie",
-        "Alleen ik, het hele gezin of gekozen leden",
-        "Vastpinnen, taggen en zoeken — je eigen notities en die met jou gedeeld"
-      ],
-      "alt": "Notitielijst met gedeelde en privénotities"
-    },
-    "vault": {
-      "eyebrow": "Privé van opzet",
-      "h2": "Foto's en documenten blijven op je telefoon",
-      "p": "De kluis van Daili houdt gezinsfoto's en belangrijke documenten geordend — alleen op je eigen apparaat bewaard, nooit naar onze servers gestuurd.",
-      "bullets": [],
-      "alt": "Documentenkluis"
-    },
-    "family": {
-      "eyebrow": "Gezin",
-      "h2": "Ouders, kinderen en oma — iedereen erbij",
-      "p": "Nodig je gezin uit met een simpele code van 6 cijfers of een link. Ouders zijn beheerder, kinderen en tieners krijgen een eigen login, en de kleintjes zonder e-mailadres krijgen een beheerd profiel dat je later kunt omzetten.",
-      "bullets": [],
-      "alt": "Gezinsscherm met de leden en de uitnodigingscode"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Webapp",
-    "h2": "Ook op de computer",
-    "p": "Hetzelfde gezin, dezelfde plannen — in een browservenster op app.daili.app. Plan de week op een groot scherm en zet de boodschappen erbij op je telefoon in de keuken.",
-    "points": [
-      "Log in met hetzelfde account; alles blijft synchroon",
-      "Agenda, boodschappenlijsten, taken, recepten, menuplanner, verjaardagen en gezin",
-      "Niets te installeren — werkt in elke moderne browser"
-    ],
-    "cta": "app.daili.app openen",
-    "note": "Foto's en documenten staan alleen op je telefoon en zijn daarom niet zichtbaar in de browser. De webapp is beschikbaar in het Engels en Duits."
   },
 
   "faq": {

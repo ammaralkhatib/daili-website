@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funcții",
     "webApp": "Aplicație web",
-    "pricing": "Preț",
     "support": "Asistență",
     "blog": "Blog",
     "help": "Ajutor",
-    "download": "Descarcă",
     "language": "Limbă",
     "skip": "Sari la conținut",
     "menu": "Deschide meniul"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Acum pe iPhone, Android și pe web",
-    "kicker": "iPhone · Android · browser web",
     "h1a": "Familia ta,",
     "h1b": "pe aceeași pagină.",
-    "lead": "Un loc liniștit pentru săptămâna familiei tale: un calendar comun, liste de cumpărături și sarcini pe care le vede toată lumea. Pe orice telefon — și pe calculator.",
     "webLink": "Deschide în browser",
     "notes": [
       "Gratuit",
       "Fără reclame",
       "Servere în UE"
-    ],
-    "altCalendar": "Calendar lunar Daili",
-    "altHome": "Ecranul principal Daili, cu plăci de funcții"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Gata când ești și tu",
       "sub": "Începe cu o listă. Adaugă calendarul când ești pregătit. Daili crește odată cu familia ta."
     }
-  },
-
-  "showcase": {
-    "pill": "Sincronizat într-o secundă — pe fiecare telefon din familie",
-    "h2": "O singură aplicație pentru toată familia",
-    "alt": "Ecranul principal Daili, cu un eveniment, un produs de cumpărat și o zi de naștere plutind alături"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Curs de înot", "s": "Azi · 16:30" },
-        { "t": "Lapte · 2 l", "s": "Marco e în magazin" },
-        { "t": "Scoate gunoiul", "s": "Noah · gata" }
-      ],
-      "calendar": [
-        { "t": "Curs de înot", "s": "Azi · 16:30 · Emma" },
-        { "t": "Lecție de pian", "s": "din două în două miercuri" },
-        { "t": "Memento pe 4 telefoane", "s": "cu 15 minute înainte" }
-      ],
-      "shopping": [
-        { "t": "Lapte · 2 l", "s": "Lena l-a adăugat — de acasă" },
-        { "t": "Pâine", "s": "Marco · în magazin" },
-        { "t": "Sincronizat într-o secundă", "s": "pe fiecare telefon din casă" }
-      ],
-      "todos": [
-        { "t": "Udă plantele", "s": "Emma · vineri" },
-        { "t": "Scoate gunoiul", "s": "Noah · gata 🎉" },
-        { "t": "Memento", "s": "Joi · 18:00" }
-      ],
-      "meals": [
-        { "t": "Marți · Cină", "s": "Paste — din caietul de rețete" },
-        { "t": "6 ingrediente → Cumpărături", "s": "adăugate dintr-o atingere" },
-        { "t": "Săptămâna gata duminică", "s": "de la mic dejun la cină" }
-      ],
-      "birthdays": [
-        { "t": "Emma face 12 ani", "s": "peste 22 de zile · 29 august" },
-        { "t": "Memento pentru toți", "s": "cu o săptămână înainte" },
-        { "t": "Marco face 41 de ani", "s": "peste 3 săptămâni — anual" }
-      ],
-      "vault": [
-        { "t": "Card de asigurare.pdf", "s": "doar pe telefonul acesta" },
-        { "t": "Vacanță 2026 · 48 poze", "s": "niciodată încărcate" },
-        { "t": "Niciun server nu le vede", "s": "nici al nostru" }
-      ],
-      "family": [
-        { "t": "Familia Berger", "s": "5 membri" },
-        { "t": "Cod de invitație 482913", "s": "sau trimite linkul" },
-        { "t": "Noah · profil gestionat", "s": "fără e-mail — cont mai târziu" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Planificat duminică seara. Rezolvat toată săptămâna.",
-    "p": "Cinci minute la masa din bucătărie — și patru telefoane știu planul.",
-    "facts": [
-      { "t": "Gratis. Fără reclame.", "s": "Nu vindem nimic, nu urmărim nimic pentru reclame." },
-      { "t": "Servere în UE", "s": "Datele familiei tale rămân în Europa. Pozele și documentele nu părăsesc niciodată telefonul." },
-      { "t": "Și copiii, și bunica", "s": "Conturi proprii pentru adolescenți, profiluri gestionate pentru cei mici. Invitație cu un cod din 6 cifre." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Primii pași",
-    "h2": "Gata în aproximativ un minut",
-    "steps": [
-      {
-        "h3": "Descarcă aplicația",
-        "p": "Gratuit pe iPhone și Android — sau deschide app.daili.app pe calculator. Fără card bancar, fără perioadă de probă care se termină cândva."
-      },
-      {
-        "h3": "Creează-ți familia",
-        "p": "Invită pe toată lumea cu un cod din 6 cifre sau cu un link. Părinții sunt administratori, copiii și adolescenții primesc propriul cont, iar cei mici fără e-mail primesc un profil gestionat."
-      },
-      {
-        "h3": "Sunteți pe aceeași pagină",
-        "p": "Ce adaugi pe telefonul tău ajunge pe telefoanele celorlalți în aproximativ o secundă — calendar, liste și sarcini deopotrivă."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Comparație",
-    "h2": "De ce nu doar un calendar partajat?",
-    "lead": "Google Calendar se descurcă foarte bine cu calendarele. Dar viața de familie nu înseamnă doar evenimente — iar tabla din bucătărie nu vine cu tine la supermarket.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Calendar partajat", "paper": "Hârtie și tablă" },
-    "rows": [
-      "Evenimentele tuturor într-un singur loc",
-      "Memento-uri pe fiecare telefon",
-      "O listă de cumpărături care se actualizează live",
-      "Sarcini cu un nume pe ele",
-      "Meniu săptămânal și colecție de rețete",
-      "Copiii au propriul cont",
-      "Zile de naștere reținute în fiecare an",
-      "Merge pe telefon și în browser",
-      "Fără reclame, nimic vândut"
-    ],
-    "legend": "✓ da · ~ parțial · — nu"
-  },
-
-  "pricing": {
-    "eyebrow": "Preț",
-    "h2": "Gratuit — și gratuit pentru tine, pentru totdeauna",
-    "points": [
-      "Tot ce se vede pe această pagină este gratuit chiar acum",
-      "Fără card bancar, fără perioadă de probă, fără funcții blocate",
-      "Dacă vom adăuga vreodată opțiuni cu plată, tot ce e gratuit azi rămâne gratuit pentru tine"
-    ],
-    "big": "€0",
-    "bigNote": "pe familie · fără șmecherii",
-    "lead": "Fără card, fără perioadă de probă, fără funcții blocate.",
-    "promiseTitle": "Promisiunea noastră",
-    "promise": "Orice familie care intră înainte să adăugăm opțiuni cu plată păstrează totul gratuit pentru totdeauna — inclusiv ce adăugăm mai târziu."
-  },
-
-  "trust": {
-    "h2": "Planurile familiei tale aparțin familiei tale",
-    "pills": [
-      { "strong": "Fără reclame", "span": "Nimic de închis — nici acum, nici mai târziu." },
-      { "strong": "Fără urmărire", "span": "Fără analize, fără profilare — acest site nu folosește nici măcar cookie-uri." },
-      { "strong": "Nu îți vindem datele", "span": "Aplicație gratuită, servere în UE, drepturile tale incluse." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funcții",
-    "h2": "Tot ce jonglează familia ta, într-o singură aplicație",
-    "lead": "Calendar, liste, mese și zile de naștere — împărțite cu oamenii care trebuie să le vadă și cu nimeni altcineva."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Calendar",
-      "h2": "Un calendar pentru toată lumea",
-      "p": "Vezi dintr-o privire săptămâna și luna întregii familii — și nu mai uita niciodată să iei pe cineva de la școală.",
-      "bullets": [
-        "Evenimente colorate, cu categorii, locuri și notițe",
-        "Repetări făcute cum trebuie — fotbal în fiecare marți, pian o dată la două săptămâni",
-        "Memento-uri pe fiecare telefon din familie",
-        "Sărbători legale pentru 35 de țări, evenimentele private rămân private",
-        "Fotografiază un anunț de la școală — datele ajung în calendar"
-      ],
-      "alt": "Calendar lunar cu etichete de evenimente"
-    },
-    "shopping": {
-      "eyebrow": "Cumpărături",
-      "h2": "Liste de cumpărături care se actualizează live",
-      "p": "Adaugi „lapte” pe telefonul tău — și apare pe telefonul partenerului, în magazin, în aproximativ o secundă.",
-      "bullets": [
-        "Liste comune, pe care le poate edita toată familia",
-        "Cantitate, categorie și notiță pentru fiecare produs",
-        "Produsele bifate coboară frumos la final"
-      ],
-      "alt": "Listă de cumpărături comună"
-    },
-    "todos": {
-      "eyebrow": "Sarcini",
-      "h2": "Fiecare sarcină are un nume pe ea",
-      "p": "Gata cu „credeam că te ocupi tu”. Copiii își văd propriile sarcini și le bifează singuri.",
-      "bullets": [
-        "Responsabil, termen și memento",
-        "Pentru treburi casnice, comisioane și tot ce e între ele"
-      ],
-      "alt": "Listă de sarcini a familiei, cu responsabili"
-    },
-    "habits": {
-      "eyebrow": "Obiceiuri",
-      "h2": "Obiceiuri mici, toată familia aplaudă",
-      "p": "Uditul florilor, zece minute de citit, plimbarea câinelui — bifează, păstrează seria, iar fiecare bifă îi dă lui Minzi, pisica familiei, energie pentru următoarea călătorie.",
-      "bullets": [
-        "Fiecare, împreună sau doar pentru tine — cu un memento zilnic",
-        "Serii cu zile de pauză și pauze de câteva zile, ca vacanța să nu le rupă",
-        "Cu bara de energie plină, Minzi pleacă în călătorie — și acasă sosește o carte poștală"
-      ],
-      "alt": "Ecranul obiceiurilor familiei, cu serii și pisica Minzi"
-    },
-    "meals": {
-      "eyebrow": "Meniu",
-      "h2": "Cina, decisă încă de duminică",
-      "p": "Planifică de la micul dejun la cină pentru toată săptămâna, direct din rețetele familiei tale — apoi trimite ingredientele pe o listă de cumpărături.",
-      "bullets": [
-        "Meniu săptămânal cu patru mese pe zi",
-        "Colecție de rețete cu poze și import după link",
-        "Ingredientele unei rețete pe orice listă, dintr-o atingere",
-        "Fără idei? Lasă-l pe Daili să propună cine pentru serile libere"
-      ],
-      "alt": "Meniu săptămânal"
-    },
-    "birthdays": {
-      "eyebrow": "Sărbători",
-      "h2": "Nu mai uita nicio zi de naștere",
-      "p": "Zile de naștere, aniversări și sărbători de familie — reținute în fiecare an, cu numărătoare inversă și memento-uri pentru toți.",
-      "bullets": [],
-      "alt": "Ecran cu zile de naștere și sărbători"
-    },
-    "notes": {
-      "eyebrow": "Notițe",
-      "h2": "Notițe rapide, mereu la îndemână",
-      "p": "Parola de Wi-Fi, numărul bonei, un link care merită păstrat — salvate din două atingeri, private implicit, partajate când vrei.",
-      "bullets": [
-        "Partajează un link din orice aplicație în Daili — devine o notiță",
-        "Doar eu, toată familia sau membri aleși",
-        "Fixează, etichetează și caută — ale tale și cele partajate cu tine"
-      ],
-      "alt": "Listă de notițe partajate și private"
-    },
-    "vault": {
-      "eyebrow": "Privat din construcție",
-      "h2": "Pozele și documentele rămân pe telefonul tău",
-      "p": "Seiful Daili ține pozele de familie și documentele importante în ordine — păstrate doar pe dispozitivul tău, niciodată încărcate pe serverele noastre.",
-      "bullets": [],
-      "alt": "Seif de documente"
-    },
-    "family": {
-      "eyebrow": "Familie",
-      "h2": "Părinți, copii și bunica — toți înăuntru",
-      "p": "Invită-ți familia cu un simplu cod din 6 cifre sau cu un link. Părinții sunt administratori, copiii și adolescenții primesc propriul cont, iar cei mici fără e-mail primesc un profil gestionat, pe care îl poți transforma mai târziu.",
-      "bullets": [],
-      "alt": "Ecranul Familie cu membrii și codul de invitație"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Aplicație web",
-    "h2": "Și pe calculatorul tău",
-    "p": "Aceeași familie, aceleași planuri — într-o fereastră de browser, la app.daili.app. Planifică săptămâna pe ecran mare și adaugă cumpărăturile din bucătărie, de pe telefon.",
-    "points": [
-      "Conectează-te cu același cont; totul rămâne sincronizat",
-      "Calendar, liste de cumpărături, sarcini, rețete, meniu, zile de naștere și familie",
-      "Nimic de instalat — merge în orice browser modern"
-    ],
-    "cta": "Deschide app.daili.app",
-    "note": "Pozele și documentele stau doar pe telefonul tău, așa că nu apar în browser. Aplicația web există în engleză și germană."
   },
 
   "faq": {

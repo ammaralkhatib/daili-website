@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funkce",
     "webApp": "Webová aplikace",
-    "pricing": "Cena",
     "support": "Podpora",
     "blog": "Blog",
     "help": "Nápověda",
-    "download": "Stáhnout",
     "language": "Jazyk",
     "skip": "Přejít k obsahu",
     "menu": "Otevřít nabídku"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Nově na iPhonu, Androidu i na webu",
-    "kicker": "iPhone · Android · webový prohlížeč",
     "h1a": "Celá rodina",
     "h1b": "na jedné vlně.",
-    "lead": "Jedno klidné místo pro týden vaší rodiny: sdílený kalendář, nákupní seznamy a úkoly, které vidí všichni. Na každém telefonu — a taky na počítači.",
     "webLink": "Otevřít v prohlížeči",
     "notes": [
       "Zdarma",
       "Bez reklam",
       "Servery v EU"
-    ],
-    "altCalendar": "Měsíční kalendář v Daili",
-    "altHome": "Úvodní obrazovka Daili s dlaždicemi funkcí"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Až budete připraveni",
       "sub": "Začněte jedním seznamem. Kalendář přidejte, až budete chtít. Daili roste s vaší rodinou."
     }
-  },
-
-  "showcase": {
-    "pill": "Sladěno za sekundu — na každém telefonu v rodině",
-    "h2": "Jedna aplikace pro celou rodinu",
-    "alt": "Úvodní obrazovka Daili, vedle které se vznáší událost, položka nákupu a narozeniny"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Plavání", "s": "Dnes · 16:30" },
-        { "t": "Mléko · 2 l", "s": "Marco je v obchodě" },
-        { "t": "Vynést koš", "s": "Noah · hotovo" }
-      ],
-      "calendar": [
-        { "t": "Plavání", "s": "Dnes · 16:30 · Emma" },
-        { "t": "Hodina klavíru", "s": "každou druhou středu" },
-        { "t": "Připomenutí na 4 telefony", "s": "15 minut předem" }
-      ],
-      "shopping": [
-        { "t": "Mléko · 2 l", "s": "Lena ho přidala — z domova" },
-        { "t": "Chleba", "s": "Marco · v obchodě" },
-        { "t": "Sladěno za sekundu", "s": "na každém telefonu v rodině" }
-      ],
-      "todos": [
-        { "t": "Zalít kytky", "s": "Emma · pátek" },
-        { "t": "Vynést koš", "s": "Noah · hotovo 🎉" },
-        { "t": "Připomenutí", "s": "Čtvrtek · 18:00" }
-      ],
-      "meals": [
-        { "t": "Úterý · Večeře", "s": "Těstoviny — z receptů" },
-        { "t": "6 surovin → Nákupy", "s": "přidáno jedním klepnutím" },
-        { "t": "Týden hotový v neděli", "s": "od snídaně po večeři" }
-      ],
-      "birthdays": [
-        { "t": "Emmě bude 12", "s": "za 22 dní · 29. srpna" },
-        { "t": "Připomenutí pro všechny", "s": "týden předem" },
-        { "t": "Marcovi bude 41", "s": "za 3 týdny — každý rok" }
-      ],
-      "vault": [
-        { "t": "Karta pojištěnce.pdf", "s": "jen v tomhle telefonu" },
-        { "t": "Dovolená 2026 · 48 fotek", "s": "nikdy nenahrané" },
-        { "t": "Žádný server je nevidí", "s": "ani ten náš" }
-      ],
-      "family": [
-        { "t": "Bergerovi", "s": "5 členů" },
-        { "t": "Kód pozvánky 482913", "s": "nebo sdílejte odkaz" },
-        { "t": "Noah · spravovaný profil", "s": "bez e-mailu — účet až později" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Naplánováno v neděli večer. Hotovo na celý týden.",
-    "p": "Pět minut u kuchyňského stolu — a čtyři telefony znají plán.",
-    "facts": [
-      { "t": "Zdarma. Bez reklam.", "s": "Nic neprodáváme, nic nesledujeme kvůli reklamě." },
-      { "t": "Servery v EU", "s": "Data vaší rodiny zůstávají v Evropě. Fotky a dokumenty nikdy neopustí telefon." },
-      { "t": "I pro děti a babičku", "s": "Vlastní přihlášení pro teenagery, spravované profily pro nejmenší. Pozvánka 6místným kódem." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Začínáme",
-    "h2": "Hotovo asi za minutu",
-    "steps": [
-      {
-        "h3": "Stáhněte si aplikaci",
-        "p": "Zdarma na iPhone i Android — nebo si na počítači otevřete app.daili.app. Bez karty a bez zkušební doby, která jednou skončí."
-      },
-      {
-        "h3": "Založte rodinu",
-        "p": "Pozvěte všechny šestimístným kódem nebo odkazem. Rodiče jsou správci, děti a teenageři mají vlastní přihlášení a ti nejmenší bez e-mailu dostanou spravovaný profil."
-      },
-      {
-        "h3": "Všichni na jedné vlně",
-        "p": "Co přidáte na svém telefonu, je asi za sekundu na telefonech ostatních — kalendář, seznamy i úkoly stejně."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Srovnání",
-    "h2": "Proč ne prostě sdílený kalendář?",
-    "lead": "Kalendář Google zvládá kalendáře opravdu dobře. Jenže rodinný život nejsou jen termíny — a tabule v kuchyni s vámi do obchodu nepůjde.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Sdílený kalendář", "paper": "Papír a tabule" },
-    "rows": [
-      "Termíny všech na jednom místě",
-      "Připomenutí na každém telefonu",
-      "Nákupní seznam, který se mění v reálném čase",
-      "Úkoly, na kterých stojí jméno",
-      "Jídelníček na týden a recepty",
-      "Děti mají vlastní přihlášení",
-      "Narozeniny připomenuté každý rok",
-      "Funguje v telefonu i v prohlížeči",
-      "Bez reklam, nic na prodej"
-    ],
-    "legend": "✓ ano · ~ částečně · — ne"
-  },
-
-  "pricing": {
-    "eyebrow": "Cena",
-    "h2": "Zdarma — a pro vás zdarma navždy",
-    "points": [
-      "Všechno na této stránce je zdarma už teď",
-      "Bez karty, bez zkušební doby a bez zamčených funkcí",
-      "Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane pro vás zdarma"
-    ],
-    "big": "€0",
-    "bigNote": "na rodinu · bez háčku",
-    "lead": "Bez karty, bez zkušební doby, bez zamčených funkcí.",
-    "promiseTitle": "Náš slib",
-    "promise": "Každá rodina, která se přidá dřív, než přidáme placené doplňky, si nechá všechno zdarma navždy — včetně toho, co přidáme později."
-  },
-
-  "trust": {
-    "h2": "Plány vaší rodiny patří vaší rodině",
-    "pills": [
-      { "strong": "Žádné reklamy", "span": "Není co zavírat — ani teď, ani později." },
-      { "strong": "Žádné sledování", "span": "Žádná analytika, žádné profilování — tyto stránky nepoužívají ani cookies." },
-      { "strong": "Žádný prodej dat", "span": "Aplikace zdarma, servery v EU a vaše práva zabudovaná od začátku." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funkce",
-    "h2": "Všechno, co vaše rodina žongluje, v jedné aplikaci",
-    "lead": "Kalendář, seznamy, jídelníček a narozeniny — sdílené s těmi, kdo to mají vidět, a s nikým jiným."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalendář",
-      "h2": "Jeden kalendář pro všechny",
-      "p": "Celý týden i celý měsíc rodiny na jeden pohled — a už nikdy nezapomenete někoho vyzvednout.",
-      "bullets": [
-        "Barevné události s kategoriemi, místy a poznámkami",
-        "Opakování udělané pořádně — fotbal každé úterý, klavír každý druhý týden",
-        "Připomenutí na každém telefonu v rodině",
-        "Svátky pro 35 zemí; soukromé události zůstávají soukromé",
-        "Vyfoťte dopis ze školy — termíny se samy objeví v kalendáři"
-      ],
-      "alt": "Měsíční kalendář s barevnými událostmi"
-    },
-    "shopping": {
-      "eyebrow": "Nákupy",
-      "h2": "Nákupní seznamy, které stíhají",
-      "p": "Napíšete „mléko“ na svém telefonu — a asi za sekundu to má váš protějšek na svém, přímo v obchodě.",
-      "bullets": [
-        "Sdílené seznamy, které může upravovat celá rodina",
-        "Množství, kategorie a poznámka u každé položky",
-        "Odškrtnuté položky sjedou úhledně dolů"
-      ],
-      "alt": "Sdílený nákupní seznam"
-    },
-    "todos": {
-      "eyebrow": "Úkoly",
-      "h2": "Na každém úkolu stojí jméno",
-      "p": "Konec s „myslel jsem, že to děláš ty“. Děti vidí své vlastní úkoly a samy si je odškrtávají.",
-      "bullets": [
-        "Odpovědná osoba, termín a připomenutí",
-        "Hodí se na domácí práce, pochůzky i všechno mezi tím"
-      ],
-      "alt": "Rodinný seznam úkolů s odpovědnými osobami"
-    },
-    "habits": {
-      "eyebrow": "Návyky",
-      "h2": "Malé návyky, celá rodina fandí",
-      "p": "Zalít květiny, deset minut číst, vyvenčit psa — odškrtněte, udržte sérii a každé odškrtnutí dá Minzi, vaší rodinné kočce, energii na další výlet.",
-      "bullets": [
-        "Každý zvlášť, společně, nebo jen pro vás — s denní připomínkou",
-        "Série s dny volna a pauzami, takže je dovolená nepřeruší",
-        "Plná lišta energie pošle Minzi na výlet — a domů přijde pohlednice"
-      ],
-      "alt": "Obrazovka rodinných návyků se sériemi a kočkou Minzi"
-    },
-    "meals": {
-      "eyebrow": "Jídelníček",
-      "h2": "Večeře rozhodnutá už v neděli",
-      "p": "Naplánujte od snídaně po večeři na celý týden, rovnou z vlastních receptů vaší rodiny — a pak pošlete suroviny na nákupní seznam.",
-      "bullets": [
-        "Jídelníček na týden se čtyřmi jídly denně",
-        "Recepty s fotkami a importem přes odkaz",
-        "Suroviny receptu na libovolný seznam jedním klepnutím",
-        "Došly nápady? Nechte Daili navrhnout večeře na volné večery"
-      ],
-      "alt": "Jídelníček na týden"
-    },
-    "birthdays": {
-      "eyebrow": "Oslavy",
-      "h2": "Už nikdy nezapomenout na narozeniny",
-      "p": "Narozeniny, výročí a rodinné oslavy — připomenuté každý rok, s odpočtem a upozorněním pro všechny.",
-      "bullets": [],
-      "alt": "Obrazovka narozenin a oslav"
-    },
-    "notes": {
-      "eyebrow": "Poznámky",
-      "h2": "Rychlé poznámky, vždy po ruce",
-      "p": "Heslo k Wi-Fi, číslo na chůvu, odkaz, který stojí za uložení — uložené dvěma klepnutími, ve výchozím stavu soukromé, sdílené, kdy chcete.",
-      "bullets": [
-        "Sdílejte odkaz z libovolné aplikace do Daili — stane se z něj poznámka",
-        "Jen já, celá rodina, nebo vybraní členové",
-        "Připínejte, štítkujte a hledejte — své i sdílené s vámi"
-      ],
-      "alt": "Seznam sdílených a soukromých poznámek"
-    },
-    "vault": {
-      "eyebrow": "Soukromé záměrně",
-      "h2": "Fotky a dokumenty zůstávají v telefonu",
-      "p": "Trezor Daili drží rodinné fotky a důležité dokumenty v pořádku — uložené jen ve vašem zařízení a nikdy nenahrané na naše servery.",
-      "bullets": [],
-      "alt": "Trezor na dokumenty"
-    },
-    "family": {
-      "eyebrow": "Rodina",
-      "h2": "Rodiče, děti i babička — všichni",
-      "p": "Pozvěte rodinu jednoduchým šestimístným kódem nebo odkazem. Rodiče jsou správci, děti a teenageři mají vlastní přihlášení a ti nejmenší bez e-mailu dostanou spravovaný profil, ze kterého může později být plnohodnotný účet.",
-      "bullets": [],
-      "alt": "Obrazovka rodiny se členy a kódem pozvánky"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Webová aplikace",
-    "h2": "Taky na počítači",
-    "p": "Stejná rodina, stejné plány — v okně prohlížeče na app.daili.app. Naplánujte týden na velké obrazovce a nákup dopište v kuchyni na telefonu.",
-    "points": [
-      "Přihlaste se stejným účtem; všechno zůstane sesynchronizované",
-      "Kalendář, nákupní seznamy, úkoly, recepty, jídelníček, narozeniny a rodina",
-      "Není co instalovat — funguje v každém moderním prohlížeči"
-    ],
-    "cta": "Otevřít app.daili.app",
-    "note": "Fotky a dokumenty jsou jen v telefonu, takže se v prohlížeči nezobrazují. Webová aplikace je v angličtině a němčině."
   },
 
   "faq": {

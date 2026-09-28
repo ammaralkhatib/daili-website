@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funktionen",
     "webApp": "Web-App",
-    "pricing": "Preis",
     "support": "Support",
     "blog": "Blog",
     "help": "Hilfe",
-    "download": "Download",
     "language": "Sprache",
     "skip": "Zum Inhalt springen",
     "menu": "Menü öffnen"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Jetzt auf iPhone, Android und im Web",
-    "kicker": "iPhone · Android · Webbrowser",
     "h1a": "Eure Familie,",
     "h1b": "auf einer Seite.",
-    "lead": "Ein ruhiger Ort für die Woche eurer Familie: ein gemeinsamer Kalender, Einkaufslisten und To-dos, die alle sehen. Auf jedem Handy — und am Computer.",
     "webLink": "Im Browser öffnen",
     "notes": [
       "Kostenlos",
       "Ohne Werbung",
       "Server in der EU"
-    ],
-    "altCalendar": "Daili Monatskalender",
-    "altHome": "Daili Startbildschirm mit Funktions-Kacheln"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Bereit, wenn ihr es seid",
       "sub": "Fangt mit einer Liste an. Nehmt den Kalender dazu, wenn ihr so weit seid. Daili wächst mit eurer Familie."
     }
-  },
-
-  "showcase": {
-    "pill": "In einer Sekunde synchron — auf jedem Handy der Familie",
-    "h2": "Eine App für die ganze Familie",
-    "alt": "Der Daili-Startbildschirm, daneben schweben ein Termin, ein Einkaufsartikel und ein Geburtstag"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Schwimmkurs", "s": "Heute · 16:30" },
-        { "t": "Milch · 2 l", "s": "Marco ist im Supermarkt" },
-        { "t": "Müll rausbringen", "s": "Noah · erledigt" }
-      ],
-      "calendar": [
-        { "t": "Schwimmkurs", "s": "Heute · 16:30 · Emma" },
-        { "t": "Klavierstunde", "s": "alle zwei Wochen mittwochs" },
-        { "t": "Erinnerung auf 4 Handys", "s": "15 Minuten vorher" }
-      ],
-      "shopping": [
-        { "t": "Milch · 2 l", "s": "Lena hat sie eingetragen — zu Hause" },
-        { "t": "Brot", "s": "Marco · im Supermarkt" },
-        { "t": "In einer Sekunde synchron", "s": "auf jedem Handy der Familie" }
-      ],
-      "todos": [
-        { "t": "Blumen gießen", "s": "Emma · Freitag" },
-        { "t": "Müll rausbringen", "s": "Noah · erledigt 🎉" },
-        { "t": "Erinnerung", "s": "Donnerstag · 18:00" }
-      ],
-      "meals": [
-        { "t": "Dienstag · Abendessen", "s": "Pasta — aus der Rezeptbox" },
-        { "t": "6 Zutaten → Einkaufen", "s": "mit einem Tipp hinzugefügt" },
-        { "t": "Die Woche steht am Sonntag", "s": "vom Frühstück bis zum Abendessen" }
-      ],
-      "birthdays": [
-        { "t": "Emma wird 12", "s": "in 22 Tagen · 29. August" },
-        { "t": "Erinnerung für alle", "s": "eine Woche vorher" },
-        { "t": "Marco wird 41", "s": "in 3 Wochen — jedes Jahr" }
-      ],
-      "vault": [
-        { "t": "Versicherungskarte.pdf", "s": "nur auf diesem Handy" },
-        { "t": "Urlaub 2026 · 48 Fotos", "s": "nie hochgeladen" },
-        { "t": "Kein Server sieht das je", "s": "auch unserer nicht" }
-      ],
-      "family": [
-        { "t": "Familie Berger", "s": "5 Mitglieder" },
-        { "t": "Einladungscode 482913", "s": "oder den Link teilen" },
-        { "t": "Noah · verwaltetes Profil", "s": "ohne E-Mail — später upgraden" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Am Sonntagabend geplant. Die ganze Woche gelebt.",
-    "p": "Fünf Minuten am Küchentisch — und vier Handys kennen den Plan.",
-    "facts": [
-      { "t": "Gratis. Ohne Werbung.", "s": "Wir verkaufen nichts und tracken nichts für Werbung." },
-      { "t": "Server in der EU", "s": "Eure Familiendaten bleiben in Europa. Fotos und Dokumente verlassen nie das Handy." },
-      { "t": "Auch Kinder und Oma", "s": "Eigene Logins für Teens, verwaltete Profile für die Kleinen. Einladen mit einem 6-stelligen Code." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Loslegen",
-    "h2": "In etwa einer Minute eingerichtet",
-    "steps": [
-      {
-        "h3": "App holen",
-        "p": "Kostenlos für iPhone und Android — oder am Computer app.daili.app öffnen. Ohne Kreditkarte, ohne Testphase, die irgendwann abläuft."
-      },
-      {
-        "h3": "Familie anlegen",
-        "p": "Ladet alle mit einem 6-stelligen Code oder einem Link ein. Eltern sind Admins, Kinder und Teenager bekommen einen eigenen Login — und die Kleinen ohne E-Mail ein verwaltetes Profil."
-      },
-      {
-        "h3": "Alle auf einer Seite",
-        "p": "Was du auf deinem Handy einträgst, ist eine Sekunde später auf allen anderen — Kalender, Listen und To-dos gleichermaßen."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Vergleich",
-    "h2": "Warum nicht einfach ein geteilter Kalender?",
-    "lead": "Google Kalender kann Kalender sehr gut. Familienleben besteht aber nicht nur aus Terminen — und die Tafel in der Küche kommt nicht mit in den Supermarkt.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Geteilter Kalender", "paper": "Zettel & Tafel" },
-    "rows": [
-      "Alle Termine an einem Ort",
-      "Erinnerungen auf jedem Handy",
-      "Einkaufsliste, die live mitgeht",
-      "Aufgaben mit einem Namen darauf",
-      "Essensplan und Rezeptbox",
-      "Kinder mit eigenem Login",
-      "Geburtstage jedes Jahr automatisch",
-      "Läuft auf dem Handy und im Browser",
-      "Keine Werbung, nichts verkauft"
-    ],
-    "legend": "✓ ja · ~ teilweise · — nein"
-  },
-
-  "pricing": {
-    "eyebrow": "Preis",
-    "h2": "Kostenlos — und für dich für immer kostenlos",
-    "points": [
-      "Alles auf dieser Seite ist gerade kostenlos",
-      "Keine Kreditkarte, keine Testphase, keine gesperrten Funktionen",
-      "Falls es später bezahlte Extras gibt: Alles, was heute kostenlos ist, bleibt für dich kostenlos"
-    ],
-    "big": "€0",
-    "bigNote": "pro Familie · ohne Haken",
-    "lead": "Keine Kreditkarte, keine Testphase, keine gesperrten Funktionen.",
-    "promiseTitle": "Unser Versprechen",
-    "promise": "Jede Familie, die dabei ist, bevor wir bezahlte Extras einführen, behält alles für immer kostenlos — auch alles, was später dazukommt."
-  },
-
-  "trust": {
-    "h2": "Die Pläne eurer Familie gehören eurer Familie",
-    "pills": [
-      { "strong": "Keine Werbung", "span": "Nichts zum Wegklicken — jetzt nicht, später nicht." },
-      { "strong": "Kein Tracking", "span": "Keine Analyse, kein Profiling — diese Seite nutzt nicht einmal Cookies." },
-      { "strong": "Kein Datenverkauf", "span": "Kostenlose App, Server in der EU, deine Rechte eingebaut." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funktionen",
-    "h2": "Alles, was eure Familie jongliert — in einer App",
-    "lead": "Kalender, Listen, Essen und Geburtstage — geteilt mit den Menschen, die es sehen müssen, und mit sonst niemandem."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalender",
-      "h2": "Ein Kalender für alle",
-      "p": "Die ganze Woche und der ganze Monat der Familie auf einen Blick — nie wieder das Abholen vergessen.",
-      "bullets": [
-        "Farbige Termine mit Kategorien, Orten und Notizen",
-        "Wiederholungen, die stimmen — Fußball jeden Dienstag, Klavier alle zwei Wochen",
-        "Erinnerungen auf jedem Handy der Familie",
-        "Feiertage für 35 Länder, private Termine bleiben privat",
-        "Den Elternbrief fotografieren — die Termine landen im Kalender"
-      ],
-      "alt": "Monatskalender mit Termin-Pillen"
-    },
-    "shopping": {
-      "eyebrow": "Einkaufen",
-      "h2": "Einkaufslisten, die live mitgehen",
-      "p": "„Milch“ am eigenen Handy eintippen — und es erscheint eine Sekunde später am Handy deines Partners im Supermarkt.",
-      "bullets": [
-        "Gemeinsame Listen, die die ganze Familie bearbeiten kann",
-        "Menge, Kategorie und Notiz pro Eintrag",
-        "Abgehakte Einträge rutschen ordentlich nach unten"
-      ],
-      "alt": "Gemeinsame Einkaufsliste"
-    },
-    "todos": {
-      "eyebrow": "To-dos",
-      "h2": "Auf jeder Aufgabe steht ein Name",
-      "p": "Nie wieder „Ich dachte, du machst das.“ Kinder sehen ihre eigenen Aufgaben und haken sie selbst ab.",
-      "bullets": [
-        "Zuständige Person, Fälligkeitsdatum und Erinnerung",
-        "Für Ämtchen, Besorgungen und alles dazwischen"
-      ],
-      "alt": "Familien-To-do-Liste mit Zuständigen"
-    },
-    "habits": {
-      "eyebrow": "Gewohnheiten",
-      "h2": "Kleine Gewohnheiten, die ganze Familie feuert an",
-      "p": "Blumen gießen, zehn Minuten lesen, mit dem Hund raus — abhaken, die Serie halten, und jeder Haken gibt Minzi, eurer Familienkatze, Energie für ihre nächste Reise.",
-      "bullets": [
-        "Jeder für sich, gemeinsam oder nur für dich — mit täglicher Erinnerung",
-        "Serien mit Ruhetagen und Pausen, damit der Urlaub sie nicht bricht",
-        "Ein voller Energiebalken schickt Minzi auf Reise — und eine Postkarte kommt nach Hause"
-      ],
-      "alt": "Gewohnheiten der Familie mit Serien und Minzi, der Katze"
-    },
-    "meals": {
-      "eyebrow": "Mahlzeiten",
-      "h2": "Abendessen — schon am Sonntag entschieden",
-      "p": "Plant Frühstück bis Abendessen für die ganze Woche, direkt aus der eigenen Familien-Rezeptbox — und schickt die Zutaten auf eine Einkaufsliste.",
-      "bullets": [
-        "Wochenplan mit vier Mahlzeiten pro Tag",
-        "Rezeptbox mit Fotos und Import per Link",
-        "Zutaten mit einem Tipp auf jede Liste",
-        "Keine Idee? Daili schlägt Abendessen für die freien Abende vor"
-      ],
-      "alt": "Wochen-Essensplan"
-    },
-    "birthdays": {
-      "eyebrow": "Feiern",
-      "h2": "Nie wieder einen Geburtstag vergessen",
-      "p": "Geburtstage, Jahrestage und Familienfeste — jedes Jahr automatisch da, mit Countdown und Erinnerungen für alle.",
-      "bullets": [],
-      "alt": "Geburtstage und Feste"
-    },
-    "notes": {
-      "eyebrow": "Notizen",
-      "h2": "Schnelle Notizen, genau am richtigen Ort",
-      "p": "Das WLAN-Passwort, die Nummer der Babysitterin, ein Link, der bleiben soll — in zwei Tipps gespeichert, standardmäßig privat, geteilt, wenn ihr wollt.",
-      "bullets": [
-        "Einen Link aus jeder App mit Daili teilen — schon ist er eine Notiz",
-        "Nur ich, die ganze Familie oder ausgewählte Mitglieder",
-        "Anheften, taggen, suchen — eigene und geteilte Notizen"
-      ],
-      "alt": "Notizliste mit geteilten und privaten Notizen"
-    },
-    "vault": {
-      "eyebrow": "Privat gedacht",
-      "h2": "Fotos & Dokumente bleiben am Handy",
-      "p": "Der Daili-Tresor hält Familienfotos und wichtige Dokumente geordnet — gespeichert nur auf deinem Gerät, nie auf unsere Server hochgeladen.",
-      "bullets": [],
-      "alt": "Dokumenten-Tresor"
-    },
-    "family": {
-      "eyebrow": "Familie",
-      "h2": "Eltern, Kinder & Oma — alle dabei",
-      "p": "Ladet eure Familie mit einem einfachen 6-stelligen Code oder Link ein. Eltern sind Admins, Kinder und Teenager bekommen einen eigenen Login — und die Kleinen ohne E-Mail ein verwaltetes Profil, das ihr später upgraden könnt.",
-      "bullets": [],
-      "alt": "Familienbildschirm mit Mitgliedern und Einladungscode"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Web-App",
-    "h2": "Auch am Computer",
-    "p": "Dieselbe Familie, dieselben Pläne — in einem Browserfenster auf app.daili.app. Plant die Woche am großen Bildschirm und tippt den Einkauf in der Küche am Handy ein.",
-    "points": [
-      "Mit demselben Konto anmelden — alles bleibt synchron",
-      "Kalender, Einkaufslisten, To-dos, Rezepte, Essensplan, Geburtstage und Familie",
-      "Nichts zu installieren — läuft in jedem modernen Browser"
-    ],
-    "cta": "app.daili.app öffnen",
-    "note": "Fotos und Dokumente liegen nur auf deinem Handy und werden im Browser deshalb nicht angezeigt. Die Web-App gibt es auf Deutsch und Englisch."
   },
 
   "faq": {

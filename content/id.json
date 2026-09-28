@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Fitur",
     "webApp": "Aplikasi web",
-    "pricing": "Harga",
     "support": "Bantuan",
     "blog": "Blog",
     "help": "Bantuan",
-    "download": "Unduh",
     "language": "Bahasa",
     "skip": "Lompat ke konten",
     "menu": "Buka menu"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Kini di iPhone, Android, dan web",
-    "kicker": "iPhone · Android · peramban web",
     "h1a": "Satu keluarga,",
     "h1b": "satu halaman.",
-    "lead": "Satu tempat yang tenang untuk sepekan keluargamu: kalender bersama, daftar belanja, dan tugas yang dilihat semua orang. Di setiap ponsel — dan di komputer juga.",
     "webLink": "Buka di peramban",
     "notes": [
       "Gratis",
       "Tanpa iklan",
       "Server di Uni Eropa"
-    ],
-    "altCalendar": "Kalender bulanan Daili",
-    "altHome": "Layar utama Daili dengan kotak-kotak fitur"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Siap kapan pun kamu siap",
       "sub": "Mulai dengan satu daftar. Tambahkan kalender saat kamu siap. Daili tumbuh bersama keluargamu."
     }
-  },
-
-  "showcase": {
-    "pill": "Tersinkron sekitar sedetik — di semua ponsel keluarga",
-    "h2": "Satu aplikasi untuk seluruh keluarga",
-    "alt": "Layar utama Daili dengan sebuah acara, satu barang belanjaan, dan ulang tahun yang melayang di sampingnya"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Les renang", "s": "Hari ini · 16.30" },
-        { "t": "Susu · 2 l", "s": "Andi sedang di toko" },
-        { "t": "Buang sampah", "s": "Bayu · selesai" }
-      ],
-      "calendar": [
-        { "t": "Les renang", "s": "Hari ini · 16.30 · Putri" },
-        { "t": "Les piano", "s": "dua pekan sekali, Rabu" },
-        { "t": "Pengingat di 4 ponsel", "s": "15 menit sebelumnya" }
-      ],
-      "shopping": [
-        { "t": "Susu · 2 l", "s": "Sari menambahkan — dari rumah" },
-        { "t": "Roti", "s": "Andi · di toko" },
-        { "t": "Tersinkron sekitar sedetik", "s": "di semua ponsel keluarga" }
-      ],
-      "todos": [
-        { "t": "Siram tanaman", "s": "Putri · Jumat" },
-        { "t": "Buang sampah", "s": "Bayu · selesai 🎉" },
-        { "t": "Pengingat", "s": "Kamis · 18.00" }
-      ],
-      "meals": [
-        { "t": "Selasa · Makan malam", "s": "Pasta — dari kumpulan resep" },
-        { "t": "6 bahan → Belanja", "s": "masuk sekali ketuk" },
-        { "t": "Sepekan beres hari Minggu", "s": "dari sarapan sampai malam" }
-      ],
-      "birthdays": [
-        { "t": "Putri berulang tahun ke-12", "s": "22 hari lagi · 29 Agustus" },
-        { "t": "Pengingat untuk semua", "s": "seminggu sebelumnya" },
-        { "t": "Andi berulang tahun ke-41", "s": "3 pekan lagi — tiap tahun" }
-      ],
-      "vault": [
-        { "t": "Kartu asuransi.pdf", "s": "hanya di ponsel ini" },
-        { "t": "Liburan 2026 · 48 foto", "s": "tidak pernah diunggah" },
-        { "t": "Tak ada server yang lihat", "s": "punya kami pun tidak" }
-      ],
-      "family": [
-        { "t": "Keluarga Wijaya", "s": "5 anggota" },
-        { "t": "Kode undangan 482913", "s": "atau bagikan tautannya" },
-        { "t": "Bayu · profil dikelola", "s": "tanpa email — bisa ditingkatkan" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Rencanakan Minggu malam. Jalani sepanjang pekan dengan tenang.",
-    "p": "Lima menit di meja dapur — dan empat ponsel sudah tahu rencananya.",
-    "facts": [
-      { "t": "Gratis. Tanpa iklan.", "s": "Tidak ada yang dijual, tidak ada yang dilacak untuk iklan." },
-      { "t": "Server di Uni Eropa", "s": "Data keluargamu tetap di Eropa. Foto dan dokumen tidak pernah keluar dari ponsel." },
-      { "t": "Anak dan nenek juga", "s": "Login sendiri untuk remaja, profil dikelola untuk si kecil. Undang dengan kode 6 digit." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Mulai",
-    "h2": "Siap dalam waktu sekitar satu menit",
-    "steps": [
-      {
-        "h3": "Unduh aplikasinya",
-        "p": "Gratis di iPhone dan Android — atau buka app.daili.app di komputer. Tanpa kartu kredit, tanpa masa coba yang habis."
-      },
-      {
-        "h3": "Buat keluargamu",
-        "p": "Undang semua orang dengan kode 6 digit atau tautan. Orang tua jadi admin, anak dan remaja punya akun sendiri, dan si kecil yang belum punya email dapat profil yang dikelola."
-      },
-      {
-        "h3": "Semua di satu halaman",
-        "p": "Apa yang kamu tambahkan di ponselmu muncul di ponsel yang lain sekitar satu detik kemudian — kalender, daftar, dan tugas sama saja."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Perbandingan",
-    "h2": "Kenapa tidak pakai kalender bersama saja?",
-    "lead": "Google Kalender sangat bagus untuk urusan kalender. Tapi hidup berkeluarga bukan cuma soal jadwal — dan papan tulis di dapur tidak ikut ke supermarket.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Kalender bersama", "paper": "Kertas dan papan" },
-    "rows": [
-      "Jadwal semua orang di satu tempat",
-      "Pengingat di setiap ponsel",
-      "Daftar belanja yang langsung diperbarui",
-      "Tugas yang ada namanya",
-      "Rencana makan sepekan dan resep",
-      "Anak punya akun sendiri",
-      "Ulang tahun diingat setiap tahun",
-      "Jalan di ponsel dan di peramban",
-      "Tanpa iklan, tidak ada yang dijual"
-    ],
-    "legend": "✓ ya · ~ sebagian · — tidak"
-  },
-
-  "pricing": {
-    "eyebrow": "Harga",
-    "h2": "Gratis — dan gratis untukmu, selamanya",
-    "points": [
-      "Semua yang ada di halaman ini sudah gratis sekarang",
-      "Tanpa kartu kredit, tanpa masa coba, tanpa fitur yang dikunci",
-      "Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis untukmu"
-    ],
-    "big": "€0",
-    "bigNote": "per keluarga · tanpa jebakan",
-    "lead": "Tanpa kartu kredit, tanpa masa coba, tanpa fitur terkunci.",
-    "promiseTitle": "Janji kami",
-    "promise": "Setiap keluarga yang bergabung sebelum kami menambah fitur berbayar tetap mendapat semuanya gratis selamanya — termasuk yang kami tambahkan nanti."
-  },
-
-  "trust": {
-    "h2": "Rencana keluargamu milik keluargamu",
-    "pills": [
-      { "strong": "Tanpa iklan", "span": "Tidak ada yang perlu ditutup — sekarang tidak, nanti pun tidak." },
-      { "strong": "Tanpa pelacakan", "span": "Tidak ada analitik, tidak ada profiling — situs ini bahkan tidak memakai cookie." },
-      { "strong": "Tidak menjual datamu", "span": "Aplikasi gratis, server di Uni Eropa, dan hakmu sudah menyatu di dalamnya." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Fitur",
-    "h2": "Semua yang diurus keluargamu, dalam satu aplikasi",
-    "lead": "Kalender, daftar, menu makan, dan ulang tahun — dibagikan kepada yang perlu melihatnya, dan tidak ke siapa pun lagi."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalender",
-      "h2": "Satu kalender untuk semua",
-      "p": "Sepekan dan sebulan penuh milik keluarga dalam sekali lihat — dan kamu tidak akan lupa menjemput lagi.",
-      "bullets": [
-        "Acara berwarna lengkap dengan kategori, lokasi, dan catatan",
-        "Pengulangan yang benar — sepak bola tiap Selasa, piano dua pekan sekali",
-        "Pengingat di setiap ponsel di keluarga",
-        "Hari libur untuk 35 negara; acara pribadi tetap pribadi",
-        "Foto surat dari sekolah — tanggalnya masuk ke kalender"
-      ],
-      "alt": "Kalender bulanan dengan acara berwarna"
-    },
-    "shopping": {
-      "eyebrow": "Belanja",
-      "h2": "Daftar belanja yang ikut berubah",
-      "p": "Kamu ketik \"susu\" di ponselmu — sekitar satu detik kemudian sudah muncul di ponsel pasanganmu yang sedang di toko.",
-      "bullets": [
-        "Daftar bersama yang bisa diubah seluruh keluarga",
-        "Jumlah, kategori, dan catatan di tiap barang",
-        "Barang yang sudah dicentang turun rapi ke bawah"
-      ],
-      "alt": "Daftar belanja bersama"
-    },
-    "todos": {
-      "eyebrow": "Tugas",
-      "h2": "Setiap tugas ada namanya",
-      "p": "Tidak ada lagi \"kupikir kamu yang mengerjakan\". Anak-anak melihat tugasnya sendiri dan mencentangnya sendiri.",
-      "bullets": [
-        "Penanggung jawab, tenggat, dan pengingat",
-        "Cocok untuk pekerjaan rumah, urusan di luar, dan semua di antaranya"
-      ],
-      "alt": "Daftar tugas keluarga beserta penanggung jawabnya"
-    },
-    "habits": {
-      "eyebrow": "Kebiasaan",
-      "h2": "Kebiasaan kecil, seluruh keluarga menyemangati",
-      "p": "Menyiram tanaman, membaca sepuluh menit, mengajak anjing jalan-jalan — centang, jaga rentetannya, dan setiap centang memberi Minzi, kucing keluarga Anda, energi untuk perjalanan berikutnya.",
-      "bullets": [
-        "Masing-masing, bersama, atau hanya untuk Anda — dengan pengingat harian",
-        "Rentetan dengan hari istirahat dan jeda, jadi liburan tidak memutusnya",
-        "Bar energi penuh mengirim Minzi bertamasya — dan kartu pos datang ke rumah"
-      ],
-      "alt": "Layar kebiasaan keluarga dengan rentetan dan kucing Minzi"
-    },
-    "meals": {
-      "eyebrow": "Rencana makan",
-      "h2": "Makan malam sudah diputuskan sejak Minggu",
-      "p": "Rencanakan dari sarapan sampai makan malam untuk sepekan penuh, langsung dari kumpulan resep keluargamu sendiri — lalu kirim bahan-bahannya ke daftar belanja.",
-      "bullets": [
-        "Rencana makan sepekan dengan empat waktu makan per hari",
-        "Kumpulan resep berfoto dan impor lewat tautan",
-        "Bahan sebuah resep masuk ke daftar mana pun sekali ketuk",
-        "Kehabisan ide? Biarkan Daili menyarankan makan malam untuk malam yang masih kosong"
-      ],
-      "alt": "Rencana makan sepekan"
-    },
-    "birthdays": {
-      "eyebrow": "Perayaan",
-      "h2": "Tidak akan lupa ulang tahun lagi",
-      "p": "Ulang tahun, hari jadi, dan perayaan keluarga — diingat setiap tahun, lengkap dengan hitung mundur dan pengingat untuk semua orang.",
-      "bullets": [],
-      "alt": "Layar ulang tahun dan perayaan"
-    },
-    "notes": {
-      "eyebrow": "Catatan",
-      "h2": "Catatan cepat, selalu siap di tangan",
-      "p": "Kata sandi Wi-Fi, nomor pengasuh, tautan yang layak disimpan — tersimpan dengan dua ketukan, pribadi secara bawaan, dibagikan kapan pun Anda mau.",
-      "bullets": [
-        "Bagikan tautan dari aplikasi apa pun ke Daili — langsung jadi catatan",
-        "Hanya saya, seluruh keluarga, atau anggota pilihan",
-        "Sematkan, beri tag, dan cari — milik Anda dan yang dibagikan kepada Anda"
-      ],
-      "alt": "Daftar catatan bersama dan pribadi"
-    },
-    "vault": {
-      "eyebrow": "Privat sejak awal",
-      "h2": "Foto dan dokumen tetap di ponselmu",
-      "p": "Brankas Daili menjaga foto keluarga dan dokumen penting tetap rapi — disimpan hanya di perangkatmu dan tidak pernah diunggah ke server kami.",
-      "bullets": [],
-      "alt": "Brankas dokumen"
-    },
-    "family": {
-      "eyebrow": "Keluarga",
-      "h2": "Orang tua, anak, dan nenek — semua ikut",
-      "p": "Undang keluargamu dengan kode 6 digit sederhana atau sebuah tautan. Orang tua jadi admin, anak dan remaja punya akun sendiri, dan si kecil yang belum punya email dapat profil yang dikelola dan bisa dijadikan akun sungguhan nanti.",
-      "bullets": [],
-      "alt": "Layar keluarga dengan anggota dan kode undangan"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Aplikasi web",
-    "h2": "Juga di komputer",
-    "p": "Keluarga yang sama, rencana yang sama — di jendela peramban, di app.daili.app. Susun pekanmu di layar besar, dan tambahkan belanjaan dari ponsel di dapur.",
-    "points": [
-      "Masuk dengan akun yang sama; semuanya tetap tersinkron",
-      "Kalender, daftar belanja, tugas, resep, menu makan, ulang tahun, dan keluarga",
-      "Tidak ada yang perlu dipasang — jalan di peramban modern mana pun"
-    ],
-    "cta": "Buka app.daili.app",
-    "note": "Foto dan dokumen hanya ada di ponselmu, jadi tidak ditampilkan di peramban. Aplikasi web tersedia dalam bahasa Inggris dan Jerman."
   },
 
   "faq": {

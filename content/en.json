@@ -6,9 +6,7 @@
   "@@identicalOk": [
     "footer.copyright",
     "nav.support",
-    "nav.download",
-    "support.h1",
-    "pricing.big"
+    "support.h1"
   ],
   "@@identicalOkWhy": "Keys that may legitimately come back byte-identical to English — a brand name, an email address, or a word many languages borrow unchanged. Everything NOT listed here and identical to English is treated as untranslated and fails the build. Keep this list short: it is an exemption from the check that catches the most common translation failure.",
 
@@ -25,14 +23,11 @@
   },
 
   "nav": {
-    "features": "Features",
     "webApp": "Web app",
-    "pricing": "Pricing",
     "support": "Support",
     "blog": "Blog",
     "help": "Help",
     "@help": { "description": "Footer link to the help center (daili.app/help/, English only). Shown once the help center is public. One short word, like the Blog link." },
-    "download": "Download",
     "language": "Language",
     "skip": "Skip to content",
     "menu": "Open menu",
@@ -51,23 +46,16 @@
   },
 
   "hero": {
-    "chip": "Now on iPhone, Android and the web",
-    "@chip": { "description": "Pill above the headline. Product names stay in Latin letters (iPhone, Android). Under 40 characters." },
-    "kicker": "iPhone · Android · web browser",
-    "@kicker": { "description": "Platform strip above the headline. Product names stay in Latin letters." },
     "h1a": "Your family,",
     "h1b": "on the same page.",
     "@h1b": { "description": "Highlighted in forest green with a hand-drawn underline beneath it. Keep it short — this is the emphasised half of the headline." },
-    "lead": "One calm place for your family's week: a shared calendar, shopping lists and to-dos everyone can see. On every phone — and on the computer, too.",
     "webLink": "Open in your browser",
     "notes": [
       "Free",
       "No ads",
       "Servers in the EU"
     ],
-    "@notes": { "description": "Three short trust chips under the download buttons. Two or three words each." },
-    "altCalendar": "Daili month calendar",
-    "altHome": "Daili home screen with feature tiles"
+    "@notes": { "description": "Three short trust chips under the download buttons. Two or three words each." }
   },
 
   "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\", \"Daili Plus\" and \"Minzi\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
@@ -278,247 +266,6 @@
       "h2": "Ready when you are",
       "sub": "Start with one list. Add the calendar when you're ready. Daili grows with your family."
     }
-  },
-
-  "showcase": {
-    "pill": "Synced in about a second — on every phone in the family",
-    "@pill": { "description": "Dark pill at the bottom of the video panel. One sentence, no full stop." },
-    "h2": "One app for the whole family",
-    "alt": "The Daili home screen with an event, a shopping item and a birthday floating next to it"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Swimming class", "s": "Today · 16:30" },
-        { "t": "Milk · 2 l", "s": "Marco is in the store" },
-        { "t": "Take out the bins", "s": "Noah · done" }
-      ],
-      "calendar": [
-        { "t": "Swimming class", "s": "Today · 16:30 · Emma" },
-        { "t": "Piano lesson", "s": "every other Wednesday" },
-        { "t": "Reminder on 4 phones", "s": "15 minutes before" }
-      ],
-      "shopping": [
-        { "t": "Milk · 2 l", "s": "Lena added it — at home" },
-        { "t": "Bread", "s": "Marco · in the store" },
-        { "t": "Synced in about a second", "s": "on every phone in the family" }
-      ],
-      "todos": [
-        { "t": "Water the plants", "s": "Emma · Friday" },
-        { "t": "Take out the bins", "s": "Noah · done 🎉" },
-        { "t": "Reminder", "s": "Thursday · 18:00" }
-      ],
-      "meals": [
-        { "t": "Tuesday · Dinner", "s": "Pasta — from the recipe box" },
-        { "t": "6 ingredients → Groceries", "s": "added in one tap" },
-        { "t": "The week, planned by Sunday", "s": "breakfast to dinner" }
-      ],
-      "birthdays": [
-        { "t": "Emma turns 12", "s": "in 22 days · August 29" },
-        { "t": "Reminder for everyone", "s": "one week before" },
-        { "t": "Marco turns 41", "s": "in 3 weeks — every year" }
-      ],
-      "vault": [
-        { "t": "Insurance card.pdf", "s": "on this phone only" },
-        { "t": "Holiday 2026 · 48 photos", "s": "never uploaded" },
-        { "t": "No server ever sees these", "s": "not even ours" }
-      ],
-      "family": [
-        { "t": "The Bergers", "s": "5 members" },
-        { "t": "Invite code 482913", "s": "or share the link" },
-        { "t": "Noah · managed profile", "s": "no email needed — upgrade later" }
-      ]
-    },
-    "@cards": { "description": "Tiny UI cards floating next to the phone in the home-page story. They imitate app content: an event pill, a shopping row, a to-do, a reminder. `t` is the bold line, `s` the small grey line under it. Keep each line short (t ≤ 28 characters, s ≤ 36) — they must not wrap. The people are the demo family from that locale's own screenshots in static/assets/img/shots/<loc>/ — en keeps Lena, Marco, Emma, Noah, Mia and the Bergers, ja uses 佐藤家 with 美咲, 健太, 陽菜, 蒼, and id, ko, th, zh-Hans and zh-Hant have their own; check shot-family.webp before changing a name. The invite code 482913 is the same in every locale. Times follow the locale’s own convention (16:30 / 4:30 PM), dates too (August 29 / 29. August)." }
-  },
-
-  "life": {
-    "h2": "Plan it on Sunday evening. Live it all week.",
-    "p": "Five minutes at the kitchen table — and four phones know the plan.",
-    "facts": [
-      { "t": "Free. No ads.", "s": "Nothing sold, nothing tracked for advertising." },
-      { "t": "Servers in the EU", "s": "Your family's data stays in Europe. Photos and documents never leave the phone." },
-      { "t": "Kids & grandma too", "s": "Own logins for teens, managed profiles for little ones. Invite with a 6-digit code." }
-    ],
-    "@facts": { "description": "Three fact cards next to the video. `t` is one short bold line (under 22 characters), `s` one sentence." }
-  },
-
-  "howItWorks": {
-    "eyebrow": "Getting started",
-    "h2": "Set up in about a minute",
-    "steps": [
-      {
-        "h3": "Get the app",
-        "p": "Free on iPhone and Android — or open app.daili.app on your computer. No credit card, no trial that runs out."
-      },
-      {
-        "h3": "Create your family",
-        "p": "Invite everyone with a 6-digit code or a link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile."
-      },
-      {
-        "h3": "You're on the same page",
-        "p": "Add something on your phone and it's on everyone else's in about a second — calendar, lists and to-dos alike."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Compare",
-    "h2": "Why not just a shared calendar?",
-    "lead": "Google Calendar is very good at calendars. But family life is not only calendars — and a whiteboard in the kitchen doesn't come to the supermarket with you.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Shared calendar", "paper": "Paper & whiteboard" },
-    "rows": [
-      "Everyone's events in one place",
-      "Reminders on every phone",
-      "A shopping list that updates live",
-      "To-dos with a name on them",
-      "Meal plan and recipe box",
-      "Kids get their own login",
-      "Birthdays remembered every year",
-      "Works on the phone and in the browser",
-      "No ads, nothing sold"
-    ],
-    "legend": "✓ yes · ~ partly · — no"
-  },
-
-  "pricing": {
-    "eyebrow": "Pricing",
-    "h2": "Free — and free for you, forever",
-    "points": [
-      "Every feature on this page is free right now",
-      "No credit card, no trial period, no locked features",
-      "If we ever add paid extras, everything that is free today stays free for you"
-    ],
-    "big": "€0",
-    "@big": { "description": "The price, set very large. Stays €0 in every locale — see @@identicalOk." },
-    "bigNote": "per family · no catch",
-    "@bigNote": { "description": "Small line directly under the big price." },
-    "lead": "No credit card, no trial, no locked features.",
-    "promiseTitle": "Our promise",
-    "promise": "Every family that joins before we add paid extras keeps everything free forever — including anything we add later."
-  },
-
-  "trust": {
-    "h2": "Your family's plans belong to your family",
-    "pills": [
-      { "strong": "No ads", "span": "Nothing to click away — not now, not later." },
-      { "strong": "No tracking", "span": "No analytics, no profiling — this site doesn't even use cookies." },
-      { "strong": "No selling your data", "span": "Free app, servers in the EU, your rights built in." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Features",
-    "h2": "Everything your family juggles, in one app",
-    "lead": "Calendar, lists, meals and birthdays — shared with the people who need to see them, and nobody else."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Calendar",
-      "@eyebrow": { "description": "Canonical feature name. Must match the app's own label for this locale — see content/glossary.md." },
-      "h2": "One calendar for everyone",
-      "p": "See the whole family's week and month at a glance — and never miss pickup again.",
-      "bullets": [
-        "Color-coded events with categories, locations and notes",
-        "Repeating events done right — soccer every Tuesday, piano every other week",
-        "Reminders on every phone in the family",
-        "Public holidays for 35 countries, private events stay private",
-        "Photograph a letter from school — the dates land in the calendar"
-      ],
-      "alt": "Month calendar with event pills"
-    },
-    "shopping": {
-      "eyebrow": "Shopping",
-      "h2": "Shopping lists that update live",
-      "p": "Add \"milk\" on your phone — it appears on your partner's in the store, in about a second.",
-      "bullets": [
-        "Shared lists the whole family can edit",
-        "Quantities, categories and notes per item",
-        "Checked items drop neatly to the bottom"
-      ],
-      "alt": "Shared shopping list"
-    },
-    "todos": {
-      "eyebrow": "To-dos",
-      "h2": "Every task has a name on it",
-      "p": "No more \"I thought you were doing it.\" Kids see their own tasks and can check them off.",
-      "bullets": [
-        "Assignees, due dates and reminders",
-        "Works for chores, errands and everything between"
-      ],
-      "alt": "Family to-do list with assignees"
-    },
-    "habits": {
-      "eyebrow": "Habits",
-      "h2": "Small habits, the whole family cheers",
-      "p": "Water the plants, read ten minutes, walk the dog — tick it off, keep the streak, and every tick gives Minzi, your family cat, energy for her next trip.",
-      "bullets": [
-        "Each, together or just for you — with a daily reminder",
-        "Streaks with rest days and pauses, so a holiday doesn't break them",
-        "A full energy bar sends Minzi on a trip — and a postcard comes home"
-      ],
-      "alt": "Family habits screen with streaks and Minzi the cat"
-    },
-    "meals": {
-      "eyebrow": "Meals",
-      "h2": "Dinner, decided by Sunday",
-      "p": "Plan breakfast to dinner for the whole week, straight from your family's own recipe box — then send the ingredients to a shopping list.",
-      "bullets": [
-        "Weekly meal plan with four slots per day",
-        "Recipe box with photos and URL import",
-        "Add a recipe's ingredients to any list in one tap",
-        "Out of ideas? Let Daili suggest dinners for the open evenings"
-      ],
-      "alt": "Weekly meal plan"
-    },
-    "birthdays": {
-      "eyebrow": "Celebrations",
-      "h2": "Never miss a birthday again",
-      "p": "Birthdays, anniversaries and family celebrations — remembered every year, with a countdown and reminders for everyone.",
-      "bullets": [],
-      "alt": "Birthdays and celebrations screen"
-    },
-    "notes": {
-      "eyebrow": "Notes",
-      "h2": "Quick notes, in the right pocket",
-      "p": "The Wi-Fi password, the babysitter's number, a link worth keeping — saved in two taps, private by default, shared when you want.",
-      "bullets": [
-        "Share a link from any app to Daili — it becomes a note",
-        "Only me, the whole family, or picked members",
-        "Pin, tag and search — yours and the ones shared with you"
-      ],
-      "alt": "Notes list with shared and private notes"
-    },
-    "vault": {
-      "eyebrow": "Private by design",
-      "h2": "Photos & documents stay on your phone",
-      "p": "The Daili vault keeps family photos and important documents organized — stored only on your device, never uploaded to our servers.",
-      "bullets": [],
-      "alt": "Documents vault"
-    },
-    "family": {
-      "eyebrow": "Family",
-      "h2": "Parents, kids & grandma — all in",
-      "p": "Invite your family with a simple 6-digit code or link. Parents are admins, kids and teens get their own login, and little ones without an email get a managed profile you can upgrade later.",
-      "bullets": [],
-      "alt": "Family screen with members and the invite code"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Web app",
-    "h2": "Also on your computer",
-    "p": "The same family, the same plans — in a browser window at app.daili.app. Plan the week on a big screen, add the shopping in the kitchen on your phone.",
-    "points": [
-      "Sign in with the same account; everything stays in sync",
-      "Calendar, shopping lists, to-dos, recipes, meal plan, birthdays and family",
-      "Nothing to install — works in any modern browser"
-    ],
-    "cta": "Open app.daili.app",
-    "@cta": { "description": "Button label. app.daili.app is a URL — never translate it." },
-    "note": "Photos and documents live only on your phone, so they are not shown in the browser. The web app is available in English and German."
   },
 
   "faq": {

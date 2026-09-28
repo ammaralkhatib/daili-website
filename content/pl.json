@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funkcje",
     "webApp": "Aplikacja web",
-    "pricing": "Cena",
     "support": "Pomoc",
     "blog": "Blog",
     "help": "Pomoc",
-    "download": "Pobierz",
     "language": "Język",
     "skip": "Przejdź do treści",
     "menu": "Otwórz menu"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Już na iPhonie, Androidzie i w sieci",
-    "kicker": "iPhone · Android · przeglądarka",
     "h1a": "Cała rodzina",
     "h1b": "na jednej stronie.",
-    "lead": "Jedno spokojne miejsce na tydzień waszej rodziny: wspólny kalendarz, listy zakupów i zadania, które widzą wszyscy. Na każdym telefonie — i na komputerze też.",
     "webLink": "Otwórz w przeglądarce",
     "notes": [
       "Za darmo",
       "Bez reklam",
       "Serwery w UE"
-    ],
-    "altCalendar": "Kalendarz miesięczny w Daili",
-    "altHome": "Ekran główny Daili z kafelkami funkcji"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Zacznij, kiedy chcesz",
       "sub": "Zacznij od jednej listy. Kalendarz dodasz, kiedy przyjdzie pora. Daili rośnie razem z rodziną."
     }
-  },
-
-  "showcase": {
-    "pill": "Zsynchronizowane w sekundę — na każdym telefonie w rodzinie",
-    "h2": "Jedna aplikacja dla całej rodziny",
-    "alt": "Ekran główny Daili, obok którego unoszą się wydarzenie, pozycja z listy zakupów i urodziny"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Basen", "s": "Dziś · 16:30" },
-        { "t": "Mleko · 2 l", "s": "Marco jest w sklepie" },
-        { "t": "Wynieść śmieci", "s": "Noah · zrobione" }
-      ],
-      "calendar": [
-        { "t": "Basen", "s": "Dziś · 16:30 · Emma" },
-        { "t": "Lekcja pianina", "s": "co drugą środę" },
-        { "t": "Przypomnienie na 4 telefony", "s": "15 minut wcześniej" }
-      ],
-      "shopping": [
-        { "t": "Mleko · 2 l", "s": "Lena dopisała je — z domu" },
-        { "t": "Chleb", "s": "Marco · w sklepie" },
-        { "t": "Zsynchronizowane w sekundę", "s": "na każdym telefonie w rodzinie" }
-      ],
-      "todos": [
-        { "t": "Podlać kwiaty", "s": "Emma · piątek" },
-        { "t": "Wynieść śmieci", "s": "Noah · zrobione 🎉" },
-        { "t": "Przypomnienie", "s": "Czwartek · 18:00" }
-      ],
-      "meals": [
-        { "t": "Wtorek · Kolacja", "s": "Makaron — z przepisów" },
-        { "t": "6 składników → Zakupy", "s": "dodane jednym dotknięciem" },
-        { "t": "Tydzień gotowy w niedzielę", "s": "od śniadania do kolacji" }
-      ],
-      "birthdays": [
-        { "t": "Emma kończy 12 lat", "s": "za 22 dni · 29 sierpnia" },
-        { "t": "Przypomnienie dla wszystkich", "s": "tydzień wcześniej" },
-        { "t": "Marco kończy 41 lat", "s": "za 3 tygodnie — co roku" }
-      ],
-      "vault": [
-        { "t": "Karta ubezpieczenia.pdf", "s": "tylko na tym telefonie" },
-        { "t": "Wakacje 2026 · 48 zdjęć", "s": "nigdy nie wysłane" },
-        { "t": "Żaden serwer ich nie widzi", "s": "nasz też nie" }
-      ],
-      "family": [
-        { "t": "Rodzina Berger", "s": "5 członków" },
-        { "t": "Kod zaproszenia 482913", "s": "albo udostępnij link" },
-        { "t": "Noah · profil zarządzany", "s": "bez e-maila — później konto" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Zaplanowane w niedzielę wieczorem. Ogarnięte na cały tydzień.",
-    "p": "Pięć minut przy kuchennym stole — i cztery telefony znają plan.",
-    "facts": [
-      { "t": "Za darmo. Bez reklam.", "s": "Nic nie sprzedajemy, nic nie śledzimy dla reklam." },
-      { "t": "Serwery w UE", "s": "Dane waszej rodziny zostają w Europie. Zdjęcia i dokumenty nigdy nie opuszczają telefonu." },
-      { "t": "Dzieci i babcia też", "s": "Własne konta dla nastolatków, zarządzane profile dla maluchów. Zaproszenie 6-cyfrowym kodem." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Pierwsze kroki",
-    "h2": "Gotowe w mniej więcej minutę",
-    "steps": [
-      {
-        "h3": "Pobierz aplikację",
-        "p": "Za darmo na iPhone'a i Androida — albo otwórz app.daili.app na komputerze. Bez karty i bez okresu próbnego, który się kończy."
-      },
-      {
-        "h3": "Załóż rodzinę",
-        "p": "Zaproś wszystkich 6-cyfrowym kodem albo linkiem. Rodzice są administratorami, dzieci i nastolatki mają własne logowanie, a najmłodsi bez adresu e-mail dostają profil zarządzany."
-      },
-      {
-        "h3": "Wszyscy na jednej stronie",
-        "p": "To, co dodasz na swoim telefonie, pojawia się na telefonach reszty po mniej więcej sekundzie — tak samo kalendarz, listy i zadania."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Porównanie",
-    "h2": "Dlaczego nie po prostu wspólny kalendarz?",
-    "lead": "Kalendarz Google świetnie radzi sobie z kalendarzami. Ale życie rodzinne to nie tylko terminy — a tablica w kuchni nie pójdzie z tobą do sklepu.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Wspólny kalendarz", "paper": "Kartka i tablica" },
-    "rows": [
-      "Terminy wszystkich w jednym miejscu",
-      "Przypomnienia na każdym telefonie",
-      "Lista zakupów, która aktualizuje się na bieżąco",
-      "Zadania z konkretnym imieniem",
-      "Jadłospis na tydzień i przepisy",
-      "Dzieci z własnym logowaniem",
-      "Urodziny pamiętane co roku",
-      "Działa na telefonie i w przeglądarce",
-      "Bez reklam, nic na sprzedaż"
-    ],
-    "legend": "✓ tak · ~ częściowo · — nie"
-  },
-
-  "pricing": {
-    "eyebrow": "Cena",
-    "h2": "Za darmo — i za darmo dla ciebie, na zawsze",
-    "points": [
-      "Wszystko, co jest na tej stronie, jest darmowe już teraz",
-      "Bez karty, bez okresu próbnego i bez zablokowanych funkcji",
-      "Jeśli kiedyś dodamy płatne dodatki, wszystko, co dziś jest darmowe, zostanie darmowe dla ciebie"
-    ],
-    "big": "€0",
-    "bigNote": "na rodzinę · bez haczyka",
-    "lead": "Bez karty, bez okresu próbnego, bez zablokowanych funkcji.",
-    "promiseTitle": "Nasza obietnica",
-    "promise": "Każda rodzina, która dołączy, zanim dodamy płatne dodatki, zachowa wszystko za darmo na zawsze — łącznie z tym, co dodamy później."
-  },
-
-  "trust": {
-    "h2": "Plany waszej rodziny należą do waszej rodziny",
-    "pills": [
-      { "strong": "Bez reklam", "span": "Nie ma czego zamykać — ani teraz, ani później." },
-      { "strong": "Bez śledzenia", "span": "Żadnej analityki, żadnego profilowania — ta strona nie używa nawet ciasteczek." },
-      { "strong": "Bez sprzedaży danych", "span": "Darmowa aplikacja, serwery w UE i twoje prawa wbudowane od początku." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funkcje",
-    "h2": "Wszystko, czym żongluje wasza rodzina, w jednej aplikacji",
-    "lead": "Kalendarz, listy, jadłospis i urodziny — udostępnione tym, którzy mają to widzieć, i nikomu więcej."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalendarz",
-      "h2": "Jeden kalendarz dla wszystkich",
-      "p": "Cały tydzień i cały miesiąc rodziny na jedno spojrzenie — i już nigdy nie zapomnisz kogoś odebrać.",
-      "bullets": [
-        "Kolorowe wydarzenia z kategoriami, miejscami i notatkami",
-        "Powtarzanie zrobione porządnie — piłka w każdy wtorek, pianino co dwa tygodnie",
-        "Przypomnienia na każdym telefonie w rodzinie",
-        "Święta dla 35 krajów; wydarzenia prywatne zostają prywatne",
-        "Zrób zdjęcie ogłoszenia ze szkoły — daty trafią do kalendarza"
-      ],
-      "alt": "Kalendarz miesięczny z kolorowymi wydarzeniami"
-    },
-    "shopping": {
-      "eyebrow": "Zakupy",
-      "h2": "Listy zakupów, które nadążają",
-      "p": "Wpisujesz „mleko” na swoim telefonie — i po mniej więcej sekundzie pojawia się na telefonie twojego partnera, który jest w sklepie.",
-      "bullets": [
-        "Wspólne listy, które może edytować cała rodzina",
-        "Ilość, kategoria i notatka przy każdej pozycji",
-        "Odhaczone pozycje schodzą równo na dół"
-      ],
-      "alt": "Wspólna lista zakupów"
-    },
-    "todos": {
-      "eyebrow": "Zadania",
-      "h2": "Na każdym zadaniu jest czyjeś imię",
-      "p": "Koniec z „myślałem, że ty to robisz”. Dzieci widzą swoje własne zadania i same je odhaczają.",
-      "bullets": [
-        "Osoba odpowiedzialna, termin i przypomnienie",
-        "Sprawdza się przy obowiązkach domowych, sprawunkach i wszystkim pomiędzy"
-      ],
-      "alt": "Rodzinna lista zadań z osobami odpowiedzialnymi"
-    },
-    "habits": {
-      "eyebrow": "Nawyki",
-      "h2": "Małe nawyki, cała rodzina kibicuje",
-      "p": "Podlać kwiaty, poczytać dziesięć minut, wyjść z psem — odhacz, utrzymaj serię, a każde odhaczenie daje Minziemu, waszemu rodzinnemu kotu, energię na kolejną podróż.",
-      "bullets": [
-        "Każde z osobna, razem albo tylko dla ciebie — z codziennym przypomnieniem",
-        "Serie z dniami wolnymi i przerwami, więc urlop ich nie przerwie",
-        "Pełny pasek energii wysyła Minziego w podróż — a do domu przychodzi pocztówka"
-      ],
-      "alt": "Ekran nawyków rodziny z seriami i kotem Minzi"
-    },
-    "meals": {
-      "eyebrow": "Jadłospis",
-      "h2": "Kolacja ustalona już w niedzielę",
-      "p": "Zaplanujcie od śniadania po kolację na cały tydzień, prosto z własnych przepisów waszej rodziny — a potem wyślijcie składniki na listę zakupów.",
-      "bullets": [
-        "Jadłospis na tydzień z czterema posiłkami dziennie",
-        "Przepisy ze zdjęciami i importem przez link",
-        "Składniki przepisu na dowolną listę jednym dotknięciem",
-        "Brak pomysłów? Niech Daili zaproponuje kolacje na wolne wieczory"
-      ],
-      "alt": "Jadłospis na tydzień"
-    },
-    "birthdays": {
-      "eyebrow": "Święta",
-      "h2": "Nigdy więcej zapomnianych urodzin",
-      "p": "Urodziny, rocznice i święta rodzinne — pamiętane co roku, z odliczaniem i przypomnieniami dla wszystkich.",
-      "bullets": [],
-      "alt": "Ekran urodzin i świąt"
-    },
-    "notes": {
-      "eyebrow": "Notatki",
-      "h2": "Szybkie notatki, zawsze pod ręką",
-      "p": "Hasło do Wi-Fi, numer do niani, link wart zachowania — zapisane dwoma dotknięciami, domyślnie prywatne, udostępnione, kiedy chcesz.",
-      "bullets": [
-        "Udostępnij link z dowolnej aplikacji do Daili — stanie się notatką",
-        "Tylko ja, cała rodzina lub wybrane osoby",
-        "Przypinaj, taguj i szukaj — swoje notatki i te udostępnione tobie"
-      ],
-      "alt": "Lista notatek wspólnych i prywatnych"
-    },
-    "vault": {
-      "eyebrow": "Prywatne z założenia",
-      "h2": "Zdjęcia i dokumenty zostają na telefonie",
-      "p": "Sejf Daili trzyma zdjęcia rodzinne i ważne dokumenty w porządku — przechowywane tylko na twoim urządzeniu i nigdy nie wysyłane na nasze serwery.",
-      "bullets": [],
-      "alt": "Sejf na dokumenty"
-    },
-    "family": {
-      "eyebrow": "Rodzina",
-      "h2": "Rodzice, dzieci i babcia — wszyscy razem",
-      "p": "Zaproście rodzinę prostym 6-cyfrowym kodem albo linkiem. Rodzice są administratorami, dzieci i nastolatki mają własne logowanie, a najmłodsi bez adresu e-mail dostają profil zarządzany, który później można zamienić na prawdziwe konto.",
-      "bullets": [],
-      "alt": "Ekran rodziny z członkami i kodem zaproszenia"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Aplikacja web",
-    "h2": "Także na komputerze",
-    "p": "Ta sama rodzina, te same plany — w oknie przeglądarki, na app.daili.app. Zaplanujcie tydzień na dużym ekranie, a zakupy dopiszcie w kuchni z telefonu.",
-    "points": [
-      "Zaloguj się tym samym kontem; wszystko zostaje zsynchronizowane",
-      "Kalendarz, listy zakupów, zadania, przepisy, jadłospis, urodziny i rodzina",
-      "Nic do instalowania — działa w każdej nowoczesnej przeglądarce"
-    ],
-    "cta": "Otwórz app.daili.app",
-    "note": "Zdjęcia i dokumenty są tylko na telefonie, więc w przeglądarce się nie pokazują. Aplikacja web jest po angielsku i po niemiecku."
   },
 
   "faq": {

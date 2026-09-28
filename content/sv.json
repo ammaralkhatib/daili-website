@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funktioner",
     "webApp": "Webbapp",
-    "pricing": "Pris",
     "support": "Support",
     "blog": "Blogg",
     "help": "Hjälp",
-    "download": "Ladda ner",
     "language": "Språk",
     "skip": "Hoppa till innehållet",
     "menu": "Öppna menyn"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Nu på iPhone, Android och webben",
-    "kicker": "iPhone · Android · webbläsare",
     "h1a": "Hela familjen,",
     "h1b": "på samma sida.",
-    "lead": "En lugn plats för familjens vecka: en delad kalender, inköpslistor och uppgifter som alla ser. I varje telefon — och på datorn också.",
     "webLink": "Öppna i webbläsaren",
     "notes": [
       "Gratis",
       "Utan reklam",
       "Servrar i EU"
-    ],
-    "altCalendar": "Månadskalender i Daili",
-    "altHome": "Startskärmen i Daili med rutorna för funktionerna"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Redo när ni är",
       "sub": "Börja med en lista. Lägg till kalendern när ni är redo. Daili växer med er familj."
     }
-  },
-
-  "showcase": {
-    "pill": "Synkat på en sekund — i varje telefon i familjen",
-    "h2": "En app för hela familjen",
-    "alt": "Startskärmen i Daili med en händelse, en inköpsvara och en födelsedag som svävar bredvid"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Simskola", "s": "I dag · 16.30" },
-        { "t": "Mjölk · 2 l", "s": "Marco är i butiken" },
-        { "t": "Slänga soporna", "s": "Noah · klart" }
-      ],
-      "calendar": [
-        { "t": "Simskola", "s": "I dag · 16.30 · Emma" },
-        { "t": "Pianolektion", "s": "varannan onsdag" },
-        { "t": "Påminnelse i 4 telefoner", "s": "15 minuter innan" }
-      ],
-      "shopping": [
-        { "t": "Mjölk · 2 l", "s": "Lena la till den — hemifrån" },
-        { "t": "Bröd", "s": "Marco · i butiken" },
-        { "t": "Synkat på en sekund", "s": "i varje telefon i familjen" }
-      ],
-      "todos": [
-        { "t": "Vattna blommorna", "s": "Emma · fredag" },
-        { "t": "Slänga soporna", "s": "Noah · klart 🎉" },
-        { "t": "Påminnelse", "s": "Torsdag · 18.00" }
-      ],
-      "meals": [
-        { "t": "Tisdag · Middag", "s": "Pasta — ur receptsamlingen" },
-        { "t": "6 ingredienser → Inköp", "s": "tillagda med en tryckning" },
-        { "t": "Veckan klar på söndagen", "s": "från frukost till middag" }
-      ],
-      "birthdays": [
-        { "t": "Emma fyller 12", "s": "om 22 dagar · 29 augusti" },
-        { "t": "Påminnelse till alla", "s": "en vecka innan" },
-        { "t": "Marco fyller 41", "s": "om 3 veckor — varje år" }
-      ],
-      "vault": [
-        { "t": "Försäkringskort.pdf", "s": "bara i den här telefonen" },
-        { "t": "Semester 2026 · 48 foton", "s": "aldrig uppladdade" },
-        { "t": "Ingen server ser dem", "s": "inte ens vår" }
-      ],
-      "family": [
-        { "t": "Familjen Berger", "s": "5 medlemmar" },
-        { "t": "Inbjudningskod 482913", "s": "eller dela länken" },
-        { "t": "Noah · hanterad profil", "s": "utan e-post — uppgraderas sen" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Planerat på söndagskvällen. Klart för hela veckan.",
-    "p": "Fem minuter vid köksbordet — och fyra telefoner vet planen.",
-    "facts": [
-      { "t": "Gratis. Ingen reklam.", "s": "Inget säljs, inget spåras för reklam." },
-      { "t": "Servrar i EU", "s": "Familjens data stannar i Europa. Foton och dokument lämnar aldrig telefonen." },
-      { "t": "Barn och mormor också", "s": "Egna inloggningar för tonåringar, hanterade profiler för de små. Bjud in med en 6-siffrig kod." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Kom igång",
-    "h2": "Klart på ungefär en minut",
-    "steps": [
-      {
-        "h3": "Hämta appen",
-        "p": "Gratis på iPhone och Android — eller öppna app.daili.app på datorn. Utan kort och utan provperiod som tar slut."
-      },
-      {
-        "h3": "Skapa din familj",
-        "p": "Bjud in alla med en sexsiffrig kod eller en länk. Föräldrar är administratörer, barn och tonåringar får egen inloggning, och de små utan e-post får en hanterad profil."
-      },
-      {
-        "h3": "Alla på samma sida",
-        "p": "Det du lägger till i din telefon syns i de andras på ungefär en sekund — kalender, listor och uppgifter lika snabbt."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Jämförelse",
-    "h2": "Varför inte bara en delad kalender?",
-    "lead": "Google Kalender är mycket bra på kalendrar. Men familjelivet består inte bara av tider — och en tavla i köket följer inte med till affären.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Delad kalender", "paper": "Papper och tavla" },
-    "rows": [
-      "Allas tider på ett ställe",
-      "Påminnelser i varje telefon",
-      "En inköpslista som uppdateras direkt",
-      "Uppgifter med ett namn på",
-      "Matsedel för veckan och recept",
-      "Barnen får egen inloggning",
-      "Födelsedagar ihågkomna varje år",
-      "Funkar i telefonen och i webbläsaren",
-      "Ingen reklam, inget sålt"
-    ],
-    "legend": "✓ ja · ~ delvis · — nej"
-  },
-
-  "pricing": {
-    "eyebrow": "Pris",
-    "h2": "Gratis — och gratis för dig, för alltid",
-    "points": [
-      "Allt på den här sidan är gratis redan nu",
-      "Inget kort, ingen provperiod och inga låsta funktioner",
-      "Om vi någon gång lägger till betalda tillägg förblir allt som är gratis i dag gratis för dig"
-    ],
-    "big": "€0",
-    "bigNote": "per familj · utan hake",
-    "lead": "Inget kort, ingen provperiod, inga låsta funktioner.",
-    "promiseTitle": "Vårt löfte",
-    "promise": "Varje familj som är med innan vi lägger till betalda tillägg behåller allt gratis för alltid — även det vi lägger till senare."
-  },
-
-  "trust": {
-    "h2": "Familjens planer tillhör familjen",
-    "pills": [
-      { "strong": "Ingen reklam", "span": "Inget att klicka bort — varken nu eller sedan." },
-      { "strong": "Ingen spårning", "span": "Ingen statistik, ingen profilering — den här webbplatsen använder inte ens kakor." },
-      { "strong": "Inga sålda uppgifter", "span": "Gratis app, servrar i EU och dina rättigheter inbyggda." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funktioner",
-    "h2": "Allt familjen jonglerar, i en app",
-    "lead": "Kalender, listor, matsedel och födelsedagar — delade med dem som behöver se dem, och ingen annan."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalender",
-      "h2": "En kalender för alla",
-      "p": "Hela familjens vecka och månad med en blick — och du glömmer aldrig mer att hämta.",
-      "bullets": [
-        "Färgsatta händelser med kategorier, platser och anteckningar",
-        "Upprepningar som stämmer — fotboll varje tisdag, piano varannan vecka",
-        "Påminnelser i varje telefon i familjen",
-        "Helgdagar för 35 länder; privata händelser förblir privata",
-        "Fotografera ett brev från skolan — datumen hamnar i kalendern"
-      ],
-      "alt": "Månadskalender med färgade händelser"
-    },
-    "shopping": {
-      "eyebrow": "Inköp",
-      "h2": "Inköpslistor som uppdateras direkt",
-      "p": "Du skriver ”mjölk” i din telefon — och det dyker upp i din partners, i butiken, på ungefär en sekund.",
-      "bullets": [
-        "Delade listor som hela familjen kan ändra i",
-        "Antal, kategori och anteckning för varje vara",
-        "Avbockade varor glider snyggt ner till botten"
-      ],
-      "alt": "Delad inköpslista"
-    },
-    "todos": {
-      "eyebrow": "Uppgifter",
-      "h2": "På varje uppgift står det ett namn",
-      "p": "Slut på ”jag trodde att du skulle göra det”. Barnen ser sina egna uppgifter och bockar av dem själva.",
-      "bullets": [
-        "Ansvarig person, förfallodatum och påminnelse",
-        "Funkar för sysslor, ärenden och allt däremellan"
-      ],
-      "alt": "Familjens uppgiftslista med ansvariga"
-    },
-    "habits": {
-      "eyebrow": "Vanor",
-      "h2": "Små vanor, hela familjen hejar",
-      "p": "Vattna blommorna, läsa i tio minuter, gå ut med hunden — bocka av, håll sviten vid liv, och varje bock ger Minzi, er familjekatt, energi till nästa resa.",
-      "bullets": [
-        "Var och en, tillsammans eller bara för dig — med en daglig påminnelse",
-        "Sviter med vilodagar och pauser, så att en semester inte bryter dem",
-        "En full energimätare skickar ut Minzi på resa — och ett vykort kommer hem"
-      ],
-      "alt": "Familjens vanor med sviter och katten Minzi"
-    },
-    "meals": {
-      "eyebrow": "Matsedel",
-      "h2": "Middagen, bestämd redan på söndagen",
-      "p": "Planera från frukost till middag för hela veckan, direkt ur familjens egen receptsamling — och skicka sedan ingredienserna till en inköpslista.",
-      "bullets": [
-        "Matsedel för veckan med fyra måltider per dag",
-        "Receptsamling med foton och import via länk",
-        "Ett recepts ingredienser till vilken lista som helst med en tryckning",
-        "Idétorka? Låt Daili föreslå middagar för de lediga kvällarna"
-      ],
-      "alt": "Matsedel för veckan"
-    },
-    "birthdays": {
-      "eyebrow": "Fester",
-      "h2": "Glöm aldrig en födelsedag igen",
-      "p": "Födelsedagar, bemärkelsedagar och familjefester — ihågkomna varje år, med nedräkning och påminnelser till alla.",
-      "bullets": [],
-      "alt": "Skärmen med födelsedagar och fester"
-    },
-    "notes": {
-      "eyebrow": "Anteckningar",
-      "h2": "Snabba anteckningar, alltid nära till hands",
-      "p": "Wifi-lösenordet, barnvaktens nummer, en länk värd att spara — sparat med två tryck, privat som standard, delat när du vill.",
-      "bullets": [
-        "Dela en länk från valfri app till Daili — den blir en anteckning",
-        "Bara jag, hela familjen eller valda medlemmar",
-        "Fäst, tagga och sök — dina egna och de som delats med dig"
-      ],
-      "alt": "Anteckningslista med delade och privata anteckningar"
-    },
-    "vault": {
-      "eyebrow": "Privat från början",
-      "h2": "Foton och dokument stannar i telefonen",
-      "p": "Kassaskåpet i Daili håller familjefoton och viktiga dokument i ordning — sparade bara på din enhet och aldrig uppladdade till våra servrar.",
-      "bullets": [],
-      "alt": "Kassaskåp för dokument"
-    },
-    "family": {
-      "eyebrow": "Familj",
-      "h2": "Föräldrar, barn och mormor — alla med",
-      "p": "Bjud in familjen med en enkel sexsiffrig kod eller en länk. Föräldrar är administratörer, barn och tonåringar får egen inloggning, och de små utan e-post får en hanterad profil som du kan uppgradera senare.",
-      "bullets": [],
-      "alt": "Familjeskärmen med medlemmarna och inbjudningskoden"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Webbapp",
-    "h2": "Också på datorn",
-    "p": "Samma familj, samma planer — i ett webbläsarfönster på app.daili.app. Planera veckan på stor skärm och lägg till inköpen i köket med telefonen.",
-    "points": [
-      "Logga in med samma konto; allt hålls synkat",
-      "Kalender, inköpslistor, uppgifter, recept, matsedel, födelsedagar och familj",
-      "Inget att installera — funkar i alla moderna webbläsare"
-    ],
-    "cta": "Öppna app.daili.app",
-    "note": "Foton och dokument finns bara i telefonen och visas därför inte i webbläsaren. Webbappen finns på engelska och tyska."
   },
 
   "faq": {

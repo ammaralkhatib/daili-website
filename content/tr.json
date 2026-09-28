@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Özellikler",
     "webApp": "Web uygulaması",
-    "pricing": "Fiyat",
     "support": "Destek",
     "blog": "Blog",
     "help": "Yardım",
-    "download": "İndir",
     "language": "Dil",
     "skip": "İçeriğe geç",
     "menu": "Menüyü aç"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Artık iPhone, Android ve web'de",
-    "kicker": "iPhone · Android · web tarayıcı",
     "h1a": "Bütün aile",
     "h1b": "aynı sayfada.",
-    "lead": "Ailenizin haftası için sakin bir yer: ortak bir takvim, alışveriş listeleri ve herkesin gördüğü görevler. Her telefonda — ve bilgisayarda da.",
     "webLink": "Tarayıcıda aç",
     "notes": [
       "Ücretsiz",
       "Reklamsız",
       "Sunucular AB'de"
-    ],
-    "altCalendar": "Daili aylık takvim",
-    "altHome": "Daili ana ekranı ve özellik kutucukları"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Siz hazır olduğunuzda",
       "sub": "Tek bir listeyle başlayın. Hazır olunca takvimi ekleyin. Daili ailenizle birlikte büyür."
     }
-  },
-
-  "showcase": {
-    "pill": "Bir saniyede eşitlendi — ailedeki her telefonda",
-    "h2": "Bütün aile için tek uygulama",
-    "alt": "Yanında bir etkinlik, bir alışveriş ürünü ve bir doğum günü süzülen Daili ana ekranı"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Yüzme kursu", "s": "Bugün · 16.30" },
-        { "t": "Süt · 2 l", "s": "Marco markette" },
-        { "t": "Çöpü çıkar", "s": "Noah · bitti" }
-      ],
-      "calendar": [
-        { "t": "Yüzme kursu", "s": "Bugün · 16.30 · Emma" },
-        { "t": "Piyano dersi", "s": "iki haftada bir çarşamba" },
-        { "t": "4 telefonda hatırlatma", "s": "15 dakika önce" }
-      ],
-      "shopping": [
-        { "t": "Süt · 2 l", "s": "Lena ekledi — evden" },
-        { "t": "Ekmek", "s": "Marco · markette" },
-        { "t": "Bir saniyede eşitlendi", "s": "ailedeki her telefonda" }
-      ],
-      "todos": [
-        { "t": "Çiçekleri sula", "s": "Emma · cuma" },
-        { "t": "Çöpü çıkar", "s": "Noah · bitti 🎉" },
-        { "t": "Hatırlatma", "s": "Perşembe · 18.00" }
-      ],
-      "meals": [
-        { "t": "Salı · Akşam yemeği", "s": "Makarna — tarif defterinden" },
-        { "t": "6 malzeme → Alışveriş", "s": "tek dokunuşla eklendi" },
-        { "t": "Hafta pazardan belli", "s": "kahvaltıdan akşam yemeğine" }
-      ],
-      "birthdays": [
-        { "t": "Emma 12 yaşına giriyor", "s": "22 gün sonra · 29 Ağustos" },
-        { "t": "Herkese hatırlatma", "s": "bir hafta önce" },
-        { "t": "Marco 41 yaşına giriyor", "s": "3 hafta sonra — her yıl" }
-      ],
-      "vault": [
-        { "t": "Sigorta kartı.pdf", "s": "sadece bu telefonda" },
-        { "t": "Tatil 2026 · 48 fotoğraf", "s": "hiç yüklenmedi" },
-        { "t": "Hiçbir sunucu görmüyor", "s": "bizimki bile" }
-      ],
-      "family": [
-        { "t": "Berger Ailesi", "s": "5 üye" },
-        { "t": "Davet kodu 482913", "s": "ya da bağlantıyı paylaş" },
-        { "t": "Noah · yönetilen profil", "s": "e-posta yok — sonra hesap" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Pazar akşamı planlayın. Bütün hafta rahat edin.",
-    "p": "Mutfak masasında beş dakika — ve dört telefon planı biliyor.",
-    "facts": [
-      { "t": "Ücretsiz. Reklamsız.", "s": "Hiçbir şey satılmaz, reklam için hiçbir şey izlenmez." },
-      { "t": "Sunucular AB'de", "s": "Ailenizin verileri Avrupa'da kalır. Fotoğraflar ve belgeler telefondan hiç çıkmaz." },
-      { "t": "Çocuklar ve nine de", "s": "Gençlere kendi girişi, küçüklere yönetilen profil. 6 haneli kodla davet edin." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Başlarken",
-    "h2": "Yaklaşık bir dakikada hazır",
-    "steps": [
-      {
-        "h3": "Uygulamayı indirin",
-        "p": "iPhone ve Android'de ücretsiz — ya da bilgisayarınızda app.daili.app adresini açın. Kredi kartı yok, biten bir deneme süresi yok."
-      },
-      {
-        "h3": "Ailenizi oluşturun",
-        "p": "Herkesi 6 haneli bir kod veya bağlantıyla davet edin. Anne babalar yönetici olur, çocuklar ve gençler kendi girişini alır, e-postası olmayan küçükler ise yönetilen bir profil edinir."
-      },
-      {
-        "h3": "Herkes aynı sayfada",
-        "p": "Kendi telefonunuza eklediğiniz şey yaklaşık bir saniye sonra diğerlerinin telefonunda olur — takvim, listeler ve görevler aynı şekilde."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Karşılaştırma",
-    "h2": "Neden sadece ortak bir takvim olmasın?",
-    "lead": "Google Takvim, takvim işini gerçekten iyi yapıyor. Ama aile hayatı yalnızca randevulardan ibaret değil — ve mutfaktaki tahta sizinle markete gelmiyor.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Ortak takvim", "paper": "Kâğıt ve tahta" },
-    "rows": [
-      "Herkesin planı tek bir yerde",
-      "Her telefonda hatırlatmalar",
-      "Anında güncellenen bir alışveriş listesi",
-      "Üzerinde bir isim yazan görevler",
-      "Haftalık yemek planı ve tarifler",
-      "Çocuklara kendi girişleri",
-      "Doğum günleri her yıl hatırlanır",
-      "Telefonda ve tarayıcıda çalışır",
-      "Reklam yok, satılan hiçbir şey yok"
-    ],
-    "legend": "✓ var · ~ kısmen · — yok"
-  },
-
-  "pricing": {
-    "eyebrow": "Fiyat",
-    "h2": "Ücretsiz — ve sizin için sonsuza dek ücretsiz",
-    "points": [
-      "Bu sayfadaki her şey şu anda ücretsiz",
-      "Kredi kartı yok, deneme süresi yok, kilitli özellik yok",
-      "Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey sizin için ücretsiz kalır"
-    ],
-    "big": "€0",
-    "bigNote": "aile başına · kancasız",
-    "lead": "Kredi kartı yok, deneme yok, kilitli özellik yok.",
-    "promiseTitle": "Sözümüz",
-    "promise": "Ücretli ekler gelmeden katılan her aile her şeyi sonsuza dek ücretsiz tutar — sonradan eklediklerimiz dahil."
-  },
-
-  "trust": {
-    "h2": "Ailenizin planları ailenize aittir",
-    "pills": [
-      { "strong": "Reklam yok", "span": "Kapatılacak hiçbir şey yok — ne şimdi ne sonra." },
-      { "strong": "Takip yok", "span": "Analitik yok, profilleme yok — bu site çerez bile kullanmıyor." },
-      { "strong": "Veri satışı yok", "span": "Ücretsiz uygulama, AB'de sunucular ve haklarınız en baştan yerinde." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Özellikler",
-    "h2": "Ailenizin idare ettiği her şey, tek uygulamada",
-    "lead": "Takvim, listeler, yemekler ve doğum günleri — görmesi gerekenlerle paylaşılır, başka kimseyle değil."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Takvim",
-      "h2": "Herkes için tek takvim",
-      "p": "Ailenin bütün haftası ve bütün ayı tek bakışta — ve bir daha asla okuldan almayı unutmayın.",
-      "bullets": [
-        "Kategorileri, yerleri ve notlarıyla renkli etkinlikler",
-        "Doğru düzgün tekrarlar — her salı futbol, iki haftada bir piyano",
-        "Ailedeki her telefonda hatırlatmalar",
-        "35 ülkenin resmî tatilleri; özel etkinlikler özel kalır",
-        "Okuldan gelen mektubu fotoğraflayın — tarihler takvime düşsün"
-      ],
-      "alt": "Renkli etkinlikleriyle aylık takvim"
-    },
-    "shopping": {
-      "eyebrow": "Alışveriş",
-      "h2": "Anında güncellenen alışveriş listeleri",
-      "p": "Kendi telefonunuza «süt» yazarsınız — ve yaklaşık bir saniye sonra markette olan eşinizin telefonunda belirir.",
-      "bullets": [
-        "Bütün ailenin düzenleyebildiği ortak listeler",
-        "Her satır için miktar, kategori ve not",
-        "İşaretlenen satırlar düzgünce en alta kayar"
-      ],
-      "alt": "Ortak alışveriş listesi"
-    },
-    "todos": {
-      "eyebrow": "Görevler",
-      "h2": "Her görevin üzerinde bir isim var",
-      "p": "«Ben senin yaptığını sanıyordum» devri bitti. Çocuklar kendi görevlerini görür ve kendileri işaretler.",
-      "bullets": [
-        "Sorumlu kişi, teslim tarihi ve hatırlatma",
-        "Ev işleri, dışarıdaki işler ve arasındaki her şey için"
-      ],
-      "alt": "Sorumlularıyla birlikte aile görev listesi"
-    },
-    "habits": {
-      "eyebrow": "Alışkanlıklar",
-      "h2": "Küçük alışkanlıklar, bütün aile destekte",
-      "p": "Çiçekleri sulamak, on dakika okumak, köpeği gezdirmek — işaretleyin, serinizi koruyun; her işaret ailenizin kedisi Minzi'ye bir sonraki gezisi için enerji verir.",
-      "bullets": [
-        "Herkes kendi, birlikte ya da sadece sizin için — günlük hatırlatıcıyla",
-        "Mola günleri ve aralarla seriler; tatil seriyi bozmaz",
-        "Enerji çubuğu dolunca Minzi geziye çıkar — eve de bir kartpostal gelir"
-      ],
-      "alt": "Seriler ve kedi Minzi ile ailenin alışkanlıklar ekranı"
-    },
-    "meals": {
-      "eyebrow": "Yemek planı",
-      "h2": "Akşam yemeği daha pazar günü belli",
-      "p": "Kahvaltıdan akşam yemeğine bütün haftayı, doğrudan ailenizin kendi tarif defterinden planlayın — sonra malzemeleri bir alışveriş listesine gönderin.",
-      "bullets": [
-        "Günde dört öğünlük haftalık yemek planı",
-        "Fotoğraflı tarif defteri ve bağlantıyla içe aktarma",
-        "Bir tarifin malzemeleri tek dokunuşla istediğiniz listeye",
-        "Fikir mi kalmadı? Boş akşamlar için akşam yemeğini Daili önersin"
-      ],
-      "alt": "Haftalık yemek planı"
-    },
-    "birthdays": {
-      "eyebrow": "Kutlamalar",
-      "h2": "Bir daha asla doğum günü kaçırmayın",
-      "p": "Doğum günleri, yıl dönümleri ve aile kutlamaları — her yıl hatırlanır, geri sayımla ve herkese hatırlatmayla.",
-      "bullets": [],
-      "alt": "Doğum günleri ve kutlamalar ekranı"
-    },
-    "notes": {
-      "eyebrow": "Notlar",
-      "h2": "Hızlı notlar, hep elinizin altında",
-      "p": "Wi-Fi şifresi, bebek bakıcısının numarası, saklamaya değer bir bağlantı — iki dokunuşta kaydedilir, varsayılan olarak özeldir, istediğinizde paylaşılır.",
-      "bullets": [
-        "Herhangi bir uygulamadan Daili'ye bağlantı paylaşın — not olur",
-        "Sadece ben, tüm aile ya da seçilen üyeler",
-        "Sabitleyin, etiketleyin, arayın — kendi notlarınız ve sizinle paylaşılanlar"
-      ],
-      "alt": "Paylaşılan ve özel notların listesi"
-    },
-    "vault": {
-      "eyebrow": "Tasarımı gereği özel",
-      "h2": "Fotoğraflar ve belgeler telefonunuzda kalır",
-      "p": "Daili kasası aile fotoğraflarını ve önemli belgeleri düzenli tutar — yalnızca kendi cihazınızda saklanır, sunucularımıza asla yüklenmez.",
-      "bullets": [],
-      "alt": "Belge kasası"
-    },
-    "family": {
-      "eyebrow": "Aile",
-      "h2": "Anne baba, çocuklar ve babaanne — hepsi içinde",
-      "p": "Ailenizi basit bir 6 haneli kodla ya da bağlantıyla davet edin. Anne babalar yönetici olur, çocuklar ve gençler kendi girişini alır, e-postası olmayan küçükler ise sonradan gerçek bir hesaba dönüştürebileceğiniz yönetilen bir profil edinir.",
-      "bullets": [],
-      "alt": "Üyeleri ve davet kodunu gösteren Aile ekranı"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Web uygulaması",
-    "h2": "Bilgisayarda da",
-    "p": "Aynı aile, aynı planlar — app.daili.app adresinde bir tarayıcı penceresinde. Haftayı büyük ekranda planlayın, alışverişi mutfakta telefondan ekleyin.",
-    "points": [
-      "Aynı hesapla girin; her şey eşitlenmiş kalır",
-      "Takvim, alışveriş listeleri, görevler, tarifler, yemek planı, doğum günleri ve aile",
-      "Kurulacak bir şey yok — her modern tarayıcıda çalışır"
-    ],
-    "cta": "app.daili.app adresini aç",
-    "note": "Fotoğraflar ve belgeler yalnızca telefonunuzda durur, bu yüzden tarayıcıda gösterilmez. Web uygulaması İngilizce ve Almanca."
   },
 
   "faq": {

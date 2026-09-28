@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Ominaisuudet",
     "webApp": "Verkkosovellus",
-    "pricing": "Hinta",
     "support": "Tuki",
     "blog": "Blogi",
     "help": "Ohje",
-    "download": "Lataa",
     "language": "Kieli",
     "skip": "Siirry sisältöön",
     "menu": "Avaa valikko"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Nyt iPhonella, Androidilla ja verkossa",
-    "kicker": "iPhone · Android · selain",
     "h1a": "Koko perhe",
     "h1b": "samalla sivulla.",
-    "lead": "Yksi rauhallinen paikka perheen viikolle: yhteinen kalenteri, kauppalistat ja tehtävät, jotka kaikki näkevät. Joka puhelimessa — ja tietokoneellakin.",
     "webLink": "Avaa selaimessa",
     "notes": [
       "Ilmainen",
       "Ei mainoksia",
       "Palvelimet EU:ssa"
-    ],
-    "altCalendar": "Dailin kuukausikalenteri",
-    "altHome": "Dailin aloitusnäyttö ja ominaisuuksien ruudut"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Valmiina, kun te olette",
       "sub": "Aloita yhdellä listalla. Ota kalenteri mukaan, kun olet valmis. Daili kasvaa perheesi mukana."
     }
-  },
-
-  "showcase": {
-    "pill": "Synkassa sekunnissa — jokaisessa perheen puhelimessa",
-    "h2": "Yksi sovellus koko perheelle",
-    "alt": "Dailin aloitusnäyttö, jonka vieressä leijuvat tapahtuma, ostos ja syntymäpäivä"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Uimakoulu", "s": "Tänään · 16.30" },
-        { "t": "Maito · 2 l", "s": "Marco on kaupassa" },
-        { "t": "Roskat ulos", "s": "Noah · tehty" }
-      ],
-      "calendar": [
-        { "t": "Uimakoulu", "s": "Tänään · 16.30 · Emma" },
-        { "t": "Pianotunti", "s": "joka toinen keskiviikko" },
-        { "t": "Muistutus 4 puhelimeen", "s": "15 minuuttia ennen" }
-      ],
-      "shopping": [
-        { "t": "Maito · 2 l", "s": "Lena lisäsi sen — kotoa" },
-        { "t": "Leipä", "s": "Marco · kaupassa" },
-        { "t": "Synkassa sekunnissa", "s": "jokaisessa perheen puhelimessa" }
-      ],
-      "todos": [
-        { "t": "Kastele kukat", "s": "Emma · perjantai" },
-        { "t": "Roskat ulos", "s": "Noah · tehty 🎉" },
-        { "t": "Muistutus", "s": "Torstai · 18.00" }
-      ],
-      "meals": [
-        { "t": "Tiistai · Päivällinen", "s": "Pastaa — resepteistä" },
-        { "t": "6 ainesta → Ostokset", "s": "lisätty yhdellä napautuksella" },
-        { "t": "Viikko valmis sunnuntaina", "s": "aamiaisesta päivälliseen" }
-      ],
-      "birthdays": [
-        { "t": "Emma täyttää 12", "s": "22 päivän päästä · 29. elokuuta" },
-        { "t": "Muistutus kaikille", "s": "viikkoa aiemmin" },
-        { "t": "Marco täyttää 41", "s": "3 viikon päästä — joka vuosi" }
-      ],
-      "vault": [
-        { "t": "Vakuutuskortti.pdf", "s": "vain tässä puhelimessa" },
-        { "t": "Loma 2026 · 48 kuvaa", "s": "ei koskaan ladattu" },
-        { "t": "Yksikään palvelin ei näe", "s": "ei edes meidän" }
-      ],
-      "family": [
-        { "t": "Bergerin perhe", "s": "5 jäsentä" },
-        { "t": "Kutsukoodi 482913", "s": "tai jaa linkki" },
-        { "t": "Noah · hallittu profiili", "s": "ilman sähköpostia — päivitä" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Sunnuntai-iltana suunniteltu. Koko viikko sujuu.",
-    "p": "Viisi minuuttia keittiön pöydän ääressä — ja neljä puhelinta tietää suunnitelman.",
-    "facts": [
-      { "t": "Ilmainen, mainokseton", "s": "Mitään ei myydä, mitään ei seurata mainontaa varten." },
-      { "t": "Palvelimet EU:ssa", "s": "Perheen tiedot pysyvät Euroopassa. Kuvat ja asiakirjat eivät koskaan lähde puhelimesta." },
-      { "t": "Myös lapset ja mummo", "s": "Omat tunnukset nuorille, hallitut profiilit pienille. Kutsu 6-numeroisella koodilla." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Näin aloitat",
-    "h2": "Valmista noin minuutissa",
-    "steps": [
-      {
-        "h3": "Hanki sovellus",
-        "p": "Ilmainen iPhonelle ja Androidille — tai avaa app.daili.app tietokoneella. Ei korttia eikä kokeilujaksoa, joka loppuu kesken."
-      },
-      {
-        "h3": "Luo perheesi",
-        "p": "Kutsu kaikki kuusinumeroisella koodilla tai linkillä. Vanhemmat ovat ylläpitäjiä, lapset ja teinit saavat omat tunnukset, ja pienimmät ilman sähköpostia saavat hallitun profiilin."
-      },
-      {
-        "h3": "Kaikki samalla sivulla",
-        "p": "Se mitä lisäät omalla puhelimellasi, on muiden puhelimissa noin sekunnissa — kalenteri, listat ja tehtävät samalla tavalla."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Vertailu",
-    "h2": "Miksei vain jaettu kalenteri?",
-    "lead": "Google-kalenteri on kalentereissa todella hyvä. Mutta perhe-elämä ei ole pelkkiä menoja — eikä keittiön taulu lähde mukaan kauppaan.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Jaettu kalenteri", "paper": "Paperi ja taulu" },
-    "rows": [
-      "Kaikkien menot yhdessä paikassa",
-      "Muistutukset jokaiseen puhelimeen",
-      "Kauppalista, joka päivittyy heti",
-      "Tehtävät, joissa lukee nimi",
-      "Viikon ruokalista ja reseptit",
-      "Lapsille omat tunnukset",
-      "Syntymäpäivät muistissa joka vuosi",
-      "Toimii puhelimessa ja selaimessa",
-      "Ei mainoksia, ei mitään myytävänä"
-    ],
-    "legend": "✓ kyllä · ~ osittain · — ei"
-  },
-
-  "pricing": {
-    "eyebrow": "Hinta",
-    "h2": "Ilmainen — ja sinulle ilmainen ikuisesti",
-    "points": [
-      "Kaikki tällä sivulla on ilmaista jo nyt",
-      "Ei korttia, ei kokeilujaksoa eikä lukittuja ominaisuuksia",
-      "Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy sinulle ilmaisena"
-    ],
-    "big": "€0",
-    "bigNote": "perhettä kohti · ei koukkuja",
-    "lead": "Ei korttia, ei kokeilujaksoa, ei lukittuja ominaisuuksia.",
-    "promiseTitle": "Lupauksemme",
-    "promise": "Jokainen perhe, joka tulee mukaan ennen kuin lisäämme maksullisia lisiä, pitää kaiken ilmaisena ikuisesti — myös sen, mitä lisäämme myöhemmin."
-  },
-
-  "trust": {
-    "h2": "Perheen suunnitelmat kuuluvat perheelle",
-    "pills": [
-      { "strong": "Ei mainoksia", "span": "Ei mitään klikattavaa pois — ei nyt eikä myöhemmin." },
-      { "strong": "Ei seurantaa", "span": "Ei analytiikkaa, ei profilointia — tämä sivusto ei käytä edes evästeitä." },
-      { "strong": "Tietojasi ei myydä", "span": "Ilmainen sovellus, palvelimet EU:ssa ja oikeutesi sisäänrakennettuina." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Ominaisuudet",
-    "h2": "Kaikki mitä perheesi jongleeraa, yhdessä sovelluksessa",
-    "lead": "Kalenteri, listat, ruokalista ja syntymäpäivät — jaettuna niiden kanssa, joiden ne kuuluu nähdä, eikä kenenkään muun."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Kalenteri",
-      "h2": "Yksi kalenteri kaikille",
-      "p": "Koko perheen viikko ja kuukausi yhdellä silmäyksellä — etkä unohda enää koskaan hakea ketään.",
-      "bullets": [
-        "Värikoodatut menot kategorioineen, paikkoineen ja muistiinpanoineen",
-        "Toistot kunnolla tehtyinä — jalkapallo joka tiistai, piano joka toinen viikko",
-        "Muistutukset jokaiseen perheen puhelimeen",
-        "Pyhäpäivät 35 maasta; yksityiset menot pysyvät yksityisinä",
-        "Kuvaa koulun tiedote — päivämäärät siirtyvät kalenteriin"
-      ],
-      "alt": "Kuukausikalenteri värillisine menoineen"
-    },
-    "shopping": {
-      "eyebrow": "Ostokset",
-      "h2": "Kauppalistat, jotka pysyvät perässä",
-      "p": "Kirjoitat ”maito” omaan puhelimeesi — ja se ilmestyy kumppanisi puhelimeen kaupassa noin sekunnissa.",
-      "bullets": [
-        "Jaetut listat, joita koko perhe voi muokata",
-        "Määrä, kategoria ja muistiinpano jokaiselle riville",
-        "Kuitatut rivit valuvat siististi alas"
-      ],
-      "alt": "Jaettu kauppalista"
-    },
-    "todos": {
-      "eyebrow": "Tehtävät",
-      "h2": "Jokaisessa tehtävässä lukee nimi",
-      "p": "Loppu ”luulin että sinä teet sen” -keskusteluille. Lapset näkevät omat tehtävänsä ja kuittaavat ne itse.",
-      "bullets": [
-        "Vastuuhenkilö, määräpäivä ja muistutus",
-        "Sopii kotitöihin, asiointiin ja kaikkeen siltä väliltä"
-      ],
-      "alt": "Perheen tehtävälista vastuuhenkilöineen"
-    },
-    "habits": {
-      "eyebrow": "Tavat",
-      "h2": "Pienet tavat, koko perhe kannustaa",
-      "p": "Kukkien kastelu, kymmenen minuuttia lukemista, koiran ulkoilutus — merkitse tehdyksi, pidä putki käynnissä, ja jokainen merkintä antaa perheenne Minzi-kissalle energiaa seuraavaan matkaan.",
-      "bullets": [
-        "Jokainen erikseen, yhdessä tai vain sinulle — päivittäisellä muistutuksella",
-        "Putkissa on lepopäivät ja tauot, joten loma ei katkaise niitä",
-        "Täysi energiapalkki lähettää Minzin matkalle — ja kotiin tulee postikortti"
-      ],
-      "alt": "Perheen tavat -näkymä, jossa putket ja Minzi-kissa"
-    },
-    "meals": {
-      "eyebrow": "Ruokalista",
-      "h2": "Illallinen päätettynä jo sunnuntaina",
-      "p": "Suunnittele aamiaisesta illalliseen koko viikoksi, suoraan perheen omista resepteistä — ja lähetä sitten ainekset kauppalistalle.",
-      "bullets": [
-        "Viikon ruokalista, neljä ateriaa päivässä",
-        "Reseptit kuvineen ja tuonti linkin kautta",
-        "Reseptin ainekset mille tahansa listalle yhdellä napautuksella",
-        "Ideat lopussa? Anna Dailin ehdottaa illallisia vapaille illoille"
-      ],
-      "alt": "Viikon ruokalista"
-    },
-    "birthdays": {
-      "eyebrow": "Juhlat",
-      "h2": "Älä unohda enää koskaan syntymäpäivää",
-      "p": "Syntymäpäivät, merkkipäivät ja perhejuhlat — muistissa joka vuosi, laskurin ja muistutusten kanssa kaikille.",
-      "bullets": [],
-      "alt": "Syntymäpäivien ja juhlien näkymä"
-    },
-    "notes": {
-      "eyebrow": "Muistiinpanot",
-      "h2": "Pikamuistiinpanot, aina oikeassa paikassa",
-      "p": "Wi-Fi-salasana, lapsenvahdin numero, säilyttämisen arvoinen linkki — tallessa kahdella napautuksella, oletuksena yksityinen, jaettu kun haluat.",
-      "bullets": [
-        "Jaa linkki mistä tahansa sovelluksesta Dailiin — siitä tulee muistiinpano",
-        "Vain minä, koko perhe tai valitut jäsenet",
-        "Kiinnitä, merkitse ja hae — omat ja sinulle jaetut"
-      ],
-      "alt": "Muistiinpanolista jaetuilla ja yksityisillä muistiinpanoilla"
-    },
-    "vault": {
-      "eyebrow": "Yksityinen lähtökohtaisesti",
-      "h2": "Kuvat ja asiakirjat pysyvät puhelimessa",
-      "p": "Dailin holvi pitää perhekuvat ja tärkeät asiakirjat järjestyksessä — tallennettuna vain omaan laitteeseesi eikä koskaan ladattuna palvelimillemme.",
-      "bullets": [],
-      "alt": "Asiakirjaholvi"
-    },
-    "family": {
-      "eyebrow": "Perhe",
-      "h2": "Vanhemmat, lapset ja mummo — kaikki mukana",
-      "p": "Kutsu perheesi yksinkertaisella kuusinumeroisella koodilla tai linkillä. Vanhemmat ovat ylläpitäjiä, lapset ja teinit saavat omat tunnukset, ja pienimmät ilman sähköpostia saavat hallitun profiilin, josta voi myöhemmin tehdä oikean tilin.",
-      "bullets": [],
-      "alt": "Perhenäkymä jäsenineen ja kutsukoodeineen"
-    }
-  },
-
-  "web": {
-    "eyebrow": "Verkkosovellus",
-    "h2": "Myös tietokoneella",
-    "p": "Sama perhe, samat suunnitelmat — selainikkunassa osoitteessa app.daili.app. Suunnittele viikko isolta näytöltä ja lisää ostokset keittiössä puhelimella.",
-    "points": [
-      "Kirjaudu samalla tilillä; kaikki pysyy synkassa",
-      "Kalenteri, kauppalistat, tehtävät, reseptit, ruokalista, syntymäpäivät ja perhe",
-      "Ei mitään asennettavaa — toimii jokaisessa nykyselaimessa"
-    ],
-    "cta": "Avaa app.daili.app",
-    "note": "Kuvat ja asiakirjat ovat vain puhelimessa, joten niitä ei näytetä selaimessa. Verkkosovellus on englanniksi ja saksaksi."
   },
 
   "faq": {

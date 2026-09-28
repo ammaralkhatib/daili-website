@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funciones",
     "webApp": "App web",
-    "pricing": "Precio",
     "support": "Ayuda",
     "blog": "Blog",
     "help": "Ayuda",
-    "download": "Descargar",
     "language": "Idioma",
     "skip": "Ir al contenido",
     "menu": "Abrir el menú"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Ya en iPhone, Android y la web",
-    "kicker": "iPhone · Android · navegador web",
     "h1a": "Tu familia,",
     "h1b": "en la misma página.",
-    "lead": "Un lugar tranquilo para la semana de tu familia: un calendario compartido, listas de la compra y tareas que todos ven. En cada móvil — y también en el ordenador.",
     "webLink": "Abrir en el navegador",
     "notes": [
       "Gratis",
       "Sin anuncios",
       "Servidores en la UE"
-    ],
-    "altCalendar": "Calendario mensual de Daili",
-    "altHome": "Pantalla de inicio de Daili con los accesos a las funciones"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Listo cuando tú lo estés",
       "sub": "Empieza con una lista. Añade el calendario cuando te apetezca. Daili crece con tu familia."
     }
-  },
-
-  "showcase": {
-    "pill": "Sincronizado en un segundo — en todos los móviles de la familia",
-    "h2": "Una app para toda la familia",
-    "alt": "La pantalla de inicio de Daili con un evento, un artículo de la compra y un cumpleaños flotando al lado"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Clase de natación", "s": "Hoy · 16:30" },
-        { "t": "Leche · 2 l", "s": "Marco está en la tienda" },
-        { "t": "Sacar la basura", "s": "Noah · hecho" }
-      ],
-      "calendar": [
-        { "t": "Clase de natación", "s": "Hoy · 16:30 · Emma" },
-        { "t": "Clase de piano", "s": "cada dos miércoles" },
-        { "t": "Aviso en 4 móviles", "s": "15 minutos antes" }
-      ],
-      "shopping": [
-        { "t": "Leche · 2 l", "s": "Lena la añadió — desde casa" },
-        { "t": "Pan", "s": "Marco · en la tienda" },
-        { "t": "Sincronizado en un segundo", "s": "en todos los móviles de casa" }
-      ],
-      "todos": [
-        { "t": "Regar las plantas", "s": "Emma · viernes" },
-        { "t": "Sacar la basura", "s": "Noah · hecho 🎉" },
-        { "t": "Aviso", "s": "Jueves · 18:00" }
-      ],
-      "meals": [
-        { "t": "Martes · Cena", "s": "Pasta — del recetario" },
-        { "t": "6 ingredientes → Compras", "s": "añadidos con un toque" },
-        { "t": "La semana lista el domingo", "s": "del desayuno a la cena" }
-      ],
-      "birthdays": [
-        { "t": "Emma cumple 12", "s": "en 22 días · 29 de agosto" },
-        { "t": "Aviso para toda la familia", "s": "una semana antes" },
-        { "t": "Marco cumple 41", "s": "en 3 semanas — cada año" }
-      ],
-      "vault": [
-        { "t": "Tarjeta del seguro.pdf", "s": "solo en este móvil" },
-        { "t": "Vacaciones 2026 · 48 fotos", "s": "nunca subidas" },
-        { "t": "Ningún servidor las ve", "s": "tampoco el nuestro" }
-      ],
-      "family": [
-        { "t": "Familia Berger", "s": "5 miembros" },
-        { "t": "Código de invitación 482913", "s": "o comparte el enlace" },
-        { "t": "Noah · perfil gestionado", "s": "sin correo — se amplía después" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Planifícalo el domingo por la noche. Disfrútalo toda la semana.",
-    "p": "Cinco minutos en la mesa de la cocina — y cuatro móviles ya saben el plan.",
-    "facts": [
-      { "t": "Gratis. Sin anuncios.", "s": "No vendemos nada ni rastreamos nada para publicidad." },
-      { "t": "Servidores en la UE", "s": "Los datos de tu familia se quedan en Europa. Las fotos y los documentos nunca salen del móvil." },
-      { "t": "Para niños y abuelas", "s": "Cuentas propias para adolescentes, perfiles gestionados para los peques. Invita con un código de 6 dígitos." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Primeros pasos",
-    "h2": "Listo en aproximadamente un minuto",
-    "steps": [
-      {
-        "h3": "Instala la aplicación",
-        "p": "Gratis en iPhone y Android — o abre app.daili.app en el ordenador. Sin tarjeta de crédito y sin periodo de prueba que se acaba."
-      },
-      {
-        "h3": "Crea tu familia",
-        "p": "Invita a todos con un código de 6 dígitos o un enlace. Las madres y los padres son administradores, los hijos y adolescentes tienen su propia cuenta, y los pequeños sin correo electrónico reciben un perfil gestionado."
-      },
-      {
-        "h3": "Todos en la misma página",
-        "p": "Lo que añades en tu móvil aparece en el de los demás en aproximadamente un segundo: calendario, listas y tareas por igual."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Comparativa",
-    "h2": "¿Por qué no un simple calendario compartido?",
-    "lead": "Google Calendar se le da muy bien lo de los calendarios. Pero la vida familiar no son solo citas, y una pizarra en la cocina no te acompaña al supermercado.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Calendario compartido", "paper": "Papel y pizarra" },
-    "rows": [
-      "Los planes de todos en un solo sitio",
-      "Recordatorios en todos los móviles",
-      "Una lista de la compra que se actualiza en directo",
-      "Tareas con un nombre encima",
-      "Menú semanal y recetario",
-      "Los hijos tienen su propia cuenta",
-      "Cumpleaños recordados cada año",
-      "Funciona en el móvil y en el navegador",
-      "Sin anuncios, sin vender nada"
-    ],
-    "legend": "✓ sí · ~ en parte · — no"
-  },
-
-  "pricing": {
-    "eyebrow": "Precio",
-    "h2": "Gratis — y gratis para ti, para siempre",
-    "points": [
-      "Todo lo que aparece en esta página es gratis ahora mismo",
-      "Sin tarjeta de crédito, sin periodo de prueba y sin funciones bloqueadas",
-      "Si algún día añadimos extras de pago, todo lo que hoy es gratis lo seguirá siendo para ti"
-    ],
-    "big": "€0",
-    "bigNote": "por familia · sin trampa",
-    "lead": "Sin tarjeta, sin prueba, sin funciones bloqueadas.",
-    "promiseTitle": "Nuestra promesa",
-    "promise": "Cada familia que entre antes de que añadamos extras de pago se queda con todo gratis para siempre — incluido lo que añadamos más adelante."
-  },
-
-  "trust": {
-    "h2": "Los planes de tu familia son de tu familia",
-    "pills": [
-      { "strong": "Sin anuncios", "span": "Nada que cerrar: ni ahora ni más adelante." },
-      { "strong": "Sin rastreo", "span": "Sin analíticas y sin perfilado: esta web ni siquiera usa cookies." },
-      { "strong": "Sin vender tus datos", "span": "Aplicación gratuita, servidores en la UE y tus derechos incluidos." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funciones",
-    "h2": "Todo lo que hace malabares tu familia, en una app",
-    "lead": "Calendario, listas, menús y cumpleaños — compartidos con quien tiene que verlos, y con nadie más."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Calendario",
-      "h2": "Un calendario para todos",
-      "p": "Toda la semana y todo el mes de la familia de un vistazo, y nunca más se te olvida ir a recoger a nadie.",
-      "bullets": [
-        "Eventos por colores con categorías, lugares y notas",
-        "Repeticiones bien hechas: fútbol cada martes, piano cada dos semanas",
-        "Recordatorios en todos los móviles de la familia",
-        "Festivos de 35 países; los eventos privados siguen siendo privados",
-        "Haz una foto a la circular del cole — las fechas llegan al calendario"
-      ],
-      "alt": "Calendario mensual con etiquetas de eventos"
-    },
-    "shopping": {
-      "eyebrow": "Compras",
-      "h2": "Listas de la compra que se actualizan en directo",
-      "p": "Añades «leche» en tu móvil y aparece en el de tu pareja, que está en la tienda, en aproximadamente un segundo.",
-      "bullets": [
-        "Listas compartidas que puede editar toda la familia",
-        "Cantidad, categoría y nota en cada artículo",
-        "Lo marcado baja ordenadamente al final"
-      ],
-      "alt": "Lista de la compra compartida"
-    },
-    "todos": {
-      "eyebrow": "Tareas",
-      "h2": "Cada tarea lleva un nombre",
-      "p": "Se acabó el «pensaba que lo hacías tú». Los hijos ven sus propias tareas y las marcan ellos mismos.",
-      "bullets": [
-        "Persona responsable, fecha de entrega y recordatorio",
-        "Sirve para las tareas de casa, los recados y todo lo demás"
-      ],
-      "alt": "Lista de tareas familiar con responsables"
-    },
-    "habits": {
-      "eyebrow": "Hábitos",
-      "h2": "Pequeños hábitos, toda la familia anima",
-      "p": "Regar las plantas, leer diez minutos, sacar al perro — márcalo, mantén la racha, y cada marca le da a Minzi, la gata de la familia, energía para su próximo viaje.",
-      "bullets": [
-        "Cada uno, juntos o solo para ti — con un recordatorio diario",
-        "Rachas con días de descanso y pausas, para que las vacaciones no las rompan",
-        "Con la barra de energía llena, Minzi se va de viaje — y llega una postal a casa"
-      ],
-      "alt": "Pantalla de hábitos de la familia con rachas y la gata Minzi"
-    },
-    "meals": {
-      "eyebrow": "Menú",
-      "h2": "La cena, decidida ya el domingo",
-      "p": "Planifica del desayuno a la cena para toda la semana, directamente desde el recetario de tu familia, y manda después los ingredientes a una lista de la compra.",
-      "bullets": [
-        "Menú semanal con cuatro comidas por día",
-        "Recetario con fotos e importación por enlace",
-        "Los ingredientes de una receta a cualquier lista con un toque",
-        "¿Sin ideas? Deja que Daili sugiera cenas para las noches libres"
-      ],
-      "alt": "Menú semanal"
-    },
-    "birthdays": {
-      "eyebrow": "Celebraciones",
-      "h2": "Nunca más se te olvida un cumpleaños",
-      "p": "Cumpleaños, aniversarios y celebraciones familiares: recordados cada año, con cuenta atrás y avisos para todos.",
-      "bullets": [],
-      "alt": "Pantalla de cumpleaños y celebraciones"
-    },
-    "notes": {
-      "eyebrow": "Notas",
-      "h2": "Notas rápidas, siempre a mano",
-      "p": "La contraseña del wifi, el número de la canguro, un enlace que vale la pena guardar — guardados en dos toques, privados por defecto, compartidos cuando quieras.",
-      "bullets": [
-        "Comparte un enlace desde cualquier app con Daili — y se convierte en nota",
-        "Solo yo, toda la familia o miembros elegidos",
-        "Fija, etiqueta y busca — tus notas y las que te comparten"
-      ],
-      "alt": "Lista de notas compartidas y privadas"
-    },
-    "vault": {
-      "eyebrow": "Privado desde el diseño",
-      "h2": "Las fotos y los documentos se quedan en tu móvil",
-      "p": "La caja fuerte de Daili mantiene ordenadas las fotos de familia y los documentos importantes, guardados solo en tu dispositivo y nunca subidos a nuestros servidores.",
-      "bullets": [],
-      "alt": "Caja fuerte de documentos"
-    },
-    "family": {
-      "eyebrow": "Familia",
-      "h2": "Madres, padres, hijos y la abuela: todos dentro",
-      "p": "Invita a tu familia con un sencillo código de 6 dígitos o un enlace. Las madres y los padres son administradores, los hijos y adolescentes tienen su propia cuenta, y los pequeños sin correo electrónico reciben un perfil gestionado que podrás convertir más adelante.",
-      "bullets": [],
-      "alt": "Pantalla de familia con los miembros y el código de invitación"
-    }
-  },
-
-  "web": {
-    "eyebrow": "App web",
-    "h2": "También en el ordenador",
-    "p": "La misma familia, los mismos planes — en una ventana del navegador, en app.daili.app. Planifica la semana en pantalla grande y añade la compra desde la cocina con el móvil.",
-    "points": [
-      "Entra con la misma cuenta; todo sigue sincronizado",
-      "Calendario, listas de la compra, tareas, recetas, menú, cumpleaños y familia",
-      "Nada que instalar — funciona en cualquier navegador moderno"
-    ],
-    "cta": "Abrir app.daili.app",
-    "note": "Las fotos y los documentos viven solo en tu móvil, así que no se muestran en el navegador. La app web está en inglés y alemán."
   },
 
   "faq": {

@@ -13,13 +13,10 @@
   },
 
   "nav": {
-    "features": "Funzioni",
     "webApp": "App web",
-    "pricing": "Prezzo",
     "support": "Assistenza",
     "blog": "Blog",
     "help": "Aiuto",
-    "download": "Scarica",
     "language": "Lingua",
     "skip": "Vai al contenuto",
     "menu": "Apri il menu"
@@ -37,19 +34,14 @@
   },
 
   "hero": {
-    "chip": "Ora su iPhone, Android e sul web",
-    "kicker": "iPhone · Android · browser web",
     "h1a": "La tua famiglia,",
     "h1b": "sulla stessa pagina.",
-    "lead": "Un posto tranquillo per la settimana della tua famiglia: un calendario condiviso, liste della spesa e attività che vedono tutti. Su ogni telefono — e anche sul computer.",
     "webLink": "Apri nel browser",
     "notes": [
       "Gratis",
       "Senza pubblicità",
       "Server nell'UE"
-    ],
-    "altCalendar": "Calendario mensile di Daili",
-    "altHome": "Schermata iniziale di Daili con i riquadri delle funzioni"
+    ]
   },
 
   "home": {
@@ -238,240 +230,6 @@
       "h2": "Pronti quando lo sei tu",
       "sub": "Inizia con una lista. Aggiungi il calendario quando vuoi. Daili cresce con la tua famiglia."
     }
-  },
-
-  "showcase": {
-    "pill": "Sincronizzato in un secondo — su ogni telefono della famiglia",
-    "h2": "Un'app per tutta la famiglia",
-    "alt": "La schermata iniziale di Daili con un evento, un articolo della spesa e un compleanno che fluttuano accanto"
-  },
-
-  "story": {
-    "cards": {
-      "hero": [
-        { "t": "Corso di nuoto", "s": "Oggi · 16:30" },
-        { "t": "Latte · 2 l", "s": "Marco è al supermercato" },
-        { "t": "Portare fuori i rifiuti", "s": "Noah · fatto" }
-      ],
-      "calendar": [
-        { "t": "Corso di nuoto", "s": "Oggi · 16:30 · Emma" },
-        { "t": "Lezione di piano", "s": "un mercoledì sì e uno no" },
-        { "t": "Promemoria su 4 telefoni", "s": "15 minuti prima" }
-      ],
-      "shopping": [
-        { "t": "Latte · 2 l", "s": "Lena l'ha aggiunto — da casa" },
-        { "t": "Pane", "s": "Marco · al supermercato" },
-        { "t": "Sincronizzato in un secondo", "s": "su ogni telefono di casa" }
-      ],
-      "todos": [
-        { "t": "Annaffiare le piante", "s": "Emma · venerdì" },
-        { "t": "Portare fuori i rifiuti", "s": "Noah · fatto 🎉" },
-        { "t": "Promemoria", "s": "Giovedì · 18:00" }
-      ],
-      "meals": [
-        { "t": "Martedì · Cena", "s": "Pasta — dal ricettario" },
-        { "t": "6 ingredienti → Spesa", "s": "aggiunti con un tocco" },
-        { "t": "La settimana pronta domenica", "s": "dalla colazione alla cena" }
-      ],
-      "birthdays": [
-        { "t": "Emma compie 12 anni", "s": "tra 22 giorni · 29 agosto" },
-        { "t": "Promemoria per tutti", "s": "una settimana prima" },
-        { "t": "Marco compie 41 anni", "s": "tra 3 settimane — ogni anno" }
-      ],
-      "vault": [
-        { "t": "Tessera assicurativa.pdf", "s": "solo su questo telefono" },
-        { "t": "Vacanze 2026 · 48 foto", "s": "mai caricate" },
-        { "t": "Nessun server le vede", "s": "nemmeno il nostro" }
-      ],
-      "family": [
-        { "t": "Famiglia Berger", "s": "5 membri" },
-        { "t": "Codice invito 482913", "s": "o condividi il link" },
-        { "t": "Noah · profilo gestito", "s": "senza e-mail — poi si aggiorna" }
-      ]
-    }
-  },
-
-  "life": {
-    "h2": "Si pianifica la domenica sera. Si vive tranquilli tutta la settimana.",
-    "p": "Cinque minuti al tavolo della cucina — e quattro telefoni conoscono il piano.",
-    "facts": [
-      { "t": "Gratis, senza annunci", "s": "Niente viene venduto, niente viene tracciato per la pubblicità." },
-      { "t": "Server nell'UE", "s": "I dati della tua famiglia restano in Europa. Foto e documenti non lasciano mai il telefono." },
-      { "t": "Anche bimbi e nonna", "s": "Account propri per i ragazzi, profili gestiti per i più piccoli. Inviti con un codice di 6 cifre." }
-    ]
-  },
-
-  "howItWorks": {
-    "eyebrow": "Per iniziare",
-    "h2": "Pronto in circa un minuto",
-    "steps": [
-      {
-        "h3": "Scarica l'app",
-        "p": "Gratis su iPhone e Android — oppure apri app.daili.app sul computer. Senza carta di credito e senza un periodo di prova che scade."
-      },
-      {
-        "h3": "Crea la tua famiglia",
-        "p": "Invita tutti con un codice di 6 cifre o un link. I genitori sono amministratori, i figli e i ragazzi hanno il proprio accesso e i più piccoli senza e-mail ricevono un profilo gestito."
-      },
-      {
-        "h3": "Tutti sulla stessa pagina",
-        "p": "Quello che aggiungi dal tuo telefono compare su quello degli altri in circa un secondo: calendario, liste e attività allo stesso modo."
-      }
-    ]
-  },
-
-  "compare": {
-    "eyebrow": "Confronto",
-    "h2": "Perché non un semplice calendario condiviso?",
-    "lead": "Google Calendar con i calendari se la cava benissimo. Ma la vita di famiglia non è fatta solo di appuntamenti, e una lavagna in cucina non ti accompagna al supermercato.",
-    "cols": { "feature": "", "daili": "Daili", "gcal": "Calendario condiviso", "paper": "Carta e lavagna" },
-    "rows": [
-      "Gli impegni di tutti in un posto solo",
-      "Promemoria su ogni telefono",
-      "Una lista della spesa che si aggiorna in tempo reale",
-      "Attività con sopra un nome",
-      "Menu della settimana e ricettario",
-      "I figli hanno il proprio accesso",
-      "Compleanni ricordati ogni anno",
-      "Funziona sul telefono e nel browser",
-      "Niente pubblicità, niente in vendita"
-    ],
-    "legend": "✓ sì · ~ in parte · — no"
-  },
-
-  "pricing": {
-    "eyebrow": "Prezzo",
-    "h2": "Gratis — e gratis per te, per sempre",
-    "points": [
-      "Tutto quello che vedi in questa pagina è gratis fin da subito",
-      "Niente carta di credito, niente periodo di prova, nessuna funzione bloccata",
-      "Se un giorno aggiungeremo extra a pagamento, tutto ciò che oggi è gratis resterà gratis per te"
-    ],
-    "big": "€0",
-    "bigNote": "per famiglia · senza trucchi",
-    "lead": "Niente carta, niente prova, niente funzioni bloccate.",
-    "promiseTitle": "La nostra promessa",
-    "promise": "Ogni famiglia che entra prima che aggiungiamo extra a pagamento tiene tutto gratis per sempre — compreso quello che aggiungeremo dopo."
-  },
-
-  "trust": {
-    "h2": "I programmi della tua famiglia sono della tua famiglia",
-    "pills": [
-      { "strong": "Niente pubblicità", "span": "Niente da chiudere: né ora né più avanti." },
-      { "strong": "Nessun tracciamento", "span": "Niente statistiche, niente profilazione: questo sito non usa nemmeno i cookie." },
-      { "strong": "I tuoi dati non si vendono", "span": "App gratuita, server nell'UE e i tuoi diritti già inclusi." }
-    ]
-  },
-
-  "featuresSection": {
-    "eyebrow": "Funzioni",
-    "h2": "Tutto quello che la tua famiglia gestisce, in un'app",
-    "lead": "Calendario, liste, menu e compleanni — condivisi con chi deve vederli, e con nessun altro."
-  },
-
-  "features": {
-    "calendar": {
-      "eyebrow": "Calendario",
-      "h2": "Un calendario per tutti",
-      "p": "Tutta la settimana e tutto il mese della famiglia in un colpo d'occhio, e non dimentichi più di passare a prendere qualcuno.",
-      "bullets": [
-        "Impegni a colori con categorie, luoghi e note",
-        "Ripetizioni fatte bene: calcio ogni martedì, piano una settimana sì e una no",
-        "Promemoria su ogni telefono della famiglia",
-        "Festività di 35 Paesi; gli impegni privati restano privati",
-        "Fotografa l'avviso della scuola — le date finiscono nel calendario"
-      ],
-      "alt": "Calendario mensile con etichette degli impegni"
-    },
-    "shopping": {
-      "eyebrow": "Spesa",
-      "h2": "Liste della spesa che si aggiornano in tempo reale",
-      "p": "Aggiungi «latte» dal tuo telefono e compare su quello del tuo partner, che è al supermercato, in circa un secondo.",
-      "bullets": [
-        "Liste condivise che tutta la famiglia può modificare",
-        "Quantità, categoria e nota per ogni voce",
-        "Le voci spuntate scendono ordinatamente in fondo"
-      ],
-      "alt": "Lista della spesa condivisa"
-    },
-    "todos": {
-      "eyebrow": "Attività",
-      "h2": "Su ogni attività c'è un nome",
-      "p": "Basta con il «pensavo lo facessi tu». I figli vedono le proprie attività e le spuntano da soli.",
-      "bullets": [
-        "Persona incaricata, scadenza e promemoria",
-        "Va bene per le faccende, le commissioni e tutto il resto"
-      ],
-      "alt": "Lista delle attività di famiglia con gli incaricati"
-    },
-    "habits": {
-      "eyebrow": "Abitudini",
-      "h2": "Piccole abitudini, tutta la famiglia fa il tifo",
-      "p": "Annaffiare le piante, leggere dieci minuti, portare fuori il cane — spunta, tieni viva la serie, e ogni spunta dà a Minzi, la gatta di famiglia, energia per il suo prossimo viaggio.",
-      "bullets": [
-        "Ognuno, insieme o solo per te — con un promemoria quotidiano",
-        "Serie con giorni di riposo e pause, così una vacanza non le interrompe",
-        "Con la barra dell'energia piena Minzi parte in viaggio — e a casa arriva una cartolina"
-      ],
-      "alt": "Schermata delle abitudini di famiglia con le serie e la gatta Minzi"
-    },
-    "meals": {
-      "eyebrow": "Menu",
-      "h2": "La cena, decisa già di domenica",
-      "p": "Pianifica dalla colazione alla cena per tutta la settimana, direttamente dal ricettario della tua famiglia, e manda poi gli ingredienti a una lista della spesa.",
-      "bullets": [
-        "Menu settimanale con quattro pasti al giorno",
-        "Ricettario con foto e importazione da link",
-        "Gli ingredienti di una ricetta su qualsiasi lista con un tocco",
-        "A corto di idee? Lascia che Daili suggerisca le cene per le sere libere"
-      ],
-      "alt": "Menu della settimana"
-    },
-    "birthdays": {
-      "eyebrow": "Ricorrenze",
-      "h2": "Non dimenticare mai più un compleanno",
-      "p": "Compleanni, anniversari e feste di famiglia: ricordati ogni anno, con un conto alla rovescia e promemoria per tutti.",
-      "bullets": [],
-      "alt": "Schermata dei compleanni e delle ricorrenze"
-    },
-    "notes": {
-      "eyebrow": "Note",
-      "h2": "Note veloci, sempre a portata di mano",
-      "p": "La password del Wi-Fi, il numero della babysitter, un link da non perdere — salvati in due tocchi, privati di default, condivisi quando vuoi.",
-      "bullets": [
-        "Condividi un link da qualsiasi app con Daili — diventa una nota",
-        "Solo io, tutta la famiglia o i membri che scegli",
-        "Fissa, tagga e cerca — le tue note e quelle condivise con te"
-      ],
-      "alt": "Elenco di note condivise e private"
-    },
-    "vault": {
-      "eyebrow": "Privato per scelta",
-      "h2": "Foto e documenti restano sul telefono",
-      "p": "La cassaforte di Daili tiene in ordine le foto di famiglia e i documenti importanti, salvati solo sul tuo dispositivo e mai caricati sui nostri server.",
-      "bullets": [],
-      "alt": "Cassaforte dei documenti"
-    },
-    "family": {
-      "eyebrow": "Famiglia",
-      "h2": "Genitori, figli e nonna: dentro tutti",
-      "p": "Invita la tua famiglia con un semplice codice di 6 cifre o un link. I genitori sono amministratori, i figli e i ragazzi hanno il proprio accesso, e i più piccoli senza e-mail ricevono un profilo gestito che potrai trasformare più avanti.",
-      "bullets": [],
-      "alt": "Schermata Famiglia con i membri e il codice di invito"
-    }
-  },
-
-  "web": {
-    "eyebrow": "App web",
-    "h2": "Anche sul computer",
-    "p": "La stessa famiglia, gli stessi piani — in una finestra del browser, su app.daili.app. Organizza la settimana sullo schermo grande e aggiungi la spesa dal telefono, in cucina.",
-    "points": [
-      "Accedi con lo stesso account: resta tutto sincronizzato",
-      "Calendario, liste della spesa, attività, ricette, menu, compleanni e famiglia",
-      "Niente da installare — funziona in ogni browser moderno"
-    ],
-    "cta": "Apri app.daili.app",
-    "note": "Foto e documenti restano solo sul telefono, quindi nel browser non compaiono. L'app web è disponibile in inglese e tedesco."
   },
 
   "faq": {
