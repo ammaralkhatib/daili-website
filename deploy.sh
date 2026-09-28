@@ -47,6 +47,9 @@ echo "==> ownership"
 # -mindepth 1 chowns everything INSIDE the document root and never the document
 # root itself, which must stay …:psaserv 750 or Apache returns 403.
 ssh "$HOST" "find $DOC -mindepth 1 -exec chown $OWNER {} +"
+# Files the Mac saved as owner-only (mode 600) keep that mode through rsync,
+# and Apache then answers 403 (qr.svg, 2026-09-28). Make every file readable.
+ssh "$HOST" "find $DOC -mindepth 1 -type f ! -perm -o+r -exec chmod 644 {} +"
 
 echo "==> smoke"
 fail=0
