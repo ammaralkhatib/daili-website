@@ -1,9 +1,9 @@
 ---
 id: account-delete
 title: Usuń konto (i zmień zdanie w ciągu 30 dni)
-summary: Twoje konto zostaje usunięte na zawsze po 30 dniach. Do tego czasu link z naszego e-maila je przywraca.
+summary: Twoje konto zostaje usunięte na zawsze po 30 dniach. Do tego czasu przywraca je zalogowanie się albo link z naszego e-maila.
 keywords: usuń konto, usunięcie konta, zamknij konto, anuluj usunięcie, przywróć konto, 30 dni, odejście z daili, rodo
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Chcesz najpierw kopię swoich danych? Pobierz ją, zanim zaczniesz.
 
@@ -11,11 +11,14 @@ Chcesz najpierw kopię swoich danych? Pobierz ją, zanim zaczniesz.
 
 1. Otwórz **Ustawienia** i dotknij swojego imienia na górze.
 2. W sekcji **Konto** dotknij **Usuń konto**.
-3. Wpisz **Hasło** i dotknij **Usuń moje konto**. Logujesz się przez Google albo Apple? Wtedy nie ma pola na hasło, więc po prostu dotknij przycisku.
-4. daili cię wyloguje. Wyślemy ci e-mail z linkiem do anulowania.
+3. Jeśli chcesz, napisz nam, dlaczego odchodzisz. To nieobowiązkowe.
+4. Wpisz słowo, o które prosi aplikacja, **USUŃ**, i dotknij **Usuń moje konto**.
+5. daili cię wyloguje. Wyślemy ci e-mail z linkiem do anulowania.
 
-Przez 30 dni możesz jeszcze zmienić zdanie: dotknij linku w tym e-mailu, a twoje konto wróci. Po 30 dniach zostaje usunięte na zawsze.
+Wybrałeś **Chcę zacząć od nowa**? Nie potrzebujesz nowego konta: po prostu załóż nową rodzinę albo grupę.
+
+Przez 30 dni możesz jeszcze zmienić zdanie: zaloguj się i dotknij **Przywróć moje konto** albo dotknij linku w naszym e-mailu. Po 30 dniach konto zostaje usunięte na zawsze.
 
 Jesteś właścicielem rodziny? Najpierw przekaż własność komuś innemu albo usuń rodzinę.
 
-> Note: Twoje dokumenty i zdjęcia znikają z tego telefonu od razu. Link do anulowania ich nie przywróci.
+> Note: Twoje dokumenty i zdjęcia znikają z tego telefonu od razu. Przywrócenie konta ich nie odzyska.

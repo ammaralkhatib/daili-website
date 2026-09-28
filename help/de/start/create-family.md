@@ -2,8 +2,8 @@
 id: start-create-family
 title: Deine Familie oder Gruppe erstellen
 summary: Starte eine neue Familie oder Gruppe, damit alle einen Kalender und dieselben Listen teilen.
-keywords: familie erstellen, neue familie, starten, einrichten, gruppe, haushalt, familienname, farbe
-translatedFrom: 2026-09-24
+keywords: familie erstellen, neue familie, starten, einrichten, gruppe, haushalt, familienname, farbe, bild
+translatedFrom: 2026-09-28
 ---
 Nach der Anmeldung fragt dich daili, ob du eine Familie oder Gruppe erstellen oder einer beitreten willst.
 
@@ -15,5 +15,9 @@ Nach der Anmeldung fragt dich daili, ob du eine Familie oder Gruppe erstellen od
 4. Tippe auf **Erstellen**. daili öffnet deinen neuen Startbildschirm.
 
 Du bist jetzt der Eigentümer. Lade als Nächstes die anderen ein, damit alle denselben Plan sehen.
+
+Neues Konto? Dann kommt vorher ein Schritt: **Hallo! Wer bist du?** Wähle dein Bild und prüf deinen Namen. Deine Familie sieht beides. Tippe auf **Weiter** oder auf **Überspringen**.
+
+![Der Schritt Hallo! Wer bist du? mit gewähltem Bild und ausgefülltem Namen.](start-you-step)
 
 > Note: Hat schon jemand eure Familie erstellt? Dann leg keine zweite an. Tippe auf **Familie oder Gruppe beitreten** und nutze stattdessen deren Code.

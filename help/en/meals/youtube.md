@@ -7,7 +7,7 @@ keywords: youtube, video, recipe video, cooking video, import video, link, ai, s
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-09-26
+updated: 2026-09-28
 media: meals-youtube
 order: 3
 related: meals-import-link, meals-paste, meals-add-recipe
@@ -25,8 +25,8 @@ Saw a dish on YouTube? daili can write the recipe for you.
 3. Paste the link under **YouTube link**, or tap **Paste**. Then tap **Read the video**.
 4. daili reads the video — this can take up to a minute. Check what it found and fix anything that's off. Then tap **Save**.
 
-daili first checks the video's description. If the recipe or a link to a recipe page is there, it's quick. Otherwise it watches the video.
+If the recipe is in the video's description, it's quick. Otherwise daili watches the video.
 
-The ingredients and steps come out in your phone's language, whatever language the video is in.
+The recipe comes out in your phone's language. The first time, daili asks before using Google's AI (Gemini); **Settings** → **AI features (Google Gemini)** switches it off.
 
 > Note: Only public videos up to 25 minutes work. Every family gets a few free video reads each month. Daili Plus has more — and if your family joined early, video reads are free for life.

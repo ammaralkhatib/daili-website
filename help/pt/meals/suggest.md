@@ -5,7 +5,7 @@ summary: Um toque sugere um jantar para cada noite livre da semana — das suas 
 keywords: cardápio, sugerir, ia, planejar a semana, ideias de jantar, o que vamos jantar, cardápio semanal, jantares rápidos, vegetariano, crianças
 tipTitle: Sem ideias para o jantar?
 tipBody: Toque no brilho do Cardápio e o Daili sugere um jantar para cada noite livre, das suas receitas e algumas novas.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Sem ideias para o jantar?
 
@@ -17,8 +17,8 @@ Sem ideias para o jantar?
 4. Em **A tua semana, sugerida**, desmarque um dia que não quer. Toque em **Trocar** para outra ideia, de graça. Toque num cartão **Receita nova** para lê-la.
 5. Toque no botão embaixo, como **Adicionar 5 jantares**.
 
-Só as noites livres a partir de hoje são preenchidas. Os jantares já planejados ficam. O daili evita o que vocês comeram nas últimas duas semanas. As ideias novas são salvas nas suas receitas, então os ingredientes podem ir para a lista de compras. **Tentar de novo** faz um plano novo e usa mais uma sugestão.
+Só as noites livres a partir de hoje são preenchidas, sem repetir o que vocês comeram nas últimas duas semanas. As ideias novas vão para as suas receitas. **Tentar de novo** usa mais uma sugestão.
 
-> Note: Os títulos das suas receitas, as refeições recentes e o seu desejo vão para a IA do Google. Nada fica guardado lá.
+> Note: Os títulos das suas receitas, as refeições recentes e o seu desejo vão para a IA do Google, que não guarda nada. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
 
 > Note: As sugestões dividem as leituras de IA do mês com as leituras de vídeo e de foto. O Daili Plus tem mais — e se a sua família entrou cedo, são grátis para sempre.

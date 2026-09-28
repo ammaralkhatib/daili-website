@@ -3,7 +3,7 @@ id: start-join
 title: Deelnemen aan een gezin met een code of QR-code
 summary: Een uitnodiging gekregen? Typ de 6-cijferige code of scan de QR-code om mee te doen.
 keywords: deelnemen, uitnodigingscode, code, qr, scannen, gezin, partner, vrouw, man, opa en oma
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Iemand uit het gezin kan je een uitnodiging sturen. Dan doe je met een paar tikken mee.
 
@@ -15,4 +15,4 @@ Iemand uit het gezin kan je een uitnodiging sturen. Dan doe je met een paar tikk
 
 Heb je een uitnodigingslink gekregen? Tik erop, en daili opent hetzelfde scherm.
 
-> Note: Een code werkt 7 dagen. Staat er **Verlopen**, vraag dan om een nieuwe.
+> Note: Een code werkt 7 dagen en voor één persoon. Zegt daili dat hij al gebruikt, verlopen of ingetrokken is, vraag dan om een nieuwe.

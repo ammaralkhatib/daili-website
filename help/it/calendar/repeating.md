@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Eventi ricorrenti
 summary: Fai ripetere un evento ogni giorno, settimana, mese o anno, e cambia un solo giorno o tutta la serie.
 keywords: ripetere, ripetizione, ricorrente, ogni settimana, settimanale, giornaliero, mensile, annuale, serie, routine
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Nuoto ogni martedì? Aggiungilo una volta e lascialo ripetere.
 
@@ -15,6 +15,6 @@ Nuoto ogni martedì? Aggiungilo una volta e lascialo ripetere.
 4. Sotto **Termina**, lascia **Mai** o scegli **In una data**.
 5. Chiudi il pannello e tocca **Salva**.
 
-Quando modifichi o elimini un solo giorno di un evento ricorrente, daili chiede a cosa applicare la modifica: **Solo questo evento**, **Questo evento e i successivi** o **Tutti gli eventi**.
+Modifichi un evento ricorrente? Prima fai le modifiche e tocca **Salva**. Poi scegli **Solo questo evento**, **Questo evento e i successivi** o **Tutti gli eventi**. Ne elimini uno? Tocca **Elimina** e scegli allo stesso modo.
 
-> Note: La ripetizione, **Tutto il giorno** ed **Evento privato** non si possono cambiare per un solo giorno. Prima scegli **Questo evento e i successivi** o **Tutti gli eventi**.
+> Note: Una scelta che non può accogliere la tua modifica è in grigio, con il motivo. Un nuovo orario non può andare su **Tutti gli eventi**. Le modifiche a ripetizione, **Tutto il giorno**, **Evento privato** o promemoria in più non possono essere **Solo questo evento**.

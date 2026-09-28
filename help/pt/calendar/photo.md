@@ -5,20 +5,20 @@ summary: Tire uma foto de um bilhete da escola, um convite ou um folheto — o d
 keywords: foto, escanear, carta, convite, folheto, datas, ia, câmera, escola, ler foto
 tipTitle: Transforme um bilhete da escola em eventos
 tipBody: Toque no ícone de escanear em Evento novo, fotografe o bilhete e o daili preenche as datas.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
-As datas estão no papel? O ícone de escanear em **Evento novo** lê para você.
+Datas no papel? O ícone de escanear em **Evento novo** lê para você.
 
 ![A tela Evento novo. O ícone de escanear no canto superior direito está circulado.](calendar-photo)
 
 1. Abra o **Calendário**, toque em **+** e depois no ícone de escanear no canto superior direito.
 2. Toque em **Tirar uma foto** ou **Escolher da biblioteca**.
 3. Uma foto da biblioteca aparece primeiro. Se as datas estiverem legíveis, toque em **Ler esta foto**.
-4. Uma data encontrada: o formulário é preenchido. Confira e toque em **Salvar**.
-5. Várias: desmarque o que não precisar, toque numa data ou hora para mudar e depois toque em **Adicionar N eventos**. Datas que já passaram começam desmarcadas.
+4. Uma data: o formulário é preenchido. Confira e toque em **Salvar**.
+5. Várias: desmarque o que não precisar, toque numa data ou hora para mudar e depois toque em **Adicionar N eventos**.
 
-Texto impresso funciona melhor, letra à mão nem tanto. PDFs ainda não funcionam — fotografe a página.
+Texto impresso funciona melhor, letra à mão nem tanto. Para um PDF, fotografe a página.
 
-> Note: A foto vai para a IA do Google para ser lida e depois é apagada. O daili nunca a guarda e antes remove os dados da câmera, como a localização.
+> Note: A foto vai para a IA do Google para ser lida e depois é apagada, sem dados da câmera como a localização. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
 
 > Note: Toda família ganha algumas leituras de foto grátis por mês, divididas com as leituras de vídeo. O Daili Plus tem mais — e se a sua família entrou cedo, as leituras são grátis para sempre.

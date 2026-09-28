@@ -2,8 +2,8 @@
 id: start-create-family
 title: Vytvořit rodinu nebo skupinu
 summary: Založ novou rodinu nebo skupinu, aby všichni sdíleli jeden kalendář a stejné seznamy.
-keywords: vytvořit rodinu, nová rodina, začít, nastavit, skupina, domácnost, název rodiny, barva
-translatedFrom: 2026-09-24
+keywords: vytvořit rodinu, nová rodina, začít, nastavit, skupina, domácnost, název rodiny, barva, obrázek
+translatedFrom: 2026-09-28
 ---
 Po přihlášení tě daili nabídne vytvoření rodiny nebo skupiny, nebo připojení k nějaké existující.
 
@@ -15,5 +15,9 @@ Po přihlášení tě daili nabídne vytvoření rodiny nebo skupiny, nebo přip
 4. Klepni na **Vytvořit**. daili otevře tvou novou domovskou obrazovku.
 
 Teď jsi vlastník. Pozvi hned ostatní, ať všichni vidí stejný plán.
+
+Nový účet? Nejdřív přijde jeden krok: **Ahoj! Kdo jsi?** Vyber si obrázek a zkontroluj své jméno. Tvoje rodina uvidí obojí. Klepni na **Pokračovat**, nebo na **Přeskočit**.
+
+![Krok Ahoj! Kdo jsi? s vybraným obrázkem a vyplněným jménem.](start-you-step)
 
 > Note: Tvoji rodinu už někdo vytvořil? Nezakládej druhou. Klepni na **Připojit se k rodině nebo skupině** a použij jeho kód.

@@ -5,7 +5,7 @@ summary: Ét tryk foreslår aftensmad til hver ledig aften i ugen – fra jeres 
 keywords: madplan, foreslå, ai, planlæg ugen, idéer til aftensmad, hvad skal vi have, ugemenu, hurtig aftensmad, vegetarisk, børn
 tipTitle: Løbet tør for idéer til aftensmad?
 tipBody: Tryk på stjernerne i madplanen, så foreslår Daili aftensmad til hver ledig aften.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Løbet tør for idéer til aftensmad?
 
@@ -17,8 +17,8 @@ Løbet tør for idéer til aftensmad?
 4. På **Din uge, foreslået** fjerner du fluebenet ved en dag, du ikke vil have. Tryk på **Byt** for en anden idé – gratis. Tryk på et **Ny opskrift**-kort for at læse den.
 5. Tryk på knappen nederst, fx **Tilføj 5 aftensmåltider**.
 
-Kun ledige aftener fra i dag bliver fyldt ud. Aftensmad, der allerede er planlagt, bliver. daili undgår det, I har spist de sidste to uger. Nye idéer gemmes i dine opskrifter, så deres ingredienser kan komme på indkøbslisten. **Prøv igen** laver en ny plan og bruger et forslag mere.
+Kun ledige aftener fra i dag bliver fyldt ud, uden måltiderne fra de sidste to uger. Nye idéer gemmes i dine opskrifter. **Prøv igen** bruger et forslag mere.
 
-> Note: Dine opskriftstitler, jeres seneste måltider og dit ønske sendes til Googles AI for at lave planen. Intet gemmes der.
+> Note: Dine opskriftstitler, jeres seneste måltider og dit ønske sendes til Googles AI, som ikke gemmer noget. daili spørger dig først, og **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
 
 > Note: Forslag deler de månedlige AI-læsninger med video- og billedlæsninger. Daili Plus har flere – og hvis jeres familie kom tidligt med, er de gratis for altid.

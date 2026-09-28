@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Événements récurrents
 summary: Fais répéter un événement chaque jour, semaine, mois ou année, et modifie un seul jour ou toute la série.
 keywords: répéter, répétition, récurrent, chaque semaine, hebdomadaire, quotidien, mensuel, annuel, série, routine
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Piscine tous les mardis ? Ajoute-la une fois et laisse-la se répéter.
 
@@ -15,6 +15,6 @@ Piscine tous les mardis ? Ajoute-la une fois et laisse-la se répéter.
 4. Sous **Se termine**, garde **Jamais** ou choisis **À une date**.
 5. Ferme la fiche et touche **Enregistrer**.
 
-Quand tu modifies ou supprimes un seul jour d'un événement récurrent, daili demande à quoi appliquer le changement : **Cet événement uniquement**, **Cet événement et les suivants** ou **Tous les événements**.
+Tu modifies un événement récurrent ? Fais d'abord tes changements et touche **Enregistrer**. Puis choisis **Cet événement uniquement**, **Cet événement et les suivants** ou **Tous les événements**. Tu en supprimes un ? Touche **Supprimer** et choisis de la même façon.
 
-> Note: La répétition, **Journée entière** et **Événement privé** ne peuvent pas être changés pour un seul jour. Choisis d'abord **Cet événement et les suivants** ou **Tous les événements**.
+> Note: Un choix qui ne peut pas recevoir ton changement est grisé, avec la raison. Une nouvelle heure ne peut pas aller sur **Tous les événements**. Un changement de répétition, de **Journée entière**, d'**Événement privé** ou de rappels en plus ne peut pas être **Cet événement uniquement**.

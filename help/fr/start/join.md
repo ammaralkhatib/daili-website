@@ -3,7 +3,7 @@ id: start-join
 title: Rejoindre une famille avec un code ou un QR code
 summary: Tu as reçu une invitation ? Saisis le code à 6 chiffres ou scanne le QR code pour rejoindre.
 keywords: rejoindre, code d'invitation, code, qr, scanner, rejoindre une famille, conjoint, femme, mari, grands-parents
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Quelqu'un de la famille peut t'envoyer une invitation. Tu rejoins alors en quelques touches.
 
@@ -15,4 +15,4 @@ Quelqu'un de la famille peut t'envoyer une invitation. Tu rejoins alors en quelq
 
 Tu as reçu un lien d'invitation à la place ? Touche-le, et daili ouvre le même écran.
 
-> Note: Un code est valable 7 jours. S'il indique **Expirée**, demandes-en un nouveau.
+> Note: Un code est valable 7 jours et pour une seule personne. Si daili dit qu'il a déjà servi, qu'il a expiré ou qu'il a été annulé, demandes-en un nouveau.

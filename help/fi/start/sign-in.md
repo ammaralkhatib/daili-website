@@ -3,7 +3,7 @@ id: start-sign-in
 title: Kirjaudu Googlella, Applella tai sähköpostilla
 summary: Luo tili tai kirjaudu takaisin, ja nollaa salasana, jos olet unohtanut sen.
 keywords: kirjaudu, kirjautuminen, sisäänkirjautuminen, rekisteröidy, tili, google, apple, sähköposti, salasana, unohtunut salasana, nollaa salasana
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Tarvitset tilin, jotta voit käyttää dailia. Se vie minuutin.
 
@@ -14,6 +14,6 @@ Tarvitset tilin, jotta voit käyttää dailia. Se vie minuutin.
 3. Uusi käyttäjä sähköpostilla? Napauta **Rekisteröidy**, täytä nimi, sähköposti ja salasana ja napauta sitten **Luo tili**.
 4. Unohtuiko salasana? Napauta kirjautumisnäytöllä **Unohtuiko salasana?**, kirjoita sähköpostiosoitteesi ja napauta **Lähetä linkki**.
 
-Salasanassa on oltava vähintään 8 merkkiä.
+Salasanassa on oltava vähintään 8 merkkiä. Uusi tili? Sen jälkeen daili kysyy kuvaasi ja nimeäsi, ja luot perheen tai liityt sellaiseen.
 
 > Note: **Jatka Applella** on vain iPhonessa. Androidilla käytä Googlea tai sähköpostiasi.

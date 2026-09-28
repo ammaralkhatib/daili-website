@@ -3,7 +3,7 @@ id: start-join
 title: Bli med i en familie med en kode eller en QR-kode
 summary: Har du fått en invitasjon? Skriv inn den 6-sifrede koden, eller skann QR-koden for å bli med.
 keywords: bli med, invitasjonskode, kode, qr, skann, bli med i familie, partner, kone, mann, besteforeldre
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Noen i familien kan sende deg en invitasjon. Da er du med etter noen få trykk.
 
@@ -15,4 +15,4 @@ Noen i familien kan sende deg en invitasjon. Da er du med etter noen få trykk.
 
 Har du fått en invitasjonslenke i stedet? Trykk på den, så åpner daili den samme skjermen.
 
-> Note: En kode gjelder i 7 dager. Står det **Utløpt**, ber du om en ny.
+> Note: En kode gjelder i 7 dager og for én person. Sier daili at den allerede er brukt, har utløpt eller er trukket tilbake, ber du om en ny.

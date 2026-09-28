@@ -3,7 +3,7 @@ id: start-join
 title: Alătură-te unei familii cu un cod sau un cod QR
 summary: Ai primit o invitație? Scrie codul de 6 cifre sau scanează codul QR ca să te alături.
 keywords: alăturare, cod de invitație, cod, qr, scanare, alătură-te familiei, partener, soție, soț, bunici
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Cineva din familie îți poate trimite o invitație. Apoi te alături din câteva apăsări.
 
@@ -15,4 +15,4 @@ Cineva din familie îți poate trimite o invitație. Apoi te alături din câtev
 
 Ai primit în schimb un link de invitație? Apasă pe el și daili deschide același ecran.
 
-> Note: Un cod e valabil 7 zile. Dacă scrie **Expirat**, cere unul nou.
+> Note: Un cod e valabil 7 zile și pentru o singură persoană. Dacă daili spune că a fost deja folosit, a expirat sau a fost anulat, cere unul nou.

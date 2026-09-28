@@ -5,7 +5,7 @@ summary: Ota kuva keittokirjan sivusta, käsin kirjoitetusta kortista tai kuvaka
 keywords: kuva, kamera, keittokirja, käsin kirjoitettu, kuvakaappaus, skannaa resepti, tekoäly, tallenna resepti, valokuva
 tipTitle: Mummon reseptikortti tallessa sekunneissa
 tipBody: Ota kuva keittokirjan sivusta tai käsin kirjoitetusta kortista, niin daili kirjoittaa reseptin puolestasi.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
 Onko resepti paperilla tai kuvakaappauksessa? daili kirjoittaa sen puolestasi.
 
@@ -18,6 +18,6 @@ Onko resepti paperilla tai kuvakaappauksessa? daili kirjoittaa sen puolestasi.
 
 Resepti tulee puhelimesi kielellä, oli sivu millä kielellä tahansa. Painettu tai selvästi kirjoitettu teksti toimii parhaiten.
 
-> Note: Kuva lähetetään luettavaksi Googlen tekoälylle ja poistetaan heti sen jälkeen. daili ei koskaan tallenna sitä ja poistaa ensin kameratiedot, kuten sijainnin.
+> Note: Kuva lähetetään luettavaksi Googlen tekoälylle ilman kameratietoja, kuten sijaintia, ja poistetaan sen jälkeen. daili kysyy sinulta ensin, ja **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
 
 > Note: Jokainen perhe saa joka kuukausi muutaman ilmaisen kuvaluvun, yhteisesti videolukujen ja kalenterikuvien kanssa. Daili Plussassa niitä on enemmän – ja jos perheesi liittyi mukaan varhain, luvut ovat ilmaisia ikuisesti.

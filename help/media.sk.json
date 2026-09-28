@@ -55,7 +55,7 @@
   "account-profile": { "file": "account-profile.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-preferences": { "file": "account-preferences.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-password": { "file": "account-password.webp", "w": 720, "h": 1564, "kind": "image" },
-  "account-verify-email": { "file": "account-verify-email.webp", "w": 720, "h": 1018, "kind": "image" },
+  "account-verify-email": { "file": "account-verify-email.webp", "w": 720, "h": 1116, "kind": "image" },
   "account-download-data": { "file": "account-download-data.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-delete": { "file": "account-delete.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-newsletter": { "file": "account-newsletter.webp", "w": 720, "h": 1564, "kind": "image" },
@@ -66,5 +66,6 @@
   "notes-new": { "file": "notes-new.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-tile": { "file": "notes-tile.webp", "w": 720, "h": 1281, "kind": "image" },
   "meals-photo": { "file": "meals-photo.webp", "w": 720, "h": 1564, "kind": "image" },
-  "meals-suggest": { "file": "meals-suggest.webp", "w": 720, "h": 622, "kind": "image" }
+  "meals-suggest": { "file": "meals-suggest.webp", "w": 720, "h": 622, "kind": "image" },
+  "start-you-step": { "file": "start-you-step.webp", "w": 720, "h": 1564, "kind": "image" }
 }

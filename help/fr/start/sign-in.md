@@ -3,7 +3,7 @@ id: start-sign-in
 title: Se connecter avec Google, Apple ou un e-mail
 summary: Crée un compte ou reconnecte-toi, et réinitialise ton mot de passe si tu l'as oublié.
 keywords: se connecter, connexion, s'identifier, s'inscrire, inscription, compte, google, apple, e-mail, mot de passe, mot de passe oublié, réinitialiser
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Il te faut un compte pour utiliser daili. Ça prend une minute.
 
@@ -14,6 +14,6 @@ Il te faut un compte pour utiliser daili. Ça prend une minute.
 3. Nouveau avec un e-mail ? Touche **Créer un compte**, remplis ton nom, ton e-mail et ton mot de passe, puis touche **Créer un compte**.
 4. Mot de passe oublié ? Sur l'écran de connexion, touche **Mot de passe oublié ?**, saisis ton e-mail et touche **Envoyer le lien**.
 
-Ton mot de passe doit avoir au moins 8 caractères.
+Ton mot de passe doit avoir au moins 8 caractères. Nouveau compte ? daili te demande ensuite ta photo et ton nom, puis tu crées ou rejoins une famille.
 
 > Note: **Continuer avec Apple** n'existe que sur iPhone. Sur Android, utilise Google ou ton e-mail.

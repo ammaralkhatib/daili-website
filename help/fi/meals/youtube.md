@@ -5,7 +5,7 @@ summary: Liitä ruokavideon linkki, niin daili kirjoittaa ainesosat ja vaiheet p
 keywords: youtube, video, reseptivideo, ruokavideo, tuo video, linkki, tekoäly, tallenna resepti, shorts
 tipTitle: Tee YouTube-videosta resepti
 tipBody: Liitä ruokavideon linkki, niin daili kirjoittaa ainesosat ja vaiheet puolestasi.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
 Näitkö herkullisen ruoan YouTubessa? daili voi kirjoittaa reseptin puolestasi.
 
@@ -16,8 +16,8 @@ Näitkö herkullisen ruoan YouTubessa? daili voi kirjoittaa reseptin puolestasi.
 3. Liitä linkki kohtaan **YouTube-linkki** tai napauta **Liitä**. Napauta sitten **Lue video**.
 4. daili lukee videon – se voi kestää minuutin. Tarkista, mitä daili löysi, ja korjaa, mikä on pielessä. Napauta sitten **Tallenna**.
 
-daili katsoo ensin videon kuvauksen. Jos resepti on siinä tai kuvauksessa on linkki reseptisivulle, daili ottaa sen sieltä, ja se käy nopeasti. Muuten daili katsoo videon.
+Jos resepti on videon kuvauksessa, se käy nopeasti. Muuten daili katsoo videon.
 
-Ainesosat ja vaiheet tulevat puhelimesi kielellä, olipa video millä kielellä tahansa.
+Resepti tulee puhelimesi kielellä. Ensimmäisellä kerralla daili kysyy ennen kuin käyttää Googlen tekoälyä (Gemini); **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
 
 > Note: Vain julkiset, enintään 25 minuutin videot toimivat. Jokainen perhe saa joka kuukausi muutaman ilmaisen videoluvun. Daili Plussassa niitä on enemmän – ja jos perheesi liittyi mukaan varhain, videoluvut ovat ilmaisia ikuisesti.

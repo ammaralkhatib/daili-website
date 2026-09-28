@@ -1,9 +1,9 @@
 ---
 id: account-preferences
 title: Luminos sau întunecat, limbă, format oră, vibrații
-summary: Alege modul întunecat, limba ta, ora în format de 12 sau 24 de ore și dacă daili vibrează.
-keywords: mod întunecat, mod luminos, temă, aspect, limbă, 24 de ore, 12 ore, format oră, vibrații, haptic
-translatedFrom: 2026-09-24
+summary: Alege modul întunecat, limba ta, ora în format de 12 sau 24 de ore, dacă daili vibrează și funcțiile AI.
+keywords: mod întunecat, mod luminos, temă, aspect, limbă, 24 de ore, 12 ore, format oră, vibrații, haptic, ai, gemini
+translatedFrom: 2026-09-28
 ---
 Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Setări**. Opțiunile astea le găsești la **Preferințe**.
 
@@ -13,6 +13,7 @@ Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Set�
 2. **Format oră**: **24 de ore**, **12 ore** sau **Sistem** ca să urmezi telefonul.
 3. **Aspect**: **Luminos**, **Întunecat** sau **Sistem** ca să urmezi telefonul.
 4. **Vibrații**: o mică vibrație când ceva e gata, salvat sau șters. Oprește-le dacă nu-ți plac.
+5. **Funcții AI (Google Gemini)**: lasă AI-ul Google să-ți citească pozele, linkurile video și dorințele pentru mese. Oprite? daili te întreabă din nou data viitoare.
 
 Setările astea sunt doar pentru acest telefon. Familia ta își păstrează setările ei.
 

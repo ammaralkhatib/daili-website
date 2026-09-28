@@ -5,7 +5,7 @@ summary: Un tocco suggerisce una cena per ogni sera libera della settimana — d
 keywords: menu, suggerire, ia, pianifica la settimana, idee per cena, cosa si mangia, menu settimanale, cene veloci, vegetariano, bambini
 tipTitle: Niente idee per cena?
 tipBody: Tocca le scintille nel Menu e Daili suggerisce una cena per ogni sera libera, dalle tue ricette e qualcuna nuova.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Niente idee per cena?
 
@@ -17,8 +17,8 @@ Niente idee per cena?
 4. In **La tua settimana, suggerita**, togli la spunta a un giorno che non vuoi. Tocca **Scambia** per un'altra idea, gratis. Tocca una scheda **Nuova ricetta** per leggerla.
 5. Tocca il pulsante in basso, come **Aggiungi 5 cene**.
 
-Vengono riempite solo le sere libere da oggi in poi. Le cene già pianificate restano. daili evita quello che avete mangiato nelle ultime due settimane. Le idee nuove vengono salvate nelle tue ricette, così i loro ingredienti possono finire nella lista della spesa. **Riprova** fa un nuovo piano e usa un suggerimento in più.
+Vengono riempite solo le sere libere da oggi in poi, saltando i pasti delle ultime due settimane. Le idee nuove entrano nelle tue ricette. **Riprova** usa un suggerimento in più.
 
-> Note: I titoli delle tue ricette, i pasti recenti e il tuo desiderio vanno all’IA di Google. Lì non viene salvato nulla.
+> Note: I titoli delle tue ricette, i pasti recenti e il tuo desiderio vanno all’IA di Google, che non salva nulla. daili te lo chiede prima, e **Impostazioni** → **Funzioni IA (Google Gemini)** la disattiva.
 
 > Note: I suggerimenti condividono le letture IA del mese con le letture di video e foto. Daili Plus ne ha di più — e se la tua famiglia è arrivata presto, sono gratis per sempre.

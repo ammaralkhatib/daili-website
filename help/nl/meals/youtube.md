@@ -5,7 +5,7 @@ summary: Plak de link van een kookvideo, en daili schrijft de ingrediënten en s
 keywords: youtube, video, receptvideo, kookvideo, video importeren, link, ai, recept bewaren, shorts
 tipTitle: Maak van een YouTube-video een recept
 tipBody: Plak de link van een kookvideo, en daili schrijft de ingrediënten en stappen voor je uit.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
 Een gerecht gezien op YouTube? daili kan het recept voor je uitschrijven.
 
@@ -16,8 +16,8 @@ Een gerecht gezien op YouTube? daili kan het recept voor je uitschrijven.
 3. Plak de link onder **YouTube-link**, of tik op **Plakken**. Tik dan op **Video lezen**.
 4. daili leest de video — dat kan tot een minuut duren. Controleer wat daili heeft gevonden en verbeter wat niet klopt. Tik dan op **Opslaan**.
 
-daili kijkt eerst naar de beschrijving van de video. Staat het recept daar, of linkt de beschrijving naar een receptpagina, dan haalt daili het daar vandaan en gaat het snel. Anders bekijkt daili de video.
+Staat het recept in de beschrijving van de video, dan gaat het snel. Anders bekijkt daili de video.
 
-De ingrediënten en stappen komen in de taal van je telefoon, in welke taal de video ook is.
+Het recept komt in de taal van je telefoon. De eerste keer vraagt daili het je voordat de AI van Google (Gemini) wordt gebruikt; via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
 
 > Note: Alleen openbare video's tot 25 minuten werken. Elk gezin krijgt elke maand een paar gratis videolezingen. Daili Plus heeft er meer — en als je gezin er vroeg bij was, zijn videolezingen voor altijd gratis.

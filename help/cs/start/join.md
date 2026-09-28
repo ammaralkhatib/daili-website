@@ -3,7 +3,7 @@ id: start-join
 title: Připojit se k rodině pomocí kódu nebo QR kódu
 summary: Máš pozvánku? Zadej 6místný kód nebo naskenuj QR kód a připoj se.
 keywords: připojit se, kód pozvánky, kód, qr, naskenovat, připojit se k rodině, partner, manželka, manžel, prarodiče
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Někdo z rodiny ti může poslat pozvánku. Pak se připojíš pár klepnutími.
 
@@ -15,4 +15,4 @@ Někdo z rodiny ti může poslat pozvánku. Pak se připojíš pár klepnutími.
 
 Máš místo toho odkaz s pozvánkou? Klepni na něj a daili otevře stejnou obrazovku.
 
-> Note: Kód platí 7 dní. Pokud se ukáže **Vypršelo**, požádej o nový.
+> Note: Kód platí 7 dní a pro jednoho člověka. Když daili napíše, že už byl použitý, vypršel nebo byl zrušený, požádej o nový.

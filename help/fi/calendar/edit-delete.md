@@ -3,7 +3,7 @@ id: calendar-edit-delete
 title: Muuta tai poista tapahtuma
 summary: Siirrä tapahtumaa, korjaa kirjoitusvirhe tai poista se. Yhteisiä tapahtumia voi muuttaa kuka tahansa perheestä.
 keywords: muokkaa tapahtumaa, muuta tapahtumaa, siirrä tapahtumaa, poista tapahtuma, peru, uusi aika, päivitä
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Suunnitelmat muuttuvat. Näin kalenteri muuttuu niiden mukana.
 
@@ -13,6 +13,6 @@ Suunnitelmat muuttuvat. Näin kalenteri muuttuu niiden mukana.
 2. Napauta **Muokkaa tapahtumaa**, tee muutokset ja napauta **Tallenna**.
 3. Tai napauta **Poista** ja vahvista napauttamalla uudelleen **Poista**.
 
-Toistuvan tapahtuman kohdalla daili kysyy, mitä muutetaan tai poistetaan: **Vain tämä tapahtuma**, **Tämä ja seuraavat tapahtumat** vai **Kaikki tapahtumat**.
+Toistuvan tapahtuman kohdalla daili kysyy **Tallenna**-napautuksen jälkeen, mitä muutos koskee: **Vain tämä tapahtuma**, **Tämä ja seuraavat tapahtumat** vai **Kaikki tapahtumat**. Harmaana näkyvä vaihtoehto kertoo, miksi se ei voi ottaa muutostasi. **Poista** tarjoaa samat kolme heti.
 
 > Note: Kuka tahansa perheestä voi muuttaa tai poistaa yhteisen tapahtuman, ja toimintalista näyttää, kuka sen teki. Yksityistä tapahtumaa voi muuttaa vain sen luonut henkilö.

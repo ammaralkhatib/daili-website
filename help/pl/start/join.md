@@ -3,7 +3,7 @@ id: start-join
 title: Dołącz do rodziny za pomocą kodu albo kodu QR
 summary: Masz zaproszenie? Wpisz 6-cyfrowy kod albo zeskanuj kod QR, żeby dołączyć.
 keywords: dołącz, kod zaproszenia, kod, qr, skanuj, dołącz do rodziny, partner, żona, mąż, dziadkowie
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Ktoś z rodziny może wysłać ci zaproszenie. Wtedy dołączasz kilkoma dotknięciami.
 
@@ -15,4 +15,4 @@ Ktoś z rodziny może wysłać ci zaproszenie. Wtedy dołączasz kilkoma dotkni�
 
 Masz link z zaproszeniem? Dotknij go, a daili otworzy ten sam ekran.
 
-> Note: Kod działa przez 7 dni. Jeśli widzisz **Wygasło**, poproś o nowy.
+> Note: Kod działa przez 7 dni i tylko dla jednej osoby. Jeśli daili napisze, że został już użyty, wygasł albo został anulowany, poproś o nowy.

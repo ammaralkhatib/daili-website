@@ -5,7 +5,7 @@ summary: Yksi napautus ehdottaa illallisen viikon jokaiselle vapaalle illalle �
 keywords: ruokalista, ehdotus, tekoäly, suunnittele viikko, illallisideat, mitä syödään, viikkomenu, nopeat illalliset, kasvis, lapset
 tipTitle: Illallisideat lopussa?
 tipBody: Napauta ruokalistan kimallusta, niin Daili ehdottaa illallisen jokaiselle vapaalle illalle.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Illallisideat lopussa?
 
@@ -17,8 +17,8 @@ Illallisideat lopussa?
 4. Poista näkymässä **Viikkosi, ehdotettuna** valinta päivältä, jota et halua. Napauta **Vaihda** saadaksesi toisen idean, maksutta. Napauta **Uusi resepti** -korttia lukeaksesi sen.
 5. Napauta alareunan painiketta, esimerkiksi **Lisää 5 illallista**.
 
-Vain vapaat illat tästä päivästä alkaen täytetään. Jo suunnitellut illalliset pysyvät. daili välttää sitä, mitä olette syöneet kahden viime viikon aikana. Uudet ideat tallentuvat resepteihisi, joten niiden ainekset voi lisätä ostoslistalle. **Yritä uudelleen** tekee uuden suunnitelman ja käyttää yhden ehdotuksen lisää.
+Vain vapaat illat tästä päivästä alkaen täytetään, ja kahden viime viikon ateriat jätetään pois. Uudet ideat tallentuvat resepteihisi. **Yritä uudelleen** käyttää yhden ehdotuksen lisää.
 
-> Note: Reseptiesi nimet, viimeisimmät ateriat ja toiveesi lähetetään Googlen tekoälylle suunnitelmaa varten. Sinne ei tallenneta mitään.
+> Note: Reseptiesi nimet, viimeisimmät ateriat ja toiveesi lähetetään Googlen tekoälylle, joka ei tallenna mitään. daili kysyy sinulta ensin, ja **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
 
 > Note: Ehdotukset jakavat kuukauden tekoälyluvut video- ja kuvalukujen kanssa. Daili Plussassa niitä on enemmän – ja jos perheesi liittyi mukaan varhain, ne ovat ilmaisia ikuisesti.

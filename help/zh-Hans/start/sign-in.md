@@ -3,7 +3,7 @@ id: start-sign-in
 title: 用 Google、Apple 或邮箱登录
 summary: 创建账户或重新登录，忘记密码时可以重设。
 keywords: 登录, 注册, 账户, 账号, google, apple, 邮箱, 密码, 忘记密码, 重设密码
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 使用 daili 需要一个账户，一分钟就能弄好。
 
@@ -14,6 +14,6 @@ translatedFrom: 2026-09-24
 3. 第一次用邮箱？点**注册**，填写名字、邮箱和密码，然后点**创建账户**。
 4. 忘记密码了？在登录页面点**忘记密码？**，输入邮箱，然后点**发送重设链接**。
 
-密码至少要 8 个字符。
+密码至少要 8 个字符。新账户？接着 daili 会问你的头像和名字，然后你创建或加入一个家庭。
 
 > Note: **使用Apple继续**只在 iPhone 上有。在 Android 上请用 Google 或邮箱。

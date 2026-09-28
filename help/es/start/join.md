@@ -3,7 +3,7 @@ id: start-join
 title: Unirse a una familia con un código o un código QR
 summary: ¿Te han invitado? Escribe el código de 6 dígitos o escanea el código QR para unirte.
 keywords: unirse, código de invitación, código, qr, escanear, unirse a la familia, pareja, esposa, marido, abuelos
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Alguien de la familia puede enviarte una invitación. Luego te unes con unos pocos toques.
 
@@ -15,4 +15,4 @@ Alguien de la familia puede enviarte una invitación. Luego te unes con unos poc
 
 ¿Te han mandado un enlace de invitación? Tócalo y daili abre la misma pantalla.
 
-> Note: Un código vale 7 días. Si dice **Vencida**, pide uno nuevo.
+> Note: Un código vale 7 días y para una sola persona. Si daili dice que ya se usó, que ha caducado o que se canceló, pide uno nuevo.

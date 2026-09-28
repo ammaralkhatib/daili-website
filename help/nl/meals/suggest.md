@@ -5,7 +5,7 @@ summary: Eén tik stelt voor elke vrije avond van de week een avondeten voor —
 keywords: menuplanner, voorstellen, ai, plan mijn week, ideeën voor avondeten, wat eten we, weekmenu, snelle gerechten, vegetarisch, kinderen
 tipTitle: Geen ideeën voor het avondeten?
 tipBody: Tik op de sterretjes in de Menuplanner en Daili stelt voor elke vrije avond een avondeten voor.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Geen ideeën voor het avondeten?
 
@@ -17,8 +17,8 @@ Geen ideeën voor het avondeten?
 4. Haal op **Je week, voorgesteld** het vinkje weg bij een dag die je niet wilt. Tik op **Wisselen** voor een ander idee, gratis. Tik op een kaart **Nieuw recept** om het te lezen.
 5. Tik op de knop onderaan, zoals **5 avondmaaltijden toevoegen**.
 
-Alleen vrije avonden vanaf vandaag worden gevuld. Avondeten dat al gepland is, blijft staan. daili vermijdt wat jullie de afgelopen twee weken hebben gegeten. Nieuwe ideeën worden bewaard bij je Recepten, zodat de ingrediënten op je boodschappenlijst kunnen. **Opnieuw** maakt een nieuw plan en gebruikt nog een voorstel.
+Alleen vrije avonden vanaf vandaag worden gevuld, zonder de maaltijden van de afgelopen twee weken. Nieuwe ideeën komen bij je Recepten. **Opnieuw** gebruikt nog een voorstel.
 
-> Note: Je recepttitels, recente maaltijden en je wens gaan naar de AI van Google om het plan te maken. Daar wordt niets bewaard.
+> Note: Je recepttitels, recente maaltijden en je wens gaan naar de AI van Google, die niets bewaart. daili vraagt het je eerst, en via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
 
 > Note: Voorstellen delen de maandelijkse AI-lezingen met video- en fotolezingen. Daili Plus heeft er meer — en als je gezin er vroeg bij was, zijn ze voor altijd gratis.

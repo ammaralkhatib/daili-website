@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Eventos que se repiten
 summary: Haz que un evento se repita cada día, semana, mes o año, y cambia un solo día o toda la serie.
 keywords: repetir, repetición, periódico, cada semana, semanal, diario, mensual, anual, serie, rutina
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 ¿Natación todos los martes? Añádelo una vez y deja que se repita.
 
@@ -15,6 +15,6 @@ translatedFrom: 2026-09-24
 4. En **Termina**, deja **Nunca** o elige **En una fecha**.
 5. Cierra la hoja y toca **Guardar**.
 
-Cuando cambias o eliminas un solo día de un evento que se repite, daili pregunta a qué aplicarlo: **Solo este evento**, **Este evento y los siguientes** o **Todos los eventos**.
+¿Cambias un evento que se repite? Primero haz los cambios y toca **Guardar**. Luego elige **Solo este evento**, **Este evento y los siguientes** o **Todos los eventos**. ¿Lo eliminas? Toca **Eliminar** y elige igual.
 
-> Note: La repetición, **Todo el día** y **Evento privado** no se pueden cambiar para un solo día. Elige primero **Este evento y los siguientes** o **Todos los eventos**.
+> Note: Una opción que no admite tu cambio sale en gris, con el motivo. Una hora nueva no puede ir a **Todos los eventos**. Los cambios en la repetición, **Todo el día**, **Evento privado** o los recordatorios extra no pueden ser **Solo este evento**.

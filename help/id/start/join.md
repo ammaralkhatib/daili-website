@@ -3,7 +3,7 @@ id: start-join
 title: Gabung ke keluarga dengan kode atau kode QR
 summary: Dapat undangan? Ketik kode 6 digit atau pindai kode QR untuk bergabung.
 keywords: gabung, kode undangan, kode, qr, pindai, gabung keluarga, pasangan, istri, suami, kakek nenek
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Seseorang di keluarga bisa mengirimi Anda undangan. Lalu Anda bergabung dengan beberapa ketukan.
 
@@ -15,4 +15,4 @@ Seseorang di keluarga bisa mengirimi Anda undangan. Lalu Anda bergabung dengan b
 
 Dapat tautan undangan? Ketuk tautannya, dan daili membuka layar yang sama.
 
-> Note: Kode berlaku 7 hari. Kalau tertulis **Kedaluwarsa**, minta kode baru.
+> Note: Kode berlaku 7 hari dan untuk satu orang. Kalau daili bilang kodenya sudah dipakai, kedaluwarsa, atau dibatalkan, minta kode baru.

@@ -3,7 +3,7 @@ id: start-sign-in
 title: Entrar com o Google, a Apple ou o e-mail
 summary: Crie uma conta ou entre de novo, e redefina sua senha se tiver esquecido.
 keywords: entrar, login, fazer login, cadastrar, criar conta, conta, google, apple, e-mail, senha, esqueci a senha, redefinir senha
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Você precisa de uma conta para usar o daili. Leva um minuto.
 
@@ -14,6 +14,6 @@ Você precisa de uma conta para usar o daili. Leva um minuto.
 3. É novo por aqui e vai usar o e-mail? Toque em **Criar conta**, preencha seu nome, e-mail e senha, e toque em **Criar conta**.
 4. Esqueceu a senha? Na tela de entrada, toque em **Esqueceu a senha?**, digite seu e-mail e toque em **Enviar o link**.
 
-Sua senha precisa ter pelo menos 8 caracteres.
+Sua senha precisa ter pelo menos 8 caracteres. Conta nova? Depois o daili pede sua foto e seu nome, e você cria uma família ou entra em uma.
 
 > Note: **Continuar com a Apple** só aparece no iPhone. No Android, use o Google ou seu e-mail.

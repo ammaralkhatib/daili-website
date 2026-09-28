@@ -5,7 +5,7 @@ summary: Un geste propose un dîner pour chaque soir libre de la semaine — tir
 keywords: menus, proposer, ia, planifier ma semaine, idées de dîner, on mange quoi, menu de la semaine, dîners rapides, végétarien, enfants
 tipTitle: Plus d’idées pour le dîner ?
 tipBody: Touche les étincelles dans Menus et Daili propose un dîner pour chaque soir libre, de tes recettes et de nouvelles.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Plus d’idées pour le dîner ?
 
@@ -17,8 +17,8 @@ Plus d’idées pour le dîner ?
 4. Sur **Votre semaine, proposée**, décoche un jour dont tu ne veux pas. Touche **Échanger** pour une autre idée, gratuitement. Touche une carte **Nouvelle recette** pour la lire.
 5. Touche le bouton en bas, comme **Ajouter 5 dîners**.
 
-Seuls les soirs libres à partir d'aujourd'hui sont remplis. Les dîners déjà prévus restent. daili évite ce que vous avez mangé ces deux dernières semaines. Les nouvelles idées sont enregistrées dans tes recettes, pour que leurs ingrédients puissent aller sur ta liste de courses. **Réessayer** fait un nouveau plan et utilise une proposition de plus.
+Seuls les soirs libres à partir d'aujourd'hui sont remplis, sans les repas des deux dernières semaines. Les nouvelles idées rejoignent tes recettes. **Réessayer** utilise une proposition de plus.
 
-> Note: Les titres de tes recettes, les repas récents et ton souhait sont envoyés à l’IA de Google. Rien n’y est conservé.
+> Note: Les titres de tes recettes, les repas récents et ton souhait sont envoyés à l’IA de Google, qui ne conserve rien. daili te demande d’abord, et **Paramètres** → **Fonctions IA (Google Gemini)** la désactive.
 
 > Note: Les propositions partagent les lectures IA du mois avec les vidéos et les photos. Daili Plus en offre plus — et si ta famille nous a rejoints tôt, elles sont gratuites à vie.

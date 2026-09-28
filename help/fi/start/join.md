@@ -3,7 +3,7 @@ id: start-join
 title: Liity perheeseen koodilla tai QR-koodilla
 summary: Saitko kutsun? Kirjoita 6-numeroinen koodi tai skannaa QR-koodi, niin pääset mukaan.
 keywords: liity, kutsukoodi, koodi, qr, skannaa, liity perheeseen, puoliso, vaimo, mies, isovanhemmat
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Joku perheestä voi lähettää sinulle kutsun. Sen jälkeen liityt muutamalla napautuksella.
 
@@ -15,4 +15,4 @@ Joku perheestä voi lähettää sinulle kutsun. Sen jälkeen liityt muutamalla n
 
 Saitko sen sijaan kutsulinkin? Napauta sitä, niin daili avaa saman näkymän.
 
-> Note: Koodi on voimassa 7 päivää. Jos siinä lukee **Vanhentunut**, pyydä uusi.
+> Note: Koodi on voimassa 7 päivää ja yhdelle henkilölle. Jos daili kertoo, että se on jo käytetty, vanhentunut tai peruttu, pyydä uusi.

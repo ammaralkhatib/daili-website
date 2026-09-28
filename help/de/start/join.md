@@ -3,7 +3,7 @@ id: start-join
 title: Mit einem Code oder QR-Code einer Familie beitreten
 summary: Du hast eine Einladung? Gib den 6-stelligen Code ein oder scanne den QR-Code, um beizutreten.
 keywords: beitreten, einladungscode, code, qr, scannen, familie beitreten, partner, frau, mann, großeltern
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Jemand aus der Familie kann dir eine Einladung schicken. Dann trittst du mit ein paar Tipps bei.
 
@@ -15,4 +15,4 @@ Jemand aus der Familie kann dir eine Einladung schicken. Dann trittst du mit ein
 
 Du hast stattdessen einen Einladungslink bekommen? Tippe darauf, und daili öffnet denselben Bildschirm.
 
-> Note: Ein Code gilt 7 Tage. Steht dort **Abgelaufen**, bitte um einen neuen.
+> Note: Ein Code gilt 7 Tage und für eine Person. Sagt daili, dass er schon benutzt, abgelaufen oder zurückgezogen ist, bitte um einen neuen.

@@ -3,7 +3,7 @@ id: start-join
 title: Bir aileye kodla ya da QR koduyla katıl
 summary: Davet mi aldın? Katılmak için 6 haneli kodu yaz ya da QR kodunu tara.
 keywords: katıl, davet kodu, kod, qr, tara, aileye katıl, eş, partner, anneanne, babaanne, dede
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Aileden biri sana davet gönderebilir. Sonra birkaç dokunuşla katılırsın.
 
@@ -15,4 +15,4 @@ Aileden biri sana davet gönderebilir. Sonra birkaç dokunuşla katılırsın.
 
 Bunun yerine bir davet bağlantısı mı aldın? Ona dokun, daili aynı ekranı açar.
 
-> Note: Bir kod 7 gün geçerlidir. **Süresi doldu** yazıyorsa yeni bir kod iste.
+> Note: Bir kod 7 gün ve tek bir kişi için geçerlidir. daili kodun zaten kullanıldığını, süresinin dolduğunu ya da iptal edildiğini söylerse yeni bir kod iste.

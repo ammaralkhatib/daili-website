@@ -3,7 +3,7 @@ id: start-join
 title: Entrar em uma família com um código ou um código QR
 summary: Recebeu um convite? Digite o código de 6 dígitos ou escaneie o código QR para entrar.
 keywords: entrar, código de convite, código, qr, escanear, entrar na família, parceiro, esposa, marido, avós
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Alguém da família pode mandar um convite para você. Aí você entra com poucos toques.
 
@@ -15,4 +15,4 @@ Alguém da família pode mandar um convite para você. Aí você entra com pouco
 
 Recebeu um link de convite? Toque nele, e o daili abre a mesma tela.
 
-> Note: Um código vale por 7 dias. Se aparecer **Vencido**, peça um novo.
+> Note: Um código vale por 7 dias e para uma só pessoa. Se o daili disser que ele já foi usado, venceu ou foi cancelado, peça um novo.

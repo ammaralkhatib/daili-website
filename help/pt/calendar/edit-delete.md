@@ -3,7 +3,7 @@ id: calendar-edit-delete
 title: Mudar ou excluir um evento
 summary: Mude um evento de data, corrija um erro ou tire ele do calendário. Em eventos compartilhados, qualquer pessoa da família pode fazer isso.
 keywords: editar evento, mudar evento, mover evento, excluir evento, apagar, cancelar, remarcar, atualizar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Os planos mudam. Veja como mudar o calendário junto com eles.
 
@@ -13,6 +13,6 @@ Os planos mudam. Veja como mudar o calendário junto com eles.
 2. Toque em **Editar o evento**, faça as mudanças e toque em **Salvar**.
 3. Ou toque em **Excluir** e depois em **Excluir** de novo para confirmar.
 
-Em um evento que se repete, o daili pergunta o que mudar ou excluir: **Só este evento**, **Este evento e os seguintes** ou **Todos os eventos**.
+Em um evento que se repete, o daili pergunta depois de **Salvar** a que sua mudança vale: **Só este evento**, **Este evento e os seguintes** ou **Todos os eventos**. Uma opção cinza diz por que não aceita sua mudança. **Excluir** oferece as mesmas três na hora.
 
 > Note: Qualquer pessoa da família pode mudar ou excluir um evento compartilhado, e a lista de novidades mostra quem fez isso. Um evento privado só pode ser mudado por quem o criou.

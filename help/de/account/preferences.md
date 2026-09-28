@@ -1,9 +1,9 @@
 ---
 id: account-preferences
 title: Hell oder dunkel, Sprache, Zeitformat, Vibration
-summary: Wähle den dunklen Modus, deine Sprache, 12- oder 24-Stunden-Zeit und ob daili vibriert.
-keywords: dunkelmodus, dark mode, heller modus, design, erscheinungsbild, sprache, 24 stunden, 12 stunden, zeitformat, vibration
-translatedFrom: 2026-09-24
+summary: Wähle den dunklen Modus, deine Sprache, 12- oder 24-Stunden-Zeit, ob daili vibriert, und die KI-Funktionen.
+keywords: dunkelmodus, dark mode, heller modus, design, erscheinungsbild, sprache, 24 stunden, 12 stunden, zeitformat, vibration, ki, gemini
+translatedFrom: 2026-09-28
 ---
 Tippe oben auf dem Startbildschirm auf dein Bild, um die **Einstellungen** zu öffnen. Diese Punkte findest du unter **Präferenzen**.
 
@@ -13,6 +13,7 @@ Tippe oben auf dem Startbildschirm auf dein Bild, um die **Einstellungen** zu ö
 2. **Zeitformat**: **24 Stunden**, **12 Stunden** oder **System**, um deinem Handy zu folgen.
 3. **Erscheinungsbild**: **Hell**, **Dunkel** oder **System**, um deinem Handy zu folgen.
 4. **Vibration**: ein kurzes Summen, wenn etwas erledigt, gespeichert oder gelöscht ist. Schalte es aus, wenn du es nicht magst.
+5. **KI-Funktionen (Google Gemini)**: Die KI von Google darf deine Fotos, Videolinks und Essenswünsche lesen. Ausgeschaltet? Dann fragt daili beim nächsten Mal wieder.
 
 Diese Einstellungen gelten nur für dieses Handy. Deine Familie behält ihre eigenen.
 

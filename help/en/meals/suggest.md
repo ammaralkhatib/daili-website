@@ -7,7 +7,7 @@ keywords: meal plan, suggest, ai, plan my week, dinner ideas, what's for dinner,
 routes: /meal-plan, /meal-plan/suggest
 tryIt: /meal-plan
 since: 1.7.0
-updated: 2026-09-27
+updated: 2026-09-28
 media: meals-suggest
 order: 8
 related: meals-plan-week, meals-to-shopping, meals-add-recipe, meals-photo
@@ -26,8 +26,8 @@ Out of dinner ideas?
 4. On **Your week, suggested**, untick days you don't want. **Swap** gives another idea, free. Tap a **New recipe** card to read it.
 5. Tap the add button, like **Add 5 dinners**.
 
-Only open evenings from today get dinners; planned ones stay. daili skips the last two weeks' meals. New ideas join your Recipes, ready for the shopping list. **Try again** makes a new plan and uses one more suggestion.
+Only open evenings from today are filled, skipping the last two weeks' meals. New ideas join your Recipes. **Try again** uses one more suggestion.
 
-> Note: Your recipe titles, recent meals and wish go to Google's AI. Nothing is stored there.
+> Note: Your recipe titles, recent meals and wish go to Google's AI, which stores nothing. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
 > Note: Suggestions share the monthly AI reads with videos and photos. Daili Plus has more; early families: free for life.

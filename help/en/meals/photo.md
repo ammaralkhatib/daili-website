@@ -7,7 +7,7 @@ keywords: photo, camera, cookbook, handwritten, screenshot, scan recipe, ai, sav
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-09-26
+updated: 2026-09-28
 media: meals-photo
 order: 4
 related: meals-youtube, meals-paste, meals-add-recipe, calendar-photo
@@ -27,6 +27,6 @@ Have a recipe on paper or in a screenshot? daili can type it up for you.
 
 The recipe comes out in your phone's language, whatever language the page is in. Printed or clearly written text works best.
 
-> Note: The photo goes to Google's AI to be read, then is deleted. daili never stores it, and removes camera data like location first.
+> Note: The photo goes to Google's AI to be read, then is deleted, without camera data like location. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
 > Note: Every family gets a few free photo reads each month, shared with video reads and calendar photos. Daili Plus has more — and if your family joined early, reads are free for life.

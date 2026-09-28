@@ -1,9 +1,9 @@
 ---
 id: account-delete
 title: Slett kontoen din (og ombestem deg innen 30 dager)
-summary: Kontoen din slettes for godt etter 30 dager. Fram til da kan lenken i e-posten vår hente den tilbake.
+summary: Kontoen din slettes for godt etter 30 dager. Fram til da får du den tilbake ved å logge inn eller via lenken i e-posten vår.
 keywords: slett konto, fjern konto, avslutt konto, avbryt sletting, gjenopprett konto, 30 dager, forlat daili, gdpr, personvern
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Vil du ha en kopi av dataene dine først? Last den ned før du begynner.
 
@@ -11,11 +11,14 @@ Vil du ha en kopi av dataene dine først? Last den ned før du begynner.
 
 1. Åpne **Innstillinger**, og trykk på navnet ditt øverst.
 2. Trykk på **Slett konto** under **Konto**.
-3. Skriv inn **Passord**, og trykk på **Slett kontoen min**. Logget inn med Google eller Apple? Da er det ikke noe passordfelt, så bare trykk på knappen.
-4. daili logger deg ut. Vi sender deg en e-post med en lenke for å avbryte.
+3. Fortell oss gjerne hvorfor du slutter. Det er valgfritt.
+4. Skriv ordet du blir bedt om, **SLETT**, og trykk på **Slett kontoen min**.
+5. daili logger deg ut. Vi sender deg en e-post med en lenke for å avbryte.
 
-I 30 dager kan du fortsatt ombestemme deg: trykk på lenken i den e-posten, så er kontoen din tilbake. Etter 30 dager slettes den for godt.
+Valgte du **Jeg vil begynne på nytt**? Du trenger ingen ny konto: opprett heller en ny familie eller gruppe.
+
+I 30 dager kan du fortsatt ombestemme deg: logg inn og trykk på **Gjenopprett kontoen min**, eller trykk på lenken i e-posten vår. Etter 30 dager slettes den for godt.
 
 Eier du en familie? Gjør noen andre til eier, eller slett familien, først.
 
-> Note: Dokumentene og bildene dine fjernes fra denne telefonen med en gang. Lenken kan ikke hente dem tilbake.
+> Note: Dokumentene og bildene dine fjernes fra denne telefonen med en gang. Gjenoppretting kan ikke hente dem tilbake.

@@ -3,7 +3,7 @@ id: start-join
 title: Gå med i en familj med en kod eller QR-kod
 summary: Har du fått en inbjudan? Skriv den 6-siffriga koden eller skanna QR-koden för att gå med.
 keywords: gå med, inbjudningskod, kod, qr, skanna, gå med i familj, partner, fru, man, mor- och farföräldrar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Någon i familjen kan skicka en inbjudan till dig. Sedan går du med på några tryck.
 
@@ -15,4 +15,4 @@ Någon i familjen kan skicka en inbjudan till dig. Sedan går du med på några 
 
 Har du fått en inbjudningslänk i stället? Tryck på den, så öppnar daili samma skärm.
 
-> Note: En kod gäller i 7 dagar. Står det **Utgången**, be om en ny.
+> Note: En kod gäller i 7 dagar och för en person. Säger daili att den redan är använd, har gått ut eller har dragits tillbaka, be om en ny.

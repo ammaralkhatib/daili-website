@@ -5,7 +5,7 @@ summary: Tek dokunuşla haftanın her boş akşamına bir akşam yemeği öneril
 keywords: yemek planı, öneri, yapay zekâ, haftamı planla, akşam yemeği fikirleri, akşama ne pişirsem, haftalık menü, hızlı yemekler, vejetaryen, çocuklar
 tipTitle: Akşam yemeği fikrin mi kalmadı?
 tipBody: Yemek planındaki pırıltıya dokun, Daili her boş akşam için bir akşam yemeği önersin.
-translatedFrom: 2026-09-27
+translatedFrom: 2026-09-28
 ---
 Akşam yemeği fikrin mi kalmadı?
 
@@ -17,8 +17,8 @@ Akşam yemeği fikrin mi kalmadı?
 4. **Haftan, öneriyle** ekranında istemediğin günün işaretini kaldır. Başka bir fikir için **Değiştir** düğmesine dokun, ücretsiz. Okumak için bir **Yeni tarif** kartına dokun.
 5. Alttaki düğmeye dokun, örneğin **5 akşam yemeği ekle**.
 
-Yalnızca bugünden itibaren boş olan akşamlar doldurulur. Zaten planlanmış akşam yemekleri kalır. daili son iki haftada yediklerinizden kaçınır. Yeni fikirler tariflerine kaydedilir, böylece malzemeleri alışveriş listesine eklenebilir. **Tekrar dene** yeni bir plan yapar ve bir öneri hakkı daha kullanır.
+Yalnızca bugünden itibaren boş olan akşamlar, son iki haftanın yemekleri atlanarak doldurulur. Yeni fikirler tariflerine eklenir. **Tekrar dene** bir öneri hakkı daha kullanır.
 
-> Note: Planı yapmak için tarif adların, son yemekleriniz ve yazdığın istek Google'ın yapay zekâsına gönderilir. Orada hiçbir şey saklanmaz.
+> Note: Tarif adların, son yemekleriniz ve yazdığın istek, hiçbir şey saklamayan Google'ın yapay zekâsına gönderilir. daili önce sana sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
 
 > Note: Öneriler, aylık yapay zekâ haklarını video ve fotoğraf okumalarıyla paylaşır. Daili Plus'ta daha fazlası var — ailen erken katıldıysa ömür boyu ücretsiz.

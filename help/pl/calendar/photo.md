@@ -5,9 +5,9 @@ summary: Zrób zdjęcie pisma ze szkoły, zaproszenia albo ulotki — daili wyci
 keywords: zdjęcie, skanuj, pismo, zaproszenie, ulotka, daty, ai, aparat, szkoła, odczytaj zdjęcie
 tipTitle: Zmień pismo ze szkoły w wydarzenia
 tipBody: Dotknij ikony skanowania w Nowe wydarzenie, zrób zdjęcie pisma, a daili wpisze daty.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
-Masz daty na papierze? Ikona skanowania w **Nowe wydarzenie** je odczyta.
+Daty na papierze? Ikona skanowania w **Nowe wydarzenie** je odczyta.
 
 ![Ekran Nowe wydarzenie. Ikona skanowania w prawym górnym rogu jest zakreślona.](calendar-photo)
 
@@ -15,10 +15,10 @@ Masz daty na papierze? Ikona skanowania w **Nowe wydarzenie** je odczyta.
 2. Dotknij **Zrób zdjęcie** albo **Wybierz z biblioteki**.
 3. Zdjęcie z biblioteki zobaczysz najpierw. Jeśli daty są czytelne, dotknij **Odczytaj to zdjęcie**.
 4. Jedna data: formularz jest wypełniony. Sprawdź go i dotknij **Zapisz**.
-5. Kilka dat: odznacz to, czego nie potrzebujesz, dotknij daty albo godziny, żeby ją zmienić, a potem dotknij **Dodaj N wydarzeń**. Daty, które już minęły, są na starcie odznaczone.
+5. Kilka dat: odznacz to, czego nie potrzebujesz, dotknij daty albo godziny, żeby ją zmienić, a potem dotknij **Dodaj N wydarzeń**.
 
-Najlepiej działa druk, gorzej pismo odręczne. Pliki PDF jeszcze nie działają — zrób zdjęcie strony.
+Najlepiej działa druk, gorzej pismo odręczne. Plik PDF? Zrób zdjęcie strony.
 
-> Note: Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane. daili nigdy go nie przechowuje i najpierw usuwa dane z aparatu, np. lokalizację.
+> Note: Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
 > Note: Każda rodzina dostaje co miesiąc kilka darmowych odczytów zdjęć, wspólnych z odczytami filmów. Daili Plus ma ich więcej — a jeśli twoja rodzina dołączyła wcześnie, odczyty są za darmo na zawsze.

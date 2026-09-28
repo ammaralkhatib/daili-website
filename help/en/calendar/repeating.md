@@ -7,7 +7,7 @@ keywords: repeat, repeating, recurring, every week, weekly, daily, monthly, year
 routes: /calendar/new
 tryIt: /calendar/new
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-28
 media: calendar-repeating
 order: 4
 related: calendar-add-event, calendar-edit-delete
@@ -22,6 +22,6 @@ Swimming every Tuesday? Add it once and let it repeat.
 4. Under **Ends**, keep **Never** or pick **On date**.
 5. Close the sheet and tap **Save**.
 
-When you change or delete one day of a repeating event, daili asks what it should apply to: **This event only**, **This and following events** or **All events**.
+Changing a repeating event? Make your changes first and tap **Save**. Then choose **This event only**, **This and following events** or **All events**. Deleting one? Tap **Delete** and choose the same way.
 
-> Note: Repeats, **All day** and **Private event** can't be changed for one day only. Pick **This and following events** or **All events** first.
+> Note: A choice that can't hold your change is greyed out, with the reason. A new time can't go to **All events**. Changes to repeats, **All day**, **Private event** or extra reminders can't be **This event only**.

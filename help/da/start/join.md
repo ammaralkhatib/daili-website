@@ -3,7 +3,7 @@ id: start-join
 title: Deltag i en familie med en kode eller en QR-kode
 summary: Har du fået en invitation? Skriv den 6-cifrede kode, eller scan QR-koden for at deltage.
 keywords: deltag, invitationskode, kode, qr, scan, bliv medlem, partner, kone, mand, bedsteforældre
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 En i familien kan sende dig en invitation. Så er du med efter få tryk.
 
@@ -15,4 +15,4 @@ En i familien kan sende dig en invitation. Så er du med efter få tryk.
 
 Har du fået et invitationslink i stedet? Tryk på det, så åbner daili den samme skærm.
 
-> Note: En kode gælder i 7 dage. Står der **Udløbet**, så bed om en ny.
+> Note: En kode gælder i 7 dage og til én person. Siger daili, at den allerede er brugt, er udløbet eller er annulleret, så bed om en ny.

@@ -5,7 +5,7 @@ summary: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schr
 keywords: youtube, video, rezeptvideo, kochvideo, video importieren, link, ki, rezept speichern, shorts
 tipTitle: Mach aus einem YouTube-Video ein Rezept
 tipBody: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schritte für dich auf.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-28
 ---
 Ein Gericht auf YouTube gesehen? daili kann das Rezept für dich aufschreiben.
 
@@ -16,8 +16,8 @@ Ein Gericht auf YouTube gesehen? daili kann das Rezept für dich aufschreiben.
 3. Füg den Link unter **YouTube-Link** ein oder tippe auf **Einfügen**. Tippe dann auf **Video lesen**.
 4. daili liest das Video – das kann bis zu einer Minute dauern. Prüf, was daili gefunden hat, und korrigiere, was nicht passt. Tippe dann auf **Speichern**.
 
-daili schaut zuerst in die Videobeschreibung. Steht das Rezept dort oder verlinkt die Beschreibung auf eine Rezeptseite, nimmt daili es von dort, und das geht schnell. Sonst schaut sich daili das Video an.
+Steht das Rezept in der Videobeschreibung, geht es schnell. Sonst schaut sich daili das Video an.
 
-Zutaten und Schritte kommen in der Sprache deines Handys heraus, egal in welcher Sprache das Video ist.
+Das Rezept kommt in der Sprache deines Handys heraus. Beim ersten Mal fragt daili, bevor es die KI von Google (Gemini) nutzt; unter **Einstellungen** → **KI-Funktionen (Google Gemini)** schaltest du das aus.
 
 > Note: Es funktionieren nur öffentliche Videos bis 25 Minuten. Jede Familie bekommt jeden Monat ein paar kostenlose Video-Lesungen. Daili Plus bietet mehr – und wenn eure Familie früh dabei war, sind Video-Lesungen für immer kostenlos.

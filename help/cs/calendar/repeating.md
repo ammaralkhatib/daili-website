@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Opakované události
 summary: Nech událost opakovat každý den, týden, měsíc nebo rok a měň jeden den nebo celou řadu.
 keywords: opakovat, opakování, opakovaná, každý týden, týdně, denně, měsíčně, ročně, řada, rutina
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-28
 ---
 Plavání každé úterý? Přidej ho jednou a nech ho opakovat.
 
@@ -15,6 +15,6 @@ Plavání každé úterý? Přidej ho jednou a nech ho opakovat.
 4. V části **Končí** nech **Nikdy**, nebo vyber **K datu**.
 5. Zavři panel a klepni na **Uložit**.
 
-Když měníš nebo mažeš jeden den opakované události, daili se zeptá, na co se to má vztahovat: **Jen tuto událost**, **Tuto a následující události**, nebo **Všechny události**.
+Měníš opakovanou událost? Nejdřív proveď změny a klepni na **Uložit**. Pak vyber **Jen tuto událost**, **Tuto a následující události**, nebo **Všechny události**. Mažeš ji? Klepni na **Smazat** a vyber stejně.
 
-> Note: Opakování, **Celý den** a **Soukromá událost** nejde změnit jen pro jeden den. Nejdřív vyber **Tuto a následující události** nebo **Všechny události**.
+> Note: Volba, která tvou změnu nepojme, je šedá a ukáže důvod. Nový čas nejde použít pro **Všechny události**. Změny opakování, **Celý den**, **Soukromá událost** nebo dalších připomenutí nemůžou být **Jen tuto událost**.

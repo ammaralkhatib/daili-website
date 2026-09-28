@@ -2,8 +2,8 @@
 id: start-create-family
 title: Je gezin of groep aanmaken
 summary: Begin een nieuw gezin of een nieuwe groep, zodat iedereen één agenda en dezelfde lijsten deelt.
-keywords: gezin aanmaken, nieuw gezin, beginnen, instellen, groep, huishouden, gezinsnaam, kleur, familie
-translatedFrom: 2026-09-24
+keywords: gezin aanmaken, nieuw gezin, beginnen, instellen, groep, huishouden, gezinsnaam, kleur, familie, foto
+translatedFrom: 2026-09-28
 ---
 Na het inloggen vraagt daili of je een gezin of groep wilt aanmaken, of je bij een bestaande wilt aansluiten.
 
@@ -15,5 +15,9 @@ Na het inloggen vraagt daili of je een gezin of groep wilt aanmaken, of je bij e
 4. Tik op **Aanmaken**. daili opent je nieuwe startscherm.
 
 Jij bent nu de eigenaar. Nodig daarna de anderen uit, zodat iedereen dezelfde planning ziet.
+
+Nieuw account? Dan komt er eerst één stap: **Hoi! Wie ben jij?** Kies je foto en controleer je naam. Je gezin ziet allebei. Tik op **Doorgaan**, of op **Overslaan**.
+
+![De stap Hoi! Wie ben jij?, met een gekozen foto en de naam ingevuld.](start-you-step)
 
 > Note: Heeft iemand je gezin al aangemaakt? Maak dan geen tweede aan. Tik op **Deelnemen aan gezin of groep** en gebruik hun code.
