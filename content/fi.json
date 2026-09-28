@@ -190,7 +190,8 @@
         "Värikoodatut menot kategorioineen, paikkoineen ja muistiinpanoineen",
         "Toistot kunnolla tehtyinä — jalkapallo joka tiistai, piano joka toinen viikko",
         "Muistutukset jokaiseen perheen puhelimeen",
-        "Pyhäpäivät 35 maasta; yksityiset menot pysyvät yksityisinä"
+        "Pyhäpäivät 35 maasta; yksityiset menot pysyvät yksityisinä",
+        "Kuvaa koulun tiedote — päivämäärät siirtyvät kalenteriin"
       ],
       "alt": "Kuukausikalenteri värillisine menoineen"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Perheen tehtävälista vastuuhenkilöineen"
     },
+    "habits": {
+      "eyebrow": "Tavat",
+      "h2": "Pienet tavat, koko perhe kannustaa",
+      "p": "Kukkien kastelu, kymmenen minuuttia lukemista, koiran ulkoilutus — merkitse tehdyksi, pidä putki käynnissä, ja jokainen merkintä antaa perheenne Minzi-kissalle energiaa seuraavaan matkaan.",
+      "bullets": [
+        "Jokainen erikseen, yhdessä tai vain sinulle — päivittäisellä muistutuksella",
+        "Putkissa on lepopäivät ja tauot, joten loma ei katkaise niitä",
+        "Täysi energiapalkki lähettää Minzin matkalle — ja kotiin tulee postikortti"
+      ],
+      "alt": "Perheen tavat -näkymä, jossa putket ja Minzi-kissa"
+    },
     "meals": {
       "eyebrow": "Ruokalista",
       "h2": "Illallinen päätettynä jo sunnuntaina",
@@ -222,7 +234,8 @@
       "bullets": [
         "Viikon ruokalista, neljä ateriaa päivässä",
         "Reseptit kuvineen ja tuonti linkin kautta",
-        "Reseptin ainekset mille tahansa listalle yhdellä napautuksella"
+        "Reseptin ainekset mille tahansa listalle yhdellä napautuksella",
+        "Ideat lopussa? Anna Dailin ehdottaa illallisia vapaille illoille"
       ],
       "alt": "Viikon ruokalista"
     },
@@ -232,6 +245,17 @@
       "p": "Syntymäpäivät, merkkipäivät ja perhejuhlat — muistissa joka vuosi, laskurin ja muistutusten kanssa kaikille.",
       "bullets": [],
       "alt": "Syntymäpäivien ja juhlien näkymä"
+    },
+    "notes": {
+      "eyebrow": "Muistiinpanot",
+      "h2": "Pikamuistiinpanot, aina oikeassa paikassa",
+      "p": "Wi-Fi-salasana, lapsenvahdin numero, säilyttämisen arvoinen linkki — tallessa kahdella napautuksella, oletuksena yksityinen, jaettu kun haluat.",
+      "bullets": [
+        "Jaa linkki mistä tahansa sovelluksesta Dailiin — siitä tulee muistiinpano",
+        "Vain minä, koko perhe tai valitut jäsenet",
+        "Kiinnitä, merkitse ja hae — omat ja sinulle jaetut"
+      ],
+      "alt": "Muistiinpanolista jaetuilla ja yksityisillä muistiinpanoilla"
     },
     "vault": {
       "eyebrow": "Yksityinen lähtökohtaisesti",

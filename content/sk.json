@@ -190,7 +190,8 @@
         "Farebné termíny s kategóriami, miestami a poznámkami",
         "Opakovania, ktoré sedia — futbal každý utorok, klavír každý druhý týždeň",
         "Pripomienky na každom telefóne v rodine",
-        "Sviatky pre 35 krajín, súkromné termíny zostanú súkromné"
+        "Sviatky pre 35 krajín, súkromné termíny zostanú súkromné",
+        "Odfoť list zo školy — dátumy pristanú v kalendári"
       ],
       "alt": "Mesačný kalendár s termínmi"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Rodinný zoznam úloh so zodpovednými"
     },
+    "habits": {
+      "eyebrow": "Návyky",
+      "h2": "Malé návyky, celá rodina fandí",
+      "p": "Poliať kvety, desať minút čítať, vyvenčiť psa — odškrtni, udrž sériu a každé odškrtnutie dá Minzi, vašej rodinnej mačke, energiu na ďalší výlet.",
+      "bullets": [
+        "Každý zvlášť, spoločne alebo len pre teba — s dennou pripomienkou",
+        "Série s dňami voľna a pauzami, takže ich dovolenka nepreruší",
+        "Plná lišta energie pošle Minzi na výlet — a domov príde pohľadnica"
+      ],
+      "alt": "Obrazovka rodinných návykov so sériami a mačkou Minzi"
+    },
     "meals": {
       "eyebrow": "Jedálniček",
       "h2": "Večera vyriešená už v nedeľu",
@@ -222,7 +234,8 @@
       "bullets": [
         "Týždenný jedálniček so štyrmi jedlami na deň",
         "Zbierka receptov s fotkami a importom cez odkaz",
-        "Suroviny receptu do ľubovoľného zoznamu jedným ťuknutím"
+        "Suroviny receptu do ľubovoľného zoznamu jedným ťuknutím",
+        "Došli nápady? Nechaj Daili navrhnúť večere na voľné večery"
       ],
       "alt": "Týždenný jedálniček"
     },
@@ -232,6 +245,17 @@
       "p": "Narodeniny, výročia a rodinné oslavy — každý rok na mieste, s odpočítavaním a pripomienkami pre všetkých.",
       "bullets": [],
       "alt": "Obrazovka narodenín a osláv"
+    },
+    "notes": {
+      "eyebrow": "Poznámky",
+      "h2": "Rýchle poznámky, vždy poruke",
+      "p": "Heslo k Wi-Fi, číslo na opatrovateľku, odkaz, ktorý stojí za uloženie — uložené dvoma ťuknutiami, predvolene súkromné, zdieľané, keď chceš.",
+      "bullets": [
+        "Zdieľaj odkaz z ľubovoľnej aplikácie do Daili — stane sa z neho poznámka",
+        "Len ja, celá rodina alebo vybraní členovia",
+        "Pripínaj, označuj štítkami a hľadaj — svoje aj zdieľané s tebou"
+      ],
+      "alt": "Zoznam zdieľaných a súkromných poznámok"
     },
     "vault": {
       "eyebrow": "Súkromné od základu",

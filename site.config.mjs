@@ -1008,7 +1008,7 @@ export const HELP_TOPICS = {
 export const HELP_LOCALES = ['en', 'de', 'nl', 'sv', 'da', 'nb', 'fi', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'sk', 'ro', 'tr', 'el', 'uk', 'bg', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'id'];
 
 /**
- * The seven feature chapters of the scroll story, in story order.
+ * The nine feature chapters of the scroll story, in story order.
  *
  * `shot` is the screenshot the sticky phone shows while that chapter is on
  * screen, and every entry has one now: the story is one screen per feature, so
@@ -1028,8 +1028,10 @@ export const FEATURES = [
   { key: 'calendar',  shot: 'shot-calendar' },
   { key: 'shopping',  shot: 'shot-shopping' },
   { key: 'todos',     shot: 'shot-todos' },
+  { key: 'habits',    shot: 'shot-habits' },
   { key: 'meals',     shot: 'shot-mealplan' },
   { key: 'birthdays', shot: 'shot-birthdays' },
+  { key: 'notes',     shot: 'shot-notes' },
   { key: 'vault',     shot: 'shot-documents' },
   { key: 'family',    shot: 'shot-family' },
 ];
@@ -1151,6 +1153,8 @@ export const SHOT_SOURCES = {
   '05-mealplan': 'shot-mealplan',
   '06-birthdays': 'shot-birthdays',
   '07-family': 'shot-family',
+  '08-habits': 'shot-habits',
+  '09-notes': 'shot-notes',
 };
 
 /** Intrinsic pixel sizes, measured from the files. Used for width/height so the

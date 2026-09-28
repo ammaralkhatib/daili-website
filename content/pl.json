@@ -190,7 +190,8 @@
         "Kolorowe wydarzenia z kategoriami, miejscami i notatkami",
         "Powtarzanie zrobione porządnie — piłka w każdy wtorek, pianino co dwa tygodnie",
         "Przypomnienia na każdym telefonie w rodzinie",
-        "Święta dla 35 krajów; wydarzenia prywatne zostają prywatne"
+        "Święta dla 35 krajów; wydarzenia prywatne zostają prywatne",
+        "Zrób zdjęcie ogłoszenia ze szkoły — daty trafią do kalendarza"
       ],
       "alt": "Kalendarz miesięczny z kolorowymi wydarzeniami"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Rodzinna lista zadań z osobami odpowiedzialnymi"
     },
+    "habits": {
+      "eyebrow": "Nawyki",
+      "h2": "Małe nawyki, cała rodzina kibicuje",
+      "p": "Podlać kwiaty, poczytać dziesięć minut, wyjść z psem — odhacz, utrzymaj serię, a każde odhaczenie daje Minziemu, waszemu rodzinnemu kotu, energię na kolejną podróż.",
+      "bullets": [
+        "Każde z osobna, razem albo tylko dla ciebie — z codziennym przypomnieniem",
+        "Serie z dniami wolnymi i przerwami, więc urlop ich nie przerwie",
+        "Pełny pasek energii wysyła Minziego w podróż — a do domu przychodzi pocztówka"
+      ],
+      "alt": "Ekran nawyków rodziny z seriami i kotem Minzi"
+    },
     "meals": {
       "eyebrow": "Jadłospis",
       "h2": "Kolacja ustalona już w niedzielę",
@@ -222,7 +234,8 @@
       "bullets": [
         "Jadłospis na tydzień z czterema posiłkami dziennie",
         "Przepisy ze zdjęciami i importem przez link",
-        "Składniki przepisu na dowolną listę jednym dotknięciem"
+        "Składniki przepisu na dowolną listę jednym dotknięciem",
+        "Brak pomysłów? Niech Daili zaproponuje kolacje na wolne wieczory"
       ],
       "alt": "Jadłospis na tydzień"
     },
@@ -232,6 +245,17 @@
       "p": "Urodziny, rocznice i święta rodzinne — pamiętane co roku, z odliczaniem i przypomnieniami dla wszystkich.",
       "bullets": [],
       "alt": "Ekran urodzin i świąt"
+    },
+    "notes": {
+      "eyebrow": "Notatki",
+      "h2": "Szybkie notatki, zawsze pod ręką",
+      "p": "Hasło do Wi-Fi, numer do niani, link wart zachowania — zapisane dwoma dotknięciami, domyślnie prywatne, udostępnione, kiedy chcesz.",
+      "bullets": [
+        "Udostępnij link z dowolnej aplikacji do Daili — stanie się notatką",
+        "Tylko ja, cała rodzina lub wybrane osoby",
+        "Przypinaj, taguj i szukaj — swoje notatki i te udostępnione tobie"
+      ],
+      "alt": "Lista notatek wspólnych i prywatnych"
     },
     "vault": {
       "eyebrow": "Prywatne z założenia",

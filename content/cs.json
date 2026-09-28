@@ -190,7 +190,8 @@
         "Barevné události s kategoriemi, místy a poznámkami",
         "Opakování udělané pořádně — fotbal každé úterý, klavír každý druhý týden",
         "Připomenutí na každém telefonu v rodině",
-        "Svátky pro 35 zemí; soukromé události zůstávají soukromé"
+        "Svátky pro 35 zemí; soukromé události zůstávají soukromé",
+        "Vyfoťte dopis ze školy — termíny se samy objeví v kalendáři"
       ],
       "alt": "Měsíční kalendář s barevnými událostmi"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Rodinný seznam úkolů s odpovědnými osobami"
     },
+    "habits": {
+      "eyebrow": "Návyky",
+      "h2": "Malé návyky, celá rodina fandí",
+      "p": "Zalít květiny, deset minut číst, vyvenčit psa — odškrtněte, udržte sérii a každé odškrtnutí dá Minzi, vaší rodinné kočce, energii na další výlet.",
+      "bullets": [
+        "Každý zvlášť, společně, nebo jen pro vás — s denní připomínkou",
+        "Série s dny volna a pauzami, takže je dovolená nepřeruší",
+        "Plná lišta energie pošle Minzi na výlet — a domů přijde pohlednice"
+      ],
+      "alt": "Obrazovka rodinných návyků se sériemi a kočkou Minzi"
+    },
     "meals": {
       "eyebrow": "Jídelníček",
       "h2": "Večeře rozhodnutá už v neděli",
@@ -222,7 +234,8 @@
       "bullets": [
         "Jídelníček na týden se čtyřmi jídly denně",
         "Recepty s fotkami a importem přes odkaz",
-        "Suroviny receptu na libovolný seznam jedním klepnutím"
+        "Suroviny receptu na libovolný seznam jedním klepnutím",
+        "Došly nápady? Nechte Daili navrhnout večeře na volné večery"
       ],
       "alt": "Jídelníček na týden"
     },
@@ -232,6 +245,17 @@
       "p": "Narozeniny, výročí a rodinné oslavy — připomenuté každý rok, s odpočtem a upozorněním pro všechny.",
       "bullets": [],
       "alt": "Obrazovka narozenin a oslav"
+    },
+    "notes": {
+      "eyebrow": "Poznámky",
+      "h2": "Rychlé poznámky, vždy po ruce",
+      "p": "Heslo k Wi-Fi, číslo na chůvu, odkaz, který stojí za uložení — uložené dvěma klepnutími, ve výchozím stavu soukromé, sdílené, kdy chcete.",
+      "bullets": [
+        "Sdílejte odkaz z libovolné aplikace do Daili — stane se z něj poznámka",
+        "Jen já, celá rodina, nebo vybraní členové",
+        "Připínejte, štítkujte a hledejte — své i sdílené s vámi"
+      ],
+      "alt": "Seznam sdílených a soukromých poznámek"
     },
     "vault": {
       "eyebrow": "Soukromé záměrně",

@@ -5,7 +5,7 @@
     python3 tools/make-site-shots.py de fr      # just these site locales
     python3 tools/make-site-shots.py --check    # measure, write nothing
 
-Reads  ../store-shots/raw/<store-locale>/<01-dashboard…07-family>.png
+Reads  ../store-shots/raw/<store-locale>/<01-dashboard…09-notes>.png
 Writes static/assets/img/shots/<site-locale>/<shot-*>.webp   (640 px wide)
 
 The output is **committed**. The build must succeed on a machine that has no
@@ -40,6 +40,7 @@ OUT = ROOT / "static" / "assets" / "img" / "shots"
 WIDTH = 640            # the intrinsic width the site has always used
 QUALITY = 80           # webp
 BUDGET = 45 * 1024     # per-file size budget
+MIN_QUALITY = 65       # the fallback: a file over budget steps down to here, 5 at a time
 
 
 def js_map(name):
@@ -111,25 +112,36 @@ def main():
                 out = flatten(im).resize((WIDTH, height), Image.LANCZOS)
             sizes.add((WIDTH, height))
             dest = dest_dir / f"{name}.webp"
+            q = QUALITY
             if not args.check:
-                out.save(dest, "WEBP", quality=QUALITY, method=6)
+                out.save(dest, "WEBP", quality=q, method=6)
+                # A busy screen (the habits room) can land just over budget at
+                # 80. Only that file drops quality; the rest of the set keeps 80.
+                while dest.stat().st_size > BUDGET and q > MIN_QUALITY:
+                    q -= 5
+                    out.save(dest, "WEBP", quality=q, method=6)
             kb = dest.stat().st_size / 1024 if dest.is_file() else 0.0
-            rows.append((loc, name, f"{WIDTH}x{height}", kb))
+            rows.append((loc, name, f"{WIDTH}x{height}", kb, q))
 
     if rows:
         print(f"{'locale':<8} {'file':<16} {'intrinsic':<11} {'size':>8}")
         print("-" * 46)
-        over = 0
-        for loc, name, dim, kb in rows:
+        over = lowered = 0
+        for loc, name, dim, kb, q in rows:
             flag = "  ← over budget" if kb * 1024 > BUDGET else ""
             over += bool(flag)
+            if q != QUALITY:
+                flag += f"  (quality {q})"
+                lowered += 1
             print(f"{loc:<8} {name:<16} {dim:<11} {kb:7.1f}K{flag}")
         print("-" * 46)
-        every = [kb for *_, kb in rows]
+        every = [kb for _, _, _, kb, _ in rows]
         print(f"{len(rows)} files · {sum(every):.0f}K total · "
               f"largest {max(every):.1f}K · budget {BUDGET / 1024:.0f}K each")
+        if lowered:
+            print(f"{lowered} file(s) needed a lower quality to fit the budget.")
         if over:
-            print(f"⚠ {over} file(s) over budget — lower QUALITY or WIDTH.")
+            print(f"⚠ {over} file(s) over budget even at quality {MIN_QUALITY} — lower WIDTH.")
         print(f"\nIntrinsic size produced: "
               f"{', '.join(f'{w}x{h}' for w, h in sorted(sizes))}")
         if len(sizes) > 1:

@@ -190,7 +190,8 @@
         "Acara berwarna lengkap dengan kategori, lokasi, dan catatan",
         "Pengulangan yang benar — sepak bola tiap Selasa, piano dua pekan sekali",
         "Pengingat di setiap ponsel di keluarga",
-        "Hari libur untuk 35 negara; acara pribadi tetap pribadi"
+        "Hari libur untuk 35 negara; acara pribadi tetap pribadi",
+        "Foto surat dari sekolah — tanggalnya masuk ke kalender"
       ],
       "alt": "Kalender bulanan dengan acara berwarna"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Daftar tugas keluarga beserta penanggung jawabnya"
     },
+    "habits": {
+      "eyebrow": "Kebiasaan",
+      "h2": "Kebiasaan kecil, seluruh keluarga menyemangati",
+      "p": "Menyiram tanaman, membaca sepuluh menit, mengajak anjing jalan-jalan — centang, jaga rentetannya, dan setiap centang memberi Minzi, kucing keluarga Anda, energi untuk perjalanan berikutnya.",
+      "bullets": [
+        "Masing-masing, bersama, atau hanya untuk Anda — dengan pengingat harian",
+        "Rentetan dengan hari istirahat dan jeda, jadi liburan tidak memutusnya",
+        "Bar energi penuh mengirim Minzi bertamasya — dan kartu pos datang ke rumah"
+      ],
+      "alt": "Layar kebiasaan keluarga dengan rentetan dan kucing Minzi"
+    },
     "meals": {
       "eyebrow": "Rencana makan",
       "h2": "Makan malam sudah diputuskan sejak Minggu",
@@ -222,7 +234,8 @@
       "bullets": [
         "Rencana makan sepekan dengan empat waktu makan per hari",
         "Kumpulan resep berfoto dan impor lewat tautan",
-        "Bahan sebuah resep masuk ke daftar mana pun sekali ketuk"
+        "Bahan sebuah resep masuk ke daftar mana pun sekali ketuk",
+        "Kehabisan ide? Biarkan Daili menyarankan makan malam untuk malam yang masih kosong"
       ],
       "alt": "Rencana makan sepekan"
     },
@@ -232,6 +245,17 @@
       "p": "Ulang tahun, hari jadi, dan perayaan keluarga — diingat setiap tahun, lengkap dengan hitung mundur dan pengingat untuk semua orang.",
       "bullets": [],
       "alt": "Layar ulang tahun dan perayaan"
+    },
+    "notes": {
+      "eyebrow": "Catatan",
+      "h2": "Catatan cepat, selalu siap di tangan",
+      "p": "Kata sandi Wi-Fi, nomor pengasuh, tautan yang layak disimpan — tersimpan dengan dua ketukan, pribadi secara bawaan, dibagikan kapan pun Anda mau.",
+      "bullets": [
+        "Bagikan tautan dari aplikasi apa pun ke Daili — langsung jadi catatan",
+        "Hanya saya, seluruh keluarga, atau anggota pilihan",
+        "Sematkan, beri tag, dan cari — milik Anda dan yang dibagikan kepada Anda"
+      ],
+      "alt": "Daftar catatan bersama dan pribadi"
     },
     "vault": {
       "eyebrow": "Privat sejak awal",

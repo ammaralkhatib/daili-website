@@ -190,7 +190,8 @@
         "Impegni a colori con categorie, luoghi e note",
         "Ripetizioni fatte bene: calcio ogni martedì, piano una settimana sì e una no",
         "Promemoria su ogni telefono della famiglia",
-        "Festività di 35 Paesi; gli impegni privati restano privati"
+        "Festività di 35 Paesi; gli impegni privati restano privati",
+        "Fotografa l'avviso della scuola — le date finiscono nel calendario"
       ],
       "alt": "Calendario mensile con etichette degli impegni"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Lista delle attività di famiglia con gli incaricati"
     },
+    "habits": {
+      "eyebrow": "Abitudini",
+      "h2": "Piccole abitudini, tutta la famiglia fa il tifo",
+      "p": "Annaffiare le piante, leggere dieci minuti, portare fuori il cane — spunta, tieni viva la serie, e ogni spunta dà a Minzi, la gatta di famiglia, energia per il suo prossimo viaggio.",
+      "bullets": [
+        "Ognuno, insieme o solo per te — con un promemoria quotidiano",
+        "Serie con giorni di riposo e pause, così una vacanza non le interrompe",
+        "Con la barra dell'energia piena Minzi parte in viaggio — e a casa arriva una cartolina"
+      ],
+      "alt": "Schermata delle abitudini di famiglia con le serie e la gatta Minzi"
+    },
     "meals": {
       "eyebrow": "Menu",
       "h2": "La cena, decisa già di domenica",
@@ -222,7 +234,8 @@
       "bullets": [
         "Menu settimanale con quattro pasti al giorno",
         "Ricettario con foto e importazione da link",
-        "Gli ingredienti di una ricetta su qualsiasi lista con un tocco"
+        "Gli ingredienti di una ricetta su qualsiasi lista con un tocco",
+        "A corto di idee? Lascia che Daili suggerisca le cene per le sere libere"
       ],
       "alt": "Menu della settimana"
     },
@@ -232,6 +245,17 @@
       "p": "Compleanni, anniversari e feste di famiglia: ricordati ogni anno, con un conto alla rovescia e promemoria per tutti.",
       "bullets": [],
       "alt": "Schermata dei compleanni e delle ricorrenze"
+    },
+    "notes": {
+      "eyebrow": "Note",
+      "h2": "Note veloci, sempre a portata di mano",
+      "p": "La password del Wi-Fi, il numero della babysitter, un link da non perdere — salvati in due tocchi, privati di default, condivisi quando vuoi.",
+      "bullets": [
+        "Condividi un link da qualsiasi app con Daili — diventa una nota",
+        "Solo io, tutta la famiglia o i membri che scegli",
+        "Fissa, tagga e cerca — le tue note e quelle condivise con te"
+      ],
+      "alt": "Elenco di note condivise e private"
     },
     "vault": {
       "eyebrow": "Privato per scelta",

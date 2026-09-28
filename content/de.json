@@ -190,7 +190,8 @@
         "Farbige Termine mit Kategorien, Orten und Notizen",
         "Wiederholungen, die stimmen — Fußball jeden Dienstag, Klavier alle zwei Wochen",
         "Erinnerungen auf jedem Handy der Familie",
-        "Feiertage für 35 Länder, private Termine bleiben privat"
+        "Feiertage für 35 Länder, private Termine bleiben privat",
+        "Den Elternbrief fotografieren — die Termine landen im Kalender"
       ],
       "alt": "Monatskalender mit Termin-Pillen"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Familien-To-do-Liste mit Zuständigen"
     },
+    "habits": {
+      "eyebrow": "Gewohnheiten",
+      "h2": "Kleine Gewohnheiten, die ganze Familie feuert an",
+      "p": "Blumen gießen, zehn Minuten lesen, mit dem Hund raus — abhaken, die Serie halten, und jeder Haken gibt Minzi, eurer Familienkatze, Energie für ihre nächste Reise.",
+      "bullets": [
+        "Jeder für sich, gemeinsam oder nur für dich — mit täglicher Erinnerung",
+        "Serien mit Ruhetagen und Pausen, damit der Urlaub sie nicht bricht",
+        "Ein voller Energiebalken schickt Minzi auf Reise — und eine Postkarte kommt nach Hause"
+      ],
+      "alt": "Gewohnheiten der Familie mit Serien und Minzi, der Katze"
+    },
     "meals": {
       "eyebrow": "Mahlzeiten",
       "h2": "Abendessen — schon am Sonntag entschieden",
@@ -222,7 +234,8 @@
       "bullets": [
         "Wochenplan mit vier Mahlzeiten pro Tag",
         "Rezeptbox mit Fotos und Import per Link",
-        "Zutaten mit einem Tipp auf jede Liste"
+        "Zutaten mit einem Tipp auf jede Liste",
+        "Keine Idee? Daili schlägt Abendessen für die freien Abende vor"
       ],
       "alt": "Wochen-Essensplan"
     },
@@ -232,6 +245,17 @@
       "p": "Geburtstage, Jahrestage und Familienfeste — jedes Jahr automatisch da, mit Countdown und Erinnerungen für alle.",
       "bullets": [],
       "alt": "Geburtstage und Feste"
+    },
+    "notes": {
+      "eyebrow": "Notizen",
+      "h2": "Schnelle Notizen, genau am richtigen Ort",
+      "p": "Das WLAN-Passwort, die Nummer der Babysitterin, ein Link, der bleiben soll — in zwei Tipps gespeichert, standardmäßig privat, geteilt, wenn ihr wollt.",
+      "bullets": [
+        "Einen Link aus jeder App mit Daili teilen — schon ist er eine Notiz",
+        "Nur ich, die ganze Familie oder ausgewählte Mitglieder",
+        "Anheften, taggen, suchen — eigene und geteilte Notizen"
+      ],
+      "alt": "Notizliste mit geteilten und privaten Notizen"
     },
     "vault": {
       "eyebrow": "Privat gedacht",

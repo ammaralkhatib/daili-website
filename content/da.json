@@ -190,7 +190,8 @@
         "Aftaler med farver, kategorier, steder og noter",
         "Gentagelser, der passer — fodbold hver tirsdag, klaver hver anden uge",
         "Påmindelser på hver telefon i familien",
-        "Helligdage for 35 lande; private aftaler bliver private"
+        "Helligdage for 35 lande; private aftaler bliver private",
+        "Tag et billede af et brev fra skolen — datoerne lander i kalenderen"
       ],
       "alt": "Månedskalender med farvede aftaler"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Familiens opgaveliste med ansvarlige"
     },
+    "habits": {
+      "eyebrow": "Vaner",
+      "h2": "Små vaner, hele familien hepper",
+      "p": "Vande blomsterne, læse i ti minutter, gå tur med hunden — sæt flueben, hold stimen i live, og hvert flueben giver Minzi, jeres familiekat, energi til næste rejse.",
+      "bullets": [
+        "Hver for sig, sammen eller kun for dig — med en daglig påmindelse",
+        "Stimer med hviledage og pauser, så en ferie ikke bryder dem",
+        "En fuld energibjælke sender Minzi ud at rejse — og et postkort kommer hjem"
+      ],
+      "alt": "Familiens vaner med stimer og katten Minzi"
+    },
     "meals": {
       "eyebrow": "Madplan",
       "h2": "Aftensmaden, besluttet allerede søndag",
@@ -222,7 +234,8 @@
       "bullets": [
         "Madplan for ugen med fire måltider om dagen",
         "Opskrifter med billeder og import via link",
-        "En opskrifts ingredienser på en hvilken som helst liste med ét tryk"
+        "En opskrifts ingredienser på en hvilken som helst liste med ét tryk",
+        "Løbet tør for idéer? Lad Daili foreslå aftensmad til de ledige aftener"
       ],
       "alt": "Madplan for ugen"
     },
@@ -232,6 +245,17 @@
       "p": "Fødselsdage, mærkedage og familiefester — husket hvert år, med nedtælling og påmindelser til alle.",
       "bullets": [],
       "alt": "Skærmen med fødselsdage og fester"
+    },
+    "notes": {
+      "eyebrow": "Noter",
+      "h2": "Hurtige noter, lige ved hånden",
+      "p": "Wi-fi-koden, babysitterens nummer, et link, der er værd at gemme — gemt med to tryk, privat som standard, delt når du vil.",
+      "bullets": [
+        "Del et link fra en hvilken som helst app til Daili — så bliver det en note",
+        "Kun mig, hele familien eller udvalgte medlemmer",
+        "Fastgør, mærk og søg — dine egne og dem, der er delt med dig"
+      ],
+      "alt": "Liste med delte og private noter"
     },
     "vault": {
       "eyebrow": "Privat fra starten",

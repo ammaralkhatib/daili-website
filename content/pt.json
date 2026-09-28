@@ -190,7 +190,8 @@
         "Compromissos coloridos com categorias, locais e observações",
         "Repetições bem feitas — futebol toda terça, piano a cada duas semanas",
         "Lembretes em todos os celulares da família",
-        "Feriados de 35 países; compromissos particulares continuam particulares"
+        "Feriados de 35 países; compromissos particulares continuam particulares",
+        "Fotografe o bilhete da escola — as datas vão para o calendário"
       ],
       "alt": "Calendário mensal com etiquetas de compromissos"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Lista de tarefas da família com os responsáveis"
     },
+    "habits": {
+      "eyebrow": "Hábitos",
+      "h2": "Pequenos hábitos, a família toda torcendo",
+      "p": "Regar as plantas, ler dez minutos, passear com o cachorro — marque, mantenha a sequência, e cada marcação dá ao Minzi, o gato da família, energia para a próxima viagem.",
+      "bullets": [
+        "De cada um, juntos ou só seu — com um lembrete diário",
+        "Sequências com dias de descanso e pausas, para as férias não quebrarem",
+        "Com a barra de energia cheia, o Minzi sai de viagem — e um cartão-postal chega em casa"
+      ],
+      "alt": "Tela de hábitos da família com sequências e o gato Minzi"
+    },
     "meals": {
       "eyebrow": "Cardápio",
       "h2": "O jantar, decidido já no domingo",
@@ -222,7 +234,8 @@
       "bullets": [
         "Cardápio semanal com quatro refeições por dia",
         "Livro de receitas com fotos e importação por link",
-        "Os ingredientes de uma receita em qualquer lista com um toque"
+        "Os ingredientes de uma receita em qualquer lista com um toque",
+        "Sem ideias? Deixe o Daili sugerir jantares para as noites livres"
       ],
       "alt": "Cardápio da semana"
     },
@@ -232,6 +245,17 @@
       "p": "Aniversários, datas especiais e festas de família — lembrados todo ano, com contagem regressiva e avisos para todo mundo.",
       "bullets": [],
       "alt": "Tela de aniversários e comemorações"
+    },
+    "notes": {
+      "eyebrow": "Notas",
+      "h2": "Notas rápidas, sempre à mão",
+      "p": "A senha do Wi-Fi, o número da babá, um link que vale guardar — salvos em dois toques, privados por padrão, compartilhados quando você quiser.",
+      "bullets": [
+        "Compartilhe um link de qualquer app com o Daili — ele vira uma nota",
+        "Só eu, a família toda ou membros escolhidos",
+        "Fixe, marque e pesquise — as suas notas e as compartilhadas com você"
+      ],
+      "alt": "Lista de notas compartilhadas e privadas"
     },
     "vault": {
       "eyebrow": "Particular por opção",

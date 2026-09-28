@@ -214,7 +214,8 @@
         "Color-coded events with categories, locations and notes",
         "Repeating events done right — soccer every Tuesday, piano every other week",
         "Reminders on every phone in the family",
-        "Public holidays for 35 countries, private events stay private"
+        "Public holidays for 35 countries, private events stay private",
+        "Photograph a letter from school — the dates land in the calendar"
       ],
       "alt": "Month calendar with event pills"
     },
@@ -239,6 +240,17 @@
       ],
       "alt": "Family to-do list with assignees"
     },
+    "habits": {
+      "eyebrow": "Habits",
+      "h2": "Small habits, the whole family cheers",
+      "p": "Water the plants, read ten minutes, walk the dog — tick it off, keep the streak, and every tick gives Minzi, your family cat, energy for her next trip.",
+      "bullets": [
+        "Each, together or just for you — with a daily reminder",
+        "Streaks with rest days and pauses, so a holiday doesn't break them",
+        "A full energy bar sends Minzi on a trip — and a postcard comes home"
+      ],
+      "alt": "Family habits screen with streaks and Minzi the cat"
+    },
     "meals": {
       "eyebrow": "Meals",
       "h2": "Dinner, decided by Sunday",
@@ -246,7 +258,8 @@
       "bullets": [
         "Weekly meal plan with four slots per day",
         "Recipe box with photos and URL import",
-        "Add a recipe's ingredients to any list in one tap"
+        "Add a recipe's ingredients to any list in one tap",
+        "Out of ideas? Let Daili suggest dinners for the open evenings"
       ],
       "alt": "Weekly meal plan"
     },
@@ -256,6 +269,17 @@
       "p": "Birthdays, anniversaries and family celebrations — remembered every year, with a countdown and reminders for everyone.",
       "bullets": [],
       "alt": "Birthdays and celebrations screen"
+    },
+    "notes": {
+      "eyebrow": "Notes",
+      "h2": "Quick notes, in the right pocket",
+      "p": "The Wi-Fi password, the babysitter's number, a link worth keeping — saved in two taps, private by default, shared when you want.",
+      "bullets": [
+        "Share a link from any app to Daili — it becomes a note",
+        "Only me, the whole family, or picked members",
+        "Pin, tag and search — yours and the ones shared with you"
+      ],
+      "alt": "Notes list with shared and private notes"
     },
     "vault": {
       "eyebrow": "Private by design",

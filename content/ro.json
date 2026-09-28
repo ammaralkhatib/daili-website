@@ -190,7 +190,8 @@
         "Evenimente colorate, cu categorii, locuri și notițe",
         "Repetări făcute cum trebuie — fotbal în fiecare marți, pian o dată la două săptămâni",
         "Memento-uri pe fiecare telefon din familie",
-        "Sărbători legale pentru 35 de țări, evenimentele private rămân private"
+        "Sărbători legale pentru 35 de țări, evenimentele private rămân private",
+        "Fotografiază un anunț de la școală — datele ajung în calendar"
       ],
       "alt": "Calendar lunar cu etichete de evenimente"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Listă de sarcini a familiei, cu responsabili"
     },
+    "habits": {
+      "eyebrow": "Obiceiuri",
+      "h2": "Obiceiuri mici, toată familia aplaudă",
+      "p": "Uditul florilor, zece minute de citit, plimbarea câinelui — bifează, păstrează seria, iar fiecare bifă îi dă lui Minzi, pisica familiei, energie pentru următoarea călătorie.",
+      "bullets": [
+        "Fiecare, împreună sau doar pentru tine — cu un memento zilnic",
+        "Serii cu zile de pauză și pauze de câteva zile, ca vacanța să nu le rupă",
+        "Cu bara de energie plină, Minzi pleacă în călătorie — și acasă sosește o carte poștală"
+      ],
+      "alt": "Ecranul obiceiurilor familiei, cu serii și pisica Minzi"
+    },
     "meals": {
       "eyebrow": "Meniu",
       "h2": "Cina, decisă încă de duminică",
@@ -222,7 +234,8 @@
       "bullets": [
         "Meniu săptămânal cu patru mese pe zi",
         "Colecție de rețete cu poze și import după link",
-        "Ingredientele unei rețete pe orice listă, dintr-o atingere"
+        "Ingredientele unei rețete pe orice listă, dintr-o atingere",
+        "Fără idei? Lasă-l pe Daili să propună cine pentru serile libere"
       ],
       "alt": "Meniu săptămânal"
     },
@@ -232,6 +245,17 @@
       "p": "Zile de naștere, aniversări și sărbători de familie — reținute în fiecare an, cu numărătoare inversă și memento-uri pentru toți.",
       "bullets": [],
       "alt": "Ecran cu zile de naștere și sărbători"
+    },
+    "notes": {
+      "eyebrow": "Notițe",
+      "h2": "Notițe rapide, mereu la îndemână",
+      "p": "Parola de Wi-Fi, numărul bonei, un link care merită păstrat — salvate din două atingeri, private implicit, partajate când vrei.",
+      "bullets": [
+        "Partajează un link din orice aplicație în Daili — devine o notiță",
+        "Doar eu, toată familia sau membri aleși",
+        "Fixează, etichetează și caută — ale tale și cele partajate cu tine"
+      ],
+      "alt": "Listă de notițe partajate și private"
     },
     "vault": {
       "eyebrow": "Privat din construcție",

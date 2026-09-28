@@ -190,7 +190,8 @@
         "Avtaler med farger, kategorier, steder og notater",
         "Gjentakelser som stemmer — fotball hver tirsdag, piano annenhver uke",
         "Påminnelser på hver telefon i familien",
-        "Helligdager for 35 land; private avtaler forblir private"
+        "Helligdager for 35 land; private avtaler forblir private",
+        "Ta bilde av et brev fra skolen — datoene havner i kalenderen"
       ],
       "alt": "Månedskalender med fargede avtaler"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Familiens oppgaveliste med ansvarlige"
     },
+    "habits": {
+      "eyebrow": "Vaner",
+      "h2": "Små vaner, hele familien heier",
+      "p": "Vanne blomstene, lese i ti minutter, lufte hunden — hak av, hold rekken i live, og hver avhaking gir Minzi, familiekatten deres, energi til neste tur.",
+      "bullets": [
+        "Hver for seg, sammen eller bare for deg — med en daglig påminnelse",
+        "Rekker med hviledager og pauser, så en ferie ikke bryter dem",
+        "En full energilinje sender Minzi på tur — og et postkort kommer hjem"
+      ],
+      "alt": "Familiens vaner med rekker og katten Minzi"
+    },
     "meals": {
       "eyebrow": "Matplan",
       "h2": "Middagen, bestemt allerede på søndag",
@@ -222,7 +234,8 @@
       "bullets": [
         "Matplan for uka med fire måltider om dagen",
         "Oppskrifter med bilder og import via lenke",
-        "Ingrediensene i en oppskrift på hvilken som helst liste med ett trykk"
+        "Ingrediensene i en oppskrift på hvilken som helst liste med ett trykk",
+        "Tom for idéer? La Daili foreslå middager til de ledige kveldene"
       ],
       "alt": "Matplan for uka"
     },
@@ -232,6 +245,17 @@
       "p": "Bursdager, merkedager og familiefester — husket hvert år, med nedtelling og påminnelser til alle.",
       "bullets": [],
       "alt": "Skjermen med bursdager og feiringer"
+    },
+    "notes": {
+      "eyebrow": "Notater",
+      "h2": "Raske notater, alltid for hånden",
+      "p": "Wi-Fi-passordet, barnevaktens nummer, en lenke verdt å ta vare på — lagret med to trykk, privat som standard, delt når du vil.",
+      "bullets": [
+        "Del en lenke fra hvilken som helst app til Daili — den blir et notat",
+        "Bare meg, hele familien eller utvalgte medlemmer",
+        "Fest, merk og søk — dine egne og de som er delt med deg"
+      ],
+      "alt": "Notatliste med delte og private notater"
     },
     "vault": {
       "eyebrow": "Privat fra starten",

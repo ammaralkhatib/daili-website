@@ -190,7 +190,8 @@
         "Afspraken met kleur, categorie, locatie en notities",
         "Herhalingen die kloppen — voetbal elke dinsdag, piano om de week",
         "Herinneringen op elke telefoon in het gezin",
-        "Feestdagen van 35 landen; privé-afspraken blijven privé"
+        "Feestdagen van 35 landen; privé-afspraken blijven privé",
+        "Fotografeer een brief van school — de data komen in de agenda"
       ],
       "alt": "Maandagenda met gekleurde afspraken"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Takenlijst van het gezin met wie wat doet"
     },
+    "habits": {
+      "eyebrow": "Gewoontes",
+      "h2": "Kleine gewoontes, het hele gezin juicht",
+      "p": "Planten water geven, tien minuten lezen, de hond uitlaten — vink het af, houd je reeks vast, en elk vinkje geeft Minzi, jullie gezinskat, energie voor haar volgende reis.",
+      "bullets": [
+        "Ieder voor zich, samen of alleen voor jou — met een dagelijkse herinnering",
+        "Reeksen met rustdagen en pauzes, zodat een vakantie ze niet breekt",
+        "Een volle energiebalk stuurt Minzi op reis — en er komt een ansichtkaart thuis"
+      ],
+      "alt": "Gewoontescherm van het gezin met reeksen en Minzi de kat"
+    },
     "meals": {
       "eyebrow": "Menu",
       "h2": "Het avondeten, zondag al beslist",
@@ -222,7 +234,8 @@
       "bullets": [
         "Weekmenu met vier maaltijden per dag",
         "Receptenboek met foto's en importeren via een link",
-        "De ingrediënten van een recept met één tik op elke lijst"
+        "De ingrediënten van een recept met één tik op elke lijst",
+        "Geen inspiratie? Laat Daili avondeten voorstellen voor de vrije avonden"
       ],
       "alt": "Weekmenu"
     },
@@ -232,6 +245,17 @@
       "p": "Verjaardagen, jubilea en familiefeesten — elk jaar onthouden, met een aftelling en herinneringen voor iedereen.",
       "bullets": [],
       "alt": "Scherm met verjaardagen en feesten"
+    },
+    "notes": {
+      "eyebrow": "Notities",
+      "h2": "Snelle notities, altijd bij de hand",
+      "p": "Het wifi-wachtwoord, het nummer van de oppas, een link die je wilt bewaren — in twee tikken opgeslagen, standaard privé, gedeeld wanneer je wilt.",
+      "bullets": [
+        "Deel een link vanuit elke app met Daili — het wordt een notitie",
+        "Alleen ik, het hele gezin of gekozen leden",
+        "Vastpinnen, taggen en zoeken — je eigen notities en die met jou gedeeld"
+      ],
+      "alt": "Notitielijst met gedeelde en privénotities"
     },
     "vault": {
       "eyebrow": "Privé van opzet",

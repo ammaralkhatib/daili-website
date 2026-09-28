@@ -190,7 +190,8 @@
         "Färgsatta händelser med kategorier, platser och anteckningar",
         "Upprepningar som stämmer — fotboll varje tisdag, piano varannan vecka",
         "Påminnelser i varje telefon i familjen",
-        "Helgdagar för 35 länder; privata händelser förblir privata"
+        "Helgdagar för 35 länder; privata händelser förblir privata",
+        "Fotografera ett brev från skolan — datumen hamnar i kalendern"
       ],
       "alt": "Månadskalender med färgade händelser"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Familjens uppgiftslista med ansvariga"
     },
+    "habits": {
+      "eyebrow": "Vanor",
+      "h2": "Små vanor, hela familjen hejar",
+      "p": "Vattna blommorna, läsa i tio minuter, gå ut med hunden — bocka av, håll sviten vid liv, och varje bock ger Minzi, er familjekatt, energi till nästa resa.",
+      "bullets": [
+        "Var och en, tillsammans eller bara för dig — med en daglig påminnelse",
+        "Sviter med vilodagar och pauser, så att en semester inte bryter dem",
+        "En full energimätare skickar ut Minzi på resa — och ett vykort kommer hem"
+      ],
+      "alt": "Familjens vanor med sviter och katten Minzi"
+    },
     "meals": {
       "eyebrow": "Matsedel",
       "h2": "Middagen, bestämd redan på söndagen",
@@ -222,7 +234,8 @@
       "bullets": [
         "Matsedel för veckan med fyra måltider per dag",
         "Receptsamling med foton och import via länk",
-        "Ett recepts ingredienser till vilken lista som helst med en tryckning"
+        "Ett recepts ingredienser till vilken lista som helst med en tryckning",
+        "Idétorka? Låt Daili föreslå middagar för de lediga kvällarna"
       ],
       "alt": "Matsedel för veckan"
     },
@@ -232,6 +245,17 @@
       "p": "Födelsedagar, bemärkelsedagar och familjefester — ihågkomna varje år, med nedräkning och påminnelser till alla.",
       "bullets": [],
       "alt": "Skärmen med födelsedagar och fester"
+    },
+    "notes": {
+      "eyebrow": "Anteckningar",
+      "h2": "Snabba anteckningar, alltid nära till hands",
+      "p": "Wifi-lösenordet, barnvaktens nummer, en länk värd att spara — sparat med två tryck, privat som standard, delat när du vill.",
+      "bullets": [
+        "Dela en länk från valfri app till Daili — den blir en anteckning",
+        "Bara jag, hela familjen eller valda medlemmar",
+        "Fäst, tagga och sök — dina egna och de som delats med dig"
+      ],
+      "alt": "Anteckningslista med delade och privata anteckningar"
     },
     "vault": {
       "eyebrow": "Privat från början",

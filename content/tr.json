@@ -190,7 +190,8 @@
         "Kategorileri, yerleri ve notlarıyla renkli etkinlikler",
         "Doğru düzgün tekrarlar — her salı futbol, iki haftada bir piyano",
         "Ailedeki her telefonda hatırlatmalar",
-        "35 ülkenin resmî tatilleri; özel etkinlikler özel kalır"
+        "35 ülkenin resmî tatilleri; özel etkinlikler özel kalır",
+        "Okuldan gelen mektubu fotoğraflayın — tarihler takvime düşsün"
       ],
       "alt": "Renkli etkinlikleriyle aylık takvim"
     },
@@ -215,6 +216,17 @@
       ],
       "alt": "Sorumlularıyla birlikte aile görev listesi"
     },
+    "habits": {
+      "eyebrow": "Alışkanlıklar",
+      "h2": "Küçük alışkanlıklar, bütün aile destekte",
+      "p": "Çiçekleri sulamak, on dakika okumak, köpeği gezdirmek — işaretleyin, serinizi koruyun; her işaret ailenizin kedisi Minzi'ye bir sonraki gezisi için enerji verir.",
+      "bullets": [
+        "Herkes kendi, birlikte ya da sadece sizin için — günlük hatırlatıcıyla",
+        "Mola günleri ve aralarla seriler; tatil seriyi bozmaz",
+        "Enerji çubuğu dolunca Minzi geziye çıkar — eve de bir kartpostal gelir"
+      ],
+      "alt": "Seriler ve kedi Minzi ile ailenin alışkanlıklar ekranı"
+    },
     "meals": {
       "eyebrow": "Yemek planı",
       "h2": "Akşam yemeği daha pazar günü belli",
@@ -222,7 +234,8 @@
       "bullets": [
         "Günde dört öğünlük haftalık yemek planı",
         "Fotoğraflı tarif defteri ve bağlantıyla içe aktarma",
-        "Bir tarifin malzemeleri tek dokunuşla istediğiniz listeye"
+        "Bir tarifin malzemeleri tek dokunuşla istediğiniz listeye",
+        "Fikir mi kalmadı? Boş akşamlar için akşam yemeğini Daili önersin"
       ],
       "alt": "Haftalık yemek planı"
     },
@@ -232,6 +245,17 @@
       "p": "Doğum günleri, yıl dönümleri ve aile kutlamaları — her yıl hatırlanır, geri sayımla ve herkese hatırlatmayla.",
       "bullets": [],
       "alt": "Doğum günleri ve kutlamalar ekranı"
+    },
+    "notes": {
+      "eyebrow": "Notlar",
+      "h2": "Hızlı notlar, hep elinizin altında",
+      "p": "Wi-Fi şifresi, bebek bakıcısının numarası, saklamaya değer bir bağlantı — iki dokunuşta kaydedilir, varsayılan olarak özeldir, istediğinizde paylaşılır.",
+      "bullets": [
+        "Herhangi bir uygulamadan Daili'ye bağlantı paylaşın — not olur",
+        "Sadece ben, tüm aile ya da seçilen üyeler",
+        "Sabitleyin, etiketleyin, arayın — kendi notlarınız ve sizinle paylaşılanlar"
+      ],
+      "alt": "Paylaşılan ve özel notların listesi"
     },
     "vault": {
       "eyebrow": "Tasarımı gereği özel",

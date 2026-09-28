@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -594,12 +594,16 @@ for (const f of htmlFiles) {
 // in SHOT_LOCALE that points ja at a folder of German screenshots would ship.
 //
 // shot-recipes, shot-photos and shot-documents are English everywhere (no demo
-// capture exists yet), which is why the first half asks for "at least one".
+// capture exists yet). Every name in SHOT_SOURCES (nine since 005: home plus
+// eight story screens) must come from the locale's own folder — one missing
+// file would otherwise fall back to English without a word.
+const OWN_SHOTS = Object.values(SHOT_SOURCES);
 for (const loc of LOCALES) {
   const file = path.join(DIST, dirFor(loc).slice(1), 'index.html');
   if (!fs.existsSync(file)) continue;            // section 1 already reported it
   const out = rel(file);
-  const dirs = new Set([...read(file).matchAll(/\/assets\/img\/shots\/([\w-]+)\//g)].map((m) => m[1]));
+  const html = read(file);
+  const dirs = new Set([...html.matchAll(/\/assets\/img\/shots\/([\w-]+)\//g)].map((m) => m[1]));
   if (!dirs.size) { fail(out, 'references no /assets/img/shots/ file — the screenshots vanished'); continue; }
   const own = loc in SHOT_LOCALE;
   const stray = [...dirs].filter((d) => d !== DEFAULT_LOCALE && d !== (own ? loc : null));
@@ -608,6 +612,12 @@ for (const loc of LOCALES) {
   }
   if (own && !dirs.has(loc)) {
     fail(out, `SHOT_LOCALE maps ${loc} to '${SHOT_LOCALE[loc]}' but the page uses no shots/${loc}/ file — the set was never generated, or the resolver fell back silently`);
+  } else if (own) {
+    const mine = new Set([...html.matchAll(new RegExp(`/assets/img/shots/${loc}/([\\w-]+)\\.webp`, 'g'))].map((m) => m[1]));
+    const missing = OWN_SHOTS.filter((n) => !mine.has(n));
+    if (missing.length) {
+      fail(out, `uses ${OWN_SHOTS.length - missing.length} of the ${OWN_SHOTS.length} own screenshots SHOT_SOURCES promises — ${missing.join(', ')} fell back to shots/${DEFAULT_LOCALE}/ (re-run tools/make-site-shots.py ${loc})`);
+    }
   }
 }
 
