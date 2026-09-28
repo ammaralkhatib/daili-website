@@ -9,7 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { LOCALES, DEFAULT_LOCALE, FEATURES, BRAND_TRANSLITERATIONS, FORBIDDEN_STRINGS } from '../site.config.mjs';
+import { LOCALES, DEFAULT_LOCALE, BRAND_TRANSLITERATIONS, FORBIDDEN_STRINGS } from '../site.config.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const errors = [];
@@ -32,7 +32,7 @@ const RATIO = {
 };
 const bandFor = (loc) => RATIO[loc] || [0.70, 2.00];
 
-/** Flatten to dotted paths so error messages read features.calendar.bullets[2]. */
+/** Flatten to dotted paths so error messages read home.day.cards[2].p. */
 function flatten(obj, prefix = '', out = {}) {
   for (const [k, v] of Object.entries(obj)) {
     if (k.startsWith('@')) continue; // metadata is English-only by design
@@ -74,14 +74,6 @@ for (const loc of LOCALES) {
   // @@locale must match the filename, or a file gets edited believing it is another language
   if (data['@@locale'] !== loc) err(loc, '@@locale', `is "${data['@@locale']}", expected "${loc}"`);
   if (!['ltr', 'rtl'].includes(data['@@dir'])) err(loc, '@@dir', `must be "ltr" or "rtl", got "${data['@@dir']}"`);
-
-  // every feature in FEATURES needs content, and no orphans
-  for (const f of FEATURES) {
-    if (!data.features || !(f.key in data.features)) err(loc, `features.${f.key}`, 'missing — required by FEATURES in site.config.mjs');
-  }
-  for (const k of Object.keys(data.features || {})) {
-    if (!FEATURES.some((f) => f.key === k)) err(loc, `features.${k}`, 'orphan — not in FEATURES in site.config.mjs');
-  }
 
   if (loc === DEFAULT_LOCALE) continue;
   const flat = flatten(data);

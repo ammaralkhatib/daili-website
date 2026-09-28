@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, FEATURES, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -594,9 +594,10 @@ for (const f of htmlFiles) {
 // in SHOT_LOCALE that points ja at a folder of German screenshots would ship.
 //
 // shot-recipes, shot-photos and shot-documents are English everywhere (no demo
-// capture exists yet). Every name in SHOT_SOURCES (nine since 005: home plus
-// eight story screens) must come from the locale's own folder — one missing
-// file would otherwise fall back to English without a word.
+// capture exists yet). Every SHOT_SOURCES screen the page shows must come from
+// the locale's own folder — one missing file would otherwise fall back to
+// English without a word. (Since the 2026-09-28 home page not every one of the
+// nine is on the page: shot-family is not.)
 const OWN_SHOTS = Object.values(SHOT_SOURCES);
 for (const loc of LOCALES) {
   const file = path.join(DIST, dirFor(loc).slice(1), 'index.html');
@@ -614,64 +615,50 @@ for (const loc of LOCALES) {
     fail(out, `SHOT_LOCALE maps ${loc} to '${SHOT_LOCALE[loc]}' but the page uses no shots/${loc}/ file — the set was never generated, or the resolver fell back silently`);
   } else if (own) {
     const mine = new Set([...html.matchAll(new RegExp(`/assets/img/shots/${loc}/([\\w-]+)\\.webp`, 'g'))].map((m) => m[1]));
-    const missing = OWN_SHOTS.filter((n) => !mine.has(n));
+    const shown = OWN_SHOTS.filter((n) => html.includes(`/${n}.webp`));
+    const missing = shown.filter((n) => !mine.has(n));
     if (missing.length) {
-      fail(out, `uses ${OWN_SHOTS.length - missing.length} of the ${OWN_SHOTS.length} own screenshots SHOT_SOURCES promises — ${missing.join(', ')} fell back to shots/${DEFAULT_LOCALE}/ (re-run tools/make-site-shots.py ${loc})`);
+      fail(out, `uses ${shown.length - missing.length} of the ${shown.length} own screenshots it shows — ${missing.join(', ')} fell back to shots/${DEFAULT_LOCALE}/ (re-run tools/make-site-shots.py ${loc})`);
     }
   }
 }
 
 // --- 15. the landing page is the page the mock describes --------------------
-// The home page is Design B (claude-prompts/2026-09-27/design-b-mock.html):
-// nine blocks in a fixed order, several of them assembled from lists that must
-// stay in step. Nothing else in the pipeline notices if they fall out of step:
-// a story with seven chapters and six screens still validates, still carries
-// every content key and still builds clean in all 28 locales — the phone simply
-// shows the wrong screen from chapter three onwards.
-//
-// So the shape is asserted here, on all 28 built pages:
-//   - the nine blocks exist, in the mock's order;
-//   - the story has exactly FEATURES.length chapters, as many stacked screens,
-//     as many per-chapter phone copies (.mshot) and as many progress dots, and
-//     no floating-card layer (the cards live in the showcase now);
-//   - the showcase has its visually hidden heading, exactly three cards and one
-//     video; the life slide has one video. Each video is data-autoplay with a
-//     poster under /assets/video/ and NO autoplay attribute — script.js alone
-//     decides when one plays, so a phone never downloads 300 KB it cannot see.
-//     Both posters and both .mp4 files exist in dist/, each .mp4 under 2.6 MB;
-//   - the web slide actually links to the web app (looked for INSIDE the
-//     slide: the header, the hero and a FAQ answer mention it too);
-//   - the footer is inside the last slide. With `scroll-snap-type: y mandatory`
-//     a footer after </main> is a snap target that cannot be reached;
-//   - nothing is left of the bento grid or of the per-chapter colour swaps;
-//   - no .story rule in style.css uppercases: text-transform breaks Turkish
-//     and Greek casing and does nothing for CJK (the chapter numbers are set
-//     in the display face instead);
-//   - round 2: no pill above the hero headline and three note pills under
-//     it, the bare wordmark on the slab, no points row on the price slide,
-//     and exactly four two-step slides (web, how, compare, pricing) with one
-//     .snap2 each and none on the FAQ;
-//   - 006: every .by in a two-step slide is finished by --p .85 (--a + --w ≤
-//     .85), so the settled second stop is never half-faded. The timing is the
-//     inline style, else the class's rule in style.css (.colN, the
-//     .step:nth-child(n) start times), else the .by default; and the compare
-//     lead sits under the h2 inside the title block, not in a second column.
+// The home page is the Bevel-style page (claude-prompts/2026-09-28/bevel-mock/
+// index.html). Several of its blocks are lists built from content and from
+// site.config.mjs that must stay in step, and nothing else in the pipeline
+// notices when one falls out: a hero with six cards still validates and still
+// builds clean in all 28 locales. So the shape is asserted on every built
+// landing page:
+//   - the sections, in order: #hero, #features, .day, #plus, #workflows,
+//     #screens, #privacy, .care, (#reviews only with REVIEWS.length >= 3),
+//     #get, #faq — and the footer after </main>;
+//   - 7 hero cards, 8 member photo cards (the loop's copy is aria-hidden and
+//     not counted), 4 workflow buttons / screens / toasts, 3 Daili Plus cards;
+//   - the member number, formatted for the page's locale, and no {count}
+//     anywhere in dist/;
+//   - with fewer than 3 REVIEWS no reviews section at all, and never the
+//     mock's "Placeholder" / "Sample name" anywhere in dist/;
+//   - the three vendor scripts and home.js on the landing pages and on no
+//     other page; every /assets/img/home/ file referenced exists, ≤ 120 KB;
+//   - no cloudfront.net and no http(s):// image or script source in any page.
 {
   const landing = PAGES.find((pg) => pg.id === 'landing');
   const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
-  // In DOM order, as the mock lays them out.
-  const BLOCKS = [
-    ['hero', 'class="hero"'],
-    ['showcase', 'id="showcase"'],
-    ['story', 'class="story"'],
-    ['life', 'id="life"'],
-    ['web app', 'id="web"'],
-    ['steps', 'id="how"'],
-    ['comparison', 'id="compare"'],
-    ['pricing', 'id="pricing"'],
+  const withReviews = REVIEWS.length >= 3;
+  const SECTIONS = [
+    ['hero', '<section class="hero" id="hero"'],
+    ['members', 'id="features"'],
+    ['day', '<section class="day"'],
+    ['Daili Plus', 'id="plus"'],
+    ['workflows', 'id="workflows"'],
+    ['screens', 'id="screens"'],
+    ['privacy', 'id="privacy"'],
+    ['care', '<section class="care"'],
+    ...(withReviews ? [['reviews', 'id="reviews"']] : []),
+    ['get', 'id="get"'],
     ['faq', 'id="faq"'],
   ];
-  const VIDEO_MAX = 2.6 * 1024 * 1024;
   const count = (s, needle) => s.split(needle).length - 1;
   // The section that opens at `needle`, up to its own </section> (none nest).
   const sectionAt = (html, needle) => {
@@ -679,62 +666,11 @@ for (const loc of LOCALES) {
     if (from === -1) return '';
     return html.slice(from, html.indexOf('</section>', from));
   };
-  // A slide's <video> tags must be exactly one, data-autoplay, poster under
-  // /assets/video/, and never autoplay.
-  const checkVideo = (out, name, part) => {
-    const tags = part.match(/<video\b[^>]*>/g) || [];
-    if (tags.length !== 1) { fail(out, `the ${name} slide has ${tags.length} <video> elements, expected 1`); return; }
-    const tag = tags[0];
-    if (!/\sdata-autoplay\b/.test(tag)) fail(out, `the ${name} video has no data-autoplay — script.js will never start it`);
-    if (/\sautoplay\b/.test(tag.replace(/data-autoplay/g, ''))) fail(out, `the ${name} video carries an autoplay attribute — only script.js may start it (phones and reduced motion get the poster)`);
-    if (!/\sposter="\/assets\/video\/[^"]+"/.test(tag)) fail(out, `the ${name} video has no poster under /assets/video/`);
-  };
+  const VENDOR = ['/assets/vendor/gsap.min.js', '/assets/vendor/ScrollTrigger.min.js', '/assets/vendor/lenis.min.js'];
+  const HOME_JS = /<script src="\/assets\/home\.[0-9a-f]{8}\.js" defer><\/script>/;
+  const IMG_MAX = 120 * 1024;
 
-  for (const f of ['showcase', 'life']) {
-    for (const ext of ['mp4', 'webp']) {
-      const file = path.join(DIST, 'assets', 'video', `${f}.${ext}`);
-      if (!fs.existsSync(file)) { fail(`assets/video/${f}.${ext}`, 'is missing from dist/ — the landing page points at it'); continue; }
-      if (ext === 'mp4' && fs.statSync(file).size >= VIDEO_MAX) {
-        fail(`assets/video/${f}.${ext}`, `is ${(fs.statSync(file).size / 1048576).toFixed(2)} MB — the budget is under 2.6 MB; re-encode with a higher -crf`);
-      }
-    }
-  }
-
-  // The casing trap: any rule in style.css whose selector starts with .story
-  // must not set text-transform.
-  const css = read(path.join(ROOT, 'static', 'assets', 'style.css')).replace(/\/\*[\s\S]*?\*\//g, '');
-  for (const m of css.matchAll(/(^|[}\s])(\.story[^{}]*)\{([^{}]*)\}/g)) {
-    if (/text-transform/.test(m[3])) fail('assets/style.css', `the rule '${m[2].trim()}' sets text-transform — it breaks Turkish/Greek casing in the story`);
-  }
-
-  // --a / --w as style.css sets them per selector (a later rule wins), for the
-  // reveals whose timing lives in a class rather than an inline style.
-  const cssTiming = new Map();
-  for (const m of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
-    for (const sel of m[1].split(',').map((s) => s.trim())) {
-      const t = { ...(cssTiming.get(sel) || {}) };
-      for (const d of m[2].matchAll(/--([aw])\s*:\s*([\d.]+)/g)) t[d[1]] = parseFloat(d[2]);
-      if (t.a !== undefined || t.w !== undefined) cssTiming.set(sel, t);
-    }
-  }
-  const BY_END = 0.85;
-  // Every .by tag in a two-step slide, with where it ends.
-  const reveals = (part) => {
-    const found = [];
-    let step = 0;
-    for (const m of part.matchAll(/<[a-z][a-z0-9]*\b[^>]*\bclass="([^"]*)"[^>]*>/g)) {
-      const classes = m[1].split(/\s+/);
-      if (!classes.includes('by')) continue;
-      const t = { ...cssTiming.get('.by') };
-      for (const c of classes) Object.assign(t, cssTiming.get(`.${c}`));
-      if (classes.includes('step')) Object.assign(t, cssTiming.get(`.step:nth-child(${++step})`));
-      const style = (m[0].match(/\sstyle="([^"]*)"/) || [, ''])[1];
-      for (const d of style.matchAll(/--([aw])\s*:\s*([\d.]+)/g)) t[d[1]] = parseFloat(d[2]);
-      found.push({ tag: m[0].slice(0, 60), end: (t.a ?? 0) + (t.w ?? 0.15) });
-    }
-    return found;
-  };
-
+  const landingOuts = new Set(locs.map((l) => landing.out(l)));
   for (const loc of locs) {
     const file = path.join(DIST, landing.out(loc));
     if (!fs.existsSync(file)) continue;          // section 1 already reported it
@@ -742,92 +678,69 @@ for (const loc of LOCALES) {
     const html = read(file);
 
     let at = -1;
-    for (const [name, needle] of BLOCKS) {
+    for (const [name, needle] of SECTIONS) {
       const i = html.indexOf(needle, at + 1);
-      if (i === -1) { fail(out, `has no ${name} block (${needle}) where the mock puts it — the landing page is missing a section or has it out of order: ${BLOCKS.map((b) => b[0]).join(' → ')}`); break; }
+      if (i === -1) { fail(out, `has no ${name} section (${needle}) where the mock puts it — missing or out of order: ${SECTIONS.map((s) => s[0]).join(' → ')}`); break; }
       at = i;
     }
-
-    // The lists that have to agree: chapters, screens, phone copies, dots.
-    const want = FEATURES.length;
-    const storyHtml = sectionAt(html, 'class="story"');
-    const chapters = count(storyHtml, 'data-chapter="');
-    if (chapters !== want) {
-      fail(out, `has ${chapters} story chapters, expected ${want} (one per FEATURES entry) — a chapter was dropped`);
-    }
-    // `--k` is the stack position, and only the images inside the sticky
-    // phone carry it — the per-chapter copies shown on a phone do not.
-    const screens = count(storyHtml, 'style="--k:');
-    if (screens !== want) {
-      fail(out, `has ${screens} phone screenshots in the story stage, expected ${want} — the phone and the chapters are out of step`);
-    }
-    const mshots = count(storyHtml, '<div class="mshot"><img ');
-    if (mshots !== want) fail(out, `has ${mshots} per-chapter phone screenshots (.mshot), expected ${want}`);
-    const progress = storyHtml.match(/<div class="progress">([\s\S]*?)<\/div>/);
-    const dots = progress ? count(progress[1], '<i') : 0;
-    if (dots !== want) fail(out, `has ${dots} progress dots, expected ${want}`);
-    if (storyHtml.includes('class="floats"')) fail(out, 'the story still has a floating-card layer — the cards moved to the showcase');
-
-    const showcase = sectionAt(html, 'id="showcase"');
-    if (!/<h2 class="sr-only">[^<]+<\/h2>/.test(showcase)) fail(out, 'the showcase has no visually hidden <h2 class="sr-only"> — the slide needs a heading');
-    const cards = count(showcase, '<div class="fc');
-    if (cards !== 3) fail(out, `the showcase has ${cards} floating cards, expected 3 from story.cards.hero`);
-    checkVideo(out, 'showcase', showcase);
-    checkVideo(out, 'life', sectionAt(html, 'id="life"'));
-
-    const webHtml = sectionAt(html, 'id="web"');
-    if (webHtml && !webHtml.includes(`href="${WEB_APP_URL}"`)) {
-      fail(out, `the web slide does not link to ${WEB_APP_URL} — that link is the only reason the slide exists`);
-    }
-
-    const faqFrom = html.indexOf('id="faq"');
+    const mainEnd = html.lastIndexOf('</main>');
     const footerAt = html.indexOf('<footer>');
-    if (faqFrom !== -1 && !(footerAt > faqFrom && footerAt < html.lastIndexOf('</main>'))) {
-      fail(out, 'the footer is not inside the last slide — with mandatory scroll-snap a footer after </main> can never be scrolled to');
+    if (mainEnd === -1 || footerAt < mainEnd) fail(out, 'the footer is not after </main> — the home page ends with the normal site footer');
+
+    const hero = sectionAt(html, '<section class="hero" id="hero"');
+    const heroCards = count(hero, 'class="fc hcard');
+    if (heroCards !== 7) fail(out, `the hero has ${heroCards} floating cards, expected 7 (home.hero.cards)`);
+    const members = sectionAt(html, 'id="features"');
+    const firstSet = (members.match(/<div class="marq-set">([\s\S]*?)<\/div>\n/) || [, ''])[1];
+    const photos = count(firstSet, '<div class="mcard"><img');
+    if (photos !== 8) fail(out, `the members track has ${photos} photo cards (first set), expected 8 (home.members.cards)`);
+    if (count(members, 'class="marq-set" aria-hidden="true"') !== 1) fail(out, 'the members track has no aria-hidden copy for its loop (or more than one)');
+    const flow = sectionAt(html, 'id="workflows"');
+    for (const [what, needle] of [['buttons', '<button class="fl'], ['screens', 'data-sx="'], ['toasts', 'class="fc toast']]) {
+      const n = count(flow, needle);
+      if (n !== 4) fail(out, `"See it in action" has ${n} ${what}, expected 4`);
+    }
+    const icards = count(sectionAt(html, 'id="plus"'), 'class="icard ');
+    if (icards !== 3) fail(out, `the Daili Plus block has ${icards} cards, expected 3`);
+
+    const num = new Intl.NumberFormat(loc).format(MEMBERS_COUNT);
+    if (!members.includes(`<span data-count="${MEMBERS_COUNT}">${num}</span>`)) {
+      fail(out, `the members headline does not show ${num} (MEMBERS_COUNT formatted for ${loc})`);
     }
 
-    for (const dead of ['class="bento"', 'class="tile"', 'data-active']) {
-      if (html.includes(dead)) fail(out, `still contains ${dead} — retired with the bento grid / the per-chapter colours`);
+    if (!withReviews && /id="reviews"|class="revs"|class="rv"/.test(html)) {
+      fail(out, `has reviews markup but REVIEWS has ${REVIEWS.length} entries — the section renders only from 3 real ones`);
     }
 
-    // Round 2 (claude-prompts/2026-09-27/004): the hero has no pill above the
-    // headline and its three notes are pills; the slab's wordmark stands
-    // alone; the price slide has no points row.
-    const heroHtml = sectionAt(html, 'class="hero"');
-    const h1At = heroHtml.indexOf('<h1');
-    if (h1At === -1 || /class="[^"]*\bchip\b/.test(heroHtml.slice(0, h1At))) {
-      fail(out, 'the hero has a .chip above the h1 (or no h1) — round 2 removed the pill over the headline');
+    for (const src of VENDOR) {
+      if (!html.includes(`<script src="${src}" defer></script>`)) fail(out, `does not load ${src} (defer)`);
     }
-    const pills = count(heroHtml, 'class="pill"');
-    if (pills !== 3) fail(out, `the hero has ${pills} note pills (class="pill"), expected 3 from hero.notes`);
-    if (!/<div class="slab-label"><span class="disp">[^<]+<\/span><\/div>/.test(storyHtml)) {
-      fail(out, 'the slab label is not the bare wordmark — round 2 removed the caption line under it');
-    }
-    if (sectionAt(html, 'id="pricing"').includes('class="points"')) fail(out, 'the price slide still has its points row (class="points") — round 2 removed it');
+    if (!HOME_JS.test(html)) fail(out, 'does not load the hashed home.js (defer)');
+  }
 
-    // The two-step slides: exactly these four, each with exactly one second
-    // snap stop, and none on the FAQ. A missing .snap2 turns a slide back into
-    // one stop whose content never appears (its --p would stop at 0).
-    const TWO_STEP = ['web', 'how', 'compare', 'pricing'];
-    const twoStep = [...html.matchAll(/<section class="[^"]*\btwo-step\b[^"]*" id="([^"]+)"/g)].map((m) => m[1]);
-    if (twoStep.join() !== TWO_STEP.join()) {
-      fail(out, `the two-step slides are [${twoStep.join(', ')}], expected [${TWO_STEP.join(', ')}]`);
-    }
-    for (const id of TWO_STEP) {
-      const part = sectionAt(html, `id="${id}"`);
-      const snaps = count(part, 'class="snap2"');
-      if (snaps !== 1) fail(out, `the ${id} slide has ${snaps} .snap2 elements, expected exactly 1 — it is a two-step slide`);
-      for (const r of reveals(part)) {
-        if (r.end > BY_END + 1e-9) fail(out, `the ${id} slide has a reveal that ends at --p ${r.end.toFixed(2)}, after ${BY_END} — the second stop would show it half-faded: ${r.tag}…`);
+  const homeRefs = new Set();
+  for (const f of htmlFiles) {
+    const out = rel(f);
+    const html = read(f);
+    if (!landingOuts.has(out)) {
+      for (const src of [...VENDOR, '/assets/home.']) {
+        if (html.includes(`src="${src}`)) fail(out, `loads ${src} — the home page's scripts belong on the landing pages only`);
       }
     }
-    if (sectionAt(html, 'id="faq"').includes('class="snap2"')) fail(out, 'the faq slide has a .snap2 — it is a single slide');
-    // The compare lead: under the title, in the same block, arriving with it.
-    const gap = '(?:\\s|<!--[\\s\\S]*?-->)*';
-    if (!new RegExp(`<div class="sec-head">${gap}<div>${gap}<span class="eyebrow">[^<]*</span>${gap}<h2>[^<]*</h2>${gap}<p class="section-lead">`).test(sectionAt(html, 'id="compare"'))) {
-      fail(out, 'the compare lead is not the sibling after the h2 inside the title block (eyebrow → h2 → lead) — it must not sit in a second column');
+    for (const m of html.matchAll(/\/assets\/img\/home\/[\w.-]+/g)) homeRefs.add(m[0]);
+    if (html.includes('{count}')) fail(out, 'contains an unfilled {count}');
+    for (const s of ['Placeholder', 'Sample name']) if (html.includes(s)) fail(out, `contains "${s}" — no placeholder review text may ship`);
+    if (html.includes('cloudfront.net')) fail(out, 'references cloudfront.net — every image is self-hosted');
+    for (const m of html.matchAll(/<(?:img|script|source)\b[^>]*\s(?:src|srcset)="(https?:\/\/[^"]+)"/g)) {
+      fail(out, `loads ${m[1]} — images and scripts are self-hosted`);
     }
   }
+  for (const ref of homeRefs) {
+    const f = path.join(DIST, ref.slice(1));
+    if (!fs.existsSync(f)) fail(ref, 'is referenced but does not exist in dist/');
+    else if (fs.statSync(f).size > IMG_MAX) fail(ref, `is ${(fs.statSync(f).size / 1024).toFixed(0)} KB — the budget is 120 KB`);
+  }
+  if (!homeRefs.size) fail('index.html', 'references no /assets/img/home/ file — the home page lost its pictures');
 }
 
 // --- 16. help center ------------------------------------------------------

@@ -9,47 +9,50 @@
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="{{ page.cssHref }}">
+{{{ page.homeCss }}}
 <!-- Below 860px the nav links live in a panel the burger opens, and the burger
      is the one control on this site that needs script.js to do anything. So
      when script.js cannot run, the panel is not the way in: the links go back
-     into the header as a wrapped row and the dead burger is removed. Inline and
-     in <noscript> rather than a class on <html>, so a reader with JavaScript
+     into the header pill as a wrapped row and the dead burger is removed. Inline
+     and in <noscript> rather than a class on <html>, so a reader with JavaScript
      off never sees the menu flash open and closed. -->
-<noscript><style>@media(max-width:860px){.nav{height:auto;flex-wrap:wrap;padding-block:12px}.menu{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex-basis:100%}.links{margin-inline-start:0;flex-wrap:wrap}.burger{display:none}}</style></noscript>
+<noscript><style>@media(max-width:860px){.nav{flex-wrap:wrap;border-radius:24px;padding-block:10px}.menu{display:flex;flex-wrap:wrap;align-items:center;gap:8px;flex-basis:100%;order:5}.links{margin-inline-start:0;flex-wrap:wrap}.burger{display:none}}</style></noscript>
 <script src="{{ page.jsHref }}" defer></script>
 </head>
 <body>
 
 <a class="skip" href="#main">{{ nav.skip }}</a>
 
+<!-- The floating pill (the 2026-09-28 home page, on every page). On a phone:
+     brand, language, the Get-the-app pill and the burger; the links move into
+     the panel the burger opens. -->
 <header>
-  <div class="wrap nav">
+  <div class="nav">
     <a class="brand" href="{{ page.homeHref }}"><img src="/assets/img/logo.webp" alt="" width="512" height="512">daili</a>
     <div class="menu" id="navmenu">
       <nav class="links">
-        <a class="nl" href="{{ page.featuresHref }}">{{ nav.features }}</a>
-        <a class="nl nl-web" href="https://app.daili.app" rel="noopener">{{ nav.webApp }}</a>
-        <a class="nl" href="{{ page.pricingHref }}">{{ nav.pricing }}</a>
+        <a class="nl" href="{{ page.anchorBase }}#features">{{ home.nav.features }}</a>
+        <a class="nl" href="{{ page.anchorBase }}#plus">{{ home.nav.plus }}</a>
+        <a class="nl" href="{{ page.anchorBase }}#screens">{{ home.nav.screens }}</a>
+        <a class="nl" href="{{ page.anchorBase }}#privacy">{{ home.nav.privacy }}</a>
         <a class="nl" href="{{ page.supportHref }}">{{ nav.support }}</a>
         <a class="nl" href="/blog/" hreflang="en" lang="en">{{ nav.blog }}</a>
+        <a class="nl" href="{{ page.webAppUrl }}" rel="noopener">{{ home.nav.login }}</a>
       </nav>
-      <div class="dl">
-        <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false">{{ nav.download }}</button>
-        <div class="dl-menu">
-{{> storebadges }}
-        </div>
-      </div>
     </div>
 {{{ page.langNav }}}
+    <div class="dl">
+      <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>{{ home.nav.cta }}</button>
+      <div class="dl-menu">
+{{> storebadges }}
+      </div>
+    </div>
     <button class="burger" type="button" aria-label="{{ nav.menu }}" aria-expanded="false" aria-controls="navmenu"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
 
 {{{ page.body }}}
 
-<!-- The landing page renders this same footer (build.mjs, renderFooter) inside
-     its own last slide instead: with `scroll-snap-type: y mandatory` a footer
-     that sits outside the last snap target cannot be scrolled to. -->
 {{? page.siteFooter }}
 {{{ page.footerHtml }}}
 {{/}}

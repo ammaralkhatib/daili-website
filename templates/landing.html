@@ -1,224 +1,158 @@
-<!-- The home page: Design B, "Paper & Mint editorial"
-     (claude-prompts/2026-09-27/design-b-mock.html, approved 2026-09-27), built
-     on the scroll-story machinery of 2026-09-18. Nine blocks in a fixed order,
-     asserted in tools/check-build.mjs 15: the hero, the video showcase, the
-     story, the life slide, the web app, the steps, the comparison, the price
-     and the FAQ — one screen each, the browser snapping from one to the next
-     above 900px.
+<!-- The home page, Bevel-style (claude-prompts/2026-09-28/bevel-mock/index.html,
+     approved 2026-09-28). One long page that scrolls freely; the sections and
+     their order are asserted in tools/check-build.mjs 15: hero, members
+     (#features), day, Daili Plus (#plus), workflows, screens, privacy, care,
+     reviews (only with 3+ real ones), get (#get), FAQ, then the site footer
+     after </main>.
 
-     The story's seven chapters, the seven stacked screenshots and the dots come
-     from renderStory(), the showcase's cards and chips from renderShowcase(),
-     the three fact cards from renderFacts() — lists that have to stay in step,
-     which is why each set is built by one function. The store badges stay here:
-     they come from the `storebadges` partial, which the engine resolves in a
-     template and not inside a string build.mjs hands it.
+     Every string is a content key; every list that needs a glyph, a colour or
+     a position is built by renderHome() in build.mjs from the data in
+     site.config.mjs. Motion is static/assets/home.js (GSAP + ScrollTrigger +
+     Lenis, landing only). Nothing here is hidden by CSS: with JavaScript off
+     or reduced motion the page is complete as written. -->
+<aside class="qr" data-qr><img src="/assets/img/home/qr.svg" alt="{{ home.qr.alt }}" width="74" height="74"><div><b>{{ home.qr.t }}</b><span>{{ home.qr.s }}</span></div></aside>
 
-     The two videos never autoplay from markup. script.js starts them (desktop,
-     motion allowed, no Save-Data, near the viewport); everyone else sees the
-     poster, which a paused <video> shows by itself. Paths are written out here
-     rather than passed through build.mjs: four fixed files, one place.
+<main id="main" class="home">
 
-     Every `--a` / `--w` pair is where in a slide's own 0..1 scroll progress an
-     element starts appearing and how long it takes; script.js sets --p and --q,
-     and the single `.by` rule in style.css turns them into opacity and lift.
-     With JavaScript off every --p stays 1, the CSS default: the page is simply
-     complete. -->
-<main id="main">
+  <section class="hero" id="hero">
+    <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i><i class="a5"></i><div class="band"></div><div class="fade"></div></div>
+    <div class="hero-copy wrap">
+      <h1>{{{ page.home.h1 }}}</h1>
+      <p class="lead" data-hi>{{ home.hero.lead }}</p>
+      <div class="hero-cta" data-hi><a class="btn-dark" href="#get">{{{ page.home.phoneIcon }}}{{ home.hero.cta }}</a><a class="link-u" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a></div>
+      <div class="pills" data-hi>
+{{# hero.notes }}        <span class="pill">{{{ page.home.checkIcon }}}{{ . }}</span>
+{{/}}      </div>
+    </div>
+    <div class="stage">
+      {{{ page.home.heroPhone }}}
+      {{{ page.home.heroWatch }}}
+{{{ page.home.heroCards }}}
+    </div>
+    <div class="works"><p>{{ home.works.label }}</p><div class="works-row">
+{{{ page.home.works }}}
+    </div></div>
+  </section>
 
-  <section class="hero" id="hero" data-scene>
-    <div class="wrap wide">
-      <h1 class="by" style="--a:0;--w:.06">{{ hero.h1a }}<br> <em>{{ hero.h1b }}<svg viewBox="0 0 600 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 120 4, 300 2, 596 14"/></svg></em></h1>
-      <p class="lead by" style="--a:.04;--w:.06">{{ hero.lead }}</p>
-      <div class="ctas badges by" style="--a:.08;--w:.06">
-{{> storebadges }}
+  <section class="members" id="features">
+    <div class="wrap">
+      <div class="mbadges" data-r>
+{{{ page.home.badges }}}
       </div>
-      <a class="web-link by" style="--a:.1;--w:.06" href="{{ page.webAppUrl }}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{{ hero.webLink }}</a>
-      <ul class="pills by" style="--a:.12;--w:.06">
-{{# hero.notes }}        <li class="pill">{{ . }}</li>
-{{/}}      </ul>
+      <h2 class="h2" data-r>{{{ page.home.membersH2 }}}</h2>
+    </div>
+    <div class="marq"><div class="marq-track">
+{{{ page.home.marquee }}}
+    </div></div>
+  </section>
+
+  <section class="day">
+    <div class="wrap">
+      <h2 class="h2" data-r>{{ home.day.h2 }}</h2>
+      <p class="sub" data-r>{{ home.day.sub }}</p>
+      <div class="cols">
+{{{ page.home.dayCards }}}
+      </div>
+      <article class="wide g-clay" data-r>
+        <div class="tx"><h3>{{ home.dinner.h3 }}</h3><p>{{ home.dinner.p }}</p><div class="mini-row">
+{{# home.dinner.chips }}          <span class="chip">{{ . }}</span>
+{{/}}        </div></div>
+        <div class="vis">{{{ page.home.dinnerVis }}}</div>
+      </article>
+      <article class="wide g-lake" id="calendars" data-r>
+        <div class="vis">{{{ page.home.calendarsVis }}}</div>
+        <div class="tx tx-end"><h3>{{ home.calendars.h3 }}</h3><p>{{ home.calendars.p }}</p></div>
+      </article>
     </div>
   </section>
 
-  <!-- The video panel: a slow loop behind the upright phone, the three cards
-       floating over it, and the feature chips under it. -->
-  <section class="scene showcase" id="showcase" data-scene>
-    <div class="pin"><div class="wrap wide">
-      <h2 class="sr-only">{{ showcase.h2 }}</h2>
-      <div class="panel">
-        <video class="panel-video" muted loop playsinline preload="none" poster="/assets/video/showcase.webp" aria-hidden="true" data-autoplay><source src="/assets/video/showcase.mp4" type="video/mp4"></video>
-        <div class="vignette" aria-hidden="true"></div>
-        <div class="rise">{{{ page.showcase.phone }}}</div>
-        <div class="cards" aria-hidden="true">
-{{{ page.showcase.cards }}}
-        </div>
-        <p class="sync"><i></i>{{ showcase.pill }}</p>
-      </div>
-      <ul class="chips">
-{{{ page.showcase.chips }}}
-      </ul>
+  <section class="intel" id="plus">
+    <div class="spot" aria-hidden="true"></div>
+    <div class="avs" data-avs aria-hidden="true"><div class="avs-track">
+{{{ page.home.avatars }}}
     </div></div>
+    <div class="wrap intel-head">
+      <span class="eyebrow" data-r>{{{ page.home.sparkIcon }}}{{ home.plus.eyebrow }}</span>
+      <h2 class="h2" data-r><span class="mute">{{ home.plus.h2a }}</span><br>{{ home.plus.h2b }}</h2>
+      <p class="sub" data-r>{{ home.plus.sub }}</p>
+    </div>
+    <div class="wrap stack">
+{{{ page.home.icards }}}
+    </div>
+    <p class="fine wrap">{{ home.plus.fine }}</p>
   </section>
 
-  <!-- The phone sits on the mint slab on the inline-start side, so /ar/ mirrors
-       it by itself; the chapters scroll past on the other side. -->
-  <section class="story" id="story">
-    <div class="wrap wide">
-      <div class="stage" aria-hidden="true">
-        <div class="slab">
-          <div class="slab-label"><span class="disp">daili</span></div>
-          <div class="progress">{{{ page.story.dots }}}</div>
-          <div class="phone">
-            <div class="screen">
-{{{ page.story.screens }}}
-            </div>
-          </div>
+  <section class="flow" id="workflows">
+    <div class="shut" aria-hidden="true"><div class="shut-rows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="wrap flow-grid">
+      <div>
+        <h2 class="h2" data-r>{{ home.flow.h2 }}</h2>
+        <p class="sub" data-r>{{ home.flow.sub }}</p>
+        <div class="fl-list">
+{{{ page.home.flowList }}}
         </div>
       </div>
-
-      <div class="chapters">
-{{{ page.story.chapters }}}
+      <div class="flow-vis">
+{{{ page.home.flowVis }}}
       </div>
     </div>
   </section>
 
-  <section class="scene" id="life" data-scene>
-    <div class="pin"><div class="wrap wide life">
-      <div class="life-card by" style="--a:.35;--w:.15">
-        <video class="panel-video" muted loop playsinline preload="none" poster="/assets/video/life.webp" aria-hidden="true" data-autoplay><source src="/assets/video/life.mp4" type="video/mp4"></video>
-        <div class="shade" aria-hidden="true"></div>
-        <div class="cap">
-          <h2>{{ life.h2 }}</h2>
-          <p>{{ life.p }}</p>
-        </div>
+  <section class="screens" id="screens">
+    <div class="wrap">
+      <h2 class="h2" data-r>{{ home.screens.h2 }}</h2>
+      <p class="sub" data-r>{{ home.screens.sub }}</p>
+      <div class="bento">
+{{{ page.home.bento }}}
       </div>
-      <div class="facts">
-{{{ page.facts }}}
+    </div>
+  </section>
+
+  <section class="priv" id="privacy">
+    <div class="wrap"><div class="vault" data-vault>
+      <svg class="lock" viewBox="0 0 440 600" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".22"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#CFEFC6" stop-opacity=".18"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".06"/></linearGradient></defs><g data-shackle><path d="M110 270V170a110 110 0 0 1 220 0v100" fill="none" stroke="url(#lg2)" stroke-width="46" stroke-linecap="round"/></g><rect x="30" y="250" width="380" height="330" rx="64" fill="url(#lg1)" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><circle cx="220" cy="400" r="26" fill="#ffffff" fill-opacity=".14"/><rect x="210" y="410" width="20" height="60" rx="10" fill="#ffffff" fill-opacity=".14"/></svg>
+      <h2 class="h2">{{ home.privacy.h2 }}</h2>
+      <p class="sub">{{ home.privacy.sub }}</p>
+      <div class="glass">
+{{{ page.home.glass }}}
       </div>
     </div></div>
   </section>
 
-  <!-- The four two-step slides below (web, how, compare, pricing) are two
-       screens tall with a sticky .pin, and .snap2 is the second snap stop one
-       screen down: the first stop shows only the big centred title, the second
-       the settled slide. script.js runs their --p from 0 at the first stop to
-       1 at the second and measures --drop, how far the title has to come down
-       to sit in the middle of the pin. Below 900px and with reduced motion
-       they are ordinary one-screen slides (style.css).
-
-       Every reveal in these four slides is finished by --p .85
-       (--a + --w ≤ .85, tools/check-build.mjs 15), so a settled second stop
-       is the complete slide, never a half-faded one.
-
-       The web slide's "title" is the browser window: whole and centred at the
-       first stop, shrunk into its own column beside the copy at the second.
-       The image is the only one on the page that is not localized: the web
-       app speaks English and German. -->
-  <section class="scene two-step" id="web" data-scene>
-    <div class="snap2" aria-hidden="true"></div>
-    <div class="pin"><div class="wrap web-pin">
-      <div class="laptop" aria-hidden="true">
-        <div class="bar"><i></i><i></i><i></i><span class="url">app.daili.app/calendar</span></div>
-        <img src="{{ page.webShot.src }}" alt="" width="{{ page.webShot.width }}" height="{{ page.webShot.height }}" loading="lazy" decoding="async">
-      </div>
-      <div class="web-copy by" style="--a:.45;--w:.35">
-        <span class="eyebrow">{{ web.eyebrow }}</span>
-        <h2>{{ web.h2 }}</h2>
-        <p>{{ web.p }}</p>
-        <ul>
-{{# web.points }}          <li>{{ . }}</li>
-{{/}}        </ul>
-        <a class="btn btn-primary" href="{{ page.webAppUrl }}" rel="noopener">{{ web.cta }}</a>
-        <p class="muted">{{ web.note }}</p>
-      </div>
-    </div></div>
+  <section class="care">
+    <div class="mosaic" aria-hidden="true">
+{{{ page.home.mosaic }}}
+    </div>
+    <div class="wrap care-head"><h2 class="h2" data-r>{{ home.care.h2a }}<br>{{ home.care.h2b }}</h2><p class="sub" data-r>{{ home.care.sub }}</p></div>
   </section>
-
-  <section class="scene two-step" id="how" data-scene>
-    <div class="snap2" aria-hidden="true"></div>
-    <div class="pin"><div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">{{ howItWorks.eyebrow }}</span>
-          <h2>{{ howItWorks.h2 }}</h2>
-        </div>
-      </div>
-      <!-- The three steps slide in one after another in the second half of
-           the slide; their start times are :nth-child rules in style.css,
-           because the engine's loop has no index and three numbers are not
-           worth a build.mjs helper. -->
-      <div class="steps">
-{{# howItWorks.steps }}
-        <div class="step by x">
-          <h3>{{ .h3 }}</h3>
-          <p>{{ .p }}</p>
-        </div>
-{{/}}
-      </div>
-    </div></div>
-  </section>
-
-  <section class="scene two-step" id="compare" data-scene>
-    <div class="snap2" aria-hidden="true"></div>
-    <div class="pin"><div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">{{ compare.eyebrow }}</span>
-          <h2>{{ compare.h2 }}</h2>
-          <!-- Part of the title block: centred with it at the first stop,
-               travelling up with it to the second. -->
-          <p class="section-lead">{{ compare.lead }}</p>
-        </div>
-      </div>
-      <!-- The table's frame (rules, row labels, the tinted column) arrives
-           first, then its columns one by one. -->
-      <div class="table-scroll by" style="--a:.4;--w:.12">
-{{{ page.compareTable }}}
-      </div>
-      <p class="legend by col3">{{ compare.legend }}</p>
-    </div></div>
-  </section>
-
-  <!-- Centred: the giant price is the slide. Its title is the eyebrow, the €0
-       with its note and the h2, which arrive together at the first stop. -->
-  <section class="scene two-step" id="pricing" data-scene>
-    <div class="snap2" aria-hidden="true"></div>
-    <div class="pin"><div class="wrap wide price">
-      <div class="price-head">
-        <span class="eyebrow">{{ pricing.eyebrow }}</span>
-        <p class="big">{{ pricing.big }}<small>{{ pricing.bigNote }}</small></p>
-        <h2>{{ pricing.h2 }}</h2>
-      </div>
-      <p class="lead by" style="--a:.45;--w:.3">{{ pricing.lead }}</p>
-      <div class="promise by" style="--a:.5;--w:.3"><strong>{{ pricing.promiseTitle }}</strong>{{ pricing.promise }}</div>
-      <div class="ctas badges by" style="--a:.6;--w:.25">
+{{{ page.home.reviews }}}
+  <section class="final" id="get">
+    <div class="wrap">
+      <h2 class="h2" data-r>{{ home.final.h2 }}</h2>
+      <p class="sub" data-r>{{ home.final.sub }}</p>
+      <div class="ctas badges" data-r>
 {{> storebadges }}
         <a class="btn btn-ghost" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a>
       </div>
-    </div></div>
+      <div class="flat">
+{{{ page.home.flat }}}
+      </div>
+    </div>
   </section>
 
-  <!-- The last slide carries the footer. With mandatory snap a footer after
-       </main> is a snap target nobody can reach. -->
-  <section class="scene last" id="faq" data-scene>
-    <div class="pin">
-      <div class="wrap">
-        <div class="sec-head by" style="--a:.4;--w:.2">
-          <div>
-            <span class="eyebrow">{{ faq.eyebrow }}</span>
-            <h2>{{ faq.h2 }}</h2>
-          </div>
-        </div>
-        <div class="faq by" style="--a:.55;--w:.25">
+  <section class="faq-sec" id="faq">
+    <div class="wrap">
+      <span class="eyebrow" data-r>{{ faq.eyebrow }}</span>
+      <h2 class="h2" data-r>{{ faq.h2 }}</h2>
+      <div class="faq" data-r>
 {{{ page.faq }}}
-        </div>
       </div>
-{{{ page.footerHtml }}}
     </div>
   </section>
 
 </main>
 
 <div class="sticky-cta" hidden>
-  <a class="dl-btn" href="#" data-sticky-cta>{{ cta.sticky }}</a>
+  <a class="dl-btn" href="#get" data-sticky-cta>{{ cta.sticky }}</a>
   <button type="button" class="sticky-close" aria-label="Close">&times;</button>
 </div>

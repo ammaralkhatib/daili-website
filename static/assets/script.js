@@ -33,7 +33,7 @@
       setMenu(!document.body.classList.contains("menu-open"));
     });
   }
-  /* An in-page link (#features, #pricing) never reloads, so without this the
+  /* An in-page link (#features, #plus, …) never reloads, so without this the
      panel stays open over the section it just scrolled to. */
   document.querySelectorAll(".links a.nl").forEach(function (a) {
     a.addEventListener("click", function () { setMenu(false); });
@@ -149,8 +149,8 @@
    *
    * The <p> is never replaced or re-created — it is styled, positioned and
    * hidden in place — so the sentence still comes from the translation file
-   * and never from here. The partial is on the page three times (nav menu,
-   * hero, bottom CTA), so each chip finds its own note by walking up to the
+   * and never from here. The partial is on the home page twice (nav menu,
+   * the last section), so each chip finds its own note by walking up to the
    * shared container, never by id; the ids handed out below for
    * aria-describedby are generated for the same reason. */
   var GAP = 8;    // chip bottom → card top. The arrow spans exactly this much.
@@ -255,16 +255,18 @@
   var hero = document.querySelector(".hero");
   if (sticky && hero && "IntersectionObserver" in window) {
     var link = sticky.querySelector("[data-sticky-cta]");
-    var heroChip = document.querySelector(".hero .store-badge.soon");
-    var heroNote = document.querySelector(".hero .store-soon");
+    // The badges in the header's download menu: the one copy of them every
+    // page has. The hero has no badges of its own any more.
+    var heroChip = document.querySelector(".dl-menu .store-badge.soon");
+    var heroNote = document.querySelector(".dl-menu .store-soon");
     // Real links only — the "coming soon" chip is a <button> with no href.
-    var badges = [].slice.call(document.querySelectorAll(".hero a.store-badge"));
+    var badges = [].slice.call(document.querySelectorAll(".dl-menu a.store-badge"));
 
     if (link && plat === "ios" && heroChip) {
       // The one case where there is nothing to link to. Copying the first
       // badge's href here would silently hand iPhone visitors the Google Play
       // listing, so the CTA stops being a link at all and just says why. The
-      // sentence is read from the hero note, so there is no second string to
+      // sentence is read from the menu's note, so there is no second string to
       // translate and no template change.
       var msg = document.createElement("span");
       msg.className = "sticky-soon";
@@ -292,267 +294,5 @@
       if (dismissed) return;
       sticky.hidden = entries[0].isIntersecting;
     }, { threshold: 0 }).observe(hero);
-  }
-
-  /* ---------- the scroll story ----------
-   * One listener, one function, three custom properties.
-   *
-   *   --idx  on .screen — how far the story has scrolled, in chapters, with a
-   *          fraction. The seven stacked screenshots read it and slide.
-   *   --p    on each chapter and on each [data-scene] slide around the story
-   *          (the hero, the showcase and everything below) — 0 before it
-   *          arrives, 1 once it has settled. Everything that builds up is the
-   *          .by rule in style.css reading this.
-   *   --q    on each chapter — 0..1 as it leaves upwards.
-   *
-   * The CSS defaults are the finished state (--p:1, --q:0), so a blocked or
-   * failed script leaves the whole page visible rather than blank. That is why
-   * nothing here unhides anything: it only animates what is already there.
-   *
-   * idx comes from the chapters' own geometry rather than from "scrolled
-   * pixels ÷ one screen": chapters have a min-height, so a long translation is
-   * allowed to make one taller than the viewport, and a fixed slide height
-   * would put the phone out of step with the words. */
-  var story = document.querySelector(".story");
-  if (story) {
-    var chapters = [].slice.call(story.querySelectorAll(".chapter"));
-    var screenEl = story.querySelector(".screen");
-    var dots = [].slice.call(story.querySelectorAll(".progress i"));
-    var scenes = [].slice.call(document.querySelectorAll("[data-scene]"));
-    var calmQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
-    var activeChapter = -1;
-
-    var clamp01 = function (v) { return v < 0 ? 0 : v > 1 ? 1 : v; };
-    var setVar = function (el, name, v) { if (el) el.style.setProperty(name, v.toFixed(3)); };
-
-    /* The header's height is the top edge of every slide. It is --header-h in
-       style.css; reading it back is how the two cannot drift apart. */
-    function headerHeight() {
-      var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--header-h"));
-      return isNaN(v) ? 64 : v;
-    }
-
-    /* The two-step slides (web, how, compare, pricing). style.css decides when
-       they are two screens tall — above 900px, motion allowed — and says so
-       by showing their .snap2; this follows it rather than repeating both
-       media queries. */
-    var twoSteps = scenes.filter(function (s) { return s.classList.contains("two-step"); });
-    var stale = true;
-    function twoStepOn(s) {
-      var snap = s.querySelector(".snap2");
-      return !!snap && getComputedStyle(snap).display !== "none";
-    }
-
-    /* The web slide's window at the first stop: laid out in its settled
-       column (--p 1, transform none), then scaled to fill the slide — as wide
-       as the wrap allows up to 1080px, no taller than the pin's content box —
-       and moved to the pin's centre. Measuring the column itself is what
-       makes the shrink end exactly in it. */
-    function measureWindow(s, lap) {
-      lap.style.setProperty("--wx", "0px");
-      lap.style.setProperty("--wy", "0px");
-      lap.style.setProperty("--ws", "1");
-      if (!s._two) return;
-      s.style.setProperty("--p", "1");
-      var pinEl = s.querySelector(".pin");
-      var pin = pinEl.getBoundingClientRect();
-      var cs = getComputedStyle(pinEl);
-      var room = pin.height - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
-      var wrap = s.querySelector(".wrap").getBoundingClientRect();
-      var l = lap.getBoundingClientRect();
-      var scale = Math.min(Math.min(wrap.width, 1080) / l.width, room / l.height);
-      lap.style.setProperty("--ws", scale.toFixed(4));
-      lap.style.setProperty("--wx", ((wrap.left + wrap.right) / 2 - (l.left + l.right) / 2).toFixed(1) + "px");
-      lap.style.setProperty("--wy", ((pin.top + pin.bottom) / 2 - (l.top + l.bottom) / 2).toFixed(1) + "px");
-    }
-
-    /* A how or compare title is two lines at both stops. At --p 0 (big type)
-       its one-line width is measured, and the h2 gets a max-width of a bit
-       over half of that — widened until it really is two lines — written in
-       em, so at the small size the lines break in the same places. */
-    function twoLines(h2) {
-      h2.style.maxWidth = "none";
-      h2.style.whiteSpace = "nowrap";
-      var range = document.createRange();
-      range.selectNodeContents(h2);
-      var one = range.getBoundingClientRect().width;
-      h2.style.whiteSpace = "";
-      var cs = getComputedStyle(h2);
-      var size = parseFloat(cs.fontSize), line = parseFloat(cs.lineHeight) || size * 1.1;
-      var w = one * 0.55;
-      for (var i = 0; i < 10; i++) {
-        h2.style.maxWidth = (w / size).toFixed(3) + "em";
-        if (h2.getBoundingClientRect().height < line * 2.5) break;
-        w *= 1.06;
-      }
-    }
-
-    /* Where a two-step title has to travel from at the first stop: from its
-       settled place to the middle of the pin, measured at --p 0 (big type) and
-       with no offset applied. The box is the eyebrow plus the h2's actual text
-       (a Range, not the block, which is wider than a short title) plus the
-       compare lead, so a one-word title and a wrapped German one both land
-       centred. Measured only when the geometry can have changed: on load, on
-       resize, once the display face has loaded. */
-    function measure() {
-      stale = false;
-      twoSteps.forEach(function (s) {
-        s._two = twoStepOn(s);
-        var lap = s.querySelector(".laptop");
-        if (lap) measureWindow(s, lap);
-        var head = s.querySelector(".sec-head, .price-head");
-        var h2 = head && head.querySelector("h2");
-        if (!h2) return;
-        head.style.setProperty("--dx", "0px");
-        head.style.setProperty("--dy", "0px");
-        if (head.classList.contains("sec-head")) h2.style.maxWidth = "";
-        if (!s._two) return;
-        s.style.setProperty("--p", "0");
-        if (head.classList.contains("sec-head")) twoLines(h2);
-        var pin = s.querySelector(".pin").getBoundingClientRect();
-        var range = document.createRange();
-        range.selectNodeContents(h2);
-        var t = range.getBoundingClientRect();
-        var boxes = [t];
-        [].forEach.call(head.querySelectorAll(".eyebrow, .section-lead"), function (el) {
-          boxes.push(el.getBoundingClientRect());
-        });
-        var left = Math.min.apply(null, boxes.map(function (b) { return b.left; }));
-        var right = Math.max.apply(null, boxes.map(function (b) { return b.right; }));
-        var topY = Math.min.apply(null, boxes.map(function (b) { return b.top; }));
-        var bottom = Math.max.apply(null, boxes.map(function (b) { return b.bottom; }));
-        head.style.setProperty("--dx", ((pin.left + pin.right) / 2 - (left + right) / 2).toFixed(1) + "px");
-        head.style.setProperty("--dy", ((pin.top + pin.bottom) / 2 - (topY + bottom) / 2).toFixed(1) + "px");
-      });
-    }
-
-    /* The active chapter only lights its progress dot now: Design B keeps the
-       story on one calm ground, so there is no colour to swap. */
-    function activate(i) {
-      if (i === activeChapter) return;
-      activeChapter = i;
-      dots.forEach(function (d, k) { d.classList.toggle("on", k === i); });
-    }
-
-    function frame() {
-      var vh = window.innerHeight;
-      var top = headerHeight();
-      /* 900px and down is the plain page: no snap, no sticky phone.
-         Everything is visible and nothing else here runs. */
-      if (window.innerWidth <= 900) {
-        chapters.forEach(function (c) {
-          setVar(c, "--p", 1); setVar(c, "--q", 0);
-        });
-        scenes.forEach(function (s) { setVar(s, "--p", 1); });
-        activate(0);
-        return;
-      }
-      /* Reduced motion keeps the story — the phone still stacks the right
-         screen, the chapters still snap — and drops the building up. */
-      var calm = calmQuery ? calmQuery.matches : false;
-
-      /* Chapter 0 is the calendar: the hero is its own slide above the story
-         now. Until the first chapter reaches the header idx stays 0, so the
-         slab already shows the calendar screen as it scrolls into view. */
-      var idx = 0;
-      for (var i = 0; i < chapters.length; i++) {
-        var r = chapters[i].getBoundingClientRect();
-        /* The last chapter whose top has passed under the header, plus how far
-           it has scrolled past as a fraction of its own height. */
-        if (r.top - top <= 1) idx = i + clamp01((top - r.top) / r.height);
-      }
-      /* Once the last chapter has scrolled past, idx would run to 7 — one more
-         than there are chapters — and the story would lose its active dot
-         while it is still partly on screen. */
-      if (idx > chapters.length - 1) idx = chapters.length - 1;
-      setVar(screenEl, "--idx", idx);
-
-      chapters.forEach(function (c, i) {
-        var p = clamp01(1 - (i - idx));
-        var q = clamp01((idx - i) / 0.5);
-        /* Reduced motion: the words are simply there, no building up. */
-        setVar(c, "--p", calm ? 1 : p); setVar(c, "--q", calm ? 0 : q);
-      });
-      activate(Math.round(idx));
-
-      if (stale) measure();
-
-      /* Every other slide: 0 as the slide's top edge enters at the bottom of
-         the viewport, 1 once it sits under the header — and 1 for good once
-         it is above that, which is why the hero is complete on load.
-         A two-step slide instead: 0 at its first stop (top under the header),
-         1 at its second, one screen further down. */
-      scenes.forEach(function (s) {
-        var r = s.getBoundingClientRect();
-        var p = s._two
-          ? clamp01((top - r.top) / (vh - top))
-          : clamp01((vh - (r.top - top)) / vh);
-        setVar(s, "--p", calm ? 1 : p);
-      });
-    }
-
-    var queued = false;
-    function onFrame() {
-      if (queued) return;
-      queued = true;
-      requestAnimationFrame(function () { frame(); queued = false; });
-    }
-    function onResize() { stale = true; onFrame(); }
-    window.addEventListener("scroll", onFrame, { passive: true });
-    window.addEventListener("resize", onResize);
-    if (calmQuery && calmQuery.addEventListener) calmQuery.addEventListener("change", onResize);
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(onResize);
-    frame();
-  }
-
-  /* ---------- the two background videos ----------
-   * Neither <video> has an autoplay attribute and both are preload="none", so
-   * by default the page downloads nothing but the poster, and a paused video
-   * shows its poster by itself. This is the only thing that ever starts one,
-   * and only while ALL of these hold:
-   *   - the viewport is wider than 900px (a phone gets the plain page);
-   *   - the visitor has not asked for reduced motion;
-   *   - the browser is not in Save-Data mode;
-   *   - the video's slide is within one viewport of the visible area.
-   * Leaving that range pauses it again. A play() the browser refuses (its own
-   * autoplay policy) is simply ignored: the poster stays, which is fine. */
-  var videos = [].slice.call(document.querySelectorAll("video[data-autoplay]"));
-  if (videos.length && window.matchMedia && "IntersectionObserver" in window) {
-    var wideQuery = window.matchMedia("(min-width: 901px)");
-    var motionQuery = window.matchMedia("(prefers-reduced-motion: no-preference)");
-
-    function mayPlay() {
-      var conn = navigator.connection;
-      return wideQuery.matches && motionQuery.matches && !(conn && conn.saveData === true);
-    }
-    function sync(v) {
-      if (mayPlay() && v._near) {
-        if (!v.paused) return;
-        v.muted = true;  // the attribute says so too; some engines only trust the property
-        var pr = v.play();
-        if (pr && pr.catch) pr.catch(function () { /* autoplay refused: the poster stays */ });
-      } else if (!v.paused) {
-        v.pause();
-      }
-    }
-    function syncAll() { videos.forEach(sync); }
-
-    var near = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var v = e.target._video;
-        if (!v) return;
-        v._near = e.isIntersecting;
-        sync(v);
-      });
-    }, { rootMargin: "100% 0px" });
-    videos.forEach(function (v) {
-      var slide = v.closest("section") || v;
-      slide._video = v;
-      v._near = false;
-      near.observe(slide);
-    });
-
-    window.addEventListener("resize", syncAll);
-    if (motionQuery.addEventListener) motionQuery.addEventListener("change", syncAll);
   }
 })();

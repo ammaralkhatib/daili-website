@@ -15,8 +15,9 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
-  PAGES, FEATURES, COMPARE_ROWS, COMPARE_MARKS, imageSize,
-  SHOT_LOCALE, STORY_CARDS, STORY_ICONS, WEB_APP_URL,
+  PAGES, imageSize, SHOT_LOCALE, WEB_APP_URL,
+  MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_CARDS, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
+  MEMBER_TILES_AFTER, HOME_FAMILY, ORBIT_TILES, FLOW_STEPS, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
 } from './site.config.mjs';
@@ -411,10 +412,7 @@ function renderFooterLinks(loc) {
   return parts.join('\n      ');
 }
 
-/** One consistent footer everywhere. On the landing page it is rendered inside
- *  the last slide instead of after <main>: with mandatory scroll-snap a footer
- *  that sits outside the last snap target can never be scrolled to. Same markup
- *  either way, built here so the two placements cannot drift. */
+/** One consistent footer everywhere, after </main> on every page. */
 function renderFooter(loc) {
   return `<footer>
   <div class="wrap cols">
@@ -450,203 +448,185 @@ function imgSrc(name, loc) {
 }
 
 /**
- * The web app's browser window, the one image on the page that is NOT localized:
- * web-calendar.webp is a capture of app.daili.app, and the web app speaks
- * English and German only, so there is no 28-locale set to point at. It is the
- * first thing the web slide shows, full width, so it keeps its intrinsic size.
+ * The home page's lists (claude-prompts/2026-09-28/bevel-mock/index.html). The
+ * words come from content/<loc>.json (home.*, hero.*), the drawing around them
+ * — glyphs, tones, positions, photos — from site.config.mjs. Built here rather
+ * than looped in landing.html because almost every item carries per-item data
+ * the template engine has no index for. A list whose length does not match its
+ * data throws, naming the locale: a card rendered half-empty is not something
+ * to find in production.
  */
-function renderWebShot(loc) {
-  const { width, height } = imageSize('web-');
-  return { src: imgSrc('web-calendar', loc), width, height };
+function homeIcon(name, width = 2) {
+  if (!(name in HOME_ICONS)) throw new Error(`HOME_ICONS has no '${name}' (${Object.keys(HOME_ICONS).join(', ')})`);
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${HOME_ICONS[name]}</svg>`;
 }
 
-/**
- * One floating card: the drawing from STORY_CARDS around the two strings from
- * story.cards.<chapter>[i]. `t` is the bold line, `s` the small one under it —
- * every card has exactly those two, and a card that does not names its locale
- * and its chapter on the way out rather than rendering half a card.
- */
-function storyCard(spec, card, chapter, i, where) {
-  for (const k of ['t', 's']) {
-    if (!card || typeof card !== 'object' || !(k in card) || !String(card[k]).trim()) {
-      throw new Error(`story.cards.${chapter}[${i}] has no non-empty '${k}' in ${where}`);
-    }
-  }
-  const av = (color, initial) => `<span class="av" style="background:var(--${color})">${escapeHtml(initial)}</span>`;
-  const cls = ['fc'];
-  let lead = '', trail = '';
-
-  if (spec.kind === 'pill') {
-    cls.push('pill');
-    lead = '<span class="dot"></span>';
-  } else if (spec.kind === 'av') {
-    // `box` is the to-do row: an empty checkbox in front, the assignee behind.
-    lead = spec.box ? '<span class="box"></span>' : av(spec.color, spec.initial);
-    if (spec.box) trail = av(spec.color, spec.initial);
-  } else if (spec.kind === 'avs') {
-    lead = `<span class="avs">${spec.group.map((c, j) => av(c, spec.initials[j])).join('')}</span>`;
-  } else if (spec.kind === 'tick') {
-    cls.push('chk');
-    lead = '<span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>';
-  } else if (spec.kind === 'badge') {
-    cls.push('badge-s');
-    lead = '<i></i>';
-  } else if (spec.kind.startsWith('ico:')) {
-    const glyph = spec.kind.slice(4);
-    if (!(glyph in STORY_ICONS)) {
-      throw new Error(`STORY_CARDS.${chapter}[${i}] wants icon '${glyph}', which is not a key in STORY_ICONS (${Object.keys(STORY_ICONS).join(', ')})`);
-    }
-    lead = `<span class="ico${spec.tone === 'amber' ? ' amber' : ''}"><svg viewBox="0 0 24 24">${STORY_ICONS[glyph]}</svg></span>`;
-  } else {
-    throw new Error(`STORY_CARDS.${chapter}[${i}] has kind '${spec.kind}', which nothing renders`);
-  }
-
-  const dur = spec.dur ? `;--dur:${spec.dur}` : '';
-  return `        <div class="${cls.join(' ')}" style="${spec.pos}${dur}">${lead}<span><b>${escapeHtml(card.t)}</b><small>${escapeHtml(card.s)}</small></span>${trail}</div>`;
-}
-
-/**
- * The scroll story: seven chapters, one per FEATURES entry, and one sticky
- * phone on the mint slab holding seven stacked screenshots. Design B (002)
- * took the hero out of the story — it is its own slide above the showcase now —
- * and moved the floating cards into the showcase panel (renderShowcase).
- *
- * Returns the pieces rather than one blob, because they land in different
- * places in landing.html — the text column, the phone and the dots — and every
- * piece has to stay in the same order as the others. Each chapter carries its
- * own copy of its screenshot (.mshot), shown instead of the stage on a phone.
- *
- * `--a` / `--w` on each element are the mock's build-up numbers: where in the
- * chapter's 0..1 scroll progress it starts appearing and how long it takes.
- */
-function renderStory(loc) {
+function renderHome(loc) {
   const where = `content/${loc}.json`;
   const c = content[loc];
-
-  // The store the family chapter's button sends people to: the first one the app
-  // can actually be installed from, which is the same rule the sticky CTA uses.
-  // With no store live at all it points at the web app rather than at nothing.
-  const store = [stores.ios, stores.android].find((st) => st.available);
-  const ctaHref = store ? store.url : WEB_APP_URL;
-
-  // Screen 0 is the slab's first paint, so it is the one not left lazy. It is
-  // not the LCP any more — the hero's headline is — so no fetchpriority either.
-  const shot = (name, alt, k) => {
-    const { width, height } = imageSize(name);
-    const load = k === 0 ? '' : ' loading="lazy"';
-    return `<img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" style="--k:${k}"${load} decoding="async">`;
+  const h = (key) => lookup(c, key, where);
+  const e = escapeHtml;
+  const list = (key, n) => {
+    const v = h(key);
+    if (!Array.isArray(v) || v.length !== n) throw new Error(`${key} in ${where} must have exactly ${n} entries, has ${Array.isArray(v) ? v.length : 'none'}`);
+    return v;
   };
-  // The same screenshot again, for the plain page a phone gets. All lazy: on a
-  // phone the hero and the showcase come first.
-  const mshot = (name, alt) => {
+  const homeImg = (name) => `/assets/img/home/${name}.webp`;
+  const photo = (name, extra = '') => {
     const { width, height } = imageSize(name);
-    return `<div class="mshot"><img src="${imgSrc(name, loc)}" alt="${escapeHtml(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async"></div>`;
+    return `<img src="${homeImg(name)}" alt="" width="${width}" height="${height}" loading="lazy" decoding="async"${extra}>`;
   };
+  const ico = (name, tone, style = '') => `<span class="ico c-${tone}"${style ? ` style="${style}"` : ''}>${homeIcon(name)}</span>`;
+  const ck = `<span class="ck">${homeIcon('check', 3)}</span>`;
+  const fcIn = (icon, tone, t, s, tick) => `<div class="fc-in">${ico(icon, tone)}<span class="fc-tx"><b>${e(t)}</b><span>${e(s)}</span></span>${tick ? ck : ''}</div>`;
+  const phone = (shot, { cls = '', style = '', alt = '', eager = false } = {}) => {
+    const { width, height } = imageSize(shot);
+    return `<div class="phone${cls ? ` ${cls}` : ''}"${style ? ` style="${style}"` : ''}><div class="scr"><img src="${imgSrc(shot, loc)}" alt="${e(alt)}" width="${width}" height="${height}"${eager ? '' : ' loading="lazy"'} decoding="async"></div></div>`;
+  };
+  // Headline words, one span each, for the intro. A line with no spaces (CJK,
+  // Thai) is one word, which is exactly right for those scripts.
+  const words = (s) => e(s).split(/\s+/).filter(Boolean).map((w) => `<span class="w">${w}</span>`).join(' ');
+  const watch = (cls) => `<div class="watch${cls ? ` ${cls}` : ''}" aria-hidden="true"><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face">
+        <div class="t1"><span>${e(h('home.watch.upNext'))}</span><span>09:41</span></div>
+        <div class="ev"><b>${e(h('home.watch.ev'))}</b><span>${e(h('home.watch.evs'))}</span></div>
+        <div class="ev2"><i></i>${e(h('home.watch.list'))}</div>
+      </div></div></div>`;
 
-  const screens = [];
-  const chapters = [];
+  // ---- hero ----
+  const heroCards = list('home.hero.cards', HERO_CARDS.length).map((card, i) => {
+    const d = HERO_CARDS[i];
+    // Rendered ticked: the finished state for a reader without JavaScript or
+    // with reduced motion. home.js unticks them and ticks them again on scroll.
+    return `      <div class="fc hcard done${d.hideM ? ' hide-m' : ''}" style="inset-inline-start:${d.start};top:${d.top}px" data-dir="${d.dir}" data-i="${i}" aria-hidden="true">${fcIn(d.icon, d.tone, card.t, card.s, true)}</div>`;
+  }).join('\n');
+  const works = list('home.works.items', WORKS_ICONS.length)
+    .map((t, i) => `      <span class="wk">${homeIcon(WORKS_ICONS[i])}${e(t)}</span>`).join('\n');
 
-  FEATURES.forEach((f, k) => {
-    const fc = lookup(c, `features.${f.key}`, where);
-    for (const key of ['eyebrow', 'h2', 'p', 'bullets', 'alt']) {
-      if (!(key in fc)) throw new Error(`missing key 'features.${f.key}.${key}' in ${where}`);
-    }
-    screens.push(`          ${shot(f.shot, fc.alt, k)}`);
-
-    const bullets = fc.bullets.length
-      ? `\n          <ul>\n${fc.bullets.map((b, i) =>
-        `            <li class="by" style="--a:${(0.7 + i * 0.06).toFixed(2)};--w:.08">${escapeHtml(b)}</li>`).join('\n')}\n          </ul>`
-      : '';
-    // Only the last chapter ends with a button: it is the end of the story, and
-    // a call to action on every chapter is a page that keeps interrupting itself.
-    const cta = f.key === 'family'
-      ? `\n          <div class="ctas by" style="--a:.8;--w:.1"><a class="btn btn-primary" href="${ctaHref}" rel="noopener">${escapeHtml(c.cta.sticky)}</a></div>`
-      : '';
-
-    // The header's "Features" link lands on the first chapter.
-    //
-    // "01 — Calendar": two digits, then the feature's own name. <bdi> around
-    // the number so /ar/ keeps it a unit at the start of its RTL line.
-    const num = String(k + 1).padStart(2, '0');
-    chapters.push(`      <div class="chapter" data-chapter="${k}"${k === 0 ? ' id="features"' : ''}>
-        ${mshot(f.shot, fc.alt)}
-        <div class="txt">
-          <span class="num by" style="--a:.42;--w:.12"><bdi>${num}</bdi> — ${escapeHtml(fc.eyebrow)}</span>
-          <h2 class="by" style="--a:.45;--w:.14">${escapeHtml(fc.h2)}</h2>
-          <p class="p by" style="--a:.6;--w:.12">${escapeHtml(fc.p)}</p>${bullets}${cta}
-        </div>
-      </div>`);
+  // ---- members ----
+  const badges = list('home.members.badges', MEMBER_BADGES.length).map((b, i) =>
+    `        <div class="badge">${ico(MEMBER_BADGES[i].icon, MEMBER_BADGES[i].tone)}<div><b>${e(b.t)}</b><span>${e(b.s)}</span></div></div>`).join('\n');
+  const h2a = h('home.members.h2a');
+  if (h2a.split('{count}').length !== 2) throw new Error(`home.members.h2a in ${where} must contain {count} exactly once`);
+  const count = new Intl.NumberFormat(loc).format(MEMBERS_COUNT);
+  const membersH2 = `${e(h2a).replace('{count}', `<span data-count="${MEMBERS_COUNT}">${count}</span>`)}<br>${e(h('home.members.h2b'))}`;
+  const cards = list('home.members.cards', MEMBER_CARDS.length);
+  const tiles = list('home.members.tiles', MEMBER_TILES_AFTER.length);
+  const tileHtml = [
+    `<div class="mcard tile g-lake">${ico('cal', 'lake')}<div><div class="big">${e(tiles[0].big)}</div><b>${e(tiles[0].t)}</b></div></div>`,
+    `<div class="mcard tile g-honey"><img src="${homeImg('minzi_sit')}" alt="" width="120" height="120" loading="lazy" decoding="async"><div><b>${e(tiles[1].t)}</b></div></div>`,
+  ];
+  const row = [];
+  cards.forEach((card, i) => {
+    const d = MEMBER_CARDS[i];
+    row.push(`<div class="mcard">${photo(d.photo, ' class="ph"')}<div class="cap">${e(card.cap)}</div><div class="ov"><div class="fc${d.done ? ' done' : ''}">${fcIn(d.icon, d.tone, card.t, card.s, true)}</div></div></div>`);
+    const k = MEMBER_TILES_AFTER.indexOf(i);
+    if (k !== -1) row.push(tileHtml[k]);
   });
+  // Twice, for the endless loop: the CSS moves the track by exactly one set.
+  // The copy is hidden from screen readers, so the row is read once.
+  const marquee = `      <div class="marq-set">${row.join('')}</div>\n      <div class="marq-set" aria-hidden="true">${row.join('')}</div>`;
+
+  // ---- start the day ----
+  const day = list('home.day.cards', 3);
+  const dayCards = [
+    `        <article class="fcard g-lake" data-r><h3>${e(day[0].h3)}</h3><p>${e(day[0].p)}</p>
+          ${phone('shot-calendar', { cls: 'par' })}<div class="fc fly" style="margin-inline-start:-150px" aria-hidden="true">${fcIn('cal', 'lake', day[0].t, day[0].s, false)}</div></article>`,
+    `        <article class="fcard g-leaf" data-r><h3>${e(day[1].h3)}</h3><p>${e(day[1].p)}</p>
+          ${phone('shot-shopping', { cls: 'par' })}<div class="fc fly done" style="margin-inline-start:-120px" aria-hidden="true">${fcIn('cart', 'leaf', day[1].t, day[1].s, true)}</div></article>`,
+    `        <article class="fcard g-honey" data-r><h3>${e(day[2].h3)}</h3><p>${e(day[2].p)}</p>
+          ${phone('shot-habits', { cls: 'par' })}<div class="fc fly" style="margin-inline-start:-140px" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(day[2].t)}</b><span>${e(day[2].s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div></article>`,
+  ].join('\n');
+  const dinnerVis = `${phone('shot-mealplan', { cls: 'par' })}<div class="recipe fly" style="inset-inline-start:6%;top:300px" aria-hidden="true"><div class="rimg"><i style="width:60px;height:60px;left:20px;top:22px;background:#F9D08A;opacity:.8"></i><i style="width:90px;height:90px;right:-10px;top:30px;background:#7A3A1F;opacity:.35"></i><i style="width:26px;height:26px;left:100px;top:70px;background:#5FA76A"></i></div><b>${e(h('home.dinner.t'))}</b><span>${e(h('home.dinner.s'))}</span><span class="add">${homeIcon('cart')}${e(h('home.dinner.add'))}</span></div>`;
+  const orbit = ORBIT_TILES.map((t) => `<div class="tile" style="left:${t.x}%;top:${t.y}%"><div class="tile-in" style="--r:${t.r}deg;color:${t.color}">${homeIcon(t.icon)}</div></div>`).join('');
+  const calendarsVis = `<div class="orbit" data-orbit aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>${orbit}</div>${phone('shot-calendar', { cls: 'par cal-phone' })}<div class="fc fly" style="inset-inline-start:6%;top:420px" aria-hidden="true">${fcIn('cal', 'lake', h('home.calendars.t'), h('home.calendars.s'), false)}</div>`;
+
+  // ---- Daili Plus ----
+  const avatars = [0, 1, 2].map(() => HOME_FAMILY.map((m) =>
+    `<div class="av"><div class="ring-av"><img src="${homeImg(`av-${m.av}`)}" alt="" width="200" height="200" loading="lazy" decoding="async"></div><span class="nm">${e(m.name)}</span></div>`).join('')).join('');
+  const aiHead = (s) => `<div class="hd">${homeIcon('spark')}${e(s)}</div>`;
+  const aiRow = (icon, tone, t, s) => `<div class="row">${ico(icon, tone, 'width:30px;height:30px')}<div><b>${e(t)}</b><span>${e(s)}</span></div></div>`;
+  const rows = list('home.plus.letter.rows', 3);
+  const icard = (tone, key, shot, pos, inner) => `      <article class="icard i-${tone}"><div class="tx"><h3>${e(h(`home.plus.${key}.h3`))}</h3><p>${e(h(`home.plus.${key}.p`))}</p></div>
+        <div class="vis">${phone(shot)}<div class="ai-card fly" style="${pos}" aria-hidden="true">${inner}</div></div></article>`;
+  const icards = [
+    icard('berry', 'video', 'shot-recipes', 'inset-inline-start:-4%;top:250px',
+      `${aiHead(h('home.plus.video.hd'))}<div class="vid"><span>${homeIcon('play')}</span></div><div class="ttl">${e(h('home.plus.video.title'))}</div>${aiRow('meal', 'clay', h('home.plus.video.t'), h('home.plus.video.s'))}`),
+    icard('clay', 'letter', 'shot-calendar', 'inset-inline-start:-6%;top:230px',
+      `${aiHead(h('home.plus.letter.hd'))}${aiRow('cal', 'lake', rows[0].t, rows[0].s)}${aiRow('people', 'berry', rows[1].t, rows[1].s)}${aiRow('photo', 'honey', rows[2].t, rows[2].s)}<span class="add">${e(h('home.plus.letter.add'))}</span>`),
+    icard('leaf', 'ideas', 'shot-mealplan', 'inset-inline-start:-4%;top:260px',
+      `${aiHead(h('home.plus.ideas.hd'))}<div class="ttl">${e(h('home.plus.ideas.title'))}</div>${aiRow('meal', 'leaf', h('home.plus.ideas.t'), h('home.plus.ideas.s'))}<span class="add">${e(h('home.plus.ideas.add'))}</span>`),
+  ].join('\n');
+
+  // ---- workflows ----
+  const items = list('home.flow.items', FLOW_STEPS.length);
+  const toasts = list('home.flow.toasts', FLOW_STEPS.length);
+  const prog = '<svg class="prog" viewBox="0 0 26 26" aria-hidden="true"><circle class="bg" cx="13" cy="13" r="11"/><circle class="fg" cx="13" cy="13" r="11"/></svg>';
+  const flowList = items.map((it, i) => `          <button class="fl${i === 0 ? ' on' : ''}" type="button" data-fl="${i}" data-tint="${FLOW_STEPS[i].tint}"><span class="tp">${ico(FLOW_STEPS[i].icon, FLOW_STEPS[i].tone)}<b>${e(it.t)}</b>${prog}</span><span class="desc"><span>${e(it.d)}</span></span></button>`).join('\n');
+  // The overlays sit on the screenshot at the mock's measured places (% of the
+  // screen), physical left on purpose: the screenshot does not mirror in /ar/.
+  // Step 1's overlays carry .go in the markup, so a reader without JavaScript
+  // sees step 1 finished; home.js restarts them per step.
+  const shots = FLOW_STEPS.map((s, i) => {
+    const { width, height } = imageSize(s.shot);
+    return `<img class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" src="${imgSrc(s.shot, loc)}" alt="" width="${width}" height="${height}" loading="lazy" decoding="async">`;
+  }).join('');
+  const tap = (i, style) => `<span class="tap" data-ov="${i}" style="${style}">${homeIcon('check', 3)}</span>`;
+  const flowVis = `        <div class="bgc" data-bgc style="background:${FLOW_STEPS[0].tint}"></div>
+        <div class="phone" aria-hidden="true"><div class="scr">${shots}<span class="pillev go" data-ov="0" style="left:20%;top:75.5%;width:24%">${e(h('home.flow.pill'))}</span>${tap(1, 'left:11.5%;top:23.2%')}${tap(2, 'left:11.5%;top:28.5%')}${tap(3, 'left:87%;top:75%')}</div></div>
+${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" data-to="${i}" aria-hidden="true">${fcIn(FLOW_STEPS[i].toast, FLOW_STEPS[i].toastTone, t.t, t.s, false)}</div>`).join('\n')}
+        <img class="jump" data-jump src="${homeImg('minzi_jump')}" alt="" width="120" height="120" loading="lazy" decoding="async">`;
+
+  // ---- every screen ----
+  const wgItems = list('home.screens.widgets.items', 3);
+  const days = list('home.screens.trmnl.days', 4);
+  const { width: ww, height: wh } = imageSize('web-');
+  const bento = [
+    `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch')}</article>`,
+    `        <article class="bx g-berry" data-r><h3>${e(h('home.screens.widgets.h3'))}</h3><p>${e(h('home.screens.widgets.p'))}</p>
+          <div class="wg wg-next" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.next'))}</div><div class="big">${e(h('home.screens.widgets.swim'))}<br>16:30</div><div class="who">Noah</div></div>
+          <div class="wg wg-habits" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.habits'))}</div><div class="big">4 / 9</div><div class="sm">${e(h('home.screens.widgets.done'))}</div></div>
+          <div class="wg wg-list" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.groceries'))}</div><div class="li x"><i class="x"></i><span>${e(wgItems[0])}</span></div><div class="li"><i></i><span>${e(wgItems[1])}</span></div><div class="li"><i></i><span>${e(wgItems[2])}</span></div></div></article>`,
+    `        <article class="bx span2 g-lake" data-r><h3>${e(h('home.screens.trmnl.h3'))}</h3><p>${e(h('home.screens.trmnl.p'))}</p>
+          <div class="eink" aria-hidden="true"><div class="pap">${days.map((d) => `<div><b>${e(d.d)}</b>${d.ev.map((x) => `<span>${e(x)}</span>`).join('')}</div>`).join('')}</div></div></article>`,
+    `        <article class="bx span2 g-honey bx-low" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
+          <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>app.daili.app</span></div><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.web.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></article>`,
+    `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
+          <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a' })}${phone('shot-notes', { cls: 'tilt-b' })}</div></article>`,
+  ].join('\n');
+
+  // ---- privacy, care ----
+  const glass = list('home.privacy.chips', PRIVACY_ICONS.length)
+    .map((t, i) => `        <span>${homeIcon(PRIVACY_ICONS[i])}${e(t)}</span>`).join('\n');
+  const mosaic = MOSAIC.map((col) => `      <div class="mcol" data-speed="${col.speed}" style="margin-top:${col.top}px">${col.photos.map(([p, ht]) => `<div style="height:${ht}px">${photo(p)}</div>`).join('')}</div>`).join('\n');
+
+  // ---- reviews: real ones only, and only from three up ----
+  let reviews = '';
+  if (REVIEWS.length >= 3) {
+    const rv = REVIEWS.map((r) => {
+      for (const k of ['title', 'text', 'name', 'source', 'stars', 'lang']) {
+        if (!(k in r)) throw new Error(`REVIEWS entry ${JSON.stringify(r).slice(0, 60)} has no '${k}'`);
+      }
+      const stars = Array.from({ length: Math.max(1, Math.min(5, r.stars)) }, () => homeIcon('star')).join('');
+      return `<article class="rv" lang="${e(r.lang)}"><div class="st" aria-label="${r.stars}/5">${stars}</div><b>${e(r.title)}</b><div class="who">${e(r.name)} · ${e(r.source)}</div><p>${e(r.text)}</p></article>`;
+    }).join('');
+    reviews = `  <section class="revs" id="reviews"><div class="marq"><div class="marq-track marq-slow"><div class="marq-set">${rv}</div><div class="marq-set" aria-hidden="true">${rv}</div></div></div></section>\n`;
+  }
+
+  // ---- the flat-lay ----
+  const flat = `${FLAT_OBJECTS.map((o) => `        <div class="obj" data-obj data-fx="${o.fx}" data-fy="${o.fy}" style="inset-inline-start:${o.start}%;top:${o.top}px;width:${o.w}px;transform:rotate(${o.rot}deg)">${photo(o.obj)}</div>`).join('\n')}
+        ${phone('shot-home', { cls: 'fphone' })}`;
 
   return {
-    chapters: chapters.join('\n\n'),
-    screens: screens.join('\n'),
-    dots: FEATURES.map((_, k) => `<i${k === 0 ? ' class="on"' : ''}></i>`).join(''),
+    h1: `${words(h('hero.h1a'))}<br>${words(h('hero.h1b'))}`,
+    phoneIcon: homeIcon('phone'),
+    checkIcon: homeIcon('check'),
+    sparkIcon: homeIcon('spark'),
+    heroPhone: phone('shot-home', { cls: 'hphone', alt: h('home.hero.alt'), eager: true }),
+    heroWatch: watch('hwatch'),
+    heroCards, works, badges, membersH2, marquee,
+    dayCards, dinnerVis, calendarsVis,
+    avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,
   };
-}
-
-/**
- * The showcase panel's three floating cards (STORY_CARDS.hero drawn around
- * story.cards.hero) and the row of feature chips under the panel — one per
- * FEATURES entry, reusing each feature's eyebrow, so the chips and the
- * chapters below can never name the features differently.
- */
-function renderShowcase(loc) {
-  const where = `content/${loc}.json`;
-  const c = content[loc];
-  const cards = lookup(c, 'story.cards.hero', where);
-  if (!Array.isArray(cards) || cards.length !== STORY_CARDS.hero.length) {
-    throw new Error(`story.cards.hero in ${where} has ${Array.isArray(cards) ? cards.length : 'no'} cards, STORY_CARDS.hero has ${STORY_CARDS.hero.length}`);
-  }
-  const { width, height } = imageSize('shot-home');
-  return {
-    cards: cards.map((card, i) => storyCard(STORY_CARDS.hero[i], card, 'hero', i, where)).join('\n'),
-    phone: `<img src="${imgSrc('shot-home', loc)}" alt="${escapeHtml(lookup(c, 'showcase.alt', where))}" width="${width}" height="${height}" loading="lazy" decoding="async">`,
-    chips: FEATURES.map((f) =>
-      `        <li>${escapeHtml(lookup(c, `features.${f.key}.eyebrow`, where))}</li>`).join('\n'),
-  };
-}
-
-/**
- * The life slide's three fact cards from life.facts[]. Exactly three, each a
- * {t, s} pair: the slide is laid out as a column of three beside the video, and
- * the third one is the inverted card.
- */
-function renderFacts(loc) {
-  const where = `content/${loc}.json`;
-  const facts = lookup(content[loc], 'life.facts', where);
-  if (!Array.isArray(facts) || facts.length !== 3
-    || !facts.every((f) => f && typeof f === 'object' && String(f.t ?? '').trim() && String(f.s ?? '').trim())) {
-    throw new Error(`life.facts in ${where} must be exactly 3 {t, s} objects with non-empty strings`);
-  }
-  return facts.map((f, i) =>
-    `        <div class="fact${i === 2 ? ' inv' : ''} by" style="--a:${(0.5 + i * 0.1).toFixed(1)};--w:.1"><b>${escapeHtml(f.t)}</b><span>${escapeHtml(f.s)}</span></div>`).join('\n');
-}
-
-function renderCompareTable(loc) {
-  const where = `content/${loc}.json`;
-  const cmp = lookup(content[loc], 'compare', where);
-  if (cmp.rows.length !== COMPARE_ROWS.length) {
-    throw new Error(`${where}: compare.rows has ${cmp.rows.length} labels, COMPARE_ROWS has ${COMPARE_ROWS.length} mark sets`);
-  }
-  // `d` marks every cell of the Daili column. The mock tints that column with
-  // `tr:has(td) td:nth-child(2)`, which Firefox ESR 115 — still shipping in
-  // Debian and on managed desktops — does not support, and an untinted column
-  // is a comparison table with no answer in it. So the class is on the cell as
-  // well, and the :has() rule in style.css is the progressive half.
-  // The table builds column by column as the slide settles: .by is the reveal
-  // primitive, .col1/.col2/.col3 are the three start times. The span is INSIDE
-  // the cell and the cell itself never moves, so the table's geometry — column
-  // widths, row heights, the tinted Daili column — is identical at --p 0 and 1.
-  const cell = (mark, col) => {
-    const glyph = COMPARE_MARKS[mark];
-    return `<td class="${col === 1 ? 'd ' : ''}${mark}"><span class="by col${col}" aria-hidden="true">${glyph}</span></td>`;
-  };
-  const th = (label, col) => `<th scope="col"${col === 1 ? ' class="d"' : ''}><span class="by col${col}">${escapeHtml(label)}</span></th>`;
-  const head = `        <tr><th scope="col">${escapeHtml(cmp.cols.feature)}</th>${th(cmp.cols.daili, 1)}${th(cmp.cols.gcal, 2)}${th(cmp.cols.paper, 3)}</tr>`;
-  const body = COMPARE_ROWS.map((r, i) =>
-    `        <tr><th scope="row">${escapeHtml(cmp.rows[i])}</th>${cell(r.daili, 1)}${cell(r.gcal, 2)}${cell(r.paper, 3)}</tr>`).join('\n');
-  return `      <table class="cmp">\n        <thead>\n${head}\n        </thead>\n        <tbody>\n${body}\n        </tbody>\n      </table>`;
 }
 
 /**
@@ -1085,6 +1065,19 @@ function build() {
   fs.renameSync(path.join(DIST, 'assets/style.css'), path.join(DIST, 'assets', cssName));
   fs.renameSync(path.join(DIST, 'assets/script.js'), path.join(DIST, 'assets', jsName));
   const cssHref = `/assets/${cssName}`, jsHref = `/assets/${jsName}`;
+  // The home page's own stylesheet and motion script, hashed the same way.
+  // Only the landing page loads them, after the three vendor scripts
+  // (static/assets/vendor/, unhashed: their names carry no version, and they
+  // change only with a deliberate upgrade).
+  const hashed = (name, ext) => {
+    const buf = fs.readFileSync(p(`static/assets/${name}.${ext}`));
+    const out = `${name}.${sha8(buf)}.${ext}`;
+    fs.renameSync(path.join(DIST, `assets/${name}.${ext}`), path.join(DIST, 'assets', out));
+    return `/assets/${out}`;
+  };
+  const homeCssHref = hashed('home', 'css'), homeJsHref = hashed('home', 'js');
+  const homeScripts = ['/assets/vendor/gsap.min.js', '/assets/vendor/ScrollTrigger.min.js', '/assets/vendor/lenis.min.js', homeJsHref]
+    .map((src) => `<script src="${src}" defer></script>`).join('\n');
   // The help search and the "Was this helpful?" counts, hashed the same way.
   // Loaded by /help/ and the articles. The endpoint goes in before hashing;
   // HELP_EVENTS_URL points it at a local mock for a test build only, and
@@ -1173,37 +1166,33 @@ function build() {
         page: {
           htmlLang: loc,
           dir: RTL.has(loc) ? 'rtl' : 'ltr',
-          // The class on <html> the scroll-snap rules hang off. Snap has to be
-          // set on the scroll container, which is <html>, and only the landing
-          // page snaps — `html:has(.story)` would have done it without a class
-          // and is not an option: Firefox ESR 115 ships no :has().
+          // The class on <html> for the landing page: light only, smooth scroll
+          // (Lenis) and no native smooth scroll-behavior. `html:has(.home)`
+          // would do it without a class and is not an option: Firefox ESR 115
+          // ships no :has().
           htmlClass: pg.id === 'landing' ? 'landing' : '',
           cssHref, jsHref, helpSearchHref,
           homeHref: dirFor(loc),
-          // The grid became the story; #features is now its first feature
-          // chapter, so the header link and any old bookmark still land right.
-          featuresHref: pg.id === 'landing' ? '#features' : `${dirFor(loc)}#features`,
+          // The header's section links (#features, #plus, …) point into the
+          // home page: bare anchors on it, <home>#… everywhere else.
+          anchorBase: pg.id === 'landing' ? '' : dirFor(loc),
+          homeCss: pg.id === 'landing' ? `<link rel="stylesheet" href="${homeCssHref}">` : '',
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
           footerLinks: renderFooterLinks(loc),
           footerHtml: renderFooter(loc),
-          // Every page but the landing one closes with the footer after <main>.
-          // The landing page renders the same markup inside its last slide.
-          siteFooter: pg.id !== 'landing',
+          // Every page closes with the footer after <main>.
+          siteFooter: true,
           legalBody,
           postBody,
           webAppUrl: WEB_APP_URL,
-          story: pg.id === 'landing' ? renderStory(loc) : '',
-          showcase: pg.id === 'landing' ? renderShowcase(loc) : '',
-          facts: pg.id === 'landing' ? renderFacts(loc) : '',
-          webShot: pg.id === 'landing' ? renderWebShot(loc) : '',
-          compareTable: pg.id === 'landing' ? renderCompareTable(loc) : '',
+          home: pg.id === 'landing' ? renderHome(loc) : {},
           faq: pg.id === 'landing' ? renderFaq(loc) : '',
-          pricingHref: pg.id === 'landing' ? '#pricing' : `${dirFor(loc)}#pricing`,
           headExtra: '',
         },
       };
-      data.page.headExtra = renderHead(pg, loc, cssHref, isRootLanding ? detector : null, postBody);
+      data.page.headExtra = renderHead(pg, loc, cssHref, isRootLanding ? detector : null, postBody)
+        + (pg.id === 'landing' ? `\n${homeScripts}` : '');
 
       const body = render(templates[pg.template], data, includes, where);
       data.page.body = body;

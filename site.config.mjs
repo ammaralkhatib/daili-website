@@ -889,18 +889,6 @@ export const BLOG_POSTS = [
 ];
 
 /**
- * The landing page's feature sections, in order.
- *
- * Structure lives here, words live in content/<locale>.json under
- * features.<key>. Keeping them apart means a translator only ever sees prose —
- * never an image filename or a layout class — and adding a feature is a code
- * change rather than 23 translation changes.
- *
- * `art`: 'phone' = a phone mockup, 'duo' = a phone mockup in the wider slot,
- * 'ill' = a flat illustration. The alternating .alt class is derived from the
- * index, exactly as the hand-written page had it.
- */
-/**
  * The /blog/ index's own copy.
  *
  * These are literals here, not keys in content/<locale>.json, and that is
@@ -1007,108 +995,190 @@ export const HELP_TOPICS = {
  */
 export const HELP_LOCALES = ['en', 'de', 'nl', 'sv', 'da', 'nb', 'fi', 'fr', 'it', 'es', 'pt', 'pl', 'cs', 'sk', 'ro', 'tr', 'el', 'uk', 'bg', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'id'];
 
-/**
- * The nine feature chapters of the scroll story, in story order.
- *
- * `shot` is the screenshot the sticky phone shows while that chapter is on
- * screen, and every entry has one now: the story is one screen per feature, so
- * there is no chapter whose phone could be empty. build.mjs resolves the name
- * per locale through imgSrc(), so /de/ shows the German capture and a locale
- * without one falls back to shots/en/.
- *
- * The `tile` field and TILE_ICONS went with the bento grid in 016 — a span
- * count and a glyph were the grid's layout, and the grid is gone.
- *
- * The copy — eyebrow, h2, p, bullets, alt — stays in content/<locale>.json
- * under features.<key>, unchanged since 013. The story renders `eyebrow` as
- * the numbered label above each chapter's headline ("01 — Calendar"), and the
- * showcase slide repeats it as its row of feature chips.
- */
-export const FEATURES = [
-  { key: 'calendar',  shot: 'shot-calendar' },
-  { key: 'shopping',  shot: 'shot-shopping' },
-  { key: 'todos',     shot: 'shot-todos' },
-  { key: 'habits',    shot: 'shot-habits' },
-  { key: 'meals',     shot: 'shot-mealplan' },
-  { key: 'birthdays', shot: 'shot-birthdays' },
-  { key: 'notes',     shot: 'shot-notes' },
-  { key: 'vault',     shot: 'shot-documents' },
-  { key: 'family',    shot: 'shot-family' },
-];
-
-/** The web app the story's web slide, the header and the footer all point at. */
+/** The web app the header, the hero, the final section and the footer point at. */
 export const WEB_APP_URL = 'https://app.daili.app';
 
 /**
- * The line-art glyphs the floating cards use, keyed by the name STORY_CARDS
- * refers to as `ico:<glyph>`. Here rather than in content for the same reason
- * the tile icons were: a path is not translated. Only the glyphs a card still
- * draws: the per-chapter cards went with Design B (2026-09-27, 002).
+ * The home page's member count, in the members headline (home.members.h2a,
+ * {count}), formatted per locale with Intl.NumberFormat.
+ * Real, current user count — Ammar updates it by hand. Never round up.
  */
-export const STORY_ICONS = {
-  cart: '<path d="M3 4h2l2.4 11h11l2-8H6.5"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/>',
+export const MEMBERS_COUNT = 1000;
+
+/**
+ * Real app-store reviews for the home page. The reviews section renders only
+ * when there are at least three; with fewer there is no section and no markup
+ * at all. Never put placeholder or invented text here.
+ *
+ * Shape, one object per review, shown in its original language:
+ *   { title: 'Finally one app for all of us',
+ *     text: 'We used three apps and a paper calendar…',
+ *     name: 'Anna K.',
+ *     source: 'App Store' | 'Google Play',
+ *     stars: 5,          // 1..5
+ *     lang: 'en' }       // the review's own language, written as lang= on the card
+ */
+export const REVIEWS = [];
+
+/**
+ * The home page (claude-prompts/2026-09-28/bevel-mock/index.html): the drawing
+ * around the words. Every string is in content/<loc>.json under home.*; this is
+ * only what is not translated — glyphs, colours, positions, file names.
+ *
+ * HOME_ICONS: 24×24 line glyphs (stroke = currentColor), keyed by name.
+ */
+export const HOME_ICONS = {
+  cal: '<rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+  cart: '<path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/>',
+  note: '<path d="M5 4h10l4 4v12H5z"/><path d="M9 11h6M9 15h4"/>',
+  flame: '<path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"/>',
+  todo: '<rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M8 12l2.5 2.5L16 9"/>',
+  meal: '<path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M7 7h4M17 21V3c-2 1.5-3 4-3 7v3h3"/>',
+  cake: '<path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"/><path d="M12 11V7"/><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"/>',
+  check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  phone: '<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
+  watch: '<rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.6-3h4.8l.6 3M9 18l.6 3h4.8l.6-3"/>',
+  widgets: '<rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/>',
+  eink: '<rect x="3" y="5" width="18" height="13" rx="2"/><path d="M7 9h6M7 12h10M7 15h4"/>',
+  outlook: '<rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 9h5.5v9H15"/><circle cx="9" cy="12" r="2.6"/>',
+  globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"/>',
+  lang: '<path d="M4 5h9M8.5 3v2M6 5c.5 3 2.5 5.5 5 7M11 5c-.8 4-3.5 7-7 8.5"/><path d="M12.5 20l4-9 4 9M14 17h5"/>',
+  mountain: '<path d="M3 19l6-10 4 6 2-3 6 7z"/>',
+  flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
+  people: '<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.3.2 4 1.9 4.5 4.8"/>',
+  photo: '<rect x="3.5" y="5" width="17" height="14" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16l-5-5-8 8"/>',
+  spark: '<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>',
+  play: '<path d="M7 4.5v15l12-7.5z" fill="currentColor"/>',
+  paw: '<circle cx="7" cy="10" r="1.8"/><circle cx="11" cy="6.5" r="1.8"/><circle cx="15.5" cy="7.5" r="1.8"/><circle cx="18" cy="11.5" r="1.8"/><path d="M8.5 17.5c0-2.5 2-4.5 4-4.5s4 2 4 4.5c0 1.5-1.2 2.5-2.5 2.2-1-.2-2-.2-3 0-1.3.3-2.5-.7-2.5-2.2z"/>',
+  noads: '<rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="M7.5 15l2-6 2 6M8.2 13h2.6M14 9v6h1.2a2.5 2.5 0 0 0 0-6z"/><path d="M4 4l16 16"/>',
+  notrack: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 4l16 16"/>',
+  nosell: '<circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5a4 4 0 1 0 0 7M7.5 11h6M7.5 13.5h6"/>',
+  folder: '<path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/>',
+  star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"/>',
 };
 
 /**
- * The SHAPE of the three floating cards in the showcase panel — never their
- * words. The words are `story.cards.hero[i].t` / `.s` in all 28 content files;
- * this is the drawing around them. Design B (claude-prompts/2026-09-27/
- * design-b-mock.html) moved the cards out of the story and into the video
- * panel, so only the one set is left; `story.cards.<feature>` is idle content.
- *
- *   kind  pill        a green event pill, the way the calendar draws one
- *         av          a coloured monogram avatar (`color` + `initial`)
- *         avs         the family's five avatars, overlapping
- *         ico:<name>  a square icon chip, glyph from STORY_ICONS
- *         tick        a checked-off row: green tick, `t` struck through
- *         badge       a small dark status pill with a blinking dot
- *   pos   where it floats in the panel, as CSS declarations. LOGICAL
- *         properties (inset-inline-start/end), so /ar/ mirrors from the same
- *         string. Percentages of the panel: its height follows the viewport.
- *   dur   the drift loop's period. Three different values so the cards never
- *         bob in unison.
- *   box   an unchecked checkbox before the text and the avatar after it.
- *   tone  'amber' recolours an icon chip.
- *
- * Positions and periods are the mock's Piano / Milk / Birthday cards. The third
- * card's words are "Take out the bins · Noah · done", so it keeps the ticked
- * row it has always been drawn as rather than the mock's cake: the key wins.
+ * The seven cards floating around the hero phone, in home.hero.cards order.
+ * `pos` is the desktop place as inline CSS (inset-inline-start, so /ar/ mirrors);
+ * `top` in px is also the order they get ticked in as you scroll. `dir` is
+ * which way the card flies off (-1 = towards the inline start). `hideM`
+ * hides the card below 860px (the mock's cards 3, 6 and 7).
  */
-export const STORY_CARDS = {
-  hero: [
-    { kind: 'pill', pos: 'inset-inline-start:10%;top:20%', dur: '8s' },
-    { kind: 'ico:cart', pos: 'inset-inline-end:11%;top:25%', dur: '10s' },
-    { kind: 'tick', pos: 'inset-inline-end:9%;top:58%', dur: '9s' },
-  ],
-};
-
-/**
- * The comparison table's marks. Words live in content under compare.rows[]
- * (row labels) and compare.cols (column headers); only the ✓/~/— marks are
- * here, because they are the same in every language.
- *
- * 'y' = yes, 'p' = partly, 'n' = no. Kept honest on purpose: a comparison
- * where the competitor loses every row reads as marketing, not as confidence.
- */
-export const COMPARE_ROWS = [
-  { daili: 'y', gcal: 'y', paper: 'p' }, // everyone's events in one place
-  { daili: 'y', gcal: 'y', paper: 'n' }, // reminders on every phone
-  { daili: 'y', gcal: 'n', paper: 'p' }, // shared shopping list
-  { daili: 'y', gcal: 'n', paper: 'n' }, // to-dos with a name on them
-  { daili: 'y', gcal: 'n', paper: 'n' }, // meal plan and recipes
-  { daili: 'y', gcal: 'p', paper: 'n' }, // kids get their own login
-  { daili: 'y', gcal: 'n', paper: 'n' }, // birthdays remembered every year
-  { daili: 'y', gcal: 'y', paper: 'n' }, // works on the phone and in the browser
-  { daili: 'y', gcal: 'n', paper: 'y' }, // no ads, nothing sold
+export const HERO_CARDS = [
+  { icon: 'cal', tone: 'lake', start: '3%', top: 40, dir: -1 },
+  { icon: 'cart', tone: 'leaf', start: '11%', top: 205, dir: -1 },
+  { icon: 'note', tone: 'berry', start: '1%', top: 380, dir: -1, hideM: true },
+  { icon: 'flame', tone: 'honey', start: '72%', top: 20, dir: 1 },
+  { icon: 'todo', tone: 'leaf', start: '78%', top: 190, dir: 1 },
+  { icon: 'meal', tone: 'clay', start: '70%', top: 460, dir: 1, hideM: true },
+  { icon: 'cake', tone: 'honey', start: '12%', top: 520, dir: -1, hideM: true },
 ];
 
-export const COMPARE_MARKS = { y: '✓', p: '~', n: '—' };
+/** The "Works with" row, in home.works.items order. */
+export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'globe'];
 
-/* The trust strip's three icons went with the strip itself in 016 — the story
-   has no room for a claims row between two chapters. `trust.pills[]` stays in
-   all 28 content files, idle: Ammar has not decided whether the strip comes
-   back somewhere, and re-translating 28 × 3 lines costs more than three unused
-   keys. Whatever renders it next needs its own icons. */
+/** The two badges above the members headline, in home.members.badges order. */
+export const MEMBER_BADGES = [{ icon: 'lang', tone: 'lake' }, { icon: 'mountain', tone: 'leaf' }];
+
+/**
+ * The members carousel: eight photo cards, in home.members.cards order, with
+ * the two tiles (home.members.tiles) at positions 3 and 7. `done` draws the
+ * widget ticked. Photos are static/assets/img/home/<photo>.webp.
+ */
+export const MEMBER_CARDS = [
+  { photo: 'p_kitchen', icon: 'note', tone: 'berry', done: false },
+  { photo: 'p_market', icon: 'cart', tone: 'leaf', done: true },
+  { photo: 'p_teen', icon: 'flame', tone: 'honey', done: true },
+  { photo: 'p_cake', icon: 'cake', tone: 'honey', done: false },
+  { photo: 'p_football', icon: 'cal', tone: 'lake', done: false },
+  { photo: 'p_super', icon: 'cart', tone: 'leaf', done: true },
+  { photo: 'p_desk', icon: 'todo', tone: 'leaf', done: true },
+  { photo: 'p_balcony', icon: 'flame', tone: 'honey', done: true },
+];
+/** After which photo card (0-based) each tile sits: 3rd and 7th in the row. */
+export const MEMBER_TILES_AFTER = [1, 4];
+
+/**
+ * The demo family in the Daili Plus avatar strip. Names are data, not content:
+ * they are the demo family's names in every language. `av` is the app's avatar
+ * file (static/assets/img/home/av-<av>.webp).
+ */
+export const HOME_FAMILY = [
+  { name: 'Lena', av: 'adult_1' },
+  { name: 'Marco', av: 'adult_7' },
+  { name: 'Emma', av: 'child_5' },
+  { name: 'Noah', av: 'child_1' },
+  { name: 'Mia', av: 'child_9' },
+  { name: 'Oma Rosi', av: 'adult_31' },
+  { name: 'Opa Karl', av: 'adult_20' },
+  { name: 'Lukas', av: 'child_14' },
+  { name: 'Sofia', av: 'adult_12' },
+];
+
+/** The twelve app tiles around the calendar orbit: glyph, colour, place. */
+export const ORBIT_TILES = [
+  { icon: 'cal', color: '#4F86B0', x: 50, y: 0, r: -8 },
+  { icon: 'watch', color: '#15271F', x: 50, y: 100, r: -6 },
+  { icon: 'globe', color: '#18A06A', x: 15, y: 85, r: 12 },
+  { icon: 'eink', color: '#15271F', x: 0, y: 50, r: -10 },
+  { icon: 'phone', color: '#A9628F', x: 15, y: 15, r: 6 },
+  { icon: 'outlook', color: '#2E6DB4', x: 28, y: 24, r: 9 },
+  { icon: 'flag', color: '#D9714A', x: 72, y: 24, r: -7 },
+  { icon: 'cake', color: '#E0A032', x: 24, y: 72, r: -9 },
+  { icon: 'widgets', color: '#4F86B0', x: 76, y: 76, r: 8 },
+  { icon: 'people', color: '#18A06A', x: 37, y: 37, r: 6 },
+  { icon: 'todo', color: '#18A06A', x: 63, y: 63, r: -8 },
+  { icon: 'photo', color: '#A9628F', x: 37, y: 63, r: 10 },
+];
+
+/**
+ * "See it in action": per step, the button's glyph and tone, the screenshot
+ * the phone shows, the ground tint behind it and the toast's glyph and tone.
+ * Words are home.flow.items[i] and home.flow.toasts[i].
+ */
+export const FLOW_STEPS = [
+  { icon: 'cal', tone: 'lake', shot: 'shot-calendar', tint: '#E4EEF6', toast: 'cal', toastTone: 'lake' },
+  { icon: 'cart', tone: 'leaf', shot: 'shot-shopping', tint: '#E8F6E2', toast: 'cart', toastTone: 'leaf' },
+  { icon: 'todo', tone: 'leaf', shot: 'shot-todos', tint: '#EEF3E6', toast: 'todo', toastTone: 'leaf' },
+  { icon: 'paw', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'flame', toastTone: 'honey' },
+];
+
+/** The six privacy chips' glyphs, in home.privacy.chips order. */
+export const PRIVACY_ICONS = ['noads', 'notrack', 'nosell', 'flag', 'folder', 'spark'];
+
+/**
+ * The photo mosaic above "Made with care": seven columns, each with its drift
+ * speed, its top offset (px) and its photos with their heights (px).
+ */
+export const MOSAIC = [
+  { speed: 2, top: 40, photos: [['p_hall', 230], ['p_grandpa', 200]] },
+  { speed: 1, top: 120, photos: [['p_kitchen', 300]] },
+  { speed: 1, top: 0, photos: [['p_bike', 230], ['p_picnic', 200]] },
+  { speed: 1, top: 90, photos: [['p_table', 300]] },
+  { speed: 3, top: 20, photos: [['p_stretch', 230], ['p_market', 200]] },
+  { speed: 3, top: 140, photos: [['p_cake', 300]] },
+  { speed: 3, top: 50, photos: [['p_groc', 230], ['p_balcony', 200]] },
+];
+
+/**
+ * The flat-lay around the last phone: twelve objects, each with its place
+ * (inset-inline-start %, top px), width, tilt and where it slides in from
+ * (fx/fy px; fx flips in RTL).
+ */
+export const FLAT_OBJECTS = [
+  { obj: 'o_tote', start: 4, top: 40, w: 250, rot: -10, fx: -300, fy: -80 },
+  { obj: 'o_notebook', start: 22, top: 330, w: 200, rot: 12, fx: -260, fy: 120 },
+  { obj: 'o_cake', start: 2, top: 420, w: 190, rot: 0, fx: -300, fy: 160 },
+  { obj: 'o_calendar', start: 20, top: 20, w: 170, rot: -6, fx: -200, fy: -200 },
+  { obj: 'o_mug', start: 32, top: 520, w: 120, rot: 0, fx: -120, fy: 220 },
+  { obj: 'o_keys', start: 62, top: 520, w: 150, rot: 18, fx: 160, fy: 220 },
+  { obj: 'o_lunch', start: 64, top: 30, w: 200, rot: 8, fx: 220, fy: -200 },
+  { obj: 'o_photos', start: 80, top: 60, w: 210, rot: -12, fx: 300, fy: -80 },
+  { obj: 'o_shoes', start: 76, top: 330, w: 220, rot: 10, fx: 280, fy: 120 },
+  { obj: 'o_folder', start: 88, top: 420, w: 170, rot: -4, fx: 300, fy: 160 },
+  { obj: 'o_cat', start: 50, top: 590, w: 150, rot: -8, fx: 0, fy: 260 },
+  { obj: 'o_crayons', start: 62, top: 290, w: 150, rot: 20, fx: 200, fy: 60 },
+];
 
 /**
  * Which store-screenshot set each site locale shows.
@@ -1167,12 +1237,18 @@ export const IMAGE_SIZES = {
   // computer" block are both drawn to.
   'web-': { width: 1600, height: 1000 },
   'logo': { width: 512, height: 512 },
+  // The home page's generated photos (3:4) and flat-lay objects (square),
+  // static/assets/img/home/p_*.webp and o_*.webp.
+  'p_': { width: 720, height: 956 },
+  'o_': { width: 520, height: 520 },
 };
 
 export const imageSize = (name) => {
   if (name.startsWith('shot-')) return IMAGE_SIZES['shot-'];
   if (name.startsWith('ill-')) return IMAGE_SIZES['ill-'];
   if (name.startsWith('web-')) return IMAGE_SIZES['web-'];
+  if (name.startsWith('p_')) return IMAGE_SIZES['p_'];
+  if (name.startsWith('o_')) return IMAGE_SIZES['o_'];
   return IMAGE_SIZES['logo'];
 };
 

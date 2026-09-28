@@ -6,7 +6,7 @@
  *    margin-left. That is what lets the Arabic build mirror itself from a
  *    single stylesheet instead of a generated second copy that drifts.
  *    Transforms have no logical form, so their direction lives in the
- *    --rot-* / --dir custom properties below and is flipped in one place.
+ *    --rot-* custom properties below and is flipped in one place.
  *    The redesign mock is written with physical right:/left:; everything
  *    lifted from it is converted on the way in.
  *
@@ -65,22 +65,8 @@
   --forest:#04613C; --forest-deep:#0B4A30; --on-forest:#FFFFFF;
   --mint:#DCEFDF; --mint-strong:#A9D9B8; --mint-soft:#EEF6EF;
   --amber:#E9A93B; --amber-soft:#FBF0D6;
-  /* The amber tile's icon chip. Its own pair rather than --amber/--mint,
-     because the chip has to sit on --amber-soft in both modes. */
-  --amber-ic:#F3DFB4; --amber-ink:#8A5A00;
   --line:#E4DFD1;
 
-  /* The app's five event/member colours. They label the dots in the hero
-     kicker and the avatars on the family tile — the only place on the page
-     where colour IS the content, which is why they do not flip in dark mode:
-     these are the same five colours the app itself draws. */
-  --cat-green:#1F8A55; --cat-amber:#D48B12; --cat-plum:#B85C9E;
-  --cat-sky:#3B82C4; --cat-red:#D4553F;
-
-  /* The "also on your computer" block is dark in BOTH modes (its ground is
-     --frame), so its accent cannot be --mint-strong: that token darkens in
-     dark mode and would put a near-black tick on a near-black card. */
-  --web-mint:#A9D9B8; --web-mint-ink:#10201A;
   --frame:#10201A;                 /* the phone bezel — must stay dark in dark mode */
   --shadow:16,29,22;
   --display:"Sofia Sans Condensed","Arial Narrow",Impact,sans-serif;
@@ -88,49 +74,16 @@
   --ease:cubic-bezier(.22,.8,.3,1);
   color-scheme:light;
 
-  /* The sticky header's height. It is the top edge of every snapped slide, the
-     scroll-padding of the whole page and the amount each chapter is shorter
-     than the viewport, so it is one number in one place — script.js reads it
-     back off <html> rather than hard-coding 64 a fourth time. */
-  --header-h:64px;
-  /* How much of the showcase panel shows under the hero on the first screen:
-     the video, the two upper cards and the top of the phone. 260px on short
-     screens (below). */
-  --peek:300px;
-
-  /* White ON one of the five category colours. Not --on-forest: that token
-     flips to near-black in dark mode, and the event pill stays green in both
-     modes because the app draws it green in both modes. */
-  --on-cat:#FFFFFF;
-
-  /* Text on the two grounds that stay dark in both modes — the life slide's
-     video card and its inverted fact card, both on --frame. Not --on-forest or
-     --paper: those flip in dark mode. */
-  --on-dark:#FFFFFF;
-
-  /* A veil over the two videos. Nothing in light mode; in dark mode the page
-     colour at 35 %, because both clips are light and would glare. */
-  --video-dim:transparent;
-
-  /* How wide the phone on the story's mint slab is (the mock's 300px). */
-  --pw:300px;
-
   /* Blog and legal furniture: the cream ground behind a post hero, a
      blockquote and a table head, and the radius they share. */
   --cream:#F4EDDE; --radius:22px;
 
   /* Direction-dependent geometry. Transforms cannot be expressed logically, so
      the sign lives here and [dir="rtl"] flips it exactly once. */
-  --dir:1;
-  --rot-laptop:1.2deg; --rot-phone:-3deg;
-  --rot-shot:-4deg; --rot-shot-cal:3deg; --rot-shot-shop:-6deg;
   --rot-brand-hover:-8deg;
 }
 
 [dir="rtl"]{
-  --dir:-1;
-  --rot-laptop:-1.2deg; --rot-phone:3deg;
-  --rot-shot:4deg; --rot-shot-cal:-3deg; --rot-shot-shop:6deg;
   --rot-brand-hover:8deg;
 }
 
@@ -148,37 +101,12 @@ p{color:var(--body)}
 h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
 h3{font-weight:700}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
-/* Design B's own measure: the hero, the showcase, the story, the life slide
-   and the price run at the mock's 1328px. */
-.wrap.wide{max-width:1328px;padding-inline:clamp(22px,4vw,56px)}
-/* The display face as a class, for the bits of the design that are type but
-   not headings: the slab's wordmark, the big price. */
-.disp{font-family:var(--display);font-weight:800;line-height:.9;letter-spacing:-.01em}
 /* A heading a screen reader needs and the design does not show. */
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 
-/* ---------- the one reveal primitive -------------------------------------
- * Everything on the home page that builds up as you scroll is this rule with
- * different numbers. --p (0..1) is how far the slide it lives in has settled,
- * set by script.js; --a is where in that progress the element starts
- * appearing and --w how much progress it needs to be fully in.
- *
- * The default is --p:1 — fully built, nothing hidden — and script.js is what
- * turns the animation ON by writing real values in its first frame. That way
- * round a blocked, failed or slow script leaves the complete page rather than a
- * blank one, which is the same "everything here is an enhancement" rule the
- * rest of this site follows. */
-.by{--a:0;--w:.15;--lift:28px;--v:clamp(0,calc((var(--p) - var(--a)) / var(--w)),1);
-  opacity:var(--v);transform:translateY(calc((1 - var(--v)) * var(--lift)))}
-/* The horizontal variant slides in from the inline-end side, so /ar/ mirrors. */
-.by.x{transform:translateX(calc((1 - var(--v)) * var(--lift) * var(--dir)))}
-
-/* 1.02 is the mock's leading, and it is right for display type at 3rem and up.
-   Everything set smaller — the legal pages, a step or tile heading at 1.35rem —
-   needs air or two lines touch, and most of these wrap in German. */
-.legal :is(h1,h2,h3),.step h3{line-height:1.2}
-/* Arabic and Thai carry marks above and below the line, which .9 clips. */
-:is([lang="ar"],[lang="th"]) :is(.hero h1,.chapter h2,.life-card h2,.fact b,.price .big){line-height:1.25}
+/* 1.02 is right for display type at 3rem and up. Everything set smaller — the
+   legal pages — needs air or two lines touch, and most of these wrap in German. */
+.legal :is(h1,h2,h3){line-height:1.2}
 
 /* Arabic and Thai need more leading than Latin at the same size. */
 [lang="ar"] body,[lang="th"] body,body[lang="ar"],body[lang="th"]{line-height:1.85}
@@ -198,37 +126,29 @@ h1,h2,h3,p,li,summary,figcaption{overflow-wrap:anywhere}
 .skip:focus{inset-inline-start:0}
 
 /* ---------- header ----------------------------------------------------------
- * Layout note, because the DOM order and the visual order differ on purpose.
+ * The floating pill of the 2026-09-28 home page, on every page. The <header>
+ * is a sticky, see-through strip that lets clicks through; only the pill
+ * (.nav) is solid. Sticky rather than fixed, so every page keeps its header
+ * room in the flow and nothing below had to move.
  *
- * The design wants, left to right: brand · the five links · the language chip ·
- * Download. On a phone it wants: brand · the language chip · a burger, with the
- * links AND Download dropping into a panel the burger opens.
- *
- * So the chip cannot live inside the panel, and Download must. .menu is that
- * panel — and on desktop it is `display:contents`, which dissolves it: .links,
- * .langpicker and .dl all become direct flex items of .nav and `order` puts the
- * chip between the links and the pill. Below 860px .menu becomes a real box
- * again and the chip, which was never inside it, simply stays in the header row.
- *
- * One DOM, one language picker, at every width — the mock reaches the same
- * result by shipping a second, abbreviated picker for phones.
+ * DOM order and visual order: brand · the links · the language chip · Get
+ * the app · burger. .menu is the burger's panel; on desktop it is
+ * `display:contents`, so the links sit in the pill as plain flex items. Below
+ * 860px .menu becomes a real box under the pill and the chip, the Get-the-app
+ * pill and the burger stay in the bar.
  * ------------------------------------------------------------------------- */
-header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
-header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(--shadow),.06)}
-/* 64px, and it is --header-h everywhere else on the page: the story's slides
-   are exactly one viewport minus this header, and script.js measures the slide
-   under the header line from the same number. */
-.nav{display:flex;align-items:center;gap:22px;height:var(--header-h)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:0}
-.brand img{width:36px;height:36px;border-radius:10px;transition:transform .5s var(--ease)}
+header{position:sticky;top:0;z-index:30;padding-block-start:14px;pointer-events:none}
+.nav{pointer-events:auto;position:relative;display:flex;align-items:center;gap:6px;width:max-content;max-width:calc(100% - 24px);margin-inline:auto;padding:7px;padding-inline-start:14px;border-radius:999px;background:color-mix(in srgb,var(--card) 74%,transparent);backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);box-shadow:0 8px 30px -12px rgba(var(--shadow),.25)}
+/* The wordmark: bare lowercase "daili", the mock's Figtree 700. */
+.brand{display:flex;align-items:center;gap:8px;margin-inline-end:14px;text-decoration:none;color:var(--ink);font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:-.02em;line-height:1}
+.brand img{width:26px;height:26px;border-radius:7px;transition:transform .5s var(--ease)}
 .brand:hover img{transform:rotate(var(--rot-brand-hover)) scale(1.06)}
 
 .menu{display:contents}
-.links{order:1;margin-inline-start:auto;display:flex;align-items:center;gap:6px}
-.links a.nl{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
-.links a.nl:hover{background:var(--mint-soft);color:var(--forest)}
-.links a.nl-web{color:var(--forest);font-weight:600}
-.langpicker{order:2;margin-inline-start:4px}
+.links{order:1;display:flex;align-items:center;gap:0}
+.links a.nl{text-decoration:none;color:var(--muted);font-weight:500;font-size:14px;line-height:1.2;padding:8px 11px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+.links a.nl:hover{background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--ink)}
+.langpicker{order:2}
 .dl{order:3}
 .burger{order:4}
 
@@ -239,15 +159,14 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 
 /* ---------- language picker ---------- */
 .langpicker{position:relative}
-/* Design B: a 44px round outline button. It keeps the language code beside
-   the globe — the one hint a reader in the wrong language can read — so it is
-   a circle for two-letter codes' worth of width and a short pill beyond. */
-.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:44px;min-width:44px;border:1px solid var(--line);border-radius:999px;padding-inline:12px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:transparent;color:var(--body);transition:background .3s,border-color .3s}
+/* A 38px round button inside the pill. It keeps the language code beside the
+   globe — the one hint a reader in the wrong language can read. */
+.langpicker summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:38px;min-width:38px;border:1px solid transparent;border-radius:999px;padding-inline:10px;font-size:.8rem;font-weight:700;letter-spacing:.06em;background:transparent;color:var(--muted);transition:background .3s,border-color .3s}
 .langpicker summary::-webkit-details-marker{display:none}
-.langpicker summary:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+.langpicker summary:hover{background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--ink)}
 .langpicker summary svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;flex:none}
 .langpicker summary .chev{display:none}
-.langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 10px);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 22px 48px rgba(var(--shadow),.16);z-index:40;width:min(560px,88vw)}
+.langpicker-menu{position:absolute;inset-inline-end:0;top:calc(100% + 14px);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 22px 48px rgba(var(--shadow),.16);z-index:40;width:min(560px,88vw)}
 .langpicker-menu ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:2px 10px}
 .langpicker-menu a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:9px;text-decoration:none;color:var(--ink);font-size:.9rem;white-space:nowrap;overflow:hidden}
 /* The code is set in the display face, which is condensed: 2.6em of it holds
@@ -259,323 +178,66 @@ header.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(var(-
 /* ---------- burger ---------- */
 /* display:none until 860px, and `align-items` is set here rather than in the
    media query so the flex centring survives the display flip. */
-.burger{display:none;align-items:center;justify-content:center;margin-inline-start:6px;width:40px;height:40px;flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:999px;cursor:pointer;transition:background .3s,border-color .3s}
-.burger:hover{background:var(--mint-soft);border-color:var(--mint-strong)}
+.burger{display:none;align-items:center;justify-content:center;width:40px;height:40px;flex:none;border:0;background:transparent;border-radius:999px;cursor:pointer;transition:background .3s}
+.burger:hover{background:color-mix(in srgb,var(--ink) 6%,transparent)}
 .burger svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
 
-@media(max-width:860px){
-  .nav{gap:10px}
-  .menu{display:none}
-  /* .links carries the auto margin that pushes everything right, and .links is
-     inside the panel — so on a phone the chip takes it over. */
-  .langpicker{margin-inline-start:auto}
-  .burger{display:inline-flex}
-  /* Absolute inside the sticky <header>, so the panel is full-bleed, needs no
-     hard-coded header height, and overlays the page instead of shoving it
-     down. In RTL `inset-inline` covers both edges, so nothing to mirror. */
-  body.menu-open .menu{display:flex;flex-direction:column;align-items:stretch;
-    position:absolute;top:100%;inset-inline:0;
-    background:var(--paper);border-bottom:1px solid var(--line);
-    padding:14px 22px 22px;gap:10px;
-    box-shadow:0 30px 50px rgba(var(--shadow),.14)}
-  body.menu-open .links{flex-direction:column;align-items:stretch;gap:4px;margin-inline-start:0}
-  body.menu-open .links a.nl{font-size:1.05rem;padding:12px 10px}
-  body.menu-open .dl{align-self:start}
-  .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
-}
-
-/* download dropdown */
+/* download dropdown: the dark "Get the app" pill opens the store badges */
 .dl{position:relative}
-.dl-btn{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:var(--on-forest);border:1.5px solid transparent;border-radius:999px;padding:11px 22px;font-family:var(--sans);font-size:.98rem;font-weight:600;cursor:pointer;text-decoration:none;transition:background .25s,transform .25s var(--ease),box-shadow .25s}
+.dl-btn{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:var(--on-forest);border:1.5px solid transparent;border-radius:999px;padding:11px 22px;font-family:var(--sans);font-size:.98rem;font-weight:600;cursor:pointer;text-decoration:none;white-space:nowrap;transition:background .25s,transform .25s var(--ease),box-shadow .25s}
 .dl-btn:hover{background:var(--forest-deep);transform:translateY(-1px);box-shadow:0 10px 24px rgba(4,97,60,.22);color:var(--on-forest)}
-.dl-menu{position:absolute;inset-inline-end:0;top:calc(100% + 12px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 22px 48px rgba(var(--shadow),.16);min-width:250px;display:none;flex-direction:column;gap:10px;z-index:40}
+.nav .dl-btn{background:var(--frame);color:#fff;font-size:14px;padding:10px 16px;border:0}
+.nav .dl-btn:hover{background:#000;color:#fff;box-shadow:none}
+.nav .dl-btn svg{width:16px;height:16px;flex:none}
+.dl-menu{position:absolute;inset-inline-end:0;top:calc(100% + 14px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 22px 48px rgba(var(--shadow),.16);min-width:250px;display:none;flex-direction:column;gap:10px;z-index:40}
 .dl.open .dl-menu{display:flex;animation:menuIn .3s var(--ease)}
 @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .dl-menu .store-badge{width:100%;justify-content:start}
 .dl-menu small{color:var(--muted);font-size:.78rem;line-height:1.4}
 
-/* ---------- the home page: Design B ----------------------------------------
- * Hero, video showcase, story, life, then the slides that were already there
- * (claude-prompts/2026-09-27/design-b-mock.html, converted to logical
- * properties and tokens on the way in). Every block is one screen and the
- * browser snaps from one to the next.
- *
- * Snap lives on <html> — the scroll container — behind the `landing` class
- * build.mjs puts there, so the blog and the legal pages never snap. It is also
- * desktop-only: on a phone this is a plain page that reads top to bottom.
- * ------------------------------------------------------------------------- */
-@media(min-width:901px){
-  html.landing{scroll-snap-type:y mandatory;scroll-padding-top:var(--header-h)}
-  .hero,.chapter,.scene{scroll-snap-align:start}
+/* Between the burger and a wide screen, seven links in Ukrainian or Romanian
+   do not fit the pill at the mock's spacing: it tightens instead. */
+@media(min-width:861px) and (max-width:1080px){
+  .brand{margin-inline-end:6px}
+  .links a.nl{padding-inline:7px;font-size:13.5px}
+  .langpicker summary{padding-inline:7px}
+  .nav .dl-btn{padding-inline:13px}
+  .nav .dl-btn svg{display:none}
 }
-
-/* ---------- hero: the centred editorial headline --------------------------- */
-/* Text only. --p is set by script.js like any [data-scene] slide, and it is 1
-   whenever the hero is at or above the header line — so on load, whatever the
-   window height, the hero is complete. The h1 is the LCP.
-   It is --peek shorter than the screen, so the top of the showcase panel —
-   video, cards, the top of the phone — is already in view under it; both
-   still snap to the header line, so the first flick lands the panel there. */
-.hero{--p:1;min-height:max(540px,calc(100vh - var(--header-h) - var(--peek)));display:flex;align-items:center;padding-block:28px 20px}
-.hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;width:100%}
-.showcase .sync i{width:8px;height:8px;border-radius:50%;flex:none;background:var(--cat-green)}
-/* Capped by the height too: the whole hero has to fit above the --peek. */
-.hero h1{font-size:clamp(72px,min(10.5vw,12.5vh),156px);line-height:.9;max-width:1100px}
-/* The display face has no Arabic, Thai, Devanagari or CJK glyphs, and the
-   system faces those scripts fall back to are far wider and taller than
-   Sofia Sans Condensed at the same size: 156px of Arabic at its 1.25 leading
-   is three lines and a slide and a half. Two thirds of the size keeps the
-   headline two lines and the hero one screen. */
-:is([lang="ar"],[lang="th"],[lang="hi"],[lang="ja"],[lang="ko"],[lang^="zh"]) .hero h1{font-size:clamp(52px,min(7vw,9vh),104px)}
-/* The highlighted half with the mock's hand-drawn amber underline. The em is
-   an inline-block, so a long translation wraps INSIDE it and the stroke spans
-   the whole block under its last line, instead of the mock's nowrap span
-   running off the screen in German. */
-.hero h1 em{position:relative;display:inline-block;font-style:normal;color:var(--forest)}
-.hero h1 em svg{position:absolute;inset-inline:0;bottom:-14px;width:100%;height:20px;overflow:visible}
-.hero h1 em path{fill:none;stroke:var(--amber);stroke-width:7;stroke-linecap:round;vector-effect:non-scaling-stroke}
-.hero .lead{margin-block-start:6px;font-size:20px;line-height:1.5;color:var(--body);max-width:760px}
-/* The web link is its own row under the badges, pulled up against them: it is
-   the third way in, not a new block. */
-.hero .web-link{margin-block-start:-14px}
-/* The three notes as the same white pills as the feature chips under the
-   showcase (.chips li, below). */
-.hero .pills{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-
-/* ---------- showcase: the video panel --------------------------------------- */
-/* .scene.showcase, not .showcase: the generic .scene padding comes later in
-   this file and would otherwise win, pushing the chips 30px off the slide. */
-.scene.showcase{--q:0;padding-block:24px}
-.panel{position:relative;height:min(760px,calc(100vh - var(--header-h) - 120px));border-radius:40px;overflow:hidden;background:var(--mint-soft);box-shadow:0 60px 120px -50px rgba(var(--shadow),.45)}
-.panel-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.panel .panel-video{opacity:.9}
-.vignette{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(var(--video-dim),var(--video-dim)),
-    radial-gradient(ellipse at 50% 60%,transparent 30%,color-mix(in srgb,var(--paper) 55%,transparent) 100%)}
-/* The phone rising out of the panel's bottom edge: no bezel, round at the top
-   only, the screenshot's top in view. */
-.rise{position:absolute;inset-block-end:0;inset-inline:0;margin-inline:auto;width:300px;height:calc(100% - 64px);border-radius:36px 36px 0 0;overflow:hidden;background:var(--paper);box-shadow:0 -20px 60px -20px rgba(var(--shadow),.35)}
-.rise img{width:100%;height:100%;object-fit:cover;object-position:top}
-.showcase .cards{position:absolute;inset:0;pointer-events:none}
-/* The dark sync pill, centred on the bottom edge. */
-.showcase .sync{position:absolute;inset-block-end:28px;inset-inline:0;margin-inline:auto;width:max-content;max-width:calc(100% - 32px);display:flex;align-items:center;gap:8px;padding-block:8px;padding-inline:14px;border-radius:999px;background:color-mix(in srgb,var(--frame) 85%,transparent);color:var(--on-dark);font-size:.82rem;font-weight:600;line-height:1.3;backdrop-filter:blur(8px)}
-.showcase .sync i{background:var(--web-mint)}
-.chips{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-block-start:24px}
-.chips li,.hero .pill{padding-block:10px;padding-inline:16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:.88rem;white-space:nowrap}
-
-/* ---------- the scroll story ------------------------------------------------
- * The mint slab with the phone on the inline-start side, seven chapters on the
- * other. Each chapter is one screen, the browser snaps from one to the next,
- * and the phone's next screenshot slides UP OVER the previous one, which stays
- * still underneath. One calm ground throughout — Design B dropped the colour
- * per chapter. Every rule that sets type here starts with .story or .chapter
- * and none of them uppercases: text-transform breaks Turkish and Greek casing
- * and does nothing for CJK (asserted in check-build 15).
- * ------------------------------------------------------------------------- */
-.story{position:relative}
-.story .wrap{display:grid;grid-template-columns:min(520px,45%) minmax(0,1fr);gap:min(96px,6vw);align-items:start}
-
-/* One chapter = one screen. --p: 0 while the previous chapter is showing, 1
-   once this one has settled; --q: 0..1 as it leaves upwards. min-height, not
-   height: a long translation is allowed to make a chapter taller than the
-   viewport rather than overflowing it, which is also why script.js reads the
-   chapter's own height instead of assuming one screen. */
-.chapter{--p:1;--q:0;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;border-block-end:1px solid var(--line)}
-.chapter:last-child{border-block-end:0}
-.chapter .txt{max-width:36rem;opacity:calc(1 - var(--q))}
-.story .num{display:block;font-family:var(--display);font-weight:800;font-size:20px;line-height:1.2;letter-spacing:.08em;color:var(--muted)}
-.chapter h2{font-size:clamp(44px,5vw,68px);margin-block:16px;line-height:.95}
-.chapter .p{font-size:1.15rem;margin-block-end:18px}
-.chapter ul{list-style:none;display:grid;gap:10px}
-.chapter li{display:flex;gap:10px;align-items:flex-start;font-size:1rem}
-.chapter li::before{content:"";flex:none;width:18px;height:18px;margin-block-start:4px;border-radius:50%;background:var(--forest);
-  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;
-  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
-.chapter .ctas{margin-block-start:26px}
-
-/* The phone's own screenshot, under the text. Desktop shows the sticky stage
-   instead and hides this; a phone hides the stage and shows this. Both point
-   at the same file, so the browser downloads it once. */
-.mshot{display:none}
-
-/* ---------- the stage: the mint slab, one phone, seven screens --------------- */
-.stage{position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));display:flex;align-items:center}
-.slab{position:relative;width:100%;height:min(720px,100%);border-radius:40px;background:var(--mint);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
-.slab-label{position:absolute;top:28px;inset-inline-start:32px}
-.slab-label .disp{font-size:22px;color:var(--forest)}
-/* No bezel: the screenshot itself, round at the top, rising out of the slab's
-   bottom edge. Its top is always in view (object-position), so a short
-   window crops the bottom of the screen, never the app bar. */
-.phone{position:relative;width:min(var(--pw),calc(100% - 48px));height:calc(100% - 80px);border-radius:36px 36px 0 0;box-shadow:0 -20px 60px -20px rgba(var(--shadow),.35)}
-.phone .screen{--idx:0;position:relative;height:100%;border-radius:36px 36px 0 0;overflow:hidden;background:var(--cream)}
-/* Seven screens stacked, screen k above screen k-1. --idx (0..6, fractional) is
-   how far the story has scrolled, set by script.js. Screen k waits one frame
-   below the phone until the scroll reaches it, then slides up over the one
-   before, which never moves. --t is 1 while waiting, 0 once in place. */
-.phone .screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:36px 36px 0 0;z-index:var(--k);
-  --t:clamp(0,calc(var(--k) - var(--idx)),1);
-  transform:translateY(calc(var(--t) * 100%));
-  /* The lip shadow exists only mid-slide: t·(1−t) is 0 at both ends and ¼ in
-     the middle, so a settled screen casts nothing at its bottom edge. */
-  box-shadow:0 -14px 34px rgba(var(--shadow),calc(var(--t) * (1 - var(--t)) * .9));
-  will-change:transform}
-
-/* ---------- the floating cards --------------------------------------------- */
-/* The showcase panel's three cards. Each fades in with the showcase slide's
-   own --p and drifts on its own period (--dur). They are in by --p .35 —
-   where the panel stands while it peeks under the hero at 1440×900 — so the
-   first screen already shows the upper two. */
-.fc{position:absolute;display:flex;align-items:center;gap:12px;background:var(--card);color:var(--ink);border-radius:18px;padding:14px 18px;font-size:1rem;font-weight:500;line-height:1.25;white-space:nowrap;
-  box-shadow:0 18px 44px rgba(var(--shadow),.18),0 0 0 1px rgba(var(--shadow),.06);
-  --in:clamp(0,calc((var(--p) - .15) / .2),1);
-  opacity:calc(var(--in) * (1 - var(--q)));
-  transform:translateY(calc((1 - var(--in)) * 26px)) scale(calc(.94 + .06 * var(--in)));
-  animation:drift var(--dur,8s) ease-in-out infinite}
-@keyframes drift{0%,100%{translate:0 0}50%{translate:0 -12px}}
-.fc b{font-weight:700}
-.fc small{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
-.fc .dot{width:12px;height:12px;border-radius:50%;flex:none;background:var(--on-cat)}
-.fc .av{width:34px;height:34px;border-radius:50%;flex:none;display:grid;place-items:center;color:var(--on-cat);font-weight:700;font-size:.85rem}
-.fc .avs{display:flex;flex:none}
-.fc .avs .av{margin-inline-start:-10px;border:2px solid var(--card)}
-.fc .avs .av:first-child{margin-inline-start:0}
-.fc .ico{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--mint-soft);color:var(--forest)}
-.fc .ico.amber{background:var(--amber-soft);color:var(--amber-ink)}
-.fc .ico svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.fc .tick{width:24px;height:24px;border-radius:50%;flex:none;background:var(--forest);display:grid;place-items:center}
-.fc .tick svg{width:14px;height:14px;stroke:var(--on-forest);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.fc .box{width:22px;height:22px;border-radius:7px;border:2px solid var(--line);flex:none}
-/* The event pill the calendar draws, and the ticked-off row under it. */
-.fc.pill{border-radius:999px;padding:11px 18px;background:var(--cat-green);color:var(--on-cat);box-shadow:0 14px 30px rgba(31,138,85,.35)}
-.fc.pill b{font-weight:600}
-.fc.pill small{color:color-mix(in srgb,var(--on-cat) 80%,transparent)}
-.fc.chk b{text-decoration:line-through;color:var(--muted);font-weight:500}
-.fc.badge-s{background:var(--ink);color:var(--paper);font-size:.88rem;padding:10px 16px;border-radius:999px}
-.fc.badge-s small{color:color-mix(in srgb,var(--paper) 65%,transparent)}
-.fc.badge-s i{width:9px;height:9px;border-radius:50%;flex:none;background:var(--mint-strong);animation:blink 1.6s infinite}
-@keyframes blink{50%{opacity:.3}}
-
-/* ---------- progress dots --------------------------------------------------- */
-/* Top inline-end corner of the slab, level with its label: the bottom edge
-   belongs to the phone. */
-.progress{position:absolute;top:36px;inset-inline-end:32px;display:flex;gap:6px;pointer-events:none;color:var(--forest)}
-.progress i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.25;transition:opacity .3s,width .3s}
-.progress i.on{opacity:1;width:18px;border-radius:3px}
-
-/* ---------- life: the video card and three facts ---------------------------- */
-.life{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:32px;align-items:stretch}
-.life-card{position:relative;border-radius:32px;overflow:hidden;min-height:440px;background:var(--frame)}
-.life-card .shade{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(var(--video-dim),var(--video-dim)),
-    linear-gradient(180deg,rgba(var(--shadow),0) 40%,rgba(var(--shadow),.75) 100%)}
-.life-card .cap{position:absolute;inset-inline:36px;bottom:32px;display:flex;flex-direction:column;gap:8px}
-.life-card h2{font-size:44px;line-height:.95;color:var(--on-dark)}
-.life-card p{font-size:15px;color:color-mix(in srgb,var(--on-dark) 80%,transparent)}
-.facts{display:flex;flex-direction:column;gap:16px}
-.fact{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:28px;border-radius:24px;background:var(--card);border:1px solid var(--line)}
-.fact b{font-family:var(--display);font-weight:800;font-size:40px;line-height:.95;color:var(--forest)}
-.fact span{font-size:15px;color:var(--body)}
-.fact.inv{background:var(--frame);border-color:transparent}
-.fact.inv b{color:var(--web-mint)}
-.fact.inv span{color:color-mix(in srgb,var(--on-dark) 80%,transparent)}
-
-/* ---------- the slides after the story -------------------------------------- */
-/* Each is one screen, centred, and builds up as it settles under the header.
-   min-height, like the chapters: the FAQ has eight questions in the content and
-   four in the mock, and it is allowed to be taller than one screen. */
-.scene{--p:1;position:relative;min-height:calc(100vh - var(--header-h));display:flex;align-items:center;overflow:clip;padding-block:40px}
-.scene>.pin{width:100%}
-.scene.last{align-items:stretch;padding-block:0}
-.scene.last>.pin{display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - var(--header-h));padding-block-start:40px}
-.scene.last footer{margin-block-start:auto;width:100%}
-
-/* ---------- two-step slides: title first, content second -------------------
- * web, how, compare and pricing arrive in two snap stops. The scene is two
- * screens tall, its .pin sticks under the header for both, and .snap2 is the
- * second stop one screen down. script.js runs --p from 0 at the first stop to
- * 1 at the second (not the entry-based --p of the other slides), so:
- *   - the title block sits big in the middle of the pin at 0 and shrinks back
- *     to 002's place and size by 1. --dx/--dy is the distance from its settled
- *     place to the pin's centre, measured by script.js per slide, locale and
- *     window, because it depends on how the translated title wraps;
- *   - the content is .by with --a ≥ .45 and --a + --w ≤ .85: invisible at
- *     the first stop, complete well before the second.
- *   - the how and compare titles are two lines at both stops: script.js sets
- *     the h2's max-width in em from its measured one-line width, so the
- *     lines break in the same places at the big size and the small one.
- * Only here: at 900px and down, and with reduced motion, .snap2 is gone and
- * the scene is the ordinary one-screen slide above, with --p pinned to 1 — one
- * stop, never two identical ones.
- * ------------------------------------------------------------------------- */
-.snap2{display:none}
-@media(min-width:901px) and (prefers-reduced-motion:no-preference){
-  .scene.two-step{display:block;height:calc(2 * (100vh - var(--header-h)));min-height:0;padding-block:0}
-  .two-step>.pin{position:sticky;top:var(--header-h);height:calc(100vh - var(--header-h));display:flex;align-items:center;padding-block:32px}
-  .two-step>.pin>.wrap{width:100%}
-  .snap2{display:block;position:absolute;inset-inline-start:0;top:calc(100vh - var(--header-h));width:1px;height:1px;scroll-snap-align:start}
-  .two-step :is(.sec-head,.price-head){--dx:0px;--dy:0px;position:relative;z-index:1;will-change:transform;
-    transform:translate(calc((1 - var(--p)) * var(--dx)),calc((1 - var(--p)) * var(--dy)))}
-  /* One size formula for every shrinking title: --big at the first stop,
-     --small (002's size) at the second. */
-  .two-step :is(.sec-head h2,.price-head h2,.price-head .big){font-size:calc(var(--big) - (var(--big) - var(--small)) * var(--p))}
-  .two-step :is(.sec-head,.price-head) h2{--big:clamp(56px,6.5vw,96px)}
-  .two-step .sec-head h2{--small:clamp(1.9rem,4.4vw,3.4rem)}
-  .two-step .price-head h2{--small:clamp(40px,5vw,64px)}
-  .two-step .price-head .big{--big:clamp(110px,min(16vw,24vh),220px);--small:120px}
-  .two-step .sec-head>div{max-width:none}
-  .two-step .sec-head h2{max-width:12ch;text-wrap:balance}
-  .two-step .sec-head .section-lead{font-size:calc(19px - 2px * var(--p))}
+@media(max-width:860px){
+  header{padding-block-start:10px}
+  .nav{width:auto;max-width:none;margin-inline:12px;padding-inline-start:12px}
+  .brand{margin-inline-end:auto}
+  .menu{display:none}
+  .burger{display:inline-flex}
+  /* The panel drops out under the pill, full width of it, and overlays the
+     page instead of shoving it down. In RTL `inset-inline` covers both edges,
+     so nothing to mirror. */
+  body.menu-open .menu{display:flex;flex-direction:column;align-items:stretch;
+    position:absolute;top:calc(100% + 8px);inset-inline:0;
+    background:var(--card);border:1px solid var(--line);border-radius:22px;
+    padding:10px;gap:4px;
+    box-shadow:0 30px 50px rgba(var(--shadow),.14)}
+  body.menu-open .links{flex-direction:column;align-items:stretch;gap:2px}
+  body.menu-open .links a.nl{font-size:1.05rem;padding:12px 14px;color:var(--ink)}
+  .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
 }
-@media(min-width:901px) and (prefers-reduced-motion:no-preference) and (max-height:760px){
-  .two-step .sec-head h2{--small:2rem}
-  .two-step .sec-head{margin-block-end:22px}
-  .two-step .price-head .big{--big:clamp(110px,min(16vw,20vh),220px);--small:104px}
+@media(max-width:420px){
+  .nav{gap:2px}
+  .nav .dl-btn{padding-inline:13px}
+  .nav .dl-btn svg{display:none}
+  .langpicker summary{padding-inline:8px}
 }
-
-/* ---------- web app: the window fills the slide, then steps aside ----------- */
-/* Two columns, copy on the inline-start side and the window beside it — never
-   over it. The grid places both, so /ar/ mirrors by itself. */
-.web-pin{display:grid;grid-template-columns:minmax(0,1fr) min(58%,820px);gap:48px;align-items:center}
-.web-copy{grid-column:1;grid-row:1;--lift:0px}
-.laptop{grid-column:2;grid-row:1}
-.web-copy h2{font-size:clamp(1.9rem,4vw,3.2rem);margin-block:10px 14px}
-.web-copy ul{list-style:none;display:grid;gap:8px;margin-block:14px 22px}
-.web-copy li{display:flex;gap:10px}
-.web-copy li::before{content:"✓";color:var(--forest);font-weight:700}
-.web-copy .muted{font-size:.85rem;color:var(--muted);margin-block-start:12px}
-/* The browser frame from the old hero, laid out in its settled column and
-   driven by the scroll. --k is its own progress: 0 until --p .15, 1 from .85.
-   At 0 it is scaled by --ws and moved by --wx/--wy to sit big in the middle
-   of the pin; at 1 the transform is none, so it ends exactly in its column.
-   script.js measures the three from the column and the pin (the defaults are
-   the settled state). */
-.laptop{position:relative;z-index:1;width:100%;border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 60px 120px -40px rgba(var(--shadow),.4);
-  --wx:0px;--wy:0px;--ws:1;--k:clamp(0,calc((var(--p) - .15) / .7),1);
-  transform:translate(calc((1 - var(--k)) * var(--wx)),calc((1 - var(--k)) * var(--wy))) scale(calc(1 + (var(--ws) - 1) * (1 - var(--k))));transform-origin:center}
-.laptop .bar{display:flex;align-items:center;gap:6px;padding-block:9px;padding-inline:12px;border-bottom:1px solid var(--line);background:var(--mint-soft)}
-.laptop .bar i{display:block;width:9px;height:9px;flex:none;border-radius:50%;background:var(--line)}
-/* A URL is LTR even in /ar/, and it is ellipsised rather than wrapped: this is
-   a drawing of a browser, and browsers do not wrap their address bar. */
-.laptop .bar .url{flex:1;min-width:0;margin-inline-start:10px;padding-block:3px;padding-inline:8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);font-size:.7rem;direction:ltr;text-align:start;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;gap:8px;border:1.5px solid transparent;border-radius:999px;padding-block:12px;padding-inline:22px;font-size:.98rem;font-weight:600;text-decoration:none;transition:transform .25s var(--ease),background .25s,box-shadow .25s}
-.btn-primary{background:var(--forest);color:var(--on-forest)}
-.btn-primary:hover{background:var(--forest-deep);color:var(--on-forest);transform:translateY(-1px);box-shadow:0 10px 24px rgba(4,97,60,.22)}
-/* The white outlined button beside the store badges on the price slide. */
+/* The white outlined button beside the store badges in the home page's last section. */
 .btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
 .btn-ghost:hover{border-color:var(--mint-strong);background:var(--mint-soft);color:var(--ink)}
-.web-link{display:inline-flex;align-items:center;gap:8px;padding-block:10px;padding-inline:4px;color:var(--forest);font-weight:600;text-decoration:none}
-.web-link svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:2}
-.web-link:hover{text-decoration:underline;text-underline-offset:4px}
-
 /* ---------- store badges ---------- */
 /* .ctas is the row; .badges is what script.js looks for when it promotes the
-   store the visitor is actually on. Start-aligned by default (the family
-   chapter's button sits under a left column); Design B centres the hero and
-   the price, so those two rows are centred. */
+   store the visitor is actually on. */
 .ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.hero .ctas,.price .ctas{justify-content:center}
 .store-badge{display:inline-flex;align-items:center;gap:10px;background:var(--frame);color:#fff;border-radius:13px;padding-block:9px;padding-inline:13px 16px;text-decoration:none;line-height:1.15;cursor:pointer;transition:opacity .15s,transform .3s var(--ease)}
 .store-badge:hover{opacity:.85;color:#fff;transform:translateY(-1px)}
 .store-badge svg{width:22px;height:22px;fill:#fff;flex:none}
@@ -646,103 +308,6 @@ button.store-badge{border:0;margin:0;font-family:inherit;font-size:inherit;text-
   border-top:1px solid var(--line);border-left:1px solid var(--line);
   transform:rotate(45deg)}
 
-/* ---------- section furniture ---------- */
-.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-block-end:34px}
-.sec-head>div{max-width:36rem}
-.sec-head h2{margin-block-start:10px}
-/* The display size lives on these selectors rather than on h2, so the legal
-   pages, the blog and the release notes keep the sizes they set. */
-.sec-head h2{font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1.06}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;color:var(--forest)}
-.eyebrow::before{content:"";width:22px;height:2px;flex:none;border-radius:2px;background:var(--forest)}
-/* Under the title, part of the title block (the compare slide). */
-.section-lead{font-size:17px;color:var(--muted);max-width:640px;margin-block-start:14px}
-
-/* The trust strip and the bento feature grid were both deleted with the
-   redesign of the home page into the scroll story (016): the claims row has no
-   place between two full-screen chapters, and the seven tiles ARE the seven
-   chapters now. trust.pills[] stays in content, idle — see site.config.mjs.
-   Nothing else on the site used .trust, .bento or .tile. */
-
-/* The boxed dark "also on your computer" panel and the three bordered step
-   cards are gone: the web slide draws the browser window itself (.laptop,
-   .web-copy, above) and the steps are a plain three-column row that slides in
-   one step at a time. */
-
-/* ---------- steps ---------- */
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-block-start:34px;counter-reset:step}
-.step{padding-block:26px 0;border-top:3px solid var(--mint-strong);--lift:60px}
-/* The number is a counter, not a string: three digits are not content and the
-   template's loop has no index. The same counter carried the old cards. */
-.step::before{counter-increment:step;content:counter(step);display:block;font-family:var(--display);font-weight:800;font-size:2.8rem;line-height:1;color:var(--forest)}
-.step h3{font-size:1.4rem;margin-block:8px;line-height:1.2}
-.step p{font-size:.98rem;color:var(--muted)}
-/* When each step arrives, inside the .45–.85 stretch of the two-step slide. In
-   the template they are one loop with no index, so the three start times live
-   here (tools/check-build.mjs 15 reads them). */
-.step:nth-child(1){--a:.45;--w:.15}
-.step:nth-child(2){--a:.55;--w:.15}
-.step:nth-child(3){--a:.65;--w:.2}
-@media(max-width:760px){.steps{grid-template-columns:1fr}}
-
-/* ---------- comparison ---------- */
-.table-scroll{overflow-x:auto}
-/* min-width, so at 390px the table scrolls inside .table-scroll instead of
-   squeezing four columns into 346px. */
-/* Compact rows: all nine have to fit one pinned screen under the title. */
-.cmp{width:100%;min-width:520px;border-collapse:collapse;margin-block-start:8px;font-size:16px;line-height:1.4}
-.cmp thead th{padding-block:10px;padding-inline:10px;font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px;color:var(--muted);text-align:center;vertical-align:bottom}
-.cmp thead th:first-child{text-align:start}
-.cmp td{padding-block:10px;padding-inline:10px;border-top:1px solid var(--line);text-align:center;font-weight:600}
-.cmp tbody th{padding-block:10px;padding-inline:10px;border-top:1px solid var(--line);font-family:var(--sans);font-size:16px;font-weight:500;letter-spacing:normal;text-transform:none;text-align:start;color:var(--body)}
-.cmp td.y{color:var(--forest)}
-.cmp td.n,.cmp td.p{color:var(--muted);font-weight:400}
-/* The tinted Daili column. `.d` is on every cell of it (build.mjs) because
-   Firefox ESR does not support :has(), and a comparison table where the answer
-   column is not marked is a table with no answer in it. The :has() rule is the
-   mock's and is kept as the progressive half. */
-.cmp td.d,.cmp thead th.d{background:var(--mint-soft)}
-.cmp tr:has(td) td:nth-child(2){background:var(--mint-soft)}
-.cmp thead th.d{color:var(--forest);border-radius:14px 14px 0 0}
-.cmp tbody tr:last-child td.d{border-radius:0 0 14px 14px}
-/* The table builds column by column. The reveal is on a span INSIDE each cell,
-   never on the cell: a transform on a <td> would relayout the table, and the
-   column widths have to be the same at --p 0 and 1 or the rows jump as the
-   slide settles. transform needs a block box, hence inline-block. */
-.cmp .by{display:inline-block}
-.col1{--a:.45;--w:.15}
-.col2{--a:.55;--w:.15}
-.col3{--a:.65;--w:.2}
-.legend{font-size:.85rem;color:var(--muted);margin-block-start:10px}
-
-/* ---------- pricing ---------- */
-/* Centred, one column: the giant €0 is the slide. The slide's own ground is
-   the only background. The price is capped by the window's height as well as
-   its width, so the whole block still fits a 720px-tall laptop. */
-/* The title block (eyebrow, €0 with its note, h2) is one flex column with
-   its own gaps, and the lead and the promise follow it in the flow — nothing
-   here is positioned, so the lead can never sit on the h2. */
-.price,.price-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
-.price-head{gap:14px}
-.price .big{font-family:var(--display);font-weight:800;font-size:clamp(110px,min(16vw,24vh),220px);line-height:.85;color:var(--forest);margin:0}
-.price .big small{display:block;font-family:var(--sans);font-weight:500;font-size:1rem;line-height:1.4;letter-spacing:0;color:var(--muted);margin-block-start:12px}
-.price h2{font-size:clamp(40px,5vw,64px);line-height:1.1;margin:0}
-.price .lead{margin:0}
-.price .lead{font-size:1.12rem;color:var(--body);max-width:640px}
-.price .promise{max-width:640px;font-size:.95rem;color:var(--body)}
-.price .promise strong{display:block;font-family:var(--display);font-size:1.1rem;margin-block-end:2px;color:var(--forest)}
-.price .ctas{margin-block-start:6px}
-
-/* ---------- faq ---------- */
-/* Plain rows, no card: the slide is the container. */
-.faq{max-width:760px;margin-block-start:24px}
-.faq details{border-bottom:1px solid var(--line);padding-block:6px}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;padding-inline:4px;font-weight:600;font-size:1.05rem}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--display);font-size:1.6rem;font-weight:700;line-height:1;flex:none;color:var(--forest);transition:transform .25s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding-block-end:18px;padding-inline:4px;color:var(--body);max-width:62ch}
-
 /* ---------- sticky mobile CTA ---------- */
 .sticky-cta{position:fixed;inset-inline:0;bottom:0;z-index:40;display:none;align-items:center;gap:10px;justify-content:center;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
 .sticky-cta[hidden]{display:none}
@@ -774,85 +339,17 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 .legal .translated{color:var(--muted);font-size:.88rem;margin-bottom:18px}
 .notice{background:var(--mint);border:1px solid var(--mint-strong);border-radius:14px;padding:12px 16px;margin:18px 0;font-size:.92rem}
 
-/* ---------- short screens ---------- */
-/* A 13" laptop at 1280×720 has 656px of slide. The table and the headings are
-   what overflow first, so they lose a little air rather than the slide losing
-   its snap. */
-@media(max-height:760px){
-  :root{--peek:260px}
-  .cmp td,.cmp tbody th,.cmp thead th{padding-block:8px}
-  .cmp,.cmp tbody th{font-size:15px}
-  .step p{font-size:15px}
-  .sec-head h2{font-size:2rem}
-  .chapter h2{font-size:clamp(40px,4vw,52px)}
-  .hero>.wrap{gap:20px}
-  .hero h1{font-size:clamp(64px,min(9vw,12.5vh),120px)}
-  .hero .lead{font-size:19px}
-  .price{gap:12px}
-  .price-head{gap:10px}
-  .price .big{font-size:clamp(110px,min(16vw,20vh),220px)}
-}
-
-/* ---------- 900px and down: a plain page -----------------------------------
- * No snapping, no sticky phone, no floating cards, no videos playing —
- * Ammar's call: "simple design for mobile, no slides". Every chapter becomes a
- * block of text with its own screenshot under it, and the slides after the
- * story stack with ordinary padding. script.js sets every --p to 1 here and
- * then does nothing, so nothing on this page depends on scroll position.
- * ------------------------------------------------------------------------- */
-@media(max-width:900px){
-  html.landing{scroll-snap-type:none}
-  .hero{min-height:0;padding-block:48px 24px}
-  .hero>.wrap{gap:20px}
-  .hero h1{font-size:clamp(56px,15vw,88px)}
-  .hero .lead{font-size:1.1rem}
-  .panel{height:520px}
-  .rise{width:min(60%,240px);height:calc(100% - 48px);border-radius:28px 28px 0 0}
-  .showcase .cards{display:none}
-  /* The chips run in one line and scroll sideways inside their own box — the
-     page itself never does. Bled to the screen edge, no visible scrollbar. */
-  .chips{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
-    margin-inline:calc(-1 * clamp(22px,4vw,56px));padding-inline:clamp(22px,4vw,56px)}
-  .chips::-webkit-scrollbar{display:none}
-  .chips li{scroll-snap-align:start}
-  .story .wrap{display:block}
-  .stage{display:none}
-  .chapter{min-height:0;display:flex;flex-direction:column;padding-block:48px 8px}
-  .chapter .txt{max-width:none;opacity:1}
-  .chapter h2{font-size:clamp(1.9rem,7vw,2.3rem)}
-  /* The screenshot goes under the words, whatever order the markup is in. */
-  .mshot{display:block;order:2;width:min(72%,280px);margin-block:28px 8px;margin-inline:auto}
-  .mshot img{border-radius:26px;box-shadow:0 24px 50px rgba(var(--shadow),.22),0 0 0 1px rgba(var(--shadow),.08)}
-  .scene{min-height:0;display:block;overflow:visible;padding-block:56px 16px}
-  .scene.last{padding-block:56px 0}
-  .scene.last>.pin{display:block;min-height:0;padding-block-start:0}
-  .scene.last footer{margin-block-start:40px}
-  .life{grid-template-columns:1fr}
-  .life-card{min-height:420px}
-  .life-card .cap{inset-inline:24px;bottom:24px}
-  .life-card h2{font-size:36px}
-  .fact b{font-size:34px}
-  .web-pin{grid-template-columns:minmax(0,1fr);gap:24px}
-  .web-copy{grid-row:2}
-  .laptop{grid-column:1;transform:none}
-  .steps{grid-template-columns:1fr}
-}
 @media(max-width:820px){
-  .langpicker-menu ul{grid-template-columns:repeat(2,1fr)}
   /* Only shown on small screens, and only after script.js unhides it. */
   .sticky-cta:not([hidden]){display:flex}
   body{padding-bottom:76px}
 }
-@media(max-width:600px){
-  .mshot{width:min(86%,280px)}
-  .chapter{padding-block:40px 4px}
-}
-
 /* ---------- dark mode ---------- */
 /* Only the tokens are redefined. Everything above inherits, which is the whole
    point of having tokenised the palette. */
 @media(prefers-color-scheme:dark){
-  :root{
+  /* Not on the home page: it is designed light, with its own dark blocks. */
+  :root:not(.landing){
     --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
     --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
     --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
@@ -863,14 +360,8 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
     --frame:#0A110D;
     --shadow:0,0,0;
     color-scheme:dark;
-    --amber-ic:#3E3320; --amber-ink:#F0BC5E;
-    /* The dark block's accent goes lighter, not darker: see --web-mint above. */
-    --web-mint:#7BD3A6; --web-mint-ink:#08160F;
     --cream:#141D18;
-    /* Both video posters are light; this veils them so the page does not
-       glare. It is --paper's dark value at 35 %. */
-    --video-dim:rgba(14,23,18,.35);
-  }
+    }
   .store-badge{background:#000;border:1px solid var(--line)}
   /* The border above comes from a shorthand the <button> reset zeroes out. */
   button.store-badge{border:1px solid var(--line)}
@@ -882,18 +373,10 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
      into 0,0,0 and .18 of black on a near-black page is invisible, which would
      leave the card floating with only its 1px border. */
   .store-soon.soon-pop{box-shadow:0 16px 40px rgba(var(--shadow),.55)}
-  /* A dash at .5 opacity of --muted disappears on a near-black ground; this is
-     the one mark in the table that needs its own dark value. */
-  .cmp td.n{color:#5A6B61}
-  /* --shadow is 0,0,0 here, and a black shadow on a near-black page is
-     invisible: the phones and the browser window would float with nothing
-     under them, so they keep an explicit, stronger one. */
-  .phone,.rise{box-shadow:0 -20px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06)}
-  .laptop{box-shadow:0 30px 70px rgba(0,0,0,.45)}
-  .fc{box-shadow:0 18px 44px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.06)}
-  /* The inverted fact card sits on --card here, not on --paper, so it needs
-     its own edge to stay a card. */
-  .fact.inv{border-color:var(--line)}
+  /* The Get-the-app pill is --frame, near-black: on a dark header it needs
+     the accent to stay a button. */
+  .nav .dl-btn{background:var(--forest);color:var(--on-forest)}
+  .nav .dl-btn:hover{background:var(--forest-deep);color:var(--on-forest)}
 }
 
 /* ---------- reduced motion ---------- */
@@ -901,17 +384,8 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   *,*::before,*::after{animation:none!important;transition:none!important}
   /* The hover lifts are the only motion left on the page that a transition
      rule does not already stop — a transform with no transition still jumps. */
-  .btn-primary:hover,.store-badge:hover,.dl-btn:hover{transform:none}
+  .store-badge:hover,.dl-btn:hover{transform:none}
   html{scroll-behavior:auto}
-  /* The story still tells itself — the phone still stacks its screens by --idx
-     and the chapters still snap — but nothing lifts, drifts or slides in.
-     script.js pins every --p to 1 and --q to 0, so the text and the showcase
-     cards are simply there; these rules drop the transforms the custom
-     properties would otherwise still apply. The two videos are never started
-     (script.js), so each shows its poster. */
-  .by,.fc{transform:none!important}
-  .by{opacity:1!important}
-  .laptop{transform:none!important}
 }
 
 /* ---------- blog post ---------- */
