@@ -17,11 +17,11 @@
   <section class="hero" id="hero">
     <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i><i class="a5"></i><div class="band"></div><div class="fade"></div></div>
     <div class="hero-copy wrap">
-      <h1>{{{ page.home.h1 }}}</h1>
-      <p class="lead" data-hi>{{ home.hero.lead }}</p>
       <div class="pills" data-hi>
 {{# hero.notes }}        <span class="pill">{{{ page.home.checkIcon }}}{{ . }}</span>
 {{/}}      </div>
+      <h1>{{{ page.home.h1 }}}</h1>
+      <p class="lead" data-hi>{{ home.hero.lead }}</p>
       <div class="hero-cta ctas badges" data-hi>
 {{> storebadges }}
           <a class="web-btn" href="{{ page.webAppUrl }}" rel="noopener">{{{ page.home.globeIcon }}}{{ hero.webLink }}</a>

@@ -663,7 +663,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
           <div class="wgrid" aria-hidden="true">${wNext}${wShop}${wHabits}</div></article>`,
     `        <article class="bx span2 g-honey" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
           <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>app.daili.app</span></div><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.web.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></article>`,
-    `        <article class="bx span2 g-lake bx-low" data-r><h3>${e(h('home.screens.tablet.h3'))}</h3><p>${e(h('home.screens.tablet.p'))}</p>
+    `        <article class="bx span2 g-lake bx-low bx-tab" data-r><h3>${e(h('home.screens.tablet.h3'))}</h3><p>${e(h('home.screens.tablet.p'))}</p>
           <div class="tablet"><div class="tab-scr"><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.tablet.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></div></article>`,
     `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
           <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a' })}${phone('shot-notes', { cls: 'tilt-b' })}</div></article>`,

@@ -103,8 +103,8 @@ html.lenis,html.lenis body{height:auto}
 .home .hero h1{font-size:clamp(46px,6.2vw,88px);font-weight:700;letter-spacing:-.045em;line-height:.96}
 .home .hero h1 .w{display:inline-block}
 .home .hero .lead{font-size:clamp(17px,1.55vw,21px);line-height:1.5;color:var(--ink2);max-width:40ch;margin:22px auto 0}
-/* The three notes sit under the lead, above the buttons (round 3). */
-.home .pills{display:flex;justify-content:center;gap:8px;margin-top:22px;flex-wrap:wrap}
+/* The three notes sit above the headline again (round 4). */
+.home .pills{display:flex;justify-content:center;gap:8px;margin-bottom:26px;flex-wrap:wrap}
 .home .pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink2);padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid var(--line)}
 .home .pill svg{width:14px;height:14px;color:var(--leaf)}
 /* The three buttons, one height: the badges set it, the web button follows. */
@@ -160,26 +160,11 @@ html.lenis,html.lenis body{height:auto}
 /* works with */
 .home .works{position:relative;z-index:3;padding:48px 0 20px;text-align:center}
 .home .works p{font-size:14px;color:var(--ink3);font-weight:600}
-/* Eight items, never 6 + 2 (round 3): one row of eight on a wide screen
-   (slightly tighter from 1180 to 1440), two rows of four below that, and
-   2 × 4 on a phone. A grid, so a row can only ever break where we say. */
-.home .works-row{display:grid;grid-template-columns:repeat(8,auto);justify-content:center;align-items:center;gap:14px 34px;margin-top:16px;padding:0 24px}
+/* One flowing row (round 4): the items sit inline and centred in 90 % of the
+   section, and whatever does not fit wraps to the next row by itself. */
+.home .works-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 34px;max-width:90%;margin:16px auto 0}
 .home .wk{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;letter-spacing:-.01em;color:#5f6f67}
 .home .wk svg{width:22px;height:22px;flex:none}
-@media (max-width:1440px){
-  .home .works-row{column-gap:clamp(16px,2vw,28px)}
-  .home .wk{font-size:15.5px;gap:7px}
-  .home .wk svg{width:20px;height:20px}
-}
-@media (max-width:1279px){
-  .home .works-row{column-gap:16px}
-  .home .wk{font-size:14.5px;gap:6px}
-  .home .wk svg{width:19px;height:19px}
-}
-@media (max-width:1179px){
-  .home .works-row{grid-template-columns:repeat(4,auto);column-gap:34px;row-gap:16px}
-  .home .wk{font-size:16px}
-}
 
 /* ---------- members ---------- */
 .home .members{padding:120px 0 40px}
@@ -428,14 +413,18 @@ html.lenis,html.lenis body{height:auto}
 .home .browser .bar i{width:10px;height:10px;border-radius:50%;background:#D9DED6}
 .home .browser .bar span{margin-left:16px;font-size:11.5px;color:var(--ink3);background:#fff;padding:3px 14px;border-radius:6px}
 .home .browser img{width:100%;height:auto}
-/* A clean landscape tablet (round 3): flat on, an even 14 px bezel on all
-   four sides, 30 px outside and 18 px screen corners, a 1 px lighter outer
-   edge, a camera dot centred in the top bezel and a soft floor shadow. The
+/* Our own landscape tablet (round 4): a thin, even 8 px bezel, 22 px outside
+   and 14 px screen corners, a 1 px lighter outer edge, a camera dot in the top
+   bezel and a soft floor shadow. It sits in the flow under the text, 24 px
+   from the box's sides, and runs past the box's bottom, which clips it. The
    screenshot fills the screen from its top, no letterbox. */
-.home .tablet{position:absolute;left:50%;bottom:40px;width:min(66%,440px);transform:translateX(-50%);box-sizing:border-box;background:#1c1f1e;border-radius:30px;padding:14px;box-shadow:0 0 0 1px #474d4a,0 44px 60px -34px rgba(21,39,31,.55),0 14px 22px -14px rgba(21,39,31,.32)}
-.home .tablet::before{content:"";position:absolute;left:50%;top:5px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#4a5552,#0d0f0e 70%)}
-.home .tab-scr{border-radius:18px;overflow:hidden;aspect-ratio:16/10;background:#fff}
-.home .tab-scr img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.home .tablet{position:relative;margin:26px -4px 0;box-sizing:border-box;background:#1b1e1d;border-radius:22px;padding:8px;box-shadow:0 0 0 1px #4a514d,0 40px 60px -30px rgba(21,39,31,.5),0 12px 22px -12px rgba(21,39,31,.3)}
+.home .tablet::before{content:"";position:absolute;left:50%;top:2px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#56625e,#0d0f0e 70%)}
+.home .tab-scr{border-radius:14px;overflow:hidden;aspect-ratio:3/2;background:#fff}
+.home .tab-scr img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+/* On a narrow desktop (1101-1250 px) the device would end inside its box: a
+   minimum screen height keeps it running past the bottom edge. */
+@media (min-width:1101px){.home .tab-scr{min-height:360px}}
 .home .phones{position:absolute;inset-inline-end:30px;bottom:-120px;display:flex;gap:16px}
 .home .phones .phone{width:190px}
 .home .phones .tilt-a{transform:rotate(-6deg)}
@@ -532,7 +521,7 @@ html.landing footer{margin-top:40px}
   .home .hcard[data-k="0"]{inset-inline-end:auto;inset-inline-start:8px;top:40px}
   .home .hcard[data-k="1"]{inset-inline-start:auto;inset-inline-end:8px;top:118px}
   .home .hcard[data-k="2"]{display:none}
-  .home .works-row{column-gap:22px;padding:0 10px}
+  .home .works-row{column-gap:22px}
   .home .wk{font-size:14px}
   .home .members{padding-top:80px}
   .home .mcard{width:200px;height:330px}
@@ -558,7 +547,9 @@ html.landing footer{margin-top:40px}
   .home .flow-vis{height:720px}
   .home .bento{grid-template-columns:1fr}
   .home .bx.span2{grid-column:auto}
-  .home .tablet{width:min(84%,440px)}
+  /* the box takes its content's height, less the tablet's clipped foot */
+  .home .bx-tab{height:auto;padding-bottom:0}
+  .home .bx-tab .tablet{margin-bottom:-64px}
   .home .vault{height:620px;padding:0 20px}
   .home .lock{width:320px;margin:-240px 0 0 -160px}
   .home .mosaic{height:460px;justify-content:flex-start}
@@ -568,10 +559,6 @@ html.landing footer{margin-top:40px}
   .home .faq-sec{padding-top:90px}
   .home .day{padding-bottom:72px}
   .home .intel{padding-bottom:72px}
-}
-/* A phone: "Works with" as 2 columns × 4 rows. */
-@media (max-width:600px){
-  .home .works-row{grid-template-columns:repeat(2,auto);justify-items:start;column-gap:28px;row-gap:14px}
 }
 @media (prefers-reduced-motion:reduce){
   .home .marq-track,.home .aurora i,.home .aurora .band,.home .orbit,.home .orbit .tile{animation:none}

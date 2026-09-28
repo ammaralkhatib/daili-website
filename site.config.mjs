@@ -1201,12 +1201,12 @@ export const ORBIT_TILES = [
  * clip plays it instead of the screenshot and its drawn tap/pill; the step
  * advances 1 s after the clip ends. A step without keeps the screenshot and
  * the drawing, 6 s. The clips show the English app in every locale for now.
- * Calendar and shopping are being re-recorded (the old takes show junk test
- * entries); add their `video` once the files are in.
+ * Calendar and shopping (round 4) are the first takes, trimmed, with the junk
+ * test text covered by flat patches in the surrounding colour.
  */
 export const FLOW_STEPS = [
-  { icon: 'cal', tone: 'lake', shot: 'shot-calendar', tint: '#E4EEF6', toast: 'cal', toastTone: 'lake' },
-  { icon: 'cart', tone: 'leaf', shot: 'shot-shopping', tint: '#E8F6E2', toast: 'cart', toastTone: 'leaf' },
+  { icon: 'cal', tone: 'lake', shot: 'shot-calendar', tint: '#E4EEF6', toast: 'cal', toastTone: 'lake', video: 'flow-calendar' },
+  { icon: 'cart', tone: 'leaf', shot: 'shot-shopping', tint: '#E8F6E2', toast: 'cart', toastTone: 'leaf', video: 'flow-shopping' },
   { icon: 'todo', tone: 'leaf', shot: 'shot-todos', tint: '#EEF3E6', toast: 'todo', toastTone: 'leaf', video: 'flow-todos' },
   { icon: 'paw', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'flame', toastTone: 'honey', video: 'flow-habits' },
 ];

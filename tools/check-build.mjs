@@ -648,10 +648,10 @@ for (const loc of LOCALES) {
 //   - with fewer than 3 REVIEWS no reviews section at all; with 3+ every
 //     card is one REVIEWS entry, each once; the words "Placeholder" and
 //     "Sample" nowhere in dist/ (any text file);
-//   - round 3: the hero's note pills sit under the lead, above the buttons;
-//     each flow <video> is a FLOW_STEPS clip, muted, playsinline,
-//     preload="none", never autoplay, its mp4 (≤ 1.6 MB) and poster exist,
-//     and its step has no drawn tap; every /assets/img/home/ and
+//   - round 4: the hero's note pills sit above the headline, then the lead,
+//     then the buttons; one flow <video> per FLOW_STEPS entry with a video:,
+//     muted, playsinline, preload="none", never autoplay, its mp4 (≤ 1.6 MB)
+//     and poster (≤ 60 KB) exist, and its step has no drawn tap or pill; every /assets/img/home/ and
 //     /assets/img/shots/ URL on the page carries ?v=<sha8 of that file>;
 //   - the three vendor scripts and home.js on the landing pages and on no
 //     other page; every /assets/img/home/ file referenced exists, ≤ 120 KB;
@@ -685,6 +685,7 @@ for (const loc of LOCALES) {
   const IMG_MAX = 120 * 1024;
 
   const VIDEO_MAX = 1.6 * 1024 * 1024;
+  const POSTER_MAX = 60 * 1024;
   const videoRefs = new Set();
   const unescapeHtml = (s) => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
@@ -767,9 +768,10 @@ for (const loc of LOCALES) {
       }
     }
 
-    // round 3: the note pills under the lead, above the three buttons.
-    const iLead = hero.indexOf('<p class="lead"'), iPills = hero.indexOf('<div class="pills"'), iCta = hero.indexOf('<div class="hero-cta');
-    if (!(iLead !== -1 && iLead < iPills && iPills < iCta)) fail(out, 'the hero\'s note pills are not between the lead and the buttons (round 3 H1)');
+    // round 4: the note pills back on top, above the headline (the lead and
+    // the buttons follow in that order).
+    const iPills = hero.indexOf('<div class="pills"'), iH1 = hero.indexOf('<h1'), iLead = hero.indexOf('<p class="lead"'), iCta = hero.indexOf('<div class="hero-cta');
+    if (!(iPills !== -1 && iPills < iH1 && iH1 < iLead && iLead < iCta)) fail(out, 'the hero\'s note pills are not above the headline, followed by the lead and the buttons (round 4)');
 
     // round 3: the real clips in "See it in action".
     const videos = [...flow.matchAll(/<video\b[^>]*>/g)].map((m) => m[0]);
@@ -782,7 +784,7 @@ for (const loc of LOCALES) {
         if (!tag.includes(need)) fail(out, `the step ${i + 1} <video> lacks ${need.trim()}`);
       }
       if (/\sautoplay\b/.test(tag)) fail(out, `the step ${i + 1} <video> has autoplay — home.js plays it only on screen, tab visible, no reduced motion, no Save-Data`);
-      if (flow.includes(`class="tap" data-ov="${i}"`)) fail(out, `step ${i + 1} plays a clip but still has its drawn tap`);
+      if (flow.includes(`class="tap" data-ov="${i}"`) || flow.includes(`class="pillev go" data-ov="${i}"`)) fail(out, `step ${i + 1} plays a clip but still has its drawn overlay`);
       videoRefs.add(`/assets/video/${name}.mp4`); videoRefs.add(`/assets/video/${name}.webp`);
     }
 
@@ -827,6 +829,7 @@ for (const loc of LOCALES) {
     const f = path.join(DIST, ref.slice(1));
     if (!fs.existsSync(f)) fail(ref, 'is a flow clip or poster the page names, but it is not in dist/');
     else if (ref.endsWith('.mp4') && fs.statSync(f).size > VIDEO_MAX) fail(ref, `is ${(fs.statSync(f).size / 1048576).toFixed(2)} MB — the budget is 1.6 MB`);
+    else if (ref.endsWith('.webp') && fs.statSync(f).size > POSTER_MAX) fail(ref, `is ${(fs.statSync(f).size / 1024).toFixed(0)} KB — a clip's poster may be 60 KB`);
   }
   // No placeholder review text anywhere in dist/, in any text file.
   (function scan(d) {
