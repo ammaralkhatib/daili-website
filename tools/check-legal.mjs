@@ -52,6 +52,25 @@ const count = (s, re) => (s.match(re) || []).length;
  */
 const stamp = (s) => (s.match(/<p class="updated">[^]*?<time datetime="([^"]+)"/) || [])[1];
 
+/**
+ * Every `<h2` tag, with or without attributes. `/<h2>/g` alone would skip
+ * `<h2 id="…">` — and a section with an anchor is still a section.
+ */
+const H2 = /<h2[\s>]/g;
+
+/** The ids on the `<h2>` tags of a body, in order. */
+const h2Ids = (s) => [...s.matchAll(/<h2\s[^>]*\bid="([^"]+)"/g)].map((m) => m[1]);
+
+/**
+ * Google's OAuth verification of the Calendar scopes was granted on the strength
+ * of the privacy policy's "Google user data" section: the reviewer is sent to
+ * privacy.html#google-user-data and reads the sharing, protection and Limited Use
+ * statements there. Losing any of these in the binding bodies re-opens the
+ * verification, so their presence is asserted rather than trusted.
+ */
+const GOOGLE_OAUTH_MUST_CONTAIN = ['id="google-user-data"', 'id="data-protection"', 'api-services-user-data-policy', 'Limited Use'];
+const GOOGLE_OAUTH_WHY = 'the Google OAuth verification depends on this section — see claude-prompts/2026-09-28/001';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -65,7 +84,8 @@ for (const id of LEGAL_IDS) {
   const enFile = `legal/${pg.body.en}`;
   if (!fs.existsSync(path.join(ROOT, enFile))) { fail(enFile, 'the binding English body does not exist'); continue; }
   const enSrc = read(enFile);
-  const wantH2 = count(enSrc, /<h2>/g);
+  const wantH2 = count(enSrc, H2);
+  const wantIds = h2Ids(enSrc);
   const wantStamp = stamp(enSrc);
   if (!wantStamp) fail(enFile, 'the .updated line has no <time datetime="…"> — nothing to compare the translations against');
 
@@ -74,8 +94,21 @@ for (const id of LEGAL_IDS) {
     if (!fs.existsSync(path.join(ROOT, rel))) { fail(rel, `body for locale '${loc}' does not exist`); continue; }
     const src = read(rel);
 
-    const h2 = count(src, /<h2>/g);
+    const h2 = count(src, H2);
     if (h2 !== wantH2) fail(rel, `has ${h2} <h2> sections, English has ${wantH2} — the translation is not the same document`);
+
+    // An anchor that works in English but 404s to the top of the page in
+    // Japanese is a broken link the English reviewer will never see.
+    const ids = new Set(h2Ids(src));
+    for (const want of wantIds) {
+      if (!ids.has(want)) fail(rel, `has no <h2 id="${want}"> — English does, and ${BINDING_URL[id]}#${want} must work in every language`);
+    }
+
+    if (id === 'privacy' && AUTHORITATIVE.has(loc)) {
+      for (const must of GOOGLE_OAUTH_MUST_CONTAIN) {
+        if (!src.includes(must)) fail(rel, `does not contain ${must} — ${GOOGLE_OAUTH_WHY}`);
+      }
+    }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
 

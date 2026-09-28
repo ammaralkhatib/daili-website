@@ -1,5 +1,5 @@
 <h1>Privacy Policy</h1>
-<p class="updated">Daili app, app.daili.app and daili.app · Last updated: <time datetime="2026-09-27">27 September 2026</time></p>
+<p class="updated">Daili app, app.daili.app and daili.app · Last updated: <time datetime="2026-09-28">28 September 2026</time></p>
 
 <p>Daili is a private family organizer. We built it so that your family's plans belong to your family: <strong>no ads, no tracking, no selling of data.</strong> This page explains, in plain language, what data the app needs, why, and what your rights are.</p>
 
@@ -23,26 +23,88 @@ E-mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 <p><strong>Account data.</strong> When you register we store your display name, e-mail address and password (stored only as a secure hash — we cannot read it). Optional: a profile picture and your language preference. Legal basis: performance of the contract with you (Art. 6(1)(b) GDPR).</p>
 <p><strong>Sign in with Google or Apple (optional).</strong> If you choose social sign-in, authentication runs through Firebase Authentication (Google Ireland Ltd.). We receive your name, e-mail address (Apple lets you hide it behind a relay address) and a technical user ID. We never see your Google or Apple password.</p>
 <p><strong>Family content.</strong> Everything your family creates in the app is stored on our server so your family members can see it: calendar events and reminders, shopping and to-do lists, recipes and meal plans, birthdays and celebrations, subscribed external calendar addresses, and family member profiles — including managed profiles for children (name, optional birthday, optional picture) that a parent creates and controls. This content is visible only to members of your family, never to other users and never publicly.</p>
-<p><strong>Connected calendars (optional).</strong> If you add your phone's calendar, those events are read and shown <strong>on your device only</strong> — they are never uploaded to our servers, and your family cannot see them. If you connect a Google or Outlook calendar, Daili reads the calendars you select (read-only) and stores their events on our server so you — and, only if you choose, your family — can see them in the family calendar. You can disconnect at any time; the synced events and access keys are then deleted.</p>
+<p><strong>Connected calendars (optional).</strong> If you add your phone's calendar, those events are read and shown <strong>on your device only</strong> — they are never uploaded to our servers, and your family cannot see them. If you connect a Google or Outlook calendar, Daili reads the calendars you select (read-only) and stores their events on our server so you — and, only if you choose, your family — can see them in the family calendar. You can disconnect at any time; the synced events and access keys are then deleted. How Daili handles Google Calendar data — what it reads, with whom it is shared and how it is protected — is described in section 5.</p>
 <p><strong>AI features (optional).</strong> Some features ask Google's Gemini AI for help, only when you start them: turning a YouTube video, a photo or a screenshot into a recipe, reading dates from a photographed letter, and suggesting dinners for your week. For these, the video link, the photo, or — for suggestions — your recipe titles, your recent meals and the wish you typed are sent to Google (Google Ireland Ltd.) once and used only to answer. Photos are read once and never stored on our servers; Google does not use this data to train its models. Each family has a monthly number of AI actions; we count them, nothing else.</p>
 <p><strong>Contacts (optional).</strong> If you use "import birthdays", the app shows your address book <strong>on your device</strong> so you can pick entries; only the names and birthdays you tick are sent to our server. Your address book itself is never uploaded.</p>
 <p><strong>Photos &amp; documents vault.</strong> Files in the vault are stored <strong>only on your device</strong>. They are never uploaded to our servers and are not part of any backup we hold.</p>
 <p><strong>Push notifications.</strong> To deliver reminders, the app registers a technical device token with Firebase Cloud Messaging (Google). You can turn notifications off at any time in the system settings; reminders then simply stop.</p>
+<p><strong>Wall display (optional).</strong> If someone in your family connects a TRMNL e-paper display to Daili, our server sends the display a summary of the next few days: events, to-dos, shopping items, meals and birthdays of your family. It is sent to TRMNL, the company that runs the display service, so the display can show it. Private events and calendars that are not shared with the family are never sent. Removing the Daili plugin in TRMNL stops it.</p>
 <p><strong>E-mails.</strong> We send account e-mails (verification, password reset, invitations) through Brevo, an EU e-mail provider.</p>
 <p><strong>Newsletter (optional).</strong> Only if you switch it on — in the app, in the web app, when you sign up, or with the form on our blog — do we send you a newsletter: about one e-mail a month with new features and tips. We store your e-mail address, your language, where you signed up and the date you agreed, as proof of your consent. The newsletter is sent through Brevo (Sendinblue SAS, France, EU), which processes this data on our behalf. If you sign up with the blog form, or have not confirmed your e-mail address yet, Brevo first sends a confirmation e-mail; nothing else is sent until you click it. Newsletter e-mails contain <strong>no tracking pixels and no tracked links</strong>. You can unsubscribe at any time — with the link in every newsletter, the switch in the app or web app, or by writing to us; you are then removed from the list. Deleting your account also deletes you from the newsletter. Legal basis: your consent (Art. 6(1)(a) GDPR), which you can withdraw at any time without affecting e-mails already sent.</p>
 <p><strong>Help center feedback in the app (optional).</strong> The app's help center loads the help articles from our website (daili.app). If you tap "Was this helpful?" or a help search finds nothing, the app sends an anonymous count to our own server: which article and yes/no, or the search text, plus the app version, the platform (iOS/Android) and the language. It is sent without your account, without a device id and without a login token, so we can't link it to you. We delete it after 180 days. Legal basis: our legitimate interest in useful help (Art. 6(1)(f) GDPR).</p>
 <p><strong>What the app does <em>not</em> collect.</strong> No location. No advertising ID. No analytics or tracking tools inside the app. Your address book and your phone's calendar stay on your device.</p>
 
-<h2>5. Where your data lives</h2>
+<h2 id="google-user-data">5. Google user data</h2>
+<p>This section explains how Daili accesses, uses, stores, shares and protects <strong>Google user data</strong>: the data we receive from Google when you connect a Google Calendar, or when you sign in with Google.</p>
+
+<h3>What we access</h3>
+<p>Only if you tap "Connect Google Calendar" and agree on Google's consent screen, Daili gets read-only access with these permissions:</p>
+<ul>
+<li><code>calendar.calendarlist.readonly</code> — the list of your calendars (name and colour), so you can choose which calendars Daili shows;</li>
+<li><code>calendar.events.readonly</code> — the events of the calendars you chose;</li>
+<li><code>openid</code> and <code>email</code> — the e-mail address of the Google account, so you can see which account is connected.</li>
+</ul>
+<p>Daili never creates, changes or deletes anything in your Google Calendar. If you sign in with Google (section 4), we receive only your name, e-mail address and a technical user ID, and use them only to sign you in.</p>
+
+<h3>How we use it</h3>
+<p>We use Google user data only to show the events of the calendars you chose inside Daili: in the family calendar of the app and the web app, in your home-screen widgets, in the morning and evening summary notifications if you switch them on, and on a family wall display if your family connects one. We do <strong>not</strong> use Google user data for advertising, we do not sell it, we do not use it to build profiles, and we do not use it to develop, improve or train artificial-intelligence or machine-learning models. Google Calendar data is <strong>never sent to the AI features</strong> described in section 4.</p>
+
+<h3>What we store</h3>
+<p>For each event: title, location, start and end time, whether it is all-day, and its time zone. For each chosen calendar: its name and colour. For the connection: the Google e-mail address and the access keys (OAuth tokens) that Google gives us. We do not store event descriptions, guests or attachments. This data is stored on the Daili server in the EU (section 7); the app keeps a copy on your device so your calendar also works offline.</p>
+
+<h3>With whom we share, transfer or disclose Google user data</h3>
+<p>We do <strong>not sell</strong> Google user data, and we do <strong>not share, transfer or disclose</strong> it to anyone, except in these cases:</p>
+<ul>
+<li><strong>Your family members</strong> — only the calendars you mark "Share with family". A calendar you keep private is visible only to you.</li>
+<li><strong>Service providers that run Daili for us</strong> — Host Europe GmbH (Germany), which hosts our server and database; and Google (Firebase Cloud Messaging), which delivers our notifications. If you switch on the summary notification, it contains the titles of that day's events. These providers process the data only on our behalf, to run Daili.</li>
+<li><strong>TRMNL</strong> — only if someone in your family connects a TRMNL e-paper display to Daili: events from calendars shared with the family are sent to TRMNL so the display can show them. Private calendars are never sent.</li>
+<li><strong>When the law requires it</strong> — for example a binding order from a court or an authority, and only as far as required.</li>
+</ul>
+<p>We never give Google user data to advertisers, data brokers or AI companies, and we do not transfer or disclose it to third parties for any purpose other than the ones listed in this section.</p>
+
+<h3>How we protect Google user data</h3>
+<ul>
+<li><strong>Encryption in transit:</strong> every connection between the app or web app, our server and Google uses HTTPS (TLS).</li>
+<li><strong>Encrypted access keys:</strong> the Google access keys (OAuth tokens) are encrypted in our database with AES-256. They never leave our server and are never sent to the app or the browser.</li>
+<li><strong>Access control:</strong> every request must be signed in. Before the server returns any event, it checks that you belong to the family and that the calendar is yours or shared with the family.</li>
+<li><strong>Least privilege:</strong> Daili asks only for read-only permissions and stores only the fields listed above.</li>
+<li><strong>Limited staff access:</strong> only the developer of Daili (section 1) has administrative access to the server and the database.</li>
+</ul>
+<p>Section 6 describes the security measures that protect all your data.</p>
+
+<h3>How long we keep it and how to delete it</h3>
+<ul>
+<li>Daili refreshes the chosen calendars regularly. An event you delete in Google also disappears from Daili at the next refresh.</li>
+<li>When you disconnect Google in Daili (Calendar → settings → the connected account → Disconnect), we <strong>revoke our access at Google</strong> and immediately delete the access keys, the calendar list and all synced events.</li>
+<li>When you delete your Daili account, all Google user data is deleted with it, at the latest after the 30-day grace period (section 8).</li>
+<li>You can also remove Daili's access at any time in your Google Account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Daili then cannot read your calendar any more; disconnect in Daili as well to delete the copy we stored.</li>
+</ul>
+
+<h3>Limited Use</h3>
+<p>Daili's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2 id="data-protection">6. How we protect your data</h2>
+<p>We protect all data in Daili — including Google user data — with these measures:</p>
+<ul>
+<li><strong>Encryption in transit:</strong> the app, the web app and this website talk to our server only over HTTPS (TLS).</li>
+<li><strong>Passwords</strong> are stored only as a secure hash (bcrypt). Nobody, including us, can read them.</li>
+<li><strong>Access keys for connected calendar accounts</strong> are encrypted in the database (AES-256) and never leave our server.</li>
+<li><strong>Access control:</strong> every request must be signed in, and the server only returns data of your own family. Private items stay visible only to you.</li>
+<li><strong>Hosting in the EU:</strong> our server and database are hosted by Host Europe GmbH in a professional data centre in the EU.</li>
+<li><strong>Few people, little data:</strong> only the developer of Daili has administrative access, and we collect only what a feature needs — no location, no advertising ID, no tracking.</li>
+<li><strong>If something goes wrong:</strong> if a data breach ever happens, we inform the data protection authority and the people affected, as the GDPR requires (Art. 33 and 34 GDPR).</li>
+</ul>
+
+<h2>7. Where your data lives</h2>
 <p>The Daili server is hosted by Host Europe GmbH in the European Union (Germany). Firebase Authentication and Firebase Cloud Messaging are services of Google; Google may process limited technical data (such as device tokens) on servers outside the EU under the EU standard contractual clauses. Gemini requests may be processed by Google on servers outside the EU under the EU standard contractual clauses.</p>
 
-<h2>6. How long we keep data</h2>
+<h2>8. How long we keep data</h2>
 <p>Your data stays as long as your account exists. If you delete your account, it is deactivated immediately, kept for a <strong>30-day grace period</strong> (in case you change your mind — you can restore it by e-mail link), and then <strong>permanently deleted</strong>. You can export your data as a file at any time (Settings → Profile → Download my data).</p>
 
-<h2>7. Children</h2>
+<h2>9. Children</h2>
 <p>Daili is made for families. Accounts for children are created and managed by a parent or guardian: either as a managed profile without a login, or via a personal invitation from a family admin. Parents can remove a child's profile and its data at any time.</p>
 
-<h2>8. Your rights</h2>
+<h2>10. Your rights</h2>
 <ul>
 <li>Access to the data we hold about you (the in-app export covers this)</li>
 <li>Correction of wrong data, deletion, and restriction of processing</li>
@@ -51,8 +113,8 @@ E-mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 </ul>
 <p>Just write to <a href="mailto:support@daili.app">support@daili.app</a>. You also have the right to complain to the Austrian Data Protection Authority (Datenschutzbehörde, dsb.gv.at).</p>
 
-<h2>9. Changes</h2>
+<h2>11. Changes</h2>
 <p>If Daili gains new features that change how data is handled, we will update this page and note the date at the top.</p>
 
-<h2>10. Language</h2>
+<h2>12. Language</h2>
 <p>This policy is written in English and German. Translations into other languages are provided for convenience; if they differ, the English version applies.</p>

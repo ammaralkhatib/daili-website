@@ -1,7 +1,7 @@
 <p class="translated">Toto je preklad poskytnutý pre tvoje pohodlie. Záväzná je anglická verzia: <a href="/privacy.html" hreflang="en" lang="en">Privacy Policy</a>.</p>
 
 <h1>Zásady ochrany osobných údajov</h1>
-<p class="updated">Aplikácia Daili, app.daili.app a daili.app · Posledná aktualizácia: <time datetime="2026-09-27">27. septembra 2026</time></p>
+<p class="updated">Aplikácia Daili, app.daili.app a daili.app · Posledná aktualizácia: <time datetime="2026-09-28">28. septembra 2026</time></p>
 
 <p>Daili je súkromný rodinný organizér. Postavili sme ho tak, aby plány tvojej rodiny patrili tvojej rodine: <strong>žiadne reklamy, žiadne sledovanie, žiadny predaj údajov.</strong> Táto stránka zrozumiteľne vysvetľuje, aké údaje aplikácia potrebuje, prečo a aké máš práva.</p>
 
@@ -25,26 +25,88 @@ E-mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 <p><strong>Údaje účtu.</strong> Pri registrácii ukladáme tvoje zobrazované meno, e-mailovú adresu a heslo (uložené len ako bezpečný hash — prečítať ho nevieme). Voliteľne: profilovú fotku a jazyk, ktorý si zvolíš. Právny základ: plnenie zmluvy s tebou (čl. 6 ods. 1 písm. b) GDPR).</p>
 <p><strong>Prihlásenie cez Google alebo Apple (voliteľné).</strong> Ak si zvolíš prihlásenie cez sociálny účet, overenie prebehne cez Firebase Authentication (Google Ireland Ltd.). Dostaneme tvoje meno, e-mailovú adresu (Apple ti umožňuje skryť ju za preposielaciu adresu) a technický identifikátor používateľa. Tvoje heslo ku Google ani k Apple nikdy nevidíme.</p>
 <p><strong>Rodinný obsah.</strong> Všetko, čo tvoja rodina v aplikácii vytvorí, sa ukladá na náš server, aby to členovia rodiny videli: termíny a pripomienky v kalendári, nákupné zoznamy a zoznamy úloh, recepty a jedálničky, narodeniny a oslavy, adresy externých kalendárov, ktoré si odoberáš, a profily členov rodiny — vrátane spravovaných profilov detí (meno, voliteľne narodeniny, voliteľne fotka), ktoré vytvára a riadi rodič. Tento obsah vidia iba členovia tvojej rodiny, nikdy iní používatelia a nikdy verejnosť.</p>
-<p><strong>Pripojené kalendáre (voliteľné).</strong> Ak pridáš kalendár svojho telefónu, jeho termíny sa čítajú a zobrazujú <strong>len v tvojom zariadení</strong> — nikdy sa nenahrávajú na naše servery a tvoja rodina ich nevidí. Ak pripojíš kalendár Google alebo Outlook, Daili číta kalendáre, ktoré vyberieš (iba na čítanie), a ich termíny ukladá na náš server, aby si ich videl ty — a, len ak sa tak rozhodneš, aj tvoja rodina — v rodinnom kalendári. Odpojiť sa môžeš kedykoľvek; synchronizované termíny a prístupové kľúče sa vtedy zmažú.</p>
+<p><strong>Pripojené kalendáre (voliteľné).</strong> Ak pridáš kalendár svojho telefónu, jeho termíny sa čítajú a zobrazujú <strong>len v tvojom zariadení</strong> — nikdy sa nenahrávajú na naše servery a tvoja rodina ich nevidí. Ak pripojíš kalendár Google alebo Outlook, Daili číta kalendáre, ktoré vyberieš (iba na čítanie), a ich termíny ukladá na náš server, aby si ich videl ty — a, len ak sa tak rozhodneš, aj tvoja rodina — v rodinnom kalendári. Odpojiť sa môžeš kedykoľvek; synchronizované termíny a prístupové kľúče sa vtedy zmažú. Ako Daili narába s údajmi z Kalendára Google — čo číta, s kým ich zdieľa a ako ich chráni — opisuje bod 5.</p>
 <p><strong>Funkcie s umelou inteligenciou (voliteľné).</strong> Niektoré funkcie žiadajú o pomoc Gemini, umelú inteligenciu od Googlu, len keď ich sám spustíš: premena videa z YouTube, fotky alebo snímky obrazovky na recept, prečítanie dátumov z odfoteného listu a návrh večerí na tvoj týždeň. Na to sa odkaz na video, fotka alebo — pri návrhoch — názvy tvojich receptov, vaše posledné jedlá a želanie, ktoré si napísal, raz odošlú Googlu (Google Ireland Ltd.) a použijú sa len na odpoveď. Fotky sa prečítajú raz a nikdy sa neukladajú na našich serveroch; Google tieto údaje nepoužíva na trénovanie svojich modelov. Každá rodina má mesačný počet akcií s AI; tie počítame, nič iné.</p>
 <p><strong>Kontakty (voliteľné).</strong> Ak použiješ „import narodenín“, aplikácia ti zobrazí tvoj adresár <strong>v tvojom zariadení</strong>, aby si vybral záznamy; na náš server sa pošlú len mená a dátumy narodenia, ktoré zaškrtneš. Samotný adresár sa nikdy nenahráva.</p>
 <p><strong>Trezor na fotky a dokumenty.</strong> Súbory v trezore sa ukladajú <strong>len v tvojom zariadení</strong>. Nikdy sa nenahrávajú na naše servery a nie sú súčasťou žiadnej zálohy, ktorú držíme.</p>
 <p><strong>Push upozornenia.</strong> Aby aplikácia doručila pripomienky, registruje technický token zariadenia vo Firebase Cloud Messaging (Google). Upozornenia môžeš kedykoľvek vypnúť v systémových nastaveniach; pripomienky potom jednoducho prestanú chodiť.</p>
+<p><strong>Nástenný displej (voliteľný).</strong> Ak niekto z tvojej rodiny pripojí k Daili e-ink displej TRMNL, náš server displeju posiela prehľad najbližších pár dní: termíny, úlohy, položky nákupného zoznamu, jedlá a narodeniny tvojej rodiny. Tento prehľad sa posiela spoločnosti TRMNL, ktorá prevádzkuje službu displeja, aby ho displej mohol zobraziť. Súkromné termíny a kalendáre, ktoré nie sú zdieľané s rodinou, sa nikdy neposielajú. Odstránením pluginu Daili v TRMNL sa posielanie ukončí.</p>
 <p><strong>E-maily.</strong> E-maily týkajúce sa účtu (overenie, obnova hesla, pozvánky) posielame cez Brevo, e-mailového poskytovateľa v EÚ.</p>
 <p><strong>Newsletter (voliteľný).</strong> Newsletter ti posielame, len ak si ho sám zapneš — v aplikácii, vo webovej aplikácii, pri registrácii alebo cez formulár na našom blogu: približne jeden e-mail mesačne s novinkami a tipmi. Ukladáme tvoju e-mailovú adresu, jazyk, miesto prihlásenia a dátum súhlasu — ako doklad o tomto súhlase. Newsletter rozosielame cez Brevo (Sendinblue SAS, Francúzsko, EÚ), ktoré tieto údaje spracúva v našom mene. Ak sa prihlásiš formulárom na blogu alebo ešte nemáš potvrdenú e-mailovú adresu, Brevo najprv pošle potvrdzovací e-mail; kým naň neklikneš, nič iné sa neodošle. E-maily s newsletterom neobsahujú <strong>žiadne sledovacie pixely ani sledované odkazy</strong>. Odhlásiť sa môžeš kedykoľvek — odkazom v každom newsletteri, prepínačom v aplikácii alebo webovej aplikácii, alebo tým, že nám napíšeš; potom ťa zo zoznamu odstránime. Zmazanie účtu ťa zmaže aj z newslettera. Právny základ: tvoj súhlas (čl. 6 ods. 1 písm. a) GDPR), ktorý môžeš kedykoľvek odvolať bez vplyvu na už odoslané e-maily.</p>
 <p><strong>Spätná väzba v centre pomoci v aplikácii (voliteľná).</strong> Centrum pomoci v aplikácii načítava články pomoci z našej webovej stránky (daili.app). Keď ťukneš na „Pomohlo ti to?“ alebo keď vyhľadávanie v pomoci nič nenájde, aplikácia pošle anonymné započítanie na náš vlastný server: ktorý článok a áno/nie, alebo hľadaný text, k tomu verziu aplikácie, platformu (iOS/Android) a jazyk. Posiela sa bez tvojho účtu, bez ID zariadenia a bez prihlasovacieho tokenu, takže ho k tebe nedokážeme priradiť. Po 180 dňoch ho mažeme. Právny základ: náš oprávnený záujem na užitočnej pomoci (čl. 6 ods. 1 písm. f) GDPR).</p>
 <p><strong>Čo aplikácia <em>nezbiera</em>.</strong> Žiadnu polohu. Žiadne reklamné ID. Žiadne analytické ani sledovacie nástroje vnútri aplikácie. Tvoj adresár aj kalendár tvojho telefónu zostávajú v zariadení.</p>
 
-<h2>5. Kde sú tvoje údaje</h2>
+<h2 id="google-user-data">5. Používateľské údaje Google</h2>
+<p>Tento bod vysvetľuje, ako Daili pristupuje k <strong>používateľským údajom Google</strong>, ako ich používa, ukladá, zdieľa a chráni. Ide o údaje, ktoré od Google dostávame, keď pripojíš Kalendár Google alebo keď sa prihlásiš cez Google.</p>
+
+<h3>K čomu pristupujeme</h3>
+<p>Iba ak ťukneš na „Pripojiť Kalendár Google“ a súhlasíš na obrazovke súhlasu Google, Daili získa prístup iba na čítanie s týmito povoleniami:</p>
+<ul>
+<li><code>calendar.calendarlist.readonly</code> — zoznam tvojich kalendárov (názov a farba), aby si si mohol vybrať, ktoré kalendáre Daili zobrazí;</li>
+<li><code>calendar.events.readonly</code> — termíny z kalendárov, ktoré si vybral;</li>
+<li><code>openid</code> a <code>email</code> — e-mailová adresa účtu Google, aby si videl, ktorý účet je pripojený.</li>
+</ul>
+<p>Daili v tvojom Kalendári Google nikdy nič nevytvára, nemení ani nemaže. Ak sa prihlásiš cez Google (bod 4), dostaneme len tvoje meno, e-mailovú adresu a technický identifikátor používateľa a používame ich len na tvoje prihlásenie.</p>
+
+<h3>Ako ich používame</h3>
+<p>Používateľské údaje Google používame len na to, aby sme v Daili zobrazili termíny z kalendárov, ktoré si vybral: v rodinnom kalendári v aplikácii a vo webovej aplikácii, vo widgetoch na domovskej obrazovke, v ranných a večerných súhrnných upozorneniach, ak ich zapneš, a na rodinnom nástennom displeji, ak ho tvoja rodina pripojí. Používateľské údaje Google <strong>nepoužívame</strong> na reklamu, nepredávame ich, nevytvárame z nich profily a nepoužívame ich na vývoj, zlepšovanie ani trénovanie modelov umelej inteligencie alebo strojového učenia. Údaje z Kalendára Google sa <strong>nikdy neposielajú funkciám s umelou inteligenciou</strong> opísaným v bode 4.</p>
+
+<h3>Čo ukladáme</h3>
+<p>Pri každom termíne: názov, miesto, čas začiatku a konca, či ide o celodenný termín, a jeho časové pásmo. Pri každom vybranom kalendári: jeho názov a farbu. Pri pripojení: e-mailovú adresu Google a prístupové kľúče (tokeny OAuth), ktoré nám Google poskytne. Popisy termínov, hostí ani prílohy neukladáme. Tieto údaje sú uložené na serveri Daili v EÚ (bod 7); aplikácia si drží kópiu v tvojom zariadení, aby kalendár fungoval aj offline.</p>
+
+<h3>S kým používateľské údaje Google zdieľame, komu ich prenášame alebo sprístupňujeme</h3>
+<p>Používateľské údaje Google <strong>nepredávame</strong> a <strong>nezdieľame, neprenášame ani nesprístupňujeme</strong> ich nikomu, s výnimkou týchto prípadov:</p>
+<ul>
+<li><strong>Členovia tvojej rodiny</strong> — len kalendáre, ktoré označíš „Zdieľať s rodinou“. Kalendár, ktorý si necháš súkromný, vidíš len ty.</li>
+<li><strong>Poskytovatelia služieb, ktorí pre nás prevádzkujú Daili</strong> — Host Europe GmbH (Nemecko), ktorá hosťuje náš server a databázu, a Google (Firebase Cloud Messaging), ktorý doručuje naše upozornenia. Ak zapneš súhrnné upozornenie, obsahuje názvy termínov daného dňa. Títo poskytovatelia spracúvajú údaje len v našom mene, na účely prevádzky Daili.</li>
+<li><strong>TRMNL</strong> — len ak niekto z tvojej rodiny pripojí k Daili e-ink displej TRMNL: termíny z kalendárov zdieľaných s rodinou sa posielajú spoločnosti TRMNL, aby ich displej mohol zobraziť. Súkromné kalendáre sa nikdy neposielajú.</li>
+<li><strong>Keď to vyžaduje zákon</strong> — napríklad na základe záväzného príkazu súdu alebo úradu, a len v nevyhnutnom rozsahu.</li>
+</ul>
+<p>Používateľské údaje Google nikdy nedávame inzerentom, obchodníkom s údajmi ani spoločnostiam zaoberajúcim sa umelou inteligenciou a neprenášame ani nesprístupňujeme ich tretím stranám na žiadny iný účel než tie, ktoré sú uvedené v tomto bode.</p>
+
+<h3>Ako chránime používateľské údaje Google</h3>
+<ul>
+<li><strong>Šifrovanie pri prenose:</strong> každé spojenie medzi aplikáciou alebo webovou aplikáciou, naším serverom a Google používa HTTPS (TLS).</li>
+<li><strong>Šifrované prístupové kľúče:</strong> prístupové kľúče Google (tokeny OAuth) sú v našej databáze šifrované pomocou AES-256. Nikdy neopúšťajú náš server a nikdy sa neposielajú do aplikácie ani do prehliadača.</li>
+<li><strong>Riadenie prístupu:</strong> každá požiadavka musí byť prihlásená. Skôr než server vráti akýkoľvek termín, overí, že patríš do rodiny a že kalendár je tvoj alebo zdieľaný s rodinou.</li>
+<li><strong>Najnižšie potrebné povolenia:</strong> Daili žiada len o povolenia na čítanie a ukladá len údaje uvedené vyššie.</li>
+<li><strong>Obmedzený prístup personálu:</strong> administrátorský prístup k serveru a databáze má len vývojár Daili (bod 1).</li>
+</ul>
+<p>Bod 6 opisuje bezpečnostné opatrenia, ktoré chránia všetky tvoje údaje.</p>
+
+<h3>Ako dlho ich uchovávame a ako ich zmazať</h3>
+<ul>
+<li>Daili vybrané kalendáre pravidelne obnovuje. Termín, ktorý zmažeš v Google, zmizne z Daili pri ďalšej obnove.</li>
+<li>Keď Google v Daili odpojíš (Kalendár → nastavenia → pripojený účet → Odpojiť), <strong>zrušíme náš prístup v Google</strong> a okamžite zmažeme prístupové kľúče, zoznam kalendárov a všetky synchronizované termíny.</li>
+<li>Keď zmažeš svoj účet Daili, zmažú sa s ním aj všetky používateľské údaje Google, najneskôr po uplynutí 30-dňovej lehoty (bod 8).</li>
+<li>Prístup Daili môžeš tiež kedykoľvek odobrať vo svojom účte Google na adrese <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Daili potom tvoj kalendár už nemôže čítať; odpoj Google aj v Daili, aby sa zmazala kópia, ktorú sme uložili.</li>
+</ul>
+
+<h3>Limited Use (obmedzené používanie)</h3>
+<p>Používanie informácií získaných z rozhraní Google API aplikáciou Daili a ich prenos do akejkoľvek inej aplikácie sa riadi zásadami <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> vrátane požiadaviek na obmedzené používanie (Limited Use).</p>
+
+<h2 id="data-protection">6. Ako chránime tvoje údaje</h2>
+<p>Všetky údaje v Daili — vrátane používateľských údajov Google — chránime týmito opatreniami:</p>
+<ul>
+<li><strong>Šifrovanie pri prenose:</strong> aplikácia, webová aplikácia aj táto webová stránka komunikujú s naším serverom len cez HTTPS (TLS).</li>
+<li><strong>Heslá</strong> sa ukladajú len ako bezpečný hash (bcrypt). Nikto, ani my, ich nedokáže prečítať.</li>
+<li><strong>Prístupové kľúče k pripojeným kalendárovým účtom</strong> sú v databáze šifrované (AES-256) a nikdy neopúšťajú náš server.</li>
+<li><strong>Riadenie prístupu:</strong> každá požiadavka musí byť prihlásená a server vracia len údaje tvojej vlastnej rodiny. Súkromné položky vidíš len ty.</li>
+<li><strong>Hosting v EÚ:</strong> náš server a databázu hosťuje Host Europe GmbH v profesionálnom dátovom centre v EÚ.</li>
+<li><strong>Málo ľudí, málo údajov:</strong> administrátorský prístup má len vývojár Daili a zbierame len to, čo daná funkcia potrebuje — žiadnu polohu, žiadne reklamné ID, žiadne sledovanie.</li>
+<li><strong>Keď sa niečo pokazí:</strong> ak by niekedy došlo k porušeniu ochrany údajov, informujeme úrad na ochranu údajov a dotknuté osoby, ako to vyžaduje GDPR (čl. 33 a 34 GDPR).</li>
+</ul>
+
+<h2>7. Kde sú tvoje údaje</h2>
 <p>Server Daili je hosťovaný u Host Europe GmbH v Európskej únii (Nemecko). Firebase Authentication a Firebase Cloud Messaging sú služby Google; Google môže spracúvať obmedzené technické údaje (napríklad tokeny zariadení) na serveroch mimo EÚ na základe štandardných zmluvných doložiek EÚ. Požiadavky na Gemini môže Google spracúvať na serveroch mimo EÚ na základe štandardných zmluvných doložiek EÚ.</p>
 
-<h2>6. Ako dlho údaje uchovávame</h2>
+<h2>8. Ako dlho údaje uchovávame</h2>
 <p>Tvoje údaje zostávajú, kým existuje tvoj účet. Ak účet zmažeš, okamžite sa deaktivuje, uchová sa počas <strong>30-dňovej lehoty</strong> (pre prípad, že si to rozmyslíš — obnovíš ho odkazom v e-maile) a potom sa <strong>natrvalo zmaže</strong>. Svoje údaje si môžeš kedykoľvek exportovať do súboru (Nastavenia → Profil → Stiahnuť moje údaje).</p>
 
-<h2>7. Deti</h2>
+<h2>9. Deti</h2>
 <p>Daili je robené pre rodiny. Účty pre deti vytvára a spravuje rodič alebo zákonný zástupca: buď ako spravovaný profil bez prihlásenia, alebo cez osobnú pozvánku od správcu rodiny. Rodičia môžu profil dieťaťa aj s jeho údajmi kedykoľvek odstrániť.</p>
 
-<h2>8. Tvoje práva</h2>
+<h2>10. Tvoje práva</h2>
 <ul>
 <li>Prístup k údajom, ktoré o tebe vedieme (export v aplikácii to pokrýva)</li>
 <li>Oprava nesprávnych údajov, vymazanie a obmedzenie spracúvania</li>
@@ -53,8 +115,8 @@ E-mail: <a href="mailto:support@daili.app">support@daili.app</a></p>
 </ul>
 <p>Stačí napísať na <a href="mailto:support@daili.app">support@daili.app</a>. Máš tiež právo podať sťažnosť rakúskemu úradu na ochranu údajov (Datenschutzbehörde, dsb.gv.at).</p>
 
-<h2>9. Zmeny</h2>
+<h2>11. Zmeny</h2>
 <p>Ak Daili získa nové funkcie, ktoré menia nakladanie s údajmi, túto stránku aktualizujeme a hore uvedieme dátum.</p>
 
-<h2>10. Jazyk</h2>
+<h2>12. Jazyk</h2>
 <p>Tieto zásady sú napísané po anglicky a po nemecky. Preklady do ďalších jazykov poskytujeme pre pohodlie; ak sa líšia, platí anglická verzia.</p>
