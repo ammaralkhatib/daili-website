@@ -200,7 +200,11 @@ alt / CTA.
 - **H2s:** What happens without one · What a consent letter should contain · Country differences: US, UK, DE, AT · Notarised or not? · Where to keep it · The free template · Renewing it once a year
 - **FAQ:** Is it legally binding? · Needed for one evening? · Must a hospital honour it?
 - **Links:** → Day 6 · → Day 9 · → Day 3
-- **Image:** https://www.pexels.com/photo/grandparents-playing-with-children-in-the-living-room-8307532/ — alt: "Grandparents playing with their two grandchildren on the living room floor"
+- **Image:** 🔴 RE-PICK. The grandparents-with-grandchildren shot was the plan,
+  but post 6 now uses a grandmother-with-grandchildren hero (2026-09-02), and two
+  posts in the same cluster must not look alike. Go for the *document* instead —
+  a form being signed, or a handwritten letter on a table. That suits a post about
+  a consent letter better than a warm family shot anyway.
 - **CTA:** Template download; keep the signed copy in the vault.
 - **DISCLAIMER REQUIRED:** general information, not legal advice; rules differ by country.
 
