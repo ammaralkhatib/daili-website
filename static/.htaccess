@@ -74,13 +74,17 @@ ErrorDocument 404 /404.html
   # were caching CSS heuristically off Last-Modified.
 
   # HTML is unhashed and is what names every other file. Revalidate every time:
-  # the 304 is cheap, and a stale page would hide a whole deploy.
+  # the 304 is cheap, and a stale page would hide a whole deploy. `no-cache`
+  # says exactly that (it replaced "max-age=0, must-revalidate" in 009). This also covers the directory index: / and
+  # /de/ resolve to index.html before these rules run (verified 2026-09-28,
+  # curl -sSI https://daili.app/ carried the .html rule's header).
   <FilesMatch "\.html$">
-    Header always set Cache-Control "public, max-age=0, must-revalidate"
+    Header always set Cache-Control "no-cache"
   </FilesMatch>
 
-  # Images and the two home-page videos are unhashed and change a few times a
-  # year. Thirty days.
+  # Images and the flow clips are unhashed and change a few times a year.
+  # Thirty days; every page names them with ?v=<sha8 of the file> (build.mjs
+  # versionAssets), so a changed file is a new URL and is fetched at once.
   <FilesMatch "\.(webp|mp4|png|ico|svg|jpg|jpeg)$">
     Header always set Cache-Control "public, max-age=2592000"
   </FilesMatch>
@@ -94,7 +98,8 @@ ErrorDocument 404 /404.html
   </FilesMatch>
 
   # Any unhashed CSS/JS gets a week, never a year — a deploy must not be
-  # invisible for a year. Stated first so the hashed rule below can override it.
+  # invisible for a year (the vendor scripts are named with ?v= too).
+  # Stated first so the hashed rule below can override it.
   <FilesMatch "\.(css|js)$">
     Header always set Cache-Control "public, max-age=604800"
   </FilesMatch>

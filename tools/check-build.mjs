@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, DAY_CARDS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, DAY_CARDS, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -103,7 +103,9 @@ if (fs.existsSync(path.join(DIST, 'en'))) fail('en/', 'exists — English is ser
 // --- 2. internal links resolve ---------------------------------------------
 for (const f of htmlFiles) {
   const html = read(f);
-  const refs = [...html.matchAll(/(?:href|src)="(\/[^"#?]*)"/g)].map((m) => m[1]);
+  // The path only: a ?v= cache-buster (build.mjs versionAssets) or #anchor
+  // after it must not hide the link from this check.
+  const refs = [...html.matchAll(/(?:href|src|poster)="(\/[^"#?]*)[^"]*"/g)].map((m) => m[1]);
   for (const r of new Set(refs)) {
     let target = path.join(DIST, r);
     if (r.endsWith('/')) target = path.join(target, 'index.html');
@@ -395,7 +397,7 @@ for (const f of htmlFiles) {
     if (!fs.existsSync(src)) {
       fail(out, `${post.slug}: hero image ${post.image} does not exist in static/ — a post whose hero 404s must not ship`);
     }
-    if (!html.includes(`src="${post.image}"`)) {
+    if (!html.includes(`src="${post.image}"`) && !html.includes(`src="${post.image}?v=`)) {
       fail(out, `${post.slug}: page does not reference its hero image ${post.image}`);
     }
 
@@ -643,8 +645,14 @@ for (const loc of LOCALES) {
 //   - no shutter bars (.shut / .shut-rows) anywhere — removed in round 2;
 //   - the member number, formatted for the page's locale, and no {count}
 //     anywhere in dist/;
-//   - with fewer than 3 REVIEWS no reviews section at all, and never the
-//     mock's "Placeholder" / "Sample name" anywhere in dist/;
+//   - with fewer than 3 REVIEWS no reviews section at all; with 3+ every
+//     card is one REVIEWS entry, each once; the words "Placeholder" and
+//     "Sample" nowhere in dist/ (any text file);
+//   - round 3: the hero's note pills sit under the lead, above the buttons;
+//     each flow <video> is a FLOW_STEPS clip, muted, playsinline,
+//     preload="none", never autoplay, its mp4 (≤ 1.6 MB) and poster exist,
+//     and its step has no drawn tap; every /assets/img/home/ and
+//     /assets/img/shots/ URL on the page carries ?v=<sha8 of that file>;
 //   - the three vendor scripts and home.js on the landing pages and on no
 //     other page; every /assets/img/home/ file referenced exists, ≤ 120 KB;
 //   - no cloudfront.net and no http(s):// image or script source in any page.
@@ -675,6 +683,10 @@ for (const loc of LOCALES) {
   const VENDOR = ['/assets/vendor/gsap.min.js', '/assets/vendor/ScrollTrigger.min.js', '/assets/vendor/lenis.min.js'];
   const HOME_JS = /<script src="\/assets\/home\.[0-9a-f]{8}\.js" defer><\/script>/;
   const IMG_MAX = 120 * 1024;
+
+  const VIDEO_MAX = 1.6 * 1024 * 1024;
+  const videoRefs = new Set();
+  const unescapeHtml = (s) => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
   const landingOuts = new Set(locs.map((l) => landing.out(l)));
   for (const loc of locs) {
@@ -746,9 +758,45 @@ for (const loc of LOCALES) {
     if (!withReviews && /id="reviews"|class="revs"|class="rv"/.test(html)) {
       fail(out, `has reviews markup but REVIEWS has ${REVIEWS.length} entries — the section renders only from 3 real ones`);
     }
+    if (withReviews) {
+      const revSet = (sectionAt(html, 'id="reviews"').match(/<div class="marq-set">([\s\S]*?)<\/div><div class="marq-set" aria-hidden/) || [, ''])[1];
+      const shown = [...revSet.matchAll(/<article class="rv" data-review="([^"]*)">[\s\S]*?<p lang="[^"]*">([^<]*)<\/p><\/article>/g)].map((m) => [unescapeHtml(m[1]), unescapeHtml(m[2])]);
+      const want = REVIEWS.map((r) => [r.title, r.text]);
+      if (JSON.stringify(shown) !== JSON.stringify(want)) {
+        fail(out, `the reviews row shows ${shown.length} card(s) that are not exactly REVIEWS' ${want.length}, in order — only real reviews from site.config.mjs, never invented ones`);
+      }
+    }
+
+    // round 3: the note pills under the lead, above the three buttons.
+    const iLead = hero.indexOf('<p class="lead"'), iPills = hero.indexOf('<div class="pills"'), iCta = hero.indexOf('<div class="hero-cta');
+    if (!(iLead !== -1 && iLead < iPills && iPills < iCta)) fail(out, 'the hero\'s note pills are not between the lead and the buttons (round 3 H1)');
+
+    // round 3: the real clips in "See it in action".
+    const videos = [...flow.matchAll(/<video\b[^>]*>/g)].map((m) => m[0]);
+    const wantVideos = FLOW_STEPS.map((s, i) => [i, s.video]).filter(([, v]) => v);
+    if (videos.length !== wantVideos.length) fail(out, `"See it in action" has ${videos.length} <video>, expected ${wantVideos.length} (FLOW_STEPS with a video)`);
+    for (const [i, name] of wantVideos) {
+      const tag = videos.find((t) => t.includes(`data-sx="${i}"`));
+      if (!tag) { fail(out, `step ${i + 1} has a clip (${name}) but no <video data-sx="${i}">`); continue; }
+      for (const need of ['data-flow-video', ' muted', ' playsinline', 'preload="none"', `src="/assets/video/${name}.mp4?v=`, `poster="/assets/video/${name}.webp?v=`]) {
+        if (!tag.includes(need)) fail(out, `the step ${i + 1} <video> lacks ${need.trim()}`);
+      }
+      if (/\sautoplay\b/.test(tag)) fail(out, `the step ${i + 1} <video> has autoplay — home.js plays it only on screen, tab visible, no reduced motion, no Save-Data`);
+      if (flow.includes(`class="tap" data-ov="${i}"`)) fail(out, `step ${i + 1} plays a clip but still has its drawn tap`);
+      videoRefs.add(`/assets/video/${name}.mp4`); videoRefs.add(`/assets/video/${name}.webp`);
+    }
+
+    // round 3: every home picture and screenshot carries ?v=<sha8 of the file>.
+    for (const m of html.matchAll(/\/assets\/img\/(?:home|shots)\/[^"'\s?)]+(\?v=([0-9a-f]{8}))?/g)) {
+      const f = path.join(DIST, m[0].split('?')[0].slice(1));
+      if (!m[1]) { fail(out, `names ${m[0]} without ?v= — a changed file would hide behind the 30-day image cache`); continue; }
+      if (fs.existsSync(f) && crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex').slice(0, 8) !== m[2]) {
+        fail(out, `names ${m[0]}, but that file's sha8 is not ${m[2]} — a stale cache-buster`);
+      }
+    }
 
     for (const src of VENDOR) {
-      if (!html.includes(`<script src="${src}" defer></script>`)) fail(out, `does not load ${src} (defer)`);
+      if (!new RegExp(`<script src="${src.replace(/\./g, '\\.')}\\?v=[0-9a-f]{8}" defer></script>`).test(html)) fail(out, `does not load ${src}?v=<sha8> (defer)`);
     }
     if (!HOME_JS.test(html)) fail(out, 'does not load the hashed home.js (defer)');
   }
@@ -764,7 +812,6 @@ for (const loc of LOCALES) {
     }
     for (const m of html.matchAll(/\/assets\/img\/home\/[\w.-]+/g)) homeRefs.add(m[0]);
     if (html.includes('{count}')) fail(out, 'contains an unfilled {count}');
-    for (const s of ['Placeholder', 'Sample name']) if (html.includes(s)) fail(out, `contains "${s}" — no placeholder review text may ship`);
     if (html.includes('cloudfront.net')) fail(out, 'references cloudfront.net — every image is self-hosted');
     for (const m of html.matchAll(/<(?:img|script|source)\b[^>]*\s(?:src|srcset)="(https?:\/\/[^"]+)"/g)) {
       fail(out, `loads ${m[1]} — images and scripts are self-hosted`);
@@ -776,6 +823,21 @@ for (const loc of LOCALES) {
     else if (fs.statSync(f).size > IMG_MAX) fail(ref, `is ${(fs.statSync(f).size / 1024).toFixed(0)} KB — the budget is 120 KB`);
   }
   if (!homeRefs.size) fail('index.html', 'references no /assets/img/home/ file — the home page lost its pictures');
+  for (const ref of videoRefs) {
+    const f = path.join(DIST, ref.slice(1));
+    if (!fs.existsSync(f)) fail(ref, 'is a flow clip or poster the page names, but it is not in dist/');
+    else if (ref.endsWith('.mp4') && fs.statSync(f).size > VIDEO_MAX) fail(ref, `is ${(fs.statSync(f).size / 1048576).toFixed(2)} MB — the budget is 1.6 MB`);
+  }
+  // No placeholder review text anywhere in dist/, in any text file.
+  (function scan(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const f = path.join(d, e.name);
+      if (e.isDirectory()) { scan(f); continue; }
+      if (!/\.(html|js|css|json|xml|txt|svg)$/.test(e.name)) continue;
+      const txt = read(f);
+      for (const w of ['Placeholder', 'Sample']) if (txt.includes(w)) fail(rel(f), `contains "${w}" — no placeholder or sample review text may ship`);
+    }
+  })(DIST);
 }
 
 // --- 16. help center ------------------------------------------------------

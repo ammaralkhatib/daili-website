@@ -18,7 +18,7 @@ import {
   PAGES, imageSize, SHOT_LOCALE, WEB_APP_URL,
   MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_SCENES, RATING, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
   MEMBER_TILES_AFTER, HOME_FAMILY, DAY_CARDS, HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
-  FLOW_STEPS, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
+  FLOW_STEPS, FLOW_VIDEO_SIZE, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
 } from './site.config.mjs';
@@ -599,11 +599,11 @@ function renderHome(loc) {
   const icard = (tone, key, shot, pos, inner) => `      <article class="icard i-${tone}"><div class="tx"><h3>${e(h(`home.plus.${key}.h3`))}</h3><p>${e(h(`home.plus.${key}.p`))}</p></div>
         <div class="vis"><div class="ifix">${phone(shot)}<div class="ai-card" style="${pos}" aria-hidden="true">${inner}</div></div></div></article>`;
   const icards = [
-    icard('berry', 'video', 'shot-recipes', 'inset-inline-start:-38%;top:180px',
+    icard('berry', 'video', 'shot-recipes', 'top:180px',
       `${aiHead(h('home.plus.video.hd'))}<div class="vid"><span>${homeIcon('play')}</span></div><div class="ttl">${e(h('home.plus.video.title'))}</div>${aiRow('meal', 'clay', h('home.plus.video.t'), h('home.plus.video.s'))}`),
-    icard('clay', 'letter', 'shot-calendar', 'inset-inline-start:-42%;top:160px',
+    icard('clay', 'letter', 'shot-calendar', 'top:160px',
       `${aiHead(h('home.plus.letter.hd'))}${aiRow('cal', 'lake', rows[0].t, rows[0].s)}${aiRow('people', 'berry', rows[1].t, rows[1].s)}${aiRow('photo', 'honey', rows[2].t, rows[2].s)}<span class="add">${e(h('home.plus.letter.add'))}</span>`),
-    icard('leaf', 'ideas', 'shot-mealplan', 'inset-inline-start:-38%;top:190px',
+    icard('leaf', 'ideas', 'shot-mealplan', 'top:190px',
       `${aiHead(h('home.plus.ideas.hd'))}<div class="ttl">${e(h('home.plus.ideas.title'))}</div>${aiRow('meal', 'leaf', h('home.plus.ideas.t'), h('home.plus.ideas.s'))}<span class="add">${e(h('home.plus.ideas.add'))}</span>`),
   ].join('\n');
 
@@ -616,13 +616,24 @@ function renderHome(loc) {
   // screen), physical left on purpose: the screenshot does not mirror in /ar/.
   // Step 1's overlays carry .go in the markup, so a reader without JavaScript
   // sees step 1 finished; home.js restarts them per step.
+  // A step with a clip shows it instead of the screenshot and loses its drawn
+  // overlay (round 3). preload="none" and no autoplay: home.js plays it only
+  // on screen, tab visible, no reduced motion, no Save-Data; else the poster.
   const shots = FLOW_STEPS.map((s, i) => {
+    if (s.video) {
+      for (const ext of ['mp4', 'webp']) {
+        if (!fs.existsSync(p(`static/assets/video/${s.video}.${ext}`))) throw new Error(`FLOW_STEPS[${i}].video: static/assets/video/${s.video}.${ext} does not exist`);
+      }
+      const { width, height } = FLOW_VIDEO_SIZE;
+      return `<video class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" data-flow-video src="/assets/video/${s.video}.mp4" poster="/assets/video/${s.video}.webp" width="${width}" height="${height}" muted playsinline preload="none"></video>`;
+    }
     const { width, height } = imageSize(s.shot);
     return `<img class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" src="${imgSrc(s.shot, loc)}" alt="" width="${width}" height="${height}" loading="lazy" decoding="async">`;
   }).join('');
-  const tap = (i, style) => `<span class="tap" data-ov="${i}" style="${style}">${homeIcon('check', 3)}</span>`;
+  const tap = (i, style) => (FLOW_STEPS[i].video ? '' : `<span class="tap" data-ov="${i}" style="${style}">${homeIcon('check', 3)}</span>`);
+  const pill = FLOW_STEPS[0].video ? '' : `<span class="pillev go" data-ov="0" style="left:20%;top:75.5%;width:24%">${e(h('home.flow.pill'))}</span>`;
   const flowVis = `        <div class="bgc" data-bgc style="background:${FLOW_STEPS[0].tint}"></div>
-        <div class="phone" aria-hidden="true"><div class="scr">${shots}<span class="pillev go" data-ov="0" style="left:20%;top:75.5%;width:24%">${e(h('home.flow.pill'))}</span>${tap(1, 'left:11.5%;top:23.2%')}${tap(2, 'left:11.5%;top:28.5%')}${tap(3, 'left:87%;top:75%')}</div></div>
+        <div class="phone" aria-hidden="true"><div class="scr">${shots}${pill}${tap(1, 'left:11.5%;top:23.2%')}${tap(2, 'left:11.5%;top:28.5%')}${tap(3, 'left:87%;top:75%')}</div></div>
 ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" data-to="${i}" aria-hidden="true">${fcIn(FLOW_STEPS[i].toast, FLOW_STEPS[i].toastTone, t.t, t.s, false)}</div>`).join('\n')}
         <img class="jump" data-jump src="${homeImg('minzi_jump')}" alt="" width="120" height="120" loading="lazy" decoding="async">`;
 
@@ -664,14 +675,21 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
   const mosaic = MOSAIC.map((col) => `      <div class="mcol" data-speed="${col.speed}" style="margin-top:${col.top}px">${col.photos.map(([p, ht]) => `<div style="height:${ht}px">${photo(p)}</div>`).join('')}</div>`).join('\n');
 
   // ---- reviews: real ones only, and only from three up ----
+  // A moving row of cards: five stars (the first `stars` filled), the title
+  // and text in the review's own language, first name · source · date (in
+  // this page's date format). §15 matches every card back to REVIEWS.
   let reviews = '';
   if (REVIEWS.length >= 3) {
+    const date = new Intl.DateTimeFormat(loc, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
     const rv = REVIEWS.map((r) => {
-      for (const k of ['title', 'text', 'name', 'source', 'stars', 'lang']) {
+      for (const k of ['title', 'text', 'name', 'source', 'stars', 'lang', 'date']) {
         if (!(k in r)) throw new Error(`REVIEWS entry ${JSON.stringify(r).slice(0, 60)} has no '${k}'`);
       }
-      const stars = Array.from({ length: Math.max(1, Math.min(5, r.stars)) }, () => homeIcon('star')).join('');
-      return `<article class="rv" lang="${e(r.lang)}"><div class="st" aria-label="${r.stars}/5">${stars}</div><b>${e(r.title)}</b><div class="who">${e(r.name)} · ${e(r.source)}</div><p>${e(r.text)}</p></article>`;
+      if (!Number.isInteger(r.stars) || r.stars < 1 || r.stars > 5) throw new Error(`REVIEWS entry '${r.title}': stars must be 1..5, is ${r.stars}`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date)) throw new Error(`REVIEWS entry '${r.title}': date must be YYYY-MM-DD, is ${r.date}`);
+      const stars = [0, 1, 2, 3, 4].map((i) => `<span class="${i < r.stars ? 'on' : 'off'}">${homeIcon('star')}</span>`).join('');
+      const when = date.format(new Date(`${r.date}T12:00:00Z`));
+      return `<article class="rv" data-review="${e(r.title)}"><div class="st" role="img" aria-label="${num(r.stars)}/${num(5)}">${stars}</div><b lang="${e(r.lang)}">${e(r.title)}</b><div class="who"><span lang="${e(r.lang)}">${e(r.name)}</span> · ${e(r.source)} · <time datetime="${r.date}">${e(when)}</time></div><p lang="${e(r.lang)}">${e(r.text)}</p></article>`;
     }).join('');
     reviews = `  <section class="revs" id="reviews"><div class="marq"><div class="marq-track marq-slow"><div class="marq-set">${rv}</div><div class="marq-set" aria-hidden="true">${rv}</div></div></div></section>\n`;
   }
@@ -745,6 +763,25 @@ const CHEVRON = '<svg class="help-chev" viewBox="0 0 24 24" aria-hidden="true"><
 /** A file's cache-buster. Help pictures are re-shot under the same name and
  *  images are cached for 30 days, so the URL has to change when the bytes do. */
 const fileSha8 = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 8);
+
+/**
+ * Every unhashed file a page names that can change in place — the home page's
+ * pictures, the screenshots, the vendor scripts, the flow clips and their
+ * posters — gets `?v=<sha8 of the file>` (009 C). The 30-day image and
+ * one-week script caches stay; a changed file simply has a new URL. Run over
+ * the finished HTML so no template or renderer can forget one.
+ */
+const assetVersions = new Map();
+function versionAssets(html) {
+  return html.replace(/((?:src|href|poster)=")(\/assets\/(?:img|vendor|video)\/[^"?#]+)"/g, (m, attr, url) => {
+    if (!assetVersions.has(url)) {
+      const file = p('static', url.slice(1));
+      if (!fs.existsSync(file)) throw new Error(`a page names ${url}, which is not in static/`);
+      assetVersions.set(url, fileSha8(file));
+    }
+    return `${attr}${url}?v=${assetVersions.get(url)}"`;
+  });
+}
 
 /** Site-absolute URL of a help media file, with its ?v= cache-buster. */
 function helpMediaUrl(file, locale = 'en') {
@@ -1103,12 +1140,16 @@ if(m){go(m);return}}
 // build
 // ---------------------------------------------------------------------------
 
+// Every copy is world-readable (dirs 755, files 644), whatever the working
+// tree's mode: deploy.sh's rsync keeps the source mode, and a file saved 600
+// here was a 403 on the server (assets/img/home/qr.svg, found in 009).
 function copyDir(src, dest) {
   fs.mkdirSync(dest, { recursive: true });
+  fs.chmodSync(dest, 0o755);
   for (const e of fs.readdirSync(src, { withFileTypes: true })) {
     const s = path.join(src, e.name), d = path.join(dest, e.name);
     if (e.isDirectory()) copyDir(s, d);
-    else fs.copyFileSync(s, d);
+    else { fs.copyFileSync(s, d); fs.chmodSync(d, 0o644); }
   }
 }
 
@@ -1260,7 +1301,7 @@ function build() {
 
       const body = render(templates[pg.template], data, includes, where);
       data.page.body = body;
-      const html = render(templates['layout.html'], data, includes, where);
+      const html = versionAssets(render(templates['layout.html'], data, includes, where));
 
       const outPath = path.join(DIST, pg.out(loc));
       fs.mkdirSync(path.dirname(outPath), { recursive: true });

@@ -1015,8 +1015,12 @@ export const MEMBERS_COUNT = 1000;
  *     text: 'We used three apps and a paper calendar…',
  *     name: 'Anna K.',
  *     source: 'App Store' | 'Google Play',
- *     stars: 5,          // 1..5
- *     lang: 'en' }       // the review's own language, written as lang= on the card
+ *     stars: 5,          // 1..5 — five stars are drawn, this many filled
+ *     lang: 'en',        // the review's own language, written as lang= on its words
+ *     date: '2026-09-20' }  // as the store shows it; formatted per page locale
+ * name is the first name (and initial) exactly as the store shows it. The
+ * section is a moving row of cards; check-build §15 matches every card back to
+ * an entry here.
  */
 export const REVIEWS = [];
 
@@ -1189,13 +1193,24 @@ export const ORBIT_TILES = [
  * "See it in action": per step, the button's glyph and tone, the screenshot
  * the phone shows, the ground tint behind it and the toast's glyph and tone.
  * Words are home.flow.items[i] and home.flow.toasts[i].
+ *
+ * `video` (round 3): a real app clip, static/assets/video/<video>.mp4 with its
+ * first frame as <video>.webp, 590 × 1278 (FLOW_VIDEO_SIZE: the screenshots'
+ * shape; the status bar rows are smeared over with the first app row, so no
+ * clock or recording pill shows). A step with a
+ * clip plays it instead of the screenshot and its drawn tap/pill; the step
+ * advances 1 s after the clip ends. A step without keeps the screenshot and
+ * the drawing, 6 s. The clips show the English app in every locale for now.
+ * Calendar and shopping are being re-recorded (the old takes show junk test
+ * entries); add their `video` once the files are in.
  */
 export const FLOW_STEPS = [
   { icon: 'cal', tone: 'lake', shot: 'shot-calendar', tint: '#E4EEF6', toast: 'cal', toastTone: 'lake' },
   { icon: 'cart', tone: 'leaf', shot: 'shot-shopping', tint: '#E8F6E2', toast: 'cart', toastTone: 'leaf' },
-  { icon: 'todo', tone: 'leaf', shot: 'shot-todos', tint: '#EEF3E6', toast: 'todo', toastTone: 'leaf' },
-  { icon: 'paw', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'flame', toastTone: 'honey' },
+  { icon: 'todo', tone: 'leaf', shot: 'shot-todos', tint: '#EEF3E6', toast: 'todo', toastTone: 'leaf', video: 'flow-todos' },
+  { icon: 'paw', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'flame', toastTone: 'honey', video: 'flow-habits' },
 ];
+export const FLOW_VIDEO_SIZE = { width: 590, height: 1278 };
 
 /** The six privacy chips' glyphs, in home.privacy.chips order. */
 export const PRIVACY_ICONS = ['noads', 'notrack', 'nosell', 'flag', 'folder', 'spark'];
