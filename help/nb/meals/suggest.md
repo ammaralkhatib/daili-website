@@ -19,6 +19,6 @@ Tom for middagsidéer?
 
 Bare ledige kvelder fra i dag blir fylt ut, og det dere har spist de siste to ukene, hoppes over. Nye idéer lagres i oppskriftene dine. **Prøv igjen** bruker ett forslag til.
 
-> Note: Oppskriftstitlene dine, de siste måltidene og ønsket ditt sendes til Googles AI, som ikke lagrer noe. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
+> Note: Oppskriftstitlene dine, de siste måltidene og ønsket ditt sendes til Googles KI, som ikke lagrer noe. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
 
-> Note: Forslag deler de månedlige AI-lesingene med video- og bildelesinger. Daili Plus har flere – og hvis familien din var med tidlig, er de gratis for alltid.
+> Note: Forslag deler de månedlige KI-lesingene med video- og bildelesinger. Daili Plus har flere – og hvis familien din var med tidlig, er de gratis for alltid.

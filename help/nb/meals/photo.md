@@ -18,6 +18,6 @@ Har du en oppskrift på papir eller i en skjermdump? daili skriver den inn for d
 
 Oppskriften kommer ut på telefonens språk, uansett hvilket språk siden er på. Trykt eller tydelig skrevet tekst fungerer best.
 
-> Note: Bildet sendes til Googles AI for å bli lest og slettes etterpå, uten kameradata som posisjon. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
+> Note: Bildet sendes til Googles KI for å bli lest og slettes etterpå, uten kameradata som posisjon. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
 
 > Note: Hver familie får noen gratis bildelesinger hver måned, delt med videolesingene og kalenderbildene. Daili Plus har flere – og hvis familien din var med tidlig, er lesinger gratis for alltid.
