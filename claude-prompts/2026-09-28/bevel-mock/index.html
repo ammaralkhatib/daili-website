@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>daili home, Bevel-style (SPEC MOCK, 2026-09-28)</title>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+</head>
+<body>
+
+
+<style>
+@font-face{font-family:"Figtree";font-weight:400;font-display:swap;src:url(assets/figtree-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-weight:600;font-display:swap;src:url(assets/figtree-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-weight:700;font-display:swap;src:url(assets/figtree-latin-700-normal.woff2) format("woff2")}
+html,body{margin:0;height:100%;background:#FBFAF6}
+.dl{--paper:#FBFAF6;--card:#ffffff;--ink:#15271F;--ink2:#4D685B;--ink3:#7C9186;--line:rgba(21,39,31,.08);--forest:#04613C;--leaf:#18A06A;--mint:#CFEFC6;--mintT:#E8F6E2;--lake:#4F86B0;--lakeT:#E4EEF6;--honey:#E0A032;--honeyT:#FAEFD6;--clay:#D9714A;--clayT:#FBE6DC;--berry:#A9628F;--berryT:#F4E5EE;--night:#0D1B15;
+height:100vh;height:100dvh;overflow-y:auto;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Figtree",ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;position:relative}
+.dl *{box-sizing:border-box}
+.dl img{display:block;max-width:100%}
+.dl a{color:inherit;text-decoration:none}
+.dl h1,.dl h2,.dl h3,.dl p{margin:0}
+.dl button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;padding:0}
+.wrap{width:min(1240px,calc(100% - 48px));margin:0 auto}
+.h2{font-size:clamp(34px,4.6vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.02;text-align:center}
+.dl .sub{font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink2);text-align:center;max-width:36ch;margin:18px auto 0}
+.eyebrow{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.02em;padding:6px 12px;border-radius:999px;background:var(--mintT);color:var(--forest)}
+
+/* NAV */
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:6px;padding:7px 7px 7px 14px;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border:1px solid rgba(21,39,31,.07);box-shadow:0 8px 30px -12px rgba(21,39,31,.25)}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:19px;letter-spacing:-.02em;margin-right:14px}
+.brand img{width:26px;height:26px;border-radius:7px}
+.nav .lk{font-size:14px;font-weight:500;color:var(--ink2);padding:8px 11px;border-radius:999px;transition:background .2s,color .2s}
+.nav .lk:hover{background:rgba(21,39,31,.06);color:var(--ink)}
+.btn-dark{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff !important;font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;transition:transform .2s,background .2s}
+.btn-dark:hover{background:#000;transform:translateY(-1px)}
+.btn-dark svg{width:16px;height:16px}
+.nav .menu{display:none;width:40px;height:40px;border-radius:999px;align-items:center;justify-content:center}
+
+/* QR */
+.qr{position:fixed;right:22px;bottom:22px;z-index:55;display:flex;align-items:center;gap:14px;padding:12px 18px 12px 12px;background:rgba(255,255,255,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:20px;box-shadow:0 18px 40px -16px rgba(21,39,31,.35)}
+.qr img{width:74px;height:74px;border-radius:10px}
+.qr b{display:block;font-size:15px;letter-spacing:-.01em}
+.qr span{display:block;font-size:12.5px;color:var(--ink2);line-height:1.35;margin-top:3px;max-width:150px}
+
+/* HERO */
+.hero{position:relative;padding-top:122px;overflow:hidden}
+.eyebrow svg{width:14px;height:14px}
+.aurora{position:absolute;inset:0;pointer-events:none;z-index:0}
+.aurora i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:drift 18s ease-in-out infinite alternate}
+.aurora .a1{width:46vw;height:30vw;left:-8vw;top:34%;background:#BfE6C8;animation-duration:19s}
+.aurora .a2{width:40vw;height:26vw;right:-6vw;top:30%;background:#CFE0F1;animation-duration:23s}
+.aurora .a3{width:30vw;height:18vw;left:30%;top:58%;background:#F9E2B6;animation-duration:17s}
+.aurora .a4{width:26vw;height:18vw;left:8%;top:62%;background:#F3D5E6;animation-duration:21s}
+.aurora .a5{width:24vw;height:16vw;right:12%;top:60%;background:#F7D4C4;animation-duration:25s}
+.aurora .band{position:absolute;left:-10%;right:-10%;top:52%;height:34%;border-radius:50%;background:linear-gradient(90deg,rgba(24,160,106,.28),rgba(79,134,176,.3),rgba(224,160,50,.28),rgba(169,98,143,.26),rgba(217,113,74,.26),rgba(24,160,106,.28));filter:blur(40px);opacity:.75;animation:bandmove 14s linear infinite;background-size:200% 100%}
+.aurora .fade{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(to bottom,rgba(251,250,246,0),var(--paper))}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(4vw,-3vw,0) scale(1.12)}}
+@keyframes bandmove{from{background-position:0% 0}to{background-position:200% 0}}
+.hero-copy{position:relative;z-index:2;text-align:center}
+.hero h1{font-size:clamp(46px,6.2vw,88px);font-weight:700;letter-spacing:-.045em;line-height:.96}
+.hero h1 .w{display:inline-block}
+.hero .lead{font-size:clamp(17px,1.55vw,21px);line-height:1.5;color:var(--ink2);max-width:40ch;margin:22px auto 0}
+.hero-cta{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:28px;flex-wrap:wrap}
+.hero-cta .btn-dark{font-size:16px;padding:14px 22px}
+.link-u{font-weight:600;font-size:15px;color:var(--forest) !important;border-bottom:1.5px solid rgba(4,97,60,.3);padding-bottom:2px}
+.pills{display:flex;justify-content:center;gap:8px;margin-top:22px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink2);padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.7);border:1px solid var(--line)}
+.pill svg{width:14px;height:14px;color:var(--leaf)}
+
+.stage{position:relative;z-index:3;height:640px;width:min(1180px,100%);margin:34px auto 0}
+.phone{position:relative;width:300px;aspect-ratio:640/1390;border-radius:52px;padding:9px;background:linear-gradient(145deg,#f4f5f7,#c9ccd2 40%,#eef0f2 60%,#aeb2b9);box-shadow:0 0 0 1px rgba(0,0,0,.08),0 50px 90px -30px rgba(21,39,31,.45),0 24px 40px -24px rgba(21,39,31,.3)}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:44px;overflow:hidden;background:#fff}
+.phone .scr img{width:100%;height:100%;object-fit:cover}
+.stage .phone{position:absolute;left:50%;top:0;margin-left:-150px}
+.watch{position:absolute;width:158px;left:calc(50% + 70px);top:210px;z-index:4}
+.watch .band{position:absolute;left:22px;right:22px;background:linear-gradient(90deg,#1d2a25,#2f403a 50%,#1d2a25);height:120px}
+.watch .band.t{top:-92px;border-radius:26px 26px 8px 8px}
+.watch .band.b{bottom:-92px;border-radius:8px 8px 26px 26px}
+.watch .case{position:relative;border-radius:46px;padding:8px;background:linear-gradient(145deg,#e9ebee,#a9aeb5 45%,#dfe2e6 70%,#9aa0a8);box-shadow:0 30px 50px -20px rgba(21,39,31,.5)}
+.watch .crown{position:absolute;right:-7px;top:52px;width:9px;height:34px;border-radius:4px;background:linear-gradient(90deg,#9aa0a8,#e6e8eb)}
+.watch .face{border-radius:38px;background:#000;color:#fff;padding:18px 14px 16px;height:178px;display:flex;flex-direction:column;gap:6px}
+.watch .face .t1{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#9FD9B8}
+.watch .face .t1 span:last-child{color:#fff}
+.watch .face .ev{background:#15271F;border-radius:14px;padding:9px 10px;border-left:4px solid #4F86B0}
+.watch .face .ev b{display:block;font-size:14px;letter-spacing:-.01em}
+.watch .face .ev span{font-size:11.5px;color:#B8C7BF}
+.watch .face .ev2{display:flex;align-items:center;gap:7px;font-size:11.5px;color:#B8C7BF;padding:0 2px}
+.watch .face .ev2 i{width:8px;height:8px;border-radius:50%;background:var(--leaf)}
+
+/* floating card */
+.fc{position:absolute;z-index:5;will-change:transform}
+.fc-in{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:11px 14px 11px 11px;box-shadow:0 18px 38px -14px rgba(21,39,31,.28),0 2px 6px rgba(21,39,31,.06);min-width:212px}
+.ico{flex:none;width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center}
+.ico svg{width:19px;height:19px}
+.fc-tx{flex:1;min-width:0}
+.fc-tx b{display:block;font-size:14.5px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;position:relative;width:max-content;max-width:100%}
+.fc-tx b::after{content:"";position:absolute;left:0;top:55%;height:1.5px;width:0;background:var(--ink3);transition:width .45s cubic-bezier(.6,0,.2,1)}
+.fc-tx span{display:block;font-size:12.5px;color:var(--ink2);white-space:nowrap;margin-top:1px}
+.ck{flex:none;width:24px;height:24px;border-radius:50%;border:2px solid #9DB5A7;display:flex;align-items:center;justify-content:center;transition:background .3s,border-color .3s,transform .3s}
+.ck svg{width:13px;height:13px;color:#fff;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .4s .1s}
+.fc.done .ck{background:var(--forest);border-color:var(--forest);transform:scale(1.08)}
+.fc.done .ck svg{stroke-dashoffset:0}
+.fc.done .fc-tx b{color:var(--ink3)}
+.fc.done .fc-tx b::after{width:100%}
+.c-lake{background:var(--lakeT);color:var(--lake)}
+.c-leaf{background:var(--mintT);color:var(--forest)}
+.c-honey{background:var(--honeyT);color:#B07512}
+.c-clay{background:var(--clayT);color:#B8532C}
+.c-berry{background:var(--berryT);color:var(--berry)}
+
+/* works with */
+.works{position:relative;z-index:3;padding:34px 0 20px;text-align:center}
+.works p{font-size:14px;color:var(--ink3);font-weight:600}
+.works-row{display:flex;justify-content:center;align-items:center;gap:34px;flex-wrap:wrap;margin-top:16px}
+.wk{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;letter-spacing:-.01em;color:#5f6f67}
+.wk svg{width:22px;height:22px}
+
+/* members */
+.members{padding:120px 0 40px}
+.badges{display:flex;justify-content:center;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.badge{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.badge .ico{width:32px;height:32px;border-radius:9px}
+.badge b{display:block;font-size:13.5px}
+.badge span{display:block;font-size:12px;color:var(--ink3)}
+.marq{position:relative;overflow:hidden;margin-top:54px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq-track{display:flex;gap:18px;width:max-content;animation:marq 70s linear infinite}
+.marq:hover .marq-track{animation-play-state:paused}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mcard{position:relative;width:250px;height:410px;border-radius:24px;overflow:hidden;flex:none;background:#ddd}
+.mcard img.ph{width:100%;height:100%;object-fit:cover}
+.mcard .ov{position:absolute;left:12px;right:12px;bottom:12px}
+.mcard .ov .fc-in{min-width:0;width:100%;padding:10px 12px 10px 10px}
+.mcard .cap{position:absolute;left:14px;top:14px;right:14px;font-size:15px;font-weight:700;line-height:1.2;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.45);letter-spacing:-.01em}
+.mcard.tile{display:flex;flex-direction:column;justify-content:space-between;padding:22px}
+.mcard.tile b{font-size:26px;letter-spacing:-.03em;line-height:1.05}
+.mcard.tile .big{font-size:68px;font-weight:700;letter-spacing:-.05em;line-height:1}
+
+/* start the day */
+.day{padding:130px 0 0}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:56px}
+.fcard{position:relative;border-radius:30px;overflow:hidden;height:660px;padding:36px 34px 0}
+.fcard h3{font-size:34px;font-weight:700;letter-spacing:-.035em}
+.fcard p{font-size:16.5px;line-height:1.5;color:var(--ink2);margin-top:10px;max-width:30ch}
+.fcard .phone{position:absolute;left:50%;margin-left:-135px;width:270px;top:230px}
+.fcard .fc{left:50%;top:470px}
+.g-lake{background:linear-gradient(180deg,#E3EEF7 0%,#F2F7FB 100%)}
+.g-leaf{background:linear-gradient(180deg,#E3F4DE 0%,#F3FAF0 100%)}
+.g-honey{background:linear-gradient(180deg,#FAEDCF 0%,#FDF7EA 100%)}
+.g-clay{background:linear-gradient(135deg,#FBE3D7 0%,#FDF3EE 100%)}
+.g-berry{background:linear-gradient(180deg,#F3E2EC 0%,#FBF4F8 100%)}
+.wide{position:relative;margin-top:20px;border-radius:30px;overflow:hidden;height:640px;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.wide .tx{padding:0 0 0 72px}
+.wide h3{max-width:12ch;font-size:clamp(38px,4vw,58px);font-weight:700;letter-spacing:-.04em;line-height:1.02}
+.wide p{font-size:18px;line-height:1.5;color:var(--ink2);margin-top:16px;max-width:34ch}
+.wide .vis{position:relative;height:100%}
+.wide .phone{position:absolute;width:290px;top:90px;left:50%;margin-left:-110px}
+.mini-row{display:flex;gap:8px;margin-top:22px;flex-wrap:wrap}
+.chip{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.75);border:1px solid var(--line);color:var(--ink2)}
+.recipe{position:absolute;z-index:6;width:250px;background:#fff;border-radius:22px;padding:10px;box-shadow:0 24px 50px -18px rgba(21,39,31,.35)}
+.recipe .rimg{height:120px;border-radius:14px;background:linear-gradient(135deg,#F6B36C,#D9714A 55%,#9F4A2A);position:relative;overflow:hidden}
+.recipe .rimg i{position:absolute;border-radius:50%}
+.recipe b{display:block;font-size:15px;margin:10px 4px 2px;letter-spacing:-.01em}
+.recipe span{display:block;font-size:12.5px;color:var(--ink2);margin:0 4px}
+.recipe .add{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;background:var(--forest);color:#fff;border-radius:12px;font-size:13px;font-weight:600;padding:9px}
+.recipe .add svg{width:14px;height:14px}
+
+/* calendars circle */
+.orbit{position:absolute;width:760px;height:760px;border-radius:50%;left:50%;top:50%;margin:-380px 0 0 -380px}
+.ring{position:absolute;border-radius:50%;border:1.5px solid rgba(79,134,176,.16);left:50%;top:50%}
+.ring.r1{width:1000px;height:1000px;margin:-500px 0 0 -500px;background:radial-gradient(circle,rgba(255,255,255,.55),rgba(255,255,255,0) 70%)}
+.ring.r2{width:760px;height:760px;margin:-380px 0 0 -380px}
+.ring.r3{width:420px;height:420px;margin:-210px 0 0 -210px}
+.tile{position:absolute;width:74px;height:74px;margin:-37px 0 0 -37px;border-radius:20px;background:#fff;box-shadow:0 14px 30px -12px rgba(21,39,31,.3);display:flex;align-items:center;justify-content:center}
+.tile svg{width:36px;height:36px}
+.tile-in{transform:rotate(var(--r))}
+.tile-in{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+
+/* intelligence */
+.intel{position:relative;background:var(--night);color:#fff;padding:120px 0 80px;overflow:hidden}
+.spot{position:absolute;left:50%;top:-80px;width:900px;height:600px;margin-left:-450px;background:radial-gradient(ellipse at 50% 30%,rgba(207,239,198,.28),rgba(24,160,106,.08) 40%,transparent 70%);pointer-events:none}
+.avs{position:relative;height:210px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent)}
+.avs-track{display:flex;gap:44px;width:max-content;position:absolute;left:0;top:20px}
+.av{display:flex;flex-direction:column;align-items:center;gap:12px;width:112px;will-change:transform,opacity}
+.av .ring-av{width:100px;height:100px;border-radius:50%;padding:4px;background:linear-gradient(145deg,rgba(255,255,255,.25),rgba(255,255,255,.04));box-shadow:0 20px 40px -18px rgba(0,0,0,.8)}
+.av .ring-av img{width:100%;height:100%;border-radius:50%;background:#1d3128}
+.av .nm{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.75)}
+.av.on .nm{background:#fff;color:var(--ink)}
+.intel .h2 .mute{color:rgba(255,255,255,.45)}
+.dl .intel .sub{color:rgba(255,255,255,.62)}
+.intel .eyebrow{background:rgba(207,239,198,.12);color:var(--mint)}
+.stack{margin-top:70px;position:relative}
+.icard{position:sticky;height:600px;border-radius:34px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-bottom:34px;border:1px solid rgba(255,255,255,.14);transform-origin:50% 0}
+.icard:nth-child(1){top:96px}
+.icard:nth-child(2){top:112px}
+.icard:nth-child(3){top:128px}
+.icard .tx{padding:0 40px 0 70px;color:var(--ink);position:relative;z-index:7}
+.icard h3{max-width:11ch;font-size:clamp(36px,3.8vw,54px);font-weight:700;letter-spacing:-.04em;line-height:1.02}
+.icard p{font-size:18px;line-height:1.5;color:var(--ink2);margin-top:14px;max-width:32ch}
+.icard .vis{position:relative;height:100%}
+.icard .phone{position:absolute;width:300px;top:70px;left:50%;margin-left:-130px}
+.i-berry{background:linear-gradient(135deg,#F1DDEA,#E9D6F0 60%,#F6EAF2)}
+.i-clay{background:linear-gradient(135deg,#FBDCCB,#F7E5DA 60%,#FCEFE8)}
+.i-leaf{background:linear-gradient(135deg,#D8EFD2,#E2F3EA 60%,#F0F8EC)}
+.ai-card{position:absolute;z-index:6;width:280px;background:#fff;border-radius:22px;padding:14px;box-shadow:0 28px 60px -20px rgba(21,39,31,.4);color:var(--ink)}
+.ai-card .hd{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--ink2)}
+.ai-card .hd svg{width:16px;height:16px;color:var(--leaf)}
+.ai-card .row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid #EEF1EA}
+.ai-card .row:first-of-type{border-top:0}
+.ai-card .row b{font-size:14px;display:block}
+.ai-card .row span{font-size:12px;color:var(--ink2)}
+.ai-card .ttl{font-size:16px;font-weight:700;letter-spacing:-.01em;margin:8px 0 6px}
+.ai-card .add{display:flex;justify-content:center;margin-top:8px;background:var(--forest);color:#fff;border-radius:12px;font-size:13px;font-weight:600;padding:10px}
+.ai-card .vid{height:120px;border-radius:14px;margin:8px 0 10px;background:linear-gradient(135deg,#3b2a1f,#8b4a2b 50%,#e0a032);display:flex;align-items:center;justify-content:center}
+.ai-card .vid span{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center}
+.ai-card .vid svg{width:18px;height:18px;color:var(--ink);margin-left:3px}
+.fine{font-size:13.5px;color:rgba(255,255,255,.5);text-align:center;margin-top:10px}
+
+/* shutter */
+.shut{position:relative;height:0}
+.shut-rows{position:absolute;left:0;right:0;top:0;height:46vh;display:flex;flex-direction:column;z-index:2;pointer-events:none}
+.shut-rows i{flex:1;background:var(--night);transform-origin:50% 0;margin-top:-1px}
+
+/* workflows */
+.flow{padding:150px 0 40px}
+.flow-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.flow h2{text-align:left}
+.dl .flow .sub{text-align:left;margin-left:0}
+.fl-list{display:flex;flex-direction:column;gap:12px;margin-top:40px;max-width:520px}
+.fl{display:block;width:100%;text-align:left;border-radius:22px;padding:18px 20px;background:#F1F3EE;transition:background .35s,box-shadow .35s}
+.fl .tp{display:flex;align-items:center;gap:14px}
+.fl .ico{width:40px;height:40px}
+.fl b{flex:1;font-size:18px;font-weight:600;letter-spacing:-.015em}
+.fl .desc{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.6,0,.2,1)}
+.fl .desc span{overflow:hidden;font-size:15.5px;line-height:1.5;color:var(--ink2);padding-left:54px}
+.fl .prog{width:26px;height:26px;flex:none}
+.fl .prog circle{fill:none;stroke-width:3}
+.fl .prog .bg{stroke:rgba(21,39,31,.12)}
+.fl .prog .fg{stroke:var(--forest);stroke-dasharray:69.1;stroke-dashoffset:69.1;transform:rotate(-90deg);transform-origin:50% 50%}
+.fl.on{background:#fff;box-shadow:0 18px 40px -20px rgba(21,39,31,.3)}
+.fl.on .desc{grid-template-rows:1fr}
+.fl.on .desc span{padding-top:8px}
+.fl.on .prog .fg{animation:ring 6s linear forwards}
+@keyframes ring{to{stroke-dashoffset:0}}
+.flow-vis{position:relative;height:720px}
+.flow-vis .bgc{position:absolute;inset:40px 0;border-radius:40px;transition:background .6s}
+.flow-vis .phone{position:absolute;left:50%;top:40px;width:300px;margin-left:-150px}
+.flow-vis .scr img.sx{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.flow-vis .scr img.sx.on{opacity:1}
+.tap{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.3)}
+.tap svg{width:15px;height:15px;color:#fff}
+.tap::before{content:"";position:absolute;inset:-10px;border-radius:50%;border:2px solid rgba(4,97,60,.4);opacity:0}
+.tap.go{animation:tapin .5s 1.2s cubic-bezier(.3,1.6,.5,1) forwards}
+.tap.go::before{animation:ripple 1s 1.1s ease-out}
+@keyframes tapin{to{opacity:1;transform:scale(1)}}
+@keyframes ripple{0%{opacity:1;transform:scale(.4)}100%{opacity:0;transform:scale(1.6)}}
+.pillev{position:absolute;height:5.2%;border-radius:4px;background:#4F86B0;color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;padding:0 5px;opacity:0;transform:translateY(-30px)}
+.pillev.go{animation:drop .6s 1.1s cubic-bezier(.3,1.5,.5,1) forwards}
+@keyframes drop{to{opacity:1;transform:none}}
+.toast{position:absolute;z-index:8;left:50%;top:560px;opacity:0;transform:translate(-10%,30px)}
+.toast.go{animation:toast .7s 2.1s cubic-bezier(.2,1.2,.4,1) forwards}
+@keyframes toast{to{opacity:1;transform:translate(-10%,0)}}
+.jump{position:absolute;width:120px;right:-30px;top:120px;opacity:0;transform:translateY(40px) scale(.8);z-index:7}
+.jump.go{animation:jump 1s 2.2s cubic-bezier(.3,1.5,.5,1) forwards}
+@keyframes jump{to{opacity:1;transform:none}}
+
+/* every screen */
+.screens{padding:130px 0 20px}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:56px}
+.bx{position:relative;border-radius:28px;overflow:hidden;height:470px;padding:30px 28px}
+.bx h3{font-size:24px;font-weight:700;letter-spacing:-.025em}
+.bx p{font-size:15px;line-height:1.45;color:var(--ink2);margin-top:8px}
+.bx.span2{grid-column:span 2}
+.bx .watch{left:50%;margin-left:-79px;top:220px}
+.wg{position:absolute;background:rgba(255,255,255,.95);border-radius:24px;box-shadow:0 20px 44px -18px rgba(21,39,31,.35);padding:14px}
+.wg .lbl{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3)}
+.wg .big{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-top:4px}
+.wg .li{display:flex;align-items:center;gap:8px;font-size:13px;padding:4px 0}
+.wg .li i{width:14px;height:14px;border-radius:50%;border:1.8px solid #9DB5A7;flex:none}
+.wg .li i.x{background:var(--forest);border-color:var(--forest)}
+.wg .li.x span{color:var(--ink3);text-decoration:line-through}
+.eink{position:absolute;left:28px;right:28px;bottom:30px;height:240px;border-radius:14px;background:#2a2a2a;padding:10px;box-shadow:0 24px 40px -18px rgba(0,0,0,.5)}
+.eink .pap{width:100%;height:100%;border-radius:6px;background:#e9e8e3;color:#111;padding:12px 14px;font-size:11px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;filter:grayscale(1)}
+.eink .pap div b{display:block;font-size:12px;border-bottom:1.5px solid #111;padding-bottom:3px;margin-bottom:5px}
+.eink .pap div span{display:block;padding:3px 0;border-bottom:1px dotted #999}
+.browser{position:absolute;left:28px;right:-60px;bottom:-10px;height:300px;border-radius:14px 14px 0 0;background:#fff;box-shadow:0 30px 60px -20px rgba(21,39,31,.4);overflow:hidden}
+.browser .bar{height:30px;background:#F1F3EE;display:flex;align-items:center;gap:6px;padding:0 12px}
+.browser .bar i{width:10px;height:10px;border-radius:50%;background:#D9DED6}
+.browser .bar span{margin-left:16px;font-size:11.5px;color:var(--ink3);background:#fff;padding:3px 14px;border-radius:6px}
+.browser img{width:100%;height:auto}
+
+/* privacy */
+.priv{padding:130px 0 20px}
+.vault{position:relative;border-radius:36px;overflow:hidden;height:680px;background:radial-gradient(120% 90% at 50% 45%,#16261F 0%,#0D1B15 55%,#0A1510 100%);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.vault::before,.vault::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.55}
+.vault::before{left:-220px;bottom:-260px;background:#18A06A}
+.vault::after{right:-240px;top:-280px;background:#4F86B0;opacity:.35}
+.lock{position:absolute;left:50%;top:50%;width:440px;margin:-300px 0 0 -220px;opacity:.9}
+.vault .h2{position:relative;z-index:2}
+.dl .vault .sub{position:relative;z-index:2;color:rgba(255,255,255,.7)}
+.glass{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:34px;max-width:760px}
+.glass span{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.glass svg{width:16px;height:16px;color:var(--mint)}
+
+/* care */
+.care{padding:140px 0 0;overflow:hidden}
+.mosaic{display:flex;justify-content:center;gap:14px;height:560px;align-items:flex-start}
+.mcol{display:flex;flex-direction:column;gap:14px;width:150px;flex:none}
+.mcol div{border-radius:22px;overflow:hidden;background:#e5e1d8}
+.mcol img{width:100%;height:100%;object-fit:cover}
+
+/* reviews */
+.revs{padding:30px 0 40px}
+.rv{flex:none;width:340px;background:#F3F4EF;border-radius:22px;padding:22px 22px 24px;position:relative}
+.rv .st{display:flex;gap:2px;color:#E0A032}
+.rv .st svg{width:16px;height:16px}
+.rv b{display:block;font-size:16px;margin-top:12px;letter-spacing:-.01em}
+.rv .who{font-size:12.5px;color:var(--ink3);margin-top:3px}
+.rv p{font-size:14.5px;line-height:1.5;color:var(--ink2);margin-top:12px}
+.rv .ph{position:absolute;right:14px;top:14px;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#B8532C;border:1.5px dashed #E5A58A;border-radius:6px;padding:2px 6px}
+
+/* final */
+.final{padding:150px 0 0;overflow:hidden}
+.stores{display:flex;justify-content:center;gap:12px;margin-top:28px;flex-wrap:wrap}
+.store{display:flex;align-items:center;gap:10px;background:var(--ink);color:#fff !important;border-radius:14px;padding:10px 18px 10px 14px}
+.store svg{width:24px;height:24px}
+.store small{display:block;font-size:11px;opacity:.75;line-height:1}
+.store b{display:block;font-size:17px;letter-spacing:-.01em;line-height:1.2}
+.flat{position:relative;height:720px;margin-top:40px}
+.flat .phone{position:absolute;left:50%;top:60px;margin-left:-150px;z-index:3}
+.obj{position:absolute;z-index:2;filter:drop-shadow(0 18px 18px rgba(21,39,31,.18)) drop-shadow(0 3px 4px rgba(21,39,31,.12))}
+.obj img{width:100%;height:auto}
+
+/* footer */
+.foot{padding:90px 0 60px;margin-top:40px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+.foot h4{margin:0 0 12px;font-size:13px;color:var(--ink3);font-weight:600}
+.foot a{display:block;font-size:15px;padding:5px 0;color:var(--ink2) !important}
+.foot .note{font-size:13px;color:var(--ink3);margin-top:14px;max-width:32ch;line-height:1.5}
+
+/* responsive */
+@media (max-width:1100px){
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .nav{left:12px;right:12px;transform:none;justify-content:space-between}
+  .nav .lk{display:none}
+  .nav .menu{display:flex}
+  .qr{display:none}
+  .hero{padding-top:110px}
+  .stage{height:560px;margin-top:20px}
+  .stage .phone{width:230px;margin-left:-115px}
+  .watch{width:118px;left:calc(50% + 50px);top:230px}
+  .watch .face{height:136px;padding:12px 10px;border-radius:30px}
+  .watch .face .ev b{font-size:12px}
+  .watch .band{height:90px}
+  .watch .band.t{top:-70px}.watch .band.b{bottom:-70px}
+  .fc-in{min-width:0;padding:8px 10px 8px 8px;gap:8px}
+  .fc-tx b{font-size:12.5px}.fc-tx span{font-size:11px}
+  .ico{width:28px;height:28px;border-radius:9px}.ico svg{width:15px;height:15px}
+  .ck{width:20px;height:20px}
+  .hide-m{display:none !important}
+  .stage .hcard[data-i="0"]{left:0 !important;top:10px !important}
+  .stage .hcard[data-i="1"]{left:0 !important;top:330px !important}
+  .stage .hcard[data-i="3"]{left:auto !important;right:0;top:120px !important}
+  .stage .hcard[data-i="4"]{left:auto !important;right:0;top:420px !important}
+  .works-row{gap:18px 22px;padding:0 10px}
+  .wk{font-size:14px}
+  .members{padding-top:80px}
+  .mcard{width:200px;height:330px}
+  .cols{grid-template-columns:1fr}
+  .fcard{height:600px}
+  .wide,.icard{grid-template-columns:1fr;height:auto}
+  .wide .tx,.icard .tx{padding:40px 28px 0}
+  .wide .vis,.icard .vis{height:520px}
+  .wide .phone,.icard .phone{width:250px;margin-left:-125px;top:40px}
+  .orbit{transform:scale(.6)}
+  .icard{position:relative;top:auto !important;margin-bottom:18px}
+  .avs{height:180px}
+  .flow-grid{grid-template-columns:1fr}
+  .flow-vis{height:640px}
+  .bento{grid-template-columns:1fr}
+  .bx.span2{grid-column:auto}
+  .vault{height:620px;padding:0 20px}
+  .lock{width:320px;margin:-240px 0 0 -160px}
+  .mosaic{height:460px;justify-content:flex-start}
+  .mcol{width:110px}
+  .flat{height:560px;transform:scale(.72);transform-origin:50% 0;margin-bottom:-150px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .ai-card{left:50% !important;margin-left:-160px;width:250px;top:300px !important}
+  .recipe{left:4% !important;width:220px}
+}
+@media (prefers-reduced-motion:reduce){
+  .marq-track,.aurora i,.aurora .band{animation:none}
+}
+
+</style>
+
+<div class="dl" data-dl="1">
+<nav class="nav" aria-label="Main">
+<a class="brand" href="#top"><img src="assets/icon.webp" alt="">daili</a>
+<a class="lk" href="#features">Features</a>
+<a class="lk" href="#plus">Daili Plus</a>
+<a class="lk" href="#screens">Watch &amp; widgets</a>
+<a class="lk" href="#privacy">Privacy</a>
+<a class="lk" href="https://app.daili.app">Log in</a>
+<a class="btn-dark" href="#get"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg>Get the app</a>
+<button class="menu" type="button" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</nav>
+<aside class="qr" data-qr="1"><img src="assets/qr.svg" alt="QR code to daili.app"><div><b>Get daili free</b><span>Scan with your phone camera. iPhone &amp; Android.</span></div></aside><main class="dl-in"><section class="hero" id="top">
+<div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i><i class="a5"></i><div class="band"></div><div class="fade"></div></div>
+<div class="hero-copy wrap">
+<h1 class="h1"><span class="w">Your</span> <span class="w">family,</span><br><span class="w">on</span> <span class="w">the</span> <span class="w">same</span> <span class="w">page.</span></h1>
+<p class="lead" data-hi="1">One calm place for your family's week: calendar, lists, to-dos, habits and notes that everyone can see. On every phone, on your wrist, and in the browser.</p>
+<div class="hero-cta" data-hi="1"><a class="btn-dark" href="#get"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg>Download free</a><a class="link-u" href="https://app.daili.app">Open in your browser</a></div>
+<div class="pills" data-hi="1"><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Free</span><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>No ads</span><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Servers in the EU</span></div>
+</div>
+<div class="stage" data-stage="1">
+<div class="phone hphone" style=""><div class="scr"><img src="assets/shot-dashboard.webp" alt="" loading="lazy"></div></div>
+<div class="watch hwatch" style=""><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face">
+<div class="t1"><span>Up next</span><span>09:41</span></div>
+<div class="ev"><b>Swimming class</b><span>16:30 · Noah</span></div>
+<div class="ev2"><i></i>Groceries · 5 left</div>
+</div></div></div>
+<div class="fc hcard" style="left:3%;top:40px" data-dir="-1" data-i="0"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Swimming class</b><span>Today · 16:30 · Noah</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hcard" style="left:11%;top:205px" data-dir="-1" data-i="1"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Milk · 2 l</b><span>Marco is at the store</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hide-m hcard" style="left:1%;top:380px" data-dir="-1" data-i="2"><div class="fc-in"><span class="ico c-berry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"></path><path d="M9 11h6M9 15h4"></path></svg></span><span class="fc-tx"><b>Lunch money</b><span>Pinned for Friday</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hcard" style="left:72%;top:20px" data-dir="1" data-i="3"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Stretch · 5 min</b><span>4-day streak</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hcard" style="left:78%;top:190px" data-dir="1" data-i="4"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><span class="fc-tx"><b>Take out the bins</b><span>Noah · tonight</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hide-m hcard" style="left:70%;top:460px" data-dir="1" data-i="5"><div class="fc-in"><span class="ico c-clay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M7 7h4M17 21V3c-2 1.5-3 4-3 7v3h3"></path></svg></span><span class="fc-tx"><b>Vegetable curry</b><span>Dinner tonight</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc hide-m hcard" style="left:12%;top:520px" data-dir="-1" data-i="6"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"></path><path d="M12 11V7"></path><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"></path></svg></span><span class="fc-tx"><b>Gift for Emma</b><span>Birthday in 2 days</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div>
+</div>
+<div class="works" id="works"><p>Works with</p><div class="works-row">
+<span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg>iPhone</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg>Android</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.5"></rect><path d="M9 6l.6-3h4.8l.6 3M9 18l.6 3h4.8l.6-3"></path></svg>Apple Watch</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="2"></rect><rect x="3.5" y="13.5" width="17" height="7" rx="2"></rect></svg>Home-screen widgets</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="13" rx="2"></rect><path d="M7 9h6M7 12h10M7 15h4"></path></svg>TRMNL</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>Google Calendar</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="12" height="12" rx="2"></rect><path d="M15 9h5.5v9H15"></path><circle cx="9" cy="12" r="2.6"></circle></svg>Outlook</span><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"></path></svg>Web browser</span>
+</div></div>
+</section><section class="members" id="features">
+<div class="wrap">
+<div class="badges" data-r="1"><div class="badge"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c.5 3 2.5 5.5 5 7M11 5c-.8 4-3.5 7-7 8.5"></path><path d="M12.5 20l4-9 4 9M14 17h5"></path></svg></span><div><b>25 languages</b><span>From Deutsch to Türkçe</span></div></div><div class="badge"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-10 4 6 2-3 6 7z"></path></svg></span><div><b>Made in Tirol</b><span>Innsbruck, Austria</span></div></div></div>
+<h2 class="h2" data-r="1">Joined by <span data-count="1000">1,000</span>+ members<br>planning life together</h2>
+</div>
+<div class="marq"><div class="marq-track"><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122328_2e3c5697-6f7e-47f5-8d25-2aa446afdbc7_min.webp" alt="" loading="lazy"><div class="cap">Friday lunch, sorted.</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-berry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"></path><path d="M9 11h6M9 15h4"></path></svg></span><span class="fc-tx"><b>Lunch money for Friday</b><span>Pinned · Family</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_496637f4-00db-4a32-a1a6-61910291efc1_min.webp" alt="" loading="lazy"><div class="cap">Saturday market run</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Flowers for Oma</b><span>Groceries · 5 of 7</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard tile g-lake"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><div><div class="big">€0</div><b>No ads, no trial, no catch.</b></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122329_5b20b878-5e3a-4e6d-ae8b-bf8b72639202_min.webp" alt="" loading="lazy"><div class="cap">Day 12. Minzi is proud.</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Read 20 minutes</b><span>12-day streak</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_76856668-634e-4582-bc32-61e848a8187a_min.webp" alt="" loading="lazy"><div class="cap">She turns 12 today!</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"></path><path d="M12 11V7"></path><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"></path></svg></span><span class="fc-tx"><b>Emma turns 12</b><span>Today · 3 wishes on her list</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_bdfbcfad-486f-4579-9ef4-38b6c4fc7550_min.webp" alt="" loading="lazy"><div class="cap">Never miss practice</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Football practice</b><span>17:00 · Noah · every Tue</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard tile g-honey"><img src="assets/minzi_sit.webp" alt="" style="width:120px"><div><b>Minzi, the family cat, cheers you on</b></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122328_b05bcdeb-3ec6-48ea-90b8-149c40e21428_min.webp" alt="" loading="lazy"><div class="cap">Shopping with backup</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Blueberries</b><span>Added by Lena · just now</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_03c0baf4-4df1-4cd9-bf92-dcd970ae81de_min.webp" alt="" loading="lazy"><div class="cap">Homework, then TikTok</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><span class="fc-tx"><b>Check homework</b><span>Mia · today</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_04b63845-9cc4-4e36-ab75-db41262ef15e_min.webp" alt="" loading="lazy"><div class="cap">Our little jungle</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Water the plants</b><span>Every day · with Papa</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122328_2e3c5697-6f7e-47f5-8d25-2aa446afdbc7_min.webp" alt="" loading="lazy"><div class="cap">Friday lunch, sorted.</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-berry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"></path><path d="M9 11h6M9 15h4"></path></svg></span><span class="fc-tx"><b>Lunch money for Friday</b><span>Pinned · Family</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_496637f4-00db-4a32-a1a6-61910291efc1_min.webp" alt="" loading="lazy"><div class="cap">Saturday market run</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Flowers for Oma</b><span>Groceries · 5 of 7</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard tile g-lake"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><div><div class="big">€0</div><b>No ads, no trial, no catch.</b></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122329_5b20b878-5e3a-4e6d-ae8b-bf8b72639202_min.webp" alt="" loading="lazy"><div class="cap">Day 12. Minzi is proud.</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Read 20 minutes</b><span>12-day streak</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_76856668-634e-4582-bc32-61e848a8187a_min.webp" alt="" loading="lazy"><div class="cap">She turns 12 today!</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"></path><path d="M12 11V7"></path><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"></path></svg></span><span class="fc-tx"><b>Emma turns 12</b><span>Today · 3 wishes on her list</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_bdfbcfad-486f-4579-9ef4-38b6c4fc7550_min.webp" alt="" loading="lazy"><div class="cap">Never miss practice</div><div class="ov"><div class="fc " style="position:relative"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Football practice</b><span>17:00 · Noah · every Tue</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard tile g-honey"><img src="assets/minzi_sit.webp" alt="" style="width:120px"><div><b>Minzi, the family cat, cheers you on</b></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122328_b05bcdeb-3ec6-48ea-90b8-149c40e21428_min.webp" alt="" loading="lazy"><div class="cap">Shopping with backup</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Blueberries</b><span>Added by Lena · just now</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_03c0baf4-4df1-4cd9-bf92-dcd970ae81de_min.webp" alt="" loading="lazy"><div class="cap">Homework, then TikTok</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><span class="fc-tx"><b>Check homework</b><span>Mia · today</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div><div class="mcard"><img class="ph" src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_04b63845-9cc4-4e36-ab75-db41262ef15e_min.webp" alt="" loading="lazy"><div class="cap">Our little jungle</div><div class="ov"><div class="fc done" style="position:relative"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Water the plants</b><span>Every day · with Papa</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></div></div></div></div>
+</section><section class="day">
+<div class="wrap">
+<h2 class="h2" data-r="1">Start the day together</h2>
+<p class="sub" data-r="1">Everything your family needs to know, in the places you already look.</p>
+<div class="cols">
+<article class="fcard g-lake" data-r="1"><h3>Calendar</h3><p>Everyone's week at a glance. School, swimming and the dentist, each person in their own colour.</p>
+<div class="phone par" style=""><div class="scr"><img src="assets/shot-calendar.webp" alt="" loading="lazy"></div></div><div class="fc fly" style="margin-left:-150px"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Swimming class</b><span>Tue · 16:30 · Noah</span></span></div></div></article>
+<article class="fcard g-leaf" data-r="1"><h3>Lists</h3><p>Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.</p>
+<div class="phone par" style=""><div class="scr"><img src="assets/shot-shopping.webp" alt="" loading="lazy"></div></div><div class="fc fly done" style="margin-left:-120px"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Bread</b><span>Ticked by Marco · just now</span></span><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div></article>
+<article class="fcard g-honey" data-r="1"><h3>Habits</h3><p>Small routines, done together. Every tick gives Minzi, your family cat, more energy.</p>
+<div class="phone par" style=""><div class="scr"><img src="assets/shot-habits.webp" alt="" loading="lazy"></div></div><div class="fc fly" style="margin-left:-140px"><div class="fc-in" style="flex-direction:column;align-items:stretch;min-width:250px;gap:8px"><div style="display:flex;align-items:center;gap:10px"><img src="assets/minzi_jump.webp" alt="" style="width:40px;height:40px"><span class="fc-tx"><b>Family energy · 34 / 40</b><span>6 more and Minzi goes on a trip</span></span></div><div style="height:8px;border-radius:9px;background:#EDE7D6;overflow:hidden"><div class="bar" style="height:100%;width:85%;border-radius:9px;background:linear-gradient(90deg,#E0A032,#18A06A)"></div></div></div></div></article>
+</div>
+<article class="wide g-clay" data-r="1"><div class="tx"><h3>Dinner, decided</h3><p>Plan the week's meals, keep the family recipes, and send the ingredients to your shopping list in one tap.</p><div class="mini-row"><span class="chip">Meal plan</span><span class="chip">Recipe box</span><span class="chip">To the shopping list</span></div></div>
+<div class="vis"><div class="phone par" style=""><div class="scr"><img src="assets/shot-mealplan.webp" alt="" loading="lazy"></div></div><div class="recipe fly" style="left:6%;top:300px"><div class="rimg"><i style="width:60px;height:60px;left:20px;top:22px;background:#F9D08A;opacity:.8"></i><i style="width:90px;height:90px;right:-10px;top:30px;background:#7A3A1F;opacity:.35"></i><i style="width:26px;height:26px;left:100px;top:70px;background:#5FA76A"></i></div><b>Sweet &amp; sour sticky tofu</b><span>2 servings · 13 ingredients</span><span class="add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg>Add to Groceries</span></div></div></article>
+<article class="wide g-lake" id="calendars" data-r="1">
+<div class="vis"><div class="orbit" data-orbit="1"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+<div class="tile" style="left:50%;top:0%"><div class="tile-in" style="--r:-8deg;color:#4F86B0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></div></div><div class="tile" style="left:50%;top:100%"><div class="tile-in" style="--r:-6deg;color:#15271F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3.5"></rect><path d="M9 6l.6-3h4.8l.6 3M9 18l.6 3h4.8l.6-3"></path></svg></div></div><div class="tile" style="left:15%;top:85%"><div class="tile-in" style="--r:12deg;color:#18A06A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"></path></svg></div></div><div class="tile" style="left:0%;top:50%"><div class="tile-in" style="--r:-10deg;color:#15271F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="13" rx="2"></rect><path d="M7 9h6M7 12h10M7 15h4"></path></svg></div></div><div class="tile" style="left:15%;top:15%"><div class="tile-in" style="--r:6deg;color:#A9628F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg></div></div><div class="tile" style="left:28%;top:24%"><div class="tile-in" style="--r:9deg;color:#2E6DB4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="12" height="12" rx="2"></rect><path d="M15 9h5.5v9H15"></path><circle cx="9" cy="12" r="2.6"></circle></svg></div></div><div class="tile" style="left:72%;top:24%"><div class="tile-in" style="--r:-7deg;color:#D9714A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"></path></svg></div></div><div class="tile" style="left:24%;top:72%"><div class="tile-in" style="--r:-9deg;color:#E0A032"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"></path><path d="M12 11V7"></path><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"></path></svg></div></div><div class="tile" style="left:76%;top:76%"><div class="tile-in" style="--r:8deg;color:#4F86B0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="2"></rect><rect x="3.5" y="13.5" width="17" height="7" rx="2"></rect></svg></div></div><div class="tile" style="left:37%;top:37%"><div class="tile-in" style="--r:6deg;color:#18A06A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M16 14.2c2.3.2 4 1.9 4.5 4.8"></path></svg></div></div><div class="tile" style="left:63%;top:63%"><div class="tile-in" style="--r:-8deg;color:#18A06A"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></div></div><div class="tile" style="left:37%;top:63%"><div class="tile-in" style="--r:10deg;color:#A9628F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"></rect><circle cx="9" cy="10" r="1.8"></circle><path d="M20.5 16l-5-5-8 8"></path></svg></div></div>
+</div><div class="phone par" style="left:50%;margin-left:-140px;width:280px;top:70px"><div class="scr"><img src="assets/shot-calendar.webp" alt="" loading="lazy"></div></div><div class="fc fly" style="left:6%;top:420px"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Google Calendar</b><span>Connected · 24 events synced</span></span></div></div></div>
+<div class="tx" style="padding:0 72px 0 40px;position:relative;z-index:7"><h3>Connect your calendars</h3><p>Bring in Google, Outlook and your phone's calendar. Add public holidays for your country. See it all next to the family plan.</p></div>
+</article>
+</div>
+</section><section class="intel" id="plus">
+<div class="spot"></div>
+<div class="avs" data-avs="1"><div class="avs-track"><div class="av"><div class="ring-av"><img src="assets/av-adult_1.webp" alt=""></div><span class="nm">Lena</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_7.webp" alt=""></div><span class="nm">Marco</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_5.webp" alt=""></div><span class="nm">Emma</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_1.webp" alt=""></div><span class="nm">Noah</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_9.webp" alt=""></div><span class="nm">Mia</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_31.webp" alt=""></div><span class="nm">Oma Rosi</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_20.webp" alt=""></div><span class="nm">Opa Karl</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_14.webp" alt=""></div><span class="nm">Lukas</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_12.webp" alt=""></div><span class="nm">Sofia</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_1.webp" alt=""></div><span class="nm">Lena</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_7.webp" alt=""></div><span class="nm">Marco</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_5.webp" alt=""></div><span class="nm">Emma</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_1.webp" alt=""></div><span class="nm">Noah</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_9.webp" alt=""></div><span class="nm">Mia</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_31.webp" alt=""></div><span class="nm">Oma Rosi</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_20.webp" alt=""></div><span class="nm">Opa Karl</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_14.webp" alt=""></div><span class="nm">Lukas</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_12.webp" alt=""></div><span class="nm">Sofia</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_1.webp" alt=""></div><span class="nm">Lena</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_7.webp" alt=""></div><span class="nm">Marco</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_5.webp" alt=""></div><span class="nm">Emma</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_1.webp" alt=""></div><span class="nm">Noah</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_9.webp" alt=""></div><span class="nm">Mia</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_31.webp" alt=""></div><span class="nm">Oma Rosi</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_20.webp" alt=""></div><span class="nm">Opa Karl</span></div><div class="av"><div class="ring-av"><img src="assets/av-child_14.webp" alt=""></div><span class="nm">Lukas</span></div><div class="av"><div class="ring-av"><img src="assets/av-adult_12.webp" alt=""></div><span class="nm">Sofia</span></div></div></div>
+<div class="wrap" style="text-align:center">
+<span class="eyebrow" data-r="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>Daili Plus</span>
+<h2 class="h2" data-r="1" style="margin-top:18px"><span class="mute">Go deeper with</span><br>Daili Intelligence</h2>
+<p class="sub" data-r="1">Smart helpers that turn videos, photos and ideas into plans, so you can get back to your family.</p>
+</div>
+<div class="wrap stack">
+<article class="icard i-berry"><div class="tx"><h3>Recipes from any video</h3><p>Paste a YouTube link. Daili writes down the ingredients and the steps for you.</p></div>
+<div class="vis"><div class="phone " style=""><div class="scr"><img src="assets/shot-recipes.webp" alt="" loading="lazy"></div></div><div class="ai-card fly" style="left:-4%;top:250px"><div class="hd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>Imported from video</div><div class="vid"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"></path></svg></span></div><div class="ttl">Crispy chickpea curry</div><div class="row"><span class="ico c-clay" style="width:30px;height:30px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M7 7h4M17 21V3c-2 1.5-3 4-3 7v3h3"></path></svg></span><div><b>12 ingredients · 6 steps</b><span>Saved to your recipe box</span></div></div></div></div></article>
+<article class="icard i-clay"><div class="tx"><h3>Snap a letter, get the dates</h3><p>Take a photo of the school letter. Daili finds the dates and adds them to your calendar.</p></div>
+<div class="vis"><div class="phone " style=""><div class="scr"><img src="assets/shot-calendar.webp" alt="" loading="lazy"></div></div><div class="ai-card fly" style="left:-6%;top:230px"><div class="hd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>3 events found</div>
+<div class="row"><span class="ico c-lake" style="width:30px;height:30px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><div><b>School trip</b><span>Fri 10 Oct · 08:00</span></div></div>
+<div class="row"><span class="ico c-berry" style="width:30px;height:30px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M16 14.2c2.3.2 4 1.9 4.5 4.8"></path></svg></span><div><b>Parents' evening</b><span>Tue 14 Oct · 18:30</span></div></div>
+<div class="row"><span class="ico c-honey" style="width:30px;height:30px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"></rect><circle cx="9" cy="10" r="1.8"></circle><path d="M20.5 16l-5-5-8 8"></path></svg></span><div><b>Photo day</b><span>Thu 16 Oct</span></div></div><span class="add">Add all 3</span></div></div></article>
+<article class="icard i-leaf"><div class="tx"><h3>Dinner ideas for your week</h3><p>Out of ideas? Get dinner suggestions for the whole week, then add the ones you like to your meal plan.</p></div>
+<div class="vis"><div class="phone " style=""><div class="scr"><img src="assets/shot-mealplan.webp" alt="" loading="lazy"></div></div><div class="ai-card fly" style="left:-4%;top:260px"><div class="hd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>Suggested for Thursday</div><div class="ttl">Veggie lasagne</div>
+<div class="row"><span class="ico c-leaf" style="width:30px;height:30px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M7 7h4M17 21V3c-2 1.5-3 4-3 7v3h3"></path></svg></span><div><b>45 min · family favourite</b><span>Tap to add it to Thursday</span></div></div><span class="add">Add to meal plan</span></div></div></article>
+</div>
+<p class="fine wrap">Daili Plus features use Google Gemini, and only when you use them.</p>
+</section><section class="flow" id="workflows">
+<div class="shut" aria-hidden="true"><div class="shut-rows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="wrap flow-grid">
+<div><h2 class="h2" data-r="1">See it in action</h2><p class="sub" data-r="1">Four everyday moments, start to finish.</p><div class="fl-list"><button class="fl on" type="button" data-fl="0"><span class="tp"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><b>Plan the week</b><svg class="prog" viewBox="0 0 26 26" aria-hidden="true"><circle class="bg" cx="13" cy="13" r="11"></circle><circle class="fg" cx="13" cy="13" r="11"></circle></svg></span><span class="desc"><span>Add swimming for Noah on Tuesday. It shows up on every phone in the family, in his colour.</span></span></button><button class="fl" type="button" data-fl="1"><span class="tp"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><b>Share the shopping</b><svg class="prog" viewBox="0 0 26 26" aria-hidden="true"><circle class="bg" cx="13" cy="13" r="11"></circle><circle class="fg" cx="13" cy="13" r="11"></circle></svg></span><span class="desc"><span>Marco is at the store and ticks off the milk. At home you see it right away, no double buying.</span></span></button><button class="fl" type="button" data-fl="2"><span class="tp"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><b>Tick off the to-dos</b><svg class="prog" viewBox="0 0 26 26" aria-hidden="true"><circle class="bg" cx="13" cy="13" r="11"></circle><circle class="fg" cx="13" cy="13" r="11"></circle></svg></span><span class="desc"><span>Noah finishes the laundry and ticks it. The whole family sees what is still open.</span></span></button><button class="fl" type="button" data-fl="3"><span class="tp"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="10" r="1.8"></circle><circle cx="11" cy="6.5" r="1.8"></circle><circle cx="15.5" cy="7.5" r="1.8"></circle><circle cx="18" cy="11.5" r="1.8"></circle><path d="M8.5 17.5c0-2.5 2-4.5 4-4.5s4 2 4 4.5c0 1.5-1.2 2.5-2.5 2.2-1-.2-2-.2-3 0-1.3.3-2.5-.7-2.5-2.2z"></path></svg></span><b>Keep a habit</b><svg class="prog" viewBox="0 0 26 26" aria-hidden="true"><circle class="bg" cx="13" cy="13" r="11"></circle><circle class="fg" cx="13" cy="13" r="11"></circle></svg></span><span class="desc"><span>Stretch for five minutes, tick it, and watch Minzi get more energy for her next trip.</span></span></button></div></div>
+<div class="flow-vis"><div class="bgc" data-bgc="1" style="background:#E4EEF6"></div><div class="phone"><div class="scr"><img class="sx on" data-sx="0" src="assets/shot-calendar.webp" alt="" loading="lazy"><img class="sx" data-sx="1" src="assets/shot-shopping.webp" alt="" loading="lazy"><img class="sx" data-sx="2" src="assets/shot-todos.webp" alt="" loading="lazy"><img class="sx" data-sx="3" src="assets/shot-habits.webp" alt="" loading="lazy"><span class="pillev" data-ov="0" style="left:20%;top:75.5%;width:24%">Swim 16:30</span>
+<span class="tap" data-ov="1" style="left:11.5%;top:23.2%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span class="tap" data-ov="2" style="left:11.5%;top:28.5%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span class="tap" data-ov="3" style="left:87%;top:75%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></div></div><div class="fc toast" data-to="0"><div class="fc-in"><span class="ico c-lake"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span><span class="fc-tx"><b>Swimming class added</b><span>Noah · Tuesday 16:30</span></span></div></div><div class="fc toast" data-to="1"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"></path><circle cx="9" cy="20" r="1.4"></circle><circle cx="17" cy="20" r="1.4"></circle></svg></span><span class="fc-tx"><b>Marco got the milk</b><span>Groceries · 2 of 7</span></span></div></div><div class="fc toast" data-to="2"><div class="fc-in"><span class="ico c-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3"></rect><path d="M8 12l2.5 2.5L16 9"></path></svg></span><span class="fc-tx"><b>Noah did the laundry</b><span>Household · 1 left today</span></span></div></div><div class="fc toast" data-to="3"><div class="fc-in"><span class="ico c-honey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-8.5z"></path></svg></span><span class="fc-tx"><b>Stretch done</b><span>Family energy +1</span></span></div></div><img class="jump" data-jump="1" src="assets/minzi_jump.webp" alt=""></div>
+</div>
+</section><section class="screens" id="screens">
+<div class="wrap">
+<h2 class="h2" data-r="1">On every screen in your home</h2>
+<p class="sub" data-r="1">Glance at your wrist, your home screen or the kitchen wall. The same family plan, everywhere.</p>
+<div class="bento">
+<article class="bx g-leaf" data-r="1"><h3>Apple Watch</h3><p>What's next, and the shopping list, right on your wrist.</p><div class="watch " style="transform:scale(.95)"><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face">
+<div class="t1"><span>Up next</span><span>09:41</span></div>
+<div class="ev"><b>Swimming class</b><span>16:30 · Noah</span></div>
+<div class="ev2"><i></i>Groceries · 5 left</div>
+</div></div></div></article>
+<article class="bx g-berry" data-r="1"><h3>Widgets</h3><p>Next up, shopping, to-dos, habits, notes and birthdays on your home screen.</p>
+<div class="wg" style="left:26px;top:170px;width:140px;height:140px"><div class="lbl">Next up</div><div class="big" style="font-size:22px;margin-top:10px">Swim<br>16:30</div><div style="font-size:12px;color:#4F86B0;font-weight:700;margin-top:6px">Noah</div></div>
+<div class="wg" style="right:22px;top:196px;width:140px;height:140px;background:#15271F;color:#fff"><div class="lbl" style="color:#CFEFC6">Habits</div><div class="big">4 / 9</div><div style="font-size:12px;opacity:.7;margin-top:4px">done today</div></div>
+<div class="wg" style="left:26px;right:22px;top:330px"><div class="lbl">Groceries</div><div class="li x"><i class="x"></i><span>Milk</span></div><div class="li"><i></i><span>Eggs</span></div><div class="li"><i></i><span>Apples</span></div></div></article>
+<article class="bx span2 g-lake" data-r="1"><h3>On the wall with TRMNL</h3><p>Show the family week on a TRMNL e-paper screen in the hallway. No glow, no noise.</p>
+<div class="eink"><div class="pap"><div><b>Mon</b><span>Piano 15:00</span><span>Dentist</span></div><div><b>Tue</b><span>Swim 16:30</span><span>Parents 18:30</span></div><div><b>Wed</b><span>Football 17:00</span></div><div><b>Thu</b><span>Movie night</span></div></div></div></article>
+<article class="bx span2 g-honey" data-r="1" style="height:420px"><h3>In your browser</h3><p>Plan the week on a big screen at app.daili.app. The same family, the same plans.</p>
+<div class="browser"><div class="bar"><i></i><i></i><i></i><span>app.daili.app</span></div><img src="assets/web-calendar.webp" alt="daili web app calendar"></div></article>
+<article class="bx span2 g-clay" data-r="1" style="height:420px"><h3>And on every phone</h3><p>iPhone and Android, in 25 languages. Grandma speaks Türkçe, the kids speak English? No problem.</p>
+<div style="position:absolute;right:30px;bottom:-120px;display:flex;gap:16px"><div class="phone " style="width:190px;transform:rotate(-6deg)"><div class="scr"><img src="assets/shot-birthdays.webp" alt="" loading="lazy"></div></div><div class="phone " style="width:190px;transform:rotate(5deg) translateY(-30px)"><div class="scr"><img src="assets/shot-notes.webp" alt="" loading="lazy"></div></div></div></article>
+</div></div></section><section class="priv" id="privacy"><div class="wrap"><div class="vault" data-vault="1"><svg class="lock" viewBox="0 0 440 600" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".22"></stop><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"></stop><stop offset="1" stop-color="#CFEFC6" stop-opacity=".18"></stop></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"></stop><stop offset="1" stop-color="#ffffff" stop-opacity=".06"></stop></linearGradient></defs>
+<g data-shackle="1"><path d="M110 270V170a110 110 0 0 1 220 0v100" fill="none" stroke="url(#lg2)" stroke-width="46" stroke-linecap="round"></path></g>
+<rect x="30" y="250" width="380" height="330" rx="64" fill="url(#lg1)" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"></rect>
+<circle cx="220" cy="400" r="26" fill="#ffffff" fill-opacity=".14"></circle><rect x="210" y="410" width="20" height="60" rx="10" fill="#ffffff" fill-opacity=".14"></rect></svg>
+<h2 class="h2">Private by design</h2>
+<p class="sub">Your family's plans belong to your family. That is not a setting, it is how Daili is built.</p>
+<div class="glass"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="3"></rect><path d="M7.5 15l2-6 2 6M8.2 13h2.6M14 9v6h1.2a2.5 2.5 0 0 0 0-6z"></path><path d="M4 4l16 16"></path></svg>No ads</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"></path><circle cx="12" cy="12" r="2.8"></circle><path d="M4 4l16 16"></path></svg>No tracking</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M15.5 8.5a4 4 0 1 0 0 7M7.5 11h6M7.5 13.5h6"></path></svg>We never sell your data</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"></path></svg>Servers in the EU</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"></path></svg>Documents &amp; photos stay on your phone</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>AI only when you use it</span></div>
+</div></div></section><section class="care"><div class="mosaic"><div class="mcol" data-speed="2" style="margin-top:40px"><div style="height:230px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_34ca4ac2-c97e-4898-a5ec-dcc4b391fd80_min.webp" alt="" loading="lazy"></div><div style="height:200px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_08812513-1acc-408a-8cbc-92ba46065a2a_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="1" style="margin-top:120px"><div style="height:300px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122328_2e3c5697-6f7e-47f5-8d25-2aa446afdbc7_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="1" style="margin-top:0px"><div style="height:230px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122729_7534d74e-0e79-4b2f-9897-2251da6e82f9_min.webp" alt="" loading="lazy"></div><div style="height:200px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_2f51b5d8-e18d-4c0c-ab5b-cbd6c83dd9fe_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="1" style="margin-top:90px"><div style="height:300px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_55fd3c8c-23ef-416a-83b5-0beaa328a49d_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="3" style="margin-top:20px"><div style="height:230px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_721ae571-454e-4fc9-aff9-f2ee57e5b871_min.webp" alt="" loading="lazy"></div><div style="height:200px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_496637f4-00db-4a32-a1a6-61910291efc1_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="3" style="margin-top:140px"><div style="height:300px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_76856668-634e-4582-bc32-61e848a8187a_min.webp" alt="" loading="lazy"></div></div><div class="mcol" data-speed="3" style="margin-top:50px"><div style="height:230px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122727_917a4f57-7915-4f54-980c-d0eab4ad2ee1.png" alt="" loading="lazy"></div><div style="height:200px"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122728_04b63845-9cc4-4e36-ab75-db41262ef15e_min.webp" alt="" loading="lazy"></div></div></div>
+<div class="wrap" style="margin-top:30px"><h2 class="h2" data-r="1">Made with care,<br>for real family life</h2><p class="sub" data-r="1">Designed and built in Tirol, Austria, for the everyday chaos of busy families.</p></div></section><section class="revs"><div class="marq" style="margin-top:0"><div class="marq-track" style="animation-duration:80s"><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Finally one app for all of us</b><div class="who">Sample name · App Store</div><p>We used three apps and a paper calendar. Now the whole family is in Daili, even my mum.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>The shopping list alone is worth it</b><div class="who">Sample name · Google Play</div><p>My husband ticks things off in the store and I see it at home. No more double eggs.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>My kids actually use it</b><div class="who">Sample name · App Store</div><p>The habits with the cat got my 9-year-old to brush his teeth without me asking. Magic.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Calm, clean, no ads</b><div class="who">Sample name · Google Play</div><p>It looks good and it does not shout at me. The widgets are perfect.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Great for shared custody</b><div class="who">Sample name · App Store</div><p>Both homes see the same week. Handovers got so much easier.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Love the watch app</b><div class="who">Sample name · App Store</div><p>I see swim class on my wrist before I leave work.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Finally one app for all of us</b><div class="who">Sample name · App Store</div><p>We used three apps and a paper calendar. Now the whole family is in Daili, even my mum.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>The shopping list alone is worth it</b><div class="who">Sample name · Google Play</div><p>My husband ticks things off in the store and I see it at home. No more double eggs.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>My kids actually use it</b><div class="who">Sample name · App Store</div><p>The habits with the cat got my 9-year-old to brush his teeth without me asking. Magic.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Calm, clean, no ads</b><div class="who">Sample name · Google Play</div><p>It looks good and it does not shout at me. The widgets are perfect.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Great for shared custody</b><div class="who">Sample name · App Store</div><p>Both homes see the same week. Handovers got so much easier.</p></article><article class="rv"><span class="ph">Placeholder</span><div class="st"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"></path></svg></div><b>Love the watch app</b><div class="who">Sample name · App Store</div><p>I see swim class on my wrist before I leave work.</p></article></div></div></section><section class="final" id="get"><div class="wrap">
+<h2 class="h2" data-r="1">Ready when you are</h2>
+<p class="sub" data-r="1">Start with one list. Add the calendar when you're ready. Daili grows with your family.</p>
+<div class="stores" data-r="1"><a class="store" href="https://apps.apple.com/app/id6800427546"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg><span><small>Download on the</small><b>App Store</b></span></a><a class="store" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><path d="M11 18.5h2"></path></svg><span><small>Get it on</small><b>Google Play</b></span></a><a class="store" href="https://app.daili.app" style="background:#fff;color:var(--ink) !important;border:1px solid var(--line)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"></path></svg><span><small>Or use it in</small><b>your browser</b></span></a></div>
+<div class="flat"><div class="obj" data-obj="1" data-fx="-300" data-fy="-80" style="left:4%;top:40px;width:250px;transform:rotate(-10deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_5faea45e-e13c-4ca1-8c55-d31614fbf55a_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="-260" data-fy="120" style="left:22%;top:330px;width:200px;transform:rotate(12deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122751_a3e8fde5-4f46-4f9b-ba37-e903f0729f06_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="-300" data-fy="160" style="left:2%;top:420px;width:190px;transform:rotate(0deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122751_81c33b95-47ff-4164-a1aa-f37e9aa32ece_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="-200" data-fy="-200" style="left:20%;top:20px;width:170px;transform:rotate(-6deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_87dd4201-7f7e-4699-92ab-3e4f2cf62648_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="-120" data-fy="220" style="left:32%;top:520px;width:120px;transform:rotate(0deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122751_deab7d26-67d3-4c51-a2de-9dfad5b8ed1b_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="160" data-fy="220" style="left:62%;top:520px;width:150px;transform:rotate(18deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122753_a28ad523-c33d-41e5-8cd2-08e21159fa81_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="220" data-fy="-200" style="left:64%;top:30px;width:200px;transform:rotate(8deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_ae1053bc-e2b4-49a4-9077-8ba3f8023508_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="300" data-fy="-80" style="left:80%;top:60px;width:210px;transform:rotate(-12deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122753_2cafa3f2-eda1-488d-9e78-b62367c8628d_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="280" data-fy="120" style="left:76%;top:330px;width:220px;transform:rotate(10deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122753_2d68087f-5ca2-4ce9-a4e4-22d93afeac0b_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="300" data-fy="160" style="left:88%;top:420px;width:170px;transform:rotate(-4deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_7c8282ef-dc69-42f3-b0e8-99151d266c38_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="0" data-fy="260" style="left:50%;top:590px;width:150px;transform:rotate(-8deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_2aaa14b0-f605-4c40-8322-a307bc763d80_min.webp" alt="" loading="lazy"></div><div class="obj" data-obj="1" data-fx="200" data-fy="60" style="left:62%;top:290px;width:150px;transform:rotate(20deg)"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3EG5pBhqcAcQxHpM3yL8XPvtR0A/hf_20260928_122752_42441600-6c42-4265-a20e-d43890970f1d_min.webp" alt="" loading="lazy"></div><div class="phone fphone" style=""><div class="scr"><img src="assets/shot-dashboard.webp" alt="" loading="lazy"></div></div></div>
+</div></section><footer class="foot"><div class="wrap foot-grid">
+<div><a class="brand" href="#top" style="color:var(--ink) !important"><img src="assets/icon.webp" alt="">daili</a><p class="note">The family organiser for calendars, lists, to-dos, habits and more. Free, no ads, servers in the EU.</p></div>
+<div><h4>Product</h4><a href="#features">Features</a><a href="#plus">Daili Plus</a><a href="https://app.daili.app">Web app</a><a href="#">Help center</a></div>
+<div><h4>Company</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Contact</a></div>
+<div><h4>Legal</h4><a href="#">Privacy</a><a href="#">Imprint</a><a href="#">Terms</a></div>
+</div><div class="wrap" style="margin-top:40px;font-size:13px;color:var(--ink3)">© 2026 Daili · Made in Innsbruck, Austria</div></footer></main>
+</div>
+
+<script>class DCLogic{constructor(){this.props={}}}
+
+class Component extends DCLogic {
+  renderVals() { return {}; }
+  componentDidMount() { this._t = setTimeout(() => this.boot(0), 80); }
+  componentWillUnmount() {
+    clearTimeout(this._t); clearTimeout(this._flowT);
+    try { if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach(function (t) { t.kill(); }); } catch (e) {}
+    try { if (this._lenis) this._lenis.destroy(); } catch (e) {}
+    try { if (this._tick && window.gsap) window.gsap.ticker.remove(this._tick); } catch (e) {}
+    try { if (this._avTick && window.gsap) window.gsap.ticker.remove(this._avTick); } catch (e) {}
+  }
+  boot(n) {
+    var self = this;
+    var root = document.querySelector('[data-dl]');
+    var g = window.gsap, ST = window.ScrollTrigger, L = window.Lenis;
+    if (!root || !g || !ST || !root.querySelector('.fl')) { if (n < 120) this._t = setTimeout(function () { self.boot(n + 1); }, 100); return; }
+    if (root.__booted) return; root.__booted = true;
+    g.registerPlugin(ST);
+    var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var MOB = window.matchMedia('(max-width: 860px)').matches;
+    var $ = function (s, c) { return (c || root).querySelector(s); };
+    var $$ = function (s, c) { return Array.prototype.slice.call((c || root).querySelectorAll(s)); };
+    ST.defaults({ scroller: root });
+
+    // smooth scroll (Lenis) driving ScrollTrigger
+    if (L && !RM) {
+      var lenis = new L({ wrapper: root, content: $('.dl-in'), lerp: 0.09, smoothWheel: true, anchors: true });
+      this._lenis = lenis;
+      lenis.on('scroll', ST.update);
+      this._tick = function (t) { lenis.raf(t * 1000); };
+      g.ticker.add(this._tick); g.ticker.lagSmoothing(0);
+    }
+    var refresh = function () { clearTimeout(self._rf); self._rf = setTimeout(function () { ST.refresh(); }, 150); };
+    $$('img').forEach(function (im) { if (!im.complete) im.addEventListener('load', refresh, { once: true }); });
+
+    if (RM) { $$('.hcard').forEach(function (c) { c.classList.add('done'); }); this.flows(root, g, ST, true); return; }
+
+    // ---------- HERO intro ----------
+    g.from($$('.hero h1 .w'), { yPercent: 70, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.06 });
+    g.from($$('[data-hi]'), { y: 26, opacity: 0, duration: 1, ease: 'expo.out', stagger: 0.09, delay: 0.35 });
+    g.from('.hphone', { y: 200, opacity: 0, duration: 1.5, ease: 'expo.out', delay: 0.4 });
+    g.from('.hwatch', { x: 140, y: 140, rotation: 14, opacity: 0, duration: 1.5, ease: 'expo.out', delay: 0.6 });
+    var cards = $$('.hcard');
+    cards.forEach(function (c, i) {
+      var inn = c.querySelector('.fc-in');
+      g.from(inn, { scale: 0.55, opacity: 0, duration: 0.9, ease: 'back.out(1.7)', delay: 0.85 + i * 0.08 });
+      g.to(inn, { y: (i % 2 ? 10 : -10), rotation: (i % 2 ? 1.2 : -1.2), duration: 2.4 + (i % 3) * 0.6, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.8 + i * 0.1 });
+    });
+
+    // ---------- HERO scroll: phone rises, watch drifts, cards get ticked and fly off ----------
+    var order = cards.slice().sort(function (a, b) { return parseFloat(a.style.top) - parseFloat(b.style.top); });
+    var at = {}; order.forEach(function (c, k) { at[c.dataset.i] = 0.03 + k * 0.045; });
+    var htl = g.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.7,
+      onUpdate: function (s) { cards.forEach(function (c) { c.classList.toggle('done', s.progress > at[c.dataset.i]); }); } } });
+    htl.to({}, { duration: 1 }, 0);
+    htl.to('.hphone', { y: MOB ? -30 : -70, scale: 1.03, ease: 'none', duration: 1 }, 0);
+    htl.to('.hwatch', { y: MOB ? -90 : -210, x: MOB ? 10 : 50, rotation: -8, ease: 'none', duration: 1 }, 0);
+    htl.to('.aurora', { yPercent: 18, ease: 'none', duration: 1 }, 0);
+    cards.forEach(function (c) {
+      var d = +c.dataset.dir;
+      htl.to(c, { x: d * (MOB ? 90 : 200), y: MOB ? -90 : -170, rotation: d * 10, opacity: 0, ease: 'power2.in', duration: 0.26 }, at[c.dataset.i] + 0.07);
+    });
+    g.to('[data-qr]', { autoAlpha: 0, y: 24, ease: 'none', scrollTrigger: { trigger: '.members', start: 'top 85%', end: 'top 45%', scrub: true } });
+
+    // ---------- generic reveals ----------
+    g.set($$('[data-r]'), { opacity: 0, y: 56 });
+    ST.batch($$('[data-r]'), { start: 'top 90%', once: true, onEnter: function (els) { g.to(els, { opacity: 1, y: 0, duration: 1.1, ease: 'expo.out', stagger: 0.09, overwrite: true }); } });
+
+    // member count-up
+    var cnt = $('[data-count]');
+    if (cnt) { var o = { v: 0 }; ST.create({ trigger: cnt, start: 'top 85%', once: true, onEnter: function () {
+      g.to(o, { v: +cnt.dataset.count, duration: 1.8, ease: 'power3.out', onUpdate: function () { cnt.textContent = Math.round(o.v).toLocaleString('en-US'); } }); } }); }
+
+    // ---------- feature cards: phones and floating widgets at different speeds ----------
+    $$('.fcard, .wide').forEach(function (card) {
+      var ph = card.querySelector('.par');
+      var fl = $$('.fly', card);
+      var st = { trigger: card, start: 'top bottom', end: 'bottom top', scrub: 0.8 };
+      if (ph) g.fromTo(ph, { yPercent: 14 }, { yPercent: -6, ease: 'none', scrollTrigger: st });
+      fl.forEach(function (f, i) { g.fromTo(f, { yPercent: 90, rotation: i % 2 ? 3 : -3 }, { yPercent: -90, rotation: i % 2 ? -2 : 2, ease: 'none', scrollTrigger: { trigger: card, start: 'top bottom', end: 'bottom top', scrub: 0.8 } }); });
+    });
+    var bar = $('.fcard .bar');
+    if (bar) g.fromTo(bar, { width: '35%' }, { width: '85%', duration: 1.6, ease: 'power3.out', scrollTrigger: { trigger: bar, start: 'top 85%', once: true } });
+
+    // calendar orbit turns as you scroll; tiles stay upright
+    var orb = $('[data-orbit]');
+    if (orb) {
+      var cst = { trigger: '#calendars', start: 'top bottom', end: 'bottom top', scrub: 1 };
+      g.fromTo(orb, { rotation: -25 }, { rotation: 25, ease: 'none', scrollTrigger: cst });
+      g.fromTo($$('.tile', orb), { rotation: 25 }, { rotation: -25, ease: 'none', scrollTrigger: { trigger: '#calendars', start: 'top bottom', end: 'bottom top', scrub: 1 } });
+    }
+
+    // ---------- Intelligence: avatar strip with spotlight ----------
+    var avWrap = $('[data-avs]'), avTrack = avWrap && $('.avs-track', avWrap), avs = avTrack ? $$('.av', avTrack) : [];
+    if (avTrack && avs.length) {
+      var x = 0, third = 0, vel = 0;
+      var measure = function () { third = avTrack.scrollWidth / 3; };
+      measure();
+      this._avTick = function () {
+        var boost = self._lenis ? Math.min(Math.abs(self._lenis.velocity || 0) * 0.08, 4) : 0;
+        vel += ((0.45 + boost) - vel) * 0.08;
+        x -= vel; if (third && -x > third) x += third;
+        avTrack.style.transform = 'translate3d(' + x + 'px,0,0)';
+        var wr = avWrap.getBoundingClientRect(), cx = wr.left + wr.width / 2;
+        for (var i = 0; i < avs.length; i++) {
+          var r = avs[i].getBoundingClientRect(); var d = Math.abs(r.left + r.width / 2 - cx);
+          var k = Math.max(0, 1 - d / 260);
+          avs[i].style.transform = 'scale(' + (0.86 + k * 0.34) + ')';
+          avs[i].style.opacity = (0.35 + Math.max(0, 1 - d / 520) * 0.65).toFixed(3);
+          avs[i].classList.toggle('on', d < 70);
+        }
+      };
+      g.ticker.add(this._avTick);
+    }
+    // stacking cards
+    var ic = $$('.icard');
+    ic.forEach(function (c, i) {
+      $$('.fly', c).forEach(function (f) { g.fromTo(f, { yPercent: 40 }, { yPercent: -40, ease: 'none', scrollTrigger: { trigger: c, start: 'top bottom', end: 'bottom top', scrub: 0.8 } }); });
+      var p = c.querySelector('.phone');
+      if (p) g.fromTo(p, { yPercent: 10 }, { yPercent: -4, ease: 'none', scrollTrigger: { trigger: c, start: 'top bottom', end: 'bottom top', scrub: 0.8 } });
+      if (!MOB && ic[i + 1]) g.to(c, { scale: 0.92, opacity: 0.45, ease: 'none', scrollTrigger: { trigger: ic[i + 1], start: 'top bottom', end: 'top 140px', scrub: true } });
+    });
+
+    // ---------- shutter back to light ----------
+    g.fromTo($$('.shut-rows i'), { scaleY: 1 }, { scaleY: 0, ease: 'none', stagger: { each: 0.07, from: 'end' }, scrollTrigger: { trigger: '.flow', start: 'top 95%', end: 'top 10%', scrub: true } });
+
+    // ---------- privacy: lock closes ----------
+    var vault = $('[data-vault]');
+    if (vault) {
+      g.fromTo('[data-shackle]', { y: -80 }, { y: 0, ease: 'power2.out', scrollTrigger: { trigger: vault, start: 'top 85%', end: 'top 25%', scrub: 0.8 } });
+      g.fromTo('.lock', { scale: 0.82, opacity: 0.4 }, { scale: 1, opacity: 0.9, ease: 'none', scrollTrigger: { trigger: vault, start: 'top 90%', end: 'top 20%', scrub: 0.8 } });
+      g.from($$('.glass span'), { y: 30, opacity: 0, duration: 0.9, ease: 'expo.out', stagger: 0.07, scrollTrigger: { trigger: '.glass', start: 'top 90%', once: true } });
+      g.from($$('.vault .h2, .vault .sub'), { y: 40, opacity: 0, duration: 1.1, ease: 'expo.out', stagger: 0.1, scrollTrigger: { trigger: vault, start: 'top 70%', once: true } });
+    }
+
+    // ---------- care mosaic: columns drift at different speeds ----------
+    $$('.mcol').forEach(function (col, i) {
+      var sp = +col.dataset.speed || 1;
+      g.fromTo(col, { y: 60 * sp }, { y: -60 * sp, ease: 'none', scrollTrigger: { trigger: '.care', start: 'top bottom', end: 'bottom top', scrub: 1 } });
+      g.from($$('div', col), { scale: 0.85, opacity: 0, duration: 1, ease: 'expo.out', stagger: 0.1, delay: i * 0.05, scrollTrigger: { trigger: '.mosaic', start: 'top 85%', once: true } });
+    });
+
+    // ---------- final flat-lay: objects slide onto the table ----------
+    var flat = $('.flat');
+    if (flat) {
+      $$('[data-obj]', flat).forEach(function (o, i) {
+        g.fromTo(o, { x: +o.dataset.fx * (MOB ? 0.5 : 1), y: +o.dataset.fy, opacity: 0 }, { x: 0, y: 0, opacity: 1, ease: 'power2.out', scrollTrigger: { trigger: flat, start: 'top bottom', end: 'top 30%', scrub: 1 } });
+      });
+      g.fromTo('.fphone', { y: 160 }, { y: 0, ease: 'power2.out', scrollTrigger: { trigger: flat, start: 'top bottom', end: 'top 30%', scrub: 1 } });
+    }
+
+    this.flows(root, g, ST, false);
+    refresh();
+  }
+
+  // "See it in action": auto-advancing workflow list with a phone that plays each moment
+  flows(root, g, ST, still) {
+    var self = this;
+    var items = Array.prototype.slice.call(root.querySelectorAll('.fl'));
+    var shots = Array.prototype.slice.call(root.querySelectorAll('[data-sx]'));
+    var bgc = root.querySelector('[data-bgc]');
+    var tints = ['#E4EEF6', '#E8F6E2', '#EEF3E6', '#FAEFD6'];
+    var cur = 0, live = false;
+    var restart = function (el, on) { el.classList.remove('go'); void el.offsetWidth; if (on) el.classList.add('go'); };
+    var show = function (i) {
+      cur = i;
+      items.forEach(function (it, k) { it.classList.remove('on'); });
+      void root.offsetWidth;
+      items[i].classList.add('on');
+      shots.forEach(function (s, k) { s.classList.toggle('on', k === i); });
+      if (bgc) bgc.style.background = tints[i];
+      Array.prototype.slice.call(root.querySelectorAll('[data-ov],[data-to]')).forEach(function (el) {
+        restart(el, (el.dataset.ov == i || el.dataset.to == i) && !still);
+        if (still && (el.dataset.ov == i || el.dataset.to == i)) { el.style.opacity = 1; el.style.transform = 'none'; }
+      });
+      var j = root.querySelector('[data-jump]'); if (j) restart(j, i === 3 && !still);
+      clearTimeout(self._flowT);
+      if (live && !still) self._flowT = setTimeout(function () { show((cur + 1) % items.length); }, 6000);
+    };
+    items.forEach(function (it, k) { it.addEventListener('click', function () { show(k); }); });
+    if (still) { show(0); return; }
+    ST.create({ trigger: '.flow-grid', start: 'top 70%', end: 'bottom 20%', onToggle: function (s) { live = s.isActive; if (live) show(cur); else clearTimeout(self._flowT); } });
+  }
+}
+
+</script>
+<script>new Component().componentDidMount();</script></body>
+</html>
