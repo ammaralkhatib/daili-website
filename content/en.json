@@ -61,13 +61,15 @@
   "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\", \"Daili Plus\" and \"Minzi\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
   "home": {
     "nav": {
-      "@nav": { "description": "Top navigation of the home page: four section links, the web-app login link and the pill button. One or two words each." },
+      "@nav": { "description": "Top navigation of the home page: four section links, the web-app login link and the pill button. downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
       "features": "Features",
       "plus": "Daili Plus",
       "screens": "Watch & widgets",
       "privacy": "Privacy",
       "login": "Log in",
-      "cta": "Get the app"
+      "cta": "Get the app",
+      "downloadApp": "Download app",
+      "openWebApp": "Open web app"
     },
     "qr": {
       "@qr": { "description": "Floating QR card at the bottom corner on desktop. t = bold title (≤ 20 chars, keeps \"daili\"), s = one short line, alt = the QR image's alt text." },
@@ -89,6 +91,68 @@
         { "t": "Take out the bins", "s": "Noah · tonight" },
         { "t": "Vegetable curry", "s": "Dinner tonight" },
         { "t": "Gift for Emma", "s": "Birthday in 2 days" }
+      ],
+      "@rating": { "description": "Hero, next to the five stars (≤ 24 chars). {rating} is filled by the build with the locale-formatted Google Play rating (e.g. \"4.7\" / \"4,7\"), exactly once. ratingAlt = the screen-reader label for stars + line." },
+      "rating": "{rating} on Google Play",
+      "ratingAlt": "Rated {rating} out of 5 on Google Play",
+      "@scenes": { "description": "7 scenes of 3 floating cards around the hero phone, in this order; the phone shows the matching app screenshot, so words match that locale's screenshot: dish, item, to-do and event names from the store-shot fixtures, person names as the screenshot shows them (Lena/Marco/Emma/Noah/Mia in Latin-script locales). id is data — never translate it. t ≤ 22 chars (bold line), s ≤ 28 chars (small grey line)." },
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Swimming class", "s": "Today · 16:30 · Noah" },
+            { "t": "Dentist", "s": "Tue · 08:15 · Mia" },
+            { "t": "Parents' evening", "s": "Thu · 18:30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Take out the bins", "s": "Noah · tonight" },
+            { "t": "Do the laundry", "s": "Lena · today" },
+            { "t": "Check homework", "s": "Mia · 17:00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Milk · 2 l", "s": "Marco is at the store" },
+            { "t": "Bread", "s": "Added by Lena" },
+            { "t": "Apples · 1 kg", "s": "Groceries · 3 of 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Stretch · 5 min", "s": "4-day streak" },
+            { "t": "Read 20 minutes", "s": "Mia · every day" },
+            { "t": "Water the plants", "s": "Family energy +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Lunch money", "s": "Pinned for Friday" },
+            { "t": "Wi-Fi password", "s": "Shared with the family" },
+            { "t": "Grandma arrives Sat", "s": "Who picks her up?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma turns 12", "s": "In 3 days" },
+            { "t": "Gift for Emma", "s": "To-do · Marco" },
+            { "t": "Noah turns 8", "s": "In 11 days" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Porridge", "s": "Breakfast · Monday" },
+            { "t": "Chicken salad", "s": "Lunch · Monday" },
+            { "t": "Vegetable curry", "s": "Dinner tonight" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -117,7 +181,7 @@
         { "cap": "Friday lunch, sorted.", "t": "Lunch money for Friday", "s": "Pinned · Family" },
         { "cap": "Saturday market run", "t": "Flowers for Oma", "s": "Groceries · 5 of 7" },
         { "cap": "Day 12. Minzi is proud.", "t": "Read 20 minutes", "s": "12-day streak" },
-        { "cap": "She turns 12 today!", "t": "Emma turns 12", "s": "Today · 3 wishes on her list" },
+        { "cap": "She turns 12 today!", "t": "Emma turns 12", "s": "Today · party at 3 pm" },
         { "cap": "Never miss practice", "t": "Football practice", "s": "17:00 · Noah · every Tue" },
         { "cap": "Shopping with backup", "t": "Blueberries", "s": "Added by Lena · just now" },
         { "cap": "Homework first", "t": "Check homework", "s": "Mia · today" },
@@ -137,6 +201,15 @@
         { "h3": "Calendar", "p": "Everyone's week at a glance. School, swimming and the dentist, each person in their own colour.", "t": "Swimming class", "s": "Tue · 16:30 · Noah" },
         { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
         { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" }
+      ],
+      "@cards6": { "description": "Six feature cards under \"Start the day together\", in this order: Lists, Habits, Notes, Recipes, Meal plan, Birthdays. h3 = the app's feature name, p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36). cards6[1] t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\". Temporary key: 007 renames it to cards." },
+      "cards6": [
+        { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
+        { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" },
+        { "h3": "Notes", "p": "Quick thoughts, the Wi-Fi password, who picks up Grandma. Keep a note private or share it with the family.", "t": "Grandma arrives Saturday at 3 pm", "s": "Shared with Family" },
+        { "h3": "Recipes", "p": "Keep the family favourites, or import one from a video or a photo. Send the ingredients to your list in one tap.", "t": "Sweet & sour sticky tofu", "s": "13 ingredients · Add to Groceries" },
+        { "h3": "Meal plan", "p": "Plan breakfast, lunch and dinner for the week, so nobody asks what's for dinner at six.", "t": "Vegetable curry", "s": "Dinner · Monday" },
+        { "h3": "Birthdays", "p": "Countdowns for every birthday in the family, and a reminder in time to get the gift.", "t": "Emma turns 12", "s": "In 3 days, 12 hours" }
       ]
     },
     "dinner": {
@@ -153,7 +226,12 @@
       "h3": "Connect your calendars",
       "p": "Bring in Google, Outlook and your phone's calendar. Add public holidays for your country. See it all next to the family plan.",
       "t": "Google Calendar",
-      "s": "Connected · 24 events synced"
+      "s": "Connected · 24 events synced",
+      "@apple": { "description": "Second floating calendar card next to the Google one: t = Apple's name for its calendar app in the language, s = one short line." },
+      "apple": {
+        "t": "Apple Calendar",
+        "s": "Connected via your iPhone"
+      }
     },
     "plus": {
       "@plus": { "description": "Daili Plus section (dark). \"Daili Plus\" and \"Daili Intelligence\" are product names and stay in Latin letters. Each card: h3 + p, then a drawn widget: hd = its small header, title/t/s = its lines, add = its button (all ≤ 28 chars)." },
@@ -228,6 +306,22 @@
         "groceries": "Groceries",
         "items": ["Milk", "Eggs", "Apples"]
       },
+      "@widgets2": { "description": "Drawn home-screen widgets. Every tiny label is copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetNextUpComingUp, widgetShoppingToBuy, widgetHabitsEnergy, habitsTitle, widgetNextUpStartsIn, widgetCountdownDays, celebrationTypeBirthday, widgetQuickAdd*), so the site says what the widget says. {count}, {n}, {max} are numbers filled by the page. Temporary key: 007 renames it to widgets." },
+      "widgets2": {
+        "h3": "Widgets",
+        "p": "Next up, shopping, habits, birthdays and quick add, right on your home screen.",
+        "upcoming": "Upcoming",
+        "toBuy": "{count} to buy",
+        "energy": "Energy {n}/{max}",
+        "habits": "Habits",
+        "startsIn": "starts in",
+        "days": "days",
+        "birthday": "Birthday",
+        "event": "Event",
+        "task": "Task",
+        "item": "Item",
+        "meal": "Meal"
+      },
       "trmnl": {
         "h3": "On the wall with TRMNL",
         "p": "Show the family week on a TRMNL e-paper screen in the hallway. No glow, no noise.",
@@ -237,6 +331,12 @@
           { "d": "Wed", "ev": ["Football 17:00"] },
           { "d": "Thu", "ev": ["Movie night"] }
         ]
+      },
+      "@tablet": { "description": "Card about using any old tablet as the family board on the wall. alt = its picture." },
+      "tablet": {
+        "h3": "On the wall with any tablet",
+        "p": "Turn an old tablet into a family board for the kitchen or the hallway. It shows the week and updates by itself.",
+        "alt": "The Daili family board on a tablet"
       },
       "web": {
         "h3": "In your browser",
@@ -264,7 +364,9 @@
     "final": {
       "@final": { "description": "Last call-to-action section above the FAQ/footer: headline and one line." },
       "h2": "Ready when you are",
-      "sub": "Start with one list. Add the calendar when you're ready. Daili grows with your family."
+      "sub": "Start with one list. Add the calendar when you're ready. Daili grows with your family.",
+      "@web": { "description": "Third button next to the store badges, globe icon" },
+      "web": "Open in your browser"
     }
   },
 

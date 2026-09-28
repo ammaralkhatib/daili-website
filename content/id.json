@@ -51,7 +51,9 @@
       "screens": "Jam & widget",
       "privacy": "Privasi",
       "login": "Masuk",
-      "cta": "Unduh aplikasinya"
+      "cta": "Unduh aplikasinya",
+      "downloadApp": "Unduh aplikasi",
+      "openWebApp": "Buka aplikasi web"
     },
     "qr": {
       "t": "Unduh daili gratis",
@@ -70,6 +72,66 @@
         { "t": "Buang sampah", "s": "Noah · malam ini" },
         { "t": "Kari sayur", "s": "Makan malam hari ini" },
         { "t": "Kado untuk Emma", "s": "Ulang tahun 2 hari lagi" }
+      ],
+      "rating": "{rating} di Google Play",
+      "ratingAlt": "Dinilai {rating} dari 5 di Google Play",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Les renang", "s": "Hari ini · 16.30 · Bayu" },
+            { "t": "Dokter gigi", "s": "Sel · 08.15 · Dinda" },
+            { "t": "Rapat orang tua", "s": "Kam · 18.30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Buang sampah", "s": "Bayu · malam ini" },
+            { "t": "Cuci baju", "s": "Sari · hari ini" },
+            { "t": "Periksa PR", "s": "Dinda · 17.00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Susu · 2 l", "s": "Andi sedang di toko" },
+            { "t": "Roti", "s": "Ditambahkan Sari" },
+            { "t": "Apel · 1 kg", "s": "Belanja · 3 dari 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Peregangan · 5 mnt", "s": "4 hari berturut-turut" },
+            { "t": "Membaca 20 menit", "s": "Dinda · setiap hari" },
+            { "t": "Siram tanaman", "s": "Energi keluarga +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Uang jajan", "s": "Disematkan untuk Jumat" },
+            { "t": "Kata sandi Wi-Fi", "s": "Dibagikan ke keluarga" },
+            { "t": "Nenek datang Sabtu", "s": "Siapa yang jemput?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Putri genap 12 tahun", "s": "3 hari lagi" },
+            { "t": "Kado untuk Putri", "s": "Tugas · Andi" },
+            { "t": "Bayu genap 8 tahun", "s": "11 hari lagi" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Bubur", "s": "Sarapan · Senin" },
+            { "t": "Salad ayam", "s": "Makan siang · Senin" },
+            { "t": "Kari sayur", "s": "Makan malam hari ini" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Bekal Jumat, beres.", "t": "Uang jajan hari Jumat", "s": "Disematkan · Keluarga" },
         { "cap": "Ke pasar tiap Sabtu", "t": "Bunga untuk Oma", "s": "Belanja · 5 dari 7" },
         { "cap": "Hari ke-12. Minzi bangga.", "t": "Baca 20 menit", "s": "12 hari berturut-turut" },
-        { "cap": "Hari ini dia 12 tahun!", "t": "Emma genap 12 tahun", "s": "Hari ini · 3 keinginan" },
+        { "cap": "Hari ini dia 12 tahun!", "t": "Emma genap 12 tahun", "s": "Hari ini · pesta pukul 15.00" },
         { "cap": "Nggak pernah bolos latihan", "t": "Latihan sepak bola", "s": "17.00 · Noah · tiap Selasa" },
         { "cap": "Belanja bawa bala bantuan", "t": "Blueberry", "s": "Ditambah Lena · baru saja" },
         { "cap": "PR dulu, baru main", "t": "Cek PR", "s": "Mia · hari ini" },
@@ -111,6 +173,14 @@
         { "h3": "Kalender", "p": "Sepekan semua orang dalam sekali lihat. Sekolah, renang, dan dokter gigi, masing-masing dengan warnanya sendiri.", "t": "Les renang", "s": "Sel · 16.30 · Noah" },
         { "h3": "Daftar", "p": "Tambahkan susu di dapur, centang di toko. Semua langsung melihatnya.", "t": "Roti", "s": "Dicentang Marco · baru saja" },
         { "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi · 34 / 40", "s": "6 lagi, Minzi pergi jalan-jalan" }
+      ],
+      "cards6": [
+        { "h3": "Daftar", "p": "Tambahkan susu di dapur, centang di toko. Semua langsung melihatnya.", "t": "Roti", "s": "Dicentang Andi · baru saja" },
+        { "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi keluarga · 34 / 40", "s": "6 lagi dan Minzi pergi jalan-jalan" },
+        { "h3": "Catatan", "p": "Ide singkat, kata sandi Wi-Fi, siapa yang menjemput Nenek. Simpan catatan untuk diri sendiri atau bagikan ke keluarga.", "t": "Nenek datang Sabtu pukul 15.00", "s": "Dibagikan ke keluarga" },
+        { "h3": "Resep", "p": "Simpan resep favorit keluarga, atau impor dari video atau foto. Kirim bahannya ke daftar belanja dengan sekali ketuk.", "t": "Tahu asam manis lengket", "s": "13 bahan · Tambah ke Belanja" },
+        { "h3": "Rencana makan", "p": "Rencanakan sarapan, makan siang, dan makan malam untuk sepekan, jadi tak ada lagi yang bertanya jam enam sore mau makan apa.", "t": "Kari sayur", "s": "Makan malam · Senin" },
+        { "h3": "Ulang tahun", "p": "Hitung mundur untuk setiap ulang tahun di keluarga, plus pengingat agar kado siap tepat waktu.", "t": "Putri genap 12 tahun", "s": "3 hari 12 jam lagi" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Hubungkan kalendermu",
       "p": "Bawa kalender Google, Outlook, dan kalender ponselmu. Tambahkan hari libur nasional negaramu. Lihat semuanya di samping rencana keluarga.",
       "t": "Google Calendar",
-      "s": "Terhubung · 24 acara tersinkron"
+      "s": "Terhubung · 24 acara tersinkron",
+      "apple": {
+        "t": "Kalender Apple",
+        "s": "Terhubung lewat iPhone-mu"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Belanja",
         "items": ["Susu", "Telur", "Apel"]
       },
+      "widgets2": {
+        "h3": "Widget",
+        "p": "Acara berikutnya, belanja, kebiasaan, ulang tahun, dan tambah cepat, langsung di layar utamamu.",
+        "upcoming": "Akan datang",
+        "toBuy": "{count} untuk dibeli",
+        "energy": "Energi {n}/{max}",
+        "habits": "Kebiasaan",
+        "startsIn": "mulai dalam",
+        "days": "hari",
+        "birthday": "Ulang tahun",
+        "event": "Acara",
+        "task": "Tugas",
+        "item": "Barang",
+        "meal": "Menu"
+      },
       "trmnl": {
         "h3": "Di dinding dengan TRMNL",
         "p": "Tampilkan sepekan keluarga di layar e-paper TRMNL di lorong. Tanpa silau, tanpa bising.",
@@ -205,6 +294,11 @@
           { "d": "Rab", "ev": ["Bola 17.00"] },
           { "d": "Kam", "ev": ["Nonton film"] }
         ]
+      },
+      "tablet": {
+        "h3": "Di dinding, dengan tablet apa pun",
+        "p": "Ubah tablet lama jadi papan keluarga di dapur atau lorong. Menampilkan agenda sepekan dan diperbarui sendiri.",
+        "alt": "Papan keluarga Daili di tablet"
       },
       "web": {
         "h3": "Di browsermu",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Siap kapan pun kamu siap",
-      "sub": "Mulai dengan satu daftar. Tambahkan kalender saat kamu siap. Daili tumbuh bersama keluargamu."
+      "sub": "Mulai dengan satu daftar. Tambahkan kalender saat kamu siap. Daili tumbuh bersama keluargamu.",
+      "web": "Buka di browser"
     }
   },
 

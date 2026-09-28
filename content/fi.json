@@ -51,7 +51,9 @@
       "screens": "Kello ja widgetit",
       "privacy": "Yksityisyys",
       "login": "Kirjaudu",
-      "cta": "Hanki sovellus"
+      "cta": "Hanki sovellus",
+      "downloadApp": "Lataa sovellus",
+      "openWebApp": "Avaa verkkosovellus"
     },
     "qr": {
       "t": "Lataa daili maksutta",
@@ -70,6 +72,66 @@
         { "t": "Roskat ulos", "s": "Noah · tänä iltana" },
         { "t": "Kasviscurry", "s": "Tänään päivälliseksi" },
         { "t": "Lahja Emmalle", "s": "Synttärit 2 päivän päästä" }
+      ],
+      "rating": "{rating} Google Playssa",
+      "ratingAlt": "Arvio {rating}/5 Google Playssa",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Uimakoulu", "s": "Tänään · 16.30 · Noah" },
+            { "t": "Hammaslääkäri", "s": "ti · 8.15 · Mia" },
+            { "t": "Vanhempainilta", "s": "to · 18.30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Vie roskat", "s": "Noah · tänä iltana" },
+            { "t": "Pese pyykit", "s": "Lena · tänään" },
+            { "t": "Tarkista läksyt", "s": "Mia · 17.00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Maito · 2 l", "s": "Marco on kaupassa" },
+            { "t": "Leipä", "s": "Lena lisäsi" },
+            { "t": "Omenat · 1 kg", "s": "Ruokaostokset · 3/7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Venyttely · 5 min", "s": "4 päivää putkeen" },
+            { "t": "Lue 20 minuuttia", "s": "Mia · joka päivä" },
+            { "t": "Kastele kukat", "s": "Perheen energia +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Retkirahat", "s": "Kiinnitetty perjantaille" },
+            { "t": "Wi-Fi-salasana", "s": "Jaettu perheen kanssa" },
+            { "t": "Mummo tulee la", "s": "Kuka hakee hänet?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma täyttää 12", "s": "3 päivän päästä" },
+            { "t": "Lahja Emmalle", "s": "Tehtävä · Marco" },
+            { "t": "Noah täyttää 8", "s": "11 päivän päästä" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Kaurapuuro", "s": "Aamiainen · maanantai" },
+            { "t": "Kanasalaatti", "s": "Lounas · maanantai" },
+            { "t": "Kasviscurry", "s": "Tänään päivälliseksi" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Perjantai hoidossa.", "t": "Retkirahat perjantaiksi", "s": "Kiinnitetty · Perhe" },
         { "cap": "Lauantaina torilla", "t": "Kukat mummille", "s": "Ostokset · 5/7" },
         { "cap": "Päivä 12. Minzi on ylpeä.", "t": "Lue 20 minuuttia", "s": "12 päivää putkeen" },
-        { "cap": "Tänään 12 vuotta!", "t": "Emma täyttää 12", "s": "Tänään · 3 toivetta listalla" },
+        { "cap": "Tänään 12 vuotta!", "t": "Emma täyttää 12", "s": "Tänään · juhlat klo 15" },
         { "cap": "Treenit ei unohdu", "t": "Jalkapallotreenit", "s": "17.00 · Noah · joka ti" },
         { "cap": "Kauppareissu apujoukoin", "t": "Mustikat", "s": "Lena lisäsi · juuri nyt" },
         { "cap": "Läksyt ensin", "t": "Tarkista läksyt", "s": "Mia · tänään" },
@@ -111,6 +173,14 @@
         { "h3": "Kalenteri", "p": "Koko perheen viikko yhdellä silmäyksellä. Koulu, uinti ja hammaslääkäri, jokainen omalla värillään.", "t": "Uimakoulu", "s": "ti · 16.30 · Noah" },
         { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
         { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee reissuun" }
+      ],
+      "cards6": [
+        { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
+        { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee matkalle" },
+        { "h3": "Muistiinpanot", "p": "Nopeat ajatukset, Wi-Fi-salasana, kuka hakee mummon. Pidä muistiinpano omana tai jaa se perheen kanssa.", "t": "Mummo tulee lauantaina klo 15", "s": "Jaettu perheen kanssa" },
+        { "h3": "Reseptit", "p": "Tallenna perheen suosikit tai tuo resepti videosta tai kuvasta. Lähetä ainekset listalle yhdellä napautuksella.", "t": "Hapanimelä tahmea tofu", "s": "13 ainesosaa · Lisää Ostoksiin" },
+        { "h3": "Ruokalista", "p": "Suunnittele viikon aamiaiset, lounaat ja päivälliset, niin kukaan ei kysy kuudelta, mitä on ruoaksi.", "t": "Kasviscurry", "s": "Päivällinen · maanantai" },
+        { "h3": "Syntymäpäivät", "p": "Laskuri perheen jokaiseen syntymäpäivään ja muistutus ajoissa, jotta lahja ehditään hankkia.", "t": "Emma täyttää 12", "s": "3 päivän ja 12 tunnin päästä" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Yhdistä kalenterisi",
       "p": "Tuo mukaan Google, Outlook ja puhelimen kalenteri. Lisää oman maasi pyhäpäivät. Näe kaikki perheen suunnitelman vieressä.",
       "t": "Google Calendar",
-      "s": "Yhdistetty · 24 tapahtumaa synkattu"
+      "s": "Yhdistetty · 24 tapahtumaa synkattu",
+      "apple": {
+        "t": "Apple Kalenteri",
+        "s": "Yhdistetty iPhonesi kautta"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Ostokset",
         "items": ["Maito", "Munat", "Omenat"]
       },
+      "widgets2": {
+        "h3": "Widgetit",
+        "p": "Seuraava tapahtuma, ostokset, tavat, syntymäpäivät ja pikalisäys suoraan aloitusnäytöllä.",
+        "upcoming": "Tulossa",
+        "toBuy": "{count} ostettavaa",
+        "energy": "Energia {n}/{max}",
+        "habits": "Tavat",
+        "startsIn": "alkaa",
+        "days": "päivää",
+        "birthday": "Syntymäpäivä",
+        "event": "Tapahtuma",
+        "task": "Tehtävä",
+        "item": "Kohde",
+        "meal": "Ateria"
+      },
       "trmnl": {
         "h3": "Seinällä TRMNL:n avulla",
         "p": "Näytä perheen viikko eteisessä TRMNL-e-paperinäytöllä. Ei hehkua, ei hälyä.",
@@ -205,6 +294,11 @@
           { "d": "ke", "ev": ["Jalkapallo 17.00"] },
           { "d": "to", "ev": ["Leffailta"] }
         ]
+      },
+      "tablet": {
+        "h3": "Seinälle millä tahansa tabletilla",
+        "p": "Tee vanhasta tabletista perheen ilmoitustaulu keittiöön tai eteiseen. Se näyttää viikon ja päivittyy itsestään.",
+        "alt": "Dailin perhetaulu tabletilla"
       },
       "web": {
         "h3": "Selaimessa",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Valmiina, kun te olette",
-      "sub": "Aloita yhdellä listalla. Ota kalenteri mukaan, kun olet valmis. Daili kasvaa perheesi mukana."
+      "sub": "Aloita yhdellä listalla. Ota kalenteri mukaan, kun olet valmis. Daili kasvaa perheesi mukana.",
+      "web": "Avaa selaimessa"
     }
   },
 

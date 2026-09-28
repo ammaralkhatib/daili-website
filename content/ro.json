@@ -51,7 +51,9 @@
       "screens": "Ceas și widgeturi",
       "privacy": "Confidențialitate",
       "login": "Conectare",
-      "cta": "Descarcă aplicația"
+      "cta": "Descarcă aplicația",
+      "downloadApp": "Descarcă aplicația",
+      "openWebApp": "Deschide aplicația web"
     },
     "qr": {
       "t": "Ia daili gratuit",
@@ -70,6 +72,66 @@
         { "t": "Scoate gunoiul", "s": "Noah · diseară" },
         { "t": "Curry de legume", "s": "Cina de diseară" },
         { "t": "Cadou pentru Emma", "s": "Aniversare peste 2 zile" }
+      ],
+      "rating": "{rating} pe Google Play",
+      "ratingAlt": "Evaluat cu {rating} din 5 pe Google Play",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Curs de înot", "s": "Azi · 16:30 · Noah" },
+            { "t": "Dentist", "s": "mar. · 08:15 · Mia" },
+            { "t": "Ședință cu părinții", "s": "joi · 18:30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Scos gunoiul", "s": "Noah · diseară" },
+            { "t": "Spălat rufele", "s": "Lena · azi" },
+            { "t": "Verificat temele", "s": "Mia · 17:00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Lapte · 2 l", "s": "Marco e în magazin" },
+            { "t": "Pâine", "s": "Adăugat de Lena" },
+            { "t": "Mere · 1 kg", "s": "Cumpărături · 3 din 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Stretching · 5 min", "s": "4 zile la rând" },
+            { "t": "Citit 20 de minute", "s": "Mia · în fiecare zi" },
+            { "t": "Udat plantele", "s": "Energia familiei +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Bani de prânz", "s": "Fixat pentru vineri" },
+            { "t": "Parola de Wi-Fi", "s": "Partajată cu familia" },
+            { "t": "Bunica vine sâmbătă", "s": "Cine merge după ea?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma împlinește 12", "s": "Peste 3 zile" },
+            { "t": "Cadou pentru Emma", "s": "Sarcină · Marco" },
+            { "t": "Noah împlinește 8", "s": "Peste 11 zile" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Terci de ovăz", "s": "Mic dejun · luni" },
+            { "t": "Salată de pui", "s": "Prânz · luni" },
+            { "t": "Curry de legume", "s": "Cina de diseară" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Vinerea, prânzul e rezolvat", "t": "Bani de prânz · vineri", "s": "Fixat · Familie" },
         { "cap": "Sâmbătă, la piață", "t": "Flori pentru bunica", "s": "Cumpărături · 5 din 7" },
         { "cap": "Ziua 12. Minzi e mândră.", "t": "Citit 20 de minute", "s": "12 zile la rând" },
-        { "cap": "Azi face 12 ani!", "t": "Emma face 12 ani", "s": "Azi · 3 dorințe pe listă" },
+        { "cap": "Azi face 12 ani!", "t": "Emma face 12 ani", "s": "Azi · petrecere la 15:00" },
         { "cap": "Niciun antrenament ratat", "t": "Antrenament de fotbal", "s": "17:00 · Noah · marțea" },
         { "cap": "Cumpărături cu întăriri", "t": "Afine", "s": "Adăugat de Lena · acum" },
         { "cap": "Întâi temele", "t": "Verifică temele", "s": "Mia · azi" },
@@ -111,6 +173,14 @@
         { "h3": "Calendar", "p": "Săptămâna tuturor dintr-o privire. Școală, înot și dentist, fiecare cu culoarea lui.", "t": "Curs de înot", "s": "mar. · 16:30 · Noah" },
         { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
         { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34/40", "s": "Încă 6 și Minzi pleacă la drum" }
+      ],
+      "cards6": [
+        { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
+        { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34 / 40", "s": "Încă 6 și Minzi pleacă în călătorie" },
+        { "h3": "Notițe", "p": "Gânduri rapide, parola de Wi-Fi, cine o ia pe bunica. Păstrează o notiță doar pentru tine sau partajeaz-o cu familia.", "t": "Bunica vine sâmbătă la 15:00", "s": "Partajată cu familia" },
+        { "h3": "Rețete", "p": "Păstrează rețetele preferate ale familiei sau importă una dintr-un video ori dintr-o poză. Trimite ingredientele pe listă dintr-o atingere.", "t": "Tofu glazurat dulce-acrișor", "s": "13 ingrediente · Adaugă la Cumpărături" },
+        { "h3": "Meniu", "p": "Planifică micul dejun, prânzul și cina pentru toată săptămâna, ca nimeni să nu mai întrebe la șase ce e de mâncare.", "t": "Curry de legume", "s": "Cină · luni" },
+        { "h3": "Zile de naștere", "p": "Numărătoare inversă pentru fiecare zi de naștere din familie și un memento la timp pentru cadou.", "t": "Emma împlinește 12 ani", "s": "Peste 3 zile și 12 ore" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Conectează-ți calendarele",
       "p": "Adu Google, Outlook și calendarul telefonului. Adaugă sărbătorile legale din țara ta. Vezi totul lângă planul familiei.",
       "t": "Google Calendar",
-      "s": "Conectat · 24 de evenimente"
+      "s": "Conectat · 24 de evenimente",
+      "apple": {
+        "t": "Calendar Apple",
+        "s": "Conectat prin iPhone-ul tău"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Cumpărături",
         "items": ["Lapte", "Ouă", "Mere"]
       },
+      "widgets2": {
+        "h3": "Widgeturi",
+        "p": "Ce urmează, cumpărături, obiceiuri, zile de naștere și adăugare rapidă, direct pe ecranul principal.",
+        "upcoming": "În curând",
+        "toBuy": "{count} de cumpărat",
+        "energy": "Energie {n}/{max}",
+        "habits": "Obiceiuri",
+        "startsIn": "începe în",
+        "days": "de zile",
+        "birthday": "Zi de naștere",
+        "event": "Eveniment",
+        "task": "Sarcină",
+        "item": "Articol",
+        "meal": "Masă"
+      },
       "trmnl": {
         "h3": "Pe perete cu TRMNL",
         "p": "Afișează săptămâna familiei pe un ecran e-paper TRMNL pe hol. Fără lumină, fără zgomot.",
@@ -205,6 +294,11 @@
           { "d": "Mie", "ev": ["Fotbal 17:00"] },
           { "d": "Joi", "ev": ["Seară de film"] }
         ]
+      },
+      "tablet": {
+        "h3": "Pe perete, cu orice tabletă",
+        "p": "Transformă o tabletă veche într-un panou al familiei pentru bucătărie sau hol. Arată săptămâna și se actualizează singur.",
+        "alt": "Panoul familiei Daili pe o tabletă"
       },
       "web": {
         "h3": "În browser",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Gata când ești și tu",
-      "sub": "Începe cu o listă. Adaugă calendarul când ești pregătit. Daili crește odată cu familia ta."
+      "sub": "Începe cu o listă. Adaugă calendarul când ești pregătit. Daili crește odată cu familia ta.",
+      "web": "Deschide în browser"
     }
   },
 

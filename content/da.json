@@ -51,7 +51,9 @@
       "screens": "Ur & widgets",
       "privacy": "Privatliv",
       "login": "Log ind",
-      "cta": "Hent appen"
+      "cta": "Hent appen",
+      "downloadApp": "Hent appen",
+      "openWebApp": "Åbn webappen"
     },
     "qr": {
       "t": "Hent daili gratis",
@@ -70,6 +72,66 @@
         { "t": "Tag skraldet ud", "s": "Noah · i aften" },
         { "t": "Grøntsagskarry", "s": "Aftensmad i dag" },
         { "t": "Gave til Emma", "s": "Fødselsdag om 2 dage" }
+      ],
+      "rating": "{rating} på Google Play",
+      "ratingAlt": "Bedømt {rating} ud af 5 på Google Play",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Svømmehold", "s": "I dag · 16.30 · Noah" },
+            { "t": "Tandlæge", "s": "Tirs. · 08.15 · Mia" },
+            { "t": "Forældremøde", "s": "Tors. · 18.30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Tage skraldet ud", "s": "Noah · i aften" },
+            { "t": "Vaske tøj", "s": "Lena · i dag" },
+            { "t": "Tjekke lektier", "s": "Mia · 17.00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Mælk · 2 l", "s": "Marco er i butikken" },
+            { "t": "Brød", "s": "Tilføjet af Lena" },
+            { "t": "Æbler · 1 kg", "s": "Indkøb · 3 af 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Stræk ud · 5 min", "s": "4 dage i træk" },
+            { "t": "Læs 20 minutter", "s": "Mia · hver dag" },
+            { "t": "Vande blomsterne", "s": "Familiens energi +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Madpenge", "s": "Fastgjort til fredag" },
+            { "t": "Wi-Fi-kode", "s": "Delt med familien" },
+            { "t": "Mormor kommer lør.", "s": "Hvem henter hende?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma fylder 12", "s": "Om 3 dage" },
+            { "t": "Gave til Emma", "s": "Opgave · Marco" },
+            { "t": "Noah fylder 8", "s": "Om 11 dage" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Havregrød", "s": "Morgenmad · mandag" },
+            { "t": "Kyllingesalat", "s": "Frokost · mandag" },
+            { "t": "Grøntsagscurry", "s": "Aftensmad i dag" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Fredagsfrokost: klaret.", "t": "Madpenge til fredag", "s": "Fastgjort · Familie" },
         { "cap": "Lørdagstur på torvet", "t": "Blomster til mormor", "s": "Indkøb · 5 af 7" },
         { "cap": "Dag 12. Minzi er stolt.", "t": "Læs i 20 minutter", "s": "12 dage i træk" },
-        { "cap": "Hun fylder 12 i dag!", "t": "Emma fylder 12", "s": "I dag · 3 ønsker på listen" },
+        { "cap": "Hun fylder 12 i dag!", "t": "Emma fylder 12", "s": "I dag · fest kl. 15" },
         { "cap": "Aldrig mere glemt træning", "t": "Fodboldtræning", "s": "17.00 · Noah · hver tirs." },
         { "cap": "Indkøb med forstærkning", "t": "Blåbær", "s": "Tilføjet af Lena · lige nu" },
         { "cap": "Lektier først", "t": "Tjek lektier", "s": "Mia · i dag" },
@@ -111,6 +173,14 @@
         { "h3": "Kalender", "p": "Alles uge på ét blik. Skole, svømning og tandlæge, hver person i sin egen farve.", "t": "Svømning", "s": "Tirs. · 16.30 · Noah" },
         { "h3": "Lister", "p": "Skriv mælk på i køkkenet, sæt flueben i butikken. Alle ser det med det samme.", "t": "Brød", "s": "Afkrydset af Marco · lige nu" },
         { "h3": "Vaner", "p": "Små rutiner, klaret sammen. Hvert flueben giver Minzi, jeres familiekat, mere energi.", "t": "Familieenergi · 34/40", "s": "6 mere, så tager Minzi på tur" }
+      ],
+      "cards6": [
+        { "h3": "Lister", "p": "Skriv mælk på i køkkenet, sæt flueben i butikken. Alle ser det med det samme.", "t": "Brød", "s": "Afkrydset af Marco · lige nu" },
+        { "h3": "Vaner", "p": "Små rutiner, klaret sammen. Hvert flueben giver Minzi, jeres familiekat, mere energi.", "t": "Familiens energi · 34 / 40", "s": "6 mere, så tager Minzi på rejse" },
+        { "h3": "Noter", "p": "Hurtige tanker, Wi-Fi-koden, hvem der henter mormor. Hold en note privat, eller del den med familien.", "t": "Mormor kommer lørdag kl. 15", "s": "Delt med familien" },
+        { "h3": "Opskrifter", "p": "Gem familiens favoritter, eller importér en fra en video eller et billede. Send ingredienserne til listen med ét tryk.", "t": "Sursød klistret tofu", "s": "13 ingredienser · Føj til Indkøb" },
+        { "h3": "Madplan", "p": "Planlæg ugens morgenmad, frokost og aftensmad, så ingen spørger, hvad der er til aftensmad klokken seks.", "t": "Grøntsagscurry", "s": "Aftensmad · mandag" },
+        { "h3": "Fødselsdage", "p": "Nedtælling til hver fødselsdag i familien, og en påmindelse i god tid til at nå gaven.", "t": "Emma fylder 12", "s": "Om 3 dage og 12 timer" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Forbind jeres kalendere",
       "p": "Hent Google, Outlook og telefonens kalender ind. Tilføj helligdagene i dit land. Se det hele ved siden af familiens plan.",
       "t": "Google Calendar",
-      "s": "Forbundet · 24 aftaler synket"
+      "s": "Forbundet · 24 aftaler synket",
+      "apple": {
+        "t": "Apple Kalender",
+        "s": "Forbundet via din iPhone"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Indkøb",
         "items": ["Mælk", "Æg", "Æbler"]
       },
+      "widgets2": {
+        "h3": "Widgets",
+        "p": "Det næste, indkøb, vaner, fødselsdage og hurtig tilføjelse, lige på din hjemmeskærm.",
+        "upcoming": "Kommende",
+        "toBuy": "{count} at købe",
+        "energy": "Energi {n}/{max}",
+        "habits": "Vaner",
+        "startsIn": "starter om",
+        "days": "dage",
+        "birthday": "Fødselsdag",
+        "event": "Begivenhed",
+        "task": "Opgave",
+        "item": "Punkt",
+        "meal": "Måltid"
+      },
       "trmnl": {
         "h3": "På væggen med TRMNL",
         "p": "Vis familiens uge på en TRMNL-skærm med e-papir i entréen. Intet skær, ingen støj.",
@@ -205,6 +294,11 @@
           { "d": "ons", "ev": ["Fodbold 17.00"] },
           { "d": "tor", "ev": ["Filmaften"] }
         ]
+      },
+      "tablet": {
+        "h3": "På væggen med en hvilken som helst tablet",
+        "p": "Gør en gammel tablet til en familietavle i køkkenet eller entréen. Den viser ugen og opdaterer sig selv.",
+        "alt": "Dailis familietavle på en tablet"
       },
       "web": {
         "h3": "I din browser",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Klar, når du er",
-      "sub": "Start med én liste. Tilføj kalenderen, når du er klar. Daili vokser med din familie."
+      "sub": "Start med én liste. Tilføj kalenderen, når du er klar. Daili vokser med din familie.",
+      "web": "Åbn i browseren"
     }
   },
 

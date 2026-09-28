@@ -51,7 +51,9 @@
       "screens": "Horloge & widgets",
       "privacy": "Privacy",
       "login": "Inloggen",
-      "cta": "Download de app"
+      "cta": "Download de app",
+      "downloadApp": "App downloaden",
+      "openWebApp": "Webapp openen"
     },
     "qr": {
       "t": "daili gratis halen",
@@ -70,6 +72,66 @@
         { "t": "Vuilnis buitenzetten", "s": "Noah · vanavond" },
         { "t": "Groentecurry", "s": "Vanavond op tafel" },
         { "t": "Cadeau voor Emma", "s": "Over 2 dagen jarig" }
+      ],
+      "rating": "{rating} op Google Play",
+      "ratingAlt": "Beoordeeld met {rating} van 5 op Google Play",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Zwemles", "s": "Vandaag · 16:30 · Noah" },
+            { "t": "Tandarts", "s": "Di · 08:15 · Mia" },
+            { "t": "Ouderavond", "s": "Do · 18:30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Vuilnis buitenzetten", "s": "Noah · vanavond" },
+            { "t": "Was doen", "s": "Lena · vandaag" },
+            { "t": "Huiswerk nakijken", "s": "Mia · 17:00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Melk · 2 l", "s": "Marco is in de winkel" },
+            { "t": "Brood", "s": "Toegevoegd door Lena" },
+            { "t": "Appels · 1 kg", "s": "Boodschappen · 3 van 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Rekken · 5 min", "s": "4 dagen op rij" },
+            { "t": "20 minuten lezen", "s": "Mia · elke dag" },
+            { "t": "Planten water geven", "s": "Gezinsenergie +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Overblijfgeld", "s": "Vastgepind voor vrijdag" },
+            { "t": "Wifi-wachtwoord", "s": "Gedeeld met het gezin" },
+            { "t": "Oma komt zaterdag", "s": "Wie haalt haar op?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma wordt 12", "s": "Over 3 dagen" },
+            { "t": "Cadeau voor Emma", "s": "Taak · Marco" },
+            { "t": "Noah wordt 8", "s": "Over 11 dagen" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Havermout", "s": "Ontbijt · maandag" },
+            { "t": "Kipsalade", "s": "Lunch · maandag" },
+            { "t": "Groentecurry", "s": "Vanavond op tafel" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Vrijdaglunch: geregeld.", "t": "Overblijfgeld vrijdag", "s": "Vastgepind · Gezin" },
         { "cap": "Zaterdag naar de markt", "t": "Bloemen voor oma", "s": "Boodschappen · 5 van 7" },
         { "cap": "Dag 12. Minzi is trots.", "t": "20 minuten lezen", "s": "12 dagen op rij" },
-        { "cap": "Vandaag wordt ze 12!", "t": "Emma wordt 12", "s": "Vandaag · 3 wensen genoteerd" },
+        { "cap": "Vandaag wordt ze 12!", "t": "Emma wordt 12", "s": "Vandaag · feestje om 15:00" },
         { "cap": "Nooit meer training missen", "t": "Voetbaltraining", "s": "17:00 · Noah · elke di" },
         { "cap": "Boodschappen met hulptroepen", "t": "Blauwe bessen", "s": "Door Lena · zojuist" },
         { "cap": "Eerst huiswerk", "t": "Huiswerk nakijken", "s": "Mia · vandaag" },
@@ -111,6 +173,14 @@
         { "h3": "Agenda", "p": "Ieders week in één oogopslag. School, zwemmen en de tandarts, iedereen in een eigen kleur.", "t": "Zwemles", "s": "Di · 16:30 · Noah" },
         { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
         { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34/40", "s": "Nog 6 en Minzi gaat op reis" }
+      ],
+      "cards6": [
+        { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
+        { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34 / 40", "s": "Nog 6 en Minzi gaat op reis" },
+        { "h3": "Notities", "p": "Snelle ideeën, het wifi-wachtwoord, wie oma ophaalt. Houd een notitie voor jezelf of deel hem met het gezin.", "t": "Oma komt zaterdag om 15:00", "s": "Gedeeld met het gezin" },
+        { "h3": "Recepten", "p": "Bewaar de favoriete gezinsrecepten, of importeer er een uit een video of foto. Zet de ingrediënten met één tik op je lijst.", "t": "Zoetzure kleverige tofu", "s": "13 ingrediënten · Naar Boodschappen" },
+        { "h3": "Menuplanner", "p": "Plan ontbijt, lunch en avondeten voor de hele week, zodat niemand om zes uur vraagt wat we eten.", "t": "Groentecurry", "s": "Avondeten · maandag" },
+        { "h3": "Verjaardagen", "p": "Aftellen naar elke verjaardag in het gezin, en op tijd een herinnering om het cadeau te halen.", "t": "Emma wordt 12", "s": "Over 3 dagen en 12 uur" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Koppel je agenda's",
       "p": "Haal Google, Outlook en de agenda van je telefoon erbij. Voeg de feestdagen van je land toe. En zie alles naast de gezinsplanning.",
       "t": "Google Calendar",
-      "s": "Gekoppeld · 24 afspraken gesynct"
+      "s": "Gekoppeld · 24 afspraken gesynct",
+      "apple": {
+        "t": "Apple Agenda",
+        "s": "Verbonden via je iPhone"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Boodschappen",
         "items": ["Melk", "Eieren", "Appels"]
       },
+      "widgets2": {
+        "h3": "Widgets",
+        "p": "Eerstvolgende afspraak, boodschappen, gewoontes, verjaardagen en snel toevoegen, gewoon op je beginscherm.",
+        "upcoming": "Binnenkort",
+        "toBuy": "{count} te kopen",
+        "energy": "Energie {n}/{max}",
+        "habits": "Gewoontes",
+        "startsIn": "begint over",
+        "days": "dagen",
+        "birthday": "Verjaardag",
+        "event": "Afspraak",
+        "task": "Taak",
+        "item": "Item",
+        "meal": "Maaltijd"
+      },
       "trmnl": {
         "h3": "Aan de muur met TRMNL",
         "p": "Toon de gezinsweek op een TRMNL-scherm van e-paper in de gang. Geen licht, geen herrie.",
@@ -205,6 +294,11 @@
           { "d": "wo", "ev": ["Voetbal 17:00"] },
           { "d": "do", "ev": ["Filmavond"] }
         ]
+      },
+      "tablet": {
+        "h3": "Aan de muur met elke tablet",
+        "p": "Maak van een oude tablet een gezinsbord voor de keuken of de gang. Het toont de week en werkt zichzelf bij.",
+        "alt": "Het Daili-gezinsbord op een tablet"
       },
       "web": {
         "h3": "In je browser",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Klaar als jij het bent",
-      "sub": "Begin met één lijst. Neem de agenda erbij als je zover bent. Daili groeit mee met je gezin."
+      "sub": "Begin met één lijst. Neem de agenda erbij als je zover bent. Daili groeit mee met je gezin.",
+      "web": "Openen in je browser"
     }
   },
 

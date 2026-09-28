@@ -51,7 +51,9 @@
       "screens": "Orologio e widget",
       "privacy": "Privacy",
       "login": "Accedi",
-      "cta": "Scarica l'app"
+      "cta": "Scarica l'app",
+      "downloadApp": "Scarica l'app",
+      "openWebApp": "Apri l'app web"
     },
     "qr": {
       "t": "Scarica daili gratis",
@@ -70,6 +72,66 @@
         { "t": "Buttare l'immondizia", "s": "Noah · stasera" },
         { "t": "Curry di verdure", "s": "Cena di stasera" },
         { "t": "Regalo per Emma", "s": "Compleanno tra 2 giorni" }
+      ],
+      "rating": "{rating} su Google Play",
+      "ratingAlt": "Valutata {rating} su 5 su Google Play",
+      "scenes": [
+        {
+          "id": "calendar",
+          "cards": [
+            { "t": "Corso di nuoto", "s": "Oggi · 16:30 · Noah" },
+            { "t": "Dentista", "s": "mar · 08:15 · Mia" },
+            { "t": "Riunione genitori", "s": "gio · 18:30" }
+          ]
+        },
+        {
+          "id": "todos",
+          "cards": [
+            { "t": "Portare fuori i rifiuti", "s": "Noah · stasera" },
+            { "t": "Fare il bucato", "s": "Lena · oggi" },
+            { "t": "Controllare i compiti", "s": "Mia · 17:00" }
+          ]
+        },
+        {
+          "id": "shopping",
+          "cards": [
+            { "t": "Latte · 2 l", "s": "Marco è al supermercato" },
+            { "t": "Pane", "s": "Aggiunto da Lena" },
+            { "t": "Mele · 1 kg", "s": "Spesa · 3 di 7" }
+          ]
+        },
+        {
+          "id": "habits",
+          "cards": [
+            { "t": "Stretching · 5 min", "s": "4 giorni di fila" },
+            { "t": "Leggere 20 minuti", "s": "Mia · ogni giorno" },
+            { "t": "Innaffiare le piante", "s": "Energia della famiglia +1" }
+          ]
+        },
+        {
+          "id": "notes",
+          "cards": [
+            { "t": "Soldi per la mensa", "s": "Fissato per venerdì" },
+            { "t": "Password del Wi-Fi", "s": "Condivisa con la famiglia" },
+            { "t": "Nonna arriva sabato", "s": "Chi va a prenderla?" }
+          ]
+        },
+        {
+          "id": "birthdays",
+          "cards": [
+            { "t": "Emma compie 12 anni", "s": "Tra 3 giorni" },
+            { "t": "Regalo per Emma", "s": "Attività · Marco" },
+            { "t": "Noah compie 8 anni", "s": "Tra 11 giorni" }
+          ]
+        },
+        {
+          "id": "meals",
+          "cards": [
+            { "t": "Porridge", "s": "Colazione · lunedì" },
+            { "t": "Insalata di pollo", "s": "Pranzo · lunedì" },
+            { "t": "Curry di verdure", "s": "Cena di stasera" }
+          ]
+        }
       ]
     },
     "watch": {
@@ -93,7 +155,7 @@
         { "cap": "Venerdì, mensa sistemata.", "t": "Mensa di venerdì", "s": "Fissato · Famiglia" },
         { "cap": "Sabato al mercato", "t": "Fiori per la nonna", "s": "Spesa · 5 di 7" },
         { "cap": "Giorno 12. Minzi è fiera.", "t": "Leggere 20 minuti", "s": "12 giorni di fila" },
-        { "cap": "Oggi compie 12 anni!", "t": "Emma compie 12 anni", "s": "Oggi · 3 desideri in lista" },
+        { "cap": "Oggi compie 12 anni!", "t": "Emma compie 12 anni", "s": "Oggi · festa alle 15" },
         { "cap": "Mai saltare l'allenamento", "t": "Allenamento di calcio", "s": "17:00 · Noah · ogni martedì" },
         { "cap": "Spesa con i rinforzi", "t": "Mirtilli", "s": "Aggiunti da Lena · ora" },
         { "cap": "Prima i compiti", "t": "Controllare i compiti", "s": "Mia · oggi" },
@@ -111,6 +173,14 @@
         { "h3": "Calendario", "p": "La settimana di tutti a colpo d'occhio. Scuola, nuoto e dentista, ognuno con il suo colore.", "t": "Corso di nuoto", "s": "mar · 16:30 · Noah" },
         { "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
         { "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia famiglia · 34/40", "s": "Ancora 6 e Minzi va in viaggio" }
+      ],
+      "cards6": [
+        { "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
+        { "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia della famiglia · 34 / 40", "s": "Ancora 6 e Minzi parte per un viaggio" },
+        { "h3": "Note", "p": "Pensieri veloci, la password del Wi-Fi, chi va a prendere la nonna. Tieni una nota per te o condividila con la famiglia.", "t": "La nonna arriva sabato alle 15", "s": "Condivisa con la famiglia" },
+        { "h3": "Ricette", "p": "Conserva le ricette preferite di famiglia o importane una da un video o da una foto. Manda gli ingredienti alla lista con un tocco.", "t": "Tofu glassato agrodolce", "s": "13 ingredienti · Aggiungi alla Spesa" },
+        { "h3": "Menu", "p": "Pianifica colazione, pranzo e cena per tutta la settimana, così alle sei nessuno chiede cosa c'è per cena.", "t": "Curry di verdure", "s": "Cena · lunedì" },
+        { "h3": "Compleanni", "p": "Un conto alla rovescia per ogni compleanno in famiglia e un promemoria in tempo per il regalo.", "t": "Emma compie 12 anni", "s": "Tra 3 giorni e 12 ore" }
       ]
     },
     "dinner": {
@@ -125,7 +195,11 @@
       "h3": "Collega i tuoi calendari",
       "p": "Porta dentro Google, Outlook e il calendario del telefono. Aggiungi le festività del tuo Paese. Vedi tutto accanto al piano di famiglia.",
       "t": "Google Calendar",
-      "s": "Collegato · 24 eventi"
+      "s": "Collegato · 24 eventi",
+      "apple": {
+        "t": "Calendario Apple",
+        "s": "Collegato tramite il tuo iPhone"
+      }
     },
     "plus": {
       "eyebrow": "Daili Plus",
@@ -196,6 +270,21 @@
         "groceries": "Spesa",
         "items": ["Latte", "Uova", "Mele"]
       },
+      "widgets2": {
+        "h3": "Widget",
+        "p": "Prossimi impegni, spesa, abitudini, compleanni e aggiunta rapida, direttamente nella schermata Home.",
+        "upcoming": "In arrivo",
+        "toBuy": "{count} da comprare",
+        "energy": "Energia {n}/{max}",
+        "habits": "Abitudini",
+        "startsIn": "inizia tra",
+        "days": "giorni",
+        "birthday": "Compleanno",
+        "event": "Evento",
+        "task": "Attività",
+        "item": "Elemento",
+        "meal": "Pasto"
+      },
       "trmnl": {
         "h3": "Alla parete con TRMNL",
         "p": "Mostra la settimana di famiglia su uno schermo e-paper TRMNL nell'ingresso. Niente luce, niente rumore.",
@@ -205,6 +294,11 @@
           { "d": "Mer", "ev": ["Calcio 17:00"] },
           { "d": "Gio", "ev": ["Serata film"] }
         ]
+      },
+      "tablet": {
+        "h3": "Alla parete, con qualsiasi tablet",
+        "p": "Trasforma un vecchio tablet in una bacheca di famiglia per la cucina o l'ingresso. Mostra la settimana e si aggiorna da solo.",
+        "alt": "La bacheca di famiglia Daili su un tablet"
       },
       "web": {
         "h3": "Nel tuo browser",
@@ -228,7 +322,8 @@
     },
     "final": {
       "h2": "Pronti quando lo sei tu",
-      "sub": "Inizia con una lista. Aggiungi il calendario quando vuoi. Daili cresce con la tua famiglia."
+      "sub": "Inizia con una lista. Aggiungi il calendario quando vuoi. Daili cresce con la tua famiglia.",
+      "web": "Apri nel browser"
     }
   },
 
