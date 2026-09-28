@@ -7,13 +7,15 @@
  *   - the window scrolls (the mock scrolled its own box), so ScrollTrigger has
  *     no scroller default and Lenis runs on the window, anchors offset by the
  *     floating header;
- *   - the page is complete without this file: the hero cards are rendered
- *     ticked and step 1 of "See it in action" finished. This file unticks and
- *     hides things only once it is about to animate them;
- *   - /ar/ mirrors: the hero cards fly off the other way and the watch drifts
- *     the other way (the marquee's direction is CSS);
+ *   - the page is complete without this file: the hero shows its calendar
+ *     scene with three unticked cards and step 1 of "See it in action" is
+ *     finished. This file hides things only once it is about to animate them;
+ *   - the hero has no scroll effect (round 2): its phone plays the seven
+ *     scenes by itself, paused while the hero is off screen or the tab hidden;
+ *   - /ar/ mirrors: screenshots slide in from the other side and the cards
+ *     drift and fly the other way (the marquee's direction is CSS);
  *   - the member count counts up in the page's own number format.
- * Reduced motion: no Lenis, no reveals, the cards ticked, step 1 shown still.
+ * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still.
  */
 (function () {
   "use strict";
@@ -50,28 +52,8 @@
   g.from($$("[data-hi]"), { y: 26, opacity: 0, duration: 1, ease: "expo.out", stagger: 0.09, delay: 0.35 });
   g.from(".hphone", { y: 200, opacity: 0, duration: 1.5, ease: "expo.out", delay: 0.4 });
   g.from(".hwatch", { x: 140 * D, y: 140, rotation: 14 * D, opacity: 0, duration: 1.5, ease: "expo.out", delay: 0.6 });
-  var cards = $$(".hcard");
-  cards.forEach(function (c, i) {
-    c.classList.remove("done");
-    var inn = c.querySelector(".fc-in");
-    g.from(inn, { scale: 0.55, opacity: 0, duration: 0.9, ease: "back.out(1.7)", delay: 0.85 + i * 0.08 });
-    g.to(inn, { y: (i % 2 ? 10 : -10), rotation: (i % 2 ? 1.2 : -1.2), duration: 2.4 + (i % 3) * 0.6, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.8 + i * 0.1 });
-  });
+  heroScenes();
 
-  // ---------- hero scroll: phone rises, watch drifts, cards get ticked and fly off ----------
-  var order = cards.slice().sort(function (a, b) { return parseFloat(a.style.top) - parseFloat(b.style.top); });
-  var at = {};
-  order.forEach(function (c, k) { at[c.dataset.i] = 0.03 + k * 0.045; });
-  var htl = g.timeline({ scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 0.7,
-    onUpdate: function (s) { cards.forEach(function (c) { c.classList.toggle("done", s.progress > at[c.dataset.i]); }); } } });
-  htl.to({}, { duration: 1 }, 0);
-  htl.to(".hphone", { y: MOB ? -30 : -70, scale: 1.03, ease: "none", duration: 1 }, 0);
-  htl.to(".hwatch", { y: MOB ? -90 : -210, x: (MOB ? 10 : 50) * D, rotation: -8 * D, ease: "none", duration: 1 }, 0);
-  htl.to(".aurora", { yPercent: 18, ease: "none", duration: 1 }, 0);
-  cards.forEach(function (c) {
-    var d = +c.dataset.dir * D;
-    htl.to(c, { x: d * (MOB ? 90 : 200), y: MOB ? -90 : -170, rotation: d * 10, opacity: 0, ease: "power2.in", duration: 0.26 }, at[c.dataset.i] + 0.07);
-  });
   var qr = document.querySelector("[data-qr]");
   if (qr) g.to(qr, { autoAlpha: 0, y: 24, ease: "none", scrollTrigger: { trigger: ".members", start: "top 85%", end: "top 45%", scrub: true } });
 
@@ -90,22 +72,17 @@
   }
 
   // ---------- feature cards: phones and floating widgets at different speeds ----------
-  $$(".fcard, .wide").forEach(function (card) {
+  // (The calendars card has no scroll effect: its orbit turns by itself, CSS.)
+  $$(".fcard").forEach(function (card) {
+    // ±4 % around its place, so mid-screen the phone is 32 px under the text.
     var ph = card.querySelector(".par");
-    if (ph) g.fromTo(ph, { yPercent: 14 }, { yPercent: -6, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "bottom top", scrub: 0.8 } });
+    if (ph) g.fromTo(ph, { yPercent: 4 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "bottom top", scrub: 0.8 } });
     $$(".fly", card).forEach(function (f, i) {
       g.fromTo(f, { yPercent: 90, rotation: i % 2 ? 3 : -3 }, { yPercent: -90, rotation: i % 2 ? -2 : 2, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "bottom top", scrub: 0.8 } });
     });
   });
   var bar = $(".fcard .bar");
   if (bar) g.fromTo(bar, { width: "35%" }, { width: "85%", duration: 1.6, ease: "power3.out", scrollTrigger: { trigger: bar, start: "top 85%", once: true } });
-
-  // the calendar orbit turns as you scroll; its tiles stay upright
-  var orb = $("[data-orbit]");
-  if (orb) {
-    g.fromTo(orb, { rotation: -25 }, { rotation: 25, ease: "none", scrollTrigger: { trigger: "#calendars", start: "top bottom", end: "bottom top", scrub: 1 } });
-    g.fromTo($$(".tile", orb), { rotation: 25 }, { rotation: -25, ease: "none", scrollTrigger: { trigger: "#calendars", start: "top bottom", end: "bottom top", scrub: 1 } });
-  }
 
   // ---------- Daili Plus: the avatar strip with its spotlight ----------
   var avWrap = $("[data-avs]"), avTrack = avWrap && $(".avs-track", avWrap), avs = avTrack ? $$(".av", avTrack) : [];
@@ -129,23 +106,25 @@
       }
     });
   }
-  // the stacking cards
-  var ic = $$(".icard");
-  ic.forEach(function (c, i) {
-    $$(".fly", c).forEach(function (f) { g.fromTo(f, { yPercent: 40 }, { yPercent: -40, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: 0.8 } }); });
-    var p = c.querySelector(".phone");
-    if (p) g.fromTo(p, { yPercent: 10 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: 0.8 } });
-    if (!MOB && ic[i + 1]) g.to(c, { scale: 0.92, opacity: 0.45, ease: "none", scrollTrigger: { trigger: ic[i + 1], start: "top bottom", end: "top 140px", scrub: true } });
+  // The three cards scroll by normally (bevel.health). On a wide screen the
+  // phone in each is fixed mid-screen and clipped by its own card (home.css
+  // .fx), so it looks still while the cards pass; its floating card rises
+  // slowly as its card goes by. On a phone each card simply holds its phone.
+  var intel = $(".intel"), ic = $$(".icard");
+  if (!MOB && intel) {
+    intel.classList.add("fx");
+    ST.create({ trigger: ".stack", start: "top bottom", end: "bottom top", toggleClass: { targets: intel, className: "fx-on" } });
+  }
+  ic.forEach(function (c) {
+    var ai = c.querySelector(".ai-card");
+    if (ai) g.fromTo(ai, { yPercent: MOB ? 20 : 70 }, { yPercent: MOB ? -20 : -70, ease: "none", scrollTrigger: { trigger: c, start: "top bottom", end: "bottom top", scrub: 0.8 } });
   });
-
-  // ---------- the shutter back to light ----------
-  g.fromTo($$(".shut-rows i"), { scaleY: 1 }, { scaleY: 0, ease: "none", stagger: { each: 0.07, from: "end" }, scrollTrigger: { trigger: ".flow", start: "top 95%", end: "top 10%", scrub: true } });
 
   // ---------- privacy: the lock closes ----------
   var vault = $("[data-vault]");
   if (vault) {
     g.fromTo("[data-shackle]", { y: -80 }, { y: 0, ease: "power2.out", scrollTrigger: { trigger: vault, start: "top 85%", end: "top 25%", scrub: 0.8 } });
-    g.fromTo(".lock", { scale: 0.82, opacity: 0.4 }, { scale: 1, opacity: 0.9, ease: "none", scrollTrigger: { trigger: vault, start: "top 90%", end: "top 20%", scrub: 0.8 } });
+    g.fromTo(".lock", { scale: 0.82, opacity: 0.15 }, { scale: 1, opacity: 0.35, ease: "none", scrollTrigger: { trigger: vault, start: "top 90%", end: "top 20%", scrub: 0.8 } });
     g.from($$(".glass span"), { y: 30, opacity: 0, duration: 0.9, ease: "expo.out", stagger: 0.07, scrollTrigger: { trigger: ".glass", start: "top 90%", once: true } });
     g.from($$(".vault .h2, .vault .sub"), { y: 40, opacity: 0, duration: 1.1, ease: "expo.out", stagger: 0.1, scrollTrigger: { trigger: vault, start: "top 70%", once: true } });
   }
@@ -158,16 +137,58 @@
   });
 
   // ---------- the final flat-lay: objects slide onto the table ----------
+  // Each turns in from its tilt ± 10–14° (alternating) and settles on it.
   var flat = $(".flat");
   if (flat) {
-    $$("[data-obj]", flat).forEach(function (o) {
-      g.fromTo(o, { x: +o.dataset.fx * (MOB ? 0.5 : 1) * D, y: +o.dataset.fy, opacity: 0 }, { x: 0, y: 0, opacity: 1, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "top 30%", scrub: 1 } });
+    $$("[data-obj]", flat).forEach(function (o, i) {
+      var rot = +o.dataset.rot || 0, turn = (10 + (i % 3) * 2) * (i % 2 ? -1 : 1) * D;
+      g.fromTo(o, { x: +o.dataset.fx * (MOB ? 0.5 : 1) * D, y: +o.dataset.fy, rotation: rot + turn, opacity: 0 }, { x: 0, y: 0, rotation: rot, opacity: 1, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "top 30%", scrub: 1 } });
     });
     g.fromTo(".fphone", { y: 160 }, { y: 0, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "top 30%", scrub: 1 } });
   }
 
   flows(false);
   refresh();
+
+  // ---------- hero: the phone plays the app by itself ----------
+  // One scene, ~6.5 s, forever: the next screenshot slides in from the
+  // inline-end side over the last one; its three cards fade in touching the
+  // phone, drift slowly away, get ticked one after the other and fly off.
+  // Paused while the hero is off screen or the tab is hidden, resumed where it
+  // was. Scene 1 is already on screen (the no-JS state), so it skips the slide.
+  function heroScenes() {
+    var hero = $(".hero"), shots = $$(".hphone .hs"), cards = $$(".hcard");
+    if (!hero || !shots.length) return;
+    var n = shots.length, z = 1, cur = null, onScreen = true, shown = !document.hidden;
+    var drift = MOB ? 20 : 40;
+    // Card 2 sits on the inline-end side of the phone, cards 1 and 3 on the start side.
+    var out = function (i, c) { return (c.dataset.k === "1" ? 1 : -1) * D; };
+    // Load the later screenshots now (lazy would wait for a scroll that never
+    // comes) and park them off the screen's inline-end edge.
+    shots.forEach(function (s, i) { if (i) { s.loading = "eager"; g.set(s, { visibility: "visible", xPercent: 100 * D }); } });
+    g.set(cards, { visibility: "visible", autoAlpha: 0 });
+    var sync = function () { if (cur) cur.paused(!(onScreen && shown)); };
+    var scene = function (i, first) {
+      var cs = cards.filter(function (c) { return +c.dataset.scene === i; });
+      var t0 = first ? -0.7 : 0;
+      var tl = g.timeline({ onComplete: function () { scene((i + 1) % n, false); } });
+      if (!first) {
+        shots[i].style.zIndex = ++z;
+        tl.fromTo(shots[i], { xPercent: 100 * D }, { xPercent: 0, duration: 0.8, ease: "power3.inOut" }, 0);
+      }
+      cs.forEach(function (c) { c.classList.remove("done"); });
+      tl.fromTo(cs, { autoAlpha: 0, x: 0, scale: 0.92 }, { autoAlpha: 1, scale: 1, duration: 0.5, ease: "power2.out", stagger: 0.15 }, t0 + 0.7);
+      tl.to(cs, { x: function (k, c) { return out(k, c) * drift; }, duration: 2.2, ease: "sine.out" }, t0 + 1.2);
+      cs.forEach(function (c, k) { tl.call(function () { c.classList.add("done"); }, null, t0 + 3.5 + k * 0.35); });
+      tl.to(cs, { x: function (k, c) { return out(k, c) * (drift + 160); }, autoAlpha: 0, duration: 0.6, ease: "power2.in", stagger: 0.1 }, t0 + 5.3);
+      tl.to({}, { duration: 0.2 });
+      cur = tl;
+      sync();
+    };
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { onScreen = en[0].isIntersecting; sync(); }).observe(hero);
+    document.addEventListener("visibilitychange", function () { shown = !document.hidden; sync(); });
+    g.delayedCall(1.1, function () { scene(0, true); });
+  }
 
   // ---------- "See it in action": an auto-advancing list with a phone that plays each moment ----------
   function flows(still) {

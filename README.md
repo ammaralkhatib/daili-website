@@ -169,8 +169,10 @@ resolves each `shot-*` name per file: the reader's locale if that file exists,
 `shots/en/` if it does not, and an error if neither — which is what makes
 `SHOT_LOCALE` in `site.config.mjs` the only thing to edit when a language gains
 its own captures, and check-build section 14 the thing that notices when one
-silently loses them. `shot-recipes`, `shot-photos` and `shot-documents` have no
-demo-family capture yet and are English in every locale.
+silently loses them. `shot-photos` and `shot-documents` have no demo-family
+capture yet and are English in every locale. A new screen converts on its own
+with `python3 tools/make-site-shots.py --only shot-<name>`, leaving the
+committed ones untouched.
 
 ## Adding a language
 

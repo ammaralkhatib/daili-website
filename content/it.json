@@ -49,9 +49,7 @@
       "features": "Funzioni",
       "plus": "Daili Plus",
       "screens": "Orologio e widget",
-      "privacy": "Privacy",
       "login": "Accedi",
-      "cta": "Scarica l'app",
       "downloadApp": "Scarica l'app",
       "openWebApp": "Apri l'app web"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Un posto tranquillo per la settimana della tua famiglia: calendario, liste, attività, abitudini e note che vedono tutti. Su ogni telefono, al polso e nel browser.",
-      "cta": "Scarica gratis",
-      "alt": "La schermata Home di Daili su un telefono, con un Apple Watch che mostra il prossimo evento",
-      "cards": [
-        { "t": "Corso di nuoto", "s": "Oggi · 16:30 · Noah" },
-        { "t": "Latte · 2 l", "s": "Marco è al supermercato" },
-        { "t": "Soldi per la mensa", "s": "Fissato per venerdì" },
-        { "t": "Stretching · 5 min", "s": "4 giorni di fila" },
-        { "t": "Buttare l'immondizia", "s": "Noah · stasera" },
-        { "t": "Curry di verdure", "s": "Cena di stasera" },
-        { "t": "Regalo per Emma", "s": "Compleanno tra 2 giorni" }
-      ],
       "rating": "{rating} su Google Play",
       "ratingAlt": "Valutata {rating} su 5 su Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Inizia la giornata insieme",
       "sub": "Tutto quello che la tua famiglia deve sapere, dove guardi già.",
       "cards": [
-        { "h3": "Calendario", "p": "La settimana di tutti a colpo d'occhio. Scuola, nuoto e dentista, ognuno con il suo colore.", "t": "Corso di nuoto", "s": "mar · 16:30 · Noah" },
-        { "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
-        { "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia famiglia · 34/40", "s": "Ancora 6 e Minzi va in viaggio" }
-      ],
-      "cards6": [
         { "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
         { "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia della famiglia · 34 / 40", "s": "Ancora 6 e Minzi parte per un viaggio" },
         { "h3": "Note", "p": "Pensieri veloci, la password del Wi-Fi, chi va a prendere la nonna. Tieni una nota per te o condividila con la famiglia.", "t": "La nonna arriva sabato alle 15", "s": "Condivisa con la famiglia" },
@@ -182,14 +164,6 @@
         { "h3": "Menu", "p": "Pianifica colazione, pranzo e cena per tutta la settimana, così alle sei nessuno chiede cosa c'è per cena.", "t": "Curry di verdure", "s": "Cena · lunedì" },
         { "h3": "Compleanni", "p": "Un conto alla rovescia per ogni compleanno in famiglia e un promemoria in tempo per il regalo.", "t": "Emma compie 12 anni", "s": "Tra 3 giorni e 12 ore" }
       ]
-    },
-    "dinner": {
-      "h3": "La cena è decisa",
-      "p": "Pianifica i pasti della settimana, conserva le ricette di famiglia e manda gli ingredienti alla lista della spesa con un tocco.",
-      "chips": ["Menu settimanale", "Ricettario", "Alla lista della spesa"],
-      "t": "Tofu caramellato in agrodolce",
-      "s": "2 porzioni · 13 ingredienti",
-      "add": "Aggiungi alla Spesa"
     },
     "calendars": {
       "h3": "Collega i tuoi calendari",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widget",
-        "p": "Prossimi impegni, spesa, attività, abitudini, note e compleanni nella schermata Home.",
-        "next": "Prossimo",
-        "swim": "Nuoto",
-        "habits": "Abitudini",
-        "done": "fatte oggi",
-        "groceries": "Spesa",
-        "items": ["Latte", "Uova", "Mele"]
-      },
-      "widgets2": {
-        "h3": "Widget",
         "p": "Prossimi impegni, spesa, abitudini, compleanni e aggiunta rapida, direttamente nella schermata Home.",
-        "upcoming": "In arrivo",
         "toBuy": "{count} da comprare",
         "energy": "Energia {n}/{max}",
         "habits": "Abitudini",
-        "startsIn": "inizia tra",
-        "days": "giorni",
-        "birthday": "Compleanno",
-        "event": "Evento",
-        "task": "Attività",
-        "item": "Elemento",
-        "meal": "Pasto"
-      },
-      "trmnl": {
-        "h3": "Alla parete con TRMNL",
-        "p": "Mostra la settimana di famiglia su uno schermo e-paper TRMNL nell'ingresso. Niente luce, niente rumore.",
-        "days": [
-          { "d": "Lun", "ev": ["Piano 15:00", "Dentista"] },
-          { "d": "Mar", "ev": ["Nuoto 16:30", "Colloqui 18:30"] },
-          { "d": "Mer", "ev": ["Calcio 17:00"] },
-          { "d": "Gio", "ev": ["Serata film"] }
-        ]
+        "groceries": "Spesa",
+        "items": ["Latte", "Uova", "Mele"]
       },
       "tablet": {
         "h3": "Alla parete, con qualsiasi tablet",

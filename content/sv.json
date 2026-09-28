@@ -49,9 +49,7 @@
       "features": "Funktioner",
       "plus": "Daili Plus",
       "screens": "Klocka och widgets",
-      "privacy": "Integritet",
       "login": "Logga in",
-      "cta": "Hämta appen",
       "downloadApp": "Ladda ner appen",
       "openWebApp": "Öppna webbappen"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "En lugn plats för familjens vecka: kalender, listor, uppgifter, vanor och anteckningar som alla ser. I varje mobil, på handleden och i webbläsaren.",
-      "cta": "Ladda ner gratis",
-      "alt": "Dailis startskärm i en mobil, med en Apple Watch som visar nästa händelse",
-      "cards": [
-        { "t": "Simskola", "s": "I dag · 16.30 · Noah" },
-        { "t": "Mjölk · 2 l", "s": "Marco är i butiken" },
-        { "t": "Utflyktspengar", "s": "Fäst till fredag" },
-        { "t": "Stretch · 5 min", "s": "4 dagar i rad" },
-        { "t": "Slänga soporna", "s": "Noah · i kväll" },
-        { "t": "Grönsakscurry", "s": "Middag i kväll" },
-        { "t": "Present till Emma", "s": "Fyller år om 2 dagar" }
-      ],
       "rating": "{rating} på Google Play",
       "ratingAlt": "Betyg {rating} av 5 på Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Börja dagen tillsammans",
       "sub": "Allt familjen behöver veta, där ni redan tittar.",
       "cards": [
-        { "h3": "Kalender", "p": "Allas vecka i en överblick. Skola, simning och tandläkare, varje person i sin egen färg.", "t": "Simskola", "s": "Tis · 16.30 · Noah" },
-        { "h3": "Listor", "p": "Skriv upp mjölk i köket, bocka av den i affären. Alla ser det direkt.", "t": "Bröd", "s": "Avbockat av Marco · nyss" },
-        { "h3": "Vanor", "p": "Små rutiner, gjorda tillsammans. Varje bock ger Minzi, er familjekatt, mer energi.", "t": "Familjeenergi · 34 / 40", "s": "6 till, sen reser Minzi iväg" }
-      ],
-      "cards6": [
         { "h3": "Listor", "p": "Skriv upp mjölk i köket, bocka av den i affären. Alla ser det direkt.", "t": "Bröd", "s": "Avbockat av Marco · nyss" },
         { "h3": "Vanor", "p": "Små rutiner, gjorda tillsammans. Varje bock ger Minzi, er familjekatt, mer energi.", "t": "Familjens energi · 34 / 40", "s": "6 till så åker Minzi på resa" },
         { "h3": "Anteckningar", "p": "Snabba tankar, Wi-Fi-lösenordet, vem som hämtar mormor. Håll en anteckning privat eller dela den med familjen.", "t": "Mormor kommer lördag kl. 15", "s": "Delad med familjen" },
@@ -182,14 +164,6 @@
         { "h3": "Matsedel", "p": "Planera veckans frukost, lunch och middag, så att ingen frågar vad det blir till middag klockan sex.", "t": "Grönsakscurry", "s": "Middag · måndag" },
         { "h3": "Födelsedagar", "p": "Nedräkning till varje födelsedag i familjen, och en påminnelse i tid för att hinna köpa present.", "t": "Emma fyller 12", "s": "Om 3 dagar och 12 timmar" }
       ]
-    },
-    "dinner": {
-      "h3": "Middagen är klar",
-      "p": "Planera veckans måltider, spara familjens recept och skicka ingredienserna till inköpslistan med ett tryck.",
-      "chips": ["Matsedel", "Receptsamling", "Till inköpslistan"],
-      "t": "Sötsur krispig tofu",
-      "s": "2 portioner · 13 ingredienser",
-      "add": "Lägg till i Inköp"
     },
     "calendars": {
       "h3": "Koppla ihop era kalendrar",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgets",
-        "p": "Nästa händelse, inköp, uppgifter, vanor, anteckningar och födelsedagar på hemskärmen.",
-        "next": "Härnäst",
-        "swim": "Sim",
-        "habits": "Vanor",
-        "done": "klart i dag",
-        "groceries": "Inköp",
-        "items": ["Mjölk", "Ägg", "Äpplen"]
-      },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Härnäst, inköp, vanor, födelsedagar och snabbtillägg, direkt på hemskärmen.",
-        "upcoming": "Kommande",
         "toBuy": "{count} att köpa",
         "energy": "Energi {n}/{max}",
         "habits": "Vanor",
-        "startsIn": "börjar om",
-        "days": "dagar",
-        "birthday": "Födelsedag",
-        "event": "Händelse",
-        "task": "Uppgift",
-        "item": "Post",
-        "meal": "Måltid"
-      },
-      "trmnl": {
-        "h3": "På väggen med TRMNL",
-        "p": "Visa familjens vecka på en TRMNL-skärm med e-papper i hallen. Inget sken, inget brus.",
-        "days": [
-          { "d": "Mån", "ev": ["Piano 15.00", "Tandläkare"] },
-          { "d": "Tis", "ev": ["Sim 16.30", "Föräldrar 18.30"] },
-          { "d": "Ons", "ev": ["Fotboll 17.00"] },
-          { "d": "Tor", "ev": ["Filmkväll"] }
-        ]
+        "groceries": "Inköp",
+        "items": ["Mjölk", "Ägg", "Äpplen"]
       },
       "tablet": {
         "h3": "På väggen med vilken surfplatta som helst",

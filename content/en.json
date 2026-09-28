@@ -61,13 +61,11 @@
   "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\", \"Daili Plus\" and \"Minzi\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
   "home": {
     "nav": {
-      "@nav": { "description": "Top navigation of the home page: four section links, the web-app login link and the pill button. downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
+      "@nav": { "description": "Top navigation, on every page: three section links, the web-app login link and the pill button. downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
       "features": "Features",
       "plus": "Daili Plus",
       "screens": "Watch & widgets",
-      "privacy": "Privacy",
       "login": "Log in",
-      "cta": "Get the app",
       "downloadApp": "Download app",
       "openWebApp": "Open web app"
     },
@@ -78,20 +76,8 @@
       "alt": "QR code that opens daili.app"
     },
     "hero": {
-      "@hero": { "description": "Hero under the headline (the headline itself reuses hero.h1a/h1b). lead = the paragraph under it (≤ 170 chars), cta = the dark download button, alt = the phone + watch image." },
+      "@hero": { "description": "Hero under the headline (the headline itself reuses hero.h1a/h1b). lead = the paragraph under it (≤ 170 chars)." },
       "lead": "One calm place for your family's week: calendar, lists, to-dos, habits and notes that everyone can see. On every phone, on your wrist, and in the browser.",
-      "cta": "Download free",
-      "alt": "The Daili home screen on a phone, with an Apple Watch showing the next event",
-      "@cards": { "description": "7 small cards floating around the hero phone, top-left first. They imitate app content. t ≤ 20 chars (bold line), s ≤ 26 chars (small grey line). Names stay as written." },
-      "cards": [
-        { "t": "Swimming class", "s": "Today · 16:30 · Noah" },
-        { "t": "Milk · 2 l", "s": "Marco is at the store" },
-        { "t": "Lunch money", "s": "Pinned for Friday" },
-        { "t": "Stretch · 5 min", "s": "4-day streak" },
-        { "t": "Take out the bins", "s": "Noah · tonight" },
-        { "t": "Vegetable curry", "s": "Dinner tonight" },
-        { "t": "Gift for Emma", "s": "Birthday in 2 days" }
-      ],
       "@rating": { "description": "Hero, next to the five stars (≤ 24 chars). {rating} is filled by the build with the locale-formatted Google Play rating (e.g. \"4.7\" / \"4,7\"), exactly once. ratingAlt = the screen-reader label for stars + line." },
       "rating": "{rating} on Google Play",
       "ratingAlt": "Rated {rating} out of 5 on Google Play",
@@ -194,16 +180,11 @@
       ]
     },
     "day": {
-      "@day": { "description": "\"Start the day together\" section: headline, sub line (≤ 80 chars) and three feature cards. h3 = the feature name (use the app's word), p = two short sentences, t/s = the small app widget on the card (t ≤ 24, s ≤ 32)." },
+      "@day": { "description": "\"Start the day together\" section: headline and sub line (≤ 80 chars)." },
       "h2": "Start the day together",
       "sub": "Everything your family needs to know, in the places you already look.",
+      "@cards": { "description": "Six feature cards under \"Start the day together\", in this order: Lists, Habits, Notes, Recipes, Meal plan, Birthdays. h3 = the app's feature name, p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36). cards[1] t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\"." },
       "cards": [
-        { "h3": "Calendar", "p": "Everyone's week at a glance. School, swimming and the dentist, each person in their own colour.", "t": "Swimming class", "s": "Tue · 16:30 · Noah" },
-        { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
-        { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" }
-      ],
-      "@cards6": { "description": "Six feature cards under \"Start the day together\", in this order: Lists, Habits, Notes, Recipes, Meal plan, Birthdays. h3 = the app's feature name, p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36). cards6[1] t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\". Temporary key: 007 renames it to cards." },
-      "cards6": [
         { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
         { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" },
         { "h3": "Notes", "p": "Quick thoughts, the Wi-Fi password, who picks up Grandma. Keep a note private or share it with the family.", "t": "Grandma arrives Saturday at 3 pm", "s": "Shared with Family" },
@@ -211,15 +192,6 @@
         { "h3": "Meal plan", "p": "Plan breakfast, lunch and dinner for the week, so nobody asks what's for dinner at six.", "t": "Vegetable curry", "s": "Dinner · Monday" },
         { "h3": "Birthdays", "p": "Countdowns for every birthday in the family, and a reminder in time to get the gift.", "t": "Emma turns 12", "s": "In 3 days, 12 hours" }
       ]
-    },
-    "dinner": {
-      "@dinner": { "description": "Meal-plan card. chips = three short labels, no full stop. t/s = the recipe widget, add = its button (use the locale's name of the shopping list)." },
-      "h3": "Dinner, decided",
-      "p": "Plan the week's meals, keep the family recipes, and send the ingredients to your shopping list in one tap.",
-      "chips": ["Meal plan", "Recipe box", "To the shopping list"],
-      "t": "Sweet & sour sticky tofu",
-      "s": "2 servings · 13 ingredients",
-      "add": "Add to Groceries"
     },
     "calendars": {
       "@calendars": { "description": "Calendar-sync card. t/s = the connected-calendar widget (Google Calendar stays as written)." },
@@ -289,48 +261,22 @@
       "pill": "Swim 16:30"
     },
     "screens": {
-      "@screens": { "description": "\"On every screen\" section: five cards (h3 + p). widgets.* and trmnl.days are tiny texts inside drawn screens (~60–120 px) — keep them as short as the English. widgets.items = three grocery items, no full stop. trmnl.days = four short weekday names with their events." },
+      "@screens": { "description": "\"On every screen\" section: five cards (h3 + p)." },
       "h2": "On every screen in your home",
       "sub": "Glance at your wrist, your home screen or the kitchen wall. The same family plan, everywhere.",
       "watch": {
         "h3": "Apple Watch",
         "p": "What's next, and the shopping list, right on your wrist."
       },
+      "@widgets": { "description": "Drawn home-screen widgets. toBuy, energy and habits are copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetShoppingToBuy, widgetHabitsEnergy, habitsTitle), so the site says what the widget says. {count}, {n}, {max} are numbers filled by the page. groceries = the shopping list's name on the widget chip; items = three grocery items, no full stop." },
       "widgets": {
         "h3": "Widgets",
-        "p": "Next up, shopping, to-dos, habits, notes and birthdays on your home screen.",
-        "next": "Next up",
-        "swim": "Swim",
-        "habits": "Habits",
-        "done": "done today",
-        "groceries": "Groceries",
-        "items": ["Milk", "Eggs", "Apples"]
-      },
-      "@widgets2": { "description": "Drawn home-screen widgets. Every tiny label is copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetNextUpComingUp, widgetShoppingToBuy, widgetHabitsEnergy, habitsTitle, widgetNextUpStartsIn, widgetCountdownDays, celebrationTypeBirthday, widgetQuickAdd*), so the site says what the widget says. {count}, {n}, {max} are numbers filled by the page. Temporary key: 007 renames it to widgets." },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Next up, shopping, habits, birthdays and quick add, right on your home screen.",
-        "upcoming": "Upcoming",
         "toBuy": "{count} to buy",
         "energy": "Energy {n}/{max}",
         "habits": "Habits",
-        "startsIn": "starts in",
-        "days": "days",
-        "birthday": "Birthday",
-        "event": "Event",
-        "task": "Task",
-        "item": "Item",
-        "meal": "Meal"
-      },
-      "trmnl": {
-        "h3": "On the wall with TRMNL",
-        "p": "Show the family week on a TRMNL e-paper screen in the hallway. No glow, no noise.",
-        "days": [
-          { "d": "Mon", "ev": ["Piano 15:00", "Dentist"] },
-          { "d": "Tue", "ev": ["Swim 16:30", "Parents 18:30"] },
-          { "d": "Wed", "ev": ["Football 17:00"] },
-          { "d": "Thu", "ev": ["Movie night"] }
-        ]
+        "groceries": "Groceries",
+        "items": ["Milk", "Eggs", "Apples"]
       },
       "@tablet": { "description": "Card about using any old tablet as the family board on the wall. alt = its picture." },
       "tablet": {

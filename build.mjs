@@ -16,8 +16,9 @@ import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, imageSize, SHOT_LOCALE, WEB_APP_URL,
-  MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_CARDS, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
-  MEMBER_TILES_AFTER, HOME_FAMILY, ORBIT_TILES, FLOW_STEPS, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
+  MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_SCENES, RATING, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
+  MEMBER_TILES_AFTER, HOME_FAMILY, DAY_CARDS, HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
+  FLOW_STEPS, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
 } from './site.config.mjs';
@@ -491,16 +492,43 @@ function renderHome(loc) {
         <div class="ev"><b>${e(h('home.watch.ev'))}</b><span>${e(h('home.watch.evs'))}</span></div>
         <div class="ev2"><i></i>${e(h('home.watch.list'))}</div>
       </div></div></div>`;
+  const num = (n, digits = 0) => new Intl.NumberFormat(loc, { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(n);
+  const fill = (key, vars) => {
+    const s = h(key);
+    for (const k of Object.keys(vars)) {
+      if (s.split(`{${k}}`).length !== 2) throw new Error(`${key} in ${where} must contain {${k}} exactly once`);
+    }
+    return s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m));
+  };
 
   // ---- hero ----
-  const heroCards = list('home.hero.cards', HERO_CARDS.length).map((card, i) => {
-    const d = HERO_CARDS[i];
-    // Rendered ticked: the finished state for a reader without JavaScript or
-    // with reduced motion. home.js unticks them and ticks them again on scroll.
-    return `      <div class="fc hcard done${d.hideM ? ' hide-m' : ''}" style="inset-inline-start:${d.start};top:${d.top}px" data-dir="${d.dir}" data-i="${i}" aria-hidden="true">${fcIn(d.icon, d.tone, card.t, card.s, true)}</div>`;
+  // The phone plays the seven scenes (home.js). Every screenshot is in the
+  // markup, the first on top; the cards of scene 1 are the only ones shown
+  // without JavaScript or with reduced motion, unticked.
+  const scenes = list('home.hero.scenes', HERO_SCENES.length);
+  const heroShots = HERO_SCENES.map((sc, i) => {
+    if (scenes[i].id !== sc.id) throw new Error(`home.hero.scenes[${i}].id in ${where} is '${scenes[i].id}', HERO_SCENES says '${sc.id}' — the id is data, never translated`);
+    const { width, height } = imageSize(sc.shot);
+    return `<img class="hs" data-scene="${i}" src="${imgSrc(sc.shot, loc)}" alt="" width="${width}" height="${height}"${i ? ' loading="lazy"' : ''} decoding="async">`;
+  }).join('');
+  const heroPhone = `<div class="phone hphone" aria-hidden="true"><div class="scr">${heroShots}</div></div>`;
+  const heroCards = HERO_SCENES.map((sc, i) => {
+    if (!Array.isArray(scenes[i].cards) || scenes[i].cards.length !== 3) throw new Error(`home.hero.scenes[${i}].cards in ${where} must have exactly 3 entries`);
+    return scenes[i].cards.map((card, k) => `      <div class="fc hcard" data-scene="${i}" data-k="${k}" aria-hidden="true">${fcIn(sc.cards[k][0], sc.cards[k][1], card.t, card.s, true)}</div>`).join('\n');
   }).join('\n');
   const works = list('home.works.items', WORKS_ICONS.length)
     .map((t, i) => `      <span class="wk">${homeIcon(WORKS_ICONS[i])}${e(t)}</span>`).join('\n');
+  // The rating row: RATING's number as the store shows it, in this page's
+  // number format. The last star is filled by the fraction (4.7 -> 70 %).
+  let rating = '';
+  if (RATING) {
+    const r = num(RATING.value, 1);
+    const stars = [0, 1, 2, 3, 4].map((i) => {
+      const f = Math.max(0, Math.min(1, RATING.value - i));
+      return `<span class="star">${homeIcon('star')}<span class="sf" style="width:${Math.round(f * 100)}%">${homeIcon('star')}</span></span>`;
+    }).join('');
+    rating = `      <a class="rating" href="${e(RATING.url)}" target="_blank" rel="noopener" data-hi data-rating="${RATING.value}"><span class="stars" role="img" aria-label="${e(fill('home.hero.ratingAlt', { rating: r }))}">${stars}</span><span class="rt">${e(fill('home.hero.rating', { rating: r }))}</span></a>`;
+  }
 
   // ---- members ----
   const badges = list('home.members.badges', MEMBER_BADGES.length).map((b, i) =>
@@ -527,18 +555,37 @@ function renderHome(loc) {
   const marquee = `      <div class="marq-set">${row.join('')}</div>\n      <div class="marq-set" aria-hidden="true">${row.join('')}</div>`;
 
   // ---- start the day ----
-  const day = list('home.day.cards', 3);
-  const dayCards = [
-    `        <article class="fcard g-lake" data-r><h3>${e(day[0].h3)}</h3><p>${e(day[0].p)}</p>
-          ${phone('shot-calendar', { cls: 'par' })}<div class="fc fly" style="margin-inline-start:-150px" aria-hidden="true">${fcIn('cal', 'lake', day[0].t, day[0].s, false)}</div></article>`,
-    `        <article class="fcard g-leaf" data-r><h3>${e(day[1].h3)}</h3><p>${e(day[1].p)}</p>
-          ${phone('shot-shopping', { cls: 'par' })}<div class="fc fly done" style="margin-inline-start:-120px" aria-hidden="true">${fcIn('cart', 'leaf', day[1].t, day[1].s, true)}</div></article>`,
-    `        <article class="fcard g-honey" data-r><h3>${e(day[2].h3)}</h3><p>${e(day[2].p)}</p>
-          ${phone('shot-habits', { cls: 'par' })}<div class="fc fly" style="margin-inline-start:-140px" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(day[2].t)}</b><span>${e(day[2].s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div></article>`,
-  ].join('\n');
-  const dinnerVis = `${phone('shot-mealplan', { cls: 'par' })}<div class="recipe fly" style="inset-inline-start:6%;top:300px" aria-hidden="true"><div class="rimg"><i style="width:60px;height:60px;left:20px;top:22px;background:#F9D08A;opacity:.8"></i><i style="width:90px;height:90px;right:-10px;top:30px;background:#7A3A1F;opacity:.35"></i><i style="width:26px;height:26px;left:100px;top:70px;background:#5FA76A"></i></div><b>${e(h('home.dinner.t'))}</b><span>${e(h('home.dinner.s'))}</span><span class="add">${homeIcon('cart')}${e(h('home.dinner.add'))}</span></div>`;
-  const orbit = ORBIT_TILES.map((t) => `<div class="tile" style="left:${t.x}%;top:${t.y}%"><div class="tile-in" style="--r:${t.r}deg;color:${t.color}">${homeIcon(t.icon)}</div></div>`).join('');
-  const calendarsVis = `<div class="orbit" data-orbit aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>${orbit}</div>${phone('shot-calendar', { cls: 'par cal-phone' })}<div class="fc fly" style="inset-inline-start:6%;top:420px" aria-hidden="true">${fcIn('cal', 'lake', h('home.calendars.t'), h('home.calendars.s'), false)}</div>`;
+  // Six cards. Each widget is wider than its phone (home.css .dv .fc) and
+  // moves with its own parallax — except the habits one, which sits exactly on
+  // the screenshot's own Family-energy card, so phone and widget move as one.
+  const day = list('home.day.cards', DAY_CARDS.length);
+  // The energy card's centre, in % of the phone's height: the frame is 3.667 %
+  // of the phone's width on each side (home.css), the screen is the rest.
+  const frameY = 3.667 * (640 / 1390);
+  const energyAt = (frameY + (HABITS_ENERGY.top + HABITS_ENERGY.height / 2) * (100 - 2 * frameY) / 100).toFixed(2);
+  const dayCards = DAY_CARDS.map((d, i) => {
+    const c = day[i];
+    const widget = d.energy
+      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(c.t)}</b><span>${e(c.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
+      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, c.t, c.s, Boolean(d.done))}</div>`;
+    return `        <article class="fcard g-${d.tint}" data-r><h3>${e(c.h3)}</h3><p>${e(c.p)}</p>
+          <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget}</div></article>`;
+  }).join('\n');
+  // The orbit: three rings at equal steps, the tiles on them. Its box is the
+  // outer ring's diameter; a tile's place is a % of that box.
+  const box = ORBIT_RINGS[ORBIT_RINGS.length - 1] * 2;
+  const orbit = ORBIT_TILES.map((t) => {
+    const rad = (t.a * Math.PI) / 180;
+    const R = ORBIT_RINGS[t.ring];
+    const x = (50 + (Math.sin(rad) * R * 100) / box).toFixed(2);
+    const y = (50 - (Math.cos(rad) * R * 100) / box).toFixed(2);
+    return `<div class="tile" style="left:${x}%;top:${y}%"><div class="tile-in" style="--r:${t.r}deg;color:${t.color}">${homeIcon(t.icon)}</div></div>`;
+  }).join('');
+  const rings = ORBIT_RINGS.map((R) => `<div class="ring" style="width:${R * 2}px;height:${R * 2}px;margin:-${R}px 0 0 -${R}px"></div>`).join('');
+  // Apple's calendar icon, drawn: a white tile with a red top and a date. Not
+  // Apple's logo.
+  const appleCal = '<span class="ico ico-acal"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="4.5" fill="#fff" stroke="#E3E3E3"/><path d="M2.5 7a4.5 4.5 0 0 1 4.5-4.5h10A4.5 4.5 0 0 1 21.5 7v1.5h-19z" fill="#E8453C"/><rect x="7" y="11" width="10" height="1.8" rx=".9" fill="#1C1C1E"/><rect x="7" y="14.6" width="10" height="1.8" rx=".9" fill="#1C1C1E"/><rect x="7" y="18.2" width="6" height="1.8" rx=".9" fill="#1C1C1E"/></svg></span>';
+  const calendarsVis = `<div class="orbit" aria-hidden="true" style="width:${box}px;height:${box}px;margin:-${box / 2}px 0 0 -${box / 2}px">${rings}${orbit}</div>${phone('shot-calendar', { cls: 'cal-phone' })}<div class="cal-cards" aria-hidden="true"><div class="fc">${fcIn('cal', 'lake', h('home.calendars.t'), h('home.calendars.s'), false)}</div><div class="fc"><div class="fc-in">${appleCal}<span class="fc-tx"><b>${e(h('home.calendars.apple.t'))}</b><span>${e(h('home.calendars.apple.s'))}</span></span></div></div></div>`;
 
   // ---- Daili Plus ----
   const avatars = [0, 1, 2].map(() => HOME_FAMILY.map((m) =>
@@ -546,14 +593,17 @@ function renderHome(loc) {
   const aiHead = (s) => `<div class="hd">${homeIcon('spark')}${e(s)}</div>`;
   const aiRow = (icon, tone, t, s) => `<div class="row">${ico(icon, tone, 'width:30px;height:30px')}<div><b>${e(t)}</b><span>${e(s)}</span></div></div>`;
   const rows = list('home.plus.letter.rows', 3);
+  // The phone and its card sit in .ifix: in the card on a phone, with reduced
+  // motion or without JavaScript; fixed in the middle of the screen, clipped
+  // by each passing card, once home.js turns the section to .fx.
   const icard = (tone, key, shot, pos, inner) => `      <article class="icard i-${tone}"><div class="tx"><h3>${e(h(`home.plus.${key}.h3`))}</h3><p>${e(h(`home.plus.${key}.p`))}</p></div>
-        <div class="vis">${phone(shot)}<div class="ai-card fly" style="${pos}" aria-hidden="true">${inner}</div></div></article>`;
+        <div class="vis"><div class="ifix">${phone(shot)}<div class="ai-card" style="${pos}" aria-hidden="true">${inner}</div></div></div></article>`;
   const icards = [
-    icard('berry', 'video', 'shot-recipes', 'inset-inline-start:-4%;top:250px',
+    icard('berry', 'video', 'shot-recipes', 'inset-inline-start:-38%;top:180px',
       `${aiHead(h('home.plus.video.hd'))}<div class="vid"><span>${homeIcon('play')}</span></div><div class="ttl">${e(h('home.plus.video.title'))}</div>${aiRow('meal', 'clay', h('home.plus.video.t'), h('home.plus.video.s'))}`),
-    icard('clay', 'letter', 'shot-calendar', 'inset-inline-start:-6%;top:230px',
+    icard('clay', 'letter', 'shot-calendar', 'inset-inline-start:-42%;top:160px',
       `${aiHead(h('home.plus.letter.hd'))}${aiRow('cal', 'lake', rows[0].t, rows[0].s)}${aiRow('people', 'berry', rows[1].t, rows[1].s)}${aiRow('photo', 'honey', rows[2].t, rows[2].s)}<span class="add">${e(h('home.plus.letter.add'))}</span>`),
-    icard('leaf', 'ideas', 'shot-mealplan', 'inset-inline-start:-4%;top:260px',
+    icard('leaf', 'ideas', 'shot-mealplan', 'inset-inline-start:-38%;top:190px',
       `${aiHead(h('home.plus.ideas.hd'))}<div class="ttl">${e(h('home.plus.ideas.title'))}</div>${aiRow('meal', 'leaf', h('home.plus.ideas.t'), h('home.plus.ideas.s'))}<span class="add">${e(h('home.plus.ideas.add'))}</span>`),
   ].join('\n');
 
@@ -577,19 +627,33 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
         <img class="jump" data-jump src="${homeImg('minzi_jump')}" alt="" width="120" height="120" loading="lazy" decoding="async">`;
 
   // ---- every screen ----
+  // The widgets, drawn after the light variants of the app's own
+  // (ios/FamCanvasWidgets: CalendarWidget small, ShoppingWidget small,
+  // HabitsWidget medium). The date is the build date in this page's language.
   const wgItems = list('home.screens.widgets.items', 3);
-  const days = list('home.screens.trmnl.days', 4);
+  const cal = scenes[0].cards;
+  const habitCards = scenes[3].cards;
+  const today = new Date(`${BUILD_DATE}T12:00:00Z`);
+  const weekday = new Intl.DateTimeFormat(loc, { weekday: 'long', timeZone: 'UTC' }).format(today);
+  const dayNum = new Intl.DateTimeFormat(loc, { day: 'numeric', timeZone: 'UTC' }).formatToParts(today).find((pt) => pt.type === 'day').value;
+  const W = HOME_WIDGETS;
+  const wNext = `<div class="wgt wgt-s wgt-next"><div class="wn-top"><div><span class="wn-day">${e(weekday)}</span><span class="wn-num">${e(dayNum)}</span></div><span class="wn-add">${homeIcon('plus', 2.6)}</span></div>
+            ${[cal[0].t, cal[2].t].map((t, i) => `<div class="wn-ev"><i style="background:${W.next[i].color}"></i><div><b>${e(t)}</b><span>${W.next[i].time}</span></div></div>`).join('')}</div>`;
+  const wShop = `<div class="wgt wgt-s wgt-shop"><span class="ws-chip">${homeIcon('cart', 2.2)}${e(h('home.screens.widgets.groceries'))}</span><b class="ws-n">${e(fill('home.screens.widgets.toBuy', { count: num(W.toBuy) }))}</b>
+            ${wgItems.slice(0, 2).map((t) => `<div class="ws-row"><i></i><span>${e(t)}</span></div>`).join('')}</div>`;
+  const doneCount = W.habits.filter((r) => !r.ring).length;
+  const wHabits = `<div class="wgt wgt-m wgt-habits"><div class="wh-minzi"><img src="${homeImg('minzi_sit')}" alt="" width="120" height="120" loading="lazy" decoding="async"><span class="wh-bar"><i style="width:${Math.round((W.energy[0] / W.energy[1]) * 100)}%"></i></span><span class="wh-en">${e(fill('home.screens.widgets.energy', { n: num(W.energy[0]), max: num(W.energy[1]) }))}</span></div>
+            <div class="wh-list"><div class="wh-head"><b>${e(h('home.screens.widgets.habits'))}</b><span>${num(doneCount)}/${num(W.habits.length)}</span></div>
+            ${W.habits.map((r, i) => `<div class="wh-row"><span class="wh-ring${r.ring ? '' : ' done'}">${r.ring ? e(r.ring) : homeIcon('check', 3)}</span><span class="wh-name">${e(habitCards[i].t)}</span><span class="wh-av" style="background:${r.color}">${e(HOME_FAMILY[r.who].name.slice(0, 1))}</span></div>`).join('')}</div></div>`;
   const { width: ww, height: wh } = imageSize('web-');
   const bento = [
     `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch')}</article>`,
     `        <article class="bx g-berry" data-r><h3>${e(h('home.screens.widgets.h3'))}</h3><p>${e(h('home.screens.widgets.p'))}</p>
-          <div class="wg wg-next" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.next'))}</div><div class="big">${e(h('home.screens.widgets.swim'))}<br>16:30</div><div class="who">Noah</div></div>
-          <div class="wg wg-habits" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.habits'))}</div><div class="big">4 / 9</div><div class="sm">${e(h('home.screens.widgets.done'))}</div></div>
-          <div class="wg wg-list" aria-hidden="true"><div class="lbl">${e(h('home.screens.widgets.groceries'))}</div><div class="li x"><i class="x"></i><span>${e(wgItems[0])}</span></div><div class="li"><i></i><span>${e(wgItems[1])}</span></div><div class="li"><i></i><span>${e(wgItems[2])}</span></div></div></article>`,
-    `        <article class="bx span2 g-lake" data-r><h3>${e(h('home.screens.trmnl.h3'))}</h3><p>${e(h('home.screens.trmnl.p'))}</p>
-          <div class="eink" aria-hidden="true"><div class="pap">${days.map((d) => `<div><b>${e(d.d)}</b>${d.ev.map((x) => `<span>${e(x)}</span>`).join('')}</div>`).join('')}</div></div></article>`,
-    `        <article class="bx span2 g-honey bx-low" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
+          <div class="wgrid" aria-hidden="true">${wNext}${wShop}${wHabits}</div></article>`,
+    `        <article class="bx span2 g-honey" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
           <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>app.daili.app</span></div><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.web.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></article>`,
+    `        <article class="bx span2 g-lake bx-low" data-r><h3>${e(h('home.screens.tablet.h3'))}</h3><p>${e(h('home.screens.tablet.p'))}</p>
+          <div class="tablet"><div class="tab-scr"><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.tablet.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></div></article>`,
     `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
           <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a' })}${phone('shot-notes', { cls: 'tilt-b' })}</div></article>`,
   ].join('\n');
@@ -613,18 +677,18 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
   }
 
   // ---- the flat-lay ----
-  const flat = `${FLAT_OBJECTS.map((o) => `        <div class="obj" data-obj data-fx="${o.fx}" data-fy="${o.fy}" style="inset-inline-start:${o.start}%;top:${o.top}px;width:${o.w}px;transform:rotate(${o.rot}deg)">${photo(o.obj)}</div>`).join('\n')}
+  const flat = `${FLAT_OBJECTS.map((o) => `        <div class="obj" data-obj data-fx="${o.fx}" data-fy="${o.fy}" data-rot="${o.rot}" style="inset-inline-start:${o.start}%;top:${o.top}px;width:${o.w}px;transform:rotate(${o.rot}deg)">${photo(o.obj)}</div>`).join('\n')}
         ${phone('shot-home', { cls: 'fphone' })}`;
 
   return {
     h1: `${words(h('hero.h1a'))}<br>${words(h('hero.h1b'))}`,
-    phoneIcon: homeIcon('phone'),
     checkIcon: homeIcon('check'),
     sparkIcon: homeIcon('spark'),
-    heroPhone: phone('shot-home', { cls: 'hphone', alt: h('home.hero.alt'), eager: true }),
+    globeIcon: homeIcon('globe'),
+    heroPhone,
     heroWatch: watch('hwatch'),
-    heroCards, works, badges, membersH2, marquee,
-    dayCards, dinnerVis, calendarsVis,
+    heroCards, rating, works, badges, membersH2, marquee,
+    dayCards, calendarsVis,
     avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,
   };
 }

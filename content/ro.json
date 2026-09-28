@@ -49,9 +49,7 @@
       "features": "Funcții",
       "plus": "Daili Plus",
       "screens": "Ceas și widgeturi",
-      "privacy": "Confidențialitate",
       "login": "Conectare",
-      "cta": "Descarcă aplicația",
       "downloadApp": "Descarcă aplicația",
       "openWebApp": "Deschide aplicația web"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Un loc liniștit pentru săptămâna familiei: calendar, liste, sarcini, obiceiuri și notițe pe care le vede toată lumea. Pe orice telefon, la încheietură și în browser.",
-      "cta": "Descarcă gratuit",
-      "alt": "Ecranul principal Daili pe un telefon, cu un Apple Watch care arată următorul eveniment",
-      "cards": [
-        { "t": "Curs de înot", "s": "Azi · 16:30 · Noah" },
-        { "t": "Lapte · 2 l", "s": "Marco e în magazin" },
-        { "t": "Bani de prânz", "s": "Fixat pentru vineri" },
-        { "t": "Stretching · 5 min", "s": "4 zile la rând" },
-        { "t": "Scoate gunoiul", "s": "Noah · diseară" },
-        { "t": "Curry de legume", "s": "Cina de diseară" },
-        { "t": "Cadou pentru Emma", "s": "Aniversare peste 2 zile" }
-      ],
       "rating": "{rating} pe Google Play",
       "ratingAlt": "Evaluat cu {rating} din 5 pe Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Începeți ziua împreună",
       "sub": "Tot ce trebuie să știe familia ta, acolo unde te uiți deja.",
       "cards": [
-        { "h3": "Calendar", "p": "Săptămâna tuturor dintr-o privire. Școală, înot și dentist, fiecare cu culoarea lui.", "t": "Curs de înot", "s": "mar. · 16:30 · Noah" },
-        { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
-        { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34/40", "s": "Încă 6 și Minzi pleacă la drum" }
-      ],
-      "cards6": [
         { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
         { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34 / 40", "s": "Încă 6 și Minzi pleacă în călătorie" },
         { "h3": "Notițe", "p": "Gânduri rapide, parola de Wi-Fi, cine o ia pe bunica. Păstrează o notiță doar pentru tine sau partajeaz-o cu familia.", "t": "Bunica vine sâmbătă la 15:00", "s": "Partajată cu familia" },
@@ -182,14 +164,6 @@
         { "h3": "Meniu", "p": "Planifică micul dejun, prânzul și cina pentru toată săptămâna, ca nimeni să nu mai întrebe la șase ce e de mâncare.", "t": "Curry de legume", "s": "Cină · luni" },
         { "h3": "Zile de naștere", "p": "Numărătoare inversă pentru fiecare zi de naștere din familie și un memento la timp pentru cadou.", "t": "Emma împlinește 12 ani", "s": "Peste 3 zile și 12 ore" }
       ]
-    },
-    "dinner": {
-      "h3": "Cina, stabilită",
-      "p": "Planifică mesele săptămânii, păstrează rețetele familiei și trimite ingredientele pe lista de cumpărături dintr-o atingere.",
-      "chips": ["Meniul săptămânii", "Caietul de rețete", "Pe lista de cumpărături"],
-      "t": "Tofu dulce-acrișor caramelizat",
-      "s": "2 porții · 13 ingrediente",
-      "add": "Adaugă la Cumpărături"
     },
     "calendars": {
       "h3": "Conectează-ți calendarele",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgeturi",
-        "p": "Ce urmează, cumpărături, sarcini, obiceiuri, notițe și zile de naștere pe ecranul principal.",
-        "next": "Urmează",
-        "swim": "Înot",
-        "habits": "Obiceiuri",
-        "done": "gata azi",
-        "groceries": "Cumpărături",
-        "items": ["Lapte", "Ouă", "Mere"]
-      },
-      "widgets2": {
-        "h3": "Widgeturi",
         "p": "Ce urmează, cumpărături, obiceiuri, zile de naștere și adăugare rapidă, direct pe ecranul principal.",
-        "upcoming": "În curând",
         "toBuy": "{count} de cumpărat",
         "energy": "Energie {n}/{max}",
         "habits": "Obiceiuri",
-        "startsIn": "începe în",
-        "days": "de zile",
-        "birthday": "Zi de naștere",
-        "event": "Eveniment",
-        "task": "Sarcină",
-        "item": "Articol",
-        "meal": "Masă"
-      },
-      "trmnl": {
-        "h3": "Pe perete cu TRMNL",
-        "p": "Afișează săptămâna familiei pe un ecran e-paper TRMNL pe hol. Fără lumină, fără zgomot.",
-        "days": [
-          { "d": "Lun", "ev": ["Pian 15:00", "Dentist"] },
-          { "d": "Mar", "ev": ["Înot 16:30", "Ședință 18:30"] },
-          { "d": "Mie", "ev": ["Fotbal 17:00"] },
-          { "d": "Joi", "ev": ["Seară de film"] }
-        ]
+        "groceries": "Cumpărături",
+        "items": ["Lapte", "Ouă", "Mere"]
       },
       "tablet": {
         "h3": "Pe perete, cu orice tabletă",

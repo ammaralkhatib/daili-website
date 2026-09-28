@@ -194,6 +194,14 @@ header{position:sticky;top:0;z-index:30;padding-block-start:14px;pointer-events:
 @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .dl-menu .store-badge{width:100%;justify-content:start}
 .dl-menu small{color:var(--muted);font-size:.78rem;line-height:1.4}
+/* The web-app button under (and beside) the store badges: the badge's height
+   and radius, white with a dark outline. Also the home page's hero and final
+   rows (home.css makes the hero's transparent). */
+.web-btn{box-sizing:border-box;display:inline-flex;align-items:center;gap:10px;height:48px;padding-inline:14px 18px;border-radius:13px;background:#fff;color:#15271F;border:1.5px solid #15271F;font-family:var(--sans);font-weight:600;font-size:.98rem;line-height:1.15;text-decoration:none;white-space:nowrap;transition:background .2s,transform .3s var(--ease)}
+.web-btn:hover{background:#F1F3EE;color:#15271F;transform:translateY(-1px)}
+.web-btn svg{width:22px;height:22px;flex:none}
+/* The menu's badges are 51 px tall (their small line is .78rem/1.4 above). */
+.dl-menu .web-btn{width:100%;height:51px}
 
 /* Between the burger and a wide screen, seven links in Ukrainian or Romanian
    do not fit the pill at the mock's spacing: it tightens instead. */
@@ -384,7 +392,7 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
   *,*::before,*::after{animation:none!important;transition:none!important}
   /* The hover lifts are the only motion left on the page that a transition
      rule does not already stop — a transform with no transition still jumps. */
-  .store-badge:hover,.dl-btn:hover{transform:none}
+  .store-badge:hover,.dl-btn:hover,.web-btn:hover{transform:none}
   html{scroll-behavior:auto}
 }
 

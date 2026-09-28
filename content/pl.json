@@ -49,9 +49,7 @@
       "features": "Funkcje",
       "plus": "Daili Plus",
       "screens": "Zegarek i widżety",
-      "privacy": "Prywatność",
       "login": "Zaloguj się",
-      "cta": "Pobierz aplikację",
       "downloadApp": "Pobierz aplikację",
       "openWebApp": "Otwórz aplikację web"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Jedno spokojne miejsce na tydzień waszej rodziny: kalendarz, listy, zadania, nawyki i notatki, które widzą wszyscy. Na każdym telefonie, na nadgarstku i w przeglądarce.",
-      "cta": "Pobierz za darmo",
-      "alt": "Ekran główny Daili na telefonie i Apple Watch z najbliższym wydarzeniem",
-      "cards": [
-        { "t": "Basen", "s": "Dziś · 16:30 · Noah" },
-        { "t": "Mleko · 2 l", "s": "Marco jest w sklepie" },
-        { "t": "Pieniądze na obiad", "s": "Przypięte na piątek" },
-        { "t": "Rozciąganie · 5 min", "s": "4 dni z rzędu" },
-        { "t": "Wynieść śmieci", "s": "Noah · wieczorem" },
-        { "t": "Curry z warzywami", "s": "Dziś na kolację" },
-        { "t": "Emma · prezent", "s": "Urodziny za 2 dni" }
-      ],
       "rating": "{rating} w Google Play",
       "ratingAlt": "Ocena {rating} na 5 w Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Zacznijcie dzień razem",
       "sub": "Wszystko, co rodzina musi wiedzieć, tam, gdzie i tak zaglądacie.",
       "cards": [
-        { "h3": "Kalendarz", "p": "Tydzień wszystkich w jednym spojrzeniu. Szkoła, basen i dentysta — każdy w swoim kolorze.", "t": "Basen", "s": "Wt. · 16:30 · Noah" },
-        { "h3": "Listy", "p": "Dopisz mleko w kuchni, odhacz je w sklepie. Wszyscy widzą to od razu.", "t": "Chleb", "s": "Marco odhaczył · przed chwilą" },
-        { "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34/40", "s": "Jeszcze 6 i Minzi rusza w podróż" }
-      ],
-      "cards6": [
         { "h3": "Listy", "p": "Dopisz mleko w kuchni, odhacz je w sklepie. Wszyscy widzą to od razu.", "t": "Chleb", "s": "Marco odhaczył · przed chwilą" },
         { "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34 / 40", "s": "Jeszcze 6 i Minzi wyruszy w podróż" },
         { "h3": "Notatki", "p": "Szybkie myśli, hasło do Wi-Fi, kto odbiera babcię. Zachowaj notatkę dla siebie albo udostępnij ją rodzinie.", "t": "Babcia przyjedzie w sobotę o 15", "s": "Udostępnione rodzinie" },
@@ -182,14 +164,6 @@
         { "h3": "Jadłospis", "p": "Zaplanuj śniadania, obiady i kolacje na cały tydzień, żeby nikt o szóstej nie pytał, co na kolację.", "t": "Curry warzywne", "s": "Kolacja · poniedziałek" },
         { "h3": "Urodziny", "p": "Odliczanie do urodzin każdego w rodzinie i przypomnienie na czas, żeby zdążyć z prezentem.", "t": "Emma kończy 12 lat", "s": "Za 3 dni i 12 godzin" }
       ]
-    },
-    "dinner": {
-      "h3": "Obiad z głowy",
-      "p": "Zaplanuj posiłki na cały tydzień, trzymaj rodzinne przepisy w jednym miejscu i jednym dotknięciem wyślij składniki na listę zakupów.",
-      "chips": ["Jadłospis", "Przepisy", "Na listę zakupów"],
-      "t": "Tofu na słodko-kwaśno",
-      "s": "2 porcje · 13 składników",
-      "add": "Dodaj do Zakupów"
     },
     "calendars": {
       "h3": "Połącz swoje kalendarze",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widżety",
-        "p": "Najbliższe wydarzenia, zakupy, zadania, nawyki, notatki i urodziny na ekranie głównym.",
-        "next": "Następne",
-        "swim": "Basen",
-        "habits": "Nawyki",
-        "done": "dziś gotowe",
-        "groceries": "Zakupy",
-        "items": ["Mleko", "Jajka", "Jabłka"]
-      },
-      "widgets2": {
-        "h3": "Widżety",
         "p": "Najbliższe wydarzenia, zakupy, nawyki, urodziny i szybkie dodawanie — prosto na ekranie głównym.",
-        "upcoming": "Wkrótce",
         "toBuy": "{count} do kupienia",
         "energy": "Energia {n}/{max}",
         "habits": "Nawyki",
-        "startsIn": "zaczyna się za",
-        "days": "dni",
-        "birthday": "Urodziny",
-        "event": "Wydarzenie",
-        "task": "Zadanie",
-        "item": "Element",
-        "meal": "Posiłek"
-      },
-      "trmnl": {
-        "h3": "Na ścianie z TRMNL",
-        "p": "Pokaż tydzień rodziny na e-papierowym ekranie TRMNL w przedpokoju. Bez świecenia, bez hałasu.",
-        "days": [
-          { "d": "Pn", "ev": ["Pianino 15:00", "Dentysta"] },
-          { "d": "Wt", "ev": ["Basen 16:30", "Zebranie 18:30"] },
-          { "d": "Śr", "ev": ["Piłka 17:00"] },
-          { "d": "Czw", "ev": ["Wieczór filmowy"] }
-        ]
+        "groceries": "Zakupy",
+        "items": ["Mleko", "Jajka", "Jabłka"]
       },
       "tablet": {
         "h3": "Na ścianie z dowolnym tabletem",

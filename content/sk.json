@@ -49,9 +49,7 @@
       "features": "Funkcie",
       "plus": "Daili Plus",
       "screens": "Hodinky a widgety",
-      "privacy": "Súkromie",
       "login": "Prihlásiť sa",
-      "cta": "Stiahnuť aplikáciu",
       "downloadApp": "Stiahnuť aplikáciu",
       "openWebApp": "Otvoriť webovú aplikáciu"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Jedno pokojné miesto pre týždeň tvojej rodiny: kalendár, zoznamy, úlohy, návyky a poznámky, ktoré vidia všetci. Na každom telefóne, na zápästí aj v prehliadači.",
-      "cta": "Stiahnuť zadarmo",
-      "alt": "Domovská obrazovka Daili na telefóne a Apple Watch s ďalšou udalosťou",
-      "cards": [
-        { "t": "Plávanie", "s": "Dnes · 16:30 · Noah" },
-        { "t": "Mlieko · 2 l", "s": "Marco je v obchode" },
-        { "t": "Peniaze na obedy", "s": "Pripnuté na piatok" },
-        { "t": "Strečing · 5 min", "s": "4 dni za sebou" },
-        { "t": "Vyniesť smeti", "s": "Noah · dnes večer" },
-        { "t": "Zeleninové karí", "s": "Dnes na večeru" },
-        { "t": "Emma · darček", "s": "Narodeniny o 2 dni" }
-      ],
       "rating": "{rating} na Google Play",
       "ratingAlt": "Hodnotenie {rating} z 5 na Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Začnite deň spolu",
       "sub": "Všetko, čo tvoja rodina potrebuje vedieť, tam, kam sa aj tak pozeráš.",
       "cards": [
-        { "h3": "Kalendár", "p": "Týždeň všetkých na jeden pohľad. Škola, plávanie aj zubár — každý vo svojej farbe.", "t": "Plávanie", "s": "Ut · 16:30 · Noah" },
-        { "h3": "Zoznamy", "p": "Mlieko pridáš v kuchyni, odškrtneš v obchode. Všetci to hneď vidia.", "t": "Chlieb", "s": "Odškrtol Marco · práve teraz" },
-        { "h3": "Návyky", "p": "Malé zvyky, robené spolu. Každé odškrtnutie dodá Minzi, vašej rodinnej mačke, viac energie.", "t": "Energia rodiny · 34/40", "s": "Ešte 6 a Minzi ide na výlet" }
-      ],
-      "cards6": [
         { "h3": "Zoznamy", "p": "Mlieko pridáš v kuchyni, odškrtneš v obchode. Všetci to hneď vidia.", "t": "Chlieb", "s": "Odškrtol Marco · práve teraz" },
         { "h3": "Návyky", "p": "Malé zvyky, robené spolu. Každé odškrtnutie dodá Minzi, vašej rodinnej mačke, viac energie.", "t": "Rodinná energia · 34 / 40", "s": "Ešte 6 a Minzi vyrazí na výlet" },
         { "h3": "Poznámky", "p": "Rýchle myšlienky, heslo k Wi-Fi, kto vyzdvihne babku. Poznámku si nechaj pre seba alebo ju zdieľaj s rodinou.", "t": "Babka príde v sobotu o 15:00", "s": "Zdieľané s rodinou" },
@@ -182,14 +164,6 @@
         { "h3": "Jedálniček", "p": "Naplánuj raňajky, obed aj večeru na celý týždeň, aby sa nikto o šiestej nepýtal, čo bude na večeru.", "t": "Zeleninové karí", "s": "Večera · pondelok" },
         { "h3": "Narodeniny", "p": "Odpočet do narodenín každého v rodine a pripomienka včas, aby darček nechýbal.", "t": "Emma bude mať 12", "s": "O 3 dni a 12 hodín" }
       ]
-    },
-    "dinner": {
-      "h3": "Večera vyriešená",
-      "p": "Naplánuj jedlá na celý týždeň, maj rodinné recepty pokope a suroviny pošli jedným ťuknutím do nákupného zoznamu.",
-      "chips": ["Jedálniček", "Recepty", "Do nákupného zoznamu"],
-      "t": "Sladkokyslé tofu",
-      "s": "2 porcie · 13 surovín",
-      "add": "Pridať do Nákupov"
     },
     "calendars": {
       "h3": "Prepoj svoje kalendáre",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgety",
-        "p": "Najbližšie udalosti, nákupy, úlohy, návyky, poznámky a narodeniny na ploche telefónu.",
-        "next": "Nasleduje",
-        "swim": "Bazén",
-        "habits": "Návyky",
-        "done": "dnes hotové",
-        "groceries": "Nákupy",
-        "items": ["Mlieko", "Vajcia", "Jablká"]
-      },
-      "widgets2": {
-        "h3": "Widgety",
         "p": "Najbližšie udalosti, nákupy, návyky, narodeniny a rýchle pridávanie priamo na ploche telefónu.",
-        "upcoming": "Čoskoro",
         "toBuy": "{count} na kúpu",
         "energy": "Energia {n}/{max}",
         "habits": "Návyky",
-        "startsIn": "začína o",
-        "days": "dní",
-        "birthday": "Narodeniny",
-        "event": "Udalosť",
-        "task": "Úloha",
-        "item": "Položka",
-        "meal": "Jedlo"
-      },
-      "trmnl": {
-        "h3": "Na stene s TRMNL",
-        "p": "Zobraz rodinný týždeň na e-ink displeji TRMNL v predsieni. Žiadne svetlo, žiadny hluk.",
-        "days": [
-          { "d": "Po", "ev": ["Klavír 15:00", "Zubár"] },
-          { "d": "Ut", "ev": ["Bazén 16:30", "Rodičia 18:30"] },
-          { "d": "St", "ev": ["Futbal 17:00"] },
-          { "d": "Št", "ev": ["Filmový večer"] }
-        ]
+        "groceries": "Nákupy",
+        "items": ["Mlieko", "Vajcia", "Jablká"]
       },
       "tablet": {
         "h3": "Na stenu s akýmkoľvek tabletom",

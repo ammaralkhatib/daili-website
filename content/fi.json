@@ -49,9 +49,7 @@
       "features": "Ominaisuudet",
       "plus": "Daili Plus",
       "screens": "Kello ja widgetit",
-      "privacy": "Yksityisyys",
       "login": "Kirjaudu",
-      "cta": "Hanki sovellus",
       "downloadApp": "Lataa sovellus",
       "openWebApp": "Avaa verkkosovellus"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Yksi rauhallinen paikka perheen viikolle: kalenteri, listat, tehtävät, tavat ja muistiinpanot, jotka kaikki näkevät. Jokaisessa puhelimessa, ranteessa ja selaimessa.",
-      "cta": "Lataa ilmaiseksi",
-      "alt": "Dailin aloitusnäkymä puhelimessa ja Apple Watch, jossa näkyy seuraava tapahtuma",
-      "cards": [
-        { "t": "Uimakoulu", "s": "Tänään · 16.30 · Noah" },
-        { "t": "Maito · 2 l", "s": "Marco on kaupassa" },
-        { "t": "Retkirahat", "s": "Kiinnitetty perjantaille" },
-        { "t": "Venyttely · 5 min", "s": "4 päivää putkeen" },
-        { "t": "Roskat ulos", "s": "Noah · tänä iltana" },
-        { "t": "Kasviscurry", "s": "Tänään päivälliseksi" },
-        { "t": "Lahja Emmalle", "s": "Synttärit 2 päivän päästä" }
-      ],
       "rating": "{rating} Google Playssa",
       "ratingAlt": "Arvio {rating}/5 Google Playssa",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Aloittakaa päivä yhdessä",
       "sub": "Kaikki, mitä perheen pitää tietää, siellä minne jo katsotte.",
       "cards": [
-        { "h3": "Kalenteri", "p": "Koko perheen viikko yhdellä silmäyksellä. Koulu, uinti ja hammaslääkäri, jokainen omalla värillään.", "t": "Uimakoulu", "s": "ti · 16.30 · Noah" },
-        { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
-        { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee reissuun" }
-      ],
-      "cards6": [
         { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
         { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee matkalle" },
         { "h3": "Muistiinpanot", "p": "Nopeat ajatukset, Wi-Fi-salasana, kuka hakee mummon. Pidä muistiinpano omana tai jaa se perheen kanssa.", "t": "Mummo tulee lauantaina klo 15", "s": "Jaettu perheen kanssa" },
@@ -182,14 +164,6 @@
         { "h3": "Ruokalista", "p": "Suunnittele viikon aamiaiset, lounaat ja päivälliset, niin kukaan ei kysy kuudelta, mitä on ruoaksi.", "t": "Kasviscurry", "s": "Päivällinen · maanantai" },
         { "h3": "Syntymäpäivät", "p": "Laskuri perheen jokaiseen syntymäpäivään ja muistutus ajoissa, jotta lahja ehditään hankkia.", "t": "Emma täyttää 12", "s": "3 päivän ja 12 tunnin päästä" }
       ]
-    },
-    "dinner": {
-      "h3": "Päivällinen päätetty",
-      "p": "Suunnittele viikon ateriat, säilytä perheen reseptit ja lähetä ainekset ostoslistalle yhdellä napautuksella.",
-      "chips": ["Ruokalista", "Reseptikirja", "Ostoslistalle"],
-      "t": "Hapanimelä rapea tofu",
-      "s": "2 annosta · 13 ainesta",
-      "add": "Lisää Ostoksiin"
     },
     "calendars": {
       "h3": "Yhdistä kalenterisi",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgetit",
-        "p": "Seuraava tapahtuma, ostokset, tehtävät, tavat, muistiinpanot ja syntymäpäivät aloitusnäytöllä.",
-        "next": "Seuraavaksi",
-        "swim": "Uinti",
-        "habits": "Tavat",
-        "done": "tehty tänään",
-        "groceries": "Ostokset",
-        "items": ["Maito", "Munat", "Omenat"]
-      },
-      "widgets2": {
-        "h3": "Widgetit",
         "p": "Seuraava tapahtuma, ostokset, tavat, syntymäpäivät ja pikalisäys suoraan aloitusnäytöllä.",
-        "upcoming": "Tulossa",
         "toBuy": "{count} ostettavaa",
         "energy": "Energia {n}/{max}",
         "habits": "Tavat",
-        "startsIn": "alkaa",
-        "days": "päivää",
-        "birthday": "Syntymäpäivä",
-        "event": "Tapahtuma",
-        "task": "Tehtävä",
-        "item": "Kohde",
-        "meal": "Ateria"
-      },
-      "trmnl": {
-        "h3": "Seinällä TRMNL:n avulla",
-        "p": "Näytä perheen viikko eteisessä TRMNL-e-paperinäytöllä. Ei hehkua, ei hälyä.",
-        "days": [
-          { "d": "ma", "ev": ["Piano 15.00", "Hammaslääkäri"] },
-          { "d": "ti", "ev": ["Uinti 16.30", "Vanhemmat 18.30"] },
-          { "d": "ke", "ev": ["Jalkapallo 17.00"] },
-          { "d": "to", "ev": ["Leffailta"] }
-        ]
+        "groceries": "Ostokset",
+        "items": ["Maito", "Munat", "Omenat"]
       },
       "tablet": {
         "h3": "Seinälle millä tahansa tabletilla",

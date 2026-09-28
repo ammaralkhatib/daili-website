@@ -1036,6 +1036,7 @@ export const HOME_ICONS = {
   meal: '<path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M7 7h4M17 21V3c-2 1.5-3 4-3 7v3h3"/>',
   cake: '<path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path d="M4 15c2 1.5 4 1.5 5.3 0 1.4 1.5 4 1.5 5.4 0 1.3 1.5 3.3 1.5 5.3 0"/><path d="M12 11V7"/><path d="M12 3.5c.8.8 1 1.6 0 2.3-1-.7-.8-1.5 0-2.3z"/>',
   check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  plus: '<path d="M12 5.5v13M5.5 12h13"/>',
   phone: '<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
   watch: '<rect x="6" y="6" width="12" height="12" rx="3.5"/><path d="M9 6l.6-3h4.8l.6 3M9 18l.6 3h4.8l.6-3"/>',
   widgets: '<rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/>',
@@ -1058,21 +1059,68 @@ export const HOME_ICONS = {
 };
 
 /**
- * The seven cards floating around the hero phone, in home.hero.cards order.
- * `pos` is the desktop place as inline CSS (inset-inline-start, so /ar/ mirrors);
- * `top` in px is also the order they get ticked in as you scroll. `dir` is
- * which way the card flies off (-1 = towards the inline start). `hideM`
- * hides the card below 860px (the mock's cards 3, 6 and 7).
+ * The hero's scene loop, in home.hero.scenes order: which screenshot the phone
+ * shows and the glyph + tone of each of its three cards. `id` must equal
+ * home.hero.scenes[i].id in every locale (build.mjs checks it). Where each
+ * card sits is CSS (.hcard[data-k]): card 1 top inline-start, card 2 middle
+ * inline-end, card 3 lower inline-start, each overlapping the phone's edge.
  */
-export const HERO_CARDS = [
-  { icon: 'cal', tone: 'lake', start: '3%', top: 40, dir: -1 },
-  { icon: 'cart', tone: 'leaf', start: '11%', top: 205, dir: -1 },
-  { icon: 'note', tone: 'berry', start: '1%', top: 380, dir: -1, hideM: true },
-  { icon: 'flame', tone: 'honey', start: '72%', top: 20, dir: 1 },
-  { icon: 'todo', tone: 'leaf', start: '78%', top: 190, dir: 1 },
-  { icon: 'meal', tone: 'clay', start: '70%', top: 460, dir: 1, hideM: true },
-  { icon: 'cake', tone: 'honey', start: '12%', top: 520, dir: -1, hideM: true },
+export const HERO_SCENES = [
+  { id: 'calendar', shot: 'shot-calendar', cards: [['cal', 'lake'], ['cal', 'berry'], ['people', 'honey']] },
+  { id: 'todos', shot: 'shot-todos', cards: [['todo', 'leaf'], ['todo', 'lake'], ['todo', 'berry']] },
+  { id: 'shopping', shot: 'shot-shopping', cards: [['cart', 'leaf'], ['cart', 'honey'], ['cart', 'clay']] },
+  { id: 'habits', shot: 'shot-habits', cards: [['flame', 'honey'], ['flame', 'lake'], ['paw', 'leaf']] },
+  { id: 'notes', shot: 'shot-notes', cards: [['note', 'berry'], ['note', 'lake'], ['note', 'honey']] },
+  { id: 'birthdays', shot: 'shot-birthdays', cards: [['cake', 'honey'], ['todo', 'leaf'], ['cake', 'berry']] },
+  { id: 'meals', shot: 'shot-mealplan', cards: [['meal', 'honey'], ['meal', 'leaf'], ['meal', 'clay']] },
 ];
+
+/**
+ * The rating row under the hero buttons (home.hero.rating, {rating}).
+ * Copy the real number from the store by hand. Never round up, never show a
+ * number the store doesn't show. Set to null to hide the row.
+ * (2026-09-28: Google Play shows 4.7; the App Store has no ratings yet.)
+ */
+export const RATING = { value: 4.7, source: 'Google Play', url: 'https://play.google.com/store/apps/details?id=app.daili' };
+
+/**
+ * "Start the day together": the six cards, in home.day.cards order — the
+ * screenshot, the card's tint (no two grid neighbours share one, in three
+ * columns, in two, and in one) and the widget's glyph and tone. `done` draws
+ * the widget ticked; `energy` is the habits card, whose widget is laid over
+ * the screenshot's own Family-energy card (HABITS_ENERGY).
+ */
+export const DAY_CARDS = [
+  { shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true },
+  { shot: 'shot-habits', tint: 'honey', energy: true },
+  { shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry' },
+  { shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay' },
+  { shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake' },
+  { shot: 'shot-birthdays', tint: 'leaf', icon: 'cake', tone: 'honey' },
+];
+
+/**
+ * Where the "Family energy" card sits in shot-habits, in % of the screenshot's
+ * height (top edge and height). Measured 2026-09-28 by scanning the pixels of
+ * the en, de, fr, ja and ko captures: 652–653 px to 793–796 px of 1391 — the
+ * same place in every locale. The habits widget is centred on it so the energy
+ * card is never shown twice.
+ */
+export const HABITS_ENERGY = { top: 46.9, height: 10.2 };
+
+/**
+ * The drawn home-screen widgets in "On every screen" (the light variants of
+ * ios/FamCanvasWidgets/*.swift). Words are home.screens.widgets.* and the
+ * hero's scene cards; this is the data a widget shows that is not a word.
+ * `next` = the two events' times and bar colours, `habits` = per row the
+ * count ring (null = done) and whose it is (HOME_FAMILY index).
+ */
+export const HOME_WIDGETS = {
+  next: [{ time: '16:30', color: '#4F86B0' }, { time: '18:30', color: '#2F7D4F' }],
+  toBuy: 5,
+  energy: [34, 40],
+  habits: [{ ring: '2/5', who: 0, color: '#A9628F' }, { ring: null, who: 4, color: '#E0A032' }, { ring: '0/1', who: 3, color: '#4F86B0' }],
+};
 
 /** The "Works with" row, in home.works.items order. */
 export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'globe'];
@@ -1115,20 +1163,26 @@ export const HOME_FAMILY = [
   { name: 'Sofia', av: 'adult_12' },
 ];
 
-/** The twelve app tiles around the calendar orbit: glyph, colour, place. */
+/**
+ * The calendar orbit: three rings at equal steps (radius in px) and the twelve
+ * app tiles on them — glyph, colour, ring (0 = inner), angle on the ring
+ * (degrees, 0 = top, clockwise) and the tile's own tilt. The whole orbit turns
+ * once in ~90 s (home.css); the tiles turn back so they stay upright.
+ */
+export const ORBIT_RINGS = [190, 330, 470];
 export const ORBIT_TILES = [
-  { icon: 'cal', color: '#4F86B0', x: 50, y: 0, r: -8 },
-  { icon: 'watch', color: '#15271F', x: 50, y: 100, r: -6 },
-  { icon: 'globe', color: '#18A06A', x: 15, y: 85, r: 12 },
-  { icon: 'eink', color: '#15271F', x: 0, y: 50, r: -10 },
-  { icon: 'phone', color: '#A9628F', x: 15, y: 15, r: 6 },
-  { icon: 'outlook', color: '#2E6DB4', x: 28, y: 24, r: 9 },
-  { icon: 'flag', color: '#D9714A', x: 72, y: 24, r: -7 },
-  { icon: 'cake', color: '#E0A032', x: 24, y: 72, r: -9 },
-  { icon: 'widgets', color: '#4F86B0', x: 76, y: 76, r: 8 },
-  { icon: 'people', color: '#18A06A', x: 37, y: 37, r: 6 },
-  { icon: 'todo', color: '#18A06A', x: 63, y: 63, r: -8 },
-  { icon: 'photo', color: '#A9628F', x: 37, y: 63, r: 10 },
+  { icon: 'people', color: '#18A06A', ring: 0, a: 20, r: 6 },
+  { icon: 'todo', color: '#18A06A', ring: 0, a: 140, r: -8 },
+  { icon: 'photo', color: '#A9628F', ring: 0, a: 260, r: 10 },
+  { icon: 'cal', color: '#4F86B0', ring: 1, a: 0, r: -8 },
+  { icon: 'outlook', color: '#2E6DB4', ring: 1, a: 90, r: 9 },
+  { icon: 'cake', color: '#E0A032', ring: 1, a: 180, r: -9 },
+  { icon: 'flag', color: '#D9714A', ring: 1, a: 270, r: -7 },
+  { icon: 'watch', color: '#15271F', ring: 2, a: 36, r: -6 },
+  { icon: 'globe', color: '#18A06A', ring: 2, a: 108, r: 12 },
+  { icon: 'eink', color: '#15271F', ring: 2, a: 180, r: -10 },
+  { icon: 'phone', color: '#A9628F', ring: 2, a: 252, r: 6 },
+  { icon: 'widgets', color: '#4F86B0', ring: 2, a: 324, r: 8 },
 ];
 
 /**
@@ -1163,7 +1217,8 @@ export const MOSAIC = [
 /**
  * The flat-lay around the last phone: twelve objects, each with its place
  * (inset-inline-start %, top px), width, tilt and where it slides in from
- * (fx/fy px; fx flips in RTL).
+ * (fx/fy px; fx flips in RTL). home.js also turns each one in from its tilt
+ * ± 10–14° (alternating) as it slides.
  */
 export const FLAT_OBJECTS = [
   { obj: 'o_tote', start: 4, top: 40, w: 250, rot: -10, fx: -300, fy: -80 },
@@ -1211,9 +1266,10 @@ export const SHOT_LOCALE = {
  * The raw store-screenshot file names and the site names they become. Also read
  * by tools/make-site-shots.py, which is the only thing that writes shots/.
  *
- * shot-recipes, shot-photos and shot-documents are missing from this map on
- * purpose: the demo family has no capture of those three screens yet, so their
- * files live in shots/en/ only and every locale falls back to them.
+ * shot-photos and shot-documents are missing from this map on purpose: the
+ * demo family has no capture of those two screens yet, so their files live in
+ * shots/en/ only and every locale falls back to them. (shot-recipes joined on
+ * 2026-09-28, from the store pipeline's 10-recipes captures.)
  */
 export const SHOT_SOURCES = {
   '01-dashboard': 'shot-home',
@@ -1225,6 +1281,7 @@ export const SHOT_SOURCES = {
   '07-family': 'shot-family',
   '08-habits': 'shot-habits',
   '09-notes': 'shot-notes',
+  '10-recipes': 'shot-recipes',
 };
 
 /** Intrinsic pixel sizes, measured from the files. Used for width/height so the

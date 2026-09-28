@@ -49,9 +49,7 @@
       "features": "Özellikler",
       "plus": "Daili Plus",
       "screens": "Saat ve widget'lar",
-      "privacy": "Gizlilik",
       "login": "Giriş yap",
-      "cta": "Uygulamayı indir",
       "downloadApp": "Uygulamayı indir",
       "openWebApp": "Web uygulamasını aç"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Ailenizin haftası için sakin bir yer: takvim, listeler, görevler, alışkanlıklar ve notlar, herkesin gözü önünde. Her telefonda, bileğinizde ve tarayıcıda.",
-      "cta": "Ücretsiz indir",
-      "alt": "Telefonda Daili ana ekranı ve sıradaki etkinliği gösteren bir Apple Watch",
-      "cards": [
-        { "t": "Yüzme kursu", "s": "Bugün · 16.30 · Noah" },
-        { "t": "Süt · 2 l", "s": "Marco markette" },
-        { "t": "Yemek parası", "s": "Cuma için sabitlendi" },
-        { "t": "Esneme · 5 dk", "s": "4 günlük seri" },
-        { "t": "Çöpü çıkar", "s": "Noah · bu akşam" },
-        { "t": "Sebzeli köri", "s": "Bu akşamın yemeği" },
-        { "t": "Emma'ya hediye", "s": "Doğum günü 2 gün sonra" }
-      ],
       "rating": "Google Play'de {rating}",
       "ratingAlt": "Google Play'de 5 üzerinden {rating} puan",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Güne birlikte başlayın",
       "sub": "Ailenizin bilmesi gereken her şey, zaten baktığınız yerlerde.",
       "cards": [
-        { "h3": "Takvim", "p": "Herkesin haftası tek bakışta. Okul, yüzme ve dişçi; herkes kendi renginde.", "t": "Yüzme kursu", "s": "Sal · 16.30 · Noah" },
-        { "h3": "Listeler", "p": "Sütü mutfakta ekleyin, markette işaretleyin. Herkes anında görür.", "t": "Ekmek", "s": "Marco işaretledi · az önce" },
-        { "h3": "Alışkanlıklar", "p": "Küçük rutinler, hep birlikte. Her işaret ailenizin kedisi Minzi'ye daha fazla enerji verir.", "t": "Aile enerjisi · 34 / 40", "s": "6 daha ve Minzi geziye çıkıyor" }
-      ],
-      "cards6": [
         { "h3": "Listeler", "p": "Sütü mutfakta ekleyin, markette işaretleyin. Herkes anında görür.", "t": "Ekmek", "s": "Marco işaretledi · az önce" },
         { "h3": "Alışkanlıklar", "p": "Küçük rutinler, hep birlikte. Her işaret ailenizin kedisi Minzi'ye daha fazla enerji verir.", "t": "Aile enerjisi · 34 / 40", "s": "6 tane daha, Minzi yolculuğa çıkıyor" },
         { "h3": "Notlar", "p": "Aklınıza gelenler, Wi-Fi şifresi, babaanneyi kimin alacağı. Notu kendinize saklayın ya da aileyle paylaşın.", "t": "Babaanne Cmt. 15.00'te geliyor", "s": "Aileyle paylaşıldı" },
@@ -182,14 +164,6 @@
         { "h3": "Yemek planı", "p": "Haftanın kahvaltısını, öğle ve akşam yemeğini planlayın; saat altıda kimse akşama ne yiyeceğimizi sormasın.", "t": "Sebzeli köri", "s": "Akşam yemeği · Pazartesi" },
         { "h3": "Doğum günleri", "p": "Ailedeki her doğum günü için geri sayım ve hediyeyi zamanında almanız için bir hatırlatma.", "t": "Emma 12 yaşına giriyor", "s": "3 gün 12 saat sonra" }
       ]
-    },
-    "dinner": {
-      "h3": "Akşam yemeği belli",
-      "p": "Haftanın yemeklerini planlayın, aile tariflerini saklayın ve malzemeleri tek dokunuşla alışveriş listesine gönderin.",
-      "chips": ["Yemek planı", "Tarif defteri", "Alışveriş listesine"],
-      "t": "Tatlı ekşi çıtır tofu",
-      "s": "2 porsiyon · 13 malzeme",
-      "add": "Alışverişe ekle"
     },
     "calendars": {
       "h3": "Takvimlerinizi bağlayın",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widget'lar",
-        "p": "Sıradakiler, alışveriş, görevler, alışkanlıklar, notlar ve doğum günleri ana ekranınızda.",
-        "next": "Sıradaki",
-        "swim": "Yüzme",
-        "habits": "Alışkanlık",
-        "done": "bugün bitti",
-        "groceries": "Alışveriş",
-        "items": ["Süt", "Yumurta", "Elma"]
-      },
-      "widgets2": {
-        "h3": "Widget'lar",
         "p": "Sıradakiler, alışveriş, alışkanlıklar, doğum günleri ve hızlı ekleme, doğrudan ana ekranınızda.",
-        "upcoming": "Yaklaşanlar",
         "toBuy": "{count} alınacak",
         "energy": "Enerji {n}/{max}",
         "habits": "Alışkanlıklar",
-        "startsIn": "başlamasına",
-        "days": "gün",
-        "birthday": "Doğum günü",
-        "event": "Etkinlik",
-        "task": "Görev",
-        "item": "Öğe",
-        "meal": "Öğün"
-      },
-      "trmnl": {
-        "h3": "TRMNL ile duvarda",
-        "p": "Aile haftasını koridordaki bir TRMNL e-kâğıt ekranında gösterin. Parlama yok, gürültü yok.",
-        "days": [
-          { "d": "Pzt", "ev": ["Piyano 15.00", "Dişçi"] },
-          { "d": "Sal", "ev": ["Yüzme 16.30", "Veli 18.30"] },
-          { "d": "Çar", "ev": ["Futbol 17.00"] },
-          { "d": "Per", "ev": ["Film gecesi"] }
-        ]
+        "groceries": "Alışveriş",
+        "items": ["Süt", "Yumurta", "Elma"]
       },
       "tablet": {
         "h3": "Her tablet duvarda aile panosu olur",

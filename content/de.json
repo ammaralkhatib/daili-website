@@ -49,9 +49,7 @@
       "features": "Funktionen",
       "plus": "Daili Plus",
       "screens": "Uhr & Widgets",
-      "privacy": "Datenschutz",
       "login": "Anmelden",
-      "cta": "App holen",
       "downloadApp": "App laden",
       "openWebApp": "Web-App öffnen"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Ein ruhiger Ort für die Woche eurer Familie: Kalender, Listen, Aufgaben, Gewohnheiten und Notizen, die alle sehen. Auf jedem Handy, am Handgelenk und im Browser.",
-      "cta": "Kostenlos laden",
-      "alt": "Der Daili-Startbildschirm auf einem Handy, dazu eine Apple Watch mit dem nächsten Termin",
-      "cards": [
-        { "t": "Schwimmkurs", "s": "Heute · 16:30 · Noah" },
-        { "t": "Milch · 2 l", "s": "Marco ist im Supermarkt" },
-        { "t": "Essensgeld", "s": "Angeheftet für Freitag" },
-        { "t": "Dehnen · 5 Min.", "s": "4 Tage in Folge" },
-        { "t": "Müll rausbringen", "s": "Noah · heute Abend" },
-        { "t": "Gemüsecurry", "s": "Heute zum Abendessen" },
-        { "t": "Geschenk für Emma", "s": "Geburtstag in 2 Tagen" }
-      ],
       "rating": "{rating} bei Google Play",
       "ratingAlt": "Mit {rating} von 5 bei Google Play bewertet",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Gemeinsam in den Tag",
       "sub": "Alles, was eure Familie wissen muss, genau dort, wo ihr sowieso hinschaut.",
       "cards": [
-        { "h3": "Kalender", "p": "Die Woche aller auf einen Blick. Schule, Schwimmen und Zahnarzt, jede Person in ihrer eigenen Farbe.", "t": "Schwimmkurs", "s": "Di. · 16:30 · Noah" },
-        { "h3": "Listen", "p": "Milch in der Küche eintragen, im Laden abhaken. Alle sehen es sofort.", "t": "Brot", "s": "Von Marco abgehakt · gerade" },
-        { "h3": "Gewohnheiten", "p": "Kleine Routinen, gemeinsam erledigt. Jeder Haken gibt Minzi, eurer Familienkatze, mehr Energie.", "t": "Familienenergie · 34/40", "s": "Noch 6, dann reist Minzi los" }
-      ],
-      "cards6": [
         { "h3": "Listen", "p": "Milch in der Küche eintragen, im Laden abhaken. Alle sehen es sofort.", "t": "Brot", "s": "Von Marco abgehakt · gerade" },
         { "h3": "Gewohnheiten", "p": "Kleine Routinen, gemeinsam erledigt. Jeder Haken gibt Minzi, eurer Familienkatze, mehr Energie.", "t": "Familienenergie · 34 / 40", "s": "Noch 6 und Minzi fährt auf Reisen" },
         { "h3": "Notizen", "p": "Schnelle Gedanken, das WLAN-Passwort, wer Oma abholt. Behaltet eine Notiz für euch oder teilt sie mit der Familie.", "t": "Oma kommt Samstag um 15 Uhr", "s": "Mit der Familie geteilt" },
@@ -182,14 +164,6 @@
         { "h3": "Essensplan", "p": "Plant Frühstück, Mittag- und Abendessen für die ganze Woche, damit um sechs keiner fragt, was es heute gibt.", "t": "Gemüsecurry", "s": "Abendessen · Montag" },
         { "h3": "Geburtstage", "p": "Countdowns für jeden Geburtstag in der Familie und eine Erinnerung, rechtzeitig das Geschenk zu besorgen.", "t": "Emma wird 12", "s": "In 3 Tagen, 12 Stunden" }
       ]
-    },
-    "dinner": {
-      "h3": "Abendessen? Steht schon.",
-      "p": "Plant die Mahlzeiten der Woche, bewahrt eure Familienrezepte auf und schickt die Zutaten mit einem Tipp auf die Einkaufsliste.",
-      "chips": ["Essensplan", "Rezeptbox", "Auf die Einkaufsliste"],
-      "t": "Knuspriger Tofu süß-sauer",
-      "s": "2 Portionen · 13 Zutaten",
-      "add": "Zu Einkaufen hinzufügen"
     },
     "calendars": {
       "h3": "Eure Kalender verbinden",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgets",
-        "p": "Nächste Termine, Einkaufen, Aufgaben, Gewohnheiten, Notizen und Geburtstage auf dem Startbildschirm.",
-        "next": "Demnächst",
-        "swim": "Schwimmen",
-        "habits": "Gewohnheiten",
-        "done": "heute erledigt",
-        "groceries": "Einkaufen",
-        "items": ["Milch", "Eier", "Äpfel"]
-      },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Nächste Termine, Einkaufen, Gewohnheiten, Geburtstage und Schnelleingabe direkt auf dem Startbildschirm.",
-        "upcoming": "Demnächst",
         "toBuy": "{count} zu kaufen",
         "energy": "Energie {n}/{max}",
         "habits": "Gewohnheiten",
-        "startsIn": "beginnt in",
-        "days": "Tage",
-        "birthday": "Geburtstag",
-        "event": "Termin",
-        "task": "Aufgabe",
-        "item": "Eintrag",
-        "meal": "Essen"
-      },
-      "trmnl": {
-        "h3": "An der Wand mit TRMNL",
-        "p": "Zeigt die Familienwoche auf einem TRMNL-E-Paper-Display im Flur. Kein Leuchten, kein Lärm.",
-        "days": [
-          { "d": "Mo", "ev": ["Klavier 15:00", "Zahnarzt"] },
-          { "d": "Di", "ev": ["Schwimmen 16:30", "Eltern 18:30"] },
-          { "d": "Mi", "ev": ["Fußball 17:00"] },
-          { "d": "Do", "ev": ["Filmabend"] }
-        ]
+        "groceries": "Einkaufen",
+        "items": ["Milch", "Eier", "Äpfel"]
       },
       "tablet": {
         "h3": "An der Wand, mit jedem Tablet",

@@ -49,9 +49,7 @@
       "features": "Funksjoner",
       "plus": "Daili Plus",
       "screens": "Klokke og widgets",
-      "privacy": "Personvern",
       "login": "Logg inn",
-      "cta": "Hent appen",
       "downloadApp": "Last ned appen",
       "openWebApp": "Åpne nettappen"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Ett rolig sted for familiens uke: kalender, lister, oppgaver, vaner og notater som alle ser. På hver mobil, på håndleddet og i nettleseren.",
-      "cta": "Last ned gratis",
-      "alt": "Daili-startskjermen på en mobil, med en Apple Watch som viser neste avtale",
-      "cards": [
-        { "t": "Svømming", "s": "I dag · 16:30 · Noah" },
-        { "t": "Melk · 2 l", "s": "Marco er i butikken" },
-        { "t": "Turpenger", "s": "Festet til fredag" },
-        { "t": "Tøying · 5 min", "s": "4 dager på rad" },
-        { "t": "Kaste søpla", "s": "Noah · i kveld" },
-        { "t": "Grønnsakscurry", "s": "Middag i kveld" },
-        { "t": "Gave til Emma", "s": "Bursdag om 2 dager" }
-      ],
       "rating": "{rating} på Google Play",
       "ratingAlt": "Vurdert til {rating} av 5 på Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Start dagen sammen",
       "sub": "Alt familien trenger å vite, der dere allerede ser.",
       "cards": [
-        { "h3": "Kalender", "p": "Hele familiens uke med ett blikk. Skole, svømming og tannlege, hver person i sin egen farge.", "t": "Svømming", "s": "Tir. · 16:30 · Noah" },
-        { "h3": "Lister", "p": "Skriv opp melk på kjøkkenet, kryss den av i butikken. Alle ser det med en gang.", "t": "Brød", "s": "Krysset av av Marco · nå" },
-        { "h3": "Vaner", "p": "Små rutiner, gjort sammen. Hvert kryss gir Minzi, familiekatten deres, mer energi.", "t": "Familieenergi · 34 / 40", "s": "6 til, så drar Minzi på tur" }
-      ],
-      "cards6": [
         { "h3": "Lister", "p": "Skriv opp melk på kjøkkenet, kryss den av i butikken. Alle ser det med en gang.", "t": "Brød", "s": "Krysset av av Marco · nå" },
         { "h3": "Vaner", "p": "Små rutiner, gjort sammen. Hvert kryss gir Minzi, familiekatten deres, mer energi.", "t": "Familiens energi · 34 / 40", "s": "6 til, så drar Minzi på tur" },
         { "h3": "Notater", "p": "Raske tanker, Wi-Fi-passordet, hvem som henter mormor. Hold et notat privat eller del det med familien.", "t": "Mormor kommer lørdag kl. 15", "s": "Delt med familien" },
@@ -182,14 +164,6 @@
         { "h3": "Matplan", "p": "Planlegg frokost, lunsj og middag for uka, så ingen spør hva det blir til middag klokka seks.", "t": "Grønnsakskarri", "s": "Middag · mandag" },
         { "h3": "Bursdager", "p": "Nedtelling til hver bursdag i familien, og en påminnelse i tide til å rekke gaven.", "t": "Emma fyller 12", "s": "Om 3 dager og 12 timer" }
       ]
-    },
-    "dinner": {
-      "h3": "Middagen er bestemt",
-      "p": "Planlegg ukens måltider, ta vare på familieoppskriftene og send ingrediensene til handlelisten med ett trykk.",
-      "chips": ["Matplan", "Oppskrifter", "Til handlelisten"],
-      "t": "Sursøt sprø tofu",
-      "s": "2 porsjoner · 13 ingredienser",
-      "add": "Legg til i Innkjøp"
     },
     "calendars": {
       "h3": "Koble til kalenderne deres",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgets",
-        "p": "Neste avtale, innkjøp, oppgaver, vaner, notater og bursdager på startskjermen.",
-        "next": "Neste",
-        "swim": "Svømming",
-        "habits": "Vaner",
-        "done": "gjort i dag",
-        "groceries": "Innkjøp",
-        "items": ["Melk", "Egg", "Epler"]
-      },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Neste avtale, innkjøp, vaner, bursdager og hurtiglegging, rett på startskjermen.",
-        "upcoming": "Kommende",
         "toBuy": "{count} å kjøpe",
         "energy": "Energi {n}/{max}",
         "habits": "Vaner",
-        "startsIn": "starter om",
-        "days": "dager",
-        "birthday": "Bursdag",
-        "event": "Hendelse",
-        "task": "Oppgave",
-        "item": "Punkt",
-        "meal": "Måltid"
-      },
-      "trmnl": {
-        "h3": "På veggen med TRMNL",
-        "p": "Vis familiens uke på en TRMNL-skjerm med e-papir i gangen. Ingen lys, ingen støy.",
-        "days": [
-          { "d": "Man", "ev": ["Piano 15:00", "Tannlege"] },
-          { "d": "Tir", "ev": ["Svøm 16:30", "Foreldre 18:30"] },
-          { "d": "Ons", "ev": ["Fotball 17:00"] },
-          { "d": "Tor", "ev": ["Filmkveld"] }
-        ]
+        "groceries": "Innkjøp",
+        "items": ["Melk", "Egg", "Epler"]
       },
       "tablet": {
         "h3": "På veggen med hvilket som helst nettbrett",

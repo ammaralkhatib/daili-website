@@ -4,8 +4,9 @@
     python3 tools/make-site-shots.py            # every locale in SHOT_LOCALE
     python3 tools/make-site-shots.py de fr      # just these site locales
     python3 tools/make-site-shots.py --check    # measure, write nothing
+    python3 tools/make-site-shots.py --only shot-recipes   # one screen, every locale
 
-Reads  ../store-shots/raw/<store-locale>/<01-dashboard…09-notes>.png
+Reads  ../store-shots/raw/<store-locale>/<01-dashboard…10-recipes>.png
 Writes static/assets/img/shots/<site-locale>/<shot-*>.webp   (640 px wide)
 
 The output is **committed**. The build must succeed on a machine that has no
@@ -78,10 +79,18 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("locales", nargs="*", help="site locales; default: all mapped")
     ap.add_argument("--check", action="store_true", help="measure, write nothing")
+    ap.add_argument("--only", action="append", metavar="SHOT",
+                    help="convert only this site name (e.g. shot-recipes); repeatable. "
+                         "A new screen then does not re-encode the committed ones.")
     args = ap.parse_args()
 
     shot_locale = js_map("SHOT_LOCALE")
     sources = js_map("SHOT_SOURCES")
+    if args.only:
+        missing = [s for s in args.only if s not in sources.values()]
+        if missing:
+            sys.exit(f"not in SHOT_SOURCES: {', '.join(missing)}")
+        sources = {raw: name for raw, name in sources.items() if name in args.only}
 
     wanted = args.locales or list(shot_locale)
     unknown = [loc for loc in wanted if loc not in shot_locale]

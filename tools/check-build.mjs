@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, DAY_CARDS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -593,8 +593,8 @@ for (const f of htmlFiles) {
 // does not must show English and nothing else. Without the second half, a typo
 // in SHOT_LOCALE that points ja at a folder of German screenshots would ship.
 //
-// shot-recipes, shot-photos and shot-documents are English everywhere (no demo
-// capture exists yet). Every SHOT_SOURCES screen the page shows must come from
+// shot-photos and shot-documents are English everywhere (no demo capture
+// exists yet; shot-recipes got its own on 2026-09-28). Every SHOT_SOURCES screen the page shows must come from
 // the locale's own folder — one missing file would otherwise fall back to
 // English without a word. (Since the 2026-09-28 home page not every one of the
 // nine is on the page: shot-family is not.)
@@ -633,8 +633,14 @@ for (const loc of LOCALES) {
 //   - the sections, in order: #hero, #features, .day, #plus, #workflows,
 //     #screens, #privacy, .care, (#reviews only with REVIEWS.length >= 3),
 //     #get, #faq — and the footer after </main>;
-//   - 7 hero cards, 8 member photo cards (the loop's copy is aria-hidden and
-//     not counted), 4 workflow buttons / screens / toasts, 3 Daili Plus cards;
+//   - the hero's scene loop: 7 scenes × 3 cards and 7 screenshots (round 2);
+//     8 member photo cards (the loop's copy is aria-hidden and not counted),
+//     6 "Start the day" cards, 2 floating cards on the calendars card,
+//     3 Daili Plus cards, 4 workflow buttons / screens / toasts, 5 boxes in
+//     "On every screen" and no TRMNL box among them;
+//   - the rating row shows RATING.value (formatted for the page's locale),
+//     and there is no rating row at all when RATING is null;
+//   - no shutter bars (.shut / .shut-rows) anywhere — removed in round 2;
 //   - the member number, formatted for the page's locale, and no {count}
 //     anywhere in dist/;
 //   - with fewer than 3 REVIEWS no reviews section at all, and never the
@@ -688,8 +694,37 @@ for (const loc of LOCALES) {
     if (mainEnd === -1 || footerAt < mainEnd) fail(out, 'the footer is not after </main> — the home page ends with the normal site footer');
 
     const hero = sectionAt(html, '<section class="hero" id="hero"');
+    const nScenes = HERO_SCENES.length;
+    const heroShots = count(hero, '<img class="hs" data-scene="');
+    if (heroShots !== nScenes) fail(out, `the hero phone has ${heroShots} screenshots, expected ${nScenes} (one per HERO_SCENES scene)`);
+    for (let i = 0; i < nScenes; i++) {
+      const n = count(hero, `class="fc hcard" data-scene="${i}"`);
+      if (n !== 3) fail(out, `hero scene ${i + 1} has ${n} cards, expected 3 (home.hero.scenes[${i}].cards)`);
+    }
     const heroCards = count(hero, 'class="fc hcard');
-    if (heroCards !== 7) fail(out, `the hero has ${heroCards} floating cards, expected 7 (home.hero.cards)`);
+    if (heroCards !== nScenes * 3) fail(out, `the hero has ${heroCards} scene cards, expected ${nScenes} × 3`);
+    const ratingRows = count(hero, '<a class="rating"');
+    if (!RATING) {
+      if (ratingRows) fail(out, 'shows a rating row but RATING is null — set to null means no row');
+    } else if (ratingRows !== 1) {
+      fail(out, `has ${ratingRows} rating rows, expected 1 (RATING is set)`);
+    } else {
+      const shown = (hero.match(/<a class="rating"[^>]*data-rating="([^"]*)"[\s\S]*?<span class="rt">([^<]*)<\/span>/) || []);
+      const num = new Intl.NumberFormat(loc, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(RATING.value);
+      if (shown[1] !== String(RATING.value) || !(shown[2] || '').includes(num)) {
+        fail(out, `the rating row shows ${shown[1] ?? 'nothing'} / "${shown[2] ?? ''}", expected RATING.value ${RATING.value} (${num} in ${loc}) — never a number the store does not show`);
+      }
+    }
+    if (/class="[^"]*\bshut(?:-rows)?\b/.test(html)) fail(out, 'has a shutter bar (.shut / .shut-rows) — removed in round 2');
+    const daySec = sectionAt(html, '<section class="day"');
+    const dayCards = count(daySec, '<article class="fcard ');
+    if (dayCards !== DAY_CARDS.length) fail(out, `"Start the day together" has ${dayCards} cards, expected ${DAY_CARDS.length} (home.day.cards)`);
+    const calCards = count((daySec.split('id="calendars"')[1] || '').split('</article>')[0], '<div class="fc">');
+    if (calCards !== 2) fail(out, `the calendars card has ${calCards} floating cards, expected 2 (Google + Apple)`);
+    const screens = sectionAt(html, 'id="screens"');
+    const boxes = count(screens, '<article class="bx ');
+    if (boxes !== 5) fail(out, `"On every screen" has ${boxes} boxes, expected 5`);
+    if (/trmnl|class="eink"/i.test(screens)) fail(out, '"On every screen" still has the TRMNL box — it became "On the wall with any tablet"');
     const members = sectionAt(html, 'id="features"');
     const firstSet = (members.match(/<div class="marq-set">([\s\S]*?)<\/div>\n/) || [, ''])[1];
     const photos = count(firstSet, '<div class="mcard"><img');

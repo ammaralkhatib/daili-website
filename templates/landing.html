@@ -17,14 +17,18 @@
   <section class="hero" id="hero">
     <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i><i class="a5"></i><div class="band"></div><div class="fade"></div></div>
     <div class="hero-copy wrap">
-      <h1>{{{ page.home.h1 }}}</h1>
-      <p class="lead" data-hi>{{ home.hero.lead }}</p>
-      <div class="hero-cta" data-hi><a class="btn-dark" href="#get">{{{ page.home.phoneIcon }}}{{ home.hero.cta }}</a><a class="link-u" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a></div>
       <div class="pills" data-hi>
 {{# hero.notes }}        <span class="pill">{{{ page.home.checkIcon }}}{{ . }}</span>
 {{/}}      </div>
+      <h1>{{{ page.home.h1 }}}</h1>
+      <p class="lead" data-hi>{{ home.hero.lead }}</p>
+      <div class="hero-cta ctas badges" data-hi>
+{{> storebadges }}
+          <a class="web-btn" href="{{ page.webAppUrl }}" rel="noopener">{{{ page.home.globeIcon }}}{{ hero.webLink }}</a>
+      </div>
+{{{ page.home.rating }}}
     </div>
-    <div class="stage">
+    <div class="stage" data-stage>
       {{{ page.home.heroPhone }}}
       {{{ page.home.heroWatch }}}
 {{{ page.home.heroCards }}}
@@ -53,12 +57,6 @@
       <div class="cols">
 {{{ page.home.dayCards }}}
       </div>
-      <article class="wide g-clay" data-r>
-        <div class="tx"><h3>{{ home.dinner.h3 }}</h3><p>{{ home.dinner.p }}</p><div class="mini-row">
-{{# home.dinner.chips }}          <span class="chip">{{ . }}</span>
-{{/}}        </div></div>
-        <div class="vis">{{{ page.home.dinnerVis }}}</div>
-      </article>
       <article class="wide g-lake" id="calendars" data-r>
         <div class="vis">{{{ page.home.calendarsVis }}}</div>
         <div class="tx tx-end"><h3>{{ home.calendars.h3 }}</h3><p>{{ home.calendars.p }}</p></div>
@@ -83,7 +81,6 @@
   </section>
 
   <section class="flow" id="workflows">
-    <div class="shut" aria-hidden="true"><div class="shut-rows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
     <div class="wrap flow-grid">
       <div>
         <h2 class="h2" data-r>{{ home.flow.h2 }}</h2>
@@ -110,7 +107,7 @@
 
   <section class="priv" id="privacy">
     <div class="wrap"><div class="vault" data-vault>
-      <svg class="lock" viewBox="0 0 440 600" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".22"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#CFEFC6" stop-opacity=".18"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".06"/></linearGradient></defs><g data-shackle><path d="M110 270V170a110 110 0 0 1 220 0v100" fill="none" stroke="url(#lg2)" stroke-width="46" stroke-linecap="round"/></g><rect x="30" y="250" width="380" height="330" rx="64" fill="url(#lg1)" stroke="#ffffff" stroke-opacity=".22" stroke-width="2"/><circle cx="220" cy="400" r="26" fill="#ffffff" fill-opacity=".14"/><rect x="210" y="410" width="20" height="60" rx="10" fill="#ffffff" fill-opacity=".14"/></svg>
+      <svg class="lock" viewBox="0 0 440 600" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".22"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#CFEFC6" stop-opacity=".18"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".06"/></linearGradient></defs><g data-shackle><path d="M110 270V170a110 110 0 0 1 220 0v100" fill="none" stroke="url(#lg2)" stroke-width="46" stroke-linecap="round"/></g><rect x="30" y="250" width="380" height="330" rx="64" fill="url(#lg1)" stroke="#ffffff" stroke-opacity=".1" stroke-width="1.5"/><circle cx="220" cy="400" r="26" fill="#ffffff" fill-opacity=".14"/><rect x="210" y="410" width="20" height="60" rx="10" fill="#ffffff" fill-opacity=".14"/></svg>
       <h2 class="h2">{{ home.privacy.h2 }}</h2>
       <p class="sub">{{ home.privacy.sub }}</p>
       <div class="glass">
@@ -132,7 +129,7 @@
       <p class="sub" data-r>{{ home.final.sub }}</p>
       <div class="ctas badges" data-r>
 {{> storebadges }}
-        <a class="btn btn-ghost" href="{{ page.webAppUrl }}" rel="noopener">{{ hero.webLink }}</a>
+        <a class="web-btn" href="{{ page.webAppUrl }}" rel="noopener">{{{ page.home.globeIcon }}}{{ home.final.web }}</a>
       </div>
       <div class="flat">
 {{{ page.home.flat }}}

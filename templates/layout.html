@@ -24,8 +24,8 @@
 <a class="skip" href="#main">{{ nav.skip }}</a>
 
 <!-- The floating pill (the 2026-09-28 home page, on every page). On a phone:
-     brand, language, the Get-the-app pill and the burger; the links move into
-     the panel the burger opens. -->
+     brand, language, the Download-app pill and the burger; the links move into
+     the panel the burger opens. Privacy and Support live in the footer. -->
 <header>
   <div class="nav">
     <a class="brand" href="{{ page.homeHref }}"><img src="/assets/img/logo.webp" alt="" width="512" height="512">daili</a>
@@ -34,17 +34,16 @@
         <a class="nl" href="{{ page.anchorBase }}#features">{{ home.nav.features }}</a>
         <a class="nl" href="{{ page.anchorBase }}#plus">{{ home.nav.plus }}</a>
         <a class="nl" href="{{ page.anchorBase }}#screens">{{ home.nav.screens }}</a>
-        <a class="nl" href="{{ page.anchorBase }}#privacy">{{ home.nav.privacy }}</a>
-        <a class="nl" href="{{ page.supportHref }}">{{ nav.support }}</a>
         <a class="nl" href="/blog/" hreflang="en" lang="en">{{ nav.blog }}</a>
         <a class="nl" href="{{ page.webAppUrl }}" rel="noopener">{{ home.nav.login }}</a>
       </nav>
     </div>
 {{{ page.langNav }}}
     <div class="dl">
-      <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>{{ home.nav.cta }}</button>
+      <button class="dl-btn" type="button" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>{{ home.nav.downloadApp }}</button>
       <div class="dl-menu">
 {{> storebadges }}
+          <a class="web-btn" href="{{ page.webAppUrl }}" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"/></svg>{{ home.nav.openWebApp }}</a>
       </div>
     </div>
     <button class="burger" type="button" aria-label="{{ nav.menu }}" aria-expanded="false" aria-controls="navmenu"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>

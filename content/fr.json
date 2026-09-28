@@ -49,9 +49,7 @@
       "features": "Fonctions",
       "plus": "Daili Plus",
       "screens": "Montre & widgets",
-      "privacy": "Confidentialité",
       "login": "Connexion",
-      "cta": "Obtenir l'app",
       "downloadApp": "Obtenir l'app",
       "openWebApp": "Ouvrir l'app web"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Un endroit calme pour la semaine de votre famille : agenda, listes, tâches, habitudes et notes, visibles par tous. Sur chaque téléphone, au poignet et dans le navigateur.",
-      "cta": "Télécharger gratuitement",
-      "alt": "L'écran d'accueil de Daili sur un téléphone, avec une Apple Watch qui affiche le prochain événement",
-      "cards": [
-        { "t": "Cours de natation", "s": "Aujourd'hui · 16h30 · Noah" },
-        { "t": "Lait · 2 l", "s": "Marco est en magasin" },
-        { "t": "Argent de la cantine", "s": "Épinglé pour vendredi" },
-        { "t": "Étirements · 5 min", "s": "4 jours d'affilée" },
-        { "t": "Sortir les poubelles", "s": "Noah · ce soir" },
-        { "t": "Curry de légumes", "s": "Dîner de ce soir" },
-        { "t": "Cadeau pour Emma", "s": "Anniversaire dans 2 jours" }
-      ],
       "rating": "{rating} sur Google Play",
       "ratingAlt": "Noté {rating} sur 5 sur Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Commencez la journée ensemble",
       "sub": "Tout ce que votre famille doit savoir, là où vous regardez déjà.",
       "cards": [
-        { "h3": "Agenda", "p": "La semaine de chacun en un coup d'œil. École, natation, dentiste : chacun a sa couleur.", "t": "Cours de natation", "s": "mar. · 16h30 · Noah" },
-        { "h3": "Listes", "p": "Ajoutez le lait dans la cuisine, cochez-le au magasin. Tout le monde le voit aussitôt.", "t": "Pain", "s": "Coché par Marco · à l'instant" },
-        { "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie · 34 / 40", "s": "Encore 6 et Minzi part en voyage" }
-      ],
-      "cards6": [
         { "h3": "Listes", "p": "Ajoutez le lait dans la cuisine, cochez-le au magasin. Tout le monde le voit aussitôt.", "t": "Pain", "s": "Coché par Marco · à l'instant" },
         { "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie de la famille · 34 / 40", "s": "Encore 6 et Minzi part en voyage" },
         { "h3": "Notes", "p": "Idées en vrac, le mot de passe Wi-Fi, qui va chercher Mamie. Gardez une note pour vous ou partagez-la avec la famille.", "t": "Mamie arrive samedi à 15h", "s": "Partagé avec la famille" },
@@ -182,14 +164,6 @@
         { "h3": "Menus", "p": "Planifiez petit-déjeuner, déjeuner et dîner pour la semaine : à 18h, plus personne ne demande ce qu'on mange ce soir.", "t": "Curry de légumes", "s": "Dîner · lundi" },
         { "h3": "Anniversaires", "p": "Un compte à rebours pour chaque anniversaire de la famille, et un rappel à temps pour trouver le cadeau.", "t": "Emma fête ses 12 ans", "s": "Dans 3 jours et 12 heures" }
       ]
-    },
-    "dinner": {
-      "h3": "Le dîner, c'est réglé",
-      "p": "Planifiez les menus de la semaine, gardez les recettes de famille et envoyez les ingrédients sur votre liste de courses en un geste.",
-      "chips": ["Menus de la semaine", "Carnet de recettes", "Vers la liste de courses"],
-      "t": "Tofu caramélisé aigre-doux",
-      "s": "2 portions · 13 ingrédients",
-      "add": "Ajouter aux Courses"
     },
     "calendars": {
       "h3": "Connectez vos agendas",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgets",
-        "p": "Prochain rendez-vous, courses, tâches, habitudes, notes et anniversaires sur votre écran d'accueil.",
-        "next": "À suivre",
-        "swim": "Nage",
-        "habits": "Habitudes",
-        "done": "faites ce jour",
-        "groceries": "Courses",
-        "items": ["Lait", "Œufs", "Pommes"]
-      },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Prochain rendez-vous, courses, habitudes, anniversaires et ajout rapide, directement sur votre écran d'accueil.",
-        "upcoming": "Prochainement",
         "toBuy": "{count} à acheter",
         "energy": "Énergie {n}/{max}",
         "habits": "Habitudes",
-        "startsIn": "commence dans",
-        "days": "jours",
-        "birthday": "Anniversaire",
-        "event": "Événement",
-        "task": "Tâche",
-        "item": "Élément",
-        "meal": "Repas"
-      },
-      "trmnl": {
-        "h3": "Au mur avec TRMNL",
-        "p": "Affichez la semaine de la famille sur un écran e-paper TRMNL dans l'entrée. Sans lumière, sans bruit.",
-        "days": [
-          { "d": "Lun", "ev": ["Piano 15h00", "Dentiste"] },
-          { "d": "Mar", "ev": ["Nage 16h30", "Réunion 18h30"] },
-          { "d": "Mer", "ev": ["Foot 17h00"] },
-          { "d": "Jeu", "ev": ["Soirée ciné"] }
-        ]
+        "groceries": "Courses",
+        "items": ["Lait", "Œufs", "Pommes"]
       },
       "tablet": {
         "h3": "Au mur, avec n'importe quelle tablette",

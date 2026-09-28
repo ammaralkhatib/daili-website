@@ -49,9 +49,7 @@
       "features": "Functies",
       "plus": "Daili Plus",
       "screens": "Horloge & widgets",
-      "privacy": "Privacy",
       "login": "Inloggen",
-      "cta": "Download de app",
       "downloadApp": "App downloaden",
       "openWebApp": "Webapp openen"
     },
@@ -62,17 +60,6 @@
     },
     "hero": {
       "lead": "Eén rustige plek voor de week van je gezin: agenda, lijsten, taken, gewoontes en notities die iedereen ziet. Op elke telefoon, om je pols en in de browser.",
-      "cta": "Gratis downloaden",
-      "alt": "Het beginscherm van Daili op een telefoon, met een Apple Watch die de volgende afspraak toont",
-      "cards": [
-        { "t": "Zwemles", "s": "Vandaag · 16:30 · Noah" },
-        { "t": "Melk · 2 l", "s": "Marco is in de winkel" },
-        { "t": "Overblijfgeld", "s": "Vastgepind voor vrijdag" },
-        { "t": "Rekken · 5 min", "s": "4 dagen op rij" },
-        { "t": "Vuilnis buitenzetten", "s": "Noah · vanavond" },
-        { "t": "Groentecurry", "s": "Vanavond op tafel" },
-        { "t": "Cadeau voor Emma", "s": "Over 2 dagen jarig" }
-      ],
       "rating": "{rating} op Google Play",
       "ratingAlt": "Beoordeeld met {rating} van 5 op Google Play",
       "scenes": [
@@ -170,11 +157,6 @@
       "h2": "Samen de dag beginnen",
       "sub": "Alles wat je gezin moet weten, op de plekken waar je toch al kijkt.",
       "cards": [
-        { "h3": "Agenda", "p": "Ieders week in één oogopslag. School, zwemmen en de tandarts, iedereen in een eigen kleur.", "t": "Zwemles", "s": "Di · 16:30 · Noah" },
-        { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
-        { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34/40", "s": "Nog 6 en Minzi gaat op reis" }
-      ],
-      "cards6": [
         { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
         { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34 / 40", "s": "Nog 6 en Minzi gaat op reis" },
         { "h3": "Notities", "p": "Snelle ideeën, het wifi-wachtwoord, wie oma ophaalt. Houd een notitie voor jezelf of deel hem met het gezin.", "t": "Oma komt zaterdag om 15:00", "s": "Gedeeld met het gezin" },
@@ -182,14 +164,6 @@
         { "h3": "Menuplanner", "p": "Plan ontbijt, lunch en avondeten voor de hele week, zodat niemand om zes uur vraagt wat we eten.", "t": "Groentecurry", "s": "Avondeten · maandag" },
         { "h3": "Verjaardagen", "p": "Aftellen naar elke verjaardag in het gezin, en op tijd een herinnering om het cadeau te halen.", "t": "Emma wordt 12", "s": "Over 3 dagen en 12 uur" }
       ]
-    },
-    "dinner": {
-      "h3": "Avondeten, geregeld",
-      "p": "Plan de maaltijden van de week, bewaar de familierecepten en zet de ingrediënten met één tik op je boodschappenlijst.",
-      "chips": ["Menuplanner", "Receptenboek", "Naar de boodschappenlijst"],
-      "t": "Zoetzure sticky tofu",
-      "s": "2 porties · 13 ingrediënten",
-      "add": "Naar Boodschappen"
     },
     "calendars": {
       "h3": "Koppel je agenda's",
@@ -262,38 +236,12 @@
       },
       "widgets": {
         "h3": "Widgets",
-        "p": "Wat er straks is, boodschappen, taken, gewoontes, notities en verjaardagen op je beginscherm.",
-        "next": "Hierna",
-        "swim": "Zwemmen",
-        "habits": "Gewoontes",
-        "done": "vandaag klaar",
-        "groceries": "Boodschappen",
-        "items": ["Melk", "Eieren", "Appels"]
-      },
-      "widgets2": {
-        "h3": "Widgets",
         "p": "Eerstvolgende afspraak, boodschappen, gewoontes, verjaardagen en snel toevoegen, gewoon op je beginscherm.",
-        "upcoming": "Binnenkort",
         "toBuy": "{count} te kopen",
         "energy": "Energie {n}/{max}",
         "habits": "Gewoontes",
-        "startsIn": "begint over",
-        "days": "dagen",
-        "birthday": "Verjaardag",
-        "event": "Afspraak",
-        "task": "Taak",
-        "item": "Item",
-        "meal": "Maaltijd"
-      },
-      "trmnl": {
-        "h3": "Aan de muur met TRMNL",
-        "p": "Toon de gezinsweek op een TRMNL-scherm van e-paper in de gang. Geen licht, geen herrie.",
-        "days": [
-          { "d": "ma", "ev": ["Piano 15:00", "Tandarts"] },
-          { "d": "di", "ev": ["Zwemmen 16:30", "Ouders 18:30"] },
-          { "d": "wo", "ev": ["Voetbal 17:00"] },
-          { "d": "do", "ev": ["Filmavond"] }
-        ]
+        "groceries": "Boodschappen",
+        "items": ["Melk", "Eieren", "Appels"]
       },
       "tablet": {
         "h3": "Aan de muur met elke tablet",
