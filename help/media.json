@@ -67,5 +67,7 @@
   "calendar-photo": { "file": "calendar-photo.webp", "w": 720, "h": 622, "kind": "image" },
   "meals-photo": { "file": "meals-photo.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-suggest": { "file": "meals-suggest.webp", "w": 720, "h": 622, "kind": "image" },
-  "start-you-step": { "file": "start-you-step.webp", "w": 720, "h": 1564, "kind": "image" }
+  "start-you-step": { "file": "start-you-step.webp", "w": 720, "h": 1564, "kind": "image" },
+  "watch-up-next": { "file": "watch-up-next.webp", "w": 416, "h": 496, "kind": "image" },
+  "watch-shopping": { "file": "watch-shopping.webp", "w": 416, "h": 496, "kind": "image" }
 }

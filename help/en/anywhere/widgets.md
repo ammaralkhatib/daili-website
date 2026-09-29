@@ -9,7 +9,7 @@ since: 1.4.0
 updated: 2026-09-26
 order: 1
 mediaPending: hand-made screenshot of the phone home screen with daili widgets
-related: anywhere-widgets-settings, start-home, habits-minzi, notes-notes
+related: anywhere-widgets-settings, anywhere-watch, start-home, habits-minzi, notes-notes
 tipTitle: Your plan on your home screen
 tipBody: Add a daili widget and see what's next without opening the app.
 tipSkipIf: hasWidget
