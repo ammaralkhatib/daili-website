@@ -3,7 +3,7 @@ id: account-delete
 title: Șterge-ți contul (și răzgândește-te în 30 de zile)
 summary: Contul tău se șterge definitiv după 30 de zile. Până atunci, îl aduci înapoi conectându-te sau cu linkul din e-mailul nostru.
 keywords: șterge contul, elimină contul, închide contul, anulează ștergerea, restaurează contul, 30 de zile, părăsește daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Vrei mai întâi o copie a datelor tale? Descarc-o înainte să începi.
 
@@ -17,7 +17,7 @@ Vrei mai întâi o copie a datelor tale? Descarc-o înainte să începi.
 
 Ai ales **Vreau să o iau de la capăt**? Nu ai nevoie de un cont nou: creează în schimb o familie sau un grup nou.
 
-Timp de 30 de zile te mai poți răzgândi: conectează-te și apasă pe **Recuperează-mi contul**, sau apasă pe linkul din e-mailul nostru. După 30 de zile, se șterge definitiv.
+Timp de 30 de zile te mai poți răzgândi: conectează-te și apasă pe **Recuperează-mi contul**, sau apasă pe linkul din e-mailul nostru. Linkul îți confirmă și adresa de e-mail. După 30 de zile, se șterge definitiv.
 
 Deții o familie? Fă pe altcineva proprietar sau șterge mai întâi familia.
 

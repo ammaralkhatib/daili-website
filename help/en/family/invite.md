@@ -7,7 +7,7 @@ keywords: invite, add member, partner, code, qr, join, link, share, new code
 routes: /family, /family/invite
 tryIt: /family/invite
 since: 1.3.0
-updated: 2026-09-28
+updated: 2026-09-30
 order: 1
 media: family-invite
 related: start-home
@@ -27,6 +27,6 @@ Everyone in your family sees the same calendar, lists and birthdays.
 
 ![The Family screen. Invite member, with the current code and its end date under it, is circled.](family-invite)
 
-Each code works for one person. For the next one, tap **Invite member** again. Sharing the code or link works even before your email is verified.
+Each code works for one person. For the next one, tap **Invite member** again. Sharing the code or link works even before your email is verified. Invited an iCloud address by email? Apple sometimes blocks our emails, so send them the code or link yourself too.
 
 > Note: A code works for 7 days, and the screen shows until when. Sent it to the wrong person? Tap **Get a new code** on **Invite members**, and the old one stops working.

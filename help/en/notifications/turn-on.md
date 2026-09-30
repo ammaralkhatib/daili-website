@@ -7,7 +7,7 @@ keywords: notifications, turn on, allow, enable, push, alerts, reminders, permis
 routes: /settings/notifications
 tryIt: /settings/notifications
 since: 1.1.0
-updated: 2026-09-24
+updated: 2026-09-30
 order: 1
 media: notifications-turn-on
 related: notifications-choose, notifications-help
@@ -19,7 +19,7 @@ daili can remind you about events, to-dos, birthdays and habits, and tell you wh
 ![The top of the Notifications screen with a note that notifications are off. Turn on notifications is circled.](notifications-turn-on)
 
 1. Tap your picture at the top of Home to open **Settings**, then tap **Notifications**.
-2. While notifications are off, a note at the top says so. Tap **Turn on notifications** in it.
+2. While notifications are off, a note at the top says daili can't tell you when something changes. Tap **Turn on notifications** in it.
 3. Your phone asks. Tap **Allow**.
 4. Said no before? Then the button says **Open settings**. It opens your phone's settings for daili. Switch notifications on there.
 

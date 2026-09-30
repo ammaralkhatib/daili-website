@@ -16,8 +16,8 @@ Setelah Anda masuk, daili meminta Anda membuat keluarga atau grup, atau bergabun
 
 Sekarang Anda pemiliknya. Undang yang lain berikutnya, supaya semua orang melihat rencana yang sama.
 
-Akun baru? Ada satu langkah lebih dulu: **Hai! Siapa kamu?** Pilih foto Anda dan periksa nama Anda. Keluarga Anda melihat keduanya. Ketuk **Lanjut**, atau **Lewati**.
+Akun baru? Ada satu langkah lebih dulu: **Halo! Siapa Anda?** Pilih foto Anda dan periksa nama Anda. Keluarga Anda melihat keduanya. Ketuk **Lanjut**, atau **Lewati**.
 
-![Langkah Hai! Siapa kamu?, dengan foto sudah dipilih dan nama sudah diisi.](start-you-step)
+![Langkah Halo! Siapa Anda?, dengan foto sudah dipilih dan nama sudah diisi.](start-you-step)
 
 > Note: Sudah ada yang membuat keluarga Anda? Jangan buat yang kedua. Ketuk **Gabung keluarga atau grup** dan pakai kode mereka.

@@ -5,7 +5,7 @@ summary: Buď s jedným účtom až v 5 rodinách alebo skupinách a prepínaj m
 keywords: skupina, druhá rodina, prepnúť rodinu, starí rodičia, klub, tím, trieda, viac rodín, predvolená rodina
 tipTitle: Viac ako jedna rodina?
 tipBody: Pridaj starých rodičov alebo športový klub ako skupinu a prepínaj jedným ťuknutím.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Jeden účet môže byť až v 5 rodinách alebo skupinách: tvoja domácnosť, starí rodičia, športový klub alebo školská trieda. Každá má vlastný kalendár a zoznamy.
 
@@ -16,5 +16,7 @@ Jeden účet môže byť až v 5 rodinách alebo skupinách: tvoja domácnosť, 
 3. Ak chceš pridať ďalšiu, ťukni na **Vytvoriť rodinu alebo skupinu** alebo **Pripojiť sa pomocou kódu**.
 
 Rovnaký zoznam nájdeš aj na obrazovke Rodina: ťukni na **Prepnúť rodinu alebo skupinu**.
+
+Správcovia môžu rodine dať vlastnú fotku: na obrazovke Rodina ťukni na obrázok rodiny a odfoť, vyber alebo odstráň fotku. Ukáže sa aj v tomto zozname.
 
 > Note: Prepnutie platí len pre tento telefón. Ťukni na **⋮** vedľa rodiny a na **Nastaviť ako predvolenú** a vyber tú, ktorú daili otvorí v novom telefóne.

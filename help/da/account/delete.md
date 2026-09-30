@@ -3,7 +3,7 @@ id: account-delete
 title: Slet din konto (og fortryd inden for 30 dage)
 summary: Din konto bliver slettet for altid efter 30 dage. Indtil da får du den tilbage ved at logge ind eller via linket i vores e-mail.
 keywords: slet konto, fjern konto, luk konto, annullér sletning, gendan konto, 30 dage, forlad daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Vil du have en kopi af dine data først? Download den, før du går i gang.
 
@@ -17,7 +17,7 @@ Vil du have en kopi af dine data først? Download den, før du går i gang.
 
 Valgte du **Jeg vil starte forfra**? Du behøver ikke en ny konto: opret en ny familie eller gruppe i stedet.
 
-I 30 dage kan du stadig fortryde: log ind, og tryk på **Gendan min konto**, eller tryk på linket i vores e-mail. Efter 30 dage bliver den slettet for altid.
+I 30 dage kan du stadig fortryde: log ind, og tryk på **Gendan min konto**, eller tryk på linket i vores e-mail. Linket bekræfter også din e-mailadresse. Efter 30 dage bliver den slettet for altid.
 
 Ejer du en familie? Gør en anden til ejer, eller slet familien, først.
 

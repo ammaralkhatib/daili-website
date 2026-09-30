@@ -3,7 +3,7 @@ id: lists-assign
 title: Assegnare un'attività a una o più persone
 summary: Metti un nome su un'attività, o dividila tra due persone, come una coppia o un genitore e un bambino.
 keywords: assegnare, assegnatario, dare un'attività, faccende, bambino, partner, chi, persona, condividere, responsabile
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Un'attività con un nome sopra viene fatta. Puoi assegnarla a una persona o a più persone.
 
@@ -15,5 +15,7 @@ Un'attività con un nome sopra viene fatta. Puoi assegnarla a una persona o a pi
 4. Tocca **Salva**, poi di nuovo **Salva** sull'attività.
 
 Ora l'attività mostra le loro foto e conta per ciascuno di loro.
+
+Nello stesso pannello, **Attività privata** vuol dire che solo tu vedi l'attività. Allora può essere assegnata solo a te, o a bambini senza accesso: attivarla toglie quindi le altre persone.
 
 > Note: Un promemoria arriva solo a chi ha un accesso. Un'attività assegnata solo a un bambino avvisa tutti.

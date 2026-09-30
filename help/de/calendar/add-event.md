@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Einen Termin hinzufügen
 summary: Trag einen Arzttermin, eine Reise oder ein Spiel in den Familienkalender ein, damit alle es sehen.
 keywords: termin hinzufügen, neuer termin, termin erstellen, arzttermin, verabredung, planen, datum, kalendereintrag, ganztägig
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Alle in deiner Familie sehen einen neuen Termin sofort.
 
@@ -14,6 +14,8 @@ Alle in deiner Familie sehen einen neuen Termin sofort.
 3. Stell **Beginn** und **Ende** ein. Für einen ganzen Tag schaltest du **Ganztägig** ein.
 4. Füg bei Bedarf mehr hinzu: **Wiederholung**, eine **Erinnerung**, eine **Kategorie** oder einen **Ort**.
 5. Tippe auf **Speichern**.
+
+Unter **Für** wählst du, für wen der Termin ist, auch Kinder. Wählst du niemanden, gilt **Alle**. Nur die gewählten Personen mit Anmeldung bekommen seine Erinnerungen und Benachrichtigungen. Ein privater Termin hat keine Zeile **Für**.
 
 daili öffnet dann deinen Termin, damit du eine Aufgabe, einen Einkauf, ein Dokument oder ein Foto anhängen kannst. Die Termine stehen auf Papier? Sieh dir **Einen Termin aus einem Foto füllen** an.
 

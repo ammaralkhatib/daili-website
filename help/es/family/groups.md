@@ -5,7 +5,7 @@ summary: Forma parte de hasta 5 familias o grupos con una sola cuenta, y cambia 
 keywords: grupo, segunda familia, cambiar de familia, abuelos, club, equipo, clase, varias familias, familia predeterminada
 tipTitle: ¿Más de una familia?
 tipBody: Añade a los abuelos o al club deportivo como grupo, y cambia con un toque.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Una cuenta puede estar en hasta 5 familias o grupos: tu casa, los abuelos, el club deportivo o la clase del colegio. Cada uno tiene su propio calendario y sus listas.
 
@@ -16,5 +16,7 @@ Una cuenta puede estar en hasta 5 familias o grupos: tu casa, los abuelos, el cl
 3. Para añadir otro, toca **Crear una familia o un grupo** o **Unirse con un código**.
 
 Tienes la misma lista en la pantalla Familia: toca **Cambiar de familia o grupo**.
+
+Los admins pueden darle a una familia su propia foto: en la pantalla Familia, toca la imagen de la familia para hacer una, elegir una o quitarla. También aparece en esta lista.
 
 > Note: Cambiar solo afecta a este teléfono. Toca **⋮** junto a una familia y **Establecer como predeterminada** para elegir la que daili abre en un teléfono nuevo.

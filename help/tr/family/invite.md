@@ -5,7 +5,7 @@ summary: 6 haneli bir kod, bir QR kodu ya da bir bağlantı paylaş. Saniyeler i
 keywords: davet, davet et, üye ekle, eş, partner, kod, qr, katıl, bağlantı, paylaş, yeni kod
 tipTitle: Birlikte planlayın
 tipBody: Eşini davet et. İkiniz de aynı takvimi ve listeleri görürsünüz.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Ailendeki herkes aynı takvimi, listeleri ve doğum günlerini görür.
 
@@ -16,6 +16,6 @@ Ailendeki herkes aynı takvimi, listeleri ve doğum günlerini görür.
 
 ![Aile ekranı. Altında geçerli kod ve bitiş tarihi olan Üye davet et daire içine alınmış.](family-invite)
 
-Her kod tek bir kişi içindir. Sonraki kişi için yeniden **Üye davet et** düğmesine dokun. Kodu ya da bağlantıyı e-postan doğrulanmadan önce de paylaşabilirsin.
+Her kod tek bir kişi içindir. Sonraki kişi için yeniden **Üye davet et** düğmesine dokun. Kodu ya da bağlantıyı e-postan doğrulanmadan önce de paylaşabilirsin. Bir iCloud adresini e-postayla mı davet ettin? Apple bazen e-postalarımızı engeller, bu yüzden kodu ya da bağlantıyı ona kendin de gönder.
 
 > Note: Bir kod 7 gün geçerlidir ve ekran ne zamana kadar geçerli olduğunu gösterir. Yanlış kişiye mi gönderdin? **Üye davet et** ekranında **Yeni kod al** düğmesine dokun, eski kod artık çalışmaz.

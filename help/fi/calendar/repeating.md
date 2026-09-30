@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Toistuvat tapahtumat
 summary: Toista tapahtuma joka päivä, viikko, kuukausi tai vuosi, ja muuta yhtä päivää tai koko sarjaa.
 keywords: toisto, toistuva, säännöllinen, joka viikko, viikoittain, päivittäin, kuukausittain, vuosittain, sarja, rutiini
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Uimassa joka tiistai? Lisää se kerran ja anna sen toistua.
 
@@ -17,4 +17,4 @@ Uimassa joka tiistai? Lisää se kerran ja anna sen toistua.
 
 Muutatko toistuvaa tapahtumaa? Tee ensin muutokset ja napauta **Tallenna**. Valitse sitten **Vain tämä tapahtuma**, **Tämä ja seuraavat tapahtumat** tai **Kaikki tapahtumat**. Poistatko sellaisen? Napauta **Poista** ja valitse samalla tavalla.
 
-> Note: Vaihtoehto, joka ei voi ottaa muutostasi, näkyy harmaana syyn kanssa. Uutta aikaa ei voi viedä kohtaan **Kaikki tapahtumat**. Toiston, **Koko päivä** -valinnan, **Yksityinen tapahtuma** -valinnan tai lisämuistutusten muutokset eivät voi olla **Vain tämä tapahtuma**.
+> Note: Vaihtoehto, joka ei voi ottaa muutostasi, näkyy harmaana syyn kanssa. Uutta aikaa ei voi viedä kohtaan **Kaikki tapahtumat**. Kohdan **Kenelle** henkilöt kuuluvat koko sarjaan. Siksi heidän, toiston, **Koko päivä** -valinnan, **Yksityinen tapahtuma** -valinnan tai lisämuistutusten muutokset eivät voi olla **Vain tämä tapahtuma**.

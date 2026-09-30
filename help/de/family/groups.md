@@ -5,7 +5,7 @@ summary: Sei mit einem Konto in bis zu 5 Familien oder Gruppen und wechsle zwisc
 keywords: gruppe, zweite familie, familie wechseln, großeltern, verein, team, schulklasse, mehrere familien, standardfamilie
 tipTitle: Mehr als eine Familie?
 tipBody: Füg die Großeltern oder den Sportverein als Gruppe hinzu und wechsle mit einem Tipp.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Ein Konto kann in bis zu 5 Familien oder Gruppen sein: dein Zuhause, die Großeltern, der Sportverein oder die Schulklasse. Jede hat ihren eigenen Kalender und ihre eigenen Listen.
 
@@ -16,5 +16,7 @@ Ein Konto kann in bis zu 5 Familien oder Gruppen sein: dein Zuhause, die Großel
 3. Um eine weitere hinzuzufügen, tippe auf **Familie oder Gruppe erstellen** oder **Mit Code beitreten**.
 
 Dieselbe Liste findest du auf dem Familienbildschirm: Tippe auf **Familie oder Gruppe wechseln**.
+
+Admins können einer Familie ein eigenes Foto geben: Tippe auf dem Familienbildschirm auf das Familienbild, um eins aufzunehmen, auszuwählen oder zu entfernen. Es erscheint auch in dieser Liste.
 
 > Note: Der Wechsel gilt nur für dieses Handy. Tippe auf **⋮** neben einer Familie und auf **Als Standard festlegen**, um zu wählen, welche daili auf einem neuen Handy öffnet.

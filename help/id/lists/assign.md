@@ -3,7 +3,7 @@ id: lists-assign
 title: Berikan tugas ke satu orang atau lebih
 summary: Beri nama pada tugas, atau bagi di antara dua orang, seperti pasangan atau orang tua dan anak.
 keywords: tugaskan, penanggung jawab, beri tugas, pekerjaan rumah, anak, pasangan, siapa, orang, bagi, tanggung jawab
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Tugas yang ada namanya akan dikerjakan. Anda bisa memberikannya ke satu orang atau beberapa.
 
@@ -15,5 +15,7 @@ Tugas yang ada namanya akan dikerjakan. Anda bisa memberikannya ke satu orang at
 4. Ketuk **Simpan**, lalu **Simpan** lagi di tugasnya.
 
 Tugas itu kini menampilkan foto mereka, dan dihitung untuk masing-masing.
+
+Di lembar yang sama, **Tugas pribadi** berarti hanya Anda yang bisa melihat tugas itu. Tugas itu lalu hanya bisa diberikan ke Anda, atau ke anak tanpa login, jadi menyalakannya melepas orang lain dari tugas itu.
 
 > Note: Pengingat hanya dikirim ke orang yang punya login. Tugas yang hanya diberikan ke anak mengingatkan semua orang.

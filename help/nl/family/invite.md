@@ -5,7 +5,7 @@ summary: Deel een 6-cijferige code, een QR-code of een link. Binnen een paar sec
 keywords: uitnodigen, lid toevoegen, partner, code, qr, deelnemen, link, delen, nieuwe code
 tipTitle: Plan het samen
 tipBody: Nodig je partner uit. Jullie zien allebei dezelfde agenda en lijsten.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Iedereen in je gezin ziet dezelfde agenda, lijsten en verjaardagen.
 
@@ -16,6 +16,6 @@ Iedereen in je gezin ziet dezelfde agenda, lijsten en verjaardagen.
 
 ![Het gezinsscherm. Lid uitnodigen, met de huidige code en de einddatum eronder, is omcirkeld.](family-invite)
 
-Elke code werkt voor één persoon. Voor de volgende tik je opnieuw op **Lid uitnodigen**. De code of link delen werkt al voordat je e-mailadres bevestigd is.
+Elke code werkt voor één persoon. Voor de volgende tik je opnieuw op **Lid uitnodigen**. De code of link delen werkt al voordat je e-mailadres bevestigd is. Een iCloud-adres per e-mail uitgenodigd? Apple blokkeert onze e-mails soms, dus stuur de code of link ook zelf.
 
 > Note: Een code werkt 7 dagen, en het scherm laat zien tot wanneer. Naar de verkeerde persoon gestuurd? Tik op **Leden uitnodigen** op **Nieuwe code maken**, en de oude werkt niet meer.

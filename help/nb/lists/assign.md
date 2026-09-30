@@ -3,7 +3,7 @@ id: lists-assign
 title: Gi en oppgave til én eller flere personer
 summary: Sett et navn på en oppgave, eller del den mellom to, for eksempel et par eller en forelder og et barn.
 keywords: tildel, ansvarlig, gi oppgave, husarbeid, barn, partner, hvem, person, del, ansvar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 En oppgave med et navn på blir gjort. Du kan gi den til én person eller til flere.
 
@@ -15,5 +15,7 @@ En oppgave med et navn på blir gjort. Du kan gi den til én person eller til fl
 4. Trykk på **Lagre**, og så på **Lagre** igjen i oppgaven.
 
 Oppgaven viser nå bildene deres, og den teller for hver av dem.
+
+På det samme arket betyr **Privat oppgave** at bare du kan se oppgaven. Da kan den bare gis til deg eller til barn uten innlogging, så når du slår den på, tas de andre personene av den.
 
 > Note: En påminnelse går bare til personer med innlogging. En oppgave som bare er gitt til et barn, minner alle på den.

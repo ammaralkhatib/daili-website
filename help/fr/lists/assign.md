@@ -3,7 +3,7 @@ id: lists-assign
 title: Attribuer une tâche à une ou plusieurs personnes
 summary: Mets un nom sur une tâche, ou partage-la entre deux personnes, comme un couple ou un parent et un enfant.
 keywords: attribuer, responsable, donner une tâche, corvées, enfant, conjoint, qui, personne, partager, qui s'en occupe
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Une tâche avec un nom dessus est faite. Tu peux l'attribuer à une personne ou à plusieurs.
 
@@ -15,5 +15,7 @@ Une tâche avec un nom dessus est faite. Tu peux l'attribuer à une personne ou 
 4. Touche **Enregistrer**, puis encore **Enregistrer** sur la tâche.
 
 La tâche affiche maintenant leurs photos, et elle compte pour chacun d'eux.
+
+Sur la même fiche, **Tâche privée** veut dire que toi seul vois la tâche. Elle ne peut alors être attribuée qu'à toi, ou à des enfants sans compte : l'activer retire donc les autres personnes.
 
 > Note: Un rappel ne va qu'aux personnes qui ont un compte. Une tâche attribuée seulement à un enfant rappelle tout le monde.

@@ -3,7 +3,7 @@ id: calendar-views
 title: Vizualizări pe lună, săptămână, zi și agendă
 summary: Treci între lună, săptămână, 3 zile, zi și agendă și filtrează după persoană sau categorie.
 keywords: vizualizare, lună, săptămână, zi, agendă, listă, 3 zile, schimbă vizualizarea, filtru, azi, aspectul calendarului
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Calendarul poate arăta planurile familiei tale în cinci feluri.
 
@@ -13,8 +13,10 @@ Calendarul poate arăta planurile familiei tale în cinci feluri.
 2. Apasă pe **Vizualizare** în bara de jos.
 3. Alege **Lună**, **Săptămână**, **3 zile**, **Zi** sau **Agendă**.
 4. Apasă pe **Azi** jos ca să revii la ziua de azi.
-5. Ca să vezi doar unele persoane sau categorii, apasă pe **Filtru** și alege-le.
+5. Ca să vezi doar unele persoane sau categorii, apasă pe **Filtru** și alege-le. Copiii sunt și ei la **Persoane**.
 
 daili ține minte vizualizarea ta pe acest telefon. În **Lună**, apasă pe o zi ca să-i vezi evenimentele.
 
-> Note: **Filtru** apare doar când ai după ce filtra: o a doua persoană cu cont sau o categorie.
+Un eveniment apare la persoanele pentru care e. Un eveniment pentru toată lumea apare la persoana care l-a creat. Dunga lui colorată are culoarea primei persoane pentru care e.
+
+> Note: **Filtru** apare doar când ai după ce filtra: o a doua persoană (contează și un copil) sau o categorie.

@@ -3,7 +3,7 @@ id: lists-all-mine
 title: Tüm görevleri ya da yalnızca seninkileri gör
 summary: Tüm ailenin görevleriyle yalnızca sana verilenler arasında geçiş yap.
 keywords: benim, görevlerim, tümü, filtre, bana atanan, herkes, kişi, ev işleri, çocuk, eş
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Kalabalık bir ailede yalnızca kendi görevlerini görmek işe yarar.
 
@@ -13,5 +13,7 @@ Kalabalık bir ailede yalnızca kendi görevlerini görmek işe yarar.
 2. En üstte, sağdaki kendi resmine dokun. Bu **Benim** görünümüdür: tüm listelerden sana verilen her görev.
 3. Yeniden **Tümü** görünümüne dönmek için yanındaki aile dairesine dokun.
 4. Bir görev listesinin içinde, üstteki daireler her kişinin ilerlemesini gösterir. Yalnızca o kişinin görevlerini görmek için birine dokun. Herkesinkini görmek için yeniden dokun.
+
+Özel görevlerin **Benim** görünümünde bir kilitle görünür.
 
 > Note: Bir görev, verildiği kişilere aittir. Kimseye verilmemişse onu ekleyen kişiye aittir.

@@ -7,7 +7,7 @@ keywords: tick, check off, done, complete habit, counter, kid, child, together, 
 routes: /habits/:id
 tryIt: /habits
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-09-30
 media: habits-tick
 order: 3
 related: habits-streaks, habits-minzi, family-children
@@ -22,5 +22,7 @@ Tick a habit the moment you've done it. Each tick gives the family energy.
 4. To fix an earlier day, tap the habit's row and then the day. You can change the last 7 days.
 
 You tick your own habits and any **Together** habit. An admin can also tick for a child without a login. The row then says **You tick for** and the child's name.
+
+Habits that aren't due today wait under **Coming up**, with the day each one is next due. When you create a habit that isn't due today, a message tells you when it shows up.
 
 > Note: Nobody can tick for another adult. Everyone with a login ticks their own habits.

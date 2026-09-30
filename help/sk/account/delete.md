@@ -3,7 +3,7 @@ id: account-delete
 title: Vymaž svoj účet (a rozmysli si to do 30 dní)
 summary: Tvoj účet sa natrvalo vymaže po 30 dňoch. Dovtedy ho vráti späť prihlásenie alebo odkaz v našom e-maile.
 keywords: vymazať účet, odstrániť účet, zrušiť účet, zrušiť vymazanie, obnoviť účet, 30 dní, opustiť daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Chceš najprv kópiu svojich údajov? Stiahni si ich, než začneš.
 
@@ -17,7 +17,7 @@ Chceš najprv kópiu svojich údajov? Stiahni si ich, než začneš.
 
 Vybral si **Chcem začať odznova**? Nový účet nepotrebuješ: namiesto toho vytvor novú rodinu alebo skupinu.
 
-Ešte 30 dní si to môžeš rozmyslieť: prihlás sa a ťukni na **Obnoviť môj účet**, alebo ťukni na odkaz v našom e-maile. Po 30 dňoch sa natrvalo vymaže.
+Ešte 30 dní si to môžeš rozmyslieť: prihlás sa a ťukni na **Obnoviť môj účet**, alebo ťukni na odkaz v našom e-maile. Odkaz ti zároveň overí e-mailovú adresu. Po 30 dňoch sa natrvalo vymaže.
 
 Si vlastníkom rodiny? Najprv urob vlastníkom niekoho iného alebo rodinu vymaž.
 

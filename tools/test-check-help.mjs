@@ -158,7 +158,7 @@ expectFail('single *', /single \*/, body('Tap *Family* now.'));
 expectFail('second numbered list', /only one numbered list/, body('1. One\n2. Two\n\nText.\n\n1. Again'));
 expectFail('8 steps', /more than 7 steps/, body([1, 2, 3, 4, 5, 6, 7, 8].map((i) => `${i}. Step ${i}`).join('\n')));
 expectFail('step numbering', /numbered 3, expected 2/, body('1. One\n3. Two'));
-expectFail('3 images', /more than 2 images/, (st) => { st.body.invite = '![a](family-invite)\n\n![b](family-invite)\n\n![c](family-invite)'; });
+expectFail('6 images', /more than 5 images/, (st) => { st.body.invite = Array.from({ length: 6 }, (_, i) => `![${i}](family-invite)`).join('\n\n'); });
 expectFail('image not on its own line', /own line/, body('Look ![a](family-invite) here.'));
 expectFail('quote that is not a note', /only quote allowed/, body('> Tip: this.'));
 expectFail('151 words', /words, the limit is 150/, body(Array(151).fill('word').join(' ')));

@@ -5,7 +5,7 @@ summary: Fais partie de 5 familles ou groupes au maximum avec un seul compte, et
 keywords: groupe, deuxième famille, changer de famille, grands-parents, club, équipe, classe, plusieurs familles, famille par défaut
 tipTitle: Plus d'une famille ?
 tipBody: Ajoute les grands-parents ou le club de sport comme groupe, et passe de l'un à l'autre en une touche.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Un compte peut faire partie de 5 familles ou groupes au maximum : ton foyer, les grands-parents, le club de sport ou la classe. Chacun a son propre agenda et ses propres listes.
 
@@ -16,5 +16,7 @@ Un compte peut faire partie de 5 familles ou groupes au maximum : ton foyer, les
 3. Pour en ajouter un autre, touche **Créer une famille ou un groupe** ou **Rejoindre avec un code**.
 
 Tu trouves la même liste sur l'écran Famille : touche **Changer de famille ou de groupe**.
+
+Les admins peuvent donner une photo à une famille : sur l'écran Famille, touche l'image de la famille pour en prendre une, en choisir une ou la retirer. Elle apparaît aussi dans cette liste.
 
 > Note: Changer ne vaut que pour ce téléphone. Touche **⋮** à côté d'une famille puis **Définir par défaut** pour choisir celle que daili ouvre sur un nouveau téléphone.

@@ -3,7 +3,7 @@ id: account-delete
 title: Smazat účet (a do 30 dnů si to rozmyslet)
 summary: Po 30 dnech se tvůj účet smaže natrvalo. Do té doby ho přihlášení nebo odkaz z našeho e-mailu vrátí zpátky.
 keywords: smazat účet, zrušit účet, odstranit účet, zrušit smazání, obnovit účet, 30 dní, odejít z daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Chceš si nejdřív uložit kopii svých dat? Stáhni si ji, než začneš.
 
@@ -17,7 +17,7 @@ Chceš si nejdřív uložit kopii svých dat? Stáhni si ji, než začneš.
 
 Vybral sis **Chci začít znovu**? Nový účet nepotřebuješ: prostě vytvoř novou rodinu nebo skupinu.
 
-Ještě 30 dní si to můžeš rozmyslet: přihlas se a klepni na **Obnovit můj účet**, nebo klepni na odkaz v našem e-mailu. Po 30 dnech se účet smaže natrvalo.
+Ještě 30 dní si to můžeš rozmyslet: přihlas se a klepni na **Obnovit můj účet**, nebo klepni na odkaz v našem e-mailu. Odkaz zároveň ověří tvoji e-mailovou adresu. Po 30 dnech se účet smaže natrvalo.
 
 Jsi vlastníkem rodiny? Nejdřív předej vlastnictví někomu jinému, nebo rodinu smaž.
 

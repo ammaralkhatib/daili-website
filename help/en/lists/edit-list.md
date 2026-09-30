@@ -7,19 +7,21 @@ keywords: rename, edit list, colour, color, icon, reorder, sort lists, delete li
 routes: /lists/:id/edit
 tryIt: /lists/shopping
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-30
 media: lists-edit-list
 order: 9
 related: lists-shopping, lists-categories
 ---
-These steps work the same for shopping lists and to-do lists.
+This works the same for shopping and to-do lists.
 
 ![The Shopping screen with a list's ⋯ menu open. Edit is circled, with Delete under it.](lists-edit-list)
 
 1. On Home, tap **Shopping** or **To-dos**.
 2. On the list's card, tap **⋯**, then **Edit**.
-3. Change the **Name**, the **Color** or the **Icon**, and tap **Save**.
-4. To change the order, press and hold a card, then drag it to its new place.
-5. To delete a list, tap **⋯** on its card, then **Delete**. Changed your mind? Tap **Undo** in the message.
+3. Change the **Name**, **Color** or **Icon**, and tap **Save**.
+4. To reorder, press and hold a card and drag it.
+5. To delete a list, tap **⋯** on its card, then **Delete**. **Undo** in the message brings it back for a few seconds.
 
-> Note: A deleted list is gone for the whole family, with all its items. **Undo** only works for a few seconds.
+With **Only me** on, only you see the list and all in it, with a lock by its name. Only its maker can change this. Private lists and tasks notify nobody else and stay out of the activity feed, others' typing suggestions and morning summary, and the TRMNL wall screen. Their reminders reach only you.
+
+> Note: A deleted list is gone for the whole family, with all its items. Others' private tasks in it are kept: each of them gets a private list with the same name.

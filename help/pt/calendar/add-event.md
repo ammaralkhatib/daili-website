@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Adicionar um evento
 summary: Coloque uma consulta, uma viagem ou um jogo no calendário da família, para todo mundo ver.
 keywords: adicionar evento, novo evento, criar evento, consulta, compromisso, agendar, planejar, data, dia inteiro
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Todo mundo da família vê um evento novo na hora.
 
@@ -14,6 +14,8 @@ Todo mundo da família vê um evento novo na hora.
 3. Defina o **Início** e o **Fim**. Para um dia todo, ligue **Dia inteiro**.
 4. Se quiser, adicione mais: **Repetição**, um **Lembrete**, uma **Categoria** ou um **Local**.
 5. Toque em **Salvar**.
+
+Em **Para**, escolha para quem é o evento, crianças também. Ninguém escolhido quer dizer **Todos**. Só as pessoas escolhidas que têm acesso próprio recebem os lembretes e as notificações dele. Um evento privado não tem a linha **Para**.
 
 Depois o daili abre seu evento, para você anexar uma tarefa, um item de compras, um documento ou uma foto. As datas estão no papel? Veja **Preencha um evento a partir de uma foto**.
 

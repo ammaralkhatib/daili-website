@@ -14,7 +14,7 @@
 // help/<code>/_ui.json holds the page's own words (and the topic names).
 //
 // The body is a deliberately tiny subset of Markdown — paragraphs, one
-// numbered list, one or two images, notes and **bold** — because the app draws
+// numbered list, up to five images, notes and **bold** — because the app draws
 // the same blocks with its own renderer, and every construct allowed here is
 // one more thing that renderer has to get right. Anything else is an error
 // with file:line, never a silent pass-through.
@@ -39,7 +39,7 @@ const CHECKLIST_KEYS = ['checklist', 'checklistDoneIf'];
 
 export const LIMITS = {
   title: 70, summary: 140, keywordsMin: 1, keywordsMax: 12,
-  steps: 7, images: 2, words: 150,
+  steps: 7, images: 5, words: 150,
   tipTitle: 60, tipBody: 120, topicSummary: 90, mediaPending: 80,
 };
 

@@ -3,7 +3,7 @@ id: habits-tick
 title: Sæt flueben ved en vane: din egen, en fælles, et barns
 summary: Sæt flueben ved en vane, når du har gjort den. Du kan også sætte flueben ved fælles vaner, og admins kan gøre det for et barn.
 keywords: flueben, sæt kryds, færdig, fuldfør vane, tæller, barn, sammen, marker som færdig, i går
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Sæt flueben ved en vane, så snart du har gjort den. Hvert flueben giver familien energi.
 
@@ -15,5 +15,7 @@ Sæt flueben ved en vane, så snart du har gjort den. Hvert flueben giver famili
 4. Vil du rette en tidligere dag, så tryk på vanens række og så på dagen. Du kan ændre de sidste 7 dage.
 
 Du sætter flueben ved dine egne vaner og ved alle vaner med **Sammen**. En admin kan også sætte flueben for et barn uden login. Så står der **Du sætter flueben for** og barnets navn i rækken.
+
+Vaner, der ikke skal gøres i dag, venter under **Kommende**, med den dag, hver af dem skal gøres næste gang. Opretter du en vane, der ikke skal gøres i dag, fortæller en besked dig, hvornår den dukker op.
 
 > Note: Ingen kan sætte flueben for en anden voksen. Alle med login sætter flueben ved deres egne vaner.

@@ -5,7 +5,7 @@ summary: Zdieľaj 6-miestny kód, QR kód alebo odkaz. Pripojenie trvá pár sek
 keywords: pozvať, pozvánka, pridať člena, partner, partnerka, kód, qr, pripojiť sa, odkaz, nový kód
 tipTitle: Plánujte spolu
 tipBody: Pozvi partnera alebo partnerku. Obaja uvidíte rovnaký kalendár aj rovnaké zoznamy.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Každý v rodine vidí rovnaký kalendár, rovnaké zoznamy a rovnaké narodeniny.
 
@@ -16,6 +16,6 @@ Každý v rodine vidí rovnaký kalendár, rovnaké zoznamy a rovnaké narodenin
 
 ![Obrazovka Rodina. Zakrúžkované je Pozvať člena a pod ním aktuálny kód s dátumom platnosti.](family-invite)
 
-Každý kód platí pre jedného človeka. Pre ďalšieho znova ťukni na **Pozvať člena**. Zdieľať kód alebo odkaz môžeš, aj kým ešte nemáš overený e-mail.
+Každý kód platí pre jedného človeka. Pre ďalšieho znova ťukni na **Pozvať člena**. Zdieľať kód alebo odkaz môžeš, aj kým ešte nemáš overený e-mail. Pozval si e-mailom adresu iCloud? Apple niekedy naše e-maily zablokuje, tak pošli kód alebo odkaz aj sám.
 
 > Note: Kód platí 7 dní a obrazovka ukazuje, dokedy. Poslal si ho nesprávnemu človeku? Na obrazovke **Pozvať členov** ťukni na **Vytvoriť nový kód** a starý prestane platiť.

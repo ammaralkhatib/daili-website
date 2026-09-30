@@ -11,10 +11,10 @@ Sem ideias para o jantar?
 
 ![O topo do Cardápio. O botão de brilho ao lado do botão de copiar está circulado.](meals-suggest)
 
-1. Na tela inicial, toque em **Cardápio** e depois no brilho no topo (**Planear a minha semana**). Numa semana vazia, você também pode tocar em **Deixar a Daili sugerir**.
+1. Na tela inicial, toque em **Cardápio** e depois no brilho no topo (**Planejar minha semana**). Numa semana vazia, você também pode tocar em **Deixar o Daili sugerir**.
 2. Escolha filtros, se quiser: **Rápido (menos de 30 min)**, **Para crianças**, **Vegetariano**, **Só as minhas receitas**. Escreva um desejo em **Algo para aproveitar ou evitar?**
 3. Toque em **Sugerir jantares**.
-4. Em **A tua semana, sugerida**, desmarque um dia que não quer. Toque em **Trocar** para outra ideia, de graça. Toque num cartão **Receita nova** para lê-la.
+4. Em **Sua semana, sugerida**, desmarque um dia que não quer. Toque em **Trocar** para outra ideia, de graça. Toque num cartão **Receita nova** para lê-la.
 5. Toque no botão embaixo, como **Adicionar 5 jantares**.
 
 Só as noites livres a partir de hoje são preenchidas, sem repetir o que vocês comeram nas últimas duas semanas. As ideias novas vão para as suas receitas. **Tentar de novo** usa mais uma sugestão.

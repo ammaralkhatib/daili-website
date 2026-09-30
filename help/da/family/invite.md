@@ -5,7 +5,7 @@ summary: Del en 6-cifret kode, en QR-kode eller et link. Så er de med på få s
 keywords: inviter, tilføj medlem, partner, kode, qr, deltag, link, del, ny kode
 tipTitle: Planlæg det sammen
 tipBody: Inviter din partner. I ser begge den samme kalender og de samme lister.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Alle i din familie ser den samme kalender, de samme lister og fødselsdage.
 
@@ -16,6 +16,6 @@ Alle i din familie ser den samme kalender, de samme lister og fødselsdage.
 
 ![Skærmen Familie. Inviter medlem, med den aktuelle kode og dens slutdato under, er markeret med en cirkel.](family-invite)
 
-Hver kode gælder for én person. Til den næste trykker du på **Inviter medlem** igen. Du kan dele koden eller linket, allerede før din e-mail er bekræftet.
+Hver kode gælder for én person. Til den næste trykker du på **Inviter medlem** igen. Du kan dele koden eller linket, allerede før din e-mail er bekræftet. Har du inviteret en iCloud-adresse via e-mail? Apple blokerer nogle gange vores e-mails, så send også selv koden eller linket.
 
 > Note: En kode gælder i 7 dage, og skærmen viser hvor længe. Sendt til den forkerte? Tryk på **Lav en ny kode** på **Inviter medlemmer**, så holder den gamle op med at virke.

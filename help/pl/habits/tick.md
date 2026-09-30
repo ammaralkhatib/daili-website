@@ -3,7 +3,7 @@ id: habits-tick
 title: Odhacz nawyk: swój, wspólny, dziecka
 summary: Odhacz nawyk, gdy go zrobisz. Możesz też odhaczać nawyki wspólne, a admini mogą odhaczać za dziecko.
 keywords: odhacz, zaznacz, zrobione, ukończ nawyk, licznik, dziecko, dzieci, razem, oznacz jako zrobione, wczoraj
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Odhacz nawyk od razu, gdy go zrobisz. Każde odhaczenie daje rodzinie energię.
 
@@ -15,5 +15,7 @@ Odhacz nawyk od razu, gdy go zrobisz. Każde odhaczenie daje rodzinie energię.
 4. Żeby poprawić wcześniejszy dzień, dotknij wiersza nawyku, a potem dnia. Możesz zmieniać ostatnie 7 dni.
 
 Odhaczasz swoje nawyki i każdy nawyk **Razem**. Admin może też odhaczać za dziecko bez własnego logowania. Wtedy w wierszu jest napis **Odhaczasz za** i imię dziecka.
+
+Nawyki, które nie przypadają na dziś, czekają w sekcji **Wkrótce**, z dniem, w którym każdy z nich przypada następnym razem. Gdy tworzysz nawyk, który nie przypada na dziś, komunikat powie ci, kiedy się pojawi.
 
 > Note: Nikt nie może odhaczać za innego dorosłego. Każdy z własnym logowaniem odhacza swoje nawyki sam.

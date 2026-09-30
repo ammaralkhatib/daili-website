@@ -5,7 +5,7 @@ summary: Participe de até 5 famílias ou grupos com uma só conta, e troque ent
 keywords: grupo, segunda família, trocar de família, avós, clube, time, turma da escola, várias famílias, família padrão
 tipTitle: Mais de uma família?
 tipBody: Adicione os avós ou o clube como um grupo, e troque com um toque.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Uma conta pode estar em até 5 famílias ou grupos: sua casa, os avós, o clube ou a turma da escola. Cada um tem seu próprio calendário e suas próprias listas.
 
@@ -16,5 +16,7 @@ Uma conta pode estar em até 5 famílias ou grupos: sua casa, os avós, o clube 
 3. Para adicionar outro, toque em **Criar uma família ou um grupo** ou **Entrar com um código**.
 
 A mesma lista aparece na tela Família: toque em **Trocar de família ou grupo**.
+
+Os admins podem dar uma foto própria à família: na tela Família, toque na foto da família para tirar, escolher ou remover uma. Ela também aparece nesta lista.
 
 > Note: Trocar só muda este celular. Toque em **⋮** ao lado de uma família e em **Definir como padrão** para escolher a que o daili abre em um celular novo.

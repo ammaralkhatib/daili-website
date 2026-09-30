@@ -3,7 +3,7 @@ id: account-delete
 title: Hapus akun Anda (dan berubah pikiran dalam 30 hari)
 summary: Akun Anda dihapus permanen setelah 30 hari. Sebelum itu, masuk lagi atau tautan di email kami bisa memulihkannya.
 keywords: hapus akun, buang akun, tutup akun, batalkan penghapusan, pulihkan akun, 30 hari, berhenti pakai daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Ingin salinan data Anda dulu? Unduh sebelum mulai.
 
@@ -17,7 +17,7 @@ Ingin salinan data Anda dulu? Unduh sebelum mulai.
 
 Memilih **Saya ingin mulai dari awal**? Anda tidak perlu akun baru: buat saja keluarga atau grup baru.
 
-Selama 30 hari, Anda masih bisa berubah pikiran: masuk dan ketuk **Pulihkan akun saya**, atau ketuk tautan di email kami. Setelah 30 hari, akun dihapus permanen.
+Selama 30 hari, Anda masih bisa berubah pikiran: masuk dan ketuk **Pulihkan akun saya**, atau ketuk tautan di email kami. Tautan itu juga memverifikasi alamat email Anda. Setelah 30 hari, akun dihapus permanen.
 
 Anda pemilik sebuah keluarga? Jadikan orang lain pemilik, atau hapus keluarganya, lebih dulu.
 

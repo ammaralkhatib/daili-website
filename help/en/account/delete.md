@@ -7,7 +7,7 @@ keywords: delete account, remove account, close account, cancel deletion, restor
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.0.0
-updated: 2026-09-28
+updated: 2026-09-30
 order: 6
 media: account-delete
 related: account-download-data, family-roles, vault-where
@@ -24,7 +24,7 @@ Want a copy of your data first? Download it before you start.
 
 Picked **I want to start over**? You don't need a new account: create a new family or group instead.
 
-For 30 days, you can still change your mind: sign in and tap **Restore my account**, or tap the link in our email. After 30 days, it's deleted for good.
+For 30 days, you can still change your mind: sign in and tap **Restore my account**, or tap the link in our email. The link also verifies your email address. After 30 days, it's deleted for good.
 
 Do you own a family? Make someone else the owner, or delete the family, first.
 

@@ -3,7 +3,7 @@ id: account-password
 title: Vaihda tai aseta salasana
 summary: Vaihda salasanasi tai aseta sellainen, jos rekisteröidyit Googlella tai Applella.
 keywords: salasana, vaihda salasana, uusi salasana, aseta salasana, unohtunut salasana, nollaa, google, apple, kirjaudu
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Vaihdat salasanasi profiilissasi.
 
@@ -15,5 +15,7 @@ Vaihdat salasanasi profiilissasi.
 4. Napauta **Tallenna**. Muut puhelimesi ja selaimesi kirjataan ulos, joten kirjaudu niissä uudella salasanalla.
 
 Rekisteröidyitkö Googlella tai Applella? Silloin sinulla ei vielä ole salasanaa, ja rivillä lukee **Aseta salasana**. Napauta sitä, niin daili lähettää sähköpostiisi linkin salasanan asettamiseen.
+
+Käytätkö @icloud.com-, @me.com- tai @mac.com-osoitetta? Apple estää joskus sähköpostimme. Katso roskapostikansiosta tai kirjoita osoitteeseen support@daili.app. iPhonessa sen välttää valitsemalla **Jatka Applella** ja **Jaa sähköpostini**.
 
 > Note: Unohtuiko salasana? Napauta kirjautumisnäytöllä **Unohtuiko salasana?**, niin lähetämme sinulle linkin.

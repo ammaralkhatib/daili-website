@@ -3,7 +3,7 @@ id: lists-all-mine
 title: Vezi toate sarcinile sau doar pe ale tale
 summary: Treci între sarcinile întregii familii și doar cele date ție.
 keywords: ale mele, sarcinile mele, toate, filtru, alocate mie, toată lumea, persoană, treburi, copil, partener
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Într-o familie ocupată, ajută să-ți vezi doar sarcinile tale.
 
@@ -13,5 +13,7 @@ translatedFrom: 2026-09-24
 2. Sus, apasă pe poza ta din dreapta. Asta e **Ale mele**: toate sarcinile date ție, din toate listele.
 3. Apasă pe cercul familiei de lângă ea ca să vezi din nou **Toate**.
 4. Într-o listă de sarcini, cercurile de sus arată progresul fiecărei persoane. Apasă pe unul ca să vezi doar sarcinile ei. Apasă din nou ca să le vezi pe ale tuturor.
+
+Sarcinile tale private au un lacăt în **Ale mele**.
 
 > Note: O sarcină aparține persoanelor cărora le-a fost dată. Dacă n-o are nimeni, aparține celui care a adăugat-o.

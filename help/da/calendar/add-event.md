@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Tilføj en begivenhed
 summary: Sæt en aftale, en tur eller en kamp i familiekalenderen, så alle kan se den.
 keywords: tilføj begivenhed, ny begivenhed, opret begivenhed, aftale, planlæg, dato, kalenderpost, hele dagen, termin
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Alle i din familie ser en ny begivenhed med det samme.
 
@@ -14,6 +14,8 @@ Alle i din familie ser en ny begivenhed med det samme.
 3. Vælg **Start** og **Slut**. Gælder det hele dagen, så slå **Hele dagen** til.
 4. Tilføj mere, hvis du vil: **Gentagelse**, en **Påmindelse**, en **Kategori** eller et **Sted**.
 5. Tryk på **Gem**.
+
+Under **For** vælger du, hvem begivenheden er for, også børn. Vælger du ingen, betyder det **Alle**. Kun de valgte personer med login får dens påmindelser og notifikationer. En privat begivenhed har ikke rækken **For**.
 
 Derefter åbner daili din begivenhed, så du kan knytte en opgave, en vare, et dokument eller et billede til den. Står datoerne på papir? Se **Udfyld en begivenhed fra et billede**.
 

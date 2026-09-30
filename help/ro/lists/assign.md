@@ -3,7 +3,7 @@ id: lists-assign
 title: Dă o sarcină uneia sau mai multor persoane
 summary: Pune un nume pe o sarcină sau împarte-o între două persoane, de exemplu un cuplu sau un părinte și un copil.
 keywords: alocă, responsabil, dă sarcina, treburi, copil, partener, cine, persoană, împarte, responsabilitate
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 O sarcină cu un nume pe ea se face. O poți da unei singure persoane sau mai multora.
 
@@ -15,5 +15,7 @@ O sarcină cu un nume pe ea se face. O poți da unei singure persoane sau mai mu
 4. Apasă pe **Salvează**, apoi din nou pe **Salvează** în sarcină.
 
 Acum sarcina le arată pozele și contează pentru fiecare dintre ei.
+
+Pe același panou, **Sarcină privată** înseamnă că doar tu vezi sarcina. Atunci o poți da doar ție sau copiilor fără cont, așa că, dacă o pornești, celelalte persoane sunt scoase de pe ea.
 
 > Note: Un memento ajunge doar la persoanele cu cont. O sarcină dată doar unui copil le amintește tuturor.

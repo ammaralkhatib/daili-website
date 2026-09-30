@@ -5,7 +5,7 @@ summary: Ole yhdellä tilillä mukana enintään 5 perheessä tai ryhmässä ja 
 keywords: ryhmä, toinen perhe, vaihda perhettä, isovanhemmat, kerho, joukkue, koululuokka, useita perheitä, oletusperhe
 tipTitle: Useampi kuin yksi perhe?
 tipBody: Lisää isovanhemmat tai urheiluseura ryhmäksi ja vaihda yhdellä napautuksella.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Yksi tili voi olla mukana enintään 5 perheessä tai ryhmässä: oma koti, isovanhemmat, urheiluseura tai koululuokka. Jokaisella on oma kalenteri ja omat listat.
 
@@ -16,5 +16,7 @@ Yksi tili voi olla mukana enintään 5 perheessä tai ryhmässä: oma koti, isov
 3. Jos haluat lisätä uuden, napauta **Luo perhe tai ryhmä** tai **Liity koodilla**.
 
 Sama lista löytyy Perhe-näkymästä: napauta **Vaihda perhettä tai ryhmää**.
+
+Ylläpitäjät voivat antaa perheelle oman kuvan: napauta Perhe-näkymässä perheen kuvaa, niin voit ottaa, valita tai poistaa kuvan. Se näkyy myös tässä listassa.
 
 > Note: Vaihto koskee vain tätä puhelinta. Napauta perheen vieressä **⋮** ja **Aseta oletukseksi**, niin valitset, minkä daili avaa uudessa puhelimessa.

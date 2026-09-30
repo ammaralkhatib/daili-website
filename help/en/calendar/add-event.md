@@ -7,7 +7,7 @@ keywords: add event, new event, create event, appointment, schedule, plan, date,
 routes: /calendar/new
 tryIt: /calendar/new
 since: 1.3.0
-updated: 2026-09-26
+updated: 2026-09-30
 media: calendar-add-event
 order: 2
 related: calendar-repeating, calendar-reminders, calendar-private, calendar-photo
@@ -23,6 +23,8 @@ Everyone in your family sees a new event straight away.
 3. Set the **Start** and **End**. For a whole day, switch on **All day**.
 4. Add more if you like: **Repeats**, a **Reminder**, a **Category** or a **Location**.
 5. Tap **Save**.
+
+Under **For**, pick who the event is for, children too. Nobody picked means **Everyone**. Only the picked people with a login get its reminders and notifications. A private event has no **For** row.
 
 daili then opens your event, so you can attach a to-do, a shopping item, a document or a photo. Have the dates on paper? See **Fill an event from a photo**.
 

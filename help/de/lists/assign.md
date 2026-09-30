@@ -3,7 +3,7 @@ id: lists-assign
 title: Eine Aufgabe einer oder mehreren Personen geben
 summary: Setz einen Namen an eine Aufgabe oder teil sie zwischen zwei Personen, zum Beispiel einem Paar oder einem Elternteil und einem Kind.
 keywords: zuweisen, zuständig, aufgabe verteilen, hausarbeit, kind, partner, wer, person, teilen, verantwortlich
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Eine Aufgabe mit Namen dran wird erledigt. Du kannst sie einer Person oder mehreren geben.
 
@@ -15,5 +15,7 @@ Eine Aufgabe mit Namen dran wird erledigt. Du kannst sie einer Person oder mehre
 4. Tippe auf **Speichern** und in der Aufgabe noch einmal auf **Speichern**.
 
 Die Aufgabe zeigt jetzt ihre Bilder und zählt für jede dieser Personen.
+
+Im selben Fenster bedeutet **Private Aufgabe**, dass nur du die Aufgabe siehst. Dann kann sie nur dir oder Kindern ohne Anmeldung gehören. Schaltest du es ein, werden die anderen Personen also entfernt.
 
 > Note: Eine Erinnerung geht nur an Personen mit Anmeldung. Eine Aufgabe, die nur einem Kind zugewiesen ist, erinnert alle.

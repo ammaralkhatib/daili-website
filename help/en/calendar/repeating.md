@@ -7,7 +7,7 @@ keywords: repeat, repeating, recurring, every week, weekly, daily, monthly, year
 routes: /calendar/new
 tryIt: /calendar/new
 since: 1.0.0
-updated: 2026-09-28
+updated: 2026-09-30
 media: calendar-repeating
 order: 4
 related: calendar-add-event, calendar-edit-delete
@@ -24,4 +24,4 @@ Swimming every Tuesday? Add it once and let it repeat.
 
 Changing a repeating event? Make your changes first and tap **Save**. Then choose **This event only**, **This and following events** or **All events**. Deleting one? Tap **Delete** and choose the same way.
 
-> Note: A choice that can't hold your change is greyed out, with the reason. A new time can't go to **All events**. Changes to repeats, **All day**, **Private event** or extra reminders can't be **This event only**.
+> Note: A choice that can't hold your change is greyed out, with the reason. A new time can't go to **All events**. The people under **For** belong to the whole series. So changes to them, to repeats, **All day**, **Private event** or extra reminders can't be **This event only**.

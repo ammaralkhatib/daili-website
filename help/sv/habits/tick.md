@@ -3,7 +3,7 @@ id: habits-tick
 title: Bocka av en vana: din, gemensam, ett barns
 summary: Bocka av en vana när du har gjort den. Du kan också bocka av gemensamma vanor, och admins kan bocka av åt ett barn.
 keywords: bocka av, markera, klar, gjort, räknare, barn, unge, tillsammans, markera som klar, i går
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Bocka av en vana så fort du har gjort den. Varje bock ger familjen energi.
 
@@ -15,5 +15,7 @@ Bocka av en vana så fort du har gjort den. Varje bock ger familjen energi.
 4. För att rätta en tidigare dag trycker du på vanans rad och sedan på dagen. Du kan ändra de senaste 7 dagarna.
 
 Du bockar av dina egna vanor och alla vanor med **Tillsammans**. En admin kan också bocka av åt ett barn utan inloggning. Raden visar då **Du bockar av åt** och barnets namn.
+
+Vanor som inte ska göras i dag väntar under **Kommande**, med dagen då var och en är på tur nästa gång. När du skapar en vana som inte ska göras i dag talar ett meddelande om när den dyker upp.
 
 > Note: Ingen kan bocka av åt en annan vuxen. Alla med inloggning bockar av sina egna vanor.

@@ -3,7 +3,7 @@ id: account-delete
 title: Excluir sua conta (e mudar de ideia em até 30 dias)
 summary: Sua conta é excluída para sempre depois de 30 dias. Até lá, entrar de novo ou o link do nosso e-mail traz ela de volta.
 keywords: excluir conta, apagar conta, encerrar conta, cancelar exclusão, recuperar conta, 30 dias, sair do daili, lgpd
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Quer uma cópia dos seus dados antes? Baixe ela antes de começar.
 
@@ -17,7 +17,7 @@ Quer uma cópia dos seus dados antes? Baixe ela antes de começar.
 
 Escolheu **Quero começar do zero**? Você não precisa de uma conta nova: crie uma nova família ou um novo grupo.
 
-Durante 30 dias, você ainda pode mudar de ideia: entre e toque em **Recuperar minha conta**, ou toque no link do nosso e-mail. Depois de 30 dias, ela é excluída para sempre.
+Durante 30 dias, você ainda pode mudar de ideia: entre e toque em **Recuperar minha conta**, ou toque no link do nosso e-mail. O link também confirma seu endereço de e-mail. Depois de 30 dias, ela é excluída para sempre.
 
 Você é proprietário de uma família? Primeiro passe a propriedade para outra pessoa, ou exclua a família.
 

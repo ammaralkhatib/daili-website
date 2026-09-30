@@ -3,7 +3,7 @@ id: habits-tick
 title: Hak av en vane: din egen, en felles, et barns
 summary: Hak av en vane når du har gjort den. Du kan også hake av felles vaner, og admins kan hake av for et barn.
 keywords: hak av, avhaking, kryss av, ferdig, fullfør vane, teller, barn, sammen, marker som gjort, i går
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Hak av en vane med en gang du har gjort den. Hver avhaking gir familien energi.
 
@@ -15,5 +15,7 @@ Hak av en vane med en gang du har gjort den. Hver avhaking gir familien energi.
 4. Vil du rette en tidligere dag, trykker du på raden til vanen og så på dagen. Du kan endre de siste 7 dagene.
 
 Du haker av dine egne vaner og alle vaner med **Sammen**. En admin kan også hake av for et barn uten innlogging. Da står det **Du haker av for** og barnets navn i raden.
+
+Vaner som ikke skal gjøres i dag, venter under **Kommer snart**, med dagen hver av dem skal gjøres neste gang. Når du oppretter en vane som ikke skal gjøres i dag, forteller en melding deg når den dukker opp.
 
 > Note: Ingen kan hake av for en annen voksen. Alle med innlogging haker av sine egne vaner.

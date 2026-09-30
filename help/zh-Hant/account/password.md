@@ -3,7 +3,7 @@ id: account-password
 title: 修改或設定密碼
 summary: 修改你的密碼，或是用 Google 或 Apple 註冊的話，設定一個密碼。
 keywords: 密碼, 修改密碼, 新密碼, 設定密碼, 忘記密碼, 重設, google, apple, 登入
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 你可以在個人資料裡修改密碼。
 
@@ -15,5 +15,7 @@ translatedFrom: 2026-09-24
 4. 點**儲存**。你其他的手機和瀏覽器都會被登出，請在那裡用新密碼登入。
 
 用 Google 或 Apple 註冊的？那你還沒有密碼，那一列會寫著**設定密碼**。點它，daili 會寄一封有設定連結的郵件給你。
+
+用的是 @icloud.com、@me.com 或 @mac.com 地址？Apple 有時會攔截我們的郵件。請看看垃圾郵件資料夾，或寫信到 support@daili.app。在 iPhone 上，用**使用Apple繼續**並選**分享我的電子郵件**，就不會有這個問題。
 
 > Note: 忘記密碼了？在登入畫面點**忘記密碼？**，我們會寄連結給你。

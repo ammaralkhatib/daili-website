@@ -7,7 +7,7 @@ keywords: password, change password, new password, set password, forgot password
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-30
 order: 3
 media: account-password
 related: account-profile, start-sign-in
@@ -22,5 +22,7 @@ You change your password on your profile.
 4. Tap **Save**. Your other phones and browsers are signed out, so sign in there with the new password.
 
 Signed up with Google or Apple? Then you have no password yet, and the row says **Set password**. Tap it, and daili emails you a link to set one.
+
+Using an @icloud.com, @me.com or @mac.com address? Apple sometimes blocks our email. Check your Junk folder, or write to support@daili.app. On iPhone, **Continue with Apple** with **Share My Email** avoids it.
 
 > Note: Forgot your password? On the sign-in screen, tap **Forgot password?** and we'll email you a link.

@@ -7,7 +7,7 @@ keywords: view, month, week, day, agenda, list, 3 days, switch view, filter, tod
 routes: /calendar
 tryIt: /calendar
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-09-30
 media: calendar-views
 order: 1
 related: calendar-add-event, calendar-search, calendar-categories
@@ -20,8 +20,10 @@ The calendar can show your family's plans in five ways.
 2. Tap **View** in the bar at the bottom.
 3. Pick **Month**, **Week**, **3 days**, **Day** or **Agenda**.
 4. Tap **Today** at the bottom to jump back to today.
-5. To see only some people or categories, tap **Filter** and pick them.
+5. To see only some people or categories, tap **Filter** and pick them. Children are under **People** too.
 
 daili remembers your view on this phone. In **Month**, tap a day to see its events.
 
-> Note: **Filter** only shows up once there's something to filter by: a second person with a login, or a category.
+An event shows under the people it's for. An event for everyone shows under the person who made it. Its coloured stripe is the colour of the first person it's for.
+
+> Note: **Filter** only shows up once there's something to filter by: a second person (a child counts too), or a category.

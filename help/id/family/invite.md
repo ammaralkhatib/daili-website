@@ -3,7 +3,7 @@ id: family-invite
 title: Undang seseorang ke keluarga Anda
 summary: Bagikan kode 6 digit, kode QR, atau tautan. Mereka bergabung dalam hitungan detik.
 keywords: undang, tambah anggota, pasangan, kode, qr, gabung, tautan, bagikan, undangan, kode baru
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 tipTitle: Rencanakan bersama
 tipBody: Undang pasangan Anda. Kalian berdua melihat kalender dan daftar yang sama.
 ---
@@ -16,6 +16,6 @@ Semua orang di keluarga Anda melihat kalender, daftar, dan ulang tahun yang sama
 
 ![Layar Keluarga. Undang anggota, dengan kode saat ini dan tanggal berakhirnya di bawahnya, dilingkari.](family-invite)
 
-Setiap kode berlaku untuk satu orang. Untuk orang berikutnya, ketuk **Undang anggota** lagi. Membagikan kode atau tautan tetap bisa meski email Anda belum diverifikasi.
+Setiap kode berlaku untuk satu orang. Untuk orang berikutnya, ketuk **Undang anggota** lagi. Membagikan kode atau tautan tetap bisa meski email Anda belum diverifikasi. Mengundang alamat iCloud lewat email? Apple kadang memblokir email kami, jadi kirimkan juga kode atau tautannya sendiri.
 
 > Note: Kode berlaku 7 hari, dan layar menunjukkan sampai kapan. Terkirim ke orang yang salah? Ketuk **Buat kode baru** di **Undang anggota**, dan kode lama tidak berlaku lagi.

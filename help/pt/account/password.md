@@ -3,7 +3,7 @@ id: account-password
 title: Trocar ou definir uma senha
 summary: Troque sua senha, ou defina uma se você se cadastrou com o Google ou a Apple.
 keywords: senha, trocar senha, senha nova, definir senha, esqueci a senha, redefinir, google, apple, entrar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Você troca a senha no seu perfil.
 
@@ -15,5 +15,7 @@ Você troca a senha no seu perfil.
 4. Toque em **Salvar**. Seus outros celulares e navegadores são desconectados, então entre neles com a senha nova.
 
 Você se cadastrou com o Google ou a Apple? Então ainda não tem senha, e a linha diz **Definir uma senha**. Toque nela, e o daili manda por e-mail um link para você criar uma.
+
+Usa um endereço @icloud.com, @me.com ou @mac.com? Às vezes a Apple bloqueia nossos e-mails. Olhe na pasta Lixo Eletrônico, ou escreva para support@daili.app. No iPhone, **Continuar com a Apple** com **Compartilhar meu e-mail** evita isso.
 
 > Note: Esqueceu a senha? Na tela de entrada, toque em **Esqueceu a senha?** e mandamos um link por e-mail.

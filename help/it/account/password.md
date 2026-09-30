@@ -3,7 +3,7 @@ id: account-password
 title: Cambiare o impostare una password
 summary: Cambia la tua password, o impostane una se ti sei registrato con Google o Apple.
 keywords: password, cambiare password, nuova password, impostare password, password dimenticata, reimpostare, google, apple, accesso
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 La password si cambia nel tuo profilo.
 
@@ -15,5 +15,7 @@ La password si cambia nel tuo profilo.
 4. Tocca **Salva**. Gli altri telefoni e browser vengono disconnessi: lì accedi di nuovo con la nuova password.
 
 Ti sei registrato con Google o Apple? Allora non hai ancora una password, e la riga dice **Imposta una password**. Toccala e daili ti manda per e-mail un link per crearne una.
+
+Usi un indirizzo @icloud.com, @me.com o @mac.com? A volte Apple blocca la nostra e-mail. Guarda nella posta indesiderata, oppure scrivi a support@daili.app. Su iPhone, **Continua con Apple** con **Condividi la mia email** evita il problema.
 
 > Note: Hai dimenticato la password? Nella schermata di accesso, tocca **Password dimenticata?** e ti mandiamo un link per e-mail.

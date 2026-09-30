@@ -3,7 +3,7 @@ id: lists-all-mine
 title: Zobacz wszystkie zadania albo tylko swoje
 summary: Przełączaj między zadaniami całej rodziny a tylko tymi, które są przypisane do ciebie.
 keywords: moje, moje zadania, wszystkie, filtr, przypisane do mnie, wszyscy, osoba, obowiązki, dziecko, partner
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 W zabieganej rodzinie łatwiej, gdy widzisz tylko swoje zadania.
 
@@ -13,5 +13,7 @@ W zabieganej rodzinie łatwiej, gdy widzisz tylko swoje zadania.
 2. Na górze dotknij swojego zdjęcia po prawej. To widok **Moje**: każde zadanie przypisane do ciebie, ze wszystkich list.
 3. Dotknij rodzinnego kółka obok, żeby znowu zobaczyć **Wszystkie** listy.
 4. W liście zadań kółka na górze pokazują postępy każdej osoby. Dotknij jednego, żeby zobaczyć tylko jej zadania. Dotknij jeszcze raz, żeby zobaczyć zadania wszystkich.
+
+Twoje prywatne zadania mają w widoku **Moje** kłódkę.
 
 > Note: Zadanie należy do osób, do których jest przypisane. Jeśli nikt go nie ma, należy do osoby, która je dodała.

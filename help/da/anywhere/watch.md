@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili på dit Apple Watch
 summary: Se, hvad der sker nu, flueben ved indkøb, opgaver og vaner, og tilføj ting med stemmen – lige på håndleddet.
 keywords: apple watch, watch, ur, håndled, komplikation, urskive, smart stack, indkøbsliste, stemme, diktere, hurtig note, vaner
-translatedFrom: 2026-09-29
+translatedFrom: 2026-09-30
 ---
 Stryg mellem fire sider: **Først på tur** med dine næste begivenheder, aftensmaden i aften og den næste fødselsdag, din indkøbsliste, dine **Opgaver** og **Vaner** med Minzi.
 
@@ -15,9 +15,15 @@ Stryg mellem fire sider: **Først på tur** med dine næste begivenheder, aftens
 
 Tryk på en række for at sætte flueben ved den. På indkøbslisten og ved dine opgaver trykker du igen inden for 3 sekunder for at fortryde.
 
+![Siden Opgaver på uret med to åbne opgaver, der forfalder i dag og i morgen.](watch-todos)
+
+![Siden Vaner på uret: Minzi, 2 af 5 klaret i dag og de første vaner.](watch-habits)
+
 Med stemmen: tryk på blyanten på **Først på tur** for en hurtig note, eller på **Tilføj punkt** på indkøbslisten.
 
 ![Indkøbslisten på uret med Tilføj punkt øverst.](watch-shopping)
+
+![En hurtig note på uret, klar til diktering.](watch-quick-note)
 
 Hold fingeren på urskiven, tryk på **Rediger**, og stryg til **Komplikationer**. Vælg daili: **Næste** viser din næste begivenhed, **Hurtig note** starter en note. Næste findes også i Smart Stack.
 

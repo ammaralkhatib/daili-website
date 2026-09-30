@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Acara berulang
 summary: Buat acara berulang setiap hari, minggu, bulan, atau tahun, dan ubah satu hari atau seluruh rangkaiannya.
 keywords: ulangi, berulang, rutin, setiap minggu, mingguan, harian, bulanan, tahunan, rangkaian, kebiasaan
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Berenang setiap Selasa? Tambahkan sekali dan biarkan berulang.
 
@@ -17,4 +17,4 @@ Berenang setiap Selasa? Tambahkan sekali dan biarkan berulang.
 
 Mengubah acara berulang? Buat perubahan dulu dan ketuk **Simpan**. Lalu pilih **Acara ini saja**, **Acara ini dan berikutnya**, atau **Semua acara**. Mau menghapusnya? Ketuk **Hapus** dan pilih dengan cara yang sama.
 
-> Note: Pilihan yang tidak bisa menampung perubahan Anda berwarna abu-abu, dengan alasannya. Waktu baru tidak bisa berlaku untuk **Semua acara**. Perubahan pengulangan, **Sepanjang hari**, **Acara pribadi**, atau pengingat tambahan tidak bisa **Acara ini saja**.
+> Note: Pilihan yang tidak bisa menampung perubahan Anda berwarna abu-abu, dengan alasannya. Waktu baru tidak bisa berlaku untuk **Semua acara**. Orang di bawah **Untuk** berlaku untuk seluruh rangkaian. Jadi perubahan pada mereka, pengulangan, **Sepanjang hari**, **Acara pribadi**, atau pengingat tambahan tidak bisa **Acara ini saja**.

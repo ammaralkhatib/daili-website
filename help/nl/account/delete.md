@@ -3,7 +3,7 @@ id: account-delete
 title: Je account verwijderen (en binnen 30 dagen van gedachten veranderen)
 summary: Je account wordt na 30 dagen definitief verwijderd. Tot dan haal je het terug door in te loggen of via de link in onze e-mail.
 keywords: account verwijderen, account opheffen, account sluiten, verwijdering annuleren, account herstellen, 30 dagen, daili verlaten, avg
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Wil je eerst een kopie van je gegevens? Download die voordat je begint.
 
@@ -17,7 +17,7 @@ Wil je eerst een kopie van je gegevens? Download die voordat je begint.
 
 Koos je **Ik wil opnieuw beginnen**? Dan heb je geen nieuw account nodig: maak gewoon een nieuw gezin of een nieuwe groep aan.
 
-30 dagen lang kun je nog van gedachten veranderen: log in en tik op **Mijn account herstellen**, of tik op de link in onze e-mail. Na 30 dagen is het definitief verwijderd.
+30 dagen lang kun je nog van gedachten veranderen: log in en tik op **Mijn account herstellen**, of tik op de link in onze e-mail. De link bevestigt ook je e-mailadres. Na 30 dagen is het definitief verwijderd.
 
 Ben je eigenaar van een gezin? Maak dan eerst iemand anders eigenaar, of verwijder het gezin.
 

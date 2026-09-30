@@ -14,7 +14,7 @@ Kehabisan ide makan malam?
 1. Di Beranda, ketuk **Rencana makan**, lalu ikon kilau di atas (**Rencanakan mingguku**). Di minggu yang kosong, Anda juga bisa mengetuk **Biar Daili menyarankan**.
 2. Pilih filter kalau mau: **Cepat (di bawah 30 mnt)**, **Ramah anak**, **Vegetarian**, **Hanya resepku**. Tulis keinginan di **Ada yang perlu dihabiskan atau dihindari?**
 3. Ketuk **Sarankan makan malam**.
-4. Di **Mingguanmu, disarankan**, hapus centang hari yang tidak Anda mau. Ketuk **Tukar** untuk ide lain, gratis. Ketuk kartu **Resep baru** untuk membacanya.
+4. Di **Minggu Anda, disarankan**, hapus centang hari yang tidak Anda mau. Ketuk **Tukar** untuk ide lain, gratis. Ketuk kartu **Resep baru** untuk membacanya.
 5. Ketuk tombol di bawah, misalnya **Tambah 5 makan malam**.
 
 Hanya malam kosong mulai hari ini yang diisi, tanpa menu dua minggu terakhir. Ide baru masuk ke Resep Anda. **Coba lagi** memakai satu saran lagi.

@@ -3,7 +3,7 @@ id: lists-assign
 title: Asignar una tarea a una o varias personas
 summary: Pon un nombre en una tarea, o repártela entre dos personas, como una pareja o un padre y un hijo.
 keywords: asignar, responsable, dar tarea, tareas de casa, niño, pareja, quién, persona, compartir, quién se encarga
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Una tarea con un nombre se hace. Puedes asignarla a una persona o a varias.
 
@@ -15,5 +15,7 @@ Una tarea con un nombre se hace. Puedes asignarla a una persona o a varias.
 4. Toca **Guardar** y luego **Guardar** otra vez en la tarea.
 
 Ahora la tarea muestra sus fotos, y cuenta para cada uno de ellos.
+
+En la misma hoja, **Tarea privada** significa que solo tú ves la tarea. Entonces solo se te puede asignar a ti, o a niños sin acceso propio, así que al activarla se quita a las demás personas.
 
 > Note: Un recordatorio solo llega a las personas con acceso. Una tarea asignada solo a un niño avisa a todos.

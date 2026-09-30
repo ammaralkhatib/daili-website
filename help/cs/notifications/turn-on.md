@@ -3,14 +3,14 @@ id: notifications-turn-on
 title: Zapnout oznámení
 summary: Dovol daili posílat připomenutí a novinky z rodiny do tohoto telefonu.
 keywords: oznámení, zapnout, povolit, aktivovat, push, upozornění, připomenutí, oprávnění, zvuk, nezvoní
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 daili ti může připomínat události, úkoly, narozeniny a návyky a dát vědět, když někdo z rodiny něco změní. K tomu to ale musí tvůj telefon povolit.
 
 ![Horní část obrazovky Oznámení s upozorněním, že oznámení jsou vypnutá. Zakroužkované je tlačítko Zapnout oznámení.](notifications-turn-on)
 
 1. Klepni na svůj obrázek nahoře na domovské obrazovce a otevře se **Nastavení**. Pak klepni na **Oznámení**.
-2. Dokud jsou oznámení vypnutá, stojí to v upozornění nahoře. Klepni v něm na **Zapnout oznámení**.
+2. Dokud jsou oznámení vypnutá, upozornění nahoře říká, že ti daili nemůže dát vědět, když se něco změní. Klepni v něm na **Zapnout oznámení**.
 3. Telefon se zeptá. Klepni na **Povolit**.
 4. Pokud už byla oznámení jednou zakázaná, je na tlačítku **Otevřít nastavení**. Otevře nastavení telefonu pro daili. Zapni tam oznámení.
 

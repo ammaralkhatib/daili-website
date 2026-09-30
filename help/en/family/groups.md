@@ -7,7 +7,7 @@ keywords: group, second family, switch family, grandparents, club, team, school 
 routes: /family
 tryIt: /family
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-09-30
 media: family-groups
 related: start-join, start-create-family
 tipTitle: More than one family?
@@ -24,5 +24,7 @@ One account can be in up to 5 families or groups: your home, the grandparents, t
 3. To add another one, tap **Create a family or group** or **Join with a code**.
 
 You find the same list on the Family screen: tap **Switch family or group**.
+
+Admins can give a family its own photo: on the Family screen, tap the family picture to take, choose or remove one. It shows in this list too.
 
 > Note: Switching only changes this phone. Tap **⋮** next to a family and **Make default** to choose the one daili opens on a new phone.

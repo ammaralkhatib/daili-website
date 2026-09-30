@@ -6,7 +6,7 @@ summary: See what's next, tick off shopping, to-dos and habits, and add things b
 keywords: apple watch, watch, wrist, complication, watch face, smart stack, shopping list, voice, dictation, quick note, to-dos, habits
 routes: /
 since: 1.8.0
-updated: 2026-09-29
+updated: 2026-09-30
 order: 2
 media: watch-up-next
 related: anywhere-widgets, lists-shopping, lists-todos, habits-minzi
@@ -21,9 +21,15 @@ Swipe between four pages: **Up next** with your next events, tonight's dinner an
 
 Tap a row to tick it off. On the shopping list and to-dos, tap again within 3 seconds to undo.
 
+![The To-dos page on the watch with two open tasks, due today and tomorrow.](watch-todos)
+
+![The Habits page on the watch: Minzi, 2 of 5 done today, and the first habits.](watch-habits)
+
 Add by voice: tap the pencil on **Up next** for a quick note, or **Add item** on the shopping list.
 
 ![The Groceries list on the watch, with Add item at the top.](watch-shopping)
+
+![A quick note on the watch, ready to dictate.](watch-quick-note)
 
 Press and hold the watch face, tap **Edit** and swipe to **Complications**. Pick daili: **Next up** shows your next event, **Quick note** starts a note. Next up is in the Smart Stack too.
 

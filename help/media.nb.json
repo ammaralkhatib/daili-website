@@ -49,7 +49,7 @@
   "vault-where": { "file": "vault-where.webp", "w": 720, "h": 1564, "kind": "image" },
   "vault-documents": { "file": "vault-documents.webp", "w": 720, "h": 1564, "kind": "image" },
   "vault-photos": { "file": "vault-photos.webp", "w": 720, "h": 1564, "kind": "image" },
-  "notifications-turn-on": { "file": "notifications-turn-on.webp", "w": 720, "h": 704, "kind": "image" },
+  "notifications-turn-on": { "file": "notifications-turn-on.webp", "w": 720, "h": 673, "kind": "image" },
   "notifications-choose": { "file": "notifications-choose.webp", "w": 720, "h": 1564, "kind": "image" },
   "notifications-help": { "file": "notifications-help.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-profile": { "file": "account-profile.webp", "w": 720, "h": 1564, "kind": "image" },
@@ -69,5 +69,8 @@
   "meals-suggest": { "file": "meals-suggest.webp", "w": 720, "h": 622, "kind": "image" },
   "start-you-step": { "file": "start-you-step.webp", "w": 720, "h": 1564, "kind": "image" },
   "watch-up-next": { "file": "watch-up-next.webp", "w": 416, "h": 496, "kind": "image" },
-  "watch-shopping": { "file": "watch-shopping.webp", "w": 416, "h": 496, "kind": "image" }
+  "watch-shopping": { "file": "watch-shopping.webp", "w": 416, "h": 496, "kind": "image" },
+  "watch-todos": { "file": "watch-todos.webp", "w": 416, "h": 496, "kind": "image" },
+  "watch-habits": { "file": "watch-habits.webp", "w": 416, "h": 496, "kind": "image" },
+  "watch-quick-note": { "file": "watch-quick-note.webp", "w": 416, "h": 496, "kind": "image" }
 }

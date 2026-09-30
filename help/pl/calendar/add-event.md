@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Dodaj wydarzenie
 summary: Wpisz wizytę, wyjazd albo mecz do rodzinnego kalendarza, żeby wszyscy go widzieli.
 keywords: dodaj wydarzenie, nowe wydarzenie, utwórz wydarzenie, wizyta, termin, zaplanuj, plan, data, wpis w kalendarzu, cały dzień
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Każdy w rodzinie od razu widzi nowe wydarzenie.
 
@@ -14,6 +14,8 @@ Każdy w rodzinie od razu widzi nowe wydarzenie.
 3. Ustaw pola **Początek** i **Koniec**. Na cały dzień włącz **Cały dzień**.
 4. Jeśli chcesz, dodaj więcej: **Powtarzanie**, **Przypomnienie**, **Kategoria** albo **Miejsce**.
 5. Dotknij **Zapisz**.
+
+W sekcji **Dla** wybierz, dla kogo jest wydarzenie, także dzieci. Gdy nikogo nie wybierzesz, znaczy to **Wszyscy**. Przypomnienia i powiadomienia dostają tylko wybrane osoby z własnym logowaniem. Prywatne wydarzenie nie ma wiersza **Dla**.
 
 Potem daili otworzy twoje wydarzenie, żeby można było dołączyć zadanie, rzecz do kupienia, dokument albo zdjęcie. Masz daty na papierze? Zobacz **Wypełnij wydarzenie ze zdjęcia**.
 

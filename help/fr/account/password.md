@@ -3,7 +3,7 @@ id: account-password
 title: Changer ou définir un mot de passe
 summary: Change ton mot de passe, ou définis-en un si tu t'es inscrit avec Google ou Apple.
 keywords: mot de passe, changer mot de passe, nouveau mot de passe, définir mot de passe, mot de passe oublié, réinitialiser, google, apple, connexion
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Tu changes ton mot de passe dans ton profil.
 
@@ -15,5 +15,7 @@ Tu changes ton mot de passe dans ton profil.
 4. Touche **Enregistrer**. Tes autres téléphones et navigateurs sont déconnectés : reconnecte-toi là-bas avec le nouveau mot de passe.
 
 Tu t'es inscrit avec Google ou Apple ? Alors tu n'as pas encore de mot de passe, et la ligne indique **Définir un mot de passe**. Touche-la, et daili t'envoie un lien par e-mail pour en créer un.
+
+Tu utilises une adresse @icloud.com, @me.com ou @mac.com ? Apple bloque parfois notre e-mail. Regarde dans tes courriers indésirables, ou écris à support@daili.app. Sur iPhone, **Continuer avec Apple** avec **Partager mon adresse e-mail** évite ce problème.
 
 > Note: Mot de passe oublié ? Sur l'écran de connexion, touche **Mot de passe oublié ?** et nous t'envoyons un lien par e-mail.

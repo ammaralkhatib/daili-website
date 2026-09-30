@@ -3,7 +3,7 @@ id: account-delete
 title: Radera ditt konto (och ångra dig inom 30 dagar)
 summary: Ditt konto raderas för gott efter 30 dagar. Fram till dess får du tillbaka det genom att logga in eller via länken i vårt mejl.
 keywords: radera konto, ta bort konto, stänga konto, avbryta radering, återställa konto, 30 dagar, lämna daili, gdpr
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Vill du ha en kopia av dina uppgifter först? Ladda ner den innan du börjar.
 
@@ -17,7 +17,7 @@ Vill du ha en kopia av dina uppgifter först? Ladda ner den innan du börjar.
 
 Valde du **Jag vill börja om**? Du behöver inget nytt konto: skapa en ny familj eller grupp i stället.
 
-I 30 dagar kan du fortfarande ångra dig: logga in och tryck på **Återställ mitt konto**, eller tryck på länken i vårt mejl. Efter 30 dagar är det raderat för gott.
+I 30 dagar kan du fortfarande ångra dig: logga in och tryck på **Återställ mitt konto**, eller tryck på länken i vårt mejl. Länken bekräftar också din e-postadress. Efter 30 dagar är det raderat för gott.
 
 Äger du en familj? Gör någon annan till ägare, eller ta bort familjen, först.
 

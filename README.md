@@ -56,7 +56,7 @@ check-build → test-detector`, chained with
 ## Help center
 
 `help/en/<topic>/<slug>.md` is one help article: flat `key: value` front
-matter and a small Markdown subset (paragraphs, one numbered list, up to two
+matter and a small Markdown subset (paragraphs, one numbered list, up to five
 `![alt](media-id)` images, `> Note:` lines, `**bold**` for button names —
 anything else fails the build with file:line). The rules and the full key
 table are at the top of `tools/help-lib.mjs`. One source, three places: the

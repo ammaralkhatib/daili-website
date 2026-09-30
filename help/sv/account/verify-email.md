@@ -3,9 +3,9 @@ id: account-verify-email
 title: Bekräfta din e-post, och varför det spelar roll
 summary: Med en bekräftad e-post kan du bjuda in folk via e-post, ge ett barn en egen inloggning och söka recept på nätet.
 keywords: bekräfta, verifiera, verifiering, e-post, bekräfta e-post, skicka igen, inte bekräftad, länk, inkorg, skräppost, verifierad
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
-När du registrerar dig med en e-postadress skickar daili en länk för att kontrollera att den verkligen är din. Tills du trycker på den är tre saker låsta: att bjuda in någon via e-post, att ge ett barn en egen inloggning och att söka recept på nätet.
+När du registrerar dig med e-post skickar daili en länk för att kontrollera att adressen är din. Tills du trycker på den är tre saker låsta: att bjuda in någon via e-post, att ge ett barn en egen inloggning och att söka recept på nätet.
 
 ![Den övre delen av Inställningar. Kortet E-postadressen är inte bekräftad med knappen Skicka igen är inringat.](account-verify-email)
 
@@ -16,6 +16,6 @@ När du registrerar dig med en e-postadress skickar daili en länk för att kont
 
 Kunde mejlet inte levereras? daili säger det, och med **Ändra e-postadress** fixar du det direkt. Efter två nya försök eller ett studsat mejl får du personlig hjälp inom en dag via **Fick du inget mejl?**.
 
-Inloggad med Google eller Apple? Då är din e-post redan bekräftad.
+Inloggad med Google eller Apple, eller med en iCloud-adress? Då är din e-post redan bekräftad.
 
 > Note: Du behöver ingen bekräftad e-post för att gå med i en familj med en kod.

@@ -3,7 +3,7 @@ id: lists-assign
 title: Giv en opgave til en eller flere personer
 summary: Sæt et navn på en opgave, eller del den mellem to, fx et par eller en forælder og et barn.
 keywords: tildel, ansvarlig, giv opgave, pligter, barn, partner, hvem, person, del, ansvar
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 En opgave med et navn på bliver gjort. Du kan give den til én person eller til flere.
 
@@ -15,5 +15,7 @@ En opgave med et navn på bliver gjort. Du kan give den til én person eller til
 4. Tryk på **Gem** og så på **Gem** igen i opgaven.
 
 Opgaven viser nu deres billeder, og den tæller med for hver af dem.
+
+På samme ark betyder **Privat opgave**, at kun du kan se opgaven. Så kan den kun gives til dig eller til børn uden login, så når du slår den til, bliver de andre personer taget af den.
 
 > Note: En påmindelse går kun til personer med login. En opgave, der kun er givet til et barn, minder alle om den.

@@ -3,7 +3,7 @@ id: habits-tick
 title: Een gewoonte afvinken: van jezelf, samen, van een kind
 summary: Vink een gewoonte af als je hem hebt gedaan. Je kunt ook gezamenlijke gewoontes afvinken, en beheerders kunnen afvinken voor een kind.
 keywords: afvinken, aanvinken, klaar, gedaan, teller, kind, kinderen, samen, markeren als klaar, gisteren
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Vink een gewoonte af zodra je hem hebt gedaan. Elk vinkje geeft het gezin energie.
 
@@ -15,5 +15,7 @@ Vink een gewoonte af zodra je hem hebt gedaan. Elk vinkje geeft het gezin energi
 4. Om een eerdere dag te verbeteren, tik je op de regel van de gewoonte en dan op de dag. Je kunt de laatste 7 dagen wijzigen.
 
 Je vinkt je eigen gewoontes af en elke gewoonte met **Samen**. Een beheerder kan ook afvinken voor een kind zonder login. Op de regel staat dan **Jij vinkt af voor** en de naam van het kind.
+
+Gewoontes die vandaag niet aan de beurt zijn, wachten onder **Binnenkort**, met de dag waarop ze weer aan de beurt zijn. Maak je een gewoonte die vandaag niet aan de beurt is, dan zegt een bericht wanneer hij verschijnt.
 
 > Note: Niemand kan afvinken voor een andere volwassene. Iedereen met een login vinkt zijn eigen gewoontes af.

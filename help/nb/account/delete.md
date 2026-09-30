@@ -3,7 +3,7 @@ id: account-delete
 title: Slett kontoen din (og ombestem deg innen 30 dager)
 summary: Kontoen din slettes for godt etter 30 dager. Fram til da får du den tilbake ved å logge inn eller via lenken i e-posten vår.
 keywords: slett konto, fjern konto, avslutt konto, avbryt sletting, gjenopprett konto, 30 dager, forlat daili, gdpr, personvern
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Vil du ha en kopi av dataene dine først? Last den ned før du begynner.
 
@@ -17,7 +17,7 @@ Vil du ha en kopi av dataene dine først? Last den ned før du begynner.
 
 Valgte du **Jeg vil begynne på nytt**? Du trenger ingen ny konto: opprett heller en ny familie eller gruppe.
 
-I 30 dager kan du fortsatt ombestemme deg: logg inn og trykk på **Gjenopprett kontoen min**, eller trykk på lenken i e-posten vår. Etter 30 dager slettes den for godt.
+I 30 dager kan du fortsatt ombestemme deg: logg inn og trykk på **Gjenopprett kontoen min**, eller trykk på lenken i e-posten vår. Lenken bekrefter også e-postadressen din. Etter 30 dager slettes den for godt.
 
 Eier du en familie? Gjør noen andre til eier, eller slett familien, først.
 

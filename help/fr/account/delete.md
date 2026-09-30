@@ -3,7 +3,7 @@ id: account-delete
 title: Supprimer ton compte (et changer d'avis dans les 30 jours)
 summary: Ton compte est supprimé pour de bon après 30 jours. D'ici là, te reconnecter ou le lien de notre e-mail le fait revenir.
 keywords: supprimer compte, effacer compte, fermer compte, annuler suppression, restaurer compte, 30 jours, quitter daili, rgpd
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Tu veux d'abord une copie de tes données ? Télécharge-la avant de commencer.
 
@@ -17,7 +17,7 @@ Tu veux d'abord une copie de tes données ? Télécharge-la avant de commencer.
 
 Tu as choisi **Je veux repartir de zéro** ? Pas besoin d'un nouveau compte : crée plutôt une nouvelle famille ou un nouveau groupe.
 
-Pendant 30 jours, tu peux encore changer d'avis : connecte-toi et touche **Restaurer mon compte**, ou touche le lien dans notre e-mail. Après 30 jours, il est supprimé pour de bon.
+Pendant 30 jours, tu peux encore changer d'avis : connecte-toi et touche **Restaurer mon compte**, ou touche le lien dans notre e-mail. Le lien confirme aussi ton adresse e-mail. Après 30 jours, il est supprimé pour de bon.
 
 Tu es propriétaire d'une famille ? Nomme d'abord quelqu'un d'autre propriétaire, ou supprime la famille.
 

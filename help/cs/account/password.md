@@ -3,7 +3,7 @@ id: account-password
 title: Změnit nebo nastavit heslo
 summary: Změň si heslo, nebo si ho nastav, pokud máš účet přes Google nebo Apple.
 keywords: heslo, změnit heslo, nové heslo, nastavit heslo, zapomenuté heslo, obnovení, google, apple, přihlášení
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Heslo měníš ve svém profilu.
 
@@ -15,5 +15,7 @@ Heslo měníš ve svém profilu.
 4. Klepni na **Uložit**. Tvoje ostatní telefony a prohlížeče se odhlásí, takže se tam přihlas novým heslem.
 
 Máš účet přes Google nebo Apple? Pak zatím heslo nemáš a řádek se jmenuje **Nastavit heslo**. Klepni na něj a daili ti e-mailem pošle odkaz, kde si heslo nastavíš.
+
+Máš adresu @icloud.com, @me.com nebo @mac.com? Apple někdy naše e-maily blokuje. Podívej se do složky Nevyžádané, nebo napiš na support@daili.app. Na iPhonu tomu předejdeš přes **Pokračovat přes Apple** s volbou **Sdílet můj e-mail**.
 
 > Note: Zapomenuté heslo? Na přihlašovací obrazovce klepni na **Zapomenuté heslo?** a pošleme ti odkaz e-mailem.

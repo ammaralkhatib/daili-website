@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Lägg till en händelse
 summary: Lägg in ett besök, en resa eller en match i familjens kalender, så att alla ser det.
 keywords: lägg till händelse, ny händelse, skapa händelse, möte, tid, planera, datum, kalenderpost, heldag, aktivitet
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Alla i din familj ser en ny händelse direkt.
 
@@ -14,6 +14,8 @@ Alla i din familj ser en ny händelse direkt.
 3. Ställ in när den **Börjar** och **Slutar**. För en hel dag slår du på **Heldag**.
 4. Lägg till mer om du vill: **Upprepning**, en **Påminnelse**, en **Kategori** eller en **Plats**.
 5. Tryck på **Spara**.
+
+Under **För** väljer du vem händelsen är för, barn också. Väljer du ingen gäller **Alla**. Bara de valda personerna med inloggning får dess påminnelser och aviseringar. En privat händelse har ingen rad **För**.
 
 daili öppnar sedan din händelse, så att du kan koppla en uppgift, en vara att handla, ett dokument eller ett foto till den. Står datumen på papper? Se **Fyll i en händelse från ett foto**.
 

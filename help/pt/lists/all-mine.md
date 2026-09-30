@@ -3,7 +3,7 @@ id: lists-all-mine
 title: Ver todas as tarefas, ou só as suas
 summary: Alterne entre as tarefas da família toda e só as que foram dadas a você.
 keywords: minhas, minhas tarefas, todas, filtro, atribuídas a mim, todo mundo, pessoa, afazeres, criança, parceiro
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Em uma família agitada, ajuda ver só as suas tarefas.
 
@@ -13,5 +13,7 @@ Em uma família agitada, ajuda ver só as suas tarefas.
 2. No alto, toque na sua foto, à direita. Isso é **Minhas**: todas as tarefas dadas a você, de todas as listas.
 3. Toque no círculo da família, ao lado, para ver **Todas** as listas de novo.
 4. Dentro de uma lista de tarefas, os círculos no alto mostram o progresso de cada pessoa. Toque em um para ver só as tarefas dela. Toque de novo para ver as de todos.
+
+Suas tarefas privadas mostram um cadeado em **Minhas**.
 
 > Note: Uma tarefa pertence às pessoas a quem foi dada. Se ninguém tem a tarefa, ela pertence a quem a adicionou.

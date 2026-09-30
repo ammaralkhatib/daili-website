@@ -3,7 +3,7 @@ id: account-password
 title: Cambiar o definir una contraseña
 summary: Cambia tu contraseña, o define una si te registraste con Google o Apple.
 keywords: contraseña, cambiar contraseña, contraseña nueva, definir contraseña, olvidé la contraseña, restablecer, google, apple, iniciar sesión
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 La contraseña se cambia en tu perfil.
 
@@ -15,5 +15,7 @@ La contraseña se cambia en tu perfil.
 4. Toca **Guardar**. Se cierra la sesión en tus otros teléfonos y navegadores, así que vuelve a iniciar sesión allí con la contraseña nueva.
 
 ¿Te registraste con Google o Apple? Entonces aún no tienes contraseña, y la fila dice **Definir una contraseña**. Tócala y daili te envía un enlace por correo para crear una.
+
+¿Usas una dirección @icloud.com, @me.com o @mac.com? A veces Apple bloquea nuestro correo. Mira en la carpeta de correo no deseado, o escribe a support@daili.app. En iPhone, **Continuar con Apple** con **Compartir mi correo electrónico** lo evita.
 
 > Note: ¿Olvidaste tu contraseña? En la pantalla de inicio de sesión, toca **¿Olvidaste tu contraseña?** y te enviamos un enlace por correo.

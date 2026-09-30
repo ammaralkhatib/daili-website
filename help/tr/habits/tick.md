@@ -3,7 +3,7 @@ id: habits-tick
 title: Bir alışkanlığı işaretle: seninki, ortak olan, bir çocuğunki
 summary: Yaptığında alışkanlığı işaretle. Birlikte alışkanlıklarını da işaretleyebilirsin, yöneticiler de bir çocuk adına işaretleyebilir.
 keywords: işaretle, tikle, tamamlandı, alışkanlığı tamamla, sayaç, çocuk, çocuklar, birlikte, yapıldı olarak işaretle, dün
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Bir alışkanlığı yaptığın anda işaretle. Her işaret aileye enerji verir.
 
@@ -15,5 +15,7 @@ Bir alışkanlığı yaptığın anda işaretle. Her işaret aileye enerji verir
 4. Daha önceki bir günü düzeltmek için alışkanlığın satırına, sonra o güne dokun. Son 7 günü değiştirebilirsin.
 
 Kendi alışkanlıklarını ve her **Birlikte** alışkanlığını sen işaretlersin. Bir yönetici, girişi olmayan bir çocuk adına da işaretleyebilir. O zaman satırda **Şu kişi için sen işaretliyorsun:** ve çocuğun adı yazar.
+
+Bugün sırası olmayan alışkanlıklar, her birinin bir sonraki günüyle birlikte **Yaklaşanlar** altında bekler. Bugün sırası olmayan bir alışkanlık oluşturduğunda, bir mesaj sana ne zaman görüneceğini söyler.
 
 > Note: Kimse başka bir yetişkin adına işaretleyemez. Girişi olan herkes kendi alışkanlıklarını kendisi işaretler.

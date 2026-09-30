@@ -14,7 +14,7 @@ Plus d’idées pour le dîner ?
 1. Sur l'écran d'accueil, touche **Menus**, puis les étincelles en haut (**Planifier ma semaine**). Sur une semaine vide, tu peux aussi toucher **Laisser Daili proposer**.
 2. Choisis des filtres si tu veux : **Rapide (moins de 30 min)**, **Pour les enfants**, **Végétarien**, **Seulement mes recettes**. Écris un souhait sous **Quelque chose à finir ou à éviter ?**
 3. Touche **Proposer des dîners**.
-4. Sur **Votre semaine, proposée**, décoche un jour dont tu ne veux pas. Touche **Échanger** pour une autre idée, gratuitement. Touche une carte **Nouvelle recette** pour la lire.
+4. Sur **Ta semaine, proposée**, décoche un jour dont tu ne veux pas. Touche **Échanger** pour une autre idée, gratuitement. Touche une carte **Nouvelle recette** pour la lire.
 5. Touche le bouton en bas, comme **Ajouter 5 dîners**.
 
 Seuls les soirs libres à partir d'aujourd'hui sont remplis, sans les repas des deux dernières semaines. Les nouvelles idées rejoignent tes recettes. **Réessayer** utilise une proposition de plus.

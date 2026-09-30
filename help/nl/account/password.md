@@ -3,7 +3,7 @@ id: account-password
 title: Een wachtwoord wijzigen of instellen
 summary: Wijzig je wachtwoord, of stel er een in als je je hebt aangemeld met Google of Apple.
 keywords: wachtwoord, wachtwoord wijzigen, nieuw wachtwoord, wachtwoord instellen, wachtwoord vergeten, resetten, google, apple, inloggen
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Je wachtwoord wijzig je in je profiel.
 
@@ -15,5 +15,7 @@ Je wachtwoord wijzig je in je profiel.
 4. Tik op **Opslaan**. Op je andere telefoons en browsers word je uitgelogd, dus log daar in met het nieuwe wachtwoord.
 
 Aangemeld met Google of Apple? Dan heb je nog geen wachtwoord, en op de regel staat **Wachtwoord instellen**. Tik erop, en daili mailt je een link om er een in te stellen.
+
+Gebruik je een adres met @icloud.com, @me.com of @mac.com? Apple blokkeert onze e-mail soms. Kijk in je map Ongewenst, of mail naar support@daili.app. Op de iPhone voorkom je het met **Doorgaan met Apple** en **Deel mijn e-mailadres**.
 
 > Note: Wachtwoord vergeten? Tik op het inlogscherm op **Wachtwoord vergeten?** en we mailen je een link.

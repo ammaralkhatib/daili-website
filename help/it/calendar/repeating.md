@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Eventi ricorrenti
 summary: Fai ripetere un evento ogni giorno, settimana, mese o anno, e cambia un solo giorno o tutta la serie.
 keywords: ripetere, ripetizione, ricorrente, ogni settimana, settimanale, giornaliero, mensile, annuale, serie, routine
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Nuoto ogni martedì? Aggiungilo una volta e lascialo ripetere.
 
@@ -17,4 +17,4 @@ Nuoto ogni martedì? Aggiungilo una volta e lascialo ripetere.
 
 Modifichi un evento ricorrente? Prima fai le modifiche e tocca **Salva**. Poi scegli **Solo questo evento**, **Questo evento e i successivi** o **Tutti gli eventi**. Ne elimini uno? Tocca **Elimina** e scegli allo stesso modo.
 
-> Note: Una scelta che non può accogliere la tua modifica è in grigio, con il motivo. Un nuovo orario non può andare su **Tutti gli eventi**. Le modifiche a ripetizione, **Tutto il giorno**, **Evento privato** o promemoria in più non possono essere **Solo questo evento**.
+> Note: Una scelta che non può accogliere la tua modifica è in grigio, con il motivo. Un nuovo orario non può andare su **Tutti gli eventi**. Le persone sotto **Per** valgono per tutta la serie. Quindi le modifiche a queste persone, a ripetizione, **Tutto il giorno**, **Evento privato** o promemoria in più non possono essere **Solo questo evento**.

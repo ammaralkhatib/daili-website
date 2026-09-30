@@ -5,7 +5,7 @@ summary: Fai parte di un massimo di 5 famiglie o gruppi con un solo account, e p
 keywords: gruppo, seconda famiglia, cambiare famiglia, nonni, club, squadra, classe, più famiglie, famiglia predefinita
 tipTitle: Più di una famiglia?
 tipBody: Aggiungi i nonni o la squadra come gruppo, e passa dall'uno all'altro con un tocco.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Un account può far parte di un massimo di 5 famiglie o gruppi: casa tua, i nonni, la squadra o la classe di scuola. Ognuno ha il suo calendario e le sue liste.
 
@@ -16,5 +16,7 @@ Un account può far parte di un massimo di 5 famiglie o gruppi: casa tua, i nonn
 3. Per aggiungerne un altro, tocca **Crea una famiglia o un gruppo** o **Entra con un codice**.
 
 Trovi lo stesso elenco nella schermata Famiglia: tocca **Cambia famiglia o gruppo**.
+
+Gli admin possono dare a una famiglia la sua foto: nella schermata Famiglia, tocca l'immagine della famiglia per scattarne una, sceglierne una o toglierla. Compare anche in questo elenco.
 
 > Note: Il cambio vale solo per questo telefono. Tocca **⋮** accanto a una famiglia e **Imposta come predefinita** per scegliere quella che daili apre su un nuovo telefono.

@@ -5,7 +5,7 @@ summary: Teile einen 6-stelligen Code, einen QR-Code oder einen Link. In Sekunde
 keywords: einladen, mitglied hinzufügen, partner, code, qr, beitreten, link, teilen, neuer code
 tipTitle: Plant gemeinsam
 tipBody: Lade deinen Partner ein. Ihr seht beide denselben Kalender und dieselben Listen.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Alle in deiner Familie sehen denselben Kalender, dieselben Listen und Geburtstage.
 
@@ -16,6 +16,6 @@ Alle in deiner Familie sehen denselben Kalender, dieselben Listen und Geburtstag
 
 ![Der Familienbildschirm. Mitglied einladen, darunter der aktuelle Code und sein Ablaufdatum, ist eingekreist.](family-invite)
 
-Jeder Code gilt für eine Person. Für die nächste tippst du wieder auf **Mitglied einladen**. Code oder Link teilen klappt schon, bevor deine E-Mail bestätigt ist.
+Jeder Code gilt für eine Person. Für die nächste tippst du wieder auf **Mitglied einladen**. Code oder Link teilen klappt schon, bevor deine E-Mail bestätigt ist. Du hast eine iCloud-Adresse per E-Mail eingeladen? Apple blockiert unsere E-Mails manchmal, also schick den Code oder Link zusätzlich selbst.
 
 > Note: Ein Code gilt 7 Tage, und der Bildschirm zeigt, bis wann. An die falsche Person geschickt? Tippe unter **Mitglieder einladen** auf **Neuen Code holen**, dann gilt der alte nicht mehr.

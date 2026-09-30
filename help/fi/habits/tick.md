@@ -3,7 +3,7 @@ id: habits-tick
 title: Merkitse tapa tehdyksi: oma, yhteinen, lapsen
 summary: Merkitse tapa tehdyksi, kun olet tehnyt sen. Voit merkitä myös yhteisiä tapoja, ja ylläpitäjät voivat merkitä lapsen puolesta.
 keywords: merkitse, rastita, tehty, valmis, suorita tapa, laskuri, lapsi, yhdessä, merkitse tehdyksi, eilen
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Merkitse tapa tehdyksi heti, kun olet tehnyt sen. Jokainen merkintä antaa perheelle energiaa.
 
@@ -15,5 +15,7 @@ Merkitse tapa tehdyksi heti, kun olet tehnyt sen. Jokainen merkintä antaa perhe
 4. Jos haluat korjata aiemman päivän, napauta tavan riviä ja sitten päivää. Voit muuttaa viimeistä 7 päivää.
 
 Merkitset omat tapasi ja kaikki **Yhdessä**-tavat. Ylläpitäjä voi merkitä myös lapsen puolesta, jolla ei ole kirjautumista. Silloin rivillä lukee **Merkitset puolesta:** ja lapsen nimi.
+
+Tavat, jotka eivät ole vuorossa tänään, odottavat kohdassa **Tulossa**, ja jokaisella näkyy päivä, jolloin se on seuraavan kerran vuorossa. Kun luot tavan, joka ei ole vuorossa tänään, ilmoitus kertoo, milloin se tulee näkyviin.
 
 > Note: Kukaan ei voi merkitä toisen aikuisen puolesta. Jokainen kirjautunut merkitsee omat tapansa.

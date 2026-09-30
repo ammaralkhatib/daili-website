@@ -5,7 +5,7 @@ summary: Dela en 6-siffrig kod, en QR-kod eller en länk. De är med på några 
 keywords: bjuda in, inbjudan, lägg till medlem, partner, kod, qr, gå med, länk, dela, ny kod
 tipTitle: Planera tillsammans
 tipBody: Bjud in din partner. Ni ser båda samma kalender och listor.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Alla i din familj ser samma kalender, listor och födelsedagar.
 
@@ -16,6 +16,6 @@ Alla i din familj ser samma kalender, listor och födelsedagar.
 
 ![Familjeskärmen. Bjud in medlem, med den aktuella koden och dess slutdatum under, är inringad.](family-invite)
 
-Varje kod gäller för en person. För nästa trycker du på **Bjud in medlem** igen. Att dela koden eller länken fungerar redan innan din e-post är bekräftad.
+Varje kod gäller för en person. För nästa trycker du på **Bjud in medlem** igen. Att dela koden eller länken fungerar redan innan din e-post är bekräftad. Bjöd du in en iCloud-adress via e-post? Apple blockerar ibland våra mejl, så skicka koden eller länken själv också.
 
 > Note: En kod gäller i 7 dagar, och skärmen visar till när. Skickade du den till fel person? Tryck på **Skapa ny kod** på **Bjud in medlemmar**, så slutar den gamla att fungera.

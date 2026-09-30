@@ -3,7 +3,7 @@ id: lists-assign
 title: Dar uma tarefa a uma ou mais pessoas
 summary: Coloque um nome em uma tarefa, ou divida ela entre duas pessoas, como um casal ou um pai e um filho.
 keywords: atribuir, responsável, dar tarefa, afazeres, criança, parceiro, quem, pessoa, dividir, quem faz
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Uma tarefa com um nome é uma tarefa feita. Você pode dar a uma pessoa ou a várias.
 
@@ -15,5 +15,7 @@ Uma tarefa com um nome é uma tarefa feita. Você pode dar a uma pessoa ou a vá
 4. Toque em **Salvar** e depois em **Salvar** de novo na tarefa.
 
 Agora a tarefa mostra as fotos dessas pessoas, e conta para cada uma delas.
+
+Na mesma janela, **Tarefa privada** quer dizer que só você vê a tarefa. Aí ela só pode ser dada a você, ou a crianças sem acesso próprio. Por isso, ligar essa opção tira as outras pessoas da tarefa.
 
 > Note: Um lembrete só vai para quem tem acesso próprio. Uma tarefa dada só a uma criança lembra todo mundo.

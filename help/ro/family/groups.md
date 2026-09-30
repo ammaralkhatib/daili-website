@@ -5,7 +5,7 @@ summary: Fii în până la 5 familii sau grupuri cu un singur cont și treci de 
 keywords: grup, a doua familie, schimbă familia, bunici, club, echipă, clasă, mai multe familii, familie implicită
 tipTitle: Mai mult de o familie?
 tipBody: Adaugă bunicii sau clubul sportiv ca grup și treci de la unul la altul dintr-o apăsare.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Un cont poate fi în până la 5 familii sau grupuri: casa ta, bunicii, clubul sportiv sau clasa de la școală. Fiecare are calendarul și listele lui.
 
@@ -16,5 +16,7 @@ Un cont poate fi în până la 5 familii sau grupuri: casa ta, bunicii, clubul s
 3. Ca să adaugi încă una, apasă pe **Creează o familie sau un grup** sau pe **Alătură-te cu un cod**.
 
 Aceeași listă o găsești și pe ecranul Familie: apasă pe **Schimbă familia sau grupul**.
+
+Adminii pot da unei familii propria poză: pe ecranul Familie, apasă pe poza familiei ca să faci, să alegi sau să elimini una. Apare și în lista asta.
 
 > Note: Schimbarea se aplică doar pe acest telefon. Apasă pe **⋮** lângă o familie și pe **Setează ca implicită** ca să alegi familia pe care o deschide daili pe un telefon nou.

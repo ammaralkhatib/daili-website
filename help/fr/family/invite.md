@@ -5,7 +5,7 @@ summary: Partage un code à 6 chiffres, un QR code ou un lien. La personne rejoi
 keywords: inviter, ajouter un membre, conjoint, partenaire, code, qr, rejoindre, lien, partager, nouveau code
 tipTitle: Organisez-vous à deux
 tipBody: Invite ton ou ta partenaire. Vous voyez tous les deux le même agenda et les mêmes listes.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
 Toute ta famille voit le même agenda, les mêmes listes et les mêmes anniversaires.
 
@@ -16,6 +16,6 @@ Toute ta famille voit le même agenda, les mêmes listes et les mêmes anniversa
 
 ![L'écran Famille. Inviter un membre, avec le code actuel et sa date de fin en dessous, est entouré.](family-invite)
 
-Chaque code marche pour une seule personne. Pour la suivante, touche encore **Inviter un membre**. Tu peux partager le code ou le lien même avant d'avoir confirmé ton e-mail.
+Chaque code marche pour une seule personne. Pour la suivante, touche encore **Inviter un membre**. Tu peux partager le code ou le lien même avant d'avoir confirmé ton e-mail. Tu as invité une adresse iCloud par e-mail ? Apple bloque parfois nos e-mails, alors envoie-lui aussi toi-même le code ou le lien.
 
 > Note: Un code est valable 7 jours, et l'écran indique jusqu'à quand. Envoyé à la mauvaise personne ? Touche **Obtenir un nouveau code** sur **Inviter des membres**, et l'ancien ne marche plus.

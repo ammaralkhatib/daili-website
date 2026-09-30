@@ -3,9 +3,9 @@ id: account-verify-email
 title: Verifikasi email Anda, dan kenapa itu penting
 summary: Email yang terverifikasi memungkinkan Anda mengundang orang lewat email, memberi anak login sendiri, dan mencari resep online.
 keywords: verifikasi, konfirmasi, email, konfirmasi email, kirim ulang, belum diverifikasi, tautan, kotak masuk, spam, terverifikasi
-translatedFrom: 2026-09-28
+translatedFrom: 2026-09-30
 ---
-Saat Anda mendaftar dengan alamat email, daili mengirimi Anda tautan untuk memastikan email itu benar milik Anda. Sampai Anda mengetuknya, tiga hal masih terkunci: mengundang orang lewat email, memberi anak login sendiri, dan mencari resep online.
+Saat Anda mendaftar dengan email, daili mengirimi Anda tautan untuk memastikan email itu milik Anda. Sampai Anda mengetuknya, tiga hal masih terkunci: mengundang orang lewat email, memberi anak login sendiri, dan mencari resep online.
 
 ![Bagian atas Pengaturan. Kartu Email belum diverifikasi dengan tombol Kirim ulang dilingkari.](account-verify-email)
 
@@ -16,6 +16,6 @@ Saat Anda mendaftar dengan alamat email, daili mengirimi Anda tautan untuk memas
 
 Email tidak bisa terkirim? daili memberi tahu Anda, dan **Ubah alamat email** memperbaikinya langsung di sana. Setelah dua kali kirim ulang atau email terpental, **Tidak menerima email?** memberi Anda bantuan pribadi dalam satu hari.
 
-Masuk dengan Google atau Apple? Maka email Anda sudah terverifikasi.
+Masuk dengan Google atau Apple, atau dengan alamat iCloud? Maka email Anda sudah terverifikasi.
 
 > Note: Anda tidak perlu email terverifikasi untuk bergabung ke keluarga dengan kode.

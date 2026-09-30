@@ -3,7 +3,7 @@ id: lists-assign
 title: Przypisz zadanie jednej albo kilku osobom
 summary: Wpisz przy zadaniu czyjeś imię albo podziel je między dwie osoby, na przykład parę albo rodzica z dzieckiem.
 keywords: przypisz, przypisanie, osoba odpowiedzialna, daj zadanie, obowiązki, dziecko, partner, kto, podziel, odpowiedzialny
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Zadanie z czyimś imieniem zostaje zrobione. Możesz je przypisać jednej osobie albo kilku.
 
@@ -15,5 +15,7 @@ Zadanie z czyimś imieniem zostaje zrobione. Możesz je przypisać jednej osobie
 4. Dotknij **Zapisz**, a potem jeszcze raz **Zapisz** w zadaniu.
 
 Zadanie pokazuje teraz ich zdjęcia i liczy się dla każdej z tych osób.
+
+W tym samym panelu **Prywatne zadanie** oznacza, że tylko ty widzisz zadanie. Wtedy można je przypisać tylko tobie albo dzieciom bez własnego logowania, więc włączenie tej opcji zdejmuje z zadania pozostałe osoby.
 
 > Note: Przypomnienie trafia tylko do osób z własnym logowaniem. Zadanie przypisane tylko dziecku przypomina wszystkim.

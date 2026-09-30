@@ -7,7 +7,7 @@ keywords: assign, assignee, give task, chores, kid, partner, who, person, share,
 routes: /lists/:id
 tryIt: /lists/todos
 since: 1.5.0
-updated: 2026-09-24
+updated: 2026-09-30
 media: lists-assign
 order: 5
 related: lists-todos, lists-all-mine, family-children
@@ -22,5 +22,7 @@ A task with a name on it gets done. You can give it to one person or to several.
 4. Tap **Save**, then **Save** again on the task.
 
 The task now shows their pictures, and it counts for each of them.
+
+On the same sheet, **Private task** means only you can see the task. It can then only be given to you, or to children without a login, so switching it on takes the other people off it.
 
 > Note: A reminder only goes to people with a login. A task given only to a child reminds everyone.

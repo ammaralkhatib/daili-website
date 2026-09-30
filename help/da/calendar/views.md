@@ -3,7 +3,7 @@ id: calendar-views
 title: Visningerne måned, uge, dag og liste
 summary: Skift mellem måned, uge, 3 dage, dag og liste, og filtrér efter person eller kategori.
 keywords: visning, måned, uge, dag, liste, dagsorden, 3 dage, skift visning, filter, i dag
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Kalenderen kan vise familiens planer på fem måder.
 
@@ -13,8 +13,10 @@ Kalenderen kan vise familiens planer på fem måder.
 2. Tryk på **Visning** i bjælken forneden.
 3. Vælg **Måned**, **Uge**, **3 dage**, **Dag** eller **Liste**.
 4. Tryk på **I dag** forneden for at springe tilbage til i dag.
-5. Vil du kun se nogle personer eller kategorier, så tryk på **Filter**, og vælg dem.
+5. Vil du kun se nogle personer eller kategorier, så tryk på **Filter**, og vælg dem. Børn står også under **Personer**.
 
 daili husker din visning på denne telefon. I **Måned** trykker du på en dag for at se dens begivenheder.
 
-> Note: **Filter** vises først, når der er noget at filtrere efter: en person mere med login eller en kategori.
+En begivenhed vises under de personer, den er for. En begivenhed for alle vises under den, der oprettede den. Dens farvede stribe har farven fra den første person, den er for.
+
+> Note: **Filter** vises først, når der er noget at filtrere efter: en person mere (et barn tæller også) eller en kategori.

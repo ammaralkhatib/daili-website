@@ -3,7 +3,7 @@ id: habits-tick
 title: Marcar um hábito: o seu, em conjunto, o de uma criança
 summary: Marque um hábito quando tiver feito. Você também pode marcar hábitos em conjunto, e os admins podem marcar por uma criança.
 keywords: marcar, concluir, feito, hábito concluído, contador, criança, filho, juntos, marcar como feito, ontem
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Marque um hábito assim que tiver feito. Cada marcação dá energia à família.
 
@@ -15,5 +15,7 @@ Marque um hábito assim que tiver feito. Cada marcação dá energia à família
 4. Para corrigir um dia anterior, toque na linha do hábito e depois no dia. Você pode mudar os últimos 7 dias.
 
 Você marca seus próprios hábitos e qualquer hábito **Juntos**. Um admin também pode marcar por uma criança sem acesso próprio. Aí a linha diz **Você marca por** e o nome da criança.
+
+Os hábitos que não são para hoje esperam em **Em breve**, com o próximo dia de cada um. Quando você cria um hábito que não é para hoje, uma mensagem diz quando ele aparece.
 
 > Note: Ninguém pode marcar por outro adulto. Todo mundo que tem acesso próprio marca os próprios hábitos.

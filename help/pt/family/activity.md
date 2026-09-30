@@ -13,4 +13,4 @@ Qualquer pessoa pode mudar um evento ou uma lista compartilhada. A lista de novi
 2. Role a lista. As mudanças ficam agrupadas em **Hoje**, **Ontem** e datas mais antigas.
 3. Toque em uma mudança para abrir o evento, a lista ou a receita de que ela fala.
 
-As mudanças novas têm um fundo claro na primeira vez que você as vê. Quando alguém compartilha uma nota com toda a família, você vê **Nota partilhada** aqui, sem notificação.
+As mudanças novas têm um fundo claro na primeira vez que você as vê. Quando alguém compartilha uma nota com toda a família, você vê **Nota compartilhada** aqui, sem notificação.

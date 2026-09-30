@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Aggiungere un evento
 summary: Metti un appuntamento, un viaggio o una partita nel calendario di famiglia, così lo vedono tutti.
 keywords: aggiungere evento, nuovo evento, creare evento, appuntamento, programmare, pianificare, data, voce del calendario, tutto il giorno
-translatedFrom: 2026-09-26
+translatedFrom: 2026-09-30
 ---
 Tutta la famiglia vede subito un nuovo evento.
 
@@ -14,6 +14,8 @@ Tutta la famiglia vede subito un nuovo evento.
 3. Imposta **Inizio** e **Fine**. Per una giornata intera, attiva **Tutto il giorno**.
 4. Se vuoi, aggiungi altro: **Ripetizione**, un **Promemoria**, una **Categoria** o un **Luogo**.
 5. Tocca **Salva**.
+
+Sotto **Per**, scegli per chi è l'evento, anche i bambini. Se non scegli nessuno, vale **Tutti**. Solo le persone scelte che hanno un accesso ricevono i suoi promemoria e le notifiche. Un evento privato non ha la riga **Per**.
 
 Poi daili apre il tuo evento, così puoi collegare un'attività, un articolo della spesa, un documento o una foto. Le date sono su carta? Vedi **Compila un evento da una foto**.
 

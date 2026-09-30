@@ -3,7 +3,7 @@ id: lists-assign
 title: Bir görevi bir ya da daha fazla kişiye ver
 summary: Bir göreve isim koy ya da onu iki kişi arasında paylaştır, örneğin bir çift ya da bir ebeveynle bir çocuk.
 keywords: ata, sorumlu, görev ver, ev işleri, çocuk, eş, kim, kişi, paylaş, sorumluluk
-translatedFrom: 2026-09-24
+translatedFrom: 2026-09-30
 ---
 Üzerinde isim olan bir görev yapılır. Onu bir kişiye ya da birkaç kişiye verebilirsin.
 
@@ -15,5 +15,7 @@ translatedFrom: 2026-09-24
 4. **Kaydet** düğmesine, sonra görevde yeniden **Kaydet** düğmesine dokun.
 
 Görev artık onların resimlerini gösterir ve her biri için sayılır.
+
+Aynı panelde **Özel görev**, görevi yalnızca senin görebileceğin anlamına gelir. O zaman görev yalnızca sana ya da girişi olmayan çocuklara verilebilir, bu yüzden açtığında diğer kişiler görevden çıkarılır.
 
 > Note: Hatırlatıcı yalnızca girişi olan kişilere gider. Yalnızca bir çocuğa verilen görev herkese hatırlatır.
