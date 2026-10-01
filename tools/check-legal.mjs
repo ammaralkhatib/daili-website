@@ -71,6 +71,15 @@ const h2Ids = (s) => [...s.matchAll(/<h2\s[^>]*\bid="([^"]+)"/g)].map((m) => m[1
 const GOOGLE_OAUTH_MUST_CONTAIN = ['id="google-user-data"', 'id="data-protection"', 'api-services-user-data-policy', 'Limited Use'];
 const GOOGLE_OAUTH_WHY = 'the Google OAuth verification depends on this section — see claude-prompts/2026-09-28/001';
 
+/**
+ * Daili Plus is sold in every locale, so every reader must find what they are
+ * buying (terms) and who processes the purchase (privacy). The terms anchor is
+ * an <h2> and is also caught by the id comparison below; the privacy anchor is
+ * a <p> and is not, which is why both are asserted here by name.
+ */
+const PLUS_MUST_CONTAIN = { terms: ['id="plus"'], privacy: ['id="plus"', 'RevenueCat'] };
+const PLUS_WHY = 'Daili Plus is sold in every locale — see claude-prompts/2026-10-01/001';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -108,6 +117,10 @@ for (const id of LEGAL_IDS) {
       for (const must of GOOGLE_OAUTH_MUST_CONTAIN) {
         if (!src.includes(must)) fail(rel, `does not contain ${must} — ${GOOGLE_OAUTH_WHY}`);
       }
+    }
+
+    for (const must of PLUS_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${PLUS_WHY}`);
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
