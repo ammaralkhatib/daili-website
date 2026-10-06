@@ -149,7 +149,7 @@
         { "cap": "Unser kleiner Dschungel", "t": "Pflanzen gießen", "s": "Täglich · mit Papa" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Keine Werbung, keine Testphase, kein Haken." },
+        { "big": "0 €", "t": "Kostenlos nutzbar. Keine Werbung, kein Haken." },
         { "t": "Minzi, die Familienkatze, feuert euch an" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Eure Kalender verbinden",
-      "p": "Holt Google, Outlook und den Kalender eures Handys dazu. Ergänzt die Feiertage eures Landes. Und seht alles neben dem Familienplan.",
-      "t": "Google Calendar",
-      "s": "Verbunden · 24 Termine synchron",
+      "h3": "Eure Kalender, alle zusammen",
+      "p": "Seht die Kalender, die schon auf eurem Handy sind — Google, Outlook, iCloud — neben dem Familienplan. Ergänzt die Feiertage eures Landes.",
+      "t": "Kalender auf diesem Handy",
+      "s": "Neben dem Familienplan zu sehen",
       "apple": {
         "t": "Apple Kalender",
         "s": "Über das iPhone verbunden"
@@ -208,7 +208,7 @@
         "s": "Tippen für Donnerstag",
         "add": "Auf den Essensplan"
       },
-      "fine": "Die Funktionen von Daili Plus nutzen Google Gemini, und nur dann, wenn ihr sie verwendet."
+      "fine": "Die Funktionen von Daili Plus nutzen Google Gemini, und nur dann, wenn ihr sie verwendet. Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos; Daili Plus bringt 30, dazu 5 GB Daili Cloud, für €9.99 im Jahr."
     },
     "flow": {
       "h2": "So sieht das im Alltag aus",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privat von Grund auf",
       "sub": "Die Pläne eurer Familie gehören eurer Familie. Das ist keine Einstellung, so ist Daili gebaut.",
-      "chips": ["Keine Werbung", "Kein Tracking", "Wir verkaufen nie eure Daten", "Server in der EU", "Dokumente & Fotos bleiben auf dem Handy", "KI nur, wenn ihr sie nutzt"]
+      "chips": ["Keine Werbung", "Kein Tracking", "Wir verkaufen nie eure Daten", "Server in der EU", "Euer Tresor bleibt auf dem Handy", "KI nur, wenn ihr sie nutzt"]
     },
     "care": {
       "h2a": "Mit Sorgfalt gemacht,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Was kostet Daili?",
-        "a": "Nichts. Daili ist kostenlos — ohne Werbung, ohne Datenverkauf. Falls es später bezahlte Extras gibt: Alles, was heute kostenlos ist, bleibt kostenlos."
+        "a": "Daili ist kostenlos nutzbar — Kalender, Listen, Aufgaben, Gewohnheiten, Notizen, Rezepte und mehr, ohne Werbung und ohne Datenverkauf. Daili Plus ist freiwillig: ein Jahrespreis für die ganze Familie (€9.99 im Euroraum; die App zeigt den Preis in deiner Währung) bringt 30 KI-Aktionen im Monat und 5 GB Daili Cloud für Bilder und Aufnahmen in Notizen. Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos."
       },
       {
         "q": "Gibt es eine Web-Version?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Welche Sprachen spricht die App?",
-        "a": "Die App spricht 19 Sprachen, vollständig — auch die Erinnerungen, die sie schickt: Deutsch, Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Portugiesisch, Polnisch, Tschechisch, Slowakisch, Schwedisch, Dänisch, Norwegisch, Finnisch, Türkisch, Rumänisch, Bulgarisch, Griechisch und Ukrainisch."
+        "a": "Die App spricht 25 Sprachen, vollständig — auch die Erinnerungen, die sie schickt: Deutsch, Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Portugiesisch, Polnisch, Tschechisch, Slowakisch, Schwedisch, Dänisch, Norwegisch, Finnisch, Türkisch, Rumänisch, Bulgarisch, Griechisch, Ukrainisch, Indonesisch, Thailändisch, Japanisch, Koreanisch und Chinesisch (vereinfacht und traditionell)."
       },
       {
         "q": "Auf welchen Handys läuft sie?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Kann ich meinen bestehenden Kalender mitnehmen?",
-        "a": "Daili kann den Kalender deines Handys neben dem Familienkalender anzeigen, auf deinem Gerät. Einen Google- oder Outlook-Kalender zu verbinden, kommt bald."
+        "a": "Ja. Daili zeigt die Kalender, die schon auf deinem Handy sind — Google, Outlook, iCloud und andere — neben dem Familienkalender, nur auf deinem Gerät. Außerdem kannst du die Feiertage deines Landes hinzufügen."
       },
       {
         "q": "Wo liegen meine Daten?",
-        "a": "Kalender, Listen und Familiendaten liegen auf unserem Server in der EU. Fotos und Dokumente im Tresor verlassen dein Handy nie. Details in der <a href=\"/datenschutz.html\">Datenschutzerklärung</a>."
+        "a": "Kalender, Listen und Familiendaten liegen auf unseren Servern in Deutschland (EU). Fotos und Dokumente im Tresor verlassen dein Handy nie. Auch Bilder und Aufnahmen in Notizen bleiben auf deinem Handy, außer du wählst die Daili Cloud (Teil von Daili Plus) — sie speichert sie ebenfalls in Deutschland. Details in der <a href=\"/datenschutz.html\">Datenschutzerklärung</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>In der App:</strong> Einstellungen &rarr; Profil &rarr; Konto löschen.",
       "<strong>Per E-Mail:</strong> schreib an <a href=\"mailto:support@daili.app?subject=Konto%20l%C3%B6schen\"><strong>support@daili.app</strong></a> von der E-Mail-Adresse deines Kontos, mit dem Betreff &bdquo;Konto löschen&ldquo;."
     ],
-    "deleteWhat": "Was dann passiert: Dein Konto wird sofort deaktiviert und du bekommst eine E-Mail mit einem Abbruch-Link. Nach einer 30-tägigen Frist werden dein Konto und die damit verknüpften Daten (Profil sowie von dir erstellte Termine, Listen, Rezepte und Fotos) endgültig von unseren Servern gelöscht. Wenn du es dir innerhalb der 30 Tage anders überlegst, stellt der Link in der E-Mail alles wieder her. Dateien im Offline-Tresor liegen nur auf deinem Handy und werden bei der Kontolöschung auf diesem Gerät entfernt."
+    "deleteWhat": "Was dann passiert: Dein Konto wird sofort deaktiviert und du bekommst eine E-Mail mit einem Abbruch-Link. Nach einer 30-tägigen Frist werden dein Konto und die damit verknüpften Daten (Profil sowie von dir erstellte Termine, Listen, Rezepte und Fotos) endgültig von unseren Servern gelöscht. Wenn du es dir innerhalb der 30 Tage anders überlegst, stellt der Link in der E-Mail alles wieder her. Dateien im Offline-Tresor liegen nur auf deinem Handy und werden bei der Kontolöschung auf diesem Gerät entfernt. Wenn du Daili Plus hast, kündige es vorher im App Store oder bei Google Play — das Löschen deines Kontos beendet das Abo nicht."
   },
 
   "notfound": {

@@ -175,7 +175,7 @@
       ],
       "@tiles": { "description": "Two tiles at the end of the members carousel. First: big = the price (\"€0\" written the locale's way), t = one line. Second: t = one line next to Minzi the cat." },
       "tiles": [
-        { "big": "€0", "t": "No ads, no trial, no catch." },
+        { "big": "€0", "t": "Free to use. No ads, no catch." },
         { "t": "Minzi, the family cat, cheers you on" }
       ]
     },
@@ -195,10 +195,10 @@
     },
     "calendars": {
       "@calendars": { "description": "Calendar-sync card. t/s = the connected-calendar widget (Google Calendar stays as written)." },
-      "h3": "Connect your calendars",
-      "p": "Bring in Google, Outlook and your phone's calendar. Add public holidays for your country. See it all next to the family plan.",
-      "t": "Google Calendar",
-      "s": "Connected · 24 events synced",
+      "h3": "Your calendars, together",
+      "p": "See the calendars already on your phone — Google, Outlook, iCloud — next to the family plan. Add public holidays for your country.",
+      "t": "Calendars on this phone",
+      "s": "Shown next to the family plan",
       "@apple": { "description": "Second floating calendar card next to the Google one: t = Apple's name for its calendar app in the language, s = one short line." },
       "apple": {
         "t": "Apple Calendar",
@@ -240,7 +240,7 @@
         "s": "Tap to add it to Thursday",
         "add": "Add to meal plan"
       },
-      "fine": "Daili Plus features use Google Gemini, and only when you use them."
+      "fine": "Daili Plus features use Google Gemini, and only when you use them. Every family gets 3 AI actions a month for free; Daili Plus gives 30, plus 5 GB of Daili cloud, for €9.99 a year."
     },
     "flow": {
       "@flow": { "description": "\"See it in action\": four steps (t = title, d = one or two sentences) and, in the same order, four toast notifications on the drawn phone (t ≤ 24, s ≤ 26). pill = the tiny event pill on the drawn calendar (≤ 12 chars)." },
@@ -299,7 +299,7 @@
       "@privacy": { "description": "Privacy section. chips = six short labels, no full stop (\"EU\" may be the locale's usual abbreviation)." },
       "h2": "Private by design",
       "sub": "Your family's plans belong to your family. That is not a setting, it is how Daili is built.",
-      "chips": ["No ads", "No tracking", "We never sell your data", "Servers in the EU", "Documents & photos stay on your phone", "AI only when you use it"]
+      "chips": ["No ads", "No tracking", "We never sell your data", "Servers in the EU", "Your vault stays on your phone", "AI only when you use it"]
     },
     "care": {
       "@care": { "description": "Two-line headline (h2b is the highlighted half) and one sentence under it." },
@@ -322,7 +322,7 @@
     "items": [
       {
         "q": "What does Daili cost?",
-        "a": "Nothing. Daili is free — no ads, no data selling. If we ever add paid extras, everything that is free today stays free."
+        "a": "Daili is free to use — calendar, lists, to-dos, habits, notes, recipes and more, with no ads and no data selling. Daili Plus is optional: one yearly price for the whole family (€9.99 in the euro area; the app shows the price in your currency) gives you 30 AI actions a month and 5 GB of Daili cloud for note pictures and recordings. Every family gets 3 AI actions a month for free."
       },
       {
         "q": "Is there a web version?",
@@ -330,7 +330,7 @@
       },
       {
         "q": "Which languages does it speak?",
-        "a": "The app speaks 19 languages, fully — including the reminders it sends: English, German, French, Spanish, Italian, Dutch, Portuguese, Polish, Czech, Slovak, Swedish, Danish, Norwegian, Finnish, Turkish, Romanian, Bulgarian, Greek and Ukrainian."
+        "a": "The app speaks 25 languages, fully — including the reminders it sends: English, German, French, Spanish, Italian, Dutch, Portuguese, Polish, Czech, Slovak, Swedish, Danish, Norwegian, Finnish, Turkish, Romanian, Bulgarian, Greek, Ukrainian, Indonesian, Thai, Japanese, Korean and Chinese (Simplified and Traditional)."
       },
       {
         "q": "Which phones does it run on?",
@@ -346,11 +346,11 @@
       },
       {
         "q": "Can I bring my existing calendar?",
-        "a": "Daili can show your phone's own calendar next to the family calendar, on your device. Connecting a Google or Outlook calendar is coming soon."
+        "a": "Yes. Daili shows the calendars already on your phone — Google, Outlook, iCloud and others — next to the family calendar, on your device only. You can also add the public holidays for your country."
       },
       {
         "q": "Where is my data stored?",
-        "a": "Your calendar, lists and family data live on our server in the EU. Photos and documents in the vault never leave your phone. Details in the <a href=\"/privacy.html\">privacy policy</a>."
+        "a": "Your calendar, lists and family data live on our servers in Germany (EU). Photos and documents in the vault never leave your phone. Note pictures and recordings stay on your phone too, unless you choose Daili cloud (part of Daili Plus), which also stores them in Germany. Details in the <a href=\"/privacy.html\">privacy policy</a>."
       }
     ]
   },
@@ -371,7 +371,7 @@
       "<strong>In the app:</strong> Settings &rarr; Profile &rarr; Delete account.",
       "<strong>By email:</strong> write to <a href=\"mailto:support@daili.app?subject=Delete%20my%20account\"><strong>support@daili.app</strong></a> from the email address of your account, with the subject &ldquo;Delete my account&rdquo;."
     ],
-    "deleteWhat": "What happens next: your account is deactivated immediately and you receive an email with a cancellation link. After a 30-day grace period, your account and the data linked to it (profile, and any events, lists, recipes and photos you created) are permanently deleted from our servers. If you change your mind within those 30 days, the link in the email restores everything. Files in the offline vault live only on your phone and are removed when the account is deleted on that device."
+    "deleteWhat": "What happens next: your account is deactivated immediately and you receive an email with a cancellation link. After a 30-day grace period, your account and the data linked to it (profile, and any events, lists, recipes and photos you created) are permanently deleted from our servers. If you change your mind within those 30 days, the link in the email restores everything. Files in the offline vault live only on your phone and are removed when the account is deleted on that device. If you have Daili Plus, cancel it in the App Store or Google Play first — deleting your account does not cancel the subscription."
   },
 
   "notfound": {

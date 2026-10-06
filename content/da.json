@@ -149,7 +149,7 @@
         { "cap": "Vores lille jungle", "t": "Vand planterne", "s": "Hver dag · med far" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Ingen reklamer, ingen prøveperiode, ingen hage." },
+        { "big": "0 €", "t": "Gratis at bruge. Ingen reklamer, ingen hage." },
         { "t": "Minzi, familiens kat, hepper på jer" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Forbind jeres kalendere",
-      "p": "Hent Google, Outlook og telefonens kalender ind. Tilføj helligdagene i dit land. Se det hele ved siden af familiens plan.",
-      "t": "Google Calendar",
-      "s": "Forbundet · 24 aftaler synket",
+      "h3": "Jeres kalendere, samlet",
+      "p": "Se de kalendere, der allerede er på din telefon — Google, Outlook, iCloud — ved siden af familiens plan. Tilføj helligdagene i dit land.",
+      "t": "Kalendere på denne telefon",
+      "s": "Vises ved siden af familiens plan",
       "apple": {
         "t": "Apple Kalender",
         "s": "Forbundet via din iPhone"
@@ -208,7 +208,7 @@
         "s": "Tryk for at lægge den på torsdag",
         "add": "Læg på madplanen"
       },
-      "fine": "Funktionerne i Daili Plus bruger Google Gemini, og kun når du bruger dem."
+      "fine": "Funktionerne i Daili Plus bruger Google Gemini, og kun når du bruger dem. Alle familier får 3 AI-handlinger om måneden gratis; Daili Plus giver 30 plus 5 GB i Daili-skyen for €9.99 om året."
     },
     "flow": {
       "h2": "Se det i brug",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privat fra starten",
       "sub": "Familiens planer tilhører familien. Det er ikke en indstilling, det er sådan, Daili er bygget.",
-      "chips": ["Ingen reklamer", "Ingen sporing", "Vi sælger aldrig dine data", "Servere i EU", "Dokumenter og billeder bliver på din telefon", "AI kun, når du bruger den"]
+      "chips": ["Ingen reklamer", "Ingen sporing", "Vi sælger aldrig dine data", "Servere i EU", "Din boks bliver på din telefon", "AI kun, når du bruger den"]
     },
     "care": {
       "h2a": "Lavet med omhu,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Hvad koster Daili?",
-        "a": "Ingenting. Daili er gratis — uden reklamer og uden salg af data. Hvis vi en dag tilføjer betalte ekstrafunktioner, bliver alt, der er gratis i dag, ved med at være gratis."
+        "a": "Daili er gratis at bruge — kalender, lister, opgaver, vaner, noter, opskrifter og mere, uden reklamer og uden salg af data. Daili Plus er valgfrit: én årlig pris for hele familien (€9.99 i euroområdet; appen viser prisen i din valuta) giver jer 30 AI-handlinger om måneden og 5 GB i Daili-skyen til billeder og optagelser i noter. Alle familier får 3 AI-handlinger om måneden gratis."
       },
       {
         "q": "Findes der en webudgave?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Hvilke sprog taler appen?",
-        "a": "Appen taler 19 sprog, fuldt ud — også de påmindelser, den sender: dansk, engelsk, tysk, fransk, spansk, italiensk, nederlandsk, portugisisk, polsk, tjekkisk, slovakisk, svensk, norsk, finsk, tyrkisk, rumænsk, bulgarsk, græsk og ukrainsk."
+        "a": "Appen taler 25 sprog, fuldt ud — også de påmindelser, den sender: dansk, engelsk, tysk, fransk, spansk, italiensk, nederlandsk, portugisisk, polsk, tjekkisk, slovakisk, svensk, norsk, finsk, tyrkisk, rumænsk, bulgarsk, græsk, ukrainsk, indonesisk, thai, japansk, koreansk og kinesisk (forenklet og traditionelt)."
       },
       {
         "q": "Hvilke telefoner virker den på?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Kan jeg tage min nuværende kalender med?",
-        "a": "Daili kan vise telefonens egen kalender ved siden af familiekalenderen, på enheden. At koble en Google- eller Outlook-kalender til kommer snart."
+        "a": "Ja. Daili viser de kalendere, der allerede er på din telefon — Google, Outlook, iCloud og andre — ved siden af familiekalenderen, kun på din enhed. Du kan også tilføje helligdagene i dit land."
       },
       {
         "q": "Hvor ligger mine data?",
-        "a": "Din kalender, dine lister og familiens data ligger på vores server i EU. Billeder og dokumenter i boksen forlader aldrig din telefon. Mere i <a href=\"/privacy.html\">privatlivspolitikken</a>."
+        "a": "Din kalender, dine lister og familiens data ligger på vores servere i Tyskland (EU). Billeder og dokumenter i boksen forlader aldrig din telefon. Billeder og optagelser i noter bliver også på din telefon, medmindre du vælger Daili-skyen (en del af Daili Plus), som også gemmer dem i Tyskland. Mere i <a href=\"/privacy.html\">privatlivspolitikken</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>I appen:</strong> Indstillinger &rarr; Profil &rarr; Slet konto.",
       "<strong>Via e-mail:</strong> skriv til <a href=\"mailto:support@daili.app?subject=Slet%20min%20konto\"><strong>support@daili.app</strong></a> fra kontoens e-mailadresse, med emnet „Slet min konto“."
     ],
-    "deleteWhat": "Hvad der så sker: din konto bliver lukket med det samme, og du får en e-mail med et link, du kan fortryde med. Efter en frist på 30 dage bliver din konto og de data, der hører til (profilen samt de aftaler, lister, opskrifter og billeder, du har lavet), slettet endeligt fra vores servere. Fortryder du inden for de 30 dage, sætter linket i mailen det hele tilbage. Filer i boksen offline ligger kun på din telefon og bliver fjernet, når kontoen slettes på den enhed."
+    "deleteWhat": "Hvad der så sker: din konto bliver lukket med det samme, og du får en e-mail med et link, du kan fortryde med. Efter en frist på 30 dage bliver din konto og de data, der hører til (profilen samt de aftaler, lister, opskrifter og billeder, du har lavet), slettet endeligt fra vores servere. Fortryder du inden for de 30 dage, sætter linket i mailen det hele tilbage. Filer i boksen offline ligger kun på din telefon og bliver fjernet, når kontoen slettes på den enhed. Har du Daili Plus, så opsig det først i App Store eller Google Play — abonnementet bliver ikke opsagt, fordi du sletter din konto."
   },
 
   "notfound": {

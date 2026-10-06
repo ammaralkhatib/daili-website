@@ -149,7 +149,7 @@
         { "cap": "Naše malá džungle", "t": "Zalít kytky", "s": "Každý den · s tátou" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Bez reklam, bez zkušební doby, bez háčku." },
+        { "big": "0 €", "t": "Zdarma. Bez reklam, bez háčku." },
         { "t": "Minzi, rodinná kočka, vám fandí" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Propojte své kalendáře",
-      "p": "Přidejte Google, Outlook i kalendář z telefonu. Zapněte státní svátky své země. Všechno uvidíte vedle rodinného plánu.",
-      "t": "Google Calendar",
-      "s": "Propojeno · 24 událostí",
+      "h3": "Vaše kalendáře pohromadě",
+      "p": "Kalendáře, které už v telefonu máte — Google, Outlook, iCloud — uvidíte vedle rodinného plánu. Přidejte státní svátky své země.",
+      "t": "Kalendáře v tomto telefonu",
+      "s": "Vidět vedle rodinného plánu",
       "apple": {
         "t": "Kalendář Apple",
         "s": "Připojeno přes váš iPhone"
@@ -208,7 +208,7 @@
         "s": "Klepněte a přidejte na čtvrtek",
         "add": "Přidat do jídelníčku"
       },
-      "fine": "Funkce Daili Plus využívají Google Gemini — a jen tehdy, když je použijete."
+      "fine": "Funkce Daili Plus využívají Google Gemini — a jen tehdy, když je použijete. Každá rodina má 3 akce AI měsíčně zdarma; Daili Plus jich dává 30 a k tomu 5 GB v cloudu Daili, za €9.99 ročně."
     },
     "flow": {
       "h2": "Podívejte se, jak to funguje",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Soukromé záměrně",
       "sub": "Plány vaší rodiny patří vaší rodině. Není to nastavení, takhle je Daili postavené.",
-      "chips": ["Bez reklam", "Bez sledování", "Vaše data nikdy neprodáme", "Servery v EU", "Dokumenty a fotky zůstávají v telefonu", "AI jen tehdy, když ji použijete"]
+      "chips": ["Bez reklam", "Bez sledování", "Vaše data nikdy neprodáme", "Servery v EU", "Váš trezor zůstává v telefonu", "AI jen tehdy, když ji použijete"]
     },
     "care": {
       "h2a": "Vyrobeno s péčí,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Kolik Daili stojí?",
-        "a": "Nic. Daili je zdarma — bez reklam a bez prodeje dat. Pokud někdy přidáme placené doplňky, všechno, co je dnes zdarma, zůstane zdarma."
+        "a": "Daili můžete používat zdarma — kalendář, seznamy, úkoly, návyky, poznámky, recepty a další, bez reklam a bez prodeje dat. Daili Plus je volitelné: jedna roční cena pro celou rodinu (€9.99 v eurozóně; aplikace ukáže cenu ve vaší měně) vám dá 30 akcí AI měsíčně a 5 GB v cloudu Daili na obrázky a nahrávky v poznámkách. Každá rodina má 3 akce AI měsíčně zdarma."
       },
       {
         "q": "Existuje webová verze?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Jakými jazyky aplikace mluví?",
-        "a": "Aplikace mluví 19 jazyky, kompletně — včetně připomenutí, která posílá: česky, anglicky, německy, francouzsky, španělsky, italsky, nizozemsky, portugalsky, polsky, slovensky, švédsky, dánsky, norsky, finsky, turecky, rumunsky, bulharsky, řecky a ukrajinsky."
+        "a": "Aplikace mluví 25 jazyky, kompletně — včetně připomenutí, která posílá: česky, anglicky, německy, francouzsky, španělsky, italsky, nizozemsky, portugalsky, polsky, slovensky, švédsky, dánsky, norsky, finsky, turecky, rumunsky, bulharsky, řecky, ukrajinsky, indonésky, thajsky, japonsky, korejsky a čínsky (zjednodušeně i tradičně)."
       },
       {
         "q": "Na jakých telefonech běží?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Můžu si vzít svůj současný kalendář?",
-        "a": "Daili umí zobrazit kalendář z vašeho telefonu vedle rodinného kalendáře, přímo v zařízení. Připojení kalendáře Google nebo Outlook bude brzy."
+        "a": "Ano. Daili zobrazuje kalendáře, které už v telefonu máte — Google, Outlook, iCloud a další — vedle rodinného kalendáře, jen ve vašem zařízení. Můžete si také přidat státní svátky své země."
       },
       {
         "q": "Kde jsou uložená moje data?",
-        "a": "Váš kalendář, seznamy a data rodiny leží na našem serveru v EU. Fotky a dokumenty v trezoru váš telefon nikdy neopustí. Podrobnosti v <a href=\"/privacy.html\">zásadách ochrany osobních údajů</a>."
+        "a": "Váš kalendář, seznamy a data rodiny leží na našich serverech v Německu (EU). Fotky a dokumenty v trezoru váš telefon nikdy neopustí. Obrázky a nahrávky v poznámkách zůstávají také v telefonu, pokud si nezvolíte cloud Daili (součást Daili Plus), který je ukládá rovněž v Německu. Podrobnosti v <a href=\"/privacy.html\">zásadách ochrany osobních údajů</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>V aplikaci:</strong> Nastavení &rarr; Profil &rarr; Smazat účet.",
       "<strong>E-mailem:</strong> napište na <a href=\"mailto:support@daili.app?subject=Smazat%20m%C5%AFj%20%C3%BA%C4%8Det\"><strong>support@daili.app</strong></a> z e-mailové adresy svého účtu, s předmětem „Smazat můj účet“."
     ],
-    "deleteWhat": "Co se stane dál: účet se okamžitě deaktivuje a vy dostanete e-mail s odkazem pro zrušení. Po 30denní lhůtě se váš účet a data, která k němu patří (profil a události, seznamy, recepty a fotky, které jste vytvořili), trvale smažou z našich serverů. Pokud si to během těch 30 dnů rozmyslíte, odkaz z e-mailu všechno obnoví. Soubory v offline trezoru leží jen ve vašem telefonu a odstraní se, jakmile se na tom zařízení smaže účet."
+    "deleteWhat": "Co se stane dál: účet se okamžitě deaktivuje a vy dostanete e-mail s odkazem pro zrušení. Po 30denní lhůtě se váš účet a data, která k němu patří (profil a události, seznamy, recepty a fotky, které jste vytvořili), trvale smažou z našich serverů. Pokud si to během těch 30 dnů rozmyslíte, odkaz z e-mailu všechno obnoví. Soubory v offline trezoru leží jen ve vašem telefonu a odstraní se, jakmile se na tom zařízení smaže účet. Pokud máte Daili Plus, zrušte ho nejdřív v App Store nebo na Google Play — smazáním účtu se předplatné nezruší."
   },
 
   "notfound": {

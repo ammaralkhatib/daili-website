@@ -149,7 +149,7 @@
         { "cap": "Hutan kecil kami", "t": "Siram tanaman", "s": "Tiap hari · bareng Papa" }
       ],
       "tiles": [
-        { "big": "€0", "t": "Tanpa iklan, tanpa masa coba, tanpa jebakan." },
+        { "big": "€0", "t": "Gratis dipakai. Tanpa iklan, tanpa jebakan." },
         { "t": "Minzi, kucing keluarga, menyemangatimu" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Hubungkan kalendermu",
-      "p": "Bawa kalender Google, Outlook, dan kalender ponselmu. Tambahkan hari libur nasional negaramu. Lihat semuanya di samping rencana keluarga.",
-      "t": "Google Calendar",
-      "s": "Terhubung · 24 acara tersinkron",
+      "h3": "Kalendermu, jadi satu",
+      "p": "Lihat kalender yang sudah ada di ponselmu — Google, Outlook, iCloud — di samping rencana keluarga. Tambahkan hari libur nasional negaramu.",
+      "t": "Kalender di ponsel ini",
+      "s": "Di samping rencana keluarga",
       "apple": {
         "t": "Kalender Apple",
         "s": "Terhubung lewat iPhone-mu"
@@ -208,7 +208,7 @@
         "s": "Ketuk untuk hari Kamis",
         "add": "Tambah ke rencana makan"
       },
-      "fine": "Fitur Daili Plus memakai Google Gemini, dan hanya saat kamu menggunakannya."
+      "fine": "Fitur Daili Plus memakai Google Gemini, dan hanya saat kamu menggunakannya. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis; Daili Plus memberi 30, ditambah 5 GB Cloud Daili, seharga €9.99 per tahun."
     },
     "flow": {
       "h2": "Lihat cara kerjanya",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privat sejak awal",
       "sub": "Rencana keluargamu milik keluargamu. Itu bukan pengaturan, memang begitulah Daili dibuat.",
-      "chips": ["Tanpa iklan", "Tanpa pelacakan", "Datamu tak pernah kami jual", "Server di Uni Eropa", "Dokumen & foto tetap di ponselmu", "AI hanya saat kamu memakainya"]
+      "chips": ["Tanpa iklan", "Tanpa pelacakan", "Datamu tak pernah kami jual", "Server di Uni Eropa", "Brankasmu tetap di ponselmu", "AI hanya saat kamu memakainya"]
     },
     "care": {
       "h2a": "Dibuat dengan sepenuh hati,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Berapa harga Daili?",
-        "a": "Tidak ada. Daili gratis — tanpa iklan dan tanpa penjualan data. Kalau suatu saat kami menambah fitur berbayar, semua yang gratis hari ini tetap gratis."
+        "a": "Daili gratis dipakai — kalender, daftar, tugas, kebiasaan, catatan, resep, dan lainnya, tanpa iklan dan tanpa penjualan data. Daili Plus bersifat opsional: satu harga tahunan untuk seluruh keluarga (€9.99 di kawasan euro; aplikasi menampilkan harga dalam mata uangmu) memberi 30 aksi AI per bulan dan 5 GB Cloud Daili untuk gambar dan rekaman di catatan. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis."
       },
       {
         "q": "Apakah ada versi web?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Aplikasinya berbahasa apa saja?",
-        "a": "Sembilan belas bahasa, sepenuhnya — termasuk pengingat yang dikirimnya: Inggris, Jerman, Prancis, Spanyol, Italia, Belanda, Portugis, Polandia, Ceko, Slovakia, Swedia, Denmark, Norwegia, Finlandia, Turki, Rumania, Bulgaria, Yunani, dan Ukraina. Bahasa Indonesia belum ada — sampai saat itu aplikasinya berjalan dalam bahasa Inggris."
+        "a": "Dua puluh lima bahasa, sepenuhnya — termasuk pengingat yang dikirimnya: Inggris, Jerman, Prancis, Spanyol, Italia, Belanda, Portugis, Polandia, Ceko, Slovakia, Swedia, Denmark, Norwegia, Finlandia, Turki, Rumania, Bulgaria, Yunani, Ukraina, Indonesia, Thai, Jepang, Korea, dan Tionghoa (Sederhana dan Tradisional)."
       },
       {
         "q": "Jalan di ponsel apa saja?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Bisa membawa kalender yang sudah kupakai?",
-        "a": "Daili bisa menampilkan kalender bawaan ponselmu di samping kalender keluarga, di perangkat. Menghubungkan kalender Google atau Outlook segera hadir."
+        "a": "Bisa. Daili menampilkan kalender yang sudah ada di ponselmu — Google, Outlook, iCloud, dan lainnya — di samping kalender keluarga, hanya di perangkatmu. Kamu juga bisa menambahkan hari libur nasional negaramu."
       },
       {
         "q": "Di mana datanya disimpan?",
-        "a": "Kalender, daftar, dan data keluargamu ada di server kami di Uni Eropa. Foto dan dokumen di brankas tidak pernah keluar dari ponselmu. Rinciannya ada di <a href=\"/privacy.html\">kebijakan privasi</a>."
+        "a": "Kalender, daftar, dan data keluargamu ada di server kami di Jerman (Uni Eropa). Foto dan dokumen di brankas tidak pernah keluar dari ponselmu. Gambar dan rekaman di catatan juga tetap di ponselmu, kecuali kamu memilih Cloud Daili (bagian dari Daili Plus), yang juga menyimpannya di Jerman. Rinciannya ada di <a href=\"/privacy.html\">kebijakan privasi</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>Di aplikasi:</strong> Pengaturan &rarr; Profil &rarr; Hapus akun.",
       "<strong>Lewat email:</strong> tulis ke <a href=\"mailto:support@daili.app?subject=Hapus%20akun%20saya\"><strong>support@daili.app</strong></a> dari alamat email akunmu, dengan subjek \"Hapus akun saya\"."
     ],
-    "deleteWhat": "Apa yang terjadi berikutnya: akunmu langsung dinonaktifkan dan kamu menerima email berisi tautan pembatalan. Setelah masa tenggang 30 hari, akunmu dan data yang terkait dengannya (profil, serta acara, daftar, resep, dan foto yang kamu buat) dihapus permanen dari server kami. Kalau kamu berubah pikiran dalam 30 hari itu, tautan di email akan memulihkan semuanya. Berkas di brankas luring hanya ada di ponselmu dan ikut terhapus saat akun dihapus di perangkat tersebut."
+    "deleteWhat": "Apa yang terjadi berikutnya: akunmu langsung dinonaktifkan dan kamu menerima email berisi tautan pembatalan. Setelah masa tenggang 30 hari, akunmu dan data yang terkait dengannya (profil, serta acara, daftar, resep, dan foto yang kamu buat) dihapus permanen dari server kami. Kalau kamu berubah pikiran dalam 30 hari itu, tautan di email akan memulihkan semuanya. Berkas di brankas luring hanya ada di ponselmu dan ikut terhapus saat akun dihapus di perangkat tersebut. Kalau kamu punya Daili Plus, batalkan dulu di App Store atau Google Play — menghapus akun tidak membatalkan langganan."
   },
 
   "notfound": {

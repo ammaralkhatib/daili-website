@@ -149,7 +149,7 @@
         { "cap": "Meidän pieni viidakko", "t": "Kastele kukat", "s": "Joka päivä · iskän kanssa" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Ei mainoksia, ei kokeilujaksoa, ei koukkuja." },
+        { "big": "0 €", "t": "Ilmainen käyttää. Ei mainoksia, ei koukkuja." },
         { "t": "Minzi, perheen kissa, kannustaa teitä" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Yhdistä kalenterisi",
-      "p": "Tuo mukaan Google, Outlook ja puhelimen kalenteri. Lisää oman maasi pyhäpäivät. Näe kaikki perheen suunnitelman vieressä.",
-      "t": "Google Calendar",
-      "s": "Yhdistetty · 24 tapahtumaa synkattu",
+      "h3": "Kalenterisi yhdessä",
+      "p": "Näe puhelimessasi jo olevat kalenterit — Google, Outlook, iCloud — perheen suunnitelman vieressä. Lisää oman maasi pyhäpäivät.",
+      "t": "Tämän puhelimen kalenterit",
+      "s": "Perheen suunnitelman vieressä",
       "apple": {
         "t": "Apple Kalenteri",
         "s": "Yhdistetty iPhonesi kautta"
@@ -208,7 +208,7 @@
         "s": "Napauta, niin se on torstaina",
         "add": "Lisää ruokalistaan"
       },
-      "fine": "Daili Plus -toiminnot käyttävät Google Geminiä, ja vain kun käytät niitä."
+      "fine": "Daili Plus -toiminnot käyttävät Google Geminiä, ja vain kun käytät niitä. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 30 sekä 5 GB Daili-pilveä hintaan €9.99 vuodessa."
     },
     "flow": {
       "h2": "Katso, miten se toimii",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Yksityinen alusta asti",
       "sub": "Perheen suunnitelmat kuuluvat perheelle. Se ei ole asetus, vaan tapa, jolla Daili on rakennettu.",
-      "chips": ["Ei mainoksia", "Ei seurantaa", "Emme koskaan myy tietojasi", "Palvelimet EU:ssa", "Asiakirjat ja kuvat pysyvät puhelimessa", "Tekoäly vain kun käytät sitä"]
+      "chips": ["Ei mainoksia", "Ei seurantaa", "Emme koskaan myy tietojasi", "Palvelimet EU:ssa", "Holvisi pysyy puhelimessasi", "Tekoäly vain kun käytät sitä"]
     },
     "care": {
       "h2a": "Huolella tehty,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Mitä Daili maksaa?",
-        "a": "Ei mitään. Daili on ilmainen — ei mainoksia eikä tietojen myyntiä. Jos joskus lisäämme maksullisia lisiä, kaikki mikä on tänään ilmaista pysyy ilmaisena."
+        "a": "Dailin käyttö on ilmaista — kalenteri, listat, tehtävät, tavat, muistiinpanot, reseptit ja paljon muuta, ilman mainoksia ja ilman tietojen myyntiä. Daili Plus on vapaaehtoinen: yhdellä vuosihinnalla koko perheelle (€9.99 euroalueella; sovellus näyttää hinnan omassa valuutassasi) saatte 30 tekoälytoimintoa kuukaudessa ja 5 GB Daili-pilveä muistiinpanojen kuville ja tallenteille. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi."
       },
       {
         "q": "Onko siitä selainversio?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Mitä kieliä sovellus puhuu?",
-        "a": "Sovellus puhuu 19 kieltä, kokonaan — myös lähettämänsä muistutukset: suomea, englantia, saksaa, ranskaa, espanjaa, italiaa, hollantia, portugalia, puolaa, tšekkiä, slovakkia, ruotsia, tanskaa, norjaa, turkkia, romaniaa, bulgariaa, kreikkaa ja ukrainaa."
+        "a": "Sovellus puhuu 25 kieltä, kokonaan — myös lähettämänsä muistutukset: suomea, englantia, saksaa, ranskaa, espanjaa, italiaa, hollantia, portugalia, puolaa, tšekkiä, slovakkia, ruotsia, tanskaa, norjaa, turkkia, romaniaa, bulgariaa, kreikkaa, ukrainaa, indonesiaa, thaita, japania, koreaa ja kiinaa (yksinkertaistettua ja perinteistä)."
       },
       {
         "q": "Millä puhelimilla se toimii?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Voinko tuoda nykyisen kalenterini?",
-        "a": "Daili osaa näyttää puhelimesi oman kalenterin perhekalenterin rinnalla laitteella. Google- tai Outlook-kalenterin yhdistäminen tulee pian."
+        "a": "Voit. Daili näyttää puhelimessasi jo olevat kalenterit — Googlen, Outlookin, iCloudin ja muut — perhekalenterin rinnalla, vain omalla laitteellasi. Voit myös lisätä oman maasi pyhäpäivät."
       },
       {
         "q": "Missä tietoni säilytetään?",
-        "a": "Kalenterisi, listasi ja perheen tiedot ovat palvelimellamme EU:ssa. Holvin kuvat ja asiakirjat eivät poistu puhelimestasi koskaan. Tarkemmin <a href=\"/privacy.html\">tietosuojaselosteessa</a>."
+        "a": "Kalenterisi, listasi ja perheen tiedot ovat palvelimillamme Saksassa (EU). Holvin kuvat ja asiakirjat eivät poistu puhelimestasi koskaan. Myös muistiinpanojen kuvat ja tallenteet pysyvät puhelimessasi, ellet valitse Daili-pilveä (osa Daili Plussaa), joka säilyttää nekin Saksassa. Tarkemmin <a href=\"/privacy.html\">tietosuojaselosteessa</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>Sovelluksessa:</strong> Asetukset &rarr; Profiili &rarr; Poista tili.",
       "<strong>Sähköpostilla:</strong> kirjoita osoitteeseen <a href=\"mailto:support@daili.app?subject=Poista%20tilini\"><strong>support@daili.app</strong></a> tilisi sähköpostiosoitteesta, aiheena ”Poista tilini”."
     ],
-    "deleteWhat": "Mitä sitten tapahtuu: tilisi suljetaan heti ja saat sähköpostin, jossa on peruutuslinkki. Kolmenkymmenen päivän määräajan jälkeen tilisi ja siihen liittyvät tiedot (profiili sekä luomasi menot, listat, reseptit ja kuvat) poistetaan lopullisesti palvelimiltamme. Jos muutat mielesi noiden 30 päivän aikana, sähköpostin linkki palauttaa kaiken. Offline-holvin tiedostot ovat vain puhelimessasi ja poistuvat, kun tili poistetaan siltä laitteelta."
+    "deleteWhat": "Mitä sitten tapahtuu: tilisi suljetaan heti ja saat sähköpostin, jossa on peruutuslinkki. Kolmenkymmenen päivän määräajan jälkeen tilisi ja siihen liittyvät tiedot (profiili sekä luomasi menot, listat, reseptit ja kuvat) poistetaan lopullisesti palvelimiltamme. Jos muutat mielesi noiden 30 päivän aikana, sähköpostin linkki palauttaa kaiken. Offline-holvin tiedostot ovat vain puhelimessasi ja poistuvat, kun tili poistetaan siltä laitteelta. Jos sinulla on Daili Plus, peru se ensin App Storessa tai Google Playssa — tilin poistaminen ei peru tilausta."
   },
 
   "notfound": {

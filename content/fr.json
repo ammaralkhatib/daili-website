@@ -149,7 +149,7 @@
         { "cap": "Notre petite jungle", "t": "Arroser les plantes", "s": "Tous les jours · avec Papa" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Sans pub, sans essai, sans piège." },
+        { "big": "0 €", "t": "Gratuit. Sans pub, sans piège." },
         { "t": "Minzi, le chat de la famille, vous encourage" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Connectez vos agendas",
-      "p": "Importez Google, Outlook et l'agenda de votre téléphone. Ajoutez les jours fériés de votre pays. Et voyez tout à côté du planning familial.",
-      "t": "Google Calendar",
-      "s": "Connecté · 24 événements",
+      "h3": "Vos agendas, réunis",
+      "p": "Voyez les agendas déjà présents sur votre téléphone — Google, Outlook, iCloud — à côté du planning familial. Ajoutez les jours fériés de votre pays.",
+      "t": "Agendas de ce téléphone",
+      "s": "À côté du planning familial",
       "apple": {
         "t": "Calendrier Apple",
         "s": "Connecté via votre iPhone"
@@ -208,7 +208,7 @@
         "s": "Touchez pour l'ajouter jeudi",
         "add": "Ajouter aux menus"
       },
-      "fine": "Les fonctions Daili Plus utilisent Google Gemini, et uniquement quand vous vous en servez."
+      "fine": "Les fonctions Daili Plus utilisent Google Gemini, et uniquement quand vous vous en servez. Chaque famille a droit à 3 actions IA gratuites par mois ; Daili Plus en donne 30, plus 5 Go de cloud Daili, pour €9.99 par an."
     },
     "flow": {
       "h2": "Voyez-le en action",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privé par conception",
       "sub": "Les plans de votre famille appartiennent à votre famille. Ce n'est pas un réglage, c'est ainsi que Daili est conçu.",
-      "chips": ["Sans publicité", "Sans pistage", "Vos données ne sont jamais vendues", "Serveurs dans l'UE", "Documents et photos restent sur votre téléphone", "IA seulement si vous l'utilisez"]
+      "chips": ["Sans publicité", "Sans pistage", "Vos données ne sont jamais vendues", "Serveurs dans l'UE", "Votre coffre reste sur votre téléphone", "IA seulement si vous l'utilisez"]
     },
     "care": {
       "h2a": "Fait avec soin,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Combien coûte Daili ?",
-        "a": "Rien. Daili est gratuit — sans publicité, sans revente de données. Si nous ajoutons un jour des options payantes, tout ce qui est gratuit aujourd'hui le restera."
+        "a": "Daili est gratuit — agenda, listes, tâches, habitudes, notes, recettes et plus encore, sans publicité et sans revente de données. Daili Plus est facultatif : un seul prix annuel pour toute la famille (€9.99 dans la zone euro ; l'application affiche le prix dans votre devise) vous donne 30 actions IA par mois et 5 Go de cloud Daili pour les images et les enregistrements de vos notes. Chaque famille a droit à 3 actions IA gratuites par mois."
       },
       {
         "q": "Existe-t-il une version web ?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Quelles langues l'application parle-t-elle ?",
-        "a": "L'application parle 19 langues, entièrement — y compris les rappels qu'elle envoie : français, anglais, allemand, espagnol, italien, néerlandais, portugais, polonais, tchèque, slovaque, suédois, danois, norvégien, finnois, turc, roumain, bulgare, grec et ukrainien."
+        "a": "L'application parle 25 langues, entièrement — y compris les rappels qu'elle envoie : français, anglais, allemand, espagnol, italien, néerlandais, portugais, polonais, tchèque, slovaque, suédois, danois, norvégien, finnois, turc, roumain, bulgare, grec, ukrainien, indonésien, thaï, japonais, coréen et chinois (simplifié et traditionnel)."
       },
       {
         "q": "Sur quels téléphones fonctionne-t-elle ?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Puis-je récupérer mon agenda actuel ?",
-        "a": "Daili peut afficher l'agenda de votre téléphone à côté de l'agenda familial, sur votre appareil. La connexion d'un agenda Google ou Outlook arrive bientôt."
+        "a": "Oui. Daili affiche les agendas déjà présents sur votre téléphone — Google, Outlook, iCloud et d'autres — à côté de l'agenda familial, uniquement sur votre appareil. Vous pouvez aussi ajouter les jours fériés de votre pays."
       },
       {
         "q": "Où mes données sont-elles stockées ?",
-        "a": "Votre agenda, vos listes et les données de votre famille sont sur notre serveur dans l'UE. Les photos et les documents du coffre ne quittent jamais votre téléphone. Détails dans la <a href=\"/privacy.html\">politique de confidentialité</a>."
+        "a": "Votre agenda, vos listes et les données de votre famille sont sur nos serveurs en Allemagne (UE). Les photos et les documents du coffre ne quittent jamais votre téléphone. Les images et les enregistrements de vos notes restent eux aussi sur votre téléphone, sauf si vous choisissez le cloud Daili (inclus dans Daili Plus), qui les stocke également en Allemagne. Détails dans la <a href=\"/privacy.html\">politique de confidentialité</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>Dans l'application :</strong> Réglages &rarr; Profil &rarr; Supprimer le compte.",
       "<strong>Par e-mail :</strong> écrivez à <a href=\"mailto:support@daili.app?subject=Supprimer%20mon%20compte\"><strong>support@daili.app</strong></a> depuis l'adresse e-mail de votre compte, avec pour objet &laquo;&nbsp;Supprimer mon compte&nbsp;&raquo;."
     ],
-    "deleteWhat": "Ce qui se passe ensuite : votre compte est désactivé immédiatement et vous recevez un e-mail contenant un lien d'annulation. Après un délai de 30 jours, votre compte et les données qui y sont liées (profil, ainsi que les événements, listes, recettes et photos que vous avez créés) sont définitivement supprimés de nos serveurs. Si vous changez d'avis pendant ces 30 jours, le lien dans l'e-mail rétablit tout. Les fichiers du coffre hors ligne se trouvent uniquement sur votre téléphone et sont retirés lors de la suppression du compte sur cet appareil."
+    "deleteWhat": "Ce qui se passe ensuite : votre compte est désactivé immédiatement et vous recevez un e-mail contenant un lien d'annulation. Après un délai de 30 jours, votre compte et les données qui y sont liées (profil, ainsi que les événements, listes, recettes et photos que vous avez créés) sont définitivement supprimés de nos serveurs. Si vous changez d'avis pendant ces 30 jours, le lien dans l'e-mail rétablit tout. Les fichiers du coffre hors ligne se trouvent uniquement sur votre téléphone et sont retirés lors de la suppression du compte sur cet appareil. Si vous avez Daili Plus, résiliez-le d'abord dans l'App Store ou sur Google Play — la suppression de votre compte ne résilie pas l'abonnement."
   },
 
   "notfound": {

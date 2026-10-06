@@ -149,7 +149,7 @@
         { "cap": "Nasza mała dżungla", "t": "Podlać kwiaty", "s": "Codziennie · z tatą" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Bez reklam, bez okresu próbnego, bez haczyka." },
+        { "big": "0 €", "t": "Za darmo. Bez reklam, bez haczyka." },
         { "t": "Minzi, wasza rodzinna kotka, kibicuje wam" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Połącz swoje kalendarze",
-      "p": "Dodaj Google, Outlook i kalendarz z telefonu. Włącz święta w swoim kraju. Wszystko widać obok planu rodziny.",
-      "t": "Google Calendar",
-      "s": "Połączono · 24 wydarzenia",
+      "h3": "Twoje kalendarze, razem",
+      "p": "Zobacz kalendarze, które już masz w telefonie — Google, Outlook, iCloud — obok planu rodziny. Dodaj święta w swoim kraju.",
+      "t": "Kalendarze z tego telefonu",
+      "s": "Widoczne obok planu rodziny",
       "apple": {
         "t": "Kalendarz Apple",
         "s": "Połączono przez iPhone’a"
@@ -208,7 +208,7 @@
         "s": "Dotknij, by dodać na czwartek",
         "add": "Dodaj do jadłospisu"
       },
-      "fine": "Funkcje Daili Plus korzystają z Google Gemini — i tylko wtedy, gdy ich używasz."
+      "fine": "Funkcje Daili Plus korzystają z Google Gemini — i tylko wtedy, gdy ich używasz. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo; Daili Plus daje 30 oraz 5 GB chmury Daili, za €9.99 rocznie."
     },
     "flow": {
       "h2": "Zobacz, jak to działa",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Prywatne z założenia",
       "sub": "Plany twojej rodziny należą do twojej rodziny. To nie ustawienie, tylko sposób, w jaki zbudowano Daili.",
-      "chips": ["Bez reklam", "Bez śledzenia", "Nigdy nie sprzedajemy danych", "Serwery w UE", "Dokumenty i zdjęcia zostają na telefonie", "AI tylko wtedy, gdy chcesz"]
+      "chips": ["Bez reklam", "Bez śledzenia", "Nigdy nie sprzedajemy danych", "Serwery w UE", "Twój sejf zostaje na telefonie", "AI tylko wtedy, gdy chcesz"]
     },
     "care": {
       "h2a": "Zrobione z troską,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Ile kosztuje Daili?",
-        "a": "Nic. Daili jest darmowe — bez reklam i bez sprzedaży danych. Jeśli kiedyś dodamy płatne dodatki, wszystko, co dziś jest darmowe, zostanie darmowe."
+        "a": "Z Daili korzystasz za darmo — kalendarz, listy, zadania, nawyki, notatki, przepisy i nie tylko, bez reklam i bez sprzedaży danych. Daili Plus jest opcjonalny: jedna roczna cena dla całej rodziny (€9.99 w strefie euro; aplikacja pokaże cenę w twojej walucie) daje 30 akcji AI miesięcznie i 5 GB chmury Daili na zdjęcia i nagrania w notatkach. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo."
       },
       {
         "q": "Czy jest wersja przeglądarkowa?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "W jakich językach mówi aplikacja?",
-        "a": "Aplikacja mówi w 19 językach, w pełni — łącznie z przypomnieniami, które wysyła: po polsku, angielsku, niemiecku, francusku, hiszpańsku, włosku, niderlandzku, portugalsku, czesku, słowacku, szwedzku, duńsku, norwesku, fińsku, turecku, rumuńsku, bułgarsku, grecku i ukraińsku."
+        "a": "Aplikacja mówi w 25 językach, w pełni — łącznie z przypomnieniami, które wysyła: po polsku, angielsku, niemiecku, francusku, hiszpańsku, włosku, niderlandzku, portugalsku, czesku, słowacku, szwedzku, duńsku, norwesku, fińsku, turecku, rumuńsku, bułgarsku, grecku, ukraińsku, indonezyjsku, tajsku, japońsku, koreańsku i chińsku (w piśmie uproszczonym i tradycyjnym)."
       },
       {
         "q": "Na jakich telefonach działa?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Czy mogę przenieść swój obecny kalendarz?",
-        "a": "Daili pokaże kalendarz z twojego telefonu obok kalendarza rodzinnego, na samym urządzeniu. Podłączenie kalendarza Google albo Outlooka będzie wkrótce."
+        "a": "Tak. Daili pokazuje kalendarze, które już masz w telefonie — Google, Outlook, iCloud i inne — obok kalendarza rodzinnego, tylko na twoim urządzeniu. Możesz też dodać święta w swoim kraju."
       },
       {
         "q": "Gdzie są przechowywane moje dane?",
-        "a": "Twój kalendarz, listy i dane rodziny są na naszym serwerze w UE. Zdjęcia i dokumenty w sejfie nigdy nie opuszczają twojego telefonu. Szczegóły w <a href=\"/privacy.html\">polityce prywatności</a>."
+        "a": "Twój kalendarz, listy i dane rodziny są na naszych serwerach w Niemczech (UE). Zdjęcia i dokumenty w sejfie nigdy nie opuszczają twojego telefonu. Zdjęcia i nagrania w notatkach też zostają w telefonie, chyba że wybierzesz chmurę Daili (część Daili Plus), która również przechowuje je w Niemczech. Szczegóły w <a href=\"/privacy.html\">polityce prywatności</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>W aplikacji:</strong> Ustawienia &rarr; Profil &rarr; Usuń konto.",
       "<strong>Mailem:</strong> napisz na <a href=\"mailto:support@daili.app?subject=Usu%C5%84%20moje%20konto\"><strong>support@daili.app</strong></a> z adresu e-mail przypisanego do konta, w temacie wpisując „Usuń moje konto”."
     ],
-    "deleteWhat": "Co dzieje się dalej: konto zostaje natychmiast wyłączone, a ty dostajesz e-mail z linkiem do anulowania. Po 30 dniach karencji twoje konto i powiązane z nim dane (profil oraz utworzone przez ciebie wydarzenia, listy, przepisy i zdjęcia) zostają trwale usunięte z naszych serwerów. Jeśli w ciągu tych 30 dni zmienisz zdanie, link z e-maila przywróci wszystko. Pliki w sejfie offline leżą tylko na twoim telefonie i są usuwane wraz z kontem na tym urządzeniu."
+    "deleteWhat": "Co dzieje się dalej: konto zostaje natychmiast wyłączone, a ty dostajesz e-mail z linkiem do anulowania. Po 30 dniach karencji twoje konto i powiązane z nim dane (profil oraz utworzone przez ciebie wydarzenia, listy, przepisy i zdjęcia) zostają trwale usunięte z naszych serwerów. Jeśli w ciągu tych 30 dni zmienisz zdanie, link z e-maila przywróci wszystko. Pliki w sejfie offline leżą tylko na twoim telefonie i są usuwane wraz z kontem na tym urządzeniu. Jeśli masz Daili Plus, najpierw anuluj go w App Store lub Google Play — usunięcie konta nie anuluje subskrypcji."
   },
 
   "notfound": {

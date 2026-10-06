@@ -149,7 +149,7 @@
         { "cap": "Bizim küçük ormanımız", "t": "Çiçekleri sula", "s": "Her gün · babayla" }
       ],
       "tiles": [
-        { "big": "€0", "t": "Reklam yok, deneme yok, tuzak yok." },
+        { "big": "€0", "t": "Kullanması ücretsiz. Reklam yok, tuzak yok." },
         { "t": "Ailenin kedisi Minzi sizi yüreklendiriyor" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Takvimlerinizi bağlayın",
-      "p": "Google, Outlook ve telefonunuzun takvimini getirin. Ülkenizin resmî tatillerini ekleyin. Hepsini aile planının yanında görün.",
-      "t": "Google Calendar",
-      "s": "Bağlı · 24 etkinlik eşitlendi",
+      "h3": "Takvimleriniz bir arada",
+      "p": "Telefonunuzda zaten bulunan takvimleri — Google, Outlook, iCloud — aile planının yanında görün. Ülkenizin resmî tatillerini ekleyin.",
+      "t": "Bu telefondaki takvimler",
+      "s": "Aile planının yanında görünür",
       "apple": {
         "t": "Apple Takvim",
         "s": "iPhone'unuz üzerinden bağlı"
@@ -208,7 +208,7 @@
         "s": "Dokun, perşembeye ekle",
         "add": "Yemek planına ekle"
       },
-      "fine": "Daili Plus özellikleri Google Gemini kullanır; o da yalnızca siz kullandığınızda."
+      "fine": "Daili Plus özellikleri Google Gemini kullanır; o da yalnızca siz kullandığınızda. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır; Daili Plus yılda €9.99 karşılığında 30 işlem ve 5 GB Daili bulutu verir."
     },
     "flow": {
       "h2": "Nasıl çalıştığını görün",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Tasarımı gereği özel",
       "sub": "Ailenizin planları ailenize aittir. Bu bir ayar değil; Daili böyle yapıldı.",
-      "chips": ["Reklam yok", "Takip yok", "Verilerinizi asla satmayız", "Sunucular AB'de", "Belgeler ve fotoğraflar telefonunuzda kalır", "Yapay zekâ yalnızca siz kullanınca"]
+      "chips": ["Reklam yok", "Takip yok", "Verilerinizi asla satmayız", "Sunucular AB'de", "Kasanız telefonunuzda kalır", "Yapay zekâ yalnızca siz kullanınca"]
     },
     "care": {
       "h2a": "Özenle yapıldı,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Daili ne kadar?",
-        "a": "Hiç. Daili ücretsiz — reklamsız ve veri satışı olmadan. Bir gün ücretli ekler getirirsek, bugün ücretsiz olan her şey ücretsiz kalır."
+        "a": "Daili'yi kullanmak ücretsiz — takvim, listeler, görevler, alışkanlıklar, notlar, tarifler ve daha fazlası; reklamsız ve veri satışı olmadan. Daili Plus isteğe bağlıdır: tüm aile için tek bir yıllık fiyatla (euro bölgesinde €9.99; uygulama fiyatı kendi para biriminizde gösterir) ayda 30 yapay zekâ işlemi ve notlardaki resimler ve kayıtlar için 5 GB Daili bulutu alırsınız. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır."
       },
       {
         "q": "Web sürümü var mı?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Uygulama hangi dilleri konuşuyor?",
-        "a": "Uygulama 19 dili eksiksiz konuşuyor — gönderdiği hatırlatmalar dahil: Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Felemenkçe, Portekizce, Lehçe, Çekçe, Slovakça, İsveççe, Danca, Norveççe, Fince, Romence, Bulgarca, Yunanca ve Ukraynaca."
+        "a": "Uygulama 25 dili eksiksiz konuşuyor — gönderdiği hatırlatmalar dahil: Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Felemenkçe, Portekizce, Lehçe, Çekçe, Slovakça, İsveççe, Danca, Norveççe, Fince, Romence, Bulgarca, Yunanca, Ukraynaca, Endonezce, Tayca, Japonca, Korece ve Çince (Basitleştirilmiş ve Geleneksel)."
       },
       {
         "q": "Hangi telefonlarda çalışıyor?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Şu anki takvimimi getirebilir miyim?",
-        "a": "Daili telefonunuzun kendi takvimini aile takviminin yanında, cihazda gösterebilir. Google veya Outlook takvimi bağlamak yakında geliyor."
+        "a": "Evet. Daili telefonunuzda zaten bulunan takvimleri — Google, Outlook, iCloud ve diğerleri — aile takviminin yanında, yalnızca cihazınızda gösterir. Ülkenizin resmî tatillerini de ekleyebilirsiniz."
       },
       {
         "q": "Verilerim nerede tutuluyor?",
-        "a": "Takviminiz, listeleriniz ve ailenizin verileri AB'deki sunucumuzda. Kasadaki fotoğraflar ve belgeler telefonunuzdan asla çıkmaz. Ayrıntılar <a href=\"/privacy.html\">gizlilik politikasında</a>."
+        "a": "Takviminiz, listeleriniz ve ailenizin verileri Almanya'daki (AB) sunucularımızda. Kasadaki fotoğraflar ve belgeler telefonunuzdan asla çıkmaz. Notlardaki resimler ve kayıtlar da telefonunuzda kalır; Daili bulutunu (Daili Plus'ın bir parçası) seçerseniz onlar da Almanya'da saklanır. Ayrıntılar <a href=\"/privacy.html\">gizlilik politikasında</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>Uygulamada:</strong> Ayarlar &rarr; Profil &rarr; Hesabı sil.",
       "<strong>E-postayla:</strong> hesabınızın e-posta adresinden <a href=\"mailto:support@daili.app?subject=Hesab%C4%B1m%C4%B1%20sil\"><strong>support@daili.app</strong></a> adresine «Hesabımı sil» konusuyla yazın."
     ],
-    "deleteWhat": "Sonrasında ne oluyor: hesabınız hemen devre dışı bırakılır ve size iptal bağlantısı içeren bir e-posta gelir. 30 günlük süre dolduktan sonra hesabınız ve ona bağlı veriler (profil ile oluşturduğunuz etkinlikler, listeler, tarifler ve fotoğraflar) sunucularımızdan kalıcı olarak silinir. O 30 gün içinde fikrinizi değiştirirseniz e-postadaki bağlantı her şeyi geri getirir. Çevrimdışı kasadaki dosyalar yalnızca telefonunuzdadır ve hesap o cihazda silindiğinde kaldırılır."
+    "deleteWhat": "Sonrasında ne oluyor: hesabınız hemen devre dışı bırakılır ve size iptal bağlantısı içeren bir e-posta gelir. 30 günlük süre dolduktan sonra hesabınız ve ona bağlı veriler (profil ile oluşturduğunuz etkinlikler, listeler, tarifler ve fotoğraflar) sunucularımızdan kalıcı olarak silinir. O 30 gün içinde fikrinizi değiştirirseniz e-postadaki bağlantı her şeyi geri getirir. Çevrimdışı kasadaki dosyalar yalnızca telefonunuzdadır ve hesap o cihazda silindiğinde kaldırılır. Daili Plus'ınız varsa önce App Store veya Google Play'den iptal edin — hesabınızı silmek aboneliği iptal etmez."
   },
 
   "notfound": {

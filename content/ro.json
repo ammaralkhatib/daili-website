@@ -149,7 +149,7 @@
         { "cap": "Mica noastră junglă", "t": "Udă plantele", "s": "Zilnic · cu tata" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Fără reclame, fără probă, fără șmecherii." },
+        { "big": "0 €", "t": "Gratuit. Fără reclame, fără șmecherii." },
         { "t": "Minzi, pisica familiei, te încurajează" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Conectează-ți calendarele",
-      "p": "Adu Google, Outlook și calendarul telefonului. Adaugă sărbătorile legale din țara ta. Vezi totul lângă planul familiei.",
-      "t": "Google Calendar",
-      "s": "Conectat · 24 de evenimente",
+      "h3": "Calendarele tale, la un loc",
+      "p": "Vezi calendarele pe care le ai deja pe telefon — Google, Outlook, iCloud — lângă planul familiei. Adaugă sărbătorile legale din țara ta.",
+      "t": "Calendarele de pe telefon",
+      "s": "Afișate lângă planul familiei",
       "apple": {
         "t": "Calendar Apple",
         "s": "Conectat prin iPhone-ul tău"
@@ -208,7 +208,7 @@
         "s": "Atinge ca s-o pui joi",
         "add": "Adaugă în meniu"
       },
-      "fine": "Funcțiile Daili Plus folosesc Google Gemini și doar atunci când le folosești."
+      "fine": "Funcțiile Daili Plus folosesc Google Gemini și doar atunci când le folosești. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30, plus 5 GB în cloud-ul Daili, pentru €9.99 pe an."
     },
     "flow": {
       "h2": "Vezi cum funcționează",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privat din construcție",
       "sub": "Planurile familiei tale sunt ale familiei tale. Nu e o setare, așa e construit Daili.",
-      "chips": ["Fără reclame", "Fără urmărire", "Nu îți vindem niciodată datele", "Servere în UE", "Documentele și pozele rămân pe telefon", "AI doar când îl folosești"]
+      "chips": ["Fără reclame", "Fără urmărire", "Nu îți vindem niciodată datele", "Servere în UE", "Seiful tău rămâne pe telefon", "AI doar când îl folosești"]
     },
     "care": {
       "h2a": "Făcut cu grijă,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Cât costă Daili?",
-        "a": "Nimic. Daili este gratuit — fără reclame, fără vânzare de date. Dacă vom adăuga vreodată opțiuni cu plată, tot ce e gratuit azi rămâne gratuit."
+        "a": "Daili se folosește gratuit — calendar, liste, sarcini, obiceiuri, notițe, rețete și altele, fără reclame și fără vânzare de date. Daili Plus este opțional: un singur preț anual pentru toată familia (€9.99 în zona euro; aplicația îți arată prețul în moneda ta) îți dă 30 de acțiuni AI pe lună și 5 GB în cloud-ul Daili pentru imaginile și înregistrările din notițe. Fiecare familie primește gratuit 3 acțiuni AI pe lună."
       },
       {
         "q": "Există o versiune web?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Ce limbi vorbește aplicația?",
-        "a": "Aplicația vorbește 19 limbi, complet — inclusiv memento-urile pe care le trimite: engleză, germană, franceză, spaniolă, italiană, neerlandeză, portugheză, poloneză, cehă, slovacă, suedeză, daneză, norvegiană, finlandeză, turcă, română, bulgară, greacă și ucraineană."
+        "a": "Aplicația vorbește 25 de limbi, complet — inclusiv memento-urile pe care le trimite: engleză, germană, franceză, spaniolă, italiană, neerlandeză, portugheză, poloneză, cehă, slovacă, suedeză, daneză, norvegiană, finlandeză, turcă, română, bulgară, greacă, ucraineană, indoneziană, thailandeză, japoneză, coreeană și chineză (simplificată și tradițională)."
       },
       {
         "q": "Pe ce telefoane merge?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Pot să aduc calendarul pe care îl am deja?",
-        "a": "Daili poate arăta calendarul telefonului tău lângă cel al familiei, chiar pe dispozitiv. Conectarea unui calendar Google sau Outlook vine în curând."
+        "a": "Da. Daili arată calendarele pe care le ai deja pe telefon — Google, Outlook, iCloud și altele — lângă calendarul familiei, doar pe dispozitivul tău. Poți adăuga și sărbătorile legale din țara ta."
       },
       {
         "q": "Unde îmi sunt stocate datele?",
-        "a": "Calendarul, listele și datele familiei stau pe serverul nostru din UE. Pozele și documentele din seif nu îți părăsesc niciodată telefonul. Detalii în <a href=\"/privacy.html\">politica de confidențialitate</a>."
+        "a": "Calendarul, listele și datele familiei stau pe serverele noastre din Germania (UE). Pozele și documentele din seif nu îți părăsesc niciodată telefonul. Imaginile și înregistrările din notițe rămân și ele pe telefon, cu excepția cazului în care alegi cloud-ul Daili (parte din Daili Plus), care le păstrează tot în Germania. Detalii în <a href=\"/privacy.html\">politica de confidențialitate</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>În aplicație:</strong> Setări &rarr; Profil &rarr; Șterge contul.",
       "<strong>Prin e-mail:</strong> scrie la <a href=\"mailto:support@daili.app?subject=%C8%98terge-mi%20contul\"><strong>support@daili.app</strong></a> de pe adresa de e-mail a contului tău, cu subiectul „Șterge-mi contul”."
     ],
-    "deleteWhat": "Ce se întâmplă apoi: contul tău este dezactivat imediat și primești un e-mail cu un link de anulare. După o perioadă de grație de 30 de zile, contul tău și datele legate de el (profilul, precum și evenimentele, listele, rețetele și pozele pe care le-ai creat) sunt șterse definitiv de pe serverele noastre. Dacă te răzgândești în aceste 30 de zile, linkul din e-mail readuce totul. Fișierele din seiful offline stau doar pe telefonul tău și sunt eliminate de pe acel dispozitiv când contul este șters."
+    "deleteWhat": "Ce se întâmplă apoi: contul tău este dezactivat imediat și primești un e-mail cu un link de anulare. După o perioadă de grație de 30 de zile, contul tău și datele legate de el (profilul, precum și evenimentele, listele, rețetele și pozele pe care le-ai creat) sunt șterse definitiv de pe serverele noastre. Dacă te răzgândești în aceste 30 de zile, linkul din e-mail readuce totul. Fișierele din seiful offline stau doar pe telefonul tău și sunt eliminate de pe acel dispozitiv când contul este șters. Dacă ai Daili Plus, anulează-l mai întâi din App Store sau Google Play — ștergerea contului nu anulează abonamentul."
   },
 
   "notfound": {

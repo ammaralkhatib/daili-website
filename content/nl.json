@@ -149,7 +149,7 @@
         { "cap": "Onze kleine jungle", "t": "Planten water geven", "s": "Elke dag · met papa" }
       ],
       "tiles": [
-        { "big": "€ 0", "t": "Geen reclame, geen proefperiode, geen addertje." },
+        { "big": "€ 0", "t": "Gratis te gebruiken. Geen reclame, geen addertje." },
         { "t": "Minzi, de gezinskat, moedigt jullie aan" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Koppel je agenda's",
-      "p": "Haal Google, Outlook en de agenda van je telefoon erbij. Voeg de feestdagen van je land toe. En zie alles naast de gezinsplanning.",
-      "t": "Google Calendar",
-      "s": "Gekoppeld · 24 afspraken gesynct",
+      "h3": "Je agenda's, bij elkaar",
+      "p": "Zie de agenda's die al op je telefoon staan — Google, Outlook, iCloud — naast de gezinsplanning. Voeg de feestdagen van je land toe.",
+      "t": "Agenda's op deze telefoon",
+      "s": "Te zien naast de gezinsplanning",
       "apple": {
         "t": "Apple Agenda",
         "s": "Verbonden via je iPhone"
@@ -208,7 +208,7 @@
         "s": "Tik om op donderdag te zetten",
         "add": "Op het menu zetten"
       },
-      "fine": "Functies van Daili Plus gebruiken Google Gemini, en alleen als jij ze gebruikt."
+      "fine": "Functies van Daili Plus gebruiken Google Gemini, en alleen als jij ze gebruikt. Elk gezin krijgt 3 AI-acties per maand gratis; Daili Plus geeft er 30, plus 5 GB Daili-cloud, voor €9.99 per jaar."
     },
     "flow": {
       "h2": "Zo werkt het",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privé van opzet",
       "sub": "De plannen van je gezin zijn van je gezin. Dat is geen instelling, zo is Daili gebouwd.",
-      "chips": ["Geen reclame", "Geen tracking", "We verkopen nooit je gegevens", "Servers in de EU", "Documenten & foto's blijven op je telefoon", "AI alleen als jij het gebruikt"]
+      "chips": ["Geen reclame", "Geen tracking", "We verkopen nooit je gegevens", "Servers in de EU", "Je kluis blijft op je telefoon", "AI alleen als jij het gebruikt"]
     },
     "care": {
       "h2a": "Met zorg gemaakt,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Wat kost Daili?",
-        "a": "Niets. Daili is gratis — zonder reclame en zonder verkoop van gegevens. Komen er ooit betaalde extra's, dan blijft alles wat vandaag gratis is gratis."
+        "a": "Daili is gratis te gebruiken — agenda, lijsten, taken, gewoontes, notities, recepten en meer, zonder reclame en zonder verkoop van gegevens. Daili Plus is optioneel: één jaarprijs voor het hele gezin (€9.99 in de eurozone; de app toont de prijs in jouw valuta) geeft je 30 AI-acties per maand en 5 GB Daili-cloud voor afbeeldingen en opnames bij notities. Elk gezin krijgt 3 AI-acties per maand gratis."
       },
       {
         "q": "Is er een webversie?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Welke talen spreekt de app?",
-        "a": "De app spreekt 19 talen, volledig — ook de herinneringen die hij stuurt: Nederlands, Engels, Duits, Frans, Spaans, Italiaans, Portugees, Pools, Tsjechisch, Slowaaks, Zweeds, Deens, Noors, Fins, Turks, Roemeens, Bulgaars, Grieks en Oekraïens."
+        "a": "De app spreekt 25 talen, volledig — ook de herinneringen die hij stuurt: Nederlands, Engels, Duits, Frans, Spaans, Italiaans, Portugees, Pools, Tsjechisch, Slowaaks, Zweeds, Deens, Noors, Fins, Turks, Roemeens, Bulgaars, Grieks, Oekraïens, Indonesisch, Thai, Japans, Koreaans en Chinees (vereenvoudigd en traditioneel)."
       },
       {
         "q": "Op welke telefoons werkt hij?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Kan ik mijn huidige agenda meenemen?",
-        "a": "Daili kan de agenda van je eigen telefoon naast de gezinsagenda tonen, op het apparaat. Een Google- of Outlook-agenda koppelen komt binnenkort."
+        "a": "Ja. Daili toont de agenda's die al op je telefoon staan — Google, Outlook, iCloud en andere — naast de gezinsagenda, alleen op jouw apparaat. Je kunt ook de feestdagen van je land toevoegen."
       },
       {
         "q": "Waar staan mijn gegevens?",
-        "a": "Je agenda, lijsten en gezinsgegevens staan op onze server in de EU. Foto's en documenten in de kluis verlaten je telefoon nooit. Details in de <a href=\"/privacy.html\">privacyverklaring</a>."
+        "a": "Je agenda, lijsten en gezinsgegevens staan op onze servers in Duitsland (EU). Foto's en documenten in de kluis verlaten je telefoon nooit. Afbeeldingen en opnames bij notities blijven ook op je telefoon, tenzij je voor de Daili-cloud kiest (onderdeel van Daili Plus); die bewaart ze eveneens in Duitsland. Details in de <a href=\"/privacy.html\">privacyverklaring</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>In de app:</strong> Instellingen &rarr; Profiel &rarr; Account verwijderen.",
       "<strong>Per e-mail:</strong> schrijf naar <a href=\"mailto:support@daili.app?subject=Mijn%20account%20verwijderen\"><strong>support@daili.app</strong></a> vanaf het e-mailadres van je account, met als onderwerp &bdquo;Mijn account verwijderen&rdquo;."
     ],
-    "deleteWhat": "Wat er daarna gebeurt: je account wordt meteen uitgeschakeld en je krijgt een e-mail met een annuleerlink. Na een periode van 30 dagen worden je account en de gegevens die eraan hangen (je profiel en de afspraken, lijsten, recepten en foto's die je hebt gemaakt) definitief van onze servers verwijderd. Bedenk je je binnen die 30 dagen, dan zet de link in de e-mail alles terug. Bestanden in de offline kluis staan alleen op je telefoon en worden verwijderd zodra het account op dat apparaat wordt verwijderd."
+    "deleteWhat": "Wat er daarna gebeurt: je account wordt meteen uitgeschakeld en je krijgt een e-mail met een annuleerlink. Na een periode van 30 dagen worden je account en de gegevens die eraan hangen (je profiel en de afspraken, lijsten, recepten en foto's die je hebt gemaakt) definitief van onze servers verwijderd. Bedenk je je binnen die 30 dagen, dan zet de link in de e-mail alles terug. Bestanden in de offline kluis staan alleen op je telefoon en worden verwijderd zodra het account op dat apparaat wordt verwijderd. Heb je Daili Plus? Zeg het dan eerst op in de App Store of Google Play — met het verwijderen van je account stopt het abonnement niet."
   },
 
   "notfound": {

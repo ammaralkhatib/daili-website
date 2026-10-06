@@ -149,7 +149,7 @@
         { "cap": "Nuestra pequeña selva", "t": "Regar las plantas", "s": "Cada día · con papá" }
       ],
       "tiles": [
-        { "big": "0 €", "t": "Sin anuncios, sin prueba, sin trampa." },
+        { "big": "0 €", "t": "Gratis. Sin anuncios, sin trampa." },
         { "t": "Minzi, la gata de la familia, te anima" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Conecta tus calendarios",
-      "p": "Trae Google, Outlook y el calendario del móvil. Añade los festivos de tu país. Y míralo todo junto al plan familiar.",
-      "t": "Google Calendar",
-      "s": "Conectado · 24 eventos",
+      "h3": "Tus calendarios, juntos",
+      "p": "Mira los calendarios que ya tienes en el móvil (Google, Outlook, iCloud) junto al plan familiar. Añade los festivos de tu país.",
+      "t": "Calendarios de este móvil",
+      "s": "Se ven junto al plan familiar",
       "apple": {
         "t": "Calendario de Apple",
         "s": "Conectado con tu iPhone"
@@ -208,7 +208,7 @@
         "s": "Toca para añadirla al jueves",
         "add": "Añadir al menú"
       },
-      "fine": "Las funciones de Daili Plus usan Google Gemini, y solo cuando las utilizas."
+      "fine": "Las funciones de Daili Plus usan Google Gemini, y solo cuando las utilizas. Cada familia tiene 3 acciones de IA al mes gratis; Daili Plus da 30, más 5 GB de la nube de Daili, por €9.99 al año."
     },
     "flow": {
       "h2": "Míralo en acción",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privado desde el diseño",
       "sub": "Los planes de tu familia son de tu familia. No es un ajuste: es cómo está hecho Daili.",
-      "chips": ["Sin anuncios", "Sin rastreo", "Nunca vendemos tus datos", "Servidores en la UE", "Documentos y fotos se quedan en tu móvil", "IA solo cuando la usas"]
+      "chips": ["Sin anuncios", "Sin rastreo", "Nunca vendemos tus datos", "Servidores en la UE", "Tu caja fuerte se queda en tu móvil", "IA solo cuando la usas"]
     },
     "care": {
       "h2a": "Hecho con cariño,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta Daili?",
-        "a": "Nada. Daili es gratis, sin anuncios y sin vender datos. Si algún día añadimos extras de pago, todo lo que hoy es gratis lo seguirá siendo."
+        "a": "Daili se puede usar gratis: calendario, listas, tareas, hábitos, notas, recetas y más, sin anuncios y sin vender datos. Daili Plus es opcional: un único precio anual para toda la familia (€9.99 en la zona euro; la app muestra el precio en tu moneda) te da 30 acciones de IA al mes y 5 GB de la nube de Daili para las imágenes y grabaciones de las notas. Cada familia tiene 3 acciones de IA al mes gratis."
       },
       {
         "q": "¿Hay una versión web?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "¿Qué idiomas habla la aplicación?",
-        "a": "La aplicación habla 19 idiomas, por completo, incluidos los recordatorios que envía: español, inglés, alemán, francés, italiano, neerlandés, portugués, polaco, checo, eslovaco, sueco, danés, noruego, finés, turco, rumano, búlgaro, griego y ucraniano."
+        "a": "La aplicación habla 25 idiomas, por completo, incluidos los recordatorios que envía: español, inglés, alemán, francés, italiano, neerlandés, portugués, polaco, checo, eslovaco, sueco, danés, noruego, finés, turco, rumano, búlgaro, griego, ucraniano, indonesio, tailandés, japonés, coreano y chino (simplificado y tradicional)."
       },
       {
         "q": "¿En qué móviles funciona?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "¿Puedo traer mi calendario actual?",
-        "a": "Daili puede mostrar el calendario de tu propio móvil junto al calendario familiar, en el dispositivo. Conectar un calendario de Google o de Outlook llegará pronto."
+        "a": "Sí. Daili muestra los calendarios que ya tienes en el móvil (Google, Outlook, iCloud y otros) junto al calendario familiar, solo en tu dispositivo. También puedes añadir los festivos de tu país."
       },
       {
         "q": "¿Dónde se guardan mis datos?",
-        "a": "Tu calendario, tus listas y los datos de tu familia están en nuestro servidor en la UE. Las fotos y los documentos de la caja fuerte nunca salen de tu móvil. Los detalles, en la <a href=\"/privacy.html\">política de privacidad</a>."
+        "a": "Tu calendario, tus listas y los datos de tu familia están en nuestros servidores en Alemania (UE). Las fotos y los documentos de la caja fuerte nunca salen de tu móvil. Las imágenes y grabaciones de las notas también se quedan en tu móvil, salvo que elijas la nube de Daili (parte de Daili Plus), que las guarda igualmente en Alemania. Los detalles, en la <a href=\"/privacy.html\">política de privacidad</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>En la aplicación:</strong> Ajustes &rarr; Perfil &rarr; Eliminar cuenta.",
       "<strong>Por correo electrónico:</strong> escribe a <a href=\"mailto:support@daili.app?subject=Eliminar%20mi%20cuenta\"><strong>support@daili.app</strong></a> desde la dirección de tu cuenta, con el asunto &laquo;Eliminar mi cuenta&raquo;."
     ],
-    "deleteWhat": "Qué ocurre después: tu cuenta se desactiva de inmediato y recibes un correo con un enlace de cancelación. Pasado un plazo de 30 días, tu cuenta y los datos vinculados a ella (el perfil y los eventos, listas, recetas y fotos que hayas creado) se eliminan definitivamente de nuestros servidores. Si cambias de idea dentro de esos 30 días, el enlace del correo lo restaura todo. Los archivos de la caja fuerte sin conexión solo están en tu móvil y se borran al eliminar la cuenta en ese dispositivo."
+    "deleteWhat": "Qué ocurre después: tu cuenta se desactiva de inmediato y recibes un correo con un enlace de cancelación. Pasado un plazo de 30 días, tu cuenta y los datos vinculados a ella (el perfil y los eventos, listas, recetas y fotos que hayas creado) se eliminan definitivamente de nuestros servidores. Si cambias de idea dentro de esos 30 días, el enlace del correo lo restaura todo. Los archivos de la caja fuerte sin conexión solo están en tu móvil y se borran al eliminar la cuenta en ese dispositivo. Si tienes Daili Plus, cancélalo antes en el App Store o en Google Play: eliminar la cuenta no cancela la suscripción."
   },
 
   "notfound": {

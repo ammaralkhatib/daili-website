@@ -149,7 +149,7 @@
         { "cap": "Vår lille jungel", "t": "Vanne plantene", "s": "Hver dag · med pappa" }
       ],
       "tiles": [
-        { "big": "€0", "t": "Ingen reklame, ingen prøveperiode, ingen hake." },
+        { "big": "€0", "t": "Gratis å bruke. Ingen reklame, ingen hake." },
         { "t": "Minzi, familiekatten, heier på dere" }
       ]
     },
@@ -166,10 +166,10 @@
       ]
     },
     "calendars": {
-      "h3": "Koble til kalenderne deres",
-      "p": "Hent inn Google, Outlook og kalenderen på mobilen. Legg til helligdagene i landet ditt. Se alt ved siden av familieplanen.",
-      "t": "Google Calendar",
-      "s": "Tilkoblet · 24 avtaler synket",
+      "h3": "Kalenderne deres, samlet",
+      "p": "Se kalenderne som allerede er på mobilen — Google, Outlook, iCloud — ved siden av familieplanen. Legg til helligdagene i landet ditt.",
+      "t": "Kalendere på denne mobilen",
+      "s": "Vises ved siden av familieplanen",
       "apple": {
         "t": "Apple Kalender",
         "s": "Koblet til via iPhonen din"
@@ -208,7 +208,7 @@
         "s": "Trykk for å legge til torsdag",
         "add": "Legg i matplanen"
       },
-      "fine": "Daili Plus-funksjonene bruker Google Gemini, og bare når du bruker dem."
+      "fine": "Daili Plus-funksjonene bruker Google Gemini, og bare når du bruker dem. Alle familier får 3 KI-handlinger i måneden gratis; Daili Plus gir 30, pluss 5 GB i Daili-skyen, for €9.99 i året."
     },
     "flow": {
       "h2": "Se hvordan det virker",
@@ -261,7 +261,7 @@
     "privacy": {
       "h2": "Privat fra starten",
       "sub": "Familiens planer tilhører familien. Det er ikke en innstilling, det er slik Daili er bygget.",
-      "chips": ["Ingen reklame", "Ingen sporing", "Vi selger aldri dataene dine", "Servere i EU", "Dokumenter og bilder blir på mobilen", "KI bare når du bruker det"]
+      "chips": ["Ingen reklame", "Ingen sporing", "Vi selger aldri dataene dine", "Servere i EU", "Hvelvet ditt blir på mobilen", "KI bare når du bruker det"]
     },
     "care": {
       "h2a": "Laget med omtanke,",
@@ -281,7 +281,7 @@
     "items": [
       {
         "q": "Hva koster Daili?",
-        "a": "Ingenting. Daili er gratis — uten reklame og uten salg av data. Hvis vi en dag legger til betalte tillegg, forblir alt som er gratis i dag gratis."
+        "a": "Daili er gratis å bruke — kalender, lister, oppgaver, vaner, notater, oppskrifter og mer, uten reklame og uten salg av data. Daili Plus er valgfritt: én årspris for hele familien (€9.99 i euroområdet; appen viser prisen i din valuta) gir dere 30 KI-handlinger i måneden og 5 GB i Daili-skyen til bilder og opptak i notater. Alle familier får 3 KI-handlinger i måneden gratis."
       },
       {
         "q": "Finnes det en nettversjon?",
@@ -289,7 +289,7 @@
       },
       {
         "q": "Hvilke språk snakker appen?",
-        "a": "Appen snakker 19 språk, fullt ut — også påminnelsene den sender: norsk, engelsk, tysk, fransk, spansk, italiensk, nederlandsk, portugisisk, polsk, tsjekkisk, slovakisk, svensk, dansk, finsk, tyrkisk, rumensk, bulgarsk, gresk og ukrainsk."
+        "a": "Appen snakker 25 språk, fullt ut — også påminnelsene den sender: norsk, engelsk, tysk, fransk, spansk, italiensk, nederlandsk, portugisisk, polsk, tsjekkisk, slovakisk, svensk, dansk, finsk, tyrkisk, rumensk, bulgarsk, gresk, ukrainsk, indonesisk, thai, japansk, koreansk og kinesisk (forenklet og tradisjonell)."
       },
       {
         "q": "Hvilke telefoner virker den på?",
@@ -305,11 +305,11 @@
       },
       {
         "q": "Kan jeg ta med kalenderen jeg bruker nå?",
-        "a": "Daili kan vise telefonens egen kalender ved siden av familiekalenderen, på enheten. Å koble til en Google- eller Outlook-kalender kommer snart."
+        "a": "Ja. Daili viser kalenderne som allerede er på telefonen din — Google, Outlook, iCloud og andre — ved siden av familiekalenderen, bare på enheten din. Du kan også legge til helligdagene i landet ditt."
       },
       {
         "q": "Hvor ligger dataene mine?",
-        "a": "Kalenderen din, listene dine og familiens data ligger på serveren vår i EU. Bilder og dokumenter i hvelvet forlater aldri telefonen din. Mer i <a href=\"/privacy.html\">personvernerklæringen</a>."
+        "a": "Kalenderen din, listene dine og familiens data ligger på serverne våre i Tyskland (EU). Bilder og dokumenter i hvelvet forlater aldri telefonen din. Bilder og opptak i notater blir også på telefonen, med mindre du velger Daili-skyen (en del av Daili Plus), som også lagrer dem i Tyskland. Mer i <a href=\"/privacy.html\">personvernerklæringen</a>."
       }
     ]
   },
@@ -330,7 +330,7 @@
       "<strong>I appen:</strong> Innstillinger &rarr; Profil &rarr; Slett konto.",
       "<strong>Via e-post:</strong> skriv til <a href=\"mailto:support@daili.app?subject=Slett%20kontoen%20min\"><strong>support@daili.app</strong></a> fra e-postadressen til kontoen, med emnet «Slett kontoen min»."
     ],
-    "deleteWhat": "Hva som skjer etterpå: kontoen din blir stengt med én gang, og du får en e-post med en lenke du kan angre med. Etter en frist på 30 dager blir kontoen din og dataene som hører til (profilen samt avtalene, listene, oppskriftene og bildene du har laget) slettet for godt fra serverne våre. Ombestemmer du deg innen de 30 dagene, setter lenken i e-posten alt tilbake. Filer i hvelvet uten nett ligger bare på telefonen din og fjernes når kontoen slettes på den enheten."
+    "deleteWhat": "Hva som skjer etterpå: kontoen din blir stengt med én gang, og du får en e-post med en lenke du kan angre med. Etter en frist på 30 dager blir kontoen din og dataene som hører til (profilen samt avtalene, listene, oppskriftene og bildene du har laget) slettet for godt fra serverne våre. Ombestemmer du deg innen de 30 dagene, setter lenken i e-posten alt tilbake. Filer i hvelvet uten nett ligger bare på telefonen din og fjernes når kontoen slettes på den enheten. Har du Daili Plus, må du si det opp i App Store eller Google Play først — abonnementet blir ikke sagt opp av at du sletter kontoen."
   },
 
   "notfound": {
