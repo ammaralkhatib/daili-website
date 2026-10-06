@@ -19,6 +19,6 @@ Catatan bisa berisi gambar atau rekaman saja, sesuai urutan Anda menambahkannya.
 
 ![Papan gambar dengan rumah dan hati: enam warna, tiga ketebalan garis, penghapus, urungkan, dan ulangi.](notes-draw)
 
-**Pengaturan** → **Catatan** → **Gambar dan rekaman**: **Di ponsel ini** (gratis; perangkat lain menampilkan chip) atau **Cloud Daili** (Daili Plus, 5 GB per keluarga, semua perangkat). Saat membagikan catatan dengan file di ponsel ini, Anda ditanya: **Bagikan teks saja** atau **Pindahkan foto ke cloud**.
+File tetap **Di ponsel ini** secara gratis, atau pindah ke **Cloud Daili** dengan Daili Plus.
 
-> Note: Android: daili hanya membaca aksara Latin, dan cadangan ponsel hanya memuat 25 MB data aplikasi, jadi gambar mungkin tidak ikut tercadangkan.
+> Note: Android: daili hanya membaca teks dalam gambar beraksara Latin.

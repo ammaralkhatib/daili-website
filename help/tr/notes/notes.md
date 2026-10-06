@@ -14,19 +14,15 @@ Bir notta **Başlık**, metin ya da ikisi birden olur. Madde işaretli listeler 
 1. Ana ekranda **Notlar** kutucuğuna, sonra **+** simgesine ya da alt çubuktaki bir düğmeye dokun: resim, ses (hemen kaydeder), video, bağlantı.
 2. Yaz ve **Kaydet** düğmesine dokun. Kaydedilmemiş bir notu kapatırken daili önce sorar.
 
-Başka bir uygulamadan: Paylaş → **daili** → **Kaydet**.
+Daha hızlı: **Hızlı not** widget'ı, iPhone'daki Eylem düğmesi ya da herhangi bir uygulamadan Paylaş → **daili** → **Kaydet**.
 
 ![Fotoğraf, Ses, Video ve Bağlantı düğmeleriyle yeni bir not. Notu kimin görebileceğini gösteren satır daire içine alınmış.](notes-new)
 
 Klavyenin üstünde: etiketler, hatırlatma (yalnızca sen alırsın) ve notu kimin gördüğü: **Yalnızca ben** (varsayılan), **Tüm aile** ya da **Üye seç**. **Bağlantı tara** düğmesi bir fotoğraftaki web adresini okur.
 
-![Filtre paneli: Tür, Yeni etiket seçeneğiyle Etiketler ve Yalnızca sabitlenenler.](notes-filter)
-
-Ara ya da filtre düğmesine dokun: **Tür**, **Etiketler**, **Yalnızca sabitlenenler**. Bir filtreyi kendi çipinden kaldırırsın.
-
 ![Son silinenler. 27 gün sonra silinecek bir not, Kalıcı olarak sil ve Geri yükle düğmeleriyle.](notes-trash)
 
-Silinen notlar **⋯** → **Son silinenler** altında 30 gün bekler.
+Listede ara ya da listeyi filtrele. Silinen notlar **⋯** → **Son silinenler** altında 30 gün bekler.
 
 ![Bir not. Daili Plus grubu, “Bundan etkinlik, görev veya alışveriş listesi oluştur” ve “Özetle” satırlarıyla daire içine alınmış.](notes-ai)
 

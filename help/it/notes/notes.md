@@ -14,19 +14,15 @@ Una nota è un **Titolo**, del testo o entrambi. Elenchi puntati e liste di cont
 1. Nella schermata iniziale, tocca **Note**, poi **+** o un pulsante della barra in basso: foto, voce (registra subito), video, link.
 2. Scrivi e tocca **Salva**. Se chiudi una nota non salvata, daili prima te lo chiede.
 
-Da un’altra app: Condividi → **daili** → **Salva**.
+Più veloce: il widget **Nota veloce**, il tasto Azione dell’iPhone, o Condividi → **daili** → **Salva** da qualsiasi app.
 
 ![Una nuova nota con i pulsanti Foto, Voce, Video e Link. La riga che dice chi può vederla è cerchiata.](notes-new)
 
 Sopra la tastiera: le etichette, un promemoria (lo ricevi solo tu) e chi vede la nota: **Solo io** (di base), **Tutta la famiglia** o **Scegli i membri**. **Scansiona link** legge un indirizzo web da una foto.
 
-![Il pannello Filtri: Tipo, Etichette con Nuovo tag, e Solo fissate.](notes-filter)
-
-Cerca, oppure tocca il pulsante dei filtri: **Tipo**, **Etichette**, **Solo fissate**. Togli un filtro dalla sua targhetta.
-
 ![Eliminate di recente. Una nota, che sparisce tra 27 giorni, con Elimina per sempre e Ripristina.](notes-trash)
 
-Le note eliminate aspettano 30 giorni sotto **⋯** → **Eliminate di recente**.
+Cerca o filtra l’elenco. Le note eliminate aspettano 30 giorni sotto **⋯** → **Eliminate di recente**.
 
 ![Una nota. Il gruppo Daili Plus con le due righe «Creane un evento, un'attività o una lista della spesa» e «Riassumi» è cerchiato.](notes-ai)
 

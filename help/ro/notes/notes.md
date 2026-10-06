@@ -14,19 +14,15 @@ O notiță are un **Titlu**, text sau amândouă. Merg listele cu puncte și lis
 1. Pe ecranul principal, apasă pe **Notițe**, apoi pe **+** sau pe un buton din bara de jos: imagine, voce (înregistrează imediat), video, link.
 2. Scrie și apasă pe **Salvează**. Dacă închizi o notiță nesalvată, daili te întreabă mai întâi.
 
-Din altă aplicație: Distribuie → **daili** → **Salvează**.
+Mai rapid: widgetul **Notiță rapidă**, butonul Acțiune de pe iPhone sau Distribuie → **daili** → **Salvează** din orice aplicație.
 
 ![O notiță nouă cu butoanele Foto, Voce, Video și Link. Rândul care spune cine o poate vedea este încercuit.](notes-new)
 
 Deasupra tastaturii: etichete, un memento (îl primești doar tu) și cine o vede: **Doar eu** (implicit), **Toată familia** sau **Alege membri**. **Scanează linkul** citește o adresă web dintr-o poză.
 
-![Panoul Filtrează: Tip, Etichete cu Etichetă nouă și Doar fixate.](notes-filter)
-
-Caută sau apasă pe butonul de filtrare: **Tip**, **Etichete**, **Doar fixate**. Elimini un filtru de pe marcajul lui.
-
 ![Șterse recent. O notiță, dispare în 27 de zile, cu Șterge definitiv și Restaurează.](notes-trash)
 
-Notițele șterse așteaptă 30 de zile la **⋯** → **Șterse recent**.
+Caută sau filtrează lista. Notițele șterse așteaptă 30 de zile la **⋯** → **Șterse recent**.
 
 ![O notiță. Grupul Daili Plus cu cele două rânduri „Creează din asta un eveniment, o sarcină sau o listă de cumpărături” și „Rezumă” este încercuit.](notes-ai)
 

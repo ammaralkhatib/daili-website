@@ -14,19 +14,15 @@ Een notitie is een **Titel**, tekst of allebei. Opsommingen en checklists werken
 1. Tik op het startscherm op **Notities**, dan op **+** of een knop onderaan: afbeelding, spraak (neemt meteen op), video, link.
 2. Schrijf en tik op **Opslaan**. Sluit je een niet-opgeslagen notitie, dan vraagt daili het eerst.
 
-Vanuit een andere app: Delen → **daili** → **Opslaan**.
+Sneller: de widget **Snelle notitie**, de Actieknop op de iPhone, of Delen → **daili** → **Opslaan** vanuit elke app.
 
 ![Een nieuwe notitie met de knoppen Foto, Spraak, Video en Link. De regel met wie hem kan zien is omcirkeld.](notes-new)
 
 Boven het toetsenbord: tags, een herinnering (alleen jij krijgt die) en wie hem ziet: **Alleen ik** (standaard), **Hele gezin** of **Leden kiezen**. **Link scannen** leest een webadres uit een foto.
 
-![Het venster Filter: Soort, Tags met Nieuwe tag, en Alleen vastgezet.](notes-filter)
-
-Zoek, of tik op de filterknop: **Soort**, **Tags**, **Alleen vastgezet**. Filters wis je op hun label.
-
 ![Recent verwijderd. Eén notitie, over 27 dagen weg, met Voorgoed verwijderen en Terugzetten.](notes-trash)
 
-Verwijderde notities wachten 30 dagen onder **⋯** → **Recent verwijderd**.
+Doorzoek of filter de lijst. Verwijderde notities wachten 30 dagen onder **⋯** → **Recent verwijderd**.
 
 ![Een notitie. De groep Daili Plus met de twee regels "Maak er een afspraak, taak of boodschappenlijst van" en "Samenvatten" is omcirkeld.](notes-ai)
 

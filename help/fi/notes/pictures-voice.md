@@ -19,6 +19,6 @@ Muistiinpanossa voi olla pelkkiä kuvia tai äänite, siinä järjestyksessä ku
 
 ![Piirtoalusta, jossa on talo ja sydän: kuusi väriä, kolme viivanpaksuutta, pyyhekumi, kumoa ja tee uudelleen.](notes-draw)
 
-**Asetukset** → **Muistiinpanot** → **Kuvat ja tallenteet**: **Tässä puhelimessa** (ilmainen; muissa laitteissa näkyy merkintä) tai **Daili-pilvi** (Daili Plus, 5 Gt perhettä kohti, kaikki laitteet). Kun jaat muistiinpanon, jonka tiedostot ovat tässä puhelimessa, daili kysyy: **Jaa vain teksti** vai **Siirrä kuvat pilveen**.
+Tiedostot pysyvät ilmaiseksi valinnalla **Tässä puhelimessa**, tai Daili Plusilla ne menevät valintaan **Daili-pilvi**.
 
-> Note: Android: daili lukee vain latinalaista kirjoitusta, ja puhelimen varmuuskopioon mahtuu 25 Mt sovellusdataa, joten kuvia voi puuttua siitä.
+> Note: Android: daili lukee kuvien tekstiä vain latinalaisella kirjoituksella.

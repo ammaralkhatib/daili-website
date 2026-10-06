@@ -19,6 +19,6 @@ Uma nota pode ter só imagens ou uma gravação, na ordem em que você adicionou
 
 ![A área de desenho com uma casa e um coração: seis cores, três espessuras de traço, borracha, desfazer e refazer.](notes-draw)
 
-**Configurações** → **Notas** → **Imagens e gravações**: **Neste celular** (grátis; os outros aparelhos mostram um aviso) ou **Nuvem Daili** (Daili Plus, 5 GB por família, em todos os aparelhos). Ao compartilhar uma nota com arquivos neste celular, o daili pergunta: **Partilhar só o texto** ou **Mover as fotos para a nuvem**.
+Os arquivos ficam **Neste celular** de graça, ou vão para a **Nuvem Daili** com o Daili Plus.
 
-> Note: Android: o daili só lê escrita latina, e o backup do celular guarda 25 MB de dados do app, então podem faltar imagens nele.
+> Note: Android: o daili só lê texto em imagens com escrita latina.

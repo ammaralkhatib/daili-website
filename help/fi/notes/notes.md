@@ -14,19 +14,15 @@ Muistiinpanossa on **Otsikko**, tekstiä tai molemmat. Luettelot ja tarkistuslis
 1. Napauta aloitusnäytöllä **Muistiinpanot** ja sitten **+** tai alapalkin painiketta: kuva, ääni (äänitys alkaa heti), video, linkki.
 2. Kirjoita ja napauta **Tallenna**. Jos suljet tallentamattoman muistiinpanon, daili kysyy ensin.
 
-Toisesta sovelluksesta: Jaa → **daili** → **Tallenna**.
+Nopeammin: **Pikamuistiinpano**-widget, iPhonen Toimintopainike tai Jaa → **daili** → **Tallenna** mistä tahansa sovelluksesta.
 
 ![Uusi muistiinpano ja painikkeet Kuva, Ääni, Video ja Linkki. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
 
 Näppäimistön yläpuolella: tunnisteet, muistutus (vain sinä saat sen) ja kuka muistiinpanon näkee: **Vain minä** (oletus), **Koko perhe** tai **Valitse jäsenet**. **Skannaa linkki** lukee verkko-osoitteen kuvasta.
 
-![Paneeli Suodata: Tyyppi, Tunnisteet ja Uusi tunniste sekä Vain kiinnitetyt.](notes-filter)
-
-Hae tai napauta suodatinpainiketta: **Tyyppi**, **Tunnisteet**, **Vain kiinnitetyt**. Suodattimen saat pois sen omasta merkinnästä.
-
 ![Äskettäin poistetut. Yksi muistiinpano, joka poistuu 27 päivän päästä, sekä Poista lopullisesti ja Palauta.](notes-trash)
 
-Poistetut muistiinpanot odottavat 30 päivää kohdassa **⋯** → **Äskettäin poistetut**.
+Hae tai suodata luetteloa. Poistetut muistiinpanot odottavat 30 päivää kohdassa **⋯** → **Äskettäin poistetut**.
 
 ![Muistiinpano. Daili Plus -ryhmä ja sen kaksi riviä ”Tee tästä tapahtuma, tehtävä tai ostoslista” ja ”Tiivistä” on ympyröity.](notes-ai)
 

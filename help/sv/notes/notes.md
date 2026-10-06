@@ -14,19 +14,15 @@ En anteckning är en **Titel**, text eller båda. Punktlistor och checklistor fu
 1. Tryck på **Anteckningar** på startskärmen, sedan på **+** eller en knapp längst ner: bild, röst (spelar in direkt), video, länk.
 2. Skriv och tryck på **Spara**. Stänger du en osparad anteckning frågar daili först.
 
-Från en annan app: Dela → **daili** → **Spara**.
+Snabbare: widgeten **Snabbanteckning**, iPhones Åtgärdsknapp eller Dela → **daili** → **Spara** från vilken app som helst.
 
 ![En ny anteckning med knapparna Foto, Röst, Video och Länk. Raden som visar vem som kan se den är inringad.](notes-new)
 
 Ovanför tangentbordet: taggar, en påminnelse (bara du får den) och vem som ser anteckningen: **Bara jag** (standard), **Hela familjen** eller **Välj medlemmar**. **Skanna länk** läser en webbadress från ett foto.
 
-![Rutan Filter: Typ, Taggar med Ny tagg, och Bara fästa.](notes-filter)
-
-Sök, eller tryck på filterknappen: **Typ**, **Taggar**, **Bara fästa**. Filter tar du bort på etiketten.
-
 ![Nyligen raderade. En anteckning, borta om 27 dagar, med Radera för gott och Återställ.](notes-trash)
 
-Raderade anteckningar ligger kvar i 30 dagar under **⋯** → **Nyligen raderade**.
+Sök i eller filtrera listan. Raderade anteckningar ligger kvar i 30 dagar under **⋯** → **Nyligen raderade**.
 
 ![En anteckning. Gruppen Daili Plus med de två raderna "Gör en händelse, uppgift eller inköpslista av det här" och "Sammanfatta" är inringad.](notes-ai)
 

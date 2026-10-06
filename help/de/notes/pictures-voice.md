@@ -19,6 +19,6 @@ Eine Notiz kann nur aus Bildern oder einer Aufnahme bestehen, in der Reihenfolge
 
 ![Das Zeichenfeld mit einem Haus und einem Herz: sechs Farben, drei Strichstärken, Radierer, Rückgängig und Wiederholen.](notes-draw)
 
-**Einstellungen** → **Notizen** → **Bilder und Aufnahmen**: **Auf diesem Handy** (kostenlos; andere Geräte zeigen einen Chip) oder **Daili Cloud** (Daili Plus, 5 GB pro Familie, jedes Gerät). Beim Teilen einer Notiz mit Dateien auf diesem Handy fragt daili: **Nur Text teilen** oder **Bilder in die Cloud verschieben**.
+Dateien bleiben kostenlos **Auf diesem Handy** oder kommen mit Daili Plus in die **Daili Cloud**.
 
-> Note: Android: daili liest nur lateinische Schrift, und das Handy-Backup fasst 25 MB App-Daten, daher können Bilder darin fehlen.
+> Note: Android: daili liest Text in Bildern nur in lateinischer Schrift.

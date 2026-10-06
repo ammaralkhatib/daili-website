@@ -14,19 +14,15 @@ Poznámka je **Název**, text nebo obojí. Odrážky a kontrolní seznamy funguj
 1. Na domovské obrazovce klepni na **Poznámky**, pak na **+** nebo na tlačítko ve spodní liště: obrázek, hlas (nahrává hned), video, odkaz.
 2. Napiš ji a klepni na **Uložit**. Při zavření neuložené poznámky se daili nejdřív zeptá.
 
-Z jiné aplikace: Sdílet → **daili** → **Uložit**.
+Rychleji: widget **Rychlá poznámka**, tlačítko Akce na iPhonu nebo Sdílet → **daili** → **Uložit** z jakékoli aplikace.
 
 ![Nová poznámka s tlačítky Foto, Hlas, Video a Odkaz. Řádek, který říká, kdo ji uvidí, je zakroužkovaný.](notes-new)
 
 Nad klávesnicí: štítky, připomínka (dostaneš ji jen ty) a kdo poznámku vidí: **Jen já** (standardně), **Celá rodina** nebo **Vybrat členy**. Tlačítko **Naskenovat odkaz** přečte webovou adresu z fotky.
 
-![Panel Filtr: Typ, Štítky s volbou Nový štítek a Jen připnuté.](notes-filter)
-
-Hledej, nebo klepni na tlačítko filtru: **Typ**, **Štítky**, **Jen připnuté**. Filtr zrušíš na jeho popisku.
-
 ![Nedávno smazané. Jedna poznámka, zmizí za 27 dní, s tlačítky Smazat navždy a Obnovit.](notes-trash)
 
-Smazané poznámky počkají 30 dní v **⋯** → **Nedávno smazané**.
+Hledej nebo filtruj seznam. Smazané poznámky počkají 30 dní v **⋯** → **Nedávno smazané**.
 
 ![Poznámka. Zakroužkovaná je skupina Daili Plus se dvěma řádky "Vytvořit z toho událost, úkol nebo nákupní seznam" a "Shrnout".](notes-ai)
 

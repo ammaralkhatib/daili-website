@@ -10,7 +10,7 @@ since: 1.9.0
 updated: 2026-10-06
 media: notes-pictures
 order: 2
-related: notes-notes, account-plus, vault-where
+related: notes-notes, notes-files, account-plus, vault-where
 ---
 A note can be just pictures or a recording, in the order you added them. Tap one to open.
 
@@ -26,6 +26,6 @@ A note can be just pictures or a recording, in the order you added them. Tap one
 
 ![The drawing pad with a house and a heart: six colours, three line widths, eraser, undo and redo.](notes-draw)
 
-**Settings** → **Notes** → **Pictures and recordings**: **On this phone** (free; other devices show a chip) or **Daili cloud** (Daili Plus, 5 GB per family, every device). Sharing a note with files on this phone asks: **Share text only** or **Move pictures to the cloud**.
+Files stay **On this phone** for free, or go to **Daili cloud** with Daili Plus.
 
-> Note: Android: daili reads Latin script only, and the phone backup holds 25 MB of app data, so pictures may be missing.
+> Note: Android: daili reads text in pictures in Latin script only.

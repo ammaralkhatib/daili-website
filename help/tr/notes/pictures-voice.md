@@ -19,6 +19,6 @@ Bir not yalnızca resimlerden ya da bir kayıttan oluşabilir; eklediğin sıray
 
 ![Bir ev ve bir kalp çizilmiş çizim alanı: altı renk, üç çizgi kalınlığı, silgi, geri al ve yinele.](notes-draw)
 
-**Ayarlar** → **Notlar** → **Resimler ve kayıtlar**: **Bu telefonda** (ücretsiz; diğer cihazlar bir çip gösterir) ya da **Daili bulutu** (Daili Plus, aile başına 5 GB, her cihazda). Dosyaları bu telefonda olan bir notu paylaşırken daili sorar: **Yalnızca metni paylaş** ya da **Resimleri buluta taşı**.
+Dosyalar ücretsiz olarak **Bu telefonda** kalır ya da Daili Plus ile **Daili bulutu** hizmetine gider.
 
-> Note: Android: daili yalnızca Latin alfabesini okur ve telefon yedeği 25 MB uygulama verisi tutar; bu yüzden resimler yedekte eksik olabilir.
+> Note: Android: daili resimlerdeki metni yalnızca Latin alfabesinde okur.

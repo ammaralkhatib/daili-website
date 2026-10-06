@@ -19,6 +19,6 @@ Et notat kan være bare bilder eller et opptak, i den rekkefølgen du la dem til
 
 ![Tegneflaten med et hus og et hjerte: seks farger, tre strektykkelser, viskelær, angre og gjør om.](notes-draw)
 
-**Innstillinger** → **Notater** → **Bilder og opptak**: **På denne telefonen** (gratis; andre enheter viser et merke) eller **Daili-skyen** (Daili Plus, 5 GB per familie, alle enheter). Når du deler et notat med filer på denne telefonen, spør daili: **Del bare tekst** eller **Flytt bildene til skyen**.
+Filene blir **På denne telefonen** gratis, eller går til **Daili-skyen** med Daili Plus.
 
-> Note: Android: daili leser bare latinsk skrift, og telefonens sikkerhetskopi rommer 25 MB appdata, så bilder kan mangle i den.
+> Note: Android: daili leser tekst i bilder bare med latinsk skrift.

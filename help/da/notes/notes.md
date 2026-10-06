@@ -14,19 +14,15 @@ En note er en **Titel**, tekst eller begge dele. Punktlister og tjeklister virke
 1. Tryk på **Noter** på startskærmen, så på **+** eller en knap nederst: billede, stemme (optager med det samme), video, link.
 2. Skriv, og tryk på **Gem**. Lukker du en ugemt note, spørger daili først.
 
-Fra en anden app: Del → **daili** → **Gem**.
+Hurtigere: widgetten **Hurtig note**, iPhones Handlingsknap eller Del → **daili** → **Gem** fra en hvilken som helst app.
 
 ![En ny note med knapperne Foto, Stemme, Video og Link. Linjen, der viser hvem der kan se den, er ringet ind.](notes-new)
 
 Over tastaturet: tags, en påmindelse (kun du får den) og hvem der ser noten: **Kun mig** (standard), **Hele familien** eller **Vælg medlemmer**. **Scan link** læser en webadresse fra et foto.
 
-![Arket Filter: Type, Tags med Nyt tag og Kun fastgjorte.](notes-filter)
-
-Søg, eller tryk på filterknappen: **Type**, **Tags**, **Kun fastgjorte**. Fjern et filter på dets mærkat.
-
 ![Nyligt slettet. Én note, væk om 27 dage, med Slet for altid og Gendan.](notes-trash)
 
-Slettede noter venter 30 dage under **⋯** → **Nyligt slettet**.
+Søg i eller filtrer listen. Slettede noter venter 30 dage under **⋯** → **Nyligt slettet**.
 
 ![En note. Gruppen Daili Plus med de to rækker "Lav en begivenhed, opgave eller indkøbsliste ud fra dette" og "Opsummer" er ringet ind.](notes-ai)
 

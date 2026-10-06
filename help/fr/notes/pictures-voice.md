@@ -19,6 +19,6 @@ Une note peut contenir seulement des images ou un enregistrement, dans l'ordre o
 
 ![La zone de dessin avec une maison et un cœur : six couleurs, trois épaisseurs de trait, gomme, annuler et rétablir.](notes-draw)
 
-**Paramètres** → **Notes** → **Images et enregistrements** : **Sur ce téléphone** (gratuit ; les autres appareils affichent une pastille) ou **Cloud Daili** (Daili Plus, 5 Go par famille, tous les appareils). Quand tu partages une note avec des fichiers sur ce téléphone, daili demande : **Partager le texte seulement** ou **Déplacer les photos dans le cloud**.
+Les fichiers restent **Sur ce téléphone** gratuitement, ou vont dans le **Cloud Daili** avec Daili Plus.
 
-> Note: Android : daili ne lit que l'alphabet latin, et la sauvegarde du téléphone contient 25 Mo de données d'app, donc des images peuvent y manquer.
+> Note: Android : daili ne lit le texte des images qu’en alphabet latin.

@@ -14,19 +14,15 @@ Notatka to **Tytuł**, tekst albo jedno i drugie. Listy punktowane i listy kontr
 1. Na ekranie głównym dotknij **Notatki**, a potem **+** albo przycisku na dolnym pasku: zdjęcie, głos (nagrywa od razu), wideo, link.
 2. Napisz notatkę i dotknij **Zapisz**. Przy zamykaniu niezapisanej notatki daili najpierw zapyta.
 
-Z innej aplikacji: Udostępnij → **daili** → **Zapisz**.
+Szybciej: widżet **Szybka notatka**, przycisk Czynność w iPhonie albo Udostępnij → **daili** → **Zapisz** z dowolnej aplikacji.
 
 ![Nowa notatka z przyciskami Zdjęcie, Głos, Wideo i Link. Wiersz, który mówi, kto ją widzi, jest zakreślony.](notes-new)
 
 Nad klawiaturą: tagi, przypomnienie (dostaniesz je tylko ty) i kto widzi notatkę: **Tylko ja** (domyślnie), **Cała rodzina** albo **Wybierz osoby**. Przycisk **Zeskanuj link** odczytuje adres strony ze zdjęcia.
 
-![Panel Filtry: Rodzaj, Tagi z opcją Nowy tag oraz Tylko przypięte.](notes-filter)
-
-Szukaj albo dotknij przycisku filtra: **Rodzaj**, **Tagi**, **Tylko przypięte**. Filtr usuniesz na jego etykiecie.
-
 ![Ostatnio usunięte. Jedna notatka, zniknie za 27 dni, z przyciskami Usuń na zawsze i Przywróć.](notes-trash)
 
-Usunięte notatki czekają 30 dni w **⋯** → **Ostatnio usunięte**.
+Szukaj albo filtruj listę. Usunięte notatki czekają 30 dni w **⋯** → **Ostatnio usunięte**.
 
 ![Notatka. Zakreślona jest grupa Daili Plus z dwoma wierszami "Utwórz z tego wydarzenie, zadanie lub listę zakupów" i "Podsumuj".](notes-ai)
 

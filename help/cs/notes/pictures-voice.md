@@ -19,6 +19,6 @@ Poznámka může být jen z obrázků nebo nahrávky, v pořadí, v jakém je p�
 
 ![Kreslicí plocha s domečkem a srdcem: šest barev, tři tloušťky čáry, guma, zpět a znovu.](notes-draw)
 
-**Nastavení** → **Poznámky** → **Obrázky a nahrávky**: **V tomto telefonu** (zdarma; ostatní zařízení ukážou popisek) nebo **Cloud Daili** (Daili Plus, 5 GB na rodinu, na každém zařízení). Při sdílení poznámky se soubory v tomto telefonu se daili zeptá: **Sdílet jen text**, nebo **Přesunout obrázky do cloudu**.
+Soubory zůstanou zdarma ve volbě **V tomto telefonu**, nebo s Daili Plus půjdou do volby **Cloud Daili**.
 
-> Note: Android: daili čte jen latinku a záloha telefonu pojme 25 MB dat aplikace, takže v ní obrázky můžou chybět.
+> Note: Android: daili čte text v obrázcích jen v latince.

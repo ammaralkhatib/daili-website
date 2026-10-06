@@ -14,19 +14,15 @@ Catatan berisi **Judul**, teks, atau keduanya. Daftar poin dan daftar centang bi
 1. Di Beranda, ketuk **Catatan**, lalu **+** atau tombol di bilah bawah: gambar, suara (langsung merekam), video, tautan.
 2. Tulis dan ketuk **Simpan**. Sebelum catatan yang belum disimpan ditutup, daili bertanya dulu.
 
-Dari aplikasi lain: Bagikan → **daili** → **Simpan**.
+Lebih cepat: widget **Catatan cepat**, Tombol Tindakan iPhone, atau Bagikan → **daili** → **Simpan** dari aplikasi apa pun.
 
 ![Catatan baru dengan tombol Foto, Suara, Video, dan Tautan. Baris yang menunjukkan siapa yang bisa melihatnya dilingkari.](notes-new)
 
 Di atas keyboard: tag, pengingat (hanya Anda yang menerimanya), dan siapa yang melihat: **Hanya saya** (bawaan), **Seluruh keluarga**, atau **Pilih anggota**. **Pindai tautan** membaca alamat web dari foto.
 
-![Lembar Filter: Jenis, Tag dengan Tag baru, dan Hanya yang disematkan.](notes-filter)
-
-Cari, atau ketuk tombol filter: **Jenis**, **Tag**, **Hanya yang disematkan**. Hapus filter lewat chipnya.
-
 ![Baru dihapus. Satu catatan, hilang dalam 27 hari, dengan Hapus selamanya dan Pulihkan.](notes-trash)
 
-Catatan yang dihapus menunggu 30 hari di **⋯** → **Baru dihapus**.
+Cari atau filter daftar. Catatan yang dihapus menunggu 30 hari di **⋯** → **Baru dihapus**.
 
 ![Sebuah catatan. Grup Daili Plus dengan dua baris "Buat acara, tugas, atau daftar belanja dari ini" dan "Ringkas" dilingkari.](notes-ai)
 

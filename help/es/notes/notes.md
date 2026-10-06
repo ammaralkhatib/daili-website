@@ -14,19 +14,15 @@ Una nota es un **Título**, un texto o las dos cosas. Las listas con viñetas y 
 1. En la pantalla de inicio, toca **Notas** y luego **+** o un botón de la barra inferior: foto, voz (graba al instante), vídeo, enlace.
 2. Escribe y toca **Guardar**. Si cierras una nota sin guardar, daili pregunta antes.
 
-Desde otra app: Compartir → **daili** → **Guardar**.
+Más rápido: el widget **Nota rápida**, el botón Acción del iPhone, o Compartir → **daili** → **Guardar** desde cualquier app.
 
 ![Una nota nueva con los botones Foto, Voz, Vídeo y Enlace. La fila que dice quién puede verla está marcada con un círculo.](notes-new)
 
 Encima del teclado: etiquetas, un recordatorio (solo lo recibes tú) y quién la ve: **Solo yo** (por defecto), **Toda la familia** o **Elegir miembros**. **Escanear enlace** lee una dirección web de una foto.
 
-![La hoja Filtrar: Tipo, Etiquetas con Nueva etiqueta, y Solo fijadas.](notes-filter)
-
-Busca o toca el botón de filtro: **Tipo**, **Etiquetas**, **Solo fijadas**. Quita un filtro en su chip.
-
 ![Eliminadas recientemente. Una nota, que desaparece en 27 días, con Eliminar para siempre y Restaurar.](notes-trash)
 
-Las notas eliminadas esperan 30 días en **⋯** → **Eliminadas recientemente**.
+Busca o filtra la lista. Las notas eliminadas esperan 30 días en **⋯** → **Eliminadas recientemente**.
 
 ![Una nota. El grupo Daili Plus con las dos filas "Crear un evento, una tarea o una lista de compras con esto" y "Resumir" está marcado con un círculo.](notes-ai)
 

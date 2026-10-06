@@ -19,6 +19,6 @@ En note kan bestå af kun billeder eller en optagelse, i den rækkefølge du til
 
 ![Tegnefladen med et hus og et hjerte: seks farver, tre stregtykkelser, viskelæder, fortryd og gentag.](notes-draw)
 
-**Indstillinger** → **Noter** → **Billeder og optagelser**: **På denne telefon** (gratis; andre enheder viser et mærkat) eller **Daili-skyen** (Daili Plus, 5 GB pr. familie, alle enheder). Når du deler en note med filer på denne telefon, spørger daili: **Del kun tekst** eller **Flyt billederne til skyen**.
+Filerne bliver gratis **På denne telefon**, eller flytter til **Daili-skyen** med Daili Plus.
 
-> Note: Android: daili læser kun latinsk skrift, og telefonens sikkerhedskopi rummer 25 MB appdata, så billeder kan mangle i den.
+> Note: Android: daili læser kun tekst i billeder med latinsk skrift.

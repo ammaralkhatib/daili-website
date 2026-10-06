@@ -14,19 +14,15 @@ Une note, c’est un **Titre**, du texte, ou les deux. Les listes à puces et le
 1. Sur l’écran d’accueil, touche **Notes**, puis **+** ou un bouton de la barre du bas : photo, voix (l’enregistrement démarre aussitôt), vidéo, lien.
 2. Écris et touche **Enregistrer**. Si tu fermes une note non enregistrée, daili te demande d’abord confirmation.
 
-Depuis une autre app : Partager → **daili** → **Enregistrer**.
+Plus rapide : le widget **Note rapide**, le bouton Action de l’iPhone, ou Partager → **daili** → **Enregistrer** depuis n’importe quelle app.
 
 ![Une nouvelle note avec les boutons Photo, Voix, Vidéo et Lien. La ligne qui dit qui peut la voir est entourée.](notes-new)
 
 Au-dessus du clavier : des étiquettes, un rappel (pour toi uniquement) et qui voit la note : **Moi uniquement** (par défaut), **Toute la famille** ou **Choisir des membres**. **Scanner un lien** lit une adresse web sur une photo.
 
-![La fiche Filtrer : Type, Étiquettes avec Nouveau tag, et Épinglées seulement.](notes-filter)
-
-Cherche, ou touche le bouton de filtre : **Type**, **Étiquettes**, **Épinglées seulement**. Retire un filtre sur sa pastille.
-
 ![Supprimées récemment. Une note, qui disparaît dans 27 jours, avec Supprimer définitivement et Restaurer.](notes-trash)
 
-Les notes supprimées attendent 30 jours sous **⋯** → **Supprimées récemment**.
+Cherche dans la liste ou filtre-la. Les notes supprimées attendent 30 jours sous **⋯** → **Supprimées récemment**.
 
 ![Une note. Le groupe Daili Plus avec les deux lignes « En faire un événement, une tâche ou une liste de courses » et « Résumer » est entouré.](notes-ai)
 

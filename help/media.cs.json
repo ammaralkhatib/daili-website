@@ -80,5 +80,6 @@
   "notes-trash": { "file": "notes-trash.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-ai": { "file": "notes-ai.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-app-colour": { "file": "account-app-colour.webp", "w": 720, "h": 1564, "kind": "image" },
-  "plus-sheet": { "file": "plus-sheet.webp", "w": 720, "h": 1564, "kind": "image" }
+  "plus-sheet": { "file": "plus-sheet.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-files": { "file": "notes-files.webp", "w": 720, "h": 1564, "kind": "image" }
 }

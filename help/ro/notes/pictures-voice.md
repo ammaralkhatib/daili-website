@@ -19,6 +19,6 @@ O notiță poate avea doar imagini sau o înregistrare, în ordinea în care le-
 
 ![Planșa de desen cu o casă și o inimă: șase culori, trei grosimi de linie, radieră, anulare și refacere.](notes-draw)
 
-**Setări** → **Notițe** → **Imagini și înregistrări**: **Pe acest telefon** (gratuit; celelalte dispozitive arată un marcaj) sau **Cloud Daili** (Daili Plus, 5 GB pe familie, pe toate dispozitivele). Când partajezi o notiță cu fișiere pe acest telefon, daili întreabă: **Partajează doar textul** sau **Mută pozele în cloud**.
+Fișierele rămân gratuit **Pe acest telefon** sau ajung în **Cloud Daili** cu Daili Plus.
 
-> Note: Android: daili citește doar alfabetul latin, iar backupul telefonului ține 25 MB din datele aplicației, așa că imaginile pot lipsi din el.
+> Note: Android: daili citește textul din imagini doar în alfabetul latin.

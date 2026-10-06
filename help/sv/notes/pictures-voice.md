@@ -19,6 +19,6 @@ En anteckning kan bestå av bara bilder eller en inspelning, i den ordning du la
 
 ![Ritytan med ett hus och ett hjärta: sex färger, tre linjebredder, suddgummi, ångra och gör om.](notes-draw)
 
-**Inställningar** → **Anteckningar** → **Bilder och inspelningar**: **På den här telefonen** (gratis; andra enheter visar en etikett) eller **Daili-molnet** (Daili Plus, 5 GB per familj, alla enheter). När du delar en anteckning med filer på den här telefonen frågar daili: **Dela bara text** eller **Flytta bilderna till molnet**.
+Filerna ligger kvar gratis **På den här telefonen**, eller flyttar till **Daili-molnet** med Daili Plus.
 
-> Note: Android: daili läser bara latinsk skrift, och telefonens säkerhetskopia rymmer 25 MB appdata, så bilder kan saknas i den.
+> Note: Android: daili läser bara text i bilder med latinsk skrift.

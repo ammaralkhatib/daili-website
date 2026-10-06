@@ -19,6 +19,6 @@ Notatka może składać się z samych zdjęć albo nagrania, w kolejności, w ja
 
 ![Pole do rysowania z domkiem i sercem: sześć kolorów, trzy grubości linii, gumka, cofnij i ponów.](notes-draw)
 
-**Ustawienia** → **Notatki** → **Zdjęcia i nagrania**: **Na tym telefonie** (za darmo; inne urządzenia pokazują etykietę) albo **Chmura Daili** (Daili Plus, 5 GB na rodzinę, na każdym urządzeniu). Przy udostępnianiu notatki z plikami na tym telefonie daili pyta: **Udostępnij tylko tekst** czy **Przenieś zdjęcia do chmury**.
+Pliki zostają za darmo w opcji **Na tym telefonie** albo trafiają do opcji **Chmura Daili** z Daili Plus.
 
-> Note: Android: daili odczytuje tylko pismo łacińskie, a kopia zapasowa telefonu mieści 25 MB danych aplikacji, więc może w niej brakować zdjęć.
+> Note: Android: daili odczytuje tekst na zdjęciach tylko w piśmie łacińskim.

@@ -19,6 +19,6 @@ Een notitie kan alleen uit afbeeldingen of een opname bestaan, in de volgorde wa
 
 ![Het tekenblok met een huis en een hart: zes kleuren, drie lijndiktes, gum, ongedaan maken en opnieuw.](notes-draw)
 
-**Instellingen** → **Notities** → **Afbeeldingen en opnames**: **Op deze telefoon** (gratis; andere apparaten tonen een label) of **Daili-cloud** (Daili Plus, 5 GB per gezin, elk apparaat). Als je een notitie met bestanden op deze telefoon deelt, vraagt daili: **Alleen tekst delen** of **Foto's naar de cloud verplaatsen**.
+Bestanden blijven gratis **Op deze telefoon**, of gaan met Daili Plus naar de **Daili-cloud**.
 
-> Note: Android: daili leest alleen Latijns schrift, en de telefoonback-up bevat 25 MB aan appgegevens, dus afbeeldingen kunnen erin ontbreken.
+> Note: Android: daili leest tekst in afbeeldingen alleen in Latijns schrift.
