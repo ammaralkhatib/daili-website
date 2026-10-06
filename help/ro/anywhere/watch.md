@@ -9,7 +9,7 @@ Glisează între patru pagini: **Urmează** cu următoarele tale evenimente, cin
 
 ![Urmează pe ceas: o zi de naștere azi, cina de diseară și o zi de naștere peste 4 zile.](watch-up-next)
 
-1. Pe iPhone, deschide aplicația **Watch**, mergi la **Aplicații disponibile** și atinge **Instalați** lângă daili.
+1. Când instalezi daili pe iPhone, aplicația apare de obicei singură pe ceas. Dacă nu, deschide aplicația **Watch** pe iPhone, atinge **Ceasul meu**, derulează până la **Aplicații disponibile** și atinge **Instalați** lângă daili.
 2. Deschide daili o dată pe iPhone, ca ceasul să primească autentificarea ta.
 3. Deschide daili pe ceas.
 
@@ -19,7 +19,7 @@ Atinge un rând ca să-l bifezi. Pe lista de cumpărături și la sarcini, ating
 
 ![Pagina Obiceiuri pe ceas: Minzi, 2 din 5 făcute azi și primele obiceiuri.](watch-habits)
 
-Prin voce: atinge creionul de pe **Urmează** pentru o notiță rapidă sau **Adaugă articol** pe lista de cumpărături. Sau cere-i lui Siri: „Add to my Daili list” sau „New note in Daili”. Siri înțelege aceste fraze în engleză.
+Prin voce: atinge creionul de pe **Urmează** pentru o notiță rapidă sau **Adaugă articol** pe lista de cumpărături.
 
 ![Lista de cumpărături pe ceas, cu Adaugă articol sus.](watch-shopping)
 

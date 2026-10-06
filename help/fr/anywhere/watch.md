@@ -9,7 +9,7 @@ Balaie entre quatre pages : **À suivre** avec tes prochains événements, le d�
 
 ![À suivre sur la montre : un anniversaire aujourd'hui, le dîner de ce soir et un anniversaire dans 4 jours.](watch-up-next)
 
-1. Sur ton iPhone, ouvre l'app **Watch**, va dans **Apps disponibles** et touche **Installer** à côté de daili.
+1. Quand tu installes daili sur ton iPhone, l'app apparaît en général toute seule sur ta montre. Sinon, ouvre l'app **Watch** sur ton iPhone, touche **Ma montre**, fais défiler jusqu'à **Apps disponibles** et touche **Installer** à côté de daili.
 2. Ouvre daili une fois sur ton iPhone, pour que la montre reçoive ta connexion.
 3. Ouvre daili sur la montre.
 
@@ -19,7 +19,7 @@ Touche une ligne pour la cocher. Sur la liste de courses et dans tes tâches, to
 
 ![La page Habitudes sur la montre : Minzi, 2 sur 5 faites aujourd'hui, et les premières habitudes.](watch-habits)
 
-À la voix : touche le crayon sur **À suivre** pour une note rapide, ou **Ajouter un élément** sur la liste de courses. Ou demande à Siri : « Ajouter à ma liste Daili » ou « Nouvelle note dans Daili ».
+À la voix : touche le crayon sur **À suivre** pour une note rapide, ou **Ajouter un élément** sur la liste de courses.
 
 ![La liste de courses sur la montre, avec Ajouter un élément en haut.](watch-shopping)
 

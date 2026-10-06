@@ -9,7 +9,7 @@ Stryg mellem fire sider: **Først på tur** med dine næste begivenheder, aftens
 
 ![Først på tur på uret: en fødselsdag i dag, aftensmaden i aften og en fødselsdag om 4 dage.](watch-up-next)
 
-1. Åbn appen **Watch** på din iPhone, gå til **Tilgængelige apps**, og tryk på **Installer** ud for daili.
+1. Når du installerer daili på din iPhone, dukker appen som regel selv op på dit ur. Hvis ikke, så åbn appen **Watch** på din iPhone, tryk på **Mit ur**, rul ned til **Tilgængelige apps**, og tryk på **Installer** ud for daili.
 2. Åbn daili én gang på din iPhone, så uret får dit login.
 3. Åbn daili på uret.
 
@@ -19,7 +19,7 @@ Tryk på en række for at sætte flueben ved den. På indkøbslisten og ved dine
 
 ![Siden Vaner på uret: Minzi, 2 af 5 klaret i dag og de første vaner.](watch-habits)
 
-Med stemmen: tryk på blyanten på **Først på tur** for en hurtig note, eller på **Tilføj punkt** på indkøbslisten. Eller spørg Siri: "Føj til min Daili-liste" eller "Ny note i Daili".
+Med stemmen: tryk på blyanten på **Først på tur** for en hurtig note, eller på **Tilføj punkt** på indkøbslisten.
 
 ![Indkøbslisten på uret med Tilføj punkt øverst.](watch-shopping)
 

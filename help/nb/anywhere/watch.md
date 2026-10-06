@@ -9,7 +9,7 @@ Sveip mellom fire sider: **Først ut** med de neste avtalene dine, middagen i kv
 
 ![Først ut på klokken: en bursdag i dag, middagen i kveld og en bursdag om 4 dager.](watch-up-next)
 
-1. Åpne appen **Watch** på iPhonen, gå til **Tilgjengelige apper**, og trykk på **Installer** ved siden av daili.
+1. Når du installerer daili på iPhonen, dukker appen som regel opp på klokken av seg selv. Hvis ikke, åpner du appen **Watch** på iPhonen, trykker på **Min klokke**, ruller ned til **Tilgjengelige apper** og trykker på **Installer** ved siden av daili.
 2. Åpne daili én gang på iPhonen, så klokken får påloggingen din.
 3. Åpne daili på klokken.
 
@@ -19,7 +19,7 @@ Trykk på en rad for å huke den av. På handlelisten og i oppgavene dine trykke
 
 ![Siden Vaner på klokken: Minzi, 2 av 5 gjort i dag, og de første vanene.](watch-habits)
 
-Med stemmen: trykk på blyanten på **Først ut** for et hurtignotat, eller på **Legg til punkt** på handlelisten. Eller spør Siri: «Legg til i Daili-listen min» eller «Nytt notat i Daili».
+Med stemmen: trykk på blyanten på **Først ut** for et hurtignotat, eller på **Legg til punkt** på handlelisten.
 
 ![Handlelisten på klokken, med Legg til punkt øverst.](watch-shopping)
 

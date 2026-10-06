@@ -9,7 +9,7 @@ Przesuwaj między czterema stronami: **Najbliższe** z twoimi kolejnymi wydarzen
 
 ![Najbliższe na zegarku: urodziny dzisiaj, kolacja na dziś wieczór i urodziny za 4 dni.](watch-up-next)
 
-1. Na iPhonie otwórz aplikację **Watch**, przejdź do **Dostępne aplikacje** i stuknij **Instaluj** obok daili.
+1. Gdy zainstalujesz daili na iPhonie, aplikacja zwykle sama pojawi się na zegarku. Jeśli nie, otwórz na iPhonie aplikację **Watch**, stuknij **Mój zegarek**, przewiń do **Dostępne aplikacje** i stuknij **Instaluj** obok daili.
 2. Otwórz daili raz na iPhonie, żeby zegarek dostał twoje logowanie.
 3. Otwórz daili na zegarku.
 
@@ -19,7 +19,7 @@ Stuknij wiersz, żeby go odhaczyć. Na liście zakupów i w zadaniach stuknij po
 
 ![Strona Nawyki na zegarku: Minzi, 2 z 5 zrobione dzisiaj i pierwsze nawyki.](watch-habits)
 
-Głosem: stuknij ołówek na **Najbliższe**, żeby dodać szybką notatkę, albo **Dodaj element** na liście zakupów. Albo poproś Siri: "Add to my Daili list" lub "New note in Daili" — Siri rozumie te polecenia po angielsku.
+Głosem: stuknij ołówek na **Najbliższe**, żeby dodać szybką notatkę, albo **Dodaj element** na liście zakupów.
 
 ![Lista zakupów na zegarku, na górze Dodaj element.](watch-shopping)
 

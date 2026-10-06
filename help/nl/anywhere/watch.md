@@ -9,7 +9,7 @@ Veeg tussen vier pagina's: **Eerstvolgend** met je volgende afspraken, het avond
 
 ![Eerstvolgend op het horloge: een verjaardag vandaag, het eten voor vanavond en een verjaardag over 4 dagen.](watch-up-next)
 
-1. Open op je iPhone de app **Watch**, ga naar **Beschikbare apps** en tik op **Installeer** naast daili.
+1. Als je daili op je iPhone installeert, verschijnt het meestal vanzelf op je horloge. Zo niet, open dan op je iPhone de app **Watch**, tik op **Mijn horloge**, scrol naar **Beschikbare apps** en tik op **Installeer** naast daili.
 2. Open daili één keer op je iPhone, zodat het horloge je aanmelding krijgt.
 3. Open daili op het horloge.
 
@@ -19,7 +19,7 @@ Tik op een regel om hem af te vinken. Op de boodschappenlijst en bij je taken ti
 
 ![De pagina Gewoontes op het horloge: Minzi, vandaag 2 van 5 gedaan, en de eerste gewoontes.](watch-habits)
 
-Met je stem: tik op **Eerstvolgend** op het potlood voor een snelle notitie, of op de boodschappenlijst op **Item toevoegen**. Of vraag het Siri: "Toevoegen aan mijn Daili-lijst" of "Nieuwe notitie in Daili".
+Met je stem: tik op **Eerstvolgend** op het potlood voor een snelle notitie, of op de boodschappenlijst op **Item toevoegen**.
 
 ![De boodschappenlijst op het horloge, met bovenaan Item toevoegen.](watch-shopping)
 

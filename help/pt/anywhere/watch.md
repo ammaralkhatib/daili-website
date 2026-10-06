@@ -9,7 +9,7 @@ Deslize entre quatro páginas: **A seguir** com seus próximos eventos, o jantar
 
 ![A seguir no relógio: um aniversário hoje, o jantar desta noite e um aniversário daqui a 4 dias.](watch-up-next)
 
-1. No iPhone, abra o app **Watch**, vá até **Apps Disponíveis** e toque em **Instalar** ao lado do daili.
+1. Quando você instala o daili no iPhone, ele geralmente aparece sozinho no relógio. Se não aparecer, abra o app **Watch** no iPhone, toque em **Meu Relógio**, role até **Apps Disponíveis** e toque em **Instalar** ao lado do daili.
 2. Abra o daili uma vez no iPhone, para que o relógio receba seu login.
 3. Abra o daili no relógio.
 
@@ -19,7 +19,7 @@ Toque em uma linha para marcá-la. Na lista de compras e nas tarefas, toque de n
 
 ![A página Hábitos no relógio: a Minzi, 2 de 5 feitos hoje, e os primeiros hábitos.](watch-habits)
 
-Por voz: toque no lápis em **A seguir** para uma nota rápida, ou em **Adicionar item** na lista de compras. Ou peça à Siri: "Adicionar à minha lista do Daili" ou "Nova nota no Daili".
+Por voz: toque no lápis em **A seguir** para uma nota rápida, ou em **Adicionar item** na lista de compras.
 
 ![A lista de compras no relógio, com Adicionar item no topo.](watch-shopping)
 

@@ -9,7 +9,7 @@ Svep mellan fyra sidor: **Närmast** med dina nästa händelser, kvällens midda
 
 ![Närmast på klockan: en födelsedag i dag, middagen i kväll och en födelsedag om 4 dagar.](watch-up-next)
 
-1. Öppna appen **Watch** på din iPhone, gå till **Tillgängliga appar** och tryck på **Installera** bredvid daili.
+1. När du installerar daili på din iPhone dyker appen oftast upp på klockan av sig själv. Om inte: öppna appen **Watch** på din iPhone, tryck på **Min klocka**, rulla ner till **Tillgängliga appar** och tryck på **Installera** bredvid daili.
 2. Öppna daili på din iPhone en gång, så att klockan får din inloggning.
 3. Öppna daili på klockan.
 
@@ -19,7 +19,7 @@ Tryck på en rad för att bocka av den. På inköpslistan och bland uppgifterna 
 
 ![Sidan Vanor på klockan: Minzi, 2 av 5 klara i dag, och de första vanorna.](watch-habits)
 
-Med rösten: tryck på pennan på **Närmast** för en snabbanteckning, eller på **Lägg till post** på inköpslistan. Eller be Siri: "Lägg till i min Daili-lista" eller "Ny anteckning i Daili".
+Med rösten: tryck på pennan på **Närmast** för en snabbanteckning, eller på **Lägg till post** på inköpslistan.
 
 ![Inköpslistan på klockan, med Lägg till post högst upp.](watch-shopping)
 

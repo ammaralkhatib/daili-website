@@ -9,7 +9,7 @@ Dört sayfa arasında kaydır: sıradaki etkinliklerin, bu akşamın yemeği ve 
 
 ![Saatte Sıradaki: bugün bir doğum günü, bu akşamın yemeği ve 4 gün sonra bir doğum günü.](watch-up-next)
 
-1. iPhone'unda **Watch** uygulamasını aç, **Kullanılabilir Uygulamalar** bölümüne git ve daili'nin yanındaki **Yükle**'ye dokun.
+1. iPhone'una daili'yi yüklediğinde uygulama genellikle saatinde kendiliğinden görünür. Görünmezse iPhone'unda **Watch** uygulamasını aç, **Saatim**'e dokun, aşağı kaydırıp **Kullanılabilir Uygulamalar** bölümüne git ve daili'nin yanındaki **Yükle**'ye dokun.
 2. Saatin oturum bilgini alması için daili'yi iPhone'unda bir kez aç.
 3. daili'yi saatte aç.
 
@@ -19,7 +19,7 @@ Dört sayfa arasında kaydır: sıradaki etkinliklerin, bu akşamın yemeği ve 
 
 ![Saatte Alışkanlıklar sayfası: Minzi, bugün 5'te 2 tamam ve ilk alışkanlıklar.](watch-habits)
 
-Sesle: hızlı not için **Sıradaki** sayfasındaki kaleme ya da alışveriş listesindeki **Öğe ekle**'ye dokun. Ya da Siri'ye söyle: “Daili listeme ekle” ya da “Daili uygulamasında yeni not”.
+Sesle: hızlı not için **Sıradaki** sayfasındaki kaleme ya da alışveriş listesindeki **Öğe ekle**'ye dokun.
 
 ![Saatte alışveriş listesi, en üstte Öğe ekle.](watch-shopping)
 

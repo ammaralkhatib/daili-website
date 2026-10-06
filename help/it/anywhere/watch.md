@@ -9,7 +9,7 @@ Scorri tra quattro pagine: **In arrivo** con i tuoi prossimi eventi, la cena di 
 
 ![In arrivo sull'orologio: un compleanno oggi, la cena di stasera e un compleanno tra 4 giorni.](watch-up-next)
 
-1. Sul tuo iPhone apri l'app **Watch**, vai in **App disponibili** e tocca **Installa** accanto a daili.
+1. Quando installi daili sul tuo iPhone, di solito compare da solo sul tuo orologio. Altrimenti apri l'app **Watch** sull'iPhone, tocca **Il mio orologio**, scorri fino a **App disponibili** e tocca **Installa** accanto a daili.
 2. Apri daili una volta sul tuo iPhone, così l'orologio riceve il tuo accesso.
 3. Apri daili sull'orologio.
 
@@ -19,7 +19,7 @@ Tocca una riga per spuntarla. Sulla lista della spesa e nelle attività, toccala
 
 ![La pagina Abitudini sull'orologio: Minzi, 2 su 5 fatte oggi, e le prime abitudini.](watch-habits)
 
-Con la voce: tocca la matita su **In arrivo** per una nota veloce, oppure **Aggiungi un elemento** sulla lista della spesa. Oppure chiedi a Siri: «Aggiungi alla mia lista Daili» o «Nuova nota in Daili».
+Con la voce: tocca la matita su **In arrivo** per una nota veloce, oppure **Aggiungi un elemento** sulla lista della spesa.
 
 ![La lista della spesa sull'orologio, con Aggiungi un elemento in alto.](watch-shopping)
 

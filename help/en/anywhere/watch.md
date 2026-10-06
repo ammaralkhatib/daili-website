@@ -15,7 +15,7 @@ Swipe between four pages: **Up next** with your next events, tonight's dinner an
 
 ![Up next on the watch: a birthday today, Pizza for tonight, and Emma's birthday in 4 days.](watch-up-next)
 
-1. On your iPhone, open the **Watch** app, go to **Available Apps** and tap **Install** next to daili.
+1. daili usually appears on your watch by itself with the iPhone app. If not, in the iPhone's **Watch** app, tap **My Watch**, then **Install** next to daili under **Available Apps**.
 2. Open daili on your iPhone once, so the watch gets your sign-in.
 3. Open daili on the watch.
 
@@ -25,7 +25,7 @@ Tap a row to tick it off. On the shopping list and to-dos, tap again within 3 se
 
 ![The Habits page on the watch: Minzi, 2 of 5 done today, and the first habits.](watch-habits)
 
-By voice: tap the pencil on **Up next** for a quick note, or **Add item** on the shopping list. Or ask Siri: "Add to my Daili list" or "New note in Daili".
+By voice: tap the pencil on **Up next** for a quick note, or **Add item** on the shopping list.
 
 ![The Groceries list on the watch, with Add item at the top.](watch-shopping)
 

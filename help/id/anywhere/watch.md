@@ -9,7 +9,7 @@ Geser di antara empat halaman: **Berikutnya** dengan acara Anda berikutnya, maka
 
 ![Berikutnya di jam: ulang tahun hari ini, makan malam nanti, dan ulang tahun 4 hari lagi.](watch-up-next)
 
-1. Di iPhone, buka app **Watch**, buka **App yang Tersedia**, lalu ketuk **Instal** di samping daili.
+1. Setelah Anda menginstal daili di iPhone, app biasanya muncul sendiri di jam Anda. Jika tidak, buka app **Watch** di iPhone, ketuk **Jam Saya**, gulir ke **App yang Tersedia**, lalu ketuk **Instal** di samping daili.
 2. Buka daili sekali di iPhone Anda, agar jam menerima info masuk Anda.
 3. Buka daili di jam.
 
@@ -19,7 +19,7 @@ Ketuk baris untuk mencentangnya. Di daftar belanja dan tugas, ketuk lagi dalam 3
 
 ![Halaman Kebiasaan di jam: Minzi, 2 dari 5 selesai hari ini, dan kebiasaan pertama.](watch-habits)
 
-Dengan suara: ketuk pensil di **Berikutnya** untuk catatan cepat, atau **Tambah item** di daftar belanja. Atau minta Siri: "Add to my Daili list" atau "New note in Daili". Siri memahami keduanya dalam bahasa Inggris.
+Dengan suara: ketuk pensil di **Berikutnya** untuk catatan cepat, atau **Tambah item** di daftar belanja.
 
 ![Daftar belanja di jam, dengan Tambah item di atas.](watch-shopping)
 

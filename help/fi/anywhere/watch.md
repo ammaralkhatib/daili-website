@@ -9,7 +9,7 @@ Pyyhkäise neljän sivun välillä: **Seuraavaksi** näyttää seuraavat tapahtu
 
 ![Seuraavaksi kellossa: syntymäpäivä tänään, illan ruoka ja syntymäpäivä 4 päivän päästä.](watch-up-next)
 
-1. Avaa iPhonessa **Watch**-appi, siirry kohtaan **Saatavilla olevat apit** ja napauta **Asenna** dailin kohdalla.
+1. Kun asennat dailin iPhoneen, se ilmestyy yleensä kelloon itsestään. Jos ei, avaa iPhonessa **Watch**-appi, napauta **Oma kello**, vieritä kohtaan **Saatavilla olevat apit** ja napauta **Asenna** dailin kohdalla.
 2. Avaa daili kerran iPhonessa, jotta kello saa kirjautumisesi.
 3. Avaa daili kellossa.
 
@@ -19,7 +19,7 @@ Merkitse rivi tehdyksi napauttamalla sitä. Ostoslistalla ja tehtävissä voit p
 
 ![Tavat-sivu kellossa: Minzi, tänään tehty 2/5 ja ensimmäiset tavat.](watch-habits)
 
-Äänellä: napauta **Seuraavaksi**-sivun kynää pikamuistiinpanoa varten tai ostoslistan **Lisää kohde**. Tai pyydä Siriä: ”Lisää Daili-listaani” tai ”Uusi muistiinpano Dailiin”.
+Äänellä: napauta **Seuraavaksi**-sivun kynää pikamuistiinpanoa varten tai ostoslistan **Lisää kohde**.
 
 ![Ostoslista kellossa, ylhäällä Lisää kohde.](watch-shopping)
 

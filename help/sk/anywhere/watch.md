@@ -9,7 +9,7 @@ Posúvaj medzi štyrmi stránkami: **Najbližšie** s tvojimi ďalšími udalos�
 
 ![Najbližšie na hodinkách: narodeniny dnes, dnešná večera a narodeniny o 4 dni.](watch-up-next)
 
-1. Na iPhone otvor aplikáciu **Watch**, prejdi do **Dostupné aplikácie** a ťukni na **Inštalovať** vedľa daili.
+1. Keď si daili nainštaluješ na iPhone, aplikácia sa na hodinkách zvyčajne objaví sama. Ak nie, otvor na iPhone aplikáciu **Watch**, ťukni na **Moje hodinky**, posuň sa nadol na **Dostupné aplikácie** a ťukni na **Inštalovať** vedľa daili.
 2. Raz otvor daili na iPhone, aby hodinky dostali tvoje prihlásenie.
 3. Otvor daili na hodinkách.
 
@@ -19,7 +19,7 @@ Posúvaj medzi štyrmi stránkami: **Najbližšie** s tvojimi ďalšími udalos�
 
 ![Stránka Návyky na hodinkách: Minzi, dnes 2 z 5 hotové a prvé návyky.](watch-habits)
 
-Hlasom: ťukni na ceruzku na **Najbližšie** pre rýchlu poznámku alebo na **Pridať položku** na nákupnom zozname. Alebo požiadaj Siri: „Add to my Daili list“ alebo „New note in Daili“. Siri týmto vetám rozumie v angličtine.
+Hlasom: ťukni na ceruzku na **Najbližšie** pre rýchlu poznámku alebo na **Pridať položku** na nákupnom zozname.
 
 ![Nákupný zoznam na hodinkách, hore Pridať položku.](watch-shopping)
 

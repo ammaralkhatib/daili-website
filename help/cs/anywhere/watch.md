@@ -9,7 +9,7 @@ Přejížděj mezi čtyřmi stránkami: **Nejbližší** s tvými dalšími udá
 
 ![Nejbližší na hodinkách: narozeniny dnes, dnešní večeře a narozeniny za 4 dny.](watch-up-next)
 
-1. Na iPhonu otevři aplikaci **Watch**, přejdi do **Dostupné aplikace** a klepni na **Instalovat** vedle daili.
+1. Když si daili nainstaluješ na iPhone, aplikace se na hodinkách obvykle objeví sama. Pokud ne, otevři na iPhonu aplikaci **Watch**, klepni na **Moje hodinky**, přejeď dolů na **Dostupné aplikace** a klepni na **Instalovat** vedle daili.
 2. Jednou otevři daili na iPhonu, aby hodinky dostaly tvoje přihlášení.
 3. Otevři daili na hodinkách.
 
@@ -19,7 +19,7 @@ Klepnutím na řádek ho odškrtneš. U nákupního seznamu a úkolů klepni do 
 
 ![Stránka Návyky na hodinkách: Minzi, dnes hotovo 2 z 5, a první návyky.](watch-habits)
 
-Hlasem: klepni na tužku na **Nejbližší** pro rychlou poznámku, nebo na **Přidat položku** na nákupním seznamu. Nebo požádej Siri: "Add to my Daili list" nebo "New note in Daili" — Siri těmto frázím rozumí anglicky.
+Hlasem: klepni na tužku na **Nejbližší** pro rychlou poznámku, nebo na **Přidat položku** na nákupním seznamu.
 
 ![Nákupní seznam na hodinkách, nahoře Přidat položku.](watch-shopping)
 
