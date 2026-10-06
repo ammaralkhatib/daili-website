@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili sul tuo Apple Watch
 summary: Guarda cosa c'è in arrivo, spunta spesa, attività e abitudini e aggiungi cose con la voce – direttamente al polso.
 keywords: apple watch, watch, orologio, polso, complicazione, quadrante, smart stack, lista della spesa, voce, dettatura, nota veloce, abitudini
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Scorri tra quattro pagine: **In arrivo** con i tuoi prossimi eventi, la cena di stasera e il prossimo compleanno, la tua lista della spesa, le tue **Attività** e **Abitudini** con Minzi.
 
@@ -19,7 +19,7 @@ Tocca una riga per spuntarla. Sulla lista della spesa e nelle attività, toccala
 
 ![La pagina Abitudini sull'orologio: Minzi, 2 su 5 fatte oggi, e le prime abitudini.](watch-habits)
 
-Con la voce: tocca la matita su **In arrivo** per una nota veloce, oppure **Aggiungi un elemento** sulla lista della spesa.
+Con la voce: tocca la matita su **In arrivo** per una nota veloce, oppure **Aggiungi un elemento** sulla lista della spesa. Oppure chiedi a Siri: «Aggiungi alla mia lista Daili» o «Nuova nota in Daili».
 
 ![La lista della spesa sull'orologio, con Aggiungi un elemento in alto.](watch-shopping)
 

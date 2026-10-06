@@ -3,14 +3,14 @@ id: account-delete
 title: Supprimer ton compte (et changer d'avis dans les 30 jours)
 summary: Ton compte est supprimé pour de bon après 30 jours. D'ici là, te reconnecter ou le lien de notre e-mail le fait revenir.
 keywords: supprimer compte, effacer compte, fermer compte, annuler suppression, restaurer compte, 30 jours, quitter daili, rgpd
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Tu veux d'abord une copie de tes données ? Télécharge-la avant de commencer.
 
 ![L'écran Profil. Supprimer le compte, la dernière ligne sous Compte, est entouré.](account-delete)
 
 1. Ouvre les **Paramètres**, puis touche ton nom en haut.
-2. Sous **Compte**, touche **Supprimer le compte**.
+2. Sous **Compte**, touche **Supprimer le compte**. La page affiche le nom et l'e-mail de ce compte.
 3. Si tu veux, dis-nous pourquoi tu pars. C'est facultatif.
 4. Tape le mot demandé, **SUPPRIMER**, et touche **Supprimer mon compte**.
 5. daili te déconnecte. Nous t'envoyons un e-mail avec un lien d'annulation.

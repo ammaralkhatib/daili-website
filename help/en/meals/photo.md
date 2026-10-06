@@ -7,10 +7,10 @@ keywords: photo, camera, cookbook, handwritten, screenshot, scan recipe, ai, sav
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-09-28
+updated: 2026-10-06
 media: meals-photo
 order: 4
-related: meals-youtube, meals-paste, meals-add-recipe, calendar-photo
+related: meals-youtube, meals-paste, meals-add-recipe, calendar-photo, account-plus
 tipTitle: Grandma's recipe card, saved in seconds
 tipBody: Photograph a cookbook page or a handwritten card and daili writes the recipe for you.
 tipSkipIf: hasRecipes
@@ -29,4 +29,4 @@ The recipe comes out in your phone's language, whatever language the page is in.
 
 > Note: The photo goes to Google's AI to be read, then is deleted, without camera data like location. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: Every family gets a few free photo reads each month, shared with video reads and calendar photos. Daili Plus has more — and if your family joined early, reads are free for life.
+> Note: A photo read uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 30.

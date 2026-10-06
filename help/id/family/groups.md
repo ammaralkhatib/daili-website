@@ -3,7 +3,7 @@ id: family-groups
 title: Lebih dari satu keluarga atau grup
 summary: Ikut hingga 5 keluarga atau grup dengan satu akun, dan berpindah di antaranya.
 keywords: grup, keluarga kedua, ganti keluarga, kakek nenek, klub, tim, kelas sekolah, banyak keluarga, keluarga default
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 tipTitle: Lebih dari satu keluarga?
 tipBody: Tambahkan kakek nenek atau klub olahraga sebagai grup, dan berpindah dengan satu ketukan.
 ---
@@ -19,4 +19,4 @@ Daftar yang sama ada di layar Keluarga: ketuk **Ganti keluarga atau grup**.
 
 Admin bisa memberi keluarga fotonya sendiri: di layar Keluarga, ketuk gambar keluarga untuk mengambil, memilih, atau menghapus foto. Foto itu juga tampil di daftar ini.
 
-> Note: Berpindah hanya mengubah ponsel ini. Ketuk **⋮** di sebelah keluarga lalu **Jadikan default** untuk memilih yang dibuka daili di ponsel baru.
+> Note: Berpindah hanya mengubah ponsel ini. Ketuk **⋮** di sebelah keluarga lalu **Jadikan default** untuk memilih yang dibuka daili di ponsel baru. Setelah Anda keluar lalu masuk lagi, daili membuka keluarga yang terakhir Anda pakai di ponsel ini.

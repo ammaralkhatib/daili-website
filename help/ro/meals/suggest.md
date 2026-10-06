@@ -5,7 +5,7 @@ summary: O atingere sugerează o cină pentru fiecare seară liberă din săptă
 keywords: meniu, sugestii, ai, planifică săptămâna, idei de cină, ce mâncăm diseară, meniu săptămânal, cine rapide, vegetarian, copii
 tipTitle: Nu mai ai idei de cină?
 tipBody: Apasă pe steluțe în Meniu și Daili sugerează o cină pentru fiecare seară liberă.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Nu mai ai idei de cină?
 
@@ -21,4 +21,4 @@ Se completează doar serile libere de azi încolo, fără mesele din ultimele do
 
 > Note: Titlurile rețetelor tale, mesele recente și dorința ta ajung la AI-ul Google, care nu păstrează nimic. daili te întreabă mai întâi, iar din **Setări** → **Funcții AI (Google Gemini)** le poți opri.
 
-> Note: Sugestiile împart citirile AI lunare cu citirile video și de fotografii. Daili Plus are mai multe — iar dacă familia ta s-a alăturat devreme, sunt gratuite pe viață.
+> Note: O sugestie folosește o acțiune AI. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30.

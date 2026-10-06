@@ -5,7 +5,7 @@ summary: Var med i upp till 5 familjer eller grupper med ett konto, och byt mell
 keywords: grupp, andra familjen, byta familj, mor- och farföräldrar, förening, lag, skolklass, flera familjer, standardfamilj
 tipTitle: Mer än en familj?
 tipBody: Lägg till mor- och farföräldrarna eller idrottsklubben som en grupp, och byt med ett tryck.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Ett konto kan vara med i upp till 5 familjer eller grupper: ditt hem, mor- och farföräldrarna, idrottsklubben eller skolklassen. Var och en har sin egen kalender och sina egna listor.
 
@@ -19,4 +19,4 @@ Samma lista hittar du på familjeskärmen: tryck på **Byt familj eller grupp**.
 
 Admins kan ge en familj ett eget foto: tryck på familjebilden på familjeskärmen för att ta, välja eller ta bort ett. Det visas också i den här listan.
 
-> Note: Bytet gäller bara den här telefonen. Tryck på **⋮** bredvid en familj och på **Gör till standard** för att välja vilken daili öppnar på en ny telefon.
+> Note: Bytet gäller bara den här telefonen. Tryck på **⋮** bredvid en familj och på **Gör till standard** för att välja vilken daili öppnar på en ny telefon. När du har loggat ut och in igen öppnar daili den familj du senast använde på den här telefonen.

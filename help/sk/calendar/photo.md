@@ -5,7 +5,7 @@ summary: Odfoť list zo školy, pozvánku alebo leták — daili z nich vytiahne
 keywords: fotka, skenovať, list, pozvánka, leták, dátumy, ai, fotoaparát, škola, prečítať fotku
 tipTitle: Urob z listu zo školy udalosti
 tipBody: Ťukni na ikonu skenovania v Nová udalosť, odfoť list a daili vyplní dátumy.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Dátumy na papieri? Ikona skenovania v **Nová udalosť** ich prečíta.
 
@@ -21,4 +21,4 @@ Najlepšie funguje tlačený text, rukopis horšie. Pri PDF odfoť stránku.
 
 > Note: Fotka ide na prečítanie do AI od Googlu, bez údajov z fotoaparátu, napríklad polohy, a potom sa vymaže. daili sa ťa najprv opýta a **Nastavenia** → **Funkcie AI (Google Gemini)** to vypne.
 
-> Note: Každá rodina dostane každý mesiac pár bezplatných čítaní fotiek, spoločne s čítaniami videí. Daili Plus ich má viac — a ak sa tvoja rodina pridala skoro, čítania sú zadarmo navždy.
+> Note: Prečítanie fotky spotrebuje jednu akciu AI. Každá rodina má mesačne 3 akcie AI zadarmo; Daili Plus dáva 30.

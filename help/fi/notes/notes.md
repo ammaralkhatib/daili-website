@@ -2,28 +2,34 @@
 id: notes-notes
 title: Muistiinpanot: tallenna ajatukset ja linkit kahdella napautuksella
 summary: Kirjoita muistiinpano tai jaa linkki mistä tahansa sovelluksesta. Muistiinpanot ovat yksityisiä, kunnes jaat ne.
-keywords: muistiinpano, muistiinpanot, pikamuistiinpano, linkki, tallenna linkki, jaa, youtube, tunniste, kiinnitä, haku, widget, offline
+keywords: muistiinpano, muistiinpanot, pikamuistiinpano, linkki, jaa, tarkistuslista, tunniste, suodata, haku, muistutus, äskettäin poistetut, tiivistä
 tipTitle: Jaa linkki dailiin, niin se säilyy
 tipBody: Jaa video, julkaisu tai sivu mistä tahansa sovelluksesta dailiin, niin siitä tulee muistiinpano – yksityinen, kunnes jaat sen.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-06
 ---
-Muistiinpano on lyhyt teksti, linkki tai molemmat. Linkki saa hetken päästä esikatselun. Ei kansioita, ei muotoilua.
+Muistiinpanossa on **Otsikko**, tekstiä tai molemmat. Luettelot ja tarkistuslistat toimivat: napauta ruutua, niin siihen tulee rasti. Ei kansioita.
 
 ![Aloitusnäyttö. Muistiinpanot-ruutu on ympyröity.](notes-tile)
 
-1. Napauta aloitusnäytöllä **Muistiinpanot** tai **+** ja sitten **Muistiinpano**.
-2. Kirjoita ja napauta **Tallenna**. Ensimmäinen rivi on otsikko.
+1. Napauta aloitusnäytöllä **Muistiinpanot** ja sitten **+** tai alapalkin painiketta: kuva, ääni (äänitys alkaa heti), video, linkki.
+2. Kirjoita ja napauta **Tallenna**. Jos suljet tallentamattoman muistiinpanon, daili kysyy ensin.
 
-Toisessa sovelluksessa, kuten YouTubessa tai selaimessa: Jaa → **daili** → **Tallenna**. Kuvat ja tiedostot eivät vielä toimi.
+Toisesta sovelluksesta: Jaa → **daili** → **Tallenna**.
 
-Vielä nopeammin: **Pikamuistiinpano**-widget, iPhonen Toimintopainike (Pikakomento → **New daili note**) tai **Uusi muistiinpano** -ruutu Androidin pika-asetuksissa.
+![Uusi muistiinpano ja painikkeet Kuva, Ääni, Video ja Linkki. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
 
-![Uusi muistiinpano. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
+Näppäimistön yläpuolella: tunnisteet, muistutus (vain sinä saat sen) ja kuka muistiinpanon näkee: **Vain minä** (oletus), **Koko perhe** tai **Valitse jäsenet**. **Skannaa linkki** lukee verkko-osoitteen kuvasta.
 
-Kuka sen näkee: **Vain minä** (oletus), **Koko perhe** tai **Valitse jäsenet**. Koko perheelle jaettu muistiinpano näkyy kerran toimintalistassa, ilman ilmoitusta. Yksityiset muistiinpanot kulkevat mukanasi jokaiseen ryhmään.
+![Paneeli Suodata: Tyyppi, Tunnisteet ja Uusi tunniste sekä Vain kiinnitetyt.](notes-filter)
 
-Haku, tunnisteet ja **Kiinnitä** auttavat löytämään muistiinpanot, kohdissa **Omat** ja **Jaettu kanssani**.
+Hae tai napauta suodatinpainiketta: **Tyyppi**, **Tunnisteet**, **Vain kiinnitetyt**. Suodattimen saat pois sen omasta merkinnästä.
 
-Ilman nettiä uusi muistiinpano odottaa (**Odottaa verkkoa**) ja lähtee myöhemmin itsestään.
+![Äskettäin poistetut. Yksi muistiinpano, joka poistuu 27 päivän päästä, sekä Poista lopullisesti ja Palauta.](notes-trash)
 
-> Note: Poistettu muistiinpano katoaa lopullisesti. Roskakoria ei ole.
+Poistetut muistiinpanot odottavat 30 päivää kohdassa **⋯** → **Äskettäin poistetut**.
+
+![Muistiinpano. Daili Plus -ryhmä ja sen kaksi riviä ”Tee tästä tapahtuma, tehtävä tai ostoslista” ja ”Tiivistä” on ympyröity.](notes-ai)
+
+Muistiinpanossa kohdan **Daili Plus** rivit **Tee tästä tapahtuma, tehtävä tai ostoslista** ja **Tiivistä** (video, verkkosivu tai pitkä muistiinpano) käyttävät kumpikin yhden tekoälytoiminnon.
+
+> Note: Ilman nettiä uusi muistiinpano odottaa ja lähtee myöhemmin itsestään.

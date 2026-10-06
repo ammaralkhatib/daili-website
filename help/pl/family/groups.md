@@ -5,7 +5,7 @@ summary: Należ do maksymalnie 5 rodzin albo grup z jednym kontem i przełączaj
 keywords: grupa, druga rodzina, zmień rodzinę, dziadkowie, klub, drużyna, klasa, kilka rodzin, domyślna rodzina
 tipTitle: Więcej niż jedna rodzina?
 tipBody: Dodaj dziadków albo klub sportowy jako grupę i przełączaj się jednym dotknięciem.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Jedno konto może należeć do maksymalnie 5 rodzin albo grup: twojego domu, dziadków, klubu sportowego albo klasy w szkole. Każda ma własny kalendarz i własne listy.
 
@@ -19,4 +19,4 @@ Tę samą listę znajdziesz na ekranie Rodzina: dotknij **Zmień rodzinę lub gr
 
 Admini mogą dać rodzinie własne zdjęcie: na ekranie Rodzina dotknij zdjęcia rodziny, żeby je zrobić, wybrać albo usunąć. Widać je też na tej liście.
 
-> Note: Przełączenie zmienia tylko ten telefon. Dotknij **⋮** obok rodziny i **Ustaw jako domyślną**, żeby wybrać tę, którą daili otworzy na nowym telefonie.
+> Note: Przełączenie zmienia tylko ten telefon. Dotknij **⋮** obok rodziny i **Ustaw jako domyślną**, żeby wybrać tę, którą daili otworzy na nowym telefonie. Po wylogowaniu i ponownym zalogowaniu daili otwiera rodzinę ostatnio używaną na tym telefonie.

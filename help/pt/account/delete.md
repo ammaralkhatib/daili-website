@@ -3,14 +3,14 @@ id: account-delete
 title: Excluir sua conta (e mudar de ideia em até 30 dias)
 summary: Sua conta é excluída para sempre depois de 30 dias. Até lá, entrar de novo ou o link do nosso e-mail traz ela de volta.
 keywords: excluir conta, apagar conta, encerrar conta, cancelar exclusão, recuperar conta, 30 dias, sair do daili, lgpd
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Quer uma cópia dos seus dados antes? Baixe ela antes de começar.
 
 ![A tela Perfil. Excluir a conta, a última linha em Conta, está circulado.](account-delete)
 
 1. Abra **Configurações** e toque no seu nome, lá em cima.
-2. Em **Conta**, toque em **Excluir a conta**.
+2. Em **Conta**, toque em **Excluir a conta**. A página mostra o nome e o e-mail dessa conta.
 3. Se quiser, conte para a gente por que está saindo. É opcional.
 4. Digite a palavra pedida, **EXCLUIR**, e toque em **Excluir minha conta**.
 5. O daili desconecta você. Nós enviamos um e-mail com um link para cancelar.

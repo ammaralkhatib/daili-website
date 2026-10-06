@@ -5,7 +5,7 @@ summary: Ta bilde av en kokebokside, et håndskrevet kort eller en skjermdump �
 keywords: bilde, kamera, kokebok, håndskrevet, skjermdump, skann oppskrift, ai, lagre oppskrift, foto
 tipTitle: Mormors oppskriftskort, lagret på sekunder
 tipBody: Ta bilde av en kokebokside eller et håndskrevet kort, så skriver daili oppskriften for deg.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Har du en oppskrift på papir eller i en skjermdump? daili skriver den inn for deg.
 
@@ -20,4 +20,4 @@ Oppskriften kommer ut på telefonens språk, uansett hvilket språk siden er på
 
 > Note: Bildet sendes til Googles KI for å bli lest og slettes etterpå, uten kameradata som posisjon. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
 
-> Note: Hver familie får noen gratis bildelesinger hver måned, delt med videolesingene og kalenderbildene. Daili Plus har flere – og hvis familien din var med tidlig, er lesinger gratis for alltid.
+> Note: En bildelesing bruker én KI-handling. Hver familie får 3 KI-handlinger i måneden gratis; Daili Plus gir 30.

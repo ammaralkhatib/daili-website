@@ -5,7 +5,7 @@ summary: Vyfoť stránku z kuchařky, ručně psanou kartičku nebo snímek obra
 keywords: fotka, fotoaparát, kuchařka, ručně psaný, snímek obrazovky, naskenovat recept, ai, uložit recept, obrázek
 tipTitle: Babiččin recept uložený za pár vteřin
 tipBody: Vyfoť stránku z kuchařky nebo ručně psanou kartičku a daili za tebe recept napíše.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Máš recept na papíře nebo na snímku obrazovky? daili ho za tebe přepíše.
 
@@ -20,4 +20,4 @@ Recept vyjde v jazyce tvého telefonu, ať je stránka v jakémkoli jazyce. Nejl
 
 > Note: Fotka jde k přečtení do AI od Googlu a pak se smaže, bez dat z fotoaparátu, třeba polohy. daili se nejdřív zeptá a **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
 
-> Note: Každá rodina dostane každý měsíc pár bezplatných čtení fotek, společně se čteními videí a fotkami do kalendáře. Daili Plus jich má víc — a pokud se tvoje rodina přidala brzy, jsou čtení zdarma navždy.
+> Note: Čtení fotky spotřebuje jednu akci AI. Každá rodina má každý měsíc 3 akce AI zdarma; Daili Plus dává 30.

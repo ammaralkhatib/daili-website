@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili på din Apple Watch
 summary: Se vad som händer härnäst, bocka av inköp, uppgifter och vanor och lägg till saker med rösten – direkt på handleden.
 keywords: apple watch, watch, klocka, handled, komplikation, urtavla, smart stack, inköpslista, röst, diktera, snabbanteckning, vanor
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Svep mellan fyra sidor: **Närmast** med dina nästa händelser, kvällens middag och nästa födelsedag, din inköpslista, dina **Uppgifter** och **Vanor** med Minzi.
 
@@ -19,7 +19,7 @@ Tryck på en rad för att bocka av den. På inköpslistan och bland uppgifterna 
 
 ![Sidan Vanor på klockan: Minzi, 2 av 5 klara i dag, och de första vanorna.](watch-habits)
 
-Med rösten: tryck på pennan på **Närmast** för en snabbanteckning, eller på **Lägg till post** på inköpslistan.
+Med rösten: tryck på pennan på **Närmast** för en snabbanteckning, eller på **Lägg till post** på inköpslistan. Eller be Siri: "Lägg till i min Daili-lista" eller "Ny anteckning i Daili".
 
 ![Inköpslistan på klockan, med Lägg till post högst upp.](watch-shopping)
 

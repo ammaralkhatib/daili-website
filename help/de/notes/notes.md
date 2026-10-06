@@ -2,28 +2,34 @@
 id: notes-notes
 title: Notizen: Gedanken und Links mit zwei Tipps speichern
 summary: Schreib eine Notiz oder teile einen Link aus jeder App. Notizen sind privat, bis du sie teilst.
-keywords: notiz, notizen, schnelle notiz, link, link speichern, teilen, youtube, tag, anheften, suche, widget, offline
+keywords: notiz, notizen, schnelle notiz, link, teilen, checkliste, tag, filter, suche, erinnerung, zuletzt gelöscht, zusammenfassen
 tipTitle: Teile einen Link mit daili, um ihn zu behalten
 tipBody: Teile ein Video, einen Beitrag oder eine Seite aus jeder App mit daili – es wird eine Notiz, privat, bis du sie teilst.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-06
 ---
-Eine Notiz ist ein kurzer Text, ein Link oder beides. Ein Link bekommt nach einem Moment eine Vorschau. Keine Ordner, keine Formatierung.
+Eine Notiz ist ein **Titel**, Text oder beides. Aufzählungen und Checklisten gehen: Tippe auf ein Kästchen zum Abhaken. Keine Ordner.
 
 ![Der Startbildschirm. Die Kachel Notizen ist eingekreist.](notes-tile)
 
-1. Tippe auf dem Startbildschirm auf **Notizen** oder auf **+** und dann **Notiz**.
-2. Schreib sie und tippe auf **Speichern**. Die erste Zeile ist der Titel.
+1. Tippe auf dem Startbildschirm auf **Notizen**, dann auf **+** oder einen Button unten: Bild, Sprache (nimmt sofort auf), Video, Link.
+2. Schreib und tippe auf **Speichern**. Schließt du eine ungespeicherte Notiz, fragt daili vorher nach.
 
-In einer anderen App, etwa YouTube oder dem Browser: Teilen → **daili** → **Speichern**. Fotos und Dateien gehen noch nicht.
+Aus einer anderen App: Teilen → **daili** → **Speichern**.
 
-Noch schneller: das Widget **Schnelle Notiz**, die Aktionstaste am iPhone (Kurzbefehl → **New daili note**) oder die Kachel **Neue Notiz** in den Schnelleinstellungen von Android.
+![Eine neue Notiz mit den Buttons Foto, Sprache, Video und Link. Die Zeile, wer sie sehen kann, ist eingekreist.](notes-new)
 
-![Eine neue Notiz. Die Zeile, wer sie sehen kann, ist eingekreist.](notes-new)
+Über der Tastatur: Tags, eine Erinnerung (nur du bekommst sie) und wer die Notiz sieht: **Nur ich** (Standard), **Ganze Familie** oder **Mitglieder auswählen**. **Link scannen** liest eine Webadresse aus einem Foto.
 
-Wer sie sieht: **Nur ich** (Standard), **Ganze Familie** oder **Mitglieder auswählen**. Eine Notiz für die ganze Familie erscheint einmal in der Aktivitätsliste, ohne Benachrichtigung. Private Notizen nimmst du in jede Gruppe mit.
+![Das Fenster Filter: Art, Tags mit Neuer Tag und Nur angeheftete.](notes-filter)
 
-Suche, Tags und **Anheften** helfen dir, Notizen wiederzufinden, unter **Meine** oder **Mit mir geteilt**.
+Such oder tippe auf den Filter-Button: **Art**, **Tags**, **Nur angeheftete**. Filter entfernst du am Chip.
 
-Ohne Internet wartet eine neue Notiz (**Wartet auf Netz**) und wird später von selbst gesendet.
+![Zuletzt gelöscht. Eine Notiz, in 27 Tagen weg, mit Endgültig löschen und Wiederherstellen.](notes-trash)
 
-> Note: Eine gelöschte Notiz ist endgültig weg. Es gibt keinen Papierkorb.
+Gelöschte Notizen warten 30 Tage unter **⋯** → **Zuletzt gelöscht**.
+
+![Eine Notiz. Die Gruppe Daili Plus mit den zwei Zeilen „Termin, Aufgabe oder Einkaufsliste daraus machen“ und „Zusammenfassen“ ist eingekreist.](notes-ai)
+
+Unter **Daili Plus** in einer Notiz brauchen **Termin, Aufgabe oder Einkaufsliste daraus machen** und **Zusammenfassen** (Video, Webseite oder lange Notiz) je eine KI-Aktion.
+
+> Note: Offline wartet eine neue Notiz und sendet sich später selbst.

@@ -5,7 +5,7 @@ summary: Indsæt linket til en madlavningsvideo, så skriver daili ingredienser 
 keywords: youtube, video, opskriftsvideo, madvideo, importér video, link, ai, gem opskrift, shorts
 tipTitle: Lav en YouTube-video om til en opskrift
 tipBody: Indsæt linket til en madlavningsvideo, så skriver daili ingredienser og trin for dig.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Har du set en ret på YouTube? daili kan skrive opskriften for dig.
 
@@ -20,4 +20,4 @@ Står opskriften i videoens beskrivelse, går det hurtigt. Ellers ser daili vide
 
 Opskriften kommer på din telefons sprog. Første gang spørger daili, før Googles AI (Gemini) bliver brugt; **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
 
-> Note: Kun offentlige videoer på op til 25 minutter virker. Hver familie får et par gratis videolæsninger hver måned. Daili Plus har flere – og hvis jeres familie kom tidligt med, er videolæsninger gratis for altid.
+> Note: Kun offentlige videoer på op til 25 minutter virker. En videolæsning bruger én AI-handling. Hver familie får 3 AI-handlinger om måneden gratis; Daili Plus giver 30.

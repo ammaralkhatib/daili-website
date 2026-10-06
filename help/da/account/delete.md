@@ -3,14 +3,14 @@ id: account-delete
 title: Slet din konto (og fortryd inden for 30 dage)
 summary: Din konto bliver slettet for altid efter 30 dage. Indtil da får du den tilbage ved at logge ind eller via linket i vores e-mail.
 keywords: slet konto, fjern konto, luk konto, annullér sletning, gendan konto, 30 dage, forlad daili, gdpr
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Vil du have en kopi af dine data først? Download den, før du går i gang.
 
 ![Skærmen Profil. Slet konto, den sidste række under Konto, er markeret med en cirkel.](account-delete)
 
 1. Åbn **Indstillinger**, og tryk på dit navn øverst.
-2. Tryk på **Slet konto** under **Konto**.
+2. Tryk på **Slet konto** under **Konto**. Siden viser navnet og e-mailen på den konto.
 3. Hvis du vil, så fortæl os, hvorfor du går. Det er frivilligt.
 4. Skriv det ord, der bliver bedt om, **SLET**, og tryk på **Slet min konto**.
 5. daili logger dig ud. Vi sender dig en e-mail med et link til at annullere.

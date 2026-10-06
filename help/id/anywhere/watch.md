@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili di Apple Watch Anda
 summary: Lihat apa yang berikutnya, centang belanjaan, tugas, dan kebiasaan, dan tambahkan dengan suara – langsung di pergelangan tangan.
 keywords: apple watch, watch, jam tangan, pergelangan, komplikasi, tampilan jam, smart stack, daftar belanja, suara, dikte, catatan cepat, kebiasaan
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Geser di antara empat halaman: **Berikutnya** dengan acara Anda berikutnya, makan malam nanti, dan ulang tahun berikutnya, daftar belanja Anda, **Tugas** Anda, dan **Kebiasaan** bersama Minzi.
 
@@ -19,7 +19,7 @@ Ketuk baris untuk mencentangnya. Di daftar belanja dan tugas, ketuk lagi dalam 3
 
 ![Halaman Kebiasaan di jam: Minzi, 2 dari 5 selesai hari ini, dan kebiasaan pertama.](watch-habits)
 
-Dengan suara: ketuk pensil di **Berikutnya** untuk catatan cepat, atau **Tambah item** di daftar belanja.
+Dengan suara: ketuk pensil di **Berikutnya** untuk catatan cepat, atau **Tambah item** di daftar belanja. Atau minta Siri: "Add to my Daili list" atau "New note in Daili". Siri memahami keduanya dalam bahasa Inggris.
 
 ![Daftar belanja di jam, dengan Tambah item di atas.](watch-shopping)
 

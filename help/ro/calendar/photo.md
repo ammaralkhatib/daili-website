@@ -5,7 +5,7 @@ summary: Fotografiază o scrisoare de la școală, o invitație sau un fluturaș
 keywords: fotografie, scanare, scrisoare, invitație, fluturaș, date, ai, cameră, școală, citește poza
 tipTitle: Transformă o scrisoare de la școală în evenimente
 tipBody: Apasă pe pictograma de scanare din Eveniment nou, fotografiază scrisoarea și daili completează datele.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Date pe hârtie? Pictograma de scanare din **Eveniment nou** le citește.
 
@@ -21,4 +21,4 @@ Textul tipărit merge cel mai bine, scrisul de mână mai puțin. Pentru un PDF,
 
 > Note: Poza ajunge la AI-ul Google ca să fie citită, apoi e ștearsă, fără datele camerei, cum ar fi locația. daili te întreabă mai întâi, iar din **Setări** → **Funcții AI (Google Gemini)** le poți opri.
 
-> Note: Fiecare familie primește câteva citiri gratuite de fotografii în fiecare lună, comune cu citirile video. Daili Plus are mai multe — iar dacă familia ta s-a alăturat devreme, citirile sunt gratuite pe viață.
+> Note: Citirea unei fotografii folosește o acțiune AI. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30.

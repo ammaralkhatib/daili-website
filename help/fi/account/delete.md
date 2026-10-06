@@ -3,14 +3,14 @@ id: account-delete
 title: Poista tilisi (ja peru 30 päivän sisällä)
 summary: Tilisi poistetaan lopullisesti 30 päivän kuluttua. Siihen asti kirjautuminen tai sähköpostimme linkki palauttaa sen.
 keywords: poista tili, tilin poisto, sulje tili, peru poisto, palauta tili, 30 päivää, lopeta daili, gdpr, tietosuoja
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Haluatko ensin kopion tiedoistasi? Lataa se ennen kuin aloitat.
 
 ![Profiili-näkymä. Poista tili, viimeinen rivi kohdassa Tili, on ympyröity.](account-delete)
 
 1. Avaa **Asetukset** ja napauta nimeäsi yläreunassa.
-2. Napauta **Poista tili** kohdassa **Tili**.
+2. Napauta **Poista tili** kohdassa **Tili**. Sivulla näkyvät kyseisen tilin nimi ja sähköpostiosoite.
 3. Kerro halutessasi, miksi lähdet. Se on vapaaehtoista.
 4. Kirjoita pyydetty sana, **POISTA**, ja napauta **Poista tilini**.
 5. daili kirjaa sinut ulos. Lähetämme sinulle sähköpostilla peruutuslinkin.

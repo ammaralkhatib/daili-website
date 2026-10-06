@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili na Apple Watch
 summary: Podívej se, co tě čeká, odškrtávej nákupy, úkoly a návyky a přidávej věci hlasem – přímo na zápěstí.
 keywords: apple watch, watch, hodinky, zápěstí, komplikace, ciferník, smart stack, nákupní seznam, hlas, diktování, rychlá poznámka, návyky
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Přejížděj mezi čtyřmi stránkami: **Nejbližší** s tvými dalšími událostmi, dnešní večeří a nejbližšími narozeninami, tvůj nákupní seznam, tvoje **Úkoly** a **Návyky** s Minzi.
 
@@ -19,7 +19,7 @@ Klepnutím na řádek ho odškrtneš. U nákupního seznamu a úkolů klepni do 
 
 ![Stránka Návyky na hodinkách: Minzi, dnes hotovo 2 z 5, a první návyky.](watch-habits)
 
-Hlasem: klepni na tužku na **Nejbližší** pro rychlou poznámku, nebo na **Přidat položku** na nákupním seznamu.
+Hlasem: klepni na tužku na **Nejbližší** pro rychlou poznámku, nebo na **Přidat položku** na nákupním seznamu. Nebo požádej Siri: "Add to my Daili list" nebo "New note in Daili" — Siri těmto frázím rozumí anglicky.
 
 ![Nákupní seznam na hodinkách, nahoře Přidat položku.](watch-shopping)
 

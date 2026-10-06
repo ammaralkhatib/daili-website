@@ -5,7 +5,7 @@ summary: Foto surat dari sekolah, undangan, atau brosur — daili menemukan tang
 keywords: foto, pindai, surat, undangan, brosur, tanggal, ai, kamera, sekolah, baca foto
 tipTitle: Ubah surat sekolah menjadi acara
 tipBody: Ketuk ikon pindai di Acara baru, foto suratnya, dan daili mengisi tanggalnya.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Tanggalnya ada di kertas? Ikon pindai di **Acara baru** membacanya untuk Anda.
 
@@ -21,4 +21,4 @@ Teks cetak paling bagus, tulisan tangan kurang. Untuk PDF, foto halamannya.
 
 > Note: Foto dikirim ke AI Google untuk dibaca, lalu dihapus, tanpa data kamera seperti lokasi. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
 
-> Note: Setiap keluarga mendapat beberapa kali baca foto gratis setiap bulan, berbagi dengan baca video. Daili Plus punya lebih banyak — dan kalau keluarga Anda bergabung sejak awal, baca gratis selamanya.
+> Note: Satu kali baca foto memakai satu aksi AI. Setiap keluarga mendapat 3 aksi AI gratis per bulan; Daili Plus memberi 30.

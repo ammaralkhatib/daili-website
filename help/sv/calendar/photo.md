@@ -5,7 +5,7 @@ summary: Fota ett brev från skolan, en inbjudan eller en flyer – daili plocka
 keywords: foto, skanna, brev, inbjudan, flyer, datum, ai, kamera, skola, läs foto
 tipTitle: Gör ett skolbrev till händelser
 tipBody: Tryck på skanningsikonen i Ny händelse, fota brevet, så fyller daili i datumen.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Datum på papper? Skanningsikonen i **Ny händelse** läser dem.
 
@@ -21,4 +21,4 @@ Tryckt text fungerar bäst, handskrift sämre. För en PDF, fota sidan.
 
 > Note: Fotot skickas till Googles AI för att läsas och raderas sedan, utan kameradata som plats. daili frågar dig först, och **Inställningar** → **AI-funktioner (Google Gemini)** stänger av det.
 
-> Note: Varje familj får några gratis fotoläsningar varje månad, delade med videoläsningarna. Daili Plus har fler – och om din familj var med tidigt är läsningar gratis för alltid.
+> Note: En fotoläsning använder en AI-åtgärd. Varje familj får 3 AI-åtgärder i månaden gratis; Daili Plus ger 30.

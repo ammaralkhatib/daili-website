@@ -5,7 +5,7 @@ summary: Vær med i opptil 5 familier eller grupper med én konto, og bytt mello
 keywords: gruppe, familie nummer to, bytt familie, besteforeldre, klubb, lag, skoleklasse, flere familier, standardfamilie
 tipTitle: Mer enn én familie?
 tipBody: Legg til besteforeldrene eller idrettslaget som en gruppe, og bytt med ett trykk.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Én konto kan være med i opptil 5 familier eller grupper: hjemmet ditt, besteforeldrene, idrettslaget eller skoleklassen. Hver har sin egen kalender og sine egne lister.
 
@@ -19,4 +19,4 @@ Du finner den samme listen på skjermen Familie: trykk på **Bytt familie eller 
 
 Admins kan gi en familie sitt eget bilde: trykk på familiebildet på skjermen Familie for å ta, velge eller fjerne et. Det vises også i denne listen.
 
-> Note: Et bytte gjelder bare denne telefonen. Trykk på **⋮** ved siden av en familie og på **Gjør til standard** for å velge den daili åpner på en ny telefon.
+> Note: Et bytte gjelder bare denne telefonen. Trykk på **⋮** ved siden av en familie og på **Gjør til standard** for å velge den daili åpner på en ny telefon. Når du har logget ut og inn igjen, åpner daili familien du sist brukte på denne telefonen.

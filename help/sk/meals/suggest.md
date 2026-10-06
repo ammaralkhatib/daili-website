@@ -5,7 +5,7 @@ summary: Jedno ťuknutie navrhne večeru na každý voľný večer v týždni �
 keywords: jedálniček, návrh, ai, naplánuj týždeň, nápady na večeru, čo bude na večeru, týždenné menu, rýchle večere, vegetariánske, deti
 tipTitle: Nevieš, čo na večeru?
 tipBody: Ťukni v jedálničku na iskričky a Daili navrhne večeru na každý voľný večer.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Nevieš, čo na večeru?
 
@@ -21,4 +21,4 @@ Doplnia sa len voľné večery od dnes, bez jedál z posledných dvoch týždňo
 
 > Note: Názvy tvojich receptov, posledné jedlá a tvoje želanie idú do AI od Googlu, ktorá nič neukladá. daili sa ťa najprv opýta a **Nastavenia** → **Funkcie AI (Google Gemini)** to vypne.
 
-> Note: Návrhy zdieľajú mesačné čítania AI s čítaniami videí a fotiek. Daili Plus ich má viac — a ak sa tvoja rodina pridala skoro, sú zadarmo navždy.
+> Note: Návrh spotrebuje jednu akciu AI. Každá rodina má mesačne 3 akcie AI zadarmo; Daili Plus dáva 30.

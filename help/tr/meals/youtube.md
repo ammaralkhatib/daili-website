@@ -5,7 +5,7 @@ summary: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve
 keywords: youtube, video, tarif videosu, yemek videosu, video içe aktar, bağlantı, link, yapay zeka, tarifi kaydet, shorts
 tipTitle: Bir YouTube videosunu tarife dönüştür
 tipBody: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve adımları senin için yazsın.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 YouTube'da bir yemek mi gördün? daili tarifi senin için yazabilir.
 
@@ -20,4 +20,4 @@ Tarif videonun açıklamasındaysa bu hızlı olur. Yoksa daili videoyu izler.
 
 Tarif telefonunun dilinde çıkar. İlk seferde daili, Google'ın yapay zekâsını (Gemini) kullanmadan önce sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
 
-> Note: Yalnızca en fazla 25 dakikalık herkese açık videolar çalışır. Her aile her ay birkaç ücretsiz video okuma hakkı alır. Daili Plus'ta daha fazlası var — ailen erken katıldıysa video okumaları ömür boyu ücretsiz.
+> Note: Yalnızca en fazla 25 dakikalık herkese açık videolar çalışır. Her video okuma bir yapay zekâ işlemi kullanır. Her aile ayda 3 ücretsiz yapay zekâ işlemi alır; Daili Plus 30 verir.

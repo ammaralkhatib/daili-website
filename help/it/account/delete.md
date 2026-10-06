@@ -3,14 +3,14 @@ id: account-delete
 title: Eliminare il tuo account (e cambiare idea entro 30 giorni)
 summary: Il tuo account viene eliminato per sempre dopo 30 giorni. Fino ad allora, accedere o il link nella nostra e-mail lo riporta indietro.
 keywords: eliminare account, cancellare account, chiudere account, annullare eliminazione, ripristinare account, 30 giorni, lasciare daili, gdpr
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Vuoi prima una copia dei tuoi dati? Scaricala prima di iniziare.
 
 ![La schermata Profilo. Elimina l'account, l'ultima riga sotto Account, è cerchiato.](account-delete)
 
 1. Apri **Impostazioni**, poi tocca il tuo nome in alto.
-2. Sotto **Account**, tocca **Elimina l'account**.
+2. Sotto **Account**, tocca **Elimina l'account**. La pagina mostra il nome e l'email di quell'account.
 3. Se vuoi, dicci perché te ne vai. È facoltativo.
 4. Scrivi la parola richiesta, **ELIMINA**, e tocca **Elimina il mio account**.
 5. daili ti disconnette. Ti mandiamo un'e-mail con un link per annullare.

@@ -72,5 +72,13 @@
   "watch-shopping": { "file": "watch-shopping.webp", "w": 416, "h": 496, "kind": "image" },
   "watch-todos": { "file": "watch-todos.webp", "w": 416, "h": 496, "kind": "image" },
   "watch-habits": { "file": "watch-habits.webp", "w": 416, "h": 496, "kind": "image" },
-  "watch-quick-note": { "file": "watch-quick-note.webp", "w": 416, "h": 496, "kind": "image" }
+  "watch-quick-note": { "file": "watch-quick-note.webp", "w": 416, "h": 496, "kind": "image" },
+  "notes-filter": { "file": "notes-filter.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-pictures": { "file": "notes-pictures.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-voice": { "file": "notes-voice.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-draw": { "file": "notes-draw.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-trash": { "file": "notes-trash.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-ai": { "file": "notes-ai.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-app-colour": { "file": "account-app-colour.webp", "w": 720, "h": 1564, "kind": "image" },
+  "plus-sheet": { "file": "plus-sheet.webp", "w": 720, "h": 1564, "kind": "image" }
 }

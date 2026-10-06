@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili op je Apple Watch
 summary: Zie wat er komt, vink boodschappen, taken en gewoontes af en voeg iets toe met je stem – gewoon om je pols.
 keywords: apple watch, watch, horloge, pols, complicatie, wijzerplaat, smart stack, boodschappenlijst, stem, dicteren, snelle notitie, gewoontes
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Veeg tussen vier pagina's: **Eerstvolgend** met je volgende afspraken, het avondeten van vanavond en de volgende verjaardag, je boodschappenlijst, je **Taken** en **Gewoontes** met Minzi.
 
@@ -19,7 +19,7 @@ Tik op een regel om hem af te vinken. Op de boodschappenlijst en bij je taken ti
 
 ![De pagina Gewoontes op het horloge: Minzi, vandaag 2 van 5 gedaan, en de eerste gewoontes.](watch-habits)
 
-Met je stem: tik op **Eerstvolgend** op het potlood voor een snelle notitie, of op de boodschappenlijst op **Item toevoegen**.
+Met je stem: tik op **Eerstvolgend** op het potlood voor een snelle notitie, of op de boodschappenlijst op **Item toevoegen**. Of vraag het Siri: "Toevoegen aan mijn Daili-lijst" of "Nieuwe notitie in Daili".
 
 ![De boodschappenlijst op het horloge, met bovenaan Item toevoegen.](watch-shopping)
 

@@ -5,7 +5,7 @@ summary: Zit met één account in maximaal 5 gezinnen of groepen, en wissel ertu
 keywords: groep, tweede gezin, gezin wisselen, opa en oma, club, team, schoolklas, meerdere gezinnen, standaardgezin
 tipTitle: Meer dan één gezin?
 tipBody: Voeg opa en oma of de sportclub toe als groep, en wissel met één tik.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Eén account kan in maximaal 5 gezinnen of groepen zitten: je eigen huis, opa en oma, de sportclub of de schoolklas. Elk heeft een eigen agenda en eigen lijsten.
 
@@ -19,4 +19,4 @@ Dezelfde lijst vind je op het gezinsscherm: tik op **Wisselen van gezin of groep
 
 Beheerders kunnen een gezin een eigen foto geven: tik op het gezinsscherm op de gezinsfoto om er een te maken, te kiezen of te verwijderen. Hij staat ook in deze lijst.
 
-> Note: Wisselen geldt alleen voor deze telefoon. Tik op **⋮** naast een gezin en op **Als standaard instellen** om te kiezen welke daili op een nieuwe telefoon opent.
+> Note: Wisselen geldt alleen voor deze telefoon. Tik op **⋮** naast een gezin en op **Als standaard instellen** om te kiezen welke daili op een nieuwe telefoon opent. Nadat je bent uitgelogd en weer ingelogd, opent daili het gezin dat je het laatst op deze telefoon hebt gebruikt.

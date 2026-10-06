@@ -3,14 +3,14 @@ id: account-delete
 title: Hesabını sil (ve 30 gün içinde fikrini değiştir)
 summary: Hesabın 30 gün sonra kalıcı olarak silinir. O zamana kadar giriş yapmak ya da e-postamızdaki bağlantı onu geri getirir.
 keywords: hesabı sil, hesabı kaldır, hesabı kapat, silmeyi iptal et, hesabı geri yükle, 30 gün, daili'den ayrıl, kvkk, gdpr
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Önce verilerinin bir kopyasını mı istiyorsun? Başlamadan önce indir.
 
 ![Profil ekranı. Hesap altındaki son satır olan Hesabı sil daire içine alınmış.](account-delete)
 
 1. **Ayarlar** ekranını aç, sonra üstteki adına dokun.
-2. **Hesap** altında **Hesabı sil** seçeneğine dokun.
+2. **Hesap** altında **Hesabı sil** seçeneğine dokun. Sayfa o hesabın adını ve e-postasını gösterir.
 3. İstersen neden ayrıldığını bize söyle. Bu isteğe bağlı.
 4. İstenen kelimeyi, **SİL**, yaz ve **Hesabımı sil** düğmesine dokun.
 5. daili oturumunu kapatır. Sana bir iptal bağlantısı e-postayla göndeririz.

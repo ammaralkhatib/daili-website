@@ -3,7 +3,7 @@ id: account-preferences
 title: Terang atau gelap, bahasa, format waktu, getaran
 summary: Pilih mode gelap, bahasa Anda, format 12 atau 24 jam, apakah daili bergetar, dan fitur AI-nya.
 keywords: mode gelap, mode terang, tema, tampilan, bahasa, 24 jam, 12 jam, format waktu, getaran, haptik, ai, gemini
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Ketuk foto Anda di bagian atas Beranda untuk membuka **Pengaturan**. Semua ini ada di bawah **Preferensi**.
 
@@ -11,9 +11,11 @@ Ketuk foto Anda di bagian atas Beranda untuk membuka **Pengaturan**. Semua ini a
 
 1. **Bahasa**: pilih salah satu bahasa daili, atau **Bawaan sistem** untuk mengikuti ponsel.
 2. **Format waktu**: **24 jam**, **12 jam**, atau **Sistem** untuk mengikuti ponsel.
-3. **Tampilan**: **Terang**, **Gelap**, atau **Sistem** untuk mengikuti ponsel.
+3. **Tampilan**: **Terang**, **Gelap**, atau **Sistem** untuk mengikuti ponsel. Di bawah **Warna aplikasi**, pilih **hijau daili** atau **Warna saya**. Warna ini mewarnai tombol, tautan, kartu, dan, secara samar, latar belakang.
 4. **Getaran**: getaran kecil saat sesuatu selesai, tersimpan, atau terhapus. Matikan kalau tidak suka.
 5. **Fitur AI (Google Gemini)**: mengizinkan AI Google membaca foto, tautan video, dan keinginan menu Anda. Dimatikan? daili bertanya lagi lain kali.
+
+![Lembar Tampilan. Warna aplikasi, dengan hijau daili dan Warna saya, dilingkari.](account-app-colour)
 
 Pengaturan ini hanya untuk ponsel ini. Keluarga Anda punya pengaturannya sendiri.
 

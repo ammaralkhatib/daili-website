@@ -5,7 +5,7 @@ summary: Tek hesapla en fazla 5 ailede ya da grupta ol ve aralarında geçiş ya
 keywords: grup, ikinci aile, aile değiştir, büyükanne ve büyükbaba, kulüp, takım, okul sınıfı, birden fazla aile, varsayılan aile
 tipTitle: Birden fazla aile mi?
 tipBody: Büyükanneyle büyükbabayı ya da spor kulübünü grup olarak ekle ve tek dokunuşla geçiş yap.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Bir hesap en fazla 5 ailede ya da grupta olabilir: evin, büyükanneyle büyükbaba, spor kulübü ya da okul sınıfı. Her birinin kendi takvimi ve listeleri vardır.
 
@@ -19,4 +19,4 @@ Aynı listeyi Aile ekranında da bulursun: **Aile veya grup değiştir** seçene
 
 Yöneticiler bir aileye kendi fotoğrafını verebilir: Aile ekranında aile resmine dokunarak bir fotoğraf çek, seç ya da kaldır. Fotoğraf bu listede de görünür.
 
-> Note: Geçiş yalnızca bu telefonu değiştirir. daili'nin yeni bir telefonda hangi aileyi açacağını seçmek için bir ailenin yanındaki **⋮** simgesine ve **Varsayılan yap** seçeneğine dokun.
+> Note: Geçiş yalnızca bu telefonu değiştirir. daili'nin yeni bir telefonda hangi aileyi açacağını seçmek için bir ailenin yanındaki **⋮** simgesine ve **Varsayılan yap** seçeneğine dokun. Çıkış yapıp yeniden giriş yapınca daili, bu telefonda en son kullandığın aileyi açar.

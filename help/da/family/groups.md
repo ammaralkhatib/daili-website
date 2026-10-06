@@ -5,7 +5,7 @@ summary: Vær med i op til 5 familier eller grupper med én konto, og skift mell
 keywords: gruppe, anden familie, skift familie, bedsteforældre, klub, hold, skoleklasse, flere familier, standardfamilie
 tipTitle: Mere end én familie?
 tipBody: Tilføj bedsteforældrene eller sportsklubben som en gruppe, og skift med ét tryk.
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Én konto kan være med i op til 5 familier eller grupper: jeres hjem, bedsteforældrene, sportsklubben eller skoleklassen. Hver har sin egen kalender og sine egne lister.
 
@@ -19,4 +19,4 @@ Du finder den samme liste på skærmen Familie: tryk på **Skift familie eller g
 
 Admins kan give en familie sit eget billede: tryk på familiens billede på skærmen Familie for at tage, vælge eller fjerne et. Det vises også i denne liste.
 
-> Note: Et skift gælder kun denne telefon. Tryk på **⋮** ved siden af en familie og på **Gør til standard** for at vælge den, daili åbner på en ny telefon.
+> Note: Et skift gælder kun denne telefon. Tryk på **⋮** ved siden af en familie og på **Gør til standard** for at vælge den, daili åbner på en ny telefon. Når du har logget ud og ind igen, åbner daili den familie, du sidst brugte på denne telefon.

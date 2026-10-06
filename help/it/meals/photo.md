@@ -5,7 +5,7 @@ summary: Fotografa una pagina di un libro di cucina, un biglietto scritto a mano
 keywords: foto, fotocamera, libro di cucina, scritto a mano, screenshot, scansiona ricetta, ia, salva ricetta, immagine
 tipTitle: Il biglietto della nonna, salvato in pochi secondi
 tipBody: Fotografa una pagina di un libro di cucina o un biglietto scritto a mano e daili scrive la ricetta per te.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Hai una ricetta su carta o in uno screenshot? daili la trascrive per te.
 
@@ -20,4 +20,4 @@ La ricetta esce nella lingua del tuo telefono, in qualunque lingua sia la pagina
 
 > Note: La foto viene inviata all’IA di Google per essere letta e poi eliminata, senza i dati della fotocamera come il luogo. daili te lo chiede prima, e **Impostazioni** → **Funzioni IA (Google Gemini)** la disattiva.
 
-> Note: Ogni famiglia ha qualche lettura di foto gratuita al mese, condivisa con le letture video e le foto del calendario. Daili Plus ne ha di più — e se la tua famiglia è arrivata presto, le letture sono gratis per sempre.
+> Note: Una lettura di foto usa un'azione IA. Ogni famiglia ha 3 azioni IA gratis al mese; Daili Plus ne dà 30.

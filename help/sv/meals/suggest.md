@@ -5,7 +5,7 @@ summary: Ett tryck föreslår middag för varje ledig kväll i veckan – från 
 keywords: matsedel, föreslå, ai, planera veckan, middagsidéer, vad blir det till middag, veckomeny, snabba middagar, vegetariskt, barn
 tipTitle: Slut på middagsidéer?
 tipBody: Tryck på stjärnorna i matsedeln så föreslår Daili middag för varje ledig kväll.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Slut på middagsidéer?
 
@@ -21,4 +21,4 @@ Bara lediga kvällar från i dag fylls i, utan de senaste två veckornas måltid
 
 > Note: Dina recepttitlar, era senaste måltider och din önskan skickas till Googles AI, som inte sparar något. daili frågar dig först, och **Inställningar** → **AI-funktioner (Google Gemini)** stänger av det.
 
-> Note: Förslag delar de månatliga AI-läsningarna med video- och fotoläsningar. Daili Plus har fler – och om din familj var med tidigt är de gratis för alltid.
+> Note: Ett förslag använder en AI-åtgärd. Varje familj får 3 AI-åtgärder i månaden gratis; Daili Plus ger 30.

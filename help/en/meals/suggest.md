@@ -7,10 +7,10 @@ keywords: meal plan, suggest, ai, plan my week, dinner ideas, what's for dinner,
 routes: /meal-plan, /meal-plan/suggest
 tryIt: /meal-plan
 since: 1.7.0
-updated: 2026-09-28
+updated: 2026-10-06
 media: meals-suggest
 order: 8
-related: meals-plan-week, meals-to-shopping, meals-add-recipe, meals-photo
+related: meals-plan-week, meals-to-shopping, meals-add-recipe, meals-photo, account-plus
 tipTitle: Out of dinner ideas?
 tipBody: Tap the sparkle on the Meal plan and Daili suggests a dinner for every open evening, from your recipes and new ones.
 tipSkipIf: hasMealPlan
@@ -30,4 +30,4 @@ Only open evenings from today are filled, skipping the last two weeks' meals. Ne
 
 > Note: Your recipe titles, recent meals and wish go to Google's AI, which stores nothing. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: Suggestions share the monthly AI reads with videos and photos. Daili Plus has more; early families: free for life.
+> Note: A suggestion uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 30.

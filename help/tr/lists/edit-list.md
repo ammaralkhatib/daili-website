@@ -15,6 +15,6 @@ Bu, alışveriş ve görev listelerinde aynı şekilde çalışır.
 4. Sırayı değiştirmek için bir karta basılı tut ve sürükle.
 5. Bir listeyi silmek için kartındaki **⋯** simgesine, sonra **Sil** seçeneğine dokun. Mesajdaki **Geri al** onu birkaç saniye boyunca geri getirir.
 
-**Yalnızca ben** açıkken listeyi ve içindeki her şeyi yalnızca sen görürsün, adının yanında bir kilit olur. Bunu yalnızca listeyi oluşturan kişi değiştirebilir. Özel listeler ve görevler başka kimseye bildirim göndermez; etkinlik listesinde, başkalarının yazma önerilerinde ve sabah özetinde, TRMNL duvar ekranında da görünmez. Hatırlatıcıları yalnızca sana gelir.
+**Yalnızca ben** açıkken listeyi ve içindeki her şeyi yalnızca sen görürsün, adının yanında bir kilit olur. Bunu yalnızca listeyi oluşturan kişi değiştirebilir. Özel listeler ve görevler başka kimseye bildirim göndermez; etkinlik akışında, başkalarının yazma önerilerinde ve sabah özetinde, TRMNL duvar ekranında da görünmez. Hatırlatıcıları yalnızca sana gelir.
 
 > Note: Silinen bir liste tüm öğeleriyle birlikte bütün aile için gider. İçindeki başkalarına ait özel görevler korunur: her biri aynı adla özel bir liste alır.

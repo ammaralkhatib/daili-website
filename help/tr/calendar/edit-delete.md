@@ -15,4 +15,4 @@ Planlar değişir. Takvimi de onlarla birlikte böyle değiştirirsin.
 
 Yinelenen bir etkinlikte daili, **Kaydet** sonrasında değişikliğin neye uygulanacağını sorar: **Yalnızca bu etkinlik**, **Bu ve sonraki etkinlikler** ya da **Tüm etkinlikler**. Gri bir seçenek, değişikliğini neden uygulayamadığını söyler. **Sil** aynı üç seçeneği hemen sunar.
 
-> Note: Ortak bir etkinliği aileden herkes değiştirebilir ya da silebilir, etkinlik listesi de bunu kimin yaptığını gösterir. Özel bir etkinliği yalnızca onu oluşturan kişi değiştirebilir.
+> Note: Ortak bir etkinliği aileden herkes değiştirebilir ya da silebilir, etkinlik akışı da bunu kimin yaptığını gösterir. Özel bir etkinliği yalnızca onu oluşturan kişi değiştirebilir.

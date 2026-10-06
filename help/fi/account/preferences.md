@@ -3,7 +3,7 @@ id: account-preferences
 title: Vaalea tai tumma, kieli, ajan muoto, värinä
 summary: Valitse tumma tila, kielesi, 12 tai 24 tunnin kello, väriseekö daili, ja sen tekoälyominaisuudet.
 keywords: tumma tila, vaalea tila, teema, ulkoasu, kieli, 24 tuntia, 12 tuntia, ajan muoto, värinä, haptiikka, tekoäly, gemini
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löytyvät kortilta **Yleiset**.
 
@@ -11,9 +11,11 @@ Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löy
 
 1. **Kieli**: valitse yksi dailin kielistä tai **Järjestelmän oletus**, jolloin kieli seuraa puhelinta.
 2. **Ajan muoto**: **24 tuntia**, **12 tuntia** tai **Järjestelmä**, jolloin se seuraa puhelinta.
-3. **Ulkoasu**: **Vaalea**, **Tumma** tai **Järjestelmä**, jolloin se seuraa puhelinta.
+3. **Ulkoasu**: **Vaalea**, **Tumma** tai **Järjestelmä**, jolloin se seuraa puhelinta. Valitse kohdasta **Sovelluksen väri** joko **daili-vihreä** tai **Oma värini**. Väri sävyttää painikkeet, linkit, kortit ja hennosti taustan.
 4. **Värinä**: pieni värähdys, kun jotain on tehty, tallennettu tai poistettu. Laita se pois, jos et pidä siitä.
 5. **Tekoälyominaisuudet (Google Gemini)**: antaa Googlen tekoälyn lukea kuvasi, videolinkit ja ateriatoiveesi. Pois päältä? daili kysyy uudelleen ensi kerralla.
+
+![Paneeli Ulkoasu. Sovelluksen väri sekä daili-vihreä ja Oma värini on ympyröity.](account-app-colour)
 
 Nämä asetukset koskevat vain tätä puhelinta. Perheesi pitää omansa.
 

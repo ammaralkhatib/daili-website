@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili pe Apple Watch
 summary: Vezi ce urmează, bifează cumpărături, sarcini și obiceiuri și adaugă lucruri prin voce – direct la încheietură.
 keywords: apple watch, watch, ceas, încheietură, complicație, cadran, smart stack, listă de cumpărături, voce, dictare, notiță rapidă, obiceiuri
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Glisează între patru pagini: **Urmează** cu următoarele tale evenimente, cina de diseară și următoarea zi de naștere, lista ta de cumpărături, **Sarcini** și **Obiceiuri** cu Minzi.
 
@@ -19,7 +19,7 @@ Atinge un rând ca să-l bifezi. Pe lista de cumpărături și la sarcini, ating
 
 ![Pagina Obiceiuri pe ceas: Minzi, 2 din 5 făcute azi și primele obiceiuri.](watch-habits)
 
-Prin voce: atinge creionul de pe **Urmează** pentru o notiță rapidă sau **Adaugă articol** pe lista de cumpărături.
+Prin voce: atinge creionul de pe **Urmează** pentru o notiță rapidă sau **Adaugă articol** pe lista de cumpărături. Sau cere-i lui Siri: „Add to my Daili list” sau „New note in Daili”. Siri înțelege aceste fraze în engleză.
 
 ![Lista de cumpărături pe ceas, cu Adaugă articol sus.](watch-shopping)
 

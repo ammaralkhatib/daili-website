@@ -5,7 +5,7 @@ summary: Wklej link do filmu kulinarnego, a daili samo spisze składniki i kroki
 keywords: youtube, film, wideo, przepis wideo, film kulinarny, import filmu, link, ai, zapisz przepis, shorts
 tipTitle: Zrób przepis z filmu na YouTube
 tipBody: Wklej link do filmu kulinarnego, a daili samo spisze składniki i kroki.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Danie z YouTube wpadło ci w oko? daili może spisać dla ciebie przepis.
 
@@ -20,4 +20,4 @@ Jeśli przepis jest w opisie filmu, idzie szybko. W przeciwnym razie daili oglą
 
 Przepis pojawi się w języku twojego telefonu. Za pierwszym razem daili zapyta, zanim użyje AI Google (Gemini); **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
-> Note: Działają tylko publiczne filmy do 25 minut. Każda rodzina dostaje co miesiąc kilka darmowych odczytów filmów. Daili Plus ma ich więcej — a jeśli twoja rodzina dołączyła wcześnie, odczyty filmów są za darmo na zawsze.
+> Note: Działają tylko publiczne filmy do 25 minut. Odczyt filmu zużywa jedną akcję AI. Każda rodzina dostaje co miesiąc 3 akcje AI za darmo; Daili Plus daje 30.

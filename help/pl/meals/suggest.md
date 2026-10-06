@@ -5,7 +5,7 @@ summary: Jedno dotknięcie proponuje kolację na każdy wolny wieczór tygodnia 
 keywords: jadłospis, propozycje, ai, zaplanuj tydzień, pomysły na kolację, co na kolację, menu na tydzień, szybkie kolacje, wegetariańskie, dzieci
 tipTitle: Brak pomysłów na kolację?
 tipBody: Dotknij iskierek w Jadłospisie, a Daili zaproponuje kolację na każdy wolny wieczór.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Brak pomysłów na kolację?
 
@@ -21,4 +21,4 @@ Uzupełniane są tylko wolne wieczory od dziś, bez tego, co jedliście w ostatn
 
 > Note: Tytuły twoich przepisów, ostatnie posiłki i twoje życzenie trafiają do AI Google, które niczego nie przechowuje. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
-> Note: Propozycje dzielą miesięczne odczyty AI z odczytami filmów i zdjęć. Daili Plus ma ich więcej — a jeśli twoja rodzina dołączyła wcześnie, są za darmo na zawsze.
+> Note: Propozycja zużywa jedną akcję AI. Każda rodzina dostaje co miesiąc 3 akcje AI za darmo; Daili Plus daje 30.

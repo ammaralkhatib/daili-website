@@ -5,7 +5,7 @@ summary: 요리 동영상 링크를 붙여 넣으면 daili가 재료와 조리 �
 keywords: youtube, 유튜브, 동영상, 레시피 영상, 요리 영상, 동영상 가져오기, 링크, ai, 레시피 저장, 쇼츠
 tipTitle: YouTube 동영상을 레시피로 바꿔 보세요
 tipBody: 요리 동영상 링크를 붙여 넣으면 daili가 재료와 조리 단계를 써 줘요.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 YouTube에서 맛있어 보이는 요리를 봤나요? daili가 레시피를 대신 써 줄 수 있어요.
 
@@ -20,4 +20,4 @@ YouTube에서 맛있어 보이는 요리를 봤나요? daili가 레시피를 대
 
 레시피는 휴대폰 언어로 나와요. 처음에는 Google의 AI(Gemini)를 쓰기 전에 daili가 물어봐요. **설정** → **AI 기능 (Google Gemini)**에서 끌 수 있어요.
 
-> Note: 최대 25분 길이의 공개 동영상만 돼요. 모든 가족은 매달 무료 동영상 읽기를 몇 번 받아요. Daili Plus에서는 더 많이 쓸 수 있어요. 일찍 가입한 가족이라면 동영상 읽기가 평생 무료예요.
+> Note: 최대 25분 길이의 공개 동영상만 돼요. 동영상 읽기는 AI 작업을 1회 써요. 모든 가족은 매달 AI 작업 3회를 무료로 받아요. Daili Plus는 30회예요.

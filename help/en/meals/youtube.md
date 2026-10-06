@@ -7,10 +7,10 @@ keywords: youtube, video, recipe video, cooking video, import video, link, ai, s
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-09-28
+updated: 2026-10-06
 media: meals-youtube
 order: 3
-related: meals-import-link, meals-paste, meals-add-recipe
+related: meals-import-link, meals-paste, meals-add-recipe, account-plus
 tipTitle: Turn a YouTube video into a recipe
 tipBody: Paste a cooking video link and daili writes the ingredients and steps for you.
 tipSkipIf: hasRecipes
@@ -29,4 +29,4 @@ If the recipe is in the video's description, it's quick. Otherwise daili watches
 
 The recipe comes out in your phone's language. The first time, daili asks before using Google's AI (Gemini); **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: Only public videos up to 25 minutes work. Every family gets a few free video reads each month. Daili Plus has more — and if your family joined early, video reads are free for life.
+> Note: Only public videos up to 25 minutes work. A video read uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 30.

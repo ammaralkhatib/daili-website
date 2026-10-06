@@ -3,7 +3,7 @@ id: anywhere-watch
 title: daili sur ton Apple Watch
 summary: Vois ce qui arrive, coche courses, tâches et habitudes, et ajoute des choses à la voix – directement à ton poignet.
 keywords: apple watch, watch, montre, poignet, complication, cadran, smart stack, liste de courses, voix, dictée, note rapide, habitudes
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Balaie entre quatre pages : **À suivre** avec tes prochains événements, le dîner de ce soir et le prochain anniversaire, ta liste de courses, tes **Tâches** et **Habitudes** avec Minzi.
 
@@ -19,7 +19,7 @@ Touche une ligne pour la cocher. Sur la liste de courses et dans tes tâches, to
 
 ![La page Habitudes sur la montre : Minzi, 2 sur 5 faites aujourd'hui, et les premières habitudes.](watch-habits)
 
-À la voix : touche le crayon sur **À suivre** pour une note rapide, ou **Ajouter un élément** sur la liste de courses.
+À la voix : touche le crayon sur **À suivre** pour une note rapide, ou **Ajouter un élément** sur la liste de courses. Ou demande à Siri : « Ajouter à ma liste Daili » ou « Nouvelle note dans Daili ».
 
 ![La liste de courses sur la montre, avec Ajouter un élément en haut.](watch-shopping)
 

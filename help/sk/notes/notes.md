@@ -2,28 +2,34 @@
 id: notes-notes
 title: Poznámky: ukladaj myšlienky a odkazy dvoma ťuknutiami
 summary: Napíš poznámku alebo zdieľaj odkaz z akejkoľvek aplikácie. Poznámky sú súkromné, kým ich nezdieľaš.
-keywords: poznámka, poznámky, rýchla poznámka, odkaz, uložiť odkaz, zdieľať, youtube, štítok, pripnúť, hľadať, widget, offline
+keywords: poznámka, poznámky, rýchla poznámka, odkaz, zdieľať, kontrolný zoznam, štítok, filter, hľadať, pripomienka, nedávno vymazané, zhrnúť
 tipTitle: Zdieľaj odkaz do daili a máš ho uložený
 tipBody: Zdieľaj video, príspevok alebo stránku z akejkoľvek aplikácie do daili — vznikne poznámka, súkromná, kým ju nezdieľaš.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-06
 ---
-Poznámka je krátky text, odkaz alebo oboje. Odkaz o chvíľu dostane náhľad. Žiadne priečinky, žiadne formátovanie.
+Poznámka má **Názov**, text alebo oboje. Fungujú odrážky aj kontrolné zoznamy: ťuknutím políčko odškrtneš. Žiadne priečinky.
 
 ![Domovská obrazovka. Dlaždica Poznámky je zakrúžkovaná.](notes-tile)
 
-1. Na domovskej obrazovke ťukni na **Poznámky**, alebo na **+** a potom **Poznámka**.
-2. Napíš ju a ťukni na **Uložiť**. Prvý riadok je názov.
+1. Na domovskej obrazovke ťukni na **Poznámky**, potom na **+** alebo na tlačidlo v dolnej lište: obrázok, hlas (hneď nahráva), video, odkaz.
+2. Napíš ju a ťukni na **Uložiť**. Pri zatvorení neuloženej poznámky sa daili najprv opýta.
 
-V inej aplikácii, napríklad YouTube alebo prehliadači: Zdieľať → **daili** → **Uložiť**. Fotky a súbory zatiaľ nefungujú.
+Z inej aplikácie: Zdieľať → **daili** → **Uložiť**.
 
-Ešte rýchlejšie: widget **Rýchla poznámka**, Akčné tlačidlo na iPhone (Skratka → **New daili note**) alebo dlaždica **Nová poznámka** v Rýchlych nastaveniach Androidu.
+![Nová poznámka s tlačidlami Foto, Hlas, Video a Odkaz. Riadok, ktorý hovorí, kto ju uvidí, je zakrúžkovaný.](notes-new)
 
-![Nová poznámka. Riadok, ktorý hovorí, kto ju uvidí, je zakrúžkovaný.](notes-new)
+Nad klávesnicou: štítky, pripomienka (dostaneš ju len ty) a kto poznámku vidí: **Len ja** (predvolene), **Celá rodina** alebo **Vybrať členov**. Tlačidlo **Naskenovať odkaz** prečíta webovú adresu z fotky.
 
-Kto ju vidí: **Len ja** (predvolene), **Celá rodina** alebo **Vybrať členov**. Poznámka pre celú rodinu sa raz ukáže v zozname aktivít, bez upozornenia. Súkromné poznámky idú s tebou do každej skupiny.
+![Panel Filter: Typ, Štítky s možnosťou Nový štítok a Len pripnuté.](notes-filter)
 
-Hľadanie, štítky a **Pripnúť** ti pomôžu nájsť poznámky, v **Moje** alebo **Zdieľané so mnou**.
+Hľadaj alebo ťukni na tlačidlo filtra: **Typ**, **Štítky**, **Len pripnuté**. Filter zrušíš na jeho čipe.
 
-Bez internetu nová poznámka počká (**Čaká na sieť**) a odošle sa sama neskôr.
+![Nedávno vymazané. Jedna poznámka, zmizne o 27 dní, s možnosťami Vymazať navždy a Obnoviť.](notes-trash)
 
-> Note: Vymazaná poznámka je preč navždy. Kôš neexistuje.
+Vymazané poznámky čakajú 30 dní v **⋯** → **Nedávno vymazané**.
+
+![Poznámka. Skupina Daili Plus s dvoma riadkami „Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam“ a „Zhrnúť“ je zakrúžkovaná.](notes-ai)
+
+V poznámke v časti **Daili Plus** spotrebujú **Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam** aj **Zhrnúť** (video, webová stránka alebo dlhá poznámka) po jednej akcii AI.
+
+> Note: Bez internetu nová poznámka počká a odošle sa sama neskôr.

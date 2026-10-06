@@ -5,7 +5,7 @@ summary: Ett trykk foreslår middag for hver ledige kveld i uken – fra deres e
 keywords: matplan, foreslå, ai, planlegg uken, middagsidéer, hva skal vi spise, ukemeny, raske middager, vegetar, barn
 tipTitle: Tom for middagsidéer?
 tipBody: Trykk på stjernene i matplanen, så foreslår Daili middag for hver ledige kveld.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Tom for middagsidéer?
 
@@ -21,4 +21,4 @@ Bare ledige kvelder fra i dag blir fylt ut, og det dere har spist de siste to uk
 
 > Note: Oppskriftstitlene dine, de siste måltidene og ønsket ditt sendes til Googles KI, som ikke lagrer noe. daili spør deg først, og **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
 
-> Note: Forslag deler de månedlige KI-lesingene med video- og bildelesinger. Daili Plus har flere – og hvis familien din var med tidlig, er de gratis for alltid.
+> Note: Et forslag bruker én KI-handling. Hver familie får 3 KI-handlinger i måneden gratis; Daili Plus gir 30.

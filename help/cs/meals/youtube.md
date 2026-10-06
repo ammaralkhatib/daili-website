@@ -5,7 +5,7 @@ summary: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a po
 keywords: youtube, video, videorecept, video s vařením, import videa, odkaz, ai, uložit recept, shorts
 tipTitle: Udělej z videa na YouTube recept
 tipBody: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a postup.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Na YouTube tě zaujalo jídlo? daili za tebe může sepsat recept.
 
@@ -20,4 +20,4 @@ Když je recept v popisu videa, je to rychlé. Jinak se daili podívá na video.
 
 Recept bude v jazyce tvého telefonu. Poprvé se daili zeptá, než použije AI od Googlu (Gemini); **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
 
-> Note: Fungují jen veřejná videa do 25 minut. Každá rodina dostane každý měsíc pár bezplatných čtení videí. Daili Plus jich má víc — a pokud se tvoje rodina přidala brzy, jsou čtení videí zdarma navždy.
+> Note: Fungují jen veřejná videa do 25 minut. Čtení videa spotřebuje jednu akci AI. Každá rodina má každý měsíc 3 akce AI zdarma; Daili Plus dává 30.

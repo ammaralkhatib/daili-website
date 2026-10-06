@@ -3,7 +3,7 @@ id: anywhere-watch
 title: Apple Watch'unda daili
 summary: Sırada ne olduğunu gör, alışveriş, görev ve alışkanlıkları işaretle, sesle bir şeyler ekle – doğrudan bileğinde.
 keywords: apple watch, watch, saat, bilek, komplikasyon, saat kadranı, smart stack, alışveriş listesi, ses, dikte, hızlı not, alışkanlıklar
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 Dört sayfa arasında kaydır: sıradaki etkinliklerin, bu akşamın yemeği ve sıradaki doğum günüyle **Sıradaki**, alışveriş listen, **Görevler** ve Minzi ile **Alışkanlıklar**.
 
@@ -19,7 +19,7 @@ Dört sayfa arasında kaydır: sıradaki etkinliklerin, bu akşamın yemeği ve 
 
 ![Saatte Alışkanlıklar sayfası: Minzi, bugün 5'te 2 tamam ve ilk alışkanlıklar.](watch-habits)
 
-Sesle: hızlı not için **Sıradaki** sayfasındaki kaleme ya da alışveriş listesindeki **Öğe ekle**'ye dokun.
+Sesle: hızlı not için **Sıradaki** sayfasındaki kaleme ya da alışveriş listesindeki **Öğe ekle**'ye dokun. Ya da Siri'ye söyle: “Daili listeme ekle” ya da “Daili uygulamasında yeni not”.
 
 ![Saatte alışveriş listesi, en üstte Öğe ekle.](watch-shopping)
 

@@ -5,7 +5,7 @@ summary: Ein Fingertipp schlägt für jeden freien Abend der Woche ein Abendesse
 keywords: essensplan, vorschlagen, ki, woche planen, ideen fürs abendessen, was gibt es heute, wochenmenü, schnelle gerichte, vegetarisch, kinder
 tipTitle: Keine Idee fürs Abendessen?
 tipBody: Tippe im Essensplan auf das Funkel-Symbol, und Daili schlägt für jeden freien Abend ein Abendessen vor.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Keine Idee fürs Abendessen?
 
@@ -21,4 +21,4 @@ Gefüllt werden nur freie Abende ab heute, ohne die Gerichte der letzten zwei Wo
 
 > Note: Deine Rezepttitel, die letzten Mahlzeiten und dein Wunsch gehen an die KI von Google, die nichts speichert. daili fragt dich vorher, und unter **Einstellungen** → **KI-Funktionen (Google Gemini)** schaltest du das aus.
 
-> Note: Vorschläge teilen sich die monatlichen KI-Lesungen mit den Video- und Foto-Lesungen. Daili Plus bietet mehr – und wenn eure Familie früh dabei war, sind sie für immer kostenlos.
+> Note: Ein Vorschlag braucht eine KI-Aktion. Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos; mit Daili Plus sind es 30.

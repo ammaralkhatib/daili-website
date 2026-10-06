@@ -5,7 +5,7 @@ summary: Zrób zdjęcie strony z książki kucharskiej, odręcznej karteczki alb
 keywords: zdjęcie, aparat, książka kucharska, odręczny, zrzut ekranu, skanuj przepis, ai, zapisz przepis, obraz
 tipTitle: Przepis babci zapisany w kilka sekund
 tipBody: Zrób zdjęcie strony z książki kucharskiej albo odręcznej karteczki, a daili spisze przepis za ciebie.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Masz przepis na papierze albo na zrzucie ekranu? daili go przepisze.
 
@@ -20,4 +20,4 @@ Przepis powstaje w języku twojego telefonu, bez względu na język strony. Najl
 
 > Note: Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
-> Note: Każda rodzina dostaje co miesiąc kilka darmowych odczytów zdjęć, wspólnych z odczytami filmów i zdjęciami do kalendarza. Daili Plus ma ich więcej — a jeśli twoja rodzina dołączyła wcześnie, odczyty są za darmo na zawsze.
+> Note: Odczyt zdjęcia zużywa jedną akcję AI. Każda rodzina dostaje co miesiąc 3 akcje AI za darmo; Daili Plus daje 30.

@@ -2,28 +2,34 @@
 id: notes-notes
 title: Notas: guarde ideias e links em dois toques
 summary: Escreva uma nota ou compartilhe um link de qualquer app. As notas são privadas até você compartilhar.
-keywords: nota, notas, nota rápida, link, salvar link, compartilhar, youtube, etiqueta, fixar, buscar, widget, offline
+keywords: nota, notas, nota rápida, link, compartilhar, lista de verificação, etiqueta, filtro, buscar, lembrete, excluídas recentemente, resumir
 tipTitle: Compartilhe um link com o daili para salvar
 tipBody: Compartilhe um vídeo, post ou página de qualquer app com o daili e ele vira uma nota — privada até você compartilhar.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-06
 ---
-Uma nota é um texto curto, um link ou os dois. Um link ganha uma prévia depois de um instante. Sem pastas, sem formatação.
+Uma nota é um **Título**, um texto ou os dois. Listas com marcadores e listas de verificação funcionam: toque em uma caixa para marcá-la. Sem pastas.
 
 ![A tela inicial. O bloco Notas está circulado.](notes-tile)
 
-1. Na tela inicial, toque em **Notas**, ou em **+** e depois em **Nota**.
-2. Escreva e toque em **Salvar**. A primeira linha é o título.
+1. Na tela inicial, toque em **Notas** e depois em **+** ou em um botão da barra inferior: foto, voz (grava na hora), vídeo, link.
+2. Escreva e toque em **Salvar**. Ao fechar uma nota sem salvar, o daili pergunta antes.
 
-Em outro app, como o YouTube ou um navegador: Compartilhar → **daili** → **Salvar**. Fotos e arquivos ainda não funcionam.
+De outro app: Compartilhar → **daili** → **Salvar**.
 
-Mais rápido ainda: o widget **Nota rápida**, o botão de Ação do iPhone (Atalho → **New daili note**) ou o bloco **Nova nota** nas Configurações rápidas do Android.
+![Uma nota nova com os botões Foto, Voz, Vídeo e Link. A linha que diz quem pode vê-la está circulada.](notes-new)
 
-![Uma nota nova. A linha que diz quem pode vê-la está circulada.](notes-new)
+Acima do teclado: etiquetas, um lembrete (só você recebe) e quem vê a nota: **Só eu** (padrão), **Toda a família** ou **Escolher membros**. **Digitalizar link** lê um endereço da web em uma foto.
 
-Quem vê: **Só eu** (padrão), **Toda a família** ou **Escolher membros**. Uma nota para toda a família aparece uma vez na lista de novidades, sem notificação. Suas notas privadas vão com você para cada grupo.
+![A janela Filtrar: Tipo, Etiquetas com Nova etiqueta, e Só fixadas.](notes-filter)
 
-A busca, as etiquetas e **Fixar** ajudam a achar notas, em **Minhas** ou **Compartilhadas comigo**.
+Busque ou toque no botão de filtro: **Tipo**, **Etiquetas**, **Só fixadas**. Remova um filtro no chip dele.
 
-Sem internet, uma nota nova espera (**Aguardando conexão**) e é enviada sozinha depois.
+![Excluídas recentemente. Uma nota, que some em 27 dias, com Excluir de vez e Restaurar.](notes-trash)
 
-> Note: Uma nota apagada some para sempre. Não há lixeira.
+As notas excluídas esperam 30 dias em **⋯** → **Excluídas recentemente**.
+
+![Uma nota. O grupo Daili Plus com as duas linhas "Criar um evento, uma tarefa ou uma lista de compras a partir disto" e "Resumir" está circulado.](notes-ai)
+
+Em uma nota, em **Daili Plus**, **Criar um evento, uma tarefa ou uma lista de compras a partir disto** e **Resumir** (vídeo, página da web ou nota longa) usam uma ação de IA cada.
+
+> Note: Sem internet, uma nota nova espera e é enviada sozinha depois.

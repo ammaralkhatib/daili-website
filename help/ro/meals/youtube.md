@@ -5,7 +5,7 @@ summary: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine i
 keywords: youtube, video, videoclip, rețetă video, videoclip de gătit, import video, link, ai, salvează rețeta, shorts
 tipTitle: Transformă un videoclip YouTube într-o rețetă
 tipBody: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine ingredientele și pașii.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Ai văzut un preparat pe YouTube? daili poate scrie rețeta pentru tine.
 
@@ -20,4 +20,4 @@ Dacă rețeta e în descrierea videoclipului, merge repede. Altfel, daili urmăr
 
 Rețeta apare în limba telefonului tău. Prima dată, daili te întreabă înainte să folosească AI-ul Google (Gemini); din **Setări** → **Funcții AI (Google Gemini)** le poți opri.
 
-> Note: Merg doar videoclipurile publice de până la 25 de minute. Fiecare familie primește câteva citiri video gratuite în fiecare lună. Daili Plus are mai multe — iar dacă familia ta s-a alăturat devreme, citirile video sunt gratuite pe viață.
+> Note: Merg doar videoclipurile publice de până la 25 de minute. Citirea unui videoclip folosește o acțiune AI. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30.

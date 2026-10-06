@@ -5,7 +5,7 @@ summary: Pega el enlace de un vídeo de cocina, y daili escribe por ti los ingre
 keywords: youtube, vídeo, video, receta en vídeo, vídeo de cocina, importar vídeo, enlace, ia, guardar receta, shorts
 tipTitle: Convierte un vídeo de YouTube en una receta
 tipBody: Pega el enlace de un vídeo de cocina, y daili escribe por ti los ingredientes y los pasos.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 ¿Has visto un plato en YouTube? daili puede escribir la receta por ti.
 
@@ -20,4 +20,4 @@ Si la receta está en la descripción del vídeo, es rápido. Si no, daili ve el
 
 La receta sale en el idioma de tu móvil. La primera vez, daili te pregunta antes de usar la IA de Google (Gemini); **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
 
-> Note: Solo funcionan los vídeos públicos de hasta 25 minutos. Cada familia tiene unas cuantas lecturas de vídeo gratis al mes. Daili Plus tiene más — y si tu familia se unió pronto, las lecturas de vídeo son gratis para siempre.
+> Note: Solo funcionan los vídeos públicos de hasta 25 minutos. Leer un vídeo usa una acción de IA. Cada familia tiene 3 acciones de IA gratis al mes; Daili Plus da 30.

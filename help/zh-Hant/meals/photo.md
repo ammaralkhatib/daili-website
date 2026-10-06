@@ -5,7 +5,7 @@ summary: 拍下食譜書的一頁、手寫卡片或截圖，daili 就會用你�
 keywords: 照片, 相機, 食譜書, 手寫, 截圖, 掃描食譜, ai, 儲存食譜, 圖片
 tipTitle: 奶奶的食譜卡，幾秒就存好
 tipBody: 拍下食譜書的一頁或手寫卡片，daili 幫你寫好食譜。
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 食譜在紙上或截圖裡？daili 幫你整理成文字。
 
@@ -20,4 +20,4 @@ translatedFrom: 2026-09-28
 
 > Note: 照片會傳給 Google 的 AI 讀取，之後就刪除，傳送時不含位置等相機資訊。daili 會先問你，在**設定** → **AI 功能（Google Gemini）**裡可以關掉。
 
-> Note: 每個家庭每月都有幾次免費的照片讀取，與影片讀取和行事曆照片共用。Daili Plus 可以用更多；如果你的家庭很早就加入，讀取終身免費。
+> Note: 讀取一張照片使用 1 次 AI 操作。每個家庭每月有 3 次免費的 AI 操作；Daili Plus 提供 30 次。

@@ -5,7 +5,7 @@ summary: Fotografe uma página de livro de receitas, um cartão escrito à mão 
 keywords: foto, câmera, livro de receitas, escrito à mão, print, escanear receita, ia, salvar receita, imagem
 tipTitle: A receita da vovó, salva em segundos
 tipBody: Fotografe uma página de livro de receitas ou um cartão escrito à mão e o daili escreve a receita para você.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 Tem uma receita no papel ou num print? O daili digita para você.
 
@@ -20,4 +20,4 @@ A receita sai no idioma do seu celular, seja qual for o idioma da página. Texto
 
 > Note: A foto vai para a IA do Google para ser lida e depois é apagada, sem dados da câmera como a localização. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
 
-> Note: Toda família ganha algumas leituras de foto grátis por mês, divididas com as leituras de vídeo e as fotos do calendário. O Daili Plus tem mais — e se a sua família entrou cedo, as leituras são grátis para sempre.
+> Note: Ler uma foto usa uma ação de IA. Toda família ganha 3 ações de IA grátis por mês; o Daili Plus dá 30.

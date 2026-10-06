@@ -5,7 +5,7 @@ summary: Haz una foto a una circular del colegio, una invitación o un folleto �
 keywords: foto, escanear, carta, invitación, folleto, fechas, ia, cámara, colegio, leer foto
 tipTitle: Convierte una circular del colegio en eventos
 tipBody: Toca el icono de escanear en Evento nuevo, fotografía la circular y daili rellena las fechas.
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-06
 ---
 ¿Fechas en papel? El icono de escanear en **Evento nuevo** las lee.
 
@@ -21,4 +21,4 @@ El texto impreso funciona mejor; la letra a mano, peor. Para un PDF, haz una fot
 
 > Note: La foto se envía a la IA de Google para leerla y luego se borra, sin datos de la cámara como la ubicación. daili te pregunta antes, y **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
 
-> Note: Cada familia tiene unas cuantas lecturas de fotos gratis al mes, compartidas con las lecturas de vídeo. Daili Plus tiene más — y si tu familia se unió pronto, las lecturas son gratis para siempre.
+> Note: Leer una foto usa una acción de IA. Cada familia tiene 3 acciones de IA gratis al mes; Daili Plus da 30.

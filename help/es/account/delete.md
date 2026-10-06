@@ -3,14 +3,14 @@ id: account-delete
 title: Eliminar tu cuenta (y cambiar de opinión en 30 días)
 summary: Tu cuenta se elimina para siempre después de 30 días. Hasta entonces, iniciar sesión o el enlace de nuestro correo la recupera.
 keywords: eliminar cuenta, borrar cuenta, cerrar cuenta, cancelar eliminación, recuperar cuenta, 30 días, dejar daili, rgpd
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-06
 ---
 ¿Quieres antes una copia de tus datos? Descárgala antes de empezar.
 
 ![La pantalla Perfil. Eliminar la cuenta, la última fila bajo Cuenta, está marcado con un círculo.](account-delete)
 
 1. Abre **Ajustes** y toca tu nombre arriba.
-2. En **Cuenta**, toca **Eliminar la cuenta**.
+2. En **Cuenta**, toca **Eliminar la cuenta**. La página muestra el nombre y el correo electrónico de esa cuenta.
 3. Si quieres, dinos por qué te vas. Es opcional.
 4. Escribe la palabra que te pide, **ELIMINAR**, y toca **Eliminar mi cuenta**.
 5. daili cierra tu sesión. Te enviamos un correo con un enlace para cancelar.

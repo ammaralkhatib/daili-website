@@ -7,19 +7,20 @@ keywords: profile, name, display name, photo, picture, avatar, colour, color, ch
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.1.0
-updated: 2026-09-24
+updated: 2026-10-06
 order: 1
 media: account-profile
 related: account-preferences, account-password
 ---
 Your family sees your name, picture and colour next to everything you add.
 
-![The Profile screen with the name, colours and account rows. Change picture is circled.](account-profile)
+![The Profile screen with the name, the colours, the Use my color for the app switch and the account rows. Change picture is circled.](account-profile)
 
 1. Tap your picture at the top of Home to open **Settings**. Then tap your name at the top.
 2. Tap **Change picture**. Choose **Take photo** or **Choose from library**, or pick an avatar under **Adults** or **Kids**. Your picture changes right away.
 3. Change your **Display name** if you like.
 4. Under **Your color**, tap a colour. It's used for your avatar and your events.
-5. Tap **Save**.
+5. Turn on **Use my color for the app** to colour daili on this phone. Tapping a colour then previews it on the whole app.
+6. Tap **Save**. Leaving without saving brings your old colour back.
 
 > Note: Everyone in a family has their own colour. A colour someone else already has is faded out and can't be picked.
