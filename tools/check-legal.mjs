@@ -80,6 +80,15 @@ const GOOGLE_OAUTH_WHY = 'the Google OAuth verification depends on this section 
 const PLUS_MUST_CONTAIN = { terms: ['id="plus"'], privacy: ['id="plus"', 'RevenueCat'] };
 const PLUS_WHY = 'Daili Plus is sold in every locale — see claude-prompts/2026-10-01/001';
 
+/**
+ * Notes keep pictures, drawings and recordings — on the phone, or in Daili
+ * cloud at Hetzner — and can be spoken, summarised and given link previews.
+ * Every reader must find where those files go and who stores them. All three
+ * anchors are on <p> tags, so the <h2> id comparison below cannot see them.
+ */
+const NOTES_MUST_CONTAIN = { terms: [], privacy: ['id="notes-files"', 'id="voice"', 'id="link-previews"', 'Hetzner'] };
+const NOTES_WHY = 'note files, voice and link previews are in every locale — see claude-prompts/2026-10-05/001';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -121,6 +130,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of PLUS_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${PLUS_WHY}`);
+    }
+
+    for (const must of NOTES_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${NOTES_WHY}`);
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
