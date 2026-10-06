@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Lisää resepti
 summary: Pidä perheen reseptit yhdessä paikassa ainesosineen, vaiheineen ja kuvineen.
 keywords: resepti, lisää resepti, keittokirja, reseptikokoelma, ainesosat, ruoanlaitto, ruoka, kuva, perheen reseptit
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-06
 ---
 Mummon lasagne kuuluu perheen reseptikokoelmaan, josta kaikki löytävät sen.
 
@@ -11,7 +11,7 @@ Mummon lasagne kuuluu perheen reseptikokoelmaan, josta kaikki löytävät sen.
 
 1. Napauta aloitusnäytöllä **Reseptit** ja sitten **+**.
 2. Napauta **Uusi resepti**.
-3. Kirjoita **Otsikko**. Voit halutessasi lisätä kohdat **Valmistelu (min)**, **Kypsennys (min)**, **Annokset** ja **Luokat** ja napauttaa **Lisää kuva**.
+3. Kirjoita **Otsikko**. Voit halutessasi lisätä kohdat **Valmistelu (min)**, **Kypsennys (min)**, **Annokset**, **Tunnisteet** ja **Luokat** ja napauttaa **Lisää kuva**.
 4. Napauta **Lisää ainesosa** jokaista ainesosaa varten ja **Lisää vaihe** jokaista vaihetta varten.
 5. Napauta **Luo**.
 

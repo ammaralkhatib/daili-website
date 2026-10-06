@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Añadir una receta
 summary: Guarda las recetas de la familia en un solo sitio, con ingredientes, pasos y una foto.
 keywords: receta, añadir receta, recetario, libro de recetas, ingredientes, cocinar, plato, foto, recetas de familia
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-06
 ---
 La lasaña de la abuela tiene que estar en el recetario de la familia, donde todos puedan encontrarla.
 
@@ -11,7 +11,7 @@ La lasaña de la abuela tiene que estar en el recetario de la familia, donde tod
 
 1. En la pantalla de inicio, toca **Recetas** y luego **+**.
 2. Toca **Receta nueva**.
-3. Escribe un **Título**. Si quieres, añade **Prep. (min)**, **Cocción (min)**, **Porciones** y **Categorías**, y toca **Añadir una foto**.
+3. Escribe un **Título**. Si quieres, añade **Prep. (min)**, **Cocción (min)**, **Porciones**, **Etiquetas** y **Categorías**, y toca **Añadir una foto**.
 4. Toca **Añadir un ingrediente** para cada ingrediente y **Añadir un paso** para cada paso.
 5. Toca **Crear**.
 

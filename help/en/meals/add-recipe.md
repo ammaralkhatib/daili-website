@@ -7,10 +7,10 @@ keywords: recipe, add recipe, cookbook, recipe box, ingredients, cooking, dish, 
 routes: /recipes, /recipes/new, /recipes/:id, /recipes/:id/edit
 tryIt: /recipes
 since: 1.0.0
-updated: 2026-09-24
+updated: 2026-10-06
 media: meals-add-recipe
 order: 1
-related: meals-import-link, meals-paste, meals-plan-week
+related: meals-find, meals-import-link, meals-paste, meals-plan-week
 ---
 Grandma's lasagne belongs in the family recipe box, where everyone can find it.
 
@@ -18,7 +18,7 @@ Grandma's lasagne belongs in the family recipe box, where everyone can find it.
 
 1. On Home, tap **Recipes**, then **+**.
 2. Tap **New recipe**.
-3. Type a **Title**. If you like, add **Prep (min)**, **Cook (min)**, **Servings** and **Categories**, and tap **Add photo**.
+3. Type a **Title**. If you like, add **Prep (min)**, **Cook (min)**, **Servings**, **Tags** and **Categories**, and tap **Add photo**.
 4. Tap **Add ingredient** for each ingredient and **Add step** for each step.
 5. Tap **Create**.
 

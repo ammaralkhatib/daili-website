@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Dodaj przepis
 summary: Trzymaj rodzinne przepisy w jednym miejscu, ze składnikami, krokami i zdjęciem.
 keywords: przepis, dodaj przepis, książka kucharska, zeszyt z przepisami, składniki, gotowanie, danie, zdjęcie, rodzinne przepisy
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-06
 ---
 Lasagne babci powinna trafić do rodzinnego zeszytu z przepisami, gdzie każdy ją znajdzie.
 
@@ -11,7 +11,7 @@ Lasagne babci powinna trafić do rodzinnego zeszytu z przepisami, gdzie każdy j
 
 1. Na ekranie głównym dotknij **Przepisy**, a potem **+**.
 2. Dotknij **Nowy przepis**.
-3. Wpisz **Tytuł**. Jeśli chcesz, wypełnij pola **Przygot. (min)**, **Gotowanie (min)**, **Porcje** i **Kategorie** i dotknij **Dodaj zdjęcie**.
+3. Wpisz **Tytuł**. Jeśli chcesz, wypełnij pola **Przygot. (min)**, **Gotowanie (min)**, **Porcje**, **Tagi** i **Kategorie** i dotknij **Dodaj zdjęcie**.
 4. Dotknij **Dodaj składnik** przy każdym składniku i **Dodaj krok** przy każdym kroku.
 5. Dotknij **Utwórz**.
 
