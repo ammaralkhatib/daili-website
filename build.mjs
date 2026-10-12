@@ -757,6 +757,8 @@ const HELP_GLYPHS = {
   bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/>',
   user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
   note: '<path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8.5 12h7M8.5 16h5"/>',
+  wallet: '<path d="M17 7V5.5A1.5 1.5 0 0 0 15.5 4H5a2 2 0 0 0-2 2"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M21 11h-4a2 2 0 0 0 0 4h4"/>',
+  cycle: '<path d="M12 3c3.5 4.2 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-6.8 6-11z"/>',
 };
 for (const name of HELP_ICONS) {
   if (!(name in HELP_GLYPHS)) throw new Error(`HELP_ICONS has '${name}' but build.mjs HELP_GLYPHS has no drawing for it`);

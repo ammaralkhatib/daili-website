@@ -963,7 +963,7 @@ export const LIVE_APP_VERSION = '1.9.0';
  * and the site to its own glyph, so a name outside this list is something one
  * of them cannot draw. tools/check-help.mjs fails on it.
  */
-export const HELP_ICONS = ['start', 'people', 'calendar', 'list', 'meal', 'cake', 'paw', 'folder', 'widget', 'bell', 'user', 'note'];
+export const HELP_ICONS = ['start', 'people', 'calendar', 'list', 'meal', 'cake', 'paw', 'folder', 'widget', 'bell', 'user', 'note', 'wallet', 'cycle'];
 
 /** The help topics, in the order the help home and the app list them. The key
  *  is the folder name under help/<locale>/ and the `topic` every article
@@ -976,8 +976,10 @@ export const HELP_TOPICS = {
   lists:         { icon: 'list' },
   meals:         { icon: 'meal' },
   notes:         { icon: 'note' },
+  budget:        { icon: 'wallet' },
   birthdays:     { icon: 'cake' },
   habits:        { icon: 'paw' },
+  cycle:         { icon: 'cycle' },
   vault:         { icon: 'folder' },
   anywhere:      { icon: 'widget' },
   notifications: { icon: 'bell' },

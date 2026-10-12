@@ -83,5 +83,8 @@
   "plus-sheet": { "file": "plus-sheet.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-files": { "file": "notes-files.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-search-ingredient": { "file": "meals-search-ingredient.webp", "w": 720, "h": 1564, "kind": "image" },
-  "meals-tags": { "file": "meals-tags.webp", "w": 720, "h": 1564, "kind": "image" }
+  "meals-tags": { "file": "meals-tags.webp", "w": 720, "h": 1564, "kind": "image" },
+  "budget-start": { "file": "budget-start.webp", "w": 720, "h": 1564, "kind": "image" },
+  "budget-split": { "file": "budget-split.webp", "w": 720, "h": 1564, "kind": "image" },
+  "cycle-start": { "file": "cycle-start.webp", "w": 720, "h": 1564, "kind": "image" }
 }
