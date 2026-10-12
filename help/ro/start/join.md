@@ -3,7 +3,7 @@ id: start-join
 title: Alătură-te unei familii cu un cod sau un cod QR
 summary: Ai primit o invitație? Scrie codul de 6 cifre sau scanează codul QR ca să te alături.
 keywords: alăturare, cod de invitație, cod, qr, scanare, alătură-te familiei, partener, soție, soț, bunici
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Cineva din familie îți poate trimite o invitație. Apoi te alături din câteva apăsări.
 
@@ -12,6 +12,8 @@ Cineva din familie îți poate trimite o invitație. Apoi te alături din câtev
 1. Apasă pe **Alătură-te unei familii sau unui grup**.
 2. Scrie codul de 6 cifre la **Cod de invitație** și apasă pe **Caută**. Sau apasă pe **Scanează codul QR** și îndreaptă camera spre codul lor.
 3. Verifică numele familiei și membrii, apoi apasă pe **Alătură-te familiei**, urmat de numele familiei.
+
+Prima ta familie? Apoi daili te întreabă **Pentru ce vrei să folosești Daili?** Alege ce arată ecranul principal și apasă pe **Continuă** sau pe **Omite**.
 
 Ai primit în schimb un link de invitație? Apasă pe el și daili deschide același ecran.
 

@@ -3,7 +3,7 @@ id: start-edit-home
 title: Tilpas din startskærm: skjul og flyt felter
 summary: Sæt de felter, du bruger mest, øverst, og skjul dem, du ikke har brug for.
 keywords: startskærm, felter, flyt, omarranger, rækkefølge, skjul, fjern, vis, tilpas, layout
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Du kan selv vælge, hvilke felter startskærmen viser, og i hvilken rækkefølge. Alle felter kan flyttes eller skjules, også **Noter**.
 
@@ -15,5 +15,7 @@ Du kan selv vælge, hvilke felter startskærmen viser, og i hvilken rækkefølge
 4. Tryk på **Færdig** nederst til højre.
 
 Du kan gøre det samme i **Indstillinger** under **Startskærm**: slå felter til eller fra, og træk dem i håndtaget.
+
+De funktioner, du valgte, da du oprettede eller blev medlem af din første familie, styrer netop disse felter.
 
 > Note: Dit layout gemmes kun på denne telefon. Alle i familien indretter deres egen startskærm.

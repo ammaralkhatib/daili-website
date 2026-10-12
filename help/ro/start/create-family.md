@@ -3,7 +3,7 @@ id: start-create-family
 title: Creează-ți familia sau grupul
 summary: Pornește o familie sau un grup nou, ca toată lumea să aibă același calendar și aceleași liste.
 keywords: creează familie, familie nouă, început, configurare, grup, gospodărie, numele familiei, culoare, poză
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 După ce te conectezi, daili îți cere să creezi o familie sau un grup, ori să te alături unuia.
 
@@ -13,6 +13,8 @@ După ce te conectezi, daili îți cere să creezi o familie sau un grup, ori s�
 2. Scrie un nume la **Numele familiei sau al grupului**, de exemplu „Familia Popescu” sau „Echipa de fotbal”.
 3. Alege o **Culoare**.
 4. Apasă pe **Creează**. daili deschide noul tău ecran principal.
+
+Prima ta familie? Înainte să se deschidă ecranul principal, daili te întreabă **Pentru ce vrei să folosești Daili?** Alege ce arată ecranul principal și apasă pe **Continuă** sau pe **Omite**.
 
 Acum ai rolul de proprietar. Invită-i apoi pe ceilalți, ca toată lumea să vadă același plan.
 

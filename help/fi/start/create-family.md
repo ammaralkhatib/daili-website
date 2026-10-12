@@ -3,7 +3,7 @@ id: start-create-family
 title: Luo perhe tai ryhmä
 summary: Aloita uusi perhe tai ryhmä, niin kaikilla on yhteinen kalenteri ja samat listat.
 keywords: luo perhe, uusi perhe, aloita, perusta, ryhmä, kotitalous, perheen nimi, väri, kuva
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Kun olet kirjautunut sisään, daili pyytää sinua luomaan perheen tai ryhmän tai liittymään sellaiseen.
 
@@ -13,6 +13,8 @@ Kun olet kirjautunut sisään, daili pyytää sinua luomaan perheen tai ryhmän 
 2. Kirjoita nimi kohtaan **Perheen tai ryhmän nimi**, esimerkiksi ”Virtaset” tai ”Jalkapallojoukkue”.
 3. Valitse **Väri**.
 4. Napauta **Luo**. daili avaa uuden aloitusnäyttösi.
+
+Onko tämä ensimmäinen perheesi? Ennen kuin aloitusnäyttö avautuu, daili kysyy **Mihin haluat käyttää Dailia?** Valitse, mitä aloitusnäytöllä näkyy, ja napauta **Jatka** tai **Ohita**.
 
 Nyt olet omistaja. Kutsu seuraavaksi muut, niin kaikki näkevät saman suunnitelman.
 

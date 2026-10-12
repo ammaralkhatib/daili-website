@@ -13,7 +13,7 @@
   "start-sign-in": { "file": "start-sign-in.webp", "w": 720, "h": 1564, "kind": "image" },
   "start-create-family": { "file": "start-create-family.webp", "w": 720, "h": 1564, "kind": "image" },
   "start-join": { "file": "start-join.webp", "w": 720, "h": 720, "kind": "image" },
-  "start-today": { "file": "start-today.webp", "w": 720, "h": 622, "kind": "image" },
+  "start-today": { "file": "start-today.webp", "w": 720, "h": 1108, "kind": "image" },
   "family-children": { "file": "family-children.webp", "w": 720, "h": 720, "kind": "image" },
   "family-roles": { "file": "family-roles.webp", "w": 720, "h": 720, "kind": "image" },
   "family-groups": { "file": "family-groups.webp", "w": 720, "h": 1564, "kind": "image" },
@@ -84,7 +84,10 @@
   "notes-files": { "file": "notes-files.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-tags": { "file": "meals-tags.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-search-ingredient": { "file": "meals-search-ingredient.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-weather": { "file": "start-weather.webp", "w": 720, "h": 1564, "kind": "image" },
   "budget-start": { "file": "budget-start.webp", "w": 720, "h": 1564, "kind": "image" },
-  "budget-split": { "file": "budget-split.webp", "w": 720, "h": 1564, "kind": "image" },
-  "cycle-start": { "file": "cycle-start.webp", "w": 720, "h": 1564, "kind": "image" }
+  "cycle-start": { "file": "cycle-start.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-other-calendars": { "file": "calendar-other-calendars.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-features": { "file": "start-features.webp", "w": 720, "h": 1564, "kind": "image" },
+  "budget-split": { "file": "budget-split.webp", "w": 720, "h": 1564, "kind": "image" }
 }

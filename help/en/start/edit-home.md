@@ -7,10 +7,10 @@ keywords: home, tiles, reorder, rearrange, move, hide, remove, show, customise, 
 routes: /settings/home-tiles
 tryIt: /
 since: 1.6.0
-updated: 2026-09-26
+updated: 2026-10-12
 media: start-edit-home
 order: 5
-related: start-home
+related: start-home, start-features
 ---
 You can change which tiles Home shows, and in which order. Every tile can move or hide, **Notes** too.
 
@@ -22,5 +22,7 @@ You can change which tiles Home shows, and in which order. Every tile can move o
 4. Tap **Done** at the bottom right.
 
 You can do the same in **Settings** under **Home screen**: switch tiles on or off, and drag them by the handle.
+
+The features you picked after you created or joined your first family set these same tiles.
 
 > Note: Your layout is saved on this phone only. Everyone in the family sets up their own Home.

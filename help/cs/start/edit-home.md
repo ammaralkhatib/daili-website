@@ -3,7 +3,7 @@ id: start-edit-home
 title: Upravit domovskou obrazovku: skrýt a přeskládat dlaždice
 summary: Dej dlaždice, které používáš nejvíc, nahoru a skryj ty, které nepotřebuješ.
 keywords: domovská obrazovka, dlaždice, pořadí, přeskládat, přesunout, skrýt, odebrat, zobrazit, přizpůsobit, rozložení
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořadí. Každou dlaždici jde přesunout nebo skrýt, i **Poznámky**.
 
@@ -15,5 +15,7 @@ Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořad
 4. Klepni vpravo dole na **Hotovo**.
 
 Totéž můžeš udělat v **Nastavení** v části **Domovská obrazovka**: zapínej a vypínej dlaždice a přetahuj je za úchyt.
+
+Funkce vybrané po vytvoření první rodiny nebo připojení k ní nastavují právě tyhle dlaždice.
 
 > Note: Tvoje rozložení se ukládá jen na tomto telefonu. Každý v rodině si nastavuje vlastní domovskou obrazovku.

@@ -3,7 +3,7 @@ id: start-join
 title: Liity perheeseen koodilla tai QR-koodilla
 summary: Saitko kutsun? Kirjoita 6-numeroinen koodi tai skannaa QR-koodi, niin pääset mukaan.
 keywords: liity, kutsukoodi, koodi, qr, skannaa, liity perheeseen, puoliso, vaimo, mies, isovanhemmat
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Joku perheestä voi lähettää sinulle kutsun. Sen jälkeen liityt muutamalla napautuksella.
 
@@ -12,6 +12,8 @@ Joku perheestä voi lähettää sinulle kutsun. Sen jälkeen liityt muutamalla n
 1. Napauta **Liity perheeseen tai ryhmään**.
 2. Kirjoita 6-numeroinen koodi kohtaan **Kutsukoodi** ja napauta **Hae**. Tai napauta **Skannaa QR-koodi** ja osoita kameralla toisen koodia.
 3. Tarkista perheen nimi ja jäsenet ja napauta sitten painiketta **Liity perheeseen …**, jossa on perheen nimi.
+
+Onko tämä ensimmäinen perheesi? Silloin daili kysyy **Mihin haluat käyttää Dailia?** Valitse, mitä aloitusnäytöllä näkyy, ja napauta **Jatka** tai **Ohita**.
 
 Saitko sen sijaan kutsulinkin? Napauta sitä, niin daili avaa saman näkymän.
 

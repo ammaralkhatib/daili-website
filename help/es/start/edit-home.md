@@ -3,7 +3,7 @@ id: start-edit-home
 title: Editar tu pantalla de inicio: ocultar y reordenar mosaicos
 summary: Pon arriba los mosaicos que más usas, y oculta los que no necesitas.
 keywords: inicio, mosaicos, reordenar, reorganizar, mover, ocultar, quitar, mostrar, personalizar, diseño
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Puedes cambiar qué mosaicos muestra la pantalla de inicio, y en qué orden. Cada mosaico se puede mover u ocultar, **Notas** también.
 
@@ -15,5 +15,7 @@ Puedes cambiar qué mosaicos muestra la pantalla de inicio, y en qué orden. Cad
 4. Toca **Listo** abajo a la derecha.
 
 Puedes hacer lo mismo en **Ajustes**, en **Pantalla de inicio**: activa o desactiva mosaicos, y arrástralos por el asa.
+
+Las funciones que elegiste después de crear tu primera familia o unirte a una definen estos mismos mosaicos.
 
 > Note: Tu diseño se guarda solo en este teléfono. Cada persona de la familia organiza su propia pantalla de inicio.

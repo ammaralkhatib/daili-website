@@ -3,7 +3,7 @@ id: start-create-family
 title: Opprett familien eller gruppen din
 summary: Start en ny familie eller gruppe, så alle deler én kalender og de samme listene.
 keywords: opprett familie, ny familie, kom i gang, sett opp, gruppe, husstand, familienavn, farge, bilde
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Når du har logget inn, ber daili deg opprette en familie eller gruppe, eller bli med i en.
 
@@ -13,6 +13,8 @@ Når du har logget inn, ber daili deg opprette en familie eller gruppe, eller bl
 2. Skriv et navn under **Navn på familie eller gruppe**, for eksempel «Familien Hansen» eller «Fotballaget».
 3. Velg en **Farge**.
 4. Trykk på **Opprett**. daili åpner den nye startskjermen din.
+
+Er dette din første familie? Før startskjermen åpnes, spør daili **Hva vil du bruke Daili til?** Velg hva startskjermen skal vise, og trykk på **Fortsett**, eller **Hopp over**.
 
 Nå er du eier. Inviter de andre etterpå, så alle ser den samme planen.
 

@@ -6,10 +6,10 @@ summary: Start a new family or group so everyone can share one calendar and the 
 keywords: create family, new family, start, set up, group, household, family name, colour, color, picture
 routes: /onboarding, /onboarding/create
 since: 1.0.0
-updated: 2026-09-28
+updated: 2026-10-12
 media: start-create-family
 order: 3
-related: family-invite, start-join, family-groups
+related: family-invite, start-join, family-groups, start-features
 ---
 After you sign in, daili asks you to create a family or group, or join one.
 
@@ -19,6 +19,8 @@ After you sign in, daili asks you to create a family or group, or join one.
 2. Type a name under **Family or group name**, like "The Millers" or "Football team".
 3. Pick a **Color**.
 4. Tap **Create**. daili opens your new Home screen.
+
+Your first family? Before Home opens, daili asks **What do you want to use Daili for?** Pick what Home shows and tap **Continue**, or **Skip**.
 
 You are now the owner. Invite the others next, so everyone sees the same plan.
 

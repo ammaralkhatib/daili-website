@@ -3,7 +3,7 @@ id: start-edit-home
 title: Ändra din startskärm: dölj och sortera rutor
 summary: Lägg rutorna du använder mest överst, och dölj dem du inte behöver.
 keywords: startskärm, rutor, sortera, ordna om, flytta, dölja, ta bort, visa, anpassa, layout
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Du kan ändra vilka rutor startskärmen visar, och i vilken ordning. Varje ruta går att flytta eller dölja, även **Anteckningar**.
 
@@ -15,5 +15,7 @@ Du kan ändra vilka rutor startskärmen visar, och i vilken ordning. Varje ruta 
 4. Tryck på **Klar** längst ned till höger.
 
 Samma sak går att göra i **Inställningar** under **Startskärm**: slå på eller av rutor och dra dem i handtaget.
+
+Funktionerna du valde när du skapade eller gick med i din första familj styr just de här rutorna.
 
 > Note: Din layout sparas bara på den här telefonen. Alla i familjen ställer in sin egen startskärm.

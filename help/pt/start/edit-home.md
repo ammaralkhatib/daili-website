@@ -3,7 +3,7 @@ id: start-edit-home
 title: Editar sua tela inicial: esconder e reordenar os blocos
 summary: Coloque os blocos que você mais usa no topo, e esconda os que você não precisa.
 keywords: tela inicial, blocos, reordenar, reorganizar, mover, esconder, remover, mostrar, personalizar, layout
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Você pode mudar quais blocos a tela inicial mostra, e em que ordem. Todo bloco pode ser movido ou ocultado, inclusive **Notas**.
 
@@ -15,5 +15,7 @@ Você pode mudar quais blocos a tela inicial mostra, e em que ordem. Todo bloco 
 4. Toque em **Concluído**, no canto inferior direito.
 
 Você pode fazer o mesmo em **Configurações**, em **Tela inicial**: ligue ou desligue os blocos, e arraste pela alça.
+
+Os recursos que você escolheu depois de criar sua primeira família ou entrar em uma definem esses mesmos blocos.
 
 > Note: Seu layout fica salvo só neste celular. Cada pessoa da família monta a própria tela inicial.

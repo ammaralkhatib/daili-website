@@ -3,7 +3,7 @@ id: start-create-family
 title: Buat keluarga atau grup Anda
 summary: Mulai keluarga atau grup baru supaya semua orang berbagi satu kalender dan daftar yang sama.
 keywords: buat keluarga, keluarga baru, mulai, siapkan, grup, rumah tangga, nama keluarga, warna, foto profil
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Setelah Anda masuk, daili meminta Anda membuat keluarga atau grup, atau bergabung ke salah satunya.
 
@@ -13,6 +13,8 @@ Setelah Anda masuk, daili meminta Anda membuat keluarga atau grup, atau bergabun
 2. Ketik nama di **Nama keluarga atau grup**, seperti "Keluarga Wijaya" atau "Tim Sepak Bola".
 3. Pilih **Warna**.
 4. Ketuk **Buat**. daili membuka Beranda baru Anda.
+
+Keluarga pertama Anda? Sebelum Beranda terbuka, daili bertanya **Anda ingin memakai Daili untuk apa?** Pilih apa yang tampil di Beranda, lalu ketuk **Lanjut**, atau **Lewati**.
 
 Sekarang Anda pemiliknya. Undang yang lain berikutnya, supaya semua orang melihat rencana yang sama.
 

@@ -3,7 +3,7 @@ id: start-edit-home
 title: Muokkaa aloitusnäyttöä: piilota ja järjestä ruutuja
 summary: Nosta eniten käyttämäsi ruudut ylös ja piilota ne, joita et tarvitse.
 keywords: aloitusnäyttö, ruudut, järjestä, siirrä, järjestys, piilota, poista, näytä, mukauta, asettelu
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Voit valita, mitkä ruudut aloitusnäyttö näyttää ja missä järjestyksessä. Jokaista ruutua voi siirtää tai piilottaa, myös **Muistiinpanot**.
 
@@ -15,5 +15,7 @@ Voit valita, mitkä ruudut aloitusnäyttö näyttää ja missä järjestyksessä
 4. Napauta oikeasta alakulmasta **Valmis**.
 
 Saman voi tehdä myös kohdassa **Asetukset**, osiossa **Aloitusnäyttö**: laita ruudut päälle tai pois ja vedä niitä kahvasta.
+
+Toiminnot, jotka valitsit luotuasi ensimmäisen perheesi tai liityttyäsi siihen, määräävät nämä samat ruudut.
 
 > Note: Asettelu tallentuu vain tähän puhelimeen. Jokainen perheenjäsen järjestää oman aloitusnäyttönsä.

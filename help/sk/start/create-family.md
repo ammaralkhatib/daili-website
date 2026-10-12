@@ -3,7 +3,7 @@ id: start-create-family
 title: Vytvor svoju rodinu alebo skupinu
 summary: Založ novú rodinu alebo skupinu, aby všetci zdieľali jeden kalendár a rovnaké zoznamy.
 keywords: vytvoriť rodinu, nová rodina, začať, nastaviť, skupina, domácnosť, názov rodiny, farba, obrázok
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Po prihlásení ti daili ponúkne vytvoriť rodinu alebo skupinu, alebo sa k nejakej pripojiť.
 
@@ -13,6 +13,8 @@ Po prihlásení ti daili ponúkne vytvoriť rodinu alebo skupinu, alebo sa k nej
 2. Do poľa **Názov rodiny alebo skupiny** napíš názov, napríklad „Mlynárovci“ alebo „Futbalový tím“.
 3. V časti **Farba** vyber farbu.
 4. Ťukni na **Vytvoriť**. daili otvorí tvoju novú domovskú obrazovku.
+
+Tvoja prvá rodina? Skôr než sa otvorí domovská obrazovka, daili sa opýta **Na čo chceš Daili používať?** Vyber, čo bude domovská obrazovka ukazovať, a ťukni na **Pokračovať** alebo na **Preskočiť**.
 
 Teraz si vlastník. Potom pozvi ostatných, aby všetci videli rovnaký plán.
 

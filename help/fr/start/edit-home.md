@@ -3,7 +3,7 @@ id: start-edit-home
 title: Modifier ton écran d'accueil : masquer et réordonner les tuiles
 summary: Mets en haut les tuiles que tu utilises le plus, et masque celles dont tu n'as pas besoin.
 keywords: accueil, tuiles, réordonner, réorganiser, déplacer, masquer, retirer, afficher, personnaliser, disposition
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Tu peux choisir quelles tuiles l'écran d'accueil affiche, et dans quel ordre. Chaque tuile peut bouger ou se masquer, **Notes** aussi.
 
@@ -15,5 +15,7 @@ Tu peux choisir quelles tuiles l'écran d'accueil affiche, et dans quel ordre. C
 4. Touche **Terminé** en bas à droite.
 
 Tu peux faire la même chose dans les **Paramètres** sous **Écran d'accueil** : active ou désactive les tuiles, et fais-les glisser par la poignée.
+
+Les fonctions que tu as choisies après avoir créé ou rejoint ta première famille règlent ces mêmes tuiles.
 
 > Note: Ta disposition est enregistrée seulement sur ce téléphone. Chaque membre de la famille organise son propre écran d'accueil.

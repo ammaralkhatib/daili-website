@@ -6,10 +6,10 @@ summary: Got an invite? Type the 6-digit code or scan the QR code to join.
 keywords: join, invite code, code, qr, scan, join family, partner, wife, husband, grandparents
 routes: /onboarding/join, /onboarding/join/scan
 since: 1.6.0
-updated: 2026-09-28
+updated: 2026-10-12
 media: start-join
 order: 4
-related: family-invite, start-create-family
+related: family-invite, start-create-family, start-features
 ---
 Someone in the family can send you an invite. Then you join in a few taps.
 
@@ -18,6 +18,8 @@ Someone in the family can send you an invite. Then you join in a few taps.
 1. Tap **Join a family or group**.
 2. Type the 6-digit code under **Invite code** and tap **Lookup**. Or tap **Scan QR code** and point the camera at their code.
 3. Check the family name and members, then tap **Join** with the family's name on it.
+
+Your first family? daili then asks **What do you want to use Daili for?** Pick what Home shows and tap **Continue**, or **Skip**.
 
 Got an invite link instead? Tap it, and daili opens the same screen.
 

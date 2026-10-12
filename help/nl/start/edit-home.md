@@ -3,7 +3,7 @@ id: start-edit-home
 title: Je startscherm aanpassen: tegels verbergen en ordenen
 summary: Zet de tegels die je het meest gebruikt bovenaan, en verberg de tegels die je niet nodig hebt.
 keywords: startscherm, tegels, ordenen, verplaatsen, volgorde, verbergen, weghalen, tonen, aanpassen, indeling
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Je kunt kiezen welke tegels het startscherm toont, en in welke volgorde. Elke tegel kan verplaatst of verborgen worden, ook **Notities**.
 
@@ -15,5 +15,7 @@ Je kunt kiezen welke tegels het startscherm toont, en in welke volgorde. Elke te
 4. Tik rechtsonder op **Klaar**.
 
 Hetzelfde kan in **Instellingen** onder **Startscherm**: zet tegels aan of uit, en sleep ze aan het handvat.
+
+De functies die je koos nadat je je eerste gezin aanmaakte of erbij kwam, bepalen precies deze tegels.
 
 > Note: Je indeling wordt alleen op deze telefoon bewaard. Iedereen in het gezin richt zijn eigen startscherm in.

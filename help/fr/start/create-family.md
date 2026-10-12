@@ -3,7 +3,7 @@ id: start-create-family
 title: Créer ta famille ou ton groupe
 summary: Crée une nouvelle famille ou un nouveau groupe pour que tout le monde partage un agenda et les mêmes listes.
 keywords: créer une famille, nouvelle famille, commencer, configurer, groupe, foyer, nom de famille, couleur, photo
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Après ta connexion, daili te demande de créer une famille ou un groupe, ou d'en rejoindre un.
 
@@ -13,6 +13,8 @@ Après ta connexion, daili te demande de créer une famille ou un groupe, ou d'e
 2. Saisis un nom sous **Nom de la famille ou du groupe**, comme « Les Martin » ou « Équipe de foot ».
 3. Choisis une **Couleur**.
 4. Touche **Créer**. daili ouvre ton nouvel écran d'accueil.
+
+C'est ta première famille ? Avant que l'écran d'accueil s'ouvre, daili te demande **Pour quoi veux-tu utiliser Daili ?** Choisis ce que l'écran d'accueil affiche et touche **Continuer**, ou **Passer**.
 
 Tu es maintenant le propriétaire. Invite ensuite les autres, pour que tout le monde voie le même programme.
 

@@ -3,7 +3,7 @@ id: start-edit-home
 title: Modificare la schermata iniziale: nascondere e riordinare i riquadri
 summary: Metti in alto i riquadri che usi di più, e nascondi quelli che non ti servono.
 keywords: schermata iniziale, riquadri, riordinare, sistemare, spostare, nascondere, togliere, mostrare, personalizzare, layout
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Puoi cambiare quali riquadri mostra la schermata iniziale, e in che ordine. Ogni riquadro si può spostare o nascondere, anche **Note**.
 
@@ -15,5 +15,7 @@ Puoi cambiare quali riquadri mostra la schermata iniziale, e in che ordine. Ogni
 4. Tocca **Fatto** in basso a destra.
 
 Puoi fare lo stesso in **Impostazioni** sotto **Schermata iniziale**: attiva o disattiva i riquadri, e trascinali dalla maniglia.
+
+Le funzioni che hai scelto dopo aver creato la tua prima famiglia, o esserci entrato, impostano questi stessi riquadri.
 
 > Note: La disposizione viene salvata solo su questo telefono. Ognuno in famiglia organizza la propria schermata iniziale.

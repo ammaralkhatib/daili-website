@@ -3,7 +3,7 @@ id: start-create-family
 title: Aileni ya da grubunu oluştur
 summary: Yeni bir aile ya da grup kur, böylece herkes tek bir takvimi ve aynı listeleri paylaşsın.
 keywords: aile oluştur, yeni aile, başla, kurulum, grup, hane, aile adı, renk, resim
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Giriş yaptıktan sonra daili senden bir aile ya da grup oluşturmanı veya birine katılmanı ister.
 
@@ -13,6 +13,8 @@ Giriş yaptıktan sonra daili senden bir aile ya da grup oluşturmanı veya biri
 2. **Aile veya grup adı** alanına bir ad yaz, örneğin "Yılmaz Ailesi" ya da "Futbol takımı".
 3. **Renk** bölümünden bir renk seç.
 4. **Oluştur** düğmesine dokun. daili yeni ana ekranını açar.
+
+İlk ailen mi? Ana ekran açılmadan önce daili sorar: **Daili'yi ne için kullanmak istiyorsun?** Ana ekranın ne göstereceğini seç ve **Devam** ya da **Atla** düğmesine dokun.
 
 Artık ailenin sahibisin. Sonra diğerlerini davet et, böylece herkes aynı planı görsün.
 

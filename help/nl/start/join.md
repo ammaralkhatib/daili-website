@@ -3,7 +3,7 @@ id: start-join
 title: Deelnemen aan een gezin met een code of QR-code
 summary: Een uitnodiging gekregen? Typ de 6-cijferige code of scan de QR-code om mee te doen.
 keywords: deelnemen, uitnodigingscode, code, qr, scannen, gezin, partner, vrouw, man, opa en oma
-translatedFrom: 2026-09-28
+translatedFrom: 2026-10-12
 ---
 Iemand uit het gezin kan je een uitnodiging sturen. Dan doe je met een paar tikken mee.
 
@@ -12,6 +12,8 @@ Iemand uit het gezin kan je een uitnodiging sturen. Dan doe je met een paar tikk
 1. Tik op **Deelnemen aan gezin of groep**.
 2. Typ de 6-cijferige code onder **Uitnodigingscode** en tik op **Zoeken**. Of tik op **QR-code scannen** en richt de camera op hun code.
 3. Controleer de gezinsnaam en de leden, en tik dan op **Deelnemen aan …** met de naam van het gezin.
+
+Je eerste gezin? Dan vraagt daili: **Waarvoor wil je Daili gebruiken?** Kies wat het startscherm toont en tik op **Doorgaan**, of op **Overslaan**.
 
 Heb je een uitnodigingslink gekregen? Tik erop, en daili opent hetzelfde scherm.
 

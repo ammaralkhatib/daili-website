@@ -3,7 +3,7 @@ id: start-edit-home
 title: Startbildschirm anpassen: Kacheln ausblenden und sortieren
 summary: Leg die Kacheln, die du am meisten nutzt, nach oben und blende die aus, die du nicht brauchst.
 keywords: startbildschirm, kacheln, sortieren, anordnen, verschieben, ausblenden, entfernen, anzeigen, anpassen, layout
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
 Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihenfolge. Jede Kachel lässt sich verschieben oder ausblenden, auch **Notizen**.
 
@@ -15,5 +15,7 @@ Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihe
 4. Tippe unten rechts auf **Fertig**.
 
 Dasselbe geht in den **Einstellungen** unter **Startbildschirm**: Schalte Kacheln ein oder aus und zieh sie am Griff.
+
+Die Funktionen, die du nach dem Erstellen deiner ersten Familie oder dem Beitritt gewählt hast, steuern genau diese Kacheln.
 
 > Note: Deine Anordnung wird nur auf diesem Handy gespeichert. Alle in der Familie richten ihren eigenen Startbildschirm ein.
