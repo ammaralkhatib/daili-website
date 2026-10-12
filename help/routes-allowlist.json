@@ -5,7 +5,17 @@
     "/help": "The help center itself.",
     "/help/topic/:topicId": "The help center itself.",
     "/help/article/:articleId": "The help center itself.",
-    "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose."
+    "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose.",
+    "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose."
   },
-  "pending": {}
+  "pending": {
+    "/cycle": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/weather": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget/new": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget/:id": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget/:id/categories": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget/:id/settings": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12).",
+    "/budget/:id/split": "New in 1.10.0 (16); article written in the release help sync (Planning Claude, 2026-10-12)."
+  }
 }
