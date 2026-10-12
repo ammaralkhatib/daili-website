@@ -89,6 +89,19 @@ const PLUS_WHY = 'Daili Plus is sold in every locale — see claude-prompts/2026
 const NOTES_MUST_CONTAIN = { terms: [], privacy: ['id="notes-files"', 'id="voice"', 'id="link-previews"', 'Hetzner'] };
 const NOTES_WHY = 'note files, voice and link previews are in every locale — see claude-prompts/2026-10-05/001';
 
+/**
+ * App 1.10.0 sends a rounded place to Apple Weather (MET Norway as fallback),
+ * can keep a rough place for the daily summary, stores Budget on our server and
+ * keeps Cycle on the phone — and Cycle is not a medical device. A reader in any
+ * language must find all of it. Every anchor is on a <p>, invisible to the <h2>
+ * id comparison below.
+ */
+const V110_MUST_CONTAIN = {
+  terms: ['id="cycle"'],
+  privacy: ['id="weather"', 'id="weather-summary"', 'id="budget"', 'id="cycle"', 'MET Norway', 'Apple'],
+};
+const V110_WHY = 'weather, Budget and Cycle (app 1.10.0) are in every locale — see claude-prompts/2026-10-12/002';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -134,6 +147,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of NOTES_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${NOTES_WHY}`);
+    }
+
+    for (const must of V110_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V110_WHY}`);
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
