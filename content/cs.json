@@ -227,6 +227,24 @@
       ],
       "pill": "Bazén 16:30"
     },
+    "alt": {
+      "p_kitchen": "Máma s dcerou chystají v kuchyni svačinu",
+      "p_market": "Pár s koly na trhu",
+      "p_teen": "Teenager se usmívá na telefon vedle spící kočky",
+      "p_cake": "Babička s vnukem zdobí narozeninový dort",
+      "p_football": "Rodič s kousky pomeranče na fotbalovém tréninku dětí",
+      "p_super": "Táta s batoletem nakupují zeleninu",
+      "p_desk": "Dospívající dívka u stolu s telefonem a úkoly",
+      "p_balcony": "Táta s dcerou zalévají květiny na balkoně",
+      "shot-home": "Úvodní obrazovka aplikace Daili",
+      "shot-calendar": "Sdílený rodinný kalendář v aplikaci Daili",
+      "shot-shopping": "Sdílený nákupní seznam v aplikaci Daili",
+      "shot-habits": "Návyky rodiny v aplikaci Daili",
+      "shot-notes": "Poznámky rodiny v aplikaci Daili",
+      "shot-recipes": "Uložené recepty v aplikaci Daili",
+      "shot-mealplan": "Jídelníček na týden v aplikaci Daili",
+      "shot-birthdays": "Nadcházející narozeniny v aplikaci Daili"
+    },
     "screens": {
       "h2": "Na každé obrazovce doma",
       "sub": "Mrkněte na zápěstí, na plochu telefonu nebo na zeď v kuchyni. Stejný rodinný plán všude.",

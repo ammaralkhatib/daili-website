@@ -227,6 +227,24 @@
       ],
       "pill": "수영 16:30"
     },
+    "alt": {
+      "p_kitchen": "주방에서 도시락을 싸는 엄마와 딸",
+      "p_market": "자전거를 끌고 장터를 걷는 커플",
+      "p_teen": "잠든 고양이 옆에서 휴대폰을 보며 웃는 십대",
+      "p_cake": "생일 케이크를 꾸미는 할머니와 손자",
+      "p_football": "아이들 축구 연습에 오렌지를 챙겨 온 부모",
+      "p_super": "채소를 사는 아빠와 아기",
+      "p_desk": "휴대폰과 숙제를 앞에 두고 책상에 앉은 십대 소녀",
+      "p_balcony": "발코니에서 식물에 물을 주는 아빠와 딸",
+      "shot-home": "Daili 앱 홈 화면",
+      "shot-calendar": "Daili 앱의 가족 공유 캘린더",
+      "shot-shopping": "Daili 앱의 공유 장보기 목록",
+      "shot-habits": "Daili 앱의 가족 습관",
+      "shot-notes": "Daili 앱의 가족 메모",
+      "shot-recipes": "Daili 앱에 저장한 레시피",
+      "shot-mealplan": "Daili 앱의 이번 주 식단표",
+      "shot-birthdays": "Daili 앱의 다가오는 생일"
+    },
     "screens": {
       "h2": "집 안의 모든 화면에서",
       "sub": "손목에서, 홈 화면에서, 부엌 벽에서. 어디서나 같은 가족 계획을.",

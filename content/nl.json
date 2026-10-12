@@ -227,6 +227,24 @@
       ],
       "pill": "Zwem 16:30"
     },
+    "alt": {
+      "p_kitchen": "Een moeder en dochter maken in de keuken een lunchtrommel klaar",
+      "p_market": "Een stel met fietsen op de markt",
+      "p_teen": "Een tiener lacht naar zijn telefoon naast een slapende kat",
+      "p_cake": "Een oma en kleinzoon versieren een verjaardagstaart",
+      "p_football": "Een ouder met partjes sinaasappel bij de voetbaltraining van de kinderen",
+      "p_super": "Een vader en peuter kopen groente",
+      "p_desk": "Een tienermeisje aan haar bureau met telefoon en huiswerk",
+      "p_balcony": "Een vader en dochter geven planten water op het balkon",
+      "shot-home": "Het startscherm van de Daili-app",
+      "shot-calendar": "De gedeelde gezinsagenda in de Daili-app",
+      "shot-shopping": "Een gedeelde boodschappenlijst in de Daili-app",
+      "shot-habits": "Gewoontes van het gezin in de Daili-app",
+      "shot-notes": "Notities van het gezin in de Daili-app",
+      "shot-recipes": "Bewaarde recepten in de Daili-app",
+      "shot-mealplan": "De menuplanner van de week in de Daili-app",
+      "shot-birthdays": "Komende verjaardagen in de Daili-app"
+    },
     "screens": {
       "h2": "Op elk scherm in huis",
       "sub": "Een blik op je pols, je beginscherm of de keukenmuur. Dezelfde gezinsplanning, overal.",

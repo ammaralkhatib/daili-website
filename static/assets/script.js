@@ -108,6 +108,47 @@
     });
   });
 
+  /* ---------- count store clicks ----------
+   * A click on a store badge, the web-app button, the sticky "Get Daili" bar
+   * or the header's download button asks for /assets/c.gif — a 1×1 picture —
+   * with what happened in its query string: s = ios | android | web (menu for
+   * the header button, which only opens the badges), p = this page's path,
+   * r = the ?ref= the visitor arrived with, if any (the app's share links).
+   *
+   * That request becomes one line in the web server's access log, the same
+   * kind of line every page view already writes, and that is all. No cookie,
+   * no localStorage, no ID, no third party: nothing is stored in the browser
+   * and no data is collected beyond the normal log line. That is why this site
+   * needs no consent banner — keep it that way, never put an identifier into
+   * this URL. It never waits: the picture loads on its own while the
+   * navigation goes ahead (the store links open a new tab, so this page and
+   * its request stay). An image, not fetch: the CSP in .htaccess allows
+   * img-src 'self' but connect-src only for the API. The t= is the click's
+   * time, there only so the browser cannot answer a second click from its
+   * cache — the same moment the log line records anyway, not an identifier. */
+  var ref = "";
+  try { ref = (new URLSearchParams(location.search).get("ref") || "").slice(0, 40); } catch (err) { /* old browser */ }
+  function countClick(store) {
+    new Image().src = "/assets/c.gif?s=" + store + "&p=" + encodeURIComponent(location.pathname) +
+      "&r=" + encodeURIComponent(ref) + "&t=" + Date.now();
+  }
+  function storeOf(a) {
+    var href = a.getAttribute("href") || "";
+    if (/apps\.apple\.com/.test(href)) return "ios";
+    if (/play\.google\.com/.test(href)) return "android";
+    return null;
+  }
+  // Capture phase: the chip and the menu button stop propagation further down.
+  document.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest("a.store-badge, a.web-btn, a[data-sticky-cta], .dl > .dl-btn") : null;
+    if (!el) return;
+    var s;
+    if (el.matches(".dl > .dl-btn")) s = el.getAttribute("aria-expanded") === "true" ? null : "menu"; // opening only
+    else if (el.matches("a.web-btn")) s = "web";
+    else s = el.dataset.store || storeOf(el); // the sticky bar's href is set to a badge's further down
+    if (s) countClick(s);
+  }, true);
+
   /* ---------- promote the store the visitor can actually use ---------- */
   function platform() {
     var d = navigator.userAgentData;

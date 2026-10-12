@@ -227,6 +227,24 @@
       ],
       "pill": "Yüzme 16.30"
     },
+    "alt": {
+      "p_kitchen": "Mutfakta beslenme kutusu hazırlayan anne ve kızı",
+      "p_market": "Pazarda bisikletleriyle bir çift",
+      "p_teen": "Uyuyan bir kedinin yanında telefona gülümseyen bir genç",
+      "p_cake": "Doğum günü pastasını süsleyen büyükanne ve torunu",
+      "p_football": "Çocukların futbol antrenmanında portakal dilimleriyle bir ebeveyn",
+      "p_super": "Sebze alışverişi yapan baba ve küçük çocuğu",
+      "p_desk": "Masasında telefonu ve ödevleriyle bir genç kız",
+      "p_balcony": "Balkonda çiçek sulayan baba ve kızı",
+      "shot-home": "Daili uygulamasının ana ekranı",
+      "shot-calendar": "Daili uygulamasında ortak aile takvimi",
+      "shot-shopping": "Daili uygulamasında ortak alışveriş listesi",
+      "shot-habits": "Daili uygulamasında ailenin alışkanlıkları",
+      "shot-notes": "Daili uygulamasında ailenin notları",
+      "shot-recipes": "Daili uygulamasında kayıtlı tarifler",
+      "shot-mealplan": "Daili uygulamasında haftanın yemek planı",
+      "shot-birthdays": "Daili uygulamasında yaklaşan doğum günleri"
+    },
     "screens": {
       "h2": "Evinizdeki her ekranda",
       "sub": "Bileğinize, ana ekranınıza ya da mutfak duvarına bir bakın. Aynı aile planı, her yerde.",

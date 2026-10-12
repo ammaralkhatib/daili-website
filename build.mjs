@@ -473,14 +473,18 @@ function renderHome(loc) {
     return v;
   };
   const homeImg = (name) => `/assets/img/home/${name}.webp`;
-  const photo = (name, extra = '') => {
+  // alt: a photo is decorative ("") unless the caller passes its description —
+  // only the member cards do; the mosaic and the flat-lay sit in aria-hidden
+  // boxes. A screenshot in a phone is described by default (home.alt.<shot>),
+  // and the phones inside an aria-hidden box pass alt: '' explicitly.
+  const photo = (name, extra = '', alt = '') => {
     const { width, height } = imageSize(name);
-    return `<img src="${homeImg(name)}" alt="" width="${width}" height="${height}" loading="lazy" decoding="async"${extra}>`;
+    return `<img src="${homeImg(name)}" alt="${e(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async"${extra}>`;
   };
   const ico = (name, tone, style = '') => `<span class="ico c-${tone}"${style ? ` style="${style}"` : ''}>${homeIcon(name)}</span>`;
   const ck = `<span class="ck">${homeIcon('check', 3)}</span>`;
   const fcIn = (icon, tone, t, s, tick) => `<div class="fc-in">${ico(icon, tone)}<span class="fc-tx"><b>${e(t)}</b><span>${e(s)}</span></span>${tick ? ck : ''}</div>`;
-  const phone = (shot, { cls = '', style = '', alt = '', eager = false } = {}) => {
+  const phone = (shot, { cls = '', style = '', alt = h(`home.alt.${shot}`), eager = false } = {}) => {
     const { width, height } = imageSize(shot);
     return `<div class="phone${cls ? ` ${cls}` : ''}"${style ? ` style="${style}"` : ''}><div class="scr"><img src="${imgSrc(shot, loc)}" alt="${e(alt)}" width="${width}" height="${height}"${eager ? '' : ' loading="lazy"'} decoding="async"></div></div>`;
   };
@@ -546,7 +550,7 @@ function renderHome(loc) {
   const row = [];
   cards.forEach((card, i) => {
     const d = MEMBER_CARDS[i];
-    row.push(`<div class="mcard">${photo(d.photo, ' class="ph"')}<div class="cap">${e(card.cap)}</div><div class="ov"><div class="fc${d.done ? ' done' : ''}">${fcIn(d.icon, d.tone, card.t, card.s, true)}</div></div></div>`);
+    row.push(`<div class="mcard">${photo(d.photo, ' class="ph"', h(`home.alt.${d.photo}`))}<div class="cap">${e(card.cap)}</div><div class="ov"><div class="fc${d.done ? ' done' : ''}">${fcIn(d.icon, d.tone, card.t, card.s, true)}</div></div></div>`);
     const k = MEMBER_TILES_AFTER.indexOf(i);
     if (k !== -1) row.push(tileHtml[k]);
   });
@@ -666,7 +670,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     `        <article class="bx span2 g-lake bx-low bx-tab" data-r><h3>${e(h('home.screens.tablet.h3'))}</h3><p>${e(h('home.screens.tablet.p'))}</p>
           <div class="tablet"><div class="tab-scr"><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.tablet.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></div></article>`,
     `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
-          <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a' })}${phone('shot-notes', { cls: 'tilt-b' })}</div></article>`,
+          <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a', alt: '' })}${phone('shot-notes', { cls: 'tilt-b', alt: '' })}</div></article>`,
   ].join('\n');
 
   // ---- privacy, care ----
@@ -951,6 +955,24 @@ function buildHelpJson(h) {
 // head: canonical, hreflang, Open Graph, JSON-LD
 // ---------------------------------------------------------------------------
 
+/** The App Store id, read out of the one store URL rather than typed twice. */
+const IOS_APP_ID = (stores.ios.url.match(/\/id(\d+)/) || [])[1];
+if (!IOS_APP_ID) throw new Error(`stores.ios.url ${stores.ios.url} has no /id<digits> to build the Smart App Banner from`);
+
+/** The per-language share cards, made by tools/make-og-images.mjs. */
+const OG_IMAGE_SIZE = { width: 1200, height: 630 };
+function ogImageUrl(loc) {
+  const url = `/assets/img/og/og-${loc}.jpg`;
+  const file = p('static', url.slice(1));
+  if (!fs.existsSync(file)) throw new Error(`no share card ${url} — run node tools/make-og-images.mjs`);
+  return `${url}?v=${fileSha8(file)}`;
+}
+/** The card's headline as one line of text: no space after a full-width "、" or "，". */
+function ogHeadline(c) {
+  const a = c.hero.h1a.trim();
+  return `${a}${/[　-〿＀-￯]$/.test(a) ? '' : ' '}${c.hero.h1b.trim()}`;
+}
+
 function renderHead(pg, loc, cssHref, detector, postBody) {
   const c = content[loc];
   const out = [];
@@ -990,13 +1012,27 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
   out.push(`<meta property="og:url" content="${canonical}">`);
   out.push(`<meta property="og:title" content="${escapeHtml(ogTitle)}">`);
   out.push(`<meta property="og:description" content="${escapeHtml(ogDesc)}">`);
-  out.push(`<meta property="og:image" content="${BASE_URL}${post ? post.image : '/assets/img/logo.webp'}">`);
+  // The share card: a post keeps its own hero picture, every other page gets
+  // its language's 1200×630 card from tools/make-og-images.mjs. The ?v= is
+  // there for the messengers, which cache a preview by URL for weeks.
+  const og = post
+    ? { url: post.image, width: post.imageWidth, height: post.imageHeight, alt: post.imageAlt }
+    : { url: ogImageUrl(loc), ...OG_IMAGE_SIZE, alt: `Daili — ${ogHeadline(c)}` };
+  out.push(`<meta property="og:image" content="${BASE_URL}${og.url}">`);
+  out.push(`<meta property="og:image:width" content="${og.width}">`);
+  out.push(`<meta property="og:image:height" content="${og.height}">`);
+  out.push(`<meta property="og:image:alt" content="${escapeHtml(og.alt)}">`);
   out.push(`<meta property="og:locale" content="${loc.replace('-', '_')}">`);
   if (post) {
     out.push(`<meta property="article:published_time" content="${post.published}">`);
     out.push(`<meta property="article:modified_time" content="${post.updated}">`);
   }
-  out.push(`<meta name="twitter:card" content="summary">`);
+  out.push(`<meta name="twitter:card" content="summary_large_image">`);
+
+  // Apple's own Smart App Banner: iPhone Safari shows a "Get" bar at the top
+  // of the page, no script and no cookie of ours. Only while the listing is
+  // live — a banner pointing at a pulled app would be a dead end.
+  if (stores.ios.available) out.push(`<meta name="apple-itunes-app" content="app-id=${IOS_APP_ID}">`);
 
   if (post) {
     // headline is post.h1, not post.title: Google wants the headline to be the
@@ -1073,7 +1109,7 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: 'Daili',
-        applicationCategory: 'https://schema.org/LifestyleApplication',
+        applicationCategory: 'LifestyleApplication',
         operatingSystem: 'iOS, Android',
         inLanguage: loc,
         url: canonical,

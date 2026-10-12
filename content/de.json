@@ -227,6 +227,24 @@
       ],
       "pill": "Schwimmen"
     },
+    "alt": {
+      "p_kitchen": "Mutter und Tochter packen in der Küche eine Brotdose",
+      "p_market": "Ein Paar mit Fahrrädern auf dem Wochenmarkt",
+      "p_teen": "Ein Teenager lächelt aufs Handy, neben ihm schläft eine Katze",
+      "p_cake": "Oma und Enkel verzieren eine Geburtstagstorte",
+      "p_football": "Ein Elternteil mit Orangenstücken beim Kinderfußballtraining",
+      "p_super": "Vater und Kleinkind kaufen Gemüse ein",
+      "p_desk": "Eine Jugendliche am Schreibtisch mit Handy und Hausaufgaben",
+      "p_balcony": "Vater und Tochter gießen Pflanzen auf dem Balkon",
+      "shot-home": "Der Startbildschirm der Daili-App",
+      "shot-calendar": "Der gemeinsame Familienkalender in der Daili-App",
+      "shot-shopping": "Eine gemeinsame Einkaufsliste in der Daili-App",
+      "shot-habits": "Gewohnheiten der Familie in der Daili-App",
+      "shot-notes": "Notizen der Familie in der Daili-App",
+      "shot-recipes": "Gespeicherte Rezepte in der Daili-App",
+      "shot-mealplan": "Der Essensplan der Woche in der Daili-App",
+      "shot-birthdays": "Kommende Geburtstage in der Daili-App"
+    },
     "screens": {
       "h2": "Auf jedem Bildschirm zu Hause",
       "sub": "Ein Blick aufs Handgelenk, auf den Startbildschirm oder an die Küchenwand. Derselbe Familienplan, überall.",

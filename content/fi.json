@@ -227,6 +227,24 @@
       ],
       "pill": "Uinti 16.30"
     },
+    "alt": {
+      "p_kitchen": "Äiti ja tytär pakkaavat eväsrasiaa keittiössä",
+      "p_market": "Pariskunta polkupyörineen torilla",
+      "p_teen": "Teini hymyilee puhelimelleen nukkuvan kissan vieressä",
+      "p_cake": "Isoäiti ja lapsenlapsi koristelevat syntymäpäiväkakkua",
+      "p_football": "Vanhempi appelsiinilohkojen kanssa lasten jalkapallotreeneissä",
+      "p_super": "Isä ja taapero ostavat vihanneksia",
+      "p_desk": "Teinityttö pöydän ääressä puhelimen ja läksyjen kanssa",
+      "p_balcony": "Isä ja tytär kastelevat kasveja parvekkeella",
+      "shot-home": "Daili-sovelluksen aloitusnäkymä",
+      "shot-calendar": "Perheen yhteinen kalenteri Daili-sovelluksessa",
+      "shot-shopping": "Yhteinen ostoslista Daili-sovelluksessa",
+      "shot-habits": "Perheen tavat Daili-sovelluksessa",
+      "shot-notes": "Perheen muistiinpanot Daili-sovelluksessa",
+      "shot-recipes": "Tallennetut reseptit Daili-sovelluksessa",
+      "shot-mealplan": "Viikon ruokalista Daili-sovelluksessa",
+      "shot-birthdays": "Tulevat syntymäpäivät Daili-sovelluksessa"
+    },
     "screens": {
       "h2": "Jokaisella näytöllä kotonasi",
       "sub": "Vilkaise rannetta, aloitusnäyttöä tai keittiön seinää. Sama perheen suunnitelma kaikkialla.",

@@ -227,6 +227,24 @@
       ],
       "pill": "Sim 16.30"
     },
+    "alt": {
+      "p_kitchen": "En mamma och dotter packar en matlåda i köket",
+      "p_market": "Ett par med cyklar på torget",
+      "p_teen": "En tonåring ler mot mobilen bredvid en sovande katt",
+      "p_cake": "En mormor och barnbarn dekorerar en födelsedagstårta",
+      "p_football": "En förälder med apelsinklyftor på barnens fotbollsträning",
+      "p_super": "En pappa och ett litet barn handlar grönsaker",
+      "p_desk": "En tonårstjej vid skrivbordet med mobil och läxor",
+      "p_balcony": "En pappa och dotter vattnar växter på balkongen",
+      "shot-home": "Startskärmen i Daili-appen",
+      "shot-calendar": "Den delade familjekalendern i Daili-appen",
+      "shot-shopping": "En delad inköpslista i Daili-appen",
+      "shot-habits": "Familjens vanor i Daili-appen",
+      "shot-notes": "Familjens anteckningar i Daili-appen",
+      "shot-recipes": "Sparade recept i Daili-appen",
+      "shot-mealplan": "Veckans matsedel i Daili-appen",
+      "shot-birthdays": "Kommande födelsedagar i Daili-appen"
+    },
     "screens": {
       "h2": "På varje skärm där hemma",
       "sub": "En blick på handleden, hemskärmen eller köksväggen. Samma familjeplan, överallt.",

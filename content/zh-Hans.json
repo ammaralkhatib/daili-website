@@ -227,6 +227,24 @@
       ],
       "pill": "游泳 16:30"
     },
+    "alt": {
+      "p_kitchen": "妈妈和女儿在厨房装午餐盒",
+      "p_market": "一对推着自行车逛集市的情侣",
+      "p_teen": "少年在熟睡的猫咪旁对着手机微笑",
+      "p_cake": "奶奶和孙子一起装饰生日蛋糕",
+      "p_football": "家长带着橙子片在孩子的足球训练场边",
+      "p_super": "爸爸和幼儿一起买蔬菜",
+      "p_desk": "少女坐在书桌前，手边是手机和作业",
+      "p_balcony": "爸爸和女儿在阳台上浇花",
+      "shot-home": "Daili 应用的主屏幕",
+      "shot-calendar": "Daili 应用中全家共享的日历",
+      "shot-shopping": "Daili 应用中共享的购物清单",
+      "shot-habits": "Daili 应用中的家庭习惯",
+      "shot-notes": "Daili 应用中的家庭笔记",
+      "shot-recipes": "Daili 应用中保存的食谱",
+      "shot-mealplan": "Daili 应用中本周的用餐计划",
+      "shot-birthdays": "Daili 应用中即将到来的生日"
+    },
     "screens": {
       "h2": "家里的每块屏幕上",
       "sub": "看一眼手腕、主屏幕或厨房的墙。同一份家庭安排，处处都在。",

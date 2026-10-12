@@ -227,6 +227,24 @@
       ],
       "pill": "游泳 16:30"
     },
+    "alt": {
+      "p_kitchen": "媽媽和女兒在廚房裝午餐盒",
+      "p_market": "一對推著腳踏車逛市集的情侶",
+      "p_teen": "少年在熟睡的貓咪旁對著手機微笑",
+      "p_cake": "奶奶和孫子一起裝飾生日蛋糕",
+      "p_football": "家長帶著柳橙片在孩子的足球練習場邊",
+      "p_super": "爸爸和幼兒一起買蔬菜",
+      "p_desk": "少女坐在書桌前，手邊是手機和作業",
+      "p_balcony": "爸爸和女兒在陽台上澆花",
+      "shot-home": "Daili App 的主畫面",
+      "shot-calendar": "Daili App 中全家共享的行事曆",
+      "shot-shopping": "Daili App 中共享的購物清單",
+      "shot-habits": "Daili App 中的家庭習慣",
+      "shot-notes": "Daili App 中的家庭筆記",
+      "shot-recipes": "Daili App 中儲存的食譜",
+      "shot-mealplan": "Daili App 中本週的用餐計畫",
+      "shot-birthdays": "Daili App 中即將到來的生日"
+    },
     "screens": {
       "h2": "家裡的每個螢幕上",
       "sub": "看一眼手腕、主畫面或廚房的牆。同一份家庭安排，到處都在。",

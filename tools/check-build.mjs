@@ -948,6 +948,75 @@ for (const loc of LOCALES) {
   }
 }
 
+// --- 17. share card, Smart App Banner, the store-click counter --------------
+// Nothing in a browser shows a missing og:image or a banner meta that points at
+// the wrong app — the first anyone sees of it is a bare link in WhatsApp, or no
+// "Get" bar on an iPhone. So: every page names a share card that is really in
+// dist/ and has the size it claims; every page except a blog post uses its own
+// language's card (blog posts keep their hero, section 11); every page carries
+// the banner for the one App Store id while the listing is live, and none
+// carries it when it is not.
+{
+  const iosId = (stores.ios.url.match(/\/id(\d+)/) || [])[1];
+  const banner = `<meta name="apple-itunes-app" content="app-id=${iosId}">`;
+  const meta = (html, prop) => (html.match(new RegExp(`<meta (?:property|name)="${prop}" content="([^"]*)">`)) || [])[1];
+  /** Width and height out of a JPEG's SOF marker, a PNG's IHDR or a WebP's first chunk (the blog heroes). */
+  const imageSize = (buf) => {
+    if (buf.readUInt32BE(0) === 0x89504e47) return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+    if (buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP') {
+      const chunk = buf.toString('ascii', 12, 16);
+      if (chunk === 'VP8 ') return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+      if (chunk === 'VP8L') { const b = buf.readUInt32LE(21); return { width: (b & 0x3fff) + 1, height: ((b >> 14) & 0x3fff) + 1 }; }
+      if (chunk === 'VP8X') return { width: buf.readUIntLE(24, 3) + 1, height: buf.readUIntLE(27, 3) + 1 };
+      return null;
+    }
+    for (let i = 2; i < buf.length - 9;) {
+      if (buf[i] !== 0xff) return null;
+      const marker = buf[i + 1];
+      if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+        return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+      }
+      i += 2 + buf.readUInt16BE(i + 2);
+    }
+    return null;
+  };
+  const sizes = new Map();
+  for (const f of htmlFiles) {
+    const r = rel(f);
+    const html = read(f);
+    const head = html.slice(0, html.indexOf('</head>'));
+    const lang = (html.match(/<html lang="([^"]+)"/) || [])[1];
+    const isPost = meta(head, 'og:type') === 'article';
+
+    const banners = head.split('<meta name="apple-itunes-app"').length - 1;
+    if (stores.ios.available && (banners !== 1 || !head.includes(banner))) fail(r, `needs exactly one ${banner}, has ${banners}`);
+    if (!stores.ios.available && banners) fail(r, 'carries the Smart App Banner, but the App Store listing is not available');
+
+    const img = meta(head, 'og:image');
+    if (!img || !img.startsWith(`${BASE_URL}/`)) { fail(r, `og:image is ${img || '(none)'}, not an absolute ${BASE_URL} URL`); continue; }
+    const file = path.join(DIST, img.slice(BASE_URL.length).split('?')[0]);
+    if (!fs.existsSync(file)) { fail(r, `og:image ${img} is not in dist/`); continue; }
+    if (!isPost && !img.startsWith(`${BASE_URL}/assets/img/og/og-${lang}.jpg?v=`)) fail(r, `og:image is ${img}, expected this language's card og-${lang}.jpg?v=…`);
+    if (!sizes.has(file)) sizes.set(file, imageSize(fs.readFileSync(file)));
+    const size = sizes.get(file);
+    const w = meta(head, 'og:image:width');
+    const h = meta(head, 'og:image:height');
+    if (!size || String(size.width) !== w || String(size.height) !== h) fail(r, `og:image:width/height say ${w}×${h}, the file is ${size ? `${size.width}×${size.height}` : 'unreadable'}`);
+    if (!meta(head, 'og:image:alt')) fail(r, 'no og:image:alt');
+    if (meta(head, 'twitter:card') !== 'summary_large_image') fail(r, `twitter:card is ${meta(head, 'twitter:card') || '(none)'}, expected summary_large_image`);
+  }
+  // Every language has its card, at the size the head promises.
+  for (const loc of LOCALES) {
+    const file = path.join(DIST, 'assets/img/og', `og-${loc}.jpg`);
+    if (!fs.existsSync(file)) { fail(`assets/img/og/og-${loc}.jpg`, 'missing — run node tools/make-og-images.mjs'); continue; }
+    const size = imageSize(fs.readFileSync(file));
+    if (!size || size.width !== 1200 || size.height !== 630) fail(`assets/img/og/og-${loc}.jpg`, `is ${size ? `${size.width}×${size.height}` : 'unreadable'}, expected 1200×630`);
+    if (fs.statSync(file).size > 300 * 1024) fail(`assets/img/og/og-${loc}.jpg`, 'is over 300 KB');
+  }
+  // The counter's target is a real file, or every click logs a 404 instead.
+  if (!fs.existsSync(path.join(DIST, 'assets/c.gif'))) fail('assets/c.gif', 'missing — the store-click counter in script.js requests it');
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} build error(s):`);
   console.error(errors.join('\n'));

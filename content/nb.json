@@ -227,6 +227,24 @@
       ],
       "pill": "Svøm 16:30"
     },
+    "alt": {
+      "p_kitchen": "En mor og datter pakker matpakke på kjøkkenet",
+      "p_market": "Et par med sykler på torget",
+      "p_teen": "En tenåring smiler til mobilen ved siden av en sovende katt",
+      "p_cake": "En bestemor og barnebarn pynter en bursdagskake",
+      "p_football": "En forelder med appelsinbåter på barnas fotballtrening",
+      "p_super": "En far og et lite barn kjøper grønnsaker",
+      "p_desk": "En tenåringsjente ved pulten med mobil og lekser",
+      "p_balcony": "En far og datter vanner planter på balkongen",
+      "shot-home": "Startskjermen i Daili-appen",
+      "shot-calendar": "Den felles familiekalenderen i Daili-appen",
+      "shot-shopping": "En felles handleliste i Daili-appen",
+      "shot-habits": "Familiens vaner i Daili-appen",
+      "shot-notes": "Familiens notater i Daili-appen",
+      "shot-recipes": "Lagrede oppskrifter i Daili-appen",
+      "shot-mealplan": "Ukens matplan i Daili-appen",
+      "shot-birthdays": "Kommende bursdager i Daili-appen"
+    },
     "screens": {
       "h2": "På hver skjerm i hjemmet",
       "sub": "Et blikk på håndleddet, startskjermen eller kjøkkenveggen. Samme familieplan, overalt.",

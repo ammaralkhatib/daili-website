@@ -260,6 +260,24 @@
       ],
       "pill": "Swim 16:30"
     },
+    "alt": {
+      "p_kitchen": "A mother and daughter packing a lunch box in the kitchen",
+      "p_market": "A couple with bicycles at a farmers’ market",
+      "p_teen": "A teenager smiling at a phone next to a sleeping cat",
+      "p_cake": "A grandmother and grandson decorating a birthday cake",
+      "p_football": "A parent with orange slices at children’s football practice",
+      "p_super": "A father and toddler buying vegetables",
+      "p_desk": "A teenager at a desk with a phone and homework",
+      "p_balcony": "A father and daughter watering plants on a balcony",
+      "shot-home": "The home screen of the Daili app",
+      "shot-calendar": "The shared family calendar in the Daili app",
+      "shot-shopping": "A shared shopping list in the Daili app",
+      "shot-habits": "Family habits in the Daili app",
+      "shot-notes": "Family notes in the Daili app",
+      "shot-recipes": "Saved recipes in the Daili app",
+      "shot-mealplan": "The week’s meal plan in the Daili app",
+      "shot-birthdays": "Upcoming birthdays in the Daili app"
+    },
     "screens": {
       "@screens": { "description": "\"On every screen\" section: five cards (h3 + p)." },
       "h2": "On every screen in your home",

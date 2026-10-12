@@ -227,6 +227,24 @@
       ],
       "pill": "Renang 16.30"
     },
+    "alt": {
+      "p_kitchen": "Ibu dan anak perempuan menyiapkan kotak bekal di dapur",
+      "p_market": "Pasangan bersepeda di pasar",
+      "p_teen": "Remaja tersenyum ke ponselnya di samping kucing yang tidur",
+      "p_cake": "Nenek dan cucu menghias kue ulang tahun",
+      "p_football": "Orang tua membawa irisan jeruk saat latihan sepak bola anak-anak",
+      "p_super": "Ayah dan balitanya membeli sayur",
+      "p_desk": "Remaja putri di meja belajar dengan ponsel dan PR",
+      "p_balcony": "Ayah dan anak perempuan menyiram tanaman di balkon",
+      "shot-home": "Layar beranda aplikasi Daili",
+      "shot-calendar": "Kalender keluarga bersama di aplikasi Daili",
+      "shot-shopping": "Daftar belanja bersama di aplikasi Daili",
+      "shot-habits": "Kebiasaan keluarga di aplikasi Daili",
+      "shot-notes": "Catatan keluarga di aplikasi Daili",
+      "shot-recipes": "Resep tersimpan di aplikasi Daili",
+      "shot-mealplan": "Rencana makan minggu ini di aplikasi Daili",
+      "shot-birthdays": "Ulang tahun mendatang di aplikasi Daili"
+    },
     "screens": {
       "h2": "Di setiap layar di rumahmu",
       "sub": "Lirik pergelangan tanganmu, layar utama, atau dinding dapur. Rencana keluarga yang sama, di mana saja.",

@@ -227,6 +227,24 @@
       ],
       "pill": "Înot 16:30"
     },
+    "alt": {
+      "p_kitchen": "O mamă și fiica ei pregătesc pachețelul în bucătărie",
+      "p_market": "Un cuplu cu biciclete la piață",
+      "p_teen": "Un adolescent zâmbește la telefon lângă o pisică ce doarme",
+      "p_cake": "O bunică și nepotul ei decorează un tort aniversar",
+      "p_football": "Un părinte cu felii de portocală la antrenamentul de fotbal al copiilor",
+      "p_super": "Un tată și copilul lui mic cumpără legume",
+      "p_desk": "O adolescentă la birou cu telefonul și temele",
+      "p_balcony": "Un tată și fiica lui udă plantele pe balcon",
+      "shot-home": "Ecranul principal al aplicației Daili",
+      "shot-calendar": "Calendarul comun al familiei în aplicația Daili",
+      "shot-shopping": "O listă de cumpărături comună în aplicația Daili",
+      "shot-habits": "Obiceiurile familiei în aplicația Daili",
+      "shot-notes": "Notițele familiei în aplicația Daili",
+      "shot-recipes": "Rețete salvate în aplicația Daili",
+      "shot-mealplan": "Meniul săptămânii în aplicația Daili",
+      "shot-birthdays": "Zilele de naștere care urmează în aplicația Daili"
+    },
     "screens": {
       "h2": "Pe fiecare ecran din casă",
       "sub": "O privire la încheietură, pe ecranul telefonului sau pe peretele din bucătărie. Același plan de familie, peste tot.",

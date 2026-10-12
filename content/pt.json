@@ -227,6 +227,24 @@
       ],
       "pill": "Nadar 16h30"
     },
+    "alt": {
+      "p_kitchen": "Mãe e filha preparam a lancheira na cozinha",
+      "p_market": "Um casal com bicicletas na feira",
+      "p_teen": "Um adolescente sorri para o celular ao lado de um gato dormindo",
+      "p_cake": "Uma avó e o neto decoram um bolo de aniversário",
+      "p_football": "Uma mãe com gomos de laranja no treino de futebol das crianças",
+      "p_super": "Um pai e o filho pequeno compram legumes",
+      "p_desk": "Uma adolescente na escrivaninha com o celular e a lição de casa",
+      "p_balcony": "Pai e filha regam plantas na varanda",
+      "shot-home": "A tela inicial do app Daili",
+      "shot-calendar": "O calendário compartilhado da família no app Daili",
+      "shot-shopping": "Uma lista de compras compartilhada no app Daili",
+      "shot-habits": "Os hábitos da família no app Daili",
+      "shot-notes": "As notas da família no app Daili",
+      "shot-recipes": "Receitas salvas no app Daili",
+      "shot-mealplan": "O cardápio da semana no app Daili",
+      "shot-birthdays": "Os próximos aniversários no app Daili"
+    },
     "screens": {
       "h2": "Em todas as telas da casa",
       "sub": "Uma olhada no pulso, na tela inicial ou na parede da cozinha. O mesmo plano da família, em todo lugar.",

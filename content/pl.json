@@ -227,6 +227,24 @@
       ],
       "pill": "Basen 16:30"
     },
+    "alt": {
+      "p_kitchen": "Mama z córką pakują drugie śniadanie w kuchni",
+      "p_market": "Para z rowerami na targu",
+      "p_teen": "Nastolatek uśmiecha się do telefonu obok śpiącego kota",
+      "p_cake": "Babcia z wnukiem dekorują tort urodzinowy",
+      "p_football": "Rodzic z cząstkami pomarańczy na treningu piłkarskim dzieci",
+      "p_super": "Tata z maluchem kupują warzywa",
+      "p_desk": "Nastolatka przy biurku z telefonem i pracą domową",
+      "p_balcony": "Tata z córką podlewają rośliny na balkonie",
+      "shot-home": "Ekran główny aplikacji Daili",
+      "shot-calendar": "Wspólny kalendarz rodzinny w aplikacji Daili",
+      "shot-shopping": "Wspólna lista zakupów w aplikacji Daili",
+      "shot-habits": "Nawyki rodziny w aplikacji Daili",
+      "shot-notes": "Notatki rodziny w aplikacji Daili",
+      "shot-recipes": "Zapisane przepisy w aplikacji Daili",
+      "shot-mealplan": "Jadłospis na tydzień w aplikacji Daili",
+      "shot-birthdays": "Nadchodzące urodziny w aplikacji Daili"
+    },
     "screens": {
       "h2": "Na każdym ekranie w domu",
       "sub": "Zerknij na nadgarstek, ekran główny albo ścianę w kuchni. Ten sam plan rodziny, wszędzie.",

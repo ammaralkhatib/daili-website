@@ -227,6 +227,24 @@
       ],
       "pill": "Nuoto 16:30"
     },
+    "alt": {
+      "p_kitchen": "Una madre e la figlia preparano il pranzo al sacco in cucina",
+      "p_market": "Una coppia con le biciclette al mercato",
+      "p_teen": "Un ragazzo sorride al telefono accanto a un gatto addormentato",
+      "p_cake": "Una nonna e il nipote decorano una torta di compleanno",
+      "p_football": "Un genitore con spicchi d’arancia all’allenamento di calcio dei bambini",
+      "p_super": "Un papà e il suo bimbo comprano la verdura",
+      "p_desk": "Una ragazza alla scrivania con telefono e compiti",
+      "p_balcony": "Un papà e la figlia annaffiano le piante sul balcone",
+      "shot-home": "La schermata iniziale dell’app Daili",
+      "shot-calendar": "Il calendario di famiglia condiviso nell’app Daili",
+      "shot-shopping": "Una lista della spesa condivisa nell’app Daili",
+      "shot-habits": "Le abitudini della famiglia nell’app Daili",
+      "shot-notes": "Le note della famiglia nell’app Daili",
+      "shot-recipes": "Ricette salvate nell’app Daili",
+      "shot-mealplan": "Il menu della settimana nell’app Daili",
+      "shot-birthdays": "I prossimi compleanni nell’app Daili"
+    },
     "screens": {
       "h2": "Su ogni schermo di casa",
       "sub": "Uno sguardo al polso, alla schermata Home o alla parete della cucina. Lo stesso piano di famiglia, ovunque.",

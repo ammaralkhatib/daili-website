@@ -227,6 +227,24 @@
       ],
       "pill": "水泳 16:30"
     },
+    "alt": {
+      "p_kitchen": "キッチンでお弁当を詰める母と娘",
+      "p_market": "自転車を押して市場を歩くカップル",
+      "p_teen": "眠る猫のそばでスマホに笑顔を向けるティーン",
+      "p_cake": "誕生日ケーキを飾り付ける祖母と孫",
+      "p_football": "子どものサッカー練習にオレンジを持ってきた親",
+      "p_super": "野菜を買う父親と幼い子ども",
+      "p_desk": "スマホと宿題を前に机に向かう女の子",
+      "p_balcony": "ベランダで植物に水をやる父と娘",
+      "shot-home": "Dailiアプリのホーム画面",
+      "shot-calendar": "Dailiアプリの家族で共有するカレンダー",
+      "shot-shopping": "Dailiアプリで共有する買い物リスト",
+      "shot-habits": "Dailiアプリの家族の習慣",
+      "shot-notes": "Dailiアプリの家族のメモ",
+      "shot-recipes": "Dailiアプリに保存したレシピ",
+      "shot-mealplan": "Dailiアプリの今週の献立",
+      "shot-birthdays": "Dailiアプリの近づく誕生日"
+    },
     "screens": {
       "h2": "家じゅうのどの画面にも",
       "sub": "手首でも、ホーム画面でも、キッチンの壁でも。どこでも同じ家族の予定を。",
