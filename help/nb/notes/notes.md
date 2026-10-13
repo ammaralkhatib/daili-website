@@ -5,18 +5,20 @@ summary: Skriv et notat eller del en lenke fra hvilken som helst app. Notater er
 keywords: notat, notater, hurtignotat, lenke, del, sjekkliste, tagg, filter, søk, påminnelse, nylig slettet, oppsummer
 tipTitle: Del en lenke med daili for å ta vare på den
 tipBody: Del en video, et innlegg eller en side fra hvilken som helst app med daili – det blir et notat, privat til du deler det.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-Et notat er en **Tittel**, tekst eller begge deler. Punktlister og sjekklister fungerer: trykk på en boks for å krysse den av. Ingen mapper.
+Et notat er en **Tittel**, tekst eller begge deler, med punktlister og sjekklister.
 
 ![Startskjermen. Flisen Notater er ringet inn.](notes-tile)
 
-1. Trykk på **Notater** på startskjermen, og så på **+** eller en knapp i bunnlinjen: bilde, stemme (tar opp med en gang), video, lenke.
-2. Skriv, og trykk på **Lagre**. Lukker du et notat som ikke er lagret, spør daili først.
+1. Trykk på **Notater** på startskjermen, og så på **+** eller en knapp i bunnlinjen: bilde, stemme, video, lenke, tegning.
+2. Skriv, og trykk på **Lagre**.
+
+Notater åpnes som et rutenett, med store bilder og tegninger og rammer i taggfargene. Knappen øverst bytter til en liste.
 
 Raskere: modulen **Hurtignotat**, Handling-knappen på iPhone eller Del → **daili** → **Lagre** fra hvilken som helst app.
 
-![Et nytt notat med knappene Bilde, Stemme, Video og Lenke. Linjen som viser hvem som kan se det, er ringet inn.](notes-new)
+![Et nytt notat med knappene Bilde, Stemme, Video, Lenke og Tegn. Linjen som viser hvem som kan se det, er ringet inn.](notes-new)
 
 Over tastaturet: tagger, en påminnelse (bare du får den) og hvem som ser notatet: **Bare meg** (standard), **Hele familien** eller **Velg medlemmer**. **Skann lenke** leser en nettadresse fra et bilde.
 
@@ -28,4 +30,4 @@ Søk i eller filtrer listen. Slettede notater venter i 30 dager under **⋯** �
 
 Under **Daili Plus** i et notat bruker **Lag en hendelse, oppgave eller handleliste av dette** og **Oppsummer** (video, nettside eller langt notat) én KI-handling hver.
 
-> Note: Uten internett venter et nytt notat og sendes av seg selv senere.
+> Note: Uten internett sendes nye notater av seg selv senere.

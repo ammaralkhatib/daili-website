@@ -3,7 +3,7 @@ id: lists-todos
 title: Seznamy úkolů
 summary: Společné seznamy úkolů na domácí práce, pochůzky a věci do školy. Odškrtávej úkoly a měj přehled, kdo co dělá.
 keywords: úkol, úkoly, to-do, povinnosti, pochůzky, checklist, domácnost, odškrtnout, hotovo, seznam
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Jako nákupní seznam, ale úkol může mít navíc člověka, termín a připomenutí.
 
@@ -15,6 +15,8 @@ Jako nákupní seznam, ale úkol může mít navíc člověka, termín a připom
 4. Hotovo? Klepni na políčko před úkolem. Úkol se přesune dolů do části **Hotovo**.
 5. Pokud chceš seznam uspořádat, klepni nahoře na **⋯** a pak na **Seskupit podle**. Vyber **Termín**, **Osoba** nebo **Kategorie**.
 
-Ve sdíleném seznamu udělá zámek vpravo na liště pro přidávání, hned před šipkou pro odeslání, tvoje další úkoly soukromými, dokud seznam neopustíš. Otevřený znamená vypnuto, zavřený zapnuto.
+Dokonči seznam nebo všechny úkoly v Dnes a Minzi možná zajásá.
+
+Ve sdíleném seznamu udělá zámek vedle šipky pro odeslání tvoje další úkoly soukromými, dokud seznam neopustíš. Zavřený znamená zapnuto.
 
 > Note: **Seskupit podle** se ukládá jen na tomto telefonu.

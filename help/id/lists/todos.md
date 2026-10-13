@@ -3,7 +3,7 @@ id: lists-todos
 title: Daftar tugas
 summary: Daftar tugas bersama untuk pekerjaan rumah, urusan, dan keperluan sekolah. Centang tugas dan lihat siapa mengerjakan apa.
 keywords: tugas, to-do, todo, pekerjaan rumah, urusan, daftar periksa, rumah tangga, centang, selesai, daftar
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Seperti daftar belanja, tapi tugas juga bisa punya orang, tanggal jatuh tempo, dan pengingat.
 
@@ -15,6 +15,8 @@ Seperti daftar belanja, tapi tugas juga bisa punya orang, tanggal jatuh tempo, d
 4. Sudah selesai? Ketuk kotak di depan tugas. Tugas itu turun ke **Selesai**.
 5. Untuk mengurutkan daftar, ketuk **⋯** di atas, lalu **Kelompokkan menurut**. Pilih **Tanggal jatuh tempo**, **Orang**, atau **Kategori**.
 
-Di daftar bersama, gembok di kanan bilah tambah, tepat sebelum panah kirim, membuat tugas Anda berikutnya menjadi pribadi sampai Anda keluar dari daftar. Gembok terbuka berarti mati, tertutup berarti menyala.
+Selesaikan sebuah daftar atau semua tugas Hari ini, dan Minzi mungkin bersorak.
+
+Di daftar bersama, gembok di sebelah panah kirim membuat tugas Anda berikutnya menjadi pribadi sampai Anda keluar. Tertutup berarti menyala.
 
 > Note: **Kelompokkan menurut** hanya tersimpan di ponsel ini.

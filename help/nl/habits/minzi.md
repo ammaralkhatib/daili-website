@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energie, Minzi’s reisjes en ansichtkaarten
 summary: Elk vinkje vult Minzi’s energiebalk. Is hij vol, dan gaat ze op reis en komt er een ansichtkaart thuis.
 keywords: minzi, kat, energie, reis, ansichtkaart, gezinskat, kat hernoemen, energiebalk, beloning, huisdier
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi is de kat van je gezin. Ze woont in haar kamer op het scherm **Gewoontes**, waar ze slaapt, zit en kijkt hoe jij afvinkt.
 
@@ -15,5 +15,7 @@ Minzi is de kat van je gezin. Ze woont in haar kamer op het scherm **Gewoontes**
 4. Tik onderaan op **Minzi** om al haar **Ansichtkaarten**, haar reisjes en jullie gezinsreeks te zien.
 
 Om de kat een andere naam te geven, tik je op dat scherm op **Naam wijzigen**.
+
+Minzi komt ook buiten **Gewoontes** tevoorschijn, maar alleen als je een hele lijst of alle taken van Vandaag afrondt.
 
 > Note: Iedereen verdient één keer per gewoonte per dag energie. Privégewoontes en rustdagen geven geen energie.

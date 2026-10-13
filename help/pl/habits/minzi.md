@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energia, podróże Minziego i pocztówki
 summary: Każde odhaczenie napełnia pasek energii Minziego. Gdy jest pełny, kot wyrusza w podróż, a do domu przychodzi pocztówka.
 keywords: minzi, kot, energia, podróż, pocztówka, rodzinny kot, zmień imię kota, pasek energii, nagroda, zwierzak
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi to kot twojej rodziny. Mieszka w swoim pokoiku na ekranie **Nawyki**, gdzie drzemie, siedzi i patrzy, jak odhaczasz.
 
@@ -15,5 +15,7 @@ Minzi to kot twojej rodziny. Mieszka w swoim pokoiku na ekranie **Nawyki**, gdzi
 4. Dotknij **Minzi** na dole, żeby zobaczyć wszystkie **Pocztówki**, jego podróże i serię twojej rodziny.
 
 Żeby nadać kotu inne imię, dotknij na tym ekranie **Zmień imię**.
+
+Minzi pojawia się też poza ekranem **Nawyki**, ale tylko wtedy, gdy skończysz całą listę albo wszystkie zadania na Dziś.
 
 > Note: Każda osoba zdobywa energię raz na nawyk dziennie. Prywatne nawyki i dni wolne nie dają energii.

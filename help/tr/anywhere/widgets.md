@@ -5,9 +5,9 @@ summary: Planlarını gör, görevleri ve alışverişi işaretle ya da yeni bir
 keywords: widget, widget'lar, ana ekran, kilit ekranı, iphone, android, alışkanlıklar, akşam yemeği, hızlı ekle, doğum günü, işaretle, widget ekle
 tipTitle: Planın ana ekranında
 tipBody: Bir daili widget'ı ekle ve uygulamayı açmadan sırada ne olduğunu gör.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili'nin takvimin için (**Sıradaki**, sıradaki etkinliğe geri sayım olarak da), **Alışveriş**, **Görevler**, Minzi'li alışkanlıklar, doğum günü geri sayımı, bu akşamın yemeği, hızlı ekleme ve **Hızlı not** için widget'ları var.
+daili'nin takvimin için (**Takvim** ve sıradaki etkinliğe geri sayan **Sıradaki**), **Alışveriş**, **Görevler**, Minzi'li alışkanlıklar, doğum günü geri sayımı, bu akşamın yemeği, hızlı ekleme ve **Hızlı not** için widget'ları var.
 
 1. Telefonunun ana ekranında boş bir yere basılı tut.
 2. iPhone'da **Düzenle**, sonra **Widget Ekle** seçeneğine dokun. Android'de **Widget'lar** seçeneğine dokun.

@@ -5,9 +5,9 @@ summary: Vois ton programme, coche tes tâches et tes courses ou ajoute quelque 
 keywords: widget, widgets, écran d'accueil, écran verrouillé, iphone, android, habitudes, dîner, ajout rapide, anniversaire, cocher, ajouter un widget
 tipTitle: Ton programme sur ton écran d'accueil
 tipBody: Ajoute un widget daili et vois ce qui arrive sans ouvrir l'app.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili a des widgets pour ton agenda (**À suivre**, et **À venir** avec un compte à rebours), **Courses**, **Tâches**, les habitudes avec Minzi, le compte à rebours des anniversaires, le dîner de ce soir, l'ajout rapide et **Note rapide**.
+daili a des widgets pour ton programme (**Agenda**, et **À venir** avec un compte à rebours), **Courses**, **Tâches**, les habitudes avec Minzi, le compte à rebours des anniversaires, le dîner de ce soir, l'ajout rapide et **Note rapide**.
 
 1. Garde le doigt appuyé sur un espace vide de l'écran d'accueil de ton téléphone.
 2. Sur iPhone, touche **Modifier**, puis **Ajouter un widget**. Sur Android, touche **Widgets**.

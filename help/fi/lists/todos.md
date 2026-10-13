@@ -3,7 +3,7 @@ id: lists-todos
 title: Tehtävälistat
 summary: Yhteiset tehtävälistat kotitöille, asioille ja koulujutuille. Merkitse tehtävät tehdyiksi ja näe, kuka tekee mitäkin.
 keywords: tehtävä, tehtävät, to-do, kotityöt, asiat, tarkistuslista, kotitalous, merkitse, tehty, lista
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Kuin ostoslista, mutta tehtävällä voi olla myös henkilö, eräpäivä ja muistutus.
 
@@ -15,6 +15,8 @@ Kuin ostoslista, mutta tehtävällä voi olla myös henkilö, eräpäivä ja mui
 4. Valmista? Napauta tehtävän edessä olevaa ruutua. Se siirtyy alas kohtaan **Tehty**.
 5. Jos haluat järjestää listan, napauta yläreunassa **⋯** ja sitten **Ryhmittele**. Valitse **Eräpäivä**, **Henkilö** tai **Luokka**.
 
-Jaetussa listassa lisäyspalkin oikean reunan lukko, juuri ennen lähetysnuolta, tekee seuraavista tehtävistäsi yksityisiä, kunnes poistut listalta. Auki tarkoittaa pois päältä, kiinni päällä.
+Kun saat listan tai kaikki Tänään-näkymän tehtävät valmiiksi, Minzi saattaa hurrata.
+
+Jaetussa listassa lähetysnuolen vieressä oleva lukko tekee seuraavista tehtävistäsi yksityisiä, kunnes poistut listalta. Kiinni tarkoittaa päällä.
 
 > Note: **Ryhmittele**-valinta tallentuu vain tähän puhelimeen.

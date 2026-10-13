@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Die Kalender deines Handys in daili zeigen
-summary: Arbeits-, Schul- oder Sportkalender neben den Familienterminen. Nur du siehst sie.
-keywords: handy-kalender, telefonkalender, gerätekalender, arbeitskalender, ical, outlook, apple kalender, privat
+title: Weitere Kalender hinzufügen: Handy, Google, Links und Dateien
+summary: Zeig die Kalender deines Handys oder Google Kalender neben den Familienterminen, folge einem Schulkalender oder importiere eine Datei.
+keywords: handy-kalender, apple kalender, google kalender, kalender hinzufügen, andere kalender, abonnieren, link, schulkalender, arbeitskalender, ics, privat
 tipTitle: Die Kalender deines Handys in daili
 tipBody: Arbeits-, Schul- oder Sportkalender können neben den Familienterminen erscheinen.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Kalender, die du schon auf diesem Handy hast, können neben den Terminen deiner Familie erscheinen.
+Arbeits-, Schul- oder Sportkalender können neben den Terminen deiner Familie erscheinen.
 
-1. Öffne den **Kalender**.
-2. Tippe oben rechts auf den Einstellungs-Button (das Zahnrad).
-3. Tippe unter **Handy-Kalender** auf **Verbinden** und erlaube den Zugriff.
-4. Achte darauf, dass **Handy-Kalender anzeigen** an ist. Tippe dann auf **Kalender auswählen** und wähle die, die angezeigt werden sollen.
+1. Öffne den **Kalender** und tippe oben rechts auf das Zahnrad.
+2. Tippe unter **Andere Kalender** auf **Kalender hinzufügen**.
+3. **Apple Kalender** (iPhone) oder **Handy-Kalender** (Android): die Kalender deines Handys. Erlaube den Zugriff, und daili zeigt deine wichtigsten.
+4. **Google Kalender**: Melde dich einmal an und wähle, wer welchen Kalender sieht.
+5. **Per Link abonnieren**: ein Schul- oder Vereinskalender, der sich selbst aktualisiert. Deine ganze Familie sieht ihn. Nur für Admins.
+6. **Datei importieren (.ics)**: kopiert die Termine einmalig in daili.
 
-![Der Abschnitt Handy-Kalender in den Kalendereinstellungen](calendar-phone-calendars)
+![Das Fenster Kalender hinzufügen mit Apple Kalender, Google Kalender, Per Link abonnieren und Datei importieren (.ics).](calendar-other-calendars)
 
-> Note: Diese Kalender bleiben auf diesem Handy. Nichts wird hochgeladen, und der Rest deiner Familie sieht sie nicht.
+Sie stehen unter **Andere Kalender**. Beim Handy steht **Nur du**, bei Links **Familie**. Tippe auf die Handy-Zeile, um deine Auswahl zu ändern. Zum Entfernen tippe auf **⋮** → **Entfernen**. daili fragt vorher nach. Auf deinem Handy wird nichts gelöscht, und fügst du ihn wieder hinzu, ist deine Auswahl wieder da.
+
+> Note: Handy-Kalender bleiben auf diesem Handy: Nichts wird hochgeladen, und deine Familie sieht sie nicht.

@@ -5,9 +5,9 @@ summary: Näe suunnitelmasi, kuittaa tehtävät ja ostokset tai lisää jotain u
 keywords: widget, widgetit, kotinäyttö, lukitusnäyttö, iphone, android, tavat, illallinen, pikalisäys, syntymäpäivä, kuittaa, lisää widget
 tipTitle: Suunnitelmasi kotinäytöllä
 tipBody: Lisää daili-widget ja näe seuraavat menot avaamatta sovellusta.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-dailissa on widgetit kalenterille (**Seuraavaksi**, myös lähtölaskentana seuraavaan tapahtumaan), **Ostokset**, **Tehtävät**, tavat Minzin kanssa, syntymäpäivien lähtölaskenta, tämän illan illallinen, pikalisäys ja **Pikamuistiinpano**.
+dailissa on kalenteriwidgetit (**Kalenteri** sekä **Seuraavaksi** lähtölaskennalla), **Ostokset**, **Tehtävät**, tavat Minzin kanssa, syntymäpäivien lähtölaskenta, tämän illan illallinen, pikalisäys ja **Pikamuistiinpano**.
 
 1. Paina pitkään tyhjää kohtaa puhelimesi kotinäytöllä.
 2. Napauta iPhonessa **Muokkaa** ja sitten **Lisää widget**. Napauta Androidilla **Widgetit**.

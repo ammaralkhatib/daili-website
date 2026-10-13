@@ -3,7 +3,7 @@ id: lists-shopping
 title: Listy zakupów: dodawanie, odhaczanie, czyszczenie
 summary: Jedna lista zakupów dla całej rodziny. Dodawaj rzeczy, odhaczaj je w sklepie i usuwaj to, co już kupione.
 keywords: zakupy, spożywcze, lista zakupów, kupić, odhacz, zaznacz, supermarket, sklep, wyczyść, gotowe
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Każdy w rodzinie widzi te same listy zakupów. Gdy ktoś coś doda albo odhaczy, wszyscy to widzą.
 
@@ -14,5 +14,7 @@ Każdy w rodzinie widzi te same listy zakupów. Gdy ktoś coś doda albo odhaczy
 3. Dotknij elementu, żeby zmienić pole **Ilość** albo wypełnić pole **Notatka**, a potem dotknij **Zapisz**.
 4. W sklepie dotknij pola wyboru przed elementem. Element przesunie się w dół do sekcji **Gotowe**.
 5. Po powrocie do domu dotknij **⋯** na górze, a potem **Usuń gotowe**. Albo dotknij **Odznacz wszystko**, żeby użyć tej samej listy jeszcze raz.
+
+Jeśli masz budżet, po odhaczeniu ostatniej rzeczy daili zaproponuje dopisanie kosztu do budżetu. Możesz też dotknąć **⋯** → **Dodaj do budżetu**.
 
 > Note: Odhaczony zły element? Dotknij **Cofnij** w komunikacie na dole ekranu.

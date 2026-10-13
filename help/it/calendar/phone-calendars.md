@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Mostrare in daili i calendari del telefono
-summary: I calendari di lavoro, scuola o sport accanto agli eventi di famiglia. Li vedi solo tu.
-keywords: calendario del telefono, calendario del dispositivo, calendario di lavoro, ical, outlook, calendario apple, google calendar, privato
+title: Aggiungere altri calendari: telefono, Google, link e file
+summary: Mostra i calendari del telefono o Google Calendar accanto agli eventi di famiglia, segui il calendario della scuola o importa un file.
+keywords: calendario del telefono, calendario apple, google calendar, aggiungere calendario, altri calendari, iscriversi, link, calendario scolastico, calendario di lavoro, ics, privato
 tipTitle: Vedi in daili i calendari del telefono
 tipBody: I calendari di lavoro, scuola o sport possono comparire accanto agli eventi di famiglia.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-I calendari che hai già su questo telefono possono comparire accanto agli eventi della tua famiglia.
+I calendari di lavoro, scuola o sport possono comparire accanto agli eventi della tua famiglia.
 
-1. Apri **Calendario**.
-2. Tocca il pulsante delle impostazioni (l'ingranaggio) in alto a destra.
-3. Sotto **Calendari del telefono**, tocca **Collega** e consenti l'accesso.
-4. Controlla che **Mostra i calendari del telefono** sia attivo, poi tocca **Scegli i calendari** e scegli quelli da mostrare.
+1. Apri **Calendario** e tocca l'ingranaggio in alto a destra.
+2. Sotto **Altri calendari**, tocca **Aggiungi un calendario**.
+3. **Calendario Apple** (iPhone) o **Calendari del telefono** (Android): i calendari del tuo telefono. Consenti l'accesso e daili mostra quelli principali.
+4. **Google Calendar**: accedi una volta e scegli chi vede ogni calendario.
+5. **Iscriviti con un link**: un calendario della scuola o di un club che si aggiorna da solo. Lo vede tutta la famiglia. Solo per gli amministratori.
+6. **Importa un file (.ics)**: copia gli eventi in daili una volta sola.
 
-![La sezione Calendari del telefono nelle impostazioni del calendario](calendar-phone-calendars)
+![Il pannello Aggiungi un calendario con Calendario Apple, Google Calendar, Iscriviti con un link e Importa un file (.ics).](calendar-other-calendars)
 
-> Note: Questi calendari restano su questo telefono. Non viene caricato niente, e il resto della famiglia non li vede.
+Li trovi sotto **Altri calendari**. Il telefono riporta **Solo tu**, i link **Famiglia**. Tocca la riga del telefono per cambiare le tue scelte. Per toglierlo, tocca **⋮** → **Rimuovi**. daili prima te lo chiede. Sul telefono non viene eliminato niente, e se lo aggiungi di nuovo le tue scelte tornano.
+
+> Note: I calendari del telefono restano su questo telefono: non viene caricato niente, e la tua famiglia non li vede.

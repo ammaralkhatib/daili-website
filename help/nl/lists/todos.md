@@ -3,7 +3,7 @@ id: lists-todos
 title: Takenlijsten
 summary: Gedeelde takenlijsten voor klusjes, boodschappen doen en schooldingen. Vink taken af en zie wie wat doet.
 keywords: taak, taken, to-do, todo, klusjes, huishouden, checklist, afvinken, klaar, takenlijst
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Net als een boodschappenlijst, maar een taak kan ook een persoon, een vervaldatum en een herinnering hebben.
 
@@ -15,6 +15,8 @@ Net als een boodschappenlijst, maar een taak kan ook een persoon, een vervaldatu
 4. Klaar? Tik op het vakje voor de taak. Hij gaat naar beneden, naar **Afgerond**.
 5. Om de lijst te sorteren, tik je bovenaan op **⋯** en dan op **Groeperen op**. Kies **Vervaldatum**, **Persoon** of **Categorie**.
 
-In een gedeelde lijst maakt het slotje rechts in de invoerbalk, vlak voor de verstuurpijl, je volgende taken privé tot je de lijst verlaat. Open betekent uit, dicht betekent aan.
+Rond je een hele lijst of alle taken van Vandaag af, dan juicht Minzi misschien.
+
+In een gedeelde lijst maakt het slotje naast de verstuurpijl je volgende taken privé tot je de lijst verlaat. Dicht betekent aan.
 
 > Note: **Groeperen op** wordt alleen op deze telefoon bewaard.

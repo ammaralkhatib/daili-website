@@ -5,9 +5,9 @@ summary: Se dine planer, afkryds opgaver og indkøb, eller tilføj noget nyt –
 keywords: widget, widgets, hjemmeskærm, låseskærm, iphone, android, vaner, aftensmad, hurtig tilføjelse, fødselsdag, afkryds, tilføj widget
 tipTitle: Din plan på din hjemmeskærm
 tipBody: Tilføj en daili-widget, og se, hvad der sker som det næste, uden at åbne appen.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili har widgets til kalenderen (**Først på tur** og **Næste** med nedtælling), **Indkøb**, **Opgaver**, vaner med Minzi, nedtælling til fødselsdage, aftenens aftensmad, hurtig tilføjelse og **Hurtig note**.
+daili har kalenderwidgets (**Kalender** og **Næste** med nedtælling), **Indkøb**, **Opgaver**, vaner med Minzi, nedtælling til fødselsdage, aftenens aftensmad, hurtig tilføjelse og **Hurtig note**.
 
 1. Hold fingeren på et tomt sted på telefonens hjemmeskærm.
 2. På iPhone trykker du på **Rediger** og så på **Tilføj widget**. På Android trykker du på **Widgets**.

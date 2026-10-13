@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Mostrar en daili los calendarios de tu teléfono
-summary: Los calendarios del trabajo, del colegio o del deporte junto a los eventos de la familia. Solo los ves tú.
-keywords: calendario del teléfono, calendario del dispositivo, calendario del trabajo, ical, outlook, calendario de apple, google calendar, privado
+title: Añadir otros calendarios: tu teléfono, Google, enlaces y archivos
+summary: Muestra los calendarios de tu teléfono o Google Calendar junto a los eventos de la familia, sigue un calendario escolar o importa un archivo.
+keywords: calendario del teléfono, calendario de apple, google calendar, añadir calendario, otros calendarios, suscribirse, enlace, calendario escolar, calendario del trabajo, ics, privado
 tipTitle: Mira en daili los calendarios de tu teléfono
 tipBody: Los calendarios del trabajo, del colegio o del deporte pueden aparecer junto a los eventos de la familia.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Los calendarios que ya tienes en este teléfono pueden aparecer junto a los eventos de tu familia.
+Los calendarios del trabajo, del colegio o del deporte pueden aparecer junto a los eventos de tu familia.
 
-1. Abre **Calendario**.
-2. Toca el botón de ajustes (el engranaje) arriba a la derecha.
-3. En **Calendarios del teléfono**, toca **Conectar** y permite el acceso.
-4. Comprueba que **Mostrar los calendarios del teléfono** está activado, luego toca **Elegir calendarios** y elige los que quieras ver.
+1. Abre **Calendario** y toca el engranaje arriba a la derecha.
+2. En **Otros calendarios**, toca **Añadir un calendario**.
+3. **Calendario de Apple** (iPhone) o **Calendarios del teléfono** (Android): los calendarios de tu propio teléfono. Permite el acceso y daili muestra los principales.
+4. **Google Calendar**: inicia sesión una vez y elige quién ve cada calendario.
+5. **Suscribirse con un enlace**: un calendario del colegio o del club que se actualiza solo. Lo ve toda tu familia. Solo para admins.
+6. **Importar un archivo (.ics)**: copia los eventos en daili una sola vez.
 
-![La sección Calendarios del teléfono en los ajustes del calendario](calendar-phone-calendars)
+![La hoja Añadir un calendario con Calendario de Apple, Google Calendar, Suscribirse con un enlace e Importar un archivo (.ics).](calendar-other-calendars)
 
-> Note: Estos calendarios se quedan en este teléfono. No se sube nada, y el resto de tu familia no los ve.
+Aparecen en **Otros calendarios**. El teléfono dice **Solo tú** y los enlaces, **Familia**. Toca la fila del teléfono para cambiar tu selección. Para quitarlo, toca **⋮** → **Quitar**. daili pregunta antes. No se borra nada de tu teléfono, y si lo vuelves a añadir, recuperas tu selección.
+
+> Note: Los calendarios del teléfono se quedan en este teléfono: no se sube nada y tu familia no los ve.

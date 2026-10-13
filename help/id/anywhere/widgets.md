@@ -5,9 +5,9 @@ summary: Lihat rencana Anda, centang tugas dan belanjaan, atau tambahkan sesuatu
 keywords: widget, layar utama, layar kunci, iphone, android, kebiasaan, makan malam, tambah cepat, ulang tahun, centang, tambah widget, hitung mundur
 tipTitle: Rencana Anda di layar utama
 tipBody: Tambahkan widget daili dan lihat apa yang berikutnya tanpa membuka aplikasi.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili punya widget untuk kalender Anda (**Berikutnya**, juga sebagai hitung mundur ke acara berikutnya), **Belanja**, **Tugas**, kebiasaan bersama Minzi, hitung mundur ulang tahun, makan malam hari ini, tambah cepat, dan **Catatan cepat**.
+daili punya widget **Kalender** dan **Berikutnya** (dengan hitung mundur ke acara berikutnya), **Belanja**, **Tugas**, kebiasaan bersama Minzi, hitung mundur ulang tahun, makan malam hari ini, tambah cepat, dan **Catatan cepat**.
 
 1. Tekan lama tempat kosong di layar utama ponsel Anda.
 2. Di iPhone, ketuk **Edit**, lalu **Tambah Widget**. Di Android, ketuk **Widget**.

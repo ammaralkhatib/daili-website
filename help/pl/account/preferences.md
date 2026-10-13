@@ -3,7 +3,7 @@ id: account-preferences
 title: Jasny czy ciemny, język, format czasu, wibracje
 summary: Wybierz tryb ciemny, swój język, zegar 12- lub 24-godzinny, to, czy daili wibruje, i funkcje AI.
 keywords: tryb ciemny, tryb jasny, motyw, wygląd, język, 24-godzinny, 12-godzinny, format czasu, wibracje, haptyka, ai, gemini
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawienia**. Te opcje znajdziesz w sekcji **Ogólne**.
 
@@ -13,7 +13,8 @@ Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawien
 2. **Format czasu**: **24-godzinny**, **12-godzinny** albo **Systemowy**, żeby był taki jak w telefonie.
 3. **Wygląd**: **Jasny**, **Ciemny** albo **Systemowy**, żeby był taki jak w telefonie. W sekcji **Kolor aplikacji** wybierz **zieleń daili** albo **Mój kolor**. Kolor barwi przyciski, linki, karty i, delikatnie, tło.
 4. **Wibracje**: krótkie brzęczenie, gdy coś jest gotowe, zapisane albo usunięte. Wyłącz je, jeśli ci nie odpowiada.
-5. **Funkcje AI (Google Gemini)**: pozwala AI Google czytać twoje zdjęcia, linki do filmów i życzenia do posiłków. Wyłączone? daili zapyta znowu następnym razem.
+5. **Pogoda w Dziś**: karta pogody na górze ekranu **Dziś**. Wyłącz, żeby ją ukryć.
+6. **Funkcje AI (Google Gemini)**: pozwala AI Google czytać twoje zdjęcia, linki do filmów i życzenia do posiłków. Wyłączone? daili zapyta znowu następnym razem.
 
 ![Panel Wygląd. Zakreślona jest sekcja Kolor aplikacji z opcjami zieleń daili i Mój kolor.](account-app-colour)
 

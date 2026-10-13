@@ -5,18 +5,20 @@ summary: Escreva uma nota ou compartilhe um link de qualquer app. As notas são 
 keywords: nota, notas, nota rápida, link, compartilhar, lista de verificação, etiqueta, filtro, buscar, lembrete, excluídas recentemente, resumir
 tipTitle: Compartilhe um link com o daili para salvar
 tipBody: Compartilhe um vídeo, post ou página de qualquer app com o daili e ele vira uma nota — privada até você compartilhar.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-Uma nota é um **Título**, um texto ou os dois. Listas com marcadores e listas de verificação funcionam: toque em uma caixa para marcá-la. Sem pastas.
+Uma nota é um **Título**, um texto ou os dois, com listas com marcadores e listas de verificação.
 
 ![A tela inicial. O bloco Notas está circulado.](notes-tile)
 
-1. Na tela inicial, toque em **Notas** e depois em **+** ou em um botão da barra inferior: foto, voz (grava na hora), vídeo, link.
-2. Escreva e toque em **Salvar**. Ao fechar uma nota sem salvar, o daili pergunta antes.
+1. Na tela inicial, toque em **Notas** e depois em **+** ou em um botão da barra inferior: foto, voz, vídeo, link, desenho.
+2. Escreva e toque em **Salvar**.
+
+As Notas abrem em grade, com imagens e desenhos grandes e molduras na cor da etiqueta. O botão lá em cima muda para lista.
 
 Mais rápido: o widget **Nota rápida**, o botão de Ação do iPhone ou Compartilhar → **daili** → **Salvar** de qualquer app.
 
-![Uma nota nova com os botões Foto, Voz, Vídeo e Link. A linha que diz quem pode vê-la está circulada.](notes-new)
+![Uma nota nova com os botões Foto, Voz, Vídeo, Link e Desenhar. A linha que diz quem pode vê-la está circulada.](notes-new)
 
 Acima do teclado: etiquetas, um lembrete (só você recebe) e quem vê a nota: **Só eu** (padrão), **Toda a família** ou **Escolher membros**. **Digitalizar link** lê um endereço da web em uma foto.
 
@@ -28,4 +30,4 @@ Pesquise ou filtre a lista. As notas excluídas esperam 30 dias em **⋯** → *
 
 Em uma nota, em **Daili Plus**, **Criar um evento, uma tarefa ou uma lista de compras a partir disto** e **Resumir** (vídeo, página da web ou nota longa) usam uma ação de IA cada.
 
-> Note: Sem internet, uma nota nova espera e é enviada sozinha depois.
+> Note: Sem internet, as notas novas são enviadas sozinhas depois.

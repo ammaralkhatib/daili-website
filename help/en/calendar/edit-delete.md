@@ -7,12 +7,12 @@ keywords: edit event, change event, move event, delete event, remove, cancel, re
 routes: /calendar/edit
 tryIt: /calendar
 since: 1.4.0
-updated: 2026-09-28
+updated: 2026-10-12
 media: calendar-edit-delete
 order: 7
 related: calendar-repeating, calendar-private, family-activity
 ---
-Plans change. Here's how to change the calendar with them.
+Plans change.
 
 ![An event opened from the calendar. The Edit event button is circled, with the delete button next to it.](calendar-edit-delete)
 
@@ -21,5 +21,7 @@ Plans change. Here's how to change the calendar with them.
 3. Or tap **Delete**, then **Delete** again to confirm.
 
 For a repeating event, daili asks after **Save** what your change applies to: **This event only**, **This and following events** or **All events**. A greyed choice says why it can't hold your change. **Delete** offers the same three right away.
+
+To move an event, hold it and drag it. **Month**: to another day. **Week** and **3 days**: to another day and time, all-day events too. **Day**: to another time. A repeating event asks **This event only** or **This and following events**. **Undo** in the message puts it back, except after **This and following events**.
 
 > Note: Anyone in the family can change or delete a shared event, and the activity list shows who did it. A private event can only be changed by the person who made it.

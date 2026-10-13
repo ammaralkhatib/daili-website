@@ -5,9 +5,9 @@ summary: Se planene dine, kryss av oppgaver og innkjøp, eller legg til noe nytt
 keywords: widget, widgeter, hjem-skjerm, låseskjerm, iphone, android, vaner, middag, hurtig legg til, bursdag, kryss av, legg til widget
 tipTitle: Planen din på Hjem-skjermen
 tipBody: Legg til en daili-widget, og se hva som skjer nå, uten å åpne appen.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili har widgeter for kalenderen (**Først ut** og **Neste** med nedtelling), **Innkjøp**, **Oppgaver**, vaner med Minzi, nedtelling til bursdager, kveldens middag, hurtig legg til og **Hurtignotat**.
+daili har kalenderwidgeter (**Kalender** og **Neste** med nedtelling), **Innkjøp**, **Oppgaver**, vaner med Minzi, nedtelling til bursdager, kveldens middag, hurtig legg til og **Hurtignotat**.
 
 1. Hold fingeren på et tomt sted på Hjem-skjermen på telefonen.
 2. På iPhone trykker du på **Rediger** og så på **Legg til widget**. På Android trykker du på **Moduler**.

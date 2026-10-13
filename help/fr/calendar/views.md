@@ -3,7 +3,7 @@ id: calendar-views
 title: Vues mois, semaine, jour et liste
 summary: Passe du mois à la semaine, aux 3 jours, au jour ou à la liste, et filtre par personne ou par catégorie.
 keywords: vue, affichage, mois, semaine, jour, liste, agenda, 3 jours, changer de vue, filtre, aujourd'hui
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 L'agenda peut montrer les plans de ta famille de cinq façons.
 
@@ -15,8 +15,10 @@ L'agenda peut montrer les plans de ta famille de cinq façons.
 4. Touche **Aujourd'hui** en bas pour revenir à aujourd'hui.
 5. Pour ne voir que certaines personnes ou catégories, touche **Filtre** et choisis-les. Les enfants sont aussi sous **Personnes**.
 
-daili retient ta vue sur ce téléphone. En vue **Mois**, touche un jour pour voir ses événements.
+daili retient ta vue sur ce téléphone. En vue **Mois**, touche un jour pour voir tout ce qu'il contient.
 
-Un événement apparaît sous les personnes pour qui il est. Un événement pour tout le monde apparaît sous la personne qui l'a créé. Sa bande de couleur a la couleur de la première personne pour qui il est.
+La roue dentée → **Afficher dans l'agenda** ajoute les anniversaires, les jours fériés, les repas, les tâches, les notes avec un rappel et les factures. Sauf pour les jours fériés, touche un élément pour l'ouvrir ; une tâche s'ouvre dans sa liste.
+
+Un événement apparaît sous les personnes pour qui il est, ou sous la personne qui l'a créé s'il est pour tout le monde. Sa bande a la couleur de la première personne pour qui il est.
 
 > Note: **Filtre** n'apparaît que s'il y a quelque chose à filtrer : une deuxième personne (un enfant compte aussi), ou une catégorie.

@@ -5,9 +5,9 @@ summary: Pozri si svoje plány, odškrtni úlohy a nákupy alebo pridaj niečo n
 keywords: widget, widgety, plocha, zamknutá obrazovka, iphone, android, návyky, večera, rýchle pridanie, narodeniny, odškrtnúť, pridať widget
 tipTitle: Tvoj plán na ploche telefónu
 tipBody: Pridaj widget daili a uvidíš, čo ťa čaká, bez otvárania aplikácie.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili má widgety pre kalendár (**Najbližšie**, aj ako odpočet do ďalšej udalosti), **Nákupy**, **Úlohy**, návyky s Minzi, odpočet do narodenín, dnešnú večeru, rýchle pridanie a **Rýchla poznámka**.
+daili má kalendárové widgety **Kalendár** a **Najbližšie** (s odpočtom do ďalšej udalosti), ďalej **Nákupy**, **Úlohy**, návyky s Minzi, odpočet do narodenín, dnešnú večeru, rýchle pridanie a **Rýchla poznámka**.
 
 1. Podrž prázdne miesto na ploche telefónu.
 2. Na iPhone ťukni na **Upraviť** a potom na **Pridať widget**. V Androide ťukni na **Miniaplikácie**.

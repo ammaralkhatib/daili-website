@@ -3,7 +3,7 @@ id: lists-shopping
 title: Liste de cumpărături: adaugă, bifează, curăță
 summary: O listă de cumpărături comună pentru toată familia. Adaugă articole, bifează-le în magazin și șterge ce ai cumpărat.
 keywords: cumpărături, alimente, listă de cumpărături, de cumpărat, bifează, supermarket, piață, curăță, finalizate
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Toată lumea din familia ta vede aceleași liste de cumpărături. Când cineva adaugă sau bifează un articol, toți văd asta.
 
@@ -14,5 +14,7 @@ Toată lumea din familia ta vede aceleași liste de cumpărături. Când cineva 
 3. Apasă pe un articol ca să-i schimbi **Cantitate** sau să adaugi o **Notă**, apoi apasă pe **Salvează**.
 4. În magazin, apasă pe căsuța din fața unui articol. Coboară la **Finalizate**.
 5. Când ajungi acasă, apasă pe **⋯** sus, apoi pe **Șterge finalizatele**. Sau apasă pe **Debifează tot** ca să folosești din nou aceeași listă.
+
+Dacă ai un buget, când bifezi ultimul articol, daili îți propune să adaugi costul în buget. Poți apăsa și pe **⋯** → **Adaugă în buget**.
 
 > Note: Ai bifat articolul greșit? Apasă pe **Anulează** în mesajul din partea de jos a ecranului.

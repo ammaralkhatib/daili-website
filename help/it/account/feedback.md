@@ -3,7 +3,7 @@ id: account-feedback
 title: Inviare un feedback o valutare daili
 summary: Scrivici direttamente dall'app, oppure lascia una valutazione nell'App Store o su Google Play.
 keywords: feedback, contatto, assistenza, scriverci, bug, idea, problema, valutare, recensione, stelle, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Hai trovato un bug o hai un'idea? Leggiamo ogni messaggio.
 
@@ -12,6 +12,7 @@ Hai trovato un bug o hai un'idea? Leggiamo ogni messaggio.
 1. Apri **Impostazioni** e scorri fino a **Informazioni**.
 2. Tocca **Invia un feedback**. L'app di posta apre una nuova e-mail per noi. Scrivi quello che hai in mente e inviala.
 3. Ti piace daili? Tocca **Valuta Daili**. Si apre daili nell'App Store o su Google Play.
+4. Per parlarne a un amico, tocca **Condividi Daili**. Si apre il menu di condivisione con un breve messaggio e un link a daili.
 
 In fondo all'e-mail ci sono già la versione dell'app, il sistema del tuo telefono e la tua lingua. Così possiamo rispondere prima.
 

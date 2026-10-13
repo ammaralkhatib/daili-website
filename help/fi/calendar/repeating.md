@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Toistuvat tapahtumat
 summary: Toista tapahtuma joka päivä, viikko, kuukausi tai vuosi, ja muuta yhtä päivää tai koko sarjaa.
 keywords: toisto, toistuva, säännöllinen, joka viikko, viikoittain, päivittäin, kuukausittain, vuosittain, sarja, rutiini
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Uimassa joka tiistai? Lisää se kerran ja anna sen toistua.
 
@@ -15,6 +15,8 @@ Uimassa joka tiistai? Lisää se kerran ja anna sen toistua.
 4. Pidä kohdassa **Päättyy** valinta **Ei koskaan** tai valitse **Päivämääränä**.
 5. Sulje paneeli ja napauta **Tallenna**.
 
-Muutatko toistuvaa tapahtumaa? Tee ensin muutokset ja napauta **Tallenna**. Valitse sitten **Vain tämä tapahtuma**, **Tämä ja seuraavat tapahtumat** tai **Kaikki tapahtumat**. Poistatko sellaisen? Napauta **Poista** ja valitse samalla tavalla.
+Muutatko tai poistatko yhden? Napauta **Tallenna** tai **Poista** ja valitse **Vain tämä tapahtuma**, **Tämä ja seuraavat tapahtumat** tai **Kaikki tapahtumat**.
 
-> Note: Vaihtoehto, joka ei voi ottaa muutostasi, näkyy harmaana syyn kanssa. Uutta aikaa ei voi viedä kohtaan **Kaikki tapahtumat**. Kohdan **Kenelle** henkilöt kuuluvat koko sarjaan. Siksi heidän, toiston, **Koko päivä** -valinnan, **Yksityinen tapahtuma** -valinnan tai lisämuistutusten muutokset eivät voi olla **Vain tämä tapahtuma**.
+Eri henkilöt yhtenä päivänä? Avaa se päivä, muuta kohtaa **Kenelle**, napauta **Tallenna** ja valitse **Vain tämä tapahtuma**. Tapahtumassa lukee silloin **Vain tämä päivä**, ja sen muistutukset menevät sen päivän henkilöille. Kun valitset taas sarjan henkilöt, päivä seuraa jälleen sarjaa.
+
+> Note: Vaihtoehto, joka ei voi ottaa muutostasi, näkyy harmaana syyn kanssa. Uutta aikaa ei voi viedä kohtaan **Kaikki tapahtumat**. Toiston, **Koko päivä** -valinnan, **Yksityinen tapahtuma** -valinnan tai lisämuistutusten muutokset eivät voi olla **Vain tämä tapahtuma**.

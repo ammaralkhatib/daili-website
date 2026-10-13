@@ -5,18 +5,20 @@ summary: Napíš poznámku alebo zdieľaj odkaz z akejkoľvek aplikácie. Pozná
 keywords: poznámka, poznámky, rýchla poznámka, odkaz, zdieľať, kontrolný zoznam, štítok, filter, hľadať, pripomienka, nedávno vymazané, zhrnúť
 tipTitle: Zdieľaj odkaz do daili a máš ho uložený
 tipBody: Zdieľaj video, príspevok alebo stránku z akejkoľvek aplikácie do daili — vznikne poznámka, súkromná, kým ju nezdieľaš.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-Poznámka má **Názov**, text alebo oboje. Fungujú odrážky aj kontrolné zoznamy: ťuknutím políčko odškrtneš. Žiadne priečinky.
+Poznámka má **Názov**, text alebo oboje, s odrážkami a kontrolnými zoznamami.
 
 ![Domovská obrazovka. Dlaždica Poznámky je zakrúžkovaná.](notes-tile)
 
-1. Na domovskej obrazovke ťukni na **Poznámky**, potom na **+** alebo na tlačidlo v dolnej lište: obrázok, hlas (hneď nahráva), video, odkaz.
-2. Napíš ju a ťukni na **Uložiť**. Pri zatvorení neuloženej poznámky sa daili najprv opýta.
+1. Na domovskej obrazovke ťukni na **Poznámky**, potom na **+** alebo na tlačidlo v dolnej lište: obrázok, hlas, video, odkaz, kresba.
+2. Napíš ju a ťukni na **Uložiť**.
+
+Poznámky sa otvoria ako mriežka, s veľkými obrázkami a kresbami a s rámikmi vo farbe štítkov. Tlačidlo hore ich prepne na zoznam.
 
 Rýchlejšie: miniaplikácia **Rýchla poznámka**, akčné tlačidlo iPhonu alebo Zdieľať → **daili** → **Uložiť** z akejkoľvek aplikácie.
 
-![Nová poznámka s tlačidlami Foto, Hlas, Video a Odkaz. Riadok, ktorý hovorí, kto ju uvidí, je zakrúžkovaný.](notes-new)
+![Nová poznámka s tlačidlami Foto, Hlas, Video, Odkaz a Kresliť. Riadok, ktorý hovorí, kto ju uvidí, je zakrúžkovaný.](notes-new)
 
 Nad klávesnicou: štítky, pripomienka (dostaneš ju len ty) a kto poznámku vidí: **Len ja** (predvolene), **Celá rodina** alebo **Vybrať členov**. Tlačidlo **Naskenovať odkaz** prečíta webovú adresu z fotky.
 
@@ -28,4 +30,4 @@ Hľadaj alebo filtruj zoznam. Vymazané poznámky čakajú 30 dní v **⋯** →
 
 V poznámke v časti **Daili Plus** spotrebujú **Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam** aj **Zhrnúť** (video, webová stránka alebo dlhá poznámka) po jednej akcii AI.
 
-> Note: Bez internetu nová poznámka počká a odošle sa sama neskôr.
+> Note: Bez internetu sa nové poznámky odošlú samy neskôr.

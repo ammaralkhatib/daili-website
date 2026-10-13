@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Telefonundaki takvimleri daili'de göster
-summary: İş, okul ya da spor takvimleri aile etkinliklerinin yanında. Onları yalnızca sen görürsün.
-keywords: telefon takvimi, cihaz takvimi, iş takvimi, ical, outlook, apple takvim, özel
+title: Başka takvimler ekle: telefonun, Google, bağlantılar ve dosyalar
+summary: Telefonundaki takvimleri ya da Google Takvim'i aile etkinliklerinin yanında göster, okul takvimini takip et ya da bir dosya içe aktar.
+keywords: telefon takvimi, apple takvim, google takvim, takvim ekle, diğer takvimler, abone ol, bağlantı, okul takvimi, iş takvimi, ics, özel
 tipTitle: Telefonundaki takvimleri daili'de gör
 tipBody: İş, okul ya da spor takvimlerin aile etkinliklerinin yanında görünebilir.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Bu telefonda zaten olan takvimler, ailenin etkinliklerinin yanında görünebilir.
+İş, okul ya da spor takvimlerin ailenin etkinliklerinin yanında görünebilir.
 
-1. **Takvim** ekranını aç.
-2. Sağ üstteki ayarlar düğmesine (dişli) dokun.
-3. **Telefon takvimleri** altında **Bağlan** düğmesine dokun ve erişime izin ver.
-4. **Telefon takvimlerini göster** seçeneğinin açık olduğundan emin ol, sonra **Takvimleri seç** seçeneğine dokun ve göstermek istediklerini seç.
+1. **Takvim** ekranını aç ve sağ üstteki dişliye dokun.
+2. **Diğer takvimler** altında **Takvim ekle** seçeneğine dokun.
+3. **Apple Takvim** (iPhone) ya da **Telefon takvimleri** (Android): telefonunun kendi takvimleri. Erişime izin ver, daili ana takvimlerini gösterir.
+4. **Google Takvim**: bir kez giriş yap ve her takvimi kimin göreceğini seç.
+5. **Bağlantıyla abone ol**: kendiliğinden güncellenen bir okul ya da kulüp takvimi. Tüm ailen görür. Yalnızca yöneticiler ekleyebilir.
+6. **Dosya içe aktar (.ics)**: etkinlikleri bir kez daili'ye kopyalar.
 
-![Takvim ayarlarındaki Telefon takvimleri bölümü](calendar-phone-calendars)
+![Apple Takvim, Google Takvim, Bağlantıyla abone ol ve Dosya içe aktar (.ics) seçenekleriyle Takvim ekle paneli.](calendar-other-calendars)
 
-> Note: Bu takvimler bu telefonda kalır. Hiçbir şey yüklenmez ve ailenin geri kalanı onları görmez.
+Hepsi **Diğer takvimler** altında listelenir. Telefon takviminde **Sadece sen**, bağlantılarda **Aile** yazar. Seçimlerini değiştirmek için telefon satırına dokun. Kaldırmak için **⋮** → **Kaldır** seçeneğine dokun. daili önce sorar. Telefonundan hiçbir şey silinmez; yeniden eklersen seçimlerin geri gelir.
+
+> Note: Telefon takvimleri bu telefonda kalır: hiçbir şey yüklenmez ve ailen onları görmez.

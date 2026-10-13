@@ -5,9 +5,9 @@ summary: Podívej se na své plány, odškrtni úkoly a nákupy nebo přidej ně
 keywords: widget, widgety, plocha, zamčená obrazovka, iphone, android, návyky, večeře, rychlé přidání, narozeniny, odškrtnout, přidat widget
 tipTitle: Tvůj plán na ploše telefonu
 tipBody: Přidej si widget daili a uvidíš, co tě čeká, bez otevírání aplikace.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili má widgety pro kalendář (**Nejbližší**, i jako odpočet do další události), **Nákupy**, **Úkoly**, návyky s Minzi, odpočet do narozenin, dnešní večeři, rychlé přidání a **Rychlá poznámka**.
+daili má widgety pro kalendář (**Kalendář** a **Nejbližší** s odpočtem do další události), **Nákupy**, **Úkoly**, návyky s Minzi, odpočet do narozenin, dnešní večeři, rychlé přidání a **Rychlá poznámka**.
 
 1. Podrž prst na prázdném místě na ploše telefonu.
 2. Na iPhonu klepni na **Upravit** a potom na **Přidat widget**. Na Androidu klepni na **Widgety**.

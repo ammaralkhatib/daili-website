@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Vis telefonens kalendere i daili
-summary: Jobb-, skole- eller idrettskalendere ved siden av familiens hendelser. Bare du ser dem.
-keywords: telefonkalender, enhetskalender, jobbkalender, ical, outlook, apple kalender, privat
+title: Legg til andre kalendere: telefonen, Google, lenker og filer
+summary: Vis telefonens kalendere eller Google Kalender ved siden av familiens hendelser, følg en skolekalender, eller importer en fil.
+keywords: telefonkalender, apple kalender, google kalender, legg til kalender, andre kalendere, abonner, lenke, skolekalender, jobbkalender, ics, privat
 tipTitle: Se telefonens kalendere i daili
 tipBody: Jobb-, skole- eller idrettskalendere kan vises ved siden av familiens hendelser.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Kalendere du allerede har på denne telefonen, kan vises ved siden av familiens hendelser.
+Jobb-, skole- eller idrettskalendere kan vises ved siden av familiens hendelser.
 
-1. Åpne **Kalender**.
-2. Trykk på innstillingsknappen (tannhjulet) øverst til høyre.
-3. Trykk på **Koble til** under **Kalendere på telefonen**, og gi tilgang.
-4. Sjekk at **Vis telefonens kalendere** er slått på, trykk så på **Velg kalendere**, og velg dem som skal vises.
+1. Åpne **Kalender**, og trykk på tannhjulet øverst til høyre.
+2. Trykk på **Legg til en kalender** under **Andre kalendere**.
+3. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android): telefonens egne kalendere. Gi tilgang, så viser daili de viktigste.
+4. **Google Kalender**: logg inn én gang, og velg hvem som ser hver kalender.
+5. **Abonner med en lenke**: en skole- eller klubbkalender som oppdaterer seg selv. Hele familien ser den. Bare for administratorer.
+6. **Importer en fil (.ics)**: kopierer hendelsene inn i daili én gang.
 
-![Seksjonen Kalendere på telefonen i kalenderinnstillingene](calendar-phone-calendars)
+![Arket Legg til en kalender med Apple Kalender, Google Kalender, Abonner med en lenke og Importer en fil (.ics).](calendar-other-calendars)
 
-> Note: Disse kalenderne blir på denne telefonen. Ingenting lastes opp, og resten av familien ser dem ikke.
+De står under **Andre kalendere**. Telefonen er merket **Bare deg**, lenker er merket **Familien**. Trykk på telefonraden for å endre utvalget. Vil du fjerne den, trykker du på **⋮** → **Fjern**. daili spør først. Ingenting på telefonen slettes, og legger du den til igjen, kommer utvalget ditt tilbake.
+
+> Note: Telefonens kalendere blir på denne telefonen: ingenting lastes opp, og familien ser dem ikke.

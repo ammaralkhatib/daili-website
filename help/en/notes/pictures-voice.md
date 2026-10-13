@@ -7,7 +7,7 @@ keywords: picture, photo, screenshot, drawing, draw, voice, recording, dictation
 routes: /notes, /notes/new
 tryIt: /notes/new
 since: 1.9.0
-updated: 2026-10-06
+updated: 2026-10-12
 media: notes-pictures
 order: 2
 related: notes-notes, notes-files, account-plus, vault-where
@@ -16,8 +16,8 @@ A note can be just pictures or a recording, in the order you added them. Tap one
 
 ![A note. The Attachments group with a link, a picture and a recording is circled.](notes-pictures)
 
-1. **Photo**: **Camera**, **Photo library**, **Paste picture**, **Draw**. Other apps: Share → **daili** (max 10 pictures).
-2. **Edit drawing** works only on the phone it was made on.
+1. **Photo**: **Camera**, **Photo library**, **Paste picture**. Other apps: Share → **daili** (max 10 pictures).
+2. **Draw**, after **Link**, opens the drawing pad. **Edit drawing** works only on the phone it was made on.
 3. **Voice** records up to 10 minutes.
 4. The mic by the list buttons types what you say, with your phone's speech recognition.
 5. daili reads text in pictures on your phone; search finds it there. Open one to **Add to note**.

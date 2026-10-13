@@ -5,9 +5,9 @@ summary: Veja seus planos, marque tarefas e compras ou adicione algo novo — di
 keywords: widget, widgets, tela inicial, tela bloqueada, iphone, android, hábitos, jantar, adicionar rápido, aniversário, marcar, adicionar widget
 tipTitle: Seu plano na tela inicial
 tipBody: Adicione um widget do daili e veja o que vem a seguir sem abrir o app.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-O daili tem widgets para o seu calendário (**A seguir**, também como contagem regressiva até o próximo evento), **Compras**, **Tarefas**, hábitos com a Minzi, contagem regressiva de aniversários, o jantar de hoje, adicionar rápido e **Nota rápida**.
+O daili tem widgets para a sua agenda (**Calendário**, e **A seguir**, com contagem regressiva até o próximo evento), **Compras**, **Tarefas**, hábitos com a Minzi, contagem regressiva de aniversários, o jantar de hoje, adicionar rápido e **Nota rápida**.
 
 1. Toque e segure em um espaço vazio da tela inicial do celular.
 2. No iPhone, toque em **Editar** e depois em **Adicionar Widget**. No Android, toque em **Widgets**.

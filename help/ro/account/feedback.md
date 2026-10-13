@@ -3,7 +3,7 @@ id: account-feedback
 title: Trimite feedback sau evaluează daili
 summary: Scrie-ne direct din aplicație sau lasă o evaluare în App Store sau Google Play.
 keywords: feedback, contact, asistență, scrie-ne, eroare, idee, problemă, evaluare, recenzie, stele, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Ai găsit o eroare sau ai o idee? Citim fiecare mesaj.
 
@@ -12,6 +12,7 @@ Ai găsit o eroare sau ai o idee? Citim fiecare mesaj.
 1. Deschide **Setări** și derulează în jos până la **Despre**.
 2. Apasă pe **Trimite feedback**. Aplicația ta de e-mail deschide un e-mail nou către noi. Scrie ce ai pe suflet și trimite-l.
 3. Îți place daili? Apasă pe **Evaluează Daili**. Se deschide daili în App Store sau Google Play.
+4. Ca să-i spui unui prieten, apasă pe **Distribuie Daili**. Se deschide meniul de distribuire cu un mesaj scurt și un link către daili.
 
 E-mailul are deja jos versiunea aplicației, sistemul telefonului și limba ta. Asta ne ajută să răspundem mai repede.
 

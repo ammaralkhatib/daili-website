@@ -3,7 +3,7 @@ id: account-feedback
 title: Poslat zpětnou vazbu nebo ohodnotit daili
 summary: Napiš nám přímo z aplikace, nebo nech hodnocení v App Storu či na Google Play.
 keywords: zpětná vazba, kontakt, podpora, napsat e-mail, chyba, nápad, problém, hodnocení, recenze, hvězdičky, app store, obchod play
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Objevila se chyba, nebo máš nápad? Čteme každou zprávu.
 
@@ -12,6 +12,7 @@ Objevila se chyba, nebo máš nápad? Čteme každou zprávu.
 1. Otevři **Nastavení** a sjeď dolů k sekci **O aplikaci**.
 2. Klepni na **Poslat zpětnou vazbu**. Tvoje poštovní aplikace otevře nový e-mail pro nás. Napiš, co tě napadá, a odešli ho.
 3. Líbí se ti daili? Klepni na **Ohodnotit Daili**. Otevře se daili v App Storu nebo na Google Play.
+4. Pokud chceš daili doporučit kamarádovi, klepni na **Sdílet Daili**. Otevře se nabídka sdílení s krátkou zprávou a odkazem na daili.
 
 Dole v e-mailu už je verze aplikace, systém tvého telefonu a tvůj jazyk. Díky tomu můžeme odpovědět rychleji.
 

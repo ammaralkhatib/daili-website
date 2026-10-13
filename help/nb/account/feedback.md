@@ -3,7 +3,7 @@ id: account-feedback
 title: Send tilbakemelding, eller vurder daili
 summary: Skriv til oss rett fra appen, eller gi en vurdering i App Store eller Google Play.
 keywords: tilbakemelding, kontakt, support, skriv til oss, feil, idé, problem, vurder, anmeldelse, stjerner, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Har du funnet en feil, eller fått en idé? Vi leser alle meldinger.
 
@@ -12,6 +12,7 @@ Har du funnet en feil, eller fått en idé? Vi leser alle meldinger.
 1. Åpne **Innstillinger**, og bla ned til **Om Daili**.
 2. Trykk på **Send tilbakemelding**. E-postappen din åpner en ny e-post til oss. Skriv det du har på hjertet, og send den.
 3. Liker du daili? Trykk på **Vurder Daili**. Det åpner daili i App Store eller Google Play.
+4. Vil du tipse en venn, trykker du på **Del Daili**. Det åpner delingsmenyen med en kort melding og en lenke til daili.
 
 E-posten har allerede appversjonen, telefonens system og språket ditt nederst. Det hjelper oss å svare raskere.
 

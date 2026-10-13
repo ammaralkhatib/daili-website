@@ -3,7 +3,7 @@ id: account-preferences
 title: Clair ou sombre, langue, format de l'heure, vibration
 summary: Choisis le mode sombre, ta langue, l'heure sur 12 ou 24 heures, si daili vibre, et ses fonctions IA.
 keywords: mode sombre, mode clair, thème, apparence, langue, 24 heures, 12 heures, format de l'heure, vibration, retour haptique, ia, gemini
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Touche ta photo en haut de l'écran d'accueil pour ouvrir les **Paramètres**. Ces réglages sont sous **Général**.
 
@@ -13,7 +13,8 @@ Touche ta photo en haut de l'écran d'accueil pour ouvrir les **Paramètres**. C
 2. **Format de l'heure** : **24 heures**, **12 heures**, ou **Système** pour suivre ton téléphone.
 3. **Apparence** : **Clair**, **Sombre**, ou **Système** pour suivre ton téléphone. Sous **Couleur de l'app**, choisis **vert daili** ou **Ma couleur**. Cette couleur teinte les boutons, les liens, les cartes et, légèrement, le fond.
 4. **Vibration** : une petite vibration quand quelque chose est terminé, enregistré ou supprimé. Désactive-la si tu n'aimes pas ça.
-5. **Fonctions IA (Google Gemini)** : permet à l'IA de Google de lire tes photos, tes liens vidéo et tes envies de repas. Désactivé ? daili te redemande la prochaine fois.
+5. **Météo sur Aujourd'hui** : la carte météo en haut de l'écran **Aujourd'hui**. Désactive-la pour la masquer.
+6. **Fonctions IA (Google Gemini)** : permet à l'IA de Google de lire tes photos, tes liens vidéo et tes envies de repas. Désactivé ? daili te redemande la prochaine fois.
 
 ![La fiche Apparence. Couleur de l'app, avec vert daili et Ma couleur, est entouré.](account-app-colour)
 

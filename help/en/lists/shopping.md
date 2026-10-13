@@ -7,10 +7,10 @@ keywords: shopping, grocery, groceries, shopping list, buy, check off, tick, sup
 routes: /lists, /lists/shopping, /lists/new, /lists/:id
 tryIt: /lists/shopping
 since: 1.0.0
-updated: 2026-09-30
+updated: 2026-10-12
 media: lists-shopping
 order: 1
-related: lists-categories, lists-move-items, meals-to-shopping
+related: lists-categories, lists-move-items, meals-to-shopping, budget-bills
 checklist: 4
 checklistDoneIf: hasListItem
 ---
@@ -23,5 +23,7 @@ Everyone in your family sees the same shopping lists. When someone adds or ticks
 3. Tap an item to change its **Quantity** or add a **Note**, then tap **Save**.
 4. In the shop, tap the box in front of an item. It moves down to **Completed**.
 5. When you're back home, tap **⋯** at the top, then **Delete completed**. Or tap **Uncheck all** to use the same list again.
+
+If you have a budget, ticking the last item offers to add the cost to it. You can also tap **⋯** → **Add to budget**.
 
 > Note: Ticked the wrong item? Tap **Undo** in the message at the bottom of the screen.

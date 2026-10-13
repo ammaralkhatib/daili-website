@@ -3,7 +3,7 @@ id: lists-todos
 title: Listes de tâches
 summary: Des listes de tâches partagées pour les corvées, les courses à faire et l'école. Coche les tâches et vois qui fait quoi.
 keywords: tâche, tâches, à faire, corvées, commissions, checklist, ménage, cocher, fait, liste
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Comme une liste de courses, mais une tâche peut aussi avoir une personne, une échéance et un rappel.
 
@@ -15,6 +15,8 @@ Comme une liste de courses, mais une tâche peut aussi avoir une personne, une �
 4. C'est fait ? Touche la case devant la tâche. Elle descend dans **Terminé**.
 5. Pour trier la liste, touche **⋯** en haut, puis **Grouper par**. Choisis **Échéance**, **Personne** ou **Catégorie**.
 
-Dans une liste partagée, le cadenas à droite de la barre d'ajout, juste avant la flèche d'envoi, rend tes prochaines tâches privées jusqu'à ce que tu quittes la liste. Ouvert, c'est désactivé ; fermé, c'est activé.
+Termine une liste ou toutes les tâches de l'écran Aujourd'hui, et Minzi te fera peut-être la fête.
+
+Dans une liste partagée, le cadenas à côté de la flèche d'envoi rend tes prochaines tâches privées jusqu'à ce que tu quittes la liste. Fermé, c'est activé.
 
 > Note: **Grouper par** est enregistré seulement sur ce téléphone.

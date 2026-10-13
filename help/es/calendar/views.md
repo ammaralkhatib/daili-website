@@ -3,7 +3,7 @@ id: calendar-views
 title: Vistas de mes, semana, día y lista
 summary: Cambia entre mes, semana, 3 días, día y lista, y filtra por persona o por categoría.
 keywords: vista, mes, semana, día, agenda, lista, 3 días, cambiar vista, filtro, hoy
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 El calendario puede mostrar los planes de tu familia de cinco formas.
 
@@ -15,8 +15,10 @@ El calendario puede mostrar los planes de tu familia de cinco formas.
 4. Toca **Hoy** abajo para volver a hoy.
 5. Para ver solo a algunas personas o categorías, toca **Filtro** y elígelas. Los niños también están en **Personas**.
 
-daili recuerda tu vista en este teléfono. En **Mes**, toca un día para ver sus eventos.
+daili recuerda tu vista en este teléfono. En **Mes**, toca un día para ver todo lo que tiene.
 
-Un evento aparece bajo las personas para las que es. Un evento para todos aparece bajo la persona que lo creó. Su franja de color es del color de la primera persona para la que es.
+El engranaje → **Mostrar en el calendario** añade cumpleaños, festivos, comidas, tareas, notas con recordatorio y facturas. Salvo los festivos, toca uno para abrirlo; una tarea se abre en su lista.
+
+Un evento aparece bajo las personas para las que es, o bajo quien lo creó si es para todos. Su franja tiene el color de la primera persona para la que es.
 
 > Note: **Filtro** solo aparece cuando hay algo por lo que filtrar: una segunda persona (un niño también cuenta), o una categoría.

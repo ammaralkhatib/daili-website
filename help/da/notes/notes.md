@@ -5,18 +5,20 @@ summary: Skriv en note, eller del et link fra en hvilken som helst app. Noter er
 keywords: note, noter, hurtig note, link, del, tjekliste, tag, filter, søg, påmindelse, nyligt slettet, opsummer
 tipTitle: Del et link med daili for at gemme det
 tipBody: Del en video, et opslag eller en side fra en hvilken som helst app med daili – det bliver en note, privat indtil du deler den.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-En note er en **Titel**, tekst eller begge dele. Punktlister og tjeklister virker: tryk på en boks for at sætte flueben. Ingen mapper.
+En note er en **Titel**, tekst eller begge dele, med punktlister og tjeklister.
 
 ![Startskærmen. Feltet Noter er ringet ind.](notes-tile)
 
-1. Tryk på **Noter** på startskærmen, så på **+** eller en knap nederst: billede, stemme (optager med det samme), video, link.
-2. Skriv, og tryk på **Gem**. Lukker du en ugemt note, spørger daili først.
+1. Tryk på **Noter** på startskærmen, så på **+** eller en knap nederst: billede, stemme, video, link, tegning.
+2. Skriv, og tryk på **Gem**.
+
+Noter åbner som et gitter med store billeder og tegninger og rammer i tagfarver. Knappen øverst skifter til en liste.
 
 Hurtigere: widgetten **Hurtig note**, iPhones Handlingsknap eller Del → **daili** → **Gem** fra en hvilken som helst app.
 
-![En ny note med knapperne Foto, Stemme, Video og Link. Linjen, der viser hvem der kan se den, er ringet ind.](notes-new)
+![En ny note med knapperne Foto, Stemme, Video, Link og Tegn. Linjen, der viser hvem der kan se den, er ringet ind.](notes-new)
 
 Over tastaturet: tags, en påmindelse (kun du får den) og hvem der ser noten: **Kun mig** (standard), **Hele familien** eller **Vælg medlemmer**. **Scan link** læser en webadresse fra et foto.
 
@@ -28,4 +30,4 @@ Søg i eller filtrer listen. Slettede noter venter 30 dage under **⋯** → **N
 
 Under **Daili Plus** i en note bruger **Lav en begivenhed, opgave eller indkøbsliste ud fra dette** og **Opsummer** (video, webside eller lang note) hver én AI-handling.
 
-> Note: Offline venter en ny note og sender sig selv senere.
+> Note: Offline sender nye noter sig selv senere.

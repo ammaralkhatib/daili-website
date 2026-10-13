@@ -3,7 +3,7 @@ id: calendar-views
 title: Zobrazení měsíce, týdne, dne a agendy
 summary: Přepínej mezi měsícem, týdnem, 3 dny, dnem a agendou a filtruj podle osoby nebo kategorie.
 keywords: zobrazení, měsíc, týden, den, agenda, seznam, 3 dny, přepnout zobrazení, filtr, dnes, rozložení kalendáře
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Kalendář umí ukázat plány tvé rodiny pěti způsoby.
 
@@ -15,8 +15,10 @@ Kalendář umí ukázat plány tvé rodiny pěti způsoby.
 4. Klepnutím na **Dnes** dole se vrátíš na dnešek.
 5. Pokud chceš vidět jen některé lidi nebo kategorie, klepni na **Filtr** a vyber je. Děti jsou v části **Lidé** taky.
 
-daili si tvoje zobrazení na tomto telefonu pamatuje. V zobrazení **Měsíc** klepni na den a uvidíš jeho události.
+daili si tvoje zobrazení na tomto telefonu pamatuje. V zobrazení **Měsíc** klepni na den a uvidíš všechno, co v něm je.
 
-Událost se ukazuje u lidí, pro které je. Událost pro všechny se ukazuje u toho, kdo ji vytvořil. Její barevný proužek má barvu prvního člověka, pro kterého je.
+Ozubené kolečko → **Zobrazit v kalendáři** přidá narozeniny, svátky, jídla, úkoly, poznámky s připomínkou a účty. Kromě svátků každou položku otevřeš klepnutím; úkol se otevře ve svém seznamu.
+
+Událost se ukazuje u lidí, pro které je, nebo u toho, kdo ji vytvořil, pokud je pro všechny. Její proužek má barvu prvního člověka, pro kterého je.
 
 > Note: **Filtr** se ukáže, až je podle čeho filtrovat: druhý člověk (počítá se i dítě), nebo nějaká kategorie.

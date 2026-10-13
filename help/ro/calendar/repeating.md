@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Evenimente care se repetă
 summary: Fă un eveniment să se repete zilnic, săptămânal, lunar sau anual și modifică o singură zi sau toată seria.
 keywords: repetare, se repetă, recurent, în fiecare săptămână, săptămânal, zilnic, lunar, anual, serie, rutină
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Înot în fiecare marți? Adaugă-l o dată și lasă-l să se repete.
 
@@ -15,6 +15,8 @@ translatedFrom: 2026-09-30
 4. La **Se termină**, lasă **Niciodată** sau alege **La data**.
 5. Închide panoul și apasă pe **Salvează**.
 
-Modifici un eveniment care se repetă? Fă mai întâi modificările și apasă pe **Salvează**. Apoi alege **Doar acest eveniment**, **Acest eveniment și următoarele** sau **Toate evenimentele**. Vrei să-l ștergi? Apasă pe **Șterge** și alege la fel.
+Modifici sau ștergi unul? Apasă pe **Salvează** sau **Șterge**, apoi alege **Doar acest eveniment**, **Acest eveniment și următoarele** sau **Toate evenimentele**.
 
-> Note: O opțiune care nu poate primi modificarea ta e gri, cu motivul alături. O oră nouă nu poate merge la **Toate evenimentele**. Persoanele de la **Pentru** țin de toată seria. Așa că modificările la ele, la repetare, **Toată ziua**, **Eveniment privat** sau mementouri în plus nu pot fi **Doar acest eveniment**.
+Alte persoane într-o singură zi? Deschide evenimentul din ziua aceea, schimbă **Pentru**, apasă pe **Salvează** și alege **Doar acest eveniment**. Evenimentul arată apoi **Doar în această zi**, iar mementourile lui ajung la persoanele din ziua aceea. Dacă alegi din nou persoanele seriei, ziua urmează iar seria.
+
+> Note: O opțiune care nu poate primi modificarea ta e gri, cu motivul alături. O oră nouă nu poate merge la **Toate evenimentele**. Modificările la repetare, **Toată ziua**, **Eveniment privat** sau mementouri în plus nu pot fi **Doar acest eveniment**.

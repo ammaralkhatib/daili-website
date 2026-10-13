@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Arată calendarele telefonului în daili
-summary: Calendare de serviciu, de școală sau de sport lângă evenimentele familiei. Doar tu le vezi.
-keywords: calendarul telefonului, calendarul dispozitivului, calendar de serviciu, ical, outlook, calendar apple, privat
+title: Adaugă alte calendare: telefonul, Google, linkuri și fișiere
+summary: Arată calendarele telefonului sau Google Calendar lângă evenimentele familiei, urmărește calendarul școlii sau importă un fișier.
+keywords: calendarul telefonului, calendar apple, google calendar, adaugă calendar, alte calendare, abonare, link, calendarul școlii, calendar de serviciu, ics, privat
 tipTitle: Vezi calendarele telefonului în daili
 tipBody: Calendarele de serviciu, de școală sau de sport pot apărea lângă evenimentele familiei.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Calendarele pe care le ai deja pe acest telefon pot apărea lângă evenimentele familiei tale.
+Calendarele de serviciu, de școală sau de sport pot apărea lângă evenimentele familiei tale.
 
-1. Deschide **Calendar**.
-2. Apasă pe butonul de setări (rotița) din dreapta sus.
-3. La **Calendarele din telefon**, apasă pe **Conectează** și permite accesul.
-4. Verifică dacă **Afișează calendarele din telefon** e pornit, apoi apasă pe **Alege calendarele** și alege-le pe cele pe care vrei să le vezi.
+1. Deschide **Calendar** și apasă pe rotița din dreapta sus.
+2. La **Alte calendare**, apasă pe **Adaugă un calendar**.
+3. **Calendar Apple** (iPhone) sau **Calendarele telefonului** (Android): calendarele telefonului tău. Permite accesul, iar daili le arată pe cele principale.
+4. **Google Calendar**: te conectezi o singură dată și alegi cine vede fiecare calendar.
+5. **Abonează-te printr-un link**: un calendar de la școală sau de la club care se actualizează singur. Îl vede toată familia. Doar pentru administratori.
+6. **Importă un fișier (.ics)**: copiază evenimentele în daili o singură dată.
 
-![Secțiunea Calendarele din telefon din setările calendarului](calendar-phone-calendars)
+![Panoul Adaugă un calendar cu Calendar Apple, Google Calendar, Abonează-te printr-un link și Importă un fișier (.ics).](calendar-other-calendars)
 
-> Note: Aceste calendare rămân pe acest telefon. Nu se încarcă nimic, iar restul familiei nu le vede.
+Le găsești la **Alte calendare**. La telefon scrie **Doar tu**, la linkuri **Familia**. Apasă pe rândul telefonului ca să schimbi ce ai ales. Ca să-l scoți, apasă pe **⋮** → **Elimină**. daili te întreabă mai întâi. Nu se șterge nimic de pe telefon, iar dacă îl adaugi din nou, alegerile tale revin.
+
+> Note: Calendarele telefonului rămân pe acest telefon: nu se încarcă nimic, iar familia ta nu le vede.

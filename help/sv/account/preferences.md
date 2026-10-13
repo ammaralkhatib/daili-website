@@ -3,7 +3,7 @@ id: account-preferences
 title: Ljust eller mörkt, språk, tidsformat, vibration
 summary: Välj mörkt läge, ditt språk, 12- eller 24-timmarsklocka, om daili ska vibrera, och dess AI-funktioner.
 keywords: mörkt läge, dark mode, ljust läge, tema, utseende, språk, 24-timmars, 12-timmars, tidsformat, vibration, ai, gemini
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Tryck på din bild högst upp på startskärmen för att öppna **Inställningar**. Det här hittar du under **Allmänt**.
 
@@ -13,7 +13,8 @@ Tryck på din bild högst upp på startskärmen för att öppna **Inställningar
 2. **Tidsformat**: **24-timmars**, **12-timmars**, eller **System** för att följa telefonen.
 3. **Utseende**: **Ljust**, **Mörkt**, eller **System** för att följa telefonen. Under **Appfärg** väljer du **daili-grön** eller **Min färg**. Färgen tonar knappar, länkar, kort och, svagt, bakgrunden.
 4. **Vibration**: ett litet surr när något är klart, sparat eller borttaget. Stäng av det om du inte gillar det.
-5. **AI-funktioner (Google Gemini)**: låter Googles AI läsa dina foton, videolänkar och matönskemål. Avstängt? Då frågar daili igen nästa gång.
+5. **Väder på I dag**: väderkortet högst upp på **I dag**. Stäng av det för att dölja kortet.
+6. **AI-funktioner (Google Gemini)**: låter Googles AI läsa dina foton, videolänkar och matönskemål. Avstängt? Då frågar daili igen nästa gång.
 
 ![Rutan Utseende. Appfärg, med daili-grön och Min färg, är inringad.](account-app-colour)
 

@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energi, Minzis ture og postkort
 summary: Hvert flueben fylder Minzis energilinje. Når den er fuld, tager hun på tur, og der kommer et postkort hjem.
 keywords: minzi, kat, energi, tur, postkort, familiens kat, omdøb kat, energilinje, belønning, kæledyr
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi er familiens kat. Hun bor i sit værelse på skærmen **Vaner**, hvor hun sover, sidder og kigger på, når du sætter flueben.
 
@@ -15,5 +15,7 @@ Minzi er familiens kat. Hun bor i sit værelse på skærmen **Vaner**, hvor hun 
 4. Tryk på **Minzi** forneden for at se alle hendes **Postkort**, hendes ture og familiens stime.
 
 Vil du give katten et andet navn, så tryk på **Omdøb** på den skærm.
+
+Minzi dukker også op uden for **Vaner**, men kun når du bliver færdig med en hel liste eller alle opgaver i I dag.
 
 > Note: Hver person tjener energi én gang pr. vane pr. dag. Private vaner og hviledage giver ingen energi.

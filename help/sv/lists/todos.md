@@ -3,7 +3,7 @@ id: lists-todos
 title: Uppgiftslistor
 summary: Delade uppgiftslistor för sysslor, ärenden och skolgrejer. Bocka av uppgifter och se vem som gör vad.
 keywords: uppgift, uppgifter, att göra, todo, sysslor, ärenden, checklista, hushåll, bocka av, klar
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Som en inköpslista, men en uppgift kan också ha en person, ett förfallodatum och en påminnelse.
 
@@ -15,6 +15,8 @@ Som en inköpslista, men en uppgift kan också ha en person, ett förfallodatum 
 4. Klar? Tryck på rutan framför uppgiften. Den flyttas ned till **Klart**.
 5. För att sortera listan trycker du på **⋯** högst upp och sedan på **Gruppera efter**. Välj **Förfallodatum**, **Person** eller **Kategori**.
 
-I en delad lista gör låset till höger i inmatningsfältet, precis före skicka-pilen, dina nästa uppgifter privata tills du lämnar listan. Öppet betyder av, stängt betyder på.
+Bocka av en hel lista eller alla uppgifter på I dag, så kanske Minzi jublar.
+
+I en delad lista gör låset bredvid skicka-pilen dina nästa uppgifter privata tills du lämnar listan. Stängt betyder på.
 
 > Note: **Gruppera efter** sparas bara på den här telefonen.

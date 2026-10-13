@@ -3,7 +3,7 @@ id: lists-todos
 title: Oppgavelister
 summary: Felles oppgavelister for husarbeid, ærender og skoleting. Hak av oppgaver, og se hvem som gjør hva.
 keywords: oppgave, gjøremål, to-do, husarbeid, ærender, sjekkliste, husholdning, hak av, ferdig, liste
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Som en handleliste, men en oppgave kan også ha en person, en frist og en påminnelse.
 
@@ -15,6 +15,8 @@ Som en handleliste, men en oppgave kan også ha en person, en frist og en påmin
 4. Ferdig? Trykk på boksen foran oppgaven. Den flyttes ned til **Gjort**.
 5. Vil du sortere listen, trykker du på **⋯** øverst og så på **Grupper etter**. Velg **Frist**, **Person** eller **Kategori**.
 
-I en felles liste gjør låsen til høyre i feltet for å legge til, rett før sendepilen, de neste oppgavene dine private til du går ut av listen. Åpen betyr av, lukket betyr på.
+Blir du ferdig med en liste eller alle oppgavene på skjermen I dag, kan det hende Minzi jubler.
+
+I en felles liste gjør låsen ved sendepilen de neste oppgavene dine private til du går ut av listen. Lukket betyr på.
 
 > Note: **Grupper etter** lagres bare på denne telefonen.

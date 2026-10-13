@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Gentagne begivenheder
 summary: Lad en begivenhed gentage sig hver dag, uge, måned eller år, og ændr én dag eller hele serien.
 keywords: gentag, gentagelse, tilbagevendende, hver uge, ugentligt, dagligt, månedligt, årligt, serie, rutine
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Svømning hver tirsdag? Tilføj det én gang, og lad det gentage sig.
 
@@ -15,6 +15,8 @@ Svømning hver tirsdag? Tilføj det én gang, og lad det gentage sig.
 4. Behold **Aldrig** under **Slutter**, eller vælg **På dato**.
 5. Luk arket, og tryk på **Gem**.
 
-Ændrer du en gentaget begivenhed? Lav dine ændringer først, og tryk på **Gem**. Vælg så **Kun denne begivenhed**, **Denne og følgende begivenheder** eller **Alle begivenheder**. Sletter du en? Tryk på **Slet**, og vælg på samme måde.
+Ændrer eller sletter du en gentaget begivenhed? Tryk på **Gem** eller **Slet**, og vælg så **Kun denne begivenhed**, **Denne og følgende begivenheder** eller **Alle begivenheder**.
 
-> Note: Et valg, der ikke kan rumme din ændring, er gråt, med grunden. Et nyt tidspunkt kan ikke gælde **Alle begivenheder**. Personerne under **For** hører til hele serien. Derfor kan ændringer af dem, af gentagelse, **Hele dagen**, **Privat begivenhed** eller ekstra påmindelser ikke gælde **Kun denne begivenhed**.
+Andre personer på én dag? Åbn den dag, ændr feltet **For**, tryk på **Gem**, og vælg **Kun denne begivenhed**. Begivenheden viser så **Kun denne dag**, og dens påmindelser går til den dags personer. Vælger du seriens personer igen, følger dagen serien.
+
+> Note: Et valg, der ikke kan rumme din ændring, er gråt, med grunden. Et nyt tidspunkt kan ikke gælde **Alle begivenheder**. Ændringer af gentagelse, **Hele dagen**, **Privat begivenhed** eller ekstra påmindelser kan ikke gælde **Kun denne begivenhed**.

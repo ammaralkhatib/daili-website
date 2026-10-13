@@ -3,7 +3,7 @@ id: habits-minzi
 title: Enerji, Minzi'nin gezileri ve kartpostallar
 summary: Her işaret Minzi'nin enerji çubuğunu doldurur. Çubuk dolunca geziye çıkar ve eve bir kartpostal gelir.
 keywords: minzi, kedi, enerji, gezi, kartpostal, aile kedisi, kedinin adını değiştir, enerji çubuğu, ödül, evcil hayvan
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi ailenin kedisi. **Alışkanlıklar** ekranındaki odasında yaşar; orada uyur, oturur ve senin işaretlemeni izler.
 
@@ -15,5 +15,7 @@ Minzi ailenin kedisi. **Alışkanlıklar** ekranındaki odasında yaşar; orada 
 4. Tüm **Kartpostallar**, gezilerini ve aile serini görmek için alttaki **Minzi** sekmesine dokun.
 
 Kediye başka bir ad vermek için o ekranda **Adını değiştir** seçeneğine dokun.
+
+Minzi **Alışkanlıklar** ekranı dışında da görünür, ama yalnızca bir listenin tamamını ya da Bugün ekranındaki tüm görevleri bitirdiğinde.
 
 > Note: Her kişi her alışkanlık için günde bir kez enerji kazanır. Özel alışkanlıklar ve mola günleri enerji vermez.

@@ -3,7 +3,7 @@ id: account-feedback
 title: Envoyer un commentaire ou noter daili
 summary: Écris-nous directement depuis l'app, ou laisse une note dans l'App Store ou sur Google Play.
 keywords: commentaire, avis, contact, support, nous écrire, bug, idée, problème, noter, étoiles, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Tu as trouvé un bug, ou tu as une idée ? Nous lisons chaque message.
 
@@ -12,6 +12,7 @@ Tu as trouvé un bug, ou tu as une idée ? Nous lisons chaque message.
 1. Ouvre les **Paramètres** et fais défiler jusqu'à **À propos**.
 2. Touche **Envoyer un commentaire**. Ton app de messagerie ouvre un nouvel e-mail pour nous. Écris ce que tu as en tête et envoie-le.
 3. Tu aimes daili ? Touche **Noter Daili**. daili s'ouvre dans l'App Store ou sur Google Play.
+4. Pour en parler à un ami, touche **Partager Daili**. Ton menu de partage s'ouvre avec un court message et un lien vers daili.
 
 En bas de l'e-mail, il y a déjà la version de l'app, le système de ton téléphone et ta langue. Cela nous aide à répondre plus vite.
 

@@ -3,7 +3,7 @@ id: calendar-views
 title: Vyerna månad, vecka, dag och lista
 summary: Byt mellan månad, vecka, 3 dagar, dag och lista, och filtrera på person eller kategori.
 keywords: vy, månad, vecka, dag, lista, agenda, 3 dagar, byta vy, filter, i dag
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Kalendern kan visa familjens planer på fem sätt.
 
@@ -15,8 +15,10 @@ Kalendern kan visa familjens planer på fem sätt.
 4. Tryck på **I dag** längst ned för att hoppa tillbaka till i dag.
 5. För att bara se vissa personer eller kategorier trycker du på **Filter** och väljer dem. Barn finns också under **Personer**.
 
-daili kommer ihåg din vy på den här telefonen. I **Månad** trycker du på en dag för att se dess händelser.
+daili kommer ihåg din vy på den här telefonen. I **Månad** trycker du på en dag för att se allt den dagen.
 
-En händelse visas under de personer den är för. En händelse för alla visas under den som skapade den. Dess färgade rand har samma färg som den första personen den är för.
+Kugghjulet → **Visa i kalendern** lägger till födelsedagar, helgdagar, måltider, uppgifter, anteckningar med påminnelse och räkningar. Utom helgdagar öppnas de med ett tryck; en uppgift öppnas i sin lista.
+
+En händelse visas under de personer den är för, eller under den som skapade den om den är för alla. Randen har samma färg som den första personen den är för.
 
 > Note: **Filter** visas först när det finns något att filtrera på: en andra person (ett barn räknas också) eller en kategori.

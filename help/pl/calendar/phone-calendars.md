@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Pokaż kalendarze z telefonu w daili
-summary: Kalendarz z pracy, szkoły albo zajęć sportowych obok rodzinnych wydarzeń. Widzisz je tylko ty.
-keywords: kalendarz w telefonie, kalendarz urządzenia, kalendarz z pracy, ical, outlook, kalendarz apple, kalendarz google, prywatny
+title: Dodaj inne kalendarze: z telefonu, Google, linki i pliki
+summary: Pokaż kalendarze z telefonu albo Kalendarz Google obok rodzinnych wydarzeń, obserwuj kalendarz szkolny albo zaimportuj plik.
+keywords: kalendarz w telefonie, kalendarz apple, kalendarz google, dodaj kalendarz, inne kalendarze, subskrypcja, link, kalendarz szkolny, kalendarz z pracy, ics, prywatny
 tipTitle: Zobacz kalendarze z telefonu w daili
 tipBody: Kalendarze z pracy, szkoły albo zajęć sportowych mogą się pojawiać obok rodzinnych wydarzeń.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Kalendarze, które już masz w tym telefonie, mogą się pojawiać obok wydarzeń twojej rodziny.
+Kalendarze z pracy, szkoły albo zajęć sportowych mogą się pojawiać obok wydarzeń twojej rodziny.
 
-1. Otwórz **Kalendarz**.
-2. Dotknij przycisku ustawień (zębatki) w prawym górnym rogu.
-3. W sekcji **Kalendarze w telefonie** dotknij **Połącz** i zezwól na dostęp.
-4. Sprawdź, czy opcja **Pokazuj kalendarze z telefonu** jest włączona, potem dotknij **Wybierz kalendarze** i wybierz te, które mają się pokazywać.
+1. Otwórz **Kalendarz** i dotknij zębatki w prawym górnym rogu.
+2. W sekcji **Inne kalendarze** dotknij **Dodaj kalendarz**.
+3. **Kalendarz Apple** (iPhone) albo **Kalendarze telefonu** (Android): kalendarze z twojego telefonu. Zezwól na dostęp, a daili pokaże te najważniejsze.
+4. **Kalendarz Google**: zaloguj się raz i wybierz, kto widzi który kalendarz.
+5. **Subskrybuj przez link**: kalendarz szkoły albo klubu, który sam się aktualizuje. Widzi go cała rodzina. Tylko dla adminów.
+6. **Importuj plik (.ics)**: jednorazowo kopiuje wydarzenia do daili.
 
-![Sekcja Kalendarze w telefonie w ustawieniach kalendarza](calendar-phone-calendars)
+![Panel Dodaj kalendarz z opcjami Kalendarz Apple, Kalendarz Google, Subskrybuj przez link i Importuj plik (.ics).](calendar-other-calendars)
 
-> Note: Te kalendarze zostają w tym telefonie. Nic nie jest wysyłane, a reszta rodziny ich nie widzi.
+Znajdziesz je w sekcji **Inne kalendarze**. Przy telefonie widnieje **Tylko ty**, przy linkach **Rodzina**. Dotknij wiersza telefonu, żeby zmienić wybór. Żeby go usunąć, dotknij **⋮** → **Usuń**. daili najpierw zapyta. Nic w telefonie nie zostanie usunięte, a po ponownym dodaniu twój wybór wróci.
+
+> Note: Kalendarze z telefonu zostają w tym telefonie: nic nie jest wysyłane, a twoja rodzina ich nie widzi.

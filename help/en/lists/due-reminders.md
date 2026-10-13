@@ -7,7 +7,7 @@ keywords: due date, deadline, reminder, notification, snooze, done, today, tomor
 routes: /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
-updated: 2026-09-24
+updated: 2026-10-12
 media: lists-due-reminders
 order: 6
 related: lists-todos, lists-repeating, lists-assign
@@ -19,6 +19,6 @@ A to-do can have a due day and a reminder. The reminder goes to the people the t
 1. While you type a new task, tap **Today**, **Tomorrow** or **Pick a date…** above the add bar.
 2. For a reminder, tap the task. Under **Due date**, tap **Add due date** if it has none, and **Add time** if you need one.
 3. Under **Reminder**, pick when, like **Morning of (9:00)**. Then tap **Save**.
-4. When the reminder comes, tap **Done** to tick the task off, or **Snooze 15 min**.
+4. When the reminder comes, tap **Done** to tick the task off, or **Snooze 15 min**. Tap the reminder itself to open the list at that to-do, highlighted.
 
 > Note: **Reminder** only shows once the task has a due date. If you clear the due date, the reminder goes too.

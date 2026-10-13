@@ -5,18 +5,20 @@ summary: Kirjoita muistiinpano tai jaa linkki mistä tahansa sovelluksesta. Muis
 keywords: muistiinpano, muistiinpanot, pikamuistiinpano, linkki, jaa, tarkistuslista, tunniste, suodata, haku, muistutus, äskettäin poistetut, tiivistä
 tipTitle: Jaa linkki dailiin, niin se säilyy
 tipBody: Jaa video, julkaisu tai sivu mistä tahansa sovelluksesta dailiin, niin siitä tulee muistiinpano – yksityinen, kunnes jaat sen.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-Muistiinpanossa on **Otsikko**, tekstiä tai molemmat. Luettelot ja tarkistuslistat toimivat: napauta ruutua, niin siihen tulee rasti. Ei kansioita.
+Muistiinpanossa on **Otsikko**, tekstiä tai molemmat, sekä luetteloita ja tarkistuslistoja.
 
 ![Aloitusnäyttö. Muistiinpanot-ruutu on ympyröity.](notes-tile)
 
-1. Napauta aloitusnäytöllä **Muistiinpanot** ja sitten **+** tai alapalkin painiketta: kuva, ääni (äänitys alkaa heti), video, linkki.
-2. Kirjoita ja napauta **Tallenna**. Jos suljet tallentamattoman muistiinpanon, daili kysyy ensin.
+1. Napauta aloitusnäytöllä **Muistiinpanot** ja sitten **+** tai alapalkin painiketta: kuva, ääni, video, linkki, piirros.
+2. Kirjoita ja napauta **Tallenna**.
+
+Muistiinpanot avautuvat ruudukkona, jossa kuvat ja piirrokset ovat isoina ja kehykset tunnisteen värisinä. Yläreunan painike vaihtaa luetteloon.
 
 Nopeammin: **Pikamuistiinpano**-widget, iPhonen Toimintopainike tai Jaa → **daili** → **Tallenna** mistä tahansa sovelluksesta.
 
-![Uusi muistiinpano ja painikkeet Kuva, Ääni, Video ja Linkki. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
+![Uusi muistiinpano ja painikkeet Kuva, Ääni, Video, Linkki ja Piirrä. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
 
 Näppäimistön yläpuolella: tunnisteet, muistutus (vain sinä saat sen) ja kuka muistiinpanon näkee: **Vain minä** (oletus), **Koko perhe** tai **Valitse jäsenet**. **Skannaa linkki** lukee verkko-osoitteen kuvasta.
 
@@ -28,4 +30,4 @@ Hae tai suodata luetteloa. Poistetut muistiinpanot odottavat 30 päivää kohdas
 
 Muistiinpanossa kohdan **Daili Plus** rivit **Tee tästä tapahtuma, tehtävä tai ostoslista** ja **Tiivistä** (video, verkkosivu tai pitkä muistiinpano) käyttävät kumpikin yhden tekoälytoiminnon.
 
-> Note: Ilman nettiä uusi muistiinpano odottaa ja lähtee myöhemmin itsestään.
+> Note: Ilman nettiä uudet muistiinpanot lähtevät myöhemmin itsestään.

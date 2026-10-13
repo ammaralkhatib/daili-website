@@ -3,7 +3,7 @@ id: account-feedback
 title: Geri bildirim gönder ya da daili'yi değerlendir
 summary: Bize doğrudan uygulamadan yaz ya da App Store veya Google Play'de bir değerlendirme bırak.
 keywords: geri bildirim, iletişim, destek, e-posta, hata, fikir, sorun, değerlendir, yorum, yıldız, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Bir hata mı buldun, ya da bir fikrin mi var? Her mesajı okuyoruz.
 
@@ -12,6 +12,7 @@ Bir hata mı buldun, ya da bir fikrin mi var? Her mesajı okuyoruz.
 1. **Ayarlar** ekranını aç ve **Hakkında** bölümüne kadar aşağı kaydır.
 2. **Geri bildirim gönder** seçeneğine dokun. E-posta uygulaman bize yeni bir e-posta açar. Aklından geçeni yaz ve gönder.
 3. daili'yi beğendin mi? **Daili'yi değerlendir** seçeneğine dokun. daili'yi App Store'da ya da Google Play'de açar.
+4. Bir arkadaşına anlatmak için **Daili'yi paylaş** seçeneğine dokun. Kısa bir mesaj ve daili bağlantısıyla paylaşım menün açılır.
 
 E-postanın altında uygulama sürümün, telefonunun sistemi ve dilin zaten yazılıdır. Bu, daha hızlı yanıt vermemize yardımcı olur.
 

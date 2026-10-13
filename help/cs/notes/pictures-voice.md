@@ -3,14 +3,14 @@ id: notes-pictures-voice
 title: Obrázky, kresby a hlas v poznámce
 summary: Přidej do poznámky fotky, kresbu nebo hlasovou nahrávku a vyber, kde se tyto soubory uchovávají.
 keywords: obrázek, fotka, snímek obrazovky, kresba, kreslit, hlas, nahrávka, diktování, text v obrázku, cloud daili, úložiště, záloha
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Poznámka může být jen z obrázků nebo nahrávky, v pořadí, v jakém je přidáš. Klepnutím je otevřeš.
 
 ![Poznámka. Zakroužkovaná je skupina Přílohy s odkazem, obrázkem a nahrávkou.](notes-pictures)
 
-1. **Foto**: **Fotoaparát**, **Knihovna fotek**, **Vložit obrázek**, **Kreslit**. Z jiných aplikací: Sdílet → **daili**, až 10 obrázků.
-2. Volba **Upravit kresbu** funguje jen v telefonu, kde kresba vznikla.
+1. **Foto**: **Fotoaparát**, **Knihovna fotek**, **Vložit obrázek**. Z jiných aplikací: Sdílet → **daili**, až 10 obrázků.
+2. Tlačítko **Kreslit**, hned za tlačítkem **Odkaz**, otevře kreslicí plochu. Volba **Upravit kresbu** funguje jen v telefonu, kde kresba vznikla.
 3. Tlačítko **Hlas** nahraje až 10 minut.
 4. Mikrofon u tlačítek seznamů píše, co říkáš, pomocí rozpoznávání řeči v tvém telefonu.
 5. daili čte v tvém telefonu text z obrázků. Otevři obrázek a klepni na **Přidat do poznámky**; hledání ten text najde také.

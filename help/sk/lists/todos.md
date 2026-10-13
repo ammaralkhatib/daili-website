@@ -3,7 +3,7 @@ id: lists-todos
 title: Zoznamy úloh
 summary: Spoločné zoznamy úloh na domáce práce, pochôdzky a školské veci. Odškrtávaj úlohy a pozri sa, kto čo robí.
 keywords: úloha, úlohy, to-do, domáce práce, pochôdzky, kontrolný zoznam, domácnosť, odškrtnúť, hotovo, zoznam
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Ako nákupný zoznam, ale úloha môže mať aj osobu, termín a pripomienku.
 
@@ -15,6 +15,8 @@ Ako nákupný zoznam, ale úloha môže mať aj osobu, termín a pripomienku.
 4. Hotovo? Ťukni na políčko pred úlohou. Presunie sa dole do časti **Hotovo**.
 5. Ak chceš zoznam zoradiť, ťukni hore na **⋯** a potom na **Zoskupiť podľa**. Vyber **Termín**, **Osoba** alebo **Kategória**.
 
-V spoločnom zozname zámok vpravo v poli na pridávanie, tesne pred šípkou na odoslanie, urobí tvoje ďalšie úlohy súkromnými, kým zo zoznamu neodídeš. Otvorený znamená vypnuté, zatvorený zapnuté.
+Dokonči zoznam alebo všetky úlohy na Dnes a Minzi možno zajasá.
+
+V spoločnom zozname zámok vedľa šípky na odoslanie urobí tvoje ďalšie úlohy súkromnými, kým zo zoznamu neodídeš. Zatvorený znamená zapnuté.
 
 > Note: **Zoskupiť podľa** sa ukladá len v tomto telefóne.

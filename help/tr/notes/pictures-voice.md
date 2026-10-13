@@ -3,14 +3,14 @@ id: notes-pictures-voice
 title: Notta resimler, çizimler ve ses
 summary: Bir nota fotoğraf, çizim ya da ses kaydı ekle ve bu dosyaların nerede saklanacağını seç.
 keywords: resim, fotoğraf, ekran görüntüsü, çizim, çiz, ses, kayıt, dikte, resimdeki metin, daili bulutu, depolama, yedekleme
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Bir not yalnızca resimlerden ya da bir kayıttan oluşabilir; eklediğin sırayla dururlar. Açmak için birine dokun.
 
 ![Bir not. Bir bağlantı, bir resim ve bir kayıt içeren Ekler grubu daire içine alınmış.](notes-pictures)
 
-1. **Fotoğraf**: **Kamera**, **Fotoğraf arşivi**, **Resmi yapıştır**, **Çiz**. Başka uygulamalardan: Paylaş → **daili**, en fazla 10 resim.
-2. **Çizimi düzenle** seçeneği yalnızca çizimin yapıldığı telefonda çalışır.
+1. **Fotoğraf**: **Kamera**, **Fotoğraf arşivi**, **Resmi yapıştır**. Başka uygulamalardan: Paylaş → **daili**, en fazla 10 resim.
+2. **Bağlantı** düğmesinden sonra gelen **Çiz** düğmesi çizim alanını açar. **Çizimi düzenle** seçeneği yalnızca çizimin yapıldığı telefonda çalışır.
 3. **Ses** düğmesi en fazla 10 dakika kaydeder.
 4. Liste düğmelerinin yanındaki mikrofon, telefonunun konuşma tanıma özelliğiyle söylediklerini yazar.
 5. daili resimlerdeki metni telefonunda okur. Bir resmi aç ve **Nota ekle** seçeneğine dokun; arama da metni orada bulur.

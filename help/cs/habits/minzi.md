@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energie, výlety kočky Minzi a pohlednice
 summary: Každé odškrtnutí plní ukazatel energie kočky Minzi. Když je plný, vyrazí na výlet a domů přijde pohlednice.
 keywords: minzi, kočka, energie, výlet, pohlednice, rodinná kočka, přejmenovat kočku, ukazatel energie, odměna, mazlíček
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi je kočka tvé rodiny. Bydlí ve svém pokojíčku na obrazovce **Návyky**, kde podřimuje, sedí a dívá se, jak odškrtáváš.
 
@@ -15,5 +15,7 @@ Minzi je kočka tvé rodiny. Bydlí ve svém pokojíčku na obrazovce **Návyky*
 4. Klepni dole na **Minzi** a uvidíš všechny **Pohlednice**, její výlety a sérii tvé rodiny.
 
 Pokud chceš kočce dát jiné jméno, klepni na té obrazovce na **Přejmenovat**.
+
+Minzi se ukáže i mimo obrazovku **Návyky**, ale jen když dokončíš celý seznam nebo všechny úkoly v Dnes.
 
 > Note: Každý člověk získá energii za každý návyk jednou denně. Soukromé návyky a dny volna energii nedávají.

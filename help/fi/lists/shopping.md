@@ -3,7 +3,7 @@ id: lists-shopping
 title: Ostoslistat: lisää, merkitse, tyhjennä
 summary: Yksi ostoslista, jonka koko perhe jakaa. Lisää ostoksia, merkitse ne kaupassa ja tyhjennä ostetut.
 keywords: ostokset, ruokaostokset, ostoslista, kauppalista, osta, merkitse, rastita, kauppa, tyhjennä, tehty
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Kaikki perheessäsi näkevät samat ostoslistat. Kun joku lisää tai merkitsee ostoksen, kaikki näkevät sen.
 
@@ -14,5 +14,7 @@ Kaikki perheessäsi näkevät samat ostoslistat. Kun joku lisää tai merkitsee 
 3. Napauta ostosta, jos haluat muuttaa kohtaa **Määrä** tai lisätä kohdan **Muistiinpano**, ja napauta sitten **Tallenna**.
 4. Napauta kaupassa ostoksen edessä olevaa ruutua. Se siirtyy alas kohtaan **Tehty**.
 5. Kun olet taas kotona, napauta yläreunassa **⋯** ja sitten **Poista tehdyt**. Tai napauta **Poista kaikki merkinnät**, jos haluat käyttää samaa listaa uudelleen.
+
+Jos sinulla on budjetti, daili tarjoaa viimeisen ostoksen merkitsemisen jälkeen kulun lisäämistä siihen. Voit myös napauttaa **⋯** → **Lisää budjettiin**.
 
 > Note: Merkitsitkö väärän ostoksen? Napauta näytön alareunan ilmoituksessa **Kumoa**.

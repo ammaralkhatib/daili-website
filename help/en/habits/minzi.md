@@ -7,7 +7,7 @@ keywords: minzi, cat, energy, trip, postcard, family cat, rename cat, energy bar
 routes: /habits/minzi
 tryIt: /habits/minzi
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-10-12
 media: habits-minzi
 order: 5
 related: habits-what, habits-tick, habits-streaks
@@ -22,5 +22,7 @@ Minzi is your family's cat. She lives in her room on the **Habits** screen, wher
 4. Tap **Minzi** at the bottom to see all her **Postcards**, her trips and your family streak.
 
 To give the cat another name, tap **Rename** on that screen.
+
+Minzi also shows up outside **Habits**, but only when you finish a whole list or all of Today's to-dos.
 
 > Note: Each person earns energy once per habit per day. Private habits and rest days give no energy.

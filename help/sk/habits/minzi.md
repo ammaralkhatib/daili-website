@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energia, výlety Minzi a pohľadnice
 summary: Každé odškrtnutie plní ukazovateľ energie Minzi. Keď je plný, vydá sa na výlet a domov príde pohľadnica.
 keywords: minzi, mačka, energia, výlet, pohľadnica, rodinná mačka, premenovať mačku, ukazovateľ energie, odmena, zvieratko
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi je mačka tvojej rodiny. Býva vo svojej izbe na obrazovke **Návyky**, kde spí, sedí a pozerá sa, ako odškrtávaš.
 
@@ -15,5 +15,7 @@ Minzi je mačka tvojej rodiny. Býva vo svojej izbe na obrazovke **Návyky**, kd
 4. Ťukni dole na **Minzi** a uvidíš všetky jej **Pohľadnice**, jej výlety a rodinnú sériu.
 
 Ak chceš mačke dať iné meno, ťukni na tej obrazovke na **Premenovať**.
+
+Minzi sa ukáže aj mimo obrazovky **Návyky**, ale len keď dokončíš celý zoznam alebo všetky úlohy na Dnes.
 
 > Note: Každý získa energiu raz za návyk a deň. Súkromné návyky a dni voľna energiu nedávajú.

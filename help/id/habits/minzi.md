@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energi, perjalanan Minzi, dan kartu pos
 summary: Setiap centang mengisi bar energi Minzi. Saat penuh, dia berangkat jalan-jalan dan kartu pos datang ke rumah.
 keywords: minzi, kucing, energi, perjalanan, kartu pos, kucing keluarga, ganti nama kucing, bar energi, hadiah, hewan peliharaan
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi adalah kucing keluarga Anda. Dia tinggal di kamarnya di layar **Kebiasaan**, tempat dia tidur siang, duduk, dan memperhatikan Anda mencentang.
 
@@ -15,5 +15,7 @@ Minzi adalah kucing keluarga Anda. Dia tinggal di kamarnya di layar **Kebiasaan*
 4. Ketuk **Minzi** di bawah untuk melihat semua **Kartu pos**, perjalanannya, dan rentetan keluarga Anda.
 
 Untuk memberi kucing nama lain, ketuk **Ganti nama** di layar itu.
+
+Minzi juga muncul di luar **Kebiasaan**, tapi hanya saat Anda menyelesaikan seluruh daftar atau semua tugas Hari ini.
 
 > Note: Setiap orang mendapat energi sekali per kebiasaan per hari. Kebiasaan pribadi dan hari istirahat tidak memberi energi.

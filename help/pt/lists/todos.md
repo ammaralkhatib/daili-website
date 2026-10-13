@@ -3,7 +3,7 @@ id: lists-todos
 title: Listas de tarefas
 summary: Listas de tarefas compartilhadas para afazeres de casa, recados e coisas da escola. Marque as tarefas e veja quem faz o quê.
 keywords: tarefa, tarefas, afazeres, recados, checklist, lista de tarefas, casa, marcar, concluído, lista
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Como uma lista de compras, mas uma tarefa também pode ter uma pessoa, um prazo e um lembrete.
 
@@ -15,6 +15,8 @@ Como uma lista de compras, mas uma tarefa também pode ter uma pessoa, um prazo 
 4. Terminou? Toque na caixinha na frente da tarefa. Ela desce para **Prontos**.
 5. Para organizar a lista, toque em **⋯**, lá em cima, e depois em **Agrupar por**. Escolha **Prazo**, **Pessoa** ou **Categoria**.
 
-Em uma lista compartilhada, o cadeado à direita da barra de adicionar, logo antes da seta de enviar, deixa suas próximas tarefas privadas até você sair da lista. Aberto quer dizer desligado, fechado quer dizer ligado.
+Termine uma lista ou todas as tarefas de Hoje, e o Minzi pode comemorar.
+
+Em uma lista compartilhada, o cadeado ao lado da seta de enviar deixa suas próximas tarefas privadas até você sair da lista. Fechado quer dizer ligado.
 
 > Note: **Agrupar por** fica salvo só neste celular.

@@ -8,7 +8,6 @@
   "account-preferences": { "file": "account-preferences.webp", "w": 720, "h": 1564, "kind": "image" },
   "vault-photos": { "file": "vault-photos.webp", "w": 720, "h": 1564, "kind": "image" },
   "family-invite": { "file": "family-invite.webp", "w": 720, "h": 720, "kind": "image" },
-  "calendar-phone-calendars": { "file": "calendar-phone-calendars.webp", "w": 720, "h": 622, "kind": "image" },
   "start-home": { "file": "start-home.webp", "w": 720, "h": 1564, "kind": "image" },
   "start-sign-in": { "file": "start-sign-in.webp", "w": 720, "h": 1564, "kind": "image" },
   "start-create-family": { "file": "start-create-family.webp", "w": 720, "h": 1564, "kind": "image" },

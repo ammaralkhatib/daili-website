@@ -3,14 +3,14 @@ id: notes-pictures-voice
 title: Imágenes, dibujos y voz en una nota
 summary: Añade fotos, un dibujo o una grabación de voz a una nota y elige dónde se guardan estos archivos.
 keywords: imagen, foto, captura de pantalla, dibujo, dibujar, voz, grabación, dictado, texto en imagen, nube de daili, almacenamiento, copia de seguridad
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Una nota puede ser solo imágenes o una grabación, en el orden en que las añadiste. Toca una para abrirla.
 
 ![Una nota. El grupo Adjuntos con un enlace, una imagen y una grabación está marcado con un círculo.](notes-pictures)
 
-1. **Foto**: **Cámara**, **Fototeca**, **Pegar imagen**, **Dibujar**. Desde otras apps: Compartir → **daili**, hasta 10 imágenes.
-2. **Editar dibujo** solo funciona en el teléfono donde se hizo el dibujo.
+1. **Foto**: **Cámara**, **Fototeca**, **Pegar imagen**. Desde otras apps: Compartir → **daili**, hasta 10 imágenes.
+2. **Dibujar**, después de **Enlace**, abre el panel de dibujo. **Editar dibujo** solo funciona en el teléfono donde se hizo el dibujo.
 3. **Voz** graba hasta 10 minutos.
 4. El micrófono junto a los botones de lista escribe lo que dices, con el reconocimiento de voz de tu teléfono.
 5. daili lee en tu teléfono el texto de las imágenes. Abre una y toca **Añadir a la nota**; la búsqueda también lo encuentra.

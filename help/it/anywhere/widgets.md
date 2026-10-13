@@ -5,9 +5,9 @@ summary: Guarda i tuoi impegni, spunta attività e spesa o aggiungi qualcosa —
 keywords: widget, schermata home, schermata di blocco, iphone, android, abitudini, cena, aggiunta rapida, compleanno, spuntare, aggiungere widget, conto alla rovescia
 tipTitle: Il tuo programma sulla schermata Home
 tipBody: Aggiungi un widget di daili e guarda cosa c'è dopo senza aprire l'app.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-daili ha widget per il calendario (**In arrivo**, e **Prossimo** con il conto alla rovescia), **Spesa**, **Attività**, le abitudini con Minzi, il conto alla rovescia dei compleanni, la cena di stasera, l’aggiunta rapida e **Nota veloce**.
+daili ha widget per i tuoi impegni (**Calendario**, e **Prossimo** con il conto alla rovescia), **Spesa**, **Attività**, le abitudini con Minzi, il conto alla rovescia dei compleanni, la cena di stasera, l’aggiunta rapida e **Nota veloce**.
 
 1. Tieni premuto uno spazio vuoto della schermata Home del telefono.
 2. Su iPhone, tocca **Modifica**, poi **Aggiungi widget**. Su Android, tocca **Widget**.

@@ -3,7 +3,7 @@ id: lists-todos
 title: Liste de sarcini
 summary: Liste de sarcini comune pentru treburile casei, comisioane și lucruri de școală. Bifează sarcinile și vezi cine ce face.
 keywords: sarcină, sarcini, to-do, treburi, comisioane, listă de verificare, gospodărie, bifează, gata, listă
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Ca o listă de cumpărături, dar o sarcină poate avea și o persoană, un termen și un memento.
 
@@ -15,6 +15,8 @@ Ca o listă de cumpărături, dar o sarcină poate avea și o persoană, un term
 4. Ai terminat? Apasă pe căsuța din fața sarcinii. Coboară la **Finalizate**.
 5. Ca să sortezi lista, apasă pe **⋯** sus, apoi pe **Grupează după**. Alege **Termen**, **Persoană** sau **Categorie**.
 
-Într-o listă comună, lacătul din dreapta barei de adăugare, chiar înainte de săgeata de trimitere, face private următoarele tale sarcini până ieși din listă. Deschis înseamnă oprit, închis înseamnă pornit.
+Termină o listă sau toate sarcinile de Azi, și s-ar putea ca Minzi să te aplaude.
+
+Într-o listă comună, lacătul de lângă săgeata de trimitere face private următoarele tale sarcini până ieși din listă. Închis înseamnă pornit.
 
 > Note: **Grupează după** se salvează doar pe acest telefon.

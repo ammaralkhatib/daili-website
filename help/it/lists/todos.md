@@ -3,7 +3,7 @@ id: lists-todos
 title: Liste di attività
 summary: Liste di attività condivise per faccende, commissioni e cose di scuola. Spunta le attività e guarda chi fa cosa.
 keywords: attività, cose da fare, compito, faccende, commissioni, checklist, casa, spuntare, fatto, lista
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Come una lista della spesa, ma un'attività può avere anche una persona, una scadenza e un promemoria.
 
@@ -15,6 +15,8 @@ Come una lista della spesa, ma un'attività può avere anche una persona, una sc
 4. Fatto? Tocca la casella davanti all'attività. Scende in **Completati**.
 5. Per ordinare la lista, tocca **⋯** in alto, poi **Raggruppa per**. Scegli **Scadenza**, **Persona** o **Categoria**.
 
-In una lista condivisa, il lucchetto a destra della barra per aggiungere, subito prima della freccia di invio, rende private le tue prossime attività finché non esci dalla lista. Aperto vuol dire disattivato, chiuso vuol dire attivo.
+Finisci una lista o tutte le attività della schermata Oggi, e Minzi potrebbe festeggiare.
+
+In una lista condivisa, il lucchetto accanto alla freccia di invio rende private le tue prossime attività finché non esci dalla lista. Chiuso vuol dire attivo.
 
 > Note: **Raggruppa per** viene salvato solo su questo telefono.

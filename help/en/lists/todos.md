@@ -7,7 +7,7 @@ keywords: to-do, todo, task, chores, errands, checklist, household, tick, done, 
 routes: /lists/todos, /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
-updated: 2026-09-30
+updated: 2026-10-12
 media: lists-todos
 order: 4
 related: lists-assign, lists-due-reminders, lists-repeating
@@ -22,6 +22,8 @@ Like a shopping list, but a task can also have a person, a due date and a remind
 4. Done? Tap the box in front of the task. It moves down to **Completed**.
 5. To sort the list, tap **⋯** at the top, then **Group by**. Pick **Due date**, **Person** or **Category**.
 
-In a shared list, the lock at the right of the add bar, just before the send arrow, makes your next tasks private until you leave the list. Open means off, closed means on.
+Finish a list or all of Today's to-dos, and Minzi may cheer.
+
+In a shared list, the lock next to the send arrow makes your next tasks private until you leave. Closed means on.
 
 > Note: **Group by** is saved on this phone only.

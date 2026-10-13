@@ -7,7 +7,7 @@ keywords: note, notes, quick note, link, share, checklist, tag, filter, search, 
 routes: /notes, /notes/new
 tryIt: /notes
 since: 1.7.0
-updated: 2026-10-06
+updated: 2026-10-12
 media: notes-list
 order: 1
 related: notes-pictures-voice, notes-find, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
@@ -15,16 +15,18 @@ tipTitle: Share any link to daili to keep it
 tipBody: Share a video, post or page from any app to daili and it becomes a note — private unless you share it.
 tipPriority: 45
 ---
-A note is a **Title**, text, or both. Bullet lists and checklists work: tap a box to tick it. No folders.
+A note is a **Title**, text, or both, with bullet lists and checklists.
 
 ![Home. The Notes tile is circled.](notes-tile)
 
-1. On Home, tap **Notes**, then **+** or a bottom-bar button: picture, voice (records at once), video, link.
-2. Write and tap **Save**. Closing an unsaved note asks first.
+1. On Home, tap **Notes**, then **+** or a bottom-bar button: picture, voice, video, link, drawing.
+2. Write and tap **Save**.
+
+Notes opens as a grid, with big pictures and drawings and tag-coloured frames. The top button switches to a list.
 
 Faster: the **Quick note** widget, the iPhone Action Button, or Share → **daili** → **Save** from any app.
 
-![A new note with the Photo, Voice, Video and Link buttons. The row that says who can see it is circled.](notes-new)
+![A new note with the Photo, Voice, Video, Link and Draw buttons. The row that says who can see it is circled.](notes-new)
 
 Above the keyboard: tags, a reminder (only you get it) and who sees it: **Only me** (default), **Whole family** or **Pick members**. **Scan link** reads a web address from a photo.
 
@@ -36,4 +38,4 @@ Search or filter the list. Deleted notes wait 30 days under **⋯** → **Recent
 
 Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** (video, web page or long note) each use one AI action.
 
-> Note: Offline, a new note waits and sends itself later.
+> Note: Offline, new notes send themselves later.

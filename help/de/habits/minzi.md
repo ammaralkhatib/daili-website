@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energie, Minzis Reisen und Postkarten
 summary: Jeder Haken füllt Minzis Energiebalken. Ist er voll, geht sie auf Reisen und eine Postkarte kommt nach Hause.
 keywords: minzi, katze, energie, reise, postkarte, familienkatze, katze umbenennen, energiebalken, belohnung, haustier
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi ist die Katze deiner Familie. Sie wohnt in ihrem Zimmer auf dem Bildschirm **Gewohnheiten**, wo sie schläft, sitzt und dir beim Abhaken zusieht.
 
@@ -15,5 +15,7 @@ Minzi ist die Katze deiner Familie. Sie wohnt in ihrem Zimmer auf dem Bildschirm
 4. Tippe unten auf **Minzi**, um all ihre **Postkarten**, ihre Reisen und eure Familienserie zu sehen.
 
 Um der Katze einen anderen Namen zu geben, tippe auf diesem Bildschirm auf **Umbenennen**.
+
+Minzi zeigt sich auch außerhalb von **Gewohnheiten**, aber nur, wenn du eine ganze Liste oder alle Aufgaben auf Heute abhakst.
 
 > Note: Jede Person bekommt pro Gewohnheit und Tag einmal Energie. Private Gewohnheiten und Ruhetage geben keine Energie.

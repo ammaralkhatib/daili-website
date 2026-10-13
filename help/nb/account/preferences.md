@@ -3,7 +3,7 @@ id: account-preferences
 title: Lyst eller mørkt, språk, tidsformat, vibrasjon
 summary: Velg mørk modus, språket ditt, 12- eller 24-timers klokke, om daili skal vibrere, og KI-funksjonene.
 keywords: mørk modus, lys modus, tema, utseende, språk, 24-timers, 12-timers, tidsformat, vibrasjon, haptikk, ki, gemini
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
 Trykk på bildet ditt øverst på startskjermen for å åpne **Innstillinger**. Du finner disse under **Generelt**.
 
@@ -13,7 +13,8 @@ Trykk på bildet ditt øverst på startskjermen for å åpne **Innstillinger**. 
 2. **Tidsformat**: **24-timers**, **12-timers** eller **System** for å følge telefonen.
 3. **Utseende**: **Lyst**, **Mørkt** eller **System** for å følge telefonen. Under **Appfarge** velger du **daili-grønn** eller **Fargen min**. Fargen brukes på knapper, lenker, kort og, svakt, på bakgrunnen.
 4. **Vibrasjon**: en liten summing når noe er gjort, lagret eller slettet. Slå den av hvis du ikke liker den.
-5. **KI-funksjoner (Google Gemini)**: lar Googles KI lese bildene dine, videolenker og middagsønskene dine. Av? Da spør daili igjen neste gang.
+5. **Vær på I dag**: værkortet øverst på skjermen **I dag**. Slå det av for å skjule det.
+6. **KI-funksjoner (Google Gemini)**: lar Googles KI lese bildene dine, videolenker og middagsønskene dine. Av? Da spør daili igjen neste gang.
 
 ![Arket Utseende. Appfarge, med daili-grønn og Fargen min, er ringet inn.](account-app-colour)
 

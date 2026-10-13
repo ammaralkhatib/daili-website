@@ -3,7 +3,7 @@ id: lists-todos
 title: Görev listeleri
 summary: Ev işleri, ayak işleri ve okul işleri için ortak görev listeleri. Görevleri işaretle ve kimin ne yaptığını gör.
 keywords: görev, görevler, yapılacaklar, ev işleri, ayak işleri, kontrol listesi, ev, işaretle, tamamlandı, liste
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Bir alışveriş listesi gibi, ama bir görevin ayrıca bir sorumlusu, bitiş tarihi ve hatırlatıcısı olabilir.
 
@@ -15,6 +15,8 @@ Bir alışveriş listesi gibi, ama bir görevin ayrıca bir sorumlusu, bitiş ta
 4. Bitti mi? Görevin önündeki kutuya dokun. Görev aşağıya, **Tamamlandı** bölümüne iner.
 5. Listeyi sıralamak için üstteki **⋯** simgesine, sonra **Şuna göre grupla** seçeneğine dokun. **Bitiş tarihi**, **Kişi** ya da **Kategori** seç.
 
-Ortak bir listede, ekleme çubuğunun sağındaki, gönder okunun hemen önündeki kilit, listeden çıkana kadar sonraki görevlerini özel yapar. Kilit açıksa bu ayar kapalıdır, kilitliyse açıktır.
+Bir listeyi ya da Bugün ekranındaki tüm görevleri bitir, Minzi seni alkışlayabilir.
+
+Ortak bir listede, gönder okunun yanındaki kilit, listeden çıkana kadar sonraki görevlerini özel yapar. Kilitliyse açıktır.
 
 > Note: **Şuna göre grupla** yalnızca bu telefona kaydedilir.

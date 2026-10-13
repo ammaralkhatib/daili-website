@@ -4,10 +4,10 @@ topic: calendar
 title: Repeating events
 summary: Make an event repeat every day, week, month or year, and change one day or the whole series.
 keywords: repeat, repeating, recurring, every week, weekly, daily, monthly, yearly, series, routine
-routes: /calendar/new
+routes: /calendar/new, /calendar/edit
 tryIt: /calendar/new
 since: 1.0.0
-updated: 2026-09-30
+updated: 2026-10-12
 media: calendar-repeating
 order: 4
 related: calendar-add-event, calendar-edit-delete
@@ -22,6 +22,8 @@ Swimming every Tuesday? Add it once and let it repeat.
 4. Under **Ends**, keep **Never** or pick **On date**.
 5. Close the sheet and tap **Save**.
 
-Changing a repeating event? Make your changes first and tap **Save**. Then choose **This event only**, **This and following events** or **All events**. Deleting one? Tap **Delete** and choose the same way.
+Changing or deleting one? Tap **Save** or **Delete**, then choose **This event only**, **This and following events** or **All events**.
 
-> Note: A choice that can't hold your change is greyed out, with the reason. A new time can't go to **All events**. The people under **For** belong to the whole series. So changes to them, to repeats, **All day**, **Private event** or extra reminders can't be **This event only**.
+Other people on one day? Open that day, change **For**, tap **Save** and choose **This event only**. The event then says **Only this day**, and its reminders go to that day's people. Picking the series' people again makes the day follow the series.
+
+> Note: A choice that can't hold your change is greyed out, with the reason. A new time can't go to **All events**. Changes to repeats, **All day**, **Private event** or extra reminders can't be **This event only**.

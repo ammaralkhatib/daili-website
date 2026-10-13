@@ -3,7 +3,7 @@ id: lists-shopping
 title: Einkaufslisten: hinzufügen, abhaken, aufräumen
 summary: Eine Einkaufsliste, die die ganze Familie teilt. Füg Einträge hinzu, hake sie im Laden ab und räum weg, was du gekauft hast.
 keywords: einkaufen, einkauf, lebensmittel, einkaufsliste, kaufen, abhaken, haken, supermarkt, aufräumen, erledigt
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Alle in deiner Familie sehen dieselben Einkaufslisten. Wenn jemand etwas hinzufügt oder abhakt, sehen es alle.
 
@@ -14,5 +14,7 @@ Alle in deiner Familie sehen dieselben Einkaufslisten. Wenn jemand etwas hinzuf�
 3. Tippe auf einen Eintrag, um die **Menge** zu ändern oder eine **Notiz** hinzuzufügen, und tippe dann auf **Speichern**.
 4. Im Laden tippst du auf das Kästchen vor einem Eintrag. Er rutscht nach unten zu **Erledigt**.
 5. Wieder zu Hause tippst du oben auf **⋯** und dann auf **Erledigte löschen**. Oder tippe auf **Alle abwählen**, um dieselbe Liste wieder zu nutzen.
+
+Hast du ein Budget, bietet dir daili beim Abhaken des letzten Eintrags an, die Kosten dort einzutragen. Du kannst auch auf **⋯** → **Zum Budget hinzufügen** tippen.
 
 > Note: Den falschen Eintrag abgehakt? Tippe in der Meldung unten auf dem Bildschirm auf **Rückgängig**.

@@ -5,18 +5,20 @@ summary: Not yaz ya da herhangi bir uygulamadan bağlantı paylaş. Notlar sen p
 keywords: not, notlar, hızlı not, bağlantı, paylaş, kontrol listesi, etiket, filtre, ara, hatırlatma, son silinenler, özetle
 tipTitle: Saklamak için bir bağlantıyı daili ile paylaş
 tipBody: Herhangi bir uygulamadan bir videoyu, gönderiyi ya da sayfayı daili ile paylaş; not olur, sen paylaşana kadar gizli kalır.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-Bir notta **Başlık**, metin ya da ikisi birden olur. Madde işaretli listeler ve kontrol listeleri çalışır: işaretlemek için kutuya dokun. Klasör yok.
+Bir notta **Başlık**, metin ya da ikisi birden olur; madde işaretli listeler ve kontrol listeleri de.
 
 ![Ana ekran. Notlar kutucuğu daire içine alınmış.](notes-tile)
 
-1. Ana ekranda **Notlar** kutucuğuna, sonra **+** simgesine ya da alt çubuktaki bir düğmeye dokun: resim, ses (hemen kaydeder), video, bağlantı.
-2. Yaz ve **Kaydet** düğmesine dokun. Kaydedilmemiş bir notu kapatırken daili önce sorar.
+1. Ana ekranda **Notlar** kutucuğuna, sonra **+** simgesine ya da alt çubuktaki bir düğmeye dokun: resim, ses, video, bağlantı, çizim.
+2. Yaz ve **Kaydet** düğmesine dokun.
+
+Notlar ızgara olarak açılır; büyük resimler, çizimler ve etiket renginde çerçevelerle. Üstteki düğme listeye geçirir.
 
 Daha hızlı: **Hızlı not** widget'ı, iPhone'daki Eylem düğmesi ya da herhangi bir uygulamadan Paylaş → **daili** → **Kaydet**.
 
-![Fotoğraf, Ses, Video ve Bağlantı düğmeleriyle yeni bir not. Notu kimin görebileceğini gösteren satır daire içine alınmış.](notes-new)
+![Fotoğraf, Ses, Video, Bağlantı ve Çiz düğmeleriyle yeni bir not. Notu kimin görebileceğini gösteren satır daire içine alınmış.](notes-new)
 
 Klavyenin üstünde: etiketler, hatırlatma (yalnızca sen alırsın) ve notu kimin gördüğü: **Yalnızca ben** (varsayılan), **Tüm aile** ya da **Üye seç**. **Bağlantı tara** düğmesi bir fotoğraftaki web adresini okur.
 
@@ -28,4 +30,4 @@ Listede ara ya da listeyi filtrele. Silinen notlar **⋯** → **Son silinenler*
 
 Bir notta **Daili Plus** altındaki **Bundan etkinlik, görev veya alışveriş listesi oluştur** ve **Özetle** (video, web sayfası ya da uzun not) birer yapay zekâ işlemi kullanır.
 
-> Note: Çevrimdışıyken yeni not bekler ve sonra kendiliğinden gönderilir.
+> Note: Çevrimdışıyken yeni notlar sonra kendiliğinden gönderilir.

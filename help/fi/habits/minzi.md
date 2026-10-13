@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energia, Minzin matkat ja postikortit
 summary: Jokainen merkintä täyttää Minzin energiapalkkia. Kun se on täynnä, Minzi lähtee matkalle ja kotiin tulee postikortti.
 keywords: minzi, kissa, energia, matka, postikortti, perheen kissa, nimeä kissa, energiapalkki, palkinto, lemmikki
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi on perheesi kissa. Se asuu huoneessaan näkymässä **Tavat**, jossa se nukkuu, istuu ja katselee, kun merkitset tapoja tehdyiksi.
 
@@ -15,5 +15,7 @@ Minzi on perheesi kissa. Se asuu huoneessaan näkymässä **Tavat**, jossa se nu
 4. Napauta alhaalla **Minzi**, niin näet kaikki **Postikortit**, sen matkat ja perheen putken.
 
 Jos haluat antaa kissalle toisen nimen, napauta siinä näkymässä **Vaihda nimi**.
+
+Minzi näkyy myös näkymän **Tavat** ulkopuolella, mutta vain kun saat kokonaisen listan tai kaikki Tänään-näkymän tehtävät valmiiksi.
 
 > Note: Jokainen saa energiaa kerran tapaa kohden päivässä. Yksityiset tavat ja lepopäivät eivät anna energiaa.

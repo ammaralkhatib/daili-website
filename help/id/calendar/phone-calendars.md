@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Tampilkan kalender ponsel Anda di daili
-summary: Kalender kerja, sekolah, atau olahraga di samping acara keluarga. Hanya Anda yang melihatnya.
-keywords: kalender ponsel, kalender perangkat, kalender kerja, ical, outlook, kalender apple, google calendar, pribadi
-translatedFrom: 2026-09-24
+title: Tambahkan kalender lain: ponsel, Google, tautan, dan file
+summary: Tampilkan kalender ponsel atau Google Calendar di samping acara keluarga, ikuti kalender sekolah, atau impor file.
+keywords: kalender ponsel, kalender apple, google calendar, tambah kalender, kalender lain, berlangganan, tautan, kalender sekolah, kalender kerja, ics, pribadi
 tipTitle: Lihat kalender ponsel Anda di daili
 tipBody: Kalender kerja, sekolah, atau olahraga bisa tampil di samping acara keluarga.
+translatedFrom: 2026-10-12
 ---
-Kalender yang sudah ada di ponsel ini bisa tampil di samping acara keluarga Anda.
+Kalender kerja, sekolah, atau olahraga bisa tampil di samping acara keluarga Anda.
 
-1. Buka **Kalender**.
-2. Ketuk tombol pengaturan (roda gigi) di kanan atas.
-3. Di bawah **Kalender ponsel**, ketuk **Hubungkan** dan izinkan akses.
-4. Pastikan **Tampilkan kalender ponsel** menyala, lalu ketuk **Pilih kalender** dan pilih yang ingin ditampilkan.
+1. Buka **Kalender** dan ketuk roda gigi di kanan atas.
+2. Di bawah **Kalender lain**, ketuk **Tambah kalender**.
+3. **Kalender Apple** (iPhone) atau **Kalender ponsel** (Android): kalender bawaan ponsel Anda. Izinkan akses, dan daili menampilkan kalender utama Anda.
+4. **Google Calendar**: masuk sekali, lalu pilih siapa yang melihat setiap kalender.
+5. **Berlangganan lewat tautan**: kalender sekolah atau klub yang diperbarui sendiri. Seluruh keluarga Anda melihatnya. Khusus admin.
+6. **Impor file (.ics)**: menyalin acaranya ke daili satu kali.
 
-![Bagian Kalender ponsel di pengaturan kalender](calendar-phone-calendars)
+![Lembar Tambah kalender dengan Kalender Apple, Google Calendar, Berlangganan lewat tautan, dan Impor file (.ics).](calendar-other-calendars)
 
-> Note: Kalender ini tetap di ponsel ini. Tidak ada yang diunggah, dan anggota keluarga lain tidak melihatnya.
+Semuanya tercantum di bawah **Kalender lain**. Kalender ponsel bertanda **Hanya kamu**, tautan bertanda **Keluarga**. Ketuk baris ponsel untuk mengubah pilihan Anda. Untuk melepasnya, ketuk **⋮** → **Hapus**. daili bertanya dulu. Tidak ada yang terhapus di ponsel Anda, dan kalau ditambahkan lagi, pilihan Anda kembali.
+
+> Note: Kalender ponsel tetap di ponsel ini: tidak ada yang diunggah, dan keluarga Anda tidak melihatnya.

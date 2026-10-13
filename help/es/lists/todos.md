@@ -3,7 +3,7 @@ id: lists-todos
 title: Listas de tareas
 summary: Listas de tareas compartidas para la casa, los recados y las cosas del colegio. Marca tareas y mira quién hace qué.
 keywords: tarea, tareas, pendientes, tareas de casa, recados, checklist, hogar, marcar, hecho, lista
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Como una lista de la compra, pero una tarea también puede tener una persona, una fecha límite y un recordatorio.
 
@@ -15,6 +15,8 @@ Como una lista de la compra, pero una tarea también puede tener una persona, un
 4. ¿Hecho? Toca la casilla delante de la tarea. Baja a **Listos**.
 5. Para ordenar la lista, toca **⋯** arriba y luego **Agrupar por**. Elige **Fecha límite**, **Persona** o **Categoría**.
 
-En una lista compartida, el candado a la derecha de la barra para añadir, justo antes de la flecha de enviar, hace privadas tus próximas tareas hasta que salgas de la lista. Abierto es desactivado, cerrado es activado.
+Termina una lista o todas las tareas de Hoy, y puede que Minzi lo celebre.
+
+En una lista compartida, el candado junto a la flecha de enviar hace privadas tus próximas tareas hasta que salgas de la lista. Cerrado es activado.
 
 > Note: **Agrupar por** se guarda solo en este teléfono.

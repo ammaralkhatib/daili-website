@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Gjentakende hendelser
 summary: La en hendelse gjenta seg hver dag, uke, måned eller år, og endre én dag eller hele serien.
 keywords: gjenta, gjentakende, tilbakevendende, hver uke, ukentlig, daglig, månedlig, årlig, serie, rutine
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Svømming hver tirsdag? Legg det til én gang, og la det gjenta seg.
 
@@ -15,6 +15,8 @@ Svømming hver tirsdag? Legg det til én gang, og la det gjenta seg.
 4. Behold **Aldri** under **Slutter**, eller velg **På dato**.
 5. Lukk arket, og trykk på **Lagre**.
 
-Endrer du en gjentakende hendelse? Gjør endringene først, og trykk på **Lagre**. Velg så **Bare denne hendelsen**, **Denne og følgende hendelser** eller **Alle hendelser**. Sletter du en? Trykk på **Slett**, og velg på samme måte.
+Endrer eller sletter du en? Trykk på **Lagre** eller **Slett**, og velg **Bare denne hendelsen**, **Denne og følgende hendelser** eller **Alle hendelser**.
 
-> Note: Et valg som ikke kan ta endringen din, er grået ut, med grunnen. Et nytt klokkeslett kan ikke gjelde **Alle hendelser**. Personene under **For** hører til hele serien. Derfor kan ikke endringer i dem, i gjentakelse, **Hele dagen**, **Privat hendelse** eller ekstra påminnelser være **Bare denne hendelsen**.
+Andre personer én dag? Åpne den dagen, endre **For**, trykk på **Lagre**, og velg **Bare denne hendelsen**. Hendelsen viser da **Bare denne dagen**, og påminnelsene går til personene den dagen. Velger du seriens personer igjen, følger dagen serien.
+
+> Note: Et valg som ikke kan ta endringen din, er grået ut, med grunnen. Et nytt klokkeslett kan ikke gjelde **Alle hendelser**. Endringer i gjentakelse, **Hele dagen**, **Privat hendelse** eller ekstra påminnelser kan ikke være **Bare denne hendelsen**.

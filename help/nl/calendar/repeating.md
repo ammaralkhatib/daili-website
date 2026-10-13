@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Herhalende afspraken
 summary: Laat een afspraak elke dag, week, maand of elk jaar herhalen, en wijzig één dag of de hele reeks.
 keywords: herhalen, herhalend, terugkerend, elke week, wekelijks, dagelijks, maandelijks, jaarlijks, reeks, routine
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Elke dinsdag zwemmen? Zet het er één keer in en laat het herhalen.
 
@@ -15,6 +15,8 @@ Elke dinsdag zwemmen? Zet het er één keer in en laat het herhalen.
 4. Laat onder **Eindigt** de keuze **Nooit** staan, of kies **Op datum**.
 5. Sluit het venster en tik op **Opslaan**.
 
-Een herhalende afspraak wijzigen? Breng eerst je wijzigingen aan en tik op **Opslaan**. Kies dan **Alleen deze afspraak**, **Deze en volgende afspraken** of **Alle afspraken**. Een afspraak verwijderen? Tik op **Verwijderen** en kies op dezelfde manier.
+Eén afspraak wijzigen of verwijderen? Tik op **Opslaan** of **Verwijderen** en kies dan **Alleen deze afspraak**, **Deze en volgende afspraken** of **Alle afspraken**.
 
-> Note: Een keuze die je wijziging niet kan bevatten, is grijs, met de reden erbij. Een nieuwe tijd kan niet naar **Alle afspraken**. De mensen onder **Voor** horen bij de hele reeks. Dus wijzigingen aan hen, aan herhaling, **Hele dag**, **Privé-afspraak** of extra herinneringen kunnen niet met **Alleen deze afspraak**.
+Andere mensen op één dag? Open die dag, wijzig **Voor**, tik op **Opslaan** en kies **Alleen deze afspraak**. Bij de afspraak staat dan **Alleen deze dag**, en de herinneringen gaan naar de mensen van die dag. Kies je weer de mensen van de reeks, dan volgt die dag de reeks weer.
+
+> Note: Een keuze die je wijziging niet kan bevatten, is grijs, met de reden erbij. Een nieuwe tijd kan niet naar **Alle afspraken**. Wijzigingen aan herhaling, **Hele dag**, **Privé-afspraak** of extra herinneringen kunnen niet met **Alleen deze afspraak**.

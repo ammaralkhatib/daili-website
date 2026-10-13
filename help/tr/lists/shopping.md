@@ -3,7 +3,7 @@ id: lists-shopping
 title: Alışveriş listeleri: ekle, işaretle, temizle
 summary: Tüm ailenin paylaştığı tek bir alışveriş listesi. Öğe ekle, markette işaretle ve aldıklarını temizle.
 keywords: alışveriş, market, alışveriş listesi, satın al, işaretle, tikle, süpermarket, temizle, tamamlanan, pazar
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Ailendeki herkes aynı alışveriş listelerini görür. Biri bir öğe eklediğinde ya da işaretlediğinde herkes görür.
 
@@ -14,5 +14,7 @@ Ailendeki herkes aynı alışveriş listelerini görür. Biri bir öğe eklediğ
 3. **Miktar** değerini değiştirmek ya da **Not** eklemek için bir öğeye dokun, sonra **Kaydet** düğmesine dokun.
 4. Markette bir öğenin önündeki kutuya dokun. Öğe aşağıya, **Tamamlandı** bölümüne iner.
 5. Eve dönünce üstteki **⋯** simgesine, sonra **Tamamlananları sil** seçeneğine dokun. Ya da aynı listeyi yeniden kullanmak için **Tüm işaretleri kaldır** seçeneğine dokun.
+
+Bir bütçen varsa, son öğeyi işaretlediğinde daili tutarı bütçeye eklemeyi önerir. **⋯** → **Bütçeye ekle** seçeneğine de dokunabilirsin.
 
 > Note: Yanlış öğeyi mi işaretledin? Ekranın altındaki mesajda **Geri al** düğmesine dokun.

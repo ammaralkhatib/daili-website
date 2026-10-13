@@ -1,16 +1,16 @@
 ---
 id: meals-search-online
 title: Find opskrifter på nettet
-summary: Søg på veganske og vegetariske opskriftssider inde fra daili, og gem den, du kan lide.
+summary: Søg på opskriftssider efter en hvilken som helst ret inde fra daili, og gem den, du kan lide.
 keywords: søg, find opskrift, online, idéer, vegetarisk, vegansk, hvad skal jeg lave, inspiration, idéer til aftensmad
-translatedFrom: 2026-09-26
+translatedFrom: 2026-10-12
 ---
-Løbet tør for idéer? Søg på opskriftssider uden at forlade daili. Resultaterne kommer fra veganske og vegetariske madblogs.
+Løbet tør for idéer? Søg på opskriftssider efter en hvilken som helst ret uden at forlade daili.
 
 ![Skærmen Søg online. Feltet til det, du vil lave, er markeret med en cirkel.](meals-search-online)
 
 1. Tryk på **Opskrifter** på startskærmen, så på **+** og så på **Søg online**.
-2. Skriv, hvad du har lyst til at lave, fx lasagne, og tryk på **Søg**.
+2. Skriv, hvad du har lyst til at lave, fx lasagne, og tryk på **Søg**. **Alle** er valgt fra start. Vil du indsnævre søgningen, så tryk på **Vegansk** eller **Vegetarisk**.
 3. Tryk på et resultat. daili importerer det for dig.
 4. Tjek opskriften, og tryk på **Gem**.
 

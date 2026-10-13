@@ -7,7 +7,7 @@ keywords: feedback, contact, support, email us, bug, idea, problem, rate, review
 routes: /settings
 tryIt: /settings
 since: 1.1.0
-updated: 2026-09-24
+updated: 2026-10-12
 order: 8
 media: account-feedback
 related: notifications-help
@@ -19,6 +19,7 @@ Found a bug, or have an idea? We read every message.
 1. Open **Settings** and scroll down to **About**.
 2. Tap **Send feedback**. Your mail app opens a new email to us. Write what's on your mind and send it.
 3. Like daili? Tap **Rate Daili**. It opens daili in the App Store or Google Play.
+4. To tell a friend, tap **Share Daili**. It opens your share menu with a short message and a link to daili.
 
 The email already has your app version, your phone's system and your language at the bottom. That helps us answer faster.
 

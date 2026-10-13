@@ -3,7 +3,7 @@ id: habits-minzi
 title: Energi, Minzis turer og postkort
 summary: Hver avhaking fyller Minzis energilinje. Når den er full, drar hun på tur, og et postkort kommer hjem.
 keywords: minzi, katt, energi, tur, postkort, familiens katt, gi katten nytt navn, energilinje, belønning, kjæledyr
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Minzi er familiens katt. Hun bor i rommet sitt på skjermen **Vaner**, der hun sover, sitter og ser på når du haker av.
 
@@ -15,5 +15,7 @@ Minzi er familiens katt. Hun bor i rommet sitt på skjermen **Vaner**, der hun s
 4. Trykk på **Minzi** nederst for å se alle **Postkort**, turene hennes og familiens rekke.
 
 Vil du gi katten et annet navn, trykker du på **Gi nytt navn** på den skjermen.
+
+Minzi dukker også opp utenfor **Vaner**, men bare når du blir ferdig med en hel liste eller alle oppgavene på skjermen I dag.
 
 > Note: Hver person tjener energi én gang per vane per dag. Private vaner og hviledager gir ingen energi.

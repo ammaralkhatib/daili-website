@@ -3,7 +3,7 @@ id: account-feedback
 title: Kirim masukan atau beri nilai daili
 summary: Tulis ke kami langsung dari aplikasi, atau beri nilai di App Store atau Google Play.
 keywords: masukan, kontak, dukungan, kirim email, bug, ide, masalah, beri nilai, ulasan, bintang, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Menemukan bug, atau punya ide? Kami membaca setiap pesan.
 
@@ -12,6 +12,7 @@ Menemukan bug, atau punya ide? Kami membaca setiap pesan.
 1. Buka **Pengaturan** dan gulir ke bawah ke **Tentang**.
 2. Ketuk **Kirim masukan**. Aplikasi email Anda membuka email baru untuk kami. Tulis apa yang ada di pikiran Anda dan kirim.
 3. Suka daili? Ketuk **Beri nilai Daili**. Ini membuka daili di App Store atau Google Play.
+4. Untuk memberi tahu teman, ketuk **Bagikan Daili**. Menu berbagi Anda terbuka dengan pesan singkat dan tautan ke daili.
 
 Email itu sudah berisi versi aplikasi, sistem ponsel, dan bahasa Anda di bagian bawah. Itu membantu kami menjawab lebih cepat.
 

@@ -3,7 +3,7 @@ id: account-feedback
 title: Send feedback, eller bedøm daili
 summary: Skriv til os direkte fra appen, eller giv en bedømmelse i App Store eller Google Play.
 keywords: feedback, kontakt, support, skriv til os, fejl, idé, problem, bedøm, anmeldelse, stjerner, app store, play store
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
 Har du fundet en fejl eller fået en idé? Vi læser alle beskeder.
 
@@ -12,6 +12,7 @@ Har du fundet en fejl eller fået en idé? Vi læser alle beskeder.
 1. Åbn **Indstillinger**, og rul ned til **Om Daili**.
 2. Tryk på **Send feedback**. Din mailapp åbner en ny e-mail til os. Skriv, hvad du har på hjerte, og send den.
 3. Kan du lide daili? Tryk på **Bedøm Daili**. Det åbner daili i App Store eller Google Play.
+4. Vil du fortælle en ven om daili, så tryk på **Del Daili**. Det åbner din delemenu med en kort besked og et link til daili.
 
 E-mailen har allerede din appversion, telefonens system og dit sprog nederst. Det hjælper os med at svare hurtigere.
 

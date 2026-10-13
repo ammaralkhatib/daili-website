@@ -3,7 +3,7 @@ id: lists-todos
 title: Opgavelister
 summary: Fælles opgavelister til husarbejde, ærinder og skoleting. Sæt flueben ved opgaver, og se, hvem der gør hvad.
 keywords: opgave, to-do, gøremål, pligter, ærinder, tjekliste, husholdning, flueben, færdig, liste
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Som en indkøbsliste, men en opgave kan også have en person, en forfaldsdato og en påmindelse.
 
@@ -15,6 +15,8 @@ Som en indkøbsliste, men en opgave kan også have en person, en forfaldsdato og
 4. Færdig? Tryk på feltet foran opgaven. Den flytter ned under **Klaret**.
 5. Vil du sortere listen, så tryk på **⋯** øverst og så på **Gruppér efter**. Vælg **Forfaldsdato**, **Person** eller **Kategori**.
 
-I en fælles liste gør låsen til højre i tilføjelsesfeltet, lige før sendepilen, dine næste opgaver private, indtil du forlader listen. Åben betyder fra, lukket betyder til.
+Bliv færdig med en liste eller alle opgaver i I dag, og Minzi jubler måske.
+
+I en fælles liste gør låsen ved sendepilen dine næste opgaver private, indtil du forlader listen. Lukket betyder til.
 
 > Note: **Gruppér efter** gemmes kun på denne telefon.

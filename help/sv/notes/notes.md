@@ -5,18 +5,20 @@ summary: Skriv en anteckning eller dela en länk från vilken app som helst. Ant
 keywords: anteckning, anteckningar, snabbanteckning, länk, dela, checklista, tagg, filter, sök, påminnelse, nyligen raderade, sammanfatta
 tipTitle: Dela en länk till daili för att spara den
 tipBody: Dela en video, ett inlägg eller en sida från vilken app som helst till daili – det blir en anteckning, privat tills du delar den.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-12
 ---
-En anteckning är en **Titel**, text eller båda. Punktlistor och checklistor fungerar: tryck på en ruta för att bocka av den. Inga mappar.
+En anteckning är en **Titel**, text eller båda, med punktlistor och checklistor.
 
 ![Startskärmen. Rutan Anteckningar är inringad.](notes-tile)
 
-1. Tryck på **Anteckningar** på startskärmen, sedan på **+** eller en knapp längst ner: bild, röst (spelar in direkt), video, länk.
-2. Skriv och tryck på **Spara**. Stänger du en osparad anteckning frågar daili först.
+1. Tryck på **Anteckningar** på startskärmen, sedan på **+** eller en knapp längst ner: bild, röst, video, länk, teckning.
+2. Skriv och tryck på **Spara**.
+
+Anteckningar öppnas som ett rutnät, med stora bilder och teckningar och ramar i taggarnas färger. Knappen högst upp byter till en lista.
 
 Snabbare: widgeten **Snabbanteckning**, iPhones Åtgärdsknapp eller Dela → **daili** → **Spara** från vilken app som helst.
 
-![En ny anteckning med knapparna Foto, Röst, Video och Länk. Raden som visar vem som kan se den är inringad.](notes-new)
+![En ny anteckning med knapparna Foto, Röst, Video, Länk och Rita. Raden som visar vem som kan se den är inringad.](notes-new)
 
 Ovanför tangentbordet: taggar, en påminnelse (bara du får den) och vem som ser anteckningen: **Bara jag** (standard), **Hela familjen** eller **Välj medlemmar**. **Skanna länk** läser en webbadress från ett foto.
 
@@ -28,4 +30,4 @@ Sök i eller filtrera listan. Raderade anteckningar ligger kvar i 30 dagar under
 
 Under **Daili Plus** i en anteckning använder **Gör en händelse, uppgift eller inköpslista av det här** och **Sammanfatta** (video, webbsida eller lång anteckning) en AI-åtgärd var.
 
-> Note: Offline väntar en ny anteckning och skickas av sig själv senare.
+> Note: Offline skickas nya anteckningar av sig själva senare.

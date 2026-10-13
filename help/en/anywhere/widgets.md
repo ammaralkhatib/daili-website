@@ -6,7 +6,7 @@ summary: See your plans, tick off to-dos and shopping, or add something new — 
 keywords: widget, widgets, home screen, lock screen, iphone, android, habits widget, dinner widget, quick add, birthday countdown, tick off, add widget
 routes: /
 since: 1.4.0
-updated: 2026-09-26
+updated: 2026-10-12
 order: 1
 mediaPending: hand-made screenshot of the phone home screen with daili widgets
 related: anywhere-widgets-settings, anywhere-watch, start-home, habits-minzi, notes-notes
@@ -17,7 +17,7 @@ tipPriority: 80
 checklist: 6
 checklistDoneIf: hasWidget
 ---
-daili has widgets for your calendar (**Up next**, and **Next up** with a countdown), **Shopping**, **To-dos**, **Habits** with Minzi, **Birthday countdown**, **Tonight's dinner**, **Quick add** and **Quick note**.
+daili has widgets for your calendar (**Calendar**, and **Next up** with a countdown), **Shopping**, **To-dos**, **Habits** with Minzi, **Birthday countdown**, **Tonight's dinner**, **Quick add** and **Quick note**.
 
 1. Press and hold an empty spot on your phone's home screen.
 2. On iPhone, tap **Edit**, then **Add Widget**. On Android, tap **Widgets**.

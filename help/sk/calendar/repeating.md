@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Opakované udalosti
 summary: Nastav, aby sa udalosť opakovala každý deň, týždeň, mesiac alebo rok, a zmeň jeden deň alebo celú sériu.
 keywords: opakovať, opakovanie, opakovaná, každý týždeň, týždenne, denne, mesačne, ročne, séria, rutina
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-12
 ---
 Plávanie každý utorok? Pridaj ho raz a nechaj ho opakovať.
 
@@ -15,6 +15,8 @@ Plávanie každý utorok? Pridaj ho raz a nechaj ho opakovať.
 4. V časti **Končí** nechaj **Nikdy** alebo vyber **K dátumu**.
 5. Zavri panel a ťukni na **Uložiť**.
 
-Meníš opakovanú udalosť? Najprv urob zmeny a ťukni na **Uložiť**. Potom vyber **Len túto udalosť**, **Túto a nasledujúce udalosti** alebo **Všetky udalosti**. Chceš ju vymazať? Ťukni na **Vymazať** a vyber rovnako.
+Meníš alebo mažeš opakovanú udalosť? Ťukni na **Uložiť** alebo **Vymazať** a potom vyber **Len túto udalosť**, **Túto a nasledujúce udalosti** alebo **Všetky udalosti**.
 
-> Note: Voľba, ktorá tvoju zmenu nepojme, je sivá a s dôvodom. Nový čas nemôže ísť na **Všetky udalosti**. Ľudia v časti **Pre** patria celej sérii. Preto zmeny ľudí, opakovania, **Celý deň**, **Súkromná udalosť** alebo ďalších pripomienok nemôžu byť **Len túto udalosť**.
+Iní ľudia v jeden deň? Otvor udalosť v ten deň, zmeň **Pre**, ťukni na **Uložiť** a vyber **Len túto udalosť**. Udalosť potom ukazuje **Len tento deň** a jej pripomienky dostanú ľudia toho dňa. Keď znova vyberieš ľudí série, deň sa zase riadi sériou.
+
+> Note: Voľba, ktorá tvoju zmenu nepojme, je sivá a s dôvodom. Nový čas nemôže ísť na **Všetky udalosti**. Zmeny opakovania, **Celý deň**, **Súkromná udalosť** alebo ďalších pripomienok nemôžu byť **Len túto udalosť**.

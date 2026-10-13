@@ -1,19 +1,23 @@
 ---
 id: calendar-phone-calendars
-title: Zobrazit kalendáře z telefonu v daili
-summary: Pracovní, školní nebo sportovní kalendáře vedle rodinných událostí. Vidíš je jen ty.
-keywords: kalendář v telefonu, kalendář zařízení, pracovní kalendář, ical, outlook, kalendář apple, kalendář google, soukromé
+title: Přidat další kalendáře: z telefonu, Google, odkazy a soubory
+summary: Zobraz kalendáře z telefonu nebo Google Kalendář vedle rodinných událostí, sleduj školní kalendář nebo importuj soubor.
+keywords: kalendář v telefonu, kalendář apple, google kalendář, přidat kalendář, další kalendáře, odebírat, odkaz, školní kalendář, pracovní kalendář, ics, soukromé
 tipTitle: Kalendáře z telefonu v daili
 tipBody: Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle rodinných událostí.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-12
 ---
-Kalendáře, které už máš v tomto telefonu, se můžou zobrazovat vedle událostí tvé rodiny.
+Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle událostí tvé rodiny.
 
-1. Otevři **Kalendář**.
-2. Vpravo nahoře klepni na tlačítko nastavení (ozubené kolečko).
-3. V sekci **Kalendáře v telefonu** klepni na **Připojit** a povol přístup.
-4. Zkontroluj, že je zapnuté **Zobrazit kalendáře z telefonu**, pak klepni na **Vybrat kalendáře** a vyber ty, které se mají zobrazovat.
+1. Otevři **Kalendář** a klepni vpravo nahoře na ozubené kolečko.
+2. V sekci **Další kalendáře** klepni na **Přidat kalendář**.
+3. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android): vlastní kalendáře tvého telefonu. Povol přístup a daili ukáže ty hlavní.
+4. **Google Kalendář**: jednou se přihlas a u každého kalendáře vyber, kdo ho uvidí.
+5. **Odebírat přes odkaz**: kalendář školy nebo klubu, který se sám aktualizuje. Vidí ho celá rodina. Jen pro správce.
+6. **Importovat soubor (.ics)**: jednou zkopíruje události do daili.
 
-![Sekce Kalendáře v telefonu v nastavení kalendáře](calendar-phone-calendars)
+![Panel Přidat kalendář s volbami Apple Kalendář, Google Kalendář, Odebírat přes odkaz a Importovat soubor (.ics).](calendar-other-calendars)
 
-> Note: Tyto kalendáře zůstávají v tomto telefonu. Nic se nenahrává a zbytek rodiny je nevidí.
+Najdeš je v sekci **Další kalendáře**. U telefonu je **Jen ty**, u odkazů **Rodina**. Klepnutím na řádek telefonu změníš výběr. Pokud ho chceš odebrat, klepni na **⋮** → **Odebrat**. daili se nejdřív zeptá. V telefonu se nic nesmaže, a když ho přidáš znovu, tvůj výběr se vrátí.
+
+> Note: Kalendáře z telefonu zůstávají v tomto telefonu: nic se nenahrává a tvoje rodina je nevidí.
