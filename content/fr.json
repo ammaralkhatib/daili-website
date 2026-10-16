@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Chacun voit ce qui arrive, et chacun peut y ajouter quelque chose. Événements récurrents, rappels, et votre agenda Google ou celui du téléphone juste à côté du planning familial.",
+        "benefits": [
+          {
+            "t": "Ça se répète, comme la vie",
+            "p": "Piano chaque semaine, piscine un vendredi sur deux, un bilan de santé une fois par an."
+          },
+          {
+            "t": "Des rappels pour les bonnes personnes",
+            "p": "Mettez des noms sur un événement, et le rappel leur est envoyé."
+          },
+          {
+            "t": "Vos autres agendas aussi",
+            "p": "Affichez votre agenda Google ou celui du téléphone dans Daili, à côté des événements de la famille."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Des listes de courses que toute la famille remplit, rangées par catégorie, avec vos achats habituels suggérés pendant que vous tapez.",
+        "benefits": [
+          {
+            "t": "Rangées comme le magasin",
+            "p": "Les articles se classent par catégorie : un seul passage dans les rayons suffit."
+          },
+          {
+            "t": "Des listes privées aussi",
+            "p": "Gardez une liste rien que pour vous, dans la même app."
+          },
+          {
+            "t": "Directement depuis une recette",
+            "p": "Envoyez les ingrédients d’une recette sur la liste en un geste."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Confiez une tâche à une ou plusieurs personnes, ajoutez un rappel et voyez ce qui est fait.",
+        "benefits": [
+          {
+            "t": "Pour n’importe qui",
+            "p": "Une personne, quelques-unes, ou un enfant qui n’a pas encore de téléphone."
+          },
+          {
+            "t": "Un rappel au bon moment",
+            "p": "Le jour même, ou avant."
+          },
+          {
+            "t": "Des tâches privées",
+            "p": "Certaines tâches ne sont visibles que par vous."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Notez-le en deux secondes, puis gardez-le pour vous ou partagez-le avec la famille.",
+        "benefits": [
+          {
+            "t": "Vite écrit",
+            "p": "Un titre et une note, rien d’autre."
+          },
+          {
+            "t": "Privée ou partagée",
+            "p": "Vous décidez pour chaque note."
+          },
+          {
+            "t": "Facile à retrouver",
+            "p": "Épinglez les plus importantes et filtrez-les par étiquette."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Toutes les recettes de la famille au même endroit, prêtes pour les menus et la liste de courses.",
+        "benefits": [
+          {
+            "t": "Importer une recette",
+            "p": "Depuis une page web, une vidéo YouTube ou la photo d’une page de livre de cuisine."
+          },
+          {
+            "t": "Les ingrédients sur la liste",
+            "p": "Envoyez-les sur votre liste de courses en un geste."
+          },
+          {
+            "t": "Vos propres étiquettes",
+            "p": "Classez les recettes avec les étiquettes de votre famille, comme Fête ou Sans gluten."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Petit-déjeuner, déjeuner et dîner pour la semaine, choisis parmi vos recettes ou simplement tapés.",
+        "benefits": [
+          {
+            "t": "Toute la semaine",
+            "p": "Tous les repas d’un coup d’œil."
+          },
+          {
+            "t": "À partir de vos recettes",
+            "p": "Choisissez une recette enregistrée pour n’importe quel jour."
+          },
+          {
+            "t": "Les courses, c’est fait",
+            "p": "Envoyez les ingrédients des recettes de la semaine sur votre liste de courses."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Ne ratez plus jamais un anniversaire. Daili fait le compte à rebours et vous prévient assez tôt pour vous organiser.",
+        "benefits": [
+          {
+            "t": "Tous les anniversaires au même endroit",
+            "p": "Famille, amis, grands-parents, et les anniversaires de mariage aussi."
+          },
+          {
+            "t": "Un rappel à temps",
+            "p": "Assez tôt pour trouver le cadeau."
+          },
+          {
+            "t": "Importer depuis les contacts",
+            "p": "Ajoutez les anniversaires que votre téléphone connaît déjà."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "La météo du jour là où vous planifiez la journée, en °C ou °F.",
+        "benefits": [
+          {
+            "t": "Directement sur l’écran d’accueil",
+            "p": "Pas besoin d’ouvrir une autre app."
+          },
+          {
+            "t": "Savoir quand la pluie arrive",
+            "p": "La tuile Météo indique quand la pluie commence, et les prévisions vont jusqu’à 10 jours."
+          },
+          {
+            "t": "La météo de vos événements",
+            "p": "Les événements du jour affichent le temps qu’il fera."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Gardez les papiers et photos importants à portée de main, sans les envoyer nulle part.",
+        "benefits": [
+          {
+            "t": "Uniquement sur votre téléphone",
+            "p": "Les fichiers ne vont jamais sur les serveurs de Daili, et votre famille ne peut pas les voir."
+          },
+          {
+            "t": "Rangés en dossiers",
+            "p": "Retrouvez la carte d’assurance en quelques secondes."
+          },
+          {
+            "t": "Dans la sauvegarde du téléphone",
+            "p": "La sauvegarde de votre téléphone peut les récupérer sur un nouveau téléphone."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Faites entrer toute la famille, donnez une couleur à chacun et ajoutez les enfants qui n’ont pas encore de téléphone.",
+        "benefits": [
+          {
+            "t": "Invitez en quelques secondes",
+            "p": "Un code à six chiffres, un lien ou un QR code."
+          },
+          {
+            "t": "Une couleur pour chacun",
+            "p": "Voyez d’un coup d’œil à qui est l’événement."
+          },
+          {
+            "t": "Pas qu’un seul groupe",
+            "p": "Votre famille, les grands-parents, l’équipe de foot : jusqu’à cinq avec un seul compte."
+          }
+        ],
+        "faq": []
       }
     }
   },

@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Toată lumea vede ce urmează și oricine poate adăuga ceva. Evenimente care se repetă, mementouri și calendarul tău Google sau din telefon chiar lângă planul familiei.",
+        "benefits": [
+          {
+            "t": "Se repetă cum se repetă viața",
+            "p": "Pian în fiecare săptămână, înot din două în două vineri, un control o dată pe an."
+          },
+          {
+            "t": "Mementouri pentru cine trebuie",
+            "p": "Pune nume pe un eveniment, iar mementoul ajunge la ei."
+          },
+          {
+            "t": "Și celelalte calendare",
+            "p": "Afișează calendarul Google sau pe cel din telefon în Daili, lângă evenimentele familiei."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Liste de cumpărături completate de toată familia, sortate pe categorii, cu ce ai mai cumpărat sugerat în timp ce scrii.",
+        "benefits": [
+          {
+            "t": "În ordinea din magazin",
+            "p": "Produsele intră în categorii, așa că treci prin magazin o singură dată."
+          },
+          {
+            "t": "Și liste private",
+            "p": "Păstrează o listă doar pentru tine, în aceeași aplicație."
+          },
+          {
+            "t": "Direct dintr-o rețetă",
+            "p": "Trimite ingredientele unei rețete pe listă dintr-o dată."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Dă o sarcină unei persoane sau mai multora, adaugă un memento și vezi ce s-a făcut.",
+        "benefits": [
+          {
+            "t": "Pentru oricine",
+            "p": "O persoană, câteva sau un copil care nu are încă telefon."
+          },
+          {
+            "t": "Un memento la momentul potrivit",
+            "p": "În ziua respectivă sau înainte."
+          },
+          {
+            "t": "Sarcini private",
+            "p": "Unele sarcini le vezi doar tu."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Notezi în două secunde, apoi o păstrezi pentru tine sau o partajezi cu familia.",
+        "benefits": [
+          {
+            "t": "Rapid de scris",
+            "p": "Un titlu și o notiță, atât."
+          },
+          {
+            "t": "Privată sau partajată",
+            "p": "Tu decizi pentru fiecare notiță."
+          },
+          {
+            "t": "O găsești din nou",
+            "p": "Fixează-le pe cele importante și filtrează-le după etichetă."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Toate rețetele familiei într-un singur loc, gata pentru meniu și lista de cumpărături.",
+        "benefits": [
+          {
+            "t": "Importă o rețetă",
+            "p": "Dintr-o pagină web, un video YouTube sau o poză cu pagina unei cărți de bucate."
+          },
+          {
+            "t": "Ingredientele pe listă",
+            "p": "Trimite-le pe lista de cumpărături dintr-o dată."
+          },
+          {
+            "t": "Etichetele tale",
+            "p": "Sortează rețetele cu etichetele familiei tale, de exemplu Petrecere sau Fără gluten."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Micul dejun, prânzul și cina pentru toată săptămâna, din rețetele tale sau scrise pur și simplu.",
+        "benefits": [
+          {
+            "t": "Toată săptămâna",
+            "p": "Toate mesele dintr-o privire."
+          },
+          {
+            "t": "Din rețetele tale",
+            "p": "Alege o rețetă salvată pentru orice zi."
+          },
+          {
+            "t": "Cumpărăturile, rezolvate",
+            "p": "Trimite ingredientele rețetelor din săptămână pe lista de cumpărături."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Nu mai uita nicio zi de naștere. Daili numără zilele și îți amintește destul de devreme ca să te pregătești.",
+        "benefits": [
+          {
+            "t": "Toate zilele de naștere într-un loc",
+            "p": "Familie, prieteni, bunici și aniversări."
+          },
+          {
+            "t": "Un memento la timp",
+            "p": "Destul de devreme ca să iei cadoul."
+          },
+          {
+            "t": "Importă din contacte",
+            "p": "Adaugă zilele de naștere pe care telefonul le știe deja."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Vremea zilei chiar acolo unde îți planifici ziua, în °C sau °F.",
+        "benefits": [
+          {
+            "t": "Direct pe ecranul principal",
+            "p": "Fără să mai deschizi altă aplicație."
+          },
+          {
+            "t": "Știi când vine ploaia",
+            "p": "Cardul Vremea îți spune când începe ploaia, iar prognoza merge 10 zile înainte."
+          },
+          {
+            "t": "Vremea pentru evenimentele tale",
+            "p": "Evenimentele de azi arată ce vreme le așteaptă."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Ține actele și pozele importante la îndemână, fără să le încarci nicăieri.",
+        "benefits": [
+          {
+            "t": "Doar pe telefonul tău",
+            "p": "Fișierele nu ajung niciodată pe serverele Daili, iar familia ta nu le poate vedea."
+          },
+          {
+            "t": "Sortate în dosare",
+            "p": "Găsești cardul de asigurare în câteva secunde."
+          },
+          {
+            "t": "În backupul telefonului",
+            "p": "Backupul telefonului le poate aduce înapoi pe un telefon nou."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Adu toată familia, dă-i fiecăruia o culoare și adaugă copiii care încă nu au telefon.",
+        "benefits": [
+          {
+            "t": "Inviți în câteva secunde",
+            "p": "Un cod din șase cifre, un link sau un cod QR."
+          },
+          {
+            "t": "O culoare pentru fiecare",
+            "p": "Vezi dintr-o privire al cui e evenimentul."
+          },
+          {
+            "t": "Mai multe grupuri",
+            "p": "Familia ta, bunicii, echipa de fotbal: până la cinci cu un singur cont."
+          }
+        ],
+        "faq": []
       }
     }
   },

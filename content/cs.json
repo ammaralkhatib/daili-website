@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Všichni vidí, co je čeká, a každý může něco přidat. Opakované události, připomínky a váš kalendář Google nebo kalendář z telefonu hned vedle rodinného plánu.",
+        "benefits": [
+          {
+            "t": "Opakuje se jako život",
+            "p": "Klavír každý týden, plavání každý druhý pátek, prohlídka u lékaře jednou za rok."
+          },
+          {
+            "t": "Připomínky pro ty správné",
+            "p": "Přidejte k události jména a připomínka přijde právě jim."
+          },
+          {
+            "t": "I vaše další kalendáře",
+            "p": "Zobrazte kalendář Google nebo kalendář z telefonu v Daili, vedle rodinných událostí."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Nákupní seznamy, do kterých píše celá rodina, rozdělené do kategorií a s návrhy věcí, které jste už kupovali.",
+        "benefits": [
+          {
+            "t": "Seřazené jako v obchodě",
+            "p": "Položky se zařadí do kategorií, takže obchodem projdete jen jednou."
+          },
+          {
+            "t": "I soukromé seznamy",
+            "p": "Mějte seznam jen pro sebe, ve stejné aplikaci."
+          },
+          {
+            "t": "Rovnou z receptu",
+            "p": "Pošlete suroviny z receptu do seznamu najednou."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Dejte úkol jednomu člověku nebo několika, přidejte připomínku a uvidíte, co je hotové.",
+        "benefits": [
+          {
+            "t": "Pro kohokoli",
+            "p": "Jeden člověk, pár lidí, nebo dítě bez vlastního telefonu."
+          },
+          {
+            "t": "Připomínka ve správnou chvíli",
+            "p": "V den úkolu, nebo ještě předtím."
+          },
+          {
+            "t": "Soukromé úkoly",
+            "p": "Některé úkoly vidíte jen vy."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Zapište si to za dvě vteřiny a pak si to nechte pro sebe, nebo to sdílejte s rodinou.",
+        "benefits": [
+          {
+            "t": "Rychle zapsané",
+            "p": "Nadpis a poznámka, nic víc nepřekáží."
+          },
+          {
+            "t": "Soukromé, nebo sdílené",
+            "p": "Rozhodujete u každé poznámky zvlášť."
+          },
+          {
+            "t": "Snadno je najdete",
+            "p": "Důležité připněte a filtrujte je podle štítků."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Všechny rodinné recepty na jednom místě, připravené pro jídelníček i nákupní seznam.",
+        "benefits": [
+          {
+            "t": "Import receptu",
+            "p": "Z webové stránky, z videa na YouTube nebo z fotky stránky kuchařky."
+          },
+          {
+            "t": "Suroviny do seznamu",
+            "p": "Pošlete je do nákupního seznamu najednou."
+          },
+          {
+            "t": "Vlastní štítky",
+            "p": "Třiďte recepty podle vlastních rodinných štítků, třeba Párty nebo Bez lepku."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Snídaně, oběd a večeře na celý týden, z vašich receptů, nebo prostě napsané.",
+        "benefits": [
+          {
+            "t": "Celý týden",
+            "p": "Všechna jídla na první pohled."
+          },
+          {
+            "t": "Z vašich receptů",
+            "p": "Vyberte uložený recept na kterýkoli den."
+          },
+          {
+            "t": "Nákup vyřešený",
+            "p": "Pošlete suroviny z receptů na celý týden do nákupního seznamu."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Už nikdy nezapomenete na narozeniny. Daili odpočítává dny a připomene je dost brzy na to, abyste se mohli připravit.",
+        "benefits": [
+          {
+            "t": "Všechny narozeniny na jednom místě",
+            "p": "Rodina, přátelé, prarodiče a také výročí."
+          },
+          {
+            "t": "Připomínka včas",
+            "p": "Dost brzy na to, abyste stihli koupit dárek."
+          },
+          {
+            "t": "Import z kontaktů",
+            "p": "Přidejte narozeniny, které už váš telefon zná."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Dnešní počasí přímo tam, kde plánujete den, ve °C nebo °F.",
+        "benefits": [
+          {
+            "t": "Přímo na úvodní obrazovce",
+            "p": "Žádnou další aplikaci nemusíte otevírat."
+          },
+          {
+            "t": "Víte, kdy začne pršet",
+            "p": "Dlaždice Počasí ukáže, kdy začne déšť, a předpověď sahá 10 dní dopředu."
+          },
+          {
+            "t": "Počasí pro vaše události",
+            "p": "U dnešních událostí uvidíte, jaké počasí je čeká."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Důležité dokumenty a fotky mějte po ruce, aniž byste je kamkoli nahrávali.",
+        "benefits": [
+          {
+            "t": "Jen ve vašem telefonu",
+            "p": "Soubory se nikdy nedostanou na servery Daili a vaše rodina je nevidí."
+          },
+          {
+            "t": "Ve složkách",
+            "p": "Kartu pojišťovny najdete během pár vteřin."
+          },
+          {
+            "t": "V záloze telefonu",
+            "p": "Záloha vašeho telefonu je umí obnovit v novém telefonu."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Přiveďte celou rodinu, dejte každému barvu a přidejte i děti, které ještě nemají telefon.",
+        "benefits": [
+          {
+            "t": "Pozvánka za pár vteřin",
+            "p": "Šestimístný kód, odkaz nebo QR kód."
+          },
+          {
+            "t": "Barva pro každého",
+            "p": "Na první pohled uvidíte, čí je to událost."
+          },
+          {
+            "t": "Víc než jedna skupina",
+            "p": "Vaše rodina, prarodiče, fotbalový tým: až pět s jedním účtem."
+          }
+        ],
+        "faq": []
       }
     }
   },

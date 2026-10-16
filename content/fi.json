@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Kaikki näkevät, mitä on tulossa, ja kaikki voivat lisätä menoja. Toistuvat tapahtumat, muistutukset ja Google- tai puhelimesi kalenteri perheen suunnitelman vieressä.",
+        "benefits": [
+          {
+            "t": "Toistuu niin kuin elämäkin",
+            "p": "Piano joka viikko, uinti joka toinen perjantai, tarkastus kerran vuodessa."
+          },
+          {
+            "t": "Muistutukset oikeille ihmisille",
+            "p": "Lisää tapahtumaan nimet, niin muistutus menee heille."
+          },
+          {
+            "t": "Myös muut kalenterisi",
+            "p": "Näytä Google- tai puhelimesi kalenteri Dailissa perheen tapahtumien vieressä."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Ostoslistat, joita koko perhe täydentää, jaoteltuina luokkiin, ja aiemmin ostetut tuotteet ehdotuksina kirjoittaessa.",
+        "benefits": [
+          {
+            "t": "Järjestyksessä kuin kaupassa",
+            "p": "Tuotteet menevät luokkiin, joten kuljet kaupan läpi kerran."
+          },
+          {
+            "t": "Myös omat listat",
+            "p": "Pidä lista vain itsellesi samassa sovelluksessa."
+          },
+          {
+            "t": "Suoraan reseptistä",
+            "p": "Lähetä reseptin ainekset listalle kerralla."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Anna tehtävä yhdelle tai usealle, lisää muistutus ja näe, mitä on tehty.",
+        "benefits": [
+          {
+            "t": "Kenelle tahansa",
+            "p": "Yhdelle, muutamalle tai lapselle, jolla ei ole omaa puhelinta."
+          },
+          {
+            "t": "Muistutus oikeaan aikaan",
+            "p": "Muistutus samana päivänä tai jo ennen."
+          },
+          {
+            "t": "Omat tehtävät",
+            "p": "Jotkin tehtävät näet vain sinä."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Kirjoita se ylös kahdessa sekunnissa ja pidä se itselläsi tai jaa se perheen kanssa.",
+        "benefits": [
+          {
+            "t": "Nopea kirjoittaa",
+            "p": "Otsikko ja muistiinpano, ei mitään ylimääräistä."
+          },
+          {
+            "t": "Oma tai jaettu",
+            "p": "Sinä päätät jokaisen muistiinpanon kohdalla."
+          },
+          {
+            "t": "Löydä se uudelleen",
+            "p": "Kiinnitä tärkeät ja suodata tunnisteen mukaan."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Kaikki perheen reseptit yhdessä paikassa, valmiina ruokalistaan ja ostoslistaan.",
+        "benefits": [
+          {
+            "t": "Tuo resepti",
+            "p": "Verkkosivulta, YouTube-videosta tai kuvasta keittokirjan sivusta."
+          },
+          {
+            "t": "Ainekset listalle",
+            "p": "Lähetä ne ostoslistalle kerralla."
+          },
+          {
+            "t": "Omat tunnisteet",
+            "p": "Järjestä reseptit perheen omilla tunnisteilla, kuten Juhlat tai Gluteeniton."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Viikon aamiaiset, lounaat ja päivälliset resepteistänne tai vain kirjoitettuina.",
+        "benefits": [
+          {
+            "t": "Koko viikko",
+            "p": "Näe kaikki ateriat yhdellä silmäyksellä."
+          },
+          {
+            "t": "Resepteistänne",
+            "p": "Valitse tallennettu resepti mille päivälle tahansa."
+          },
+          {
+            "t": "Ostokset hoidettu",
+            "p": "Lähetä viikon reseptien ainekset ostoslistalle."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Älä enää koskaan unohda syntymäpäivää. Daili laskee päiviä ja muistuttaa ajoissa, jotta ehdit suunnitella.",
+        "benefits": [
+          {
+            "t": "Kaikki syntymäpäivät yhdessä paikassa",
+            "p": "Perhe, ystävät, isovanhemmat ja myös vuosipäivät."
+          },
+          {
+            "t": "Muistutus ajoissa",
+            "p": "Tarpeeksi aikaisin lahjan hankkimiseen."
+          },
+          {
+            "t": "Tuo yhteystiedoista",
+            "p": "Lisää syntymäpäivät, jotka puhelimesi jo tietää."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Päivän sää juuri siellä, missä suunnittelet päivän, °C tai °F.",
+        "benefits": [
+          {
+            "t": "Suoraan aloitusnäkymässä",
+            "p": "Ei toista sovellusta avattavaksi."
+          },
+          {
+            "t": "Tiedä, milloin sade alkaa",
+            "p": "Sää-ruutu kertoo, milloin sade alkaa, ja ennuste ulottuu 10 päivän päähän."
+          },
+          {
+            "t": "Sää tapahtumillesi",
+            "p": "Tämän päivän tapahtumat näyttävät, millainen sää niillä on."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Pidä tärkeät paperit ja kuvat lähellä lataamatta niitä minnekään.",
+        "benefits": [
+          {
+            "t": "Vain puhelimessasi",
+            "p": "Tiedostot eivät koskaan päädy Dailin palvelimille, eikä perheesi näe niitä."
+          },
+          {
+            "t": "Kansioihin järjestettynä",
+            "p": "Löydä vakuutuskortti sekunneissa."
+          },
+          {
+            "t": "Puhelimesi varmuuskopiossa",
+            "p": "Puhelimesi oma varmuuskopio voi palauttaa ne uuteen puhelimeen."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Tuo koko perhe mukaan, anna kaikille oma väri ja lisää lapset, joilla ei vielä ole puhelinta.",
+        "benefits": [
+          {
+            "t": "Kutsu sekunneissa",
+            "p": "Kuusinumeroinen koodi, linkki tai QR-koodi."
+          },
+          {
+            "t": "Jokaiselle oma väri",
+            "p": "Näe yhdellä silmäyksellä, kenen tapahtuma on kyseessä."
+          },
+          {
+            "t": "Useampi kuin yksi ryhmä",
+            "p": "Perhe, isovanhemmat, jalkapallojoukkue: jopa viisi yhdellä tilillä."
+          }
+        ],
+        "faq": []
       }
     }
   },

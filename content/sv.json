@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Alla ser vad som är på gång, och alla kan lägga till. Återkommande händelser, påminnelser och din Google- eller telefonkalender direkt bredvid familjens planering.",
+        "benefits": [
+          {
+            "t": "Upprepas som livet gör",
+            "p": "Piano varje vecka, simning varannan fredag, en kontroll en gång om året."
+          },
+          {
+            "t": "Påminnelser till rätt personer",
+            "p": "Sätt namn på en händelse, så går påminnelsen till dem."
+          },
+          {
+            "t": "Dina andra kalendrar också",
+            "p": "Visa din Google- eller telefonkalender i Daili, bredvid familjens händelser."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Inköpslistor som hela familjen fyller i, sorterade i kategorier, med det ni har köpt förut som förslag medan du skriver.",
+        "benefits": [
+          {
+            "t": "Sorterat som i affären",
+            "p": "Varorna hamnar i kategorier, så du går genom affären en gång."
+          },
+          {
+            "t": "Privata listor också",
+            "p": "Ha en lista bara för dig själv, i samma app."
+          },
+          {
+            "t": "Direkt från ett recept",
+            "p": "Skicka ett recepts ingredienser till listan på en gång."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Ge en uppgift till en person eller till flera, lägg till en påminnelse och se vad som är klart.",
+        "benefits": [
+          {
+            "t": "Ge den till vem som helst",
+            "p": "En person, några stycken eller ett barn utan egen telefon."
+          },
+          {
+            "t": "En knuff i rätt tid",
+            "p": "En påminnelse på dagen, eller innan."
+          },
+          {
+            "t": "Privata uppgifter",
+            "p": "Vissa uppgifter ser bara du."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Skriv ner det på två sekunder, och behåll det för dig själv eller dela det med familjen.",
+        "benefits": [
+          {
+            "t": "Snabbt att skriva",
+            "p": "En rubrik och en anteckning, inget som är i vägen."
+          },
+          {
+            "t": "Privat eller delad",
+            "p": "Du bestämmer för varje anteckning."
+          },
+          {
+            "t": "Hitta den igen",
+            "p": "Fäst de viktiga och filtrera dem efter tagg."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Alla familjens recept på ett ställe, redo för matsedeln och inköpslistan.",
+        "benefits": [
+          {
+            "t": "Importera ett recept",
+            "p": "Från en webbsida, en YouTube-video eller ett foto av en sida i en kokbok."
+          },
+          {
+            "t": "Ingredienserna till listan",
+            "p": "Skicka dem till inköpslistan på en gång."
+          },
+          {
+            "t": "Egna taggar",
+            "p": "Sortera recepten med familjens egna etiketter, som Fest eller Glutenfritt."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Frukost, lunch och middag för veckan, från era recept eller bara inskrivet.",
+        "benefits": [
+          {
+            "t": "Hela veckan",
+            "p": "Se alla måltider på en gång."
+          },
+          {
+            "t": "Från era recept",
+            "p": "Välj ett sparat recept för vilken dag som helst."
+          },
+          {
+            "t": "Inköpen klara",
+            "p": "Skicka ingredienserna från veckans recept till inköpslistan."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Missa aldrig en födelsedag igen. Daili räknar ner och påminner dig i god tid så att du hinner planera.",
+        "benefits": [
+          {
+            "t": "Alla födelsedagar på ett ställe",
+            "p": "Familj, vänner, mor- och farföräldrar, och bemärkelsedagar också."
+          },
+          {
+            "t": "En påminnelse i tid",
+            "p": "Tillräckligt tidigt för att hinna köpa present."
+          },
+          {
+            "t": "Importera från kontakter",
+            "p": "Lägg till födelsedagarna som telefonen redan känner till."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Dagens väder precis där du planerar dagen, i °C eller °F.",
+        "benefits": [
+          {
+            "t": "Direkt på startskärmen",
+            "p": "Ingen annan app att öppna."
+          },
+          {
+            "t": "Vet när regnet kommer",
+            "p": "Väder-rutan säger när regnet börjar, och prognosen sträcker sig 10 dagar framåt."
+          },
+          {
+            "t": "Väder för dina händelser",
+            "p": "Dagens händelser visar vilket väder de får."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Ha viktiga papper och foton nära till hands, utan att ladda upp dem någonstans.",
+        "benefits": [
+          {
+            "t": "Bara på din telefon",
+            "p": "Filerna går aldrig till Dailis servrar, och familjen kan inte se dem."
+          },
+          {
+            "t": "Sorterat i mappar",
+            "p": "Hitta försäkringskortet på några sekunder."
+          },
+          {
+            "t": "I telefonens säkerhetskopia",
+            "p": "Telefonens egen säkerhetskopia kan föra över dem till en ny telefon."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Ta med hela familjen, ge alla en färg och lägg till barnen som inte har en egen telefon än.",
+        "benefits": [
+          {
+            "t": "Bjud in på några sekunder",
+            "p": "En sexsiffrig kod, en länk eller en QR-kod."
+          },
+          {
+            "t": "En färg för alla",
+            "p": "Se direkt vems händelse det är."
+          },
+          {
+            "t": "Mer än en grupp",
+            "p": "Familjen, mor- och farföräldrarna, fotbollslaget: upp till fem med ett konto."
+          }
+        ],
+        "faq": []
       }
     }
   },

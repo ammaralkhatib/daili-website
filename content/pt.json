@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Todo mundo vê o que vem por aí, e todo mundo pode adicionar. Eventos que se repetem, lembretes e sua agenda do Google ou do celular ao lado do plano da família.",
+        "benefits": [
+          {
+            "t": "Repete como a vida",
+            "p": "Piano toda semana, natação a cada duas sextas, um check-up uma vez por ano."
+          },
+          {
+            "t": "Lembretes para as pessoas certas",
+            "p": "Coloque nomes num evento, e o lembrete vai para elas."
+          },
+          {
+            "t": "Suas outras agendas também",
+            "p": "Mostre sua agenda do Google ou do celular dentro do Daili, ao lado dos eventos da família."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Listas de compras que a família toda preenche, organizadas por categoria, com o que você já comprou antes sugerido enquanto digita.",
+        "benefits": [
+          {
+            "t": "Na ordem do mercado",
+            "p": "Os itens caem nas categorias, e você passa pelo mercado uma vez só."
+          },
+          {
+            "t": "Listas privadas também",
+            "p": "Tenha uma lista só sua, no mesmo app."
+          },
+          {
+            "t": "Direto de uma receita",
+            "p": "Mande os ingredientes de uma receita para a lista de uma vez."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Dê uma tarefa a uma pessoa ou a várias, adicione um lembrete e veja o que já foi feito.",
+        "benefits": [
+          {
+            "t": "Para qualquer pessoa",
+            "p": "Uma pessoa, algumas, ou uma criança que não tem celular."
+          },
+          {
+            "t": "Um toque na hora certa",
+            "p": "Um lembrete no dia, ou antes."
+          },
+          {
+            "t": "Tarefas privadas",
+            "p": "Algumas tarefas só você vê."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Anote em dois segundos e depois guarde só para você ou compartilhe com a família.",
+        "benefits": [
+          {
+            "t": "Rápido de escrever",
+            "p": "Um título e uma nota, nada no caminho."
+          },
+          {
+            "t": "Privada ou compartilhada",
+            "p": "Você decide em cada nota."
+          },
+          {
+            "t": "Fácil de achar",
+            "p": "Fixe as importantes e filtre por etiqueta."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Todas as receitas da família num só lugar, prontas para o cardápio e a lista de compras.",
+        "benefits": [
+          {
+            "t": "Importe uma receita",
+            "p": "De uma página da web, de um vídeo do YouTube ou da foto de uma página de livro de receitas."
+          },
+          {
+            "t": "Ingredientes na lista",
+            "p": "Mande todos para a sua lista de compras de uma vez."
+          },
+          {
+            "t": "Suas próprias etiquetas",
+            "p": "Organize as receitas com as etiquetas da sua família, como Festa ou Sem glúten."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Café da manhã, almoço e jantar da semana, a partir das suas receitas ou digitados na hora.",
+        "benefits": [
+          {
+            "t": "A semana inteira",
+            "p": "Todas as refeições num relance."
+          },
+          {
+            "t": "Das suas receitas",
+            "p": "Escolha uma receita salva para qualquer dia."
+          },
+          {
+            "t": "Compras resolvidas",
+            "p": "Mande os ingredientes das receitas da semana para a sua lista de compras."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Nunca mais esqueça um aniversário. O Daili faz a contagem regressiva e avisa com antecedência para você se planejar.",
+        "benefits": [
+          {
+            "t": "Todos os aniversários num só lugar",
+            "p": "Família, amigos, avós, e datas comemorativas também."
+          },
+          {
+            "t": "Um lembrete a tempo",
+            "p": "Cedo o bastante para comprar o presente."
+          },
+          {
+            "t": "Importe dos contatos",
+            "p": "Adicione os aniversários que seu celular já conhece."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "O tempo do dia bem onde você planeja o dia, em °C ou °F.",
+        "benefits": [
+          {
+            "t": "Direto na tela inicial",
+            "p": "Sem abrir outro app."
+          },
+          {
+            "t": "Saiba quando vem a chuva",
+            "p": "O bloco Tempo diz quando a chuva começa, e a previsão vai até 10 dias."
+          },
+          {
+            "t": "O tempo dos seus eventos",
+            "p": "Os eventos de hoje mostram o tempo que vai fazer."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Deixe papéis e fotos importantes sempre por perto, sem enviar nada para lugar nenhum.",
+        "benefits": [
+          {
+            "t": "Só no seu celular",
+            "p": "Os arquivos nunca vão para os servidores do Daili, e sua família não consegue vê-los."
+          },
+          {
+            "t": "Organizados em pastas",
+            "p": "Ache a carteirinha do plano em segundos."
+          },
+          {
+            "t": "No backup do celular",
+            "p": "O próprio backup do seu celular pode trazê-los de volta num celular novo."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Traga a família toda, dê uma cor para cada pessoa e adicione as crianças que ainda não têm celular.",
+        "benefits": [
+          {
+            "t": "Convide em segundos",
+            "p": "Um código de seis dígitos, um link ou um QR code."
+          },
+          {
+            "t": "Uma cor para cada um",
+            "p": "Veja num relance de quem é o evento."
+          },
+          {
+            "t": "Mais de um grupo",
+            "p": "Sua família, os avós, o time de futebol: até cinco com uma só conta."
+          }
+        ],
+        "faq": []
       }
     }
   },

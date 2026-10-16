@@ -498,6 +498,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Everyone sees what is coming up, and everyone can add to it. Repeating events, reminders, and your Google or phone calendar right next to the family plan.",
+        "benefits": [
+          {
+            "t": "Repeats the way life does",
+            "p": "Piano every week, swimming every second Friday, a check-up once a year."
+          },
+          {
+            "t": "Reminders for the right people",
+            "p": "Put names on an event, and the reminder goes to them."
+          },
+          {
+            "t": "Your other calendars too",
+            "p": "Show your Google or phone calendar inside Daili, next to the family's events."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Shopping lists the whole family fills in, sorted into categories, with the things you bought before suggested as you type.",
+        "benefits": [
+          {
+            "t": "Sorted like the shop",
+            "p": "Items fall into categories, so you walk through the shop once."
+          },
+          {
+            "t": "Private lists too",
+            "p": "Keep a list just for yourself, in the same app."
+          },
+          {
+            "t": "Straight from a recipe",
+            "p": "Send a recipe's ingredients to the list in one go."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Give a task to one person or to several, add a reminder, and see what is done.",
+        "benefits": [
+          {
+            "t": "Give it to anyone",
+            "p": "One person, a few, or a child without their own phone."
+          },
+          {
+            "t": "A nudge at the right time",
+            "p": "A reminder on the day, or before it."
+          },
+          {
+            "t": "Private to-dos",
+            "p": "Some tasks are only yours to see."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Write it down in two seconds, then keep it to yourself or share it with the family.",
+        "benefits": [
+          {
+            "t": "Fast to write",
+            "p": "A title and a note, nothing in the way."
+          },
+          {
+            "t": "Private or shared",
+            "p": "You decide for every single note."
+          },
+          {
+            "t": "Find it again",
+            "p": "Pin the important ones and filter them by tag."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "All your family recipes in one place, ready for the meal plan and the shopping list.",
+        "benefits": [
+          {
+            "t": "Import a recipe",
+            "p": "From a web page, a YouTube video or a photo of a cookbook page."
+          },
+          {
+            "t": "Ingredients to the list",
+            "p": "Send them to your shopping list in one go."
+          },
+          {
+            "t": "Your own tags",
+            "p": "Sort recipes with your family's own labels, like Party or Gluten-free."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Breakfast, lunch and dinner for the week, filled from your recipes or just typed in.",
+        "benefits": [
+          {
+            "t": "The whole week",
+            "p": "See every meal at a glance."
+          },
+          {
+            "t": "From your recipes",
+            "p": "Pick a saved recipe for any day."
+          },
+          {
+            "t": "Shopping done",
+            "p": "Send the ingredients of the week's recipes to your shopping list."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Never miss a birthday again. Daili counts down and reminds you early enough to plan.",
+        "benefits": [
+          {
+            "t": "Every birthday in one place",
+            "p": "Family, friends, grandparents, and anniversaries too."
+          },
+          {
+            "t": "A reminder in time",
+            "p": "Early enough to get the gift."
+          },
+          {
+            "t": "Import from contacts",
+            "p": "Add the birthdays your phone already knows."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "The day's weather right where you plan the day, in °C or °F.",
+        "benefits": [
+          {
+            "t": "Right on Home",
+            "p": "No second app to open."
+          },
+          {
+            "t": "Know when rain is coming",
+            "p": "The Weather tile says when the rain starts, and the forecast looks 10 days ahead."
+          },
+          {
+            "t": "Weather for your events",
+            "p": "Today's events show the weather they will get."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Keep important papers and photos close, without uploading them anywhere.",
+        "benefits": [
+          {
+            "t": "On your phone only",
+            "p": "Files never go to Daili's servers, and your family cannot see them."
+          },
+          {
+            "t": "Sorted in folders",
+            "p": "Find the insurance card in seconds."
+          },
+          {
+            "t": "In your phone's backup",
+            "p": "Your phone's own backup can bring them back on a new phone."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Bring the whole family in, give everyone a colour, and add the kids who do not have a phone yet.",
+        "benefits": [
+          {
+            "t": "Invite in seconds",
+            "p": "A six-digit code, a link or a QR code."
+          },
+          {
+            "t": "A colour for everyone",
+            "p": "See at a glance whose event it is."
+          },
+          {
+            "t": "More than one group",
+            "p": "Your family, the grandparents, the football team: up to five with one account."
+          }
+        ],
+        "faq": []
       }
     }
   },

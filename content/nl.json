@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Iedereen ziet wat er gaat komen, en iedereen kan iets toevoegen. Terugkerende afspraken, herinneringen en je Google- of telefoonagenda naast de gezinsplanning.",
+        "benefits": [
+          {
+            "t": "Herhaalt zoals het leven gaat",
+            "p": "Piano elke week, zwemmen om de week op vrijdag, één keer per jaar een controle."
+          },
+          {
+            "t": "Herinneringen voor de juiste mensen",
+            "p": "Zet namen bij een afspraak, en de herinnering gaat naar hen."
+          },
+          {
+            "t": "Ook je andere agenda's",
+            "p": "Toon je Google- of telefoonagenda in Daili, naast de afspraken van het gezin."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Boodschappenlijstjes die het hele gezin aanvult, ingedeeld in categorieën, met suggesties uit wat je eerder kocht terwijl je typt.",
+        "benefits": [
+          {
+            "t": "Ingedeeld zoals de winkel",
+            "p": "Alles komt in categorieën, dus je loopt maar één keer door de winkel."
+          },
+          {
+            "t": "Ook privélijstjes",
+            "p": "Houd een lijstje alleen voor jezelf, in dezelfde app."
+          },
+          {
+            "t": "Direct uit een recept",
+            "p": "Zet de ingrediënten van een recept in één keer op de lijst."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Geef een taak aan één persoon of aan meerdere, voeg een herinnering toe en zie wat er gedaan is.",
+        "benefits": [
+          {
+            "t": "Voor iedereen",
+            "p": "Eén persoon, een paar, of een kind zonder eigen telefoon."
+          },
+          {
+            "t": "Een seintje op het juiste moment",
+            "p": "Een herinnering op de dag zelf, of ervoor."
+          },
+          {
+            "t": "Privétaken",
+            "p": "Sommige taken zie alleen jij."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Schrijf het in twee seconden op, en houd het voor jezelf of deel het met het gezin.",
+        "benefits": [
+          {
+            "t": "Snel geschreven",
+            "p": "Een titel en een notitie, niets in de weg."
+          },
+          {
+            "t": "Privé of gedeeld",
+            "p": "Jij beslist het voor elke notitie."
+          },
+          {
+            "t": "Snel teruggevonden",
+            "p": "Zet de belangrijke vast bovenaan en filter op tag."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Alle gezinsrecepten op één plek, klaar voor de menuplanner en het boodschappenlijstje.",
+        "benefits": [
+          {
+            "t": "Importeer een recept",
+            "p": "Van een website, een YouTube-video of een foto van een kookboekpagina."
+          },
+          {
+            "t": "Ingrediënten op de lijst",
+            "p": "Zet ze in één keer op je boodschappenlijstje."
+          },
+          {
+            "t": "Je eigen tags",
+            "p": "Sorteer recepten met de eigen labels van je gezin, zoals Feestje of Glutenvrij."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Ontbijt, lunch en avondeten voor de week, gevuld met je recepten of gewoon ingetypt.",
+        "benefits": [
+          {
+            "t": "De hele week",
+            "p": "Zie elke maaltijd in één oogopslag."
+          },
+          {
+            "t": "Uit je recepten",
+            "p": "Kies voor elke dag een bewaard recept."
+          },
+          {
+            "t": "Boodschappen geregeld",
+            "p": "Zet de ingrediënten van de recepten van de week op je boodschappenlijstje."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Vergeet nooit meer een verjaardag. Daili telt af en herinnert je op tijd, zodat je iets kunt plannen.",
+        "benefits": [
+          {
+            "t": "Alle verjaardagen op één plek",
+            "p": "Gezin, vrienden, opa en oma, en ook jubilea."
+          },
+          {
+            "t": "Op tijd een herinnering",
+            "p": "Vroeg genoeg om het cadeau te halen."
+          },
+          {
+            "t": "Importeer uit contacten",
+            "p": "Voeg de verjaardagen toe die je telefoon al kent."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Het weer van vandaag precies waar je de dag plant, in °C of °F.",
+        "benefits": [
+          {
+            "t": "Gewoon op je beginscherm",
+            "p": "Geen tweede app nodig."
+          },
+          {
+            "t": "Weet wanneer de regen komt",
+            "p": "De Weer-tegel zegt wanneer het gaat regenen, en de verwachting kijkt 10 dagen vooruit."
+          },
+          {
+            "t": "Weer bij je afspraken",
+            "p": "De afspraken van vandaag laten zien welk weer ze krijgen."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Houd belangrijke papieren en foto's dichtbij, zonder ze ergens te uploaden.",
+        "benefits": [
+          {
+            "t": "Alleen op je telefoon",
+            "p": "Bestanden gaan nooit naar de servers van Daili, en je gezin kan ze niet zien."
+          },
+          {
+            "t": "Geordend in mappen",
+            "p": "Vind de zorgpas in een paar seconden."
+          },
+          {
+            "t": "In de back-up van je telefoon",
+            "p": "De eigen back-up van je telefoon zet ze terug op een nieuwe telefoon."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Haal het hele gezin erbij, geef iedereen een kleur en voeg de kinderen toe die nog geen telefoon hebben.",
+        "benefits": [
+          {
+            "t": "In een paar seconden uitgenodigd",
+            "p": "Een code van zes cijfers, een link of een QR-code."
+          },
+          {
+            "t": "Een kleur voor iedereen",
+            "p": "Zie in één oogopslag van wie de afspraak is."
+          },
+          {
+            "t": "Meer dan één groep",
+            "p": "Je gezin, opa en oma, het voetbalteam: tot vijf met één account."
+          }
+        ],
+        "faq": []
       }
     }
   },

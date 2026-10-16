@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Tutti vedono cosa c’è in programma, e tutti possono aggiungere qualcosa. Eventi ricorrenti, promemoria e il tuo calendario Google o del telefono accanto al piano di famiglia.",
+        "benefits": [
+          {
+            "t": "Si ripete come la vita",
+            "p": "Piano ogni settimana, nuoto un venerdì sì e uno no, un controllo una volta l’anno."
+          },
+          {
+            "t": "Promemoria alle persone giuste",
+            "p": "Metti dei nomi su un evento, e il promemoria arriva a loro."
+          },
+          {
+            "t": "Anche gli altri calendari",
+            "p": "Mostra il tuo calendario Google o del telefono in Daili, accanto agli eventi della famiglia."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Liste della spesa che tutta la famiglia compila, divise per categoria, con le cose già comprate suggerite mentre scrivi.",
+        "benefits": [
+          {
+            "t": "In ordine come al supermercato",
+            "p": "Gli articoli finiscono nelle loro categorie, così giri il negozio una volta sola."
+          },
+          {
+            "t": "Anche liste private",
+            "p": "Tieni una lista solo per te, nella stessa app."
+          },
+          {
+            "t": "Direttamente da una ricetta",
+            "p": "Manda alla lista gli ingredienti di una ricetta in un colpo solo."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Assegna un’attività a una o più persone, aggiungi un promemoria e guarda cosa è fatto.",
+        "benefits": [
+          {
+            "t": "A chiunque",
+            "p": "Una persona, qualcuno, o un bambino che non ha un telefono suo."
+          },
+          {
+            "t": "Una spinta al momento giusto",
+            "p": "Un promemoria il giorno stesso, o prima."
+          },
+          {
+            "t": "Attività private",
+            "p": "Alcune attività le vedi solo tu."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Scrivilo in due secondi, poi tienilo per te o condividilo con la famiglia.",
+        "benefits": [
+          {
+            "t": "Veloce da scrivere",
+            "p": "Un titolo e una nota, niente di più."
+          },
+          {
+            "t": "Privata o condivisa",
+            "p": "Decidi tu, nota per nota."
+          },
+          {
+            "t": "La ritrovi subito",
+            "p": "Fissa in alto le più importanti e filtrale per etichetta."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Tutte le ricette di famiglia in un unico posto, pronte per il menu e la lista della spesa.",
+        "benefits": [
+          {
+            "t": "Importa una ricetta",
+            "p": "Da una pagina web, da un video YouTube o dalla foto di una pagina di un ricettario."
+          },
+          {
+            "t": "Ingredienti nella lista",
+            "p": "Mandali alla tua lista della spesa in un colpo solo."
+          },
+          {
+            "t": "Le tue etichette",
+            "p": "Ordina le ricette con le etichette della tua famiglia, come Festa o Senza glutine."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Colazione, pranzo e cena per tutta la settimana, presi dalle tue ricette o scritti a mano.",
+        "benefits": [
+          {
+            "t": "Tutta la settimana",
+            "p": "Ogni pasto a colpo d’occhio."
+          },
+          {
+            "t": "Dalle tue ricette",
+            "p": "Scegli una ricetta salvata per qualsiasi giorno."
+          },
+          {
+            "t": "Spesa fatta",
+            "p": "Manda alla lista della spesa gli ingredienti delle ricette della settimana."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Non dimenticare mai più un compleanno. Daili fa il conto alla rovescia e ti avvisa in tempo per organizzarti.",
+        "benefits": [
+          {
+            "t": "Tutti i compleanni in un posto",
+            "p": "Famiglia, amici, nonni, e anche gli anniversari."
+          },
+          {
+            "t": "Un promemoria in tempo",
+            "p": "Abbastanza presto per il regalo."
+          },
+          {
+            "t": "Importa dai contatti",
+            "p": "Aggiungi i compleanni che il tuo telefono conosce già."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Il meteo di oggi proprio dove pianifichi la giornata, in °C o °F.",
+        "benefits": [
+          {
+            "t": "Direttamente nella schermata Home",
+            "p": "Nessun’altra app da aprire."
+          },
+          {
+            "t": "Sai quando arriva la pioggia",
+            "p": "Il riquadro Meteo dice quando inizia a piovere, e le previsioni arrivano a 10 giorni."
+          },
+          {
+            "t": "Il meteo dei tuoi eventi",
+            "p": "Gli eventi di oggi mostrano il tempo che troveranno."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Tieni a portata di mano documenti e foto importanti, senza caricarli da nessuna parte.",
+        "benefits": [
+          {
+            "t": "Solo sul tuo telefono",
+            "p": "I file non arrivano mai sui server di Daili, e la tua famiglia non può vederli."
+          },
+          {
+            "t": "Ordinati in cartelle",
+            "p": "Trovi la tessera dell’assicurazione in pochi secondi."
+          },
+          {
+            "t": "Nel backup del telefono",
+            "p": "Il backup del tuo telefono può riportarli su un telefono nuovo."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Porta dentro tutta la famiglia, dai a ognuno un colore e aggiungi i bambini che non hanno ancora un telefono.",
+        "benefits": [
+          {
+            "t": "Inviti in pochi secondi",
+            "p": "Un codice di sei cifre, un link o un codice QR."
+          },
+          {
+            "t": "Un colore per ognuno",
+            "p": "Vedi subito di chi è l’evento."
+          },
+          {
+            "t": "Più di un gruppo",
+            "p": "La tua famiglia, i nonni, la squadra di calcio: fino a cinque con un solo account."
+          }
+        ],
+        "faq": []
       }
     }
   },

@@ -1121,19 +1121,19 @@ export const RATING = { value: 4.7, source: 'Google Play', url: 'https://play.go
  * app's deep links, and Google, shared links and the sitemap point at them.
  */
 export const HOME_FEATURES = [
-  { slug: 'calendar', shot: 'shot-calendar', tint: 'lake', icon: 'cal', tone: 'lake' },
-  { slug: 'lists', shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true },
-  { slug: 'todos', shot: 'shot-todos', tint: 'honey', icon: 'todo', tone: 'leaf' },
+  { slug: 'calendar', shot: 'shot-calendar', tint: 'lake', icon: 'cal', tone: 'lake', page: true, benefits: ['repeat', 'bell', 'cal'] },
+  { slug: 'lists', shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true, page: true, benefits: ['cart', 'lock', 'meal'] },
+  { slug: 'todos', shot: 'shot-todos', tint: 'honey', icon: 'todo', tone: 'leaf', page: true, benefits: ['people', 'bell', 'lock'] },
   { slug: 'budget', shot: 'shot-budget', tint: 'clay', icon: 'wallet', tone: 'clay', amount: true, newUntil: '2026-12-31', page: true, shot2: 'shot-budget-split', benefits: ['eye', 'repeat', 'people', 'lock'] },
   { slug: 'cycle', shot: 'shot-cycle', tint: 'berry', icon: 'drop', tone: 'berry', newUntil: '2026-12-31', page: true, benefits: ['phone', 'cal', 'bell'] },
   { slug: 'habits', shot: 'shot-habits', tint: 'honey', tone: 'honey', energy: true, page: true, benefits: ['people', 'flame', 'bell'] },
-  { slug: 'notes', shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry' },
-  { slug: 'recipes', shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay' },
-  { slug: 'meal-plan', shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake' },
-  { slug: 'birthdays', shot: 'shot-birthdays', tint: 'leaf', icon: 'cake', tone: 'honey' },
-  { slug: 'weather', shot: 'shot-weather', tint: 'lake', icon: 'rain', tone: 'lake' },
-  { slug: 'documents', shot: 'shot-documents', tint: 'honey', icon: 'folder', tone: 'honey' },
-  { slug: 'family', shot: 'shot-family', tint: 'berry', icon: 'people', tone: 'berry' },
+  { slug: 'notes', shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry', page: true, benefits: ['note', 'lock', 'star'] },
+  { slug: 'recipes', shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay', page: true, benefits: ['play', 'cart', 'star'] },
+  { slug: 'meal-plan', shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake', page: true, benefits: ['cal', 'meal', 'cart'] },
+  { slug: 'birthdays', shot: 'shot-birthdays', tint: 'leaf', icon: 'cake', tone: 'honey', page: true, benefits: ['cake', 'bell', 'phone'] },
+  { slug: 'weather', shot: 'shot-weather', tint: 'lake', icon: 'rain', tone: 'lake', page: true, benefits: ['widgets', 'rain', 'cal'] },
+  { slug: 'documents', shot: 'shot-documents', tint: 'honey', icon: 'folder', tone: 'honey', page: true, benefits: ['phone', 'folder', 'repeat'] },
+  { slug: 'family', shot: 'shot-family', tint: 'berry', icon: 'people', tone: 'berry', page: true, benefits: ['plus', 'eye', 'people'] },
 ];
 
 /**

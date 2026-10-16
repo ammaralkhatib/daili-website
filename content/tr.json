@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Herkes yaklaşanları görür, herkes ekleyebilir. Tekrarlanan etkinlikler, hatırlatmalar ve Google ya da telefon takviminiz, aile planının hemen yanında.",
+        "benefits": [
+          {
+            "t": "Hayat nasıl tekrarlıyorsa öyle",
+            "p": "Her hafta piyano, iki haftada bir cuma yüzme, yılda bir kontrol."
+          },
+          {
+            "t": "Doğru kişilere hatırlatma",
+            "p": "Etkinliğe isimleri ekleyin, hatırlatma onlara gitsin."
+          },
+          {
+            "t": "Diğer takvimleriniz de",
+            "p": "Google ya da telefon takviminizi Daili'de, ailenin etkinliklerinin yanında görün."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Tüm ailenin doldurduğu, kategorilere ayrılmış alışveriş listeleri. Daha önce aldıklarınız yazarken önerilir.",
+        "benefits": [
+          {
+            "t": "Market düzeninde",
+            "p": "Ürünler kategorilere ayrılır, marketi bir kez dolaşırsınız."
+          },
+          {
+            "t": "Özel listeler de",
+            "p": "Aynı uygulamada yalnızca kendinize ait bir liste tutun."
+          },
+          {
+            "t": "Doğrudan tariften",
+            "p": "Bir tarifin malzemelerini tek seferde listeye gönderin."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Bir görevi bir ya da birkaç kişiye verin, hatırlatma ekleyin ve nelerin bittiğini görün.",
+        "benefits": [
+          {
+            "t": "İstediğiniz kişiye verin",
+            "p": "Bir kişiye, birkaç kişiye ya da kendi telefonu olmayan bir çocuğa."
+          },
+          {
+            "t": "Doğru zamanda bir hatırlatma",
+            "p": "O gün ya da daha önce."
+          },
+          {
+            "t": "Özel görevler",
+            "p": "Bazı görevleri yalnızca siz görürsünüz."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "İki saniyede yazın, sonra kendinize saklayın ya da aileyle paylaşın.",
+        "benefits": [
+          {
+            "t": "Hızlı yazılır",
+            "p": "Bir başlık ve bir not, başka hiçbir şey yok."
+          },
+          {
+            "t": "Özel ya da paylaşılan",
+            "p": "Her not için siz karar verirsiniz."
+          },
+          {
+            "t": "Kolayca yeniden bulun",
+            "p": "Önemli olanları sabitleyin, etiketle filtreleyin."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Ailenizin tüm tarifleri tek yerde, yemek planına ve alışveriş listesine hazır.",
+        "benefits": [
+          {
+            "t": "Tarif içe aktarın",
+            "p": "Bir web sayfasından, bir YouTube videosundan ya da bir yemek kitabı sayfasının fotoğrafından."
+          },
+          {
+            "t": "Malzemeler listeye",
+            "p": "Tek seferde alışveriş listenize gönderin."
+          },
+          {
+            "t": "Kendi etiketleriniz",
+            "p": "Tarifleri ailenizin kendi etiketleriyle düzenleyin; Parti ya da Glütensiz gibi."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Haftanın kahvaltısı, öğle ve akşam yemeği; tariflerinizden seçilmiş ya da elle yazılmış.",
+        "benefits": [
+          {
+            "t": "Bütün hafta",
+            "p": "Her öğünü bir bakışta görün."
+          },
+          {
+            "t": "Tariflerinizden",
+            "p": "Herhangi bir gün için kayıtlı bir tarif seçin."
+          },
+          {
+            "t": "Alışveriş hazır",
+            "p": "Haftanın tariflerindeki malzemeleri alışveriş listenize gönderin."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Bir daha hiçbir doğum gününü kaçırmayın. Daili geri sayar ve plan yapmanıza yetecek kadar erken hatırlatır.",
+        "benefits": [
+          {
+            "t": "Tüm doğum günleri tek yerde",
+            "p": "Aile, arkadaşlar, büyükanne ve büyükbabalar, yıldönümleri de."
+          },
+          {
+            "t": "Zamanında bir hatırlatma",
+            "p": "Hediyeyi almaya yetecek kadar erken."
+          },
+          {
+            "t": "Kişilerden içe aktarın",
+            "p": "Telefonunuzun zaten bildiği doğum günlerini ekleyin."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Günün havası, günü planladığınız yerde; °C ya da °F olarak.",
+        "benefits": [
+          {
+            "t": "Doğrudan Ana Ekranda",
+            "p": "İkinci bir uygulama açmanıza gerek yok."
+          },
+          {
+            "t": "Yağmurun ne zaman geleceğini bilin",
+            "p": "Hava durumu kutucuğu yağmurun ne zaman başlayacağını söyler, tahmin 10 gün ileriye bakar."
+          },
+          {
+            "t": "Etkinlikleriniz için hava",
+            "p": "Bugünün etkinlikleri, onları nasıl bir havanın beklediğini gösterir."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Önemli evrakları ve fotoğrafları hiçbir yere yüklemeden yakınınızda tutun.",
+        "benefits": [
+          {
+            "t": "Yalnızca telefonunuzda",
+            "p": "Dosyalar asla Daili sunucularına gitmez ve aileniz onları göremez."
+          },
+          {
+            "t": "Klasörlerde düzenli",
+            "p": "Sigorta kartını saniyeler içinde bulun."
+          },
+          {
+            "t": "Telefonunuzun yedeğinde",
+            "p": "Telefonunuzun kendi yedeği onları yeni bir telefona geri getirebilir."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Tüm aileyi katın, herkese bir renk verin ve henüz telefonu olmayan çocukları da ekleyin.",
+        "benefits": [
+          {
+            "t": "Saniyeler içinde davet",
+            "p": "Altı haneli bir kod, bir bağlantı ya da bir QR kod."
+          },
+          {
+            "t": "Herkese bir renk",
+            "p": "Etkinliğin kime ait olduğunu bir bakışta görün."
+          },
+          {
+            "t": "Birden fazla grup",
+            "p": "Aileniz, büyükanne ve büyükbabalar, futbol takımı: tek hesapla en fazla beş."
+          }
+        ],
+        "faq": []
       }
     }
   },

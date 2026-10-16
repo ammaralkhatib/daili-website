@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Semua orang melihat apa yang akan datang, dan semua bisa menambahkan. Acara berulang, pengingat, serta kalender Google atau kalender ponselmu, tepat di samping rencana keluarga.",
+        "benefits": [
+          {
+            "t": "Berulang seperti hidup sehari-hari",
+            "p": "Piano setiap minggu, renang setiap dua minggu sekali di hari Jumat, pemeriksaan kesehatan setahun sekali."
+          },
+          {
+            "t": "Pengingat untuk orang yang tepat",
+            "p": "Tambahkan nama ke acara, dan pengingatnya sampai ke mereka."
+          },
+          {
+            "t": "Kalendermu yang lain juga",
+            "p": "Tampilkan kalender Google atau kalender ponselmu di Daili, di samping acara keluarga."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Daftar belanja yang diisi seluruh keluarga, tersusun per kategori, dengan saran barang yang pernah kamu beli saat mengetik.",
+        "benefits": [
+          {
+            "t": "Tersusun seperti di toko",
+            "p": "Barang masuk ke kategorinya, jadi kamu cukup sekali keliling toko."
+          },
+          {
+            "t": "Daftar pribadi juga",
+            "p": "Simpan daftar khusus untukmu sendiri, di aplikasi yang sama."
+          },
+          {
+            "t": "Langsung dari resep",
+            "p": "Kirim bahan-bahan resep ke daftar sekaligus."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Berikan tugas ke satu orang atau beberapa, tambahkan pengingat, dan lihat apa yang sudah selesai.",
+        "benefits": [
+          {
+            "t": "Untuk siapa saja",
+            "p": "Satu orang, beberapa orang, atau anak yang belum punya ponsel sendiri."
+          },
+          {
+            "t": "Pengingat di saat yang tepat",
+            "p": "Pada harinya, atau sebelumnya."
+          },
+          {
+            "t": "Tugas pribadi",
+            "p": "Beberapa tugas hanya kamu yang bisa melihatnya."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Tulis dalam dua detik, lalu simpan untuk dirimu sendiri atau bagikan ke keluarga.",
+        "benefits": [
+          {
+            "t": "Cepat ditulis",
+            "p": "Judul dan catatan, tanpa ada yang menghalangi."
+          },
+          {
+            "t": "Pribadi atau dibagikan",
+            "p": "Kamu yang menentukan untuk setiap catatan."
+          },
+          {
+            "t": "Mudah ditemukan lagi",
+            "p": "Sematkan yang penting dan saring berdasarkan tag."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Semua resep keluarga di satu tempat, siap untuk rencana makan dan daftar belanja.",
+        "benefits": [
+          {
+            "t": "Impor resep",
+            "p": "Dari halaman web, video YouTube, atau foto halaman buku masak."
+          },
+          {
+            "t": "Bahan ke daftar belanja",
+            "p": "Kirim ke daftar belanjamu sekaligus."
+          },
+          {
+            "t": "Tag milik keluargamu",
+            "p": "Kelompokkan resep dengan label keluargamu sendiri, seperti Pesta atau Bebas gluten."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Sarapan, makan siang, dan makan malam untuk sepekan, diambil dari resepmu atau cukup diketik.",
+        "benefits": [
+          {
+            "t": "Sepekan penuh",
+            "p": "Lihat setiap menu makan sekilas."
+          },
+          {
+            "t": "Dari resepmu",
+            "p": "Pilih resep tersimpan untuk hari apa pun."
+          },
+          {
+            "t": "Belanja beres",
+            "p": "Kirim bahan dari resep minggu ini ke daftar belanjamu."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Tak ada lagi ulang tahun yang terlewat. Daili menghitung mundur dan mengingatkanmu cukup awal untuk bersiap.",
+        "benefits": [
+          {
+            "t": "Semua ulang tahun di satu tempat",
+            "p": "Keluarga, teman, kakek nenek, dan hari jadi juga."
+          },
+          {
+            "t": "Pengingat tepat waktu",
+            "p": "Cukup awal untuk menyiapkan kado."
+          },
+          {
+            "t": "Impor dari kontak",
+            "p": "Tambahkan ulang tahun yang sudah tersimpan di ponselmu."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Cuaca hari ini tepat di tempat kamu merencanakan hari, dalam °C atau °F.",
+        "benefits": [
+          {
+            "t": "Langsung di layar Utama",
+            "p": "Tak perlu membuka aplikasi lain."
+          },
+          {
+            "t": "Tahu kapan hujan datang",
+            "p": "Kartu Cuaca memberi tahu kapan hujan mulai, dan prakiraannya mencakup 10 hari ke depan."
+          },
+          {
+            "t": "Cuaca untuk acaramu",
+            "p": "Acara hari ini menampilkan cuaca yang akan menyertainya."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Simpan dokumen dan foto penting tetap dekat, tanpa mengunggahnya ke mana pun.",
+        "benefits": [
+          {
+            "t": "Hanya di ponselmu",
+            "p": "File tidak pernah dikirim ke server Daili, dan keluargamu tidak bisa melihatnya."
+          },
+          {
+            "t": "Tersusun dalam folder",
+            "p": "Temukan kartu asuransi dalam hitungan detik."
+          },
+          {
+            "t": "Ikut cadangan ponselmu",
+            "p": "Cadangan bawaan ponselmu bisa memulihkannya di ponsel baru."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Ajak seluruh keluarga, beri setiap orang warna, dan tambahkan anak-anak yang belum punya ponsel.",
+        "benefits": [
+          {
+            "t": "Undang dalam hitungan detik",
+            "p": "Kode enam digit, tautan, atau kode QR."
+          },
+          {
+            "t": "Satu warna untuk setiap orang",
+            "p": "Lihat sekilas acara milik siapa."
+          },
+          {
+            "t": "Lebih dari satu grup",
+            "p": "Keluargamu, kakek nenek, tim sepak bola: hingga lima dengan satu akun."
+          }
+        ],
+        "faq": []
       }
     }
   },

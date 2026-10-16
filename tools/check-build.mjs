@@ -90,6 +90,9 @@ const helpOuts = new Set(HELP_LOCALES.flatMap(helpOutsFor));
 for (const h of helpOuts) expected.add(h);
 // The feature pages (2026-10-16/006): every page: true feature, every locale.
 const FEATURE_PAGES = HOME_FEATURES.filter((f) => f.page);
+// Since 2026-10-16/007 every feature has one: a new feature in the row must
+// not ship as a dead card without its page.
+for (const f of HOME_FEATURES) if (!f.page) fail('site.config.mjs', `HOME_FEATURES '${f.slug}' has no page: true — every feature in the row needs its page`);
 const featureOut = (slug, loc) => `${dirFor(loc).slice(1)}features/${slug}/index.html`;
 for (const f of FEATURE_PAGES) for (const loc of LOCALES) expected.add(featureOut(f.slug, loc));
 for (const e of expected) {

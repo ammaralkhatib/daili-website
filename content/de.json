@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Alle sehen, was ansteht, und alle können etwas eintragen. Wiederkehrende Termine, Erinnerungen und euer Google- oder Handykalender direkt neben dem Familienplan.",
+        "benefits": [
+          {
+            "t": "Wiederholt sich wie das Leben",
+            "p": "Klavier jede Woche, Schwimmen jeden zweiten Freitag, die Vorsorge einmal im Jahr."
+          },
+          {
+            "t": "Erinnerungen für die Richtigen",
+            "p": "Setz Namen an einen Termin, und die Erinnerung geht an sie."
+          },
+          {
+            "t": "Auch deine anderen Kalender",
+            "p": "Zeig deinen Google- oder Handykalender in Daili, neben den Terminen der Familie."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Einkaufslisten, die die ganze Familie füllt, nach Kategorien sortiert und mit Vorschlägen aus dem, was ihr schon mal gekauft habt.",
+        "benefits": [
+          {
+            "t": "Sortiert wie im Laden",
+            "p": "Alles landet in Kategorien, so geht ihr nur einmal durch den Laden."
+          },
+          {
+            "t": "Auch private Listen",
+            "p": "Führ eine Liste nur für dich, in derselben App."
+          },
+          {
+            "t": "Direkt aus dem Rezept",
+            "p": "Schick die Zutaten eines Rezepts auf einmal auf die Liste."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Gib eine Aufgabe an eine Person oder an mehrere, füg eine Erinnerung hinzu und sieh, was erledigt ist.",
+        "benefits": [
+          {
+            "t": "Für jeden",
+            "p": "Eine Person, ein paar oder ein Kind ohne eigenes Handy."
+          },
+          {
+            "t": "Ein Stups zur richtigen Zeit",
+            "p": "Eine Erinnerung am Tag selbst oder vorher."
+          },
+          {
+            "t": "Private Aufgaben",
+            "p": "Manche Aufgaben siehst nur du."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "In zwei Sekunden aufgeschrieben, dann für dich behalten oder mit der Familie teilen.",
+        "benefits": [
+          {
+            "t": "Schnell geschrieben",
+            "p": "Ein Titel und eine Notiz, nichts im Weg."
+          },
+          {
+            "t": "Privat oder geteilt",
+            "p": "Du entscheidest bei jeder einzelnen Notiz."
+          },
+          {
+            "t": "Schnell wiedergefunden",
+            "p": "Heft die wichtigen oben an und filtere nach Tag."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Alle eure Familienrezepte an einem Ort, bereit für den Essensplan und die Einkaufsliste.",
+        "benefits": [
+          {
+            "t": "Rezepte importieren",
+            "p": "Von einer Webseite, aus einem YouTube-Video oder vom Foto einer Kochbuchseite."
+          },
+          {
+            "t": "Zutaten auf die Liste",
+            "p": "Schick sie auf einmal auf eure Einkaufsliste."
+          },
+          {
+            "t": "Eure eigenen Tags",
+            "p": "Sortiert Rezepte mit euren eigenen Tags, etwa Party oder Glutenfrei."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Frühstück, Mittag- und Abendessen für die Woche, aus euren Rezepten oder einfach eingetippt.",
+        "benefits": [
+          {
+            "t": "Die ganze Woche",
+            "p": "Alle Mahlzeiten auf einen Blick."
+          },
+          {
+            "t": "Aus euren Rezepten",
+            "p": "Wähl für jeden Tag ein gespeichertes Rezept."
+          },
+          {
+            "t": "Einkauf erledigt",
+            "p": "Schick die Zutaten der Wochenrezepte auf eure Einkaufsliste."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Nie wieder einen Geburtstag vergessen. Daili zählt runter und erinnert dich früh genug zum Planen.",
+        "benefits": [
+          {
+            "t": "Alle Geburtstage an einem Ort",
+            "p": "Familie, Freunde, Großeltern und auch Jahrestage."
+          },
+          {
+            "t": "Eine Erinnerung zur rechten Zeit",
+            "p": "Früh genug, um das Geschenk zu besorgen."
+          },
+          {
+            "t": "Aus den Kontakten importieren",
+            "p": "Füg die Geburtstage hinzu, die dein Handy schon kennt."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Das Wetter des Tages genau dort, wo ihr den Tag plant, in °C oder °F.",
+        "benefits": [
+          {
+            "t": "Direkt auf dem Startbildschirm",
+            "p": "Keine zweite App nötig."
+          },
+          {
+            "t": "Wissen, wann der Regen kommt",
+            "p": "Die Wetter-Kachel sagt, wann der Regen beginnt, und die Vorhersage reicht 10 Tage weit."
+          },
+          {
+            "t": "Wetter für eure Termine",
+            "p": "Die Termine von heute zeigen, welches Wetter sie erwartet."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Wichtige Papiere und Fotos immer dabei, ohne sie irgendwo hochzuladen.",
+        "benefits": [
+          {
+            "t": "Nur auf deinem Handy",
+            "p": "Dateien gehen nie auf die Server von Daili, und deine Familie kann sie nicht sehen."
+          },
+          {
+            "t": "In Ordnern sortiert",
+            "p": "Die Versichertenkarte in Sekunden finden."
+          },
+          {
+            "t": "Im Backup deines Handys",
+            "p": "Das Backup deines Handys bringt sie auf ein neues Handy zurück."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Holt die ganze Familie dazu, gebt allen eine Farbe und fügt die Kinder hinzu, die noch kein Handy haben.",
+        "benefits": [
+          {
+            "t": "In Sekunden eingeladen",
+            "p": "Ein sechsstelliger Code, ein Link oder ein QR-Code."
+          },
+          {
+            "t": "Eine Farbe für jeden",
+            "p": "Auf einen Blick sehen, wessen Termin es ist."
+          },
+          {
+            "t": "Mehr als eine Gruppe",
+            "p": "Eure Familie, die Großeltern, die Fußballmannschaft: bis zu fünf mit einem Konto."
+          }
+        ],
+        "faq": []
       }
     }
   },

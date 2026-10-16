@@ -451,6 +451,186 @@
           }
         ],
         "faq": []
+      },
+      "calendar": {
+        "lead": "Všetci vidia, čo ich čaká, a každý môže niečo pridať. Opakované udalosti, pripomienky a tvoj kalendár Google alebo kalendár z telefónu hneď vedľa rodinného plánu.",
+        "benefits": [
+          {
+            "t": "Opakuje sa ako život",
+            "p": "Klavír každý týždeň, plávanie každý druhý piatok, prehliadka u lekára raz za rok."
+          },
+          {
+            "t": "Pripomienky pre tých správnych",
+            "p": "Pridaj k udalosti mená a pripomienka príde práve im."
+          },
+          {
+            "t": "Aj tvoje ďalšie kalendáre",
+            "p": "Zobraz kalendár Google alebo kalendár z telefónu v Daili, vedľa rodinných udalostí."
+          }
+        ],
+        "faq": []
+      },
+      "lists": {
+        "lead": "Nákupné zoznamy, do ktorých píše celá rodina, rozdelené do kategórií a s návrhmi vecí, ktoré ste už kupovali.",
+        "benefits": [
+          {
+            "t": "Zoradené ako v obchode",
+            "p": "Položky sa zaradia do kategórií, takže obchodom prejdeš len raz."
+          },
+          {
+            "t": "Aj súkromné zoznamy",
+            "p": "Maj zoznam len pre seba, v tej istej aplikácii."
+          },
+          {
+            "t": "Rovno z receptu",
+            "p": "Pošli suroviny z receptu do zoznamu naraz."
+          }
+        ],
+        "faq": []
+      },
+      "todos": {
+        "lead": "Daj úlohu jednému človeku alebo viacerým, pridaj pripomienku a uvidíš, čo je hotové.",
+        "benefits": [
+          {
+            "t": "Pre kohokoľvek",
+            "p": "Jeden človek, pár ľudí alebo dieťa bez vlastného telefónu."
+          },
+          {
+            "t": "Pripomienka v správnej chvíli",
+            "p": "V deň úlohy alebo ešte predtým."
+          },
+          {
+            "t": "Súkromné úlohy",
+            "p": "Niektoré úlohy vidíš len ty."
+          }
+        ],
+        "faq": []
+      },
+      "notes": {
+        "lead": "Zapíš si to za dve sekundy a potom si to nechaj pre seba alebo to zdieľaj s rodinou.",
+        "benefits": [
+          {
+            "t": "Rýchlo zapísané",
+            "p": "Nadpis a poznámka, nič viac neprekáža."
+          },
+          {
+            "t": "Súkromné alebo zdieľané",
+            "p": "Rozhoduješ pri každej poznámke zvlášť."
+          },
+          {
+            "t": "Ľahko ich nájdeš",
+            "p": "Dôležité pripni a filtruj ich podľa štítkov."
+          }
+        ],
+        "faq": []
+      },
+      "recipes": {
+        "lead": "Všetky rodinné recepty na jednom mieste, pripravené pre jedálniček aj nákupný zoznam.",
+        "benefits": [
+          {
+            "t": "Import receptu",
+            "p": "Z webovej stránky, z videa na YouTube alebo z fotky strany kuchárky."
+          },
+          {
+            "t": "Suroviny do zoznamu",
+            "p": "Pošli ich do nákupného zoznamu naraz."
+          },
+          {
+            "t": "Vlastné štítky",
+            "p": "Trieď recepty podľa vlastných rodinných štítkov, napríklad Párty alebo Bez lepku."
+          }
+        ],
+        "faq": []
+      },
+      "meal-plan": {
+        "lead": "Raňajky, obed a večera na celý týždeň, z tvojich receptov alebo jednoducho napísané.",
+        "benefits": [
+          {
+            "t": "Celý týždeň",
+            "p": "Všetky jedlá na prvý pohľad."
+          },
+          {
+            "t": "Z tvojich receptov",
+            "p": "Vyber uložený recept na ktorýkoľvek deň."
+          },
+          {
+            "t": "Nákup vybavený",
+            "p": "Pošli suroviny z receptov na celý týždeň do nákupného zoznamu."
+          }
+        ],
+        "faq": []
+      },
+      "birthdays": {
+        "lead": "Už nikdy nezabudneš na narodeniny. Daili odpočítava dni a pripomenie ich dosť skoro na to, aby si sa mohol pripraviť.",
+        "benefits": [
+          {
+            "t": "Všetky narodeniny na jednom mieste",
+            "p": "Rodina, priatelia, starí rodičia a aj výročia."
+          },
+          {
+            "t": "Pripomienka včas",
+            "p": "Dosť skoro na to, aby darček nechýbal."
+          },
+          {
+            "t": "Import z kontaktov",
+            "p": "Pridaj narodeniny, ktoré už tvoj telefón pozná."
+          }
+        ],
+        "faq": []
+      },
+      "weather": {
+        "lead": "Dnešné počasie priamo tam, kde plánuješ deň, v °C alebo °F.",
+        "benefits": [
+          {
+            "t": "Priamo na úvodnej obrazovke",
+            "p": "Žiadnu ďalšiu aplikáciu netreba otvárať."
+          },
+          {
+            "t": "Vieš, kedy začne pršať",
+            "p": "Dlaždica Počasie ukáže, kedy začne dážď, a predpoveď siaha 10 dní dopredu."
+          },
+          {
+            "t": "Počasie pre tvoje udalosti",
+            "p": "Pri dnešných udalostiach uvidíš, aké počasie ich čaká."
+          }
+        ],
+        "faq": []
+      },
+      "documents": {
+        "lead": "Dôležité dokumenty a fotky maj poruke bez toho, aby si ich niekam nahrával.",
+        "benefits": [
+          {
+            "t": "Len v tvojom telefóne",
+            "p": "Súbory sa nikdy nedostanú na servery Daili a tvoja rodina ich nevidí."
+          },
+          {
+            "t": "V priečinkoch",
+            "p": "Kartičku poisťovne nájdeš za pár sekúnd."
+          },
+          {
+            "t": "V zálohe telefónu",
+            "p": "Záloha tvojho telefónu ich vie obnoviť v novom telefóne."
+          }
+        ],
+        "faq": []
+      },
+      "family": {
+        "lead": "Pozvi celú rodinu, daj každému farbu a pridaj aj deti, ktoré ešte nemajú telefón.",
+        "benefits": [
+          {
+            "t": "Pozvánka za pár sekúnd",
+            "p": "Šesťmiestny kód, odkaz alebo QR kód."
+          },
+          {
+            "t": "Farba pre každého",
+            "p": "Na prvý pohľad vidno, čia je to udalosť."
+          },
+          {
+            "t": "Viac než jedna skupina",
+            "p": "Tvoja rodina, starí rodičia, futbalový tím: až päť s jedným účtom."
+          }
+        ],
+        "faq": []
       }
     }
   },
