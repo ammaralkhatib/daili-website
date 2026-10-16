@@ -260,7 +260,8 @@
       "shot-cycle": "Súkromný kalendár cyklu v aplikácii Daili",
       "shot-weather": "Predpoveď počasia v aplikácii Daili",
       "shot-documents": "Súkromný trezor dokumentov v aplikácii Daili",
-      "shot-family": "Členovia rodiny v aplikácii Daili"
+      "shot-family": "Členovia rodiny v aplikácii Daili",
+      "shot-budget-split": "Delenie výdavkov v aplikácii Daili: kto komu dlží a Označiť ako zaplatené"
     },
     "screens": {
       "h2": "Na každej obrazovke doma",
@@ -372,6 +373,86 @@
     "h1": "Stránka sa nenašla",
     "lead": "Táto stránka sa presunula alebo nikdy neexistovala.",
     "home": "Späť na domovskú stránku"
+  },
+
+  "features": {
+    "all": "Všetky funkcie",
+    "close": "Zavrieť",
+    "questions": "Otázky",
+    "pages": {
+      "budget": {
+        "lead": "Rodinný rozpočet, ktorý zostane jednoduchý. Nastav limit, pridaj výdavok pár ťuknutiami a vždy budeš vedieť, koľko zostáva.",
+        "benefits": [
+          {
+            "t": "Koľko zostáva, na prvý pohľad",
+            "p": "Na deň aj podľa kategórie a ako si tento mesiac vedie oproti minulému."
+          },
+          {
+            "t": "Všetko, čo sa opakuje, na jednej obrazovke",
+            "p": "Nájom, predplatné, výplata. Ktorúkoľvek položku ukončíš jedným ťuknutím."
+          },
+          {
+            "t": "Deľte spoločné výdavky",
+            "p": "Daili spočíta, kto komu dlží, a vyrovnáte sa v aplikácii."
+          },
+          {
+            "t": "Ty rozhoduješ, kto to uvidí",
+            "p": "Celá rodina, pár ľudí alebo len ty."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Musím pripojiť banku?",
+            "a": "Nie. Výdavky pridávaš ručne a Daili od teba nikdy nechce bankové údaje."
+          },
+          {
+            "q": "Dá sa používať bez internetu?",
+            "a": "Áno, rozpočet uvidíš aj offline. Výdavok, ktorý sa nepodarilo odoslať, zostane v telefóne a odošle sa, keď budeš znova online."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Sleduj svoj cyklus a s nikým ho nezdieľaj. Nikto v rodine ho nevidí, ani to, že ho používaš.",
+        "benefits": [
+          {
+            "t": "Zostáva v tvojom telefóne",
+            "p": "Údaje o tvojom cykle sa nikdy neposielajú na servery Daili."
+          },
+          {
+            "t": "Úprimné odhady",
+            "p": "Daili ukáže rozpätie dní, nie jeden presný dátum."
+          },
+          {
+            "t": "Diskrétne pripomienky",
+            "p": "Na uzamknutej obrazovke je len to, že máš pripomienku, ak si nezvolíš inak."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Je to zdravotnícka aplikácia?",
+            "a": "Nie. Pomáha ti mať prehľad. Nedáva lekárske rady ani rady k antikoncepcii."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Budujte návyky ako rodina. Každé odškrtnutie pridá rodine energiu, a keď sa ukazovateľ naplní, Minzi vyrazí na výlet.",
+        "benefits": [
+          {
+            "t": "Spolu aj osve",
+            "p": "Návyky pre celú rodinu, pre pár z vás alebo len pre teba."
+          },
+          {
+            "t": "Série, ktoré sa rátajú",
+            "p": "Pozri, koľko dní v rade ti to vydržalo."
+          },
+          {
+            "t": "Jemná pripomienka",
+            "p": "V čase dňa, ktorý sa k návyku hodí."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

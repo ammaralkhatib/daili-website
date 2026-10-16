@@ -260,7 +260,8 @@
       "shot-cycle": "Den private menstruationskalender i Daili-appen",
       "shot-weather": "Vejrudsigten i Daili-appen",
       "shot-documents": "Den private dokumentboks i Daili-appen",
-      "shot-family": "Familiemedlemmerne i Daili-appen"
+      "shot-family": "Familiemedlemmerne i Daili-appen",
+      "shot-budget-split": "Del udgifter i Daili-appen: hvem skylder hvem, og Markér som betalt"
     },
     "screens": {
       "h2": "På hver skærm derhjemme",
@@ -372,6 +373,86 @@
     "h1": "Siden blev ikke fundet",
     "lead": "Den side er flyttet eller har aldrig været der.",
     "home": "Tilbage til forsiden"
+  },
+
+  "features": {
+    "all": "Alle funktioner",
+    "close": "Luk",
+    "questions": "Spørgsmål",
+    "pages": {
+      "budget": {
+        "lead": "Et husholdningsbudget, der er nemt at holde styr på. Sæt en grænse, tilføj en udgift med få tryk, og se altid, hvad der er tilbage.",
+        "benefits": [
+          {
+            "t": "Det, der er tilbage, med ét blik",
+            "p": "Pr. dag og pr. kategori, og hvordan denne måned klarer sig mod den forrige."
+          },
+          {
+            "t": "Alt, der gentages, på én skærm",
+            "p": "Husleje, abonnementer, løn. Stop en af dem med ét tryk."
+          },
+          {
+            "t": "Del fælles udgifter",
+            "p": "Daili regner ud, hvem der skylder hvem, og I gør op i appen."
+          },
+          {
+            "t": "Du bestemmer, hvem der ser det",
+            "p": "Hele familien, nogle få eller kun dig."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Skal jeg forbinde min bank?",
+            "a": "Nej. Du tilføjer selv, hvad du bruger, og Daili beder aldrig om dine bankoplysninger."
+          },
+          {
+            "q": "Kan jeg bruge det uden internet?",
+            "a": "Ja, du kan se dit budget offline. En udgift, der ikke kunne sendes, bliver på din telefon, klar til at blive sendt, når du er online igen."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Følg din cyklus uden at dele den med nogen. Ingen i familien kan se den, eller se, at du bruger den.",
+        "benefits": [
+          {
+            "t": "Bliver på din telefon",
+            "p": "Dine cyklusdata sendes aldrig til serverne hos Daili."
+          },
+          {
+            "t": "Ærlige forudsigelser",
+            "p": "Daili viser et interval af dage, ikke én præcis dato."
+          },
+          {
+            "t": "Diskrete påmindelser",
+            "p": "Låseskærmen siger bare, at du har en påmindelse, medmindre du vælger andet."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Er det en medicinsk app?",
+            "a": "Nej. Den hjælper dig med at holde styr på det. Den giver ikke medicinske råd eller råd om prævention."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Skab vaner sammen som familie. Hvert flueben øger familiens energi, og når bjælken er fyldt, tager Minzi på rejse.",
+        "benefits": [
+          {
+            "t": "Sammen eller alene",
+            "p": "Vaner for hele familien, for nogle få af jer eller kun for dig."
+          },
+          {
+            "t": "Stimer, der tæller",
+            "p": "Se, hvor mange dage i træk du har holdt den ved lige."
+          },
+          {
+            "t": "En venlig påmindelse",
+            "p": "På det tidspunkt af dagen, der passer til vanen."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

@@ -260,7 +260,8 @@
       "shot-cycle": "De privé cycluskalender in de Daili-app",
       "shot-weather": "De weersverwachting in de Daili-app",
       "shot-documents": "De privékluis voor documenten in de Daili-app",
-      "shot-family": "De gezinsleden in de Daili-app"
+      "shot-family": "De gezinsleden in de Daili-app",
+      "shot-budget-split": "Kosten delen in de Daili-app: wie wie wat schuldig is, en Markeren als betaald"
     },
     "screens": {
       "h2": "Op elk scherm in huis",
@@ -372,6 +373,86 @@
     "h1": "Pagina niet gevonden",
     "lead": "Die pagina is verplaatst of heeft nooit bestaan.",
     "home": "Terug naar de beginpagina"
+  },
+
+  "features": {
+    "all": "Alle functies",
+    "close": "Sluiten",
+    "questions": "Vragen",
+    "pages": {
+      "budget": {
+        "lead": "Een gezinsbudget dat simpel blijft. Stel een limiet in, voeg met een paar tikken een uitgave toe en weet altijd wat er nog over is.",
+        "benefits": [
+          {
+            "t": "Wat er over is, in één oogopslag",
+            "p": "Per dag en per categorie, en hoe deze maand zich verhoudt tot de vorige."
+          },
+          {
+            "t": "Alles wat herhaalt, op één scherm",
+            "p": "Huur, abonnementen, salaris. Met één tik stop je er een."
+          },
+          {
+            "t": "Gedeelde kosten verdelen",
+            "p": "Daili rekent uit wie wie wat schuldig is, en jullie verrekenen het in de app."
+          },
+          {
+            "t": "Jij kiest wie het ziet",
+            "p": "Het hele gezin, een paar mensen of alleen jij."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Moet ik mijn bank koppelen?",
+            "a": "Nee. Je voert je uitgaven zelf in, en Daili vraagt nooit om je bankgegevens."
+          },
+          {
+            "q": "Werkt het zonder internet?",
+            "a": "Ja, je budget is ook offline te zien. Een uitgave die niet verstuurd kon worden, blijft op je telefoon, klaar om te versturen zodra je weer online bent."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Houd je cyclus bij zonder hem met iemand te delen. Niemand in het gezin kan hem zien, of zien dat je dit gebruikt.",
+        "benefits": [
+          {
+            "t": "Blijft op je telefoon",
+            "p": "Je cyclusgegevens gaan nooit naar de servers van Daili."
+          },
+          {
+            "t": "Eerlijke voorspellingen",
+            "p": "Daili toont een reeks dagen, geen exacte datum."
+          },
+          {
+            "t": "Discrete herinneringen",
+            "p": "Op het vergrendelscherm staat alleen dat je een herinnering hebt, tenzij je iets anders kiest."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is dit een medische app?",
+            "a": "Nee. Het helpt je om alles bij te houden. Het geeft geen medisch advies en geen advies over anticonceptie."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Bouw samen gewoontes op. Elk vinkje telt mee voor jullie gezinsenergie, en als de balk vol is, gaat Minzi op reis.",
+        "benefits": [
+          {
+            "t": "Samen of alleen",
+            "p": "Gewoontes voor het hele gezin, voor een paar van jullie of alleen voor jou."
+          },
+          {
+            "t": "Reeksen die tellen",
+            "p": "Zie hoeveel dagen op rij je het hebt volgehouden."
+          },
+          {
+            "t": "Een vriendelijke herinnering",
+            "p": "Op het moment van de dag dat bij de gewoonte past."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

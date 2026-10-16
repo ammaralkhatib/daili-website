@@ -17,23 +17,28 @@
  *   - the member count counts up in the page's own number format;
  *   - "Start the day together" is one row of every feature, pinned and moved
  *     sideways by the page scroll on a computer, a swipe row elsewhere
- *     (featureRow, 2026-10-16/005).
+ *     (featureRow, 2026-10-16/005);
+ *   - a card with its own page opens that page in a sheet (featureSheet,
+ *     2026-10-16/006). It needs no GSAP: it runs even if the vendor scripts
+ *     do not.
  * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still,
- * the feature row a plain swipe row with working arrows.
+ * the feature row a plain swipe row with working arrows, the sheet without
+ * its slide.
  */
 (function () {
   "use strict";
   var root = document.querySelector("main.home");
   var g = window.gsap, ST = window.ScrollTrigger, L = window.Lenis;
-  if (!root || !g || !ST) return;
-  g.registerPlugin(ST);
-
+  if (!root) return;
   var RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var MOB = window.matchMedia("(max-width: 860px)").matches;
   var D = document.documentElement.dir === "rtl" ? -1 : 1;
   var $ = function (s, c) { return (c || root).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || root).querySelectorAll(s)); };
   var lenis = null;
+  featureSheet();
+  if (!g || !ST) return;
+  g.registerPlugin(ST);
 
   // Smooth scroll on the window, driven by GSAP's ticker, feeding ScrollTrigger.
   if (L && !RM) {
@@ -263,6 +268,117 @@
         g.set(track, { clearProps: "transform" });
         show(nativeP());
       };
+    });
+  }
+
+  // ---------- the feature sheet (2026-10-16/006) ----------
+  // A card with its own page (a[data-feature-link]) opens that page in a
+  // sheet: a plain click fetches the page once (then from the cache), takes
+  // its [data-feature-sheet] element into a modal <dialog>, and the address
+  // becomes the page's own URL (pushState). Back, Esc, the close button and a
+  // click outside the box close it, and the home URL is back. Focus goes to
+  // the close button, Tab stays inside, and returns to the card on close.
+  // The page under it and Lenis stand still while it is open. A click with a
+  // modifier key, a fetch that fails, or a browser without <dialog> simply
+  // follows the link to the page.
+  function featureSheet() {
+    var row = $("[data-frow]");
+    if (!row || !$("a[data-feature-link]") || !window.fetch || !window.DOMParser || !history.pushState || typeof HTMLDialogElement !== "function") return;
+    var html = document.documentElement, cache = {}, card = null, homeTitle = document.title, width = 0;
+    var dlg = document.createElement("dialog");
+    dlg.className = "fsd";
+    dlg.setAttribute("aria-labelledby", "fs-title");
+    dlg.setAttribute("data-lenis-prevent", "");
+    dlg.innerHTML = '<div class="fsd-box"><button class="fsd-x" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="fsd-body"></div></div>';
+    var box = dlg.firstChild, x = box.firstChild, body = box.lastChild;
+    x.setAttribute("aria-label", row.dataset.close || "Close");
+    root.appendChild(dlg);
+
+    var load = function (url) {
+      if (!cache[url]) {
+        cache[url] = fetch(url, { credentials: "same-origin" }).then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.text();
+        }).then(function (t) {
+          var doc = new DOMParser().parseFromString(t, "text/html");
+          var el = doc.querySelector("[data-feature-sheet]");
+          if (!el) throw new Error("no [data-feature-sheet] in " + url);
+          return { el: el, title: doc.title };
+        });
+        // A failed fetch is tried again next time.
+        cache[url].catch(function () { delete cache[url]; });
+      }
+      return cache[url];
+    };
+    var show = function (page) {
+      body.innerHTML = "";
+      body.appendChild(document.importNode(page.el, true));
+      document.title = page.title || homeTitle;
+      width = html.clientWidth;
+      html.classList.add("sheet-open");
+      if (lenis) lenis.stop();
+      if (!dlg.open) dlg.showModal();
+      box.scrollTop = 0;
+      var tx = body.querySelector(".fs-tx");
+      if (tx) tx.scrollTop = 0;
+      x.focus();
+    };
+    // Closing goes through the history while the sheet's URL is showing, so
+    // Back and the close button end in the same place.
+    var requestClose = function () {
+      if (history.state && history.state.dailiSheet) history.back();
+      else if (dlg.open) dlg.close();
+    };
+    dlg.addEventListener("close", function () {
+      html.classList.remove("sheet-open");
+      if (lenis) lenis.start();
+      document.title = homeTitle;
+      // Only if the page under the sheet changed width (a scrollbar came or went).
+      if (ST && html.clientWidth !== width) ST.refresh();
+      if (card) card.focus({ preventScroll: true });
+      // Closed by the browser itself (a second Esc): take the URL back too.
+      if (history.state && history.state.dailiSheet) history.back();
+    });
+    x.addEventListener("click", requestClose);
+    dlg.addEventListener("cancel", function (ev) { ev.preventDefault(); requestClose(); });
+    dlg.addEventListener("click", function (ev) { if (ev.target === dlg) requestClose(); });
+    dlg.addEventListener("keydown", function (ev) {
+      if (ev.key !== "Tab") return;
+      var f = Array.prototype.filter.call(dlg.querySelectorAll('a[href],button:not([disabled]),summary,[tabindex]:not([tabindex="-1"])'), function (el) { return el.getClientRects().length > 0; });
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+    });
+    window.addEventListener("popstate", function (ev) {
+      var st = ev.state;
+      if (st && st.dailiSheet) {
+        // Forward onto a sheet's URL again: open it, from the cache.
+        load(st.dailiSheet).then(function (page) {
+          if (history.state && history.state.dailiSheet === st.dailiSheet) show(page);
+        }, function () { location.reload(); });
+      } else if (dlg.open) {
+        dlg.close();
+      }
+    });
+    // Fetch on the first hover or focus, so the click opens at once.
+    var warm = function (ev) {
+      var a = ev.target.closest ? ev.target.closest("a[data-feature-link]") : null;
+      if (a) load(a.getAttribute("href")).catch(function () {});
+    };
+    row.addEventListener("pointerover", warm, { passive: true });
+    row.addEventListener("focusin", warm);
+    document.addEventListener("click", function (ev) {
+      var a = ev.target.closest ? ev.target.closest("a[data-feature-link]") : null;
+      if (!a || ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      ev.preventDefault();
+      card = a;
+      var url = a.getAttribute("href");
+      load(url).then(function (page) {
+        if (dlg.open) return;
+        history.pushState({ dailiSheet: url }, "", url);
+        show(page);
+      }, function () { location.href = url; });
     });
   }
 

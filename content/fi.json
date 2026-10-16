@@ -260,7 +260,8 @@
       "shot-cycle": "Yksityinen kuukautiskalenteri Daili-sovelluksessa",
       "shot-weather": "Sääennuste Daili-sovelluksessa",
       "shot-documents": "Yksityinen asiakirjaholvi Daili-sovelluksessa",
-      "shot-family": "Perheenjäsenet Daili-sovelluksessa"
+      "shot-family": "Perheenjäsenet Daili-sovelluksessa",
+      "shot-budget-split": "Kulujen jakaminen Daili-sovelluksessa: kuka on velkaa kenellekin, ja Merkitse maksetuksi"
     },
     "screens": {
       "h2": "Jokaisella näytöllä kotonasi",
@@ -372,6 +373,86 @@
     "h1": "Sivua ei löytynyt",
     "lead": "Sivu on siirtynyt tai sitä ei ole koskaan ollutkaan.",
     "home": "Takaisin etusivulle"
+  },
+
+  "features": {
+    "all": "Kaikki ominaisuudet",
+    "close": "Sulje",
+    "questions": "Kysymykset",
+    "pages": {
+      "budget": {
+        "lead": "Perheen budjetti, joka pysyy yksinkertaisena. Aseta raja, lisää meno muutamalla napautuksella ja tiedä aina, paljonko on jäljellä.",
+        "benefits": [
+          {
+            "t": "Jäljellä oleva yhdellä silmäyksellä",
+            "p": "Päivää ja luokkaa kohden, ja miten tämä kuukausi vertautuu edelliseen."
+          },
+          {
+            "t": "Kaikki toistuva yhdellä näytöllä",
+            "p": "Vuokra, tilaukset, palkka. Lopeta yksi niistä yhdellä napautuksella."
+          },
+          {
+            "t": "Jaa yhteiset kulut",
+            "p": "Daili laskee, kuka on velkaa kenellekin, ja tasaatte velat sovelluksessa."
+          },
+          {
+            "t": "Sinä päätät, kuka sen näkee",
+            "p": "Koko perhe, muutama henkilö tai vain sinä."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pitääkö pankki yhdistää?",
+            "a": "Ei. Lisäät menosi itse, eikä Daili koskaan kysy pankkitietojasi."
+          },
+          {
+            "q": "Voinko käyttää sitä ilman nettiä?",
+            "a": "Kyllä, näet budjettisi myös offline-tilassa. Meno, jota ei voitu lähettää, odottaa puhelimessasi ja lähtee, kun olet taas verkossa."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Seuraa kiertoasi jakamatta sitä kenenkään kanssa. Kukaan perheessä ei näe sitä, eikä sitä, että käytät sitä.",
+        "benefits": [
+          {
+            "t": "Pysyy puhelimessasi",
+            "p": "Kiertotietojasi ei koskaan lähetetä Daili-palvelimille."
+          },
+          {
+            "t": "Rehelliset ennusteet",
+            "p": "Daili näyttää päivien vaihteluvälin, ei yhtä tarkkaa päivää."
+          },
+          {
+            "t": "Huomaamattomat muistutukset",
+            "p": "Lukitusnäytöllä lukee vain, että sinulla on muistutus, ellet valitse toisin."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Onko tämä lääketieteellinen sovellus?",
+            "a": "Ei. Se auttaa sinua pitämään kirjaa. Se ei anna lääketieteellisiä neuvoja eikä ehkäisyneuvoja."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Rakentakaa tapoja koko perheenä. Jokainen merkintä kasvattaa perheen energiaa, ja kun palkki on täynnä, Minzi lähtee matkalle.",
+        "benefits": [
+          {
+            "t": "Yhdessä tai yksin",
+            "p": "Tapoja koko perheelle, muutamalle teistä tai vain sinulle."
+          },
+          {
+            "t": "Putket, joilla on väliä",
+            "p": "Näe, montako päivää putkeen olet pitänyt tavan yllä."
+          },
+          {
+            "t": "Lempeä muistutus",
+            "p": "Siihen aikaan päivästä, joka sopii tavalle."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

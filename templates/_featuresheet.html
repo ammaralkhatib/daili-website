@@ -1,0 +1,18 @@
+<!-- The feature sheet: everything inside [data-feature-sheet] is what the home
+     page's sheet shows (home.js fetches the page and takes this element). The
+     store badges carry no ids: the partial is on every page's header too. -->
+  <article class="fsheet" data-feature-sheet data-slug="{{ page.feature.slug }}" aria-labelledby="fs-title">
+    <div class="fs-vis g-{{ page.feature.tint }}">{{{ page.feature.visual }}}</div>
+    <div class="fs-tx">
+      <h1 id="fs-title">{{ page.feature.name }}</h1>
+      <p class="fs-lead">{{ page.feature.lead }}</p>
+      <ul class="fs-ben">
+{{{ page.feature.benefits }}}
+      </ul>
+{{{ page.feature.faq }}}
+      <div class="ctas badges fs-get">
+{{> storebadges }}
+      </div>
+      <a class="fs-back" href="{{ page.feature.allHref }}">{{ features.all }}</a>
+    </div>
+  </article>

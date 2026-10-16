@@ -260,7 +260,8 @@
       "shot-cycle": "Daili uygulamasında özel döngü takibi",
       "shot-weather": "Daili uygulamasında hava durumu tahmini",
       "shot-documents": "Daili uygulamasında özel belge kasası",
-      "shot-family": "Daili uygulamasında aile üyeleri ekranı"
+      "shot-family": "Daili uygulamasında aile üyeleri ekranı",
+      "shot-budget-split": "Daili uygulamasında Masrafları paylaş ekranı: kim kime borçlu ve Ödendi olarak işaretle"
     },
     "screens": {
       "h2": "Evinizdeki her ekranda",
@@ -372,6 +373,86 @@
     "h1": "Sayfa bulunamadı",
     "lead": "Bu sayfa taşındı ya da hiç var olmadı.",
     "home": "Ana sayfaya dön"
+  },
+
+  "features": {
+    "all": "Tüm özellikler",
+    "close": "Kapat",
+    "questions": "Sorular",
+    "pages": {
+      "budget": {
+        "lead": "Sade kalan bir aile bütçesi. Bir limit belirleyin, harcamayı birkaç dokunuşla ekleyin ve ne kaldığını her zaman bilin.",
+        "benefits": [
+          {
+            "t": "Ne kaldığı, bir bakışta",
+            "p": "Gün ve kategori bazında; ayrıca bu ayın geçen ayla karşılaştırması."
+          },
+          {
+            "t": "Tekrarlanan her şey tek ekranda",
+            "p": "Kira, abonelikler, maaş. Yinelemeyi tek dokunuşla bitirin."
+          },
+          {
+            "t": "Ortak masrafları paylaşın",
+            "p": "Kimin kime borçlu olduğunu Daili hesaplar, siz de uygulamada hesaplaşırsınız."
+          },
+          {
+            "t": "Kimin göreceğini siz seçin",
+            "p": "Tüm aile, birkaç kişi ya da yalnızca siz."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Bankamı bağlamam gerekiyor mu?",
+            "a": "Hayır. Harcamalarınızı kendiniz eklersiniz; Daili banka bilgilerinizi asla istemez."
+          },
+          {
+            "q": "İnternet olmadan kullanabilir miyim?",
+            "a": "Evet, bütçenizi çevrimdışı da görebilirsiniz. Gönderilemeyen bir harcama telefonunuzda kalır ve yeniden bağlandığınızda gönderilmeye hazırdır."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Döngünüzü kimseyle paylaşmadan takip edin. Ailede kimse onu ya da onu kullandığınızı göremez.",
+        "benefits": [
+          {
+            "t": "Telefonunuzda kalır",
+            "p": "Döngü verileriniz asla Daili sunucularına gönderilmez."
+          },
+          {
+            "t": "Dürüst tahminler",
+            "p": "Daili tek bir kesin tarih değil, bir gün aralığı gösterir."
+          },
+          {
+            "t": "Gizli hatırlatmalar",
+            "p": "Siz aksini seçmedikçe kilit ekranında yalnızca bir hatırlatmanız olduğu yazar."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Bu bir sağlık uygulaması mı?",
+            "a": "Hayır. Takip etmenize yardımcı olur. Tıbbi ya da doğum kontrolüyle ilgili tavsiye vermez."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Alışkanlıkları aile olarak edinin. Her işaret aile enerjisini artırır; çubuk dolunca Minzi geziye çıkar.",
+        "benefits": [
+          {
+            "t": "Birlikte ya da tek başına",
+            "p": "Tüm aile için, birkaç kişi için ya da yalnızca sizin için alışkanlıklar."
+          },
+          {
+            "t": "Sayılan seriler",
+            "p": "Kaç gün üst üste devam ettiğinizi görün."
+          },
+          {
+            "t": "Nazik bir hatırlatma",
+            "p": "Alışkanlığa uyan saatte."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

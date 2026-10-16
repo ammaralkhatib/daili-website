@@ -64,11 +64,15 @@ function substitute(tpl, resolve) {
 }
 
 function render(tpl, data, includes, where) {
-  // 1. includes — one level, resolved before anything else
-  tpl = tpl.replace(/\{\{>\s*([\w-]+)\s*\}\}/g, (_m, name) => {
-    if (!(name in includes)) throw new Error(`unknown include '${name}' in ${where}`);
-    return includes[name];
-  });
+  // 1. includes — resolved before anything else; a partial may include
+  // another one (the feature sheet holds the store badges), up to 3 deep
+  for (let depth = 0; /\{\{>/.test(tpl); depth++) {
+    if (depth === 3) throw new Error(`includes nested more than 3 deep in ${where}`);
+    tpl = tpl.replace(/\{\{>\s*([\w-]+)\s*\}\}/g, (_m, name) => {
+      if (!(name in includes)) throw new Error(`unknown include '${name}' in ${where}`);
+      return includes[name];
+    });
+  }
 
   // 2. conditionals — {{? path }}…{{/}} keeps the block only if truthy/non-empty
   tpl = tpl.replace(/\{\{\?\s*([\w.]+)\s*\}\}([\s\S]*?)\{\{\/\}\}/g, (_m, key, inner) => {
@@ -120,7 +124,7 @@ const templates = Object.fromEntries(
     .map((f) => [f, read(`templates/${f}`)]),
 );
 
-const includes = { storebadges: templates['_storebadges.html'] };
+const includes = { storebadges: templates['_storebadges.html'], featuresheet: templates['_featuresheet.html'] };
 
 // ---------------------------------------------------------------------------
 // per-locale/page helpers
@@ -266,9 +270,36 @@ const helpPages = [
   })),
 ];
 
+/**
+ * The feature pages (2026-10-16/006): one per HOME_FEATURES entry with
+ * `page: true`, in every locale, each its own hreflang cluster. English at
+ * /features/<slug>/, every other locale at /<loc>/features/<slug>/, the
+ * English slug everywhere. 🔴 These URLs never move: they become the app's
+ * deep links (site.config.mjs HOME_FEATURES says the same).
+ *
+ * The title is the card's feature name + " · daili", the description the
+ * page's lead, so neither can drift from what the page shows.
+ */
+const featureOut = (slug, loc) => `${dirFor(loc).slice(1)}features/${slug}/index.html`;
+const featureUrl = (slug, loc) => `${dirFor(loc)}features/${slug}/`;
+const featureCard = (d, loc) => lookup(content[loc], `home.day.cards.${HOME_FEATURES.indexOf(d)}`, `content/${loc}.json`);
+const featurePages = HOME_FEATURES.filter((d) => d.page).map((d) => ({
+  id: `feature:${d.slug}`,
+  template: 'feature.html',
+  locales: 'all',
+  cluster: `feature:${d.slug}`,
+  out: (loc) => featureOut(d.slug, loc),
+  priority: () => '0.7',
+  meta: (loc) => ({
+    title: `${featureCard(d, loc).h3} · daili`,
+    description: lookup(content[loc], `features.pages.${d.slug}.lead`, `content/${loc}.json`),
+  }),
+  feature: d,
+}));
+
 /** Everything the build loops over: the manifest, the index, one page per post,
- *  and the help center. */
-const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages];
+ *  the help center and the feature pages. */
+const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages, ...featurePages];
 
 /** "2 September 2026" — the byline's readable half. The machine-readable half
  *  is the raw ISO string in <time datetime>. */
@@ -463,17 +494,66 @@ function homeIcon(name, width = 2) {
   return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${HOME_ICONS[name]}</svg>`;
 }
 
-function renderHome(loc) {
+const homeImg = (name) => `/assets/img/home/${name}.webp`;
+
+/**
+ * What a feature card on the home page and a feature page draw alike: the
+ * floating card, the phone, a screenshot's widget. One copy, so the sheet a
+ * card opens shows exactly the card's own widget.
+ */
+function homeKit(loc) {
   const where = `content/${loc}.json`;
   const c = content[loc];
   const h = (key) => lookup(c, key, where);
   const e = escapeHtml;
+  const ico = (name, tone, style = '') => `<span class="ico c-${tone}"${style ? ` style="${style}"` : ''}>${homeIcon(name)}</span>`;
+  const ck = `<span class="ck">${homeIcon('check', 3)}</span>`;
+  const fcIn = (icon, tone, t, s, tick) => `<div class="fc-in">${ico(icon, tone)}<span class="fc-tx"><b>${e(t)}</b><span>${e(s)}</span></span>${tick ? ck : ''}</div>`;
+  const phone = (shot, { cls = '', style = '', alt = h(`home.alt.${shot}`), eager = false } = {}) => {
+    const { width, height } = imageSize(shot);
+    return `<div class="phone${cls ? ` ${cls}` : ''}"${style ? ` style="${style}"` : ''}><div class="scr"><img src="${imgSrc(shot, loc)}" alt="${e(alt)}" width="${width}" height="${height}"${eager ? '' : ' loading="lazy"'} decoding="async"></div></div>`;
+  };
+  const fill = (key, vars) => {
+    const s = h(key);
+    for (const k of Object.keys(vars)) {
+      if (s.split(`{${k}}`).length !== 2) throw new Error(`${key} in ${where} must contain {${k}} exactly once`);
+    }
+    return s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m));
+  };
+  // The budget card's amount: BUDGET_PER_DAY euros in the currency this
+  // locale's budget screenshot shows, rounded like the app's demo data.
+  const budgetAmount = () => {
+    const cur = BUDGET_CURRENCY[loc];
+    if (!cur || !(cur in EURO_RATES)) throw new Error(`BUDGET_CURRENCY has no currency with a rate for ${loc}`);
+    let v = BUDGET_PER_DAY * EURO_RATES[cur];
+    if (EURO_RATES[cur] !== 1) {
+      const step = 10 ** Math.max(0, Math.floor(Math.log10(v)) - 2);
+      v = Math.round(v / step) * step;
+    }
+    return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(v);
+  };
+  // The energy card's centre, in % of the phone's height: the frame is 3.667 %
+  // of the phone's width on each side (home.css), the screen is the rest.
+  const frameY = 3.667 * (640 / 1390);
+  const energyAt = (frameY + (HABITS_ENERGY.top + HABITS_ENERGY.height / 2) * (100 - 2 * frameY) / 100).toFixed(2);
+  /** HOME_FEATURES[i]'s floating widget, with home.day.cards[i]'s words. */
+  const widget = (d, i) => {
+    const card = h(`home.day.cards.${i}`);
+    const t = d.amount ? fill(`home.day.cards.${i}.t`, { amount: budgetAmount() }) : card.t;
+    return d.energy
+      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(t)}</b><span>${e(card.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
+      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, t, card.s, Boolean(d.done))}</div>`;
+  };
+  return { where, c, h, e, ico, ck, fcIn, phone, fill, widget };
+}
+
+function renderHome(loc) {
+  const { where, h, e, ico, fcIn, phone, fill, widget } = homeKit(loc);
   const list = (key, n) => {
     const v = h(key);
     if (!Array.isArray(v) || v.length !== n) throw new Error(`${key} in ${where} must have exactly ${n} entries, has ${Array.isArray(v) ? v.length : 'none'}`);
     return v;
   };
-  const homeImg = (name) => `/assets/img/home/${name}.webp`;
   // alt: a photo is decorative ("") unless the caller passes its description —
   // only the member cards do; the mosaic and the flat-lay sit in aria-hidden
   // boxes. A screenshot in a phone is described by default (home.alt.<shot>),
@@ -481,13 +561,6 @@ function renderHome(loc) {
   const photo = (name, extra = '', alt = '') => {
     const { width, height } = imageSize(name);
     return `<img src="${homeImg(name)}" alt="${e(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async"${extra}>`;
-  };
-  const ico = (name, tone, style = '') => `<span class="ico c-${tone}"${style ? ` style="${style}"` : ''}>${homeIcon(name)}</span>`;
-  const ck = `<span class="ck">${homeIcon('check', 3)}</span>`;
-  const fcIn = (icon, tone, t, s, tick) => `<div class="fc-in">${ico(icon, tone)}<span class="fc-tx"><b>${e(t)}</b><span>${e(s)}</span></span>${tick ? ck : ''}</div>`;
-  const phone = (shot, { cls = '', style = '', alt = h(`home.alt.${shot}`), eager = false } = {}) => {
-    const { width, height } = imageSize(shot);
-    return `<div class="phone${cls ? ` ${cls}` : ''}"${style ? ` style="${style}"` : ''}><div class="scr"><img src="${imgSrc(shot, loc)}" alt="${e(alt)}" width="${width}" height="${height}"${eager ? '' : ' loading="lazy"'} decoding="async"></div></div>`;
   };
   // Headline words, one span each, for the intro. A line with no spaces (CJK,
   // Thai) is one word, which is exactly right for those scripts.
@@ -498,13 +571,6 @@ function renderHome(loc) {
         <div class="ev2"><i></i>${e(h('home.watch.list'))}</div>
       </div></div></div>`;
   const num = (n, digits = 0) => new Intl.NumberFormat(loc, { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(n);
-  const fill = (key, vars) => {
-    const s = h(key);
-    for (const k of Object.keys(vars)) {
-      if (s.split(`{${k}}`).length !== 2) throw new Error(`${key} in ${where} must contain {${k}} exactly once`);
-    }
-    return s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m));
-  };
 
   // ---- hero ----
   // The phone plays the seven scenes (home.js). Every screenshot is in the
@@ -570,38 +636,22 @@ function renderHome(loc) {
     if (day[i].slug !== d.slug) throw new Error(`home.day.cards[${i}].slug in ${where} is '${day[i].slug}', HOME_FEATURES says '${d.slug}' — the slug is data, never translated`);
     if (i && HOME_FEATURES[i - 1].tint === d.tint) throw new Error(`HOME_FEATURES: '${HOME_FEATURES[i - 1].slug}' and '${d.slug}' are neighbours with the same tint '${d.tint}'`);
   });
-  // The energy card's centre, in % of the phone's height: the frame is 3.667 %
-  // of the phone's width on each side (home.css), the screen is the rest.
-  const frameY = 3.667 * (640 / 1390);
-  const energyAt = (frameY + (HABITS_ENERGY.top + HABITS_ENERGY.height / 2) * (100 - 2 * frameY) / 100).toFixed(2);
-  // The budget card's amount: BUDGET_PER_DAY euros in the currency this
-  // locale's budget screenshot shows, rounded like the app's demo data.
-  const budgetAmount = () => {
-    const cur = BUDGET_CURRENCY[loc];
-    if (!cur || !(cur in EURO_RATES)) throw new Error(`BUDGET_CURRENCY has no currency with a rate for ${loc}`);
-    let v = BUDGET_PER_DAY * EURO_RATES[cur];
-    if (EURO_RATES[cur] !== 1) {
-      const step = 10 ** Math.max(0, Math.floor(Math.log10(v)) - 2);
-      v = Math.round(v / step) * step;
-    }
-    return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(v);
-  };
   const newBadge = `<span class="fnew">${e(h('home.day.new'))}</span>`;
+  // A feature with its own page is a link to it, in this page's language;
+  // home.js opens that page in a sheet. The rest stay focusable articles.
   const dayCards = HOME_FEATURES.map((d, i) => {
     const c = day[i];
-    const t = d.amount ? fill(`home.day.cards.${i}.t`,{ amount: budgetAmount() }) : c.t;
     const isNew = Boolean(d.newUntil) && BUILD_DATE <= d.newUntil;
-    const widget = d.energy
-      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(t)}</b><span>${e(c.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
-      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, t, c.s, Boolean(d.done))}</div>`;
-    return `        <article class="fcard g-${d.tint}" data-slug="${d.slug}" tabindex="0"><h3>${e(c.h3)}${isNew ? ` ${newBadge}` : ''}</h3><p>${e(c.p)}</p>
-          <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget}</div></article>`;
+    const [tag, attrs] = d.page ? ['a', ` href="${featureUrl(d.slug, loc)}" data-feature-link`] : ['article', ' tabindex="0"'];
+    return `        <${tag} class="fcard g-${d.tint}" data-slug="${d.slug}"${attrs}><h3>${e(c.h3)}${isNew ? ` ${newBadge}` : ''}</h3><p>${e(c.p)}</p>
+          <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget(d, i)}</div></${tag}>`;
   }).join('\n');
   // Above the row: the counter and the two arrows; under it, the progress
   // bar. Without JavaScript they hold their place but stay invisible (home.css),
   // so nothing moves when home.js shows them.
   const counterTpl = h('home.day.counter');
-  const dayRow = `    <div class="frow" data-frow>
+  // data-close: the sheet's close-button label (home.js builds the sheet).
+  const dayRow = `    <div class="frow" data-frow data-close="${e(h('features.close'))}">
       <div class="wrap frow-head">
         <p class="frow-count" data-frow-count data-tpl="${e(counterTpl)}" aria-hidden="true">${e(fill('home.day.counter', { n: num(1), total: num(HOME_FEATURES.length) }))}</p>
         <div class="frow-nav"><button class="frow-btn prev" type="button" data-frow-prev aria-label="${e(h('home.day.prev'))}">${homeIcon('arrow', 2.2)}</button><button class="frow-btn" type="button" data-frow-next aria-label="${e(h('home.day.next'))}">${homeIcon('arrow', 2.2)}</button></div>
@@ -768,6 +818,40 @@ function renderFaq(loc) {
     // tag parity between locales is what check-content.mjs guards.
     return `      <details${i === 0 ? ' open' : ''}><summary>${escapeHtml(item.q)}</summary><p>${item.a}</p></details>`;
   }).join('\n');
+}
+
+/**
+ * A feature page's parts (templates/_featuresheet.html), from
+ * features.pages.<slug> and the feature's home card. The same fragment is the
+ * full page and, fetched by home.js, the sheet on the home page.
+ */
+function renderFeature(d, loc) {
+  const { where, h, e, ico, phone, widget } = homeKit(loc);
+  const pg = h(`features.pages.${d.slug}`);
+  const card = featureCard(d, loc);
+  const benefits = h(`features.pages.${d.slug}.benefits`);
+  if (!Array.isArray(benefits) || benefits.length !== d.benefits.length) {
+    throw new Error(`features.pages.${d.slug}.benefits in ${where} must have exactly ${d.benefits.length} entries (HOME_FEATURES benefits), has ${Array.isArray(benefits) ? benefits.length : 'none'}`);
+  }
+  const faq = h(`features.pages.${d.slug}.faq`);
+  if (!Array.isArray(faq)) throw new Error(`features.pages.${d.slug}.faq in ${where} must be a list (empty for none)`);
+  const tone = d.tone || d.tint;
+  const visual = `<div class="fs-stage${d.shot2 ? ' two' : ''}"><div class="dv">${phone(d.shot, { eager: true })}${widget(d, HOME_FEATURES.indexOf(d))}</div>${d.shot2 ? phone(d.shot2, { cls: 'p2' }) : ''}</div>`;
+  return {
+    slug: d.slug,
+    tint: d.tint,
+    name: card.h3,
+    lead: pg.lead,
+    visual,
+    benefits: benefits.map((b, i) => `        <li>${ico(d.benefits[i], tone)}<div><b>${e(b.t)}</b><p>${e(b.p)}</p></div></li>`).join('\n'),
+    faq: faq.length ? `      <section class="fs-faq" aria-labelledby="fs-faq-h">
+        <h2 id="fs-faq-h">${e(h('features.questions'))}</h2>
+        <div class="faq">
+${faq.map((it) => `          <details><summary>${e(it.q)}</summary><p>${e(it.a)}</p></details>`).join('\n')}
+        </div>
+      </section>` : '',
+    allHref: `${dirFor(loc)}#features`,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -1349,13 +1433,14 @@ function build() {
           // (Lenis) and no native smooth scroll-behavior. `html:has(.home)`
           // would do it without a class and is not an option: Firefox ESR 115
           // ships no :has().
-          htmlClass: pg.id === 'landing' ? 'landing' : '',
+          // A feature page is the home page's sheet as a page: light only too.
+          htmlClass: pg.id === 'landing' || pg.feature ? 'landing' : '',
           cssHref, jsHref, helpSearchHref,
           homeHref: dirFor(loc),
           // The header's section links (#features, #plus, …) point into the
           // home page: bare anchors on it, <home>#… everywhere else.
           anchorBase: pg.id === 'landing' ? '' : dirFor(loc),
-          homeCss: pg.id === 'landing' ? `<link rel="stylesheet" href="${homeCssHref}">` : '',
+          homeCss: pg.id === 'landing' || pg.feature ? `<link rel="stylesheet" href="${homeCssHref}">` : '',
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
           footerLinks: renderFooterLinks(loc),
@@ -1367,6 +1452,7 @@ function build() {
           webAppUrl: WEB_APP_URL,
           home: pg.id === 'landing' ? renderHome(loc) : {},
           faq: pg.id === 'landing' ? renderFaq(loc) : '',
+          feature: pg.feature ? renderFeature(pg.feature, loc) : {},
           headExtra: '',
         },
       };

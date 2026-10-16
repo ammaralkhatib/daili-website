@@ -260,7 +260,8 @@
       "shot-cycle": "Pelacak siklus pribadi di aplikasi Daili",
       "shot-weather": "Prakiraan cuaca di aplikasi Daili",
       "shot-documents": "Brankas dokumen pribadi di aplikasi Daili",
-      "shot-family": "Layar anggota keluarga di aplikasi Daili"
+      "shot-family": "Layar anggota keluarga di aplikasi Daili",
+      "shot-budget-split": "Bagi biaya di aplikasi Daili: siapa berutang ke siapa, dan Tandai sudah dibayar"
     },
     "screens": {
       "h2": "Di setiap layar di rumahmu",
@@ -372,6 +373,86 @@
     "h1": "Halaman tidak ditemukan",
     "lead": "Halaman itu sudah dipindahkan atau memang tidak pernah ada.",
     "home": "Kembali ke halaman utama"
+  },
+
+  "features": {
+    "all": "Semua fitur",
+    "close": "Tutup",
+    "questions": "Pertanyaan",
+    "pages": {
+      "budget": {
+        "lead": "Anggaran keluarga yang tetap sederhana. Tetapkan batas, catat pengeluaran dengan beberapa ketukan, dan selalu tahu sisanya.",
+        "benefits": [
+          {
+            "t": "Sisanya, langsung terlihat",
+            "p": "Per hari dan per kategori, serta perbandingan bulan ini dengan bulan lalu."
+          },
+          {
+            "t": "Semua yang berulang, dalam satu layar",
+            "p": "Sewa, langganan, gaji. Hentikan salah satunya dengan sekali ketuk."
+          },
+          {
+            "t": "Bagi biaya bersama",
+            "p": "Daili menghitung siapa berutang ke siapa, dan kamu melunasinya di aplikasi."
+          },
+          {
+            "t": "Kamu yang memilih siapa yang melihatnya",
+            "p": "Seluruh keluarga, beberapa orang, atau hanya kamu."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Apakah saya perlu menghubungkan bank?",
+            "a": "Tidak. Kamu mencatat pengeluaranmu sendiri, dan Daili tidak pernah meminta data bankmu."
+          },
+          {
+            "q": "Bisakah dipakai tanpa internet?",
+            "a": "Bisa, anggaranmu tetap terlihat saat offline. Pengeluaran yang belum terkirim tetap tersimpan di ponselmu, siap dikirim saat kamu online lagi."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Catat siklusmu tanpa membagikannya ke siapa pun. Tak ada anggota keluarga yang bisa melihatnya, atau tahu kamu memakainya.",
+        "benefits": [
+          {
+            "t": "Tetap di ponselmu",
+            "p": "Data siklusmu tidak pernah dikirim ke server Daili."
+          },
+          {
+            "t": "Perkiraan yang jujur",
+            "p": "Daili menampilkan rentang hari, bukan satu tanggal pasti."
+          },
+          {
+            "t": "Pengingat yang tidak mencolok",
+            "p": "Layar kunci hanya menyebut bahwa kamu punya pengingat, kecuali kamu memilih lain."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Apakah ini aplikasi medis?",
+            "a": "Bukan. Aplikasi ini membantumu mencatat, tetapi tidak memberi saran medis atau saran kontrasepsi."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Bangun kebiasaan bersama keluarga. Setiap centang menambah energi keluarga, dan saat batangnya penuh, Minzi pergi jalan-jalan.",
+        "benefits": [
+          {
+            "t": "Bersama atau sendiri",
+            "p": "Kebiasaan untuk seluruh keluarga, untuk beberapa orang, atau hanya untukmu."
+          },
+          {
+            "t": "Rentetan yang berarti",
+            "p": "Lihat berapa hari berturut-turut kamu berhasil menjalankannya."
+          },
+          {
+            "t": "Pengingat yang lembut",
+            "p": "Pada waktu yang pas untuk kebiasaan itu."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

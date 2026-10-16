@@ -260,7 +260,8 @@
       "shot-cycle": "Il diario del ciclo privato nell’app Daili",
       "shot-weather": "Le previsioni meteo nell’app Daili",
       "shot-documents": "La cassaforte privata dei documenti nell’app Daili",
-      "shot-family": "I membri della famiglia nell’app Daili"
+      "shot-family": "I membri della famiglia nell’app Daili",
+      "shot-budget-split": "Dividi le spese nell’app Daili: chi deve cosa a chi, e Segna come pagato"
     },
     "screens": {
       "h2": "Su ogni schermo di casa",
@@ -372,6 +373,86 @@
     "h1": "Pagina non trovata",
     "lead": "Quella pagina è stata spostata o non è mai esistita.",
     "home": "Torna alla pagina iniziale"
+  },
+
+  "features": {
+    "all": "Tutte le funzioni",
+    "close": "Chiudi",
+    "questions": "Domande",
+    "pages": {
+      "budget": {
+        "lead": "Un bilancio familiare che resta semplice. Imposta un limite, aggiungi una spesa in pochi tocchi e sai sempre quanto resta.",
+        "benefits": [
+          {
+            "t": "Quanto resta, a colpo d’occhio",
+            "p": "Per giorno e per categoria, e come va questo mese rispetto al precedente."
+          },
+          {
+            "t": "Tutto ciò che si ripete, in una schermata",
+            "p": "Affitto, abbonamenti, stipendio. Ne interrompi uno con un solo tocco."
+          },
+          {
+            "t": "Dividi le spese comuni",
+            "p": "Daili calcola chi deve cosa a chi, e saldi i conti nell’app."
+          },
+          {
+            "t": "Scegli tu chi lo vede",
+            "p": "Tutta la famiglia, alcune persone o solo tu."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Devo collegare la mia banca?",
+            "a": "No. Le spese le aggiungi tu, e Daili non ti chiede mai i dati bancari."
+          },
+          {
+            "q": "Posso usarlo senza internet?",
+            "a": "Sì, puoi vedere il bilancio anche offline. Una spesa che non è stato possibile inviare resta sul telefono, pronta a partire quando torni online."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Tieni traccia del tuo ciclo senza condividerlo con nessuno. Nessuno in famiglia può vederlo, né sapere che lo usi.",
+        "benefits": [
+          {
+            "t": "Resta sul tuo telefono",
+            "p": "I dati del tuo ciclo non vengono mai inviati ai server di Daili."
+          },
+          {
+            "t": "Previsioni oneste",
+            "p": "Daili mostra un intervallo di giorni, non una data precisa."
+          },
+          {
+            "t": "Promemoria discreti",
+            "p": "Sulla schermata di blocco compare solo che hai un promemoria, a meno che tu non scelga diversamente."
+          }
+        ],
+        "faq": [
+          {
+            "q": "È un’app medica?",
+            "a": "No. Ti aiuta a tenere traccia. Non dà consigli medici né sulla contraccezione."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Crea abitudini in famiglia. Ogni spunta aumenta l’energia della famiglia e, quando la barra è piena, Minzi parte per un viaggio.",
+        "benefits": [
+          {
+            "t": "Insieme o da soli",
+            "p": "Abitudini per tutta la famiglia, per alcuni di voi o solo per te."
+          },
+          {
+            "t": "Serie che contano",
+            "p": "Guarda per quanti giorni di fila non hai mollato."
+          },
+          {
+            "t": "Un promemoria gentile",
+            "p": "All’ora del giorno più adatta all’abitudine."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

@@ -1065,6 +1065,10 @@ export const HOME_ICONS = {
   drop: '<path d="M12 3c3.5 4.2 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-6.8 6-11z"/>',
   rain: '<path d="M7 15.5a4 4 0 0 1-.4-8 5.5 5.5 0 0 1 10.6 1.3 3.4 3.4 0 0 1 .3 6.7z"/><path d="M8.5 18.5l-1 2M12.5 18.5l-1 2M16.5 18.5l-1 2"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  eye: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/>',
+  repeat: '<path d="M17 3l3 3-3 3"/><path d="M20 6H8a4 4 0 0 0-4 4v1M7 21l-3-3 3-3"/><path d="M4 18h12a4 4 0 0 0 4-4v-1"/>',
+  lock: '<rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/>',
+  bell: '<path d="M18 9.5a6 6 0 0 0-12 0c0 6.5-2.5 8-2.5 8h17s-2.5-1.5-2.5-8"/><path d="M13.7 20.5a2 2 0 0 1-3.4 0"/>',
   star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"/>',
 };
 
@@ -1106,14 +1110,23 @@ export const RATING = { value: 4.7, source: 'Google Play', url: 'https://play.go
  * laid over the screenshot's own Family-energy card (HABITS_ENERGY). `amount`
  * fills the card's {amount} with BUDGET_PER_DAY in the page's currency.
  * `newUntil` shows the "New" badge while the build date is on or before it.
+ *
+ * `page: true` gives the feature its own page, /features/<slug>/ (English) and
+ * /<loc>/features/<slug>/ (every other locale), with the home card linking to
+ * it and opening it in a sheet (2026-10-16/006). Its words are
+ * features.pages.<slug> in every content/<loc>.json; `benefits` are the
+ * HOME_ICONS glyphs of its benefit rows, in order. `shot2` adds a second
+ * phone on the page.
+ * 🔴 These URLs must NEVER move or change slug once live: they become the
+ * app's deep links, and Google, shared links and the sitemap point at them.
  */
 export const HOME_FEATURES = [
   { slug: 'calendar', shot: 'shot-calendar', tint: 'lake', icon: 'cal', tone: 'lake' },
   { slug: 'lists', shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true },
   { slug: 'todos', shot: 'shot-todos', tint: 'honey', icon: 'todo', tone: 'leaf' },
-  { slug: 'budget', shot: 'shot-budget', tint: 'clay', icon: 'wallet', tone: 'clay', amount: true, newUntil: '2026-12-31' },
-  { slug: 'cycle', shot: 'shot-cycle', tint: 'berry', icon: 'drop', tone: 'berry', newUntil: '2026-12-31' },
-  { slug: 'habits', shot: 'shot-habits', tint: 'honey', energy: true },
+  { slug: 'budget', shot: 'shot-budget', tint: 'clay', icon: 'wallet', tone: 'clay', amount: true, newUntil: '2026-12-31', page: true, shot2: 'shot-budget-split', benefits: ['eye', 'repeat', 'people', 'lock'] },
+  { slug: 'cycle', shot: 'shot-cycle', tint: 'berry', icon: 'drop', tone: 'berry', newUntil: '2026-12-31', page: true, benefits: ['phone', 'cal', 'bell'] },
+  { slug: 'habits', shot: 'shot-habits', tint: 'honey', tone: 'honey', energy: true, page: true, benefits: ['people', 'flame', 'bell'] },
   { slug: 'notes', shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry' },
   { slug: 'recipes', shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay' },
   { slug: 'meal-plan', shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake' },
@@ -1352,6 +1365,7 @@ export const SHOT_SOURCES = {
  */
 export const HELP_SHOT_SOURCES = {
   'budget-start': 'shot-budget',
+  'budget-split': 'shot-budget-split',
   'cycle-start': 'shot-cycle',
   'start-weather': 'shot-weather',
 };

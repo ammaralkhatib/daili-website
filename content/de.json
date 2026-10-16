@@ -260,7 +260,8 @@
       "shot-cycle": "Der private Zykluskalender in der Daili-App",
       "shot-weather": "Die Wettervorhersage in der Daili-App",
       "shot-documents": "Der private Dokumententresor in der Daili-App",
-      "shot-family": "Die Familienmitglieder in der Daili-App"
+      "shot-family": "Die Familienmitglieder in der Daili-App",
+      "shot-budget-split": "Kosten teilen in der Daili-App: wer wem etwas schuldet, und „Als bezahlt markieren“"
     },
     "screens": {
       "h2": "Auf jedem Bildschirm zu Hause",
@@ -372,6 +373,86 @@
     "h1": "Seite nicht gefunden",
     "lead": "Diese Seite wurde verschoben oder hat nie existiert.",
     "home": "Zurück zur Startseite"
+  },
+
+  "features": {
+    "all": "Alle Funktionen",
+    "close": "Schließen",
+    "questions": "Fragen",
+    "pages": {
+      "budget": {
+        "lead": "Ein Familienbudget, das einfach bleibt. Limit setzen, eine Ausgabe in wenigen Schritten eintragen und immer wissen, was noch übrig ist.",
+        "benefits": [
+          {
+            "t": "Was übrig ist, auf einen Blick",
+            "p": "Pro Tag und pro Kategorie, und wie dieser Monat im Vergleich zum letzten dasteht."
+          },
+          {
+            "t": "Alles, was sich wiederholt, auf einem Bildschirm",
+            "p": "Miete, Abos, Gehalt. Mit einem Tipp beendest du eins davon."
+          },
+          {
+            "t": "Kosten teilen",
+            "p": "Daili rechnet aus, wer wem etwas schuldet, und ihr gleicht es in der App aus."
+          },
+          {
+            "t": "Du bestimmst, wer es sieht",
+            "p": "Die ganze Familie, ein paar Personen oder nur du."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Muss ich mein Bankkonto verbinden?",
+            "a": "Nein. Du trägst deine Ausgaben selbst ein, und Daili fragt nie nach deinen Bankdaten."
+          },
+          {
+            "q": "Geht das auch ohne Internet?",
+            "a": "Ja, dein Budget siehst du auch offline. Eine Ausgabe, die nicht gesendet werden konnte, bleibt auf deinem Handy, bereit zum Senden, sobald du wieder online bist."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Behalte deinen Zyklus im Blick, ohne ihn mit jemandem zu teilen. Niemand in der Familie kann ihn sehen oder sehen, dass du ihn nutzt.",
+        "benefits": [
+          {
+            "t": "Bleibt auf deinem Handy",
+            "p": "Deine Zyklusdaten werden nie an die Server von Daili gesendet."
+          },
+          {
+            "t": "Ehrliche Vorhersagen",
+            "p": "Daili zeigt einen Zeitraum von Tagen, kein genaues Datum."
+          },
+          {
+            "t": "Diskrete Erinnerungen",
+            "p": "Auf dem Sperrbildschirm steht nur, dass du eine Erinnerung hast, außer du stellst es anders ein."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ist das eine medizinische App?",
+            "a": "Nein. Sie hilft dir, den Überblick zu behalten. Sie gibt keine medizinischen Ratschläge und keine Beratung zur Verhütung."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Baut Gewohnheiten als Familie auf. Jeder Haken füllt eure Familienenergie, und ist der Balken voll, fährt Minzi auf Reisen.",
+        "benefits": [
+          {
+            "t": "Gemeinsam oder allein",
+            "p": "Gewohnheiten für die ganze Familie, für ein paar von euch oder nur für dich."
+          },
+          {
+            "t": "Serien, die zählen",
+            "p": "Sieh, wie viele Tage in Folge du drangeblieben bist."
+          },
+          {
+            "t": "Eine sanfte Erinnerung",
+            "p": "Zu der Tageszeit, die zur Gewohnheit passt."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

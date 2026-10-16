@@ -260,7 +260,8 @@
       "shot-cycle": "Jurnalul privat al ciclului în aplicația Daili",
       "shot-weather": "Prognoza meteo în aplicația Daili",
       "shot-documents": "Seiful privat pentru documente în aplicația Daili",
-      "shot-family": "Membrii familiei în aplicația Daili"
+      "shot-family": "Membrii familiei în aplicația Daili",
+      "shot-budget-split": "Împarte cheltuielile în aplicația Daili: cine cui datorează și Marchează ca plătit"
     },
     "screens": {
       "h2": "Pe fiecare ecran din casă",
@@ -372,6 +373,86 @@
     "h1": "Pagina nu a fost găsită",
     "lead": "Această pagină s-a mutat sau nu a existat niciodată.",
     "home": "Înapoi la pagina principală"
+  },
+
+  "features": {
+    "all": "Toate funcțiile",
+    "close": "Închide",
+    "questions": "Întrebări",
+    "pages": {
+      "budget": {
+        "lead": "Un buget de familie care rămâne simplu. Setezi o limită, adaugi o cheltuială din câteva atingeri și știi mereu cât a rămas.",
+        "benefits": [
+          {
+            "t": "Cât a rămas, dintr-o privire",
+            "p": "Pe zi, pe categorie și cum stă luna asta față de cea trecută."
+          },
+          {
+            "t": "Tot ce se repetă, pe un singur ecran",
+            "p": "Chirie, abonamente, salariu. Oprești oricare dintr-o atingere."
+          },
+          {
+            "t": "Împarte cheltuielile comune",
+            "p": "Daili calculează cine cui datorează, iar datoriile le achitați în aplicație."
+          },
+          {
+            "t": "Tu alegi cine vede",
+            "p": "Toată familia, câțiva oameni sau doar tu."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Trebuie să-mi conectez banca?",
+            "a": "Nu. Tu adaugi ce cheltuiești, iar Daili nu îți cere niciodată datele bancare."
+          },
+          {
+            "q": "O pot folosi fără internet?",
+            "a": "Da, îți vezi bugetul și offline. O cheltuială care nu a putut fi trimisă rămâne pe telefon, gata de trimis când ești din nou online."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Urmărește-ți ciclul fără să-l împarți cu nimeni. Nimeni din familie nu-l poate vedea și nici nu vede că îl folosești.",
+        "benefits": [
+          {
+            "t": "Rămâne pe telefonul tău",
+            "p": "Datele ciclului tău nu ajung niciodată pe serverele Daili."
+          },
+          {
+            "t": "Estimări oneste",
+            "p": "Daili îți arată un interval de zile, nu o dată exactă."
+          },
+          {
+            "t": "Mementouri discrete",
+            "p": "Pe ecranul de blocare scrie doar că ai un memento, dacă nu alegi altfel."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Este o aplicație medicală?",
+            "a": "Nu. Te ajută să ții evidența. Nu oferă sfaturi medicale sau despre contracepție."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Construiți obiceiuri în familie. Fiecare bifă adaugă energie familiei, iar când bara se umple, Minzi pleacă în călătorie.",
+        "benefits": [
+          {
+            "t": "Împreună sau separat",
+            "p": "Obiceiuri pentru toată familia, pentru câțiva dintre voi sau doar pentru tine."
+          },
+          {
+            "t": "Serii care contează",
+            "p": "Vezi câte zile la rând te-ai ținut de el."
+          },
+          {
+            "t": "Un memento blând",
+            "p": "La ora din zi potrivită obiceiului."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

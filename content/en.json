@@ -296,7 +296,8 @@
       "shot-cycle": "The private cycle tracker in the Daili app",
       "shot-weather": "The weather forecast in the Daili app",
       "shot-documents": "The private documents vault in the Daili app",
-      "shot-family": "The family members screen in the Daili app"
+      "shot-family": "The family members screen in the Daili app",
+      "shot-budget-split": "Split costs in the Daili app: who owes whom, and Mark as paid"
     },
     "screens": {
       "@screens": { "description": "\"On every screen\" section: five cards (h3 + p)." },
@@ -416,6 +417,89 @@
     "h1": "Page not found",
     "lead": "That page moved or never existed.",
     "home": "Back to the home page"
+  },
+
+  "@features": {
+    "description": "Feature pages (/features/<slug>/, 2026-10-16/006) and the sheet the home cards open. all = the link back to the home page's feature list; close = the sheet's close button (screen readers); questions = the FAQ heading. pages.<slug>: lead (also the page's meta description, <= 155 chars), benefits (t = short title, p = one sentence), faq (q/a, may be empty). The page title is the card's h3 + ' · daili'. Use the app's own words (app_<lang>.arb) and content/glossary.md. Never write 'free', a price or 'Plus'. Cycle: neutral and respectful, no medical terms, no 'family planning' wording. Minzi only does what a real cat does."
+  },
+  "features": {
+    "all": "All features",
+    "close": "Close",
+    "questions": "Questions",
+    "pages": {
+      "budget": {
+        "lead": "A family budget that stays simple. Set a limit, add an expense in a few taps, and always know what is left.",
+        "benefits": [
+          {
+            "t": "What is left, at a glance",
+            "p": "Per day and per category, and how this month compares with the last."
+          },
+          {
+            "t": "Everything that repeats, on one screen",
+            "p": "Rent, subscriptions, salary. Stop one in a single tap."
+          },
+          {
+            "t": "Split shared costs",
+            "p": "Daili works out who owes whom, and you settle up in the app."
+          },
+          {
+            "t": "You choose who sees it",
+            "p": "The whole family, a few people, or only you."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Do I connect my bank?",
+            "a": "No. You add what you spend yourself, and Daili never asks for your bank details."
+          },
+          {
+            "q": "Can I use it without internet?",
+            "a": "Yes, you can see your budget offline. An expense you could not send stays on your phone, ready to send when you are back online."
+          }
+        ]
+      },
+      "cycle": {
+        "lead": "Track your cycle without sharing it with anyone. Nobody in the family can see it, or see that you use it.",
+        "benefits": [
+          {
+            "t": "Stays on your phone",
+            "p": "Your cycle data is never sent to Daili's servers."
+          },
+          {
+            "t": "Honest predictions",
+            "p": "Daili shows a range of days, not one exact date."
+          },
+          {
+            "t": "Discreet reminders",
+            "p": "The lock screen just says you have a reminder, unless you choose otherwise."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is this a medical app?",
+            "a": "No. It helps you keep track. It does not give medical or contraception advice."
+          }
+        ]
+      },
+      "habits": {
+        "lead": "Build habits as a family. Every tick adds to your family's energy, and when the bar is full, Minzi goes on a trip.",
+        "benefits": [
+          {
+            "t": "Together or alone",
+            "p": "Habits for the whole family, for a few of you, or just for you."
+          },
+          {
+            "t": "Streaks that count",
+            "p": "See how many days in a row you kept it up."
+          },
+          {
+            "t": "A gentle reminder",
+            "p": "At the time of day that fits the habit."
+          }
+        ],
+        "faq": []
+      }
+    }
   },
 
   "footer": {

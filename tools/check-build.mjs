@@ -88,6 +88,10 @@ const helpOutsFor = (loc) => {
 };
 const helpOuts = new Set(HELP_LOCALES.flatMap(helpOutsFor));
 for (const h of helpOuts) expected.add(h);
+// The feature pages (2026-10-16/006): every page: true feature, every locale.
+const FEATURE_PAGES = HOME_FEATURES.filter((f) => f.page);
+const featureOut = (slug, loc) => `${dirFor(loc).slice(1)}features/${slug}/index.html`;
+for (const f of FEATURE_PAGES) for (const loc of LOCALES) expected.add(featureOut(f.slug, loc));
 for (const e of expected) {
   if (!fs.existsSync(path.join(DIST, e))) fail(e, 'MISSING from dist/');
 }
@@ -735,14 +739,15 @@ for (const loc of LOCALES) {
     }
     if (/class="[^"]*\bshut(?:-rows)?\b/.test(html)) fail(out, 'has a shutter bar (.shut / .shut-rows) — removed in round 2');
     const daySec = sectionAt(html, '<section class="day"');
-    const dayCards = count(daySec, '<article class="fcard ');
+    const dayCards = daySec.split(/<(?:article|a) class="fcard /).length - 1;
     if (dayCards !== HOME_FEATURES.length) fail(out, `"Start the day together" has ${dayCards} cards, expected ${HOME_FEATURES.length} (HOME_FEATURES)`);
     // The feature row (2026-10-16/005): every card in HOME_FEATURES order,
     // each with its own screenshot from shots/<loc>/ (when this locale has a
     // capture set and the file exists) or else shots/en/, and the "New" badge
     // exactly while BUILD_DATE <= newUntil.
     const today = new Date().toISOString().slice(0, 10);
-    const rowCards = [...daySec.matchAll(/<article class="fcard [^"]*" data-slug="([^"]+)"[^>]*>([\s\S]*?)<\/article>/g)];
+    // A card with its own page is an <a>, the rest are <article>s (006).
+    const rowCards = [...daySec.matchAll(/<(article|a) class="fcard [^"]*" data-slug="([^"]+)"([^>]*)>([\s\S]*?)<\/\1>/g)].map((m) => [m[0], m[2], m[4], m[1], m[3]]);
     HOME_FEATURES.forEach((f, i) => {
       const card = rowCards[i];
       if (!card || card[1] !== f.slug) { fail(out, `feature card ${i + 1} is '${card ? card[1] : 'missing'}', expected '${f.slug}' (HOME_FEATURES order)`); return; }
@@ -751,6 +756,10 @@ for (const loc of LOCALES) {
       const want = own ? loc : DEFAULT_LOCALE;
       if (src[2] !== f.shot || src[1] !== want) fail(out, `feature card '${f.slug}' shows shots/${src[1] ?? '?'}/${src[2] ?? '?'}.webp, expected shots/${want}/${f.shot}.webp`);
       else if (!fs.existsSync(path.join(ROOT, 'static/assets/img/shots', src[1], `${src[2]}.webp`))) fail(out, `feature card '${f.slug}': static/assets/img/shots/${src[1]}/${src[2]}.webp does not exist`);
+      // A page: true card links to the page in ITS OWN locale; no other card links.
+      const href = (card[4].match(/ href="([^"]*)"/) || [])[1];
+      const wantHref = f.page ? `${dirFor(loc)}features/${f.slug}/` : undefined;
+      if (href !== wantHref || (card[3] === 'a') !== Boolean(f.page)) fail(out, `feature card '${f.slug}' is <${card[3]}>${href ? ` href="${href}"` : ''}, expected ${f.page ? `<a href="${wantHref}">` : 'an <article> without a link'}`);
       const badge = card[2].includes('class="fnew"');
       const isNew = Boolean(f.newUntil) && today <= f.newUntil;
       if (badge !== isNew) fail(out, `feature card '${f.slug}' ${badge ? 'shows' : 'lacks'} the "New" badge, but newUntil is ${f.newUntil || 'unset'} and today is ${today}`);
@@ -1041,6 +1050,44 @@ for (const loc of LOCALES) {
   }
   // The counter's target is a real file, or every click logs a 404 instead.
   if (!fs.existsSync(path.join(DIST, 'assets/c.gif'))) fail('assets/c.gif', 'missing — the store-click counter in script.js requests it');
+}
+
+// --- 18. feature pages (2026-10-16/006) ------------------------------------
+// Every page: true feature has its page in every locale, and the page is what
+// the home sheet needs: one [data-feature-sheet] fragment for this feature,
+// one <h1>, the canonical to itself, the full hreflang set (every locale +
+// x-default, nothing else), a sitemap entry with the same set, and the link
+// back to the feature list in its own language. That the home card links to
+// the page of its own locale is section 15. These URLs become deep links, so
+// a page that silently vanished or moved would break the app.
+{
+  const sitemap = fs.existsSync(path.join(DIST, 'sitemap.xml')) ? read(path.join(DIST, 'sitemap.xml')) : '';
+  const abs = (slug, loc) => `${BASE_URL}${dirFor(loc)}features/${slug}/`;
+  for (const f of FEATURE_PAGES) {
+    const wantSet = [...LOCALES.map((l) => `${l} ${abs(f.slug, l)}`), `x-default ${abs(f.slug, DEFAULT_LOCALE)}`].sort().join('\n');
+    for (const loc of LOCALES) {
+      const out = featureOut(f.slug, loc);
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file)) continue;        // section 1 already reported it
+      const html = read(file);
+      const sheets = [...html.matchAll(/<article class="fsheet" data-feature-sheet data-slug="([^"]*)"/g)];
+      if (sheets.length !== 1 || sheets[0][1] !== f.slug) fail(out, `has ${sheets.length} [data-feature-sheet] fragment(s)${sheets[0] ? ` for '${sheets[0][1]}'` : ''}, expected exactly one for '${f.slug}' — the home sheet takes this element`);
+      const h1s = (html.match(/<h1[\s>]/g) || []).length;
+      if (h1s !== 1) fail(out, `has ${h1s} <h1> elements, expected 1`);
+      const canon = (html.match(/<link rel="canonical" href="([^"]+)">/) || [])[1];
+      if (canon !== abs(f.slug, loc)) fail(out, `canonical is ${canon || '(none)'}, expected ${abs(f.slug, loc)}`);
+      const head = html.split('</head>')[0];
+      const set = [...head.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map((m) => `${m[1]} ${m[2]}`).sort().join('\n');
+      if (set !== wantSet) fail(out, `hreflang set is not exactly the ${LOCALES.length} locales + x-default of /features/${f.slug}/`);
+      if (/<meta name="robots" content="noindex">/.test(head)) fail(out, 'is noindex — a feature page is meant to be found');
+      const back = `href="${dirFor(loc)}#features"`;
+      if (!html.includes(`<a class="fs-back" ${back}>`)) fail(out, `has no link back to the feature list (${back})`);
+      const entry = sitemap.split('<url>').find((u) => u.includes(`<loc>${abs(f.slug, loc)}</loc>`));
+      if (!entry) { fail('sitemap.xml', `${abs(f.slug, loc)} is missing`); continue; }
+      const sm = [...entry.matchAll(/<xhtml:link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\/>/g)].map((m) => `${m[1]} ${m[2]}`).sort().join('\n');
+      if (sm !== wantSet) fail('sitemap.xml', `${abs(f.slug, loc)}: its alternates are not the full set`);
+    }
+  }
 }
 
 if (errors.length) {
