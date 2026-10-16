@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Döngü hatırlatıcıları, kilit ve verilerinin yeri
-summary: Gizli hatırlatıcılar kur, Döngü'yü Face ID ile kilitle ve verilerini yalnızca telefonunda tut.
-keywords: hatırlatıcı, kilit, face id, parmak izi, gizlilik, dışa aktar, sil, yedek, veri, gizli
-translatedFrom: 2026-10-12
+title: Döngü hatırlatıcıları, kilit, takvim ve verilerin
+summary: Gizli hatırlatıcılar kur, Döngü'yü kilitle, kendi takviminde göster ve verilerini telefonunda tut.
+keywords: hatırlatıcı, kilit, face id, parmak izi, gizlilik, takvim, dışa aktar, içe aktar, yedek, sil
+translatedFrom: 2026-10-16
 ---
-**Döngü ayarları** için Döngü'yü aç ve dişli simgesine dokun.
+**Döngü ayarları** için Döngü'de dişli simgesine dokun.
 
-**Hatırlatıcılar** altında: **Gün önce** ayarıyla **Regl hatırlatıcısı**, bir **Kaydetme hatırlatıcısı** ve **Hatırlatma saati**. **Kilit ekranında açık metin göster** seçeneğini açmadığın sürece kilit ekranında hatırlatıcı yalnızca "Bir hatırlatıcın var." der.
+1. **Hatırlatıcılar**: **Regl hatırlatıcısı** birkaç gün önce gelir. **Reglimin başlayıp başlamadığını sor** başta açıktır ve beklenen aralıktan sonraki gün sorar. Kilit ekranında yalnızca "Bir hatırlatıcın var. Açmak için dokun" görünür.
+2. **Döngü'yü kilitle**: Face ID, parmak izi ya da telefon kodunu ister. Uygulama değiştirici o zaman Döngü'yü gizler, Android de ekran görüntüsü alınmasını engeller.
+3. **Takvimimde göster**: bu telefondaki takviminde bir damla görünür; kaydedilmişse dolu, tahminse yalnızca çerçeve. Başta kapalıdır; ailen bunu asla görmez.
+4. **İçe aktar (CSV)**, **Dışa aktar (CSV)** ile alınmış bir dosyayı geri getirir ve burada olan günleri korur.
 
-**Döngü'yü kilitle** seçeneğini aç; Döngü Face ID, parmak izin ya da telefon kodun ister. Bir dakika uzak kaldıktan sonra yeniden kilitlenir.
+![Takvimimde göster, ihtiyaç anahtarı, Dışa aktar ve İçe aktar ile Döngü ayarları. Döngü'yü kilitle daire içine alınmış.](cycle-settings)
 
-Döngü verilerin yalnızca bu telefonda ve telefonun kendi yedeğinde kalır. daili'nin sunucusu bunları asla almaz. **Dışa aktar (CSV)** bir kopyayı dosya olarak kaydeder. **Tüm döngü verilerini sil** verileri siler.
+Verilerin bu telefonda ve yedeğinde kalır, asla daili'nin sunucusuna gitmez. iCloud Backup'ı ya da Google yedeğini açık tut.
 
-> Note: Çıkış yapınca verilerin kalır ama hatırlatıcılar durur. Hesabını silmek verileri bu telefondan siler; eski bir telefon yedeğinde hâlâ bulunabilirler. Ayrıntılar daili.app'teki gizlilik politikasında.
+> Note: Çıkış yapmak hatırlatıcıları durdurur. Hesabını silmek bu telefondaki verileri siler. Ayrıntılar daili.app'teki gizlilik politikasında.

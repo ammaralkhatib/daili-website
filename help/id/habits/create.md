@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Buat atau ubah kebiasaan
-summary: Mulai kebiasaan dari templat atau buat sendiri, lalu pilih siapa yang ikut dan seberapa sering.
-keywords: kebiasaan baru, buat kebiasaan, tambah kebiasaan, templat, ubah kebiasaan, arsipkan, hapus kebiasaan, penghitung, target
-translatedFrom: 2026-09-24
+summary: Mulai kebiasaan dari templat, kebiasaan tersimpan, atau ide Anda sendiri, lalu pilih ikon, siapa, dan seberapa sering.
+keywords: kebiasaan baru, buat kebiasaan, tambah kebiasaan, templat, ikon, ubah kebiasaan, penghitung, target, kebiasaan tersimpan, hapus kebiasaan
+translatedFrom: 2026-10-16
 ---
-Mulai dari salah satu dari 12 kebiasaan siap pakai, atau buat sendiri.
+Mulai dari kebiasaan siap pakai, kebiasaan tersimpan, atau buat sendiri.
 
-![Formulir Kebiasaan baru. Pilihan Siapa: Hanya saya, Masing-masing, dan Bersama dilingkari.](habits-create)
+![Formulir Kebiasaan baru. Kartu Siapa yang melakukannya? Hanya saya, Masing-masing, dan Bersama dilingkari.](habits-create)
 
-1. Di Beranda, ketuk **Kebiasaan**, lalu **+** di bawah.
-2. Ketuk sebuah templat, atau **Buat sendiri**.
-3. Beri **Nama** dan pilih **Siapa**. Untuk **Masing-masing**, pilih orangnya di bawah **Siapa yang ikut?**.
-4. Pilih **Jenis**: **Ya / tidak**, atau **Penghitung** dengan **Target** dan **Satuan**, seperti 8 gelas.
-5. Di bawah **Seberapa sering**, pilih **Setiap hari**, **Hari tertentu**, atau **Beberapa kali seminggu**.
-6. Ketuk **Mulai kebiasaan**.
+1. Di Beranda, ketuk **Kebiasaan**, lalu **+** di kanan bawah.
+2. Ketuk sebuah kebiasaan, atau **Buat sendiri** di bagian bawah. **Ditambahkan** menandai yang sudah Anda punya.
+3. Ketik **Nama**. Pilih salah satu ikon yang disarankan, atau ketuk **Lainnya** untuk mencari semua ikon dan memilih warna.
+4. Pilih kartu di bawah **Siapa yang melakukannya?** Untuk **Masing-masing**, Anda sudah terpilih sejak awal.
+5. Jawab **Seberapa sering?** dan **Bagaimana Anda melacaknya?** Untuk menghitung, **Apa yang Anda hitung?** adalah kata sesudah angka, seperti 8 gelas; **kali** hanya angka.
+6. Ketuk **Mulai kebiasaan**. Dengan **Simpan ke daftar kebiasaan saya** menyala, Anda bisa memulainya lagi nanti.
 
-Untuk mengubah kebiasaan, buka lalu ketuk ikon pensil. **Arsipkan** dan **Hapus** ada di bawah **⋯**.
+![Lembar Pilih ikon dengan grup dan warna. Kolom pencarian dilingkari.](habits-icons)
 
-> Note: Hanya pembuat kebiasaan, atau admin, yang bisa mengubahnya. Hanya admin yang bisa menambahkan orang lain ke sebuah kebiasaan.
+Untuk mengubah kebiasaan, buka lalu ketuk ikon pensil. Saat Anda mengeluarkan seseorang, daili bertanya dulu: centang orang itu akan dihapus.
+
+> Note: Hanya pembuat kebiasaan yang bisa mengubahnya. Admin juga bisa mengubah kebiasaan bersama.

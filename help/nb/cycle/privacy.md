@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Syklus-påminnelser, lås og hvor dataene dine er
-summary: Sett private påminnelser, lås Syklus med Face ID, og behold dataene bare på telefonen din.
-keywords: påminnelse, lås, face id, fingeravtrykk, personvern, eksport, slette, sikkerhetskopi, data, privat
-translatedFrom: 2026-10-12
+title: Syklus-påminnelser, lås, kalender og dataene dine
+summary: Sett private påminnelser, lås Syklus, vis den i din egen kalender, og behold dataene på telefonen.
+keywords: påminnelse, lås, face id, fingeravtrykk, personvern, kalender, eksport, import, sikkerhetskopi, slette
+translatedFrom: 2026-10-16
 ---
-Åpne Syklus og trykk på tannhjulet for **Syklusinnstillinger**.
+Trykk på tannhjulet i Syklus for å åpne **Syklusinnstillinger**.
 
-Under **Påminnelser**: **Påminnelse om mens** med **Dager før**, en **Påminnelse om å registrere** og **Tidspunkt for påminnelse**. På låseskjermen står det bare «Du har en påminnelse», med mindre du slår på **Vis tydelig tekst på låseskjermen**.
+1. **Påminnelser**: **Påminnelse om mens** kommer noen dager før. **Spør om mensen har startet** er på fra start og spør dagen etter det ventede spennet. Låseskjermen viser bare «Du har en påminnelse. Trykk for å åpne».
+2. **Lås Syklus**: ber om Face ID, fingeravtrykk eller telefonkoden. Appveksleren skjuler da Syklus, og Android blokkerer skjermbilder av den.
+3. **Vis i kalenderen min**: kalenderen på denne telefonen viser en dråpe, fylt hvis registrert, omriss hvis ventet. Av fra start; familien ser den aldri.
+4. **Importer (CSV)** henter tilbake en fil fra **Eksporter (CSV)** og beholder dagene som allerede er her.
 
-Slå på **Lås Syklus**, så ber Syklus om Face ID, fingeravtrykket ditt eller telefonkoden. Den låses igjen når du har vært borte i ett minutt.
+![Syklusinnstillinger med Vis i kalenderen min, bryteren for forsyninger og Eksporter og Importer. Lås Syklus er ringet inn.](cycle-settings)
 
-Syklus-dataene dine ligger bare på denne telefonen og i telefonens egen sikkerhetskopi. Serveren til daili får dem aldri. **Eksporter (CSV)** lagrer en kopi som fil. **Slett alle syklusdata** sletter dem.
+Dataene dine ligger på denne telefonen og i sikkerhetskopien dens, aldri på serveren til daili. La iCloud Backup eller Google-sikkerhetskopien være på.
 
-> Note: Logger du ut, beholder du dataene, men påminnelsene stopper. Sletter du kontoen, slettes dataene fra denne telefonen; en eldre sikkerhetskopi av telefonen kan fortsatt ha dem. Mer i personvernerklæringen på daili.app.
+> Note: Logger du ut, stopper påminnelsene. Sletter du kontoen, slettes dataene på denne telefonen. Mer i personvernerklæringen på daili.app.

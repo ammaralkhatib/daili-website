@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Vytvořit nebo změnit návyk
-summary: Začni návyk ze šablony, nebo si vytvoř vlastní, a vyber, kdo se zapojí a jak často.
-keywords: nový návyk, vytvořit návyk, přidat návyk, šablona, upravit návyk, archivovat, smazat návyk, počítadlo, cíl
-translatedFrom: 2026-09-24
+summary: Začni návyk ze šablony, z uloženého návyku nebo z vlastního nápadu a vyber ikonu, kdo ho dělá a jak často.
+keywords: nový návyk, vytvořit návyk, přidat návyk, šablona, ikona, upravit návyk, počítadlo, cíl, uložený návyk, smazat návyk
+translatedFrom: 2026-10-16
 ---
-Začni jedním z 12 hotových návyků, nebo si vytvoř vlastní.
+Začni hotovým návykem, uloženým, nebo vlastním.
 
-![Formulář Nový návyk. Zakroužkované jsou volby Kdo: Jen já, Každý z nás a Společně.](habits-create)
+![Formulář Nový návyk. Zakroužkované jsou karty Kdo to dělá?: Jen já, Každý z nás a Společně.](habits-create)
 
-1. Na domovské obrazovce klepni na **Návyky** a pak dole na **+**.
-2. Klepni na šablonu, nebo na **Vytvoř vlastní**.
-3. Vyplň **Název** a vyber volbu v části **Kdo**. U volby **Každý z nás** vyber lidi v části **Kdo se zapojí?**.
-4. Vyber **Typ**: **Ano / ne**, nebo **Počítadlo** s poli **Cíl** a **Jednotka**, třeba 8 sklenic.
-5. V části **Jak často** vyber **Každý den**, **Ve vybrané dny** nebo **Několikrát týdně**.
-6. Klepni na **Začít návyk**.
+1. Na domovské obrazovce klepni na **Návyky** a pak vpravo dole na **+**.
+2. Klepni na návyk, nebo dole na **Vytvoř vlastní**. **Přidáno** označuje ty, které už máš.
+3. Vyplň **Název**. Vyber jednu z navržených ikon, nebo klepni na **Více**, prohledej všechny a vyber barvu.
+4. Vyber kartu v části **Kdo to dělá?**. U **Každý z nás** je předem vybrané tvoje jméno.
+5. Odpověz na **Jak často?** a **Jak to sleduješ?**. Při počítání je **Co počítáš?** slovo za číslem, třeba 8 sklenic; **krát** je jen číslo.
+6. Klepni na **Začít návyk**. Se zapnutým **Uložit do mého seznamu návyků** ho můžeš později začít znovu.
 
-Pokud chceš návyk změnit, otevři ho a klepni na tužku. **Archivovat** a **Smazat** jsou pod **⋯**.
+![Panel Vyber ikonu se skupinami a barvami. Zakroužkované je pole hledání.](habits-icons)
 
-> Note: Návyk může změnit jen ten, kdo ho vytvořil, nebo správce. Přidávat do návyku další lidi může jen správce.
+Pokud chceš návyk změnit, otevři ho a klepni na tužku. Před odebráním člověka se daili zeptá: jeho odškrtnutí se smažou.
+
+> Note: Návyk může změnit jen ten, kdo ho vytvořil. Správce může měnit i společné návyky.

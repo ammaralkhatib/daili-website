@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Alışkanlık oluştur ya da değiştir
-summary: Bir şablondan alışkanlık başlat ya da kendininkini oluştur, kimlerin katılacağını ve ne sıklıkla olacağını seç.
-keywords: yeni alışkanlık, alışkanlık oluştur, alışkanlık ekle, şablon, alışkanlığı düzenle, arşivle, alışkanlığı sil, sayaç, hedef
-translatedFrom: 2026-09-24
+summary: Bir şablondan, kayıtlı bir alışkanlıktan ya da kendi fikrinden başla; simgeyi, kimin yapacağını ve sıklığı seç.
+keywords: yeni alışkanlık, alışkanlık oluştur, alışkanlık ekle, şablon, simge, alışkanlığı düzenle, sayaç, hedef, kayıtlı alışkanlık, alışkanlığı sil
+translatedFrom: 2026-10-16
 ---
-Hazır 12 alışkanlıktan biriyle başla ya da kendininkini oluştur.
+Hazır bir alışkanlıkla, kayıtlı bir alışkanlıkla ya da kendininkiyle başla.
 
-![Yeni alışkanlık formu. Kim altındaki Sadece ben, Her birimiz ve Birlikte seçenekleri daire içine alınmış.](habits-create)
+![Yeni alışkanlık formu. Kim yapıyor? altındaki Sadece ben, Her birimiz ve Birlikte kartları daire içine alınmış.](habits-create)
 
-1. Ana ekranda **Alışkanlıklar** kutucuğuna, sonra alttaki **+** simgesine dokun.
-2. Bir şablona ya da **Kendin oluştur** seçeneğine dokun.
-3. **Ad** alanına bir ad yaz ve **Kim** altında seçim yap. **Her birimiz** için kişileri **Kimler katılıyor?** altında seç.
-4. **Tür** seç: **Evet / hayır** ya da **Hedef** ve **Birim** ile **Sayaç**, örneğin 8 bardak.
-5. **Ne sıklıkla** altında **Her gün**, **Belirli günler** ya da **Haftada birkaç kez** seçeneğini seç.
-6. **Alışkanlığı başlat** düğmesine dokun.
+1. Ana ekranda **Alışkanlıklar** kutucuğuna, sonra sağ alttaki **+** simgesine dokun.
+2. Bir alışkanlığa ya da en alttaki **Kendin oluştur** seçeneğine dokun. **Eklendi**, zaten sende olanları gösterir.
+3. **Ad** alanına bir ad yaz. Önerilen simgelerden birini seç ya da hepsinde arama yapıp bir renk seçmek için **Daha fazla** seçeneğine dokun.
+4. **Kim yapıyor?** altında bir kart seç. **Her birimiz** başta seni seçili olarak getirir.
+5. **Ne sıklıkla?** ve **Nasıl takip ediyorsun?** sorularını yanıtla. Sayarken **Neyi sayıyorsun?** sayıdan sonra gelen kelimedir, örneğin 8 bardak; **kez** yalnızca bir sayıdır.
+6. **Alışkanlığı başlat** düğmesine dokun. **Alışkanlık listeme kaydet** açıksa onu daha sonra yeniden başlatabilirsin.
 
-Bir alışkanlığı değiştirmek için onu aç ve kaleme dokun. **Arşivle** ve **Sil** seçenekleri **⋯** altında.
+![Gruplar ve renklerle Bir simge seç paneli. Arama alanı daire içine alınmış.](habits-icons)
 
-> Note: Bir alışkanlığı yalnızca onu oluşturan kişi ya da bir yönetici değiştirebilir. Bir alışkanlığa başka kişileri yalnızca yönetici ekleyebilir.
+Bir alışkanlığı değiştirmek için onu aç ve kaleme dokun. Bir kişiyi çıkarmadan önce onay istenir: o kişinin işaretleri silinir.
+
+> Note: Bir alışkanlığı yalnızca onu oluşturan kişi değiştirebilir. Bir yönetici ortak alışkanlıkları da değiştirebilir.

@@ -2,27 +2,29 @@
 id: habits-create
 topic: habits
 title: Create or change a habit
-summary: Start a habit from a template or make your own, and pick who is in and how often.
-keywords: new habit, create habit, add habit, template, edit habit, archive, delete habit, counter, goal
+summary: Start a habit from a template, a saved habit or your own idea, and pick an icon, who and how often.
+keywords: new habit, create habit, add habit, template, icon, edit habit, counter, goal, saved habit, delete habit
 routes: /habits/new, /habits/:id/edit
 tryIt: /habits
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-10-16
 media: habits-create
 order: 2
-related: habits-what, habits-private, habits-reminders
+related: habits-what, habits-categories, habits-reminders, habits-private
 ---
-Start from one of the 12 ready-made habits, or make your own.
+Start from a ready-made habit, a saved one, or your own.
 
-![The New habit form. The Who choices Just me, Each of us and Together are circled.](habits-create)
+![The New habit form. The Who does it? cards Just me, Each of us and Together are circled.](habits-create)
 
-1. On Home, tap **Habits**, then **+** at the bottom.
-2. Tap a template, or **Make your own**.
-3. Give it a **Name** and pick **Who**. For **Each of us**, pick the people under **Who is in?**.
-4. Pick the **Type**: **Yes / no**, or **Counter** with a **Target** and a **Unit**, like 8 glasses.
-5. Under **How often**, pick **Every day**, **Some days** or **A few times a week**.
-6. Tap **Start habit**.
+1. On Home, tap **Habits**, then **+** at the bottom right.
+2. Tap a habit, or **Make your own** at the bottom. **Added** marks yours.
+3. Type a **Name**. Pick one of the suggested icons, or tap **More** to search them all and pick a colour.
+4. Pick a card under **Who does it?**. **Each of us** starts with you picked.
+5. Answer **How often?** and **How do you track it?**. To count, **What do you count?** is the word after the number, like 8 glasses; **times** is just a number.
+6. Tap **Start habit**. With **Save to my habit list** on, you can start it again later.
 
-To change a habit, open it and tap the pencil. **Archive** and **Delete** are under **⋯**.
+![The Choose an icon sheet with groups and colours. The search field is circled.](habits-icons)
 
-> Note: Only the person who made a habit, or an admin, can change it. Only an admin can add other people to a habit.
+To change a habit, open it and tap the pencil. Removing a person asks first: their ticks are deleted.
+
+> Note: Only the person who made a habit can change it. An admin can also change shared ones.

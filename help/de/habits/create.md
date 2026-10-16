@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Eine Gewohnheit erstellen oder ändern
-summary: Starte eine Gewohnheit mit einer Vorlage oder erstelle deine eigene, und wähle, wer mitmacht und wie oft.
-keywords: neue gewohnheit, gewohnheit erstellen, gewohnheit hinzufügen, vorlage, gewohnheit bearbeiten, archivieren, gewohnheit löschen, zähler, ziel
-translatedFrom: 2026-09-24
+summary: Starte eine Gewohnheit mit einer Vorlage, einer gespeicherten oder deiner eigenen Idee, und wähle Symbol, wer und wie oft.
+keywords: neue gewohnheit, gewohnheit erstellen, gewohnheit hinzufügen, vorlage, symbol, gewohnheit bearbeiten, zähler, ziel, gespeicherte gewohnheit, gewohnheit löschen
+translatedFrom: 2026-10-16
 ---
-Starte mit einer der 12 fertigen Gewohnheiten oder erstelle deine eigene.
+Starte mit einer fertigen Gewohnheit, einer gespeicherten oder deiner eigenen.
 
-![Das Formular für eine neue Gewohnheit. Die Auswahl bei Wer, Nur ich, Jeder für sich und Gemeinsam, ist eingekreist.](habits-create)
+![Das Formular Neue Gewohnheit. Die Karten bei Wer macht es?, Nur ich, Jeder für sich und Gemeinsam, sind eingekreist.](habits-create)
 
-1. Tippe auf dem Startbildschirm auf **Gewohnheiten** und dann unten auf **+**.
-2. Tippe auf eine Vorlage oder auf **Eigene erstellen**.
-3. Gib ihr unter **Name** einen Namen und wähle **Wer**. Bei **Jeder für sich** wählst du die Personen unter **Wer macht mit?**.
-4. Wähle die **Art**: **Ja / nein** oder **Zähler** mit einem **Ziel** und einer **Einheit**, zum Beispiel 8 Gläser.
-5. Wähle unter **Wie oft** die Option **Jeden Tag**, **An bestimmten Tagen** oder **Ein paar Mal pro Woche**.
-6. Tippe auf **Gewohnheit starten**.
+1. Tippe auf dem Startbildschirm auf **Gewohnheiten** und dann unten rechts auf **+**.
+2. Tippe auf eine Gewohnheit oder unten auf **Eigene erstellen**. **Hinzugefügt** markiert deine.
+3. Gib unter **Name** einen Namen ein. Wähle eines der vorgeschlagenen Symbole, oder tippe auf **Mehr**, um alle zu durchsuchen und eine Farbe zu wählen.
+4. Wähle unter **Wer macht es?** eine Karte. Bei **Jeder für sich** bist du schon ausgewählt.
+5. Beantworte **Wie oft?** und **Wie hältst du es fest?** Beim Zählen ist **Was zählst du?** das Wort nach der Zahl, etwa 8 Gläser; **Mal** ist nur eine Zahl.
+6. Tippe auf **Gewohnheit starten**. Ist **In meiner Gewohnheitsliste speichern** an, kannst du sie später wieder starten.
 
-Um eine Gewohnheit zu ändern, öffne sie und tippe auf den Stift. **Archivieren** und **Löschen** findest du unter **⋯**.
+![Das Fenster Symbol wählen mit Gruppen und Farben. Das Suchfeld ist eingekreist.](habits-icons)
 
-> Note: Nur wer eine Gewohnheit erstellt hat oder ein Admin kann sie ändern. Nur ein Admin kann andere Personen zu einer Gewohnheit hinzufügen.
+Um eine Gewohnheit zu ändern, öffne sie und tippe auf den Stift. Wenn du eine Person entfernst, fragt daili vorher: Ihre Haken werden gelöscht.
+
+> Note: Nur wer eine Gewohnheit erstellt hat, kann sie ändern. Gemeinsam genutzte kann auch ein Admin ändern.

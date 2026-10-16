@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Menscykel: påminnelser, lås och var dina data finns
-summary: Ställ in privata påminnelser, lås Menscykel med Face ID och ha dina data bara på din telefon.
-keywords: påminnelse, lås, face id, fingeravtryck, integritet, export, radera, säkerhetskopia, data, privat
-translatedFrom: 2026-10-12
+title: Menscykel: påminnelser, lås, kalender och dina data
+summary: Ställ in privata påminnelser, lås Menscykel, visa den i din egen kalender och ha dina data på din telefon.
+keywords: påminnelse, lås, face id, fingeravtryck, integritet, kalender, export, import, säkerhetskopia, radera
+translatedFrom: 2026-10-16
 ---
-Öppna Menscykel och tryck på kugghjulet för **Inställningar för menscykel**.
+Tryck på kugghjulet i Menscykel för **Inställningar för menscykel**.
 
-Under **Påminnelser**: **Påminnelse om mens** med **Dagar innan**, en **Påminnelse om att registrera** och **Tid för påminnelse**. På låsskärmen står det bara ”Du har en påminnelse”, om du inte slår på **Visa tydlig text på låsskärmen**.
+1. **Påminnelser**: **Påminnelse om mens** kommer några dagar innan. **Fråga om min mens har börjat** är på från början och frågar dagen efter det väntade intervallet. Låsskärmen visar bara ”Du har en påminnelse. Tryck för att öppna”.
+2. **Lås Menscykel**: frågar efter Face ID, fingeravtryck eller telefonens kod. Appväxlaren döljer då Menscykel, och Android blockerar skärmbilder av den.
+3. **Visa i min kalender**: kalendern på den här telefonen visar en droppe, fylld om du har registrerat, bara kontur om den är förutsagd. Av från början; familjen ser den aldrig.
+4. **Importera (CSV)** hämtar tillbaka en fil från **Exportera (CSV)** och behåller dagarna som redan finns här.
 
-Slå på **Lås Menscykel**, så frågar Menscykel efter Face ID, ditt fingeravtryck eller telefonens kod. Den låses igen när du har varit borta en minut.
+![Inställningar för menscykel med Visa i min kalender, reglaget för förnödenheter samt Exportera och Importera. Lås Menscykel är inringat.](cycle-settings)
 
-Dina data i Menscykel stannar bara på den här telefonen och i telefonens egen säkerhetskopia. Servern hos daili får dem aldrig. **Exportera (CSV)** sparar en kopia som en fil. **Radera all cykeldata** raderar dem.
+Dina data stannar på den här telefonen och i dess säkerhetskopia, aldrig på dailis server. Ha iCloud Backup eller Googles säkerhetskopiering påslagen.
 
-> Note: Om du loggar ut finns dina data kvar, men påminnelserna slutar. Om du raderar ditt konto raderas de från den här telefonen; en äldre säkerhetskopia av telefonen kan fortfarande innehålla dem. Mer i integritetspolicyn på daili.app.
+> Note: Om du loggar ut slutar påminnelserna. Om du raderar ditt konto raderas data på den här telefonen. Mer i integritetspolicyn på daili.app.

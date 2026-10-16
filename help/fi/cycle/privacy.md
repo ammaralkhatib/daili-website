@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Kierron muistutukset, lukitus ja missä tietosi ovat
-summary: Aseta yksityisiä muistutuksia, lukitse Kierto Face ID:llä ja pidä tietosi vain puhelimessasi.
-keywords: muistutus, lukitus, face id, sormenjälki, yksityisyys, vienti, poisto, varmuuskopio, tiedot, yksityinen
-translatedFrom: 2026-10-12
+title: Kierron muistutukset, lukitus, kalenteri ja tietosi
+summary: Aseta yksityisiä muistutuksia, lukitse Kierto, näytä se omassa kalenterissasi ja pidä tietosi puhelimessasi.
+keywords: muistutus, lukitus, face id, sormenjälki, yksityisyys, kalenteri, vienti, tuonti, varmuuskopio, poisto
+translatedFrom: 2026-10-16
 ---
-Avaa Kierto ja napauta ratasta, niin pääset kohtaan **Kierron asetukset**.
+Napauta Kierrossa ratasta, niin pääset kohtaan **Kierron asetukset**.
 
-Kohdassa **Muistutukset** ovat **Kuukautismuistutus** ja **Päivää ennen**, **Merkintämuistutus** sekä **Muistutuksen aika**. Lukitusnäytöllä muistutuksessa lukee vain ”Sinulla on muistutus”, ellei **Näytä selkeä teksti lukitusnäytöllä** ole päällä.
+1. **Muistutukset**: **Kuukautismuistutus** tulee muutamaa päivää ennen. **Kysy, alkoivatko kuukautiset** on aluksi päällä ja kysyy odotetun aikavälin jälkeisenä päivänä. Lukitusnäytöllä näkyy vain ”Sinulla on muistutus. Avaa napauttamalla”.
+2. **Lukitse Kierto**: kysyy Face ID:tä, sormenjälkeä tai puhelimen koodia. Sovellusvaihtaja piilottaa silloin Kierron, ja Android estää siitä kuvakaappaukset.
+3. **Näytä kalenterissani**: tämän puhelimen kalenterissa näkyy pisara, täytetty merkityille ja ääriviiva ennustetuille päiville. Aluksi pois päältä; perhe ei näe sitä koskaan.
+4. **Tuo (CSV)** palauttaa tiedoston, jonka teit kohdasta **Vie (CSV)**, ja säilyttää jo täällä olevat päivät.
 
-Kun laitat kytkimen **Lukitse Kierto** päälle, Kierto kysyy Face ID:tä, sormenjälkeä tai puhelimen koodia. Se lukittuu uudelleen, kun olet ollut poissa minuutin.
+![Kierron asetukset, joissa ovat Näytä kalenterissani, tarvikkeiden kytkin ja Vie (CSV). Lukitse Kierto on ympyröity.](cycle-settings)
 
-Kiertotietosi ovat vain tässä puhelimessa ja puhelimen omassa varmuuskopiossa. dailin palvelin ei koskaan saa niitä. **Vie (CSV)** tallentaa kopion tiedostona. **Poista kaikki kiertotiedot** poistaa ne.
+Tietosi pysyvät tässä puhelimessa ja sen varmuuskopiossa, eivät koskaan dailin palvelimella. Pidä iCloud Backup tai Googlen varmuuskopio päällä.
 
-> Note: Uloskirjautuminen säilyttää tietosi mutta lopettaa muistutukset. Tilin poistaminen poistaa ne tästä puhelimesta; vanhemmassa puhelimen varmuuskopiossa ne voivat vielä olla. Lisää tietoa tietosuojaselosteessa osoitteessa daili.app.
+> Note: Uloskirjautuminen lopettaa muistutukset. Tilin poistaminen poistaa tiedot tästä puhelimesta. Lisää tietoa tietosuojaselosteessa osoitteessa daili.app.

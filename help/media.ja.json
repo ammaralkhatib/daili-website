@@ -89,9 +89,16 @@
   "budget-start": { "file": "budget-start.webp", "w": 720, "h": 1564, "kind": "image" },
   "budget-split": { "file": "budget-split.webp", "w": 720, "h": 1564, "kind": "image" },
   "cycle-start": { "file": "cycle-start.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-categories": { "file": "habits-categories.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-icons": { "file": "habits-icons.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-temperature": { "file": "account-temperature.webp", "w": 720, "h": 720, "kind": "image" },
   "budget-category": { "file": "budget-category.webp", "w": 720, "h": 1564, "kind": "image" },
   "budget-entry": { "file": "budget-entry.webp", "w": 720, "h": 1564, "kind": "image" },
   "budget-trends": { "file": "budget-trends.webp", "w": 720, "h": 1564, "kind": "image" },
   "budget-repeating": { "file": "budget-repeating.webp", "w": 720, "h": 1564, "kind": "image" },
-  "budget-settings": { "file": "budget-settings.webp", "w": 720, "h": 1564, "kind": "image" }
+  "budget-settings": { "file": "budget-settings.webp", "w": 720, "h": 1564, "kind": "image" },
+  "cycle-calendar": { "file": "cycle-calendar.webp", "w": 720, "h": 1564, "kind": "image" },
+  "cycle-day": { "file": "cycle-day.webp", "w": 720, "h": 1564, "kind": "image" },
+  "cycle-settings": { "file": "cycle-settings.webp", "w": 720, "h": 1564, "kind": "image" },
+  "cycle-supplies": { "file": "cycle-supplies.webp", "w": 720, "h": 1564, "kind": "image" }
 }

@@ -3,14 +3,14 @@ id: habits-private
 title: Privata vanor
 summary: Håll en vana för dig själv. Ingen annan i familjen ser den.
 keywords: privat, hemlig, personlig, dold, bara jag, integritet, vana, lås
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-16
 ---
 Vissa vanor har ingen annan med att göra. En privat vana är bara för dig.
 
 ![Delen Mer i formuläret för en ny vana. Reglaget Privat är inringat.](habits-private)
 
 1. Starta en ny vana, eller öppna en av dina och tryck på pennan.
-2. Välj **Bara jag** under **Vem**.
+2. Under **Vem gör det?** väljer du **Bara jag**.
 3. Slå på **Privat** under **Mer**.
 4. Tryck på **Starta vanan**, eller på **Spara** om du ändrar en.
 

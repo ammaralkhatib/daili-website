@@ -7,7 +7,7 @@ keywords: habits, habit tracker, routine, family goals, minzi, cat, together, ki
 routes: /habits
 tryIt: /habits
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-10-16
 media: habits-what
 order: 1
 related: habits-create, habits-tick, habits-minzi
@@ -16,14 +16,16 @@ tipBody: Tick small habits as a family. When Minzi's energy bar is full, she set
 tipSkipIf: hasHabits
 tipPriority: 85
 ---
-A habit is a small thing you want to do often, like reading or drinking water. Find them on Home under **Habits**. Every habit is one of three kinds, picked under **Who**:
+A habit is a small thing you want to do often, like reading or drinking water. Find them on Home under **Habits**. Every habit is one of three kinds. You pick it under **Who does it?**
 
 1. **Just me**: a habit for you alone.
 2. **Each of us**: everyone taking part ticks for themselves and keeps their own streak.
 3. **Together**: one tick for the whole family, and anyone can give it.
 
-![The Habits screen with Minzi in her room, the Family energy bar and three habits. The + button in the bottom bar is circled.](habits-what)
+![The Habits screen with Minzi's room, the Family energy bar and Today, "1 of 4 done". The + button at the bottom right is circled.](habits-what)
 
-Each tick gives your family energy. When the bar is full, Minzi the cat goes on a trip and sends a postcard home.
+Your habits for today are under **Today**, with how many are done. Add one with the **+** at the bottom right.
+
+Each tick gives your family energy. The bar sits under Minzi's room and turns into a small ring when you scroll. When it's full, Minzi the cat goes on a trip and sends a postcard home.
 
 > Note: The first time you open **Habits**, daili asks you to name the cat and pick two or three habits to start with.

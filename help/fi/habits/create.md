@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Luo tai muuta tapa
-summary: Aloita tapa mallista tai tee oma, ja valitse, ketkä ovat mukana ja kuinka usein.
-keywords: uusi tapa, luo tapa, lisää tapa, malli, muokkaa tapaa, arkistoi, poista tapa, laskuri, tavoite
-translatedFrom: 2026-09-24
+summary: Aloita tapa mallista, tallennetusta tavasta tai omasta ideastasi, ja valitse kuvake, kuka ja kuinka usein.
+keywords: uusi tapa, luo tapa, lisää tapa, malli, kuvake, muokkaa tapaa, laskuri, tavoite, tallennettu tapa, poista tapa
+translatedFrom: 2026-10-16
 ---
-Aloita yhdellä 12 valmiista tavasta tai tee oma.
+Aloita valmiilla tavalla, tallennetulla tavalla tai omallasi.
 
-![Uuden tavan lomake. Kohdan Kuka valinnat Vain minä, Jokainen erikseen ja Yhdessä on ympyröity.](habits-create)
+![Uuden tavan lomake. Kohdan Kuka sen tekee? kortit Vain minä, Jokainen erikseen ja Yhdessä on ympyröity.](habits-create)
 
-1. Napauta aloitusnäytöllä **Tavat** ja sitten alhaalla **+**.
-2. Napauta mallia tai **Luo oma**.
-3. Anna tavalle **Nimi** ja valitse **Kuka**. Valinnassa **Jokainen erikseen** valitse henkilöt kohdassa **Ketkä ovat mukana?**.
-4. Valitse **Tyyppi**: **Kyllä / ei** tai **Laskuri**, jolle annetaan **Tavoite** ja **Yksikkö**, esimerkiksi 8 lasia.
-5. Valitse **Joka päivä**, **Tiettyinä päivinä** tai **Muutaman kerran viikossa** kohdassa **Kuinka usein**.
-6. Napauta **Aloita tapa**.
+1. Napauta aloitusnäytöllä **Tavat** ja sitten oikeassa alakulmassa **+**.
+2. Napauta tapaa tai alhaalla **Luo oma**. **Lisätty** merkitsee ne, jotka sinulla jo on.
+3. Kirjoita **Nimi**. Valitse jokin ehdotetuista kuvakkeista, tai napauta **Lisää**, niin voit hakea kaikista ja valita värin.
+4. Valitse kortti kohdassa **Kuka sen tekee?**. Valinnassa **Jokainen erikseen** sinut on valittu valmiiksi.
+5. Vastaa kysymyksiin **Kuinka usein?** ja **Miten seuraat sitä?**. Laskurissa **Mitä lasket?** on sana luvun perässä, kuten 8 lasia; **kertaa** on pelkkä luku.
+6. Napauta **Aloita tapa**. Kun **Tallenna tapalistaani** on päällä, voit aloittaa tavan myöhemmin uudelleen.
 
-Jos haluat muuttaa tapaa, avaa se ja napauta kynää. **Arkistoi** ja **Poista** löytyvät kohdasta **⋯**.
+![Valitse kuvake -paneeli, jossa ovat ryhmät ja värit. Hakukenttä on ympyröity.](habits-icons)
 
-> Note: Tapaa voi muuttaa vain sen tekijä tai ylläpitäjä. Vain ylläpitäjä voi lisätä tapaan muita henkilöitä.
+Jos haluat muuttaa tapaa, avaa se ja napauta kynää. Henkilön poistaminen kysyy ensin vahvistuksen, koska hänen merkintänsä poistetaan.
+
+> Note: Tapaa voi muuttaa vain sen tekijä. Ylläpitäjä voi muuttaa myös jaettuja tapoja.

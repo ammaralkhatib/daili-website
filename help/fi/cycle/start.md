@@ -2,19 +2,19 @@
 id: cycle-start
 title: Seuraa kuukautisiasi Kierron avulla
 summary: Merkitse kuukautisesi ja näe, milloin seuraavat voivat alkaa. Yksityinen: kukaan perheessäsi ei näe sitä.
-keywords: kierto, kuukautiset, kuukautiskierto, merkintä, ennuste, seuraavat kuukautiset, kalenteri, historia, yksityinen
-translatedFrom: 2026-10-12
+keywords: kierto, kuukautiset, kuukautiskierto, merkintä, ennuste, seuraavat kuukautiset, kuukautiset alkoivat, ne loppuivat, vuoto, yksityinen
+translatedFrom: 2026-10-16
 ---
-Kierto on pois päältä, kunnes otat sen käyttöön, ja se on maksuton. Jokainen päättää itse. Kukaan perheessäsi ei näe Kiertoasi eikä sitä, että käytät sitä.
+Kierto on pois päältä, kunnes otat sen käyttöön, ja se on maksuton. Kukaan perheessäsi ei näe Kiertoasi eikä sitä, että käytät sitä.
 
-1. Avaa **Asetukset** ja napauta **Kierto**. Tai valitse Kierto-kortti, kun otat dailin käyttöön ensimmäisen kerran.
-2. Napauta **Aloita** ja seuraa ohjeita.
-3. Kuukautisten aikana napauta **Merkitse tänään** ja niiden päätyttyä **Ne loppuivat**.
+1. Avaa **Asetukset**, napauta **Kierto** ja sitten **Aloita**.
+2. Valitse päivä, jolloin viimeiset kuukautisesi alkoivat, esimerkiksi **Eilen**, ja tavalliset pituutesi. Etkö ole varma? Napauta **En ole varma – Daili oppii sen merkinnöistäsi**.
+3. Kun kuukautiset alkavat, napauta **Kuukautiset alkoivat**. Kohdasta **Alkoivat aiemmin?** voit merkitä aiempia päiviä.
+4. Kuukautisten aikana napauta kortilla **Niukka**, **Kohtalainen** tai **Runsas**. **Oireet ja mieliala** avaa koko päivän.
+5. Ohi? Napauta **Ne loppuivat** ja valitse viimeinen päivä. Myös välissä olevat päivät lasketaan.
 
-![Kierto, jossa rengas on päivässä 18, ”Seuraavat kuukautiset 8–14 päivän päästä” ja kuukausi. Tämä päivä on ympyröity.](cycle-start)
+![Kierto-kortti päivänä 18: ”Seuraavat kuukautiset noin 26.10. – 30.10.” ja painike Kuukautiset alkoivat. Tämä päivä on ympyröity alla olevassa kuukaudessa.](cycle-start)
 
-Kun uudet kuukautiset alkavat tai haluat merkitä toisen päivän, napauta sitä päivää kuukaudessa. Tulevia päiviä ei voi merkitä.
-
-Seuraavat kuukautiset näytetään päivien vaihteluvälinä, ei koskaan yhtenä tarkkana päivänä. Ennusteet tarkentuvat 3 kierron jälkeen. Aiemmat kierrot ovat kohdassa **Historia**.
+Kunnes kerrot niiden loppuneen, Kierto olettaa kuukautistesi kestävän tavallisen pituutesi verran. Seuraavat kuukautiset näytetään päivämäärien vaihteluvälinä, ei koskaan yhtenä tarkkana päivänä.
 
 > Note: Vain arvioita. Kierto ei ole lääkinnällinen laite eikä ehkäisymenetelmä. Lisää tietoa käyttöehdoissa osoitteessa daili.app.

@@ -2,19 +2,19 @@
 id: cycle-start
 title: Tieni traccia delle mestruazioni con Ciclo
 summary: Segna le mestruazioni e vedi quando potrebbero arrivare le prossime. Privato: nessuno in famiglia lo vede.
-keywords: ciclo, mestruazioni, ciclo mestruale, segnare, previsione, prossime mestruazioni, calendario, cronologia, privato
-translatedFrom: 2026-10-12
+keywords: ciclo, mestruazioni, ciclo mestruale, segnare, previsione, prossime mestruazioni, mestruazioni iniziate, flusso, privato
+translatedFrom: 2026-10-16
 ---
-Ciclo è disattivato finché non lo attivi, ed è gratis. Ognuno decide per sé. Nessuno in famiglia vede il tuo Ciclo, né che lo usi.
+Ciclo è disattivato finché non lo attivi, ed è gratis. Nessuno in famiglia vede il tuo Ciclo, né che lo usi.
 
-1. Apri **Impostazioni** e tocca **Ciclo**. Oppure scegli la scheda Ciclo quando configuri daili la prima volta.
-2. Tocca **Inizia** e segui i passaggi.
-3. Durante le mestruazioni, tocca **Segna oggi**, e **Sono finite** quando sono finite.
+1. Apri **Impostazioni**, tocca **Ciclo**, poi **Inizia**.
+2. Scegli il giorno in cui sono iniziate le ultime mestruazioni, come **Ieri**, e le tue durate abituali. Hai dubbi? Tocca **Non lo so — Daili lo impara dalle tue note**.
+3. Quando iniziano le mestruazioni, tocca **Mestruazioni iniziate**. Con **Iniziato prima?** puoi segnare giorni precedenti.
+4. Durante le mestruazioni, tocca **Leggero**, **Medio** o **Abbondante** sulla scheda. **Sintomi e umore** apre tutta la giornata.
+5. Finite? Tocca **Sono finite** e scegli l'ultimo giorno. Contano anche i giorni in mezzo.
 
-![Ciclo con l'anello al giorno 18, «Prossime mestruazioni tra 8–14 giorni» e il mese. Oggi è cerchiato.](cycle-start)
+![La scheda Ciclo al giorno 18: «Prossime mestruazioni intorno al 26 ott – 30 ott» e il pulsante Mestruazioni iniziate. Oggi è cerchiato nel mese qui sotto.](cycle-start)
 
-Quando iniziano nuove mestruazioni, o per segnare un altro giorno, tocca quel giorno nel mese. I giorni futuri non si possono segnare.
-
-Le prossime mestruazioni sono mostrate come un intervallo di giorni, mai come un giorno preciso. Le previsioni migliorano dopo 3 cicli. I cicli passati sono in **Cronologia**.
+Finché non dici che sono finite, Ciclo le conta per la tua durata abituale. Le prossime mestruazioni sono mostrate come un intervallo di date, mai come un giorno preciso.
 
 > Note: Solo stime. Ciclo non è un dispositivo medico e non è un metodo contraccettivo. Altre informazioni nei termini di utilizzo su daili.app.

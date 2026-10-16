@@ -3,14 +3,14 @@ id: habits-private
 title: Private vaner
 summary: Hold en vane for dig selv. Ingen andre i familien kan se den.
 keywords: privat, hemmelig, personlig, skjult, kun mig, privatliv, vane, lås
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-16
 ---
 Nogle vaner kommer ikke andre ved. En privat vane er kun for dig.
 
 ![Afsnittet Mere i formularen til en ny vane. Kontakten Privat er markeret med en cirkel.](habits-private)
 
 1. Start en ny vane, eller åbn en af dine egne, og tryk på blyanten.
-2. Vælg **Kun mig** under **Hvem**.
+2. Under **Hvem gør det?** vælger du **Kun mig**.
 3. Slå **Privat** til under **Mere**.
 4. Tryk på **Start vanen**, eller på **Gem**, hvis du ændrer en.
 

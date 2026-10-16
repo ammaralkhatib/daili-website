@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Recordatorios de Ciclo, bloqueo y dónde están tus datos
-summary: Pon recordatorios privados, bloquea Ciclo con Face ID y guarda tus datos solo en tu teléfono.
-keywords: recordatorio, bloqueo, face id, huella, privacidad, exportar, borrar, copia de seguridad, datos, privado
-translatedFrom: 2026-10-12
+title: Recordatorios de Ciclo, bloqueo, calendario y tus datos
+summary: Pon recordatorios privados, bloquea Ciclo, muéstralo en tu propio calendario y guarda tus datos en tu teléfono.
+keywords: recordatorio, bloqueo, face id, huella, privacidad, calendario, exportar, importar, copia de seguridad, borrar
+translatedFrom: 2026-10-16
 ---
-Abre Ciclo y toca el engranaje para ir a **Ajustes del ciclo**.
+En Ciclo, toca el engranaje para ir a **Ajustes del ciclo**.
 
-En **Recordatorios**: **Recordatorio del periodo** con **Días antes**, un **Recordatorio para registrar** y la **Hora del recordatorio**. En la pantalla de bloqueo, un recordatorio solo dice "Tienes un recordatorio", salvo que actives **Mostrar texto claro en la pantalla de bloqueo**.
+1. **Recordatorios**: **Recordatorio del periodo** llega unos días antes. **Preguntar si mi periodo ha empezado** está activado al principio y pregunta el día después del rango previsto. La pantalla de bloqueo solo muestra "Tienes un recordatorio. Toca para abrir".
+2. **Bloquear Ciclo**: pide Face ID, tu huella o el código del teléfono. El selector de apps oculta entonces Ciclo, y Android bloquea sus capturas de pantalla.
+3. **Mostrar en mi calendario**: el calendario de este teléfono muestra una gota, llena si está registrado, solo el contorno si está previsto. Desactivado al principio; tu familia nunca lo ve.
+4. **Importar (CSV)** recupera un archivo creado con **Exportar (CSV)** y mantiene los días que ya hay.
 
-Activa **Bloquear Ciclo** y Ciclo te pedirá Face ID, tu huella o el código del teléfono. Se vuelve a bloquear tras un minuto fuera.
+![Ajustes del ciclo con Mostrar en mi calendario, el interruptor de suministros, Exportar e Importar. Bloquear Ciclo está marcado con un círculo.](cycle-settings)
 
-Los datos de Ciclo se quedan solo en este teléfono y en su propia copia de seguridad. El servidor de daili nunca los recibe. **Exportar (CSV)** guarda una copia en un archivo. **Borrar todos los datos del ciclo** los borra.
+Tus datos se quedan en este teléfono y en su copia de seguridad, nunca en el servidor de daili. Mantén activada iCloud Backup o la copia de seguridad de Google.
 
-> Note: Si cierras sesión, tus datos se quedan, pero los recordatorios se detienen. Si borras tu cuenta, se borran de este teléfono; una copia de seguridad antigua del teléfono aún podría tenerlos. Más información en la política de privacidad en daili.app.
+> Note: Si cierras sesión, los recordatorios se detienen. Si borras tu cuenta, se borran los datos de este teléfono. Más información en la política de privacidad en daili.app.

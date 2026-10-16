@@ -1,23 +1,26 @@
 ---
 id: cycle-privacy
 topic: cycle
-title: Cycle reminders, lock and where your data is
-summary: Set private reminders, lock Cycle with Face ID, and keep your data on your phone only.
-keywords: reminder, lock, face id, fingerprint, privacy, export, delete, backup, data, private
+title: Cycle reminders, lock, calendar and your data
+summary: Set private reminders, lock Cycle, show it on your own calendar, and keep your data on your phone.
+keywords: reminder, lock, face id, fingerprint, privacy, calendar, export, import, backup, delete
 routes: /cycle
 tryIt: /cycle
 since: 1.10.0
-updated: 2026-10-12
-mediaPending: Cycle settings screen; no help-shots entry yet
-order: 2
-related: cycle-start, start-edit-home
+updated: 2026-10-16
+media: cycle-settings
+order: 3
+related: cycle-start, cycle-calendar
 ---
-Open Cycle and tap the gear for **Cycle settings**.
+In Cycle, tap the gear for **Cycle settings**.
 
-Under **Reminders**: **Period reminder** with **Days before**, a **Log-day reminder**, and the **Reminder time**. On the lock screen a reminder only says "You have a reminder", unless you switch on **Show clear text on the lock screen**.
+1. **Reminders**: **Period reminder** comes a few days before. **Ask if my period started** is on at first and asks the day after the expected range. The lock screen only shows "You have a reminder. Tap to open".
+2. **Lock Cycle**: asks for Face ID, fingerprint or your phone code. The app switcher then hides Cycle, and Android blocks screenshots of it.
+3. **Show on my calendar**: your calendar on this phone shows a drop, filled if logged, outline if predicted. Off at first; the family never sees it.
+4. **Import (CSV)** brings back a file from **Export (CSV)** and keeps the days already here.
 
-Switch on **Lock Cycle**, and Cycle asks for Face ID, your fingerprint or your phone code. It locks again after a minute away.
+![Cycle settings with Show on my calendar, the supplies switch and Export and Import. Lock Cycle is circled.](cycle-settings)
 
-Your Cycle data stays only on this phone and in the phone's own backup. daili's server never gets it. **Export (CSV)** saves a copy as a file. **Delete all cycle data** erases it.
+Your data stays on this phone and its backup, never on daili's server. Keep iCloud Backup or Google backup on.
 
-> Note: Signing out keeps your data but stops the reminders. Deleting your account erases it from this phone; an older phone backup may still have it. More in the privacy policy on daili.app.
+> Note: Signing out stops the reminders. Deleting your account erases the data on this phone. More in the privacy policy on daili.app.

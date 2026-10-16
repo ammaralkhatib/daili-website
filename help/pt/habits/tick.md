@@ -2,20 +2,22 @@
 id: habits-tick
 title: Marcar um hábito: o seu, em conjunto, o de uma criança
 summary: Marque um hábito quando tiver feito. Você também pode marcar hábitos em conjunto, e os admins podem marcar por uma criança.
-keywords: marcar, concluir, feito, hábito concluído, contador, criança, filho, juntos, marcar como feito, ontem
-translatedFrom: 2026-09-30
+keywords: marcar, concluir, feito, hábito concluído, contador, criança, filho, juntos, desfazer, ontem
+translatedFrom: 2026-10-16
 ---
-Marque um hábito assim que tiver feito. Cada marcação dá energia à família.
+Marque um hábito assim que tiver feito.
 
 ![A tela Hábitos. O botão redondo de marcar ao lado de Alongamentos está circulado.](habits-tick)
 
-1. Na tela inicial, toque em **Hábitos**.
-2. Toque no botão redondo à direita de um hábito. Em um contador, toque em **Mais um** até chegar ao objetivo.
-3. Esqueceu ontem? Toque e segure o hábito, depois toque em **Preencher ontem**.
-4. Para corrigir um dia anterior, toque na linha do hábito e depois no dia. Você pode mudar os últimos 7 dias.
+1. Na tela inicial, toque em **Hábitos** e depois no botão redondo à direita de um hábito. 🎉 quer dizer que está feito. Desmarcou sem querer? Toque em **Desfazer**.
+2. Um contador enche uma parte a cada toque, mesmo depois do objetivo. Para corrigir um erro, toque e segure o contador e toque no menos.
+3. Esqueceu ontem? Abra o hábito e toque em ⋯, ou segure um hábito de sim/não, e depois toque em **Preencher ontem**.
+4. Para corrigir um dia anterior, abra o hábito e toque no dia. Você pode mudar os últimos 7 dias.
 
-Você marca seus próprios hábitos e qualquer hábito **Juntos**. Um admin também pode marcar por uma criança sem acesso próprio. Aí a linha diz **Você marca por** e o nome da criança.
+Você marca seus próprios hábitos e qualquer hábito **Juntos**. Um admin também pode marcar por uma criança sem acesso próprio.
 
-Os hábitos que não são para hoje esperam em **Em breve**, com o próximo dia de cada um. Quando você cria um hábito que não é para hoje, uma mensagem diz quando ele aparece.
+A aba **Família** mostra uma barra com uma parte para cada pessoa. Hábitos **Juntos** têm a própria linha e contam para quem marcou.
 
-> Note: Ninguém pode marcar por outro adulto. Todo mundo que tem acesso próprio marca os próprios hábitos.
+Os hábitos que não são para hoje esperam em **Em breve**.
+
+> Note: Ninguém pode marcar por outro adulto.

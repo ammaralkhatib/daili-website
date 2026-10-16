@@ -2,19 +2,19 @@
 id: cycle-start
 title: Urmărește-ți menstruația cu Ciclu
 summary: Notează-ți menstruația și vezi când ar putea veni următoarea. Privat: nimeni din familie nu vede.
-keywords: ciclu, menstruație, perioadă, notare, estimare, următoarea menstruație, calendar, istoric, privat
-translatedFrom: 2026-10-12
+keywords: ciclu, menstruație, perioadă, notare, estimare, următoarea menstruație, menstruația a început, s-a terminat, flux, privat
+translatedFrom: 2026-10-16
 ---
-Ciclu este oprit până îl pornești tu și este gratuit. Fiecare persoană decide pentru sine. Nimeni din familie nu vede Ciclul tău și nici că îl folosești.
+Ciclu este oprit până îl pornești tu și este gratuit. Nimeni din familie nu vede Ciclul tău și nici că îl folosești.
 
-1. Deschide **Setări** și apasă pe **Ciclu**. Sau alege cardul Ciclu când configurezi daili prima dată.
-2. Apasă pe **Începe** și urmează pașii.
-3. Cât durează menstruația, apasă pe **Notează azi**, iar când se termină, pe **S-a terminat**.
+1. Deschide **Setări**, apasă pe **Ciclu**, apoi pe **Începe**.
+2. Alege ziua în care a început ultima menstruație, de exemplu **Ieri**, și duratele tale obișnuite. Nu știi sigur? Apasă pe **Nu știu sigur — Daili învață din notițele tale**.
+3. Când începe o menstruație, apasă pe **Menstruația a început**. Cu **A început mai devreme?** poți marca zile mai vechi.
+4. În timpul menstruației, apasă pe card pe **Slab**, **Mediu** sau **Abundent**. **Simptome și stare** deschide toată ziua.
+5. S-a terminat? Apasă pe **S-a terminat** și alege ultima zi. Zilele dintre ele se numără și ele.
 
-![Ciclu cu inelul în ziua 18, „Următoarea menstruație în 8–14 zile” și luna. Ziua de azi este încercuită.](cycle-start)
+![Cardul Ciclu în ziua 18: „Următoarea menstruație în jur de 26 oct. – 30 oct.” și butonul Menstruația a început. Ziua de azi este încercuită în luna de dedesubt.](cycle-start)
 
-Când începe o nouă menstruație sau ca să notezi altă zi, apasă pe ziua respectivă din lună. Zilele viitoare nu pot fi notate.
-
-Următoarea menstruație apare ca un interval de zile, niciodată ca o singură zi exactă. Estimările devin mai bune după 3 cicluri. Ciclurile trecute sunt la **Istoric**.
+Până spui că s-a terminat, Ciclu consideră că ai menstruație cât durează ea de obicei la tine. Următoarea menstruație apare ca un interval de date, niciodată ca o singură zi exactă.
 
 > Note: Doar estimări. Ciclu nu este un dispozitiv medical și nu este pentru contracepție. Mai multe în termenii de utilizare pe daili.app.

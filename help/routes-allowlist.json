@@ -8,7 +8,5 @@
     "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose.",
     "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose."
   },
-  "pending": {
-    "/lists/supplies": "Cycle supplies screen (app 1.11.0) — article cycle-supplies comes in help sync 2026-10-16/003."
-  }
+  "pending": {}
 }

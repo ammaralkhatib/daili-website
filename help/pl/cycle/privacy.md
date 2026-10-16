@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Przypomnienia w Cyklu, blokada i gdzie są twoje dane
-summary: Ustaw prywatne przypomnienia, zablokuj Cykl przez Face ID i trzymaj dane tylko w swoim telefonie.
-keywords: przypomnienie, blokada, face id, odcisk palca, prywatność, eksport, usuwanie, kopia zapasowa, dane, prywatne
-translatedFrom: 2026-10-12
+title: Przypomnienia w Cyklu, blokada, kalendarz i twoje dane
+summary: Ustaw prywatne przypomnienia, zablokuj Cykl, pokaż go we własnym kalendarzu i trzymaj dane w telefonie.
+keywords: przypomnienie, blokada, face id, odcisk palca, prywatność, kalendarz, eksport, import, kopia zapasowa, usuwanie
+translatedFrom: 2026-10-16
 ---
-Otwórz Cykl i dotknij koła zębatego — otworzą się **Ustawienia cyklu**.
+W Cyklu dotknij koła zębatego, żeby otworzyć **Ustawienia cyklu**.
 
-W sekcji **Przypomnienia**: **Przypomnienie o okresie** z opcją **Dni wcześniej**, **Przypomnienie o zapisie** i **Godzina przypomnienia**. Na ekranie blokady przypomnienie mówi tylko „Masz przypomnienie”, chyba że włączysz **Pokazuj pełną treść na ekranie blokady**.
+1. **Przypomnienia**: **Przypomnienie o okresie** przychodzi kilka dni wcześniej. **Pytaj, czy okres się zaczął** jest od początku włączone i pyta dzień po przewidywanym zakresie. Ekran blokady pokazuje tylko „Masz przypomnienie. Dotknij, aby otworzyć”.
+2. **Zablokuj Cykl**: wymaga Face ID, odcisku palca albo kodu telefonu. Przełącznik aplikacji ukrywa wtedy Cykl, a Android blokuje jego zrzuty ekranu.
+3. **Pokaż w moim kalendarzu**: kalendarz w tym telefonie pokazuje kroplę, pełną dla zapisanych dni, a sam kontur dla przewidywanych. Domyślnie wyłączone; rodzina nigdy tego nie widzi.
+4. **Importuj (CSV)** przywraca plik z **Eksportuj (CSV)** i zachowuje dni, które już tu są.
 
-Włącz **Zablokuj Cykl**, a Cykl poprosi o Face ID, odcisk palca albo kod telefonu. Blokuje się znowu po minucie poza nim.
+![Ustawienia cyklu z opcjami Pokaż w moim kalendarzu, przełącznikiem zapasów i Eksportuj (CSV). Zakreślone jest Zablokuj Cykl.](cycle-settings)
 
-Dane Cyklu zostają tylko w tym telefonie i w jego własnej kopii zapasowej. Serwer daili nigdy ich nie dostaje. **Eksportuj (CSV)** zapisuje kopię w pliku. **Usuń wszystkie dane cyklu** je kasuje.
+Twoje dane zostają w tym telefonie i jego kopii zapasowej, nigdy na serwerze daili. Nie wyłączaj iCloud Backup ani kopii zapasowej Google.
 
-> Note: Po wylogowaniu dane zostają, ale przypomnienia przestają przychodzić. Usunięcie konta kasuje je z tego telefonu; starsza kopia zapasowa telefonu może je jeszcze mieć. Więcej w polityce prywatności na daili.app.
+> Note: Wylogowanie zatrzymuje przypomnienia. Usunięcie konta kasuje dane z tego telefonu. Więcej w polityce prywatności na daili.app.

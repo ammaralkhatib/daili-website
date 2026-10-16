@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Cyclus: herinneringen, vergrendeling en waar je gegevens staan
-summary: Stel privéherinneringen in, vergrendel Cyclus met Face ID en houd je gegevens alleen op je telefoon.
-keywords: herinnering, vergrendelen, face id, vingerafdruk, privacy, exporteren, verwijderen, back-up, gegevens, privé
-translatedFrom: 2026-10-12
+title: Cyclus: herinneringen, vergrendeling, agenda en je gegevens
+summary: Stel privéherinneringen in, vergrendel Cyclus, toon het in je eigen agenda en houd je gegevens op je telefoon.
+keywords: herinnering, vergrendelen, face id, vingerafdruk, privacy, agenda, exporteren, importeren, back-up, verwijderen
+translatedFrom: 2026-10-16
 ---
-Open Cyclus en tik op het tandwiel voor **Cyclusinstellingen**.
+Tik in Cyclus op het tandwiel voor **Cyclusinstellingen**.
 
-Onder **Herinneringen**: **Menstruatieherinnering** met **Dagen van tevoren**, een **Herinnering om te noteren** en het **Tijdstip van herinnering**. Op het vergrendelscherm zegt een herinnering alleen "Je hebt een herinnering", tenzij je **Duidelijke tekst tonen op het vergrendelscherm** aanzet.
+1. **Herinneringen**: de **Menstruatieherinnering** komt een paar dagen van tevoren. **Vragen of mijn menstruatie is begonnen** staat eerst aan en vraagt het de dag na de verwachte reeks dagen. Het vergrendelscherm toont alleen "Je hebt een herinnering. Tik om te openen".
+2. **Cyclus vergrendelen**: vraagt om Face ID, vingerafdruk of je telefooncode. De appkiezer verbergt Cyclus dan, en Android blokkeert screenshots ervan.
+3. **Tonen in mijn agenda**: je agenda op deze telefoon toont een druppel, gevuld als je noteerde, alleen een rand als voorspeld. Eerst uit; je gezin ziet het nooit.
+4. **Importeren (CSV)** haalt een bestand van **Exporteren (CSV)** terug en houdt de dagen die er al zijn.
 
-Zet **Cyclus vergrendelen** aan, dan vraagt Cyclus om Face ID, je vingerafdruk of je telefooncode. Ben je een minuut weg, dan vergrendelt het weer.
+![Cyclusinstellingen met Tonen in mijn agenda en de schakelaar voor voorraad. Cyclus vergrendelen is omcirkeld.](cycle-settings)
 
-Je cyclusgegevens blijven alleen op deze telefoon en in de eigen back-up van de telefoon. De server van daili krijgt ze nooit. **Exporteren (CSV)** bewaart een kopie als bestand. **Alle cyclusgegevens verwijderen** wist ze.
+Je gegevens blijven op deze telefoon en in de back-up ervan, nooit op de server van daili. Laat iCloud Backup of de Google-back-up aanstaan.
 
-> Note: Als je uitlogt, blijven je gegevens bewaard, maar stoppen de herinneringen. Verwijder je je account, dan worden ze van deze telefoon gewist; een oudere back-up van de telefoon kan ze nog bevatten. Meer in het privacybeleid op daili.app.
+> Note: Als je uitlogt, stoppen de herinneringen. Verwijder je je account, dan worden de gegevens op deze telefoon gewist. Meer in het privacybeleid op daili.app.

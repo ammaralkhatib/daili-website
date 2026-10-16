@@ -2,19 +2,19 @@
 id: cycle-start
 title: Håll koll på din mens med Menscykel
 summary: Registrera din mens och se när nästa kan komma. Privat: ingen i din familj ser det.
-keywords: menscykel, mens, menstruation, cykel, registrera, prognos, nästa mens, kalender, historik, privat
-translatedFrom: 2026-10-12
+keywords: menscykel, mens, menstruation, cykel, registrera, prognos, nästa mens, mensen började, blödning, privat
+translatedFrom: 2026-10-16
 ---
-Menscykel är avstängd tills du slår på den, och den är gratis. Var och en bestämmer själv. Ingen i din familj ser din Menscykel, eller att du använder den.
+Menscykel är avstängd tills du slår på den, och den är gratis. Ingen i din familj ser din Menscykel, eller att du använder den.
 
-1. Öppna **Inställningar** och tryck på **Menscykel**. Eller välj kortet Menscykel när du ställer in daili första gången.
-2. Tryck på **Kom igång** och följ stegen.
-3. Medan din mens pågår trycker du på **Registrera idag**, och på **Den är slut** när den är över.
+1. Öppna **Inställningar**, tryck på **Menscykel** och sedan på **Kom igång**.
+2. Välj dagen då din senaste mens började, till exempel **I går**, och dina vanliga längder. Osäker? Tryck på **Vet inte säkert – Daili lär sig av dina loggar**.
+3. När en mens börjar trycker du på **Mensen började**. Med **Började tidigare?** markerar du tidigare dagar.
+4. Under mensen trycker du på **Lätt**, **Medel** eller **Kraftig** på kortet. **Symtom & humör** öppnar hela dagen.
+5. Över? Tryck på **Den är slut** och välj sista dagen. Dagarna emellan räknas också.
 
-![Menscykel med ringen på dag 18, ”Nästa mens om 8–14 dagar” och månaden. Idag är inringat.](cycle-start)
+![Kortet i Menscykel på dag 18: ”Nästa mens runt 26 okt. – 30 okt.” och knappen Mensen började. I dag är inringat i månaden nedanför.](cycle-start)
 
-När en ny mens börjar, eller för att registrera en annan dag, trycker du på den dagen i månaden. Dagar som inte har kommit än kan inte registreras.
-
-Nästa mens visas som ett intervall av dagar, aldrig som en exakt dag. Förutsägelserna blir bättre efter 3 cykler. Tidigare cykler finns under **Historik**.
+Tills du säger att den är slut räknar Menscykel med att du har mens under din vanliga längd. Nästa mens visas som ett intervall av datum, aldrig som en exakt dag.
 
 > Note: Bara uppskattningar. Menscykel är inte en medicinteknisk produkt och inte ett preventivmedel. Mer i användarvillkoren på daili.app.

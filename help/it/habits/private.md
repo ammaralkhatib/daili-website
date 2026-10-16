@@ -3,14 +3,14 @@ id: habits-private
 title: Abitudini private
 summary: Tieni un'abitudine per te. Nessun altro in famiglia la vede.
 keywords: privata, privato, segreto, personale, nascosta, solo io, privacy, abitudine, lucchetto
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-16
 ---
 Alcune abitudini non riguardano nessun altro. Un'abitudine privata la vedi solo tu.
 
 ![La parte Altro del modulo della nuova abitudine. L'interruttore Privata è cerchiato.](habits-private)
 
 1. Inizia una nuova abitudine, oppure aprine una tua e tocca la matita.
-2. Sotto **Chi**, scegli **Solo io**.
+2. Sotto **Chi la fa?**, scegli **Solo io**.
 3. Sotto **Altro**, attiva **Privata**.
 4. Tocca **Avvia l'abitudine**, oppure **Salva** se ne stai modificando una.
 

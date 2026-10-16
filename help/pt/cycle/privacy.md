@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Lembretes do Ciclo, bloqueio e onde ficam seus dados
-summary: Defina lembretes privados, bloqueie o Ciclo com Face ID e mantenha seus dados só no seu celular.
-keywords: lembrete, bloqueio, face id, digital, privacidade, exportar, apagar, backup, dados, privado
-translatedFrom: 2026-10-12
+title: Lembretes do Ciclo, bloqueio, calendário e seus dados
+summary: Defina lembretes privados, bloqueie o Ciclo, mostre-o no seu próprio calendário e mantenha seus dados no celular.
+keywords: lembrete, bloqueio, face id, digital, privacidade, calendário, exportar, importar, backup, apagar
+translatedFrom: 2026-10-16
 ---
-Abra o Ciclo e toque na engrenagem para ver **Configurações do ciclo**.
+No Ciclo, toque na engrenagem para ver **Configurações do ciclo**.
 
-Em **Lembretes**: **Lembrete da menstruação** com **Dias antes**, um **Lembrete para registrar** e o **Horário do lembrete**. Na tela de bloqueio, um lembrete só diz "Você tem um lembrete", a não ser que você ative **Mostrar texto claro na tela de bloqueio**.
+1. **Lembretes**: o **Lembrete da menstruação** chega alguns dias antes. **Perguntar se minha menstruação começou** vem ativado e pergunta no dia seguinte ao intervalo previsto. A tela de bloqueio só mostra "Você tem um lembrete. Toque para abrir".
+2. **Bloquear Ciclo**: pede Face ID, digital ou o código do celular. Aí o seletor de apps esconde o Ciclo, e o Android bloqueia capturas de tela dele.
+3. **Mostrar no meu calendário**: o calendário deste celular mostra uma gota, cheia se o dia foi registrado, só o contorno se for previsto. Vem desativado; a família nunca vê.
+4. **Importar (CSV)** traz de volta um arquivo de **Exportar (CSV)** e mantém os dias que já estão aqui.
 
-Ative **Bloquear Ciclo** e o Ciclo vai pedir Face ID, sua digital ou o código do celular. Ele bloqueia de novo depois de um minuto fora.
+![As Configurações do ciclo com Mostrar no meu calendário, a chave de produtos e Exportar (CSV). Bloquear Ciclo está circulado.](cycle-settings)
 
-Seus dados do Ciclo ficam só neste celular e no backup do próprio celular. O servidor do daili nunca recebe esses dados. **Exportar (CSV)** salva uma cópia em um arquivo. **Apagar todos os dados do ciclo** apaga tudo.
+Seus dados ficam neste celular e no backup dele, nunca no servidor do daili. Deixe o iCloud Backup ou o backup do Google ativado.
 
-> Note: Sair da conta mantém seus dados, mas para os lembretes. Excluir sua conta apaga os dados deste celular; um backup antigo do celular ainda pode tê-los. Saiba mais na política de privacidade em daili.app.
+> Note: Sair da conta interrompe os lembretes. Excluir sua conta apaga os dados deste celular. Saiba mais na política de privacidade em daili.app.

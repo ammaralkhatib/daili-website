@@ -7,9 +7,9 @@ keywords: private, secret, personal, hidden, only me, privacy, habit, lock, just
 routes: /habits/new
 tryIt: /habits
 since: 1.6.0
-updated: 2026-09-24
+updated: 2026-10-16
 media: habits-private
-order: 6
+order: 7
 related: habits-create, habits-what
 ---
 Some habits are nobody else's business. A private habit is for your eyes only.
@@ -17,7 +17,7 @@ Some habits are nobody else's business. A private habit is for your eyes only.
 ![The More part of the New habit form. The Private switch is circled.](habits-private)
 
 1. Start a new habit, or open one of yours and tap the pencil.
-2. Under **Who**, pick **Just me**.
+2. Under **Who does it?**, pick **Just me**.
 3. Under **More**, turn on **Private**.
 4. Tap **Start habit**, or **Save** if you're changing one.
 

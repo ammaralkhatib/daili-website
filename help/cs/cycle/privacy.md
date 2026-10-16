@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Připomenutí v Cyklu, zámek a kde jsou tvoje data
-summary: Nastav soukromá připomenutí, zamkni Cyklus přes Face ID a nech si data jen v telefonu.
-keywords: připomenutí, zámek, face id, otisk prstu, soukromí, export, smazat, záloha, data, soukromé
-translatedFrom: 2026-10-12
+title: Připomenutí v Cyklu, zámek, kalendář a tvoje data
+summary: Nastav soukromá připomenutí, zamkni Cyklus, zobraz ho ve svém kalendáři a nech si data v telefonu.
+keywords: připomenutí, zámek, face id, otisk prstu, soukromí, kalendář, export, import, záloha, smazat
+translatedFrom: 2026-10-16
 ---
-Otevři Cyklus a klepni na ozubené kolečko — otevře se **Nastavení cyklu**.
+V Cyklu klepni na ozubené kolečko a otevře se **Nastavení cyklu**.
 
-V části **Připomenutí**: **Připomenutí menstruace** s volbou **Dní předem**, **Připomenutí zápisu** a **Čas připomenutí**. Na zamčené obrazovce připomenutí říká jen „Máš připomenutí“, pokud nezapneš **Zobrazit jasný text na zamčené obrazovce**.
+1. **Připomenutí**: **Připomenutí menstruace** přijde pár dní předem. **Ptát se, jestli začala menstruace** je od začátku zapnuté a zeptá se den po očekávaném rozmezí. Zamčená obrazovka ukáže jen „Máš připomenutí. Klepnutím ho otevřeš“.
+2. **Zamknout Cyklus**: chce Face ID, otisk prstu nebo kód telefonu. Přepínač aplikací pak Cyklus skryje a Android v něm blokuje snímky obrazovky.
+3. **Zobrazit v mém kalendáři**: kalendář v tomto telefonu ukáže kapku, plnou u zapsaných dní a jen obrys u předpovězených. Na začátku je to vypnuté; rodina to nikdy neuvidí.
+4. **Importovat (CSV)** vrátí soubor z **Exportovat (CSV)** a ponechá dny, které už tu jsou.
 
-Zapni **Zamknout Cyklus** a Cyklus si řekne o Face ID, otisk prstu nebo kód telefonu. Znovu se zamkne, když z něj na minutu odejdeš.
+![Nastavení cyklu se Zobrazit v mém kalendáři, přepínačem zásob a Exportovat a Importovat. Zakroužkované je Zamknout Cyklus.](cycle-settings)
 
-Tvoje data z Cyklu zůstávají jen v tomhle telefonu a v jeho vlastní záloze. Server daili je nikdy nedostane. **Exportovat (CSV)** uloží kopii do souboru. **Smazat všechna data cyklu** je vymaže.
+Tvoje data zůstávají v tomto telefonu a jeho záloze, nikdy na serveru daili. Nech zapnuté iCloud Backup nebo zálohu Google.
 
-> Note: Po odhlášení data zůstanou, ale připomenutí přestanou chodit. Smazáním účtu se data z tohoto telefonu vymažou; starší záloha telefonu je ale může ještě obsahovat. Víc v zásadách ochrany osobních údajů na daili.app.
+> Note: Odhlášení zastaví připomenutí. Smazáním účtu se data v tomto telefonu vymažou. Víc v zásadách ochrany osobních údajů na daili.app.

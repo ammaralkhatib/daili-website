@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Creare o modificare un'abitudine
-summary: Inizia un'abitudine da un modello o creane una tua, e scegli chi partecipa e quanto spesso.
-keywords: nuova abitudine, creare abitudine, aggiungere abitudine, modello, modificare abitudine, archiviare, eliminare abitudine, contatore, obiettivo
-translatedFrom: 2026-09-24
+summary: Inizia un'abitudine da un modello, da un'abitudine salvata o da una tua idea, e scegli icona, chi e quanto spesso.
+keywords: nuova abitudine, creare abitudine, aggiungere abitudine, modello, icona, modificare abitudine, contatore, obiettivo, abitudine salvata, eliminare abitudine
+translatedFrom: 2026-10-16
 ---
-Parti da una delle 12 abitudini già pronte, oppure creane una tua.
+Parti da un'abitudine già pronta, da una salvata o da una tua.
 
-![Il modulo della nuova abitudine. Le scelte di Chi, Solo io, Ognuno di noi e Insieme, sono cerchiate.](habits-create)
+![Il modulo Nuova abitudine. Le schede di Chi la fa?, Solo io, Ognuno di noi e Insieme, sono cerchiate.](habits-create)
 
-1. Nella schermata iniziale, tocca **Abitudini**, poi **+** in basso.
-2. Tocca un modello, oppure **Creane una tua**.
-3. Dalle un **Nome** e scegli **Chi**. Per **Ognuno di noi**, scegli le persone sotto **Chi partecipa?**.
-4. Scegli il **Tipo**: **Sì / no**, oppure **Contatore** con un **Obiettivo** e un'**Unità**, come 8 bicchieri.
-5. Sotto **Quanto spesso**, scegli **Tutti i giorni**, **Alcuni giorni** o **Alcune volte a settimana**.
-6. Tocca **Avvia l'abitudine**.
+1. Nella schermata iniziale, tocca **Abitudini**, poi **+** in basso a destra.
+2. Tocca un'abitudine, oppure **Creane una tua** in fondo. **Aggiunta** segna quelle che hai già.
+3. Scrivi un **Nome**. Scegli una delle icone suggerite, oppure tocca **Altro** per cercarle tutte e scegliere un colore.
+4. Scegli una scheda sotto **Chi la fa?**. Con **Ognuno di noi** all'inizio ci sei già tu.
+5. Rispondi a **Quanto spesso?** e **Come la segui?**. Per contare, **Cosa conti?** è la parola dopo il numero, come 8 bicchieri; **volte** è solo un numero.
+6. Tocca **Avvia l'abitudine**. Con **Salva nella mia lista di abitudini** attivo, potrai riavviarla più tardi.
 
-Per modificare un'abitudine, aprila e tocca la matita. **Archivia** ed **Elimina** sono sotto **⋯**.
+![Il pannello Scegli un'icona con gruppi e colori. Il campo di ricerca è cerchiato.](habits-icons)
 
-> Note: Solo chi ha creato un'abitudine, o un admin, può modificarla. Solo un admin può aggiungere altre persone a un'abitudine.
+Per modificare un'abitudine, aprila e tocca la matita. Se togli una persona, ti viene chiesta conferma: le sue spunte vengono eliminate.
+
+> Note: Solo chi ha creato un'abitudine può modificarla. Un admin può modificare anche quelle condivise.

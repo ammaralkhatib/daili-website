@@ -2,19 +2,19 @@
 id: cycle-start
 title: Pantau haid dengan Siklus
 summary: Catat haid Anda dan lihat kapan haid berikutnya mungkin datang. Pribadi: tidak ada anggota keluarga yang melihatnya.
-keywords: siklus, haid, menstruasi, datang bulan, catat, perkiraan, haid berikutnya, kalender, riwayat, pribadi
-translatedFrom: 2026-10-12
+keywords: siklus, haid, menstruasi, datang bulan, catat, perkiraan, haid berikutnya, haid dimulai, sudah selesai, pribadi
+translatedFrom: 2026-10-16
 ---
-Siklus nonaktif sampai Anda menyalakannya, dan gratis. Setiap orang memutuskan sendiri. Tidak ada anggota keluarga yang melihat Siklus Anda, atau tahu bahwa Anda memakainya.
+Siklus nonaktif sampai Anda menyalakannya, dan gratis. Tidak ada anggota keluarga yang melihat Siklus Anda, atau tahu bahwa Anda memakainya.
 
-1. Buka **Pengaturan** dan ketuk **Siklus**. Atau pilih kartu Siklus saat pertama kali menyiapkan daili.
-2. Ketuk **Mulai** dan ikuti langkah-langkahnya.
-3. Selama haid berlangsung, ketuk **Catat hari ini**, lalu **Sudah selesai** saat haid selesai.
+1. Buka **Pengaturan**, ketuk **Siklus**, lalu **Mulai**.
+2. Pilih hari haid terakhir Anda dimulai, misalnya **Kemarin**, dan lama siklus serta haid Anda biasanya. Tidak yakin? Ketuk **Tidak yakin — Daili mempelajarinya dari catatan Anda**.
+3. Saat haid dimulai, ketuk **Haid dimulai**. Dengan **Mulai lebih awal?** Anda bisa menandai hari-hari sebelumnya.
+4. Selama haid, ketuk **Sedikit**, **Sedang**, atau **Banyak** di kartu. **Gejala & suasana hati** membuka catatan lengkap hari itu.
+5. Sudah selesai? Ketuk **Sudah selesai** dan pilih hari terakhirnya. Hari-hari di antaranya ikut dihitung.
 
-![Siklus dengan lingkaran di hari ke-18, "Haid berikutnya dalam 8–14 hari", dan kalender bulan Oktober. Hari ini dilingkari.](cycle-start)
+![Kartu Siklus di hari ke-18: "Haid berikutnya sekitar 26 Okt – 30 Okt" dan tombol Haid dimulai. Hari ini dilingkari di kalender bulan di bawahnya.](cycle-start)
 
-Saat haid baru mulai, atau untuk mencatat hari lain, ketuk hari itu di kalender bulan. Hari yang belum tiba tidak bisa dicatat.
-
-Haid berikutnya ditampilkan sebagai rentang hari, bukan satu hari pasti. Perkiraan makin akurat setelah 3 siklus. Siklus sebelumnya ada di **Riwayat**.
+Sampai Anda menandai haid sudah selesai, Siklus menganggap haid Anda berlangsung selama lama biasanya. Haid berikutnya ditampilkan sebagai rentang tanggal, bukan satu hari pasti.
 
 > Note: Hanya perkiraan. Siklus bukan alat medis dan bukan alat kontrasepsi. Selengkapnya di ketentuan penggunaan di daili.app.

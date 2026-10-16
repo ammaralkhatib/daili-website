@@ -3,14 +3,14 @@ id: habits-private
 title: Yksityiset tavat
 summary: Pidä tapa omana tietonasi. Kukaan muu perheessä ei näe sitä.
 keywords: yksityinen, salainen, henkilökohtainen, piilotettu, vain minä, yksityisyys, tapa, lukko
-translatedFrom: 2026-09-24
+translatedFrom: 2026-10-16
 ---
 Jotkin tavat eivät kuulu muille. Yksityinen tapa on vain sinun nähtävissäsi.
 
 ![Uuden tavan lomakkeen Lisää-osio. Kytkin Yksityinen on ympyröity.](habits-private)
 
 1. Aloita uusi tapa tai avaa oma tapasi ja napauta kynää.
-2. Valitse **Vain minä** kohdassa **Kuka**.
+2. Valitse **Vain minä** kohdassa **Kuka sen tekee?**.
 3. Laita **Yksityinen** päälle kohdassa **Lisää**.
 4. Napauta **Aloita tapa** tai **Tallenna**, jos muutat olemassa olevaa.
 

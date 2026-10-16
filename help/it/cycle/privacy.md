@@ -1,16 +1,19 @@
 ---
 id: cycle-privacy
-title: Promemoria di Ciclo, blocco e dove sono i tuoi dati
-summary: Imposta promemoria privati, blocca Ciclo con Face ID e tieni i tuoi dati solo sul telefono.
-keywords: promemoria, blocco, face id, impronta, privacy, esportare, eliminare, backup, dati, privato
-translatedFrom: 2026-10-12
+title: Promemoria di Ciclo, blocco, calendario e i tuoi dati
+summary: Imposta promemoria privati, blocca Ciclo, mostralo nel tuo calendario e tieni i dati sul telefono.
+keywords: promemoria, blocco, face id, impronta, privacy, calendario, esportare, importare, backup, eliminare
+translatedFrom: 2026-10-16
 ---
-Apri Ciclo e tocca l'ingranaggio per le **Impostazioni del ciclo**.
+In Ciclo, tocca l'ingranaggio per le **Impostazioni del ciclo**.
 
-Sotto **Promemoria**: **Promemoria mestruazioni** con **Giorni prima**, un **Promemoria per segnare** e l'**Ora del promemoria**. Sulla schermata di blocco un promemoria dice solo «Hai un promemoria», a meno che non attivi **Mostra testo chiaro sulla schermata di blocco**.
+1. **Promemoria**: **Promemoria mestruazioni** arriva qualche giorno prima. **Chiedi se le mestruazioni sono iniziate** è attivo all'inizio e chiede il giorno dopo l'intervallo previsto. La schermata di blocco mostra solo «Hai un promemoria. Tocca per aprire».
+2. **Blocca Ciclo**: chiede Face ID, l'impronta o il codice del telefono. Il selettore delle app poi nasconde Ciclo, e Android ne blocca gli screenshot.
+3. **Mostra nel mio calendario**: il calendario di questo telefono mostra una goccia, piena se segnata, vuota se prevista. Disattivato all'inizio; la famiglia non la vede mai.
+4. **Importa (CSV)** riporta un file creato con **Esporta (CSV)** e tiene i giorni già presenti.
 
-Attiva **Blocca Ciclo** e Ciclo chiederà Face ID, l'impronta o il codice del telefono. Si blocca di nuovo dopo un minuto di assenza.
+![Impostazioni del ciclo con Mostra nel mio calendario, l'interruttore delle scorte, Esporta e Importa. Blocca Ciclo è cerchiato.](cycle-settings)
 
-I dati di Ciclo restano solo su questo telefono e nel suo backup. Il server di daili non li riceve mai. **Esporta (CSV)** salva una copia in un file. **Elimina tutti i dati del ciclo** li cancella.
+I tuoi dati restano su questo telefono e nel suo backup, mai sul server di daili. Tieni attivi iCloud Backup o il backup di Google.
 
-> Note: Se esci dall'account, i dati restano ma i promemoria si fermano. Se elimini l'account, i dati vengono cancellati da questo telefono; un backup più vecchio del telefono potrebbe ancora contenerli. Altre informazioni nell'informativa sulla privacy su daili.app.
+> Note: Se esci dall'account, i promemoria si fermano. Se elimini l'account, i dati su questo telefono vengono cancellati. Altre informazioni nell'informativa sulla privacy su daili.app.

@@ -2,20 +2,22 @@
 id: habits-tick
 title: Odhacz nawyk: swój, wspólny, dziecka
 summary: Odhacz nawyk, gdy go zrobisz. Możesz też odhaczać nawyki wspólne, a admini mogą odhaczać za dziecko.
-keywords: odhacz, zaznacz, zrobione, ukończ nawyk, licznik, dziecko, dzieci, razem, oznacz jako zrobione, wczoraj
-translatedFrom: 2026-09-30
+keywords: odhacz, zaznacz, zrobione, ukończ nawyk, licznik, dziecko, dzieci, razem, cofnij, wczoraj
+translatedFrom: 2026-10-16
 ---
-Odhacz nawyk od razu, gdy go zrobisz. Każde odhaczenie daje rodzinie energię.
+Odhacz nawyk od razu, gdy go zrobisz.
 
 ![Ekran Nawyki. Zakreślony jest okrągły przycisk odhaczania obok nawyku Rozciąganie.](habits-tick)
 
-1. Na ekranie głównym dotknij **Nawyki**.
-2. Dotknij okrągłego przycisku po prawej stronie nawyku. Przy liczniku dotykaj **O jeden więcej**, aż dojdziesz do celu.
-3. Coś wczoraj umknęło? Przytrzymaj nawyk i dotknij **Uzupełnij wczoraj**.
-4. Żeby poprawić wcześniejszy dzień, dotknij wiersza nawyku, a potem dnia. Możesz zmieniać ostatnie 7 dni.
+1. Na ekranie głównym dotknij **Nawyki**, a potem okrągłego przycisku po prawej stronie nawyku. 🎉 oznacza, że zrobione. Odznaczone przez pomyłkę? Dotknij **Cofnij**.
+2. Licznik z każdym dotknięciem napełnia się o kawałek, nawet ponad cel. Żeby poprawić pomyłkę, przytrzymaj go i dotknij minusa.
+3. Coś wczoraj umknęło? Otwórz nawyk i dotknij ⋯ albo przytrzymaj nawyk typu tak/nie, a potem dotknij **Uzupełnij wczoraj**.
+4. Żeby poprawić wcześniejszy dzień, otwórz nawyk i dotknij dnia. Możesz zmieniać ostatnie 7 dni.
 
-Odhaczasz swoje nawyki i każdy nawyk **Razem**. Admin może też odhaczać za dziecko bez własnego logowania. Wtedy w wierszu jest napis **Odhaczasz za** i imię dziecka.
+Odhaczasz swoje nawyki i każdy nawyk **Razem**. Admin może też odhaczać za dziecko bez własnego logowania.
 
-Nawyki, które nie przypadają na dziś, czekają w sekcji **Wkrótce**, z dniem, w którym każdy z nich przypada następnym razem. Gdy tworzysz nawyk, który nie przypada na dziś, komunikat powie ci, kiedy się pojawi.
+Zakładka **Rodzina** pokazuje jeden pasek z częścią dla każdej osoby. Nawyki **Razem** mają własny wiersz i liczą się temu, kto je odhaczył.
 
-> Note: Nikt nie może odhaczać za innego dorosłego. Każdy z własnym logowaniem odhacza swoje nawyki sam.
+Nawyki, które nie przypadają na dziś, czekają w sekcji **Wkrótce**.
+
+> Note: Nikt nie może odhaczać za innego dorosłego.

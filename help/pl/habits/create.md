@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Utwórz albo zmień nawyk
-summary: Zacznij nawyk od szablonu albo stwórz własny i wybierz, kto bierze udział i jak często.
-keywords: nowy nawyk, utwórz nawyk, dodaj nawyk, szablon, edytuj nawyk, archiwizuj, usuń nawyk, licznik, cel
-translatedFrom: 2026-09-24
+summary: Zacznij nawyk od szablonu, zapisanego nawyku albo własnego pomysłu i wybierz ikonę, kto go robi i jak często.
+keywords: nowy nawyk, utwórz nawyk, dodaj nawyk, szablon, ikona, edytuj nawyk, licznik, cel, zapisany nawyk, usuń nawyk
+translatedFrom: 2026-10-16
 ---
-Zacznij od jednego z 12 gotowych nawyków albo stwórz własny.
+Zacznij od gotowego nawyku, zapisanego albo własnego.
 
-![Formularz Nowy nawyk. Zakreślone są opcje Kto: Tylko ja, Każde z nas i Razem.](habits-create)
+![Formularz Nowy nawyk. Zakreślone są karty Kto to robi?: Tylko ja, Każde z nas i Razem.](habits-create)
 
-1. Na ekranie głównym dotknij **Nawyki**, a potem **+** na dole.
-2. Dotknij szablonu albo **Stwórz własny**.
-3. Wypełnij pole **Nazwa** i wybierz opcję w sekcji **Kto**. Przy **Każde z nas** wybierz osoby w sekcji **Kto bierze udział?**.
-4. Wybierz **Rodzaj**: **Tak / nie** albo **Licznik** z polami **Cel** i **Jednostka**, na przykład 8 szklanek.
-5. W sekcji **Jak często** wybierz **Codziennie**, **W wybrane dni** albo **Kilka razy w tygodniu**.
-6. Dotknij **Zacznij nawyk**.
+1. Na ekranie głównym dotknij **Nawyki**, a potem **+** w prawym dolnym rogu.
+2. Dotknij nawyku albo **Stwórz własny** na dole. **Dodany** oznacza te, które już masz.
+3. Wypełnij pole **Nazwa**. Wybierz jedną z proponowanych ikon albo dotknij **Więcej**, żeby przeszukać wszystkie i wybrać kolor.
+4. Wybierz kartę w sekcji **Kto to robi?**. Przy **Każde z nas** na start zaznaczona jest twoja osoba.
+5. Odpowiedz na **Jak często?** i **Jak to śledzisz?**. Przy liczeniu **Co liczysz?** to słowo po liczbie, na przykład 8 szklanek; **razy** to po prostu liczba.
+6. Dotknij **Zacznij nawyk**. Gdy **Zapisz na mojej liście nawyków** jest włączone, możesz później zacząć ten nawyk znowu.
 
-Żeby zmienić nawyk, otwórz go i dotknij ołówka. **Archiwizuj** i **Usuń** są pod **⋯**.
+![Panel Wybierz ikonę z grupami i kolorami. Zakreślone jest pole wyszukiwania.](habits-icons)
 
-> Note: Nawyk może zmienić tylko osoba, która go utworzyła, albo admin. Tylko admin może dodać do nawyku inne osoby.
+Żeby zmienić nawyk, otwórz go i dotknij ołówka. Przed usunięciem osoby pojawi się pytanie: jej odhaczenia zostaną skasowane.
+
+> Note: Nawyk może zmienić tylko osoba, która go utworzyła. Admin może też zmieniać wspólne nawyki.

@@ -1,21 +1,23 @@
 ---
 id: habits-create
 title: Crear o cambiar un hábito
-summary: Empieza un hábito desde una plantilla o crea el tuyo, y elige quién participa y con qué frecuencia.
-keywords: hábito nuevo, crear hábito, añadir hábito, plantilla, editar hábito, archivar, eliminar hábito, contador, objetivo
-translatedFrom: 2026-09-24
+summary: Empieza un hábito desde una plantilla, un hábito guardado o tu propia idea, y elige un icono, quién y con qué frecuencia.
+keywords: hábito nuevo, crear hábito, añadir hábito, plantilla, icono, editar hábito, contador, objetivo, hábito guardado, eliminar hábito
+translatedFrom: 2026-10-16
 ---
-Empieza con uno de los 12 hábitos ya preparados, o crea el tuyo.
+Empieza con un hábito ya preparado, uno guardado o el tuyo.
 
-![El formulario de hábito nuevo. Las opciones de Quién, Solo yo, Cada uno y Juntos, están marcadas con un círculo.](habits-create)
+![El formulario Nuevo hábito. Las tarjetas de ¿Quién lo hace?, Solo yo, Cada uno y Juntos, están marcadas con un círculo.](habits-create)
 
-1. En la pantalla de inicio, toca **Hábitos** y luego **+** abajo.
-2. Toca una plantilla, o **Crear el tuyo**.
-3. Ponle un **Nombre** y elige **Quién**. Con **Cada uno**, elige a las personas en **¿Quién participa?**.
-4. Elige el **Tipo**: **Sí / no**, o **Contador** con un **Objetivo** y una **Unidad**, como 8 vasos.
-5. En **Con qué frecuencia**, elige **Todos los días**, **Algunos días** o **Algunas veces por semana**.
-6. Toca **Empezar hábito**.
+1. En la pantalla de inicio, toca **Hábitos** y luego **+** abajo a la derecha.
+2. Toca un hábito, o **Crear el tuyo** abajo del todo. **Añadido** marca los que ya tienes.
+3. Escribe un **Nombre**. Elige uno de los iconos sugeridos, o toca **Más** para buscar entre todos y elegir un color.
+4. Elige una tarjeta en **¿Quién lo hace?**. Con **Cada uno**, tu nombre ya viene elegido.
+5. Responde a **¿Con qué frecuencia?** y **¿Cómo lo registras?**. Para contar, **¿Qué cuentas?** es la palabra tras el número, como 8 vasos; **veces** es solo un número.
+6. Toca **Empezar hábito**. Con **Guardar en mi lista de hábitos** activado, podrás volver a empezarlo más adelante.
 
-Para cambiar un hábito, ábrelo y toca el lápiz. **Archivar** y **Eliminar** están en **⋯**.
+![La hoja Elige un icono con grupos y colores. El campo de búsqueda está marcado con un círculo.](habits-icons)
 
-> Note: Solo quien creó un hábito, o un admin, puede cambiarlo. Solo un admin puede añadir a otras personas a un hábito.
+Para cambiar un hábito, ábrelo y toca el lápiz. Si quitas a una persona, primero se te pregunta: sus marcas se eliminan.
+
+> Note: Solo quien creó un hábito puede cambiarlo. Un admin también puede cambiar los compartidos.

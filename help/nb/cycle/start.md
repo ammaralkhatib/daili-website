@@ -2,19 +2,19 @@
 id: cycle-start
 title: Følg mensen med Syklus
 summary: Registrer mensen og se når den neste kan komme. Privat: ingen i familien ser det.
-keywords: syklus, mens, menstruasjon, registrere, anslag, neste mens, kalender, historikk, privat
-translatedFrom: 2026-10-12
+keywords: syklus, mens, menstruasjon, registrere, anslag, neste mens, mensen startet, blødning, privat
+translatedFrom: 2026-10-16
 ---
-Syklus er av til du slår den på, og den er gratis. Hver person bestemmer selv. Ingen i familien ser Syklus-dataene dine, eller at du bruker den.
+Syklus er av til du slår den på, og den er gratis. Ingen i familien ser Syklus-dataene dine, eller at du bruker den.
 
-1. Åpne **Innstillinger** og trykk på **Syklus**. Eller velg Syklus-kortet når du setter opp daili første gang.
-2. Trykk på **Kom i gang** og følg stegene.
-3. Så lenge mensen varer, trykker du på **Registrer i dag**, og på **Den er over** når den er over.
+1. Åpne **Innstillinger**, trykk på **Syklus** og så på **Kom i gang**.
+2. Velg dagen den siste mensen startet, for eksempel **I går**, og de vanlige lengdene dine. Vet du ikke? Trykk på **Usikker – Daili lærer det av loggføringene dine**.
+3. Når en mens starter, trykker du på **Mensen startet**. Med **Startet tidligere?** kan du markere tidligere dager.
+4. Under mensen trykker du på **Lett**, **Middels** eller **Kraftig** på kortet. **Symptomer & humør** åpner hele dagen.
+5. Ferdig? Trykk på **Den er over** og velg den siste dagen. Dagene imellom teller også.
 
-![Syklus med ringen på dag 18, «Neste mens om 8–14 dager» og måneden. I dag er ringet inn.](cycle-start)
+![Syklus-kortet på dag 18: «Neste mens rundt 26. okt. – 30. okt.» og knappen Mensen startet. I dag er ringet inn i måneden under.](cycle-start)
 
-Når en ny mens starter, eller for å registrere en annen dag, trykker du på den dagen i måneden. Dager fram i tid kan ikke registreres.
-
-Neste mens vises som et spenn av dager, aldri som én bestemt dag. Anslagene blir bedre etter 3 sykluser. Tidligere sykluser finner du under **Historikk**.
+Til du sier at den er over, regner Syklus med at du har mens like lenge som vanlig. Neste mens vises som et spenn av datoer, aldri som én bestemt dag.
 
 > Note: Bare anslag. Syklus er ikke medisinsk utstyr og ikke ment som prevensjon. Mer i vilkårene for bruk på daili.app.
