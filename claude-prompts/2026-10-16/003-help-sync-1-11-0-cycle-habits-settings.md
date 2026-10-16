@@ -27,7 +27,8 @@ EMPTY and every app route must have an article.
   `help/<code>/account/preferences.md`, `help/<code>/start/sign-in.md` (or
   whatever file holds the sign-in article), `help/media*.json` +
   `static/help/media/**` for the cycle/habits/account ids (commit them),
-  `help/routes-allowlist.json`, `npm run build`.
+  `help/routes-allowlist.json` (remove the `/lists/supplies` entry from
+  `pending` that prompt 004 parked there), `npm run build`.
 - Out: `LIVE_APP_VERSION`, legal pages, Budget (part 1), other topics.
   🔴 Untracked files that are not yours: leave them untracked.
 

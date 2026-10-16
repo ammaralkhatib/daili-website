@@ -24,8 +24,9 @@ store-day bump). Updated articles keep their `since`.
 ## Scope
 - In: `help/<code>/budget/*.md`, `help/media*.json` +
   `static/help/media/**` for the budget ids (already written by the app's
-  script — commit them), `help/routes-allowlist.json` (only if a route needs
-  a `pending` entry — it should not), `npm run build`.
+  script — commit them), `help/routes-allowlist.json` (remove the
+  `/budget/:id/trends` entry from `pending` — prompt 004 parked it there; the
+  new `budget-trends` article covers it now), `npm run build`.
 - Out: `LIVE_APP_VERSION`, legal pages, other topics, home page, blog.
   🔴 Untracked files that are not yours (`claude-reports/2026-10-01/`,
   `static/assets/img/blog/…`, `static/assets/img/photos/`): leave them untracked.
