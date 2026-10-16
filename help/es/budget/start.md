@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Planifica el presupuesto familiar
-summary: Crea un presupuesto para el mes o para un viaje, elige quién lo ve y añade lo que gastas. Gratis para todos.
-keywords: presupuesto, dinero, gastos, hogar, límite, categorías, moneda, exportar, csv, costes, finanzas, ahorro
+summary: Crea un presupuesto para el mes o para un viaje, elige quién lo ve y mira de un vistazo en qué se va el dinero. Gratis para todos.
+keywords: presupuesto, dinero, gastos, hogar, límite, categorías, por día, cambiar de presupuesto, sin conexión, finanzas, ahorro
 tipTitle: Mira en qué se va el dinero de la familia
 tipBody: Crea un presupuesto, pon un límite y añade lo que gastas. Gratis para todos.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Presupuesto es gratis para todos.
+Presupuesto es gratis.
 
-1. En Inicio, toca **Presupuesto** y luego **Nuevo presupuesto**. Más adelante, lo encontrarás arriba, bajo el nombre del presupuesto.
-2. Elige **Mes del hogar**, **Vacaciones**, **Fiesta** o **Empezar de cero**. Hogar se repite cada mes; Vacaciones y Fiesta son de una sola vez.
-3. Elige la **Moneda** y, si quieres, un **Límite**.
-4. En **Quién puede verlo**, elige **Toda la familia**, **Elegir personas** o **Solo yo**.
-5. Toca **Crear presupuesto**.
+1. En Inicio, toca **Presupuesto**. Si se abre un presupuesto, toca su nombre arriba. Luego toca **Nuevo presupuesto**.
+2. Elige **Hogar**, **Vacaciones**, **Fiesta** o **Empezar de cero**.
+3. Elige el icono, el periodo y, si quieres, un **Límite**. En **Empieza el** puedes elegir **Último día del mes**.
+4. Si hay más personas en tu familia, elige en **Quién puede verlo**: **Toda la familia**, **Elegir personas** o **Solo yo**. Toca **Crear presupuesto**.
 
-![Un presupuesto de octubre con lo que queda, los saldos y las categorías. El botón + está marcado con un círculo.](budget-start)
+![Un presupuesto Hogar de octubre: una factura vencida arriba, lo que queda, la franja de colores y las categorías. El botón Añadir gasto está marcado con un círculo.](budget-start)
 
-Toca **+** para añadir un movimiento: importe, categoría, **Título**, **Fecha**, **Pagado por**, **Forma de pago**, **Repetir** y una **Nota**. Cada categoría puede tener su propio límite: **⋯** → **Categorías**.
+Arriba salen las facturas vencidas; luego lo que queda, cuánto toca más o menos por día y una franja de colores con los gastos. ¿Aún sin límite? Toca **Poner un límite**.
 
-Con las flechas ves otros meses. Busca, o filtra por **Pagado por**.
+Toca una categoría para ver lo que queda, el mes anterior, sus movimientos y **Editar límite**.
 
-> Note: Solo quien creó un presupuesto puede hacerlo privado. Esa persona, o un administrador de la familia que lo vea, puede cambiar sus **Ajustes** o borrarlo. Cualquiera que lo vea puede **Exportar** un archivo CSV desde ahí. Una moneda nueva cambia el símbolo, no los importes.
+![La hoja Supermercado: quedan 372,15 € de 600 € y cuatro movimientos. El botón Añadir a Supermercado está marcado con un círculo.](budget-category)
+
+Para cambiar de presupuesto, toca el nombre arriba.
+
+Un presupuesto que se repite y tiene límite muestra durante 7 días cómo fue el mes anterior.
+
+> Note: Sin conexión ves los presupuestos que ya abriste, pero no puedes cambiarlos.

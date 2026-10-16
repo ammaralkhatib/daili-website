@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Naplánuj rodinný rozpočet
-summary: Vytvor rozpočet na mesiac alebo na jeden výlet, vyber, kto ho vidí, a pridávaj, čo míňaš. Zadarmo pre všetkých.
-keywords: rozpočet, peniaze, výdavky, míňanie, domácnosť, limit, kategórie, mena, export, csv, náklady, financie
+summary: Vytvor rozpočet na mesiac alebo na jeden výlet, vyber, kto ho vidí, a hneď uvidíš, kam idú peniaze. Zadarmo pre všetkých.
+keywords: rozpočet, peniaze, míňanie, výdavky, domácnosť, limit, kategórie, na deň, prepnúť rozpočet, offline, financie
 tipTitle: Pozri sa, kam idú rodinné peniaze
 tipBody: Vytvor rozpočet, nastav limit a pridávaj, čo míňaš. Zadarmo pre všetkých.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Rozpočet je zadarmo pre všetkých.
+Rozpočet je zadarmo.
 
-1. Na domovskej obrazovke ťukni na **Rozpočet** a potom na **Nový rozpočet**. Neskôr ho nájdeš pod názvom rozpočtu hore.
-2. Vyber **Mesiac v domácnosti**, **Dovolenka**, **Oslava** alebo **Začať od nuly**. Domácnosť sa opakuje každý mesiac, Dovolenka a Oslava sú jednorazové.
-3. Vyber položku **Mena** a ak chceš, nastav aj **Limit**.
-4. V časti **Kto ho vidí** vyber **Všetci v rodine**, **Vybrať ľudí** alebo **Len ja**.
-5. Ťukni na **Vytvoriť rozpočet**.
+1. Na domovskej obrazovke ťukni na **Rozpočet**. Ak sa otvorí rozpočet, ťukni hore na jeho názov. Potom ťukni na **Nový rozpočet**.
+2. Vyber **Domácnosť**, **Dovolenka**, **Oslava** alebo **Začať od nuly**.
+3. Vyber ikonu, obdobie a ak chceš, aj **Limit**. V poli **Začína** môžeš vybrať **Posledný deň v mesiaci**.
+4. Ak sú v rodine aj ďalší, vyber v časti **Kto ho vidí**: **Všetci v rodine**, **Vybrať ľudí** alebo **Len ja**. Ťukni na **Vytvoriť rozpočet**.
 
-![Rozpočet na október so zostatkom, zostatkami medzi ľuďmi a kategóriami. Tlačidlo + je zakrúžkované.](budget-start)
+![Rozpočet Domácnosť na október: hore účet po splatnosti, potom zostatok, farebný pás a kategórie. Tlačidlo Pridať výdavok je zakrúžkované.](budget-start)
 
-Ťukni na **+** a pridaj položku: sumu, kategóriu, **Názov**, **Dátum**, **Kto platil**, **Spôsob platby**, **Opakovanie** a **Poznámka**. Každá kategória môže mať vlastný limit: **⋯** → **Kategórie**.
+Navrchu sú účty po splatnosti, potom zostatok, približne koľko môžeš minúť denne, a farebný pás výdavkov. Ešte nemáš limit? Ťukni na **Nastaviť limit**.
 
-Šípkami prejdeš na iné mesiace. Môžeš hľadať alebo filtrovať podľa poľa **Kto platil**.
+Ťukni na kategóriu a uvidíš zostatok, minulý mesiac, jej položky a **Upraviť limit**.
 
-> Note: Súkromným môže rozpočet urobiť len ten, kto ho vytvoril. On alebo správca rodiny, ktorý ho vidí, mení jeho **Nastavenia** alebo ho vymaže. Každý, kto ho vidí, tam môže **Exportovať** súbor CSV. Nová mena zmení len označenie, nie sumy.
+![Karta Potraviny: zostáva 372,15 € z 600 € a štyri položky. Tlačidlo Pridať do: Potraviny je zakrúžkované.](budget-category)
+
+Ak chceš prepnúť rozpočet, ťukni hore na jeho názov.
+
+Opakovaný rozpočet s limitom ukazuje 7 dní, ako dopadol minulý mesiac.
+
+> Note: Offline vidíš rozpočty otvorené už predtým, ale nemôžeš ich meniť.

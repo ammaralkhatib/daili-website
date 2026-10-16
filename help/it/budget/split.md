@@ -2,21 +2,23 @@
 id: budget-split
 title: Dividi le spese comuni e salda i conti
 summary: Dividi le spese in modo equo, vedi chi deve quanto a chi e registra un pagamento quando qualcuno restituisce i soldi.
-keywords: dividere, divisione, spese comuni, dovere, debito, saldo, saldare, restituire, equo, coinquilini, partner
-translatedFrom: 2026-10-12
+keywords: dividere, divisione, spese comuni, dovere, debito, saldo, saldare, restituire, segna come pagato, cronologia, partner
+translatedFrom: 2026-10-16
 ---
 Pagate le cose insieme? daili tiene il conto.
 
 1. In un bilancio, tocca **⋯** → **Impostazioni**.
-2. Sotto **Dividi le spese**, tocca **Dividi le spese comuni** e attivalo.
+2. Sotto **Altro**, tocca **Dividi le spese** e attivalo.
 3. Sotto **Chi divide le spese**, tieni almeno due persone. Tocca **Salva**.
 
-Ogni **Spesa condivisa** viene divisa in parti uguali tra loro. Disattivala per una voce che resta tutta a carico di chi paga.
+Ogni **Spesa condivisa** viene divisa in parti uguali tra loro. Disattivala per un movimento che resta tutto a carico di chi paga.
 
-La scheda **Saldi** del bilancio mostra chi deve quanto a chi, contando tutti i mesi insieme.
+Il bilancio mostra chi deve quanto a chi, contando tutti i mesi insieme. Tocca **Salda** per i dettagli.
 
-![La schermata Dividi le spese. Lena deve 28,17 € a Marco. Il pulsante Segna come pagato è cerchiato.](budget-split)
+![La schermata Dividi le spese. Marco paga 224,74 € a Lena. Il pulsante Segna come pagato è cerchiato.](budget-split)
 
-Per saldare un debito, tocca **Salda**, poi **Segna come pagato** accanto a un pagamento, e di nuovo **Segna come pagato**. Il pagamento non conta come spesa.
+Sotto **Chi paga chi**, tocca **Segna come pagato**. Controlla l'importo e la data, poi tocca di nuovo **Segna come pagato**. Se scrivi più dell'importo suggerito, daili ti avvisa. Il pagamento non conta come spesa.
+
+I pagamenti passati sono sotto **Saldi precedenti**, e in alto vedi quando avete saldato l'ultima volta.
 
 > Note: Un bilancio che vedi solo tu non può dividere le spese.

@@ -2,25 +2,24 @@
 id: budget-bills
 title: Factures, rappels et alertes de budget
 summary: Reçois un rappel avant l'échéance d'une facture, vois les factures dans l'agenda et sache quand un budget est presque épuisé.
-keywords: facture, factures, échéance, rappel, loyer, alerte, plafond, dépassement, agenda, courses, notification
-translatedFrom: 2026-10-12
+keywords: facture, factures, échéance, en retard, rappel, loyer, alerte, plafond, à venir, agenda, notification
+translatedFrom: 2026-10-16
 ---
 Une facture est une dépense que tu dois encore payer, comme le loyer.
 
-1. Dans un budget, touche **+** et ajoute la dépense.
-2. Active **C'est une facture**. La **Date** est le jour de l'échéance.
-3. Choisis un **Rappel**, par exemple **3 jours avant**.
+1. Dans un budget, touche **Ajouter une dépense** et choisis le jour d'échéance en haut.
+2. Sous **Plus : répétition, facture, note, carte ou espèces**, active **C'est une facture** et choisis un **Rappel**.
 
-Le rappel va à la personne choisie dans **Payé par**, ou à tous ceux qui voient le budget si personne n'est choisi. Une fois la facture payée, touche **Marquer comme payé**.
+Le rappel va au payeur, ou à tous ceux qui voient le budget si le payeur est **Personne**. Les factures à payer sont sous **À venir** ; celles en retard sont en haut. Une fois payée, touche **Marquer comme payé**.
 
-Les factures apparaissent dans l'agenda le jour de l'échéance ; touches-en une pour ouvrir son budget. Pour les masquer, désactive **Factures** dans **Réglages de l'agenda**.
+Les factures apparaissent aussi dans l'agenda. Pour les masquer, désactive **Factures** dans **Réglages de l'agenda**.
 
-Une alerte de budget arrive à 80 % et à 100 % du plafond.
+Les alertes de budget arrivent à 80 % et à 100 % du plafond, en comptant l'argent reporté du mois dernier.
 
 ![L'écran Notifications, avec les interrupteurs Rappels de factures et Alertes de budget.](notifications-choose)
 
 Pour les couper : **Paramètres** → **Notifications** → **Rappels de factures** et **Alertes de budget**.
 
-Depuis une liste de courses : **⋯** → **Ajouter au budget**, ou touche **Ajouter** une fois le dernier article coché.
+Depuis une liste de courses : **⋯** → **Ajouter au budget**.
 
 > Note: Les rappels de factures arrivent même pendant les heures calmes. Les alertes de budget attendent la fin des heures calmes.

@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Aile bütçeni planla
-summary: Bir ay ya da tek bir gezi için bütçe yap, kimlerin göreceğini seç ve harcamalarını ekle. Herkes için ücretsiz.
-keywords: bütçe, para, harcama, giderler, ev, limit, kategoriler, para birimi, dışa aktar, csv, masraf, finans
+summary: Ay için ya da tek bir gezi için bütçe yap, kimlerin göreceğini seç ve paranın nereye gittiğini bir bakışta gör. Herkes için ücretsiz.
+keywords: bütçe, para, harcama, giderler, ev, limit, kategoriler, günlük, bütçe değiştir, çevrimdışı, finans
 tipTitle: Ailenin parası nereye gidiyor, gör
 tipBody: Bir bütçe yap, limit koy ve harcamalarını ekle. Herkes için ücretsiz.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Bütçe herkes için ücretsiz.
+Bütçe ücretsiz.
 
-1. Ana ekranda **Bütçe** kutucuğuna, ardından **Yeni bütçe** seçeneğine dokun. Sonra bunu en üstte bütçenin adının altında bulursun.
-2. **Ev ayı**, **Tatil**, **Parti** ya da **Boş başla** seçeneğini seç. Ev her ay tekrarlanır; Tatil ve Parti tek seferliktir.
-3. **Para birimi** seç ve istersen bir **Limit** koy.
-4. **Kimler görebilir** altında **Ailedeki herkes**, **Kişileri seç** ya da **Yalnızca ben** seçeneğini seç.
-5. **Bütçe oluştur** düğmesine dokun.
+1. Ana ekranda **Bütçe** kutucuğuna dokun. Bir bütçe açılırsa en üstteki adına dokun. Ardından **Yeni bütçe** seçeneğine dokun.
+2. **Ev**, **Tatil**, **Parti** ya da **Boş başla** seçeneğini seç.
+3. Simgeyi, dönemi ve istersen bir **Limit** seç. **Başlangıç** için **Ayın son günü** da seçilebilir.
+4. Ailede başkaları da varsa **Kimler görebilir** altında seç: **Ailedeki herkes**, **Kişileri seç** ya da **Yalnızca ben**. **Bütçe oluştur** düğmesine dokun.
 
-![Ekim ayı için bir bütçe: kalan tutar, bakiyeler ve kategoriler. + düğmesi daire içine alınmış.](budget-start)
+![Ekim ayı için Ev bütçesi: en üstte gecikmiş bir fatura, sonra kalan tutar, renkli şerit ve kategoriler. Gider ekle düğmesi daire içine alınmış.](budget-start)
 
-Bir kayıt eklemek için **+** düğmesine dokun: tutar, kategori, **Başlık**, **Tarih**, **Ödeyen**, **Ödeme yöntemi**, **Yineleme** ve bir **Not**. Her kategorinin kendi limiti olabilir: **⋯** → **Kategoriler**.
+Gecikmiş faturalar en üstte durur; ardından kalan tutar, günde yaklaşık ne kadar harcayabileceğin ve harcamaların renkli şeridi gelir. Henüz limit yok mu? **Limit belirle** seçeneğine dokun.
 
-Oklar diğer ayları gösterir. Arama yapabilir ya da **Ödeyen** alanına göre filtreleyebilirsin.
+Kalanı, geçen ayı, kayıtlarını ve **Limiti düzenle** seçeneğini görmek için bir kategoriye dokun.
 
-> Note: Bir bütçeyi yalnızca onu oluşturan kişi özel yapabilir. Bu kişi ya da bütçeyi görebilen bir aile yöneticisi **Ayarlar** bölümünden bütçeyi değiştirebilir veya silebilir. Bütçeyi gören herkes oradan **Dışa aktar** ile bir CSV dosyası alabilir. Yeni para birimi tutarları değil, yalnızca simgeyi değiştirir.
+![Market sayfası: TL24.000 limitten TL14.884,00 kaldı ve dört kayıt var. Market kategorisine ekle düğmesi daire içine alınmış.](budget-category)
+
+Başka bir bütçeye geçmek için en üstteki ada dokun.
+
+Limitli ve tekrarlanan bir bütçe, geçen ayın nasıl geçtiğini 7 gün boyunca gösterir.
+
+> Note: Çevrimdışıyken daha önce açtığın bütçeleri görürsün ama değiştiremezsin.

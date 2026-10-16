@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Pianifica il bilancio di famiglia
-summary: Crea un bilancio per il mese o per un viaggio, scegli chi lo vede e aggiungi quello che spendi. Gratis per tutti.
-keywords: bilancio, budget, soldi, spese, uscite, casa, limite, categorie, valuta, esportare, csv, finanze
+summary: Crea un bilancio per il mese o per un viaggio, scegli chi lo vede e scopri a colpo d'occhio dove vanno i soldi. Gratis per tutti.
+keywords: bilancio, budget, soldi, spese, uscite, casa, limite, categorie, al giorno, cambiare bilancio, offline, finanze
 tipTitle: Scopri dove vanno i soldi di famiglia
 tipBody: Crea un bilancio, imposta un limite e aggiungi quello che spendi. Gratis per tutti.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Bilancio è gratis per tutti.
+Bilancio è gratis.
 
-1. Nella schermata iniziale, tocca **Bilancio**, poi **Nuovo bilancio**. In seguito lo trovi in alto, sotto il nome del bilancio.
-2. Scegli **Mese di casa**, **Vacanza**, **Festa** o **Inizia da zero**. Casa si ripete ogni mese; Vacanza e Festa valgono una volta sola.
-3. Scegli la **Valuta** e, se vuoi, un **Limite**.
-4. Sotto **Chi può vederlo**, scegli **Tutta la famiglia**, **Scegli le persone** o **Solo io**.
-5. Tocca **Crea bilancio**.
+1. Nella schermata iniziale, tocca **Bilancio**. Se si apre un bilancio, tocca il suo nome in alto. Poi tocca **Nuovo bilancio**.
+2. Scegli **Casa**, **Vacanza**, **Festa** o **Inizia da zero**.
+3. Scegli l'icona, il periodo e, se vuoi, un **Limite**. In **Inizia il** puoi scegliere **Ultimo giorno del mese**.
+4. Se in famiglia ci sono altre persone, scegli sotto **Chi può vederlo**: **Tutta la famiglia**, **Scegli le persone** o **Solo io**. Tocca **Crea bilancio**.
 
-![Un bilancio di ottobre con quanto resta, i saldi e le categorie. Il pulsante + è cerchiato.](budget-start)
+![Un bilancio Casa di ottobre: una bolletta scaduta in alto, quanto resta, la barra colorata e le categorie. Il pulsante Aggiungi spesa è cerchiato.](budget-start)
 
-Tocca **+** per aggiungere una voce: importo, categoria, **Titolo**, **Data**, **Pagato da**, **Metodo di pagamento**, **Ripeti** e una **Nota**. Ogni categoria può avere il suo limite: **⋯** → **Categorie**.
+In alto ci sono le bollette scadute, poi quanto resta, circa quanto al giorno e una barra colorata delle spese. Ancora nessun limite? Tocca **Imposta un limite**.
 
-Le frecce mostrano gli altri mesi. Cerca, o filtra per **Pagato da**.
+Tocca una categoria per vedere quanto resta, il mese scorso, i suoi movimenti e **Modifica limite**.
 
-> Note: Solo chi ha creato un bilancio può renderlo privato. Questa persona, o un amministratore della famiglia che lo vede, può modificarlo o eliminarlo in **Impostazioni**. Chiunque lo veda può toccare lì **Esporta** per avere un file CSV. Una nuova valuta cambia il simbolo, non gli importi.
+![La scheda Spesa: 372,15 € rimasti su 600 € e quattro movimenti. Il pulsante Aggiungi a Spesa è cerchiato.](budget-category)
+
+Per cambiare bilancio, tocca il nome in alto.
+
+Un bilancio ricorrente con un limite mostra per 7 giorni com'è andato il mese scorso.
+
+> Note: Offline vedi i bilanci che hai già aperto, ma non puoi modificarli.

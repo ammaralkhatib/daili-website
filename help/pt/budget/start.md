@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Planeje o orçamento da família
-summary: Crie um orçamento para o mês ou para uma viagem, escolha quem pode ver e adicione o que você gasta. Grátis para todos.
-keywords: orçamento, dinheiro, gastos, despesas, casa, limite, categorias, moeda, exportar, csv, custos, finanças
+summary: Crie um orçamento para o mês ou para uma viagem, escolha quem pode ver e veja num relance para onde vai o dinheiro. Grátis para todos.
+keywords: orçamento, dinheiro, gastos, despesas, casa, limite, categorias, por dia, trocar orçamento, offline, finanças
 tipTitle: Veja para onde vai o dinheiro da família
 tipBody: Crie um orçamento, defina um limite e adicione o que você gasta. Grátis para todos.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-O Orçamento é grátis para todos.
+O Orçamento é grátis.
 
-1. Na tela inicial, toque em **Orçamento** e depois em **Novo orçamento**. Depois, essa opção fica no nome do orçamento, no topo.
-2. Escolha **Mês da casa**, **Férias**, **Festa** ou **Começar do zero**. Casa se repete todo mês; Férias e Festa são de uma vez só.
-3. Escolha a **Moeda** e, se quiser, um **Limite**.
-4. Em **Quem pode ver**, escolha **Toda a família**, **Escolher pessoas** ou **Só eu**.
-5. Toque em **Criar orçamento**.
+1. Na tela inicial, toque em **Orçamento**. Se um orçamento abrir, toque no nome dele no topo. Depois toque em **Novo orçamento**.
+2. Escolha **Casa**, **Férias**, **Festa** ou **Começar do zero**.
+3. Escolha o ícone, o período e, se quiser, um **Limite**. Em **Começa em**, você pode escolher **Último dia do mês**.
+4. Se houver outras pessoas na sua família, escolha em **Quem pode ver**: **Toda a família**, **Escolher pessoas** ou **Só eu**. Toque em **Criar orçamento**.
 
-![Um orçamento de outubro com o que resta, os saldos e as categorias. O botão + está circulado.](budget-start)
+![Um orçamento Casa de outubro: uma conta atrasada no topo, o que resta, a faixa colorida e as categorias. O botão Adicionar despesa está circulado.](budget-start)
 
-Toque em **+** para adicionar um lançamento: valor, categoria, **Título**, **Data**, **Pago por**, **Forma de pagamento**, **Repetir** e uma **Anotação**. Cada categoria pode ter seu próprio limite: **⋯** → **Categorias**.
+As contas atrasadas ficam no topo; depois vêm o que resta, mais ou menos quanto dá por dia e uma faixa colorida com os gastos. Ainda sem limite? Toque em **Definir um limite**.
 
-As setas mostram outros meses. Pesquise ou filtre por **Pago por**.
+Toque em uma categoria para ver o que resta, o mês anterior, os lançamentos dela e **Editar limite**.
 
-> Note: Só quem criou o orçamento pode deixá-lo privado. Essa pessoa, ou um administrador da família que possa vê-lo, muda as **Configurações** dele ou o apaga. Qualquer pessoa que veja o orçamento pode **Exportar** um arquivo CSV ali. Mudar a moeda muda o símbolo, não os valores.
+![A folha Mercado: restam € 372,15 de € 600 e quatro lançamentos. O botão Adicionar em Mercado está circulado.](budget-category)
+
+Para trocar de orçamento, toque no nome no topo.
+
+Um orçamento que se repete e tem limite mostra, durante 7 dias, como foi o mês anterior.
+
+> Note: Offline, você vê os orçamentos que já abriu, mas não pode alterá-los.

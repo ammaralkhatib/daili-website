@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Planera familjens budget
-summary: Gör en budget för månaden eller för en resa, välj vem som ser den och lägg till det du spenderar. Gratis för alla.
-keywords: budget, pengar, utgifter, hushåll, hushållsbudget, gräns, kategorier, valuta, export, csv, kostnader, ekonomi
+summary: Gör en budget för månaden eller för en resa, välj vem som ser den och se direkt vart pengarna tar vägen. Gratis för alla.
+keywords: budget, pengar, utgifter, hushåll, hushållsbudget, gräns, kategorier, per dag, byta budget, offline, ekonomi
 tipTitle: Se vart familjens pengar tar vägen
 tipBody: Gör en budget, sätt en gräns och lägg till det du spenderar. Gratis för alla.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Hushållsbudget är gratis för alla.
+Hushållsbudget är gratis.
 
-1. Tryck på **Hushållsbudget** på startskärmen och sedan på **Ny budget**. Senare hittar du den högst upp under budgetens namn.
-2. Välj **Hushållsmånad**, **Semester**, **Fest** eller **Börja tomt**. Hushåll upprepas varje månad; Semester och Fest gäller en gång.
-3. Välj **Valuta** och, om du vill, en **Gräns**.
-4. Välj **Alla i familjen**, **Välj personer** eller **Bara jag** under **Vem kan se den**.
-5. Tryck på **Skapa budget**.
+1. Tryck på **Hushållsbudget** på startskärmen. Öppnas en budget trycker du på dess namn högst upp. Tryck sedan på **Ny budget**.
+2. Välj **Hushåll**, **Semester**, **Fest** eller **Börja tomt**.
+3. Välj ikon, period och, om du vill, en **Gräns**. Under **Börjar** kan du också välja **Sista dagen i månaden**.
+4. Finns det fler i familjen väljer du under **Vem kan se den**: **Alla i familjen**, **Välj personer** eller **Bara jag**. Tryck på **Skapa budget**.
 
-![En budget för oktober med vad som är kvar, saldona och kategorierna. Knappen + är inringad.](budget-start)
+![En hushållsbudget för oktober: överst en försenad räkning, sedan vad som är kvar, färgfältet och kategorierna. Knappen Lägg till utgift är inringad.](budget-start)
 
-Tryck på **+** för att lägga till en post: belopp, kategori, **Titel**, **Datum**, **Betalt av**, **Betalsätt**, **Upprepa** och en **Anteckning**. Varje kategori kan ha en egen gräns: **⋯** → **Kategorier**.
+Försenade räkningar ligger överst, sedan vad som är kvar, ungefär hur mycket per dag och ett färgfält med utgifterna. Ingen gräns än? Tryck på **Ange en gräns**.
 
-Med pilarna ser du andra månader. Sök, eller filtrera på **Betalt av**.
+Tryck på en kategori för att se vad som är kvar, förra månaden, dess poster och **Ändra gräns**.
 
-> Note: Bara den som skapade en budget kan göra den privat. Den personen, eller en administratör i familjen som ser den, ändrar dess **Inställningar** eller raderar den. Alla som ser den kan skapa en CSV-fil där med **Exportera**. En ny valuta ändrar beteckningen, inte beloppen.
+![Fönstret Matvaror: 4 094,00 kr kvar av 6 600 kr och fyra poster. Knappen Lägg till i Matvaror är inringad.](budget-category)
+
+Byt budget genom att trycka på namnet högst upp.
+
+En återkommande budget med gräns visar i 7 dagar hur förra månaden gick.
+
+> Note: Offline ser du budgetar som du har öppnat tidigare, men du kan inte ändra dem.

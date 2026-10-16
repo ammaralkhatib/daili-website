@@ -1,24 +1,29 @@
 ---
 id: budget-start
 title: Zaplanuj rodzinny budżet
-summary: Utwórz budżet na miesiąc albo na jeden wyjazd, wybierz, kto go widzi, i dodawaj wydatki. Za darmo dla wszystkich.
-keywords: budżet, pieniądze, wydatki, koszty, dom, limit, kategorie, waluta, eksport, csv, finanse, oszczędzanie
+summary: Utwórz budżet na miesiąc albo na jeden wyjazd, wybierz, kto go widzi, i zobacz od razu, na co idą pieniądze. Za darmo dla wszystkich.
+keywords: budżet, pieniądze, wydatki, koszty, dom, limit, kategorie, dziennie, zmiana budżetu, offline, finanse
 tipTitle: Zobacz, na co idą rodzinne pieniądze
 tipBody: Utwórz budżet, ustaw limit i dodawaj wydatki. Za darmo dla wszystkich.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-16
 ---
-Budżet jest za darmo dla wszystkich.
+Budżet jest za darmo.
 
-1. Na ekranie głównym dotknij **Budżet**, a potem **Nowy budżet**. Później ta opcja jest pod nazwą budżetu u góry.
-2. Wybierz **Miesięczny budżet domowy**, **Wakacje**, **Impreza** albo **Zacznij od zera**. Dom powtarza się co miesiąc; Wakacje i Impreza są jednorazowe.
-3. W polu **Waluta** wybierz walutę i, jeśli chcesz, ustaw **Limit**.
-4. W sekcji **Kto może to widzieć** wybierz **Cała rodzina**, **Wybrane osoby** albo **Tylko ja**.
-5. Dotknij **Utwórz budżet**.
+1. Na ekranie głównym dotknij **Budżet**. Jeśli otworzy się budżet, dotknij jego nazwy u góry. Potem dotknij **Nowy budżet**.
+2. Wybierz **Dom**, **Wakacje**, **Impreza** albo **Zacznij od zera**.
+3. Wybierz ikonę, okres i, jeśli chcesz, **Limit**. W polu **Zaczyna się** możesz wybrać **Ostatni dzień miesiąca**.
+4. Jeśli w rodzinie są inne osoby, wybierz w sekcji **Kto może to widzieć**: **Cała rodzina**, **Wybrane osoby** albo **Tylko ja**. Dotknij **Utwórz budżet**.
 
-![Budżet na październik z kwotą, która została, saldami i kategoriami. Przycisk + jest zakreślony.](budget-start)
+![Budżet Dom na październik: zaległy rachunek u góry, kwota, która została, kolorowy pasek i kategorie. Przycisk Dodaj wydatek jest zakreślony.](budget-start)
 
-Dotknij **+**, żeby dodać wpis: kwota, kategoria, **Tytuł**, **Data**, **Kto zapłacił**, **Metoda płatności**, **Powtarzaj** i **Notatka**. Każda kategoria może mieć własny limit: **⋯** → **Kategorie**.
+Zaległe rachunki są na górze, pod nimi to, co zostało, mniej więcej ile na dzień i kolorowy pasek wydatków. Nie masz jeszcze limitu? Dotknij **Ustaw limit**.
 
-Strzałki pokazują inne miesiące. Szukaj albo filtruj według pola **Kto zapłacił**.
+Dotknij kategorii, żeby zobaczyć, ile zostało, poprzedni miesiąc, wpisy i **Zmień limit**.
 
-> Note: Tylko osoba, która utworzyła budżet, może ustawić go jako prywatny. Ona albo administrator rodziny, który go widzi, może zmienić jego **Ustawienia** albo go usunąć. Każdy, kto go widzi, może tam użyć opcji **Eksportuj**, żeby pobrać plik CSV. Nowa waluta zmienia tylko oznaczenie, nie kwoty.
+![Kategoria Zakupy spożywcze: zostało 1600,00 zł z 2580 zł i cztery wpisy. Przycisk Dodaj do: Zakupy spożywcze jest zakreślony.](budget-category)
+
+Żeby zmienić budżet, dotknij nazwy u góry.
+
+Cykliczny budżet z limitem przez 7 dni pokazuje, jak poszedł poprzedni miesiąc.
+
+> Note: Offline widać budżety otwarte już wcześniej, ale nie można ich zmieniać.
