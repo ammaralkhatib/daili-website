@@ -156,13 +156,24 @@
     "day": {
       "h2": "Commencez la journée ensemble",
       "sub": "Tout ce que votre famille doit savoir, là où vous regardez déjà.",
+      "new": "Nouveau",
+      "prev": "Précédent",
+      "next": "Suivant",
+      "counter": "{n} sur {total}",
       "cards": [
-        { "h3": "Listes", "p": "Ajoutez le lait dans la cuisine, cochez-le au magasin. Tout le monde le voit aussitôt.", "t": "Pain", "s": "Coché par Marco · à l'instant" },
-        { "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie de la famille · 34 / 40", "s": "Encore 6 et Minzi part en voyage" },
-        { "h3": "Notes", "p": "Idées en vrac, le mot de passe Wi-Fi, qui va chercher Mamie. Gardez une note pour vous ou partagez-la avec la famille.", "t": "Mamie arrive samedi à 15h", "s": "Partagé avec la famille" },
-        { "h3": "Recettes", "p": "Gardez les recettes préférées de la famille, ou importez-en une depuis une vidéo ou une photo. Envoyez les ingrédients sur votre liste en un geste.", "t": "Tofu laqué aigre-doux", "s": "13 ingrédients · Ajouter aux Courses" },
-        { "h3": "Menus", "p": "Planifiez petit-déjeuner, déjeuner et dîner pour la semaine : à 18h, plus personne ne demande ce qu'on mange ce soir.", "t": "Curry de légumes", "s": "Dîner · lundi" },
-        { "h3": "Anniversaires", "p": "Un compte à rebours pour chaque anniversaire de la famille, et un rappel à temps pour trouver le cadeau.", "t": "Emma fête ses 12 ans", "s": "Dans 3 jours et 12 heures" }
+        { "slug": "calendar", "h3": "Agenda", "p": "Un seul agenda partagé pour toute la famille, chacun dans sa propre couleur.", "t": "Cours de piano", "s": "Aujourd'hui, 16h30 · Emma" },
+        { "slug": "lists", "h3": "Listes", "p": "Ajoutez le lait dans la cuisine, cochez-le au magasin. Tout le monde le voit aussitôt.", "t": "Pain", "s": "Coché par Marco · à l'instant" },
+        { "slug": "todos", "h3": "Tâches", "p": "Corvées et petites missions avec un nom dessus, pour que rien ne reste entre deux chaises.", "t": "Sortir les poubelles", "s": "Noah · demain, 8h00" },
+        { "slug": "budget", "h3": "Budget", "p": "Voyez ce qu'il reste ce mois-ci, où est passé l'argent et qui doit quoi à qui.", "t": "Encore {amount} par jour", "s": "Courses · encore 9 jours" },
+        { "slug": "cycle", "h3": "Cycle", "p": "Un suivi des règles privé, qui reste sur votre téléphone.", "t": "Règles dans 8–14 jours", "s": "Visible uniquement par vous" },
+        { "slug": "habits", "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie de la famille · 34 / 40", "s": "Encore 6 et Minzi part en voyage" },
+        { "slug": "notes", "h3": "Notes", "p": "Idées en vrac, le mot de passe Wi-Fi, qui va chercher Mamie. Gardez une note pour vous ou partagez-la avec la famille.", "t": "Mamie arrive samedi à 15h", "s": "Partagé avec la famille" },
+        { "slug": "recipes", "h3": "Recettes", "p": "Gardez les recettes préférées de la famille, ou importez-en une depuis une vidéo ou une photo. Envoyez les ingrédients sur votre liste en un geste.", "t": "Tofu laqué aigre-doux", "s": "13 ingrédients · Ajouter aux Courses" },
+        { "slug": "meal-plan", "h3": "Menus", "p": "Planifiez petit-déjeuner, déjeuner et dîner pour la semaine : à 18h, plus personne ne demande ce qu'on mange ce soir.", "t": "Curry de légumes", "s": "Dîner · lundi" },
+        { "slug": "birthdays", "h3": "Anniversaires", "p": "Un compte à rebours pour chaque anniversaire de la famille, et un rappel à temps pour trouver le cadeau.", "t": "Emma fête ses 12 ans", "s": "Dans 3 jours et 12 heures" },
+        { "slug": "weather", "h3": "Météo", "p": "La météo du jour sur votre écran d'accueil, pour savoir si les enfants ont besoin d'une veste.", "t": "Pluie dès 15:00", "s": "Max. 16° · Min. 7°" },
+        { "slug": "documents", "h3": "Documents et photos", "p": "Un coffre privé pour les passeports et les papiers importants, uniquement sur votre téléphone.", "t": "Passeport Lena.pdf", "s": "Reste sur ce téléphone" },
+        { "slug": "family", "h3": "Famille", "p": "Invitez tout le monde avec un code, un lien ou un QR code, et ajoutez les enfants qui n'ont pas encore de téléphone.", "t": "Emma a rejoint la famille Berger", "s": "À l'instant" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Les notes de la famille dans l’app Daili",
       "shot-recipes": "Des recettes enregistrées dans l’app Daili",
       "shot-mealplan": "Les menus de la semaine dans l’app Daili",
-      "shot-birthdays": "Les prochains anniversaires dans l’app Daili"
+      "shot-birthdays": "Les prochains anniversaires dans l’app Daili",
+      "shot-todos": "Une liste de tâches partagée dans l’app Daili",
+      "shot-budget": "Un budget familial dans l’app Daili",
+      "shot-cycle": "Le suivi de cycle privé dans l’app Daili",
+      "shot-weather": "Les prévisions météo dans l’app Daili",
+      "shot-documents": "Le coffre privé pour les documents dans l’app Daili",
+      "shot-family": "Les membres de la famille dans l’app Daili"
     },
     "screens": {
       "h2": "Sur chaque écran de la maison",

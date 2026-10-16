@@ -183,14 +183,28 @@
       "@day": { "description": "\"Start the day together\" section: headline and sub line (≤ 80 chars)." },
       "h2": "Start the day together",
       "sub": "Everything your family needs to know, in the places you already look.",
-      "@cards": { "description": "Six feature cards under \"Start the day together\", in this order: Lists, Habits, Notes, Recipes, Meal plan, Birthdays. h3 = the app's feature name, p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36). cards[1] t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\"." },
+      "@cards": { "description": "Every feature, one card each, in ONE horizontal row under \"Start the day together\", in this order: Calendar, Lists, To-dos, Budget, Cycle, Habits, Notes, Recipes, Meal plan, Birthdays, Weather, Documents & photos, Family (site.config.mjs HOME_FEATURES). slug = the feature's URL part, data, never translated. h3 = the app's feature name (dashboardTile*, cycleTitle), p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36), with the names this locale's screenshots show. Budget t keeps {amount} (24 € in the currency of the locale's budget screenshot, formatted by the build). Cycle t = the app's cycleNextIn for 8–14 days; weather t/s = weatherTileRainFrom (15:00) and weatherTileHighLow (16° / 7°). The habits card's t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\". Never write \"free\", a price or \"Plus\"." },
+      "@new": { "description": "The small badge on a feature card that is new in the app (one short word)." },
+      "new": "New",
+      "@prev": { "description": "Screen-reader labels of the two arrow buttons above the feature row: previous / next card." },
+      "prev": "Previous",
+      "next": "Next",
+      "@counter": { "description": "Above the feature row: which card is in view. {n} and {total} are numbers, formatted by the page." },
+      "counter": "{n} of {total}",
       "cards": [
-        { "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
-        { "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" },
-        { "h3": "Notes", "p": "Quick thoughts, the Wi-Fi password, who picks up Grandma. Keep a note private or share it with the family.", "t": "Grandma arrives Saturday at 3 pm", "s": "Shared with Family" },
-        { "h3": "Recipes", "p": "Keep the family favourites, or import one from a video or a photo. Send the ingredients to your list in one tap.", "t": "Sweet & sour sticky tofu", "s": "13 ingredients · Add to Groceries" },
-        { "h3": "Meal plan", "p": "Plan breakfast, lunch and dinner for the week, so nobody asks what's for dinner at six.", "t": "Vegetable curry", "s": "Dinner · Monday" },
-        { "h3": "Birthdays", "p": "Countdowns for every birthday in the family, and a reminder in time to get the gift.", "t": "Emma turns 12", "s": "In 3 days, 12 hours" }
+        { "slug": "calendar", "h3": "Calendar", "p": "One shared calendar for the whole family, every person in their own colour.", "t": "Piano lesson", "s": "Today, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Lists", "p": "Add milk in the kitchen, tick it off in the shop. Everyone sees it straight away.", "t": "Bread", "s": "Ticked by Marco · just now" },
+        { "slug": "todos", "h3": "To-dos", "p": "Chores and errands with a name on them, so nothing falls between two people.", "t": "Take out the bins", "s": "Noah · Tomorrow, 08:00" },
+        { "slug": "budget", "h3": "Budget", "p": "See what is left this month, where the money went, and who owes whom.", "t": "{amount} left per day", "s": "Groceries · 9 days to go" },
+        { "slug": "cycle", "h3": "Cycle", "p": "A private period tracker that stays on your phone.", "t": "Next period in 8–14 days", "s": "Only you can see this" },
+        { "slug": "habits", "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" },
+        { "slug": "notes", "h3": "Notes", "p": "Quick thoughts, the Wi-Fi password, who picks up Grandma. Keep a note private or share it with the family.", "t": "Grandma arrives Saturday at 3 pm", "s": "Shared with Family" },
+        { "slug": "recipes", "h3": "Recipes", "p": "Keep the family favourites, or import one from a video or a photo. Send the ingredients to your list in one tap.", "t": "Sweet & sour sticky tofu", "s": "13 ingredients · Add to Groceries" },
+        { "slug": "meal-plan", "h3": "Meal plan", "p": "Plan breakfast, lunch and dinner for the week, so nobody asks what's for dinner at six.", "t": "Vegetable curry", "s": "Dinner · Monday" },
+        { "slug": "birthdays", "h3": "Birthdays", "p": "Countdowns for every birthday in the family, and a reminder in time to get the gift.", "t": "Emma turns 12", "s": "In 3 days, 12 hours" },
+        { "slug": "weather", "h3": "Weather", "p": "Today's weather on your Home screen, so you know if the kids need a jacket.", "t": "Rain from 15:00", "s": "H 16° · L 7°" },
+        { "slug": "documents", "h3": "Documents & photos", "p": "A private vault for passports and important papers, only on your phone.", "t": "Passport Lena.pdf", "s": "Stays on this phone" },
+        { "slug": "family", "h3": "Family", "p": "Invite everyone with a code, a link or a QR code, and add the kids who don't have a phone yet.", "t": "Emma joined The Bergers", "s": "Just now" }
       ]
     },
     "calendars": {
@@ -276,7 +290,13 @@
       "shot-notes": "Family notes in the Daili app",
       "shot-recipes": "Saved recipes in the Daili app",
       "shot-mealplan": "The week’s meal plan in the Daili app",
-      "shot-birthdays": "Upcoming birthdays in the Daili app"
+      "shot-birthdays": "Upcoming birthdays in the Daili app",
+      "shot-todos": "A shared to-do list in the Daili app",
+      "shot-budget": "A family budget in the Daili app",
+      "shot-cycle": "The private cycle tracker in the Daili app",
+      "shot-weather": "The weather forecast in the Daili app",
+      "shot-documents": "The private documents vault in the Daili app",
+      "shot-family": "The family members screen in the Daili app"
     },
     "screens": {
       "@screens": { "description": "\"On every screen\" section: five cards (h3 + p)." },

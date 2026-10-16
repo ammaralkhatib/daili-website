@@ -156,13 +156,24 @@
     "day": {
       "h2": "Güne birlikte başlayın",
       "sub": "Ailenizin bilmesi gereken her şey, zaten baktığınız yerlerde.",
+      "new": "Yeni",
+      "prev": "Önceki",
+      "next": "Sonraki",
+      "counter": "{n} / {total}",
       "cards": [
-        { "h3": "Listeler", "p": "Sütü mutfakta ekleyin, markette işaretleyin. Herkes anında görür.", "t": "Ekmek", "s": "Marco işaretledi · az önce" },
-        { "h3": "Alışkanlıklar", "p": "Küçük rutinler, hep birlikte. Her işaret ailenizin kedisi Minzi'ye daha fazla enerji verir.", "t": "Aile enerjisi · 34 / 40", "s": "6 tane daha, Minzi yolculuğa çıkıyor" },
-        { "h3": "Notlar", "p": "Aklınıza gelenler, Wi-Fi şifresi, babaanneyi kimin alacağı. Notu kendinize saklayın ya da aileyle paylaşın.", "t": "Babaanne Cmt. 15.00'te geliyor", "s": "Aileyle paylaşıldı" },
-        { "h3": "Tarifler", "p": "Ailenin sevdiği tarifleri saklayın ya da bir videodan veya fotoğraftan içe aktarın. Malzemeleri tek dokunuşla listenize gönderin.", "t": "Tatlı ekşi soslu tofu", "s": "13 malzeme · Alışverişe ekle" },
-        { "h3": "Yemek planı", "p": "Haftanın kahvaltısını, öğle ve akşam yemeğini planlayın; saat altıda kimse akşama ne yiyeceğimizi sormasın.", "t": "Sebzeli köri", "s": "Akşam yemeği · Pazartesi" },
-        { "h3": "Doğum günleri", "p": "Ailedeki her doğum günü için geri sayım ve hediyeyi zamanında almanız için bir hatırlatma.", "t": "Emma 12 yaşına giriyor", "s": "3 gün 12 saat sonra" }
+        { "slug": "calendar", "h3": "Takvim", "p": "Tüm aile için tek bir ortak takvim; herkesin kendi rengi var.", "t": "Piyano dersi", "s": "Bugün, 16.30 · Emma" },
+        { "slug": "lists", "h3": "Listeler", "p": "Sütü mutfakta ekleyin, markette işaretleyin. Herkes anında görür.", "t": "Ekmek", "s": "Marco işaretledi · az önce" },
+        { "slug": "todos", "h3": "Görevler", "p": "Ev işleri ve ayak işleri üzerinde bir isimle; böylece hiçbir şey arada kalmaz.", "t": "Çöpü çıkar", "s": "Noah · Yarın, 08.00" },
+        { "slug": "budget", "h3": "Bütçe", "p": "Bu ay ne kaldığını, paranın nereye gittiğini ve kimin kime borçlu olduğunu görün.", "t": "Günde {amount} kaldı", "s": "Market · 9 gün kaldı" },
+        { "slug": "cycle", "h3": "Döngü", "p": "Telefonunuzda kalan, size özel bir regl takibi.", "t": "Sonraki regl 8–14 gün içinde", "s": "Bunu yalnızca siz görürsünüz" },
+        { "slug": "habits", "h3": "Alışkanlıklar", "p": "Küçük rutinler, hep birlikte. Her işaret ailenizin kedisi Minzi'ye daha fazla enerji verir.", "t": "Aile enerjisi · 34 / 40", "s": "6 tane daha, Minzi yolculuğa çıkıyor" },
+        { "slug": "notes", "h3": "Notlar", "p": "Aklınıza gelenler, Wi-Fi şifresi, babaanneyi kimin alacağı. Notu kendinize saklayın ya da aileyle paylaşın.", "t": "Babaanne Cmt. 15.00'te geliyor", "s": "Aileyle paylaşıldı" },
+        { "slug": "recipes", "h3": "Tarifler", "p": "Ailenin sevdiği tarifleri saklayın ya da bir videodan veya fotoğraftan içe aktarın. Malzemeleri tek dokunuşla listenize gönderin.", "t": "Tatlı ekşi soslu tofu", "s": "13 malzeme · Alışverişe ekle" },
+        { "slug": "meal-plan", "h3": "Yemek planı", "p": "Haftanın kahvaltısını, öğle ve akşam yemeğini planlayın; saat altıda kimse akşama ne yiyeceğimizi sormasın.", "t": "Sebzeli köri", "s": "Akşam yemeği · Pazartesi" },
+        { "slug": "birthdays", "h3": "Doğum günleri", "p": "Ailedeki her doğum günü için geri sayım ve hediyeyi zamanında almanız için bir hatırlatma.", "t": "Emma 12 yaşına giriyor", "s": "3 gün 12 saat sonra" },
+        { "slug": "weather", "h3": "Hava durumu", "p": "Bugünün havası Ana Ekranınızda; çocukların cekete ihtiyacı olup olmadığını hemen bilirsiniz.", "t": "15.00 itibarıyla yağmur", "s": "En yüksek 16° · En düşük 7°" },
+        { "slug": "documents", "h3": "Belgeler ve fotoğraflar", "p": "Pasaportlar ve önemli evraklar için yalnızca telefonunuzda duran özel bir kasa.", "t": "Pasaport Lena.pdf", "s": "Bu telefonda kalır" },
+        { "slug": "family", "h3": "Aile", "p": "Herkesi bir kod, bağlantı ya da QR kodla davet edin; henüz telefonu olmayan çocukları da ekleyin.", "t": "Emma, Berger ailesine katıldı", "s": "Az önce" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Daili uygulamasında ailenin notları",
       "shot-recipes": "Daili uygulamasında kayıtlı tarifler",
       "shot-mealplan": "Daili uygulamasında haftanın yemek planı",
-      "shot-birthdays": "Daili uygulamasında yaklaşan doğum günleri"
+      "shot-birthdays": "Daili uygulamasında yaklaşan doğum günleri",
+      "shot-todos": "Daili uygulamasında ortak görev listesi",
+      "shot-budget": "Daili uygulamasında aile bütçesi",
+      "shot-cycle": "Daili uygulamasında özel döngü takibi",
+      "shot-weather": "Daili uygulamasında hava durumu tahmini",
+      "shot-documents": "Daili uygulamasında özel belge kasası",
+      "shot-family": "Daili uygulamasında aile üyeleri ekranı"
     },
     "screens": {
       "h2": "Evinizdeki her ekranda",

@@ -156,13 +156,24 @@
     "day": {
       "h2": "Samen de dag beginnen",
       "sub": "Alles wat je gezin moet weten, op de plekken waar je toch al kijkt.",
+      "new": "Nieuw",
+      "prev": "Vorige",
+      "next": "Volgende",
+      "counter": "{n} van {total}",
       "cards": [
-        { "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
-        { "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34 / 40", "s": "Nog 6 en Minzi gaat op reis" },
-        { "h3": "Notities", "p": "Snelle ideeën, het wifi-wachtwoord, wie oma ophaalt. Houd een notitie voor jezelf of deel hem met het gezin.", "t": "Oma komt zaterdag om 15:00", "s": "Gedeeld met het gezin" },
-        { "h3": "Recepten", "p": "Bewaar de favoriete gezinsrecepten, of importeer er een uit een video of foto. Zet de ingrediënten met één tik op je lijst.", "t": "Zoetzure kleverige tofu", "s": "13 ingrediënten · Naar Boodschappen" },
-        { "h3": "Menuplanner", "p": "Plan ontbijt, lunch en avondeten voor de hele week, zodat niemand om zes uur vraagt wat we eten.", "t": "Groentecurry", "s": "Avondeten · maandag" },
-        { "h3": "Verjaardagen", "p": "Aftellen naar elke verjaardag in het gezin, en op tijd een herinnering om het cadeau te halen.", "t": "Emma wordt 12", "s": "Over 3 dagen en 12 uur" }
+        { "slug": "calendar", "h3": "Agenda", "p": "Eén gedeelde agenda voor het hele gezin, iedereen in een eigen kleur.", "t": "Pianoles", "s": "Vandaag, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Lijsten", "p": "Zet melk op de lijst in de keuken, vink het af in de winkel. Iedereen ziet het meteen.", "t": "Brood", "s": "Afgevinkt door Marco · net" },
+        { "slug": "todos", "h3": "Taken", "p": "Klusjes en taken met een naam erbij, zodat niemand denkt dat de ander het zou doen.", "t": "Vuilnis buitenzetten", "s": "Noah · morgen, 08:00" },
+        { "slug": "budget", "h3": "Budget", "p": "Zie wat er deze maand nog over is, waar het geld heen ging en wie wie wat schuldig is.", "t": "Nog {amount} per dag", "s": "Boodschappen · nog 9 dagen" },
+        { "slug": "cycle", "h3": "Cyclus", "p": "Een privé menstruatiekalender die op je eigen telefoon blijft.", "t": "Menstruatie over 8–14 dagen", "s": "Alleen jij kunt dit zien" },
+        { "slug": "habits", "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34 / 40", "s": "Nog 6 en Minzi gaat op reis" },
+        { "slug": "notes", "h3": "Notities", "p": "Snelle ideeën, het wifi-wachtwoord, wie oma ophaalt. Houd een notitie voor jezelf of deel hem met het gezin.", "t": "Oma komt zaterdag om 15:00", "s": "Gedeeld met het gezin" },
+        { "slug": "recipes", "h3": "Recepten", "p": "Bewaar de favoriete gezinsrecepten, of importeer er een uit een video of foto. Zet de ingrediënten met één tik op je lijst.", "t": "Zoetzure kleverige tofu", "s": "13 ingrediënten · Naar Boodschappen" },
+        { "slug": "meal-plan", "h3": "Menuplanner", "p": "Plan ontbijt, lunch en avondeten voor de hele week, zodat niemand om zes uur vraagt wat we eten.", "t": "Groentecurry", "s": "Avondeten · maandag" },
+        { "slug": "birthdays", "h3": "Verjaardagen", "p": "Aftellen naar elke verjaardag in het gezin, en op tijd een herinnering om het cadeau te halen.", "t": "Emma wordt 12", "s": "Over 3 dagen en 12 uur" },
+        { "slug": "weather", "h3": "Weer", "p": "Het weer van vandaag op je beginscherm, zodat je weet of de kinderen een jas nodig hebben.", "t": "Regen vanaf 15:00", "s": "Max 16° · Min 7°" },
+        { "slug": "documents", "h3": "Documenten en foto's", "p": "Een privékluis voor paspoorten en belangrijke papieren, alleen op je telefoon.", "t": "Paspoort Lena.pdf", "s": "Blijft op deze telefoon" },
+        { "slug": "family", "h3": "Gezin", "p": "Nodig iedereen uit met een code, een link of een QR-code, en voeg de kinderen toe die nog geen telefoon hebben.", "t": "Emma hoort nu bij de Bergers", "s": "Zojuist" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Notities van het gezin in de Daili-app",
       "shot-recipes": "Bewaarde recepten in de Daili-app",
       "shot-mealplan": "De menuplanner van de week in de Daili-app",
-      "shot-birthdays": "Komende verjaardagen in de Daili-app"
+      "shot-birthdays": "Komende verjaardagen in de Daili-app",
+      "shot-todos": "Een gedeelde takenlijst in de Daili-app",
+      "shot-budget": "Een gezinsbudget in de Daili-app",
+      "shot-cycle": "De privé cycluskalender in de Daili-app",
+      "shot-weather": "De weersverwachting in de Daili-app",
+      "shot-documents": "De privékluis voor documenten in de Daili-app",
+      "shot-family": "De gezinsleden in de Daili-app"
     },
     "screens": {
       "h2": "Op elk scherm in huis",

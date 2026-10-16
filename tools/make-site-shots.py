@@ -5,9 +5,15 @@
     python3 tools/make-site-shots.py de fr      # just these site locales
     python3 tools/make-site-shots.py --check    # measure, write nothing
     python3 tools/make-site-shots.py --only shot-recipes   # one screen, every locale
+    python3 tools/make-site-shots.py --from-help           # HELP_SHOT_SOURCES instead
 
 Reads  ../store-shots/raw/<store-locale>/<01-dashboard…10-recipes>.png
 Writes static/assets/img/shots/<site-locale>/<shot-*>.webp   (640 px wide)
+
+--from-help reads static/help/media/<site-locale>/<id>.webp instead (the Help
+center's pictures, for screens the store pipeline has no capture of, see
+HELP_SHOT_SOURCES) and needs no store-shots sibling. A locale without the help
+picture is skipped and falls back to shots/en/ like any missing screenshot.
 
 The output is **committed**. The build must succeed on a machine that has no
 store-shots/ sibling, so this script runs by hand when the captures change and
@@ -36,9 +42,14 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "site.config.mjs"
 RAW = ROOT.parent / "store-shots" / "raw"
+HELP_MEDIA = ROOT / "static" / "help" / "media"
 OUT = ROOT / "static" / "assets" / "img" / "shots"
 
 WIDTH = 640            # the intrinsic width the site has always used
+# The help pictures are 720 × 1564, a hair shorter than the store captures
+# (640 × 1390.2 at our width). They are scaled to the store shots' exact size,
+# so IMAGE_SIZES['shot-'] stays one size: a 0.06 % stretch nobody can see.
+HELP_SIZE = (640, 1391)
 QUALITY = 80           # webp
 BUDGET = 45 * 1024     # per-file size budget
 MIN_QUALITY = 65       # the fallback: a file over budget steps down to here, 5 at a time
@@ -82,10 +93,12 @@ def main():
     ap.add_argument("--only", action="append", metavar="SHOT",
                     help="convert only this site name (e.g. shot-recipes); repeatable. "
                          "A new screen then does not re-encode the committed ones.")
+    ap.add_argument("--from-help", action="store_true",
+                    help="read the Help center's pictures (HELP_SHOT_SOURCES), not the store captures")
     args = ap.parse_args()
 
     shot_locale = js_map("SHOT_LOCALE")
-    sources = js_map("SHOT_SOURCES")
+    sources = js_map("HELP_SHOT_SOURCES" if args.from_help else "SHOT_SOURCES")
     if args.only:
         missing = [s for s in args.only if s not in sources.values()]
         if missing:
@@ -98,28 +111,29 @@ def main():
         sys.exit(f"not in SHOT_LOCALE: {', '.join(unknown)}\n"
                  f"mapped locales: {', '.join(shot_locale)}")
 
-    if not RAW.is_dir():
+    if not args.from_help and not RAW.is_dir():
         sys.exit(f"{RAW} does not exist. This script needs the store-shots "
                  f"sibling checkout; the site build does not.")
 
-    rows, sizes, problems = [], set(), []
+    rows, sizes, problems, skipped = [], set(), [], []
     for loc in wanted:
-        src_dir = RAW / shot_locale[loc]
+        src_dir = HELP_MEDIA / loc if args.from_help else RAW / shot_locale[loc]
         if not src_dir.is_dir():
-            problems.append(f"{loc}: {src_dir} is missing")
+            (skipped if args.from_help else problems).append(f"{loc}: {src_dir} is missing")
             continue
         dest_dir = OUT / loc
         if not args.check:
             dest_dir.mkdir(parents=True, exist_ok=True)
         for raw, name in sources.items():
-            src = src_dir / f"{raw}.png"
+            src = src_dir / (f"{raw}.webp" if args.from_help else f"{raw}.png")
             if not src.is_file():
-                problems.append(f"{loc}: {src} is missing")
+                (skipped if args.from_help else problems).append(f"{loc}: {src} is missing")
                 continue
             with Image.open(src) as im:
-                height = round(im.height * WIDTH / im.width)
-                out = flatten(im).resize((WIDTH, height), Image.LANCZOS)
-            sizes.add((WIDTH, height))
+                size = HELP_SIZE if args.from_help else (WIDTH, round(im.height * WIDTH / im.width))
+                out = flatten(im).resize(size, Image.LANCZOS)
+            width, height = size
+            sizes.add((width, height))
             dest = dest_dir / f"{name}.webp"
             q = QUALITY
             if not args.check:
@@ -130,7 +144,7 @@ def main():
                     q -= 5
                     out.save(dest, "WEBP", quality=q, method=6)
             kb = dest.stat().st_size / 1024 if dest.is_file() else 0.0
-            rows.append((loc, name, f"{WIDTH}x{height}", kb, q))
+            rows.append((loc, name, f"{width}x{height}", kb, q))
 
     if rows:
         print(f"{'locale':<8} {'file':<16} {'intrinsic':<11} {'size':>8}")
@@ -158,6 +172,8 @@ def main():
                   "IMAGE_SIZES['shot-'] can only carry one.")
         print("→ site.config.mjs IMAGE_SIZES['shot-'] must say exactly that.")
 
+    if skipped:
+        print("\nNo help picture, falls back to shots/en/:\n" + "\n".join(skipped))
     if problems:
         print("\n" + "\n".join(problems), file=sys.stderr)
         return 1

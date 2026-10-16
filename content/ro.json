@@ -156,13 +156,24 @@
     "day": {
       "h2": "Începeți ziua împreună",
       "sub": "Tot ce trebuie să știe familia ta, acolo unde te uiți deja.",
+      "new": "Nou",
+      "prev": "Anterior",
+      "next": "Următor",
+      "counter": "{n} din {total}",
       "cards": [
-        { "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
-        { "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34 / 40", "s": "Încă 6 și Minzi pleacă în călătorie" },
-        { "h3": "Notițe", "p": "Gânduri rapide, parola de Wi-Fi, cine o ia pe bunica. Păstrează o notiță doar pentru tine sau partajeaz-o cu familia.", "t": "Bunica vine sâmbătă la 15:00", "s": "Partajată cu familia" },
-        { "h3": "Rețete", "p": "Păstrează rețetele preferate ale familiei sau importă una dintr-un video ori dintr-o poză. Trimite ingredientele pe listă dintr-o atingere.", "t": "Tofu glazurat dulce-acrișor", "s": "13 ingrediente · Adaugă la Cumpărături" },
-        { "h3": "Meniu", "p": "Planifică micul dejun, prânzul și cina pentru toată săptămâna, ca nimeni să nu mai întrebe la șase ce e de mâncare.", "t": "Curry de legume", "s": "Cină · luni" },
-        { "h3": "Zile de naștere", "p": "Numărătoare inversă pentru fiecare zi de naștere din familie și un memento la timp pentru cadou.", "t": "Emma împlinește 12 ani", "s": "Peste 3 zile și 12 ore" }
+        { "slug": "calendar", "h3": "Calendar", "p": "Un singur calendar comun pentru toată familia, fiecare cu culoarea lui.", "t": "Lecție de pian", "s": "Azi, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Liste", "p": "Adaugi laptele în bucătărie, îl bifezi în magazin. Toată lumea vede imediat.", "t": "Pâine", "s": "Bifat de Marco · acum" },
+        { "slug": "todos", "h3": "Sarcini", "p": "Treburi și comisioane cu un nume pe ele, ca nimic să nu rămână între doi oameni.", "t": "Scoate gunoiul", "s": "Noah · mâine, 08:00" },
+        { "slug": "budget", "h3": "Buget", "p": "Vezi cât a rămas luna asta, pe ce s-au dus banii și cine cui datorează.", "t": "Rămas: {amount} pe zi", "s": "Alimente · încă 9 zile" },
+        { "slug": "cycle", "h3": "Ciclu", "p": "Un jurnal privat al ciclului, care rămâne pe telefonul tău.", "t": "Menstruația în 8–14 zile", "s": "Doar tu vezi asta" },
+        { "slug": "habits", "h3": "Obiceiuri", "p": "Rutine mici, făcute împreună. Fiecare bifă îi dă lui Minzi, pisica familiei, mai multă energie.", "t": "Energia familiei · 34 / 40", "s": "Încă 6 și Minzi pleacă în călătorie" },
+        { "slug": "notes", "h3": "Notițe", "p": "Gânduri rapide, parola de Wi-Fi, cine o ia pe bunica. Păstrează o notiță doar pentru tine sau partajeaz-o cu familia.", "t": "Bunica vine sâmbătă la 15:00", "s": "Partajată cu familia" },
+        { "slug": "recipes", "h3": "Rețete", "p": "Păstrează rețetele preferate ale familiei sau importă una dintr-un video ori dintr-o poză. Trimite ingredientele pe listă dintr-o atingere.", "t": "Tofu glazurat dulce-acrișor", "s": "13 ingrediente · Adaugă la Cumpărături" },
+        { "slug": "meal-plan", "h3": "Meniu", "p": "Planifică micul dejun, prânzul și cina pentru toată săptămâna, ca nimeni să nu mai întrebe la șase ce e de mâncare.", "t": "Curry de legume", "s": "Cină · luni" },
+        { "slug": "birthdays", "h3": "Zile de naștere", "p": "Numărătoare inversă pentru fiecare zi de naștere din familie și un memento la timp pentru cadou.", "t": "Emma împlinește 12 ani", "s": "Peste 3 zile și 12 ore" },
+        { "slug": "weather", "h3": "Vremea", "p": "Vremea de azi pe ecranul principal, ca să știi dacă cei mici au nevoie de geacă.", "t": "Ploaie de la 15:00", "s": "Max. 16° · Min. 7°" },
+        { "slug": "documents", "h3": "Documente și poze", "p": "Un seif privat pentru pașapoarte și acte importante, doar pe telefonul tău.", "t": "Pașaport Lena.pdf", "s": "Rămâne pe acest telefon" },
+        { "slug": "family", "h3": "Familie", "p": "Invită pe toată lumea cu un cod, un link sau un cod QR și adaugă copiii care încă nu au telefon.", "t": "Emma a intrat în familia Berger", "s": "Chiar acum" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Notițele familiei în aplicația Daili",
       "shot-recipes": "Rețete salvate în aplicația Daili",
       "shot-mealplan": "Meniul săptămânii în aplicația Daili",
-      "shot-birthdays": "Zilele de naștere care urmează în aplicația Daili"
+      "shot-birthdays": "Zilele de naștere care urmează în aplicația Daili",
+      "shot-todos": "O listă de sarcini comună în aplicația Daili",
+      "shot-budget": "Un buget al familiei în aplicația Daili",
+      "shot-cycle": "Jurnalul privat al ciclului în aplicația Daili",
+      "shot-weather": "Prognoza meteo în aplicația Daili",
+      "shot-documents": "Seiful privat pentru documente în aplicația Daili",
+      "shot-family": "Membrii familiei în aplicația Daili"
     },
     "screens": {
       "h2": "Pe fiecare ecran din casă",

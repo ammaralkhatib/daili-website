@@ -156,13 +156,24 @@
     "day": {
       "h2": "Mulai hari bersama",
       "sub": "Semua yang perlu diketahui keluargamu, di tempat yang memang sudah kamu lihat.",
+      "new": "Baru",
+      "prev": "Sebelumnya",
+      "next": "Berikutnya",
+      "counter": "{n} dari {total}",
       "cards": [
-        { "h3": "Daftar", "p": "Tambahkan susu di dapur, centang di toko. Semua langsung melihatnya.", "t": "Roti", "s": "Dicentang Andi · baru saja" },
-        { "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi keluarga · 34 / 40", "s": "6 lagi dan Minzi pergi jalan-jalan" },
-        { "h3": "Catatan", "p": "Ide singkat, kata sandi Wi-Fi, siapa yang menjemput Nenek. Simpan catatan untuk diri sendiri atau bagikan ke keluarga.", "t": "Nenek datang Sabtu pukul 15.00", "s": "Dibagikan ke keluarga" },
-        { "h3": "Resep", "p": "Simpan resep favorit keluarga, atau impor dari video atau foto. Kirim bahannya ke daftar belanja dengan sekali ketuk.", "t": "Tahu asam manis lengket", "s": "13 bahan · Tambah ke Belanja" },
-        { "h3": "Rencana makan", "p": "Rencanakan sarapan, makan siang, dan makan malam untuk sepekan, jadi tak ada lagi yang bertanya jam enam sore mau makan apa.", "t": "Kari sayur", "s": "Makan malam · Senin" },
-        { "h3": "Ulang tahun", "p": "Hitung mundur untuk setiap ulang tahun di keluarga, plus pengingat agar kado siap tepat waktu.", "t": "Putri genap 12 tahun", "s": "3 hari 12 jam lagi" }
+        { "slug": "calendar", "h3": "Kalender", "p": "Satu kalender bersama untuk seluruh keluarga, setiap orang dengan warnanya sendiri.", "t": "Les piano", "s": "Hari ini, 16.30 · Putri" },
+        { "slug": "lists", "h3": "Daftar", "p": "Tambahkan susu di dapur, centang di toko. Semua langsung melihatnya.", "t": "Roti", "s": "Dicentang Andi · baru saja" },
+        { "slug": "todos", "h3": "Tugas", "p": "Pekerjaan rumah dan urusan lain, masing-masing dengan nama penanggung jawabnya, jadi tak ada yang terlewat.", "t": "Buang sampah", "s": "Bayu · Besok, 08.00" },
+        { "slug": "budget", "h3": "Anggaran", "p": "Lihat sisa uang bulan ini, ke mana uangnya pergi, dan siapa berutang kepada siapa.", "t": "Sisa {amount} per hari", "s": "Belanja dapur · 9 hari lagi" },
+        { "slug": "cycle", "h3": "Siklus", "p": "Pelacak haid pribadi yang tetap ada di ponselmu.", "t": "Haid berikutnya dalam 8–14 hari", "s": "Hanya kamu yang bisa melihat ini" },
+        { "slug": "habits", "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi keluarga · 34 / 40", "s": "6 lagi dan Minzi pergi jalan-jalan" },
+        { "slug": "notes", "h3": "Catatan", "p": "Ide singkat, kata sandi Wi-Fi, siapa yang menjemput Nenek. Simpan catatan untuk diri sendiri atau bagikan ke keluarga.", "t": "Nenek datang Sabtu pukul 15.00", "s": "Dibagikan ke keluarga" },
+        { "slug": "recipes", "h3": "Resep", "p": "Simpan resep favorit keluarga, atau impor dari video atau foto. Kirim bahannya ke daftar belanja dengan sekali ketuk.", "t": "Tahu asam manis lengket", "s": "13 bahan · Tambah ke Belanja" },
+        { "slug": "meal-plan", "h3": "Rencana makan", "p": "Rencanakan sarapan, makan siang, dan makan malam untuk sepekan, jadi tak ada lagi yang bertanya jam enam sore mau makan apa.", "t": "Kari sayur", "s": "Makan malam · Senin" },
+        { "slug": "birthdays", "h3": "Ulang tahun", "p": "Hitung mundur untuk setiap ulang tahun di keluarga, plus pengingat agar kado siap tepat waktu.", "t": "Putri genap 12 tahun", "s": "3 hari 12 jam lagi" },
+        { "slug": "weather", "h3": "Cuaca", "p": "Cuaca hari ini di layar Utama, jadi kamu tahu apakah anak-anak perlu jaket.", "t": "Hujan mulai 15.00", "s": "Maks 16° · Min 7°" },
+        { "slug": "documents", "h3": "Dokumen & Foto", "p": "Brankas pribadi untuk paspor dan dokumen penting, hanya di ponselmu.", "t": "Paspor Sari.pdf", "s": "Tetap di ponsel ini" },
+        { "slug": "family", "h3": "Keluarga", "p": "Undang semua orang dengan kode, tautan, atau kode QR, dan tambahkan anak-anak yang belum punya ponsel.", "t": "Putri masuk Keluarga Wijaya", "s": "Baru saja" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Catatan keluarga di aplikasi Daili",
       "shot-recipes": "Resep tersimpan di aplikasi Daili",
       "shot-mealplan": "Rencana makan minggu ini di aplikasi Daili",
-      "shot-birthdays": "Ulang tahun mendatang di aplikasi Daili"
+      "shot-birthdays": "Ulang tahun mendatang di aplikasi Daili",
+      "shot-todos": "Daftar tugas bersama di aplikasi Daili",
+      "shot-budget": "Anggaran keluarga di aplikasi Daili",
+      "shot-cycle": "Pelacak siklus pribadi di aplikasi Daili",
+      "shot-weather": "Prakiraan cuaca di aplikasi Daili",
+      "shot-documents": "Brankas dokumen pribadi di aplikasi Daili",
+      "shot-family": "Layar anggota keluarga di aplikasi Daili"
     },
     "screens": {
       "h2": "Di setiap layar di rumahmu",

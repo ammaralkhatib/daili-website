@@ -156,13 +156,24 @@
     "day": {
       "h2": "Gemeinsam in den Tag",
       "sub": "Alles, was eure Familie wissen muss, genau dort, wo ihr sowieso hinschaut.",
+      "new": "Neu",
+      "prev": "Zurück",
+      "next": "Weiter",
+      "counter": "{n} von {total}",
       "cards": [
-        { "h3": "Listen", "p": "Milch in der Küche eintragen, im Laden abhaken. Alle sehen es sofort.", "t": "Brot", "s": "Von Marco abgehakt · gerade" },
-        { "h3": "Gewohnheiten", "p": "Kleine Routinen, gemeinsam erledigt. Jeder Haken gibt Minzi, eurer Familienkatze, mehr Energie.", "t": "Familienenergie · 34 / 40", "s": "Noch 6 und Minzi fährt auf Reisen" },
-        { "h3": "Notizen", "p": "Schnelle Gedanken, das WLAN-Passwort, wer Oma abholt. Behaltet eine Notiz für euch oder teilt sie mit der Familie.", "t": "Oma kommt Samstag um 15 Uhr", "s": "Mit der Familie geteilt" },
-        { "h3": "Rezepte", "p": "Bewahrt eure Lieblingsrezepte auf oder importiert eines aus einem Video oder Foto. Die Zutaten landen mit einem Tipp auf eurer Liste.", "t": "Süß-saurer Knuspertofu", "s": "13 Zutaten · Zu Einkaufen hinzufügen" },
-        { "h3": "Essensplan", "p": "Plant Frühstück, Mittag- und Abendessen für die ganze Woche, damit um sechs keiner fragt, was es heute gibt.", "t": "Gemüsecurry", "s": "Abendessen · Montag" },
-        { "h3": "Geburtstage", "p": "Countdowns für jeden Geburtstag in der Familie und eine Erinnerung, rechtzeitig das Geschenk zu besorgen.", "t": "Emma wird 12", "s": "In 3 Tagen, 12 Stunden" }
+        { "slug": "calendar", "h3": "Kalender", "p": "Ein gemeinsamer Kalender für die ganze Familie, jede Person in ihrer eigenen Farbe.", "t": "Klavierstunde", "s": "Heute, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Listen", "p": "Milch in der Küche eintragen, im Laden abhaken. Alle sehen es sofort.", "t": "Brot", "s": "Von Marco abgehakt · gerade" },
+        { "slug": "todos", "h3": "Aufgaben", "p": "Haushalt und Erledigungen mit Namen dran, damit keiner denkt, der andere macht es.", "t": "Müll rausbringen", "s": "Noah · morgen, 08:00" },
+        { "slug": "budget", "h3": "Budget", "p": "Seht, was diesen Monat noch übrig ist, wohin das Geld gegangen ist und wer wem etwas schuldet.", "t": "Noch {amount} pro Tag", "s": "Lebensmittel · noch 9 Tage" },
+        { "slug": "cycle", "h3": "Zyklus", "p": "Ein privater Periodenkalender, der auf deinem Handy bleibt.", "t": "Nächste Periode in 8–14 Tagen", "s": "Nur du kannst das sehen" },
+        { "slug": "habits", "h3": "Gewohnheiten", "p": "Kleine Routinen, gemeinsam erledigt. Jeder Haken gibt Minzi, eurer Familienkatze, mehr Energie.", "t": "Familienenergie · 34 / 40", "s": "Noch 6 und Minzi fährt auf Reisen" },
+        { "slug": "notes", "h3": "Notizen", "p": "Schnelle Gedanken, das WLAN-Passwort, wer Oma abholt. Behaltet eine Notiz für euch oder teilt sie mit der Familie.", "t": "Oma kommt Samstag um 15 Uhr", "s": "Mit der Familie geteilt" },
+        { "slug": "recipes", "h3": "Rezepte", "p": "Bewahrt eure Lieblingsrezepte auf oder importiert eines aus einem Video oder Foto. Die Zutaten landen mit einem Tipp auf eurer Liste.", "t": "Süß-saurer Knuspertofu", "s": "13 Zutaten · Zu Einkaufen hinzufügen" },
+        { "slug": "meal-plan", "h3": "Essensplan", "p": "Plant Frühstück, Mittag- und Abendessen für die ganze Woche, damit um sechs keiner fragt, was es heute gibt.", "t": "Gemüsecurry", "s": "Abendessen · Montag" },
+        { "slug": "birthdays", "h3": "Geburtstage", "p": "Countdowns für jeden Geburtstag in der Familie und eine Erinnerung, rechtzeitig das Geschenk zu besorgen.", "t": "Emma wird 12", "s": "In 3 Tagen, 12 Stunden" },
+        { "slug": "weather", "h3": "Wetter", "p": "Das Wetter von heute auf dem Startbildschirm, damit ihr wisst, ob die Kinder eine Jacke brauchen.", "t": "Regen ab 15:00", "s": "H 16° · T 7°" },
+        { "slug": "documents", "h3": "Dokumente & Fotos", "p": "Ein privater Tresor für Pässe und wichtige Papiere, nur auf deinem Handy.", "t": "Reisepass Lena.pdf", "s": "Bleibt auf diesem Handy" },
+        { "slug": "family", "h3": "Familie", "p": "Ladet alle per Code, Link oder QR-Code ein und fügt auch die Kinder hinzu, die noch kein Handy haben.", "t": "Emma ist neu bei Familie Berger", "s": "Gerade eben" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Notizen der Familie in der Daili-App",
       "shot-recipes": "Gespeicherte Rezepte in der Daili-App",
       "shot-mealplan": "Der Essensplan der Woche in der Daili-App",
-      "shot-birthdays": "Kommende Geburtstage in der Daili-App"
+      "shot-birthdays": "Kommende Geburtstage in der Daili-App",
+      "shot-todos": "Eine gemeinsame Aufgabenliste in der Daili-App",
+      "shot-budget": "Ein Familienbudget in der Daili-App",
+      "shot-cycle": "Der private Zykluskalender in der Daili-App",
+      "shot-weather": "Die Wettervorhersage in der Daili-App",
+      "shot-documents": "Der private Dokumententresor in der Daili-App",
+      "shot-family": "Die Familienmitglieder in der Daili-App"
     },
     "screens": {
       "h2": "Auf jedem Bildschirm zu Hause",

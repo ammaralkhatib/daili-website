@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, DAY_CARDS, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -600,7 +600,9 @@ for (const f of htmlFiles) {
 // the locale's own folder — one missing file would otherwise fall back to
 // English without a word. (Since the 2026-09-28 home page not every one of the
 // nine is on the page: shot-family is not.)
-const OWN_SHOTS = Object.values(SHOT_SOURCES);
+// The help-picture screens (HELP_SHOT_SOURCES, 2026-10-16/005) count as own
+// screenshots too: every mapped locale has its help picture.
+const OWN_SHOTS = [...Object.values(SHOT_SOURCES), ...Object.values(HELP_SHOT_SOURCES)];
 for (const loc of LOCALES) {
   const file = path.join(DIST, dirFor(loc).slice(1), 'index.html');
   if (!fs.existsSync(file)) continue;            // section 1 already reported it
@@ -637,7 +639,10 @@ for (const loc of LOCALES) {
 //     #get, #faq — and the footer after </main>;
 //   - the hero's scene loop: 7 scenes × 3 cards and 7 screenshots (round 2);
 //     8 member photo cards (the loop's copy is aria-hidden and not counted),
-//     6 "Start the day" cards, 2 floating cards on the calendars card,
+//     one "Start the day" card per HOME_FEATURES entry, in its order, each
+//     with its locale's (or the en) screenshot and the "New" badge only
+//     until newUntil, plus the row's counter, arrows and progress bar,
+//     2 floating cards on the calendars card,
 //     3 Daili Plus cards, 4 workflow buttons / screens / toasts, 5 boxes in
 //     "On every screen" and no TRMNL box among them;
 //   - the rating row shows RATING.value (formatted for the page's locale),
@@ -731,7 +736,28 @@ for (const loc of LOCALES) {
     if (/class="[^"]*\bshut(?:-rows)?\b/.test(html)) fail(out, 'has a shutter bar (.shut / .shut-rows) — removed in round 2');
     const daySec = sectionAt(html, '<section class="day"');
     const dayCards = count(daySec, '<article class="fcard ');
-    if (dayCards !== DAY_CARDS.length) fail(out, `"Start the day together" has ${dayCards} cards, expected ${DAY_CARDS.length} (home.day.cards)`);
+    if (dayCards !== HOME_FEATURES.length) fail(out, `"Start the day together" has ${dayCards} cards, expected ${HOME_FEATURES.length} (HOME_FEATURES)`);
+    // The feature row (2026-10-16/005): every card in HOME_FEATURES order,
+    // each with its own screenshot from shots/<loc>/ (when this locale has a
+    // capture set and the file exists) or else shots/en/, and the "New" badge
+    // exactly while BUILD_DATE <= newUntil.
+    const today = new Date().toISOString().slice(0, 10);
+    const rowCards = [...daySec.matchAll(/<article class="fcard [^"]*" data-slug="([^"]+)"[^>]*>([\s\S]*?)<\/article>/g)];
+    HOME_FEATURES.forEach((f, i) => {
+      const card = rowCards[i];
+      if (!card || card[1] !== f.slug) { fail(out, `feature card ${i + 1} is '${card ? card[1] : 'missing'}', expected '${f.slug}' (HOME_FEATURES order)`); return; }
+      const src = (card[2].match(/<img src="\/assets\/img\/shots\/([\w-]+)\/([\w-]+)\.webp\?v=/) || []);
+      const own = loc in SHOT_LOCALE && fs.existsSync(path.join(ROOT, 'static/assets/img/shots', loc, `${f.shot}.webp`));
+      const want = own ? loc : DEFAULT_LOCALE;
+      if (src[2] !== f.shot || src[1] !== want) fail(out, `feature card '${f.slug}' shows shots/${src[1] ?? '?'}/${src[2] ?? '?'}.webp, expected shots/${want}/${f.shot}.webp`);
+      else if (!fs.existsSync(path.join(ROOT, 'static/assets/img/shots', src[1], `${src[2]}.webp`))) fail(out, `feature card '${f.slug}': static/assets/img/shots/${src[1]}/${src[2]}.webp does not exist`);
+      const badge = card[2].includes('class="fnew"');
+      const isNew = Boolean(f.newUntil) && today <= f.newUntil;
+      if (badge !== isNew) fail(out, `feature card '${f.slug}' ${badge ? 'shows' : 'lacks'} the "New" badge, but newUntil is ${f.newUntil || 'unset'} and today is ${today}`);
+    });
+    if (count(daySec, 'data-frow-count') !== 1 || count(daySec, 'data-frow-prev') !== 1 || count(daySec, 'data-frow-next') !== 1 || count(daySec, 'data-frow-bar') !== 1) {
+      fail(out, 'the feature row lacks its counter, its two arrows or its progress bar (or has two)');
+    }
     const calCards = count((daySec.split('id="calendars"')[1] || '').split('</article>')[0], '<div class="fc">');
     if (calCards !== 2) fail(out, `the calendars card has ${calCards} floating cards, expected 2 (Google + Apple)`);
     const screens = sectionAt(html, 'id="screens"');

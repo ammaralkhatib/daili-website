@@ -156,13 +156,24 @@
     "day": {
       "h2": "Inizia la giornata insieme",
       "sub": "Tutto quello che la tua famiglia deve sapere, dove guardi già.",
+      "new": "Nuovo",
+      "prev": "Precedente",
+      "next": "Successivo",
+      "counter": "{n} di {total}",
       "cards": [
-        { "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
-        { "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia della famiglia · 34 / 40", "s": "Ancora 6 e Minzi parte per un viaggio" },
-        { "h3": "Note", "p": "Pensieri veloci, la password del Wi-Fi, chi va a prendere la nonna. Tieni una nota per te o condividila con la famiglia.", "t": "La nonna arriva sabato alle 15", "s": "Condivisa con la famiglia" },
-        { "h3": "Ricette", "p": "Conserva le ricette preferite di famiglia o importane una da un video o da una foto. Manda gli ingredienti alla lista con un tocco.", "t": "Tofu glassato agrodolce", "s": "13 ingredienti · Aggiungi alla Spesa" },
-        { "h3": "Menu", "p": "Pianifica colazione, pranzo e cena per tutta la settimana, così alle sei nessuno chiede cosa c'è per cena.", "t": "Curry di verdure", "s": "Cena · lunedì" },
-        { "h3": "Compleanni", "p": "Un conto alla rovescia per ogni compleanno in famiglia e un promemoria in tempo per il regalo.", "t": "Emma compie 12 anni", "s": "Tra 3 giorni e 12 ore" }
+        { "slug": "calendar", "h3": "Calendario", "p": "Un unico calendario condiviso per tutta la famiglia, ognuno con il suo colore.", "t": "Lezione di piano", "s": "Oggi, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Liste", "p": "Aggiungi il latte in cucina, spuntalo al supermercato. Tutti lo vedono subito.", "t": "Pane", "s": "Spuntato da Marco · ora" },
+        { "slug": "todos", "h3": "Attività", "p": "Faccende e commissioni con un nome sopra, così nessuno pensa che toccasse all'altro.", "t": "Portare fuori i rifiuti", "s": "Noah · domani, 08:00" },
+        { "slug": "budget", "h3": "Bilancio", "p": "Guarda quanto resta questo mese, dove sono finiti i soldi e chi deve cosa a chi.", "t": "{amount} rimasti al giorno", "s": "Spesa · mancano 9 giorni" },
+        { "slug": "cycle", "h3": "Ciclo", "p": "Un diario del ciclo privato che resta sul tuo telefono.", "t": "Mestruazioni tra 8–14 giorni", "s": "Lo vedi solo tu" },
+        { "slug": "habits", "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia della famiglia · 34 / 40", "s": "Ancora 6 e Minzi parte per un viaggio" },
+        { "slug": "notes", "h3": "Note", "p": "Pensieri veloci, la password del Wi-Fi, chi va a prendere la nonna. Tieni una nota per te o condividila con la famiglia.", "t": "La nonna arriva sabato alle 15", "s": "Condivisa con la famiglia" },
+        { "slug": "recipes", "h3": "Ricette", "p": "Conserva le ricette preferite di famiglia o importane una da un video o da una foto. Manda gli ingredienti alla lista con un tocco.", "t": "Tofu glassato agrodolce", "s": "13 ingredienti · Aggiungi alla Spesa" },
+        { "slug": "meal-plan", "h3": "Menu", "p": "Pianifica colazione, pranzo e cena per tutta la settimana, così alle sei nessuno chiede cosa c'è per cena.", "t": "Curry di verdure", "s": "Cena · lunedì" },
+        { "slug": "birthdays", "h3": "Compleanni", "p": "Un conto alla rovescia per ogni compleanno in famiglia e un promemoria in tempo per il regalo.", "t": "Emma compie 12 anni", "s": "Tra 3 giorni e 12 ore" },
+        { "slug": "weather", "h3": "Meteo", "p": "Il meteo di oggi sulla schermata Home, così sai se i bambini hanno bisogno della giacca.", "t": "Pioggia dalle 15:00", "s": "Max 16° · Min 7°" },
+        { "slug": "documents", "h3": "Documenti e foto", "p": "Una cassaforte privata per passaporti e documenti importanti, solo sul tuo telefono.", "t": "Passaporto Lena.pdf", "s": "Resta su questo telefono" },
+        { "slug": "family", "h3": "Famiglia", "p": "Invita tutti con un codice, un link o un codice QR, e aggiungi i bambini che non hanno ancora un telefono.", "t": "Emma si è unita ai Berger", "s": "Proprio ora" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Le note della famiglia nell’app Daili",
       "shot-recipes": "Ricette salvate nell’app Daili",
       "shot-mealplan": "Il menu della settimana nell’app Daili",
-      "shot-birthdays": "I prossimi compleanni nell’app Daili"
+      "shot-birthdays": "I prossimi compleanni nell’app Daili",
+      "shot-todos": "Una lista di attività condivisa nell’app Daili",
+      "shot-budget": "Il bilancio di famiglia nell’app Daili",
+      "shot-cycle": "Il diario del ciclo privato nell’app Daili",
+      "shot-weather": "Le previsioni meteo nell’app Daili",
+      "shot-documents": "La cassaforte privata dei documenti nell’app Daili",
+      "shot-family": "I membri della famiglia nell’app Daili"
     },
     "screens": {
       "h2": "Su ogni schermo di casa",

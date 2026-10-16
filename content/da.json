@@ -156,13 +156,24 @@
     "day": {
       "h2": "Start dagen sammen",
       "sub": "Alt, hvad familien skal vide, dér hvor I allerede kigger.",
+      "new": "Ny",
+      "prev": "Forrige",
+      "next": "Næste",
+      "counter": "{n} af {total}",
       "cards": [
-        { "h3": "Lister", "p": "Skriv mælk på i køkkenet, sæt flueben i butikken. Alle ser det med det samme.", "t": "Brød", "s": "Afkrydset af Marco · lige nu" },
-        { "h3": "Vaner", "p": "Små rutiner, klaret sammen. Hvert flueben giver Minzi, jeres familiekat, mere energi.", "t": "Familiens energi · 34 / 40", "s": "6 mere, så tager Minzi på rejse" },
-        { "h3": "Noter", "p": "Hurtige tanker, Wi-Fi-koden, hvem der henter mormor. Hold en note privat, eller del den med familien.", "t": "Mormor kommer lørdag kl. 15", "s": "Delt med familien" },
-        { "h3": "Opskrifter", "p": "Gem familiens favoritter, eller importér en fra en video eller et billede. Send ingredienserne til listen med ét tryk.", "t": "Sursød klistret tofu", "s": "13 ingredienser · Føj til Indkøb" },
-        { "h3": "Madplan", "p": "Planlæg ugens morgenmad, frokost og aftensmad, så ingen spørger, hvad der er til aftensmad klokken seks.", "t": "Grøntsagscurry", "s": "Aftensmad · mandag" },
-        { "h3": "Fødselsdage", "p": "Nedtælling til hver fødselsdag i familien, og en påmindelse i god tid til at nå gaven.", "t": "Emma fylder 12", "s": "Om 3 dage og 12 timer" }
+        { "slug": "calendar", "h3": "Kalender", "p": "Én fælles kalender for hele familien, hvor alle har deres egen farve.", "t": "Klavertime", "s": "I dag, 16.30 · Emma" },
+        { "slug": "lists", "h3": "Lister", "p": "Skriv mælk på i køkkenet, sæt flueben i butikken. Alle ser det med det samme.", "t": "Brød", "s": "Afkrydset af Marco · lige nu" },
+        { "slug": "todos", "h3": "Opgaver", "p": "Pligter og ærinder med et navn på, så intet falder mellem to stole.", "t": "Tage skraldet ud", "s": "Noah · i morgen, 08.00" },
+        { "slug": "budget", "h3": "Husholdningsbudget", "p": "Se, hvad der er tilbage denne måned, hvor pengene blev af, og hvem der skylder hvem.", "t": "{amount} tilbage om dagen", "s": "Dagligvarer · 9 dage tilbage" },
+        { "slug": "cycle", "h3": "Cyklus", "p": "En privat menstruationskalender, der bliver på din telefon.", "t": "Næste menstruation om 8–14 dage", "s": "Kun du kan se dette" },
+        { "slug": "habits", "h3": "Vaner", "p": "Små rutiner, klaret sammen. Hvert flueben giver Minzi, jeres familiekat, mere energi.", "t": "Familiens energi · 34 / 40", "s": "6 mere, så tager Minzi på rejse" },
+        { "slug": "notes", "h3": "Noter", "p": "Hurtige tanker, Wi-Fi-koden, hvem der henter mormor. Hold en note privat, eller del den med familien.", "t": "Mormor kommer lørdag kl. 15", "s": "Delt med familien" },
+        { "slug": "recipes", "h3": "Opskrifter", "p": "Gem familiens favoritter, eller importér en fra en video eller et billede. Send ingredienserne til listen med ét tryk.", "t": "Sursød klistret tofu", "s": "13 ingredienser · Føj til Indkøb" },
+        { "slug": "meal-plan", "h3": "Madplan", "p": "Planlæg ugens morgenmad, frokost og aftensmad, så ingen spørger, hvad der er til aftensmad klokken seks.", "t": "Grøntsagscurry", "s": "Aftensmad · mandag" },
+        { "slug": "birthdays", "h3": "Fødselsdage", "p": "Nedtælling til hver fødselsdag i familien, og en påmindelse i god tid til at nå gaven.", "t": "Emma fylder 12", "s": "Om 3 dage og 12 timer" },
+        { "slug": "weather", "h3": "Vejr", "p": "Dagens vejr på startskærmen, så du ved, om børnene skal have jakke på.", "t": "Regn fra 15.00", "s": "Maks. 16° · Min. 7°" },
+        { "slug": "documents", "h3": "Dokumenter og billeder", "p": "En privat boks til pas og vigtige papirer, kun på din telefon.", "t": "Pas Lena.pdf", "s": "Bliver på denne telefon" },
+        { "slug": "family", "h3": "Familie", "p": "Inviter alle med en kode, et link eller en QR-kode, og tilføj de børn, der ikke har en telefon endnu.", "t": "Emma kom med i familien Berger", "s": "Lige nu" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Familiens noter i Daili-appen",
       "shot-recipes": "Gemte opskrifter i Daili-appen",
       "shot-mealplan": "Ugens madplan i Daili-appen",
-      "shot-birthdays": "Kommende fødselsdage i Daili-appen"
+      "shot-birthdays": "Kommende fødselsdage i Daili-appen",
+      "shot-todos": "En fælles opgaveliste i Daili-appen",
+      "shot-budget": "Et familiebudget i Daili-appen",
+      "shot-cycle": "Den private menstruationskalender i Daili-appen",
+      "shot-weather": "Vejrudsigten i Daili-appen",
+      "shot-documents": "Den private dokumentboks i Daili-appen",
+      "shot-family": "Familiemedlemmerne i Daili-appen"
     },
     "screens": {
       "h2": "På hver skærm derhjemme",

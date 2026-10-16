@@ -14,8 +14,12 @@
  *     scenes by itself, paused while the hero is off screen or the tab hidden;
  *   - /ar/ mirrors: screenshots slide in from the other side and the cards
  *     drift and fly the other way (the marquee's direction is CSS);
- *   - the member count counts up in the page's own number format.
- * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still.
+ *   - the member count counts up in the page's own number format;
+ *   - "Start the day together" is one row of every feature, pinned and moved
+ *     sideways by the page scroll on a computer, a swipe row elsewhere
+ *     (featureRow, 2026-10-16/005).
+ * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still,
+ * the feature row a plain swipe row with working arrows.
  */
 (function () {
   "use strict";
@@ -45,7 +49,7 @@
   $$("img").forEach(function (im) { if (!im.complete) im.addEventListener("load", refresh, { once: true }); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
 
-  if (RM) { flows(true); return; }
+  if (RM) { flows(true); featureRow(true); return; }
 
   // ---------- hero intro ----------
   g.from($$(".hero h1 .w"), { yPercent: 70, opacity: 0, duration: 1.1, ease: "expo.out", stagger: 0.06 });
@@ -71,21 +75,9 @@
     } });
   }
 
-  // ---------- feature cards: phones and floating widgets at different speeds ----------
+  // ---------- "Start the day together": every feature in one row ----------
   // (The calendars card has no scroll effect: its orbit turns by itself, CSS.)
-  // Each floating card has its own speed (round 3): ±yPercent per card, in
-  // page order, so no two neighbours move alike in 3, 2 or 1 columns. The
-  // habits widget is not a .fly: it stays on its screenshot's energy card.
-  var FLY = [30, 55, 20, 60, 35, 50];
-  $$(".fcard").forEach(function (card, n) {
-    // ±4 % around its place, so mid-screen the phone is 32 px under the text.
-    var ph = card.querySelector(".par");
-    if (ph) g.fromTo(ph, { yPercent: 4 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "bottom top", scrub: 0.8 } });
-    $$(".fly", card).forEach(function (f, i) {
-      var y = FLY[n % FLY.length];
-      g.fromTo(f, { yPercent: y, rotation: i % 2 ? 3 : -3 }, { yPercent: -y, rotation: i % 2 ? -2 : 2, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "bottom top", scrub: 0.8 } });
-    });
-  });
+  featureRow(false);
   var bar = $(".fcard .bar");
   if (bar) g.fromTo(bar, { width: "35%" }, { width: "85%", duration: 1.6, ease: "power3.out", scrollTrigger: { trigger: bar, start: "top 85%", once: true } });
 
@@ -154,6 +146,125 @@
 
   flows(false);
   refresh();
+
+  // ---------- the feature row (2026-10-16/005) ----------
+  // One row of cards, one per feature. On a computer with a mouse or
+  // trackpad (and no reduced motion) it is PINNED: when the row's block
+  // reaches the middle of the screen it stays there and scrolling down moves
+  // the track sideways, by its overflow, over 0.6 × that distance of page
+  // scroll; after the last card the page scrolls on. Everywhere else it is the
+  // markup's native swipe row with snap. The counter ("3 of 13"), the arrows
+  // and the progress bar follow either one. In the pinned row the phones and
+  // their floating cards stay still (no vertical parallax inside a pin, so no
+  // jitter); in the native row they keep their per-card vertical parallax.
+  function featureRow(still) {
+    var row = $("[data-frow]");
+    if (!row) return;
+    var vp = $("[data-frow-vp]", row), track = $("[data-frow-track]", row), cards = $$(".fcard", track);
+    var count = $("[data-frow-count]", row), progress = $("[data-frow-bar]", row);
+    var prev = $("[data-frow-prev]", row), next = $("[data-frow-next]", row);
+    var n = cards.length, tpl = count.dataset.tpl;
+    var fmt = new Intl.NumberFormat(document.documentElement.lang || "en");
+    var pinned = null;
+    if (!n) return;
+    var overflow = function () { return Math.max(0, track.offsetWidth - vp.clientWidth); };
+    var step = function () { return n > 1 ? Math.abs(cards[1].offsetLeft - cards[0].offsetLeft) : vp.clientWidth; };
+    // p runs from 0 (first card) to 1 (the track's end).
+    var show = function (p) {
+      p = Math.min(1, Math.max(0, p || 0));
+      count.textContent = tpl.replace("{n}", fmt.format(Math.round(p * (n - 1)) + 1)).replace("{total}", fmt.format(n));
+      var w = track.offsetWidth || 1, seen = (w - overflow()) / w;
+      progress.style.transform = "scaleX(" + (seen + (1 - seen) * p).toFixed(4) + ")";
+      prev.disabled = p < 0.001;
+      next.disabled = p > 0.999;
+    };
+    // RTL: scrollLeft runs from 0 to -max, hence the abs().
+    var nativeP = function () { var o = vp.scrollWidth - vp.clientWidth; return o > 0 ? Math.abs(vp.scrollLeft) / o : 0; };
+    var toY = function (y, now) {
+      if (lenis) lenis.scrollTo(y, { immediate: Boolean(now || still), duration: 1 });
+      else window.scrollTo({ top: y, behavior: now || still ? "auto" : "smooth" });
+    };
+    // Pinned, an arrow scrolls the PAGE to the matching place of the pin.
+    var go = function (dir) {
+      if (pinned) {
+        var i = Math.max(0, Math.min(n - 1, Math.round(pinned.progress * (n - 1)) + dir));
+        toY(pinned.start + (pinned.end - pinned.start) * (i / (n - 1)));
+      } else {
+        vp.scrollBy({ left: dir * D * step(), behavior: still ? "auto" : "smooth" });
+      }
+    };
+    vp.addEventListener("scroll", function () { if (!pinned) show(nativeP()); }, { passive: true });
+    prev.addEventListener("click", function () { go(-1); });
+    next.addEventListener("click", function () { go(1); });
+    // Tab onto a card the pinned row has moved out of sight: scroll the page
+    // to where that card sits in the middle of the row (the native row
+    // scrolls itself; the clipped one cannot).
+    track.addEventListener("focusin", function (ev) {
+      var c = ev.target.closest && ev.target.closest(".fcard");
+      if (!pinned || !c) return;
+      requestAnimationFrame(function () {
+        if (!pinned) return;
+        vp.scrollLeft = 0;
+        var o = overflow();
+        if (!o) return;
+        var edge = parseFloat(getComputedStyle(track).paddingInlineStart) || 0;
+        var dx = D * (c.offsetLeft - cards[0].offsetLeft), x = pinned.progress * o;
+        var at = edge + dx - x;
+        if (at >= 0 && at + c.offsetWidth <= vp.clientWidth) return;
+        var want = Math.max(0, Math.min(o, edge + dx - (vp.clientWidth - c.offsetWidth) / 2));
+        toY(pinned.start + (pinned.end - pinned.start) * (want / o), true);
+      });
+    });
+    row.classList.add("on");
+    show(nativeP());
+    if (still) return;
+
+    var FLY = [30, 55, 20, 60, 35, 50];
+    var PIN = "(min-width: 861px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)";
+    g.matchMedia().add({ pin: PIN, any: "all" }, function (ctx) {
+      if (!ctx.conditions.pin) {
+        // The native row: each card's phone and floating widget at their own
+        // speed as the row passes vertically (round 3). The habits widget is
+        // not a .fly: it stays on its screenshot's energy card.
+        cards.forEach(function (card, k) {
+          var ph = card.querySelector(".par");
+          if (ph) g.fromTo(ph, { yPercent: 4 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: row, start: "top bottom", end: "bottom top", scrub: 0.8 } });
+          $$(".fly", card).forEach(function (f, i) {
+            var y = FLY[k % FLY.length];
+            g.fromTo(f, { yPercent: y, rotation: i % 2 ? 3 : -3 }, { yPercent: -y, rotation: i % 2 ? -2 : 2, ease: "none", scrollTrigger: { trigger: row, start: "top bottom", end: "bottom top", scrub: 0.8 } });
+          });
+        });
+        show(nativeP());
+        return;
+      }
+      row.classList.add("pin");
+      vp.scrollLeft = 0;
+      var tween = g.to(track, {
+        x: function () { return -D * overflow(); },
+        ease: "none",
+        scrollTrigger: {
+          trigger: row,
+          // In the middle of the screen; on a screen too short for that, just
+          // under the floating header.
+          start: function () { var free = window.innerHeight - row.offsetHeight; return "top " + Math.max(free / 2, Math.min(80, free)) + "px"; },
+          end: function () { return "+=" + Math.round(0.6 * overflow()); },
+          pin: true,
+          scrub: 0.6,
+          invalidateOnRefresh: true,
+          onUpdate: function (s) { show(s.progress); },
+          onRefresh: function (s) { show(s.progress); },
+        },
+      });
+      pinned = tween.scrollTrigger;
+      show(pinned.progress);
+      return function () {
+        pinned = null;
+        row.classList.remove("pin");
+        g.set(track, { clearProps: "transform" });
+        show(nativeP());
+      };
+    });
+  }
 
   // ---------- hero: the phone plays the app by itself ----------
   // One scene, ~6.5 s, forever: the next screenshot slides in from the

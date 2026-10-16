@@ -17,7 +17,8 @@ import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
   PAGES, imageSize, SHOT_LOCALE, WEB_APP_URL,
   MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_SCENES, RATING, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
-  MEMBER_TILES_AFTER, HOME_FAMILY, DAY_CARDS, HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
+  MEMBER_TILES_AFTER, HOME_FAMILY, HOME_FEATURES, BUDGET_PER_DAY, BUDGET_CURRENCY, EURO_RATES,
+  HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
   FLOW_STEPS, FLOW_VIDEO_SIZE, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
@@ -558,23 +559,58 @@ function renderHome(loc) {
   // The copy is hidden from screen readers, so the row is read once.
   const marquee = `      <div class="marq-set">${row.join('')}</div>\n      <div class="marq-set" aria-hidden="true">${row.join('')}</div>`;
 
-  // ---- start the day ----
-  // Six cards. Each widget is wider than its phone (home.css .dv .fc) and
-  // moves with its own parallax — except the habits one, which sits exactly on
-  // the screenshot's own Family-energy card, so phone and widget move as one.
-  const day = list('home.day.cards', DAY_CARDS.length);
+  // ---- start the day: every feature in one row ----
+  // One card per HOME_FEATURES entry. Each widget is wider than its phone
+  // (home.css .dv .fc) and moves with its own parallax — except the habits
+  // one, which sits exactly on the screenshot's own Family-energy card, so
+  // phone and widget move as one. The row scrolls sideways by itself without
+  // JavaScript; home.js pins it on a computer (2026-10-16/005).
+  const day = list('home.day.cards', HOME_FEATURES.length);
+  HOME_FEATURES.forEach((d, i) => {
+    if (day[i].slug !== d.slug) throw new Error(`home.day.cards[${i}].slug in ${where} is '${day[i].slug}', HOME_FEATURES says '${d.slug}' — the slug is data, never translated`);
+    if (i && HOME_FEATURES[i - 1].tint === d.tint) throw new Error(`HOME_FEATURES: '${HOME_FEATURES[i - 1].slug}' and '${d.slug}' are neighbours with the same tint '${d.tint}'`);
+  });
   // The energy card's centre, in % of the phone's height: the frame is 3.667 %
   // of the phone's width on each side (home.css), the screen is the rest.
   const frameY = 3.667 * (640 / 1390);
   const energyAt = (frameY + (HABITS_ENERGY.top + HABITS_ENERGY.height / 2) * (100 - 2 * frameY) / 100).toFixed(2);
-  const dayCards = DAY_CARDS.map((d, i) => {
+  // The budget card's amount: BUDGET_PER_DAY euros in the currency this
+  // locale's budget screenshot shows, rounded like the app's demo data.
+  const budgetAmount = () => {
+    const cur = BUDGET_CURRENCY[loc];
+    if (!cur || !(cur in EURO_RATES)) throw new Error(`BUDGET_CURRENCY has no currency with a rate for ${loc}`);
+    let v = BUDGET_PER_DAY * EURO_RATES[cur];
+    if (EURO_RATES[cur] !== 1) {
+      const step = 10 ** Math.max(0, Math.floor(Math.log10(v)) - 2);
+      v = Math.round(v / step) * step;
+    }
+    return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(v);
+  };
+  const newBadge = `<span class="fnew">${e(h('home.day.new'))}</span>`;
+  const dayCards = HOME_FEATURES.map((d, i) => {
     const c = day[i];
+    const t = d.amount ? fill(`home.day.cards.${i}.t`,{ amount: budgetAmount() }) : c.t;
+    const isNew = Boolean(d.newUntil) && BUILD_DATE <= d.newUntil;
     const widget = d.energy
-      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(c.t)}</b><span>${e(c.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
-      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, c.t, c.s, Boolean(d.done))}</div>`;
-    return `        <article class="fcard g-${d.tint}" data-r><h3>${e(c.h3)}</h3><p>${e(c.p)}</p>
+      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(t)}</b><span>${e(c.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
+      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, t, c.s, Boolean(d.done))}</div>`;
+    return `        <article class="fcard g-${d.tint}" data-slug="${d.slug}" tabindex="0"><h3>${e(c.h3)}${isNew ? ` ${newBadge}` : ''}</h3><p>${e(c.p)}</p>
           <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget}</div></article>`;
   }).join('\n');
+  // Above the row: the counter and the two arrows; under it, the progress
+  // bar. Without JavaScript they hold their place but stay invisible (home.css),
+  // so nothing moves when home.js shows them.
+  const counterTpl = h('home.day.counter');
+  const dayRow = `    <div class="frow" data-frow>
+      <div class="wrap frow-head">
+        <p class="frow-count" data-frow-count data-tpl="${e(counterTpl)}" aria-hidden="true">${e(fill('home.day.counter', { n: num(1), total: num(HOME_FEATURES.length) }))}</p>
+        <div class="frow-nav"><button class="frow-btn prev" type="button" data-frow-prev aria-label="${e(h('home.day.prev'))}">${homeIcon('arrow', 2.2)}</button><button class="frow-btn" type="button" data-frow-next aria-label="${e(h('home.day.next'))}">${homeIcon('arrow', 2.2)}</button></div>
+      </div>
+      <div class="frow-vp" data-frow-vp><div class="frow-track" data-frow-track>
+${dayCards}
+      </div></div>
+      <div class="wrap frow-prog" aria-hidden="true"><i data-frow-bar></i></div>
+    </div>`;
   // The orbit: three rings at equal steps, the tiles on them. Its box is the
   // outer ring's diameter; a tile's place is a % of that box.
   const box = ORBIT_RINGS[ORBIT_RINGS.length - 1] * 2;
@@ -710,7 +746,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     heroPhone,
     heroWatch: watch('hwatch'),
     heroCards, rating, works, badges, membersH2, marquee,
-    dayCards, calendarsVis,
+    dayRow, calendarsVis,
     avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,
   };
 }

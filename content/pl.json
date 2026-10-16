@@ -156,13 +156,24 @@
     "day": {
       "h2": "Zacznijcie dzień razem",
       "sub": "Wszystko, co rodzina musi wiedzieć, tam, gdzie i tak zaglądacie.",
+      "new": "Nowość",
+      "prev": "Poprzednia",
+      "next": "Następna",
+      "counter": "{n} z {total}",
       "cards": [
-        { "h3": "Listy", "p": "Dopisz mleko w kuchni, odhacz je w sklepie. Wszyscy widzą to od razu.", "t": "Chleb", "s": "Marco odhaczył · przed chwilą" },
-        { "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34 / 40", "s": "Jeszcze 6 i Minzi wyruszy w podróż" },
-        { "h3": "Notatki", "p": "Szybkie myśli, hasło do Wi-Fi, kto odbiera babcię. Zachowaj notatkę dla siebie albo udostępnij ją rodzinie.", "t": "Babcia przyjedzie w sobotę o 15", "s": "Udostępnione rodzinie" },
-        { "h3": "Przepisy", "p": "Zachowaj ulubione przepisy rodziny albo zaimportuj nowy z filmu lub zdjęcia. Jednym dotknięciem wyślij składniki na listę.", "t": "Tofu w sosie słodko-kwaśnym", "s": "13 składników · Dodaj do Zakupów" },
-        { "h3": "Jadłospis", "p": "Zaplanuj śniadania, obiady i kolacje na cały tydzień, żeby nikt o szóstej nie pytał, co na kolację.", "t": "Curry warzywne", "s": "Kolacja · poniedziałek" },
-        { "h3": "Urodziny", "p": "Odliczanie do urodzin każdego w rodzinie i przypomnienie na czas, żeby zdążyć z prezentem.", "t": "Emma kończy 12 lat", "s": "Za 3 dni i 12 godzin" }
+        { "slug": "calendar", "h3": "Kalendarz", "p": "Jeden wspólny kalendarz dla całej rodziny, każdy w swoim kolorze.", "t": "Lekcja pianina", "s": "Dziś, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Listy", "p": "Dopisz mleko w kuchni, odhacz je w sklepie. Wszyscy widzą to od razu.", "t": "Chleb", "s": "Marco odhaczył · przed chwilą" },
+        { "slug": "todos", "h3": "Zadania", "p": "Obowiązki i sprawunki przypisane do konkretnej osoby, żeby nic nie umknęło.", "t": "Wynieść śmieci", "s": "Noah · jutro, 08:00" },
+        { "slug": "budget", "h3": "Budżet", "p": "Zobacz, ile zostało w tym miesiącu, na co poszły pieniądze i kto komu jest winien.", "t": "Zostało {amount} dziennie", "s": "Zakupy spożywcze · jeszcze 9 dni" },
+        { "slug": "cycle", "h3": "Cykl", "p": "Prywatny kalendarz okresu, który zostaje na twoim telefonie.", "t": "Następny okres za 8–14 dni", "s": "Widzisz to tylko ty" },
+        { "slug": "habits", "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34 / 40", "s": "Jeszcze 6 i Minzi wyruszy w podróż" },
+        { "slug": "notes", "h3": "Notatki", "p": "Szybkie myśli, hasło do Wi-Fi, kto odbiera babcię. Zachowaj notatkę dla siebie albo udostępnij ją rodzinie.", "t": "Babcia przyjedzie w sobotę o 15", "s": "Udostępnione rodzinie" },
+        { "slug": "recipes", "h3": "Przepisy", "p": "Zachowaj ulubione przepisy rodziny albo zaimportuj nowy z filmu lub zdjęcia. Jednym dotknięciem wyślij składniki na listę.", "t": "Tofu w sosie słodko-kwaśnym", "s": "13 składników · Dodaj do Zakupów" },
+        { "slug": "meal-plan", "h3": "Jadłospis", "p": "Zaplanuj śniadania, obiady i kolacje na cały tydzień, żeby nikt o szóstej nie pytał, co na kolację.", "t": "Curry warzywne", "s": "Kolacja · poniedziałek" },
+        { "slug": "birthdays", "h3": "Urodziny", "p": "Odliczanie do urodzin każdego w rodzinie i przypomnienie na czas, żeby zdążyć z prezentem.", "t": "Emma kończy 12 lat", "s": "Za 3 dni i 12 godzin" },
+        { "slug": "weather", "h3": "Pogoda", "p": "Dzisiejsza pogoda na ekranie głównym, żeby było wiadomo, czy dzieci potrzebują kurtki.", "t": "Deszcz od 15:00", "s": "Maks. 16° · Min. 7°" },
+        { "slug": "documents", "h3": "Dokumenty i zdjęcia", "p": "Prywatny sejf na paszporty i ważne dokumenty, tylko na twoim telefonie.", "t": "Paszport Lena.pdf", "s": "Zostaje na tym telefonie" },
+        { "slug": "family", "h3": "Rodzina", "p": "Zaproś wszystkich kodem, linkiem lub kodem QR i dodaj dzieci, które nie mają jeszcze telefonu.", "t": "Emma dołączyła do Bergerów", "s": "Przed chwilą" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Notatki rodziny w aplikacji Daili",
       "shot-recipes": "Zapisane przepisy w aplikacji Daili",
       "shot-mealplan": "Jadłospis na tydzień w aplikacji Daili",
-      "shot-birthdays": "Nadchodzące urodziny w aplikacji Daili"
+      "shot-birthdays": "Nadchodzące urodziny w aplikacji Daili",
+      "shot-todos": "Wspólna lista zadań w aplikacji Daili",
+      "shot-budget": "Budżet rodzinny w aplikacji Daili",
+      "shot-cycle": "Prywatny kalendarz cyklu w aplikacji Daili",
+      "shot-weather": "Prognoza pogody w aplikacji Daili",
+      "shot-documents": "Prywatny sejf na dokumenty w aplikacji Daili",
+      "shot-family": "Członkowie rodziny w aplikacji Daili"
     },
     "screens": {
       "h2": "Na każdym ekranie w domu",

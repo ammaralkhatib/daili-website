@@ -156,13 +156,24 @@
     "day": {
       "h2": "Aloittakaa päivä yhdessä",
       "sub": "Kaikki, mitä perheen pitää tietää, siellä minne jo katsotte.",
+      "new": "Uusi",
+      "prev": "Edellinen",
+      "next": "Seuraava",
+      "counter": "{n}/{total}",
       "cards": [
-        { "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
-        { "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee matkalle" },
-        { "h3": "Muistiinpanot", "p": "Nopeat ajatukset, Wi-Fi-salasana, kuka hakee mummon. Pidä muistiinpano omana tai jaa se perheen kanssa.", "t": "Mummo tulee lauantaina klo 15", "s": "Jaettu perheen kanssa" },
-        { "h3": "Reseptit", "p": "Tallenna perheen suosikit tai tuo resepti videosta tai kuvasta. Lähetä ainekset listalle yhdellä napautuksella.", "t": "Hapanimelä tahmea tofu", "s": "13 ainesosaa · Lisää Ostoksiin" },
-        { "h3": "Ruokalista", "p": "Suunnittele viikon aamiaiset, lounaat ja päivälliset, niin kukaan ei kysy kuudelta, mitä on ruoaksi.", "t": "Kasviscurry", "s": "Päivällinen · maanantai" },
-        { "h3": "Syntymäpäivät", "p": "Laskuri perheen jokaiseen syntymäpäivään ja muistutus ajoissa, jotta lahja ehditään hankkia.", "t": "Emma täyttää 12", "s": "3 päivän ja 12 tunnin päästä" }
+        { "slug": "calendar", "h3": "Kalenteri", "p": "Yksi yhteinen kalenteri koko perheelle, jokaisella oma värinsä.", "t": "Pianotunti", "s": "Tänään, 16.30 · Emma" },
+        { "slug": "lists", "h3": "Listat", "p": "Lisää maito keittiössä, kuittaa se kaupassa. Kaikki näkevät sen heti.", "t": "Leipä", "s": "Marco kuittasi · juuri nyt" },
+        { "slug": "todos", "h3": "Tehtävät", "p": "Kotityöt ja juoksevat asiat tekijän nimellä, joten mikään ei jää roikkumaan.", "t": "Vie roskat", "s": "Noah · huomenna, 8.00" },
+        { "slug": "budget", "h3": "Budjetti", "p": "Näe, paljonko tässä kuussa on jäljellä, mihin rahat menivät ja kuka on velkaa kenellekin.", "t": "{amount} jäljellä päivää kohden", "s": "Ruokaostokset · 9 päivää jäljellä" },
+        { "slug": "cycle", "h3": "Kierto", "p": "Yksityinen kuukautiskalenteri, joka pysyy puhelimessasi.", "t": "Kuukautiset 8–14 päivän päästä", "s": "Vain sinä näet tämän" },
+        { "slug": "habits", "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee matkalle" },
+        { "slug": "notes", "h3": "Muistiinpanot", "p": "Nopeat ajatukset, Wi-Fi-salasana, kuka hakee mummon. Pidä muistiinpano omana tai jaa se perheen kanssa.", "t": "Mummo tulee lauantaina klo 15", "s": "Jaettu perheen kanssa" },
+        { "slug": "recipes", "h3": "Reseptit", "p": "Tallenna perheen suosikit tai tuo resepti videosta tai kuvasta. Lähetä ainekset listalle yhdellä napautuksella.", "t": "Hapanimelä tahmea tofu", "s": "13 ainesosaa · Lisää Ostoksiin" },
+        { "slug": "meal-plan", "h3": "Ruokalista", "p": "Suunnittele viikon aamiaiset, lounaat ja päivälliset, niin kukaan ei kysy kuudelta, mitä on ruoaksi.", "t": "Kasviscurry", "s": "Päivällinen · maanantai" },
+        { "slug": "birthdays", "h3": "Syntymäpäivät", "p": "Laskuri perheen jokaiseen syntymäpäivään ja muistutus ajoissa, jotta lahja ehditään hankkia.", "t": "Emma täyttää 12", "s": "3 päivän ja 12 tunnin päästä" },
+        { "slug": "weather", "h3": "Sää", "p": "Päivän sää aloitusnäkymässä, niin tiedät, tarvitsevatko lapset takin.", "t": "Sadetta klo 15.00 alkaen", "s": "Ylin 16° · Alin 7°" },
+        { "slug": "documents", "h3": "Asiakirjat ja kuvat", "p": "Yksityinen holvi passeille ja tärkeille papereille, vain puhelimessasi.", "t": "Passi Lena.pdf", "s": "Pysyy tässä puhelimessa" },
+        { "slug": "family", "h3": "Perhe", "p": "Kutsu kaikki koodilla, linkillä tai QR-koodilla ja lisää lapset, joilla ei vielä ole puhelinta.", "t": "Emma liittyi Bergerin perheeseen", "s": "Juuri nyt" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Perheen muistiinpanot Daili-sovelluksessa",
       "shot-recipes": "Tallennetut reseptit Daili-sovelluksessa",
       "shot-mealplan": "Viikon ruokalista Daili-sovelluksessa",
-      "shot-birthdays": "Tulevat syntymäpäivät Daili-sovelluksessa"
+      "shot-birthdays": "Tulevat syntymäpäivät Daili-sovelluksessa",
+      "shot-todos": "Yhteinen tehtävälista Daili-sovelluksessa",
+      "shot-budget": "Perheen budjetti Daili-sovelluksessa",
+      "shot-cycle": "Yksityinen kuukautiskalenteri Daili-sovelluksessa",
+      "shot-weather": "Sääennuste Daili-sovelluksessa",
+      "shot-documents": "Yksityinen asiakirjaholvi Daili-sovelluksessa",
+      "shot-family": "Perheenjäsenet Daili-sovelluksessa"
     },
     "screens": {
       "h2": "Jokaisella näytöllä kotonasi",

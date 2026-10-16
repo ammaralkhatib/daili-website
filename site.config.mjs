@@ -1061,6 +1061,10 @@ export const HOME_ICONS = {
   notrack: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/><path d="M4 4l16 16"/>',
   nosell: '<circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5a4 4 0 1 0 0 7M7.5 11h6M7.5 13.5h6"/>',
   folder: '<path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/>',
+  wallet: '<path d="M17 7V5.5A1.5 1.5 0 0 0 15.5 4H5a2 2 0 0 0-2 2"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M21 11h-4a2 2 0 0 0 0 4h4"/>',
+  drop: '<path d="M12 3c3.5 4.2 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.5-6.8 6-11z"/>',
+  rain: '<path d="M7 15.5a4 4 0 0 1-.4-8 5.5 5.5 0 0 1 10.6 1.3 3.4 3.4 0 0 1 .3 6.7z"/><path d="M8.5 18.5l-1 2M12.5 18.5l-1 2M16.5 18.5l-1 2"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   star: '<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z" fill="currentColor" stroke="none"/>',
 };
 
@@ -1090,20 +1094,57 @@ export const HERO_SCENES = [
 export const RATING = { value: 4.7, source: 'Google Play', url: 'https://play.google.com/store/apps/details?id=app.daili' };
 
 /**
- * "Start the day together": the six cards, in home.day.cards order — the
- * screenshot, the card's tint (no two grid neighbours share one, in three
- * columns, in two, and in one) and the widget's glyph and tone. `done` draws
- * the widget ticked; `energy` is the habits card, whose widget is laid over
- * the screenshot's own Family-energy card (HABITS_ENERGY).
+ * "Start the day together": every feature, one card each, in ONE horizontal
+ * row (2026-10-16/005), in home.day.cards order. Adding a feature = one entry
+ * here + its card in every content/<loc>.json (h3, p, t, s).
+ *
+ * `slug` is the feature's URL part (/features/<slug>/, English in every
+ * language) and is data, never translated: home.day.cards[i].slug must equal
+ * it. `shot` is the screenshot, `tint` the card's ground (two neighbours never
+ * share one — build.mjs throws), `icon`/`tone` the floating widget's glyph and
+ * colour, `done` draws it ticked. `energy` is the habits card, whose widget is
+ * laid over the screenshot's own Family-energy card (HABITS_ENERGY). `amount`
+ * fills the card's {amount} with BUDGET_PER_DAY in the page's currency.
+ * `newUntil` shows the "New" badge while the build date is on or before it.
  */
-export const DAY_CARDS = [
-  { shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true },
-  { shot: 'shot-habits', tint: 'honey', energy: true },
-  { shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry' },
-  { shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay' },
-  { shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake' },
-  { shot: 'shot-birthdays', tint: 'leaf', icon: 'cake', tone: 'honey' },
+export const HOME_FEATURES = [
+  { slug: 'calendar', shot: 'shot-calendar', tint: 'lake', icon: 'cal', tone: 'lake' },
+  { slug: 'lists', shot: 'shot-shopping', tint: 'leaf', icon: 'cart', tone: 'leaf', done: true },
+  { slug: 'todos', shot: 'shot-todos', tint: 'honey', icon: 'todo', tone: 'leaf' },
+  { slug: 'budget', shot: 'shot-budget', tint: 'clay', icon: 'wallet', tone: 'clay', amount: true, newUntil: '2026-12-31' },
+  { slug: 'cycle', shot: 'shot-cycle', tint: 'berry', icon: 'drop', tone: 'berry', newUntil: '2026-12-31' },
+  { slug: 'habits', shot: 'shot-habits', tint: 'honey', energy: true },
+  { slug: 'notes', shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry' },
+  { slug: 'recipes', shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay' },
+  { slug: 'meal-plan', shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake' },
+  { slug: 'birthdays', shot: 'shot-birthdays', tint: 'leaf', icon: 'cake', tone: 'honey' },
+  { slug: 'weather', shot: 'shot-weather', tint: 'lake', icon: 'rain', tone: 'lake' },
+  { slug: 'documents', shot: 'shot-documents', tint: 'honey', icon: 'folder', tone: 'honey' },
+  { slug: 'family', shot: 'shot-family', tint: 'berry', icon: 'people', tone: 'berry' },
 ];
+
+/**
+ * The budget card's "{amount} left per day": 24 euros, in the currency the
+ * locale's budget screenshot (shot-budget) shows. The currencies and rough
+ * euro rates are the app's help-shot demo data
+ * (familyplanner-app/test_driver/help_shots/help_demo_strings.dart and
+ * help_demo_1_10.dart `_euroRates`), rounded the same way: euro-like
+ * currencies keep the number, the rest to three significant figures. A locale
+ * without its own screenshot (ru, hi, ar) shows the English one, so pounds.
+ */
+export const BUDGET_PER_DAY = 24;
+export const BUDGET_CURRENCY = {
+  en: 'GBP', de: 'EUR', es: 'EUR', pt: 'EUR', fr: 'EUR', nl: 'EUR', it: 'EUR',
+  sk: 'EUR', fi: 'EUR', el: 'EUR', bg: 'EUR',
+  sv: 'SEK', da: 'DKK', nb: 'NOK', pl: 'PLN', tr: 'TRY', cs: 'CZK', ro: 'RON',
+  uk: 'UAH', id: 'IDR', th: 'THB', ja: 'JPY', ko: 'KRW',
+  'zh-Hans': 'CNY', 'zh-Hant': 'TWD',
+  ru: 'GBP', hi: 'GBP', ar: 'GBP',
+};
+export const EURO_RATES = {
+  EUR: 1, GBP: 1, SEK: 11, DKK: 7.5, NOK: 11.5, PLN: 4.3, TRY: 40, CZK: 25,
+  RON: 5, UAH: 45, IDR: 18000, THB: 38, JPY: 165, KRW: 1500, CNY: 8, TWD: 35,
+};
 
 /**
  * Where the "Family energy" card sits in shot-habits, in % of the screenshot's
@@ -1299,6 +1340,20 @@ export const SHOT_SOURCES = {
   '08-habits': 'shot-habits',
   '09-notes': 'shot-notes',
   '10-recipes': 'shot-recipes',
+};
+
+/**
+ * Screens the store pipeline has no capture of, taken from the Help center's
+ * pictures instead (static/help/media/<loc>/<id>.webp, made by the app's
+ * tool/help-shots.sh): help picture id → site name. Converted by
+ * `python3 tools/make-site-shots.py --from-help`; a locale with no help
+ * picture falls back to shots/en/. The help pictures carry the Help center's
+ * orange ring round one button.
+ */
+export const HELP_SHOT_SOURCES = {
+  'budget-start': 'shot-budget',
+  'cycle-start': 'shot-cycle',
+  'start-weather': 'shot-weather',
 };
 
 /** Intrinsic pixel sizes, measured from the files. Used for width/height so the

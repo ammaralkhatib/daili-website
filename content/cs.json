@@ -156,13 +156,24 @@
     "day": {
       "h2": "Začněte den společně",
       "sub": "Všechno, co vaše rodina potřebuje vědět, tam, kam se stejně díváte.",
+      "new": "Novinka",
+      "prev": "Předchozí",
+      "next": "Další",
+      "counter": "{n} / {total}",
       "cards": [
-        { "h3": "Seznamy", "p": "Mléko přidáte v kuchyni, odškrtnete v obchodě. Všichni to hned vidí.", "t": "Chléb", "s": "Odškrtl Marco · právě teď" },
-        { "h3": "Návyky", "p": "Malé zvyky, plněné společně. Každé zaškrtnutí dodá Minzi, vaší rodinné kočce, víc energie.", "t": "Rodinná energie · 34 / 40", "s": "Ještě 6 a Minzi vyrazí na výlet" },
-        { "h3": "Poznámky", "p": "Rychlé myšlenky, heslo k Wi-Fi, kdo vyzvedne babičku. Poznámku si nechte pro sebe, nebo ji sdílejte s rodinou.", "t": "Babička přijede v sobotu v 15:00", "s": "Sdíleno s rodinou" },
-        { "h3": "Recepty", "p": "Uchovejte oblíbené rodinné recepty, nebo nový importujte z videa či fotky. Suroviny pošlete do seznamu jedním klepnutím.", "t": "Sladkokyselé glazované tofu", "s": "13 surovin · Přidat do Nákupů" },
-        { "h3": "Jídelníček", "p": "Naplánujte snídaně, obědy i večeře na celý týden, ať se nikdo v šest neptá, co bude k večeři.", "t": "Zeleninové kari", "s": "Večeře · pondělí" },
-        { "h3": "Narozeniny", "p": "Odpočet do narozenin každého v rodině a připomínka včas, abyste stihli koupit dárek.", "t": "Emmě bude 12", "s": "Za 3 dny a 12 hodin" }
+        { "slug": "calendar", "h3": "Kalendář", "p": "Jeden společný kalendář pro celou rodinu, každý má svou barvu.", "t": "Hodina klavíru", "s": "Dnes, 16:30 · Emma" },
+        { "slug": "lists", "h3": "Seznamy", "p": "Mléko přidáte v kuchyni, odškrtnete v obchodě. Všichni to hned vidí.", "t": "Chléb", "s": "Odškrtl Marco · právě teď" },
+        { "slug": "todos", "h3": "Úkoly", "p": "Domácí práce a pochůzky s konkrétním jménem, aby nic nezapadlo.", "t": "Vynést koš", "s": "Noah · zítra, 8:00" },
+        { "slug": "budget", "h3": "Rozpočet", "p": "Podívejte se, kolik zbývá do konce měsíce, kam peníze šly a kdo komu dluží.", "t": "Zbývá {amount} na den", "s": "Potraviny · ještě 9 dní" },
+        { "slug": "cycle", "h3": "Cyklus", "p": "Soukromý menstruační kalendář, který zůstává ve vašem telefonu.", "t": "Další menstruace za 8–14 dní", "s": "Vidíte to jen vy" },
+        { "slug": "habits", "h3": "Návyky", "p": "Malé zvyky, plněné společně. Každé zaškrtnutí dodá Minzi, vaší rodinné kočce, víc energie.", "t": "Rodinná energie · 34 / 40", "s": "Ještě 6 a Minzi vyrazí na výlet" },
+        { "slug": "notes", "h3": "Poznámky", "p": "Rychlé myšlenky, heslo k Wi-Fi, kdo vyzvedne babičku. Poznámku si nechte pro sebe, nebo ji sdílejte s rodinou.", "t": "Babička přijede v sobotu v 15:00", "s": "Sdíleno s rodinou" },
+        { "slug": "recipes", "h3": "Recepty", "p": "Uchovejte oblíbené rodinné recepty, nebo nový importujte z videa či fotky. Suroviny pošlete do seznamu jedním klepnutím.", "t": "Sladkokyselé glazované tofu", "s": "13 surovin · Přidat do Nákupů" },
+        { "slug": "meal-plan", "h3": "Jídelníček", "p": "Naplánujte snídaně, obědy i večeře na celý týden, ať se nikdo v šest neptá, co bude k večeři.", "t": "Zeleninové kari", "s": "Večeře · pondělí" },
+        { "slug": "birthdays", "h3": "Narozeniny", "p": "Odpočet do narozenin každého v rodině a připomínka včas, abyste stihli koupit dárek.", "t": "Emmě bude 12", "s": "Za 3 dny a 12 hodin" },
+        { "slug": "weather", "h3": "Počasí", "p": "Dnešní počasí na úvodní obrazovce, abyste věděli, jestli dětem přibalit bundu.", "t": "Déšť od 15:00", "s": "Max. 16° · Min. 7°" },
+        { "slug": "documents", "h3": "Dokumenty a fotky", "p": "Soukromý trezor na pasy a důležité dokumenty, jen ve vašem telefonu.", "t": "Pas Lena.pdf", "s": "Zůstává v tomto telefonu" },
+        { "slug": "family", "h3": "Rodina", "p": "Pozvěte všechny kódem, odkazem nebo QR kódem a přidejte i děti, které ještě nemají telefon.", "t": "Emma se přidala k Bergerovým", "s": "Právě teď" }
       ]
     },
     "calendars": {
@@ -243,7 +254,13 @@
       "shot-notes": "Poznámky rodiny v aplikaci Daili",
       "shot-recipes": "Uložené recepty v aplikaci Daili",
       "shot-mealplan": "Jídelníček na týden v aplikaci Daili",
-      "shot-birthdays": "Nadcházející narozeniny v aplikaci Daili"
+      "shot-birthdays": "Nadcházející narozeniny v aplikaci Daili",
+      "shot-todos": "Sdílený seznam úkolů v aplikaci Daili",
+      "shot-budget": "Rodinný rozpočet v aplikaci Daili",
+      "shot-cycle": "Soukromý kalendář cyklu v aplikaci Daili",
+      "shot-weather": "Předpověď počasí v aplikaci Daili",
+      "shot-documents": "Soukromý trezor na dokumenty v aplikaci Daili",
+      "shot-family": "Členové rodiny v aplikaci Daili"
     },
     "screens": {
       "h2": "Na každé obrazovce doma",
