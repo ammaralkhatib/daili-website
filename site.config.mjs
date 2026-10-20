@@ -981,6 +981,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
     },
   },
+  {
+    slug: 'what-to-look-for-family-app',
+    cluster: 'cozi',
+    features: ['family'],
+    title: 'What to Look For in a Family App Before You Switch',
+    description: 'Twelve questions to ask before you move your household onto a new family app — the ones that matter in month three, not the feature list on the website.',
+    h1: 'What to Look For in a Family App Before You Switch',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'what-to-look-for-family-app.en.html',
+    image: '/assets/img/blog/what-to-look-for-family-app.webp',
+    imageAlt: 'Two smartphones lying side by side on a grey surface, each showing a different app layout',
+    imageWidth: 1200,
+    imageHeight: 900,
+    faq: [
+      {
+        q: 'How many apps should I trial?',
+        a: 'Two, at most. Trialling five means your family is asked to learn five things and commits to none. Shortlist on the twelve questions, install the best one, and give it two weeks.',
+      },
+      {
+        q: 'Should I pay before I know it works?',
+        a: 'If a month\'s subscription is what unlocks the thing you actually need — usually the calendar horizon — then yes, pay for one month. It is cheaper than picking wrong and moving twice.',
+      },
+      {
+        q: 'Is it worth switching at all if the current app mostly works?',
+        a: 'Often not. Switching costs a family real effort and some goodwill. Switch when something is genuinely blocked — a person who cannot participate, a limit you keep hitting, or a privacy position you are not comfortable with — not because another app has a nicer screenshot.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Rather than claim we pass all twelve, here are the three where we can be specific: iOS and Android are the same app with the same rights for everyone; there is no limit on how far ahead you can look, on any plan; and there are no ads on any plan.</p>
+<p>Question 10 through 12 are answered in our privacy policy, which is the right place to check us rather than take our word.</p>
+<p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
+    },
+  },
 ];
 
 /**
