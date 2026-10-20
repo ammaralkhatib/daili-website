@@ -1191,6 +1191,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
     },
   },
+  {
+    slug: 'school-term-dates-family-calendar',
+    cluster: 'devices',
+    features: ['calendar'],
+    title: 'Getting School Term Dates Into Your Family Calendar',
+    description: 'Only one of the UK, Ireland, Germany and Austria publishes school holidays as a calendar file. Where to find the official dates, and how to enter them once.',
+    h1: 'Getting School Term Dates Into Your Family Calendar (UK, Ireland, Germany, Austria)',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'school-term-dates-family-calendar.en.html',
+    image: '/assets/img/blog/school-term-dates-family-calendar.webp',
+    imageAlt: 'Children at desks in a bright primary classroom, a teacher bending over to help one of them',
+    imageWidth: 1200,
+    imageHeight: 801,
+    faq: [
+      {
+        q: 'Where do I find official term dates as a calendar feed?',
+        a: 'For Germany, the KMK publishes an .ics download per Bundesland. For the UK, Ireland and Austria there is no official calendar file at all — the dates are published as web pages and PDFs, and you enter them by hand.',
+      },
+      {
+        q: 'Why do German school holidays differ by state?',
+        a: 'Education is a state responsibility. The summer holidays are coordinated nationally so the whole country does not travel in the same fortnight; the rest are set by each Bundesland.',
+      },
+      {
+        q: 'Can I add two countries\' holidays at once?',
+        a: 'Yes, and for cross-border families it is worth it — add both sets as separate all-day events with different colours. It is also the clearest possible demonstration of why a shared calendar beats a wall planner.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili can subscribe to an external calendar feed, which covers Germany's KMK files and any calendar your school does publish. For the three countries where you type the dates in, all-day events spanning a whole break are what the month view is built to show.</p>
+<p class="post-cta-link"><a href="/">See how external calendars work →</a></p>`,
+    },
+  },
 ];
 
 /**
