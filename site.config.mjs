@@ -1085,6 +1085,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how recipes and meal plans work →</a></p>`,
     },
   },
+  {
+    slug: 'family-app-shutting-down',
+    cluster: 'cozi',
+    features: ['documents', 'family'],
+    title: 'Your Family App Is Shutting Down: What to Do',
+    description: 'An app you trusted with your family\'s calendar is closing. What to save first, how long you really have, and the one thing most people forget until it is gone.',
+    h1: 'Your Family App Is Shutting Down: What to Do',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'family-app-shutting-down.en.html',
+    image: '/assets/img/blog/family-app-shutting-down.webp',
+    imageAlt: 'A rustic wooden sign reading Sorry we\'re closed hanging in a doorway',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Can they really just delete my data?',
+        a: 'Generally yes, once the service ends and any stated retention period passes. Deleting data at the end of a service is normal and often legally expected — keeping it forever would be the problem. What matters is that you are told when, and given a window to take a copy.',
+      },
+      {
+        q: 'What if the app shuts down with no notice at all?',
+        a: 'Then you have lost the self-service route, but not necessarily the legal one. If the company still exists, a data request is still a right. If it has been dissolved, there may be no one to ask, which is the honest and uncomfortable answer.',
+      },
+      {
+        q: 'Should I keep a backup of the new app too?',
+        a: 'A light one. Twice a year, export the calendar if the app allows it and keep the file. It takes ten minutes and it turns a future shutdown from a scramble into an inconvenience.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Two things that matter for this particular article, and they are the ones we would want to know as a user.</p>
+<p>Daili has a data export, so you never have to ask permission to take a copy. And vault documents are stored <strong>on your device only</strong> — never uploaded to our servers — which means the files you care about most are not ours to lose, whatever happens to us.</p>
+<p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
+    },
+  },
 ];
 
 /**
