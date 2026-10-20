@@ -1016,6 +1016,40 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
     },
   },
+  {
+    slug: 'free-vs-paid-family-apps',
+    cluster: 'cozi',
+    features: ['family'],
+    title: 'Free vs Paid Family Apps: What You Actually Lose',
+    description: 'Free family organisers are not crippled versions of paid ones. Here is what is usually held back, what it costs you in practice, and when paying is right.',
+    h1: 'Free vs Paid Family Apps: What You Actually Lose on a Free Tier',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'free-vs-paid-family-apps.en.html',
+    image: '/assets/img/blog/free-vs-paid-family-apps.webp',
+    imageAlt: 'A child sitting on a wooden floor with a glass jar and coins scattered around',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Is a free family calendar app good enough?',
+        a: 'For many households, yes — particularly if you mostly plan a few weeks out and the shared shopping list is what you actually use. It stops being enough when you need a longer horizon, when more than one adult needs to add things, or when the ad-funded model stops sitting comfortably.',
+      },
+      {
+        q: 'Why do so many apps put the month view behind a paywall?',
+        a: 'Because it is the feature people miss most, which makes it effective at converting. It is a business decision rather than a technical limit, and that is worth understanding rather than resenting.',
+      },
+      {
+        q: 'Is paying for a family app worth it?',
+        a: 'If it removes a limit you keep hitting, almost always — it is usually one subscription for the whole household and costs less than a couple of takeaways. If you are paying to fix a habit problem rather than a feature problem, no app will fix it.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>To be concrete rather than coy: daili has no ads on any plan, and no limit on how far ahead you can look. We are not a free-forever-with-ads product, and we would rather say that plainly than call ourselves free and fund it another way.</p>
+<p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
+    },
+  },
 ];
 
 /**
