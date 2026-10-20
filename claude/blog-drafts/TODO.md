@@ -1,5 +1,10 @@
 # Blog — everything Ammar has to open, copy or run
 
+> **2026-10-20 — superseded run order.** The ten 2026-09-11 prompts are now run
+> through ONE prompt: `claude-prompts/2026-10-20/003-publish-posts-018-027.md`
+> (after `002-blog-feature-links.md`). Photos (section 1 below) are still needed.
+> Plan: Project doc `claude/marketing-seo-loop-plan-2026-10-20.md`.
+
 Updated 2026-09-11. **17 posts live** at https://daili.app/blog/.
 Posts 18–27 are written and waiting.
 

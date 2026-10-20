@@ -24,6 +24,9 @@ all driven by ONE new field per post, so nobody hand-edits links again:
   (the strings here are English-only literals, like "Frequently asked
   questions" in blogpost.html — 🔴 never add them to the 28 content files),
   help pages, landing page, deploy.
+  🔴 Ten untracked `static/assets/img/blog/*.webp` files are expected — they
+  are the heroes for prompt 003. They do NOT block step 0; leave them
+  untracked and out of this commit.
 
 ## Requirements
 1. **The field.** Each `BLOG_POSTS` entry gets `features: ['<slug>', …]`

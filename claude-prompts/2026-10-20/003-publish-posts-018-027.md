@@ -16,10 +16,16 @@ this file says otherwise. This file wins.**
 1. **Dates.** Every post's `published` and `updated` = **the day you run
    this** (all ten the same date). The September dates in the drafts and
    prompts are stale. Never backdate a post.
-2. **Heroes.** Each must already exist as `static/assets/img/blog/<slug>.webp`
-   (Planning Claude converts Ammar's downloads; post 20's is already there).
-   Any missing → stop at that post, report `blocked`, publish nothing after
-   it. Measure `imageWidth`/`imageHeight` from the real file.
+2. **Heroes — already in place** (converted and checked by eye by Planning
+   Claude 2026-10-20): `static/assets/img/blog/<slug>.webp`, all 1200 × 800
+   or 1200 × 801, landscape. Measure `imageWidth`/`imageHeight` from the real
+   file. They are untracked on purpose (they do NOT block step 0): commit
+   each hero together with its post. Any missing → stop at that post,
+   report `blocked`. Three alt texts
+   in the drafts do not match the real photo — use these instead:
+   - 21: `A child sitting on a wooden floor with a glass jar and coins scattered around`
+   - 25: `A couple shaking hands with a man in a suit across a desk with papers on it`
+   - 26: `Children at desks in a bright primary classroom, a teacher bending over to help one of them`
 3. **Posts 18 + 19 (HOLD).** The free-Cozi-account check was **not** done.
    Take the "If no" path in 001/002: publish as written with the honest
    "we could not confirm this". Do not invent either answer. (Cozi's plans
