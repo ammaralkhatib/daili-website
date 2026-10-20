@@ -1120,6 +1120,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
     },
   },
+  {
+    slug: 'try-new-family-app-without-annoying-family',
+    cluster: 'adoption',
+    features: ['lists'],
+    title: 'How to Try a New Family App Without Annoying Everyone',
+    description: 'You have found an app you like. Your family has not. A two-week trial plan that asks almost nothing of them and tells you honestly whether it will stick.',
+    h1: 'How to Try a New Family App Without Annoying Your Family',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'try-new-family-app-without-annoying-family.en.html',
+    image: '/assets/img/blog/try-new-family-app-without-annoying-family.webp',
+    imageAlt: 'A mother and two children sitting on a bed, the boy showing her something on a phone',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'How long before I know if it\'s working?',
+        a: 'Two weeks, and the signal is somebody else adding something unprompted — not enthusiasm, not compliments. If that has not happened by day fourteen, more time rarely changes it.',
+      },
+      {
+        q: 'What if only one person refuses?',
+        a: 'Work around them rather than through them. If three of you use the shopping list, it still works. Adoption in a household is rarely all-or-nothing, and waiting for unanimity means never starting.',
+      },
+      {
+        q: 'Should I ask everyone to choose the app together?',
+        a: 'Choosing together sounds democratic and usually stalls — most people have no opinion until they have used something. Better to decide what problem you are solving together, then pick the app yourself and take responsibility for it.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Two things here are deliberate rather than accidental: every kind of notification has its own switch, set per person, so whoever hates pings can turn theirs down in week one without muting anyone else; and the shared shopping list is the fastest thing in the app to use, because it is the feature most likely to be somebody's first.</p>
+<p>The two-week trial works in any app, including the one you already have.</p>
+<p class="post-cta-link"><a href="/">See how shared lists work →</a></p>`,
+    },
+  },
 ];
 
 /**
