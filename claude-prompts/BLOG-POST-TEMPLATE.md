@@ -19,6 +19,14 @@ requires it.
 2. **`site.config.mjs`** — one entry appended to `BLOG_POSTS`, using the values
    in the draft's front-matter verbatim, plus `faq` and `cta` from the draft's
    FAQ and "What daili does with this" sections.
+   **`features` is required**: 1–2 HOME_FEATURES slugs with a page, the
+   primary first, taken from the draft's front-matter or the publish prompt.
+   It drives the feature page's "From the blog", the CTA line to
+   `/features/<primary>/` and "Keep reading" — never hand-write those links;
+   the build throws on a missing or unknown slug.
+   Planning Claude adds 2 in-prose links FROM existing posts TO every new post
+   in the weekly SEO round; the publish prompt says which, if any — add only
+   those.
 
 ## Rules that are easy to get wrong
 - 🔴 **`faq` lives in `BLOG_POSTS` and nowhere else.** The template renders the

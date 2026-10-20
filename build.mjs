@@ -171,6 +171,24 @@ for (const post of BLOG_POSTS) {
   }
 }
 
+/**
+ * A post's `features` drive the links between the blog and the feature pages,
+ * so each one has to be a feature that has a page. Same reasoning as the
+ * cluster check above: a typo would otherwise be a link to a 404, or a post
+ * silently missing from its feature page.
+ */
+const pagedFeatures = HOME_FEATURES.filter((d) => d.page).map((d) => d.slug);
+for (const post of BLOG_POSTS) {
+  if (!Array.isArray(post.features) || post.features.length < 1 || post.features.length > 2) {
+    throw new Error(`BLOG_POSTS '${post.slug}' must have features: ['<slug>'] with 1–2 entries, the first the primary`);
+  }
+  for (const f of post.features) {
+    if (!pagedFeatures.includes(f)) {
+      throw new Error(`BLOG_POSTS '${post.slug}' has feature '${f}', which is not a HOME_FEATURES slug with page: true (${pagedFeatures.join(', ')})`);
+    }
+  }
+}
+
 /** The blog index. English-only and outside every cluster, like the posts. */
 const blogIndexPage = {
   id: 'blogindex',
@@ -332,6 +350,51 @@ const blogList = [...BLOG_POSTS]
     publishedLabel: formatDate(post.published),
     pubDate: rfc822(post.published),
   }));
+
+/**
+ * The links between the blog and the feature pages (2026-10-20/002), all from
+ * each post's `features`. English literals, like "Frequently asked questions"
+ * in blogpost.html: the blog is English-only, and the feature page block is
+ * rendered on the English pages alone, so a German reader is never sent to an
+ * English article without being told.
+ */
+const blogLinkItem = (p, pad) => `${pad}<li><a href="${p.url}">${escapeHtml(p.title)}</a><p>${escapeHtml(p.description)}</p></li>`;
+
+/** The English feature page's "From the blog": its 3 newest tagged posts, or
+ *  nothing at all (no empty heading) when none is tagged. */
+function featureBlogBlock(slug) {
+  const posts = blogList.filter((p) => p.features.includes(slug)).slice(0, 3);
+  if (!posts.length) return '';
+  return `      <section class="fs-blog" aria-labelledby="fs-blog-h">
+        <h2 id="fs-blog-h">From the blog</h2>
+        <ul>
+${posts.map((p) => blogLinkItem(p, '          ')).join('\n')}
+        </ul>
+        <a class="fs-blog-all" href="/blog/">All articles →</a>
+      </section>`;
+}
+
+/** A post's CTA line to its primary feature, named as that page's English <h1>. */
+function postFeatureLink(post) {
+  const d = HOME_FEATURES.find((f) => f.slug === post.features[0]);
+  return `<p class="post-cta-link"><a href="${featureUrl(d.slug, 'en')}">See how ${escapeHtml(featureCard(d, 'en').h3)} works in daili →</a></p>`;
+}
+
+/** "Keep reading": 2 other posts, those sharing the primary feature first, then
+ *  the same cluster, newest first in each group. Nothing when there are none. */
+function postKeepReading(post) {
+  const others = blogList.filter((p) => p.slug !== post.slug);
+  const byFeature = others.filter((p) => p.features.includes(post.features[0]));
+  const byCluster = others.filter((p) => p.cluster === post.cluster && !byFeature.includes(p));
+  const posts = [...byFeature, ...byCluster].slice(0, 2);
+  if (!posts.length) return '';
+  return `  <section class="post-more" aria-labelledby="post-more-h">
+    <h2 id="post-more-h">Keep reading</h2>
+    <ul>
+${posts.map((p) => blogLinkItem(p, '      ')).join('\n')}
+    </ul>
+  </section>`;
+}
 
 const localesFor = (pg) => (pg.locales === 'all' ? LOCALES : pg.locales.filter((l) => LOCALES.includes(l)));
 const urlFor = (pg, loc) => {
@@ -850,6 +913,8 @@ function renderFeature(d, loc) {
 ${faq.map((it) => `          <details><summary>${e(it.q)}</summary><p>${e(it.a)}</p></details>`).join('\n')}
         </div>
       </section>` : '',
+    // English only: the blog is English-only (featureBlogBlock says why).
+    blog: loc === 'en' ? featureBlogBlock(d.slug) : '',
     allHref: `${dirFor(loc)}#features`,
   };
 }
@@ -1406,6 +1471,8 @@ function build() {
             ...pg.post,
             author: BLOG_AUTHOR.name,
             publishedLabel: formatDate(pg.post.published),
+            featureLink: postFeatureLink(pg.post),
+            keepReading: postKeepReading(pg.post),
           },
         } : {}),
         // A page may carry its own literal meta (blog posts do). Without this

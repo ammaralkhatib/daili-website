@@ -1093,6 +1093,47 @@ for (const loc of LOCALES) {
   }
 }
 
+// --- 19. blog ↔ feature pages (2026-10-20/002) -----------------------------
+// Each post's `features` drives three link blocks. The English feature page of
+// a tagged feature lists its posts, and every link there reaches a built post;
+// no other locale's feature page links into the English-only blog; every post
+// links to its primary feature's page; no post links to itself.
+{
+  const enFeature = (slug) => featureOut(slug, DEFAULT_LOCALE);
+  for (const f of FEATURE_PAGES) {
+    const tagged = BLOG_POSTS.some((p) => (p.features || []).includes(f.slug));
+    for (const loc of LOCALES) {
+      const out = featureOut(f.slug, loc);
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file)) continue;        // section 1 already reported it
+      // The sheet only: the header and footer's Blog link is on every page,
+      // marked hreflang="en" lang="en" (section 11b).
+      const sheet = (read(file).match(/<article class="fsheet"[\s\S]*?<\/article>/) || [''])[0];
+      if (loc !== DEFAULT_LOCALE) {
+        if (sheet.includes('href="/blog/')) fail(out, 'links to /blog/ — the blog is English-only, a translated feature page must not send readers there');
+        continue;
+      }
+      const block = (sheet.match(/<section class="fs-blog"[\s\S]*?<\/section>/) || [])[0];
+      if (tagged && !block) fail(enFeature(f.slug), 'has posts tagged with this feature but no "From the blog" block');
+      if (!tagged && block) fail(enFeature(f.slug), 'has a "From the blog" block but no post is tagged with this feature');
+      for (const [, href] of (block || '').matchAll(/href="([^"]+)"/g)) {
+        if (!fs.existsSync(path.join(DIST, href, 'index.html'))) fail(out, `"From the blog" links to ${href}, which is not a built page`);
+      }
+    }
+  }
+  for (const post of BLOG_POSTS) {
+    const out = `blog/${post.slug}/index.html`;
+    const file = path.join(DIST, out);
+    if (!fs.existsSync(file)) continue;          // section 1 already reported it
+    const html = read(file);
+    const primary = `href="/features/${(post.features || [])[0]}/"`;
+    if (!html.includes(primary)) fail(out, `does not link to its primary feature page (${primary})`);
+    // The article only: the language picker's current entry is a self-link by design.
+    const article = (html.match(/<article class="post"[\s\S]*<\/article>/) || [''])[0];
+    if (article.includes(`href="/blog/${post.slug}/"`)) fail(out, 'links to itself');
+  }
+}
+
 if (errors.length) {
   console.error(`\n${errors.length} build error(s):`);
   console.error(errors.join('\n'));

@@ -256,6 +256,14 @@ export const BLOG_CLUSTERS = {
  * exactly, and the only way to guarantee that is to never type a question
  * twice — the landing page's FAQ is wired the same way for the same reason.
  *
+ * `features` (required, 1–2 slugs) names the HOME_FEATURES entries with
+ * `page: true` the post is about; the FIRST is the primary. It drives every
+ * link between the blog and the feature pages (2026-10-20/002): the English
+ * feature page lists its 3 newest tagged posts, the post's CTA box links to
+ * /features/<primary>/, and "Keep reading" picks 2 posts sharing the primary,
+ * then the same `cluster`. build.mjs throws on a slug that has no page, like
+ * it does for an unknown `cluster`.
+ *
  * `title` and `h1` are deliberately allowed to differ: the title tag is
  * competing in a search result, the H1 is being read on the page.
  *
@@ -271,6 +279,7 @@ export const BLOG_POSTS = [
   {
     slug: 'where-to-store-important-family-documents',
     cluster: 'documents',
+    features: ['documents'],
     title: 'Where to Store Important Family Documents: Safe or Phone?',
     description: 'Fireproof safe, cloud drive or your phone? Compare the three ways families store passports, birth certificates and insurance papers — and when each one fails.',
     h1: 'Where to Store Important Family Documents (Safe, Cloud, or Phone?)',
@@ -308,6 +317,7 @@ export const BLOG_POSTS = [
   {
     slug: 'digital-family-emergency-binder',
     cluster: 'documents',
+    features: ['documents'],
     title: 'The Digital Family Emergency Binder: What Goes In It',
     description: 'The paper emergency binder has one flaw — it is at home. How to build a digital version you actually carry, what belongs in it, and what must stay on paper.',
     h1: 'The Digital Family Emergency Binder',
@@ -342,6 +352,7 @@ export const BLOG_POSTS = [
   {
     slug: 'family-document-checklist',
     cluster: 'documents',
+    features: ['documents'],
     title: 'The Family Document Checklist: 27 Papers to Have Ready',
     description: 'A room-by-room checklist of the 27 documents every household needs to find fast — identity, medical, money, property, school — and which need the original.',
     h1: 'The Family Document Checklist: 27 Papers Every Household Should Have Ready',
@@ -383,6 +394,7 @@ export const BLOG_POSTS = [
   {
     slug: 'shared-family-calendar-rules',
     cluster: 'adoption',
+    features: ['calendar'],
     title: '7 Rules for a Shared Family Calendar That Everyone Follows',
     description: 'Most shared calendars fail on habits, not features. Seven house rules — who adds what, how far ahead, what a colour means — that keep a family calendar trusted.',
     h1: '7 Rules for a Shared Family Calendar Everyone Actually Follows',
@@ -417,6 +429,7 @@ export const BLOG_POSTS = [
   {
     slug: 'cozi-free-plan-what-you-get',
     cluster: 'cozi',
+    features: ['calendar'],
     title: 'What Cozi\'s Free Plan Actually Includes in 2026',
     description: 'Cozi now has three tiers, not two. What free really gives you, what the 30-day calendar limit is, and why so many 2026 blog posts get the timeline wrong.',
     h1: 'What Cozi\'s Free Plan Actually Includes in 2026',
@@ -451,6 +464,7 @@ export const BLOG_POSTS = [
   {
     slug: 'what-to-leave-with-a-babysitter',
     cluster: 'documents',
+    features: ['documents'],
     title: 'What to Leave with a Babysitter or Grandparent',
     description: 'The one-page handover every sitter needs: contacts, medical details, routines, house rules and the permissions they need — plus what to deliberately leave out.',
     h1: 'What to Leave with a Babysitter or Grandparent for a Weekend Away',
@@ -485,6 +499,7 @@ export const BLOG_POSTS = [
   {
     slug: 'nobody-uses-the-family-calendar-app',
     cluster: 'adoption',
+    features: ['calendar'],
     title: 'Nobody in My Family Uses the Calendar App — 5 Reasons Why',
     description: 'You installed it, added everything, and you are still the only one who opens it. The five reasons family apps get abandoned, and the fix for each one.',
     h1: 'Nobody in My Family Uses the Calendar App',
@@ -519,6 +534,7 @@ export const BLOG_POSTS = [
   {
     slug: 'documents-to-keep-on-your-phone',
     cluster: 'documents',
+    features: ['documents'],
     title: 'The 6 Documents to Keep on Your Phone for Your Kids',
     description: 'Six documents worth having on your phone before you need them — insurance card, vaccination record, consent letter and three more. Plus three to never keep there.',
     h1: 'When the School Calls: The 6 Documents to Keep on Your Phone',
@@ -553,6 +569,7 @@ export const BLOG_POSTS = [
   {
     slug: 'family-app-children-data',
     cluster: 'privacy',
+    features: ['family'],
     title: 'Where Does Your Family App Store Your Children\'s Data?',
     description: 'Family apps hold your children\'s schedules, schools and photos. Six questions to ask before you invite your kids in — and how to find the real answers.',
     h1: 'Where Does Your Family App Store Your Children\'s Data?',
@@ -595,6 +612,7 @@ export const BLOG_POSTS = [
   {
     slug: 'get-partner-to-use-family-calendar',
     cluster: 'adoption',
+    features: ['calendar'],
     title: 'How to Get Your Partner to Use the Family Calendar',
     description: 'Nagging does not work and neither does a better app. Six things that do — starting with giving up the habit that keeps you as the family\'s only scheduler.',
     h1: 'How to Get Your Partner to Actually Use the Family Calendar',
@@ -629,6 +647,7 @@ export const BLOG_POSTS = [
   {
     slug: 'medical-consent-grandparents-babysitting',
     cluster: 'documents',
+    features: ['documents'],
     title: 'Medical Consent for Grandparents Babysitting: What You Need',
     description: 'What a carer can and cannot authorise, what a consent letter should say, and where to keep it so it is there at the hospital desk. With a template.',
     h1: 'Medical Consent for Grandparents Babysitting: What You Actually Need',
@@ -666,6 +685,7 @@ export const BLOG_POSTS = [
   {
     slug: 'mixed-iphone-android-family-calendar',
     cluster: 'devices',
+    features: ['calendar'],
     title: 'The Mixed iPhone and Android Household: What Works',
     description: 'Apple Family Sharing stops at Android. Google\'s family group is built for Google accounts. What actually works when half the house is on the other platform.',
     h1: 'The Mixed iPhone and Android Household',
@@ -700,6 +720,7 @@ export const BLOG_POSTS = [
   {
     slug: 'switch-family-app-without-losing-lists',
     cluster: 'cozi',
+    features: ['lists', 'todos'],
     title: 'Switch Family Apps Without Losing Your Lists',
     description: 'Calendars move with a feed. Shopping lists, to-dos and recipes do not. A step-by-step switch plan that keeps both apps running until the new one is trusted.',
     h1: 'Switch Family Apps Without Losing Your Lists',
@@ -733,6 +754,7 @@ export const BLOG_POSTS = [
   {
     slug: 'teenagers-private-events-family-calendar',
     cluster: 'adoption',
+    features: ['calendar', 'family'],
     title: 'Should Teenagers Have Private Events on the Family Calendar?',
     description: 'Where the line sits between coordinating and monitoring — what to insist on, what to let go, and how to set it up so the argument happens only once.',
     h1: 'Should Teenagers Have Private Events on the Family Calendar?',
@@ -772,6 +794,7 @@ export const BLOG_POSTS = [
   {
     slug: 'family-organiser-apps-gdpr',
     cluster: 'privacy',
+    features: ['family'],
     title: 'Family Organiser Apps and GDPR: What Parents Should Ask',
     description: 'GDPR gives you six concrete rights over your family\'s data, and children get extra protection. How to test whether a family app actually honours any of them.',
     h1: 'Family Organiser Apps and GDPR: What Parents in Europe Should Ask',
@@ -815,6 +838,7 @@ export const BLOG_POSTS = [
   {
     slug: 'share-calendar-with-android-family-member',
     cluster: 'devices',
+    features: ['calendar'],
     title: 'How to Share a Calendar With Someone on Android',
     description: 'You are on iPhone, they are on Android. Three ways to share a calendar that survive both phones — the public link, a shared Google Calendar, and a family app.',
     h1: 'How to Share a Calendar with a Family Member Who Has an Android',
@@ -852,6 +876,7 @@ export const BLOG_POSTS = [
   {
     slug: 'family-app-month-three-cleanup',
     cluster: 'adoption',
+    features: ['todos', 'lists'],
     title: 'Month Three: When the Family App Is Full of Dead To-Dos',
     description: 'Every family app works in week one. By month three the list has 200 items nobody trusts. A 30-minute reset, and four habits that stop it happening again.',
     h1: 'Month Three: When the Family App Is Full of Dead To-Dos',

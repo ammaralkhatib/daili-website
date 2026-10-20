@@ -635,6 +635,17 @@ html.landing footer{margin-top:40px}
 .home .fs-faq{margin-top:42px}
 .home .fs-faq h2{font-size:26px;font-weight:700;letter-spacing:-.025em}
 .home .fs-faq .faq{margin-top:16px}
+/* "From the blog" (English pages only, 2026-10-20/002): the benefits' type
+   sizes, a hairline between items, nothing louder than the FAQ above it. */
+.home .fs-blog{margin-top:42px}
+.home .fs-blog h2{font-size:26px;font-weight:700;letter-spacing:-.025em}
+.home .fs-blog ul{list-style:none;margin:14px 0 0;padding:0}
+.home .fs-blog li{padding:14px 0;border-top:1px solid var(--line)}
+.home .fs-blog li a{font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.3;color:var(--ink);text-decoration:none}
+.home .fs-blog li a:hover{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.home .fs-blog li p{margin:4px 0 0;font-size:15.5px;line-height:1.5;color:var(--ink2)}
+.home .fs-blog-all{display:inline-block;margin-top:10px;font-weight:600;font-size:16px;color:var(--forest)}
+.home .fs-blog-all:hover{text-decoration:underline;text-underline-offset:3px}
 .home .fs-get{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:38px}
 .home .fs-back{display:inline-flex;align-items:center;gap:8px;margin-top:30px;font-weight:600;font-size:16px;color:var(--forest)}
 .home .fs-back::before{content:"\2190"}

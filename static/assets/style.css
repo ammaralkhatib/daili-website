@@ -443,6 +443,17 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
    same type scale as the prose above, one rule to mark the seam. */
 .post-faq{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
 
+/* "Keep reading": two posts, in the blog index's type (.postlist-txt) without
+   its pictures, so it reads as a quiet list rather than a second article. */
+.post-more{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+.post-more h2{margin-top:0}
+.post-more ul{list-style:none;padding:0;margin:0}
+.post-more li{margin:0;padding:14px 0;border-top:1px solid var(--line)}
+.post-more li:first-child{border-top:0;padding-top:4px}
+.post-more a{display:inline-block;font-size:1.1rem;font-weight:600;line-height:1.32;letter-spacing:-.01em;color:var(--ink);text-decoration:none;margin-bottom:6px}
+.post-more a:hover{color:var(--forest);text-decoration:underline}
+.post-more p{font-size:.97rem;margin:0}
+
 .post-cta{margin-top:42px;background:var(--mint);border:1px solid var(--mint-strong);border-radius:calc(var(--radius) - 4px);padding:26px 24px}
 .post-cta h2{margin-top:0;font-size:1.18rem;color:var(--forest-deep)}
 .post-cta p:last-child{margin-bottom:0}
