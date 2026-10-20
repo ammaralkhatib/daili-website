@@ -911,6 +911,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how shared to-dos work →</a></p>`,
     },
   },
+  {
+    slug: 'how-to-export-cozi-calendar',
+    cluster: 'cozi',
+    features: ['calendar'],
+    title: 'How to Export Your Cozi Calendar (and What You Can\'t)',
+    description: 'Cozi has no export button. Here is the one documented route out, what it does not carry, and the legal request that gets you everything else.',
+    h1: 'How to Export Your Cozi Calendar',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'how-to-export-cozi-calendar.en.html',
+    image: '/assets/img/blog/how-to-export-cozi-calendar.webp',
+    imageAlt: 'Hands typing on a laptop at a white desk with archive file boxes behind it',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Does Cozi have a real export button?',
+        a: 'No. Cozi\'s support site documents no export, download or backup feature. The outbound iCal URL is the only self-service way to get calendar data out, and it is a live read-only feed rather than a file.',
+      },
+      {
+        q: 'Will my recurring events survive the feed?',
+        a: 'Cozi\'s documentation does not say either way, and we have not been able to confirm it. Check a repeating event in the receiving calendar before you rely on it — and if you have checked, we would genuinely like to know.',
+      },
+      {
+        q: 'Can I keep both apps running for a while?',
+        a: 'Yes, and you should. Subscribe to the feed from the new app, run both for about two weeks, and only then close Cozi. That overlap is what stops a family reverting on day three.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili can subscribe to an external calendar feed, so the bridge described above works into daili without re-typing anything.</p>
+<p>The lists are the part you move by hand — in daili as in any app. Nobody has solved that, and anyone claiming a one-click list import from Cozi has not tried it.</p>
+<p class="post-cta-link"><a href="/">See how daili handles external calendars →</a></p>`,
+    },
+  },
 ];
 
 /**
