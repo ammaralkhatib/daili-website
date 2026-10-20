@@ -946,6 +946,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how daili handles external calendars →</a></p>`,
     },
   },
+  {
+    slug: 'cozi-30-day-calendar-limit',
+    cluster: 'cozi',
+    features: ['calendar'],
+    title: 'The Cozi 30-Day Calendar Limit, Explained',
+    description: 'Free Cozi limits how far ahead you can add and view events. What the limit blocks, where it is actually documented, and three ways around it.',
+    h1: 'The Cozi 30-Day Calendar Limit, Explained',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'cozi-30-day-calendar-limit.en.html',
+    image: '/assets/img/blog/cozi-30-day-calendar-limit.webp',
+    imageAlt: 'A paper month calendar with red push-pins in several dates and the 30th circled in red',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Can I see next year\'s events on free Cozi?',
+        a: 'The Google Play listing puts adding, editing and viewing events more than 30 days ahead behind Cozi Gold. Cozi\'s own website does not document this, and Cozi\'s support has said free users can reach a month view by tapping the month name — so test it on your own account before you conclude anything.',
+      },
+      {
+        q: 'Does the limit apply to birthdays?',
+        a: 'Birthdays are a year out by nature, so anything that caps the horizon affects them. Cozi also sells a birthday tracker as a Gold feature, which suggests the free tier handles them differently.',
+      },
+      {
+        q: 'Is there a free family app without this limit?',
+        a: 'Yes, several — including ours, which is not a neutral thing for us to say. What matters more than the brand is checking before you commit: add an event six months out on day one, and see what happens.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>There is no limit on how far ahead you can add or see events in daili, on any plan, and no ads on any plan.</p>
+<p>We would still rather you tested that yourself than took our word for it — which is the same advice this whole article gives about Cozi.</p>
+<p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
+    },
+  },
 ];
 
 /**
