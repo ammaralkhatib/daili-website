@@ -1225,6 +1225,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how external calendars work →</a></p>`,
     },
   },
+  {
+    slug: 'shared-calendar-wrong-time',
+    cluster: 'devices',
+    features: ['calendar', 'birthdays'],
+    title: 'Why Your Shared Calendar Shows the Wrong Time',
+    description: 'An event lands an hour out, or on the wrong day entirely. The four causes — time zones, all-day events, daylight saving and subscribed feeds — and how to tell them apart.',
+    h1: 'Why Your Shared Calendar Shows the Wrong Time',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'shared-calendar-wrong-time.en.html',
+    image: '/assets/img/blog/shared-calendar-wrong-time.webp',
+    imageAlt: 'A row of round wall clocks along a dark wall, each showing a different time',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Should I turn off time zone support in my calendar?',
+        a: 'Usually not. It is doing the right thing, and switching it off tends to trade a rare problem for a permanent one. The exception is a household that never travels and repeatedly gets confused — then a fixed setting can be simpler. Most people are better off fixing the device that is set wrong.',
+      },
+      {
+        q: 'Why does a birthday sometimes show a day early?',
+        a: 'Almost always because it was created as a timed event rather than an all-day one. Recreate it as all-day and it will be correct everywhere.',
+      },
+      {
+        q: 'Why did my weekly call with family abroad move?',
+        a: 'Daylight saving, in the fortnight where two countries have changed clocks on different weekends. It will correct itself. If the call matters, check it twice a year rather than assuming.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili stores the kinds of event that are about a day — birthdays, celebrations, holidays — as dates rather than moments, which is why they do not drift across devices. Timed events carry their zone.</p>
+<p>None of that helps if a device in the house is set to the wrong time zone, which remains the most common cause by a distance.</p>
+<p class="post-cta-link"><a href="/">See how the family calendar works →</a></p>`,
+    },
+  },
 ];
 
 /**
