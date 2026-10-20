@@ -100,5 +100,6 @@
   "cycle-calendar": { "file": "cycle-calendar.webp", "w": 720, "h": 1564, "kind": "image" },
   "cycle-day": { "file": "cycle-day.webp", "w": 720, "h": 1564, "kind": "image" },
   "cycle-settings": { "file": "cycle-settings.webp", "w": 720, "h": 1564, "kind": "image" },
-  "cycle-supplies": { "file": "cycle-supplies.webp", "w": 720, "h": 1564, "kind": "image" }
+  "cycle-supplies": { "file": "cycle-supplies.webp", "w": 720, "h": 1564, "kind": "image" },
+  "anywhere-trmnl": { "file": "anywhere-trmnl.webp", "w": 720, "h": 540, "kind": "image" }
 }
