@@ -1050,6 +1050,41 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See what daili includes →</a></p>`,
     },
   },
+  {
+    slug: 'move-family-recipes-to-new-app',
+    cluster: 'cozi',
+    features: ['recipes', 'meal-plan'],
+    title: 'How to Move Your Family\'s Recipes to a New App',
+    description: 'Recipes almost never export. Here is the realistic way to move the ones you actually cook, why you should move far fewer than you think, and what to abandon.',
+    h1: 'How to Move Your Family\'s Recipes to a New App',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'move-family-recipes-to-new-app.en.html',
+    image: '/assets/img/blog/move-family-recipes-to-new-app.webp',
+    imageAlt: 'A woman in an apron writing in a notebook at a bright kitchen counter',
+    imageWidth: 1200,
+    imageHeight: 800,
+    faq: [
+      {
+        q: 'Can I import recipes from a website into a family app?',
+        a: 'Some apps can pull a recipe from a URL, with mixed results depending on how the site is built. It is worth testing with two or three of your usual sites before you rely on it — if it works, it is dramatically faster than typing.',
+      },
+      {
+        q: 'What about recipes in photos of my grandmother\'s handwriting?',
+        a: 'Keep the photograph — that has a value no typed version replaces. But also type it in, because a photograph cannot become a shopping list and cannot be read by somebody else in the family who wants to cook it. Do both.',
+      },
+      {
+        q: 'How long does this actually take?',
+        a: 'For ten to fifteen recipes, typed properly, about an hour. For everything in a recipe box of forty, an evening or two — which is exactly why the first step is deciding you do not need all forty.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili's recipes connect to the meal plan and the shopping list, which is the reason to type ingredients as a proper list rather than a paragraph — one tap puts a recipe's ingredients on the shopping list.</p>
+<p>There is no magic import. Nobody has one, and an app claiming to import your recipes from another family app is worth testing before believing.</p>
+<p class="post-cta-link"><a href="/">See how recipes and meal plans work →</a></p>`,
+    },
+  },
 ];
 
 /**
