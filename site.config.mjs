@@ -1155,6 +1155,42 @@ export const BLOG_POSTS = [
 <p class="post-cta-link"><a href="/">See how shared lists work →</a></p>`,
     },
   },
+  {
+    slug: 'family-app-data-when-acquired',
+    cluster: 'privacy',
+    features: ['family', 'documents'],
+    title: 'What Happens to Your Family\'s Data When an App Is Sold',
+    description: 'Almost every family app reserves the right to hand your data to a buyer. What the law actually requires, what the policies really say, and what to check.',
+    h1: 'What Happens to Your Family\'s Data When an App Is Acquired',
+    published: '2026-10-20',
+    updated: '2026-10-20',
+    body: 'family-app-data-when-acquired.en.html',
+    image: '/assets/img/blog/family-app-data-when-acquired.webp',
+    imageAlt: 'A couple shaking hands with a man in a suit across a desk with papers on it',
+    imageWidth: 1200,
+    imageHeight: 801,
+    faq: [
+      {
+        q: 'Can a company really sell my family\'s data?',
+        a: 'In an acquisition, data typically transfers to the buyer as part of the business, which is different from selling data to advertisers. The clause in your policy almost certainly permits it. What varies is whether you are told first, and what the new owner commits to.',
+      },
+      {
+        q: 'Can I stop it?',
+        a: 'Not usually — but you can leave. If the new arrangement is not one you accept, export your data, delete the account and go elsewhere. Which is exactly why "can I get my data out" is worth checking before you need it.',
+      },
+      {
+        q: 'Does it matter more because it is children\'s data?',
+        a: 'Yes. Children\'s data attracts specific protections and, on the evidence of the enforcement cases above, the most regulatory attention. An app built for families that says nothing about children in its acquisition clause has told you something.',
+      },
+    ],
+    cta: {
+      h2: 'What daili does with this',
+      html: `<p>Daili is not for sale and we have no acquisition to announce — but that is a statement about today, and today is not a commitment.</p>
+<p>What is written down: our privacy policy says who we are, where the server is (Germany, with Host Europe GmbH), and that there is a data export. Vault documents are stored <strong>on your device only</strong> and are never uploaded, so they are not part of any company's assets in the first place.</p>
+<p>Hold us to the checklist above.</p>
+<p class="post-cta-link"><a href="/privacy.html">Read our privacy policy →</a></p>`,
+    },
+  },
 ];
 
 /**
