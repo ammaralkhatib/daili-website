@@ -10,3 +10,7 @@ Thumbs.db
 # deploy, with no lockfile and no registry in the way. deploy.sh also keeps a
 # server-side rollback copy at $DOC.prev.
 dist/
+
+# Marketing automation: never commit a Search Console key or its JSON.
+marketing/*.json
+*.key
