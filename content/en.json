@@ -78,7 +78,7 @@
     "hero": {
       "@hero": { "description": "Hero under the headline (the headline itself reuses hero.h1a/h1b). lead = the paragraph under it (≤ 170 chars)." },
       "lead": "One calm place for your family's week: calendar, lists, to-dos, habits and notes that everyone can see. On every phone, on your wrist, and in the browser.",
-      "@rating": { "description": "Hero, next to the five stars (≤ 24 chars). {rating} is filled by the build with the locale-formatted Google Play rating (e.g. \"4.7\" / \"4,7\"), exactly once. ratingAlt = the screen-reader label for stars + line." },
+      "@rating": { "description": "Hero, next to the five stars (≤ 24 chars). {rating} is filled by the build with the locale-formatted Google Play rating (e.g. \"4.9\" / \"4,9\"), exactly once. ratingAlt = the screen-reader label for stars + line." },
       "rating": "{rating} on Google Play",
       "ratingAlt": "Rated {rating} out of 5 on Google Play",
       "@scenes": { "description": "7 scenes of 3 floating cards around the hero phone, in this order; the phone shows the matching app screenshot, so words match that locale's screenshot: dish, item, to-do and event names from the store-shot fixtures, person names as the screenshot shows them (Lena/Marco/Emma/Noah/Mia in Latin-script locales). id is data — never translate it. t ≤ 22 chars (bold line), s ≤ 28 chars (small grey line)." },

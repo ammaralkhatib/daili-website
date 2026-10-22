@@ -179,7 +179,7 @@ html.lenis,html.lenis body{height:auto}
    track by exactly half is one set and the loop has no seam. */
 .home .marq-track{display:flex;width:max-content;animation:marq 70s linear infinite}
 .home .marq-set{display:flex;gap:18px;padding-inline-end:18px}
-.home .marq:hover .marq-track{animation-play-state:paused}
+.home .revs .marq:hover .marq-track{animation-play-state:paused}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes marq-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
 [dir="rtl"] .home .marq-track{animation-name:marq-rtl}
@@ -222,15 +222,12 @@ html.lenis,html.lenis body{height:auto}
 .home .frow-btn.prev svg{transform:scaleX(-1)}
 [dir="rtl"] .home .frow-btn svg{transform:scaleX(-1)}
 [dir="rtl"] .home .frow-btn.prev svg{transform:none}
-.home .frow:not(.on) :is(.frow-head,.frow-prog){visibility:hidden}
+.home .frow:not(.on) .frow-head{visibility:hidden}
 .home .frow-vp{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:max(24px,calc((100% - 1240px)/2));scrollbar-width:none;overscroll-behavior-x:contain}
 .home .frow-vp::-webkit-scrollbar{display:none}
 .home .frow-track{display:flex;gap:20px;width:max-content;padding-inline:max(24px,calc((100% - 1240px)/2))}
 .home .frow.pin .frow-vp{overflow:clip;scroll-snap-type:none}
 .home .frow.pin .frow-track{will-change:transform}
-.home .frow-prog{margin-top:26px;height:3px;border-radius:3px;background:rgba(21,39,31,.1);overflow:hidden}
-.home .frow-prog i{display:block;height:100%;background:var(--forest);border-radius:3px;transform:scaleX(0);transform-origin:0 50%}
-[dir="rtl"] .home .frow-prog i{transform-origin:100% 50%}
 .home .fcard{position:relative;flex:none;width:400px;scroll-snap-align:start;border-radius:30px;overflow:hidden;height:640px;padding:36px 34px 0;display:flex;flex-direction:column}
 .home .fcard:focus-visible{outline:3px solid var(--forest);outline-offset:-3px}
 .home .fcard h3{font-size:34px;font-weight:700;letter-spacing:-.035em}

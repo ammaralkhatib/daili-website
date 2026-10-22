@@ -49,9 +49,16 @@
   }
 
   // Late images and the web fonts change the layout under every trigger.
-  var rf = null;
-  var refresh = function () { clearTimeout(rf); rf = setTimeout(function () { ST.refresh(); }, 150); };
-  $$("img").forEach(function (im) { if (!im.complete) im.addEventListener("load", refresh, { once: true }); });
+  // Never while the feature row is pinned: a refresh there snaps its scrubbed
+  // track to the scroll position, a ~150 px sideways jump (2026-10-22/004);
+  // it waits until the pin is left. A screenshot in a phone has its size
+  // from CSS, so its load changes no layout and needs no refresh at all.
+  var rf = null, pin = null, owed = false;
+  var refresh = function () {
+    clearTimeout(rf);
+    rf = setTimeout(function () { if (pin && pin.isActive) owed = true; else ST.refresh(); }, 150);
+  };
+  $$("img").forEach(function (im) { if (!im.complete && !im.closest(".phone .scr")) im.addEventListener("load", refresh, { once: true }); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
 
   if (RM) { flows(true); featureRow(true); return; }
@@ -140,13 +147,15 @@
 
   // ---------- the final flat-lay: objects slide onto the table ----------
   // Each turns in from its tilt ± 10–14° (alternating) and settles on it.
+  // They land when the flat-lay's middle reaches the middle of the screen
+  // (2026-10-22/004; was its top at 30 %, already settled too early).
   var flat = $(".flat");
   if (flat) {
     $$("[data-obj]", flat).forEach(function (o, i) {
       var rot = +o.dataset.rot || 0, turn = (10 + (i % 3) * 2) * (i % 2 ? -1 : 1) * D;
-      g.fromTo(o, { x: +o.dataset.fx * (MOB ? 0.5 : 1) * D, y: +o.dataset.fy, rotation: rot + turn, opacity: 0 }, { x: 0, y: 0, rotation: rot, opacity: 1, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "top 30%", scrub: 1 } });
+      g.fromTo(o, { x: +o.dataset.fx * (MOB ? 0.5 : 1) * D, y: +o.dataset.fy, rotation: rot + turn, opacity: 0 }, { x: 0, y: 0, rotation: rot, opacity: 1, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "center center", scrub: 1.5 } });
     });
-    g.fromTo(".fphone", { y: 160 }, { y: 0, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "top 30%", scrub: 1 } });
+    g.fromTo(".fphone", { y: 160 }, { y: 0, ease: "power2.out", scrollTrigger: { trigger: flat, start: "top bottom", end: "center center", scrub: 1.5 } });
   }
 
   flows(false);
@@ -158,15 +167,15 @@
   // reaches the middle of the screen it stays there and scrolling down moves
   // the track sideways, by its overflow, over 0.6 × that distance of page
   // scroll; after the last card the page scrolls on. Everywhere else it is the
-  // markup's native swipe row with snap. The counter ("3 of 13"), the arrows
-  // and the progress bar follow either one. In the pinned row the phones and
+  // markup's native swipe row with snap. The counter ("3 of 13") and the
+  // arrows follow either one. In the pinned row the phones and
   // their floating cards stay still (no vertical parallax inside a pin, so no
   // jitter); in the native row they keep their per-card vertical parallax.
   function featureRow(still) {
     var row = $("[data-frow]");
     if (!row) return;
     var vp = $("[data-frow-vp]", row), track = $("[data-frow-track]", row), cards = $$(".fcard", track);
-    var count = $("[data-frow-count]", row), progress = $("[data-frow-bar]", row);
+    var count = $("[data-frow-count]", row);
     var prev = $("[data-frow-prev]", row), next = $("[data-frow-next]", row);
     var n = cards.length, tpl = count.dataset.tpl;
     var fmt = new Intl.NumberFormat(document.documentElement.lang || "en");
@@ -178,8 +187,6 @@
     var show = function (p) {
       p = Math.min(1, Math.max(0, p || 0));
       count.textContent = tpl.replace("{n}", fmt.format(Math.round(p * (n - 1)) + 1)).replace("{total}", fmt.format(n));
-      var w = track.offsetWidth || 1, seen = (w - overflow()) / w;
-      progress.style.transform = "scaleX(" + (seen + (1 - seen) * p).toFixed(4) + ")";
       prev.disabled = p < 0.001;
       next.disabled = p > 0.999;
     };
@@ -222,6 +229,12 @@
     });
     row.classList.add("on");
     show(nativeP());
+    // Every picture in the row is lazy, and the cards slide in sideways, so
+    // each would start loading only as it comes into view and pop in during
+    // the motion. About 1.5 screens before the row, load and decode them all.
+    ST.create({ trigger: row, start: "top 250%", end: "max", once: true, onEnter: function () {
+      $$("img", row).forEach(function (im) { im.loading = "eager"; if (im.decode) im.decode().catch(function () {}); });
+    } });
     if (still) return;
 
     var FLY = [30, 55, 20, 60, 35, 50];
@@ -258,12 +271,13 @@
           invalidateOnRefresh: true,
           onUpdate: function (s) { show(s.progress); },
           onRefresh: function (s) { show(s.progress); },
+          onToggle: function (s) { if (!s.isActive && owed) { owed = false; refresh(); } },
         },
       });
-      pinned = tween.scrollTrigger;
+      pinned = pin = tween.scrollTrigger;
       show(pinned.progress);
       return function () {
-        pinned = null;
+        pinned = pin = null;
         row.classList.remove("pin");
         g.set(track, { clearProps: "transform" });
         show(nativeP());
@@ -383,7 +397,7 @@
   }
 
   // ---------- hero: the phone plays the app by itself ----------
-  // One scene, ~6.5 s, forever: the next screenshot slides in from the
+  // One scene, SCENE (4.5) s, forever: the next screenshot slides in from the
   // inline-end side over the last one; its three cards fade in touching the
   // phone, drift slowly away, get ticked one after the other and fly off.
   // Paused while the hero is off screen or the tab is hidden, resumed where it
@@ -391,10 +405,16 @@
   function heroScenes() {
     var hero = $(".hero"), shots = $$(".hphone .hs"), cards = $$(".hcard");
     if (!hero || !shots.length) return;
+    // The length of one scene in seconds; every time below is written for
+    // 4.5 s and scaled by T, so 4 or 5 is a one-number change. At 4.5: slide
+    // 0–0.7, cards in at 0.6/0.72/0.84, ticked at 2.2/2.5/2.8, off at
+    // 3.6/3.7/3.8 (each ticked card stays 1.0–1.4 s), gone by 4.3, +0.2.
+    var SCENE = 4.5, T = SCENE / 4.5;
     var n = shots.length, z = 1, cur = null, onScreen = true, shown = !document.hidden;
     var drift = MOB ? 30 : 50;
-    // Accelerating, but not from rest: the slope at 0 is 0.1 × 160 px / 0.6 s
-    // ≈ 27 px/s, above the drift's ~11 px/s.
+    // Accelerating, but not from rest: the slope at 0 is 0.1 × 160 px / 0.5 s
+    // = 32 px/s, above the drift's 50 px / 3.0 s ≈ 17 px/s (both scale with
+    // 1/T, so the ratio holds at any SCENE).
     var exitEase = function (p) { return 0.1 * p + 0.9 * p * p; };
     // Card 2 sits on the inline-end side of the phone, cards 1 and 3 on the start side.
     var out = function (i, c) { return (c.dataset.k === "1" ? 1 : -1) * D; };
@@ -405,25 +425,25 @@
     var sync = function () { if (cur) cur.paused(!(onScreen && shown)); };
     var scene = function (i, first) {
       var cs = cards.filter(function (c) { return +c.dataset.scene === i; });
-      var t0 = first ? -0.7 : 0;
+      var t0 = first ? -0.6 * T : 0;
       var tl = g.timeline({ onComplete: function () { scene((i + 1) % n, false); } });
       if (!first) {
         shots[i].style.zIndex = ++z;
-        tl.fromTo(shots[i], { xPercent: 100 * D }, { xPercent: 0, duration: 0.8, ease: "power3.inOut" }, 0);
+        tl.fromTo(shots[i], { xPercent: 100 * D }, { xPercent: 0, duration: 0.7 * T, ease: "power3.inOut" }, 0);
       }
       // One continuous path per card (round 3): it fades in and starts
       // drifting at the same instant, drifts at one slow speed through the
       // ticking, then speeds up out of that drift and flies off. The exit's
       // ease starts at the drift's speed or above, so it never halts.
       cs.forEach(function (c, k) {
-        var d = out(k, c), s = t0 + 0.7 + k * 0.15, e = t0 + 5.3 + k * 0.1;
+        var d = out(k, c), s = t0 + (0.6 + k * 0.12) * T, e = t0 + (3.6 + k * 0.1) * T;
         c.classList.remove("done");
-        tl.fromTo(c, { autoAlpha: 0, scale: 0.92 }, { autoAlpha: 1, scale: 1, duration: 0.5, ease: "power2.out" }, s);
+        tl.fromTo(c, { autoAlpha: 0, scale: 0.92 }, { autoAlpha: 1, scale: 1, duration: 0.5 * T, ease: "power2.out" }, s);
         tl.fromTo(c, { x: 0 }, { x: d * drift, duration: e - s, ease: "none" }, s);
-        tl.call(function () { c.classList.add("done"); }, null, t0 + 3.5 + k * 0.35);
-        tl.to(c, { x: d * (drift + 160), autoAlpha: 0, duration: 0.6, ease: exitEase }, e);
+        tl.call(function () { c.classList.add("done"); }, null, t0 + (2.2 + k * 0.3) * T);
+        tl.to(c, { x: d * (drift + 160), autoAlpha: 0, duration: 0.5 * T, ease: exitEase }, e);
       });
-      tl.to({}, { duration: 0.2 });
+      tl.to({}, { duration: 0.2 * T });
       cur = tl;
       sync();
     };

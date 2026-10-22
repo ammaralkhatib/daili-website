@@ -673,7 +673,7 @@ function renderHome(loc) {
   const works = list('home.works.items', WORKS_ICONS.length)
     .map((t, i) => `      <span class="wk">${homeIcon(WORKS_ICONS[i])}${e(t)}</span>`).join('\n');
   // The rating row: RATING's number as the store shows it, in this page's
-  // number format. The last star is filled by the fraction (4.7 -> 70 %).
+  // number format. The last star is filled by the fraction (4.9 -> 90 %).
   let rating = '';
   if (RATING) {
     const r = num(RATING.value, 1);
@@ -729,9 +729,9 @@ function renderHome(loc) {
     return `        <${tag} class="fcard g-${d.tint}" data-slug="${d.slug}"${attrs}><h3>${e(c.h3)}${isNew ? ` ${newBadge}` : ''}</h3><p>${e(c.p)}</p>
           <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget(d, i)}</div></${tag}>`;
   }).join('\n');
-  // Above the row: the counter and the two arrows; under it, the progress
-  // bar. Without JavaScript they hold their place but stay invisible (home.css),
-  // so nothing moves when home.js shows them.
+  // Above the row: the counter and the two arrows (no progress bar since
+  // 2026-10-22/004). Without JavaScript they hold their place but stay
+  // invisible (home.css), so nothing moves when home.js shows them.
   const counterTpl = h('home.day.counter');
   // data-close: the sheet's close-button label (home.js builds the sheet).
   const dayRow = `    <div class="frow" data-frow data-close="${e(h('features.close'))}">
@@ -742,7 +742,6 @@ function renderHome(loc) {
       <div class="frow-vp" data-frow-vp><div class="frow-track" data-frow-track>
 ${dayCards}
       </div></div>
-      <div class="wrap frow-prog" aria-hidden="true"><i data-frow-bar></i></div>
     </div>`;
   // The orbit: three rings at equal steps, the tiles on them. Its box is the
   // outer ring's diameter; a tile's place is a % of that box.

@@ -648,7 +648,7 @@ for (const loc of LOCALES) {
 //     8 member photo cards (the loop's copy is aria-hidden and not counted),
 //     one "Start the day" card per HOME_FEATURES entry, in its order, each
 //     with its locale's (or the en) screenshot and the "New" badge only
-//     until newUntil, plus the row's counter, arrows and progress bar,
+//     until newUntil, plus the row's counter and arrows and NO progress bar,
 //     2 floating cards on the calendars card,
 //     3 Daili Plus cards, 4 workflow buttons / screens / toasts, 6 boxes in
 //     "On every screen" (the AI-apps one linking to its help article) and
@@ -768,8 +768,8 @@ for (const loc of LOCALES) {
       const isNew = Boolean(f.newUntil) && today <= f.newUntil;
       if (badge !== isNew) fail(out, `feature card '${f.slug}' ${badge ? 'shows' : 'lacks'} the "New" badge, but newUntil is ${f.newUntil || 'unset'} and today is ${today}`);
     });
-    if (count(daySec, 'data-frow-count') !== 1 || count(daySec, 'data-frow-prev') !== 1 || count(daySec, 'data-frow-next') !== 1 || count(daySec, 'data-frow-bar') !== 1) {
-      fail(out, 'the feature row lacks its counter, its two arrows or its progress bar (or has two)');
+    if (count(daySec, 'data-frow-count') !== 1 || count(daySec, 'data-frow-prev') !== 1 || count(daySec, 'data-frow-next') !== 1 || count(daySec, 'data-frow-bar') || /frow-prog/.test(daySec)) {
+      fail(out, 'the feature row lacks its counter or its two arrows (or has two), or has a progress bar again (removed 2026-10-22/004)');
     }
     const calCards = count((daySec.split('id="calendars"')[1] || '').split('</article>')[0], '<div class="fc">');
     if (calCards !== 2) fail(out, `the calendars card has ${calCards} floating cards, expected 2 (Google + Apple)`);

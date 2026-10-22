@@ -1469,9 +1469,9 @@ export const HERO_SCENES = [
  * The rating row under the hero buttons (home.hero.rating, {rating}).
  * Copy the real number from the store by hand. Never round up, never show a
  * number the store doesn't show. Set to null to hide the row.
- * (2026-09-28: Google Play shows 4.7; the App Store has no ratings yet.)
+ * (2026-10-22: Google Play shows 4.9; the App Store has no ratings yet.)
  */
-export const RATING = { value: 4.7, source: 'Google Play', url: 'https://play.google.com/store/apps/details?id=app.daili' };
+export const RATING = { value: 4.9, source: 'Google Play', url: 'https://play.google.com/store/apps/details?id=app.daili' };
 
 /**
  * "Start the day together": every feature, one card each, in ONE horizontal
