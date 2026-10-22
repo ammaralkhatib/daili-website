@@ -85,7 +85,7 @@ html.lenis,html.lenis body{height:auto}
 .home .watch .crown{position:absolute;right:-5%;top:28%;width:9%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4f5f7,#aab0b7 60%,#7d838b);box-shadow:0 0 0 .5px rgba(62,66,72,.5)}
 .home .watch .face{position:relative;aspect-ratio:416/496;border-radius:18%/15.1%;background:#000;box-shadow:0 0 0 3px #23272b,0 0 0 4px rgba(255,255,255,.35);overflow:hidden;isolation:isolate}
 .home .watch .face .ws{position:absolute;inset:0;display:block;width:100%;height:100%}
-/* The bento watch's screens 2–5: home.js shows them in turn. */
+/* Both watches' screens 2–5: home.js shows them in turn (the bento's on its own timer, the hero's with the hero phone). */
 .home .watch .face .ws+.ws{visibility:hidden}
 
 /* ---------- hero ---------- */

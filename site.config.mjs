@@ -1454,15 +1454,21 @@ export const HOME_ICONS = {
  * home.hero.scenes[i].id in every locale (build.mjs checks it). Where each
  * card sits is CSS (.hcard[data-k]): card 1 top inline-start, card 2 middle
  * inline-end, card 3 lower inline-start, each overlapping the phone's edge.
+ *
+ * `watch` is the hero watch's screen for the scene (2026-10-22/008): the
+ * part after shot-watch- in WATCH_SHOT_SOURCES (build.mjs throws on any
+ * other), or null to keep whatever the watch shows. The watch changes with
+ * the phone, at the same moment, only when the key differs. Up next shows
+ * the next birthday and tonight's dinner too, so birthdays and meals keep it.
  */
 export const HERO_SCENES = [
-  { id: 'calendar', shot: 'shot-calendar', cards: [['cal', 'lake'], ['cal', 'berry'], ['people', 'honey']] },
-  { id: 'todos', shot: 'shot-todos', cards: [['todo', 'leaf'], ['todo', 'lake'], ['todo', 'berry']] },
-  { id: 'shopping', shot: 'shot-shopping', cards: [['cart', 'leaf'], ['cart', 'honey'], ['cart', 'clay']] },
-  { id: 'habits', shot: 'shot-habits', cards: [['flame', 'honey'], ['flame', 'lake'], ['paw', 'leaf']] },
-  { id: 'notes', shot: 'shot-notes', cards: [['note', 'berry'], ['note', 'lake'], ['note', 'honey']] },
-  { id: 'birthdays', shot: 'shot-birthdays', cards: [['cake', 'honey'], ['todo', 'leaf'], ['cake', 'berry']] },
-  { id: 'meals', shot: 'shot-mealplan', cards: [['meal', 'honey'], ['meal', 'leaf'], ['meal', 'clay']] },
+  { id: 'calendar', shot: 'shot-calendar', watch: 'upnext', cards: [['cal', 'lake'], ['cal', 'berry'], ['people', 'honey']] },
+  { id: 'todos', shot: 'shot-todos', watch: 'todos', cards: [['todo', 'leaf'], ['todo', 'lake'], ['todo', 'berry']] },
+  { id: 'shopping', shot: 'shot-shopping', watch: 'shopping', cards: [['cart', 'leaf'], ['cart', 'honey'], ['cart', 'clay']] },
+  { id: 'habits', shot: 'shot-habits', watch: 'habits', cards: [['flame', 'honey'], ['flame', 'lake'], ['paw', 'leaf']] },
+  { id: 'notes', shot: 'shot-notes', watch: 'note', cards: [['note', 'berry'], ['note', 'lake'], ['note', 'honey']] },
+  { id: 'birthdays', shot: 'shot-birthdays', watch: 'upnext', cards: [['cake', 'honey'], ['todo', 'leaf'], ['cake', 'berry']] },
+  { id: 'meals', shot: 'shot-mealplan', watch: 'upnext', cards: [['meal', 'honey'], ['meal', 'leaf'], ['meal', 'clay']] },
 ];
 
 /**

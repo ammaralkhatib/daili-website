@@ -655,16 +655,26 @@ function renderHome(loc) {
   const words = (s) => e(s).split(/\s+/).filter(Boolean).map((w) => `<span class="w">${w}</span>`).join(' ');
   // The watch shows the real watch app (2026-10-22/005): the store captures
   // in this page's language (WATCH_SHOT_SOURCES, shots/<loc>/shot-watch-*).
-  // Both the hero's and the bento card's (`cycle`, 2026-10-22/007) carry all
-  // five: Up next with a src, the other four with data-src only, so they cost
-  // nothing until home.js loads them (the hero's after the window's load, the
-  // card's as it comes near) and turns through them. Without JS or with
-  // reduced motion, Up next stays.
+  // Both the hero's and the bento card's carry all five, each with its key
+  // (data-ws, the part after shot-watch-): Up next with a src, the other four
+  // with data-src only, so they cost nothing until home.js loads them. The
+  // bento's are in WATCH_SHOT_SOURCES order and turn on their own timer
+  // (`cycle`, 2026-10-22/007); the hero's are in HERO_SCENES order and follow
+  // the hero phone (2026-10-22/008). Without JS or with reduced motion, Up
+  // next stays.
+  const watchKey = (name) => name.slice('shot-watch-'.length);
   const watchShots = Object.values(WATCH_SHOT_SOURCES);
-  const watch = (cls, { cycle = false, eager = false } = {}) => {
-    const { width, height } = imageSize(watchShots[0]);
-    const img = (name, i) => `<img class="ws" ${i ? 'data-src' : 'src'}="${imgSrc(name, loc)}" alt="" width="${width}" height="${height}"${i || eager ? '' : ' loading="lazy"'} decoding="async">`;
-    const shots = (cycle ? watchShots : watchShots.slice(0, 1)).map(img).join('');
+  const heroWatchShots = [watchShots[0]];
+  for (const sc of HERO_SCENES) {
+    if (sc.watch === null) continue;
+    const name = watchShots.find((w) => watchKey(w) === sc.watch);
+    if (!name) throw new Error(`HERO_SCENES '${sc.id}' has watch '${sc.watch}', not a watch screen (${watchShots.map(watchKey).join(', ')}) or null`);
+    if (!heroWatchShots.includes(name)) heroWatchShots.push(name);
+  }
+  const watch = (cls, shotList, { cycle = false, eager = false } = {}) => {
+    const { width, height } = imageSize(shotList[0]);
+    const img = (name, i) => `<img class="ws" data-ws="${watchKey(name)}" ${i ? 'data-src' : 'src'}="${imgSrc(name, loc)}" alt="" width="${width}" height="${height}"${i || eager ? '' : ' loading="lazy"'} decoding="async">`;
+    const shots = shotList.map(img).join('');
     return `<div class="watch${cls ? ` ${cls}` : ''}" aria-hidden="true"><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face"${cycle ? ' data-watch-cycle' : ''}>${shots}</div></div></div>`;
   };
   const num = (n, digits = 0) => new Intl.NumberFormat(loc, { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(n);
@@ -672,12 +682,13 @@ function renderHome(loc) {
   // ---- hero ----
   // The phone plays the seven scenes (home.js). Every screenshot is in the
   // markup, the first on top; the cards of scene 1 are the only ones shown
-  // without JavaScript or with reduced motion, unticked.
+  // without JavaScript or with reduced motion, unticked. Each screenshot's
+  // data-watch is the hero watch screen its scene turns to (HERO_SCENES).
   const scenes = list('home.hero.scenes', HERO_SCENES.length);
   const heroShots = HERO_SCENES.map((sc, i) => {
     if (scenes[i].id !== sc.id) throw new Error(`home.hero.scenes[${i}].id in ${where} is '${scenes[i].id}', HERO_SCENES says '${sc.id}' — the id is data, never translated`);
     const { width, height } = imageSize(sc.shot);
-    return `<img class="hs" data-scene="${i}" src="${imgSrc(sc.shot, loc)}" alt="" width="${width}" height="${height}"${i ? ' loading="lazy"' : ''} decoding="async">`;
+    return `<img class="hs" data-scene="${i}"${sc.watch ? ` data-watch="${sc.watch}"` : ''} src="${imgSrc(sc.shot, loc)}" alt="" width="${width}" height="${height}"${i ? ' loading="lazy"' : ''} decoding="async">`;
   }).join('');
   const heroPhone = `<div class="phone hphone" aria-hidden="true"><div class="scr">${heroShots}</div></div>`;
   const heroCards = HERO_SCENES.map((sc, i) => {
@@ -844,7 +855,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
             ${W.habits.map((r, i) => `<div class="wh-row"><span class="wh-ring${r.ring ? '' : ' done'}">${r.ring ? e(r.ring) : homeIcon('check', 3)}</span><span class="wh-name">${e(habitCards[i].t)}</span><span class="wh-av" style="background:${r.color}">${e(HOME_FAMILY[r.who].name.slice(0, 1))}</span></div>`).join('')}</div></div>`;
   const { width: ww, height: wh } = imageSize('web-');
   const bento = [
-    `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch', { cycle: true })}</article>`,
+    `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch', watchShots, { cycle: true })}</article>`,
     `        <article class="bx g-berry" data-r><h3>${e(h('home.screens.widgets.h3'))}</h3><p>${e(h('home.screens.widgets.p'))}</p>
           <div class="wgrid" aria-hidden="true">${wNext}${wShop}${wHabits}</div></article>`,
     `        <article class="bx span2 g-honey" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
@@ -894,7 +905,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     sparkIcon: homeIcon('spark'),
     globeIcon: homeIcon('globe'),
     heroPhone,
-    heroWatch: watch('hwatch', { eager: true, cycle: true }),
+    heroWatch: watch('hwatch', heroWatchShots, { eager: true }),
     heroCards, rating, works, badges, membersH2, marquee,
     dayRow, calendarsVis,
     avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,
