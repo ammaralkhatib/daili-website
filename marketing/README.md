@@ -1,6 +1,6 @@
 # Weekly marketing report
 
-Every **Monday at 07:47** (local time) the Mac writes one report from Google Search Console and Astro to:
+Every **Monday at 07:00** (local time) the Mac writes one report from Google Search Console and Astro to:
 
 ```
 ~/Claude/Projects/Family Planner/marketing/weekly/<YYYY-MM-DD>.md
@@ -8,7 +8,7 @@ Every **Monday at 07:47** (local time) the Mac writes one report from Google Sea
 
 Planning Claude reads it in the next session. The job never publishes, deploys, commits or changes store text. What goes into the report is defined in `claude-prompts/MARKETING-WEEKLY.md`.
 
-If the Mac is asleep at 07:47, launchd runs the job at the next wake. If the Mac is shut down at that time, that week is skipped.
+If the Mac is asleep at 07:00, launchd runs the job at the next wake. If the Mac is shut down at that time, that week is skipped.
 
 ## What runs
 
