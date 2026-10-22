@@ -9,7 +9,7 @@ since: 1.1.0
 updated: 2026-10-12
 order: 3
 mediaPending: hand-made screenshot of daili in a computer browser
-related: anywhere-wall, anywhere-widgets, notes-notes
+related: anywhere-wall, anywhere-widgets, notes-notes, anywhere-ai-apps
 ---
 On a computer, you can use daili in your browser. It's the same account and the same family, so everything you change shows up on everyone's phones.
 
