@@ -1423,6 +1423,8 @@ export const HOME_ICONS = {
   eink: '<rect x="3" y="5" width="18" height="13" rx="2"/><path d="M7 9h6M7 12h10M7 15h4"/>',
   outlook: '<rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 9h5.5v9H15"/><circle cx="9" cy="12" r="2.6"/>',
   globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.5 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.5-3.5-8.5s1-6 3.5-8.5z"/>',
+  // A plain speech bubble for AI apps — never an AI company's logo.
+  chat: '<path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/>',
   lang: '<path d="M4 5h9M8.5 3v2M6 5c.5 3 2.5 5.5 5 7M11 5c-.8 4-3.5 7-7 8.5"/><path d="M12.5 20l4-9 4 9M14 17h5"/>',
   mountain: '<path d="M3 19l6-10 4 6 2-3 6 7z"/>',
   flag: '<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
@@ -1557,7 +1559,7 @@ export const HOME_WIDGETS = {
 };
 
 /** The "Works with" row, in home.works.items order. */
-export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'globe'];
+export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'chat', 'globe'];
 
 /** The two badges above the members headline, in home.members.badges order. */
 export const MEMBER_BADGES = [{ icon: 'lang', tone: 'lake' }, { icon: 'mountain', tone: 'leaf' }];

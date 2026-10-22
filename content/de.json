@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Funktioniert mit",
-      "items": ["iPhone", "Android", "Apple Watch", "Startbildschirm-Widgets", "TRMNL", "Google Calendar", "Outlook", "Webbrowser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Startbildschirm-Widgets", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbrowser"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Und auf jedem Handy",
         "p": "iPhone und Android, in 25 Sprachen. Oma spricht Türkçe, die Kinder Deutsch? Kein Problem."
+      },
+      "ai": {
+        "h3": "Frag deine KI-App",
+        "p": "Verbinde Daili mit Claude oder einer anderen KI-App und frag, was am Wochenende ansteht, oder setz Milch auf die Liste, direkt im Chat.",
+        "q": "Was steht am Wochenende an?",
+        "a1": "Sa 10:00 · Noahs Schwimmkurs",
+        "a2": "So 15:00 · Emmas Geburtstag",
+        "foot": "Aus deinem Daili-Kalender",
+        "more": "So verbindest du eine App"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Kann ich meinen bestehenden Kalender mitnehmen?",
         "a": "Ja. Daili zeigt die Kalender, die schon auf deinem Handy sind — Google, Outlook, iCloud und andere — neben dem Familienkalender, nur auf deinem Gerät. Außerdem kannst du die Feiertage deines Landes hinzufügen."
+      },
+      {
+        "q": "Funktioniert Daili mit KI-Apps wie Claude?",
+        "a": "Ja. Verbinde Daili mit Claude oder einer anderen KI-App, die MCP unterstützt, und frag, was heute ansteht, oder sag ihr, was sie eintragen soll. Sie sieht nur die Familie oder Gruppe, die du auswählst — nie Budget, Zyklus oder private Einträge anderer. <a {aiHelp}>So verbindest du eine App</a>"
       },
       {
         "q": "Wo liegen meine Daten?",

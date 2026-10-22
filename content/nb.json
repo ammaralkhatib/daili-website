@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Fungerer med",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets på startskjermen", "TRMNL", "Google Calendar", "Outlook", "Nettleser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets på startskjermen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Nettleser"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Og på hver mobil",
         "p": "iPhone og Android, på 25 språk. Mormor snakker Polski, barna snakker norsk? Ikke noe problem."
+      },
+      "ai": {
+        "h3": "Spør AI-appen din",
+        "p": "Koble Daili til Claude eller en annen AI-app, og spør hva som skjer i helgen, eller legg melk på listen, rett i chatten.",
+        "q": "Hva skjer i helgen?",
+        "a1": "Lør. 10:00 · Noahs svømmekurs",
+        "a2": "Søn. 15:00 · Emmas bursdag",
+        "foot": "Fra Daili-kalenderen din",
+        "more": "Slik kobler du til"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Kan jeg ta med kalenderen jeg bruker nå?",
         "a": "Ja. Daili viser kalenderne som allerede er på telefonen din — Google, Outlook, iCloud og andre — ved siden av familiekalenderen, bare på enheten din. Du kan også legge til helligdagene i landet ditt."
+      },
+      {
+        "q": "Fungerer Daili med AI-apper som Claude?",
+        "a": "Ja. Koble Daili til Claude eller en annen AI-app som støtter MCP, og spør hva som skjer i dag, eller si hva den skal legge til. Den ser bare den familien eller gruppen du velger — aldri Husholdningsbudsjett, Syklus eller andres private ting. <a {aiHelp}>Slik kobler du til</a>"
       },
       {
         "q": "Hvor ligger dataene mine?",

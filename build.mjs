@@ -255,6 +255,26 @@ const helpBase = {
   priority: () => '0.5',
 };
 const helpArticleIn = (id, loc) => helpByLocale[loc].articles.find((a) => a.id === id);
+/**
+ * The attributes of a link from a site page to one help article: the page's
+ * own language where the help has it, else the English article, saying so
+ * with hreflang like the footer's help link. Throws if the article is not shown yet
+ * (since > LIVE_APP_VERSION), so a page never links to a missing page.
+ */
+function helpLinkAttrs(id, loc) {
+  const own = helpLocales.includes(loc);
+  const hl = own ? loc : DEFAULT_LOCALE;
+  const a = helpShownByLocale[hl]?.articles.find((x) => x.id === id);
+  // A help test build has fixture articles only: point at its help home.
+  if (!a && HELP_TEST) return `href="${helpHome(hl)}"`;
+  if (!a) throw new Error(`help article '${id}' is not shown in ${hl} (missing, or since > LIVE_APP_VERSION ${LIVE_APP_VERSION}) — a site page links to it`);
+  // hreflang only, no lang: the link's words are in the page's language.
+  return `href="${helpArticleUrl(a, hl)}"${own ? '' : ` hreflang="${DEFAULT_LOCALE}"`}`;
+}
+/** The home page's link to the AI-apps article: home.screens.ai.more and {aiHelp} in faq.items. */
+const AI_APPS_HELP = 'anywhere-ai-apps';
+/** A faq.items answer with {aiHelp} filled by the AI-apps link's attributes. */
+const faqAnswer = (a, loc) => a.replace('{aiHelp}', helpLinkAttrs(AI_APPS_HELP, loc));
 const helpPages = [
   {
     ...helpBase,
@@ -820,6 +840,10 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
           <div class="tablet"><div class="tab-scr"><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.tablet.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></div></article>`,
     `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
           <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a', alt: '' })}${phone('shot-notes', { cls: 'tilt-b', alt: '' })}</div></article>`,
+    // A drawn chat with an AI app, in the site's own colours: no AI company's
+    // logo, colours or type. The full width under the four, text then chat.
+    `        <article class="bx bx-ai g-leaf" data-r><div class="ai-tx"><h3>${e(h('home.screens.ai.h3'))}</h3><p>${e(h('home.screens.ai.p'))}</p><a class="bx-more" ${helpLinkAttrs(AI_APPS_HELP, loc)}>${e(h('home.screens.ai.more'))}</a></div>
+          <div class="chat" aria-hidden="true"><p class="cb-q">${e(h('home.screens.ai.q'))}</p><div class="cb-a"><p class="cb-ev"><i></i>${e(h('home.screens.ai.a1'))}</p><p class="cb-ev"><i></i>${e(h('home.screens.ai.a2'))}</p><p class="cb-foot">${homeIcon('cal', 2.2)}${e(h('home.screens.ai.foot'))}</p></div></div></article>`,
   ].join('\n');
 
   // ---- privacy, care ----
@@ -879,7 +903,7 @@ function renderFaq(loc) {
     }
     // .a carries inline <a> markup in every locale, so it is written raw — the
     // tag parity between locales is what check-content.mjs guards.
-    return `      <details${i === 0 ? ' open' : ''}><summary>${escapeHtml(item.q)}</summary><p>${item.a}</p></details>`;
+    return `      <details${i === 0 ? ' open' : ''}><summary>${escapeHtml(item.q)}</summary><p>${faqAnswer(item.a, loc)}</p></details>`;
   }).join('\n');
 }
 
@@ -1313,7 +1337,7 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
         mainEntity: c.faq.items.map((it) => ({
           '@type': 'Question',
           name: it.q,
-          acceptedAnswer: { '@type': 'Answer', text: it.a },
+          acceptedAnswer: { '@type': 'Answer', text: faqAnswer(it.a, loc) },
         })),
       },
     ];

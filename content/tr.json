@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Şunlarla çalışır",
-      "items": ["iPhone", "Android", "Apple Watch", "Ana ekran widget'ları", "TRMNL", "Google Calendar", "Outlook", "Web tarayıcı"]
+      "items": ["iPhone", "Android", "Apple Watch", "Ana ekran widget'ları", "TRMNL", "Google Calendar", "Outlook", "Claude", "Web tarayıcı"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Ve her telefonda",
         "p": "iPhone ve Android'de, 25 dilde. Babaanne Deutsch, çocuklar Türkçe mi konuşuyor? Hiç sorun değil."
+      },
+      "ai": {
+        "h3": "Yapay zekâ uygulamanıza sorun",
+        "p": "Daili'yi Claude'a ya da başka bir yapay zekâ uygulamasına bağlayın; bu hafta sonu ne olduğunu sorun ya da listeye süt ekleyin, doğrudan sohbette.",
+        "q": "Bu hafta sonu ne var?",
+        "a1": "Cmt 10.00 · Noah'ın yüzme kursu",
+        "a2": "Paz 15.00 · Emma'nın doğum günü",
+        "foot": "Daili takviminizden",
+        "more": "Nasıl bağlanır"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Şu anki takvimimi getirebilir miyim?",
         "a": "Evet. Daili telefonunuzda zaten bulunan takvimleri — Google, Outlook, iCloud ve diğerleri — aile takviminin yanında, yalnızca cihazınızda gösterir. Ülkenizin resmî tatillerini de ekleyebilirsiniz."
+      },
+      {
+        "q": "Daili, Claude gibi yapay zekâ uygulamalarıyla çalışır mı?",
+        "a": "Evet. Daili'yi Claude'a ya da MCP destekleyen başka bir yapay zekâ uygulamasına bağlayın, sonra bugün ne olduğunu sorun ya da neyi eklemesi gerektiğini söyleyin. Yalnızca seçtiğiniz aileyi veya grubu görür — Bütçe, Döngü ya da başkalarının özel öğeleri ona asla ulaşmaz. <a {aiHelp}>Nasıl bağlanır</a>"
       },
       {
         "q": "Verilerim nerede tutuluyor?",

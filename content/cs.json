@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Funguje s",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploše", "TRMNL", "Google Calendar", "Outlook", "Webový prohlížeč"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploše", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webový prohlížeč"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "A na každém telefonu",
         "p": "iPhone i Android, ve 25 jazycích. Babička si nastaví Slovenčina, děti Čeština? Žádný problém."
+      },
+      "ai": {
+        "h3": "Zeptejte se své AI aplikace",
+        "p": "Propojte Daili s Claude nebo jinou AI aplikací a zeptejte se, co je o víkendu, nebo přidejte mléko na seznam, přímo v chatu.",
+        "q": "Co je o víkendu?",
+        "a1": "So 10:00 · Noahovo plavání",
+        "a2": "Ne 15:00 · Emminy narozeniny",
+        "foot": "Z vašeho kalendáře Daili",
+        "more": "Jak propojit"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Můžu si vzít svůj současný kalendář?",
         "a": "Ano. Daili zobrazuje kalendáře, které už v telefonu máte — Google, Outlook, iCloud a další — vedle rodinného kalendáře, jen ve vašem zařízení. Můžete si také přidat státní svátky své země."
+      },
+      {
+        "q": "Funguje Daili s AI aplikacemi, jako je Claude?",
+        "a": "Ano. Propojte Daili s Claude nebo jinou AI aplikací, která podporuje MCP, a zeptejte se, co je dnes, nebo jí řekněte, co má přidat. Vidí jen rodinu nebo skupinu, kterou vyberete — nikdy Rozpočet, Cyklus ani soukromé položky ostatních. <a {aiHelp}>Jak propojit</a>"
       },
       {
         "q": "Kde jsou uložená moje data?",

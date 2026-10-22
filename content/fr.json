@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Fonctionne avec",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets d'écran d'accueil", "TRMNL", "Google Calendar", "Outlook", "Navigateur web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets d'écran d'accueil", "TRMNL", "Google Calendar", "Outlook", "Claude", "Navigateur web"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Et sur chaque téléphone",
         "p": "iPhone et Android, en 25 langues. Mamie parle Português, les enfants français ? Aucun souci."
+      },
+      "ai": {
+        "h3": "Demandez à votre appli d'IA",
+        "p": "Connectez Daili à Claude ou à une autre appli d'IA, puis demandez ce qui est prévu ce week-end ou ajoutez du lait à la liste, directement dans la conversation.",
+        "q": "Qu'est-ce qui est prévu ce week-end ?",
+        "a1": "Sam. 10h00 · Natation de Noah",
+        "a2": "Dim. 15h00 · Anniversaire d'Emma",
+        "foot": "Depuis votre agenda Daili",
+        "more": "Comment connecter"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Puis-je récupérer mon agenda actuel ?",
         "a": "Oui. Daili affiche les agendas déjà présents sur votre téléphone — Google, Outlook, iCloud et d'autres — à côté de l'agenda familial, uniquement sur votre appareil. Vous pouvez aussi ajouter les jours fériés de votre pays."
+      },
+      {
+        "q": "Daili fonctionne-t-il avec des applis d'IA comme Claude ?",
+        "a": "Oui. Connectez Daili à Claude ou à une autre appli d'IA compatible MCP, puis demandez ce qui est prévu aujourd'hui ou dites-lui quoi ajouter. Elle ne voit que la famille ou le groupe que vous choisissez — jamais Budget, Cycle ni les éléments privés des autres. <a {aiHelp}>Comment connecter</a>"
       },
       {
         "q": "Où mes données sont-elles stockées ?",

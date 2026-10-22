@@ -389,7 +389,8 @@ html.lenis,html.lenis body{height:auto}
 @keyframes jump{to{opacity:1;transform:none}}
 
 /* ---------- on every screen ---------- */
-/* Row 1: watch · widgets · browser (2); row 2: tablet (2) · phones (2). */
+/* Row 1: watch · widgets · browser (2); row 2: tablet (2) · phones (2);
+   row 3: AI apps, the full width. */
 .home .screens{padding:130px 0 20px}
 .home .bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:56px}
 .home .bx{position:relative;border-radius:28px;overflow:hidden;height:470px;padding:30px 28px}
@@ -460,6 +461,23 @@ html.lenis,html.lenis body{height:auto}
 .home .phones .phone{width:190px}
 .home .phones .tilt-a{transform:rotate(-6deg)}
 .home .phones .tilt-b{transform:rotate(5deg) translateY(-30px)}
+/* Ask your AI app: a full-width row under the four, the text at the start and
+   a drawn chat at the end — the question in Daili's forest green, the answer
+   a white card like the widgets, its bars in the calendar's colours. */
+.home .bx-ai{grid-column:1/-1;height:auto;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:24px 48px;align-items:center;padding:44px 48px}
+.home .ai-tx{max-width:420px}
+.home .bx-more{display:inline-block;margin-top:18px;font-size:15px;font-weight:600;color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.home .bx-more:hover{text-decoration-thickness:2px}
+.home .bx-more:focus-visible{outline:3px solid var(--forest);outline-offset:3px;border-radius:4px}
+.home .chat{width:100%;max-width:440px;justify-self:end;display:flex;flex-direction:column;gap:12px}
+.home .bx .cb-q{align-self:flex-end;max-width:85%;background:var(--forest);color:#fff;font-size:15px;font-weight:600;line-height:1.35;margin:0;padding:11px 16px;border-radius:20px;border-end-end-radius:6px;overflow-wrap:anywhere}
+.home .cb-a{align-self:flex-start;width:90%;background:#fff;color:var(--ink);border-radius:20px;border-end-start-radius:6px;padding:14px 16px 12px;box-shadow:0 16px 32px -16px rgba(21,39,31,.38),0 1px 3px rgba(21,39,31,.06)}
+.home .bx .cb-ev{display:flex;align-items:center;gap:10px;margin:0;color:var(--ink);font-size:14.5px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.home .bx .cb-ev+.cb-ev{margin-top:8px}
+.home .cb-ev i{flex:none;align-self:stretch;width:3px;min-height:18px;border-radius:2px;background:var(--lake)}
+.home .cb-ev+.cb-ev i{background:var(--berry)}
+.home .bx .cb-foot{display:flex;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;color:var(--ink3)}
+.home .cb-foot svg{flex:none;width:13px;height:13px}
 
 /* ---------- privacy ---------- */
 .home .priv{padding:130px 0 20px}
@@ -592,6 +610,8 @@ html.landing footer{margin-top:40px}
   /* the box takes its content's height, less the tablet's clipped foot */
   .home .bx-tab{height:auto;padding-bottom:0}
   .home .bx-tab .tablet{margin-bottom:-64px}
+  .home .bx-ai{grid-template-columns:1fr;padding:30px 24px 32px}
+  .home .chat{justify-self:start;max-width:480px}
   .home .vault{height:620px;padding:0 20px}
   .home .lock{width:320px;margin:-240px 0 0 -160px}
   .home .mosaic{height:460px;justify-content:flex-start}

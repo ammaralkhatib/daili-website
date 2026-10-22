@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Funciona com",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets na tela inicial", "TRMNL", "Google Calendar", "Outlook", "Navegador"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets na tela inicial", "TRMNL", "Google Calendar", "Outlook", "Claude", "Navegador"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "E em cada celular",
         "p": "iPhone e Android, em 25 idiomas. A vó fala Italiano e as crianças, português? Sem problema."
+      },
+      "ai": {
+        "h3": "Pergunte ao seu app de IA",
+        "p": "Conecte o Daili ao Claude ou a outro app de IA e pergunte o que tem neste fim de semana ou coloque leite na lista, direto no chat.",
+        "q": "O que tem neste fim de semana?",
+        "a1": "Sáb 10h00 · Natação do Noah",
+        "a2": "Dom 15h00 · Aniversário da Emma",
+        "foot": "Do seu calendário do Daili",
+        "more": "Como conectar"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Posso trazer o calendário que já uso?",
         "a": "Sim. O Daili mostra os calendários que já estão no seu celular — Google, Outlook, iCloud e outros — ao lado do calendário da família, só no seu aparelho. Você também pode adicionar os feriados do seu país."
+      },
+      {
+        "q": "O Daili funciona com apps de IA como o Claude?",
+        "a": "Sim. Conecte o Daili ao Claude ou a outro app de IA compatível com MCP e pergunte o que tem hoje ou diga o que adicionar. Ele só vê a família ou o grupo que você escolher — nunca Orçamento, Ciclo nem os itens privados dos outros. <a {aiHelp}>Como conectar</a>"
       },
       {
         "q": "Onde ficam os meus dados?",

@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "함께 쓰는 곳",
-      "items": ["iPhone", "Android", "Apple Watch", "홈 화면 위젯", "TRMNL", "Google Calendar", "Outlook", "웹 브라우저"]
+      "items": ["iPhone", "Android", "Apple Watch", "홈 화면 위젯", "TRMNL", "Google Calendar", "Outlook", "Claude", "웹 브라우저"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "그리고 모든 휴대폰에서",
         "p": "iPhone과 Android, 25개 언어로. 할머니는 한국어, 아이들은 English? 문제없어요."
+      },
+      "ai": {
+        "h3": "AI 앱에 물어보세요",
+        "p": "Daili를 Claude 같은 AI 앱에 연결하면 채팅에서 바로 이번 주말 일정을 묻거나 목록에 우유를 추가할 수 있습니다.",
+        "q": "이번 주말 일정은?",
+        "a1": "토 10:00 · 지훈 수영",
+        "a2": "일 15:00 · 서연 생일",
+        "foot": "Daili 캘린더에서",
+        "more": "연결 방법"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "쓰던 캘린더를 가져올 수 있나요?",
         "a": "네. Daili는 휴대폰에 이미 있는 캘린더(Google, Outlook, iCloud 등)를 가족 캘린더 옆에, 내 기기에서만 보여 줍니다. 우리나라 공휴일도 추가할 수 있습니다."
+      },
+      {
+        "q": "Daili를 Claude 같은 AI 앱에서 쓸 수 있나요?",
+        "a": "네. Daili를 Claude 또는 MCP를 지원하는 다른 AI 앱에 연결하고 오늘 일정을 묻거나 추가할 것을 말하면 됩니다. AI 앱은 선택한 가족이나 그룹만 볼 수 있으며, 가계부, 생리 주기, 다른 사람의 비공개 항목은 절대 볼 수 없습니다. <a {aiHelp}>연결 방법</a>"
       },
       {
         "q": "제 데이터는 어디에 보관되나요?",

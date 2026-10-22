@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Funcționează cu",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "Browser web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Și pe orice telefon",
         "p": "iPhone și Android, în 25 de limbi. Bunica vorbește română, nepoții Italiano? Nicio problemă."
+      },
+      "ai": {
+        "h3": "Întreabă aplicația ta AI",
+        "p": "Conectează Daili la Claude sau la altă aplicație AI și întreabă ce e în weekend sau pune lapte pe listă, direct în chat.",
+        "q": "Ce avem în weekend?",
+        "a1": "Sâm. 10:00 · Înotul lui Noah",
+        "a2": "Dum. 15:00 · Ziua lui Emma",
+        "foot": "Din calendarul tău Daili",
+        "more": "Cum conectezi"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Pot să aduc calendarul pe care îl am deja?",
         "a": "Da. Daili arată calendarele pe care le ai deja pe telefon — Google, Outlook, iCloud și altele — lângă calendarul familiei, doar pe dispozitivul tău. Poți adăuga și sărbătorile legale din țara ta."
+      },
+      {
+        "q": "Funcționează Daili cu aplicații AI precum Claude?",
+        "a": "Da. Conectează Daili la Claude sau la altă aplicație AI care acceptă MCP, apoi întreabă ce e azi sau spune-i ce să adauge. Vede doar familia sau grupul pe care îl alegi — niciodată Buget, Ciclu sau elementele private ale altora. <a {aiHelp}>Cum conectezi</a>"
       },
       {
         "q": "Unde îmi sunt stocate datele?",

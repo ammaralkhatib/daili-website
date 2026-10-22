@@ -650,8 +650,9 @@ for (const loc of LOCALES) {
 //     with its locale's (or the en) screenshot and the "New" badge only
 //     until newUntil, plus the row's counter, arrows and progress bar,
 //     2 floating cards on the calendars card,
-//     3 Daili Plus cards, 4 workflow buttons / screens / toasts, 5 boxes in
-//     "On every screen" and no TRMNL box among them;
+//     3 Daili Plus cards, 4 workflow buttons / screens / toasts, 6 boxes in
+//     "On every screen" (the AI-apps one linking to its help article) and
+//     no TRMNL box among them;
 //   - the rating row shows RATING.value (formatted for the page's locale),
 //     and there is no rating row at all when RATING is null;
 //   - no shutter bars (.shut / .shut-rows) anywhere — removed in round 2;
@@ -774,7 +775,8 @@ for (const loc of LOCALES) {
     if (calCards !== 2) fail(out, `the calendars card has ${calCards} floating cards, expected 2 (Google + Apple)`);
     const screens = sectionAt(html, 'id="screens"');
     const boxes = count(screens, '<article class="bx ');
-    if (boxes !== 5) fail(out, `"On every screen" has ${boxes} boxes, expected 5`);
+    if (boxes !== 6) fail(out, `"On every screen" has ${boxes} boxes, expected 6`);
+    if (!/<article class="bx bx-ai[^]*?<a class="bx-more" href="\/(?:[a-z-]+\/)?help\/anywhere\/ai-apps\/"/.test(screens)) fail(out, '"On every screen" has no AI-apps box linking to help/anywhere/ai-apps/');
     if (/trmnl|class="eink"/i.test(screens)) fail(out, '"On every screen" still has the TRMNL box — it became "On the wall with any tablet"');
     const members = sectionAt(html, 'id="features"');
     const firstSet = (members.match(/<div class="marq-set">([\s\S]*?)<\/div>\n/) || [, ''])[1];

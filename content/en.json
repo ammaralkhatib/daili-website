@@ -149,9 +149,9 @@
       "list": "Groceries · 5 left"
     },
     "works": {
-      "@works": { "description": "Scrolling \"works with\" strip under the hero. label = the small caption. items = short labels, no full stop; product names stay in Latin letters, only \"Home-screen widgets\" and \"Web browser\" are translated." },
+      "@works": { "description": "Scrolling \"works with\" strip under the hero. label = the small caption. items = short labels, no full stop; product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, Claude) stay in Latin letters, only \"Home-screen widgets\" and \"Web browser\" are translated." },
       "label": "Works with",
-      "items": ["iPhone", "Android", "Apple Watch", "Home-screen widgets", "TRMNL", "Google Calendar", "Outlook", "Web browser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Home-screen widgets", "TRMNL", "Google Calendar", "Outlook", "Claude", "Web browser"]
     },
     "members": {
       "@badges": { "description": "Two badges above the members headline. t = bold (≤ 16 chars), s = small line (≤ 24 chars). \"From Deutsch to Türkçe\" keeps the two language names as endonyms." },
@@ -300,7 +300,7 @@
       "shot-budget-split": "Split costs in the Daili app: who owes whom, and Mark as paid"
     },
     "screens": {
-      "@screens": { "description": "\"On every screen\" section: five cards (h3 + p)." },
+      "@screens": { "description": "\"On every screen\" section: six cards (h3 + p)." },
       "h2": "On every screen in your home",
       "sub": "Glance at your wrist, your home screen or the kitchen wall. The same family plan, everywhere.",
       "watch": {
@@ -332,6 +332,16 @@
       "phones": {
         "h3": "And on every phone",
         "p": "iPhone and Android, in 25 languages. Grandma speaks Türkçe, the kids speak English? No problem."
+      },
+      "@ai": { "description": "Card about using Daili from an AI app (the MCP connector, help article anywhere-ai-apps). \"Claude\" stays as written. q/a1/a2/foot = a drawn chat: the user's question, the two lines of the answer (day, time in the locale's format, event; the names are the locale's own Noah and Emma from home.hero.scenes), a small caption. more = the link to the help article, the app's aiAppsHowToTitle where the app has the language." },
+      "ai": {
+        "h3": "Ask your AI app",
+        "p": "Connect Daili to Claude or another AI app, then ask what's on this weekend or add milk to the list, right in the chat.",
+        "q": "What's on this weekend?",
+        "a1": "Sat 10:00 · Noah's swimming",
+        "a2": "Sun 15:00 · Emma's birthday",
+        "foot": "From your Daili calendar",
+        "more": "How to connect"
       }
     },
     "privacy": {
@@ -386,6 +396,10 @@
       {
         "q": "Can I bring my existing calendar?",
         "a": "Yes. Daili shows the calendars already on your phone — Google, Outlook, iCloud and others — next to the family calendar, on your device only. You can also add the public holidays for your country."
+      },
+      {
+        "q": "Does Daili work with AI apps like Claude?",
+        "a": "Yes. Connect Daili to Claude or another AI app that supports MCP, then ask what's on today or tell it what to add. It only sees the family or group you choose — never Budget, Cycle or other people's private items. <a {aiHelp}>How to connect</a>"
       },
       {
         "q": "Where is my data stored?",

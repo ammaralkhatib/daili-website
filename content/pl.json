@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Działa z",
-      "items": ["iPhone", "Android", "Apple Watch", "Widżety na ekranie", "TRMNL", "Google Calendar", "Outlook", "Przeglądarka"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widżety na ekranie", "TRMNL", "Google Calendar", "Outlook", "Claude", "Przeglądarka"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "I na każdym telefonie",
         "p": "iPhone i Android, w 25 językach. Babcia ustawia Polski, a wnuki English? Żaden problem."
+      },
+      "ai": {
+        "h3": "Zapytaj swoją aplikację AI",
+        "p": "Połącz Daili z Claude lub inną aplikacją AI i zapytaj, co jest w ten weekend, albo dopisz mleko do listy, prosto w czacie.",
+        "q": "Co mamy w ten weekend?",
+        "a1": "Sob. 10:00 · Basen Noaha",
+        "a2": "Niedz. 15:00 · Urodziny Emmy",
+        "foot": "Z twojego kalendarza Daili",
+        "more": "Jak połączyć"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Czy mogę przenieść swój obecny kalendarz?",
         "a": "Tak. Daili pokazuje kalendarze, które już masz w telefonie — Google, Outlook, iCloud i inne — obok kalendarza rodzinnego, tylko na twoim urządzeniu. Możesz też dodać święta w swoim kraju."
+      },
+      {
+        "q": "Czy Daili działa z aplikacjami AI, takimi jak Claude?",
+        "a": "Tak. Połącz Daili z Claude lub inną aplikacją AI obsługującą MCP i zapytaj, co jest dziś, albo powiedz, co dodać. Widzi tylko rodzinę lub grupę, którą wybierzesz — nigdy Budżetu, Cyklu ani prywatnych pozycji innych osób. <a {aiHelp}>Jak połączyć</a>"
       },
       {
         "q": "Gdzie są przechowywane moje dane?",

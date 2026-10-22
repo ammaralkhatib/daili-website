@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Bisa dipakai di",
-      "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "Browser web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Dan di setiap ponsel",
         "p": "iPhone dan Android, dalam 25 bahasa. Oma bicara Nederlands, anak-anak Bahasa Indonesia? Tidak masalah."
+      },
+      "ai": {
+        "h3": "Tanya aplikasi AI-mu",
+        "p": "Hubungkan Daili ke Claude atau aplikasi AI lain, lalu tanyakan ada apa akhir pekan ini atau tambahkan susu ke daftar, langsung di chat.",
+        "q": "Ada apa akhir pekan ini?",
+        "a1": "Sab 10.00 · Renang Bayu",
+        "a2": "Min 15.00 · Ulang tahun Putri",
+        "foot": "Dari kalender Daili-mu",
+        "more": "Cara menghubungkan"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Bisa membawa kalender yang sudah kupakai?",
         "a": "Bisa. Daili menampilkan kalender yang sudah ada di ponselmu — Google, Outlook, iCloud, dan lainnya — di samping kalender keluarga, hanya di perangkatmu. Kamu juga bisa menambahkan hari libur nasional negaramu."
+      },
+      {
+        "q": "Apakah Daili bisa dipakai dengan aplikasi AI seperti Claude?",
+        "a": "Bisa. Hubungkan Daili ke Claude atau aplikasi AI lain yang mendukung MCP, lalu tanyakan ada apa hari ini atau minta ia menambahkan sesuatu. Ia hanya melihat keluarga atau grup yang kamu pilih — tidak pernah Anggaran, Siklus, atau item pribadi orang lain. <a {aiHelp}>Cara menghubungkan</a>"
       },
       {
         "q": "Di mana datanya disimpan?",

@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "支持",
-      "items": ["iPhone", "Android", "Apple Watch", "主屏幕小组件", "TRMNL", "Google Calendar", "Outlook", "网页浏览器"]
+      "items": ["iPhone", "Android", "Apple Watch", "主屏幕小组件", "TRMNL", "Google Calendar", "Outlook", "Claude", "网页浏览器"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "每部手机都能用",
         "p": "iPhone 和 Android，支持 25 种语言。奶奶说中文，孩子们说 English？没问题。"
+      },
+      "ai": {
+        "h3": "问问你的 AI 应用",
+        "p": "把 Daili 连接到 Claude 或其他 AI 应用，就能直接在聊天里问这个周末有什么安排，或把牛奶加到清单上。",
+        "q": "这个周末有什么安排？",
+        "a1": "周六 10:00 · 浩然游泳",
+        "a2": "周日 15:00 · 子涵生日",
+        "foot": "来自你的 Daili 日历",
+        "more": "如何连接"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "能把现在用的日历带过来吗？",
         "a": "可以。Daili 会把你手机上已有的日历——Google、Outlook、iCloud 等——显示在家庭日历旁边，而且只在你的设备上显示。你还可以添加所在国家的节假日。"
+      },
+      {
+        "q": "Daili 能和 Claude 这样的 AI 应用一起用吗？",
+        "a": "可以。把 Daili 连接到 Claude 或其他支持 MCP 的 AI 应用，然后问今天有什么安排，或告诉它要添加什么。它只能看到你选择的家庭或群组——永远看不到预算、生理周期或别人的私密项目。<a {aiHelp}>如何连接</a>"
       },
       {
         "q": "我的数据存在哪里？",

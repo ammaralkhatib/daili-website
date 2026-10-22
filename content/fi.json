@@ -129,7 +129,7 @@
     },
     "works": {
       "label": "Toimii näiden kanssa",
-      "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "Selain"]
+      "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "Claude", "Selain"]
     },
     "members": {
       "badges": [
@@ -292,6 +292,15 @@
       "phones": {
         "h3": "Ja jokaisessa puhelimessa",
         "p": "iPhone ja Android, 25 kielellä. Mummi puhuu svenska, lapset suomea? Ei ongelmaa."
+      },
+      "ai": {
+        "h3": "Kysy tekoälysovellukselta",
+        "p": "Yhdistä Daili Claude-sovellukseen tai muuhun tekoälysovellukseen ja kysy, mitä viikonloppuna on, tai lisää maito listalle, suoraan keskustelussa.",
+        "q": "Mitä viikonloppuna on?",
+        "a1": "La 10.00 · Noahin uimakoulu",
+        "a2": "Su 15.00 · Emman syntymäpäivä",
+        "foot": "Daili-kalenteristasi",
+        "more": "Näin yhdistät"
       }
     },
     "privacy": {
@@ -342,6 +351,10 @@
       {
         "q": "Voinko tuoda nykyisen kalenterini?",
         "a": "Voit. Daili näyttää puhelimessasi jo olevat kalenterit — Googlen, Outlookin, iCloudin ja muut — perhekalenterin rinnalla, vain omalla laitteellasi. Voit myös lisätä oman maasi pyhäpäivät."
+      },
+      {
+        "q": "Toimiiko Daili Claude-sovelluksen ja muiden tekoälysovellusten kanssa?",
+        "a": "Toimii. Yhdistä Daili Claude-sovellukseen tai muuhun MCP:tä tukevaan tekoälysovellukseen ja kysy, mitä tänään on, tai kerro, mitä lisätä. Se näkee vain valitsemasi perheen tai ryhmän — ei koskaan Budjettia, Kiertoa tai muiden yksityisiä kohteita. <a {aiHelp}>Näin yhdistät</a>"
       },
       {
         "q": "Missä tietoni säilytetään?",
