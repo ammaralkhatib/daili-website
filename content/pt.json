@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "A seguir",
-      "ev": "Natação",
-      "evs": "16h30 · Noah",
-      "list": "Compras · faltam 5"
-    },
     "works": {
       "label": "Funciona com",
       "items": ["iPhone", "Android", "Apple Watch", "Widgets na tela inicial", "TRMNL", "Google Calendar", "Outlook", "Claude", "Navegador"]
@@ -268,7 +262,7 @@
       "sub": "Uma olhada no pulso, na tela inicial ou na parede da cozinha. O mesmo plano da família, em todo lugar.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "O próximo compromisso e a lista de compras, direto no pulso."
+        "p": "O que vem a seguir, o jantar de hoje e suas listas — marque compras, tarefas e hábitos direto no pulso."
       },
       "widgets": {
         "h3": "Widgets",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Em quais celulares ele funciona?",
-        "a": "No iPhone e no Android, a partir de uma mesma conta de família compartilhada. Tudo sincroniza entre os dois — e com o app web."
+        "a": "No iPhone e no Android, a partir de uma mesma conta de família compartilhada. Tudo sincroniza entre os dois — e com o app web. Há widgets para a tela inicial nos dois, e um app para Apple Watch."
+      },
+      {
+        "q": "Tem app para Apple Watch?",
+        "a": "Tem. Veja o que vem a seguir, o jantar de hoje e o próximo aniversário, marque compras, tarefas e hábitos, e adicione um item de compras ou uma nota rápida por voz. O relógio precisa de um iPhone pareado com o Daili. <a {help:anywhere-watch}>Mais na Ajuda</a>"
       },
       {
         "q": "Meus filhos podem usar?",
         "a": "Podem — é justamente a ideia. Filhos e adolescentes têm o próprio login e veem as próprias tarefas e compromissos. Os pequenos sem e-mail ganham um perfil administrado por um dos pais, que depois pode virar um login de verdade. Pais e mães são administradores e podem apagar um perfil e os dados dele quando quiserem."
+      },
+      {
+        "q": "Como convido minha família?",
+        "a": "Abra Família e toque em Convidar membro. Compartilhe o código de 6 dígitos, o código QR ou o link — cada código deixa uma pessoa entrar na sua família. Crianças sem celular não precisam entrar: adicione-as com Adicionar criança. <a {help:family-invite}>Mais na Ajuda</a>"
+      },
+      {
+        "q": "Posso estar em mais de uma família?",
+        "a": "Pode. Uma conta pode estar em até 5 famílias ou grupos — sua casa, os avós, o clube esportivo ou a turma da escola. Cada um tem o próprio calendário e as próprias listas, e você troca entre eles com um toque. <a {help:family-groups}>Mais na Ajuda</a>"
+      },
+      {
+        "q": "Posso manter coisas privadas?",
+        "a": "Pode. Ative Evento privado num evento, Só eu numa lista ou Tarefa privada numa tarefa, e só você vê. Itens privados nunca aparecem para o resto da família — nem no calendário, nem nas listas, nem no feed de atividades. <a {help:calendar-private}>Mais na Ajuda</a>"
       },
       {
         "q": "Funciona sem internet?",
@@ -353,12 +363,20 @@
         "a": "Sim. O Daili mostra os calendários que já estão no seu celular — Google, Outlook, iCloud e outros — ao lado do calendário da família, só no seu aparelho. Você também pode adicionar os feriados do seu país."
       },
       {
+        "q": "Tem orçamento familiar e acompanhamento do ciclo?",
+        "a": "Tem, e os dois são grátis. Orçamento acompanha os gastos e as contas em comum e divide os custos de forma justa — sem precisar conectar o banco. Ciclo é só para você: fica no seu celular e no backup dele, nunca nos nossos servidores, e ninguém mais da família consegue ver. <a {help:budget-start}>Mais na Ajuda</a>"
+      },
+      {
         "q": "O Daili funciona com apps de IA como o Claude?",
-        "a": "Sim. Conecte o Daili ao Claude ou a outro app de IA compatível com MCP e pergunte o que tem hoje ou diga o que adicionar. Ele só vê a família ou o grupo que você escolher — nunca Orçamento, Ciclo nem os itens privados dos outros. <a {aiHelp}>Como conectar</a>"
+        "a": "Sim. Conecte o Daili ao Claude ou a outro app de IA compatível com MCP e pergunte o que tem hoje ou diga o que adicionar. Ele só vê a família ou o grupo que você escolher — nunca Orçamento, Ciclo nem os itens privados dos outros. <a {help:anywhere-ai-apps}>Como conectar</a>"
       },
       {
         "q": "Onde ficam os meus dados?",
         "a": "Seu calendário, suas listas e os dados da sua família ficam nos nossos servidores na Alemanha (UE). As fotos e os documentos do cofre nunca saem do seu celular. As imagens e gravações das notas também ficam no seu celular, a não ser que você escolha a nuvem Daili (parte do Daili Plus), que também as guarda na Alemanha. Os detalhes estão na <a href=\"/privacy.html\">política de privacidade</a>."
+      },
+      {
+        "q": "Como excluo minha conta?",
+        "a": "No app, abra Configurações, toque no seu nome e depois em Excluir a conta. Você tem 30 dias para mudar de ideia: entre e toque em Recuperar minha conta. Depois disso, sua conta e seus dados são excluídos de vez. Quer uma cópia antes? Toque em Baixar meus dados antes de começar. <a {help:account-delete}>Mais na Ajuda</a>"
       }
     ]
   },

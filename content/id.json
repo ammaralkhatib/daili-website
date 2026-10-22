@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Berikutnya",
-      "ev": "Les renang",
-      "evs": "16.30 · Noah",
-      "list": "Belanja · sisa 5"
-    },
     "works": {
       "label": "Bisa dipakai di",
       "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
@@ -268,7 +262,7 @@
       "sub": "Lirik pergelangan tanganmu, layar utama, atau dinding dapur. Rencana keluarga yang sama, di mana saja.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Acara berikutnya dan daftar belanja, langsung di pergelangan tanganmu."
+        "p": "Apa berikutnya, makan malam nanti, dan daftar-daftarmu — centang belanja, tugas, dan kebiasaan langsung di pergelangan tanganmu."
       },
       "widgets": {
         "h3": "Widget",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Jalan di ponsel apa saja?",
-        "a": "Di iPhone dan Android, dari satu akun keluarga yang sama. Semuanya tersinkron di antara keduanya — dan dengan aplikasi web."
+        "a": "Di iPhone dan Android, dari satu akun keluarga yang sama. Semuanya tersinkron di antara keduanya — dan dengan aplikasi web. Ada widget layar utama di keduanya, dan juga aplikasi Apple Watch."
+      },
+      {
+        "q": "Apakah ada aplikasi Apple Watch?",
+        "a": "Ada. Lihat apa berikutnya, makan malam nanti, dan ulang tahun berikutnya; centang belanja, tugas, dan kebiasaan; dan tambahkan item belanja atau catatan cepat dengan suara. Jamnya perlu dipasangkan dengan iPhone yang sudah terpasang Daili. <a {help:anywhere-watch}>Selengkapnya di Bantuan</a>"
       },
       {
         "q": "Anak-anakku boleh memakainya?",
         "a": "Boleh — justru itu intinya. Anak dan remaja punya akun sendiri dan melihat tugas serta jadwalnya sendiri. Si kecil yang belum punya alamat email dapat profil yang dikelola orang tua, dan nanti bisa dijadikan akun sungguhan. Orang tua adalah admin dan bisa menghapus sebuah profil beserta datanya kapan saja."
+      },
+      {
+        "q": "Bagaimana cara mengundang keluargaku?",
+        "a": "Buka Keluarga dan ketuk Undang anggota. Bagikan kode 6 digit, kode QR, atau tautannya — setiap kode bisa dipakai satu orang untuk bergabung ke keluargamu. Anak yang belum punya ponsel tidak perlu bergabung: tambahkan saja lewat Tambah anak. <a {help:family-invite}>Selengkapnya di Bantuan</a>"
+      },
+      {
+        "q": "Bisakah aku ada di lebih dari satu keluarga?",
+        "a": "Bisa. Satu akun bisa ada di hingga 5 keluarga atau grup — rumahmu, kakek-nenek, klub olahraga, atau kelas sekolah. Masing-masing punya kalender dan daftar sendiri, dan kamu bisa berpindah dengan sekali ketuk. <a {help:family-groups}>Selengkapnya di Bantuan</a>"
+      },
+      {
+        "q": "Bisakah sesuatu kujadikan pribadi?",
+        "a": "Bisa. Nyalakan Acara pribadi untuk acara, Hanya saya untuk daftar, atau Tugas pribadi untuk tugas, dan hanya kamu yang bisa melihatnya. Item pribadi tidak pernah muncul bagi anggota keluarga lain — tidak di kalender, di daftar, maupun di umpan aktivitas. <a {help:calendar-private}>Selengkapnya di Bantuan</a>"
       },
       {
         "q": "Bisa dipakai tanpa internet?",
@@ -353,12 +363,20 @@
         "a": "Bisa. Daili menampilkan kalender yang sudah ada di ponselmu — Google, Outlook, iCloud, dan lainnya — di samping kalender keluarga, hanya di perangkatmu. Kamu juga bisa menambahkan hari libur nasional negaramu."
       },
       {
+        "q": "Apakah ada anggaran keluarga dan pelacak siklus?",
+        "a": "Ada, dan keduanya gratis. Anggaran mencatat pengeluaran dan tagihan bersama serta membagi biaya dengan adil — tanpa perlu menghubungkan bank. Siklus hanya untukmu: datanya tetap di ponselmu dan cadangannya, tidak pernah di server kami, dan tak seorang pun di keluarga bisa melihatnya. <a {help:budget-start}>Selengkapnya di Bantuan</a>"
+      },
+      {
         "q": "Apakah Daili bisa dipakai dengan aplikasi AI seperti Claude?",
-        "a": "Bisa. Hubungkan Daili ke Claude atau aplikasi AI lain yang mendukung MCP, lalu tanyakan ada apa hari ini atau minta ia menambahkan sesuatu. Ia hanya melihat keluarga atau grup yang kamu pilih — tidak pernah Anggaran, Siklus, atau item pribadi orang lain. <a {aiHelp}>Cara menghubungkan</a>"
+        "a": "Bisa. Hubungkan Daili ke Claude atau aplikasi AI lain yang mendukung MCP, lalu tanyakan ada apa hari ini atau minta ia menambahkan sesuatu. Ia hanya melihat keluarga atau grup yang kamu pilih — tidak pernah Anggaran, Siklus, atau item pribadi orang lain. <a {help:anywhere-ai-apps}>Cara menghubungkan</a>"
       },
       {
         "q": "Di mana datanya disimpan?",
         "a": "Kalender, daftar, dan data keluargamu ada di server kami di Jerman (Uni Eropa). Foto dan dokumen di brankas tidak pernah keluar dari ponselmu. Gambar dan rekaman di catatan juga tetap di ponselmu, kecuali kamu memilih Cloud Daili (bagian dari Daili Plus), yang juga menyimpannya di Jerman. Rinciannya ada di <a href=\"/privacy.html\">kebijakan privasi</a>."
+      },
+      {
+        "q": "Bagaimana cara menghapus akunku?",
+        "a": "Di aplikasi, buka Pengaturan, ketuk namamu, lalu Hapus akun. Kamu punya 30 hari untuk berubah pikiran: masuk dan ketuk Pulihkan akun saya. Setelah itu, akun dan datamu dihapus untuk selamanya. Ingin salinannya dulu? Ketuk Unduh data saya sebelum mulai. <a {help:account-delete}>Selengkapnya di Bantuan</a>"
       }
     ]
   },

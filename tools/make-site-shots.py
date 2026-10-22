@@ -6,6 +6,7 @@
     python3 tools/make-site-shots.py --check    # measure, write nothing
     python3 tools/make-site-shots.py --only shot-recipes   # one screen, every locale
     python3 tools/make-site-shots.py --from-help           # HELP_SHOT_SOURCES instead
+    python3 tools/make-site-shots.py --watch               # WATCH_SHOT_SOURCES instead
 
 Reads  ../store-shots/raw/<store-locale>/<01-dashboard…10-recipes>.png
 Writes static/assets/img/shots/<site-locale>/<shot-*>.webp   (640 px wide)
@@ -14,6 +15,11 @@ Writes static/assets/img/shots/<site-locale>/<shot-*>.webp   (640 px wide)
 center's pictures, for screens the store pipeline has no capture of, see
 HELP_SHOT_SOURCES) and needs no store-shots sibling. A locale without the help
 picture is skipped and falls back to shots/en/ like any missing screenshot.
+
+--watch reads ../store-listings/watch-shots/<store-locale>/<1-up-next…>.png
+(the Apple Watch store captures, 416 × 496, see WATCH_SHOT_SOURCES) and writes
+them 320 px wide. A store locale with no watch folder is a problem, like a
+missing store capture.
 
 The output is **committed**. The build must succeed on a machine that has no
 store-shots/ sibling, so this script runs by hand when the captures change and
@@ -43,6 +49,8 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "site.config.mjs"
 RAW = ROOT.parent / "store-shots" / "raw"
 HELP_MEDIA = ROOT / "static" / "help" / "media"
+WATCH_RAW = ROOT.parent / "store-listings" / "watch-shots"
+WATCH_WIDTH = 320      # the watch is 158 px wide on the page; 2× is enough
 OUT = ROOT / "static" / "assets" / "img" / "shots"
 
 WIDTH = 640            # the intrinsic width the site has always used
@@ -95,10 +103,15 @@ def main():
                          "A new screen then does not re-encode the committed ones.")
     ap.add_argument("--from-help", action="store_true",
                     help="read the Help center's pictures (HELP_SHOT_SOURCES), not the store captures")
+    ap.add_argument("--watch", action="store_true",
+                    help="read the Apple Watch captures (WATCH_SHOT_SOURCES), not the phone ones")
     args = ap.parse_args()
+    if args.from_help and args.watch:
+        sys.exit("--from-help and --watch are two different sources; pick one.")
 
     shot_locale = js_map("SHOT_LOCALE")
-    sources = js_map("HELP_SHOT_SOURCES" if args.from_help else "SHOT_SOURCES")
+    sources = js_map("HELP_SHOT_SOURCES" if args.from_help
+                     else "WATCH_SHOT_SOURCES" if args.watch else "SHOT_SOURCES")
     if args.only:
         missing = [s for s in args.only if s not in sources.values()]
         if missing:
@@ -111,13 +124,14 @@ def main():
         sys.exit(f"not in SHOT_LOCALE: {', '.join(unknown)}\n"
                  f"mapped locales: {', '.join(shot_locale)}")
 
-    if not args.from_help and not RAW.is_dir():
-        sys.exit(f"{RAW} does not exist. This script needs the store-shots "
-                 f"sibling checkout; the site build does not.")
+    raw_root = WATCH_RAW if args.watch else RAW
+    if not args.from_help and not raw_root.is_dir():
+        sys.exit(f"{raw_root} does not exist. This script needs that sibling "
+                 f"checkout; the site build does not.")
 
     rows, sizes, problems, skipped = [], set(), [], []
     for loc in wanted:
-        src_dir = HELP_MEDIA / loc if args.from_help else RAW / shot_locale[loc]
+        src_dir = HELP_MEDIA / loc if args.from_help else raw_root / shot_locale[loc]
         if not src_dir.is_dir():
             (skipped if args.from_help else problems).append(f"{loc}: {src_dir} is missing")
             continue
@@ -130,7 +144,8 @@ def main():
                 (skipped if args.from_help else problems).append(f"{loc}: {src} is missing")
                 continue
             with Image.open(src) as im:
-                size = HELP_SIZE if args.from_help else (WIDTH, round(im.height * WIDTH / im.width))
+                w = WATCH_WIDTH if args.watch else WIDTH
+                size = HELP_SIZE if args.from_help else (w, round(im.height * w / im.width))
                 out = flatten(im).resize(size, Image.LANCZOS)
             width, height = size
             sizes.add((width, height))
@@ -170,7 +185,8 @@ def main():
         if len(sizes) > 1:
             print("⚠ the raw captures are not all one aspect ratio; "
                   "IMAGE_SIZES['shot-'] can only carry one.")
-        print("→ site.config.mjs IMAGE_SIZES['shot-'] must say exactly that.")
+        key = "shot-watch-" if args.watch else "shot-"
+        print(f"→ site.config.mjs IMAGE_SIZES['{key}'] must say exactly that.")
 
     if skipped:
         print("\nNo help picture, falls back to shots/en/:\n" + "\n".join(skipped))

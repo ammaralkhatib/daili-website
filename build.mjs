@@ -15,7 +15,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
   BASE_URL, LOCALES, DEFAULT_LOCALE, dirFor, endonyms, RTL, stores, contact,
-  PAGES, imageSize, SHOT_LOCALE, WEB_APP_URL,
+  PAGES, imageSize, SHOT_LOCALE, WATCH_SHOT_SOURCES, WEB_APP_URL,
   MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_SCENES, RATING, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
   MEMBER_TILES_AFTER, HOME_FAMILY, HOME_FEATURES, BUDGET_PER_DAY, BUDGET_CURRENCY, EURO_RATES,
   HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
@@ -271,10 +271,15 @@ function helpLinkAttrs(id, loc) {
   // hreflang only, no lang: the link's words are in the page's language.
   return `href="${helpArticleUrl(a, hl)}"${own ? '' : ` hreflang="${DEFAULT_LOCALE}"`}`;
 }
-/** The home page's link to the AI-apps article: home.screens.ai.more and {aiHelp} in faq.items. */
+/** The home page's link to the AI-apps article (home.screens.ai.more). */
 const AI_APPS_HELP = 'anywhere-ai-apps';
-/** A faq.items answer with {aiHelp} filled by the AI-apps link's attributes. */
-const faqAnswer = (a, loc) => a.replace('{aiHelp}', helpLinkAttrs(AI_APPS_HELP, loc));
+/**
+ * A faq.items answer with every {help:<article id>} filled by that help
+ * article's link attributes (`<a {help:anywhere-watch}>More in Help</a>`), in
+ * the page's language where the help has it. An unknown or not-yet-live id
+ * throws in helpLinkAttrs, so the FAQ never links to a missing page.
+ */
+const faqAnswer = (a, loc) => a.replace(/\{help:([a-z0-9-]+)\}/g, (_, id) => helpLinkAttrs(id, loc));
 const helpPages = [
   {
     ...helpBase,
@@ -648,11 +653,19 @@ function renderHome(loc) {
   // Headline words, one span each, for the intro. A line with no spaces (CJK,
   // Thai) is one word, which is exactly right for those scripts.
   const words = (s) => e(s).split(/\s+/).filter(Boolean).map((w) => `<span class="w">${w}</span>`).join(' ');
-  const watch = (cls) => `<div class="watch${cls ? ` ${cls}` : ''}" aria-hidden="true"><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face">
-        <div class="t1"><span>${e(h('home.watch.upNext'))}</span><span>09:41</span></div>
-        <div class="ev"><b>${e(h('home.watch.ev'))}</b><span>${e(h('home.watch.evs'))}</span></div>
-        <div class="ev2"><i></i>${e(h('home.watch.list'))}</div>
-      </div></div></div>`;
+  // The watch shows the real watch app (2026-10-22/005): the store captures
+  // in this page's language (WATCH_SHOT_SOURCES, shots/<loc>/shot-watch-*).
+  // The hero's shows Up next, still. The bento card's (`cycle`) carries all
+  // five: Up next with a src, the other four with data-src only, so they cost
+  // nothing until home.js loads them as the card comes near and turns
+  // through them. Without JS or with reduced motion, Up next stays.
+  const watchShots = Object.values(WATCH_SHOT_SOURCES);
+  const watch = (cls, { cycle = false, eager = false } = {}) => {
+    const { width, height } = imageSize(watchShots[0]);
+    const img = (name, i) => `<img class="ws" ${i ? 'data-src' : 'src'}="${imgSrc(name, loc)}" alt="" width="${width}" height="${height}"${i || eager ? '' : ' loading="lazy"'} decoding="async">`;
+    const shots = (cycle ? watchShots : watchShots.slice(0, 1)).map(img).join('');
+    return `<div class="watch${cls ? ` ${cls}` : ''}" aria-hidden="true"><div class="band t"></div><div class="band b"></div><div class="case"><span class="crown"></span><div class="face"${cycle ? ' data-watch-cycle' : ''}>${shots}</div></div></div>`;
+  };
   const num = (n, digits = 0) => new Intl.NumberFormat(loc, { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(n);
 
   // ---- hero ----
@@ -830,7 +843,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
             ${W.habits.map((r, i) => `<div class="wh-row"><span class="wh-ring${r.ring ? '' : ' done'}">${r.ring ? e(r.ring) : homeIcon('check', 3)}</span><span class="wh-name">${e(habitCards[i].t)}</span><span class="wh-av" style="background:${r.color}">${e(HOME_FAMILY[r.who].name.slice(0, 1))}</span></div>`).join('')}</div></div>`;
   const { width: ww, height: wh } = imageSize('web-');
   const bento = [
-    `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch')}</article>`,
+    `        <article class="bx g-leaf" data-r><h3>${e(h('home.screens.watch.h3'))}</h3><p>${e(h('home.screens.watch.p'))}</p>${watch('bx-watch', { cycle: true })}</article>`,
     `        <article class="bx g-berry" data-r><h3>${e(h('home.screens.widgets.h3'))}</h3><p>${e(h('home.screens.widgets.p'))}</p>
           <div class="wgrid" aria-hidden="true">${wNext}${wShop}${wHabits}</div></article>`,
     `        <article class="bx span2 g-honey" data-r><h3>${e(h('home.screens.web.h3'))}</h3><p>${e(h('home.screens.web.p'))}</p>
@@ -880,7 +893,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     sparkIcon: homeIcon('spark'),
     globeIcon: homeIcon('globe'),
     heroPhone,
-    heroWatch: watch('hwatch'),
+    heroWatch: watch('hwatch', { eager: true }),
     heroCards, rating, works, badges, membersH2, marquee,
     dayRow, calendarsVis,
     avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,

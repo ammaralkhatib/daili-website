@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Neste",
-      "ev": "Svømming",
-      "evs": "16:30 · Noah",
-      "list": "Innkjøp · 5 igjen"
-    },
     "works": {
       "label": "Fungerer med",
       "items": ["iPhone", "Android", "Apple Watch", "Widgets på startskjermen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Nettleser"]
@@ -268,7 +262,7 @@
       "sub": "Et blikk på håndleddet, startskjermen eller kjøkkenveggen. Samme familieplan, overalt.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Hva som skjer nå, og handlelisten, rett på håndleddet."
+        "p": "Hva som skjer nå, middagen i kveld og listene dine — kryss av innkjøp, oppgaver og vaner rett på håndleddet."
       },
       "widgets": {
         "h3": "Widgets",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Hvilke telefoner virker den på?",
-        "a": "iPhone og Android, fra én og samme felles familiekonto. Alt synkroniseres mellom dem — og med nettappen."
+        "a": "iPhone og Android, fra én og samme felles familiekonto. Alt synkroniseres mellom dem — og med nettappen. Det finnes widgeter til startskjermen på begge, og en app til Apple Watch."
+      },
+      {
+        "q": "Finnes det en app til Apple Watch?",
+        "a": "Ja. Se hva som skjer nå, middagen i kveld og neste bursdag, kryss av innkjøp, oppgaver og vaner, og legg til en vare eller et hurtignotat med stemmen. Klokken trenger en sammenkoblet iPhone med Daili. <a {help:anywhere-watch}>Mer i hjelpen</a>"
       },
       {
         "q": "Kan barna mine bruke den?",
         "a": "Ja — det er hele poenget. Barn og tenåringer får egen innlogging og ser sine egne oppgaver og avtaler. De små uten e-postadresse får en styrt profil som en forelder bestemmer over, og som senere kan bli en ordentlig innlogging. Foreldre er administratorer og kan slette en profil og dataene dens når som helst."
+      },
+      {
+        "q": "Hvordan inviterer jeg familien min?",
+        "a": "Åpne Familie og trykk på Inviter medlem. Del den 6-sifrede koden, QR-koden eller lenken — hver kode lar én person bli med i familien. Barn uten egen telefon trenger ikke å bli med: legg dem til med Legg til barn i stedet. <a {help:family-invite}>Mer i hjelpen</a>"
+      },
+      {
+        "q": "Kan jeg være med i mer enn én familie?",
+        "a": "Ja. Én konto kan være med i opptil 5 familier eller grupper — hjemmet, besteforeldrene, idrettslaget eller skoleklassen. Hver har sin egen kalender og sine egne lister, og du bytter med ett trykk. <a {help:family-groups}>Mer i hjelpen</a>"
+      },
+      {
+        "q": "Kan jeg holde ting private?",
+        "a": "Ja. Slå på Privat hendelse for en hendelse, Bare meg for en liste eller Privat oppgave for en oppgave, så er det bare du som ser det. Private ting vises aldri for resten av familien — verken i kalenderen, i listene eller under Aktivitet. <a {help:calendar-private}>Mer i hjelpen</a>"
       },
       {
         "q": "Virker den uten nett?",
@@ -353,12 +363,20 @@
         "a": "Ja. Daili viser kalenderne som allerede er på telefonen din — Google, Outlook, iCloud og andre — ved siden av familiekalenderen, bare på enheten din. Du kan også legge til helligdagene i landet ditt."
       },
       {
+        "q": "Finnes det et familiebudsjett og en syklusapp?",
+        "a": "Ja, begge gratis. Husholdningsbudsjett holder oversikt over felles utgifter og regninger og fordeler kostnadene rettferdig — uten tilkobling til banken. Syklus er bare for deg: den blir på telefonen din og i sikkerhetskopien av den, aldri på serverne våre, og ingen andre i familien kan se den. <a {help:budget-start}>Mer i hjelpen</a>"
+      },
+      {
         "q": "Fungerer Daili med AI-apper som Claude?",
-        "a": "Ja. Koble Daili til Claude eller en annen AI-app som støtter MCP, og spør hva som skjer i dag, eller si hva den skal legge til. Den ser bare den familien eller gruppen du velger — aldri Husholdningsbudsjett, Syklus eller andres private ting. <a {aiHelp}>Slik kobler du til</a>"
+        "a": "Ja. Koble Daili til Claude eller en annen AI-app som støtter MCP, og spør hva som skjer i dag, eller si hva den skal legge til. Den ser bare den familien eller gruppen du velger — aldri Husholdningsbudsjett, Syklus eller andres private ting. <a {help:anywhere-ai-apps}>Slik kobler du til</a>"
       },
       {
         "q": "Hvor ligger dataene mine?",
         "a": "Kalenderen din, listene dine og familiens data ligger på serverne våre i Tyskland (EU). Bilder og dokumenter i hvelvet forlater aldri telefonen din. Bilder og opptak i notater blir også på telefonen, med mindre du velger Daili-skyen (en del av Daili Plus), som også lagrer dem i Tyskland. Mer i <a href=\"/privacy.html\">personvernerklæringen</a>."
+      },
+      {
+        "q": "Hvordan sletter jeg kontoen min?",
+        "a": "Åpne Innstillinger i appen, trykk på navnet ditt og deretter på Slett konto. Du har 30 dager på deg til å angre: logg inn og trykk på Gjenopprett kontoen min. Etter det er kontoen og dataene dine slettet for godt. Vil du ha en kopi først? Trykk på Last ned dataene mine før du begynner. <a {help:account-delete}>Mer i hjelpen</a>"
       }
     ]
   },

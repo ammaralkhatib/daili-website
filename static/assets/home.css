@@ -63,7 +63,12 @@ html.lenis,html.lenis body{height:auto}
    A rounded-square metal case lit from the top left, a thin dark bezel ring
    round the black screen, one small round side button, and a matte band in
    the brand's dark green-grey that flares into the case at the lugs, with
-   stitching down both edges. Same size (158 px, 0.83 : 1), tilt and place. */
+   stitching down both edges. Same size (158 px), tilt and place.
+   The face is the watch app's own screenshot (2026-10-22/005), so it has the
+   capture's exact 416 : 496 and the case grows round it (≈ 0.86 : 1, was
+   0.83): the old 0.83 case left a 0.81 face, and cover would cut the date
+   off the top. The corner radius is one round corner (18 % of the width =
+   15.1 % of the height). */
 .home .watch{position:absolute;width:158px;inset-inline-start:calc(50% + 70px);top:290px;z-index:4;filter:drop-shadow(0 22px 20px rgba(21,39,31,.26)) drop-shadow(0 5px 6px rgba(21,39,31,.18))}
 .home .watch .band{position:absolute;left:15%;right:15%;height:64%;background:linear-gradient(90deg,#26332e,#34443d 30%,#3a4a43 50%,#34443d 70%,#26332e)}
 .home .watch .band.t{top:-50%;border-radius:18% 18% 0 0/12% 12% 0 0}
@@ -76,16 +81,12 @@ html.lenis,html.lenis body{height:auto}
 .home .watch .band::after{content:"";position:absolute;left:-12%;right:-12%;height:26%;background:inherit}
 .home .watch .band.t::after{bottom:0;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
 .home .watch .band.b::after{top:0;clip-path:polygon(0 0,100% 0,90% 100%,10% 100%)}
-.home .watch .case{position:relative;aspect-ratio:.83;display:flex;border-radius:27%/22.4%;padding:6.5%;background:radial-gradient(130% 110% at 18% 8%,#fdfdfe 0%,#dfe2e6 26%,#b5bac1 58%,#8a9098 100%);box-shadow:inset 1px 1px 1px rgba(255,255,255,.9),inset -2px -3px 5px rgba(60,66,74,.35),0 0 0 1px rgba(62,66,72,.4)}
+.home .watch .case{position:relative;border-radius:27%/22.4%;padding:6.5%;background:radial-gradient(130% 110% at 18% 8%,#fdfdfe 0%,#dfe2e6 26%,#b5bac1 58%,#8a9098 100%);box-shadow:inset 1px 1px 1px rgba(255,255,255,.9),inset -2px -3px 5px rgba(60,66,74,.35),0 0 0 1px rgba(62,66,72,.4)}
 .home .watch .crown{position:absolute;right:-5%;top:28%;width:9%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4f5f7,#aab0b7 60%,#7d838b);box-shadow:0 0 0 .5px rgba(62,66,72,.5)}
-.home .watch .face{flex:1;min-width:0;border-radius:22%/18%;background:#000;box-shadow:0 0 0 3px #23272b,0 0 0 4px rgba(255,255,255,.35);color:#fff;padding:16px 13px 12px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
-.home .watch .face .t1{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#9FD9B8}
-.home .watch .face .t1 span:last-child{color:#fff}
-.home .watch .face .ev{background:#15271F;border-radius:14px;padding:9px 10px;border-inline-start:4px solid #4F86B0}
-.home .watch .face .ev b{display:block;font-size:14px;letter-spacing:-.01em}
-.home .watch .face .ev span{font-size:11.5px;color:#B8C7BF}
-.home .watch .face .ev2{display:flex;align-items:center;gap:7px;font-size:11.5px;color:#B8C7BF;padding:0 2px}
-.home .watch .face .ev2 i{width:8px;height:8px;border-radius:50%;background:var(--leaf);flex:none}
+.home .watch .face{position:relative;aspect-ratio:416/496;border-radius:18%/15.1%;background:#000;box-shadow:0 0 0 3px #23272b,0 0 0 4px rgba(255,255,255,.35);overflow:hidden;isolation:isolate}
+.home .watch .face .ws{position:absolute;inset:0;display:block;width:100%;height:100%}
+/* The bento watch's screens 2–5: home.js shows them in turn. */
+.home .watch .face .ws+.ws{visibility:hidden}
 
 /* ---------- hero ---------- */
 .home .hero{position:relative;padding-top:56px;overflow:hidden}
@@ -395,7 +396,9 @@ html.lenis,html.lenis body{height:auto}
 .home .bx p{font-size:15px;line-height:1.45;color:var(--ink2);margin-top:8px}
 .home .bx.span2{grid-column:span 2}
 .home .bx-low{height:460px}
-.home .bx-watch{inset-inline-start:50%;margin-inline-start:-79px;top:230px;transform:scale(.95)}
+/* 270, not 230 (2026-10-22/005): the card's longer text runs to five lines
+   in de and id, and the top band must stay clear of it in every locale. */
+.home .bx-watch{inset-inline-start:50%;margin-inline-start:-79px;top:270px;transform:scale(.95)}
 /* The home-screen widgets, after the app's light variants (Swift colours:
    ink #1C3B2F, muted #4D685B, faint #5A7568, leaf #18A06A, forest #04613C,
    box border #9DB5A7, mint #E6F7E0, energy track #C9E8BF, weekday #C64B33). */
@@ -561,11 +564,6 @@ html.landing footer{margin-top:40px}
   .home .stage{height:504px;margin-top:30px}
   .home .stage .phone{width:230px;margin-left:-115px}
   .home .hwatch{width:118px;inset-inline-start:calc(50% + 50px);top:250px}
-  .home .watch .face{padding:11px 9px 9px;gap:4px}
-  .home .watch .face .t1{font-size:10px}
-  .home .watch .face .ev{padding:6px 7px;border-radius:10px}
-  .home .watch .face .ev b{font-size:11.5px}
-  .home .watch .face .ev span,.home .watch .face .ev2{font-size:10px}
   .home .fc-in{min-width:0;padding:8px;padding-inline-end:10px;gap:8px}
   .home .fc-tx b{font-size:12.5px}.home .fc-tx span{font-size:11px}
   .home .ico{width:28px;height:28px;border-radius:9px}.home .ico svg{width:15px;height:15px}

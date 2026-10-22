@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Hierna",
-      "ev": "Zwemles",
-      "evs": "16:30 · Noah",
-      "list": "Boodschappen · nog 5"
-    },
     "works": {
       "label": "Werkt met",
       "items": ["iPhone", "Android", "Apple Watch", "Widgets op je beginscherm", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbrowser"]
@@ -268,7 +262,7 @@
       "sub": "Een blik op je pols, je beginscherm of de keukenmuur. Dezelfde gezinsplanning, overal.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Wat er straks is en de boodschappenlijst, gewoon om je pols."
+        "p": "Wat er straks is, het eten van vanavond en je lijsten — vink boodschappen, taken en gewoontes af, gewoon om je pols."
       },
       "widgets": {
         "h3": "Widgets",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Op welke telefoons werkt hij?",
-        "a": "Op iPhone en Android, vanuit één gedeeld gezinsaccount. Alles synchroniseert tussen beide — en met de webapp."
+        "a": "Op iPhone en Android, vanuit één gedeeld gezinsaccount. Alles synchroniseert tussen beide — en met de webapp. Op allebei zijn er widgets voor het beginscherm, en er is een app voor de Apple Watch."
+      },
+      {
+        "q": "Is er een app voor de Apple Watch?",
+        "a": "Ja. Zie wat er straks is, het eten van vanavond en de volgende verjaardag, vink boodschappen, taken en gewoontes af en voeg met je stem een boodschap of een snelle notitie toe. Het horloge heeft een gekoppelde iPhone met Daili nodig. <a {help:anywhere-watch}>Meer in de hulp</a>"
       },
       {
         "q": "Kunnen mijn kinderen hem gebruiken?",
         "a": "Ja — daar is hij juist voor. Kinderen en tieners krijgen een eigen login en zien hun eigen taken en afspraken. De kleintjes zonder e-mailadres krijgen een beheerd profiel dat een ouder bestuurt en dat later een echte login kan worden. Ouders zijn beheerder en kunnen een profiel en de gegevens ervan altijd verwijderen."
+      },
+      {
+        "q": "Hoe nodig ik mijn gezin uit?",
+        "a": "Open Gezin en tik op Lid uitnodigen. Deel de 6-cijferige code, de QR-code of de link — met elke code kan één persoon lid worden van je gezin. Kinderen zonder telefoon hoeven geen lid te worden: voeg ze in plaats daarvan toe met Kind toevoegen. <a {help:family-invite}>Meer in de hulp</a>"
+      },
+      {
+        "q": "Kan ik in meer dan één gezin zitten?",
+        "a": "Ja. Eén account kan in maximaal 5 gezinnen of groepen zitten — je eigen huishouden, opa en oma, de sportclub of de klas. Elk heeft een eigen agenda en eigen lijsten, en je wisselt met één tik. <a {help:family-groups}>Meer in de hulp</a>"
+      },
+      {
+        "q": "Kan ik dingen privé houden?",
+        "a": "Ja. Zet Privé-afspraak aan voor een afspraak, Alleen ik voor een lijst of Privétaak voor een taak, en alleen jij ziet het. Privé-items verschijnen nooit bij de rest van het gezin — niet in de agenda, niet in de lijsten en niet in Activiteit. <a {help:calendar-private}>Meer in de hulp</a>"
       },
       {
         "q": "Werkt hij offline?",
@@ -353,12 +363,20 @@
         "a": "Ja. Daili toont de agenda's die al op je telefoon staan — Google, Outlook, iCloud en andere — naast de gezinsagenda, alleen op jouw apparaat. Je kunt ook de feestdagen van je land toevoegen."
       },
       {
+        "q": "Is er een gezinsbudget en een cyclustracker?",
+        "a": "Ja, allebei gratis. Budget houdt gedeelde uitgaven en rekeningen bij en verdeelt kosten eerlijk — zonder koppeling met je bank. Cyclus is alleen voor jou: het blijft op je telefoon en in de back-up daarvan, nooit op onze servers, en niemand anders in het gezin kan het zien. <a {help:budget-start}>Meer in de hulp</a>"
+      },
+      {
         "q": "Werkt Daili met AI-apps zoals Claude?",
-        "a": "Ja. Koppel Daili aan Claude of een andere AI-app die MCP ondersteunt en vraag wat er vandaag is, of zeg wat erbij moet. Hij ziet alleen het gezin of de groep die je kiest — nooit Budget, Cyclus of privé-items van anderen. <a {aiHelp}>Zo koppel je een app</a>"
+        "a": "Ja. Koppel Daili aan Claude of een andere AI-app die MCP ondersteunt en vraag wat er vandaag is, of zeg wat erbij moet. Hij ziet alleen het gezin of de groep die je kiest — nooit Budget, Cyclus of privé-items van anderen. <a {help:anywhere-ai-apps}>Zo koppel je een app</a>"
       },
       {
         "q": "Waar staan mijn gegevens?",
         "a": "Je agenda, lijsten en gezinsgegevens staan op onze servers in Duitsland (EU). Foto's en documenten in de kluis verlaten je telefoon nooit. Afbeeldingen en opnames bij notities blijven ook op je telefoon, tenzij je voor de Daili-cloud kiest (onderdeel van Daili Plus); die bewaart ze eveneens in Duitsland. Details in de <a href=\"/privacy.html\">privacyverklaring</a>."
+      },
+      {
+        "q": "Hoe verwijder ik mijn account?",
+        "a": "Open in de app Instellingen, tik op je naam en dan op Account verwijderen. Je hebt 30 dagen om je te bedenken: log in en tik op Mijn account herstellen. Daarna zijn je account en je gegevens definitief verwijderd. Eerst een kopie? Tik op Mijn gegevens downloaden voordat je begint. <a {help:account-delete}>Meer in de hulp</a>"
       }
     ]
   },

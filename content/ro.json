@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Urmează",
-      "ev": "Înot",
-      "evs": "16:30 · Noah",
-      "list": "Cumpărături · încă 5"
-    },
     "works": {
       "label": "Funcționează cu",
       "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
@@ -268,7 +262,7 @@
       "sub": "O privire la încheietură, pe ecranul telefonului sau pe peretele din bucătărie. Același plan de familie, peste tot.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Ce urmează și lista de cumpărături, direct la încheietură."
+        "p": "Ce urmează, cina din seara asta și listele tale — bifează cumpărături, sarcini și obiceiuri direct de la încheietură."
       },
       "widgets": {
         "h3": "Widgeturi",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Pe ce telefoane merge?",
-        "a": "Pe iPhone și Android, dintr-un singur cont de familie comun. Totul se sincronizează între ele — și cu aplicația web."
+        "a": "Pe iPhone și Android, dintr-un singur cont de familie comun. Totul se sincronizează între ele — și cu aplicația web. Pe amândouă ai widgeturi pentru ecranul principal, plus o aplicație pentru Apple Watch."
+      },
+      {
+        "q": "Există o aplicație pentru Apple Watch?",
+        "a": "Da. Vezi ce urmează, cina din seara asta și următoarea zi de naștere, bifează cumpărături, sarcini și obiceiuri și adaugă prin voce un articol de cumpărături sau o notiță rapidă. Ceasul are nevoie de un iPhone asociat, cu Daili. <a {help:anywhere-watch}>Mai multe în Ajutor</a>"
       },
       {
         "q": "Pot să o folosească și copiii mei?",
         "a": "Da — tocmai asta e ideea. Copiii și adolescenții primesc propriul cont și își văd propriile sarcini și evenimente. Cei mici, fără adresă de e-mail, primesc un profil gestionat, controlat de un părinte, care poate deveni mai târziu un cont adevărat. Părinții sunt administratori și pot șterge oricând un profil împreună cu datele lui."
+      },
+      {
+        "q": "Cum îmi invit familia?",
+        "a": "Deschide Familie și apasă pe Invită un membru. Trimite codul de 6 cifre, codul QR sau linkul — fiecare cod îi permite unei singure persoane să intre în familia ta. Copiii fără telefon nu trebuie să intre: adaugă-i cu Adaugă un copil. <a {help:family-invite}>Mai multe în Ajutor</a>"
+      },
+      {
+        "q": "Pot face parte din mai multe familii?",
+        "a": "Da. Un cont poate face parte din cel mult 5 familii sau grupuri — casa ta, bunicii, clubul sportiv sau clasa de la școală. Fiecare are propriul calendar și propriile liste, iar trecerea de la una la alta se face cu o singură atingere. <a {help:family-groups}>Mai multe în Ajutor</a>"
+      },
+      {
+        "q": "Pot păstra unele lucruri private?",
+        "a": "Da. Activează Eveniment privat pentru un eveniment, Doar eu pentru o listă sau Sarcină privată pentru o sarcină, și doar tu le vezi. Elementele private nu apar niciodată pentru restul familiei — nici în calendar, nici în liste, nici în fluxul de activitate. <a {help:calendar-private}>Mai multe în Ajutor</a>"
       },
       {
         "q": "Merge fără internet?",
@@ -353,12 +363,20 @@
         "a": "Da. Daili arată calendarele pe care le ai deja pe telefon — Google, Outlook, iCloud și altele — lângă calendarul familiei, doar pe dispozitivul tău. Poți adăuga și sărbătorile legale din țara ta."
       },
       {
+        "q": "Există un buget de familie și o urmărire a ciclului?",
+        "a": "Da, amândouă gratuite. Buget ține evidența cheltuielilor comune și a facturilor și împarte corect costurile — fără conectare la bancă. Ciclu e doar pentru tine: rămâne pe telefonul tău și în backupul lui, niciodată pe serverele noastre, și nimeni altcineva din familie nu îl poate vedea. <a {help:budget-start}>Mai multe în Ajutor</a>"
+      },
+      {
         "q": "Funcționează Daili cu aplicații AI precum Claude?",
-        "a": "Da. Conectează Daili la Claude sau la altă aplicație AI care acceptă MCP, apoi întreabă ce e azi sau spune-i ce să adauge. Vede doar familia sau grupul pe care îl alegi — niciodată Buget, Ciclu sau elementele private ale altora. <a {aiHelp}>Cum conectezi</a>"
+        "a": "Da. Conectează Daili la Claude sau la altă aplicație AI care acceptă MCP, apoi întreabă ce e azi sau spune-i ce să adauge. Vede doar familia sau grupul pe care îl alegi — niciodată Buget, Ciclu sau elementele private ale altora. <a {help:anywhere-ai-apps}>Cum conectezi</a>"
       },
       {
         "q": "Unde îmi sunt stocate datele?",
         "a": "Calendarul, listele și datele familiei stau pe serverele noastre din Germania (UE). Pozele și documentele din seif nu îți părăsesc niciodată telefonul. Imaginile și înregistrările din notițe rămân și ele pe telefon, cu excepția cazului în care alegi cloud-ul Daili (parte din Daili Plus), care le păstrează tot în Germania. Detalii în <a href=\"/privacy.html\">politica de confidențialitate</a>."
+      },
+      {
+        "q": "Cum îmi șterg contul?",
+        "a": "În aplicație, deschide Setări, apasă pe numele tău, apoi pe Șterge contul. Ai 30 de zile să te răzgândești: conectează-te și apasă pe Recuperează-mi contul. După aceea, contul și datele tale sunt șterse definitiv. Vrei mai întâi o copie? Apasă pe Descarcă datele mele înainte să începi. <a {help:account-delete}>Mai multe în Ajutor</a>"
       }
     ]
   },

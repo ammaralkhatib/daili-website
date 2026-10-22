@@ -15,6 +15,8 @@
  *   - /ar/ mirrors: screenshots slide in from the other side and the cards
  *     drift and fly the other way (the marquee's direction is CSS);
  *   - the member count counts up in the page's own number format;
+ *   - the bento card's Apple Watch turns through the watch app's five
+ *     screens like a crown scroll (watchCycle, 2026-10-22/005);
  *   - "Start the day together" is one row of every feature, pinned and moved
  *     sideways by the page scroll on a computer, a swipe row elsewhere
  *     (featureRow, 2026-10-16/005);
@@ -22,6 +24,7 @@
  *     2026-10-16/006). It needs no GSAP: it runs even if the vendor scripts
  *     do not.
  * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still,
+ * the watch on Up next,
  * the feature row a plain swipe row with working arrows, the sheet without
  * its slide.
  */
@@ -51,14 +54,14 @@
   // Late images and the web fonts change the layout under every trigger.
   // Never while the feature row is pinned: a refresh there snaps its scrubbed
   // track to the scroll position, a ~150 px sideways jump (2026-10-22/004);
-  // it waits until the pin is left. A screenshot in a phone has its size
-  // from CSS, so its load changes no layout and needs no refresh at all.
+  // it waits until the pin is left. A screenshot in a phone or a watch has
+  // its size from CSS, so its load changes no layout and needs no refresh.
   var rf = null, pin = null, owed = false;
   var refresh = function () {
     clearTimeout(rf);
     rf = setTimeout(function () { if (pin && pin.isActive) owed = true; else ST.refresh(); }, 150);
   };
-  $$("img").forEach(function (im) { if (!im.complete && !im.closest(".phone .scr")) im.addEventListener("load", refresh, { once: true }); });
+  $$("img").forEach(function (im) { if (!im.complete && !im.closest(".phone .scr, .watch")) im.addEventListener("load", refresh, { once: true }); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
 
   if (RM) { flows(true); featureRow(true); return; }
@@ -69,6 +72,7 @@
   g.from(".hphone", { y: 200, opacity: 0, duration: 1.5, ease: "expo.out", delay: 0.4 });
   g.from(".hwatch", { x: 140 * D, y: 140, rotation: 14 * D, opacity: 0, duration: 1.5, ease: "expo.out", delay: 0.6 });
   heroScenes();
+  watchCycle();
 
   var qr = document.querySelector("[data-qr]");
   if (qr) g.to(qr, { autoAlpha: 0, y: 24, ease: "none", scrollTrigger: { trigger: ".members", start: "top 85%", end: "top 45%", scrub: true } });
@@ -450,6 +454,50 @@
     if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { onScreen = en[0].isIntersecting; sync(); }).observe(hero);
     document.addEventListener("visibilitychange", function () { shown = !document.hidden; sync(); });
     g.delayedCall(1.1, function () { scene(0, true); });
+  }
+
+  // ---------- the bento card's Apple Watch ----------
+  // Up next, Shopping, To-dos, Habits, Quick note, HOLD s each, forever. The
+  // next screen slides up into the face while the last slides out at the
+  // top, short and easing out, like a turn of the crown. Screens 2–5 are
+  // data-src only (build.mjs) and load when the card is two screens away.
+  // Runs only while the card is on screen and the tab visible; a screen that
+  // has not loaded yet is waited for, one that failed is skipped.
+  function watchCycle() {
+    var face = $("[data-watch-cycle]");
+    if (!face) return;
+    var ws = $$(".ws", face), card = face.closest(".bx") || face;
+    if (ws.length < 2) return;
+    var HOLD = 2.5, SLIDE = 0.45;
+    var cur = 0, z = 1, timer = null, onScreen = !("IntersectionObserver" in window), shown = !document.hidden;
+    ST.create({ trigger: card, start: "top 300%", once: true, onEnter: function () {
+      ws.forEach(function (im) { if (im.dataset.src) { im.src = im.dataset.src; im.removeAttribute("data-src"); } });
+    } });
+    var ready = function (im) { return im.complete && im.naturalWidth > 0 && !im.dataset.src; };
+    var failed = function (im) { return im.complete && !im.naturalWidth && !im.dataset.src && im.currentSrc !== ""; };
+    var turn = function () {
+      timer = null;
+      var nx = (cur + 1) % ws.length;
+      while (nx !== cur && failed(ws[nx])) nx = (nx + 1) % ws.length;
+      if (nx === cur) return;
+      if (!ready(ws[nx])) { timer = g.delayedCall(0.4, turn); return; }
+      var a = ws[cur], b = ws[nx];
+      b.style.zIndex = ++z;
+      g.set(b, { visibility: "visible" });
+      g.fromTo(b, { yPercent: 100 }, { yPercent: 0, duration: SLIDE, ease: "power2.out", overwrite: true });
+      g.fromTo(a, { yPercent: 0 }, { yPercent: -100, duration: SLIDE, ease: "power2.out", overwrite: true,
+        onComplete: function () { g.set(a, { visibility: "hidden", yPercent: 0 }); } });
+      cur = nx;
+      sync();
+    };
+    var sync = function () {
+      var run = onScreen && shown;
+      if (run && !timer) timer = g.delayedCall(HOLD, turn);
+      else if (!run && timer) { timer.kill(); timer = null; }
+    };
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { onScreen = en[0].isIntersecting; sync(); }).observe(card);
+    document.addEventListener("visibilitychange", function () { shown = !document.hidden; sync(); });
+    sync();
   }
 
   // ---------- "See it in action": an auto-advancing list with a phone that plays each moment ----------

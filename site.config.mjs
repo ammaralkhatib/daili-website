@@ -1746,10 +1746,26 @@ export const HELP_SHOT_SOURCES = {
   'start-weather': 'shot-weather',
 };
 
+/**
+ * The Apple Watch screens on the home page (2026-10-22/005): raw file in
+ * ../store-listings/watch-shots/<store-locale>/ → site name. Converted by
+ * `python3 tools/make-site-shots.py --watch` to 320 px wide (the watch is
+ * 158 px on the page). The order is the order the bento watch shows them.
+ */
+export const WATCH_SHOT_SOURCES = {
+  '1-up-next': 'shot-watch-upnext',
+  '2-shopping': 'shot-watch-shopping',
+  '3-todos': 'shot-watch-todos',
+  '4-habits': 'shot-watch-habits',
+  '5-quick-note': 'shot-watch-note',
+};
+
 /** Intrinsic pixel sizes, measured from the files. Used for width/height so the
  *  page stops shifting layout on every load. */
 export const IMAGE_SIZES = {
   'shot-': { width: 640, height: 1391 },
+  // The watch screens, 416 × 496 raw (WATCH_SHOT_SOURCES).
+  'shot-watch-': { width: 320, height: 382 },
   'ill-': { width: 840, height: 688 },
   // The web app in a browser window: static/assets/img/web-calendar.webp.
   // 16:10, the aspect the browser frame in the hero and in the "also on your
@@ -1763,6 +1779,7 @@ export const IMAGE_SIZES = {
 };
 
 export const imageSize = (name) => {
+  if (name.startsWith('shot-watch-')) return IMAGE_SIZES['shot-watch-'];
   if (name.startsWith('shot-')) return IMAGE_SIZES['shot-'];
   if (name.startsWith('ill-')) return IMAGE_SIZES['ill-'];
   if (name.startsWith('web-')) return IMAGE_SIZES['web-'];

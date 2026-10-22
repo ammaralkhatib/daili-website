@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Nasleduje",
-      "ev": "Plávanie",
-      "evs": "16:30 · Noah",
-      "list": "Nákupy · zostáva 5"
-    },
     "works": {
       "label": "Funguje s",
       "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploche", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webový prehliadač"]
@@ -268,7 +262,7 @@
       "sub": "Pozri na zápästie, na plochu telefónu alebo na stenu v kuchyni. Rovnaký rodinný plán všade.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Čo príde ďalej aj nákupný zoznam — priamo na zápästí."
+        "p": "Čo príde ďalej, dnešná večera a tvoje zoznamy — odškrtávaj nákupy, úlohy a návyky priamo na zápästí."
       },
       "widgets": {
         "h3": "Widgety",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Na akých telefónoch beží?",
-        "a": "Na iPhone aj Androide, z jedného spoločného rodinného účtu. Všetko sa medzi nimi synchronizuje — aj s webovou aplikáciou."
+        "a": "Na iPhone aj Androide, z jedného spoločného rodinného účtu. Všetko sa medzi nimi synchronizuje — aj s webovou aplikáciou. Na oboch sú widgety na plochu a k tomu aplikácia pre Apple Watch."
+      },
+      {
+        "q": "Existuje aplikácia pre Apple Watch?",
+        "a": "Áno. Uvidíš, čo príde ďalej, dnešnú večeru a najbližšie narodeniny, odškrtneš nákupy, úlohy a návyky a hlasom pridáš položku do nákupu alebo rýchlu poznámku. Hodinky potrebujú spárovaný iPhone s Daili. <a {help:anywhere-watch}>Viac v Pomocníkovi</a>"
       },
       {
         "q": "Môžu ju používať moje deti?",
         "a": "Áno — presne na to je. Deti a tínedžeri dostanú vlastné prihlásenie a vidia svoje vlastné úlohy a termíny. Najmenší bez e-mailovej adresy dostanú spravovaný profil, ktorý riadi rodič a ktorý sa dá neskôr zmeniť na skutočné prihlásenie. Rodičia sú správcovia a môžu profil aj s údajmi kedykoľvek zmazať."
+      },
+      {
+        "q": "Ako pozvem rodinu?",
+        "a": "Otvor Rodina a ťukni na Pozvať člena. Zdieľaj 6-miestny kód, QR kód alebo odkaz — každý kód umožní pripojiť sa k tvojej rodine jednému človeku. Deti bez telefónu sa pripájať nemusia: pridaj ich namiesto toho cez Pridať dieťa. <a {help:family-invite}>Viac v Pomocníkovi</a>"
+      },
+      {
+        "q": "Môžem byť vo viacerých rodinách?",
+        "a": "Áno. Jeden účet môže byť až v 5 rodinách alebo skupinách — tvoj domov, starí rodičia, športový klub či školská trieda. Každá má vlastný kalendár a zoznamy a prepínaš medzi nimi jedným ťuknutím. <a {help:family-groups}>Viac v Pomocníkovi</a>"
+      },
+      {
+        "q": "Môžem si niečo nechať len pre seba?",
+        "a": "Áno. Zapni Súkromná udalosť pri udalosti, Len ja pri zozname alebo Súkromná úloha pri úlohe a uvidíš to len ty. Súkromné položky sa zvyšku rodiny nikdy neukážu — ani v kalendári, ani v zoznamoch, ani v zozname aktivít. <a {help:calendar-private}>Viac v Pomocníkovi</a>"
       },
       {
         "q": "Funguje bez internetu?",
@@ -353,12 +363,20 @@
         "a": "Áno. Daili ukazuje kalendáre, ktoré už máš v telefóne — Google, Outlook, iCloud a ďalšie — vedľa rodinného kalendára, len v tvojom zariadení. Môžeš si pridať aj štátne sviatky svojej krajiny."
       },
       {
+        "q": "Je tu rodinný rozpočet a sledovanie cyklu?",
+        "a": "Áno, oboje zadarmo. Rozpočet sleduje spoločné výdavky a účty a spravodlivo delí náklady — bez prepojenia s bankou. Cyklus je len pre teba: zostáva v tvojom telefóne a jeho zálohe, nikdy na našich serveroch, a nikto iný v rodine ho nevidí. <a {help:budget-start}>Viac v Pomocníkovi</a>"
+      },
+      {
         "q": "Funguje Daili s AI aplikáciami, ako je Claude?",
-        "a": "Áno. Prepoj Daili s Claude alebo inou AI aplikáciou, ktorá podporuje MCP, a opýtaj sa, čo je dnes, alebo jej povedz, čo má pridať. Vidí len rodinu alebo skupinu, ktorú vyberieš — nikdy Rozpočet, Cyklus ani súkromné položky ostatných. <a {aiHelp}>Ako prepojiť</a>"
+        "a": "Áno. Prepoj Daili s Claude alebo inou AI aplikáciou, ktorá podporuje MCP, a opýtaj sa, čo je dnes, alebo jej povedz, čo má pridať. Vidí len rodinu alebo skupinu, ktorú vyberieš — nikdy Rozpočet, Cyklus ani súkromné položky ostatných. <a {help:anywhere-ai-apps}>Ako prepojiť</a>"
       },
       {
         "q": "Kde sú uložené moje údaje?",
         "a": "Kalendár, zoznamy a rodinné údaje ležia na našich serveroch v Nemecku (EÚ). Fotky a dokumenty v trezore tvoj telefón nikdy neopustia. Obrázky a nahrávky v poznámkach zostávajú tiež v telefóne, pokiaľ si nezvolíš cloud Daili (súčasť Daili Plus), ktorý ich ukladá takisto v Nemecku. Podrobnosti v <a href=\"/privacy.html\">zásadách ochrany osobných údajov</a>."
+      },
+      {
+        "q": "Ako vymažem svoj účet?",
+        "a": "V aplikácii otvor Nastavenia, ťukni na svoje meno a potom na Vymazať účet. Na rozmyslenie máš 30 dní: prihlás sa a ťukni na Obnoviť môj účet. Potom sa tvoj účet aj údaje vymažú natrvalo. Chceš si najprv uložiť kópiu? Skôr než začneš, ťukni na Stiahnuť moje údaje. <a {help:account-delete}>Viac v Pomocníkovi</a>"
       }
     ]
   },

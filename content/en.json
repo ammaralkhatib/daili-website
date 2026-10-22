@@ -141,13 +141,6 @@
         }
       ]
     },
-    "watch": {
-      "@watch": { "description": "Tiny texts on the drawn Apple Watch face next to the hero phone (~60 px wide). Keep them as short as the English." },
-      "upNext": "Up next",
-      "ev": "Swimming class",
-      "evs": "16:30 · Noah",
-      "list": "Groceries · 5 left"
-    },
     "works": {
       "@works": { "description": "Scrolling \"works with\" strip under the hero. label = the small caption. items = short labels, no full stop; product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, Claude) stay in Latin letters, only \"Home-screen widgets\" and \"Web browser\" are translated." },
       "label": "Works with",
@@ -305,7 +298,7 @@
       "sub": "Glance at your wrist, your home screen or the kitchen wall. The same family plan, everywhere.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "What's next, and the shopping list, right on your wrist."
+        "p": "What's next, tonight's dinner and your lists — tick off shopping, to-dos and habits right on your wrist."
       },
       "@widgets": { "description": "Drawn home-screen widgets. toBuy, energy and habits are copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetShoppingToBuy, widgetHabitsEnergy, habitsTitle), so the site says what the widget says. {count}, {n}, {max} are numbers filled by the page. groceries = the shopping list's name on the widget chip; items = three grocery items, no full stop." },
       "widgets": {
@@ -383,11 +376,27 @@
       },
       {
         "q": "Which phones does it run on?",
-        "a": "iPhone and Android, from one shared family account. Everything syncs between them — and with the web app."
+        "a": "iPhone and Android, from one shared family account. Everything syncs between them — and with the web app. There are home-screen widgets on both, and an Apple Watch app."
+      },
+      {
+        "q": "Is there an Apple Watch app?",
+        "a": "Yes. See what's next, tonight's dinner and the next birthday, tick off shopping, to-dos and habits, and add a shopping item or a quick note by voice. The watch needs a paired iPhone with Daili. <a {help:anywhere-watch}>More in Help</a>"
       },
       {
         "q": "Can my kids use it?",
         "a": "Yes — that's the point. Kids and teens get their own login and see their own tasks and events. Little ones without an email address get a managed profile a parent controls, which can be upgraded to a real login later. Parents are admins and can remove a profile and its data at any time."
+      },
+      {
+        "q": "How do I invite my family?",
+        "a": "Open Family and tap Invite member. Share the 6-digit code, the QR code or the link — each code lets one person join your family. Kids without a phone don't need to join: add them with Add child instead. <a {help:family-invite}>More in Help</a>"
+      },
+      {
+        "q": "Can I be in more than one family?",
+        "a": "Yes. One account can be in up to 5 families or groups — your home, the grandparents, the sports club or the school class. Each has its own calendar and lists, and you switch in one tap. <a {help:family-groups}>More in Help</a>"
+      },
+      {
+        "q": "Can I keep things private?",
+        "a": "Yes. Switch on Private event for an event, Only me for a list or Private task for a to-do, and only you can see it. Private items never show up for the rest of the family — not in the calendar, the lists or the activity feed. <a {help:calendar-private}>More in Help</a>"
       },
       {
         "q": "Does it work offline?",
@@ -398,12 +407,20 @@
         "a": "Yes. Daili shows the calendars already on your phone — Google, Outlook, iCloud and others — next to the family calendar, on your device only. You can also add the public holidays for your country."
       },
       {
+        "q": "Is there a family budget and a cycle tracker?",
+        "a": "Yes, both free. Budget keeps track of shared spending and bills and splits costs fairly — no bank connection needed. Cycle is just for you: it stays on your phone and its backup, never on our servers, and nobody else in the family can see it. <a {help:budget-start}>More in Help</a>"
+      },
+      {
         "q": "Does Daili work with AI apps like Claude?",
-        "a": "Yes. Connect Daili to Claude or another AI app that supports MCP, then ask what's on today or tell it what to add. It only sees the family or group you choose — never Budget, Cycle or other people's private items. <a {aiHelp}>How to connect</a>"
+        "a": "Yes. Connect Daili to Claude or another AI app that supports MCP, then ask what's on today or tell it what to add. It only sees the family or group you choose — never Budget, Cycle or other people's private items. <a {help:anywhere-ai-apps}>How to connect</a>"
       },
       {
         "q": "Where is my data stored?",
         "a": "Your calendar, lists and family data live on our servers in Germany (EU). Photos and documents in the vault never leave your phone. Note pictures and recordings stay on your phone too, unless you choose Daili cloud (part of Daili Plus), which also stores them in Germany. Details in the <a href=\"/privacy.html\">privacy policy</a>."
+      },
+      {
+        "q": "How do I delete my account?",
+        "a": "In the app, open Settings, tap your name, then Delete account. You have 30 days to change your mind: sign in and tap Restore my account. After that, your account and data are deleted for good. Want a copy first? Tap Download my data before you start. <a {help:account-delete}>More in Help</a>"
       }
     ]
   },

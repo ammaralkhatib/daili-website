@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Härnäst",
-      "ev": "Simskola",
-      "evs": "16.30 · Noah",
-      "list": "Inköp · 5 kvar"
-    },
     "works": {
       "label": "Fungerar med",
       "items": ["iPhone", "Android", "Apple Watch", "Widgets på hemskärmen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbläsare"]
@@ -268,7 +262,7 @@
       "sub": "En blick på handleden, hemskärmen eller köksväggen. Samma familjeplan, överallt.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Vad som händer härnäst, och inköpslistan, direkt på handleden."
+        "p": "Vad som händer härnäst, kvällens middag och dina listor — bocka av inköp, uppgifter och vanor direkt på handleden."
       },
       "widgets": {
         "h3": "Widgets",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Vilka telefoner funkar den på?",
-        "a": "iPhone och Android, från ett och samma delade familjekonto. Allt synkroniseras mellan dem — och med webbappen."
+        "a": "iPhone och Android, från ett och samma delade familjekonto. Allt synkroniseras mellan dem — och med webbappen. Det finns widgetar för hemskärmen på båda, och en app för Apple Watch."
+      },
+      {
+        "q": "Finns det en app för Apple Watch?",
+        "a": "Ja. Se vad som händer härnäst, kvällens middag och nästa födelsedag, bocka av inköp, uppgifter och vanor, och lägg till en vara eller en snabbanteckning med rösten. Klockan behöver en parkopplad iPhone med Daili. <a {help:anywhere-watch}>Mer i hjälpen</a>"
       },
       {
         "q": "Kan mina barn använda den?",
         "a": "Ja — det är hela poängen. Barn och tonåringar får egen inloggning och ser sina egna uppgifter och tider. De små utan e-postadress får en hanterad profil som en förälder styr och som kan bli en riktig inloggning senare. Föräldrar är administratörer och kan ta bort en profil och dess uppgifter när som helst."
+      },
+      {
+        "q": "Hur bjuder jag in min familj?",
+        "a": "Öppna Familj och tryck på Bjud in medlem. Dela den 6-siffriga koden, QR-koden eller länken — varje kod låter en person gå med i familjen. Barn utan egen telefon behöver inte gå med: lägg till dem med Lägg till barn i stället. <a {help:family-invite}>Mer i hjälpen</a>"
+      },
+      {
+        "q": "Kan jag vara med i fler än en familj?",
+        "a": "Ja. Ett konto kan vara med i upp till 5 familjer eller grupper — hemmet, mor- och farföräldrarna, idrottsföreningen eller skolklassen. Var och en har sin egen kalender och sina egna listor, och du byter med ett tryck. <a {help:family-groups}>Mer i hjälpen</a>"
+      },
+      {
+        "q": "Kan jag hålla saker privata?",
+        "a": "Ja. Slå på Privat händelse för en händelse, Bara jag för en lista eller Privat uppgift för en uppgift, så ser bara du den. Privata saker syns aldrig för resten av familjen — inte i kalendern, inte i listorna och inte under Aktivitet. <a {help:calendar-private}>Mer i hjälpen</a>"
       },
       {
         "q": "Funkar den utan nät?",
@@ -353,12 +363,20 @@
         "a": "Ja. Daili visar kalendrarna som redan finns i din telefon — Google, Outlook, iCloud och andra — bredvid familjekalendern, bara på din enhet. Du kan också lägga till helgdagarna i ditt land."
       },
       {
+        "q": "Finns det en familjebudget och en menskalender?",
+        "a": "Ja, båda gratis. Hushållsbudget håller koll på gemensamma utgifter och räkningar och delar kostnader rättvist — utan koppling till banken. Menscykel är bara för dig: den stannar i din telefon och dess säkerhetskopia, aldrig på våra servrar, och ingen annan i familjen kan se den. <a {help:budget-start}>Mer i hjälpen</a>"
+      },
+      {
         "q": "Fungerar Daili med AI-appar som Claude?",
-        "a": "Ja. Anslut Daili till Claude eller en annan AI-app som stöder MCP och fråga vad som händer i dag eller säg vad den ska lägga till. Den ser bara den familj eller grupp du väljer — aldrig Hushållsbudget, Menscykel eller andras privata saker. <a {aiHelp}>Så ansluter du</a>"
+        "a": "Ja. Anslut Daili till Claude eller en annan AI-app som stöder MCP och fråga vad som händer i dag eller säg vad den ska lägga till. Den ser bara den familj eller grupp du väljer — aldrig Hushållsbudget, Menscykel eller andras privata saker. <a {help:anywhere-ai-apps}>Så ansluter du</a>"
       },
       {
         "q": "Var sparas mina uppgifter?",
         "a": "Din kalender, dina listor och familjens uppgifter ligger på våra servrar i Tyskland (EU). Foton och dokument i kassaskåpet lämnar aldrig din telefon. Bilder och inspelningar i anteckningar stannar också i telefonen, om du inte väljer Daili-molnet (ingår i Daili Plus), som också lagrar dem i Tyskland. Mer i <a href=\"/privacy.html\">integritetspolicyn</a>."
+      },
+      {
+        "q": "Hur raderar jag mitt konto?",
+        "a": "Öppna Inställningar i appen, tryck på ditt namn och sedan på Radera konto. Du har 30 dagar på dig att ångra dig: logga in och tryck på Återställ mitt konto. Därefter raderas ditt konto och dina uppgifter för gott. Vill du ha en kopia först? Tryck på Ladda ner mina uppgifter innan du börjar. <a {help:account-delete}>Mer i hjälpen</a>"
       }
     ]
   },

@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Sıradaki",
-      "ev": "Yüzme kursu",
-      "evs": "16.30 · Noah",
-      "list": "Alışveriş · 5 kaldı"
-    },
     "works": {
       "label": "Şunlarla çalışır",
       "items": ["iPhone", "Android", "Apple Watch", "Ana ekran widget'ları", "TRMNL", "Google Calendar", "Outlook", "Claude", "Web tarayıcı"]
@@ -268,7 +262,7 @@
       "sub": "Bileğinize, ana ekranınıza ya da mutfak duvarına bir bakın. Aynı aile planı, her yerde.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Sıradaki etkinlik ve alışveriş listesi, tam bileğinizde."
+        "p": "Sıradaki etkinlik, bu akşamın yemeği ve listeleriniz — alışverişi, görevleri ve alışkanlıkları doğrudan bileğinizden işaretleyin."
       },
       "widgets": {
         "h3": "Widget'lar",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Hangi telefonlarda çalışıyor?",
-        "a": "iPhone ve Android'de, tek bir ortak aile hesabından. Her şey ikisi arasında eşitlenir — web uygulamasıyla da."
+        "a": "iPhone ve Android'de, tek bir ortak aile hesabından. Her şey ikisi arasında eşitlenir — web uygulamasıyla da. İkisinde de ana ekran widget'ları var, bir de Apple Watch uygulaması."
+      },
+      {
+        "q": "Apple Watch uygulaması var mı?",
+        "a": "Evet. Sıradaki etkinliği, bu akşamın yemeğini ve yaklaşan doğum gününü görün; alışverişi, görevleri ve alışkanlıkları işaretleyin, sesle bir alışveriş öğesi ya da hızlı bir not ekleyin. Saatin, Daili yüklü ve eşlenmiş bir iPhone'a ihtiyacı var. <a {help:anywhere-watch}>Yardımda daha fazlası</a>"
       },
       {
         "q": "Çocuklarım kullanabilir mi?",
         "a": "Evet — zaten olay bu. Çocuklar ve gençler kendi girişini alır, kendi görevlerini ve planlarını görür. E-posta adresi olmayan küçükler bir ebeveynin yönettiği, sonradan gerçek bir girişe dönüşebilen yönetilen bir profil edinir. Anne babalar yöneticidir ve bir profili verileriyle birlikte istedikleri zaman silebilir."
+      },
+      {
+        "q": "Ailemi nasıl davet ederim?",
+        "a": "Aile'yi açın ve Üye davet et'e dokunun. 6 haneli kodu, QR kodunu ya da bağlantıyı paylaşın — her kodla bir kişi ailenize katılabilir. Telefonu olmayan çocukların katılması gerekmez: onları Çocuk ekle ile ekleyin. <a {help:family-invite}>Yardımda daha fazlası</a>"
+      },
+      {
+        "q": "Birden fazla ailede olabilir miyim?",
+        "a": "Evet. Bir hesap en fazla 5 aile veya grupta olabilir — eviniz, büyükanne ve büyükbabalar, spor kulübü ya da okul sınıfı. Her birinin kendi takvimi ve listeleri var; aralarında tek dokunuşla geçiş yaparsınız. <a {help:family-groups}>Yardımda daha fazlası</a>"
+      },
+      {
+        "q": "Bazı şeyleri gizli tutabilir miyim?",
+        "a": "Evet. Bir etkinlikte Özel etkinlik, bir listede Yalnızca ben, bir görevde Özel görev seçeneğini açın; onu yalnızca siz görürsünüz. Özel öğeler ailenin geri kalanına asla görünmez — ne takvimde, ne listelerde, ne de etkinlik akışında. <a {help:calendar-private}>Yardımda daha fazlası</a>"
       },
       {
         "q": "İnternetsiz çalışıyor mu?",
@@ -353,12 +363,20 @@
         "a": "Evet. Daili telefonunuzda zaten bulunan takvimleri — Google, Outlook, iCloud ve diğerleri — aile takviminin yanında, yalnızca cihazınızda gösterir. Ülkenizin resmî tatillerini de ekleyebilirsiniz."
       },
       {
+        "q": "Aile bütçesi ve döngü takibi var mı?",
+        "a": "Evet, ikisi de ücretsiz. Bütçe ortak harcamaları ve faturaları takip eder, masrafları adilce böler — banka bağlantısı gerekmez. Döngü yalnızca sizin içindir: telefonunuzda ve onun yedeğinde kalır, asla sunucularımızda değil; ailede başka kimse onu göremez. <a {help:budget-start}>Yardımda daha fazlası</a>"
+      },
+      {
         "q": "Daili, Claude gibi yapay zekâ uygulamalarıyla çalışır mı?",
-        "a": "Evet. Daili'yi Claude'a ya da MCP destekleyen başka bir yapay zekâ uygulamasına bağlayın, sonra bugün ne olduğunu sorun ya da neyi eklemesi gerektiğini söyleyin. Yalnızca seçtiğiniz aileyi veya grubu görür — Bütçe, Döngü ya da başkalarının özel öğeleri ona asla ulaşmaz. <a {aiHelp}>Nasıl bağlanır</a>"
+        "a": "Evet. Daili'yi Claude'a ya da MCP destekleyen başka bir yapay zekâ uygulamasına bağlayın, sonra bugün ne olduğunu sorun ya da neyi eklemesi gerektiğini söyleyin. Yalnızca seçtiğiniz aileyi veya grubu görür — Bütçe, Döngü ya da başkalarının özel öğeleri ona asla ulaşmaz. <a {help:anywhere-ai-apps}>Nasıl bağlanır</a>"
       },
       {
         "q": "Verilerim nerede tutuluyor?",
         "a": "Takviminiz, listeleriniz ve ailenizin verileri Almanya'daki (AB) sunucularımızda. Kasadaki fotoğraflar ve belgeler telefonunuzdan asla çıkmaz. Notlardaki resimler ve kayıtlar da telefonunuzda kalır; Daili bulutunu (Daili Plus'ın bir parçası) seçerseniz onlar da Almanya'da saklanır. Ayrıntılar <a href=\"/privacy.html\">gizlilik politikasında</a>."
+      },
+      {
+        "q": "Hesabımı nasıl silerim?",
+        "a": "Uygulamada Ayarlar'ı açın, adınıza ve ardından Hesabı sil'e dokunun. Fikrinizi değiştirmek için 30 gününüz var: giriş yapın ve Hesabımı geri al'a dokunun. Bu sürenin sonunda hesabınız ve verileriniz kalıcı olarak silinir. Önce bir kopyasını mı istiyorsunuz? Başlamadan önce Verilerimi indir'e dokunun. <a {help:account-delete}>Yardımda daha fazlası</a>"
       }
     ]
   },

@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WATCH_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -608,8 +608,9 @@ for (const f of htmlFiles) {
 // English without a word. (Since the 2026-09-28 home page not every one of the
 // nine is on the page: shot-family is not.)
 // The help-picture screens (HELP_SHOT_SOURCES, 2026-10-16/005) count as own
-// screenshots too: every mapped locale has its help picture.
-const OWN_SHOTS = [...Object.values(SHOT_SOURCES), ...Object.values(HELP_SHOT_SOURCES)];
+// screenshots too: every mapped locale has its help picture. So do the watch
+// screens (WATCH_SHOT_SOURCES, 2026-10-22/005; data-src counts as shown).
+const OWN_SHOTS = [...Object.values(SHOT_SOURCES), ...Object.values(HELP_SHOT_SOURCES), ...Object.values(WATCH_SHOT_SOURCES)];
 for (const loc of LOCALES) {
   const file = path.join(DIST, dirFor(loc).slice(1), 'index.html');
   if (!fs.existsSync(file)) continue;            // section 1 already reported it

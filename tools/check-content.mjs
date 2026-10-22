@@ -53,7 +53,8 @@ function flatten(obj, prefix = '', out = {}) {
 }
 
 const tagsOf = (s) => (String(s).match(/<\s*([a-z][a-z0-9]*)/gi) || []).map((t) => t.replace(/[<\s]/g, '').toLowerCase()).sort();
-const placeholdersOf = (s) => [...new Set(String(s).match(/\{[a-zA-Z_][a-zA-Z0-9_]*\}/g) || [])].sort();
+// {name} fills a value; {help:<article id>} a help link (faq.items, 2026-10-22/005).
+const placeholdersOf = (s) => [...new Set(String(s).match(/\{(?:[a-zA-Z_][a-zA-Z0-9_]*|help:[a-z0-9-]+)\}/g) || [])].sort();
 
 const load = (loc) => {
   const f = path.join(ROOT, 'content', `${loc}.json`);

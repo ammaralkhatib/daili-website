@@ -121,12 +121,6 @@
         }
       ]
     },
-    "watch": {
-      "upNext": "Seuraavaksi",
-      "ev": "Uimakoulu",
-      "evs": "16.30 · Noah",
-      "list": "Ostokset · 5 jäljellä"
-    },
     "works": {
       "label": "Toimii näiden kanssa",
       "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "Claude", "Selain"]
@@ -268,7 +262,7 @@
       "sub": "Vilkaise rannetta, aloitusnäyttöä tai keittiön seinää. Sama perheen suunnitelma kaikkialla.",
       "watch": {
         "h3": "Apple Watch",
-        "p": "Mitä seuraavaksi, ja ostoslista, suoraan ranteessa."
+        "p": "Mitä seuraavaksi, illan ruoka ja listasi — ruksaa ostokset, tehtävät ja tavat suoraan ranteesta."
       },
       "widgets": {
         "h3": "Widgetit",
@@ -338,11 +332,27 @@
       },
       {
         "q": "Millä puhelimilla se toimii?",
-        "a": "iPhonella ja Androidilla, yhdestä ja samasta jaetusta perhetilistä. Kaikki synkronoituu niiden välillä — ja verkkosovelluksen kanssa."
+        "a": "iPhonella ja Androidilla, yhdestä ja samasta jaetusta perhetilistä. Kaikki synkronoituu niiden välillä — ja verkkosovelluksen kanssa. Molemmissa on kotinäytön widgetit, ja lisäksi on Apple Watch -sovellus."
+      },
+      {
+        "q": "Onko Apple Watchille sovellus?",
+        "a": "On. Näet, mitä on seuraavaksi, illan ruoan ja seuraavan syntymäpäivän, ruksaat ostokset, tehtävät ja tavat sekä lisäät puheella ostoksen tai pikamuistiinpanon. Kello tarvitsee paritetun iPhonen, jossa on Daili. <a {help:anywhere-watch}>Lisää ohjeissa</a>"
       },
       {
         "q": "Voivatko lapseni käyttää sitä?",
         "a": "Kyllä — juuri siitä on kyse. Lapset ja teinit saavat omat tunnukset ja näkevät omat tehtävänsä ja menonsa. Pienimmät ilman sähköpostiosoitetta saavat hallitun profiilin, jota vanhempi ohjaa ja josta voi myöhemmin tulla oikeat tunnukset. Vanhemmat ovat ylläpitäjiä ja voivat poistaa profiilin ja sen tiedot milloin tahansa."
+      },
+      {
+        "q": "Miten kutsun perheeni?",
+        "a": "Avaa Perhe ja napauta Kutsu jäsen. Jaa 6-numeroinen koodi, QR-koodi tai linkki — kullakin koodilla yksi henkilö voi liittyä perheeseesi. Lasten, joilla ei ole puhelinta, ei tarvitse liittyä: lisää heidät sen sijaan kohdasta Lisää lapsi. <a {help:family-invite}>Lisää ohjeissa</a>"
+      },
+      {
+        "q": "Voinko kuulua useampaan perheeseen?",
+        "a": "Voit. Yksi tili voi kuulua jopa 5 perheeseen tai ryhmään — oma koti, isovanhemmat, urheiluseura tai koululuokka. Jokaisella on oma kalenteri ja omat listat, ja vaihdat niiden välillä yhdellä napautuksella. <a {help:family-groups}>Lisää ohjeissa</a>"
+      },
+      {
+        "q": "Voinko pitää asioita yksityisinä?",
+        "a": "Voit. Ota käyttöön Yksityinen tapahtuma tapahtumalle, Vain minä listalle tai Yksityinen tehtävä tehtävälle, niin vain sinä näet sen. Yksityiset kohteet eivät koskaan näy muulle perheelle — eivät kalenterissa, listoissa eivätkä toimintalistassa. <a {help:calendar-private}>Lisää ohjeissa</a>"
       },
       {
         "q": "Toimiiko se ilman verkkoa?",
@@ -353,12 +363,20 @@
         "a": "Voit. Daili näyttää puhelimessasi jo olevat kalenterit — Googlen, Outlookin, iCloudin ja muut — perhekalenterin rinnalla, vain omalla laitteellasi. Voit myös lisätä oman maasi pyhäpäivät."
       },
       {
+        "q": "Onko perheen budjetti ja kierron seuranta?",
+        "a": "On, ja molemmat ilmaisia. Budjetti pitää kirjaa yhteisistä menoista ja laskuista ja jakaa kulut reilusti — ilman pankkiyhteyttä. Kierto on vain sinulle: se pysyy puhelimessasi ja sen varmuuskopiossa, ei koskaan palvelimillamme, eikä kukaan muu perheessä näe sitä. <a {help:budget-start}>Lisää ohjeissa</a>"
+      },
+      {
         "q": "Toimiiko Daili Claude-sovelluksen ja muiden tekoälysovellusten kanssa?",
-        "a": "Toimii. Yhdistä Daili Claude-sovellukseen tai muuhun MCP:tä tukevaan tekoälysovellukseen ja kysy, mitä tänään on, tai kerro, mitä lisätä. Se näkee vain valitsemasi perheen tai ryhmän — ei koskaan Budjettia, Kiertoa tai muiden yksityisiä kohteita. <a {aiHelp}>Näin yhdistät</a>"
+        "a": "Toimii. Yhdistä Daili Claude-sovellukseen tai muuhun MCP:tä tukevaan tekoälysovellukseen ja kysy, mitä tänään on, tai kerro, mitä lisätä. Se näkee vain valitsemasi perheen tai ryhmän — ei koskaan Budjettia, Kiertoa tai muiden yksityisiä kohteita. <a {help:anywhere-ai-apps}>Näin yhdistät</a>"
       },
       {
         "q": "Missä tietoni säilytetään?",
         "a": "Kalenterisi, listasi ja perheen tiedot ovat palvelimillamme Saksassa (EU). Holvin kuvat ja asiakirjat eivät poistu puhelimestasi koskaan. Myös muistiinpanojen kuvat ja tallenteet pysyvät puhelimessasi, ellet valitse Daili-pilveä (osa Daili Plussaa), joka säilyttää nekin Saksassa. Tarkemmin <a href=\"/privacy.html\">tietosuojaselosteessa</a>."
+      },
+      {
+        "q": "Miten poistan tilini?",
+        "a": "Avaa sovelluksessa Asetukset, napauta nimeäsi ja sitten Poista tili. Sinulla on 30 päivää aikaa muuttaa mielesi: kirjaudu sisään ja napauta Palauta tilini. Sen jälkeen tilisi ja tietosi poistetaan lopullisesti. Haluatko ensin kopion? Napauta Lataa omat tietoni ennen kuin aloitat. <a {help:account-delete}>Lisää ohjeissa</a>"
       }
     ]
   },
