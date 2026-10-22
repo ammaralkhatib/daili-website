@@ -2,15 +2,15 @@
 id: account-plus
 title: Daili Plus: więcej akcji AI i Chmura Daili
 summary: Jeden roczny plan dla całej rodziny: 30 akcji AI miesięcznie i 5 GB w usłudze Chmura Daili. Cała reszta pozostaje darmowa.
-keywords: daili plus, plus, subskrypcja, cena, akcje ai, chmura, 5 gb, anulowanie, przywróć zakupy, founder, roczny, ulepszenie
-translatedFrom: 2026-10-06
+keywords: ile, cennik, opłata, płatny, zapłacić, premium, kupić, ulepszenie, pieniądze, subskrybować, odnowić, drogo
+translatedFrom: 2026-10-22
 ---
 Każda rodzina dostaje co miesiąc 3 akcje AI za darmo. Daili Plus daje 30, do podziału na całą rodzinę, i 5 GB w usłudze Chmura Daili. Miesiące to miesiące kalendarzowe.
 
 ![Panel Daili Plus: co dostajesz, cena roczna i przycisk Kup Plus.](plus-sheet)
 
 1. Otwórz **Ustawienia** i dotknij **Daili Plus**. Panel otwiera się też, gdy skończą się darmowe akcje na dany miesiąc.
-2. Dotknij **Kup Plus**. Płacisz raz w roku, w walucie swojego sklepu. Bez okresu próbnego.
+2. Dotknij **Kup Plus**. Plus kosztuje €9.99 rocznie w strefie euro; aplikacja pokaże cenę w walucie twojego sklepu. Bez okresu próbnego.
 3. Na nowym telefonie dotknij **Przywróć zakupy**.
 
 Plus należy do rodziny, która jest otwarta w chwili zakupu; jedna subskrypcja na konto w sklepie. W ustawieniach widać **Aktywny** albo **Kupione przez członka rodziny** oraz pozostałe akcje AI.

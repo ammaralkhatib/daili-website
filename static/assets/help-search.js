@@ -8,7 +8,9 @@
  * keywords, topic or text. In the languages written without spaces between
  * words (ja, ko, zh-Hans, zh-Hant, th: help-lib.mjs CHAR_LOCALES) there are no
  * words to split on, so there the whole query, spaces dropped, may also match
- * anywhere in the text with its spaces dropped. Accents never matter. Results
+ * anywhere in the text with its spaces dropped. Accents never matter. When
+ * nothing is found, the words are cut short and tried once more (elsewhere,
+ * not in those five). Results
  * are built with textContent, never innerHTML. Without this file the page
  * still lists every topic.
  *
@@ -133,18 +135,13 @@
     missText = null;
   }
 
-  function search() {
-    var words = norm(input.value).split(/\s+/).filter(Boolean);
-    list.textContent = "";
-    clearTimeout(missTimer);
-    missText = null;
-    if (!words.length) { box.hidden = true; return; }
+  // Every word has to appear; a match in the title first, then the page's own order.
+  function find(words) {
     var whole = squash(words.join(""));
     var hits = items.filter(function (it) {
       if (NO_SPACES && it.hay_.indexOf(whole) >= 0) return true;
       return words.every(function (w) { return it.hay.indexOf(w) >= 0; });
     });
-    // A match in the title first, then the page's own order.
     var inTitle = function (it) {
       if (NO_SPACES && squash(it.title_).indexOf(whole) >= 0) return true;
       return words.some(function (w) { return it.title_.indexOf(w) >= 0; });
@@ -154,6 +151,25 @@
       var ty = inTitle(y) ? 0 : 1;
       return tx - ty || items.indexOf(x) - items.indexOf(y);
     });
+    return hits;
+  }
+
+  // Found nothing: once more with the longer words cut short, so "pricing"
+  // finds "price" and "invites" finds "invite". A word of 5 or more characters
+  // keeps its first max(4, length − 3); shorter words stay. The app's search
+  // uses the same rule. Not where words are written without spaces.
+  function cut(w) {
+    return w.length >= 5 ? w.slice(0, Math.max(4, w.length - 3)) : w;
+  }
+
+  function search() {
+    var words = norm(input.value).split(/\s+/).filter(Boolean);
+    list.textContent = "";
+    clearTimeout(missTimer);
+    missText = null;
+    if (!words.length) { box.hidden = true; return; }
+    var hits = find(words);
+    if (!hits.length && !NO_SPACES) hits = find(words.map(cut));
     hits.forEach(function (it) { list.appendChild(row(it)); });
     none.hidden = hits.length > 0;
     box.hidden = false;

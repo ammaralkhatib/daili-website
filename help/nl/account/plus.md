@@ -2,15 +2,15 @@
 id: account-plus
 title: Daili Plus: meer AI-acties en Daili-cloud
 summary: Eén jaarabonnement voor het hele gezin: 30 AI-acties per maand en 5 GB Daili-cloud. Al het andere blijft gratis.
-keywords: daili plus, plus, abonnement, prijs, ai-acties, cloud, 5 gb, opzeggen, aankopen herstellen, founder, jaarabonnement, upgraden
-translatedFrom: 2026-10-06
+keywords: aanschaffen, kosten, prijzen, tarief, betalen, betaald, premium, upgraden, geld, abonneren, verlengen, duur
+translatedFrom: 2026-10-22
 ---
 Elk gezin krijgt 3 AI-acties per maand gratis. Daili Plus geeft er 30, gedeeld door het hele gezin, en 5 GB Daili-cloud. Maanden zijn kalendermaanden.
 
 ![Het venster Daili Plus: wat je krijgt, de jaarprijs en de knop Plus nemen.](plus-sheet)
 
 1. Open **Instellingen** en tik op **Daili Plus**. Het venster opent ook als de gratis acties van de maand op zijn.
-2. Tik op **Plus nemen**. Je betaalt per jaar, in de valuta van je store. Geen proefperiode.
+2. Tik op **Plus nemen**. Plus kost €9.99 per jaar in de eurozone; de app toont de prijs in de valuta van je store. Geen proefperiode.
 3. Tik op een nieuwe telefoon op **Aankopen herstellen**.
 
 Plus hoort bij het gezin dat open is als je koopt; één abonnement per store-account. In de instellingen staat **Actief** of **Gekocht door een gezinslid**, en hoeveel AI-acties er nog over zijn.

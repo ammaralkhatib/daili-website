@@ -2,15 +2,15 @@
 id: account-plus
 title: Daili Plus: daha fazla yapay zekâ işlemi ve Daili bulutu
 summary: Tüm aile için tek yıllık plan: ayda 30 yapay zekâ işlemi ve 5 GB Daili bulutu. Geri kalan her şey ücretsiz kalır.
-keywords: daili plus, plus, abonelik, fiyat, yapay zekâ işlemleri, bulut, 5 gb, iptal, satın alımları geri yükle, founder, yıllık, yükselt
-translatedFrom: 2026-10-06
+keywords: kaç para, aidat, maliyet, ödeme, premium, yükselt, yenileme, pahalı, fatura, fiyatlar, üyelik, satın almak
+translatedFrom: 2026-10-22
 ---
 Her aile ayda 3 ücretsiz yapay zekâ işlemi alır. Daili Plus, tüm ailenin ortak kullandığı 30 işlem ve 5 GB Daili bulutu verir. Aylar takvim ayıdır.
 
 ![Daili Plus paneli: neler aldığın, yıllık fiyat ve Plus'ı al düğmesi.](plus-sheet)
 
 1. **Ayarlar** sayfasını aç ve **Daili Plus** satırına dokun. Ayın ücretsiz işlemleri bitince de bu panel açılır.
-2. **Plus'ı al** düğmesine dokun. Mağazanın para biriminde, yıllık ödersin. Deneme süresi yok.
+2. **Plus'ı al** düğmesine dokun. Plus euro bölgesinde yıllık €9.99; uygulama fiyatı mağazanın para biriminde gösterir. Deneme süresi yok.
 3. Yeni bir telefonda **Satın alımları geri yükle** seçeneğine dokun.
 
 Plus, satın alırken açık olan aileye aittir; her mağaza hesabı için tek abonelik. Ayarlar'da **Etkin** ya da **Bir aile üyesi satın aldı** yazısı ve kalan yapay zekâ işlemleri görünür.
