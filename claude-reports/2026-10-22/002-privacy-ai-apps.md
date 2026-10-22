@@ -1,30 +1,47 @@
 # 2026-10-22 002 — Privacy: AI apps you connect
 
-**Status: blocked** — one sentence of the prescribed text is not true for the code. No legal file and no `tools/check-legal.mjs` change made.
+**Status: done** (re-run; replaces the earlier blocked report).
 
-## Untrue sentence (stopped on)
-1a / 2a: "…or in the web app under Profile" / „oder in der Web-App unter Profil“.
-The web app has no Connected AI apps card: `../daili-web/src` has no AI-apps/MCP/connections strings or UI, and `daili-web` prompt `2026-10-22/001-connected-ai-apps-card.md` is still untracked and not run (no report, no commit in `git log --all`). Today you can't disconnect an AI app in the web app. The 001 help report found the same thing ("The web card itself is not built yet").
+## Preconditions
+- daili-web `1b5e1b6 feat(profile): Connected AI apps card` is present.
+- API `21f38f8 fix(mcp): never pass Google- or Outlook-synced events to AI apps` is present.
 
-Options: (a) run daili-web 001 first, then re-run this prompt unchanged; or (b) Planning Claude removes the web clause from 1a/2a (and the help article's "(web: **Profile & settings**)").
+## Files × locales
+- 28 bodies: `legal/privacy.en.html`, `legal/datenschutz.de.html` (there is no `privacy.de.html`), and 26 translations (ar bg cs da el es fi fr hi id it ja ko nb nl pl pt ro ru sk sv th tr uk zh-Hans zh-Hant). Each body gets:
+  - 1a `<p id="ai-apps">` after the Wall display paragraph (§4)
+  - 1b `<p id="google-ai-apps">` after the Google sharing list (§5)
+  - 1c a closing sentence on the §7 paragraph
+  - the date set to 22 Oct 2026, localised
+- EN and DE are word for word from the prompt. The translations come from the English, in each file's register, and each file keeps its translation note.
+- Small choices:
+  - ja, zh-Hans, zh-Hant: no leading space before 1c, because CJK sentences there run on without spaces.
+  - ar: uses ← for the UI path, as the Arabic file already does for every menu path.
+  - Every locale translates "providing the service you asked for" literally, not as the file's usual "performance of the contract".
 
-## Label check (for the re-run)
-- App: `aiAppsTitle` = "Connected AI apps" / „Verbundene KI-Apps“, `settingsTitle` = "Settings" / „Einstellungen“ — match the text. The screen (`2f75b116 feat(settings): Connected AI apps`) is on app `main` but **not** in tag `v1.11.0+17` yet. That's fine for a policy, but worth knowing.
-- Web: the page title is "Profile & settings" / „Profil & Einstellungen“ (`profile.title`), not "Profile" / „Profil“. Use those words once the card ships.
+## Labels checked
+- App ARB: `aiAppsTitle` = Connected AI apps / Verbundene KI-Apps, and `settingsTitle` = Settings / Einstellungen. These match the prompt text.
+- Web: `profile.title` = Profile & settings / Profil & Einstellungen. This also matches.
+- The other locales use the label from their own ARB and web file. ar, hi and ru have none, so those labels are natural translations.
 
-## Facts verified (all true)
-- Precondition: API `21f38f8 fix(mcp): never pass Google- or Outlook-synced events to AI apps` is present.
-- Tools `app/Mcp/Tools/*`: 15 tools (read + add + check). None edit or delete.
-- Sign-in page loads Firebase from `www.gstatic.com/firebasejs/10.12.2/`.
-- Export: `ExportUserDataJob::aiConnections` → client name, family, created/last used/expires, revoked.
-- Revocation: `McpConnections::revokeForMember/Family/User`. Hard delete: `AccountPurger` → `mcpConnections->deleteForUser`.
-- No scheduled Passport token purge in `routes/console.php`, so "we keep it until you delete your account" stays.
+## Untrue sentences
+None found. The facts were re-checked:
+- 15 MCP tools, none of which edit or delete.
+- Firebase is loaded from gstatic.
+- `ai_connections` is in the export.
+- Connections are revoked by the revocation hooks and deleted by `AccountPurger`.
+- There is no scheduled Passport token purge, so "we keep it until you delete your account" stays.
 
-## Guard proof / build
-Not run (stopped before editing).
+## Guard
+`tools/check-legal.mjs` now requires `id="ai-apps"` and `id="google-ai-apps"` in every privacy body. To prove it can fail, I renamed the id in `privacy.ja.html`:
+`1 legal error(s): legal/privacy.ja.html does not contain id="google-ai-apps" — AI apps you connect (MCP) are in every locale …` (exit 1). After restoring the id: `legal OK · 2 document(s) × 28 locale(s)`.
+
+## Build
+- `build OK · 3233 pages · 3203 in hreflang clusters`
+- `detector OK · 32 cases · 28 locale(s) built`
+- Spot-checked `dist/privacy.html`, `dist/datenschutz.html` and `dist/ja/privacy.html`: both ids are present and the date is 22 October 2026.
 
 ## Commit
-Only this report and the prompt file, by pathspec. The untracked `claude-prompts/2026-10-21/`, `claude-prompts/MARKETING-WEEKLY.md` and `static/assets/img/photos/` are left alone.
+Committed by pathspec; the untracked files that are not mine were left alone. Pushed; not deployed. The SHA is in `git log`, under `docs(legal): privacy — AI apps you connect`.
 
 ## Help impact
-None from this prompt. The shipped help article `anywhere-ai-apps` has the same web claim ("web: Profile & settings"). Fix it when the web card ships or if option (b) is chosen.
+None.

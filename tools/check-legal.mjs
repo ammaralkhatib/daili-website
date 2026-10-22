@@ -110,6 +110,15 @@ const V110_WHY = 'weather, Budget and Cycle (app 1.10.0) are in every locale —
 const V111_MUST_CONTAIN = { terms: [], privacy: ['id="activity"', 'id="web-places"', 'Apple Maps'] };
 const V111_WHY = 'the daily activity count and web place search (app 1.11.0) are in every locale — see claude-prompts/2026-10-16/001';
 
+/**
+ * AI apps connected over MCP (api.daili.app/mcp): what they can read and add,
+ * what never reaches them, what we store — and, for Google's reviewer, that
+ * Google Calendar data never reaches them. Both anchors are on <p> tags,
+ * invisible to the <h2> id comparison below.
+ */
+const MCP_MUST_CONTAIN = { terms: [], privacy: ['id="ai-apps"', 'id="google-ai-apps"'] };
+const MCP_WHY = 'AI apps you connect (MCP) are in every locale — see claude-prompts/2026-10-22/002';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -163,6 +172,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V111_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V111_WHY}`);
+    }
+
+    for (const must of MCP_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${MCP_WHY}`);
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
