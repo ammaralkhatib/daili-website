@@ -655,10 +655,11 @@ function renderHome(loc) {
   const words = (s) => e(s).split(/\s+/).filter(Boolean).map((w) => `<span class="w">${w}</span>`).join(' ');
   // The watch shows the real watch app (2026-10-22/005): the store captures
   // in this page's language (WATCH_SHOT_SOURCES, shots/<loc>/shot-watch-*).
-  // The hero's shows Up next, still. The bento card's (`cycle`) carries all
+  // Both the hero's and the bento card's (`cycle`, 2026-10-22/007) carry all
   // five: Up next with a src, the other four with data-src only, so they cost
-  // nothing until home.js loads them as the card comes near and turns
-  // through them. Without JS or with reduced motion, Up next stays.
+  // nothing until home.js loads them (the hero's after the window's load, the
+  // card's as it comes near) and turns through them. Without JS or with
+  // reduced motion, Up next stays.
   const watchShots = Object.values(WATCH_SHOT_SOURCES);
   const watch = (cls, { cycle = false, eager = false } = {}) => {
     const { width, height } = imageSize(watchShots[0]);
@@ -893,7 +894,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     sparkIcon: homeIcon('spark'),
     globeIcon: homeIcon('globe'),
     heroPhone,
-    heroWatch: watch('hwatch', { eager: true }),
+    heroWatch: watch('hwatch', { eager: true, cycle: true }),
     heroCards, rating, works, badges, membersH2, marquee,
     dayRow, calendarsVis,
     avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,

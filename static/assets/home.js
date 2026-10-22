@@ -15,8 +15,9 @@
  *   - /ar/ mirrors: screenshots slide in from the other side and the cards
  *     drift and fly the other way (the marquee's direction is CSS);
  *   - the member count counts up in the page's own number format;
- *   - the bento card's Apple Watch turns through the watch app's five
- *     screens like a crown scroll (watchCycle, 2026-10-22/005);
+ *   - both Apple Watches (the hero's and the bento card's) turn through the
+ *     watch app's five screens like a crown scroll, each on its own
+ *     (watchCycle, 2026-10-22/005 and 007);
  *   - "Start the day together" is one row of every feature, pinned and moved
  *     sideways by the page scroll on a computer, a swipe row elsewhere
  *     (featureRow, 2026-10-16/005);
@@ -24,7 +25,7 @@
  *     2026-10-16/006). It needs no GSAP: it runs even if the vendor scripts
  *     do not.
  * Reduced motion: no Lenis, no reveals, no scene loop, step 1 shown still,
- * the watch on Up next,
+ * the watches on Up next,
  * the feature row a plain swipe row with working arrows, the sheet without
  * its slide.
  */
@@ -456,23 +457,33 @@
     g.delayedCall(1.1, function () { scene(0, true); });
   }
 
-  // ---------- the bento card's Apple Watch ----------
+  // ---------- the Apple Watches: the hero's and the bento card's ----------
   // Up next, Shopping, To-dos, Habits, Quick note, HOLD s each, forever. The
   // next screen slides up into the face while the last slides out at the
   // top, short and easing out, like a turn of the crown. Screens 2–5 are
-  // data-src only (build.mjs) and load when the card is two screens away.
-  // Runs only while the card is on screen and the tab visible; a screen that
-  // has not loaded yet is waited for, one that failed is skipped.
+  // data-src only (build.mjs). Every [data-watch-cycle] face runs on its own
+  // (own state, timer and observer, 2026-10-22/007):
+  //   - the hero's loads its screens after the window's load event, so the
+  //     hero phone's first screenshot comes first, and turns first only once
+  //     its intro has landed (INTRO s, then HOLD);
+  //   - the bento card's loads them when the card is two screens away.
+  // Each runs only while its section (.hero / .bx) is on screen and the tab
+  // visible; a screen that has not loaded yet is waited for, one that failed
+  // is skipped.
   function watchCycle() {
-    var face = $("[data-watch-cycle]");
-    if (!face) return;
-    var ws = $$(".ws", face), card = face.closest(".bx") || face;
+    $$("[data-watch-cycle]").forEach(cycleWatch);
+  }
+  function cycleWatch(face) {
+    var ws = $$(".ws", face), hero = face.closest(".hero"), card = hero || face.closest(".bx") || face;
     if (ws.length < 2) return;
-    var HOLD = 2.5, SLIDE = 0.45;
-    var cur = 0, z = 1, timer = null, onScreen = !("IntersectionObserver" in window), shown = !document.hidden;
-    ST.create({ trigger: card, start: "top 300%", once: true, onEnter: function () {
+    var HOLD = 2.5, SLIDE = 0.45, INTRO = 2.1;
+    var cur = 0, z = 1, timer = null, armed = !hero, onScreen = !("IntersectionObserver" in window), shown = !document.hidden;
+    var load = function () {
       ws.forEach(function (im) { if (im.dataset.src) { im.src = im.dataset.src; im.removeAttribute("data-src"); } });
-    } });
+    };
+    if (!hero) ST.create({ trigger: card, start: "top 300%", once: true, onEnter: load });
+    else if (document.readyState === "complete") load();
+    else window.addEventListener("load", load, { once: true });
     var ready = function (im) { return im.complete && im.naturalWidth > 0 && !im.dataset.src; };
     var failed = function (im) { return im.complete && !im.naturalWidth && !im.dataset.src && im.currentSrc !== ""; };
     var turn = function () {
@@ -491,12 +502,13 @@
       sync();
     };
     var sync = function () {
-      var run = onScreen && shown;
+      var run = armed && onScreen && shown;
       if (run && !timer) timer = g.delayedCall(HOLD, turn);
       else if (!run && timer) { timer.kill(); timer = null; }
     };
     if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { onScreen = en[0].isIntersecting; sync(); }).observe(card);
     document.addEventListener("visibilitychange", function () { shown = !document.hidden; sync(); });
+    if (hero) g.delayedCall(INTRO, function () { armed = true; sync(); });
     sync();
   }
 

@@ -152,7 +152,7 @@
         { "t": "25 languages", "s": "From Deutsch to Türkçe" },
         { "t": "Made in Tirol", "s": "Innsbruck, Austria" }
       ],
-      "@h2a": { "description": "First line of the members headline. {count} is filled by the build with the locale-formatted member number (1,000 / 1.000) and must appear exactly once." },
+      "@h2a": { "description": "First line of the members headline. {count} is filled by the build with the locale-formatted member number (1,500 / 1.500) and must appear exactly once." },
       "h2a": "Joined by {count}+ members",
       "h2b": "planning life together",
       "@cards": { "description": "8 photo cards in the members carousel. cap = a short, casual, handwritten-style caption on the photo (≤ 28 chars) — write it the way a parent would caption their own photo in your language, not a translation of the English joke; \"Day 12. Minzi is proud.\" keeps Minzi. t/s = the Daili widget drawn on the photo (t ≤ 24, s ≤ 30). \"Oma\" and \"Papa\" may become your language's word for grandma / dad here only." },

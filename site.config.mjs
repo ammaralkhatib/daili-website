@@ -1379,7 +1379,7 @@ export const WEB_APP_URL = 'https://app.daili.app';
  * {count}), formatted per locale with Intl.NumberFormat.
  * Real, current user count — Ammar updates it by hand. Never round up.
  */
-export const MEMBERS_COUNT = 1000;
+export const MEMBERS_COUNT = 1500;
 
 /**
  * Real app-store reviews for the home page. The reviews section renders only
