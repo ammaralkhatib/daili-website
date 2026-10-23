@@ -6,7 +6,7 @@ summary: See your plans, tick off to-dos and shopping, or add something new — 
 keywords: widget, widgets, home screen, lock screen, iphone, android, habits widget, dinner widget, quick add, birthday countdown, tick off, add widget
 routes: /
 since: 1.4.0
-updated: 2026-10-12
+updated: 2026-10-23
 order: 1
 mediaPending: hand-made screenshot of the phone home screen with daili widgets
 related: anywhere-widgets-settings, anywhere-watch, start-home, habits-minzi, notes-notes
@@ -21,11 +21,13 @@ daili has widgets for your calendar (**Calendar**, and **Next up** with a countd
 
 1. Press and hold an empty spot on your phone's home screen.
 2. On iPhone, tap **Edit**, then **Add Widget**. On Android, tap **Widgets**.
-3. Find daili in the list and tap it.
-4. Pick a widget and a size. On iPhone, tap **Add Widget**. On Android, drag it to a free spot.
+3. Find daili, then pick a widget and a size.
+4. On iPhone, tap **Add Widget**. On Android, drag it to a free spot.
 
-Tick off a to-do, a shopping item or a habit right on the widget. The **+** opens the right screen to add something. Tap anywhere else to open daili there.
+Tick off to-dos, shopping and habits right on the widget. The **+** adds something; tap elsewhere to open daili there.
 
-On iPhone, the lock screen can show **Next up**, a **New note** button, and counters for to-dos, shopping and habits. Android has no lock-screen widgets.
+Widgets update by themselves when your family changes something (on iPhone, not after you swiped daili away; then open daili once). The calendar widget shows your next days.
 
-> Note: Widgets show your active family or group. If one looks out of date, open daili for a moment.
+On iPhone, the lock screen can show **Next up**, a **New note** button and counters. Titles stay hidden until you unlock.
+
+> Note: Widgets show your active family or group.

@@ -3,17 +3,17 @@ id: account-profile
 title: Je profiel: naam, foto, avatar en kleur
 summary: Wijzig je naam, voeg een foto toe of kies een avatar, en kies je kleur.
 keywords: profiel, naam, weergavenaam, foto, afbeelding, avatar, kleur, naam wijzigen, profielfoto
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-23
 ---
 Je gezin ziet je naam, foto en kleur naast alles wat je toevoegt.
 
 ![Het profielscherm met de naam, de kleuren, de schakelaar Mijn kleur voor de app gebruiken en de regels van je account. Afbeelding wijzigen is omcirkeld.](account-profile)
 
 1. Tik bovenaan het startscherm op je foto om **Instellingen** te openen. Tik dan bovenaan op je naam.
-2. Tik op **Afbeelding wijzigen**. Kies **Foto maken** of **Kiezen uit galerij**, of kies een avatar onder **Volwassenen** of **Kinderen**. Je foto verandert meteen.
+2. Tik op **Afbeelding wijzigen**. Kies **Avatar maken met AI**, **Foto maken** of **Kiezen uit galerij**, of kies er een onder **Kies een avatar**. Daar staan ook je AI-avatars. Je foto verandert meteen.
 3. Wijzig je **Weergavenaam** als je wilt.
 4. Tik onder **Jouw kleur** op een kleur. Die wordt gebruikt voor je avatar en je afspraken.
-5. Zet **Mijn kleur voor de app gebruiken** aan om daili op deze telefoon te kleuren. Tik je daarna op een kleur, dan zie je die als voorbeeld in de hele app.
+5. **Mijn kleur voor de app gebruiken** staat standaard aan, dus daili krijgt op deze telefoon jouw kleur. Zet het uit om daili groen te houden (kan ook in **Weergave** bij **App-kleur**).
 6. Tik op **Opslaan**. Ga je weg zonder op te slaan, dan komt je oude kleur terug.
 
 > Note: Iedereen in een gezin heeft een eigen kleur. Een kleur die iemand anders al heeft, is vervaagd en kun je niet kiezen.

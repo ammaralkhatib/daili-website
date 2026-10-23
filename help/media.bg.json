@@ -100,5 +100,9 @@
   "cycle-calendar": { "file": "cycle-calendar.webp", "w": 720, "h": 1564, "kind": "image" },
   "cycle-day": { "file": "cycle-day.webp", "w": 720, "h": 1564, "kind": "image" },
   "cycle-settings": { "file": "cycle-settings.webp", "w": 720, "h": 1564, "kind": "image" },
-  "cycle-supplies": { "file": "cycle-supplies.webp", "w": 720, "h": 1564, "kind": "image" }
+  "cycle-supplies": { "file": "cycle-supplies.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-edit-home-tile": { "file": "start-edit-home-tile.webp", "w": 720, "h": 720, "kind": "image" },
+  "account-avatar-ai": { "file": "account-avatar-ai.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-avatar-ai-look": { "file": "account-avatar-ai-look.webp", "w": 720, "h": 1564, "kind": "image" },
+  "budget-share": { "file": "budget-share.webp", "w": 720, "h": 1564, "kind": "image" }
 }

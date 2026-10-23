@@ -3,19 +3,21 @@ id: start-edit-home
 title: Edytuj ekran główny: ukryj i przestaw kafelki
 summary: Przenieś kafelki, których używasz najczęściej, na górę i ukryj te, których nie potrzebujesz.
 keywords: ekran główny, kafelki, kolejność, przestaw, przenieś, ukryj, usuń, pokaż, dostosuj, układ
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-23
 ---
 Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności. Każdy kafelek można przesunąć albo ukryć, także **Notatki**.
 
 ![Ekran główny w trybie edycji, z × na każdym kafelku. Zakreślony jest przycisk Gotowe w prawym dolnym rogu.](start-edit-home)
 
-1. Na ekranie głównym przytrzymaj dowolny kafelek, aż kafelki zaczną się trząść.
+1. Na ekranie głównym przytrzymaj dowolny kafelek, aż kafelki zaczną się trząść. Albo dotknij kafelka z przerywaną ramką **Edytuj ekran główny** na końcu ekranu głównego.
 2. Przeciągnij kafelek w nowe miejsce.
 3. Dotknij **×** na kafelku, żeby go ukryć. Dotknij **+**, żeby przywrócić ukryty kafelek.
 4. Dotknij **Gotowe** w prawym dolnym rogu.
 
+![Koniec ekranu głównego: kafelek Rodzina, a za nim kafelek z przerywaną ramką Edytuj ekran główny, który jest zakreślony.](start-edit-home-tile)
+
 To samo możesz zrobić na ekranie **Ustawienia**, w sekcji **Ekran główny**: włączaj i wyłączaj kafelki i przeciągaj je za uchwyt.
 
-Funkcje wybrane po założeniu pierwszej rodziny albo dołączeniu do niej ustawiają te same kafelki.
+Funkcje wybrane po założeniu pierwszej rodziny albo dołączeniu do niej ustawiają te same kafelki. Kafelek **Rodzina** jest ostatni, dopóki go nie przeniesiesz.
 
 > Note: Twój układ zapisuje się tylko na tym telefonie. Każdy w rodzinie urządza swój ekran główny sam.

@@ -5,17 +5,19 @@ summary: Planlarını gör, görevleri ve alışverişi işaretle ya da yeni bir
 keywords: widget, widget'lar, ana ekran, kilit ekranı, iphone, android, alışkanlıklar, akşam yemeği, hızlı ekle, doğum günü, işaretle, widget ekle
 tipTitle: Planın ana ekranında
 tipBody: Bir daili widget'ı ekle ve uygulamayı açmadan sırada ne olduğunu gör.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-23
 ---
 daili'nin takvimin için (**Takvim** ve sıradaki etkinliğe geri sayan **Sıradaki**), **Alışveriş**, **Görevler**, Minzi'li alışkanlıklar, doğum günü geri sayımı, bu akşamın yemeği, hızlı ekleme ve **Hızlı not** için widget'ları var.
 
 1. Telefonunun ana ekranında boş bir yere basılı tut.
 2. iPhone'da **Düzenle**, sonra **Widget Ekle** seçeneğine dokun. Android'de **Widget'lar** seçeneğine dokun.
-3. Listede daili'yi bul ve ona dokun.
-4. Bir widget ve bir boyut seç. iPhone'da **Widget Ekle** düğmesine dokun. Android'de onu boş bir yere sürükle.
+3. daili'yi bul, sonra bir widget ve bir boyut seç.
+4. iPhone'da **Widget Ekle** düğmesine dokun. Android'de onu boş bir yere sürükle.
 
-Bir görevi, bir alışveriş ürününü ya da bir alışkanlığı doğrudan widget'ta işaretle. **+** bir şey eklemen için doğru ekranı açar. Başka bir yere dokunursan daili orada açılır.
+Görevleri, alışverişi ve alışkanlıkları doğrudan widget'ta işaretle. **+** bir şey ekler; başka bir yere dokunursan daili orada açılır.
 
-iPhone'da kilit ekranı sıradaki etkinliğini, yeni not düğmesini ve görevler, alışveriş ve alışkanlıklar için sayaçları gösterebilir. Android'de kilit ekranı widget'ı yok.
+Ailen bir şeyi değiştirdiğinde widget'lar kendiliğinden güncellenir (iPhone'da daili'yi yukarı kaydırarak kapattıysan bu olmaz; o zaman daili'yi bir kez aç). Takvim widget'ı önündeki günleri gösterir.
 
-> Note: Widget'lar etkin aileni ya da grubunu gösterir. Biri eski görünüyorsa daili'yi kısa bir süre aç.
+iPhone'da kilit ekranı sıradaki etkinliğini, yeni not düğmesini ve sayaçları gösterebilir. Kilidi açana kadar başlıklar gizli kalır.
+
+> Note: Widget'lar etkin aileni ya da grubunu gösterir.

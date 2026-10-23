@@ -5,17 +5,19 @@ summary: Guarda i tuoi impegni, spunta attività e spesa o aggiungi qualcosa —
 keywords: widget, schermata home, schermata di blocco, iphone, android, abitudini, cena, aggiunta rapida, compleanno, spuntare, aggiungere widget, conto alla rovescia
 tipTitle: Il tuo programma sulla schermata Home
 tipBody: Aggiungi un widget di daili e guarda cosa c'è dopo senza aprire l'app.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-23
 ---
 daili ha widget per i tuoi impegni (**Calendario**, e **Prossimo** con il conto alla rovescia), **Spesa**, **Attività**, le abitudini con Minzi, il conto alla rovescia dei compleanni, la cena di stasera, l’aggiunta rapida e **Nota veloce**.
 
 1. Tieni premuto uno spazio vuoto della schermata Home del telefono.
 2. Su iPhone, tocca **Modifica**, poi **Aggiungi widget**. Su Android, tocca **Widget**.
-3. Cerca daili nell'elenco e toccalo.
-4. Scegli un widget e una dimensione. Su iPhone, tocca **Aggiungi widget**. Su Android, trascinalo in uno spazio libero.
+3. Cerca daili, poi scegli un widget e una dimensione.
+4. Su iPhone, tocca **Aggiungi widget**. Su Android, trascinalo in uno spazio libero.
 
-Spunta un’attività, un articolo della spesa o un’abitudine direttamente sul widget. Il **+** apre la schermata giusta per aggiungere qualcosa. Tocca altrove per aprire daili in quel punto.
+Spunta attività, spesa e abitudini direttamente sul widget. Il **+** aggiunge qualcosa; tocca altrove per aprire daili in quel punto.
 
-Su iPhone la schermata di blocco può mostrare **Prossimo**, un pulsante per una nuova nota e i contatori di attività, spesa e abitudini. Android non ha widget per la schermata di blocco.
+I widget si aggiornano da soli quando la tua famiglia cambia qualcosa (su iPhone no, se hai chiuso daili con uno swipe; in quel caso apri daili una volta). Il widget del calendario mostra i tuoi prossimi giorni.
 
-> Note: I widget mostrano la tua famiglia o il tuo gruppo attivo. Se uno sembra vecchio, apri daili per un momento.
+Su iPhone la schermata di blocco può mostrare **Prossimo**, un pulsante per una nuova nota e dei contatori. I titoli restano nascosti finché non sblocchi.
+
+> Note: I widget mostrano la tua famiglia o il tuo gruppo attivo.

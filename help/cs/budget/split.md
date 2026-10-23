@@ -1,24 +1,25 @@
 ---
 id: budget-split
 title: Děl společné výdaje a vyrovnej se
-summary: Rozděl náklady spravedlivě, podívej se, kdo komu dluží, a zapiš platbu, když někdo peníze vrátí.
-keywords: dělení, rozdělit, společné výdaje, dluh, dlužit, zůstatek, vyrovnat, vrátit peníze, označit jako zaplacené, historie, partner
-translatedFrom: 2026-10-16
+summary: Rozděl náklady spravedlivě, i s přáteli bez daili. Podívej se, kdo komu dluží, zapisuj platby a sdílej přehled.
+keywords: dělení, rozdělit, společné výdaje, dluh, dlužit, zůstatek, vyrovnat, označit jako zaplacené, host, přátelé, odkaz
+translatedFrom: 2026-10-23
 ---
-Platíte věci společně? daili to spočítá.
+Děl se o výdaje, i s přáteli, kteří daili nemají.
 
 1. V rozpočtu klepni na **⋯** → **Nastavení**.
 2. V části **Více** klepni na **Dělení výdajů** a zapni to.
-3. V části **Kdo se dělí o výdaje** nech aspoň dva lidi. Klepni na **Uložit**.
+3. V části **Kdo se dělí o výdaje** vyber lidi.
+4. V části **Hosté** klepni na **Přidat hosta** a přidej kamaráda. Klepnutím na hosta ho přejmenuješ nebo smažeš. Klepni na **Uložit**.
 
-Každá položka se zapnutou volbou **Sdílený výdaj** se mezi ně dělí rovným dílem. U položky, kterou hradí jen plátce, ji vypni.
+Každá položka se zapnutou volbou **Sdílený výdaj** se dělí rovným dílem. V poli **Kdo platil** může platit i host a v poli **Pro koho** vybereš, kdo se o výdaj dělí.
 
-Rozpočet ukazuje, kdo komu dluží, za všechny měsíce dohromady. Podrobnosti uvidíš po klepnutí na **Vyrovnat**.
+Obrazovka **Vyrovnat** ukazuje, kdo komu dluží, za všechny měsíce dohromady. V části **Kdo platí komu** klepni na **Označit jako zaplacené**. Dřívější platby jsou v části **Historie vyrovnání**.
 
-![Obrazovka Dělení výdajů. Marco platí Leně 5 621,50 Kč. Tlačítko Označit jako zaplacené je zakroužkované.](budget-split)
+![Obrazovka Dělení výdajů s hostem označeným jako Host a částí Kdo platí komu. Zakroužkované je tlačítko sdílení vpravo nahoře.](budget-split)
 
-V části **Kdo platí komu** klepni na **Označit jako zaplacené**. Zkontroluj částku a datum a znovu klepni na **Označit jako zaplacené**. Když napíšeš víc, než je navržená částka, daili tě upozorní. Platba se nepočítá jako útrata.
+Klepni vpravo nahoře na sdílení. Volba **Poslat přehled** pošle zprávou, kdo platí komu. **Odkaz pro hosty** je stránka jen pro čtení, bez aplikace: tvůrce rozpočtu nebo správce klepne na **Vytvořit odkaz** a pak na **Kopírovat** nebo **Sdílet**. Tlačítko **Přestat sdílet** odkaz vypne.
 
-Dřívější platby jsou v části **Historie vyrovnání** a nahoře vidíš, kdy jste se naposledy vyrovnali.
+![Nabídka Sdílet s hosty: Poslat přehled a odkaz se zakroužkovanými tlačítky Kopírovat, Sdílet a Přestat sdílet.](budget-share)
 
-> Note: Rozpočet, který vidíš jen ty, nemůže dělit výdaje.
+> Note: V rozpočtu, který vidíš jen ty, se dá dělit jen s hosty. Hosta, který je ještě v nějaké položce, nejde smazat.

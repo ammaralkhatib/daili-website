@@ -1,24 +1,25 @@
 ---
 id: budget-split
 title: Deľ spoločné výdavky a vyrovnaj sa
-summary: Rozdeľ výdavky férovo medzi ľudí, pozri sa, kto komu dlhuje, a zapíš platbu, keď niekto peniaze vráti.
-keywords: delenie, deliť, spoločné výdavky, dlh, dlhuje, zostatok, vyrovnať, vrátiť peniaze, zaplatené, história, partner
-translatedFrom: 2026-10-16
+summary: Deľ výdavky férovo, aj s priateľmi bez daili. Pozri sa, kto komu dlhuje, zapisuj platby a zdieľaj prehľad.
+keywords: delenie, deliť, spoločné výdavky, dlh, dlhuje, zostatok, vyrovnať, zaplatené, hosť, priatelia, odkaz
+translatedFrom: 2026-10-23
 ---
-Platíte veci spolu? daili to spočíta.
+Deľ výdavky, aj s priateľmi, ktorí nemajú daili.
 
 1. V rozpočte ťukni na **⋯** → **Nastavenia**.
 2. V časti **Viac** ťukni na **Delenie výdavkov** a zapni to.
-3. V časti **Kto sa delí o výdavky** nechaj aspoň dvoch ľudí. Ťukni na **Uložiť**.
+3. V časti **Kto sa delí o výdavky** vyber ľudí.
+4. V časti **Hostia** ťukni na **Pridať hosťa** a pridaj priateľa. Ťuknutím na hosťa ho premenuješ alebo vymažeš. Ťukni na **Uložiť**.
 
-Každý **Zdieľaný výdavok** sa medzi nich rozdelí rovným dielom. Pri položke, ktorú hradí len ten, kto platil, to vypni.
+Každý **Zdieľaný výdavok** sa delí rovným dielom. V poli **Kto platil** môže platiť aj hosť a v poli **Pre koho** vyberieš, kto sa oň delí.
 
-Rozpočet ukazuje, kto komu dlhuje, za všetky mesiace spolu. Podrobnosti uvidíš po ťuknutí na **Vyrovnať**.
+Po ťuknutí na **Vyrovnať** uvidíš, kto komu dlhuje, za všetky mesiace spolu. V časti **Kto platí komu** ťukni na **Označiť ako zaplatené**. Minulé platby sú v časti **História vyrovnaní**.
 
-![Obrazovka Delenie výdavkov. Marco platí Lene 224,74 €. Tlačidlo Označiť ako zaplatené je zakrúžkované.](budget-split)
+![Obrazovka Delenie výdavkov s hosťom označeným Hosť a časťou Kto platí komu. Zakrúžkované je tlačidlo zdieľania vpravo hore.](budget-split)
 
-V časti **Kto platí komu** ťukni na **Označiť ako zaplatené**. Skontroluj sumu a dátum a znova ťukni na **Označiť ako zaplatené**. Ak zadáš viac, než je navrhnutá suma, daili ťa upozorní. Platba sa nepočíta ako výdavok.
+Vpravo hore ťukni na zdieľanie. Cez **Poslať prehľad** pošleš správu, kto platí komu. **Odkaz pre hostí** je stránka len na čítanie, aplikácia nie je potrebná: autor rozpočtu alebo správca ťukne na **Vytvoriť odkaz** a potom na **Kopírovať** alebo **Zdieľať**. Ťuknutím na **Prestať zdieľať** odkaz vypneš.
 
-Minulé platby sú v časti **História vyrovnaní** a hore vidíš, kedy ste sa naposledy vyrovnali.
+![Ponuka Zdieľať s hosťami: Poslať prehľad a odkaz so zakrúžkovanými Kopírovať, Zdieľať a Prestať zdieľať.](budget-share)
 
-> Note: Rozpočet, ktorý vidíš len ty, nemôže deliť výdavky.
+> Note: Rozpočet, ktorý vidíš len ty, delí výdavky len s hosťami. Hosťa, ktorý je ešte v niektorých záznamoch, nemožno vymazať.

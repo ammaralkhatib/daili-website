@@ -1,24 +1,25 @@
 ---
 id: budget-split
 title: Dividi le spese comuni e salda i conti
-summary: Dividi le spese in modo equo, vedi chi deve quanto a chi e registra un pagamento quando qualcuno restituisce i soldi.
-keywords: dividere, divisione, spese comuni, dovere, debito, saldo, saldare, restituire, segna come pagato, cronologia, partner
-translatedFrom: 2026-10-16
+summary: Dividi le spese in modo equo, anche con amici senza daili. Vedi chi deve quanto a chi, registra i pagamenti e condividi un riepilogo.
+keywords: dividere, divisione, spese comuni, dovere, debito, saldo, saldare, restituire, segna come pagato, ospite, amici, link
+translatedFrom: 2026-10-23
 ---
-Pagate le cose insieme? daili tiene il conto.
+Dividi le spese, anche con amici che non hanno daili.
 
 1. In un bilancio, tocca **⋯** → **Impostazioni**.
 2. Sotto **Altro**, tocca **Dividi le spese** e attivalo.
-3. Sotto **Chi divide le spese**, tieni almeno due persone. Tocca **Salva**.
+3. Sotto **Chi divide le spese**, scegli le persone.
+4. Sotto **Ospiti**, tocca **Aggiungi ospite** per un amico. Tocca un ospite per rinominarlo o eliminarlo. Tocca **Salva**.
 
-Ogni **Spesa condivisa** viene divisa in parti uguali tra loro. Disattivala per un movimento che resta tutto a carico di chi paga.
+Ogni **Spesa condivisa** viene divisa in parti uguali. In **Pagato da** può pagare anche un ospite, e con **Per chi** scegli chi la divide.
 
-Il bilancio mostra chi deve quanto a chi, contando tutti i mesi insieme. Tocca **Salda** per i dettagli.
+**Salda** mostra chi deve quanto a chi, contando tutti i mesi insieme. Sotto **Chi paga chi**, tocca **Segna come pagato**. I pagamenti passati sono sotto **Saldi precedenti**.
 
-![La schermata Dividi le spese. Marco paga 224,74 € a Lena. Il pulsante Segna come pagato è cerchiato.](budget-split)
+![La schermata Dividi le spese con un ospite, segnato come Ospite, e Chi paga chi. Il pulsante di condivisione in alto a destra è cerchiato.](budget-split)
 
-Sotto **Chi paga chi**, tocca **Segna come pagato**. Controlla l'importo e la data, poi tocca di nuovo **Segna come pagato**. Se scrivi più dell'importo suggerito, daili ti avvisa. Il pagamento non conta come spesa.
+Tocca il pulsante di condivisione in alto a destra. **Invia riepilogo** manda per messaggio chi paga chi. **Link per gli ospiti** è una pagina di sola lettura, senza bisogno dell'app: chi ha creato il bilancio o un admin tocca **Crea link**, poi **Copia** o **Condividi**. **Smetti di condividere** lo disattiva.
 
-I pagamenti passati sono sotto **Saldi precedenti**, e in alto vedi quando avete saldato l'ultima volta.
+![Il pannello Condividi con gli ospiti: Invia riepilogo, e il link con Copia, Condividi e Smetti di condividere cerchiati.](budget-share)
 
-> Note: Un bilancio che vedi solo tu non può dividere le spese.
+> Note: Un bilancio che vedi solo tu divide le spese solo con gli ospiti. Un ospite ancora usato nei movimenti non si può eliminare.

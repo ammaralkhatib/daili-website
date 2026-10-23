@@ -1,24 +1,25 @@
 ---
 id: budget-split
 title: Gemeinsame Kosten teilen und ausgleichen
-summary: Teile Kosten fair auf, sieh, wer wem etwas schuldet, und trag eine Zahlung ein, wenn jemand Geld zurückgibt.
-keywords: teilen, aufteilen, gemeinsame kosten, schulden, schuldet, saldo, ausgleichen, zurückzahlen, als bezahlt markieren, verlauf, partner
-translatedFrom: 2026-10-16
+summary: Teile Kosten fair auf, auch mit Freunden ohne daili. Sieh, wer wem etwas schuldet, trag Zahlungen ein und teile eine Übersicht.
+keywords: teilen, aufteilen, gemeinsame kosten, schulden, saldo, ausgleichen, zurückzahlen, als bezahlt markieren, gast, freunde, link
+translatedFrom: 2026-10-23
 ---
-Ihr bezahlt Dinge gemeinsam? daili rechnet mit.
+Kosten teilen, auch mit Freunden ohne daili.
 
 1. Tippe in einem Budget auf **⋯** → **Einstellungen**.
 2. Tippe unter **Mehr** auf **Kosten teilen** und schalte es ein.
-3. Behalte unter **Wer teilt die Kosten** mindestens zwei Personen. Tippe auf **Speichern**.
+3. Wähle unter **Wer teilt die Kosten** die Personen aus.
+4. Tippe unter **Gäste** auf **Gast hinzufügen**, um Freunde dazuzunehmen. Tippe auf einen Gast, um ihn umzubenennen oder zu löschen. Tippe auf **Speichern**.
 
-Jeder Eintrag mit **Geteilte Kosten** wird gleichmäßig zwischen ihnen aufgeteilt. Schalte das bei einem Eintrag aus, den nur die zahlende Person trägt.
+Jeder Eintrag mit **Geteilte Kosten** wird gleichmäßig aufgeteilt. Unter **Bezahlt von** kann auch ein Gast zahlen, und unter **Für wen** wählst du, wer sich den Betrag teilt.
 
-Das Budget zeigt, wer wem etwas schuldet, über alle Monate zusammen. Tippe für die Details auf **Ausgleichen**.
+**Ausgleichen** zeigt, wer wem etwas schuldet, über alle Monate zusammen. Tippe unter **Wer zahlt wem** auf **Als bezahlt markieren**. Frühere Zahlungen stehen unter **Bisherige Ausgleiche**.
 
-![Der Bildschirm Kosten teilen. Marco zahlt an Lena € 224,74. Die Taste Als bezahlt markieren ist eingekreist.](budget-split)
+![Der Bildschirm Kosten teilen mit einem Gast, markiert als Gast, und Wer zahlt wem. Die Taste Teilen oben rechts ist eingekreist.](budget-split)
 
-Tippe unter **Wer zahlt wem** auf **Als bezahlt markieren**. Prüfe Betrag und Datum und tippe noch einmal auf **Als bezahlt markieren**. Gibst du mehr als den vorgeschlagenen Betrag ein, warnt dich daili. Die Zahlung zählt nicht als Ausgabe.
+Tippe oben rechts auf Teilen. **Übersicht senden** schickt per Nachricht, wer wem zahlt. **Link für Gäste** ist eine Seite nur zum Ansehen, ganz ohne App: Wer das Budget erstellt hat oder ein Admin tippt auf **Link erstellen** und dann auf **Kopieren** oder **Teilen**. **Nicht mehr teilen** schaltet den Link ab.
 
-Frühere Zahlungen stehen unter **Bisherige Ausgleiche**, und oben steht, wann ihr zuletzt ausgeglichen habt.
+![Das Fenster Mit Gästen teilen: Übersicht senden und der Link mit Kopieren, Teilen und Nicht mehr teilen eingekreist.](budget-share)
 
-> Note: Ein Budget, das nur du sehen kannst, kann keine Kosten teilen.
+> Note: Ein Budget, das nur du sehen kannst, teilt nur mit Gästen. Ein Gast, der noch in Einträgen vorkommt, lässt sich nicht löschen.

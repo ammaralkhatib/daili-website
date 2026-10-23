@@ -1,24 +1,25 @@
 ---
 id: budget-split
 title: Ortak masrafları paylaş ve hesaplaş
-summary: Masrafları kişiler arasında adilce paylaş, kimin kime borçlu olduğunu gör ve biri parayı geri ödediğinde bunu kaydet.
-keywords: paylaş, bölüşmek, ortak masraflar, borç, borçlu, bakiye, hesaplaş, geri ödeme, ödendi, geçmiş, partner
-translatedFrom: 2026-10-16
+summary: Masrafları adilce paylaş, daili kullanmayan arkadaşlarla da. Kimin kime borçlu olduğunu gör, ödemeleri kaydet ve bir özet paylaş.
+keywords: paylaş, bölüşmek, ortak masraflar, borç, borçlu, bakiye, hesaplaş, ödendi, misafir, arkadaşlar, bağlantı
+translatedFrom: 2026-10-23
 ---
-Bir şeyleri birlikte mi ödüyorsunuz? daili hesabı tutar.
+Masrafları paylaş, daili kullanmayan arkadaşlarla da.
 
 1. Bir bütçede **⋯** → **Ayarlar** seçeneğine dokun.
 2. **Diğer** altında **Masrafları paylaş** seçeneğine dokun ve aç.
-3. **Masrafları kimler paylaşıyor** altında en az iki kişi bırak. **Kaydet** düğmesine dokun.
+3. **Masrafları kimler paylaşıyor** altında kişileri seç.
+4. **Misafirler** altında bir arkadaş için **Misafir ekle** seçeneğine dokun. Yeniden adlandırmak ya da silmek için bir misafire dokun. **Kaydet** düğmesine dokun.
 
-Her **Ortak gider** bu kişiler arasında eşit olarak bölünür. Yalnızca ödeyenin karşıladığı bir kayıt için bunu kapat.
+Her **Ortak gider** eşit olarak bölünür. **Ödeyen** alanında bir misafir de ödeyebilir; **Kimin için** alanında kimlerin paylaşacağını seçersin.
 
-Bütçe, tüm aylar birlikte sayılarak kimin kime borçlu olduğunu gösterir. Ayrıntılar için **Hesaplaş** seçeneğine dokun.
+**Hesaplaş** seçeneğine dokununca tüm aylar birlikte kimin kime borçlu olduğunu görürsün. **Kim kime ödüyor** altında **Ödendi olarak işaretle** seçeneğine dokun. Geçmiş ödemeler **Hesaplaşma geçmişi** altındadır.
 
-![Masrafları paylaş ekranı. Marco, Lena'ya TL8.993,00 öder. Ödendi olarak işaretle düğmesi daire içine alınmış.](budget-split)
+![Misafir etiketli bir misafir ve Kim kime ödüyor bölümüyle Masrafları paylaş ekranı. Sağ üstteki paylaş düğmesi daire içine alınmış.](budget-split)
 
-**Kim kime ödüyor** altında **Ödendi olarak işaretle** seçeneğine dokun. Tutarı ve tarihi kontrol et, sonra yine **Ödendi olarak işaretle** seçeneğine dokun. Önerilen tutardan fazlasını yazarsan daili seni uyarır. Bu ödeme harcama olarak sayılmaz.
+Sağ üstteki paylaş düğmesine dokun. **Özet gönder** kimin kime ödeyeceğini mesajla gönderir. **Misafirler için bağlantı** salt okunur bir sayfadır, uygulama gerekmez: bütçeyi oluşturan kişi ya da bir yönetici **Bağlantı oluştur** seçeneğine, sonra **Kopyala** ya da **Paylaş** seçeneğine dokunur. **Paylaşmayı durdur** bağlantıyı kapatır.
 
-Geçmiş ödemeler **Hesaplaşma geçmişi** altındadır; en üstte en son ne zaman hesaplaştığınız yazar.
+![Misafirlerle paylaş penceresi: Özet gönder ve bağlantı; Kopyala, Paylaş ve Paylaşmayı durdur daire içine alınmış.](budget-share)
 
-> Note: Yalnızca senin görebildiğin bir bütçe masrafları paylaşamaz.
+> Note: Yalnızca senin görebildiğin bir bütçe masrafları yalnızca misafirlerle paylaşır. Hâlâ kayıtlarda kullanılan bir misafir silinemez.
