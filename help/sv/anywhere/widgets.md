@@ -16,8 +16,8 @@ daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkn
 
 Bocka av uppgifter, inköp och vanor direkt i widgeten. **+** lägger till något; tryck någon annanstans så öppnas daili där.
 
-Widgetar uppdateras av sig själva när familjen ändrar något (på iPhone inte efter att du har svept bort daili; öppna då daili en gång). Kalenderwidgeten visar dina närmaste dagar.
+Kalenderwidgeten visar dina närmaste dagar.
 
 På iPhone kan låsskärmen visa **Näst på tur**, en knapp för en ny anteckning och räknare. Titlar förblir dolda tills du låser upp.
 
-> Note: Widgetar visar din aktiva familj eller grupp.
+> Note: Widgetar visar din aktiva familj eller grupp. Om en verkar gammal, öppna daili en kort stund.

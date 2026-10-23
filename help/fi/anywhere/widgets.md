@@ -16,8 +16,8 @@ dailissa on kalenteriwidgetit (**Kalenteri** sekä **Seuraavaksi** lähtölasken
 
 Kuittaa tehtävät, ostokset ja tavat suoraan widgetissä. **+** lisää jotain; napauta muualle, niin daili avautuu siihen kohtaan.
 
-Widgetit päivittyvät itsestään, kun perheesi muuttaa jotain (iPhonessa ei, jos olet pyyhkäissyt dailin pois; avaa silloin daili kerran). Kalenteriwidget näyttää tulevat päiväsi.
+Kalenteriwidget näyttää tulevat päiväsi.
 
 iPhonessa lukitusnäyttö voi näyttää seuraavan tapahtumasi, uuden muistiinpanon painikkeen ja laskureita. Otsikot pysyvät piilossa, kunnes avaat lukituksen.
 
-> Note: Widgetit näyttävät aktiivisen perheesi tai ryhmäsi.
+> Note: Widgetit näyttävät aktiivisen perheesi tai ryhmäsi. Jos jokin näyttää vanhentuneelta, avaa daili hetkeksi.

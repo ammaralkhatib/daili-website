@@ -16,8 +16,8 @@ daili má kalendárové widgety **Kalendár** a **Najbližšie** (s odpočtom do
 
 Úlohy, nákupy a návyky odškrtneš priamo na widgete. **+** pridá niečo nové; ťukni inam a daili sa otvorí práve tam.
 
-Widgety sa aktualizujú samy, keď niekto v rodine niečo zmení (na iPhone nie po zavretí daili potiahnutím nahor; vtedy daili raz otvor). Kalendárový widget ukazuje tvoje najbližšie dni.
+Kalendárový widget ukazuje tvoje najbližšie dni.
 
 Na iPhone môže zamknutá obrazovka ukazovať ďalšiu udalosť, tlačidlo novej poznámky a počítadlá. Názvy zostanú skryté, kým telefón neodomkneš.
 
-> Note: Widgety ukazujú tvoju aktívnu rodinu alebo skupinu.
+> Note: Widgety ukazujú tvoju aktívnu rodinu alebo skupinu. Ak sa ti niektorý zdá zastaraný, na chvíľu otvor daili.

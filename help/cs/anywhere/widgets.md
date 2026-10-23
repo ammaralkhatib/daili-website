@@ -16,8 +16,8 @@ daili má widgety pro kalendář (**Kalendář** a **Nejbližší** s odpočtem 
 
 Odškrtávej úkoly, nákupy a návyky přímo na widgetu. **+** něco přidá; klepni jinam a daili se otevře právě tam.
 
-Widgety se samy aktualizují, když někdo z rodiny něco změní (na iPhonu ne poté, co daili zavřeš přejetím; pak daili jednou otevři). Widget kalendáře ukazuje tvoje nejbližší dny.
+Widget kalendáře ukazuje tvoje nejbližší dny.
 
 Na iPhonu může zamčená obrazovka ukazovat **Nejbližší**, tlačítko **Nová poznámka** a počítadla. Názvy zůstanou skryté, dokud telefon neodemkneš.
 
-> Note: Widgety ukazují tvou aktivní rodinu nebo skupinu.
+> Note: Widgety ukazují tvou aktivní rodinu nebo skupinu. Když se ti nějaký zdá zastaralý, na chvíli otevři daili.

@@ -26,8 +26,8 @@ daili has widgets for your calendar (**Calendar**, and **Next up** with a countd
 
 Tick off to-dos, shopping and habits right on the widget. The **+** adds something; tap elsewhere to open daili there.
 
-Widgets update by themselves when your family changes something (on iPhone, not after you swiped daili away; then open daili once). The calendar widget shows your next days.
+The calendar widget shows your next days.
 
 On iPhone, the lock screen can show **Next up**, a **New note** button and counters. Titles stay hidden until you unlock.
 
-> Note: Widgets show your active family or group.
+> Note: Widgets show your active family or group. If one looks out of date, open daili for a moment.

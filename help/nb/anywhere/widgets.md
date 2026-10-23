@@ -16,8 +16,8 @@ daili har kalenderwidgeter (**Kalender** og **Neste** med nedtelling), **Innkjø
 
 Kryss av oppgaver, innkjøp og vaner rett på widgeten. **+** legger til noe; trykk et annet sted, så åpnes daili der.
 
-Widgetene oppdateres av seg selv når familien endrer noe (på iPhone ikke etter at du har sveipet bort daili; åpne da daili én gang). Kalenderwidgeten viser de neste dagene dine.
+Kalenderwidgeten viser de neste dagene dine.
 
 På iPhone kan låseskjermen vise **Neste**, en knapp for et nytt notat og tellere. Titler er skjult til du låser opp.
 
-> Note: Widgeter viser den aktive familien eller gruppen din.
+> Note: Widgeter viser den aktive familien eller gruppen din. Ser en utdatert ut, åpner du daili et øyeblikk.

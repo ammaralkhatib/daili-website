@@ -16,8 +16,8 @@ daili hat die Kalender-Widgets **Kalender** und **Nächster Termin** (mit Countd
 
 Hake Aufgaben, Einkäufe und Gewohnheiten direkt im Widget ab. Das **+** fügt etwas hinzu; tippst du woanders hin, öffnet sich daili an dieser Stelle.
 
-Widgets aktualisieren sich von selbst, wenn deine Familie etwas ändert (auf dem iPhone nicht, nachdem du daili weggewischt hast; öffne daili dann einmal). Das Kalender-Widget zeigt deine nächsten Tage.
+Das Kalender-Widget zeigt deine nächsten Tage.
 
 Auf dem iPhone kann der Sperrbildschirm **Nächster Termin**, einen Button **Neue Notiz** und Zähler zeigen. Titel bleiben verborgen, bis du entsperrst.
 
-> Note: Widgets zeigen deine aktive Familie oder Gruppe.
+> Note: Widgets zeigen deine aktive Familie oder Gruppe. Wirkt eins veraltet, öffne daili kurz.

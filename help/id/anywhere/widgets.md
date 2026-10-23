@@ -16,8 +16,8 @@ daili punya widget **Kalender** dan **Berikutnya** (dengan hitung mundur ke acar
 
 Centang tugas, belanjaan, dan kebiasaan langsung di widget. Tombol **+** menambahkan sesuatu; ketuk di tempat lain untuk membuka daili di bagian itu.
 
-Widget diperbarui sendiri saat keluarga Anda mengubah sesuatu (di iPhone, tidak setelah Anda menutup daili dengan mengusapnya; kalau begitu, buka daili sekali). Widget kalender menampilkan hari-hari Anda berikutnya.
+Widget kalender menampilkan hari-hari Anda berikutnya.
 
 Di iPhone, layar kunci bisa menampilkan acara berikutnya, tombol catatan baru, dan penghitung. Judul tetap tersembunyi sampai Anda membuka kunci ponsel.
 
-> Note: Widget menampilkan keluarga atau grup Anda yang aktif.
+> Note: Widget menampilkan keluarga atau grup Anda yang aktif. Jika ada yang terlihat usang, buka daili sebentar.

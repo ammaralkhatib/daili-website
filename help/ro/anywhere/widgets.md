@@ -16,8 +16,8 @@ daili are widgeturi pentru calendar (**Calendar** și **Urmează**, cu numărăt
 
 Bifează sarcini, cumpărături și obiceiuri direct pe widget. **+** adaugă ceva; apasă în altă parte ca să deschizi daili acolo.
 
-Widgeturile se actualizează singure când familia ta schimbă ceva (pe iPhone, nu și după ce ai închis daili glisând în sus; atunci deschide daili o dată). Widgetul de calendar îți arată zilele următoare.
+Widgetul de calendar îți arată zilele următoare.
 
 Pe iPhone, ecranul de blocare poate arăta următorul eveniment, un buton pentru o notiță nouă și contoare. Titlurile rămân ascunse până deblochezi telefonul.
 
-> Note: Widgeturile arată familia sau grupul tău activ.
+> Note: Widgeturile arată familia sau grupul tău activ. Dacă unul pare vechi, deschide daili pentru o clipă.

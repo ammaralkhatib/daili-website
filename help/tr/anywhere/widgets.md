@@ -16,8 +16,8 @@ daili'nin takvimin için (**Takvim** ve sıradaki etkinliğe geri sayan **Sırad
 
 Görevleri, alışverişi ve alışkanlıkları doğrudan widget'ta işaretle. **+** bir şey ekler; başka bir yere dokunursan daili orada açılır.
 
-Ailen bir şeyi değiştirdiğinde widget'lar kendiliğinden güncellenir (iPhone'da daili'yi yukarı kaydırarak kapattıysan bu olmaz; o zaman daili'yi bir kez aç). Takvim widget'ı önündeki günleri gösterir.
+Takvim widget'ı önündeki günleri gösterir.
 
 iPhone'da kilit ekranı sıradaki etkinliğini, yeni not düğmesini ve sayaçları gösterebilir. Kilidi açana kadar başlıklar gizli kalır.
 
-> Note: Widget'lar etkin aileni ya da grubunu gösterir.
+> Note: Widget'lar etkin aileni ya da grubunu gösterir. Biri eski görünüyorsa daili'yi kısa bir süre aç.

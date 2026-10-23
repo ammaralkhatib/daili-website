@@ -16,8 +16,8 @@ daili heeft twee agendawidgets (**Agenda**, en **Eerstvolgend** met een aftellin
 
 Vink taken, boodschappen en gewoontes direct op de widget af. De **+** voegt iets toe; tik ergens anders en daili opent op die plek.
 
-Widgets werken zichzelf bij als je gezin iets verandert (op iPhone niet nadat je daili hebt weggeveegd; open daili dan één keer). De agendawidget toont je komende dagen.
+De agendawidget toont je komende dagen.
 
 Op de iPhone kan het toegangsscherm je volgende afspraak tonen, een knop voor een nieuwe notitie en tellers. Titels blijven verborgen tot je ontgrendelt.
 
-> Note: Widgets tonen je actieve gezin of groep.
+> Note: Widgets tonen je actieve gezin of groep. Lijkt er een verouderd, open daili dan even.

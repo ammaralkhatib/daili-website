@@ -16,8 +16,8 @@ daili ma widżety z planami (**Kalendarz** i **Najbliższe** z odliczaniem do na
 
 Odhaczaj zadania, zakupy i nawyki prosto na widżecie. **+** pozwala coś dodać; dotknij w innym miejscu, a daili otworzy się właśnie tam.
 
-Widżety same się odświeżają, gdy ktoś z rodziny coś zmieni (na iPhonie nie po zamknięciu daili przesunięciem; wtedy otwórz daili jeden raz). Widżet kalendarza pokazuje najbliższe dni.
+Widżet kalendarza pokazuje najbliższe dni.
 
 Na iPhonie ekran blokady może pokazywać **Najbliższe**, przycisk **Nowa notatka** i liczniki. Tytuły są ukryte, dopóki nie odblokujesz telefonu.
 
-> Note: Widżety pokazują twoją aktywną rodzinę albo grupę.
+> Note: Widżety pokazują twoją aktywną rodzinę albo grupę. Jeśli któryś wygląda na nieaktualny, otwórz na chwilę daili.

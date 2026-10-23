@@ -16,8 +16,8 @@ O daili tem widgets para a sua agenda (**Calendário**, e **A seguir**, com cont
 
 Marque tarefas, compras e hábitos direto no widget. O **+** adiciona algo; toque em outro lugar para abrir o daili ali.
 
-Os widgets se atualizam sozinhos quando a sua família muda algo (no iPhone, não depois que você fechou o daili deslizando; nesse caso, abra o daili uma vez). O widget de calendário mostra os seus próximos dias.
+O widget de calendário mostra os seus próximos dias.
 
 No iPhone, a tela bloqueada pode mostrar **A seguir**, um botão **Nova nota** e contadores. Os títulos ficam ocultos até você desbloquear.
 
-> Note: Os widgets mostram a sua família ou grupo ativo.
+> Note: Os widgets mostram a sua família ou grupo ativo. Se algum parecer desatualizado, abra o daili por um instante.

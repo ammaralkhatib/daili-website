@@ -16,8 +16,8 @@ daili a des widgets pour ton programme (**Agenda**, et **À venir** avec un comp
 
 Coche tes tâches, tes courses et tes habitudes directement sur le widget. Le **+** ajoute quelque chose ; touche ailleurs pour ouvrir daili à cet endroit.
 
-Les widgets se mettent à jour tout seuls quand ta famille change quelque chose (sur iPhone, pas si tu as fermé daili d'un balayage ; ouvre alors daili une fois). Le widget d'agenda montre tes prochains jours.
+Le widget d'agenda montre tes prochains jours.
 
 Sur iPhone, l'écran verrouillé peut montrer ton prochain événement, un bouton de nouvelle note et des compteurs. Les titres restent masqués jusqu'au déverrouillage.
 
-> Note: Les widgets montrent ta famille ou ton groupe actif.
+> Note: Les widgets montrent ta famille ou ton groupe actif. Si l'un d'eux semble dépassé, ouvre daili un instant.

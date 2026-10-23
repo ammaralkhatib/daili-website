@@ -16,8 +16,8 @@ daili ha widget per i tuoi impegni (**Calendario**, e **Prossimo** con il conto 
 
 Spunta attività, spesa e abitudini direttamente sul widget. Il **+** aggiunge qualcosa; tocca altrove per aprire daili in quel punto.
 
-I widget si aggiornano da soli quando la tua famiglia cambia qualcosa (su iPhone no, se hai chiuso daili con uno swipe; in quel caso apri daili una volta). Il widget del calendario mostra i tuoi prossimi giorni.
+Il widget del calendario mostra i tuoi prossimi giorni.
 
 Su iPhone la schermata di blocco può mostrare **Prossimo**, un pulsante per una nuova nota e dei contatori. I titoli restano nascosti finché non sblocchi.
 
-> Note: I widget mostrano la tua famiglia o il tuo gruppo attivo.
+> Note: I widget mostrano la tua famiglia o il tuo gruppo attivo. Se uno sembra vecchio, apri daili per un momento.
