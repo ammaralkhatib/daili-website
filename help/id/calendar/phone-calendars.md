@@ -18,6 +18,6 @@ Kalender kerja, sekolah, atau olahraga bisa tampil di samping acara keluarga And
 
 ![Lembar Tambah kalender dengan Kalender Apple, Google Calendar, Berlangganan lewat tautan, dan Impor file (.ics).](calendar-other-calendars)
 
-Semuanya tercantum di bawah **Kalender lain**. Kalender ponsel bertanda **Hanya kamu**, tautan bertanda **Keluarga**. Ketuk baris ponsel untuk mengubah pilihan Anda. Untuk melepasnya, ketuk **⋮** → **Hapus**. daili bertanya dulu. Tidak ada yang terhapus di ponsel Anda, dan kalau ditambahkan lagi, pilihan Anda kembali.
+Semuanya tercantum di bawah **Kalender lain**. Kalender ponsel bertanda **Hanya Anda**, tautan bertanda **Keluarga**. Ketuk baris ponsel untuk mengubah pilihan Anda. Untuk melepasnya, ketuk **⋮** → **Hapus**. daili bertanya dulu. Tidak ada yang terhapus di ponsel Anda, dan kalau ditambahkan lagi, pilihan Anda kembali.
 
 > Note: Kalender ponsel tetap di ponsel ini: tidak ada yang diunggah, dan keluarga Anda tidak melihatnya.

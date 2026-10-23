@@ -12,7 +12,7 @@ translatedFrom: 2026-10-23
 3. **Escolher o visual**: escolha idade, tom de pele, cabelo e mais, e toque em **Criar avatar**. Crianças só têm esta opção: nunca usamos a foto delas.
 4. Você recebe 3 versões. Toque na sua favorita e depois em **Usar este avatar**.
 
-![Escolher o visual com Adulto, um tom de pele e cabelo Comprido ondulado e Castanho-escuro escolhidos. Criar avatar está circulado.](account-avatar-ai-look)
+![Escolher o visual com Adulto, um tom de pele e cabelo Longo ondulado e Castanho-escuro escolhidos. Criar avatar está circulado.](account-avatar-ai-look)
 
 Todas as versões ficam só neste celular (as 30 mais recentes por pessoa), em **Seus avatares de IA**. Toque em uma para usar de novo, de graça. Toque e segure para salvar, compartilhar ou apagar.
 

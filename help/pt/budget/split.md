@@ -18,8 +18,8 @@ Cada **Despesa compartilhada** é dividida igualmente. Em **Pago por**, um convi
 
 ![A tela Dividir despesas com um convidado, marcado como Convidado, e Quem paga quem. O botão de compartilhar no canto superior direito está circulado.](budget-split)
 
-Toque em compartilhar no canto superior direito. **Enviar resumo** manda por mensagem quem paga quem. **Link para convidados** é uma página só de leitura, sem precisar do app: quem criou o orçamento ou um administrador toca em **Criar link** e depois em **Copiar** ou **Partilhar**. **Deixar de partilhar** desativa o link.
+Toque em compartilhar no canto superior direito. **Enviar resumo** manda por mensagem quem paga quem. **Link para convidados** é uma página só de leitura, sem precisar do app: quem criou o orçamento ou um administrador toca em **Criar link** e depois em **Copiar** ou **Compartilhar**. **Parar de compartilhar** desativa o link.
 
-![A janela Partilhar com convidados: Enviar resumo, e o link com Copiar, Partilhar e Deixar de partilhar circulados.](budget-share)
+![A janela Compartilhar com convidados: Enviar resumo, e o link com Copiar, Compartilhar e Parar de compartilhar circulados.](budget-share)
 
 > Note: Um orçamento que só você vê só divide despesas com convidados. Um convidado que ainda aparece em lançamentos não pode ser apagado.
