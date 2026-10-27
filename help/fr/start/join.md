@@ -2,15 +2,15 @@
 id: start-join
 title: Rejoindre une famille avec un code ou un QR code
 summary: Tu as reçu une invitation ? Saisis le code à 6 chiffres ou scanne le QR code pour rejoindre.
-keywords: rejoindre, code d'invitation, code, qr, scanner, rejoindre une famille, conjoint, femme, mari, grands-parents
-translatedFrom: 2026-10-12
+keywords: rejoindre, code d'invitation, code, qr, scanner, rejoindre une famille, conjoint, femme, mari, grands-parents, lien d'invitation
+translatedFrom: 2026-10-27
 ---
 Quelqu'un de la famille peut t'envoyer une invitation. Tu rejoins alors en quelques touches.
 
 ![L'écran Rejoindre une famille ou un groupe avec le champ Code d'invitation. Le bouton Scanner le QR code est entouré.](start-join)
 
 1. Touche **Rejoindre une famille ou un groupe**.
-2. Saisis le code à 6 chiffres sous **Code d'invitation** et touche **Rechercher**. Ou touche **Scanner le QR code** et vise leur code avec l'appareil photo.
+2. Saisis le code à 6 chiffres sous **Code d'invitation**, ou colle le lien d'invitation à cet endroit, et touche **Rechercher**. Ou touche **Scanner le QR code** et vise leur code avec l'appareil photo.
 3. Vérifie le nom de la famille et ses membres, puis touche **Rejoindre** suivi du nom de la famille.
 
 C'est ta première famille ? daili te demande alors **Pour quoi veux-tu utiliser Daili ?** Choisis ce que l'écran d'accueil affiche et touche **Continuer**, ou **Passer**.

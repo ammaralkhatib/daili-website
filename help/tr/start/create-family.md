@@ -3,7 +3,7 @@ id: start-create-family
 title: Aileni ya da grubunu oluştur
 summary: Yeni bir aile ya da grup kur, böylece herkes tek bir takvimi ve aynı listeleri paylaşsın.
 keywords: aile oluştur, yeni aile, başla, kurulum, grup, hane, aile adı, renk, resim
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
 Giriş yaptıktan sonra daili senden bir aile ya da grup oluşturmanı veya birine katılmanı ister.
 
@@ -12,13 +12,15 @@ Giriş yaptıktan sonra daili senden bir aile ya da grup oluşturmanı veya biri
 1. **Aile veya grup oluştur** düğmesine dokun.
 2. **Aile veya grup adı** alanına bir ad yaz, örneğin "Yılmaz Ailesi" ya da "Futbol takımı".
 3. **Renk** bölümünden bir renk seç.
-4. **Oluştur** düğmesine dokun. daili yeni ana ekranını açar.
+4. **Oluştur** düğmesine dokun.
 
-İlk ailen mi? Ana ekran açılmadan önce daili sorar: **Daili'yi ne için kullanmak istiyorsun?** Ana ekranın ne göstereceğini seç ve **Devam** ya da **Atla** düğmesine dokun.
+İlk ailen mi? daili sorar: **Daili'yi ne için kullanmak istiyorsun?** Ana ekranın ne göstereceğini seç ve **Devam** ya da **Atla** düğmesine dokun.
 
-Artık ailenin sahibisin. Sonra diğerlerini davet et, böylece herkes aynı planı görsün.
+Artık ailenin sahibisin. Davet ekranı bir kez açılır; diğerlerini davet edebilir ya da **Daha sonra** düğmesine dokunabilirsin.
 
-Yeni hesap mı? Önce bir adım gelir: **Merhaba! Sen kimsin?** Resmini seç ve adını kontrol et. Ailen ikisini de görür. **Devam** ya da **Atla** düğmesine dokun.
+Hafta, ülkende alışılmış günde başlar ve oranın resmî tatillerini gösterir. İkisini de **Takvim** → dişli → **Hafta başlangıcı** ve **Tatiller** altından değiştirebilirsin.
+
+Yeni hesap mı? Önce bir adım gelir: **Merhaba! Sen kimsin?** Resmini seç ve adını kontrol et. **Devam** ya da **Atla** düğmesine dokun.
 
 ![Merhaba! Sen kimsin? adımı; bir resim seçilmiş ve ad doldurulmuş.](start-you-step)
 

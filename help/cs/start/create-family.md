@@ -3,7 +3,7 @@ id: start-create-family
 title: Vytvořit rodinu nebo skupinu
 summary: Založ novou rodinu nebo skupinu, aby všichni sdíleli jeden kalendář a stejné seznamy.
 keywords: vytvořit rodinu, nová rodina, začít, nastavit, skupina, domácnost, název rodiny, barva, obrázek
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
 Po přihlášení tě daili nabídne vytvoření rodiny nebo skupiny, nebo připojení k nějaké existující.
 
@@ -12,13 +12,15 @@ Po přihlášení tě daili nabídne vytvoření rodiny nebo skupiny, nebo přip
 1. Klepni na **Vytvořit rodinu nebo skupinu**.
 2. Napiš název do pole **Název rodiny nebo skupiny**, třeba „Novákovi“ nebo „Fotbalový tým“.
 3. V části **Barva** vyber barvu.
-4. Klepni na **Vytvořit**. daili otevře tvou novou domovskou obrazovku.
+4. Klepni na **Vytvořit**.
 
-Tvoje první rodina? Než se otevře domovská obrazovka, daili se zeptá: **K čemu chceš Daili používat?** Vyber, co bude domovská obrazovka ukazovat, a klepni na **Pokračovat**, nebo na **Přeskočit**.
+Tvoje první rodina? daili se zeptá: **K čemu chceš Daili používat?** Vyber, co bude domovská obrazovka ukazovat, a klepni na **Pokračovat**, nebo na **Přeskočit**.
 
-Teď jsi vlastník. Pozvi hned ostatní, ať všichni vidí stejný plán.
+Teď jsi vlastník. Jednou se otevře obrazovka pozvánek, kde můžeš pozvat ostatní, nebo klepnout na **Později**.
 
-Nový účet? Nejdřív přijde jeden krok: **Ahoj! Kdo jsi?** Vyber si obrázek a zkontroluj své jméno. Tvoje rodina uvidí obojí. Klepni na **Pokračovat**, nebo na **Přeskočit**.
+Týden začíná dnem obvyklým ve tvé zemi a ukazuje její svátky. Obojí změníš v **Kalendář** → ozubené kolečko → **Začátek týdne** a **Svátky**.
+
+Nový účet? Nejdřív přijde jeden krok: **Ahoj! Kdo jsi?** Vyber si obrázek a zkontroluj své jméno. Klepni na **Pokračovat**, nebo na **Přeskočit**.
 
 ![Krok Ahoj! Kdo jsi? s vybraným obrázkem a vyplněným jménem.](start-you-step)
 

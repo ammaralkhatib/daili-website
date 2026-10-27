@@ -3,7 +3,7 @@ id: notes-files
 title: Tempat gambar dan rekaman catatan disimpan
 summary: Simpan gambar dan rekaman catatan di ponsel ini secara gratis, atau di Cloud Daili dengan Daili Plus.
 keywords: cloud daili, penyimpanan, cadangan, gambar, foto, rekaman, file, ponsel, unggah, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Buka **Pengaturan** → **Catatan** → **Gambar dan rekaman**.
 2. Pilih **Di ponsel ini** atau **Cloud Daili**.
@@ -20,4 +20,4 @@ Saat Plus berakhir, tidak ada yang dihapus: file di cloud tetap ada, file baru d
 
 Gambar tangan hanya bisa diedit di ponsel tempat gambar itu dibuat. Gambar tangan di cloud butuh koneksi.
 
-> Note: Di Android, gambar dan rekaman catatan tidak ikut dalam cadangan ponsel. Cloud Daili menyimpannya dengan aman.
+> Note: Di Android, gambar dan rekaman catatan hanya pindah lewat transfer langsung dari ponsel ke ponsel, bukan lewat cadangan Google. Cloud Daili menyimpannya dengan aman.

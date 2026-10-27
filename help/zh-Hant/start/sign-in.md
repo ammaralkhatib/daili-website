@@ -3,7 +3,7 @@ id: start-sign-in
 title: 用 Google、Apple 或電子郵件登入
 summary: 建立帳號或重新登入，忘記密碼時也能重設。
 keywords: 登入, 註冊, 帳號, google, apple, 電子郵件, email, 密碼, 忘記密碼, 重設密碼
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 使用 daili 需要一個帳號，一分鐘就好。
 
@@ -18,4 +18,4 @@ translatedFrom: 2026-10-16
 
 繼續就表示你同意**使用條款**；**隱私權政策**說明 daili 如何處理你的資料。兩者的連結都在登入按鈕下方。
 
-> Note: **使用Apple繼續**只有 iPhone 上才有。在 Android 上，請用 Google 或電子郵件。
+> Note: **使用Apple繼續**只有 iPhone 上才有。在 Android 上，請用 Google 或電子郵件。重新安裝 daili 後，需要再登入一次。

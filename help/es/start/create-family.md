@@ -3,7 +3,7 @@ id: start-create-family
 title: Crear tu familia o grupo
 summary: Crea una familia o un grupo nuevo para que todos compartan un calendario y las mismas listas.
 keywords: crear familia, familia nueva, empezar, configurar, grupo, hogar, nombre de la familia, color, foto
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
 Después de iniciar sesión, daili te pide que crees una familia o un grupo, o que te unas a uno.
 
@@ -12,13 +12,15 @@ Después de iniciar sesión, daili te pide que crees una familia o un grupo, o q
 1. Toca **Crear una familia o un grupo**.
 2. Escribe un nombre en **Nombre de la familia o del grupo**, como «Los García» o «Equipo de fútbol».
 3. Elige un **Color**.
-4. Toca **Crear**. daili abre tu nueva pantalla de inicio.
+4. Toca **Crear**.
 
-¿Tu primera familia? Antes de que se abra la pantalla de inicio, daili pregunta **¿Para qué quieres usar Daili?** Elige lo que muestra la pantalla de inicio y toca **Continuar**, o **Omitir**.
+¿Tu primera familia? daili pregunta **¿Para qué quieres usar Daili?** Elige lo que muestra la pantalla de inicio y toca **Continuar**, o **Omitir**.
 
-Ahora eres el propietario. Invita después a los demás, para que todos vean el mismo plan.
+Ahora eres el propietario. La pantalla de invitación se abre una vez, para que invites a los demás o toques **Más tarde**.
 
-¿Cuenta nueva? Antes viene un paso: **¡Hola! ¿Quién eres?** Elige tu foto y revisa tu nombre. Tu familia ve las dos cosas. Toca **Continuar**, o **Omitir**.
+La semana empieza el día habitual en tu país y muestra sus días festivos. Puedes cambiar las dos cosas en **Calendario** → engranaje, en **La semana empieza el** y **Días festivos**.
+
+¿Cuenta nueva? Antes viene un paso: **¡Hola! ¿Quién eres?** Elige tu foto y revisa tu nombre. Toca **Continuar**, o **Omitir**.
 
 ![El paso ¡Hola! ¿Quién eres?, con una foto elegida y el nombre ya escrito.](start-you-step)
 

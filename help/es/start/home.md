@@ -3,11 +3,11 @@ id: start-home
 title: Un paseo rápido por tu pantalla de inicio
 summary: La semana de tu familia arriba, un mosaico para cada área y un botón + para añadir cosas rápido.
 keywords: inicio, panel, empezar, mosaicos, semana, resumen, pantalla principal, tiempo
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-La pantalla de inicio es donde se abre daili. Muestra lo que viene y te lleva a cualquier sitio con un toque.
+La pantalla de inicio es donde se abre daili.
 
-1. La tarjeta de arriba muestra el próximo evento de tu familia. Tócala para ver toda la semana y añadir un evento. También muestra cumpleaños, comidas, tareas, notas y facturas. Un día que solo tiene eso lleva un punto gris.
+1. La tarjeta de arriba muestra el próximo evento de tu familia, incluidos los eventos de todo el día de hoy y lo que está pasando ahora mismo. Tócala para ver toda la semana y añadir un evento. También muestra cumpleaños, comidas, tareas, notas y facturas. Un día que solo tiene eso lleva un punto gris.
 2. Cada mosaico abre un área, como **Compras** o **Notas**. La flechita de un mosaico muestra un resumen rápido.
 3. Toca el botón redondo **+** abajo a la derecha para añadir un evento, una lista de la compra o una lista de tareas.
 

@@ -3,7 +3,7 @@ id: notes-files
 title: Gdzie są przechowywane zdjęcia i nagrania z notatek
 summary: Trzymaj zdjęcia i nagrania z notatek za darmo na tym telefonie albo w Chmurze Daili z Daili Plus.
 keywords: chmura daili, miejsce na pliki, kopia zapasowa, zdjęcia, nagrania, pliki, telefon, przesyłanie, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Otwórz **Ustawienia** → **Notatki** → **Zdjęcia i nagrania**.
 2. Wybierz **Na tym telefonie** albo **Chmura Daili**.
@@ -20,4 +20,4 @@ Gdy Plus się skończy, nic nie zostanie usunięte: pliki w chmurze zostają, a 
 
 Rysunek można edytować tylko na telefonie, na którym powstał. Rysunek w chmurze wymaga internetu.
 
-> Note: Na Androidzie zdjęć i nagrań z notatek nie ma w kopii zapasowej telefonu. Chmura Daili przechowuje je bezpiecznie.
+> Note: Na Androidzie zdjęcia i nagrania z notatek przenoszą się tylko przy przenoszeniu danych z telefonu na telefon, nie przez kopię zapasową Google. Chmura Daili przechowuje je bezpiecznie.

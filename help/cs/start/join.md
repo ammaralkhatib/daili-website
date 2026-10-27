@@ -2,15 +2,15 @@
 id: start-join
 title: Připojit se k rodině pomocí kódu nebo QR kódu
 summary: Máš pozvánku? Zadej 6místný kód nebo naskenuj QR kód a připoj se.
-keywords: připojit se, kód pozvánky, kód, qr, naskenovat, připojit se k rodině, partner, manželka, manžel, prarodiče
-translatedFrom: 2026-10-12
+keywords: připojit se, kód pozvánky, kód, qr, naskenovat, připojit se k rodině, partner, manželka, manžel, prarodiče, odkaz s pozvánkou
+translatedFrom: 2026-10-27
 ---
 Někdo z rodiny ti může poslat pozvánku. Pak se připojíš pár klepnutími.
 
 ![Obrazovka Připojit se k rodině nebo skupině s polem Kód pozvánky. Zakroužkované je tlačítko Naskenovat QR kód.](start-join)
 
 1. Klepni na **Připojit se k rodině nebo skupině**.
-2. Zadej 6místný kód do pole **Kód pozvánky** a klepni na **Vyhledat**. Nebo klepni na **Naskenovat QR kód** a namiř fotoaparát na kód.
+2. Zadej 6místný kód do pole **Kód pozvánky**, nebo tam vlož odkaz s pozvánkou, a klepni na **Vyhledat**. Nebo klepni na **Naskenovat QR kód** a namiř fotoaparát na kód.
 3. Zkontroluj název rodiny a její členy a pak klepni na **Připojit se k rodině** s názvem rodiny.
 
 Tvoje první rodina? Pak se daili zeptá: **K čemu chceš Daili používat?** Vyber, co bude domovská obrazovka ukazovat, a klepni na **Pokračovat**, nebo na **Přeskočit**.

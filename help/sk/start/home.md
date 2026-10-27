@@ -3,11 +3,11 @@ id: start-home
 title: Rýchla prehliadka domovskej obrazovky
 summary: Týždeň tvojej rodiny navrchu, dlaždica pre každú oblasť a tlačidlo + na rýchle pridávanie.
 keywords: domovská obrazovka, prehľad, začiatok, dlaždice, týždeň, hlavná obrazovka, nástenka, počasie
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-Domovská obrazovka je miesto, kde sa daili otvorí. Ukazuje, čo ťa čaká, a jedným ťuknutím sa dostaneš kamkoľvek.
+Domovská obrazovka je miesto, kde sa daili otvorí.
 
-1. Karta hore ukazuje najbližšiu udalosť tvojej rodiny. Ťukni na ňu a uvidíš celý týždeň a môžeš pridať udalosť. Ukazuje aj narodeniny, jedlá, úlohy, poznámky a účty. Deň, v ktorom je len toto, dostane sivú bodku.
+1. Karta hore ukazuje najbližšiu udalosť tvojej rodiny, vrátane dnešných celodenných udalostí a toho, čo práve prebieha. Ťukni na ňu a uvidíš celý týždeň a môžeš pridať udalosť. Ukazuje aj narodeniny, jedlá, úlohy, poznámky a účty. Deň, v ktorom je len toto, dostane sivú bodku.
 2. Každá dlaždica otvára jednu oblasť, napríklad **Nákupy** alebo **Poznámky**. Malá šípka na dlaždici ukáže rýchly prehľad.
 3. Ťukni na okrúhle tlačidlo **+** vpravo dole a pridaj udalosť, nákupný zoznam alebo zoznam úloh.
 

@@ -3,7 +3,7 @@ id: notes-files
 title: Missä muistiinpanojen kuvat ja tallenteet säilytetään
 summary: Säilytä muistiinpanojen kuvat ja tallenteet tässä puhelimessa ilmaiseksi tai Daili-pilvessä Daili Plusilla.
 keywords: daili-pilvi, tallennustila, varmuuskopio, kuvat, tallenteet, tiedostot, puhelin, lataus, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Avaa **Asetukset** → **Muistiinpanot** → **Kuvat ja tallenteet**.
 2. Valitse **Tässä puhelimessa** tai **Daili-pilvi**.
@@ -20,4 +20,4 @@ Kun Plus päättyy, mitään ei poisteta: pilven tiedostot pysyvät siellä, ja 
 
 Piirrosta voi muokata vain siinä puhelimessa, jolla se tehtiin. Pilvessä oleva piirros tarvitsee nettiyhteyden.
 
-> Note: Androidissa muistiinpanojen kuvat ja tallenteet eivät ole puhelimen varmuuskopiossa. Daili-pilvi pitää ne tallessa.
+> Note: Androidissa muistiinpanojen kuvat ja tallenteet siirtyvät vain suoralla siirrolla puhelimesta toiseen, eivät Googlen varmuuskopion mukana. Daili-pilvi pitää ne tallessa.

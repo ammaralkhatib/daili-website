@@ -7,7 +7,7 @@ keywords: daili cloud, storage, backup, pictures, recordings, files, phone, uplo
 routes: /settings
 tryIt: /settings
 since: 1.9.0
-updated: 2026-10-06
+updated: 2026-10-27
 media: notes-files
 order: 4
 related: notes-pictures-voice, account-plus, vault-where
@@ -27,4 +27,4 @@ When Plus ends, nothing is deleted: cloud files stay, new ones stay on the phone
 
 A drawing can be edited only on the phone it was made on. A cloud drawing needs a connection.
 
-> Note: On Android, note pictures and recordings are not in the phone backup. Daili cloud keeps them safe.
+> Note: On Android, note pictures and recordings move only by phone-to-phone transfer, not Google backup. Daili cloud keeps them safe.

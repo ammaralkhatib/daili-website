@@ -3,7 +3,7 @@ id: notes-files
 title: Waar afbeeldingen en opnames uit notities worden bewaard
 summary: Bewaar afbeeldingen en opnames uit notities gratis op deze telefoon, of in de Daili-cloud met Daili Plus.
 keywords: daili-cloud, opslag, back-up, afbeeldingen, foto's, opnames, bestanden, telefoon, uploaden, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Open **Instellingen** → **Notities** → **Afbeeldingen en opnames**.
 2. Kies **Op deze telefoon** of **Daili-cloud**.
@@ -20,4 +20,4 @@ Stopt Plus, dan wordt er niets verwijderd: cloudbestanden blijven, nieuwe blijve
 
 Een tekening kun je alleen bewerken op de telefoon waarop hij is gemaakt. Een tekening in de cloud heeft een verbinding nodig.
 
-> Note: Op Android staan afbeeldingen en opnames uit notities niet in de telefoonback-up. De Daili-cloud bewaart ze veilig.
+> Note: Op Android verhuizen afbeeldingen en opnames uit notities alleen mee bij een overdracht van telefoon naar telefoon, niet via de Google-back-up. De Daili-cloud bewaart ze veilig.

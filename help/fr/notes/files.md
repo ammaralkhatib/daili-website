@@ -3,7 +3,7 @@ id: notes-files
 title: Où sont gardées les images et les enregistrements des notes
 summary: Garde les images et enregistrements des notes sur ce téléphone gratuitement, ou dans le Cloud Daili avec Daili Plus.
 keywords: cloud daili, stockage, sauvegarde, images, photos, enregistrements, fichiers, téléphone, envoi, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Ouvre **Paramètres** → **Notes** → **Images et enregistrements**.
 2. Choisis **Sur ce téléphone** ou **Cloud Daili**.
@@ -20,4 +20,4 @@ Quand Plus se termine, rien n’est supprimé : les fichiers du cloud y restent,
 
 Un dessin ne peut être modifié que sur le téléphone où il a été fait. Un dessin dans le cloud a besoin d’une connexion.
 
-> Note: Sur Android, les images et les enregistrements des notes ne sont pas dans la sauvegarde du téléphone. Le Cloud Daili les garde en sécurité.
+> Note: Sur Android, les images et les enregistrements des notes ne passent d’un téléphone à l’autre que par un transfert direct, pas par la sauvegarde Google. Le Cloud Daili les garde en sécurité.

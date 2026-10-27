@@ -2,8 +2,8 @@
 id: calendar-reminders
 title: Mementouri și mementoul implicit
 summary: Primește un memento înainte să înceapă un eveniment și alege mementourile cu care pornește fiecare eveniment nou.
-keywords: memento, amintire, alertă, notificare, înainte de eveniment, memento implicit, alarmă, anunț
-translatedFrom: 2026-09-24
+keywords: memento, amintire, alertă, notificare, înainte de eveniment, memento implicit, alarmă, anunț, toată ziua
+translatedFrom: 2026-10-27
 ---
 Un memento e o notificare înainte să înceapă evenimentul. Un eveniment poate avea până la 5.
 
@@ -12,6 +12,8 @@ Un memento e o notificare înainte să înceapă evenimentul. Un eveniment poate
 1. Într-un eveniment nou, apasă pe **Adaugă memento** la **Memento**.
 2. Bifează unul sau mai multe momente, de exemplu cu 15 minute sau cu o zi înainte. Pentru alt moment, apasă pe **Personalizat…**.
 3. Apasă pe **Salvează** în eveniment.
+
+Un eveniment de toată ziua oferă **Dimineața (9:00)**, **Cu o zi înainte (9:00)** și **Cu o săptămână înainte (9:00)**. Toate vin la ora 9:00.
 
 Vrei aceleași mementouri la fiecare eveniment nou? În **Calendar**, apasă pe rotița din dreapta sus. La **Mementouri**, apasă pe **Memento implicit** și bifează până la 5. Lasă pornit acolo **Mementouri pentru evenimente**, altfel pe acest telefon nu ajunge niciun memento.
 

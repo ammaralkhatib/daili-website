@@ -3,7 +3,7 @@ id: start-sign-in
 title: Google, Apple, 이메일로 로그인하기
 summary: 계정을 만들거나 다시 로그인하고, 비밀번호를 잊었다면 재설정하세요.
 keywords: 로그인, 회원가입, 가입, 계정, google, apple, 이메일, 비밀번호, 비밀번호 찾기, 비밀번호 재설정
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 daili를 쓰려면 계정이 필요해요. 1분이면 돼요.
 
@@ -18,4 +18,4 @@ daili를 쓰려면 계정이 필요해요. 1분이면 돼요.
 
 계속하면 **이용약관**에 동의하게 돼요. daili가 데이터를 어떻게 다루는지는 **개인정보 처리방침**에서 설명해요. 둘 다 로그인 버튼 아래에 링크가 있어요.
 
-> Note: **Apple로 계속하기**는 iPhone에만 있어요. Android에서는 Google이나 이메일을 쓰세요.
+> Note: **Apple로 계속하기**는 iPhone에만 있어요. Android에서는 Google이나 이메일을 쓰세요. daili를 다시 설치하면 다시 로그인해야 해요.

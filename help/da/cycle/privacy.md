@@ -3,12 +3,12 @@ id: cycle-privacy
 title: Cyklus: påmindelser, lås, kalender og dine data
 summary: Indstil private påmindelser, lås Cyklus, vis den i din egen kalender, og hold dine data på din telefon.
 keywords: påmindelse, lås, face id, fingeraftryk, privatliv, kalender, eksport, import, sikkerhedskopi, slet
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Tryk på tandhjulet i Cyklus for **Indstillinger for cyklus**.
 
 1. **Påmindelser**: **Påmindelse om menstruation** kommer et par dage før. **Spørg, om min menstruation er startet** er slået til fra start og spørger dagen efter det forventede interval. Låseskærmen viser kun »Du har en påmindelse. Tryk for at åbne«.
-2. **Lås Cyklus**: beder om Face ID, fingeraftryk eller telefonens kode. Appvælgeren skjuler så Cyklus, og Android blokerer skærmbilleder af den.
+2. **Lås Cyklus**: beder om Face ID, fingeraftryk eller telefonens kode. Appvælgeren skjuler altid Cyklus, og Android blokerer skærmbilleder af den.
 3. **Vis i min kalender**: kalenderen på denne telefon viser en dråbe, udfyldt hvis registreret, kun omrids hvis forudsagt. Slået fra til at starte med; familien ser den aldrig.
 4. **Importér (CSV)** henter en fil fra **Eksportér (CSV)** tilbage og beholder de dage, der allerede er her.
 

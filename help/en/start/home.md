@@ -7,14 +7,14 @@ keywords: home, dashboard, start, tiles, week, overview, main screen, weather
 routes: /
 tryIt: /
 since: 1.0.0
-updated: 2026-10-12
+updated: 2026-10-27
 order: 1
 media: start-home
 related: start-edit-home, start-today, family-invite, start-weather
 ---
-Home is where daili opens. It shows what's coming up and gets you anywhere in one tap.
+Home is where daili opens.
 
-1. The card at the top shows your family's next event. Tap it to see the whole week and add an event. It also lists birthdays, meals, to-dos, notes and bills. A day with only those gets a grey dot.
+1. The top card shows your family's next event, including today's all-day events and anything on right now. Tap it to see the whole week and add an event. It also lists birthdays, meals, to-dos, notes and bills. A day with only those gets a grey dot.
 2. Each tile opens one area, like **Shopping** or **Notes**. A tile's small arrow shows a quick summary.
 3. Tap the round **+** button at the bottom right to add an event, a shopping list or a to-do list.
 

@@ -3,7 +3,7 @@ id: notes-files
 title: Dove sono tenute le immagini e le registrazioni delle note
 summary: Tieni immagini e registrazioni delle note su questo telefono gratis, o nel Cloud Daili con Daili Plus.
 keywords: cloud daili, spazio, archiviazione, backup, immagini, foto, registrazioni, file, telefono, caricamento, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Apri **Impostazioni** → **Note** → **Immagini e registrazioni**.
 2. Scegli **Su questo telefono** o **Cloud Daili**.
@@ -20,4 +20,4 @@ Quando Plus finisce, non si elimina niente: i file nel cloud restano lì, quelli
 
 Un disegno si può modificare solo sul telefono su cui è stato fatto. Un disegno nel cloud ha bisogno di una connessione.
 
-> Note: Su Android, le immagini e le registrazioni delle note non sono nel backup del telefono. Il Cloud Daili le tiene al sicuro.
+> Note: Su Android, le immagini e le registrazioni delle note passano a un altro telefono solo con il trasferimento diretto da telefono a telefono, non con il backup di Google. Il Cloud Daili le tiene al sicuro.

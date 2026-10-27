@@ -1,21 +1,22 @@
 ---
 id: account-verify-email
 title: Potwierdź e-mail i dowiedz się, dlaczego to ważne
-summary: Z potwierdzonym e-mailem możesz zapraszać bliskich e-mailem, dać dziecku własne logowanie i szukać przepisów w sieci.
-keywords: potwierdź, potwierdzenie, weryfikacja, e-mail, potwierdź e-mail, wyślij ponownie, niepotwierdzony, link, skrzynka, spam, zweryfikowany
-translatedFrom: 2026-09-30
+summary: Z potwierdzonym e-mailem możesz zapraszać bliskich e-mailem, dać dziecku własne logowanie, szukać przepisów w sieci i pobrać swoje dane.
+keywords: potwierdź, potwierdzenie, weryfikacja, e-mail, potwierdź e-mail, wyślij ponownie, niepotwierdzony, link, skrzynka, spam, zweryfikowany, zmień e-mail
+translatedFrom: 2026-10-27
 ---
-Gdy rejestrujesz się e-mailem, daili wysyła ci link, żeby sprawdzić, czy adres należy do ciebie. Dopóki go nie dotkniesz, trzy rzeczy są zablokowane: zapraszanie kogoś e-mailem, dawanie dziecku własnego logowania i szukanie przepisów w sieci.
+Gdy rejestrujesz się e-mailem, daili wysyła ci link, żeby sprawdzić, czy adres należy do ciebie. Dopóki go nie potwierdzisz, kilka rzeczy jest zablokowanych: zapraszanie kogoś e-mailem, dawanie dziecku własnego logowania, szukanie przepisów w sieci i pobieranie swoich danych.
 
 ![Góra ekranu Ustawienia. Zakreślona jest karta E-mail niepotwierdzony z przyciskiem Wyślij ponownie.](account-verify-email)
 
-1. Dotknij linku w e-mailu od daili. Działa przez 3 dni; wygasły link zaproponuje ci nowy.
+1. Dotknij linku w e-mailu od daili, a potem **Potwierdź adres** na stronie, która się otworzy. Link działa przez 3 dni.
 2. Nic nie przyszło? Zajrzyj do folderu spam.
-3. Dalej nic? Otwórz **Ustawienia**. Na karcie **E-mail niepotwierdzony** dotknij **Wyślij ponownie**. Potem czeka minutę.
-4. Po powrocie do daili przy twoim adresie widać **Zweryfikowany**.
+3. Dalej nic? Otwórz **Ustawienia**. Na karcie **E-mail niepotwierdzony** dotknij **Wyślij ponownie**.
 
-E-maila nie dało się doręczyć? daili ci to powie, a **Zmień adres e-mail** naprawi to od razu na miejscu. Po dwóch ponownych wysyłkach albo zwrocie **E-mail nie dotarł?** da ci osobistą pomoc w ciągu doby.
+Zły adres? Otwórz **Ustawienia**, dotknij swojego imienia, a potem **Zmień adres e-mail**. Stary adres dostanie powiadomienie, inne urządzenia zostaną wylogowane, a newsletter też przejdzie na nowy adres.
 
-Logujesz się przez Google albo Apple albo adresem iCloud? Wtedy twój e-mail jest już potwierdzony.
+Po dwóch ponownych wysyłkach albo zwrocie **E-mail nie dotarł?** da ci osobistą pomoc w ciągu doby.
+
+Logujesz się przez Google albo Apple albo masz adres iCloud? Wtedy jest już potwierdzony.
 
 > Note: Żeby dołączyć do rodziny za pomocą kodu, nie potrzebujesz potwierdzonego e-maila.

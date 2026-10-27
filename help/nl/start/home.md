@@ -3,11 +3,11 @@ id: start-home
 title: Een korte rondleiding door je startscherm
 summary: De week van je gezin bovenaan, een tegel voor elk onderdeel en een +-knop om snel iets toe te voegen.
 keywords: startscherm, dashboard, start, tegels, week, overzicht, hoofdscherm, weer
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-daili opent op het startscherm. Het laat zien wat er aankomt en brengt je met één tik overal naartoe.
+daili opent op het startscherm.
 
-1. De kaart bovenaan toont de eerstvolgende afspraak van je gezin. Tik erop om de hele week te zien en een afspraak toe te voegen. Hij toont ook verjaardagen, maaltijden, taken, notities en rekeningen. Een dag met alleen die dingen krijgt een grijs stipje.
+1. De kaart bovenaan toont de eerstvolgende afspraak van je gezin, ook de afspraken van vandaag die de hele dag duren en alles wat nu bezig is. Tik erop om de hele week te zien en een afspraak toe te voegen. Hij toont ook verjaardagen, maaltijden, taken, notities en rekeningen. Een dag met alleen die dingen krijgt een grijs stipje.
 2. Elke tegel opent één onderdeel, zoals **Boodschappen** of **Notities**. Het kleine pijltje op een tegel toont een kort overzicht.
 3. Tik rechtsonder op de ronde **+**-knop om een afspraak, een boodschappenlijst of een takenlijst toe te voegen.
 

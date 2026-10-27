@@ -3,11 +3,11 @@ id: start-home
 title: Eine kurze Tour durch deinen Startbildschirm
 summary: Die Woche deiner Familie oben, eine Kachel für jeden Bereich und ein +-Button, um schnell etwas hinzuzufügen.
 keywords: startbildschirm, übersicht, start, kacheln, woche, dashboard, hauptbildschirm, wetter
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-Mit dem Startbildschirm öffnet sich daili. Er zeigt, was ansteht, und bringt dich mit einem Tipp überallhin.
+Mit dem Startbildschirm öffnet sich daili.
 
-1. Die Karte oben zeigt den nächsten Termin deiner Familie. Tippe darauf, um die ganze Woche zu sehen und einen Termin hinzuzufügen. Sie zeigt auch Geburtstage, Essen, Aufgaben, Notizen und Rechnungen. Ein Tag, an dem nur so etwas ansteht, bekommt einen grauen Punkt.
+1. Die Karte oben zeigt den nächsten Termin deiner Familie, auch die ganztägigen Termine von heute und alles, was gerade läuft. Tippe darauf, um die ganze Woche zu sehen und einen Termin hinzuzufügen. Sie zeigt auch Geburtstage, Essen, Aufgaben, Notizen und Rechnungen. Ein Tag, an dem nur so etwas ansteht, bekommt einen grauen Punkt.
 2. Jede Kachel öffnet einen Bereich, zum Beispiel **Einkaufen** oder **Notizen**. Der kleine Pfeil auf einer Kachel zeigt eine kurze Übersicht.
 3. Tippe unten rechts auf den runden **+**-Button, um einen Termin, eine Einkaufsliste oder eine Aufgabenliste hinzuzufügen.
 

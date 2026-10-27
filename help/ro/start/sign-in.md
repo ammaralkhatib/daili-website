@@ -3,7 +3,7 @@ id: start-sign-in
 title: Conectează-te cu Google, Apple sau e-mail
 summary: Fă-ți un cont sau conectează-te din nou și resetează-ți parola dacă ai uitat-o.
 keywords: conectare, autentificare, login, înregistrare, cont nou, cont, google, apple, e-mail, parolă, am uitat parola, resetare parolă
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Ai nevoie de un cont ca să folosești daili. Durează un minut.
 
@@ -18,4 +18,4 @@ Parola trebuie să aibă cel puțin 8 caractere. Cont nou? daili îți cere apoi
 
 Continuând, ești de acord cu **termenii de utilizare**. **Politica de confidențialitate** explică modul în care daili îți prelucrează datele. Amândouă au linkuri sub butoanele de conectare.
 
-> Note: **Continuă cu Apple** există doar pe iPhone. Pe Android, folosește Google sau e-mailul tău.
+> Note: **Continuă cu Apple** există doar pe iPhone. Pe Android, folosește Google sau e-mailul tău. După ce reinstalezi daili, te conectezi din nou.

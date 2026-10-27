@@ -3,7 +3,7 @@ id: notes-files
 title: Unde sunt păstrate imaginile și înregistrările din notițe
 summary: Păstrează imaginile și înregistrările din notițe gratuit pe acest telefon sau în Cloud Daili cu Daili Plus.
 keywords: cloud daili, stocare, backup, imagini, poze, înregistrări, fișiere, telefon, încărcare, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Deschide **Setări** → **Notițe** → **Imagini și înregistrări**.
 2. Alege **Pe acest telefon** sau **Cloud Daili**.
@@ -20,4 +20,4 @@ Când se termină Plus, nu se șterge nimic: fișierele din cloud rămân, cele 
 
 Un desen poate fi editat doar pe telefonul pe care a fost făcut. Un desen din cloud are nevoie de conexiune.
 
-> Note: Pe Android, imaginile și înregistrările din notițe nu sunt în backupul telefonului. Cloud Daili le păstrează în siguranță.
+> Note: Pe Android, imaginile și înregistrările din notițe trec pe alt telefon doar prin transfer direct de la telefon la telefon, nu prin backupul Google. Cloud Daili le păstrează în siguranță.

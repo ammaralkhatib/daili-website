@@ -3,7 +3,7 @@ id: start-sign-in
 title: Mit Google, Apple oder E-Mail anmelden
 summary: Erstelle ein Konto oder melde dich wieder an, und setz dein Passwort zurück, wenn du es vergessen hast.
 keywords: anmelden, einloggen, login, registrieren, konto, google, apple, e-mail, passwort, passwort vergessen, passwort zurücksetzen
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Um daili zu nutzen, brauchst du ein Konto. Das dauert eine Minute.
 
@@ -18,4 +18,4 @@ Dein Passwort braucht mindestens 8 Zeichen. Neues Konto? Dann fragt daili nach d
 
 Wenn du fortfährst, stimmst du den **Nutzungsbedingungen** zu; die **Datenschutzerklärung** erklärt, wie daili mit deinen Daten umgeht. Beide sind unter den Anmelde-Buttons verlinkt.
 
-> Note: **Mit Apple fortfahren** gibt es nur auf dem iPhone. Auf Android nutzt du Google oder deine E-Mail.
+> Note: **Mit Apple fortfahren** gibt es nur auf dem iPhone. Auf Android nutzt du Google oder deine E-Mail. Nach einer Neuinstallation von daili meldest du dich wieder an.

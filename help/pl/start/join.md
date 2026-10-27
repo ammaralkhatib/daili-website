@@ -2,15 +2,15 @@
 id: start-join
 title: Dołącz do rodziny za pomocą kodu albo kodu QR
 summary: Masz zaproszenie? Wpisz 6-cyfrowy kod albo zeskanuj kod QR, żeby dołączyć.
-keywords: dołącz, kod zaproszenia, kod, qr, skanuj, dołącz do rodziny, partner, żona, mąż, dziadkowie
-translatedFrom: 2026-10-12
+keywords: dołącz, kod zaproszenia, kod, qr, skanuj, dołącz do rodziny, partner, żona, mąż, dziadkowie, link z zaproszeniem
+translatedFrom: 2026-10-27
 ---
 Ktoś z rodziny może wysłać ci zaproszenie. Wtedy dołączasz kilkoma dotknięciami.
 
 ![Ekran Dołącz do rodziny lub grupy z polem Kod zaproszenia. Zakreślony jest przycisk Skanuj kod QR.](start-join)
 
 1. Dotknij **Dołącz do rodziny lub grupy**.
-2. Wpisz 6-cyfrowy kod w polu **Kod zaproszenia** i dotknij **Szukaj**. Albo dotknij **Skanuj kod QR** i skieruj aparat na kod.
+2. Wpisz 6-cyfrowy kod w polu **Kod zaproszenia** albo wklej tam link z zaproszeniem i dotknij **Szukaj**. Albo dotknij **Skanuj kod QR** i skieruj aparat na kod.
 3. Sprawdź nazwę rodziny i jej członków, a potem dotknij **Dołącz do** z nazwą rodziny.
 
 Twoja pierwsza rodzina? Potem daili zapyta: **Do czego chcesz używać Daili?** Wybierz, co ma pokazywać ekran główny, i dotknij **Dalej** albo **Pomiń**.

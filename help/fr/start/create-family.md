@@ -3,7 +3,7 @@ id: start-create-family
 title: Créer ta famille ou ton groupe
 summary: Crée une nouvelle famille ou un nouveau groupe pour que tout le monde partage un agenda et les mêmes listes.
 keywords: créer une famille, nouvelle famille, commencer, configurer, groupe, foyer, nom de famille, couleur, photo
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
 Après ta connexion, daili te demande de créer une famille ou un groupe, ou d'en rejoindre un.
 
@@ -12,13 +12,15 @@ Après ta connexion, daili te demande de créer une famille ou un groupe, ou d'e
 1. Touche **Créer une famille ou un groupe**.
 2. Saisis un nom sous **Nom de la famille ou du groupe**, comme « Les Martin » ou « Équipe de foot ».
 3. Choisis une **Couleur**.
-4. Touche **Créer**. daili ouvre ton nouvel écran d'accueil.
+4. Touche **Créer**.
 
-C'est ta première famille ? Avant que l'écran d'accueil s'ouvre, daili te demande **Pour quoi veux-tu utiliser Daili ?** Choisis ce que l'écran d'accueil affiche et touche **Continuer**, ou **Passer**.
+C'est ta première famille ? daili te demande **Pour quoi veux-tu utiliser Daili ?** Choisis ce que l'écran d'accueil affiche et touche **Continuer**, ou **Passer**.
 
-Tu es maintenant le propriétaire. Invite ensuite les autres, pour que tout le monde voie le même programme.
+Tu es maintenant le propriétaire. L'écran d'invitation s'ouvre une fois : tu peux inviter les autres ou toucher **Plus tard**.
 
-Nouveau compte ? Une étape vient d'abord : **Salut ! Qui es-tu ?** Choisis ta photo et vérifie ton nom. Ta famille voit les deux. Touche **Continuer**, ou **Passer**.
+La semaine commence le jour habituel dans ton pays et affiche ses jours fériés. Tu peux changer les deux dans **Agenda** → roue dentée, sous **La semaine commence le** et **Jours fériés**.
+
+Nouveau compte ? Une étape vient d'abord : **Salut ! Qui es-tu ?** Choisis ta photo et vérifie ton nom. Touche **Continuer**, ou **Passer**.
 
 ![L'étape Salut ! Qui es-tu ?, avec une photo choisie et le nom rempli.](start-you-step)
 

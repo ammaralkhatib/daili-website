@@ -3,7 +3,7 @@ id: notes-files
 title: Hvor bilder og opptak i notater lagres
 summary: Ha bilder og opptak fra notater på denne telefonen gratis, eller i Daili-skyen med Daili Plus.
 keywords: daili-skyen, lagring, sikkerhetskopi, bilder, opptak, filer, telefon, laste opp, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Åpne **Innstillinger** → **Notater** → **Bilder og opptak**.
 2. Velg **På denne telefonen** eller **Daili-skyen**.
@@ -20,4 +20,4 @@ Når Plus slutter, slettes ingenting: filene i skyen blir der, og nye blir på t
 
 En tegning kan bare redigeres på telefonen den ble laget på. En tegning i skyen trenger internett.
 
-> Note: På Android er bilder og opptak i notater ikke med i telefonens sikkerhetskopi. Daili-skyen tar vare på dem.
+> Note: På Android flyttes bilder og opptak i notater bare ved overføring fra telefon til telefon, ikke via Google-sikkerhetskopien. Daili-skyen tar vare på dem.

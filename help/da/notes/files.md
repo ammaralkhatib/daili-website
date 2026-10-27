@@ -3,7 +3,7 @@ id: notes-files
 title: Hvor billeder og optagelser i noter gemmes
 summary: Gem billeder og optagelser i noter gratis på denne telefon, eller i Daili-skyen med Daili Plus.
 keywords: daili-skyen, lagerplads, sikkerhedskopi, backup, billeder, optagelser, filer, telefon, upload, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Åbn **Indstillinger** → **Noter** → **Billeder og optagelser**.
 2. Vælg **På denne telefon** eller **Daili-skyen**.
@@ -20,4 +20,4 @@ Når Plus slutter, slettes intet: filer i skyen bliver, nye bliver på telefonen
 
 En tegning kan kun redigeres på den telefon, den blev lavet på. En tegning i skyen kræver forbindelse.
 
-> Note: På Android er billeder og optagelser i noter ikke med i telefonens sikkerhedskopi. Daili-skyen holder dem sikre.
+> Note: På Android flytter billeder og optagelser i noter kun med ved overførsel fra telefon til telefon, ikke via Googles sikkerhedskopi. Daili-skyen holder dem sikre.

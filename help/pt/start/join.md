@@ -2,15 +2,15 @@
 id: start-join
 title: Entrar em uma família com um código ou um código QR
 summary: Recebeu um convite? Digite o código de 6 dígitos ou escaneie o código QR para entrar.
-keywords: entrar, código de convite, código, qr, escanear, entrar na família, parceiro, esposa, marido, avós
-translatedFrom: 2026-10-12
+keywords: entrar, código de convite, código, qr, escanear, entrar na família, parceiro, esposa, marido, avós, link de convite
+translatedFrom: 2026-10-27
 ---
 Alguém da família pode mandar um convite para você. Aí você entra com poucos toques.
 
 ![A tela Entrar em uma família ou grupo, com o campo Código de convite. O botão Escanear código QR está circulado.](start-join)
 
 1. Toque em **Entrar em uma família ou grupo**.
-2. Digite o código de 6 dígitos em **Código de convite** e toque em **Buscar**. Ou toque em **Escanear código QR** e aponte a câmera para o código da pessoa.
+2. Digite o código de 6 dígitos em **Código de convite**, ou cole ali o link de convite, e toque em **Buscar**. Ou toque em **Escanear código QR** e aponte a câmera para o código da pessoa.
 3. Confira o nome da família e os membros, e toque em **Entrar em** seguido do nome da família.
 
 Sua primeira família? Depois, o daili pergunta **Para que você quer usar o Daili?** Escolha o que a tela inicial mostra e toque em **Continuar**, ou em **Pular**.

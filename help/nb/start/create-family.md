@@ -3,7 +3,7 @@ id: start-create-family
 title: Opprett familien eller gruppen din
 summary: Start en ny familie eller gruppe, så alle deler én kalender og de samme listene.
 keywords: opprett familie, ny familie, kom i gang, sett opp, gruppe, husstand, familienavn, farge, bilde
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
 Når du har logget inn, ber daili deg opprette en familie eller gruppe, eller bli med i en.
 
@@ -12,13 +12,15 @@ Når du har logget inn, ber daili deg opprette en familie eller gruppe, eller bl
 1. Trykk på **Opprett en familie eller gruppe**.
 2. Skriv et navn under **Navn på familie eller gruppe**, for eksempel «Familien Hansen» eller «Fotballaget».
 3. Velg en **Farge**.
-4. Trykk på **Opprett**. daili åpner den nye startskjermen din.
+4. Trykk på **Opprett**.
 
-Er dette din første familie? Før startskjermen åpnes, spør daili **Hva vil du bruke Daili til?** Velg hva startskjermen skal vise, og trykk på **Fortsett**, eller **Hopp over**.
+Er dette din første familie? Da spør daili **Hva vil du bruke Daili til?** Velg hva startskjermen skal vise, og trykk på **Fortsett**, eller **Hopp over**.
 
-Nå er du eier. Inviter de andre etterpå, så alle ser den samme planen.
+Nå er du eier. Invitasjonsskjermen åpnes én gang, så du kan invitere de andre eller trykke på **Senere**.
 
-Ny konto? Da kommer ett steg først: **Hei! Hvem er du?** Velg bildet ditt, og sjekk navnet ditt. Familien ser begge deler. Trykk på **Fortsett**, eller **Hopp over**.
+Uken starter på den dagen som er vanlig i landet ditt, og viser landets helligdager. Du endrer begge under **Kalender** → tannhjulet → **Uken starter med** og **Helligdager**.
+
+Ny konto? Da kommer ett steg først: **Hei! Hvem er du?** Velg bildet ditt, og sjekk navnet ditt. Trykk på **Fortsett**, eller **Hopp over**.
 
 ![Steget Hei! Hvem er du?, med et bilde valgt og navnet fylt inn.](start-you-step)
 

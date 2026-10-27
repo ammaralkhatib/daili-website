@@ -3,7 +3,7 @@ id: start-sign-in
 title: Masuk dengan Google, Apple, atau email
 summary: Buat akun atau masuk lagi, dan atur ulang kata sandi kalau Anda lupa.
 keywords: masuk, login, daftar, registrasi, akun, google, apple, email, kata sandi, lupa kata sandi, atur ulang kata sandi
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Anda perlu akun untuk memakai daili. Cuma butuh satu menit.
 
@@ -18,4 +18,4 @@ Kata sandi Anda minimal 8 karakter. Akun baru? daili lalu menanyakan foto dan na
 
 Dengan melanjutkan, Anda menyetujui **Ketentuan penggunaan**; **Kebijakan privasi** menjelaskan cara daili menangani data Anda. Keduanya ditautkan di bawah tombol masuk.
 
-> Note: **Lanjutkan dengan Apple** hanya ada di iPhone. Di Android, pakai Google atau email Anda.
+> Note: **Lanjutkan dengan Apple** hanya ada di iPhone. Di Android, pakai Google atau email Anda. Setelah Anda memasang ulang daili, Anda perlu masuk lagi.

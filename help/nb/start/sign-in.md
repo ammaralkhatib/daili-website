@@ -3,7 +3,7 @@ id: start-sign-in
 title: Logg inn med Google, Apple eller e-post
 summary: Lag en konto eller logg inn igjen, og tilbakestill passordet hvis du har glemt det.
 keywords: logg inn, innlogging, registrer, opprett konto, konto, google, apple, e-post, passord, glemt passord, tilbakestill passord
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Du trenger en konto for å bruke daili. Det tar et minutt.
 
@@ -18,4 +18,4 @@ Passordet må ha minst 8 tegn. Ny konto? Da ber daili om bildet og navnet ditt, 
 
 Når du fortsetter, godtar du dailis **bruksvilkår**, og dailis **personvernerklæring** forklarer hvordan dataene dine behandles. Begge er lenket under innloggingsknappene.
 
-> Note: **Fortsett med Apple** finnes bare på iPhone. På Android bruker du Google eller e-posten din.
+> Note: **Fortsett med Apple** finnes bare på iPhone. På Android bruker du Google eller e-posten din. Etter at du har installert daili på nytt, må du logge inn igjen.

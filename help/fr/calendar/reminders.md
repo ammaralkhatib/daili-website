@@ -2,8 +2,8 @@
 id: calendar-reminders
 title: Les rappels et le rappel par défaut
 summary: Reçois un rappel avant le début d'un événement, et choisis les rappels avec lesquels commence chaque nouvel événement.
-keywords: rappel, rappeler, alerte, notification, avant l'événement, rappel par défaut, alarme, prévenir
-translatedFrom: 2026-09-24
+keywords: rappel, rappeler, alerte, notification, avant l'événement, rappel par défaut, alarme, prévenir, journée entière
+translatedFrom: 2026-10-27
 ---
 Un rappel est une notification avant le début de l'événement. Un événement peut en avoir jusqu'à 5.
 
@@ -12,6 +12,8 @@ Un rappel est une notification avant le début de l'événement. Un événement 
 1. Dans un nouvel événement, touche **Ajouter un rappel** sous **Rappel**.
 2. Coche un ou plusieurs moments, comme 15 minutes ou 1 jour avant. Pour un autre moment, touche **Personnalisé…**.
 3. Touche **Enregistrer** sur l'événement.
+
+Un événement sur la journée entière propose **Le matin (9:00)**, **1 jour avant (9:00)** et **1 semaine avant (9:00)**. Ils arrivent tous à 9 h.
 
 Tu veux les mêmes rappels sur chaque nouvel événement ? Dans l'**Agenda**, touche la roue dentée en haut à droite. Sous **Rappels**, touche **Rappel par défaut** et coches-en jusqu'à 5. Laisse **Rappels d'événements** activé à cet endroit, sinon aucun rappel n'arrive sur ce téléphone.
 

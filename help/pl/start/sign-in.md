@@ -3,7 +3,7 @@ id: start-sign-in
 title: Zaloguj się przez Google, Apple albo e-mail
 summary: Załóż konto albo zaloguj się ponownie i zresetuj hasło, jeśli go nie pamiętasz.
 keywords: zaloguj się, logowanie, login, zarejestruj się, rejestracja, konto, google, apple, e-mail, hasło, nie pamiętam hasła, reset hasła
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Do korzystania z daili potrzebujesz konta. To zajmuje minutę.
 
@@ -18,4 +18,4 @@ Hasło musi mieć co najmniej 8 znaków. Nowe konto? Potem daili poprosi o twoje
 
 Kontynuując, akceptujesz **warunki korzystania**; **polityka prywatności** wyjaśnia, jak daili przetwarza twoje dane. Oba linki są pod przyciskami logowania.
 
-> Note: **Kontynuuj z Apple** jest tylko na iPhonie. Na Androidzie użyj Google albo e-maila.
+> Note: **Kontynuuj z Apple** jest tylko na iPhonie. Na Androidzie użyj Google albo e-maila. Po ponownej instalacji daili zaloguj się jeszcze raz.

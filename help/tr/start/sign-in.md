@@ -3,7 +3,7 @@ id: start-sign-in
 title: Google, Apple ya da e-postayla giriş yap
 summary: Hesap oluştur ya da yeniden giriş yap, şifreni unuttuysan sıfırla.
 keywords: giriş yap, oturum aç, giriş, kaydol, kayıt, hesap, google, apple, e-posta, şifre, şifremi unuttum, şifre sıfırlama
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 daili'yi kullanmak için bir hesaba ihtiyacın var. Bir dakika sürer.
 
@@ -18,4 +18,4 @@ daili'yi kullanmak için bir hesaba ihtiyacın var. Bir dakika sürer.
 
 Devam ederek **Kullanım koşullarımızı** kabul etmiş olursun; verilerini nasıl işlediğimizi **Gizlilik politikamız** açıklar. İkisinin bağlantısı da giriş düğmelerinin altındadır.
 
-> Note: **Apple ile devam et** yalnızca iPhone'da var. Android'de Google'ı ya da e-postanı kullan.
+> Note: **Apple ile devam et** yalnızca iPhone'da var. Android'de Google'ı ya da e-postanı kullan. daili'yi yeniden yükledikten sonra tekrar giriş yaparsın.

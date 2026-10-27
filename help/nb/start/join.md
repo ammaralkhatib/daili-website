@@ -2,15 +2,15 @@
 id: start-join
 title: Bli med i en familie med en kode eller en QR-kode
 summary: Har du fått en invitasjon? Skriv inn den 6-sifrede koden, eller skann QR-koden for å bli med.
-keywords: bli med, invitasjonskode, kode, qr, skann, bli med i familie, partner, kone, mann, besteforeldre
-translatedFrom: 2026-10-12
+keywords: bli med, invitasjonskode, kode, qr, skann, bli med i familie, partner, kone, mann, besteforeldre, invitasjonslenke
+translatedFrom: 2026-10-27
 ---
 Noen i familien kan sende deg en invitasjon. Da er du med etter noen få trykk.
 
 ![Skjermen Bli med i en familie eller gruppe med feltet Invitasjonskode. Knappen Skann QR-kode er ringet inn.](start-join)
 
 1. Trykk på **Bli med i en familie eller gruppe**.
-2. Skriv inn den 6-sifrede koden under **Invitasjonskode**, og trykk på **Søk**. Eller trykk på **Skann QR-kode**, og rett kameraet mot koden deres.
+2. Skriv inn den 6-sifrede koden under **Invitasjonskode**, eller lim inn invitasjonslenken der, og trykk på **Søk**. Eller trykk på **Skann QR-kode**, og rett kameraet mot koden deres.
 3. Sjekk familienavnet og medlemmene, og trykk så på **Bli med i …** med familiens navn på.
 
 Er dette din første familie? Da spør daili **Hva vil du bruke Daili til?** Velg hva startskjermen skal vise, og trykk på **Fortsett**, eller **Hopp over**.

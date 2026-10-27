@@ -3,7 +3,7 @@ id: account-password
 title: Vaihda tai aseta salasana
 summary: Vaihda salasanasi tai aseta sellainen, jos rekisteröidyit Googlella tai Applella.
 keywords: salasana, vaihda salasana, uusi salasana, aseta salasana, unohtunut salasana, nollaa, google, apple, kirjaudu
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-27
 ---
 Vaihdat salasanasi profiilissasi.
 
@@ -12,10 +12,10 @@ Vaihdat salasanasi profiilissasi.
 1. Avaa **Asetukset** ja napauta nimeäsi yläreunassa.
 2. Napauta **Vaihda salasana** kohdassa **Tili**.
 3. Kirjoita **Nykyinen salasana**. Kirjoita sitten **Uusi salasana** ja **Vahvista uusi salasana**. Siinä on oltava vähintään 8 merkkiä.
-4. Napauta **Tallenna**. Muut puhelimesi ja selaimesi kirjataan ulos, joten kirjaudu niissä uudella salasanalla.
+4. Napauta **Tallenna**. Muut puhelimesi ja selaimesi kirjataan ulos.
 
-Rekisteröidyitkö Googlella tai Applella? Silloin sinulla ei vielä ole salasanaa, ja rivillä lukee **Aseta salasana**. Napauta sitä, niin daili lähettää sähköpostiisi linkin salasanan asettamiseen.
+Rekisteröidyitkö Googlella tai Applella? Silloin sinulla ei vielä ole salasanaa, ja rivillä lukee **Aseta salasana**. Napauta sitä, niin daili lähettää sähköpostiisi linkin salasanan asettamiseen. Pysyt kirjautuneena kaikkialla.
 
-Käytätkö @icloud.com-, @me.com- tai @mac.com-osoitetta? Apple estää joskus sähköpostimme. Katso roskapostikansiosta tai kirjoita osoitteeseen support@daili.app. iPhonessa sen välttää valitsemalla **Jatka Applella** ja **Jaa sähköpostini**.
+Käytätkö @icloud.com-, @me.com- tai @mac.com-osoitetta? Apple estää joskus sähköpostimme. Katso roskapostikansiosta tai kirjoita osoitteeseen support@daili.app.
 
-> Note: Unohtuiko salasana? Napauta kirjautumisnäytöllä **Unohtuiko salasana?**, niin lähetämme sinulle linkin.
+> Note: Unohtuiko salasana? Napauta kirjautumisnäytöllä **Unohtuiko salasana?**, niin lähetämme sinulle linkin. Nollaus kirjaa sinut ulos muilla laitteillasi ja yhdistetyissä tekoälysovelluksissa. Niihin puhelimiin ei tule ilmoituksia, ennen kuin kirjaudut uudelleen.

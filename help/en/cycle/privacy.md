@@ -7,7 +7,7 @@ keywords: reminder, lock, face id, fingerprint, privacy, calendar, export, impor
 routes: /cycle
 tryIt: /cycle
 since: 1.10.0
-updated: 2026-10-16
+updated: 2026-10-27
 media: cycle-settings
 order: 3
 related: cycle-start, cycle-calendar
@@ -15,7 +15,7 @@ related: cycle-start, cycle-calendar
 In Cycle, tap the gear for **Cycle settings**.
 
 1. **Reminders**: **Period reminder** comes a few days before. **Ask if my period started** is on at first and asks the day after the expected range. The lock screen only shows "You have a reminder. Tap to open".
-2. **Lock Cycle**: asks for Face ID, fingerprint or your phone code. The app switcher then hides Cycle, and Android blocks screenshots of it.
+2. **Lock Cycle**: asks for Face ID, fingerprint or your phone code. The app switcher always hides Cycle, and Android blocks screenshots of it.
 3. **Show on my calendar**: your calendar on this phone shows a drop, filled if logged, outline if predicted. Off at first; the family never sees it.
 4. **Import (CSV)** brings back a file from **Export (CSV)** and keeps the days already here.
 

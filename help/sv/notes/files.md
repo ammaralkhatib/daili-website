@@ -3,7 +3,7 @@ id: notes-files
 title: Var bilder och inspelningar i anteckningar sparas
 summary: Spara bilder och inspelningar i anteckningar gratis på den här telefonen, eller i Daili-molnet med Daili Plus.
 keywords: daili-molnet, lagring, säkerhetskopia, backup, bilder, inspelningar, filer, telefon, ladda upp, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Öppna **Inställningar** → **Anteckningar** → **Bilder och inspelningar**.
 2. Välj **På den här telefonen** eller **Daili-molnet**.
@@ -20,4 +20,4 @@ När Plus upphör raderas ingenting: filer i molnet ligger kvar, nya stannar på
 
 En teckning kan bara redigeras på telefonen där den gjordes. En teckning i molnet kräver en anslutning.
 
-> Note: På Android finns bilder och inspelningar i anteckningar inte i telefonens säkerhetskopia. Daili-molnet håller dem säkra.
+> Note: På Android flyttas bilder och inspelningar i anteckningar bara med vid en överföring från telefon till telefon, inte via Googles säkerhetskopiering. Daili-molnet håller dem säkra.

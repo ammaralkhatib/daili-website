@@ -3,7 +3,7 @@ id: notes-files
 title: Onde ficam as imagens e gravações das notas
 summary: Guarde as imagens e gravações das notas neste celular de graça, ou na Nuvem Daili com o Daili Plus.
 keywords: nuvem daili, armazenamento, backup, imagens, fotos, gravações, arquivos, celular, enviar, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Abra **Configurações** → **Notas** → **Imagens e gravações**.
 2. Escolha **Neste celular** ou **Nuvem Daili**.
@@ -20,4 +20,4 @@ Quando o Plus termina, nada é excluído: os arquivos na nuvem continuam lá, e 
 
 Um desenho só pode ser editado no celular em que foi feito. Um desenho na nuvem precisa de internet.
 
-> Note: No Android, as imagens e gravações das notas não ficam no backup do celular. A Nuvem Daili as mantém seguras.
+> Note: No Android, as imagens e gravações das notas só passam para outro celular pela transferência direta entre celulares, não pelo backup do Google. A Nuvem Daili as mantém seguras.

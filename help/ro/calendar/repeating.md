@@ -2,21 +2,25 @@
 id: calendar-repeating
 title: Evenimente care se repetă
 summary: Fă un eveniment să se repete zilnic, săptămânal, lunar sau anual și modifică o singură zi sau toată seria.
-keywords: repetare, se repetă, recurent, în fiecare săptămână, săptămânal, zilnic, lunar, anual, serie, rutină
-translatedFrom: 2026-10-12
+keywords: repetare, se repetă, recurent, în fiecare săptămână, săptămânal, zilnic, lunar, anual, serie, prima joi, ultima vineri
+translatedFrom: 2026-10-27
 ---
-Înot în fiecare marți? Adaugă-l o dată și lasă-l să se repete.
+Înot în fiecare marți? Adaugă-l o dată.
 
 ![Formularul unui eveniment nou. Rândul Repetare este încercuit.](calendar-repeating)
 
 1. Într-un eveniment nou, apasă pe **Repetare**.
 2. Alege **Zilnic**, **Săptămânal**, **Lunar** sau **Anual**.
 3. Schimbă **La fiecare** pentru „la fiecare 2 săptămâni”. La **Săptămânal**, alege zilele la **Repetă în**.
-4. La **Se termină**, lasă **Niciodată** sau alege **La data**.
-5. Închide panoul și apasă pe **Salvează**.
+4. La **Lunar**, alege **În ziua 5** sau o zi a săptămânii, de exemplu **În prima joi**. Amândouă urmează data de început.
+5. La **Se termină**, lasă **Niciodată** sau alege **La data**. Închide panoul și apasă pe **Salvează**.
 
-Modifici sau ștergi unul? Apasă pe **Salvează** sau **Șterge**, apoi alege **Doar acest eveniment**, **Acest eveniment și următoarele** sau **Toate evenimentele**.
+![Panoul Repetare cu Lunar ales. În prima joi este selectat sub În ziua 5 și amândouă sunt încercuite.](calendar-repeating-monthly)
 
-Alte persoane într-o singură zi? Deschide evenimentul din ziua aceea, schimbă **Pentru**, apasă pe **Salvează** și alege **Doar acest eveniment**. Evenimentul arată apoi **Doar în această zi**, iar mementourile lui ajung la persoanele din ziua aceea. Dacă alegi din nou persoanele seriei, ziua urmează iar seria.
+Ziua 29, 30 sau 31 trece pe ultima zi în lunile mai scurte.
 
-> Note: O opțiune care nu poate primi modificarea ta e gri, cu motivul alături. O oră nouă nu poate merge la **Toate evenimentele**. Modificările la repetare, **Toată ziua**, **Eveniment privat** sau mementouri în plus nu pot fi **Doar acest eveniment**.
+Modifici sau ștergi unul? După **Salvează** sau **Șterge**, alege **Doar acest eveniment**, **Acest eveniment și următoarele** sau **Toate evenimentele**. Zilele pe care le-ai modificat, mutat sau șters rămân așa. Un eveniment săptămânal care se repetă într-o singură zi a săptămânii, mutat în altă zi cu **Acest eveniment și următoarele**, mută și restul seriei.
+
+Alte persoane într-o singură zi? Deschide evenimentul din ziua aceea, schimbă **Pentru** și alege **Doar acest eveniment**.
+
+> Note: O opțiune care nu poate primi modificarea ta e gri.

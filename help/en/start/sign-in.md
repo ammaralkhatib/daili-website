@@ -6,7 +6,7 @@ summary: Make an account or sign back in, and reset your password if you forgot 
 keywords: sign in, log in, login, sign up, register, account, google, apple, email, password, forgot password, reset password
 routes: /welcome, /login, /register, /forgot-password
 since: 1.0.0
-updated: 2026-10-16
+updated: 2026-10-27
 media: start-sign-in
 order: 2
 related: start-create-family, start-join
@@ -24,4 +24,4 @@ Your password needs at least 8 characters. New account? daili then asks for your
 
 By continuing, you agree to the **Terms of use**; the **Privacy policy** explains how daili handles your data. Both are linked under the sign-in buttons.
 
-> Note: **Continue with Apple** is only on iPhone. On Android, use Google or your email.
+> Note: **Continue with Apple** is only on iPhone. On Android, use Google or your email. After you reinstall daili, you sign in again.

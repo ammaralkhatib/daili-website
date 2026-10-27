@@ -3,11 +3,11 @@ id: notes-notes
 topic: notes
 title: Notes: save thoughts and links in two taps
 summary: Write a note or share a link from any app. Notes are private unless you share them.
-keywords: note, notes, quick note, link, share, checklist, tag, filter, search, reminder, recently deleted, summarize
+keywords: note, quick note, link, share, checklist, reminder, recently deleted, summarize, bold, italic, heading, format
 routes: /notes, /notes/new
 tryIt: /notes
 since: 1.7.0
-updated: 2026-10-12
+updated: 2026-10-27
 media: notes-list
 order: 1
 related: notes-pictures-voice, notes-find, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
@@ -22,20 +22,22 @@ A note is a **Title**, text, or both, with bullet lists and checklists.
 1. On Home, tap **Notes**, then **+** or a bottom-bar button: picture, voice, video, link, drawing.
 2. Write and tap **Save**.
 
-Notes opens as a grid, with big pictures and drawings and tag-coloured frames. The top button switches to a list.
+While you write, tap **B** for bold, **I** for italic or **T** for a heading (**H** on app.daili.app). Tap it again for a smaller heading.
 
-Faster: the **Quick note** widget, the iPhone Action Button, or Share → **daili** → **Save** from any app.
+![A new note with a heading line, a bold word and an italic line, with their formatting signs shown. The B, I and T buttons are circled.](notes-formatting)
+
+Notes opens as a grid. The top button switches to a list. Faster: the **Quick note** widget, the iPhone Action Button, or Share → **daili** → **Save** from any app.
 
 ![A new note with the Photo, Voice, Video, Link and Draw buttons. The row that says who can see it is circled.](notes-new)
 
-Above the keyboard: tags, a reminder (only you get it) and who sees it: **Only me** (default), **Whole family** or **Pick members**. **Scan link** reads a web address from a photo.
+Above the keyboard: tags, a reminder (only you get it) and who sees it: **Only me** (default), **Whole family** or **Pick members**.
 
 ![Recently deleted. One note, gone in 27 days, with Delete forever and Restore.](notes-trash)
 
-Search or filter the list. Deleted notes wait 30 days under **⋯** → **Recently deleted**.
+Deleted notes wait 30 days under **⋯** → **Recently deleted**.
 
 ![A note. The Daili Plus group with the two rows "Make an event, task or shopping list from this" and "Summarize" is circled.](notes-ai)
 
-Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** (video, web page or long note) each use one AI action.
+Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** each use one AI action.
 
 > Note: Offline, new notes send themselves later.

@@ -3,7 +3,7 @@ id: start-sign-in
 title: Accedere con Google, Apple o e-mail
 summary: Crea un account o accedi di nuovo, e reimposta la password se l'hai dimenticata.
 keywords: accedere, accesso, login, registrarsi, registrazione, account, google, apple, e-mail, password, password dimenticata, reimpostare password
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Ti serve un account per usare daili. Ci vuole un minuto.
 
@@ -18,4 +18,4 @@ La password deve avere almeno 8 caratteri. Account nuovo? Poi daili ti chiede fo
 
 Continuando, accetti le **condizioni d'uso**; l'**informativa sulla privacy** spiega come daili tratta i tuoi dati. I link a entrambe sono sotto i pulsanti di accesso.
 
-> Note: **Continua con Apple** c'è solo su iPhone. Su Android usa Google o la tua e-mail.
+> Note: **Continua con Apple** c'è solo su iPhone. Su Android usa Google o la tua e-mail. Dopo aver reinstallato daili, devi accedere di nuovo.

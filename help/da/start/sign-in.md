@@ -3,7 +3,7 @@ id: start-sign-in
 title: Log ind med Google, Apple eller e-mail
 summary: Opret en konto eller log ind igen, og nulstil din adgangskode, hvis du har glemt den.
 keywords: log ind, login, tilmeld, opret konto, konto, google, apple, e-mail, adgangskode, glemt adgangskode, nulstil adgangskode
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Du skal have en konto for at bruge daili. Det tager et minut.
 
@@ -18,4 +18,4 @@ Din adgangskode skal have mindst 8 tegn. Ny konto? Så spørger daili om dit bil
 
 Når du fortsætter, accepterer du vores **vilkår for brug**; vores **privatlivspolitik** forklarer, hvordan daili behandler dine data. Begge er linket under login-knapperne.
 
-> Note: **Fortsæt med Apple** findes kun på iPhone. På Android bruger du Google eller din e-mail.
+> Note: **Fortsæt med Apple** findes kun på iPhone. På Android bruger du Google eller din e-mail. Når du har geninstalleret daili, skal du logge ind igen.

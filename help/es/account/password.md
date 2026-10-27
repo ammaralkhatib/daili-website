@@ -3,7 +3,7 @@ id: account-password
 title: Cambiar o definir una contraseña
 summary: Cambia tu contraseña, o define una si te registraste con Google o Apple.
 keywords: contraseña, cambiar contraseña, contraseña nueva, definir contraseña, olvidé la contraseña, restablecer, google, apple, iniciar sesión
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-27
 ---
 La contraseña se cambia en tu perfil.
 
@@ -12,10 +12,10 @@ La contraseña se cambia en tu perfil.
 1. Abre **Ajustes** y toca tu nombre arriba.
 2. En **Cuenta**, toca **Cambiar la contraseña**.
 3. Escribe tu **Contraseña actual**. Luego escribe la **Contraseña nueva** y **Confirmar la contraseña nueva**. Necesita al menos 8 caracteres.
-4. Toca **Guardar**. Se cierra la sesión en tus otros teléfonos y navegadores, así que vuelve a iniciar sesión allí con la contraseña nueva.
+4. Toca **Guardar**. Se cierra la sesión en tus otros teléfonos y navegadores.
 
-¿Te registraste con Google o Apple? Entonces aún no tienes contraseña, y la fila dice **Definir una contraseña**. Tócala y daili te envía un enlace por correo para crear una.
+¿Te registraste con Google o Apple? Entonces aún no tienes contraseña, y la fila dice **Definir una contraseña**. Tócala y daili te envía un enlace por correo para crear una. Sigues con la sesión iniciada en todas partes.
 
-¿Usas una dirección @icloud.com, @me.com o @mac.com? A veces Apple bloquea nuestro correo. Mira en la carpeta de correo no deseado, o escribe a support@daili.app. En iPhone, **Continuar con Apple** con **Compartir mi correo electrónico** lo evita.
+¿Usas una dirección @icloud.com, @me.com o @mac.com? A veces Apple bloquea nuestro correo. Mira en la carpeta de correo no deseado, o escribe a support@daili.app.
 
-> Note: ¿Olvidaste tu contraseña? En la pantalla de inicio de sesión, toca **¿Olvidaste tu contraseña?** y te enviamos un enlace por correo.
+> Note: ¿Olvidaste tu contraseña? En la pantalla de inicio de sesión, toca **¿Olvidaste tu contraseña?** y te enviamos un enlace por correo. Al restablecerla se cierra la sesión en tus otros dispositivos y en las apps de IA conectadas. Esos teléfonos no reciben notificaciones hasta que vuelvas a iniciar sesión.

@@ -3,7 +3,7 @@ id: notes-files
 title: Kde se uchovávají obrázky a nahrávky z poznámek
 summary: Měj obrázky a nahrávky z poznámek zdarma v tomto telefonu, nebo v Cloudu Daili s Daili Plus.
 keywords: cloud daili, úložiště, záloha, obrázky, fotky, nahrávky, soubory, telefon, nahrávání, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Otevři **Nastavení** → **Poznámky** → **Obrázky a nahrávky**.
 2. Vyber **V tomto telefonu**, nebo **Cloud Daili**.
@@ -20,4 +20,4 @@ Když Plus skončí, nic se nesmaže: soubory v cloudu zůstanou a nové zůstan
 
 Kresbu jde upravit jen v telefonu, kde vznikla. Kresba v cloudu potřebuje připojení.
 
-> Note: Na Androidu nejsou obrázky a nahrávky z poznámek v záloze telefonu. Cloud Daili je uchová v bezpečí.
+> Note: Na Androidu se obrázky a nahrávky z poznámek přenesou jen přímým přenosem z telefonu do telefonu, ne přes zálohu Google. Cloud Daili je uchová v bezpečí.

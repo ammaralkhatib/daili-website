@@ -3,7 +3,7 @@ id: account-password
 title: Een wachtwoord wijzigen of instellen
 summary: Wijzig je wachtwoord, of stel er een in als je je hebt aangemeld met Google of Apple.
 keywords: wachtwoord, wachtwoord wijzigen, nieuw wachtwoord, wachtwoord instellen, wachtwoord vergeten, resetten, google, apple, inloggen
-translatedFrom: 2026-09-30
+translatedFrom: 2026-10-27
 ---
 Je wachtwoord wijzig je in je profiel.
 
@@ -12,10 +12,10 @@ Je wachtwoord wijzig je in je profiel.
 1. Open **Instellingen** en tik bovenaan op je naam.
 2. Tik onder **Account** op **Wachtwoord wijzigen**.
 3. Typ je **Huidig wachtwoord**. Typ dan het **Nieuw wachtwoord** en vul het nog eens in bij **Nieuw wachtwoord bevestigen**. Het moet minstens 8 tekens hebben.
-4. Tik op **Opslaan**. Op je andere telefoons en browsers word je uitgelogd, dus log daar in met het nieuwe wachtwoord.
+4. Tik op **Opslaan**. Op je andere telefoons en browsers word je uitgelogd.
 
-Aangemeld met Google of Apple? Dan heb je nog geen wachtwoord, en op de regel staat **Wachtwoord instellen**. Tik erop, en daili mailt je een link om er een in te stellen.
+Aangemeld met Google of Apple? Dan heb je nog geen wachtwoord, en op de regel staat **Wachtwoord instellen**. Tik erop, en daili mailt je een link om er een in te stellen. Je blijft overal ingelogd.
 
-Gebruik je een adres met @icloud.com, @me.com of @mac.com? Apple blokkeert onze e-mail soms. Kijk in je map Ongewenst, of mail naar support@daili.app. Op de iPhone voorkom je het met **Doorgaan met Apple** en **Deel mijn e-mailadres**.
+Gebruik je een adres met @icloud.com, @me.com of @mac.com? Apple blokkeert onze e-mail soms. Kijk in je map Ongewenst, of mail naar support@daili.app.
 
-> Note: Wachtwoord vergeten? Tik op het inlogscherm op **Wachtwoord vergeten?** en we mailen je een link.
+> Note: Wachtwoord vergeten? Tik op het inlogscherm op **Wachtwoord vergeten?** en we mailen je een link. Na een reset word je uitgelogd op je andere apparaten en in gekoppelde AI-apps. Die telefoons krijgen geen meldingen tot je weer inlogt.

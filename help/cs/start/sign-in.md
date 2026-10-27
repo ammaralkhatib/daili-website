@@ -3,7 +3,7 @@ id: start-sign-in
 title: Přihlásit se přes Google, Apple nebo e-mail
 summary: Vytvoř si účet nebo se znovu přihlas, a když zapomeneš heslo, obnov si ho.
 keywords: přihlásit se, přihlášení, login, registrace, zaregistrovat se, účet, google, apple, e-mail, heslo, zapomenuté heslo, obnovit heslo
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 K používání daili potřebuješ účet. Zabere to minutu.
 
@@ -18,4 +18,4 @@ Heslo musí mít aspoň 8 znaků. Nový účet? Pak se tě daili zeptá na obrá
 
 Pokračováním souhlasíš s **podmínkami použití**; **zásady ochrany osobních údajů** vysvětlují, jak daili nakládá s tvými údaji. Obojí najdeš jako odkaz pod tlačítky pro přihlášení.
 
-> Note: **Pokračovat přes Apple** je jen na iPhonu. Na Androidu použij Google nebo e-mail.
+> Note: **Pokračovat přes Apple** je jen na iPhonu. Na Androidu použij Google nebo e-mail. Po přeinstalování daili se musíš znovu přihlásit.

@@ -3,7 +3,7 @@ id: start-sign-in
 title: Inloggen met Google, Apple of e-mail
 summary: Maak een account of log opnieuw in, en stel je wachtwoord opnieuw in als je het vergeten bent.
 keywords: inloggen, aanmelden, login, registreren, account, google, apple, e-mail, wachtwoord, wachtwoord vergeten, wachtwoord resetten
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 Je hebt een account nodig om daili te gebruiken. Dat duurt een minuut.
 
@@ -18,4 +18,4 @@ Je wachtwoord moet minstens 8 tekens hebben. Nieuw account? Dan vraagt daili om 
 
 Door verder te gaan, ga je akkoord met de **gebruiksvoorwaarden**; het **privacybeleid** legt uit hoe daili met je gegevens omgaat. Beide staan als link onder de inlogknoppen.
 
-> Note: **Doorgaan met Apple** is er alleen op iPhone. Gebruik op Android Google of je e-mail.
+> Note: **Doorgaan met Apple** is er alleen op iPhone. Gebruik op Android Google of je e-mail. Na het opnieuw installeren van daili log je opnieuw in.

@@ -3,11 +3,11 @@ id: start-home
 title: En hurtig rundtur på startskærmen
 summary: Familiens uge øverst, et felt for hvert område og en +-knap til at tilføje ting hurtigt.
 keywords: startskærm, forside, oversigt, felter, uge, start, hovedskærm, vejr
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-daili åbner på startskærmen. Den viser, hvad der snart sker, og bringer dig hvor som helst hen med ét tryk.
+daili åbner på startskærmen.
 
-1. Kortet øverst viser familiens næste begivenhed. Tryk på det for at se hele ugen og tilføje en begivenhed. Det viser også fødselsdage, måltider, opgaver, noter og regninger. En dag med kun den slags får en grå prik.
+1. Kortet øverst viser familiens næste begivenhed, også dagens heldagsbegivenheder og det, der foregår lige nu. Tryk på det for at se hele ugen og tilføje en begivenhed. Det viser også fødselsdage, måltider, opgaver, noter og regninger. En dag med kun den slags får en grå prik.
 2. Hvert felt åbner ét område, fx **Indkøb** eller **Noter**. Den lille pil på et felt viser en hurtig oversigt.
 3. Tryk på den runde **+**-knap nederst til højre for at tilføje en begivenhed, en indkøbsliste eller en opgaveliste.
 

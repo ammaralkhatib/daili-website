@@ -3,12 +3,12 @@ id: cycle-privacy
 title: Döngü hatırlatıcıları, kilit, takvim ve verilerin
 summary: Gizli hatırlatıcılar kur, Döngü'yü kilitle, kendi takviminde göster ve verilerini telefonunda tut.
 keywords: hatırlatıcı, kilit, face id, parmak izi, gizlilik, takvim, dışa aktar, içe aktar, yedek, sil
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-27
 ---
 **Döngü ayarları** için Döngü'de dişli simgesine dokun.
 
 1. **Hatırlatıcılar**: **Regl hatırlatıcısı** birkaç gün önce gelir. **Reglimin başlayıp başlamadığını sor** başta açıktır ve beklenen aralıktan sonraki gün sorar. Kilit ekranında yalnızca "Bir hatırlatıcın var. Açmak için dokun" görünür.
-2. **Döngü'yü kilitle**: Face ID, parmak izi ya da telefon kodunu ister. Uygulama değiştirici o zaman Döngü'yü gizler, Android de ekran görüntüsü alınmasını engeller.
+2. **Döngü'yü kilitle**: Face ID, parmak izi ya da telefon kodunu ister. Uygulama değiştirici Döngü'yü her zaman gizler, Android de ekran görüntüsü alınmasını engeller.
 3. **Takvimimde göster**: bu telefondaki takviminde bir damla görünür; kaydedilmişse dolu, tahminse yalnızca çerçeve. Başta kapalıdır; ailen bunu asla görmez.
 4. **İçe aktar (CSV)**, **Dışa aktar (CSV)** ile alınmış bir dosyayı geri getirir ve burada olan günleri korur.
 

@@ -2,8 +2,8 @@
 id: calendar-reminders
 title: Los recordatorios y el recordatorio predeterminado
 summary: Recibe un recordatorio antes de que empiece un evento, y elige los recordatorios con los que empieza cada evento nuevo.
-keywords: recordatorio, recordar, aviso, notificación, antes del evento, recordatorio predeterminado, alarma, avisar
-translatedFrom: 2026-09-24
+keywords: recordatorio, recordar, aviso, notificación, antes del evento, recordatorio predeterminado, alarma, avisar, todo el día
+translatedFrom: 2026-10-27
 ---
 Un recordatorio es una notificación antes de que empiece el evento. Un evento puede tener hasta 5.
 
@@ -12,6 +12,8 @@ Un recordatorio es una notificación antes de que empiece el evento. Un evento p
 1. En un evento nuevo, toca **Añadir un recordatorio** en **Recordatorio**.
 2. Marca uno o varios momentos, como 15 minutos o 1 día antes. Para otro momento, toca **Personalizado…**.
 3. Toca **Guardar** en el evento.
+
+Un evento de todo el día ofrece **Por la mañana (9:00)**, **1 día antes (9:00)** y **1 semana antes (9:00)**. Todos llegan a las 9:00.
 
 ¿Quieres los mismos recordatorios en cada evento nuevo? En **Calendario**, toca el engranaje arriba a la derecha. En **Recordatorios**, toca **Recordatorio predeterminado** y marca hasta 5. Deja activado ahí **Recordatorios de eventos**, o no llegará ningún recordatorio a este teléfono.
 

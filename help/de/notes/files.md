@@ -3,7 +3,7 @@ id: notes-files
 title: Wo Bilder und Aufnahmen aus Notizen liegen
 summary: Behalte Bilder und Aufnahmen aus Notizen kostenlos auf diesem Handy oder mit Daili Plus in der Daili Cloud.
 keywords: daili cloud, speicher, speicherplatz, backup, bilder, fotos, aufnahmen, dateien, handy, hochladen, plus
-translatedFrom: 2026-10-06
+translatedFrom: 2026-10-27
 ---
 1. Öffne **Einstellungen** → **Notizen** → **Bilder und Aufnahmen**.
 2. Wähle **Auf diesem Handy** oder **Daili Cloud**.
@@ -20,4 +20,4 @@ Endet Plus, wird nichts gelöscht: Cloud-Dateien bleiben, neue bleiben auf dem H
 
 Eine Zeichnung lässt sich nur auf dem Handy bearbeiten, auf dem sie entstanden ist. Eine Zeichnung in der Cloud braucht eine Verbindung.
 
-> Note: Unter Android sind Bilder und Aufnahmen aus Notizen nicht im Handy-Backup. In der Daili Cloud sind sie sicher.
+> Note: Unter Android ziehen Bilder und Aufnahmen aus Notizen nur bei einer Übertragung von Handy zu Handy mit um, nicht über das Google-Backup. In der Daili Cloud sind sie sicher.

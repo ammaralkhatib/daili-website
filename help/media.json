@@ -105,5 +105,7 @@
   "start-edit-home-tile": { "file": "start-edit-home-tile.webp", "w": 720, "h": 720, "kind": "image" },
   "account-avatar-ai": { "file": "account-avatar-ai.webp", "w": 720, "h": 1564, "kind": "image" },
   "account-avatar-ai-look": { "file": "account-avatar-ai-look.webp", "w": 720, "h": 1564, "kind": "image" },
-  "budget-share": { "file": "budget-share.webp", "w": 720, "h": 1564, "kind": "image" }
+  "budget-share": { "file": "budget-share.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-repeating-monthly": { "file": "calendar-repeating-monthly.webp", "w": 720, "h": 721, "kind": "image" },
+  "notes-formatting": { "file": "notes-formatting.webp", "w": 720, "h": 1564, "kind": "image" }
 }

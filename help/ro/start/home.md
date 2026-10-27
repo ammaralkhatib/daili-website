@@ -3,11 +3,11 @@ id: start-home
 title: Un tur rapid al ecranului principal
 summary: Săptămâna familiei tale sus, câte o dală pentru fiecare zonă și un buton + ca să adaugi rapid.
 keywords: ecran principal, panou, început, dale, săptămână, prezentare generală, ecranul de start, vremea
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-27
 ---
-Ecranul principal e locul unde se deschide daili. Îți arată ce urmează și te duce oriunde dintr-o singură apăsare.
+Ecranul principal e locul unde se deschide daili.
 
-1. Cardul de sus arată următorul eveniment al familiei tale. Apasă pe el ca să vezi toată săptămâna și să adaugi un eveniment. Arată și zile de naștere, mese, sarcini, notițe și facturi. O zi doar cu acestea primește un punct gri.
+1. Cardul de sus arată următorul eveniment al familiei tale, inclusiv evenimentele de toată ziua de azi și ce se întâmplă chiar acum. Apasă pe el ca să vezi toată săptămâna și să adaugi un eveniment. Arată și zile de naștere, mese, sarcini, notițe și facturi. O zi doar cu acestea primește un punct gri.
 2. Fiecare dală deschide o zonă, de exemplu **Cumpărături** sau **Notițe**. Săgeata mică de pe o dală arată un rezumat rapid.
 3. Apasă pe butonul rotund **+** din dreapta jos ca să adaugi un eveniment, o listă de cumpărături sau o listă de sarcini.
 
