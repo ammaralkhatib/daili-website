@@ -204,6 +204,8 @@ export const PAGES = [
     cluster: null, // single-language legal notice: no hreflang set, noindex, not in sitemap
     noindex: true,
     body: { de: 'impressum.de.html' },
+    // A German literal, not content keys: the page exists in German only.
+    meta: { title: 'Impressum — Daili', description: 'Wer hinter Daili steht: Medieninhaber, Anschrift und Kontakt nach § 5 ECG und § 25 MedienG.' },
     out: () => 'impressum.html',
   },
   {

@@ -19,6 +19,10 @@
     "ogDescription": "One calm place for your family's week: shared calendar, shopping lists and to-dos everyone can see — on every phone and in the browser.",
     "supportTitle": "Support — Daili",
     "supportDescription": "Get help with Daili, or delete your account. We usually answer within a day or two.",
+    "privacyDescription": "How Daili handles your family's data: what is stored, why, for how long, and your rights.",
+    "@privacyDescription": { "description": "Search result snippet of the Privacy Policy page. One plain sentence; every claim must be true of the policy.", "maxLength": 155 },
+    "termsDescription": "The rules for using Daili: your account, your family's content and Daili Plus.",
+    "@termsDescription": { "description": "Search result snippet of the Terms of Use page. One plain sentence; every claim must be true of the terms.", "maxLength": 155 },
     "notfoundTitle": "Page not found — Daili"
   },
 

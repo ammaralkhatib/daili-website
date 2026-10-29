@@ -569,6 +569,10 @@ for (const f of htmlFiles) {
     if (!faces.length) { fail(where, 'declares no @font-face — the brand fonts did not reach the build'); continue; }
     for (const face of faces) {
       const urls = [...face.matchAll(/url\(\s*['"]?([^'")\s]+)['"]?\s*\)/g)].map((m) => m[1]);
+      // A metric-matched fallback ("Figtree Fallback", 2026-10-29/002) is a
+      // system font: local() sources only, nothing is fetched.
+      const src = (face.match(/src:([^;}]*)/) || [])[1] || '';
+      if (!urls.length && /^\s*local\(/.test(src) && src.replace(/local\([^)]*\)/g, '').replace(/[\s,]/g, '') === '') continue;
       if (!urls.length) { fail(where, '@font-face has no src url()'); continue; }
       for (const u of urls) {
         if (!u.startsWith('/assets/fonts/')) {
@@ -1134,6 +1138,117 @@ for (const loc of LOCALES) {
     // The article only: the language picker's current entry is a self-link by design.
     const article = (html.match(/<article class="post"[\s\S]*<\/article>/) || [''])[0];
     if (article.includes(`href="/blog/${post.slug}/"`)) fail(out, 'links to itself');
+  }
+}
+
+// --- 20–23. SEO basics (2026-10-29/002) ------------------------------------
+// Four things no browser shows and Search Console reports weeks later: two
+// pages with one <title>, structured data that does not parse or points at the
+// wrong URL, an app screenshot with no description, and a legal page wearing
+// the home page's title (50+ pages did until 002).
+const decodeHtml = (s) => s.replace(/<[^>]*>/g, '')
+  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+  .replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (_, n) => ({ amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'", nbsp: ' ' })[n])
+  .replace(/\s+/g, ' ').trim();
+const titleOf = (html) => decodeHtml((html.match(/<title>([\s\S]*?)<\/title>/) || [, ''])[1]);
+const headOf = (html) => html.split('</head>')[0];
+const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf(html));
+
+// --- 20. no two indexable pages of one locale share a <title> ---------------
+// An exception needs its file path and a one-line reason here (expected: none).
+// An entry whose page no longer shares its title fails too, so the list
+// cannot quietly outlive its reason.
+{
+  const TITLE_DUPES_OK = {};
+  const byTitle = new Map(); // `${lang}\n${title}` -> [rel path]
+  for (const f of htmlFiles) {
+    const html = read(f);
+    if (isNoindex(html)) continue;
+    const lang = (html.match(/<html lang="([^"]+)"/) || [])[1] || '(none)';
+    const key = `${lang}\n${titleOf(html)}`;
+    if (!byTitle.has(key)) byTitle.set(key, []);
+    byTitle.get(key).push(rel(f));
+  }
+  const shared = new Set();
+  for (const [key, files] of byTitle) {
+    if (files.length < 2) continue;
+    for (const f of files) shared.add(f);
+    const open = files.filter((f) => !(f in TITLE_DUPES_OK));
+    if (open.length) fail(open[0], `shares its <title> "${key.split('\n')[1]}" (${key.split('\n')[0]}) with ${files.filter((f) => f !== open[0]).join(', ')}`);
+  }
+  for (const f of Object.keys(TITLE_DUPES_OK)) {
+    if (!shared.has(f)) fail(f, 'is in TITLE_DUPES_OK but shares its <title> with no page any more — remove the stale entry');
+  }
+}
+
+// --- 21. JSON-LD ------------------------------------------------------------
+// Every block parses and names @context and @type. Every help and feature page
+// carries exactly one BreadcrumbList whose last item is the page's canonical;
+// the root home page carries the one WebSite and the one Organization (Google
+// reads the site name from the domain root only), and no other page a WebSite.
+{
+  const crumbPages = new Set([...helpOuts, ...FEATURE_PAGES.flatMap((f) => LOCALES.map((l) => featureOut(f.slug, l)))]);
+  for (const f of htmlFiles) {
+    const out = rel(f);
+    const html = read(f);
+    const blocks = [];
+    for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      let obj;
+      try { obj = JSON.parse(json); } catch (e) { fail(out, `has a JSON-LD block that does not parse: ${e.message}`); continue; }
+      if (!obj['@context'] || !obj['@type']) fail(out, `has a JSON-LD block without @context or @type (${json.slice(0, 60)}…)`);
+      blocks.push(obj);
+    }
+    const ofType = (t) => blocks.filter((b) => b['@type'] === t);
+    const crumbs = ofType('BreadcrumbList');
+    if (crumbPages.has(out)) {
+      if (crumbs.length !== 1) { fail(out, `has ${crumbs.length} BreadcrumbList block(s), expected exactly 1`); }
+      else {
+        const items = crumbs[0].itemListElement || [];
+        const last = items[items.length - 1];
+        const canon = (html.match(/<link rel="canonical" href="([^"]+)">/) || [])[1];
+        if (!last || last.item !== canon) fail(out, `the last breadcrumb is ${last ? last.item : '(none)'}, not the page's canonical ${canon || '(none)'}`);
+        items.forEach((it, i) => {
+          if (it.position !== i + 1 || !it.name || !/^https:\/\//.test(it.item || '')) fail(out, `breadcrumb ${i + 1} needs position ${i + 1}, a name and an absolute https URL`);
+        });
+        if (/data-feature-sheet[\s\S]*BreadcrumbList/.test(html.split('</article>')[0])) fail(out, 'has its BreadcrumbList inside [data-feature-sheet] — home.js would lift it into the home popup');
+      }
+    } else if (crumbs.length) fail(out, `has a BreadcrumbList, but is not a help or feature page`);
+    if (out === 'index.html') {
+      if (ofType('WebSite').length !== 1) fail(out, `has ${ofType('WebSite').length} WebSite block(s), expected exactly 1`);
+      if (ofType('Organization').length !== 1) fail(out, `has ${ofType('Organization').length} Organization block(s), expected exactly 1`);
+    } else if (ofType('WebSite').length) fail(out, 'has a WebSite block — only the root home page carries the site name');
+  }
+}
+
+// --- 22. app screenshots are described --------------------------------------
+// Every <img> with a src under /assets/img/shots/ has a non-empty alt (the
+// home.alt.<shot> words), except the watch screens: they stay decorative.
+{
+  for (const f of htmlFiles) {
+    const out = rel(f);
+    for (const [tag] of read(f).matchAll(/<img\s[^>]*>/g)) {
+      const src = (tag.match(/(?:^|\s)src="([^"]+)"/) || [])[1];
+      if (!src || !src.startsWith('/assets/img/shots/') || /\/shot-watch-[^/]*$/.test(src.split('?')[0])) continue;
+      const alt = (tag.match(/\salt="([^"]*)"/) || [])[1];
+      if (!alt || !alt.trim()) fail(out, `screenshot ${src.split('?')[0]} has an empty alt`);
+    }
+  }
+}
+
+// --- 23. a legal page's <title> is its own heading ---------------------------
+{
+  for (const pg of PAGES.filter((p) => p.template === 'legal.html')) {
+    const locs = pg.locales === 'all' ? LOCALES : pg.locales.filter((l) => LOCALES.includes(l));
+    for (const loc of locs) {
+      const out = pg.out(loc);
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file)) continue;          // section 1 already reported it
+      const html = read(file);
+      const h1 = decodeHtml((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [, ''])[1]);
+      const title = titleOf(html);
+      if (!h1) fail(out, 'has no <h1>');
+      else if (!title.startsWith(h1)) fail(out, `<title> "${title}" does not start with its own <h1> "${h1}"`);
+    }
   }
 }
 

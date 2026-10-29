@@ -8,5 +8,10 @@
     "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose.",
     "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose."
   },
-  "pending": {}
+  "pending": {
+    "/settings/wall-display": "wall display in the app — article at the next release help sync",
+    "/settings/wall-display/connect": "wall display in the app — article at the next release help sync",
+    "/settings/wall-display/connect/scan": "wall display in the app — article at the next release help sync",
+    "/settings/wall-display/screens": "wall display in the app — article at the next release help sync"
+  }
 }

@@ -134,7 +134,43 @@ const pageById = Object.fromEntries(PAGES.map((pg) => [pg.id, pg]));
 
 /** A page's own literal meta, if it carries any. Plain object, or a function of
  *  locale for a page that exists in more than one language. */
-const metaFor = (pg, loc) => (typeof pg.meta === 'function' ? pg.meta(loc) : pg.meta);
+const ownMeta = (pg, loc) => (typeof pg.meta === 'function' ? pg.meta(loc) : pg.meta);
+
+/** A page body's file: relative to legal/ unless it names its own folder. */
+const bodyFile = (pg, loc) => (pg.body[loc].includes('/') ? pg.body[loc] : `legal/${pg.body[loc]}`);
+
+/** The text of a legal body's <h1>, tags dropped and entities decoded. Throws
+ *  without one: the page's <title> is its own heading. */
+function legalH1(file) {
+  const m = read(file).match(/<h1[^>]*>([\s\S]*?)<\/h1>/);
+  if (!m) throw new Error(`${file} has no <h1> — a legal page's <title> is its own heading`);
+  const text = m[1].replace(/<[^>]*>/g, '')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (_, n) => ({ amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'", nbsp: ' ' })[n])
+    .replace(/\s+/g, ' ').trim();
+  if (!text) throw new Error(`${file} has an empty <h1>`);
+  return text;
+}
+
+/**
+ * Privacy and Terms carry their own <title> and description (2026-10-29/002),
+ * not the home page's: the body's <h1> + " — Daili", so no title needs a
+ * translation of its own, and meta.privacyDescription / termsDescription.
+ */
+const LEGAL_DESCRIPTION = { privacy: 'meta.privacyDescription', terms: 'meta.termsDescription' };
+
+/** A page's own meta, if it carries any: a literal (plain object, or a
+ *  function of locale for a page in more than one language), or a legal
+ *  page's. Undefined for the pages that read content/<loc>.json's meta. */
+const metaFor = (pg, loc) => {
+  if (pg.id in LEGAL_DESCRIPTION) {
+    return {
+      title: `${legalH1(bodyFile(pg, loc))} — Daili`,
+      description: lookup(content[loc], LEGAL_DESCRIPTION[pg.id], `content/${loc}.json`),
+    };
+  }
+  return ownMeta(pg, loc);
+};
 
 /**
  * Blog posts become pages here rather than being hand-written into PAGES.
@@ -644,8 +680,9 @@ function renderHome(loc) {
   };
   // alt: a photo is decorative ("") unless the caller passes its description —
   // only the member cards do; the mosaic and the flat-lay sit in aria-hidden
-  // boxes. A screenshot in a phone is described by default (home.alt.<shot>),
-  // and the phones inside an aria-hidden box pass alt: '' explicitly.
+  // boxes. Every app screenshot is described (home.alt.<shot>, a missing key
+  // throws), even in an aria-hidden phone: screen readers still skip it, the
+  // alt is there for image search (2026-10-29/002). The watch screens stay "".
   const photo = (name, extra = '', alt = '') => {
     const { width, height } = imageSize(name);
     return `<img src="${homeImg(name)}" alt="${e(alt)}" width="${width}" height="${height}" loading="lazy" decoding="async"${extra}>`;
@@ -688,7 +725,7 @@ function renderHome(loc) {
   const heroShots = HERO_SCENES.map((sc, i) => {
     if (scenes[i].id !== sc.id) throw new Error(`home.hero.scenes[${i}].id in ${where} is '${scenes[i].id}', HERO_SCENES says '${sc.id}' — the id is data, never translated`);
     const { width, height } = imageSize(sc.shot);
-    return `<img class="hs" data-scene="${i}"${sc.watch ? ` data-watch="${sc.watch}"` : ''} src="${imgSrc(sc.shot, loc)}" alt="" width="${width}" height="${height}"${i ? ' loading="lazy"' : ''} decoding="async">`;
+    return `<img class="hs" data-scene="${i}"${sc.watch ? ` data-watch="${sc.watch}"` : ''} src="${imgSrc(sc.shot, loc)}" alt="${e(h(`home.alt.${sc.shot}`))}" width="${width}" height="${height}"${i ? ' loading="lazy"' : ''} decoding="async">`;
   }).join('');
   const heroPhone = `<div class="phone hphone" aria-hidden="true"><div class="scr">${heroShots}</div></div>`;
   const heroCards = HERO_SCENES.map((sc, i) => {
@@ -825,7 +862,7 @@ ${dayCards}
       return `<video class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" data-flow-video src="/assets/video/${s.video}.mp4" poster="/assets/video/${s.video}.webp" width="${width}" height="${height}" muted playsinline preload="none"></video>`;
     }
     const { width, height } = imageSize(s.shot);
-    return `<img class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" src="${imgSrc(s.shot, loc)}" alt="" width="${width}" height="${height}" loading="lazy" decoding="async">`;
+    return `<img class="sx${i === 0 ? ' on' : ''}" data-sx="${i}" src="${imgSrc(s.shot, loc)}" alt="${e(h(`home.alt.${s.shot}`))}" width="${width}" height="${height}" loading="lazy" decoding="async">`;
   }).join('');
   const tap = (i, style) => (FLOW_STEPS[i].video ? '' : `<span class="tap" data-ov="${i}" style="${style}">${homeIcon('check', 3)}</span>`);
   const pill = FLOW_STEPS[0].video ? '' : `<span class="pillev go" data-ov="0" style="left:20%;top:75.5%;width:24%">${e(h('home.flow.pill'))}</span>`;
@@ -863,7 +900,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     `        <article class="bx span2 g-lake bx-low bx-tab" data-r><h3>${e(h('home.screens.tablet.h3'))}</h3><p>${e(h('home.screens.tablet.p'))}</p>
           <div class="tablet"><div class="tab-scr"><img src="${imgSrc('web-calendar', loc)}" alt="${e(h('home.screens.tablet.alt'))}" width="${ww}" height="${wh}" loading="lazy" decoding="async"></div></div></article>`,
     `        <article class="bx span2 g-clay bx-low" data-r><h3>${e(h('home.screens.phones.h3'))}</h3><p>${e(h('home.screens.phones.p'))}</p>
-          <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a', alt: '' })}${phone('shot-notes', { cls: 'tilt-b', alt: '' })}</div></article>`,
+          <div class="phones" aria-hidden="true">${phone('shot-birthdays', { cls: 'tilt-a' })}${phone('shot-notes', { cls: 'tilt-b' })}</div></article>`,
     // A drawn chat with an AI app, in the site's own colours: no AI company's
     // logo, colours or type. The full width under the four, text then chat.
     `        <article class="bx bx-ai g-leaf" data-r><div class="ai-tx"><h3>${e(h('home.screens.ai.h3'))}</h3><p>${e(h('home.screens.ai.p'))}</p><a class="bx-more" ${helpLinkAttrs(AI_APPS_HELP, loc)}>${e(h('home.screens.ai.more'))}</a></div>
@@ -1208,10 +1245,55 @@ function ogHeadline(c) {
   return `${a}${/[　-〿＀-￯]$/.test(a) ? '' : ' '}${c.hero.h1b.trim()}`;
 }
 
+/** The stores Daili can be installed from today: the SoftwareApplication's
+ *  installUrl and the Organization's sameAs. A rejected build is neither. */
+const availableStoreUrls = [stores.ios, stores.android].filter((st) => st.available).map((st) => st.url);
+const ORGANIZATION_ID = `${BASE_URL}/#organization`;
+
+/**
+ * The Figtree file the home page's headline is drawn with, preloaded so it is
+ * usually there before the first paint (2026-10-29/002: the swap from a wide
+ * fallback set the h1 on three lines, then two, and moved the hero stage — CLS
+ * 0.16). Only 700: it was 0.22 of a measured 0.23, and preloading all four
+ * weights held the stylesheets back on a slow line (LCP +550 ms); 400–600 are
+ * left to the "Figtree Fallback" faces. The path is the @font-face URL exactly,
+ * unversioned — a preload that misses by a character downloads the file twice —
+ * so a stylesheet that stops naming it throws here.
+ * ja, ko, zh-*, th, hi and ar get none: their hero text is in no Figtree range.
+ */
+const FIGTREE_PRELOAD = [700].map((w) => `/assets/fonts/figtree-latin-${w}-normal.woff2`);
+const styleCss = read('static/assets/style.css');
+for (const url of FIGTREE_PRELOAD) {
+  if (!styleCss.includes(`src:url(${url}) format("woff2")`)) throw new Error(`FIGTREE_PRELOAD names ${url}, which no @font-face in static/assets/style.css loads`);
+}
+const NO_FIGTREE_HERO = new Set(['ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'hi', 'ar']);
+
+/** A page's breadcrumb trail as [{ name, url }], absolute URLs, or null: the
+ *  help pages (Daili › Help › topic › article) and the feature pages
+ *  (Daili › feature). The names are the words the page shows. */
+function breadcrumbsFor(pg, loc) {
+  const home = { name: 'Daili', url: BASE_URL + dirFor(loc) };
+  if (pg.feature) return [home, { name: featureCard(pg.feature, loc).h3, url: BASE_URL + featureUrl(pg.feature.slug, loc) }];
+  if (!pg.help) return null;
+  const { ui } = helpByLocale[loc];
+  const topic = (t) => ({ name: ui.topics[t].title, url: `${BASE_URL}${helpHome(loc)}${t}/` });
+  const trail = [home, { name: ui.crumbHelp, url: BASE_URL + helpHome(loc) }];
+  if (pg.help.kind === 'topic') trail.push(topic(pg.help.topic));
+  if (pg.help.kind === 'article') {
+    const a = helpArticleIn(pg.help.id, loc);
+    trail.push(topic(a.topic), { name: a.title, url: BASE_URL + helpArticleUrl(a, loc) });
+  }
+  return trail;
+}
+
 function renderHead(pg, loc, cssHref, detector, postBody) {
   const c = content[loc];
   const out = [];
   const canonical = absUrl(pg, loc);
+
+  if (pg.id === 'landing' && !NO_FIGTREE_HERO.has(loc)) {
+    for (const url of FIGTREE_PRELOAD) out.push(`<link rel="preload" href="${url}" as="font" type="font/woff2" crossorigin>`);
+  }
   // A blog page carries its own meta (pg.meta) and, for a post, its own hero
   // image; every other page still reads both out of content/<loc>.json exactly
   // as before.
@@ -1352,8 +1434,9 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
         // Only stores the app can actually be installed from. A rejected
         // build is not an installUrl, and schema.org markup is exactly the
         // wrong place to promise a 404.
-        installUrl: [stores.ios, stores.android].filter((st) => st.available).map((st) => st.url),
+        installUrl: availableStoreUrls,
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+        publisher: { '@id': ORGANIZATION_ID },
       },
       {
         '@context': 'https://schema.org',
@@ -1365,9 +1448,47 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
         })),
       },
     ];
+    // The site name and who publishes it (2026-10-29/002), on the root only:
+    // Google reads a site name from the domain's home page, so the locale
+    // homes would only repeat it. Every SoftwareApplication above points here.
+    if (loc === DEFAULT_LOCALE) {
+      ld.push(
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          '@id': `${BASE_URL}/#website`,
+          name: 'Daili',
+          alternateName: 'daili.app',
+          url: `${BASE_URL}/`,
+          publisher: { '@id': ORGANIZATION_ID },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          '@id': ORGANIZATION_ID,
+          name: 'Daili',
+          url: `${BASE_URL}/`,
+          logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/img/logo.webp`, width: 512, height: 512 },
+          sameAs: availableStoreUrls,
+        },
+      );
+    }
     for (const obj of ld) {
       out.push(`<script type="application/ld+json">${JSON.stringify(obj)}</script>`);
     }
+  }
+
+  // Breadcrumbs (2026-10-29/002): the help pages and the feature pages, from
+  // the same strings the page shows. In the <head>, never in the feature
+  // sheet: home.js lifts [data-feature-sheet] into the home page's popup.
+  const crumbs = breadcrumbsFor(pg, loc);
+  if (crumbs) {
+    if (crumbs[crumbs.length - 1].url !== canonical) throw new Error(`${pg.id} (${loc}): the last breadcrumb ${crumbs[crumbs.length - 1].url} is not the canonical ${canonical}`);
+    out.push(`<script type="application/ld+json">${JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: crumbs.map((cr, i) => ({ '@type': 'ListItem', position: i + 1, name: cr.name, item: cr.url })),
+    })}</script>`);
   }
 
   if (detector) out.push(detector);
@@ -1498,7 +1619,7 @@ function build() {
       // release notes live in changelog/ because a release prompt prepends to
       // them and they are not legal text.
       let legalBody = '';
-      if (pg.body) legalBody = read(pg.body[loc].includes('/') ? pg.body[loc] : `legal/${pg.body[loc]}`);
+      if (pg.body) legalBody = read(bodyFile(pg, loc));
 
       let postBody = '';
       if (pg.post) postBody = read(`blog/${pg.post.body}`);

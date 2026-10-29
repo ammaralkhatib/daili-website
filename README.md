@@ -49,6 +49,7 @@ check-build → test-detector`, chained with
   inline script it authorises, and every `@font-face` in the stylesheet the pages
   load points at a file that really exists under `dist/assets/fonts/` with
   nothing in the built tree mentioning Google Fonts.
+  Sections 20–23 (SEO): no two indexable pages of one locale share a `<title>`, every JSON-LD block parses (one BreadcrumbList ending at the canonical on help and feature pages, WebSite + Organization on the root only), every app screenshot but the watch's has an `alt`, and a legal page's `<title>` starts with its own `<h1>`.
 - **`test-detector.mjs`** — runs the detector that actually ships in
   `dist/index.html` against a stubbed browser. Chrome's `--lang` flag does **not**
   change `navigator.languages`, so this cannot be checked by hand in a browser.
