@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
-title: daili na ekranie na ścianie albo na starym tablecie
-summary: Pokaż dzisiejszy plan duży i czytelny na tablecie w przedpokoju albo w kuchni.
-keywords: ściana, tablet, ipad, stary tablet, kuchnia, przedpokój, ekran, tablica rodzinna, tablica, lodówka
-translatedFrom: 2026-09-25
+title: daili na ekranie ściennym lub starym tablecie
+summary: Zamień tablet w kuchni albo w przedpokoju w ekran rodzinny, który każdy może przeczytać.
+keywords: ekran ścienny, tablet, ipad, kuchnia, ekran rodzinny, tablica rodzinna, ściana, kiosk, kod, qr, lodówka
+translatedFrom: 2026-10-29
 ---
-Stary tablet może zostać waszą rodzinną tablicą. Pokazuje dziś i jutro, zadania na dziś, dzisiejsze posiłki i najbliższe urodziny, literami, które da się przeczytać z drugiego końca pokoju.
+Stary tablet staje się ekranem rodzinnym z dużymi literami: **Strona główna**, **Tydzień**, **Miesiąc**, **Osoby**, **Posiłki**, **Listy**, **Nawyki** i **Odliczanie**. W ciche godziny rodzica, który go połączył, ekran przyciemnia się i przechodzi w widok **Noc**.
 
-1. Na tablecie otwórz przeglądarkę i wejdź na app.daili.app/board.
-2. Zaloguj się na swoje konto daili.
-3. Postaw tablet na stojaku albo powieś go na ścianie i podłącz do prądu.
+1. Na tablecie otwórz app.daili.app/board/pair. Pojawi się kod i QR.
+2. Na telefonie albo komputerze zeskanuj QR albo wpisz kod pod tym adresem.
+3. Dotknij **Zatwierdź**. Może to zrobić tylko rodzic (administrator). Tablet nie potrzebuje hasła.
 
-Na razie tablica jest dostępna tylko po angielsku i niemiecku. Tablica odświeża się sama i nikt nie wejdzie z niej do ustawień twojej rodziny. Żeby ją zamknąć, przytrzymaj **Hold to leave** w rogu przez dwie sekundy.
+Żeby komputer stał się ekranem rodzinnym: twoje imię → **Ogólne** → **Użyj tej przeglądarki jako ekranu rodzinnego**.
 
-> Note: Większość przeglądarek nie wygasza ekranu, gdy tablica jest otwarta. Jeśli tablet mimo to gaśnie, wyłącz w jego ustawieniach automatyczną blokadę.
+> Note: Ekran nigdy nie pokazuje prywatnych rzeczy, nawet twoich, ani sekcji Notatki, Budżet, Cykl i Dokumenty.
+
+Żeby go usunąć: **Rodzina** → **Ekrany ścienne** → **Usuń**. Przestaje też działać, gdy rodzic, który go połączył, odejdzie z rodziny albo przestanie być administratorem. Na tablecie trzymaj palec na **Przytrzymaj, aby wyjść** przez dwie sekundy, a potem dotknij **Przestań używać**.
+
+iPad: użyj opcji Do ekranu początkowego, otwórz ikonę i dotknij **Ustaw ekran rodzinny**. W Ustawieniach → Ekran i jasność ustaw Autoblokadę na Nigdy. Android: Chrome → Zainstaluj aplikację.

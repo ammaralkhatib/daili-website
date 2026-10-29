@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
 title: Pune daili pe un ecran de perete sau pe o tabletă veche
-summary: Arată planul de azi mare și clar pe o tabletă din hol sau din bucătărie.
-keywords: perete, tabletă, ipad, tabletă veche, bucătărie, hol, ecran, panoul familiei, panou, afișaj, frigider
-translatedFrom: 2026-09-25
+summary: Transformă o tabletă din bucătărie sau de pe hol într-un ecran al familiei pe care îl poate citi oricine.
+keywords: perete, tabletă, ipad, bucătărie, panou de familie, ecran, ecranul familiei, ecran de perete, kiosk, cod de asociere, qr, frigider
+translatedFrom: 2026-10-29
 ---
-O tabletă veche poate deveni panoul familiei tale. Arată azi și mâine, sarcinile de azi, mesele de azi și următoarele zile de naștere, cu litere pe care le citești din celălalt capăt al camerei.
+O tabletă veche devine un ecran al familiei cu litere mari: **Acasă**, **Săptămână**, **Lună**, **Persoane**, **Mese**, **Liste**, **Obiceiuri** și **Numărătoare inversă**. În orele de liniște ale părintelui care l-a conectat, se întunecă și trece la **Noapte**.
 
-1. Pe tabletă, deschide browserul și mergi la app.daili.app/board.
-2. Conectează-te cu contul tău daili.
-3. Pune tableta pe un suport sau pe perete și bag-o în priză.
+1. Pe tabletă, deschide app.daili.app/board/pair. Apar un cod și un QR.
+2. Pe telefon sau pe calculator, scanează QR-ul sau scrie codul la acea adresă.
+3. Apasă pe **Aprobă**. Doar un părinte (administrator) poate face asta. Tableta nu are nevoie de parolă.
 
-Deocamdată, panoul este doar în engleză și germană. Panoul se actualizează singur și nimeni nu poate ajunge din el la setările familiei. Ca să ieși, ține apăsat pe **Hold to leave** din colț timp de două secunde.
+Ca să faci din calculator ecranul familiei: numele tău din meniul lateral → **Preferințe** → **Folosește acest browser ca ecran al familiei**.
 
-> Note: Majoritatea browserelor țin ecranul pornit cât timp panoul e deschis. Dacă tableta tot se stinge, oprește blocarea automată din setările ei.
+> Note: Nu arată niciodată lucruri private, nici măcar pe ale tale, și nici Notițe, Buget, Ciclu sau Documente.
+
+Ca să-l elimini: **Familie** → **Ecrane de perete** → **Elimină**. Se oprește și dacă părintele care l-a conectat iese din familie sau nu mai e administrator. Pe tabletă, ține două secunde pe **Ține apăsat ca să ieși**, apoi apasă pe **Nu mai folosi**.
+
+iPad: Adaugă pe ecranul principal, deschide-l de acolo și apasă pe **Configurează un ecran al familiei**. În Configurări → Afișaj și luminozitate, pune Blocare automată pe Niciodată. Android: Chrome → Instalează aplicația.

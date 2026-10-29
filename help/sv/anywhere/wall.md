@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
-title: Sätt daili på en väggskärm eller en gammal surfplatta
-summary: Visa dagens planering stort och tydligt på en surfplatta i hallen eller köket.
-keywords: vägg, surfplatta, ipad, gammal surfplatta, kök, hall, skärm, familjetavla, tavla, display, kylskåp
-translatedFrom: 2026-09-25
+title: daili på en väggskärm eller en gammal surfplatta
+summary: Gör en surfplatta i köket eller hallen till en familjeskärm som alla kan läsa.
+keywords: vägg, surfplatta, ipad, kök, familjeskärm, väggskärm, skärm, kiosk, kopplingskod, qr, kylskåp, familjetavla
+translatedFrom: 2026-10-29
 ---
-En gammal surfplatta kan bli er familjetavla. Den visar i dag och i morgon, uppgifterna som ska göras i dag, dagens måltider och de närmaste födelsedagarna, med text som går att läsa från andra sidan rummet.
+En gammal surfplatta blir en familjeskärm med stor text: **Hem**, **Vecka**, **Månad**, **Personer**, **Måltider**, **Listor**, **Vanor** och **Nedräkning**. Under tysta timmar för föräldern som anslöt den dämpas den och visar **Natt**.
 
-1. Öppna webbläsaren på surfplattan och gå till app.daili.app/board.
-2. Logga in med ditt daili-konto.
-3. Ställ surfplattan i ett ställ eller häng upp den på väggen, och koppla in laddaren.
+1. Öppna app.daili.app/board/pair på surfplattan. En kod och en QR-kod visas.
+2. Skanna QR-koden med telefonen eller datorn, eller skriv in koden på den adressen.
+3. Tryck på **Godkänn**. Bara en förälder (admin) kan göra det. Surfplattan behöver inget lösenord.
 
-Tavlan finns än så länge bara på engelska och tyska. Tavlan uppdateras av sig själv, och ingen kan komma åt familjens inställningar från den. För att lämna den håller du **Hold to leave** i hörnet intryckt i två sekunder.
+Vill du att en dators webbläsare själv ska vara familjeskärmen: ditt namn → **Allmänt** → **Använd den här webbläsaren som familjeskärm**.
 
-> Note: De flesta webbläsare håller skärmen tänd medan tavlan är öppen. Om surfplattan ändå släcks, stäng av automatiskt lås i dess inställningar.
+> Note: Den visar aldrig något privat, inte ens ditt, och inte heller Anteckningar, Hushållsbudget, Menscykel eller Dokument.
+
+Ta bort den: **Familj** → **Väggskärmar** → **Ta bort**. Den slutar också fungera om föräldern som anslöt den lämnar familjen eller inte längre är admin. På surfplattan trycker du på **Håll in för att lämna** i två sekunder och sedan på **Sluta använda**.
+
+iPad: Lägg till på hemskärmen, öppna den och tryck på **Ställ in en familjeskärm**. Automatiskt lås: Aldrig. Android: Chrome → Installera app.

@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
 title: Mettre daili sur un écran mural ou une vieille tablette
-summary: Affiche le programme du jour en grand et bien lisible sur une tablette dans l'entrée ou la cuisine.
-keywords: mur, tablette, ipad, vieille tablette, cuisine, entrée, écran, tableau familial, tableau, frigo
-translatedFrom: 2026-09-25
+summary: Transforme une tablette dans la cuisine ou l'entrée en écran familial que tout le monde peut lire.
+keywords: mural, écran mural, tablette, ipad, cuisine, tableau familial, écran familial, affichage, kiosque, code, qr, frigo
+translatedFrom: 2026-10-29
 ---
-Une vieille tablette peut devenir ton tableau familial. Elle affiche aujourd'hui et demain, les tâches à faire aujourd'hui, les repas du jour et les prochains anniversaires, en lettres lisibles depuis l'autre bout de la pièce.
+Une vieille tablette devient un écran familial en gros caractères : **Accueil**, **Semaine**, **Mois**, **Personnes**, **Repas**, **Listes**, **Habitudes** et **Compte à rebours**. Pendant les heures calmes du parent qui l'a connectée, elle s'assombrit et passe en **Nuit**.
 
-1. Sur la tablette, ouvre le navigateur et va sur app.daili.app/board.
-2. Connecte-toi avec ton compte daili.
-3. Pose la tablette sur un support ou fixe-la au mur, et branche-la.
+1. Sur la tablette, ouvre app.daili.app/board/pair. Un code et un QR s'affichent.
+2. Sur ton téléphone ou ton ordinateur, scanne le QR ou saisis le code à cette adresse.
+3. Touche **Approuver**. Seul un parent (administrateur) peut le faire. La tablette n'a pas besoin de mot de passe.
 
-Pour l'instant, le tableau n'existe qu'en anglais et en allemand. Le tableau se met à jour tout seul, et personne ne peut accéder aux paramètres de ta famille depuis lui. Pour le quitter, garde le doigt appuyé sur **Hold to leave** dans le coin pendant deux secondes.
+Pour utiliser ton ordinateur comme écran familial : ton nom dans le menu → **Général** → **Utiliser ce navigateur comme écran familial**.
 
-> Note: La plupart des navigateurs gardent l'écran allumé tant que le tableau est ouvert. Si la tablette s'éteint quand même, désactive le verrouillage automatique dans ses réglages.
+> Note: L'écran n'affiche jamais rien de privé, pas même tes propres éléments, ni les sections Notes, Budget, Cycle ou Documents.
+
+Pour le retirer : **Famille** → **Écrans muraux** → **Supprimer**. Il s'arrête aussi si le parent qui l'a connecté quitte la famille ou n'est plus administrateur. Sur la tablette, appuie deux secondes sur **Maintiens pour quitter**, puis touche **Ne plus utiliser**.
+
+iPad : ajoute la page avec Sur l'écran d'accueil, ouvre-la et touche **Installer un écran familial**. Dans Réglages → Luminosité et affichage, règle Verrouillage automatique sur Jamais. Android : Chrome → Installer l'application.

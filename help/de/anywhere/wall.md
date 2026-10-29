@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
 title: daili auf einem Wandbildschirm oder alten Tablet
-summary: Zeig den Plan für heute groß und gut lesbar auf einem Tablet im Flur oder in der Küche.
-keywords: wand, tablet, ipad, altes tablet, küche, flur, display, familientafel, tafel, bildschirm, kühlschrank
-translatedFrom: 2026-09-25
+summary: Mach aus einem Tablet in der Küche oder im Flur einen Familienbildschirm, den alle lesen können.
+keywords: wand, tablet, ipad, küche, familienbildschirm, wandbildschirm, display, kiosk, kopplungscode, qr, kühlschrank, familienboard
+translatedFrom: 2026-10-29
 ---
-Ein altes Tablet kann eure Familientafel werden. Es zeigt heute und morgen, die heute fälligen Aufgaben, das Essen von heute und die nächsten Geburtstage, in einer Schrift, die du quer durch den Raum lesen kannst.
+Ein altes Tablet wird zum Familienbildschirm mit großer Schrift: **Start**, **Woche**, **Monat**, **Personen**, **Mahlzeiten**, **Listen**, **Gewohnheiten** und **Countdown**. In den Ruhezeiten des Elternteils, das ihn verbunden hat, wird er dunkler und zeigt **Nacht**.
 
-1. Öffne auf dem Tablet den Browser und geh zu app.daili.app/board.
-2. Melde dich mit deinem daili-Konto an.
-3. Stell das Tablet auf einen Ständer oder häng es an die Wand, und schließ es ans Ladekabel an.
+1. Öffne auf dem Tablet app.daili.app/board/pair. Ein Code und ein QR-Code erscheinen.
+2. Scanne am Handy oder Computer den QR-Code, oder gib den Code unter dieser Adresse ein.
+3. Tippe auf **Bestätigen**. Das kann nur ein Elternteil (Admin). Das Tablet braucht kein Passwort.
 
-Die Tafel gibt es vorerst nur auf Englisch und Deutsch. Die Tafel aktualisiert sich von selbst, und niemand kommt von dort in die Einstellungen deiner Familie. Um sie zu verlassen, halte **Zum Verlassen gedrückt halten** in der Ecke zwei Sekunden lang gedrückt.
+Soll der Browser eines Computers selbst der Familienbildschirm sein: dein Name → **Präferenzen** → **Diesen Browser als Familienbildschirm nutzen**.
 
-> Note: Die meisten Browser lassen den Bildschirm an, solange die Tafel offen ist. Wird das Tablet trotzdem dunkel, schalte in seinen Einstellungen die automatische Sperre aus.
+> Note: Er zeigt nie Privates, auch nicht deins, und weder Notizen, Budget, Zyklus noch Dokumente.
+
+Zum Entfernen: **Familie** → **Wandbildschirme** → **Entfernen**. Er stoppt auch, wenn das Elternteil, das ihn verbunden hat, die Familie verlässt oder kein Admin mehr ist. Am Tablet drückst du zwei Sekunden lang auf **Zum Verlassen gedrückt halten** und tippst dann auf **Nicht mehr nutzen**.
+
+iPad: Zum Home-Bildschirm, öffnen und auf **Familienbildschirm einrichten** tippen. Automatische Sperre: Nie. Android: Chrome → App installieren.

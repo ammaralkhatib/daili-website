@@ -1,16 +1,20 @@
 ---
 id: anywhere-wall
-title: Sæt daili på en vægskærm eller en gammel tablet
-summary: Vis dagens plan stort og tydeligt på en tablet i entréen eller i køkkenet.
-keywords: væg, tablet, ipad, gammel tablet, køkken, entré, skærm, familietavle, tavle, display, køleskab
-translatedFrom: 2026-09-25
+title: daili på en vægskærm eller en gammel tablet
+summary: Gør en tablet i køkkenet eller entréen til en familieskærm, som alle kan læse.
+keywords: væg, tablet, ipad, køkken, familieskærm, vægskærm, skærm, kiosk, parringskode, qr, køleskab, familietavle
+translatedFrom: 2026-10-29
 ---
-En gammel tablet kan blive jeres familietavle. Den viser i dag og i morgen, de opgaver, der forfalder i dag, dagens mad og de næste fødselsdage, med bogstaver, du kan læse fra den anden ende af rummet.
+En gammel tablet bliver til en familieskærm med stor skrift: **Hjem**, **Uge**, **Måned**, **Personer**, **Måltider**, **Lister**, **Vaner** og **Nedtælling**. I stilletimerne for den forælder, der forbandt den, dæmpes den og viser **Nat**.
 
-1. Åbn browseren på tabletten, og gå til app.daili.app/board.
-2. Log ind med din daili-konto.
-3. Sæt tabletten i en holder eller på væggen, og sæt den til opladning.
+1. Åbn app.daili.app/board/pair på tabletten. En kode og en QR-kode vises.
+2. Scan QR-koden med din telefon eller computer, eller skriv koden på den adresse.
+3. Tryk på **Godkend**. Kun en forælder (admin) kan gøre det. Tabletten skal ikke bruge nogen adgangskode.
 
-Tavlen findes indtil videre kun på engelsk og tysk. Tavlen opdaterer sig selv, og ingen kan komme ind i familiens indstillinger fra den. Vil du forlade den, så hold fingeren på **Hold to leave** i hjørnet i to sekunder.
+Skal en computers egen browser være familieskærmen: dit navn → **Generelt** → **Brug denne browser som familieskærm**.
 
-> Note: De fleste browsere holder skærmen tændt, mens tavlen er åben. Bliver tabletten alligevel mørk, så slå automatisk lås fra i dens indstillinger.
+> Note: Den viser aldrig noget privat, heller ikke dit, og heller ikke Noter, Husholdningsbudget, Cyklus eller Dokumenter.
+
+Fjern den: **Familie** → **Vægskærme** → **Fjern**. Den stopper også, hvis den forælder, der forbandt den, forlader familien eller ikke længere er admin. På tabletten trykker du på **Hold for at forlade** i to sekunder og derefter på **Stop**.
+
+iPad: Føj til hjemmeskærm, åbn den, og tryk på **Sæt en familieskærm op**. Lås automatisk: Aldrig. Android: Chrome → Installer app.
