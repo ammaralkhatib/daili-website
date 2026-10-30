@@ -136,6 +136,15 @@ const V112_WHY = 'the AI avatar and budget guests + guest link (app 1.12.0) are 
 const V113_MUST_CONTAIN = { terms: [], privacy: ['id="copy-to-daili"', 'id="photo-location"'] };
 const V113_WHY = 'Copy to Daili and photo location data (app 1.13.0) are in every locale — see claude-prompts/2026-10-27/001';
 
+/**
+ * App 1.14.0: a tablet can become a family wall screen (app.daili.app/board).
+ * What it stores, what it never shows and how it ends must be readable in
+ * every language. The anchor is on a <p>, invisible to the <h2> id comparison
+ * below.
+ */
+const V114_MUST_CONTAIN = { terms: [], privacy: ['id="wall-screens"'] };
+const V114_WHY = 'family wall screens (app 1.14.0) are in every locale — see claude-prompts/2026-10-29/003';
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -201,6 +210,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V113_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V113_WHY}`);
+    }
+
+    for (const must of V114_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V114_WHY}`);
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
