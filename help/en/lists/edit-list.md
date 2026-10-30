@@ -10,7 +10,7 @@ since: 1.0.0
 updated: 2026-09-30
 media: lists-edit-list
 order: 9
-related: lists-shopping, lists-categories
+related: lists-shopping, lists-categories, lists-archive-templates
 ---
 This works the same for shopping and to-do lists.
 

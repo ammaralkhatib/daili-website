@@ -3,7 +3,7 @@ id: account-preferences
 title: Terang atau gelap, bahasa, format waktu, suhu, getaran
 summary: Pilih mode gelap, bahasa Anda, format 12 atau 24 jam, °C atau °F, apakah daili bergetar, dan fitur AI-nya.
 keywords: mode gelap, tema, tampilan, bahasa, 24 jam, format waktu, suhu, celsius, fahrenheit, getaran, ai, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Ketuk foto Anda di bagian atas Beranda untuk membuka **Pengaturan**. Semua ini ada di bawah **Preferensi**.
 
@@ -21,6 +21,6 @@ Ketuk foto Anda di bagian atas Beranda untuk membuka **Pengaturan**. Semua ini a
 
 ![Lembar Tampilan. Warna aplikasi, dengan hijau daili dan Warna saya, dilingkari.](account-app-colour)
 
-Kecuali bahasa, pengaturan ini hanya untuk ponsel ini. Keluarga Anda punya pengaturannya sendiri.
+Pengaturan ini hanya untuk ponsel ini. Keluarga Anda punya pengaturannya sendiri.
 
-> Note: Bahasa yang Anda pilih juga menjadi bahasa email dan pengingat daili untuk Anda.
+> Note: Notifikasi datang dalam bahasa yang dipakai daili di ponsel itu. Email datang dalam bahasa yang terakhir Anda pilih.

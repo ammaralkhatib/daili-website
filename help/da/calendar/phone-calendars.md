@@ -2,22 +2,23 @@
 id: calendar-phone-calendars
 title: Tilføj andre kalendere: telefonen, Google, links og filer
 summary: Vis telefonens kalendere eller Google Kalender ved siden af familiens begivenheder, følg en skolekalender, eller importér en fil.
-keywords: telefonkalender, apple kalender, google kalender, tilføj kalender, andre kalendere, abonner, link, skolekalender, arbejdskalender, ics, privat, kopiér til daili
+keywords: telefonkalender, apple kalender, google kalender, tilføj kalender, abonner, link, skolekalender, arbejdskalender, ics, tilhører, kopiér til daili
 tipTitle: Se telefonens kalendere i daili
 tipBody: Arbejds-, skole- eller sportskalendere kan vises ved siden af familiens begivenheder.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
-1. Åbn **Kalender**, og tryk på tandhjulet øverst til højre.
-2. Tryk på **Tilføj en kalender** under **Andre kalendere**.
-3. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android): telefonens egne kalendere. Giv adgang, så viser daili dine vigtigste.
-4. **Google Kalender**: log ind, tryk på **Forbind** på siden, der viser din daili-konto, og vælg så, hvem der ser hver kalender.
-5. **Abonner med et link**: en skole- eller klubkalender, der opdaterer sig selv, for hele familien. Kun for administratorer.
-6. **Importér en fil (.ics)**: kopierer begivenhederne ind i daili én gang.
+1. Åbn **Kalender**, tryk på tandhjulet og så på **Tilføj en kalender** under **Andre kalendere**.
+2. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android): telefonens egne kalendere.
+3. **Google Kalender**: log ind, tryk på **Forbind**, og vælg så, hvem der ser hver kalender.
+4. **Abonner med et link**: en skole- eller klubkalender, der opdaterer sig selv. Kun for administratorer. daili advarer, hvis familien allerede har den.
+5. **Importér en fil (.ics)**: kopierer begivenhederne ind i daili én gang.
 
-![Arket Tilføj en kalender med Apple Kalender, Google Kalender, Abonner med et link og Importér en fil (.ics).](calendar-other-calendars)
+![Arket Rediger kalender for en linket kalender. Rækken Tilhører, sat til Emma, er markeret med en cirkel.](calendar-other-calendars)
 
-Vil du ændre dine valg, så tryk på telefonens række under **Andre kalendere**. Vil du fjerne en, så tryk på **⋮** → **Fjern**.
+Hver kalender har rækken **Tilhører**: abonnerede links starter som **Alle**, telefonens og Googles kalendere som dig. Begivenhederne får den persons farve og følger **Filter**.
 
-Disse begivenheder kan ikke ændres i daili. Tryk på en → **Kopiér til Daili**, så får du en ny, udfyldt begivenhed. Tilføj personer og påmindelser, og tryk så på **Gem**. Originalen bliver, hvor den er.
+Vil du ændre det, så tryk på telefonens eller Googles række, eller på et links **⋮** → **Rediger**. Med **⋮** → **Fjern** (Google: **Afbryd**) fjerner du en kalender.
 
-> Note: Telefonens kalendere bliver på denne telefon: intet bliver uploadet, og familien kan ikke se dem.
+Disse begivenheder kan ikke ændres her. Tryk på en → **Kopiér til Daili** for at lave din egen.
+
+> Note: Telefonens kalendere, og hvem de tilhører, bliver på denne telefon: intet bliver uploadet eller vist for familien.

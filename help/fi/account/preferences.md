@@ -3,7 +3,7 @@ id: account-preferences
 title: Vaalea tai tumma, kieli, ajan muoto, lämpötila, värinä
 summary: Valitse tumma tila, kielesi, 12 tai 24 tunnin kello, °C tai °F, väriseekö daili, ja sen tekoälyominaisuudet.
 keywords: tumma tila, teema, ulkoasu, kieli, 24 tuntia, ajan muoto, lämpötila, celsius, fahrenheit, värinä, tekoäly, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löytyvät kortilta **Yleiset**.
 
@@ -21,6 +21,6 @@ Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löy
 
 ![Paneeli Ulkoasu. Sovelluksen väri sekä daili-vihreä ja Oma värini on ympyröity.](account-app-colour)
 
-Kieltä lukuun ottamatta nämä asetukset koskevat vain tätä puhelinta. Perheesi pitää omansa.
+Nämä asetukset koskevat vain tätä puhelinta. Perheesi pitää omansa.
 
-> Note: Valitsemasi kieli on myös dailin sinulle lähettämien sähköpostien ja muistutusten kieli.
+> Note: Ilmoitukset tulevat sillä kielellä, jota daili käyttää siinä puhelimessa. Sähköpostit tulevat viimeksi valitsemallasi kielellä.

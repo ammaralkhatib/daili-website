@@ -3,7 +3,7 @@ id: calendar-import
 title: Importă un fișier de calendar (.ics)
 summary: Copiază evenimente și sarcini dintr-un fișier .ics în calendarul familiei. Tu alegi care.
 keywords: import, ics, ical, fișier calendar, calendar școlar, club, copiere evenimente, atașament, fișier
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-30
 ---
 Ai primit un fișier de calendar (.ics) de la școală sau de la un club? daili îi copiază o dată evenimentele în calendarul familiei tale.
 
@@ -11,8 +11,6 @@ Ai primit un fișier de calendar (.ics) de la școală sau de la un club? daili 
 2. La **Alte calendare**, apasă pe **Adaugă un calendar**, apoi pe **Importă un fișier (.ics)** și alege fișierul.
 3. Pe ecranul **Importă calendarul**, debifează ce nu vrei. Apasă pe o dată sau o oră ca s-o schimbi.
 4. Apasă pe butonul de adăugare din partea de jos.
-
-![Fereastra Adaugă un calendar din setările calendarului. Importă un fișier (.ics) este încercuit.](calendar-other-calendars)
 
 Sau pornește de la fișier în Mail, Fișiere sau descărcări: partajează-l cu daili sau, pe Android, deschide-l cu daili.
 

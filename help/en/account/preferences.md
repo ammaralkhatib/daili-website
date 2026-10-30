@@ -7,7 +7,7 @@ keywords: dark mode, theme, appearance, language, 24-hour, time format, temperat
 routes: /settings
 tryIt: /settings
 since: 1.3.0
-updated: 2026-10-16
+updated: 2026-10-30
 order: 2
 media: account-preferences
 related: account-profile, start-edit-home, start-weather
@@ -28,6 +28,6 @@ Tap your picture at the top of Home to open **Settings**. You find these under *
 
 ![The Appearance sheet. App color, with daili green and My color, is circled.](account-app-colour)
 
-Except the language, these settings are for this phone only. Your family keeps their own.
+These settings are for this phone only. Your family keeps their own.
 
-> Note: The language you pick is also the language of daili's emails and reminders to you.
+> Note: Notifications come in the language daili uses on that phone. Emails come in the language you last picked.

@@ -1,24 +1,28 @@
 ---
 id: calendar-views
-title: Tampilan bulan, minggu, hari, dan agenda
-summary: Beralih antara bulan, minggu, 3 hari, hari, dan agenda, dan saring menurut orang atau kategori.
-keywords: tampilan, bulan, minggu, hari, agenda, daftar, 3 hari, ganti tampilan, filter, hari ini, tata letak kalender
-translatedFrom: 2026-10-12
+title: Tampilan kalender: bulan, minggu, hari, agenda, orang, dan tahun
+summary: Beralih antara bulan, minggu, 3 hari, hari, agenda, orang, dan tahun, dan saring menurut orang atau kategori.
+keywords: tampilan, bulan, minggu, agenda, filter, orang, kolom, jadwal dinding, tahun, libur sekolah, nomor minggu, minggu kalender
+translatedFrom: 2026-10-30
 ---
-Kalender bisa menampilkan rencana keluarga Anda dalam lima cara.
+Kalender punya tujuh tampilan.
 
 ![Kalender dalam tampilan Bulan. Tombol Tampilan di bilah bawah dilingkari.](calendar-views)
 
-1. Di Beranda, ketuk **Kalender**.
-2. Ketuk **Tampilan** di bilah bawah.
-3. Pilih **Bulan**, **Minggu**, **3 hari**, **Hari**, atau **Agenda**.
-4. Ketuk **Hari ini** di bawah untuk kembali ke hari ini.
-5. Untuk melihat orang atau kategori tertentu saja, ketuk **Filter** dan pilih. Anak-anak juga ada di bawah **Orang**.
+1. Di Beranda, ketuk **Kalender**, lalu **Tampilan** di bawah.
+2. Pilih **Bulan**, **Minggu**, **3 hari**, **Hari**, **Agenda**, **Orang**, atau **Tahun**.
+3. Untuk melihat orang atau kategori tertentu saja, ketuk **Filter** dan pilih. Anak-anak juga ada di sana.
 
-daili mengingat tampilan Anda di ponsel ini. Di **Bulan**, ketuk sebuah hari untuk melihat semua isinya.
+Tampilan **Orang** memberi setiap orang satu kolom, seperti jadwal di dinding. Tombol kiri atas menyembunyikan atau mengurutkan ulang kolom. Ketuk tempat kosong untuk menambah acara bagi orang itu.
 
-Roda gigi → **Tampilkan di kalender** menambahkan ulang tahun, hari libur, menu makan, tugas, catatan dengan pengingat, dan tagihan. Kecuali hari libur, ketuk salah satunya untuk membukanya; tugas terbuka di daftarnya.
+![Tampilan Orang dengan satu kolom untuk Sari, Andi, dan Putri. Judul kolom dilingkari.](calendar-people-view)
 
-Acara muncul di bawah orang-orang yang dituju, atau di bawah pembuatnya kalau untuk semua orang. Garis warnanya memakai warna orang pertama yang dituju.
+Tampilan **Tahun** hanya menampilkan acara sehari penuh dan beberapa hari, seperti libur sekolah dan perjalanan, dengan warna tiap orang. Ketuk seseorang untuk menyembunyikannya, atau ketuk bulan untuk membukanya.
 
-> Note: **Filter** baru muncul kalau ada yang bisa disaring: orang kedua (anak juga dihitung), atau sebuah kategori.
+![Tampilan Tahun dengan libur dan perjalanan sebagai batang berwarna. Chip orang di atas dilingkari.](calendar-year-view)
+
+Di app.daili.app, tombol P dan Y membuka kedua tampilan ini.
+
+Roda gigi → **Tampilkan di kalender** menambahkan ulang tahun, hari libur, menu makan, tugas, catatan dengan pengingat, dan tagihan. **Nomor minggu** di sana menaruh W44 di hari pertama tiap minggu.
+
+Untuk **Filter**, acara menjadi milik orang-orang yang dituju, atau pembuatnya kalau untuk semua orang.

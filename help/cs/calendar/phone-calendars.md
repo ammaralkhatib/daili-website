@@ -2,22 +2,23 @@
 id: calendar-phone-calendars
 title: Přidat další kalendáře: z telefonu, Google, odkazy a soubory
 summary: Zobraz kalendáře z telefonu nebo Google Kalendář vedle rodinných událostí, sleduj školní kalendář nebo importuj soubor.
-keywords: kalendář v telefonu, kalendář apple, google kalendář, přidat kalendář, další kalendáře, odebírat, odkaz, školní kalendář, pracovní kalendář, ics, soukromé, zkopírovat do daili
+keywords: kalendář v telefonu, kalendář apple, google kalendář, přidat kalendář, odebírat, odkaz, školní kalendář, pracovní kalendář, ics, komu patří, zkopírovat do daili
 tipTitle: Kalendáře z telefonu v daili
 tipBody: Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle rodinných událostí.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
-1. Otevři **Kalendář** a klepni vpravo nahoře na ozubené kolečko.
-2. V sekci **Další kalendáře** klepni na **Přidat kalendář**.
-3. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android): vlastní kalendáře tvého telefonu. Povol přístup a daili ukáže ty hlavní.
-4. **Google Kalendář**: přihlas se, na stránce se jménem tvého účtu daili klepni na **Propojit** a pak u každého kalendáře vyber, kdo ho uvidí.
-5. **Odebírat přes odkaz**: kalendář školy nebo klubu, který se sám aktualizuje, pro celou rodinu. Jen pro správce.
-6. **Importovat soubor (.ics)**: jednou zkopíruje události do daili.
+1. Otevři **Kalendář**, klepni na ozubené kolečko a pak v sekci **Další kalendáře** na **Přidat kalendář**.
+2. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android): vlastní kalendáře tvého telefonu.
+3. **Google Kalendář**: přihlas se, klepni na **Propojit** a pak u každého kalendáře vyber, kdo ho uvidí.
+4. **Odebírat přes odkaz**: kalendář školy nebo klubu, který se sám aktualizuje. Jen pro správce. daili upozorní, pokud ho tvoje rodina už má.
+5. **Importovat soubor (.ics)**: jednou zkopíruje události do daili.
 
-![Panel Přidat kalendář s volbami Apple Kalendář, Google Kalendář, Odebírat přes odkaz a Importovat soubor (.ics).](calendar-other-calendars)
+![Panel Upravit kalendář u propojeného kalendáře. Zakroužkovaný je řádek Komu patří nastavený na Emma.](calendar-other-calendars)
 
-Výběr změníš klepnutím na řádek telefonu v sekci **Další kalendáře**. Pokud chceš kalendář odebrat, klepni na **⋮** → **Odebrat**.
+Každý kalendář má řádek **Komu patří**: odebírané odkazy začínají na **Všichni**, kalendáře z telefonu a Googlu na tobě. Jeho události dostanou barvu toho člověka a řídí se nastavením **Filtr**.
 
-Tyto události v daili změnit nejdou. Klepni na jednu → **Zkopírovat do Daili** a dostaneš vyplněnou novou událost. Přidej lidi a připomenutí a klepni na **Uložit**. Originál zůstane.
+Změníš to klepnutím na řádek telefonu nebo Googlu, u odkazu přes **⋮** → **Upravit**. **⋮** → **Odebrat** (u Googlu **Odpojit**) kalendář odebere.
 
-> Note: Kalendáře z telefonu zůstávají v tomto telefonu: nic se nenahrává a tvoje rodina je nevidí.
+Tyto události tady změnit nejdou. Klepni na jednu → **Zkopírovat do Daili** a vytvoř si vlastní.
+
+> Note: Kalendáře z telefonu, i to, komu patří, zůstávají v tomto telefonu: nic se nenahrává ani neukazuje rodině.

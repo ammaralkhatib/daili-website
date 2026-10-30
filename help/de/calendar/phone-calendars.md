@@ -2,22 +2,23 @@
 id: calendar-phone-calendars
 title: Weitere Kalender hinzufügen: Handy, Google, Links und Dateien
 summary: Zeig die Kalender deines Handys oder Google Kalender neben den Familienterminen, folge einem Schulkalender oder importiere eine Datei.
-keywords: handy-kalender, apple kalender, google kalender, kalender hinzufügen, andere kalender, abonnieren, link, schulkalender, arbeitskalender, ics, privat, in daili kopieren
+keywords: handy-kalender, apple kalender, google kalender, kalender hinzufügen, abonnieren, link, schulkalender, arbeitskalender, ics, gehört zu, in daili kopieren
 tipTitle: Die Kalender deines Handys in daili
 tipBody: Arbeits-, Schul- oder Sportkalender können neben den Familienterminen erscheinen.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
-1. Öffne den **Kalender** und tippe oben rechts auf das Zahnrad.
-2. Tippe unter **Andere Kalender** auf **Kalender hinzufügen**.
-3. **Apple Kalender** (iPhone) oder **Handy-Kalender** (Android): die Kalender deines Handys. Erlaube den Zugriff, und daili zeigt deine wichtigsten.
-4. **Google Kalender**: Melde dich an, tippe auf der Seite mit deinem daili-Konto auf **Verknüpfen** und wähle dann, wer welchen Kalender sieht.
-5. **Per Link abonnieren**: ein Schul- oder Vereinskalender, der sich selbst aktualisiert, für die ganze Familie. Nur für Admins.
-6. **Datei importieren (.ics)**: kopiert die Termine einmalig in daili.
+1. Öffne den **Kalender**, tippe auf das Zahnrad und dann unter **Andere Kalender** auf **Kalender hinzufügen**.
+2. **Apple Kalender** (iPhone) oder **Handy-Kalender** (Android): die Kalender deines Handys.
+3. **Google Kalender**: Melde dich an, tippe auf **Verknüpfen** und wähle dann, wer welchen Kalender sieht.
+4. **Per Link abonnieren**: ein Schul- oder Vereinskalender, der sich selbst aktualisiert. Nur für Admins. daili warnt dich, wenn deine Familie ihn schon hat.
+5. **Datei importieren (.ics)**: kopiert die Termine einmalig in daili.
 
-![Das Fenster Kalender hinzufügen mit Apple Kalender, Google Kalender, Per Link abonnieren und Datei importieren (.ics).](calendar-other-calendars)
+![Das Fenster Kalender bearbeiten für einen verknüpften Kalender. Die Zeile Gehört zu, auf Emma gestellt, ist eingekreist.](calendar-other-calendars)
 
-Um deine Auswahl zu ändern, tippe unter **Andere Kalender** auf die Handy-Zeile. Zum Entfernen tippe auf **⋮** → **Entfernen**.
+Jeder Kalender hat die Zeile **Gehört zu**: Abonnierte Links stehen anfangs auf **Alle**, Handy- und Google-Kalender auf dir. Seine Termine bekommen die Farbe dieser Person und richten sich nach **Filter**.
 
-Diese Termine lassen sich in daili nicht ändern. Tippe auf einen → **In Daili kopieren**, und du bekommst einen ausgefüllten neuen Termin. Füge Personen und Erinnerungen hinzu und tippe dann auf **Speichern**. Das Original bleibt.
+Zum Ändern tippe auf die Handy- oder Google-Zeile, bei einem Link auf **⋮** → **Bearbeiten**. Mit **⋮** → **Entfernen** (Google: **Trennen**) nimmst du einen Kalender heraus.
 
-> Note: Handy-Kalender bleiben auf diesem Handy: Nichts wird hochgeladen, und deine Familie sieht sie nicht.
+Diese Termine lassen sich hier nicht ändern. Tippe auf einen → **In Daili kopieren**, um einen eigenen daraus zu machen.
+
+> Note: Handy-Kalender und wem sie gehören, bleiben auf diesem Handy: Nichts wird hochgeladen oder deiner Familie gezeigt.

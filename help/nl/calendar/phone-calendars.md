@@ -2,22 +2,23 @@
 id: calendar-phone-calendars
 title: Andere agenda’s toevoegen: je telefoon, Google, links en bestanden
 summary: Toon de agenda’s van je telefoon of Google Agenda naast de afspraken van het gezin, volg een schoolagenda of importeer een bestand.
-keywords: telefoonagenda, apple agenda, google agenda, agenda toevoegen, andere agenda's, abonneren, link, schoolagenda, werkagenda, ics, privé, kopiëren naar daili
+keywords: telefoonagenda, apple agenda, google agenda, agenda toevoegen, abonneren, link, schoolagenda, werkagenda, ics, hoort bij, kopiëren naar daili
 tipTitle: Zie de agenda’s van je telefoon in daili
 tipBody: Agenda’s van werk, school of sport kunnen naast de afspraken van het gezin staan.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
-1. Open de **Agenda** en tik rechtsboven op het tandwiel.
-2. Tik onder **Andere agenda's** op **Agenda toevoegen**.
-3. **Apple Agenda** (iPhone) of **Telefoonagenda's** (Android): de eigen agenda’s van je telefoon. Geef toegang, en daili toont je belangrijkste.
-4. **Google Agenda**: log in, tik op **Koppelen** op de pagina die je daili-account noemt, en kies dan wie elke agenda ziet.
-5. **Abonneren met een link**: een school- of clubagenda die zichzelf bijwerkt, voor het hele gezin. Alleen voor beheerders.
-6. **Bestand importeren (.ics)**: kopieert de afspraken één keer naar daili.
+1. Open de **Agenda**, tik op het tandwiel en dan onder **Andere agenda's** op **Agenda toevoegen**.
+2. **Apple Agenda** (iPhone) of **Telefoonagenda's** (Android): de eigen agenda’s van je telefoon.
+3. **Google Agenda**: log in, tik op **Koppelen** en kies dan wie elke agenda ziet.
+4. **Abonneren met een link**: een school- of clubagenda die zichzelf bijwerkt. Alleen voor beheerders. daili waarschuwt als je gezin hem al heeft.
+5. **Bestand importeren (.ics)**: kopieert de afspraken één keer naar daili.
 
-![Het venster Agenda toevoegen met Apple Agenda, Google Agenda, Abonneren met een link en Bestand importeren (.ics).](calendar-other-calendars)
+![Het venster Agenda bewerken voor een gekoppelde agenda. De regel Hoort bij, ingesteld op Emma, is omcirkeld.](calendar-other-calendars)
 
-Om je keuze te wijzigen, tik je onder **Andere agenda's** op de regel van je telefoon. Om er een weg te halen, tik je op **⋮** → **Verwijderen**.
+Elke agenda heeft een regel **Hoort bij**: geabonneerde links beginnen op **Iedereen**, telefoon- en Google-agenda’s op jou. De afspraken krijgen de kleur van die persoon en volgen **Filter**.
 
-Deze afspraken kun je in daili niet wijzigen. Tik op een afspraak → **Kopiëren naar Daili** voor een ingevulde nieuwe afspraak. Voeg mensen en herinneringen toe en tik dan op **Opslaan**. Het origineel blijft staan.
+Om dat te wijzigen, tik je op de regel van je telefoon of Google, of bij een link op **⋮** → **Bewerken**. Met **⋮** → **Verwijderen** (Google: **Ontkoppelen**) haal je er een weg.
 
-> Note: Telefoonagenda’s blijven op deze telefoon: er wordt niets geüpload, en je gezin ziet ze niet.
+Deze afspraken kun je hier niet wijzigen. Tik op een afspraak → **Kopiëren naar Daili** om er een eigen afspraak van te maken.
+
+> Note: Telefoonagenda’s, en bij wie ze horen, blijven op deze telefoon: er wordt niets geüpload of aan je gezin getoond.

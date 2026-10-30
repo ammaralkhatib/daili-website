@@ -3,7 +3,7 @@ id: calendar-import
 title: Importar un archivo de calendario (.ics)
 summary: Copia eventos y tareas de un archivo .ics a tu calendario familiar. Tú eliges cuáles.
 keywords: importar, ics, ical, archivo de calendario, calendario escolar, colegio, club, copiar eventos, adjunto, archivo
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-30
 ---
 ¿Te ha llegado un archivo de calendario (.ics) del colegio o de un club? daili copia sus eventos a tu calendario familiar una vez.
 
@@ -11,8 +11,6 @@ translatedFrom: 2026-10-12
 2. En **Otros calendarios**, toca **Añadir un calendario**, luego **Importar un archivo (.ics)**, y elige el archivo.
 3. En **Importar calendario**, desmarca lo que no quieras. Toca una fecha o una hora para cambiarla.
 4. Toca el botón de añadir abajo.
-
-![La hoja Añadir un calendario en los ajustes del calendario. Importar un archivo (.ics) está marcado con un círculo.](calendar-other-calendars)
 
 O empieza desde el archivo en Mail, Archivos o tus descargas: compártelo con daili, o en Android ábrelo con daili.
 

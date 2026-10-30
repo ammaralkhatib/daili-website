@@ -3,7 +3,7 @@ id: account-download-data
 title: Descarcă-ți datele
 summary: Cere o copie a tot ce păstrează daili despre tine. Îți scriem pe e-mail când e gata.
 keywords: descarcă, export, datele mele, copie a datelor, gdpr, cerere de date, confidențialitate, date personale, arhivă, e-mail confirmat
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
 Poți cere oricând o copie a datelor tale. Mai întâi trebuie să-ți confirmi adresa de e-mail, pentru că acolo ajunge copia.
 
@@ -13,6 +13,6 @@ Poți cere oricând o copie a datelor tale. Mai întâi trebuie să-ți confirmi
 2. La **Cont**, apasă pe **Descarcă datele mele**.
 3. daili îți spune că primești un e-mail când exportul e gata. Urmărește-ți căsuța de e-mail.
 
-Încă n-ai confirmat? Atunci cererea nu reușește. Pe cardul **E-mail neconfirmat** din **Setări**, apasă pe **Retrimite**, apoi pe linkul din e-mail.
+Încă n-ai confirmat? daili îți spune asta și îți oferă **Trimite linkul**. Apasă pe linkul din e-mail, apoi încearcă din nou.
 
 > Note: Copia conține ce e stocat pe serverele daili. Documentele și pozele tale sunt doar pe telefon, așa că nu sunt în ea.

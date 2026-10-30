@@ -3,7 +3,7 @@ id: account-preferences
 title: Jasny czy ciemny, język, format czasu, temperatura, wibracje
 summary: Wybierz tryb ciemny, swój język, zegar 12- lub 24-godzinny, °C albo °F, to, czy daili wibruje, i funkcje AI.
 keywords: tryb ciemny, motyw, wygląd, język, 24-godzinny, format czasu, temperatura, celsjusz, fahrenheit, wibracje, ai, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawienia**. Te opcje znajdziesz w sekcji **Ogólne**.
 
@@ -21,6 +21,6 @@ Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawien
 
 ![Panel Wygląd. Zakreślona jest sekcja Kolor aplikacji z opcjami zieleń daili i Mój kolor.](account-app-colour)
 
-Poza językiem te ustawienia działają tylko na tym telefonie. Każdy w rodzinie ma swoje.
+Te ustawienia działają tylko na tym telefonie. Każdy w rodzinie ma swoje.
 
-> Note: Język, który wybierzesz, to też język e-maili i przypomnień, które daili do ciebie wysyła.
+> Note: Powiadomienia przychodzą w języku, którego daili używa na danym telefonie. E-maile przychodzą w ostatnio wybranym języku.

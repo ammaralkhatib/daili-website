@@ -6,7 +6,7 @@ summary: Copy events and to-dos from an .ics file into your family calendar. You
 keywords: import, ics, ical, calendar file, school calendar, club, copy events, attachment, file
 routes: /calendar/settings
 since: 1.10.0
-updated: 2026-10-12
+updated: 2026-10-30
 media: calendar-other-calendars
 order: 10
 related: calendar-phone-calendars
@@ -17,8 +17,6 @@ Got a calendar file (.ics) from a school or club? daili copies its events into y
 2. Under **Other calendars**, tap **Add a calendar**, then **Import a file (.ics)**, and pick the file.
 3. On **Import calendar file**, untick what you don't want. Tap a date or time to change it.
 4. Tap the add button at the bottom.
-
-![The Add a calendar sheet in the calendar settings. Import a file (.ics) is circled.](calendar-other-calendars)
 
 Or start from the file in Mail, Files or your downloads: share it to daili, or on Android open it with daili.
 

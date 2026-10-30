@@ -3,7 +3,7 @@ id: account-preferences
 title: Svetlý či tmavý vzhľad, jazyk, formát času, teplota, vibrácie
 summary: Vyber tmavý režim, svoj jazyk, 12- alebo 24-hodinový čas, °C alebo °F, či má daili vibrovať a jeho funkcie AI.
 keywords: tmavý režim, téma, vzhľad, jazyk, 24-hodinový, formát času, teplota, celzius, fahrenheit, vibrácie, ai, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Ťukni na svoj obrázok navrchu domovskej obrazovky a otvoríš **Nastavenia**. Tieto voľby nájdeš v časti **Predvoľby**.
 
@@ -21,6 +21,6 @@ translatedFrom: 2026-10-16
 
 ![Panel Vzhľad. Zakrúžkovaná je časť Farba aplikácie s možnosťami daili zelená a Moja farba.](account-app-colour)
 
-Okrem jazyka platia tieto nastavenia len pre tento telefón. Tvoja rodina si nechá svoje.
+Tieto nastavenia platia len pre tento telefón. Tvoja rodina si nechá svoje.
 
-> Note: Jazyk, ktorý vyberieš, je aj jazyk e-mailov a pripomienok, ktoré ti daili posiela.
+> Note: Upozornenia prichádzajú v jazyku, ktorý daili používa v danom telefóne. E-maily prichádzajú v naposledy vybranom jazyku.

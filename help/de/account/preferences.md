@@ -3,7 +3,7 @@ id: account-preferences
 title: Hell oder dunkel, Sprache, Zeitformat, Temperatur, Vibration
 summary: Wähle den dunklen Modus, deine Sprache, 12- oder 24-Stunden-Zeit, °C oder °F, ob daili vibriert, und die KI-Funktionen.
 keywords: dunkelmodus, dark mode, erscheinungsbild, sprache, 24 stunden, zeitformat, temperatur, celsius, fahrenheit, vibration, ki, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Tippe oben auf dem Startbildschirm auf dein Bild, um die **Einstellungen** zu öffnen. Diese Punkte findest du unter **Präferenzen**.
 
@@ -21,6 +21,6 @@ Tippe oben auf dem Startbildschirm auf dein Bild, um die **Einstellungen** zu ö
 
 ![Das Fenster Erscheinungsbild. App-Farbe mit daili-Grün und Meine Farbe ist eingekreist.](account-app-colour)
 
-Außer der Sprache gelten diese Einstellungen nur für dieses Handy. Deine Familie behält ihre eigenen.
+Diese Einstellungen gelten nur für dieses Handy. Deine Familie behält ihre eigenen.
 
-> Note: Die Sprache, die du wählst, ist auch die Sprache der E-Mails und Erinnerungen, die daili dir schickt.
+> Note: Benachrichtigungen kommen in der Sprache, die daili auf dem jeweiligen Handy nutzt. E-Mails kommen in der Sprache, die du zuletzt gewählt hast.

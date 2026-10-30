@@ -7,17 +7,17 @@ keywords: cycle, period, menstruation, log, prediction, next period, period star
 routes: /cycle
 tryIt: /cycle
 since: 1.10.0
-updated: 2026-10-16
+updated: 2026-10-30
 media: cycle-start
 order: 1
-related: cycle-calendar, cycle-privacy, cycle-supplies
+related: cycle-calendar, cycle-privacy, cycle-supplies, start-edit-home
 ---
 Cycle is off until you turn it on, and it's free. Nobody in your family sees your Cycle, or that you use it.
 
-1. Open **Settings**, tap **Cycle**, then **Start**.
-2. Pick the day your last period started, like **Yesterday**, and your usual lengths. Not sure? Tap **Not sure — Daili learns it from your logs**.
+1. Open **Settings**, tap **Cycle**, then **Start**. Or use the faded **Cycle** tile in Home's edit mode, or **Settings** → **Home screen** → **Cycle**.
+2. Pick the day your last period started and your usual lengths.
 3. When a period starts, tap **Period started**. **Started earlier?** lets you mark earlier days.
-4. During your period, tap **Light**, **Medium** or **Heavy** on the card. **Symptoms & mood** opens the whole day.
+4. During your period, tap **Light**, **Medium** or **Heavy**. **Symptoms & mood** opens the day.
 5. Over? Tap **It ended** and pick the last day. Days in between count too.
 
 ![The Cycle card on day 18: "Next period around Oct 26 – Oct 30" and the Period started button. Today is circled in the month below.](cycle-start)

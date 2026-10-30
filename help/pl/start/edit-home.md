@@ -2,12 +2,12 @@
 id: start-edit-home
 title: Edytuj ekran główny: ukryj i przestaw kafelki
 summary: Przenieś kafelki, których używasz najczęściej, na górę i ukryj te, których nie potrzebujesz.
-keywords: ekran główny, kafelki, kolejność, przestaw, przenieś, ukryj, usuń, pokaż, dostosuj, układ
-translatedFrom: 2026-10-23
+keywords: ekran główny, kafelki, kolejność, przestaw, przenieś, ukryj, usuń, pokaż, dostosuj, układ, cykl
+translatedFrom: 2026-10-30
 ---
 Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności. Każdy kafelek można przesunąć albo ukryć, także **Notatki**.
 
-![Ekran główny w trybie edycji, z × na każdym kafelku. Zakreślony jest przycisk Gotowe w prawym dolnym rogu.](start-edit-home)
+![Ekran główny w trybie edycji, z × na każdym kafelku. Zakreślony jest wyblakły kafelek Cykl z plakietką +.](start-edit-home)
 
 1. Na ekranie głównym przytrzymaj dowolny kafelek, aż kafelki zaczną się trząść. Albo dotknij kafelka z przerywaną ramką **Edytuj ekran główny** na końcu ekranu głównego.
 2. Przeciągnij kafelek w nowe miejsce.
@@ -16,8 +16,10 @@ Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności.
 
 ![Koniec ekranu głównego: kafelek Rodzina, a za nim kafelek z przerywaną ramką Edytuj ekran główny, który jest zakreślony.](start-edit-home-tile)
 
+Gdy Cykl jest wyłączony, pojawia się tu wyblakły kafelek **Cykl**. Dotknij go, żeby skonfigurować Cykl.
+
 To samo możesz zrobić na ekranie **Ustawienia**, w sekcji **Ekran główny**: włączaj i wyłączaj kafelki i przeciągaj je za uchwyt.
 
-Funkcje wybrane po założeniu pierwszej rodziny albo dołączeniu do niej ustawiają te same kafelki. Kafelek **Rodzina** jest ostatni, dopóki go nie przeniesiesz.
+Funkcje wybrane po założeniu pierwszej rodziny albo dołączeniu do niej ustawiają te kafelki. Kafelek **Rodzina** jest ostatni, dopóki go nie przeniesiesz.
 
 > Note: Twój układ zapisuje się tylko na tym telefonie. Każdy w rodzinie urządza swój ekran główny sam.

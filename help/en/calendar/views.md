@@ -1,31 +1,35 @@
 ---
 id: calendar-views
 topic: calendar
-title: Month, week, day and agenda views
-summary: Switch between month, week, 3 days, day and agenda, and filter by person or category.
-keywords: view, month, week, day, agenda, list, 3 days, switch view, filter, today, calendar layout
+title: Calendar views: month, week, day, agenda, people and year
+summary: Switch between month, week, 3 days, day, agenda, people and year, and filter by person or category.
+keywords: view, month, week, agenda, filter, people, columns, wall planner, year, holidays, week number, calendar week
 routes: /calendar, /calendar/settings
 tryIt: /calendar
 since: 1.0.0
-updated: 2026-10-12
+updated: 2026-10-30
 media: calendar-views
 order: 1
 related: calendar-add-event, calendar-search, calendar-categories, budget-bills
 ---
-The calendar can show your family's plans in five ways.
+The calendar has seven views.
 
 ![The calendar in Month view. The View button in the bottom bar is circled.](calendar-views)
 
-1. On Home, tap **Calendar**.
-2. Tap **View** in the bar at the bottom.
-3. Pick **Month**, **Week**, **3 days**, **Day** or **Agenda**.
-4. Tap **Today** at the bottom to jump back to today.
-5. To see only some people or categories, tap **Filter** and pick them. Children are under **People** too.
+1. On Home, tap **Calendar**, then **View** at the bottom.
+2. Pick **Month**, **Week**, **3 days**, **Day**, **Agenda**, **People** or **Year**.
+3. To see only some people or categories, tap **Filter** and pick them. Children are there too.
 
-daili remembers your view on this phone. In **Month**, tap a day for everything on it.
+**People** gives each person a column, like a wall planner. The top-left button hides or reorders columns. Tap an empty spot to add an event for that person.
 
-The gear → **Show on calendar** adds birthdays, holidays, meals, to-dos, notes with a reminder and bills. Holidays aside, tap one to open it; a to-do opens in its list.
+![The People view with a column each for Lena, Marco and Emma. The column headers are circled.](calendar-people-view)
 
-An event shows under the people it's for, or under its maker if it's for everyone. Its stripe has the colour of the first person it's for.
+**Year** shows only all-day and multi-day events, like school holidays and trips, in each person's colour. Tap a person to hide them, or a month to open it.
 
-> Note: **Filter** only shows up once there's something to filter by: a second person (a child counts too), or a category.
+![The Year view with holidays and trips as coloured bars. The person chips at the top are circled.](calendar-year-view)
+
+On app.daili.app, keys P and Y open them.
+
+The gear → **Show on calendar** adds birthdays, holidays, meals, to-dos, notes with a reminder and bills. **Week numbers** there puts W44 on each week's first day.
+
+For **Filter**, an event belongs to the people it's for, or its maker if it's for everyone.

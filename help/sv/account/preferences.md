@@ -3,7 +3,7 @@ id: account-preferences
 title: Ljust eller mörkt, språk, tidsformat, temperatur, vibration
 summary: Välj mörkt läge, ditt språk, 12- eller 24-timmarsklocka, °C eller °F, om daili ska vibrera, och dess AI-funktioner.
 keywords: mörkt läge, dark mode, tema, utseende, språk, 24-timmars, tidsformat, temperatur, celsius, fahrenheit, vibration, ai
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Tryck på din bild högst upp på startskärmen för att öppna **Inställningar**. Det här hittar du under **Allmänt**.
 
@@ -21,6 +21,6 @@ Tryck på din bild högst upp på startskärmen för att öppna **Inställningar
 
 ![Rutan Utseende. Appfärg, med daili-grön och Min färg, är inringad.](account-app-colour)
 
-Förutom språket gäller de här inställningarna bara den här telefonen. Din familj behåller sina egna.
+De här inställningarna gäller bara den här telefonen. Din familj behåller sina egna.
 
-> Note: Språket du väljer är också språket i de mejl och påminnelser som daili skickar till dig.
+> Note: Notiser kommer på det språk som daili använder på den telefonen. Mejl kommer på det språk du valde senast.

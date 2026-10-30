@@ -3,7 +3,7 @@ id: account-preferences
 title: Licht of donker, taal, tijdnotatie, temperatuur, trillen
 summary: Kies de donkere modus, je taal, 12- of 24-uurs tijd, °C of °F, of daili trilt, en de AI-functies.
 keywords: donkere modus, dark mode, thema, weergave, taal, 24-uurs, tijdnotatie, temperatuur, celsius, fahrenheit, trillen, ai
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Tik bovenaan het startscherm op je foto om **Instellingen** te openen. Je vindt dit onder **Voorkeuren**.
 
@@ -21,6 +21,6 @@ Tik bovenaan het startscherm op je foto om **Instellingen** te openen. Je vindt 
 
 ![Het venster Weergave. App-kleur, met daili-groen en Mijn kleur, is omcirkeld.](account-app-colour)
 
-Op de taal na gelden deze instellingen alleen voor deze telefoon. Je gezin houdt zijn eigen.
+Deze instellingen gelden alleen voor deze telefoon. Je gezin houdt zijn eigen.
 
-> Note: De taal die je kiest, is ook de taal van de e-mails en herinneringen die daili je stuurt.
+> Note: Meldingen komen in de taal die daili op die telefoon gebruikt. E-mails komen in de taal die je het laatst hebt gekozen.

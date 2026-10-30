@@ -3,7 +3,7 @@ id: account-preferences
 title: Luminos sau întunecat, limbă, format oră, temperatură, vibrații
 summary: Alege modul întunecat, limba ta, ora în format de 12 sau 24 de ore, °C sau °F, dacă daili vibrează și funcțiile AI.
 keywords: mod întunecat, temă, aspect, limbă, 24 de ore, format oră, temperatură, celsius, fahrenheit, vibrații, ai, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Setări**. Opțiunile astea le găsești la **Preferințe**.
 
@@ -21,6 +21,6 @@ Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Set�
 
 ![Panoul Aspect. Secțiunea Culoarea aplicației, cu verde daili și Culoarea mea, este încercuită.](account-app-colour)
 
-În afară de limbă, setările astea sunt doar pentru acest telefon. Familia ta își păstrează setările ei.
+Setările astea sunt doar pentru acest telefon. Familia ta își păstrează setările ei.
 
-> Note: Limba pe care o alegi e și limba e-mailurilor și a mementourilor pe care ți le trimite daili.
+> Note: Notificările vin în limba pe care o folosește daili pe acel telefon. E-mailurile vin în limba pe care ai ales-o ultima dată.

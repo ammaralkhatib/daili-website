@@ -2,22 +2,23 @@
 id: calendar-phone-calendars
 title: Lägg till andra kalendrar: telefonen, Google, länkar och filer
 summary: Visa telefonens kalendrar eller Google Kalender bredvid familjens händelser, följ en skolkalender eller importera en fil.
-keywords: telefonens kalender, apple kalender, google kalender, lägg till kalender, andra kalendrar, prenumerera, länk, skolkalender, jobbkalender, ics, privat, kopiera till daili
+keywords: telefonens kalender, apple kalender, google kalender, lägg till kalender, prenumerera, länk, skolkalender, jobbkalender, ics, tillhör, kopiera till daili
 tipTitle: Se telefonens kalendrar i daili
 tipBody: Kalendrar för jobb, skola eller sport kan visas bredvid familjens händelser.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
-1. Öppna **Kalender** och tryck på kugghjulet uppe till höger.
-2. Tryck på **Lägg till en kalender** under **Andra kalendrar**.
-3. **Apple Kalender** (iPhone) eller **Telefonens kalendrar** (Android): telefonens egna kalendrar. Ge åtkomst, så visar daili dina viktigaste.
-4. **Google Kalender**: logga in, tryck på **Koppla** på sidan som visar ditt daili-konto och välj sedan vem som ser varje kalender.
-5. **Prenumerera med en länk**: en skol- eller föreningskalender som uppdaterar sig själv, för hela familjen. Bara för admins.
-6. **Importera en fil (.ics)**: kopierar händelserna till daili en gång.
+1. Öppna **Kalender**, tryck på kugghjulet och sedan på **Lägg till en kalender** under **Andra kalendrar**.
+2. **Apple Kalender** (iPhone) eller **Telefonens kalendrar** (Android): telefonens egna kalendrar.
+3. **Google Kalender**: logga in, tryck på **Koppla** och välj sedan vem som ser varje kalender.
+4. **Prenumerera med en länk**: en skol- eller föreningskalender som uppdaterar sig själv. Bara för admins. daili varnar om familjen redan har den.
+5. **Importera en fil (.ics)**: kopierar händelserna till daili en gång.
 
-![Rutan Lägg till en kalender med Apple Kalender, Google Kalender, Prenumerera med en länk och Importera en fil (.ics).](calendar-other-calendars)
+![Rutan Redigera kalender för en länkad kalender. Raden Tillhör, inställd på Emma, är inringad.](calendar-other-calendars)
 
-För att ändra dina val trycker du på telefonens rad under **Andra kalendrar**. För att ta bort en trycker du på **⋮** → **Ta bort**.
+Varje kalender har raden **Tillhör**: prenumererade länkar börjar som **Alla**, telefonens och Googles kalendrar som du. Händelserna får den personens färg och följer **Filter**.
 
-De här händelserna kan inte ändras i daili. Tryck på en → **Kopiera till Daili** för en ifylld ny händelse. Lägg till personer och påminnelser och tryck sedan på **Spara**. Originalet finns kvar.
+För att ändra det trycker du på telefonens eller Googles rad, eller på en länks **⋮** → **Redigera**. Med **⋮** → **Ta bort** (Google: **Koppla från**) tar du bort en kalender.
 
-> Note: Telefonens kalendrar stannar på den här telefonen: inget laddas upp, och familjen ser dem inte.
+De här händelserna kan inte ändras här. Tryck på en → **Kopiera till Daili** för att göra en egen.
+
+> Note: Telefonens kalendrar, och vem de tillhör, stannar på den här telefonen: inget laddas upp eller visas för familjen.

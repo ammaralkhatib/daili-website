@@ -2,20 +2,23 @@
 id: start-sign-in
 title: Accedere con Google, Apple o e-mail
 summary: Crea un account o accedi di nuovo, e reimposta la password se l'hai dimenticata.
-keywords: accedere, accesso, login, registrarsi, registrazione, account, google, apple, e-mail, password, password dimenticata, reimpostare password
-translatedFrom: 2026-10-27
+keywords: accedere, accesso, login, registrarsi, registrazione, creare account, google, apple, e-mail, password, password dimenticata, reimpostare password
+translatedFrom: 2026-10-30
 ---
-Ti serve un account per usare daili. Ci vuole un minuto.
+Ti serve un account per usare daili.
 
-![La schermata Accedi. Il pulsante Continua con Google è cerchiato.](start-sign-in)
+![La schermata Accedi con Google e Apple in alto. La barra Registrati in basso è cerchiata.](start-sign-in)
 
-1. Apri daili e tocca **Inizia**.
-2. Tocca **Continua con Google** o **Continua con Apple**. Oppure inserisci e-mail e password, poi tocca **Accedi**.
-3. Sei nuovo e usi l'e-mail? Tocca **Registrati**, inserisci nome ed e-mail, scrivi due volte una password, poi tocca **Crea un account**.
-4. Hai dimenticato la password? Nella schermata di accesso tocca **Password dimenticata?**, inserisci la tua e-mail e tocca **Invia il link**.
+1. Apri daili e tocca **Inizia**. Su un telefono nuovo si apre la schermata **Crea un account**.
+2. La barra in basso cambia schermata: **Registrati** o **Accedi**.
+3. Tocca **Continua con Google** o **Continua con Apple** in alto. Oppure, sotto **oppure con l'email**, inserisci e-mail e password e tocca **Accedi**.
+4. Sei nuovo e usi l'e-mail? Inserisci nome, e-mail e due volte una password, poi tocca **Crea un account**.
+5. Hai dimenticato la password? Tocca **Password dimenticata?**, inserisci la tua e-mail e tocca **Invia il link**.
 
-La password deve avere almeno 8 caratteri. Account nuovo? Poi daili ti chiede foto e nome, e crei una famiglia o entri in una.
+![La schermata Crea un account. I pulsanti Continua con Google e Continua con Apple sono cerchiati.](start-register)
 
-Continuando, accetti le **condizioni d'uso**; l'**informativa sulla privacy** spiega come daili tratta i tuoi dati. I link a entrambe sono sotto i pulsanti di accesso.
+La password deve avere almeno 8 caratteri. Poi aggiungi foto e nome, e crei una famiglia o entri in una.
+
+Continuando, accetti le **condizioni d'uso**; l'**informativa sulla privacy** spiega come daili tratta i tuoi dati.
 
 > Note: **Continua con Apple** c'è solo su iPhone. Su Android usa Google o la tua e-mail. Dopo aver reinstallato daili, devi accedere di nuovo.

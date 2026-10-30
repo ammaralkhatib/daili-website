@@ -1,24 +1,28 @@
 ---
 id: calendar-views
-title: Viste mese, settimana, giorno ed elenco
-summary: Passa tra mese, settimana, 3 giorni, giorno ed elenco, e filtra per persona o categoria.
-keywords: vista, mese, settimana, giorno, elenco, agenda, 3 giorni, cambiare vista, filtro, oggi
-translatedFrom: 2026-10-12
+title: Viste del calendario: mese, settimana, giorno, elenco, persone e anno
+summary: Passa tra mese, settimana, 3 giorni, giorno, elenco, persone e anno, e filtra per persona o categoria.
+keywords: vista, mese, settimana, elenco, filtro, persone, colonne, planner da parete, anno, vacanze, numero della settimana, settimana dell'anno
+translatedFrom: 2026-10-30
 ---
-Il calendario può mostrare i programmi della tua famiglia in cinque modi.
+Il calendario ha sette viste.
 
 ![Il calendario in vista Mese. Il pulsante Vista nella barra in basso è cerchiato.](calendar-views)
 
-1. Nella schermata iniziale, tocca **Calendario**.
-2. Tocca **Vista** nella barra in basso.
-3. Scegli **Mese**, **Settimana**, **3 giorni**, **Giorno** o **Elenco**.
-4. Tocca **Oggi** in basso per tornare a oggi.
-5. Per vedere solo alcune persone o categorie, tocca **Filtro** e sceglile. Anche i bambini sono sotto **Persone**.
+1. Nella schermata iniziale, tocca **Calendario**, poi **Vista** in basso.
+2. Scegli **Mese**, **Settimana**, **3 giorni**, **Giorno**, **Elenco**, **Persone** o **Anno**.
+3. Per vedere solo alcune persone o categorie, tocca **Filtro** e sceglile. Ci sono anche i bambini.
 
-daili ricorda la tua vista su questo telefono. In **Mese**, tocca un giorno per vedere tutto quello che c'è.
+La vista **Persone** dà a ogni persona una colonna, come un planner da parete. Il pulsante in alto a sinistra nasconde o riordina le colonne. Tocca uno spazio vuoto per aggiungere un evento per quella persona.
 
-L'ingranaggio → **Mostra nel calendario** aggiunge compleanni, festività, pasti, attività, note con promemoria e bollette. Tranne le festività, toccane uno per aprirlo; un'attività si apre nella sua lista.
+![La vista Persone con una colonna per Lena, Marco ed Emma. Le intestazioni delle colonne sono cerchiate.](calendar-people-view)
 
-Un evento compare sotto le persone per cui è, o sotto chi l'ha creato se è per tutti. La sua striscia ha il colore della prima persona per cui è.
+La vista **Anno** mostra solo gli eventi di tutto il giorno e di più giorni, come le vacanze scolastiche e i viaggi, nel colore di ogni persona. Tocca una persona per nasconderla, o un mese per aprirlo.
 
-> Note: **Filtro** compare solo quando c'è qualcosa da filtrare: una seconda persona (conta anche un bambino), o una categoria.
+![La vista Anno con vacanze e viaggi come barre colorate. Le etichette delle persone in alto sono cerchiate.](calendar-year-view)
+
+Su app.daili.app, i tasti P e Y le aprono.
+
+L'ingranaggio → **Mostra nel calendario** aggiunge compleanni, festività, pasti, attività, note con promemoria e bollette. Lì, **Numeri della settimana** mette W44 sul primo giorno di ogni settimana.
+
+Per **Filtro**, un evento appartiene alle persone per cui è, o a chi l'ha creato se è per tutti.

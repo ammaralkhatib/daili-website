@@ -1,24 +1,28 @@
 ---
 id: calendar-views
-title: De weergaven maand, week, dag en lijst
-summary: Wissel tussen maand, week, 3 dagen, dag en lijst, en filter op persoon of categorie.
-keywords: weergave, maand, week, dag, lijst, agenda, 3 dagen, weergave wisselen, filter, vandaag
-translatedFrom: 2026-10-12
+title: Agendaweergaven: maand, week, dag, lijst, personen en jaar
+summary: Wissel tussen maand, week, 3 dagen, dag, lijst, personen en jaar, en filter op persoon of categorie.
+keywords: weergave, maand, week, lijst, filter, personen, kolommen, planbord, jaaroverzicht, vakanties, weeknummer, kalenderweek
+translatedFrom: 2026-10-30
 ---
-De agenda kan de plannen van je gezin op vijf manieren laten zien.
+De agenda heeft zeven weergaven.
 
 ![De agenda in de maandweergave. De knop Weergave in de balk onderaan is omcirkeld.](calendar-views)
 
-1. Tik op het startscherm op **Agenda**.
-2. Tik in de balk onderaan op **Weergave**.
-3. Kies **Maand**, **Week**, **3 dagen**, **Dag** of **Lijst**.
-4. Tik onderaan op **Vandaag** om terug te springen naar vandaag.
-5. Om alleen bepaalde mensen of categorieën te zien, tik je op **Filter** en kies je ze. Ook kinderen staan onder **Personen**.
+1. Tik op het startscherm op **Agenda** en dan onderaan op **Weergave**.
+2. Kies **Maand**, **Week**, **3 dagen**, **Dag**, **Lijst**, **Personen** of **Jaar**.
+3. Om alleen bepaalde mensen of categorieën te zien, tik je op **Filter** en kies je ze. Ook kinderen staan daar.
 
-daili onthoudt je weergave op deze telefoon. In **Maand** tik je op een dag om alles van die dag te zien.
+In de weergave **Personen** krijgt ieder een eigen kolom, zoals op een planbord aan de muur. Met de knop linksboven verberg of orden je kolommen. Tik op een lege plek om een afspraak voor die persoon toe te voegen.
 
-Via het tandwiel → **Tonen in agenda** voeg je verjaardagen, feestdagen, maaltijden, taken, notities met een herinnering en rekeningen toe. Behalve feestdagen open je ze met een tik; een taak opent in zijn lijst.
+![De weergave Personen met een kolom voor Lena, Marco en Emma. De kolomkoppen zijn omcirkeld.](calendar-people-view)
 
-Een afspraak staat bij de mensen voor wie hij is, of bij degene die hem maakte als hij voor iedereen is. De streep heeft de kleur van de eerste persoon voor wie hij is.
+In de weergave **Jaar** zie je alleen afspraken van een hele dag of meer dagen, zoals schoolvakanties en reizen, in de kleur van elke persoon. Tik op iemand om die te verbergen, of op een maand om die te openen.
 
-> Note: **Filter** verschijnt pas als er iets te filteren is: een tweede persoon (ook een kind telt) of een categorie.
+![De weergave Jaar met vakanties en reizen als gekleurde balken. De personen bovenaan zijn omcirkeld.](calendar-year-view)
+
+Op app.daili.app openen de toetsen P en Y deze twee weergaven.
+
+Via het tandwiel → **Tonen in agenda** voeg je verjaardagen, feestdagen, maaltijden, taken, notities met een herinnering en rekeningen toe. Zet je daar **Weeknummers** aan, dan staat W44 op de eerste dag van elke week.
+
+Voor **Filter** hoort een afspraak bij de mensen voor wie hij is, of bij degene die hem maakte als hij voor iedereen is.

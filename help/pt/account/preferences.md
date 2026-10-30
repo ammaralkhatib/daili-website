@@ -3,7 +3,7 @@ id: account-preferences
 title: Claro ou escuro, idioma, formato da hora, temperatura, vibração
 summary: Escolha o modo escuro, seu idioma, a hora em 12 ou 24 horas, °C ou °F, se o daili vibra e as funções de IA.
 keywords: modo escuro, tema, aparência, idioma, 24 horas, formato da hora, temperatura, celsius, fahrenheit, vibração, ia, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Toque na sua foto no alto da tela inicial para abrir **Configurações**. Estas opções ficam em **Geral**.
 
@@ -21,6 +21,6 @@ Toque na sua foto no alto da tela inicial para abrir **Configurações**. Estas 
 
 ![A janela Aparência. Cor do app, com verde daili e Minha cor, está circulado.](account-app-colour)
 
-Exceto o idioma, estas configurações valem só para este celular. Cada pessoa da família tem as suas.
+Estas configurações valem só para este celular. Cada pessoa da família tem as suas.
 
-> Note: O idioma que você escolher também é o idioma dos e-mails e lembretes que o daili manda para você.
+> Note: As notificações chegam no idioma que o daili usa naquele celular. Os e-mails chegam no último idioma que você escolheu.

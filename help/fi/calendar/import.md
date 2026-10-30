@@ -3,7 +3,7 @@ id: calendar-import
 title: Tuo kalenteritiedosto (.ics)
 summary: Kopioi tapahtumat ja tehtävät .ics-tiedostosta perheen kalenteriin. Sinä valitset, mitkä.
 keywords: tuo, ics, ical, kalenteritiedosto, koulun kalenteri, kerho, seura, kopioi tapahtumat, liite, tiedosto
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-30
 ---
 Saitko kalenteritiedoston (.ics) koulusta tai seurasta? daili kopioi sen tapahtumat perheen kalenteriin kerran.
 
@@ -11,8 +11,6 @@ Saitko kalenteritiedoston (.ics) koulusta tai seurasta? daili kopioi sen tapahtu
 2. Napauta osiossa **Muut kalenterit** kohtaa **Lisää kalenteri**, sitten **Tuo tiedosto (.ics)**, ja valitse tiedosto.
 3. Poista näkymässä **Tuo kalenteritiedosto** valinta kohdista, joita et halua. Napauta päivämäärää tai aikaa, jos haluat muuttaa sitä.
 4. Napauta alhaalla olevaa lisäyspainiketta.
-
-![Lisää kalenteri -ikkuna kalenterin asetuksissa. Tuo tiedosto (.ics) on ympyröity.](calendar-other-calendars)
 
 Voit myös aloittaa tiedostosta Mailissa, Tiedostot-apissa tai latauksissasi: jaa se dailiin, tai Androidissa avaa se dailissa.
 

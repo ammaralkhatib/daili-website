@@ -1,16 +1,19 @@
 ---
 id: family-activity
 title: Se hvem som endret hva
-summary: Aktivitetslisten viser hva familien har lagt til, endret eller slettet, og hvem som gjorde det.
-keywords: aktivitet, historikk, endringer, hvem endret, hvem slettet, hva er nytt, bjelle, feed, logg
-translatedFrom: 2026-09-26
+summary: Aktivitetslisten viser hva familien har lagt til, endret eller slettet, og hvem som gjorde det. Du kan tømme den bare for deg selv.
+keywords: aktivitet, historikk, endringer, hvem endret, hvem slettet, hva er nytt, bjelle, feed, logg, tøm
+translatedFrom: 2026-10-30
 ---
 Alle kan endre en felles hendelse eller liste. Aktivitetslisten viser hvem som gjorde det.
 
-![Toppen av startskjermen. Bjelleknappen øverst til høyre er ringet inn.](family-activity)
+![Aktivitetslisten med rader som Listen er arkivert og Listen er gjenopprettet. Knappen Tøm er ringet inn.](family-activity)
 
 1. Trykk på bjella øverst til høyre på startskjermen. Et tall på den betyr at det er noe nytt.
 2. Bla gjennom listen. Endringene er samlet under **I dag**, **I går** og eldre datoer.
 3. Trykk på en endring for å åpne hendelsen, listen eller oppskriften den gjelder.
+4. Vil du tømme listen, trykker du på **Tøm** øverst og bekrefter.
 
-Nye endringer har lys bakgrunn første gang du ser dem. Når noen deler et notat med hele familien, ser du **Notat delt** her, uten varsel.
+**Tøm** tømmer listen bare for deg. Familien ser fortsatt alt. Oppføringer fjernes uansett etter 90 dager.
+
+Nye endringer har lys bakgrunn første gang du ser dem. Når noen deler et notat med hele familien, ser du **Notat delt** her, uten varsel. Arkiveres eller gjenopprettes en liste, står det også her.

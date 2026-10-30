@@ -1,24 +1,28 @@
 ---
 id: calendar-views
-title: Die Ansichten Monat, Woche, Tag und Liste
-summary: Wechsle zwischen Monat, Woche, 3 Tagen, Tag und Liste, und filtere nach Person oder Kategorie.
-keywords: ansicht, monat, woche, tag, agenda, liste, tagebuch, 3 tage, ansicht wechseln, filter, heute, kalenderansicht
-translatedFrom: 2026-10-12
+title: Kalenderansichten: Monat, Woche, Tag, Liste, Personen und Jahr
+summary: Wechsle zwischen Monat, Woche, 3 Tagen, Tag, Liste, Personen und Jahr, und filtere nach Person oder Kategorie.
+keywords: ansicht, monat, woche, liste, filter, personen, spalten, wandplaner, jahresansicht, ferien, kalenderwoche, kw
+translatedFrom: 2026-10-30
 ---
-Der Kalender kann die Pläne deiner Familie auf fünf Arten zeigen.
+Der Kalender hat sieben Ansichten.
 
 ![Der Kalender in der Monatsansicht. Der Button Ansicht in der unteren Leiste ist eingekreist.](calendar-views)
 
-1. Tippe auf dem Startbildschirm auf **Kalender**.
-2. Tippe in der unteren Leiste auf **Ansicht**.
-3. Wähle **Monat**, **Woche**, **3 Tage**, **Tag** oder **Liste**.
-4. Tippe unten auf **Heute**, um zu heute zurückzuspringen.
-5. Um nur bestimmte Personen oder Kategorien zu sehen, tippe auf **Filter** und wähle sie aus. Auch Kinder stehen unter **Personen**.
+1. Tippe auf dem Startbildschirm auf **Kalender** und dann unten auf **Ansicht**.
+2. Wähle **Monat**, **Woche**, **3 Tage**, **Tag**, **Liste**, **Personen** oder **Jahr**.
+3. Um nur bestimmte Personen oder Kategorien zu sehen, tippe auf **Filter** und wähle sie aus. Auch Kinder stehen dort.
 
-daili merkt sich deine Ansicht auf diesem Handy. In **Monat** tippst du auf einen Tag, um alles an diesem Tag zu sehen.
+In der Ansicht **Personen** hat jede Person eine eigene Spalte, wie bei einem Wandplaner. Mit dem Button oben links blendest du Spalten aus oder sortierst sie um. Tippe auf eine freie Stelle, um einen Termin für diese Person anzulegen.
 
-Über das Zahnrad → **Im Kalender anzeigen** kommen Geburtstage, Feiertage, Mahlzeiten, Aufgaben, Notizen mit Erinnerung und Rechnungen dazu. Außer Feiertagen öffnet sich alles per Tippen; eine Aufgabe öffnet sich in ihrer Liste.
+![Die Ansicht Personen mit je einer Spalte für Lena, Marco und Emma. Die Spaltenköpfe sind eingekreist.](calendar-people-view)
 
-Ein Termin erscheint bei den Personen, für die er ist, oder bei der Person, die ihn erstellt hat, wenn er für alle ist. Sein Streifen hat die Farbe der ersten Person, für die er ist.
+Die Ansicht **Jahr** zeigt nur ganztägige und mehrtägige Termine, etwa Schulferien und Reisen, in der Farbe der jeweiligen Person. Tippe auf eine Person, um sie auszublenden, oder auf einen Monat, um ihn zu öffnen.
 
-> Note: **Filter** erscheint erst, wenn es etwas zu filtern gibt: eine zweite Person (auch ein Kind zählt) oder eine Kategorie.
+![Die Ansicht Jahr mit Ferien und Reisen als farbige Balken. Die Personen-Chips oben sind eingekreist.](calendar-year-view)
+
+Auf app.daili.app öffnen die Tasten P und Y diese beiden Ansichten.
+
+Über das Zahnrad → **Im Kalender anzeigen** kommen Geburtstage, Feiertage, Mahlzeiten, Aufgaben, Notizen mit Erinnerung und Rechnungen dazu. Schaltest du dort **Kalenderwochen** ein, steht W44 am ersten Tag jeder Woche.
+
+Für **Filter** gehört ein Termin zu den Personen, für die er ist, oder zu der Person, die ihn erstellt hat, wenn er für alle ist.

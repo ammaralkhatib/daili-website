@@ -10,7 +10,7 @@ since: 1.0.0
 updated: 2026-10-12
 media: lists-shopping
 order: 1
-related: lists-categories, lists-move-items, meals-to-shopping, budget-bills
+related: lists-categories, lists-move-items, meals-to-shopping, budget-bills, lists-archive-templates
 checklist: 4
 checklistDoneIf: hasListItem
 ---

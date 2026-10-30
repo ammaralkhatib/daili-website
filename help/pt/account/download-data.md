@@ -3,7 +3,7 @@ id: account-download-data
 title: Baixar seus dados
 summary: Peça uma cópia de tudo o que o daili guarda sobre você. Avisamos por e-mail quando estiver pronta.
 keywords: baixar, exportar, meus dados, cópia dos dados, lgpd, pedido de dados, privacidade, dados pessoais, arquivo
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
 Você pode pedir uma cópia dos seus dados a qualquer momento. Antes, seu endereço de e-mail precisa estar confirmado, porque a cópia vai para ele.
 
@@ -13,6 +13,6 @@ Você pode pedir uma cópia dos seus dados a qualquer momento. Antes, seu endere
 2. Em **Conta**, toque em **Baixar meus dados**.
 3. O daili diz: “A gente manda um e-mail assim que sua exportação estiver pronta.” Fique de olho na sua caixa de entrada.
 
-Ainda não confirmou? Então o pedido não dá certo. No cartão **E-mail não confirmado**, em **Configurações**, toque em **Reenviar** e depois no link do e-mail.
+Ainda não confirmou? O daili avisa e oferece **Enviar link**. Toque no link do e-mail e tente de novo.
 
 > Note: A cópia tem o que está guardado nos servidores do daili. Seus documentos e fotos ficam só no seu celular, então não estão nela.

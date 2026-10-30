@@ -3,14 +3,14 @@ id: cycle-start
 title: Urmărește-ți menstruația cu Ciclu
 summary: Notează-ți menstruația și vezi când ar putea veni următoarea. Privat: nimeni din familie nu vede.
 keywords: ciclu, menstruație, perioadă, notare, estimare, următoarea menstruație, menstruația a început, s-a terminat, flux, privat
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Ciclu este oprit până îl pornești tu și este gratuit. Nimeni din familie nu vede Ciclul tău și nici că îl folosești.
 
-1. Deschide **Setări**, apasă pe **Ciclu**, apoi pe **Începe**.
-2. Alege ziua în care a început ultima menstruație, de exemplu **Ieri**, și duratele tale obișnuite. Nu știi sigur? Apasă pe **Nu știu sigur — Daili învață din notițele tale**.
+1. Deschide **Setări**, apasă pe **Ciclu**, apoi pe **Începe**. Sau folosește dala estompată **Ciclu** din modul de editare al ecranului principal, ori **Setări** → **Ecran principal** → **Ciclu**.
+2. Alege ziua în care a început ultima menstruație și duratele tale obișnuite.
 3. Când începe o menstruație, apasă pe **Menstruația a început**. Cu **A început mai devreme?** poți marca zile mai vechi.
-4. În timpul menstruației, apasă pe card pe **Slab**, **Mediu** sau **Abundent**. **Simptome și stare** deschide toată ziua.
+4. În timpul menstruației, apasă pe **Slab**, **Mediu** sau **Abundent**. **Simptome și stare** deschide ziua.
 5. S-a terminat? Apasă pe **S-a terminat** și alege ultima zi. Zilele dintre ele se numără și ele.
 
 ![Cardul Ciclu în ziua 18: „Următoarea menstruație în jur de 26 oct. – 30 oct.” și butonul Menstruația a început. Ziua de azi este încercuită în luna de dedesubt.](cycle-start)

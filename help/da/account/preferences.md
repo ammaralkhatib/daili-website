@@ -3,7 +3,7 @@ id: account-preferences
 title: Lyst eller mørkt, sprog, tidsformat, temperatur, vibration
 summary: Vælg mørk tilstand, dit sprog, 12- eller 24-timers ur, °C eller °F, om daili skal vibrere, og dets AI-funktioner.
 keywords: mørk tilstand, tema, udseende, sprog, 24-timers, tidsformat, temperatur, celsius, fahrenheit, vibration, ai, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Tryk på dit billede øverst på startskærmen for at åbne **Indstillinger**. Du finder disse under **Generelt**.
 
@@ -21,6 +21,6 @@ Tryk på dit billede øverst på startskærmen for at åbne **Indstillinger**. D
 
 ![Arket Udseende. Appfarve med daili-grøn og Min farve er ringet ind.](account-app-colour)
 
-Bortset fra sproget gælder indstillingerne kun denne telefon. Familien beholder deres egne.
+Indstillingerne gælder kun denne telefon. Familien beholder deres egne.
 
-> Note: Det sprog, du vælger, er også sproget i dailis e-mails og påmindelser til dig.
+> Note: Notifikationer kommer på det sprog, daili bruger på den telefon. E-mails kommer på det sprog, du sidst valgte.

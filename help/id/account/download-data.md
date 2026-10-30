@@ -3,7 +3,7 @@ id: account-download-data
 title: Unduh data Anda
 summary: Minta salinan semua yang disimpan daili tentang Anda. Kami mengirim email saat sudah siap.
 keywords: unduh, ekspor, data saya, salinan data, gdpr, permintaan data, privasi, data pribadi, arsip
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
 Anda bisa meminta salinan data Anda kapan saja. Alamat email Anda harus diverifikasi dulu, karena salinannya dikirim ke sana.
 
@@ -13,6 +13,6 @@ Anda bisa meminta salinan data Anda kapan saja. Alamat email Anda harus diverifi
 2. Di bawah **Akun**, ketuk **Unduh data saya**.
 3. daili menampilkan "Kami akan mengirim email begitu ekspor Anda siap." Pantau kotak masuk Anda.
 
-Belum diverifikasi? Maka permintaannya gagal. Di kartu **Email belum diverifikasi** di **Pengaturan**, ketuk **Kirim ulang**, lalu ketuk tautan di email.
+Belum diverifikasi? daili akan memberi tahu dan menawarkan **Kirim tautan**. Ketuk tautan di email, lalu coba lagi.
 
 > Note: Salinannya berisi apa yang tersimpan di server daili. Dokumen dan foto Anda hanya ada di ponsel, jadi tidak termasuk.

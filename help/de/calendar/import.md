@@ -3,7 +3,7 @@ id: calendar-import
 title: Eine Kalenderdatei (.ics) importieren
 summary: Kopiere Termine und Aufgaben aus einer .ics-Datei in euren Familienkalender. Du wählst aus, welche.
 keywords: importieren, ics, ical, kalenderdatei, schulkalender, verein, termine kopieren, anhang, datei
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-30
 ---
 Du hast eine Kalenderdatei (.ics) von der Schule oder vom Verein? daili kopiert ihre Termine einmalig in euren Familienkalender.
 
@@ -11,8 +11,6 @@ Du hast eine Kalenderdatei (.ics) von der Schule oder vom Verein? daili kopiert 
 2. Tippe unter **Andere Kalender** auf **Kalender hinzufügen**, dann auf **Datei importieren (.ics)**, und wähle die Datei.
 3. Entferne auf dem Bildschirm **Kalenderdatei importieren** den Haken bei allem, was du nicht willst. Tippe auf ein Datum oder eine Uhrzeit, um sie zu ändern.
 4. Tippe unten auf den Hinzufügen-Button.
-
-![Das Fenster Kalender hinzufügen in den Kalendereinstellungen. Datei importieren (.ics) ist eingekreist.](calendar-other-calendars)
 
 Oder starte bei der Datei in Mail, Dateien oder deinen Downloads: Teile sie mit daili, oder öffne sie auf Android mit daili.
 

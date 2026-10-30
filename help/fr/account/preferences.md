@@ -3,7 +3,7 @@ id: account-preferences
 title: Clair ou sombre, langue, format de l'heure, température, vibration
 summary: Choisis le mode sombre, ta langue, l'heure sur 12 ou 24 heures, °C ou °F, si daili vibre, et ses fonctions IA.
 keywords: mode sombre, thème, apparence, langue, 24 heures, format de l'heure, température, celsius, fahrenheit, vibration, ia, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 Touche ta photo en haut de l'écran d'accueil pour ouvrir les **Paramètres**. Ces réglages sont sous **Général**.
 
@@ -21,6 +21,6 @@ Touche ta photo en haut de l'écran d'accueil pour ouvrir les **Paramètres**. C
 
 ![La fiche Apparence. Couleur de l'app, avec vert daili et Ma couleur, est entouré.](account-app-colour)
 
-Sauf la langue, ces réglages valent seulement pour ce téléphone. Chaque membre de ta famille garde les siens.
+Ces réglages valent seulement pour ce téléphone. Chaque membre de ta famille garde les siens.
 
-> Note: La langue que tu choisis est aussi celle des e-mails et des rappels que daili t'envoie.
+> Note: Les notifications arrivent dans la langue que daili utilise sur ce téléphone. Les e-mails arrivent dans la dernière langue que tu as choisie.

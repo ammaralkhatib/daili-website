@@ -3,7 +3,7 @@ id: account-download-data
 title: Télécharger tes données
 summary: Demande une copie de tout ce que daili garde sur toi. Nous t'envoyons un e-mail quand elle est prête.
 keywords: télécharger, exporter, mes données, copie des données, rgpd, demande de données, confidentialité, données personnelles, archive
-translatedFrom: 2026-10-27
+translatedFrom: 2026-10-30
 ---
 Tu peux demander une copie de tes données à tout moment. Ton adresse e-mail doit d'abord être confirmée, car c'est là que la copie arrive.
 
@@ -13,6 +13,6 @@ Tu peux demander une copie de tes données à tout moment. Ton adresse e-mail do
 2. Sous **Compte**, touche **Télécharger mes données**.
 3. daili indique qu'un e-mail t'arrivera quand ton export sera prêt. Surveille ta boîte de réception.
 
-Ton adresse n'est pas encore confirmée ? Alors la demande échoue. Sur la carte **E-mail non confirmé** dans les **Paramètres**, touche **Renvoyer**, puis touche le lien dans l'e-mail.
+Ton adresse n'est pas encore confirmée ? daili te le dit et propose **Envoyer le lien**. Touche le lien dans l'e-mail, puis réessaie.
 
 > Note: La copie contient ce qui est stocké sur les serveurs de daili. Tes documents et tes photos sont seulement sur ton téléphone, donc ils n'y sont pas.

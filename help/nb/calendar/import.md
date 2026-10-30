@@ -3,7 +3,7 @@ id: calendar-import
 title: Importer en kalenderfil (.ics)
 summary: Kopier hendelser og oppgaver fra en .ics-fil til familiekalenderen. Du velger hvilke.
 keywords: importer, ics, ical, kalenderfil, skolekalender, klubb, kopier hendelser, vedlegg, fil
-translatedFrom: 2026-10-12
+translatedFrom: 2026-10-30
 ---
 Har du fått en kalenderfil (.ics) fra skolen eller en klubb? daili kopierer hendelsene inn i familiekalenderen én gang.
 
@@ -11,8 +11,6 @@ Har du fått en kalenderfil (.ics) fra skolen eller en klubb? daili kopierer hen
 2. Under **Andre kalendere** trykker du på **Legg til en kalender**, så på **Importer en fil (.ics)**, og velger filen.
 3. På skjermen **Importer kalenderfil** fjerner du haken fra det du ikke vil ha. Trykk på en dato eller et klokkeslett for å endre det.
 4. Trykk på legg til-knappen nederst.
-
-![Arket Legg til en kalender i kalenderinnstillingene. Importer en fil (.ics) er ringet inn.](calendar-other-calendars)
 
 Eller start fra filen i Mail, Filer eller nedlastingene dine: del den til daili, eller åpne den med daili på Android.
 

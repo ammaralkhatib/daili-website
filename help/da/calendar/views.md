@@ -1,24 +1,28 @@
 ---
 id: calendar-views
-title: Visningerne måned, uge, dag og liste
-summary: Skift mellem måned, uge, 3 dage, dag og liste, og filtrér efter person eller kategori.
-keywords: visning, måned, uge, dag, liste, dagsorden, 3 dage, skift visning, filter, i dag
-translatedFrom: 2026-10-12
+title: Kalendervisninger: måned, uge, dag, liste, personer og år
+summary: Skift mellem måned, uge, 3 dage, dag, liste, personer og år, og filtrér efter person eller kategori.
+keywords: visning, måned, uge, liste, filter, personer, kolonner, vægkalender, årsvisning, ferier, ugenummer, kalenderuge
+translatedFrom: 2026-10-30
 ---
-Kalenderen kan vise familiens planer på fem måder.
+Kalenderen har syv visninger.
 
 ![Kalenderen i visningen Måned. Knappen Visning i bjælken forneden er markeret med en cirkel.](calendar-views)
 
-1. Tryk på **Kalender** på startskærmen.
-2. Tryk på **Visning** i bjælken forneden.
-3. Vælg **Måned**, **Uge**, **3 dage**, **Dag** eller **Liste**.
-4. Tryk på **I dag** forneden for at springe tilbage til i dag.
-5. Vil du kun se nogle personer eller kategorier, så tryk på **Filter**, og vælg dem. Børn står også under **Personer**.
+1. Tryk på **Kalender** på startskærmen og så på **Visning** forneden.
+2. Vælg **Måned**, **Uge**, **3 dage**, **Dag**, **Liste**, **Personer** eller **År**.
+3. Vil du kun se nogle personer eller kategorier, så tryk på **Filter**, og vælg dem. Børn står der også.
 
-daili husker din visning på denne telefon. I **Måned** trykker du på en dag for at se alt på den.
+I visningen **Personer** får hver person sin egen kolonne, som på en vægkalender. Knappen øverst til venstre skjuler kolonner eller ændrer rækkefølgen. Tryk på et tomt sted for at tilføje en begivenhed for den person.
 
-Tandhjulet → **Vis i kalenderen** tilføjer fødselsdage, helligdage, måltider, opgaver, noter med en påmindelse og regninger. Undtagen helligdage åbner du dem med et tryk; en opgave åbner i sin liste.
+![Visningen Personer med en kolonne til hver af Lena, Marco og Emma. Kolonneoverskrifterne er markeret med en cirkel.](calendar-people-view)
 
-En begivenhed vises under de personer, den er for, eller under den, der oprettede den, hvis den er for alle. Dens stribe har farven fra den første person, den er for.
+I visningen **År** ser du kun heldags- og flerdagsbegivenheder, som skoleferier og rejser, i hver persons farve. Tryk på en person for at skjule vedkommende, eller på en måned for at åbne den.
 
-> Note: **Filter** vises først, når der er noget at filtrere efter: en person mere (et barn tæller også) eller en kategori.
+![Visningen År med ferier og rejser som farvede bjælker. Personerne øverst er markeret med en cirkel.](calendar-year-view)
+
+På app.daili.app åbner tasterne P og Y de to visninger.
+
+Tandhjulet → **Vis i kalenderen** tilføjer fødselsdage, helligdage, måltider, opgaver, noter med en påmindelse og regninger. Slår du **Ugenumre** til der, står der W44 på hver uges første dag.
+
+For **Filter** hører en begivenhed til de personer, den er for, eller til den, der oprettede den, hvis den er for alle.

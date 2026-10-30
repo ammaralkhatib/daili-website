@@ -3,18 +3,18 @@ id: start-edit-home
 topic: start
 title: Edit your Home screen: hide and reorder tiles
 summary: Put the tiles you use most at the top, and hide the ones you don't need.
-keywords: home, tiles, reorder, rearrange, move, hide, remove, show, customise, customize, layout
+keywords: home, tiles, reorder, rearrange, move, hide, remove, show, customise, customize, layout, cycle
 routes: /settings/home-tiles
 tryIt: /
 since: 1.6.0
-updated: 2026-10-23
+updated: 2026-10-30
 media: start-edit-home
 order: 5
-related: start-home, start-features
+related: start-home, start-features, cycle-start
 ---
 You can change which tiles Home shows, and in which order. Every tile can move or hide, **Notes** too.
 
-![The Home screen in edit mode, with an × on each tile. The Done button at the bottom right is circled.](start-edit-home)
+![Home in edit mode, with an × on each tile. The faded Cycle tile with its + badge is circled.](start-edit-home)
 
 1. On Home, press and hold any tile until the tiles start to wiggle. Or tap the dashed **Edit Home** tile at the end of Home.
 2. Drag a tile to a new place.
@@ -23,8 +23,10 @@ You can change which tiles Home shows, and in which order. Every tile can move o
 
 ![The end of Home: the Family tile, then the dashed Edit Home tile, which is circled.](start-edit-home-tile)
 
+With Cycle off, a faded **Cycle** tile shows here. Tap it to set up Cycle.
+
 You can do the same in **Settings** under **Home screen**: switch tiles on or off, and drag them by the handle.
 
-The features you picked after you created or joined your first family set these same tiles. **Family** is the last tile until you move it.
+The features you picked after you created or joined your first family set these tiles. **Family** is the last tile until you move it.
 
 > Note: Your layout is saved on this phone only. Everyone in the family sets up their own Home.

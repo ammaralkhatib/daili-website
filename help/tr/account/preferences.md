@@ -3,7 +3,7 @@ id: account-preferences
 title: Açık ya da koyu, dil, saat biçimi, sıcaklık, titreşim
 summary: Koyu modu, dilini, 12 ya da 24 saat biçimini, °C ya da °F'yi, daili'nin titreyip titremeyeceğini ve yapay zekâ özelliklerini seç.
 keywords: koyu mod, tema, görünüm, dil, 24 saat, saat biçimi, sıcaklık, celsius, fahrenheit, titreşim, yapay zekâ, gemini
-translatedFrom: 2026-10-16
+translatedFrom: 2026-10-30
 ---
 **Ayarlar** ekranını açmak için ana ekranın üstündeki resmine dokun. Bunları **Tercihler** altında bulursun.
 
@@ -21,6 +21,6 @@ translatedFrom: 2026-10-16
 
 ![Görünüm paneli. daili yeşili ve Benim rengim seçenekleriyle Uygulama rengi bölümü daire içine alınmış.](account-app-colour)
 
-Dil dışında bu ayarlar yalnızca bu telefon içindir. Ailen kendi ayarlarını korur.
+Bu ayarlar yalnızca bu telefon içindir. Ailen kendi ayarlarını korur.
 
-> Note: Seçtiğin dil, daili'nin sana gönderdiği e-postaların ve hatırlatıcıların da dilidir.
+> Note: Bildirimler, daili'nin o telefonda kullandığı dilde gelir. E-postalar en son seçtiğin dilde gelir.

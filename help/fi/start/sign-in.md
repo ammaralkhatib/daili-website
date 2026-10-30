@@ -2,20 +2,23 @@
 id: start-sign-in
 title: Kirjaudu Googlella, Applella tai sähköpostilla
 summary: Luo tili tai kirjaudu takaisin, ja nollaa salasana, jos olet unohtanut sen.
-keywords: kirjaudu, kirjautuminen, sisäänkirjautuminen, rekisteröidy, tili, google, apple, sähköposti, salasana, unohtunut salasana, nollaa salasana
-translatedFrom: 2026-10-27
+keywords: kirjaudu, kirjautuminen, sisäänkirjautuminen, rekisteröidy, luo tili, tili, google, apple, sähköposti, salasana, unohtunut salasana, nollaa salasana
+translatedFrom: 2026-10-30
 ---
-Tarvitset tilin, jotta voit käyttää dailia. Se vie minuutin.
+Tarvitset tilin, jotta voit käyttää dailia.
 
-![Kirjautumisnäyttö. Painike Jatka Googlella on ympyröity.](start-sign-in)
+![Kirjautumisnäyttö, jonka yläosassa ovat Google ja Apple. Alareunan Rekisteröidy-palkki on ympyröity.](start-sign-in)
 
-1. Avaa daili ja napauta **Aloita**.
-2. Napauta **Jatka Googlella** tai **Jatka Applella**. Tai kirjoita sähköpostiosoitteesi ja salasanasi ja napauta **Kirjaudu sisään**.
-3. Uusi käyttäjä sähköpostilla? Napauta **Rekisteröidy**, täytä nimi ja sähköposti, kirjoita salasana kahdesti ja napauta sitten **Luo tili**.
-4. Unohtuiko salasana? Napauta kirjautumisnäytöllä **Unohtuiko salasana?**, kirjoita sähköpostiosoitteesi ja napauta **Lähetä linkki**.
+1. Avaa daili ja napauta **Aloita**. Uudessa puhelimessa avautuu näkymä **Luo tili**.
+2. Alareunan palkki vaihtaa näkymää: **Rekisteröidy** tai **Kirjaudu sisään**.
+3. Napauta yläosassa **Jatka Googlella** tai **Jatka Applella**. Tai kirjoita kohdan **tai sähköpostilla** alle sähköpostiosoitteesi ja salasanasi ja napauta **Kirjaudu sisään**.
+4. Uusi käyttäjä sähköpostilla? Täytä nimi, sähköposti ja salasana kahdesti ja napauta sitten **Luo tili**.
+5. Unohtuiko salasana? Napauta **Unohtuiko salasana?**, kirjoita sähköpostiosoitteesi ja napauta **Lähetä linkki**.
 
-Salasanassa on oltava vähintään 8 merkkiä. Uusi tili? Sen jälkeen daili kysyy kuvaasi ja nimeäsi, ja luot perheen tai liityt sellaiseen.
+![Luo tili -näkymä. Painikkeet Jatka Googlella ja Jatka Applella on ympyröity.](start-register)
 
-Jatkamalla hyväksyt **käyttöehtomme**. **Tietosuojaselosteemme** kertoo, miten daili käsittelee tietojasi. Molemmat ovat linkkeinä kirjautumispainikkeiden alla.
+Salasanassa on oltava vähintään 8 merkkiä. Sen jälkeen lisäät kuvasi ja nimesi ja luot perheen tai liityt sellaiseen.
+
+Jatkamalla hyväksyt **käyttöehtomme**. **Tietosuojaselosteemme** kertoo, miten daili käsittelee tietojasi.
 
 > Note: **Jatka Applella** on vain iPhonessa. Androidilla käytä Googlea tai sähköpostiasi. Jos asennat dailin uudelleen, kirjaudu sisään uudestaan.
