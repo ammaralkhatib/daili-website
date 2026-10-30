@@ -117,7 +117,10 @@ Read the built English + German `calendar/views`, the new lists article and
 `docs(help): 1.14.0 — People + Year views, list archive + templates, wall screens, sign-in, habits, vault, activity`;
 body `Prompt: claude-prompts/2026-10-29/004-help-sync-1-14-0.md`. Your files
 only (plus the help pictures and `help/media*.json`). 🔴 Do NOT stage the
-untracked `static/assets/img/photos/` folder. **Push now. Do NOT run
+untracked `static/assets/img/photos/` folder, and do NOT stage `legal/**` or
+`tools/check-legal.mjs` — those are prompt 003's finished but uncommitted
+privacy edits (003 stopped only because the help check was red);
+prompt 005 commits them right after you. **Push now. Do NOT run
 `./deploy.sh`.**
 
 ## Report
