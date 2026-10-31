@@ -1332,7 +1332,7 @@ export const WHATS_NEW = {
  * by its own version. The release help sync bumps this on release day.
  */
 export const HELP_PUBLIC = true;
-export const LIVE_APP_VERSION = '1.13.0';
+export const LIVE_APP_VERSION = '1.14.0';
 
 /**
  * The topic icons, a fixed vocabulary: the app maps each name to its own icon
