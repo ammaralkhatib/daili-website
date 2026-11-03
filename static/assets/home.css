@@ -180,7 +180,7 @@ html.lenis,html.lenis body{height:auto}
    track by exactly half is one set and the loop has no seam. */
 .home .marq-track{display:flex;width:max-content;animation:marq 70s linear infinite}
 .home .marq-set{display:flex;gap:18px;padding-inline-end:18px}
-.home .revs .marq:hover .marq-track{animation-play-state:paused}
+.home .revs .marq:has(.rv:hover) .marq-track{animation-play-state:paused}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes marq-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
 [dir="rtl"] .home .marq-track{animation-name:marq-rtl}

@@ -43,6 +43,7 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || root).querySelectorAll(s)); };
   var lenis = null;
   featureSheet();
+  reviewOriginals();
   if (!g || !ST) return;
   g.registerPlugin(ST);
 
@@ -400,6 +401,56 @@
         history.pushState({ dailiSheet: url }, "", url);
         show(page);
       }, function () { location.href = url; });
+    });
+  }
+
+  // ---------- reviews: an open "Show original" closes on leave (2026-11-03/004) ----------
+  // An open original stops the row (CSS :has(details[open])). It closes when
+  // the reader moves on: the mouse or pen leaves its card, a tap lands outside
+  // it, focus leaves it, or Esc. One card open at a time across both sets.
+  // Delegated on #reviews (absent with fewer than 3 reviews). No GSAP needed;
+  // without JS the card still toggles on its summary and the row stays paused.
+  function reviewOriginals() {
+    var sec = document.getElementById("reviews");
+    if (!sec) return;
+    var opened = function () { return $$("details.rv-or[open]", sec); };
+    var close = function (d) {
+      d.open = false;
+      // A mouse click focused the summary; :focus-within would keep the row stopped.
+      var c = d.closest(".rv");
+      if (c && c.contains(document.activeElement)) document.activeElement.blur();
+    };
+    // `toggle` does not bubble: listen in the capture phase.
+    sec.addEventListener("toggle", function (ev) {
+      var d = ev.target;
+      if (!d.open || !d.classList || !d.classList.contains("rv-or")) return;
+      opened().forEach(function (o) { if (o !== d) o.open = false; });
+    }, true);
+    // pointerleave does not bubble either; the card itself is the target.
+    sec.addEventListener("pointerleave", function (ev) {
+      var c = ev.target;
+      if (ev.pointerType === "touch" || !c.classList || !c.classList.contains("rv")) return;
+      var d = c.querySelector("details.rv-or[open]");
+      if (d) close(d);
+    }, true);
+    document.addEventListener("pointerdown", function (ev) {
+      if (ev.pointerType !== "touch") return;
+      opened().forEach(function (d) { if (!d.closest(".rv").contains(ev.target)) d.open = false; });
+    }, { passive: true });
+    // Tab onward. A null relatedTarget is a click on plain text inside the
+    // card (or the window losing focus): the pointer rules cover clicks.
+    sec.addEventListener("focusout", function (ev) {
+      var c = ev.target.closest && ev.target.closest(".rv"), to = ev.relatedTarget;
+      if (!c || !to || c.contains(to)) return;
+      var d = c.querySelector("details.rv-or[open]");
+      if (d) d.open = false;
+    });
+    sec.addEventListener("keydown", function (ev) {
+      if (ev.key !== "Escape") return;
+      var d = ev.target.closest && ev.target.closest("details.rv-or[open]");
+      if (!d) return;
+      d.open = false;
+      d.querySelector("summary").focus();
     });
   }
 
