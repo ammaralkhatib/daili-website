@@ -664,7 +664,8 @@ for (const loc of LOCALES) {
 //   - the member number, formatted for the page's locale, and no {count}
 //     anywhere in dist/;
 //   - with fewer than 3 REVIEWS no reviews section at all; with 3+ every
-//     card is one REVIEWS entry, each once; the words "Placeholder" and
+//     card is one REVIEWS entry, each once, in order, matched by [title or '',
+//     text] (a card with no title has no <b>); the words "Placeholder" and
 //     "Sample" nowhere in dist/ (any text file);
 //   - round 4: the hero's note pills sit above the headline, then the lead,
 //     then the buttons; one flow <video> per FLOW_STEPS entry with a video:,
@@ -806,8 +807,9 @@ for (const loc of LOCALES) {
     }
     if (withReviews) {
       const revSet = (sectionAt(html, 'id="reviews"').match(/<div class="marq-set">([\s\S]*?)<\/div><div class="marq-set" aria-hidden/) || [, ''])[1];
-      const shown = [...revSet.matchAll(/<article class="rv" data-review="([^"]*)">[\s\S]*?<p lang="[^"]*">([^<]*)<\/p><\/article>/g)].map((m) => [unescapeHtml(m[1]), unescapeHtml(m[2])]);
-      const want = REVIEWS.map((r) => [r.title, r.text]);
+      // The shown <b> title, or '' when the card has none (Google Play reviews).
+      const shown = [...revSet.matchAll(/<article class="rv" data-review="[^"]*"><div class="st"[^>]*>[\s\S]*?<\/div>(?:<b lang="[^"]*">([^<]*)<\/b>)?<div class="who">[\s\S]*?<p lang="[^"]*">([^<]*)<\/p><\/article>/g)].map((m) => [unescapeHtml(m[1] || ''), unescapeHtml(m[2])]);
+      const want = REVIEWS.map((r) => [r.title || '', r.text]);
       if (JSON.stringify(shown) !== JSON.stringify(want)) {
         fail(out, `the reviews row shows ${shown.length} card(s) that are not exactly REVIEWS' ${want.length}, in order — only real reviews from site.config.mjs, never invented ones`);
       }

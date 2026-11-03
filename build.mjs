@@ -914,20 +914,22 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
 
   // ---- reviews: real ones only, and only from three up ----
   // A moving row of cards: five stars (the first `stars` filled), the title
-  // and text in the review's own language, first name · source · date (in
-  // this page's date format). §15 matches every card back to REVIEWS.
+  // (App Store only — Google Play reviews have none, so no <b> line) and text
+  // in the review's own language, first name · source · date (in this page's
+  // date format). §15 matches every card back to REVIEWS.
   let reviews = '';
   if (REVIEWS.length >= 3) {
     const date = new Intl.DateTimeFormat(loc, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
     const rv = REVIEWS.map((r) => {
-      for (const k of ['title', 'text', 'name', 'source', 'stars', 'lang', 'date']) {
+      for (const k of ['text', 'name', 'source', 'stars', 'lang', 'date']) {
         if (!(k in r)) throw new Error(`REVIEWS entry ${JSON.stringify(r).slice(0, 60)} has no '${k}'`);
       }
-      if (!Number.isInteger(r.stars) || r.stars < 1 || r.stars > 5) throw new Error(`REVIEWS entry '${r.title}': stars must be 1..5, is ${r.stars}`);
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date)) throw new Error(`REVIEWS entry '${r.title}': date must be YYYY-MM-DD, is ${r.date}`);
+      if (!Number.isInteger(r.stars) || r.stars < 1 || r.stars > 5) throw new Error(`REVIEWS entry '${r.name}|${r.date}': stars must be 1..5, is ${r.stars}`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date)) throw new Error(`REVIEWS entry '${r.name}|${r.date}': date must be YYYY-MM-DD, is ${r.date}`);
       const stars = [0, 1, 2, 3, 4].map((i) => `<span class="${i < r.stars ? 'on' : 'off'}">${homeIcon('star')}</span>`).join('');
       const when = date.format(new Date(`${r.date}T12:00:00Z`));
-      return `<article class="rv" data-review="${e(r.title)}"><div class="st" role="img" aria-label="${num(r.stars)}/${num(5)}">${stars}</div><b lang="${e(r.lang)}">${e(r.title)}</b><div class="who"><span lang="${e(r.lang)}">${e(r.name)}</span> · ${e(r.source)} · <time datetime="${r.date}">${e(when)}</time></div><p lang="${e(r.lang)}">${e(r.text)}</p></article>`;
+      const title = r.title ? `<b lang="${e(r.lang)}">${e(r.title)}</b>` : '';
+      return `<article class="rv" data-review="${e(`${r.name}|${r.date}`)}"><div class="st" role="img" aria-label="${num(r.stars)}/${num(5)}">${stars}</div>${title}<div class="who"><span lang="${e(r.lang)}">${e(r.name)}</span> · ${e(r.source)} · <time datetime="${r.date}">${e(when)}</time></div><p lang="${e(r.lang)}">${e(r.text)}</p></article>`;
     }).join('');
     reviews = `  <section class="revs" id="reviews"><div class="marq"><div class="marq-track marq-slow"><div class="marq-set">${rv}</div><div class="marq-set" aria-hidden="true">${rv}</div></div></div></section>\n`;
   }

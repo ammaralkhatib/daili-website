@@ -1381,7 +1381,7 @@ export const WEB_APP_URL = 'https://app.daili.app';
  * {count}), formatted per locale with Intl.NumberFormat.
  * Real, current user count — Ammar updates it by hand. Never round up.
  */
-export const MEMBERS_COUNT = 1500;
+export const MEMBERS_COUNT = 2000;
 
 /**
  * Real app-store reviews for the home page. The reviews section renders only
@@ -1389,8 +1389,12 @@ export const MEMBERS_COUNT = 1500;
  * at all. Never put placeholder or invented text here.
  *
  * Shape, one object per review, shown in its original language:
- *   { title: 'Finally one app for all of us',
- *     text: 'We used three apps and a paper calendar…',
+ *   { title: 'Finally one app for all of us',  // optional — Google Play reviews
+ *                      // have none, so leave it out (the card shows no title
+ *                      // line); never invent a title for a real review
+ *     text: 'We used three apps and a paper calendar…',  // the reviewer's own
+ *                      // words, spelling untouched; a shortened excerpt only
+ *                      // when the cut is marked with "…"
  *     name: 'Anna K.',
  *     source: 'App Store' | 'Google Play',
  *     stars: 5,          // 1..5 — five stars are drawn, this many filled
@@ -1398,9 +1402,28 @@ export const MEMBERS_COUNT = 1500;
  *     date: '2026-09-20' }  // as the store shows it; formatted per page locale
  * name is the first name (and initial) exactly as the store shows it. The
  * section is a moving row of cards; check-build §15 matches every card back to
- * an entry here.
+ * an entry here, by [title or '', text], in order.
  */
-export const REVIEWS = [];
+export const REVIEWS = [
+  { text: "VERAMENTE OTTIMA PIENA DI FUNZIONI ECCELLENTI. Ne ho usate tantissime di calendari sopratutto per condividerli anche a pagamento. Questa App lì supera tutti, non c'è funzione che manchi. Veramente complimenti a chi l'ha realizzata",
+    name: "Valentino R.", source: "Google Play", stars: 5, lang: "it", date: "2026-10-31" },
+  { title: "Complete and in-depth app",
+    text: "Google Calendar got a bit too hard to manage, mostly for my aging parents. This app is perfect for our scheduling. It has a simple and intuitive UI, so my parents got used to it easily. Being able to manage multiple families also allows me to set scheduling with my friend groups! Kudos to the developers and will be using this app from now on.",
+    name: "willoo98", source: "App Store", stars: 5, lang: "en", date: "2026-10-02" },
+  { title: "Erstaunlich gut!",
+    text: "Auf der Suche nach einer App, mit der ich unsere Familien-Orga mit Mann und drei Kindern unter einen Hut bekomme, bin ich auf diese App gestoßen. Nachdem ich mir drei andere bekannte Apps runtergeladen habe, aber nicht fand, was ich suchte, war ich umso überraschter, dass die Funktionen hier echt gut sind. … Echt durchdacht!",
+    name: "Kathii19866", source: "App Store", stars: 5, lang: "de", date: "2026-10-26" },
+  { title: "Skvělá app",
+    text: "Skvělá aplikace pro rodinu, sdílení úkolů, nákupů, přiřazování kdo/co, sdílený kalendář. Teprve si zvykáme, ale už teď jsem moc spokojený. Doporučuji stáhnout",
+    name: "Cordis23", source: "App Store", stars: 5, lang: "cs", date: "2026-10-01" },
+  { text: "Genau das, was ich gesucht habe! Alles was man braucht, um als Familie den Überblick zu behalten und sich den Alltag zu erleichtern. Außerdem ein fantastischer Support, der Fragen sehr zügig beantwortet und Wünsche umsetzt!",
+    name: "Google Play user", source: "Google Play", stars: 5, lang: "de", date: "2026-10-30" },
+  { title: "Great app",
+    text: "This app has everything I need to create to-do’s, family meal plans and more. Love the features. No fluff.",
+    name: "agranger3722", source: "App Store", stars: 5, lang: "en", date: "2026-09-16" },
+  { text: "Bisher sehr zufrieden. Es läuft alles rund und lässt sich intuitiv bedienen. Vorallem die Einkaufsliste ist Klasse.",
+    name: "Marc A.", source: "Google Play", stars: 5, lang: "de", date: "2026-10-19" },
+];
 
 /**
  * The home page (claude-prompts/2026-09-28/bevel-mock/index.html): the drawing

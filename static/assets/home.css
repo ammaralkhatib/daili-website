@@ -512,6 +512,7 @@ html.lenis,html.lenis body{height:auto}
 .home .rv .st svg{width:16px;height:16px}
 .home .rv b{display:block;font-size:16px;margin-top:12px;letter-spacing:-.01em}
 .home .rv .who{font-size:12.5px;color:var(--ink3);margin-top:3px}
+.home .rv .st+.who{margin-top:12px}
 .home .rv p{font-size:14.5px;line-height:1.5;color:var(--ink2);margin-top:12px}
 
 /* ---------- final ---------- */
