@@ -309,7 +309,11 @@
       "h2b": "dla prawdziwego życia rodzinnego",
       "sub": "Zaprojektowane i zbudowane w Tyrolu, w Austrii — na codzienny chaos zabieganych rodzin."
     },
-    "final": {
+    "reviews": {
+      "translated": "Tłumaczenie z języka: {language}",
+      "original": "Pokaż oryginał",
+      "anonymous": "Użytkownik Google Play"
+    },    "final": {
       "h2": "Zacznij, kiedy chcesz",
       "sub": "Zacznij od jednej listy. Kalendarz dodasz, kiedy przyjdzie pora. Daili rośnie razem z rodziną.",
       "web": "Otwórz w przeglądarce"

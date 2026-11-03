@@ -309,7 +309,11 @@
       "h2b": "oikeaa perhearkea varten",
       "sub": "Suunniteltu ja rakennettu Tirolissa, Itävallassa, kiireisten perheiden arjen kaaokseen."
     },
-    "final": {
+    "reviews": {
+      "translated": "Käännetty, alkukieli: {language}",
+      "original": "Näytä alkuperäinen",
+      "anonymous": "Google Play -käyttäjä"
+    },    "final": {
       "h2": "Valmiina, kun te olette",
       "sub": "Aloita yhdellä listalla. Ota kalenteri mukaan, kun olet valmis. Daili kasvaa perheesi mukana.",
       "web": "Avaa selaimessa"

@@ -309,7 +309,11 @@
       "h2b": "voor het echte gezinsleven",
       "sub": "Ontworpen en gebouwd in Tirol, Oostenrijk, voor de dagelijkse chaos van drukke gezinnen."
     },
-    "final": {
+    "reviews": {
+      "translated": "Vertaald uit het {language}",
+      "original": "Origineel tonen",
+      "anonymous": "Google Play-gebruiker"
+    },    "final": {
       "h2": "Klaar als jij het bent",
       "sub": "Begin met één lijst. Neem de agenda erbij als je zover bent. Daili groeit mee met je gezin.",
       "web": "Openen in je browser"

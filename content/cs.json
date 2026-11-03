@@ -309,7 +309,11 @@
       "h2b": "pro skutečný rodinný život",
       "sub": "Navrženo a vyvinuto v Tyrolsku v Rakousku — pro každodenní chaos zaneprázdněných rodin."
     },
-    "final": {
+    "reviews": {
+      "translated": "Přeloženo z jazyka: {language}",
+      "original": "Zobrazit originál",
+      "anonymous": "Uživatel Google Play"
+    },    "final": {
       "h2": "Až budete připraveni",
       "sub": "Začněte jedním seznamem. Kalendář přidejte, až budete chtít. Daili roste s vaší rodinou.",
       "web": "Otevřít v prohlížeči"

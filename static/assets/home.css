@@ -505,7 +505,7 @@ html.lenis,html.lenis body{height:auto}
 .home .revs{padding:30px 0 40px}
 .home .revs .marq{margin-top:0}
 .home .marq-slow{animation-duration:80s}
-.home .rv{flex:none;width:340px;background:#F3F4EF;border-radius:22px;padding:22px 22px 24px;position:relative}
+.home .rv{flex:none;display:flex;flex-direction:column;width:340px;background:#F3F4EF;border-radius:22px;padding:22px 22px 24px;position:relative}
 .home .rv .st{display:flex;gap:2px;color:#E0A032}
 .home .rv .st .off{color:#D5DBD3}
 .home .rv .st span{display:flex}
@@ -514,6 +514,20 @@ html.lenis,html.lenis body{height:auto}
 .home .rv .who{font-size:12.5px;color:var(--ink3);margin-top:3px}
 .home .rv .st+.who{margin-top:12px}
 .home .rv p{font-size:14.5px;line-height:1.5;color:var(--ink2);margin-top:12px}
+/* A translated card (2026-11-03/003): one quiet line at the card's foot —
+   "Translated from Italian · Show original" — the summary of a <details>
+   that opens the reviewer's own words under it. The row stops while one is
+   open or anything in it has keyboard focus, so nobody is chased by it. */
+.home .rv-or{margin-top:auto;padding-top:14px}
+.home .rv-or summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:0 5px;min-height:24px;font-size:12.5px;line-height:1.4;color:var(--ink3);border-radius:6px}
+.home .rv-or summary::-webkit-details-marker{display:none}
+.home .rv-or summary:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
+.home .rv-sh{font-weight:600;color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.home .rv-or summary:hover .rv-sh{text-decoration-thickness:2px}
+.home .rv-og{margin-top:10px;padding-inline-start:12px;border-inline-start:2px solid #D5DBD3}
+.home .rv-og b{margin-top:0;font-size:15px}
+.home .rv-og p{margin-top:4px}
+.home .revs .marq:is(:has(details[open]),:focus-within) .marq-track{animation-play-state:paused}
 
 /* ---------- final ---------- */
 .home .final{padding:150px 0 0;overflow:hidden}

@@ -914,24 +914,51 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
 
   // ---- reviews: real ones only, and only from three up ----
   // A moving row of cards: five stars (the first `stars` filled), the title
-  // (App Store only — Google Play reviews have none, so no <b> line) and text
-  // in the review's own language, first name · source · date (in this page's
-  // date format). §15 matches every card back to REVIEWS.
+  // (App Store only — Google Play reviews have none, so no <b> line), first
+  // name · source · date (in this page's date format), the text.
+  // In the PAGE's language (2026-11-03/003): a review in another language
+  // shows its translation (content/reviews/<loc>.json, lang = the page's),
+  // then one quiet line "Translated from <language> · Show original" — a
+  // <details> whose summary opens the reviewer's own title + text (lang =
+  // the review's), exactly as in REVIEWS. A review in the page's language
+  // shows those words as they are, with no label and no <details>. A
+  // translation never shows without its label. Play's anonymous reviewer
+  // ('Google Play user') is named in the page's words. The aria-hidden copy
+  // (the marquee's loop) takes no keyboard focus: its summaries are
+  // tabindex="-1", still clickable. §15 checks every card against REVIEWS.
   let reviews = '';
   if (REVIEWS.length >= 3) {
     const date = new Intl.DateTimeFormat(loc, { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
-    const rv = REVIEWS.map((r) => {
-      for (const k of ['text', 'name', 'source', 'stars', 'lang', 'date']) {
+    const pageLang = new Intl.Locale(loc).language;
+    const langName = new Intl.DisplayNames([loc], { type: 'language' });
+    const trFile = path.join(ROOT, 'content', 'reviews', `${loc}.json`);
+    const translations = JSON.parse(fs.readFileSync(trFile, 'utf8'));
+    const card = (r, copy) => {
+      for (const k of ['id', 'text', 'name', 'source', 'stars', 'lang', 'date']) {
         if (!(k in r)) throw new Error(`REVIEWS entry ${JSON.stringify(r).slice(0, 60)} has no '${k}'`);
       }
-      if (!Number.isInteger(r.stars) || r.stars < 1 || r.stars > 5) throw new Error(`REVIEWS entry '${r.name}|${r.date}': stars must be 1..5, is ${r.stars}`);
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date)) throw new Error(`REVIEWS entry '${r.name}|${r.date}': date must be YYYY-MM-DD, is ${r.date}`);
+      if (!Number.isInteger(r.stars) || r.stars < 1 || r.stars > 5) throw new Error(`REVIEWS entry '${r.id}': stars must be 1..5, is ${r.stars}`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date)) throw new Error(`REVIEWS entry '${r.id}': date must be YYYY-MM-DD, is ${r.date}`);
       const stars = [0, 1, 2, 3, 4].map((i) => `<span class="${i < r.stars ? 'on' : 'off'}">${homeIcon('star')}</span>`).join('');
       const when = date.format(new Date(`${r.date}T12:00:00Z`));
-      const title = r.title ? `<b lang="${e(r.lang)}">${e(r.title)}</b>` : '';
-      return `<article class="rv" data-review="${e(`${r.name}|${r.date}`)}"><div class="st" role="img" aria-label="${num(r.stars)}/${num(5)}">${stars}</div>${title}<div class="who"><span lang="${e(r.lang)}">${e(r.name)}</span> · ${e(r.source)} · <time datetime="${r.date}">${e(when)}</time></div><p lang="${e(r.lang)}">${e(r.text)}</p></article>`;
-    }).join('');
-    reviews = `  <section class="revs" id="reviews"><div class="marq"><div class="marq-track marq-slow"><div class="marq-set">${rv}</div><div class="marq-set" aria-hidden="true">${rv}</div></div></div></section>\n`;
+      const anon = r.name === 'Google Play user';
+      const who = `<div class="who"><span lang="${e(anon ? loc : r.lang)}">${e(anon ? h('home.reviews.anonymous') : r.name)}</span> · ${e(r.source)} · <time datetime="${r.date}">${e(when)}</time></div>`;
+      const head = `<article class="rv" data-review="${e(r.id)}"><div class="st" role="img" aria-label="${num(r.stars)}/${num(5)}">${stars}</div>`;
+      if (r.lang === pageLang) {
+        const title = r.title ? `<b lang="${e(r.lang)}">${e(r.title)}</b>` : '';
+        return `${head}${title}${who}<p lang="${e(r.lang)}">${e(r.text)}</p></article>`;
+      }
+      // check-reviews.mjs guarantees the entry and its fields; this is the
+      // build's own refusal to show a review untranslated or unlabelled.
+      const t = translations[r.id];
+      if (!t || !t.text || Boolean(t.title) !== Boolean(r.title)) throw new Error(`content/reviews/${loc}.json: '${r.id}' needs ${r.title ? 'title + text' : 'text'} (run tools/check-reviews.mjs)`);
+      const label = h('home.reviews.translated').replace('{language}', langName.of(r.lang));
+      const title = r.title ? `<b lang="${e(loc)}">${e(t.title)}</b>` : '';
+      const orig = `${r.title ? `<b lang="${e(r.lang)}">${e(r.title)}</b>` : ''}<p lang="${e(r.lang)}">${e(r.text)}</p>`;
+      return `${head}${title}${who}<p lang="${e(loc)}">${e(t.text)}</p><details class="rv-or"><summary${copy ? ' tabindex="-1"' : ''}><span class="rv-tr">${e(label)}</span><span aria-hidden="true">·</span><span class="rv-sh">${e(h('home.reviews.original'))}</span></summary><div class="rv-og" dir="auto">${orig}</div></details></article>`;
+    };
+    const set = (copy) => REVIEWS.map((r) => card(r, copy)).join('');
+    reviews = `  <section class="revs" id="reviews"><div class="marq"><div class="marq-track marq-slow"><div class="marq-set">${set(false)}</div><div class="marq-set" aria-hidden="true">${set(true)}</div></div></div></section>\n`;
   }
 
   // ---- the flat-lay ----

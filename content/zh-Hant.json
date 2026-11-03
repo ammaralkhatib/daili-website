@@ -309,7 +309,11 @@
       "h2b": "為真實的家庭生活",
       "sub": "在奧地利提洛爾設計與開發，為忙碌家庭每天的手忙腳亂而生。"
     },
-    "final": {
+    "reviews": {
+      "translated": "譯自{language}",
+      "original": "查看原文",
+      "anonymous": "Google Play 使用者"
+    },    "final": {
       "h2": "隨時等你開始",
       "sub": "先從一份清單開始，準備好了再加上行事曆。Daili 陪著你的家庭一起成長。",
       "web": "在瀏覽器中開啟"

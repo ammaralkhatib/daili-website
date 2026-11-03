@@ -353,7 +353,15 @@
       "h2b": "for real family life",
       "sub": "Designed and built in Tirol, Austria, for the everyday chaos of busy families."
     },
-    "final": {
+    "reviews": {
+      "@reviews": { "description": "The real store reviews row. Each card shows the review translated into this page's language, with one small line under it: translated + \" · \" + original." },
+      "@translated": { "description": "Label on a translated review card. {language} is filled by the build with the review's language name as Intl.DisplayNames gives it for this locale (nominative, e.g. Italian, English, German, Czech) and must appear exactly once — word it so it is grammatical with any language name." },
+      "translated": "Translated from {language}",
+      "@original": { "description": "The tap target next to the label: opens the reviewer's own words in their language. A short link-like phrase." },
+      "original": "Show original",
+      "@anonymous": { "description": "Shown as the reviewer's name when Google Play shows the review as anonymous — the words Google Play uses for that in this language. Keep \"Google Play\" in Latin letters." },
+      "anonymous": "Google Play user"
+    },    "final": {
       "@final": { "description": "Last call-to-action section above the FAQ/footer: headline and one line." },
       "h2": "Ready when you are",
       "sub": "Start with one list. Add the calendar when you're ready. Daili grows with your family.",

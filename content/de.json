@@ -309,7 +309,11 @@
       "h2b": "für echtes Familienleben",
       "sub": "Entworfen und gebaut in Tirol, Österreich, für das tägliche Chaos vielbeschäftigter Familien."
     },
-    "final": {
+    "reviews": {
+      "translated": "Übersetzt aus: {language}",
+      "original": "Original anzeigen",
+      "anonymous": "Google Play-Nutzer"
+    },    "final": {
       "h2": "Bereit, wenn ihr es seid",
       "sub": "Fangt mit einer Liste an. Nehmt den Kalender dazu, wenn ihr so weit seid. Daili wächst mit eurer Familie.",
       "web": "Im Browser öffnen"

@@ -22,6 +22,7 @@ one-line copy change under a 20-file diff.
 |---|---|
 | `site.config.mjs` | Locales, endonyms, RTL set, store URLs, page manifest, feature/gallery/comparison structure. **The one file you edit to add a language.** |
 | `content/<loc>.json` | Every translatable string. `en.json` is the source of truth and carries the `@`-descriptions. |
+| `content/reviews/<loc>.json` | The home page's store reviews (`REVIEWS` in `site.config.mjs`) translated into each page language, keyed by review `id`. **Adding a review** = a new `REVIEWS` entry with a new `id` + its translation in every `content/reviews/<loc>.json` whose language differs from the review's; `check-reviews.mjs` names any that are missing. |
 | `templates/` | The page shells. `{{ }}` escapes, `{{{ }}}` does not, `{{# }}` loops, `{{? }}` conditionals, `{{> }}` includes. |
 | `legal/` | Privacy, Terms and Impressum bodies. Privacy and Terms exist in all 23 locales (`privacy.<loc>.html`, `terms.<loc>.html`); English is the binding version and every translation says so. German keeps its own filenames (`datenschutz.de.html`, `nutzungsbedingungen.de.html`) because it is an authoritative version, not a translation. Impressum stays German-only. |
 | `static/` | Copied verbatim into `dist/` — CSS, JS, images, fonts, and `.htaccess`. |
@@ -32,7 +33,7 @@ one-line copy change under a 20-file diff.
 
 ## The guards
 
-The build is `check-content → check-legal → check-help → test-check-help → build →
+The build is `check-content → check-reviews → check-legal → check-help → test-check-help → build →
 check-build → test-detector`, chained with
 `&&`, so nothing broken can reach `deploy.sh`.
 

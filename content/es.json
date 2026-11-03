@@ -309,7 +309,11 @@
       "h2b": "para la vida real en familia",
       "sub": "Diseñado y creado en el Tirol, Austria, para el caos diario de las familias con mil cosas."
     },
-    "final": {
+    "reviews": {
+      "translated": "Traducido del {language}",
+      "original": "Ver original",
+      "anonymous": "Usuario de Google Play"
+    },    "final": {
       "h2": "Listo cuando tú lo estés",
       "sub": "Empieza con una lista. Añade el calendario cuando te apetezca. Daili crece con tu familia.",
       "web": "Abrir en el navegador"

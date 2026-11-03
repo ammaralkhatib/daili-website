@@ -309,7 +309,11 @@
       "h2b": "pre skutočný rodinný život",
       "sub": "Navrhnuté a vyvinuté v Tirolsku v Rakúsku — pre každodenný chaos zaneprázdnených rodín."
     },
-    "final": {
+    "reviews": {
+      "translated": "Preložené z jazyka: {language}",
+      "original": "Zobraziť originál",
+      "anonymous": "Používateľ Google Play"
+    },    "final": {
       "h2": "Začni, keď budeš chcieť",
       "sub": "Začni jedným zoznamom. Kalendár pridáš, keď príde čas. Daili rastie s tvojou rodinou.",
       "web": "Otvoriť v prehliadači"

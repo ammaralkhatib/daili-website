@@ -309,7 +309,11 @@
       "h2b": "untuk kehidupan keluarga yang nyata",
       "sub": "Dirancang dan dibuat di Tirol, Austria, untuk riuhnya keseharian keluarga yang sibuk."
     },
-    "final": {
+    "reviews": {
+      "translated": "Diterjemahkan dari bahasa {language}",
+      "original": "Lihat versi asli",
+      "anonymous": "Pengguna Google Play"
+    },    "final": {
       "h2": "Siap kapan pun kamu siap",
       "sub": "Mulai dengan satu daftar. Tambahkan kalender saat kamu siap. Daili tumbuh bersama keluargamu.",
       "web": "Buka di browser"

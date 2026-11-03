@@ -309,7 +309,11 @@
       "h2b": "pentru viața reală de familie",
       "sub": "Gândit și construit în Tirol, Austria, pentru haosul de zi cu zi al familiilor ocupate."
     },
-    "final": {
+    "reviews": {
+      "translated": "Tradus din {language}",
+      "original": "Arată originalul",
+      "anonymous": "Utilizator Google Play"
+    },    "final": {
       "h2": "Gata când ești și tu",
       "sub": "Începe cu o listă. Adaugă calendarul când ești pregătit. Daili crește odată cu familia ta.",
       "web": "Deschide în browser"

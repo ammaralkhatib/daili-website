@@ -309,7 +309,11 @@
       "h2b": "para a vida real em família",
       "sub": "Criado e desenvolvido no Tirol, Áustria, para o caos do dia a dia de famílias ocupadas."
     },
-    "final": {
+    "reviews": {
+      "translated": "Traduzido do {language}",
+      "original": "Ver original",
+      "anonymous": "Usuário do Google Play"
+    },    "final": {
       "h2": "Pronto quando você estiver",
       "sub": "Comece com uma lista. Adicione o calendário quando quiser. O Daili cresce com a sua família.",
       "web": "Abrir no navegador"

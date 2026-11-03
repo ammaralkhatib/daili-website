@@ -664,9 +664,15 @@ for (const loc of LOCALES) {
 //   - the member number, formatted for the page's locale, and no {count}
 //     anywhere in dist/;
 //   - with fewer than 3 REVIEWS no reviews section at all; with 3+ every
-//     card is one REVIEWS entry, each once, in order, matched by [title or '',
-//     text] (a card with no title has no <b>); the words "Placeholder" and
-//     "Sample" nowhere in dist/ (any text file);
+//     card is one REVIEWS entry (by id), each once, in order, its ORIGINAL
+//     [title or '', text] exactly REVIEWS' — in its <details> on a
+//     translated card, as the main words otherwise (a card with no title has
+//     no <b>); a card shows a translation ⇔ the review's language is not the
+//     page's ⇔ it has the "Translated from <language>" label and the
+//     <details> with the original; translated words carry lang=<page locale>,
+//     original words the review's lang; the aria-hidden copy is the same
+//     cards with every <summary> tabindex="-1" (2026-11-03/003); the words
+//     "Placeholder" and "Sample" nowhere in dist/ (any text file);
 //   - round 4: the hero's note pills sit above the headline, then the lead,
 //     then the buttons; one flow <video> per FLOW_STEPS entry with a video:,
 //     muted, playsinline, preload="none", never autoplay, its mp4 (≤ 1.6 MB)
@@ -708,6 +714,8 @@ for (const loc of LOCALES) {
   const videoRefs = new Set();
   const unescapeHtml = (s) => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
+  // home.reviews.translated per locale, for the cards' "Translated from" label.
+  const sitesTranslated = Object.fromEntries(locs.map((l) => [l, JSON.parse(read(path.join(ROOT, 'content', `${l}.json`)))?.home?.reviews?.translated]));
   const landingOuts = new Set(locs.map((l) => landing.out(l)));
   for (const loc of locs) {
     const file = path.join(DIST, landing.out(loc));
@@ -806,12 +814,66 @@ for (const loc of LOCALES) {
       fail(out, `has reviews markup but REVIEWS has ${REVIEWS.length} entries — the section renders only from 3 real ones`);
     }
     if (withReviews) {
-      const revSet = (sectionAt(html, 'id="reviews"').match(/<div class="marq-set">([\s\S]*?)<\/div><div class="marq-set" aria-hidden/) || [, ''])[1];
-      // The shown <b> title, or '' when the card has none (Google Play reviews).
-      const shown = [...revSet.matchAll(/<article class="rv" data-review="[^"]*"><div class="st"[^>]*>[\s\S]*?<\/div>(?:<b lang="[^"]*">([^<]*)<\/b>)?<div class="who">[\s\S]*?<p lang="[^"]*">([^<]*)<\/p><\/article>/g)].map((m) => [unescapeHtml(m[1] || ''), unescapeHtml(m[2])]);
+      const revSec = sectionAt(html, 'id="reviews"');
+      const sets = revSec.match(/<div class="marq-set">([\s\S]*?)<\/div><div class="marq-set" aria-hidden="true">([\s\S]*?)<\/div><\/div><\/div>$/) || [, '', ''];
+      const [, revSet, copySet] = sets;
+      const pageLang = new Intl.Locale(loc).language;
+      // One card's parts: main = before its <details>, og = inside .rv-og.
+      const parse = (c) => {
+        const at = c.indexOf('<details');
+        const main = at === -1 ? c : c.slice(0, at);
+        const det = at === -1 ? '' : c.slice(at);
+        const tp = (s) => {
+          const b = s.match(/<b lang="([^"]*)">([^<]*)<\/b>/);
+          const p = s.match(/<p lang="([^"]*)">([^<]*)<\/p>/);
+          return { title: b ? unescapeHtml(b[2]) : '', titleLang: b ? b[1] : null, text: p ? unescapeHtml(p[2]) : null, lang: p ? p[1] : null };
+        };
+        const ogHtml = (det.match(/<div class="rv-og" dir="auto">([\s\S]*?)<\/div><\/details>/) || [])[1];
+        return {
+          id: (c.match(/^ data-review="([^"]*)"/) || [])[1],
+          main: tp(main.replace(/<div class="who">[\s\S]*?<\/div>/, (w) => w.replace(/<[^>]+>/g, ''))),
+          label: (c.match(/<span class="rv-tr">([^<]*)<\/span>/) || [])[1],
+          details: count(c, '<details'),
+          og: ogHtml === undefined ? null : tp(ogHtml),
+        };
+      };
+      const cards = revSet.split('<article class="rv"').slice(1).map(parse);
+      // d. every card's ORIGINAL words (in its <details>, or its main text on
+      //    an untranslated card) are exactly REVIEWS', in order.
+      const originals = cards.map((c) => (c.og ? [c.og.title, c.og.text] : [c.main.title, c.main.text]));
       const want = REVIEWS.map((r) => [r.title || '', r.text]);
-      if (JSON.stringify(shown) !== JSON.stringify(want)) {
-        fail(out, `the reviews row shows ${shown.length} card(s) that are not exactly REVIEWS' ${want.length}, in order — only real reviews from site.config.mjs, never invented ones`);
+      if (cards.length !== REVIEWS.length || cards.some((c, i) => c.id !== REVIEWS[i].id) || JSON.stringify(originals) !== JSON.stringify(want)) {
+        fail(out, `the reviews row's ${cards.length} card(s) do not carry exactly REVIEWS' ${want.length} reviews' original words, in order — real words only, never edited or invented`);
+      }
+      cards.forEach((c, i) => {
+        const r = REVIEWS[i];
+        if (!r) return;
+        const tag = `review card '${r.id}'`;
+        const translated = c.main.text !== r.text || c.main.title !== (r.title || '');
+        const labelled = c.label !== undefined;
+        // e. a translated text ⇔ the "Translated from …" label ⇔ the <details>
+        //    with the original — and only when the languages differ.
+        if (translated !== labelled || labelled !== (c.details === 1 && c.og !== null)) {
+          fail(out, `${tag}: ${translated ? 'shows a translation' : 'shows the original'} but ${labelled ? 'has' : 'has no'} "Translated from" label and ${c.details} <details> — a translation never without its label and the original; no label on an original card`);
+        }
+        if (translated !== (r.lang !== pageLang)) fail(out, `${tag}: is ${translated ? 'translated' : 'untranslated'}, but the review is ${r.lang} and the page ${pageLang}`);
+        if (labelled) {
+          const wantLabel = (sitesTranslated[loc] || '').replace('{language}', new Intl.DisplayNames([loc], { type: 'language' }).of(r.lang));
+          if (unescapeHtml(c.label) !== wantLabel) fail(out, `${tag}: label "${c.label}", expected "${wantLabel}"`);
+        }
+        // f. translated words carry the page's lang, the original the review's.
+        if (translated) {
+          if (c.main.lang !== loc || (r.title && c.main.titleLang !== loc)) fail(out, `${tag}: translated words have lang="${c.main.lang}"${r.title ? `/"${c.main.titleLang}"` : ''}, expected the page's "${loc}"`);
+          if (c.og && (c.og.lang !== r.lang || (r.title && c.og.titleLang !== r.lang))) fail(out, `${tag}: original words have lang="${c.og.lang}", expected the review's "${r.lang}"`);
+        } else if (c.main.lang !== r.lang || (r.title && c.main.titleLang !== r.lang)) {
+          fail(out, `${tag}: original words have lang="${c.main.lang}", expected the review's "${r.lang}"`);
+        }
+      });
+      // The aria-hidden copy is the same row, but none of its summaries takes
+      // keyboard focus; the visible set's all do.
+      if (copySet.replace(/<summary tabindex="-1">/g, '<summary>') !== revSet) fail(out, 'the reviews row\'s aria-hidden copy is not the same cards as the visible set');
+      if (count(copySet, '<summary') !== count(copySet, '<summary tabindex="-1">') || /<summary [^>]/.test(revSet)) {
+        fail(out, 'a <summary> in the aria-hidden reviews copy can take keyboard focus (needs tabindex="-1"), or one in the visible set cannot');
       }
     }
 

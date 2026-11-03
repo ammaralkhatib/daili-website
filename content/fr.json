@@ -309,7 +309,11 @@
       "h2b": "pour la vraie vie de famille",
       "sub": "Conçu et développé au Tyrol, en Autriche, pour le chaos quotidien des familles bien occupées."
     },
-    "final": {
+    "reviews": {
+      "translated": "Traduit, langue d’origine : {language}",
+      "original": "Afficher l’original",
+      "anonymous": "Utilisateur de Google Play"
+    },    "final": {
       "h2": "Prêt quand vous l'êtes",
       "sub": "Commencez par une liste. Ajoutez l'agenda quand vous voulez. Daili grandit avec votre famille.",
       "web": "Ouvrir dans le navigateur"

@@ -309,7 +309,11 @@
       "h2b": "for ekte familieliv",
       "sub": "Designet og utviklet i Tirol i Østerrike, for hverdagskaoset i travle familier."
     },
-    "final": {
+    "reviews": {
+      "translated": "Oversatt fra {language}",
+      "original": "Vis original",
+      "anonymous": "Google Play-bruker"
+    },    "final": {
       "h2": "Klar når dere er det",
       "sub": "Start med én liste. Ta i bruk kalenderen når dere er klare. Daili vokser med familien.",
       "web": "Åpne i nettleseren"

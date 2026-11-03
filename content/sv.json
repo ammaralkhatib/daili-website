@@ -309,7 +309,11 @@
       "h2b": "för riktigt familjeliv",
       "sub": "Designad och byggd i Tyrolen i Österrike, för vardagskaoset i upptagna familjer."
     },
-    "final": {
+    "reviews": {
+      "translated": "Översatt från {language}",
+      "original": "Visa original",
+      "anonymous": "Google Play-användare"
+    },    "final": {
       "h2": "Redo när ni är",
       "sub": "Börja med en lista. Lägg till kalendern när ni är redo. Daili växer med er familj.",
       "web": "Öppna i webbläsaren"

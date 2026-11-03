@@ -309,7 +309,11 @@
       "h2b": "per la vera vita di famiglia",
       "sub": "Progettato e sviluppato in Tirolo, Austria, per il caos quotidiano delle famiglie indaffarate."
     },
-    "final": {
+    "reviews": {
+      "translated": "Tradotto, originale in {language}",
+      "original": "Mostra originale",
+      "anonymous": "Utente Google Play"
+    },    "final": {
       "h2": "Pronti quando lo sei tu",
       "sub": "Inizia con una lista. Aggiungi il calendario quando vuoi. Daili cresce con la tua famiglia.",
       "web": "Apri nel browser"

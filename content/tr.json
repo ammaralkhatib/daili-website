@@ -309,7 +309,11 @@
       "h2b": "gerçek aile hayatı için",
       "sub": "Avusturya'nın Tirol bölgesinde, yoğun ailelerin gündelik koşturmacası için tasarlandı ve geliştirildi."
     },
-    "final": {
+    "reviews": {
+      "translated": "Çevrildi, orijinal dil: {language}",
+      "original": "Orijinali göster",
+      "anonymous": "Google Play kullanıcısı"
+    },    "final": {
       "h2": "Siz hazır olduğunuzda",
       "sub": "Tek bir listeyle başlayın. Hazır olunca takvimi ekleyin. Daili ailenizle birlikte büyür.",
       "web": "Tarayıcıda aç"

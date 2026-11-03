@@ -309,7 +309,11 @@
       "h2b": "til det virkelige familieliv",
       "sub": "Designet og bygget i Tirol, Østrig, til travle familiers hverdagskaos."
     },
-    "final": {
+    "reviews": {
+      "translated": "Oversat fra {language}",
+      "original": "Vis original",
+      "anonymous": "Google Play-bruger"
+    },    "final": {
       "h2": "Klar, når du er",
       "sub": "Start med én liste. Tilføj kalenderen, når du er klar. Daili vokser med din familie.",
       "web": "Åbn i browseren"
