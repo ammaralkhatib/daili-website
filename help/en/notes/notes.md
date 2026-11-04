@@ -10,7 +10,7 @@ since: 1.7.0
 updated: 2026-11-05
 media: notes-list
 order: 1
-related: notes-pictures-voice, notes-find, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
+related: notes-pictures-voice, notes-find, meals-share-sheet, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
 tipTitle: Share any link to daili to keep it
 tipBody: Share a video, post or page from any app to daili and it becomes a note — private unless you share it.
 tipPriority: 45

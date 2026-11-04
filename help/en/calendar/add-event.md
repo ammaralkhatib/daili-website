@@ -10,7 +10,7 @@ since: 1.3.0
 updated: 2026-09-30
 media: calendar-add-event
 order: 2
-related: calendar-repeating, calendar-reminders, calendar-private, calendar-photo
+related: calendar-repeating, calendar-reminders, calendar-private, calendar-photo, meals-share-sheet
 checklist: 2
 checklistDoneIf: hasEvent
 ---
