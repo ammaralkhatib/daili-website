@@ -5,7 +5,7 @@ summary: Okul mektubunun, davetiyenin ya da el ilanının fotoğrafını çek �
 keywords: fotoğraf, tara, mektup, davetiye, el ilanı, tarihler, yapay zekâ, kamera, okul, fotoğraf oku
 tipTitle: Okul mektubunu etkinliklere dönüştür
 tipBody: Yeni etkinlik ekranında tarama simgesine dokun, mektubun fotoğrafını çek, tarihleri daili doldursun.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Tarihler kâğıtta mı? **Yeni etkinlik** ekranındaki tarama simgesi onları okur.
 
@@ -19,6 +19,6 @@ Tarihler kâğıtta mı? **Yeni etkinlik** ekranındaki tarama simgesi onları o
 
 En iyi basılı yazıyla çalışır, el yazısıyla daha az. PDF için sayfanın fotoğrafını çek.
 
-> Note: Fotoğraf, konum gibi kamera bilgileri olmadan okunmak için Google'ın yapay zekâsına gönderilir, sonra silinir. daili önce sana sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
+> Note: Yapay zekâ yetişkinler içindir (18+); daili bir kez sorar. Fotoğraf, konum gibi kamera bilgileri olmadan okunmak için Google'ın yapay zekâsına gönderilir, sonra silinir. daili önce sana sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
 
 > Note: Her fotoğraf okuma bir yapay zekâ işlemi kullanır. Her aile ayda 3 ücretsiz yapay zekâ işlemi alır; Daili Plus 30 verir.

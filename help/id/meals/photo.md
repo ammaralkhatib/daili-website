@@ -5,7 +5,7 @@ summary: Foto halaman buku masak, kartu tulisan tangan, atau tangkapan layar —
 keywords: foto, kamera, buku masak, tulisan tangan, tangkapan layar, pindai resep, ai, simpan resep, gambar
 tipTitle: Kartu resep nenek, tersimpan dalam hitungan detik
 tipBody: Foto halaman buku masak atau kartu tulisan tangan, dan daili menuliskan resepnya untuk Anda.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Punya resep di kertas atau di tangkapan layar? daili mengetikkannya untuk Anda.
 
@@ -16,8 +16,8 @@ Punya resep di kertas atau di tangkapan layar? daili mengetikkannya untuk Anda.
 3. Foto dari galeri ditampilkan dulu. Jika resepnya tajam dan terbaca, ketuk **Baca foto ini**.
 4. Formulir **Resep baru** terbuka dan sudah terisi. Periksa takarannya, lalu ketuk **Buat**.
 
-Resep ditulis dalam bahasa ponsel Anda, apa pun bahasa halamannya. Teks cetak atau tulisan yang jelas paling bagus.
+Resep ditulis dalam bahasa daili, apa pun bahasa halamannya. Teks cetak atau tulisan yang jelas paling bagus.
 
-> Note: Foto dikirim ke AI Google untuk dibaca, lalu dihapus, tanpa data kamera seperti lokasi. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
+> Note: AI khusus dewasa (18+); daili bertanya sekali. Foto dikirim ke AI Google untuk dibaca, lalu dihapus, tanpa data kamera seperti lokasi. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
 
 > Note: Satu kali baca foto memakai satu aksi AI. Setiap keluarga mendapat 3 aksi AI gratis per bulan; Daili Plus memberi 30.

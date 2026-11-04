@@ -5,7 +5,7 @@ summary: Prends en photo une page de livre de cuisine, une fiche écrite à la m
 keywords: photo, appareil photo, livre de cuisine, écrit à la main, capture d'écran, scanner recette, ia, enregistrer recette, image
 tipTitle: La fiche recette de mamie, enregistrée en quelques secondes
 tipBody: Prends en photo une page de livre de cuisine ou une fiche écrite à la main, et daili écrit la recette pour toi.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Une recette sur papier ou dans une capture d'écran ? daili la recopie pour toi.
 
@@ -16,8 +16,8 @@ Une recette sur papier ou dans une capture d'écran ? daili la recopie pour toi.
 3. Une photo de la photothèque s'affiche d'abord. Si la recette est nette et lisible, touche **Lire cette photo**.
 4. Le formulaire **Nouvelle recette** s'ouvre déjà rempli. Vérifie les quantités, puis touche **Créer**.
 
-La recette sort dans la langue de ton téléphone, quelle que soit la langue de la page. Le texte imprimé ou bien écrit marche le mieux.
+La recette sort dans la langue de daili, quelle que soit la langue de la page. Le texte imprimé ou bien écrit marche le mieux.
 
-> Note: La photo est envoyée à l’IA de Google pour être lue, puis supprimée, sans les données de l’appareil photo comme le lieu. daili te demande d’abord, et **Paramètres** → **Fonctions IA (Google Gemini)** la désactive.
+> Note: L'IA est réservée aux adultes (18+) ; daili te le demande une fois. La photo est envoyée à l’IA de Google pour être lue, puis supprimée, sans les données de l’appareil photo comme le lieu. daili te demande d’abord, et **Paramètres** → **Fonctions IA (Google Gemini)** la désactive.
 
 > Note: Une lecture de photo utilise une action IA. Chaque famille a 3 actions IA gratuites par mois ; Daili Plus en donne 30.

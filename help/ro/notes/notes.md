@@ -5,7 +5,7 @@ summary: Scrie o notiță sau distribuie un link din orice aplicație. Notițele
 keywords: notiță, notiță rapidă, link, distribuie, listă de verificare, memento, șterse recent, rezumă, aldin, cursiv, titlu, formatare
 tipTitle: Trimite un link către daili ca să-l păstrezi
 tipBody: Distribuie un videoclip, o postare sau o pagină din orice aplicație către daili și devine o notiță — privată până o partajezi.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 O notiță are un **Titlu**, text sau amândouă, cu liste cu puncte și liste de verificare.
 
@@ -30,6 +30,6 @@ Notițele șterse așteaptă 30 de zile la **⋯** → **Șterse recent**.
 
 ![O notiță. Grupul Daili Plus cu cele două rânduri „Creează din asta un eveniment, o sarcină sau o listă de cumpărături” și „Rezumă” este încercuit.](notes-ai)
 
-La **Daili Plus**, într-o notiță, **Creează din asta un eveniment, o sarcină sau o listă de cumpărături** și **Rezumă** folosesc fiecare câte o acțiune AI.
+La **Daili Plus**, într-o notiță, **Creează din asta un eveniment, o sarcină sau o listă de cumpărături** și **Rezumă** folosesc fiecare câte o acțiune AI, pentru adulți (18+).
 
 > Note: Fără internet, notițele noi pleacă singure mai târziu.

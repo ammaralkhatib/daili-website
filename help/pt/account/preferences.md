@@ -2,8 +2,8 @@
 id: account-preferences
 title: Claro ou escuro, idioma, formato da hora, temperatura, vibração
 summary: Escolha o modo escuro, seu idioma, a hora em 12 ou 24 horas, °C ou °F, se o daili vibra e as funções de IA.
-keywords: modo escuro, tema, aparência, idioma, 24 horas, formato da hora, temperatura, celsius, fahrenheit, vibração, ia, gemini
-translatedFrom: 2026-10-30
+keywords: modo escuro, tema, aparência, idioma, 24 horas, formato da hora, temperatura, celsius, fahrenheit, vibração, ia, 18 anos ou mais
+translatedFrom: 2026-11-05
 ---
 Toque na sua foto no alto da tela inicial para abrir **Configurações**. Estas opções ficam em **Geral**.
 
@@ -11,11 +11,11 @@ Toque na sua foto no alto da tela inicial para abrir **Configurações**. Estas 
 
 1. **Idioma**: escolha um dos idiomas do daili, ou **Idioma do sistema** para seguir o celular.
 2. **Formato da hora**: **24 horas**, **12 horas** ou **Sistema** para seguir o celular.
-3. **Aparência**: **Claro**, **Escuro** ou **Sistema**. Em **Cor do app**, escolha **verde daili** ou **Minha cor**. A cor tinge botões, links e cartões.
+3. **Aparência**: **Claro**, **Escuro** ou **Sistema**. Em **Cor do app**, escolha **verde daili** ou **Minha cor**.
 4. **Vibração**: uma vibração curta quando algo é concluído, salvo ou excluído.
 5. **Tempo em Hoje**: o cartão do tempo no alto de **Hoje**.
-6. **Unidade de temperatura**: **Automática** segue a região do celular, ou escolha °C ou °F. O vento e a chuva mudam junto.
-7. **Funções de IA (Google Gemini)**: deixa a IA do Google ler suas fotos, links de vídeo e desejos de refeição. Desligado? O daili pergunta de novo na próxima vez.
+6. **Unidade de temperatura**: **Automática** segue a região do celular, ou escolha °C ou °F.
+7. **Funções de IA (Google Gemini)**: deixa a IA do Google ler suas fotos, links de vídeo e desejos de refeição. Desligado? O daili pergunta de novo na próxima vez. Só para adultos (18+); até você confirmar, **Tenho 18 anos ou mais** aparece embaixo.
 
 ![O cartão Geral. A linha Unidade de temperatura, em Automática, está circulada.](account-temperature)
 

@@ -3,14 +3,14 @@ id: meals-copy-week
 title: Kopiera förra veckans måltider
 summary: Gillade ni förra veckans meny? Kopiera den till den här veckan med ett tryck.
 keywords: kopiera, upprepa vecka, förra veckan, matsedel, meny, återanvända, samma måltider, duplicera
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-05
 ---
 Många familjer äter samma saker de flesta veckor. Kopiera dem i stället för att lägga till varje måltid igen.
 
-![Den övre delen av matsedeln. Kopieringsknappen bredvid kundvagnen är inringad.](meals-copy-week)
+![Fliken Planering. Kopiera förra veckan är den sista knappen i raden under veckan.](meals-plan-week)
 
 1. Tryck på **Matsedel** på startskärmen och gå till veckan du vill fylla.
-2. Tryck på kopieringsknappen högst upp (**Kopiera från förra veckan**). På en tom vecka kan du också trycka på knappen i mitten.
+2. Svep raden under veckan och tryck på **Kopiera förra veckan**.
 3. Om veckan redan har måltider trycker du på **Kopiera** för att bekräfta.
 
 Den kopierar måltiderna från veckan före den du tittar på.

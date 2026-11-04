@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Lisää muita kalentereita: puhelin, Google, linkit ja tiedostot
 summary: Näytä puhelimen kalenterit tai Google-kalenteri perheen tapahtumien vieressä, seuraa koulun kalenteria tai tuo tiedosto.
-keywords: puhelimen kalenteri, apple kalenteri, google-kalenteri, lisää kalenteri, tilaa, linkki, koulun kalenteri, työkalenteri, ics, kenelle kuuluu, kopioi dailiin
+keywords: puhelimen kalenteri, google-kalenteri, lisää kalenteri, tilaa, linkki, koulun kalenteri, työkalenteri, vain minä, muokkaa dailissa, linkitetty, päivitä
 tipTitle: Näe puhelimen kalenterit dailissa
 tipBody: Työ-, koulu- tai harrastuskalenterit voivat näkyä perheen tapahtumien vieressä.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Avaa **Kalenteri**, napauta ratasta ja sitten kohdan **Muut kalenterit** alla **Lisää kalenteri**.
-2. **Apple Kalenteri** (iPhone) tai **Puhelimen kalenterit** (Android): puhelimesi omat kalenterit.
-3. **Google-kalenteri**: kirjaudu sisään, napauta **Yhdistä** ja valitse sitten, kuka näkee minkäkin kalenterin.
-4. **Tilaa linkillä**: koulun tai seuran kalenteri, joka päivittyy itsestään. Vain ylläpitäjille. daili varoittaa, jos perheelläsi on se jo.
-5. **Tuo tiedosto (.ics)**: kopioi tapahtumat dailiin kerran.
+2. **Apple Kalenteri** (iPhone) tai **Puhelimen kalenterit** (Android): puhelimesi kalenterit.
+3. **Google-kalenteri**: napauta **Yhdistä**, kirjaudu sisään ja valitse sitten kalenterit. **Vain minä** pitää kalenterin yksityisenä.
+4. **Tilaa linkillä**: koulun tai työn kalenteri, kaikille (ylläpitäjät) tai **Vain minä**.
+5. **Tuo tiedosto (.ics)**: kopioi tapahtumat kerran.
 
-![Muokkaa kalenteria -paneeli linkitetylle kalenterille. Rivi Kenelle kuuluu, arvona Emma, on ympyröity.](calendar-other-calendars)
+![Lisää kalenteri (linkki), jossa ovat nimi, osoite ja väri. Vain minä -kytkin on ympyröity.](calendar-link-only-me)
 
-Jokaisella kalenterilla on kohta **Kenelle kuuluu**: tilatuilla linkeillä se on aluksi **Kaikki**, puhelimen ja Googlen kalentereilla sinä. Kalenterin tapahtumat saavat tuon henkilön värin, ja **Suodata** koskee niitä.
+Linkitetyn kalenterin kohta **Kenelle kuuluu** määrää sen värin ja henkilön valinnassa **Suodata**. Hae Google heti vetämällä alas tai valitsemalla **⋮** → **Päivitä nyt**.
 
-Muuta sitä napauttamalla puhelimen tai Googlen riviä, tai linkin kohdalla **⋮** → **Muokkaa**. **⋮** → **Poista** (Google: **Katkaise yhteys**) poistaa kalenterin.
+![Synkronoitu Luokkaretki linkitetystä Koulu-kalenterista. Muokkaa Dailissa on ympyröity.](calendar-linked-event)
 
-Näitä tapahtumia ei voi muuttaa täällä. Napauta tapahtumaa → **Kopioi Dailiin**, niin saat oman.
+Napauta tapahtumaa → **Muokkaa Dailissa**, niin voit lisätä henkilöitä, muistutuksia tai muistiinpanoja. Se pysyy linkitettynä (**Kalenterista Koulu**): uudet ajat, otsikot ja paikat päivittyvät itsestään. Muutitko sitä myös itse? **Käytä** tai **Pidä omani**. Poistettiinko se lähteestä? **Poista** tai **Pidä**. Linkitetyt tapahtumat eivät voi toistua.
 
-> Note: Puhelimen kalenterit ja tieto siitä, kenelle ne kuuluvat, pysyvät tässä puhelimessa: mitään ei ladata palvelimelle eikä näytetä perheellesi.
+> Note: Puhelimen kalenterit pysyvät tässä puhelimessa. **Muokkaa Dailissa** piilottaa puhelimen tapahtuman täällä, kunnes poistat omasi. Ei päivityksiä.

@@ -5,7 +5,7 @@ summary: Skriv en note, eller del et link fra en hvilken som helst app. Noter er
 keywords: note, hurtig note, link, del, tjekliste, påmindelse, nyligt slettet, opsummer, fed, kursiv, overskrift, formatering
 tipTitle: Del et link med daili for at gemme det
 tipBody: Del en video, et opslag eller en side fra en hvilken som helst app med daili – det bliver en note, privat indtil du deler den.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 En note er en **Titel**, tekst eller begge dele, med punktlister og tjeklister.
 
@@ -30,6 +30,6 @@ Slettede noter venter 30 dage under **⋯** → **Nyligt slettet**.
 
 ![En note. Gruppen Daili Plus med de to rækker "Lav en begivenhed, opgave eller indkøbsliste ud fra dette" og "Opsummer" er ringet ind.](notes-ai)
 
-Under **Daili Plus** i en note bruger **Lav en begivenhed, opgave eller indkøbsliste ud fra dette** og **Opsummer** hver én AI-handling.
+Under **Daili Plus** i en note bruger **Lav en begivenhed, opgave eller indkøbsliste ud fra dette** og **Opsummer** hver én AI-handling, for voksne (18+).
 
 > Note: Offline sender nye noter sig selv senere.

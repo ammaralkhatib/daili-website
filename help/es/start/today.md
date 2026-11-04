@@ -2,8 +2,8 @@
 id: start-today
 title: La pantalla Hoy
 summary: Todo lo que hay hoy, en una sola lista: eventos, tareas, compras y comidas.
-keywords: hoy, agenda, diario, resumen, qué hay hoy, horario, vence hoy, plan de hoy, tiempo
-translatedFrom: 2026-10-12
+keywords: hoy, agenda, diario, resumen, qué hay hoy, horario, vence hoy, esta noche, cena, tiempo
+translatedFrom: 2026-11-05
 ---
 Hoy muestra lo que tiene tu familia hoy, en una sola pantalla.
 
@@ -15,5 +15,7 @@ Hoy muestra lo que tiene tu familia hoy, en una sola pantalla.
 4. Vuelve atrás para regresar a la pantalla de inicio.
 
 Si el tiempo está activado, su tarjeta aparece arriba. Desliza hacia abajo para actualizarla, o tócala para abrir la pantalla **Tiempo**.
+
+En **Comidas de hoy**, **Esta noche** muestra la cena de hoy, con **Receta** si tiene una. ¿Aún no hay nada planificado? Toca una de las 3 comidas que más soléis comer para planificarla, o **Planificar la semana**.
 
 Las secciones vacías se quedan ocultas. En un día libre ves **Hoy no hay nada pendiente**.

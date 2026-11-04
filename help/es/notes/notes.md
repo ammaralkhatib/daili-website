@@ -5,7 +5,7 @@ summary: Escribe una nota o comparte un enlace desde cualquier app. Las notas so
 keywords: nota, nota rápida, enlace, compartir, lista de verificación, recordatorio, eliminadas recientemente, resumir, negrita, cursiva, título, formato
 tipTitle: Comparte un enlace con daili para guardarlo
 tipBody: Comparte un vídeo, una publicación o una página desde cualquier app con daili y se convierte en una nota, privada hasta que la compartas.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Una nota es un **Título**, un texto o las dos cosas, con listas con viñetas y listas de verificación.
 
@@ -30,6 +30,6 @@ Las notas eliminadas esperan 30 días en **⋯** → **Eliminadas recientemente*
 
 ![Una nota. El grupo Daili Plus con las dos filas "Crear un evento, una tarea o una lista de compras con esto" y "Resumir" está marcado con un círculo.](notes-ai)
 
-En una nota, en **Daili Plus**, **Crear un evento, una tarea o una lista de compras con esto** y **Resumir** usan una acción de IA cada una.
+En una nota, en **Daili Plus**, **Crear un evento, una tarea o una lista de compras con esto** y **Resumir** usan una acción de IA cada una, solo para adultos (18+).
 
 > Note: Sin conexión, las notas nuevas se envían solas más tarde.

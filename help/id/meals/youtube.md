@@ -5,19 +5,19 @@ summary: Tempelkan tautan video masak, dan daili menuliskan bahan dan langkahnya
 keywords: youtube, video, video resep, video masak, impor video, tautan, ai, simpan resep, shorts
 tipTitle: Ubah video YouTube jadi resep
 tipBody: Tempelkan tautan video masak, dan daili menuliskan bahan dan langkahnya untuk Anda.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-Melihat masakan enak di YouTube? daili bisa menuliskan resepnya untuk Anda.
+Melihat masakan enak di YouTube? daili menuliskan resepnya.
 
 ![Layar Resep dengan menu + terbuka. Dari video YouTube dilingkari.](meals-youtube)
 
 1. Salin tautan videonya di aplikasi YouTube (Bagikan → Salin link).
 2. Di Beranda, ketuk **Resep**, lalu **+**, lalu **Dari video YouTube**.
 3. Tempelkan tautannya di **Tautan YouTube**, atau ketuk **Tempel**. Lalu ketuk **Baca videonya**.
-4. daili membaca videonya — ini bisa memakan waktu hingga satu menit. Periksa apa yang ditemukan daili dan perbaiki yang kurang pas. Lalu ketuk **Simpan**.
+4. Periksa apa yang ditemukan daili, lalu ketuk **Simpan**.
 
-Kalau resepnya ada di deskripsi video, prosesnya cepat. Kalau tidak, daili menonton videonya.
+Resep ditulis dalam bahasa daili. Tanpa foto Anda sendiri, gambar videonya tampil di atas. Ketuk ▶ untuk menontonnya di YouTube. Untuk menyimpan gambar, tambahkan foto Anda sendiri.
 
-Resep ditulis dalam bahasa ponsel Anda. Pertama kali, daili bertanya dulu sebelum memakai AI Google (Gemini); **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
+Membaca video dengan AI khusus dewasa (18+); daili bertanya sekali. Siapa pun bisa mengimpor video yang deskripsinya menautkan ke halaman resep. Di app.daili.app, hanya video seperti itu yang bisa.
 
-> Note: Hanya video publik berdurasi hingga 25 menit yang bisa dipakai. Satu kali baca video memakai satu aksi AI. Setiap keluarga mendapat 3 aksi AI gratis per bulan; Daili Plus memberi 30.
+> Note: Hanya video publik berdurasi hingga 25 menit. Satu kali baca video dengan AI memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30. Resep dari tautan di deskripsi gratis.

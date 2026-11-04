@@ -3,14 +3,14 @@ id: meals-copy-week
 title: Geçen haftanın yemeklerini kopyala
 summary: Geçen haftanın menüsünü beğendin mi? Tek dokunuşla bu haftaya kopyala.
 keywords: kopyala, haftayı tekrarla, geçen hafta, yemek planı, menü, yeniden kullan, aynı yemekler, çoğalt
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-05
 ---
 Birçok aile çoğu hafta aynı şeyleri yer. Her yemeği yeniden eklemek yerine kopyala.
 
-![Yemek planının üst kısmı. Alışveriş sepetinin yanındaki kopyala düğmesi daire içine alınmış.](meals-copy-week)
+![Plan sekmesi. Geçen haftayı kopyala, haftanın altındaki satırdaki son düğme.](meals-plan-week)
 
 1. Ana ekranda **Yemek planı** kutucuğuna dokun ve doldurmak istediğin haftaya git.
-2. Üstteki kopyala düğmesine (**Geçen haftadan kopyala**) dokun. Boş bir haftada ortadaki düğmeye de dokunabilirsin.
+2. Haftanın altındaki satırı kaydır ve **Geçen haftayı kopyala** düğmesine dokun.
 3. Haftada zaten yemek varsa onaylamak için **Kopyala** düğmesine dokun.
 
 Baktığın haftadan bir önceki haftanın yemekleri kopyalanır.

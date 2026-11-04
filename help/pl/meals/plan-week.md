@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: Zaplanuj posiłki na tydzień
-summary: Wpisz śniadanie, obiad i kolację na tydzień rodziny, z twoich przepisów albo jako zwykły tekst.
-keywords: jadłospis, planer posiłków, menu na tydzień, kolacja, obiad, śniadanie, planowanie posiłków, co na obiad, menu, tydzień
-translatedFrom: 2026-09-27
+summary: Wpisz posiłki rodziny na tydzień jednym lub dwoma dotknięciami: z ostatnich posiłków, z przepisów albo pod nową nazwą.
+keywords: jadłospis, planer posiłków, menu na tydzień, kolacja, co na obiad, pracowity wieczór, kto gotuje, porcje, zamień, przenieś, ugotuj podwójnie
+translatedFrom: 2026-11-05
 ---
-Zdecyduj raz, co będzie na kolację, a cała rodzina to zobaczy.
+Zdecyduj raz, co będzie na kolację, a cała rodzina to widzi.
 
-![Jadłospis na jeden tydzień. Zakreślony jest + obok poniedziałku.](meals-plan-week)
+![Zakładka Plan z przyciskami Zaplanuj tydzień i Zakupy na tydzień, zaplanowanymi kolacjami i chipem pracowitego wieczoru w piątek. Zakreślony jest + przy poniedziałku.](meals-plan-week)
 
-1. Na ekranie głównym dotknij **Jadłospis**.
+1. Na ekranie głównym dotknij **Jadłospis**. Ekran **Posiłki** otwiera się na zakładce **Plan**, obok **Przepisy**.
 2. Dotknij **+** przy wybranym dniu.
-3. Pod **Posiłek** wybierz jeden, na przykład **Kolacja**.
-4. Wybierz **Przepis** i dotknij **Wybierz przepis**. Albo wybierz **Własny tekst** i wypełnij pole **Tytuł**, na przykład „Wieczór z pizzą”.
-5. Dotknij **Zapisz**.
+3. Dotknij ostatniego posiłku albo przepisu i już jest zaplanowany. Albo wpisz nową nazwę. Dotknij **Cofnij**, żeby to odwrócić.
+4. Dotknij zaplanowanego posiłku, żeby ustawić **Porcje**, **Kto gotuje** albo notatkę. Są tam też przyciski **Przenieś/zamień**, **Zmień danie** i **Usuń**.
 
-Strzałkami przechodzisz między tygodniami. Dotknij posiłku, żeby otworzyć jego przepis, edytować go albo usunąć.
+![Okno dodawania przy pustej kolacji z opcjami Resztki, Jemy na mieście i Na wynos oraz przełącznikiem Ostatnie | Wszystkie przepisy. Zakreślony jest chip Resztki.](meals-add-meal)
 
-Brak pomysłów? Iskierki u góry proszą daili o propozycję kolacji na każdy wolny wieczór. Zobacz **Niech Daili zaplanuje kolacje**.
+![Okno posiłku Lasagne babci z porcjami, osobą, która gotuje, notatką i akcjami. Zakreślony jest przycisk Ugotuj podwójnie.](meals-meal-sheet)
+
+Przesuń rząd pod tygodniem, żeby zobaczyć **Zaplanuj tydzień**, **Zakupy na tydzień** (gdy tydzień ma już posiłki) i **Skopiuj zeszły tydzień**.
+
+Chip przy dniu pokazuje wydarzenie z godziną w porze kolacji, z każdego kalendarza, który pokazuje daili. Tego dnia okno dodawania mówi „Pracowity wieczór, więc najpierw szybkie dania”.
+
+Ikona z suwakami na górze otwiera **Ustawienia posiłków**. Nowa rodzina zaczyna od pytania **Które posiłki planujesz?**

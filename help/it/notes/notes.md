@@ -5,7 +5,7 @@ summary: Scrivi una nota o condividi un link da qualsiasi app. Le note sono priv
 keywords: nota, nota veloce, link, condividi, lista di controllo, promemoria, eliminate di recente, riassumi, grassetto, corsivo, titolo, formattazione
 tipTitle: Condividi un link con daili per tenerlo
 tipBody: Condividi un video, un post o una pagina da qualsiasi app con daili: diventa una nota, privata finché non la condividi.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Una nota è un **Titolo**, del testo o entrambi, con elenchi puntati e liste di controllo.
 
@@ -30,6 +30,6 @@ Le note eliminate aspettano 30 giorni sotto **⋯** → **Eliminate di recente**
 
 ![Una nota. Il gruppo Daili Plus con le due righe «Creane un evento, un'attività o una lista della spesa» e «Riassumi» è cerchiato.](notes-ai)
 
-In una nota, sotto **Daili Plus**, **Creane un evento, un'attività o una lista della spesa** e **Riassumi** usano un’azione IA ciascuno.
+In una nota, sotto **Daili Plus**, **Creane un evento, un'attività o una lista della spesa** e **Riassumi** usano un’azione IA ciascuno, solo per adulti (18+).
 
 > Note: Senza internet, le nuove note partono da sole più tardi.

@@ -2,8 +2,8 @@
 id: start-today
 title: Layar Hari ini
 summary: Semua yang ada hari ini dalam satu daftar: acara, tugas, belanja, dan menu makan.
-keywords: hari ini, agenda, harian, ringkasan, ada apa hari ini, jadwal, jatuh tempo hari ini, rencana hari ini, cuaca
-translatedFrom: 2026-10-12
+keywords: hari ini, agenda, harian, ringkasan, ada apa hari ini, jadwal, jatuh tempo hari ini, malam ini, makan malam, cuaca
+translatedFrom: 2026-11-05
 ---
 Hari ini menampilkan semua agenda keluarga Anda hari ini, dalam satu layar.
 
@@ -15,5 +15,7 @@ Hari ini menampilkan semua agenda keluarga Anda hari ini, dalam satu layar.
 4. Kembali untuk pulang ke Beranda.
 
 Kalau cuaca menyala, kartunya ada di paling atas. Tarik ke bawah untuk memperbaruinya, atau ketuk untuk membuka layar **Cuaca**.
+
+Di bawah **Menu hari ini**, **Malam ini** menampilkan makan malam hari ini, dengan **Resep** kalau ada resepnya. Belum ada rencana? Ketuk salah satu dari 3 menu yang sering Anda makan untuk merencanakannya, atau **Rencanakan minggu ini**.
 
 Bagian yang kosong disembunyikan. Di hari yang bebas, Anda melihat **Tidak ada agenda hari ini**.

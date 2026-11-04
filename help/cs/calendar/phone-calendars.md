@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Přidat další kalendáře: z telefonu, Google, odkazy a soubory
 summary: Zobraz kalendáře z telefonu nebo Google Kalendář vedle rodinných událostí, sleduj školní kalendář nebo importuj soubor.
-keywords: kalendář v telefonu, kalendář apple, google kalendář, přidat kalendář, odebírat, odkaz, školní kalendář, pracovní kalendář, ics, komu patří, zkopírovat do daili
+keywords: kalendář v telefonu, google kalendář, přidat kalendář, odebírat, odkaz, školní kalendář, pracovní kalendář, jen já, upravit v daili, propojený, obnovit
 tipTitle: Kalendáře z telefonu v daili
 tipBody: Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle rodinných událostí.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Otevři **Kalendář**, klepni na ozubené kolečko a pak v sekci **Další kalendáře** na **Přidat kalendář**.
-2. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android): vlastní kalendáře tvého telefonu.
-3. **Google Kalendář**: přihlas se, klepni na **Propojit** a pak u každého kalendáře vyber, kdo ho uvidí.
-4. **Odebírat přes odkaz**: kalendář školy nebo klubu, který se sám aktualizuje. Jen pro správce. daili upozorní, pokud ho tvoje rodina už má.
+2. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android): kalendáře tvého telefonu.
+3. **Google Kalendář**: klepni na **Připojit**, přihlas se a vyber kalendáře. Přepínač **Jen já** nechá kalendář soukromý.
+4. **Odebírat přes odkaz**: kalendář školy nebo práce, pro všechny (správci) nebo **Jen já**.
 5. **Importovat soubor (.ics)**: jednou zkopíruje události do daili.
 
-![Panel Upravit kalendář u propojeného kalendáře. Zakroužkovaný je řádek Komu patří nastavený na Emma.](calendar-other-calendars)
+![Přidat kalendář (odkaz) s názvem, adresou a barvou. Zakroužkovaný je přepínač Jen já.](calendar-link-only-me)
 
-Každý kalendář má řádek **Komu patří**: odebírané odkazy začínají na **Všichni**, kalendáře z telefonu a Googlu na tobě. Jeho události dostanou barvu toho člověka a řídí se nastavením **Filtr**.
+U propojeného kalendáře nastaví **Komu patří** jeho barvu a osobu, podle které ho třídí **Filtr**. Google načteš hned stažením dolů, nebo přes **⋮** → **Obnovit teď**.
 
-Změníš to klepnutím na řádek telefonu nebo Googlu, u odkazu přes **⋮** → **Upravit**. **⋮** → **Odebrat** (u Googlu **Odpojit**) kalendář odebere.
+![Synchronizovaný Školní výlet z propojeného kalendáře Škola. Zakroužkované je Upravit v Daili.](calendar-linked-event)
 
-Tyto události tady změnit nejdou. Klepni na jednu → **Zkopírovat do Daili** a vytvoř si vlastní.
+Klepni na událost → **Upravit v Daili** a přidej lidi, připomenutí nebo poznámky. Zůstane propojená (**Z kalendáře Škola**): nové časy, názvy a místa přijdou samy. Taky tam máš svou změnu? **Použít** nebo **Nechat moje**. Smazaná ve zdroji? **Smazat** nebo **Nechat**. Propojené události se nemůžou opakovat.
 
-> Note: Kalendáře z telefonu, i to, komu patří, zůstávají v tomto telefonu: nic se nenahrává ani neukazuje rodině.
+> Note: Kalendáře z telefonu zůstávají v tomto telefonu. **Upravit v Daili** tady skryje událost z telefonu, dokud tu svou nesmažeš. Bez aktualizací.

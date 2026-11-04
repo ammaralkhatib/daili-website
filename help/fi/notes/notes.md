@@ -5,7 +5,7 @@ summary: Kirjoita muistiinpano tai jaa linkki mistä tahansa sovelluksesta. Muis
 keywords: muistiinpano, pikamuistiinpano, linkki, jaa, tarkistuslista, muistutus, äskettäin poistetut, tiivistä, lihavointi, kursiivi, otsikko, muotoilu
 tipTitle: Jaa linkki dailiin, niin se säilyy
 tipBody: Jaa video, julkaisu tai sivu mistä tahansa sovelluksesta dailiin, niin siitä tulee muistiinpano – yksityinen, kunnes jaat sen.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Muistiinpanossa on **Otsikko**, tekstiä tai molemmat, sekä luetteloita ja tarkistuslistoja.
 
@@ -30,6 +30,6 @@ Poistetut muistiinpanot odottavat 30 päivää kohdassa **⋯** → **Äskettäi
 
 ![Muistiinpano. Daili Plus -ryhmä ja sen kaksi riviä ”Tee tästä tapahtuma, tehtävä tai ostoslista” ja ”Tiivistä” on ympyröity.](notes-ai)
 
-Muistiinpanossa kohdan **Daili Plus** rivit **Tee tästä tapahtuma, tehtävä tai ostoslista** ja **Tiivistä** käyttävät kumpikin yhden tekoälytoiminnon.
+Muistiinpanossa kohdan **Daili Plus** rivit **Tee tästä tapahtuma, tehtävä tai ostoslista** ja **Tiivistä** ovat aikuisille (18+), ja kumpikin käyttää yhden tekoälytoiminnon.
 
 > Note: Ilman nettiä uudet muistiinpanot lähtevät myöhemmin itsestään.

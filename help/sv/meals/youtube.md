@@ -5,19 +5,19 @@ summary: Klistra in länken till en matlagningsvideo, så skriver daili ingredie
 keywords: youtube, video, receptvideo, matlagningsvideo, importera video, länk, ai, spara recept, shorts
 tipTitle: Gör ett recept av en YouTube-video
 tipBody: Klistra in länken till en matlagningsvideo, så skriver daili ingredienserna och stegen åt dig.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-Sett en rätt på YouTube? daili kan skriva receptet åt dig.
+Sett en rätt på YouTube? daili skriver receptet.
 
 ![Skärmen Recept med menyn + öppen. Från en YouTube-video är inringat.](meals-youtube)
 
 1. Kopiera videolänken i YouTube-appen (Dela → Kopiera länk).
 2. Tryck på **Recept** på startskärmen, sedan på **+** och på **Från en YouTube-video**.
 3. Klistra in länken under **YouTube-länk**, eller tryck på **Klistra in**. Tryck sedan på **Läs videon**.
-4. daili läser videon – det kan ta upp till en minut. Kontrollera det daili hittade och rätta det som inte stämmer. Tryck sedan på **Spara**.
+4. Kontrollera det daili hittade och tryck sedan på **Spara**.
 
-Om receptet finns i videons beskrivning går det snabbt. Annars tittar daili på videon.
+Receptet skrivs på dailis språk. Utan ett eget foto visas videons bild högst upp. Tryck på ▶ för att se videon på YouTube. Vill du behålla en bild lägger du till ett eget foto.
 
-Receptet skrivs på telefonens språk. Första gången frågar daili innan Googles AI (Gemini) används; **Inställningar** → **AI-funktioner (Google Gemini)** stänger av det.
+Att läsa en video med AI är för vuxna (18+); daili frågar en gång. Alla kan importera en video vars beskrivning länkar till en receptsida. På app.daili.app fungerar bara sådana videor.
 
-> Note: Bara offentliga videor på upp till 25 minuter fungerar. En videoläsning använder en AI-åtgärd. Varje familj får 3 AI-åtgärder i månaden gratis; Daili Plus ger 30.
+> Note: Bara offentliga videor på upp till 25 minuter. En video som läses med AI använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 30. Ett recept från länken i beskrivningen är gratis.

@@ -5,19 +5,19 @@ summary: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a po
 keywords: youtube, video, videorecept, video s vařením, import videa, odkaz, ai, uložit recept, shorts
 tipTitle: Udělej z videa na YouTube recept
 tipBody: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a postup.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-Na YouTube tě zaujalo jídlo? daili za tebe může sepsat recept.
+Na YouTube tě zaujalo jídlo? daili sepíše recept.
 
 ![Obrazovka Recepty s otevřenou nabídkou +. Zakroužkovaná je volba Z videa na YouTube.](meals-youtube)
 
 1. Zkopíruj odkaz na video v aplikaci YouTube (Sdílet → Kopírovat odkaz).
 2. Na domovské obrazovce klepni na **Recepty**, pak na **+** a pak na **Z videa na YouTube**.
 3. Vlož odkaz do pole **Odkaz na YouTube**, nebo klepni na **Vložit**. Pak klepni na **Přečíst video**.
-4. daili čte video — může to trvat až minutu. Zkontroluj, co daili našlo, a oprav, co nesedí. Pak klepni na **Uložit**.
+4. Zkontroluj, co daili našlo, a pak klepni na **Uložit**.
 
-Když je recept v popisu videa, je to rychlé. Jinak se daili podívá na video.
+Recept bude v jazyce daili. Bez vlastní fotky se nahoře ukáže obrázek z videa. Klepnutím na ▶ si video pustíš na YouTube. Chceš-li obrázek zachovat, přidej vlastní fotku.
 
-Recept bude v jazyce tvého telefonu. Poprvé se daili zeptá, než použije AI od Googlu (Gemini); **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
+Čtení videa pomocí AI je pro dospělé (18+); daili se zeptá jednou. Video, jehož popis odkazuje na stránku s receptem, může importovat kdokoli. Na app.daili.app fungují jen taková videa.
 
-> Note: Fungují jen veřejná videa do 25 minut. Čtení videa spotřebuje jednu akci AI. Každá rodina má každý měsíc 3 akce AI zdarma; Daili Plus dává 30.
+> Note: Jen veřejná videa do 25 minut. Čtení videa pomocí AI spotřebuje jednu akci AI: 3 měsíčně jsou zdarma, Daili Plus dává 30. Recept z odkazu v popisu je zdarma.

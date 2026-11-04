@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Lisää resepti
 summary: Pidä perheen reseptit yhdessä paikassa ainesosineen, vaiheineen ja kuvineen.
 keywords: resepti, lisää resepti, keittokirja, reseptikokoelma, ainesosat, ruoanlaitto, ruoka, kuva, perheen reseptit
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Mummon lasagne kuuluu perheen reseptikokoelmaan, josta kaikki löytävät sen.
 
@@ -17,4 +17,8 @@ Mummon lasagne kuuluu perheen reseptikokoelmaan, josta kaikki löytävät sen.
 
 Jos haluat muuttaa reseptiä myöhemmin, avaa se, napauta yläreunassa **⋮** ja sitten **Muokkaa**.
 
+Reseptissä **Suunnittele** lisää sen ruokalistalle: valitse päivä, ateria ja annokset. Reseptin lähde on pieni merkki otsikon alla, ajan ja annosten vieressä.
+
 > Note: Reseptit kuuluvat koko perheelle. Kaikki voivat avata niitä, ja kuka tahansa voi muuttaa niitä.
+
+> Note: Reseptin poistaminen ei vaikuta ruokalistaan. Sen suunnitellut ateriat jäävät, reseptin nimellä.

@@ -5,7 +5,7 @@ summary: Zrób zdjęcie pisma ze szkoły, zaproszenia albo ulotki — daili wyci
 keywords: zdjęcie, skanuj, pismo, zaproszenie, ulotka, daty, ai, aparat, szkoła, odczytaj zdjęcie
 tipTitle: Zmień pismo ze szkoły w wydarzenia
 tipBody: Dotknij ikony skanowania w Nowe wydarzenie, zrób zdjęcie pisma, a daili wpisze daty.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Daty na papierze? Ikona skanowania w **Nowe wydarzenie** je odczyta.
 
@@ -19,6 +19,6 @@ Daty na papierze? Ikona skanowania w **Nowe wydarzenie** je odczyta.
 
 Najlepiej działa druk, gorzej pismo odręczne. Plik PDF? Zrób zdjęcie strony.
 
-> Note: Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
+> Note: AI jest dla dorosłych (18+); daili pyta raz. Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
 > Note: Odczyt zdjęcia zużywa jedną akcję AI. Każda rodzina dostaje co miesiąc 3 akcje AI za darmo; Daili Plus daje 30.

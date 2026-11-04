@@ -5,7 +5,7 @@ summary: Fotografiere einen Elternbrief, eine Einladung oder einen Flyer – dai
 keywords: foto, scannen, brief, einladung, flyer, termine, ki, kamera, schule, foto lesen
 tipTitle: Mach aus einem Elternbrief Termine
 tipBody: Tippe in Neuer Termin auf das Scan-Symbol, fotografiere den Brief, und daili trägt die Termine ein.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Termine auf Papier? Das Scan-Symbol in **Neuer Termin** liest sie.
 
@@ -19,6 +19,6 @@ Termine auf Papier? Das Scan-Symbol in **Neuer Termin** liest sie.
 
 Gedruckter Text klappt am besten, Handschrift weniger. Bei einem PDF fotografierst du die Seite.
 
-> Note: Das Foto wird zum Lesen an die KI von Google geschickt und danach gelöscht, ohne Kameradaten wie den Ort. daili fragt dich vorher, und unter **Einstellungen** → **KI-Funktionen (Google Gemini)** schaltest du das aus.
+> Note: KI ist für Erwachsene (18+); daili fragt einmal. Das Foto wird zum Lesen an die KI von Google geschickt und danach gelöscht, ohne Kameradaten wie den Ort. daili fragt dich vorher, und unter **Einstellungen** → **KI-Funktionen (Google Gemini)** schaltest du das aus.
 
 > Note: Eine Foto-Lesung braucht eine KI-Aktion. Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos; mit Daili Plus sind es 30.

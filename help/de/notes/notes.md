@@ -5,7 +5,7 @@ summary: Schreib eine Notiz oder teile einen Link aus jeder App. Notizen sind pr
 keywords: notiz, schnelle notiz, link, teilen, checkliste, erinnerung, zuletzt gelöscht, zusammenfassen, fett, kursiv, überschrift, formatieren
 tipTitle: Teile einen Link mit daili, um ihn zu behalten
 tipBody: Teile ein Video, einen Beitrag oder eine Seite aus jeder App mit daili – es wird eine Notiz, privat, bis du sie teilst.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Eine Notiz ist ein **Titel**, Text oder beides, mit Aufzählungen und Checklisten.
 
@@ -30,6 +30,6 @@ Gelöschte Notizen warten 30 Tage unter **⋯** → **Zuletzt gelöscht**.
 
 ![Eine Notiz. Die Gruppe Daili Plus mit den zwei Zeilen „Termin, Aufgabe oder Einkaufsliste daraus machen“ und „Zusammenfassen“ ist eingekreist.](notes-ai)
 
-Unter **Daili Plus** in einer Notiz brauchen **Termin, Aufgabe oder Einkaufsliste daraus machen** und **Zusammenfassen** je eine KI-Aktion.
+Unter **Daili Plus** in einer Notiz brauchen **Termin, Aufgabe oder Einkaufsliste daraus machen** und **Zusammenfassen** je eine KI-Aktion, nur für Erwachsene (18+).
 
 > Note: Offline senden sich neue Notizen später selbst.

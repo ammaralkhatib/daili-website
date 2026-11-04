@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Viste del calendario: mese, settimana, giorno, elenco, persone e anno
-summary: Passa tra mese, settimana, 3 giorni, giorno, elenco, persone e anno, e filtra per persona o categoria.
-keywords: vista, mese, settimana, elenco, filtro, persone, colonne, planner da parete, anno, vacanze, numero della settimana, settimana dell'anno
-translatedFrom: 2026-10-30
+summary: Passa tra mese, settimana, 3 giorni, giorno, elenco, persone e anno, e filtra per persona, categoria o calendario.
+keywords: vista, mese, settimana, elenco, filtro, persone, anno, nascondere calendario, tutti gli eventi, aggiornare, numero della settimana
+translatedFrom: 2026-11-05
 ---
 Il calendario ha sette viste.
 
@@ -11,18 +11,20 @@ Il calendario ha sette viste.
 
 1. Nella schermata iniziale, tocca **Calendario**, poi **Vista** in basso.
 2. Scegli **Mese**, **Settimana**, **3 giorni**, **Giorno**, **Elenco**, **Persone** o **Anno**.
-3. Per vedere solo alcune persone o categorie, tocca **Filtro** e sceglile. Ci sono anche i bambini.
+3. Per vedere solo alcune persone o categorie, tocca **Filtro** e sceglile.
 
-La vista **Persone** dà a ogni persona una colonna, come un planner da parete. Il pulsante in alto a sinistra nasconde o riordina le colonne. Tocca uno spazio vuoto per aggiungere un evento per quella persona.
+La vista **Persone** dà a ogni persona una colonna, come un planner da parete. Il pulsante in alto a sinistra nasconde o riordina le colonne.
 
 ![La vista Persone con una colonna per Lena, Marco ed Emma. Le intestazioni delle colonne sono cerchiate.](calendar-people-view)
 
-La vista **Anno** mostra solo gli eventi di tutto il giorno e di più giorni, come le vacanze scolastiche e i viaggi, nel colore di ogni persona. Tocca una persona per nasconderla, o un mese per aprirlo.
+La vista **Anno** mostra gli eventi di tutto il giorno e di più giorni, come le vacanze scolastiche e i viaggi. **Tutti gli eventi** aggiunge gli eventi con un orario, come barre di un giorno. Tocca un mese per aprirlo.
 
-![La vista Anno con vacanze e viaggi come barre colorate. Le etichette delle persone in alto sono cerchiate.](calendar-year-view)
+![La vista Anno con vacanze e viaggi. L'etichetta Tutti gli eventi è cerchiata.](calendar-year-view)
 
-Su app.daili.app, i tasti P e Y le aprono.
+Sotto **Calendari** in **Filtro**, nascondi **Calendario di famiglia** o un calendario collegato o del telefono. Questo telefono se lo ricorda per ogni famiglia. La schermata iniziale e i widget mostrano tutto.
 
-L'ingranaggio → **Mostra nel calendario** aggiunge compleanni, festività, pasti, attività, note con promemoria e bollette. Lì, **Numeri della settimana** mette W44 sul primo giorno di ogni settimana.
+![Filtra il calendario. La sezione Calendari con Calendario di famiglia, Scuola e Lavoro è cerchiata.](calendar-filter-calendars)
 
-Per **Filtro**, un evento appartiene alle persone per cui è, o a chi l'ha creato se è per tutti.
+Trascina verso il basso in qualsiasi vista per aggiornarla. L'ingranaggio → **Mostra nel calendario** aggiunge compleanni, pasti, attività e altro, e **Numeri della settimana**.
+
+Su app.daili.app, i tasti P e Y aprono Persone e Anno. I calendari e le categorie nascosti, e **Tutti gli eventi**, restano in quel browser.

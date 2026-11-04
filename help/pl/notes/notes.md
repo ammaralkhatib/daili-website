@@ -5,7 +5,7 @@ summary: Napisz notatkę albo udostępnij link z dowolnej aplikacji. Notatki są
 keywords: notatka, szybka notatka, link, udostępnij, lista kontrolna, przypomnienie, ostatnio usunięte, podsumuj, pogrubienie, kursywa, nagłówek, formatowanie
 tipTitle: Udostępnij link do daili, żeby go zachować
 tipBody: Udostępnij film, post albo stronę z dowolnej aplikacji do daili — powstanie notatka, prywatna, dopóki jej nie udostępnisz.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Notatka to **Tytuł**, tekst albo jedno i drugie, z listami punktowanymi i listami kontrolnymi.
 
@@ -30,6 +30,6 @@ Usunięte notatki czekają 30 dni w **⋯** → **Ostatnio usunięte**.
 
 ![Notatka. Zakreślona jest grupa Daili Plus z dwoma wierszami "Utwórz z tego wydarzenie, zadanie lub listę zakupów" i "Podsumuj".](notes-ai)
 
-W notatce, w grupie **Daili Plus**, opcje **Utwórz z tego wydarzenie, zadanie lub listę zakupów** i **Podsumuj** zużywają po jednej akcji AI.
+W notatce, w grupie **Daili Plus**, opcje **Utwórz z tego wydarzenie, zadanie lub listę zakupów** i **Podsumuj** zużywają po jednej akcji AI, tylko dla dorosłych (18+).
 
 > Note: Bez internetu nowe notatki wyślą się same później.

@@ -5,7 +5,7 @@ summary: Pega el enlace de una página de recetas, y daili rellena por ti los in
 keywords: importar, enlace, url, web, receta, guardar receta, blog, pegar enlace, internet, copiar receta
 tipTitle: Guarda recetas de cualquier web
 tipBody: Pega el enlace de una página de recetas, y daili rellena por ti los ingredientes y los pasos.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-05
 ---
 ¿Has encontrado una buena receta en internet? Guárdala sin copiarla a mano.
 
@@ -17,5 +17,7 @@ translatedFrom: 2026-09-26
 4. Revisa lo que ha encontrado daili y corrige lo que no esté bien. Luego toca **Guardar**.
 
 Si una página no tiene datos de receta, daili guarda igualmente el título y la foto. Añade tú los ingredientes y los pasos.
+
+Más rápido: en tu navegador o en la app de YouTube, comparte la página con **daili** y elige **Receta**.
 
 > Note: Los enlaces de Instagram y TikTok no tienen datos de receta. Copia el texto de la receta y usa **Pegar el texto de la receta**. Para YouTube, usa **Desde un vídeo de YouTube**.

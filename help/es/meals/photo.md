@@ -5,7 +5,7 @@ summary: Haz una foto a una página de un libro de cocina, una ficha escrita a m
 keywords: foto, cámara, libro de cocina, escrita a mano, captura de pantalla, escanear receta, ia, guardar receta, imagen
 tipTitle: La receta de la abuela, guardada en segundos
 tipBody: Haz una foto a una página de un libro de cocina o a una ficha escrita a mano y daili escribe la receta por ti.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 ¿Tienes una receta en papel o en una captura? daili la pasa a limpio por ti.
 
@@ -16,8 +16,8 @@ translatedFrom: 2026-10-06
 3. Una foto de la fototeca se muestra primero. Si la receta se ve nítida y se lee bien, toca **Leer esta foto**.
 4. El formulario **Receta nueva** se abre ya relleno. Revisa las cantidades y luego toca **Crear**.
 
-La receta sale en el idioma de tu teléfono, sea cual sea el idioma de la página. El texto impreso o escrito con claridad funciona mejor.
+La receta sale en el idioma de daili, sea cual sea el idioma de la página. El texto impreso o escrito con claridad funciona mejor.
 
-> Note: La foto se envía a la IA de Google para leerla y luego se borra, sin datos de la cámara como la ubicación. daili te pregunta antes, y **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
+> Note: La IA es solo para adultos (18+); daili pregunta una vez. La foto se envía a la IA de Google para leerla y luego se borra, sin datos de la cámara como la ubicación. daili te pregunta antes, y **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
 
 > Note: Leer una foto usa una acción de IA. Cada familia tiene 3 acciones de IA gratis al mes; Daili Plus da 30.

@@ -2,8 +2,8 @@
 id: start-today
 title: La schermata Oggi
 summary: Tutto quello che c'è oggi, in un'unica lista: eventi, attività, spesa e pasti.
-keywords: oggi, agenda, giornaliero, panoramica, cosa c'è, programma, in scadenza oggi, piano di oggi, meteo
-translatedFrom: 2026-10-12
+keywords: oggi, agenda, giornaliero, panoramica, cosa c'è, programma, in scadenza oggi, stasera, cena, meteo
+translatedFrom: 2026-11-05
 ---
 Oggi mostra cosa c'è in programma per la tua famiglia oggi, in un'unica schermata.
 
@@ -15,5 +15,7 @@ Oggi mostra cosa c'è in programma per la tua famiglia oggi, in un'unica scherma
 4. Torna indietro per tornare alla schermata iniziale.
 
 Quando il meteo è attivo, la sua scheda sta in cima. Trascina verso il basso per aggiornarla, o toccala per aprire la schermata **Meteo**.
+
+Sotto **Pasti di oggi**, **Stasera** mostra la cena di stasera, con **Ricetta** se ne ha una. Non c'è ancora niente? Tocca uno dei 3 pasti che mangiate spesso per pianificarlo, oppure **Pianifica la settimana**.
 
 Le sezioni vuote restano nascoste. In un giorno libero vedi **Oggi non c'è niente in programma**.

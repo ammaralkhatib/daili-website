@@ -3,11 +3,11 @@ id: start-today
 topic: start
 title: The Today screen
 summary: Everything that's on today, in one list: events, to-dos, shopping and meals.
-keywords: today, agenda, daily, overview, what's on, schedule, due today, plan for today, weather
+keywords: today, agenda, daily, overview, what's on, schedule, due today, tonight, dinner, weather
 routes: /today
 tryIt: /today
 since: 1.1.0
-updated: 2026-10-12
+updated: 2026-11-05
 media: start-today
 order: 6
 related: start-home, calendar-views, start-weather
@@ -22,5 +22,7 @@ Today shows what's on for your family today, on one screen.
 4. Go back to return to Home.
 
 When the weather is on, its card sits at the top. Pull down to refresh it, or tap it to open the **Weather** screen.
+
+Under **Meals today**, **Tonight** shows tonight's dinner, with **Recipe** if it has one. Nothing planned yet? Tap one of 3 meals you often eat to plan it, or **Plan the week**.
 
 Sections with nothing in them stay hidden. On a free day you see **Nothing on for today**.

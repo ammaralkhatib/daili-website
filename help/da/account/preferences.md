@@ -2,8 +2,8 @@
 id: account-preferences
 title: Lyst eller mørkt, sprog, tidsformat, temperatur, vibration
 summary: Vælg mørk tilstand, dit sprog, 12- eller 24-timers ur, °C eller °F, om daili skal vibrere, og dets AI-funktioner.
-keywords: mørk tilstand, tema, udseende, sprog, 24-timers, tidsformat, temperatur, celsius, fahrenheit, vibration, ai, gemini
-translatedFrom: 2026-10-30
+keywords: mørk tilstand, tema, udseende, sprog, 24-timers, tidsformat, temperatur, celsius, fahrenheit, vibration, ai, 18 år eller ældre
+translatedFrom: 2026-11-05
 ---
 Tryk på dit billede øverst på startskærmen for at åbne **Indstillinger**. Du finder disse under **Generelt**.
 
@@ -11,11 +11,11 @@ Tryk på dit billede øverst på startskærmen for at åbne **Indstillinger**. D
 
 1. **Sprog**: vælg et af dailis sprog, eller **Systemets standard** for at følge telefonen.
 2. **Tidsformat**: **24-timers**, **12-timers** eller **System** for at følge telefonen.
-3. **Udseende**: **Lyst**, **Mørkt** eller **System**. Under **Appfarve** vælger du **daili-grøn** eller **Min farve**. Den toner knapper, links og kort.
+3. **Udseende**: **Lyst**, **Mørkt** eller **System**. Under **Appfarve** vælger du **daili-grøn** eller **Min farve**.
 4. **Vibration**: en lille summen, når noget er klaret, gemt eller slettet.
 5. **Vejr på I dag**: vejrkortet øverst på **I dag**.
-6. **Temperaturenhed**: **Automatisk** følger telefonens region, eller vælg °C eller °F. Vind og regn skifter med.
-7. **AI-funktioner (Google Gemini)**: lader Googles AI læse dine billeder, videolinks og madønsker. Slået fra? Så spørger daili igen næste gang.
+6. **Temperaturenhed**: **Automatisk** følger telefonens region, eller vælg °C eller °F.
+7. **AI-funktioner (Google Gemini)**: lader Googles AI læse dine billeder, videolinks og madønsker. Slået fra? Så spørger daili igen næste gang. For voksne (18+); indtil du har bekræftet det, står **Jeg er 18 eller ældre** under rækken.
 
 ![Kortet Generelt. Rækken Temperaturenhed, sat til Automatisk, er markeret med en cirkel.](account-temperature)
 

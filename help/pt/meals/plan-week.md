@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: Planejar as refeições da semana
-summary: Coloque café da manhã, almoço e jantar na semana da família, a partir das suas receitas ou como texto livre.
-keywords: cardápio, planejador de refeições, menu da semana, jantar, almoço, café da manhã, planejar refeições, o que tem para jantar, menu, semana
-translatedFrom: 2026-09-27
+summary: Coloque as refeições da família na semana com um ou dois toques, a partir de refeições recentes, das suas receitas ou de um nome novo.
+keywords: cardápio, planejador de refeições, menu da semana, jantar, o que tem para jantar, noite ocupada, quem cozinha, porções, trocar, mover, cozinhar em dobro
+translatedFrom: 2026-11-05
 ---
-Decida uma vez o que tem para o jantar, e a família toda pode ver.
+Decida uma vez o que tem para o jantar, e a família toda vê.
 
-![O Cardápio de uma semana. O + ao lado de segunda-feira está circulado.](meals-plan-week)
+![A aba Cardápio com Planejar minha semana, Compras da semana e Copiar a semana passada, uma linha por jantar planejado e um aviso de noite ocupada na sexta-feira. O + da segunda-feira está circulado.](meals-plan-week)
 
-1. Na tela inicial, toque em **Cardápio**.
+1. Na tela inicial, toque em **Cardápio**. **Refeições** abre em **Cardápio**, ao lado de **Receitas**.
 2. Toque em **+** em um dia.
-3. Em **Refeição**, escolha uma, como **Jantar**.
-4. Escolha **Receita** e toque em **Escolher receita**. Ou escolha **Texto livre** e digite um **Título**, como “Noite da pizza”.
-5. Toque em **Salvar**.
+3. Toque em uma refeição recente ou em uma receita, e ela já está planejada. Ou digite um nome novo. **Desfazer** volta atrás.
+4. Toque em uma refeição planejada para definir **Porções**, **Quem cozinha** ou uma anotação, ou para **Mover ou trocar**, **Trocar prato** ou **Remover**.
 
-Use as setas para passar de uma semana para outra. Toque em uma refeição para abrir a receita, editar ou excluir.
+![A janela de adicionar em um jantar vazio com Sobras, Comer fora e Para viagem, e a escolha Recentes | Todas as receitas. O chip Sobras está circulado.](meals-add-meal)
 
-Sem ideias? O brilho no topo pede ao daili um jantar para cada noite livre. Veja **Deixe o Daili planejar seus jantares**.
+![A janela de A lasanha da avó com porções, quem cozinha, uma anotação e as ações. Cozinhar em dobro está circulado.](meals-meal-sheet)
+
+Deslize a fileira embaixo da semana para ver **Planejar minha semana**, **Compras da semana** (quando a semana tem refeições) e **Copiar a semana passada**.
+
+Um aviso em um dia mostra um evento com horário perto do jantar, de qualquer calendário que o daili mostra. Nesse dia, a janela de adicionar diz “Noite ocupada, por isso pratos rápidos primeiro”.
+
+O ícone de ajustes no topo abre **Configurações das refeições**. Uma família nova começa com **Quais refeições você planeja?**

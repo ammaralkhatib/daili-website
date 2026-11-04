@@ -5,7 +5,7 @@ summary: Tulis catatan atau bagikan tautan dari aplikasi apa pun. Catatan bersif
 keywords: catatan, catatan cepat, tautan, bagikan, daftar centang, pengingat, baru dihapus, ringkas, tebal, miring, judul, format
 tipTitle: Bagikan tautan ke daili untuk menyimpannya
 tipBody: Bagikan video, postingan, atau halaman dari aplikasi apa pun ke daili, dan itu menjadi catatan — pribadi sampai Anda membagikannya.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Catatan berisi **Judul**, teks, atau keduanya, dengan daftar poin dan daftar centang.
 
@@ -30,6 +30,6 @@ Catatan yang dihapus menunggu 30 hari di **⋯** → **Baru dihapus**.
 
 ![Sebuah catatan. Grup Daili Plus dengan dua baris "Buat acara, tugas, atau daftar belanja dari ini" dan "Ringkas" dilingkari.](notes-ai)
 
-Di bawah **Daili Plus** dalam catatan, **Buat acara, tugas, atau daftar belanja dari ini** dan **Ringkas** masing-masing memakai satu aksi AI.
+Di bawah **Daili Plus** dalam catatan, **Buat acara, tugas, atau daftar belanja dari ini** dan **Ringkas** masing-masing memakai satu aksi AI, khusus dewasa (18+).
 
 > Note: Saat offline, catatan baru terkirim sendiri nanti.

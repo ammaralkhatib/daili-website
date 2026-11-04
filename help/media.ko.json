@@ -33,7 +33,6 @@
   "meals-search-online": { "file": "meals-search-online.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-plan-week": { "file": "meals-plan-week.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-to-shopping": { "file": "meals-to-shopping.webp", "w": 720, "h": 1564, "kind": "image" },
-  "meals-copy-week": { "file": "meals-copy-week.webp", "w": 720, "h": 622, "kind": "image" },
   "birthdays-add": { "file": "birthdays-add.webp", "w": 720, "h": 1564, "kind": "image" },
   "birthdays-import": { "file": "birthdays-import.webp", "w": 720, "h": 1564, "kind": "image" },
   "birthdays-reminders": { "file": "birthdays-reminders.webp", "w": 720, "h": 1564, "kind": "image" },
@@ -65,7 +64,6 @@
   "notes-new": { "file": "notes-new.webp", "w": 720, "h": 1564, "kind": "image" },
   "notes-tile": { "file": "notes-tile.webp", "w": 720, "h": 1283, "kind": "image" },
   "meals-photo": { "file": "meals-photo.webp", "w": 720, "h": 1564, "kind": "image" },
-  "meals-suggest": { "file": "meals-suggest.webp", "w": 720, "h": 622, "kind": "image" },
   "start-you-step": { "file": "start-you-step.webp", "w": 720, "h": 1564, "kind": "image" },
   "watch-up-next": { "file": "watch-up-next.webp", "w": 416, "h": 496, "kind": "image" },
   "watch-shopping": { "file": "watch-shopping.webp", "w": 416, "h": 496, "kind": "image" },
@@ -111,5 +109,15 @@
   "calendar-people-view": { "file": "calendar-people-view.webp", "w": 720, "h": 1564, "kind": "image" },
   "calendar-year-view": { "file": "calendar-year-view.webp", "w": 720, "h": 1564, "kind": "image" },
   "lists-archive": { "file": "lists-archive.webp", "w": 720, "h": 1564, "kind": "image" },
-  "lists-templates": { "file": "lists-templates.webp", "w": 720, "h": 1564, "kind": "image" }
+  "lists-templates": { "file": "lists-templates.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-filter-calendars": { "file": "calendar-filter-calendars.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-link-only-me": { "file": "calendar-link-only-me.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-linked-event": { "file": "calendar-linked-event.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-remind-daily": { "file": "lists-remind-daily.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-add-meal": { "file": "meals-add-meal.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-meal-sheet": { "file": "meals-meal-sheet.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-meal-settings": { "file": "meals-meal-settings.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-cook-mode": { "file": "meals-cook-mode.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-share-sheet": { "file": "meals-share-sheet.webp", "w": 720, "h": 1564, "kind": "image" },
+  "account-help-improve": { "file": "account-help-improve.webp", "w": 720, "h": 1564, "kind": "image" }
 }

@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Başka takvimler ekle: telefonun, Google, bağlantılar ve dosyalar
 summary: Telefonundaki takvimleri ya da Google Takvim'i aile etkinliklerinin yanında göster, okul takvimini takip et ya da bir dosya içe aktar.
-keywords: telefon takvimi, apple takvim, google takvim, takvim ekle, abone ol, bağlantı, okul takvimi, iş takvimi, ics, kime ait, daili'ye kopyala
+keywords: telefon takvimi, google takvim, takvim ekle, abone ol, bağlantı, okul takvimi, iş takvimi, sadece ben, daili'de düzenle, bağlı, yenile
 tipTitle: Telefonundaki takvimleri daili'de gör
 tipBody: İş, okul ya da spor takvimlerin aile etkinliklerinin yanında görünebilir.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. **Takvim** ekranını aç, dişliye dokun, sonra **Diğer takvimler** altında **Takvim ekle** seçeneğine dokun.
-2. **Apple Takvim** (iPhone) ya da **Telefon takvimleri** (Android): telefonunun kendi takvimleri.
-3. **Google Takvim**: giriş yap, **Bağla** düğmesine dokun, sonra her takvimi kimin göreceğini seç.
-4. **Bağlantıyla abone ol**: kendiliğinden güncellenen bir okul ya da kulüp takvimi. Yalnızca yöneticiler ekleyebilir. Ailende zaten varsa daili uyarır.
-5. **Dosya içe aktar (.ics)**: etkinlikleri bir kez daili'ye kopyalar.
+2. **Apple Takvim** (iPhone) ya da **Telefon takvimleri** (Android): telefonunun takvimleri.
+3. **Google Takvim**: **Bağlan** düğmesine dokun, giriş yap, sonra takvimleri seç. **Sadece ben** bir takvimi gizli tutar.
+4. **Bağlantıyla abone ol**: bir okul ya da iş takvimi, herkes için (yöneticiler) ya da **Sadece ben**.
+5. **Dosya içe aktar (.ics)**: etkinlikleri bir kez kopyalar.
 
-![Bağlı bir takvim için Takvimi düzenle paneli. Emma olarak ayarlı Kime ait satırı daire içine alınmış.](calendar-other-calendars)
+![Ad, adres ve renk alanlarıyla bağlantıdan takvim ekleme ekranı. Sadece ben anahtarı daire içine alınmış.](calendar-link-only-me)
 
-Her takvimin bir **Kime ait** ayarı var: abone olunan bağlantılar **Herkes** ile, telefon ve Google takvimleri seninle başlar. Etkinlikleri o kişinin rengini alır ve **Filtre** ayarına uyar.
+Bağlı bir takvimin **Kime ait** ayarı, rengini ve **Filtre** içindeki kişisini belirler. Google'ı hemen getirmek için aşağı çek ya da **⋮** → **Şimdi yenile** seçeneğine dokun.
 
-Değiştirmek için telefon ya da Google satırına, bir bağlantıda ise **⋮** → **Düzenle** seçeneğine dokun. **⋮** → **Kaldır** (Google'da: **Bağlantıyı kes**) bir takvimi kaldırır.
+![Bağlı Okul takviminden eşitlenmiş bir Okul gezisi. Daili'de düzenle daire içine alınmış.](calendar-linked-event)
 
-Bu etkinlikler burada değiştirilemez. Kendi etkinliğini yapmak için birine dokun → **Daili'ye kopyala**.
+Kişi, hatırlatıcı ya da not eklemek için bir etkinliğe dokun → **Daili'de düzenle**. Etkinlik bağlı kalır (**Kaynak: Okul**): yeni saatler, başlıklar ve yerler kendiliğinden gelir. Sen de mi değiştirmiştin? **Kullan** ya da **Benimkini koru**. Kaynakta mı silindi? **Sil** ya da **Koru**. Bağlı etkinlikler tekrarlanamaz.
 
-> Note: Telefon takvimleri ve kime ait oldukları bu telefonda kalır: hiçbir şey yüklenmez ya da ailene gösterilmez.
+> Note: Telefon takvimleri bu telefonda kalır. **Daili'de düzenle**, sen kendininkini silene kadar telefon etkinliğini burada gizler. Güncelleme gelmez.

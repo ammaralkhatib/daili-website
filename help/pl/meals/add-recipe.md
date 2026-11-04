@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Dodaj przepis
 summary: Trzymaj rodzinne przepisy w jednym miejscu, ze składnikami, krokami i zdjęciem.
 keywords: przepis, dodaj przepis, książka kucharska, zeszyt z przepisami, składniki, gotowanie, danie, zdjęcie, rodzinne przepisy
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Lasagne babci powinna trafić do rodzinnego zeszytu z przepisami, gdzie każdy ją znajdzie.
 
@@ -17,4 +17,8 @@ Lasagne babci powinna trafić do rodzinnego zeszytu z przepisami, gdzie każdy j
 
 Żeby później zmienić przepis, otwórz go, dotknij **⋮** na górze, a potem **Edytuj**.
 
+W przepisie dotknij **Zaplanuj**, żeby wpisać go do jadłospisu: wybierz dzień, posiłek i liczbę porcji. Źródło przepisu to mały znaczek pod tytułem, obok czasu i porcji.
+
 > Note: Przepisy należą do całej rodziny. Każdy może je otworzyć i każdy może je zmienić.
+
+> Note: Usunięcie przepisu nie zmienia jadłospisu. Zaplanowane posiłki zostają, z nazwą przepisu.

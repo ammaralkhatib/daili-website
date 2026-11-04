@@ -5,7 +5,7 @@ summary: Lipește linkul unei pagini cu rețetă, iar daili completează pentru 
 keywords: import, link, url, site, rețetă, salvează rețeta, blog, lipește linkul, web, copiază rețeta
 tipTitle: Salvează rețete de pe orice site
 tipBody: Lipește linkul unei pagini cu rețetă, iar daili completează pentru tine ingredientele și pașii.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-05
 ---
 Ai găsit o rețetă bună online? Salveaz-o fără s-o scrii de mână.
 
@@ -17,5 +17,7 @@ Ai găsit o rețetă bună online? Salveaz-o fără s-o scrii de mână.
 4. Verifică ce a găsit daili și corectează ce nu e în regulă. Apoi apasă pe **Salvează**.
 
 Dacă o pagină nu are date de rețetă, daili salvează totuși titlul și poza. Ingredientele și pașii îi adaugi tu.
+
+Mai rapid: în browser sau în aplicația YouTube, distribuie pagina către **daili** și alege **Rețetă**.
 
 > Note: Linkurile de pe Instagram și TikTok nu conțin date de rețetă. Copiază mai bine textul rețetei și folosește **Lipește textul rețetei**. Pentru YouTube, folosește **Dintr-un videoclip YouTube**.

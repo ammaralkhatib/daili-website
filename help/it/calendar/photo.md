@@ -5,7 +5,7 @@ summary: Fotografa un avviso della scuola, un invito o un volantino — daili tr
 keywords: foto, scansiona, lettera, invito, volantino, date, ia, fotocamera, scuola, leggi foto
 tipTitle: Trasforma un avviso della scuola in eventi
 tipBody: Tocca l’icona di scansione in Nuovo evento, fotografa l’avviso e daili compila le date.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Date su carta? L’icona di scansione in **Nuovo evento** le legge per te.
 
@@ -19,6 +19,6 @@ Date su carta? L’icona di scansione in **Nuovo evento** le legge per te.
 
 Il testo stampato funziona meglio, la scrittura a mano meno. Per un PDF, fotografa la pagina.
 
-> Note: La foto viene inviata all’IA di Google per essere letta e poi eliminata, senza i dati della fotocamera come il luogo. daili te lo chiede prima, e **Impostazioni** → **Funzioni IA (Google Gemini)** la disattiva.
+> Note: L’IA è solo per adulti (18+); daili te lo chiede una volta. La foto viene inviata all’IA di Google per essere letta e poi eliminata, senza i dati della fotocamera come il luogo. daili te lo chiede prima, e **Impostazioni** → **Funzioni IA (Google Gemini)** la disattiva.
 
 > Note: Una lettura di foto usa un'azione IA. Ogni famiglia ha 3 azioni IA gratis al mese; Daili Plus ne dà 30.

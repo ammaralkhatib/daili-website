@@ -5,7 +5,7 @@ summary: Schrijf een notitie of deel een link vanuit elke app. Notities zijn pri
 keywords: notitie, snelle notitie, link, delen, checklist, herinnering, recent verwijderd, samenvatten, vet, cursief, kop, opmaak
 tipTitle: Deel een link met daili om hem te bewaren
 tipBody: Deel een video, bericht of pagina vanuit elke app met daili en het wordt een notitie — privé tot je hem deelt.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Een notitie is een **Titel**, tekst of allebei, met opsommingen en checklists.
 
@@ -30,6 +30,6 @@ Verwijderde notities wachten 30 dagen onder **⋯** → **Recent verwijderd**.
 
 ![Een notitie. De groep Daili Plus met de twee regels "Maak er een afspraak, taak of boodschappenlijst van" en "Samenvatten" is omcirkeld.](notes-ai)
 
-Onder **Daili Plus** in een notitie kosten **Maak er een afspraak, taak of boodschappenlijst van** en **Samenvatten** elk één AI-actie.
+Onder **Daili Plus** in een notitie kosten **Maak er een afspraak, taak of boodschappenlijst van** en **Samenvatten** elk één AI-actie, voor volwassenen (18+).
 
 > Note: Offline versturen nieuwe notities zichzelf later.

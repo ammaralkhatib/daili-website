@@ -2,8 +2,8 @@
 id: account-preferences
 title: Jasny czy ciemny, język, format czasu, temperatura, wibracje
 summary: Wybierz tryb ciemny, swój język, zegar 12- lub 24-godzinny, °C albo °F, to, czy daili wibruje, i funkcje AI.
-keywords: tryb ciemny, motyw, wygląd, język, 24-godzinny, format czasu, temperatura, celsjusz, fahrenheit, wibracje, ai, gemini
-translatedFrom: 2026-10-30
+keywords: tryb ciemny, motyw, wygląd, język, 24-godzinny, format czasu, temperatura, celsjusz, fahrenheit, wibracje, ai, 18 lat
+translatedFrom: 2026-11-05
 ---
 Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawienia**. Te opcje znajdziesz w sekcji **Ogólne**.
 
@@ -11,11 +11,11 @@ Dotknij swojego zdjęcia na górze ekranu głównego, żeby otworzyć **Ustawien
 
 1. **Język**: wybierz jeden z języków daili albo **Język systemu**, żeby był taki jak w telefonie.
 2. **Format czasu**: **24-godzinny**, **12-godzinny** albo **Systemowy**, żeby był taki jak w telefonie.
-3. **Wygląd**: **Jasny**, **Ciemny** albo **Systemowy**. W sekcji **Kolor aplikacji** wybierz **zieleń daili** albo **Mój kolor**. Kolor barwi przyciski, linki i karty.
+3. **Wygląd**: **Jasny**, **Ciemny** albo **Systemowy**. W sekcji **Kolor aplikacji** wybierz **zieleń daili** albo **Mój kolor**.
 4. **Wibracje**: krótkie brzęczenie, gdy coś jest gotowe, zapisane albo usunięte.
 5. **Pogoda w Dziś**: karta pogody na górze ekranu **Dziś**.
-6. **Jednostka temperatury**: **Automatycznie** to jednostka z regionu telefonu; możesz też wybrać °C lub °F. Wiatr i opady zmieniają się razem z nią.
-7. **Funkcje AI (Google Gemini)**: pozwala AI Google czytać twoje zdjęcia, linki do filmów i życzenia do posiłków. Wyłączone? daili zapyta znowu następnym razem.
+6. **Jednostka temperatury**: **Automatycznie** to jednostka z regionu telefonu; możesz też wybrać °C lub °F.
+7. **Funkcje AI (Google Gemini)**: pozwala AI Google czytać twoje zdjęcia, linki do filmów i życzenia do posiłków. Wyłączone? daili zapyta znowu następnym razem. Tylko dla dorosłych (18+); dopóki tego nie potwierdzisz, pod spodem widać **Mam 18 lat lub więcej**.
 
 ![Karta Ogólne. Zakreślony jest wiersz Jednostka temperatury ustawiony na Automatycznie.](account-temperature)
 

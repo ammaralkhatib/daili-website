@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: Planificar las comidas de la semana
-summary: Pon el desayuno, la comida y la cena en la semana de la familia, desde tus recetas o como texto libre.
-keywords: menú, menú semanal, planificador de comidas, cena, comida, desayuno, planificar comidas, qué cenamos, semana, platos
-translatedFrom: 2026-09-27
+summary: Pon las comidas de la familia en la semana con uno o dos toques, desde comidas recientes, tus recetas o un nombre nuevo.
+keywords: menú, menú semanal, planificador de comidas, cena, qué cenamos, tarde ocupada, quién cocina, porciones, cambiar, mover, cocinar el doble
+translatedFrom: 2026-11-05
 ---
 Decide una vez qué se cena, y toda la familia lo ve.
 
-![El Menú de una semana. El + junto al lunes está marcado con un círculo.](meals-plan-week)
+![La pestaña Plan con Planificar mi semana, Compra de la semana y Copiar la semana pasada, una línea por cena planificada y un aviso de tarde ocupada el viernes. El + del lunes está marcado con un círculo.](meals-plan-week)
 
-1. En la pantalla de inicio, toca **Menú**.
+1. En la pantalla de inicio, toca **Menú**. **Comidas** se abre en **Plan**, junto a **Recetas**.
 2. Toca **+** en un día.
-3. En **Comida**, elige una, como **Cena**.
-4. Elige **Receta** y toca **Elegir una receta**. O elige **Texto libre** y escribe un **Título**, como «Noche de pizza».
-5. Toca **Guardar**.
+3. Toca una comida reciente o una receta, y ya está planificada. O escribe un nombre nuevo. **Deshacer** lo revierte.
+4. Toca una comida planificada para fijar **Porciones**, **Quién cocina** o una nota, o para **Mover o cambiar**, **Cambiar plato** o **Quitar**.
 
-Usa las flechas para cambiar de semana. Toca una comida para abrir su receta, editarla o eliminarla.
+![La hoja para añadir en una cena vacía con Sobras, Comer fuera y Para llevar, y el selector Recientes | Todas las recetas. La ficha Sobras está marcada con un círculo.](meals-add-meal)
 
-¿Sin ideas? El destello de arriba le pide a daili una cena para cada noche libre. Mira **Deja que Daili planifique tus cenas**.
+![La hoja de La lasaña de la abuela con porciones, quién cocina, una nota y las acciones. Cocinar el doble está marcado con un círculo.](meals-meal-sheet)
+
+Desliza la fila de debajo de la semana para ver **Planificar mi semana**, **Compra de la semana** (cuando la semana tiene comidas) y **Copiar la semana pasada**.
+
+Un aviso en un día muestra un evento con hora cerca de la cena, de cualquier calendario que muestre daili. Ese día, la hoja para añadir dice «Tarde ocupada, así que primero las comidas rápidas».
+
+El icono de ajustes de arriba abre **Ajustes de comidas**. Una familia nueva empieza con **¿Qué comidas planeas?**

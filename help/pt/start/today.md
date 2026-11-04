@@ -2,8 +2,8 @@
 id: start-today
 title: A tela Hoje
 summary: Tudo o que tem para hoje, em uma lista: eventos, tarefas, compras e refeições.
-keywords: hoje, agenda, diário, visão geral, o que tem hoje, programação, para hoje, plano do dia, tempo
-translatedFrom: 2026-10-12
+keywords: hoje, agenda, diário, visão geral, o que tem hoje, programação, para hoje, hoje à noite, jantar, tempo
+translatedFrom: 2026-11-05
 ---
 Hoje mostra o que sua família tem para hoje, em uma tela só.
 
@@ -15,5 +15,7 @@ Hoje mostra o que sua família tem para hoje, em uma tela só.
 4. Volte para retornar à tela inicial.
 
 Quando o tempo está ligado, o cartão dele fica no alto. Puxe para baixo para atualizar, ou toque nele para abrir a tela **Tempo**.
+
+Em **Refeições de hoje**, **Hoje à noite** mostra o jantar de hoje, com **Receita** se ele tiver uma. Nada planejado ainda? Toque em uma de 3 refeições que vocês comem muito para planejá-la, ou em **Planejar a semana**.
 
 As seções vazias ficam escondidas. Em um dia livre, você vê **Hoje não tem nada marcado**.

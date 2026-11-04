@@ -2,8 +2,8 @@
 id: account-preferences
 title: Licht of donker, taal, tijdnotatie, temperatuur, trillen
 summary: Kies de donkere modus, je taal, 12- of 24-uurs tijd, °C of °F, of daili trilt, en de AI-functies.
-keywords: donkere modus, dark mode, thema, weergave, taal, 24-uurs, tijdnotatie, temperatuur, celsius, fahrenheit, trillen, ai
-translatedFrom: 2026-10-30
+keywords: donkere modus, thema, weergave, taal, 24-uurs, tijdnotatie, temperatuur, celsius, fahrenheit, trillen, ai, 18 of ouder
+translatedFrom: 2026-11-05
 ---
 Tik bovenaan het startscherm op je foto om **Instellingen** te openen. Je vindt dit onder **Voorkeuren**.
 
@@ -11,11 +11,11 @@ Tik bovenaan het startscherm op je foto om **Instellingen** te openen. Je vindt 
 
 1. **Taal**: kies een van de talen van daili, of **Systeemstandaard** om je telefoon te volgen.
 2. **Tijdnotatie**: **24-uurs**, **12-uurs**, of **Systeem** om je telefoon te volgen.
-3. **Weergave**: **Licht**, **Donker**, of **Systeem**. Kies onder **App-kleur** voor **daili-groen** of **Mijn kleur**. Die kleurt knoppen, links en kaarten.
+3. **Weergave**: **Licht**, **Donker**, of **Systeem**. Kies onder **App-kleur** voor **daili-groen** of **Mijn kleur**.
 4. **Trillen**: een kort trilsignaal als iets klaar, opgeslagen of verwijderd is.
 5. **Weer op Vandaag**: de weerkaart bovenaan **Vandaag**.
-6. **Temperatuureenheid**: **Automatisch** volgt de regio van je telefoon, of kies °C of °F. Wind en regen veranderen mee.
-7. **AI-functies (Google Gemini)**: laat de AI van Google je foto’s, videolinks en etenswensen lezen. Staat het uit? Dan vraagt daili het de volgende keer opnieuw.
+6. **Temperatuureenheid**: **Automatisch** volgt de regio van je telefoon, of kies °C of °F.
+7. **AI-functies (Google Gemini)**: laat de AI van Google je foto’s, videolinks en etenswensen lezen. Staat het uit? Dan vraagt daili het de volgende keer opnieuw. Voor volwassenen (18+); tot je het bevestigt, staat eronder **Ik ben 18 of ouder**.
 
 ![De kaart Voorkeuren. De regel Temperatuureenheid, op Automatisch, is omcirkeld.](account-temperature)
 

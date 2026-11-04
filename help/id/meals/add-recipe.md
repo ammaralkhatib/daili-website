@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Tambah resep
 summary: Simpan resep keluarga di satu tempat, dengan bahan, langkah, dan foto.
 keywords: resep, tambah resep, buku resep, kotak resep, bahan, memasak, masakan, foto, resep keluarga
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Lasagna buatan Nenek pantas masuk kotak resep keluarga, supaya semua orang bisa menemukannya.
 
@@ -17,4 +17,8 @@ Lasagna buatan Nenek pantas masuk kotak resep keluarga, supaya semua orang bisa 
 
 Untuk mengubah resep nanti, buka resepnya, ketuk **⋮** di atas, lalu **Ubah**.
 
+Di sebuah resep, **Rencanakan** memasukkannya ke rencana makan: pilih hari, waktu makan, dan porsi. Sumbernya ada di label kecil di bawah judul, di sebelah waktu dan porsi.
+
 > Note: Resep milik seluruh keluarga. Semua orang bisa membukanya, dan siapa pun bisa mengubahnya.
+
+> Note: Menghapus resep tidak mengubah rencana makan. Menu yang sudah direncanakan tetap ada, dengan nama resepnya.

@@ -2,8 +2,8 @@
 id: account-preferences
 title: Luminos sau întunecat, limbă, format oră, temperatură, vibrații
 summary: Alege modul întunecat, limba ta, ora în format de 12 sau 24 de ore, °C sau °F, dacă daili vibrează și funcțiile AI.
-keywords: mod întunecat, temă, aspect, limbă, 24 de ore, format oră, temperatură, celsius, fahrenheit, vibrații, ai, gemini
-translatedFrom: 2026-10-30
+keywords: mod întunecat, temă, aspect, limbă, 24 de ore, format oră, temperatură, celsius, fahrenheit, vibrații, ai, 18 ani sau mai mult
+translatedFrom: 2026-11-05
 ---
 Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Setări**. Opțiunile astea le găsești la **Preferințe**.
 
@@ -11,11 +11,11 @@ Apasă pe poza ta din partea de sus a ecranului principal ca să deschizi **Set�
 
 1. **Limbă**: alege una dintre limbile din daili sau **Implicit din sistem** ca să urmezi telefonul.
 2. **Format oră**: **24 de ore**, **12 ore** sau **Sistem** ca să urmezi telefonul.
-3. **Aspect**: **Luminos**, **Întunecat** sau **Sistem**. La **Culoarea aplicației**, alege **verde daili** sau **Culoarea mea**. Colorează butoanele, linkurile și cardurile.
+3. **Aspect**: **Luminos**, **Întunecat** sau **Sistem**. La **Culoarea aplicației**, alege **verde daili** sau **Culoarea mea**.
 4. **Vibrații**: o vibrație când ceva e gata, salvat sau șters.
 5. **Vremea pe Azi**: cardul cu vremea din partea de sus a ecranului **Azi**.
-6. **Unitate de temperatură**: **Automat** urmează regiunea telefonului, sau alege °C ori °F. Unitățile pentru vânt și ploaie se schimbă odată cu ea.
-7. **Funcții AI (Google Gemini)**: lasă AI-ul Google să-ți citească pozele, linkurile video și dorințele pentru mese. Oprite? daili te întreabă din nou data viitoare.
+6. **Unitate de temperatură**: **Automat** urmează regiunea telefonului, sau alege °C ori °F.
+7. **Funcții AI (Google Gemini)**: lasă AI-ul Google să-ți citească pozele, linkurile video și dorințele pentru mese. Oprite? daili te întreabă din nou data viitoare. Pentru adulți (18+); până confirmi, sub ele apare **Am 18 ani sau mai mult**.
 
 ![Cardul Preferințe. Rândul Unitate de temperatură, setat pe Automat, este încercuit.](account-temperature)
 

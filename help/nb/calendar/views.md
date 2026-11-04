@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Kalendervisninger: måned, uke, dag, liste, personer og år
-summary: Bytt mellom måned, uke, 3 dager, dag, liste, personer og år, og filtrer etter person eller kategori.
-keywords: visning, måned, uke, liste, filter, personer, kolonner, veggkalender, år, ferier, ukenummer, kalenderuke
-translatedFrom: 2026-10-30
+summary: Bytt mellom måned, uke, 3 dager, dag, liste, personer og år, og filtrer etter person, kategori eller kalender.
+keywords: visning, måned, uke, liste, filter, personer, år, skjul kalender, alle hendelser, oppdater, ukenummer
+translatedFrom: 2026-11-05
 ---
 Kalenderen har sju visninger.
 
@@ -11,18 +11,20 @@ Kalenderen har sju visninger.
 
 1. Trykk på **Kalender** på startskjermen, og så på **Visning** nederst.
 2. Velg **Måned**, **Uke**, **3 dager**, **Dag**, **Liste**, **Personer** eller **År**.
-3. Vil du bare se noen personer eller kategorier, trykker du på **Filter** og velger dem. Barn finnes også der.
+3. Vil du bare se noen personer eller kategorier, trykker du på **Filter** og velger dem.
 
-Visningen **Personer** gir hver person sin egen kolonne, som en veggkalender. Knappen øverst til venstre skjuler kolonner eller endrer rekkefølgen. Trykk på et tomt felt for å legge til en hendelse for den personen.
+Visningen **Personer** gir hver person sin egen kolonne, som en veggkalender. Knappen øverst til venstre skjuler kolonner eller endrer rekkefølgen.
 
 ![Visningen Personer med én kolonne hver for Lena, Marco og Emma. Kolonneoverskriftene er ringet inn.](calendar-people-view)
 
-Visningen **År** viser bare heldags- og flerdagshendelser, som skoleferier og turer, i fargen til hver person. Trykk på en person for å skjule personen, eller på en måned for å åpne den.
+Visningen **År** viser heldags- og flerdagshendelser, som skoleferier og turer. **Alle hendelser** legger til hendelser med klokkeslett, som éndagsstriper. Trykk på en måned for å åpne den.
 
-![Visningen År med ferier og turer som fargede striper. Personbrikkene øverst er ringet inn.](calendar-year-view)
+![Visningen År med ferier og turer. Brikken Alle hendelser er ringet inn.](calendar-year-view)
 
-På app.daili.app åpner tastene P og Y dem.
+Under **Kalendere** i **Filter** kan du skjule **Familiekalender** eller en tilknyttet kalender eller telefonkalender. Denne telefonen husker det for hver familie. Startskjermen og modulene viser alt.
 
-Tannhjulet → **Vis i kalenderen** legger til bursdager, helligdager, måltider, oppgaver, notater med påminnelse og regninger. Med **Ukenummer** der står W44 på den første dagen i hver uke.
+![Filtrer kalenderen. Delen Kalendere med Familiekalender, Skole og Jobb er ringet inn.](calendar-filter-calendars)
 
-For **Filter** hører en hendelse til personene den er for, eller til den som opprettet den hvis den er for alle.
+Dra ned i en hvilken som helst visning for å laste den inn på nytt. Tannhjulet → **Vis i kalenderen** legger til bursdager, måltider, oppgaver og mer, og **Ukenummer**.
+
+På app.daili.app åpner tastene P og Y Personer og År. Skjulte kalendere og kategorier, og **Alle hendelser**, blir lagret i den nettleseren.

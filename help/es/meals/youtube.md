@@ -5,19 +5,19 @@ summary: Pega el enlace de un vídeo de cocina, y daili escribe por ti los ingre
 keywords: youtube, vídeo, video, receta en vídeo, vídeo de cocina, importar vídeo, enlace, ia, guardar receta, shorts
 tipTitle: Convierte un vídeo de YouTube en una receta
 tipBody: Pega el enlace de un vídeo de cocina, y daili escribe por ti los ingredientes y los pasos.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-¿Has visto un plato en YouTube? daili puede escribir la receta por ti.
+¿Has visto un plato en YouTube? daili escribe la receta.
 
 ![La pantalla Recetas con el menú + abierto. Desde un vídeo de YouTube está marcado con un círculo.](meals-youtube)
 
 1. Copia el enlace del vídeo en la app de YouTube (Compartir → Copiar enlace).
 2. En la pantalla de inicio, toca **Recetas**, luego **+** y luego **Desde un vídeo de YouTube**.
 3. Pega el enlace en **Enlace de YouTube**, o toca **Pegar**. Luego toca **Leer el vídeo**.
-4. daili lee el vídeo — puede tardar hasta un minuto. Revisa lo que ha encontrado daili y corrige lo que no esté bien. Luego toca **Guardar**.
+4. Revisa lo que ha encontrado daili y luego toca **Guardar**.
 
-Si la receta está en la descripción del vídeo, es rápido. Si no, daili ve el vídeo.
+La receta sale en el idioma de daili. Sin una foto tuya, arriba aparece la imagen del vídeo. Toca ▶ para verlo en YouTube. Para conservar una imagen, añade tu propia foto.
 
-La receta sale en el idioma de tu móvil. La primera vez, daili te pregunta antes de usar la IA de Google (Gemini); **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
+Leer un vídeo con IA es solo para adultos (18+); daili pregunta una vez. Cualquiera puede importar un vídeo cuya descripción enlace a una página de receta. En app.daili.app, solo funcionan esos vídeos.
 
-> Note: Solo funcionan los vídeos públicos de hasta 25 minutos. Leer un vídeo usa una acción de IA. Cada familia tiene 3 acciones de IA gratis al mes; Daili Plus da 30.
+> Note: Solo vídeos públicos de hasta 25 minutos. Leer un vídeo con IA usa una acción de IA: 3 al mes son gratis, y Daili Plus da 30. Una receta desde el enlace de la descripción es gratis.

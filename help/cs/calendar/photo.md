@@ -5,7 +5,7 @@ summary: Vyfoť dopis ze školy, pozvánku nebo leták — daili z nich vytáhne
 keywords: fotka, skenovat, dopis, pozvánka, leták, data, ai, fotoaparát, škola, přečíst fotku
 tipTitle: Udělej z dopisu ze školy události
 tipBody: Klepni na ikonu skenování v Nová událost, vyfoť dopis a daili vyplní data.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Data na papíře? Ikona skenování v **Nová událost** je přečte.
 
@@ -19,6 +19,6 @@ Data na papíře? Ikona skenování v **Nová událost** je přečte.
 
 Nejlíp funguje tištěný text, rukopis hůř. Máš PDF? Vyfoť stránku.
 
-> Note: Fotka jde k přečtení do AI od Googlu a pak se smaže, bez dat z fotoaparátu, třeba polohy. daili se nejdřív zeptá a **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
+> Note: AI je pro dospělé (18+); daili se zeptá jednou. Fotka jde k přečtení do AI od Googlu a pak se smaže, bez dat z fotoaparátu, třeba polohy. daili se nejdřív zeptá a **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
 
 > Note: Čtení fotky spotřebuje jednu akci AI. Každá rodina má každý měsíc 3 akce AI zdarma; Daili Plus dává 30.

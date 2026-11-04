@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Widoki kalendarza: miesiąc, tydzień, dzień, lista, osoby i rok
-summary: Przełączaj między miesiącem, tygodniem, 3 dniami, dniem, listą, osobami i rokiem, i filtruj według osoby albo kategorii.
-keywords: widok, miesiąc, tydzień, lista, agenda, filtr, osoby, kolumny, planer ścienny, rok, ferie, numer tygodnia
-translatedFrom: 2026-10-30
+summary: Przełączaj między miesiącem, tygodniem, 3 dniami, dniem, listą, osobami i rokiem, i filtruj według osoby, kategorii albo kalendarza.
+keywords: widok, miesiąc, tydzień, lista, agenda, filtr, osoby, rok, ukryj kalendarz, wszystkie wydarzenia, odśwież, numer tygodnia
+translatedFrom: 2026-11-05
 ---
 Kalendarz ma siedem widoków.
 
@@ -11,18 +11,20 @@ Kalendarz ma siedem widoków.
 
 1. Na ekranie głównym dotknij **Kalendarz**, a potem **Widok** na dole.
 2. Wybierz **Miesiąc**, **Tydzień**, **3 dni**, **Dzień**, **Lista**, **Osoby** albo **Rok**.
-3. Żeby zobaczyć tylko niektóre osoby albo kategorie, dotknij **Filtr** i je wybierz. Dzieci też tam są.
+3. Żeby zobaczyć tylko niektóre osoby albo kategorie, dotknij **Filtr** i je wybierz.
 
-Widok **Osoby** daje każdej osobie kolumnę, jak planer ścienny. Przycisk w lewym górnym rogu ukrywa kolumny albo zmienia ich kolejność. Dotknij pustego miejsca, żeby dodać wydarzenie dla tej osoby.
+Widok **Osoby** daje każdej osobie kolumnę, jak planer ścienny. Przycisk w lewym górnym rogu ukrywa kolumny albo zmienia ich kolejność.
 
 ![Widok Osoby z osobnymi kolumnami: Lena, Marco i Emma. Zakreślone są nagłówki kolumn.](calendar-people-view)
 
-Widok **Rok** pokazuje tylko wydarzenia całodniowe i wielodniowe, takie jak ferie i wyjazdy, w kolorze każdej osoby. Dotknij osoby, żeby ją ukryć, albo miesiąca, żeby go otworzyć.
+Widok **Rok** pokazuje wydarzenia całodniowe i wielodniowe, takie jak ferie i wyjazdy. **Wszystkie wydarzenia** dodaje wydarzenia z godziną jako jednodniowe paski. Dotknij miesiąca, żeby go otworzyć.
 
-![Widok Rok z feriami i wyjazdami jako kolorowymi paskami. Zakreślone są chipy osób na górze.](calendar-year-view)
+![Widok Rok z wakacjami i wyjazdami. Zakreślony jest chip Wszystkie wydarzenia.](calendar-year-view)
 
-W app.daili.app te dwa widoki otwierają klawisze P i Y.
+W oknie **Filtr**, w sekcji **Kalendarze**, ukryj **Kalendarz rodzinny** albo kalendarz połączony lub z telefonu. Ten telefon zapamiętuje to osobno dla każdej rodziny. Ekran główny i widżety pokazują wszystko.
 
-Zębatka → **Pokaż w kalendarzu** dodaje urodziny, święta, posiłki, zadania, notatki z przypomnieniem i rachunki. Opcja **Numery tygodni** w tym samym miejscu pokazuje W44 przy pierwszym dniu każdego tygodnia.
+![Filtruj kalendarz. Zakreślona jest sekcja Kalendarze z opcjami Kalendarz rodzinny, Szkoła i Praca.](calendar-filter-calendars)
 
-Przy filtrowaniu (**Filtr**) wydarzenie należy do osób, dla których jest, albo do autora, jeśli jest dla wszystkich.
+Pociągnij w dół w dowolnym widoku, żeby go odświeżyć. Zębatka → **Pokaż w kalendarzu** dodaje urodziny, posiłki, zadania i więcej, a także **Numery tygodni**.
+
+W app.daili.app klawisze P i Y otwierają widoki Osoby i Rok. Ukryte kalendarze i kategorie oraz **Wszystkie wydarzenia** zapamiętuje tylko ta przeglądarka.

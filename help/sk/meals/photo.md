@@ -5,7 +5,7 @@ summary: Odfoť stranu z kuchárky, ručne písanú kartičku alebo snímku obra
 keywords: fotka, fotoaparát, kuchárka, ručne písaný, snímka obrazovky, naskenovať recept, ai, uložiť recept, obrázok
 tipTitle: Babkin recept uložený za pár sekúnd
 tipBody: Odfoť stranu z kuchárky alebo ručne písanú kartičku a daili za teba recept napíše.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Máš recept na papieri alebo na snímke obrazovky? daili ho za teba prepíše.
 
@@ -16,8 +16,8 @@ Máš recept na papieri alebo na snímke obrazovky? daili ho za teba prepíše.
 3. Fotka z knižnice sa ukáže najprv. Ak je recept ostrý a čitateľný, ťukni na **Prečítať túto fotku**.
 4. Otvorí sa formulár **Nový recept**, už vyplnený. Skontroluj množstvá a potom ťukni na **Vytvoriť**.
 
-Recept vyjde v jazyku tvojho telefónu, nech je strana v akomkoľvek jazyku. Najlepšie funguje tlačený alebo čitateľne písaný text.
+Recept vyjde v jazyku daili, nech je strana v akomkoľvek jazyku. Najlepšie funguje tlačený alebo čitateľne písaný text.
 
-> Note: Fotka ide na prečítanie do AI od Googlu, bez údajov z fotoaparátu, napríklad polohy, a potom sa vymaže. daili sa ťa najprv opýta a **Nastavenia** → **Funkcie AI (Google Gemini)** to vypne.
+> Note: AI je pre dospelých (18+); daili sa opýta raz. Fotka ide na prečítanie do AI od Googlu, bez údajov z fotoaparátu, napríklad polohy, a potom sa vymaže. daili sa ťa najprv opýta a **Nastavenia** → **Funkcie AI (Google Gemini)** to vypne.
 
 > Note: Prečítanie fotky spotrebuje jednu akciu AI. Každá rodina má mesačne 3 akcie AI zadarmo; Daili Plus dáva 30.

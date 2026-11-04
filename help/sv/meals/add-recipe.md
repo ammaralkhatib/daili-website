@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Lägg till ett recept
 summary: Samla familjens recept på ett ställe, med ingredienser, steg och ett foto.
 keywords: recept, lägg till recept, kokbok, receptsamling, ingredienser, matlagning, rätt, foto, familjerecept
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Mormors lasagne hör hemma i familjens receptsamling, där alla kan hitta den.
 
@@ -17,4 +17,8 @@ Mormors lasagne hör hemma i familjens receptsamling, där alla kan hitta den.
 
 För att ändra ett recept senare öppnar du det, trycker på **⋮** högst upp och sedan på **Redigera**.
 
+I ett recept lägger **Planera** in det på matsedeln: välj en dag, en måltid och antal portioner. Receptets källa är den lilla etiketten under titeln, bredvid tiden och portionerna.
+
 > Note: Recepten tillhör hela familjen. Alla kan öppna dem, och alla kan ändra dem.
+
+> Note: Att radera ett recept påverkar inte matsedeln. De planerade måltiderna finns kvar, med receptets namn.

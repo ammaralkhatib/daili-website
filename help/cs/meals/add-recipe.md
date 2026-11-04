@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Přidat recept
 summary: Měj rodinné recepty na jednom místě, se surovinami, postupem a fotkou.
 keywords: recept, přidat recept, kuchařka, receptář, suroviny, vaření, jídlo, fotka, rodinné recepty
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Babiččiny lasagne patří do rodinného receptáře, kde je najde každý.
 
@@ -17,4 +17,8 @@ Babiččiny lasagne patří do rodinného receptáře, kde je najde každý.
 
 Pokud chceš recept později změnit, otevři ho, nahoře klepni na **⋮** a pak na **Upravit**.
 
+V receptu ho tlačítko **Naplánovat** dá do jídelníčku: vyber den, jídlo a porce. Zdroj receptu ukazuje malý štítek pod názvem, vedle času a porcí.
+
 > Note: Recepty patří celé rodině. Otevřít je může každý a změnit je může kdokoli.
+
+> Note: Smazání receptu jídelníček neovlivní. Jeho naplánovaná jídla zůstanou, s názvem receptu.

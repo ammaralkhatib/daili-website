@@ -5,7 +5,7 @@ summary: Écris une note ou partage un lien depuis n’importe quelle app. Les n
 keywords: note, note rapide, lien, partager, liste de contrôle, rappel, supprimées récemment, résumer, gras, italique, titre, mise en forme
 tipTitle: Partage un lien vers daili pour le garder
 tipBody: Partage une vidéo, un post ou une page depuis n’importe quelle app vers daili : ça devient une note, privée tant que tu ne la partages pas.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Une note, c’est un **Titre**, du texte, ou les deux, avec des listes à puces et des listes de contrôle.
 
@@ -30,6 +30,6 @@ Les notes supprimées attendent 30 jours sous **⋯** → **Supprimées récemme
 
 ![Une note. Le groupe Daili Plus avec les deux lignes « En faire un événement, une tâche ou une liste de courses » et « Résumer » est entouré.](notes-ai)
 
-Dans une note, sous **Daili Plus**, **En faire un événement, une tâche ou une liste de courses** et **Résumer** utilisent chacun une action IA.
+Dans une note, sous **Daili Plus**, **En faire un événement, une tâche ou une liste de courses** et **Résumer** utilisent chacun une action IA, pour les adultes (18+).
 
 > Note: Sans internet, les nouvelles notes partent toutes seules plus tard.

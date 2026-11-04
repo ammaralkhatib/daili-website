@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: De maaltijden van de week plannen
-summary: Zet ontbijt, lunch en avondeten in de week van het gezin, uit je recepten of als gewone tekst.
-keywords: menuplanner, maaltijdplanner, weekmenu, avondeten, lunch, ontbijt, maaltijden plannen, wat eten we, menu, week
-translatedFrom: 2026-09-27
+summary: Zet de maaltijden van het gezin met een of twee tikken in de week, uit recente maaltijden, je recepten of met een nieuwe naam.
+keywords: menuplanner, maaltijdplanner, weekmenu, avondeten, wat eten we, drukke avond, wie kookt, porties, ruilen, verplaatsen, dubbel koken
+translatedFrom: 2026-11-05
 ---
-Beslis één keer wat de pot schaft, en het hele gezin kan het zien.
+Beslis één keer wat de pot schaft, en het hele gezin ziet het.
 
-![De menuplanner voor één week. De + naast maandag is omcirkeld.](meals-plan-week)
+![Het tabblad Planning met Plan mijn week, Boodschappen week en Vorige week overnemen, één regel per gepland avondeten en een chip voor een drukke avond op vrijdag. De + bij maandag is omcirkeld.](meals-plan-week)
 
-1. Tik op het startscherm op **Menuplanner**.
+1. Tik op het startscherm op **Menuplanner**. **Maaltijden** opent op **Planning**, naast **Recepten**.
 2. Tik bij een dag op **+**.
-3. Kies onder **Maaltijd** er een, zoals **Avondeten**.
-4. Kies **Recept** en tik op **Recept kiezen**. Of kies **Vrije tekst** en typ een **Titel**, zoals „Pizza-avond”.
-5. Tik op **Opslaan**.
+3. Tik op een recente maaltijd of een recept, en hij is gepland. Of typ een nieuwe naam. **Ongedaan maken** draait het terug.
+4. Tik op een geplande maaltijd. Daar stel je **Porties**, **Wie kookt** of een notitie in, of gebruik je **Verplaatsen/ruilen**, **Gerecht wijzigen** of **Verwijderen**.
 
-Met de pijlen ga je naar een andere week. Tik op een maaltijd om het recept te openen, hem te bewerken of te verwijderen.
+![Het venster om toe te voegen bij een leeg avondeten, met Restjes, Uit eten en Afhalen, en de schakelaar Recent | Alle recepten. De chip Restjes is omcirkeld.](meals-add-meal)
 
-Geen ideeën meer? De sterretjes bovenaan vragen daili om een avondeten voor elke vrije avond. Zie **Laat Daili je avondeten plannen**.
+![Het venster voor Oma's lasagne met porties, wie kookt, een notitie en de acties. Dubbel koken is omcirkeld.](meals-meal-sheet)
+
+Veeg over de rij onder de week voor **Plan mijn week**, **Boodschappen week** (zodra de week maaltijden heeft) en **Vorige week overnemen**.
+
+Een chip bij een dag toont een afspraak met een tijd rond etenstijd, uit elke agenda die daili toont. Die dag staat in het venster om toe te voegen: "Drukke avond, dus snelle gerechten eerst".
+
+Het schuifregelaar-icoon bovenaan opent **Maaltijdinstellingen**. Een nieuw gezin begint met de vraag **Welke maaltijden plan je?**

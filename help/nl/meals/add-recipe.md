@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Een recept toevoegen
 summary: Bewaar de recepten van het gezin op één plek, met ingrediënten, stappen en een foto.
 keywords: recept, recept toevoegen, kookboek, receptenbox, ingrediënten, koken, gerecht, foto, familierecepten
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Oma’s lasagne hoort in de receptenbox van het gezin, waar iedereen hem kan vinden.
 
@@ -17,4 +17,8 @@ Oma’s lasagne hoort in de receptenbox van het gezin, waar iedereen hem kan vin
 
 Om een recept later te wijzigen, open je het, tik je bovenaan op **⋮** en dan op **Bewerken**.
 
+In een recept zet **Plannen** het in de menuplanner: kies een dag, een maaltijd en de porties. De bron staat in het kleine label onder de titel, naast de tijd en de porties.
+
 > Note: Recepten zijn van het hele gezin. Iedereen kan ze openen, en iedereen kan ze wijzigen.
+
+> Note: Een recept verwijderen verandert niets aan de menuplanner. De geplande maaltijden blijven staan, met de naam van het recept.

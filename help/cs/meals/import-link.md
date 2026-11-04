@@ -5,7 +5,7 @@ summary: Vlož odkaz na stránku s receptem a daili za tebe vyplní suroviny, po
 keywords: import, odkaz, url, web, recept, uložit recept, blog, vložit odkaz, internet, zkopírovat recept
 tipTitle: Ukládej recepty z jakéhokoli webu
 tipBody: Vlož odkaz na stránku s receptem a daili za tebe vyplní suroviny i postup.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-05
 ---
 Na internetu se objevil dobrý recept? Ulož si ho bez opisování.
 
@@ -17,5 +17,7 @@ Na internetu se objevil dobrý recept? Ulož si ho bez opisování.
 4. Zkontroluj, co daili našlo, a oprav, co nesedí. Pak klepni na **Uložit**.
 
 Pokud stránka nemá data receptu, daili i tak uloží název a fotku. Suroviny a postup pak doplň ručně.
+
+Rychleji: v prohlížeči nebo v aplikaci YouTube sdílej stránku do **daili** a vyber **Recept**.
 
 > Note: Odkazy z Instagramu a TikToku data receptu neobsahují. Zkopíruj místo toho text receptu a použij **Vložit text receptu**. Pro YouTube použij **Z videa na YouTube**.

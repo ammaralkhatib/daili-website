@@ -2,8 +2,8 @@
 id: start-today
 title: Skärmen I dag
 summary: Allt som händer i dag, i en lista: händelser, uppgifter, inköp och måltider.
-keywords: i dag, idag, dagsplan, dagligen, översikt, vad händer, schema, att göra i dag, plan för dagen, väder
-translatedFrom: 2026-10-12
+keywords: i dag, idag, dagsplan, dagligen, översikt, vad händer, schema, att göra i dag, i kväll, middag, väder
+translatedFrom: 2026-11-05
 ---
 I dag visar på en skärm vad som händer i din familj i dag.
 
@@ -15,5 +15,7 @@ I dag visar på en skärm vad som händer i din familj i dag.
 4. Gå tillbaka för att komma till startskärmen.
 
 När vädret är på ligger dess kort högst upp. Dra nedåt för att uppdatera det, eller tryck på det för att öppna skärmen **Väder**.
+
+Under **Mat i dag** visar **I kväll** kvällens middag, med **Recept** om den har ett. Inget planerat än? Tryck på en av 3 måltider ni ofta äter för att planera den, eller på **Planera veckan**.
 
 Avsnitt utan innehåll förblir dolda. En ledig dag ser du **Inget på gång i dag**.

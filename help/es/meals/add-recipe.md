@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Añadir una receta
 summary: Guarda las recetas de la familia en un solo sitio, con ingredientes, pasos y una foto.
 keywords: receta, añadir receta, recetario, libro de recetas, ingredientes, cocinar, plato, foto, recetas de familia
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 La lasaña de la abuela tiene que estar en el recetario de la familia, donde todos puedan encontrarla.
 
@@ -17,4 +17,8 @@ La lasaña de la abuela tiene que estar en el recetario de la familia, donde tod
 
 Para cambiar una receta más tarde, ábrela, toca **⋮** arriba y luego **Editar**.
 
+En una receta, **Planear** la pone en el menú: elige un día, una comida y las porciones. Su origen es la pequeña etiqueta bajo el título, junto al tiempo y las porciones.
+
 > Note: Las recetas son de toda la familia. Todos pueden abrirlas, y cualquiera puede cambiarlas.
+
+> Note: Borrar una receta no toca el menú. Sus comidas planificadas se quedan, con el nombre de la receta.

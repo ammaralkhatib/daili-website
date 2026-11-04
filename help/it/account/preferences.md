@@ -2,8 +2,8 @@
 id: account-preferences
 title: Chiaro o scuro, lingua, formato ora, temperatura, vibrazione
 summary: Scegli la modalità scura, la tua lingua, l'ora a 12 o 24 ore, °C o °F, se daili vibra, e le sue funzioni IA.
-keywords: modalità scura, tema, aspetto, lingua, 24 ore, formato ora, temperatura, celsius, fahrenheit, vibrazione, ia, gemini
-translatedFrom: 2026-10-30
+keywords: modalità scura, tema, aspetto, lingua, 24 ore, formato ora, temperatura, celsius, fahrenheit, vibrazione, ia, maggiorenne
+translatedFrom: 2026-11-05
 ---
 Tocca la tua foto in alto nella schermata iniziale per aprire **Impostazioni**. Queste opzioni sono sotto **Generali**.
 
@@ -11,11 +11,11 @@ Tocca la tua foto in alto nella schermata iniziale per aprire **Impostazioni**. 
 
 1. **Lingua**: scegli una delle lingue di daili, oppure **Lingua del sistema** per seguire il telefono.
 2. **Formato ora**: **24 ore**, **12 ore**, oppure **Sistema** per seguire il telefono.
-3. **Aspetto**: **Chiaro**, **Scuro** oppure **Sistema**. Sotto **Colore dell'app**, scegli **verde daili** o **Il mio colore**. Il colore tinge pulsanti, link e schede.
+3. **Aspetto**: **Chiaro**, **Scuro** oppure **Sistema**. Sotto **Colore dell'app**, scegli **verde daili** o **Il mio colore**.
 4. **Vibrazione**: una vibrazione quando qualcosa è fatto, salvato o eliminato.
 5. **Meteo su Oggi**: la scheda del meteo in cima alla schermata **Oggi**.
-6. **Unità di temperatura**: **Automatica** segue la regione del telefono, oppure scegli °C o °F. Vento e pioggia cambiano di conseguenza.
-7. **Funzioni IA (Google Gemini)**: permette all'IA di Google di leggere le tue foto, i link video e i tuoi desideri per i pasti. Disattivate? daili te lo chiede di nuovo la prossima volta.
+6. **Unità di temperatura**: **Automatica** segue la regione del telefono, oppure scegli °C o °F.
+7. **Funzioni IA (Google Gemini)**: permette all'IA di Google di leggere le tue foto, i link video e i tuoi desideri per i pasti. Disattivate? daili te lo chiede di nuovo la prossima volta. Solo per adulti (18+); finché non confermi, sotto compare **Ho 18 anni o più**.
 
 ![La scheda Generali. La riga Unità di temperatura, impostata su Automatica, è cerchiata.](account-temperature)
 

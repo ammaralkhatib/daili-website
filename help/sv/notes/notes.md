@@ -5,7 +5,7 @@ summary: Skriv en anteckning eller dela en länk från vilken app som helst. Ant
 keywords: anteckning, snabbanteckning, länk, dela, checklista, påminnelse, nyligen raderade, sammanfatta, fetstil, kursiv, rubrik, formatering
 tipTitle: Dela en länk till daili för att spara den
 tipBody: Dela en video, ett inlägg eller en sida från vilken app som helst till daili – det blir en anteckning, privat tills du delar den.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 En anteckning är en **Titel**, text eller båda, med punktlistor och checklistor.
 
@@ -30,6 +30,6 @@ Raderade anteckningar ligger kvar i 30 dagar under **⋯** → **Nyligen raderad
 
 ![En anteckning. Gruppen Daili Plus med de två raderna "Gör en händelse, uppgift eller inköpslista av det här" och "Sammanfatta" är inringad.](notes-ai)
 
-Under **Daili Plus** i en anteckning använder **Gör en händelse, uppgift eller inköpslista av det här** och **Sammanfatta** en AI-åtgärd var.
+Under **Daili Plus** i en anteckning använder **Gör en händelse, uppgift eller inköpslista av det här** och **Sammanfatta** en AI-åtgärd var, för vuxna (18+).
 
 > Note: Offline skickas nya anteckningar av sig själva senare.

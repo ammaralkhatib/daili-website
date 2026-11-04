@@ -5,7 +5,7 @@ summary: Fotografeer een schoolbrief, uitnodiging of flyer — daili haalt de da
 keywords: foto, scannen, brief, uitnodiging, flyer, datums, ai, camera, school, foto lezen
 tipTitle: Maak van een schoolbrief afspraken
 tipBody: Tik in Nieuwe afspraak op het scanicoon, fotografeer de brief, en daili vult de datums in.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Datums op papier? Het scanicoon in **Nieuwe afspraak** leest ze.
 
@@ -19,6 +19,6 @@ Datums op papier? Het scanicoon in **Nieuwe afspraak** leest ze.
 
 Gedrukte tekst werkt het best, handschrift minder. Bij een pdf fotografeer je de pagina.
 
-> Note: De foto gaat naar de AI van Google om gelezen te worden en wordt daarna verwijderd, zonder cameragegevens zoals de locatie. daili vraagt het je eerst, en via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
+> Note: AI is voor volwassenen (18+); daili vraagt het één keer. De foto gaat naar de AI van Google om gelezen te worden en wordt daarna verwijderd, zonder cameragegevens zoals de locatie. daili vraagt het je eerst, en via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
 
 > Note: Een fotolezing kost één AI-actie. Elk gezin krijgt 3 AI-acties per maand gratis; Daili Plus geeft er 30.

@@ -5,7 +5,7 @@ summary: Not yaz ya da herhangi bir uygulamadan bağlantı paylaş. Notlar sen p
 keywords: not, hızlı not, bağlantı, paylaş, kontrol listesi, hatırlatma, son silinenler, özetle, kalın, italik, başlık, biçimlendirme
 tipTitle: Saklamak için bir bağlantıyı daili ile paylaş
 tipBody: Herhangi bir uygulamadan bir videoyu, gönderiyi ya da sayfayı daili ile paylaş; not olur, sen paylaşana kadar gizli kalır.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Bir notta **Başlık**, metin ya da ikisi birden olur; madde işaretli listeler ve kontrol listeleri de.
 
@@ -30,6 +30,6 @@ Silinen notlar **⋯** → **Son silinenler** altında 30 gün bekler.
 
 ![Bir not. Daili Plus grubu, “Bundan etkinlik, görev veya alışveriş listesi oluştur” ve “Özetle” satırlarıyla daire içine alınmış.](notes-ai)
 
-Bir notta **Daili Plus** altındaki **Bundan etkinlik, görev veya alışveriş listesi oluştur** ve **Özetle** birer yapay zekâ işlemi kullanır.
+Bir notta **Daili Plus** altındaki **Bundan etkinlik, görev veya alışveriş listesi oluştur** ve **Özetle** birer yapay zekâ işlemi kullanır ve yetişkinler içindir (18+).
 
 > Note: Çevrimdışıyken yeni notlar sonra kendiliğinden gönderilir.

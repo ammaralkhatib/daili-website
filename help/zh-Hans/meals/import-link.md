@@ -3,9 +3,9 @@ id: meals-import-link
 title: 用网页链接保存食谱
 summary: 粘贴食谱页面的链接，daili 会帮你填好食材、步骤和照片。
 keywords: 导入, 链接, 网址, url, 网站, 食谱, 保存食谱, 博客, 粘贴链接, 网页
-translatedFrom: 2026-09-26
 tipTitle: 保存任何网站上的食谱
 tipBody: 粘贴食谱页面的链接，daili 会帮你填好食材和步骤。
+translatedFrom: 2026-11-05
 ---
 在网上看到好食谱？不用抄，直接保存。
 
@@ -17,5 +17,7 @@ tipBody: 粘贴食谱页面的链接，daili 会帮你填好食材和步骤。
 4. 检查 daili 找到的内容，改掉不对的地方。然后点**保存**。
 
 如果页面上没有食谱数据，daili 也会保存标题和照片。食材和步骤请自己添加。
+
+更快的方法：在浏览器或 YouTube 应用里，把页面分享到 **daili**，然后选**食谱**。
 
 > Note: Instagram 和 TikTok 的链接里没有食谱数据。请复制食谱文字，改用**粘贴食谱文字**。YouTube 视频请用**从YouTube视频**。

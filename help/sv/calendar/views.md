@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Kalendervyer: månad, vecka, dag, lista, personer och år
-summary: Byt mellan månad, vecka, 3 dagar, dag, lista, personer och år, och filtrera på person eller kategori.
-keywords: vy, månad, vecka, lista, filter, personer, kolumner, väggkalender, årsvy, lov, veckonummer, kalendervecka
-translatedFrom: 2026-10-30
+summary: Byt mellan månad, vecka, 3 dagar, dag, lista, personer och år, och filtrera på person, kategori eller kalender.
+keywords: vy, månad, vecka, lista, filter, personer, årsvy, dölj kalender, alla händelser, uppdatera, veckonummer
+translatedFrom: 2026-11-05
 ---
 Kalendern har sju vyer.
 
@@ -11,18 +11,20 @@ Kalendern har sju vyer.
 
 1. Tryck på **Kalender** på startskärmen och sedan på **Vy** längst ned.
 2. Välj **Månad**, **Vecka**, **3 dagar**, **Dag**, **Lista**, **Personer** eller **År**.
-3. För att bara se vissa personer eller kategorier trycker du på **Filter** och väljer dem. Barn finns också där.
+3. För att bara se vissa personer eller kategorier trycker du på **Filter** och väljer dem.
 
-I vyn **Personer** får varje person en egen kolumn, som på en väggkalender. Knappen uppe till vänster döljer kolumner eller ändrar deras ordning. Tryck på en tom plats för att lägga till en händelse för den personen.
+I vyn **Personer** får varje person en egen kolumn, som på en väggkalender. Knappen uppe till vänster döljer kolumner eller ändrar deras ordning.
 
 ![Vyn Personer med en kolumn var för Lena, Marco och Emma. Kolumnrubrikerna är inringade.](calendar-people-view)
 
-I vyn **År** syns bara heldags- och flerdagshändelser, som skollov och resor, i varje persons färg. Tryck på en person för att dölja den, eller på en månad för att öppna den.
+I vyn **År** syns heldags- och flerdagshändelser, som skollov och resor. **Alla händelser** lägger till händelser med tid, som endagsstaplar. Tryck på en månad för att öppna den.
 
-![Vyn År med lov och resor som färgade staplar. Personerna högst upp är inringade.](calendar-year-view)
+![Vyn År med lov och resor. Knappen Alla händelser är inringad.](calendar-year-view)
 
-På app.daili.app öppnar tangenterna P och Y de två vyerna.
+Under **Kalendrar** i **Filter** döljer du **Familjekalender** eller en länkad kalender eller telefonkalender. Den här telefonen kommer ihåg det för varje familj. Startskärmen och widgetarna visar allt.
 
-Kugghjulet → **Visa i kalendern** lägger till födelsedagar, helgdagar, måltider, uppgifter, anteckningar med påminnelse och räkningar. Slår du på **Veckonummer** där står W44 på veckans första dag.
+![Filtrera kalendern. Avsnittet Kalendrar med Familjekalender, Skola och Jobb är inringat.](calendar-filter-calendars)
 
-För **Filter** hör en händelse till de personer den är för, eller till den som skapade den om den är för alla.
+Dra nedåt i valfri vy för att ladda om den. Kugghjulet → **Visa i kalendern** lägger till födelsedagar, måltider, uppgifter och mer, och **Veckonummer**.
+
+På app.daili.app öppnar tangenterna P och Y Personer och År. Dolda kalendrar och kategorier, och **Alla händelser**, sparas bara i den webbläsaren.

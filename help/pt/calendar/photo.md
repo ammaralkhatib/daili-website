@@ -5,7 +5,7 @@ summary: Tire uma foto de um bilhete da escola, um convite ou um folheto — o d
 keywords: foto, escanear, carta, convite, folheto, datas, ia, câmera, escola, ler foto
 tipTitle: Transforme um bilhete da escola em eventos
 tipBody: Toque no ícone de escanear em Evento novo, fotografe o bilhete e o daili preenche as datas.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Datas no papel? O ícone de escanear em **Evento novo** lê para você.
 
@@ -19,6 +19,6 @@ Datas no papel? O ícone de escanear em **Evento novo** lê para você.
 
 Texto impresso funciona melhor, letra à mão nem tanto. Para um PDF, fotografe a página.
 
-> Note: A foto vai para a IA do Google para ser lida e depois é apagada, sem dados da câmera como a localização. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
+> Note: A IA é só para adultos (18+); o daili pergunta uma vez. A foto vai para a IA do Google para ser lida e depois é apagada, sem dados da câmera como a localização. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
 
 > Note: Ler uma foto usa uma ação de IA. Toda família ganha 3 ações de IA grátis por mês; o Daili Plus dá 30.

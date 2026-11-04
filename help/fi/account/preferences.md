@@ -2,8 +2,8 @@
 id: account-preferences
 title: Vaalea tai tumma, kieli, ajan muoto, lämpötila, värinä
 summary: Valitse tumma tila, kielesi, 12 tai 24 tunnin kello, °C tai °F, väriseekö daili, ja sen tekoälyominaisuudet.
-keywords: tumma tila, teema, ulkoasu, kieli, 24 tuntia, ajan muoto, lämpötila, celsius, fahrenheit, värinä, tekoäly, gemini
-translatedFrom: 2026-10-30
+keywords: tumma tila, teema, ulkoasu, kieli, 24 tuntia, ajan muoto, lämpötila, celsius, fahrenheit, värinä, tekoäly, 18 vuotta täyttänyt
+translatedFrom: 2026-11-05
 ---
 Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löytyvät kortilta **Yleiset**.
 
@@ -11,11 +11,11 @@ Avaa **Asetukset** napauttamalla kuvaasi aloitusnäytön yläosassa. Nämä löy
 
 1. **Kieli**: valitse yksi dailin kielistä tai **Järjestelmän oletus**, jolloin kieli seuraa puhelinta.
 2. **Ajan muoto**: **24 tuntia**, **12 tuntia** tai **Järjestelmä**, jolloin se seuraa puhelinta.
-3. **Ulkoasu**: **Vaalea**, **Tumma** tai **Järjestelmä**. Valitse kohdasta **Sovelluksen väri** joko **daili-vihreä** tai **Oma värini**. Väri sävyttää painikkeet, linkit ja kortit.
+3. **Ulkoasu**: **Vaalea**, **Tumma** tai **Järjestelmä**. Valitse kohdasta **Sovelluksen väri** joko **daili-vihreä** tai **Oma värini**.
 4. **Värinä**: värähdys, kun jotain on tehty, tallennettu tai poistettu.
 5. **Sää Tänään-näkymässä**: sääkortti näkymän **Tänään** yläosassa.
-6. **Lämpötilan yksikkö**: **Automaattinen** seuraa puhelimen aluetta, tai valitse °C tai °F. Tuulen ja sateen yksiköt vaihtuvat sen mukana.
-7. **Tekoälyominaisuudet (Google Gemini)**: antaa Googlen tekoälyn lukea kuvasi, videolinkit ja ateriatoiveesi. Pois päältä? daili kysyy uudelleen ensi kerralla.
+6. **Lämpötilan yksikkö**: **Automaattinen** seuraa puhelimen aluetta, tai valitse °C tai °F.
+7. **Tekoälyominaisuudet (Google Gemini)**: antaa Googlen tekoälyn lukea kuvasi, videolinkit ja ateriatoiveesi. Pois päältä? daili kysyy uudelleen ensi kerralla. Aikuisille (18+); kunnes ikä on vahvistettu, sen alla näkyy **Olen 18 tai vanhempi**.
 
 ![Yleiset-kortti. Rivi Lämpötilan yksikkö, jonka arvona on Automaattinen, on ympyröity.](account-temperature)
 

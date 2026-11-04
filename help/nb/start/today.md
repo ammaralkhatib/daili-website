@@ -2,8 +2,8 @@
 id: start-today
 title: Skjermen I dag
 summary: Alt som skjer i dag, i én liste: hendelser, oppgaver, innkjøp og måltider.
-keywords: i dag, dagsorden, daglig, oversikt, hva skjer, program, frist i dag, plan for i dag, vær
-translatedFrom: 2026-10-12
+keywords: i dag, dagsorden, daglig, oversikt, hva skjer, program, frist i dag, i kveld, middag, vær
+translatedFrom: 2026-11-05
 ---
 I dag viser hva familien har på planen i dag, på én skjerm.
 
@@ -15,5 +15,7 @@ I dag viser hva familien har på planen i dag, på én skjerm.
 4. Gå tilbake for å komme til startskjermen igjen.
 
 Når været er på, ligger kortet øverst. Dra ned for å oppdatere det, eller trykk på det for å åpne skjermen **Vær**.
+
+Under **Mat i dag** viser **I kveld** kveldens middag, med **Oppskrift** hvis den har en. Ikke noe planlagt ennå? Trykk på ett av 3 måltider dere ofte spiser for å planlegge det, eller på **Planlegg uka**.
 
 Tomme seksjoner er skjult. På en fridag ser du **Ingenting står på planen i dag**.

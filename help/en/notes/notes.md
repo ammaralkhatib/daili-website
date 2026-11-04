@@ -7,7 +7,7 @@ keywords: note, quick note, link, share, checklist, reminder, recently deleted, 
 routes: /notes, /notes/new
 tryIt: /notes
 since: 1.7.0
-updated: 2026-10-27
+updated: 2026-11-05
 media: notes-list
 order: 1
 related: notes-pictures-voice, notes-find, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
@@ -38,6 +38,6 @@ Deleted notes wait 30 days under **⋯** → **Recently deleted**.
 
 ![A note. The Daili Plus group with the two rows "Make an event, task or shopping list from this" and "Summarize" is circled.](notes-ai)
 
-Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** each use one AI action.
+Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** each use one AI action, for adults (18+).
 
 > Note: Offline, new notes send themselves later.

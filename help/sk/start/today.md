@@ -2,8 +2,8 @@
 id: start-today
 title: Obrazovka Dnes
 summary: Všetko, čo je na dnes, v jednom zozname: udalosti, úlohy, nákupy a jedlá.
-keywords: dnes, program, denný, prehľad, čo je dnes, rozvrh, termín dnes, plán na dnes, počasie
-translatedFrom: 2026-10-12
+keywords: dnes, program, denný, prehľad, čo je dnes, rozvrh, termín dnes, dnes večer, večera, počasie
+translatedFrom: 2026-11-05
 ---
 Obrazovka Dnes ukazuje, čo má tvoja rodina dnes, na jednom mieste.
 
@@ -15,5 +15,7 @@ Obrazovka Dnes ukazuje, čo má tvoja rodina dnes, na jednom mieste.
 4. Choď späť a vrátiš sa na domovskú obrazovku.
 
 Keď je počasie zapnuté, jeho karta je navrchu. Potiahni nadol a obnovíš ju, alebo na ňu ťukni a otvorí sa obrazovka **Počasie**.
+
+V časti **Dnešné jedlá** ukazuje **Dnes večer** dnešnú večeru, s tlačidlom **Recept**, ak má recept. Ešte nič naplánované? Ťukni na jedno z 3 jedál, ktoré jete často, a naplánuješ ho, alebo na **Naplánovať týždeň**.
 
 Prázdne sekcie zostanú skryté. Vo voľný deň uvidíš **Dnes nemáš nič**.

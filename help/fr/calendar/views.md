@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Vues de l'agenda : mois, semaine, jour, liste, personnes et année
-summary: Passe du mois à la semaine, aux 3 jours, au jour, à la liste, aux personnes ou à l'année, et filtre par personne ou par catégorie.
-keywords: vue, affichage, mois, semaine, liste, filtre, personnes, colonnes, planning mural, année, vacances, numéro de semaine
-translatedFrom: 2026-10-30
+summary: Passe du mois à la semaine, aux 3 jours, au jour, à la liste, aux personnes ou à l'année, et filtre par personne, par catégorie ou par calendrier.
+keywords: vue, affichage, mois, semaine, liste, filtre, personnes, année, masquer un calendrier, tous les événements, actualiser, numéro de semaine
+translatedFrom: 2026-11-05
 ---
 L'agenda a sept vues.
 
@@ -11,18 +11,20 @@ L'agenda a sept vues.
 
 1. Sur l'écran d'accueil, touche **Agenda**, puis **Affichage** en bas.
 2. Choisis **Mois**, **Semaine**, **3 jours**, **Jour**, **Liste**, **Personnes** ou **Année**.
-3. Pour ne voir que certaines personnes ou catégories, touche **Filtre** et choisis-les. Les enfants y sont aussi.
+3. Pour ne voir que certaines personnes ou catégories, touche **Filtre** et choisis-les.
 
-La vue **Personnes** donne une colonne à chaque personne, comme un planning mural. Le bouton en haut à gauche masque ou réordonne les colonnes. Touche un espace vide pour ajouter un événement pour cette personne.
+La vue **Personnes** donne une colonne à chaque personne, comme un planning mural. Le bouton en haut à gauche masque ou réordonne les colonnes.
 
 ![La vue Personnes avec une colonne pour Lena, Marco et Emma. Les en-têtes des colonnes sont entourés.](calendar-people-view)
 
-La vue **Année** ne montre que les événements sur la journée entière ou sur plusieurs jours, comme les vacances scolaires et les voyages, dans la couleur de chaque personne. Touche une personne pour la masquer, ou un mois pour l'ouvrir.
+La vue **Année** montre les événements sur la journée entière ou sur plusieurs jours, comme les vacances scolaires et les voyages. **Tous les événements** ajoute les événements avec une heure, en barres d'un jour. Touche un mois pour l'ouvrir.
 
-![La vue Année avec les vacances et les voyages en barres de couleur. Les pastilles des personnes en haut sont entourées.](calendar-year-view)
+![La vue Année avec les vacances et les voyages. La pastille Tous les événements est entourée.](calendar-year-view)
 
-Sur app.daili.app, les touches P et Y les ouvrent.
+Sous **Calendriers** dans **Filtre**, masque **Calendrier familial** ou un calendrier lié ou du téléphone. Ce téléphone s'en souvient pour chaque famille. L'écran d'accueil et les widgets montrent tout.
 
-La roue dentée → **Afficher dans l'agenda** ajoute les anniversaires, les jours fériés, les repas, les tâches, les notes avec un rappel et les factures. Au même endroit, **Numéros de semaine** affiche W44 sur le premier jour de chaque semaine.
+![Filtrer le calendrier. La section Calendriers avec Calendrier familial, École et Travail est entourée.](calendar-filter-calendars)
 
-Pour **Filtre**, un événement appartient aux personnes pour qui il est, ou à la personne qui l'a créé s'il est pour tout le monde.
+Tire vers le bas sur n'importe quelle vue pour l'actualiser. La roue dentée → **Afficher dans l'agenda** ajoute les anniversaires, les repas, les tâches et plus, et **Numéros de semaine**.
+
+Sur app.daili.app, les touches P et Y ouvrent Personnes et Année. Les calendriers et catégories masqués, et **Tous les événements**, restent dans ce navigateur.

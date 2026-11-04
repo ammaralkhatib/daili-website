@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Ein Rezept hinzufügen
 summary: Sammle die Rezepte der Familie an einem Ort, mit Zutaten, Schritten und einem Foto.
 keywords: rezept, rezept hinzufügen, kochbuch, rezeptsammlung, zutaten, kochen, gericht, foto, familienrezepte
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Omas Lasagne gehört in die Rezeptsammlung der Familie, wo alle sie finden.
 
@@ -17,4 +17,8 @@ Omas Lasagne gehört in die Rezeptsammlung der Familie, wo alle sie finden.
 
 Um ein Rezept später zu ändern, öffne es, tippe oben auf **⋮** und dann auf **Bearbeiten**.
 
+In einem Rezept setzt **Einplanen** es auf den Essensplan: Wähl einen Tag, eine Mahlzeit und die Portionen. Seine Quelle steht im kleinen Etikett unter dem Titel, neben Zeit und Portionen.
+
 > Note: Rezepte gehören der ganzen Familie. Alle können sie öffnen, und alle können sie ändern.
+
+> Note: Löschst du ein Rezept, bleibt der Essensplan unberührt. Die geplanten Gerichte bleiben, mit dem Namen des Rezepts.

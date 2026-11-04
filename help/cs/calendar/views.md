@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Zobrazení kalendáře: měsíc, týden, den, agenda, lidé a rok
-summary: Přepínej mezi měsícem, týdnem, 3 dny, dnem, agendou, lidmi a rokem a filtruj podle osoby nebo kategorie.
-keywords: zobrazení, měsíc, týden, agenda, filtr, lidé, sloupce, nástěnný plánovač, rok, prázdniny, číslo týdne, kalendářní týden
-translatedFrom: 2026-10-30
+summary: Přepínej mezi měsícem, týdnem, 3 dny, dnem, agendou, lidmi a rokem a filtruj podle osoby, kategorie nebo kalendáře.
+keywords: zobrazení, měsíc, týden, agenda, filtr, lidé, rok, skrýt kalendář, všechny události, obnovit, číslo týdne
+translatedFrom: 2026-11-05
 ---
 Kalendář má sedm zobrazení.
 
@@ -11,18 +11,20 @@ Kalendář má sedm zobrazení.
 
 1. Na domovské obrazovce klepni na **Kalendář** a pak dole na **Zobrazení**.
 2. Vyber **Měsíc**, **Týden**, **3 dny**, **Den**, **Agenda**, **Lidé** nebo **Rok**.
-3. Pokud chceš vidět jen některé lidi nebo kategorie, klepni na **Filtr** a vyber je. Děti tam jsou taky.
+3. Pokud chceš vidět jen některé lidi nebo kategorie, klepni na **Filtr** a vyber je.
 
-Zobrazení **Lidé** dá každému člověku vlastní sloupec, jako nástěnný plánovač. Tlačítko vlevo nahoře sloupce skryje nebo přeřadí. Klepnutím na prázdné místo přidáš událost pro toho člověka.
+Zobrazení **Lidé** dá každému člověku vlastní sloupec, jako nástěnný plánovač. Tlačítko vlevo nahoře sloupce skryje nebo přeřadí.
 
 ![Zobrazení Lidé se sloupci Lena, Marco a Emma. Zakroužkovaná jsou záhlaví sloupců.](calendar-people-view)
 
-Zobrazení **Rok** ukazuje jen celodenní a vícedenní události, třeba školní prázdniny a výlety, v barvě každého člověka. Klepnutím na člověka ho skryješ, klepnutím na měsíc ho otevřeš.
+Zobrazení **Rok** ukazuje celodenní a vícedenní události, třeba školní prázdniny a výlety. **Všechny události** přidá události s časem, jako jednodenní pruhy. Klepnutím na měsíc ho otevřeš.
 
-![Zobrazení Rok s prázdninami a výlety jako barevnými pruhy. Zakroužkované jsou čipy lidí nahoře.](calendar-year-view)
+![Zobrazení Rok s prázdninami a výlety. Zakroužkovaný je čip Všechny události.](calendar-year-view)
 
-Na app.daili.app tato dvě zobrazení otevřou klávesy P a Y.
+V nabídce **Filtr** v části **Kalendáře** skryj **Rodinný kalendář** nebo propojený či telefonní kalendář. Tento telefon si to pamatuje pro každou rodinu zvlášť. Domovská obrazovka a widgety ukazují všechno.
 
-Ozubené kolečko → **Zobrazit v kalendáři** přidá narozeniny, svátky, jídla, úkoly, poznámky s připomínkou a účty. Volba **Čísla týdnů** tamtéž ukáže W44 u prvního dne každého týdne.
+![Filtrovat kalendář. Zakroužkovaná je část Kalendáře s volbami Rodinný kalendář, Škola a Práce.](calendar-filter-calendars)
 
-Pro **Filtr** patří událost lidem, pro které je, nebo tomu, kdo ji vytvořil, pokud je pro všechny.
+Stažením dolů kterékoli zobrazení obnovíš. Ozubené kolečko → **Zobrazit v kalendáři** přidá narozeniny, jídla, úkoly a další, a taky **Čísla týdnů**.
+
+Na app.daili.app otevřou klávesy P a Y zobrazení Lidé a Rok. Skryté kalendáře a kategorie i volbu **Všechny události** si pamatuje jen daný prohlížeč.

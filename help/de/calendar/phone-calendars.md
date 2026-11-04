@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Weitere Kalender hinzufügen: Handy, Google, Links und Dateien
 summary: Zeig die Kalender deines Handys oder Google Kalender neben den Familienterminen, folge einem Schulkalender oder importiere eine Datei.
-keywords: handy-kalender, apple kalender, google kalender, kalender hinzufügen, abonnieren, link, schulkalender, arbeitskalender, ics, gehört zu, in daili kopieren
+keywords: handy-kalender, google kalender, kalender hinzufügen, abonnieren, link, schulkalender, arbeitskalender, nur ich, in daili bearbeiten, verknüpft, aktualisieren
 tipTitle: Die Kalender deines Handys in daili
 tipBody: Arbeits-, Schul- oder Sportkalender können neben den Familienterminen erscheinen.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Öffne den **Kalender**, tippe auf das Zahnrad und dann unter **Andere Kalender** auf **Kalender hinzufügen**.
 2. **Apple Kalender** (iPhone) oder **Handy-Kalender** (Android): die Kalender deines Handys.
-3. **Google Kalender**: Melde dich an, tippe auf **Verknüpfen** und wähle dann, wer welchen Kalender sieht.
-4. **Per Link abonnieren**: ein Schul- oder Vereinskalender, der sich selbst aktualisiert. Nur für Admins. daili warnt dich, wenn deine Familie ihn schon hat.
-5. **Datei importieren (.ics)**: kopiert die Termine einmalig in daili.
+3. **Google Kalender**: Tippe auf **Verbinden**, melde dich an und wähle dann Kalender aus. **Nur ich** hält einen davon privat.
+4. **Per Link abonnieren**: ein Schul- oder Arbeitskalender, für alle (Admins) oder **Nur ich**.
+5. **Datei importieren (.ics)**: kopiert die Termine einmalig hinein.
 
-![Das Fenster Kalender bearbeiten für einen verknüpften Kalender. Die Zeile Gehört zu, auf Emma gestellt, ist eingekreist.](calendar-other-calendars)
+![Kalender hinzufügen (Link) mit Name, Adresse und Farbe. Der Schalter Nur ich ist eingekreist.](calendar-link-only-me)
 
-Jeder Kalender hat die Zeile **Gehört zu**: Abonnierte Links stehen anfangs auf **Alle**, Handy- und Google-Kalender auf dir. Seine Termine bekommen die Farbe dieser Person und richten sich nach **Filter**.
+Bei einem verknüpften Kalender legt **Gehört zu** seine Farbe und seine Person in **Filter** fest. Um Google sofort abzurufen, zieh nach unten oder tippe auf **⋮** → **Jetzt aktualisieren**.
 
-Zum Ändern tippe auf die Handy- oder Google-Zeile, bei einem Link auf **⋮** → **Bearbeiten**. Mit **⋮** → **Entfernen** (Google: **Trennen**) nimmst du einen Kalender heraus.
+![Ein synchronisierter Schulausflug aus dem verknüpften Kalender Schule. In Daili bearbeiten ist eingekreist.](calendar-linked-event)
 
-Diese Termine lassen sich hier nicht ändern. Tippe auf einen → **In Daili kopieren**, um einen eigenen daraus zu machen.
+Tippe auf einen Termin → **In Daili bearbeiten**, um Personen, Erinnerungen oder Notizen hinzuzufügen. Er bleibt verknüpft (**Aus Schule**): Neue Zeiten, Titel und Orte kommen von selbst. Hast du es auch geändert? **Übernehmen** oder **Meins behalten**. Dort gelöscht? **Löschen** oder **Behalten**. Verknüpfte Termine können sich nicht wiederholen.
 
-> Note: Handy-Kalender und wem sie gehören, bleiben auf diesem Handy: Nichts wird hochgeladen oder deiner Familie gezeigt.
+> Note: Handy-Kalender bleiben auf diesem Handy. **In Daili bearbeiten** blendet den Handy-Termin hier aus, bis du deinen löschst. Aktualisierungen gibt es dabei nicht.

@@ -5,19 +5,19 @@ summary: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve
 keywords: youtube, video, tarif videosu, yemek videosu, video içe aktar, bağlantı, link, yapay zeka, tarifi kaydet, shorts
 tipTitle: Bir YouTube videosunu tarife dönüştür
 tipBody: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve adımları senin için yazsın.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-YouTube'da bir yemek mi gördün? daili tarifi senin için yazabilir.
+YouTube'da bir yemek mi gördün? daili tarifi yazar.
 
 ![+ menüsü açık Tarifler ekranı. Bir YouTube videosundan daire içine alınmış.](meals-youtube)
 
 1. YouTube uygulamasında videonun bağlantısını kopyala (Paylaş → Bağlantıyı kopyala).
 2. Ana ekranda **Tarifler** kutucuğuna, sonra **+** simgesine, sonra **Bir YouTube videosundan** seçeneğine dokun.
 3. Bağlantıyı **YouTube bağlantısı** alanına yapıştır ya da **Yapıştır** düğmesine dokun. Sonra **Videoyu oku** düğmesine dokun.
-4. daili videoyu okur — bu bir dakika kadar sürebilir. daili'nin bulduklarını kontrol et ve yanlış olanları düzelt. Sonra **Kaydet** düğmesine dokun.
+4. daili'nin bulduklarını kontrol et, sonra **Kaydet** düğmesine dokun.
 
-Tarif videonun açıklamasındaysa bu hızlı olur. Yoksa daili videoyu izler.
+Tarif daili'nin dilinde çıkar. Kendi fotoğrafın yoksa en üstte videonun resmi görünür. YouTube'da izlemek için ▶ simgesine dokun. Bir resmi korumak için kendi fotoğrafını ekle.
 
-Tarif telefonunun dilinde çıkar. İlk seferde daili, Google'ın yapay zekâsını (Gemini) kullanmadan önce sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
+Bir videoyu yapay zekâ ile okumak yetişkinler içindir (18+); daili bir kez sorar. Açıklamasında bir tarif sayfasına bağlantı olan bir videoyu herkes içe aktarabilir. app.daili.app'te yalnızca bu videolar çalışır.
 
-> Note: Yalnızca en fazla 25 dakikalık herkese açık videolar çalışır. Her video okuma bir yapay zekâ işlemi kullanır. Her aile ayda 3 ücretsiz yapay zekâ işlemi alır; Daili Plus 30 verir.
+> Note: Yalnızca en fazla 25 dakikalık herkese açık videolar. Yapay zekâ ile bir video okuma bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 30 olur. Açıklamadaki bağlantıdan gelen tarif ücretsizdir.

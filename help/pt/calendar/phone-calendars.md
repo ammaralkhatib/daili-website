@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Adicionar outros calendários: seu celular, Google, links e arquivos
 summary: Mostre os calendários do celular ou o Google Agenda ao lado dos eventos da família, acompanhe um calendário da escola ou importe um arquivo.
-keywords: calendário do celular, calendário da apple, google agenda, adicionar calendário, assinar, link, calendário da escola, calendário do trabalho, ics, pertence a, copiar para o daili
+keywords: calendário do celular, google agenda, adicionar calendário, assinar, link, calendário da escola, calendário do trabalho, só eu, editar no daili, vinculado, atualizar
 tipTitle: Veja os calendários do celular no daili
 tipBody: Calendários do trabalho, da escola ou do esporte podem aparecer ao lado dos eventos da família.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Abra o **Calendário**, toque na engrenagem e depois em **Adicionar um calendário**, em **Outros calendários**.
-2. **Calendário da Apple** (iPhone) ou **Calendários do celular** (Android): os calendários do próprio celular.
-3. **Google Agenda**: entre, toque em **Ligar** e escolha quem vê cada calendário.
-4. **Assinar com um link**: um calendário da escola ou do clube que se atualiza sozinho. Só para admins. O daili avisa se sua família já tem esse calendário.
-5. **Importar um arquivo (.ics)**: copia os eventos para o daili uma única vez.
+2. **Calendário da Apple** (iPhone) ou **Calendários do celular** (Android): os calendários do seu celular.
+3. **Google Agenda**: toque em **Conectar**, entre e escolha os calendários. **Só eu** deixa um deles privado.
+4. **Assinar com um link**: um calendário da escola ou do trabalho, para todos (admins) ou **Só eu**.
+5. **Importar um arquivo (.ics)**: copia os eventos uma única vez.
 
-![A janela Editar o calendário de um calendário ligado. A linha Pertence a, com Emma, está circulada.](calendar-other-calendars)
+![Adicionar calendário (link) com nome, endereço e cor. A chave Só eu está circulada.](calendar-link-only-me)
 
-Cada calendário tem a linha **Pertence a**: os links assinados começam com **Todos**, os calendários do celular e do Google com você. Os eventos ganham a cor dessa pessoa e seguem o **Filtro**.
+Num calendário vinculado, **Pertence a** define a cor e a pessoa dele no **Filtro**. Para buscar o Google agora, puxe para baixo ou toque em **⋮** → **Atualizar agora**.
 
-Para mudar, toque na linha do celular ou do Google, ou, num link, em **⋮** → **Editar**. **⋮** → **Remover** (no Google: **Desligar**) tira um calendário.
+![Um Passeio escolar sincronizado do calendário vinculado Escola. Editar no Daili está circulado.](calendar-linked-event)
 
-Esses eventos não podem ser alterados aqui. Toque em um → **Copiar para o Daili** para criar o seu.
+Toque num evento → **Editar no Daili** para adicionar pessoas, lembretes ou notas. Ele continua vinculado (**De Escola**): novos horários, títulos e lugares chegam sozinhos. Você também tinha mudado isso? **Usar** ou **Manter o meu**. Foi apagado na origem? **Excluir** ou **Manter**. Eventos vinculados não podem se repetir.
 
-> Note: Os calendários do celular, e a quem eles pertencem, ficam neste celular: nada é enviado nem mostrado à sua família.
+> Note: Os calendários do celular ficam neste celular. **Editar no Daili** esconde aqui o evento do celular até você apagar o seu. Sem atualizações.

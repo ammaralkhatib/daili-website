@@ -1,9 +1,9 @@
 ---
 id: calendar-views
 title: Agendaweergaven: maand, week, dag, lijst, personen en jaar
-summary: Wissel tussen maand, week, 3 dagen, dag, lijst, personen en jaar, en filter op persoon of categorie.
-keywords: weergave, maand, week, lijst, filter, personen, kolommen, planbord, jaaroverzicht, vakanties, weeknummer, kalenderweek
-translatedFrom: 2026-10-30
+summary: Wissel tussen maand, week, 3 dagen, dag, lijst, personen en jaar, en filter op persoon, categorie of agenda.
+keywords: weergave, maand, week, lijst, filter, personen, jaaroverzicht, agenda verbergen, alle afspraken, vernieuwen, weeknummer
+translatedFrom: 2026-11-05
 ---
 De agenda heeft zeven weergaven.
 
@@ -11,18 +11,20 @@ De agenda heeft zeven weergaven.
 
 1. Tik op het startscherm op **Agenda** en dan onderaan op **Weergave**.
 2. Kies **Maand**, **Week**, **3 dagen**, **Dag**, **Lijst**, **Personen** of **Jaar**.
-3. Om alleen bepaalde mensen of categorieën te zien, tik je op **Filter** en kies je ze. Ook kinderen staan daar.
+3. Om alleen bepaalde mensen of categorieën te zien, tik je op **Filter** en kies je ze.
 
-In de weergave **Personen** krijgt ieder een eigen kolom, zoals op een planbord aan de muur. Met de knop linksboven verberg of orden je kolommen. Tik op een lege plek om een afspraak voor die persoon toe te voegen.
+In de weergave **Personen** krijgt ieder een eigen kolom, zoals op een planbord aan de muur. Met de knop linksboven verberg of orden je kolommen.
 
 ![De weergave Personen met een kolom voor Lena, Marco en Emma. De kolomkoppen zijn omcirkeld.](calendar-people-view)
 
-In de weergave **Jaar** zie je alleen afspraken van een hele dag of meer dagen, zoals schoolvakanties en reizen, in de kleur van elke persoon. Tik op iemand om die te verbergen, of op een maand om die te openen.
+In de weergave **Jaar** zie je afspraken van een hele dag of meer dagen, zoals schoolvakanties en reizen. **Alle afspraken** voegt afspraken met een tijd toe, als balkjes van één dag. Tik op een maand om die te openen.
 
-![De weergave Jaar met vakanties en reizen als gekleurde balken. De personen bovenaan zijn omcirkeld.](calendar-year-view)
+![De weergave Jaar met vakanties en reizen. De chip Alle afspraken is omcirkeld.](calendar-year-view)
 
-Op app.daili.app openen de toetsen P en Y deze twee weergaven.
+Onder **Agenda's** in **Filter** verberg je de **Gezinsagenda** of een gekoppelde of telefoonagenda. Deze telefoon onthoudt dat per gezin. Het startscherm en widgets tonen alles.
 
-Via het tandwiel → **Tonen in agenda** voeg je verjaardagen, feestdagen, maaltijden, taken, notities met een herinnering en rekeningen toe. Zet je daar **Weeknummers** aan, dan staat W44 op de eerste dag van elke week.
+![Agenda filteren. Het onderdeel Agenda's met Gezinsagenda, School en Werk is omcirkeld.](calendar-filter-calendars)
 
-Voor **Filter** hoort een afspraak bij de mensen voor wie hij is, of bij degene die hem maakte als hij voor iedereen is.
+Trek in elke weergave omlaag om te vernieuwen. Via het tandwiel → **Tonen in agenda** voeg je verjaardagen, maaltijden, taken en meer toe, en **Weeknummers**.
+
+Op app.daili.app openen de toetsen P en Y Personen en Jaar. Verborgen agenda's en categorieën, en **Alle afspraken**, blijven in die browser bewaard.

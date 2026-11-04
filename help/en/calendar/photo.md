@@ -7,10 +7,10 @@ keywords: photo, scan, letter, invitation, flyer, dates, ai, camera, school, rea
 routes: /calendar/new, /calendar/photo-review
 tryIt: /calendar/new
 since: 1.7.0
-updated: 2026-10-06
+updated: 2026-11-05
 media: calendar-photo
 order: 3
-related: calendar-add-event, calendar-edit-delete, meals-youtube, account-plus
+related: calendar-add-event, calendar-edit-delete, meals-share-sheet, meals-youtube, account-plus
 tipTitle: Turn a school letter into events
 tipBody: Tap the scan icon in New event, photograph the letter, and daili fills in the dates.
 tipPriority: 48
@@ -27,6 +27,6 @@ Dates on paper? The scan icon in **New event** reads them.
 
 Printed text works best, handwriting less so. For a PDF, photograph the page.
 
-> Note: The photo goes to Google's AI to be read, then is deleted, without camera data like location. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
+> Note: AI is for adults (18+); daili asks once. The photo goes to Google's AI to be read, then is deleted, without camera data like location. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
 > Note: A photo read uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 30.

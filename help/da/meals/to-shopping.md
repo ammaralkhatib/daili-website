@@ -5,17 +5,17 @@ summary: Tilføj alt, hvad en opskrift eller en hel uges mad kræver, til din in
 keywords: ingredienser, indkøbsliste, dagligvarer, indkøb, tilføj til liste, opskrift, madplan, købe
 tipTitle: Fra madplan til indkøbsliste
 tipBody: Planlæg ugens mad, og sæt så alle ingredienserne på din indkøbsliste i ét hug.
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-05
 ---
 Slut med at skrive ingredienser af i hånden.
 
 ![En opskrift med dens ingredienser. Indkøbskurvknappen øverst er markeret med en cirkel.](meals-to-shopping)
 
-1. Åbn en opskrift, og tryk på indkøbskurvknappen øverst. Eller tryk på kurveknappen i **Madplan** for at tage hele ugen med.
+1. Åbn en opskrift, og tryk på indkøbskurvknappen øverst. Eller tryk på **Handl til ugen** under ugen i **Madplan** for at tage hele ugen med.
 2. Vælg indkøbslisten under **Føj til**.
 3. Fjern fluebenet ved det, du allerede har derhjemme.
 4. Tryk på knappen forneden, fx **Tilføj 6 varer**.
 
 Tryk på **Åbn listen** i beskeden for at se dem.
 
-> Note: Fra madplanen giver kun måltider lavet ud fra en opskrift ingredienser. Måltider med fri tekst har ingen.
+> Note: Fra madplanen giver kun måltider lavet ud fra en opskrift ingredienser. Måltider uden opskrift har ingen.

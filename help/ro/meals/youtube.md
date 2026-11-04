@@ -5,19 +5,19 @@ summary: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine i
 keywords: youtube, video, videoclip, rețetă video, videoclip de gătit, import video, link, ai, salvează rețeta, shorts
 tipTitle: Transformă un videoclip YouTube într-o rețetă
 tipBody: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine ingredientele și pașii.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-Ai văzut un preparat pe YouTube? daili poate scrie rețeta pentru tine.
+Ai văzut un preparat pe YouTube? daili scrie rețeta.
 
 ![Ecranul Rețete cu meniul + deschis. Dintr-un videoclip YouTube este încercuit.](meals-youtube)
 
 1. Copiază linkul videoclipului în aplicația YouTube (Distribuie → Copiază linkul).
 2. Pe ecranul principal, apasă pe **Rețete**, apoi pe **+**, apoi pe **Dintr-un videoclip YouTube**.
 3. Lipește linkul la **Link YouTube** sau apasă pe **Lipește**. Apoi apasă pe **Citește videoclipul**.
-4. daili citește videoclipul — poate dura până la un minut. Verifică ce a găsit daili și corectează ce nu e în regulă. Apoi apasă pe **Salvează**.
+4. Verifică ce a găsit daili, apoi apasă pe **Salvează**.
 
-Dacă rețeta e în descrierea videoclipului, merge repede. Altfel, daili urmărește videoclipul.
+Rețeta iese în limba din daili. Fără o poză a ta, sus apare imaginea videoclipului. Apasă pe ▶ ca să-l vezi pe YouTube. Ca să păstrezi o imagine, adaugă o poză a ta.
 
-Rețeta apare în limba telefonului tău. Prima dată, daili te întreabă înainte să folosească AI-ul Google (Gemini); din **Setări** → **Funcții AI (Google Gemini)** le poți opri.
+Citirea unui videoclip cu AI e pentru adulți (18+); daili te întreabă o dată. Oricine poate importa un videoclip a cărui descriere are un link către o pagină cu rețetă. Pe app.daili.app merg doar aceste videoclipuri.
 
-> Note: Merg doar videoclipurile publice de până la 25 de minute. Citirea unui videoclip folosește o acțiune AI. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30.
+> Note: Doar videoclipuri publice de până la 25 de minute. Un videoclip citit cu AI folosește o acțiune AI: 3 pe lună sunt gratuite, Daili Plus oferă 30. O rețetă din linkul din descriere e gratuită.

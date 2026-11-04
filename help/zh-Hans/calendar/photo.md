@@ -5,7 +5,7 @@ summary: 拍下学校通知、请柬或传单，daili 帮你找出日期。
 keywords: 照片, 扫描, 通知, 请柬, 传单, 日期, ai, 相机, 学校, 读取照片
 tipTitle: 把学校通知变成日程
 tipBody: 在新的日程里点扫描图标，拍下通知，daili 会填好日期。
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 日期写在纸上？**新的日程**里的扫描图标会帮你读出来。
 
@@ -19,6 +19,6 @@ translatedFrom: 2026-10-06
 
 印刷文字效果最好，手写就差一些。PDF 的话，请拍下那一页。
 
-> Note: 照片会发送给 Google 的 AI 读取，随后删除，发送时不带位置等相机信息。daili 会先问你，在**设置** → **AI 功能（Google Gemini）**里可以关掉。
+> Note: AI 仅限成年人（18 岁以上）；daili 会问一次。照片会发送给 Google 的 AI 读取，随后删除，发送时不带位置等相机信息。daili 会先问你，在**设置** → **AI 功能（Google Gemini）**里可以关掉。
 
 > Note: 读取一张照片使用 1 次 AI 操作。每个家庭每月有 3 次免费的 AI 操作；Daili Plus 提供 30 次。

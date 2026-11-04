@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Aggiungere altri calendari: telefono, Google, link e file
 summary: Mostra i calendari del telefono o Google Calendar accanto agli eventi di famiglia, segui il calendario della scuola o importa un file.
-keywords: calendario del telefono, calendario apple, google calendar, aggiungere calendario, iscriversi, link, calendario scolastico, calendario di lavoro, ics, appartiene a, copia in daili
+keywords: calendario del telefono, google calendar, aggiungere calendario, iscriversi, link, calendario scolastico, calendario di lavoro, solo io, modifica in daili, collegato, aggiornare
 tipTitle: Vedi in daili i calendari del telefono
 tipBody: I calendari di lavoro, scuola o sport possono comparire accanto agli eventi di famiglia.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Apri **Calendario**, tocca l'ingranaggio, poi **Aggiungi un calendario** sotto **Altri calendari**.
 2. **Calendario Apple** (iPhone) o **Calendari del telefono** (Android): i calendari del tuo telefono.
-3. **Google Calendar**: accedi, tocca **Collega**, poi scegli chi vede ogni calendario.
-4. **Iscriviti con un link**: un calendario della scuola o di un club che si aggiorna da solo. Solo per gli amministratori. daili ti avvisa se la tua famiglia ce l'ha già.
-5. **Importa un file (.ics)**: copia gli eventi in daili una volta sola.
+3. **Google Calendar**: tocca **Collega**, accedi, poi scegli i calendari. **Solo io** ne tiene uno privato.
+4. **Iscriviti con un link**: un calendario della scuola o del lavoro, per tutti (amministratori) o **Solo io**.
+5. **Importa un file (.ics)**: copia gli eventi una volta sola.
 
-![Il pannello Modifica il calendario per un calendario collegato. La riga Appartiene a, impostata su Emma, è cerchiata.](calendar-other-calendars)
+![Aggiungi un calendario (link) con nome, indirizzo e colore. L'interruttore Solo io è cerchiato.](calendar-link-only-me)
 
-Ogni calendario ha la voce **Appartiene a**: i link a cui sei iscritto partono da **Tutti**, i calendari del telefono e di Google da te. I suoi eventi prendono il colore di quella persona e seguono il **Filtro**.
+La voce **Appartiene a** di un calendario collegato decide il suo colore e la sua persona nel **Filtro**. Per scaricare subito Google, trascina verso il basso, oppure **⋮** → **Aggiorna ora**.
 
-Per cambiarla, tocca la riga del telefono o di Google, oppure **⋮** → **Modifica** accanto a un link. **⋮** → **Rimuovi** (Google: **Scollega**) ne toglie uno.
+![Una Gita scolastica sincronizzata dal calendario collegato Scuola. Modifica in Daili è cerchiato.](calendar-linked-event)
 
-Questi eventi non si possono modificare qui. Toccane uno → **Copia in Daili** per crearne uno tuo.
+Tocca un evento → **Modifica in Daili** per aggiungere persone, promemoria o note. Resta collegato (**Da Scuola**): nuovi orari, titoli e luoghi arrivano da soli. L'avevi cambiato anche tu? **Usa** o **Tieni il mio**. Eliminato alla fonte? **Elimina** o **Tieni**. Gli eventi collegati non possono ripetersi.
 
-> Note: I calendari del telefono, e a chi appartengono, restano su questo telefono: non viene caricato né mostrato niente alla tua famiglia.
+> Note: I calendari del telefono restano su questo telefono. **Modifica in Daili** nasconde qui l'evento del telefono finché non elimini il tuo. Niente aggiornamenti.

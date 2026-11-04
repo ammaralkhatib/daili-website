@@ -5,7 +5,7 @@ summary: Skriv et notat eller del en lenke fra hvilken som helst app. Notater er
 keywords: notat, hurtignotat, lenke, del, sjekkliste, påminnelse, nylig slettet, oppsummer, fet, kursiv, overskrift, formatering
 tipTitle: Del en lenke med daili for å ta vare på den
 tipBody: Del en video, et innlegg eller en side fra hvilken som helst app med daili – det blir et notat, privat til du deler det.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Et notat er en **Tittel**, tekst eller begge deler, med punktlister og sjekklister.
 
@@ -30,6 +30,6 @@ Slettede notater venter i 30 dager under **⋯** → **Nylig slettet**.
 
 ![Et notat. Gruppen Daili Plus med de to radene «Lag en hendelse, oppgave eller handleliste av dette» og «Oppsummer» er ringet inn.](notes-ai)
 
-Under **Daili Plus** i et notat bruker **Lag en hendelse, oppgave eller handleliste av dette** og **Oppsummer** én KI-handling hver.
+Under **Daili Plus** i et notat bruker **Lag en hendelse, oppgave eller handleliste av dette** og **Oppsummer** én KI-handling hver, for voksne (18+).
 
 > Note: Uten internett sendes nye notater av seg selv senere.

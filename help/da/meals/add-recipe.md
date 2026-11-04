@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Tilføj en opskrift
 summary: Saml familiens opskrifter ét sted, med ingredienser, trin og et billede.
 keywords: opskrift, tilføj opskrift, kogebog, opskriftssamling, ingredienser, madlavning, ret, billede, familieopskrifter
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Mormors lasagne hører hjemme i familiens opskriftssamling, hvor alle kan finde den.
 
@@ -17,4 +17,8 @@ Mormors lasagne hører hjemme i familiens opskriftssamling, hvor alle kan finde 
 
 Vil du ændre en opskrift senere, så åbn den, tryk på **⋮** øverst og så på **Rediger**.
 
+I en opskrift sætter **Planlæg** den på madplanen: vælg en dag, et måltid og antal portioner. Opskriftens kilde er den lille etiket under titlen, ved siden af tiden og portionerne.
+
 > Note: Opskrifterne tilhører hele familien. Alle kan åbne dem, og alle kan ændre dem.
+
+> Note: Sletter du en opskrift, påvirker det ikke madplanen. De planlagte måltider bliver, med opskriftens navn.

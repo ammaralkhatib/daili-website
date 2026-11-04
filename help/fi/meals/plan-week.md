@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: Suunnittele viikon ateriat
-summary: Lisää aamiainen, lounas ja päivällinen perheen viikkoon, resepteistäsi tai pelkkänä tekstinä.
-keywords: ruokalista, ateriasuunnitelma, viikon menu, päivällinen, lounas, aamiainen, suunnittele ateriat, mitä syödään, menu, viikko
-translatedFrom: 2026-09-27
+summary: Lisää perheen ateriat viikkoon yhdellä tai kahdella napautuksella: viimeisimmistä aterioista, resepteistäsi tai uudella nimellä.
+keywords: ruokalista, ateriasuunnitelma, viikon menu, päivällinen, mitä syödään, kiireinen ilta, kuka kokkaa, annokset, vaihda, siirrä, tee tuplasti
+translatedFrom: 2026-11-05
 ---
 Päätä kerran, mitä syödään, niin koko perhe näkee sen.
 
-![Yhden viikon ruokalista. Maanantain vieressä oleva + on ympyröity.](meals-plan-week)
+![Suunnitelma-välilehti, jossa ovat Suunnittele viikko, Viikon ostokset ja Kopioi viime viikko, rivi kullekin suunnitellulle päivälliselle ja perjantaina kiireisen illan merkki. Maanantain + on ympyröity.](meals-plan-week)
 
-1. Napauta aloitusnäytöllä **Ruokalista**.
+1. Napauta aloitusnäytöllä **Ruokalista**. Näkymä **Ateriat** avautuu välilehdelle **Suunnitelma**, ja vieressä on **Reseptit**.
 2. Napauta päivän kohdalla **+**.
-3. Valitse ateria kohdassa **Ateria**, esimerkiksi **Päivällinen**.
-4. Valitse **Resepti** ja napauta **Valitse resepti**. Tai valitse **Vapaa teksti** ja kirjoita **Otsikko**, esimerkiksi ”Pizzailta”.
-5. Napauta **Tallenna**.
+3. Napauta viimeisintä ateriaa tai reseptiä, niin se on suunniteltu. Tai kirjoita uusi nimi. **Kumoa** peruu sen.
+4. Napauta suunniteltua ateriaa, niin voit asettaa kohdat **Annokset**, **Kuka kokkaa** tai muistiinpanon tai valita **Siirrä tai vaihda**, **Vaihda ateria** tai **Poista**.
 
-Siirry viikosta toiseen nuolilla. Napauta ateriaa, niin voit avata sen reseptin, muokata sitä tai poistaa sen.
+![Lisäyspaneeli tyhjälle päivälliselle, jossa ovat Tähteet, Syödään ulkona ja Noutoruoka sekä valinta Viimeisimmät | Kaikki reseptit. Tähteet-painike on ympyröity.](meals-add-meal)
 
-Ideat lopussa? Ylhäällä oleva kimallus pyytää dailia ehdottamaan illallisen jokaiselle vapaalle illalle. Katso **Anna Dailin suunnitella illalliset**.
+![Mummon lasagnen ateriapaneeli, jossa ovat annokset, kuka kokkaa, muistiinpano ja toiminnot. Tee tuplasti on ympyröity.](meals-meal-sheet)
+
+Pyyhkäise viikon alla olevaa riviä, niin näet painikkeet **Suunnittele viikko**, **Viikon ostokset** (kun viikolla on aterioita) ja **Kopioi viime viikko**.
+
+Päivän merkki näyttää tapahtuman, jolla on kellonaika päivällisen tienoilla, mistä tahansa dailin näyttämästä kalenterista. Sinä päivänä lisäyspaneelissa lukee ”Kiireinen ilta, joten nopeat ruoat ensin”.
+
+Yläreunan säätökuvake avaa näkymän **Ateria-asetukset**. Uusi perhe aloittaa kysymyksellä **Mitä aterioita suunnittelet?**

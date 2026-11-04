@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Adaugă alte calendare: telefonul, Google, linkuri și fișiere
 summary: Arată calendarele telefonului sau Google Calendar lângă evenimentele familiei, urmărește calendarul școlii sau importă un fișier.
-keywords: calendarul telefonului, calendar apple, google calendar, adaugă calendar, abonare, link, calendarul școlii, calendar de serviciu, ics, aparține lui, copiază în daili
+keywords: calendarul telefonului, google calendar, adaugă calendar, abonare, link, calendarul școlii, calendar de serviciu, doar eu, editează în daili, conectat, reîmprospătare
 tipTitle: Vezi calendarele telefonului în daili
 tipBody: Calendarele de serviciu, de școală sau de sport pot apărea lângă evenimentele familiei.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Deschide **Calendar**, apasă pe rotiță, apoi pe **Adaugă un calendar** la **Alte calendare**.
 2. **Calendar Apple** (iPhone) sau **Calendarele telefonului** (Android): calendarele telefonului tău.
-3. **Google Calendar**: conectează-te, apasă pe **Conectează**, apoi alege cine vede fiecare calendar.
-4. **Abonează-te printr-un link**: un calendar de la școală sau de la club care se actualizează singur. Doar pentru administratori. daili te avertizează dacă familia ta îl are deja.
-5. **Importă un fișier (.ics)**: copiază evenimentele în daili o singură dată.
+3. **Google Calendar**: apasă pe **Conectează**, autentifică-te, apoi alege calendarele. **Doar eu** păstrează unul privat.
+4. **Abonează-te printr-un link**: un calendar de la școală sau de la serviciu, pentru toată lumea (administratorii) sau **Doar eu**.
+5. **Importă un fișier (.ics)**: copiază evenimentele o singură dată.
 
-![Panoul Editează calendarul pentru un calendar conectat. Rândul Aparține lui, setat pe Emma, este încercuit.](calendar-other-calendars)
+![Adaugă un calendar (link) cu nume, adresă și culoare. Comutatorul Doar eu este încercuit.](calendar-link-only-me)
 
-Fiecare calendar are rândul **Aparține lui**: linkurile la care te abonezi pornesc cu **Toată lumea**, calendarele telefonului și Google cu tine. Evenimentele lui primesc culoarea acelei persoane și urmează **Filtru**.
+La un calendar conectat, **Aparține lui** îi stabilește culoarea și persoana din **Filtru**. Ca să aduci acum datele din Google, trage în jos sau apasă pe **⋮** → **Reîmprospătează acum**.
 
-Ca să schimbi asta, apasă pe rândul telefonului sau Google ori, la un link, pe **⋮** → **Editează**. **⋮** → **Elimină** (la Google: **Deconectează**) scoate un calendar.
+![Excursia școlară sincronizată din calendarul conectat Școală. Editează în Daili este încercuit.](calendar-linked-event)
 
-Evenimentele acestea nu pot fi modificate aici. Apasă pe unul → **Copiază în Daili** ca să-ți faci propriul eveniment.
+Apasă pe un eveniment → **Editează în Daili** ca să adaugi persoane, mementouri sau notițe. Rămâne conectat (**Din Școală**): orele, titlurile și locurile noi vin singure. L-ai schimbat și tu? **Folosește** sau **Păstrează-l pe al meu**. Șters la sursă? **Șterge** sau **Păstrează**. Evenimentele conectate nu se pot repeta.
 
-> Note: Calendarele telefonului și persoanele cărora le aparțin rămân pe acest telefon: nu se încarcă nimic și nu i se arată nimic familiei tale.
+> Note: Calendarele telefonului rămân pe acest telefon. **Editează în Daili** ascunde aici evenimentul din telefon până îl ștergi pe al tău. Fără actualizări.

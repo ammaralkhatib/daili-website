@@ -5,7 +5,7 @@ summary: Tag et billede af et skolebrev, en invitation eller en flyer – daili 
 keywords: billede, foto, scan, brev, invitation, flyer, datoer, ai, kamera, skole
 tipTitle: Gør et skolebrev til begivenheder
 tipBody: Tryk på scanningsikonet i Ny begivenhed, tag et billede af brevet, så udfylder daili datoerne.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 Datoer på papir? Scanningsikonet i **Ny begivenhed** læser dem.
 
@@ -19,6 +19,6 @@ Datoer på papir? Scanningsikonet i **Ny begivenhed** læser dem.
 
 Trykt tekst virker bedst, håndskrift mindre godt. Har du en PDF, så tag et billede af siden.
 
-> Note: Billedet sendes til Googles AI for at blive læst og slettes derefter, uden kameradata som placering. daili spørger dig først, og **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
+> Note: AI er for voksne (18+); daili spørger én gang. Billedet sendes til Googles AI for at blive læst og slettes derefter, uden kameradata som placering. daili spørger dig først, og **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
 
 > Note: En billedlæsning bruger én AI-handling. Hver familie får 3 AI-handlinger om måneden gratis; Daili Plus giver 30.

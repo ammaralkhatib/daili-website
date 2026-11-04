@@ -2,23 +2,23 @@
 id: calendar-phone-calendars
 title: Legg til andre kalendere: telefonen, Google, lenker og filer
 summary: Vis telefonens kalendere eller Google Kalender ved siden av familiens hendelser, følg en skolekalender, eller importer en fil.
-keywords: telefonkalender, apple kalender, google kalender, legg til kalender, abonner, lenke, skolekalender, jobbkalender, ics, tilhører, kopier til daili
+keywords: telefonkalender, google kalender, legg til kalender, abonner, lenke, skolekalender, jobbkalender, bare meg, rediger i daili, tilknyttet, oppdater
 tipTitle: Se telefonens kalendere i daili
 tipBody: Jobb-, skole- eller idrettskalendere kan vises ved siden av familiens hendelser.
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-05
 ---
 1. Åpne **Kalender**, trykk på tannhjulet, og så på **Legg til en kalender** under **Andre kalendere**.
-2. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android): telefonens egne kalendere.
-3. **Google Kalender**: logg inn, trykk på **Koble til**, og velg så hvem som ser hver kalender.
-4. **Abonner med en lenke**: en skole- eller klubbkalender som oppdaterer seg selv. Bare for administratorer. daili sier fra hvis familien allerede har den.
-5. **Importer en fil (.ics)**: kopierer hendelsene inn i daili én gang.
+2. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android): telefonens kalendere.
+3. **Google Kalender**: trykk på **Koble til**, logg inn, og velg så kalendere. **Bare meg** holder en kalender privat.
+4. **Abonner med en lenke**: en skole- eller jobbkalender, for alle (administratorer) eller **Bare meg**.
+5. **Importer en fil (.ics)**: kopierer hendelsene inn én gang.
 
-![Arket Rediger kalender for en lenket kalender. Raden Tilhører, satt til Emma, er ringet inn.](calendar-other-calendars)
+![Legg til kalender (lenke) med navn, adresse og farge. Bryteren Bare meg er ringet inn.](calendar-link-only-me)
 
-Hver kalender har feltet **Tilhører**: abonnerte lenker starter med **Alle**, telefon- og Google-kalendere med deg. Hendelsene får fargen til den personen og følger **Filter**.
+For en tilknyttet kalender bestemmer **Tilhører** fargen og personen i **Filter**. Vil du hente Google nå, drar du ned, eller trykker på **⋮** → **Oppdater nå**.
 
-Vil du endre det, trykker du på telefon- eller Google-raden, eller på **⋮** → **Rediger** ved en lenke. **⋮** → **Fjern** (Google: **Koble fra**) fjerner en kalender.
+![En synkronisert Skoletur fra den tilknyttede kalenderen Skole. Rediger i Daili er ringet inn.](calendar-linked-event)
 
-Disse hendelsene kan ikke endres her. Trykk på en → **Kopier til Daili** for å lage din egen.
+Trykk på en hendelse → **Rediger i Daili** for å legge til personer, påminnelser eller notater. Den forblir koblet (**Fra Skole**): nye tider, titler og steder kommer av seg selv. Har du også endret det selv? **Bruk den** eller **Behold min**. Slettet i kilden? **Slett** eller **Behold**. Tilknyttede hendelser kan ikke gjentas.
 
-> Note: Telefonens kalendere, og hvem de tilhører, blir på denne telefonen: ingenting lastes opp eller vises for familien.
+> Note: Telefonens kalendere blir på denne telefonen. **Rediger i Daili** skjuler telefonhendelsen her til du sletter din egen. Ingen oppdateringer.

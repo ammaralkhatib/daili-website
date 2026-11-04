@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Adicionar uma receita
 summary: Guarde as receitas da família em um só lugar, com ingredientes, passos e uma foto.
 keywords: receita, adicionar receita, livro de receitas, caderno de receitas, ingredientes, cozinhar, prato, foto, receitas da família
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
 A lasanha da vovó merece ficar no caderno de receitas da família, onde todo mundo acha.
 
@@ -17,4 +17,8 @@ A lasanha da vovó merece ficar no caderno de receitas da família, onde todo mu
 
 Para mudar uma receita depois, abra, toque em **⋮**, lá em cima, e depois em **Editar**.
 
+Em uma receita, **Planejar** coloca a receita no cardápio: escolha um dia, uma refeição e as porções. A origem dela é a pequena etiqueta embaixo do título, ao lado do tempo e das porções.
+
 > Note: As receitas são da família toda. Todo mundo pode abrir, e qualquer pessoa pode mudar.
+
+> Note: Apagar uma receita não mexe no cardápio. As refeições planejadas continuam lá, com o nome da receita.

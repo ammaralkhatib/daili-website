@@ -5,19 +5,19 @@ summary: Liitä ruokavideon linkki, niin daili kirjoittaa ainesosat ja vaiheet p
 keywords: youtube, video, reseptivideo, ruokavideo, tuo video, linkki, tekoäly, tallenna resepti, shorts
 tipTitle: Tee YouTube-videosta resepti
 tipBody: Liitä ruokavideon linkki, niin daili kirjoittaa ainesosat ja vaiheet puolestasi.
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-05
 ---
-Näitkö herkullisen ruoan YouTubessa? daili voi kirjoittaa reseptin puolestasi.
+Näitkö herkullisen ruoan YouTubessa? daili kirjoittaa reseptin.
 
 ![Reseptit-näkymä, jossa +-valikko on auki. YouTube-videosta on ympyröity.](meals-youtube)
 
 1. Kopioi videon linkki YouTube-sovelluksessa (Jaa → Kopioi linkki).
 2. Napauta aloitusnäytöllä **Reseptit**, sitten **+** ja sitten **YouTube-videosta**.
 3. Liitä linkki kohtaan **YouTube-linkki** tai napauta **Liitä**. Napauta sitten **Lue video**.
-4. daili lukee videon – se voi kestää minuutin. Tarkista, mitä daili löysi, ja korjaa, mikä on pielessä. Napauta sitten **Tallenna**.
+4. Tarkista, mitä daili löysi, ja napauta sitten **Tallenna**.
 
-Jos resepti on videon kuvauksessa, se käy nopeasti. Muuten daili katsoo videon.
+Resepti tulee dailin kielellä. Jos sinulla ei ole omaa kuvaa, ylhäällä näkyy videon kuva. Napauta ▶, niin voit katsoa videon YouTubessa. Jos haluat pitää kuvan, lisää oma kuvasi.
 
-Resepti tulee puhelimesi kielellä. Ensimmäisellä kerralla daili kysyy ennen kuin käyttää Googlen tekoälyä (Gemini); **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
+Videon lukeminen tekoälyllä on aikuisille (18+); daili kysyy kerran. Kuka tahansa voi tuoda videon, jonka kuvauksessa on linkki reseptisivulle. Osoitteessa app.daili.app toimivat vain tällaiset videot.
 
-> Note: Vain julkiset, enintään 25 minuutin videot toimivat. Yksi videoluku käyttää yhden tekoälytoiminnon. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 30.
+> Note: Vain julkiset, enintään 25 minuutin videot. Tekoälyllä luettu video käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 30. Resepti kuvauksen linkistä on ilmainen.

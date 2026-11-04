@@ -5,7 +5,7 @@ summary: Napíš poznámku alebo zdieľaj odkaz z akejkoľvek aplikácie. Pozná
 keywords: poznámka, rýchla poznámka, odkaz, zdieľať, kontrolný zoznam, pripomienka, nedávno vymazané, zhrnúť, tučné, kurzíva, nadpis, formátovanie
 tipTitle: Zdieľaj odkaz do daili a máš ho uložený
 tipBody: Zdieľaj video, príspevok alebo stránku z akejkoľvek aplikácie do daili — vznikne poznámka, súkromná, kým ju nezdieľaš.
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-05
 ---
 Poznámka má **Názov**, text alebo oboje, s odrážkami a kontrolnými zoznamami.
 
@@ -30,6 +30,6 @@ Vymazané poznámky čakajú 30 dní v **⋯** → **Nedávno vymazané**.
 
 ![Poznámka. Skupina Daili Plus s dvoma riadkami „Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam“ a „Zhrnúť“ je zakrúžkovaná.](notes-ai)
 
-V poznámke v časti **Daili Plus** spotrebujú **Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam** aj **Zhrnúť** po jednej akcii AI.
+V poznámke v časti **Daili Plus** spotrebujú **Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam** aj **Zhrnúť** po jednej akcii AI, pre dospelých (18+).
 
 > Note: Bez internetu sa nové poznámky odošlú samy neskôr.

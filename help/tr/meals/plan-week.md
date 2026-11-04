@@ -1,20 +1,25 @@
 ---
 id: meals-plan-week
 title: Haftanın yemeklerini planla
-summary: Kahvaltıyı, öğle ve akşam yemeğini ailenin haftasına ekle, tariflerinden ya da düz metin olarak.
-keywords: yemek planı, yemek planlayıcı, haftalık menü, akşam yemeği, öğle yemeği, kahvaltı, yemek planla, akşama ne pişirsem, menü, hafta
-translatedFrom: 2026-09-27
+summary: Ailenin yemeklerini bir iki dokunuşla haftaya ekle: son yemeklerden, tariflerinden ya da yeni bir adla.
+keywords: yemek planı, yemek planlayıcı, haftalık menü, akşam yemeği, akşama ne pişirsem, yoğun akşam, kim pişiriyor, porsiyon, yer değiştir, taşı, çift pişir
+translatedFrom: 2026-11-05
 ---
 Akşam ne yeneceğine bir kez karar ver, tüm aile görsün.
 
-![Bir haftanın yemek planı. Pazartesinin yanındaki + daire içine alınmış.](meals-plan-week)
+![Haftamı planla, Haftanın alışverişi ve Geçen haftayı kopyala düğmeleri, planlanan her akşam yemeği için bir satır ve cumada yoğun akşam çipiyle Plan sekmesi. Pazartesideki + daire içine alınmış.](meals-plan-week)
 
-1. Ana ekranda **Yemek planı** kutucuğuna dokun.
+1. Ana ekranda **Yemek planı** kutucuğuna dokun. **Yemekler**, **Tarifler** sekmesinin yanındaki **Plan** sekmesinde açılır.
 2. Bir günün yanındaki **+** simgesine dokun.
-3. **Öğün** altında birini seç, örneğin **Akşam yemeği**.
-4. **Tarif** seçeneğini seç ve **Tarif seç** düğmesine dokun. Ya da **Serbest metin** seçeneğini seç ve **Başlık** alanına yaz, örneğin "Pizza akşamı".
-5. **Kaydet** düğmesine dokun.
+3. Son yemeklerden birine ya da bir tarife dokun, hemen planlanır. Ya da yeni bir ad yaz. **Geri al** bunu geri alır.
+4. **Porsiyon**, **Kim pişiriyor** ya da bir not ayarlamak için planlanmış bir yemeğe dokun. Orada **Taşı veya değiştir**, **Yemeği değiştir** ya da **Kaldır** seçeneği de var.
 
-Haftalar arasında geçmek için okları kullan. Tarifini açmak, düzenlemek ya da silmek için bir yemeğe dokun.
+![Boş bir akşam yemeği için ekleme paneli: Artanlar, Dışarıda yemek ve Paket servis, ayrıca Son | Tüm tarifler anahtarı. Artanlar çipi daire içine alınmış.](meals-add-meal)
 
-Fikrin mi kalmadı? Üstteki pırıltı, her boş akşam için daili'den bir akşam yemeği önerisi ister. Bkz. **Akşam yemeklerini Daili planlasın**.
+![Anneannemin lazanyası için yemek paneli: porsiyon, kim pişiriyor, not ve işlemler. Çift pişir daire içine alınmış.](meals-meal-sheet)
+
+Haftanın altındaki satırı kaydırınca **Haftamı planla**, **Haftanın alışverişi** (haftada yemek olunca) ve **Geçen haftayı kopyala** çıkar.
+
+Bir gündeki çip, daili'nin gösterdiği herhangi bir takvimden, akşam yemeği saatine yakın saatli bir etkinliği gösterir. O gün ekleme paneli "Yoğun akşam, bu yüzden önce hızlı yemekler" der.
+
+Üstteki ayar simgesi **Yemek ayarları** ekranını açar. Yeni bir aile **Hangi öğünleri planlıyorsun?** sorusuyla başlar.

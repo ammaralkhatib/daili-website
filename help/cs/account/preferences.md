@@ -2,8 +2,8 @@
 id: account-preferences
 title: Světlý nebo tmavý vzhled, jazyk, formát času, teplota, vibrace
 summary: Vyber si tmavý režim, jazyk, 12- nebo 24hodinový čas, °C nebo °F, to, jestli daili vibruje, a jeho funkce AI.
-keywords: tmavý režim, motiv, vzhled, jazyk, 24hodinový, formát času, teplota, celsius, fahrenheit, vibrace, ai, gemini
-translatedFrom: 2026-10-30
+keywords: tmavý režim, motiv, vzhled, jazyk, 24hodinový, formát času, teplota, celsius, fahrenheit, vibrace, ai, 18 let
+translatedFrom: 2026-11-05
 ---
 Klepni na svůj obrázek nahoře na domovské obrazovce a otevře se **Nastavení**. Tyhle volby najdeš v sekci **Předvolby**.
 
@@ -11,11 +11,11 @@ Klepni na svůj obrázek nahoře na domovské obrazovce a otevře se **Nastaven�
 
 1. **Jazyk**: vyber jeden z jazyků daili, nebo **Podle systému**, aby platil jazyk telefonu.
 2. **Formát času**: **24hodinový**, **12hodinový**, nebo **Systém**, aby platilo nastavení telefonu.
-3. **Vzhled**: **Světlý**, **Tmavý**, nebo **Systém**. V části **Barva aplikace** vyber **daili zelená** nebo **Moje barva**. Barva tónuje tlačítka, odkazy a karty.
+3. **Vzhled**: **Světlý**, **Tmavý**, nebo **Systém**. V části **Barva aplikace** vyber **daili zelená** nebo **Moje barva**.
 4. **Vibrace**: krátké zavibrování, když je něco hotové, uložené nebo smazané.
 5. **Počasí v Dnes**: karta s počasím nahoře na obrazovce **Dnes**.
-6. **Jednotka teploty**: **Automaticky** se řídí regionem telefonu, nebo vyber °C či °F. Podle toho se změní i vítr a déšť.
-7. **Funkce AI (Google Gemini)**: dovolí AI od Googlu číst tvoje fotky, odkazy na videa a přání k jídlu. Vypnuto? daili se příště zeptá znovu.
+6. **Jednotka teploty**: **Automaticky** se řídí regionem telefonu, nebo vyber °C či °F.
+7. **Funkce AI (Google Gemini)**: dovolí AI od Googlu číst tvoje fotky, odkazy na videa a přání k jídlu. Vypnuto? daili se příště zeptá znovu. Pro dospělé (18+); dokud to nepotvrdíš, ukazuje se pod tím **Je mi 18 nebo víc**.
 
 ![Karta Předvolby. Zakroužkovaný je řádek Jednotka teploty nastavený na Automaticky.](account-temperature)
 

@@ -5,7 +5,7 @@ summary: Plak een link naar een receptpagina, en daili vult de ingrediënten, st
 keywords: importeren, link, url, website, recept, recept bewaren, blog, link plakken, web, recept kopiëren
 tipTitle: Bewaar recepten van elke website
 tipBody: Plak een link naar een receptpagina, en daili vult de ingrediënten en stappen voor je in.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-05
 ---
 Online een lekker recept gevonden? Bewaar het zonder het over te typen.
 
@@ -17,5 +17,7 @@ Online een lekker recept gevonden? Bewaar het zonder het over te typen.
 4. Controleer wat daili heeft gevonden en verbeter wat niet klopt. Tik dan op **Opslaan**.
 
 Heeft een pagina geen receptgegevens, dan bewaart daili toch de titel en de foto. Voeg de ingrediënten en stappen dan zelf toe.
+
+Sneller: deel de pagina in je browser of de YouTube-app met **daili** en kies **Recept**.
 
 > Note: Links van Instagram en TikTok bevatten geen receptgegevens. Kopieer in plaats daarvan de recepttekst en gebruik **Recepttekst plakken**. Gebruik voor YouTube **Uit een YouTube-video**.

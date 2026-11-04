@@ -5,7 +5,7 @@ summary: Klistra in en länk till en receptsida, så fyller daili i ingredienser
 keywords: importera, länk, url, webbplats, recept, spara recept, blogg, klistra in länk, webb, kopiera recept
 tipTitle: Spara recept från vilken webbplats som helst
 tipBody: Klistra in en länk till en receptsida, så fyller daili i ingredienserna och stegen åt dig.
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-05
 ---
 Hittat ett bra recept på nätet? Spara det utan att skriva av det.
 
@@ -17,5 +17,7 @@ Hittat ett bra recept på nätet? Spara det utan att skriva av det.
 4. Kontrollera det daili hittade och rätta det som inte stämmer. Tryck sedan på **Spara**.
 
 Om en sida saknar receptdata sparar daili ändå titeln och fotot. Lägg till ingredienserna och stegen själv.
+
+Snabbare: dela sidan till **daili** från webbläsaren eller YouTube-appen och välj **Recept**.
 
 > Note: Länkar från Instagram och TikTok innehåller inga receptdata. Kopiera recepttexten i stället och använd **Klistra in recepttext**. För YouTube, använd **Från en YouTube-video**.
