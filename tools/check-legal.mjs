@@ -145,6 +145,22 @@ const V113_WHY = 'Copy to Daili and photo location data (app 1.13.0) are in ever
 const V114_MUST_CONTAIN = { terms: [], privacy: ['id="wall-screens"'] };
 const V114_WHY = 'family wall screens (app 1.14.0) are in every locale — see claude-prompts/2026-10-29/003';
 
+/**
+ * App 1.15.0: the opt-in "Help improve Daili" (usage counts + Crashlytics crash
+ * reports), the one-question surveys and the Tips & suggestions notifications.
+ * Every anchor is on a <p>, invisible to the <h2> id comparison below.
+ */
+const V115_MUST_CONTAIN = { terms: [], privacy: ['id="help-improve"', 'id="surveys"', 'id="tips"'] };
+const V115_WHY = 'Help improve Daili, surveys and tips (app 1.15.0) are in every locale — see claude-prompts/2026-11-05/003';
+
+/**
+ * 1.15.0 renamed "Copy to Daili" to "Edit in Daili". The old label may appear
+ * exactly once, in the sentence about copies made with the EARLIER button
+ * (the history phrase below); anywhere else it is a stale label.
+ */
+const OLD_COPY_LABELS = ['Copy to Daili', 'In Daili kopieren'];
+const OLD_COPY_HISTORY = ['the earlier "Copy to Daili"', 'dem früheren „In Daili kopieren“'];
+
 for (const id of LEGAL_IDS) {
   const pg = PAGES.find((p) => p.id === id);
   if (!pg) { fail('site.config.mjs', `no PAGES entry with id '${id}'`); continue; }
@@ -214,6 +230,17 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V114_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V114_WHY}`);
+    }
+
+    for (const must of V115_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V115_WHY}`);
+    }
+
+    if (id === 'privacy') {
+      const current = OLD_COPY_HISTORY.reduce((t, h) => t.split(h).join(''), src);
+      for (const old of OLD_COPY_LABELS) {
+        if (current.includes(old)) fail(rel, `still says "${old}" — the button is "Edit in Daili" / „In Daili bearbeiten“ since app 1.15.0 (claude-prompts/2026-11-05/003)`);
+      }
     }
 
     if (!src.includes('support@daili.app')) fail(rel, 'does not contain support@daili.app — the one address a reader needs');
