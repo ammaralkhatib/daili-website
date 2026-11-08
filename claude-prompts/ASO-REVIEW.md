@@ -29,13 +29,14 @@ the prompt that calls this file; call it <VERSION>.
 
 ## Steps (per tier-1 store)
 1. `get_app_keywords` → table: keyword · rank · prev · pop · diff · group.
-   Groups: **Keep** 1–10 · **Push** 11–50 & pop ≥ 20 · **Hold** 11–50 & pop < 20
+   Groups: **Keep** 1–10 · **Push** 11–50 & pop ≥ 20 & diff ≤ 50 · **Hold** 11–50 & (pop < 20 or diff > 50)
    · **Push-next** 51–200 or unranked & pop ≥ 20 · **Drop** off-intent, or
    pop 5 for 4+ weeks (say how many weeks of history exist).
 2. Check each field word: is it in title/subtitle too (wasted slot)? Is there
    a tracked keyword for it? If none → "unmeasured", not "dead".
 3. `get_keyword_suggestions` (+ `extract_competitors_keywords` on the best
-   tracked word) → candidates with pop ≥ 20 that match a feature Daili has.
+   tracked word) → candidates with pop ≥ 20 AND diff ≤ 50 (prefer < 40; pop ≥ 50
+   is a bonus, not a must — Ammar 2026-11-08) that match a feature Daili has.
    Rejected list with the reason (off-intent, competitor name, Apple feature
    name, pricing word, contraception reading, feature we don't have).
 4. Compound languages (de, nl, + sv da nb fi when tracked): check that every
