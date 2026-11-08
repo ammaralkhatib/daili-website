@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Soukromé záměrně",
       "sub": "Plány vaší rodiny patří vaší rodině. Není to nastavení, takhle je Daili postavené.",
-      "chips": ["Bez reklam", "Bez sledování", "Vaše data nikdy neprodáme", "Servery v EU", "Váš trezor zůstává v telefonu", "AI jen tehdy, když ji použijete"]
+      "chips": ["Bez reklam", "Bez sledování", "Vaše data nikdy neprodáme", "Servery v EU", "Váš trezor zůstává v telefonu", "AI jen tehdy, když ji použijete"],
+      "safetyLink": "Jak chráníme vaše data →"
     },
     "care": {
       "h2a": "Vyrobeno s péčí,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Soukromí",
+    "safety": "Bezpečnost",
     "terms": "Podmínky",
     "imprint": "Tiráž"
   }

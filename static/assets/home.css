@@ -492,6 +492,9 @@ html.lenis,html.lenis body{height:auto}
 .home .glass{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:34px;max-width:760px}
 .home .glass span{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .home .glass svg{width:16px;height:16px;color:var(--mint);flex:none}
+/* The home page's text link, in white here: forest would vanish on the dark vault. */
+.home .vault .bx-more{position:relative;z-index:2;color:#fff}
+.home .vault .bx-more:focus-visible{outline-color:#fff}
 
 /* ---------- care ---------- */
 .home .care{padding:140px 0 0;overflow:hidden}

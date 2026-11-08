@@ -10,7 +10,7 @@ since: 1.1.0
 updated: 2026-11-05
 order: 2
 media: notifications-choose
-related: notifications-turn-on, notifications-tips, notifications-help, budget-bills, start-weather
+related: notifications-turn-on, notifications-tips, notifications-help, budget-bills, start-weather, notifications-family
 ---
 Too many notifications, or too few? You choose what daili tells you.
 

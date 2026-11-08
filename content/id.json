@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privat sejak awal",
       "sub": "Rencana keluargamu milik keluargamu. Itu bukan pengaturan, memang begitulah Daili dibuat.",
-      "chips": ["Tanpa iklan", "Tanpa pelacakan", "Datamu tak pernah kami jual", "Server di Uni Eropa", "Brankasmu tetap di ponselmu", "AI hanya saat kamu memakainya"]
+      "chips": ["Tanpa iklan", "Tanpa pelacakan", "Datamu tak pernah kami jual", "Server di Uni Eropa", "Brankasmu tetap di ponselmu", "AI hanya saat kamu memakainya"],
+      "safetyLink": "Cara kami menjaga datamu →"
     },
     "care": {
       "h2a": "Dibuat dengan sepenuh hati,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privasi",
+    "safety": "Keamanan",
     "terms": "Ketentuan",
     "imprint": "Informasi penerbit"
   }

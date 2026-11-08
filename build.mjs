@@ -309,6 +309,8 @@ function helpLinkAttrs(id, loc) {
 }
 /** The home page's link to the AI-apps article (home.screens.ai.more). */
 const AI_APPS_HELP = 'anywhere-ai-apps';
+/** The footer's and home page's link to the safety article (footer.safety, home.privacy.safetyLink). */
+const SAFETY_HELP = 'account-safety';
 /**
  * A faq.items answer with every {help:<article id>} filled by that help
  * article's link attributes (`<a {help:anywhere-watch}>More in Help</a>`), in
@@ -561,6 +563,9 @@ function renderFooterLinks(loc) {
     // 23 files for a two-language page would be 23 untranslated entries.
     `<a href="${whatsNew}" hreflang="${whatsNewLang}" lang="${whatsNewLang}">${escapeHtml(whatsNewLabel)}</a>`,
     `<a href="${privacy}">${escapeHtml(c.footer.privacy)}</a>`,
+    // The safety article: the page's language where the help has it, else the
+    // English article (ru, hi, ar), which helpLinkAttrs says with hreflang.
+    ...(HELP_PUBLIC ? [`<a ${helpLinkAttrs(SAFETY_HELP, loc)}>${escapeHtml(c.footer.safety)}</a>`] : []),
     `<a href="${terms}">${escapeHtml(c.footer.terms)}</a>`,
     `<a href="/impressum.html">${escapeHtml(c.footer.imprint)}</a>`,
   ];
@@ -910,6 +915,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
   // ---- privacy, care ----
   const glass = list('home.privacy.chips', PRIVACY_ICONS.length)
     .map((t, i) => `        <span>${homeIcon(PRIVACY_ICONS[i])}${e(t)}</span>`).join('\n');
+  const safetyLink = `<a class="bx-more" ${helpLinkAttrs(SAFETY_HELP, loc)}>${e(h('home.privacy.safetyLink'))}</a>`;
   const mosaic = MOSAIC.map((col) => `      <div class="mcol" data-speed="${col.speed}" style="margin-top:${col.top}px">${col.photos.map(([p, ht]) => `<div style="height:${ht}px">${photo(p)}</div>`).join('')}</div>`).join('\n');
 
   // ---- reviews: real ones only, and only from three up ----
@@ -974,7 +980,7 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
     heroWatch: watch('hwatch', heroWatchShots, { eager: true }),
     heroCards, rating, works, badges, membersH2, marquee,
     dayRow, calendarsVis,
-    avatars, icards, flowList, flowVis, bento, glass, mosaic, reviews, flat,
+    avatars, icards, flowList, flowVis, bento, glass, safetyLink, mosaic, reviews, flat,
   };
 }
 

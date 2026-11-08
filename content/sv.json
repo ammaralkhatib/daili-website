@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privat från början",
       "sub": "Familjens planer tillhör familjen. Det är ingen inställning, det är så Daili är byggt.",
-      "chips": ["Ingen reklam", "Ingen spårning", "Vi säljer aldrig din data", "Servrar i EU", "Ditt kassaskåp stannar i mobilen", "AI bara när du använder den"]
+      "chips": ["Ingen reklam", "Ingen spårning", "Vi säljer aldrig din data", "Servrar i EU", "Ditt kassaskåp stannar i mobilen", "AI bara när du använder den"],
+      "safetyLink": "Så skyddar vi dina uppgifter →"
     },
     "care": {
       "h2a": "Gjord med omsorg,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Integritet",
+    "safety": "Säkerhet",
     "terms": "Villkor",
     "imprint": "Utgivare"
   }

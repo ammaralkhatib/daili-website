@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privé van opzet",
       "sub": "De plannen van je gezin zijn van je gezin. Dat is geen instelling, zo is Daili gebouwd.",
-      "chips": ["Geen reclame", "Geen tracking", "We verkopen nooit je gegevens", "Servers in de EU", "Je kluis blijft op je telefoon", "AI alleen als jij het gebruikt"]
+      "chips": ["Geen reclame", "Geen tracking", "We verkopen nooit je gegevens", "Servers in de EU", "Je kluis blijft op je telefoon", "AI alleen als jij het gebruikt"],
+      "safetyLink": "Zo beschermen we je gegevens →"
     },
     "care": {
       "h2a": "Met zorg gemaakt,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privacy",
+    "safety": "Veiligheid",
     "terms": "Voorwaarden",
     "imprint": "Colofon"
   }

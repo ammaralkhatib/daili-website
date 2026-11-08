@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privato per scelta",
       "sub": "I piani della tua famiglia appartengono alla tua famiglia. Non è un'impostazione: Daili è fatto così.",
-      "chips": ["Niente pubblicità", "Nessun tracciamento", "Non vendiamo mai i tuoi dati", "Server nell'UE", "La cassaforte resta sul telefono", "IA solo quando la usi"]
+      "chips": ["Niente pubblicità", "Nessun tracciamento", "Non vendiamo mai i tuoi dati", "Server nell'UE", "La cassaforte resta sul telefono", "IA solo quando la usi"],
+      "safetyLink": "Come proteggiamo i tuoi dati →"
     },
     "care": {
       "h2a": "Fatto con cura,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privacy",
+    "safety": "Sicurezza",
     "terms": "Condizioni",
     "imprint": "Note legali"
   }

@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Yksityinen alusta asti",
       "sub": "Perheen suunnitelmat kuuluvat perheelle. Se ei ole asetus, vaan tapa, jolla Daili on rakennettu.",
-      "chips": ["Ei mainoksia", "Ei seurantaa", "Emme koskaan myy tietojasi", "Palvelimet EU:ssa", "Holvisi pysyy puhelimessasi", "Tekoäly vain kun käytät sitä"]
+      "chips": ["Ei mainoksia", "Ei seurantaa", "Emme koskaan myy tietojasi", "Palvelimet EU:ssa", "Holvisi pysyy puhelimessasi", "Tekoäly vain kun käytät sitä"],
+      "safetyLink": "Näin suojaamme tietojasi →"
     },
     "care": {
       "h2a": "Huolella tehty,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Tietosuoja",
+    "safety": "Turvallisuus",
     "terms": "Ehdot",
     "imprint": "Julkaisijatiedot"
   }

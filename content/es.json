@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privado desde el diseño",
       "sub": "Los planes de tu familia son de tu familia. No es un ajuste: es cómo está hecho Daili.",
-      "chips": ["Sin anuncios", "Sin rastreo", "Nunca vendemos tus datos", "Servidores en la UE", "Tu caja fuerte se queda en tu móvil", "IA solo cuando la usas"]
+      "chips": ["Sin anuncios", "Sin rastreo", "Nunca vendemos tus datos", "Servidores en la UE", "Tu caja fuerte se queda en tu móvil", "IA solo cuando la usas"],
+      "safetyLink": "Cómo protegemos tus datos →"
     },
     "care": {
       "h2a": "Hecho con cariño,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privacidad",
+    "safety": "Seguridad",
     "terms": "Condiciones",
     "imprint": "Aviso legal"
   }

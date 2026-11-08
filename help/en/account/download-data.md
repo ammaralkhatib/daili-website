@@ -10,7 +10,7 @@ since: 1.0.0
 updated: 2026-10-30
 order: 5
 media: account-download-data
-related: account-delete, vault-where, account-verify-email
+related: account-delete, vault-where, account-verify-email, account-safety
 ---
 You can ask for a copy of your data at any time. Your email address has to be verified first, because that's where the copy goes.
 

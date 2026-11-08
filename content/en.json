@@ -345,7 +345,8 @@
       "@privacy": { "description": "Privacy section. chips = six short labels, no full stop (\"EU\" may be the locale's usual abbreviation)." },
       "h2": "Private by design",
       "sub": "Your family's plans belong to your family. That is not a setting, it is how Daili is built.",
-      "chips": ["No ads", "No tracking", "We never sell your data", "Servers in the EU", "Your vault stays on your phone", "AI only when you use it"]
+      "chips": ["No ads", "No tracking", "We never sell your data", "Servers in the EU", "Your vault stays on your phone", "AI only when you use it"],
+      "safetyLink": "How we keep your data safe →"
     },
     "care": {
       "@care": { "description": "Two-line headline (h2b is the highlighted half) and one sentence under it." },
@@ -728,6 +729,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privacy Policy",
+    "safety": "Safety",
     "terms": "Terms",
     "imprint": "Impressum"
   }

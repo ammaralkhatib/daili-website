@@ -10,7 +10,7 @@ since: 1.0.0
 updated: 2026-10-27
 order: 6
 media: account-delete
-related: account-download-data, family-roles, vault-where
+related: account-download-data, family-roles, vault-where, account-safety
 ---
 Want a copy of your data first? Download it before you start.
 

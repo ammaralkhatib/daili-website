@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Prywatne z założenia",
       "sub": "Plany twojej rodziny należą do twojej rodziny. To nie ustawienie, tylko sposób, w jaki zbudowano Daili.",
-      "chips": ["Bez reklam", "Bez śledzenia", "Nigdy nie sprzedajemy danych", "Serwery w UE", "Twój sejf zostaje na telefonie", "AI tylko wtedy, gdy chcesz"]
+      "chips": ["Bez reklam", "Bez śledzenia", "Nigdy nie sprzedajemy danych", "Serwery w UE", "Twój sejf zostaje na telefonie", "AI tylko wtedy, gdy chcesz"],
+      "safetyLink": "Jak chronimy twoje dane →"
     },
     "care": {
       "h2a": "Zrobione z troską,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Prywatność",
+    "safety": "Bezpieczeństwo",
     "terms": "Regulamin",
     "imprint": "Dane wydawcy"
   }

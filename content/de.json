@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privat von Grund auf",
       "sub": "Die Pläne eurer Familie gehören eurer Familie. Das ist keine Einstellung, so ist Daili gebaut.",
-      "chips": ["Keine Werbung", "Kein Tracking", "Wir verkaufen nie eure Daten", "Server in der EU", "Euer Tresor bleibt auf dem Handy", "KI nur, wenn ihr sie nutzt"]
+      "chips": ["Keine Werbung", "Kein Tracking", "Wir verkaufen nie eure Daten", "Server in der EU", "Euer Tresor bleibt auf dem Handy", "KI nur, wenn ihr sie nutzt"],
+      "safetyLink": "So schützen wir eure Daten →"
     },
     "care": {
       "h2a": "Mit Sorgfalt gemacht,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Datenschutz",
+    "safety": "Sicherheit",
     "terms": "Nutzungsbedingungen",
     "imprint": "Impressum"
   }

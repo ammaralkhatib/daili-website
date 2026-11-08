@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Tasarımı gereği özel",
       "sub": "Ailenizin planları ailenize aittir. Bu bir ayar değil; Daili böyle yapıldı.",
-      "chips": ["Reklam yok", "Takip yok", "Verilerinizi asla satmayız", "Sunucular AB'de", "Kasanız telefonunuzda kalır", "Yapay zekâ yalnızca siz kullanınca"]
+      "chips": ["Reklam yok", "Takip yok", "Verilerinizi asla satmayız", "Sunucular AB'de", "Kasanız telefonunuzda kalır", "Yapay zekâ yalnızca siz kullanınca"],
+      "safetyLink": "Verilerinizi nasıl koruyoruz →"
     },
     "care": {
       "h2a": "Özenle yapıldı,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Gizlilik",
+    "safety": "Güvenlik",
     "terms": "Koşullar",
     "imprint": "Künye"
   }

@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privat fra starten",
       "sub": "Familiens planer tilhører familien. Det er ikke en innstilling, det er slik Daili er bygget.",
-      "chips": ["Ingen reklame", "Ingen sporing", "Vi selger aldri dataene dine", "Servere i EU", "Hvelvet ditt blir på mobilen", "KI bare når du bruker det"]
+      "chips": ["Ingen reklame", "Ingen sporing", "Vi selger aldri dataene dine", "Servere i EU", "Hvelvet ditt blir på mobilen", "KI bare når du bruker det"],
+      "safetyLink": "Slik beskytter vi dataene dine →"
     },
     "care": {
       "h2a": "Laget med omtanke,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Personvern",
+    "safety": "Sikkerhet",
     "terms": "Vilkår",
     "imprint": "Utgiver"
   }

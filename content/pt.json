@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privado por natureza",
       "sub": "Os planos da sua família são da sua família. Isso não é uma configuração, é como o Daili é feito.",
-      "chips": ["Sem anúncios", "Sem rastreamento", "Nunca vendemos seus dados", "Servidores na UE", "Seu cofre fica no seu celular", "IA só quando você usa"]
+      "chips": ["Sem anúncios", "Sem rastreamento", "Nunca vendemos seus dados", "Servidores na UE", "Seu cofre fica no seu celular", "IA só quando você usa"],
+      "safetyLink": "Como protegemos seus dados →"
     },
     "care": {
       "h2a": "Feito com carinho,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Privacidade",
+    "safety": "Segurança",
     "terms": "Termos",
     "imprint": "Informações legais"
   }

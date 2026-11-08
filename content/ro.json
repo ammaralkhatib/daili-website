@@ -302,7 +302,8 @@
     "privacy": {
       "h2": "Privat din construcție",
       "sub": "Planurile familiei tale sunt ale familiei tale. Nu e o setare, așa e construit Daili.",
-      "chips": ["Fără reclame", "Fără urmărire", "Nu îți vindem niciodată datele", "Servere în UE", "Seiful tău rămâne pe telefon", "AI doar când îl folosești"]
+      "chips": ["Fără reclame", "Fără urmărire", "Nu îți vindem niciodată datele", "Servere în UE", "Seiful tău rămâne pe telefon", "AI doar când îl folosești"],
+      "safetyLink": "Cum îți protejăm datele →"
     },
     "care": {
       "h2a": "Făcut cu grijă,",
@@ -675,6 +676,7 @@
   "footer": {
     "copyright": "© 2026 Daili · <a href=\"mailto:support@daili.app\">support@daili.app</a>",
     "privacy": "Confidențialitate",
+    "safety": "Siguranță",
     "terms": "Termeni",
     "imprint": "Date despre editor"
   }
