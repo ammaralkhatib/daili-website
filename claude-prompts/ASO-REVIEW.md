@@ -24,7 +24,7 @@ the prompt that calls this file; call it <VERSION>.
    (sections "App name", "Subtitle", "Keyword field"). If `marketing/aso/next-release-keywords.md`
    is PENDING, those are the fields about to go live — review on top of them.
 3. `marketing/aso/keyword-log.md` — what was changed before and why. Never
-   propose undoing a swap that is younger than 2 releases.
+   propose undoing a swap that has been live less than 4 weeks (Ammar 2026-11-08).
 4. The newest `marketing/weekly/*.md` and `marketing/aso/*-baseline.md` for history.
 
 ## Steps (per tier-1 store)
