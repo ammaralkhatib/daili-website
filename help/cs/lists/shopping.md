@@ -3,7 +3,7 @@ id: lists-shopping
 title: Nákupní seznamy: přidat, odškrtnout, vyčistit
 summary: Jeden nákupní seznam pro celou rodinu. Přidávej položky, odškrtávej je v obchodě a smaž, co už je koupené.
 keywords: nákup, nákupy, potraviny, nákupní seznam, koupit, odškrtnout, zaškrtnout, supermarket, vyčistit, hotovo
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Každý v rodině vidí stejné nákupní seznamy. Když někdo přidá nebo odškrtne položku, vidí to všichni.
 
@@ -16,5 +16,7 @@ Každý v rodině vidí stejné nákupní seznamy. Když někdo přidá nebo od�
 5. Až budeš zpátky doma, klepni nahoře na **⋯** a pak na **Smazat hotové**. Nebo klepni na **Odškrtnout vše** a použij stejný seznam znovu.
 
 Pokud máš rozpočet, po odškrtnutí poslední položky ti daili nabídne přidat do něj útratu. Můžeš taky klepnout na **⋯** → **Přidat do rozpočtu**.
+
+Chceš položku hlídat i doma? Klepni na ni a zapni **Držet v zásobách**.
 
 > Note: Odškrtnutá špatná položka? Klepni na **Zpět** ve zprávě dole na obrazovce.

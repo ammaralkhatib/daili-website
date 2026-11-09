@@ -3,7 +3,7 @@ id: lists-shopping
 title: Listas de compras: adicionar, marcar, limpar
 summary: Uma lista de compras que a família toda compartilha. Adicione itens, marque no mercado e limpe o que já comprou.
 keywords: compras, mercado, supermercado, lista de compras, comprar, marcar, riscar, feira, limpar, prontos
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Todo mundo da família vê as mesmas listas de compras. Quando alguém adiciona ou marca um item, todo mundo vê.
 
@@ -16,5 +16,7 @@ Todo mundo da família vê as mesmas listas de compras. Quando alguém adiciona 
 5. De volta em casa, toque em **⋯**, lá em cima, e depois em **Excluir os prontos**. Ou toque em **Desmarcar tudo** para usar a mesma lista de novo.
 
 Se você tem um orçamento, ao marcar o último item o daili oferece adicionar o gasto a ele. Você também pode tocar em **⋯** → **Adicionar ao orçamento**.
+
+Quer acompanhar um item em casa também? Toque nele e ative **Manter na despensa**.
 
 > Note: Marcou o item errado? Toque em **Desfazer** na mensagem, embaixo na tela.

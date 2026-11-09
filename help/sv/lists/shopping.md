@@ -3,7 +3,7 @@ id: lists-shopping
 title: Inköpslistor: lägga till, bocka av, rensa
 summary: En inköpslista som hela familjen delar. Lägg till poster, bocka av dem i butiken och rensa bort det du har köpt.
 keywords: inköp, handla, matvaror, inköpslista, köpa, bocka av, bock, mataffär, rensa, klart
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Alla i din familj ser samma inköpslistor. När någon lägger till eller bockar av något ser alla det.
 
@@ -16,5 +16,7 @@ Alla i din familj ser samma inköpslistor. När någon lägger till eller bockar
 5. När du är hemma igen trycker du på **⋯** högst upp och sedan på **Ta bort klara**. Eller tryck på **Avmarkera alla** för att använda samma lista igen.
 
 Har du en budget erbjuder daili att lägga till kostnaden i den när du bockar av den sista posten. Du kan också trycka på **⋯** → **Lägg till i budget**.
+
+Vill du hålla koll på en post hemma också? Tryck på den och slå på **Håll i förråd**.
 
 > Note: Bockade du av fel post? Tryck på **Ångra** i meddelandet längst ned på skärmen.

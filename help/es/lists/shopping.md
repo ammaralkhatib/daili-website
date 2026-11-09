@@ -3,7 +3,7 @@ id: lists-shopping
 title: Listas de la compra: añadir, marcar, vaciar
 summary: Una lista de la compra que comparte toda la familia. Añade cosas, márcalas en la tienda y quita lo que ya compraste.
 keywords: compra, lista de la compra, súper, supermercado, comprar, marcar, tachar, vaciar, listos, hacer la compra
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Toda tu familia ve las mismas listas de la compra. Cuando alguien añade o marca un elemento, todos lo ven.
 
@@ -16,5 +16,7 @@ Toda tu familia ve las mismas listas de la compra. Cuando alguien añade o marca
 5. Al volver a casa, toca **⋯** arriba y luego **Eliminar los listos**. O toca **Desmarcar todo** para usar la misma lista otra vez.
 
 Si tienes un presupuesto, al marcar el último elemento daili te ofrece añadirle el gasto. También puedes tocar **⋯** → **Añadir al presupuesto**.
+
+¿Quieres controlar también un elemento en casa? Tócalo y activa **Tener en la despensa**.
 
 > Note: ¿Has marcado el elemento equivocado? Toca **Deshacer** en el mensaje de abajo de la pantalla.

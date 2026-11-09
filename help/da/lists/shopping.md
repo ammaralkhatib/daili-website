@@ -3,7 +3,7 @@ id: lists-shopping
 title: Indkøbslister: tilføj, sæt flueben, ryd
 summary: Én indkøbsliste, som hele familien deler. Tilføj varer, sæt flueben i butikken, og ryd det, du har købt.
 keywords: indkøb, dagligvarer, indkøbsliste, handle, købe, flueben, afkryds, supermarked, ryd, klaret
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Alle i familien ser de samme indkøbslister. Når nogen tilføjer en vare eller sætter flueben ved den, ser alle det.
 
@@ -16,5 +16,7 @@ Alle i familien ser de samme indkøbslister. Når nogen tilføjer en vare eller 
 5. Når du er hjemme igen, trykker du på **⋯** øverst og så på **Slet klarede**. Eller tryk på **Fjern alle flueben** for at bruge den samme liste igen.
 
 Har du et budget, tilbyder daili at føje udgiften til det, når du sætter flueben ved den sidste vare. Du kan også trykke på **⋯** → **Føj til budget**.
+
+Vil du også holde styr på en vare derhjemme? Tryk på den, og slå **Hold på lager** til.
 
 > Note: Satte du flueben ved den forkerte vare? Tryk på **Fortryd** i beskeden nederst på skærmen.

@@ -3,7 +3,7 @@ id: lists-shopping
 title: Listes de courses : ajouter, cocher, vider
 summary: Une liste de courses partagée par toute la famille. Ajoute des éléments, coche-les au magasin et efface ce que tu as acheté.
 keywords: courses, épicerie, liste de courses, acheter, cocher, supermarché, vider, terminé, commissions, faire les courses
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Toute ta famille voit les mêmes listes de courses. Quand quelqu'un ajoute ou coche un élément, tout le monde le voit.
 
@@ -16,5 +16,7 @@ Toute ta famille voit les mêmes listes de courses. Quand quelqu'un ajoute ou co
 5. De retour à la maison, touche **⋯** en haut, puis **Supprimer les éléments terminés**. Ou touche **Tout décocher** pour réutiliser la même liste.
 
 Si tu as un budget, cocher le dernier élément te propose d'y ajouter la dépense. Tu peux aussi toucher **⋯** → **Ajouter au budget**.
+
+Tu veux aussi suivre un article à la maison ? Touche-le et active **Garder en stock**.
 
 > Note: Tu as coché le mauvais élément ? Touche **Annuler** dans le message en bas de l'écran.

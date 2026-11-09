@@ -3,7 +3,7 @@ id: lists-shopping
 title: Daftar belanja: tambah, centang, bersihkan
 summary: Satu daftar belanja untuk seluruh keluarga. Tambah barang, centang di toko, dan bersihkan yang sudah dibeli.
 keywords: belanja, belanja dapur, bahan makanan, daftar belanja, beli, centang, supermarket, bersihkan, selesai, pasar
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Semua orang di keluarga Anda melihat daftar belanja yang sama. Saat seseorang menambah atau mencentang barang, semua orang melihatnya.
 
@@ -16,5 +16,7 @@ Semua orang di keluarga Anda melihat daftar belanja yang sama. Saat seseorang me
 5. Setelah pulang, ketuk **⋯** di atas, lalu **Hapus yang selesai**. Atau ketuk **Hapus semua centang** untuk memakai daftar yang sama lagi.
 
 Kalau Anda punya anggaran, saat mencentang barang terakhir daili menawarkan untuk menambahkan biayanya ke anggaran. Anda juga bisa mengetuk **⋯** → **Tambahkan ke anggaran**.
+
+Ingin memantau item ini di rumah juga? Ketuk dan aktifkan **Simpan di stok**.
 
 > Note: Salah centang? Ketuk **Urungkan** di pesan di bagian bawah layar.

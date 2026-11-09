@@ -3,7 +3,7 @@ id: lists-shopping
 title: Handlelister: legg til, hak av, rydd
 summary: Én handleliste som hele familien deler. Legg til varer, hak dem av i butikken, og rydd bort det du har kjøpt.
 keywords: handleliste, innkjøp, dagligvarer, handle, kjøpe, hak av, kryss av, butikk, rydd, gjort
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-09
 ---
 Alle i familien ser de samme handlelistene. Når noen legger til eller haker av en vare, ser alle det.
 
@@ -16,5 +16,7 @@ Alle i familien ser de samme handlelistene. Når noen legger til eller haker av 
 5. Når du er hjemme igjen, trykker du på **⋯** øverst og så på **Slett gjorte**. Eller trykk på **Fjern alle haker** for å bruke den samme listen igjen.
 
 Har du et budsjett, tilbyr daili å føre kostnaden inn i det når du haker av den siste varen. Du kan også trykke på **⋯** → **Legg til i budsjett**.
+
+Vil du også følge med på en vare hjemme? Trykk på den, og slå på **Hold på lager**.
 
 > Note: Haket du av feil vare? Trykk på **Angre** i meldingen nederst på skjermen.
