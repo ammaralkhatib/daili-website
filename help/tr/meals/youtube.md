@@ -5,15 +5,15 @@ summary: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve
 keywords: youtube, video, tarif videosu, yemek videosu, video içe aktar, bağlantı, link, yapay zeka, tarifi kaydet, shorts
 tipTitle: Bir YouTube videosunu tarife dönüştür
 tipBody: Bir yemek videosunun bağlantısını yapıştır, daili malzemeleri ve adımları senin için yazsın.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 YouTube'da bir yemek mi gördün? daili tarifi yazar.
 
-![+ menüsü açık Tarifler ekranı. Bir YouTube videosundan daire içine alınmış.](meals-youtube)
+![+ menüsü açık Tarifler ekranı. YouTube veya Instagram'dan daire içine alınmış.](meals-youtube)
 
 1. YouTube uygulamasında videonun bağlantısını kopyala (Paylaş → Bağlantıyı kopyala).
-2. Ana ekranda **Tarifler** kutucuğuna, sonra **+** simgesine, sonra **Bir YouTube videosundan** seçeneğine dokun.
-3. Bağlantıyı **YouTube bağlantısı** alanına yapıştır ya da **Yapıştır** düğmesine dokun. Sonra **Videoyu oku** düğmesine dokun.
+2. Ana ekranda **Tarifler** kutucuğuna, sonra **+** simgesine, sonra **YouTube veya Instagram'dan** seçeneğine dokun.
+3. Bağlantıyı **YouTube veya Instagram bağlantısı** alanına yapıştır ya da **Yapıştır** düğmesine dokun. Sonra **Oku** düğmesine dokun.
 4. daili'nin bulduklarını kontrol et, sonra **Kaydet** düğmesine dokun.
 
 Tarif daili'nin dilinde çıkar. Kendi fotoğrafın yoksa en üstte videonun resmi görünür. YouTube'da izlemek için ▶ simgesine dokun. Bir resmi korumak için kendi fotoğrafını ekle.

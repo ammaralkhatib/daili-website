@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Alege ce arată un widget
 summary: Alege ce listă de cumpărături arată un widget și dacă arată doar sarcinile și obiceiurile tale sau ale tuturor.
 keywords: widget, setări widget, editează widgetul, listă de cumpărături, sarcini, obiceiuri, doar ale mele, toți, ecran principal
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widgeturile **Cumpărături**, **Sarcini** și **Obiceiuri** au setări. Fiecare widget își păstrează setările, deci două widgeturi de cumpărături pot arăta două liste.
 
@@ -15,7 +15,7 @@ Widgeturile **Cumpărături**, **Sarcini** și **Obiceiuri** au setări. Fiecare
 
 **Sarcini**: la **Show**, alege **Mine** sau **Everyone**.
 
-**Obiceiuri**: la **Show**, alege **Family** sau **Only mine**. Minzi și bara de energie arată mereu toată familia.
+**Obiceiuri**: la **Show**, alege **Family** sau **Only mine**. Inelul de progres numără aceleași obiceiuri.
 
 Un widget arată mereu familia sau grupul activ în daili — nu poți alege o familie pentru fiecare widget.
 

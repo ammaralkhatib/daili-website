@@ -3,13 +3,13 @@ id: start-today
 title: La pantalla Hoy
 summary: Todo lo que hay hoy, en una sola lista: eventos, tareas, compras y comidas.
 keywords: hoy, agenda, diario, resumen, qué hay hoy, horario, vence hoy, esta noche, cena, tiempo
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Hoy muestra lo que tiene tu familia hoy, en una sola pantalla.
 
 ![La pantalla Hoy. La tarjeta del tiempo de arriba está marcada con un círculo.](start-today)
 
-1. En la pantalla de inicio, toca **Hoy** arriba a la derecha, junto a la campana.
+1. En la pantalla de inicio, toca el icono de calendario arriba a la derecha, entre el tiempo y la campana.
 2. Desplázate por las secciones, como **Tareas**, **Compras** y **Comidas de hoy**.
 3. Toca un enlace debajo de una sección, como **Calendario** o **Todas las tareas**, para abrir la pantalla completa.
 4. Vuelve atrás para regresar a la pantalla de inicio.

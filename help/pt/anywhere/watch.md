@@ -3,9 +3,9 @@ id: anywhere-watch
 title: daili no seu Apple Watch
 summary: Veja o que vem a seguir, marque compras, tarefas e hábitos e adicione coisas por voz, direto no pulso.
 keywords: apple watch, watch, relógio, pulso, complicação, mostrador, smart stack, lista de compras, voz, ditado, nota rápida, hábitos
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-10
 ---
-Deslize entre quatro páginas: **A seguir** com seus próximos eventos, o jantar de hoje e o próximo aniversário, sua lista de compras, suas **Tarefas** e **Hábitos** com a Minzi.
+Deslize entre quatro páginas: **A seguir** com seus próximos eventos, o jantar de hoje e o próximo aniversário, sua lista de compras, suas **Tarefas** e **Hábitos**.
 
 ![A seguir no relógio: um aniversário hoje, o jantar desta noite e um aniversário daqui a 4 dias.](watch-up-next)
 
@@ -16,8 +16,6 @@ Deslize entre quatro páginas: **A seguir** com seus próximos eventos, o jantar
 Toque em uma linha para marcá-la. Na lista de compras e nas tarefas, toque de novo em até 3 segundos para desfazer.
 
 ![A página Tarefas no relógio, com duas tarefas abertas, para hoje e para amanhã.](watch-todos)
-
-![A página Hábitos no relógio: a Minzi, 2 de 5 feitos hoje, e os primeiros hábitos.](watch-habits)
 
 Por voz: toque no lápis em **A seguir** para uma nota rápida, ou em **Adicionar item** na lista de compras.
 

@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Acara berulang
 summary: Buat acara berulang setiap hari, minggu, bulan, atau tahun, dan ubah satu hari atau seluruh rangkaiannya.
 keywords: ulangi, berulang, rutin, setiap minggu, mingguan, harian, bulanan, tahunan, rangkaian, kebiasaan, kamis pertama, jumat terakhir
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Berenang setiap Selasa? Tambahkan sekali saja.
 
@@ -12,10 +12,10 @@ Berenang setiap Selasa? Tambahkan sekali saja.
 1. Di acara baru, ketuk **Pengulangan**.
 2. Pilih **Setiap hari**, **Setiap minggu**, **Setiap bulan**, atau **Setiap tahun**.
 3. Ubah **Setiap** untuk "setiap 2 minggu". Untuk **Setiap minggu**, pilih harinya di bawah **Berulang pada**.
-4. Untuk **Setiap bulan**, pilih **Pada tanggal 5** atau hari dalam minggu, seperti **Pada hari Kamis pertama**. Keduanya mengikuti tanggal mulai.
-5. Di bawah **Berakhir**, biarkan **Tidak pernah** atau pilih **Pada tanggal**. Tutup lembarnya dan ketuk **Simpan**.
+4. Untuk **Setiap bulan**, pilih **Pada tanggal 3** atau hari dalam minggu, seperti **Pada hari Kamis pertama**. Keduanya mengikuti tanggal mulai.
+5. Di bawah **Berakhir**, biarkan **Tidak pernah** atau pilih **Pada tanggal**. Ketuk **Selesai**, lalu **Simpan**.
 
-![Lembar Pengulangan dengan Setiap bulan dipilih. Pada hari Kamis pertama dipilih di bawah Pada tanggal 5, dan keduanya dilingkari.](calendar-repeating-monthly)
+![Lembar Pengulangan dengan Setiap bulan dipilih. Pada hari Kamis pertama dipilih di bawah Pada tanggal 3, dan keduanya dilingkari.](calendar-repeating-monthly)
 
 Tanggal 29, 30, atau 31 pindah ke hari terakhir pada bulan yang lebih pendek.
 

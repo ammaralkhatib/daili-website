@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Herhalende afspraken
 summary: Laat een afspraak elke dag, week, maand of elk jaar herhalen, en wijzig één dag of de hele reeks.
 keywords: herhalen, herhalend, terugkerend, elke week, wekelijks, dagelijks, maandelijks, jaarlijks, reeks, routine, eerste donderdag, laatste vrijdag
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Elke dinsdag zwemmen? Zet het er één keer in.
 
@@ -12,10 +12,10 @@ Elke dinsdag zwemmen? Zet het er één keer in.
 1. Tik in een nieuwe afspraak op **Herhaling**.
 2. Kies **Dagelijks**, **Wekelijks**, **Maandelijks** of **Jaarlijks**.
 3. Wijzig **Elke** voor „elke 2 weken”. Bij **Wekelijks** kies je de dagen onder **Herhalen op**.
-4. Bij **Maandelijks** kies je **Op dag 5** of een weekdag, zoals **Op de eerste donderdag**. Beide volgen de startdatum.
-5. Laat onder **Eindigt** de keuze **Nooit** staan, of kies **Op datum**. Sluit het venster en tik op **Opslaan**.
+4. Bij **Maandelijks** kies je **Op dag 3** of een weekdag, zoals **Op de eerste donderdag**. Beide volgen de startdatum.
+5. Laat onder **Eindigt** de keuze **Nooit** staan, of kies **Op datum**. Tik op **Klaar** en dan op **Opslaan**.
 
-![Het venster Herhaling met Maandelijks gekozen. Op de eerste donderdag is gekozen onder Op dag 5, en beide zijn omcirkeld.](calendar-repeating-monthly)
+![Het venster Herhaling met Maandelijks gekozen. Op de eerste donderdag is gekozen onder Op dag 3, en beide zijn omcirkeld.](calendar-repeating-monthly)
 
 Dag 29, 30 of 31 schuift in kortere maanden naar de laatste dag.
 

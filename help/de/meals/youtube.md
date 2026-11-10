@@ -5,15 +5,15 @@ summary: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schr
 keywords: youtube, video, rezeptvideo, kochvideo, video importieren, link, ki, rezept speichern, shorts
 tipTitle: Mach aus einem YouTube-Video ein Rezept
 tipBody: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schritte für dich auf.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Ein Gericht auf YouTube gesehen? daili schreibt das Rezept auf.
 
-![Der Bildschirm Rezepte mit dem geöffneten Menü +. Aus einem YouTube-Video ist eingekreist.](meals-youtube)
+![Der Bildschirm Rezepte mit dem geöffneten Menü +. Aus YouTube oder Instagram ist eingekreist.](meals-youtube)
 
 1. Kopier den Videolink in der YouTube-App (Teilen → Link kopieren).
-2. Tippe auf dem Startbildschirm auf **Rezepte**, dann auf **+** und auf **Aus einem YouTube-Video**.
-3. Füg den Link unter **YouTube-Link** ein oder tippe auf **Einfügen**. Tippe dann auf **Video lesen**.
+2. Tippe auf dem Startbildschirm auf **Rezepte**, dann auf **+** und auf **Aus YouTube oder Instagram**.
+3. Füg den Link unter **YouTube- oder Instagram-Link** ein oder tippe auf **Einfügen**. Tippe dann auf **Lesen**.
 4. Prüf, was daili gefunden hat, und tippe dann auf **Speichern**.
 
 Das Rezept kommt in der Sprache von daili heraus. Ohne eigenes Foto steht oben das Bild des Videos. Tippe auf ▶, um es auf YouTube anzusehen. Willst du ein Bild behalten, füg dein eigenes Foto hinzu.

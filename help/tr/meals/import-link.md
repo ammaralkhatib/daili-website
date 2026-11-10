@@ -5,7 +5,7 @@ summary: Bir tarif sayfasının bağlantısını yapıştır, daili malzemeleri,
 keywords: içe aktar, bağlantı, link, url, web sitesi, tarif, tarifi kaydet, blog, bağlantı yapıştır, tarifi kopyala
 tipTitle: Her web sitesinden tarif kaydet
 tipBody: Bir tarif sayfasının bağlantısını yapıştır, daili malzemeleri ve adımları senin için doldursun.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 İnternette güzel bir tarif mi buldun? Yazmadan kaydet.
 
@@ -20,4 +20,4 @@ Sayfada tarif verisi yoksa daili yine de başlığı ve fotoğrafı kaydeder. Ma
 
 Daha hızlı: tarayıcında ya da YouTube uygulamasında sayfayı **daili** ile paylaş ve **Tarif** seçeneğini seç.
 
-> Note: Instagram ve TikTok bağlantıları tarif verisi içermez. Bunun yerine tarif metnini kopyala ve **Tarif metnini yapıştır** seçeneğini kullan. YouTube için **Bir YouTube videosundan** seçeneğini kullan.
+> Note: TikTok ve Facebook bağlantıları tarif verisi içermez. Bunun yerine tarif metnini kopyala ve **Tarif metnini yapıştır** seçeneğini kullan. YouTube ya da Instagram için **YouTube veya Instagram'dan** seçeneğini kullan.

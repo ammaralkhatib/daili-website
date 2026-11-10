@@ -5,15 +5,15 @@ summary: Incolla il link di un video di cucina, e daili scrive per te ingredient
 keywords: youtube, video, video ricetta, video di cucina, importare video, link, ia, salvare ricetta, shorts
 tipTitle: Trasforma un video di YouTube in una ricetta
 tipBody: Incolla il link di un video di cucina, e daili scrive per te ingredienti e passaggi.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Hai visto un piatto su YouTube? daili scrive la ricetta.
 
-![La schermata Ricette con il menu + aperto. Da un video di YouTube è cerchiato.](meals-youtube)
+![La schermata Ricette con il menu + aperto. Da YouTube o Instagram è cerchiato.](meals-youtube)
 
 1. Copia il link del video nell'app YouTube (Condividi → Copia link).
-2. Nella schermata iniziale, tocca **Ricette**, poi **+**, poi **Da un video di YouTube**.
-3. Incolla il link sotto **Link di YouTube**, oppure tocca **Incolla**. Poi tocca **Leggi il video**.
+2. Nella schermata iniziale, tocca **Ricette**, poi **+**, poi **Da YouTube o Instagram**.
+3. Incolla il link sotto **Link di YouTube o Instagram**, oppure tocca **Incolla**. Poi tocca **Leggi**.
 4. Controlla cosa ha trovato daili, poi tocca **Salva**.
 
 La ricetta esce nella lingua di daili. Senza una tua foto, in alto si vede l'immagine del video. Tocca ▶ per guardarlo su YouTube. Per tenere un'immagine, aggiungi una tua foto.

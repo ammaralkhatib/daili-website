@@ -3,7 +3,7 @@ id: habits-private
 title: Súkromné návyky
 summary: Nechaj si návyk pre seba. Nikto iný z rodiny ho nevidí.
 keywords: súkromné, tajné, osobné, skryté, len ja, súkromie, návyk, zámok
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Niektoré návyky nikomu inému nič nie sú. Súkromný návyk vidíš len ty.
 
@@ -16,4 +16,4 @@ Niektoré návyky nikomu inému nič nie sú. Súkromný návyk vidíš len ty.
 
 Návyk teraz ukazuje zámok a slovo **Súkromné**.
 
-> Note: Súkromný môže byť len návyk **Len ja**. Súkromné návyky nedávajú rodine energiu a nie sú na rodinnej nástenke.
+> Note: Súkromný môže byť len návyk **Len ja**. Súkromné návyky nezbierajú hviezdy a nie sú na rodinnej nástenke.

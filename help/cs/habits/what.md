@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Co jsou návyky: každý zvlášť, společně, osobně
-summary: Budujte malé návyky jako rodina. Každé odškrtnutí dá Minzi, vaší rodinné kočce, energii na další výlet.
-keywords: návyky, sledování návyků, rutina, rodinné cíle, minzi, kočka, společně, děti, dobré návyky, každý z nás
-tipTitle: Budujte návyky společně s Minzi
-tipBody: Odškrtávejte malé návyky jako rodina. Když je ukazatel energie kočky Minzi plný, vyrazí na výlet.
-translatedFrom: 2026-10-16
+summary: Budujte malé návyky jako rodina. Prohlížejte návyky vždy jednoho člověka a sbírejte hvězdy na odměny.
+keywords: návyky, sledování návyků, rutina, rodinné cíle, společně, děti, dobré návyky, každý z nás, změnit osobu, seznam, roční mřížka, hvězdy
+tipTitle: Budujte návyky společně
+tipBody: Odškrtávejte malé návyky jako rodina. Každý splněný den dá hvězdu na odměnu, kterou si užijete spolu.
+translatedFrom: 2026-11-10
 ---
 Návyk je malá věc, kterou chceš dělat často, třeba čtení nebo pití vody. Najdeš je na domovské obrazovce pod **Návyky**. Každý návyk je jednoho ze tří druhů. Vybíráš ho v části **Kdo to dělá?**
 
@@ -13,10 +13,12 @@ Návyk je malá věc, kterou chceš dělat často, třeba čtení nebo pití vod
 2. **Každý z nás**: každý, kdo se zapojí, odškrtává sám za sebe a má vlastní sérii.
 3. **Společně**: jedno odškrtnutí za celou rodinu, a může ho udělat kdokoli.
 
-![Obrazovka Návyky s pokojíčkem kočky Minzi, ukazatelem Rodinná energie a částí Dnes, „Hotovo 1 z 4“. Zakroužkované je tlačítko + vpravo dole.](habits-what)
+![Obrazovka Návyky: Tvoje návyky, čip s hvězdami, část Dnes s „Hotovo 1 z 4“ a karty návyků s mřížkami. Zakroužkované je tlačítko + vpravo dole.](habits-what)
 
-Tvoje dnešní návyky jsou v části **Dnes**, i s tím, kolik je hotových. Nový přidáš přes **+** vpravo dole.
+**Návyky** ukazují vždy jednoho člověka. Klepni na **Změnit osobu** a uvidíš návyky někoho jiného, nebo návyky **Společně**. Jen správci tam vidí i děti bez přihlášení.
 
-Každé odškrtnutí dá tvé rodině energii. Ukazatel je pod pokojíčkem kočky Minzi a při posouvání se změní v malý kroužek. Když je plný, kočka Minzi vyrazí na výlet a pošle domů pohlednici.
+Každá karta návyku má mřížku svých dní; otevři ji a uvidíš celý rok. Tlačítka vedle **Dnes** přepínají zobrazení **Karty**, **Seznam** a **Kompaktní**.
 
-> Note: Když poprvé otevřeš **Návyky**, daili tě požádá o jméno pro kočku a o dva nebo tři návyky na začátek.
+Návyk přidáš přes **+**. Každý splněný den návyku dá hvězdu do části **Odměny**.
+
+> Note: Pokud jsi měl návyky už před aktualizací, jednou se ukáže **Návyky jsou teď jednodušší**.

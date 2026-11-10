@@ -3,11 +3,9 @@ id: notifications-help
 title: Geen meldingen? Dit kun je controleren
 summary: Een korte checklist voor als herinneringen of updates van het gezin niet binnenkomen.
 keywords: werkt niet, geen meldingen, ontbreekt, komt niet binnen, herinnering gaat niet af, batterij, focus, niet storen, stil, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Kwam een herinnering niet? Controleer dit, in deze volgorde.
-
-![Verder naar beneden op het scherm Meldingen. De schakelaar Stille uren is omcirkeld.](notifications-help)
 
 1. **Je telefoon staat daili toe.** Open **Instellingen** en dan **Meldingen**. Staat er bovenaan dat meldingen uit staan, tik dan op de knop daar.
 2. **De schakelaar staat aan.** Controleer op hetzelfde scherm de schakelaar voor die soort, zoals **Taakherinneringen**.

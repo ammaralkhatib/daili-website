@@ -7,26 +7,28 @@ keywords: meal plan, meal planner, weekly menu, dinner, what's for dinner, busy 
 routes: /meal-plan
 tryIt: /meal-plan
 since: 1.0.0
-updated: 2026-11-05
+updated: 2026-11-10
 media: meals-plan-week
 order: 7
-related: meals-leftovers-and-eating-out, meals-meal-settings, meals-suggest, meals-to-shopping, meals-copy-week
+related: meals-leftovers-and-eating-out, meals-meal-settings, meals-suggest, meals-wishes, meals-to-shopping, meals-copy-week
 ---
 Decide once what's for dinner, and the whole family sees it.
 
-![The Plan tab with Plan my week, Shop this week and Copy last week, one line per planned dinner, and a busy-evening chip on Friday. The + on Monday is circled.](meals-plan-week)
+![The Plan tab with one card per day of planned meals, a Soccer practice row on Friday, and the bar at the bottom with Today, AI plan, Wishes, Shop and Copy week. The + on Monday is circled.](meals-plan-week)
 
 1. On Home, tap **Meal plan**. **Meals** opens on **Plan**, next to **Recipes**.
 2. Tap **+** on a day.
 3. Tap a recent meal or a recipe, and it's planned. Or type a new name. **Undo** takes it back.
-4. Tap a planned meal to set **Servings**, **Who cooks** or a note, or to **Move or swap**, **Change meal** or **Remove** it.
+4. Tap a planned meal to set **Servings**, **Who cooks**, **Who's eating** or a note, or to **Move or swap** it.
 
 ![The add sheet on an empty dinner with Leftovers, Eating out and Takeaway, and the Recent | All recipes switch. The Leftovers chip is circled.](meals-add-meal)
 
-![The meal sheet for Grandma's lasagne with servings, who cooks, a note and the actions. Cook double is circled.](meals-meal-sheet)
+![The meal sheet for Grandma's lasagne with a small Recipe pill, servings, Who cooks, Who's eating, a note line and the Plans changed buttons. Cook double is circled.](meals-meal-sheet)
 
-Swipe the row under the week for **Plan my week**, **Shop this week** (once the week has meals) and **Copy last week**.
+Under **Who's eating**, tap anyone who isn't eating. A link in the note becomes a button.
 
-A chip on a day shows an event with a time around dinner, from any calendar daili shows. That day, the add sheet says "Busy evening, so quick meals come first".
+Swipe a meal left to remove it, or press and hold to drag it to another day. Leftovers can't go before the meal they come from, so **Move or swap** greys out those days.
 
-The tune icon at the top opens **Meal settings**. A new family starts with **Which meals do you plan?**
+A clock row shows an event around dinner time, from any calendar daili shows. That day, the add sheet puts quick meals first.
+
+The tune icon at the top opens **Meal settings**.

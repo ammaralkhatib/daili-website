@@ -3,11 +3,9 @@ id: start-features
 title: Pilih apa yang tampil di Beranda
 summary: Pilih fitur yang dipakai keluarga Anda. Pilihan ini bisa diubah kapan saja.
 keywords: fitur, pilih, beranda, kartu, siapkan, langkah pertama, matikan, siklus, atur
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Begitu Anda membuat atau bergabung ke keluarga pertama Anda, daili bertanya **Anda ingin memakai Daili untuk apa?** Semua fitur menyala dari awal, kecuali Siklus.
-
-![Kartu-kartu fitur. Kotak di kartu Belanja dilingkari.](start-features)
 
 1. Ketuk kartu untuk membaca tentang fitur itu.
 2. Ketuk kotak di kartu untuk mematikannya, atau menyalakannya lagi.

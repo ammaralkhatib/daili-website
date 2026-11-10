@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Mitä tavat ovat: jokainen erikseen, yhdessä, vain minä
-summary: Rakentakaa pieniä tapoja perheenä. Jokainen merkintä antaa perheen kissalle Minzille energiaa seuraavaan matkaan.
-keywords: tavat, tapaseuranta, rutiini, perheen tavoitteet, minzi, kissa, yhdessä, lapset, hyvät tavat, jokainen
-tipTitle: Rakentakaa tapoja yhdessä Minzin kanssa
-tipBody: Merkitkää pieniä tapoja perheenä. Kun Minzin energiapalkki on täynnä, se lähtee matkalle.
-translatedFrom: 2026-10-16
+summary: Rakentakaa pieniä tapoja perheenä. Näe yhden henkilön tavat kerrallaan, ja ansaitkaa tähtiä palkintoihin.
+keywords: tavat, tapaseuranta, rutiini, perheen tavoitteet, yhdessä, lapset, hyvät tavat, jokainen, vaihda henkilöä, lista, vuosiruudukko, tähdet
+tipTitle: Rakentakaa tapoja yhdessä
+tipBody: Merkitkää pieniä tapoja perheenä. Jokainen valmis päivä antaa tähden palkintoon, josta nautitte yhdessä.
+translatedFrom: 2026-11-10
 ---
 Tapa on pieni asia, jonka haluat tehdä usein, kuten lukeminen tai veden juominen. Löydät ne aloitusnäytöltä kohdasta **Tavat**. Jokainen tapa on yhtä kolmesta lajista. Valitset sen kohdassa **Kuka sen tekee?**
 
@@ -13,10 +13,12 @@ Tapa on pieni asia, jonka haluat tehdä usein, kuten lukeminen tai veden juomine
 2. **Jokainen erikseen**: jokainen mukana oleva merkitsee omansa ja kerää oman putkensa.
 3. **Yhdessä**: yksi merkintä koko perheelle, ja kuka tahansa voi tehdä sen.
 
-![Tavat-näkymä, jossa ovat Minzin huone, Perheen energia -palkki ja Tänään, ”1/4 tehty”. Oikean alakulman +-painike on ympyröity.](habits-what)
+![Tavat-näkymä: omat tapasi, tähtimerkki, Tänään ja ”1/4 tehty” sekä tapakortit ruudukkoineen. Oikean alakulman +-painike on ympyröity.](habits-what)
 
-Tämän päivän tapasi ovat kohdassa **Tänään**, ja näet, montako on tehty. Lisää uusi napauttamalla oikeassa alakulmassa **+**.
+**Tavat** näyttää yhden henkilön kerrallaan. Napauta **Vaihda henkilöä**, niin näet jonkun toisen tavat tai **Yhdessä**-tavat. Vain ylläpitäjät näkevät siellä lapset, joilla ei ole kirjautumista.
 
-Jokainen merkintä antaa perheellesi energiaa. Palkki on Minzin huoneen alla, ja kun vierität, siitä tulee pieni rengas. Kun palkki on täynnä, Minzi-kissa lähtee matkalle ja lähettää kotiin postikortin.
+Jokaisella tapakortilla on ruudukko sen päivistä; avaa kortti, niin näet koko vuoden. Kohdan **Tänään** vieressä olevat painikkeet vaihtavat näkymien **Kortit**, **Lista** ja **Tiivis** välillä.
 
-> Note: Kun avaat **Tavat** ensimmäisen kerran, daili pyytää sinua nimeämään kissan ja valitsemaan kaksi tai kolme tapaa aluksi.
+Lisää tapa painikkeella **+**. Jokainen valmis tapapäivä tuo tähden välilehdelle **Palkinnot**.
+
+> Note: Jos sinulla oli tapoja ennen päivitystä, näet kerran ilmoituksen **Tavat ovat nyt yksinkertaisempia**.

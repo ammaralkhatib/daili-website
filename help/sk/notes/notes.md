@@ -5,7 +5,7 @@ summary: Napíš poznámku alebo zdieľaj odkaz z akejkoľvek aplikácie. Pozná
 keywords: poznámka, rýchla poznámka, odkaz, zdieľať, kontrolný zoznam, pripomienka, nedávno vymazané, zhrnúť, tučné, kurzíva, nadpis, formátovanie
 tipTitle: Zdieľaj odkaz do daili a máš ho uložený
 tipBody: Zdieľaj video, príspevok alebo stránku z akejkoľvek aplikácie do daili — vznikne poznámka, súkromná, kým ju nezdieľaš.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Poznámka má **Názov**, text alebo oboje, s odrážkami a kontrolnými zoznamami.
 
@@ -14,22 +14,20 @@ Poznámka má **Názov**, text alebo oboje, s odrážkami a kontrolnými zoznama
 1. Na domovskej obrazovke ťukni na **Poznámky**, potom na **+** alebo na tlačidlo v dolnej lište: obrázok, hlas, video, odkaz, kresba.
 2. Napíš ju a ťukni na **Uložiť**.
 
+Rýchlejšie: miniaplikácia **Rýchla poznámka**, akčné tlačidlo iPhonu alebo Zdieľať → **daili** → **Uložiť** z akejkoľvek aplikácie.
+
 Počas písania ťukni na **B** pre tučné písmo, **I** pre kurzívu alebo **T** pre nadpis (na app.daili.app **H**). Ďalším ťuknutím dostaneš menší nadpis.
 
-![Nová poznámka s nadpisom, tučným slovom a riadkom kurzívou, so zobrazenými značkami formátovania. Tlačidlá B, I a T sú zakrúžkované.](notes-formatting)
+![Nová poznámka s nadpisom, tučným slovom a riadkom kurzívou, zobrazenými tak, ako vyzerajú, bez značiek. Zakrúžkovaný je riadok formátovania s B, I a T.](notes-formatting)
 
-Poznámky sa otvoria ako mriežka. Tlačidlo hore ich prepne na zoznam. Rýchlejšie: miniaplikácia **Rýchla poznámka**, akčné tlačidlo iPhonu alebo Zdieľať → **daili** → **Uložiť** z akejkoľvek aplikácie.
+Položky kontrolného zoznamu môžeš presúvať potiahnutím. Odškrtnuté sa presunú do časti **Hotovo**.
 
-![Nová poznámka s tlačidlami Foto, Hlas, Video, Odkaz a Kresliť. Riadok, ktorý hovorí, kto ju uvidí, je zakrúžkovaný.](notes-new)
+![Nová poznámka s čipmi Len ja, Štítky a Pripomenúť nad tlačidlami Foto, Hlas, Video, Odkaz a Kresliť. Zakrúžkovaný je čip Len ja.](notes-new)
 
-Nad klávesnicou: štítky, pripomienka (dostaneš ju len ty) a kto poznámku vidí: **Len ja** (predvolene), **Celá rodina** alebo **Vybrať členov**.
+Čipy nad tlačidlami príloh nastavia, kto poznámku vidí (na začiatku **Len ja**), štítky a pripomienku (dostaneš ju len ty).
 
-![Nedávno vymazané. Jedna poznámka, zmizne o 27 dní, s možnosťami Vymazať navždy a Obnoviť.](notes-trash)
-
-Vymazané poznámky čakajú 30 dní v **⋯** → **Nedávno vymazané**.
-
-![Poznámka. Skupina Daili Plus s dvoma riadkami „Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam“ a „Zhrnúť“ je zakrúžkovaná.](notes-ai)
+![Poznámka s obrázkom a nahrávkou. Skupina Daili Plus s riadkom „Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam“ je zakrúžkovaná.](notes-ai)
 
 V poznámke v časti **Daili Plus** spotrebujú **Vytvoriť z toho udalosť, úlohu alebo nákupný zoznam** aj **Zhrnúť** po jednej akcii AI, pre dospelých (18+).
 
-> Note: Bez internetu sa nové poznámky odošlú samy neskôr.
+> Note: Bez internetu alebo pri slabom signáli čakajú nové poznámky ako **Čaká na sieť** a odošlú sa samy neskôr.

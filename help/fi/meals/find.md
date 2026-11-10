@@ -1,9 +1,9 @@
 ---
 id: meals-find
-title: Etsi reseptejä: haku ja omat tunnisteet
-summary: Hae reseptejä otsikon tai ainesosan mukaan ja järjestä ne perheen omilla tunnisteilla.
-keywords: haku, etsi, ainesosa, tunniste, tunnisteet, merkintä, suodata, juhlat, gluteeniton, suosikki, hallitse tunnisteita
-translatedFrom: 2026-10-06
+title: Etsi reseptejä: haku, järjestys ja omat tunnisteet
+summary: Hae reseptejä otsikon tai ainesosan mukaan, järjestä lista ja ryhmittele reseptit perheen omilla tunnisteilla.
+keywords: haku, etsi, ainesosa, tunnisteet, merkintä, suodata, järjestä, uusimmat, nopeimmat, gluteeniton, suosikki, hallitse tunnisteita
+translatedFrom: 2026-11-10
 ---
 Napauta näkymässä **Reseptit** suurennuslasia ja kirjoita sana. Haku katsoo otsikosta ja jokaisesta ainesosasta, joten ”kurpitsa” löytää kaikki reseptit, joissa on kurpitsaa.
 
@@ -11,12 +11,14 @@ Napauta näkymässä **Reseptit** suurennuslasia ja kirjoita sana. Haku katsoo o
 
 Ainesosan perusteella löytyneessä reseptissä näkyy **Sisältää: …**. Ruokalistan reseptivalitsin hakee samalla tavalla.
 
+Uusimmat reseptit tulevat ensin. Yläreunan nuolilla vaihdat järjestykseksi **Nimi A–Ö** tai **Nopeimmat ensin**, ja puhelimesi muistaa valinnan.
+
 Tunnisteet ovat perheen omia merkintöjä, kuten Juhlat tai Gluteeniton. Koko perhe jakaa enintään 50 tunnistetta.
 
 ![Suodatinrivi, jossa Juhlat on valittuna. Näkyvissä ovat vain Mummon lasagne ja Pörröiset pannukakut.](meals-tags)
 
-1. Napauta **Uusi tunniste** suodatinrivillä tai reseptilomakkeen kohdassa **Tunnisteet**. Kirjoita nimi, valitse väri tai **Ei väriä** ja napauta **Tallenna**.
+1. Napauta **Uusi tunniste** suodatinrivillä tai reseptilomakkeen kohdassa **Tunnisteet**. Anna nimi, valitse väri ja napauta **Tallenna**.
 2. Avaa resepti, napauta **⋮** → **Muokkaa**, napauta sen tunnisteita ja sitten **Tallenna**.
-3. Napauta suodatinrivillä tunnistetta tai luokkaa. Kun valittuna on useita, näet reseptit, joissa on mikä tahansa niistä. **Tyhjennä** näyttää taas kaikki.
+3. Napauta suodatinrivillä tunnisteita tai luokkia. Kun valittuna on useita, näet reseptit, joissa on mikä tahansa niistä. **Tyhjennä** näyttää taas kaikki.
 
-Voit nimetä tunnisteen uudelleen, vaihtaa sen väriä tai poistaa sen painamalla sitä pitkään tai napauttamalla **Hallitse tunnisteita**. Kun poistat tunnisteen, se poistuu kaikista resepteistä. Reseptit säilyvät.
+Voit nimetä tunnisteen uudelleen, vaihtaa sen väriä tai poistaa sen painamalla sitä pitkään tai napauttamalla **Hallitse tunnisteita**.

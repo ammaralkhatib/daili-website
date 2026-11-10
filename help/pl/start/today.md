@@ -3,13 +3,13 @@ id: start-today
 title: Ekran Dziś
 summary: Wszystko, co jest na dziś, na jednej liście: wydarzenia, zadania, zakupy i posiłki.
 keywords: dziś, dzisiaj, agenda, dzienny, przegląd, co dziś, harmonogram, na dziś, dziś wieczorem, kolacja, pogoda
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Ekran Dziś pokazuje, co twoja rodzina ma dzisiaj, na jednym ekranie.
 
 ![Ekran Dziś. Zakreślona jest karta pogody na górze.](start-today)
 
-1. Na ekranie głównym dotknij **Dziś** w prawym górnym rogu, obok dzwonka.
+1. Na ekranie głównym dotknij ikony kalendarza w prawym górnym rogu, między pogodą a dzwonkiem.
 2. Przewijaj sekcje, takie jak **Zadania**, **Zakupy** i **Dzisiejsze posiłki**.
 3. Dotknij linku pod sekcją, na przykład **Kalendarz** albo **Wszystkie zadania**, żeby otworzyć pełny ekran.
 4. Cofnij się, żeby wrócić do ekranu głównego.

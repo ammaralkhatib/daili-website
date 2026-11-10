@@ -5,7 +5,7 @@ summary: Lim inn en lenke til en oppskriftsside, så fyller daili inn ingrediens
 keywords: importer, lenke, url, nettside, oppskrift, lagre oppskrift, blogg, lim inn lenke, nett, kopier oppskrift
 tipTitle: Lagre oppskrifter fra alle nettsider
 tipBody: Lim inn en lenke til en oppskriftsside, så fyller daili inn ingrediensene og stegene for deg.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Har du funnet en god oppskrift på nettet? Lagre den uten å skrive den av.
 
@@ -20,4 +20,4 @@ Har en side ingen oppskriftsdata, lagrer daili likevel tittelen og bildet. Legg 
 
 Raskere: i nettleseren eller YouTube-appen deler du siden til **daili** og velger **Oppskrift**.
 
-> Note: Lenker fra Instagram og TikTok har ingen oppskriftsdata. Kopier oppskriftsteksten i stedet, og bruk **Lim inn oppskriftstekst**. For YouTube bruker du **Fra en YouTube-video**.
+> Note: Lenker fra TikTok og Facebook har ingen oppskriftsdata. Kopier oppskriftsteksten i stedet, og bruk **Lim inn oppskriftstekst**. For YouTube eller Instagram bruker du **Fra YouTube eller Instagram**.

@@ -3,9 +3,9 @@ id: anywhere-watch
 title: daili en tu Apple Watch
 summary: Mira lo que viene, marca compras, tareas y hábitos, y añade cosas con la voz, directamente en tu muñeca.
 keywords: apple watch, watch, reloj, muñeca, complicación, esfera, smart stack, lista de la compra, voz, dictado, nota rápida, hábitos
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-10
 ---
-Desliza entre cuatro páginas: **Lo próximo** con tus próximos eventos, la cena de esta noche y el próximo cumpleaños, tu lista de la compra, tus **Tareas** y **Hábitos** con Minzi.
+Desliza entre cuatro páginas: **Lo próximo** con tus próximos eventos, la cena de esta noche y el próximo cumpleaños, tu lista de la compra, tus **Tareas** y **Hábitos**.
 
 ![Lo próximo en el reloj: un cumpleaños hoy, la cena de esta noche y un cumpleaños dentro de 4 días.](watch-up-next)
 
@@ -16,8 +16,6 @@ Desliza entre cuatro páginas: **Lo próximo** con tus próximos eventos, la cen
 Toca una fila para marcarla. En la lista de la compra y en tus tareas, vuelve a tocarla en menos de 3 segundos para deshacerlo.
 
 ![La página Tareas en el reloj con dos tareas pendientes, para hoy y mañana.](watch-todos)
-
-![La página Hábitos en el reloj: Minzi, 2 de 5 hechos hoy, y los primeros hábitos.](watch-habits)
 
 Con la voz: toca el lápiz en **Lo próximo** para una nota rápida, o **Añadir un elemento** en la lista de la compra.
 

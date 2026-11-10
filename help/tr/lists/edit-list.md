@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Bir listeyi yeniden adlandır, rengini değiştir, sırala ya da sil
 summary: Bir listeye yeni ad, renk ya da simge ver, listelerini sıraya sürükle ya da ihtiyacın olmayanı sil.
 keywords: yeniden adlandır, listeyi düzenle, renk, simge, sırala, listeleri sırala, listeyi sil, listeyi kaldır
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Bu, alışveriş ve görev listelerinde aynı şekilde çalışır.
-
 ![Bir listenin ⋯ menüsü açık Alışveriş ekranı. Düzenle ve altındaki Sil daire içine alınmış.](lists-edit-list)
 
 1. Ana ekranda **Alışveriş** ya da **Görevler** kutucuğuna dokun.
 2. Listenin kartında **⋯** simgesine, sonra **Düzenle** seçeneğine dokun.
-3. **Ad**, **Renk** ya da **Simge** alanını değiştir ve **Kaydet** düğmesine dokun.
+3. **Ad** ya da **Renk** alanını değiştir. Başka bir simge için ad alanındaki simgeye dokun. Sonra **Kaydet** düğmesine dokun.
 4. Sırayı değiştirmek için bir karta basılı tut ve sürükle.
 5. Bir listeyi silmek için kartındaki **⋯** simgesine, sonra **Sil** seçeneğine dokun. Mesajdaki **Geri al** onu birkaç saniye boyunca geri getirir.
 

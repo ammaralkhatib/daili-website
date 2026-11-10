@@ -5,9 +5,9 @@ summary: Zie je planning, vink taken en boodschappen af of voeg iets toe — gew
 keywords: widget, widgets, beginscherm, toegangsscherm, iphone, android, gewoontes, avondeten, snel toevoegen, verjaardag, afvinken, widget toevoegen
 tipTitle: Je planning op je beginscherm
 tipBody: Voeg een daili-widget toe en zie wat er aankomt zonder de app te openen.
-translatedFrom: 2026-10-23
+translatedFrom: 2026-11-10
 ---
-daili heeft twee agendawidgets (**Agenda**, en **Eerstvolgend** met een aftelling naar je volgende afspraak) en widgets voor **Boodschappen**, **Taken**, gewoontes met Minzi, een verjaardagsaftelling, het avondeten van vanavond, snel toevoegen en **Snelle notitie**.
+daili heeft twee agendawidgets (**Agenda**, en **Eerstvolgend** met een aftelling naar je volgende afspraak) en widgets voor **Boodschappen**, **Taken**, **Gewoontes** met een voortgangsring, een verjaardagsaftelling, het avondeten van vanavond, snel toevoegen en **Snelle notitie**.
 
 1. Houd een lege plek op het beginscherm van je telefoon ingedrukt.
 2. Tik op iPhone op **Wijzig** en dan op **Voeg widget toe**. Tik op Android op **Widgets**.
@@ -16,7 +16,7 @@ daili heeft twee agendawidgets (**Agenda**, en **Eerstvolgend** met een aftellin
 
 Vink taken, boodschappen en gewoontes direct op de widget af. De **+** voegt iets toe; tik ergens anders en daili opent op die plek.
 
-De agendawidget toont je komende dagen.
+De agendawidget toont je komende dagen. De ring van **Gewoontes** laat zien hoeveel er vandaag klaar zijn.
 
 Op de iPhone kan het toegangsscherm je volgende afspraak tonen, een knop voor een nieuwe notitie en tellers. Titels blijven verborgen tot je ontgrendelt.
 

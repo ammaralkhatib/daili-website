@@ -3,7 +3,7 @@ id: habits-private
 title: Obiceiuri private
 summary: Păstrează un obicei pentru tine. Nimeni altcineva din familie nu-l vede.
 keywords: privat, secret, personal, ascuns, doar eu, intimitate, obicei, lacăt
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Unele obiceiuri nu privesc pe nimeni altcineva. Un obicei privat e doar pentru ochii tăi.
 
@@ -16,4 +16,4 @@ Unele obiceiuri nu privesc pe nimeni altcineva. Un obicei privat e doar pentru o
 
 Obiceiul arată acum un lacăt și cuvântul **Privat**.
 
-> Note: Doar un obicei **Doar eu** poate fi privat. Obiceiurile private nu dau energie familiei și nu apar pe panoul familiei.
+> Note: Doar un obicei **Doar eu** poate fi privat. Obiceiurile private nu aduc stele și nu apar pe panoul familiei.

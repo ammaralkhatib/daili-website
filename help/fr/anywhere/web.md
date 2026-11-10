@@ -3,13 +3,13 @@ id: anywhere-web
 title: Utiliser daili dans ton navigateur (app.daili.app)
 summary: Organise-toi sur ton ordinateur, avec la même famille, le même agenda et les mêmes listes que sur ton téléphone.
 keywords: web, navigateur, ordinateur, portable, ordinateur de bureau, pc, mac, site, en ligne, app.daili.app, grand écran
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Sur un ordinateur, tu peux utiliser daili dans ton navigateur. Même compte, même famille : chaque changement apparaît sur les téléphones de tout le monde.
 
 1. Sur ton ordinateur, ouvre app.daili.app dans ton navigateur.
-2. Connecte-toi avec ton e-mail et ton mot de passe, ou touche **Continuer avec Google** ou **Continuer avec Apple**. Les boutons **Mot de passe oublié ?** et **Restaurer mon compte** marchent aussi ici.
-3. Utilise le menu à gauche : agenda, courses, tâches, habitudes, recettes, menus, notes, anniversaires et ta famille.
+2. Connecte-toi avec ton e-mail et ton mot de passe, ou touche **Continuer avec Google** ou **Continuer avec Apple**. Les boutons **Mot de passe oublié ?** et **Restaurer mon compte** marchent aussi ici.
+3. Utilise le menu à gauche : agenda, courses, tâches, habitudes, recettes, menus, notes, budget, anniversaires et ta famille.
 
 Les notes marchent ici aussi : écrire, filtrer, ajouter des étiquettes, épingler, partager, mettre un rappel (il s'affiche dans l'agenda) et restaurer les notes supprimées récemment. La saisie rapide de l'accueil peut créer une note. Les familles Daili Plus peuvent ajouter des images.
 

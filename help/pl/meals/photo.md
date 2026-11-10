@@ -2,22 +2,22 @@
 id: meals-photo
 title: Zapisz przepis ze zdjęcia
 summary: Zrób zdjęcie strony z książki kucharskiej, odręcznej karteczki albo zrzutu ekranu — daili spisze przepis za ciebie, w twoim języku.
-keywords: zdjęcie, aparat, książka kucharska, odręczny, zrzut ekranu, skanuj przepis, ai, zapisz przepis, obraz
+keywords: zdjęcie, aparat, książka kucharska, odręczny, zrzut ekranu, skanuj przepis, ai, zapisz przepis, obraz, kilka zdjęć
 tipTitle: Przepis babci zapisany w kilka sekund
 tipBody: Zrób zdjęcie strony z książki kucharskiej albo odręcznej karteczki, a daili spisze przepis za ciebie.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Masz przepis na papierze albo na zrzucie ekranu? daili go przepisze.
 
 ![Ekran Przepisy z otwartym menu +. Zakreślona jest opcja Ze zdjęcia.](meals-photo)
 
 1. Na ekranie głównym dotknij **Przepisy**, potem **+**, a potem **Ze zdjęcia**.
-2. Dotknij **Zrób zdjęcie** albo **Wybierz z biblioteki**.
-3. Zdjęcie z biblioteki zobaczysz najpierw. Jeśli przepis jest ostry i czytelny, dotknij **Odczytaj to zdjęcie**.
+2. Dotknij **Zrób zdjęcie** albo **Wybierz z biblioteki**. Z biblioteki wybierz do 5 zdjęć jednego przepisu.
+3. Sprawdź zdjęcia z biblioteki, a potem dotknij **Odczytaj to zdjęcie** albo **Odczytaj 3 zdjęcia**.
 4. Otworzy się już wypełniony formularz **Nowy przepis**. Sprawdź ilości, a potem dotknij **Utwórz**.
 
 Przepis powstaje w języku daili, bez względu na język strony. Najlepiej działa druk albo wyraźne pismo.
 
-> Note: AI jest dla dorosłych (18+); daili pyta raz. Zdjęcie trafia do AI Google do odczytania, a potem jest usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
+> Note: AI jest dla dorosłych (18+); daili pyta raz. Zdjęcia trafiają do AI Google do odczytania, a potem są usuwane, bez danych z aparatu, np. lokalizacji. daili najpierw pyta, a **Ustawienia** → **Funkcje AI (Google Gemini)** to wyłącza.
 
-> Note: Odczyt zdjęcia zużywa jedną akcję AI. Każda rodzina dostaje co miesiąc 3 akcje AI za darmo; Daili Plus daje 30.
+> Note: Odczyt zużywa jedną akcję AI, nawet przy 5 zdjęciach: 3 miesięcznie są za darmo, Daili Plus daje 30.

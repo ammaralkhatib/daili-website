@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Opakované události
 summary: Nech událost opakovat každý den, týden, měsíc nebo rok a měň jeden den nebo celou řadu.
 keywords: opakovat, opakování, opakovaná, každý týden, týdně, denně, měsíčně, ročně, řada, rutina, první čtvrtek, poslední pátek
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Plavání každé úterý? Přidej ho jednou.
 
@@ -12,10 +12,10 @@ Plavání každé úterý? Přidej ho jednou.
 1. V nové události klepni na **Opakování**.
 2. Vyber **Denně**, **Týdně**, **Měsíčně** nebo **Ročně**.
 3. Pro „každé 2 týdny“ změň **Po**. U volby **Týdně** vyber dny v části **Opakovat v**.
-4. U volby **Měsíčně** vyber **5. den v měsíci**, nebo den v týdnu, třeba **V první čtvrtek**. Obojí se řídí datem začátku.
-5. V části **Končí** nech **Nikdy**, nebo vyber **K datu**. Zavři panel a klepni na **Uložit**.
+4. U volby **Měsíčně** vyber **3. den v měsíci**, nebo den v týdnu, třeba **V první čtvrtek**. Obojí se řídí datem začátku.
+5. V části **Končí** nech **Nikdy**, nebo vyber **K datu**. Klepni na **Hotovo** a pak na **Uložit**.
 
-![Panel Opakování s vybranou volbou Měsíčně. Pod 5. den v měsíci je vybrané V první čtvrtek a obě volby jsou zakroužkované.](calendar-repeating-monthly)
+![Panel Opakování s vybranou volbou Měsíčně. Pod 3. den v měsíci je vybrané V první čtvrtek a obě volby jsou zakroužkované.](calendar-repeating-monthly)
 
 Den 29, 30 nebo 31 se v kratších měsících posune na poslední den.
 

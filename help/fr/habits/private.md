@@ -3,7 +3,7 @@ id: habits-private
 title: Habitudes privées
 summary: Garde une habitude pour toi. Personne d'autre dans la famille ne la voit.
 keywords: privé, privée, secret, personnel, caché, moi seul, confidentialité, habitude, verrou
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Certaines habitudes ne regardent personne d'autre. Une habitude privée n'est visible que par toi.
 
@@ -16,4 +16,4 @@ Certaines habitudes ne regardent personne d'autre. Une habitude privée n'est vi
 
 L'habitude affiche maintenant un cadenas et le mot **Privé**.
 
-> Note: Seule une habitude **Moi seul** peut être privée. Les habitudes privées ne donnent pas d'énergie à la famille et restent hors du tableau familial.
+> Note: Seule une habitude **Moi seul** peut être privée. Les habitudes privées ne rapportent pas d'étoiles et restent hors du tableau familial.

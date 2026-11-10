@@ -3,11 +3,9 @@ id: start-features
 title: Valitse, mitä aloitusnäytöllä näkyy
 summary: Valitse toiminnot, joita perheesi käyttää. Voit muuttaa valintaa milloin tahansa.
 keywords: toiminnot, valitse, aloitusnäyttö, ruudut, käyttöönotto, ensimmäiset vaiheet, poista käytöstä, kierto, mitä käyttää
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Heti kun olet luonut ensimmäisen perheesi tai liittynyt siihen, daili kysyy **Mihin haluat käyttää Dailia?** Kaikki toiminnot ovat aluksi päällä, paitsi Kierto.
-
-![Toimintokortit. Ostokset-kortin valintaruutu on ympyröity.](start-features)
 
 1. Napauta korttia, niin voit lukea siitä.
 2. Napauta kortin valintaruutua, niin toiminto menee pois päältä tai taas päälle.

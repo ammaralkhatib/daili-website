@@ -5,7 +5,7 @@ summary: Liitä linkki reseptisivulle, niin daili täyttää ainesosat, vaiheet 
 keywords: tuo, linkki, url, verkkosivu, resepti, tallenna resepti, blogi, liitä linkki, verkko, kopioi resepti
 tipTitle: Tallenna reseptejä miltä tahansa sivulta
 tipBody: Liitä linkki reseptisivulle, niin daili täyttää ainesosat ja vaiheet puolestasi.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Löysitkö hyvän reseptin verkosta? Tallenna se kirjoittamatta sitä uudelleen.
 
@@ -20,4 +20,4 @@ Jos sivulla ei ole reseptitietoja, daili tallentaa silti otsikon ja kuvan. Lisä
 
 Nopeammin: jaa sivu selaimessa tai YouTube-sovelluksessa sovellukseen **daili** ja valitse **Resepti**.
 
-> Note: Instagramin ja TikTokin linkeissä ei ole reseptitietoja. Kopioi sen sijaan reseptin teksti ja käytä valintaa **Liitä reseptin teksti**. YouTubea varten käytä valintaa **YouTube-videosta**.
+> Note: TikTokin ja Facebookin linkeissä ei ole reseptitietoja. Kopioi sen sijaan reseptin teksti ja käytä valintaa **Liitä reseptin teksti**. YouTubea tai Instagramia varten käytä valintaa **YouTubesta tai Instagramista**.

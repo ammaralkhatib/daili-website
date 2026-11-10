@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: 选择小组件显示什么
 summary: 选择小组件显示哪个购物清单，以及只显示你的待办和习惯，还是所有人的。
 keywords: 小组件, 小组件设置, 编辑小组件, 购物清单, 待办, 习惯, 只看我的, 所有人, 桌面
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 **购物**、**待办**和**习惯**小组件都有设置。每个小组件单独保存设置，所以两个购物小组件可以显示两个不同的清单。
 
@@ -15,7 +15,7 @@ translatedFrom: 2026-09-26
 
 **待办**：在 **Show** 里选 **Mine** 或 **Everyone**。
 
-**习惯**：在 **Show** 里选 **Family** 或 **Only mine**。Minzi 和能量条总是显示全家的情况。
+**习惯**：在 **Show** 里选 **Family** 或 **Only mine**。进度环统计的也是这些习惯。
 
 小组件总是显示你在 daili 里当前的家庭或群组，不能给每个小组件单独选家庭。
 

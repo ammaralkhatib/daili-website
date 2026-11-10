@@ -2,15 +2,15 @@
 id: meals-copy-week
 title: De maaltijden van vorige week overnemen
 summary: Was het menu van vorige week goed? Neem het met één tik over in deze week.
-keywords: kopiëren, overnemen, week herhalen, vorige week, menuplanner, weekmenu, hergebruiken, dezelfde maaltijden, dupliceren
-translatedFrom: 2026-11-05
+keywords: kopiëren, overnemen, week herhalen, vorige week, menuplanner, weekmenu, hergebruiken, dezelfde maaltijden, dupliceren, week kopiëren
+translatedFrom: 2026-11-10
 ---
 Veel gezinnen eten de meeste weken hetzelfde. Neem het over in plaats van elke maaltijd opnieuw toe te voegen.
 
-![Het tabblad Planning. Vorige week overnemen is de laatste knop in de rij onder de week.](meals-plan-week)
+![Het tabblad Planning. Week kopiëren in de balk onderaan is omcirkeld.](meals-copy-week)
 
 1. Tik op het startscherm op **Menuplanner** en ga naar de week die je wilt vullen.
-2. Veeg over de rij onder de week en tik op **Vorige week overnemen**.
+2. Tik onderaan op **Week kopiëren**.
 3. Staan er al maaltijden in de week, tik dan op **Overnemen** om te bevestigen.
 
 Er worden maaltijden overgenomen uit de week vóór de week die je bekijkt.

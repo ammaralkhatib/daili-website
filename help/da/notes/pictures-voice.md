@@ -3,16 +3,16 @@ id: notes-pictures-voice
 title: Billeder, tegninger og stemme i en note
 summary: Føj fotos, en tegning eller en lydoptagelse til en note, og vælg, hvor filerne skal ligge.
 keywords: billede, foto, skærmbillede, tegning, tegn, stemme, optagelse, diktering, tekst i billede, daili-skyen, lagerplads, sikkerhedskopi
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 En note kan bestå af kun billeder eller en optagelse, i den rækkefølge du tilføjede dem. Tryk på en vedhæftning for at åbne den.
 
-![En note. Gruppen Vedhæftninger med et link, et billede og en optagelse er ringet ind.](notes-pictures)
+![En note. Gruppen Vedhæftninger med et billede og en optagelse er ringet ind.](notes-pictures)
 
 1. **Foto**: **Kamera**, **Fotobibliotek**, **Indsæt billede**. Fra andre apps: Del → **daili**, op til 10 billeder.
 2. Knappen **Tegn**, lige efter **Link**, åbner tegnefladen. **Rediger tegning** virker kun på den telefon, tegningen blev lavet på.
 3. **Stemme** optager op til 10 minutter.
-4. Mikrofonen ved listeknapperne skriver det, du siger, med din telefons talegenkendelse.
+4. Mens du skriver, skriver mikrofonen ved siden af **B** det, du siger, med din telefons talegenkendelse.
 5. daili læser tekst i billeder på din telefon. Åbn et billede for **Føj til noten**; søgningen finder teksten der.
 
 ![Arket Optag stemme med én stor mikrofonknap.](notes-voice)

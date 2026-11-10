@@ -3,11 +3,9 @@ id: notifications-help
 title: Nie dostajesz powiadomień? Co sprawdzić
 summary: Krótka lista kontrolna na wypadek, gdy przypomnienia albo wieści od rodziny nie docierają.
 keywords: nie działa, brak powiadomień, nie przychodzą, nie dociera, przypomnienie nie zadzwoniło, bateria, skupienie, nie przeszkadzać, wyciszenie, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Przypomnienie nie przyszło? Sprawdź te rzeczy, w tej kolejności.
-
-![Niżej na ekranie Powiadomienia. Zakreślony jest przełącznik Ciche godziny.](notifications-help)
 
 1. **Twój telefon pozwala daili.** Otwórz **Ustawienia**, a potem **Powiadomienia**. Jeśli komunikat na górze mówi, że powiadomienia są wyłączone, dotknij jego przycisku.
 2. **Przełącznik jest włączony.** Na tym samym ekranie sprawdź przełącznik danego rodzaju, na przykład **Przypomnienia o zadaniach**.

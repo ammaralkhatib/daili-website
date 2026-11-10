@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Återkommande händelser
 summary: Låt en händelse upprepas varje dag, vecka, månad eller år, och ändra en dag eller hela serien.
 keywords: upprepa, upprepning, återkommande, varje vecka, veckovis, dagligen, varje månad, varje år, serie, rutin, första torsdagen, sista fredagen
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Simning varje tisdag? Lägg in den en gång.
 
@@ -12,10 +12,10 @@ Simning varje tisdag? Lägg in den en gång.
 1. Tryck på **Upprepning** i en ny händelse.
 2. Välj **Dagligen**, **Varje vecka**, **Varje månad** eller **Varje år**.
 3. Ändra **Var** för ”var 2:a vecka”. För **Varje vecka** väljer du dagarna under **Upprepa på**.
-4. För **Varje månad** väljer du **Dag 5 i månaden** eller en veckodag, till exempel **Den första torsdagen**. Båda följer startdatumet.
-5. Under **Slutar** behåller du **Aldrig** eller väljer **På datum**. Stäng rutan och tryck på **Spara**.
+4. För **Varje månad** väljer du **Dag 3 i månaden** eller en veckodag, till exempel **Den första torsdagen**. Båda följer startdatumet.
+5. Under **Slutar** behåller du **Aldrig** eller väljer **På datum**. Tryck på **Klar** och sedan på **Spara**.
 
-![Rutan Upprepning med Varje månad vald. Den första torsdagen är vald under Dag 5 i månaden, och båda är inringade.](calendar-repeating-monthly)
+![Rutan Upprepning med Varje månad vald. Den första torsdagen är vald under Dag 3 i månaden, och båda är inringade.](calendar-repeating-monthly)
 
 Dag 29, 30 eller 31 flyttas till den sista dagen i kortare månader.
 

@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Wybierz, co pokazuje widżet
 summary: Wybierz listę zakupów dla widżetu oraz to, czy pokazuje tylko twoje zadania i nawyki, czy wszystkich.
 keywords: widżet, ustawienia widżetu, edytuj widżet, lista zakupów, zadania, nawyki, tylko moje, wszyscy, ekran główny
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widżety **Zakupy**, **Zadania** i **Nawyki** mają ustawienia. Każdy widżet pamięta swoje, więc dwa widżety zakupów mogą pokazywać dwie listy.
 
@@ -15,7 +15,7 @@ Widżety **Zakupy**, **Zadania** i **Nawyki** mają ustawienia. Każdy widżet p
 
 **Zadania**: w **Show** wybierz **Mine** albo **Everyone**.
 
-**Nawyki**: w **Show** wybierz **Family** albo **Only mine**. Minzi i pasek energii zawsze pokazują całą rodzinę.
+**Nawyki**: w **Show** wybierz **Family** albo **Only mine**. Pierścień postępu liczy te same nawyki.
 
 Widżet zawsze pokazuje rodzinę albo grupę, która jest aktywna w daili — nie da się wybrać rodziny dla pojedynczego widżetu.
 

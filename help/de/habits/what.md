@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Was Gewohnheiten sind: jeder für sich, gemeinsam, persönlich
-summary: Baut als Familie kleine Gewohnheiten auf. Jeder Haken gibt Minzi, eurer Familienkatze, Energie für ihre nächste Reise.
-keywords: gewohnheiten, habit tracker, routine, familienziele, minzi, katze, gemeinsam, kinder, gute gewohnheiten, jeder für sich
-tipTitle: Baut mit Minzi gemeinsam Gewohnheiten auf
-tipBody: Hakt als Familie kleine Gewohnheiten ab. Ist Minzis Energiebalken voll, geht sie auf Reisen.
-translatedFrom: 2026-10-16
+summary: Baut als Familie kleine Gewohnheiten auf. Seht jeweils die Gewohnheiten einer Person und sammelt Sterne für Belohnungen.
+keywords: gewohnheiten, habit tracker, routine, familienziele, gemeinsam, kinder, gute gewohnheiten, jeder für sich, person wechseln, checkliste, jahresraster, sterne
+tipTitle: Baut gemeinsam Gewohnheiten auf
+tipBody: Hakt als Familie kleine Gewohnheiten ab. Jeder geschaffte Tag bringt einen Stern für eine Belohnung, die ihr zusammen genießt.
+translatedFrom: 2026-11-10
 ---
 Eine Gewohnheit ist etwas Kleines, das du oft tun willst, zum Beispiel lesen oder Wasser trinken. Du findest sie auf dem Startbildschirm unter **Gewohnheiten**. Jede Gewohnheit ist eine von drei Arten. Du wählst sie unter **Wer macht es?**
 
@@ -13,10 +13,12 @@ Eine Gewohnheit ist etwas Kleines, das du oft tun willst, zum Beispiel lesen ode
 2. **Jeder für sich**: Alle, die mitmachen, haken für sich selbst ab und haben ihre eigene Serie.
 3. **Gemeinsam**: ein Haken für die ganze Familie, und jeder kann ihn setzen.
 
-![Der Bildschirm Gewohnheiten mit Minzis Zimmer, dem Balken Familienenergie und Heute, „1 von 4 erledigt“. Der Button + unten rechts ist eingekreist.](habits-what)
+![Der Bildschirm Gewohnheiten: Deine Gewohnheiten, der Sterne-Chip, Heute mit „1 von 4 erledigt“ und Gewohnheitskarten mit ihren Rastern. Der Button + unten rechts ist eingekreist.](habits-what)
 
-Deine Gewohnheiten für heute stehen unter **Heute**, mit der Zahl der erledigten. Füge eine mit dem **+** unten rechts hinzu.
+**Gewohnheiten** zeigt immer eine Person. Tippe auf **Person wechseln**, um die Gewohnheiten von jemand anderem oder die mit **Gemeinsam** zu sehen. Kinder ohne Anmeldung erscheinen dort nur für Admins.
 
-Jeder Haken gibt deiner Familie Energie. Der Balken sitzt unter Minzis Zimmer und wird beim Scrollen zu einem kleinen Ring. Ist er voll, geht Minzi, die Katze, auf Reisen und schickt eine Postkarte nach Hause.
+Jede Gewohnheitskarte hat ein Raster ihrer Tage; öffne sie für das ganze Jahr. Die Buttons neben **Heute** wechseln zwischen **Karten**, **Checkliste** und **Kompakt**.
 
-> Note: Wenn du **Gewohnheiten** zum ersten Mal öffnest, bittet dich daili, der Katze einen Namen zu geben und zwei oder drei Gewohnheiten für den Anfang zu wählen.
+Füge mit dem **+** eine Gewohnheit hinzu. Jeder geschaffte Gewohnheitstag bringt einen Stern für **Belohnungen**.
+
+> Note: Hattest du schon vor dem Update Gewohnheiten, erscheint einmal **Gewohnheiten sind jetzt einfacher**.

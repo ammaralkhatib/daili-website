@@ -5,15 +5,15 @@ summary: Klistra in länken till en matlagningsvideo, så skriver daili ingredie
 keywords: youtube, video, receptvideo, matlagningsvideo, importera video, länk, ai, spara recept, shorts
 tipTitle: Gör ett recept av en YouTube-video
 tipBody: Klistra in länken till en matlagningsvideo, så skriver daili ingredienserna och stegen åt dig.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Sett en rätt på YouTube? daili skriver receptet.
 
-![Skärmen Recept med menyn + öppen. Från en YouTube-video är inringat.](meals-youtube)
+![Skärmen Recept med menyn + öppen. Från YouTube eller Instagram är inringat.](meals-youtube)
 
 1. Kopiera videolänken i YouTube-appen (Dela → Kopiera länk).
-2. Tryck på **Recept** på startskärmen, sedan på **+** och på **Från en YouTube-video**.
-3. Klistra in länken under **YouTube-länk**, eller tryck på **Klistra in**. Tryck sedan på **Läs videon**.
+2. Tryck på **Recept** på startskärmen, sedan på **+** och på **Från YouTube eller Instagram**.
+3. Klistra in länken under **YouTube- eller Instagram-länk**, eller tryck på **Klistra in**. Tryck sedan på **Läs**.
 4. Kontrollera det daili hittade och tryck sedan på **Spara**.
 
 Receptet skrivs på dailis språk. Utan ett eget foto visas videons bild högst upp. Tryck på ▶ för att se videon på YouTube. Vill du behålla en bild lägger du till ett eget foto.

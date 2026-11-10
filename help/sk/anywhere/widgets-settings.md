@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Vyber, čo widget ukazuje
 summary: Vyber nákupný zoznam pre widget a či ukazuje len tvoje úlohy a návyky, alebo všetkých.
 keywords: widget, nastavenia widgetu, upraviť widget, nákupný zoznam, úlohy, návyky, len moje, všetci, plocha
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widgety **Nákupy**, **Úlohy** a **Návyky** majú nastavenia. Každý widget si pamätá svoje, takže dva widgety nákupov môžu ukazovať dva zoznamy.
 
@@ -15,7 +15,7 @@ Widgety **Nákupy**, **Úlohy** a **Návyky** majú nastavenia. Každý widget s
 
 **Úlohy**: pod **Show** vyber **Mine** alebo **Everyone**.
 
-**Návyky**: pod **Show** vyber **Family** alebo **Only mine**. Minzi a ukazovateľ energie ukazujú vždy celú rodinu.
+**Návyky**: pod **Show** vyber **Family** alebo **Only mine**. Kruh pokroku počíta tie isté návyky.
 
 Widget ukazuje vždy rodinu alebo skupinu, ktorá je v daili aktívna — rodinu pre jednotlivý widget vybrať nejde.
 

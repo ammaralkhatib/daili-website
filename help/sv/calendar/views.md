@@ -3,21 +3,23 @@ id: calendar-views
 title: Kalendervyer: månad, vecka, dag, lista, personer och år
 summary: Byt mellan månad, vecka, 3 dagar, dag, lista, personer och år, och filtrera på person, kategori eller kalender.
 keywords: vy, månad, vecka, lista, filter, personer, årsvy, dölj kalender, alla händelser, uppdatera, veckonummer
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Kalendern har sju vyer.
 
 ![Kalendern i månadsvyn. Knappen Vy i fältet längst ned är inringad.](calendar-views)
 
-1. Tryck på **Kalender** på startskärmen och sedan på **Vy** längst ned.
+1. Tryck på veckokortet på startskärmen och sedan på **Vy** längst ned.
 2. Välj **Månad**, **Vecka**, **3 dagar**, **Dag**, **Lista**, **Personer** eller **År**.
 3. För att bara se vissa personer eller kategorier trycker du på **Filter** och väljer dem.
 
-I vyn **Personer** får varje person en egen kolumn, som på en väggkalender. Knappen uppe till vänster döljer kolumner eller ändrar deras ordning.
+**Vecka**, **3 dagar** och **Dag** öppnas vid aktuell tid i dag.
+
+I vyn **Personer** får varje person en egen kolumn. Knappen uppe till vänster döljer kolumner eller ändrar deras ordning.
 
 ![Vyn Personer med en kolumn var för Lena, Marco och Emma. Kolumnrubrikerna är inringade.](calendar-people-view)
 
-I vyn **År** syns heldags- och flerdagshändelser, som skollov och resor. **Alla händelser** lägger till händelser med tid, som endagsstaplar. Tryck på en månad för att öppna den.
+I vyn **År** syns heldags- och flerdagshändelser, som skollov. **Alla händelser** lägger till händelser med tid, som endagsstaplar.
 
 ![Vyn År med lov och resor. Knappen Alla händelser är inringad.](calendar-year-view)
 

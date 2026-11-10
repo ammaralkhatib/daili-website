@@ -622,9 +622,7 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 [dir="rtl"] .help-crumb::before{content:"→ "}
 .help-crumb:hover{text-decoration:underline;text-underline-offset:3px}
 
-/* Minzi sits beside the title, vertically centred; under it on a phone. */
 .help-hero{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.help-minzi{width:96px;height:96px;flex:none}
 
 .help-search{margin-top:24px}
 .help-search label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px;color:var(--ink)}
@@ -692,7 +690,6 @@ footer a:hover{color:var(--forest);text-decoration:underline;text-underline-offs
 
 @media(max-width:380px){.help-hero{flex-direction:column;align-items:flex-start}}
 @media(max-width:560px){
-  .help-minzi{width:80px;height:80px}
   .help-card{padding:14px}
   .help-fig img{max-height:460px}
 }

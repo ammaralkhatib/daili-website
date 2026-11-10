@@ -3,21 +3,23 @@ id: calendar-views
 title: Viste del calendario: mese, settimana, giorno, elenco, persone e anno
 summary: Passa tra mese, settimana, 3 giorni, giorno, elenco, persone e anno, e filtra per persona, categoria o calendario.
 keywords: vista, mese, settimana, elenco, filtro, persone, anno, nascondere calendario, tutti gli eventi, aggiornare, numero della settimana
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Il calendario ha sette viste.
 
 ![Il calendario in vista Mese. Il pulsante Vista nella barra in basso è cerchiato.](calendar-views)
 
-1. Nella schermata iniziale, tocca **Calendario**, poi **Vista** in basso.
+1. Nella schermata iniziale, tocca la scheda della settimana, poi **Vista** in basso.
 2. Scegli **Mese**, **Settimana**, **3 giorni**, **Giorno**, **Elenco**, **Persone** o **Anno**.
 3. Per vedere solo alcune persone o categorie, tocca **Filtro** e sceglile.
 
-La vista **Persone** dà a ogni persona una colonna, come un planner da parete. Il pulsante in alto a sinistra nasconde o riordina le colonne.
+Le viste **Settimana**, **3 giorni** e **Giorno** si aprono sull'ora attuale di oggi.
+
+La vista **Persone** dà a ogni persona una colonna. Il pulsante in alto a sinistra nasconde o riordina le colonne.
 
 ![La vista Persone con una colonna per Lena, Marco ed Emma. Le intestazioni delle colonne sono cerchiate.](calendar-people-view)
 
-La vista **Anno** mostra gli eventi di tutto il giorno e di più giorni, come le vacanze scolastiche e i viaggi. **Tutti gli eventi** aggiunge gli eventi con un orario, come barre di un giorno. Tocca un mese per aprirlo.
+La vista **Anno** mostra gli eventi di tutto il giorno e di più giorni, come le vacanze scolastiche. **Tutti gli eventi** aggiunge gli eventi con un orario, come barre di un giorno.
 
 ![La vista Anno con vacanze e viaggi. L'etichetta Tutti gli eventi è cerchiata.](calendar-year-view)
 

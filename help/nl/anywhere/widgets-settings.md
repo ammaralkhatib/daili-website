@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Kiezen wat een widget toont
 summary: Kies welke boodschappenlijst een widget toont, en of hij alleen jouw taken en gewoontes toont of die van iedereen.
 keywords: widget, widgetinstellingen, widget wijzigen, boodschappenlijst, taken, gewoontes, alleen mijn, iedereen, beginscherm
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 De widgets **Boodschappen**, **Taken** en **Gewoontes** hebben instellingen. Elke widget onthoudt zijn eigen, dus twee boodschappenwidgets kunnen twee lijsten tonen.
 
@@ -15,7 +15,7 @@ De widgets **Boodschappen**, **Taken** en **Gewoontes** hebben instellingen. Elk
 
 **Taken**: kies onder **Show** voor **Mine** of **Everyone**.
 
-**Gewoontes**: kies onder **Show** voor **Family** of **Only mine**. Minzi en de energiebalk tonen altijd het hele gezin.
+**Gewoontes**: kies onder **Show** voor **Family** of **Only mine**. De voortgangsring telt dezelfde gewoontes.
 
 Een widget toont altijd het gezin of de groep die in daili actief is — per widget een gezin kiezen kan niet.
 

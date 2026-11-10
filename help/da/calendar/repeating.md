@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Gentagne begivenheder
 summary: Lad en begivenhed gentage sig hver dag, uge, måned eller år, og ændr én dag eller hele serien.
 keywords: gentag, gentagelse, tilbagevendende, hver uge, ugentligt, dagligt, månedligt, årligt, serie, rutine, første torsdag, sidste fredag
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Svømning hver tirsdag? Tilføj det én gang.
 
@@ -12,10 +12,10 @@ Svømning hver tirsdag? Tilføj det én gang.
 1. Tryk på **Gentagelse** i en ny begivenhed.
 2. Vælg **Dagligt**, **Ugentligt**, **Månedligt** eller **Årligt**.
 3. Ændr **Hver** for "hver 2. uge". Ved **Ugentligt** vælger du dagene under **Gentag på**.
-4. Ved **Månedligt** vælger du **Dag 5 i måneden** eller en ugedag, fx **Den første torsdag**. Begge følger startdatoen.
-5. Behold **Aldrig** under **Slutter**, eller vælg **På dato**. Luk arket, og tryk på **Gem**.
+4. Ved **Månedligt** vælger du **Dag 3 i måneden** eller en ugedag, fx **Den første torsdag**. Begge følger startdatoen.
+5. Behold **Aldrig** under **Slutter**, eller vælg **På dato**. Tryk på **Færdig** og så på **Gem**.
 
-![Arket Gentagelse med Månedligt valgt. Den første torsdag er valgt under Dag 5 i måneden, og begge er markeret med en cirkel.](calendar-repeating-monthly)
+![Arket Gentagelse med Månedligt valgt. Den første torsdag er valgt under Dag 3 i måneden, og begge er markeret med en cirkel.](calendar-repeating-monthly)
 
 Dag 29, 30 eller 31 rykker til den sidste dag i kortere måneder.
 

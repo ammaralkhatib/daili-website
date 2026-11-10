@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Cosa sono le abitudini: ognuno, insieme, personali
-summary: Costruite piccole abitudini in famiglia. Ogni spunta dà energia a Minzi, il gatto di famiglia, per il suo prossimo viaggio.
-keywords: abitudini, tracker di abitudini, routine, obiettivi di famiglia, minzi, gatto, insieme, bambini, buone abitudini, ognuno
-tipTitle: Costruite abitudini insieme a Minzi
-tipBody: Spuntate piccole abitudini in famiglia. Quando la barra dell'energia di Minzi è piena, Minzi parte per un viaggio.
-translatedFrom: 2026-10-16
+summary: Costruite piccole abitudini in famiglia. Guardate le abitudini di una persona alla volta e guadagnate stelle per i premi.
+keywords: abitudini, tracker di abitudini, routine, obiettivi di famiglia, insieme, bambini, buone abitudini, ognuno, cambia persona, lista di controllo, griglia dell'anno, stelle
+tipTitle: Costruite abitudini insieme
+tipBody: Spuntate piccole abitudini in famiglia. Ogni giorno completato dà una stella per un premio da godervi insieme.
+translatedFrom: 2026-11-10
 ---
 Un'abitudine è una piccola cosa che vuoi fare spesso, come leggere o bere acqua. Le trovi nella schermata iniziale sotto **Abitudini**. Ogni abitudine è di uno di tre tipi. Lo scegli sotto **Chi la fa?**
 
@@ -13,10 +13,12 @@ Un'abitudine è una piccola cosa che vuoi fare spesso, come leggere o bere acqua
 2. **Ognuno di noi**: chi partecipa spunta per sé e ha la sua serie.
 3. **Insieme**: una spunta per tutta la famiglia, e chiunque può darla.
 
-![La schermata Abitudini con la stanza di Minzi, la barra Energia della famiglia e Oggi, «1 di 4 fatte». Il pulsante + in basso a destra è cerchiato.](habits-what)
+![La schermata Abitudini: Le tue abitudini, l'etichetta delle stelle, Oggi con «1 di 4 fatte» e le schede delle abitudini con le loro griglie. Il pulsante + in basso a destra è cerchiato.](habits-what)
 
-Le abitudini di oggi sono sotto **Oggi**, con quante ne hai già fatte. Aggiungine una con il **+** in basso a destra.
+**Abitudini** mostra una persona alla volta. Tocca **Cambia persona** per vedere quelle di qualcun altro, o le abitudini **Insieme**. Solo gli admin vedono lì i bambini senza accesso.
 
-Ogni spunta dà energia alla tua famiglia. La barra sta sotto la stanza di Minzi e diventa un piccolo anello quando scorri. Quando è piena, Minzi il gatto parte per un viaggio e manda a casa una cartolina.
+Ogni scheda di un'abitudine ha una griglia dei suoi giorni; aprila per vedere tutto l'anno. I pulsanti accanto a **Oggi** passano tra **Schede**, **Lista** e **Compatta**.
 
-> Note: La prima volta che apri **Abitudini**, daili ti chiede di dare un nome al gatto e di scegliere due o tre abitudini per iniziare.
+Aggiungi un'abitudine con il **+**. Ogni giorno di abitudine completato fa guadagnare una stella per i **Premi**.
+
+> Note: Se avevi abitudini prima dell'aggiornamento, **Abitudini più semplici** compare una volta.

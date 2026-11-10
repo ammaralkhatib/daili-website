@@ -3,11 +3,9 @@ id: start-features
 title: Välj vad du ser på startskärmen
 summary: Välj de funktioner som din familj använder. Du kan ändra ditt val när som helst.
 keywords: funktioner, välja, startskärm, rutor, ställa in, första stegen, stänga av, menscykel, vad använda
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Direkt efter att du har skapat eller gått med i din första familj frågar daili: **Vad vill du använda Daili till?** Alla funktioner är på från början, utom Menscykel.
-
-![Funktionskorten. Rutan på kortet Inköp är inringad.](start-features)
 
 1. Tryck på ett kort för att läsa om det.
 2. Tryck på rutan på ett kort för att stänga av det, eller slå på det igen.

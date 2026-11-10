@@ -7,16 +7,16 @@ keywords: today, agenda, daily, overview, what's on, schedule, due today, tonigh
 routes: /today
 tryIt: /today
 since: 1.1.0
-updated: 2026-11-05
+updated: 2026-11-10
 media: start-today
 order: 6
-related: start-home, calendar-views, start-weather
+related: start-home, calendar-views, start-weather, start-read-aloud
 ---
 Today shows what's on for your family today, on one screen.
 
 ![The Today screen. The weather card at the top is circled.](start-today)
 
-1. On Home, tap the **Today** button at the top right, next to the bell.
+1. On Home, tap the calendar icon at the top right, between the weather and the bell.
 2. Scroll through the sections, like **To-dos**, **Shopping** and **Meals today**.
 3. Tap a link under a section, like **Calendar** or **All tasks**, to open the full screen.
 4. Go back to return to Home.

@@ -5,9 +5,9 @@ summary: Se dina planer, bocka av uppgifter och inköp eller lägg till något n
 keywords: widget, widgetar, hemskärm, låsskärm, iphone, android, vanor, middag, snabbt lägga till, födelsedag, bocka av, lägg till widget
 tipTitle: Din planering på hemskärmen
 tipBody: Lägg till en daili-widget och se vad som händer härnäst utan att öppna appen.
-translatedFrom: 2026-10-23
+translatedFrom: 2026-11-10
 ---
-daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkning) och widgetar för **Inköp**, **Uppgifter**, vanor med Minzi, nedräkning till födelsedagar, kvällens middag, snabbt lägga till och **Snabbanteckning**.
+daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkning) och widgetar för **Inköp**, **Uppgifter**, **Vanor** med en förloppsring, nedräkning till födelsedagar, kvällens middag, snabbt lägga till och **Snabbanteckning**.
 
 1. Håll fingret på en tom plats på telefonens hemskärm.
 2. På iPhone trycker du på **Redigera** och sedan på **Lägg till widget**. På Android trycker du på **Widgetar**.
@@ -16,7 +16,7 @@ daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkn
 
 Bocka av uppgifter, inköp och vanor direkt i widgeten. **+** lägger till något; tryck någon annanstans så öppnas daili där.
 
-Kalenderwidgeten visar dina närmaste dagar.
+Kalenderwidgeten visar dina närmaste dagar. Ringen i **Vanor** visar hur många som är klara i dag.
 
 På iPhone kan låsskärmen visa **Näst på tur**, en knapp för en ny anteckning och räknare. Titlar förblir dolda tills du låser upp.
 

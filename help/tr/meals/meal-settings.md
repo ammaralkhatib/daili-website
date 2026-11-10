@@ -3,9 +3,9 @@ id: meals-meal-settings
 title: Yemek ayarları: hangi öğünler, porsiyon ve akşam yemeği saati
 summary: Ailenin hangi öğünleri planladığını, genelde kaç porsiyon pişirdiğini ve akşam yemeğini ne zaman yediğini seç.
 keywords: yemek ayarları, kahvaltı, öğle yemeği, akşam yemeği, atıştırmalık, porsiyon, aile büyüklüğü, akşam yemeği saati, yoğun akşam
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
-daili'ye ailenin nasıl yediğini söyle. Hafta artık yalnızca planladığın öğünleri gösterir.
+daili'ye ailenin nasıl yediğini söyle.
 
 ![Kahvaltı, Öğle yemeği, Akşam yemeği ve Atıştırmalık anahtarları, her zamanki porsiyon ve akşam yemeği saatiyle Yemek ayarları. Öğün anahtarları daire içine alınmış.](meals-meal-settings)
 
@@ -13,6 +13,8 @@ daili'ye ailenin nasıl yediğini söyle. Hafta artık yalnızca planladığın 
 2. **Planladığın öğünler** altında **Kahvaltı**, **Öğle yemeği**, **Akşam yemeği** ya da **Atıştırmalık** seçeneğini aç. En az biri açık kalır.
 3. **Her zamanki porsiyon**: ailenin kaç kişi olduğu. Tarifler buna göre ölçeklenir.
 4. **Akşam yemeği saati**: genelde ne zaman yediğiniz.
+
+Bu anahtarlar ana öğününü belirler (açıksa akşam yemeği); bir günün **+** düğmesi bu öğünle başlar. Bir tarifteki **Planla** ve **Taşı veya değiştir** yine her öğünü sunar, hafta da planladığın her şeyi gösterir.
 
 Akşam yemeği saati yoğun akşamları da bulur. daili'nin gösterdiği herhangi bir takvimde, akşam yemeğinden 90 dakika önce ile 30 dakika sonra arasındaki saatli bir etkinlik o günü işaretler; o gün hızlı yemekler önce gelir.
 

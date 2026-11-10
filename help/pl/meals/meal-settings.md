@@ -3,9 +3,9 @@ id: meals-meal-settings
 title: Ustawienia posiłków: które posiłki, porcje i pora kolacji
 summary: Wybierz, które posiłki planuje twoja rodzina, ile porcji zwykle gotujesz i o której jecie kolację.
 keywords: ustawienia posiłków, śniadanie, obiad, kolacja, przekąska, porcje, wielkość rodziny, pora kolacji, pracowity wieczór
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
-Powiedz daili, jak je twoja rodzina. Tydzień pokaże wtedy tylko posiłki, które planujesz.
+Powiedz daili, jak je twoja rodzina.
 
 ![Ustawienia posiłków z przełącznikami Śniadanie, Obiad, Kolacja i Przekąska, zwykłą liczbą porcji i porą kolacji. Zakreślone są przełączniki posiłków.](meals-meal-settings)
 
@@ -13,6 +13,8 @@ Powiedz daili, jak je twoja rodzina. Tydzień pokaże wtedy tylko posiłki, któ
 2. W sekcji **Posiłki, które planujesz** włącz **Śniadanie**, **Obiad**, **Kolacja** albo **Przekąska**. Co najmniej jeden zostaje włączony.
 3. **Zwykła liczba porcji**: wielkość twojej rodziny. Przepisy się do niej dopasują.
 4. **Pora kolacji**: kiedy zwykle jecie.
+
+Te przełączniki wybierają twój główny posiłek (kolację, jeśli jest włączona), od którego zaczyna **+** danego dnia. **Zaplanuj** w przepisie i **Przenieś/zamień** nadal proponują każdy posiłek, a tydzień pokazuje wszystko, co zaplanowałeś.
 
 Pora kolacji pomaga też znaleźć pracowite wieczory. Wydarzenie z godziną, z każdego kalendarza, który pokazuje daili, od 90 minut przed kolacją do 30 minut po niej oznacza ten dzień, a szybkie dania są wtedy pierwsze.
 

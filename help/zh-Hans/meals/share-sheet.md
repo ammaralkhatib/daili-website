@@ -2,8 +2,8 @@
 id: meals-share-sheet
 title: 分享到 daili：笔记、食谱或日程
 summary: 从其他应用分享链接、照片或消息，保存为笔记、食谱或日历日程。
-keywords: 分享, 保存到 daili, 分享菜单, whatsapp, signal, 截图, 消息, 食谱链接, 浏览器, youtube, 日程
-translatedFrom: 2026-11-05
+keywords: 分享, 保存到 daili, 分享菜单, whatsapp, signal, 截图, 消息, 食谱链接, 浏览器, youtube, instagram, 日程
+translatedFrom: 2026-11-10
 ---
 在其他应用里看到有用的东西？发到 daili。
 
@@ -13,9 +13,9 @@ translatedFrom: 2026-11-05
 2. 在**保存到 daili**里，选**笔记**、**食谱**或**日程**。
 3. 笔记点**保存**；食谱或日程点**继续**。
 
-**食谱**：daili 会读取来自食谱网站、浏览器或 YouTube 的链接，并把文字整理成食材和步骤。照片由 AI 读取（1 次 AI 操作），目前只读第一张图片。
+**食谱**：daili 会读取来自食谱网站、浏览器或 YouTube 的链接。来自 Instagram 帖子的话，它会读取帖子的文字（1 次 AI 操作）。它会把文字整理成食材和步骤。最多 5 张图片会由 AI 当作一个食谱读取（1 次 AI 操作）。
 
-**日程**：daili 的 AI 会读取一条消息（比如来自 WhatsApp 或 Signal）或一张截图，并给出建议的日程（1 次 AI 操作）。找到好几个？取消勾选不需要的。
+**日程**：daili 的 AI 会读取一条消息（比如来自 WhatsApp 或 Signal）或第一张截图，并给出建议的日程（1 次 AI 操作）。找到好几个？取消勾选不需要的。
 
 你会先检查所有内容。你确认之前，什么都不会保存。食谱链接默认在**食谱**；图片则从你上次的选择开始。
 

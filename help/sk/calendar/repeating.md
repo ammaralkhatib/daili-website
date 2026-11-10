@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Opakované udalosti
 summary: Nastav, aby sa udalosť opakovala každý deň, týždeň, mesiac alebo rok, a zmeň jeden deň alebo celú sériu.
 keywords: opakovať, opakovanie, opakovaná, každý týždeň, týždenne, denne, mesačne, ročne, séria, prvý štvrtok, posledný piatok
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Plávanie každý utorok? Pridaj ho raz.
 
@@ -12,10 +12,10 @@ Plávanie každý utorok? Pridaj ho raz.
 1. V novej udalosti ťukni na **Opakovanie**.
 2. Vyber **Denne**, **Týždenne**, **Mesačne** alebo **Ročne**.
 3. Zmeň **Po** na „každé 2 týždne“. Pri **Týždenne** vyber dni v časti **Opakovať v**.
-4. Pri **Mesačne** vyber **5. deň v mesiaci** alebo deň v týždni, napríklad **V prvý štvrtok**. Obe sa riadia dátumom začiatku.
-5. V časti **Končí** nechaj **Nikdy** alebo vyber **K dátumu**. Zavri panel a ťukni na **Uložiť**.
+4. Pri **Mesačne** vyber **3. deň v mesiaci** alebo deň v týždni, napríklad **V prvý štvrtok**. Obe sa riadia dátumom začiatku.
+5. V časti **Končí** nechaj **Nikdy** alebo vyber **K dátumu**. Ťukni na **Hotovo** a potom na **Uložiť**.
 
-![Panel Opakovanie s vybratým Mesačne. Pod 5. deň v mesiaci je vybraté V prvý štvrtok a obe sú zakrúžkované.](calendar-repeating-monthly)
+![Panel Opakovanie s vybratým Mesačne. Pod 3. deň v mesiaci je vybraté V prvý štvrtok a obe sú zakrúžkované.](calendar-repeating-monthly)
 
 Deň 29, 30 alebo 31 sa v kratších mesiacoch posunie na posledný deň.
 

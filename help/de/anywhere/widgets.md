@@ -5,9 +5,9 @@ summary: Sieh deine Pläne, hake Aufgaben und Einkäufe ab oder füg Neues hinzu
 keywords: widget, widgets, home-bildschirm, sperrbildschirm, iphone, android, gewohnheiten-widget, abendessen-widget, schnell hinzufügen, geburtstags-countdown, abhaken, widget hinzufügen
 tipTitle: Dein Plan auf dem Home-Bildschirm
 tipBody: Füg ein daili-Widget hinzu und sieh, was als Nächstes ansteht, ohne die App zu öffnen.
-translatedFrom: 2026-10-23
+translatedFrom: 2026-11-10
 ---
-daili hat die Kalender-Widgets **Kalender** und **Nächster Termin** (mit Countdown) sowie **Einkaufen**, **Aufgaben**, **Gewohnheiten** mit Minzi, **Geburtstags-Countdown**, **Abendessen heute**, **Schnell hinzufügen** und **Schnelle Notiz**.
+daili hat die Kalender-Widgets **Kalender** und **Nächster Termin** (mit Countdown) sowie **Einkaufen**, **Aufgaben**, **Gewohnheiten** mit Fortschrittsring, **Geburtstags-Countdown**, **Abendessen heute**, **Schnell hinzufügen** und **Schnelle Notiz**.
 
 1. Halte eine freie Stelle auf dem Home-Bildschirm deines Handys gedrückt.
 2. Auf dem iPhone tippst du auf **Bearbeiten** und dann auf **Widget hinzufügen**. Auf Android tippst du auf **Widgets**.
@@ -16,7 +16,7 @@ daili hat die Kalender-Widgets **Kalender** und **Nächster Termin** (mit Countd
 
 Hake Aufgaben, Einkäufe und Gewohnheiten direkt im Widget ab. Das **+** fügt etwas hinzu; tippst du woanders hin, öffnet sich daili an dieser Stelle.
 
-Das Kalender-Widget zeigt deine nächsten Tage.
+Das Kalender-Widget zeigt deine nächsten Tage. Der Ring im Widget **Gewohnheiten** zeigt, wie viele heute erledigt sind.
 
 Auf dem iPhone kann der Sperrbildschirm **Nächster Termin**, einen Button **Neue Notiz** und Zähler zeigen. Titel bleiben verborgen, bis du entsperrst.
 

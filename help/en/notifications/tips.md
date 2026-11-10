@@ -7,16 +7,14 @@ keywords: tips, suggestions, tip notification, hint, too many notifications, tur
 routes: /settings/notifications
 tryIt: /settings/notifications
 since: 1.15.0
-updated: 2026-11-05
-media: notifications-choose
+updated: 2026-11-10
+mediaPending: notifications-choose now rings Your meal wishes; needs its own Tips shot
 order: 4
 related: notifications-choose, account-tips, notifications-turn-on
 ---
 A tip is one short notification about a daili feature you haven't used yet. Tap it to go there.
 
 Tips come at most once a day and twice a week, and only when you haven't opened daili for a day or two. They come in the early evening, never during your quiet hours.
-
-![Notification settings. The Tips & suggestions switch is circled.](notifications-choose)
 
 1. Open **Settings** and tap **Notifications**.
 2. Switch off **Tips & suggestions**. It's the last switch, above **Email**.

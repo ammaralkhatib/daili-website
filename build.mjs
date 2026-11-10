@@ -1163,7 +1163,6 @@ ${newOnes.map(row).join('\n')}
       cards,
       noResult: uiHtml(ui.noResult, { email: SUPPORT_MAIL }),
       indexJson: JSON.stringify(index).replace(/</g, '\\u003c'),
-      minziSrc: `/help/media/minzi-look-right.webp?v=${fileSha8(p('static/help/media/minzi-look-right.webp'))}`,
     };
   }
 

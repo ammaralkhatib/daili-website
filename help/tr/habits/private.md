@@ -3,7 +3,7 @@ id: habits-private
 title: Özel alışkanlıklar
 summary: Bir alışkanlığı kendine sakla. Aileden başka kimse görmez.
 keywords: özel, gizli, kişisel, saklı, yalnızca ben, gizlilik, alışkanlık, kilit, sadece ben
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Bazı alışkanlıklar kimseyi ilgilendirmez. Özel bir alışkanlığı yalnızca sen görürsün.
 
@@ -16,4 +16,4 @@ Bazı alışkanlıklar kimseyi ilgilendirmez. Özel bir alışkanlığı yalnız
 
 Alışkanlık artık bir kilit ve **Özel** kelimesini gösterir.
 
-> Note: Yalnızca **Sadece ben** alışkanlığı özel olabilir. Özel alışkanlıklar aileye enerji vermez ve aile panosunda görünmez.
+> Note: Yalnızca **Sadece ben** alışkanlığı özel olabilir. Özel alışkanlıklar yıldız kazandırmaz ve aile panosunda görünmez.

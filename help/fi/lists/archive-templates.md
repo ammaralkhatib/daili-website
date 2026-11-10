@@ -3,9 +3,9 @@ id: lists-archive-templates
 title: Arkistoi lista tai tallenna se pohjaksi
 summary: Pane valmis lista talteen ja palauta se myöhemmin, tai tallenna lista pohjaksi, josta voit aloittaa uusia listoja.
 keywords: arkistoi, arkistoitu, palauta, pohja, pohjat, käytä uudelleen, pakkauslista, valmis lista, pane talteen, kopioi lista
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-10
 ---
-Lista on valmis, mutta haluat säilyttää sen? Arkistoi se poistamisen sijaan. Tämä toimii ostoslistoille ja tehtävälistoille.
+Lista on valmis, mutta haluat säilyttää sen? Arkistoi se poistamisen sijaan.
 
 ![Arkistoidut listat -näkymä, jossa on kaksi listaa. Listan valikon Palauta on ympyröity.](lists-archive)
 
@@ -13,7 +13,7 @@ Lista on valmis, mutta haluat säilyttää sen? Arkistoi se poistamisen sijaan. 
 2. Arkistoidut listat odottavat listojesi lopussa kohdassa **Arkistoidut · N**. Napauta listaa, niin voit lukea sen. Sitä ei voi muuttaa.
 3. Palauta lista napauttamalla sen vieressä **⋯** → **Palauta**. **Poista** poistaa sen lopullisesti.
 4. Jos haluat käyttää listaa uudelleen, avaa se ja napauta **⋯** → **Tallenna pohjaksi**.
-5. Seuraavalla kerralla napauta listoissasi **+** ja sitten **Aloita pohjasta**.
+5. Seuraavalla kerralla napauta listoissasi **+** ja sitten **Aloita pohjasta**. Ostoksissa valitse ensin **Ostoslista**.
 6. Pohjien käyttö, nimeäminen uudelleen tai poistaminen: listojesi yläreunan **⋯** → **Pohjat**.
 
 ![Uusi lista -näkymä, jossa Valitse pohja on auki ja siinä kaksi pohjaa. Pohjien lista on ympyröity.](lists-templates)

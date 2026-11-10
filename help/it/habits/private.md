@@ -3,7 +3,7 @@ id: habits-private
 title: Abitudini private
 summary: Tieni un'abitudine per te. Nessun altro in famiglia la vede.
 keywords: privata, privato, segreto, personale, nascosta, solo io, privacy, abitudine, lucchetto
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Alcune abitudini non riguardano nessun altro. Un'abitudine privata la vedi solo tu.
 
@@ -16,4 +16,4 @@ Alcune abitudini non riguardano nessun altro. Un'abitudine privata la vedi solo 
 
 Ora l'abitudine mostra un lucchetto e la parola **Privata**.
 
-> Note: Solo un'abitudine **Solo io** può essere privata. Le abitudini private non danno energia alla famiglia e restano fuori dalla bacheca di famiglia.
+> Note: Solo un'abitudine **Solo io** può essere privata. Le abitudini private non fanno guadagnare stelle e restano fuori dalla bacheca di famiglia.

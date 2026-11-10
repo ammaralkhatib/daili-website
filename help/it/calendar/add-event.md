@@ -2,21 +2,23 @@
 id: calendar-add-event
 title: Aggiungere un evento
 summary: Metti un appuntamento, un viaggio o una partita nel calendario di famiglia, così lo vedono tutti.
-keywords: aggiungere evento, nuovo evento, creare evento, appuntamento, programmare, pianificare, data, voce del calendario, tutto il giorno
-translatedFrom: 2026-09-30
+keywords: aggiungere evento, nuovo evento, creare evento, appuntamento, programmare, pianificare, data, voce del calendario, tutto il giorno, altri giorni, più giorni
+translatedFrom: 2026-11-10
 ---
 Tutta la famiglia vede subito un nuovo evento.
 
 ![Il calendario in vista Mese. Il pulsante + in basso a destra è cerchiato.](calendar-add-event)
 
-1. Apri **Calendario** e tocca il pulsante rotondo **+** in basso a destra.
+1. Apri **Calendario** e tocca **+** in basso a destra.
 2. Inserisci un **Titolo**.
 3. Imposta **Inizio** e **Fine**. Per una giornata intera, attiva **Tutto il giorno**.
 4. Se vuoi, aggiungi altro: **Ripetizione**, un **Promemoria**, una **Categoria** o un **Luogo**.
 5. Tocca **Salva**.
 
-Sotto **Per**, scegli per chi è l'evento, anche i bambini. Se non scegli nessuno, vale **Tutti**. Solo le persone scelte che hanno un accesso ricevono i suoi promemoria e le notifiche. Un evento privato non ha la riga **Per**.
+Lo stesso evento in altri giorni, come i turni? Tocca **Altri giorni** (anche su app.daili.app) e spuntali. Ogni giorno diventa un evento a sé. Gli altri ricevono una sola notifica, qualche minuto dopo.
 
-Poi daili apre il tuo evento, così puoi collegare un'attività, un articolo della spesa, un documento o una foto. Le date sono su carta? Vedi **Compila un evento da una foto**.
+Sotto **Per**, scegli per chi è l'evento, anche i bambini. Se non scegli nessuno, vale **Tutti**. Solo le persone scelte che hanno un accesso ricevono i suoi promemoria e le notifiche.
 
-> Note: Puoi aggiungere un evento anche dalla schermata iniziale: tocca il pulsante rotondo **+**, o il **+** sulla scheda della settimana.
+**Allega** aggiunge un'attività, un articolo della spesa, un documento o una foto. Dopo il salvataggio, l'evento si apre. Chiudilo e si illumina nel punto in cui è finito.
+
+> Note: Puoi aggiungere un evento anche dalla schermata iniziale: il pulsante rotondo **+**, o il **+** sulla scheda della settimana.

@@ -7,7 +7,7 @@ keywords: repeat, repeating, recurring, every week, weekly, daily, monthly, year
 routes: /calendar/new, /calendar/edit
 tryIt: /calendar/new
 since: 1.0.0
-updated: 2026-10-27
+updated: 2026-11-10
 media: calendar-repeating
 order: 4
 related: calendar-add-event, calendar-edit-delete
@@ -19,10 +19,10 @@ Swimming every Tuesday? Add it once.
 1. In a new event, tap **Repeats**.
 2. Pick **Daily**, **Weekly**, **Monthly** or **Yearly**.
 3. Change **Every** for "every 2 weeks". For **Weekly**, pick the days under **Repeat on**.
-4. For **Monthly**, pick **On day 5** or a weekday, like **On the first Thursday**. Both follow the start date.
-5. Under **Ends**, keep **Never** or pick **On date**. Close the sheet and tap **Save**.
+4. For **Monthly**, pick **On day 3** or a weekday, like **On the first Thursday**. Both follow the start date.
+5. Under **Ends**, keep **Never** or pick **On date**. Tap **Done**, then **Save**.
 
-![The Repeats sheet with Monthly picked. On the first Thursday is selected under On day 5, and both are circled.](calendar-repeating-monthly)
+![The Repeats sheet with Monthly picked. On the first Thursday is selected under On day 3, and both are circled.](calendar-repeating-monthly)
 
 Day 29, 30 or 31 moves to the last day in shorter months.
 

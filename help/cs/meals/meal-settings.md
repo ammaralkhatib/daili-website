@@ -3,9 +3,9 @@ id: meals-meal-settings
 title: Nastavení jídel: která jídla, porce a čas večeře
 summary: Vyber, která jídla tvoje rodina plánuje, kolik porcí obvykle vaříš a kdy máte večeři.
 keywords: nastavení jídel, snídaně, oběd, večeře, svačina, porce, velikost rodiny, čas večeře, rušný večer
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
-Řekni daili, jak vaše rodina jí. V týdnu pak uvidíš jen jídla, která plánuješ.
+Řekni daili, jak vaše rodina jí.
 
 ![Nastavení jídel s přepínači Snídaně, Oběd, Večeře a Svačina, obvyklým počtem porcí a časem večeře. Zakroužkované jsou přepínače jídel.](meals-meal-settings)
 
@@ -13,6 +13,8 @@ translatedFrom: 2026-11-05
 2. V části **Jídla, která plánuješ** zapni **Snídaně**, **Oběd**, **Večeře** nebo **Svačina**. Aspoň jedno zůstane zapnuté.
 3. **Obvyklý počet porcí**: velikost tvé rodiny. Recepty se tomu přizpůsobí.
 4. **Čas večeře**: kdy obvykle jíte.
+
+Tyto přepínače určují tvoje hlavní jídlo (večeři, pokud je zapnutá), kterým začíná **+** u každého dne. **Naplánovat** u receptu a **Přesunout/prohodit** dál nabízejí všechna jídla a týden ukazuje všechno, co jsi naplánoval.
 
 Podle času večeře daili najde i rušné večery. Událost s časem, v kterémkoli kalendáři, který daili zobrazuje, od 90 minut před večeří do 30 minut po ní, ten den označí a rychlá jídla jsou pak první.
 

@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Přejmenovat, přebarvit, seřadit nebo smazat seznam
 summary: Dej seznamu nový název, barvu nebo ikonu, přetáhni seznamy do pořadí, nebo smaž ten, který nepotřebuješ.
 keywords: přejmenovat, upravit seznam, barva, ikona, pořadí, seřadit seznamy, smazat seznam, odstranit seznam
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Funguje to stejně pro nákupní seznamy i seznamy úkolů.
-
 ![Obrazovka Nákupy s otevřenou nabídkou ⋯ u seznamu. Zakroužkovaná je volba Upravit, pod ní je Smazat.](lists-edit-list)
 
 1. Na domovské obrazovce klepni na **Nákupy** nebo **Úkoly**.
 2. Na kartě seznamu klepni na **⋯** a pak na **Upravit**.
-3. Změň pole **Název**, **Barva** nebo **Ikona** a klepni na **Uložit**.
+3. Změň pole **Název** nebo **Barva**. Jinou ikonu vybereš klepnutím na ikonu v poli názvu. Pak klepni na **Uložit**.
 4. Pořadí změníš tak, že podržíš prst na kartě a přetáhneš ji.
 5. Pokud chceš seznam smazat, klepni na jeho kartě na **⋯** a pak na **Smazat**. **Zpět** ve zprávě ho na pár sekund dokáže vrátit.
 

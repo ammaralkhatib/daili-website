@@ -5,15 +5,15 @@ summary: 粘贴烹饪视频的链接，daili 会用你的语言帮你写出食�
 keywords: youtube, 油管, 视频, 食谱视频, 烹饪视频, 导入视频, 链接, ai, 保存食谱, shorts
 tipTitle: 把 YouTube 视频变成食谱
 tipBody: 粘贴烹饪视频的链接，daili 会帮你写出食材和步骤。
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 在 YouTube 上看到一道好菜？daili 帮你写出食谱。
 
-![打开了 + 菜单的“食谱”页面。“从YouTube视频”被圈出。](meals-youtube)
+![打开了 + 菜单的“食谱”页面。“从YouTube或Instagram”被圈出。](meals-youtube)
 
 1. 在 YouTube 应用里复制视频链接（分享 → 复制链接）。
-2. 在主页上，依次点**食谱**、**+**、**从YouTube视频**。
-3. 把链接粘贴到**YouTube链接**里，或者点**粘贴**。然后点**读取视频**。
+2. 在主页上，依次点**食谱**、**+**、**从YouTube或Instagram**。
+3. 把链接粘贴到**YouTube或Instagram链接**里，或者点**粘贴**。然后点**读取**。
 4. 检查 daili 找到的内容，然后点**保存**。
 
 食谱会用 daili 的语言写出来。没有你自己的照片时，顶部会显示视频的图片。点 ▶ 可以在 YouTube 上观看。想保留图片，就添加你自己的照片。

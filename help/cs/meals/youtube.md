@@ -5,15 +5,15 @@ summary: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a po
 keywords: youtube, video, videorecept, video s vařením, import videa, odkaz, ai, uložit recept, shorts
 tipTitle: Udělej z videa na YouTube recept
 tipBody: Vlož odkaz na video s vařením a daili za tebe sepíše suroviny a postup.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Na YouTube tě zaujalo jídlo? daili sepíše recept.
 
-![Obrazovka Recepty s otevřenou nabídkou +. Zakroužkovaná je volba Z videa na YouTube.](meals-youtube)
+![Obrazovka Recepty s otevřenou nabídkou +. Zakroužkovaná je volba Z YouTube nebo Instagramu.](meals-youtube)
 
 1. Zkopíruj odkaz na video v aplikaci YouTube (Sdílet → Kopírovat odkaz).
-2. Na domovské obrazovce klepni na **Recepty**, pak na **+** a pak na **Z videa na YouTube**.
-3. Vlož odkaz do pole **Odkaz na YouTube**, nebo klepni na **Vložit**. Pak klepni na **Přečíst video**.
+2. Na domovské obrazovce klepni na **Recepty**, pak na **+** a pak na **Z YouTube nebo Instagramu**.
+3. Vlož odkaz do pole **Odkaz na YouTube nebo Instagram**, nebo klepni na **Vložit**. Pak klepni na **Přečíst**.
 4. Zkontroluj, co daili našlo, a pak klepni na **Uložit**.
 
 Recept bude v jazyce daili. Bez vlastní fotky se nahoře ukáže obrázek z videa. Klepnutím na ▶ si video pustíš na YouTube. Chceš-li obrázek zachovat, přidej vlastní fotku.

@@ -3,11 +3,9 @@ id: notifications-help
 title: Får du inga aviseringar? Det här kan du kontrollera
 summary: En kort checklista för när påminnelser eller uppdateringar från familjen inte kommer fram.
 keywords: fungerar inte, inga aviseringar, saknas, kommer inte fram, påminnelsen hördes inte, batteri, fokus, stör ej, ljudlös, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Kom inte en påminnelse? Kontrollera det här, i den här ordningen.
-
-![Längre ned på skärmen Aviseringar. Reglaget Tysta timmar är inringat.](notifications-help)
 
 1. **Telefonen tillåter daili.** Öppna **Inställningar** och sedan **Aviseringar**. Om det står högst upp att aviseringar är avstängda, tryck på knappen där.
 2. **Reglaget är på.** Kontrollera reglaget för den sortens avisering på samma skärm, till exempel **Uppgiftspåminnelser**.

@@ -3,11 +3,9 @@ id: notifications-help
 title: Non ricevi notifiche? Cosa controllare
 summary: Una breve lista di controlli per quando promemoria o aggiornamenti della famiglia non arrivano.
 keywords: non funziona, nessuna notifica, mancanti, non arrivano, il promemoria non ha suonato, batteria, full immersion, non disturbare, silenzioso, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Un promemoria non è arrivato? Controlla questi punti, in quest'ordine.
-
-![Più in basso nella schermata Notifiche. L'interruttore Ore di silenzio è cerchiato.](notifications-help)
 
 1. **Il telefono consente daili.** Apri **Impostazioni**, poi **Notifiche**. Se un avviso in alto dice che le notifiche sono disattivate, tocca il suo pulsante.
 2. **L'interruttore è attivo.** Nella stessa schermata, controlla l'interruttore di quel tipo, come **Promemoria delle attività**.

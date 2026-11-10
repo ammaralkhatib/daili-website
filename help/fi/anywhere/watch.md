@@ -3,9 +3,9 @@ id: anywhere-watch
 title: daili Apple Watchissa
 summary: Näe, mitä on tulossa, merkitse ostokset, tehtävät ja tavat tehdyiksi ja lisää asioita äänellä – suoraan ranteessa.
 keywords: apple watch, watch, kello, ranne, komplikaatio, kellotaulu, smart stack, ostoslista, ääni, sanelu, pikamuistiinpano, tavat
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-10
 ---
-Pyyhkäise neljän sivun välillä: **Seuraavaksi** näyttää seuraavat tapahtumasi, tämän illan ruoan ja seuraavan syntymäpäivän, sitten ostoslistasi, **Tehtävät** ja **Tavat** Minzin kanssa.
+Pyyhkäise neljän sivun välillä: **Seuraavaksi** näyttää seuraavat tapahtumasi, tämän illan ruoan ja seuraavan syntymäpäivän, sitten ostoslistasi, **Tehtävät** ja **Tavat**.
 
 ![Seuraavaksi kellossa: syntymäpäivä tänään, illan ruoka ja syntymäpäivä 4 päivän päästä.](watch-up-next)
 
@@ -16,8 +16,6 @@ Pyyhkäise neljän sivun välillä: **Seuraavaksi** näyttää seuraavat tapahtu
 Merkitse rivi tehdyksi napauttamalla sitä. Ostoslistalla ja tehtävissä voit perua napauttamalla uudelleen 3 sekunnin sisällä.
 
 ![Tehtävät-sivu kellossa: kaksi avointa tehtävää, eräpäivä tänään ja huomenna.](watch-todos)
-
-![Tavat-sivu kellossa: Minzi, tänään tehty 2/5 ja ensimmäiset tavat.](watch-habits)
 
 Äänellä: napauta **Seuraavaksi**-sivun kynää pikamuistiinpanoa varten tai ostoslistan **Lisää kohde**.
 

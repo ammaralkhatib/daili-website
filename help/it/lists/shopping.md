@@ -3,20 +3,21 @@ id: lists-shopping
 title: Liste della spesa: aggiungere, spuntare, svuotare
 summary: Una lista della spesa condivisa da tutta la famiglia. Aggiungi elementi, spuntali al negozio e togli quello che hai comprato.
 keywords: spesa, lista della spesa, supermercato, comprare, spuntare, alimentari, svuotare, completati, fare la spesa, generi alimentari
-translatedFrom: 2026-11-09
+translatedFrom: 2026-11-10
 ---
 Tutta la famiglia vede le stesse liste della spesa. Quando qualcuno aggiunge o spunta un elemento, lo vedono tutti.
 
 ![La lista Spesa con elementi aperti e due spuntati sotto Completati. La barra Aggiungi un elemento in basso è cerchiata.](lists-shopping)
 
-1. Nella schermata iniziale, tocca **Spesa**, poi tocca una lista. Per una nuova lista, tocca **+**, inserisci un **Nome** e tocca **Crea**. **Solo io** la tiene per te.
+1. Nella schermata iniziale, tocca **Spesa**, poi tocca una lista. Per una nuova lista, tocca **+**, poi **Lista della spesa**, inserisci un **Nome** e tocca **Crea**.
 2. Scrivi quello che ti serve in **Aggiungi un elemento** in basso e aggiungilo.
-3. Tocca un elemento per cambiare la **Quantità** o aggiungere una **Nota**, poi tocca **Salva**.
-4. Al negozio, tocca la casella davanti a un elemento. Scende in **Completati**.
-5. Quando torni a casa, tocca **⋯** in alto, poi **Elimina i completati**. Oppure tocca **Togli tutte le spunte** per riusare la stessa lista.
+3. Al negozio, tocca la casella davanti a un elemento. Scende in **Completati**.
+4. Quando torni a casa, tocca **⋯**, poi **Elimina i completati**. Oppure tocca **Togli tutte le spunte** per riusare la stessa lista.
 
-Se hai un budget, quando spunti l'ultimo elemento daili ti propone di aggiungerci la spesa. Puoi anche toccare **⋯** → **Aggiungi al budget**.
+Scorri un elemento verso sinistra per eliminarlo, oppure tienilo premuto per spostarlo.
+
+Se hai un budget, quando spunti l'ultimo elemento daili ti propone di aggiungerci la spesa.
 
 Vuoi tenere d'occhio un elemento anche a casa? Toccalo e attiva **Tieni nelle scorte**.
 
-> Note: Hai spuntato l'elemento sbagliato? Tocca **Annulla** nel messaggio in fondo allo schermo.
+Niente campo? Le liste salvate si aprono lo stesso, e puoi spuntare e aggiungere. Una piccola nuvola segna una riga finché non viene inviata. Le altre modifiche richiedono una connessione.

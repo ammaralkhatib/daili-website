@@ -5,9 +5,9 @@ summary: Zobacz swoje plany, odhaczaj zadania i zakupy albo dodaj coś nowego �
 keywords: widżet, widżety, ekran główny, ekran blokady, iphone, android, nawyki, kolacja, szybkie dodawanie, urodziny, odhaczanie, dodaj widżet
 tipTitle: Twój plan na ekranie głównym
 tipBody: Dodaj widżet daili i zobacz, co cię czeka, bez otwierania aplikacji.
-translatedFrom: 2026-10-23
+translatedFrom: 2026-11-10
 ---
-daili ma widżety z planami (**Kalendarz** i **Najbliższe** z odliczaniem do następnego wydarzenia), **Zakupy**, **Zadania**, nawyki z Minzi, odliczanie do urodzin, dzisiejszą kolację, szybkie dodawanie i **Szybka notatka**.
+daili ma widżety z planami (**Kalendarz** i **Najbliższe** z odliczaniem do następnego wydarzenia), **Zakupy**, **Zadania**, **Nawyki** z pierścieniem postępu, odliczanie do urodzin, dzisiejszą kolację, szybkie dodawanie i **Szybka notatka**.
 
 1. Przytrzymaj puste miejsce na ekranie głównym telefonu.
 2. Na iPhonie dotknij **Edycja**, a potem **Dodaj widżet**. Na Androidzie dotknij **Widżety**.
@@ -16,7 +16,7 @@ daili ma widżety z planami (**Kalendarz** i **Najbliższe** z odliczaniem do na
 
 Odhaczaj zadania, zakupy i nawyki prosto na widżecie. **+** pozwala coś dodać; dotknij w innym miejscu, a daili otworzy się właśnie tam.
 
-Widżet kalendarza pokazuje najbliższe dni.
+Widżet kalendarza pokazuje najbliższe dni. Pierścień w widżecie **Nawyki** pokazuje, ile nawyków jest dziś zrobionych.
 
 Na iPhonie ekran blokady może pokazywać **Najbliższe**, przycisk **Nowa notatka** i liczniki. Tytuły są ukryte, dopóki nie odblokujesz telefonu.
 

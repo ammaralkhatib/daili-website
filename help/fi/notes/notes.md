@@ -5,7 +5,7 @@ summary: Kirjoita muistiinpano tai jaa linkki mistä tahansa sovelluksesta. Muis
 keywords: muistiinpano, pikamuistiinpano, linkki, jaa, tarkistuslista, muistutus, äskettäin poistetut, tiivistä, lihavointi, kursiivi, otsikko, muotoilu
 tipTitle: Jaa linkki dailiin, niin se säilyy
 tipBody: Jaa video, julkaisu tai sivu mistä tahansa sovelluksesta dailiin, niin siitä tulee muistiinpano – yksityinen, kunnes jaat sen.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Muistiinpanossa on **Otsikko**, tekstiä tai molemmat, sekä luetteloita ja tarkistuslistoja.
 
@@ -14,22 +14,20 @@ Muistiinpanossa on **Otsikko**, tekstiä tai molemmat, sekä luetteloita ja tark
 1. Napauta aloitusnäytöllä **Muistiinpanot** ja sitten **+** tai alapalkin painiketta: kuva, ääni, video, linkki, piirros.
 2. Kirjoita ja napauta **Tallenna**.
 
+Nopeammin: **Pikamuistiinpano**-widget, iPhonen Toimintopainike tai Jaa → **daili** → **Tallenna** mistä tahansa sovelluksesta.
+
 Kirjoittaessasi napauta **B** lihavointia, **I** kursiivia tai **T** otsikkoa varten (**H** osoitteessa app.daili.app). Napauta uudelleen, niin otsikko pienenee.
 
-![Uusi muistiinpano, jossa on otsikkorivi, lihavoitu sana ja kursivoitu rivi muotoilumerkkeineen. Painikkeet B, I ja T on ympyröity.](notes-formatting)
+![Uusi muistiinpano, jossa on otsikkorivi, lihavoitu sana ja kursivoitu rivi sellaisina kuin ne näyttävät, ilman merkkejä. Muotoilurivi, jossa ovat B, I ja T, on ympyröity.](notes-formatting)
 
-Muistiinpanot avautuvat ruudukkona. Yläreunan painike vaihtaa luetteloon. Nopeammin: **Pikamuistiinpano**-widget, iPhonen Toimintopainike tai Jaa → **daili** → **Tallenna** mistä tahansa sovelluksesta.
+Tarkistuslistan kohtia voi vetää. Merkityt siirtyvät kohtaan **Tehty**.
 
-![Uusi muistiinpano ja painikkeet Kuva, Ääni, Video, Linkki ja Piirrä. Rivi, joka kertoo, kuka sen näkee, on ympyröity.](notes-new)
+![Uusi muistiinpano, jossa painikkeiden Kuva, Ääni, Video, Linkki ja Piirrä yläpuolella ovat painikkeet Vain minä, Tunnisteet ja Muistuta minua. Vain minä -painike on ympyröity.](notes-new)
 
-Näppäimistön yläpuolella: tunnisteet, muistutus (vain sinä saat sen) ja kuka muistiinpanon näkee: **Vain minä** (oletus), **Koko perhe** tai **Valitse jäsenet**.
+Liitepainikkeiden yläpuolella olevilla painikkeilla valitset, kuka muistiinpanon näkee (aluksi **Vain minä**), tunnisteet ja muistutuksen (vain sinä saat sen).
 
-![Äskettäin poistetut. Yksi muistiinpano, joka poistuu 27 päivän päästä, sekä Poista lopullisesti ja Palauta.](notes-trash)
-
-Poistetut muistiinpanot odottavat 30 päivää kohdassa **⋯** → **Äskettäin poistetut**.
-
-![Muistiinpano. Daili Plus -ryhmä ja sen kaksi riviä ”Tee tästä tapahtuma, tehtävä tai ostoslista” ja ”Tiivistä” on ympyröity.](notes-ai)
+![Muistiinpano, jossa on kuva ja äänite. Daili Plus -ryhmä ja rivi ”Tee tästä tapahtuma, tehtävä tai ostoslista” on ympyröity.](notes-ai)
 
 Muistiinpanossa kohdan **Daili Plus** rivit **Tee tästä tapahtuma, tehtävä tai ostoslista** ja **Tiivistä** ovat aikuisille (18+), ja kumpikin käyttää yhden tekoälytoiminnon.
 
-> Note: Ilman nettiä uudet muistiinpanot lähtevät myöhemmin itsestään.
+> Note: Ilman verkkoa tai heikolla yhteydellä uudet muistiinpanot odottavat tilassa **Odottaa verkkoa** ja lähtevät myöhemmin itsestään.

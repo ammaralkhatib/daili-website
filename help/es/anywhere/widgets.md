@@ -5,9 +5,9 @@ summary: Mira tus planes, marca tareas y compras o añade algo nuevo — directa
 keywords: widget, widgets, pantalla de inicio, pantalla de bloqueo, iphone, android, hábitos, cena, añadir rápido, cumpleaños, marcar, añadir widget
 tipTitle: Tu plan en la pantalla de inicio
 tipBody: Añade un widget de daili y mira lo próximo sin abrir la app.
-translatedFrom: 2026-10-23
+translatedFrom: 2026-11-10
 ---
-daili tiene widgets para tu agenda (**Calendario**, y **Lo próximo**, con cuenta atrás hasta tu siguiente evento), **Compras**, **Tareas**, los hábitos con Minzi, la cuenta atrás de cumpleaños, la cena de esta noche, añadir rápido y **Nota rápida**.
+daili tiene widgets para tu agenda (**Calendario**, y **Lo próximo**, con cuenta atrás hasta tu siguiente evento), **Compras**, **Tareas**, **Hábitos** con un anillo de progreso, la cuenta atrás de cumpleaños, la cena de esta noche, añadir rápido y **Nota rápida**.
 
 1. Mantén pulsado un hueco vacío de la pantalla de inicio del teléfono.
 2. En el iPhone, toca **Editar** y luego **Añadir widget**. En Android, toca **Widgets**.
@@ -16,7 +16,7 @@ daili tiene widgets para tu agenda (**Calendario**, y **Lo próximo**, con cuent
 
 Marca tareas, compras y hábitos directamente en el widget. El **+** añade algo; toca en otro sitio para abrir daili ahí.
 
-El widget de calendario muestra tus próximos días.
+El widget de calendario muestra tus próximos días. El anillo de **Hábitos** muestra cuántos llevas hechos hoy.
 
 En el iPhone, la pantalla de bloqueo puede mostrar **Lo próximo**, un botón **Nueva nota** y contadores. Los títulos quedan ocultos hasta que desbloqueas.
 

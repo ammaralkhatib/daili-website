@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Eventos que se repiten
 summary: Haz que un evento se repita cada día, semana, mes o año, y cambia un solo día o toda la serie.
 keywords: repetir, repetición, periódico, cada semana, semanal, diario, mensual, anual, serie, rutina, primer jueves, último viernes
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 ¿Natación todos los martes? Añádelo una vez.
 
@@ -12,10 +12,10 @@ translatedFrom: 2026-10-27
 1. En un evento nuevo, toca **Repetición**.
 2. Elige **Cada día**, **Cada semana**, **Cada mes** o **Cada año**.
 3. Cambia **Cada** para «cada 2 semanas». Con **Cada semana**, elige los días en **Repetir los**.
-4. Con **Cada mes**, elige **El día 5** o un día de la semana, como **El primer jueves**. Los dos siguen la fecha de inicio.
-5. En **Termina**, deja **Nunca** o elige **En una fecha**. Cierra la hoja y toca **Guardar**.
+4. Con **Cada mes**, elige **El día 3** o un día de la semana, como **El primer jueves**. Los dos siguen la fecha de inicio.
+5. En **Termina**, deja **Nunca** o elige **En una fecha**. Toca **Listo** y luego **Guardar**.
 
-![La hoja Repetición con Cada mes elegido. El primer jueves está seleccionado debajo de El día 5, y los dos están marcados con un círculo.](calendar-repeating-monthly)
+![La hoja Repetición con Cada mes elegido. El primer jueves está seleccionado debajo de El día 3, y los dos están marcados con un círculo.](calendar-repeating-monthly)
 
 El día 29, 30 o 31 pasa al último día en los meses más cortos.
 

@@ -3,21 +3,23 @@ id: calendar-views
 title: Zobrazení kalendáře: měsíc, týden, den, agenda, lidé a rok
 summary: Přepínej mezi měsícem, týdnem, 3 dny, dnem, agendou, lidmi a rokem a filtruj podle osoby, kategorie nebo kalendáře.
 keywords: zobrazení, měsíc, týden, agenda, filtr, lidé, rok, skrýt kalendář, všechny události, obnovit, číslo týdne
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Kalendář má sedm zobrazení.
 
 ![Kalendář v zobrazení Měsíc. Zakroužkované je tlačítko Zobrazení na spodní liště.](calendar-views)
 
-1. Na domovské obrazovce klepni na **Kalendář** a pak dole na **Zobrazení**.
+1. Na domovské obrazovce klepni na kartu týdne a pak dole na **Zobrazení**.
 2. Vyber **Měsíc**, **Týden**, **3 dny**, **Den**, **Agenda**, **Lidé** nebo **Rok**.
 3. Pokud chceš vidět jen některé lidi nebo kategorie, klepni na **Filtr** a vyber je.
 
-Zobrazení **Lidé** dá každému člověku vlastní sloupec, jako nástěnný plánovač. Tlačítko vlevo nahoře sloupce skryje nebo přeřadí.
+**Týden**, **3 dny** a **Den** se otevřou dnes v aktuálním čase.
+
+Zobrazení **Lidé** dá každému člověku vlastní sloupec. Tlačítko vlevo nahoře sloupce skryje nebo přeřadí.
 
 ![Zobrazení Lidé se sloupci Lena, Marco a Emma. Zakroužkovaná jsou záhlaví sloupců.](calendar-people-view)
 
-Zobrazení **Rok** ukazuje celodenní a vícedenní události, třeba školní prázdniny a výlety. **Všechny události** přidá události s časem, jako jednodenní pruhy. Klepnutím na měsíc ho otevřeš.
+Zobrazení **Rok** ukazuje celodenní a vícedenní události, třeba školní prázdniny. **Všechny události** přidá události s časem, jako jednodenní pruhy.
 
 ![Zobrazení Rok s prázdninami a výlety. Zakroužkovaný je čip Všechny události.](calendar-year-view)
 

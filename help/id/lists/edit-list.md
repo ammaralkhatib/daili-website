@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Ganti nama, warna, urutan, atau hapus daftar
 summary: Beri daftar nama, warna, atau ikon baru, seret daftar sesuai urutan, atau hapus yang tidak diperlukan.
 keywords: ganti nama, ubah daftar, warna, ikon, urutkan, urutan daftar, hapus daftar, buang daftar
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Ini sama untuk daftar belanja dan daftar tugas.
-
 ![Layar Belanja dengan menu ⋯ sebuah daftar terbuka. Ubah dilingkari, dengan Hapus di bawahnya.](lists-edit-list)
 
 1. Di Beranda, ketuk **Belanja** atau **Tugas**.
 2. Di kartu daftar, ketuk **⋯**, lalu **Ubah**.
-3. Ganti **Nama**, **Warna**, atau **Ikon**, lalu ketuk **Simpan**.
+3. Ganti **Nama** atau **Warna**. Untuk ikon lain, ketuk ikon di kolom nama. Lalu ketuk **Simpan**.
 4. Untuk mengubah urutan, tekan lama sebuah kartu dan seret.
 5. Untuk menghapus daftar, ketuk **⋯** di kartunya, lalu **Hapus**. **Urungkan** di pesannya mengembalikannya selama beberapa detik.
 

@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Alışkanlıklar nedir: her birimiz, birlikte, kişisel
-summary: Aile olarak küçük alışkanlıklar edinin. Her işaret, aile kediniz Minzi'ye bir sonraki gezisi için enerji verir.
-keywords: alışkanlıklar, alışkanlık takibi, rutin, aile hedefleri, minzi, kedi, birlikte, çocuklar, iyi alışkanlıklar, her birimiz
-tipTitle: Minzi'yle birlikte alışkanlık edinin
-tipBody: Aile olarak küçük alışkanlıkları işaretleyin. Minzi'nin enerji çubuğu dolunca geziye çıkar.
-translatedFrom: 2026-10-16
+summary: Aile olarak küçük alışkanlıklar edinin. Alışkanlıkları kişi kişi görün ve ödüller için yıldız kazanın.
+keywords: alışkanlıklar, alışkanlık takibi, rutin, aile hedefleri, birlikte, çocuklar, iyi alışkanlıklar, her birimiz, kişiyi değiştir, liste, yıl ızgarası, yıldızlar
+tipTitle: Birlikte alışkanlık edinin
+tipBody: Aile olarak küçük alışkanlıkları işaretleyin. Tamamlanan her gün, birlikte tadını çıkaracağınız bir ödül için yıldız verir.
+translatedFrom: 2026-11-10
 ---
 Alışkanlık, sık yapmak istediğin küçük bir şeydir, örneğin kitap okumak ya da su içmek. Onları ana ekranda **Alışkanlıklar** altında bulursun. Her alışkanlık üç türden biridir. Türü **Kim yapıyor?** altında seçersin.
 
@@ -13,10 +13,12 @@ Alışkanlık, sık yapmak istediğin küçük bir şeydir, örneğin kitap okum
 2. **Her birimiz**: katılan herkes kendisi için işaretler ve kendi serisini tutar.
 3. **Birlikte**: tüm aile için tek bir işaret, ve bunu herkes verebilir.
 
-![Minzi'nin odası, Aile enerjisi çubuğu ve "1/4 tamamlandı" yazan Bugün bölümüyle Alışkanlıklar ekranı. Sağ alttaki + düğmesi daire içine alınmış.](habits-what)
+![Alışkanlıklar ekranı: Alışkanlıkların, yıldız çipi, "1/4 tamamlandı" yazan Bugün ve ızgaralı alışkanlık kartları. Sağ alttaki + düğmesi daire içine alınmış.](habits-what)
 
-Bugünkü alışkanlıkların, kaçının tamamlandığıyla birlikte **Bugün** altındadır. Sağ alttaki **+** ile yeni bir tane ekle.
+**Alışkanlıklar** ekranı her seferinde bir kişiyi gösterir. Başka birinin alışkanlıklarını ya da **Birlikte** alışkanlıklarını görmek için **Kişiyi değiştir** seçeneğine dokun. Girişi olmayan çocukları orada yalnızca yöneticiler görür.
 
-Her işaret ailene enerji verir. Çubuk Minzi'nin odasının altındadır ve ekranı kaydırınca küçük bir halkaya dönüşür. Çubuk dolunca kedi Minzi geziye çıkar ve eve bir kartpostal gönderir.
+Her alışkanlık kartında günlerini gösteren bir ızgara vardır; tüm yılı görmek için kartı aç. **Bugün** yanındaki düğmeler **Kartlar**, **Liste** ve **Kompakt** görünümleri arasında geçiş yapar.
 
-> Note: **Alışkanlıklar** ekranını ilk açtığında daili senden kediye bir ad vermeni ve başlamak için iki üç alışkanlık seçmeni ister.
+**+** ile bir alışkanlık ekle. Tamamlanan her alışkanlık günü **Ödüller** için bir yıldız kazandırır.
+
+> Note: Güncellemeden önce alışkanlıkların varsa **Alışkanlıklar artık daha basit** bir kez görünür.

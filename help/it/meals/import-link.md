@@ -5,7 +5,7 @@ summary: Incolla il link di una pagina di ricette, e daili compila per te ingred
 keywords: importare, link, url, sito, ricetta, salvare ricetta, blog, incollare link, web, copiare ricetta
 tipTitle: Salva ricette da qualsiasi sito
 tipBody: Incolla il link di una pagina di ricette, e daili compila per te ingredienti e passaggi.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Hai trovato una buona ricetta online? Salvala senza ricopiarla.
 
@@ -20,4 +20,4 @@ Se una pagina non ha dati di ricetta, daili salva comunque il titolo e la foto. 
 
 Più veloce: nel browser o nell'app YouTube, condividi la pagina con **daili** e scegli **Ricetta**.
 
-> Note: I link di Instagram e TikTok non contengono dati di ricetta. Copia invece il testo della ricetta e usa **Incolla il testo della ricetta**. Per YouTube, usa **Da un video di YouTube**.
+> Note: I link di TikTok e Facebook non contengono dati di ricetta. Copia invece il testo della ricetta e usa **Incolla il testo della ricetta**. Per YouTube o Instagram, usa **Da YouTube o Instagram**.

@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Toistuvat tapahtumat
 summary: Toista tapahtuma joka päivä, viikko, kuukausi tai vuosi, ja muuta yhtä päivää tai koko sarjaa.
 keywords: toisto, toistuva, säännöllinen, joka viikko, viikoittain, päivittäin, kuukausittain, vuosittain, sarja, rutiini, ensimmäinen torstai, viimeinen perjantai
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Uimassa joka tiistai? Lisää se kerran.
 
@@ -12,10 +12,10 @@ Uimassa joka tiistai? Lisää se kerran.
 1. Napauta uudessa tapahtumassa **Toisto**.
 2. Valitse **Päivittäin**, **Viikoittain**, **Kuukausittain** tai **Vuosittain**.
 3. Muuta kohtaa **Toistuu**, jos haluat esimerkiksi ”2 viikon välein”. Kun valinta on **Viikoittain**, valitse päivät kohdassa **Toistopäivät**.
-4. Kun valinta on **Kuukausittain**, valitse **Kuukauden 5. päivänä** tai viikonpäivä, kuten **Kuukauden ensimmäisenä torstaina**. Molemmat määräytyvät alkupäivän mukaan.
-5. Pidä kohdassa **Päättyy** valinta **Ei koskaan** tai valitse **Päivämääränä**. Sulje paneeli ja napauta **Tallenna**.
+4. Kun valinta on **Kuukausittain**, valitse **Kuukauden 3. päivänä** tai viikonpäivä, kuten **Kuukauden ensimmäisenä torstaina**. Molemmat määräytyvät alkupäivän mukaan.
+5. Pidä kohdassa **Päättyy** valinta **Ei koskaan** tai valitse **Päivämääränä**. Napauta **Valmis** ja sitten **Tallenna**.
 
-![Toisto-paneeli, jossa Kuukausittain on valittuna. Kuukauden ensimmäisenä torstaina on valittuna vaihtoehdon Kuukauden 5. päivänä alla, ja molemmat on ympyröity.](calendar-repeating-monthly)
+![Toisto-paneeli, jossa Kuukausittain on valittuna. Kuukauden ensimmäisenä torstaina on valittuna vaihtoehdon Kuukauden 3. päivänä alla, ja molemmat on ympyröity.](calendar-repeating-monthly)
 
 Päivä 29, 30 tai 31 siirtyy lyhyempinä kuukausina kuun viimeiseen päivään.
 

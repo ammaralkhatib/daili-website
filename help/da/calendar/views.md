@@ -3,21 +3,23 @@ id: calendar-views
 title: Kalendervisninger: måned, uge, dag, liste, personer og år
 summary: Skift mellem måned, uge, 3 dage, dag, liste, personer og år, og filtrér efter person, kategori eller kalender.
 keywords: visning, måned, uge, liste, filter, personer, årsvisning, skjul kalender, alle begivenheder, opdater, ugenummer
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Kalenderen har syv visninger.
 
 ![Kalenderen i visningen Måned. Knappen Visning i bjælken forneden er markeret med en cirkel.](calendar-views)
 
-1. Tryk på **Kalender** på startskærmen og så på **Visning** forneden.
+1. Tryk på ugekortet på startskærmen og så på **Visning** forneden.
 2. Vælg **Måned**, **Uge**, **3 dage**, **Dag**, **Liste**, **Personer** eller **År**.
 3. Vil du kun se nogle personer eller kategorier, så tryk på **Filter**, og vælg dem.
 
-I visningen **Personer** får hver person sin egen kolonne, som på en vægkalender. Knappen øverst til venstre skjuler kolonner eller ændrer rækkefølgen.
+**Uge**, **3 dage** og **Dag** åbner ved det aktuelle tidspunkt i dag.
+
+I visningen **Personer** får hver person sin egen kolonne. Knappen øverst til venstre skjuler kolonner eller ændrer rækkefølgen.
 
 ![Visningen Personer med en kolonne til hver af Lena, Marco og Emma. Kolonneoverskrifterne er markeret med en cirkel.](calendar-people-view)
 
-I visningen **År** ser du heldags- og flerdagsbegivenheder, som skoleferier og rejser. **Alle begivenheder** tilføjer begivenheder med et tidspunkt som éndagsbjælker. Tryk på en måned for at åbne den.
+I visningen **År** ser du heldags- og flerdagsbegivenheder, som skoleferier. **Alle begivenheder** tilføjer begivenheder med et tidspunkt som éndagsbjælker.
 
 ![Visningen År med ferier og rejser. Knappen Alle begivenheder er markeret med en cirkel.](calendar-year-view)
 

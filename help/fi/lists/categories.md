@@ -2,8 +2,8 @@
 id: lists-categories
 title: Ostosten kategoriat ja omat kategoriat
 summary: Ryhmittele ostoslista osastoittain oman kauppasi järjestyksessä ja lisää omia kategorioita.
-keywords: kategoria, kategoriat, osasto, kauppa, ruokakauppa, ryhmittele, lajittele, järjestys, hedelmät ja vihannekset, maitotuotteet
-translatedFrom: 2026-09-25
+keywords: kategoria, kategoriat, osasto, kauppa, ruokakauppa, ryhmittele, lajittele, järjestys, hedelmät ja vihannekset, maitotuotteet, emoji
+translatedFrom: 2026-11-10
 ---
 Uudet ostokset saavat kategorian nimensä perusteella, joten maito menee kategoriaan **Maitotuotteet**. Kun ryhmittelet listan kategorioittain, kuljet kaupan läpi vain kerran.
 
@@ -12,7 +12,7 @@ Uudet ostokset saavat kategorian nimensä perusteella, joten maito menee kategor
 1. Avaa ostoslista ja napauta yläreunassa **⋯**.
 2. Laita **Ryhmittele luokittain** päälle.
 3. Napauta **Kategoriat** ja vedä ne siihen järjestykseen, jossa kuljet kaupassasi.
-4. Napauta kategoriaa, jos haluat nimetä sen uudelleen, vaihtaa sen emojin tai piilottaa sen. Tee oma napauttamalla **Lisää kategoria**, enintään 30.
+4. Napauta kategoriaa, jos haluat nimetä sen uudelleen, valita sille emojin ruudukosta tai piilottaa sen. Ruudukon viimeinen ruutu avaa kaikki emojit hakuineen. Tee oma napauttamalla **Lisää kategoria**, enintään 30.
 5. Jos haluat siirtää yhden ostoksen, napauta sitä, valitse **Luokka** ja napauta **Tallenna**.
 
 > Note: Voit poistaa vain itse lisäämäsi kategoriat: napauta kategoriaa ja sitten **Poista kategoria**. Sen ostokset pysyvät listoillasi, vain ilman kategoriaa.

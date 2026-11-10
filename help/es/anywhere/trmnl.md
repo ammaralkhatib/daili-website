@@ -2,14 +2,14 @@
 id: anywhere-trmnl
 title: Mostrar daili en una pantalla TRMNL
 summary: El calendario, las tareas y las listas de tu familia en una tranquila pantalla de tinta electrónica en la pared.
-keywords: trmnl, e-ink, tinta electrónica, papel electrónico, pantalla de pared, calendario de pared, cocina, nevera, panel, plugin
-translatedFrom: 2026-10-20
+keywords: trmnl, e-ink, tinta electrónica, papel electrónico, pantalla de pared, calendario de pared, cocina, nevera, panel, plugin, fahrenheit, celsius
+translatedFrom: 2026-11-10
 ---
 TRMNL es una pantalla de pared de tinta electrónica (e-ink). Muestra una sola pantalla a la vez y se actualiza sola. daili es un plugin gratuito para ella.
 
 1. En TRMNL, abre **Plugins**, busca **Daili** e instálalo.
 2. Escribe tu correo de daili (tiene que estar confirmado) y luego el código de 6 dígitos que te enviamos. ¿Estás en varias familias o grupos? Elige uno.
-3. Abre los ajustes del plugin en TRMNL. Elige una **Pantalla**: Hoy, 3 días, Semana, Mes o Lista. Activa **Mostrar el tiempo** si quieres y luego pulsa **Guardar y actualizar la pantalla**.
+3. Abre los ajustes del plugin en TRMNL. Elige una **Pantalla**: Hoy, 3 días, Mes o Lista. Activa **Mostrar el tiempo** (°C o °F) y luego pulsa **Guardar y actualizar la pantalla**.
 
 Para tener varias pantallas, añade Daili más de una vez; TRMNL las va rotando. Daili también cabe en la mitad o en un cuarto de la pantalla.
 

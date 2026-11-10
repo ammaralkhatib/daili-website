@@ -2,8 +2,8 @@
 id: lists-categories
 title: Kategorie zakupów i twoje własne
 summary: Grupuj listę zakupów według działów, w kolejności twojego sklepu, i dodawaj własne kategorie.
-keywords: kategoria, kategorie, dział, alejka, supermarket, sklep spożywczy, grupuj, sortuj, kolejność, nabiał
-translatedFrom: 2026-09-25
+keywords: kategoria, kategorie, dział, alejka, supermarket, sklep spożywczy, grupuj, sortuj, kolejność, nabiał, emoji
+translatedFrom: 2026-11-10
 ---
 Nowe elementy dostają kategorię na podstawie nazwy, więc mleko trafia do kategorii **Nabiał**. Pogrupuj listę według kategorii, a przejdziesz przez sklep tylko raz.
 
@@ -12,7 +12,7 @@ Nowe elementy dostają kategorię na podstawie nazwy, więc mleko trafia do kate
 1. Otwórz listę zakupów i dotknij **⋯** na górze.
 2. Włącz **Grupuj według kategorii**.
 3. Dotknij **Kategorie** i przeciągnij je w kolejności, w jakiej chodzisz po sklepie.
-4. Dotknij kategorii, żeby zmienić jej nazwę, emoji albo ją ukryć. Dotknij **Dodaj kategorię**, żeby utworzyć własną, maksymalnie 30.
+4. Dotknij kategorii, żeby zmienić jej nazwę, wybrać emoji z siatki albo ją ukryć. Ostatnie pole siatki otwiera wszystkie emoji, z wyszukiwaniem. Dotknij **Dodaj kategorię**, żeby utworzyć własną, maksymalnie 30.
 5. Żeby przenieść jeden element, dotknij go, wybierz **Kategoria** i dotknij **Zapisz**.
 
 > Note: Usunąć możesz tylko kategorie dodane przez ciebie: dotknij jednej, a potem **Usuń kategorię**. Jej elementy zostają na twoich listach, tylko bez kategorii.

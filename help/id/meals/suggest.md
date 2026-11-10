@@ -2,23 +2,23 @@
 id: meals-suggest
 title: Biar Daili merencanakan makan malam Anda
 summary: Satu ketukan menyarankan makan malam untuk setiap malam kosong minggu ini — dari resep Anda sendiri, plus beberapa ide baru.
-keywords: rencana makan, saran, ai, rencanakan minggu, ide makan malam, makan apa malam ini, menu mingguan, makan malam cepat, vegetarian, anak
+keywords: rencana makan, saran, ai, rencanakan minggu, rencana ai, ide makan malam, makan apa malam ini, menu mingguan, makan malam cepat, vegetarian, anak
 tipTitle: Kehabisan ide makan malam?
-tipBody: Ketuk Rencanakan mingguku di rencana makan, dan Daili menyarankan makan malam untuk setiap malam kosong, dari resep Anda dan resep baru.
-translatedFrom: 2026-11-05
+tipBody: Ketuk Rencana AI di bawah rencana makan, dan daili menyarankan makan malam untuk setiap malam kosong.
+translatedFrom: 2026-11-10
 ---
-Kehabisan ide makan malam?
+![Tab Rencana. Rencana AI di bilah bawah dilingkari.](meals-suggest)
 
-![Tab Rencana. Rencanakan mingguku adalah tombol pertama di bawah minggu.](meals-plan-week)
-
-1. Di Beranda, ketuk **Rencana makan**, lalu **Rencanakan mingguku**.
-2. Pilih filter kalau mau: **Cepat (di bawah 30 mnt)**, **Ramah anak**, **Vegetarian**, **Hanya resepku**. Tulis keinginan di **Ada yang perlu dihabiskan atau dihindari?**
+1. Di Beranda, ketuk **Rencana makan**, lalu **Rencana AI**.
+2. Pilih filter kalau mau: **Cepat (di bawah 30 mnt)**, **Ramah anak**, **Vegetarian**, **Hanya resepku**. Ketik apa saja yang perlu dihabiskan atau dihindari.
 3. Ketuk **Sarankan makan malam**.
 4. Di **Minggu Anda, disarankan**, hapus centang hari yang Anda lewati. **Tukar** memberi ide lain. **Coba lagi** membuka filter lagi untuk ide baru (satu saran lagi).
-5. Ketuk tombol tambah, misalnya **Tambah 5 makan malam**. **Tambahkan ke daftar belanja** memasukkan bahan seminggu ke sebuah daftar.
+5. Ketuk tombol tambah, misalnya **Tambah 3 makan malam**. **Tambahkan ke daftar belanja** memasukkan bahannya ke sebuah daftar.
 
-Hanya malam kosong mulai hari ini yang diisi, tanpa menu 7 hari terakhir. Ide baru masuk ke Resep Anda.
+Hanya malam kosong mulai hari ini yang diisi, tanpa menu 7 hari terakhir.
 
-> Note: AI khusus dewasa (18+). Judul resep, makanan terakhir, dan keinginan Anda dikirim ke AI Google, yang tidak menyimpan apa pun. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
+Jika ada keinginan keluarga, sebuah tombol memasukkannya lebih dulu, satu per hari, jika cocok untuk makan malam.
 
-> Note: Satu saran memakai satu aksi AI. Setiap keluarga mendapat 3 aksi AI gratis per bulan; Daili Plus memberi 30.
+> Note: AI khusus dewasa (18+). Judul resep, makanan terakhir, keinginan, dan apa yang Anda ketik dikirim ke AI Google, yang tidak menyimpan apa pun. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
+
+> Note: Satu saran memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30.

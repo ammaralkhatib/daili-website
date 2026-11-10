@@ -3,9 +3,9 @@ id: lists-archive-templates
 title: Archiviare una lista o salvarla come modello
 summary: Metti via una lista finita e riprendila più tardi, oppure salva una lista come modello da cui partire per nuove liste.
 keywords: archiviare, archiviata, ripristinare, modello, modelli, riutilizzare, lista per la valigia, lista finita, mettere via, copiare lista
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-10
 ---
-Hai finito una lista ma vuoi tenerla? Archiviala invece di eliminarla. Funziona per le liste della spesa e di attività.
+Hai finito una lista ma vuoi tenerla? Archiviala invece di eliminarla.
 
 ![La schermata Liste archiviate con due liste. Ripristina nel menu di una lista è cerchiato.](lists-archive)
 
@@ -13,7 +13,7 @@ Hai finito una lista ma vuoi tenerla? Archiviala invece di eliminarla. Funziona 
 2. Le liste archiviate aspettano sotto **Archiviate · N**, in fondo alle tue liste. Toccane una per leggerla. Non si può modificare.
 3. Per riprenderne una, tocca **⋯** accanto → **Ripristina**. **Elimina** la toglie per sempre.
 4. Per riusare una lista, aprila e tocca **⋯** → **Salva come modello**.
-5. La prossima volta, tocca **+** nelle tue liste, poi **Inizia da un modello**.
+5. La prossima volta, tocca **+** nelle tue liste, poi **Inizia da un modello**. In Spesa, scegli prima **Lista della spesa**.
 6. Per usare, rinominare o eliminare i modelli: **⋯** in alto nelle tue liste → **Modelli**.
 
 ![La schermata Nuova lista con Scegli un modello aperto e due modelli. L'elenco dei modelli è cerchiato.](lists-templates)

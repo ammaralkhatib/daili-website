@@ -2,8 +2,8 @@
 id: meals-share-sheet
 title: Del til daili: en note, en opskrift eller en begivenhed
 summary: Del et link, et billede eller en besked fra en anden app, og gem det som en note, en opskrift eller en begivenhed i kalenderen.
-keywords: del, gem i daili, delingsmenu, whatsapp, signal, skærmbillede, besked, opskriftslink, browser, youtube, begivenhed
-translatedFrom: 2026-11-05
+keywords: del, gem i daili, delingsmenu, whatsapp, signal, skærmbillede, besked, opskriftslink, browser, youtube, instagram, begivenhed
+translatedFrom: 2026-11-10
 ---
 Har du fundet noget i en anden app? Send det til daili.
 
@@ -13,9 +13,9 @@ Har du fundet noget i en anden app? Send det til daili.
 2. Vælg **Note**, **Opskrift** eller **Begivenhed** i **Gem i daili**.
 3. Tryk på **Gem** for en note eller på **Fortsæt** for en opskrift eller en begivenhed.
 
-**Opskrift**: daili læser et link fra en opskriftsside, din browser eller YouTube. Tekst bliver sorteret i ingredienser og trin. Et billede læses af AI (1 AI-handling), indtil videre kun det første billede.
+**Opskrift**: daili læser et link fra en opskriftsside, din browser eller YouTube. Fra et Instagram-opslag læser den opslagets tekst (1 AI-handling). Tekst bliver sorteret i ingredienser og trin. Op til 5 billeder læses af AI som én opskrift (1 AI-handling).
 
-**Begivenhed**: dailis AI læser en besked, fx fra WhatsApp eller Signal, eller et skærmbillede og foreslår begivenheden (1 AI-handling). Fandt den flere? Fjern fluebenet ved dem, du ikke skal bruge.
+**Begivenhed**: dailis AI læser en besked, fx fra WhatsApp eller Signal, eller det første skærmbillede og foreslår begivenheden (1 AI-handling). Fandt den flere? Fjern fluebenet ved dem, du ikke skal bruge.
 
 Du tjekker alt først. Intet bliver gemt, før du bekræfter det. Opskriftslinks starter på **Opskrift**; for billeder starter daili på dit seneste valg.
 

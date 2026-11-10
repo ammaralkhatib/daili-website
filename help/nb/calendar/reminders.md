@@ -2,19 +2,21 @@
 id: calendar-reminders
 title: Påminnelser og standardpåminnelsen
 summary: Få en påminnelse før en hendelse starter, og velg påminnelsene alle nye hendelser starter med.
-keywords: påminnelse, minn meg på, varsel, varsling, før hendelse, standardpåminnelse, alarm, beskjed, hele dagen
-translatedFrom: 2026-10-27
+keywords: påminnelse, minn meg på, varsel, varsling, før hendelse, standardpåminnelse, alarm, hele dagen, din påminnelse, min påminnelse
+translatedFrom: 2026-11-10
 ---
 En påminnelse er et varsel før hendelsen starter. En hendelse kan ha opptil 5.
 
-![Seksjonen Påminnelse i hendelsesskjemaet med to påminnelser. Knappen Legg til påminnelse er ringet inn.](calendar-reminders)
+![Hendelsesskjemaet. Raden Påminnelse, med to påminnelser, er ringet inn.](calendar-reminders)
 
-1. Trykk på **Legg til påminnelse** under **Påminnelse** i en ny hendelse.
+1. Trykk på raden **Påminnelse** i en ny hendelse.
 2. Hak av ett eller flere tidspunkter, for eksempel 15 minutter eller 1 dag før. Vil du ha et annet tidspunkt, trykker du på **Eget valg…**.
-3. Trykk på **Lagre** i hendelsen.
+3. Trykk på **Ferdig**, og så på **Lagre** i hendelsen.
 
-En heldagshendelse gir deg valgene **Om morgenen (9:00)**, **1 dag før (9:00)** og **1 uke før (9:00)**. Alle kommer klokka 9:00.
+En heldagshendelse gir deg valgene **Om morgenen (9:00)**, **1 dag før (9:00)** og **1 uke før (9:00)**.
+
+Skjemaet stiller inn påminnelser for alle. Vil du bare endre dine egne, åpner du hendelsen og trykker på påminnelsen (også på app.daili.app). Hak av tidspunktene dine, eller ingen, i **Din påminnelse**, og trykk på **Lagre**.
 
 Vil du ha de samme påminnelsene på alle nye hendelser? Trykk på tannhjulet øverst til høyre i **Kalender**. Trykk på **Standardpåminnelse** under **Påminnelser**, og hak av opptil 5. La **Påminnelser om hendelser** være slått på der, ellers kommer det ingen påminnelser på denne telefonen.
 
-> Note: En felles hendelse minner hele familien på den. En privat hendelse minner bare deg.
+> Note: En felles hendelse minner dem den er for. En privat hendelse minner bare deg.

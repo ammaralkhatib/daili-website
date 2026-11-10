@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Choisir ce que montre un widget
 summary: Choisis la liste de courses d'un widget, et s'il montre seulement tes tâches et habitudes ou celles de tout le monde.
 keywords: widget, réglages du widget, modifier le widget, liste de courses, tâches, habitudes, seulement les miennes, tout le monde, écran d’accueil
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Les widgets **Courses**, **Tâches** et **Habitudes** ont des réglages. Chaque widget garde les siens, donc deux widgets de courses peuvent montrer deux listes.
 
@@ -15,7 +15,7 @@ Les widgets **Courses**, **Tâches** et **Habitudes** ont des réglages. Chaque 
 
 **Tâches** : sous **Show**, choisis **Mine** ou **Everyone**.
 
-**Habitudes** : sous **Show**, choisis **Family** ou **Only mine**. Minzi et la barre d'énergie montrent toujours toute la famille.
+**Habitudes** : sous **Show**, choisis **Family** ou **Only mine**. L'anneau de progression compte les mêmes habitudes.
 
 Un widget montre toujours la famille ou le groupe actif dans daili — on ne peut pas choisir une famille par widget.
 

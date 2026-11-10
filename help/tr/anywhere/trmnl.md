@@ -2,14 +2,14 @@
 id: anywhere-trmnl
 title: daili'yi TRMNL ekranında göster
 summary: Ailenin takvimi, görevleri ve listeleri duvardaki sakin bir e-ink ekranda.
-keywords: trmnl, e-ink, eink, e-kağıt, duvar ekranı, duvar takvimi, mutfak, buzdolabı, pano, eklenti
-translatedFrom: 2026-10-20
+keywords: trmnl, e-ink, eink, e-kağıt, duvar ekranı, duvar takvimi, mutfak, buzdolabı, pano, eklenti, fahrenheit, celsius
+translatedFrom: 2026-11-10
 ---
 TRMNL, duvara asılan bir e-ink ekrandır. Aynı anda tek bir ekran gösterir ve kendini yeniler. daili onun için ücretsiz bir eklentidir.
 
 1. TRMNL'de **Plugins** bölümünü aç, **Daili** eklentisini bul ve yükle.
 2. daili e-posta adresini gir (onaylanmış olmalı), sonra sana gönderdiğimiz 6 haneli kodu gir. Birden fazla aile veya grupta mısın? Birini seç.
-3. TRMNL'de eklentinin ayarlarını aç. Bir **Görünüm** seç: Bugün, 3 gün, Hafta, Ay veya Liste. İstersen **Hava durumunu göster** seçeneğini aç, sonra **Kaydet ve ekranı güncelle** düğmesine bas.
+3. TRMNL'de eklentinin ayarlarını aç. Bir **Görünüm** seç: Bugün, 3 gün, Ay veya Liste. **Hava durumunu göster** seçeneğini aç (°C veya °F), sonra **Kaydet ve ekranı güncelle** düğmesine bas.
 
 Birden fazla ekran için Daili'yi birkaç kez ekle; TRMNL bunları sırayla gösterir. Daili ekranın yarısına veya çeyreğine de sığar.
 

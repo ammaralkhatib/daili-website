@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Zmień nazwę, kolor albo kolejność listy lub ją usuń
 summary: Nadaj liście nową nazwę, kolor albo ikonę, przeciągnij listy w wybranej kolejności albo usuń tę, której nie potrzebujesz.
 keywords: zmień nazwę, edytuj listę, kolor, ikona, kolejność, sortuj listy, usuń listę, skasuj listę
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Działa to tak samo dla list zakupów i list zadań.
-
 ![Ekran Zakupy z otwartym menu ⋯ listy. Zakreślona jest opcja Edytuj, pod nią jest Usuń.](lists-edit-list)
 
 1. Na ekranie głównym dotknij **Zakupy** albo **Zadania**.
 2. Na karcie listy dotknij **⋯**, a potem **Edytuj**.
-3. Zmień pola **Nazwa**, **Kolor** albo **Ikona** i dotknij **Zapisz**.
+3. Zmień pole **Nazwa** albo **Kolor**. Żeby wybrać inną ikonę, dotknij ikony w polu nazwy. Potem dotknij **Zapisz**.
 4. Żeby zmienić kolejność, przytrzymaj kartę i ją przeciągnij.
 5. Żeby usunąć listę, dotknij **⋯** na jej karcie, a potem **Usuń**. **Cofnij** w komunikacie przywraca ją przez kilka sekund.
 

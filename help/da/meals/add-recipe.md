@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Tilføj en opskrift
 summary: Saml familiens opskrifter ét sted, med ingredienser, trin og et billede.
 keywords: opskrift, tilføj opskrift, kogebog, opskriftssamling, ingredienser, madlavning, ret, billede, familieopskrifter
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Mormors lasagne hører hjemme i familiens opskriftssamling, hvor alle kan finde den.
 
@@ -13,7 +13,7 @@ Mormors lasagne hører hjemme i familiens opskriftssamling, hvor alle kan finde 
 2. Tryk på **Ny opskrift**.
 3. Skriv en **Titel**. Hvis du vil, kan du tilføje **Forb. (min.)**, **Tilberedning (min.)**, **Portioner**, **Tags** og **Kategorier** og trykke på **Tilføj billede**.
 4. Tryk på **Tilføj ingrediens** for hver ingrediens og på **Tilføj trin** for hvert trin.
-5. Tryk på **Opret**.
+5. Tryk på **Opret**. Som ved alle andre måder at tilføje på ender du på din opskriftsliste.
 
 Vil du ændre en opskrift senere, så åbn den, tryk på **⋮** øverst og så på **Rediger**.
 

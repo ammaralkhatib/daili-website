@@ -3,13 +3,13 @@ id: start-today
 title: Skärmen I dag
 summary: Allt som händer i dag, i en lista: händelser, uppgifter, inköp och måltider.
 keywords: i dag, idag, dagsplan, dagligen, översikt, vad händer, schema, att göra i dag, i kväll, middag, väder
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 I dag visar på en skärm vad som händer i din familj i dag.
 
 ![Skärmen I dag. Väderkortet högst upp är inringat.](start-today)
 
-1. Tryck på **I dag** uppe till höger på startskärmen, bredvid klockan.
+1. Tryck på kalenderikonen uppe till höger på startskärmen, mellan vädret och klockan.
 2. Skrolla genom avsnitten, till exempel **Uppgifter**, **Inköp** och **Mat i dag**.
 3. Tryck på en länk under ett avsnitt, till exempel **Kalender** eller **Alla uppgifter**, för att öppna hela skärmen.
 4. Gå tillbaka för att komma till startskärmen.

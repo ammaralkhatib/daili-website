@@ -3,9 +3,9 @@ id: meals-meal-settings
 title: Ajustes de comidas: qué comidas, porciones y hora de la cena
 summary: Elige qué comidas planifica tu familia, cuántas porciones sueles cocinar y a qué hora cenáis.
 keywords: ajustes de comidas, desayuno, almuerzo, cena, merienda, porciones, raciones, tamaño de la familia, hora de la cena, tarde ocupada
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
-Cuéntale a daili cómo come tu familia. La semana muestra entonces solo las comidas que planificas.
+Cuéntale a daili cómo come tu familia.
 
 ![Ajustes de comidas con los interruptores Desayuno, Almuerzo, Cena y Merienda, las porciones habituales y la hora de la cena. Los interruptores de las comidas están marcados con un círculo.](meals-meal-settings)
 
@@ -13,6 +13,8 @@ Cuéntale a daili cómo come tu familia. La semana muestra entonces solo las com
 2. En **Comidas que planeas**, activa **Desayuno**, **Almuerzo**, **Cena** o **Merienda**. Al menos una queda activada.
 3. **Porciones habituales**: el tamaño de tu familia. Las recetas se ajustan a él.
 4. **Hora de la cena**: cuándo soléis comer.
+
+Estos interruptores eligen tu comida principal (la cena, si está activada), con la que empieza el **+** de cada día. **Planear** en una receta y **Mover o cambiar** siguen ofreciendo todas las comidas, y la semana muestra todo lo que planificaste.
 
 La hora de la cena también detecta las tardes ocupadas. Un evento con hora, en cualquier calendario que muestre daili, desde 90 minutos antes de la cena hasta 30 minutos después, marca ese día, y las comidas rápidas salen primero.
 

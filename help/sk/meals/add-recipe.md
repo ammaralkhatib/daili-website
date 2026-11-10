@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Pridaj recept
 summary: Maj rodinné recepty na jednom mieste, so surovinami, postupom a fotkou.
 keywords: recept, pridať recept, kuchárka, receptár, suroviny, varenie, jedlo, fotka, rodinné recepty
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Babkine lasagne patria do rodinného receptára, kde ich každý nájde.
 
@@ -13,7 +13,7 @@ Babkine lasagne patria do rodinného receptára, kde ich každý nájde.
 2. Ťukni na **Nový recept**.
 3. Napíš **Názov**. Ak chceš, doplň **Príprava (min)**, **Varenie (min)**, **Porcie**, **Štítky** a **Kategórie** a ťukni na **Pridať fotku**.
 4. Pre každú surovinu ťukni na **Pridať surovinu** a pre každý krok na **Pridať krok**.
-5. Ťukni na **Vytvoriť**.
+5. Ťukni na **Vytvoriť**. Ako pri každom spôsobe pridania skončíš v zozname receptov.
 
 Ak chceš recept neskôr zmeniť, otvor ho, ťukni hore na **⋮** a potom na **Upraviť**.
 

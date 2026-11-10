@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Wählen, was ein Widget zeigt
 summary: Wähle die Einkaufsliste für ein Widget und ob es nur deine Aufgaben und Gewohnheiten zeigt oder die von allen.
 keywords: widget, widget-einstellungen, widget bearbeiten, einkaufsliste, aufgaben, gewohnheiten, nur meine, alle, home-bildschirm
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Die Widgets **Einkaufen**, **Aufgaben** und **Gewohnheiten** haben Einstellungen. Jedes Widget merkt sich seine eigenen, so können zwei Einkaufs-Widgets zwei Listen zeigen.
 
@@ -15,7 +15,7 @@ Die Widgets **Einkaufen**, **Aufgaben** und **Gewohnheiten** haben Einstellungen
 
 **Aufgaben**: Wähle unter **Anzeigen** **Meine** oder **Alle**.
 
-**Gewohnheiten**: Wähle unter **Anzeigen** **Familie** oder **Nur meine**. Minzi und der Energiebalken zeigen immer die ganze Familie.
+**Gewohnheiten**: Wähle unter **Anzeigen** **Familie** oder **Nur meine**. Der Fortschrittsring zählt dieselben Gewohnheiten.
 
 Ein Widget zeigt immer die Familie oder Gruppe, die in daili gerade aktiv ist – eine eigene Familie pro Widget gibt es nicht.
 

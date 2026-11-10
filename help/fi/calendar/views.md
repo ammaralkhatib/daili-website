@@ -3,21 +3,23 @@ id: calendar-views
 title: Kalenterinäkymät: kuukausi, viikko, päivä, agenda, henkilöt ja vuosi
 summary: Vaihda kuukauden, viikon, 3 päivän, päivän, agendan, henkilöiden ja vuoden välillä, ja suodata henkilön, luokan tai kalenterin mukaan.
 keywords: näkymä, kuukausi, viikko, agenda, suodata, henkilöt, vuosi, piilota kalenteri, kaikki tapahtumat, päivitä, viikkonumero
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Kalenterissa on seitsemän näkymää.
 
 ![Kalenteri kuukausinäkymässä. Alapalkin Näkymä-painike on ympyröity.](calendar-views)
 
-1. Napauta aloitusnäytöllä **Kalenteri** ja sitten alhaalla **Näkymä**.
+1. Napauta aloitusnäytöllä viikkokorttia ja sitten alhaalla **Näkymä**.
 2. Valitse **Kuukausi**, **Viikko**, **3 päivää**, **Päivä**, **Agenda**, **Henkilöt** tai **Vuosi**.
 3. Jos haluat nähdä vain osan henkilöistä tai luokista, napauta **Suodata** ja valitse ne.
 
-Näkymässä **Henkilöt** jokaisella henkilöllä on oma sarake, kuin seinäkalenterissa. Vasemman yläkulman painikkeella piilotat sarakkeita tai muutat niiden järjestystä.
+**Viikko**, **3 päivää** ja **Päivä** avautuvat tämän päivän nykyiseen kellonaikaan.
+
+Näkymässä **Henkilöt** jokaisella henkilöllä on oma sarake. Vasemman yläkulman painikkeella piilotat sarakkeita tai muutat niiden järjestystä.
 
 ![Henkilöt-näkymä, jossa on oma sarake Lenalle, Marcolle ja Emmalle. Sarakkeiden otsikot on ympyröity.](calendar-people-view)
 
-Näkymä **Vuosi** näyttää koko päivän ja usean päivän tapahtumat, kuten koulujen lomat ja matkat. **Kaikki tapahtumat** lisää tapahtumat, joilla on kellonaika, yhden päivän palkkeina. Avaa kuukausi napauttamalla sitä.
+Näkymä **Vuosi** näyttää koko päivän ja usean päivän tapahtumat, kuten koulujen lomat. **Kaikki tapahtumat** lisää tapahtumat, joilla on kellonaika, yhden päivän palkkeina.
 
 ![Vuosi-näkymä, jossa on lomia ja matkoja. Kaikki tapahtumat -painike on ympyröity.](calendar-year-view)
 

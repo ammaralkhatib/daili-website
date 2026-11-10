@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Bir widget’ın ne göstereceğini seç
 summary: Bir widget'ın hangi alışveriş listesini göstereceğini ve yalnızca senin görev ve alışkanlıklarını mı yoksa herkesinkini mi göstereceğini seç.
 keywords: widget, widget ayarları, widget'ı düzenle, alışveriş listesi, görevler, alışkanlıklar, yalnızca benimkiler, herkes, ana ekran
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 **Alışveriş**, **Görevler** ve **Alışkanlıklar** widget'larının ayarları var. Her widget kendi ayarını saklar, yani iki alışveriş widget'ı iki farklı liste gösterebilir.
 
@@ -15,7 +15,7 @@ translatedFrom: 2026-09-26
 
 **Görevler**: **Show** altında **Mine** ya da **Everyone** seç.
 
-**Alışkanlıklar**: **Show** altında **Family** ya da **Only mine** seç. Minzi ve enerji çubuğu her zaman tüm aileyi gösterir.
+**Alışkanlıklar**: **Show** altında **Family** ya da **Only mine** seç. İlerleme halkası da aynı alışkanlıkları sayar.
 
 Bir widget her zaman daili'de etkin olan aileyi ya da grubu gösterir — her widget için ayrı aile seçilemez.
 

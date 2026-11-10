@@ -6,14 +6,12 @@ summary: Pick the features your family uses. You can change your choice any time
 keywords: features, choose, pick, home, tiles, set up, first steps, turn off, cycle, what to use
 routes: /settings/home-tiles
 since: 1.10.0
-updated: 2026-10-12
-media: start-features
+updated: 2026-11-10
+mediaPending: old shot is out of date; re-shoot help-shots id start-features
 order: 7
 related: start-edit-home, start-create-family, cycle-start
 ---
 Right after you create or join your first family, daili asks **What do you want to use Daili for?** Every feature starts on, except Cycle.
-
-![The feature cards. The box on the Shopping card is circled.](start-features)
 
 1. Tap a card to read about it.
 2. Tap a card's box to turn it off, or on again.

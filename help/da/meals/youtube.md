@@ -5,15 +5,15 @@ summary: Indsæt linket til en madlavningsvideo, så skriver daili ingredienser 
 keywords: youtube, video, opskriftsvideo, madvideo, importér video, link, ai, gem opskrift, shorts
 tipTitle: Lav en YouTube-video om til en opskrift
 tipBody: Indsæt linket til en madlavningsvideo, så skriver daili ingredienser og trin for dig.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Har du set en ret på YouTube? daili skriver opskriften.
 
-![Skærmen Opskrifter med menuen + åben. Fra en YouTube-video er markeret med en cirkel.](meals-youtube)
+![Skærmen Opskrifter med menuen + åben. Fra YouTube eller Instagram er markeret med en cirkel.](meals-youtube)
 
 1. Kopiér videolinket i YouTube-appen (Del → Kopiér link).
-2. Tryk på **Opskrifter** på startskærmen, så på **+** og så på **Fra en YouTube-video**.
-3. Indsæt linket under **YouTube-link**, eller tryk på **Indsæt**. Tryk så på **Læs videoen**.
+2. Tryk på **Opskrifter** på startskærmen, så på **+** og så på **Fra YouTube eller Instagram**.
+3. Indsæt linket under **YouTube- eller Instagram-link**, eller tryk på **Indsæt**. Tryk så på **Læs**.
 4. Tjek, hvad daili fandt, og tryk så på **Gem**.
 
 Opskriften kommer på dailis sprog. Uden dit eget billede vises videoens billede øverst. Tryk på ▶ for at se den på YouTube. Vil du beholde et billede, så tilføj dit eget.

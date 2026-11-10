@@ -7,7 +7,7 @@ keywords: view, month, week, agenda, filter, people, year, hide calendar, all ev
 routes: /calendar, /calendar/settings
 tryIt: /calendar
 since: 1.0.0
-updated: 2026-11-05
+updated: 2026-11-10
 media: calendar-views
 order: 1
 related: calendar-add-event, calendar-search, calendar-categories, calendar-phone-calendars, budget-bills
@@ -16,15 +16,17 @@ The calendar has seven views.
 
 ![The calendar in Month view. The View button in the bottom bar is circled.](calendar-views)
 
-1. On Home, tap **Calendar**, then **View** at the bottom.
+1. On Home, tap the week card, then **View** at the bottom.
 2. Pick **Month**, **Week**, **3 days**, **Day**, **Agenda**, **People** or **Year**.
 3. To see only some people or categories, tap **Filter** and pick them.
 
-**People** gives each person a column, like a wall planner. The top-left button hides or reorders columns.
+**Week**, **3 days** and **Day** open at the current time today.
+
+**People** gives each person a column. The top-left button hides or reorders columns.
 
 ![The People view with a column each for Lena, Marco and Emma. The column headers are circled.](calendar-people-view)
 
-**Year** shows all-day and multi-day events, like school holidays and trips. **All events** adds events with a time, as one-day bars. Tap a month to open it.
+**Year** shows all-day and multi-day events, like school holidays. **All events** adds events with a time, as one-day bars.
 
 ![The Year view with holidays and trips. The All events chip is circled.](calendar-year-view)
 

@@ -5,7 +5,7 @@ summary: Indsæt et link til en opskriftsside, så udfylder daili ingredienser, 
 keywords: importér, link, url, hjemmeside, opskrift, gem opskrift, blog, indsæt link, web, kopiér opskrift
 tipTitle: Gem opskrifter fra enhver hjemmeside
 tipBody: Indsæt et link til en opskriftsside, så udfylder daili ingredienser og trin for dig.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Har du fundet en god opskrift på nettet? Gem den uden at skrive den af.
 
@@ -20,4 +20,4 @@ Har en side ingen opskriftsdata, gemmer daili alligevel titlen og billedet. Tilf
 
 Hurtigere: del siden til **daili** fra din browser eller YouTube-appen, og vælg **Opskrift**.
 
-> Note: Links fra Instagram og TikTok indeholder ingen opskriftsdata. Kopiér opskriftsteksten i stedet, og brug **Indsæt opskriftstekst**. Til YouTube bruger du **Fra en YouTube-video**.
+> Note: Links fra TikTok og Facebook indeholder ingen opskriftsdata. Kopiér opskriftsteksten i stedet, og brug **Indsæt opskriftstekst**. Til YouTube eller Instagram bruger du **Fra YouTube eller Instagram**.

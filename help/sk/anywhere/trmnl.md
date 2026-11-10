@@ -2,14 +2,14 @@
 id: anywhere-trmnl
 title: Zobraz daili na displeji TRMNL
 summary: Rodinný kalendár, úlohy a zoznamy na pokojnej e-ink obrazovke na stene.
-keywords: trmnl, e-ink, eink, e-papier, displej na stenu, nástenný kalendár, kuchyňa, chladnička, nástenka, plugin
-translatedFrom: 2026-10-20
+keywords: trmnl, e-ink, eink, e-papier, displej na stenu, nástenný kalendár, kuchyňa, chladnička, nástenka, plugin, fahrenheit, celzius
+translatedFrom: 2026-11-10
 ---
 TRMNL je e-ink obrazovka na stenu. Ukazuje vždy jednu obrazovku a sama sa obnovuje. daili je pre ňu bezplatný plugin.
 
 1. V TRMNL otvor **Plugins**, nájdi **Daili** a nainštaluj ho.
 2. Zadaj svoj e-mail z daili (musí byť potvrdený) a potom 6-miestny kód, ktorý ti pošleme. Si vo viacerých rodinách alebo skupinách? Vyber jednu.
-3. Otvor v TRMNL nastavenia pluginu. Vyber **Zobrazenie**: Dnes, 3 dni, Týždeň, Mesiac alebo Zoznam. Ak chceš, zapni **Zobraziť počasie** a potom stlač **Uložiť a obnoviť obrazovku**.
+3. Otvor v TRMNL nastavenia pluginu. Vyber **Zobrazenie**: Dnes, 3 dni, Mesiac alebo Zoznam. Zapni **Zobraziť počasie** (°C alebo °F) a potom stlač **Uložiť a obnoviť obrazovku**.
 
 Ak chceš viac obrazoviek, pridaj Daili viackrát; TRMNL ich bude striedať. Daili sa zmestí aj na polovicu alebo štvrtinu obrazovky.
 

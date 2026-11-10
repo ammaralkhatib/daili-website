@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Omdøb, skift farve, flyt eller slet en liste
 summary: Giv en liste et nyt navn, en ny farve eller et nyt ikon, træk dine lister i rækkefølge, eller slet en, du ikke bruger.
 keywords: omdøb, rediger liste, farve, ikon, rækkefølge, sortér lister, slet liste, fjern liste
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Trinene er de samme for indkøbslister og opgavelister.
-
 ![Skærmen Indkøb med menuen ⋯ åben på en liste. Rediger er markeret med en cirkel, med Slet under.](lists-edit-list)
 
 1. Tryk på **Indkøb** eller **Opgaver** på startskærmen.
 2. Tryk på **⋯** på listens kort og så på **Rediger**.
-3. Ændr **Navn**, **Farve** eller **Ikon**, og tryk på **Gem**.
+3. Ændr **Navn** eller **Farve**. Vil du have et andet ikon, så tryk på ikonet i navnefeltet. Tryk så på **Gem**.
 4. Vil du ændre rækkefølgen, så hold fingeren på et kort, og træk det.
 5. Vil du slette en liste, så tryk på **⋯** på dens kort og så på **Slet**. **Fortryd** i beskeden henter den tilbage i et par sekunder.
 

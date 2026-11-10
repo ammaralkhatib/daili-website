@@ -3,15 +3,13 @@ id: lists-edit-list
 title: Redenumește, recolorează, reordonează sau șterge o listă
 summary: Dă unei liste un nume, o culoare sau o pictogramă nouă, trage listele în ordine sau șterge una de care nu ai nevoie.
 keywords: redenumește, editează lista, culoare, pictogramă, reordonează, sortează listele, șterge lista, elimină lista
-translatedFrom: 2026-09-30
+translatedFrom: 2026-11-10
 ---
-Merge la fel pentru listele de cumpărături și de sarcini.
-
 ![Ecranul Cumpărături cu meniul ⋯ al unei liste deschis. Editează este încercuit, cu Șterge sub el.](lists-edit-list)
 
 1. Pe ecranul principal, apasă pe **Cumpărături** sau **Sarcini**.
 2. Pe cardul listei, apasă pe **⋯**, apoi pe **Editează**.
-3. Schimbă **Nume**, **Culoare** sau **Pictogramă** și apasă pe **Salvează**.
+3. Schimbă **Nume** sau **Culoare**. Pentru altă pictogramă, apasă pe pictograma din câmpul pentru nume. Apoi apasă pe **Salvează**.
 4. Ca să schimbi ordinea, ține apăsat pe un card și trage-l.
 5. Ca să ștergi o listă, apasă pe **⋯** pe cardul ei, apoi pe **Șterge**. **Anulează** din mesaj o aduce înapoi, timp de câteva secunde.
 

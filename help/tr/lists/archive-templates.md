@@ -3,9 +3,9 @@ id: lists-archive-templates
 title: Bir listeyi arşivle ya da şablon olarak kaydet
 summary: Biten bir listeyi kenara kaldır ve sonra geri getir ya da yeni listelere başlamak için bir listeyi şablon olarak kaydet.
 keywords: arşivle, arşiv, geri yükle, şablon, şablonlar, yeniden kullan, bavul listesi, biten liste, kenara kaldır, listeyi kopyala
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-10
 ---
-Bir listeyle işin bitti ama saklamak mı istiyorsun? Silmek yerine arşivle. Bu, alışveriş ve görev listelerinde çalışır.
+Bir listeyle işin bitti ama saklamak mı istiyorsun? Silmek yerine arşivle.
 
 ![İki listeli Arşivlenen listeler ekranı. Bir listenin menüsündeki Geri yükle daire içine alınmış.](lists-archive)
 
@@ -13,7 +13,7 @@ Bir listeyle işin bitti ama saklamak mı istiyorsun? Silmek yerine arşivle. Bu
 2. Arşivlenen listeler, listelerinin sonundaki **Arşiv · N** altında bekler. Okumak için birine dokun. Değiştirilemez.
 3. Geri getirmek için yanındaki **⋯** → **Geri yükle** seçeneğine dokun. **Sil** onu kalıcı olarak kaldırır.
 4. Bir listeyi yeniden kullanmak için onu aç ve **⋯** → **Şablon olarak kaydet** seçeneğine dokun.
-5. Bir dahaki sefere listelerinde **+** simgesine, sonra **Bir şablonla başla** seçeneğine dokun.
+5. Bir dahaki sefere listelerinde **+** simgesine, sonra **Bir şablonla başla** seçeneğine dokun. Alışveriş ekranında önce **Alışveriş listesi** seçeneğini seç.
 6. Şablonları kullanmak, yeniden adlandırmak ya da silmek için: listelerinin üstündeki **⋯** → **Şablonlar**.
 
 ![Şablon seç açık, iki şablonlu Yeni liste ekranı. Şablon listesi daire içine alınmış.](lists-templates)

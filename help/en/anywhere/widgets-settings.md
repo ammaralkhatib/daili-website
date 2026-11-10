@@ -6,7 +6,7 @@ summary: Pick the shopping list a widget shows, and whether it shows only your t
 keywords: widget, widget settings, edit widget, reconfigure, shopping list, to-dos, habits, only mine, everyone, home screen
 routes: /
 since: 1.7.0
-updated: 2026-09-26
+updated: 2026-11-10
 order: 2
 mediaPending: hand-made screenshot of the Edit Widget sheet of the Shopping widget
 related: anywhere-widgets, lists-shopping, lists-todos, habits-tick
@@ -21,7 +21,7 @@ The **Shopping**, **To-dos** and **Habits** widgets have settings. Each widget k
 
 **To-dos**: under **Show**, pick **Mine** or **Everyone**.
 
-**Habits**: under **Show**, pick **Family** or **Only mine**. Minzi and the energy bar always show the whole family.
+**Habits**: under **Show**, pick **Family** or **Only mine**. The progress ring counts the same habits.
 
 A widget always follows the family or group that's active in daili — there is no family choice per widget.
 

@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Välj vad en widget visar
 summary: Välj vilken inköpslista en widget visar och om den bara visar dina uppgifter och vanor eller allas.
 keywords: widget, widgetinställningar, redigera widget, inköpslista, uppgifter, vanor, bara mina, alla, hemskärm
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widgetarna **Inköp**, **Uppgifter** och **Vanor** har inställningar. Varje widget minns sina egna, så två inköpswidgetar kan visa två listor.
 
@@ -15,7 +15,7 @@ Widgetarna **Inköp**, **Uppgifter** och **Vanor** har inställningar. Varje wid
 
 **Uppgifter**: under **Show** väljer du **Mine** eller **Everyone**.
 
-**Vanor**: under **Show** väljer du **Family** eller **Only mine**. Minzi och energimätaren visar alltid hela familjen.
+**Vanor**: under **Show** väljer du **Family** eller **Only mine**. Förloppsringen räknar samma vanor.
 
 En widget visar alltid den familj eller grupp som är aktiv i daili – du kan inte välja familj per widget.
 

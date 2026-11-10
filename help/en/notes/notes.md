@@ -7,7 +7,7 @@ keywords: note, quick note, link, share, checklist, reminder, recently deleted, 
 routes: /notes, /notes/new
 tryIt: /notes
 since: 1.7.0
-updated: 2026-11-05
+updated: 2026-11-10
 media: notes-list
 order: 1
 related: notes-pictures-voice, notes-find, meals-share-sheet, notes-files, account-plus, anywhere-widgets, start-edit-home, family-activity
@@ -22,22 +22,20 @@ A note is a **Title**, text, or both, with bullet lists and checklists.
 1. On Home, tap **Notes**, then **+** or a bottom-bar button: picture, voice, video, link, drawing.
 2. Write and tap **Save**.
 
+Faster: the **Quick note** widget, the iPhone Action Button, or Share → **daili** → **Save** from any app.
+
 While you write, tap **B** for bold, **I** for italic or **T** for a heading (**H** on app.daili.app). Tap it again for a smaller heading.
 
-![A new note with a heading line, a bold word and an italic line, with their formatting signs shown. The B, I and T buttons are circled.](notes-formatting)
+![A new note with a heading line, a bold word and an italic line, shown as they look, without signs. The format row with B, I and T is circled.](notes-formatting)
 
-Notes opens as a grid. The top button switches to a list. Faster: the **Quick note** widget, the iPhone Action Button, or Share → **daili** → **Save** from any app.
+Checklist items can be dragged. Ticked ones move to **Completed**.
 
-![A new note with the Photo, Voice, Video, Link and Draw buttons. The row that says who can see it is circled.](notes-new)
+![A new note with the Only me, Tags and Remind me chips above the Photo, Voice, Video, Link and Draw buttons. The Only me chip is circled.](notes-new)
 
-Above the keyboard: tags, a reminder (only you get it) and who sees it: **Only me** (default), **Whole family** or **Pick members**.
+The chips above the attach buttons set who sees it (**Only me** at first), tags and a reminder (only you get it).
 
-![Recently deleted. One note, gone in 27 days, with Delete forever and Restore.](notes-trash)
-
-Deleted notes wait 30 days under **⋯** → **Recently deleted**.
-
-![A note. The Daili Plus group with the two rows "Make an event, task or shopping list from this" and "Summarize" is circled.](notes-ai)
+![A note with a picture and a recording. The Daili Plus group with "Make an event, task or shopping list from this" is circled.](notes-ai)
 
 Under **Daili Plus** in a note, **Make an event, task or shopping list from this** and **Summarize** each use one AI action, for adults (18+).
 
-> Note: Offline, new notes send themselves later.
+> Note: Offline or on weak signal, new notes wait as **Waiting for network** and send themselves later.

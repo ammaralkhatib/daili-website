@@ -5,9 +5,9 @@ summary: Se vejret, hvor du er, eller for en by, du vælger, og føj det til din
 keywords: vejr, vejrudsigt, regn, temperatur, placering, by, vind, uv, solopgang, solnedgang, daglig oversigt
 tipTitle: Vejret er på I dag
 tipBody: Se dagens vejr, og hvornår regnen kommer, hvor du er, eller for en by, du vælger.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
-Øverst på **I dag** trykker du på **Brug min placering** eller **Vælg en by**. Står der **Placering er slået fra**, så vælg en by.
+Øverst på **I dag** trykker du på **Brug min placering** eller **Vælg en by**.
 
 1. Tryk på kortet for at åbne skærmen **Vejr**. Himlen der følger vejret og tidspunktet på dagen.
 2. Se de næste 24 timer og **10 dage**. Tryk på en dag for at se dens timer.
@@ -15,8 +15,8 @@ translatedFrom: 2026-10-12
 
 ![Skærmen Vejr med himlen, de næste timer og 10 dage. Rækken for i dag er markeret med en cirkel.](start-weather)
 
-På startskærmen viser **I dag** himlen og temperaturen. Feltet **Vejr** viser, hvornår regnen kommer. Sådan skjuler du det: **⋯** → **Skjul vejret**, eller **Vejr på I dag** i **Indstillinger**.
+På startskærmen viser vejret øverst himlen og temperaturen og åbner skærmen **Vejr**. Feltet **Vejr** viser, hvornår regnen kommer. Sådan skjuler du det: **⋯** → **Skjul vejret**, eller **Vejr på I dag** i **Indstillinger**.
 
 **Vejret i daglig oversigt** (**Kalenderindstillinger** → **Daglig oversigt**) tilføjer én linje om vejret til din morgen- og aftenoversigt. daili gemmer så en omtrentlig placering (ca. 10 km), indtil du slår det fra.
 
-> Note: Din placering er omtrentlig og bruges kun til vejret. Den nederste linje nævner kilden. Mere i privatlivspolitikken på daili.app.
+> Note: Din placering er omtrentlig og bruges kun til vejret. Mere i privatlivspolitikken på daili.app.

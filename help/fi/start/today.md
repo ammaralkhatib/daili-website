@@ -3,13 +3,13 @@ id: start-today
 title: Tänään-näkymä
 summary: Kaikki tämänpäiväinen yhdessä listassa: tapahtumat, tehtävät, ostokset ja ateriat.
 keywords: tänään, päivän ohjelma, päivittäin, yleiskatsaus, mitä tänään, aikataulu, erääntyy tänään, tänä iltana, päivällinen, sää
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Tänään-näkymä näyttää yhdellä näytöllä, mitä perheelläsi on tänään.
 
 ![Tänään-näkymä. Yläosan sääkortti on ympyröity.](start-today)
 
-1. Napauta aloitusnäytön oikeasta yläkulmasta **Tänään**, kellon vierestä.
+1. Napauta aloitusnäytön oikeassa yläkulmassa kalenterikuvaketta, sään ja kellon välissä.
 2. Selaa osioita, kuten **Tehtävät**, **Ostokset** ja **Päivän ateriat**.
 3. Avaa koko näkymä napauttamalla osion alla olevaa linkkiä, kuten **Kalenteri** tai **Kaikki tehtävät**.
 4. Palaa aloitusnäyttöön menemällä takaisin.

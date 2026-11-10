@@ -7,14 +7,12 @@ keywords: not working, no notifications, missing, not arriving, reminder didn't 
 routes: /settings/notifications
 tryIt: /settings/notifications
 since: 1.1.0
-updated: 2026-09-24
+updated: 2026-11-10
 order: 3
-media: notifications-help
+mediaPending: old shot is out of date; re-shoot help-shots id notifications-help
 related: notifications-turn-on, notifications-choose
 ---
 A reminder didn't come? Check these, in this order.
-
-![Further down the Notifications screen. The Quiet hours switch is circled.](notifications-help)
 
 1. **Your phone allows daili.** Open **Settings**, then **Notifications**. If a note at the top says notifications are off, tap its button.
 2. **The switch is on.** On the same screen, check the switch for that kind, like **To-do reminders**.

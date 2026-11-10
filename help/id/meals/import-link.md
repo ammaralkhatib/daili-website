@@ -5,7 +5,7 @@ summary: Tempelkan tautan ke halaman resep, dan daili mengisi bahan, langkah, da
 keywords: impor, tautan, url, situs web, resep, simpan resep, blog, tempel tautan, web, salin resep
 tipTitle: Simpan resep dari situs mana saja
 tipBody: Tempelkan tautan ke halaman resep, dan daili mengisi bahan dan langkahnya untuk Anda.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Menemukan resep enak di internet? Simpan tanpa mengetik ulang.
 
@@ -20,4 +20,4 @@ Kalau halamannya tidak punya data resep, daili tetap menyimpan judul dan fotonya
 
 Lebih cepat: di browser atau aplikasi YouTube, bagikan halamannya ke **daili** dan pilih **Resep**.
 
-> Note: Tautan Instagram dan TikTok tidak berisi data resep. Salin teks resepnya saja, lalu pakai **Tempel teks resep**. Untuk YouTube, pakai **Dari video YouTube**.
+> Note: Tautan TikTok dan Facebook tidak berisi data resep. Salin teks resepnya saja, lalu pakai **Tempel teks resep**. Untuk YouTube atau Instagram, pakai **Dari YouTube atau Instagram**.

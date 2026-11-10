@@ -3,11 +3,9 @@ id: notifications-help
 title: Får du ikke varsler? Dette kan du sjekke
 summary: En kort sjekkliste for når påminnelser eller oppdateringer fra familien ikke kommer.
 keywords: virker ikke, ingen varsler, mangler, kommer ikke, påminnelsen ringte ikke, batteri, fokus, ikke forstyrr, lydløs, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Kom ikke en påminnelse? Sjekk dette, i denne rekkefølgen.
-
-![Lenger ned på skjermen Varsler. Bryteren Stilletimer er ringet inn.](notifications-help)
 
 1. **Telefonen tillater daili.** Åpne **Innstillinger** og så **Varsler**. Står det øverst at varsler er slått av, trykker du på knappen der.
 2. **Bryteren er på.** Sjekk bryteren for den typen på samme skjerm, for eksempel **Oppgavepåminnelser**.

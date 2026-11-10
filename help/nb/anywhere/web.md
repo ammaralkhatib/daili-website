@@ -3,13 +3,13 @@ id: anywhere-web
 title: Bruk daili i nettleseren (app.daili.app)
 summary: Planlegg på datamaskinen, med den samme familien, kalenderen og de samme listene som på telefonen.
 keywords: nett, nettleser, datamaskin, bærbar, pc, mac, nettside, på nett, app.daili.app, stor skjerm
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 På en datamaskin kan du bruke daili i nettleseren. Samme konto, samme familie: alle endringer dukker opp på alles telefoner.
 
 1. Åpne app.daili.app i nettleseren på datamaskinen.
 2. Logg inn med e-post og passord, eller trykk på **Fortsett med Google** eller **Fortsett med Apple**. Du kan også bruke **Glemt passord?** og **Gjenopprett kontoen min** her.
-3. Bruk menyen til venstre: kalender, innkjøp, oppgaver, vaner, oppskrifter, matplan, notater, bursdager og familien din.
+3. Bruk menyen til venstre: kalender, innkjøp, oppgaver, vaner, oppskrifter, matplan, notater, budsjett, bursdager og familien din.
 
 Notater fungerer her også: skriv, filtrer, tagg, fest, del, sett en påminnelse (den vises i kalenderen) og gjenopprett nylig slettede. Hurtigregistreringen på startsiden kan lage et notat. Familier med Daili Plus kan legge til bilder.
 

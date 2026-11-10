@@ -5,16 +5,16 @@ summary: Ajoute tout ce qu'il faut pour une recette, ou pour une semaine entièr
 keywords: ingrédients, liste de courses, courses, épicerie, ajouter à la liste, recette, menus, acheter
 tipTitle: Des menus à la liste de courses
 tipBody: Planifie les repas de la semaine, puis mets tous leurs ingrédients sur ta liste de courses en une fois.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Fini de recopier les ingrédients à la main.
 
 ![Une recette avec ses ingrédients. Le bouton caddie en haut est entouré.](meals-to-shopping)
 
-1. Ouvre une recette et touche le bouton caddie en haut. Ou, dans **Menus**, touche **Courses de la semaine** sous la semaine pour prendre toute la semaine.
+1. Ouvre une recette et touche le bouton caddie en haut. Ou, dans **Menus**, touche **Courses** en bas pour prendre toute la semaine.
 2. Sous **Ajouter à**, choisis la liste de courses.
 3. Décoche ce que tu as déjà à la maison.
-4. Touche le bouton en bas, comme **Ajouter 6 articles**.
+4. Touche le bouton en bas, comme **Ajouter 3 articles**.
 
 Touche **Ouvrir la liste** dans le message pour les voir.
 

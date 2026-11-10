@@ -3,7 +3,7 @@ id: habits-private
 title: Private Gewohnheiten
 summary: Behalte eine Gewohnheit für dich. Niemand sonst in der Familie sieht sie.
 keywords: privat, geheim, persönlich, versteckt, nur ich, privatsphäre, gewohnheit, schloss
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Manche Gewohnheiten gehen niemanden etwas an. Eine private Gewohnheit siehst nur du.
 
@@ -16,4 +16,4 @@ Manche Gewohnheiten gehen niemanden etwas an. Eine private Gewohnheit siehst nur
 
 Die Gewohnheit zeigt jetzt ein Schloss und das Wort **Privat**.
 
-> Note: Nur eine Gewohnheit mit **Nur ich** kann privat sein. Private Gewohnheiten bringen der Familie keine Energie und erscheinen nicht auf der Familientafel.
+> Note: Nur eine Gewohnheit mit **Nur ich** kann privat sein. Private Gewohnheiten bringen keine Sterne und erscheinen nicht auf der Familientafel.

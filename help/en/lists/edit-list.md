@@ -7,18 +7,16 @@ keywords: rename, edit list, colour, color, icon, reorder, sort lists, delete li
 routes: /lists/:id/edit
 tryIt: /lists/shopping
 since: 1.0.0
-updated: 2026-09-30
+updated: 2026-11-10
 media: lists-edit-list
 order: 9
 related: lists-shopping, lists-categories, lists-archive-templates
 ---
-This works the same for shopping and to-do lists.
-
 ![The Shopping screen with a list's ⋯ menu open. Edit is circled, with Delete under it.](lists-edit-list)
 
 1. On Home, tap **Shopping** or **To-dos**.
 2. On the list's card, tap **⋯**, then **Edit**.
-3. Change the **Name**, **Color** or **Icon**, and tap **Save**.
+3. Change the **Name** or **Color**. For another icon, tap the icon in the name field. Then tap **Save**.
 4. To reorder, press and hold a card and drag it.
 5. To delete a list, tap **⋯** on its card, then **Delete**. **Undo** in the message brings it back for a few seconds.
 

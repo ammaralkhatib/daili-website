@@ -2,8 +2,8 @@
 id: meals-share-sheet
 title: Del til daili: et notat, en oppskrift eller en hendelse
 summary: Del en lenke, et bilde eller en melding fra en annen app, og lagre det som et notat, en oppskrift eller en kalenderhendelse.
-keywords: del, lagre i daili, delingsark, whatsapp, signal, skjermdump, melding, oppskriftslenke, nettleser, youtube, hendelse
-translatedFrom: 2026-11-05
+keywords: del, lagre i daili, delingsark, whatsapp, signal, skjermdump, melding, oppskriftslenke, nettleser, youtube, instagram, hendelse
+translatedFrom: 2026-11-10
 ---
 Fant du noe i en annen app? Send det til daili.
 
@@ -13,9 +13,9 @@ Fant du noe i en annen app? Send det til daili.
 2. I **Lagre i daili** velger du **Notat**, **Oppskrift** eller **Hendelse**.
 3. Trykk på **Lagre** for et notat, eller på **Fortsett** for en oppskrift eller en hendelse.
 
-**Oppskrift**: daili leser en lenke fra en oppskriftsside, nettleseren eller YouTube. Tekst sorteres i ingredienser og steg. Et bilde leses av KI (1 KI-handling), foreløpig bare det første bildet.
+**Oppskrift**: daili leser en lenke fra en oppskriftsside, nettleseren eller YouTube. Fra et Instagram-innlegg leser den teksten i innlegget (1 KI-handling). Tekst sorteres i ingredienser og steg. Opptil 5 bilder leses av KI som én oppskrift (1 KI-handling).
 
-**Hendelse**: dailis KI leser en melding, for eksempel fra WhatsApp eller Signal, eller en skjermdump, og foreslår hendelsen (1 KI-handling). Fant den flere? Fjern haken ved dem du ikke trenger.
+**Hendelse**: dailis KI leser en melding, for eksempel fra WhatsApp eller Signal, eller den første skjermdumpen, og foreslår hendelsen (1 KI-handling). Fant den flere? Fjern haken ved dem du ikke trenger.
 
 Du sjekker alt først. Ingenting lagres før du bekrefter. Oppskriftslenker starter på **Oppskrift**; for bilder starter daili på det du valgte sist.
 

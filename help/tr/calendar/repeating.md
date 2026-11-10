@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Yinelenen etkinlikler
 summary: Bir etkinliği her gün, hafta, ay ya da yıl yinelenecek şekilde ayarla, tek bir günü ya da tüm seriyi değiştir.
 keywords: yinele, yinelenen, tekrarlayan, her hafta, haftalık, günlük, aylık, yıllık, seri, ilk perşembe, son cuma
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Her salı yüzme mi var? Bir kez ekle.
 
@@ -12,10 +12,10 @@ Her salı yüzme mi var? Bir kez ekle.
 1. Yeni bir etkinlikte **Yineleme** satırına dokun.
 2. **Her gün**, **Her hafta**, **Her ay** ya da **Her yıl** seçeneğini seç.
 3. "2 haftada bir" için **Her** değerini değiştir. **Her hafta** için günleri **Şu günlerde** altında seç.
-4. **Her ay** için **Ayın 5. günü** ya da bir hafta günü seç, örneğin **Ayın ilk Perşembe günü**. İkisi de başlangıç tarihine göre belirlenir.
-5. **Biter** altında **Hiç** seçeneğini bırak ya da **Tarihte** seçeneğini seç. Paneli kapat ve **Kaydet** düğmesine dokun.
+4. **Her ay** için **Ayın 3. günü** ya da bir hafta günü seç, örneğin **Ayın ilk Perşembe günü**. İkisi de başlangıç tarihine göre belirlenir.
+5. **Biter** altında **Hiç** seçeneğini bırak ya da **Tarihte** seçeneğini seç. **Bitti** düğmesine, sonra **Kaydet** düğmesine dokun.
 
-![Her ay seçili Yineleme paneli. Ayın 5. günü altında Ayın ilk Perşembe günü seçili ve ikisi de daire içine alınmış.](calendar-repeating-monthly)
+![Her ay seçili Yineleme paneli. Ayın 3. günü altında Ayın ilk Perşembe günü seçili ve ikisi de daire içine alınmış.](calendar-repeating-monthly)
 
 29, 30 ya da 31. gün, daha kısa aylarda ayın son gününe kayar.
 

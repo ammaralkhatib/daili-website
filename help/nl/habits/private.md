@@ -3,7 +3,7 @@ id: habits-private
 title: Privégewoontes
 summary: Houd een gewoonte voor jezelf. Niemand anders in het gezin ziet hem.
 keywords: privé, geheim, persoonlijk, verborgen, alleen ik, privacy, gewoonte, slot
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-10
 ---
 Sommige gewoontes gaan niemand anders iets aan. Een privégewoonte is alleen voor jou.
 
@@ -16,4 +16,4 @@ Sommige gewoontes gaan niemand anders iets aan. Een privégewoonte is alleen voo
 
 De gewoonte toont nu een slotje en het woord **Privé**.
 
-> Note: Alleen een gewoonte met **Alleen ik** kan privé zijn. Privégewoontes geven het gezin geen energie en staan niet op het gezinsbord.
+> Note: Alleen een gewoonte met **Alleen ik** kan privé zijn. Privégewoontes leveren geen sterren op en staan niet op het gezinsbord.

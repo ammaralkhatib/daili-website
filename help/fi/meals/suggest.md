@@ -2,23 +2,23 @@
 id: meals-suggest
 title: Anna Dailin suunnitella illalliset
 summary: Yksi napautus ehdottaa illallisen viikon jokaiselle vapaalle illalle – omista resepteistäsi ja muutama uusi idea.
-keywords: ruokalista, ehdotus, tekoäly, suunnittele viikko, illallisideat, mitä syödään, viikkomenu, nopeat illalliset, kasvis, lapset
+keywords: ruokalista, ehdotus, tekoäly, suunnittele viikko, tekoälysuunnitelma, illallisideat, mitä syödään, viikkomenu, nopeat illalliset, kasvis, lapset
 tipTitle: Illallisideat lopussa?
-tipBody: Napauta ruokalistalla Suunnittele viikko, niin Daili ehdottaa illallisen jokaiselle vapaalle illalle, resepteistänne ja uusista.
-translatedFrom: 2026-11-05
+tipBody: Napauta ruokalistan alareunassa Tekoäly, niin daili ehdottaa illallisen jokaiselle vapaalle illalle.
+translatedFrom: 2026-11-10
 ---
-Illallisideat lopussa?
+![Suunnitelma-välilehti. Alapalkin Tekoäly on ympyröity.](meals-suggest)
 
-![Suunnitelma-välilehti. Suunnittele viikko on ensimmäinen painike viikon alla.](meals-plan-week)
-
-1. Napauta aloitusnäytöllä **Ruokalista** ja sitten **Suunnittele viikko**.
-2. Valitse halutessasi suodattimia: **Nopea (alle 30 min)**, **Lapsiystävällinen**, **Kasvis**, **Vain omat reseptini**. Kirjoita toive kohtaan **Jotain käytettävää tai vältettävää?**
+1. Napauta aloitusnäytöllä **Ruokalista** ja sitten **Tekoäly**.
+2. Valitse halutessasi suodattimia: **Nopea (alle 30 min)**, **Lapsiystävällinen**, **Kasvis**, **Vain omat reseptini**. Kirjoita, mitä haluat käyttää tai välttää.
 3. Napauta **Ehdota illallisia**.
 4. Poista näkymässä **Viikkosi, ehdotettuna** valinta päiviltä, jotka jätät väliin. **Vaihda** antaa toisen idean. **Yritä uudelleen** avaa suodattimet uudelleen uusia ideoita varten (yksi ehdotus lisää).
-5. Napauta alareunan painiketta, esimerkiksi **Lisää 5 illallista**. **Lisää ostoslistalle** vie viikon ainesosat listalle.
+5. Napauta lisäyspainiketta, esimerkiksi **Lisää 3 illallista**. **Lisää ostoslistalle** lisää ainesosat listalle.
 
-Vain vapaat illat tästä päivästä alkaen täytetään, ja viimeisen 7 päivän ateriat jätetään pois. Uudet ideat tallentuvat resepteihisi.
+Vain vapaat illat tästä päivästä alkaen täytetään, ja viimeisen 7 päivän ateriat jätetään pois.
 
-> Note: Tekoäly on aikuisille (18+). Reseptiesi nimet, viimeisimmät ateriat ja toiveesi lähetetään Googlen tekoälylle, joka ei tallenna mitään. daili kysyy sinulta ensin, ja **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
+Jos perheellä on toiveita, kytkin lisää ne ensin, yksi päivässä, jos ne sopivat päivälliseksi.
 
-> Note: Yksi ehdotus käyttää yhden tekoälytoiminnon. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 30.
+> Note: Tekoäly on aikuisille (18+). Reseptiesi nimet, viimeisimmät ateriat, toiveet ja kirjoittamasi teksti lähetetään Googlen tekoälylle, joka ei tallenna mitään. daili kysyy sinulta ensin, ja **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
+
+> Note: Yksi ehdotus käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 30.

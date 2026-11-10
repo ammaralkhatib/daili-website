@@ -2,8 +2,8 @@
 id: lists-categories
 title: Las categorías de la compra, y las tuyas
 summary: Agrupa la lista de la compra por pasillos, en el orden de tu supermercado, y añade tus propias categorías.
-keywords: categoría, categorías, pasillo, supermercado, compra, agrupar, ordenar, orden, fruta y verdura, lácteos
-translatedFrom: 2026-09-25
+keywords: categoría, categorías, pasillo, supermercado, compra, agrupar, ordenar, orden, fruta y verdura, lácteos, emoji
+translatedFrom: 2026-11-10
 ---
 Los elementos nuevos reciben una categoría según su nombre, así que la leche va a **Lácteos**. Agrupa la lista por categoría y recorres la tienda una sola vez.
 
@@ -12,7 +12,7 @@ Los elementos nuevos reciben una categoría según su nombre, así que la leche 
 1. Abre una lista de la compra y toca **⋯** arriba.
 2. Activa **Agrupar por categoría**.
 3. Toca **Categorías** y arrástralas al orden en el que recorres tu tienda.
-4. Toca una categoría para cambiarle el nombre, cambiar su emoji u ocultarla. Toca **Añadir categoría** para crear las tuyas, hasta 30.
+4. Toca una categoría para cambiarle el nombre, elegir un emoji de la cuadrícula u ocultarla. La última casilla de la cuadrícula abre todos los emojis, con búsqueda. Toca **Añadir categoría** para crear las tuyas, hasta 30.
 5. Para mover un elemento, tócalo, elige una **Categoría** y toca **Guardar**.
 
 > Note: Solo puedes eliminar las categorías que has añadido tú: toca una y luego **Eliminar categoría**. Sus elementos se quedan en tus listas, solo que sin categoría.

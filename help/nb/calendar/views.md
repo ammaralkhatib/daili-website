@@ -3,21 +3,23 @@ id: calendar-views
 title: Kalendervisninger: måned, uke, dag, liste, personer og år
 summary: Bytt mellom måned, uke, 3 dager, dag, liste, personer og år, og filtrer etter person, kategori eller kalender.
 keywords: visning, måned, uke, liste, filter, personer, år, skjul kalender, alle hendelser, oppdater, ukenummer
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Kalenderen har sju visninger.
 
 ![Kalenderen i visningen Måned. Knappen Visning i linjen nederst er ringet inn.](calendar-views)
 
-1. Trykk på **Kalender** på startskjermen, og så på **Visning** nederst.
+1. Trykk på ukekortet på startskjermen, og så på **Visning** nederst.
 2. Velg **Måned**, **Uke**, **3 dager**, **Dag**, **Liste**, **Personer** eller **År**.
 3. Vil du bare se noen personer eller kategorier, trykker du på **Filter** og velger dem.
 
-Visningen **Personer** gir hver person sin egen kolonne, som en veggkalender. Knappen øverst til venstre skjuler kolonner eller endrer rekkefølgen.
+**Uke**, **3 dager** og **Dag** åpnes på klokkeslettet akkurat nå i dag.
+
+Visningen **Personer** gir hver person sin egen kolonne. Knappen øverst til venstre skjuler kolonner eller endrer rekkefølgen.
 
 ![Visningen Personer med én kolonne hver for Lena, Marco og Emma. Kolonneoverskriftene er ringet inn.](calendar-people-view)
 
-Visningen **År** viser heldags- og flerdagshendelser, som skoleferier og turer. **Alle hendelser** legger til hendelser med klokkeslett, som éndagsstriper. Trykk på en måned for å åpne den.
+Visningen **År** viser heldags- og flerdagshendelser, som skoleferier. **Alle hendelser** legger til hendelser med klokkeslett, som éndagsstriper.
 
 ![Visningen År med ferier og turer. Brikken Alle hendelser er ringet inn.](calendar-year-view)
 

@@ -7,7 +7,7 @@ keywords: ingredients, shopping list, grocery, groceries, add to list, recipe, m
 routes: /add-to-shopping
 tryIt: /meal-plan
 since: 1.0.0
-updated: 2026-11-05
+updated: 2026-11-10
 media: meals-to-shopping
 order: 9
 related: meals-plan-week, lists-shopping
@@ -20,10 +20,10 @@ No more copying ingredients by hand.
 
 ![A recipe with its ingredients. The shopping cart button at the top is circled.](meals-to-shopping)
 
-1. Open a recipe and tap the shopping cart button at the top. Or on **Meal plan**, tap **Shop this week** under the week to take the whole week.
+1. Open a recipe and tap the shopping cart button at the top. Or on **Meal plan**, tap **Shop** at the bottom to take the whole week.
 2. Under **Add to**, pick the shopping list.
 3. Untick anything you already have at home.
-4. Tap the button at the bottom, like **Add 6 items**.
+4. Tap the button at the bottom, like **Add 3 items**.
 
 Tap **Open list** in the message to see them.
 

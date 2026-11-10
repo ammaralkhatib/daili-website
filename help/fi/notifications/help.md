@@ -3,11 +3,9 @@ id: notifications-help
 title: Eikö ilmoituksia tule? Tarkista nämä
 summary: Lyhyt tarkistuslista, kun muistutukset tai perheen päivitykset eivät tule perille.
 keywords: ei toimi, ei ilmoituksia, puuttuu, ei tule, muistutus ei soinut, akku, keskittyminen, älä häiritse, äänetön, android, iphone
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-10
 ---
 Jäikö muistutus tulematta? Tarkista nämä tässä järjestyksessä.
-
-![Ilmoitukset-näkymä alempaa. Kytkin Hiljaiset tunnit on ympyröity.](notifications-help)
 
 1. **Puhelimesi sallii dailin.** Avaa **Asetukset** ja sitten **Ilmoitukset**. Jos yläreunan huomautus kertoo, että ilmoitukset ovat pois päältä, napauta sen painiketta.
 2. **Kytkin on päällä.** Tarkista samasta näkymästä kyseisen tyypin kytkin, esimerkiksi **Tehtävämuistutukset**.

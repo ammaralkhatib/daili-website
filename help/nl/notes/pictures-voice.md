@@ -3,16 +3,16 @@ id: notes-pictures-voice
 title: Afbeeldingen, tekeningen en spraak in een notitie
 summary: Voeg foto's, een tekening of een spraakopname toe aan een notitie en kies waar deze bestanden worden bewaard.
 keywords: afbeelding, foto, screenshot, tekening, tekenen, spraak, opname, dicteren, tekst in afbeelding, daili-cloud, opslag, back-up
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Een notitie kan alleen uit afbeeldingen of een opname bestaan, in de volgorde waarin je ze hebt toegevoegd. Tik op een bijlage om die te openen.
 
-![Een notitie. De groep Bijlagen met een link, een afbeelding en een opname is omcirkeld.](notes-pictures)
+![Een notitie. De groep Bijlagen met een afbeelding en een opname is omcirkeld.](notes-pictures)
 
 1. **Foto**: **Camera**, **Fotobibliotheek**, **Afbeelding plakken**. Uit andere apps: Delen → **daili**, tot 10 afbeeldingen.
 2. **Tekenen**, na **Link**, opent het tekenblok. **Tekening bewerken** werkt alleen op de telefoon waarop de tekening is gemaakt.
 3. **Spraak** neemt tot 10 minuten op.
-4. De microfoon bij de lijstknoppen typt wat je zegt, met de spraakherkenning van je telefoon.
+4. Terwijl je typt, typt de microfoon naast **B** wat je zegt, met de spraakherkenning van je telefoon.
 5. daili leest tekst in afbeeldingen op je telefoon. Open een afbeelding voor **Aan notitie toevoegen**; zoeken vindt de tekst daar.
 
 ![Het venster Spraak opnemen met één grote microfoonknop.](notes-voice)

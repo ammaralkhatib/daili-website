@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Velg hva en widget viser
 summary: Velg hvilken handleliste en widget viser, og om den bare viser dine oppgaver og vaner eller alles.
 keywords: widget, widgetinnstillinger, rediger widget, handleliste, oppgaver, vaner, bare mine, alle, hjem-skjerm
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widgetene **Innkjøp**, **Oppgaver** og **Vaner** har innstillinger. Hver widget husker sine egne, så to innkjøpswidgeter kan vise to lister.
 
@@ -15,7 +15,7 @@ Widgetene **Innkjøp**, **Oppgaver** og **Vaner** har innstillinger. Hver widget
 
 **Oppgaver**: under **Show** velger du **Mine** eller **Everyone**.
 
-**Vaner**: under **Show** velger du **Family** eller **Only mine**. Minzi og energilinjen viser alltid hele familien.
+**Vaner**: under **Show** velger du **Family** eller **Only mine**. Fremdriftsringen teller de samme vanene.
 
 En widget viser alltid familien eller gruppen som er aktiv i daili – du kan ikke velge familie per widget.
 

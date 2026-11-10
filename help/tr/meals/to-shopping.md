@@ -5,16 +5,16 @@ summary: Bir tarifin ya da bütün bir haftanın yemeklerinin ihtiyacı olan her
 keywords: malzemeler, alışveriş listesi, market, alışveriş, listeye ekle, tarif, yemek planı, satın al
 tipTitle: Yemek planından alışveriş listesine
 tipBody: Haftanın yemeklerini planla, sonra tüm malzemelerini tek seferde alışveriş listene ekle.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Malzemeleri elle kopyalamaya son.
 
 ![Malzemeleriyle bir tarif. Üstteki alışveriş sepeti düğmesi daire içine alınmış.](meals-to-shopping)
 
-1. Bir tarif aç ve üstteki alışveriş sepeti düğmesine dokun. Ya da tüm haftayı almak için **Yemek planı** ekranında haftanın altındaki **Haftanın alışverişi** düğmesine dokun.
+1. Bir tarif aç ve üstteki alışveriş sepeti düğmesine dokun. Ya da tüm haftayı almak için **Yemek planı** ekranında alttaki **Alışveriş** düğmesine dokun.
 2. **Şuraya ekle** altında alışveriş listesini seç.
 3. Evde zaten olanların işaretini kaldır.
-4. Alttaki düğmeye dokun, örneğin **6 öğe ekle**.
+4. Alttaki düğmeye dokun, örneğin **3 öğe ekle**.
 
 Onları görmek için mesajdaki **Listeyi aç** düğmesine dokun.
 

@@ -5,7 +5,7 @@ summary: 레시피 페이지 링크를 붙여 넣으면 daili가 재료, 조리 
 keywords: 가져오기, 링크, url, 웹사이트, 레시피, 레시피 저장, 블로그, 링크 붙여넣기, 웹, 레시피 복사
 tipTitle: 어느 웹사이트의 레시피든 저장하세요
 tipBody: 레시피 페이지 링크를 붙여 넣으면 daili가 재료와 조리 단계를 채워 줘요.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 인터넷에서 좋은 레시피를 찾았나요? 받아 적지 말고 저장하세요.
 
@@ -20,4 +20,4 @@ translatedFrom: 2026-11-05
 
 더 빠르게: 브라우저나 YouTube 앱에서 페이지를 **daili**로 공유하고 **레시피**를 고르세요.
 
-> Note: Instagram, TikTok 링크에는 레시피 데이터가 없어요. 대신 레시피 글을 복사해서 **레시피 글 붙여넣기**를 쓰세요. YouTube는 **YouTube 동영상에서**를 쓰세요.
+> Note: TikTok, Facebook 링크에는 레시피 데이터가 없어요. 대신 레시피 글을 복사해서 **레시피 글 붙여넣기**를 쓰세요. YouTube나 Instagram은 **YouTube 또는 Instagram에서**를 쓰세요.

@@ -5,15 +5,15 @@ summary: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine i
 keywords: youtube, video, videoclip, rețetă video, videoclip de gătit, import video, link, ai, salvează rețeta, shorts
 tipTitle: Transformă un videoclip YouTube într-o rețetă
 tipBody: Lipește linkul unui videoclip de gătit, iar daili scrie pentru tine ingredientele și pașii.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Ai văzut un preparat pe YouTube? daili scrie rețeta.
 
-![Ecranul Rețete cu meniul + deschis. Dintr-un videoclip YouTube este încercuit.](meals-youtube)
+![Ecranul Rețete cu meniul + deschis. Din YouTube sau Instagram este încercuit.](meals-youtube)
 
 1. Copiază linkul videoclipului în aplicația YouTube (Distribuie → Copiază linkul).
-2. Pe ecranul principal, apasă pe **Rețete**, apoi pe **+**, apoi pe **Dintr-un videoclip YouTube**.
-3. Lipește linkul la **Link YouTube** sau apasă pe **Lipește**. Apoi apasă pe **Citește videoclipul**.
+2. Pe ecranul principal, apasă pe **Rețete**, apoi pe **+**, apoi pe **Din YouTube sau Instagram**.
+3. Lipește linkul la **Link YouTube sau Instagram** sau apasă pe **Lipește**. Apoi apasă pe **Citește**.
 4. Verifică ce a găsit daili, apoi apasă pe **Salvează**.
 
 Rețeta iese în limba din daili. Fără o poză a ta, sus apare imaginea videoclipului. Apasă pe ▶ ca să-l vezi pe YouTube. Ca să păstrezi o imagine, adaugă o poză a ta.

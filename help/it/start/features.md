@@ -3,11 +3,9 @@ id: start-features
 title: Scegliere cosa vedi nella schermata iniziale
 summary: Scegli le funzioni che usa la tua famiglia. Puoi cambiare la scelta quando vuoi.
 keywords: funzioni, scegliere, schermata iniziale, riquadri, configurare, primi passi, disattivare, ciclo, cosa usare
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Subito dopo che crei la tua prima famiglia o ci entri, daili ti chiede **Per cosa vuoi usare Daili?** Tutte le funzioni partono attive, tranne Ciclo.
-
-![Le schede delle funzioni. La casella sulla scheda Spesa è cerchiata.](start-features)
 
 1. Tocca una scheda per leggere di cosa si tratta.
 2. Tocca la casella di una scheda per disattivarla, o riattivarla.

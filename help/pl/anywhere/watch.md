@@ -3,9 +3,9 @@ id: anywhere-watch
 title: daili na Apple Watch
 summary: Zobacz, co cię czeka, odhaczaj zakupy, zadania i nawyki i dodawaj rzeczy głosem – prosto na nadgarstku.
 keywords: apple watch, watch, zegarek, nadgarstek, komplikacja, tarcza, smart stack, lista zakupów, głos, dyktowanie, szybka notatka, nawyki
-translatedFrom: 2026-10-06
+translatedFrom: 2026-11-10
 ---
-Przesuwaj między czterema stronami: **Najbliższe** z twoimi kolejnymi wydarzeniami, dzisiejszą kolacją i najbliższymi urodzinami, twoja lista zakupów, twoje **Zadania** i **Nawyki** z Minzi.
+Przesuwaj między czterema stronami: **Najbliższe** z twoimi kolejnymi wydarzeniami, dzisiejszą kolacją i najbliższymi urodzinami, twoja lista zakupów, twoje **Zadania** i **Nawyki**.
 
 ![Najbliższe na zegarku: urodziny dzisiaj, kolacja na dziś wieczór i urodziny za 4 dni.](watch-up-next)
 
@@ -16,8 +16,6 @@ Przesuwaj między czterema stronami: **Najbliższe** z twoimi kolejnymi wydarzen
 Stuknij wiersz, żeby go odhaczyć. Na liście zakupów i w zadaniach stuknij ponownie w ciągu 3 sekund, żeby cofnąć.
 
 ![Strona Zadania na zegarku z dwoma otwartymi zadaniami, na dziś i na jutro.](watch-todos)
-
-![Strona Nawyki na zegarku: Minzi, 2 z 5 zrobione dzisiaj i pierwsze nawyki.](watch-habits)
 
 Głosem: stuknij ołówek na **Najbliższe**, żeby dodać szybką notatkę, albo **Dodaj element** na liście zakupów.
 

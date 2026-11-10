@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Vælg, hvad en widget viser
 summary: Vælg, hvilken indkøbsliste en widget viser, og om den kun viser dine opgaver og vaner eller alles.
 keywords: widget, widgetindstillinger, rediger widget, indkøbsliste, opgaver, vaner, kun mine, alle, hjemmeskærm
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Widgetterne **Indkøb**, **Opgaver** og **Vaner** har indstillinger. Hver widget husker sine egne, så to indkøbswidgets kan vise to lister.
 
@@ -15,7 +15,7 @@ Widgetterne **Indkøb**, **Opgaver** og **Vaner** har indstillinger. Hver widget
 
 **Opgaver**: under **Show** vælger du **Mine** eller **Everyone**.
 
-**Vaner**: under **Show** vælger du **Family** eller **Only mine**. Minzi og energibjælken viser altid hele familien.
+**Vaner**: under **Show** vælger du **Family** eller **Only mine**. Fremskridtsringen tæller de samme vaner.
 
 En widget viser altid den familie eller gruppe, der er aktiv i daili – du kan ikke vælge familie for hver widget.
 

@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Ein Rezept hinzufügen
 summary: Sammle die Rezepte der Familie an einem Ort, mit Zutaten, Schritten und einem Foto.
 keywords: rezept, rezept hinzufügen, kochbuch, rezeptsammlung, zutaten, kochen, gericht, foto, familienrezepte
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Omas Lasagne gehört in die Rezeptsammlung der Familie, wo alle sie finden.
 
@@ -13,7 +13,7 @@ Omas Lasagne gehört in die Rezeptsammlung der Familie, wo alle sie finden.
 2. Tippe auf **Neues Rezept**.
 3. Gib einen **Titel** ein. Wenn du magst, füg **Vorb. (Min.)**, **Kochen (Min.)**, **Portionen**, **Tags** und **Kategorien** hinzu und tippe auf **Foto hinzufügen**.
 4. Tippe für jede Zutat auf **Zutat hinzufügen** und für jeden Schritt auf **Schritt hinzufügen**.
-5. Tippe auf **Erstellen**.
+5. Tippe auf **Erstellen**. Wie bei jeder Art des Hinzufügens landest du danach in deiner Rezeptliste.
 
 Um ein Rezept später zu ändern, öffne es, tippe oben auf **⋮** und dann auf **Bearbeiten**.
 

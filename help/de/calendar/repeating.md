@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Wiederkehrende Termine
 summary: Lass einen Termin jeden Tag, jede Woche, jeden Monat oder jedes Jahr wiederholen, und ändere einen Tag oder die ganze Serie.
 keywords: wiederholen, wiederkehrend, regelmäßig, jede woche, wöchentlich, täglich, monatlich, jährlich, serie, routine, erster donnerstag, letzter freitag
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Schwimmen jeden Dienstag? Trag es einmal ein.
 
@@ -12,10 +12,10 @@ Schwimmen jeden Dienstag? Trag es einmal ein.
 1. Tippe in einem neuen Termin auf **Wiederholung**.
 2. Wähle **Täglich**, **Wöchentlich**, **Monatlich** oder **Jährlich**.
 3. Ändere **Alle** für „alle 2 Wochen“. Bei **Wöchentlich** wählst du die Tage unter **Wiederholen am**.
-4. Bei **Monatlich** wählst du **Am 5. des Monats** oder einen Wochentag, zum Beispiel **Am ersten Donnerstag**. Beides richtet sich nach dem Startdatum.
-5. Lass unter **Endet** die Option **Nie** oder wähle **An Datum**. Schließ das Fenster und tippe auf **Speichern**.
+4. Bei **Monatlich** wählst du **Am 3. des Monats** oder einen Wochentag, zum Beispiel **Am ersten Donnerstag**. Beides richtet sich nach dem Startdatum.
+5. Lass unter **Endet** die Option **Nie** oder wähle **An Datum**. Tippe auf **Fertig** und dann auf **Speichern**.
 
-![Das Fenster Wiederholung mit Monatlich ausgewählt. Am ersten Donnerstag ist unter Am 5. des Monats ausgewählt, beide sind eingekreist.](calendar-repeating-monthly)
+![Das Fenster Wiederholung mit Monatlich ausgewählt. Am ersten Donnerstag ist unter Am 3. des Monats ausgewählt, beide sind eingekreist.](calendar-repeating-monthly)
 
 Der 29., 30. oder 31. rutscht in kürzeren Monaten auf den letzten Tag.
 

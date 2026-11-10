@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Een recept toevoegen
 summary: Bewaar de recepten van het gezin op één plek, met ingrediënten, stappen en een foto.
 keywords: recept, recept toevoegen, kookboek, receptenbox, ingrediënten, koken, gerecht, foto, familierecepten
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Oma’s lasagne hoort in de receptenbox van het gezin, waar iedereen hem kan vinden.
 
@@ -13,7 +13,7 @@ Oma’s lasagne hoort in de receptenbox van het gezin, waar iedereen hem kan vin
 2. Tik op **Nieuw recept**.
 3. Typ een **Titel**. Voeg als je wilt **Voorb. (min.)**, **Koken (min.)**, **Porties**, **Tags** en **Categorieën** toe, en tik op **Foto toevoegen**.
 4. Tik op **Ingrediënt toevoegen** voor elk ingrediënt en op **Stap toevoegen** voor elke stap.
-5. Tik op **Maken**.
+5. Tik op **Maken**. Net als bij elke manier van toevoegen kom je daarna in je receptenlijst uit.
 
 Om een recept later te wijzigen, open je het, tik je bovenaan op **⋮** en dan op **Bewerken**.
 

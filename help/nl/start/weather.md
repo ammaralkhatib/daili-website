@@ -5,9 +5,9 @@ summary: Zie het weer waar je bent of voor een stad die je kiest, en zet het in 
 keywords: weer, weerbericht, weersverwachting, regen, temperatuur, locatie, stad, wind, uv, zonsopkomst, zonsondergang, dagoverzicht
 tipTitle: Het weer staat op Vandaag
 tipBody: Zie het weer van vandaag en wanneer er regen komt, waar je bent of voor een stad die je kiest.
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
-Tik bovenaan **Vandaag** op **Mijn locatie gebruiken** of **Kies een stad**. Zie je **Locatie staat uit**, kies dan een stad.
+Tik bovenaan **Vandaag** op **Mijn locatie gebruiken** of **Kies een stad**.
 
 1. Tik op de kaart om het scherm **Weer** te openen. De lucht daar past zich aan het weer en het moment van de dag aan.
 2. Bekijk de komende 24 uur en **10 dagen**. Tik op een dag om de uren te zien.
@@ -15,8 +15,8 @@ Tik bovenaan **Vandaag** op **Mijn locatie gebruiken** of **Kies een stad**. Zie
 
 ![Het scherm Weer met de lucht, de komende uren en 10 dagen. De rij van vandaag is omcirkeld.](start-weather)
 
-Op het startscherm toont **Vandaag** de lucht en de temperatuur. De tegel **Weer** laat zien wanneer er regen komt. Verbergen: **⋯** → **Weer verbergen**, of **Weer op Vandaag** in **Instellingen**.
+Op het startscherm toont het weer bovenaan de lucht en de temperatuur, en het opent het scherm **Weer**. De tegel **Weer** laat zien wanneer er regen komt. Verbergen: **⋯** → **Weer verbergen**, of **Weer op Vandaag** in **Instellingen**.
 
 **Weer in dagoverzicht** (**Agenda-instellingen** → **Dagelijkse samenvatting**) zet één regel over het weer in je ochtend- en avondsamenvatting. daili bewaart daarvoor een globale plek (ongeveer 10 km), tot je het uitzet.
 
-> Note: Je locatie is bij benadering en wordt alleen voor het weer gebruikt. De onderste regel noemt de bron. Meer in het privacybeleid op daili.app.
+> Note: Je locatie is bij benadering en wordt alleen voor het weer gebruikt. Meer in het privacybeleid op daili.app.

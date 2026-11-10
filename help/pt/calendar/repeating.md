@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Eventos que se repetem
 summary: Faça um evento se repetir todo dia, toda semana, todo mês ou todo ano, e mude um dia só ou a série inteira.
 keywords: repetir, repetição, recorrente, toda semana, semanal, diário, mensal, anual, série, rotina, primeira quinta-feira, última sexta-feira
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Natação toda terça? Adicione uma vez.
 
@@ -12,10 +12,10 @@ Natação toda terça? Adicione uma vez.
 1. Em um evento novo, toque em **Repetição**.
 2. Escolha **Todo dia**, **Toda semana**, **Todo mês** ou **Todo ano**.
 3. Mude **A cada** para “a cada 2 semanas”. Em **Toda semana**, escolha os dias em **Repetir nas**.
-4. Em **Todo mês**, escolha **No dia 5** ou um dia da semana, como **Na primeira quinta-feira**. Os dois seguem a data de início.
-5. Em **Termina**, deixe **Nunca** ou escolha **Em uma data**. Feche a janela e toque em **Salvar**.
+4. Em **Todo mês**, escolha **No dia 3** ou um dia da semana, como **Na primeira quinta-feira**. Os dois seguem a data de início.
+5. Em **Termina**, deixe **Nunca** ou escolha **Em uma data**. Toque em **Concluído** e depois em **Salvar**.
 
-![A janela Repetição com Todo mês escolhido. Na primeira quinta-feira está selecionado abaixo de No dia 5, e os dois estão circulados.](calendar-repeating-monthly)
+![A janela Repetição com Todo mês escolhido. Na primeira quinta-feira está selecionado abaixo de No dia 3, e os dois estão circulados.](calendar-repeating-monthly)
 
 Os dias 29, 30 e 31 passam para o último dia nos meses mais curtos.
 

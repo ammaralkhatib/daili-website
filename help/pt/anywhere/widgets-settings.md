@@ -3,7 +3,7 @@ id: anywhere-widgets-settings
 title: Escolha o que um widget mostra
 summary: Escolha qual lista de compras um widget mostra e se ele mostra só as suas tarefas e hábitos ou os de todos.
 keywords: widget, ajustes do widget, editar widget, lista de compras, tarefas, hábitos, só os meus, todos, tela inicial
-translatedFrom: 2026-09-26
+translatedFrom: 2026-11-10
 ---
 Os widgets **Compras**, **Tarefas** e **Hábitos** têm ajustes. Cada widget guarda os seus, então dois widgets de compras podem mostrar duas listas.
 
@@ -15,7 +15,7 @@ Os widgets **Compras**, **Tarefas** e **Hábitos** têm ajustes. Cada widget gua
 
 **Tarefas**: em **Show**, escolha **Mine** ou **Everyone**.
 
-**Hábitos**: em **Show**, escolha **Family** ou **Only mine**. A Minzi e a barra de energia sempre mostram a família toda.
+**Hábitos**: em **Show**, escolha **Family** ou **Only mine**. O anel de progresso conta os mesmos hábitos.
 
 Um widget sempre mostra a família ou o grupo ativo no daili — não dá para escolher uma família por widget.
 

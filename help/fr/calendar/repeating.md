@@ -3,7 +3,7 @@ id: calendar-repeating
 title: Événements récurrents
 summary: Fais répéter un événement chaque jour, semaine, mois ou année, et modifie un seul jour ou toute la série.
 keywords: répéter, répétition, récurrent, chaque semaine, hebdomadaire, quotidien, mensuel, annuel, série, routine, premier jeudi, dernier vendredi
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-10
 ---
 Piscine tous les mardis ? Ajoute-la une fois.
 
@@ -12,10 +12,10 @@ Piscine tous les mardis ? Ajoute-la une fois.
 1. Dans un nouvel événement, touche **Répétition**.
 2. Choisis **Tous les jours**, **Toutes les semaines**, **Tous les mois** ou **Tous les ans**.
 3. Change **Tous les** pour « toutes les 2 semaines ». Pour **Toutes les semaines**, choisis les jours sous **Répéter le**.
-4. Pour **Tous les mois**, choisis **Le jour 5** ou un jour de la semaine, comme **Le premier jeudi**. Les deux suivent la date de début.
-5. Sous **Se termine**, garde **Jamais** ou choisis **À une date**. Ferme la fiche et touche **Enregistrer**.
+4. Pour **Tous les mois**, choisis **Le jour 3** ou un jour de la semaine, comme **Le premier jeudi**. Les deux suivent la date de début.
+5. Sous **Se termine**, garde **Jamais** ou choisis **À une date**. Touche **Terminé**, puis **Enregistrer**.
 
-![La fiche Répétition avec Tous les mois choisi. Le premier jeudi est sélectionné sous Le jour 5, et les deux sont entourés.](calendar-repeating-monthly)
+![La fiche Répétition avec Tous les mois choisi. Le premier jeudi est sélectionné sous Le jour 3, et les deux sont entourés.](calendar-repeating-monthly)
 
 Le jour 29, 30 ou 31 passe au dernier jour du mois quand le mois est plus court.
 

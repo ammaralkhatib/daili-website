@@ -1,11 +1,11 @@
 ---
 id: habits-what
 title: Apa itu kebiasaan: masing-masing, bersama, pribadi
-summary: Bangun kebiasaan kecil sebagai keluarga. Setiap centang memberi Minzi, kucing keluarga Anda, energi untuk perjalanan berikutnya.
-keywords: kebiasaan, pelacak kebiasaan, rutinitas, target keluarga, minzi, kucing, bersama, anak, kebiasaan baik, masing-masing
-translatedFrom: 2026-10-16
-tipTitle: Bangun kebiasaan bersama Minzi
-tipBody: Centang kebiasaan kecil bersama keluarga. Saat bar energi Minzi penuh, dia berangkat jalan-jalan.
+summary: Bangun kebiasaan kecil sebagai keluarga. Lihat kebiasaan satu orang sekaligus, dan dapatkan bintang untuk hadiah.
+keywords: kebiasaan, pelacak kebiasaan, rutinitas, target keluarga, bersama, anak, kebiasaan baik, masing-masing, ganti orang, daftar centang, kisi setahun, bintang
+tipTitle: Bangun kebiasaan bersama
+tipBody: Centang kebiasaan kecil bersama keluarga. Setiap hari yang selesai memberi bintang untuk hadiah yang dinikmati bersama.
+translatedFrom: 2026-11-10
 ---
 Kebiasaan adalah hal kecil yang ingin sering Anda lakukan, seperti membaca atau minum air. Temukan di Beranda pada **Kebiasaan**. Setiap kebiasaan adalah salah satu dari tiga jenis. Anda memilihnya di bawah **Siapa yang melakukannya?**
 
@@ -13,10 +13,12 @@ Kebiasaan adalah hal kecil yang ingin sering Anda lakukan, seperti membaca atau 
 2. **Masing-masing**: setiap peserta mencentang untuk dirinya dan punya rentetannya sendiri.
 3. **Bersama**: satu centang untuk seluruh keluarga, dan siapa pun boleh memberikannya.
 
-![Layar Kebiasaan dengan kamar Minzi, bar Energi keluarga, dan Hari ini, "1 dari 4 selesai". Tombol + di kanan bawah dilingkari.](habits-what)
+![Layar Kebiasaan: kebiasaan Anda, chip bintang, Hari ini dengan "1 dari 4 selesai", dan kartu kebiasaan dengan kisinya. Tombol + di kanan bawah dilingkari.](habits-what)
 
-Kebiasaan Anda untuk hari ini ada di bawah **Hari ini**, beserta berapa yang sudah selesai. Tambahkan kebiasaan dengan **+** di kanan bawah.
+**Kebiasaan** menampilkan satu orang sekaligus. Ketuk **Ganti orang** untuk melihat milik orang lain, atau kebiasaan **Bersama**. Hanya admin yang melihat anak tanpa login di sana.
 
-Setiap centang memberi keluarga Anda energi. Bar-nya ada di bawah kamar Minzi dan berubah menjadi cincin kecil saat Anda menggulir. Saat bar penuh, Minzi si kucing berangkat jalan-jalan dan mengirim kartu pos ke rumah.
+Setiap kartu kebiasaan punya kisi hari-harinya; buka kartunya untuk melihat setahun penuh. Tombol di samping **Hari ini** beralih antara **Kartu**, **Daftar**, dan **Ringkas**.
 
-> Note: Pertama kali Anda membuka **Kebiasaan**, daili meminta Anda memberi nama kucingnya dan memilih dua atau tiga kebiasaan untuk memulai.
+Tambahkan kebiasaan dengan **+**. Setiap hari kebiasaan yang selesai memberi satu bintang untuk **Hadiah**.
+
+> Note: Jika Anda sudah punya kebiasaan sebelum pembaruan, **Kebiasaan jadi lebih sederhana** muncul sekali.

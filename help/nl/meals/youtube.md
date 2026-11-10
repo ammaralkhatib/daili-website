@@ -5,15 +5,15 @@ summary: Plak de link van een kookvideo, en daili schrijft de ingrediënten en s
 keywords: youtube, video, receptvideo, kookvideo, video importeren, link, ai, recept bewaren, shorts
 tipTitle: Maak van een YouTube-video een recept
 tipBody: Plak de link van een kookvideo, en daili schrijft de ingrediënten en stappen voor je uit.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Een gerecht gezien op YouTube? daili schrijft het recept uit.
 
-![Het scherm Recepten met het menu + open. Uit een YouTube-video is omcirkeld.](meals-youtube)
+![Het scherm Recepten met het menu + open. Uit YouTube of Instagram is omcirkeld.](meals-youtube)
 
 1. Kopieer de videolink in de YouTube-app (Delen → Link kopiëren).
-2. Tik op het startscherm op **Recepten**, dan op **+** en dan op **Uit een YouTube-video**.
-3. Plak de link onder **YouTube-link**, of tik op **Plakken**. Tik dan op **Video lezen**.
+2. Tik op het startscherm op **Recepten**, dan op **+** en dan op **Uit YouTube of Instagram**.
+3. Plak de link onder **YouTube- of Instagram-link**, of tik op **Plakken**. Tik dan op **Lezen**.
 4. Controleer wat daili heeft gevonden en tik dan op **Opslaan**.
 
 Het recept komt in de taal van daili. Zonder eigen foto staat de afbeelding van de video bovenaan. Tik op ▶ om hem op YouTube te bekijken. Wil je een afbeelding houden, voeg dan je eigen foto toe.

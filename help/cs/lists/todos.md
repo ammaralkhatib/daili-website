@@ -3,20 +3,22 @@ id: lists-todos
 title: Seznamy úkolů
 summary: Společné seznamy úkolů na domácí práce, pochůzky a věci do školy. Odškrtávej úkoly a měj přehled, kdo co dělá.
 keywords: úkol, úkoly, to-do, povinnosti, pochůzky, checklist, domácnost, odškrtnout, hotovo, seznam
-translatedFrom: 2026-10-12
+translatedFrom: 2026-11-10
 ---
 Jako nákupní seznam, ale úkol může mít navíc člověka, termín a připomenutí.
 
 ![Obrazovka Úkoly s jedním seznamem. Zakroužkovaná je karta seznamu Domácnost.](lists-todos)
 
-1. Na domovské obrazovce klepni na **Úkoly** a pak na seznam. Pro nový seznam klepni na **+**, vyplň **Název** a klepni na **Vytvořit**. S **Jen já** si ho necháš pro sebe.
+1. Na domovské obrazovce klepni na **Úkoly** a pak na seznam. Pro nový seznam klepni na **+**, vyplň **Název** a klepni na **Vytvořit**.
 2. Napiš úkol do pole **Přidat položku** dole a přidej ho.
-3. Klepnutím na úkol nastavíš **Přiřazeno**, **Termín**, **Kategorie** nebo **Poznámka**. Pak klepni na **Uložit**.
+3. Klepnutím na úkol nastavíš **Přiřazeno**, **Termín**, **Kategorie** nebo **Poznámka**.
 4. Hotovo? Klepni na políčko před úkolem. Úkol se přesune dolů do části **Hotovo**.
-5. Pokud chceš seznam uspořádat, klepni nahoře na **⋯** a pak na **Seskupit podle**. Vyber **Termín**, **Osoba** nebo **Kategorie**.
+5. Pokud chceš seznam uspořádat, klepni na **⋯** a pak na **Seskupit podle**.
 
-Dokonči seznam nebo všechny úkoly v Dnes a Minzi možná zajásá.
+Přejetím úkolu doleva ho smažeš, podržením prstu ho přesuneš.
 
-Ve sdíleném seznamu udělá zámek vedle šipky pro odeslání tvoje další úkoly soukromými, dokud seznam neopustíš. Zavřený znamená zapnuto.
+Ve sdíleném seznamu udělá zámek vedle šipky pro odeslání tvoje další úkoly soukromými, dokud seznam neopustíš.
+
+Nemáš signál? Úkoly můžeš dál odškrtávat i přidávat. Odškrtnutí opakovaného úkolu a ostatní změny potřebují připojení.
 
 > Note: **Seskupit podle** se ukládá jen na tomto telefonu.

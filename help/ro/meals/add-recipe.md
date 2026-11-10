@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Adaugă o rețetă
 summary: Ține rețetele familiei într-un singur loc, cu ingrediente, pași și o poză.
 keywords: rețetă, adaugă rețetă, carte de bucate, caiet de rețete, ingrediente, gătit, fel de mâncare, poză, rețetele familiei
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Lasagna bunicii își are locul în caietul de rețete al familiei, unde o găsește oricine.
 
@@ -13,7 +13,7 @@ Lasagna bunicii își are locul în caietul de rețete al familiei, unde o găse
 2. Apasă pe **Rețetă nouă**.
 3. Scrie un **Titlu**. Dacă vrei, adaugă **Pregătire (min)**, **Gătire (min)**, **Porții**, **Etichete** și **Categorii** și apasă pe **Adaugă poză**.
 4. Apasă pe **Adaugă ingredient** pentru fiecare ingredient și pe **Adaugă pas** pentru fiecare pas.
-5. Apasă pe **Creează**.
+5. Apasă pe **Creează**. Ca la orice mod de adăugare, ajungi în lista ta de rețete.
 
 Ca să schimbi mai târziu o rețetă, deschide-o, apasă pe **⋮** sus, apoi pe **Editează**.
 

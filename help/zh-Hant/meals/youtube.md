@@ -5,15 +5,15 @@ summary: 貼上烹飪影片的連結，daili 會用你的語言幫你寫出食�
 keywords: youtube, 影片, 食譜影片, 烹飪影片, 料理影片, 匯入影片, 連結, ai, 儲存食譜, shorts
 tipTitle: 把 YouTube 影片變成食譜
 tipBody: 貼上烹飪影片的連結，daili 會幫你寫出食材和步驟。
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 在 YouTube 上看到一道好菜？daili 幫你寫出食譜。
 
-![打開 + 選單的「食譜」畫面。「從YouTube影片」被圈起來。](meals-youtube)
+![打開 + 選單的「食譜」畫面。「從YouTube或Instagram」被圈起來。](meals-youtube)
 
 1. 在 YouTube App 裡複製影片連結（分享 → 複製連結）。
-2. 在首頁上，點**食譜**，再點 **+**，然後點**從YouTube影片**。
-3. 把連結貼到**YouTube連結**，或點**貼上**。再點**讀取影片**。
+2. 在首頁上，點**食譜**，再點 **+**，然後點**從YouTube或Instagram**。
+3. 把連結貼到**YouTube或Instagram連結**，或點**貼上**。再點**讀取**。
 4. 檢查 daili 找到的內容，再點**儲存**。
 
 食譜會用 daili 的語言寫出來。沒有你自己的相片時，最上面會顯示影片的圖片。點 ▶ 就能在 YouTube 上觀看。想保留圖片，就新增你自己的相片。

@@ -5,7 +5,7 @@ summary: Füg den Link zu einer Rezeptseite ein, und daili trägt Zutaten, Schri
 keywords: importieren, link, url, website, rezept, rezept speichern, blog, link einfügen, web, rezept kopieren
 tipTitle: Rezepte von jeder Website speichern
 tipBody: Füg den Link zu einer Rezeptseite ein, und daili trägt Zutaten und Schritte für dich ein.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Online ein gutes Rezept gefunden? Speicher es, ohne es abzutippen.
 
@@ -20,4 +20,4 @@ Hat eine Seite keine Rezeptdaten, speichert daili trotzdem Titel und Foto. Zutat
 
 Schneller: Teile die Seite in deinem Browser oder in der YouTube-App mit **daili** und wähle **Rezept**.
 
-> Note: Links von Instagram und TikTok enthalten keine Rezeptdaten. Kopier stattdessen den Rezepttext und nutze **Rezepttext einfügen**. Für YouTube nutze **Aus einem YouTube-Video**.
+> Note: Links von TikTok und Facebook enthalten keine Rezeptdaten. Kopier stattdessen den Rezepttext und nutze **Rezepttext einfügen**. Für YouTube oder Instagram nutze **Aus YouTube oder Instagram**.

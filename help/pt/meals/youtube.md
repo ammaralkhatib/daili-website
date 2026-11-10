@@ -5,15 +5,15 @@ summary: Cole o link de um vídeo de culinária, e o daili escreve os ingredient
 keywords: youtube, vídeo, receita em vídeo, vídeo de culinária, importar vídeo, link, ia, salvar receita, shorts
 tipTitle: Transforme um vídeo do YouTube em receita
 tipBody: Cole o link de um vídeo de culinária, e o daili escreve os ingredientes e os passos para você.
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-10
 ---
 Viu um prato no YouTube? O daili escreve a receita.
 
-![A tela Receitas com o menu + aberto. De um vídeo do YouTube está circulado.](meals-youtube)
+![A tela Receitas com o menu + aberto. Do YouTube ou Instagram está circulado.](meals-youtube)
 
 1. Copie o link do vídeo no app do YouTube (Compartilhar → Copiar link).
-2. Na tela inicial, toque em **Receitas**, depois em **+** e depois em **De um vídeo do YouTube**.
-3. Cole o link em **Link do YouTube**, ou toque em **Colar**. Depois toque em **Ler o vídeo**.
+2. Na tela inicial, toque em **Receitas**, depois em **+** e depois em **Do YouTube ou Instagram**.
+3. Cole o link em **Link do YouTube ou Instagram**, ou toque em **Colar**. Depois toque em **Ler**.
 4. Confira o que o daili encontrou e depois toque em **Salvar**.
 
 A receita sai no idioma do daili. Sem uma foto sua, a imagem do vídeo aparece no topo. Toque em ▶ para assistir no YouTube. Para manter uma imagem, adicione a sua própria foto.
