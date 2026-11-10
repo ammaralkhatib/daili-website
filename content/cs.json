@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Protažení · 5 min", "s": "4 dny v řadě" },
             { "t": "Číst 20 minut", "s": "Mia · každý den" },
-            { "t": "Zalít květiny", "s": "Rodinná energie +1" }
+            { "t": "Zalít květiny", "s": "+1 hvězda pro rodinu" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Páteční oběd vyřešen.", "t": "Peníze na oběd v pátek", "s": "Připnuto · Rodina" },
         { "cap": "Sobotní trh s dětmi", "t": "Kytky pro babičku", "s": "Nákupy · 5 ze 7" },
-        { "cap": "Den 12. Minzi je pyšná.", "t": "Číst 20 minut", "s": "12 dní v řadě" },
+        { "cap": "Den 12. Další hvězda!", "t": "Číst 20 minut", "s": "12 dní v řadě" },
         { "cap": "Dneska je jí 12!", "t": "Emma slaví 12", "s": "Dnes · oslava v 15:00" },
         { "cap": "Trénink nevynecháme", "t": "Trénink fotbalu", "s": "17:00 · Noah · každé út" },
         { "cap": "Nákup s posilou", "t": "Borůvky", "s": "Přidala Lena · právě teď" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Zdarma. Bez reklam, bez háčku." },
-        { "t": "Minzi, rodinná kočka, vám fandí" }
+        { "t": "Hvězda za každý splněný den" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Úkoly", "p": "Domácí práce a pochůzky s konkrétním jménem, aby nic nezapadlo.", "t": "Vynést koš", "s": "Noah · zítra, 8:00" },
         { "slug": "budget", "h3": "Rozpočet", "p": "Podívejte se, kolik zbývá do konce měsíce, kam peníze šly a kdo komu dluží.", "t": "Zbývá {amount} na den", "s": "Potraviny · ještě 9 dní" },
         { "slug": "cycle", "h3": "Cyklus", "p": "Soukromý menstruační kalendář, který zůstává ve vašem telefonu.", "t": "Další menstruace za 8–14 dní", "s": "Vidíte to jen vy" },
-        { "slug": "habits", "h3": "Návyky", "p": "Malé zvyky, plněné společně. Každé zaškrtnutí dodá Minzi, vaší rodinné kočce, víc energie.", "t": "Rodinná energie · 34 / 40", "s": "Ještě 6 a Minzi vyrazí na výlet" },
+        { "slug": "habits", "h3": "Návyky", "p": "Návyky vždy jednoho člověka a u každého návyku celý rok splněných dní. Každý splněný den přinese hvězdu.", "t": "Výlet do kina · 34 / 40", "s": "Ještě 6 hvězd a můžete plánovat" },
         { "slug": "notes", "h3": "Poznámky", "p": "Rychlé myšlenky, heslo k Wi-Fi, kdo vyzvedne babičku. Poznámku si nechte pro sebe, nebo ji sdílejte s rodinou.", "t": "Babička přijede v sobotu v 15:00", "s": "Sdíleno s rodinou" },
         { "slug": "recipes", "h3": "Recepty", "p": "Uchovejte oblíbené rodinné recepty, nebo nový importujte z videa či fotky. Suroviny pošlete do seznamu jedním klepnutím.", "t": "Sladkokyselé glazované tofu", "s": "13 surovin · Přidat do Nákupů" },
         { "slug": "meal-plan", "h3": "Jídelníček", "p": "Naplánujte snídaně, obědy i večeře na celý týden, ať se nikdo v šest neptá, co bude k večeři.", "t": "Zeleninové kari", "s": "Večeře · pondělí" },
@@ -224,13 +224,13 @@
         { "t": "Naplánujte týden", "d": "V úterý má Noah plavání — přidejte ho. Objeví se na všech telefonech v rodině, v jeho barvě." },
         { "t": "Nakupujte společně", "d": "Marco je v obchodě a odškrtne mléko. Doma to hned vidíte — nic nekoupíte dvakrát." },
         { "t": "Odškrtávejte úkoly", "d": "Noah dokončí prádlo a odškrtne ho. Celá rodina vidí, co ještě zbývá." },
-        { "t": "Držte se návyku", "d": "Pět minut protahování, zaškrtnout — a Minzi má víc energie na další výlet." }
+        { "t": "Držte se návyku", "d": "Pět minut protahování, zaškrtnout — a den je splněný: další hvězda pro rodinnou odměnu." }
       ],
       "toasts": [
         { "t": "Plavání přidáno", "s": "Noah · úterý 16:30" },
         { "t": "Marco koupil mléko", "s": "Nákupy · 2 ze 7" },
         { "t": "Noah složil prádlo", "s": "Domácnost · dnes zbývá 1" },
-        { "t": "Protažení hotovo", "s": "Energie rodiny +1" }
+        { "t": "Protažení hotovo", "s": "+1 hvězda" }
       ],
       "pill": "Bazén 16:30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Úvodní obrazovka aplikace Daili",
       "shot-calendar": "Sdílený rodinný kalendář v aplikaci Daili",
       "shot-shopping": "Sdílený nákupní seznam v aplikaci Daili",
-      "shot-habits": "Návyky rodiny v aplikaci Daili",
+      "shot-habits": "Celý rok splněných dní u každého návyku v aplikaci Daili",
       "shot-notes": "Poznámky rodiny v aplikaci Daili",
       "shot-recipes": "Uložené recepty v aplikaci Daili",
       "shot-mealplan": "Jídelníček na týden v aplikaci Daili",
@@ -270,7 +270,6 @@
         "h3": "Widgety",
         "p": "Co vás čeká, nákupy, návyky, narozeniny a rychlé přidání přímo na ploše telefonu.",
         "toBuy": "{count} ke koupi",
-        "energy": "Energie {n}/{max}",
         "habits": "Návyky",
         "groceries": "Nákupy",
         "items": ["Mléko", "Vejce", "Jablka"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Budujte návyky jako rodina. Každé zaškrtnutí přidá rodině energii, a když se ukazatel naplní, Minzi vyrazí na výlet.",
+        "lead": "Návyky vždy jednoho člověka, u každého návyku celý rok splněných dní. Každý splněný den přinese hvězdu k rodinné odměně.",
         "benefits": [
           {
-            "t": "Společně i zvlášť",
-            "p": "Návyky pro celou rodinu, pro pár z vás, nebo jen pro vás."
+            "t": "Vždy jeden člověk",
+            "p": "Přepínejte mezi členy rodiny a uvidíte návyky každého z nich."
           },
           {
-            "t": "Série, které se počítají",
-            "p": "Uvidíte, kolik dní v řadě jste vydrželi."
+            "t": "Rok splněných dní",
+            "p": "Každý návyk ukazuje celý rok, jeden čtvereček za každý den."
           },
           {
-            "t": "Jemné připomenutí",
-            "p": "V tu denní dobu, která se k návyku hodí."
+            "t": "Rodinné odměny",
+            "p": "Vyberte si odměnu, třeba výlet do kina. Až ji hvězdy naplní, naplánujte ji v kalendáři."
           }
         ],
         "faq": []

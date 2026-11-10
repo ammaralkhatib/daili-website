@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Rekken · 5 min", "s": "4 dagen op rij" },
             { "t": "20 minuten lezen", "s": "Mia · elke dag" },
-            { "t": "Planten water geven", "s": "Gezinsenergie +1" }
+            { "t": "Planten water geven", "s": "+1 ster voor het gezin" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Vrijdaglunch: geregeld.", "t": "Overblijfgeld vrijdag", "s": "Vastgepind · Gezin" },
         { "cap": "Zaterdag naar de markt", "t": "Bloemen voor oma", "s": "Boodschappen · 5 van 7" },
-        { "cap": "Dag 12. Minzi is trots.", "t": "20 minuten lezen", "s": "12 dagen op rij" },
+        { "cap": "Dag 12. Weer een ster!", "t": "20 minuten lezen", "s": "12 dagen op rij" },
         { "cap": "Vandaag wordt ze 12!", "t": "Emma wordt 12", "s": "Vandaag · feestje om 15:00" },
         { "cap": "Nooit meer training missen", "t": "Voetbaltraining", "s": "17:00 · Noah · elke di" },
         { "cap": "Boodschappen met hulptroepen", "t": "Blauwe bessen", "s": "Door Lena · zojuist" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "€ 0", "t": "Gratis te gebruiken. Geen reclame, geen addertje." },
-        { "t": "Minzi, de gezinskat, moedigt jullie aan" }
+        { "t": "Een ster voor elke voltooide dag" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Taken", "p": "Klusjes en taken met een naam erbij, zodat niemand denkt dat de ander het zou doen.", "t": "Vuilnis buitenzetten", "s": "Noah · morgen, 08:00" },
         { "slug": "budget", "h3": "Budget", "p": "Zie wat er deze maand nog over is, waar het geld heen ging en wie wie wat schuldig is.", "t": "Nog {amount} per dag", "s": "Boodschappen · nog 9 dagen" },
         { "slug": "cycle", "h3": "Cyclus", "p": "Een privé menstruatiekalender die op je eigen telefoon blijft.", "t": "Menstruatie over 8–14 dagen", "s": "Alleen jij kunt dit zien" },
-        { "slug": "habits", "h3": "Gewoontes", "p": "Kleine routines, samen gedaan. Elk vinkje geeft Minzi, jullie gezinskat, meer energie.", "t": "Gezinsenergie · 34 / 40", "s": "Nog 6 en Minzi gaat op reis" },
+        { "slug": "habits", "h3": "Gewoontes", "p": "Eén persoon tegelijk, een heel jaar vol vinkjes bij elke gewoonte. Elke voltooide dag levert een ster op.", "t": "Naar de bioscoop · 34 / 40", "s": "Nog 6 sterren, dan plannen we het" },
         { "slug": "notes", "h3": "Notities", "p": "Snelle ideeën, het wifi-wachtwoord, wie oma ophaalt. Houd een notitie voor jezelf of deel hem met het gezin.", "t": "Oma komt zaterdag om 15:00", "s": "Gedeeld met het gezin" },
         { "slug": "recipes", "h3": "Recepten", "p": "Bewaar de favoriete gezinsrecepten, of importeer er een uit een video of foto. Zet de ingrediënten met één tik op je lijst.", "t": "Zoetzure kleverige tofu", "s": "13 ingrediënten · Naar Boodschappen" },
         { "slug": "meal-plan", "h3": "Menuplanner", "p": "Plan ontbijt, lunch en avondeten voor de hele week, zodat niemand om zes uur vraagt wat we eten.", "t": "Groentecurry", "s": "Avondeten · maandag" },
@@ -224,13 +224,13 @@
         { "t": "Plan de week", "d": "Zet zwemmen voor Noah op dinsdag. Het verschijnt op elke telefoon in het gezin, in zijn kleur." },
         { "t": "Deel de boodschappen", "d": "Marco is in de winkel en vinkt de melk af. Thuis zie je het meteen, niets wordt dubbel gekocht." },
         { "t": "Vink taken af", "d": "Noah is klaar met de was en vinkt het af. Het hele gezin ziet wat er nog openstaat." },
-        { "t": "Houd een gewoonte vol", "d": "Vijf minuten rekken, afvinken en zien hoe Minzi meer energie krijgt voor haar volgende reis." }
+        { "t": "Houd een gewoonte vol", "d": "Vijf minuten rekken, afvinken, en de dag zit erop: weer een ster voor de gezinsbeloning." }
       ],
       "toasts": [
         { "t": "Zwemles toegevoegd", "s": "Noah · dinsdag 16:30" },
         { "t": "Marco heeft de melk", "s": "Boodschappen · 2 van 7" },
         { "t": "Noah deed de was", "s": "Huishouden · nog 1 vandaag" },
-        { "t": "Rekken gedaan", "s": "Gezinsenergie +1" }
+        { "t": "Rekken gedaan", "s": "+1 ster" }
       ],
       "pill": "Zwem 16:30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Het startscherm van de Daili-app",
       "shot-calendar": "De gedeelde gezinsagenda in de Daili-app",
       "shot-shopping": "Een gedeelde boodschappenlijst in de Daili-app",
-      "shot-habits": "Gewoontes van het gezin in de Daili-app",
+      "shot-habits": "Een heel jaar aan voltooide dagen bij elke gewoonte in de Daili-app",
       "shot-notes": "Notities van het gezin in de Daili-app",
       "shot-recipes": "Bewaarde recepten in de Daili-app",
       "shot-mealplan": "De menuplanner van de week in de Daili-app",
@@ -270,7 +270,6 @@
         "h3": "Widgets",
         "p": "Eerstvolgende afspraak, boodschappen, gewoontes, verjaardagen en snel toevoegen, gewoon op je beginscherm.",
         "toBuy": "{count} te kopen",
-        "energy": "Energie {n}/{max}",
         "habits": "Gewoontes",
         "groceries": "Boodschappen",
         "items": ["Melk", "Eieren", "Appels"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Bouw samen gewoontes op. Elk vinkje telt mee voor jullie gezinsenergie, en als de balk vol is, gaat Minzi op reis.",
+        "lead": "Gewoontes voor één persoon tegelijk, met een heel jaar vinkjes bij elke gewoonte. Elke voltooide dag levert een ster op voor jullie gezinsbeloning.",
         "benefits": [
           {
-            "t": "Samen of alleen",
-            "p": "Gewoontes voor het hele gezin, voor een paar van jullie of alleen voor jou."
+            "t": "Eén persoon tegelijk",
+            "p": "Wissel tussen gezinsleden en bekijk de gewoontes van iedereen apart."
           },
           {
-            "t": "Reeksen die tellen",
-            "p": "Zie hoeveel dagen op rij je het hebt volgehouden."
+            "t": "Een jaar vol vinkjes",
+            "p": "Elke gewoonte toont het hele jaar, met een vakje voor elke dag."
           },
           {
-            "t": "Een vriendelijke herinnering",
-            "p": "Op het moment van de dag dat bij de gewoonte past."
+            "t": "Gezinsbeloningen",
+            "p": "Kies een beloning, zoals samen naar de bioscoop. Zit hij vol sterren? Plan hem dan in de agenda."
           }
         ],
         "faq": []

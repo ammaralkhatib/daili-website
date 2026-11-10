@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Venyttely · 5 min", "s": "4 päivää putkeen" },
             { "t": "Lue 20 minuuttia", "s": "Mia · joka päivä" },
-            { "t": "Kastele kukat", "s": "Perheen energia +1" }
+            { "t": "Kastele kukat", "s": "+1 tähti perheelle" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Perjantai hoidossa.", "t": "Retkirahat perjantaiksi", "s": "Kiinnitetty · Perhe" },
         { "cap": "Lauantaina torilla", "t": "Kukat mummille", "s": "Ostokset · 5/7" },
-        { "cap": "Päivä 12. Minzi on ylpeä.", "t": "Lue 20 minuuttia", "s": "12 päivää putkeen" },
+        { "cap": "Päivä 12. Taas tähti!", "t": "Lue 20 minuuttia", "s": "12 päivää putkeen" },
         { "cap": "Tänään 12 vuotta!", "t": "Emma täyttää 12", "s": "Tänään · juhlat klo 15" },
         { "cap": "Treenit ei unohdu", "t": "Jalkapallotreenit", "s": "17.00 · Noah · joka ti" },
         { "cap": "Kauppareissu apujoukoin", "t": "Mustikat", "s": "Lena lisäsi · juuri nyt" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Ilmainen käyttää. Ei mainoksia, ei koukkuja." },
-        { "t": "Minzi, perheen kissa, kannustaa teitä" }
+        { "t": "Tähti jokaisesta tehdystä päivästä" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Tehtävät", "p": "Kotityöt ja juoksevat asiat tekijän nimellä, joten mikään ei jää roikkumaan.", "t": "Vie roskat", "s": "Noah · huomenna, 8.00" },
         { "slug": "budget", "h3": "Budjetti", "p": "Näe, paljonko tässä kuussa on jäljellä, mihin rahat menivät ja kuka on velkaa kenellekin.", "t": "{amount} jäljellä päivää kohden", "s": "Ruokaostokset · 9 päivää jäljellä" },
         { "slug": "cycle", "h3": "Kierto", "p": "Yksityinen kuukautiskalenteri, joka pysyy puhelimessasi.", "t": "Kuukautiset 8–14 päivän päästä", "s": "Vain sinä näet tämän" },
-        { "slug": "habits", "h3": "Tavat", "p": "Pieniä rutiineja yhdessä. Jokainen merkintä antaa perheen kissalle Minzille lisää energiaa.", "t": "Perheen energia · 34 / 40", "s": "Vielä 6, niin Minzi lähtee matkalle" },
+        { "slug": "habits", "h3": "Tavat", "p": "Yksi ihminen kerrallaan, ja jokaisessa tavassa koko vuoden tehdyt päivät. Jokainen onnistunut päivä tuo tähden.", "t": "Elokuvissa käynti · 34 / 40", "s": "Vielä 6 tähteä, sitten suunnitellaan" },
         { "slug": "notes", "h3": "Muistiinpanot", "p": "Nopeat ajatukset, Wi-Fi-salasana, kuka hakee mummon. Pidä muistiinpano omana tai jaa se perheen kanssa.", "t": "Mummo tulee lauantaina klo 15", "s": "Jaettu perheen kanssa" },
         { "slug": "recipes", "h3": "Reseptit", "p": "Tallenna perheen suosikit tai tuo resepti videosta tai kuvasta. Lähetä ainekset listalle yhdellä napautuksella.", "t": "Hapanimelä tahmea tofu", "s": "13 ainesosaa · Lisää Ostoksiin" },
         { "slug": "meal-plan", "h3": "Ruokalista", "p": "Suunnittele viikon aamiaiset, lounaat ja päivälliset, niin kukaan ei kysy kuudelta, mitä on ruoaksi.", "t": "Kasviscurry", "s": "Päivällinen · maanantai" },
@@ -224,13 +224,13 @@
         { "t": "Suunnittele viikko", "d": "Lisää Noahille uinti tiistaille. Se näkyy perheen jokaisessa puhelimessa, hänen värillään." },
         { "t": "Jakakaa ostokset", "d": "Marco on kaupassa ja kuittaa maidon. Kotona näet sen heti, eikä mitään osteta kahdesti." },
         { "t": "Kuittaa tehtävät", "d": "Noah saa pyykit valmiiksi ja kuittaa ne. Koko perhe näkee, mitä on vielä tekemättä." },
-        { "t": "Pidä kiinni tavasta", "d": "Venyttele viisi minuuttia, kuittaa ja katso, kun Minzi saa lisää energiaa seuraavaan reissuunsa." }
+        { "t": "Pidä kiinni tavasta", "d": "Venyttele viisi minuuttia, kuittaa, ja päivä on tehty: taas yksi tähti perheen palkintoon." }
       ],
       "toasts": [
         { "t": "Uimakoulu lisätty", "s": "Noah · tiistai 16.30" },
         { "t": "Marco osti maidon", "s": "Ostokset · 2/7" },
         { "t": "Noah hoiti pyykit", "s": "Kotityöt · 1 jäljellä" },
-        { "t": "Venyttely tehty", "s": "Perheen energia +1" }
+        { "t": "Venyttely tehty", "s": "+1 tähti" }
       ],
       "pill": "Uinti 16.30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Daili-sovelluksen aloitusnäkymä",
       "shot-calendar": "Perheen yhteinen kalenteri Daili-sovelluksessa",
       "shot-shopping": "Yhteinen ostoslista Daili-sovelluksessa",
-      "shot-habits": "Perheen tavat Daili-sovelluksessa",
+      "shot-habits": "Koko vuoden tehdyt päivät jokaisessa tavassa Daili-sovelluksessa",
       "shot-notes": "Perheen muistiinpanot Daili-sovelluksessa",
       "shot-recipes": "Tallennetut reseptit Daili-sovelluksessa",
       "shot-mealplan": "Viikon ruokalista Daili-sovelluksessa",
@@ -270,7 +270,6 @@
         "h3": "Widgetit",
         "p": "Seuraava tapahtuma, ostokset, tavat, syntymäpäivät ja pikalisäys suoraan aloitusnäytöllä.",
         "toBuy": "{count} ostettavaa",
-        "energy": "Energia {n}/{max}",
         "habits": "Tavat",
         "groceries": "Ostokset",
         "items": ["Maito", "Munat", "Omenat"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Rakentakaa tapoja koko perheenä. Jokainen merkintä kasvattaa perheen energiaa, ja kun palkki on täynnä, Minzi lähtee matkalle.",
+        "lead": "Tavat yksi ihminen kerrallaan, ja jokaisessa tavassa koko vuoden tehdyt päivät. Jokainen onnistunut päivä tuo tähden perheen palkintoon.",
         "benefits": [
           {
-            "t": "Yhdessä tai yksin",
-            "p": "Tapoja koko perheelle, muutamalle teistä tai vain sinulle."
+            "t": "Yksi kerrallaan",
+            "p": "Vaihda perheenjäsenestä toiseen ja näe jokaisen omat tavat."
           },
           {
-            "t": "Putket, joilla on väliä",
-            "p": "Näe, montako päivää putkeen olet pitänyt tavan yllä."
+            "t": "Vuosi tehtyjä päiviä",
+            "p": "Jokainen tapa näyttää koko vuotensa, yksi ruutu jokaista päivää kohden."
           },
           {
-            "t": "Lempeä muistutus",
-            "p": "Siihen aikaan päivästä, joka sopii tavalle."
+            "t": "Perheen palkinnot",
+            "p": "Valitse palkinnoksi vaikka elokuvissa käynti. Kun tähdet täyttävät sen, suunnittele se kalenteriin."
           }
         ],
         "faq": []

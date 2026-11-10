@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Alongamentos · 5 min", "s": "4 dias seguidos" },
             { "t": "Ler 20 minutos", "s": "Mia · todo dia" },
-            { "t": "Regar as plantas", "s": "Energia da família +1" }
+            { "t": "Regar as plantas", "s": "+1 estrela para a família" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Lanche de sexta: resolvido.", "t": "Lanche de sexta", "s": "Fixado · Família" },
         { "cap": "Feira de sábado", "t": "Flores para a vovó", "s": "Compras · 5 de 7" },
-        { "cap": "Dia 12. Minzi orgulhoso!", "t": "Ler 20 minutos", "s": "12 dias seguidos" },
+        { "cap": "Dia 12. Mais uma estrela!", "t": "Ler 20 minutos", "s": "12 dias seguidos" },
         { "cap": "Hoje ela faz 12!", "t": "Emma faz 12 anos", "s": "Hoje · festa às 15h" },
         { "cap": "Treino? Nunca perdemos", "t": "Treino de futebol", "s": "17h00 · Noah · toda terça" },
         { "cap": "Mercado com reforço", "t": "Mirtilos", "s": "Adicionado por Lena · agora" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "€0", "t": "Grátis para usar. Sem anúncios, sem pegadinha." },
-        { "t": "Minzi, o gato da família, torce por você" }
+        { "t": "Uma estrela para cada dia concluído" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Tarefas", "p": "Tarefas e afazeres com o nome de quem vai fazer, para ninguém achar que era a vez do outro.", "t": "Levar o lixo", "s": "Noah · amanhã, 8h00" },
         { "slug": "budget", "h3": "Orçamento", "p": "Veja quanto sobrou no mês, para onde foi o dinheiro e quem deve para quem.", "t": "Restam {amount} por dia", "s": "Mercado · faltam 9 dias" },
         { "slug": "cycle", "h3": "Ciclo", "p": "Um controle de menstruação privado, que fica no seu celular.", "t": "Próxima menstruação em 8–14 dias", "s": "Só você pode ver isso" },
-        { "slug": "habits", "h3": "Hábitos", "p": "Pequenas rotinas, feitas juntos. Cada marcação dá mais energia à Minzi, a gata da família.", "t": "Energia da família · 34 / 40", "s": "Mais 6 e a Minzi vai viajar" },
+        { "slug": "habits", "h3": "Hábitos", "p": "Uma pessoa de cada vez, um ano de dias cumpridos em cada hábito. Cada dia concluído vale uma estrela.", "t": "Ida ao cinema · 34 / 40", "s": "Mais 6 estrelas e é só marcar" },
         { "slug": "notes", "h3": "Notas", "p": "Ideias rápidas, a senha do Wi-Fi, quem vai buscar a vovó. Deixe uma nota só para você ou compartilhe com a família.", "t": "Vovó chega sábado às 15h", "s": "Compartilhada com a família" },
         { "slug": "recipes", "h3": "Receitas", "p": "Guarde as receitas favoritas da família ou importe uma de um vídeo ou de uma foto. Mande os ingredientes para a sua lista com um toque.", "t": "Tofu glaceado agridoce", "s": "13 ingredientes · Para as Compras" },
         { "slug": "meal-plan", "h3": "Cardápio", "p": "Planeje café da manhã, almoço e jantar da semana, e ninguém mais pergunta às seis o que tem para o jantar.", "t": "Curry de legumes", "s": "Jantar · segunda" },
@@ -224,13 +224,13 @@
         { "t": "Planeje a semana", "d": "Adicione a natação do Noah na terça. Aparece em todos os celulares da família, na cor dele." },
         { "t": "Divida as compras", "d": "Marco está no mercado e marca o leite. Em casa você vê na hora, sem comprar em dobro." },
         { "t": "Marque as tarefas", "d": "Noah termina de lavar a roupa e marca. A família toda vê o que ainda falta." },
-        { "t": "Mantenha um hábito", "d": "Alongue-se por cinco minutos, marque e veja o Minzi ganhar energia para a próxima viagem." }
+        { "t": "Mantenha um hábito", "d": "Alongue-se por cinco minutos, marque e o dia está feito: mais uma estrela para a recompensa da família." }
       ],
       "toasts": [
         { "t": "Natação adicionada", "s": "Noah · terça 16h30" },
         { "t": "Marco pegou o leite", "s": "Compras · 2 de 7" },
         { "t": "Noah lavou a roupa", "s": "Casa · falta 1 hoje" },
-        { "t": "Alongamento feito", "s": "Energia da família +1" }
+        { "t": "Alongamento feito", "s": "+1 estrela" }
       ],
       "pill": "Nadar 16h30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "A tela inicial do app Daili",
       "shot-calendar": "O calendário compartilhado da família no app Daili",
       "shot-shopping": "Uma lista de compras compartilhada no app Daili",
-      "shot-habits": "Os hábitos da família no app Daili",
+      "shot-habits": "Cada hábito com seu ano de dias cumpridos no app Daili",
       "shot-notes": "As notas da família no app Daili",
       "shot-recipes": "Receitas salvas no app Daili",
       "shot-mealplan": "O cardápio da semana no app Daili",
@@ -270,7 +270,6 @@
         "h3": "Widgets",
         "p": "Próximos compromissos, compras, hábitos, aniversários e adição rápida, direto na tela inicial.",
         "toBuy": "{count} para comprar",
-        "energy": "Energia {n}/{max}",
         "habits": "Hábitos",
         "groceries": "Compras",
         "items": ["Leite", "Ovos", "Maçãs"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Crie hábitos em família. Cada marcação soma energia para a família e, quando a barra enche, a Minzi vai viajar.",
+        "lead": "Hábitos de uma pessoa de cada vez, com um ano de dias cumpridos em cada um. Cada dia concluído vale uma estrela para uma recompensa em família.",
         "benefits": [
           {
-            "t": "Juntos ou sozinho",
-            "p": "Hábitos para a família toda, para alguns de vocês ou só para você."
+            "t": "Uma pessoa de cada vez",
+            "p": "Troque entre as pessoas da família e veja os hábitos de cada uma."
           },
           {
-            "t": "Sequências que contam",
-            "p": "Veja quantos dias seguidos você manteve o hábito."
+            "t": "Um ano de dias cumpridos",
+            "p": "Cada hábito mostra o ano inteiro, um quadradinho para cada dia."
           },
           {
-            "t": "Um lembrete gentil",
-            "p": "Na hora do dia que combina com o hábito."
+            "t": "Recompensas em família",
+            "p": "Escolha uma recompensa, como uma ida ao cinema. Quando as estrelas a completarem, marque no calendário."
           }
         ],
         "faq": []

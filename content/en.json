@@ -62,7 +62,7 @@
     "@notes": { "description": "Three short trust chips under the download buttons. Two or three words each." }
   },
 
-  "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\", \"Daili Plus\" and \"Minzi\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
+  "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\" and \"Daili Plus\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
   "home": {
     "nav": {
       "@nav": { "description": "Top navigation, on every page: three section links, the web-app login link and the pill button. downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
@@ -116,7 +116,7 @@
           "cards": [
             { "t": "Stretch · 5 min", "s": "4-day streak" },
             { "t": "Read 20 minutes", "s": "Mia · every day" },
-            { "t": "Water the plants", "s": "Family energy +1" }
+            { "t": "Water the plants", "s": "+1 star for the family" }
           ]
         },
         {
@@ -159,28 +159,28 @@
       "@h2a": { "description": "First line of the members headline. {count} is filled by the build with the locale-formatted member number (1,500 / 1.500) and must appear exactly once." },
       "h2a": "Joined by {count}+ members",
       "h2b": "planning life together",
-      "@cards": { "description": "8 photo cards in the members carousel. cap = a short, casual, handwritten-style caption on the photo (≤ 28 chars) — write it the way a parent would caption their own photo in your language, not a translation of the English joke; \"Day 12. Minzi is proud.\" keeps Minzi. t/s = the Daili widget drawn on the photo (t ≤ 24, s ≤ 30). \"Oma\" and \"Papa\" may become your language's word for grandma / dad here only." },
+      "@cards": { "description": "8 photo cards in the members carousel. cap = a short, casual, handwritten-style caption on the photo (≤ 28 chars) — write it the way a parent would caption their own photo in your language, not a translation of the English joke; t/s = the Daili widget drawn on the photo (t ≤ 24, s ≤ 30). \"Oma\" and \"Papa\" may become your language's word for grandma / dad here only." },
       "cards": [
         { "cap": "Friday lunch, sorted.", "t": "Lunch money for Friday", "s": "Pinned · Family" },
         { "cap": "Saturday market run", "t": "Flowers for Oma", "s": "Groceries · 5 of 7" },
-        { "cap": "Day 12. Minzi is proud.", "t": "Read 20 minutes", "s": "12-day streak" },
+        { "cap": "Day 12. Another star!", "t": "Read 20 minutes", "s": "12-day streak" },
         { "cap": "She turns 12 today!", "t": "Emma turns 12", "s": "Today · party at 3 pm" },
         { "cap": "Never miss practice", "t": "Football practice", "s": "17:00 · Noah · every Tue" },
         { "cap": "Shopping with backup", "t": "Blueberries", "s": "Added by Lena · just now" },
         { "cap": "Homework first", "t": "Check homework", "s": "Mia · today" },
         { "cap": "Our little jungle", "t": "Water the plants", "s": "Every day · with Papa" }
       ],
-      "@tiles": { "description": "Two tiles at the end of the members carousel. First: big = the price (\"€0\" written the locale's way), t = one line. Second: t = one line next to Minzi the cat." },
+      "@tiles": { "description": "Two tiles at the end of the members carousel. First: big = the price (\"€0\" written the locale's way), t = one line. Second: t = one line next to a star." },
       "tiles": [
         { "big": "€0", "t": "Free to use. No ads, no catch." },
-        { "t": "Minzi, the family cat, cheers you on" }
+        { "t": "A star for every done day" }
       ]
     },
     "day": {
       "@day": { "description": "\"Start the day together\" section: headline and sub line (≤ 80 chars)." },
       "h2": "Start the day together",
       "sub": "Everything your family needs to know, in the places you already look.",
-      "@cards": { "description": "Every feature, one card each, in ONE horizontal row under \"Start the day together\", in this order: Calendar, Lists, To-dos, Budget, Cycle, Habits, Notes, Recipes, Meal plan, Birthdays, Weather, Documents & photos, Family (site.config.mjs HOME_FEATURES). slug = the feature's URL part, data, never translated. h3 = the app's feature name (dashboardTile*, cycleTitle), p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36), with the names this locale's screenshots show. Budget t keeps {amount} (24 € in the currency of the locale's budget screenshot, formatted by the build). Cycle t = the app's cycleNextIn for 8–14 days; weather t/s = weatherTileRainFrom (15:00) and weatherTileHighLow (16° / 7°). The habits card's t/s are laid exactly over the habits screenshot's energy widget: t = the app's habitsEnergyTitle (34 / 40), s = habitsEnergyToGo (6) without \"tonight\". Never write \"free\", a price or \"Plus\"." },
+      "@cards": { "description": "Every feature, one card each, in ONE horizontal row under \"Start the day together\", in this order: Calendar, Lists, To-dos, Budget, Cycle, Habits, Notes, Recipes, Meal plan, Birthdays, Weather, Documents & photos, Family (site.config.mjs HOME_FEATURES). slug = the feature's URL part, data, never translated. h3 = the app's feature name (dashboardTile*, cycleTitle), p = one or two short sentences, t/s = the small app widget on the card (t ≤ 32, s ≤ 36), with the names this locale's screenshots show. Budget t keeps {amount} (24 € in the currency of the locale's budget screenshot, formatted by the build). Cycle t = the app's cycleNextIn for 8–14 days; weather t/s = weatherTileRainFrom (15:00) and weatherTileHighLow (16° / 7°). The habits card's t = a family reward and its stars (34 / 40), s = the stars still to go (6); use the app's own words for reward and star (habitsRewards*). Never write \"free\", a price or \"Plus\"." },
       "@new": { "description": "The small badge on a feature card that is new in the app (one short word)." },
       "new": "New",
       "@prev": { "description": "Screen-reader labels of the two arrow buttons above the feature row: previous / next card." },
@@ -194,7 +194,7 @@
         { "slug": "todos", "h3": "To-dos", "p": "Chores and errands with a name on them, so nothing falls between two people.", "t": "Take out the bins", "s": "Noah · Tomorrow, 08:00" },
         { "slug": "budget", "h3": "Budget", "p": "See what is left this month, where the money went, and who owes whom.", "t": "{amount} left per day", "s": "Groceries · 9 days to go" },
         { "slug": "cycle", "h3": "Cycle", "p": "A private period tracker that stays on your phone.", "t": "Next period in 8–14 days", "s": "Only you can see this" },
-        { "slug": "habits", "h3": "Habits", "p": "Small routines, done together. Every tick gives Minzi, your family cat, more energy.", "t": "Family energy · 34 / 40", "s": "6 more and Minzi goes on a trip" },
+        { "slug": "habits", "h3": "Habits", "p": "One person at a time, a year of done days on every habit. Every finished day gives a star.", "t": "Cinema trip · 34 / 40", "s": "6 more stars, then plan it" },
         { "slug": "notes", "h3": "Notes", "p": "Quick thoughts, the Wi-Fi password, who picks up Grandma. Keep a note private or share it with the family.", "t": "Grandma arrives Saturday at 3 pm", "s": "Shared with Family" },
         { "slug": "recipes", "h3": "Recipes", "p": "Keep the family favourites, or import one from a video or a photo. Send the ingredients to your list in one tap.", "t": "Sweet & sour sticky tofu", "s": "13 ingredients · Add to Groceries" },
         { "slug": "meal-plan", "h3": "Meal plan", "p": "Plan breakfast, lunch and dinner for the week, so nobody asks what's for dinner at six.", "t": "Vegetable curry", "s": "Dinner · Monday" },
@@ -261,13 +261,13 @@
         { "t": "Plan the week", "d": "Add swimming for Noah on Tuesday. It shows up on every phone in the family, in his colour." },
         { "t": "Share the shopping", "d": "Marco is at the store and ticks off the milk. At home you see it right away, no double buying." },
         { "t": "Tick off the to-dos", "d": "Noah finishes the laundry and ticks it. The whole family sees what is still open." },
-        { "t": "Keep a habit", "d": "Stretch for five minutes, tick it, and watch Minzi get more energy for her next trip." }
+        { "t": "Keep a habit", "d": "Stretch for five minutes, tick it, and the day is done: one more star for the family reward." }
       ],
       "toasts": [
         { "t": "Swimming class added", "s": "Noah · Tuesday 16:30" },
         { "t": "Marco got the milk", "s": "Groceries · 2 of 7" },
         { "t": "Noah did the laundry", "s": "Household · 1 left today" },
-        { "t": "Stretch done", "s": "Family energy +1" }
+        { "t": "Stretch done", "s": "+1 star" }
       ],
       "pill": "Swim 16:30"
     },
@@ -283,7 +283,7 @@
       "shot-home": "The home screen of the Daili app",
       "shot-calendar": "The shared family calendar in the Daili app",
       "shot-shopping": "A shared shopping list in the Daili app",
-      "shot-habits": "Family habits in the Daili app",
+      "shot-habits": "A year of done days on every habit in the Daili app",
       "shot-notes": "Family notes in the Daili app",
       "shot-recipes": "Saved recipes in the Daili app",
       "shot-mealplan": "The week’s meal plan in the Daili app",
@@ -304,12 +304,11 @@
         "h3": "Apple Watch",
         "p": "What's next, tonight's dinner and your lists — tick off shopping, to-dos and habits right on your wrist."
       },
-      "@widgets": { "description": "Drawn home-screen widgets. toBuy, energy and habits are copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetShoppingToBuy, widgetHabitsEnergy, habitsTitle), so the site says what the widget says. {count}, {n}, {max} are numbers filled by the page. groceries = the shopping list's name on the widget chip; items = three grocery items, no full stop." },
+      "@widgets": { "description": "Drawn home-screen widgets. toBuy and habits are copied from the app's own widget strings in that language (lib/l10n/app_<lang>.arb: widgetShoppingToBuy, habitsTitle), so the site says what the widget says. {count} is a number filled by the page. groceries = the shopping list's name on the widget chip; items = three grocery items, no full stop." },
       "widgets": {
         "h3": "Widgets",
         "p": "Next up, shopping, habits, birthdays and quick add, right on your home screen.",
         "toBuy": "{count} to buy",
-        "energy": "Energy {n}/{max}",
         "habits": "Habits",
         "groceries": "Groceries",
         "items": ["Milk", "Eggs", "Apples"]
@@ -464,7 +463,7 @@
   },
 
   "@features": {
-    "description": "Feature pages (/features/<slug>/, 2026-10-16/006) and the sheet the home cards open. all = the link back to the home page's feature list; close = the sheet's close button (screen readers); questions = the FAQ heading. pages.<slug>: lead (also the page's meta description, <= 155 chars), benefits (t = short title, p = one sentence), faq (q/a, may be empty). The page title is the card's h3 + ' · daili'. Use the app's own words (app_<lang>.arb) and content/glossary.md. Never write 'free', a price or 'Plus'. Cycle: neutral and respectful, no medical terms, no 'family planning' wording. Minzi only does what a real cat does."
+    "description": "Feature pages (/features/<slug>/, 2026-10-16/006) and the sheet the home cards open. all = the link back to the home page's feature list; close = the sheet's close button (screen readers); questions = the FAQ heading. pages.<slug>: lead (also the page's meta description, <= 155 chars), benefits (t = short title, p = one sentence), faq (q/a, may be empty). The page title is the card's h3 + ' · daili'. Use the app's own words (app_<lang>.arb) and content/glossary.md. Never write 'free', a price or 'Plus'. Cycle: neutral and respectful, no medical terms, no 'family planning' wording."
   },
   "features": {
     "all": "All features",
@@ -526,19 +525,19 @@
         ]
       },
       "habits": {
-        "lead": "Build habits as a family. Every tick adds to your family's energy, and when the bar is full, Minzi goes on a trip.",
+        "lead": "Habits for one person at a time, with a year of done days on every habit. Every finished day gives a star toward a family reward.",
         "benefits": [
           {
-            "t": "Together or alone",
-            "p": "Habits for the whole family, for a few of you, or just for you."
+            "t": "One person at a time",
+            "p": "Switch between family members and see each person’s habits."
           },
           {
-            "t": "Streaks that count",
-            "p": "See how many days in a row you kept it up."
+            "t": "A year of done days",
+            "p": "Every habit shows its whole year, one square for each day."
           },
           {
-            "t": "A gentle reminder",
-            "p": "At the time of day that fits the habit."
+            "t": "Family rewards",
+            "p": "Set a reward like a cinema trip. When the stars fill it, plan it in the calendar."
           }
         ],
         "faq": []

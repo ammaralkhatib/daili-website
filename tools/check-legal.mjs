@@ -154,6 +154,17 @@ const V115_MUST_CONTAIN = { terms: [], privacy: ['id="help-improve"', 'id="surve
 const V115_WHY = 'Help improve Daili, surveys and tips (app 1.15.0) are in every locale — see claude-prompts/2026-11-05/003';
 
 /**
+ * App 1.16.0: rewards (habit stars), stock lists, meal wishes, recipes from
+ * Instagram links, offline lists + notes and read aloud. Every anchor is on a
+ * <p>, invisible to the <h2> id comparison below.
+ */
+const V116_MUST_CONTAIN = {
+  terms: [],
+  privacy: ['id="rewards"', 'id="stock-lists"', 'id="meal-wishes"', 'id="instagram-recipes"', 'id="offline"', 'id="read-aloud"'],
+};
+const V116_WHY = 'rewards, stock lists, meal wishes, Instagram recipes, offline lists + notes and read aloud (app 1.16.0) are in every locale — see claude-prompts/2026-11-10/002';
+
+/**
  * 1.15.0 renamed "Copy to Daili" to "Edit in Daili". The old label may appear
  * exactly once, in the sentence about copies made with the EARLIER button
  * (the history phrase below); anywhere else it is a stale label.
@@ -234,6 +245,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V115_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V115_WHY}`);
+    }
+
+    for (const must of V116_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V116_WHY}`);
     }
 
     if (id === 'privacy') {

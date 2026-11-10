@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Tøy ut · 5 min", "s": "4 dager på rad" },
             { "t": "Les 20 minutter", "s": "Mia · hver dag" },
-            { "t": "Vanne blomstene", "s": "Familiens energi +1" }
+            { "t": "Vanne blomstene", "s": "+1 stjerne til familien" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Fredag er i boks.", "t": "Turpenger til fredag", "s": "Festet · Familie" },
         { "cap": "Lørdagstur på torget", "t": "Blomster til mormor", "s": "Innkjøp · 5 av 7" },
-        { "cap": "Dag 12. Minzi er stolt.", "t": "Les 20 minutter", "s": "12 dager på rad" },
+        { "cap": "Dag 12. Enda en stjerne!", "t": "Les 20 minutter", "s": "12 dager på rad" },
         { "cap": "12 år i dag!", "t": "Emma fyller 12", "s": "I dag · selskap kl. 15" },
         { "cap": "Aldri glemt trening", "t": "Fotballtrening", "s": "17:00 · Noah · hver tir." },
         { "cap": "Handling med backup", "t": "Blåbær", "s": "Lagt til av Lena · nå" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "€0", "t": "Gratis å bruke. Ingen reklame, ingen hake." },
-        { "t": "Minzi, familiekatten, heier på dere" }
+        { "t": "En stjerne for hver fullførte dag" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Oppgaver", "p": "Gjøremål og ærender med navn på, så ingenting faller mellom to stoler.", "t": "Kaste søppel", "s": "Noah · i morgen, 08:00" },
         { "slug": "budget", "h3": "Husholdningsbudsjett", "p": "Se hva som er igjen denne måneden, hvor pengene ble av, og hvem som skylder hvem.", "t": "{amount} igjen per dag", "s": "Dagligvarer · 9 dager igjen" },
         { "slug": "cycle", "h3": "Syklus", "p": "En privat menskalender som blir på telefonen din.", "t": "Neste mens om 8–14 dager", "s": "Bare du kan se dette" },
-        { "slug": "habits", "h3": "Vaner", "p": "Små rutiner, gjort sammen. Hvert kryss gir Minzi, familiekatten deres, mer energi.", "t": "Familiens energi · 34 / 40", "s": "6 til, så drar Minzi på tur" },
+        { "slug": "habits", "h3": "Vaner", "p": "Én person om gangen, et helt år med kryss på hver vane. Hver fullførte dag gir en stjerne.", "t": "Kinotur · 34 / 40", "s": "6 stjerner til, så planlegger vi" },
         { "slug": "notes", "h3": "Notater", "p": "Raske tanker, Wi-Fi-passordet, hvem som henter mormor. Hold et notat privat eller del det med familien.", "t": "Mormor kommer lørdag kl. 15", "s": "Delt med familien" },
         { "slug": "recipes", "h3": "Oppskrifter", "p": "Ta vare på familiefavorittene, eller importer en fra en video eller et bilde. Send ingrediensene til lista med ett trykk.", "t": "Søtsur klissete tofu", "s": "13 ingredienser · Legg til i Innkjøp" },
         { "slug": "meal-plan", "h3": "Matplan", "p": "Planlegg frokost, lunsj og middag for uka, så ingen spør hva det blir til middag klokka seks.", "t": "Grønnsakskarri", "s": "Middag · mandag" },
@@ -224,13 +224,13 @@
         { "t": "Planlegg uka", "d": "Legg inn svømming for Noah på tirsdag. Det dukker opp på hver mobil i familien, i hans farge." },
         { "t": "Del handlingen", "d": "Marco er i butikken og krysser av melken. Hjemme ser du det med en gang, ingen dobbeltkjøp." },
         { "t": "Kryss av oppgavene", "d": "Noah blir ferdig med klesvasken og krysser den av. Hele familien ser hva som gjenstår." },
-        { "t": "Hold på en vane", "d": "Tøy ut i fem minutter, kryss av, og se Minzi få mer energi til neste tur." }
+        { "t": "Hold på en vane", "d": "Tøy ut i fem minutter, kryss av, og dagen er i boks: enda en stjerne til familiebelønningen." }
       ],
       "toasts": [
         { "t": "Svømming lagt til", "s": "Noah · tirsdag 16:30" },
         { "t": "Marco kjøpte melk", "s": "Innkjøp · 2 av 7" },
         { "t": "Noah tok klesvasken", "s": "Husarbeid · 1 igjen i dag" },
-        { "t": "Tøying gjort", "s": "Familieenergi +1" }
+        { "t": "Tøying gjort", "s": "+1 stjerne" }
       ],
       "pill": "Svøm 16:30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Startskjermen i Daili-appen",
       "shot-calendar": "Den felles familiekalenderen i Daili-appen",
       "shot-shopping": "En felles handleliste i Daili-appen",
-      "shot-habits": "Familiens vaner i Daili-appen",
+      "shot-habits": "Et år med fullførte dager på hver vane i Daili-appen",
       "shot-notes": "Familiens notater i Daili-appen",
       "shot-recipes": "Lagrede oppskrifter i Daili-appen",
       "shot-mealplan": "Ukens matplan i Daili-appen",
@@ -270,7 +270,6 @@
         "h3": "Widgets",
         "p": "Neste avtale, innkjøp, vaner, bursdager og hurtiglegging, rett på startskjermen.",
         "toBuy": "{count} å kjøpe",
-        "energy": "Energi {n}/{max}",
         "habits": "Vaner",
         "groceries": "Innkjøp",
         "items": ["Melk", "Egg", "Epler"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Bygg vaner sammen som familie. Hvert kryss øker familiens energi, og når linjen er fylt opp, drar Minzi på tur.",
+        "lead": "Vaner for én person om gangen og et helt år med kryss på hver vane. Hver fullførte dag gir en stjerne til familiebelønningen deres.",
         "benefits": [
           {
-            "t": "Sammen eller alene",
-            "p": "Vaner for hele familien, for noen av dere eller bare for deg."
+            "t": "Én person om gangen",
+            "p": "Bytt mellom familiemedlemmene og se vanene til hver enkelt."
           },
           {
-            "t": "Rekker som teller",
-            "p": "Se hvor mange dager på rad du har holdt det gående."
+            "t": "Et år med kryss",
+            "p": "Hver vane viser hele året, med en rute for hver dag."
           },
           {
-            "t": "En vennlig påminnelse",
-            "p": "På det tidspunktet av dagen som passer vanen."
+            "t": "Familiebelønninger",
+            "p": "Velg en belønning, som en kinotur. Når stjernene har fylt den, planlegger dere den i kalenderen."
           }
         ],
         "faq": []

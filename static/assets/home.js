@@ -250,8 +250,7 @@
     g.matchMedia().add({ pin: PIN, any: "all" }, function (ctx) {
       if (!ctx.conditions.pin) {
         // The native row: each card's phone and floating widget at their own
-        // speed as the row passes vertically (round 3). The habits widget is
-        // not a .fly: it stays on its screenshot's energy card.
+        // speed as the row passes vertically (round 3).
         cards.forEach(function (card, k) {
           var ph = card.querySelector(".par");
           if (ph) g.fromTo(ph, { yPercent: 4 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: row, start: "top bottom", end: "bottom top", scrub: 0.8 } });
@@ -602,7 +601,6 @@
     var shots = $$("[data-sx]");
     var overlays = $$("[data-ov],[data-to]");
     var bgc = $("[data-bgc]");
-    var jump = $("[data-jump]");
     var cur = 0, live = false, timer = null, shown = !document.hidden;
     if (!items.length) return;
     var conn = navigator.connection;
@@ -628,7 +626,6 @@
         restart(el, m && !still && !v);
         if (still) { el.style.opacity = m ? 1 : ""; el.style.transform = m ? "none" : ""; }
       });
-      if (jump) restart(jump, i === 3 && !still && !v);
       clearTimeout(timer);
       if (still || !live) return;
       if (!v) { next(6000); return; }
@@ -655,7 +652,6 @@
       s.addEventListener("ended", function () {
         if (k !== cur || !live) return;
         overlays.forEach(function (el) { if (mine(el, k)) { restart(el, true); el.classList.add("now"); } });
-        if (jump && k === 3) { restart(jump, true); jump.classList.add("now"); }
         next(1000);
       });
     });

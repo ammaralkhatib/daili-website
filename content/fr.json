@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Étirements · 5 min", "s": "4 jours d'affilée" },
             { "t": "Lire 20 minutes", "s": "Mia · tous les jours" },
-            { "t": "Arroser les plantes", "s": "Énergie de la famille +1" }
+            { "t": "Arroser les plantes", "s": "+1 étoile pour la famille" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Cantine de vendredi : ok !", "t": "Cantine de vendredi", "s": "Épinglé · Famille" },
         { "cap": "Marché du samedi matin", "t": "Fleurs pour Mamie", "s": "Courses · 5 sur 7" },
-        { "cap": "Jour 12. Minzi jubile.", "t": "Lire 20 minutes", "s": "12 jours d'affilée" },
+        { "cap": "Jour 12. Encore une étoile !", "t": "Lire 20 minutes", "s": "12 jours d'affilée" },
         { "cap": "12 ans aujourd'hui !", "t": "Emma fête ses 12 ans", "s": "Aujourd'hui · fête à 15h" },
         { "cap": "Pas un entraînement raté", "t": "Entraînement de foot", "s": "17h00 · Noah · le mardi" },
         { "cap": "Courses en équipe", "t": "Myrtilles", "s": "Ajouté par Lena · à l'instant" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Gratuit. Sans pub, sans piège." },
-        { "t": "Minzi, le chat de la famille, vous encourage" }
+        { "t": "Une étoile pour chaque jour réussi" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Tâches", "p": "Corvées et petites missions avec un nom dessus, pour que rien ne reste entre deux chaises.", "t": "Sortir les poubelles", "s": "Noah · demain, 8h00" },
         { "slug": "budget", "h3": "Budget", "p": "Voyez ce qu'il reste ce mois-ci, où est passé l'argent et qui doit quoi à qui.", "t": "Encore {amount} par jour", "s": "Courses · encore 9 jours" },
         { "slug": "cycle", "h3": "Cycle", "p": "Un suivi des règles privé, qui reste sur votre téléphone.", "t": "Règles dans 8–14 jours", "s": "Visible uniquement par vous" },
-        { "slug": "habits", "h3": "Habitudes", "p": "De petites routines, faites ensemble. Chaque coche donne plus d'énergie à Minzi, le chat de la famille.", "t": "Énergie de la famille · 34 / 40", "s": "Encore 6 et Minzi part en voyage" },
+        { "slug": "habits", "h3": "Habitudes", "p": "Une personne à la fois, et pour chaque habitude, une année de jours réussis. Chaque jour terminé rapporte une étoile.", "t": "Sortie cinéma · 34 / 40", "s": "Encore 6 étoiles, puis à l’agenda" },
         { "slug": "notes", "h3": "Notes", "p": "Idées en vrac, le mot de passe Wi-Fi, qui va chercher Mamie. Gardez une note pour vous ou partagez-la avec la famille.", "t": "Mamie arrive samedi à 15h", "s": "Partagé avec la famille" },
         { "slug": "recipes", "h3": "Recettes", "p": "Gardez les recettes préférées de la famille, ou importez-en une depuis une vidéo ou une photo. Envoyez les ingrédients sur votre liste en un geste.", "t": "Tofu laqué aigre-doux", "s": "13 ingrédients · Ajouter aux Courses" },
         { "slug": "meal-plan", "h3": "Menus", "p": "Planifiez petit-déjeuner, déjeuner et dîner pour la semaine : à 18h, plus personne ne demande ce qu'on mange ce soir.", "t": "Curry de légumes", "s": "Dîner · lundi" },
@@ -224,13 +224,13 @@
         { "t": "Planifiez la semaine", "d": "Ajoutez la natation de Noah le mardi. Elle apparaît sur chaque téléphone de la famille, dans sa couleur." },
         { "t": "Partagez les courses", "d": "Marco est au magasin et coche le lait. À la maison, vous le voyez aussitôt : pas d'achat en double." },
         { "t": "Cochez les tâches", "d": "Noah termine la lessive et la coche. Toute la famille voit ce qui reste à faire." },
-        { "t": "Tenez une habitude", "d": "Cinq minutes d'étirements, une coche, et Minzi gagne de l'énergie pour son prochain voyage." }
+        { "t": "Tenez une habitude", "d": "Cinq minutes d’étirements, une coche, et la journée est faite : encore une étoile pour la récompense de la famille." }
       ],
       "toasts": [
         { "t": "Natation ajoutée", "s": "Noah · mardi 16h30" },
         { "t": "Marco a pris le lait", "s": "Courses · 2 sur 7" },
         { "t": "Noah a fait la lessive", "s": "Maison · encore 1 à faire" },
-        { "t": "Étirements faits", "s": "Énergie familiale +1" }
+        { "t": "Étirements faits", "s": "+1 étoile" }
       ],
       "pill": "Nage 16h30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "L’écran d’accueil de l’app Daili",
       "shot-calendar": "L’agenda familial partagé dans l’app Daili",
       "shot-shopping": "Une liste de courses partagée dans l’app Daili",
-      "shot-habits": "Les habitudes de la famille dans l’app Daili",
+      "shot-habits": "Une année de jours réussis pour chaque habitude dans l’app Daili",
       "shot-notes": "Les notes de la famille dans l’app Daili",
       "shot-recipes": "Des recettes enregistrées dans l’app Daili",
       "shot-mealplan": "Les menus de la semaine dans l’app Daili",
@@ -270,7 +270,6 @@
         "h3": "Widgets",
         "p": "Prochain rendez-vous, courses, habitudes, anniversaires et ajout rapide, directement sur votre écran d'accueil.",
         "toBuy": "{count} à acheter",
-        "energy": "Énergie {n}/{max}",
         "habits": "Habitudes",
         "groceries": "Courses",
         "items": ["Lait", "Œufs", "Pommes"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Prenez de bonnes habitudes en famille. Chaque coche nourrit l’énergie de la famille, et quand la barre est pleine, Minzi part en voyage.",
+        "lead": "Les habitudes d’une personne à la fois, avec une année de jours réussis pour chacune. Chaque jour terminé rapporte une étoile à la récompense familiale.",
         "benefits": [
           {
-            "t": "Ensemble ou seul",
-            "p": "Des habitudes pour toute la famille, pour quelques-uns d’entre vous ou juste pour vous."
+            "t": "Une personne à la fois",
+            "p": "Passez d’un membre de la famille à l’autre et voyez les habitudes de chacun."
           },
           {
-            "t": "Des séries qui comptent",
-            "p": "Voyez combien de jours d’affilée vous avez tenu."
+            "t": "Une année de jours réussis",
+            "p": "Chaque habitude montre toute son année, une case par jour."
           },
           {
-            "t": "Un rappel en douceur",
-            "p": "Au moment de la journée qui convient à l’habitude."
+            "t": "Des récompenses en famille",
+            "p": "Choisissez une récompense, comme une sortie au cinéma. Quand les étoiles la remplissent, planifiez-la dans l’agenda."
           }
         ],
         "faq": []

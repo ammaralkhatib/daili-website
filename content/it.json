@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Stretching · 5 min", "s": "4 giorni di fila" },
             { "t": "Leggere 20 minuti", "s": "Mia · ogni giorno" },
-            { "t": "Innaffiare le piante", "s": "Energia della famiglia +1" }
+            { "t": "Innaffiare le piante", "s": "+1 stella per la famiglia" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Venerdì, mensa sistemata.", "t": "Mensa di venerdì", "s": "Fissato · Famiglia" },
         { "cap": "Sabato al mercato", "t": "Fiori per la nonna", "s": "Spesa · 5 di 7" },
-        { "cap": "Giorno 12. Minzi è fiera.", "t": "Leggere 20 minuti", "s": "12 giorni di fila" },
+        { "cap": "Giorno 12. Un’altra stella!", "t": "Leggere 20 minuti", "s": "12 giorni di fila" },
         { "cap": "Oggi compie 12 anni!", "t": "Emma compie 12 anni", "s": "Oggi · festa alle 15" },
         { "cap": "Mai saltare l'allenamento", "t": "Allenamento di calcio", "s": "17:00 · Noah · ogni martedì" },
         { "cap": "Spesa con i rinforzi", "t": "Mirtilli", "s": "Aggiunti da Lena · ora" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Gratis. Niente pubblicità, nessun trucco." },
-        { "t": "Minzi, la gatta di famiglia, fa il tifo per te" }
+        { "t": "Una stella per ogni giorno completato" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Attività", "p": "Faccende e commissioni con un nome sopra, così nessuno pensa che toccasse all'altro.", "t": "Portare fuori i rifiuti", "s": "Noah · domani, 08:00" },
         { "slug": "budget", "h3": "Bilancio", "p": "Guarda quanto resta questo mese, dove sono finiti i soldi e chi deve cosa a chi.", "t": "{amount} rimasti al giorno", "s": "Spesa · mancano 9 giorni" },
         { "slug": "cycle", "h3": "Ciclo", "p": "Un diario del ciclo privato che resta sul tuo telefono.", "t": "Mestruazioni tra 8–14 giorni", "s": "Lo vedi solo tu" },
-        { "slug": "habits", "h3": "Abitudini", "p": "Piccole routine, fatte insieme. Ogni spunta dà più energia a Minzi, la gatta di famiglia.", "t": "Energia della famiglia · 34 / 40", "s": "Ancora 6 e Minzi parte per un viaggio" },
+        { "slug": "habits", "h3": "Abitudini", "p": "Una persona alla volta, un anno di giorni fatti per ogni abitudine. Ogni giorno completato vale una stella.", "t": "Serata al cinema · 34 / 40", "s": "Ancora 6 stelle, poi si organizza" },
         { "slug": "notes", "h3": "Note", "p": "Pensieri veloci, la password del Wi-Fi, chi va a prendere la nonna. Tieni una nota per te o condividila con la famiglia.", "t": "La nonna arriva sabato alle 15", "s": "Condivisa con la famiglia" },
         { "slug": "recipes", "h3": "Ricette", "p": "Conserva le ricette preferite di famiglia o importane una da un video o da una foto. Manda gli ingredienti alla lista con un tocco.", "t": "Tofu glassato agrodolce", "s": "13 ingredienti · Aggiungi alla Spesa" },
         { "slug": "meal-plan", "h3": "Menu", "p": "Pianifica colazione, pranzo e cena per tutta la settimana, così alle sei nessuno chiede cosa c'è per cena.", "t": "Curry di verdure", "s": "Cena · lunedì" },
@@ -224,13 +224,13 @@
         { "t": "Pianifica la settimana", "d": "Aggiungi il nuoto di Noah il martedì. Compare su ogni telefono della famiglia, con il suo colore." },
         { "t": "Condividi la spesa", "d": "Marco è al supermercato e spunta il latte. A casa lo vedi subito: niente doppi acquisti." },
         { "t": "Spunta le attività", "d": "Noah finisce il bucato e lo spunta. Tutta la famiglia vede cosa resta da fare." },
-        { "t": "Coltiva un'abitudine", "d": "Cinque minuti di stretching, una spunta, e Minzi fa il pieno di energia per il prossimo viaggio." }
+        { "t": "Coltiva un'abitudine", "d": "Cinque minuti di stretching, una spunta, e la giornata è fatta: una stella in più per il premio di famiglia." }
       ],
       "toasts": [
         { "t": "Corso di nuoto aggiunto", "s": "Noah · martedì 16:30" },
         { "t": "Marco ha preso il latte", "s": "Spesa · 2 di 7" },
         { "t": "Noah ha fatto il bucato", "s": "Casa · 1 rimasta oggi" },
-        { "t": "Stretching fatto", "s": "Energia famiglia +1" }
+        { "t": "Stretching fatto", "s": "+1 stella" }
       ],
       "pill": "Nuoto 16:30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "La schermata iniziale dell’app Daili",
       "shot-calendar": "Il calendario di famiglia condiviso nell’app Daili",
       "shot-shopping": "Una lista della spesa condivisa nell’app Daili",
-      "shot-habits": "Le abitudini della famiglia nell’app Daili",
+      "shot-habits": "Un anno di giorni fatti per ogni abitudine nell’app Daili",
       "shot-notes": "Le note della famiglia nell’app Daili",
       "shot-recipes": "Ricette salvate nell’app Daili",
       "shot-mealplan": "Il menu della settimana nell’app Daili",
@@ -270,7 +270,6 @@
         "h3": "Widget",
         "p": "Prossimi impegni, spesa, abitudini, compleanni e aggiunta rapida, direttamente nella schermata Home.",
         "toBuy": "{count} da comprare",
-        "energy": "Energia {n}/{max}",
         "habits": "Abitudini",
         "groceries": "Spesa",
         "items": ["Latte", "Uova", "Mele"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Crea abitudini in famiglia. Ogni spunta aumenta l’energia della famiglia e, quando la barra è piena, Minzi parte per un viaggio.",
+        "lead": "Abitudini per una persona alla volta, con un anno di giorni fatti per ognuna. Ogni giorno completato vale una stella per un premio di famiglia.",
         "benefits": [
           {
-            "t": "Insieme o da soli",
-            "p": "Abitudini per tutta la famiglia, per alcuni di voi o solo per te."
+            "t": "Una persona alla volta",
+            "p": "Passa da un familiare all’altro e guarda le abitudini di ognuno."
           },
           {
-            "t": "Serie che contano",
-            "p": "Guarda per quanti giorni di fila non hai mollato."
+            "t": "Un anno di giorni fatti",
+            "p": "Ogni abitudine mostra tutto il suo anno, un quadratino per ogni giorno."
           },
           {
-            "t": "Un promemoria gentile",
-            "p": "All’ora del giorno più adatta all’abitudine."
+            "t": "Premi di famiglia",
+            "p": "Scegli un premio, come una serata al cinema. Quando le stelle lo riempiono, fissalo nel calendario."
           }
         ],
         "faq": []

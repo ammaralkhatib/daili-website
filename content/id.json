@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Peregangan · 5 mnt", "s": "4 hari berturut-turut" },
             { "t": "Membaca 20 menit", "s": "Dinda · setiap hari" },
-            { "t": "Siram tanaman", "s": "Energi keluarga +1" }
+            { "t": "Siram tanaman", "s": "+1 bintang untuk keluarga" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Bekal Jumat, beres.", "t": "Uang jajan hari Jumat", "s": "Disematkan · Keluarga" },
         { "cap": "Ke pasar tiap Sabtu", "t": "Bunga untuk Oma", "s": "Belanja · 5 dari 7" },
-        { "cap": "Hari ke-12. Minzi bangga.", "t": "Baca 20 menit", "s": "12 hari berturut-turut" },
+        { "cap": "Hari ke-12. Bintang lagi!", "t": "Baca 20 menit", "s": "12 hari berturut-turut" },
         { "cap": "Hari ini dia 12 tahun!", "t": "Emma genap 12 tahun", "s": "Hari ini · pesta pukul 15.00" },
         { "cap": "Nggak pernah bolos latihan", "t": "Latihan sepak bola", "s": "17.00 · Noah · tiap Selasa" },
         { "cap": "Belanja bawa bala bantuan", "t": "Blueberry", "s": "Ditambah Lena · baru saja" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "€0", "t": "Gratis dipakai. Tanpa iklan, tanpa jebakan." },
-        { "t": "Minzi, kucing keluarga, menyemangatimu" }
+        { "t": "Bintang untuk setiap hari yang selesai" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Tugas", "p": "Pekerjaan rumah dan urusan lain, masing-masing dengan nama penanggung jawabnya, jadi tak ada yang terlewat.", "t": "Buang sampah", "s": "Bayu · Besok, 08.00" },
         { "slug": "budget", "h3": "Anggaran", "p": "Lihat sisa uang bulan ini, ke mana uangnya pergi, dan siapa berutang kepada siapa.", "t": "Sisa {amount} per hari", "s": "Belanja dapur · 9 hari lagi" },
         { "slug": "cycle", "h3": "Siklus", "p": "Pelacak haid pribadi yang tetap ada di ponselmu.", "t": "Haid berikutnya dalam 8–14 hari", "s": "Hanya kamu yang bisa melihat ini" },
-        { "slug": "habits", "h3": "Kebiasaan", "p": "Rutinitas kecil, dikerjakan bersama. Setiap centang memberi Minzi, kucing keluargamu, lebih banyak energi.", "t": "Energi keluarga · 34 / 40", "s": "6 lagi dan Minzi pergi jalan-jalan" },
+        { "slug": "habits", "h3": "Kebiasaan", "p": "Lihat kebiasaan per orang, lengkap dengan setahun hari yang selesai. Setiap hari yang tuntas memberi satu bintang.", "t": "Nonton di bioskop · 34 / 40", "s": "6 bintang lagi, lalu rencanakan" },
         { "slug": "notes", "h3": "Catatan", "p": "Ide singkat, kata sandi Wi-Fi, siapa yang menjemput Nenek. Simpan catatan untuk diri sendiri atau bagikan ke keluarga.", "t": "Nenek datang Sabtu pukul 15.00", "s": "Dibagikan ke keluarga" },
         { "slug": "recipes", "h3": "Resep", "p": "Simpan resep favorit keluarga, atau impor dari video atau foto. Kirim bahannya ke daftar belanja dengan sekali ketuk.", "t": "Tahu asam manis lengket", "s": "13 bahan · Tambah ke Belanja" },
         { "slug": "meal-plan", "h3": "Rencana makan", "p": "Rencanakan sarapan, makan siang, dan makan malam untuk sepekan, jadi tak ada lagi yang bertanya jam enam sore mau makan apa.", "t": "Kari sayur", "s": "Makan malam · Senin" },
@@ -224,13 +224,13 @@
         { "t": "Rencanakan sepekan", "d": "Tambahkan renang untuk Noah hari Selasa. Langsung muncul di semua ponsel keluarga, dengan warnanya." },
         { "t": "Berbagi belanjaan", "d": "Marco sedang di toko dan mencentang susu. Di rumah kamu langsung melihatnya, tidak ada yang beli dobel." },
         { "t": "Centang tugas", "d": "Noah selesai mencuci baju dan mencentangnya. Seluruh keluarga melihat apa yang masih tersisa." },
-        { "t": "Jaga kebiasaan", "d": "Peregangan lima menit, centang, dan lihat Minzi mendapat energi untuk perjalanan berikutnya." }
+        { "t": "Jaga kebiasaan", "d": "Peregangan lima menit, centang, dan harimu selesai: satu bintang lagi untuk hadiah keluarga." }
       ],
       "toasts": [
         { "t": "Les renang ditambahkan", "s": "Noah · Selasa 16.30" },
         { "t": "Marco sudah beli susu", "s": "Belanja · 2 dari 7" },
         { "t": "Noah selesai mencuci", "s": "Rumah · sisa 1 hari ini" },
-        { "t": "Peregangan selesai", "s": "Energi keluarga +1" }
+        { "t": "Peregangan selesai", "s": "+1 bintang" }
       ],
       "pill": "Renang 16.30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Layar beranda aplikasi Daili",
       "shot-calendar": "Kalender keluarga bersama di aplikasi Daili",
       "shot-shopping": "Daftar belanja bersama di aplikasi Daili",
-      "shot-habits": "Kebiasaan keluarga di aplikasi Daili",
+      "shot-habits": "Setahun hari yang selesai di setiap kebiasaan di aplikasi Daili",
       "shot-notes": "Catatan keluarga di aplikasi Daili",
       "shot-recipes": "Resep tersimpan di aplikasi Daili",
       "shot-mealplan": "Rencana makan minggu ini di aplikasi Daili",
@@ -270,7 +270,6 @@
         "h3": "Widget",
         "p": "Acara berikutnya, belanja, kebiasaan, ulang tahun, dan tambah cepat, langsung di layar utamamu.",
         "toBuy": "{count} untuk dibeli",
-        "energy": "Energi {n}/{max}",
         "habits": "Kebiasaan",
         "groceries": "Belanja",
         "items": ["Susu", "Telur", "Apel"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Bangun kebiasaan bersama keluarga. Setiap centang menambah energi keluarga, dan saat batangnya penuh, Minzi pergi jalan-jalan.",
+        "lead": "Kebiasaan per orang, dengan setahun hari yang selesai di setiap kebiasaan. Setiap hari yang tuntas memberi bintang menuju hadiah keluarga.",
         "benefits": [
           {
-            "t": "Bersama atau sendiri",
-            "p": "Kebiasaan untuk seluruh keluarga, untuk beberapa orang, atau hanya untukmu."
+            "t": "Satu orang, satu tampilan",
+            "p": "Ganti anggota keluarga dan lihat kebiasaan setiap orang."
           },
           {
-            "t": "Rentetan yang berarti",
-            "p": "Lihat berapa hari berturut-turut kamu berhasil menjalankannya."
+            "t": "Setahun hari yang selesai",
+            "p": "Setiap kebiasaan menampilkan setahun penuh, satu kotak untuk setiap hari."
           },
           {
-            "t": "Pengingat yang lembut",
-            "p": "Pada waktu yang pas untuk kebiasaan itu."
+            "t": "Hadiah keluarga",
+            "p": "Tetapkan hadiah seperti nonton di bioskop. Saat bintangnya penuh, rencanakan di kalender."
           }
         ],
         "faq": []

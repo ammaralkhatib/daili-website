@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Rozciąganie · 5 min", "s": "4 dni z rzędu" },
             { "t": "Czytać 20 minut", "s": "Mia · codziennie" },
-            { "t": "Podlać kwiaty", "s": "Energia rodziny +1" }
+            { "t": "Podlać kwiaty", "s": "+1 gwiazdka dla rodziny" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Piątkowy obiad ogarnięty.", "t": "Na obiad w piątek", "s": "Przypięte · Rodzina" },
         { "cap": "Sobotni targ z dziećmi", "t": "Kwiaty dla babci", "s": "Zakupy · 5 z 7" },
-        { "cap": "Dzień 12. Minzi jest dumna.", "t": "Czytanie 20 minut", "s": "12 dni z rzędu" },
+        { "cap": "Dzień 12. Kolejna gwiazdka!", "t": "Czytanie 20 minut", "s": "12 dni z rzędu" },
         { "cap": "Dziś kończy 12 lat!", "t": "Emma kończy 12 lat", "s": "Dziś · przyjęcie o 15:00" },
         { "cap": "Treningu nie odpuszczamy", "t": "Trening piłki nożnej", "s": "17:00 · Noah · co wtorek" },
         { "cap": "Zakupy z pomocnikiem", "t": "Borówki", "s": "Dodała Lena · przed chwilą" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Za darmo. Bez reklam, bez haczyka." },
-        { "t": "Minzi, wasza rodzinna kotka, kibicuje wam" }
+        { "t": "Gwiazdka za każdy ukończony dzień" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Zadania", "p": "Obowiązki i sprawunki przypisane do konkretnej osoby, żeby nic nie umknęło.", "t": "Wynieść śmieci", "s": "Noah · jutro, 08:00" },
         { "slug": "budget", "h3": "Budżet", "p": "Zobacz, ile zostało w tym miesiącu, na co poszły pieniądze i kto komu jest winien.", "t": "Zostało {amount} dziennie", "s": "Zakupy spożywcze · jeszcze 9 dni" },
         { "slug": "cycle", "h3": "Cykl", "p": "Prywatny kalendarz okresu, który zostaje na twoim telefonie.", "t": "Następny okres za 8–14 dni", "s": "Widzisz to tylko ty" },
-        { "slug": "habits", "h3": "Nawyki", "p": "Małe rytuały, robione razem. Każde odhaczenie daje Minzi, waszej rodzinnej kotce, więcej energii.", "t": "Energia rodziny · 34 / 40", "s": "Jeszcze 6 i Minzi wyruszy w podróż" },
+        { "slug": "habits", "h3": "Nawyki", "p": "Nawyki jednej osoby naraz, a przy każdym nawyku cały rok zaliczonych dni. Każdy ukończony dzień daje gwiazdkę.", "t": "Wyjście do kina · 34 / 40", "s": "Jeszcze 6 gwiazdek i można planować" },
         { "slug": "notes", "h3": "Notatki", "p": "Szybkie myśli, hasło do Wi-Fi, kto odbiera babcię. Zachowaj notatkę dla siebie albo udostępnij ją rodzinie.", "t": "Babcia przyjedzie w sobotę o 15", "s": "Udostępnione rodzinie" },
         { "slug": "recipes", "h3": "Przepisy", "p": "Zachowaj ulubione przepisy rodziny albo zaimportuj nowy z filmu lub zdjęcia. Jednym dotknięciem wyślij składniki na listę.", "t": "Tofu w sosie słodko-kwaśnym", "s": "13 składników · Dodaj do Zakupów" },
         { "slug": "meal-plan", "h3": "Jadłospis", "p": "Zaplanuj śniadania, obiady i kolacje na cały tydzień, żeby nikt o szóstej nie pytał, co na kolację.", "t": "Curry warzywne", "s": "Kolacja · poniedziałek" },
@@ -224,13 +224,13 @@
         { "t": "Zaplanuj tydzień", "d": "We wtorek Noah ma basen — dodaj go. Pojawi się na każdym telefonie w rodzinie, w jego kolorze." },
         { "t": "Wspólne zakupy", "d": "Marco jest w sklepie i odhacza mleko. W domu widzisz to od razu — nic nie kupicie podwójnie." },
         { "t": "Odhaczaj zadania", "d": "Noah kończy pranie i je odhacza. Cała rodzina widzi, co jeszcze zostało." },
-        { "t": "Trzymaj się nawyku", "d": "Pięć minut rozciągania, odhaczasz — a Minzi zbiera energię na kolejną podróż." }
+        { "t": "Trzymaj się nawyku", "d": "Pięć minut rozciągania, odhaczasz i dzień zaliczony: kolejna gwiazdka do rodzinnej nagrody." }
       ],
       "toasts": [
         { "t": "Dodano basen", "s": "Noah · wtorek 16:30" },
         { "t": "Marco kupił mleko", "s": "Zakupy · 2 z 7" },
         { "t": "Noah zrobił pranie", "s": "Dom · dziś jeszcze 1" },
-        { "t": "Rozciąganie zrobione", "s": "Energia rodziny +1" }
+        { "t": "Rozciąganie zrobione", "s": "+1 gwiazdka" }
       ],
       "pill": "Basen 16:30"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Ekran główny aplikacji Daili",
       "shot-calendar": "Wspólny kalendarz rodzinny w aplikacji Daili",
       "shot-shopping": "Wspólna lista zakupów w aplikacji Daili",
-      "shot-habits": "Nawyki rodziny w aplikacji Daili",
+      "shot-habits": "Cały rok zaliczonych dni przy każdym nawyku w aplikacji Daili",
       "shot-notes": "Notatki rodziny w aplikacji Daili",
       "shot-recipes": "Zapisane przepisy w aplikacji Daili",
       "shot-mealplan": "Jadłospis na tydzień w aplikacji Daili",
@@ -270,7 +270,6 @@
         "h3": "Widżety",
         "p": "Najbliższe wydarzenia, zakupy, nawyki, urodziny i szybkie dodawanie — prosto na ekranie głównym.",
         "toBuy": "{count} do kupienia",
-        "energy": "Energia {n}/{max}",
         "habits": "Nawyki",
         "groceries": "Zakupy",
         "items": ["Mleko", "Jajka", "Jabłka"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Budujcie nawyki całą rodziną. Każde odhaczenie zwiększa energię rodziny, a gdy pasek się zapełni, Minzi wyrusza w podróż.",
+        "lead": "Nawyki jednej osoby naraz, a przy każdym nawyku cały rok zaliczonych dni. Każdy ukończony dzień daje gwiazdkę do rodzinnej nagrody.",
         "benefits": [
           {
-            "t": "Razem lub osobno",
-            "p": "Nawyki dla całej rodziny, dla kilku z was albo tylko dla ciebie."
+            "t": "Jedna osoba naraz",
+            "p": "Przełączaj między członkami rodziny i zobacz nawyki każdej osoby."
           },
           {
-            "t": "Serie, które się liczą",
-            "p": "Zobacz, ile dni z rzędu udało ci się wytrwać."
+            "t": "Rok zaliczonych dni",
+            "p": "Każdy nawyk pokazuje cały rok, jeden kwadracik na każdy dzień."
           },
           {
-            "t": "Delikatne przypomnienie",
-            "p": "O porze dnia, która pasuje do nawyku."
+            "t": "Rodzinne nagrody",
+            "p": "Wybierzcie nagrodę, np. wyjście do kina. Gdy gwiazdki ją wypełnią, zaplanujcie ją w kalendarzu."
           }
         ],
         "faq": []

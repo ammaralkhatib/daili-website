@@ -94,7 +94,7 @@
           "cards": [
             { "t": "Dehnen · 5 Min.", "s": "4 Tage in Folge" },
             { "t": "20 Minuten lesen", "s": "Mia · jeden Tag" },
-            { "t": "Blumen gießen", "s": "Familienenergie +1" }
+            { "t": "Blumen gießen", "s": "+1 Stern für die Familie" }
           ]
         },
         {
@@ -137,7 +137,7 @@
       "cards": [
         { "cap": "Freitagsessen? Erledigt.", "t": "Essensgeld für Freitag", "s": "Angeheftet · Familie" },
         { "cap": "Samstags auf den Markt", "t": "Blumen für Oma", "s": "Einkaufen · 5 von 7" },
-        { "cap": "Tag 12. Minzi ist stolz.", "t": "20 Minuten lesen", "s": "12 Tage in Folge" },
+        { "cap": "Tag 12. Wieder ein Stern!", "t": "20 Minuten lesen", "s": "12 Tage in Folge" },
         { "cap": "Heute wird sie 12!", "t": "Emma wird 12", "s": "Heute · Party um 15 Uhr" },
         { "cap": "Kein Training verpasst", "t": "Fußballtraining", "s": "17:00 · Noah · dienstags" },
         { "cap": "Einkaufen mit Verstärkung", "t": "Heidelbeeren", "s": "Von Lena · gerade eben" },
@@ -146,7 +146,7 @@
       ],
       "tiles": [
         { "big": "0 €", "t": "Kostenlos nutzbar. Keine Werbung, kein Haken." },
-        { "t": "Minzi, die Familienkatze, feuert euch an" }
+        { "t": "Ein Stern für jeden geschafften Tag" }
       ]
     },
     "day": {
@@ -162,7 +162,7 @@
         { "slug": "todos", "h3": "Aufgaben", "p": "Haushalt und Erledigungen mit Namen dran, damit keiner denkt, der andere macht es.", "t": "Müll rausbringen", "s": "Noah · morgen, 08:00" },
         { "slug": "budget", "h3": "Budget", "p": "Seht, was diesen Monat noch übrig ist, wohin das Geld gegangen ist und wer wem etwas schuldet.", "t": "Noch {amount} pro Tag", "s": "Lebensmittel · noch 9 Tage" },
         { "slug": "cycle", "h3": "Zyklus", "p": "Ein privater Periodenkalender, der auf deinem Handy bleibt.", "t": "Nächste Periode in 8–14 Tagen", "s": "Nur du kannst das sehen" },
-        { "slug": "habits", "h3": "Gewohnheiten", "p": "Kleine Routinen, gemeinsam erledigt. Jeder Haken gibt Minzi, eurer Familienkatze, mehr Energie.", "t": "Familienenergie · 34 / 40", "s": "Noch 6 und Minzi fährt auf Reisen" },
+        { "slug": "habits", "h3": "Gewohnheiten", "p": "Immer eine Person im Blick, ein ganzes Jahr voller Haken bei jeder Gewohnheit. Jeder geschaffte Tag bringt einen Stern.", "t": "Kinobesuch · 34 / 40", "s": "Noch 6 Sterne, dann planen wir" },
         { "slug": "notes", "h3": "Notizen", "p": "Schnelle Gedanken, das WLAN-Passwort, wer Oma abholt. Behaltet eine Notiz für euch oder teilt sie mit der Familie.", "t": "Oma kommt Samstag um 15 Uhr", "s": "Mit der Familie geteilt" },
         { "slug": "recipes", "h3": "Rezepte", "p": "Bewahrt eure Lieblingsrezepte auf oder importiert eines aus einem Video oder Foto. Die Zutaten landen mit einem Tipp auf eurer Liste.", "t": "Süß-saurer Knuspertofu", "s": "13 Zutaten · Zu Einkaufen hinzufügen" },
         { "slug": "meal-plan", "h3": "Essensplan", "p": "Plant Frühstück, Mittag- und Abendessen für die ganze Woche, damit um sechs keiner fragt, was es heute gibt.", "t": "Gemüsecurry", "s": "Abendessen · Montag" },
@@ -224,13 +224,13 @@
         { "t": "Die Woche planen", "d": "Tragt Schwimmen für Noah am Dienstag ein. Es erscheint auf jedem Handy der Familie, in seiner Farbe." },
         { "t": "Gemeinsam einkaufen", "d": "Marco ist im Supermarkt und hakt die Milch ab. Zu Hause seht ihr es sofort, nichts wird doppelt gekauft." },
         { "t": "Aufgaben abhaken", "d": "Noah ist mit der Wäsche fertig und hakt sie ab. Die ganze Familie sieht, was noch offen ist." },
-        { "t": "Dranbleiben", "d": "Fünf Minuten dehnen, abhaken und zusehen, wie Minzi mehr Energie für ihre nächste Reise bekommt." }
+        { "t": "Dranbleiben", "d": "Fünf Minuten dehnen, abhaken, und der Tag ist geschafft: ein Stern mehr für die Familienbelohnung." }
       ],
       "toasts": [
         { "t": "Schwimmkurs eingetragen", "s": "Noah · Dienstag 16:30" },
         { "t": "Marco hat die Milch", "s": "Einkaufen · 2 von 7" },
         { "t": "Noah: Wäsche erledigt", "s": "Haushalt · heute noch 1" },
-        { "t": "Dehnen erledigt", "s": "Familienenergie +1" }
+        { "t": "Dehnen erledigt", "s": "+1 Stern" }
       ],
       "pill": "Schwimmen"
     },
@@ -246,7 +246,7 @@
       "shot-home": "Der Startbildschirm der Daili-App",
       "shot-calendar": "Der gemeinsame Familienkalender in der Daili-App",
       "shot-shopping": "Eine gemeinsame Einkaufsliste in der Daili-App",
-      "shot-habits": "Gewohnheiten der Familie in der Daili-App",
+      "shot-habits": "Ein ganzes Jahr erledigter Tage bei jeder Gewohnheit in der Daili-App",
       "shot-notes": "Notizen der Familie in der Daili-App",
       "shot-recipes": "Gespeicherte Rezepte in der Daili-App",
       "shot-mealplan": "Der Essensplan der Woche in der Daili-App",
@@ -270,7 +270,6 @@
         "h3": "Widgets",
         "p": "Nächste Termine, Einkaufen, Gewohnheiten, Geburtstage und Schnelleingabe direkt auf dem Startbildschirm.",
         "toBuy": "{count} zu kaufen",
-        "energy": "Energie {n}/{max}",
         "habits": "Gewohnheiten",
         "groceries": "Einkaufen",
         "items": ["Milch", "Eier", "Äpfel"]
@@ -473,19 +472,19 @@
         ]
       },
       "habits": {
-        "lead": "Baut Gewohnheiten als Familie auf. Jeder Haken füllt eure Familienenergie, und ist der Balken voll, fährt Minzi auf Reisen.",
+        "lead": "Gewohnheiten für jeweils eine Person, mit einem Jahr voller Haken bei jeder Gewohnheit. Jeder geschaffte Tag bringt einen Stern für eure Belohnung.",
         "benefits": [
           {
-            "t": "Gemeinsam oder allein",
-            "p": "Gewohnheiten für die ganze Familie, für ein paar von euch oder nur für dich."
+            "t": "Immer eine Person im Blick",
+            "p": "Wechsle zwischen den Familienmitgliedern und sieh dir die Gewohnheiten jeder Person an."
           },
           {
-            "t": "Serien, die zählen",
-            "p": "Sieh, wie viele Tage in Folge du drangeblieben bist."
+            "t": "Ein Jahr voller Haken",
+            "p": "Jede Gewohnheit zeigt ihr ganzes Jahr, ein Kästchen für jeden Tag."
           },
           {
-            "t": "Eine sanfte Erinnerung",
-            "p": "Zu der Tageszeit, die zur Gewohnheit passt."
+            "t": "Familienbelohnungen",
+            "p": "Legt eine Belohnung fest, etwa einen Kinobesuch. Ist sie voller Sterne, plant ihr sie im Kalender."
           }
         ],
         "faq": []

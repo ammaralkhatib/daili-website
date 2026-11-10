@@ -18,7 +18,7 @@ import {
   PAGES, imageSize, SHOT_LOCALE, WATCH_SHOT_SOURCES, WEB_APP_URL,
   MEMBERS_COUNT, REVIEWS, HOME_ICONS, HERO_SCENES, RATING, WORKS_ICONS, MEMBER_BADGES, MEMBER_CARDS,
   MEMBER_TILES_AFTER, HOME_FAMILY, HOME_FEATURES, BUDGET_PER_DAY, BUDGET_CURRENCY, EURO_RATES,
-  HABITS_ENERGY, HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
+  HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
   FLOW_STEPS, FLOW_VIDEO_SIZE, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
@@ -661,17 +661,11 @@ function homeKit(loc) {
     }
     return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(v);
   };
-  // The energy card's centre, in % of the phone's height: the frame is 3.667 %
-  // of the phone's width on each side (home.css), the screen is the rest.
-  const frameY = 3.667 * (640 / 1390);
-  const energyAt = (frameY + (HABITS_ENERGY.top + HABITS_ENERGY.height / 2) * (100 - 2 * frameY) / 100).toFixed(2);
   /** HOME_FEATURES[i]'s floating widget, with home.day.cards[i]'s words. */
   const widget = (d, i) => {
     const card = h(`home.day.cards.${i}`);
     const t = d.amount ? fill(`home.day.cards.${i}.t`, { amount: budgetAmount() }) : card.t;
-    return d.energy
-      ? `<div class="fc energy-w" style="top:${energyAt}%" aria-hidden="true"><div class="fc-in energy"><div class="en-top"><img src="${homeImg('minzi_jump')}" alt="" width="40" height="40"><span class="fc-tx"><b>${e(t)}</b><span>${e(card.s)}</span></span></div><div class="en-bar"><div class="bar"></div></div></div></div>`
-      : `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, t, card.s, Boolean(d.done))}</div>`;
+    return `<div class="fc fly${d.done ? ' done' : ''}" aria-hidden="true">${fcIn(d.icon, d.tone, t, card.s, Boolean(d.done))}</div>`;
   };
   return { where, c, h, e, ico, ck, fcIn, phone, fill, widget };
 }
@@ -762,7 +756,7 @@ function renderHome(loc) {
   const tiles = list('home.members.tiles', MEMBER_TILES_AFTER.length);
   const tileHtml = [
     `<div class="mcard tile g-lake">${ico('cal', 'lake')}<div><div class="big">${e(tiles[0].big)}</div><b>${e(tiles[0].t)}</b></div></div>`,
-    `<div class="mcard tile g-honey"><img src="${homeImg('minzi_sit')}" alt="" width="120" height="120" loading="lazy" decoding="async"><div><b>${e(tiles[1].t)}</b></div></div>`,
+    `<div class="mcard tile g-honey">${ico('star', 'honey')}<div><b>${e(tiles[1].t)}</b></div></div>`,
   ];
   const row = [];
   cards.forEach((card, i) => {
@@ -777,9 +771,7 @@ function renderHome(loc) {
 
   // ---- start the day: every feature in one row ----
   // One card per HOME_FEATURES entry. Each widget is wider than its phone
-  // (home.css .dv .fc) and moves with its own parallax — except the habits
-  // one, which sits exactly on the screenshot's own Family-energy card, so
-  // phone and widget move as one. The row scrolls sideways by itself without
+  // (home.css .dv .fc) and moves with its own parallax. The row scrolls sideways by itself without
   // JavaScript; home.js pins it on a computer (2026-10-16/005).
   const day = list('home.day.cards', HOME_FEATURES.length);
   HOME_FEATURES.forEach((d, i) => {
@@ -794,7 +786,7 @@ function renderHome(loc) {
     const isNew = Boolean(d.newUntil) && BUILD_DATE <= d.newUntil;
     const [tag, attrs] = d.page ? ['a', ` href="${featureUrl(d.slug, loc)}" data-feature-link`] : ['article', ' tabindex="0"'];
     return `        <${tag} class="fcard g-${d.tint}" data-slug="${d.slug}"${attrs}><h3>${e(c.h3)}${isNew ? ` ${newBadge}` : ''}</h3><p>${e(c.p)}</p>
-          <div class="dv${d.energy ? ' par' : ''}">${phone(d.shot, { cls: d.energy ? '' : 'par' })}${widget(d, i)}</div></${tag}>`;
+          <div class="dv">${phone(d.shot, { cls: 'par' })}${widget(d, i)}</div></${tag}>`;
   }).join('\n');
   // Above the row: the counter and the two arrows (no progress bar since
   // 2026-10-22/004). Without JavaScript they hold their place but stay
@@ -872,9 +864,8 @@ ${dayCards}
   const tap = (i, style) => (FLOW_STEPS[i].video ? '' : `<span class="tap" data-ov="${i}" style="${style}">${homeIcon('check', 3)}</span>`);
   const pill = FLOW_STEPS[0].video ? '' : `<span class="pillev go" data-ov="0" style="left:20%;top:75.5%;width:24%">${e(h('home.flow.pill'))}</span>`;
   const flowVis = `        <div class="bgc" data-bgc style="background:${FLOW_STEPS[0].tint}"></div>
-        <div class="phone" aria-hidden="true"><div class="scr">${shots}${pill}${tap(1, 'left:11.5%;top:23.2%')}${tap(2, 'left:11.5%;top:28.5%')}${tap(3, 'left:87%;top:75%')}</div></div>
-${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" data-to="${i}" aria-hidden="true">${fcIn(FLOW_STEPS[i].toast, FLOW_STEPS[i].toastTone, t.t, t.s, false)}</div>`).join('\n')}
-        <img class="jump" data-jump src="${homeImg('minzi_jump')}" alt="" width="120" height="120" loading="lazy" decoding="async">`;
+        <div class="phone" aria-hidden="true"><div class="scr">${shots}${pill}${tap(1, 'left:11.5%;top:23.2%')}${tap(2, 'left:11.5%;top:28.5%')}${tap(3, 'left:88.2%;top:23.5%')}</div></div>
+${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" data-to="${i}" aria-hidden="true">${fcIn(FLOW_STEPS[i].toast, FLOW_STEPS[i].toastTone, t.t, t.s, false)}</div>`).join('\n')}`;
 
   // ---- every screen ----
   // The widgets, drawn after the light variants of the app's own
@@ -892,8 +883,10 @@ ${toasts.map((t, i) => `        <div class="fc toast${i === 0 ? ' go' : ''}" dat
   const wShop = `<div class="wgt wgt-s wgt-shop"><span class="ws-chip">${homeIcon('cart', 2.2)}${e(h('home.screens.widgets.groceries'))}</span><b class="ws-n">${e(fill('home.screens.widgets.toBuy', { count: num(W.toBuy) }))}</b>
             ${wgItems.slice(0, 2).map((t) => `<div class="ws-row"><i></i><span>${e(t)}</span></div>`).join('')}</div>`;
   const doneCount = W.habits.filter((r) => !r.ring).length;
-  const wHabits = `<div class="wgt wgt-m wgt-habits"><div class="wh-minzi"><img src="${homeImg('minzi_sit')}" alt="" width="120" height="120" loading="lazy" decoding="async"><span class="wh-bar"><i style="width:${Math.round((W.energy[0] / W.energy[1]) * 100)}%"></i></span><span class="wh-en">${e(fill('home.screens.widgets.energy', { n: num(W.energy[0]), max: num(W.energy[1]) }))}</span></div>
-            <div class="wh-list"><div class="wh-head"><b>${e(h('home.screens.widgets.habits'))}</b><span>${num(doneCount)}/${num(W.habits.length)}</span></div>
+  // The medium widget since Habits 3: a mint column with today's progress
+  // ring, then the rows; the header no longer repeats "x/y".
+  const wHabits = `<div class="wgt wgt-m wgt-habits"><div class="wh-side"><span class="wh-pring" style="--p:${Math.round((doneCount / W.habits.length) * 100)}%"><b>${num(doneCount)}/${num(W.habits.length)}</b></span></div>
+            <div class="wh-list"><div class="wh-head"><b>${e(h('home.screens.widgets.habits'))}</b></div>
             ${W.habits.map((r, i) => `<div class="wh-row"><span class="wh-ring${r.ring ? '' : ' done'}">${r.ring ? e(r.ring) : homeIcon('check', 3)}</span><span class="wh-name">${e(habitCards[i].t)}</span><span class="wh-av" style="background:${r.color}">${e(HOME_FAMILY[r.who].name.slice(0, 1))}</span></div>`).join('')}</div></div>`;
   const { width: ww, height: wh } = imageSize('web-');
   const bento = [

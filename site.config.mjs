@@ -1510,7 +1510,7 @@ export const HERO_SCENES = [
   { id: 'calendar', shot: 'shot-calendar', watch: 'upnext', cards: [['cal', 'lake'], ['cal', 'berry'], ['people', 'honey']] },
   { id: 'todos', shot: 'shot-todos', watch: 'todos', cards: [['todo', 'leaf'], ['todo', 'lake'], ['todo', 'berry']] },
   { id: 'shopping', shot: 'shot-shopping', watch: 'shopping', cards: [['cart', 'leaf'], ['cart', 'honey'], ['cart', 'clay']] },
-  { id: 'habits', shot: 'shot-habits', watch: 'habits', cards: [['flame', 'honey'], ['flame', 'lake'], ['paw', 'leaf']] },
+  { id: 'habits', shot: 'shot-habits', watch: null, cards: [['flame', 'honey'], ['flame', 'lake'], ['star', 'leaf']] },
   { id: 'notes', shot: 'shot-notes', watch: 'note', cards: [['note', 'berry'], ['note', 'lake'], ['note', 'honey']] },
   { id: 'birthdays', shot: 'shot-birthdays', watch: 'upnext', cards: [['cake', 'honey'], ['todo', 'leaf'], ['cake', 'berry']] },
   { id: 'meals', shot: 'shot-mealplan', watch: 'upnext', cards: [['meal', 'honey'], ['meal', 'leaf'], ['meal', 'clay']] },
@@ -1533,8 +1533,7 @@ export const RATING = { value: 4.9, source: 'Google Play', url: 'https://play.go
  * language) and is data, never translated: home.day.cards[i].slug must equal
  * it. `shot` is the screenshot, `tint` the card's ground (two neighbours never
  * share one — build.mjs throws), `icon`/`tone` the floating widget's glyph and
- * colour, `done` draws it ticked. `energy` is the habits card, whose widget is
- * laid over the screenshot's own Family-energy card (HABITS_ENERGY). `amount`
+ * colour, `done` draws it ticked. `amount`
  * fills the card's {amount} with BUDGET_PER_DAY in the page's currency.
  * `newUntil` shows the "New" badge while the build date is on or before it.
  *
@@ -1553,7 +1552,7 @@ export const HOME_FEATURES = [
   { slug: 'todos', shot: 'shot-todos', tint: 'honey', icon: 'todo', tone: 'leaf', page: true, benefits: ['people', 'bell', 'lock'] },
   { slug: 'budget', shot: 'shot-budget', tint: 'clay', icon: 'wallet', tone: 'clay', amount: true, newUntil: '2026-12-31', page: true, shot2: 'shot-budget-split', benefits: ['eye', 'repeat', 'people', 'lock'] },
   { slug: 'cycle', shot: 'shot-cycle', tint: 'berry', icon: 'drop', tone: 'berry', newUntil: '2026-12-31', page: true, benefits: ['phone', 'cal', 'bell'] },
-  { slug: 'habits', shot: 'shot-habits', tint: 'honey', tone: 'honey', energy: true, page: true, benefits: ['people', 'flame', 'bell'] },
+  { slug: 'habits', shot: 'shot-habits', tint: 'honey', icon: 'star', tone: 'honey', page: true, benefits: ['people', 'cal', 'star'] },
   { slug: 'notes', shot: 'shot-notes', tint: 'berry', icon: 'note', tone: 'berry', page: true, benefits: ['note', 'lock', 'star'] },
   { slug: 'recipes', shot: 'shot-recipes', tint: 'clay', icon: 'meal', tone: 'clay', page: true, benefits: ['play', 'cart', 'star'] },
   { slug: 'meal-plan', shot: 'shot-mealplan', tint: 'lake', icon: 'meal', tone: 'lake', page: true, benefits: ['cal', 'meal', 'cart'] },
@@ -1587,15 +1586,6 @@ export const EURO_RATES = {
 };
 
 /**
- * Where the "Family energy" card sits in shot-habits, in % of the screenshot's
- * height (top edge and height). Measured 2026-09-28 by scanning the pixels of
- * the en, de, fr, ja and ko captures: 652–653 px to 793–796 px of 1391 — the
- * same place in every locale. The habits widget is centred on it so the energy
- * card is never shown twice.
- */
-export const HABITS_ENERGY = { top: 46.9, height: 10.2 };
-
-/**
  * The drawn home-screen widgets in "On every screen" (the light variants of
  * ios/FamCanvasWidgets/*.swift). Words are home.screens.widgets.* and the
  * hero's scene cards; this is the data a widget shows that is not a word.
@@ -1605,7 +1595,6 @@ export const HABITS_ENERGY = { top: 46.9, height: 10.2 };
 export const HOME_WIDGETS = {
   next: [{ time: '16:30', color: '#4F86B0' }, { time: '18:30', color: '#2F7D4F' }],
   toBuy: 5,
-  energy: [34, 40],
   habits: [{ ring: '2/5', who: 0, color: '#A9628F' }, { ring: null, who: 4, color: '#E0A032' }, { ring: '0/1', who: 3, color: '#4F86B0' }],
 };
 
@@ -1691,7 +1680,7 @@ export const FLOW_STEPS = [
   { icon: 'cal', tone: 'lake', shot: 'shot-calendar', tint: '#E4EEF6', toast: 'cal', toastTone: 'lake', video: 'flow-calendar' },
   { icon: 'cart', tone: 'leaf', shot: 'shot-shopping', tint: '#E8F6E2', toast: 'cart', toastTone: 'leaf', video: 'flow-shopping' },
   { icon: 'todo', tone: 'leaf', shot: 'shot-todos', tint: '#EEF3E6', toast: 'todo', toastTone: 'leaf', video: 'flow-todos' },
-  { icon: 'paw', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'flame', toastTone: 'honey', video: 'flow-habits' },
+  { icon: 'flame', tone: 'honey', shot: 'shot-habits', tint: '#FAEFD6', toast: 'star', toastTone: 'honey' },
 ];
 export const FLOW_VIDEO_SIZE = { width: 590, height: 1278 };
 
@@ -1777,7 +1766,6 @@ export const SHOT_SOURCES = {
   '05-mealplan': 'shot-mealplan',
   '06-birthdays': 'shot-birthdays',
   '07-family': 'shot-family',
-  '08-habits': 'shot-habits',
   '09-notes': 'shot-notes',
   '10-recipes': 'shot-recipes',
 };
@@ -1795,6 +1783,7 @@ export const HELP_SHOT_SOURCES = {
   'budget-split': 'shot-budget-split',
   'cycle-start': 'shot-cycle',
   'start-weather': 'shot-weather',
+  'habits-what': 'shot-habits',
 };
 
 /**
@@ -1807,7 +1796,6 @@ export const WATCH_SHOT_SOURCES = {
   '1-up-next': 'shot-watch-upnext',
   '2-shopping': 'shot-watch-shopping',
   '3-todos': 'shot-watch-todos',
-  '4-habits': 'shot-watch-habits',
   '5-quick-note': 'shot-watch-note',
 };
 
