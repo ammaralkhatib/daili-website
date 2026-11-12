@@ -33,7 +33,10 @@ html.lenis,html.lenis body{height:auto}
 .home a{color:inherit;text-decoration:none}
 .home :is(h1,h2,h3){font-family:var(--sans);font-weight:700;margin:0;text-wrap:wrap}
 .home p{color:inherit}
-.home .wrap{width:min(1240px,calc(100% - 48px));max-width:none;margin:0 auto;padding-inline:0}
+/* The page width (style.css --page-max/--page-gutter), set on <html> so the
+   header pill and the footer, both outside .home, line up with it too. */
+html.landing{--page-max:1240px;--page-gutter:24px}
+.home .wrap{width:min(var(--page-max),calc(100% - 2*var(--page-gutter)));max-width:none;margin:0 auto;padding-inline:0}
 .home .h2{font-size:clamp(34px,4.6vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.02;text-align:center}
 .home .sub{font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink2);text-align:center;max-width:36ch;margin:18px auto 0}
 .home .eyebrow{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.02em;text-transform:none;padding:6px 12px;border-radius:999px;background:var(--mintT);color:var(--forest)}

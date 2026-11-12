@@ -114,7 +114,11 @@ a{color:var(--forest)}
 p{color:var(--body)}
 h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
 h3{font-weight:700}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:22px}
+/* The page's content width, read by .wrap (content and footer) and by the
+   desktop header pill, so their edges cannot drift apart. home.css sets its
+   own pair on html.landing (1240px, 24px). */
+:root{--page-max:1076px;--page-gutter:22px}
+.wrap{max-width:calc(var(--page-max) + 2*var(--page-gutter));margin:0 auto;padding-inline:var(--page-gutter)}
 /* A heading a screen reader needs and the design does not show. */
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 
@@ -152,7 +156,7 @@ h1,h2,h3,p,li,summary,figcaption{overflow-wrap:anywhere}
  * pill and the burger stay in the bar.
  * ------------------------------------------------------------------------- */
 header{position:sticky;top:0;z-index:30;padding-block-start:14px;pointer-events:none}
-.nav{pointer-events:auto;position:relative;display:flex;align-items:center;gap:6px;width:max-content;max-width:calc(100% - 24px);margin-inline:auto;padding:7px;padding-inline-start:14px;border-radius:999px;background:color-mix(in srgb,var(--card) 74%,transparent);backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);box-shadow:0 8px 30px -12px rgba(var(--shadow),.25)}
+.nav{pointer-events:auto;position:relative;display:flex;align-items:center;gap:6px;width:min(var(--page-max),calc(100% - 2*var(--page-gutter)));margin-inline:auto;padding:7px;padding-inline-start:14px;border-radius:999px;background:color-mix(in srgb,var(--card) 74%,transparent);backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);box-shadow:0 8px 30px -12px rgba(var(--shadow),.25)}
 /* The wordmark: bare lowercase "daili", the mock's Figtree 700. */
 .brand{display:flex;align-items:center;gap:8px;margin-inline-end:14px;text-decoration:none;color:var(--ink);font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:-.02em;line-height:1}
 .brand img{width:26px;height:26px;border-radius:7px;transition:transform .5s var(--ease)}
@@ -217,6 +221,11 @@ header{position:sticky;top:0;z-index:30;padding-block-start:14px;pointer-events:
 /* The menu's badges are 51 px tall (their small line is .78rem/1.4 above). */
 .dl-menu .web-btn{width:100%;height:51px}
 
+/* Desktop: the pill is as wide as the page's content (see .wrap), the brand
+   at the start and everything else pushed together to the end. */
+@media(min-width:861px){
+  .links{margin-inline-start:auto}
+}
 /* Between the burger and a wide screen, seven links in Ukrainian or Romanian
    do not fit the pill at the mock's spacing: it tightens instead. */
 @media(min-width:861px) and (max-width:1080px){
