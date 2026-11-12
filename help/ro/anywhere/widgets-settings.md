@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Alege ce arată un widget
-summary: Alege ce listă de cumpărături arată un widget și dacă arată doar sarcinile și obiceiurile tale sau ale tuturor.
-keywords: widget, setări widget, editează widgetul, listă de cumpărături, sarcini, obiceiuri, doar ale mele, toți, ecran principal
-translatedFrom: 2026-11-10
+summary: Alege ce familie sau grup arată un widget, lista lui de cumpărături și dacă arată doar sarcinile și obiceiurile tale sau ale tuturor.
+keywords: widget, setări widget, editează widgetul, reconfigurează, familie, grup, listă de cumpărături, sarcini, obiceiuri, doar ale mele, toți, ecran principal
+translatedFrom: 2026-11-13
 ---
-Widgeturile **Cumpărături**, **Sarcini** și **Obiceiuri** au setări. Fiecare widget își păstrează setările, deci două widgeturi de cumpărături pot arăta două liste.
+Fiecare widget de pe ecranul principal, în afară de **Adăugare rapidă**, are setări, iar fiecare widget și le păstrează pe ale lui.
 
 1. Ține apăsat pe widget.
-2. Pe iPhone, apasă pe editarea widgetului. Pe Android, apasă pe creion.
-3. Alege ce să arate. Pe Android, apasă apoi pe **Done**.
+2. Pe iPhone, apasă pe editarea widgetului. Pe Android 12 sau mai nou, apasă pe creion sau pe Reconfigurează. Pe Android mai vechi, setările apar o singură dată, când adaugi widgetul.
+3. Alege ce să arate. Pe Android, apasă pe **Gata**.
 
-**Cumpărături**: la **List**, alege **Most recent** (cea mai nouă listă) sau una dintre listele tale.
+**Familie sau grup** (pe Android, primul rând): **Familia activă** urmează familia deschisă în daili, sau alege o familie pe care s-o arate mereu. Dacă widgetul scrie **Atinge pentru a încărca**, atinge-l.
 
-**Sarcini**: la **Show**, alege **Mine** sau **Everyone**.
+Un widget pentru altă familie îi arată numele, iar o atingere deschide daili în familia aceea.
 
-**Obiceiuri**: la **Show**, alege **Family** sau **Only mine**. Inelul de progres numără aceleași obiceiuri.
+**Cumpărături**: la **Listă**, alege **Cea mai recentă** sau una dintre listele tale.
 
-Un widget arată mereu familia sau grupul activ în daili — nu poți alege o familie pentru fiecare widget.
+**Sarcini**: la **Afișează**, alege **Ale mele** sau **Toată lumea**.
 
-> Note: Deocamdată aceste setări sunt în engleză. Pe iPhone, setările și bifarea pe widget au nevoie de iOS 17 sau mai nou.
+**Obiceiuri**: la **Afișează**, alege **Familie** sau **Doar ale mele**.
+
+Widgeturile de pe ecranul de blocare, **Adăugare rapidă** și ceasul urmează mereu familia activă.
+
+> Note: Pe iPhone, setările și bifarea pe widget au nevoie de iOS 17 sau mai nou.

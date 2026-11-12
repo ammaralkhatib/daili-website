@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Zásoby pred menštruáciou
 summary: Pár dní pred menštruáciou si pridaj vložky alebo iné zásoby do nákupného zoznamu, ktorý vidíš len ty.
 keywords: zásoby, vložky, tampóny, menštruačné nohavičky, lieky proti bolesti, nákupný zoznam, súkromný zoznam, pred menštruáciou
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Pár dní pred tým, ako môže začať ďalšia menštruácia, sa ťa obrazovka Cyklus môže opýtať: „Menštruácia môže čoskoro začať. Potrebuješ niečo?“
 
@@ -16,4 +16,4 @@ Pár dní pred tým, ako môže začať ďalšia menštruácia, sa ťa obrazovka
 
 Pridajú sa len odškrtnuté položky, a to do zoznamu, ktorý vidíš len ty.
 
-Ťuknutím na × na karte ju skryješ do nabudúce. Ak ju nechceš vôbec, vypni **Navrhovať zásoby pred menštruáciou** v časti **Nastavenia cyklu**.
+Ťuknutím na × na karte ju skryješ do nabudúce. Ak ju nechceš vôbec, vypni **Navrhovať zásoby pred menštruáciou** v časti **Pripomienky** v **Nastavenia cyklu**.

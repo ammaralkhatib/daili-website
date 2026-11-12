@@ -3,7 +3,7 @@ id: habits-reminders
 title: Recordatorios de hábitos
 summary: Recibe un empujoncito a la hora que elijas, o uno por cada vez de un contador, y marca el hábito directamente desde la notificación.
 keywords: recordatorio, notificación, empujoncito, alarma, hora, recordatorio de hábito, recuérdame, cada vez, contador, hecho
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Un empujoncito en el momento justo hace que un hábito sea más fácil de mantener.
 
@@ -14,7 +14,7 @@ Un empujoncito en el momento justo hace que un hábito sea más fácil de manten
 3. Un contador puede avisarte **Una vez al día** o **Cada vez**: hasta 8 veces, y los avisos paran cuando llegas a la cifra.
 4. Toca **Empezar hábito**, o **Guardar** si estás cambiando uno.
 
-Cuando llegue el recordatorio, toca **Hecho** para marcar el hábito sin abrir daili. Un contador necesita que se abra daili, para que puedas contar.
+Cuando llegue el recordatorio, toca **Hecho** para marcar el hábito sin abrir daili. O toca el propio recordatorio: tus hábitos se abren en ese hábito, listo para marcar. Un contador necesita esto, porque **Hecho** no puede contar.
 
 En un hábito **Cada uno**, todos empiezan con la misma hora. Después, quien lo creó o un admin puede cambiar su propia hora.
 

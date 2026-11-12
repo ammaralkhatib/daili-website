@@ -3,7 +3,7 @@ id: habits-reminders
 title: Rappels d'habitudes
 summary: Reçois un petit rappel à l'heure que tu choisis, ou un à chaque fois pour un compteur, et coche l'habitude directement depuis la notification.
 keywords: rappel, notification, coup de pouce, alarme, heure, rappel d'habitude, me rappeler, à chaque fois, compteur, terminé
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Un petit rappel au bon moment rend une habitude plus facile à tenir.
 
@@ -14,7 +14,7 @@ Un petit rappel au bon moment rend une habitude plus facile à tenir.
 3. Un compteur peut te rappeler **Une fois par jour** ou **À chaque fois** : jusqu'à 8 fois, et les rappels s'arrêtent dès que tu atteins le nombre.
 4. Touche **Démarrer l'habitude**, ou **Enregistrer** si tu en modifies une.
 
-Quand le rappel arrive, touche **Terminé** pour cocher l'habitude sans ouvrir daili. Un compteur a besoin que daili s'ouvre, pour que tu puisses compter.
+Quand le rappel arrive, touche **Terminé** pour cocher l'habitude sans ouvrir daili. Ou touche le rappel lui-même : tes habitudes s'ouvrent sur cette habitude, prête à être cochée. Un compteur en a besoin, car **Terminé** ne peut pas compter.
 
 Dans une habitude **Chacun de nous**, tout le monde commence avec la même heure. Ensuite, la personne qui l'a créée ou un admin peut changer sa propre heure.
 

@@ -3,7 +3,7 @@ id: budget-bills
 title: Regninger, påmindelser og budgetadvarsler
 summary: Få en påmindelse, før en regning forfalder, se regninger i kalenderen, og få besked, når et budget næsten er brugt op.
 keywords: regning, regninger, forfald, forfalden, påmindelse, husleje, advarsel, grænse, kommende, kalender, notifikation
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 En regning er en udgift, du stadig skal betale, f.eks. huslejen.
 
@@ -16,7 +16,7 @@ Regninger vises også i kalenderen. Vil du skjule dem, så slå **Regninger** fr
 
 Budgetadvarsler kommer ved 80 % og 100 % af grænsen, og penge, der er flyttet over fra sidste måned, tæller med.
 
-![Skærmen Notifikationer med kontakterne Påmindelser om regninger og Budgetadvarsler.](notifications-choose)
+![Skærmen Notifikationer med kontakten Budgetadvarsler øverst, over Ændringer i familien.](notifications-choose)
 
 Slå dem fra i **Indstillinger** → **Notifikationer**: **Påmindelser om regninger** og **Budgetadvarsler**.
 

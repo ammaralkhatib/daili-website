@@ -3,7 +3,7 @@ id: budget-bills
 title: Räkningar, påminnelser och budgetvarningar
 summary: Få en påminnelse innan en räkning ska betalas, se räkningar i kalendern och få veta när en budget nästan är slut.
 keywords: räkning, räkningar, förfallodag, försenad, påminnelse, hyra, varning, gräns, kommande, kalender, avisering
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 En räkning är en utgift som du fortfarande ska betala, till exempel hyran.
 
@@ -16,7 +16,7 @@ Räkningar visas också i kalendern. Vill du dölja dem slår du av **Räkningar
 
 Budgetvarningar kommer vid 80 % och 100 % av gränsen, och pengar som flyttats över från förra månaden räknas med.
 
-![Skärmen Aviseringar med reglagen Påminnelser om räkningar och Budgetvarningar.](notifications-choose)
+![Skärmen Aviseringar med reglaget Budgetvarningar högst upp, ovanför Ändringar i familjen.](notifications-choose)
 
 Stäng av dem i **Inställningar** → **Aviseringar**: **Påminnelser om räkningar** och **Budgetvarningar**.
 

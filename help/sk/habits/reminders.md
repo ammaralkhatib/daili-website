@@ -3,7 +3,7 @@ id: habits-reminders
 title: Pripomienky návykov
 summary: Dostaň pripomienku v čase, ktorý si vyberieš, alebo pri každom započítaní, a odškrtni návyk priamo z upozornenia.
 keywords: pripomienka, upozornenie, pripomenutie, budík, čas, pripomienka návyku, pripomenúť, zakaždým, počítadlo, hotovo
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Pripomienka v správnom čase uľahčí dodržať návyk.
 
@@ -14,7 +14,7 @@ Pripomienka v správnom čase uľahčí dodržať návyk.
 3. Počítadlo môže pripomínať **Raz denne** alebo **Zakaždým**: najviac 8-krát a pripomienky prestanú, keď dosiahneš počet.
 4. Ťukni na **Začať návyk**, alebo na **Uložiť**, ak nejaký meníš.
 
-Keď pripomienka príde, ťukni na **Hotovo** a návyk odškrtneš bez otvárania daili. Pri počítadle sa daili musí otvoriť, aby sa dalo počítať.
+Keď pripomienka príde, ťukni na **Hotovo** a návyk odškrtneš bez otvárania daili. Alebo ťukni na samotnú pripomienku: návyky sa otvoria priamo pri tom návyku, pripravené na odškrtnutie. Počítadlo to potrebuje, lebo **Hotovo** počítať nevie.
 
 Pri návyku **Každý z nás** začínajú všetci s rovnakým časom. Neskôr môže autor návyku alebo správca zmeniť svoj čas.
 

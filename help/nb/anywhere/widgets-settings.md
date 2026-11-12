@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Velg hva en widget viser
-summary: Velg hvilken handleliste en widget viser, og om den bare viser dine oppgaver og vaner eller alles.
-keywords: widget, widgetinnstillinger, rediger widget, handleliste, oppgaver, vaner, bare mine, alle, hjem-skjerm
-translatedFrom: 2026-11-10
+summary: Velg hvilken familie eller gruppe en widget viser, hvilken handleliste, og om den bare viser dine oppgaver og vaner eller alles.
+keywords: widget, widgetinnstillinger, rediger widget, konfigurer på nytt, familie, gruppe, handleliste, oppgaver, vaner, bare mine, alle, hjem-skjerm
+translatedFrom: 2026-11-13
 ---
-Widgetene **Innkjøp**, **Oppgaver** og **Vaner** har innstillinger. Hver widget husker sine egne, så to innkjøpswidgeter kan vise to lister.
+Alle widgetene på Hjem-skjermen unntatt **Legg til raskt** har innstillinger, og hver widget husker sine egne.
 
 1. Hold fingeren på widgeten.
-2. På iPhone trykker du på rediger widget. På Android trykker du på blyanten.
-3. Velg hva den skal vise. På Android trykker du så på **Done**.
+2. På iPhone trykker du på **Rediger widget**. På Android 12 eller nyere trykker du på blyanten, eller på Konfigurer på nytt. Eldre Android viser innstillingene én gang, når du legger til widgeten.
+3. Velg hva den skal vise. På Android trykker du så på **Ferdig**.
 
-**Innkjøp**: under **List** velger du **Most recent** (den nyeste listen) eller en av listene dine.
+**Familie eller gruppe** (på Android den første raden): **Aktiv familie** følger familien som er åpen i daili, eller du velger én familie som alltid skal vises. Står det **Trykk for å laste inn** på widgeten, trykker du på den.
 
-**Oppgaver**: under **Show** velger du **Mine** eller **Everyone**.
+En widget for en annen familie viser navnet på familien, og et trykk åpner daili der.
 
-**Vaner**: under **Show** velger du **Family** eller **Only mine**. Fremdriftsringen teller de samme vanene.
+**Innkjøp**: under **Liste** velger du **Nyeste** eller en av listene dine.
 
-En widget viser alltid familien eller gruppen som er aktiv i daili – du kan ikke velge familie per widget.
+**Oppgaver**: under **Vis** velger du **Mine** eller **Alle**.
 
-> Note: Innstillingene er på engelsk inntil videre. På iPhone krever innstillingene og avkryssing på widgeten iOS 17 eller nyere.
+**Vaner**: under **Vis** velger du **Familie** eller **Bare mine**.
+
+Widgeter på låseskjermen, **Legg til raskt** og klokken følger alltid den aktive familien.
+
+> Note: På iPhone krever innstillingene og avkryssing på widgeten iOS 17 eller nyere.

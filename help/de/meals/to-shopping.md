@@ -5,7 +5,7 @@ summary: Setz alles, was ein Rezept oder eine ganze Woche Essen braucht, in eine
 keywords: zutaten, einkaufsliste, lebensmittel, einkauf, auf die liste, rezept, essensplan, kaufen
 tipTitle: Vom Essensplan zur Einkaufsliste
 tipBody: Plane das Essen der Woche und setz dann alle Zutaten in einem Rutsch auf deine Einkaufsliste.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Nie mehr Zutaten von Hand abschreiben.
 
@@ -17,5 +17,7 @@ Nie mehr Zutaten von Hand abschreiben.
 4. Tippe unten auf den Button, zum Beispiel **3 Artikel hinzufügen**.
 
 Tippe in der Meldung auf **Liste öffnen**, um sie zu sehen.
+
+**Alle zur Liste** unter den Zutaten eines Rezepts macht dasselbe. Hast du die Portionen geändert, kommen die neuen Mengen auf die Liste.
 
 > Note: Aus dem Essensplan bringen nur Mahlzeiten mit Rezept Zutaten mit. Mahlzeiten ohne Rezept haben keine.

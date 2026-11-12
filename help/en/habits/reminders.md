@@ -7,7 +7,7 @@ keywords: reminder, notification, nudge, alarm, time, habit reminder, remind me,
 routes: /habits/:id
 tryIt: /habits
 since: 1.6.0
-updated: 2026-10-16
+updated: 2026-11-13
 media: habits-reminders
 order: 8
 related: habits-create, habits-tick
@@ -21,7 +21,7 @@ A nudge at the right time makes a habit easier to keep.
 3. A counter can remind **Once a day** or **Each time**: up to 8 times, and they stop once you reach the count.
 4. Tap **Start habit**, or **Save** if you're changing one.
 
-When the reminder comes, tap **Done** to tick the habit without opening daili. A counter needs daili to open, so you can count.
+When the reminder comes, tap **Done** to tick the habit without opening daili. Or tap the reminder itself: your habits open at that habit, ready to tick. A counter needs this, because **Done** can't count.
 
 In an **Each of us** habit, everyone starts with the same time. Later, its maker or an admin can change their own time.
 

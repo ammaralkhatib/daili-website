@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Choisir ce que montre un widget
-summary: Choisis la liste de courses d'un widget, et s'il montre seulement tes tâches et habitudes ou celles de tout le monde.
-keywords: widget, réglages du widget, modifier le widget, liste de courses, tâches, habitudes, seulement les miennes, tout le monde, écran d’accueil
-translatedFrom: 2026-11-10
+summary: Choisis la famille ou le groupe d'un widget, sa liste de courses, et s'il montre seulement tes tâches et habitudes ou celles de tout le monde.
+keywords: widget, réglages du widget, modifier le widget, reconfigurer, famille, groupe, liste de courses, tâches, habitudes, seulement les miennes, tout le monde, écran d’accueil
+translatedFrom: 2026-11-13
 ---
-Les widgets **Courses**, **Tâches** et **Habitudes** ont des réglages. Chaque widget garde les siens, donc deux widgets de courses peuvent montrer deux listes.
+Chaque widget de l'écran d'accueil, sauf **Ajout rapide**, a des réglages, et chaque widget garde les siens.
 
 1. Garde le doigt appuyé sur le widget.
-2. Sur iPhone, touche modifier le widget. Sur Android, touche le crayon.
-3. Choisis ce qu’il montre. Sur Android, touche ensuite **Done**.
+2. Sur iPhone, touche **Modifier le widget**. Sur Android 12 ou plus récent, touche le crayon, ou Reconfigurer. Les anciennes versions d'Android montrent les réglages une seule fois, quand tu ajoutes le widget.
+3. Choisis ce qu’il montre. Sur Android, touche **Terminé**.
 
-**Courses** : sous **List**, choisis **Most recent** (la liste la plus récente) ou une de tes listes.
+**Famille ou groupe** (sur Android, la première ligne) : **Famille active** suit la famille ouverte dans daili, ou choisis une famille à toujours montrer. Si le widget affiche **Touche pour charger**, touche-le.
 
-**Tâches** : sous **Show**, choisis **Mine** ou **Everyone**.
+Un widget d'une autre famille affiche son nom, et le toucher ouvre daili dans cette famille.
 
-**Habitudes** : sous **Show**, choisis **Family** ou **Only mine**. L'anneau de progression compte les mêmes habitudes.
+**Courses** : sous **Liste**, choisis **La plus récente** ou une de tes listes.
 
-Un widget montre toujours la famille ou le groupe actif dans daili — on ne peut pas choisir une famille par widget.
+**Tâches** : sous **Afficher**, choisis **À moi** ou **Tout le monde**.
 
-> Note: Ces réglages sont en anglais pour l'instant. Sur iPhone, les réglages et les coches sur le widget demandent iOS 17 ou plus récent.
+**Habitudes** : sous **Afficher**, choisis **Famille** ou **Seulement les miennes**.
+
+Les widgets de l'écran verrouillé, **Ajout rapide** et la montre suivent toujours la famille active.
+
+> Note: Sur iPhone, les réglages et les coches sur le widget demandent iOS 17 ou plus récent.

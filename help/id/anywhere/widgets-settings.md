@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Pilih apa yang ditampilkan widget
-summary: Pilih daftar belanja yang ditampilkan widget, dan apakah widget hanya menampilkan tugas dan kebiasaan Anda atau milik semua orang.
-keywords: widget, pengaturan widget, edit widget, daftar belanja, tugas, kebiasaan, hanya milik saya, semua, layar utama
-translatedFrom: 2026-11-10
+summary: Pilih keluarga atau grup yang ditampilkan widget, daftar belanjanya, dan apakah widget hanya menampilkan tugas dan kebiasaan Anda atau milik semua orang.
+keywords: widget, pengaturan widget, edit widget, konfigurasi ulang, keluarga, grup, daftar belanja, tugas, kebiasaan, hanya milik saya, semua, layar utama
+translatedFrom: 2026-11-13
 ---
-Widget **Belanja**, **Tugas**, dan **Kebiasaan** punya pengaturan. Setiap widget menyimpan pengaturannya sendiri, jadi dua widget belanja bisa menampilkan dua daftar.
+Setiap widget layar utama kecuali **Tambah cepat** punya pengaturan, dan setiap widget menyimpan pengaturannya sendiri.
 
 1. Tekan lama widget-nya.
-2. Di iPhone, ketuk edit widget. Di Android, ketuk ikon pensil.
-3. Pilih apa yang ditampilkan. Di Android, lalu ketuk **Done**.
+2. Di iPhone, ketuk edit widget. Di Android 12 atau lebih baru, ketuk ikon pensil, atau Konfigurasi ulang. Di Android yang lebih lama, pengaturan muncul sekali, saat Anda menambahkan widget.
+3. Pilih apa yang ditampilkan. Di Android, ketuk **Selesai**.
 
-**Belanja**: di **List**, pilih **Most recent** (daftar terbaru) atau salah satu daftar Anda.
+**Keluarga atau grup** (di Android, baris pertama): **Keluarga aktif** mengikuti keluarga yang terbuka di daili, atau pilih satu keluarga agar selalu tampil. Jika widget bertuliskan **Ketuk untuk memuat**, ketuk widget itu.
 
-**Tugas**: di **Show**, pilih **Mine** atau **Everyone**.
+Widget untuk keluarga lain menampilkan nama keluarganya, dan ketukan membuka daili di keluarga itu.
 
-**Kebiasaan**: di **Show**, pilih **Family** atau **Only mine**. Cincin progres menghitung kebiasaan yang sama.
+**Belanja**: di **Daftar**, pilih **Terbaru** atau salah satu daftar Anda.
 
-Widget selalu menampilkan keluarga atau grup yang sedang aktif di daili — Anda tidak bisa memilih keluarga per widget.
+**Tugas**: di **Tampilkan**, pilih **Milik saya** atau **Semua orang**.
 
-> Note: Untuk sementara, pengaturan ini berbahasa Inggris. Di iPhone, pengaturan dan centang di widget butuh iOS 17 atau lebih baru.
+**Kebiasaan**: di **Tampilkan**, pilih **Keluarga** atau **Hanya milik saya**.
+
+Widget layar kunci, **Tambah cepat**, dan jam tangan selalu mengikuti keluarga yang aktif.
+
+> Note: Di iPhone, pengaturan dan centang di widget butuh iOS 17 atau lebih baru.

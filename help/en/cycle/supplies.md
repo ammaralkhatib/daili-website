@@ -7,7 +7,7 @@ keywords: supplies, pads, tampons, period underwear, pain relief, shopping list,
 routes: /lists/supplies
 tryIt: /cycle
 since: 1.11.0
-updated: 2026-10-16
+updated: 2026-11-13
 media: cycle-supplies
 order: 4
 related: cycle-start, cycle-privacy
@@ -23,4 +23,4 @@ A few days before your next period may start, the Cycle screen can ask: "Your pe
 
 Only the items you ticked are added, to a list only you can see.
 
-Tap × on the card to hide it until next time. To stop it, switch off **Suggest supplies before my period** in **Cycle settings**.
+Tap × on the card to hide it until next time. To stop it, switch off **Suggest supplies before my period** under **Reminders** in **Cycle settings**.

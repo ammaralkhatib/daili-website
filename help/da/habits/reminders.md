@@ -3,7 +3,7 @@ id: habits-reminders
 title: Påmindelser om vaner
 summary: Få et skub på et tidspunkt, du vælger, eller ét for hver gang, og sæt flueben direkte fra notifikationen.
 keywords: påmindelse, notifikation, skub, alarm, tidspunkt, vanepåmindelse, påmind mig, hver gang, tæller, færdig
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Et skub på det rigtige tidspunkt gør det lettere at holde fast i en vane.
 
@@ -14,7 +14,7 @@ Et skub på det rigtige tidspunkt gør det lettere at holde fast i en vane.
 3. En tæller kan minde dig **Én gang om dagen** eller **Hver gang**: op til 8 gange, og påmindelserne stopper, når du når antallet.
 4. Tryk på **Start vanen**, eller på **Gem**, hvis du ændrer en.
 
-Når påmindelsen kommer, trykker du på **Færdig** for at sætte flueben uden at åbne daili. En tæller skal åbne daili, så du kan tælle.
+Når påmindelsen kommer, trykker du på **Færdig** for at sætte flueben uden at åbne daili. Eller tryk på selve påmindelsen: dine vaner åbner ved den vane, klar til at sætte flueben. En tæller har brug for det, fordi **Færdig** ikke kan tælle.
 
 I en vane med **Hver for sig** starter alle med det samme tidspunkt. Senere kan den, der oprettede vanen, eller en admin ændre sit eget tidspunkt.
 

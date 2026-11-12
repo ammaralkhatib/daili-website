@@ -3,7 +3,7 @@ id: budget-bills
 title: Bollette, promemoria e avvisi del bilancio
 summary: Ricevi un promemoria prima della scadenza di una bolletta, vedi le bollette nel calendario e scopri quando un bilancio è quasi esaurito.
 keywords: bolletta, bollette, scadenza, scaduta, promemoria, affitto, avviso, limite, in arrivo, calendario, notifica
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Una bolletta è una spesa che devi ancora pagare, come l'affitto.
 
@@ -16,7 +16,7 @@ Le bollette compaiono anche nel calendario. Per nasconderle, disattiva **Bollett
 
 Gli avvisi del bilancio arrivano all'80% e al 100% del limite, contando i soldi spostati dal mese scorso.
 
-![La schermata Notifiche, con gli interruttori Promemoria delle bollette e Avvisi del bilancio.](notifications-choose)
+![La schermata Notifiche con l'interruttore Avvisi del bilancio in alto, sopra Cambiamenti in famiglia.](notifications-choose)
 
 Disattivali in **Impostazioni** → **Notifiche**: **Promemoria delle bollette** e **Avvisi del bilancio**.
 

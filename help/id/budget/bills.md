@@ -3,7 +3,7 @@ id: budget-bills
 title: Tagihan, pengingat, dan peringatan anggaran
 summary: Dapatkan pengingat sebelum tagihan jatuh tempo, lihat tagihan di kalender, dan ketahui saat anggaran hampir habis.
 keywords: tagihan, jatuh tempo, terlambat, pengingat, sewa, kontrakan, peringatan, batas, akan datang, kalender, notifikasi
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Tagihan adalah pengeluaran yang masih harus Anda bayar, seperti sewa rumah.
 
@@ -16,7 +16,7 @@ Tagihan juga muncul di kalender. Untuk menyembunyikannya, matikan **Tagihan** di
 
 Peringatan anggaran datang pada 80% dan 100% dari batas, termasuk uang yang dipindahkan dari bulan lalu.
 
-![Layar Notifikasi, dengan tombol Pengingat tagihan dan Peringatan anggaran.](notifications-choose)
+![Layar Notifikasi dengan tombol Peringatan anggaran di atas, di atas Perubahan keluarga.](notifications-choose)
 
 Matikan di **Pengaturan** → **Notifikasi**: **Pengingat tagihan** dan **Peringatan anggaran**.
 

@@ -3,7 +3,7 @@ id: habits-reminders
 title: Alışkanlık hatırlatmaları
 summary: Seçtiğin saatte ya da her sayım için bir hatırlatma al ve alışkanlığı doğrudan bildirimden işaretle.
 keywords: hatırlatma, bildirim, dürtme, alarm, saat, alışkanlık hatırlatması, bana hatırlat, her seferinde, sayaç, tamamlandı
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Doğru zamanda gelen küçük bir hatırlatma, alışkanlığı sürdürmeyi kolaylaştırır.
 
@@ -14,7 +14,7 @@ Doğru zamanda gelen küçük bir hatırlatma, alışkanlığı sürdürmeyi kol
 3. Bir sayaç **Günde bir kez** ya da **Her seferinde** hatırlatabilir: en fazla 8 kez; sayıya ulaşınca hatırlatmalar durur.
 4. **Alışkanlığı başlat** düğmesine ya da birini değiştiriyorsan **Kaydet** düğmesine dokun.
 
-Hatırlatma geldiğinde, daili'yi açmadan alışkanlığı işaretlemek için **Tamamlandı** seçeneğine dokun. Sayaçlı bir alışkanlıkta sayabilmen için daili'nin açılması gerekir.
+Hatırlatma geldiğinde, daili'yi açmadan alışkanlığı işaretlemek için **Tamamlandı** seçeneğine dokun. Ya da hatırlatmanın kendisine dokun: alışkanlıkların o alışkanlıkta, işaretlemeye hazır açılır. Sayaçlı bir alışkanlıkta bu gerekir, çünkü **Tamamlandı** sayamaz.
 
 **Her birimiz** alışkanlığında herkes aynı saatle başlar. Sonra alışkanlığı oluşturan kişi ya da bir yönetici kendi saatini değiştirebilir.
 

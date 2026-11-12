@@ -5,7 +5,7 @@ summary: Pridaj všetko, čo recept alebo celý týždeň jedál potrebuje, do n
 keywords: suroviny, nákupný zoznam, potraviny, nákup, pridať do zoznamu, recept, jedálniček, kúpiť
 tipTitle: Z jedálnička do nákupného zoznamu
 tipBody: Naplánuj jedlá na týždeň a potom daj všetky ich suroviny do nákupného zoznamu naraz.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Už žiadne ručné prepisovanie surovín.
 
@@ -17,5 +17,7 @@ Už žiadne ručné prepisovanie surovín.
 4. Ťukni na tlačidlo dole, napríklad **Pridať 3 položky**.
 
 Ťukni v správe na **Otvoriť zoznam** a uvidíš ich.
+
+**Pridať všetko do zoznamu** pod surovinami receptu urobí to isté. Ak si zmenil počet porcií, do zoznamu pôjdu nové množstvá.
 
 > Note: Z jedálnička prinesú suroviny len jedlá z receptu. Jedlá bez receptu žiadne nemajú.

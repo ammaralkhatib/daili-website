@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Perlengkapan sebelum haid
 summary: Beberapa hari sebelum haid, tambahkan pembalut atau perlengkapan lain ke daftar belanja yang hanya Anda lihat.
 keywords: perlengkapan, pembalut, tampon, celana dalam haid, pereda nyeri, daftar belanja, daftar pribadi, sebelum haid
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Beberapa hari sebelum haid berikutnya mungkin dimulai, layar Siklus bisa bertanya: "Haid Anda mungkin segera datang. Perlu sesuatu?"
 
@@ -16,4 +16,4 @@ Beberapa hari sebelum haid berikutnya mungkin dimulai, layar Siklus bisa bertany
 
 Hanya item yang Anda centang yang ditambahkan, ke daftar yang hanya bisa Anda lihat.
 
-Ketuk × di kartu untuk menyembunyikannya sampai lain kali. Untuk menghentikannya, matikan **Sarankan perlengkapan sebelum haid** di **Pengaturan siklus**.
+Ketuk × di kartu untuk menyembunyikannya sampai lain kali. Untuk menghentikannya, matikan **Sarankan perlengkapan sebelum haid** di bawah **Pengingat** di **Pengaturan siklus**.

@@ -3,17 +3,19 @@ id: cycle-start
 title: Suis tes règles avec Cycle
 summary: Note tes règles et vois quand les prochaines pourraient arriver. Privé : personne dans ta famille ne le voit.
 keywords: cycle, règles, menstruations, noter, prévision, prochaines règles, règles commencées, flux, privé
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-13
 ---
 Cycle reste désactivé tant que tu ne l'actives pas, et il est gratuit. Personne dans ta famille ne voit ton Cycle, ni même que tu l'utilises.
 
-1. Ouvre **Paramètres**, touche **Cycle**, puis **Commencer**. Ou touche la tuile **Cycle** estompée en mode modification de l'accueil, ou va dans **Paramètres** → **Écran d'accueil** → **Cycle**.
+1. Ouvre **Paramètres**, touche **Cycle**, puis **Commencer**.
 2. Choisis le jour où tes dernières règles ont commencé et tes durées habituelles.
 3. Quand tes règles commencent, touche **Règles commencées**. Avec **Commencées plus tôt ?**, tu peux marquer des jours antérieurs.
-4. Pendant tes règles, touche **Léger**, **Moyen** ou **Abondant**. **Symptômes & humeur** ouvre la journée.
+4. Pendant tes règles, touche **Léger**, **Moyen** ou **Abondant** sur la carte. **Symptômes & humeur** ouvre la journée.
 5. C'est terminé ? Touche **C'est fini** et choisis le dernier jour. Les jours entre les deux comptent aussi.
 
-![La carte Cycle au jour 18 : « Prochaines règles vers le 26 oct. – 30 oct. » et le bouton Règles commencées. Aujourd'hui est entouré dans le mois en dessous.](cycle-start)
+![La carte Cycle au jour 18, avec un anneau de points, « Prochaines règles vers le 23 nov. – 27 nov. » et le bouton Règles commencées. Aujourd'hui est entouré dans le mois en dessous.](cycle-start)
+
+L'anneau montre un point par jour du cycle ; ce que tu as noté aujourd'hui s'affiche sur la carte.
 
 Tant que tu n'as pas indiqué la fin, Cycle compte tes règles sur ta durée habituelle. Les prochaines règles s'affichent sous forme de plage de dates, jamais d'un jour exact.
 

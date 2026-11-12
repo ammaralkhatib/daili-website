@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Listy zakupów: dodawanie, odhaczanie, czyszczenie
-summary: Jedna lista zakupów dla całej rodziny. Dodawaj rzeczy, odhaczaj je w sklepie i usuwaj to, co już kupione.
-keywords: zakupy, spożywcze, lista zakupów, kupić, odhacz, zaznacz, supermarket, sklep, wyczyść, gotowe
-translatedFrom: 2026-11-10
+summary: Jedna lista zakupów dla całej rodziny. Dodawaj rzeczy, odhaczaj je w sklepie i daj innym znać, że idziesz na zakupy.
+keywords: zakupy, spożywcze, lista zakupów, kupić, odhacz, supermarket, ostatnio kupione, pilne, idę na zakupy, wklej
+translatedFrom: 2026-11-13
 ---
-Każdy w rodzinie widzi te same listy zakupów. Gdy ktoś coś doda albo odhaczy, wszyscy to widzą.
+Cała rodzina widzi te same listy i każdą zmianę.
 
-![Lista Zakupy spożywcze z otwartymi elementami i dwoma odhaczonymi w sekcji Gotowe. Zakreślony jest pasek Dodaj element na dole.](lists-shopping)
+![Lista Zakupy z Mlekiem oznaczonym jako pilne i dwiema rzeczami w sekcji Ostatnio kupione. Zakreślony jest przycisk Idę na zakupy.](lists-shopping)
 
-1. Na ekranie głównym dotknij **Zakupy**, a potem listy. Żeby utworzyć nową listę, dotknij **+**, potem **Lista zakupów**, wypełnij pole **Nazwa** i dotknij **Utwórz**.
-2. Wpisz, czego potrzebujesz, w polu **Dodaj element** na dole i dodaj to.
-3. W sklepie dotknij pola wyboru przed elementem. Element przesunie się w dół do sekcji **Gotowe**.
-4. Po powrocie do domu dotknij **⋯**, a potem **Usuń gotowe**. Albo dotknij **Odznacz wszystko**, żeby użyć tej samej listy jeszcze raz.
+1. Na ekranie głównym dotknij **Zakupy**, a potem listy. Żeby utworzyć nową, dotknij **+**, potem **Lista zakupów**, wypełnij pole **Nazwa** i dotknij **Utwórz**.
+2. Wpisz, czego potrzebujesz, w polu **Dodaj element**. „2 kg jabłka” dodaje jabłka z ilością 2 kg; dotknij podpowiedzi, żeby zostawić swój tekst. Wklej kilka linijek, żeby dodać je wszystkie.
+3. W sklepie odhacz element. Przesunie się do sekcji **Ostatnio kupione**; dotknij go tam, żeby go przywrócić.
+4. W domu dotknij **⋯**, a potem **Wyczyść ostatnio kupione** albo **Dodaj wszystko z powrotem**, żeby użyć listy jeszcze raz.
 
-Przesuń element w lewo, żeby go usunąć, albo przytrzymaj go, żeby go przenieść.
+![Pasek dodawania z wpisanym „2 kg Jabłka”. Podpowiedź nad nim to „Jabłka 2 kg”. Zakreślony jest pasek dodawania.](lists-shopping-amount)
 
-Jeśli masz budżet, po odhaczeniu ostatniej rzeczy daili zaproponuje dopisanie kosztu do budżetu.
+Przesuń element w prawo, żeby oznaczyć go jako **Pilne**: dostaje czerwony znak i przesuwa się w górę. Odhaczenie usuwa znak. Przesuń w lewo, żeby usunąć.
 
-Chcesz pilnować elementu także w domu? Dotknij go i włącz **Trzymaj w zapasach**.
+**Idę na zakupy** daje znać pozostałym, raz na listę co 30 minut. Nie działa na prywatnych listach.
 
-Brak zasięgu? Zapisane listy nadal się otwierają, a ty możesz odhaczać i dodawać. Mała chmurka oznacza wiersz, dopóki nie zostanie wysłany. Inne zmiany wymagają połączenia.
+daili przechowuje 60 ostatnio kupionych rzeczy. Bez internetu nadal możesz odhaczać i dodawać.

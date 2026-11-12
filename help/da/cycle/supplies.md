@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Forsyninger før din menstruation
 summary: Et par dage før din menstruation sætter du bind eller andre forsyninger på en indkøbsliste, kun du kan se.
 keywords: forsyninger, bind, tamponer, menstruationstrusser, smertestillende, indkøbsliste, privat liste, før menstruation
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Et par dage før din næste menstruation måske starter, kan skærmen Cyklus spørge: »Din menstruation starter måske snart. Har du brug for noget?«
 
@@ -16,4 +16,4 @@ Et par dage før din næste menstruation måske starter, kan skærmen Cyklus sp�
 
 Kun det, du satte flueben ved, bliver tilføjet, til en liste, kun du kan se.
 
-Tryk på × på kortet for at skjule det til næste gang. Vil du slå det fra, så slå **Foreslå forsyninger før min menstruation** fra i **Indstillinger for cyklus**.
+Tryk på × på kortet for at skjule det til næste gang. Vil du slå det fra, så slå **Foreslå forsyninger før min menstruation** fra under **Påmindelser** i **Indstillinger for cyklus**.

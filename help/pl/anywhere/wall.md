@@ -2,21 +2,21 @@
 id: anywhere-wall
 title: daili na ekranie ściennym lub starym tablecie
 summary: Zamień tablet w kuchni albo w przedpokoju w ekran rodzinny, który każdy może przeczytać.
-keywords: ekran ścienny, tablet, ipad, kuchnia, tablica rodzinna, ściana, wyświetlacz ścienny, kod, qr, lodówka, pełny ekran
-translatedFrom: 2026-11-10
+keywords: ekran ścienny, tablet, ipad, kuchnia, tablica rodzinna, ściana, wyświetlacz ścienny, kod, qr, lodówka, instrukcja konfiguracji
+translatedFrom: 2026-11-13
 ---
-Stary tablet staje się ekranem rodzinnym: **Strona główna**, **Tydzień**, **Miesiąc**, **Osoby**, **Posiłki**, **Listy**, **Nawyki** i **Odliczanie**. W ciche godziny rodzica, który go połączył, ekran przyciemnia się i przechodzi w widok **Noc**.
+Stary tablet staje się ekranem rodzinnym: **Strona główna**, **Kalendarz** (Dzień · Tydzień · Miesiąc), **Posiłki**, **Zadania**, **Zakupy** i **Nawyki**, z pogodą na górze. W ciche godziny rodzica, który go połączył, ekran przyciemnia się i przechodzi w widok **Noc**.
 
 1. Na tablecie otwórz app.daili.app/board/pair. Pojawi się kod i QR.
-2. W aplikacji: **Ustawienia** → **Ekran ścienny** → **Połącz ekran** (tylko admini). Wpisz kod albo dotknij **Skanuj kod QR**.
-3. Dotknij **Zatwierdź**.
+2. W aplikacji (admini): **Ustawienia** → **Ekran ścienny**. **Kopiuj** kopiuje ten adres.
+3. Dotknij **Połącz ekran**. Wpisz kod i dotknij **Dalej** albo dotknij **Skanuj kod QR**. Potem **Zatwierdź**.
 
-Komputer jako ekran: twoje imię → **Ogólne** → **Użyj tej przeglądarki jako ekranu rodzinnego**.
+![Ekran ścienny z adresem dla tabletu app.daili.app/board/pair i Kopiuj, a pod nim Połącz ekran, Ekrany ścienne i Instrukcja konfiguracji. Zakreślona jest karta z adresem.](anywhere-wall)
 
-Pierwsze dotknięcie włącza pełny ekran. Tablica sama się uruchamia ponownie i łączy się z powrotem.
+**Instrukcja konfiguracji** otwiera daili.app/wall-display: wskazówki dla każdego tabletu. Na komputerze: **Ekran ścienny** w menu po lewej.
+
+Dotknij wydarzenia, żeby zobaczyć szczegóły, albo twarzy, żeby zobaczyć plany jednej osoby. Przycisk **Gotuj** przy przepisie rozciąga go na cały ekran.
 
 > Note: Ekran nigdy nie pokazuje prywatnych rzeczy, nawet twoich, ani sekcji Notatki, Budżet, Cykl i Dokumenty.
 
-Żeby go usunąć: **Ekran ścienny** → **Ekrany ścienne** → **Usuń**. Przestaje też działać, gdy rodzic, który go połączył, odejdzie albo przestanie być administratorem. Na tablecie: **Przytrzymaj, aby wyjść**, a potem **Przestań używać**.
-
-iPad: użyj opcji Do ekranu początkowego, otwórz ikonę i dotknij **Ustaw ekran rodzinny**. W Ustawieniach → Ekran i jasność ustaw Autoblokadę na Nigdy. Android: Chrome → Zainstaluj aplikację.
+Żeby zakończyć: **Ekran ścienny** → **Ekrany ścienne** → **Usuń**. Albo na tablecie dotknij ikony wyjścia w lewym dolnym rogu, przytrzymaj **Przytrzymaj, aby wyjść**, a potem dotknij **Przestań używać**.

@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Legg til en oppskrift
 summary: Samle familiens oppskrifter på ett sted, med ingredienser, steg og et bilde.
 keywords: oppskrift, legg til oppskrift, kokebok, oppskriftssamling, ingredienser, matlaging, rett, bilde, familieoppskrifter
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Bestemors lasagne hører hjemme i familiens oppskriftssamling, der alle kan finne den.
 
@@ -15,9 +15,9 @@ Bestemors lasagne hører hjemme i familiens oppskriftssamling, der alle kan finn
 4. Trykk på **Legg til ingrediens** for hver ingrediens og på **Legg til steg** for hvert steg.
 5. Trykk på **Opprett**. Som med alle måter å legge til på, havner du så i oppskriftslisten din.
 
-Vil du endre en oppskrift senere, åpner du den, trykker på **⋮** øverst og så på **Rediger**.
+Vil du endre en oppskrift senere, åpner du den, trykker på **⋮** øverst og så på **Rediger**. Der finner du også **Våre notater**.
 
-I en oppskrift legger **Planlegg** den inn i matplanen: velg en dag, et måltid og porsjonene. Kilden er den lille brikken under tittelen, ved siden av tiden og porsjonene.
+**Planlegg** nederst legger en oppskrift inn i matplanen: velg en dag, et måltid og porsjonene. Kilden er den lille brikken etter tiden og porsjonene.
 
 > Note: Oppskriftene hører til hele familien. Alle kan åpne dem, og alle kan endre dem.
 

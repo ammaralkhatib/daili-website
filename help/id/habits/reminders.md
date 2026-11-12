@@ -3,7 +3,7 @@ id: habits-reminders
 title: Pengingat kebiasaan
 summary: Dapatkan dorongan di waktu yang Anda pilih, atau satu untuk setiap hitungan, dan centang kebiasaan langsung dari notifikasi.
 keywords: pengingat, notifikasi, dorongan, alarm, waktu, pengingat kebiasaan, ingatkan saya, setiap kali, penghitung, selesai
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Dorongan di waktu yang tepat membuat kebiasaan lebih mudah dijaga.
 
@@ -14,7 +14,7 @@ Dorongan di waktu yang tepat membuat kebiasaan lebih mudah dijaga.
 3. Penghitung bisa mengingatkan **Sekali sehari** atau **Setiap kali**: hingga 8 kali, dan pengingat berhenti begitu Anda mencapai hitungannya.
 4. Ketuk **Mulai kebiasaan**, atau **Simpan** kalau Anda mengubahnya.
 
-Saat pengingat datang, ketuk **Selesai** untuk mencentang kebiasaan tanpa membuka daili. Penghitung perlu membuka daili, supaya Anda bisa menghitung.
+Saat pengingat datang, ketuk **Selesai** untuk mencentang kebiasaan tanpa membuka daili. Atau ketuk pengingatnya: kebiasaan Anda terbuka di kebiasaan itu, siap dicentang. Penghitung perlu cara ini, karena **Selesai** tidak bisa menghitung.
 
 Di kebiasaan **Masing-masing**, semua orang mulai dengan waktu yang sama. Nanti, pembuatnya atau admin bisa mengubah waktunya sendiri.
 

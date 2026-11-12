@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Ajouter une recette
 summary: Garde les recettes de la famille au même endroit, avec les ingrédients, les étapes et une photo.
 keywords: recette, ajouter recette, livre de cuisine, boîte à recettes, ingrédients, cuisine, plat, photo, recettes de famille
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Les lasagnes de mamie ont leur place dans la boîte à recettes de la famille, où tout le monde peut les trouver.
 
@@ -15,9 +15,9 @@ Les lasagnes de mamie ont leur place dans la boîte à recettes de la famille, o
 4. Touche **Ajouter un ingrédient** pour chaque ingrédient et **Ajouter une étape** pour chaque étape.
 5. Touche **Créer**. Comme pour toutes les façons d'ajouter, tu arrives ensuite sur ta liste de recettes.
 
-Pour modifier une recette plus tard, ouvre-la, touche **⋮** en haut, puis **Modifier**.
+Pour modifier une recette plus tard, ouvre-la, touche **⋮** en haut, puis **Modifier**. Tu y trouves aussi **Nos notes**.
 
-Dans une recette, **Planifier** la met dans les menus : choisis un jour, un repas et les portions. Sa source est la petite pastille sous le titre, à côté du temps et des portions.
+**Planifier**, en bas, met une recette dans les menus : choisis un jour, un repas et les portions. Sa source est la petite pastille après le temps et les portions.
 
 > Note: Les recettes appartiennent à toute la famille. Tout le monde peut les ouvrir, et n'importe qui peut les modifier.
 

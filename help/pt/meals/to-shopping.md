@@ -5,7 +5,7 @@ summary: Adicione tudo o que uma receita, ou uma semana inteira de refeições, 
 keywords: ingredientes, lista de compras, mercado, compras, adicionar à lista, receita, cardápio, comprar
 tipTitle: Do cardápio para a lista de compras
 tipBody: Planeje as refeições da semana e depois coloque todos os ingredientes na lista de compras de uma vez.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Chega de copiar ingredientes à mão.
 
@@ -17,5 +17,7 @@ Chega de copiar ingredientes à mão.
 4. Toque no botão embaixo, como **Adicionar 3 itens**.
 
 Toque em **Abrir a lista** na mensagem para ver os itens.
+
+**Adicionar tudo à lista**, embaixo dos ingredientes de uma receita, faz o mesmo. Se você mudou as porções, as novas quantidades vão para a lista.
 
 > Note: No cardápio, só as refeições feitas a partir de uma receita trazem ingredientes. As refeições sem receita não têm nenhum.

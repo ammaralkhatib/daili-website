@@ -1,16 +1,18 @@
 ---
 id: anywhere-wall-tick
-title: Marcar cosas como hechas en la pantalla de pared
-summary: Toca una tarea, un artículo de la compra o un hábito en la pantalla familiar y cuenta para la persona correcta.
-keywords: pantalla de pared, pantalla familiar, tableta, marcar, hecho, completar, quién lo hizo, deshacer, niños, tareas de casa
-translatedFrom: 2026-10-29
+title: Marcar y añadir cosas en la pantalla de pared
+summary: Toca una tarea, un artículo de la compra o un hábito en la pantalla familiar y cuenta para la persona correcta. También puedes añadir cosas y disfrutar de los premios.
+keywords: pantalla de pared, pantalla familiar, tableta, marcar, quién lo hizo, deshacer, añadir, premios, niños, tareas de casa
+translatedFrom: 2026-11-13
 ---
 En una pantalla familiar conectada, toca una tarea, un artículo de la compra o un hábito para marcarlo.
 
-Cuenta para la persona a la que pertenece. Un artículo de la compra, una tarea sin nadie asignado o con varias personas, y un hábito que hacéis juntos preguntan **¿Quién lo hizo?** Toca tu foto.
+Cuenta para la persona a la que pertenece. Un artículo de la compra, una tarea sin nadie asignado o con varias personas, y un hábito que hacéis juntos preguntan **¿Quién lo hizo?** Toca tu foto. Los niños sin cuenta propia reciben el mérito de sus propios hábitos.
 
-Los niños sin cuenta propia reciben el mérito de sus propios hábitos. En sus tareas, la actividad de la web muestra su nombre.
+**Deshacer** aparece durante 5 segundos. Es la única forma de quitar una marca aquí. Una tarea que se repite no tiene **Deshacer**.
 
-**Deshacer** aparece durante 5 segundos. Una fila marcada no es un botón, así que usa **Deshacer** para quitar la marca. Después, solo puedes desmarcarla en un ordenador o en la app. Una tarea que se repite pasa enseguida a su siguiente fecha y no tiene **Deshacer**, igual que en la app.
+El **+** redondo de arriba a la derecha añade un evento, una tarea, un artículo de la compra o una comida. Primero elige quién añade.
 
-> Note: Un tablero abierto con **Iniciar modo pared** con tu propia sesión solo muestra las cosas. Para marcar, usa una pantalla familiar.
+Los premios están debajo de los hábitos de cada persona. Un padre o una madre toca **¡Hecho!** en un premio completo. **Premio** debajo de una columna añade uno nuevo. Los dos preguntan primero **¿Quién eres?**
+
+> Note: Un tablero abierto con **Abrir el tablero aquí** o **Iniciar modo pared** con tu propia sesión solo muestra las cosas.

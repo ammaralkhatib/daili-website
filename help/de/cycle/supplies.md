@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Vorräte vor deiner Periode
 summary: Setz ein paar Tage vor deiner Periode Binden oder andere Vorräte auf eine Einkaufsliste, die nur du siehst.
 keywords: vorräte, binden, tampons, periodenunterwäsche, schmerzmittel, einkaufsliste, private liste, vor der periode
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Ein paar Tage, bevor deine nächste Periode beginnen könnte, fragt der Bildschirm Zyklus vielleicht: „Deine Periode könnte bald beginnen. Brauchst du etwas?“
 
@@ -16,4 +16,4 @@ Ein paar Tage, bevor deine nächste Periode beginnen könnte, fragt der Bildschi
 
 Nur die abgehakten Dinge kommen dazu, auf eine Liste, die nur du sehen kannst.
 
-Tippe auf der Karte auf ×, um sie bis zum nächsten Mal auszublenden. Um sie abzustellen, schalte **Vorräte vor meiner Periode vorschlagen** in den **Zyklus-Einstellungen** aus.
+Tippe auf der Karte auf ×, um sie bis zum nächsten Mal auszublenden. Um sie abzustellen, schalte **Vorräte vor meiner Periode vorschlagen** unter **Erinnerungen** in den **Zyklus-Einstellungen** aus.

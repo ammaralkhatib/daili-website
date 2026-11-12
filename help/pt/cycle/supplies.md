@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Produtos antes da menstruação
 summary: Alguns dias antes da menstruação, adicione absorventes ou outros produtos a uma lista de compras que só você vê.
 keywords: produtos, absorventes, tampões, calcinha menstrual, analgésico, lista de compras, lista privada, antes da menstruação
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Alguns dias antes de a próxima menstruação poder começar, a tela do Ciclo pode perguntar: "Sua menstruação pode começar em breve. Precisa de algo?"
 
@@ -16,4 +16,4 @@ Alguns dias antes de a próxima menstruação poder começar, a tela do Ciclo po
 
 Só os itens que você marcou são adicionados, a uma lista que só você pode ver.
 
-Toque no × do cartão para escondê-lo até a próxima vez. Para parar de vez, desative **Sugerir produtos antes da menstruação** em **Configurações do ciclo**.
+Toque no × do cartão para escondê-lo até a próxima vez. Para parar de vez, desative **Sugerir produtos antes da menstruação** em **Lembretes**, nas **Configurações do ciclo**.

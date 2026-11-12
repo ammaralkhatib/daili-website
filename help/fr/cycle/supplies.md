@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Fournitures avant tes règles
 summary: Quelques jours avant tes règles, ajoute des serviettes ou d'autres fournitures à une liste de courses que personne d'autre ne voit.
 keywords: fournitures, serviettes hygiéniques, tampons, culotte menstruelle, antidouleurs, liste de courses, liste privée, avant les règles
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Quelques jours avant le début possible de tes prochaines règles, l'écran Cycle peut te demander : « Tes règles pourraient bientôt commencer. Besoin de quelque chose ? »
 
@@ -16,4 +16,4 @@ Quelques jours avant le début possible de tes prochaines règles, l'écran Cycl
 
 Seuls les articles cochés sont ajoutés, dans une liste que personne d'autre ne voit.
 
-Touche × sur la carte pour la masquer jusqu'à la prochaine fois. Pour ne plus la voir, désactive **Suggérer des fournitures avant mes règles** dans les **Réglages du cycle**.
+Touche × sur la carte pour la masquer jusqu'à la prochaine fois. Pour ne plus la voir, désactive **Suggérer des fournitures avant mes règles** sous **Rappels** dans les **Réglages du cycle**.

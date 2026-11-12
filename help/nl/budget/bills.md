@@ -3,7 +3,7 @@ id: budget-bills
 title: Rekeningen, herinneringen en budgetmeldingen
 summary: Krijg een herinnering voordat een rekening betaald moet zijn, zie rekeningen in de agenda en weet wanneer een budget bijna op is.
 keywords: rekening, rekeningen, vervaldatum, te laat, herinnering, huur, melding, limiet, komt nog, agenda, notificatie
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Een rekening is een uitgave die je nog moet betalen, zoals de huur.
 
@@ -16,7 +16,7 @@ Rekeningen staan ook in de agenda. Wil je ze verbergen, zet dan **Rekeningen** u
 
 Budgetmeldingen komen bij 80% en 100% van de limiet, inclusief geld dat uit vorige maand is meegenomen.
 
-![Het scherm Meldingen met de schakelaars Herinneringen voor rekeningen en Budgetmeldingen.](notifications-choose)
+![Het scherm Meldingen met de schakelaar Budgetmeldingen bovenaan, boven Wijzigingen in het gezin.](notifications-choose)
 
 Zet ze uit in **Instellingen** → **Meldingen**: **Herinneringen voor rekeningen** en **Budgetmeldingen**.
 

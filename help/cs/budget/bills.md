@@ -3,7 +3,7 @@ id: budget-bills
 title: Účty, připomenutí a upozornění rozpočtu
 summary: Dostaneš připomenutí před splatností účtu, uvidíš účty v kalendáři a budeš vědět, když je rozpočet skoro vyčerpaný.
 keywords: účet, účty, splatnost, po splatnosti, připomenutí, nájem, upozornění, limit, nadcházející, kalendář, oznámení
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Účet je výdaj, který ještě musíš zaplatit, třeba nájem.
 
@@ -16,7 +16,7 @@ Připomenutí dostane plátce, nebo všichni, kdo rozpočet vidí, když je nast
 
 Upozornění rozpočtu přijdou při 80 % a 100 % limitu, včetně peněz převedených z minulého měsíce.
 
-![Obrazovka Oznámení s přepínači Připomenutí účtů a Upozornění rozpočtu.](notifications-choose)
+![Obrazovka Oznámení s přepínačem Upozornění rozpočtu nahoře, nad skupinou Změny v rodině.](notifications-choose)
 
 Vypnout je můžeš tady: **Nastavení** → **Oznámení**: **Připomenutí účtů** a **Upozornění rozpočtu**.
 

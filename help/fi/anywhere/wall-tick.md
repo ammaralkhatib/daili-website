@@ -1,16 +1,18 @@
 ---
 id: anywhere-wall-tick
-title: Merkitse asioita tehdyiksi seinänäytöllä
-summary: Napauta tehtävää, ostosta tai tapaa perhenäytöllä, niin se kirjataan oikealle henkilölle.
-keywords: seinä, seinänäyttö, perhenäyttö, tabletti, merkitse, rasti, tehty, valmis, kuka teki, kumoa, lapset, kotityöt
-translatedFrom: 2026-10-29
+title: Merkitse ja lisää asioita seinänäytöllä
+summary: Napauta tehtävää, ostosta tai tapaa perhenäytöllä, niin se kirjataan oikealle henkilölle. Lisää asioita ja nauti palkinnoista myös siellä.
+keywords: seinä, seinänäyttö, perhenäyttö, tabletti, merkitse, rasti, kuka teki, kumoa, lisää, palkinnot, lapset, kotityöt
+translatedFrom: 2026-11-13
 ---
 Napauta yhdistetyllä perhenäytöllä tehtävää, ostosta tai tapaa, niin se merkitään tehdyksi.
 
-Se kirjataan henkilölle, jolle se kuuluu. Ostoksen, ilman tekijää olevan tai usealle annetun tehtävän sekä yhdessä tehtävän tavan kohdalla näyttö kysyy **Kuka sen teki?** Napauta omaa kuvaasi.
+Se kirjataan henkilölle, jolle se kuuluu. Ostoksen, ilman tekijää olevan tai usealle annetun tehtävän sekä yhdessä tehtävän tavan kohdalla näyttö kysyy **Kuka sen teki?** Napauta omaa kuvaasi. Lapset, joilla ei ole omaa kirjautumista, saavat merkinnät omista tavoistaan.
 
-Lapset, joilla ei ole omaa kirjautumista, saavat merkinnät omista tavoistaan. Heidän tehtäviensä kohdalla app.daili.app-sivuston tapahtumat näyttävät tekijäksi heidän nimensä.
+**Kumoa** näkyy 5 sekuntia. Vain sillä voit perua merkinnän täällä. Toistuvassa tehtävässä ei ole painiketta **Kumoa**.
 
-**Kumoa** näkyy 5 sekuntia. Merkitty rivi ei ole painike, joten peru merkintä painikkeella **Kumoa**. Myöhemmin voit poistaa merkinnän tietokoneella tai sovelluksessa. Toistuva tehtävä siirtyy heti seuraavaan päiväänsä, eikä siinä ole painiketta **Kumoa**, aivan kuten sovelluksessa.
+Pyöreä **+** oikeassa yläkulmassa lisää tapahtuman, tehtävän, ostoksen tai aterian. Valitse ensin, kuka lisää.
 
-> Note: Taulu, jonka avaat omilla tunnuksillasi painikkeella **Käynnistä seinätila**, vain näyttää asiat. Merkitseminen toimii perhenäytöllä.
+Palkinnot ovat kunkin henkilön tapojen alla. Vanhempi napauttaa täydessä palkinnossa **Tehty!**. Sarakkeen alla oleva **Palkinto** lisää uuden. Molemmat kysyvät ensin **Kuka olet?**
+
+> Note: Taulu, jonka avaat omilla tunnuksillasi painikkeella **Avaa taulu tässä** tai **Käynnistä seinätila**, vain näyttää asiat.

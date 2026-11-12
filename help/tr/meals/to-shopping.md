@@ -5,7 +5,7 @@ summary: Bir tarifin ya da bütün bir haftanın yemeklerinin ihtiyacı olan her
 keywords: malzemeler, alışveriş listesi, market, alışveriş, listeye ekle, tarif, yemek planı, satın al
 tipTitle: Yemek planından alışveriş listesine
 tipBody: Haftanın yemeklerini planla, sonra tüm malzemelerini tek seferde alışveriş listene ekle.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Malzemeleri elle kopyalamaya son.
 
@@ -17,5 +17,7 @@ Malzemeleri elle kopyalamaya son.
 4. Alttaki düğmeye dokun, örneğin **3 öğe ekle**.
 
 Onları görmek için mesajdaki **Listeyi aç** düğmesine dokun.
+
+Bir tarifin malzemelerinin altındaki **Tümünü listeye ekle** de aynısını yapar. Porsiyonları değiştirdiysen yeni miktarlar listeye gider.
 
 > Note: Yemek planından yalnızca bir tariften yapılan yemekler malzeme getirir. Tarifi olmayan yemeklerin malzemesi yoktur.

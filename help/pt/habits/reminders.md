@@ -3,7 +3,7 @@ id: habits-reminders
 title: Lembretes de hábitos
 summary: Receba um empurrãozinho no horário que você escolher, ou um para cada contagem, e marque o hábito direto na notificação.
 keywords: lembrete, notificação, empurrãozinho, alarme, horário, lembrete de hábito, me lembrar, cada vez, contador, concluído
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Um empurrãozinho na hora certa deixa um hábito mais fácil de manter.
 
@@ -14,7 +14,7 @@ Um empurrãozinho na hora certa deixa um hábito mais fácil de manter.
 3. Um contador pode lembrar **Uma vez por dia** ou **Cada vez**: até 8 vezes, e os lembretes param quando você chega ao número.
 4. Toque em **Começar hábito**, ou em **Salvar** se estiver mudando um.
 
-Quando o lembrete chegar, toque em **Concluído** para marcar o hábito sem abrir o daili. Um contador precisa abrir o daili, para você contar.
+Quando o lembrete chegar, toque em **Concluído** para marcar o hábito sem abrir o daili. Ou toque no próprio lembrete: seus hábitos abrem nesse hábito, pronto para marcar. Um contador precisa disso, porque **Concluído** não consegue contar.
 
 Em um hábito **Cada um**, todos começam com o mesmo horário. Depois, quem criou o hábito ou um admin pode mudar o próprio horário.
 

@@ -5,7 +5,7 @@ summary: Tambahkan semua yang dibutuhkan sebuah resep, atau menu seminggu penuh,
 keywords: bahan, daftar belanja, belanja dapur, bahan makanan, tambah ke daftar, resep, rencana makan, beli
 tipTitle: Dari rencana makan ke daftar belanja
 tipBody: Rencanakan menu seminggu, lalu masukkan semua bahannya ke daftar belanja sekaligus.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Tidak perlu lagi menyalin bahan satu per satu.
 
@@ -17,5 +17,7 @@ Tidak perlu lagi menyalin bahan satu per satu.
 4. Ketuk tombol di bawah, seperti **Tambah 3 barang**.
 
 Ketuk **Buka daftar** di pesannya untuk melihatnya.
+
+**Tambah semua ke daftar** di bawah bahan sebuah resep juga melakukan hal yang sama. Kalau Anda mengubah porsinya, takaran yang baru yang masuk ke daftar.
 
 > Note: Dari rencana makan, hanya menu yang dibuat dari resep yang membawa bahan. Menu tanpa resep tidak punya bahan.

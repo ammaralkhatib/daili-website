@@ -5,7 +5,7 @@ summary: Se dina planer, bocka av uppgifter och inköp eller lägg till något n
 keywords: widget, widgetar, hemskärm, låsskärm, iphone, android, vanor, middag, snabbt lägga till, födelsedag, bocka av, lägg till widget
 tipTitle: Din planering på hemskärmen
 tipBody: Lägg till en daili-widget och se vad som händer härnäst utan att öppna appen.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkning) och widgetar för **Inköp**, **Uppgifter**, **Vanor** med en förloppsring, nedräkning till födelsedagar, kvällens middag, snabbt lägga till och **Snabbanteckning**.
 
@@ -14,10 +14,10 @@ daili har två kalenderwidgetar (**Kalender** och **Näst på tur** med nedräkn
 3. Leta upp daili och välj sedan en widget och en storlek.
 4. På iPhone trycker du på **Lägg till widget**. På Android drar du den till en ledig plats.
 
-Bocka av uppgifter, inköp och vanor direkt i widgeten. **+** lägger till något; tryck någon annanstans så öppnas daili där.
+Bocka av uppgifter, inköp och vanor direkt i widgeten. **+** lägger till något; tryck någon annanstans så öppnas daili.
 
-Kalenderwidgeten visar dina närmaste dagar. Ringen i **Vanor** visar hur många som är klara i dag.
+Widgeten **Kalender** visar också länkade kalendrar och telefonens kalendrar. En ny händelse i telefonen syns när du har öppnat daili.
 
 På iPhone kan låsskärmen visa **Näst på tur**, en knapp för en ny anteckning och räknare. Titlar förblir dolda tills du låser upp.
 
-> Note: Widgetar visar din aktiva familj eller grupp. Om en verkar gammal, öppna daili en kort stund.
+> Note: En widget visar din aktiva familj eller grupp, eller den som är vald i dess inställningar. Verkar den gammal? Öppna daili.

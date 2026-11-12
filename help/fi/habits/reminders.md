@@ -3,7 +3,7 @@ id: habits-reminders
 title: Tapojen muistutukset
 summary: Saat tönäisyn valitsemaasi aikaan tai jokaista laskettavaa kertaa varten, ja voit merkitä tavan tehdyksi suoraan ilmoituksesta.
 keywords: muistutus, ilmoitus, tönäisy, hälytys, aika, tapamuistutus, muistuta minua, joka kerta, laskuri, valmis
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Tönäisy oikeaan aikaan auttaa pitämään tavasta kiinni.
 
@@ -14,7 +14,7 @@ Tönäisy oikeaan aikaan auttaa pitämään tavasta kiinni.
 3. Laskuri voi muistuttaa **Kerran päivässä** tai **Joka kerta**: enintään 8 kertaa, ja muistutukset loppuvat, kun saavutat määrän.
 4. Napauta **Aloita tapa** tai **Tallenna**, jos muutat olemassa olevaa.
 
-Kun muistutus tulee, napauta **Valmis**, niin tapa merkitään tehdyksi avaamatta dailia. Laskuri tarvitsee dailin auki, jotta voit laskea.
+Kun muistutus tulee, napauta **Valmis**, niin tapa merkitään tehdyksi avaamatta dailia. Tai napauta itse muistutusta: tapasi avautuvat kyseisen tavan kohdalta valmiina merkittäviksi. Laskuri tarvitsee tämän, koska **Valmis** ei osaa laskea.
 
 **Jokainen erikseen** -tavassa kaikki aloittavat samalla ajalla. Myöhemmin tavan tekijä tai ylläpitäjä voi muuttaa omaa aikaansa.
 

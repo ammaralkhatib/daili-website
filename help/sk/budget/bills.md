@@ -3,7 +3,7 @@ id: budget-bills
 title: Účty, pripomienky a upozornenia rozpočtu
 summary: Dostaň pripomienku pred splatnosťou účtu, pozri si účty v kalendári a zisti, keď je rozpočet takmer minutý.
 keywords: účet, účty, splatnosť, po splatnosti, pripomienka, nájom, upozornenie, limit, nadchádzajúce, kalendár, notifikácia
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Účet je výdavok, ktorý ešte musíš zaplatiť, napríklad nájom.
 
@@ -16,7 +16,7 @@ Pripomienka príde tomu, kto platí, alebo všetkým, ktorí rozpočet vidia, ak
 
 Upozornenia rozpočtu prídu pri 80 % a 100 % limitu, vrátane peňazí presunutých z minulého mesiaca.
 
-![Obrazovka Upozornenia s prepínačmi Pripomienky účtov a Upozornenia rozpočtu.](notifications-choose)
+![Obrazovka Upozornenia s prepínačom Upozornenia rozpočtu navrchu, nad časťou Zmeny v rodine.](notifications-choose)
 
 Vypneš ich v časti **Nastavenia** → **Upozornenia**: **Pripomienky účtov** a **Upozornenia rozpočtu**.
 

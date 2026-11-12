@@ -3,7 +3,7 @@ id: habits-reminders
 title: Připomenutí návyků
 summary: Dostávej šťouchnutí ve zvolený čas, nebo jedno za každé počítání, a odškrtni návyk přímo z oznámení.
 keywords: připomenutí, oznámení, šťouchnutí, budík, čas, připomenutí návyku, připomeň mi, pokaždé, počítadlo, hotovo
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Šťouchnutí ve správnou chvíli pomáhá návyk udržet.
 
@@ -14,7 +14,7 @@ translatedFrom: 2026-10-16
 3. Počítadlo může připomínat **Jednou denně** nebo **Pokaždé**: až 8krát, a připomínání skončí, jakmile dosáhneš počtu.
 4. Klepni na **Začít návyk**, nebo na **Uložit**, pokud upravuješ existující.
 
-Když připomenutí přijde, klepni na **Hotovo** a návyk se odškrtne bez otevírání daili. U počítadla se daili musí otevřít, aby šlo počítat.
+Když připomenutí přijde, klepni na **Hotovo** a návyk se odškrtne bez otevírání daili. Nebo klepni na samotné připomenutí: návyky se otevřou přímo u toho návyku, připravené k odškrtnutí. Počítadlo to potřebuje, protože **Hotovo** počítat neumí.
 
 V návyku **Každý z nás** začínají všichni se stejným časem. Později může autor návyku nebo správce změnit svůj čas.
 

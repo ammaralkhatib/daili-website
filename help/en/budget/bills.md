@@ -7,7 +7,7 @@ keywords: bill, bills, due, overdue, reminder, rent, alert, limit, coming up, ca
 routes: /budget/:id
 tryIt: /budget
 since: 1.10.0
-updated: 2026-10-16
+updated: 2026-11-13
 media: notifications-choose
 order: 3
 related: budget-add, budget-repeating, budget-settings, notifications-choose
@@ -23,7 +23,7 @@ Bills also show on the calendar. To hide them, switch off **Bills** in **Calenda
 
 Budget alerts come at 80 % and 100 % of the limit, counting money moved in from last month.
 
-![The Notifications screen, with the Bill reminders and Budget alerts switches.](notifications-choose)
+![The Notifications screen with the Budget alerts switch at the top, above Family changes.](notifications-choose)
 
 Turn these off in **Settings** → **Notifications**: **Bill reminders** and **Budget alerts**.
 

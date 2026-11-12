@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Vyber, čo widget ukazuje
-summary: Vyber nákupný zoznam pre widget a či ukazuje len tvoje úlohy a návyky, alebo všetkých.
-keywords: widget, nastavenia widgetu, upraviť widget, nákupný zoznam, úlohy, návyky, len moje, všetci, plocha
-translatedFrom: 2026-11-10
+summary: Vyber rodinu alebo skupinu pre widget, jeho nákupný zoznam a či ukazuje len tvoje úlohy a návyky, alebo všetkých.
+keywords: widget, nastavenia widgetu, upraviť widget, rodina, skupina, nákupný zoznam, úlohy, návyky, len moje, všetci, plocha
+translatedFrom: 2026-11-13
 ---
-Widgety **Nákupy**, **Úlohy** a **Návyky** majú nastavenia. Každý widget si pamätá svoje, takže dva widgety nákupov môžu ukazovať dva zoznamy.
+Každý widget na ploche okrem **Rýchle pridanie** má nastavenia a každý si pamätá svoje.
 
 1. Podrž prst na widgete.
-2. Na iPhone ťukni na úpravu widgetu. Na Androide ťukni na ceruzku.
-3. Vyber, čo má ukazovať. Na Androide potom ťukni na **Done**.
+2. Na iPhone ťukni na úpravu widgetu. V Androide 12 alebo novšom ťukni na ceruzku alebo na zmenu konfigurácie. Starší Android ukáže nastavenia len raz, keď widget pridávaš.
+3. Vyber, čo má ukazovať. V Androide potom ťukni na **Hotovo**.
 
-**Nákupy**: pod **List** vyber **Most recent** (najnovší zoznam) alebo jeden zo svojich zoznamov.
+**Rodina alebo skupina** (v Androide prvý riadok): **Aktívna rodina** sa riadi rodinou otvorenou v daili, alebo vyber jednu rodinu, ktorú bude widget ukazovať vždy. Ak widget ukazuje **Ťukni pre načítanie**, ťukni naň.
 
-**Úlohy**: pod **Show** vyber **Mine** alebo **Everyone**.
+Widget inej rodiny ukazuje jej názov a ťuknutie otvorí daili práve v nej.
 
-**Návyky**: pod **Show** vyber **Family** alebo **Only mine**. Kruh pokroku počíta tie isté návyky.
+**Nákupy**: pod **Zoznam** vyber **Najnovší** alebo jeden zo svojich zoznamov.
 
-Widget ukazuje vždy rodinu alebo skupinu, ktorá je v daili aktívna — rodinu pre jednotlivý widget vybrať nejde.
+**Úlohy**: pod **Zobraziť** vyber **Moje** alebo **Všetci**.
 
-> Note: Tieto nastavenia sú zatiaľ v angličtine. Na iPhone potrebujú nastavenia aj odškrtávanie na widgete iOS 17 alebo novší.
+**Návyky**: pod **Zobraziť** vyber **Rodina** alebo **Len moje**.
+
+Widgety na zamknutej obrazovke, **Rýchle pridanie** a hodinky sa vždy riadia aktívnou rodinou.
+
+> Note: Na iPhone potrebujú nastavenia aj odškrtávanie na widgete iOS 17 alebo novší.

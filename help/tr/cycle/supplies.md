@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Regl öncesi ihtiyaçlar
 summary: Reglinden birkaç gün önce ped ya da başka ihtiyaçları yalnızca senin gördüğün bir alışveriş listesine ekle.
 keywords: ihtiyaçlar, ped, tampon, regl külotu, ağrı kesici, alışveriş listesi, özel liste, regl öncesi
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Sonraki reglin başlayabileceği tarihten birkaç gün önce Döngü ekranı şunu sorabilir: "Regl dönemin yakında başlayabilir. Bir şeye ihtiyacın var mı?"
 
@@ -16,4 +16,4 @@ Sonraki reglin başlayabileceği tarihten birkaç gün önce Döngü ekranı şu
 
 Yalnızca işaretlediğin öğeler, yalnızca senin görebildiğin bir listeye eklenir.
 
-Kartı bir dahaki sefere kadar gizlemek için karttaki × simgesine dokun. Tamamen durdurmak için **Döngü ayarları** içinde **Regl öncesi ihtiyaç öner** seçeneğini kapat.
+Kartı bir dahaki sefere kadar gizlemek için karttaki × simgesine dokun. Tamamen durdurmak için **Döngü ayarları** içinde, **Hatırlatıcılar** altında **Regl öncesi ihtiyaç öner** seçeneğini kapat.

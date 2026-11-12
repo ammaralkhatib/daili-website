@@ -5,7 +5,7 @@ summary: Adaugă dintr-o dată pe lista de cumpărături tot ce îi trebuie unei
 keywords: ingrediente, listă de cumpărături, alimente, cumpărături, adaugă pe listă, rețetă, meniu, de cumpărat
 tipTitle: De la meniu la lista de cumpărături
 tipBody: Planifică mesele săptămânii, apoi pune toate ingredientele lor pe lista de cumpărături dintr-o dată.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Gata cu copiatul ingredientelor de mână.
 
@@ -17,5 +17,7 @@ Gata cu copiatul ingredientelor de mână.
 4. Apasă pe butonul de jos, de exemplu **Adaugă 3 articole**.
 
 Apasă pe **Deschide lista** în mesaj ca să le vezi.
+
+**Adaugă tot pe listă**, sub ingredientele unei rețete, face același lucru. Dacă ai schimbat porțiile, pe listă ajung cantitățile noi.
 
 > Note: Din meniu, doar mesele făcute dintr-o rețetă aduc ingrediente. Mesele fără rețetă n-au niciunul.

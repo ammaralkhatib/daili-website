@@ -3,17 +3,17 @@ id: meals-instagram
 title: Gem en opskrift fra Instagram
 summary: Del eller indsæt et offentligt Instagram-opslag, så læser daili opskriften fra opslagets tekst, med billedet.
 keywords: instagram, reel, opslag, billedtekst, opskrift, del, gem opskrift, ai, importér, skærmbilleder
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
-Har du fundet en opskrift på Instagram? daili kan gemme den for dig.
+Har du fundet en opskrift på Instagram? daili gemmer den for dig, på iPhone og Android.
 
 ![Skærmen Opskrifter med menuen + åben. Fra YouTube eller Instagram er markeret med en cirkel.](meals-instagram)
 
-1. Tryk på Del ved opslaget i Instagram, så på **daili** og så på **Fortsæt**. På iPhone ligger daili under **Mere** første gang. Føj den til dine favoritter dér.
+1. Tryk på Del ved opslaget i Instagram, så på **daili** og så på **Fortsæt**. På iPhone ligger daili under **Mere** første gang.
 2. Eller kopiér linket til opslaget. Tryk på **Opskrifter** på startskærmen, så på **+** og så på **Fra YouTube eller Instagram**. Indsæt linket, og tryk på **Læs**.
-3. Tjek opskriften. Opslagets billede kommer med; du kan fjerne det. Tryk så på **Opret**.
+3. Tjek opskriften og opslagets billede, og tryk så på **Opret**.
 
-daili læser kun opslagets tekst, ikke billederne eller videoen. Ingen skrevet opskrift? Tryk på **Vælg skærmbilleder**, og vælg skærmbilleder af opskriften.
+daili læser kun opslagets tekst, ikke billederne eller videoen. Ingen skrevet opskrift, eller **Opslaget kunne ikke læses** (fx offline)? Tryk på **Vælg skærmbilleder**, og vælg skærmbilleder af opskriften.
 
 Din telefon åbner opslaget. Kun teksten sendes til Googles AI, som ikke gemmer noget.
 

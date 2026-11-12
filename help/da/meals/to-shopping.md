@@ -5,7 +5,7 @@ summary: Tilføj alt, hvad en opskrift eller en hel uges mad kræver, til din in
 keywords: ingredienser, indkøbsliste, dagligvarer, indkøb, tilføj til liste, opskrift, madplan, købe
 tipTitle: Fra madplan til indkøbsliste
 tipBody: Planlæg ugens mad, og sæt så alle ingredienserne på din indkøbsliste i ét hug.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Slut med at skrive ingredienser af i hånden.
 
@@ -17,5 +17,7 @@ Slut med at skrive ingredienser af i hånden.
 4. Tryk på knappen forneden, fx **Tilføj 3 varer**.
 
 Tryk på **Åbn listen** i beskeden for at se dem.
+
+**Alt til listen** under en opskrifts ingredienser gør det samme. Har du ændret portionerne, kommer de nye mængder på listen.
 
 > Note: Fra madplanen giver kun måltider lavet ud fra en opskrift ingredienser. Måltider uden opskrift har ingen.

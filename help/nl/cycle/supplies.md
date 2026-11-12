@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Voorraad vóór je menstruatie
 summary: Zet een paar dagen vóór je menstruatie maandverband of andere spullen op een boodschappenlijst die alleen jij ziet.
 keywords: voorraad, maandverband, tampons, menstruatieondergoed, pijnstillers, boodschappenlijst, privélijst, voor menstruatie
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Een paar dagen voordat je volgende menstruatie kan beginnen, kan het scherm Cyclus vragen: "Je menstruatie kan binnenkort beginnen. Heb je iets nodig?"
 
@@ -16,4 +16,4 @@ Een paar dagen voordat je volgende menstruatie kan beginnen, kan het scherm Cycl
 
 Alleen wat je aanvinkte wordt toegevoegd, aan een lijst die alleen jij kunt zien.
 
-Tik op × op de kaart om hem tot de volgende keer te verbergen. Wil je hem niet meer, zet dan **Voorraad voorstellen voor mijn menstruatie** uit in **Cyclusinstellingen**.
+Tik op × op de kaart om hem tot de volgende keer te verbergen. Wil je hem niet meer, zet dan **Voorraad voorstellen voor mijn menstruatie** uit onder **Herinneringen** in **Cyclusinstellingen**.

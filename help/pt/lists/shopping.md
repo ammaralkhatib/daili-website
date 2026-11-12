@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Listas de compras: adicionar, marcar, limpar
-summary: Uma lista de compras que a família toda compartilha. Adicione itens, marque no mercado e limpe o que já comprou.
-keywords: compras, mercado, supermercado, lista de compras, comprar, marcar, riscar, feira, limpar, prontos
-translatedFrom: 2026-11-10
+summary: Uma lista de compras que a família toda compartilha. Adicione itens, marque no mercado e avise os outros que você está indo.
+keywords: compras, mercado, supermercado, lista de compras, comprar, marcar, riscar, comprados recentemente, urgente, vou fazer compras, colar
+translatedFrom: 2026-11-13
 ---
-Todo mundo da família vê as mesmas listas de compras. Quando alguém adiciona ou marca um item, todo mundo vê.
+A família toda vê as mesmas listas e cada mudança.
 
-![A lista Compras com itens abertos e dois marcados em Prontos. A barra Adicionar item, embaixo, está circulada.](lists-shopping)
+![A lista Compras com Leite marcado como urgente e dois itens em Comprados recentemente. Vou fazer compras está circulado.](lists-shopping)
 
-1. Na tela inicial, toque em **Compras** e depois em uma lista. Para uma lista nova, toque em **+** e depois em **Lista de compras**, digite um **Nome** e toque em **Criar**.
-2. Digite o que precisa em **Adicionar item**, embaixo, e adicione.
-3. No mercado, toque na caixinha na frente de um item. Ele desce para **Prontos**.
-4. De volta em casa, toque em **⋯** e depois em **Excluir os prontos**. Ou toque em **Desmarcar tudo** para usar a mesma lista de novo.
+1. Na tela inicial, toque em **Compras** e depois em uma lista. Para uma nova, toque em **+** e depois em **Lista de compras**, digite um **Nome** e toque em **Criar**.
+2. Digite o que precisa em **Adicionar item**. "2 kg maçãs" adiciona maçãs com 2 kg; toque no chip para manter o seu texto. Cole várias linhas para adicionar todas.
+3. No mercado, marque um item. Ele vai para **Comprados recentemente**; toque nele para colocá-lo de volta.
+4. Em casa, toque em **⋯** e depois em **Limpar comprados recentemente**, ou em **Adicionar tudo de volta** para usar a lista de novo.
 
-Deslize um item para a esquerda para excluir, ou toque e segure para mover.
+![A barra de adicionar com "2 kg Maçãs" digitado. O chip acima dela diz "Maçãs 2 kg". A barra de adicionar está circulada.](lists-shopping-amount)
 
-Se você tem um orçamento, ao marcar o último item o daili oferece adicionar o gasto a ele.
+Deslize um item para a direita para deixá-lo **Urgente**: ele ganha uma marca vermelha e sobe. Marcar o item tira a marca. Deslize para a esquerda para excluir.
 
-Quer acompanhar um item em casa também? Toque nele e depois em **Manter na despensa**.
+**Vou fazer compras** avisa os outros, uma vez por lista a cada 30 minutos. Não funciona em listas privadas.
 
-Sem sinal? As listas salvas continuam abrindo, e você pode marcar e adicionar. Uma pequena nuvem marca a linha até ela ser enviada. As outras mudanças precisam de conexão.
+O daili guarda os 60 itens comprados mais recentes. Sem internet, você ainda pode marcar e adicionar.

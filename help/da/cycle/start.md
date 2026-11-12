@@ -3,17 +3,19 @@ id: cycle-start
 title: Følg din menstruation med Cyklus
 summary: Registrér din menstruation, og se, hvornår den næste kan komme. Privat: ingen i din familie ser det.
 keywords: cyklus, menstruation, menses, registrere, forudsigelse, næste menstruation, menstruation startede, blødning, privat
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-13
 ---
 Cyklus er slået fra, indtil du slår det til, og det er gratis. Ingen i din familie ser din Cyklus, eller at du bruger den.
 
-1. Åbn **Indstillinger**, tryk på **Cyklus** og så på **Kom i gang**. Eller brug det blege felt **Cyklus**, når du redigerer startskærmen, eller **Indstillinger** → **Startskærm** → **Cyklus**.
+1. Åbn **Indstillinger**, tryk på **Cyklus** og så på **Kom i gang**.
 2. Vælg den dag, din sidste menstruation startede, og dine sædvanlige længder.
 3. Når en menstruation starter, trykker du på **Menstruation startede**. Med **Startede tidligere?** markerer du tidligere dage.
-4. Under menstruationen trykker du på **Let**, **Middel** eller **Kraftig**. **Symptomer & humør** åbner dagen.
+4. Under menstruationen trykker du på **Let**, **Middel** eller **Kraftig** på kortet. **Symptomer & humør** åbner dagen.
 5. Slut? Tryk på **Den er slut**, og vælg den sidste dag. Dagene imellem tæller også.
 
-![Kortet i Cyklus på dag 18: »Næste menstruation omkring 26. okt. – 30. okt.« og knappen Menstruation startede. I dag er ringet ind i måneden nedenunder.](cycle-start)
+![Kortet i Cyklus på dag 18 med en ring af prikker, »Næste menstruation omkring 23. nov. – 27. nov.« og knappen Menstruation startede. I dag er ringet ind i måneden nedenunder.](cycle-start)
+
+Ringen viser én prik for hver dag i cyklussen; det, du har registreret i dag, står på kortet.
 
 Indtil du siger, den er slut, regner Cyklus med, at du har menstruation i din sædvanlige længde. Næste menstruation vises som et interval af datoer, aldrig som én bestemt dag.
 

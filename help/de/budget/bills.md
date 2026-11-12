@@ -3,7 +3,7 @@ id: budget-bills
 title: Rechnungen, Erinnerungen und Budget-Warnungen
 summary: Lass dich vor einer fälligen Rechnung erinnern, sieh Rechnungen im Kalender und erfahre, wenn ein Budget fast aufgebraucht ist.
 keywords: rechnung, rechnungen, fällig, überfällig, erinnerung, miete, warnung, limit, kommt noch, kalender, benachrichtigung
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Eine Rechnung ist eine Ausgabe, die du noch bezahlen musst, zum Beispiel die Miete.
 
@@ -16,7 +16,7 @@ Rechnungen erscheinen auch im Kalender. Zum Ausblenden schalte **Rechnungen** in
 
 Budget-Warnungen kommen bei 80 % und 100 % des Limits, den Rest aus dem Vormonat eingerechnet.
 
-![Der Bildschirm Benachrichtigungen mit den Schaltern Rechnungs-Erinnerungen und Budget-Warnungen.](notifications-choose)
+![Der Bildschirm Benachrichtigungen mit dem Schalter Budget-Warnungen oben, über Familienänderungen.](notifications-choose)
 
 Ausschalten kannst du sie unter **Einstellungen** → **Benachrichtigungen**: **Rechnungs-Erinnerungen** und **Budget-Warnungen**.
 

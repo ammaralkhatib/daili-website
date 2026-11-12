@@ -3,7 +3,7 @@ id: budget-bills
 title: Factures, rappels et alertes de budget
 summary: Reçois un rappel avant l'échéance d'une facture, vois les factures dans l'agenda et sache quand un budget est presque épuisé.
 keywords: facture, factures, échéance, en retard, rappel, loyer, alerte, plafond, à venir, agenda, notification
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Une facture est une dépense que tu dois encore payer, comme le loyer.
 
@@ -16,7 +16,7 @@ Les factures apparaissent aussi dans l'agenda. Pour les masquer, désactive **Fa
 
 Les alertes de budget arrivent à 80 % et à 100 % du plafond, en comptant l'argent reporté du mois dernier.
 
-![L'écran Notifications, avec les interrupteurs Rappels de factures et Alertes de budget.](notifications-choose)
+![L'écran Notifications avec l'interrupteur Alertes de budget en haut, au-dessus de Changements dans la famille.](notifications-choose)
 
 Pour les couper : **Paramètres** → **Notifications** → **Rappels de factures** et **Alertes de budget**.
 

@@ -3,7 +3,7 @@ id: habits-reminders
 title: Gewohnheits-Erinnerungen
 summary: Lass dich zu einer Uhrzeit deiner Wahl erinnern, oder bei jedem Zählschritt, und hake die Gewohnheit direkt in der Benachrichtigung ab.
 keywords: erinnerung, benachrichtigung, anstupser, wecker, uhrzeit, gewohnheit erinnern, erinnere mich, jedes mal, zähler, erledigt
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Ein kleiner Anstoß zur richtigen Zeit macht es leichter, eine Gewohnheit durchzuhalten.
 
@@ -14,7 +14,7 @@ Ein kleiner Anstoß zur richtigen Zeit macht es leichter, eine Gewohnheit durchz
 3. Ein Zähler kann **Einmal am Tag** oder **Jedes Mal** erinnern: bis zu 8 Mal, und die Erinnerungen hören auf, sobald du die Zahl erreichst.
 4. Tippe auf **Gewohnheit starten**, oder auf **Speichern**, wenn du eine änderst.
 
-Wenn die Erinnerung kommt, tippe auf **Erledigt**, um die Gewohnheit abzuhaken, ohne daili zu öffnen. Bei einem Zähler muss daili aufgehen, damit du zählen kannst.
+Wenn die Erinnerung kommt, tippe auf **Erledigt**, um die Gewohnheit abzuhaken, ohne daili zu öffnen. Oder tippe auf die Erinnerung selbst: Deine Gewohnheiten öffnen sich bei dieser Gewohnheit, bereit zum Abhaken. Ein Zähler braucht das, weil **Erledigt** nicht zählen kann.
 
 Bei einer Gewohnheit mit **Jeder für sich** starten alle mit derselben Uhrzeit. Später können die Person, die sie erstellt hat, oder ein Admin ihre eigene Uhrzeit ändern.
 

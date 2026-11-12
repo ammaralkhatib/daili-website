@@ -5,7 +5,7 @@ summary: Vezi-ți planurile, bifează sarcini și cumpărături sau adaugă ceva
 keywords: widget, widgeturi, ecran principal, ecran de blocare, iphone, android, obiceiuri, cină, adăugare rapidă, zi de naștere, bifează, adaugă widget
 tipTitle: Planul tău pe ecranul telefonului
 tipBody: Adaugă un widget daili și vezi ce urmează fără să deschizi aplicația.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 daili are widgeturi pentru calendar (**Calendar** și **Urmează**, cu numărătoare inversă până la următorul eveniment), **Cumpărături**, **Sarcini**, obiceiuri cu un inel de progres, numărătoarea până la zilele de naștere, cina de diseară, adăugare rapidă și **Notiță rapidă**.
 
@@ -14,10 +14,10 @@ daili are widgeturi pentru calendar (**Calendar** și **Urmează**, cu numărăt
 3. Găsește daili, apoi alege un widget și o mărime.
 4. Pe iPhone, apasă pe **Adaugă un widget**. Pe Android, trage-l într-un loc liber.
 
-Bifează sarcini, cumpărături și obiceiuri direct pe widget. **+** adaugă ceva; apasă în altă parte ca să deschizi daili acolo.
+Bifează sarcini, cumpărături și obiceiuri direct pe widget. **+** adaugă ceva; apasă în altă parte ca să deschizi daili.
 
-Widgetul de calendar îți arată zilele următoare. Inelul widgetului **Obiceiuri** arată câte sunt gata azi.
+Widgetul **Calendar** arată și calendarele legate și pe cele din telefon. Un eveniment nou din telefon apare după ce deschizi daili.
 
 Pe iPhone, ecranul de blocare poate arăta următorul eveniment, un buton pentru o notiță nouă și contoare. Titlurile rămân ascunse până deblochezi telefonul.
 
-> Note: Widgeturile arată familia sau grupul tău activ. Dacă unul pare vechi, deschide daili pentru o clipă.
+> Note: Un widget arată familia sau grupul tău activ, sau pe cel ales în setările lui. Pare vechi? Deschide daili.

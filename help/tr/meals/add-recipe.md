@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Tarif ekle
 summary: Ailenin tariflerini malzemeleri, adımları ve fotoğrafıyla tek yerde tut.
 keywords: tarif, tarif ekle, yemek kitabı, tarif defteri, malzemeler, yemek pişirme, yemek, fotoğraf, aile tarifleri
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Büyükannenin lazanyası, herkesin bulabileceği aile tarif defterine aittir.
 
@@ -15,9 +15,9 @@ Büyükannenin lazanyası, herkesin bulabileceği aile tarif defterine aittir.
 4. Her malzeme için **Malzeme ekle**, her adım için **Adım ekle** seçeneğine dokun.
 5. **Oluştur** düğmesine dokun. Tüm ekleme yollarında olduğu gibi, sonunda tarif listene dönersin.
 
-Bir tarifi sonradan değiştirmek için onu aç, üstteki **⋮** simgesine, sonra **Düzenle** seçeneğine dokun.
+Bir tarifi sonradan değiştirmek için onu aç, üstteki **⋮** simgesine, sonra **Düzenle** seçeneğine dokun. **Notlarımız** da orada.
 
-Bir tarifte **Planla** onu yemek planına ekler: bir gün, bir öğün ve porsiyon seç. Tarifin kaynağı, başlığın altında, süre ve porsiyonun yanındaki küçük etikettir.
+Alttaki **Planla** bir tarifi yemek planına ekler: bir gün, bir öğün ve porsiyon seç. Tarifin kaynağı, süre ve porsiyondan sonraki küçük etikettir.
 
 > Note: Tarifler tüm aileye aittir. Herkes açabilir ve herkes değiştirebilir.
 

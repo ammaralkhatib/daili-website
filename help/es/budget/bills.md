@@ -3,7 +3,7 @@ id: budget-bills
 title: Facturas, recordatorios y alertas de presupuesto
 summary: Recibe un recordatorio antes de que venza una factura, mira las facturas en el calendario y entérate cuando un presupuesto esté casi agotado.
 keywords: factura, facturas, vencimiento, vencida, recordatorio, alquiler, alerta, límite, por venir, calendario, notificación
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Una factura es un gasto que aún tienes que pagar, como el alquiler.
 
@@ -16,7 +16,7 @@ Las facturas también salen en el calendario. Para ocultarlas, desactiva **Factu
 
 Las alertas de presupuesto llegan al 80 % y al 100 % del límite, contando el dinero que pasa del mes anterior.
 
-![La pantalla Notificaciones, con los interruptores Recordatorios de facturas y Alertas de presupuesto.](notifications-choose)
+![La pantalla Notificaciones con el interruptor Alertas de presupuesto arriba, encima de Cambios en la familia.](notifications-choose)
 
 Desactívalas en **Ajustes** → **Notificaciones**: **Recordatorios de facturas** y **Alertas de presupuesto**.
 

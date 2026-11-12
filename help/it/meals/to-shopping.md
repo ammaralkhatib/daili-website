@@ -5,7 +5,7 @@ summary: Aggiungi alla lista della spesa tutto ciò che serve per una ricetta, o
 keywords: ingredienti, lista della spesa, spesa, alimentari, aggiungere alla lista, ricetta, menu, comprare
 tipTitle: Dal menu alla lista della spesa
 tipBody: Pianifica i pasti della settimana, poi metti tutti i loro ingredienti nella lista della spesa in un colpo solo.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Basta ricopiare gli ingredienti a mano.
 
@@ -17,5 +17,7 @@ Basta ricopiare gli ingredienti a mano.
 4. Tocca il pulsante in basso, come **Aggiungi 3 articoli**.
 
 Tocca **Apri la lista** nel messaggio per vederli.
+
+**Aggiungi tutto alla lista**, sotto gli ingredienti di una ricetta, fa lo stesso. Se hai cambiato le porzioni, nella lista vanno le nuove quantità.
 
 > Note: Dal menu, solo i pasti fatti da una ricetta portano ingredienti. I pasti senza ricetta non ne hanno.

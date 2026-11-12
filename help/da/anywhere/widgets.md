@@ -5,7 +5,7 @@ summary: Se dine planer, afkryds opgaver og indkøb, eller tilføj noget nyt –
 keywords: widget, widgets, hjemmeskærm, låseskærm, iphone, android, vaner, aftensmad, hurtig tilføjelse, fødselsdag, afkryds, tilføj widget
 tipTitle: Din plan på din hjemmeskærm
 tipBody: Tilføj en daili-widget, og se, hvad der sker som det næste, uden at åbne appen.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 daili har kalenderwidgets (**Kalender** og **Næste** med nedtælling), **Indkøb**, **Opgaver**, **Vaner** med en fremskridtsring, nedtælling til fødselsdage, aftenens aftensmad, hurtig tilføjelse og **Hurtig note**.
 
@@ -14,10 +14,10 @@ daili har kalenderwidgets (**Kalender** og **Næste** med nedtælling), **Indkø
 3. Find daili, og vælg så en widget og en størrelse.
 4. På iPhone trykker du på **Tilføj widget**. På Android trækker du den til et ledigt sted.
 
-Afkryds opgaver, indkøb og vaner direkte på widgetten. **+** tilføjer noget; tryk et andet sted, så åbner daili der.
+Afkryds opgaver, indkøb og vaner direkte på widgetten. **+** tilføjer noget; tryk et andet sted for at åbne daili.
 
-Kalenderwidgetten viser dine næste dage. Ringen i **Vaner** viser, hvor mange der er klaret i dag.
+Widgetten **Kalender** viser også linkede kalendere og telefonens kalendere. En ny begivenhed fra telefonen vises, når du åbner daili.
 
 På iPhone kan låseskærmen vise **Næste**, en knap til en ny note og tællere. Titler forbliver skjulte, indtil du låser op.
 
-> Note: Widgets viser din aktive familie eller gruppe. Ser en forældet ud, så åbn daili et øjeblik.
+> Note: En widget viser din aktive familie eller gruppe eller den, der er valgt i dens indstillinger. Forældet? Åbn daili.

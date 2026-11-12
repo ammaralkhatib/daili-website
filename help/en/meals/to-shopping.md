@@ -7,10 +7,10 @@ keywords: ingredients, shopping list, grocery, groceries, add to list, recipe, m
 routes: /add-to-shopping
 tryIt: /meal-plan
 since: 1.0.0
-updated: 2026-11-10
+updated: 2026-11-13
 media: meals-to-shopping
 order: 9
-related: meals-plan-week, lists-shopping
+related: meals-plan-week, meals-recipe-screen, lists-shopping
 tipTitle: From meal plan to shopping list
 tipBody: Plan the week's meals, then put all their ingredients on your shopping list in one go.
 tipSkipIf: hasMealPlan
@@ -26,5 +26,7 @@ No more copying ingredients by hand.
 4. Tap the button at the bottom, like **Add 3 items**.
 
 Tap **Open list** in the message to see them.
+
+**Add all to list** under a recipe's ingredients does the same. If you changed the servings, the new amounts go on the list.
 
 > Note: From the meal plan, only meals made from a recipe bring ingredients. Meals without a recipe have none.

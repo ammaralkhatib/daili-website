@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Ostoslistat: lisää, merkitse, tyhjennä
-summary: Yksi ostoslista, jonka koko perhe jakaa. Lisää ostoksia, merkitse ne kaupassa ja tyhjennä ostetut.
-keywords: ostokset, ruokaostokset, ostoslista, kauppalista, osta, merkitse, rastita, kauppa, tyhjennä, tehty
-translatedFrom: 2026-11-10
+summary: Yksi ostoslista, jonka koko perhe jakaa. Lisää ostoksia, merkitse ne kaupassa ja kerro muille, että lähdet kauppaan.
+keywords: ostokset, ruokaostokset, ostoslista, kauppalista, osta, merkitse, kauppa, äskettäin ostetut, kiireellinen, lähden kauppaan, liitä
+translatedFrom: 2026-11-13
 ---
-Kaikki perheessäsi näkevät samat ostoslistat. Kun joku lisää tai merkitsee ostoksen, kaikki näkevät sen.
+Koko perheesi näkee samat listat ja jokaisen muutoksen.
 
-![Ruokaostokset-lista, jossa on avoimia ostoksia ja kaksi merkittyä kohdan Tehty alla. Alareunan Lisää kohde -palkki on ympyröity.](lists-shopping)
+![Ruokaostokset-lista, jossa Maito on merkitty kiireelliseksi ja kaksi ostosta on kohdassa Äskettäin ostetut. Lähden kauppaan on ympyröity.](lists-shopping)
 
-1. Napauta aloitusnäytöllä **Ostokset** ja sitten listaa. Jos haluat uuden listan, napauta **+** ja sitten **Ostoslista**, kirjoita **Nimi** ja napauta **Luo**.
-2. Kirjoita tarvitsemasi alareunan kenttään **Lisää kohde** ja lisää se.
-3. Napauta kaupassa ostoksen edessä olevaa ruutua. Se siirtyy alas kohtaan **Tehty**.
-4. Kun olet taas kotona, napauta **⋯** ja sitten **Poista tehdyt**. Tai napauta **Poista kaikki merkinnät**, jos haluat käyttää samaa listaa uudelleen.
+1. Napauta aloitusnäytöllä **Ostokset** ja sitten listaa. Jos haluat uuden, napauta **+** ja sitten **Ostoslista**, kirjoita **Nimi** ja napauta **Luo**.
+2. Kirjoita tarvitsemasi kenttään **Lisää kohde**. ”2 kg omenoita” lisää omenat määrällä 2 kg; napauta sirua, jos haluat pitää tekstisi sellaisenaan. Liitä useita rivejä, niin kaikki lisätään.
+3. Merkitse ostos kaupassa. Se siirtyy kohtaan **Äskettäin ostetut**; napauta sitä, niin se palaa listalle.
+4. Napauta kotona **⋯** ja sitten **Tyhjennä äskettäin ostetut**, tai **Lisää kaikki takaisin**, jos haluat käyttää listaa uudelleen.
 
-Pyyhkäise ostosta vasemmalle, niin se poistuu, tai paina sitä pitkään, niin voit siirtää sitä.
+![Lisäyskenttä, johon on kirjoitettu ”2 kg Omenat”. Sen yläpuolella oleva siru näyttää ”Omenat 2 kg”. Lisäyskenttä on ympyröity.](lists-shopping-amount)
 
-Jos sinulla on budjetti, daili tarjoaa viimeisen ostoksen merkitsemisen jälkeen kulun lisäämistä siihen.
+Pyyhkäise ostosta oikealle, niin siitä tulee **Kiireellinen**: se saa punaisen merkin ja siirtyy ylös. Merkitseminen poistaa merkin. Pyyhkäise vasemmalle, niin se poistuu.
 
-Haluatko seurata tuotetta myös kotona? Napauta sitä ja laita **Pidä varastossa** päälle.
+**Lähden kauppaan** kertoo muille, kerran listaa kohden 30 minuutin välein. Ei yksityisillä listoilla.
 
-Ei kenttää? Tallennetut listat aukeavat silti, ja voit merkitä ja lisätä ostoksia. Pieni pilvi merkitsee rivin, kunnes se on lähetetty. Muut muutokset vaativat yhteyden.
+daili säilyttää 60 viimeksi ostettua. Ilman yhteyttä voit silti merkitä ja lisätä ostoksia.

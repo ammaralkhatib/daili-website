@@ -5,7 +5,7 @@ summary: Pozri si svoje plány, odškrtni úlohy a nákupy alebo pridaj niečo n
 keywords: widget, widgety, plocha, zamknutá obrazovka, iphone, android, návyky, večera, rýchle pridanie, narodeniny, odškrtnúť, pridať widget
 tipTitle: Tvoj plán na ploche telefónu
 tipBody: Pridaj widget daili a uvidíš, čo ťa čaká, bez otvárania aplikácie.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 daili má kalendárové widgety **Kalendár** a **Najbližšie** (s odpočtom do ďalšej udalosti), ďalej **Nákupy**, **Úlohy**, návyky s kruhom pokroku, odpočet do narodenín, dnešnú večeru, rýchle pridanie a **Rýchla poznámka**.
 
@@ -14,10 +14,10 @@ daili má kalendárové widgety **Kalendár** a **Najbližšie** (s odpočtom do
 3. Nájdi daili a vyber widget a veľkosť.
 4. Na iPhone ťukni na **Pridať widget**. V Androide ho potiahni na voľné miesto.
 
-Úlohy, nákupy a návyky odškrtneš priamo na widgete. **+** pridá niečo nové; ťukni inam a daili sa otvorí práve tam.
+Úlohy, nákupy a návyky odškrtneš priamo na widgete. **+** pridá niečo nové; ťuknutím inam otvoríš daili.
 
-Kalendárový widget ukazuje tvoje najbližšie dni. Kruh na widgete **Návyky** ukazuje, koľko ich je dnes hotových.
+Widget **Kalendár** ukazuje aj prepojené kalendáre a kalendáre z telefónu. Nová udalosť z telefónu sa ukáže, keď otvoríš daili.
 
 Na iPhone môže zamknutá obrazovka ukazovať ďalšiu udalosť, tlačidlo novej poznámky a počítadlá. Názvy zostanú skryté, kým telefón neodomkneš.
 
-> Note: Widgety ukazujú tvoju aktívnu rodinu alebo skupinu. Ak sa ti niektorý zdá zastaraný, na chvíľu otvor daili.
+> Note: Widget ukazuje tvoju aktívnu rodinu alebo skupinu, alebo tú, ktorú vyberieš v jeho nastaveniach. Vyzerá zastarane? Otvor daili.

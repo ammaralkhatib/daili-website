@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Forsyninger før mensen
 summary: Noen dager før mensen kan du legge bind eller andre forsyninger i en handleliste bare du ser.
 keywords: forsyninger, bind, tamponger, mensundertøy, smertestillende, handleliste, privat liste, før mensen
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Noen dager før neste mens kan starte, kan Syklus-skjermen spørre: «Mensen din kan starte snart. Trenger du noe?»
 
@@ -16,4 +16,4 @@ Noen dager før neste mens kan starte, kan Syklus-skjermen spørre: «Mensen din
 
 Bare tingene du krysset av, legges til, i en liste bare du kan se.
 
-Trykk på × på kortet for å skjule det til neste gang. Vil du ikke få det mer, slår du av **Foreslå forsyninger før mensen** i **Syklusinnstillinger**.
+Trykk på × på kortet for å skjule det til neste gang. Vil du ikke få det mer, slår du av **Foreslå forsyninger før mensen** under **Påminnelser** i **Syklusinnstillinger**.

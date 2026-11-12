@@ -3,7 +3,7 @@ id: budget-bills
 title: Rachunki, przypomnienia i alerty budżetu
 summary: Dostań przypomnienie przed terminem rachunku, zobacz rachunki w kalendarzu i dowiedz się, kiedy budżet prawie się kończy.
 keywords: rachunek, rachunki, termin płatności, zaległy, przypomnienie, czynsz, alert, limit, nadchodzące, kalendarz, powiadomienie
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Rachunek to wydatek, który dopiero musisz zapłacić, na przykład czynsz.
 
@@ -16,7 +16,7 @@ Rachunki widać też w kalendarzu. Żeby je ukryć, wyłącz **Rachunki** na ekr
 
 Alerty budżetu przychodzą przy 80% i 100% limitu, łącznie z kwotą przeniesioną z poprzedniego miesiąca.
 
-![Ekran Powiadomienia z przełącznikami Przypomnienia o rachunkach i Alerty budżetu.](notifications-choose)
+![Ekran Powiadomienia z przełącznikiem Alerty budżetu na górze, nad grupą Zmiany w rodzinie.](notifications-choose)
 
 Wyłączysz je tutaj: **Ustawienia** → **Powiadomienia**: **Przypomnienia o rachunkach** i **Alerty budżetu**.
 

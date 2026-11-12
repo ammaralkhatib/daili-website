@@ -5,7 +5,7 @@ summary: Legg alt en oppskrift, eller en hel uke med måltider, trenger på hand
 keywords: ingredienser, handleliste, dagligvarer, innkjøp, legg til på liste, oppskrift, matplan, kjøpe
 tipTitle: Fra matplan til handleliste
 tipBody: Planlegg ukens måltider, og legg så alle ingrediensene på handlelisten på én gang.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Slutt på å skrive av ingredienser for hånd.
 
@@ -17,5 +17,7 @@ Slutt på å skrive av ingredienser for hånd.
 4. Trykk på knappen nederst, for eksempel **Legg til 3 varer**.
 
 Trykk på **Åpne listen** i meldingen for å se dem.
+
+**Alt til listen** under ingrediensene i en oppskrift gjør det samme. Har du endret porsjonene, kommer de nye mengdene på listen.
 
 > Note: Fra matplanen gir bare måltider laget fra en oppskrift ingredienser. Måltider uten oppskrift har ingen.

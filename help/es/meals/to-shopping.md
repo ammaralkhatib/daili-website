@@ -5,7 +5,7 @@ summary: Añade a tu lista de la compra todo lo que necesita una receta, o una s
 keywords: ingredientes, lista de la compra, compra, súper, añadir a la lista, receta, menú, comprar
 tipTitle: Del menú a la lista de la compra
 tipBody: Planifica las comidas de la semana y luego pon todos sus ingredientes en tu lista de la compra de una vez.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Se acabó copiar ingredientes a mano.
 
@@ -17,5 +17,7 @@ Se acabó copiar ingredientes a mano.
 4. Toca el botón de abajo, como **Añadir 3 artículos**.
 
 Toca **Abrir la lista** en el mensaje para verlos.
+
+**Añadir todo a la lista**, debajo de los ingredientes de una receta, hace lo mismo. Si cambiaste las porciones, a la lista van las cantidades nuevas.
 
 > Note: Desde el menú, solo las comidas hechas con una receta traen ingredientes. Las comidas sin receta no tienen.

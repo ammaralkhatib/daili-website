@@ -5,7 +5,7 @@ summary: Přidej do nákupního seznamu najednou všechno, co potřebuje recept 
 keywords: suroviny, nákupní seznam, nákup, potraviny, přidat do seznamu, recept, jídelníček, koupit
 tipTitle: Z jídelníčku do nákupního seznamu
 tipBody: Naplánuj jídla na týden a pak dej všechny jejich suroviny najednou do nákupního seznamu.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Konec s ručním opisováním surovin.
 
@@ -17,5 +17,7 @@ Konec s ručním opisováním surovin.
 4. Klepni na tlačítko dole, třeba **Přidat 3 položky**.
 
 Klepni ve zprávě na **Otevřít seznam** a uvidíš je.
+
+**Přidat vše do seznamu** pod surovinami receptu udělá totéž. Pokud jsi změnil počet porcí, na seznam půjdou nová množství.
 
 > Note: Z jídelníčku přinesou suroviny jen jídla udělaná podle receptu. Jídla bez receptu žádné nemají.

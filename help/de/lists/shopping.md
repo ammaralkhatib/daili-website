@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Einkaufslisten: hinzufügen, abhaken, aufräumen
-summary: Eine Einkaufsliste, die die ganze Familie teilt. Füg Einträge hinzu, hake sie im Laden ab und räum weg, was du gekauft hast.
-keywords: einkaufen, einkauf, lebensmittel, einkaufsliste, kaufen, abhaken, haken, supermarkt, aufräumen, erledigt
-translatedFrom: 2026-11-10
+summary: Eine Einkaufsliste, die die ganze Familie teilt. Füg Einträge hinzu, hake sie im Laden ab und sag den anderen, dass du einkaufen gehst.
+keywords: einkaufen, einkauf, lebensmittel, einkaufsliste, kaufen, abhaken, supermarkt, zuletzt gekauft, dringend, einkaufen gehen, einfügen
+translatedFrom: 2026-11-13
 ---
-Alle in deiner Familie sehen dieselben Einkaufslisten. Wenn jemand etwas hinzufügt oder abhakt, sehen es alle.
+Deine ganze Familie sieht dieselben Listen und jede Änderung.
 
-![Die Liste Einkaufen mit offenen Einträgen und zwei abgehakten unter Erledigt. Die Leiste Eintrag hinzufügen unten ist eingekreist.](lists-shopping)
+![Die Liste Einkaufen mit Milch als dringend markiert und zwei Einträgen unter Zuletzt gekauft. Ich gehe einkaufen ist eingekreist.](lists-shopping)
 
-1. Tippe auf dem Startbildschirm auf **Einkaufen** und dann auf eine Liste. Für eine neue Liste tippst du auf **+** und dann auf **Einkaufsliste**, gibst unter **Name** einen Namen ein und tippst auf **Erstellen**.
-2. Gib unten in **Eintrag hinzufügen** ein, was du brauchst, und füg es hinzu.
-3. Im Laden tippst du auf das Kästchen vor einem Eintrag. Er rutscht nach unten zu **Erledigt**.
-4. Wieder zu Hause tippst du auf **⋯** und dann auf **Erledigte löschen**. Oder tippe auf **Alle abwählen**, um dieselbe Liste wieder zu nutzen.
+1. Tippe auf dem Startbildschirm auf **Einkaufen** und dann auf eine Liste. Für eine neue tippst du auf **+** und dann auf **Einkaufsliste**, gibst unter **Name** einen Namen ein und tippst auf **Erstellen**.
+2. Gib in **Eintrag hinzufügen** ein, was du brauchst. „2 kg Äpfel“ fügt Äpfel mit 2 kg hinzu; tippe auf den Chip, um deinen Text zu behalten. Füg mehrere Zeilen ein, um alle hinzuzufügen.
+3. Im Laden hakst du einen Eintrag ab. Er rutscht zu **Zuletzt gekauft**; tippe darauf, um ihn zurückzuholen.
+4. Zu Hause tippst du auf **⋯** und dann auf **Zuletzt Gekauftes löschen**, oder auf **Alle wieder hinzufügen**, um die Liste wieder zu nutzen.
 
-Wische einen Eintrag nach links, um ihn zu löschen, oder halte ihn gedrückt, um ihn zu verschieben.
+![Die Eingabeleiste mit „2 kg Äpfel“. Der Chip darüber zeigt „Äpfel 2 kg“. Die Eingabeleiste ist eingekreist.](lists-shopping-amount)
 
-Hast du ein Budget, bietet dir daili beim Abhaken des letzten Eintrags an, die Kosten dort einzutragen.
+Wische einen Eintrag nach rechts, um ihn **Dringend** zu machen: Er bekommt eine rote Markierung und rutscht nach oben. Beim Abhaken verschwindet die Markierung. Nach links wischen löscht ihn.
 
-Willst du einen Eintrag auch zu Hause im Blick behalten? Tippe darauf und schalte **Im Vorrat behalten** ein.
+**Ich gehe einkaufen** sagt den anderen Bescheid, einmal pro Liste alle 30 Minuten. Nicht bei privaten Listen.
 
-Kein Netz? Gespeicherte Listen öffnen sich trotzdem, und du kannst abhaken und hinzufügen. Eine kleine Wolke markiert eine Zeile, bis sie gesendet ist. Andere Änderungen brauchen eine Verbindung.
+daili behält die 60 zuletzt gekauften Einträge. Offline kannst du trotzdem abhaken und hinzufügen.

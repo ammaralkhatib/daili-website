@@ -5,7 +5,7 @@ summary: Veja seus planos, marque tarefas e compras ou adicione algo novo — di
 keywords: widget, widgets, tela inicial, tela bloqueada, iphone, android, hábitos, jantar, adicionar rápido, aniversário, marcar, adicionar widget
 tipTitle: Seu plano na tela inicial
 tipBody: Adicione um widget do daili e veja o que vem a seguir sem abrir o app.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 O daili tem widgets para a sua agenda (**Calendário**, e **A seguir**, com contagem regressiva até o próximo evento), **Compras**, **Tarefas**, **Hábitos** com um anel de progresso, contagem regressiva de aniversários, o jantar de hoje, adicionar rápido e **Nota rápida**.
 
@@ -14,10 +14,10 @@ O daili tem widgets para a sua agenda (**Calendário**, e **A seguir**, com cont
 3. Procure o daili e escolha um widget e um tamanho.
 4. No iPhone, toque em **Adicionar Widget**. No Android, arraste para um espaço livre.
 
-Marque tarefas, compras e hábitos direto no widget. O **+** adiciona algo; toque em outro lugar para abrir o daili ali.
+Marque tarefas, compras e hábitos direto no widget. **+** adiciona algo; toque em outro lugar para abrir o daili.
 
-O widget de calendário mostra os seus próximos dias. O anel de **Hábitos** mostra quantos já foram feitos hoje.
+O widget **Calendário** também mostra os calendários vinculados e os do celular. Um evento novo do celular aparece assim que você abre o daili.
 
 No iPhone, a tela bloqueada pode mostrar **A seguir**, um botão **Nova nota** e contadores. Os títulos ficam ocultos até você desbloquear.
 
-> Note: Os widgets mostram a sua família ou grupo ativo. Se algum parecer desatualizado, abra o daili por um instante.
+> Note: Um widget mostra a sua família ou grupo ativo, ou o que foi escolhido nos ajustes dele. Desatualizado? Abra o daili.

@@ -3,7 +3,7 @@ id: budget-bills
 title: Facturi, mementouri și alerte de buget
 summary: Primește un memento înainte de scadența unei facturi, vezi facturile în calendar și află când bugetul e aproape consumat.
 keywords: factură, facturi, scadență, restantă, memento, chirie, alertă, limită, urmează, calendar, notificare
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 O factură este o cheltuială pe care încă trebuie s-o plătești, cum ar fi chiria.
 
@@ -16,7 +16,7 @@ Facturile apar și în calendar. Ca să le ascunzi, oprește **Facturi** în **S
 
 Alertele de buget vin la 80% și la 100% din limită, socotind și banii mutați din luna trecută.
 
-![Ecranul Notificări, cu comutatoarele Mementouri pentru facturi și Alerte de buget.](notifications-choose)
+![Ecranul Notificări cu comutatorul Alerte de buget sus, deasupra Schimbări în familie.](notifications-choose)
 
 Le poți opri în **Setări** → **Notificări**: **Mementouri pentru facturi** și **Alerte de buget**.
 

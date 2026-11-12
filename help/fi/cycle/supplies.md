@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Tarvikkeet ennen kuukautisia
 summary: Muutamaa päivää ennen kuukautisia voit lisätä siteitä tai muita tarvikkeita ostoslistalle, jonka vain sinä näet.
 keywords: tarvikkeet, siteet, tamponit, kuukautisalushousut, kipulääke, ostoslista, yksityinen lista, ennen kuukautisia
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Muutamaa päivää ennen kuin seuraavat kuukautisesi voivat alkaa, Kierto-näkymä voi kysyä: ”Kuukautisesi voivat alkaa pian. Tarvitsetko jotain?”
 
@@ -16,4 +16,4 @@ Muutamaa päivää ennen kuin seuraavat kuukautisesi voivat alkaa, Kierto-näkym
 
 Vain rastittamasi tuotteet lisätään, ja ne menevät listalle, jonka vain sinä näet.
 
-Napauta kortin ×, niin se piiloutuu seuraavaan kertaan asti. Jos et halua sitä enää, laita **Ehdota tarvikkeita ennen kuukautisia** pois päältä kohdassa **Kierron asetukset**.
+Napauta kortin ×, niin se piiloutuu seuraavaan kertaan asti. Jos et halua sitä enää, laita **Ehdota tarvikkeita ennen kuukautisia** pois päältä kohdassa **Kierron asetukset**, osiossa **Muistutukset**.

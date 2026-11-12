@@ -5,7 +5,7 @@ summary: Dodaj za jednym razem do listy zakupów wszystko, czego potrzebuje prze
 keywords: składniki, lista zakupów, zakupy, spożywcze, dodaj do listy, przepis, jadłospis, kupić
 tipTitle: Z jadłospisu na listę zakupów
 tipBody: Zaplanuj posiłki na tydzień, a potem dodaj wszystkie ich składniki do listy zakupów za jednym razem.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Koniec z przepisywaniem składników ręcznie.
 
@@ -17,5 +17,7 @@ Koniec z przepisywaniem składników ręcznie.
 4. Dotknij przycisku na dole, na przykład **Dodaj 3 artykuły**.
 
 Dotknij **Otwórz listę** w komunikacie, żeby je zobaczyć.
+
+**Dodaj wszystko do listy** pod składnikami przepisu robi to samo. Jeśli zmienisz liczbę porcji, na listę trafią nowe ilości.
 
 > Note: Z jadłospisu składniki dają tylko posiłki zrobione z przepisu. Posiłki bez przepisu nie mają składników.

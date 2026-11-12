@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Förnödenheter före din mens
 summary: Några dagar före din mens lägger du bindor eller annat på en inköpslista som bara du ser.
 keywords: förnödenheter, bindor, tamponger, mensunderkläder, smärtstillande, inköpslista, privat lista, före mens
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Några dagar innan din nästa mens kan börja kan skärmen Menscykel fråga: ”Din mens kan börja snart. Behöver du något?”
 
@@ -16,4 +16,4 @@ Några dagar innan din nästa mens kan börja kan skärmen Menscykel fråga: ”
 
 Bara det du bockade för läggs till, på en lista som bara du kan se.
 
-Tryck på × på kortet för att dölja det till nästa gång. Vill du stänga av det slår du av **Föreslå förnödenheter före min mens** i **Inställningar för menscykel**.
+Tryck på × på kortet för att dölja det till nästa gång. Vill du stänga av det slår du av **Föreslå förnödenheter före min mens** under **Påminnelser** i **Inställningar för menscykel**.

@@ -1,16 +1,18 @@
 ---
 id: anywhere-wall-tick
-title: Cocher des choses sur l'écran mural
-summary: Touche une tâche, un article de courses ou une habitude sur l'écran familial, et ça compte pour la bonne personne.
-keywords: mural, écran mural, écran familial, tablette, cocher, fait, terminé, qui l'a fait, annuler, enfants, corvées
-translatedFrom: 2026-10-29
+title: Cocher et ajouter des choses sur l'écran mural
+summary: Touche une tâche, un article de courses ou une habitude sur l'écran familial, et ça compte pour la bonne personne. Ajoute aussi des choses et profite des récompenses.
+keywords: mural, écran mural, écran familial, tablette, cocher, qui l'a fait, annuler, ajouter, récompenses, enfants, corvées
+translatedFrom: 2026-11-13
 ---
 Sur un écran familial connecté, touche une tâche, un article de courses ou une habitude pour le cocher.
 
-La coche compte pour la personne à qui l'élément appartient. Pour un article de courses, une tâche attribuée à personne ou à plusieurs, ou une habitude que vous faites ensemble, l'écran demande **Qui l’a fait ?** Touche ta photo.
+La coche compte pour la personne à qui l'élément appartient. Pour un article de courses, une tâche attribuée à personne ou à plusieurs, ou une habitude que vous faites ensemble, l'écran demande **Qui l’a fait ?** Touche ta photo. Les enfants sans compte obtiennent le crédit de leurs propres habitudes.
 
-Les enfants sans compte obtiennent le crédit de leurs propres habitudes. Pour leurs tâches, l'activité sur le site app.daili.app indique leur nom.
+**Annuler** s'affiche pendant 5 secondes. C'est le seul moyen de retirer une coche ici. Une tâche récurrente n'a pas de bouton **Annuler**.
 
-**Annuler** s'affiche pendant 5 secondes. Une ligne cochée n'est pas un bouton : utilise **Annuler** pour retirer une coche. Plus tard, décoche-la sur un ordinateur ou dans l'app. Une tâche récurrente passe tout de suite à sa prochaine date et n'a pas de bouton **Annuler**, comme dans l'app.
+Le **+** rond en haut à droite ajoute un événement, une tâche, un article de courses ou un repas. Choisis d'abord qui ajoute.
 
-> Note: Un tableau ouvert avec **Lancer le mode mural** depuis ta propre session ne fait qu'afficher. Pour cocher, il faut un écran familial.
+Les récompenses se trouvent sous les habitudes de chaque personne. Quand une récompense est complète, un parent touche **C'est fait**. **Récompense** sous une colonne en ajoute une nouvelle. Les deux demandent d'abord **Qui es-tu ?**
+
+> Note: Un tableau ouvert avec **Ouvrir le tableau ici** ou **Lancer le mode mural** depuis ta propre session ne fait qu'afficher.

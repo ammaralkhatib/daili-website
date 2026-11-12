@@ -3,7 +3,7 @@ id: habits-reminders
 title: Herinneringen voor gewoontes
 summary: Krijg een seintje op een tijd die je kiest, of één voor elke telling, en vink de gewoonte meteen af vanuit de melding.
 keywords: herinnering, melding, seintje, alarm, tijd, gewoonteherinnering, herinner me, elke keer, teller, klaar
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Een seintje op het juiste moment maakt een gewoonte makkelijker vol te houden.
 
@@ -14,7 +14,7 @@ Een seintje op het juiste moment maakt een gewoonte makkelijker vol te houden.
 3. Een teller kan **Eén keer per dag** of **Elke keer** herinneren: tot 8 keer, en ze stoppen zodra je het aantal haalt.
 4. Tik op **Gewoonte starten**, of op **Opslaan** als je er een wijzigt.
 
-Komt de herinnering binnen, tik dan op **Klaar** om de gewoonte af te vinken zonder daili te openen. Bij een teller moet daili open, zodat je kunt tellen.
+Komt de herinnering binnen, tik dan op **Klaar** om de gewoonte af te vinken zonder daili te openen. Of tik op de herinnering zelf: je gewoontes openen bij die gewoonte, klaar om af te vinken. Een teller heeft dat nodig, want **Klaar** kan niet tellen.
 
 Bij een gewoonte met **Ieder voor zich** begint iedereen met dezelfde tijd. Later kunnen de maker of een beheerder hun eigen tijd wijzigen.
 

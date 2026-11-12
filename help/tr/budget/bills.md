@@ -3,7 +3,7 @@ id: budget-bills
 title: Faturalar, hatırlatıcılar ve bütçe uyarıları
 summary: Faturanın son ödeme gününden önce hatırlatma al, faturaları takvimde gör ve bütçe neredeyse bittiğinde haberin olsun.
 keywords: fatura, faturalar, son ödeme, gecikmiş, hatırlatıcı, kira, uyarı, limit, yaklaşan, takvim, bildirim
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Fatura, kira gibi henüz ödemen gereken bir giderdir.
 
@@ -16,7 +16,7 @@ Faturalar takvimde de görünür. Gizlemek için **Takvim ayarları** içinde **
 
 Bütçe uyarıları, geçen aydan aktarılan para da sayılarak limitin %80'inde ve %100'ünde gelir.
 
-![Bildirimler ekranı; Fatura hatırlatıcıları ve Bütçe uyarıları anahtarlarıyla.](notifications-choose)
+![Bildirimler ekranı; en üstte, Aile değişiklikleri bölümünün üstünde Bütçe uyarıları anahtarı.](notifications-choose)
 
 Bunları **Ayarlar** → **Bildirimler** içinden kapatabilirsin: **Fatura hatırlatıcıları** ve **Bütçe uyarıları**.
 

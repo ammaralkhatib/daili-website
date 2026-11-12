@@ -3,7 +3,7 @@ id: meals-add-recipe
 title: Aggiungere una ricetta
 summary: Tieni le ricette di famiglia in un solo posto, con ingredienti, passaggi e una foto.
 keywords: ricetta, aggiungere ricetta, ricettario, raccolta di ricette, ingredienti, cucinare, piatto, foto, ricette di famiglia
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Le lasagne della nonna vanno nel ricettario di famiglia, dove tutti possono trovarle.
 
@@ -15,9 +15,9 @@ Le lasagne della nonna vanno nel ricettario di famiglia, dove tutti possono trov
 4. Tocca **Aggiungi un ingrediente** per ogni ingrediente e **Aggiungi un passaggio** per ogni passaggio.
 5. Tocca **Crea**. Come per ogni modo di aggiungere, alla fine arrivi all'elenco delle tue ricette.
 
-Per modificare una ricetta in seguito, aprila, tocca **⋮** in alto, poi **Modifica**.
+Per modificare una ricetta in seguito, aprila, tocca **⋮** in alto, poi **Modifica**. Lì trovi anche **Le nostre note**.
 
-In una ricetta, **Pianifica** la mette nel menu: scegli un giorno, un pasto e le porzioni. La sua fonte è la piccola etichetta sotto il titolo, accanto al tempo e alle porzioni.
+**Pianifica**, in basso, mette una ricetta nel menu: scegli un giorno, un pasto e le porzioni. La sua fonte è la piccola etichetta dopo il tempo e le porzioni.
 
 > Note: Le ricette appartengono a tutta la famiglia. Tutti possono aprirle, e chiunque può modificarle.
 

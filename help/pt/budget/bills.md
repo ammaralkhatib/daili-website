@@ -3,7 +3,7 @@ id: budget-bills
 title: Contas, lembretes e alertas de orçamento
 summary: Receba um lembrete antes do vencimento de uma conta, veja as contas no calendário e saiba quando um orçamento está quase no fim.
 keywords: conta, contas, vencimento, atrasada, lembrete, aluguel, alerta, limite, por vir, calendário, notificação
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Uma conta é uma despesa que você ainda precisa pagar, como o aluguel.
 
@@ -16,7 +16,7 @@ As contas também aparecem no calendário. Para escondê-las, desative **Contas*
 
 Os alertas de orçamento chegam em 80% e em 100% do limite, contando o dinheiro que passou do mês anterior.
 
-![A tela Notificações, com as chaves Lembretes de contas e Alertas de orçamento.](notifications-choose)
+![A tela Notificações com a chave Alertas de orçamento no topo, acima de Mudanças na família.](notifications-choose)
 
 Desative esses avisos em **Configurações** → **Notificações**: **Lembretes de contas** e **Alertas de orçamento**.
 

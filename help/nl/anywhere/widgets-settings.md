@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Kiezen wat een widget toont
-summary: Kies welke boodschappenlijst een widget toont, en of hij alleen jouw taken en gewoontes toont of die van iedereen.
-keywords: widget, widgetinstellingen, widget wijzigen, boodschappenlijst, taken, gewoontes, alleen mijn, iedereen, beginscherm
-translatedFrom: 2026-11-10
+summary: Kies welk gezin of welke groep een widget toont, welke boodschappenlijst, en of hij alleen jouw taken en gewoontes toont of die van iedereen.
+keywords: widget, widgetinstellingen, widget wijzigen, opnieuw configureren, gezin, groep, boodschappenlijst, taken, gewoontes, alleen van mij, iedereen, beginscherm
+translatedFrom: 2026-11-13
 ---
-De widgets **Boodschappen**, **Taken** en **Gewoontes** hebben instellingen. Elke widget onthoudt zijn eigen, dus twee boodschappenwidgets kunnen twee lijsten tonen.
+Elke widget op je beginscherm behalve **Snel toevoegen** heeft instellingen, en elke widget onthoudt zijn eigen.
 
 1. Houd de widget ingedrukt.
-2. Op de iPhone tik je op widget wijzigen. Op Android tik je op het potlood.
-3. Kies wat hij toont. Op Android tik je daarna op **Done**.
+2. Op de iPhone tik je op **Wijzig widget**. Op Android 12 of nieuwer tik je op het potlood, of op Opnieuw configureren. Oudere Android-versies tonen de instellingen één keer, als je de widget toevoegt.
+3. Kies wat hij toont. Op Android tik je daarna op **Klaar**.
 
-**Boodschappen**: kies onder **List** voor **Most recent** (de nieuwste lijst) of een van je lijsten.
+**Gezin of groep** (op Android de eerste regel): **Actief gezin** volgt het gezin dat open is in daili, of kies één gezin dat hij altijd toont. Staat er op de widget **Tik om te laden**, tik er dan op.
 
-**Taken**: kies onder **Show** voor **Mine** of **Everyone**.
+Een widget voor een ander gezin toont de naam ervan, en een tik opent daili daar.
 
-**Gewoontes**: kies onder **Show** voor **Family** of **Only mine**. De voortgangsring telt dezelfde gewoontes.
+**Boodschappen**: kies onder **Lijst** voor **Meest recente** of een van je lijsten.
 
-Een widget toont altijd het gezin of de groep die in daili actief is — per widget een gezin kiezen kan niet.
+**Taken**: kies onder **Tonen** voor **Van mij** of **Iedereen**.
 
-> Note: Deze instellingen zijn voorlopig in het Engels. Op de iPhone hebben de instellingen en het afvinken op de widget iOS 17 of nieuwer nodig.
+**Gewoontes**: kies onder **Tonen** voor **Gezin** of **Alleen van mij**.
+
+Widgets op het toegangsscherm, **Snel toevoegen** en het horloge volgen altijd het actieve gezin.
+
+> Note: Op de iPhone hebben de instellingen en het afvinken op de widget iOS 17 of nieuwer nodig.

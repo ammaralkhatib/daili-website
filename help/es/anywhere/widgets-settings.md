@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Elige qué muestra un widget
-summary: Elige qué lista de la compra muestra un widget y si muestra solo tus tareas y hábitos o los de todos.
-keywords: widget, ajustes del widget, editar widget, lista de la compra, tareas, hábitos, solo los míos, todos, pantalla de inicio
-translatedFrom: 2026-11-10
+summary: Elige la familia o el grupo de un widget, su lista de la compra y si muestra solo tus tareas y hábitos o los de todos.
+keywords: widget, ajustes del widget, editar widget, reconfigurar, familia, grupo, lista de la compra, tareas, hábitos, solo los míos, todos, pantalla de inicio
+translatedFrom: 2026-11-13
 ---
-Los widgets **Compras**, **Tareas** y **Hábitos** tienen ajustes. Cada widget guarda los suyos, así que dos widgets de compras pueden mostrar dos listas.
+Todos los widgets de la pantalla de inicio, menos **Añadir rápido**, tienen ajustes, y cada widget guarda los suyos.
 
 1. Mantén pulsado el widget.
-2. En el iPhone, toca editar widget. En Android, toca el lápiz.
-3. Elige qué muestra. En Android, toca luego **Done**.
+2. En el iPhone, toca **Editar widget**. En Android 12 o posterior, toca el lápiz, o Reconfigurar. Las versiones antiguas de Android muestran los ajustes una sola vez, al añadir el widget.
+3. Elige qué muestra. En Android, toca **Listo**.
 
-**Compras**: en **List**, elige **Most recent** (la lista más reciente) o una de tus listas.
+**Familia o grupo** (en Android, la primera fila): **Familia activa** sigue a la familia abierta en daili, o elige una familia para mostrarla siempre. Si el widget dice **Toca para cargar**, tócalo.
 
-**Tareas**: en **Show**, elige **Mine** o **Everyone**.
+Un widget de otra familia muestra su nombre, y al tocarlo se abre daili en ella.
 
-**Hábitos**: en **Show**, elige **Family** u **Only mine**. El anillo de progreso cuenta los mismos hábitos.
+**Compras**: en **Lista**, elige **La más reciente** o una de tus listas.
 
-Un widget siempre muestra la familia o el grupo activo en daili — no se puede elegir una familia para cada widget.
+**Tareas**: en **Mostrar**, elige **Mías** o **Todos**.
 
-> Note: De momento, estos ajustes están en inglés. En el iPhone, los ajustes y marcar en el widget necesitan iOS 17 o posterior.
+**Hábitos**: en **Mostrar**, elige **Familia** o **Solo las mías**.
+
+Los widgets de la pantalla de bloqueo, **Añadir rápido** y el reloj siempre siguen a la familia activa.
+
+> Note: En el iPhone, los ajustes y marcar en el widget necesitan iOS 17 o posterior.

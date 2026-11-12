@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Daftar belanja: tambah, centang, bersihkan
-summary: Satu daftar belanja untuk seluruh keluarga. Tambah barang, centang di toko, dan bersihkan yang sudah dibeli.
-keywords: belanja, belanja dapur, bahan makanan, daftar belanja, beli, centang, supermarket, bersihkan, selesai, pasar
-translatedFrom: 2026-11-10
+summary: Satu daftar belanja untuk seluruh keluarga. Tambah barang, centang di toko, dan beri tahu yang lain bahwa Anda mau belanja.
+keywords: belanja, belanja dapur, bahan makanan, daftar belanja, beli, centang, supermarket, baru dibeli, mendesak, mau belanja, tempel, pasar
+translatedFrom: 2026-11-13
 ---
-Semua orang di keluarga Anda melihat daftar belanja yang sama. Saat seseorang menambah atau mencentang barang, semua orang melihatnya.
+Seluruh keluarga Anda melihat daftar yang sama dan setiap perubahannya.
 
-![Daftar Belanja dapur dengan barang yang belum dibeli dan dua yang sudah dicentang di bawah Selesai. Bilah Tambah item di bawah dilingkari.](lists-shopping)
+![Daftar Belanja dengan Susu ditandai mendesak dan dua barang di bawah Baru dibeli. Saya mau belanja dilingkari.](lists-shopping)
 
-1. Di Beranda, ketuk **Belanja**, lalu ketuk sebuah daftar. Untuk daftar baru, ketuk **+**, lalu **Daftar belanja**, ketik **Nama**, lalu ketuk **Buat**.
-2. Ketik yang Anda perlukan di **Tambah item** di bawah, lalu tambahkan.
-3. Di toko, ketuk kotak di depan barang. Barang itu turun ke **Selesai**.
-4. Setelah pulang, ketuk **⋯**, lalu **Hapus yang selesai**. Atau ketuk **Hapus semua centang** untuk memakai daftar yang sama lagi.
+1. Di Beranda, ketuk **Belanja**, lalu sebuah daftar. Untuk daftar baru, ketuk **+**, lalu **Daftar belanja**, ketik **Nama**, lalu ketuk **Buat**.
+2. Ketik yang Anda perlukan di **Tambah item**. "2 kg apel" menambahkan apel dengan 2 kg; ketuk chip-nya untuk mempertahankan teks Anda. Tempel beberapa baris untuk menambahkan semuanya.
+3. Di toko, centang barang. Barang itu pindah ke **Baru dibeli**; ketuk untuk mengembalikannya.
+4. Di rumah, ketuk **⋯**, lalu **Hapus yang baru dibeli**, atau **Tambahkan semua lagi** untuk memakai daftar itu lagi.
 
-Geser barang ke kiri untuk menghapusnya, atau tekan lama untuk memindahkannya.
+![Bilah tambah dengan "2 kg Apel" diketik. Chip di atasnya bertuliskan "Apel 2 kg". Bilah tambah dilingkari.](lists-shopping-amount)
 
-Kalau Anda punya anggaran, saat mencentang barang terakhir daili menawarkan untuk menambahkan biayanya ke anggaran.
+Geser barang ke kanan untuk menjadikannya **Mendesak**: barang itu mendapat tanda merah dan naik ke atas. Mencentangnya menghapus tanda itu. Geser ke kiri untuk menghapus.
 
-Ingin memantau item ini di rumah juga? Ketuk dan aktifkan **Simpan di stok**.
+**Saya mau belanja** memberi tahu yang lain, sekali per daftar setiap 30 menit. Tidak berlaku di daftar pribadi.
 
-Tidak ada sinyal? Daftar yang tersimpan tetap bisa dibuka, dan Anda bisa mencentang dan menambah. Ikon awan kecil menandai baris sampai terkirim. Perubahan lain perlu koneksi.
+daili menyimpan 60 barang terbaru yang sudah dibeli. Saat offline, Anda tetap bisa mencentang dan menambah.

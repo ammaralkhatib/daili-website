@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Välj vad en widget visar
-summary: Välj vilken inköpslista en widget visar och om den bara visar dina uppgifter och vanor eller allas.
-keywords: widget, widgetinställningar, redigera widget, inköpslista, uppgifter, vanor, bara mina, alla, hemskärm
-translatedFrom: 2026-11-10
+summary: Välj vilken familj eller grupp en widget visar, dess inköpslista och om den bara visar dina uppgifter och vanor eller allas.
+keywords: widget, widgetinställningar, redigera widget, konfigurera om, familj, grupp, inköpslista, uppgifter, vanor, bara mina, alla, hemskärm
+translatedFrom: 2026-11-13
 ---
-Widgetarna **Inköp**, **Uppgifter** och **Vanor** har inställningar. Varje widget minns sina egna, så två inköpswidgetar kan visa två listor.
+Alla widgetar på hemskärmen utom **Lägg till snabbt** har inställningar, och varje widget minns sina egna.
 
 1. Håll fingret på widgeten.
-2. På iPhone trycker du på redigera widget. På Android trycker du på pennan.
-3. Välj vad den ska visa. På Android trycker du sedan på **Done**.
+2. På iPhone trycker du på **Redigera widget**. På Android 12 eller senare trycker du på pennan, eller på Konfigurera om. Äldre Android visar inställningarna en gång, när du lägger till widgeten.
+3. Välj vad den ska visa. På Android trycker du sedan på **Klar**.
 
-**Inköp**: under **List** väljer du **Most recent** (den senaste listan) eller en av dina listor.
+**Familj eller grupp** (på Android den första raden): **Aktiv familj** följer familjen som är öppen i daili, eller så väljer du en familj som alltid ska visas. Står det **Tryck för att läsa in** i widgeten trycker du på den.
 
-**Uppgifter**: under **Show** väljer du **Mine** eller **Everyone**.
+En widget för en annan familj visar familjens namn, och ett tryck öppnar daili där.
 
-**Vanor**: under **Show** väljer du **Family** eller **Only mine**. Förloppsringen räknar samma vanor.
+**Inköp**: under **Lista** väljer du **Senaste** eller en av dina listor.
 
-En widget visar alltid den familj eller grupp som är aktiv i daili – du kan inte välja familj per widget.
+**Uppgifter**: under **Visa** väljer du **Mina** eller **Alla**.
 
-> Note: Inställningarna är på engelska tills vidare. På iPhone kräver inställningarna och avbockning i widgeten iOS 17 eller senare.
+**Vanor**: under **Visa** väljer du **Familj** eller **Bara mina**.
+
+Widgetar på låsskärmen, **Lägg till snabbt** och klockan följer alltid den aktiva familjen.
+
+> Note: På iPhone kräver inställningarna och avbockning i widgeten iOS 17 eller senare.

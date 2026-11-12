@@ -3,16 +3,16 @@ id: cycle-privacy
 title: Cyklus: påmindelser, lås, kalender og dine data
 summary: Indstil private påmindelser, lås Cyklus, vis den i din egen kalender, og hold dine data på din telefon.
 keywords: påmindelse, lås, face id, fingeraftryk, privatliv, kalender, eksport, import, sikkerhedskopi, slet
-translatedFrom: 2026-10-27
+translatedFrom: 2026-11-13
 ---
 Tryk på tandhjulet i Cyklus for **Indstillinger for cyklus**.
 
-1. **Påmindelser**: **Påmindelse om menstruation** kommer et par dage før. **Spørg, om min menstruation er startet** er slået til fra start og spørger dagen efter det forventede interval. Låseskærmen viser kun »Du har en påmindelse. Tryk for at åbne«.
-2. **Lås Cyklus**: beder om Face ID, fingeraftryk eller telefonens kode. Appvælgeren skjuler altid Cyklus, og Android blokerer skærmbilleder af den.
-3. **Vis i min kalender**: kalenderen på denne telefon viser en dråbe, udfyldt hvis registreret, kun omrids hvis forudsagt. Slået fra til at starte med; familien ser den aldrig.
+1. **Påmindelser**: **Påmindelse om menstruation** kommer et par dage før. **Spørg, om min menstruation er startet** spørger dagen efter det forventede interval. Låseskærmen siger kun »Du har en påmindelse. Tryk for at åbne«.
+2. **Privatliv**: **Lås Cyklus** beder om Face ID, fingeraftryk eller telefonens kode. Appvælgeren skjuler Cyklus, og Android blokerer skærmbilleder af den. **Vis tydelig tekst på låseskærmen** viser hele påmindelser.
+3. Også under **Privatliv**, **Vis i min kalender**: telefonens kalender viser en dråbe, udfyldt hvis registreret, kun omrids hvis forudsagt. Familien ser den aldrig.
 4. **Importér (CSV)** henter en fil fra **Eksportér (CSV)** tilbage og beholder de dage, der allerede er her.
 
-![Indstillinger for cyklus med Vis i min kalender, kontakten for forsyninger og Eksportér og Importér. Lås Cyklus er ringet ind.](cycle-settings)
+![Indstillinger for cyklus med dine sædvanlige længder, Påmindelser med kontakten for forsyninger og afsnittet Privatliv. Lås Cyklus er ringet ind.](cycle-settings)
 
 Dine data bliver på denne telefon og i dens sikkerhedskopi, aldrig på dailis server. Hold iCloud Backup eller Googles sikkerhedskopi slået til.
 

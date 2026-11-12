@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Scorte prima delle mestruazioni
 summary: Qualche giorno prima delle mestruazioni, aggiungi assorbenti o altre scorte a una lista della spesa che vedi solo tu.
 keywords: scorte, assorbenti, tamponi, mutande mestruali, antidolorifici, lista della spesa, lista privata, prima del ciclo
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Qualche giorno prima che possano iniziare le prossime mestruazioni, la schermata Ciclo può chiederti: «Il ciclo potrebbe iniziare presto. Ti serve qualcosa?»
 
@@ -16,4 +16,4 @@ Qualche giorno prima che possano iniziare le prossime mestruazioni, la schermata
 
 Vengono aggiunte solo le voci che hai spuntato, in una lista che vedi solo tu.
 
-Tocca × sulla scheda per nasconderla fino alla prossima volta. Per non vederla più, disattiva **Suggerisci scorte prima del ciclo** in **Impostazioni del ciclo**.
+Tocca × sulla scheda per nasconderla fino alla prossima volta. Per non vederla più, disattiva **Suggerisci scorte prima del ciclo** sotto **Promemoria** in **Impostazioni del ciclo**.

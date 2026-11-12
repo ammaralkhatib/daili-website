@@ -1,23 +1,23 @@
 ---
 id: lists-shopping
 title: Alışveriş listeleri: ekle, işaretle, temizle
-summary: Tüm ailenin paylaştığı tek bir alışveriş listesi. Öğe ekle, markette işaretle ve aldıklarını temizle.
-keywords: alışveriş, market, alışveriş listesi, satın al, işaretle, tikle, süpermarket, temizle, tamamlanan, pazar
-translatedFrom: 2026-11-10
+summary: Tüm ailenin paylaştığı tek bir alışveriş listesi. Öğe ekle, markette işaretle ve alışverişe gittiğini diğerlerine haber ver.
+keywords: alışveriş, market, alışveriş listesi, satın al, işaretle, süpermarket, son alınanlar, acil, alışverişe gidiyorum, yapıştır, pazar
+translatedFrom: 2026-11-13
 ---
-Ailendeki herkes aynı alışveriş listelerini görür. Biri bir öğe eklediğinde ya da işaretlediğinde herkes görür.
+Tüm ailen aynı listeleri ve her değişikliği görür.
 
-![Açık öğeler ve Tamamlandı altında iki işaretli öğeyle Market listesi. Alttaki Öğe ekle çubuğu daire içine alınmış.](lists-shopping)
+![Sütün acil olarak işaretlendiği ve Son alınanlar altında iki öğenin bulunduğu Market listesi. Alışverişe gidiyorum daire içine alınmış.](lists-shopping)
 
 1. Ana ekranda **Alışveriş** kutucuğuna, sonra bir listeye dokun. Yeni bir liste için **+** simgesine, sonra **Alışveriş listesi** seçeneğine dokun, **Ad** alanına bir ad yaz ve **Oluştur** düğmesine dokun.
-2. İhtiyacın olanı alttaki **Öğe ekle** alanına yaz ve ekle.
-3. Markette bir öğenin önündeki kutuya dokun. Öğe aşağıya, **Tamamlandı** bölümüne iner.
-4. Eve dönünce **⋯** simgesine, sonra **Tamamlananları sil** seçeneğine dokun. Ya da aynı listeyi yeniden kullanmak için **Tüm işaretleri kaldır** seçeneğine dokun.
+2. İhtiyacın olanı **Öğe ekle** alanına yaz. "2 kg elma", 2 kg miktarıyla elma ekler; yazdığın gibi kalsın istersen çipe dokun. Birkaç satır yapıştırırsan hepsi eklenir.
+3. Markette bir öğeyi işaretle. Öğe **Son alınanlar** bölümüne geçer; geri koymak için ona dokun.
+4. Eve dönünce **⋯** simgesine, sonra **Son alınanları temizle** seçeneğine dokun ya da listeyi yeniden kullanmak için **Tümünü geri ekle** seçeneğine dokun.
 
-Bir öğeyi silmek için sola kaydır, taşımak için basılı tut.
+![Ekleme çubuğunda "2 kg Elma" yazılı. Üstündeki çipte "Elma 2 kg" yazıyor. Ekleme çubuğu daire içine alınmış.](lists-shopping-amount)
 
-Bir bütçen varsa, son öğeyi işaretlediğinde daili tutarı bütçeye eklemeyi önerir.
+Bir öğeyi **Acil** yapmak için sağa kaydır: kırmızı bir işaret alır ve yukarı çıkar. İşaretleyince bu işaret kalkar. Silmek için sola kaydır.
 
-Bir öğeyi evde de takip etmek ister misin? Ona dokun ve **Stokta tut** seçeneğini aç.
+**Alışverişe gidiyorum** diğerlerine haber verir; her liste için 30 dakikada bir kez. Özel listelerde yoktur.
 
-Sinyal yok mu? Kayıtlı listeler yine açılır, işaretleyip ekleyebilirsin. Gönderilene kadar satırda küçük bir bulut görünür. Diğer değişiklikler için bağlantı gerekir.
+daili en yeni 60 alınan öğeyi saklar. Çevrimdışıyken de işaretleyip ekleyebilirsin.

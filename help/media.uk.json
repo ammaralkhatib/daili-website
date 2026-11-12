@@ -126,5 +126,15 @@
   "habits-reward-new": { "file": "habits-reward-new.webp", "w": 720, "h": 1564, "kind": "image" },
   "habits-reward-reached": { "file": "habits-reward-reached.webp", "w": 720, "h": 1564, "kind": "image" },
   "habits-star-toast": { "file": "habits-star-toast.webp", "w": 720, "h": 1564, "kind": "image" },
-  "settings-read-aloud": { "file": "settings-read-aloud.webp", "w": 720, "h": 1564, "kind": "image" }
+  "settings-read-aloud": { "file": "settings-read-aloud.webp", "w": 720, "h": 1564, "kind": "image" },
+  "start-week-weather": { "file": "start-week-weather.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-day-weather": { "file": "calendar-day-weather.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-phone-calendars": { "file": "calendar-phone-calendars.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-shopping-amount": { "file": "lists-shopping-amount.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-categories-per-list": { "file": "lists-categories-per-list.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-categories-item-sheet": { "file": "lists-categories-item-sheet.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-recipe-screen": { "file": "meals-recipe-screen.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-recipe-servings": { "file": "meals-recipe-servings.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-recipe-notes": { "file": "meals-recipe-notes.webp", "w": 720, "h": 1564, "kind": "image" },
+  "anywhere-wall": { "file": "anywhere-wall.webp", "w": 720, "h": 1564, "kind": "image" }
 }

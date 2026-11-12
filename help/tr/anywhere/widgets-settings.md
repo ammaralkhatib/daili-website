@@ -1,22 +1,26 @@
 ---
 id: anywhere-widgets-settings
 title: Bir widget’ın ne göstereceğini seç
-summary: Bir widget'ın hangi alışveriş listesini göstereceğini ve yalnızca senin görev ve alışkanlıklarını mı yoksa herkesinkini mi göstereceğini seç.
-keywords: widget, widget ayarları, widget'ı düzenle, alışveriş listesi, görevler, alışkanlıklar, yalnızca benimkiler, herkes, ana ekran
-translatedFrom: 2026-11-10
+summary: Bir widget'ın hangi aileyi ya da grubu ve hangi alışveriş listesini göstereceğini, yalnızca senin görev ve alışkanlıklarını mı yoksa herkesinkini mi göstereceğini seç.
+keywords: widget, widget ayarları, widget'ı düzenle, yeniden yapılandır, aile, grup, alışveriş listesi, görevler, alışkanlıklar, yalnızca benimkiler, herkes, ana ekran
+translatedFrom: 2026-11-13
 ---
-**Alışveriş**, **Görevler** ve **Alışkanlıklar** widget'larının ayarları var. Her widget kendi ayarını saklar, yani iki alışveriş widget'ı iki farklı liste gösterebilir.
+**Hızlı ekle** dışındaki her ana ekran widget'ının ayarları var ve her widget kendi ayarını saklar.
 
 1. Widget'a basılı tut.
-2. iPhone'da widget'ı düzenle seçeneğine dokun. Android'de kaleme dokun.
-3. Ne göstereceğini seç. Android'de sonra **Done** düğmesine dokun.
+2. iPhone'da **Widget'ı Düzenle** seçeneğine dokun. Android 12 ve sonrasında kaleme ya da Yeniden yapılandır seçeneğine dokun. Daha eski Android'de ayarlar yalnızca bir kez, widget'ı eklerken görünür.
+3. Ne göstereceğini seç. Android'de **Bitti** düğmesine dokun.
 
-**Alışveriş**: **List** altında **Most recent** (en yeni liste) ya da listelerinden birini seç.
+**Aile veya grup** (Android'de ilk satır): **Etkin aile**, daili'de açık olan aileyi izler; ya da her zaman gösterilecek bir aile seç. Widget'ta **Yüklemek için dokun** yazıyorsa ona dokun.
 
-**Görevler**: **Show** altında **Mine** ya da **Everyone** seç.
+Başka bir ailenin widget'ı o ailenin adını gösterir ve dokununca daili orada açılır.
 
-**Alışkanlıklar**: **Show** altında **Family** ya da **Only mine** seç. İlerleme halkası da aynı alışkanlıkları sayar.
+**Alışveriş**: **Liste** altında **En son** ya da listelerinden birini seç.
 
-Bir widget her zaman daili'de etkin olan aileyi ya da grubu gösterir — her widget için ayrı aile seçilemez.
+**Görevler**: **Göster** altında **Benim** ya da **Herkes** seç.
 
-> Note: Bu ayarlar şimdilik İngilizce. iPhone'da ayarlar ve widget'ta işaretleme için iOS 17 ya da daha yenisi gerekir.
+**Alışkanlıklar**: **Göster** altında **Aile** ya da **Yalnızca benimkiler** seç.
+
+Kilit ekranı widget'ları, **Hızlı ekle** ve saat her zaman etkin aileyi izler.
+
+> Note: iPhone'da ayarlar ve widget'ta işaretleme için iOS 17 ya da daha yenisi gerekir.

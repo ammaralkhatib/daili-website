@@ -5,7 +5,7 @@ summary: Ajoute tout ce qu'il faut pour une recette, ou pour une semaine entièr
 keywords: ingrédients, liste de courses, courses, épicerie, ajouter à la liste, recette, menus, acheter
 tipTitle: Des menus à la liste de courses
 tipBody: Planifie les repas de la semaine, puis mets tous leurs ingrédients sur ta liste de courses en une fois.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Fini de recopier les ingrédients à la main.
 
@@ -17,5 +17,7 @@ Fini de recopier les ingrédients à la main.
 4. Touche le bouton en bas, comme **Ajouter 3 articles**.
 
 Touche **Ouvrir la liste** dans le message pour les voir.
+
+**Tout ajouter à la liste**, sous les ingrédients d'une recette, fait la même chose. Si tu as changé les portions, les nouvelles quantités vont sur la liste.
 
 > Note: Depuis les menus, seuls les repas faits à partir d'une recette apportent des ingrédients. Les repas sans recette n'en ont pas.

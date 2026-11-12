@@ -3,7 +3,7 @@ id: budget-bills
 title: Laskut, muistutukset ja budjettivaroitukset
 summary: Saat muistutuksen ennen laskun eräpäivää, näet laskut kalenterissa ja tiedät, kun budjetti on melkein käytetty.
 keywords: lasku, laskut, eräpäivä, myöhässä, muistutus, vuokra, varoitus, raja, tulossa, kalenteri, ilmoitus
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Lasku on kulu, joka pitää vielä maksaa, kuten vuokra.
 
@@ -16,7 +16,7 @@ Laskut näkyvät myös kalenterissa. Piilota ne laittamalla **Laskut** pois pä�
 
 Budjettivaroitukset tulevat, kun rajasta on käytetty 80 % ja 100 %. Edelliseltä kuukaudelta siirretty raha lasketaan mukaan.
 
-![Ilmoitukset-näkymä, jossa on kytkimet Laskumuistutukset ja Budjettivaroitukset.](notifications-choose)
+![Ilmoitukset-näkymä, jossa Budjettivaroitukset-kytkin on ylimpänä, Perheen muutokset -osion yläpuolella.](notifications-choose)
 
 Laita ne pois päältä kohdassa **Asetukset** → **Ilmoitukset**: **Laskumuistutukset** ja **Budjettivaroitukset**.
 

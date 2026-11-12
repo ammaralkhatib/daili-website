@@ -3,7 +3,7 @@ id: cycle-supplies
 title: Zapasy przed okresem
 summary: Kilka dni przed okresem dodaj podpaski albo inne zapasy do listy zakupów, którą widzisz tylko ty.
 keywords: zapasy, podpaski, tampony, bielizna menstruacyjna, leki przeciwbólowe, lista zakupów, prywatna lista, przed okresem
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-13
 ---
 Kilka dni przed tym, jak może zacząć się następny okres, ekran Cyklu może zapytać: „Okres może się wkrótce zacząć. Potrzebujesz czegoś?”
 
@@ -16,4 +16,4 @@ Kilka dni przed tym, jak może zacząć się następny okres, ekran Cyklu może 
 
 Dodawane są tylko zaznaczone pozycje, do listy, którą widzisz tylko ty.
 
-Dotknij × na karcie, żeby ukryć ją do następnego razu. Żeby karta w ogóle się nie pojawiała, wyłącz **Proponuj zapasy przed okresem** na ekranie **Ustawienia cyklu**.
+Dotknij × na karcie, żeby ukryć ją do następnego razu. Żeby karta w ogóle się nie pojawiała, wyłącz **Proponuj zapasy przed okresem** w sekcji **Przypomnienia** na ekranie **Ustawienia cyklu**.

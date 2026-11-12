@@ -2,21 +2,21 @@
 id: anywhere-wall
 title: daili'yi bir duvar ekranına ya da eski bir tablete koy
 summary: Mutfaktaki ya da koridordaki bir tableti herkesin okuyabileceği bir aile ekranına dönüştür.
-keywords: duvar, tablet, ipad, mutfak, aile panosu, ekran, duvar ekranı, eski tablet, eşleştirme kodu, qr, buzdolabı, tam ekran
-translatedFrom: 2026-11-10
+keywords: duvar, tablet, ipad, mutfak, aile panosu, ekran, duvar ekranı, eski tablet, eşleştirme kodu, qr, buzdolabı, kurulum kılavuzu
+translatedFrom: 2026-11-13
 ---
-Eski bir tablet bir aile ekranına dönüşür: **Ana sayfa**, **Hafta**, **Ay**, **Kişiler**, **Öğünler**, **Listeler**, **Alışkanlıklar** ve **Geri sayım**. Onu bağlayan ebeveynin sessiz saatlerinde ışığını kısar ve **Gece** görünümüne geçer.
+Eski bir tablet bir aile ekranına dönüşür: **Ana sayfa**, **Takvim** (Gün · Hafta · Ay), **Öğünler**, **Görevler**, **Alışveriş** ve **Alışkanlıklar**, en üstte de hava durumu. Onu bağlayan ebeveynin sessiz saatlerinde ışığını kısar ve **Gece** görünümüne geçer.
 
 1. Tablette app.daili.app/board/pair adresini aç. Bir kod ve bir QR görünür.
-2. Uygulamada: **Ayarlar** → **Duvar ekranı** → **Bir ekran bağla** (yalnızca yöneticiler). Kodu yaz ya da **QR kodu tara** düğmesine dokun.
-3. **Onayla** düğmesine dokun.
+2. Uygulamada (yöneticiler): **Ayarlar** → **Duvar ekranı**. **Kopyala** bu adresi kopyalar.
+3. **Bir ekran bağla** düğmesine dokun. Kodu yaz ve **Devam** düğmesine dokun ya da **QR kodu tara**. Sonra **Onayla**.
 
-Bilgisayarı ekran yapmak için: yan menüdeki adın → **Tercihler** → **Bu tarayıcıyı aile ekranı olarak kullan**.
+![Tablet adresi app.daili.app/board/pair ve Kopyala ile Duvar ekranı, altında Bir ekran bağla, Duvar ekranları ve Kurulum kılavuzu. Adres kartı daire içine alınmış.](anywhere-wall)
 
-İlk dokunuş tam ekrana geçirir. Pano kendiliğinden yeniden başlar ve yeniden bağlanır.
+**Kurulum kılavuzu** daili.app/wall-display sayfasını açar: her tablet için ipuçları. Bilgisayarda: sol menüde **Duvar ekranı**.
+
+Ayrıntıları için bir etkinliğe, bir kişinin planları için bir yüze dokun. Bir tarifteki **Pişir** ekranı doldurur.
 
 > Note: Özel şeyleri asla göstermez, seninkileri bile. Notlar, Bütçe, Döngü ve Belgeler de görünmez.
 
-Kaldırmak için: **Duvar ekranı** → **Duvar ekranları** → **Kaldır**. Onu bağlayan ebeveyn ayrılırsa ya da artık yönetici değilse ekran yine durur. Tablette: **Çıkmak için basılı tut**, sonra **Kullanmayı bırak**.
-
-iPad: Ana Ekrana Ekle seçeneğine dokun, daili'yi ana ekrandan aç ve **Aile ekranı kur** düğmesine dokun. Ayarlar → Ekran ve Parlaklık bölümünde Otomatik Kilit'i Hiçbir Zaman yap. Android: Chrome → Uygulamayı yükle.
+Durdurmak için: **Duvar ekranı** → **Duvar ekranları** → **Kaldır**. Ya da tablette sol alttaki çıkış simgesine dokun, **Çıkmak için basılı tut** düğmesini basılı tut, sonra **Kullanmayı bırak**.

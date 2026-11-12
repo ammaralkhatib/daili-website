@@ -5,7 +5,7 @@ summary: Lisää kaikki, mitä resepti tai koko viikon ateriat tarvitsevat, osto
 keywords: ainesosat, ostoslista, ruokaostokset, kauppalista, lisää listalle, resepti, ruokalista, osta
 tipTitle: Ruokalistasta ostoslistaan
 tipBody: Suunnittele viikon ateriat ja lisää sitten kaikki niiden ainesosat ostoslistallesi kerralla.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-13
 ---
 Ei enää ainesosien kopioimista käsin.
 
@@ -17,5 +17,7 @@ Ei enää ainesosien kopioimista käsin.
 4. Napauta alareunan painiketta, esimerkiksi **Lisää 3 kohdetta**.
 
 Näet ne napauttamalla ilmoituksessa **Avaa lista**.
+
+Reseptin ainesosien alla oleva **Lisää kaikki listalle** tekee saman. Jos muutit annosmäärää, listalle menevät uudet määrät.
 
 > Note: Ruokalistalta ainesosia tuovat vain reseptistä tehdyt ateriat. Aterioissa ilman reseptiä niitä ei ole.

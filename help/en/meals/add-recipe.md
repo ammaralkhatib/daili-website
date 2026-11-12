@@ -7,10 +7,10 @@ keywords: recipe, add recipe, cookbook, recipe box, ingredients, cooking, dish, 
 routes: /recipes, /recipes/new, /recipes/:id, /recipes/:id/edit
 tryIt: /recipes
 since: 1.0.0
-updated: 2026-11-10
+updated: 2026-11-13
 media: meals-add-recipe
 order: 1
-related: meals-find, meals-import-link, meals-youtube, meals-instagram, meals-paste, meals-plan-week, meals-cook-mode
+related: meals-recipe-screen, meals-find, meals-import-link, meals-youtube, meals-instagram, meals-paste, meals-plan-week, meals-cook-mode
 ---
 Grandma's lasagne belongs in the family recipe box, where everyone can find it.
 
@@ -22,9 +22,9 @@ Grandma's lasagne belongs in the family recipe box, where everyone can find it.
 4. Tap **Add ingredient** for each ingredient and **Add step** for each step.
 5. Tap **Create**. Like every way of adding, it ends on your recipes list.
 
-To change a recipe later, open it, tap **⋮** at the top, then **Edit**.
+To change a recipe later, open it, tap **⋮** at the top, then **Edit**. There you also find **Our notes**.
 
-On a recipe, **Plan** puts it on the meal plan: pick a day, a meal and the servings. Its source is the small pill under the title, next to the time and servings.
+**Plan** at the bottom puts a recipe on the meal plan: pick a day, a meal and the servings. Its source is the small pill after the time and servings.
 
 > Note: Recipes belong to the whole family. Everyone can open them, and anyone can change them.
 
