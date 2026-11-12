@@ -7,21 +7,13 @@
     "eyebrow": "Wall display guide",
     "h1": "Give an old tablet a new job.",
     "intro": "Hang it in the kitchen or hallway. It shows your family's week, meals, lists and habits, and everyone can tick things off as they walk past. Free, with the tablet you already own.",
-    "how": ["Pick your device", "Follow five steps", "Hang it up"]
+    "how": ["Pick your device", "Follow the steps", "Hang it up"]
   },
-  "tablet": {
-    "title": "This week",
-    "date": "Thu 12 Nov",
-    "days": ["MON", "TUE", "WED", "THU", "FRI"],
-    "dinnerLabel": "Dinner tonight",
-    "dinner": "Pumpkin soup",
-    "shoppingLabel": "Shopping",
-    "shopping": "6 things to buy"
-  },
+  "tabletAlt": "The Daili wall board on a tablet, with today's events, to-dos, tonight's dinner, shopping and habits",
   "ui": {
     "devicesLabel": "Devices",
     "devicesHeading": "Which device?",
-    "guessed": "You seem to be on this kind of device, so we opened its steps. Setting up another one? Pick it in the list.",
+    "guessed": "You seem to be on this kind of device, so we opened its steps. Setting up another one? Pick it above.",
     "progress": "{n} of {total} done",
     "done": "Done",
     "copy": "Copy",
@@ -358,7 +350,7 @@
           "steps": [
             "**System Settings → General → Login Items**: add the Daili app.",
             "**System Settings → Users & Groups → Automatically log in as**: pick the user.",
-            "iMac or Mac mini: **Energy → Start up automatically after a power failure**."
+            "iMac or Mac mini: **System Settings → Energy → Start up automatically after a power failure**."
           ]
         },
         {
@@ -424,6 +416,7 @@
       "name": "TV or other",
       "sub": "Fire TV, Android TV, old phone",
       "icon": "tv",
+      "plain": true,
       "lead": "A TV can show the board, but you cannot tap it. Some devices cannot show it at all.",
       "facts": [
         { "label": "Time", "value": "5 minutes" },
@@ -486,7 +479,7 @@
   "help": {
     "title": "Something not working?",
     "items": [
-      { "q": "The screen turns off after a few minutes", "a": "Set the screen timeout (iPad: Auto-Lock) to Never, as in step 3 for your device. Switch battery saver off." },
+      { "q": "The screen turns off after a few minutes", "a": "Set the screen timeout (iPad: Auto-Lock) to Never, as in the \"Keep the screen on\" step for your device. Switch battery saver off." },
       { "q": "The board shows a code again", "a": "The browser's saved data was cleared, or the board was opened in another browser or a private window. Connect it again and always open it the same way." },
       { "q": "\"This screen was removed\"", "a": "A parent removed the screen, or the parent who connected it left the family. A parent can connect it again." },
       { "q": "A security warning or a broken page", "a": "The device or its browser is too old. Update the browser. On an old Android tablet, try Firefox." },

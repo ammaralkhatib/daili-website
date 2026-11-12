@@ -1326,6 +1326,8 @@ const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf
 // One <section id> per device in wall/<loc>.json (the page is complete without
 // JavaScript), no hreflang while it is English only, noindex and out of the
 // sitemap exactly while WALL_GUIDE_PUBLIC is false, and unlinked while hidden.
+// Layout A (002): the hero's board.webp screenshot, and a "Done" tick per step
+// plus a progress bar on every device except a "plain" one, which has neither.
 // Its own wall.js and wall.css, on these pages only. The CSP allows no inline
 // script, so no inline <script> body and no on…= handler.
 {
@@ -1336,11 +1338,28 @@ const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf
     if (!fs.existsSync(file)) continue;      // section 1 already reported it
     const html = read(file);
     const src = `wall/${loc}.json`;
-    const ids = JSON.parse(fs.readFileSync(path.join(ROOT, src), 'utf8')).devices.map((d) => d.id);
-    for (const id of ids) {
+    const devices = JSON.parse(fs.readFileSync(path.join(ROOT, src), 'utf8')).devices;
+    const ids = devices.map((d) => d.id);
+    for (const d of devices) {
+      const id = d.id;
       const n = html.split(`<section class="wall-dev" id="${id}"`).length - 1;
       if (n !== 1) fail(out, `has ${n} <section id="${id}">, expected exactly 1 (${src} device "${id}")`);
       if (!html.includes(`<a class="dev" href="#${id}">`)) fail(out, `the device list has no plain link <a href="#${id}">`);
+      // A "plain": true device is information, not a setup: no ticks, no bar.
+      const sec = (html.split(`<section class="wall-dev" id="${id}"`)[1] || '').split('<section class="wall-dev"')[0];
+      const ticks = (sec.match(/data-k="/g) || []).length, bar = sec.includes('class="progress"');
+      if (d.plain && (ticks || bar)) fail(out, `device "${id}" is plain in ${src} but has ${ticks} "Done" tick(s)${bar ? ' and a progress bar' : ''}`);
+      if (!d.plain && (ticks !== d.jobs.length || !bar)) fail(out, `device "${id}" has ${ticks} "Done" tick(s) for ${d.jobs.length} steps${bar ? '' : ' and no progress bar'}`);
+    }
+    // The hero shows the screenshot of the wall board (002): a real, sized,
+    // eagerly loaded <img> with the alt text from wall/<loc>.json.
+    if (!fs.existsSync(path.join(ROOT, 'static/assets/img/wall/board.webp'))) fail('static/assets/img/wall/board.webp', 'is missing — the wall guide\'s hero shows it');
+    const board = html.match(/<img src="\/assets\/img\/wall\/board\.webp\?v=[0-9a-f]{8}"[^>]*>/);
+    if (!board) fail(out, 'has no <img src="/assets/img/wall/board.webp?v=…"> in the hero');
+    else {
+      if (!/ width="1600" height="900"/.test(board[0])) fail(out, 'the board.webp <img> is not width="1600" height="900"');
+      if (!/ alt="[^"]+"/.test(board[0])) fail(out, 'the board.webp <img> has no alt text');
+      if (/loading="lazy"/.test(board[0])) fail(out, 'the board.webp <img> is the hero and must not be lazy');
     }
     const sectionIds = [...html.matchAll(/<section\b[^>]*\sid="([^"]+)"/g)].map((m) => m[1]);
     if (sectionIds.length !== ids.length) fail(out, `has ${sectionIds.length} <section id>, ${src} has ${ids.length} devices (${sectionIds.join(', ')})`);

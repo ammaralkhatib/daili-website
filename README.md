@@ -138,20 +138,28 @@ locale renders its pages and json.
 `daili.app/wall-display/` shows how to turn an old tablet, PC, Mac or
 Raspberry Pi into a Daili wall screen: pick a device, follow its steps.
 English only, outside every hreflang cluster, like the blog. **Every word is
-in `wall/en.json`** — hero, the drawn tablet, the devices (id, name, sub line,
-icon key, lead, facts, jobs with steps and an optional `extra` list of
-`{ "command" }` / `{ "note" }` / `{ "tip" }`), "Now hang it up", "Battery and
+in `wall/en.json`** — hero, the screenshot's alt text (`tabletAlt`), the
+devices (id, name, sub line, icon key, lead, facts, jobs with steps and an
+optional `extra` list of `{ "command" }` / `{ "note" }` / `{ "tip" }`; a
+device with `"plain": true` is information, not a setup, and gets no "Done"
+ticks and no progress bar), "Now hang it up", "Battery and
 safety", "Something not working?" and the UI words. Text is plain: `**bold**`
 and `` `code` `` only, no HTML. `templates/wall.html` holds the structure,
 `build.mjs` (`renderWall`) renders every device's full guide as a
-`<section id="<device id>">`, so without JavaScript it is one long guide with a
-jump list; `static/assets/wall.js` shows one device at a time (from `#<id>`,
-else a user-agent guess, else the iPad) and keeps the "Done" ticks in
+`<section id="<device id>">`, so without JavaScript it is one long guide and
+the "Which device?" tiles are a jump list; `static/assets/wall.js` shows one
+device at a time (from `#<id>`, else a user-agent guess, else the iPad) and
+keeps the "Done" ticks in
 `localStorage` (`wall-done`); `static/assets/wall.css` holds all its styles and
 is loaded on that page only. The build stops on a broken `wall/en.json` (a
 device without jobs, a job without steps, a duplicate id, an unknown icon key,
 an unclosed `**`).
 
+- The hero shows `static/assets/img/wall/board.webp` (1600×900, a
+  screenshot of the wall board) in a CSS tablet frame. It is a placeholder:
+  replace the file with another 1600×900 WebP of the same name and nothing
+  else changes (the build gives it a new `?v=`). `check-build` section 24
+  checks the page shows it.
 - `WALL_GUIDE_PUBLIC` in `site.config.mjs` is the switch: false = noindex, not
   in the sitemap, and no page may link to it; true = indexable, in the sitemap
   at 0.6. `check-build` section 24 checks both states.

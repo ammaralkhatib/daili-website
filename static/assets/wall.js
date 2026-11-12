@@ -1,13 +1,14 @@
 /* The wall display guide (wall-display/index.html, 2026-11-12/001).
  *
  * Everything here is an enhancement. Without JavaScript the page is one long
- * guide: the device list is a jump list and every device's <section> follows
- * the last. With it:
+ * guide: the device tiles are a jump list and every device's <section>
+ * follows the last. With it:
  *   - one device at a time: from #<device id>, else a guess from the user
  *     agent (then the "You seem to be on…" line shows), else the iPad;
  *   - a tap on a device switches without a page jump and updates the hash;
  *   - the "Done" ticks are kept in localStorage ("wall-done") and drive the
- *     "n of 5 done" bar; the page works the same without storage;
+ *     "n of 5 done" bar; the page works the same without storage. A plain
+ *     device (information, not a setup) has neither in its HTML;
  *   - "Copy" copies a command, or selects it where the clipboard is refused.
  * No words live here: the progress line and "Copied" come from data-
  * attributes the build fills from wall/en.json. */
@@ -77,21 +78,11 @@
     if (bar) bar.style.width = (jobs.length ? n / jobs.length * 100 : 0) + "%";
   }
 
-  /* On a phone the list is a sideways row: bring the chosen device into it
-     without moving the page. */
-  function revealLink(a) {
-    var row = a.closest(".devs");
-    if (!row || row.scrollWidth <= row.clientWidth) return;
-    var item = a.parentElement;
-    var left = item.offsetLeft, right = left + item.offsetWidth;
-    if (left < row.scrollLeft || right > row.scrollLeft + row.clientWidth) row.scrollLeft = Math.max(0, left - 6);
-  }
-
   function show(id, isGuess) {
     current = id;
     sections.forEach(function (s) { s.hidden = s.id !== id; });
     links.forEach(function (a) {
-      if (a.getAttribute("href") === "#" + id) { a.setAttribute("aria-current", "true"); revealLink(a); }
+      if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current", "true");
       else a.removeAttribute("aria-current");
     });
     if (picked) picked.hidden = !isGuess;

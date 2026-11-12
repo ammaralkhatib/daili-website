@@ -399,10 +399,10 @@ const WALL_ICONS = {
   monitor: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/>',
   tv: '<rect x="2.5" y="6" width="19" height="12.5" rx="2"/><path d="M8 3l4 3 4-3"/>',
 };
-/** The drawn week's appointments, one array per day (pill classes from the
- *  mock: a/c/d = person colours, s = short). Shapes, not words. */
-const WALL_WEEK = [['', 'c s'], ['a'], ['d s', '', 'c'], ['a', 'd'], ['c', 's']];
-const WALL_TODAY = 3;
+/** The hero's screenshot of the wall board (2026-11-12/002), 1600×900. A
+ *  placeholder that will be swapped for a new file of the same name and size:
+ *  nothing may depend on what it shows. versionAssets() adds its ?v=. */
+const WALL_BOARD_IMG = '/assets/img/wall/board.webp';
 /** Ids already used on the page: a device may not take one of them. */
 const WALL_RESERVED_IDS = ['main', 'guide', 'navmenu'];
 
@@ -427,8 +427,7 @@ function loadWall(file) {
   if (w.meta.description.length > 155) bad('meta.description', `is ${w.meta.description.length} characters, at most 155`);
   for (const k of ['eyebrow', 'h1', 'intro']) str(w.hero, k, 'hero');
   strs(w.hero, 'how', 'hero');
-  for (const k of ['title', 'date', 'dinnerLabel', 'dinner', 'shoppingLabel', 'shopping']) str(w.tablet, k, 'tablet');
-  strs(w.tablet, 'days', 'tablet', WALL_WEEK.length);
+  str(w, 'tabletAlt', '');
   for (const k of ['devicesLabel', 'devicesHeading', 'guessed', 'progress', 'done', 'copy', 'copied']) str(w.ui, k, 'ui');
   if (!w.ui.progress.includes('{n}') || !w.ui.progress.includes('{total}')) bad('ui.progress', 'must contain {n} and {total}');
   const seen = new Set();
@@ -442,6 +441,8 @@ function loadWall(file) {
     const where = `devices[${i}] (${id})`;
     for (const k of ['name', 'sub', 'lead']) str(d, k, where);
     if (!(str(d, 'icon', where) in WALL_ICONS)) bad(`${where}.icon`, `"${d.icon}" is not an icon key (${Object.keys(WALL_ICONS).join(', ')})`);
+    // "plain": true = information, not a setup: no "Done" ticks, no progress bar.
+    if ('plain' in d && typeof d.plain !== 'boolean') bad(`${where}.plain`, 'must be true or false');
     list(d, 'facts', where).forEach((f, j) => { str(f, 'label', `${where}.facts[${j}]`); str(f, 'value', `${where}.facts[${j}]`); });
     if (!Array.isArray(d.jobs) || !d.jobs.length) bad(where, 'has no jobs');
     d.jobs.forEach((j, k) => {
@@ -492,17 +493,8 @@ function wallInline(s, where) {
 
 /** The pieces templates/wall.html places. Words from wall/<loc>.json only. */
 function renderWall(w) {
-  const t = w.tablet;
-  const days = t.days.map((label, i) => `        <div class="day${i === WALL_TODAY ? ' now' : ''}"><i>${escapeHtml(label)}</i>${WALL_WEEK[i].map((c) => `<span class="pill${c ? ` ${c}` : ''}"></span>`).join('')}</div>`).join('\n');
-  const tablet = `  <div class="tablet" aria-hidden="true">
-    <div class="scr">
-      <div class="scr-top"><span>${escapeHtml(t.title)}</span><span>${escapeHtml(t.date)}</span></div>
-      <div class="week">
-${days}
-      </div>
-      <div class="scr-bot"><div><small>${escapeHtml(t.dinnerLabel)}</small>${escapeHtml(t.dinner)}</div><div><small>${escapeHtml(t.shoppingLabel)}</small>${escapeHtml(t.shopping)}</div></div>
-    </div>
-  </div>`;
+  // The hero picture: loaded at once and first, it is the largest thing above the fold.
+  const tablet = `  <figure class="tablet"><img src="${WALL_BOARD_IMG}" width="1600" height="900" alt="${escapeHtml(w.tabletAlt)}" loading="eager" fetchpriority="high"></figure>`;
   const how = w.hero.how.map((s, i) => `      <li><b>${i + 1}</b> ${escapeHtml(s)}</li>`).join('\n');
   const devList = w.devices.map((d) => `      <li><a class="dev" href="#${d.id}"><svg viewBox="0 0 24 24" aria-hidden="true">${WALL_ICONS[d.icon]}</svg><span>${escapeHtml(d.name)}<small>${escapeHtml(d.sub)}</small></span></a></li>`).join('\n');
   const extra = (x, where) => {
@@ -517,16 +509,20 @@ ${days}
         <div>
           <h3>${escapeHtml(j.title)}</h3>
           <ol>${j.steps.map((s, k) => `<li>${wallInline(s, `${at} jobs[${i}].steps[${k}]`)}</li>`).join('')}</ol>
-          ${(j.extra || []).map((x, k) => extra(x, `${at} jobs[${i}].extra[${k}]`)).join('')}
-          <label class="check" hidden><input type="checkbox" data-k="${d.id}${i}"> ${escapeHtml(w.ui.done)}</label>
+          ${(j.extra || []).map((x, k) => extra(x, `${at} jobs[${i}].extra[${k}]`)).join('')}${d.plain ? '' : `
+          <label class="check" hidden><input type="checkbox" data-k="${d.id}${i}"> ${escapeHtml(w.ui.done)}</label>`}
         </div>
       </section>`).join('\n');
+    // A plain device (information, not a setup) has no ticks and no progress bar.
+    const progress = d.plain ? '' : `
+      <div class="progress" hidden><span aria-live="polite">${escapeHtml(uiText(w.ui.progress, { n: 0, total: d.jobs.length }))}</span><span class="bar"><i></i></span></div>`;
     return `    <section class="wall-dev" id="${d.id}" aria-labelledby="${d.id}-name">
       <h2 id="${d.id}-name">${escapeHtml(d.name)}</h2>
       <p class="lead">${escapeHtml(d.lead)}</p>
-      <dl class="facts">${d.facts.map((f) => `<div><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></div>`).join('')}</dl>
-      <div class="progress" hidden><span aria-live="polite">${escapeHtml(uiText(w.ui.progress, { n: 0, total: d.jobs.length }))}</span><span class="bar"><i></i></span></div>
+      <dl class="facts">${d.facts.map((f) => `<div class="fact"><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></div>`).join('')}</dl>${progress}
+      <div class="steps">
 ${jobs}
+      </div>
     </section>`;
   }).join('\n');
   return {

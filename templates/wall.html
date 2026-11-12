@@ -1,7 +1,9 @@
-<!-- The wall display guide (2026-11-12/001). Every word comes from
-     wall/en.json; build.mjs renderWall() turns the lists into the HTML below.
-     Without JavaScript this is one long guide: the device list is a jump list
-     and every device's <section> follows the last. wall.js shows one at a time. -->
+<!-- The wall display guide (2026-11-12/001, layout A from 002). Every word
+     comes from wall/en.json; build.mjs renderWall() turns the lists into the
+     HTML below. One column: the hero, the "Which device?" tiles, then the
+     chosen device. Without JavaScript this is one long guide: the tiles are a
+     jump list and every device's <section> follows the last. wall.js shows
+     one at a time. -->
 <main class="wall" id="main">
 
 <section class="wrap hero">
@@ -17,7 +19,7 @@
 </section>
 
 <div class="wrap guide" id="guide" data-progress="{{ wall.ui.progress }}" data-copied="{{ wall.ui.copied }}">
-  <nav class="rail" aria-label="{{ wall.ui.devicesLabel }}">
+  <nav class="pick" aria-label="{{ wall.ui.devicesLabel }}">
     <h2>{{ wall.ui.devicesHeading }}</h2>
     <ul class="devs">
 {{{ wall.devList }}}
