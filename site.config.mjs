@@ -1332,6 +1332,16 @@ export const WHATS_NEW = {
  * by its own version. The release help sync bumps this on release day.
  */
 export const HELP_PUBLIC = true;
+
+/**
+ * The wall display guide (daili.app/wall-display/, 2026-11-12/001). English
+ * only; every word is in wall/en.json. Its steps are not tested on real
+ * devices yet, so while this is false the page builds but is noindex, not in
+ * the sitemap, and no page links to it (check-build section 24). true makes
+ * it indexable and puts it in the sitemap at priority 0.6; the links to it
+ * (the help article anywhere-wall) come in their own prompt.
+ */
+export const WALL_GUIDE_PUBLIC = false;
 export const LIVE_APP_VERSION = '1.15.0';
 
 /**

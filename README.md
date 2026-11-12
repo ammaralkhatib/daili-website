@@ -30,6 +30,7 @@ one-line copy change under a 20-file diff.
 | `static/assets/img/shots/<loc>/` | The app screenshots, one set per language. Generated, committed. See below. |
 | `tools/` | The guards described below, and `help-lib.mjs` (the help parser). |
 | `help/` | Help center articles and their media/allowlist data. See "Help center" below. |
+| `wall/` | Every word of the wall display guide (`wall/en.json`). See "Wall display guide" below. |
 
 ## The guards
 
@@ -131,6 +132,33 @@ per rule in a throwaway fixture and fails if the guard lets any through; it
 also builds a tiny German fixture (`tools/fixtures/help-i18n/`) with
 `HELP_TEST_ROOT`/`HELP_TEST_LOCALES`/`HELP_TEST_DIST` to prove a translated
 locale renders its pages and json.
+
+## Wall display guide
+
+`daili.app/wall-display/` shows how to turn an old tablet, PC, Mac or
+Raspberry Pi into a Daili wall screen: pick a device, follow its steps.
+English only, outside every hreflang cluster, like the blog. **Every word is
+in `wall/en.json`** — hero, the drawn tablet, the devices (id, name, sub line,
+icon key, lead, facts, jobs with steps and an optional `extra` list of
+`{ "command" }` / `{ "note" }` / `{ "tip" }`), "Now hang it up", "Battery and
+safety", "Something not working?" and the UI words. Text is plain: `**bold**`
+and `` `code` `` only, no HTML. `templates/wall.html` holds the structure,
+`build.mjs` (`renderWall`) renders every device's full guide as a
+`<section id="<device id>">`, so without JavaScript it is one long guide with a
+jump list; `static/assets/wall.js` shows one device at a time (from `#<id>`,
+else a user-agent guess, else the iPad) and keeps the "Done" ticks in
+`localStorage` (`wall-done`); `static/assets/wall.css` holds all its styles and
+is loaded on that page only. The build stops on a broken `wall/en.json` (a
+device without jobs, a job without steps, a duplicate id, an unknown icon key,
+an unclosed `**`).
+
+- `WALL_GUIDE_PUBLIC` in `site.config.mjs` is the switch: false = noindex, not
+  in the sitemap, and no page may link to it; true = indexable, in the sitemap
+  at 0.6. `check-build` section 24 checks both states.
+- **A translation** is a `wall/<loc>.json` of the same shape (a `LOCALES`
+  code, the same device ids with the same number of jobs) and nothing else: the
+  build finds it, writes `/<loc>/wall-display/`, and puts the guide's pages in
+  their own hreflang cluster. No keys in `content/*.json`.
 
 ## Fonts
 

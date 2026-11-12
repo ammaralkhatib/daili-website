@@ -1,0 +1,498 @@
+{
+  "meta": {
+    "title": "Turn an old tablet into a family wall display | Daili",
+    "description": "Hang an old tablet in the kitchen and show your family's week, meals and lists. Simple steps for iPad, Android, Fire, Windows, Mac and Raspberry Pi."
+  },
+  "hero": {
+    "eyebrow": "Wall display guide",
+    "h1": "Give an old tablet a new job.",
+    "intro": "Hang it in the kitchen or hallway. It shows your family's week, meals, lists and habits, and everyone can tick things off as they walk past. Free, with the tablet you already own.",
+    "how": ["Pick your device", "Follow five steps", "Hang it up"]
+  },
+  "tablet": {
+    "title": "This week",
+    "date": "Thu 12 Nov",
+    "days": ["MON", "TUE", "WED", "THU", "FRI"],
+    "dinnerLabel": "Dinner tonight",
+    "dinner": "Pumpkin soup",
+    "shoppingLabel": "Shopping",
+    "shopping": "6 things to buy"
+  },
+  "ui": {
+    "devicesLabel": "Devices",
+    "devicesHeading": "Which device?",
+    "guessed": "You seem to be on this kind of device, so we opened its steps. Setting up another one? Pick it in the list.",
+    "progress": "{n} of {total} done",
+    "done": "Done",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "devices": [
+    {
+      "id": "ipad",
+      "name": "iPad",
+      "sub": "iPadOS 16.4 or newer",
+      "icon": "tablet-portrait",
+      "lead": "Works on every iPad from 2017 on. An iPad cannot open a page by itself, so after a power cut it needs one tap.",
+      "facts": [
+        { "label": "Time", "value": "10 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "No, one tap" },
+        { "label": "Child lock", "value": "Guided Access" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "In **Safari**, open **app.daili.app/board/pair**. Tap **Share → Add to Home Screen → Add**.",
+            "Close Safari and open the new **Daili** icon. If you see the sign-in page, tap **Connect a screen with a code**.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ],
+          "extra": [
+            { "tip": "**Connect inside the icon, not in Safari.** The icon keeps its own saved data." }
+          ]
+        },
+        {
+          "title": "Full screen and child lock",
+          "steps": [
+            "**Settings → Accessibility → Guided Access**: switch it on.",
+            "**Passcode Settings → Set Guided Access Passcode**. Pick a code the children do not know.",
+            "Open the Daili icon, triple-click the Home button (or the top button) and tap **Start**."
+          ],
+          "extra": [
+            { "note": "The Home Screen icon is already full screen. Guided Access keeps the iPad inside Daili until you triple-click and enter the code." }
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**Settings → Display & Brightness → Auto-Lock → Never**.",
+            "**Settings → Accessibility → Guided Access → Display Auto-Lock → Never**."
+          ]
+        },
+        {
+          "title": "After a restart",
+          "steps": [
+            "Turn off automatic installs: **Settings → General → Software Update → Automatic Updates**. An update restarts the iPad at night.",
+            "After a restart or power cut: unlock, tap the Daili icon, triple-click, tap **Start**."
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Newer iPads (iPad Pro M4, iPad Air M2, iPad mini A17 Pro, iPad A16 and later): **Settings → Battery → Battery Health → 80% Limit**.",
+            "Older iPads have no limit. Use a timer plug, see \"Battery and safety\" below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android tablet",
+      "sub": "Samsung, Lenovo, Xiaomi …",
+      "icon": "tablet-landscape",
+      "lead": "The best way is the Fully Kiosk Browser app. It was made for wall tablets and is the only way to start by itself after a restart.",
+      "facts": [
+        { "label": "Time", "value": "15 minutes" },
+        { "label": "Cost", "value": "Free, or 8.90 € for the lock" },
+        { "label": "Starts by itself", "value": "Yes" },
+        { "label": "Child lock", "value": "Kiosk mode with PIN" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "Install **Fully Kiosk Browser** from Google Play.",
+            "On first start, type the Start URL: **https://app.daili.app/board**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ],
+          "extra": [
+            { "tip": "**Just trying it out?** Chrome works too: open app.daili.app/board/pair, connect, then ⋮ → Add to Home screen → Install." }
+          ]
+        },
+        {
+          "title": "Full screen and child lock",
+          "steps": [
+            "Swipe in from the left edge and tap **Settings**.",
+            "**Toolbars and Appearance**: switch full screen on.",
+            "**Kiosk Mode** (paid): **Enable Kiosk Mode** and set a **Kiosk Mode PIN**. To leave, tap fast 7 times and enter the PIN."
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**Device Management → Keep Screen On**: on.",
+            "Optional: **Motion Detection** wakes the screen when someone walks by, and **Screen Off Timer** lets it rest at night.",
+            "In the tablet settings, switch battery saver off."
+          ]
+        },
+        {
+          "title": "Start by itself",
+          "steps": [
+            "**Device Management → Launch on Boot**: on.",
+            "**Web Auto Reload**: reload when the network reconnects.",
+            "Tablet settings: **Security → Screen lock → None**, so a restart goes straight to the board."
+          ],
+          "extra": [
+            { "tip": "Leave every \"clear cache\" or \"delete web storage\" option **off**. They disconnect the screen." }
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Samsung: **Settings → Battery → Battery protection → Maximum → 80 %**.",
+            "Other brands: search Settings for \"charge\" or \"protect\".",
+            "Nothing there? Use a timer plug, see \"Battery and safety\" below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Amazon Fire tablet",
+      "sub": "Fire HD 8 (2018) or newer",
+      "icon": "tablet-landscape",
+      "lead": "A Fire tablet works with its own Silk browser. That is the simple way. Older Fire tablets from 2015 to 2017 are too old.",
+      "facts": [
+        { "label": "Time", "value": "10 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "No, one tap" },
+        { "label": "Child lock", "value": "Fully Kiosk (optional)" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the Fire tablet, open **Silk** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "Full screen",
+          "steps": [
+            "Tap the board once. It goes full screen."
+          ],
+          "extra": [
+            { "note": "Want a child lock? Install Fully Kiosk Browser from fully-kiosk.com and follow the Android steps. Its maker warns that a Fire update can break the lock." }
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**Settings → Display → Display Sleep → Never** (or the longest time).",
+            "No \"Never\"? **Settings → Device Options → About Fire Tablet**: tap \"Serial Number\" 7 times. Then **Developer Options → Stay awake**."
+          ]
+        },
+        {
+          "title": "After a restart",
+          "steps": [
+            "Switch the lock-screen passcode off: **Settings → Security & Privacy**.",
+            "After a restart: swipe to unlock and open Silk. The board comes back."
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Fire tablets have no charge limit. Use a timer plug, see \"Battery and safety\" below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "sub": "Tablet, laptop or mini PC",
+      "icon": "laptop",
+      "lead": "Works on Windows 10 and 11, Home and Pro. Windows signs in by itself and opens Daili full screen.",
+      "facts": [
+        { "label": "Time", "value": "15 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "Yes" },
+        { "label": "Child lock", "value": "Separate Windows user" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the device, open **Microsoft Edge** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "Full screen",
+          "steps": [
+            "Press **Windows + R**, type `shell:startup`, press Enter. A folder opens.",
+            "Right-click in the folder → **New → Shortcut**. Paste this line as the location:"
+          ],
+          "extra": [
+            { "command": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --start-fullscreen --app=https://app.daili.app/board" },
+            { "note": "Name it \"Daili board\". Double-click it to test. Leave with **Alt + F4**." }
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**Settings → System → Power**: set \"turn off my screen\" and \"sleep\" to **Never** when plugged in.",
+            "Laptop: **Control Panel → Power Options → Choose what closing the lid does → Do nothing**.",
+            "**Settings → System → Notifications**: switch them off."
+          ]
+        },
+        {
+          "title": "Start by itself",
+          "steps": [
+            "**Settings → Accounts → Sign-in options**: turn off \"Require Windows Hello sign-in for Microsoft accounts\". Restart once.",
+            "Press **Windows + R**, type `netplwiz`, press Enter.",
+            "Remove the tick at \"Users must enter a user name and password\", click OK, type the password twice."
+          ],
+          "extra": [
+            { "note": "The shortcut from step 2 is in the Startup folder, so Daili opens after every sign-in." }
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Look for a charge limit in the maker's app (Lenovo Vantage, ASUS, Acer Care Center, Surface).",
+            "Nothing there? Use a timer plug, see \"Battery and safety\" below.",
+            "Mini PC: nothing to do, it has no battery."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "name": "Raspberry Pi / Linux",
+      "sub": "With a touch screen",
+      "icon": "chip",
+      "lead": "The best build-it-yourself wall display. No battery, little power, and it starts by itself when the power comes back.",
+      "facts": [
+        { "label": "Time", "value": "30 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "Yes" },
+        { "label": "For", "value": "People who like to tinker" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the Pi, open **Chromium** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "Full screen and autostart",
+          "steps": [
+            "Open a terminal and run the two lines below. An empty file opens.",
+            "Paste the third line into the file. Save with Ctrl + O, Enter, then Ctrl + X."
+          ],
+          "extra": [
+            { "command": "mkdir -p ~/.config/labwc\nnano ~/.config/labwc/autostart" },
+            { "command": "chromium https://app.daili.app/board --kiosk --noerrdialogs --disable-infobars --no-first-run --start-maximized &" }
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "Run `sudo raspi-config`.",
+            "**Display Options → Screen Blanking → No**."
+          ]
+        },
+        {
+          "title": "Start by itself",
+          "steps": [
+            "In `raspi-config`: **System Options → Boot / Auto Login → Desktop Autologin**.",
+            "Run `sudo reboot`. The Pi starts and shows the board."
+          ],
+          "extra": [
+            { "note": "Other Linux (Ubuntu, Fedora): set Screen Blank to Never, switch on Automatic Login, and add the same Chromium line as a startup program." }
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Nothing to do. A Pi has no battery."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mac",
+      "name": "Mac",
+      "sub": "Old MacBook, iMac, Mac mini",
+      "icon": "monitor",
+      "lead": "An old iMac makes a big, bright family screen. It is for looking, because a Mac has no touch screen.",
+      "facts": [
+        { "label": "Time", "value": "10 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "Yes" },
+        { "label": "Touch", "value": "No" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the Mac, open **Chrome** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "Full screen",
+          "steps": [
+            "In Chrome: **⋮ → Cast, save, and share → Install page as app**.",
+            "Open the Daili app from the Dock and click the board once."
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**System Settings → Lock Screen**: set \"Turn display off when inactive\" and \"Start Screen Saver\" to **Never**."
+          ]
+        },
+        {
+          "title": "Start by itself",
+          "steps": [
+            "**System Settings → General → Login Items**: add the Daili app.",
+            "**System Settings → Users & Groups → Automatically log in as**: pick the user.",
+            "iMac or Mac mini: **Energy → Start up automatically after a power failure**."
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "MacBook: **System Settings → Battery → Battery Health → Optimized Battery Charging**: on.",
+            "iMac and Mac mini have no battery."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chromebook",
+      "name": "Chromebook",
+      "sub": "Any current Chromebook",
+      "icon": "laptop",
+      "lead": "Works well as a screen on a shelf or sideboard. After a restart you sign in once.",
+      "facts": [
+        { "label": "Time", "value": "5 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Starts by itself", "value": "No, sign in once" },
+        { "label": "Touch", "value": "On touch models" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the Chromebook, open **Chrome** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "Full screen",
+          "steps": [
+            "Press the full-screen key (the rectangle in the top row)."
+          ]
+        },
+        {
+          "title": "Keep the screen on",
+          "steps": [
+            "**Settings → Device → Power**: \"While charging\" → **Keep display on**.",
+            "Switch \"Sleep when cover is closed\" off."
+          ]
+        },
+        {
+          "title": "After a restart",
+          "steps": [
+            "**Settings → On startup → Continue where you left off**.",
+            "After a restart: sign in. The board opens again."
+          ]
+        },
+        {
+          "title": "Protect the battery",
+          "steps": [
+            "Use a timer plug, see \"Battery and safety\" below."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv",
+      "name": "TV or other",
+      "sub": "Fire TV, Android TV, old phone",
+      "icon": "tv",
+      "lead": "A TV can show the board, but you cannot tap it. Some devices cannot show it at all.",
+      "facts": [
+        { "label": "Time", "value": "5 minutes" },
+        { "label": "Cost", "value": "Free" },
+        { "label": "Touch", "value": "No" },
+        { "label": "Good for", "value": "Looking only" }
+      ],
+      "jobs": [
+        {
+          "title": "Connect the screen",
+          "steps": [
+            "On the TV, open **the browser (Silk on Fire TV)** and go to **app.daili.app/board/pair**. A 6-digit code and a QR code appear.",
+            "In the Daili app on your phone: **Settings → Wall display → Connect a screen**. Type the code or scan the QR code. Only parents can do this.",
+            "Give the screen a name, for example \"Kitchen\", and tap **Approve**. The board opens after a few seconds."
+          ]
+        },
+        {
+          "title": "What works",
+          "steps": [
+            "**Fire TV, Android TV:** the board shows in the browser. No ticking, no adding.",
+            "**Old phone:** follow the iPad or Android steps. Nice on the fridge.",
+            "**TRMNL e-paper display:** Daili has its own plugin on trmnl.com."
+          ]
+        },
+        {
+          "title": "What does not work",
+          "steps": [
+            "Google Nest Hub, Amazon Echo Show and Apple TV cannot show the board.",
+            "Tablets older than about 2016 show a broken page or a security warning."
+          ]
+        },
+        {
+          "title": "Careful with OLED TVs",
+          "steps": [
+            "Do not leave the board on an OLED TV for hours. A picture that never moves can burn into the screen."
+          ]
+        }
+      ]
+    }
+  ],
+  "hangUp": {
+    "title": "Now hang it up",
+    "items": [
+      "Pick a place everyone walks past, at eye height for the children.",
+      "Check the Wi-Fi at that spot before you drill.",
+      "Set quiet hours in Daili. The board turns dark at night by itself.",
+      "Use the tablet only for Daili. Switch sound and notifications off."
+    ]
+  },
+  "safety": {
+    "title": "Battery and safety",
+    "items": [
+      "**Use the charge limit** if your device has one. 80 % is ideal.",
+      "**No charge limit?** Use a timer plug or smart plug. Let it charge for about one hour, two or three times a day.",
+      "**Keep it cool.** No direct sun, and not above the cooker, the kettle or a heater.",
+      "**Lower the brightness.** Half is enough indoors.",
+      "**Check it once a month.** If the back bulges, the screen lifts or the case is hot, stop using it and bring it to a recycling point."
+    ]
+  },
+  "help": {
+    "title": "Something not working?",
+    "items": [
+      { "q": "The screen turns off after a few minutes", "a": "Set the screen timeout (iPad: Auto-Lock) to Never, as in step 3 for your device. Switch battery saver off." },
+      { "q": "The board shows a code again", "a": "The browser's saved data was cleared, or the board was opened in another browser or a private window. Connect it again and always open it the same way." },
+      { "q": "\"This screen was removed\"", "a": "A parent removed the screen, or the parent who connected it left the family. A parent can connect it again." },
+      { "q": "A security warning or a broken page", "a": "The device or its browser is too old. Update the browser. On an old Android tablet, try Firefox." },
+      { "q": "The board shows old data", "a": "The Wi-Fi is weak at that spot, or the device lets Wi-Fi sleep. Move the router closer or switch Wi-Fi power saving off." },
+      { "q": "How do I leave the board?", "a": "Press and hold **Hold to leave** for two seconds. If you locked the device (Guided Access, kiosk mode, app pinning), end that lock first." },
+      { "q": "The tablet was lost or sold", "a": "In the Daili app: Settings → Wall display → Wall screens → Remove. It stops showing your family at once." }
+    ]
+  }
+}

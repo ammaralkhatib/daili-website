@@ -1,0 +1,145 @@
+/* The wall display guide (wall-display/index.html, 2026-11-12/001), and only
+   that page: build.mjs loads this file there after style.css.
+   Layout from claude-prompts/2026-11-12/wall-display-mock.html: a short hero
+   with a drawn tablet, then a two-column guide (a sticky device list on the
+   left, the chosen device's jobs on the right), then a band with "Battery and
+   safety" and "Something not working?". One column with a swipeable device row
+   at phone width.
+   Colours and fonts are style.css's tokens. The few it lacks are added here,
+   light and dark, in the same pattern style.css uses. */
+
+:root{
+  --amber-ink:#6B4A07;            /* text on --amber-soft (the tips) */
+  --screen:#FFFFFF;               /* the drawn tablet's screen */
+  /* the family's colours on the drawn week */
+  --p1:#E86A5C; --p2:#3F8FD6; --p3:#E9A93B; --p4:#8A63C9;
+}
+@media(prefers-color-scheme:dark){
+  :root:not(.landing){
+    --amber-ink:#F3D9A0;
+    --screen:#1B2820;
+    /* the person colours stay the same in dark, as in the mock */
+    --p1:#E86A5C; --p2:#3F8FD6; --p3:#E9A93B; --p4:#8A63C9;
+  }
+}
+
+/* The parts wall.js turns on carry `hidden` in the HTML. Several of them set
+   their own display below, which would beat the attribute. */
+.wall [hidden]{display:none !important}
+
+.wall{color:var(--body)}
+.wall :is(h1,h2,h3){color:var(--ink);font-weight:700;letter-spacing:.005em}
+.wall button{font:inherit;color:inherit;cursor:pointer}
+
+/* ---------- hero ---------- */
+.wall .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:28px 56px}
+.wall .eyebrow{font-weight:700;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--forest)}
+.wall .hero h1{font-size:clamp(44px,7vw,84px);margin-block:10px 16px}
+.wall .hero p{font-size:19px;max-width:34em}
+.wall .how{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;list-style:none;font-weight:600;color:var(--ink);font-size:15px}
+.wall .how li{display:flex;align-items:center;gap:8px}
+.wall .how b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--forest);color:var(--on-forest);font-size:14px}
+
+/* the drawn tablet: HTML and CSS only, aria-hidden */
+.wall .tablet{background:var(--frame);border-radius:26px;padding:12px;box-shadow:0 30px 60px -28px rgba(var(--shadow),.55);transform:rotate(-2deg);max-width:100%}
+.wall .scr{background:var(--screen);border-radius:15px;padding:14px;display:grid;gap:10px}
+.wall .scr-top{display:flex;justify-content:space-between;font-weight:700;color:var(--ink);font-size:14px}
+.wall .scr-top span:last-child{color:var(--muted);font-weight:500}
+.wall .week{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.wall .day{background:var(--mint-soft);border-radius:9px;padding:6px;display:grid;gap:5px;align-content:start;min-height:112px;min-width:0}
+.wall .day i{font-style:normal;font-size:11px;font-weight:700;color:var(--muted)}
+.wall .day.now{background:var(--mint)}
+.wall .pill{height:15px;border-radius:5px;background:var(--p2)}
+.wall .pill.a{background:var(--p1)}
+.wall .pill.c{background:var(--p3)}
+.wall .pill.d{background:var(--p4)}
+.wall .pill.s{width:62%}
+.wall .scr-bot{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--ink);font-weight:600}
+.wall .scr-bot div{background:var(--amber-soft);border-radius:9px;padding:7px 9px;min-width:0}
+.wall .scr-bot small{display:block;color:var(--muted);font-weight:500}
+
+/* ---------- the guide ---------- */
+/* scroll-margin clears the floating header (style.css header, ~70px). */
+.wall .guide{display:grid;grid-template-columns:250px minmax(0,1fr);gap:36px;align-items:start;padding-bottom:64px;scroll-margin-top:84px}
+.wall .rail{position:sticky;top:88px}
+.wall .rail h2{font-size:26px;margin-bottom:12px}
+.wall .devs{list-style:none;display:grid;gap:4px}
+.wall .dev{display:flex;align-items:center;gap:12px;border-radius:14px;padding:10px 12px;font-weight:600;color:var(--body);text-decoration:none;line-height:1.4}
+.wall .dev svg{flex:none;width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.wall .dev small{display:block;font-weight:500;color:var(--muted);font-size:13px;line-height:1.3}
+.wall .dev:hover{background:var(--mint-soft)}
+.wall .dev[aria-current="true"]{background:var(--forest);color:var(--on-forest)}
+.wall .dev[aria-current="true"] small{color:inherit;opacity:.85}
+
+.wall .panel{min-width:0}
+.wall .picked{font-size:14px;color:var(--muted);margin-bottom:8px}
+.wall .wall-dev{scroll-margin-top:84px}
+/* Without JavaScript every device follows the last: give each its own start. */
+.wall .guide:not(.js) .wall-dev + .wall-dev{margin-top:48px;padding-top:40px;border-top:2px solid var(--line)}
+.wall .wall-dev h2{font-size:clamp(34px,5vw,52px)}
+.wall .lead{font-size:18px;margin:10px 0 18px;max-width:38em}
+.wall .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-block:1px solid var(--line);margin-bottom:8px}
+.wall .facts div{padding:12px 16px 12px 0}
+.wall .facts dt{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.wall .facts dd{margin-top:2px;font-weight:600;color:var(--ink)}
+.wall .progress{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--muted);margin:16px 0 4px}
+.wall .bar{flex:1;height:8px;border-radius:99px;background:var(--mint);overflow:hidden}
+.wall .bar i{display:block;width:0;height:100%;background:var(--forest);border-radius:99px;transition:width .3s}
+
+.wall .job{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-block:26px;border-bottom:1px solid var(--line)}
+.wall .num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:800 24px/1 var(--display);background:var(--mint);color:var(--forest-deep)}
+.wall .job.done .num{background:var(--forest);color:var(--on-forest)}
+.wall .job h3{font-size:28px;padding-top:7px}
+.wall .job ol{margin-top:12px;padding-inline-start:22px;display:grid;gap:8px;max-width:42em}
+.wall .job p{margin-top:12px;max-width:42em}
+.wall .job b{color:var(--ink)}
+.wall .tip{background:var(--amber-soft);color:var(--amber-ink);border-radius:14px;padding:11px 14px;font-size:15px}
+.wall .tip b{color:inherit}
+.wall code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;background:var(--mint-soft);padding:.1em .35em;border-radius:6px;color:var(--ink)}
+/* A command box. It sits on --frame, which stays dark in dark mode, so its
+   text and button colours are fixed. The line scrolls inside the box. */
+.wall .cmd{display:flex;gap:10px;align-items:flex-start;background:var(--frame);border-radius:14px;padding:12px 12px 12px 16px;margin-top:10px}
+.wall .cmd pre{flex:1;min-width:0;overflow-x:auto;font:13.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#E7F3EA;white-space:pre}
+.wall .cmd button{flex:none;border:0;border-radius:9px;background:#24382D;color:#E7F3EA;font-size:13px;font-weight:600;padding:6px 11px}
+/* The site's forest focus ring vanishes on the dark box: amber there. */
+.wall .cmd button:focus-visible{outline-color:var(--amber)}
+.wall .check{display:inline-flex;align-items:center;gap:9px;margin-top:16px;font-weight:600;color:var(--ink);font-size:15px;cursor:pointer}
+.wall .check input{width:20px;height:20px;accent-color:var(--forest)}
+
+.wall .after{background:var(--mint-soft);border-radius:var(--radius);padding:26px;margin-top:30px}
+.wall .after h3{font-size:28px;margin-bottom:6px}
+.wall .after ul{margin-top:10px;padding-inline-start:20px;display:grid;gap:6px}
+
+/* ---------- battery and safety, something not working ---------- */
+.wall .band{background:var(--card);border-block:1px solid var(--line)}
+.wall .band .wrap{padding-block:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.wall .band h2{font-size:40px;margin-bottom:14px}
+.wall .safety{padding-inline-start:22px;display:grid;gap:9px}
+.wall .safety b{color:var(--ink)}
+.wall details{border-bottom:1px solid var(--line);padding-block:12px}
+.wall summary{font-weight:600;color:var(--ink);cursor:pointer}
+.wall details p{margin:8px 0 2px}
+/* The band ends the page and draws its own bottom line: the site footer
+   follows it directly, without its 90px gap and second line. */
+main.wall + footer{margin-top:0;border-top:0}
+
+/* ---------- phone ---------- */
+@media(max-width:860px){
+  .wall .hero{grid-template-columns:1fr;gap:26px;padding-block:8px 36px}
+  .wall .guide{grid-template-columns:minmax(0,1fr);gap:18px}
+  .wall .rail{position:static}
+  /* the device list becomes a row you swipe sideways; the padding keeps the
+     focus ring inside the row, which would otherwise clip it */
+  .wall .devs{display:flex;overflow-x:auto;gap:8px;padding:6px 6px 12px;margin:-6px -6px 0;scroll-snap-type:x proximity;scroll-padding-inline:6px;position:relative}
+  .wall .devs li{flex:none;scroll-snap-align:start}
+  .wall .dev{border:1px solid var(--line);padding:8px 14px}
+  .wall .dev small{display:none}
+  .wall .band .wrap{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:40px}
+  .wall .job{grid-template-columns:36px minmax(0,1fr);gap:12px}
+  .wall .num{width:36px;height:36px;font-size:20px}
+  .wall .job h3{padding-top:4px;font-size:25px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .wall .bar i{transition:none}
+}

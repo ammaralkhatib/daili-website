@@ -22,6 +22,7 @@ import {
   FLOW_STEPS, FLOW_VIDEO_SIZE, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
   BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
+  WALL_GUIDE_PUBLIC,
 } from './site.config.mjs';
 import { loadAllHelp, visibleHelp, mediaFor } from './tools/help-lib.mjs';
 
@@ -378,9 +379,182 @@ const featurePages = HOME_FEATURES.filter((d) => d.page).map((d) => ({
   feature: d,
 }));
 
+/**
+ * The wall display guide (2026-11-12/001): daili.app/wall-display/, English
+ * only and outside every cluster, like the blog. Every word is in
+ * wall/en.json; a translation would be a wall/<loc>.json of the same shape
+ * plus its locale here. The page is rendered complete (every device's guide
+ * is in the HTML), wall.js only shows one device at a time. While
+ * WALL_GUIDE_PUBLIC is false it is noindex, which also keeps it out of the
+ * sitemap.
+ */
+const wallFile = (loc) => `wall/${loc}.json`;
+/** The device list's line drawings (from the mock), keyed by a device's
+ *  `icon`. Plain shapes, never a brand logo. */
+const WALL_ICONS = {
+  'tablet-portrait': '<rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
+  'tablet-landscape': '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M18.5 11v2"/>',
+  laptop: '<rect x="4.5" y="5" width="15" height="10.5" rx="1.8"/><path d="M2.5 19h19"/>',
+  chip: '<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/>',
+  monitor: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/>',
+  tv: '<rect x="2.5" y="6" width="19" height="12.5" rx="2"/><path d="M8 3l4 3 4-3"/>',
+};
+/** The drawn week's appointments, one array per day (pill classes from the
+ *  mock: a/c/d = person colours, s = short). Shapes, not words. */
+const WALL_WEEK = [['', 'c s'], ['a'], ['d s', '', 'c'], ['a', 'd'], ['c', 's']];
+const WALL_TODAY = 3;
+/** Ids already used on the page: a device may not take one of them. */
+const WALL_RESERVED_IDS = ['main', 'guide', 'navmenu'];
+
+/** Reads wall/en.json and refuses a broken one, naming where. */
+function loadWall(file) {
+  let w;
+  try { w = JSON.parse(read(file)); } catch (e) { throw new Error(`${file} is not valid JSON: ${e.message}`); }
+  const bad = (where, msg) => { throw new Error(`${file}: ${where} ${msg}`); };
+  const str = (obj, key, where) => {
+    const v = obj && obj[key];
+    if (typeof v !== 'string' || !v.trim()) bad(`${where}.${key}`, 'must be a non-empty string');
+    return v;
+  };
+  const list = (obj, key, where, n) => {
+    const v = obj && obj[key];
+    if (!Array.isArray(v) || !v.length) bad(`${where}.${key}`, 'must be a non-empty list');
+    if (n && v.length !== n) bad(`${where}.${key}`, `must have exactly ${n} entries, has ${v.length}`);
+    return v;
+  };
+  const strs = (obj, key, where, n) => list(obj, key, where, n).forEach((_, i, a) => str(a, i, `${where}.${key}`));
+  for (const k of ['title', 'description']) str(w.meta, k, 'meta');
+  if (w.meta.description.length > 155) bad('meta.description', `is ${w.meta.description.length} characters, at most 155`);
+  for (const k of ['eyebrow', 'h1', 'intro']) str(w.hero, k, 'hero');
+  strs(w.hero, 'how', 'hero');
+  for (const k of ['title', 'date', 'dinnerLabel', 'dinner', 'shoppingLabel', 'shopping']) str(w.tablet, k, 'tablet');
+  strs(w.tablet, 'days', 'tablet', WALL_WEEK.length);
+  for (const k of ['devicesLabel', 'devicesHeading', 'guessed', 'progress', 'done', 'copy', 'copied']) str(w.ui, k, 'ui');
+  if (!w.ui.progress.includes('{n}') || !w.ui.progress.includes('{total}')) bad('ui.progress', 'must contain {n} and {total}');
+  const seen = new Set();
+  list(w, 'devices', '').forEach((d, i) => {
+    const at = `devices[${i}]`;
+    const id = str(d, 'id', at);
+    if (!/^[a-z][a-z0-9-]*$/.test(id)) bad(`${at}.id`, `"${id}" must be lowercase letters, digits and dashes`);
+    if (seen.has(id)) bad(`${at}.id`, `"${id}" is a duplicate id`);
+    if (WALL_RESERVED_IDS.includes(id)) bad(`${at}.id`, `"${id}" is already an id on the page`);
+    seen.add(id);
+    const where = `devices[${i}] (${id})`;
+    for (const k of ['name', 'sub', 'lead']) str(d, k, where);
+    if (!(str(d, 'icon', where) in WALL_ICONS)) bad(`${where}.icon`, `"${d.icon}" is not an icon key (${Object.keys(WALL_ICONS).join(', ')})`);
+    list(d, 'facts', where).forEach((f, j) => { str(f, 'label', `${where}.facts[${j}]`); str(f, 'value', `${where}.facts[${j}]`); });
+    if (!Array.isArray(d.jobs) || !d.jobs.length) bad(where, 'has no jobs');
+    d.jobs.forEach((j, k) => {
+      const jat = `${where}.jobs[${k}]`;
+      str(j, 'title', jat);
+      if (!Array.isArray(j.steps) || !j.steps.length) bad(jat, 'has no steps');
+      j.steps.forEach((_, s) => str(j.steps, s, `${jat}.steps`));
+      if (j.extra === undefined) return;
+      if (!Array.isArray(j.extra)) bad(`${jat}.extra`, 'must be a list');
+      j.extra.forEach((x, e) => {
+        const keys = x && typeof x === 'object' ? Object.keys(x) : [];
+        if (keys.length !== 1 || !['command', 'note', 'tip'].includes(keys[0])) bad(`${jat}.extra[${e}]`, 'must be exactly one of { "command" }, { "note" }, { "tip" }');
+        str(x, keys[0], `${jat}.extra[${e}]`);
+      });
+    });
+  });
+  for (const k of ['hangUp', 'safety', 'help']) { str(w[k], 'title', k); list(w[k], 'items', k); }
+  w.hangUp.items.forEach((_, i) => str(w.hangUp.items, i, 'hangUp.items'));
+  w.safety.items.forEach((_, i) => str(w.safety.items, i, 'safety.items'));
+  w.help.items.forEach((it, i) => { str(it, 'q', `help.items[${i}]`); str(it, 'a', `help.items[${i}]`); });
+  return w;
+}
+/** English is the source; any other wall/<loc>.json of a LOCALES locale is a
+ *  translation and builds its page with no other change. It must list the
+ *  same devices with the same number of jobs (the ticks are kept per device
+ *  and job number). */
+const wallByLocale = { en: loadWall(wallFile('en')) };
+for (const f of fs.readdirSync(p('wall')).filter((f) => f.endsWith('.json')).sort()) {
+  const loc = f.slice(0, -'.json'.length);
+  if (loc === 'en') continue;
+  if (!LOCALES.includes(loc)) throw new Error(`${wallFile(loc)}: '${loc}' is not a locale in LOCALES`);
+  const w = loadWall(wallFile(loc));
+  const shape = (x) => x.devices.map((d) => `${d.id}:${d.jobs.length}`).join(' ');
+  if (shape(w) !== shape(wallByLocale.en)) throw new Error(`${wallFile(loc)}: devices and job counts must match wall/en.json (${shape(wallByLocale.en)}), found ${shape(w)}`);
+  wallByLocale[loc] = w;
+}
+const wall = wallByLocale.en;
+const wallLocales = LOCALES.filter((l) => l in wallByLocale);
+
+/** One line of guide text as HTML: escaped, then **bold** → <b> and
+ *  `code` → <code>. A < or a lone ** or ` is a typo, so it throws. */
+function wallInline(s, where) {
+  if (/[<>]/.test(s)) throw new Error(`wall: ${where} contains < or > — write **bold** and \`code\`, not HTML`);
+  const html = escapeHtml(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  if (html.includes('**') || html.includes('`')) throw new Error(`wall: ${where} has an unclosed ** or \` in "${s}"`);
+  return html;
+}
+
+/** The pieces templates/wall.html places. Words from wall/<loc>.json only. */
+function renderWall(w) {
+  const t = w.tablet;
+  const days = t.days.map((label, i) => `        <div class="day${i === WALL_TODAY ? ' now' : ''}"><i>${escapeHtml(label)}</i>${WALL_WEEK[i].map((c) => `<span class="pill${c ? ` ${c}` : ''}"></span>`).join('')}</div>`).join('\n');
+  const tablet = `  <div class="tablet" aria-hidden="true">
+    <div class="scr">
+      <div class="scr-top"><span>${escapeHtml(t.title)}</span><span>${escapeHtml(t.date)}</span></div>
+      <div class="week">
+${days}
+      </div>
+      <div class="scr-bot"><div><small>${escapeHtml(t.dinnerLabel)}</small>${escapeHtml(t.dinner)}</div><div><small>${escapeHtml(t.shoppingLabel)}</small>${escapeHtml(t.shopping)}</div></div>
+    </div>
+  </div>`;
+  const how = w.hero.how.map((s, i) => `      <li><b>${i + 1}</b> ${escapeHtml(s)}</li>`).join('\n');
+  const devList = w.devices.map((d) => `      <li><a class="dev" href="#${d.id}"><svg viewBox="0 0 24 24" aria-hidden="true">${WALL_ICONS[d.icon]}</svg><span>${escapeHtml(d.name)}<small>${escapeHtml(d.sub)}</small></span></a></li>`).join('\n');
+  const extra = (x, where) => {
+    if ('command' in x) return `<div class="cmd"><pre>${escapeHtml(x.command)}</pre><button type="button" data-copy hidden>${escapeHtml(w.ui.copy)}</button></div>`;
+    if ('tip' in x) return `<p class="tip">${wallInline(x.tip, where)}</p>`;
+    return `<p>${wallInline(x.note, where)}</p>`;
+  };
+  const sections = w.devices.map((d) => {
+    const at = `devices (${d.id})`;
+    const jobs = d.jobs.map((j, i) => `      <section class="job">
+        <span class="num">${i + 1}</span>
+        <div>
+          <h3>${escapeHtml(j.title)}</h3>
+          <ol>${j.steps.map((s, k) => `<li>${wallInline(s, `${at} jobs[${i}].steps[${k}]`)}</li>`).join('')}</ol>
+          ${(j.extra || []).map((x, k) => extra(x, `${at} jobs[${i}].extra[${k}]`)).join('')}
+          <label class="check" hidden><input type="checkbox" data-k="${d.id}${i}"> ${escapeHtml(w.ui.done)}</label>
+        </div>
+      </section>`).join('\n');
+    return `    <section class="wall-dev" id="${d.id}" aria-labelledby="${d.id}-name">
+      <h2 id="${d.id}-name">${escapeHtml(d.name)}</h2>
+      <p class="lead">${escapeHtml(d.lead)}</p>
+      <dl class="facts">${d.facts.map((f) => `<div><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></div>`).join('')}</dl>
+      <div class="progress" hidden><span aria-live="polite">${escapeHtml(uiText(w.ui.progress, { n: 0, total: d.jobs.length }))}</span><span class="bar"><i></i></span></div>
+${jobs}
+    </section>`;
+  }).join('\n');
+  return {
+    hero: w.hero, ui: w.ui, hangUp: w.hangUp, safety: w.safety, help: w.help,
+    how, tablet, devList, sections,
+    hangUpItems: w.hangUp.items.map((s, i) => `        <li>${wallInline(s, `hangUp.items[${i}]`)}</li>`).join('\n'),
+    safetyItems: w.safety.items.map((s, i) => `        <li>${wallInline(s, `safety.items[${i}]`)}</li>`).join('\n'),
+    helpItems: w.help.items.map((it, i) => `      <details><summary>${wallInline(it.q, `help.items[${i}].q`)}</summary><p>${wallInline(it.a, `help.items[${i}].a`)}</p></details>`).join('\n'),
+  };
+}
+
+/** English alone: no cluster and no hreflang, like the blog. With a
+ *  translation the guide's pages form their own cluster ('wall'). */
+const wallPage = {
+  id: 'wall',
+  template: 'wall.html',
+  locales: wallLocales,
+  cluster: wallLocales.length > 1 ? 'wall' : null,
+  noindex: !WALL_GUIDE_PUBLIC,
+  out: (loc) => `${dirFor(loc).slice(1)}wall-display/index.html`,
+  priority: () => '0.6',
+  meta: (loc) => ({ title: wallByLocale[loc].meta.title, description: wallByLocale[loc].meta.description }),
+  wall: wallByLocale,
+};
+
 /** Everything the build loops over: the manifest, the index, one page per post,
- *  the help center and the feature pages. */
-const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages, ...featurePages];
+ *  the help center, the feature pages and the wall display guide. */
+const allPages = [...PAGES, blogIndexPage, ...blogPages, ...helpPages, ...featurePages, wallPage];
 
 /** "2 September 2026" — the byline's readable half. The machine-readable half
  *  is the raw ISO string in <time datetime>. */
@@ -1600,6 +1774,9 @@ function build() {
     return `/assets/${out}`;
   };
   const homeCssHref = hashed('home', 'css'), homeJsHref = hashed('home', 'js');
+  // The wall display guide's own stylesheet and script, hashed the same way
+  // and loaded by that page only.
+  const wallCssHref = hashed('wall', 'css'), wallJsHref = hashed('wall', 'js');
   const homeScripts = ['/assets/vendor/gsap.min.js', '/assets/vendor/ScrollTrigger.min.js', '/assets/vendor/lenis.min.js', homeJsHref]
     .map((src) => `<script src="${src}" defer></script>`).join('\n');
   // The help search and the "Was this helpful?" counts, hashed the same way.
@@ -1660,6 +1837,8 @@ function build() {
         ...(pg.id === 'whats-new' ? { whatsNew: WHATS_NEW[loc] } : {}),
         // Only help pages have `help`, pre-rendered for their kind.
         ...(pg.help ? { help: renderHelp(pg.help, loc) } : {}),
+        // Only the wall display guide has `wall`.
+        ...(pg.wall ? { wall: renderWall(pg.wall[loc]) } : {}),
         // Only blog pages have a post. Anywhere else `post` is absent, so a
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
@@ -1703,7 +1882,10 @@ function build() {
           // The header's section links (#features, #plus, …) point into the
           // home page: bare anchors on it, <home>#… everywhere else.
           anchorBase: pg.id === 'landing' ? '' : dirFor(loc),
-          homeCss: pg.id === 'landing' || pg.feature ? `<link rel="stylesheet" href="${homeCssHref}">` : '',
+          // A page's own stylesheet after style.css: home.css for the home
+          // and feature pages, wall.css for the wall display guide.
+          pageCss: pg.id === 'landing' || pg.feature ? `<link rel="stylesheet" href="${homeCssHref}">`
+            : pg.wall ? `<link rel="stylesheet" href="${wallCssHref}">` : '',
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
           footerLinks: renderFooterLinks(loc),
@@ -1720,7 +1902,8 @@ function build() {
         },
       };
       data.page.headExtra = renderHead(pg, loc, cssHref, isRootLanding ? detector : null, postBody)
-        + (pg.id === 'landing' ? `\n${homeScripts}` : '');
+        + (pg.id === 'landing' ? `\n${homeScripts}` : '')
+        + (pg.wall ? `\n<script src="${wallJsHref}" defer></script>` : '');
 
       const body = render(templates[pg.template], data, includes, where);
       data.page.body = body;
@@ -1792,6 +1975,7 @@ ${feedItems}
   console.log(`built ${written.length} pages · ${LOCALES.length} locale(s) · ${urls.length} sitemap entries`);
   console.log(`assets: ${cssName}  ${jsName}`);
   console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml`);
+  console.log(`wall: /wall-display/ · ${wall.devices.length} device guide(s) · ${wallLocales.join(', ')} · ${WALL_GUIDE_PUBLIC ? 'PUBLIC' : 'noindex, hidden'}`);
   console.log(`help: ${helpShown.articles.length} of ${help.articles.length} article(s) on pages (live ${LIVE_APP_VERSION}) · ${helpShown.topics.length} topic(s) · en.json ${helpJson.articles.length} articles, ${helpJson.tips.length} tips, ${helpJson.checklist.length} checklist · ${HELP_PUBLIC ? 'PUBLIC' : 'noindex preview'}`);
   for (const [k, j] of helpJsons.entries()) {
     if (!k) continue;

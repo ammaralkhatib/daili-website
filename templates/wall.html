@@ -1,0 +1,53 @@
+<!-- The wall display guide (2026-11-12/001). Every word comes from
+     wall/en.json; build.mjs renderWall() turns the lists into the HTML below.
+     Without JavaScript this is one long guide: the device list is a jump list
+     and every device's <section> follows the last. wall.js shows one at a time. -->
+<main class="wall" id="main">
+
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">{{ wall.hero.eyebrow }}</span>
+    <h1>{{ wall.hero.h1 }}</h1>
+    <p>{{ wall.hero.intro }}</p>
+    <ol class="how">
+{{{ wall.how }}}
+    </ol>
+  </div>
+{{{ wall.tablet }}}
+</section>
+
+<div class="wrap guide" id="guide" data-progress="{{ wall.ui.progress }}" data-copied="{{ wall.ui.copied }}">
+  <nav class="rail" aria-label="{{ wall.ui.devicesLabel }}">
+    <h2>{{ wall.ui.devicesHeading }}</h2>
+    <ul class="devs">
+{{{ wall.devList }}}
+    </ul>
+  </nav>
+  <div class="panel">
+    <p class="picked" hidden>{{ wall.ui.guessed }}</p>
+{{{ wall.sections }}}
+    <div class="after">
+      <h3>{{ wall.hangUp.title }}</h3>
+      <ul>
+{{{ wall.hangUpItems }}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <div>
+      <h2>{{ wall.safety.title }}</h2>
+      <ol class="safety">
+{{{ wall.safetyItems }}}
+      </ol>
+    </div>
+    <div>
+      <h2>{{ wall.help.title }}</h2>
+{{{ wall.helpItems }}}
+    </div>
+  </div>
+</section>
+
+</main>

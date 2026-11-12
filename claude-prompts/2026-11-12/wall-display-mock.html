@@ -1,0 +1,361 @@
+<title>Daili Wall Display Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@700;800&display=swap">
+<style>
+/* Layout: short hero with a drawn tablet, then a two-column guide — a sticky device list on the left, the chosen device's five jobs on the right. One column with a chip row on phones. */
+:root{
+  --paper:#FBF9F2; --card:#FFFFFF; --ink:#10201A; --body:#2B3A32; --muted:#5E6D64;
+  --forest:#04613C; --forest-deep:#0B4A30; --on-forest:#FFFFFF;
+  --mint:#DCEFDF; --mint-strong:#A9D9B8; --mint-soft:#EEF6EF;
+  --amber:#E9A93B; --amber-soft:#FBF0D6; --amber-ink:#6B4A07;
+  --line:#E4DFD1; --frame:#10201A; --screen:#FFFFFF; --shadow:16,29,22;
+  --p1:#E86A5C; --p2:#3F8FD6; --p3:#E9A93B; --p4:#8A63C9;
+  --display:"Sofia Sans Condensed","Arial Narrow",Impact,sans-serif;
+  --sans:Figtree,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --radius:22px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
+  --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
+  --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
+  --amber:#F0BC5E; --amber-soft:#2E2718; --amber-ink:#F3D9A0;
+  --line:#263A2E; --frame:#0A110D; --screen:#1B2820; --shadow:0,0,0; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --paper:#0E1712; --card:#16211A; --ink:#EDF2EC; --body:#CBD6CE; --muted:#93A498;
+  --forest:#5EC08F; --forest-deep:#7BD3A6; --on-forest:#08160F;
+  --mint:#1D3327; --mint-strong:#2E4F3C; --mint-soft:#152219;
+  --amber:#F0BC5E; --amber-soft:#2E2718; --amber-ink:#F3D9A0;
+  --line:#263A2E; --frame:#0A110D; --screen:#1B2820; --shadow:0,0,0; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--body);font:16px/1.6 var(--sans)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);color:var(--ink);line-height:1.02;margin:0;text-wrap:balance;letter-spacing:.005em}
+a{color:var(--forest)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:8px}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding-block:18px}
+.brand{font:800 30px/1 var(--display);color:var(--forest);letter-spacing:-.01em}
+.top a{font-weight:600;text-decoration:none;font-size:15px}
+
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:28px 56px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--forest)}
+.hero h1{font-size:clamp(44px,7vw,84px);margin-block:10px 16px}
+.hero p{font-size:19px;max-width:34em;margin:0}
+.how{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;padding:0;list-style:none;font-weight:600;color:var(--ink);font-size:15px}
+.how li{display:flex;align-items:center;gap:8px}
+.how b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--forest);color:var(--on-forest);font-size:14px}
+
+/* the drawn tablet */
+.tablet{background:var(--frame);border-radius:26px;padding:12px;box-shadow:0 30px 60px -28px rgba(var(--shadow),.55);transform:rotate(-2deg);max-width:100%}
+.scr{background:var(--screen);border-radius:15px;padding:14px;display:grid;gap:10px}
+.scr-top{display:flex;justify-content:space-between;font-weight:700;color:var(--ink);font-size:14px}
+.scr-top span:last-child{color:var(--muted);font-weight:500}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.day{background:var(--mint-soft);border-radius:9px;padding:6px;display:grid;gap:5px;align-content:start;min-height:112px;min-width:0}
+.day i{font-style:normal;font-size:11px;font-weight:700;color:var(--muted)}
+.day.now{background:var(--mint)}
+.pill{height:15px;border-radius:5px;background:var(--p2)}
+.pill.a{background:var(--p1)}.pill.c{background:var(--p3)}.pill.d{background:var(--p4)}.pill.s{width:62%}
+.scr-bot{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--ink);font-weight:600}
+.scr-bot div{background:var(--amber-soft);border-radius:9px;padding:7px 9px;min-width:0}
+.scr-bot small{display:block;color:var(--muted);font-weight:500}
+
+/* guide */
+.guide{display:grid;grid-template-columns:250px minmax(0,1fr);gap:36px;align-items:start;padding-bottom:64px}
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 14px)}
+.rail h2{font-size:26px;margin-bottom:12px}
+.devs{display:grid;gap:4px}
+.dev{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-radius:14px;padding:10px 12px;font-weight:600;color:var(--body)}
+.dev svg{flex:none;width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dev small{display:block;font-weight:500;color:var(--muted);font-size:13px;line-height:1.3}
+.dev:hover{background:var(--mint-soft)}
+.dev[aria-selected="true"]{background:var(--forest);color:var(--on-forest)}
+.dev[aria-selected="true"] small{color:inherit;opacity:.85}
+
+.panel{min-width:0}
+.picked{font-size:14px;color:var(--muted);margin:0 0 8px}
+.panel h2{font-size:clamp(34px,5vw,52px)}
+.lead{font-size:18px;margin:10px 0 18px;max-width:38em}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-block:1px solid var(--line);margin-bottom:8px}
+.facts div{padding:12px 16px 12px 0}
+.facts dt{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-weight:600;color:var(--ink)}
+.progress{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--muted);margin:16px 0 4px}
+.bar{flex:1;height:8px;border-radius:99px;background:var(--mint);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--forest);border-radius:99px;transition:width .3s}
+
+.job{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-block:26px;border-bottom:1px solid var(--line)}
+.num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:800 24px/1 var(--display);background:var(--mint);color:var(--forest-deep)}
+.job.done .num{background:var(--forest);color:var(--on-forest)}
+.job h3{font-size:28px;padding-top:7px}
+.job ol{margin:12px 0 0;padding-left:22px;display:grid;gap:8px;max-width:42em}
+.job p{margin:12px 0 0;max-width:42em}
+.job b{color:var(--ink)}
+.tip{background:var(--amber-soft);color:var(--amber-ink);border-radius:14px;padding:11px 14px;font-size:15px}
+.tip b{color:inherit}
+code{font-family:var(--mono);font-size:.9em;background:var(--mint-soft);padding:.1em .35em;border-radius:6px;color:var(--ink)}
+.cmd{display:flex;gap:10px;align-items:flex-start;background:var(--frame);border-radius:14px;padding:12px 12px 12px 16px;margin-top:10px}
+.cmd pre{margin:0;flex:1;min-width:0;overflow-x:auto;font:13.5px/1.55 var(--mono);color:#E7F3EA;white-space:pre}
+.cmd button{flex:none;border:0;border-radius:9px;background:#24382D;color:#E7F3EA;font-size:13px;font-weight:600;padding:6px 11px}
+.check{display:inline-flex;align-items:center;gap:9px;margin-top:16px;font-weight:600;color:var(--ink);font-size:15px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--forest)}
+
+.after{background:var(--mint-soft);border-radius:var(--radius);padding:26px;margin-top:30px}
+.after h3{font-size:28px;margin-bottom:6px}
+.after ul{margin:10px 0 0;padding-left:20px;display:grid;gap:6px}
+
+.band{background:var(--card);border-block:1px solid var(--line)}
+.band .wrap{padding-block:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.band h2{font-size:40px;margin-bottom:14px}
+.safety{margin:0;padding-left:22px;display:grid;gap:9px}
+details{border-bottom:1px solid var(--line);padding-block:12px}
+summary{font-weight:600;color:var(--ink);cursor:pointer}
+details p{margin:8px 0 2px}
+.foot{padding-block:30px 40px;font-size:14px;color:var(--muted)}
+
+.chips{display:none}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:26px;padding-block:8px 36px}
+  .guide{grid-template-columns:minmax(0,1fr);gap:18px}
+  .rail{position:static}
+  .devs{display:flex;overflow-x:auto;gap:8px;padding-bottom:6px;scroll-snap-type:x proximity}
+  .dev{width:auto;flex:none;border:1px solid var(--line);padding:8px 14px;scroll-snap-align:start}
+  .dev small{display:none}
+  .band .wrap{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:40px}
+  .job{grid-template-columns:36px minmax(0,1fr);gap:12px}
+  .num{width:36px;height:36px;font-size:20px}.job h3{padding-top:4px;font-size:25px}
+}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<header class="wrap top">
+  <span class="brand">daili</span>
+  <a href="https://daili.app/help/">Help center</a>
+</header>
+
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">Wall display guide</span>
+    <h1>Give an old tablet a new job.</h1>
+    <p>Hang it in the kitchen or hallway. It shows your family's week, meals, lists and habits, and everyone can tick things off as they walk past. Free, with the tablet you already own.</p>
+    <ol class="how">
+      <li><b>1</b> Pick your device</li>
+      <li><b>2</b> Follow five steps</li>
+      <li><b>3</b> Hang it up</li>
+    </ol>
+  </div>
+  <div class="tablet" aria-hidden="true">
+    <div class="scr">
+      <div class="scr-top"><span>This week</span><span>Thu 12 Nov</span></div>
+      <div class="week">
+        <div class="day"><i>MON</i><span class="pill"></span><span class="pill c s"></span></div>
+        <div class="day"><i>TUE</i><span class="pill a"></span></div>
+        <div class="day"><i>WED</i><span class="pill d s"></span><span class="pill"></span><span class="pill c"></span></div>
+        <div class="day now"><i>THU</i><span class="pill a"></span><span class="pill d"></span></div>
+        <div class="day"><i>FRI</i><span class="pill c"></span><span class="pill s"></span></div>
+      </div>
+      <div class="scr-bot"><div><small>Dinner tonight</small>Pumpkin soup</div><div><small>Shopping</small>6 things to buy</div></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap guide" id="guide">
+  <nav class="rail" aria-label="Devices">
+    <h2>Which device?</h2>
+    <div class="devs" role="tablist" id="devs"></div>
+  </nav>
+  <article class="panel" id="panel" role="tabpanel"></article>
+</main>
+
+<section class="band">
+  <div class="wrap">
+    <div>
+      <h2>Battery and safety</h2>
+      <ol class="safety">
+        <li><b>Use the charge limit</b> if your device has one. 80&nbsp;% is ideal.</li>
+        <li><b>No charge limit?</b> Use a timer plug or smart plug. Let it charge for about one hour, two or three times a day.</li>
+        <li><b>Keep it cool.</b> No direct sun, and not above the cooker, the kettle or a heater.</li>
+        <li><b>Lower the brightness.</b> Half is enough indoors.</li>
+        <li><b>Check it once a month.</b> If the back bulges, the screen lifts or the case is hot, stop using it and bring it to a recycling point.</li>
+      </ol>
+    </div>
+    <div>
+      <h2>Something not working?</h2>
+      <details><summary>The screen turns off after a few minutes</summary><p>Set the screen timeout (iPad: Auto-Lock) to Never, as in step 3 for your device. Switch battery saver off.</p></details>
+      <details><summary>The board shows a code again</summary><p>The browser's saved data was cleared, or the board was opened in another browser or a private window. Connect it again and always open it the same way.</p></details>
+      <details><summary>"This screen was removed"</summary><p>A parent removed the screen, or the parent who connected it left the family. A parent can connect it again.</p></details>
+      <details><summary>A security warning or a broken page</summary><p>The device or its browser is too old. Update the browser. On an old Android tablet, try Firefox.</p></details>
+      <details><summary>The board shows old data</summary><p>The Wi-Fi is weak at that spot, or the device lets Wi-Fi sleep. Move the router closer or switch Wi-Fi power saving off.</p></details>
+      <details><summary>How do I leave the board?</summary><p>Press and hold <b>Hold to leave</b> for two seconds. If you locked the device (Guided Access, kiosk mode, app pinning), end that lock first.</p></details>
+      <details><summary>The tablet was lost or sold</summary><p>In the Daili app: Settings → Wall display → Wall screens → Remove. It stops showing your family at once.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap foot">Design mock for daili.app/wall-display. Not live yet. Steps still need a test on real devices.</footer>
+
+<script>
+const I = {
+  tabP:'<svg viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>',
+  tabL:'<svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M18.5 11v2"/></svg>',
+  lap:'<svg viewBox="0 0 24 24"><rect x="4.5" y="5" width="15" height="10.5" rx="1.8"/><path d="M2.5 19h19"/></svg>',
+  chip:'<svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9.5 3v3M14.5 3v3M9.5 18v3M14.5 18v3M3 9.5h3M3 14.5h3M18 9.5h3M18 14.5h3"/></svg>',
+  mon:'<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>',
+  tv:'<svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12.5" rx="2"/><path d="M8 3l4 3 4-3"/></svg>'
+};
+const pair = (dev, browser) => [
+  `On the ${dev}, open <b>${browser}</b> and go to <b>app.daili.app/board/pair</b>. A 6-digit code and a QR code appear.`,
+  'In the Daili app on your phone: <b>Settings → Wall display → Connect a screen</b>. Type the code or scan the QR code. Only parents can do this.',
+  'Give the screen a name, for example "Kitchen", and tap <b>Approve</b>. The board opens after a few seconds.'
+];
+const cmd = t => `<div class="cmd"><pre>${t.replace(/</g,'&lt;')}</pre><button type="button" data-copy>Copy</button></div>`;
+const D = [
+ {id:'ipad', name:'iPad', sub:'iPadOS 16.4 or newer', icon:I.tabP,
+  lead:'Works on every iPad from 2017 on. An iPad cannot open a page by itself, so after a power cut it needs one tap.',
+  facts:[['Time','10 minutes'],['Cost','Free'],['Starts by itself','No, one tap'],['Child lock','Guided Access']],
+  jobs:[
+   ['Connect the screen',[ 'In <b>Safari</b>, open <b>app.daili.app/board/pair</b>. Tap <b>Share → Add to Home Screen → Add</b>.','Close Safari and open the new <b>daili</b> icon. If you see the sign-in page, tap <b>Connect a screen with a code</b>.', pair('iPad','the daili icon')[1], pair('','')[2] ], '<p class="tip"><b>Connect inside the icon, not in Safari.</b> The icon keeps its own saved data.</p>'],
+   ['Full screen and child lock',['<b>Settings → Accessibility → Guided Access</b>: switch it on.','<b>Passcode Settings → Set Guided Access Passcode</b>. Pick a code the children do not know.','Open the daili icon, triple-click the Home button (or the top button) and tap <b>Start</b>.'], '<p>The Home Screen icon is already full screen. Guided Access keeps the iPad inside Daili until you triple-click and enter the code.</p>'],
+   ['Keep the screen on',['<b>Settings → Display &amp; Brightness → Auto-Lock → Never</b>.','<b>Settings → Accessibility → Guided Access → Display Auto-Lock → Never</b>.']],
+   ['After a restart',['Turn off automatic installs: <b>Settings → General → Software Update → Automatic Updates</b>. An update restarts the iPad at night.','After a restart or power cut: unlock, tap the daili icon, triple-click, tap <b>Start</b>.']],
+   ['Protect the battery',['Newer iPads (iPad Pro M4, iPad Air M2, iPad mini A17 Pro, iPad A16 and later): <b>Settings → Battery → Battery Health → 80% Limit</b>.','Older iPads have no limit. Use a timer plug, see "Battery and safety" below.']]
+  ]},
+ {id:'android', name:'Android tablet', sub:'Samsung, Lenovo, Xiaomi …', icon:I.tabL,
+  lead:'The best way is the Fully Kiosk Browser app. It was made for wall tablets and is the only way to start by itself after a restart.',
+  facts:[['Time','15 minutes'],['Cost','Free, or 8.90 € for the lock'],['Starts by itself','Yes'],['Child lock','Kiosk mode with PIN']],
+  jobs:[
+   ['Connect the screen',['Install <b>Fully Kiosk Browser</b> from Google Play.','On first start, type the Start URL: <b>https://app.daili.app/board</b>. A 6-digit code and a QR code appear.', pair('','')[1], pair('','')[2] ], '<p class="tip"><b>Just trying it out?</b> Chrome works too: open app.daili.app/board/pair, connect, then ⋮ → Add to Home screen → Install.</p>'],
+   ['Full screen and child lock',['Swipe in from the left edge and tap <b>Settings</b>.','<b>Toolbars and Appearance</b>: switch full screen on.','<b>Kiosk Mode</b> (paid): <b>Enable Kiosk Mode</b> and set a <b>Kiosk Mode PIN</b>. To leave, tap fast 7 times and enter the PIN.']],
+   ['Keep the screen on',['<b>Device Management → Keep Screen On</b>: on.','Optional: <b>Motion Detection</b> wakes the screen when someone walks by, and <b>Screen Off Timer</b> lets it rest at night.','In the tablet settings, switch battery saver off.']],
+   ['Start by itself',['<b>Device Management → Launch on Boot</b>: on.','<b>Web Auto Reload</b>: reload when the network reconnects.','Tablet settings: <b>Security → Screen lock → None</b>, so a restart goes straight to the board.'], '<p class="tip">Leave every "clear cache" or "delete web storage" option <b>off</b>. They disconnect the screen.</p>'],
+   ['Protect the battery',['Samsung: <b>Settings → Battery → Battery protection → Maximum → 80 %</b>.','Other brands: search Settings for "charge" or "protect".','Nothing there? Use a timer plug, see "Battery and safety" below.']]
+  ]},
+ {id:'fire', name:'Amazon Fire tablet', sub:'Fire HD 8 (2018) or newer', icon:I.tabL,
+  lead:'A Fire tablet works with its own Silk browser. That is the simple way. Older Fire tablets from 2015 to 2017 are too old.',
+  facts:[['Time','10 minutes'],['Cost','Free'],['Starts by itself','No, one tap'],['Child lock','Fully Kiosk (optional)']],
+  jobs:[
+   ['Connect the screen', pair('Fire tablet','Silk')],
+   ['Full screen',['Tap the board once. It goes full screen.'], '<p>Want a child lock? Install Fully Kiosk Browser from fully-kiosk.com and follow the Android steps. Its maker warns that a Fire update can break the lock.</p>'],
+   ['Keep the screen on',['<b>Settings → Display → Display Sleep → Never</b> (or the longest time).','No "Never"? <b>Settings → Device Options → About Fire Tablet</b>: tap "Serial Number" 7 times. Then <b>Developer Options → Stay awake</b>.']],
+   ['After a restart',['Switch the lock-screen passcode off: <b>Settings → Security &amp; Privacy</b>.','After a restart: swipe to unlock and open Silk. The board comes back.']],
+   ['Protect the battery',['Fire tablets have no charge limit. Use a timer plug, see "Battery and safety" below.']]
+  ]},
+ {id:'windows', name:'Windows', sub:'Tablet, laptop or mini PC', icon:I.lap,
+  lead:'Works on Windows 10 and 11, Home and Pro. Windows signs in by itself and opens Daili full screen.',
+  facts:[['Time','15 minutes'],['Cost','Free'],['Starts by itself','Yes'],['Child lock','Separate Windows user']],
+  jobs:[
+   ['Connect the screen', pair('device','Microsoft Edge')],
+   ['Full screen',['Press <b>Windows + R</b>, type <code>shell:startup</code>, press Enter. A folder opens.','Right-click in the folder → <b>New → Shortcut</b>. Paste this line as the location:'], cmd('"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" --start-fullscreen --app=https://app.daili.app/board') + '<p>Name it "Daili board". Double-click it to test. Leave with <b>Alt + F4</b>.</p>'],
+   ['Keep the screen on',['<b>Settings → System → Power</b>: set "turn off my screen" and "sleep" to <b>Never</b> when plugged in.','Laptop: <b>Control Panel → Power Options → Choose what closing the lid does → Do nothing</b>.','<b>Settings → System → Notifications</b>: switch them off.']],
+   ['Start by itself',['<b>Settings → Accounts → Sign-in options</b>: turn off "Require Windows Hello sign-in for Microsoft accounts". Restart once.','Press <b>Windows + R</b>, type <code>netplwiz</code>, press Enter.','Remove the tick at "Users must enter a user name and password", click OK, type the password twice.'], '<p>The shortcut from step 2 is in the Startup folder, so Daili opens after every sign-in.</p>'],
+   ['Protect the battery',['Look for a charge limit in the maker\'s app (Lenovo Vantage, ASUS, Acer Care Center, Surface).','Nothing there? Use a timer plug, see "Battery and safety" below.','Mini PC: nothing to do, it has no battery.']]
+  ]},
+ {id:'pi', name:'Raspberry Pi / Linux', sub:'With a touch screen', icon:I.chip,
+  lead:'The best build-it-yourself wall display. No battery, little power, and it starts by itself when the power comes back.',
+  facts:[['Time','30 minutes'],['Cost','Free'],['Starts by itself','Yes'],['For','People who like to tinker']],
+  jobs:[
+   ['Connect the screen', pair('Pi','Chromium')],
+   ['Full screen and autostart',['Open a terminal and run the two lines below. An empty file opens.','Paste the third line into the file. Save with Ctrl + O, Enter, then Ctrl + X.'], cmd('mkdir -p ~/.config/labwc\nnano ~/.config/labwc/autostart') + cmd('chromium https://app.daili.app/board --kiosk --noerrdialogs --disable-infobars --no-first-run --start-maximized &')],
+   ['Keep the screen on',['Run <code>sudo raspi-config</code>.','<b>Display Options → Screen Blanking → No</b>.']],
+   ['Start by itself',['In <code>raspi-config</code>: <b>System Options → Boot / Auto Login → Desktop Autologin</b>.','Run <code>sudo reboot</code>. The Pi starts and shows the board.'], '<p>Other Linux (Ubuntu, Fedora): set Screen Blank to Never, switch on Automatic Login, and add the same Chromium line as a startup program.</p>'],
+   ['Protect the battery',['Nothing to do. A Pi has no battery.']]
+  ]},
+ {id:'mac', name:'Mac', sub:'Old MacBook, iMac, Mac mini', icon:I.mon,
+  lead:'An old iMac makes a big, bright family screen. It is for looking, because a Mac has no touch screen.',
+  facts:[['Time','10 minutes'],['Cost','Free'],['Starts by itself','Yes'],['Touch','No']],
+  jobs:[
+   ['Connect the screen', pair('Mac','Chrome')],
+   ['Full screen',['In Chrome: <b>⋮ → Cast, save, and share → Install page as app</b>.','Open the Daili app from the Dock and click the board once.']],
+   ['Keep the screen on',['<b>System Settings → Lock Screen</b>: set "Turn display off when inactive" and "Start Screen Saver" to <b>Never</b>.']],
+   ['Start by itself',['<b>System Settings → General → Login Items</b>: add the Daili app.','<b>System Settings → Users &amp; Groups → Automatically log in as</b>: pick the user.','iMac or Mac mini: <b>Energy → Start up automatically after a power failure</b>.']],
+   ['Protect the battery',['MacBook: <b>System Settings → Battery → Battery Health → Optimized Battery Charging</b>: on.','iMac and Mac mini have no battery.']]
+  ]},
+ {id:'chromebook', name:'Chromebook', sub:'Any current Chromebook', icon:I.lap,
+  lead:'Works well as a screen on a shelf or sideboard. After a restart you sign in once.',
+  facts:[['Time','5 minutes'],['Cost','Free'],['Starts by itself','No, sign in once'],['Touch','On touch models']],
+  jobs:[
+   ['Connect the screen', pair('Chromebook','Chrome')],
+   ['Full screen',['Press the full-screen key (the rectangle in the top row).']],
+   ['Keep the screen on',['<b>Settings → Device → Power</b>: "While charging" → <b>Keep display on</b>.','Switch "Sleep when cover is closed" off.']],
+   ['After a restart',['<b>Settings → On startup → Continue where you left off</b>.','After a restart: sign in. The board opens again.']],
+   ['Protect the battery',['Use a timer plug, see "Battery and safety" below.']]
+  ]},
+ {id:'tv', name:'TV or other', sub:'Fire TV, Android TV, old phone', icon:I.tv,
+  lead:'A TV can show the board, but you cannot tap it. Some devices cannot show it at all.',
+  facts:[['Time','5 minutes'],['Cost','Free'],['Touch','No'],['Good for','Looking only']],
+  jobs:[
+   ['Connect the screen', pair('TV','the browser (Silk on Fire TV)')],
+   ['What works',['<b>Fire TV, Android TV:</b> the board shows in the browser. No ticking, no adding.','<b>Old phone:</b> follow the iPad or Android steps. Nice on the fridge.','<b>TRMNL e-paper display:</b> Daili has its own plugin on trmnl.com.']],
+   ['What does not work',['Google Nest Hub, Amazon Echo Show and Apple TV cannot show the board.','Tablets older than about 2016 show a broken page or a security warning.']],
+   ['Careful with OLED TVs',['Do not leave the board on an OLED TV for hours. A picture that never moves can burn into the screen.']]
+  ]}
+];
+
+const $ = s => document.querySelector(s);
+const store = { get(k){ try{ return JSON.parse(localStorage.getItem(k)||'{}') }catch(e){ return {} } }, set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)) }catch(e){} } };
+let done = store.get('wall-done');
+function guess(){
+  const u = navigator.userAgent;
+  if (/CrOS/.test(u)) return 'chromebook';
+  if (/Silk|KF[A-Z]{2,}/.test(u)) return 'fire';
+  if (/Android/.test(u)) return 'android';
+  if (/iPad|iPhone/.test(u) || (/Macintosh/.test(u) && navigator.maxTouchPoints > 1)) return 'ipad';
+  if (/Windows/.test(u)) return 'windows';
+  if (/Macintosh/.test(u)) return 'mac';
+  if (/Linux/.test(u)) return 'pi';
+  return 'ipad';
+}
+const guessed = guess();
+function current(){ const h = location.hash.slice(1); return D.find(d => d.id === h) || D.find(d => d.id === guessed); }
+
+function draw(){
+  const d = current();
+  $('#devs').innerHTML = D.map(x => `<button class="dev" role="tab" id="tab-${x.id}" aria-selected="${x.id===d.id}" data-id="${x.id}">${x.icon}<span>${x.name}<small>${x.sub}</small></span></button>`).join('');
+  const n = d.jobs.filter((_, i) => done[d.id+i]).length;
+  $('#panel').innerHTML = `
+    ${d.id===guessed && !location.hash ? `<p class="picked">You seem to be on this kind of device, so we opened its steps. Setting up another one? Pick it in the list.</p>`:''}
+    <h2>${d.name}</h2>
+    <p class="lead">${d.lead}</p>
+    <dl class="facts">${d.facts.map(f => `<div><dt>${f[0]}</dt><dd>${f[1]}</dd></div>`).join('')}</dl>
+    <div class="progress"><span>${n} of ${d.jobs.length} done</span><span class="bar"><i style="width:${n/d.jobs.length*100}%"></i></span></div>
+    ${d.jobs.map((j, i) => `
+      <section class="job ${done[d.id+i]?'done':''}">
+        <span class="num">${i+1}</span>
+        <div>
+          <h3>${j[0]}</h3>
+          <ol>${j[1].map(s => `<li>${s}</li>`).join('')}</ol>
+          ${j[2]||''}
+          <label class="check"><input type="checkbox" id="chk-${d.id}-${i}" data-k="${d.id+i}" ${done[d.id+i]?'checked':''}> Done</label>
+        </div>
+      </section>`).join('')}
+    <div class="after">
+      <h3>Now hang it up</h3>
+      <ul>
+        <li>Pick a place everyone walks past, at eye height for the children.</li>
+        <li>Check the Wi-Fi at that spot before you drill.</li>
+        <li>Set quiet hours in Daili. The board turns dark at night by itself.</li>
+        <li>Use the tablet only for Daili. Switch sound and notifications off.</li>
+      </ul>
+    </div>`;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.dev');
+  if (b){ location.hash = b.dataset.id; return; }
+  const c = e.target.closest('[data-copy]');
+  if (c){
+    const t = c.previousElementSibling.textContent;
+    const ok = () => { c.textContent = 'Copied'; setTimeout(() => c.textContent = 'Copy', 1500); };
+    try { navigator.clipboard.writeText(t).then(ok).catch(() => sel(c)); } catch(err){ sel(c); }
+  }
+});
+function sel(c){ const r = document.createRange(); r.selectNodeContents(c.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+document.addEventListener('change', e => {
+  if (!e.target.dataset.k) return;
+  done[e.target.dataset.k] = e.target.checked; store.set('wall-done', done); draw();
+});
+addEventListener('hashchange', () => { draw(); $('#guide').scrollIntoView({block:'start'}); });
+draw();
+</script>

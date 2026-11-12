@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WATCH_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WATCH_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES, WALL_GUIDE_PUBLIC } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -95,6 +95,12 @@ const FEATURE_PAGES = HOME_FEATURES.filter((f) => f.page);
 for (const f of HOME_FEATURES) if (!f.page) fail('site.config.mjs', `HOME_FEATURES '${f.slug}' has no page: true — every feature in the row needs its page`);
 const featureOut = (slug, loc) => `${dirFor(loc).slice(1)}features/${slug}/index.html`;
 for (const f of FEATURE_PAGES) for (const loc of LOCALES) expected.add(featureOut(f.slug, loc));
+// The wall display guide (2026-11-12/001): one page per wall/<loc>.json,
+// English only today. Section 24.
+const WALL_LOCALES = LOCALES.filter((l) => fs.existsSync(path.join(ROOT, 'wall', `${l}.json`)));
+const wallOut = (loc) => `${dirFor(loc).slice(1)}wall-display/index.html`;
+const WALL_OUTS = WALL_LOCALES.map(wallOut);
+for (const w of WALL_OUTS) expected.add(w);
 for (const e of expected) {
   if (!fs.existsSync(path.join(DIST, e))) fail(e, 'MISSING from dist/');
 }
@@ -1313,6 +1319,62 @@ const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf
       if (!h1) fail(out, 'has no <h1>');
       else if (!title.startsWith(h1)) fail(out, `<title> "${title}" does not start with its own <h1> "${h1}"`);
     }
+  }
+}
+
+// --- 24. the wall display guide (2026-11-12/001) ----------------------------
+// One <section id> per device in wall/<loc>.json (the page is complete without
+// JavaScript), no hreflang while it is English only, noindex and out of the
+// sitemap exactly while WALL_GUIDE_PUBLIC is false, and unlinked while hidden.
+// Its own wall.js and wall.css, on these pages only. The CSP allows no inline
+// script, so no inline <script> body and no on…= handler.
+{
+  const sitemap = fs.existsSync(path.join(DIST, 'sitemap.xml')) ? read(path.join(DIST, 'sitemap.xml')) : '';
+  for (const loc of WALL_LOCALES) {
+    const out = wallOut(loc);
+    const file = path.join(DIST, out);
+    if (!fs.existsSync(file)) continue;      // section 1 already reported it
+    const html = read(file);
+    const src = `wall/${loc}.json`;
+    const ids = JSON.parse(fs.readFileSync(path.join(ROOT, src), 'utf8')).devices.map((d) => d.id);
+    for (const id of ids) {
+      const n = html.split(`<section class="wall-dev" id="${id}"`).length - 1;
+      if (n !== 1) fail(out, `has ${n} <section id="${id}">, expected exactly 1 (${src} device "${id}")`);
+      if (!html.includes(`<a class="dev" href="#${id}">`)) fail(out, `the device list has no plain link <a href="#${id}">`);
+    }
+    const sectionIds = [...html.matchAll(/<section\b[^>]*\sid="([^"]+)"/g)].map((m) => m[1]);
+    if (sectionIds.length !== ids.length) fail(out, `has ${sectionIds.length} <section id>, ${src} has ${ids.length} devices (${sectionIds.join(', ')})`);
+    // In the <head>, like the blog's check 4: the language picker's and the
+    // nav's <a hreflang> links are on every page by design.
+    if (WALL_LOCALES.length === 1) {
+      const hreflangs = (headOf(html).match(/hreflang=/g) || []).length;
+      if (hreflangs) fail(out, `<head> carries ${hreflangs} hreflang= declaration(s) — the guide is English only and outside every cluster`);
+      if (/<link rel="alternate"[^>]*hreflang=/.test(html)) fail(out, 'carries a <link rel="alternate" … hreflang=> — an English-only guide must never join an hreflang cluster');
+    }
+    const inSitemap = sitemap.includes(`<loc>${BASE_URL}/${out.replace(/index\.html$/, '')}</loc>`);
+    if (WALL_GUIDE_PUBLIC) {
+      if (isNoindex(html)) fail(out, 'is noindex but WALL_GUIDE_PUBLIC is true');
+      if (!inSitemap) fail('sitemap.xml', `has no /${out.replace(/index\.html$/, '')} but WALL_GUIDE_PUBLIC is true`);
+    } else {
+      if (!isNoindex(html)) fail(out, 'is indexable but WALL_GUIDE_PUBLIC is false — it must be noindex');
+      if (inSitemap) fail('sitemap.xml', `lists /${out.replace(/index\.html$/, '')} but WALL_GUIDE_PUBLIC is false`);
+    }
+    if (!/<script src="\/assets\/wall\.[0-9a-f]{8}\.js" defer><\/script>/.test(html)) fail(out, 'does not load /assets/wall.<hash>.js with <script src defer>');
+    if (!/<link rel="stylesheet" href="\/assets\/wall\.[0-9a-f]{8}\.css">/.test(html)) fail(out, 'does not load /assets/wall.<hash>.css');
+    for (const [, body] of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) {
+      if (body.trim()) { fail(out, `has an inline <script> body (${body.trim().slice(0, 40)}…) — the CSP blocks it`); break; }
+    }
+    for (const [tag] of html.matchAll(/<[a-zA-Z][^>]*>/g)) {
+      const on = tag.match(/\s(on[a-z]+)\s*=/i);
+      if (on) fail(out, `has an ${on[1]}= attribute (${tag.slice(0, 50)}) — the CSP blocks inline handlers`);
+    }
+  }
+  const wallOuts = new Set(WALL_OUTS);
+  for (const f of htmlFiles) {
+    if (wallOuts.has(rel(f))) continue;
+    const html = read(f);
+    if (/\/assets\/wall\.[0-9a-f]{8}\.(?:js|css)/.test(html)) fail(rel(f), 'loads wall.js or wall.css, which belong to /wall-display/ only');
+    if (!WALL_GUIDE_PUBLIC && /href="(?:https:\/\/daili\.app)?\/(?:[a-z-]+\/)?wall-display\//i.test(html)) fail(rel(f), 'links to the wall display guide while WALL_GUIDE_PUBLIC is false — the guide stays hidden');
   }
 }
 
