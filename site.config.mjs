@@ -1342,7 +1342,7 @@ export const HELP_PUBLIC = true;
  * (the help article anywhere-wall) come in their own prompt.
  */
 export const WALL_GUIDE_PUBLIC = false;
-export const LIVE_APP_VERSION = '1.15.0';
+export const LIVE_APP_VERSION = '1.16.1';
 
 /**
  * The topic icons, a fixed vocabulary: the app maps each name to its own icon
