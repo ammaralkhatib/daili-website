@@ -165,6 +165,14 @@ const V116_MUST_CONTAIN = {
 const V116_WHY = 'rewards, stock lists, meal wishes, Instagram recipes, offline lists + notes and read aloud (app 1.16.0) are in every locale — see claude-prompts/2026-11-10/002';
 
 /**
+ * Google two-way sync: the optional `calendar.events` (edit) permission in
+ * section 5. Google's reviewers read this paragraph before they approve the
+ * permission. The anchor is on a <p>, invisible to the <h2> id comparison below.
+ */
+const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"'] };
+const TWO_WAY_WHY = 'Google two-way sync (the calendar.events permission) is in every locale — see claude-prompts/2026-11-15/001';
+
+/**
  * 1.15.0 renamed "Copy to Daili" to "Edit in Daili". The old label may appear
  * exactly once, in the sentence about copies made with the EARLIER button
  * (the history phrase below); anywhere else it is a stale label.
@@ -249,6 +257,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V116_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V116_WHY}`);
+    }
+
+    for (const must of TWO_WAY_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${TWO_WAY_WHY}`);
     }
 
     if (id === 'privacy') {
