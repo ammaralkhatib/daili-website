@@ -8,5 +8,9 @@
     "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose.",
     "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose."
   },
-  "pending": {}
+  "pending": {
+    "/calendar/external-edit": "Google two-way sync: edit form for a Google event (in the app, switched on only for the operator until Google approves calendar.events) — article when the feature opens for everyone.",
+    "/habits/chores/new": "Chores (in the app, not released yet) — article at the next release help sync.",
+    "/habits/:id/chore": "Chores (in the app, not released yet) — article at the next release help sync."
+  }
 }
