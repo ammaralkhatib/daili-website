@@ -3,7 +3,7 @@ id: anywhere-web
 title: 在瀏覽器使用 daili（app.daili.app）
 summary: 在電腦上安排，家庭、行事曆和清單都跟手機上一樣。
 keywords: 網頁版, 瀏覽器, 電腦, 筆電, 桌機, pc, mac, 網站, 線上, app.daili.app, 大螢幕
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 在電腦上，你可以用瀏覽器使用 daili。同一個帳號，同一個家庭：你改的每樣東西都會出現在每個人的手機上。
 
@@ -15,4 +15,4 @@ translatedFrom: 2026-11-10
 
 文件、相片、錄音和筆記的 AI 小幫手只在手機 App 裡。刪除帳號也一樣。
 
-> Note: 瀏覽器版是為電腦設計的。在手機或平板上，它會請你改用 App。
+> Note: 瀏覽器版是為電腦和平板設計的。在手機上，它會請你改用 App。

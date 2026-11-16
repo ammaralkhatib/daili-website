@@ -3,7 +3,7 @@ id: anywhere-web
 title: 在浏览器里使用 daili（app.daili.app）
 summary: 在电脑上安排事情，家庭、日历和清单都和手机上一样。
 keywords: 网页版, 浏览器, 电脑, 笔记本, 台式机, pc, mac, 网站, 在线, app.daili.app, 大屏幕
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 在电脑上，你可以用浏览器打开 daili。同一个账户，同一个家庭：你改的每样东西都会出现在每个人的手机上。
 
@@ -15,4 +15,4 @@ translatedFrom: 2026-11-10
 
 文件、照片、录音和笔记的 AI 助手只在手机应用里。删除账户也一样。
 
-> Note: 浏览器版是为电脑做的。在手机或平板上打开时，它会请你改用应用。
+> Note: 浏览器版是为电脑和平板做的。在手机上打开时，它会请你改用应用。

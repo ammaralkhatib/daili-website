@@ -3,7 +3,7 @@ id: anywhere-web
 title: Folosește daili în browser (app.daili.app)
 summary: Planifică pe calculator, cu aceeași familie, același calendar și aceleași liste ca pe telefon.
 keywords: web, browser, calculator, laptop, desktop, pc, mac, site, online, app.daili.app, ecran mare
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 Pe un calculator, poți folosi daili în browser. Același cont, aceeași familie: orice schimbare apare pe telefoanele tuturor.
 
@@ -15,4 +15,4 @@ Pe un calculator, poți folosi daili în browser. Același cont, aceeași famili
 
 Documentele, Pozele, înregistrarea vocii și asistenții AI pentru notițe rămân în aplicația de pe telefon. La fel și ștergerea contului.
 
-> Note: Versiunea de browser e făcută pentru calculatoare. Pe un telefon sau o tabletă, îți cere să folosești aplicația.
+> Note: Versiunea de browser e făcută pentru calculatoare și tablete. Pe un telefon, îți cere să folosești aplicația.

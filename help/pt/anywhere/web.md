@@ -3,7 +3,7 @@ id: anywhere-web
 title: Usar o daili no navegador (app.daili.app)
 summary: Planeje no computador, com a mesma família, o mesmo calendário e as mesmas listas do celular.
 keywords: web, navegador, computador, notebook, desktop, pc, mac, site, on-line, app.daili.app, tela grande
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 No computador, você pode usar o daili no navegador. Mesma conta, mesma família: toda mudança aparece no celular de todo mundo.
 
@@ -15,4 +15,4 @@ As notas também funcionam aqui: escrever, filtrar, pôr etiquetas, fixar, compa
 
 Documentos, Fotos, gravar voz e as ajudas de IA das notas ficam no app do celular. Excluir sua conta também.
 
-> Note: A versão para navegador foi feita para computadores. Em um celular ou tablet, ela pede para você usar o app.
+> Note: A versão para navegador foi feita para computadores e tablets. Em um celular, ela pede para você usar o app.

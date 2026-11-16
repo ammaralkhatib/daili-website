@@ -6,7 +6,7 @@ summary: Plan on your computer, with the same family, calendar and lists as on y
 keywords: web, browser, computer, laptop, desktop, pc, mac, website, online, app.daili.app, big screen
 routes: /
 since: 1.1.0
-updated: 2026-11-10
+updated: 2026-11-16
 order: 3
 mediaPending: hand-made screenshot of daili in a computer browser
 related: anywhere-wall, anywhere-widgets, notes-notes, anywhere-ai-apps
@@ -21,4 +21,4 @@ Notes work here too: write, filter, tag, pin, share, set a reminder (it shows on
 
 Documents, Photos, recording voice and the notes' AI helpers stay in the phone app. So does deleting your account.
 
-> Note: The browser version is made for computers. On a phone or tablet, it asks you to use the app instead.
+> Note: The browser version is made for computers and tablets. On a phone, it asks you to use the app instead.

@@ -3,7 +3,7 @@ id: anywhere-web
 title: daili v prohlížeči (app.daili.app)
 summary: Plánuj na počítači, se stejnou rodinou, kalendářem a seznamy jako v telefonu.
 keywords: web, prohlížeč, počítač, notebook, desktop, pc, mac, webová stránka, online, app.daili.app, velká obrazovka
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 Na počítači můžeš používat daili v prohlížeči. Stejný účet, stejná rodina: každá změna se objeví v telefonech všech.
 
@@ -15,4 +15,4 @@ Poznámky fungují i tady: můžeš je psát, filtrovat, štítkovat, připínat
 
 Dokumenty, Fotky, nahrávání hlasu a pomocníci AI v poznámkách zůstávají v aplikaci v telefonu. Stejně tak smazání účtu.
 
-> Note: Verze pro prohlížeč je dělaná pro počítače. Na telefonu nebo tabletu tě požádá o použití aplikace.
+> Note: Verze pro prohlížeč je dělaná pro počítače a tablety. Na telefonu tě požádá o použití aplikace.

@@ -3,7 +3,7 @@ id: anywhere-web
 title: Usare daili nel browser (app.daili.app)
 summary: Organizzati dal computer, con la stessa famiglia, lo stesso calendario e le stesse liste del telefono.
 keywords: web, browser, computer, portatile, desktop, pc, mac, sito, online, app.daili.app, schermo grande
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 Sul computer puoi usare daili nel browser. Stesso account, stessa famiglia: ogni modifica compare sui telefoni di tutti.
 
@@ -15,4 +15,4 @@ Anche le note funzionano qui: scrivi, filtra, aggiungi etichette, fissa, condivi
 
 Documenti, Foto, la registrazione vocale e gli aiuti IA delle note restano nell'app del telefono. Così come l'eliminazione del tuo account.
 
-> Note: La versione browser è fatta per i computer. Su telefono o tablet ti chiede di usare l'app.
+> Note: La versione browser è fatta per computer e tablet. Su telefono ti chiede di usare l'app.

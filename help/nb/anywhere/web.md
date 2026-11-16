@@ -3,7 +3,7 @@ id: anywhere-web
 title: Bruk daili i nettleseren (app.daili.app)
 summary: Planlegg på datamaskinen, med den samme familien, kalenderen og de samme listene som på telefonen.
 keywords: nett, nettleser, datamaskin, bærbar, pc, mac, nettside, på nett, app.daili.app, stor skjerm
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 På en datamaskin kan du bruke daili i nettleseren. Samme konto, samme familie: alle endringer dukker opp på alles telefoner.
 
@@ -15,4 +15,4 @@ Notater fungerer her også: skriv, filtrer, tagg, fest, del, sett en påminnelse
 
 Dokumenter, Bilder, stemmeopptak og KI-hjelperne for notater blir i appen på telefonen. Det gjør også sletting av kontoen.
 
-> Note: Nettleserversjonen er laget for datamaskiner. På en telefon eller et nettbrett ber den deg bruke appen i stedet.
+> Note: Nettleserversjonen er laget for datamaskiner og nettbrett. På en telefon ber den deg bruke appen i stedet.
