@@ -2,8 +2,8 @@
 id: calendar-views
 title: Zobrazení kalendáře: měsíc, týden, den, agenda, lidé a rok
 summary: Přepínej mezi měsícem, týdnem, 3 dny, dnem, agendou, lidmi a rokem a filtruj podle osoby, kategorie nebo kalendáře.
-keywords: zobrazení, měsíc, týden, agenda, filtr, lidé, rok, skrýt kalendář, všechny události, obnovit, číslo týdne
-translatedFrom: 2026-11-10
+keywords: zobrazení, měsíc, týden, agenda, filtr, lidé, rok, skrýt kalendář, všechny události, proužky, číslo týdne
+translatedFrom: 2026-11-16
 ---
 Kalendář má sedm zobrazení.
 
@@ -13,9 +13,11 @@ Kalendář má sedm zobrazení.
 2. Vyber **Měsíc**, **Týden**, **3 dny**, **Den**, **Agenda**, **Lidé** nebo **Rok**.
 3. Pokud chceš vidět jen některé lidi nebo kategorie, klepni na **Filtr** a vyber je.
 
-**Týden**, **3 dny** a **Den** se otevřou dnes v aktuálním čase.
+Barevné proužky u události ukazují, pro koho je, až pro tři lidi. Když nikdo vybraný není, má barvu toho, kdo ji vytvořil.
 
-Zobrazení **Lidé** dá každému člověku vlastní sloupec. Tlačítko vlevo nahoře sloupce skryje nebo přeřadí.
+![Dnešní den v panelu. Rodinná večeře má tři barevné proužky a tři obličeje. Karta je zakroužkovaná.](calendar-stripes)
+
+Zobrazení **Lidé** dá každému člověku vlastní sloupec.
 
 ![Zobrazení Lidé se sloupci Lena, Marco a Emma. Zakroužkovaná jsou záhlaví sloupců.](calendar-people-view)
 

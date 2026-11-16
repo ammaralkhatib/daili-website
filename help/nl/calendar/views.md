@@ -2,8 +2,8 @@
 id: calendar-views
 title: Agendaweergaven: maand, week, dag, lijst, personen en jaar
 summary: Wissel tussen maand, week, 3 dagen, dag, lijst, personen en jaar, en filter op persoon, categorie of agenda.
-keywords: weergave, maand, week, lijst, filter, personen, jaaroverzicht, agenda verbergen, alle afspraken, vernieuwen, weeknummer
-translatedFrom: 2026-11-10
+keywords: weergave, maand, week, lijst, filter, personen, jaaroverzicht, agenda verbergen, alle afspraken, strepen, kleuren, weeknummer
+translatedFrom: 2026-11-16
 ---
 De agenda heeft zeven weergaven.
 
@@ -13,9 +13,11 @@ De agenda heeft zeven weergaven.
 2. Kies **Maand**, **Week**, **3 dagen**, **Dag**, **Lijst**, **Personen** of **Jaar**.
 3. Om alleen bepaalde mensen of categorieën te zien, tik je op **Filter** en kies je ze.
 
-**Week**, **3 dagen** en **Dag** openen vandaag bij de huidige tijd.
+De gekleurde streepjes van een afspraak tonen voor wie hij is, tot drie mensen. Niemand gekozen: de kleur van wie hem maakte.
 
-In de weergave **Personen** krijgt ieder een eigen kolom. Met de knop linksboven verberg of orden je kolommen.
+![Het dagoverzicht van vandaag. Familiediner heeft drie gekleurde streepjes en drie gezichten. De kaart is omcirkeld.](calendar-stripes)
+
+In de weergave **Personen** krijgt ieder een eigen kolom.
 
 ![De weergave Personen met een kolom voor Lena, Marco en Emma. De kolomkoppen zijn omcirkeld.](calendar-people-view)
 

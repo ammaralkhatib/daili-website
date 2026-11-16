@@ -2,10 +2,10 @@
 id: meals-to-shopping
 title: Pune ingredientele unei rețete pe lista de cumpărături
 summary: Adaugă dintr-o dată pe lista de cumpărături tot ce îi trebuie unei rețete sau unei săptămâni întregi de mese.
-keywords: ingrediente, listă de cumpărături, alimente, cumpărături, adaugă pe listă, rețetă, meniu, de cumpărat
+keywords: ingrediente, listă de cumpărături, alimente, cumpărături, adaugă pe listă, rețetă, meniu, de cumpărat, porții, persoane
 tipTitle: De la meniu la lista de cumpărături
 tipBody: Planifică mesele săptămânii, apoi pune toate ingredientele lor pe lista de cumpărături dintr-o dată.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 Gata cu copiatul ingredientelor de mână.
 
@@ -19,5 +19,9 @@ Gata cu copiatul ingredientelor de mână.
 Apasă pe **Deschide lista** în mesaj ca să le vezi.
 
 **Adaugă tot pe listă**, sub ingredientele unei rețete, face același lucru. Dacă ai schimbat porțiile, pe listă ajung cantitățile noi.
+
+Din **Meniu**, cantitățile urmează rândul **Porții** al fiecărei mese. O rețetă pentru 4 planificată pentru 8 arată „pentru 8” și cantitățile ei se dublează. Un rând fără cantitate primește „2×”.
+
+![Adaugă pe lista de cumpărături pentru săptămâna aceasta. Curry de legume arată Cină · mie., 18 nov. · pentru 8 și cantitățile dublate. Rândul pentru 8 este încercuit.](meals-week-shopping)
 
 > Note: Din meniu, doar mesele făcute dintr-o rețetă aduc ingrediente. Mesele fără rețetă n-au niciunul.

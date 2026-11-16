@@ -3,21 +3,19 @@ id: anywhere-widgets-settings
 title: Pilih apa yang ditampilkan widget
 summary: Pilih keluarga atau grup yang ditampilkan widget, daftar belanjanya, dan apakah widget hanya menampilkan tugas dan kebiasaan Anda atau milik semua orang.
 keywords: widget, pengaturan widget, edit widget, konfigurasi ulang, keluarga, grup, daftar belanja, tugas, kebiasaan, hanya milik saya, semua, layar utama
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Setiap widget layar utama kecuali **Tambah cepat** punya pengaturan, dan setiap widget menyimpan pengaturannya sendiri.
+Setiap widget layar utama kecuali **Tambah cepat** punya pengaturannya sendiri.
 
 1. Tekan lama widget-nya.
 2. Di iPhone, ketuk edit widget. Di Android 12 atau lebih baru, ketuk ikon pensil, atau Konfigurasi ulang. Di Android yang lebih lama, pengaturan muncul sekali, saat Anda menambahkan widget.
 3. Pilih apa yang ditampilkan. Di Android, ketuk **Selesai**.
 
-**Keluarga atau grup** (di Android, baris pertama): **Keluarga aktif** mengikuti keluarga yang terbuka di daili, atau pilih satu keluarga agar selalu tampil. Jika widget bertuliskan **Ketuk untuk memuat**, ketuk widget itu.
-
-Widget untuk keluarga lain menampilkan nama keluarganya, dan ketukan membuka daili di keluarga itu.
+**Keluarga atau grup** (Android: baris pertama): **Keluarga aktif** mengikuti keluarga yang terbuka di daili, atau pilih satu keluarga agar selalu tampil. Jika widget bertuliskan **Ketuk untuk memuat**, ketuk widget itu.
 
 **Belanja**: di **Daftar**, pilih **Terbaru** atau salah satu daftar Anda.
 
-**Tugas**: di **Tampilkan**, pilih **Milik saya** atau **Semua orang**.
+**Tugas**: di **Tampilkan**, pilih **Milik saya** atau **Semua orang**. **Rentang waktu**: **Hari ini**, **Minggu ini**, atau **Semua**. **Tambahkan ke**: daftar yang dibuka **+**, **Daftar terakhir dipakai** atau daftar yang Anda pilih.
 
 **Kebiasaan**: di **Tampilkan**, pilih **Keluarga** atau **Hanya milik saya**.
 

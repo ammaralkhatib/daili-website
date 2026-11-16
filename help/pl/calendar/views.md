@@ -2,8 +2,8 @@
 id: calendar-views
 title: Widoki kalendarza: miesiąc, tydzień, dzień, lista, osoby i rok
 summary: Przełączaj między miesiącem, tygodniem, 3 dniami, dniem, listą, osobami i rokiem, i filtruj według osoby, kategorii albo kalendarza.
-keywords: widok, miesiąc, tydzień, lista, agenda, filtr, osoby, rok, ukryj kalendarz, wszystkie wydarzenia, odśwież, numer tygodnia
-translatedFrom: 2026-11-10
+keywords: widok, miesiąc, tydzień, lista, agenda, filtr, osoby, rok, ukryj kalendarz, wszystkie wydarzenia, paski, numer tygodnia
+translatedFrom: 2026-11-16
 ---
 Kalendarz ma siedem widoków.
 
@@ -13,9 +13,11 @@ Kalendarz ma siedem widoków.
 2. Wybierz **Miesiąc**, **Tydzień**, **3 dni**, **Dzień**, **Lista**, **Osoby** albo **Rok**.
 3. Żeby zobaczyć tylko niektóre osoby albo kategorie, dotknij **Filtr** i je wybierz.
 
-Widoki **Tydzień**, **3 dni** i **Dzień** otwierają się na dzisiejszym dniu, na bieżącej godzinie.
+Kolorowe paski wydarzenia pokazują, dla kogo ono jest, maksymalnie trzy osoby. Nikt nie jest wybrany: kolor osoby, która je utworzyła.
 
-Widok **Osoby** daje każdej osobie kolumnę. Przycisk w lewym górnym rogu ukrywa kolumny albo zmienia ich kolejność.
+![Panel dzisiejszego dnia. Obiad rodzinny ma trzy kolorowe paski i trzy twarze. Zakreślona jest karta.](calendar-stripes)
+
+Widok **Osoby** daje każdej osobie kolumnę.
 
 ![Widok Osoby z osobnymi kolumnami: Lena, Marco i Emma. Zakreślone są nagłówki kolumn.](calendar-people-view)
 

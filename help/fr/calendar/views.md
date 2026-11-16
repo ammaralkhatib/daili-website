@@ -2,8 +2,8 @@
 id: calendar-views
 title: Vues de l'agenda : mois, semaine, jour, liste, personnes et année
 summary: Passe du mois à la semaine, aux 3 jours, au jour, à la liste, aux personnes ou à l'année, et filtre par personne, par catégorie ou par calendrier.
-keywords: vue, affichage, mois, semaine, liste, filtre, personnes, année, masquer un calendrier, tous les événements, actualiser, numéro de semaine
-translatedFrom: 2026-11-10
+keywords: vue, affichage, mois, semaine, liste, filtre, personnes, année, masquer un calendrier, tous les événements, bandes de couleur, numéro de semaine
+translatedFrom: 2026-11-16
 ---
 L'agenda a sept vues.
 
@@ -13,9 +13,11 @@ L'agenda a sept vues.
 2. Choisis **Mois**, **Semaine**, **3 jours**, **Jour**, **Liste**, **Personnes** ou **Année**.
 3. Pour ne voir que certaines personnes ou catégories, touche **Filtre** et choisis-les.
 
-Les vues **Semaine**, **3 jours** et **Jour** s'ouvrent sur l'heure actuelle du jour.
+Les bandes de couleur d'un événement montrent pour qui il est, jusqu'à trois personnes. Personne n'est choisi ? C'est la couleur de la personne qui l'a créé.
 
-La vue **Personnes** donne une colonne à chaque personne. Le bouton en haut à gauche masque ou réordonne les colonnes.
+![La fiche du jour d'aujourd'hui. Dîner en famille a trois bandes de couleur et trois visages. La carte est entourée.](calendar-stripes)
+
+La vue **Personnes** donne une colonne à chaque personne.
 
 ![La vue Personnes avec une colonne pour Lena, Marco et Emma. Les en-têtes des colonnes sont entourés.](calendar-people-view)
 

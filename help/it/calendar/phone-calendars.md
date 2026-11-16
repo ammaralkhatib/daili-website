@@ -5,7 +5,7 @@ summary: Mostra i calendari del telefono o Google Calendar accanto agli eventi d
 keywords: calendario del telefono, google calendar, aggiungere calendario, iscriversi, link, calendario scolastico, calendario di lavoro, solo io, modifica in daili, collegato, aggiornare, colore
 tipTitle: Vedi in daili i calendari del telefono
 tipBody: I calendari di lavoro, scuola o sport possono comparire accanto agli eventi di famiglia.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Apri **Calendario**, tocca l'ingranaggio, poi **Aggiungi un calendario** sotto **Altri calendari**.
 2. **Calendario Apple** (iPhone) o **Calendari del telefono** (Android).
@@ -21,8 +21,6 @@ La voce **Appartiene a** di un calendario decide il suo colore e la sua persona 
 
 ![Una Gita scolastica sincronizzata dal calendario collegato Scuola. Modifica in Daili è cerchiato.](calendar-linked-event)
 
-Tocca un evento → **Modifica in Daili** per aggiungere persone, promemoria o note. Resta collegato: le modifiche arrivano da sole. L'hai cambiato anche tu? **Usa** o **Tieni il mio**. Eliminato alla fonte? **Elimina** o **Tieni**.
-
-In **Famiglia**, anche l'ultima riga sotto **Calendari esterni** porta qui.
+Tocca un evento → **Modifica in Daili** per aggiungere persone, promemoria o note. Resta collegato: le modifiche arrivano da sole. L'hai cambiato anche tu? **Usa** o **Tieni il mio**. Eliminato alla fonte? **Elimina** o **Tieni**. Se viene da un calendario **Solo io** è privato, a meno che tu non scelga delle persone.
 
 > Note: I calendari del telefono restano su questo telefono. **Modifica in Daili** nasconde qui l'evento del telefono finché non elimini il tuo. Niente aggiornamenti.

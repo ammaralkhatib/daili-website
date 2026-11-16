@@ -3,10 +3,8 @@ id: lists-shopping
 title: Alışveriş listeleri: ekle, işaretle, temizle
 summary: Tüm ailenin paylaştığı tek bir alışveriş listesi. Öğe ekle, markette işaretle ve alışverişe gittiğini diğerlerine haber ver.
 keywords: alışveriş, market, alışveriş listesi, satın al, işaretle, süpermarket, son alınanlar, acil, alışverişe gidiyorum, yapıştır, pazar
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Tüm ailen aynı listeleri ve her değişikliği görür.
-
 ![Sütün acil olarak işaretlendiği ve Son alınanlar altında iki öğenin bulunduğu Market listesi. Alışverişe gidiyorum daire içine alınmış.](lists-shopping)
 
 1. Ana ekranda **Alışveriş** kutucuğuna, sonra bir listeye dokun. Yeni bir liste için **+** simgesine, sonra **Alışveriş listesi** seçeneğine dokun, **Ad** alanına bir ad yaz ve **Oluştur** düğmesine dokun.
@@ -16,7 +14,9 @@ Tüm ailen aynı listeleri ve her değişikliği görür.
 
 ![Ekleme çubuğunda "2 kg Elma" yazılı. Üstündeki çipte "Elma 2 kg" yazıyor. Ekleme çubuğu daire içine alınmış.](lists-shopping-amount)
 
-Bir öğeyi **Acil** yapmak için sağa kaydır: kırmızı bir işaret alır ve yukarı çıkar. İşaretleyince bu işaret kalkar. Silmek için sola kaydır.
+Bir öğeyi **Acil** yapmak için sağa kaydır: kırmızı bir işaret alır ve yukarı çıkar. Silmek için sola kaydır.
+
+Ayar düğmesiyle (**Ayrıntılarla ekle**) **Miktar**, **Kategori**, **Not** ya da **Acil** ayarını önceden yaparsın.
 
 **Alışverişe gidiyorum** diğerlerine haber verir; her liste için 30 dakikada bir kez. Özel listelerde yoktur.
 

@@ -3,10 +3,8 @@ id: lists-shopping
 title: Nákupné zoznamy: pridať, odškrtnúť, vyčistiť
 summary: Jeden nákupný zoznam pre celú rodinu. Pridávaj položky, odškrtávaj ich v obchode a daj ostatným vedieť, že ideš nakupovať.
 keywords: nákup, nákupy, potraviny, nákupný zoznam, kúpiť, odškrtnúť, supermarket, nedávno kúpené, naliehavé, idem nakupovať, vložiť
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Celá rodina vidí rovnaké zoznamy a každú zmenu.
-
 ![Zoznam Nákup s Mliekom označeným ako naliehavé a dvoma položkami v časti Nedávno kúpené. Zakrúžkované je Idem nakupovať.](lists-shopping)
 
 1. Na domovskej obrazovke ťukni na **Nákupy** a potom na zoznam. Pre nový ťukni na **+**, potom na **Nákupný zoznam**, napíš **Názov** a ťukni na **Vytvoriť**.
@@ -16,7 +14,9 @@ Celá rodina vidí rovnaké zoznamy a každú zmenu.
 
 ![Pole na pridanie s napísaným „2 kg Jablká“. Štítok nad ním ukazuje „Jablká 2 kg“. Zakrúžkované je pole na pridanie.](lists-shopping-amount)
 
-Potiahnutím položky doprava ju označíš ako **Naliehavé**: dostane červenú značku a posunie sa hore. Odškrtnutím značka zmizne. Potiahnutím doľava položku vymažeš.
+Potiahnutím položky doprava ju označíš ako **Naliehavé**: dostane červenú značku a posunie sa hore. Potiahnutím doľava položku vymažeš.
+
+Tlačidlo s posuvníkmi (**Pridať s podrobnosťami**) nastaví vopred **Množstvo**, **Kategória**, **Poznámka** alebo **Naliehavé**.
 
 **Idem nakupovať** dá vedieť ostatným, pri každom zozname raz za 30 minút. Nie pri súkromných zoznamoch.
 

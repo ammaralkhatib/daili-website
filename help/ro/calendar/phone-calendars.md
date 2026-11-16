@@ -5,7 +5,7 @@ summary: Arată calendarele telefonului sau Google Calendar lângă evenimentele
 keywords: calendarul telefonului, google calendar, adaugă calendar, abonare, link, calendarul școlii, calendar de serviciu, doar eu, editează în daili, conectat, reîmprospătare, culoare
 tipTitle: Vezi calendarele telefonului în daili
 tipBody: Calendarele de serviciu, de școală sau de sport pot apărea lângă evenimentele familiei.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Deschide **Calendar**, apasă pe rotiță, apoi pe **Adaugă un calendar** la **Alte calendare**.
 2. **Calendar Apple** (iPhone) sau **Calendarele telefonului** (Android).
@@ -21,8 +21,6 @@ La un calendar, **Aparține lui** îi stabilește culoarea și persoana din **Fi
 
 ![Excursia școlară sincronizată din calendarul conectat Școală. Editează în Daili este încercuit.](calendar-linked-event)
 
-Apasă pe un eveniment → **Editează în Daili** ca să adaugi persoane, mementouri sau notițe. Rămâne conectat: schimbările vin singure. L-ai schimbat și tu? **Folosește** sau **Păstrează-l pe al meu**. Șters la sursă? **Șterge** sau **Păstrează**.
-
-La **Familie**, ultimul rând de la **Calendare externe** duce tot aici.
+Apasă pe un eveniment → **Editează în Daili** ca să adaugi persoane, mementouri sau notițe. Rămâne conectat: schimbările vin singure. L-ai schimbat și tu? **Folosește** sau **Păstrează-l pe al meu**. Șters la sursă? **Șterge** sau **Păstrează**. Dintr-un calendar **Doar eu**, evenimentul e privat, dacă nu alegi persoane.
 
 > Note: Calendarele telefonului rămân pe acest telefon. **Editează în Daili** ascunde aici evenimentul din telefon până îl ștergi pe al tău. Fără actualizări.

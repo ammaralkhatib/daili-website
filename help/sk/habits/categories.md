@@ -3,11 +3,11 @@ id: habits-categories
 title: Vlastné kategórie návykov a uložené návyky
 summary: Vytvor si vlastné kategórie a uchovaj si návyky, ktoré chceš začať znova. Zdieľa ich celá rodina.
 keywords: kategória, kategórie, uložený návyk, zoznam návykov, šablóna, skryť, zoradiť, premenovať, rodina, vlastné návyky
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Tvoja rodina si môže viesť vlastný zoznam návykov: kategórie, ktoré pomenujete, a návyky, ktoré ste si uložili, aby ste ich mohli začať znova.
 
-1. Na obrazovke **Návyky** ťukni na **+**.
+1. Na obrazovke **Návyky** ťukni na **+**. Správcovia potom ťuknú na **Návyk**.
 2. V časti **Začať návyk** ťukni v rade kategórií na čip **Upraviť**.
 3. V časti **Kategórie tvojej rodiny** napíš názov a ťukni na +. Tlačidlami kategóriu premenuješ, presunieš alebo zmažeš.
 4. V časti **Kategórie Daili** ťukni na oko a skryješ kategóriu, ktorú nepotrebuješ.

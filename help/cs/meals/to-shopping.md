@@ -2,10 +2,10 @@
 id: meals-to-shopping
 title: Dát suroviny z receptu do nákupního seznamu
 summary: Přidej do nákupního seznamu najednou všechno, co potřebuje recept nebo celý týden jídel.
-keywords: suroviny, nákupní seznam, nákup, potraviny, přidat do seznamu, recept, jídelníček, koupit
+keywords: suroviny, nákupní seznam, nákup, potraviny, přidat do seznamu, recept, jídelníček, koupit, porce, počet porcí
 tipTitle: Z jídelníčku do nákupního seznamu
 tipBody: Naplánuj jídla na týden a pak dej všechny jejich suroviny najednou do nákupního seznamu.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 Konec s ručním opisováním surovin.
 
@@ -19,5 +19,9 @@ Konec s ručním opisováním surovin.
 Klepni ve zprávě na **Otevřít seznam** a uvidíš je.
 
 **Přidat vše do seznamu** pod surovinami receptu udělá totéž. Pokud jsi změnil počet porcí, na seznam půjdou nová množství.
+
+Z obrazovky **Jídelníček** se množství řídí polem **Porce** u každého jídla. Recept pro 4 naplánovaný pro 8 ukazuje „pro 8“ a jeho množství se zdvojnásobí. Řádek bez množství dostane „2×“.
+
+![Přidat do nákupního seznamu na tento týden. Zeleninové kari ukazuje Večeře · st 18. 11. · pro 8 a jeho množství jsou dvojnásobná. Řádek pro 8 je zakroužkovaný.](meals-week-shopping)
 
 > Note: Z jídelníčku přinesou suroviny jen jídla udělaná podle receptu. Jídla bez receptu žádné nemají.

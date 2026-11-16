@@ -7,14 +7,14 @@ keywords: category, categories, saved habit, habit list, template, hide, reorder
 routes: /habits
 tryIt: /habits
 since: 1.11.0
-updated: 2026-10-16
+updated: 2026-11-16
 media: habits-categories
 order: 3
 related: habits-create, habits-what
 ---
 Your family can keep its own habit list: categories you name, and habits you saved to start again.
 
-1. On **Habits**, tap **+**.
+1. On **Habits**, tap **+**. Admins then tap **Habit**.
 2. In **Start a habit**, tap the **Edit** chip in the row of categories.
 3. Under **Your family's categories**, type a name and tap +. Use the buttons to rename, move or delete one.
 4. Under **Daili's categories**, tap the eye to hide one you don't need.

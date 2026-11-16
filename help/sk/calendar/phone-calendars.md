@@ -5,7 +5,7 @@ summary: Zobraz kalendáre z telefónu alebo Kalendár Google vedľa rodinných 
 keywords: kalendár v telefóne, kalendár google, pridať kalendár, odoberať, odkaz, školský kalendár, pracovný kalendár, len ja, upraviť v daili, prepojený, obnoviť, farba
 tipTitle: Kalendáre z telefónu v daili
 tipBody: Pracovné, školské či športové kalendáre sa môžu zobraziť vedľa rodinných udalostí.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Otvor **Kalendár**, ťukni na ozubené koliesko a potom v časti **Ďalšie kalendáre** na **Pridať kalendár**.
 2. **Apple Kalendár** (iPhone) alebo **Kalendáre telefónu** (Android).
@@ -21,8 +21,6 @@ Pri kalendári nastaví **Komu patrí** jeho farbu a jeho osobu v časti **Filte
 
 ![Synchronizovaný Školský výlet z prepojeného kalendára Škola. Zakrúžkované je Upraviť v Daili.](calendar-linked-event)
 
-Ťukni na udalosť → **Upraviť v Daili** a pridaj ľudí, pripomienky alebo poznámky. Zostane prepojená: zmeny prídu samy. Zmenil sa údaj aj u teba? **Použiť** alebo **Nechať moje**. Vymazaná v zdroji? **Vymazať** alebo **Nechať**.
-
-Na obrazovke **Rodina** sem vedie aj posledný riadok v časti **Externé kalendáre**.
+Ťukni na udalosť → **Upraviť v Daili** a pridaj ľudí, pripomienky alebo poznámky. Zostane prepojená: zmeny prídu samy. Zmenil sa údaj aj u teba? **Použiť** alebo **Nechať moje**. Vymazaná v zdroji? **Vymazať** alebo **Nechať**. Z kalendára **Len ja** je udalosť súkromná, ak nevyberieš ľudí.
 
 > Note: Kalendáre z telefónu zostávajú v tomto telefóne. **Upraviť v Daili** tu skryje udalosť z telefónu, kým tú svoju nevymažeš. Bez aktualizácií.

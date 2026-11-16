@@ -7,12 +7,12 @@ keywords: habits, habit tracker, routine, family goals, together, kids, good hab
 routes: /habits
 tryIt: /habits
 since: 1.6.0
-updated: 2026-11-10
+updated: 2026-11-16
 media: habits-what
 order: 1
-related: habits-create, habits-tick, habits-rewards
+related: habits-create, habits-tick, habits-chores, habits-rewards, habits-stars
 tipTitle: Build habits together
-tipBody: Tick small habits as a family. Every finished day gives a star for a reward you enjoy together.
+tipBody: Tick small habits as a family. Finished habits and chores earn stars for rewards.
 tipSkipIf: hasHabits
 tipPriority: 85
 ---
@@ -22,12 +22,12 @@ A habit is a small thing you want to do often, like reading or drinking water. F
 2. **Each of us**: everyone taking part ticks for themselves and keeps their own streak.
 3. **Together**: one tick for the whole family, and anyone can give it.
 
-![The Habits screen: Your habits, the star chip, Today with "1 of 4 done" and habit cards with their grids. The + button at the bottom right is circled.](habits-what)
+![The Habits screen: Your habits, the star chip, the bunny by Today with "1 of 4 done", habit cards with their grids and the Chores section. The + button at the bottom right is circled.](habits-what)
 
 **Habits** shows one person at a time. Tap **Switch person** to see someone else's, or the **Together** habits. Only admins see children without a login there.
 
 Each habit card has a grid of its days; open it for the whole year. The buttons next to **Today** switch between **Cards**, **Checklist** and **Compact**.
 
-Add a habit with the **+**. Each finished habit day earns a star for **Rewards**.
+Add a habit with the **+** (admins: also chores). Finished habits and chores earn stars for **Rewards**.
 
 > Note: If you had habits before the update, **Habits got simpler** shows once.

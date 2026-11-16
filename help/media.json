@@ -137,5 +137,22 @@
   "meals-recipe-servings": { "file": "meals-recipe-servings.webp", "w": 720, "h": 1564, "kind": "image" },
   "meals-recipe-notes": { "file": "meals-recipe-notes.webp", "w": 720, "h": 1564, "kind": "image" },
   "start-week-weather": { "file": "start-week-weather.webp", "w": 720, "h": 1564, "kind": "image" },
-  "anywhere-wall": { "file": "anywhere-wall.webp", "w": 720, "h": 1564, "kind": "image" }
+  "anywhere-wall": { "file": "anywhere-wall.webp", "w": 720, "h": 1564, "kind": "image" },
+  "family-ask-parent": { "file": "family-ask-parent.webp", "w": 720, "h": 1564, "kind": "image" },
+  "calendar-stripes": { "file": "calendar-stripes.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-add-details-button": { "file": "lists-add-details-button.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-add-details": { "file": "lists-add-details.webp", "w": 720, "h": 1564, "kind": "image" },
+  "lists-edit-in-list": { "file": "lists-edit-in-list.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-others-edit": { "file": "notes-others-edit.webp", "w": 720, "h": 1564, "kind": "image" },
+  "notes-edited-by": { "file": "notes-edited-by.webp", "w": 720, "h": 1564, "kind": "image" },
+  "meals-week-shopping": { "file": "meals-week-shopping.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-create-stars": { "file": "habits-create-stars.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-reward-answer": { "file": "habits-reward-answer.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-buddy": { "file": "habits-buddy.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-all-done": { "file": "habits-all-done.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-new-chooser": { "file": "habits-new-chooser.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-chores": { "file": "habits-chores.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-chores-empty": { "file": "habits-chores-empty.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-chore-form": { "file": "habits-chore-form.webp", "w": 720, "h": 1564, "kind": "image" },
+  "habits-chore-form-once": { "file": "habits-chore-form-once.webp", "w": 720, "h": 1564, "kind": "image" }
 }

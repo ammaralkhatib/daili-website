@@ -3,11 +3,11 @@ id: habits-categories
 title: Categoriile tale de obiceiuri și obiceiurile salvate
 summary: Fă-ți propriile categorii și păstrează obiceiuri ca să le pornești din nou. Toată familia le folosește.
 keywords: categorie, categorii, obicei salvat, listă de obiceiuri, șablon, ascunde, reordonează, redenumește, familie, obiceiuri proprii
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Familia ta își poate ține propria listă de obiceiuri: categorii cărora le dați voi nume și obiceiuri pe care le-ați salvat ca să le porniți din nou.
 
-1. La **Obiceiuri**, apasă pe **+**.
+1. La **Obiceiuri**, apasă pe **+**. Adminii apasă apoi pe **Obicei**.
 2. La **Începe un obicei**, apasă pe eticheta **Editează** din rândul de categorii.
 3. La **Categoriile familiei tale**, scrie un nume și apasă pe +. Cu butoanele o redenumești, o muți sau o ștergi.
 4. La **Categoriile Daili**, apasă pe ochi ca să ascunzi una de care nu ai nevoie.

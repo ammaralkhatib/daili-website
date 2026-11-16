@@ -2,10 +2,10 @@
 id: meals-to-shopping
 title: Bir tarifin malzemelerini alışveriş listene ekle
 summary: Bir tarifin ya da bütün bir haftanın yemeklerinin ihtiyacı olan her şeyi tek seferde alışveriş listene ekle.
-keywords: malzemeler, alışveriş listesi, market, alışveriş, listeye ekle, tarif, yemek planı, satın al
+keywords: malzemeler, alışveriş listesi, market, alışveriş, listeye ekle, tarif, yemek planı, satın al, porsiyon, porsiyonlar
 tipTitle: Yemek planından alışveriş listesine
 tipBody: Haftanın yemeklerini planla, sonra tüm malzemelerini tek seferde alışveriş listene ekle.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 Malzemeleri elle kopyalamaya son.
 
@@ -19,5 +19,9 @@ Malzemeleri elle kopyalamaya son.
 Onları görmek için mesajdaki **Listeyi aç** düğmesine dokun.
 
 Bir tarifin malzemelerinin altındaki **Tümünü listeye ekle** de aynısını yapar. Porsiyonları değiştirdiysen yeni miktarlar listeye gider.
+
+**Yemek planı** ekranından miktarlar her yemeğin **Porsiyon** değerine göre ayarlanır. 4 kişilik bir tarif 8 kişi için planlandıysa "8 kişilik" yazar ve miktarları iki katına çıkar. Miktarı olmayan bir satır "2×" alır.
+
+![Bu hafta için Alışveriş listesine ekle. Sebzeli köride Akşam yemeği · 18 Kas Çar · 8 kişilik yazıyor ve miktarları iki katına çıkmış. 8 kişilik satırı daire içine alınmış.](meals-week-shopping)
 
 > Note: Yemek planından yalnızca bir tariften yapılan yemekler malzeme getirir. Tarifi olmayan yemeklerin malzemesi yoktur.

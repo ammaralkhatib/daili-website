@@ -3,11 +3,11 @@ id: habits-categories
 title: Le tue categorie di abitudini e le abitudini salvate
 summary: Crea le tue categorie e conserva abitudini da riavviare. Tutta la famiglia le condivide.
 keywords: categoria, categorie, abitudine salvata, lista di abitudini, modello, nascondere, riordinare, rinominare, famiglia, abitudini proprie
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 La tua famiglia può avere la sua lista di abitudini: categorie a cui date un nome e abitudini salvate per riavviarle.
 
-1. In **Abitudini**, tocca **+**.
+1. In **Abitudini**, tocca **+**. Gli admin poi toccano **Abitudine**.
 2. In **Inizia un'abitudine**, tocca il chip **Modifica** nella riga delle categorie.
 3. Sotto **Le categorie della tua famiglia**, scrivi un nome e tocca +. Usa i pulsanti per rinominare, spostare o eliminare una categoria.
 4. Sotto **Le categorie di Daili**, tocca l'occhio per nascondere quella che non ti serve.

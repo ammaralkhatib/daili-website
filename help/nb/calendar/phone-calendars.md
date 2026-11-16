@@ -5,7 +5,7 @@ summary: Vis telefonens kalendere eller Google Kalender ved siden av familiens h
 keywords: telefonkalender, google kalender, legg til kalender, abonner, lenke, skolekalender, jobbkalender, bare meg, rediger i daili, tilknyttet, oppdater, farge
 tipTitle: Se telefonens kalendere i daili
 tipBody: Jobb-, skole- eller idrettskalendere kan vises ved siden av familiens hendelser.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Åpne **Kalender**, trykk på tannhjulet, og så på **Legg til en kalender** under **Andre kalendere**.
 2. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android).
@@ -21,8 +21,6 @@ For en kalender bestemmer **Tilhører** fargen og personen i **Filter**. En tele
 
 ![En synkronisert Skoletur fra den tilknyttede kalenderen Skole. Rediger i Daili er ringet inn.](calendar-linked-event)
 
-Trykk på en hendelse → **Rediger i Daili** for å legge til personer, påminnelser eller notater. Den forblir koblet: endringer kommer av seg selv. Har du også endret den? **Bruk den** eller **Behold min**. Slettet i kilden? **Slett** eller **Behold**.
-
-På **Familie** leder den siste raden under **Eksterne kalendere** også hit.
+Trykk på en hendelse → **Rediger i Daili** for å legge til personer, påminnelser eller notater. Den forblir koblet: endringer kommer av seg selv. Har du også endret den? **Bruk den** eller **Behold min**. Slettet i kilden? **Slett** eller **Behold**. Fra en kalender med **Bare meg** blir den privat, med mindre du velger personer.
 
 > Note: Telefonens kalendere blir på denne telefonen. **Rediger i Daili** skjuler telefonhendelsen her til du sletter din egen. Ingen oppdateringer.

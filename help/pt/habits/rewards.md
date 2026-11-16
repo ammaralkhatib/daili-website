@@ -1,26 +1,29 @@
 ---
 id: habits-rewards
 title: Recompensas: junte estrelas para algo legal
-summary: Cada dia de hábito cumprido dá uma estrela. As estrelas enchem uma recompensa, como ir ao cinema, que vocês planejam e curtem juntos.
-keywords: recompensas, recompensa, estrelas, estrela, motivação, crianças, prêmio, recompensa da família, meta, planejar, fizemos, curtir
-translatedFrom: 2026-11-10
+summary: Hábitos e afazeres dão estrelas. Peça uma recompensa com as suas estrelas, ou encham uma recompensa da família que vocês planejam e curtem juntos.
+keywords: recompensas, recompensa, estrelas, pedir, aprovar, preço, crianças, prêmio, recompensa da família, planejar, fizemos, esperando sua resposta
+translatedFrom: 2026-11-16
 ---
-Cada dia de hábito cumprido dá uma estrela. As estrelas enchem recompensas, como ir ao cinema.
+Use as estrelas dos hábitos e afazeres em recompensas, como ir ao cinema.
 
-![A aba Recompensas com a recompensa da família “Passeio no zoológico” e as estrelas divididas por pessoa. O cartão da recompensa da família está circulado.](habits-rewards)
+![A página Recompensas de Emma: 19 estrelas para usar, a recompensa da família, Pedido – aguardando em Sair para tomar sorvete, e Ida ao cinema com Pedir. Pedir está circulado.](habits-rewards)
 
 1. Em **Hábitos**, toque em **Recompensas**, embaixo, e depois em **+**.
 2. Escolha uma ideia. Em **Para**, escolha **Família** ou **Você**. Um admin pode escolher qualquer pessoa.
-3. Defina as **Estrelas necessárias**, de 5 a 500.
-4. A linha de baixo define **Quais hábitos contam** e **Recomeçar quando terminar**. Toque em **Salvar recompensa**.
+3. Defina o **Preço em estrelas** (uma pessoa) ou as **Estrelas necessárias** (família), de 5 a 500. Toque em **Salvar recompensa**.
 
-![O formulário de nova recompensa com a ideia Noite de jogos escolhida. A linha Estrelas necessárias está circulada.](habits-reward-new)
+![O formulário Nova recompensa com Ida ao cinema para Emma. A linha Preço em estrelas está circulada.](habits-reward-new)
 
-Uma recompensa só conta as estrelas ganhas depois que ela foi criada. Uma estrela enche todas as recompensas para as quais conta. Cada pessoa ganha até 5 estrelas por dia. Um contador ganha a estrela quando chega à meta. Dias de descanso e hábitos privados não dão nenhuma. Hábitos **Juntos** só enchem recompensas da família.
+O cartão de cima mostra as estrelas para usar. Tem o suficiente para a sua recompensa? Toque em **Pedir**. As estrelas ficam guardadas até um dos pais responder. **Cancelar pedido** desfaz o pedido.
 
-![Logo depois de marcar, a mensagem “+1 estrela para você” mostra as duas recompensas que receberam a estrela. A mensagem está circulada.](habits-star-toast)
+![A aba Recompensas para um dos pais. Esperando sua resposta: Emma pede Sair para tomar sorvete (25 estrelas), com Agora não e Aprovar. O cartão está circulado.](habits-reward-answer)
 
-Quando uma recompensa fica cheia, a família recebe uma notificação. **Planejar** abre um novo evento de dia inteiro para o próximo sábado. Depois que vocês curtirem, um admin toca em **Fizemos!**.
+Os pais respondem em **Esperando sua resposta**: **Aprovar** gasta as estrelas, **Agora não** devolve. Os admins também podem **Dar agora**. Com **Um adulto diz sim primeiro** desligado, pedir já gasta as estrelas na hora.
+
+Uma recompensa da família enche com as estrelas que todos ganham depois que ela foi criada. Encheu? **Planejar** adiciona um evento e, depois, um admin toca em **Fizemos!**
+
+![Logo depois de marcar, a mensagem +1 estrela para você com o coelhinho mostra as duas recompensas que receberam a estrela. A mensagem está circulada.](habits-star-toast)
 
 ![A janela “Você conquistou uma recompensa” para Comer fora juntos. O botão Planejar no calendário está circulado.](habits-reward-reached)
 

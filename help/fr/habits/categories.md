@@ -3,11 +3,11 @@ id: habits-categories
 title: Tes catégories d'habitudes et tes habitudes enregistrées
 summary: Crée tes propres catégories et garde des habitudes pour les relancer. Toute ta famille les partage.
 keywords: catégorie, catégories, habitude enregistrée, liste d'habitudes, modèle, masquer, réorganiser, renommer, famille, mes habitudes
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Ta famille peut avoir sa propre liste d'habitudes : des catégories que vous nommez, et des habitudes enregistrées pour les relancer.
 
-1. Dans **Habitudes**, touche **+**.
+1. Dans **Habitudes**, touche **+**. Les admins touchent ensuite **Habitude**.
 2. Dans **Démarrer une habitude**, touche la puce **Modifier** dans la rangée des catégories.
 3. Sous **Catégories de ta famille**, saisis un nom et touche +. Utilise les boutons pour renommer, déplacer ou supprimer une catégorie.
 4. Sous **Catégories de Daili**, touche l'œil pour masquer celle dont tu n'as pas besoin.

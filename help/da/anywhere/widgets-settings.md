@@ -3,9 +3,9 @@ id: anywhere-widgets-settings
 title: Vælg, hvad en widget viser
 summary: Vælg, hvilken familie eller gruppe og hvilken indkøbsliste en widget viser, og om den kun viser dine opgaver og vaner eller alles.
 keywords: widget, widgetindstillinger, rediger widget, omkonfigurer, familie, gruppe, indkøbsliste, opgaver, vaner, kun mine, alle, hjemmeskærm
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Alle widgets på hjemmeskærmen undtagen **Tilføj hurtigt** har indstillinger, og hver widget husker sine egne.
+Alle widgets på hjemmeskærmen undtagen **Tilføj hurtigt** har deres egne indstillinger.
 
 1. Hold fingeren på widgetten.
 2. På iPhone trykker du på **Rediger widget**. På Android 12 eller nyere trykker du på blyanten eller på Omkonfigurer. Ældre Android viser indstillingerne én gang, når du tilføjer widgetten.
@@ -13,11 +13,9 @@ Alle widgets på hjemmeskærmen undtagen **Tilføj hurtigt** har indstillinger, 
 
 **Familie eller gruppe** (på Android den første række): **Aktiv familie** følger den familie, der er åben i daili, eller vælg én familie, den altid skal vise. Står der **Tryk for at hente** på widgetten, så tryk på den.
 
-En widget for en anden familie viser familiens navn, og et tryk åbner daili dér.
-
 **Indkøb**: under **Liste** vælger du **Seneste** eller en af dine lister.
 
-**Opgaver**: under **Vis** vælger du **Mine** eller **Alle**.
+**Opgaver**: under **Vis** vælger du **Mine** eller **Alle**. **Periode**: **I dag**, **Denne uge** eller **Alt**. **Tilføj til**: hvilken liste **+** åbner, **Senest brugte liste** eller en, du vælger.
 
 **Vaner**: under **Vis** vælger du **Familie** eller **Kun mine**.
 

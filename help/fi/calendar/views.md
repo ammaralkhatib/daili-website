@@ -2,8 +2,8 @@
 id: calendar-views
 title: Kalenterinäkymät: kuukausi, viikko, päivä, agenda, henkilöt ja vuosi
 summary: Vaihda kuukauden, viikon, 3 päivän, päivän, agendan, henkilöiden ja vuoden välillä, ja suodata henkilön, luokan tai kalenterin mukaan.
-keywords: näkymä, kuukausi, viikko, agenda, suodata, henkilöt, vuosi, piilota kalenteri, kaikki tapahtumat, päivitä, viikkonumero
-translatedFrom: 2026-11-10
+keywords: näkymä, kuukausi, viikko, agenda, suodata, henkilöt, vuosi, piilota kalenteri, kaikki tapahtumat, raidat, viikkonumero
+translatedFrom: 2026-11-16
 ---
 Kalenterissa on seitsemän näkymää.
 
@@ -13,9 +13,11 @@ Kalenterissa on seitsemän näkymää.
 2. Valitse **Kuukausi**, **Viikko**, **3 päivää**, **Päivä**, **Agenda**, **Henkilöt** tai **Vuosi**.
 3. Jos haluat nähdä vain osan henkilöistä tai luokista, napauta **Suodata** ja valitse ne.
 
-**Viikko**, **3 päivää** ja **Päivä** avautuvat tämän päivän nykyiseen kellonaikaan.
+Tapahtuman värilliset raidat näyttävät, kenelle se on, enintään kolme henkilöä. Jos ketään ei ole valittu: tapahtuman luojan väri.
 
-Näkymässä **Henkilöt** jokaisella henkilöllä on oma sarake. Vasemman yläkulman painikkeella piilotat sarakkeita tai muutat niiden järjestystä.
+![Tämän päivän päiväpaneeli. Perheillallisella on kolme värillistä raitaa ja kolme kasvokuvaa. Kortti on ympyröity.](calendar-stripes)
+
+Näkymässä **Henkilöt** jokaisella henkilöllä on oma sarake.
 
 ![Henkilöt-näkymä, jossa on oma sarake Lenalle, Marcolle ja Emmalle. Sarakkeiden otsikot on ympyröity.](calendar-people-view)
 

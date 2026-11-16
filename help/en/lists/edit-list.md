@@ -7,7 +7,7 @@ keywords: rename, edit list, colour, color, icon, reorder, sort lists, delete li
 routes: /lists/:id/edit
 tryIt: /lists/shopping
 since: 1.0.0
-updated: 2026-11-10
+updated: 2026-11-16
 media: lists-edit-list
 order: 9
 related: lists-shopping, lists-categories, lists-archive-templates
@@ -15,10 +15,12 @@ related: lists-shopping, lists-categories, lists-archive-templates
 ![The Shopping screen with a list's ⋯ menu open. Edit is circled, with Delete under it.](lists-edit-list)
 
 1. On Home, tap **Shopping** or **To-dos**.
-2. On the list's card, tap **⋯**, then **Edit**.
+2. On the list's card, or inside the list, tap **⋯**, then **Edit**.
 3. Change the **Name** or **Color**. For another icon, tap the icon in the name field. Then tap **Save**.
-4. To reorder, press and hold a card and drag it.
-5. To delete a list, tap **⋯** on its card, then **Delete**. **Undo** in the message brings it back for a few seconds.
+4. To reorder, hold a card and drag it.
+5. To delete a list, tap **⋯** on its card, then **Delete**. **Undo** brings it back for a few seconds.
+
+![Groceries with its ⋯ menu open. Edit is the first row and is circled.](lists-edit-in-list)
 
 With **Only me** on, only you see the list and all in it, with a lock by its name. Only its maker can change this. Private lists and tasks notify nobody else and stay out of the activity feed, others' typing suggestions and morning summary, and the TRMNL wall screen. Their reminders reach only you.
 

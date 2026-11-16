@@ -2,8 +2,8 @@
 id: calendar-views
 title: Visualizações do calendário: mês, semana, dia, lista, pessoas e ano
 summary: Alterne entre mês, semana, 3 dias, dia, lista, pessoas e ano, e filtre por pessoa, categoria ou calendário.
-keywords: visualização, mês, semana, lista, agenda, filtro, pessoas, ano, esconder calendário, todos os eventos, atualizar, número da semana
-translatedFrom: 2026-11-10
+keywords: visualização, mês, semana, lista, agenda, filtro, pessoas, ano, esconder calendário, todos os eventos, listras, número da semana
+translatedFrom: 2026-11-16
 ---
 O calendário tem sete visualizações.
 
@@ -13,9 +13,11 @@ O calendário tem sete visualizações.
 2. Escolha **Mês**, **Semana**, **3 dias**, **Dia**, **Lista**, **Pessoas** ou **Ano**.
 3. Para ver só algumas pessoas ou categorias, toque em **Filtro** e escolha.
 
-**Semana**, **3 dias** e **Dia** abrem hoje no horário atual.
+As listras coloridas de um evento mostram para quem ele é, até três pessoas. Ninguém escolhido: a cor de quem criou.
 
-A visualização **Pessoas** dá uma coluna para cada pessoa. O botão no canto superior esquerdo esconde ou reordena as colunas.
+![A janela do dia de hoje. Jantar em família tem três listras coloridas e três rostos. O cartão está circulado.](calendar-stripes)
+
+A visualização **Pessoas** dá uma coluna para cada pessoa.
 
 ![A visualização Pessoas com uma coluna para Lena, outra para Marco e outra para Emma. Os cabeçalhos das colunas estão circulados.](calendar-people-view)
 

@@ -5,7 +5,7 @@ summary: Zobraz kalendáře z telefonu nebo Google Kalendář vedle rodinných u
 keywords: kalendář v telefonu, google kalendář, přidat kalendář, odebírat, odkaz, školní kalendář, pracovní kalendář, jen já, upravit v daili, propojený, obnovit, barva
 tipTitle: Kalendáře z telefonu v daili
 tipBody: Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle rodinných událostí.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Otevři **Kalendář**, klepni na ozubené kolečko a pak v sekci **Další kalendáře** na **Přidat kalendář**.
 2. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android).
@@ -21,8 +21,6 @@ U kalendáře nastaví **Komu patří** jeho barvu a osobu, podle které ho tř�
 
 ![Synchronizovaný Školní výlet z propojeného kalendáře Škola. Zakroužkované je Upravit v Daili.](calendar-linked-event)
 
-Klepni na událost → **Upravit v Daili** a přidej lidi, připomenutí nebo poznámky. Zůstane propojená: změny přijdou samy. Taky tam máš svou změnu? **Použít** nebo **Nechat moje**. Smazaná ve zdroji? **Smazat** nebo **Nechat**.
-
-Na obrazovce **Rodina** sem vede i poslední řádek v části **Externí kalendáře**.
+Klepni na událost → **Upravit v Daili** a přidej lidi, připomenutí nebo poznámky. Zůstane propojená: změny přijdou samy. Taky tam máš svou změnu? **Použít** nebo **Nechat moje**. Smazaná ve zdroji? **Smazat** nebo **Nechat**. Z kalendáře **Jen já** je soukromá, pokud nevybereš lidi.
 
 > Note: Kalendáře z telefonu zůstávají v tomto telefonu. **Upravit v Daili** tady skryje událost z telefonu, dokud tu svou nesmažeš. Bez aktualizací.

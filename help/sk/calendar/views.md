@@ -2,8 +2,8 @@
 id: calendar-views
 title: Zobrazenia kalendára: mesiac, týždeň, deň, agenda, ľudia a rok
 summary: Prepínaj medzi mesiacom, týždňom, 3 dňami, dňom, agendou, ľuďmi a rokom a filtruj podľa osoby, kategórie alebo kalendára.
-keywords: zobrazenie, mesiac, týždeň, agenda, filter, ľudia, rok, skryť kalendár, všetky udalosti, obnoviť, číslo týždňa
-translatedFrom: 2026-11-10
+keywords: zobrazenie, mesiac, týždeň, agenda, filter, ľudia, rok, skryť kalendár, všetky udalosti, pruhy, číslo týždňa
+translatedFrom: 2026-11-16
 ---
 Kalendár má sedem zobrazení.
 
@@ -13,9 +13,11 @@ Kalendár má sedem zobrazení.
 2. Vyber **Mesiac**, **Týždeň**, **3 dni**, **Deň**, **Agenda**, **Ľudia** alebo **Rok**.
 3. Ak chceš vidieť len niektorých ľudí alebo kategórie, ťukni na **Filter** a vyber ich.
 
-Zobrazenia **Týždeň**, **3 dni** a **Deň** sa otvoria na dnešku pri aktuálnom čase.
+Farebné pruhy pri udalosti ukazujú, pre koho je, až pre tri osoby. Ak nikto nie je vybratý, má farbu toho, kto ju vytvoril.
 
-Zobrazenie **Ľudia** dá každej osobe vlastný stĺpec. Tlačidlo vľavo hore stĺpce skryje alebo preusporiada.
+![Panel dnešného dňa. Rodinná večera má tri farebné pruhy a tri tváre. Karta je zakrúžkovaná.](calendar-stripes)
+
+Zobrazenie **Ľudia** dá každej osobe vlastný stĺpec.
 
 ![Zobrazenie Ľudia so stĺpcom pre Lenu, Marca a Emmu. Zakrúžkované sú hlavičky stĺpcov.](calendar-people-view)
 

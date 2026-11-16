@@ -2,8 +2,8 @@
 id: calendar-views
 title: Kalendervyer: månad, vecka, dag, lista, personer och år
 summary: Byt mellan månad, vecka, 3 dagar, dag, lista, personer och år, och filtrera på person, kategori eller kalender.
-keywords: vy, månad, vecka, lista, filter, personer, årsvy, dölj kalender, alla händelser, uppdatera, veckonummer
-translatedFrom: 2026-11-10
+keywords: vy, månad, vecka, lista, filter, personer, årsvy, dölj kalender, alla händelser, ränder, veckonummer
+translatedFrom: 2026-11-16
 ---
 Kalendern har sju vyer.
 
@@ -13,9 +13,11 @@ Kalendern har sju vyer.
 2. Välj **Månad**, **Vecka**, **3 dagar**, **Dag**, **Lista**, **Personer** eller **År**.
 3. För att bara se vissa personer eller kategorier trycker du på **Filter** och väljer dem.
 
-**Vecka**, **3 dagar** och **Dag** öppnas vid aktuell tid i dag.
+En händelses färgade ränder visar vem den är för, upp till tre personer. Ingen vald: skaparens färg.
 
-I vyn **Personer** får varje person en egen kolumn. Knappen uppe till vänster döljer kolumner eller ändrar deras ordning.
+![Dagsrutan för i dag. Familjemiddag har tre färgade ränder och tre ansikten. Kortet är inringat.](calendar-stripes)
+
+I vyn **Personer** får varje person en egen kolumn.
 
 ![Vyn Personer med en kolumn var för Lena, Marco och Emma. Kolumnrubrikerna är inringade.](calendar-people-view)
 

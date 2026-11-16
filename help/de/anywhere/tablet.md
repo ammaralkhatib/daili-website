@@ -5,23 +5,21 @@ summary: Ein größeres Layout für iPad und Android-Tablets, mit Tastenkürzeln
 keywords: tablet, ipad, android tablet, querformat, großer bildschirm, tastatur, maus, trackpad, tastenkürzel, split view
 translatedFrom: 2026-11-16
 ---
-Links findest du ein Menü mit deinen Bereichen. Listen und Rezepte öffnen sich neben ihrer Übersicht, ein Tag neben oder unter dem Monat. Die meisten Formulare und Einblendungen öffnen sich als Fenster. Dasselbe Konto, dieselben Daten.
+Links findest du ein Menü mit deinen Bereichen. Eine geöffnete Liste, ein Rezept oder ein Tag erscheint neben seiner Übersicht. Die meisten Formulare öffnen sich als Fenster.
 
-Dreh das Tablet, wie du willst, oder teile den Bildschirm mit einer zweiten App, in jeder Breite: Was du geöffnet und getippt hast, bleibt. In einem sehr schmalen Fenster siehst du die Handy-Ansicht.
+Dreh das Tablet, wie du willst, oder teile den Bildschirm, in jeder Breite: Was du geöffnet und getippt hast, bleibt. Schmale Fenster und Handys, auch im Querformat, behalten die Handy-Ansicht.
 
 Tastenkürzel, mit Cmd (iPad) oder Ctrl (Android):
 
-1. **N** oder **Cmd/Ctrl+N**: etwas Neues hinzufügen.
+1. **N** oder **Cmd/Ctrl+N**: etwas Neues hinzufügen, auf den meisten Bildschirmen.
 2. **/** oder **Cmd/Ctrl+F**: Rezepte, Notizen, Geburtstage oder Hilfe durchsuchen.
-3. **T**: heute. Pfeiltasten: im Kalender navigieren.
-4. **Cmd/Ctrl+Enter**: speichern (in den meisten Formularen).
+3. **T**: heute im Kalender. Pfeiltasten: ein Tag oder eine Woche im Monat, eine Seite in den anderen Ansichten.
+4. **Cmd/Ctrl+Enter**: drückt den grünen Button **Speichern** oder **Erstellen** eines Formulars.
 5. **Cmd/Ctrl+1** bis **9**: Bereiche im Menü. **Cmd/Ctrl+,**: **Einstellungen**.
 6. **Esc**: ein Fenster schließen.
 
-Einzelne Tasten tun nichts, solange du in einem Feld tippst.
+Einzelne Tasten tun nichts, solange du tippst.
 
-Maus oder Trackpad: Was unter dem Zeiger liegt, wird hervorgehoben, ein Rechtsklick öffnet die Aktionen vom langen Drücken, und im Monat kannst du Termine auf einen anderen Tag ziehen.
-
-daili übernimmt die Textgröße deines Tablets.
+Maus oder Trackpad: Was unter dem Zeiger liegt, wird hervorgehoben, ein Rechtsklick wirkt wie langes Drücken, und im Monat kannst du Termine ziehen.
 
 > Note: Ein Wandbildschirm ist etwas anderes: ein Familienbildschirm auf einem Tablet.

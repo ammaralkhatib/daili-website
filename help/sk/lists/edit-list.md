@@ -3,15 +3,17 @@ id: lists-edit-list
 title: Premenuj, prefarbi, preusporiadaj alebo vymaž zoznam
 summary: Daj zoznamu nový názov, farbu alebo ikonu, potiahni zoznamy do poradia alebo vymaž ten, ktorý nepotrebuješ.
 keywords: premenovať, upraviť zoznam, farba, ikona, preusporiadať, zoradiť zoznamy, vymazať zoznam, odstrániť zoznam
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 ![Obrazovka Nákupy s otvorenou ponukou ⋯ zoznamu. Zakrúžkované je Upraviť, pod ním Vymazať.](lists-edit-list)
 
 1. Na domovskej obrazovke ťukni na **Nákupy** alebo **Úlohy**.
-2. Na karte zoznamu ťukni na **⋯** a potom na **Upraviť**.
+2. Na karte zoznamu alebo priamo v zozname ťukni na **⋯** a potom na **Upraviť**.
 3. Zmeň, čo treba, v poliach **Názov** alebo **Farba**. Ak chceš inú ikonu, ťukni na ikonu v poli s názvom. Potom ťukni na **Uložiť**.
 4. Ak chceš zmeniť poradie, podrž kartu a potiahni ju.
-5. Ak chceš zoznam vymazať, ťukni na jeho karte na **⋯** a potom na **Vymazať**. **Späť** v správe ho na pár sekúnd vráti.
+5. Ak chceš zoznam vymazať, ťukni na jeho karte na **⋯** a potom na **Vymazať**. **Späť** ho na pár sekúnd vráti.
+
+![Nákup s otvorenou ponukou ⋯. Upraviť je prvý riadok a je zakrúžkované.](lists-edit-in-list)
 
 So zapnutým **Len ja** vidíš zoznam a všetko v ňom len ty, pri jeho názve je zámok. Zmeniť to môže len ten, kto zoznam vytvoril. Súkromné zoznamy a úlohy nikoho iného neupozorňujú a nie sú v zozname aktivít, v návrhoch pri písaní a rannom prehľade ostatných ani na nástennej obrazovke TRMNL. Ich pripomienky prídu len tebe.
 

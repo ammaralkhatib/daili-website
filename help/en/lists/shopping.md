@@ -7,15 +7,13 @@ keywords: shopping, grocery, groceries, shopping list, buy, check off, tick, sup
 routes: /lists, /lists/shopping, /lists/new, /lists/:id
 tryIt: /lists/shopping
 since: 1.0.0
-updated: 2026-11-13
+updated: 2026-11-16
 media: lists-shopping
 order: 1
 related: lists-categories, lists-move-items, meals-to-shopping, notifications-choose, budget-bills, lists-stock
 checklist: 4
 checklistDoneIf: hasListItem
 ---
-Your whole family sees the same lists and every change.
-
 ![The Groceries list with Milk marked urgent and two items under Recently bought. I'm going shopping is circled.](lists-shopping)
 
 1. On Home, tap **Shopping**, then a list. For a new one, tap **+**, then **Shopping list**, type a **Name** and tap **Create**.
@@ -25,7 +23,9 @@ Your whole family sees the same lists and every change.
 
 ![The add bar with "2 kg Apples" typed. The chip above it reads "Apples 2 kg". The add bar is circled.](lists-shopping-amount)
 
-Swipe an item right to make it **Urgent**: it gets a red mark and moves up. Ticking it clears the mark. Swipe left to delete.
+Swipe an item right to make it **Urgent**: it gets a red mark and moves up. Swipe left to delete.
+
+The tune button (**Add with details**) sets **Quantity**, **Category**, **Note** or **Urgent** first.
 
 **I'm going shopping** tells the others, once per list every 30 minutes. Not on private lists.
 

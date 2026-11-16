@@ -5,23 +5,21 @@ summary: Väčšie rozloženie pre iPad a tablety s Androidom, s klávesovými s
 keywords: tablet, ipad, android tablet, na šírku, veľká obrazovka, klávesnica, myš, trackpad, klávesové skratky, split view, rozdelená obrazovka
 translatedFrom: 2026-11-16
 ---
-Ponuka vľavo obsahuje hlavné časti aplikácie. Zoznamy a recepty sa otvoria vedľa svojho zoznamu a deň vedľa mesiaca alebo pod ním. Väčšina formulárov a panelov sa otvorí ako okno. Rovnaký účet, rovnaké údaje.
+Ponuka vľavo obsahuje hlavné časti aplikácie. Otvorený zoznam, recept alebo deň sa zobrazí vedľa svojho prehľadu. Väčšina formulárov sa otvorí ako okno.
 
-Otoč tablet na ktorúkoľvek stranu alebo rozdeľ obrazovku v akejkoľvek veľkosti: čo máš otvorené a napísané, zostane. Veľmi úzke okno zobrazí rozloženie ako v telefóne.
+Otoč tablet na ktorúkoľvek stranu alebo rozdeľ obrazovku v akejkoľvek veľkosti: čo máš otvorené a napísané, zostane. Úzke okná a telefóny, aj otočené na šírku, si nechajú rozloženie ako v telefóne.
 
 Skratky, s Cmd (iPad) alebo Ctrl (Android):
 
-1. **N** alebo **Cmd/Ctrl+N**: pridaj niečo nové.
+1. **N** alebo **Cmd/Ctrl+N**: pridaj niečo nové, na väčšine obrazoviek.
 2. **/** alebo **Cmd/Ctrl+F**: hľadaj v sekciách Recepty, Poznámky, Narodeniny alebo Pomoc.
-3. **T**: dnes. Šípky: pohyb v kalendári.
-4. **Cmd/Ctrl+Enter**: ulož (vo väčšine formulárov).
+3. **T**: dnešok v kalendári. Šípky: o deň alebo týždeň v zobrazení Mesiac, o stranu v ostatných zobrazeniach.
+4. **Cmd/Ctrl+Enter**: stlačí zelené tlačidlo **Uložiť** alebo **Vytvoriť** vo formulári.
 5. **Cmd/Ctrl+1** až **9**: časti v ponuke. **Cmd/Ctrl+,**: **Nastavenia**.
 6. **Esc**: zatvor okno.
 
-Jednopísmenové skratky nikdy nefungujú, kým píšeš do poľa.
+Jednopísmenové skratky nikdy nefungujú, kým píšeš.
 
-Myš alebo trackpad: čo je pod ukazovateľom, sa jemne zvýrazní, pravé kliknutie otvorí akcie dlhého podržania a udalosti v mesiaci môžeš presúvať na iný deň.
-
-daili sa riadi veľkosťou textu nastavenou v tablete.
+Myš alebo trackpad: čo je pod ukazovateľom, sa zvýrazní, pravé kliknutie funguje ako dlhé podržanie a udalosti v zobrazení Mesiac môžeš presúvať.
 
 > Note: Nástenný displej je niečo iné: rodinný displej na tablete.

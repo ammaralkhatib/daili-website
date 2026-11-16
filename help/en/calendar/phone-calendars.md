@@ -7,7 +7,7 @@ keywords: phone calendar, google calendar, add calendar, subscribe, link, school
 routes: /calendar/settings
 tryIt: /calendar/settings
 since: 1.3.0
-updated: 2026-11-13
+updated: 2026-11-16
 media: calendar-other-calendars
 related: calendar-import, calendar-private, calendar-views
 tipTitle: See your phone's calendars in daili
@@ -29,8 +29,6 @@ A calendar's **Belongs to** sets its colour and its person in **Filter**. A phon
 
 ![A synced School trip from the linked School calendar. Edit in Daili is circled.](calendar-linked-event)
 
-Tap an event → **Edit in Daili** to add people, reminders or notes. It stays linked: changes arrive by themselves. Changed it too? **Use it** or **Keep mine**. Deleted there? **Delete** or **Keep**.
-
-On **Family**, the last row under **External calendars** leads here too.
+Tap an event → **Edit in Daili** to add people, reminders or notes. It stays linked: changes arrive by themselves. Changed it too? **Use it** or **Keep mine**. Deleted there? **Delete** or **Keep**. From an **Only me** calendar it's private, unless you pick people.
 
 > Note: Phone calendars stay on this phone. **Edit in Daili** hides the phone event here until you delete yours. No updates.

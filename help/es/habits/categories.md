@@ -3,11 +3,11 @@ id: habits-categories
 title: Tus propias categorías de hábitos y hábitos guardados
 summary: Crea tus propias categorías y guarda hábitos para volver a empezarlos. Toda tu familia los comparte.
 keywords: categoría, categorías, hábito guardado, lista de hábitos, plantilla, ocultar, reordenar, cambiar nombre, familia, hábitos propios
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Tu familia puede tener su propia lista de hábitos: categorías con el nombre que queráis y hábitos guardados para volver a empezarlos.
 
-1. En **Hábitos**, toca **+**.
+1. En **Hábitos**, toca **+**. Los admins tocan después **Hábito**.
 2. En **Empezar un hábito**, toca el chip **Editar** en la fila de categorías.
 3. En **Categorías de tu familia**, escribe un nombre y toca +. Usa los botones para cambiar el nombre, mover o eliminar una categoría.
 4. En **Categorías de Daili**, toca el ojo para ocultar la que no necesites.

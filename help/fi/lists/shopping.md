@@ -3,10 +3,8 @@ id: lists-shopping
 title: Ostoslistat: lisää, merkitse, tyhjennä
 summary: Yksi ostoslista, jonka koko perhe jakaa. Lisää ostoksia, merkitse ne kaupassa ja kerro muille, että lähdet kauppaan.
 keywords: ostokset, ruokaostokset, ostoslista, kauppalista, osta, merkitse, kauppa, äskettäin ostetut, kiireellinen, lähden kauppaan, liitä
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Koko perheesi näkee samat listat ja jokaisen muutoksen.
-
 ![Ruokaostokset-lista, jossa Maito on merkitty kiireelliseksi ja kaksi ostosta on kohdassa Äskettäin ostetut. Lähden kauppaan on ympyröity.](lists-shopping)
 
 1. Napauta aloitusnäytöllä **Ostokset** ja sitten listaa. Jos haluat uuden, napauta **+** ja sitten **Ostoslista**, kirjoita **Nimi** ja napauta **Luo**.
@@ -16,7 +14,9 @@ Koko perheesi näkee samat listat ja jokaisen muutoksen.
 
 ![Lisäyskenttä, johon on kirjoitettu ”2 kg Omenat”. Sen yläpuolella oleva siru näyttää ”Omenat 2 kg”. Lisäyskenttä on ympyröity.](lists-shopping-amount)
 
-Pyyhkäise ostosta oikealle, niin siitä tulee **Kiireellinen**: se saa punaisen merkin ja siirtyy ylös. Merkitseminen poistaa merkin. Pyyhkäise vasemmalle, niin se poistuu.
+Pyyhkäise ostosta oikealle, niin siitä tulee **Kiireellinen**: se saa punaisen merkin ja siirtyy ylös. Pyyhkäise vasemmalle, niin se poistuu.
+
+Säätöpainikkeella (**Lisää tiedoilla**) asetat ensin kohdat **Määrä**, **Luokka**, **Muistiinpano** tai **Kiireellinen**.
 
 **Lähden kauppaan** kertoo muille, kerran listaa kohden 30 minuutin välein. Ei yksityisillä listoilla.
 

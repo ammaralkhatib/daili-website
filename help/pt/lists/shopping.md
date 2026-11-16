@@ -3,10 +3,8 @@ id: lists-shopping
 title: Listas de compras: adicionar, marcar, limpar
 summary: Uma lista de compras que a família toda compartilha. Adicione itens, marque no mercado e avise os outros que você está indo.
 keywords: compras, mercado, supermercado, lista de compras, comprar, marcar, riscar, comprados recentemente, urgente, vou fazer compras, colar
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-A família toda vê as mesmas listas e cada mudança.
-
 ![A lista Compras com Leite marcado como urgente e dois itens em Comprados recentemente. Vou fazer compras está circulado.](lists-shopping)
 
 1. Na tela inicial, toque em **Compras** e depois em uma lista. Para uma nova, toque em **+** e depois em **Lista de compras**, digite um **Nome** e toque em **Criar**.
@@ -16,7 +14,9 @@ A família toda vê as mesmas listas e cada mudança.
 
 ![A barra de adicionar com "2 kg Maçãs" digitado. O chip acima dela diz "Maçãs 2 kg". A barra de adicionar está circulada.](lists-shopping-amount)
 
-Deslize um item para a direita para deixá-lo **Urgente**: ele ganha uma marca vermelha e sobe. Marcar o item tira a marca. Deslize para a esquerda para excluir.
+Deslize um item para a direita para deixá-lo **Urgente**: ele ganha uma marca vermelha e sobe. Deslize para a esquerda para excluir.
+
+O botão de ajustes (**Adicionar com detalhes**) define antes **Quantidade**, **Categoria**, **Anotação** ou **Urgente**.
 
 **Vou fazer compras** avisa os outros, uma vez por lista a cada 30 minutos. Não funciona em listas privadas.
 

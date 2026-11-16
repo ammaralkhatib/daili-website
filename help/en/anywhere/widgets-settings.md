@@ -6,24 +6,22 @@ summary: Pick the family or group a widget shows, its shopping list, and whether
 keywords: widget, widget settings, edit widget, reconfigure, family, group, shopping list, to-dos, habits, only mine, everyone, home screen
 routes: /
 since: 1.7.0
-updated: 2026-11-13
+updated: 2026-11-16
 order: 2
 mediaPending: hand-made screenshot of the Edit Widget sheet of the Shopping widget
 related: anywhere-widgets, family-groups, lists-shopping, lists-todos, habits-tick
 ---
-Every home-screen widget except **Quick add** has settings, and each widget keeps its own.
+Every home-screen widget except **Quick add** has its own settings.
 
 1. Press and hold the widget.
 2. On iPhone, tap **Edit Widget**. On Android 12 or later, tap the pencil, or Reconfigure. Older Android shows the settings once, when you add the widget.
 3. Pick what it shows. On Android, tap **Done**.
 
-**Family or group** (on Android the first row): **Active family** follows the family open in daili, or pick one family to always show. If the widget says **Tap to load**, tap it.
-
-A widget for another family shows its name, and a tap opens daili there.
+**Family or group** (Android: first row): **Active family** follows the family open in daili, or pick one family to always show. If the widget says **Tap to load**, tap it.
 
 **Shopping**: under **List**, pick **Most recent** or one of your lists.
 
-**To-dos**: under **Show**, pick **Mine** or **Everyone**.
+**To-dos**: under **Show**, pick **Mine** or **Everyone**. **Time span**: **Today**, **This week** or **Everything**. **Add to**: which list **+** opens, **Last used list** or one you pick.
 
 **Habits**: under **Show**, pick **Family** or **Only mine**.
 

@@ -5,19 +5,19 @@ summary: Planlarını gör, görevleri ve alışverişi işaretle ya da yeni bir
 keywords: widget, widget'lar, ana ekran, kilit ekranı, iphone, android, alışkanlıklar, akşam yemeği, hızlı ekle, doğum günü, işaretle, widget ekle
 tipTitle: Planın ana ekranında
 tipBody: Bir daili widget'ı ekle ve uygulamayı açmadan sırada ne olduğunu gör.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-daili'nin takvimin için (**Takvim** ve sıradaki etkinliğe geri sayan **Sıradaki**), **Alışveriş**, **Görevler**, ilerleme halkalı **Alışkanlıklar**, doğum günü geri sayımı, bu akşamın yemeği, hızlı ekleme ve **Hızlı not** için widget'ları var.
+daili'nin takvimin için (**Takvim**, geri sayımlı **Sıradaki**), **Alışveriş**, **Görevler**, **Alışkanlıklar**, doğum günü geri sayımı, bu akşamın yemeği, **Hızlı ekle** (**Etkinlik**, **Görev**, **Öğe**, **Not**) ve **Hızlı not** için widget'ları var.
 
-1. Telefonunun ana ekranında boş bir yere basılı tut.
+1. Ana ekranında boş bir yere basılı tut.
 2. iPhone'da **Düzenle**, sonra **Widget Ekle** seçeneğine dokun. Android'de **Widget'lar** seçeneğine dokun.
-3. daili'yi bul, sonra bir widget ve bir boyut seç.
-4. iPhone'da **Widget Ekle** düğmesine dokun. Android'de onu boş bir yere sürükle.
+3. daili'yi bul, bir widget ve bir boyut seç.
+4. iPhone'da **Widget Ekle** düğmesine dokun. Android'de onu yerine sürükle.
 
-Görevleri, alışverişi ve alışkanlıkları doğrudan widget'ta işaretle. **+** bir şey ekler; başka bir yere dokunursan daili açılır.
+Görevleri, alışverişi ve alışkanlıkları doğrudan widget'ta işaretle, Android'deki dar ve uzun widget'larda bile. **+** bir şey ekler; başka bir yere dokunursan daili açılır.
 
 **Takvim** widget'ı bağlı takvimleri ve telefon takvimlerini de gösterir. Yeni bir telefon etkinliği, daili'yi açtığında görünür.
 
 iPhone'da kilit ekranı sıradaki etkinliğini, yeni not düğmesini ve sayaçları gösterebilir. Kilidi açana kadar başlıklar gizli kalır.
 
-> Note: Bir widget etkin aileni ya da grubunu veya ayarlarında seçileni gösterir. Eski mi görünüyor? daili'yi aç.
+> Note: Bir widget etkin aileni ya da ayarlarında seçileni gösterir. Eski mi görünüyor? daili'yi aç.

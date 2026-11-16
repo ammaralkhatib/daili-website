@@ -3,10 +3,8 @@ id: lists-shopping
 title: Handlelister: legg til, hak av, rydd
 summary: Én handleliste som hele familien deler. Legg til varer, hak dem av i butikken, og si fra til de andre at du skal handle.
 keywords: handleliste, innkjøp, dagligvarer, handle, kjøpe, hak av, butikk, nylig kjøpt, haster, skal handle, lim inn
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Hele familien ser de samme listene og hver endring.
-
 ![Listen Handleliste med Melk merket som hastende og to varer under Nylig kjøpt. Jeg skal handle er ringet inn.](lists-shopping)
 
 1. Trykk på **Innkjøp** på startskjermen, og så på en liste. Vil du ha en ny, trykker du på **+** og så på **Handleliste**, skriver inn et **Navn** og trykker på **Opprett**.
@@ -16,7 +14,9 @@ Hele familien ser de samme listene og hver endring.
 
 ![Feltet for å legge til med «2 kg Epler» skrevet inn. Brikken over viser «Epler 2 kg». Feltet er ringet inn.](lists-shopping-amount)
 
-Sveip en vare til høyre for å merke den **Haster**: den får et rødt merke og flyttes opp. Når du haker den av, forsvinner merket. Sveip til venstre for å slette.
+Sveip en vare til høyre for å merke den **Haster**: den får et rødt merke og flyttes opp. Sveip til venstre for å slette.
+
+Justeringsknappen (**Legg til med detaljer**) stiller inn **Mengde**, **Kategori**, **Notat** eller **Haster** først.
 
 **Jeg skal handle** sier fra til de andre, én gang per liste hvert 30. minutt. Ikke på private lister.
 

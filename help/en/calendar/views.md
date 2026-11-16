@@ -3,11 +3,11 @@ id: calendar-views
 topic: calendar
 title: Calendar views: month, week, day, agenda, people and year
 summary: Switch between month, week, 3 days, day, agenda, people and year, and filter by person, category or calendar.
-keywords: view, month, week, agenda, filter, people, year, hide calendar, all events, refresh, week number
+keywords: view, month, week, agenda, filter, people, year, hide calendar, all events, stripes, week number
 routes: /calendar, /calendar/settings
 tryIt: /calendar
 since: 1.0.0
-updated: 2026-11-10
+updated: 2026-11-16
 media: calendar-views
 order: 1
 related: calendar-add-event, calendar-search, calendar-categories, calendar-phone-calendars, budget-bills
@@ -20,9 +20,11 @@ The calendar has seven views.
 2. Pick **Month**, **Week**, **3 days**, **Day**, **Agenda**, **People** or **Year**.
 3. To see only some people or categories, tap **Filter** and pick them.
 
-**Week**, **3 days** and **Day** open at the current time today.
+An event's coloured stripes show who it's for, up to three people. Nobody picked: the creator's colour.
 
-**People** gives each person a column. The top-left button hides or reorders columns.
+![Today's day sheet. Family dinner has three coloured stripes and three faces. The card is circled.](calendar-stripes)
+
+**People** gives each person a column.
 
 ![The People view with a column each for Lena, Marco and Emma. The column headers are circled.](calendar-people-view)
 

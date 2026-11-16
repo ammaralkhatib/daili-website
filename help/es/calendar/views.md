@@ -2,8 +2,8 @@
 id: calendar-views
 title: Vistas del calendario: mes, semana, día, lista, personas y año
 summary: Cambia entre mes, semana, 3 días, día, lista, personas y año, y filtra por persona, categoría o calendario.
-keywords: vista, mes, semana, lista, agenda, filtro, personas, año, ocultar calendario, todos los eventos, actualizar, número de semana
-translatedFrom: 2026-11-10
+keywords: vista, mes, semana, lista, agenda, filtro, personas, año, ocultar calendario, todos los eventos, franjas de color, número de semana
+translatedFrom: 2026-11-16
 ---
 El calendario tiene siete vistas.
 
@@ -13,9 +13,11 @@ El calendario tiene siete vistas.
 2. Elige **Mes**, **Semana**, **3 días**, **Día**, **Lista**, **Personas** o **Año**.
 3. Para ver solo a algunas personas o categorías, toca **Filtro** y elígelas.
 
-**Semana**, **3 días** y **Día** se abren hoy a la hora actual.
+Las franjas de color de un evento muestran para quién es, hasta tres personas. ¿No hay nadie elegido? Se usa el color de quien lo creó.
 
-La vista **Personas** da a cada persona una columna. El botón de arriba a la izquierda oculta o reordena las columnas.
+![La hoja del día de hoy. Cena familiar tiene tres franjas de color y tres caras. La tarjeta está marcada con un círculo.](calendar-stripes)
+
+La vista **Personas** da a cada persona una columna.
 
 ![La vista Personas con una columna para Lena, otra para Marco y otra para Emma. Los encabezados de las columnas están marcados con un círculo.](calendar-people-view)
 

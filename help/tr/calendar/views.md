@@ -2,8 +2,8 @@
 id: calendar-views
 title: Takvim görünümleri: ay, hafta, gün, ajanda, kişiler ve yıl
 summary: Ay, hafta, 3 gün, gün, ajanda, kişiler ve yıl arasında geçiş yap; kişiye, kategoriye ya da takvime göre filtrele.
-keywords: görünüm, ay, hafta, ajanda, filtre, kişiler, yıl, takvimi gizle, tüm etkinlikler, yenile, hafta numarası
-translatedFrom: 2026-11-10
+keywords: görünüm, ay, hafta, ajanda, filtre, kişiler, yıl, takvimi gizle, tüm etkinlikler, şeritler, hafta numarası
+translatedFrom: 2026-11-16
 ---
 Takvimin yedi görünümü var.
 
@@ -13,9 +13,11 @@ Takvimin yedi görünümü var.
 2. **Ay**, **Hafta**, **3 gün**, **Gün**, **Ajanda**, **Kişiler** ya da **Yıl** seçeneğini seç.
 3. Yalnızca bazı kişileri ya da kategorileri görmek için **Filtre** düğmesine dokun ve onları seç.
 
-**Hafta**, **3 gün** ve **Gün** görünümleri bugünde, şu anki saatte açılır.
+Bir etkinliğin renkli şeritleri kimin için olduğunu gösterir, en fazla üç kişi. Kimse seçilmediyse: oluşturan kişinin rengi.
 
-**Kişiler** görünümü her kişiye bir sütun verir. Sol üstteki düğme sütunları gizler ya da yeniden sıralar.
+![Bugünün gün paneli. Aile yemeğinde üç renkli şerit ve üç yüz var. Kart daire içine alınmış.](calendar-stripes)
+
+**Kişiler** görünümü her kişiye bir sütun verir.
 
 ![Lena, Marco ve Emma için birer sütunlu Kişiler görünümü. Sütun başlıkları daire içine alınmış.](calendar-people-view)
 

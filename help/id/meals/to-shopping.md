@@ -2,10 +2,10 @@
 id: meals-to-shopping
 title: Masukkan bahan resep ke daftar belanja
 summary: Tambahkan semua yang dibutuhkan sebuah resep, atau menu seminggu penuh, ke daftar belanja sekaligus.
-keywords: bahan, daftar belanja, belanja dapur, bahan makanan, tambah ke daftar, resep, rencana makan, beli
+keywords: bahan, daftar belanja, belanja dapur, bahan makanan, tambah ke daftar, resep, rencana makan, beli, porsi, jumlah orang
 tipTitle: Dari rencana makan ke daftar belanja
 tipBody: Rencanakan menu seminggu, lalu masukkan semua bahannya ke daftar belanja sekaligus.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 Tidak perlu lagi menyalin bahan satu per satu.
 
@@ -19,5 +19,9 @@ Tidak perlu lagi menyalin bahan satu per satu.
 Ketuk **Buka daftar** di pesannya untuk melihatnya.
 
 **Tambah semua ke daftar** di bawah bahan sebuah resep juga melakukan hal yang sama. Kalau Anda mengubah porsinya, takaran yang baru yang masuk ke daftar.
+
+Dari **Rencana makan**, takarannya mengikuti **Porsi** tiap menu. Resep untuk 4 yang direncanakan untuk 8 bertuliskan "untuk 8" dan takarannya jadi dua kali lipat. Baris tanpa takaran mendapat "2×".
+
+![Tambahkan ke daftar belanja untuk minggu ini. Kari sayur bertuliskan Makan malam · Rab, 18 Nov · untuk 8 dan takarannya dua kali lipat. Baris untuk 8 dilingkari.](meals-week-shopping)
 
 > Note: Dari rencana makan, hanya menu yang dibuat dari resep yang membawa bahan. Menu tanpa resep tidak punya bahan.

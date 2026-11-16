@@ -2,8 +2,8 @@
 id: calendar-views
 title: Kalendervisninger: måned, uke, dag, liste, personer og år
 summary: Bytt mellom måned, uke, 3 dager, dag, liste, personer og år, og filtrer etter person, kategori eller kalender.
-keywords: visning, måned, uke, liste, filter, personer, år, skjul kalender, alle hendelser, oppdater, ukenummer
-translatedFrom: 2026-11-10
+keywords: visning, måned, uke, liste, filter, personer, år, skjul kalender, alle hendelser, striper, ukenummer
+translatedFrom: 2026-11-16
 ---
 Kalenderen har sju visninger.
 
@@ -13,9 +13,11 @@ Kalenderen har sju visninger.
 2. Velg **Måned**, **Uke**, **3 dager**, **Dag**, **Liste**, **Personer** eller **År**.
 3. Vil du bare se noen personer eller kategorier, trykker du på **Filter** og velger dem.
 
-**Uke**, **3 dager** og **Dag** åpnes på klokkeslettet akkurat nå i dag.
+De fargede stripene på en hendelse viser hvem den er for, opptil tre personer. Ingen valgt: fargen til den som laget den.
 
-Visningen **Personer** gir hver person sin egen kolonne. Knappen øverst til venstre skjuler kolonner eller endrer rekkefølgen.
+![Dagsarket for i dag. Familiemiddag har tre fargede striper og tre ansikter. Kortet er ringet inn.](calendar-stripes)
+
+Visningen **Personer** gir hver person sin egen kolonne.
 
 ![Visningen Personer med én kolonne hver for Lena, Marco og Emma. Kolonneoverskriftene er ringet inn.](calendar-people-view)
 

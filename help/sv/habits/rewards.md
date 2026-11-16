@@ -1,26 +1,29 @@
 ---
 id: habits-rewards
 title: Belöningar: samla stjärnor till något roligt
-summary: Varje klar vanedag ger en stjärna. Stjärnorna fyller en belöning, som ett biobesök, som ni planerar och njuter av tillsammans.
-keywords: belöningar, belöning, stjärnor, stjärna, motivation, barn, guldkant, familjebelöning, mål, planera, vi har gjort det
-translatedFrom: 2026-11-10
+summary: Vanor och sysslor ger stjärnor. Be om en belöning med dina stjärnor, eller fyll en familjebelöning som ni planerar och njuter av tillsammans.
+keywords: belöningar, belöning, stjärnor, be om den, godkänn, pris, barn, guldkant, familjebelöning, planera, vi har gjort det, väntar på ditt svar
+translatedFrom: 2026-11-16
 ---
-Varje klar vanedag ger en stjärna. Stjärnorna fyller belöningar, som ett biobesök.
+Använd stjärnor från vanor och sysslor till belöningar, som ett biobesök.
 
-![Fliken Belöningar med familjens belöning ”Utflykt till djurparken” och stjärnorna uppdelade per person. Kortet för familjebelöningen är inringat.](habits-rewards)
+![Emmas sida i Belöningar: 19 stjärnor att använda, familjebelöningen, Frågat – väntar på Gå ut och äta glass, och Biobesök med Be om den. Be om den är inringat.](habits-rewards)
 
 1. Tryck på **Belöningar** längst ned i **Vanor** och sedan på **+**.
 2. Välj en idé. Under **För** väljer du **Familj** eller **Du**. En admin kan välja vem som helst.
-3. Ställ in **Stjärnor som behövs**, från 5 till 500.
-4. Raden nedanför ställer in **Vilka vanor som räknas** och **Börja om när den är klar**. Tryck på **Spara belöning**.
+3. Ställ in **Pris i stjärnor** (en person) eller **Stjärnor som behövs** (familj), från 5 till 500. Tryck på **Spara belöning**.
 
-![Formuläret Ny belöning med idén Spelkväll vald. Raden Stjärnor som behövs är inringad.](habits-reward-new)
+![Formuläret Ny belöning med Biobesök för Emma. Raden Pris i stjärnor är inringad.](habits-reward-new)
 
-En belöning räknar bara stjärnor som samlas efter att den skapades. En stjärna fyller på alla belöningar som den räknas för. Varje person kan få upp till 5 stjärnor om dagen. En räknare ger sin stjärna när målet är nått. Vilodagar och privata vanor ger inga. Vanor med **Tillsammans** fyller bara familjebelöningar.
+Det översta kortet visar stjärnor att använda. Räcker de till din belöning? Tryck på **Be om den**. Stjärnorna läggs undan tills en förälder svarar. **Ta tillbaka** avbryter.
 
-![Direkt efter en bock visar meddelandet ”+1 stjärna till dig” de två belöningar som stjärnan gick till. Meddelandet är inringat.](habits-star-toast)
+![Fliken Belöningar för en förälder. Väntar på ditt svar: Emma ber om Gå ut och äta glass (25 stjärnor), med Inte nu och Godkänn. Kortet är inringat.](habits-reward-answer)
 
-När en belöning är full får familjen en avisering. **Planera** öppnar en ny heldagshändelse nästa lördag. När ni har njutit av den trycker en admin på **Vi har gjort det**.
+Föräldrar svarar under **Väntar på ditt svar**: **Godkänn** använder stjärnorna, **Inte nu** ger tillbaka dem. Admins kan också välja **Ge den nu**. Med **En vuxen säger ja först** avstängt används stjärnorna direkt när man ber om belöningen.
+
+En familjebelöning fylls med stjärnorna som alla tjänar efter att den skapades. Full? **Planera** lägger till en händelse; efteråt trycker en admin på **Vi har gjort det**.
+
+![Direkt efter en bock visar meddelandet +1 stjärna till dig med kaninen de två belöningar som stjärnan gick till. Meddelandet är inringat.](habits-star-toast)
 
 ![Rutan ”Du har nått en belöning” för Äta ute tillsammans. Knappen Planera i kalendern är inringad.](habits-reward-reached)
 

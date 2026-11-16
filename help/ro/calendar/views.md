@@ -2,8 +2,8 @@
 id: calendar-views
 title: Vizualizările calendarului: lună, săptămână, zi, agendă, persoane și an
 summary: Treci între lună, săptămână, 3 zile, zi, agendă, persoane și an și filtrează după persoană, categorie sau calendar.
-keywords: vizualizare, lună, săptămână, agendă, filtru, persoane, an, ascunde calendarul, toate evenimentele, reîmprospătare, numărul săptămânii
-translatedFrom: 2026-11-10
+keywords: vizualizare, lună, săptămână, agendă, filtru, persoane, an, ascunde calendarul, toate evenimentele, dungi, numărul săptămânii
+translatedFrom: 2026-11-16
 ---
 Calendarul are șapte vizualizări.
 
@@ -13,9 +13,11 @@ Calendarul are șapte vizualizări.
 2. Alege **Lună**, **Săptămână**, **3 zile**, **Zi**, **Agendă**, **Persoane** sau **An**.
 3. Ca să vezi doar unele persoane sau categorii, apasă pe **Filtru** și alege-le.
 
-Vizualizările **Săptămână**, **3 zile** și **Zi** se deschid azi, la ora curentă.
+Dungile colorate ale unui eveniment arată pentru cine e, până la trei persoane. Dacă nu e ales nimeni: culoarea celui care l-a creat.
 
-Vizualizarea **Persoane** dă fiecărei persoane o coloană. Butonul din stânga sus ascunde sau reordonează coloanele.
+![Fișa zilei de azi. Cină în familie are trei dungi colorate și trei fețe. Cardul este încercuit.](calendar-stripes)
+
+Vizualizarea **Persoane** dă fiecărei persoane o coloană.
 
 ![Vizualizarea Persoane cu câte o coloană pentru Lena, Marco și Emma. Antetele coloanelor sunt încercuite.](calendar-people-view)
 

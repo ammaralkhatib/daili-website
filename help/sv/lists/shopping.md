@@ -3,10 +3,8 @@ id: lists-shopping
 title: Inköpslistor: lägga till, bocka av, rensa
 summary: En inköpslista som hela familjen delar. Lägg till poster, bocka av dem i butiken och säg till de andra att du går och handlar.
 keywords: inköp, handla, matvaror, inköpslista, köpa, bocka av, mataffär, nyligen köpt, brådskande, går och handlar, klistra in
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Hela familjen ser samma listor och varje ändring.
-
 ![Listan Handla med Mjölk markerad som brådskande och två poster under Nyligen köpt. Jag går och handlar är inringat.](lists-shopping)
 
 1. Tryck på **Inköp** på startskärmen och sedan på en lista. För en ny trycker du på **+** och sedan på **Inköpslista**, skriver ett **Namn** och trycker på **Skapa**.
@@ -16,7 +14,9 @@ Hela familjen ser samma listor och varje ändring.
 
 ![Fältet för att lägga till med ”2 kg Äpplen” inskrivet. Chipet ovanför visar ”Äpplen 2 kg”. Fältet är inringat.](lists-shopping-amount)
 
-Svep en post åt höger för att göra den **Brådskande**: den får en röd markering och flyttas upp. När du bockar av den försvinner markeringen. Svep åt vänster för att ta bort.
+Svep en post åt höger för att göra den **Brådskande**: den får en röd markering och flyttas upp. Svep åt vänster för att ta bort.
+
+Justeringsknappen (**Lägg till med detaljer**) ställer in **Mängd**, **Kategori**, **Anteckning** eller **Brådskande** först.
 
 **Jag går och handlar** säger till de andra, en gång per lista var 30:e minut. Inte på privata listor.
 

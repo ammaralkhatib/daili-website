@@ -5,7 +5,7 @@ summary: Muestra los calendarios de tu teléfono o Google Calendar junto a los e
 keywords: calendario del teléfono, google calendar, añadir calendario, suscribirse, enlace, calendario escolar, calendario del trabajo, solo yo, editar en daili, vinculado, actualizar, color
 tipTitle: Mira en daili los calendarios de tu teléfono
 tipBody: Los calendarios del trabajo, del colegio o del deporte pueden aparecer junto a los eventos de la familia.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Abre **Calendario**, toca el engranaje y luego **Añadir un calendario** en **Otros calendarios**.
 2. **Calendario de Apple** (iPhone) o **Calendarios del teléfono** (Android).
@@ -21,8 +21,6 @@ En un calendario, **Pertenece a** fija su color y su persona en **Filtro**. Un c
 
 ![Una Excursión escolar sincronizada desde el calendario vinculado Escuela. Editar en Daili está marcado con un círculo.](calendar-linked-event)
 
-Toca un evento → **Editar en Daili** para añadir personas, recordatorios o notas. Sigue vinculado: los cambios llegan solos. ¿Tú también lo cambiaste? **Usar** o **Mantener el mío**. ¿Se borró en el origen? **Eliminar** o **Mantener**.
-
-En **Familia**, la última fila de **Calendarios externos** también lleva aquí.
+Toca un evento → **Editar en Daili** para añadir personas, recordatorios o notas. Sigue vinculado: los cambios llegan solos. ¿Tú también lo cambiaste? **Usar** o **Mantener el mío**. ¿Se borró en el origen? **Eliminar** o **Mantener**. Si viene de un calendario **Solo yo**, es privado, salvo que elijas personas.
 
 > Note: Los calendarios del teléfono se quedan en este teléfono. **Editar en Daili** oculta aquí el evento del teléfono hasta que borres el tuyo. Sin actualizaciones.

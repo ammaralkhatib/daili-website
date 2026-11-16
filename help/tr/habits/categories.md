@@ -3,11 +3,11 @@ id: habits-categories
 title: Kendi alışkanlık kategorilerin ve kayıtlı alışkanlıklar
 summary: Kendi kategorilerini oluştur ve yeniden başlatmak için alışkanlıkları sakla. Tüm ailen bunları paylaşır.
 keywords: kategori, kategoriler, kayıtlı alışkanlık, alışkanlık listesi, şablon, gizle, sırala, yeniden adlandır, aile, kendi alışkanlıklar
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Ailenin kendi alışkanlık listesi olabilir: sizin adlandırdığınız kategoriler ve yeniden başlatmak için kaydettiğiniz alışkanlıklar.
 
-1. **Alışkanlıklar** ekranında **+** simgesine dokun.
+1. **Alışkanlıklar** ekranında **+** simgesine dokun. Yöneticiler sonra **Alışkanlık** seçeneğine dokunur.
 2. **Bir alışkanlık başlat** ekranında kategori satırındaki **Düzenle** çipine dokun.
 3. **Ailenin kategorileri** altında bir ad yaz ve + simgesine dokun. Bir kategoriyi yeniden adlandırmak, taşımak ya da silmek için düğmeleri kullan.
 4. **Daili'nin kategorileri** altında, ihtiyacın olmayan bir kategoriyi gizlemek için göz simgesine dokun.

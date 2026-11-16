@@ -3,11 +3,11 @@ id: habits-categories
 title: Omat tapaluokat ja tallennetut tavat
 summary: Tee omia luokkia ja säilytä tapoja, jotka haluat aloittaa uudelleen. Koko perhe jakaa ne.
 keywords: luokka, luokat, tallennettu tapa, tapalista, malli, piilota, järjestä, nimeä uudelleen, perhe, omat tavat
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Perheesi voi pitää omaa tapalistaa: luokkia, jotka nimeätte itse, ja tapoja, jotka tallensitte aloittaaksenne ne uudelleen.
 
-1. Napauta **+** näkymässä **Tavat**.
+1. Napauta **+** näkymässä **Tavat**. Ylläpitäjät napauttavat sitten **Tapa**.
 2. Napauta kohdassa **Aloita tapa** luokkarivin sirua **Muokkaa**.
 3. Kirjoita kohdassa **Perheesi luokat** nimi ja napauta +. Painikkeilla voit nimetä luokan uudelleen, siirtää sitä tai poistaa sen.
 4. Napauta kohdassa **Dailin luokat** silmää, niin voit piilottaa luokan, jota et tarvitse.

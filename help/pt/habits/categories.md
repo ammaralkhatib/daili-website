@@ -3,11 +3,11 @@ id: habits-categories
 title: Suas categorias de hábitos e hábitos salvos
 summary: Crie suas próprias categorias e guarde hábitos para começar de novo. A família toda compartilha.
 keywords: categoria, categorias, hábito salvo, lista de hábitos, modelo, ocultar, reordenar, renomear, família, meus hábitos
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Sua família pode ter a própria lista de hábitos: categorias com os nomes que vocês escolherem e hábitos salvos para começar de novo.
 
-1. Em **Hábitos**, toque em **+**.
+1. Em **Hábitos**, toque em **+**. Os admins tocam depois em **Hábito**.
 2. Em **Começar um hábito**, toque no chip **Editar** na fileira de categorias.
 3. Em **Categorias da sua família**, digite um nome e toque em +. Use os botões para renomear, mover ou excluir uma categoria.
 4. Em **Categorias do Daili**, toque no olho para ocultar uma que você não usa.

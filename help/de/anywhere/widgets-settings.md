@@ -3,9 +3,9 @@ id: anywhere-widgets-settings
 title: Wählen, was ein Widget zeigt
 summary: Wähle die Familie oder Gruppe für ein Widget, seine Einkaufsliste und ob es nur deine Aufgaben und Gewohnheiten zeigt oder die von allen.
 keywords: widget, widget-einstellungen, widget bearbeiten, neu konfigurieren, familie, gruppe, einkaufsliste, aufgaben, gewohnheiten, nur meine, alle, home-bildschirm
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Jedes Widget auf dem Home-Bildschirm außer **Schnell hinzufügen** hat Einstellungen, und jedes merkt sich seine eigenen.
+Jedes Widget auf dem Home-Bildschirm außer **Schnell hinzufügen** hat seine eigenen Einstellungen.
 
 1. Halte das Widget gedrückt.
 2. Auf dem iPhone tippst du auf **Widget bearbeiten**. Auf Android 12 oder neuer tippst du auf den Stift oder auf Neu konfigurieren. Älteres Android zeigt die Einstellungen einmal, wenn du das Widget hinzufügst.
@@ -13,11 +13,9 @@ Jedes Widget auf dem Home-Bildschirm außer **Schnell hinzufügen** hat Einstell
 
 **Familie oder Gruppe** (auf Android die erste Zeile): **Aktive Familie** folgt der Familie, die in daili offen ist, oder du wählst eine Familie, die es immer zeigt. Steht im Widget **Zum Laden tippen**, tippe darauf.
 
-Ein Widget für eine andere Familie zeigt deren Namen, und ein Tippen öffnet daili dort.
-
 **Einkaufen**: Wähle unter **Liste** die **Neueste Liste** oder eine deiner Listen.
 
-**Aufgaben**: Wähle unter **Anzeigen** **Meine** oder **Alle**.
+**Aufgaben**: Wähle unter **Anzeigen** **Meine** oder **Alle**. **Zeitraum**: **Heute**, **Diese Woche** oder **Alles**. **Hinzufügen zu**: welche Liste **+** öffnet, die **Zuletzt genutzte Liste** oder eine, die du wählst.
 
 **Gewohnheiten**: Wähle unter **Anzeigen** **Familie** oder **Nur meine**.
 

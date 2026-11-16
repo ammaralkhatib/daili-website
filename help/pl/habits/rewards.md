@@ -1,26 +1,29 @@
 ---
 id: habits-rewards
 title: Nagrody: zbierajcie gwiazdki na coś miłego
-summary: Każdy ukończony dzień nawyku daje gwiazdkę. Gwiazdki wypełniają nagrodę, np. wyjście do kina, którą razem planujecie i którą się razem cieszycie.
-keywords: nagrody, nagroda, gwiazdki, gwiazdka, motywacja, dzieci, przyjemność, nagroda rodzinna, cel, zaplanuj, zrobione
-translatedFrom: 2026-11-10
+summary: Nawyki i obowiązki dają gwiazdki. Poproś o nagrodę za swoje gwiazdki albo wypełnijcie nagrodę rodzinną, którą razem planujecie i którą się razem cieszycie.
+keywords: nagrody, nagroda, gwiazdki, poproś, zatwierdź, cena, dzieci, przyjemność, nagroda rodzinna, zaplanuj, zrobione, czeka na odpowiedź
+translatedFrom: 2026-11-16
 ---
-Każdy ukończony dzień nawyku daje jedną gwiazdkę. Gwiazdki wypełniają nagrody, np. wyjście do kina.
+Wydawaj gwiazdki z nawyków i obowiązków na nagrody, np. wyjście do kina.
 
-![Zakładka Nagrody z rodzinną nagrodą „Wycieczka do zoo” i jej gwiazdkami podzielonymi na osoby. Zakreślona jest karta nagrody rodzinnej.](habits-rewards)
+![Strona Nagrody Emmy: 19 gwiazdek do wykorzystania, nagroda rodzinna, Poproszono – czekamy przy Wyjście na lody i Wyjście do kina z przyciskiem Poproś. Zakreślony jest przycisk Poproś.](habits-rewards)
 
 1. Na ekranie **Nawyki** dotknij **Nagrody** na dole, a potem **+**.
 2. Wybierz pomysł. W sekcji **Dla** wybierz **Rodzina** albo **Ty**. Admin może wybrać każdego.
-3. Ustaw pole **Potrzebne gwiazdki**, od 5 do 500.
-4. Wiersz poniżej ustawia **Które nawyki się liczą** i **Zacznij od nowa po odebraniu**. Dotknij **Zapisz nagrodę**.
+3. Ustaw **Cena w gwiazdkach** (jedna osoba) albo **Potrzebne gwiazdki** (rodzina), od 5 do 500. Dotknij **Zapisz nagrodę**.
 
-![Formularz nowej nagrody z wybranym pomysłem Wieczór gier. Zakreślony jest wiersz Potrzebne gwiazdki.](habits-reward-new)
+![Formularz Nowa nagroda z Wyjście do kina dla Emmy. Zakreślony jest wiersz Cena w gwiazdkach.](habits-reward-new)
 
-Nagroda liczy tylko gwiazdki zdobyte po jej utworzeniu. Jedna gwiazdka wypełnia każdą nagrodę, do której się liczy. Każda osoba zdobywa do 5 gwiazdek dziennie. Licznik daje gwiazdkę, gdy osiągnie cel. Dni wolne i prywatne nawyki nie dają gwiazdek. Nawyki **Razem** wypełniają tylko nagrody rodzinne.
+Górna karta pokazuje gwiazdki do wykorzystania. Starczy na twoją nagrodę? Dotknij **Poproś**. Gwiazdki są odłożone, dopóki rodzic nie odpowie. **Cofnij** anuluje prośbę.
 
-![Zaraz po odhaczeniu komunikat „+1 gwiazdka dla ciebie” pokazuje dwie nagrody, do których trafiła gwiazdka. Zakreślony jest komunikat.](habits-star-toast)
+![Zakładka Nagrody u rodzica. Czeka na twoją odpowiedź: Emma prosi o Wyjście na lody (25 gwiazdek), z przyciskami Nie teraz i Zatwierdź. Zakreślona jest karta.](habits-reward-answer)
 
-Gdy nagroda jest pełna, rodzina dostaje powiadomienie. **Zaplanuj** otwiera nowe całodniowe wydarzenie na najbliższą sobotę. Admin dotyka **Zrobione!**, gdy już się nią nacieszycie.
+Rodzice odpowiadają w sekcji **Czeka na twoją odpowiedź**: **Zatwierdź** wydaje gwiazdki, **Nie teraz** je oddaje. Admini mogą też dotknąć **Daj teraz**. Gdy **Najpierw dorosły mówi „tak”** jest wyłączone, prośba od razu wydaje gwiazdki.
+
+Nagroda rodzinna wypełnia się gwiazdkami, które wszyscy zdobędą po jej utworzeniu. Pełna? **Zaplanuj** dodaje wydarzenie, a gdy już się nią nacieszycie, admin dotyka **Zrobione!**
+
+![Zaraz po odhaczeniu komunikat +1 gwiazdka dla ciebie z króliczkiem pokazuje dwie nagrody, do których trafiła gwiazdka. Zakreślony jest komunikat.](habits-star-toast)
 
 ![Panel „Udało ci się zdobyć nagrodę” dla nagrody Wspólne wyjście do restauracji. Zakreślony jest przycisk Zaplanuj w kalendarzu.](habits-reward-reached)
 

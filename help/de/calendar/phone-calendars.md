@@ -5,7 +5,7 @@ summary: Zeig die Kalender deines Handys oder Google Kalender neben den Familien
 keywords: handy-kalender, google kalender, kalender hinzufügen, abonnieren, link, schulkalender, arbeitskalender, nur ich, in daili bearbeiten, verknüpft, aktualisieren, farbe
 tipTitle: Die Kalender deines Handys in daili
 tipBody: Arbeits-, Schul- oder Sportkalender können neben den Familienterminen erscheinen.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Öffne den **Kalender**, tippe auf das Zahnrad und dann unter **Andere Kalender** auf **Kalender hinzufügen**.
 2. **Apple Kalender** (iPhone) oder **Handy-Kalender** (Android).
@@ -21,8 +21,6 @@ Bei einem Kalender legt **Gehört zu** seine Farbe und seine Person in **Filter*
 
 ![Ein synchronisierter Schulausflug aus dem verknüpften Kalender Schule. In Daili bearbeiten ist eingekreist.](calendar-linked-event)
 
-Tippe auf einen Termin → **In Daili bearbeiten**, um Personen, Erinnerungen oder Notizen hinzuzufügen. Er bleibt verknüpft: Änderungen kommen von selbst. Auch selbst geändert? **Übernehmen** oder **Meins behalten**. Dort gelöscht? **Löschen** oder **Behalten**.
-
-Auf **Familie** führt auch die letzte Zeile unter **Externe Kalender** hierher.
+Tippe auf einen Termin → **In Daili bearbeiten**, um Personen, Erinnerungen oder Notizen hinzuzufügen. Er bleibt verknüpft: Änderungen kommen von selbst. Auch selbst geändert? **Übernehmen** oder **Meins behalten**. Dort gelöscht? **Löschen** oder **Behalten**. Aus einem Kalender mit **Nur ich** ist er privat, außer du wählst Personen aus.
 
 > Note: Handy-Kalender bleiben auf diesem Handy. **In Daili bearbeiten** blendet den Handy-Termin hier aus, bis du deinen löschst. Aktualisierungen gibt es dabei nicht.

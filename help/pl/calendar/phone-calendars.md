@@ -5,7 +5,7 @@ summary: Pokaż kalendarze z telefonu albo Kalendarz Google obok rodzinnych wyda
 keywords: kalendarz w telefonie, kalendarz google, dodaj kalendarz, subskrypcja, link, kalendarz szkolny, kalendarz z pracy, tylko ja, edytuj w daili, połączony, odśwież, kolor
 tipTitle: Zobacz kalendarze z telefonu w daili
 tipBody: Kalendarze z pracy, szkoły albo zajęć sportowych mogą się pojawiać obok rodzinnych wydarzeń.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Otwórz **Kalendarz**, dotknij zębatki, a potem **Dodaj kalendarz** w sekcji **Inne kalendarze**.
 2. **Kalendarz Apple** (iPhone) albo **Kalendarze telefonu** (Android).
@@ -21,8 +21,6 @@ W kalendarzu wiersz **Należy do** ustala jego kolor i osobę, pod którą wida�
 
 ![Zsynchronizowana Wycieczka szkolna z połączonego kalendarza Szkoła. Zakreślony jest przycisk Edytuj w Daili.](calendar-linked-event)
 
-Dotknij wydarzenia → **Edytuj w Daili**, żeby dodać osoby, przypomnienia albo notatki. Zostaje połączone: zmiany przychodzą same. Zmieniono je też u ciebie? **Użyj** albo **Zostaw moje**. Usunięte tam? **Usuń** albo **Zostaw**.
-
-Na ekranie **Rodzina** ostatni wiersz w sekcji **Kalendarze zewnętrzne** też prowadzi tutaj.
+Dotknij wydarzenia → **Edytuj w Daili**, żeby dodać osoby, przypomnienia albo notatki. Zostaje połączone: zmiany przychodzą same. Zmieniono je też u ciebie? **Użyj** albo **Zostaw moje**. Usunięte tam? **Usuń** albo **Zostaw**. Wydarzenie z kalendarza **Tylko ja** jest wtedy prywatne, chyba że wybierzesz osoby.
 
 > Note: Kalendarze z telefonu zostają w tym telefonie. **Edytuj w Daili** ukrywa tu wydarzenie z telefonu, dopóki nie usuniesz swojego. Bez aktualizacji.

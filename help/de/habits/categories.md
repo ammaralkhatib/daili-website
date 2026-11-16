@@ -3,11 +3,11 @@ id: habits-categories
 title: Eigene Gewohnheitskategorien und gespeicherte Gewohnheiten
 summary: Erstelle eigene Kategorien und behalte Gewohnheiten, um sie wieder zu starten. Deine ganze Familie teilt sie.
 keywords: kategorie, kategorien, gespeicherte gewohnheit, gewohnheitsliste, vorlage, ausblenden, sortieren, umbenennen, familie, eigene gewohnheiten
-translatedFrom: 2026-10-16
+translatedFrom: 2026-11-16
 ---
 Deine Familie kann eine eigene Gewohnheitsliste führen: Kategorien, die ihr benennt, und Gewohnheiten, die ihr gespeichert habt, um sie wieder zu starten.
 
-1. Tippe in **Gewohnheiten** auf **+**.
+1. Tippe in **Gewohnheiten** auf **+**. Admins tippen dann auf **Gewohnheit**.
 2. Tippe auf dem Bildschirm **Gewohnheit starten** in der Reihe der Kategorien auf den Chip **Bearbeiten**.
 3. Gib unter **Kategorien deiner Familie** einen Namen ein und tippe auf +. Mit den Buttons benennst du eine um, verschiebst oder löschst sie.
 4. Tippe unter **Kategorien von Daili** auf das Auge, um eine auszublenden, die du nicht brauchst.

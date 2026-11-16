@@ -2,10 +2,10 @@
 id: meals-to-shopping
 title: De ingrediënten van een recept op je boodschappenlijst zetten
 summary: Zet alles wat een recept, of een hele week aan maaltijden, nodig heeft in één keer op je boodschappenlijst.
-keywords: ingrediënten, boodschappenlijst, boodschappen, supermarkt, op de lijst zetten, recept, menuplanner, kopen
+keywords: ingrediënten, boodschappenlijst, boodschappen, supermarkt, op de lijst zetten, recept, menuplanner, kopen, porties, aantal personen
 tipTitle: Van menuplanner naar boodschappenlijst
 tipBody: Plan de maaltijden van de week en zet dan alle ingrediënten in één keer op je boodschappenlijst.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 Nooit meer ingrediënten met de hand overschrijven.
 
@@ -19,5 +19,9 @@ Nooit meer ingrediënten met de hand overschrijven.
 Tik op **Lijst openen** in het bericht om ze te zien.
 
 **Alles naar lijst** onder de ingrediënten van een recept doet hetzelfde. Heb je de porties veranderd, dan gaan de nieuwe hoeveelheden op de lijst.
+
+Vanuit de **Menuplanner** volgen de hoeveelheden de **Porties** van elke maaltijd. Een recept voor 4 dat gepland is voor 8, toont „voor 8” en de hoeveelheden verdubbelen. Een regel zonder hoeveelheid krijgt „2×”.
+
+![Naar boodschappenlijst voor deze week. Bij Groentecurry staat Avondeten · wo 18 nov · voor 8 en de hoeveelheden zijn verdubbeld. De regel voor 8 is omcirkeld.](meals-week-shopping)
 
 > Note: Vanuit de menuplanner leveren alleen maaltijden met een recept ingrediënten op. Maaltijden zonder recept hebben er geen.

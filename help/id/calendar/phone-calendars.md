@@ -5,7 +5,7 @@ summary: Tampilkan kalender ponsel atau Google Calendar di samping acara keluarg
 keywords: kalender ponsel, google calendar, tambah kalender, berlangganan, tautan, kalender sekolah, kalender kerja, hanya saya, edit di daili, tertaut, segarkan, warna
 tipTitle: Lihat kalender ponsel Anda di daili
 tipBody: Kalender kerja, sekolah, atau olahraga bisa tampil di samping acara keluarga.
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
 1. Buka **Kalender**, ketuk roda gigi, lalu **Tambah kalender** di bawah **Kalender lain**.
 2. **Kalender Apple** (iPhone) atau **Kalender ponsel** (Android).
@@ -21,8 +21,6 @@ translatedFrom: 2026-11-13
 
 ![Karyawisata yang tersinkron dari kalender Sekolah yang tertaut. Edit di Daili dilingkari.](calendar-linked-event)
 
-Ketuk acara → **Edit di Daili** untuk menambah orang, pengingat, atau catatan. Acaranya tetap tertaut: perubahan masuk sendiri. Anda juga mengubahnya? **Pakai** atau **Pertahankan punyaku**. Dihapus di sana? **Hapus** atau **Pertahankan**.
-
-Di **Keluarga**, baris terakhir di bawah **Kalender eksternal** juga mengarah ke sini.
+Ketuk acara → **Edit di Daili** untuk menambah orang, pengingat, atau catatan. Acaranya tetap tertaut: perubahan masuk sendiri. Anda juga mengubahnya? **Pakai** atau **Pertahankan punyaku**. Dihapus di sana? **Hapus** atau **Pertahankan**. Dari kalender **Hanya saya**, acaranya pribadi, kecuali Anda memilih orang.
 
 > Note: Kalender ponsel tetap di ponsel ini. **Edit di Daili** menyembunyikan acara ponsel di sini sampai Anda menghapus salinan Anda. Tanpa pembaruan.

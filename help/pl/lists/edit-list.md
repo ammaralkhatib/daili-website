@@ -3,15 +3,17 @@ id: lists-edit-list
 title: Zmień nazwę, kolor albo kolejność listy lub ją usuń
 summary: Nadaj liście nową nazwę, kolor albo ikonę, przeciągnij listy w wybranej kolejności albo usuń tę, której nie potrzebujesz.
 keywords: zmień nazwę, edytuj listę, kolor, ikona, kolejność, sortuj listy, usuń listę, skasuj listę
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 ![Ekran Zakupy z otwartym menu ⋯ listy. Zakreślona jest opcja Edytuj, pod nią jest Usuń.](lists-edit-list)
 
 1. Na ekranie głównym dotknij **Zakupy** albo **Zadania**.
-2. Na karcie listy dotknij **⋯**, a potem **Edytuj**.
+2. Na karcie listy albo w samej liście dotknij **⋯**, a potem **Edytuj**.
 3. Zmień pole **Nazwa** albo **Kolor**. Żeby wybrać inną ikonę, dotknij ikony w polu nazwy. Potem dotknij **Zapisz**.
 4. Żeby zmienić kolejność, przytrzymaj kartę i ją przeciągnij.
-5. Żeby usunąć listę, dotknij **⋯** na jej karcie, a potem **Usuń**. **Cofnij** w komunikacie przywraca ją przez kilka sekund.
+5. Żeby usunąć listę, dotknij **⋯** na jej karcie, a potem **Usuń**. **Cofnij** przywraca ją przez kilka sekund.
+
+![Lista Zakupy z otwartym menu ⋯. Edytuj to pierwszy wiersz i jest zakreślony.](lists-edit-in-list)
 
 Gdy **Tylko ja** jest włączone, tylko ty widzisz listę i wszystko, co na niej jest, a przy jej nazwie jest kłódka. Zmienić to może tylko osoba, która utworzyła listę. Prywatne listy i zadania nie powiadamiają nikogo innego i nie trafiają do listy nowości, podpowiedzi przy pisaniu i porannego podsumowania innych osób ani na ekran ścienny TRMNL. Ich przypomnienia trafiają tylko do ciebie.
 

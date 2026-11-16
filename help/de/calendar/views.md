@@ -2,8 +2,8 @@
 id: calendar-views
 title: Kalenderansichten: Monat, Woche, Tag, Liste, Personen und Jahr
 summary: Wechsle zwischen Monat, Woche, 3 Tagen, Tag, Liste, Personen und Jahr, und filtere nach Person, Kategorie oder Kalender.
-keywords: ansicht, monat, woche, liste, filter, personen, jahresansicht, kalender ausblenden, alle termine, aktualisieren, kalenderwoche, kw
-translatedFrom: 2026-11-10
+keywords: ansicht, monat, woche, liste, filter, personen, jahresansicht, kalender ausblenden, alle termine, streifen, kalenderwoche, kw
+translatedFrom: 2026-11-16
 ---
 Der Kalender hat sieben Ansichten.
 
@@ -13,9 +13,11 @@ Der Kalender hat sieben Ansichten.
 2. Wähle **Monat**, **Woche**, **3 Tage**, **Tag**, **Liste**, **Personen** oder **Jahr**.
 3. Um nur bestimmte Personen oder Kategorien zu sehen, tippe auf **Filter** und wähle sie aus.
 
-**Woche**, **3 Tage** und **Tag** öffnen heute bei der aktuellen Uhrzeit.
+Die farbigen Streifen eines Termins zeigen, für wen er ist, bis zu drei Personen. Ist niemand gewählt: die Farbe der Person, die ihn erstellt hat.
 
-In der Ansicht **Personen** hat jede Person eine eigene Spalte. Mit dem Button oben links blendest du Spalten aus oder sortierst sie um.
+![Das Tagesblatt von heute. Familienessen hat drei farbige Streifen und drei Gesichter. Die Karte ist eingekreist.](calendar-stripes)
+
+In der Ansicht **Personen** hat jede Person eine eigene Spalte.
 
 ![Die Ansicht Personen mit je einer Spalte für Lena, Marco und Emma. Die Spaltenköpfe sind eingekreist.](calendar-people-view)
 

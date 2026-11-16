@@ -3,10 +3,8 @@ id: lists-shopping
 title: Nákupní seznamy: přidat, odškrtnout, vyčistit
 summary: Jeden nákupní seznam pro celou rodinu. Přidávej položky, odškrtávej je v obchodě a dej ostatním vědět, že jdeš nakupovat.
 keywords: nákup, nákupy, potraviny, nákupní seznam, koupit, odškrtnout, supermarket, nedávno koupeno, naléhavé, jdu nakupovat, vložit
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-16
 ---
-Celá rodina vidí stejné seznamy a každou změnu.
-
 ![Seznam Nákup s Mlékem označeným jako naléhavé a dvěma položkami v části Nedávno koupeno. Zakroužkované je Jdu nakupovat.](lists-shopping)
 
 1. Na domovské obrazovce klepni na **Nákupy** a pak na seznam. Pro nový klepni na **+**, pak na **Nákupní seznam**, vyplň **Název** a klepni na **Vytvořit**.
@@ -16,7 +14,9 @@ Celá rodina vidí stejné seznamy a každou změnu.
 
 ![Lišta pro přidání s napsaným „2 kg Jablka“. Štítek nad ní ukazuje „Jablka 2 kg“. Zakroužkovaná je lišta pro přidání.](lists-shopping-amount)
 
-Přejetím položky doprava ji označíš jako **Naléhavé**: dostane červenou značku a posune se nahoru. Odškrtnutím značka zmizí. Přejetím doleva položku smažeš.
+Přejetím položky doprava ji označíš jako **Naléhavé**: dostane červenou značku a posune se nahoru. Přejetím doleva položku smažeš.
+
+Tlačítko s posuvníky (**Přidat s podrobnostmi**) předem nastaví **Množství**, **Kategorie**, **Poznámka** nebo **Naléhavé**.
 
 **Jdu nakupovat** dá vědět ostatním, u každého seznamu jednou za 30 minut. Ne u soukromých seznamů.
 

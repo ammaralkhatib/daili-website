@@ -2,8 +2,8 @@
 id: calendar-views
 title: Tampilan kalender: bulan, minggu, hari, agenda, orang, dan tahun
 summary: Beralih antara bulan, minggu, 3 hari, hari, agenda, orang, dan tahun, dan saring menurut orang, kategori, atau kalender.
-keywords: tampilan, bulan, minggu, agenda, filter, orang, tahun, sembunyikan kalender, semua acara, segarkan, nomor minggu
-translatedFrom: 2026-11-10
+keywords: tampilan, bulan, minggu, agenda, filter, orang, tahun, sembunyikan kalender, semua acara, garis warna, nomor minggu
+translatedFrom: 2026-11-16
 ---
 Kalender punya tujuh tampilan.
 
@@ -13,9 +13,11 @@ Kalender punya tujuh tampilan.
 2. Pilih **Bulan**, **Minggu**, **3 hari**, **Hari**, **Agenda**, **Orang**, atau **Tahun**.
 3. Untuk melihat orang atau kategori tertentu saja, ketuk **Filter** dan pilih.
 
-**Minggu**, **3 hari**, dan **Hari** terbuka di jam saat ini, hari ini.
+Garis warna pada acara menunjukkan untuk siapa acara itu, sampai tiga orang. Tidak ada yang dipilih: warna pembuatnya.
 
-Tampilan **Orang** memberi setiap orang satu kolom. Tombol kiri atas menyembunyikan atau mengurutkan ulang kolom.
+![Lembar hari ini. Makan malam keluarga punya tiga garis warna dan tiga wajah. Kartunya dilingkari.](calendar-stripes)
+
+Tampilan **Orang** memberi setiap orang satu kolom.
 
 ![Tampilan Orang dengan satu kolom untuk Sari, Andi, dan Putri. Judul kolom dilingkari.](calendar-people-view)
 

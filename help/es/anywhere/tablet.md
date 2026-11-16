@@ -5,23 +5,21 @@ summary: Un diseño más grande para tabletas iPad y Android, con atajos de tecl
 keywords: tableta, ipad, tableta android, horizontal, pantalla grande, teclado, ratón, trackpad, atajos, split view, pantalla dividida
 translatedFrom: 2026-11-16
 ---
-Un menú a la izquierda reúne las secciones principales de la app. Las listas y las recetas se abren junto a su lista, y un día junto al mes o debajo. La mayoría de los formularios y paneles se abren en una ventana. Misma cuenta, mismos datos.
+Un menú a la izquierda reúne las secciones principales de la app. Una lista, una receta o un día abierto se muestra junto a su vista general. La mayoría de los formularios se abren en una ventana.
 
-Gira la tableta como quieras o divide la pantalla con otra app, a cualquier tamaño: lo que has abierto y escrito se mantiene. Una ventana muy estrecha muestra el diseño del teléfono.
+Gira la tableta como quieras o divide la pantalla con otra app, a cualquier tamaño: lo que has abierto y escrito se mantiene. Las ventanas estrechas y los teléfonos, incluso en horizontal, mantienen el diseño del teléfono.
 
 Atajos, con Cmd (iPad) o Ctrl (Android):
 
-1. **N** o **Cmd/Ctrl+N**: añadir algo nuevo.
+1. **N** o **Cmd/Ctrl+N**: añadir algo nuevo, en la mayoría de las pantallas.
 2. **/** o **Cmd/Ctrl+F**: buscar en Recetas, Notas, Cumpleaños o Ayuda.
-3. **T**: hoy. Flechas: moverte por el calendario.
-4. **Cmd/Ctrl+Enter**: guardar (en la mayoría de los formularios).
+3. **T**: hoy en el calendario. Flechas: un día o una semana en Mes, una página en las demás vistas.
+4. **Cmd/Ctrl+Enter**: pulsar el botón verde **Guardar** o **Crear** de un formulario.
 5. De **Cmd/Ctrl+1** a **9**: las secciones del menú. **Cmd/Ctrl+,**: **Ajustes**.
 6. **Esc**: cerrar una ventana.
 
-Las teclas sueltas no hacen nada mientras escribes en un campo.
+Las teclas sueltas no hacen nada mientras escribes.
 
-Ratón o trackpad: lo que está bajo el puntero se ilumina, el clic derecho abre las acciones de mantener pulsado y puedes arrastrar eventos en el mes.
-
-daili usa el tamaño de texto de tu tableta.
+Ratón o trackpad: lo que está bajo el puntero se ilumina, el clic derecho funciona como mantener pulsado y puedes arrastrar eventos en Mes.
 
 > Note: Una pantalla de pared es otra cosa: un tablero familiar en una tableta.

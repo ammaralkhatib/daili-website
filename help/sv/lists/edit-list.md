@@ -3,15 +3,17 @@ id: lists-edit-list
 title: Byt namn, färg eller ordning på en lista, eller ta bort den
 summary: Ge en lista ett nytt namn, en ny färg eller ikon, dra dina listor i ordning, eller ta bort en du inte behöver.
 keywords: byta namn, redigera lista, färg, ikon, ordna om, sortera listor, ta bort lista, radera lista
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-16
 ---
 ![Skärmen Inköp med en listas meny ⋯ öppen. Redigera är inringat, med Ta bort under.](lists-edit-list)
 
 1. Tryck på **Inköp** eller **Uppgifter** på startskärmen.
-2. Tryck på **⋯** på listans kort och sedan på **Redigera**.
+2. Tryck på **⋯** på listans kort, eller inne i listan, och sedan på **Redigera**.
 3. Ändra **Namn** eller **Färg**. För en annan ikon trycker du på ikonen i namnfältet. Tryck sedan på **Spara**.
-4. För att ändra ordningen håller du fingret på ett kort och drar det.
-5. För att ta bort en lista trycker du på **⋯** på dess kort och sedan på **Ta bort**. **Ångra** i meddelandet tar tillbaka den i några sekunder.
+4. För att ändra ordningen håller du på ett kort och drar det.
+5. För att ta bort en lista trycker du på **⋯** på dess kort och sedan på **Ta bort**. **Ångra** tar tillbaka den i några sekunder.
+
+![Handla med menyn ⋯ öppen. Redigera är första raden och är inringad.](lists-edit-in-list)
 
 Med **Bara jag** på ser bara du listan och allt i den, med ett lås vid namnet. Bara den som skapade listan kan ändra det. Privata listor och uppgifter skickar inga aviseringar till andra och hålls utanför aktivitetslistan, andras skrivförslag och morgonsammanfattning, och TRMNL-väggskärmen. Deras påminnelser går bara till dig.
 
