@@ -1,0 +1,24 @@
+{
+  "faqHeading": "Veelgestelde vragen",
+  "keepReading": "Lees verder",
+  "fromTheBlog": "Uit de blog",
+  "allArticles": "Alle artikelen →",
+  "seeHowFeature": "Bekijk {feature} in daili →",
+  "moreInEnglish": "Meer artikelen in het Engels →",
+  "newsletter": {
+    "heading": "Eén korte e-mail per maand",
+    "text": "Wat er nieuw is in daili en een tip voor de week van je gezin. Geen reclame, geen tracking. Je krijgt een e-mail om te bevestigen.",
+    "label": "Je e-mailadres",
+    "placeholder": "jij@voorbeeld.nl",
+    "button": "Aanmelden",
+    "honeypot": "Laat dit veld leeg",
+    "unsubscribe": "Je kunt je altijd afmelden.",
+    "privacy": "Privacybeleid"
+  },
+  "index": {
+    "title": "Blog — Daili",
+    "description": "Praktische artikelen over het gezinsleven: documenten, agenda's, lijsten en hoe je zorgt dat iedereen het systeem echt gebruikt.",
+    "h1": "De Daili-blog",
+    "intro": "Praktische artikelen over het gezinsleven — documenten, agenda's, lijsten en hoe je zorgt dat iedereen het systeem echt gebruikt."
+  }
+}

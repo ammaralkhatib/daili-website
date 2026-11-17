@@ -1,0 +1,24 @@
+{
+  "faqHeading": "Frequently asked questions",
+  "keepReading": "Keep reading",
+  "fromTheBlog": "From the blog",
+  "allArticles": "All articles →",
+  "seeHowFeature": "See how {feature} works in daili →",
+  "moreInEnglish": "More articles in English →",
+  "newsletter": {
+    "heading": "Get one short email a month",
+    "text": "What's new in daili and one tip for your family's week. No ads, no tracking. You'll get an email to confirm.",
+    "label": "Your email",
+    "placeholder": "you@example.com",
+    "button": "Subscribe",
+    "honeypot": "Leave this field empty",
+    "unsubscribe": "Unsubscribe any time.",
+    "privacy": "Privacy policy"
+  },
+  "index": {
+    "title": "Blog — Daili",
+    "description": "Practical writing on running a family: documents, calendars, lists, and getting everyone to actually use the system.",
+    "h1": "The Daili blog",
+    "intro": "Practical writing on running a family — documents, calendars, lists, and getting everyone to actually use the system."
+  }
+}

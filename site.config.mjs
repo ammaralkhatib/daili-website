@@ -260,10 +260,11 @@ export const BLOG_CLUSTERS = {
  *
  * `features` (required, 1–2 slugs) names the HOME_FEATURES entries with
  * `page: true` the post is about; the FIRST is the primary. It drives every
- * link between the blog and the feature pages (2026-10-20/002): the English
- * feature page lists its 3 newest tagged posts, the post's CTA box links to
- * /features/<primary>/, and "Keep reading" picks 2 posts sharing the primary,
- * then the same `cluster`. build.mjs throws on a slug that has no page, like
+ * link between the blog and the feature pages (2026-10-20/002): a feature
+ * page lists the 3 newest tagged posts that exist in its language, the post's
+ * CTA box links to /features/<primary>/ in the post's language, and "Keep
+ * reading" picks 2 posts of the same language sharing the primary, then the
+ * same `cluster`. build.mjs throws on a slug that has no page, like
  * it does for an unknown `cluster`.
  *
  * `title` and `h1` are deliberately allowed to differ: the title tag is
@@ -273,9 +274,13 @@ export const BLOG_CLUSTERS = {
  * exactly as IMAGE_SIZES above records them for the app screenshots. They are
  * what stops the hero shifting the layout while it loads.
  *
- * The pages derived from this array carry `cluster: null` (see build.mjs). The
- * blog is English-only; a blog page must never claim a landing page in another
- * locale as its hreflang alternate.
+ * A post that exists in English only builds with `cluster: null` (see
+ * build.mjs): no hreflang at all. A post with a translation (BLOG_LOCALES
+ * below) forms its own cluster of exactly its languages. A blog page never
+ * claims a landing page or another post as its hreflang alternate.
+ *
+ * The words here are the English ones. A translation never repeats this
+ * entry: blog/<slug>.<loc>.json holds only the translated words.
  */
 export const BLOG_POSTS = [
   {
@@ -1265,34 +1270,33 @@ export const BLOG_POSTS = [
 ];
 
 /**
- * The /blog/ index's own copy.
+ * The languages the blog is written in (Ammar, 2026-11-17: every NEW post goes
+ * out in these six). English is the source and always exists; a post exists in
+ * another of these languages only when its two translation files do —
+ * blog/<slug>.<loc>.html (the body) and blog/<slug>.<loc>.json (title,
+ * description, h1, imageAlt, faq, cta, and itemList when the English post has
+ * one). No fallback: never English text on a translated address. A
+ * translation lives at /<loc>/blog/<slug>/ with the English slug. Every entry
+ * must be in LOCALES (build.mjs throws).
  *
- * These are literals here, not keys in content/<locale>.json, and that is
- * deliberate: check-content.mjs enforces key-set equality across all 23 locale
- * files, so one English-only key would have to be added — untranslated — to 22
- * files that will never render it. The blog is English-only, so its page copy
- * lives with the rest of the blog's structure, exactly as each post's title
- * does in BLOG_POSTS.
+ * The fixed words of a blog page — "Frequently asked questions", the
+ * newsletter block, "Keep reading", "From the blog", the /blog/ index's
+ * title, description, h1 and intro, … — live in blog/ui/<loc>.json, one file
+ * per language here, the same keys as blog/ui/en.json. Not in
+ * content/<locale>.json: check-content.mjs demands every key there in all 28
+ * locale files. blog/ui/en.json's index.h1 and index.description double as the
+ * RSS channel title and description; the feed stays English.
  *
- * `h1` doubles as the RSS channel title and `description` as the channel
- * description, so the feed and the page introduce the blog with the same words.
- *
- * nav.blog is the one exception and DOES live in all 23 content files: it
- * renders in the header and footer of every locale, so it is real translated
- * copy rather than English-only page text.
+ * nav.blog DOES live in all 28 content files: it renders in the header and
+ * footer of every locale, so it is real translated copy.
  */
-export const BLOG_INDEX = {
-  title: 'Blog — Daili',
-  description: 'Practical writing on running a family: documents, calendars, lists, and getting everyone to actually use the system.',
-  h1: 'The Daili blog',
-  intro: 'Practical writing on running a family — documents, calendars, lists, and getting everyone to actually use the system.',
-};
+export const BLOG_LOCALES = ['en', 'de', 'nb', 'uk', 'sv', 'nl'];
 
 /**
  * The "what's new" page's own copy, EN + DE.
  *
  * Literals here rather than keys in content/<locale>.json for the same reason
- * BLOG_INDEX is: check-content.mjs enforces key-set equality across all 23
+ * the blog's words are in blog/ui/: check-content.mjs enforces key-set equality across all 23
  * locale files, so four keys for a two-language page would mean 84 untranslated
  * entries in files that will never render them.
  *

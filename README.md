@@ -31,11 +31,30 @@ one-line copy change under a 20-file diff.
 | `tools/` | The guards described below, and `help-lib.mjs` (the help parser). |
 | `help/` | Help center articles and their media/allowlist data. See "Help center" below. |
 | `wall/` | Every word of the wall display guide (`wall/en.json`). See "Wall display guide" below. |
+| `blog/` | Blog post bodies (`<slug>.en.html`), translations (`<slug>.<loc>.html` + `.json`) and the blog's fixed words per language (`blog/ui/<loc>.json`). See "Blog" below. |
+
+## Blog
+
+English posts live in `BLOG_POSTS` (`site.config.mjs`) + `blog/<slug>.en.html`;
+the recipe is `claude-prompts/BLOG-POST-TEMPLATE.md`. Since 2026-11-17 a post
+can also exist in the other `BLOG_LOCALES` languages (de, nb, uk, sv, nl). A
+translation is two files, `blog/<slug>.<loc>.html` (the body) and
+`blog/<slug>.<loc>.json` (title, description, h1, imageAlt, faq, cta, and
+itemList when the English post has one), and is built at `/<loc>/blog/<slug>/`
+with the English slug. No translation = the post is English only, with no
+hreflang, exactly as before. A language with at least one post gets its own
+`/<loc>/blog/` (ending with a link to the English blog), and its header and
+footer Blog link goes there. The feed stays English. The fixed words of a blog
+page ("Frequently asked questions", the newsletter block, "Keep reading", …)
+are in `blog/ui/<loc>.json`, never in `content/<loc>.json`.
+`tools/blog-i18n.mjs` reads and judges translations; `check-build.mjs`
+sections 11, 11b, 11c and 19 use it, and `tools/test-blog-i18n.mjs` proves each
+rule fails on a made-up post (`tools/fixtures/blog-i18n/`).
 
 ## The guards
 
-The build is `check-content → check-reviews → check-legal → check-help → test-check-help → build →
-check-build → test-detector`, chained with
+The build is `check-content → check-reviews → check-legal → check-help → test-check-help →
+test-blog-i18n → build → check-build → test-detector`, chained with
 `&&`, so nothing broken can reach `deploy.sh`.
 
 - **`check-content.mjs`** — every locale must have exactly English's keys, the
@@ -137,7 +156,7 @@ locale renders its pages and json.
 
 `daili.app/wall-display/` shows how to turn an old tablet, PC, Mac or
 Raspberry Pi into a Daili wall screen: pick a device, follow its steps.
-English only, outside every hreflang cluster, like the blog. **Every word is
+English only, outside every hreflang cluster, like an English-only blog post. **Every word is
 in `wall/en.json`** — hero, the screenshot's alt text (`tabletAlt`), the
 devices (id, name, sub line, icon key, lead, facts, jobs with steps and an
 optional `extra` list of `{ "command" }` / `{ "note" }` / `{ "tip" }`; a

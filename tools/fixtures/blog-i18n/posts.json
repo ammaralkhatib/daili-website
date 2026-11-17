@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "rainy-day-picnic-plan",
+    "cluster": "adoption",
+    "features": ["calendar"],
+    "title": "A Rainy-Day Picnic Plan (Made-Up Test Post)",
+    "description": "A made-up post for tools/test-blog-i18n.mjs: how a family moves a picnic indoors when the forecast turns.",
+    "h1": "The Rainy-Day Picnic Plan",
+    "published": "2026-11-01",
+    "updated": "2026-11-01",
+    "body": "rainy-day-picnic-plan.en.html",
+    "image": "/assets/img/blog/rainy-day-picnic-plan.webp",
+    "imageAlt": "A picnic blanket spread on a living-room floor",
+    "imageWidth": 1200,
+    "imageHeight": 800,
+    "faq": [
+      { "q": "What if it rains on the day?", "a": "Move the blanket indoors and keep the time." },
+      { "q": "Who brings the food?", "a": "Whoever the shared list says." }
+    ],
+    "cta": {
+      "h2": "What daili does with this",
+      "html": "<p>Put the picnic in the shared calendar so everyone sees the new plan.</p>\n<p class=\"post-cta-link\"><a href=\"/\">See what daili includes →</a></p>"
+    }
+  },
+  {
+    "slug": "picnic-packing-list",
+    "cluster": "adoption",
+    "features": ["shopping"],
+    "title": "The Picnic Packing List (Made-Up Test Post)",
+    "description": "A made-up post with an itemList, for tools/test-blog-i18n.mjs.",
+    "h1": "The Picnic Packing List",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "body": "picnic-packing-list.en.html",
+    "image": "/assets/img/blog/picnic-packing-list.webp",
+    "imageAlt": "A wicker basket with plates and a thermos",
+    "imageWidth": 1200,
+    "imageHeight": 800,
+    "itemList": "Picnic packing list",
+    "faq": [
+      { "q": "How much water?", "a": "One bottle each, plus one." }
+    ],
+    "cta": {
+      "h2": "What daili does with this",
+      "html": "<p>Keep the list in daili and tick things off as you pack.</p>"
+    }
+  }
+]

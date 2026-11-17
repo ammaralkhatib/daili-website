@@ -20,11 +20,12 @@ import {
   MEMBER_TILES_AFTER, HOME_FAMILY, HOME_FEATURES, BUDGET_PER_DAY, BUDGET_CURRENCY, EURO_RATES,
   HOME_WIDGETS, ORBIT_RINGS, ORBIT_TILES,
   FLOW_STEPS, FLOW_VIDEO_SIZE, PRIVACY_ICONS, MOSAIC, FLAT_OBJECTS,
-  BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_INDEX, WHATS_NEW,
+  BLOG_POSTS, BLOG_AUTHOR, BLOG_CLUSTERS, BLOG_LOCALES, WHATS_NEW,
   HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES,
   WALL_GUIDE_PUBLIC,
 } from './site.config.mjs';
 import { loadAllHelp, visibleHelp, mediaFor } from './tools/help-lib.mjs';
+import { loadBlogUi, loadBlogTranslations } from './tools/blog-i18n.mjs';
 
 /** Where the help pages send their anonymous counts (api commit a19d079).
  *  static/.htaccess allows exactly this origin in connect-src. */
@@ -174,27 +175,75 @@ const metaFor = (pg, loc) => {
 };
 
 /**
+ * The blog in several languages (2026-11-17/001). BLOG_LOCALES names the
+ * languages; blog/ui/<loc>.json holds each one's fixed words; a post exists in
+ * a language other than English only when blog/<slug>.<loc>.html and .json
+ * both exist (tools/blog-i18n.mjs reads and checks them). Anything wrong
+ * throws here, before a page is written: never English words on a translated
+ * page, never half a translation.
+ */
+for (const l of BLOG_LOCALES) {
+  if (!LOCALES.includes(l)) throw new Error(`BLOG_LOCALES has '${l}', which is not in LOCALES`);
+}
+if (BLOG_LOCALES[0] !== DEFAULT_LOCALE || new Set(BLOG_LOCALES).size !== BLOG_LOCALES.length) {
+  throw new Error(`BLOG_LOCALES must start with '${DEFAULT_LOCALE}' (the source) and name each language once`);
+}
+const blogUiLoaded = loadBlogUi({ root: ROOT, blogLocales: BLOG_LOCALES });
+if (blogUiLoaded.errors.length) throw new Error(`blog/ui/ has ${blogUiLoaded.errors.length} error(s):\n${blogUiLoaded.errors.join('\n')}`);
+const blogUi = blogUiLoaded.ui;
+const blogTrLoaded = loadBlogTranslations({ root: ROOT, posts: BLOG_POSTS, blogLocales: BLOG_LOCALES });
+if (blogTrLoaded.errors.length) throw new Error(`blog/ has ${blogTrLoaded.errors.length} translation error(s):\n${blogTrLoaded.errors.join('\n')}`);
+/** slug → loc → { meta, body, html, json } for every translation. */
+const blogTr = blogTrLoaded.byPost;
+/** The languages a post exists in, English first. */
+const postLocales = (post) => BLOG_LOCALES.filter((l) => l === DEFAULT_LOCALE || Boolean(blogTr[post.slug]?.[l]));
+/** A post's words in a language it exists in: the English entry with the translation's words over it. */
+const postIn = (post, loc) => (loc === DEFAULT_LOCALE ? post : { ...post, ...blogTr[post.slug][loc].meta });
+/** A post's body in a language it exists in. */
+const postBodyIn = (post, loc) => (loc === DEFAULT_LOCALE ? read(`blog/${post.body}`) : blogTr[post.slug][loc].body);
+/** The languages with at least one post: each gets its own /<loc>/blog/. */
+const blogIndexLocales = BLOG_LOCALES.filter((l) => BLOG_POSTS.some((post) => postLocales(post).includes(l)));
+/** '/blog/' for English, '/de/blog/', … */
+const blogHome = (loc) => `${dirFor(loc)}blog/`;
+/**
+ * The header's and footer's Blog link: a language with its own index links
+ * there; every other one to the English blog, saying so with hreflang/lang.
+ * English keeps exactly the attributes it always had.
+ */
+const blogLinkAttrs = (loc) => (loc !== DEFAULT_LOCALE && blogIndexLocales.includes(loc)
+  ? `href="${blogHome(loc)}"`
+  : `href="/blog/" hreflang="en" lang="en"`);
+
+/**
  * Blog posts become pages here rather than being hand-written into PAGES.
  * Twenty posts is twenty near-identical entries, and the one thing that must be
- * identical across all of them is the line below.
+ * identical across all of them is the cluster rule below.
  *
- * `cluster: null` is load-bearing. The blog is English-only; the landing page
- * has 23 translated alternates. A blog page that carried a cluster would emit
- * hreflang links to pages that never point back — exactly the "hreflang has no
- * return tag" trap the comment above renderHead's hreflang block warns about.
- * tools/check-build.mjs section 11 asserts zero `hreflang=` on every built blog
- * page, so a refactor cannot quietly undo this.
+ * A post that exists in English only has `cluster: null`, and that is
+ * load-bearing: a blog page that claimed alternates it does not have would
+ * emit hreflang links to pages that never point back — exactly the "hreflang
+ * has no return tag" trap the comment above renderHead's hreflang block warns
+ * about. A post with a translation gets its own cluster, `blog:<slug>`, of
+ * exactly the languages it exists in (x-default the English page).
+ * tools/check-build.mjs section 11 asserts both, so a refactor cannot quietly
+ * undo them.
  */
-const blogPages = BLOG_POSTS.map((post) => ({
-  id: `blog:${post.slug}`,
-  template: 'blogpost.html',
-  locales: ['en'],
-  cluster: null,
-  out: () => `blog/${post.slug}/index.html`,
-  priority: () => '0.6',
-  meta: { title: post.title, description: post.description },
-  post,
-}));
+const blogPages = BLOG_POSTS.map((post) => {
+  const locales = postLocales(post);
+  return {
+    id: `blog:${post.slug}`,
+    template: 'blogpost.html',
+    locales,
+    cluster: locales.length > 1 ? `blog:${post.slug}` : null,
+    out: (loc) => `${blogHome(loc).slice(1)}${post.slug}/index.html`,
+    priority: () => '0.6',
+    meta: (loc) => {
+      const w = postIn(post, loc);
+      return { title: w.title, description: w.description };
+    },
+    post,
+  };
+});
 
 /**
  * A post's cluster has to be one of the five in BLOG_CLUSTERS. Nothing renders
@@ -226,15 +275,17 @@ for (const post of BLOG_POSTS) {
   }
 }
 
-/** The blog index. English-only and outside every cluster, like the posts. */
+/** The blog index: /blog/, plus /<loc>/blog/ for every language with a post.
+ *  While only English exists it is outside every cluster, like an
+ *  English-only post; with more, the indexes form their own cluster. */
 const blogIndexPage = {
   id: 'blogindex',
   template: 'blogindex.html',
-  locales: ['en'],
-  cluster: null,
-  out: () => 'blog/index.html',
+  locales: blogIndexLocales,
+  cluster: blogIndexLocales.length > 1 ? 'blogindex' : null,
+  out: (loc) => `${blogHome(loc).slice(1)}index.html`,
   priority: () => '0.6',
-  meta: { title: BLOG_INDEX.title, description: BLOG_INDEX.description },
+  meta: (loc) => ({ title: blogUi[loc].index.title, description: blogUi[loc].index.description }),
 };
 
 /**
@@ -381,7 +432,7 @@ const featurePages = HOME_FEATURES.filter((d) => d.page).map((d) => ({
 
 /**
  * The wall display guide (2026-11-12/001): daili.app/wall-display/, English
- * only and outside every cluster, like the blog. Every word is in
+ * only and outside every cluster, like an English-only blog post. Every word is in
  * wall/en.json; a translation would be a wall/<loc>.json of the same shape
  * plus its locale here. The page is rendered complete (every device's guide
  * is in the HTML), wall.js only shows one device at a time. While
@@ -534,7 +585,7 @@ ${jobs}
   };
 }
 
-/** English alone: no cluster and no hreflang, like the blog. With a
+/** English alone: no cluster and no hreflang, like an English-only blog post. With a
  *  translation the guide's pages form their own cluster ('wall'). */
 const wallPage = {
   id: 'wall',
@@ -574,55 +625,83 @@ const rfc822 = (iso) => {
  * One list, so the page and the feed can never disagree about what exists or
  * what order it is in.
  */
-const blogList = [...BLOG_POSTS]
+const blogListIn = (loc) => [...BLOG_POSTS]
+  .filter((post) => postLocales(post).includes(loc))
   .sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug))
   .map((post) => ({
-    ...post,
-    url: `/blog/${post.slug}/`,
-    absUrl: `${BASE_URL}/blog/${post.slug}/`,
-    publishedLabel: formatDate(post.published),
+    ...postIn(post, loc),
+    url: `${blogHome(loc)}${post.slug}/`,
+    absUrl: `${BASE_URL}${blogHome(loc)}${post.slug}/`,
+    publishedLabel: formatDate(post.published, loc),
     pubDate: rfc822(post.published),
   }));
+/** The English list: the /blog/ index and the feed (which stays English). */
+const blogList = blogListIn(DEFAULT_LOCALE);
+
+/** Text for between tags: &, < and > escaped, quotes left as typed. The
+ *  English newsletter sentence ("What's new …") was inline in the template
+ *  with a bare apostrophe; this keeps it letter for letter. */
+const escapeText = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/** A blog page's fixed words (blog/ui/<loc>.json) for templates/blogpost.html,
+ *  ready for {{{ }}}: text escaped as text, the placeholder as an attribute. */
+const blogUiHtml = (loc) => {
+  const u = blogUi[loc];
+  const n = u.newsletter;
+  return {
+    faqHeading: escapeText(u.faqHeading),
+    newsletter: {
+      heading: escapeText(n.heading), text: escapeText(n.text), label: escapeText(n.label),
+      placeholder: escapeHtml(n.placeholder), button: escapeText(n.button), honeypot: escapeText(n.honeypot),
+      unsubscribe: escapeText(n.unsubscribe), privacy: escapeText(n.privacy),
+    },
+    // The policy in the page's language where it exists, like the footer's.
+    privacyHref: pageExistsIn(pageById.privacy, loc) ? urlFor(pageById.privacy, loc) : urlFor(pageById.privacy, DEFAULT_LOCALE),
+  };
+};
 
 /**
  * The links between the blog and the feature pages (2026-10-20/002), all from
- * each post's `features`. English literals, like "Frequently asked questions"
- * in blogpost.html: the blog is English-only, and the feature page block is
- * rendered on the English pages alone, so a German reader is never sent to an
- * English article without being told.
+ * each post's `features`, and only ever to posts in the page's own language:
+ * a feature page in language L lists the posts that exist in L, so a reader
+ * is never sent to an article in another language from there. The words are
+ * blog/ui/<loc>.json's.
  */
 const blogLinkItem = (p, pad) => `${pad}<li><a href="${p.url}">${escapeHtml(p.title)}</a><p>${escapeHtml(p.description)}</p></li>`;
 
-/** The English feature page's "From the blog": its 3 newest tagged posts, or
- *  nothing at all (no empty heading) when none is tagged. */
-function featureBlogBlock(slug) {
-  const posts = blogList.filter((p) => p.features.includes(slug)).slice(0, 3);
+/** A feature page's "From the blog": the 3 newest tagged posts in its
+ *  language, or nothing at all (no empty heading) when there is none. */
+function featureBlogBlock(slug, loc) {
+  if (!BLOG_LOCALES.includes(loc)) return '';
+  const posts = blogListIn(loc).filter((p) => p.features.includes(slug)).slice(0, 3);
   if (!posts.length) return '';
   return `      <section class="fs-blog" aria-labelledby="fs-blog-h">
-        <h2 id="fs-blog-h">From the blog</h2>
+        <h2 id="fs-blog-h">${escapeHtml(blogUi[loc].fromTheBlog)}</h2>
         <ul>
 ${posts.map((p) => blogLinkItem(p, '          ')).join('\n')}
         </ul>
-        <a class="fs-blog-all" href="/blog/">All articles →</a>
+        <a class="fs-blog-all" href="${blogHome(loc)}">${escapeHtml(blogUi[loc].allArticles)}</a>
       </section>`;
 }
 
-/** A post's CTA line to its primary feature, named as that page's English <h1>. */
-function postFeatureLink(post) {
+/** A post's CTA line to its primary feature's page in the post's language,
+ *  named as that page's <h1> (the feature card's name). */
+function postFeatureLink(post, loc) {
   const d = HOME_FEATURES.find((f) => f.slug === post.features[0]);
-  return `<p class="post-cta-link"><a href="${featureUrl(d.slug, 'en')}">See how ${escapeHtml(featureCard(d, 'en').h3)} works in daili →</a></p>`;
+  return `<p class="post-cta-link"><a href="${featureUrl(d.slug, loc)}">${uiHtml(blogUi[loc].seeHowFeature, { feature: escapeHtml(featureCard(d, loc).h3) })}</a></p>`;
 }
 
-/** "Keep reading": 2 other posts, those sharing the primary feature first, then
- *  the same cluster, newest first in each group. Nothing when there are none. */
-function postKeepReading(post) {
-  const others = blogList.filter((p) => p.slug !== post.slug);
+/** "Keep reading": 2 other posts of the same language, those sharing the
+ *  primary feature first, then the same cluster, newest first in each group.
+ *  Nothing when there are none. */
+function postKeepReading(post, loc) {
+  const others = blogListIn(loc).filter((p) => p.slug !== post.slug);
   const byFeature = others.filter((p) => p.features.includes(post.features[0]));
   const byCluster = others.filter((p) => p.cluster === post.cluster && !byFeature.includes(p));
   const posts = [...byFeature, ...byCluster].slice(0, 2);
   if (!posts.length) return '';
   return `  <section class="post-more" aria-labelledby="post-more-h">
-    <h2 id="post-more-h">Keep reading</h2>
+    <h2 id="post-more-h">${escapeHtml(blogUi[loc].keepReading)}</h2>
     <ul>
 ${posts.map((p) => blogLinkItem(p, '      ')).join('\n')}
     </ul>
@@ -717,10 +796,11 @@ function renderFooterLinks(loc) {
     // which costs nothing and is the right default for any cross-origin link.
     `<a href="https://app.daili.app" rel="noopener">${escapeHtml(c.nav.webApp)}</a>`,
     `<a href="${support}">${escapeHtml(c.nav.support)}</a>`,
-    // Same target and same attributes as the header link: the blog is English
-    // whatever locale the footer around it is written in, and hreflang/lang say
-    // so rather than leaving a reader to find out by clicking.
-    `<a href="/blog/" hreflang="en" lang="en">${escapeHtml(c.nav.blog)}</a>`,
+    // Same target and same attributes as the header link (blogLinkAttrs): a
+    // language with its own blog index links there; every other one to the
+    // English blog, and hreflang/lang say so rather than leaving a reader to
+    // find out by clicking.
+    `<a ${blogLinkAttrs(loc)}>${escapeHtml(c.nav.blog)}</a>`,
     // The help center, linked from nowhere until HELP_PUBLIC flips: before that
     // its pages are a noindex preview. A locale with its own help links there;
     // every other one to the English help, and says so like the blog link.
@@ -1196,8 +1276,8 @@ function renderFeature(d, loc) {
 ${faq.map((it) => `          <details><summary>${e(it.q)}</summary><p>${e(it.a)}</p></details>`).join('\n')}
         </div>
       </section>` : '',
-    // English only: the blog is English-only (featureBlogBlock says why).
-    blog: loc === 'en' ? featureBlogBlock(d.slug) : '',
+    // Only posts in this page's language (featureBlogBlock says why).
+    blog: featureBlogBlock(d.slug, loc),
     allHref: `${dirFor(loc)}#features`,
   };
 }
@@ -1493,19 +1573,20 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
   }
   // A blog page carries its own meta (pg.meta) and, for a post, its own hero
   // image; every other page still reads both out of content/<loc>.json exactly
-  // as before.
-  const post = pg.post;
+  // as before. A post's words are the page's language's (postIn).
+  const post = pg.post ? postIn(pg.post, loc) : undefined;
   const isBlog = Boolean(post) || pg.id === 'blogindex';
 
   out.push(`<link rel="canonical" href="${canonical}">`);
 
   if (pg.noindex) out.push('<meta name="robots" content="noindex">');
 
-  // RSS autodiscovery, on the index and every post and NOWHERE else — it is a
-  // feed of the blog, not of the site. This is a <link rel="alternate">
-  // without an hreflang, which is why check-build's section 11 check 4 asks
-  // about alternates carrying hreflang rather than about alternates at all.
-  if (isBlog) {
+  // RSS autodiscovery, on the English index and every English post and
+  // NOWHERE else — the feed is the English blog's, not the site's, and a
+  // translated page is not in it. This is a <link rel="alternate"> without an
+  // hreflang, which is why check-build's section 11 check 4 asks about
+  // alternates carrying hreflang rather than about alternates at all.
+  if (isBlog && loc === DEFAULT_LOCALE) {
     out.push(`<link rel="alternate" type="application/rss+xml" title="Daili blog" href="/blog/feed.xml">`);
   }
 
@@ -1595,7 +1676,8 @@ function renderHead(pg, loc, cssHref, detector, postBody) {
         for (const [, name] of block.matchAll(/<li>\s*<strong>([^<]+)<\/strong>/g)) names.push(name.trim());
       }
       if (names.length === 0) {
-        throw new Error(`BLOG_POSTS '${post.slug}' declares itemList, but blog/${post.body} has no <ol class="doc-checklist"> items to build it from`);
+        const file = loc === DEFAULT_LOCALE ? `blog/${post.body}` : blogTr[post.slug][loc].html;
+        throw new Error(`BLOG_POSTS '${post.slug}' declares itemList, but ${file} has no <ol class="doc-checklist"> items to build it from`);
       }
       ld.push({
         '@context': 'https://schema.org',
@@ -1822,14 +1904,24 @@ function build() {
       if (pg.body) legalBody = read(bodyFile(pg, loc));
 
       let postBody = '';
-      if (pg.post) postBody = read(`blog/${pg.post.body}`);
+      if (pg.post) postBody = postBodyIn(pg.post, loc);
 
       const data = {
         ...c,
         // The index gets the post list and its own literals; every other page
         // gets neither, so a stray {{ posts }} throws rather than rendering
         // nothing.
-        ...(pg.id === 'blogindex' ? { posts: blogList, blog: BLOG_INDEX } : {}),
+        // A translated index ends with the link to the English one.
+        ...(pg.id === 'blogindex' ? {
+          posts: blogListIn(loc),
+          blog: {
+            ...blogUi[loc].index,
+            moreInEnglish: loc === DEFAULT_LOCALE ? ''
+              : `  <p class="post-cta-link"><a href="/blog/" hreflang="en" lang="en">${escapeHtml(blogUi[loc].moreInEnglish)}</a></p>`,
+          },
+        } : {}),
+        // A blog page's fixed words, in its language.
+        ...(pg.post ? { blogUi: blogUiHtml(loc) } : {}),
         ...(pg.id === 'whats-new' ? { whatsNew: WHATS_NEW[loc] } : {}),
         // Only help pages have `help`, pre-rendered for their kind.
         ...(pg.help ? { help: renderHelp(pg.help, loc) } : {}),
@@ -1839,11 +1931,11 @@ function build() {
         // stray {{ post.x }} throws rather than rendering an empty string.
         ...(pg.post ? {
           post: {
-            ...pg.post,
+            ...postIn(pg.post, loc),
             author: BLOG_AUTHOR.name,
-            publishedLabel: formatDate(pg.post.published),
-            featureLink: postFeatureLink(pg.post),
-            keepReading: postKeepReading(pg.post),
+            publishedLabel: formatDate(pg.post.published, loc),
+            featureLink: postFeatureLink(pg.post, loc),
+            keepReading: postKeepReading(pg.post, loc),
           },
         } : {}),
         // A page may carry its own literal meta (blog posts do). Without this
@@ -1884,6 +1976,7 @@ function build() {
             : pg.wall ? `<link rel="stylesheet" href="${wallCssHref}">` : '',
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
+          blogLinkAttrs: blogLinkAttrs(loc),
           footerLinks: renderFooterLinks(loc),
           footerHtml: renderFooter(loc),
           // Every page closes with the footer after <main>.
@@ -1927,6 +2020,8 @@ function build() {
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset ${NS}>\n${urls.join('\n')}\n</urlset>\n`);
 
   // ---- RSS ---------------------------------------------------------------
+  // English only: the English posts, <language>en. A translated post is not
+  // in it, and a translated page does not advertise it (renderHead).
   // Deliberately not a page: it is not in `written`, so it cannot reach the
   // sitemap. Every value goes through escapeHtml — its five entities are all
   // valid XML, and a single unescaped & in a post title produces a feed no
@@ -1945,9 +2040,9 @@ function build() {
     `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>${escapeHtml(BLOG_INDEX.h1)}</title>
+  <title>${escapeHtml(blogUi[DEFAULT_LOCALE].index.h1)}</title>
   <link>${BASE_URL}/blog/</link>
-  <description>${escapeHtml(BLOG_INDEX.description)}</description>
+  <description>${escapeHtml(blogUi[DEFAULT_LOCALE].index.description)}</description>
   <language>en</language>
   <lastBuildDate>${lastBuild}</lastBuildDate>
   <atom:link href="${BASE_URL}/blog/feed.xml" rel="self" type="application/rss+xml"/>
@@ -1970,7 +2065,8 @@ ${feedItems}
 
   console.log(`built ${written.length} pages · ${LOCALES.length} locale(s) · ${urls.length} sitemap entries`);
   console.log(`assets: ${cssName}  ${jsName}`);
-  console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml`);
+  const trCount = Object.values(blogTr).reduce((n, locs) => n + Object.keys(locs).length, 0);
+  console.log(`blog: ${blogList.length} post(s) · /blog/ index · feed.xml (English) · ${trCount} translation(s)${trCount ? ` · indexes ${blogIndexLocales.join(', ')}` : ''} · languages ${BLOG_LOCALES.join(', ')}`);
   console.log(`wall: /wall-display/ · ${wall.devices.length} device guide(s) · ${wallLocales.join(', ')} · ${WALL_GUIDE_PUBLIC ? 'PUBLIC' : 'noindex, hidden'}`);
   console.log(`help: ${helpShown.articles.length} of ${help.articles.length} article(s) on pages (live ${LIVE_APP_VERSION}) · ${helpShown.topics.length} topic(s) · en.json ${helpJson.articles.length} articles, ${helpJson.tips.length} tips, ${helpJson.checklist.length} checklist · ${HELP_PUBLIC ? 'PUBLIC' : 'noindex preview'}`);
   for (const [k, j] of helpJsons.entries()) {

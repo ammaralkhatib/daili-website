@@ -1,0 +1,24 @@
+{
+  "faqHeading": "Ofte stilte spørsmål",
+  "keepReading": "Les videre",
+  "fromTheBlog": "Fra bloggen",
+  "allArticles": "Alle artikler →",
+  "seeHowFeature": "Se {feature} i daili →",
+  "moreInEnglish": "Flere artikler på engelsk →",
+  "newsletter": {
+    "heading": "Én kort e-post i måneden",
+    "text": "Hva som er nytt i daili og et tips til familiens uke. Ingen reklame, ingen sporing. Du får en e-post for å bekrefte.",
+    "label": "E-postadressen din",
+    "placeholder": "deg@eksempel.no",
+    "button": "Meld meg på",
+    "honeypot": "La dette feltet stå tomt",
+    "unsubscribe": "Meld deg av når du vil.",
+    "privacy": "Personvernerklæring"
+  },
+  "index": {
+    "title": "Blogg — Daili",
+    "description": "Praktiske tekster om familiehverdagen: dokumenter, kalendere, lister og hvordan du får alle til å faktisk bruke systemet.",
+    "h1": "Daili-bloggen",
+    "intro": "Praktiske tekster om familiehverdagen — dokumenter, kalendere, lister og hvordan du får alle til å faktisk bruke systemet."
+  }
+}

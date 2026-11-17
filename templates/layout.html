@@ -34,7 +34,7 @@
         <a class="nl" href="{{ page.anchorBase }}#features">{{ home.nav.features }}</a>
         <a class="nl" href="{{ page.anchorBase }}#plus">{{ home.nav.plus }}</a>
         <a class="nl" href="{{ page.anchorBase }}#screens">{{ home.nav.screens }}</a>
-        <a class="nl" href="/blog/" hreflang="en" lang="en">{{ nav.blog }}</a>
+        <a class="nl" {{{ page.blogLinkAttrs }}}>{{ nav.blog }}</a>
         <a class="nl" href="{{ page.webAppUrl }}" rel="noopener">{{ home.nav.login }}</a>
       </nav>
     </div>

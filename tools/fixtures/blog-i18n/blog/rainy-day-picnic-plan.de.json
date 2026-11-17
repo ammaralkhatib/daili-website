@@ -1,0 +1,14 @@
+{
+  "title": "Der Picknick-Plan für Regentage (erfundener Testbeitrag)",
+  "description": "Ein erfundener Beitrag für tools/test-blog-i18n.mjs: wie eine Familie ihr Picknick nach drinnen verlegt, wenn das Wetter umschlägt.",
+  "h1": "Der Picknick-Plan für Regentage",
+  "imageAlt": "Eine Picknickdecke auf dem Wohnzimmerboden",
+  "faq": [
+    { "q": "Was, wenn es am Tag selbst regnet?", "a": "Leg die Decke drinnen aus und behalte die Uhrzeit bei." },
+    { "q": "Wer bringt das Essen mit?", "a": "Wen die gemeinsame Liste nennt." }
+  ],
+  "cta": {
+    "h2": "Was daili damit macht",
+    "html": "<p>Trag das Picknick in den gemeinsamen Kalender ein, damit alle den neuen Plan sehen.</p>\n<p class=\"post-cta-link\"><a href=\"/de/\">Sieh dir an, was daili alles kann →</a></p>"
+  }
+}

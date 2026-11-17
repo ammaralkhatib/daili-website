@@ -6,8 +6,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_INDEX, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WATCH_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES, WALL_GUIDE_PUBLIC } from '../site.config.mjs';
+import { BASE_URL, LOCALES, DEFAULT_LOCALE, PAGES, RTL, dirFor, stores, MEMBERS_COUNT, REVIEWS, RATING, HERO_SCENES, HOME_FEATURES, FLOW_STEPS, BLOG_POSTS, BLOG_LOCALES, SHOT_LOCALE, SHOT_SOURCES, HELP_SHOT_SOURCES, WATCH_SHOT_SOURCES, WEB_APP_URL, HELP_PUBLIC, LIVE_APP_VERSION, HELP_TOPICS, HELP_ICONS, HELP_LOCALES, WALL_GUIDE_PUBLIC } from '../site.config.mjs';
 import { loadAllHelp, visibleHelp, CHAR_LOCALES } from './help-lib.mjs';
+import { loadBlogUi, loadBlogTranslations, judgeTranslations, englishLeftovers } from './blog-i18n.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -67,6 +68,27 @@ function xmlProblems(src) {
 
 const read = (f) => fs.readFileSync(f, 'utf8');
 
+// The blog's languages (2026-11-17/001), read with the same module build.mjs
+// uses: which posts exist in which language, and the fixed words of each.
+// build.mjs has already thrown on any error here; this repeats it for a
+// check-build run on its own.
+const blogUiLoaded = loadBlogUi({ root: ROOT, blogLocales: BLOG_LOCALES });
+const blogTrLoaded = loadBlogTranslations({ root: ROOT, posts: BLOG_POSTS, blogLocales: BLOG_LOCALES });
+for (const e of [...blogUiLoaded.errors, ...blogTrLoaded.errors]) fail('blog/', e);
+for (const l of BLOG_LOCALES) if (!LOCALES.includes(l)) fail('site.config.mjs', `BLOG_LOCALES has '${l}', which is not in LOCALES`);
+const BLOG_UI = blogUiLoaded.ui;
+const BLOG_TR = blogTrLoaded.byPost;
+/** The languages a post exists in, English first. */
+const postLocs = (post) => BLOG_LOCALES.filter((l) => l === DEFAULT_LOCALE || Boolean(BLOG_TR[post.slug]?.[l]));
+/** A post's words in a language it exists in. */
+const postWords = (post, loc) => (loc === DEFAULT_LOCALE ? post : { ...post, ...BLOG_TR[post.slug][loc].meta });
+/** 'blog/' for English, 'de/blog/', … (a dist/ path). */
+const blogDir = (loc) => `${dirFor(loc).slice(1)}blog/`;
+const postOut = (slug, loc) => `${blogDir(loc)}${slug}/index.html`;
+const postAbs = (slug, loc) => `${BASE_URL}/${blogDir(loc)}${slug}/`;
+/** The languages with their own blog index: at least one post exists in them. */
+const BLOG_INDEX_LOCS = BLOG_LOCALES.filter((l) => BLOG_POSTS.some((p) => postLocs(p).includes(l)));
+
 // --- 1. manifest completeness ----------------------------------------------
 const expected = new Set();
 for (const pg of PAGES) {
@@ -74,9 +96,10 @@ for (const pg of PAGES) {
   for (const loc of locs) expected.add(pg.out(loc));
 }
 // Blog pages are expanded out of BLOG_POSTS by build.mjs rather than listed in
-// PAGES, so the expected set has to be expanded the same way here.
-expected.add('blog/index.html');
-for (const post of BLOG_POSTS) expected.add(`blog/${post.slug}/index.html`);
+// PAGES, so the expected set has to be expanded the same way here: every post
+// in every language it exists in, and an index for every language with a post.
+for (const loc of BLOG_INDEX_LOCS) expected.add(`${blogDir(loc)}index.html`);
+for (const post of BLOG_POSTS) for (const loc of postLocs(post)) expected.add(postOut(post.slug, loc));
 // The help pages, from the same parser and the same since-filter build.mjs
 // uses, once per HELP_LOCALES locale under dirFor(loc) + 'help/'.
 const helpShown = visibleHelp(loadAllHelp({ root: ROOT, topics: HELP_TOPICS, icons: HELP_ICONS, helpLocales: HELP_LOCALES, locales: LOCALES }).en, LIVE_APP_VERSION);
@@ -261,24 +284,31 @@ for (const f of htmlFiles) {
 }
 
 // --- 11. blog ---------------------------------------------------------------
-// The blog is English-only and deliberately outside every hreflang cluster.
-// Check 4 below is what keeps it there: if a refactor ever gives blog pages a
-// `cluster`, they emit alternates pointing at 23 landing pages that never point
-// back, and Search Console starts reporting "no return tag" across the site.
-// None of that is visible in a browser, so it has to be visible here.
+// A post that exists in English only is outside every hreflang cluster, and
+// check 4 below is what keeps it there: if a refactor ever gave it a
+// `cluster`, it would emit alternates pointing at pages that never point back,
+// and Search Console starts reporting "no return tag" across the site. A post
+// with a translation (BLOG_LOCALES, blog/<slug>.<loc>.*) forms its own cluster
+// of EXACTLY the languages it exists in, x-default the English page, never a
+// landing page or another post. None of that is visible in a browser, so it
+// has to be visible here. Every check runs on every language of every post.
 {
   const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-  const landingDesc = (() => {
-    const f = path.join(DIST, 'index.html');
-    if (!fs.existsSync(f)) return null;
-    const m = read(f).match(/<meta name="description" content="([^"]*)">/);
-    return m ? m[1] : null;
-  })();
+  const landingDescs = new Map(); // loc -> the landing page's description
+  const landingDesc = (loc) => {
+    if (!landingDescs.has(loc)) {
+      const f = path.join(DIST, dirFor(loc).slice(1), 'index.html');
+      const m = fs.existsSync(f) ? read(f).match(/<meta name="description" content="([^"]*)">/) : null;
+      landingDescs.set(loc, m ? m[1] : null);
+    }
+    return landingDescs.get(loc);
+  };
 
   const sitemapPath = path.join(DIST, 'sitemap.xml');
   const sitemap = fs.existsSync(sitemapPath) ? read(sitemapPath) : '';
+  const altSet = (s, re) => [...s.matchAll(re)].map((m) => `${m[1]} ${m[2]}`).sort().join('\n');
 
   // 8. no two posts share a slug — two posts writing to one URL means the
   // second silently overwrites the first, and neither the build nor section 1
@@ -292,11 +322,14 @@ for (const f of htmlFiles) {
     }
   }
 
-  for (const post of BLOG_POSTS) {
-    const out = `blog/${post.slug}/index.html`;
+  for (const post of BLOG_POSTS) for (const loc of postLocs(post)) {
+    const out = postOut(post.slug, loc);
     const file = path.join(DIST, out);
     if (!fs.existsSync(file)) continue; // section 1 already reported it
     const html = read(file);
+    const w = postWords(post, loc);
+    const tag = loc === DEFAULT_LOCALE ? post.slug : `${post.slug} (${loc})`;
+    const langs = postLocs(post);
     // The visible page, with the JSON-LD removed. Every "is it on the page"
     // check below runs against this: searching the whole file would be
     // satisfied by the machine-readable copy of the very same string.
@@ -304,74 +337,102 @@ for (const f of htmlFiles) {
 
     // 1. exactly one <h1>
     const h1s = (html.match(/<h1[\s>]/g) || []).length;
-    if (h1s !== 1) fail(out, `${post.slug}: has ${h1s} <h1> elements, expected exactly 1`);
+    if (h1s !== 1) fail(out, `${tag}: has ${h1s} <h1> elements, expected exactly 1`);
 
-    // 2. canonical is the post's own URL
-    const wantCanonical = `${BASE_URL}/blog/${post.slug}/`;
+    // 2. canonical is the post's own URL in this language
+    const wantCanonical = postAbs(post.slug, loc);
     const canonical = (html.match(/<link rel="canonical" href="([^"]+)">/) || [])[1];
     if (canonical !== wantCanonical) {
-      fail(out, `${post.slug}: canonical is ${canonical || '(none)'}, expected ${wantCanonical}`);
+      fail(out, `${tag}: canonical is ${canonical || '(none)'}, expected ${wantCanonical}`);
     }
 
     // 3. its own description, not the landing page's. A meta override that
     // silently stops applying leaves a valid-looking page describing the app.
     const desc = (html.match(/<meta name="description" content="([^"]*)">/) || [])[1];
-    if (!desc) fail(out, `${post.slug}: has no <meta name="description">`);
-    else if (desc === landingDesc) {
-      fail(out, `${post.slug}: description is the landing page's — the per-page meta override is not applying`);
-    } else if (desc !== esc(post.description)) {
-      fail(out, `${post.slug}: description does not match the post's own description in BLOG_POSTS`);
+    if (!desc) fail(out, `${tag}: has no <meta name="description">`);
+    else if (desc === landingDesc(loc)) {
+      fail(out, `${tag}: description is the landing page's — the per-page meta override is not applying`);
+    } else if (desc !== esc(w.description)) {
+      fail(out, `${tag}: description does not match the post's own description in ${loc === DEFAULT_LOCALE ? 'BLOG_POSTS' : BLOG_TR[post.slug][loc].json}`);
     }
 
-    // 4. no hreflang declarations, at all. See the note at the top of this
-    // section. Scoped to the <head>, because that is where an hreflang set is
-    // declared and where the damage is done. The hreflang= attributes lower
+    // 4. hreflang. Scoped to the <head>, because that is where an hreflang set
+    // is declared and where the damage is done. The hreflang= attributes lower
     // down are on <a> tags — the language picker's, and the nav and footer
     // links to /blog/ — an advisory hint about the language of a linked page,
     // which forms no cluster and asks for no return tag.
     //
-    // The second assertion is about alternates that carry an hreflang, not
-    // alternates as such: RSS autodiscovery is a <link rel="alternate"> too,
-    // and it belongs on this page. Narrowing it that way keeps the guard on
-    // the only kind of alternate that can join an hreflang cluster.
+    // English only: none at all. The second assertion is about alternates that
+    // carry an hreflang, not alternates as such: RSS autodiscovery is a
+    // <link rel="alternate"> too, and it belongs on an English page.
+    // Translated: exactly this post's languages + x-default (English), and
+    // every alternate a built page that points back at this one.
     const head = html.slice(0, html.indexOf('</head>'));
-    const hreflangs = (head.match(/hreflang=/g) || []).length;
-    if (hreflangs !== 0) {
-      fail(out, `${post.slug}: <head> carries ${hreflangs} hreflang= declaration(s) — the blog is English-only and must claim no alternates`);
-    }
-    const alternates = (html.match(/<link rel="alternate"[^>]*hreflang=/g) || []).length;
-    if (alternates !== 0) {
-      fail(out, `${post.slug}: carries ${alternates} <link rel="alternate" … hreflang=> — a blog page must never join an hreflang cluster`);
+    if (langs.length === 1) {
+      const hreflangs = (head.match(/hreflang=/g) || []).length;
+      if (hreflangs !== 0) {
+        fail(out, `${tag}: <head> carries ${hreflangs} hreflang= declaration(s) — a post in English only must claim no alternates`);
+      }
+      const alternates = (html.match(/<link rel="alternate"[^>]*hreflang=/g) || []).length;
+      if (alternates !== 0) {
+        fail(out, `${tag}: carries ${alternates} <link rel="alternate" … hreflang=> — a post in English only must never join an hreflang cluster`);
+      }
+    } else {
+      const want = [...langs.map((l) => `${l} ${postAbs(post.slug, l)}`), `x-default ${postAbs(post.slug, DEFAULT_LOCALE)}`].sort().join('\n');
+      const got = altSet(head, /<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g);
+      if (got !== want) fail(out, `${tag}: hreflang set is not exactly its languages (${langs.join(', ')}) + x-default:\n      got ${got.replace(/\n/g, ' | ') || '(none)'}`);
+      for (const l of langs) {
+        if (l === loc) continue;
+        const of = path.join(DIST, postOut(post.slug, l));
+        if (!fs.existsSync(of)) { fail(out, `${tag}: its ${l} alternate ${postAbs(post.slug, l)} is not a built page`); continue; }
+        if (!read(of).split('</head>')[0].includes(`<link rel="alternate" hreflang="${loc}" href="${wantCanonical}">`)) fail(out, `${tag}: ${postAbs(post.slug, l)} does not point back with hreflang="${loc}"`);
+      }
     }
 
-    // 5. article-shaped Open Graph, with the post's own hero image
+    // 5. article-shaped Open Graph, with the post's own hero image, in the
+    // page's language
     const ogType = (html.match(/<meta property="og:type" content="([^"]*)">/) || [])[1];
-    if (ogType !== 'article') fail(out, `${post.slug}: og:type is '${ogType || '(none)'}', expected 'article'`);
+    if (ogType !== 'article') fail(out, `${tag}: og:type is '${ogType || '(none)'}', expected 'article'`);
     const ogImage = (html.match(/<meta property="og:image" content="([^"]*)">/) || [])[1];
     const wantOgImage = BASE_URL + post.image;
     if (ogImage !== wantOgImage) {
-      fail(out, `${post.slug}: og:image is ${ogImage || '(none)'}, expected the post's hero ${wantOgImage}`);
+      fail(out, `${tag}: og:image is ${ogImage || '(none)'}, expected the post's hero ${wantOgImage}`);
     }
+    const ogLocale = (html.match(/<meta property="og:locale" content="([^"]*)">/) || [])[1];
+    if (ogLocale !== loc.replace('-', '_')) fail(out, `${tag}: og:locale is ${ogLocale || '(none)'}, expected ${loc.replace('-', '_')}`);
+    const ogAlt = (html.match(/<meta property="og:image:alt" content="([^"]*)">/) || [])[1];
+    if (ogAlt !== esc(w.imageAlt)) fail(out, `${tag}: og:image:alt is not the post's imageAlt in this language`);
 
     // 6. every FAQ question is BOTH visible on the page and in the FAQPage
     // JSON-LD — parsed, not substring-matched, so a page carrying only the
-    // visible copy cannot pass.
+    // visible copy cannot pass. A translation's questions are its json's.
     const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
-    let faqLd = null;
+    let faqLd = null, articleLd = null;
     for (const [, raw] of blocks) {
       let obj;
-      try { obj = JSON.parse(raw); } catch { fail(out, `${post.slug}: a JSON-LD block does not parse`); continue; }
+      try { obj = JSON.parse(raw); } catch { fail(out, `${tag}: a JSON-LD block does not parse`); continue; }
       if (obj['@type'] === 'FAQPage') faqLd = obj;
+      if (obj['@type'] === 'Article') articleLd = obj;
     }
-    if (!faqLd) fail(out, `${post.slug}: has no FAQPage JSON-LD block`);
-    const ldQuestions = new Set((faqLd?.mainEntity || []).map((q) => q.name));
-    for (const item of post.faq) {
+    if (!faqLd) fail(out, `${tag}: has no FAQPage JSON-LD block`);
+    const ldQuestions = (faqLd?.mainEntity || []).map((q) => q.name);
+    for (const item of w.faq) {
       if (!visible.includes(esc(item.q))) {
-        fail(out, `${post.slug}: FAQ question "${item.q}" is in BLOG_POSTS but not in the visible page`);
+        fail(out, `${tag}: FAQ question "${item.q}" is in the post's words but not in the visible page`);
       }
-      if (faqLd && !ldQuestions.has(item.q)) {
-        fail(out, `${post.slug}: FAQ question "${item.q}" is visible on the page but missing from the FAQPage JSON-LD — Google requires the two to match`);
+      if (faqLd && !ldQuestions.includes(item.q)) {
+        fail(out, `${tag}: FAQ question "${item.q}" is visible on the page but missing from the FAQPage JSON-LD — Google requires the two to match`);
       }
+    }
+    if (faqLd && ldQuestions.length !== w.faq.length) fail(out, `${tag}: the FAQPage JSON-LD has ${ldQuestions.length} question(s), the page ${w.faq.length}`);
+
+    // 6b. the Article is this page, in this language: its own URL, its own
+    // heading and language (section 21 checks that every block parses).
+    if (!articleLd) fail(out, `${tag}: has no Article JSON-LD block`);
+    else {
+      if (articleLd.mainEntityOfPage?.['@id'] !== wantCanonical) fail(out, `${tag}: the Article's mainEntityOfPage is ${articleLd.mainEntityOfPage?.['@id'] || '(none)'}, not the page's own URL ${wantCanonical}`);
+      if (articleLd.inLanguage !== loc) fail(out, `${tag}: the Article's inLanguage is ${articleLd.inLanguage}, expected ${loc}`);
+      if (articleLd.headline !== w.h1) fail(out, `${tag}: the Article's headline is not the page's h1`);
     }
 
     // 10. a post that declares `itemList` carries an ItemList block, and every
@@ -380,7 +441,7 @@ for (const f of htmlFiles) {
     // checking that the derivation still finds the list. Rename the class on
     // the <ol>, or drop the <strong>, and the markup would quietly describe a
     // shorter list than the page shows; that is the failure this catches.
-    if (post.itemList) {
+    if (w.itemList) {
       let itemLd = null;
       for (const [, raw] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
         let obj;
@@ -388,18 +449,18 @@ for (const f of htmlFiles) {
         if (obj['@type'] === 'ItemList') itemLd = obj;
       }
       if (!itemLd) {
-        fail(out, `${post.slug}: declares itemList in BLOG_POSTS but the page has no ItemList JSON-LD block`);
+        fail(out, `${tag}: declares itemList but the page has no ItemList JSON-LD block`);
       } else {
         const els = itemLd.itemListElement || [];
         if (els.length !== itemLd.numberOfItems) {
-          fail(out, `${post.slug}: ItemList says numberOfItems ${itemLd.numberOfItems} but carries ${els.length} items`);
+          fail(out, `${tag}: ItemList says numberOfItems ${itemLd.numberOfItems} but carries ${els.length} items`);
         }
         els.forEach((el, i) => {
           if (el.position !== i + 1) {
-            fail(out, `${post.slug}: ItemList item ${i + 1} has position ${el.position} — the positions must run 1..n in order`);
+            fail(out, `${tag}: ItemList item ${i + 1} has position ${el.position} — the positions must run 1..n in order`);
           }
           if (!visible.includes(esc(el.name))) {
-            fail(out, `${post.slug}: ItemList names "${el.name}", which is not on the visible page`);
+            fail(out, `${tag}: ItemList names "${el.name}", which is not on the visible page`);
           }
         });
       }
@@ -408,48 +469,81 @@ for (const f of htmlFiles) {
     // 7. the hero image is a real file, and the page actually points at it
     const src = path.join(ROOT, 'static', post.image.replace(/^\//, ''));
     if (!fs.existsSync(src)) {
-      fail(out, `${post.slug}: hero image ${post.image} does not exist in static/ — a post whose hero 404s must not ship`);
+      fail(out, `${tag}: hero image ${post.image} does not exist in static/ — a post whose hero 404s must not ship`);
     }
     if (!html.includes(`src="${post.image}"`) && !html.includes(`src="${post.image}?v=`)) {
-      fail(out, `${post.slug}: page does not reference its hero image ${post.image}`);
+      fail(out, `${tag}: page does not reference its hero image ${post.image}`);
     }
 
-    // 9. in the sitemap, with no alternates — the mirror of check 4
+    // 9. in the sitemap — the mirror of check 4: no alternates for a post in
+    // English only, exactly its languages + x-default for a translated one
     const at = sitemap.indexOf(`<loc>${wantCanonical}</loc>`);
     const entry = at < 0 ? null
       : sitemap.slice(sitemap.lastIndexOf('<url>', at), sitemap.indexOf('</url>', at));
-    if (!entry) fail('sitemap.xml', `${post.slug}: ${wantCanonical} is missing from the sitemap`);
-    else if (entry.includes('xhtml:link')) {
-      fail('sitemap.xml', `${post.slug}: sitemap entry carries xhtml:link alternates — the blog has no translations`);
+    if (!entry) fail('sitemap.xml', `${tag}: ${wantCanonical} is missing from the sitemap`);
+    else if (langs.length === 1 && entry.includes('xhtml:link')) {
+      fail('sitemap.xml', `${tag}: sitemap entry carries xhtml:link alternates — the post has no translation`);
+    } else if (langs.length > 1) {
+      const want = [...langs.map((l) => `${l} ${postAbs(post.slug, l)}`), `x-default ${postAbs(post.slug, DEFAULT_LOCALE)}`].sort().join('\n');
+      if (altSet(entry, /<xhtml:link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\/>/g) !== want) fail('sitemap.xml', `${tag}: its alternates are not exactly its languages + x-default`);
     }
   }
 }
 
 // --- 11b. blog front door: index, nav link, feed --------------------------
 {
-  const INDEX_OUT = 'blog/index.html';
-  const indexFile = path.join(DIST, INDEX_OUT);
-  const indexHtml = fs.existsSync(indexFile) ? read(indexFile) : null;
   const feedRel = 'blog/feed.xml';
   const feedFile = path.join(DIST, feedRel);
   const feed = fs.existsSync(feedFile) ? read(feedFile) : null;
   const sitemapPath = path.join(DIST, 'sitemap.xml');
   const sitemap = fs.existsSync(sitemapPath) ? read(sitemapPath) : '';
+  const indexAbs = (loc) => `${BASE_URL}/${blogDir(loc)}`;
 
-  // 10. the index links to every post there is. A post that builds but is
-  // listed nowhere is a post nobody will read.
-  if (!indexHtml) fail(INDEX_OUT, 'MISSING — the blog index did not build');
-  else {
-    for (const post of BLOG_POSTS) {
-      if (!indexHtml.includes(`href="/blog/${post.slug}/"`)) {
-        fail(INDEX_OUT, `does not link to /blog/${post.slug}/ — every post in BLOG_POSTS must be listed on the index`);
+  // 10. the index of each language lists exactly the posts of that language.
+  // A post that builds but is listed nowhere is a post nobody will read; a
+  // post listed in a language it does not exist in is a link to a 404 or to
+  // the wrong language. A translated index ends with the link to the English
+  // one. While only English exists, /blog/ claims no alternates; with more
+  // indexes they form one cluster, x-default /blog/.
+  for (const loc of BLOG_INDEX_LOCS) {
+    const out = `${blogDir(loc)}index.html`;
+    const file = path.join(DIST, out);
+    if (!fs.existsSync(file)) { fail(out, 'MISSING — the blog index did not build'); continue; }
+    const html = read(file);
+    const posts = BLOG_POSTS.filter((p) => postLocs(p).includes(loc));
+    for (const post of posts) {
+      if (!html.includes(`href="/${blogDir(loc)}${post.slug}/"`)) {
+        fail(out, `does not link to /${blogDir(loc)}${post.slug}/ — every post of this language must be listed on its index`);
       }
+    }
+    const items = (html.match(/<li class="postlist-item">/g) || []).length;
+    if (items !== posts.length) fail(out, `lists ${items} post(s), but ${posts.length} exist in ${loc}`);
+    const main = (html.match(/<main[\s\S]*<\/main>/) || [''])[0];
+    for (const [, href] of main.matchAll(/href="(\/(?:[a-z-]+\/)?blog\/[^"]*)"/g)) {
+      if (href !== '/blog/' && !href.startsWith(`/${blogDir(loc)}`)) fail(out, `links to ${href}, a post in another language`);
+    }
+    const english = main.includes('<a href="/blog/" hreflang="en" lang="en">');
+    if (loc !== DEFAULT_LOCALE && !english) fail(out, 'has no link to the English blog (<a href="/blog/" hreflang="en" lang="en">)');
+    if (loc === DEFAULT_LOCALE && main.includes('href="/blog/"')) fail(out, 'the English index links to itself');
+    const head = html.split('</head>')[0];
+    if (BLOG_INDEX_LOCS.length === 1) {
+      if (/hreflang=/.test(head)) fail(out, 'carries hreflang= in <head> — with no translated index it must claim no alternates');
+    } else {
+      const want = [...BLOG_INDEX_LOCS.map((l) => `${l} ${indexAbs(l)}`), `x-default ${indexAbs(DEFAULT_LOCALE)}`].sort().join('\n');
+      const got = [...head.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map((m) => `${m[1]} ${m[2]}`).sort().join('\n');
+      if (got !== want) fail(out, `hreflang set is not exactly the blog indexes (${BLOG_INDEX_LOCS.join(', ')}) + x-default`);
+    }
+    // 13 (part). every index is a page and belongs in the sitemap
+    if (!sitemap.includes(`<loc>${indexAbs(loc)}</loc>`)) {
+      fail('sitemap.xml', `does not list ${indexAbs(loc)} — the index is a page and belongs in the sitemap`);
     }
   }
 
-  // 11. every landing page carries the Blog link in its nav, exactly once, and
-  // says the target is English. 23 locales, so a template edit that only works
-  // in English gets caught here rather than by a reader in Arabic.
+  // 11. every landing page carries the Blog link in its nav and its footer,
+  // exactly once each. A language with its own blog index links there, with
+  // no hreflang="en"; every other one (and English) links to /blog/ and says
+  // the target is English. 28 locales, so a template edit that only works in
+  // English gets caught here rather than by a reader in Arabic.
   {
     const landing = PAGES.find((pg) => pg.id === 'landing');
     const locs = landing.locales === 'all' ? LOCALES : landing.locales.filter((l) => LOCALES.includes(l));
@@ -458,18 +552,26 @@ for (const f of htmlFiles) {
       const file = path.join(DIST, out);
       if (!fs.existsSync(file)) continue; // section 1 already reported it
       const html = read(file);
-      const nav = (html.match(/<nav class="links">[\s\S]*?<\/nav>/) || [])[0];
-      if (!nav) { fail(out, 'has no <nav class="links"> — cannot check the Blog link'); continue; }
-      const links = [...nav.matchAll(/<a\b[^>]*href="\/blog\/"[^>]*>/g)].map((m) => m[0]);
-      if (links.length !== 1) {
-        fail(out, `nav has ${links.length} links to /blog/, expected exactly 1`);
-      } else if (!/hreflang="en"/.test(links[0])) {
-        fail(out, 'nav Blog link has no hreflang="en" — the blog is English whatever locale links to it');
+      const own = loc !== DEFAULT_LOCALE && BLOG_INDEX_LOCS.includes(loc);
+      const target = own ? `/${blogDir(loc)}` : '/blog/';
+      const parts = {
+        nav: (html.match(/<nav class="links">[\s\S]*?<\/nav>/) || [])[0],
+        footer: (html.match(/<div class="flinks">[\s\S]*?<\/div>/) || [])[0],
+      };
+      for (const [where, part] of Object.entries(parts)) {
+        if (!part) { fail(out, `has no ${where === 'nav' ? '<nav class="links">' : '<div class="flinks">'} — cannot check the Blog link`); continue; }
+        const links = [...part.matchAll(/<a\b[^>]*href="(\/(?:[a-z-]+\/)?blog\/)"[^>]*>/g)];
+        if (links.length !== 1) { fail(out, `${where} has ${links.length} links into the blog, expected exactly 1`); continue; }
+        const [tagHtml, href] = links[0];
+        if (href !== target) fail(out, `${where} Blog link goes to ${href}, expected ${target}`);
+        else if (own && /hreflang=/.test(tagHtml)) fail(out, `${where} Blog link to this language's own blog carries hreflang — it is not English`);
+        else if (!own && !/hreflang="en" lang="en"/.test(tagHtml)) fail(out, `${where} Blog link has no hreflang="en" lang="en" — this language has no blog of its own, so the target is English`);
       }
     }
   }
 
-  // 12. the feed is well-formed, complete, and shaped the way a reader expects
+  // 12. the feed is well-formed, complete, English, and shaped the way a
+  // reader expects
   if (!feed) fail(feedRel, 'MISSING from dist/');
   else {
     for (const p of xmlProblems(feed)) fail(feedRel, `is not well-formed XML: ${p}`);
@@ -477,6 +579,11 @@ for (const f of htmlFiles) {
     const items = [...feed.matchAll(/<item>[\s\S]*?<\/item>/g)].map((m) => m[0]);
     if (items.length !== BLOG_POSTS.length) {
       fail(feedRel, `has ${items.length} <item> element(s), expected ${BLOG_POSTS.length} — one per post in BLOG_POSTS`);
+    }
+    if (!feed.includes('<language>en</language>')) fail(feedRel, 'has no <language>en</language> — the feed is the English blog');
+    for (const item of items) {
+      const link = (item.match(/<link>([^<]*)<\/link>/) || [])[1] || '';
+      if (!link.startsWith(`${BASE_URL}/blog/`)) fail(feedRel, `item <link>${link}</link> is not an English post — the feed stays English`);
     }
     // RFC 822, not ISO 8601. A feed dated "2026-09-02" sorts to the bottom of
     // every reader that manages to parse it at all.
@@ -497,19 +604,66 @@ for (const f of htmlFiles) {
   if (sitemap.includes('feed.xml')) {
     fail('sitemap.xml', 'lists blog/feed.xml — a feed is not a page and must not be submitted as one');
   }
-  if (!sitemap.includes(`<loc>${BASE_URL}/blog/</loc>`)) {
-    fail('sitemap.xml', `does not list ${BASE_URL}/blog/ — the index is a page and belongs in the sitemap`);
-  }
 
-  // 14. autodiscovery on the blog and nowhere else. On the wrong page it tells
-  // a reader that /support.html has a feed, which it does not.
+  // 14. autodiscovery on the English blog and nowhere else. On the wrong page
+  // it tells a reader that /support.html — or a German post — has a feed,
+  // which it does not.
   {
-    const wantsFeed = new Set([INDEX_OUT, ...BLOG_POSTS.map((p) => `blog/${p.slug}/index.html`)]);
+    const wantsFeed = new Set(['blog/index.html', ...BLOG_POSTS.map((p) => postOut(p.slug, DEFAULT_LOCALE))]);
     for (const f of htmlFiles) {
       const r = rel(f);
       const has = /<link rel="alternate" type="application\/rss\+xml"/.test(read(f));
-      if (wantsFeed.has(r) && !has) fail(r, 'has no RSS autodiscovery link — every blog page must advertise the feed');
-      if (!wantsFeed.has(r) && has) fail(r, 'has an RSS autodiscovery link but is not a blog page — it advertises a feed that does not cover it');
+      if (wantsFeed.has(r) && !has) fail(r, 'has no RSS autodiscovery link — every English blog page must advertise the feed');
+      if (!wantsFeed.has(r) && has) fail(r, 'has an RSS autodiscovery link but is not an English blog page — it advertises a feed that does not cover it');
+    }
+  }
+}
+
+// --- 11c. blog translations (2026-11-17/001) --------------------------------
+// The rules that judge a translation's two files, from tools/blog-i18n.mjs
+// (tools/test-blog-i18n.mjs proves each one can fail): (a) the same shape as
+// the English — the same number of h2, h3, p, li, table, tr, img, blockquote
+// and a, the same external links, every internal link to the same page as in
+// English, in this language where that page exists here (read from the
+// target's own hreflang alternates in dist/); (b) not a copy of the English;
+// (d) no forbidden word (the words for "family planning") in a translation,
+// the fixed words, or an English post. Then (c) on every built translated
+// blog page — the posts and the indexes: none of the English fixed words of
+// blog/ui/en.json is left on it.
+{
+  const altsCache = new Map();
+  /** A built page's hreflang alternates as lang → root-relative path. */
+  const altsOf = (urlPath) => {
+    if (!altsCache.has(urlPath)) {
+      const file = path.join(DIST, urlPath.endsWith('/') ? `${urlPath}index.html` : urlPath);
+      const alts = new Map();
+      if (fs.existsSync(file)) {
+        for (const [, l, href] of read(file).split('</head>')[0].matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)) {
+          if (href.startsWith(BASE_URL)) alts.set(l, href.slice(BASE_URL.length));
+        }
+      }
+      altsCache.set(urlPath, alts);
+    }
+    return altsCache.get(urlPath);
+  };
+  const localizeFor = (loc) => (href) => {
+    const [, p, rest] = href.match(/^([^#?]*)(.*)$/);
+    const there = altsOf(p).get(loc);
+    return there ? there + rest : href;
+  };
+  const enBodyOf = (post) => read(path.join(ROOT, 'blog', post.body));
+  for (const msg of judgeTranslations({ root: ROOT, posts: BLOG_POSTS, byPost: BLOG_TR, ui: BLOG_UI, enBodyOf, localizeFor })) {
+    fail(msg.split(':')[0], msg.slice(msg.indexOf(':') + 1).trim());
+  }
+  if (BLOG_UI.en) {
+    const pages = [
+      ...BLOG_INDEX_LOCS.filter((l) => l !== DEFAULT_LOCALE).map((l) => ({ out: `${blogDir(l)}index.html`, loc: l })),
+      ...BLOG_POSTS.flatMap((p) => postLocs(p).filter((l) => l !== DEFAULT_LOCALE).map((l) => ({ out: postOut(p.slug, l), loc: l }))),
+    ];
+    for (const { out, loc } of pages) {
+      const file = path.join(DIST, out);
+      if (!fs.existsSync(file) || !BLOG_UI[loc]) continue; // section 1 / the loader already reported it
+      for (const hit of englishLeftovers({ html: read(file), loc, ui: BLOG_UI })) fail(out, `English left on a ${loc} blog page: ${hit}`);
     }
   }
 }
@@ -1170,44 +1324,47 @@ for (const loc of LOCALES) {
   }
 }
 
-// --- 19. blog ↔ feature pages (2026-10-20/002) -----------------------------
-// Each post's `features` drives three link blocks. The English feature page of
-// a tagged feature lists its posts, and every link there reaches a built post;
-// no other locale's feature page links into the English-only blog; every post
-// links to its primary feature's page; no post links to itself.
+// --- 19. blog ↔ feature pages (2026-10-20/002, languages 2026-11-17/001) ---
+// Each post's `features` drives three link blocks. A feature page of language
+// L lists the posts tagged with its feature that exist in L ("From the blog",
+// "All articles →" to L's own index), and nothing when there is none; it never
+// links to a post in another language. Every post, in every language it
+// exists in, links to its primary feature's page in that language; no post
+// links to itself.
 {
-  const enFeature = (slug) => featureOut(slug, DEFAULT_LOCALE);
   for (const f of FEATURE_PAGES) {
-    const tagged = BLOG_POSTS.some((p) => (p.features || []).includes(f.slug));
     for (const loc of LOCALES) {
       const out = featureOut(f.slug, loc);
       const file = path.join(DIST, out);
       if (!fs.existsSync(file)) continue;        // section 1 already reported it
-      // The sheet only: the header and footer's Blog link is on every page,
-      // marked hreflang="en" lang="en" (section 11b).
+      // The sheet only: the header and footer's Blog link is on every page
+      // (section 11b).
       const sheet = (read(file).match(/<article class="fsheet"[\s\S]*?<\/article>/) || [''])[0];
-      if (loc !== DEFAULT_LOCALE) {
-        if (sheet.includes('href="/blog/')) fail(out, 'links to /blog/ — the blog is English-only, a translated feature page must not send readers there');
-        continue;
+      const own = `/${blogDir(loc)}`;
+      const tagged = BLOG_POSTS.filter((p) => (p.features || []).includes(f.slug) && postLocs(p).includes(loc));
+      for (const [, href] of sheet.matchAll(/href="(\/(?:[a-z-]+\/)?blog\/[^"]*)"/g)) {
+        if (!href.startsWith(own)) fail(out, `links to ${href} — a feature page links only to blog pages in its own language (${own})`);
       }
       const block = (sheet.match(/<section class="fs-blog"[\s\S]*?<\/section>/) || [])[0];
-      if (tagged && !block) fail(enFeature(f.slug), 'has posts tagged with this feature but no "From the blog" block');
-      if (!tagged && block) fail(enFeature(f.slug), 'has a "From the blog" block but no post is tagged with this feature');
-      for (const [, href] of (block || '').matchAll(/href="([^"]+)"/g)) {
+      if (tagged.length && !block) fail(out, `has posts in ${loc} tagged with this feature but no "From the blog" block`);
+      if (!tagged.length && block) fail(out, `has a "From the blog" block but no post in ${loc} is tagged with this feature`);
+      if (!block) continue;
+      for (const [, href] of block.matchAll(/href="([^"]+)"/g)) {
         if (!fs.existsSync(path.join(DIST, href, 'index.html'))) fail(out, `"From the blog" links to ${href}, which is not a built page`);
       }
+      if (!block.includes(`<a class="fs-blog-all" href="${own}">`)) fail(out, `"From the blog" has no "All articles" link to ${own}`);
     }
   }
-  for (const post of BLOG_POSTS) {
-    const out = `blog/${post.slug}/index.html`;
+  for (const post of BLOG_POSTS) for (const loc of postLocs(post)) {
+    const out = postOut(post.slug, loc);
     const file = path.join(DIST, out);
     if (!fs.existsSync(file)) continue;          // section 1 already reported it
     const html = read(file);
-    const primary = `href="/features/${(post.features || [])[0]}/"`;
-    if (!html.includes(primary)) fail(out, `does not link to its primary feature page (${primary})`);
+    const primary = `href="${dirFor(loc)}features/${(post.features || [])[0]}/"`;
+    if (!html.includes(primary)) fail(out, `does not link to its primary feature page in its language (${primary})`);
     // The article only: the language picker's current entry is a self-link by design.
     const article = (html.match(/<article class="post"[\s\S]*<\/article>/) || [''])[0];
-    if (article.includes(`href="/blog/${post.slug}/"`)) fail(out, 'links to itself');
+    if (article.includes(`href="/${blogDir(loc)}${post.slug}/"`)) fail(out, 'links to itself');
   }
 }
 

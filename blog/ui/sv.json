@@ -1,0 +1,24 @@
+{
+  "faqHeading": "Vanliga frågor",
+  "keepReading": "Läs vidare",
+  "fromTheBlog": "Från bloggen",
+  "allArticles": "Alla artiklar →",
+  "seeHowFeature": "Se {feature} i daili →",
+  "moreInEnglish": "Fler artiklar på engelska →",
+  "newsletter": {
+    "heading": "Ett kort mejl i månaden",
+    "text": "Vad som är nytt i daili och ett tips för familjens vecka. Ingen reklam, ingen spårning. Du får ett mejl för att bekräfta.",
+    "label": "Din e-postadress",
+    "placeholder": "du@exempel.se",
+    "button": "Prenumerera",
+    "honeypot": "Lämna det här fältet tomt",
+    "unsubscribe": "Avsluta när du vill.",
+    "privacy": "Integritetspolicy"
+  },
+  "index": {
+    "title": "Blogg — Daili",
+    "description": "Praktiska texter om familjens vardag: dokument, kalendrar, listor och hur du får alla att faktiskt använda systemet.",
+    "h1": "Dailis blogg",
+    "intro": "Praktiska texter om familjens vardag — dokument, kalendrar, listor och hur du får alla att faktiskt använda systemet."
+  }
+}

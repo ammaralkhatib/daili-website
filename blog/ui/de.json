@@ -1,0 +1,24 @@
+{
+  "faqHeading": "Häufige Fragen",
+  "keepReading": "Weiterlesen",
+  "fromTheBlog": "Aus dem Blog",
+  "allArticles": "Alle Artikel →",
+  "seeHowFeature": "{feature} in daili ansehen →",
+  "moreInEnglish": "Weitere Artikel auf Englisch →",
+  "newsletter": {
+    "heading": "Eine kurze E-Mail im Monat",
+    "text": "Was es Neues in daili gibt und ein Tipp für die Woche deiner Familie. Keine Werbung, kein Tracking. Du bekommst eine E-Mail zum Bestätigen.",
+    "label": "Deine E-Mail-Adresse",
+    "placeholder": "du@beispiel.de",
+    "button": "Anmelden",
+    "honeypot": "Dieses Feld leer lassen",
+    "unsubscribe": "Jederzeit abbestellbar.",
+    "privacy": "Datenschutzerklärung"
+  },
+  "index": {
+    "title": "Blog — Daili",
+    "description": "Praktische Texte rund um den Familienalltag: Dokumente, Kalender, Listen und wie wirklich alle das System nutzen.",
+    "h1": "Der Daili-Blog",
+    "intro": "Praktische Texte rund um den Familienalltag — Dokumente, Kalender, Listen und wie wirklich alle das System nutzen."
+  }
+}
