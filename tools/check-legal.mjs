@@ -165,6 +165,17 @@ const V116_MUST_CONTAIN = {
 const V116_WHY = 'rewards, stock lists, meal wishes, Instagram recipes, offline lists + notes and read aloud (app 1.16.0) are in every locale — see claude-prompts/2026-11-10/002';
 
 /**
+ * App 1.16.2: the shopping paragraph, recipe notes and the wall-screen
+ * numbers. Every anchor is on a <p>, invisible to the <h2> id comparison
+ * below.
+ */
+const V1162_MUST_CONTAIN = {
+  terms: [],
+  privacy: ['id="shopping"', 'id="recipe-notes"', 'id="wall-screen-stats"'],
+};
+const V1162_WHY = 'shopping, recipe notes and wall-screen numbers (app 1.16.2) are in every locale — see claude-prompts/2026-11-12/006';
+
+/**
  * Google two-way sync: the optional `calendar.events` (edit) permission in
  * section 5. Google's reviewers read this paragraph before they approve the
  * permission. The anchor is on a <p>, invisible to the <h2> id comparison below.
@@ -257,6 +268,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of V116_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V116_WHY}`);
+    }
+
+    for (const must of V1162_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${V1162_WHY}`);
     }
 
     for (const must of TWO_WAY_MUST_CONTAIN[id]) {
