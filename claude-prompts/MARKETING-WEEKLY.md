@@ -20,7 +20,8 @@ Write the report to `~/Claude/Projects/Family Planner/marketing/weekly/<DATE>.md
    `get_keyword_suggestions`, `search_app_store`, `get_app_ratings`.
    Daili = App Store id `6800427546`. If Astro is not reachable → section 2
    says so.
-3. **Last week's report** — the newest older file in `marketing/weekly/`, to
+3. **Last week's report** — the newest older `<date>.md` file directly in `marketing/weekly/`
+   (not the `runs/` folder), to
    show what moved. First run: no comparison.
 4. **What Daili really does** — `~/development/flutter_projects/familyplanner/daili-website/site.config.mjs`
    (`HOME_FEATURES`, `BLOG_POSTS` titles + `features`) and the blog posts'
