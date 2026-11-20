@@ -9,5 +9,11 @@
     "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose.",
     "/calendar/external-edit": "two-way Google, dark until the scope is approved"
   },
-  "pending": {}
+  "pending": {
+    "/focus": "Focus timer (in the app, not released yet) — article at the next release help sync.",
+    "/move": "Move (in the app, not released yet) — article at the next release help sync.",
+    "/move/routine/:key": "Move (in the app, not released yet) — article at the next release help sync.",
+    "/move/session": "Move (in the app, not released yet) — article at the next release help sync.",
+    "/move/statistics": "Move (in the app, not released yet) — article at the next release help sync."
+  }
 }
