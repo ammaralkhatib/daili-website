@@ -17,6 +17,7 @@
 #   WEEKLY_CLAUDE_CMD    command run instead of `claude` (default: claude)
 #   WEEKLY_RETRY_SLEEP   seconds between tries (default: 600)
 #   WEEKLY_SKIP_KEYCHAIN=1  do not load the sign-in key from the Keychain
+#   WEEKLY_SEO_CMD       command run instead of daili-seo.sh (the totals step)
 set -uo pipefail
 
 # launchd starts with almost no PATH. These are where node (Herd's nvm) and
@@ -33,6 +34,10 @@ REPORT="$OUT_ROOT/weekly/$DATE.md"
 RUN_NOTE="$OUT_ROOT/weekly/runs/$DATE.txt"
 # gsc-pull.mjs always writes here (its own fixed path).
 GSC_DIR="$HOME/Claude/Projects/Family Planner/marketing/gsc/$DATE"
+# Counts the Search Console totals before the claude step (read-only; it runs
+# /usr/bin/python3 by full path, so it works under launchd).
+SEO_CMD="${WEEKLY_SEO_CMD:-$HOME/Claude/Projects/Family Planner/daili-seo.sh}"
+SEO_REPORT="$GSC_DIR/seo-report.json"
 CLAUDE_CMD="${WEEKLY_CLAUDE_CMD:-claude}"
 RETRY_SLEEP="${WEEKLY_RETRY_SLEEP:-600}"
 MAX_TRIES=3
@@ -44,6 +49,7 @@ RESULT="failed"
 REASON="script stopped early"
 TRIES=0
 ASTRO="down"
+TOTALS="failed (script stopped before the totals step)"
 REPORT_NOTE="none"
 
 /bin/mkdir -p "$OUT_ROOT/weekly/runs" "$(/usr/bin/dirname "$LOG")"
@@ -68,6 +74,7 @@ finish() {
     echo "tries: $TRIES"
     echo "astro: $ASTRO"
     echo "search console: $gsc"
+    echo "totals: $TOTALS"
     echo "report: $REPORT_NOTE"
   } >"$RUN_NOTE"
   echo "run note: $RUN_NOTE (result: $RESULT)"
@@ -97,6 +104,48 @@ else
 fi
 
 node marketing/gsc-pull.mjs || echo "gsc-pull exited $?"
+
+# The totals for section 1 of the report, counted by daili-seo.sh so the
+# claude step never adds numbers up by hand. Written to a temp file and moved
+# into place only when the script exited 0 and the output is non-empty, valid
+# JSON — a failed count leaves no seo-report.json at all.
+count_totals() {
+  local tmp err code first
+  /bin/rm -f "$SEO_REPORT"
+  if [ ! -s "$GSC_DIR/queries.json" ] || [ ! -s "$GSC_DIR/pages.json" ]; then
+    echo "totals: skipped, no Search Console data"
+    TOTALS="skipped (no Search Console data)"
+    return
+  fi
+  tmp="$(/usr/bin/mktemp "$GSC_DIR/.seo-report.XXXXXX")" || {
+    echo "totals: cannot make a temp file in $GSC_DIR"
+    TOTALS="failed (cannot make a temp file)"
+    return
+  }
+  err="$(/usr/bin/mktemp -t daili-seo-err)" || err="/dev/null"
+  "$SEO_CMD" report --json --date "$DATE" >"$tmp" 2>"$err"
+  code=$?
+  first=""
+  [ "$err" != "/dev/null" ] && first="$(/usr/bin/head -n 1 "$err" | /usr/bin/tr -d '\r')"
+  [ "$err" != "/dev/null" ] && /bin/rm -f "$err"
+  if [ "$code" != 0 ]; then
+    echo "totals: daili-seo.sh exited $code: ${first:-(no error text)}"
+    TOTALS="failed (daili-seo.sh exited $code${first:+: $first})"
+    /bin/rm -f "$tmp"
+    return
+  fi
+  if [ ! -s "$tmp" ] || ! /usr/bin/python3 -c 'import json, sys; d = json.load(open(sys.argv[1])); sys.exit(0 if isinstance(d, dict) and d else 1)' "$tmp" 2>/dev/null; then
+    echo "totals: daili-seo.sh exited 0 but its output is empty or not valid JSON"
+    TOTALS="failed (output empty or not valid JSON)"
+    /bin/rm -f "$tmp"
+    return
+  fi
+  /bin/chmod 644 "$tmp"
+  /bin/mv -f "$tmp" "$SEO_REPORT"
+  echo "totals: $SEO_REPORT"
+  TOTALS="ok"
+}
+count_totals
 
 if [ "$DRY" = 1 ]; then
   echo "dry run: skipping claude -p"
