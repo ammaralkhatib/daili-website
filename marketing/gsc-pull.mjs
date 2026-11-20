@@ -6,9 +6,12 @@
  *
  * Signs a service-account JWT with node:crypto (RS256), swaps it for an access
  * token, and asks searchanalytics.query for sc-domain:daili.app over the last
- * 28 days ending 3 days ago (Search Console data lags). Two calls:
+ * 28 days ending 3 days ago (Search Console data lags). Two dimension sets:
  * [query, page] → queries.json, [page] → pages.json, in
- * ~/Claude/Projects/Family Planner/marketing/gsc/<YYYY-MM-DD>/.
+ * ~/Claude/Projects/Family Planner/marketing/gsc/<YYYY-MM-DD>/. Each set reads
+ * ALL rows (pages of 25,000, at most 20 calls); both files carry `rowCount`
+ * and `"complete": true` (false only when the 20-call stop was hit) —
+ * daili-seo.sh treats a file without `"complete": true` and 1,000 rows as cut.
  *
  * Zero npm dependencies, like the rest of the repo. Any failure — no key file,
  * a bad key, an HTTP error — writes ERROR.txt in that folder and exits 0, so
@@ -62,16 +65,44 @@ async function accessToken() {
   return (await res.json()).access_token;
 }
 
+/**
+ * All rows for one dimension set: pages of ROW_LIMIT (Google's maximum per
+ * call) at startRow 0, ROW_LIMIT, 2 × ROW_LIMIT … until a call returns fewer
+ * rows than the limit. At most MAX_CALLS calls; if the last one is still full,
+ * the rows so far are kept and the file says "complete": false.
+ */
+const ROW_LIMIT = 25000;
+const MAX_CALLS = 20;
+
 async function query(token, dimensions) {
   const url = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE)}/searchAnalytics/query`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
-    body: JSON.stringify({ startDate: START, endDate: END, dimensions, rowLimit: 1000 }),
-  });
-  if (!res.ok) throw new Error(`searchanalytics.query [${dimensions}]: HTTP ${res.status} ${(await res.text()).slice(0, 300)}`);
-  return { site: SITE, startDate: START, endDate: END, dimensions, ...(await res.json()) };
+  const rows = [];
+  let aggregation;
+  let calls = 0;
+  let complete = false;
+  while (calls < MAX_CALLS) {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+      body: JSON.stringify({ startDate: START, endDate: END, dimensions, rowLimit: ROW_LIMIT, startRow: calls * ROW_LIMIT }),
+    });
+    calls += 1;
+    if (!res.ok) throw new Error(`searchanalytics.query [${dimensions}]: HTTP ${res.status} ${(await res.text()).slice(0, 300)}`);
+    const body = await res.json();
+    if (body.responseAggregationType !== undefined && aggregation === undefined) aggregation = body.responseAggregationType;
+    const got = Array.isArray(body.rows) ? body.rows : [];
+    rows.push(...got);
+    if (got.length < ROW_LIMIT) {
+      complete = true;
+      break;
+    }
+  }
+  const out = { site: SITE, startDate: START, endDate: END, dimensions, rowCount: rows.length, complete, rows };
+  if (aggregation !== undefined) out.responseAggregationType = aggregation;
+  return { data: out, calls };
 }
+
+const callWord = (n) => (n === 1 ? 'call' : 'calls');
 
 fs.mkdirSync(OUT, { recursive: true });
 const errFile = path.join(OUT, 'ERROR.txt');
@@ -79,10 +110,12 @@ try {
   const token = await accessToken();
   const queries = await query(token, ['query', 'page']);
   const pages = await query(token, ['page']);
-  fs.writeFileSync(path.join(OUT, 'queries.json'), JSON.stringify(queries, null, 2));
-  fs.writeFileSync(path.join(OUT, 'pages.json'), JSON.stringify(pages, null, 2));
+  fs.writeFileSync(path.join(OUT, 'queries.json'), JSON.stringify(queries.data, null, 2));
+  fs.writeFileSync(path.join(OUT, 'pages.json'), JSON.stringify(pages.data, null, 2));
   fs.rmSync(errFile, { force: true });
-  console.log(`gsc: ${START}..${END} → ${OUT} (${queries.rows?.length ?? 0} query rows, ${pages.rows?.length ?? 0} page rows)`);
+  const part = (q, what) =>
+    `${q.data.rowCount} ${what} rows in ${q.calls} ${callWord(q.calls)}${q.data.complete ? '' : `, NOT complete (stopped after ${MAX_CALLS} calls)`}`;
+  console.log(`gsc: ${START}..${END} → ${OUT} (${part(queries, 'query')}, ${part(pages, 'page')})`);
 } catch (e) {
   fs.writeFileSync(errFile, `${new Date().toISOString()}\n${e.message}\n`);
   console.log(`gsc: failed, wrote ${errFile}: ${e.message}`);

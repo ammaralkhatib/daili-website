@@ -14,6 +14,7 @@ If the Mac is asleep at 07:00, launchd runs the job at the next wake. If the Mac
 
 1. `weekly.sh` opens Astro if it is not running and waits up to 90 s for its MCP server on `127.0.0.1:8089`.
 2. `gsc-pull.mjs` pulls 28 days of Search Console data, ending 3 days ago, into `~/Claude/Projects/Family Planner/marketing/gsc/<date>/` (`queries.json`, `pages.json`). If something goes wrong, it writes `ERROR.txt` there instead.
+   It reads ALL rows (pages of 25,000, at most 20 calls); each file says `rowCount` and `"complete": true` (false only if the 20-call stop was hit).
 3. It loads the long-lived claude sign-in key from the Keychain (`claude-code-oauth`, the same key the run scripts use). No key → no claude step, the run fails.
 4. `claude -p` runs headless with read-only tools and writes the report. If claude fails or the report is missing, it waits 10 minutes and tries again — up to 3 tries.
 5. A macOS notification says "ready" or "failed — see log".
