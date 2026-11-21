@@ -222,15 +222,21 @@ header{position:sticky;top:0;z-index:30;padding-block-start:14px;pointer-events:
 .dl-menu .web-btn{width:100%;height:51px}
 
 /* Desktop: the pill is as wide as the page's content (see .wrap), the brand
-   at the start and everything else pushed together to the end. */
+   at the start, the language chip and Get the app at the end, and the links
+   in the middle (2026-11-21/001): equal free space on both sides of them, so
+   they sit centred between the brand and the chip. When they need all the
+   room (861–1080 px in the long languages) both margins are 0 and the row
+   is exactly what the end-aligned one was. */
 @media(min-width:861px){
-  .links{margin-inline-start:auto}
+  .links{margin-inline:auto}
 }
-/* Between the burger and a wide screen, seven links in Ukrainian or Romanian
-   do not fit the pill at the mock's spacing: it tightens instead. */
+/* Between the burger and a wide screen, the links in Ukrainian or Romanian
+   do not fit the pill at the mock's spacing: it tightens instead. With the
+   sixth link (Wall display, 2026-11-21/001) Ukrainian at 861 px needed 6px
+   instead of 7px per side, or the brand and the language chip got squeezed. */
 @media(min-width:861px) and (max-width:1080px){
   .brand{margin-inline-end:6px}
-  .links a.nl{padding-inline:7px;font-size:13.5px}
+  .links a.nl{padding-inline:6px;font-size:13.5px}
   .langpicker summary{padding-inline:7px}
   .nav .dl-btn{padding-inline:13px}
   .nav .dl-btn svg{display:none}

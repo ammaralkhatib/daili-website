@@ -1338,14 +1338,17 @@ export const WHATS_NEW = {
 export const HELP_PUBLIC = true;
 
 /**
- * The wall display guide (daili.app/wall-display/, 2026-11-12/001). English
- * only; every word is in wall/en.json. Its steps are not tested on real
- * devices yet, so while this is false the page builds but is noindex, not in
- * the sitemap, and no page links to it (check-build section 24). true makes
- * it indexable and puts it in the sitemap at priority 0.6; the links to it
- * (the help article anywhere-wall) come in their own prompt.
+ * The wall display guide (daili.app/wall-display/, 2026-11-12/001). Public
+ * since 2026-11-21 (Ammar, 2026-11-21/001): indexable, in the sitemap at
+ * priority 0.6, and linked from the header menu of every page ("Wall
+ * display", home.nav.wall). English only; every word is in wall/en.json, so
+ * every language links to the one English page (hreflang="en" on a
+ * non-English page) and the page stays outside every hreflang cluster
+ * (check-build section 24). false hides it again: noindex, out of the
+ * sitemap, and no page may link to it. A link from the help article
+ * anywhere-wall comes in its own prompt.
  */
-export const WALL_GUIDE_PUBLIC = false;
+export const WALL_GUIDE_PUBLIC = true;
 export const LIVE_APP_VERSION = '1.17.0';
 
 /**

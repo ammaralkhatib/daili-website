@@ -213,6 +213,15 @@ const blogHome = (loc) => `${dirFor(loc)}blog/`;
 const blogLinkAttrs = (loc) => (loc !== DEFAULT_LOCALE && blogIndexLocales.includes(loc)
   ? `href="${blogHome(loc)}"`
   : `href="/blog/" hreflang="en" lang="en"`);
+/**
+ * The header's Wall display link (2026-11-21/001): the one English guide from
+ * every language, so a non-English page says so with hreflang="en" (the link
+ * text stays in the page's language, so no lang=). Empty while
+ * WALL_GUIDE_PUBLIC is false, which drops the link from the menu.
+ */
+const wallLinkAttrs = (loc) => (!WALL_GUIDE_PUBLIC ? ''
+  : loc === DEFAULT_LOCALE ? 'href="/wall-display/"'
+  : 'href="/wall-display/" hreflang="en"');
 
 /**
  * Blog posts become pages here rather than being hand-written into PAGES.
@@ -1977,6 +1986,7 @@ function build() {
           supportHref: pageExistsIn(pageById.support, loc) ? urlFor(pageById.support, loc) : '/support.html',
           langNav: renderLangNav(pg, loc),
           blogLinkAttrs: blogLinkAttrs(loc),
+          wallLinkAttrs: wallLinkAttrs(loc),
           footerLinks: renderFooterLinks(loc),
           footerHtml: renderFooter(loc),
           // Every page closes with the footer after <main>.

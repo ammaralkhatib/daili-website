@@ -65,10 +65,11 @@
   "@home": { "description": "Every string of the new home page (bevel layout, 2026-09-28). Person names (Lena, Marco, Emma, Noah, Mia, Oma Rosi, Opa Karl) and product names (iPhone, Android, Apple Watch, TRMNL, Google Calendar, Outlook, YouTube, Google Gemini) stay exactly as written. \"Daili\" and \"Daili Plus\" are never translated. Times are 24-hour; weekdays and dates use the locale's normal short style." },
   "home": {
     "nav": {
-      "@nav": { "description": "Top navigation, on every page: three section links, the web-app login link and the pill button. downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
+      "@nav": { "description": "Top navigation, on every page: three section links, the wall display link, the web-app login link and the pill button. wall = the link to the wall display guide daili.app/wall-display/ (English only, so every language links to the one English page; the feature's name as the help center says it, ≤ 16 chars, no \"daili\"). downloadApp = the dark header pill that opens the download menu (≤ 16 chars); openWebApp = the button inside that menu that opens app.daili.app. One or two words each." },
       "features": "Features",
       "plus": "Daili Plus",
       "screens": "Watch & widgets",
+      "wall": "Wall display",
       "login": "Log in",
       "downloadApp": "Download app",
       "openWebApp": "Open web app"

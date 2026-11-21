@@ -1482,7 +1482,8 @@ const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf
 // --- 24. the wall display guide (2026-11-12/001) ----------------------------
 // One <section id> per device in wall/<loc>.json (the page is complete without
 // JavaScript), no hreflang while it is English only, noindex and out of the
-// sitemap exactly while WALL_GUIDE_PUBLIC is false, and unlinked while hidden.
+// sitemap exactly while WALL_GUIDE_PUBLIC is false, and unlinked while hidden;
+// while public, linked from the header menu of every page (2026-11-21/001).
 // Layout A (002): the hero's board.webp screenshot, and a "Done" tick per step
 // plus a progress bar on every device except a "plain" one, which has neither.
 // Its own wall.js and wall.css, on these pages only. The CSP allows no inline
@@ -1547,8 +1548,14 @@ const isNoindex = (html) => /<meta name="robots" content="noindex">/.test(headOf
   }
   const wallOuts = new Set(WALL_OUTS);
   for (const f of htmlFiles) {
-    if (wallOuts.has(rel(f))) continue;
     const html = read(f);
+    // Public (2026-11-21/001): every page with the header menu links to the
+    // guide from it, the guide's own page included.
+    if (WALL_GUIDE_PUBLIC) {
+      const menu = html.match(/<nav class="links">([\s\S]*?)<\/nav>/);
+      if (menu && !/<a class="nl" href="\/wall-display\/"/.test(menu[1])) fail(rel(f), 'its header menu has no <a class="nl" href="/wall-display/"> link while WALL_GUIDE_PUBLIC is true');
+    }
+    if (wallOuts.has(rel(f))) continue;
     if (/\/assets\/wall\.[0-9a-f]{8}\.(?:js|css)/.test(html)) fail(rel(f), 'loads wall.js or wall.css, which belong to /wall-display/ only');
     if (!WALL_GUIDE_PUBLIC && /href="(?:https:\/\/daili\.app)?\/(?:[a-z-]+\/)?wall-display\//i.test(html)) fail(rel(f), 'links to the wall display guide while WALL_GUIDE_PUBLIC is false — the guide stays hidden');
   }
