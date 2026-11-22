@@ -184,6 +184,13 @@ const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"'] };
 const TWO_WAY_WHY = 'Google two-way sync (the calendar.events permission) is in every locale — see claude-prompts/2026-11-15/001';
 
 /**
+ * Focus and Move: their videos and music load from our public Hetzner
+ * storage. The anchor is on a <p>, invisible to the <h2> id comparison below.
+ */
+const FOCUS_MOVE_MUST_CONTAIN = { terms: [], privacy: ['id="focus-move-media"'] };
+const FOCUS_MOVE_WHY = 'Focus and Move videos and music from our Hetzner storage are in every locale — see claude-prompts/2026-11-22/001';
+
+/**
  * 1.15.0 renamed "Copy to Daili" to "Edit in Daili". The old label may appear
  * exactly once, in the sentence about copies made with the EARLIER button
  * (the history phrase below); anywhere else it is a stale label.
@@ -276,6 +283,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of TWO_WAY_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${TWO_WAY_WHY}`);
+    }
+
+    for (const must of FOCUS_MOVE_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${FOCUS_MOVE_WHY}`);
     }
 
     if (id === 'privacy') {
