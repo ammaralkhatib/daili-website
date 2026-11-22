@@ -2,8 +2,8 @@
 id: account-download-data
 title: Lataa tietosi
 summary: Pyydä kopio kaikesta, mitä daili tallentaa sinusta. Lähetämme sähköpostia, kun se on valmis.
-keywords: lataa, vie, omat tiedot, kopio tiedoista, gdpr, tietopyyntö, tietosuoja, henkilötiedot, arkisto
-translatedFrom: 2026-10-30
+keywords: varmuuskopio, varmuuskopioi, tietojen vienti, vie tietoni, tallenna tietoni, kopio tilistä, omat tiedot, gdpr, tietopyyntö, tietosuoja, henkilötiedot, arkisto
+translatedFrom: 2026-11-21
 ---
 Voit pyytää kopiota tiedoistasi milloin tahansa. Sähköpostiosoitteesi on ensin oltava vahvistettu, koska kopio lähetetään sinne.
 

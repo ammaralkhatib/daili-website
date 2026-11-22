@@ -2,8 +2,8 @@
 id: account-download-data
 title: Download dine data
 summary: Bed om en kopi af alt, hvad daili gemmer om dig. Vi sender dig en e-mail, når den er klar.
-keywords: download, eksportér, mine data, kopi af data, gdpr, dataanmodning, privatliv, persondata, arkiv
-translatedFrom: 2026-10-30
+keywords: backup, sikkerhedskopi, dataeksport, eksportér mine data, gem mine data, kopi af min konto, kopi af data, gdpr, dataanmodning, privatliv, persondata, arkiv
+translatedFrom: 2026-11-21
 ---
 Du kan når som helst bede om en kopi af dine data. Din e-mailadresse skal først være bekræftet, for det er dertil, kopien bliver sendt.
 

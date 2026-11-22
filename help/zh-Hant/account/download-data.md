@@ -2,8 +2,8 @@
 id: account-download-data
 title: 下載你的資料
 summary: 索取一份 daili 保存的所有關於你的資料。準備好後我們會寄郵件通知你。
-keywords: 下載, 匯出, 我的資料, 資料副本, gdpr, 資料請求, 隱私, 個人資料, 封存
-translatedFrom: 2026-10-30
+keywords: 備份, 資料匯出, 匯出我的資料, 儲存我的資料, 帳號副本, 資料副本, 下載, gdpr, 資料請求, 隱私, 個人資料, 封存
+translatedFrom: 2026-11-21
 ---
 你隨時都可以索取一份你的資料。不過你的電子郵件要先驗證，因為副本會寄到那裡。
 

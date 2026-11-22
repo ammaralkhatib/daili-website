@@ -2,8 +2,8 @@
 id: account-download-data
 title: Last ned dataene dine
 summary: Be om en kopi av alt daili lagrer om deg. Vi sender deg en e-post når den er klar.
-keywords: last ned, eksporter, dataene mine, kopi av data, gdpr, innsyn, personvern, personopplysninger, arkiv
-translatedFrom: 2026-10-30
+keywords: sikkerhetskopi, backup, dataeksport, eksporter dataene mine, lagre dataene mine, kopi av kontoen min, dataene mine, gdpr, innsyn, personvern, personopplysninger, arkiv
+translatedFrom: 2026-11-21
 ---
 Du kan når som helst be om en kopi av dataene dine. E-postadressen din må være bekreftet først, for det er dit kopien sendes.
 

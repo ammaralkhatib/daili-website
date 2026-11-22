@@ -2,8 +2,8 @@
 id: account-download-data
 title: Pobierz swoje dane
 summary: Poproś o kopię wszystkiego, co daili o tobie przechowuje. Napiszemy do ciebie, gdy będzie gotowa.
-keywords: pobierz, eksport, moje dane, kopia danych, rodo, wniosek o dane, prywatność, dane osobowe, archiwum
-translatedFrom: 2026-10-30
+keywords: kopia zapasowa, backup, eksport danych, eksportuj moje dane, zapisz moje dane, kopia konta, moje dane, rodo, wniosek o dane, prywatność, dane osobowe, archiwum
+translatedFrom: 2026-11-21
 ---
 O kopię swoich danych możesz poprosić w każdej chwili. Najpierw musisz potwierdzić adres e-mail, bo właśnie tam trafi kopia.
 

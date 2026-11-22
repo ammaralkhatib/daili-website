@@ -2,8 +2,8 @@
 id: account-download-data
 title: Scaricare i tuoi dati
 summary: Chiedi una copia di tutto ciò che daili conserva su di te. Ti scriviamo quando è pronta.
-keywords: scaricare, esportare, i miei dati, copia dei dati, gdpr, richiesta dati, privacy, dati personali, archivio
-translatedFrom: 2026-10-30
+keywords: backup, copia di sicurezza, esportazione dati, esportare i miei dati, salvare i miei dati, copia del mio account, copia dei dati, gdpr, richiesta dati, privacy, dati personali, archivio
+translatedFrom: 2026-11-21
 ---
 Puoi chiedere una copia dei tuoi dati in qualsiasi momento. Prima però il tuo indirizzo e-mail deve essere confermato, perché la copia arriva lì.
 

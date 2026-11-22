@@ -2,8 +2,8 @@
 id: account-download-data
 title: Descargar tus datos
 summary: Pide una copia de todo lo que daili guarda sobre ti. Te escribimos cuando esté lista.
-keywords: descargar, exportar, mis datos, copia de datos, rgpd, solicitud de datos, privacidad, datos personales, archivo
-translatedFrom: 2026-10-30
+keywords: copia de seguridad, respaldo, backup, exportar datos, exportar mis datos, guardar mis datos, copia de mi cuenta, rgpd, solicitud de datos, privacidad, datos personales, archivo
+translatedFrom: 2026-11-21
 ---
 Puedes pedir una copia de tus datos cuando quieras. Antes, tu dirección de correo tiene que estar confirmada, porque la copia llega ahí.
 

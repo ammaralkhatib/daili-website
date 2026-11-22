@@ -2,8 +2,8 @@
 id: account-download-data
 title: Stáhnout svoje data
 summary: Požádej o kopii všeho, co o tobě daili uchovává. Až bude hotová, napíšeme ti e-mail.
-keywords: stáhnout, export, moje data, kopie dat, gdpr, žádost o data, soukromí, osobní údaje, archiv
-translatedFrom: 2026-10-30
+keywords: záloha, zálohovat, export dat, exportovat data, uložit data, moje data, kopie účtu, gdpr, žádost o data, soukromí, osobní údaje, archiv
+translatedFrom: 2026-11-21
 ---
 O kopii svých dat můžeš požádat kdykoli. Nejdřív ale musíš mít ověřenou e-mailovou adresu, protože právě tam kopie přijde.
 

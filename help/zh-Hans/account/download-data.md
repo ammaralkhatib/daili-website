@@ -2,8 +2,8 @@
 id: account-download-data
 title: 下载你的数据
 summary: 申请一份 daili 保存的关于你的所有数据。准备好后我们会发邮件通知你。
-keywords: 下载, 导出, 我的数据, 数据副本, gdpr, 数据申请, 隐私, 个人数据, 存档
-translatedFrom: 2026-10-30
+keywords: 备份, 数据导出, 导出我的数据, 保存我的数据, 账户副本, 数据副本, 下载, gdpr, 数据申请, 隐私, 个人数据, 存档
+translatedFrom: 2026-11-21
 ---
 你随时可以申请一份自己的数据。不过你的邮箱要先验证，因为数据会发到这个邮箱。
 

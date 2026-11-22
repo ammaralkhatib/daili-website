@@ -2,8 +2,8 @@
 id: account-download-data
 title: Ladda ner dina uppgifter
 summary: Be om en kopia av allt som daili sparar om dig. Vi mejlar dig när den är klar.
-keywords: ladda ner, exportera, mina uppgifter, kopia av data, gdpr, registerutdrag, integritet, personuppgifter, arkiv
-translatedFrom: 2026-10-30
+keywords: säkerhetskopia, backup, dataexport, exportera mina uppgifter, spara mina uppgifter, kopia av mitt konto, kopia av data, gdpr, registerutdrag, integritet, personuppgifter, arkiv
+translatedFrom: 2026-11-21
 ---
 Du kan när som helst be om en kopia av dina uppgifter. Din e-postadress måste vara bekräftad först, eftersom det är dit kopian skickas.
 

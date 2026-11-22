@@ -2,8 +2,8 @@
 id: account-download-data
 title: Unduh data Anda
 summary: Minta salinan semua yang disimpan daili tentang Anda. Kami mengirim email saat sudah siap.
-keywords: unduh, ekspor, data saya, salinan data, gdpr, permintaan data, privasi, data pribadi, arsip
-translatedFrom: 2026-10-30
+keywords: cadangan, backup, ekspor data, ekspor data saya, simpan data saya, salinan akun saya, salinan data, gdpr, permintaan data, privasi, data pribadi, arsip
+translatedFrom: 2026-11-21
 ---
 Anda bisa meminta salinan data Anda kapan saja. Alamat email Anda harus diverifikasi dulu, karena salinannya dikirim ke sana.
 

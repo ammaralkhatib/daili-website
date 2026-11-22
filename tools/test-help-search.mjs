@@ -152,6 +152,29 @@ for (const [rel, queries] of built) {
   builtChecked++;
 }
 
+// ---- the built pages: "Download your data" is found by backup / export words -
+// `first`: it is the first hit. `found`: it is in the results — for these,
+// other articles that really talk about backups, exports or the account
+// (Vault, Notes, Cycle, Delete) come first: results are title hits, then page order.
+const downloadData = [
+  ['dist/help/index.html', { first: ['save my data', 'takeout'], found: ['backup', 'export my data', 'data export', 'copy of my account'] }],
+  ['dist/de/help/index.html', { first: ['datenexport', 'datensicherung', 'daten sichern'], found: ['sicherung', 'backup', 'daten exportieren'] }],
+];
+for (const [rel, { first, found }] of downloadData) {
+  const file = path.join(ROOT, rel);
+  if (!fs.existsSync(file)) continue;
+  const html = fs.readFileSync(file, 'utf8');
+  const m = html.match(/<script type="application\/json" id="help-index">([\s\S]*?)<\/script>/);
+  if (!m) { failures.push(`${rel}: no help-index`); continue; }
+  const lang = html.match(/<html[^>]* lang="([^"]+)"/)[1];
+  const index = JSON.parse(m[1]);
+  const art = index.find((a) => a.url.endsWith('/account/download-data/'));
+  if (!art) { failures.push(`${rel}: no account/download-data article in the index`); continue; }
+  const p = page(index, lang);
+  for (const q of first) check(`${rel}: ${q} (first)`, p.type(q)[0], art.title);
+  for (const q of found) check(`${rel}: ${q} (found)`, p.type(q).includes(art.title), true);
+}
+
 if (failures.length) {
   console.error(`\nhelp search: ${failures.length} failure(s), ${pass} passed:\n`);
   console.error(failures.join('\n'));

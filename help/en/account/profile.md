@@ -10,7 +10,7 @@ since: 1.1.0
 updated: 2026-10-23
 order: 1
 media: account-profile
-related: account-avatar-ai, account-preferences, account-password
+related: account-avatar-ai, account-preferences, account-password, account-download-data
 ---
 Your family sees your name, picture and colour next to everything you add.
 

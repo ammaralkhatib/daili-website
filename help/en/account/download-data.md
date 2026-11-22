@@ -3,11 +3,11 @@ id: account-download-data
 topic: account
 title: Download your data
 summary: Ask for a copy of everything daili keeps about you. We email you when it's ready.
-keywords: download, export, my data, copy of data, gdpr, data request, privacy, personal data, archive
+keywords: backup, back up, data export, export my data, save my data, copy of my account, takeout, gdpr, data request, privacy, personal data, archive
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.0.0
-updated: 2026-10-30
+updated: 2026-11-21
 order: 5
 media: account-download-data
 related: account-delete, vault-where, account-verify-email, account-safety

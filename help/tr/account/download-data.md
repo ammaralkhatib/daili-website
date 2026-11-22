@@ -2,8 +2,8 @@
 id: account-download-data
 title: Verilerini indir
 summary: daili'nin senin hakkında sakladığı her şeyin bir kopyasını iste. Hazır olunca sana e-posta göndeririz.
-keywords: indir, dışa aktar, verilerim, veri kopyası, kvkk, gdpr, veri talebi, gizlilik, kişisel veriler, arşiv, e-posta doğrulama
-translatedFrom: 2026-10-30
+keywords: yedekleme, verileri dışa aktar, verilerimi kaydet, hesabımın kopyası, veri kopyası, kvkk, gdpr, veri talebi, gizlilik, kişisel veriler, arşiv, e-posta doğrulama
+translatedFrom: 2026-11-21
 ---
 Verilerinin bir kopyasını istediğin zaman isteyebilirsin. Önce e-posta adresinin doğrulanmış olması gerekir, çünkü kopya oraya gider.
 

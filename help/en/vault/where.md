@@ -10,7 +10,7 @@ since: 1.0.0
 updated: 2026-09-26
 order: 2
 media: vault-where
-related: vault-documents, vault-photos, account-delete
+related: vault-documents, vault-photos, account-delete, account-download-data
 ---
 Documents and Photos are your private drawer in daili. Everything you put there stays on this phone, and nowhere else.
 

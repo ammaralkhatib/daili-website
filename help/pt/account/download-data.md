@@ -2,8 +2,8 @@
 id: account-download-data
 title: Baixar seus dados
 summary: Peça uma cópia de tudo o que o daili guarda sobre você. Avisamos por e-mail quando estiver pronta.
-keywords: baixar, exportar, meus dados, cópia dos dados, lgpd, pedido de dados, privacidade, dados pessoais, arquivo
-translatedFrom: 2026-10-30
+keywords: backup, cópia de segurança, exportar dados, exportar meus dados, salvar meus dados, cópia da minha conta, cópia dos dados, lgpd, pedido de dados, privacidade, dados pessoais, arquivo
+translatedFrom: 2026-11-21
 ---
 Você pode pedir uma cópia dos seus dados a qualquer momento. Antes, seu endereço de e-mail precisa estar confirmado, porque a cópia vai para ele.
 

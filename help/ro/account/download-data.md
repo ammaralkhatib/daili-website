@@ -2,8 +2,8 @@
 id: account-download-data
 title: Descarcă-ți datele
 summary: Cere o copie a tot ce păstrează daili despre tine. Îți scriem pe e-mail când e gata.
-keywords: descarcă, export, datele mele, copie a datelor, gdpr, cerere de date, confidențialitate, date personale, arhivă, e-mail confirmat
-translatedFrom: 2026-10-30
+keywords: backup, copie de rezervă, export date, exportă datele mele, salvează datele mele, copie a contului, gdpr, cerere de date, confidențialitate, date personale, arhivă, e-mail confirmat
+translatedFrom: 2026-11-21
 ---
 Poți cere oricând o copie a datelor tale. Mai întâi trebuie să-ți confirmi adresa de e-mail, pentru că acolo ajunge copia.
 

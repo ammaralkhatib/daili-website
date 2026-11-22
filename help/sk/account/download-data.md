@@ -2,8 +2,8 @@
 id: account-download-data
 title: Stiahni si svoje údaje
 summary: Požiadaj o kópiu všetkého, čo o tebe daili uchováva. Keď bude pripravená, pošleme ti e-mail.
-keywords: stiahnuť, export, moje údaje, kópia údajov, gdpr, žiadosť o údaje, súkromie, osobné údaje, archív, overenie e-mailu
-translatedFrom: 2026-10-30
+keywords: záloha, zálohovať, export údajov, exportovať údaje, uložiť údaje, kópia účtu, archív, gdpr, žiadosť o údaje, súkromie, osobné údaje, overenie e-mailu
+translatedFrom: 2026-11-21
 ---
 O kópiu svojich údajov môžeš požiadať kedykoľvek. Najprv však musíš mať overenú e-mailovú adresu, lebo kópia príde práve tam.
 

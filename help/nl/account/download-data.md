@@ -2,8 +2,8 @@
 id: account-download-data
 title: Je gegevens downloaden
 summary: Vraag een kopie aan van alles wat daili over je bewaart. We mailen je als die klaar is.
-keywords: downloaden, exporteren, mijn gegevens, kopie van gegevens, avg, inzageverzoek, privacy, persoonsgegevens, archief
-translatedFrom: 2026-10-30
+keywords: back-up, backup, gegevens exporteren, mijn gegevens exporteren, gegevens opslaan, kopie van mijn account, mijn gegevens, avg, inzageverzoek, privacy, persoonsgegevens, archief
+translatedFrom: 2026-11-21
 ---
 Je kunt op elk moment een kopie van je gegevens aanvragen. Je e-mailadres moet eerst bevestigd zijn, want daar gaat de kopie naartoe.
 

@@ -2,8 +2,8 @@
 id: account-download-data
 title: Deine Daten herunterladen
 summary: Fordere eine Kopie von allem an, was daili über dich speichert. Wir schicken dir eine E-Mail, wenn sie fertig ist.
-keywords: herunterladen, export, meine daten, datenkopie, dsgvo, datenauskunft, datenschutz, persönliche daten, archiv
-translatedFrom: 2026-10-30
+keywords: datenexport, daten exportieren, sicherung, backup, daten sichern, datensicherung, datenkopie, kopie meines kontos, dsgvo, datenauskunft, datenschutz, persönliche daten
+translatedFrom: 2026-11-21
 ---
 Du kannst jederzeit eine Kopie deiner Daten anfordern. Deine E-Mail-Adresse muss vorher bestätigt sein, denn dorthin geht die Kopie.
 
