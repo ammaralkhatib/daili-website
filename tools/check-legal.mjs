@@ -191,6 +191,14 @@ const FOCUS_MOVE_MUST_CONTAIN = { terms: [], privacy: ['id="focus-move-media"'] 
 const FOCUS_MOVE_WHY = 'Focus and Move videos and music from our Hetzner storage are in every locale — see claude-prompts/2026-11-22/001';
 
 /**
+ * Deleting the account: the optional "why are you leaving?" answers and the
+ * "Email me once when this gets better" yes that outlives the account. The
+ * anchor is on a <p>, invisible to the <h2> id comparison below.
+ */
+const LEAVING_MUST_CONTAIN = { terms: [], privacy: ['id="leaving"', 'href="#leaving"'] };
+const LEAVING_WHY = 'the "why are you leaving?" answers and the "email me once" yes are in every locale — see claude-prompts/2026-11-22/002';
+
+/**
  * 1.15.0 renamed "Copy to Daili" to "Edit in Daili". The old label may appear
  * exactly once, in the sentence about copies made with the EARLIER button
  * (the history phrase below); anywhere else it is a stale label.
@@ -287,6 +295,10 @@ for (const id of LEGAL_IDS) {
 
     for (const must of FOCUS_MOVE_MUST_CONTAIN[id]) {
       if (!src.includes(must)) fail(rel, `does not contain ${must} — ${FOCUS_MOVE_WHY}`);
+    }
+
+    for (const must of LEAVING_MUST_CONTAIN[id]) {
+      if (!src.includes(must)) fail(rel, `does not contain ${must} — ${LEAVING_WHY}`);
     }
 
     if (id === 'privacy') {

@@ -7,25 +7,29 @@ keywords: delete account, remove account, close account, cancel deletion, restor
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.0.0
-updated: 2026-10-27
+updated: 2026-11-22
 order: 6
 media: account-delete
 related: account-download-data, family-roles, vault-where, account-safety
 ---
-Want a copy of your data first? Download it before you start.
+Want your data? Download it first.
 
 ![The Profile screen. Delete account, the last row under Account, is circled.](account-delete)
 
-1. Open **Settings**, then tap your name at the top. No family yet? Tap the person icon on the create-or-join screen.
+1. Open **Settings** and tap your name. No family yet? Tap the person icon.
 2. Under **Account**, tap **Delete account**.
-3. Pick a reason if you like, or **I'd rather not say**.
-4. Type the word it asks for, **DELETE**, and tap **Delete my account**.
-5. daili signs you out. We email you a cancellation link.
+3. Pick a reason if you like.
+4. Type **DELETE** and tap **Delete my account**.
+5. daili signs you out and emails you a cancellation link.
 
-Picked **I want to start over**? You don't need a new account: create a new family or group instead.
+On app.daili.app, click your name in the menu, then **Delete account** under **Account**.
 
-For 30 days you can change your mind: sign in and tap **Restore my account**, or tap the link in our email. After that, it's deleted for good.
+Picked **I want to start over**? Create a new family or group instead.
 
-Own a family? daili tells you which. Make someone else the owner, or delete it, first.
+Some reasons let you tick **Email me once when this gets better**: one email when we add or fix it, with a link to stop it.
 
-> Note: Your documents and photos are removed from this phone straight away. Restoring can't bring them back.
+Changed your mind? For 30 days, sign in and tap **Restore my account**, or tap the link in our email. Then it's deleted for good.
+
+Own a family? Make someone else the owner, or delete it, first.
+
+> Note: Your documents and photos leave this phone straight away. Restoring can't bring them back.
