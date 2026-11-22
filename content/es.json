@@ -383,7 +383,7 @@
       },
       {
         "q": "¿Cómo elimino mi cuenta?",
-        "a": "En la app, abre Ajustes, toca tu nombre y luego Eliminar la cuenta. Tienes 30 días para cambiar de opinión: inicia sesión y toca Recuperar mi cuenta. Después, tu cuenta y tus datos se eliminan para siempre. ¿Quieres una copia antes? Toca Descargar mis datos antes de empezar. <a {help:account-delete}>Más en la Ayuda</a>"
+        "a": "En la app, abre Ajustes, toca tu nombre y luego Eliminar la cuenta. En la web, haz clic en tu nombre y luego, en Cuenta, en Eliminar la cuenta. Tienes 30 días para cambiar de opinión: inicia sesión y toca Recuperar mi cuenta. Después, tu cuenta y tus datos se eliminan para siempre. ¿Quieres una copia antes? Toca Descargar mis datos antes de empezar. <a {help:account-delete}>Más en la Ayuda</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Normalmente respondemos en uno o dos días.",
     "deleteH2": "Eliminar tu cuenta",
-    "deleteIntro": "Puedes eliminar tu cuenta de Daili y sus datos cuando quieras, de dos maneras:",
+    "deleteIntro": "Puedes eliminar tu cuenta de Daili y sus datos cuando quieras, de tres maneras:",
     "deleteWays": [
       "<strong>En la aplicación:</strong> Ajustes &rarr; Perfil &rarr; Eliminar cuenta.",
+      "<strong>En la web:</strong> en app.daili.app, haz clic en tu nombre &rarr; Cuenta &rarr; Eliminar la cuenta.",
       "<strong>Por correo electrónico:</strong> escribe a <a href=\"mailto:support@daili.app?subject=Eliminar%20mi%20cuenta\"><strong>support@daili.app</strong></a> desde la dirección de tu cuenta, con el asunto &laquo;Eliminar mi cuenta&raquo;."
     ],
     "deleteWhat": "Qué ocurre después: tu cuenta se desactiva de inmediato y recibes un correo con un enlace de cancelación. Pasado un plazo de 30 días, tu cuenta y los datos vinculados a ella (el perfil y los eventos, listas, recetas y fotos que hayas creado) se eliminan definitivamente de nuestros servidores. Si cambias de idea dentro de esos 30 días, el enlace del correo lo restaura todo. Los archivos de la caja fuerte sin conexión solo están en tu móvil y se borran al eliminar la cuenta en ese dispositivo. Si tienes Daili Plus, cancélalo antes en el App Store o en Google Play: eliminar la cuenta no cancela la suscripción."

@@ -3,7 +3,7 @@ id: anywhere-web
 title: daili gebruiken in je browser (app.daili.app)
 summary: Plan op je computer, met hetzelfde gezin, dezelfde agenda en dezelfde lijsten als op je telefoon.
 keywords: web, browser, computer, laptop, desktop, pc, mac, website, online, app.daili.app, groot scherm
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 Op een computer kun je daili in je browser gebruiken. Hetzelfde account, hetzelfde gezin: elke wijziging verschijnt op ieders telefoon.
 
@@ -13,6 +13,8 @@ Op een computer kun je daili in je browser gebruiken. Hetzelfde account, hetzelf
 
 Notities werken hier ook: schrijven, filteren, taggen, vastzetten, delen, een herinnering zetten (die staat in de agenda) en recent verwijderde terugzetten. Snel vastleggen op het startscherm kan een notitie maken. Gezinnen met Daili Plus kunnen afbeeldingen toevoegen.
 
-Documenten, Foto’s, spraak opnemen en de AI-hulpjes van notities blijven in de telefoonapp. Net als je account verwijderen.
+Je kunt hier ook je account verwijderen: klik in het menu op je naam en dan onder **Account** op **Account verwijderen**.
+
+Documenten, Foto’s, spraak opnemen en de AI-hulpjes van notities blijven in de telefoonapp.
 
 > Note: De browserversie is gemaakt voor computers en tablets. Op een telefoon vraagt hij je om de app te gebruiken.

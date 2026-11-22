@@ -383,7 +383,7 @@
       },
       {
         "q": "Hoe verwijder ik mijn account?",
-        "a": "Open in de app Instellingen, tik op je naam en dan op Account verwijderen. Je hebt 30 dagen om je te bedenken: log in en tik op Mijn account herstellen. Daarna zijn je account en je gegevens definitief verwijderd. Eerst een kopie? Tik op Mijn gegevens downloaden voordat je begint. <a {help:account-delete}>Meer in de hulp</a>"
+        "a": "Open in de app Instellingen, tik op je naam en dan op Account verwijderen. Op het web klik je op je naam en dan onder Account op Account verwijderen. Je hebt 30 dagen om je te bedenken: log in en tik op Mijn account herstellen. Daarna zijn je account en je gegevens definitief verwijderd. Eerst een kopie? Tik op Mijn gegevens downloaden voordat je begint. <a {help:account-delete}>Meer in de hulp</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "We antwoorden meestal binnen een dag of twee.",
     "deleteH2": "Je account verwijderen",
-    "deleteIntro": "Je kunt je Daili-account en de bijbehorende gegevens altijd verwijderen, op twee manieren:",
+    "deleteIntro": "Je kunt je Daili-account en de bijbehorende gegevens altijd verwijderen, op drie manieren:",
     "deleteWays": [
       "<strong>In de app:</strong> Instellingen &rarr; Profiel &rarr; Account verwijderen.",
+      "<strong>Op het web:</strong> klik op app.daili.app op je naam &rarr; Account &rarr; Account verwijderen.",
       "<strong>Per e-mail:</strong> schrijf naar <a href=\"mailto:support@daili.app?subject=Mijn%20account%20verwijderen\"><strong>support@daili.app</strong></a> vanaf het e-mailadres van je account, met als onderwerp &bdquo;Mijn account verwijderen&rdquo;."
     ],
     "deleteWhat": "Wat er daarna gebeurt: je account wordt meteen uitgeschakeld en je krijgt een e-mail met een annuleerlink. Na een periode van 30 dagen worden je account en de gegevens die eraan hangen (je profiel en de afspraken, lijsten, recepten en foto's die je hebt gemaakt) definitief van onze servers verwijderd. Bedenk je je binnen die 30 dagen, dan zet de link in de e-mail alles terug. Bestanden in de offline kluis staan alleen op je telefoon en worden verwijderd zodra het account op dat apparaat wordt verwijderd. Heb je Daili Plus? Zeg het dan eerst op in de App Store of Google Play — met het verwijderen van je account stopt het abonnement niet."

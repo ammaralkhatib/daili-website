@@ -3,7 +3,7 @@ id: anywhere-web
 title: daili'yi tarayıcında kullan (app.daili.app)
 summary: Bilgisayarında, telefonundakiyle aynı aile, takvim ve listelerle planla.
 keywords: web, tarayıcı, bilgisayar, dizüstü, masaüstü, pc, mac, web sitesi, çevrimiçi, app.daili.app, büyük ekran
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 Bilgisayarda daili'yi tarayıcında kullanabilirsin. Aynı hesap, aynı aile: her değişiklik herkesin telefonunda görünür.
 
@@ -13,6 +13,8 @@ Bilgisayarda daili'yi tarayıcında kullanabilirsin. Aynı hesap, aynı aile: he
 
 Notlar burada da çalışır: yaz, filtrele, etiketle, sabitle, paylaş, hatırlatma kur (takvimde görünür) ve son silinenleri geri yükle. Ana sayfadaki hızlı ekleme de not oluşturabilir. Daili Plus aileleri resim ekleyebilir.
 
-Belgeler, Fotoğraflar, ses kaydı ve notların yapay zekâ yardımcıları telefon uygulamasında kalır. Hesabı silmek de öyle.
+Hesabını burada da silebilirsin: menüde adına tıkla, sonra **Hesap** altında **Hesabı sil** seçeneğine tıkla.
+
+Belgeler, Fotoğraflar, ses kaydı ve notların yapay zekâ yardımcıları telefon uygulamasında kalır.
 
 > Note: Tarayıcı sürümü bilgisayarlar ve tabletler için yapıldı. Telefonda ise seni uygulamayı kullanmaya yönlendirir.

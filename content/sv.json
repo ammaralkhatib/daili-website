@@ -383,7 +383,7 @@
       },
       {
         "q": "Hur raderar jag mitt konto?",
-        "a": "Öppna Inställningar i appen, tryck på ditt namn och sedan på Radera konto. Du har 30 dagar på dig att ångra dig: logga in och tryck på Återställ mitt konto. Därefter raderas ditt konto och dina uppgifter för gott. Vill du ha en kopia först? Tryck på Ladda ner mina uppgifter innan du börjar. <a {help:account-delete}>Mer i hjälpen</a>"
+        "a": "Öppna Inställningar i appen, tryck på ditt namn och sedan på Radera konto. På webben klickar du på ditt namn och sedan på Radera konto under Konto. Du har 30 dagar på dig att ångra dig: logga in och tryck på Återställ mitt konto. Därefter raderas ditt konto och dina uppgifter för gott. Vill du ha en kopia först? Tryck på Ladda ner mina uppgifter innan du börjar. <a {help:account-delete}>Mer i hjälpen</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Vi svarar oftast inom en eller två dagar.",
     "deleteH2": "Radera ditt konto",
-    "deleteIntro": "Du kan radera ditt Daili-konto och dess uppgifter när som helst, på två sätt:",
+    "deleteIntro": "Du kan radera ditt Daili-konto och dess uppgifter när som helst, på tre sätt:",
     "deleteWays": [
       "<strong>I appen:</strong> Inställningar &rarr; Profil &rarr; Radera konto.",
+      "<strong>På webben:</strong> på app.daili.app klickar du på ditt namn &rarr; Konto &rarr; Radera konto.",
       "<strong>Via e-post:</strong> skriv till <a href=\"mailto:support@daili.app?subject=Radera%20mitt%20konto\"><strong>support@daili.app</strong></a> från kontots e-postadress, med ämnet ”Radera mitt konto”."
     ],
     "deleteWhat": "Vad som händer sedan: ditt konto stängs av direkt och du får ett e-postmeddelande med en länk för att ångra. Efter en frist på 30 dagar raderas ditt konto och de uppgifter som hör till det (profilen samt de händelser, listor, recept och foton du skapat) slutgiltigt från våra servrar. Ångrar du dig inom de 30 dagarna återställer länken i mejlet allt. Filer i kassaskåpet offline finns bara i din telefon och tas bort när kontot raderas på den enheten. Har du Daili Plus ska du säga upp det i App Store eller Google Play först — abonnemanget sägs inte upp när du raderar kontot."

@@ -383,7 +383,7 @@
       },
       {
         "q": "Jak smažu svůj účet?",
-        "a": "V aplikaci otevřete Nastavení, klepněte na své jméno a pak na Smazat účet. Na rozmyšlenou máte 30 dní: přihlaste se a klepněte na Obnovit můj účet. Potom se váš účet i data smažou natrvalo. Chcete si nejdřív uložit kopii? Než začnete, klepněte na Stáhnout moje data. <a {help:account-delete}>Více v nápovědě</a>"
+        "a": "V aplikaci otevřete Nastavení, klepněte na své jméno a pak na Smazat účet. Na webu klikněte na své jméno a pak v sekci Účet na Smazat účet. Na rozmyšlenou máte 30 dní: přihlaste se a klepněte na Obnovit můj účet. Potom se váš účet i data smažou natrvalo. Chcete si nejdřív uložit kopii? Než začnete, klepněte na Stáhnout moje data. <a {help:account-delete}>Více v nápovědě</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Obvykle odpovídáme do jednoho až dvou dnů.",
     "deleteH2": "Smazání účtu",
-    "deleteIntro": "Svůj účet Daili i jeho data můžete smazat kdykoli, dvěma způsoby:",
+    "deleteIntro": "Svůj účet Daili i jeho data můžete smazat kdykoli, třemi způsoby:",
     "deleteWays": [
       "<strong>V aplikaci:</strong> Nastavení &rarr; Profil &rarr; Smazat účet.",
+      "<strong>Na webu:</strong> na app.daili.app klikněte na své jméno &rarr; Účet &rarr; Smazat účet.",
       "<strong>E-mailem:</strong> napište na <a href=\"mailto:support@daili.app?subject=Smazat%20m%C5%AFj%20%C3%BA%C4%8Det\"><strong>support@daili.app</strong></a> z e-mailové adresy svého účtu, s předmětem „Smazat můj účet“."
     ],
     "deleteWhat": "Co se stane dál: účet se okamžitě deaktivuje a vy dostanete e-mail s odkazem pro zrušení. Po 30denní lhůtě se váš účet a data, která k němu patří (profil a události, seznamy, recepty a fotky, které jste vytvořili), trvale smažou z našich serverů. Pokud si to během těch 30 dnů rozmyslíte, odkaz z e-mailu všechno obnoví. Soubory v offline trezoru leží jen ve vašem telefonu a odstraní se, jakmile se na tom zařízení smaže účet. Pokud máte Daili Plus, zrušte ho nejdřív v App Store nebo na Google Play — smazáním účtu se předplatné nezruší."

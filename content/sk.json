@@ -383,7 +383,7 @@
       },
       {
         "q": "Ako vymažem svoj účet?",
-        "a": "V aplikácii otvor Nastavenia, ťukni na svoje meno a potom na Vymazať účet. Na rozmyslenie máš 30 dní: prihlás sa a ťukni na Obnoviť môj účet. Potom sa tvoj účet aj údaje vymažú natrvalo. Chceš si najprv uložiť kópiu? Skôr než začneš, ťukni na Stiahnuť moje údaje. <a {help:account-delete}>Viac v Pomocníkovi</a>"
+        "a": "V aplikácii otvor Nastavenia, ťukni na svoje meno a potom na Vymazať účet. Na webe klikni na svoje meno a potom v časti Účet na Vymazať účet. Na rozmyslenie máš 30 dní: prihlás sa a ťukni na Obnoviť môj účet. Potom sa tvoj účet aj údaje vymažú natrvalo. Chceš si najprv uložiť kópiu? Skôr než začneš, ťukni na Stiahnuť moje údaje. <a {help:account-delete}>Viac v Pomocníkovi</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Zvyčajne odpovedáme do jedného až dvoch dní.",
     "deleteH2": "Zmazanie účtu",
-    "deleteIntro": "Svoj účet Daili aj s údajmi môžeš kedykoľvek zmazať, dvoma spôsobmi:",
+    "deleteIntro": "Svoj účet Daili aj s údajmi môžeš kedykoľvek zmazať, tromi spôsobmi:",
     "deleteWays": [
       "<strong>V aplikácii:</strong> Nastavenia &rarr; Profil &rarr; Zmazať účet.",
+      "<strong>Na webe:</strong> na app.daili.app klikni na svoje meno &rarr; Účet &rarr; Vymazať účet.",
       "<strong>E-mailom:</strong> napíš na <a href=\"mailto:support@daili.app?subject=Zmaza%C5%A5%20m%C3%B4j%20%C3%BA%C4%8Det\"><strong>support@daili.app</strong></a> z e-mailovej adresy svojho účtu, s predmetom „Zmazať môj účet“."
     ],
     "deleteWhat": "Čo bude ďalej: tvoj účet sa okamžite deaktivuje a dostaneš e-mail s odkazom na zrušenie. Po 30-dňovej lehote sa tvoj účet a údaje, ktoré sú s ním spojené (profil a tebou vytvorené termíny, zoznamy, recepty a fotky), natrvalo zmažú z našich serverov. Ak si to počas tých 30 dní rozmyslíš, odkaz v e-maile všetko obnoví. Súbory v offline trezore žijú len v tvojom telefóne a pri zmazaní účtu sa z tohto zariadenia odstránia. Ak máš Daili Plus, zruš ho najprv v App Store alebo na Google Play — zmazaním účtu sa predplatné nezruší."

@@ -3,7 +3,7 @@ id: anywhere-web
 title: Använd daili i webbläsaren (app.daili.app)
 summary: Planera på datorn, med samma familj, kalender och listor som på telefonen.
 keywords: webb, webbläsare, dator, laptop, bärbar dator, pc, mac, webbplats, online, app.daili.app, stor skärm
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 På en dator kan du använda daili i webbläsaren. Samma konto, samma familj: varje ändring syns på allas telefoner.
 
@@ -13,6 +13,8 @@ På en dator kan du använda daili i webbläsaren. Samma konto, samma familj: va
 
 Anteckningar fungerar här också: skriva, filtrera, tagga, fästa, dela, ställa in en påminnelse (den visas i kalendern) och återställa nyligen raderade. Snabbinmatningen på startsidan kan skapa en anteckning. Familjer med Daili Plus kan lägga till bilder.
 
-Dokument, Foton, röstinspelning och anteckningarnas AI-hjälp stannar i telefonappen. Att radera ditt konto gör du också där.
+Du kan också radera ditt konto här: klicka på ditt namn i menyn och sedan på **Radera konto** under **Konto**.
+
+Dokument, Foton, röstinspelning och anteckningarnas AI-hjälp stannar i telefonappen.
 
 > Note: Webbversionen är gjord för datorer och surfplattor. På en telefon ber den dig använda appen i stället.

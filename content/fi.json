@@ -383,7 +383,7 @@
       },
       {
         "q": "Miten poistan tilini?",
-        "a": "Avaa sovelluksessa Asetukset, napauta nimeäsi ja sitten Poista tili. Sinulla on 30 päivää aikaa muuttaa mielesi: kirjaudu sisään ja napauta Palauta tilini. Sen jälkeen tilisi ja tietosi poistetaan lopullisesti. Haluatko ensin kopion? Napauta Lataa omat tietoni ennen kuin aloitat. <a {help:account-delete}>Lisää ohjeissa</a>"
+        "a": "Avaa sovelluksessa Asetukset, napauta nimeäsi ja sitten Poista tili. Verkossa napsauta nimeäsi ja sitten Poista tili kohdassa Tili. Sinulla on 30 päivää aikaa muuttaa mielesi: kirjaudu sisään ja napauta Palauta tilini. Sen jälkeen tilisi ja tietosi poistetaan lopullisesti. Haluatko ensin kopion? Napauta Lataa omat tietoni ennen kuin aloitat. <a {help:account-delete}>Lisää ohjeissa</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Vastaamme yleensä päivän tai kahden kuluessa.",
     "deleteH2": "Tilin poistaminen",
-    "deleteIntro": "Voit poistaa Daili-tilisi ja sen tiedot milloin tahansa, kahdella tavalla:",
+    "deleteIntro": "Voit poistaa Daili-tilisi ja sen tiedot milloin tahansa, kolmella tavalla:",
     "deleteWays": [
       "<strong>Sovelluksessa:</strong> Asetukset &rarr; Profiili &rarr; Poista tili.",
+      "<strong>Verkossa:</strong> osoitteessa app.daili.app napsauta nimeäsi &rarr; Tili &rarr; Poista tili.",
       "<strong>Sähköpostilla:</strong> kirjoita osoitteeseen <a href=\"mailto:support@daili.app?subject=Poista%20tilini\"><strong>support@daili.app</strong></a> tilisi sähköpostiosoitteesta, aiheena ”Poista tilini”."
     ],
     "deleteWhat": "Mitä sitten tapahtuu: tilisi suljetaan heti ja saat sähköpostin, jossa on peruutuslinkki. Kolmenkymmenen päivän määräajan jälkeen tilisi ja siihen liittyvät tiedot (profiili sekä luomasi menot, listat, reseptit ja kuvat) poistetaan lopullisesti palvelimiltamme. Jos muutat mielesi noiden 30 päivän aikana, sähköpostin linkki palauttaa kaiken. Offline-holvin tiedostot ovat vain puhelimessasi ja poistuvat, kun tili poistetaan siltä laitteelta. Jos sinulla on Daili Plus, peru se ensin App Storessa tai Google Playssa — tilin poistaminen ei peru tilausta."

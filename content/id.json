@@ -383,7 +383,7 @@
       },
       {
         "q": "Bagaimana cara menghapus akunku?",
-        "a": "Di aplikasi, buka Pengaturan, ketuk namamu, lalu Hapus akun. Kamu punya 30 hari untuk berubah pikiran: masuk dan ketuk Pulihkan akun saya. Setelah itu, akun dan datamu dihapus untuk selamanya. Ingin salinannya dulu? Ketuk Unduh data saya sebelum mulai. <a {help:account-delete}>Selengkapnya di Bantuan</a>"
+        "a": "Di aplikasi, buka Pengaturan, ketuk namamu, lalu Hapus akun. Di web, klik namamu, lalu Hapus akun di bawah Akun. Kamu punya 30 hari untuk berubah pikiran: masuk dan ketuk Pulihkan akun saya. Setelah itu, akun dan datamu dihapus untuk selamanya. Ingin salinannya dulu? Ketuk Unduh data saya sebelum mulai. <a {help:account-delete}>Selengkapnya di Bantuan</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Kami biasanya membalas dalam satu sampai dua hari.",
     "deleteH2": "Menghapus akunmu",
-    "deleteIntro": "Kamu bisa menghapus akun Daili beserta datanya kapan saja, lewat dua cara:",
+    "deleteIntro": "Kamu bisa menghapus akun Daili beserta datanya kapan saja, lewat tiga cara:",
     "deleteWays": [
       "<strong>Di aplikasi:</strong> Pengaturan &rarr; Profil &rarr; Hapus akun.",
+      "<strong>Di web:</strong> di app.daili.app, klik namamu &rarr; Akun &rarr; Hapus akun.",
       "<strong>Lewat email:</strong> tulis ke <a href=\"mailto:support@daili.app?subject=Hapus%20akun%20saya\"><strong>support@daili.app</strong></a> dari alamat email akunmu, dengan subjek \"Hapus akun saya\"."
     ],
     "deleteWhat": "Apa yang terjadi berikutnya: akunmu langsung dinonaktifkan dan kamu menerima email berisi tautan pembatalan. Setelah masa tenggang 30 hari, akunmu dan data yang terkait dengannya (profil, serta acara, daftar, resep, dan foto yang kamu buat) dihapus permanen dari server kami. Kalau kamu berubah pikiran dalam 30 hari itu, tautan di email akan memulihkan semuanya. Berkas di brankas luring hanya ada di ponselmu dan ikut terhapus saat akun dihapus di perangkat tersebut. Kalau kamu punya Daili Plus, batalkan dulu di App Store atau Google Play — menghapus akun tidak membatalkan langganan."

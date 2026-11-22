@@ -383,7 +383,7 @@
       },
       {
         "q": "Cum îmi șterg contul?",
-        "a": "În aplicație, deschide Setări, apasă pe numele tău, apoi pe Șterge contul. Ai 30 de zile să te răzgândești: conectează-te și apasă pe Recuperează-mi contul. După aceea, contul și datele tale sunt șterse definitiv. Vrei mai întâi o copie? Apasă pe Descarcă datele mele înainte să începi. <a {help:account-delete}>Mai multe în Ajutor</a>"
+        "a": "În aplicație, deschide Setări, apasă pe numele tău, apoi pe Șterge contul. Pe web, dă clic pe numele tău, apoi, la Cont, pe Șterge contul. Ai 30 de zile să te răzgândești: conectează-te și apasă pe Recuperează-mi contul. După aceea, contul și datele tale sunt șterse definitiv. Vrei mai întâi o copie? Apasă pe Descarcă datele mele înainte să începi. <a {help:account-delete}>Mai multe în Ajutor</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "De obicei răspundem într-o zi sau două.",
     "deleteH2": "Ștergerea contului",
-    "deleteIntro": "Poți șterge oricând contul tău Daili și datele lui, în două feluri:",
+    "deleteIntro": "Poți șterge oricând contul tău Daili și datele lui, în trei feluri:",
     "deleteWays": [
       "<strong>În aplicație:</strong> Setări &rarr; Profil &rarr; Șterge contul.",
+      "<strong>Pe web:</strong> pe app.daili.app, dă clic pe numele tău &rarr; Cont &rarr; Șterge contul.",
       "<strong>Prin e-mail:</strong> scrie la <a href=\"mailto:support@daili.app?subject=%C8%98terge-mi%20contul\"><strong>support@daili.app</strong></a> de pe adresa de e-mail a contului tău, cu subiectul „Șterge-mi contul”."
     ],
     "deleteWhat": "Ce se întâmplă apoi: contul tău este dezactivat imediat și primești un e-mail cu un link de anulare. După o perioadă de grație de 30 de zile, contul tău și datele legate de el (profilul, precum și evenimentele, listele, rețetele și pozele pe care le-ai creat) sunt șterse definitiv de pe serverele noastre. Dacă te răzgândești în aceste 30 de zile, linkul din e-mail readuce totul. Fișierele din seiful offline stau doar pe telefonul tău și sunt eliminate de pe acel dispozitiv când contul este șters. Dacă ai Daili Plus, anulează-l mai întâi din App Store sau Google Play — ștergerea contului nu anulează abonamentul."

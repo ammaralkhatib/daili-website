@@ -383,7 +383,7 @@
       },
       {
         "q": "Hvordan sletter jeg kontoen min?",
-        "a": "Åpne Innstillinger i appen, trykk på navnet ditt og deretter på Slett konto. Du har 30 dager på deg til å angre: logg inn og trykk på Gjenopprett kontoen min. Etter det er kontoen og dataene dine slettet for godt. Vil du ha en kopi først? Trykk på Last ned dataene mine før du begynner. <a {help:account-delete}>Mer i hjelpen</a>"
+        "a": "Åpne Innstillinger i appen, trykk på navnet ditt og deretter på Slett konto. På nettet klikker du på navnet ditt og deretter på Slett konto under Konto. Du har 30 dager på deg til å angre: logg inn og trykk på Gjenopprett kontoen min. Etter det er kontoen og dataene dine slettet for godt. Vil du ha en kopi først? Trykk på Last ned dataene mine før du begynner. <a {help:account-delete}>Mer i hjelpen</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Vi svarer som regel innen en dag eller to.",
     "deleteH2": "Slett kontoen din",
-    "deleteIntro": "Du kan slette Daili-kontoen din og dataene dens når som helst, på to måter:",
+    "deleteIntro": "Du kan slette Daili-kontoen din og dataene dens når som helst, på tre måter:",
     "deleteWays": [
       "<strong>I appen:</strong> Innstillinger &rarr; Profil &rarr; Slett konto.",
+      "<strong>På nettet:</strong> på app.daili.app klikker du på navnet ditt &rarr; Konto &rarr; Slett konto.",
       "<strong>Via e-post:</strong> skriv til <a href=\"mailto:support@daili.app?subject=Slett%20kontoen%20min\"><strong>support@daili.app</strong></a> fra e-postadressen til kontoen, med emnet «Slett kontoen min»."
     ],
     "deleteWhat": "Hva som skjer etterpå: kontoen din blir stengt med én gang, og du får en e-post med en lenke du kan angre med. Etter en frist på 30 dager blir kontoen din og dataene som hører til (profilen samt avtalene, listene, oppskriftene og bildene du har laget) slettet for godt fra serverne våre. Ombestemmer du deg innen de 30 dagene, setter lenken i e-posten alt tilbake. Filer i hvelvet uten nett ligger bare på telefonen din og fjernes når kontoen slettes på den enheten. Har du Daili Plus, må du si det opp i App Store eller Google Play først — abonnementet blir ikke sagt opp av at du sletter kontoen."

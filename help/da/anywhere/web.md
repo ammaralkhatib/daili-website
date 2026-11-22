@@ -3,7 +3,7 @@ id: anywhere-web
 title: Brug daili i din browser (app.daili.app)
 summary: Planlæg på din computer, med den samme familie, kalender og de samme lister som på telefonen.
 keywords: web, browser, computer, bærbar, desktop, pc, mac, hjemmeside, online, app.daili.app, stor skærm
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 På en computer kan du bruge daili i din browser. Samme konto, samme familie: alle ændringer dukker op på alles telefoner.
 
@@ -13,6 +13,8 @@ På en computer kan du bruge daili i din browser. Samme konto, samme familie: al
 
 Noter virker også her: skriv, filtrér, tag, fastgør, del, sæt en påmindelse (den vises i kalenderen), og gendan nyligt slettede. Startskærmens hurtige tilføjelse kan oprette en note. Familier med Daili Plus kan tilføje billeder.
 
-Dokumenter, Billeder, stemmeoptagelse og noternes AI-hjælpere bliver i appen på telefonen. Det gør sletning af din konto også.
+Du kan også slette din konto her: klik på dit navn i menuen og derefter på **Slet konto** under **Konto**.
+
+Dokumenter, Billeder, stemmeoptagelse og noternes AI-hjælpere bliver i appen på telefonen.
 
 > Note: Browserudgaven er lavet til computere og tablets. På en telefon beder den dig om at bruge appen i stedet.

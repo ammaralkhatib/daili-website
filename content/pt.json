@@ -383,7 +383,7 @@
       },
       {
         "q": "Como excluo minha conta?",
-        "a": "No app, abra Configurações, toque no seu nome e depois em Excluir a conta. Você tem 30 dias para mudar de ideia: entre e toque em Recuperar minha conta. Depois disso, sua conta e seus dados são excluídos de vez. Quer uma cópia antes? Toque em Baixar meus dados antes de começar. <a {help:account-delete}>Mais na Ajuda</a>"
+        "a": "No app, abra Configurações, toque no seu nome e depois em Excluir a conta. Na web, clique no seu nome e depois, em Conta, em Excluir a conta. Você tem 30 dias para mudar de ideia: entre e toque em Recuperar minha conta. Depois disso, sua conta e seus dados são excluídos de vez. Quer uma cópia antes? Toque em Baixar meus dados antes de começar. <a {help:account-delete}>Mais na Ajuda</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Costumamos responder em um ou dois dias.",
     "deleteH2": "Excluir sua conta",
-    "deleteIntro": "Você pode excluir sua conta do Daili e os dados dela quando quiser, de duas formas:",
+    "deleteIntro": "Você pode excluir sua conta do Daili e os dados dela quando quiser, de três formas:",
     "deleteWays": [
       "<strong>No aplicativo:</strong> Configurações &rarr; Perfil &rarr; Excluir conta.",
+      "<strong>Na web:</strong> no app.daili.app, clique no seu nome &rarr; Conta &rarr; Excluir a conta.",
       "<strong>Por e-mail:</strong> escreva para <a href=\"mailto:support@daili.app?subject=Excluir%20minha%20conta\"><strong>support@daili.app</strong></a> do e-mail da sua conta, com o assunto &ldquo;Excluir minha conta&rdquo;."
     ],
     "deleteWhat": "O que acontece depois: sua conta é desativada na hora e você recebe um e-mail com um link para cancelar. Passados 30 dias, sua conta e os dados ligados a ela (o perfil e os compromissos, listas, receitas e fotos que você criou) são apagados de vez dos nossos servidores. Se você mudar de ideia dentro desses 30 dias, o link do e-mail restaura tudo. Os arquivos do cofre offline ficam só no seu celular e são removidos quando a conta é excluída naquele aparelho. Se você tem o Daili Plus, cancele antes na App Store ou no Google Play — excluir a conta não cancela a assinatura."

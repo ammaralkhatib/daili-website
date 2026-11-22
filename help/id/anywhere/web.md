@@ -3,7 +3,7 @@ id: anywhere-web
 title: Pakai daili di browser (app.daili.app)
 summary: Buat rencana di komputer, dengan keluarga, kalender, dan daftar yang sama seperti di ponsel.
 keywords: web, browser, komputer, laptop, desktop, pc, mac, situs web, online, app.daili.app, layar besar
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 Di komputer, Anda bisa memakai daili di browser. Akunnya sama, keluarganya sama: setiap perubahan muncul di ponsel semua orang.
 
@@ -13,6 +13,8 @@ Di komputer, Anda bisa memakai daili di browser. Akunnya sama, keluarganya sama:
 
 Catatan juga bisa dipakai di sini: menulis, memfilter, memberi tag, menyematkan, membagikan, memasang pengingat (tampil di kalender), dan memulihkan yang baru dihapus. Pencatatan cepat di Beranda bisa membuat catatan. Keluarga Daili Plus bisa menambahkan gambar.
 
-Dokumen, Foto, merekam suara, dan bantuan AI untuk catatan tetap di aplikasi ponsel. Begitu juga menghapus akun.
+Anda juga bisa menghapus akun di sini: klik nama Anda di menu, lalu klik **Hapus akun** di bawah **Akun**.
+
+Dokumen, Foto, merekam suara, dan bantuan AI untuk catatan tetap di aplikasi ponsel.
 
 > Note: Versi browser dibuat untuk komputer dan tablet. Di ponsel, versi ini meminta Anda memakai aplikasinya.

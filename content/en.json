@@ -433,7 +433,7 @@
       },
       {
         "q": "How do I delete my account?",
-        "a": "In the app, open Settings, tap your name, then Delete account. You have 30 days to change your mind: sign in and tap Restore my account. After that, your account and data are deleted for good. Want a copy first? Tap Download my data before you start. <a {help:account-delete}>More in Help</a>"
+        "a": "In the app, open Settings, tap your name, then Delete account. On the web, click your name, then Delete account under Account. You have 30 days to change your mind: sign in and tap Restore my account. After that, your account and data are deleted for good. Want a copy first? Tap Download my data before you start. <a {help:account-delete}>More in Help</a>"
       }
     ]
   },
@@ -449,9 +449,10 @@
     ],
     "replyTime": "We usually answer within a day or two.",
     "deleteH2": "Delete your account",
-    "deleteIntro": "You can delete your Daili account and its data at any time, in two ways:",
+    "deleteIntro": "You can delete your Daili account and its data at any time, in three ways:",
     "deleteWays": [
       "<strong>In the app:</strong> Settings &rarr; Profile &rarr; Delete account.",
+      "<strong>On the web:</strong> on app.daili.app, click your name &rarr; Account &rarr; Delete account.",
       "<strong>By email:</strong> write to <a href=\"mailto:support@daili.app?subject=Delete%20my%20account\"><strong>support@daili.app</strong></a> from the email address of your account, with the subject &ldquo;Delete my account&rdquo;."
     ],
     "deleteWhat": "What happens next: your account is deactivated immediately and you receive an email with a cancellation link. After a 30-day grace period, your account and the data linked to it (profile, and any events, lists, recipes and photos you created) are permanently deleted from our servers. If you change your mind within those 30 days, the link in the email restores everything. Files in the offline vault live only on your phone and are removed when the account is deleted on that device. If you have Daili Plus, cancel it in the App Store or Google Play first — deleting your account does not cancel the subscription."

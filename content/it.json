@@ -383,7 +383,7 @@
       },
       {
         "q": "Come elimino il mio account?",
-        "a": "Nell'app apri Impostazioni, tocca il tuo nome, poi Elimina l'account. Hai 30 giorni per ripensarci: accedi e tocca Recupera il mio account. Dopo, l'account e i dati vengono eliminati per sempre. Vuoi prima una copia? Tocca Scarica i miei dati prima di iniziare. <a {help:account-delete}>Altro nell'Aiuto</a>"
+        "a": "Nell'app apri Impostazioni, tocca il tuo nome, poi Elimina l'account. Sul web, fai clic sul tuo nome, poi su Elimina l'account sotto Account. Hai 30 giorni per ripensarci: accedi e tocca Recupera il mio account. Dopo, l'account e i dati vengono eliminati per sempre. Vuoi prima una copia? Tocca Scarica i miei dati prima di iniziare. <a {help:account-delete}>Altro nell'Aiuto</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Di solito rispondiamo entro un paio di giorni.",
     "deleteH2": "Eliminare il tuo account",
-    "deleteIntro": "Puoi eliminare il tuo account Daili e i suoi dati quando vuoi, in due modi:",
+    "deleteIntro": "Puoi eliminare il tuo account Daili e i suoi dati quando vuoi, in tre modi:",
     "deleteWays": [
       "<strong>Nell'app:</strong> Impostazioni &rarr; Profilo &rarr; Elimina account.",
+      "<strong>Sul web:</strong> su app.daili.app, fai clic sul tuo nome &rarr; Account &rarr; Elimina l'account.",
       "<strong>Via e-mail:</strong> scrivi a <a href=\"mailto:support@daili.app?subject=Elimina%20il%20mio%20account\"><strong>support@daili.app</strong></a> dall'indirizzo e-mail del tuo account, con oggetto &laquo;Elimina il mio account&raquo;."
     ],
     "deleteWhat": "Che cosa succede dopo: il tuo account viene disattivato subito e ricevi un'e-mail con un link per annullare. Trascorsi 30 giorni, il tuo account e i dati collegati (il profilo e gli impegni, le liste, le ricette e le foto che hai creato) vengono eliminati definitivamente dai nostri server. Se cambi idea entro quei 30 giorni, il link nell'e-mail ripristina tutto. I file nella cassaforte offline stanno solo sul tuo telefono e vengono rimossi quando l'account viene eliminato su quel dispositivo. Se hai Daili Plus, disdicilo prima nell'App Store o su Google Play: eliminare l'account non annulla l'abbonamento."

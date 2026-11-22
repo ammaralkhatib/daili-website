@@ -3,7 +3,7 @@ id: anywhere-web
 title: Bruk daili i nettleseren (app.daili.app)
 summary: Planlegg på datamaskinen, med den samme familien, kalenderen og de samme listene som på telefonen.
 keywords: nett, nettleser, datamaskin, bærbar, pc, mac, nettside, på nett, app.daili.app, stor skjerm
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 På en datamaskin kan du bruke daili i nettleseren. Samme konto, samme familie: alle endringer dukker opp på alles telefoner.
 
@@ -13,6 +13,8 @@ På en datamaskin kan du bruke daili i nettleseren. Samme konto, samme familie: 
 
 Notater fungerer her også: skriv, filtrer, tagg, fest, del, sett en påminnelse (den vises i kalenderen) og gjenopprett nylig slettede. Hurtigregistreringen på startsiden kan lage et notat. Familier med Daili Plus kan legge til bilder.
 
-Dokumenter, Bilder, stemmeopptak og KI-hjelperne for notater blir i appen på telefonen. Det gjør også sletting av kontoen.
+Du kan også slette kontoen din her: klikk på navnet ditt i menyen, og så på **Slett konto** under **Konto**.
+
+Dokumenter, Bilder, stemmeopptak og KI-hjelperne for notater blir i appen på telefonen.
 
 > Note: Nettleserversjonen er laget for datamaskiner og nettbrett. På en telefon ber den deg bruke appen i stedet.

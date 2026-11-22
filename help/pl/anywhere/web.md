@@ -3,7 +3,7 @@ id: anywhere-web
 title: daili w przeglądarce (app.daili.app)
 summary: Planuj na komputerze, z tą samą rodziną, tym samym kalendarzem i tymi samymi listami co w telefonie.
 keywords: web, przeglądarka, komputer, laptop, pc, mac, strona, online, app.daili.app, duży ekran
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 Na komputerze możesz używać daili w przeglądarce. To samo konto, ta sama rodzina: każda zmiana pojawi się na telefonach wszystkich.
 
@@ -13,6 +13,8 @@ Na komputerze możesz używać daili w przeglądarce. To samo konto, ta sama rod
 
 Notatki też tu działają: pisanie, filtrowanie, tagi, przypinanie, udostępnianie, przypomnienia (widać je w kalendarzu) i przywracanie ostatnio usuniętych. Szybkie dodawanie na ekranie głównym może utworzyć notatkę. Rodziny z Daili Plus mogą dodawać zdjęcia.
 
-Dokumenty, Zdjęcia, nagrywanie głosu i funkcje AI w notatkach zostają w aplikacji na telefonie. Tak samo usunięcie konta.
+Tutaj możesz też usunąć konto: kliknij swoje imię w menu, a potem **Usuń konto** w sekcji **Konto**.
+
+Dokumenty, Zdjęcia, nagrywanie głosu i funkcje AI w notatkach zostają w aplikacji na telefonie.
 
 > Note: Wersja w przeglądarce jest zrobiona z myślą o komputerach i tabletach. Na telefonie poprosi cię o skorzystanie z aplikacji.

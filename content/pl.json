@@ -383,7 +383,7 @@
       },
       {
         "q": "Jak usunąć konto?",
-        "a": "W aplikacji otwórz Ustawienia, stuknij swoje imię, a potem Usuń konto. Masz 30 dni na zmianę zdania: zaloguj się i stuknij Przywróć moje konto. Potem twoje konto i dane zostają usunięte na zawsze. Chcesz najpierw kopię? Zanim zaczniesz, stuknij Pobierz moje dane. <a {help:account-delete}>Więcej w Pomocy</a>"
+        "a": "W aplikacji otwórz Ustawienia, stuknij swoje imię, a potem Usuń konto. W przeglądarce kliknij swoje imię, a potem Usuń konto w sekcji Konto. Masz 30 dni na zmianę zdania: zaloguj się i stuknij Przywróć moje konto. Potem twoje konto i dane zostają usunięte na zawsze. Chcesz najpierw kopię? Zanim zaczniesz, stuknij Pobierz moje dane. <a {help:account-delete}>Więcej w Pomocy</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Zwykle odpowiadamy w ciągu dnia lub dwóch.",
     "deleteH2": "Usuń swoje konto",
-    "deleteIntro": "Konto Daili i powiązane z nim dane możesz usunąć w każdej chwili, na dwa sposoby:",
+    "deleteIntro": "Konto Daili i powiązane z nim dane możesz usunąć w każdej chwili, na trzy sposoby:",
     "deleteWays": [
       "<strong>W aplikacji:</strong> Ustawienia &rarr; Profil &rarr; Usuń konto.",
+      "<strong>W przeglądarce:</strong> na app.daili.app kliknij swoje imię &rarr; Konto &rarr; Usuń konto.",
       "<strong>Mailem:</strong> napisz na <a href=\"mailto:support@daili.app?subject=Usu%C5%84%20moje%20konto\"><strong>support@daili.app</strong></a> z adresu e-mail przypisanego do konta, w temacie wpisując „Usuń moje konto”."
     ],
     "deleteWhat": "Co dzieje się dalej: konto zostaje natychmiast wyłączone, a ty dostajesz e-mail z linkiem do anulowania. Po 30 dniach karencji twoje konto i powiązane z nim dane (profil oraz utworzone przez ciebie wydarzenia, listy, przepisy i zdjęcia) zostają trwale usunięte z naszych serwerów. Jeśli w ciągu tych 30 dni zmienisz zdanie, link z e-maila przywróci wszystko. Pliki w sejfie offline leżą tylko na twoim telefonie i są usuwane wraz z kontem na tym urządzeniu. Jeśli masz Daili Plus, najpierw anuluj go w App Store lub Google Play — usunięcie konta nie anuluje subskrypcji."

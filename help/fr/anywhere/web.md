@@ -3,7 +3,7 @@ id: anywhere-web
 title: Utiliser daili dans ton navigateur (app.daili.app)
 summary: Organise-toi sur ton ordinateur, avec la même famille, le même agenda et les mêmes listes que sur ton téléphone.
 keywords: web, navigateur, ordinateur, portable, ordinateur de bureau, pc, mac, site, en ligne, app.daili.app, grand écran
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-22
 ---
 Sur un ordinateur, tu peux utiliser daili dans ton navigateur. Même compte, même famille : chaque changement apparaît sur les téléphones de tout le monde.
 
@@ -13,6 +13,8 @@ Sur un ordinateur, tu peux utiliser daili dans ton navigateur. Même compte, mê
 
 Les notes marchent ici aussi : écrire, filtrer, ajouter des étiquettes, épingler, partager, mettre un rappel (il s'affiche dans l'agenda) et restaurer les notes supprimées récemment. La saisie rapide de l'accueil peut créer une note. Les familles Daili Plus peuvent ajouter des images.
 
-Les documents, les photos, l'enregistrement de la voix et les aides IA des notes restent dans l'app du téléphone. Tout comme la suppression de ton compte.
+Tu peux aussi supprimer ton compte ici : clique sur ton nom dans le menu, puis sur **Supprimer le compte** sous **Compte**.
+
+Les documents, les photos, l'enregistrement de la voix et les aides IA des notes restent dans l'app du téléphone.
 
 > Note: La version navigateur est faite pour les ordinateurs et les tablettes. Sur un téléphone, elle te demande d'utiliser l'app.

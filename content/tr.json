@@ -383,7 +383,7 @@
       },
       {
         "q": "Hesabımı nasıl silerim?",
-        "a": "Uygulamada Ayarlar'ı açın, adınıza ve ardından Hesabı sil'e dokunun. Fikrinizi değiştirmek için 30 gününüz var: giriş yapın ve Hesabımı geri al'a dokunun. Bu sürenin sonunda hesabınız ve verileriniz kalıcı olarak silinir. Önce bir kopyasını mı istiyorsunuz? Başlamadan önce Verilerimi indir'e dokunun. <a {help:account-delete}>Yardımda daha fazlası</a>"
+        "a": "Uygulamada Ayarlar'ı açın, adınıza ve ardından Hesabı sil'e dokunun. Web'de adınıza, ardından Hesap altında Hesabı sil'e tıklayın. Fikrinizi değiştirmek için 30 gününüz var: giriş yapın ve Hesabımı geri al'a dokunun. Bu sürenin sonunda hesabınız ve verileriniz kalıcı olarak silinir. Önce bir kopyasını mı istiyorsunuz? Başlamadan önce Verilerimi indir'e dokunun. <a {help:account-delete}>Yardımda daha fazlası</a>"
       }
     ]
   },
@@ -399,9 +399,10 @@
     ],
     "replyTime": "Genellikle bir iki gün içinde yanıtlıyoruz.",
     "deleteH2": "Hesabınızı silme",
-    "deleteIntro": "Daili hesabınızı ve verilerini istediğiniz zaman, iki yoldan silebilirsiniz:",
+    "deleteIntro": "Daili hesabınızı ve verilerini istediğiniz zaman, üç yoldan silebilirsiniz:",
     "deleteWays": [
       "<strong>Uygulamada:</strong> Ayarlar &rarr; Profil &rarr; Hesabı sil.",
+      "<strong>Web'de:</strong> app.daili.app'te adınıza tıklayın &rarr; Hesap &rarr; Hesabı sil.",
       "<strong>E-postayla:</strong> hesabınızın e-posta adresinden <a href=\"mailto:support@daili.app?subject=Hesab%C4%B1m%C4%B1%20sil\"><strong>support@daili.app</strong></a> adresine «Hesabımı sil» konusuyla yazın."
     ],
     "deleteWhat": "Sonrasında ne oluyor: hesabınız hemen devre dışı bırakılır ve size iptal bağlantısı içeren bir e-posta gelir. 30 günlük süre dolduktan sonra hesabınız ve ona bağlı veriler (profil ile oluşturduğunuz etkinlikler, listeler, tarifler ve fotoğraflar) sunucularımızdan kalıcı olarak silinir. O 30 gün içinde fikrinizi değiştirirseniz e-postadaki bağlantı her şeyi geri getirir. Çevrimdışı kasadaki dosyalar yalnızca telefonunuzdadır ve hesap o cihazda silindiğinde kaldırılır. Daili Plus'ınız varsa önce App Store veya Google Play'den iptal edin — hesabınızı silmek aboneliği iptal etmez."
