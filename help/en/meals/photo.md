@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.7.0
 updated: 2026-11-10
 media: meals-photo
-order: 4
+order: 5
 related: meals-youtube, meals-instagram, meals-paste, meals-add-recipe, calendar-photo, account-plus
 tipTitle: Grandma's recipe card, saved in seconds
 tipBody: Photograph a cookbook page or a handwritten card and daili writes the recipe for you.

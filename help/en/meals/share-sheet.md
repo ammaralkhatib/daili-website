@@ -8,7 +8,7 @@ routes: /notes
 since: 1.15.0
 updated: 2026-11-10
 media: meals-share-sheet
-order: 2
+order: 3
 related: meals-import-link, meals-instagram, calendar-photo, notes-notes, meals-youtube, calendar-add-event
 ---
 Found something in another app? Send it to daili.

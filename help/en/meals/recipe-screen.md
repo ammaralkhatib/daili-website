@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.16.2
 updated: 2026-11-13
 media: meals-recipe-screen
-order: 2
+order: 3
 related: meals-add-recipe, meals-to-shopping, meals-cook-mode, meals-plan-week
 ---
 A recipe shows more than its steps: what the family thinks of it, and how often it was on the menu.

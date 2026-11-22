@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.4.0
 updated: 2026-11-10
 media: meals-import-link
-order: 2
+order: 3
 related: meals-share-sheet, meals-paste, meals-youtube, meals-instagram, meals-search-online, meals-add-recipe
 tipTitle: Save recipes from any website
 tipBody: Paste a link to a recipe page, and daili fills in the ingredients and steps for you.

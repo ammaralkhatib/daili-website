@@ -9,7 +9,7 @@ tryIt: /recipes/search-online
 since: 1.0.0
 updated: 2026-11-05
 media: meals-search-online
-order: 6
+order: 7
 related: meals-import-link, meals-plan-week
 ---
 Out of ideas? Search recipe sites for any dish without leaving daili.

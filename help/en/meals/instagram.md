@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.16.0
 updated: 2026-11-13
 media: meals-instagram
-order: 3
+order: 4
 related: meals-youtube, meals-share-sheet, meals-photo, meals-paste, meals-add-recipe, account-plus
 ---
 Found a recipe on Instagram? daili saves it for you, on iPhone and Android.

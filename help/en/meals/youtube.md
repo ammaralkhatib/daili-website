@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.7.0
 updated: 2026-11-10
 media: meals-youtube
-order: 3
+order: 4
 related: meals-instagram, meals-import-link, meals-share-sheet, meals-paste, meals-add-recipe, account-plus
 tipTitle: Turn a YouTube video into a recipe
 tipBody: Paste a cooking video link and daili writes the ingredients and steps for you.

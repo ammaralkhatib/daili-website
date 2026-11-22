@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.0.0
 updated: 2026-11-10
 media: meals-copy-week
-order: 10
+order: 11
 related: meals-plan-week, meals-to-shopping
 ---
 Lots of families eat the same things most weeks. Copy them instead of adding each meal again.

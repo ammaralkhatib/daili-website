@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 99.0.0
 updated: 2026-11-19
 mediaPending: the Recipes + menu with "From another app" circled
-order: 6
+order: 7
 related: meals-add-recipe, meals-paste, meals-import-link
 ---
 Moving from Paprika? Bring your recipes over in one go, with photos.

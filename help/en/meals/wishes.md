@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.16.0
 updated: 2026-11-10
 media: meals-wishes
-order: 8
+order: 9
 related: meals-plan-week, meals-suggest, notifications-family
 ---
 Pancakes again? Let everyone say what they'd like to eat.

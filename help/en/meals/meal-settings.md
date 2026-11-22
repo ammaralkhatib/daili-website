@@ -9,7 +9,7 @@ tryIt: /meal-plan/settings
 since: 1.15.0
 updated: 2026-11-10
 media: meals-meal-settings
-order: 11
+order: 12
 related: meals-plan-week, meals-leftovers-and-eating-out, meals-suggest
 ---
 Tell daili how your family eats.

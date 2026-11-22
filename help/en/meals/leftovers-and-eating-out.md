@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.15.0
 updated: 2026-11-05
 media: meals-add-meal
-order: 12
+order: 13
 related: meals-plan-week, meals-meal-settings, anywhere-widgets
 ---
 Not every evening needs cooking. Plan that too, so everyone knows.

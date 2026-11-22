@@ -9,7 +9,7 @@ tryIt: /recipes
 since: 1.15.0
 updated: 2026-11-05
 media: meals-cook-mode
-order: 13
+order: 14
 related: meals-add-recipe, meals-plan-week
 ---
 Flour on your fingers? Cook mode stops the screen from going dark.

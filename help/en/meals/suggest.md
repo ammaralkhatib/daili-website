@@ -9,7 +9,7 @@ tryIt: /meal-plan
 since: 1.7.0
 updated: 2026-11-10
 media: meals-suggest
-order: 8
+order: 9
 related: meals-plan-week, meals-wishes, meals-to-shopping, meals-add-recipe, meals-photo, account-plus
 tipTitle: Out of dinner ideas?
 tipBody: Tap AI plan at the bottom of the meal plan, and daili suggests a dinner for every open evening.
