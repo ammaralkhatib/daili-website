@@ -9,7 +9,7 @@ tryIt: /lists/todos
 since: 1.4.0
 updated: 2026-09-30
 media: lists-all-mine
-order: 8
+order: 9
 related: lists-assign, lists-todos
 ---
 In a busy family it helps to see only your own tasks.

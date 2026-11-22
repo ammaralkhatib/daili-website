@@ -9,7 +9,7 @@ tryIt: /lists/shopping
 since: 1.0.0
 updated: 2026-11-16
 media: lists-edit-list
-order: 9
+order: 10
 related: lists-shopping, lists-categories, lists-archive-templates
 ---
 ![The Shopping screen with a list's ⋯ menu open. Edit is circled, with Delete under it.](lists-edit-list)

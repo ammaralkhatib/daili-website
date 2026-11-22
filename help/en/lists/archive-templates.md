@@ -9,7 +9,7 @@ tryIt: /lists/shopping
 since: 1.14.0
 updated: 2026-11-10
 media: lists-archive
-order: 10
+order: 11
 related: lists-edit-list, lists-shopping, lists-todos
 ---
 Done with a list but want to keep it? Archive it instead of deleting it.

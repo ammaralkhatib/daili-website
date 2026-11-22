@@ -9,7 +9,7 @@ tryIt: /lists/todos
 since: 1.0.0
 updated: 2026-10-27
 media: lists-repeating
-order: 7
+order: 8
 related: lists-due-reminders, lists-todos
 ---
 A repeating to-do is one task that comes back. When you tick it, it moves on to its next due date.

@@ -9,7 +9,7 @@ tryIt: /lists/todos
 since: 1.5.0
 updated: 2026-09-30
 media: lists-assign
-order: 5
+order: 6
 related: lists-todos, lists-all-mine, family-children
 ---
 A task with a name on it gets done. You can give it to one person or to several.

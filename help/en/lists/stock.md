@@ -8,7 +8,7 @@ routes: /lists/shopping, /lists/new, /lists/:id
 tryIt: /lists/shopping
 since: 1.16.0
 updated: 2026-11-10
-order: 11
+order: 12
 media: lists-stock
 related: lists-shopping, lists-categories, meals-to-shopping
 ---

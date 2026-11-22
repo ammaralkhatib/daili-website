@@ -9,7 +9,7 @@ tryIt: /lists/todos
 since: 1.4.0
 updated: 2026-11-05
 media: lists-due-reminders
-order: 6
+order: 7
 related: lists-todos, lists-repeating, lists-assign
 ---
 A to-do can have a due day and a reminder. The reminder goes to the people the task is given to, or to everyone if nobody has it.
