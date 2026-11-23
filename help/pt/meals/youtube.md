@@ -5,7 +5,7 @@ summary: Cole o link de um vídeo de culinária, e o daili escreve os ingredient
 keywords: youtube, vídeo, receita em vídeo, vídeo de culinária, importar vídeo, link, ia, salvar receita, shorts
 tipTitle: Transforme um vídeo do YouTube em receita
 tipBody: Cole o link de um vídeo de culinária, e o daili escreve os ingredientes e os passos para você.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Viu um prato no YouTube? O daili escreve a receita.
 
@@ -20,4 +20,4 @@ A receita sai no idioma do daili. Sem uma foto sua, a imagem do vídeo aparece n
 
 Ler um vídeo com IA é só para adultos (18+); o daili pergunta uma vez. Qualquer pessoa pode importar um vídeo cuja descrição tenha link para uma página de receita. No app.daili.app, só esses vídeos funcionam.
 
-> Note: Só vídeos públicos de até 25 minutos. Ler um vídeo com IA usa uma ação de IA: 3 por mês são grátis, e o Daili Plus dá 30. Uma receita pelo link da descrição é grátis.
+> Note: Só vídeos públicos de até 25 minutos. Ler um vídeo com IA usa uma ação de IA: 3 por mês são grátis, e o Daili Plus dá 50. Uma receita pelo link da descrição é grátis.

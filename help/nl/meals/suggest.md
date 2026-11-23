@@ -5,7 +5,7 @@ summary: Eén tik stelt voor elke vrije avond van de week een avondeten voor —
 keywords: menuplanner, voorstellen, ai, plan mijn week, ai-plan, ideeën voor avondeten, wat eten we, weekmenu, snelle gerechten, vegetarisch, kinderen
 tipTitle: Geen ideeën voor het avondeten?
 tipBody: Tik onderaan de menuplanner op AI-plan, en daili stelt voor elke vrije avond een avondeten voor.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![Het tabblad Planning. AI-plan in de balk onderaan is omcirkeld.](meals-suggest)
 
@@ -21,4 +21,4 @@ Zijn er wensen van het gezin, dan zet een schakelaar die eerst in, één per dag
 
 > Note: AI is voor volwassenen (18+). Je recepttitels, recente maaltijden, wensen en wat je typt gaan naar de AI van Google, die niets bewaart. daili vraagt het je eerst, en via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
 
-> Note: Een voorstel kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 30.
+> Note: Een voorstel kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 50.

@@ -3,7 +3,7 @@ id: meals-instagram
 title: Ulož recept z Instagramu
 summary: Zdieľaj alebo vlož verejný príspevok z Instagramu a daili prečíta recept z textu príspevku, aj s jeho obrázkom.
 keywords: instagram, reel, príspevok, popis, recept, zdieľať, uložiť recept, ai, import, snímky obrazovky
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Našiel si recept na Instagrame? daili ti ho uloží, na iPhone aj v Androide.
 
@@ -17,4 +17,4 @@ daili číta len text príspevku, nie jeho obrázky ani video. Recept nie je nap
 
 Príspevok otvorí tvoj telefón. Do AI od Googlu ide len jeho text a nič sa tam neukladá.
 
-> Note: Len verejné príspevky. Prečítanie spotrebuje jednu akciu AI: 3 mesačne sú zadarmo, Daili Plus dáva 30. AI je pre dospelých (18+); daili sa opýta raz. Bez AI sa text otvorí v **Vložiť text receptu** a roztriedi sa priamo v telefóne.
+> Note: Len verejné príspevky. Prečítanie spotrebuje jednu akciu AI: 3 mesačne sú zadarmo, Daili Plus dáva 50. AI je pre dospelých (18+); daili sa opýta raz. Bez AI sa text otvorí v **Vložiť text receptu** a roztriedi sa priamo v telefóne.

@@ -2,17 +2,17 @@
 id: account-plus
 topic: account
 title: Daili Plus: more AI actions and Daili cloud
-summary: One yearly plan for the whole family: 30 AI actions a month and 5 GB of Daili cloud. Everything else stays free.
+summary: One yearly plan for the whole family: 50 AI actions a month and 5 GB of Daili cloud. Everything else stays free.
 keywords: pricing, how much, upgrade, premium, paid, billing, money, fee, subscribe, renew, charge, expensive
 routes: /settings
 tryIt: /settings
 since: 1.9.0
-updated: 2026-10-22
+updated: 2026-11-23
 media: plus-sheet
 order: 10
 related: notes-pictures-voice, calendar-photo, meals-suggest, account-delete
 ---
-Every family gets 3 free AI actions a month. Plus gives 30, shared by the family, and 5 GB of Daili cloud. Months are calendar months.
+Every family gets 3 free AI actions a month. Plus gives 50, shared by the family, and 5 GB of Daili cloud. Months are calendar months.
 
 ![The Daili Plus sheet: what you get, the yearly price and the Get Plus button.](plus-sheet)
 

@@ -5,7 +5,7 @@ summary: 拍下食谱书的一页、手写卡片或截图，daili 就会用你�
 keywords: 照片, 相机, 食谱书, 手写, 截图, 扫描食谱, ai, 保存食谱, 图片, 多张照片
 tipTitle: 奶奶的食谱卡，几秒就存好
 tipBody: 拍下食谱书的一页或手写卡片，daili 帮你写好食谱。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 食谱在纸上或截图里？daili 帮你整理成文字。
 
@@ -20,4 +20,4 @@ translatedFrom: 2026-11-10
 
 > Note: AI 仅限成年人（18 岁以上）；daili 会问一次。图片会发送给 Google 的 AI 读取，随后删除，发送时不带位置等相机信息。daili 会先问你，在**设置** → **AI 功能（Google Gemini）**里可以关掉。
 
-> Note: 读取一次使用 1 次 AI 操作，就算有 5 张图片也一样：每月 3 次免费，Daili Plus 提供 30 次。
+> Note: 读取一次使用 1 次 AI 操作，就算有 5 张图片也一样：每月 3 次免费，Daili Plus 提供 50 次。

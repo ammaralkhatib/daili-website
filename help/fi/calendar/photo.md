@@ -5,7 +5,7 @@ summary: Ota kuva koulun tiedotteesta, kutsusta tai mainoksesta – daili poimii
 keywords: kuva, skannaa, kirje, kutsu, mainos, päivämäärät, tekoäly, kamera, koulu, lue kuva, työvuorolista, vuorot
 tipTitle: Tee koulun tiedotteesta tapahtumia
 tipBody: Napauta Uusi tapahtuma -näkymässä skannauskuvaketta, kuvaa kirje, niin daili täyttää päivämäärät.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Päivämääriä paperilla? **Uusi tapahtuma** -näkymän skannauspainike lukee ne puolestasi.
 
@@ -23,4 +23,4 @@ Painettu teksti toimii parhaiten, käsiala heikommin. PDF-tiedostosta ota kuva s
 
 > Note: Tekoäly on aikuisille (18+). Kuva lähetetään luettavaksi Googlen tekoälylle ilman kameratietoja, kuten sijaintia, ja poistetaan sen jälkeen. **Asetukset** → **Tekoälyominaisuudet (Google Gemini)** kytkee sen pois.
 
-> Note: Yksi kuvaluku käyttää yhden tekoälytoiminnon. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 30.
+> Note: Yksi kuvaluku käyttää yhden tekoälytoiminnon. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 50.

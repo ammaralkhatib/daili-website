@@ -5,7 +5,7 @@ summary: Bir yemek kitabı sayfasının, el yazısı bir kartın ya da ekran gö
 keywords: fotoğraf, kamera, yemek kitabı, el yazısı, ekran görüntüsü, tarif tara, yapay zekâ, tarif kaydet, resim, birkaç fotoğraf
 tipTitle: Anneannenin tarif kartı, saniyeler içinde kayıtlı
 tipBody: Bir yemek kitabı sayfasının ya da el yazısı bir kartın fotoğrafını çek, daili tarifi senin için yazsın.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Tarifin kâğıtta ya da bir ekran görüntüsünde mi? daili onu senin için yazıya döker.
 
@@ -20,4 +20,4 @@ Tarif, sayfa hangi dilde olursa olsun daili'nin dilinde çıkar. En iyi basılı
 
 > Note: Yapay zekâ yetişkinler içindir (18+); daili bir kez sorar. Resimler, konum gibi kamera bilgileri olmadan okunmak için Google'ın yapay zekâsına gönderilir, sonra silinir. daili önce sana sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
 
-> Note: Bir okuma, 5 resimle bile bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 30 olur.
+> Note: Bir okuma, 5 resimle bile bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 50 olur.

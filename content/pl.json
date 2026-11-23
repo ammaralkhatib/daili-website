@@ -216,7 +216,7 @@
         "s": "Dotknij, by dodać na czwartek",
         "add": "Dodaj do jadłospisu"
       },
-      "fine": "Funkcje Daili Plus korzystają z Google Gemini — i tylko wtedy, gdy ich używasz. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo; Daili Plus daje 30 oraz 5 GB chmury Daili, za €9.99 rocznie."
+      "fine": "Funkcje Daili Plus korzystają z Google Gemini — i tylko wtedy, gdy ich używasz. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo; Daili Plus daje 50 oraz 5 GB chmury Daili, za €9.99 rocznie."
     },
     "flow": {
       "h2": "Zobacz, jak to działa",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Ile kosztuje Daili?",
-        "a": "Z Daili korzystasz za darmo — kalendarz, listy, zadania, nawyki, notatki, przepisy i nie tylko, bez reklam i bez sprzedaży danych. Daili Plus jest opcjonalny: jedna roczna cena dla całej rodziny (€9.99 w strefie euro; aplikacja pokaże cenę w twojej walucie) daje 30 akcji AI miesięcznie i 5 GB chmury Daili na zdjęcia i nagrania w notatkach. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo."
+        "a": "Z Daili korzystasz za darmo — kalendarz, listy, zadania, nawyki, notatki, przepisy i nie tylko, bez reklam i bez sprzedaży danych. Daili Plus jest opcjonalny: jedna roczna cena dla całej rodziny (€9.99 w strefie euro; aplikacja pokaże cenę w twojej walucie) daje 50 akcji AI miesięcznie i 5 GB chmury Daili na zdjęcia i nagrania w notatkach. Każda rodzina dostaje 3 akcje AI miesięcznie za darmo."
       },
       {
         "q": "Czy jest wersja przeglądarkowa?",

@@ -216,7 +216,7 @@
         "s": "Ketuk untuk hari Kamis",
         "add": "Tambah ke rencana makan"
       },
-      "fine": "Fitur Daili Plus memakai Google Gemini, dan hanya saat kamu menggunakannya. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis; Daili Plus memberi 30, ditambah 5 GB Cloud Daili, seharga €9.99 per tahun."
+      "fine": "Fitur Daili Plus memakai Google Gemini, dan hanya saat kamu menggunakannya. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis; Daili Plus memberi 50, ditambah 5 GB Cloud Daili, seharga €9.99 per tahun."
     },
     "flow": {
       "h2": "Lihat cara kerjanya",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Berapa harga Daili?",
-        "a": "Daili gratis dipakai — kalender, daftar, tugas, kebiasaan, catatan, resep, dan lainnya, tanpa iklan dan tanpa penjualan data. Daili Plus bersifat opsional: satu harga tahunan untuk seluruh keluarga (€9.99 di kawasan euro; aplikasi menampilkan harga dalam mata uangmu) memberi 30 aksi AI per bulan dan 5 GB Cloud Daili untuk gambar dan rekaman di catatan. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis."
+        "a": "Daili gratis dipakai — kalender, daftar, tugas, kebiasaan, catatan, resep, dan lainnya, tanpa iklan dan tanpa penjualan data. Daili Plus bersifat opsional: satu harga tahunan untuk seluruh keluarga (€9.99 di kawasan euro; aplikasi menampilkan harga dalam mata uangmu) memberi 50 aksi AI per bulan dan 5 GB Cloud Daili untuk gambar dan rekaman di catatan. Setiap keluarga mendapat 3 aksi AI per bulan secara gratis."
       },
       {
         "q": "Apakah ada versi web?",

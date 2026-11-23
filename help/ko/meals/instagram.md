@@ -3,7 +3,7 @@ id: meals-instagram
 title: Instagram에서 레시피 저장하기
 summary: 공개 Instagram 게시물을 공유하거나 붙여 넣으면 daili가 게시물 글에서 레시피를 읽고 사진도 함께 가져와요.
 keywords: instagram, 인스타그램, 인스타, 릴스, 게시물, 캡션, 레시피, 공유, 레시피 저장, ai, 스크린샷
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Instagram에서 레시피를 찾았나요? iPhone에서도 Android에서도 daili가 저장해 줘요.
 
@@ -17,4 +17,4 @@ daili는 게시물의 글만 읽고 사진이나 동영상은 읽지 않아요. 
 
 게시물은 내 휴대폰에서 열려요. Google의 AI로는 글만 보내지고, 그곳에는 아무것도 저장되지 않아요.
 
-> Note: 공개 게시물만 돼요. 읽기는 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 30회예요. AI는 성인(18세 이상)용이에요. daili가 한 번 물어봐요. AI 없이 쓰면 글이 **레시피 글 붙여넣기**에서 열리고 휴대폰에서 정리돼요.
+> Note: 공개 게시물만 돼요. 읽기는 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 50회예요. AI는 성인(18세 이상)용이에요. daili가 한 번 물어봐요. AI 없이 쓰면 글이 **레시피 글 붙여넣기**에서 열리고 휴대폰에서 정리돼요.

@@ -3,7 +3,7 @@ id: meals-instagram
 title: Salvare una ricetta da Instagram
 summary: Condividi o incolla un post pubblico di Instagram, e daili legge la ricetta dal testo del post, con la sua immagine.
 keywords: instagram, reel, post, didascalia, ricetta, condividi, salvare ricetta, ia, importare, screenshot
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Hai trovato una ricetta su Instagram? daili la salva per te, su iPhone e Android.
 
@@ -17,4 +17,4 @@ daili legge solo il testo del post, non le immagini né il video. Nessuna ricett
 
 È il tuo telefono ad aprire il post. Solo il suo testo va all'IA di Google, che non salva nulla.
 
-> Note: Solo post pubblici. La lettura usa un'azione IA: 3 al mese sono gratis, Daili Plus ne dà 30. L'IA è solo per adulti (18+); daili te lo chiede una volta. Senza IA, il testo si apre in **Incolla il testo della ricetta**, ordinato sul tuo telefono.
+> Note: Solo post pubblici. La lettura usa un'azione IA: 3 al mese sono gratis, Daili Plus ne dà 50. L'IA è solo per adulti (18+); daili te lo chiede una volta. Senza IA, il testo si apre in **Incolla il testo della ricetta**, ordinato sul tuo telefono.

@@ -5,7 +5,7 @@ summary: 拍下學校通知單、邀請卡或傳單，daili 幫你找出日期�
 keywords: 照片, 掃描, 通知單, 邀請卡, 傳單, 日期, ai, 相機, 學校, 讀取照片, 班表, 排班
 tipTitle: 把學校通知單變成行程
 tipBody: 在新的行程裡點掃描圖示，拍下通知單，daili 會填好日期。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 日期寫在紙上？**新的行程**裡的掃描按鈕會幫你讀出來。
 
@@ -23,4 +23,4 @@ translatedFrom: 2026-11-10
 
 > Note: AI 只限成年人（18 歲以上）。照片會傳給 Google 的 AI 讀取，之後就刪除，傳送時不含位置等相機資訊。在**設定** → **AI 功能（Google Gemini）**裡可以關掉。
 
-> Note: 讀取一張照片使用 1 次 AI 操作。每個家庭每月有 3 次免費的 AI 操作；Daili Plus 提供 30 次。
+> Note: 讀取一張照片使用 1 次 AI 操作。每個家庭每月有 3 次免費的 AI 操作；Daili Plus 提供 50 次。

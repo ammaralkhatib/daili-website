@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: mais ações de IA e Nuvem Daili
-summary: Um plano anual para toda a família: 30 ações de IA por mês e 5 GB de Nuvem Daili. Todo o resto continua grátis.
+summary: Um plano anual para toda a família: 50 ações de IA por mês e 5 GB de Nuvem Daili. Todo o resto continua grátis.
 keywords: quanto, valor, tarifa, preços, pagar, pago, premium, comprar, upgrade, dinheiro, renovar, caro
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Toda família ganha 3 ações de IA grátis por mês. O Daili Plus dá 30, compartilhadas por toda a família, e 5 GB de Nuvem Daili. Os meses são meses do calendário.
+Toda família ganha 3 ações de IA grátis por mês. O Daili Plus dá 50, compartilhadas por toda a família, e 5 GB de Nuvem Daili. Os meses são meses do calendário.
 
 ![A janela Daili Plus: o que você ganha, o preço anual e o botão Assinar o Plus.](plus-sheet)
 

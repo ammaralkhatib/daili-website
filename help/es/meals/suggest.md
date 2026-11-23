@@ -5,7 +5,7 @@ summary: Un toque sugiere una cena para cada noche libre de la semana — de tus
 keywords: menú, sugerir, ia, planificar mi semana, plan ia, ideas para cenar, qué cenamos, menú semanal, cenas rápidas, vegetariano, niños
 tipTitle: ¿Sin ideas para cenar?
 tipBody: Toca Plan IA abajo en el menú y daili sugiere una cena para cada noche libre.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![La pestaña Plan. Plan IA, en la barra de abajo, está marcado con un círculo.](meals-suggest)
 
@@ -21,4 +21,4 @@ Si hay deseos de la familia, un interruptor los pone primero, uno por día, si e
 
 > Note: La IA es solo para adultos (18+). Los títulos de tus recetas, las comidas recientes, los deseos y lo que escribes van a la IA de Google, que no guarda nada. daili te pregunta antes, y **Ajustes** → **Funciones de IA (Google Gemini)** lo desactiva.
 
-> Note: Una sugerencia usa una acción de IA: 3 al mes son gratis, Daili Plus da 30.
+> Note: Una sugerencia usa una acción de IA: 3 al mes son gratis, Daili Plus da 50.

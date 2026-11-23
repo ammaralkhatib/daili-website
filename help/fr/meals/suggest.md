@@ -5,7 +5,7 @@ summary: Un geste propose un dîner pour chaque soir libre de la semaine — tir
 keywords: menus, proposer, ia, planifier ma semaine, plan ia, idées de dîner, on mange quoi, menu de la semaine, dîners rapides, végétarien, enfants
 tipTitle: Plus d’idées pour le dîner ?
 tipBody: Touche Plan IA en bas de Menus, et daili propose un dîner pour chaque soir libre.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![L'onglet Planning. Plan IA dans la barre du bas est entouré.](meals-suggest)
 
@@ -21,4 +21,4 @@ S'il y a des envies de la famille, un interrupteur les place en premier, une par
 
 > Note: L'IA est réservée aux adultes (18+). Les titres de tes recettes, les repas récents, les envies et ce que tu écris sont envoyés à l’IA de Google, qui ne conserve rien. daili te demande d’abord, et **Paramètres** → **Fonctions IA (Google Gemini)** la désactive.
 
-> Note: Une proposition utilise une action IA : 3 par mois sont gratuites, Daili Plus en donne 30.
+> Note: Une proposition utilise une action IA : 3 par mois sont gratuites, Daili Plus en donne 50.

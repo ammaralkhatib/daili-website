@@ -3,7 +3,7 @@ id: meals-instagram
 title: Tallenna resepti Instagramista
 summary: Jaa tai liitä julkinen Instagram-julkaisu, niin daili lukee reseptin julkaisun tekstistä ja ottaa mukaan sen kuvan.
 keywords: instagram, reel, julkaisu, kuvateksti, resepti, jaa, tallenna resepti, tekoäly, tuo, kuvakaappaukset
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Löysitkö reseptin Instagramista? daili tallentaa sen puolestasi, iPhonessa ja Androidilla.
 
@@ -17,4 +17,4 @@ daili lukee vain julkaisun tekstin, ei sen kuvia tai videota. Eikö reseptiä ol
 
 Puhelimesi avaa julkaisun. Vain sen teksti lähetetään Googlen tekoälylle, joka ei tallenna mitään.
 
-> Note: Vain julkiset julkaisut. Lukeminen käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 30. Tekoäly on aikuisille (18+); daili kysyy kerran. Ilman tekoälyä teksti avautuu kohtaan **Liitä reseptin teksti**, ja puhelimesi lajittelee sen.
+> Note: Vain julkiset julkaisut. Lukeminen käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 50. Tekoäly on aikuisille (18+); daili kysyy kerran. Ilman tekoälyä teksti avautuu kohtaan **Liitä reseptin teksti**, ja puhelimesi lajittelee sen.

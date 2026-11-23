@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Crie seu avatar com IA
 summary: Transforme uma selfie em um avatar no estilo daili, ou escolha o seu visual. Cada tentativa desenha 3 versões para você escolher.
 keywords: avatar, avatar ia, selfie, desenho, caricatura, foto de perfil, criar avatar, escolher visual, inteligência artificial
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![A janela Mudar imagem. Criar avatar com IA está circulado. Em Escolha um avatar, Seus avatares de IA mostra três versões.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Todas as versões ficam só neste celular (as 30 mais recentes por pessoa), em **Seus avatares de IA**. Toque em uma para usar de novo, de graça. Toque e segure para salvar, compartilhar ou apagar.
 
-> Note: Avatares com IA são só para adultos (18+); o daili pergunta uma vez. Cada tentativa usa uma ação de IA: 3 por mês são grátis, e o Daili Plus dá 30. No máximo 10 avatares por família por mês. Sua selfie vai para o nosso parceiro de IA e é apagada logo em seguida.
+> Note: Avatares com IA são só para adultos (18+); o daili pergunta uma vez. Cada tentativa usa uma ação de IA: 3 por mês são grátis, e o Daili Plus dá 50. No máximo 10 avatares por família por mês. Sua selfie vai para o nosso parceiro de IA e é apagada logo em seguida.

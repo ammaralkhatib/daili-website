@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Utwórz swój awatar z AI
 summary: Zamień selfie w awatar w stylu daili albo wybierz wygląd. Każda próba rysuje 3 wersje do wyboru.
 keywords: awatar, awatar ai, selfie, rysunek, kreskówka, zdjęcie profilowe, utwórz awatar, wybierz wygląd, sztuczna inteligencja
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Okno Zmień obrazek. Zakreślona jest opcja Utwórz awatar z AI. W sekcji Wybierz awatara widać trzy wersje w Twoje awatary AI.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Wszystkie wersje zostają tylko na tym telefonie (30 najnowszych na osobę), w sekcji **Twoje awatary AI**. Dotknij jednej, żeby użyć jej ponownie, za darmo. Przytrzymaj, żeby ją zapisać, udostępnić albo usunąć.
 
-> Note: Awatary AI są dla dorosłych (18+); daili pyta raz. Jedna próba zużywa jedną akcję AI: 3 miesięcznie są za darmo, a Daili Plus daje 30. Maksymalnie 10 awatarów na rodzinę miesięcznie. Twoje selfie trafia do naszego partnera AI i zaraz potem jest usuwane.
+> Note: Awatary AI są dla dorosłych (18+); daili pyta raz. Jedna próba zużywa jedną akcję AI: 3 miesięcznie są za darmo, a Daili Plus daje 50. Maksymalnie 10 awatarów na rodzinę miesięcznie. Twoje selfie trafia do naszego partnera AI i zaraz potem jest usuwane.

@@ -5,7 +5,7 @@ summary: Tek dokunuşla haftanın her boş akşamına bir akşam yemeği öneril
 keywords: yemek planı, öneri, yapay zekâ, haftamı planla, yz planı, akşam yemeği fikirleri, akşama ne pişirsem, haftalık menü, hızlı yemekler, vejetaryen, çocuklar
 tipTitle: Akşam yemeği fikrin mi kalmadı?
 tipBody: Yemek planının altındaki YZ planı düğmesine dokun, daili her boş akşam için bir akşam yemeği önersin.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![Plan sekmesi. Alttaki çubukta YZ planı daire içine alınmış.](meals-suggest)
 
@@ -21,4 +21,4 @@ Aile istekleri varsa, bir anahtar onları önce ekler: günde bir tane, akşam y
 
 > Note: Yapay zekâ yetişkinler içindir (18+). Tarif adların, son yemekleriniz, istekler ve yazdıkların, hiçbir şey saklamayan Google'ın yapay zekâsına gönderilir. daili önce sana sorar; **Ayarlar** → **Yapay zekâ özellikleri (Google Gemini)** ile kapatabilirsin.
 
-> Note: Bir öneri bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 30 olur.
+> Note: Bir öneri bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 50 olur.

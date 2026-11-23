@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: enemmän tekoälytoimintoja ja Daili-pilvi
-summary: Yksi vuositilaus koko perheelle: 30 tekoälytoimintoa kuukaudessa ja 5 Gt Daili-pilveä. Kaikki muu pysyy ilmaisena.
+summary: Yksi vuositilaus koko perheelle: 50 tekoälytoimintoa kuukaudessa ja 5 Gt Daili-pilveä. Kaikki muu pysyy ilmaisena.
 keywords: paljonko, hinnat, maksu, veloitus, premium, ostaa, päivitys, raha, tilata, uusiminen, kallis, laskutus
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi. Daili Plus antaa 30, koko perheen yhteiseen käyttöön, ja 5 Gt Daili-pilveä. Kuukaudet ovat kalenterikuukausia.
+Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi. Daili Plus antaa 50, koko perheen yhteiseen käyttöön, ja 5 Gt Daili-pilveä. Kuukaudet ovat kalenterikuukausia.
 
 ![Daili Plus -paneeli: mitä saat, vuosihinta ja painike Hanki Plus.](plus-sheet)
 

@@ -5,7 +5,7 @@ summary: Prends en photo un mot de l’école, une invitation ou un flyer — da
 keywords: photo, scanner, lettre, invitation, flyer, dates, ia, appareil photo, école, lire photo, planning de travail, horaires
 tipTitle: Transforme un mot de l’école en événements
 tipBody: Touche l’icône de scan dans Nouvel événement, photographie la lettre, et daili remplit les dates.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Des dates sur papier ? Le bouton de scan dans **Nouvel événement** les lit pour toi.
 
@@ -23,4 +23,4 @@ Le texte imprimé marche le mieux, l’écriture à la main moins bien. Pour un 
 
 > Note: L’IA est réservée aux adultes (18+). La photo est envoyée à l’IA de Google pour être lue, puis supprimée, sans les données de l’appareil photo comme le lieu. **Paramètres** → **Fonctions IA (Google Gemini)** la désactive.
 
-> Note: Une lecture de photo utilise une action IA. Chaque famille a 3 actions IA gratuites par mois ; Daili Plus en donne 30.
+> Note: Une lecture de photo utilise une action IA. Chaque famille a 3 actions IA gratuites par mois ; Daili Plus en donne 50.

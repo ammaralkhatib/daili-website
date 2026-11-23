@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: viac akcií AI a Cloud Daili
-summary: Jeden ročný plán pre celú rodinu: 30 akcií AI mesačne a 5 GB úložiska Cloud Daili. Všetko ostatné zostáva zadarmo.
+summary: Jeden ročný plán pre celú rodinu: 50 akcií AI mesačne a 5 GB úložiska Cloud Daili. Všetko ostatné zostáva zadarmo.
 keywords: koľko, cenník, poplatok, platba, platené, prémium, kúpiť, upgrade, peniaze, predplatiť, predĺžiť, drahé
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Každá rodina má mesačne 3 akcie AI zadarmo. Daili Plus dáva 30, spolu pre celú rodinu, a 5 GB úložiska Cloud Daili. Mesiace sú kalendárne.
+Každá rodina má mesačne 3 akcie AI zadarmo. Daili Plus dáva 50, spolu pre celú rodinu, a 5 GB úložiska Cloud Daili. Mesiace sú kalendárne.
 
 ![Panel Daili Plus: čo získaš, ročná cena a tlačidlo Získať Plus.](plus-sheet)
 

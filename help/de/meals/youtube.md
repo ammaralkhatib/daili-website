@@ -5,7 +5,7 @@ summary: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schr
 keywords: youtube, video, rezeptvideo, kochvideo, video importieren, link, ki, rezept speichern, shorts
 tipTitle: Mach aus einem YouTube-Video ein Rezept
 tipBody: Füg den Link eines Kochvideos ein, und daili schreibt Zutaten und Schritte für dich auf.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Ein Gericht auf YouTube gesehen? daili schreibt das Rezept auf.
 
@@ -20,4 +20,4 @@ Das Rezept kommt in der Sprache von daili heraus. Ohne eigenes Foto steht oben d
 
 Ein Video mit KI zu lesen ist nur für Erwachsene (18+); daili fragt einmal. Ein Video, dessen Beschreibung auf eine Rezeptseite verlinkt, kann jede Person importieren. Auf app.daili.app klappen nur solche Videos.
 
-> Note: Nur öffentliche Videos bis 25 Minuten. Eine Video-Lesung mit KI braucht eine KI-Aktion: 3 im Monat sind kostenlos, mit Daili Plus sind es 30. Ein Rezept über den Link in der Beschreibung ist kostenlos.
+> Note: Nur öffentliche Videos bis 25 Minuten. Eine Video-Lesung mit KI braucht eine KI-Aktion: 3 im Monat sind kostenlos, mit Daili Plus sind es 50. Ein Rezept über den Link in der Beschreibung ist kostenlos.

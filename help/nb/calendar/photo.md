@@ -5,7 +5,7 @@ summary: Ta bilde av et skolebrev, en invitasjon eller en flyer – daili finner
 keywords: bilde, foto, skann, brev, invitasjon, flyer, datoer, ai, kamera, skole, vaktliste, vakter
 tipTitle: Gjør et skolebrev om til hendelser
 tipBody: Trykk på skanneikonet i Ny hendelse, ta bilde av brevet, så fyller daili ut datoene.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Datoer på papir? Skanneknappen i **Ny hendelse** leser dem for deg.
 
@@ -23,4 +23,4 @@ Trykt tekst fungerer best, håndskrift dårligere. Har du en PDF, tar du bilde a
 
 > Note: KI er for voksne (18+). Bildet sendes til Googles KI for å bli lest og slettes etterpå, uten kameradata som posisjon. **Innstillinger** → **KI-funksjoner (Google Gemini)** slår det av.
 
-> Note: En bildelesing bruker én KI-handling. Hver familie får 3 KI-handlinger i måneden gratis; Daili Plus gir 30.
+> Note: En bildelesing bruker én KI-handling. Hver familie får 3 KI-handlinger i måneden gratis; Daili Plus gir 50.

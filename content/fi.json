@@ -216,7 +216,7 @@
         "s": "Napauta, niin se on torstaina",
         "add": "Lisää ruokalistaan"
       },
-      "fine": "Daili Plus -toiminnot käyttävät Google Geminiä, ja vain kun käytät niitä. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 30 sekä 5 GB Daili-pilveä hintaan €9.99 vuodessa."
+      "fine": "Daili Plus -toiminnot käyttävät Google Geminiä, ja vain kun käytät niitä. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi; Daili Plus antaa 50 sekä 5 GB Daili-pilveä hintaan €9.99 vuodessa."
     },
     "flow": {
       "h2": "Katso, miten se toimii",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Mitä Daili maksaa?",
-        "a": "Dailin käyttö on ilmaista — kalenteri, listat, tehtävät, tavat, muistiinpanot, reseptit ja paljon muuta, ilman mainoksia ja ilman tietojen myyntiä. Daili Plus on vapaaehtoinen: yhdellä vuosihinnalla koko perheelle (€9.99 euroalueella; sovellus näyttää hinnan omassa valuutassasi) saatte 30 tekoälytoimintoa kuukaudessa ja 5 GB Daili-pilveä muistiinpanojen kuville ja tallenteille. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi."
+        "a": "Dailin käyttö on ilmaista — kalenteri, listat, tehtävät, tavat, muistiinpanot, reseptit ja paljon muuta, ilman mainoksia ja ilman tietojen myyntiä. Daili Plus on vapaaehtoinen: yhdellä vuosihinnalla koko perheelle (€9.99 euroalueella; sovellus näyttää hinnan omassa valuutassasi) saatte 50 tekoälytoimintoa kuukaudessa ja 5 GB Daili-pilveä muistiinpanojen kuville ja tallenteille. Jokainen perhe saa 3 tekoälytoimintoa kuukaudessa ilmaiseksi."
       },
       {
         "q": "Onko siitä selainversio?",

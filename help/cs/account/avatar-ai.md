@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Vytvoř si avatar s AI
 summary: Udělej ze selfie avatar ve stylu daili, nebo si vyber vzhled. Každý pokus nakreslí 3 verze na výběr.
 keywords: avatar, ai avatar, selfie, kreslený avatar, profilová fotka, vytvořit avatar, vyber si vzhled, umělá inteligence
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Nabídka Změnit obrázek. Zakroužkované je Vytvořit avatar s AI. V části Vyber avatar ukazuje Tvoje AI avatary tři verze.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Všechny verze zůstávají jen v tomto telefonu (30 nejnovějších na osobu), v části **Tvoje AI avatary**. Klepnutím jednu znovu použiješ, zdarma. Podrž na ní prst a můžeš ji uložit, sdílet nebo smazat.
 
-> Note: AI avatary jsou pro dospělé (18+); daili se zeptá jednou. Jeden pokus spotřebuje jednu akci AI: 3 měsíčně jsou zdarma, Daili Plus dává 30. Nejvýš 10 avatarů na rodinu za měsíc. Tvoje selfie jde k našemu partnerovi pro AI a hned potom se smaže.
+> Note: AI avatary jsou pro dospělé (18+); daili se zeptá jednou. Jeden pokus spotřebuje jednu akci AI: 3 měsíčně jsou zdarma, Daili Plus dává 50. Nejvýš 10 avatarů na rodinu za měsíc. Tvoje selfie jde k našemu partnerovi pro AI a hned potom se smaže.

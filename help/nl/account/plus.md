@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: meer AI-acties en Daili-cloud
-summary: Eén jaarabonnement voor het hele gezin: 30 AI-acties per maand en 5 GB Daili-cloud. Al het andere blijft gratis.
+summary: Eén jaarabonnement voor het hele gezin: 50 AI-acties per maand en 5 GB Daili-cloud. Al het andere blijft gratis.
 keywords: aanschaffen, kosten, prijzen, tarief, betalen, betaald, premium, upgraden, geld, abonneren, verlengen, duur
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Elk gezin krijgt 3 AI-acties per maand gratis. Daili Plus geeft er 30, gedeeld door het hele gezin, en 5 GB Daili-cloud. Maanden zijn kalendermaanden.
+Elk gezin krijgt 3 AI-acties per maand gratis. Daili Plus geeft er 50, gedeeld door het hele gezin, en 5 GB Daili-cloud. Maanden zijn kalendermaanden.
 
 ![Het venster Daili Plus: wat je krijgt, de jaarprijs en de knop Plus nemen.](plus-sheet)
 

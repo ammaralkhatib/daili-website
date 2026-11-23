@@ -5,7 +5,7 @@ summary: Satu ketukan menyarankan makan malam untuk setiap malam kosong minggu i
 keywords: rencana makan, saran, ai, rencanakan minggu, rencana ai, ide makan malam, makan apa malam ini, menu mingguan, makan malam cepat, vegetarian, anak
 tipTitle: Kehabisan ide makan malam?
 tipBody: Ketuk Rencana AI di bawah rencana makan, dan daili menyarankan makan malam untuk setiap malam kosong.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![Tab Rencana. Rencana AI di bilah bawah dilingkari.](meals-suggest)
 
@@ -21,4 +21,4 @@ Jika ada keinginan keluarga, sebuah tombol memasukkannya lebih dulu, satu per ha
 
 > Note: AI khusus dewasa (18+). Judul resep, makanan terakhir, keinginan, dan apa yang Anda ketik dikirim ke AI Google, yang tidak menyimpan apa pun. daili bertanya dulu kepada Anda, dan **Pengaturan** → **Fitur AI (Google Gemini)** bisa mematikannya.
 
-> Note: Satu saran memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30.
+> Note: Satu saran memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 50.

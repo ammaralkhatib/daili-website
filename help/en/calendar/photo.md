@@ -7,7 +7,7 @@ keywords: photo, scan, letter, invitation, flyer, dates, ai, camera, school, rea
 routes: /calendar/new, /calendar/photo-review
 tryIt: /calendar/new
 since: 1.7.0
-updated: 2026-11-10
+updated: 2026-11-23
 media: calendar-photo
 order: 3
 related: calendar-add-event, calendar-edit-delete, meals-share-sheet, meals-youtube, account-plus
@@ -31,4 +31,4 @@ Printed text works best, handwriting less so. For a PDF, photograph the page.
 
 > Note: AI is for adults (18+). The photo goes to Google's AI to be read, then is deleted, without camera data like location. **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: A photo read uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 30.
+> Note: A photo read uses one AI action. Every family gets 3 AI actions a month free; Daili Plus gives 50.

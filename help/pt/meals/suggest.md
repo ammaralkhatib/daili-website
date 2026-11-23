@@ -5,7 +5,7 @@ summary: Um toque sugere um jantar para cada noite livre da semana — das suas 
 keywords: cardápio, sugerir, ia, planejar minha semana, plano ia, ideias de jantar, o que vamos jantar, cardápio semanal, jantares rápidos, vegetariano, crianças
 tipTitle: Sem ideias para o jantar?
 tipBody: Toque em Plano IA, embaixo no cardápio, e o daili sugere um jantar para cada noite livre.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![A aba Cardápio. Plano IA, na barra de baixo, está circulado.](meals-suggest)
 
@@ -21,4 +21,4 @@ Com desejos da família, uma chave coloca eles primeiro, um por dia, se servirem
 
 > Note: A IA é só para adultos (18+). Os títulos das suas receitas, as refeições recentes, os desejos e o que você digita vão para a IA do Google, que não guarda nada. O daili pergunta antes, e **Configurações** → **Funções de IA (Google Gemini)** desliga isso.
 
-> Note: Uma sugestão usa uma ação de IA: 3 por mês são grátis, o Daili Plus dá 30.
+> Note: Uma sugestão usa uma ação de IA: 3 por mês são grátis, o Daili Plus dá 50.

@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: 더 많은 AI 작업과 Daili 클라우드
-summary: 가족 모두를 위한 연간 요금제 하나: 매달 AI 작업 30회와 Daili 클라우드 5GB. 나머지는 모두 계속 무료예요.
+summary: 가족 모두를 위한 연간 요금제 하나: 매달 AI 작업 50회와 Daili 클라우드 5GB. 나머지는 모두 계속 무료예요.
 keywords: 얼마, 가격, 연회비, 비용, 유료, 결제, 프리미엄, 업그레이드, 돈, 갱신, 멤버십, 비싼
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-모든 가족은 매달 AI 작업 3회를 무료로 받아요. Daili Plus는 가족이 함께 나눠 쓰는 30회와 Daili 클라우드 5GB를 줘요. 한 달은 달력의 한 달이에요.
+모든 가족은 매달 AI 작업 3회를 무료로 받아요. Daili Plus는 가족이 함께 나눠 쓰는 50회와 Daili 클라우드 5GB를 줘요. 한 달은 달력의 한 달이에요.
 
 ![Daili Plus 시트: 받는 혜택, 연간 가격, Plus 시작하기 버튼.](plus-sheet)
 

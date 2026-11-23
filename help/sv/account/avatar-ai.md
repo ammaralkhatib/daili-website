@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Skapa din avatar med AI
 summary: Gör en selfie till en avatar i daili-stil, eller välj ditt utseende. Varje försök ritar 3 versioner att välja mellan.
 keywords: avatar, ai-avatar, selfie, tecknad, profilbild, rita mig, skapa avatar, välj utseende
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Rutan Byt bild. Skapa avatar med AI är inringat. Under Välj en avatar visar Dina AI-avatarer tre versioner.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Alla versioner finns bara på den här telefonen (de 30 senaste per person), under **Dina AI-avatarer**. Tryck på en för att använda den igen, gratis. Håll fingret på den för att spara, dela eller radera den.
 
-> Note: AI-avatarer är för vuxna (18+); daili frågar en gång. Ett försök använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 30. Upp till 10 avatarer per familj och månad. Din selfie skickas till vår AI-partner och raderas direkt efteråt.
+> Note: AI-avatarer är för vuxna (18+); daili frågar en gång. Ett försök använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 50. Upp till 10 avatarer per familj och månad. Din selfie skickas till vår AI-partner och raderas direkt efteråt.

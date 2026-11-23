@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: mai multe acțiuni AI și Cloud Daili
-summary: Un singur plan anual pentru toată familia: 30 de acțiuni AI pe lună și 5 GB în Cloud Daili. Tot restul rămâne gratuit.
+summary: Un singur plan anual pentru toată familia: 50 de acțiuni AI pe lună și 5 GB în Cloud Daili. Tot restul rămâne gratuit.
 keywords: prețuri, tarif, taxă, plată, plătit, premium, costuri, upgrade, bani, abonare, reînnoire, scump
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Fiecare familie primește gratuit 3 acțiuni AI pe lună. Daili Plus oferă 30, împărțite de toată familia, și 5 GB în Cloud Daili. Lunile sunt luni calendaristice.
+Fiecare familie primește gratuit 3 acțiuni AI pe lună. Daili Plus oferă 50, împărțite de toată familia, și 5 GB în Cloud Daili. Lunile sunt luni calendaristice.
 
 ![Panoul Daili Plus: ce primești, prețul anual și butonul Ia Plus.](plus-sheet)
 

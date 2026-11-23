@@ -5,7 +5,7 @@ summary: Klistra in länken till en matlagningsvideo, så skriver daili ingredie
 keywords: youtube, video, receptvideo, matlagningsvideo, importera video, länk, ai, spara recept, shorts
 tipTitle: Gör ett recept av en YouTube-video
 tipBody: Klistra in länken till en matlagningsvideo, så skriver daili ingredienserna och stegen åt dig.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Sett en rätt på YouTube? daili skriver receptet.
 
@@ -20,4 +20,4 @@ Receptet skrivs på dailis språk. Utan ett eget foto visas videons bild högst 
 
 Att läsa en video med AI är för vuxna (18+); daili frågar en gång. Alla kan importera en video vars beskrivning länkar till en receptsida. På app.daili.app fungerar bara sådana videor.
 
-> Note: Bara offentliga videor på upp till 25 minuter. En video som läses med AI använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 30. Ett recept från länken i beskrivningen är gratis.
+> Note: Bara offentliga videor på upp till 25 minuter. En video som läses med AI använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 50. Ett recept från länken i beskrivningen är gratis.

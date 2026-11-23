@@ -5,7 +5,7 @@ summary: 點一下，就為這週每個空著的晚上推薦一頓晚餐——�
 keywords: 用餐計畫, 推薦, ai, 規劃本週, ai規劃, 晚餐點子, 晚上吃什麼, 每週菜單, 快速料理, 素食, 孩子
 tipTitle: 想不出晚餐吃什麼？
 tipBody: 在用餐計畫底部點「AI規劃」，daili 會為每個空著的晚上推薦一頓晚餐。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![「計畫」頁。底部列裡的「AI規劃」被圈起來。](meals-suggest)
 
@@ -21,4 +21,4 @@ translatedFrom: 2026-11-10
 
 > Note: AI 只限成年人（18 歲以上）。你的食譜名稱、最近的餐點、心願和你寫的內容會傳給 Google 的 AI，那裡不會儲存任何內容。daili 會先問你，在**設定** → **AI 功能（Google Gemini）**裡可以關掉。
 
-> Note: 一次推薦使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 30 次。
+> Note: 一次推薦使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 50 次。

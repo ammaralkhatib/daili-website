@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Lag avataren din med KI
 summary: Gjør en selfie om til en avatar i daili-stil, eller velg utseendet selv. Hvert forsøk tegner 3 versjoner du kan velge mellom.
 keywords: avatar, ki-avatar, ai-avatar, selfie, tegnefigur, profilbilde, tegn meg, lag avatar, velg utseende
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Arket Bytt bilde. Lag avatar med KI er ringet inn. Under Velg en avatar viser Dine KI-avatarer tre versjoner.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Alle versjoner blir bare på denne telefonen (de 30 nyeste per person), under **Dine KI-avatarer**. Trykk på en for å bruke den igjen, gratis. Hold fingeren på en for å lagre, dele eller slette den.
 
-> Note: KI-avatarer er for voksne (18+); daili spør én gang. Ett forsøk bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 30. Opptil 10 avatarer per familie i måneden. Selfien din sendes til KI-partneren vår og slettes rett etterpå.
+> Note: KI-avatarer er for voksne (18+); daili spør én gang. Ett forsøk bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 50. Opptil 10 avatarer per familie i måneden. Selfien din sendes til KI-partneren vår og slettes rett etterpå.

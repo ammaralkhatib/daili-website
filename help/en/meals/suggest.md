@@ -7,7 +7,7 @@ keywords: meal plan, suggest, ai, plan my week, ai plan, dinner ideas, what's fo
 routes: /meal-plan, /meal-plan/suggest
 tryIt: /meal-plan
 since: 1.7.0
-updated: 2026-11-10
+updated: 2026-11-23
 media: meals-suggest
 order: 9
 related: meals-plan-week, meals-wishes, meals-to-shopping, meals-add-recipe, meals-photo, account-plus
@@ -30,4 +30,4 @@ With family wishes, a switch puts them in first, one per day, if they fit dinner
 
 > Note: AI is for adults (18+). Your recipe titles, recent meals, wishes and what you type go to Google's AI, which stores nothing. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: A suggestion uses one AI action: 3 a month are free, Daili Plus gives 30.
+> Note: A suggestion uses one AI action: 3 a month are free, Daili Plus gives 50.

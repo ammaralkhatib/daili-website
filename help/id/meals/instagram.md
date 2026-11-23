@@ -3,7 +3,7 @@ id: meals-instagram
 title: Simpan resep dari Instagram
 summary: Bagikan atau tempelkan postingan Instagram publik, dan daili membaca resep dari teks postingan, beserta gambarnya.
 keywords: instagram, reel, postingan, caption, resep, bagikan, simpan resep, ai, impor, tangkapan layar
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Menemukan resep di Instagram? daili menyimpannya untuk Anda, di iPhone dan Android.
 
@@ -17,4 +17,4 @@ daili hanya membaca teks postingan, bukan gambar atau videonya. Tidak ada resep 
 
 Ponsel Anda yang membuka postingan. Hanya teksnya yang dikirim ke AI Google, yang tidak menyimpan apa pun.
 
-> Note: Hanya postingan publik. Membaca memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30. AI khusus dewasa (18+); daili bertanya sekali. Tanpa AI, teksnya terbuka di **Tempel teks resep**, disusun di ponsel Anda.
+> Note: Hanya postingan publik. Membaca memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 50. AI khusus dewasa (18+); daili bertanya sekali. Tanpa AI, teksnya terbuka di **Tempel teks resep**, disusun di ponsel Anda.

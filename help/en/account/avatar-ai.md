@@ -7,7 +7,7 @@ keywords: avatar, ai avatar, selfie, cartoon, profile picture, draw me, create a
 routes: /settings/profile
 tryIt: /settings/profile
 since: 1.12.0
-updated: 2026-11-05
+updated: 2026-11-23
 order: 2
 media: account-avatar-ai
 related: account-profile, account-plus
@@ -23,4 +23,4 @@ related: account-profile, account-plus
 
 All versions stay on this phone only (newest 30 per person), under **Your AI avatars**. Tap one to reuse it, free. Press and hold to save, share or delete.
 
-> Note: AI avatars are for adults (18+); daili asks once. One try uses one AI action: 3 a month are free, Daili Plus gives 30. Up to 10 avatars per family a month. Your selfie goes to our AI partner and is deleted right after.
+> Note: AI avatars are for adults (18+); daili asks once. One try uses one AI action: 3 a month are free, Daili Plus gives 50. Up to 10 avatars per family a month. Your selfie goes to our AI partner and is deleted right after.

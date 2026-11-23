@@ -5,7 +5,7 @@ summary: 貼上烹飪影片的連結，daili 會用你的語言幫你寫出食�
 keywords: youtube, 影片, 食譜影片, 烹飪影片, 料理影片, 匯入影片, 連結, ai, 儲存食譜, shorts
 tipTitle: 把 YouTube 影片變成食譜
 tipBody: 貼上烹飪影片的連結，daili 會幫你寫出食材和步驟。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 在 YouTube 上看到一道好菜？daili 幫你寫出食譜。
 
@@ -20,4 +20,4 @@ translatedFrom: 2026-11-10
 
 用 AI 讀取影片只限成年人（18 歲以上）；daili 會問一次。說明裡連到食譜網頁的影片，任何人都能匯入。在 app.daili.app 上，只支援這類影片。
 
-> Note: 只支援 25 分鐘以內的公開影片。用 AI 讀取一部影片使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 30 次。從說明裡的連結匯入食譜是免費的。
+> Note: 只支援 25 分鐘以內的公開影片。用 AI 讀取一部影片使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 50 次。從說明裡的連結匯入食譜是免費的。

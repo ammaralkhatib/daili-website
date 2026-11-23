@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: lebih banyak aksi AI dan Cloud Daili
-summary: Satu paket tahunan untuk seluruh keluarga: 30 aksi AI per bulan dan 5 GB Cloud Daili. Semua yang lain tetap gratis.
+summary: Satu paket tahunan untuk seluruh keluarga: 50 aksi AI per bulan dan 5 GB Cloud Daili. Semua yang lain tetap gratis.
 keywords: berapa, biaya, bayar, premium, upgrade, tarif, berlangganan, perpanjang, mahal, tagihan, iuran, ongkos
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Setiap keluarga mendapat 3 aksi AI gratis per bulan. Daili Plus memberi 30, dipakai bersama seluruh keluarga, dan 5 GB Cloud Daili. Bulan berarti bulan kalender.
+Setiap keluarga mendapat 3 aksi AI gratis per bulan. Daili Plus memberi 50, dipakai bersama seluruh keluarga, dan 5 GB Cloud Daili. Bulan berarti bulan kalender.
 
 ![Lembar Daili Plus: apa yang Anda dapatkan, harga tahunan, dan tombol Dapatkan Plus.](plus-sheet)
 

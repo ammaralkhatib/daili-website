@@ -5,7 +5,7 @@ summary: Lim inn lenken til en matlagingsvideo, så skriver daili ingrediensene 
 keywords: youtube, video, oppskriftsvideo, matvideo, importer video, lenke, ai, lagre oppskrift, shorts
 tipTitle: Gjør en YouTube-video om til en oppskrift
 tipBody: Lim inn lenken til en matlagingsvideo, så skriver daili ingrediensene og stegene for deg.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Har du sett en rett på YouTube? daili skriver oppskriften.
 
@@ -20,4 +20,4 @@ Oppskriften kommer på dailis språk. Uten ditt eget bilde vises bildet fra vide
 
 Å lese en video med KI er for voksne (18+); daili spør én gang. Alle kan importere en video der beskrivelsen lenker til en oppskriftsside. På app.daili.app fungerer bare slike videoer.
 
-> Note: Bare offentlige videoer på opptil 25 minutter. En videolesing med KI bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 30. En oppskrift fra lenken i beskrivelsen er gratis.
+> Note: Bare offentlige videoer på opptil 25 minutter. En videolesing med KI bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 50. En oppskrift fra lenken i beskrivelsen er gratis.

@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Buat avatar Anda dengan AI
 summary: Ubah selfie jadi avatar bergaya daili, atau pilih tampilan Anda. Setiap percobaan menggambar 3 versi untuk dipilih.
 keywords: avatar, avatar ai, selfie, kartun, foto profil, gambar saya, buat avatar, pilih tampilan, karikatur
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Lembar Ganti gambar. Buat avatar dengan AI dilingkari. Di bawah Pilih avatar, bagian Avatar AI Anda menampilkan tiga versi.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Semua versi hanya tersimpan di ponsel ini (30 terbaru per orang), di **Avatar AI Anda**. Ketuk salah satu untuk memakainya lagi, gratis. Tekan lama untuk menyimpan, membagikan, atau menghapus.
 
-> Note: Avatar AI khusus dewasa (18+); daili bertanya sekali. Satu percobaan memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30. Maksimal 10 avatar per keluarga per bulan. Selfie Anda dikirim ke mitra AI kami dan langsung dihapus setelahnya.
+> Note: Avatar AI khusus dewasa (18+); daili bertanya sekali. Satu percobaan memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 50. Maksimal 10 avatar per keluarga per bulan. Selfie Anda dikirim ke mitra AI kami dan langsung dihapus setelahnya.

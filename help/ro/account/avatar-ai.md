@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Creează-ți avatarul cu AI
 summary: Transformă un selfie într-un avatar în stilul daili sau alege-ți look-ul. La fiecare încercare primești 3 variante din care să alegi.
 keywords: avatar, avatar ai, selfie, desen animat, poză de profil, desenează-mă, creează avatar, alege look-ul, inteligență artificială
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Meniul Schimbă imaginea. Creează avatar cu AI este încercuit. La Alege un avatar, Avatarele tale AI arată trei variante.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Toate variantele rămân doar pe acest telefon (cele mai noi 30 pentru fiecare persoană), la **Avatarele tale AI**. Apasă pe una ca s-o folosești din nou, gratuit. Ține apăsat ca s-o salvezi, s-o distribui sau s-o ștergi.
 
-> Note: Avatarele AI sunt pentru adulți (18+); daili te întreabă o dată. O încercare consumă o acțiune AI: 3 pe lună sunt gratuite, cu Daili Plus ai 30. Cel mult 10 avatare pe familie pe lună. Selfie-ul tău ajunge la partenerul nostru de AI și e șters imediat după aceea.
+> Note: Avatarele AI sunt pentru adulți (18+); daili te întreabă o dată. O încercare consumă o acțiune AI: 3 pe lună sunt gratuite, cu Daili Plus ai 50. Cel mult 10 avatare pe familie pe lună. Selfie-ul tău ajunge la partenerul nostru de AI și e șters imediat după aceea.

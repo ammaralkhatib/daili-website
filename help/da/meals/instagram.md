@@ -3,7 +3,7 @@ id: meals-instagram
 title: Gem en opskrift fra Instagram
 summary: Del eller indsæt et offentligt Instagram-opslag, så læser daili opskriften fra opslagets tekst, med billedet.
 keywords: instagram, reel, opslag, billedtekst, opskrift, del, gem opskrift, ai, importér, skærmbilleder
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Har du fundet en opskrift på Instagram? daili gemmer den for dig, på iPhone og Android.
 
@@ -17,4 +17,4 @@ daili læser kun opslagets tekst, ikke billederne eller videoen. Ingen skrevet o
 
 Din telefon åbner opslaget. Kun teksten sendes til Googles AI, som ikke gemmer noget.
 
-> Note: Kun offentlige opslag. En læsning bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 30. AI er for voksne (18+); daili spørger én gang. Uden AI åbner teksten i **Indsæt opskriftstekst**, sorteret på din telefon.
+> Note: Kun offentlige opslag. En læsning bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 50. AI er for voksne (18+); daili spørger én gang. Uden AI åbner teksten i **Indsæt opskriftstekst**, sorteret på din telefon.

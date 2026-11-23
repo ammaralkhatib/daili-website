@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Yapay zekâ ile avatarını oluştur
 summary: Bir selfie'yi daili tarzı bir avatara dönüştür ya da görünümünü seç. Her denemede seçmen için 3 sürüm çizilir.
 keywords: avatar, yapay zekâ avatar, ai avatar, selfie, çizgi film, profil resmi, beni çiz, avatar oluştur, görünümünü seç
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Resmi değiştir menüsü. Yapay zekâ ile avatar oluştur daire içine alınmış. Bir avatar seç altında, yapay zekâ avatarların üç sürüm gösteriyor.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Tüm sürümler yalnızca bu telefonda, **Yapay zeka avatarların** altında kalır (kişi başına en yeni 30 tanesi). Birine dokunup ücretsiz olarak yeniden kullan. Kaydetmek, paylaşmak ya da silmek için basılı tut.
 
-> Note: Yapay zekâ avatarları yetişkinler içindir (18+); daili bir kez sorar. Her deneme bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 30 olur. Aile başına ayda en fazla 10 avatar. Selfie'n yapay zekâ iş ortağımıza gider ve hemen ardından silinir.
+> Note: Yapay zekâ avatarları yetişkinler içindir (18+); daili bir kez sorar. Her deneme bir yapay zekâ işlemi kullanır: ayda 3 tanesi ücretsizdir, Daili Plus ile 50 olur. Aile başına ayda en fazla 10 avatar. Selfie'n yapay zekâ iş ortağımıza gider ve hemen ardından silinir.

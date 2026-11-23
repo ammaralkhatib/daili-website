@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Lav din avatar med AI
 summary: Gør en selfie til en avatar i daili-stil, eller vælg dit look. Hvert forsøg tegner 3 versioner, du kan vælge imellem.
 keywords: avatar, ai-avatar, selfie, tegneserie, profilbillede, tegn mig, lav avatar, vælg dit look
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Vinduet Skift billede. Lav avatar med AI er markeret med en cirkel. Under Vælg en avatar viser Dine AI-avatarer tre versioner.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Alle versioner bliver kun på denne telefon (de nyeste 30 pr. person) under **Dine AI-avatarer**. Tryk på en for at bruge den igen, gratis. Hold fingeren på den for at gemme, dele eller slette den.
 
-> Note: AI-avatarer er for voksne (18+); daili spørger én gang. Ét forsøg bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 30. Op til 10 avatarer pr. familie om måneden. Din selfie sendes til vores AI-partner og slettes lige bagefter.
+> Note: AI-avatarer er for voksne (18+); daili spørger én gang. Ét forsøg bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 50. Op til 10 avatarer pr. familie om måneden. Din selfie sendes til vores AI-partner og slettes lige bagefter.

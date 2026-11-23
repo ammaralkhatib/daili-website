@@ -216,7 +216,7 @@
         "s": "Atinge ca s-o pui joi",
         "add": "Adaugă în meniu"
       },
-      "fine": "Funcțiile Daili Plus folosesc Google Gemini și doar atunci când le folosești. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 30, plus 5 GB în cloud-ul Daili, pentru €9.99 pe an."
+      "fine": "Funcțiile Daili Plus folosesc Google Gemini și doar atunci când le folosești. Fiecare familie primește gratuit 3 acțiuni AI pe lună; Daili Plus oferă 50, plus 5 GB în cloud-ul Daili, pentru €9.99 pe an."
     },
     "flow": {
       "h2": "Vezi cum funcționează",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Cât costă Daili?",
-        "a": "Daili se folosește gratuit — calendar, liste, sarcini, obiceiuri, notițe, rețete și altele, fără reclame și fără vânzare de date. Daili Plus este opțional: un singur preț anual pentru toată familia (€9.99 în zona euro; aplicația îți arată prețul în moneda ta) îți dă 30 de acțiuni AI pe lună și 5 GB în cloud-ul Daili pentru imaginile și înregistrările din notițe. Fiecare familie primește gratuit 3 acțiuni AI pe lună."
+        "a": "Daili se folosește gratuit — calendar, liste, sarcini, obiceiuri, notițe, rețete și altele, fără reclame și fără vânzare de date. Daili Plus este opțional: un singur preț anual pentru toată familia (€9.99 în zona euro; aplicația îți arată prețul în moneda ta) îți dă 50 de acțiuni AI pe lună și 5 GB în cloud-ul Daili pentru imaginile și înregistrările din notițe. Fiecare familie primește gratuit 3 acțiuni AI pe lună."
       },
       {
         "q": "Există o versiune web?",

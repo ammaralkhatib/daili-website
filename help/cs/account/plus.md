@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: víc akcí AI a Cloud Daili
-summary: Jeden roční tarif pro celou rodinu: 30 akcí AI měsíčně a 5 GB v úložišti Cloud Daili. Všechno ostatní zůstává zdarma.
+summary: Jeden roční tarif pro celou rodinu: 50 akcí AI měsíčně a 5 GB v úložišti Cloud Daili. Všechno ostatní zůstává zdarma.
 keywords: kolik, ceník, poplatek, platba, placená, prémiová, koupit, upgrade, peníze, předplatit, prodloužit, drahé
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Každá rodina má každý měsíc 3 akce AI zdarma. Daili Plus dává 30, pro celou rodinu dohromady, a 5 GB v úložišti Cloud Daili. Měsíce jsou kalendářní.
+Každá rodina má každý měsíc 3 akce AI zdarma. Daili Plus dává 50, pro celou rodinu dohromady, a 5 GB v úložišti Cloud Daili. Měsíce jsou kalendářní.
 
 ![Panel Daili Plus: co získáš, roční cena a tlačítko Pořídit Plus.](plus-sheet)
 

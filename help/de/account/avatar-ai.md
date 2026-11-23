@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Deinen Avatar mit KI erstellen
 summary: Mach aus einem Selfie einen Avatar im daili-Stil oder wähl dein Aussehen. Jeder Versuch zeichnet 3 Versionen zur Auswahl.
 keywords: avatar, ki-avatar, selfie, comic, profilbild, zeichne mich, avatar erstellen, aussehen wählen
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Das Fenster Bild ändern. Avatar mit KI erstellen ist eingekreist. Unter Avatar auswählen zeigt Deine KI-Avatare drei Versionen.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Alle Versionen bleiben nur auf diesem Handy (die neuesten 30 pro Person), unter **Deine KI-Avatare**. Tippe auf eine, um sie kostenlos wieder zu nutzen. Halte sie gedrückt, um sie zu speichern, zu teilen oder zu löschen.
 
-> Note: KI-Avatare sind für Erwachsene (18+); daili fragt einmal. Ein Versuch braucht eine KI-Aktion: 3 im Monat sind kostenlos, mit Daili Plus sind es 30. Bis zu 10 Avatare pro Familie und Monat. Dein Selfie geht an unseren KI-Partner und wird direkt danach gelöscht.
+> Note: KI-Avatare sind für Erwachsene (18+); daili fragt einmal. Ein Versuch braucht eine KI-Aktion: 3 im Monat sind kostenlos, mit Daili Plus sind es 50. Bis zu 10 Avatare pro Familie und Monat. Dein Selfie geht an unseren KI-Partner und wird direkt danach gelöscht.

@@ -5,7 +5,7 @@ summary: Jedno klepnutí navrhne večeři na každý volný večer v týdnu — 
 keywords: jídelníček, návrh, ai, naplánuj týden, plán ai, nápady na večeři, co bude k večeři, týdenní menu, rychlé večeře, vegetariánské, děti
 tipTitle: Nevíš, co k večeři?
 tipBody: Klepni dole v jídelníčku na Plán AI a daili navrhne večeři na každý volný večer.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![Záložka Plán. Zakroužkovaný je Plán AI na liště dole.](meals-suggest)
 
@@ -21,4 +21,4 @@ Když jsou tu přání rodiny, přepínač je dá na první místo, jedno na den
 
 > Note: AI je pro dospělé (18+). Názvy tvých receptů, poslední jídla, přání a to, co napíšeš, jdou do AI od Googlu, která nic neukládá. daili se nejdřív zeptá a **Nastavení** → **Funkce AI (Google Gemini)** to vypne.
 
-> Note: Návrh spotřebuje jednu akci AI: 3 měsíčně jsou zdarma, Daili Plus dává 30.
+> Note: Návrh spotřebuje jednu akci AI: 3 měsíčně jsou zdarma, Daili Plus dává 50.

@@ -3,7 +3,7 @@ id: meals-instagram
 title: Enregistrer une recette depuis Instagram
 summary: Partage ou colle une publication Instagram publique, et daili lit la recette dans le texte de la publication, avec son image.
 keywords: instagram, reel, publication, légende, recette, partager, enregistrer recette, ia, importer, captures d'écran
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Tu as trouvé une recette sur Instagram ? daili l'enregistre pour toi, sur iPhone et Android.
 
@@ -17,4 +17,4 @@ daili ne lit que le texte de la publication, pas ses images ni sa vidéo. Pas de
 
 Ton téléphone ouvre la publication. Seul son texte est envoyé à l'IA de Google, qui ne conserve rien.
 
-> Note: Seulement les publications publiques. La lecture utilise une action IA : 3 par mois sont gratuites, Daili Plus en donne 30. L'IA est réservée aux adultes (18+) ; daili te le demande une fois. Sans IA, le texte s'ouvre dans **Coller le texte de la recette**, rangé sur ton téléphone.
+> Note: Seulement les publications publiques. La lecture utilise une action IA : 3 par mois sont gratuites, Daili Plus en donne 50. L'IA est réservée aux adultes (18+) ; daili te le demande une fois. Sans IA, le texte s'ouvre dans **Coller le texte de la recette**, rangé sur ton téléphone.

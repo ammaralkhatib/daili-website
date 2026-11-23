@@ -3,7 +3,7 @@ id: meals-instagram
 title: Spara ett recept från Instagram
 summary: Dela eller klistra in ett offentligt Instagram-inlägg, så läser daili receptet ur inläggets text, med bilden.
 keywords: instagram, reel, inlägg, bildtext, recept, dela, spara recept, ai, importera, skärmbilder
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Hittat ett recept på Instagram? daili sparar det åt dig, på iPhone och Android.
 
@@ -17,4 +17,4 @@ daili läser bara inläggets text, inte bilderna eller videon. Inget skrivet rec
 
 Telefonen öppnar inlägget. Bara texten skickas till Googles AI, som inte sparar något.
 
-> Note: Bara offentliga inlägg. En läsning använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 30. AI är för vuxna (18+); daili frågar en gång. Utan AI öppnas texten i **Klistra in recepttext** och sorteras på telefonen.
+> Note: Bara offentliga inlägg. En läsning använder en AI-åtgärd: 3 i månaden är gratis, Daili Plus ger 50. AI är för vuxna (18+); daili frågar en gång. Utan AI öppnas texten i **Klistra in recepttext** och sorteras på telefonen.

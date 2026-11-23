@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: daha fazla yapay zekâ işlemi ve Daili bulutu
-summary: Tüm aile için tek yıllık plan: ayda 30 yapay zekâ işlemi ve 5 GB Daili bulutu. Geri kalan her şey ücretsiz kalır.
+summary: Tüm aile için tek yıllık plan: ayda 50 yapay zekâ işlemi ve 5 GB Daili bulutu. Geri kalan her şey ücretsiz kalır.
 keywords: kaç para, aidat, maliyet, ödeme, premium, yükselt, yenileme, pahalı, fatura, fiyatlar, üyelik, satın almak
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Her aile ayda 3 ücretsiz yapay zekâ işlemi alır. Daili Plus, tüm ailenin ortak kullandığı 30 işlem ve 5 GB Daili bulutu verir. Aylar takvim ayıdır.
+Her aile ayda 3 ücretsiz yapay zekâ işlemi alır. Daili Plus, tüm ailenin ortak kullandığı 50 işlem ve 5 GB Daili bulutu verir. Aylar takvim ayıdır.
 
 ![Daili Plus paneli: neler aldığın, yıllık fiyat ve Plus'ı al düğmesi.](plus-sheet)
 

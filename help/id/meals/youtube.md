@@ -5,7 +5,7 @@ summary: Tempelkan tautan video masak, dan daili menuliskan bahan dan langkahnya
 keywords: youtube, video, video resep, video masak, impor video, tautan, ai, simpan resep, shorts
 tipTitle: Ubah video YouTube jadi resep
 tipBody: Tempelkan tautan video masak, dan daili menuliskan bahan dan langkahnya untuk Anda.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Melihat masakan enak di YouTube? daili menuliskan resepnya.
 
@@ -20,4 +20,4 @@ Resep ditulis dalam bahasa daili. Tanpa foto Anda sendiri, gambar videonya tampi
 
 Membaca video dengan AI khusus dewasa (18+); daili bertanya sekali. Siapa pun bisa mengimpor video yang deskripsinya menautkan ke halaman resep. Di app.daili.app, hanya video seperti itu yang bisa.
 
-> Note: Hanya video publik berdurasi hingga 25 menit. Satu kali baca video dengan AI memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 30. Resep dari tautan di deskripsi gratis.
+> Note: Hanya video publik berdurasi hingga 25 menit. Satu kali baca video dengan AI memakai satu aksi AI: 3 per bulan gratis, Daili Plus memberi 50. Resep dari tautan di deskripsi gratis.

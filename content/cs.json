@@ -216,7 +216,7 @@
         "s": "Klepněte a přidejte na čtvrtek",
         "add": "Přidat do jídelníčku"
       },
-      "fine": "Funkce Daili Plus využívají Google Gemini — a jen tehdy, když je použijete. Každá rodina má 3 akce AI měsíčně zdarma; Daili Plus jich dává 30 a k tomu 5 GB v cloudu Daili, za €9.99 ročně."
+      "fine": "Funkce Daili Plus využívají Google Gemini — a jen tehdy, když je použijete. Každá rodina má 3 akce AI měsíčně zdarma; Daili Plus jich dává 50 a k tomu 5 GB v cloudu Daili, za €9.99 ročně."
     },
     "flow": {
       "h2": "Podívejte se, jak to funguje",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Kolik Daili stojí?",
-        "a": "Daili můžete používat zdarma — kalendář, seznamy, úkoly, návyky, poznámky, recepty a další, bez reklam a bez prodeje dat. Daili Plus je volitelné: jedna roční cena pro celou rodinu (€9.99 v eurozóně; aplikace ukáže cenu ve vaší měně) vám dá 30 akcí AI měsíčně a 5 GB v cloudu Daili na obrázky a nahrávky v poznámkách. Každá rodina má 3 akce AI měsíčně zdarma."
+        "a": "Daili můžete používat zdarma — kalendář, seznamy, úkoly, návyky, poznámky, recepty a další, bez reklam a bez prodeje dat. Daili Plus je volitelné: jedna roční cena pro celou rodinu (€9.99 v eurozóně; aplikace ukáže cenu ve vaší měně) vám dá 50 akcí AI měsíčně a 5 GB v cloudu Daili na obrázky a nahrávky v poznámkách. Každá rodina má 3 akce AI měsíčně zdarma."
       },
       {
         "q": "Existuje webová verze?",

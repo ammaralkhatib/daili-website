@@ -5,7 +5,7 @@ summary: Vlož odkaz na video s varením a daili za teba spíše suroviny a post
 keywords: youtube, video, videorecept, video s varením, import videa, odkaz, ai, uložiť recept, shorts
 tipTitle: Urob z videa na YouTube recept
 tipBody: Vlož odkaz na video s varením a daili za teba spíše suroviny a postup.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Na YouTube ťa zaujalo jedlo? daili spíše recept.
 
@@ -20,4 +20,4 @@ Recept bude v jazyku daili. Bez tvojej vlastnej fotky sa hore ukáže obrázok z
 
 Čítanie videa pomocou AI je pre dospelých (18+); daili sa opýta raz. Video, ktorého popis odkazuje na stránku s receptom, môže importovať ktokoľvek. Na app.daili.app fungujú len takéto videá.
 
-> Note: Len verejné videá do 25 minút. Prečítanie videa pomocou AI spotrebuje jednu akciu AI: 3 mesačne sú zadarmo, Daili Plus dáva 30. Recept z odkazu v popise je zadarmo.
+> Note: Len verejné videá do 25 minút. Prečítanie videa pomocou AI spotrebuje jednu akciu AI: 3 mesačne sú zadarmo, Daili Plus dáva 50. Recept z odkazu v popise je zadarmo.

@@ -3,7 +3,7 @@ id: meals-instagram
 title: Salvează o rețetă de pe Instagram
 summary: Distribuie sau lipește o postare publică de pe Instagram, iar daili citește rețeta din textul postării, împreună cu poza.
 keywords: instagram, reel, postare, descriere, rețetă, distribuie, salvează rețeta, ai, import, capturi de ecran
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Ai găsit o rețetă pe Instagram? daili o salvează pentru tine, pe iPhone și pe Android.
 
@@ -17,4 +17,4 @@ daili citește doar textul postării, nu și pozele sau videoclipul. Nu există 
 
 Telefonul tău deschide postarea. Doar textul ei ajunge la AI-ul Google, care nu stochează nimic.
 
-> Note: Doar postări publice. Citirea folosește o acțiune AI: 3 pe lună sunt gratuite, Daili Plus oferă 30. AI-ul e pentru adulți (18+); daili te întreabă o dată. Fără AI, textul se deschide în **Lipește textul rețetei** și e sortat pe telefon.
+> Note: Doar postări publice. Citirea folosește o acțiune AI: 3 pe lună sunt gratuite, Daili Plus oferă 50. AI-ul e pentru adulți (18+); daili te întreabă o dată. Fără AI, textul se deschide în **Lipește textul rețetei** și e sortat pe telefon.

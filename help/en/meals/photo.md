@@ -7,7 +7,7 @@ keywords: photo, camera, cookbook, handwritten, screenshot, scan recipe, ai, sav
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-11-10
+updated: 2026-11-23
 media: meals-photo
 order: 5
 related: meals-youtube, meals-instagram, meals-paste, meals-add-recipe, calendar-photo, account-plus
@@ -29,4 +29,4 @@ The recipe comes out in daili's language, whatever language the page is in. Prin
 
 > Note: AI is for adults (18+); daili asks once. The pictures go to Google's AI to be read, then are deleted, without camera data like location. daili asks you first, and **Settings** → **AI features (Google Gemini)** switches it off.
 
-> Note: A read uses one AI action, even with 5 pictures: 3 a month are free, Daili Plus gives 30.
+> Note: A read uses one AI action, even with 5 pictures: 3 a month are free, Daili Plus gives 50.

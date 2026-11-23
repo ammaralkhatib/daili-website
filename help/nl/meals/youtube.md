@@ -5,7 +5,7 @@ summary: Plak de link van een kookvideo, en daili schrijft de ingrediënten en s
 keywords: youtube, video, receptvideo, kookvideo, video importeren, link, ai, recept bewaren, shorts
 tipTitle: Maak van een YouTube-video een recept
 tipBody: Plak de link van een kookvideo, en daili schrijft de ingrediënten en stappen voor je uit.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Een gerecht gezien op YouTube? daili schrijft het recept uit.
 
@@ -20,4 +20,4 @@ Het recept komt in de taal van daili. Zonder eigen foto staat de afbeelding van 
 
 Een video lezen met AI is voor volwassenen (18+); daili vraagt het één keer. Iedereen kan een video importeren waarvan de beschrijving naar een receptpagina linkt. Op app.daili.app werken alleen die video's.
 
-> Note: Alleen openbare video's tot 25 minuten. Een videolezing met AI kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 30. Een recept via de link in de beschrijving is gratis.
+> Note: Alleen openbare video's tot 25 minuten. Een videolezing met AI kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 50. Een recept via de link in de beschrijving is gratis.

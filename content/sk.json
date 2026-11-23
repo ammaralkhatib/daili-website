@@ -216,7 +216,7 @@
         "s": "Ťukni a pridaj na štvrtok",
         "add": "Pridať do jedálnička"
       },
-      "fine": "Funkcie Daili Plus využívajú Google Gemini — a len vtedy, keď ich použiješ. Každá rodina má 3 akcie AI mesačne zadarmo; Daili Plus ich dáva 30 a k tomu 5 GB v cloude Daili, za €9.99 ročne."
+      "fine": "Funkcie Daili Plus využívajú Google Gemini — a len vtedy, keď ich použiješ. Každá rodina má 3 akcie AI mesačne zadarmo; Daili Plus ich dáva 50 a k tomu 5 GB v cloude Daili, za €9.99 ročne."
     },
     "flow": {
       "h2": "Pozri sa, ako to funguje",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Koľko stojí Daili?",
-        "a": "Daili môžeš používať zadarmo — kalendár, zoznamy, úlohy, návyky, poznámky, recepty a ďalšie, bez reklám a bez predaja údajov. Daili Plus je voliteľné: jedna ročná cena pre celú rodinu (€9.99 v eurozóne; aplikácia ukáže cenu v tvojej mene) ti dá 30 akcií AI mesačne a 5 GB v cloude Daili na obrázky a nahrávky v poznámkach. Každá rodina má 3 akcie AI mesačne zadarmo."
+        "a": "Daili môžeš používať zadarmo — kalendár, zoznamy, úlohy, návyky, poznámky, recepty a ďalšie, bez reklám a bez predaja údajov. Daili Plus je voliteľné: jedna ročná cena pre celú rodinu (€9.99 v eurozóne; aplikácia ukáže cenu v tvojej mene) ti dá 50 akcií AI mesačne a 5 GB v cloude Daili na obrázky a nahrávky v poznámkach. Každá rodina má 3 akcie AI mesačne zadarmo."
       },
       {
         "q": "Existuje webová verzia?",

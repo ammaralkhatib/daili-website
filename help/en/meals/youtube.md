@@ -7,7 +7,7 @@ keywords: youtube, video, recipe video, cooking video, import video, link, ai, s
 routes: /recipes
 tryIt: /recipes
 since: 1.7.0
-updated: 2026-11-10
+updated: 2026-11-23
 media: meals-youtube
 order: 4
 related: meals-instagram, meals-import-link, meals-share-sheet, meals-paste, meals-add-recipe, account-plus
@@ -29,4 +29,4 @@ The recipe comes out in daili's language. Without your own photo, the video's pi
 
 Reading a video with AI is for adults (18+); daili asks once. Anyone can import a video whose description links to a recipe page. On app.daili.app, only those videos work.
 
-> Note: Only public videos up to 25 minutes. A video read with AI uses one AI action: 3 a month are free, Daili Plus gives 30. A recipe from the description's link is free.
+> Note: Only public videos up to 25 minutes. A video read with AI uses one AI action: 3 a month are free, Daili Plus gives 50. A recipe from the description's link is free.

@@ -3,7 +3,7 @@ id: meals-instagram
 title: 從 Instagram 儲存食譜
 summary: 分享或貼上一則公開的 Instagram 貼文，daili 會從貼文的文字讀出食譜，還會帶上它的圖片。
 keywords: instagram, reels, 貼文, 文案, 食譜, 分享, 儲存食譜, ai, 匯入, 螢幕截圖
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 在 Instagram 上看到食譜？daili 幫你存下來，iPhone 和 Android 都可以。
 
@@ -17,4 +17,4 @@ daili 只會讀取貼文的文字，不讀圖片或影片。食譜沒有寫出�
 
 貼文由你的手機打開。只有它的文字會傳給 Google 的 AI，AI 不會儲存任何內容。
 
-> Note: 只限公開貼文。讀取一次使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 30 次。AI 只限成年人（18 歲以上）；daili 會問一次。不用 AI 的話，文字會在**貼上食譜文字**裡打開，由你的手機整理。
+> Note: 只限公開貼文。讀取一次使用 1 次 AI 操作：每月 3 次免費，Daili Plus 提供 50 次。AI 只限成年人（18 歲以上）；daili 會問一次。不用 AI 的話，文字會在**貼上食譜文字**裡打開，由你的手機整理。

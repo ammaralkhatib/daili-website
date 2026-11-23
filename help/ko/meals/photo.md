@@ -5,7 +5,7 @@ summary: 요리책 페이지, 손글씨 카드, 스크린샷을 찍으면 daili�
 keywords: 사진, 카메라, 요리책, 손글씨, 스크린샷, 레시피 스캔, ai, 레시피 저장, 이미지, 여러 장
 tipTitle: 할머니의 레시피 카드도 몇 초 만에 저장
 tipBody: 요리책 페이지나 손글씨 카드를 찍으면 daili가 레시피를 써 줘요.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 종이나 스크린샷에 있는 레시피도 daili가 옮겨 적어 줘요.
 
@@ -20,4 +20,4 @@ translatedFrom: 2026-11-10
 
 > Note: AI는 성인(18세 이상)용이에요. daili가 한 번 물어봐요. 사진은 읽기 위해 위치 같은 카메라 정보 없이 Google의 AI로 보내진 뒤 삭제돼요. daili가 먼저 물어보고, **설정** → **AI 기능 (Google Gemini)**에서 끌 수 있어요.
 
-> Note: 사진이 5장이어도 읽기 한 번에 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 30회예요.
+> Note: 사진이 5장이어도 읽기 한 번에 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 50회예요.

@@ -3,7 +3,7 @@ id: account-avatar-ai
 title: Luo avatarisi tekoälyllä
 summary: Muuta selfie daili-tyyliseksi avatariksi tai valitse ulkonäkösi itse. Jokainen yritys piirtää 3 versiota, joista voit valita.
 keywords: avatar, tekoälyavatar, selfie, piirroshahmo, profiilikuva, piirrä minut, luo avatar, valitse ulkonäkö
-translatedFrom: 2026-11-05
+translatedFrom: 2026-11-23
 ---
 ![Vaihda kuva -paneeli. Luo avatar tekoälyllä on ympyröity. Valitse avatar -kohdassa Tekoälyavatarisi näyttää kolme versiota.](account-avatar-ai)
 
@@ -16,4 +16,4 @@ translatedFrom: 2026-11-05
 
 Kaikki versiot pysyvät vain tässä puhelimessa (30 uusinta henkilöä kohti) kohdassa **Tekoälyavatarisi**. Napauta jotakin käyttääksesi sitä uudelleen maksutta. Paina pitkään, niin voit tallentaa, jakaa tai poistaa sen.
 
-> Note: Tekoälyavatarit ovat aikuisille (18+); daili kysyy kerran. Yksi yritys käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 30. Enintään 10 avataria perhettä kohti kuukaudessa. Selfiesi lähetetään tekoälykumppanillemme, ja se poistetaan heti sen jälkeen.
+> Note: Tekoälyavatarit ovat aikuisille (18+); daili kysyy kerran. Yksi yritys käyttää yhden tekoälytoiminnon: 3 kuukaudessa on ilmaisia, Daili Plus antaa 50. Enintään 10 avataria perhettä kohti kuukaudessa. Selfiesi lähetetään tekoälykumppanillemme, ja se poistetaan heti sen jälkeen.

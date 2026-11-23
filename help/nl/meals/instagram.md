@@ -3,7 +3,7 @@ id: meals-instagram
 title: Een recept bewaren van Instagram
 summary: Deel of plak een openbaar Instagram-bericht, en daili leest het recept uit de tekst van het bericht, met de afbeelding erbij.
 keywords: instagram, reel, bericht, post, bijschrift, recept, delen, recept bewaren, ai, importeren, screenshots
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Een recept gevonden op Instagram? daili bewaart het voor je, op iPhone en Android.
 
@@ -17,4 +17,4 @@ daili leest alleen de tekst van het bericht, niet de afbeeldingen of de video. G
 
 Je telefoon opent het bericht. Alleen de tekst gaat naar de AI van Google, die niets bewaart.
 
-> Note: Alleen openbare berichten. Lezen kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 30. AI is voor volwassenen (18+); daili vraagt het één keer. Zonder AI opent de tekst in **Recepttekst plakken**, gesorteerd op je telefoon.
+> Note: Alleen openbare berichten. Lezen kost één AI-actie: 3 per maand zijn gratis, Daili Plus geeft er 50. AI is voor volwassenen (18+); daili vraagt het één keer. Zonder AI opent de tekst in **Recepttekst plakken**, gesorteerd op je telefoon.

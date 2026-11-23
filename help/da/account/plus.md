@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: flere AI-handlinger og Daili-skyen
-summary: Ét årsabonnement til hele familien: 30 AI-handlinger om måneden og 5 GB i Daili-skyen. Alt andet er stadig gratis.
+summary: Ét årsabonnement til hele familien: 50 AI-handlinger om måneden og 5 GB i Daili-skyen. Alt andet er stadig gratis.
 keywords: hvor meget, priser, gebyr, betaling, betalt, premium, udgift, opgrader, penge, abonnere, forny, dyrt
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Hver familie får 3 AI-handlinger om måneden gratis. Daili Plus giver 30, som hele familien deles om, og 5 GB i Daili-skyen. Måneder er kalendermåneder.
+Hver familie får 3 AI-handlinger om måneden gratis. Daili Plus giver 50, som hele familien deles om, og 5 GB i Daili-skyen. Måneder er kalendermåneder.
 
 ![Arket Daili Plus: hvad du får, årsprisen og knappen Få Plus.](plus-sheet)
 

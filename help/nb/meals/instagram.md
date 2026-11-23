@@ -3,7 +3,7 @@ id: meals-instagram
 title: Lagre en oppskrift fra Instagram
 summary: Del eller lim inn et offentlig Instagram-innlegg, så leser daili oppskriften fra teksten i innlegget, med bildet.
 keywords: instagram, reel, innlegg, bildetekst, oppskrift, del, lagre oppskrift, ai, importer, skjermbilder
-translatedFrom: 2026-11-13
+translatedFrom: 2026-11-23
 ---
 Har du funnet en oppskrift på Instagram? daili lagrer den for deg, på iPhone og Android.
 
@@ -17,4 +17,4 @@ daili leser bare teksten i innlegget, ikke bildene eller videoen. Står ikke opp
 
 Telefonen din åpner innlegget. Bare teksten sendes til Googles KI, som ikke lagrer noe.
 
-> Note: Bare offentlige innlegg. Lesingen bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 30. KI er for voksne (18+); daili spør én gang. Uten KI åpnes teksten i **Lim inn oppskriftstekst**, sortert på telefonen din.
+> Note: Bare offentlige innlegg. Lesingen bruker én KI-handling: 3 i måneden er gratis, Daili Plus gir 50. KI er for voksne (18+); daili spør én gang. Uten KI åpnes teksten i **Lim inn oppskriftstekst**, sortert på telefonen din.

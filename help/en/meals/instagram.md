@@ -7,7 +7,7 @@ keywords: instagram, reel, post, caption, recipe, share, save recipe, ai, import
 routes: /recipes
 tryIt: /recipes
 since: 1.16.0
-updated: 2026-11-13
+updated: 2026-11-23
 media: meals-instagram
 order: 4
 related: meals-youtube, meals-share-sheet, meals-photo, meals-paste, meals-add-recipe, account-plus
@@ -24,4 +24,4 @@ daili reads only the post's text, not its pictures or video. No written recipe, 
 
 Your phone opens the post. Only its text goes to Google's AI, which stores nothing.
 
-> Note: Only public posts. Reading uses one AI action: 3 a month are free, Daili Plus gives 30. AI is for adults (18+); daili asks once. Without AI, the text opens in **Paste recipe text**, sorted on your phone.
+> Note: Only public posts. Reading uses one AI action: 3 a month are free, Daili Plus gives 50. AI is for adults (18+); daili asks once. Without AI, the text opens in **Paste recipe text**, sorted on your phone.

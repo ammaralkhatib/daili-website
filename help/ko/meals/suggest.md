@@ -5,7 +5,7 @@ summary: 한 번만 누르면 이번 주 비어 있는 저녁마다 메뉴를 �
 keywords: 식단표, 추천, ai, 이번 주 식단, ai 계획, 저녁 메뉴 아이디어, 오늘 저녁 뭐 먹지, 주간 메뉴, 간단한 저녁, 채식, 아이
 tipTitle: 저녁 메뉴가 고민이라면?
 tipBody: 식단표 아래쪽의 ‘AI 계획’을 누르면 daili가 비어 있는 저녁마다 메뉴를 추천해 줘요.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![‘식단’ 탭. 아래 막대의 ‘AI 계획’에 동그라미가 쳐져 있어요.](meals-suggest)
 
@@ -21,4 +21,4 @@ translatedFrom: 2026-11-10
 
 > Note: AI는 성인(18세 이상)용이에요. 레시피 제목, 최근 식사, 요청, 입력한 내용이 Google의 AI로 보내지고, 그곳에는 아무것도 저장되지 않아요. daili가 먼저 물어보고, **설정** → **AI 기능 (Google Gemini)**에서 끌 수 있어요.
 
-> Note: 추천은 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 30회예요.
+> Note: 추천은 AI 작업을 1회 써요. 매달 3회는 무료이고, Daili Plus는 50회예요.

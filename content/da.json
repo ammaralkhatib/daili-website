@@ -216,7 +216,7 @@
         "s": "Tryk for at lægge den på torsdag",
         "add": "Læg på madplanen"
       },
-      "fine": "Funktionerne i Daili Plus bruger Google Gemini, og kun når du bruger dem. Alle familier får 3 AI-handlinger om måneden gratis; Daili Plus giver 30 plus 5 GB i Daili-skyen for €9.99 om året."
+      "fine": "Funktionerne i Daili Plus bruger Google Gemini, og kun når du bruger dem. Alle familier får 3 AI-handlinger om måneden gratis; Daili Plus giver 50 plus 5 GB i Daili-skyen for €9.99 om året."
     },
     "flow": {
       "h2": "Se det i brug",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Hvad koster Daili?",
-        "a": "Daili er gratis at bruge — kalender, lister, opgaver, vaner, noter, opskrifter og mere, uden reklamer og uden salg af data. Daili Plus er valgfrit: én årlig pris for hele familien (€9.99 i euroområdet; appen viser prisen i din valuta) giver jer 30 AI-handlinger om måneden og 5 GB i Daili-skyen til billeder og optagelser i noter. Alle familier får 3 AI-handlinger om måneden gratis."
+        "a": "Daili er gratis at bruge — kalender, lister, opgaver, vaner, noter, opskrifter og mere, uden reklamer og uden salg af data. Daili Plus er valgfrit: én årlig pris for hele familien (€9.99 i euroområdet; appen viser prisen i din valuta) giver jer 50 AI-handlinger om måneden og 5 GB i Daili-skyen til billeder og optagelser i noter. Alle familier får 3 AI-handlinger om måneden gratis."
       },
       {
         "q": "Findes der en webudgave?",

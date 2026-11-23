@@ -5,7 +5,7 @@ summary: Fotografeer een kookboekpagina, een handgeschreven kaart of een screens
 keywords: foto, camera, kookboek, handgeschreven, screenshot, recept scannen, ai, recept bewaren, afbeelding, meerdere foto's
 tipTitle: Oma's receptkaart, in seconden bewaard
 tipBody: Fotografeer een kookboekpagina of een handgeschreven kaart en daili schrijft het recept voor je uit.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Staat een recept op papier of in een screenshot? daili typt het voor je over.
 
@@ -20,4 +20,4 @@ Het recept komt in de taal van daili, in welke taal de pagina ook is. Gedrukte o
 
 > Note: AI is voor volwassenen (18+); daili vraagt het één keer. De afbeeldingen gaan naar de AI van Google om gelezen te worden en worden daarna verwijderd, zonder cameragegevens zoals de locatie. daili vraagt het je eerst, en via **Instellingen** → **AI-functies (Google Gemini)** zet je het uit.
 
-> Note: Een keer lezen kost één AI-actie, ook met 5 afbeeldingen: 3 per maand zijn gratis, Daili Plus geeft er 30.
+> Note: Een keer lezen kost één AI-actie, ook met 5 afbeeldingen: 3 per maand zijn gratis, Daili Plus geeft er 50.

@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: più azioni IA e Cloud Daili
-summary: Un solo abbonamento annuale per tutta la famiglia: 30 azioni IA al mese e 5 GB di Cloud Daili. Tutto il resto resta gratis.
+summary: Un solo abbonamento annuale per tutta la famiglia: 50 azioni IA al mese e 5 GB di Cloud Daili. Tutto il resto resta gratis.
 keywords: quanto, prezzi, tariffa, pagare, pagamento, premium, acquistare, upgrade, soldi, abbonarsi, rinnovo, costoso
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Ogni famiglia ha 3 azioni IA gratis al mese. Daili Plus ne dà 30, condivise da tutta la famiglia, e 5 GB di Cloud Daili. I mesi sono mesi di calendario.
+Ogni famiglia ha 3 azioni IA gratis al mese. Daili Plus ne dà 50, condivise da tutta la famiglia, e 5 GB di Cloud Daili. I mesi sono mesi di calendario.
 
 ![Il pannello Daili Plus: cosa ottieni, il prezzo annuale e il pulsante Passa a Plus.](plus-sheet)
 

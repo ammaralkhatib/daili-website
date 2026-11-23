@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: więcej akcji AI i Chmura Daili
-summary: Jeden roczny plan dla całej rodziny: 30 akcji AI miesięcznie i 5 GB w usłudze Chmura Daili. Cała reszta pozostaje darmowa.
+summary: Jeden roczny plan dla całej rodziny: 50 akcji AI miesięcznie i 5 GB w usłudze Chmura Daili. Cała reszta pozostaje darmowa.
 keywords: ile, cennik, opłata, płatny, zapłacić, premium, kupić, ulepszenie, pieniądze, subskrybować, odnowić, drogo
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Każda rodzina dostaje co miesiąc 3 akcje AI za darmo. Daili Plus daje 30, do podziału na całą rodzinę, i 5 GB w usłudze Chmura Daili. Miesiące to miesiące kalendarzowe.
+Każda rodzina dostaje co miesiąc 3 akcje AI za darmo. Daili Plus daje 50, do podziału na całą rodzinę, i 5 GB w usłudze Chmura Daili. Miesiące to miesiące kalendarzowe.
 
 ![Panel Daili Plus: co dostajesz, cena roczna i przycisk Kup Plus.](plus-sheet)
 

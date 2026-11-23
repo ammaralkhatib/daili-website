@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus：更多 AI 操作和 Daili 云
-summary: 全家共用一个年度方案：每月 30 次 AI 操作和 5 GB 的 Daili 云。其他一切仍然免费。
+summary: 全家共用一个年度方案：每月 50 次 AI 操作和 5 GB 的 Daili 云。其他一切仍然免费。
 keywords: 多少钱, 费用, 收费, 付费, 价钱, 定价, 高级版, 会员, 续订, 扣费, 账单, 升级
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-每个家庭每月有 3 次免费的 AI 操作。Daili Plus 提供 30 次，全家共享，另有 5 GB 的 Daili 云。按自然月计算。
+每个家庭每月有 3 次免费的 AI 操作。Daili Plus 提供 50 次，全家共享，另有 5 GB 的 Daili 云。按自然月计算。
 
 ![Daili Plus 面板：你能得到什么、年费价格和开通 Plus按钮。](plus-sheet)
 

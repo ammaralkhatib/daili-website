@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus: mehr KI-Aktionen und Daili Cloud
-summary: Ein Jahresabo für die ganze Familie: 30 KI-Aktionen im Monat und 5 GB Daili Cloud. Alles andere bleibt kostenlos.
+summary: Ein Jahresabo für die ganze Familie: 50 KI-Aktionen im Monat und 5 GB Daili Cloud. Alles andere bleibt kostenlos.
 keywords: upgrade, premium, bezahlen, kaufen, abrechnung, geld, gebühr, abonnieren, verlängern, teuer, kostenpflichtig, vollversion
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos. Mit Daili Plus sind es 30, gemeinsam für die ganze Familie, dazu 5 GB Daili Cloud. Monate sind Kalendermonate.
+Jede Familie bekommt 3 KI-Aktionen im Monat kostenlos. Mit Daili Plus sind es 50, gemeinsam für die ganze Familie, dazu 5 GB Daili Cloud. Monate sind Kalendermonate.
 
 ![Das Fenster Daili Plus: was du bekommst, der Jahrespreis und der Button Plus holen.](plus-sheet)
 

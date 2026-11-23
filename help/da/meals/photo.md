@@ -5,7 +5,7 @@ summary: Tag et billede af en kogebogsside, et håndskrevet kort eller et skærm
 keywords: billede, kamera, kogebog, håndskrevet, skærmbillede, scan opskrift, ai, gem opskrift, foto, flere billeder
 tipTitle: Mormors opskriftskort, gemt på få sekunder
 tipBody: Tag et billede af en kogebogsside eller et håndskrevet kort, så skriver daili opskriften for dig.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Har du en opskrift på papir eller i et skærmbillede? daili skriver den ind for dig.
 
@@ -20,4 +20,4 @@ Opskriften kommer ud på dailis sprog, uanset hvilket sprog siden er på. Trykt 
 
 > Note: AI er for voksne (18+); daili spørger én gang. Billederne sendes til Googles AI for at blive læst og slettes derefter, uden kameradata som placering. daili spørger dig først, og **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
 
-> Note: En læsning bruger én AI-handling, også med 5 billeder: 3 om måneden er gratis, Daili Plus giver 30.
+> Note: En læsning bruger én AI-handling, også med 5 billeder: 3 om måneden er gratis, Daili Plus giver 50.

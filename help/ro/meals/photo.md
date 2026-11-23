@@ -5,7 +5,7 @@ summary: Fotografiază o pagină de carte de bucate, un cartonaș scris de mân�
 keywords: fotografie, cameră, carte de bucate, scris de mână, captură de ecran, scanează rețeta, ai, salvează rețeta, poză, mai multe poze
 tipTitle: Rețeta bunicii, salvată în câteva secunde
 tipBody: Fotografiază o pagină de carte de bucate sau un cartonaș scris de mână, iar daili scrie rețeta pentru tine.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 Ai o rețetă pe hârtie sau într-o captură de ecran? daili o transcrie pentru tine.
 
@@ -20,4 +20,4 @@ Rețeta iese în limba din daili, oricare ar fi limba paginii. Textul tipărit s
 
 > Note: AI-ul e pentru adulți (18+); daili te întreabă o dată. Imaginile ajung la AI-ul Google ca să fie citite, apoi sunt șterse, fără datele camerei, cum ar fi locația. daili te întreabă mai întâi, iar din **Setări** → **Funcții AI (Google Gemini)** le poți opri.
 
-> Note: O citire folosește o acțiune AI, chiar și cu 5 imagini: 3 pe lună sunt gratuite, Daili Plus oferă 30.
+> Note: O citire folosește o acțiune AI, chiar și cu 5 imagini: 3 pe lună sunt gratuite, Daili Plus oferă 50.

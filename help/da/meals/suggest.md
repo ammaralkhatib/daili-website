@@ -5,7 +5,7 @@ summary: Ét tryk foreslår aftensmad til hver ledig aften i ugen – fra jeres 
 keywords: madplan, foreslå, ai, planlæg ugen, ai-plan, idéer til aftensmad, hvad skal vi have, ugemenu, hurtig aftensmad, vegetarisk, børn
 tipTitle: Løbet tør for idéer til aftensmad?
 tipBody: Tryk på AI-plan forneden i madplanen, så foreslår daili aftensmad til hver ledig aften.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-23
 ---
 ![Fanen Plan. AI-plan i bjælken forneden er markeret med en cirkel.](meals-suggest)
 
@@ -21,4 +21,4 @@ Har familien ønsker, sætter en kontakt dem ind først, ét om dagen, hvis de p
 
 > Note: AI er for voksne (18+). Dine opskriftstitler, jeres seneste måltider, ønsker og det, du skriver, sendes til Googles AI, som ikke gemmer noget. daili spørger dig først, og **Indstillinger** → **AI-funktioner (Google Gemini)** slår det fra.
 
-> Note: Et forslag bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 30.
+> Note: Et forslag bruger én AI-handling: 3 om måneden er gratis, Daili Plus giver 50.

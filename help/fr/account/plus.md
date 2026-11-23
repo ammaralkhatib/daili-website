@@ -1,11 +1,11 @@
 ---
 id: account-plus
 title: Daili Plus : plus d'actions IA et le Cloud Daili
-summary: Un seul abonnement annuel pour toute la famille : 30 actions IA par mois et 5 Go de Cloud Daili. Tout le reste est toujours gratuit.
+summary: Un seul abonnement annuel pour toute la famille : 50 actions IA par mois et 5 Go de Cloud Daili. Tout le reste est toujours gratuit.
 keywords: combien, tarif, payer, payant, premium, acheter, upgrade, argent, frais, s'abonner, renouveler, facturation
-translatedFrom: 2026-10-22
+translatedFrom: 2026-11-23
 ---
-Chaque famille a 3 actions IA gratuites par mois. Daili Plus en donne 30, partagées par toute la famille, et 5 Go de Cloud Daili. Les mois sont des mois calendaires.
+Chaque famille a 3 actions IA gratuites par mois. Daili Plus en donne 50, partagées par toute la famille, et 5 Go de Cloud Daili. Les mois sont des mois calendaires.
 
 ![La fiche Daili Plus : ce que tu obtiens, le prix annuel et le bouton Passer à Plus.](plus-sheet)
 

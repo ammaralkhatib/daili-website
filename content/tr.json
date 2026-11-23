@@ -216,7 +216,7 @@
         "s": "Dokun, perşembeye ekle",
         "add": "Yemek planına ekle"
       },
-      "fine": "Daili Plus özellikleri Google Gemini kullanır; o da yalnızca siz kullandığınızda. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır; Daili Plus yılda €9.99 karşılığında 30 işlem ve 5 GB Daili bulutu verir."
+      "fine": "Daili Plus özellikleri Google Gemini kullanır; o da yalnızca siz kullandığınızda. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır; Daili Plus yılda €9.99 karşılığında 50 işlem ve 5 GB Daili bulutu verir."
     },
     "flow": {
       "h2": "Nasıl çalıştığını görün",
@@ -327,7 +327,7 @@
     "items": [
       {
         "q": "Daili ne kadar?",
-        "a": "Daili'yi kullanmak ücretsiz — takvim, listeler, görevler, alışkanlıklar, notlar, tarifler ve daha fazlası; reklamsız ve veri satışı olmadan. Daili Plus isteğe bağlıdır: tüm aile için tek bir yıllık fiyatla (euro bölgesinde €9.99; uygulama fiyatı kendi para biriminizde gösterir) ayda 30 yapay zekâ işlemi ve notlardaki resimler ve kayıtlar için 5 GB Daili bulutu alırsınız. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır."
+        "a": "Daili'yi kullanmak ücretsiz — takvim, listeler, görevler, alışkanlıklar, notlar, tarifler ve daha fazlası; reklamsız ve veri satışı olmadan. Daili Plus isteğe bağlıdır: tüm aile için tek bir yıllık fiyatla (euro bölgesinde €9.99; uygulama fiyatı kendi para biriminizde gösterir) ayda 50 yapay zekâ işlemi ve notlardaki resimler ve kayıtlar için 5 GB Daili bulutu alırsınız. Her aile ayda 3 yapay zekâ işlemini ücretsiz kullanır."
       },
       {
         "q": "Web sürümü var mı?",
