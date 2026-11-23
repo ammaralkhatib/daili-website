@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Fungerer med",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets på startskjermen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Nettleser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets på startskjermen", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Nettleser"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Spør AI-appen din",
-        "p": "Koble Daili til Claude eller en annen AI-app, og spør hva som skjer i helgen, eller legg melk på listen, rett i chatten.",
+        "p": "Koble Daili til ChatGPT, Claude eller en annen AI-app, og spør hva som skjer i helgen, eller legg melk på listen, rett i chatten.",
         "q": "Hva skjer i helgen?",
         "a1": "Lør. 10:00 · Noahs svømmekurs",
         "a2": "Søn. 15:00 · Emmas bursdag",
@@ -374,8 +374,8 @@
         "a": "Ja, begge gratis. Husholdningsbudsjett holder oversikt over felles utgifter og regninger og fordeler kostnadene rettferdig — uten tilkobling til banken. Syklus er bare for deg: den blir på telefonen din og i sikkerhetskopien av den, aldri på serverne våre, og ingen andre i familien kan se den. <a {help:budget-start}>Mer i hjelpen</a>"
       },
       {
-        "q": "Fungerer Daili med AI-apper som Claude?",
-        "a": "Ja. Koble Daili til Claude eller en annen AI-app som støtter MCP, og spør hva som skjer i dag, eller si hva den skal legge til. Den ser bare den familien eller gruppen du velger — aldri Husholdningsbudsjett, Syklus eller andres private ting. <a {help:anywhere-ai-apps}>Slik kobler du til</a>"
+        "q": "Fungerer Daili med AI-apper som ChatGPT og Claude?",
+        "a": "Ja. Finn Daili under Apps i ChatGPT, eller koble den til i Claude eller en annen AI-app som støtter MCP, og spør hva som skjer i dag, eller si hva den skal legge til. Den ser bare den familien eller gruppen du velger — aldri Husholdningsbudsjett, Syklus eller andres private ting. <a {help:anywhere-ai-apps}>Slik kobler du til</a>"
       },
       {
         "q": "Hvor ligger dataene mine?",

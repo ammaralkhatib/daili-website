@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Funciona con",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets de pantalla de inicio", "TRMNL", "Google Calendar", "Outlook", "Claude", "Navegador web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets de pantalla de inicio", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Navegador web"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Pregunta a tu app de IA",
-        "p": "Conecta Daili con Claude u otra app de IA y pregunta qué hay este fin de semana o añade leche a la lista, directamente en el chat.",
+        "p": "Conecta Daili con ChatGPT, Claude u otra app de IA y pregunta qué hay este fin de semana o añade leche a la lista, directamente en el chat.",
         "q": "¿Qué hay este fin de semana?",
         "a1": "Sáb 10:00 · Natación de Noah",
         "a2": "Dom 15:00 · Cumpleaños de Emma",
@@ -374,8 +374,8 @@
         "a": "Sí, y los dos son gratis. Presupuesto lleva la cuenta de los gastos y las facturas comunes y reparte los costes de forma justa, sin conectar el banco. Ciclo es solo para ti: se queda en tu móvil y en su copia de seguridad, nunca en nuestros servidores, y nadie más de la familia puede verlo. <a {help:budget-start}>Más en la Ayuda</a>"
       },
       {
-        "q": "¿Daili funciona con apps de IA como Claude?",
-        "a": "Sí. Conecta Daili con Claude u otra app de IA compatible con MCP y pregunta qué hay hoy o dile qué añadir. Solo ve la familia o el grupo que elijas — nunca Presupuesto, Ciclo ni los elementos privados de otros. <a {help:anywhere-ai-apps}>Cómo conectar</a>"
+        "q": "¿Daili funciona con apps de IA como ChatGPT y Claude?",
+        "a": "Sí. Busca Daili en las apps de ChatGPT, o conéctalo en Claude u otra app de IA compatible con MCP, y pregunta qué hay hoy o dile qué añadir. Solo ve la familia o el grupo que elijas — nunca Presupuesto, Ciclo ni los elementos privados de otros. <a {help:anywhere-ai-apps}>Cómo conectar</a>"
       },
       {
         "q": "¿Dónde se guardan mis datos?",

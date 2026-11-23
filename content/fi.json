@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Toimii näiden kanssa",
-      "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "Claude", "Selain"]
+      "items": ["iPhone", "Android", "Apple Watch", "Aloitusnäytön widgetit", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Selain"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Kysy tekoälysovellukselta",
-        "p": "Yhdistä Daili Claude-sovellukseen tai muuhun tekoälysovellukseen ja kysy, mitä viikonloppuna on, tai lisää maito listalle, suoraan keskustelussa.",
+        "p": "Yhdistä Daili ChatGPT:hen, Claudeen tai muuhun tekoälysovellukseen ja kysy, mitä viikonloppuna on, tai lisää maito listalle, suoraan keskustelussa.",
         "q": "Mitä viikonloppuna on?",
         "a1": "La 10.00 · Noahin uimakoulu",
         "a2": "Su 15.00 · Emman syntymäpäivä",
@@ -374,8 +374,8 @@
         "a": "On, ja molemmat ilmaisia. Budjetti pitää kirjaa yhteisistä menoista ja laskuista ja jakaa kulut reilusti — ilman pankkiyhteyttä. Kierto on vain sinulle: se pysyy puhelimessasi ja sen varmuuskopiossa, ei koskaan palvelimillamme, eikä kukaan muu perheessä näe sitä. <a {help:budget-start}>Lisää ohjeissa</a>"
       },
       {
-        "q": "Toimiiko Daili Claude-sovelluksen ja muiden tekoälysovellusten kanssa?",
-        "a": "Toimii. Yhdistä Daili Claude-sovellukseen tai muuhun MCP:tä tukevaan tekoälysovellukseen ja kysy, mitä tänään on, tai kerro, mitä lisätä. Se näkee vain valitsemasi perheen tai ryhmän — ei koskaan Budjettia, Kiertoa tai muiden yksityisiä kohteita. <a {help:anywhere-ai-apps}>Näin yhdistät</a>"
+        "q": "Toimiiko Daili ChatGPT:n, Clauden ja muiden tekoälysovellusten kanssa?",
+        "a": "Toimii. Löydät Dailin ChatGPT:n Apps-osiosta, tai voit yhdistää sen Claudeen tai muuhun MCP:tä tukevaan tekoälysovellukseen. Kysy sitten, mitä tänään on, tai kerro, mitä lisätä. Se näkee vain valitsemasi perheen tai ryhmän — ei koskaan Budjettia, Kiertoa tai muiden yksityisiä kohteita. <a {help:anywhere-ai-apps}>Näin yhdistät</a>"
       },
       {
         "q": "Missä tietoni säilytetään?",

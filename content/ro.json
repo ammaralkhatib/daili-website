@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Funcționează cu",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgeturi pe ecran", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Browser web"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Întreabă aplicația ta AI",
-        "p": "Conectează Daili la Claude sau la altă aplicație AI și întreabă ce e în weekend sau pune lapte pe listă, direct în chat.",
+        "p": "Conectează Daili la ChatGPT, Claude sau la altă aplicație AI și întreabă ce e în weekend sau pune lapte pe listă, direct în chat.",
         "q": "Ce avem în weekend?",
         "a1": "Sâm. 10:00 · Înotul lui Noah",
         "a2": "Dum. 15:00 · Ziua lui Emma",
@@ -374,8 +374,8 @@
         "a": "Da, amândouă gratuite. Buget ține evidența cheltuielilor comune și a facturilor și împarte corect costurile — fără conectare la bancă. Ciclu e doar pentru tine: rămâne pe telefonul tău și în backupul lui, niciodată pe serverele noastre, și nimeni altcineva din familie nu îl poate vedea. <a {help:budget-start}>Mai multe în Ajutor</a>"
       },
       {
-        "q": "Funcționează Daili cu aplicații AI precum Claude?",
-        "a": "Da. Conectează Daili la Claude sau la altă aplicație AI care acceptă MCP, apoi întreabă ce e azi sau spune-i ce să adauge. Vede doar familia sau grupul pe care îl alegi — niciodată Buget, Ciclu sau elementele private ale altora. <a {help:anywhere-ai-apps}>Cum conectezi</a>"
+        "q": "Funcționează Daili cu aplicații AI precum ChatGPT și Claude?",
+        "a": "Da. Găsește Daili în aplicațiile (Apps) din ChatGPT sau conectează-l în Claude ori în altă aplicație AI care acceptă MCP, apoi întreabă ce e azi sau spune-i ce să adauge. Vede doar familia sau grupul pe care îl alegi — niciodată Buget, Ciclu sau elementele private ale altora. <a {help:anywhere-ai-apps}>Cum conectezi</a>"
       },
       {
         "q": "Unde îmi sunt stocate datele?",

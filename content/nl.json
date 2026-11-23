@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Werkt met",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets op je beginscherm", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbrowser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets op je beginscherm", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Webbrowser"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Vraag het je AI-app",
-        "p": "Koppel Daili aan Claude of een andere AI-app en vraag wat er dit weekend is, of zet melk op de lijst, gewoon in de chat.",
+        "p": "Koppel Daili aan ChatGPT, Claude of een andere AI-app en vraag wat er dit weekend is, of zet melk op de lijst, gewoon in de chat.",
         "q": "Wat is er dit weekend?",
         "a1": "Za 10:00 · Zwemles van Noah",
         "a2": "Zo 15:00 · Verjaardag van Emma",
@@ -374,8 +374,8 @@
         "a": "Ja, allebei gratis. Budget houdt gedeelde uitgaven en rekeningen bij en verdeelt kosten eerlijk — zonder koppeling met je bank. Cyclus is alleen voor jou: het blijft op je telefoon en in de back-up daarvan, nooit op onze servers, en niemand anders in het gezin kan het zien. <a {help:budget-start}>Meer in de hulp</a>"
       },
       {
-        "q": "Werkt Daili met AI-apps zoals Claude?",
-        "a": "Ja. Koppel Daili aan Claude of een andere AI-app die MCP ondersteunt en vraag wat er vandaag is, of zeg wat erbij moet. Hij ziet alleen het gezin of de groep die je kiest — nooit Budget, Cyclus of privé-items van anderen. <a {help:anywhere-ai-apps}>Zo koppel je een app</a>"
+        "q": "Werkt Daili met AI-apps zoals ChatGPT en Claude?",
+        "a": "Ja. Vind Daili bij de apps in ChatGPT, of koppel hem in Claude of een andere AI-app die MCP ondersteunt en vraag wat er vandaag is, of zeg wat erbij moet. Hij ziet alleen het gezin of de groep die je kiest — nooit Budget, Cyclus of privé-items van anderen. <a {help:anywhere-ai-apps}>Zo koppel je een app</a>"
       },
       {
         "q": "Waar staan mijn gegevens?",

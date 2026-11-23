@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Fonctionne avec",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets d'écran d'accueil", "TRMNL", "Google Calendar", "Outlook", "Claude", "Navigateur web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets d'écran d'accueil", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Navigateur web"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Demandez à votre appli d'IA",
-        "p": "Connectez Daili à Claude ou à une autre appli d'IA, puis demandez ce qui est prévu ce week-end ou ajoutez du lait à la liste, directement dans la conversation.",
+        "p": "Connectez Daili à ChatGPT, à Claude ou à une autre appli d'IA, puis demandez ce qui est prévu ce week-end ou ajoutez du lait à la liste, directement dans la conversation.",
         "q": "Qu'est-ce qui est prévu ce week-end ?",
         "a1": "Sam. 10h00 · Natation de Noah",
         "a2": "Dim. 15h00 · Anniversaire d'Emma",
@@ -374,8 +374,8 @@
         "a": "Oui, et les deux sont gratuits. Budget suit les dépenses et les factures communes et répartit les frais équitablement — sans connexion bancaire. Cycle est rien que pour vous : il reste sur votre téléphone et dans sa sauvegarde, jamais sur nos serveurs, et personne d'autre dans la famille ne peut le voir. <a {help:budget-start}>Plus dans l'Aide</a>"
       },
       {
-        "q": "Daili fonctionne-t-il avec des applis d'IA comme Claude ?",
-        "a": "Oui. Connectez Daili à Claude ou à une autre appli d'IA compatible MCP, puis demandez ce qui est prévu aujourd'hui ou dites-lui quoi ajouter. Elle ne voit que la famille ou le groupe que vous choisissez — jamais Budget, Cycle ni les éléments privés des autres. <a {help:anywhere-ai-apps}>Comment connecter</a>"
+        "q": "Daili fonctionne-t-il avec des applis d'IA comme ChatGPT et Claude ?",
+        "a": "Oui. Trouvez Daili dans les applis de ChatGPT, ou connectez-le à Claude ou à une autre appli d'IA compatible MCP, puis demandez ce qui est prévu aujourd'hui ou dites-lui quoi ajouter. Elle ne voit que la famille ou le groupe que vous choisissez — jamais Budget, Cycle ni les éléments privés des autres. <a {help:anywhere-ai-apps}>Comment connecter</a>"
       },
       {
         "q": "Où mes données sont-elles stockées ?",

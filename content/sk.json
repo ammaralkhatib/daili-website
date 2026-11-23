@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Funguje s",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploche", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webový prehliadač"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgety na ploche", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Webový prehliadač"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Opýtaj sa svojej AI aplikácie",
-        "p": "Prepoj Daili s Claude alebo inou AI aplikáciou a opýtaj sa, čo je cez víkend, alebo pridaj mlieko na zoznam, priamo v chate.",
+        "p": "Prepoj Daili s ChatGPT, Claude alebo inou AI aplikáciou a opýtaj sa, čo je cez víkend, alebo pridaj mlieko na zoznam, priamo v chate.",
         "q": "Čo je cez víkend?",
         "a1": "So 10:00 · Noahovo plávanie",
         "a2": "Ne 15:00 · Emmine narodeniny",
@@ -374,8 +374,8 @@
         "a": "Áno, oboje zadarmo. Rozpočet sleduje spoločné výdavky a účty a spravodlivo delí náklady — bez prepojenia s bankou. Cyklus je len pre teba: zostáva v tvojom telefóne a jeho zálohe, nikdy na našich serveroch, a nikto iný v rodine ho nevidí. <a {help:budget-start}>Viac v Pomocníkovi</a>"
       },
       {
-        "q": "Funguje Daili s AI aplikáciami, ako je Claude?",
-        "a": "Áno. Prepoj Daili s Claude alebo inou AI aplikáciou, ktorá podporuje MCP, a opýtaj sa, čo je dnes, alebo jej povedz, čo má pridať. Vidí len rodinu alebo skupinu, ktorú vyberieš — nikdy Rozpočet, Cyklus ani súkromné položky ostatných. <a {help:anywhere-ai-apps}>Ako prepojiť</a>"
+        "q": "Funguje Daili s AI aplikáciami, ako sú ChatGPT a Claude?",
+        "a": "Áno. Nájdi Daili v aplikáciách (Apps) v ChatGPT alebo ho prepoj v Claude či inej AI aplikácii, ktorá podporuje MCP, a opýtaj sa, čo je dnes, alebo jej povedz, čo má pridať. Vidí len rodinu alebo skupinu, ktorú vyberieš — nikdy Rozpočet, Cyklus ani súkromné položky ostatných. <a {help:anywhere-ai-apps}>Ako prepojiť</a>"
       },
       {
         "q": "Kde sú uložené moje údaje?",

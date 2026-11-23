@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Virker med",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets på hjemmeskærmen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbrowser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets på hjemmeskærmen", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Webbrowser"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Spørg din AI-app",
-        "p": "Forbind Daili med Claude eller en anden AI-app, og spørg, hvad der sker i weekenden, eller sæt mælk på listen, direkte i chatten.",
+        "p": "Forbind Daili med ChatGPT, Claude eller en anden AI-app, og spørg, hvad der sker i weekenden, eller sæt mælk på listen, direkte i chatten.",
         "q": "Hvad sker der i weekenden?",
         "a1": "Lør. 10.00 · Noahs svømmehold",
         "a2": "Søn. 15.00 · Emmas fødselsdag",
@@ -374,8 +374,8 @@
         "a": "Ja, begge gratis. Husholdningsbudget holder styr på fælles udgifter og regninger og deler udgifterne retfærdigt — uden forbindelse til banken. Cyklus er kun for dig: den bliver på din telefon og i dens backup, aldrig på vores servere, og ingen andre i familien kan se den. <a {help:budget-start}>Mere i hjælpen</a>"
       },
       {
-        "q": "Virker Daili med AI-apps som Claude?",
-        "a": "Ja. Forbind Daili med Claude eller en anden AI-app, der understøtter MCP, og spørg, hvad der sker i dag, eller sig, hvad den skal tilføje. Den ser kun den familie eller gruppe, du vælger — aldrig Husholdningsbudget, Cyklus eller andres private ting. <a {help:anywhere-ai-apps}>Sådan forbinder du</a>"
+        "q": "Virker Daili med AI-apps som ChatGPT og Claude?",
+        "a": "Ja. Find Daili under apps i ChatGPT, eller forbind den i Claude eller en anden AI-app, der understøtter MCP, og spørg så, hvad der sker i dag, eller sig, hvad den skal tilføje. Den ser kun den familie eller gruppe, du vælger — aldrig Husholdningsbudget, Cyklus eller andres private ting. <a {help:anywhere-ai-apps}>Sådan forbinder du</a>"
       },
       {
         "q": "Hvor ligger mine data?",

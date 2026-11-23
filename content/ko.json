@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "함께 쓰는 곳",
-      "items": ["iPhone", "Android", "Apple Watch", "홈 화면 위젯", "TRMNL", "Google Calendar", "Outlook", "Claude", "웹 브라우저"]
+      "items": ["iPhone", "Android", "Apple Watch", "홈 화면 위젯", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "웹 브라우저"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "AI 앱에 물어보세요",
-        "p": "Daili를 Claude 같은 AI 앱에 연결하면 채팅에서 바로 이번 주말 일정을 묻거나 목록에 우유를 추가할 수 있습니다.",
+        "p": "Daili를 ChatGPT, Claude 같은 AI 앱에 연결하면 채팅에서 바로 이번 주말 일정을 묻거나 목록에 우유를 추가할 수 있습니다.",
         "q": "이번 주말 일정은?",
         "a1": "토 10:00 · 지훈 수영",
         "a2": "일 15:00 · 서연 생일",
@@ -374,8 +374,8 @@
         "a": "네, 둘 다 무료입니다. '가계부'는 함께 쓰는 지출과 청구서를 기록하고 비용을 공평하게 나눕니다. 은행 연결은 필요 없습니다. '생리 주기'는 나만을 위한 기능으로, 휴대폰과 그 백업에만 남고 저희 서버에는 절대 저장되지 않으며, 가족 중 누구도 볼 수 없습니다. <a {help:budget-start}>도움말에서 더 보기</a>"
       },
       {
-        "q": "Daili를 Claude 같은 AI 앱에서 쓸 수 있나요?",
-        "a": "네. Daili를 Claude 또는 MCP를 지원하는 다른 AI 앱에 연결하고 오늘 일정을 묻거나 추가할 것을 말하면 됩니다. AI 앱은 선택한 가족이나 그룹만 볼 수 있으며, 가계부, 생리 주기, 다른 사람의 비공개 항목은 절대 볼 수 없습니다. <a {help:anywhere-ai-apps}>연결 방법</a>"
+        "q": "Daili를 ChatGPT나 Claude 같은 AI 앱에서 쓸 수 있나요?",
+        "a": "네. ChatGPT의 Apps에서 Daili를 찾거나, Claude 또는 MCP를 지원하는 다른 AI 앱에 연결하고 오늘 일정을 묻거나 추가할 것을 말하면 됩니다. AI 앱은 선택한 가족이나 그룹만 볼 수 있으며, 가계부, 생리 주기, 다른 사람의 비공개 항목은 절대 볼 수 없습니다. <a {help:anywhere-ai-apps}>연결 방법</a>"
       },
       {
         "q": "제 데이터는 어디에 보관되나요?",

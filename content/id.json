@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Bisa dipakai di",
-      "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "Claude", "Browser web"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widget layar utama", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Browser web"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Tanya aplikasi AI-mu",
-        "p": "Hubungkan Daili ke Claude atau aplikasi AI lain, lalu tanyakan ada apa akhir pekan ini atau tambahkan susu ke daftar, langsung di chat.",
+        "p": "Hubungkan Daili ke ChatGPT, Claude, atau aplikasi AI lain, lalu tanyakan ada apa akhir pekan ini atau tambahkan susu ke daftar, langsung di chat.",
         "q": "Ada apa akhir pekan ini?",
         "a1": "Sab 10.00 · Renang Bayu",
         "a2": "Min 15.00 · Ulang tahun Putri",
@@ -374,8 +374,8 @@
         "a": "Ada, dan keduanya gratis. Anggaran mencatat pengeluaran dan tagihan bersama serta membagi biaya dengan adil — tanpa perlu menghubungkan bank. Siklus hanya untukmu: datanya tetap di ponselmu dan cadangannya, tidak pernah di server kami, dan tak seorang pun di keluarga bisa melihatnya. <a {help:budget-start}>Selengkapnya di Bantuan</a>"
       },
       {
-        "q": "Apakah Daili bisa dipakai dengan aplikasi AI seperti Claude?",
-        "a": "Bisa. Hubungkan Daili ke Claude atau aplikasi AI lain yang mendukung MCP, lalu tanyakan ada apa hari ini atau minta ia menambahkan sesuatu. Ia hanya melihat keluarga atau grup yang kamu pilih — tidak pernah Anggaran, Siklus, atau item pribadi orang lain. <a {help:anywhere-ai-apps}>Cara menghubungkan</a>"
+        "q": "Apakah Daili bisa dipakai dengan aplikasi AI seperti ChatGPT dan Claude?",
+        "a": "Bisa. Temukan Daili di Apps ChatGPT, atau hubungkan di Claude atau aplikasi AI lain yang mendukung MCP, lalu tanyakan ada apa hari ini atau minta ia menambahkan sesuatu. Ia hanya melihat keluarga atau grup yang kamu pilih — tidak pernah Anggaran, Siklus, atau item pribadi orang lain. <a {help:anywhere-ai-apps}>Cara menghubungkan</a>"
       },
       {
         "q": "Di mana datanya disimpan?",

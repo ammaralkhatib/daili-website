@@ -1615,8 +1615,8 @@ export const HOME_WIDGETS = {
   habits: [{ ring: '2/5', who: 0, color: '#A9628F' }, { ring: null, who: 4, color: '#E0A032' }, { ring: '0/1', who: 3, color: '#4F86B0' }],
 };
 
-/** The "Works with" row, in home.works.items order. */
-export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'chat', 'globe'];
+/** The "Works with" row, in home.works.items order. ChatGPT and Claude share the plain chat bubble (no brand logos). */
+export const WORKS_ICONS = ['phone', 'phone', 'watch', 'widgets', 'eink', 'cal', 'outlook', 'chat', 'chat', 'globe'];
 
 /** The two badges above the members headline, in home.members.badges order. */
 export const MEMBER_BADGES = [{ icon: 'lang', tone: 'lake' }, { icon: 'mountain', tone: 'leaf' }];

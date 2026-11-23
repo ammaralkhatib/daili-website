@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Funktioniert mit",
-      "items": ["iPhone", "Android", "Apple Watch", "Startbildschirm-Widgets", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbrowser"]
+      "items": ["iPhone", "Android", "Apple Watch", "Startbildschirm-Widgets", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Webbrowser"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Frag deine KI-App",
-        "p": "Verbinde Daili mit Claude oder einer anderen KI-App und frag, was am Wochenende ansteht, oder setz Milch auf die Liste, direkt im Chat.",
+        "p": "Verbinde Daili mit ChatGPT, Claude oder einer anderen KI-App und frag, was am Wochenende ansteht, oder setz Milch auf die Liste, direkt im Chat.",
         "q": "Was steht am Wochenende an?",
         "a1": "Sa 10:00 · Noahs Schwimmkurs",
         "a2": "So 15:00 · Emmas Geburtstag",
@@ -374,8 +374,8 @@
         "a": "Ja, beides kostenlos. Budget behält gemeinsame Ausgaben und Rechnungen im Blick und teilt Kosten fair auf — ohne Bankverbindung. Zyklus ist nur für dich: Er bleibt auf deinem Handy und in dessen Backup, nie auf unseren Servern, und niemand sonst in der Familie kann ihn sehen. <a {help:budget-start}>Mehr in der Hilfe</a>"
       },
       {
-        "q": "Funktioniert Daili mit KI-Apps wie Claude?",
-        "a": "Ja. Verbinde Daili mit Claude oder einer anderen KI-App, die MCP unterstützt, und frag, was heute ansteht, oder sag ihr, was sie eintragen soll. Sie sieht nur die Familie oder Gruppe, die du auswählst — nie Budget, Zyklus oder private Einträge anderer. <a {help:anywhere-ai-apps}>So verbindest du eine App</a>"
+        "q": "Funktioniert Daili mit KI-Apps wie ChatGPT und Claude?",
+        "a": "Ja. Such Daili in den Apps von ChatGPT oder verbinde es in Claude oder einer anderen KI-App, die MCP unterstützt, und frag dann, was heute ansteht, oder sag ihr, was sie eintragen soll. Sie sieht nur die Familie oder Gruppe, die du auswählst — nie Budget, Zyklus oder private Einträge anderer. <a {help:anywhere-ai-apps}>So verbindest du eine App</a>"
       },
       {
         "q": "Wo liegen meine Daten?",

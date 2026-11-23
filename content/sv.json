@@ -126,7 +126,7 @@
     },
     "works": {
       "label": "Fungerar med",
-      "items": ["iPhone", "Android", "Apple Watch", "Widgets på hemskärmen", "TRMNL", "Google Calendar", "Outlook", "Claude", "Webbläsare"]
+      "items": ["iPhone", "Android", "Apple Watch", "Widgets på hemskärmen", "TRMNL", "Google Calendar", "Outlook", "ChatGPT", "Claude", "Webbläsare"]
     },
     "members": {
       "badges": [
@@ -291,7 +291,7 @@
       },
       "ai": {
         "h3": "Fråga din AI-app",
-        "p": "Anslut Daili till Claude eller en annan AI-app och fråga vad som händer i helgen eller lägg till mjölk på listan, direkt i chatten.",
+        "p": "Anslut Daili till ChatGPT, Claude eller en annan AI-app och fråga vad som händer i helgen eller lägg till mjölk på listan, direkt i chatten.",
         "q": "Vad händer i helgen?",
         "a1": "Lör 10.00 · Noahs simskola",
         "a2": "Sön 15.00 · Emmas födelsedag",
@@ -374,8 +374,8 @@
         "a": "Ja, båda gratis. Hushållsbudget håller koll på gemensamma utgifter och räkningar och delar kostnader rättvist — utan koppling till banken. Menscykel är bara för dig: den stannar i din telefon och dess säkerhetskopia, aldrig på våra servrar, och ingen annan i familjen kan se den. <a {help:budget-start}>Mer i hjälpen</a>"
       },
       {
-        "q": "Fungerar Daili med AI-appar som Claude?",
-        "a": "Ja. Anslut Daili till Claude eller en annan AI-app som stöder MCP och fråga vad som händer i dag eller säg vad den ska lägga till. Den ser bara den familj eller grupp du väljer — aldrig Hushållsbudget, Menscykel eller andras privata saker. <a {help:anywhere-ai-apps}>Så ansluter du</a>"
+        "q": "Fungerar Daili med AI-appar som ChatGPT och Claude?",
+        "a": "Ja. Hitta Daili bland apparna (Apps) i ChatGPT, eller anslut Daili i Claude eller en annan AI-app som stöder MCP, och fråga sedan vad som händer i dag eller säg vad den ska lägga till. Den ser bara den familj eller grupp du väljer — aldrig Hushållsbudget, Menscykel eller andras privata saker. <a {help:anywhere-ai-apps}>Så ansluter du</a>"
       },
       {
         "q": "Var sparas mina uppgifter?",
