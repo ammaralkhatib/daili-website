@@ -176,12 +176,14 @@ const V1162_MUST_CONTAIN = {
 const V1162_WHY = 'shopping, recipe notes and wall-screen numbers (app 1.16.2) are in every locale — see claude-prompts/2026-11-12/006';
 
 /**
- * Google two-way sync: the optional `calendar.events` (edit) permission in
- * section 5. Google's reviewers read this paragraph before they approve the
- * permission. The anchor is on a <p>, invisible to the <h2> id comparison below.
+ * Two-way sync: Google's optional `calendar.events` (edit) permission in
+ * section 5 — Google's reviewers read this paragraph before they approve the
+ * permission — and Outlook's optional `Calendars.ReadWrite` in section 4,
+ * right after "Edit in Daili". The anchors are on a <p>, invisible to the <h2>
+ * id comparison below.
  */
-const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"'] };
-const TWO_WAY_WHY = 'Google two-way sync (the calendar.events permission) is in every locale — see claude-prompts/2026-11-15/001';
+const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"', 'id="outlook-two-way"'] };
+const TWO_WAY_WHY = 'two-way sync (Google calendar.events, Outlook Calendars.ReadWrite) is in every locale — see claude-prompts/2026-11-15/001 and 2026-11-24/001';
 
 /**
  * Focus and Move: their videos and music load from our public Hetzner

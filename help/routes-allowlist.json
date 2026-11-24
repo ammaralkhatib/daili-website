@@ -6,8 +6,7 @@
     "/help/topic/:topicId": "The help center itself.",
     "/help/article/:articleId": "The help center itself.",
     "/onboarding/you": "One-time step shown to a new user right after sign-up (avatar + name); nobody opens it on purpose.",
-    "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose.",
-    "/calendar/external-edit": "two-way Google, dark until the scope is approved"
+    "/onboarding/features": "One-time step shown to a new user during sign-up (pick features); nobody opens it on purpose."
   },
   "pending": {
     "/focus": "Focus timer (in the app, not released yet) — article at the next release help sync.",
