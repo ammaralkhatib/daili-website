@@ -36,6 +36,19 @@ Options -Indexes -MultiViews
   RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
   RewriteRule ^index\.html$ / [R=301,L]
 
+  # 4a. /en/privacy, /en/terms … in ONE hop. Rule 4 alone would send /en/privacy
+  #     to /privacy, and only then would rule 6 add the .html — two redirects
+  #     for a link an app store form or a provider's app registration typed. So
+  #     when the English page <path>.html really is a file at the root, go
+  #     straight there. Everything else under /en/ (/en/, /en/help/,
+  #     /en/privacy.html) falls through to rule 4 exactly as before.
+  #     The [^/] keeps a doubled slash from ever producing a protocol-relative
+  #     //host Location; index and 404 are left out (the home page has one
+  #     canonical URL, rule 3, and 404.html is not a page to land on).
+  RewriteCond $1 !(^|/)(index|404)$
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^en/([^/].*?)/?$ /$1.html [R=301,L]
+
   # 4. There is deliberately no /en/ directory — English lives at the root, to
   #    keep the SEO the root has already earned. People and old links will
   #    guess /en/ anyway, so send them home rather than 404.
@@ -56,7 +69,36 @@ Options -Indexes -MultiViews
   RewriteCond %{REQUEST_URI} !^/zh-hant
   RewriteRule ^zh-Hant(/.*)?$ /zh-hant$1 [R=301,L,NC]
 
-  # 6. Nothing else is rewritten. mod_dir already issues the /de -> /de/
+  # 6. Short legal links. The pages exist only as .html files, but people and
+  #    other services type /privacy, /fr/terms, /impressum (#313). Before this
+  #    every one of them was a 404.
+  #
+  #    6a. German has no /de/privacy.html: its legal pages live at the root
+  #        under their own names. Send the guesses there. The !-f means a real
+  #        file of that name, if the build ever writes one, wins.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^de/(privacy|datenschutz)(\.html)?/?$ /datenschutz.html [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^de/(terms|nutzungsbedingungen)(\.html)?/?$ /nutzungsbedingungen.html [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^de/impressum(\.html)?/?$ /impressum.html [R=301,L]
+  #
+  #    6b. Everywhere else: /<path> or /<path>/ that is neither a file nor a
+  #        directory, where <path>.html IS a file, gets one 301 to it (query
+  #        string kept). The -f on the target means it only ever points at a
+  #        page that exists, never a guess, so a junk path still reaches the
+  #        404 page and no URL that answers today changes. Directories (/de,
+  #        /help) stay with mod_dir. The [^/] and the index|404 exclusion are
+  #        the same as in rule 4a. Deliberately NOT done: serving the .html
+  #        under the short URL without a redirect (two URLs for one page), and
+  #        any spelling or language guessing beyond 6a.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond $1 !(^|/)(index|404)$
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^([^/].*?)/?$ /$1.html [R=301,L]
+
+  # 7. Nothing else is rewritten. mod_dir already issues the /de -> /de/
   #    trailing-slash redirect with the correct absolute HTTPS URL through the
   #    proxy (verified: GET /assets/img -> 301 https://daili.app/assets/img/).
   #

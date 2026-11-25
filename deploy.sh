@@ -70,6 +70,16 @@ check() { # check <path> <expected-code> [label]
     fail=1
   fi
 }
+check_to() { # check_to <path> <expected-location-path> — must be ONE 301 to it
+  local got want="https://daili.app$2"
+  # Same retry flags as check. No -L: the first answer is what is checked.
+  got=$(curl -s --max-time 30 --retry 3 --retry-delay 2 --retry-all-errors \
+             -o /dev/null -w '%{http_code} %{redirect_url}' "https://daili.app$1" || echo 000)
+  if [ "$got" != "301 $want" ]; then
+    printf '  FAIL %-34s got %s, want 301 %s\n' "$1" "$got" "$want"
+    fail=1
+  fi
+}
 
 # Every built locale, derived from the config so this list can never fall behind.
 for path in $(node -e '
@@ -100,6 +110,14 @@ done
 check /de.html    301
 check /index.html 301
 check /en/        301
+
+# Short legal links (#313): one 301 straight to the real .html page.
+check_to /en/privacy /privacy.html
+check_to /en/terms   /terms.html
+check_to /privacy    /privacy.html
+check_to /terms      /terms.html
+check_to /fr/privacy /fr/privacy.html
+check_to /de/privacy /datenschutz.html
 
 # A junk path must reach the real 404 page, not Plesk's default.
 check /this-does-not-exist 404
