@@ -3,7 +3,7 @@ id: start-edit-home
 title: Ubah Beranda: sembunyikan dan urutkan kartu
 summary: Taruh kartu yang paling sering dipakai di atas, dan sembunyikan yang tidak Anda perlukan.
 keywords: beranda, kartu, urutkan, atur ulang, pindahkan, sembunyikan, hapus, tampilkan, sesuaikan, tata letak, siklus
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-26
 ---
 Anda bisa mengubah kartu mana yang tampil di Beranda, dan urutannya. Setiap petak bisa dipindah atau disembunyikan, termasuk **Catatan**.
 
@@ -16,7 +16,7 @@ Anda bisa mengubah kartu mana yang tampil di Beranda, dan urutannya. Setiap peta
 
 ![Bagian akhir Beranda: kartu Keluarga, lalu kartu bergaris putus-putus Edit layar utama, yang dilingkari.](start-edit-home-tile)
 
-Saat Siklus nonaktif, kartu **Siklus** yang pudar muncul di sini. Ketuk kartu itu untuk menyiapkan Siklus.
+**Siklus** bekerja seperti kartu lainnya. Sebelum disiapkan, kartu ini hanya menampilkan namanya; ketuk untuk membuka Siklus.
 
 Anda juga bisa melakukannya di **Pengaturan** pada **Layar utama**: nyalakan atau matikan kartu, dan seret lewat pegangannya.
 

@@ -3,9 +3,9 @@ id: start-features
 title: Velg hva du ser på startskjermen
 summary: Velg funksjonene familien bruker. Du kan endre valget når som helst.
 keywords: funksjoner, velg, startskjerm, ruter, sett opp, første steg, slå av, syklus, hva skal jeg bruke
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
-Rett etter at du har opprettet eller blitt med i din første familie, spør daili **Hva vil du bruke Daili til?** Alle funksjonene er på fra start, unntatt Syklus.
+Rett etter at du har opprettet eller blitt med i din første familie, spør daili **Hva vil du bruke Daili til?** Alle kortene er avkrysset fra start.
 
 1. Trykk på et kort for å lese om det.
 2. Trykk på boksen på et kort for å slå det av, eller på igjen.
@@ -13,4 +13,4 @@ Rett etter at du har opprettet eller blitt med i din første familie, spør dail
 
 Kalender og Familie står ikke på listen; de blir værende på startskjermen. Du kan endre valget når som helst i **Innstillinger** under **Startskjerm**.
 
-> Note: Syklus er av fra start. Den er privat: den blir bare på denne telefonen, og ingen i familien kan se den.
+> Note: Syklus-kortet legger bare en rute på startskjermen. Selve Syklus starter når du trykker på ruten og fullfører det korte oppsettet. Den er privat: den blir bare på denne telefonen, og ingen i familien kan se den. Ikke noe for deg? Fjern krysset på kortet, eller skjul ruten senere.

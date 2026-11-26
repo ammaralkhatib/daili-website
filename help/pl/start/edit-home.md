@@ -3,7 +3,7 @@ id: start-edit-home
 title: Edytuj ekran główny: ukryj i przestaw kafelki
 summary: Przenieś kafelki, których używasz najczęściej, na górę i ukryj te, których nie potrzebujesz.
 keywords: ekran główny, kafelki, kolejność, przestaw, przenieś, ukryj, usuń, pokaż, dostosuj, układ, cykl
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-26
 ---
 Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności. Każdy kafelek można przesunąć albo ukryć, także **Notatki**.
 
@@ -16,7 +16,7 @@ Możesz zmienić, które kafelki pokazuje ekran główny i w jakiej kolejności.
 
 ![Koniec ekranu głównego: kafelek Rodzina, a za nim kafelek z przerywaną ramką Edytuj ekran główny, który jest zakreślony.](start-edit-home-tile)
 
-Gdy Cykl jest wyłączony, pojawia się tu wyblakły kafelek **Cykl**. Dotknij go, żeby skonfigurować Cykl.
+**Cykl** działa jak każdy kafelek. Przed konfiguracją pokazuje tylko swoją nazwę; dotknięcie otwiera Cykl.
 
 To samo możesz zrobić na ekranie **Ustawienia**, w sekcji **Ekran główny**: włączaj i wyłączaj kafelki i przeciągaj je za uchwyt.
 

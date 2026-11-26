@@ -3,9 +3,9 @@ id: start-features
 title: Elegir lo que ves en la pantalla de inicio
 summary: Elige las funciones que usa tu familia. Puedes cambiar tu elección cuando quieras.
 keywords: funciones, elegir, escoger, inicio, mosaicos, configurar, primeros pasos, desactivar, ciclo, qué usar
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
-Justo después de crear tu primera familia o unirte a una, daili pregunta **¿Para qué quieres usar Daili?** Todas las funciones empiezan activadas, menos Ciclo.
+Justo después de crear tu primera familia o unirte a una, daili pregunta **¿Para qué quieres usar Daili?** Todas las tarjetas empiezan marcadas.
 
 1. Toca una tarjeta para leer sobre ella.
 2. Toca la casilla de una tarjeta para desactivarla, o para activarla otra vez.
@@ -13,4 +13,4 @@ Justo después de crear tu primera familia o unirte a una, daili pregunta **¿Pa
 
 Calendario y Familia no están en la lista; se quedan siempre en la pantalla de inicio. Puedes cambiar tu elección cuando quieras en **Ajustes**, en **Pantalla de inicio**.
 
-> Note: Ciclo empieza desactivado. Es privado: se queda solo en este teléfono, y nadie de tu familia puede verlo.
+> Note: La tarjeta Ciclo solo pone un mosaico en la pantalla de inicio. Ciclo en sí empieza cuando tocas el mosaico y completas su breve configuración. Es privado: se queda solo en este teléfono, y nadie de tu familia puede verlo. ¿No es para ti? Desmarca la tarjeta, u oculta el mosaico más tarde.

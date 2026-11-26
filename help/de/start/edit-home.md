@@ -3,7 +3,7 @@ id: start-edit-home
 title: Startbildschirm anpassen: Kacheln ausblenden und sortieren
 summary: Leg die Kacheln, die du am meisten nutzt, nach oben und blende die aus, die du nicht brauchst.
 keywords: startbildschirm, kacheln, sortieren, anordnen, verschieben, ausblenden, entfernen, anzeigen, anpassen, layout, zyklus
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-26
 ---
 Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihenfolge. Jede Kachel lässt sich verschieben oder ausblenden, auch **Notizen**.
 
@@ -16,7 +16,7 @@ Du kannst ändern, welche Kacheln der Startbildschirm zeigt und in welcher Reihe
 
 ![Das Ende des Startbildschirms: die Kachel Familie, dann die gestrichelte Kachel Home bearbeiten, die eingekreist ist.](start-edit-home-tile)
 
-Ist Zyklus aus, erscheint hier eine blasse Kachel **Zyklus**. Tippe darauf, um Zyklus einzurichten.
+**Zyklus** funktioniert wie jede andere Kachel. Vor der Einrichtung zeigt sie nur ihren Namen; ein Tipp öffnet Zyklus.
 
 Dasselbe geht in den **Einstellungen** unter **Startbildschirm**: Schalte Kacheln ein oder aus und zieh sie am Griff.
 

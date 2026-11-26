@@ -3,7 +3,7 @@ id: start-edit-home
 title: Upravit domovskou obrazovku: skrýt a přeskládat dlaždice
 summary: Dej dlaždice, které používáš nejvíc, nahoru a skryj ty, které nepotřebuješ.
 keywords: domovská obrazovka, dlaždice, pořadí, přeskládat, přesunout, skrýt, odebrat, zobrazit, přizpůsobit, rozložení, cyklus
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-26
 ---
 Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořadí. Každou dlaždici jde přesunout nebo skrýt, i **Poznámky**.
 
@@ -16,7 +16,7 @@ Můžeš změnit, které dlaždice domovská obrazovka ukazuje a v jakém pořad
 
 ![Konec domovské obrazovky: dlaždice Rodina a za ní čárkovaná dlaždice Upravit domovskou obrazovku, která je zakroužkovaná.](start-edit-home-tile)
 
-Když je Cyklus vypnutý, ukazuje se tu vybledlá dlaždice **Cyklus**. Klepnutím na ni Cyklus nastavíš.
+**Cyklus** funguje jako každá jiná dlaždice. Před nastavením ukazuje jen svůj název; klepnutím se Cyklus otevře.
 
 Totéž můžeš udělat v **Nastavení** v části **Domovská obrazovka**: zapínej a vypínej dlaždice a přetahuj je za úchyt.
 

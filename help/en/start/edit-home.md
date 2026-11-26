@@ -7,7 +7,7 @@ keywords: home, tiles, reorder, rearrange, move, hide, remove, show, customise, 
 routes: /settings/home-tiles
 tryIt: /
 since: 1.6.0
-updated: 2026-10-30
+updated: 2026-11-26
 media: start-edit-home
 order: 5
 related: start-home, start-features, cycle-start
@@ -16,14 +16,14 @@ You can change which tiles Home shows, and in which order. Every tile can move o
 
 ![Home in edit mode, with an × on each tile. The faded Cycle tile with its + badge is circled.](start-edit-home)
 
-1. On Home, press and hold any tile until the tiles start to wiggle. Or tap the dashed **Edit Home** tile at the end of Home.
+1. On Home, press and hold any tile until the tiles wiggle. Or tap the dashed **Edit Home** tile at the end of Home.
 2. Drag a tile to a new place.
 3. Tap **×** on a tile to hide it. Tap **+** to bring a hidden tile back.
 4. Tap **Done** at the bottom right.
 
 ![The end of Home: the Family tile, then the dashed Edit Home tile, which is circled.](start-edit-home-tile)
 
-With Cycle off, a faded **Cycle** tile shows here. Tap it to set up Cycle.
+**Cycle** works like any tile. Before setup it shows only its name; a tap opens Cycle.
 
 You can do the same in **Settings** under **Home screen**: switch tiles on or off, and drag them by the handle.
 

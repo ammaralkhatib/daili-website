@@ -3,20 +3,20 @@ id: start-edit-home
 title: Tilpas din startskærm: skjul og flyt felter
 summary: Sæt de felter, du bruger mest, øverst, og skjul dem, du ikke har brug for.
 keywords: startskærm, felter, flyt, omarranger, rækkefølge, skjul, fjern, vis, tilpas, layout, cyklus
-translatedFrom: 2026-10-30
+translatedFrom: 2026-11-26
 ---
 Du kan selv vælge, hvilke felter startskærmen viser, og i hvilken rækkefølge. Alle felter kan flyttes eller skjules, også **Noter**.
 
 ![Startskærmen i redigeringstilstand med et × på hvert felt. Det blege felt Cyklus med sit lille + er markeret med en cirkel.](start-edit-home)
 
-1. Hold fingeren på et felt på startskærmen, til felterne begynder at vrikke. Eller tryk på det stiplede felt **Rediger startskærmen** nederst på startskærmen.
+1. Hold fingeren på et felt på startskærmen, til felterne vrikker. Eller tryk på det stiplede felt **Rediger startskærmen** nederst på startskærmen.
 2. Træk et felt til en ny plads.
 3. Tryk på **×** på et felt for at skjule det. Tryk på **+** for at hente et skjult felt tilbage.
 4. Tryk på **Færdig** nederst til højre.
 
 ![Slutningen af startskærmen: feltet Familie og derefter det stiplede felt Rediger startskærmen, som er markeret med en cirkel.](start-edit-home-tile)
 
-Er Cyklus slået fra, vises et blegt felt **Cyklus** her. Tryk på det for at sætte Cyklus op.
+**Cyklus** fungerer som alle andre felter. Før opsætningen viser det kun sit navn; et tryk åbner Cyklus.
 
 Du kan gøre det samme i **Indstillinger** under **Startskærm**: slå felter til eller fra, og træk dem i håndtaget.
 
