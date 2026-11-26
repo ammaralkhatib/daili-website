@@ -179,11 +179,12 @@ const V1162_WHY = 'shopping, recipe notes and wall-screen numbers (app 1.16.2) a
  * Two-way sync: Google's optional `calendar.events` (edit) permission in
  * section 5 — Google's reviewers read this paragraph before they approve the
  * permission — and Outlook's optional `Calendars.ReadWrite` in section 4,
- * right after "Edit in Daili". The anchors are on a <p>, invisible to the <h2>
- * id comparison below.
+ * right after "Edit in Daili". Apple Calendar (iCloud) — the app-specific
+ * password Daili keeps — right after Outlook's paragraph. The anchors are on a
+ * <p>, invisible to the <h2> id comparison below.
  */
-const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"', 'id="outlook-two-way"'] };
-const TWO_WAY_WHY = 'two-way sync (Google calendar.events, Outlook Calendars.ReadWrite) is in every locale — see claude-prompts/2026-11-15/001 and 2026-11-24/001';
+const TWO_WAY_MUST_CONTAIN = { terms: [], privacy: ['id="google-two-way"', 'id="outlook-two-way"', 'id="icloud-calendar"'] };
+const TWO_WAY_WHY = 'two-way sync (Google calendar.events, Outlook Calendars.ReadWrite) and Apple Calendar (iCloud, the app-specific password) are in every locale — see claude-prompts/2026-11-15/001, 2026-11-24/001 and 2026-11-26/005';
 
 /**
  * Focus and Move: their videos and music load from our public Hetzner
