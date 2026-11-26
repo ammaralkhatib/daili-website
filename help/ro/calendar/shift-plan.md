@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planifică-ți turele
 summary: Salvează-ți turele o singură dată, apoi atinge zilele dintr-o lună ca să le planifici. Fiecare zi devine un eveniment al familiei.
 keywords: tură, ture, plan de ture, program de ture, grafic de lucru, program de lucru, tura de dimineață, tura de seară, tura de noapte, lucru în ture, asistentă
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Salvează-ți turele o singură dată, apoi atinge zilele ca să le planifici. Fiecare zi devine un eveniment al familiei.
 

@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Yemek ayarları: hangi öğünler, porsiyon ve akşam yemeği saati
 summary: Ailenin hangi öğünleri planladığını, genelde kaç porsiyon pişirdiğini ve akşam yemeğini ne zaman yediğini seç.
 keywords: yemek ayarları, kahvaltı, öğle yemeği, akşam yemeği, atıştırmalık, porsiyon, aile büyüklüğü, akşam yemeği saati, yoğun akşam
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 daili'ye ailenin nasıl yediğini söyle.
 

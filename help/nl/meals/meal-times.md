@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Maaltijdtijden: een tijd voor elke maaltijd
 summary: Geef elke maaltijd een gebruikelijke tijd, zet één maaltijd op een andere tijd en zie je maaltijden op hun tijd in de agenda.
 keywords: maaltijdtijd, etenstijd, ontbijttijd, lunchtijd, snacktijd, meerdere snacks, agenda, tijdblok, alleen deze maaltijd, deze en volgende, hoe laat eten
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Elke maaltijd kan een tijd hebben, en de agenda toont maaltijden op hun tijd.
 

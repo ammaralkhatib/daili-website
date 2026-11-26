@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Vardiyalarını planla
 summary: Vardiyalarını bir kez kaydet, sonra planlamak için ayın günlerine dokun. Her gün bir aile etkinliği olur.
 keywords: vardiya, vardiyalar, vardiya planı, vardiya çizelgesi, nöbet, çalışma programı, sabah vardiyası, akşam vardiyası, gece vardiyası, vardiyalı çalışma, hemşire
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Vardiyalarını bir kez kaydet, sonra planlamak için günlere dokun. Her gün bir aile etkinliği olur.
 

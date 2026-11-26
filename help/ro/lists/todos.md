@@ -3,7 +3,7 @@ id: lists-todos
 title: Liste de sarcini
 summary: Liste de sarcini comune pentru treburile casei, comisioane și lucruri de școală. Bifează sarcinile și vezi cine ce face.
 keywords: sarcină, sarcini, to-do, treburi, comisioane, listă de verificare, gospodărie, bifează, gata, listă, adaugă cu detalii
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 O sarcină poate avea și o persoană, un termen și un memento.
 

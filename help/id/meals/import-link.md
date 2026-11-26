@@ -5,7 +5,7 @@ summary: Tempelkan tautan ke halaman resep, dan daili mengisi bahan, langkah, da
 keywords: impor, tautan, url, situs web, resep, simpan resep, blog, tempel tautan, web, salin resep
 tipTitle: Simpan resep dari situs mana saja
 tipBody: Tempelkan tautan ke halaman resep, dan daili mengisi bahan dan langkahnya untuk Anda.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Menemukan resep enak di internet? Simpan tanpa mengetik ulang.
 

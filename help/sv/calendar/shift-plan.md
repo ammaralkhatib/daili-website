@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planera dina skift
 summary: Spara dina skift en gång och tryck sedan på dagar i en månad. Varje dag blir en händelse för familjen.
 keywords: skift, skiftschema, schema, arbetsschema, skiftarbete, morgonskift, kvällsskift, nattskift, arbetstider, tjänstgöring, sjuksköterska, vård
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Spara dina skift en gång och tryck sedan på dagar för att planera dem. Varje dag blir en händelse för familjen.
 

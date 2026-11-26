@@ -3,11 +3,9 @@ id: meals-import-file
 title: Tuo reseptit toisesta sovelluksesta
 summary: Siirrytkö Paprikasta? Tuo reseptisi kuvineen dailiin kerralla.
 keywords: paprika, tuo, tiedosto, vie, paprikarecipes, siirrä, vaihda, reseptisovellus, paljon reseptejä, kokoelma, kaikki kerralla
-translatedFrom: 2026-11-19
+translatedFrom: 2026-11-26
 ---
-Siirrytkö Paprikasta? Tuo reseptisi kerralla, kuvineen.
-
-Vie reseptit Paprikassa Paprika-muodossa (.paprikarecipes-tiedosto) ja tallenna tiedosto laitteellesi, esimerkiksi Tiedostot-sovellukseen tai Lataukset-kansioon. Valikoiden nimet voivat vaihdella versioittain.
+Vie Paprikassa .paprikarecipes-tiedosto (Paprika-muoto) ja tallenna se laitteellesi, esimerkiksi Tiedostot-sovellukseen. Valikoiden nimet voivat vaihdella.
 
 1. Napauta aloitusnäytöllä **Reseptit**, sitten **+** ja sitten **Toisesta sovelluksesta**, ja valitse tiedosto.
 2. Poista valintamerkki resepteistä, joita et halua. Resepteissä, jotka ovat jo dailissa, ei ole aluksi valintamerkkiä.
@@ -18,6 +16,8 @@ Otsikko, ainesosat, vaiheet, annokset, ajat, lähdelinkki, muistiinpanot ja kuva
 
 > Note: Perheellä voi olla 50 tunnistetta; sen yli menevät kategoriat jätetään pois. Pitkiä reseptejä lyhennetään (100 ainesosaa, 50 vaihetta). Yhteenveto kertoo sen.
 
-> Note: Tiedosto luetaan laitteellasi; vain tuodut reseptit tallennetaan. Jos tuot uudelleen, reseptit, joilla on sama nimi ja linkki, ohitetaan.
+> Note: Tiedosto luetaan laitteellasi; vain tuodut reseptit tallennetaan.
 
-Toistaiseksi vain Paprikan tiedostot, eikä tämä toimi osoitteessa app.daili.app.
+Puuttuuko kuvia, kun painoit **Lopeta** tai netti ei toiminut? Tuo sama tiedosto myöhemmin uudelleen. daili lisää kuvat ja ohittaa reseptit, jotka sinulla jo on.
+
+Vain Paprikan tiedostot, eikä tämä toimi osoitteessa app.daili.app.

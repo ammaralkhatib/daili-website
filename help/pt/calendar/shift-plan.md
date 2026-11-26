@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planeje seus turnos
 summary: Salve seus turnos uma vez e depois toque nos dias de um mês para planejá-los. Cada dia vira um evento da família.
 keywords: turno, turnos, escala de turnos, escala de trabalho, escala, plantão, horário de trabalho, turno da manhã, turno da noite, trabalho por turnos, enfermeira
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Salve seus turnos uma vez e depois toque nos dias para planejá-los. Cada dia vira um evento da família.
 

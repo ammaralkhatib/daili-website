@@ -3,7 +3,7 @@ id: lists-todos
 title: Görev listeleri
 summary: Ev işleri, ayak işleri ve okul işleri için ortak görev listeleri. Görevleri işaretle ve kimin ne yaptığını gör.
 keywords: görev, görevler, yapılacaklar, ev işleri, ayak işleri, kontrol listesi, ev, işaretle, tamamlandı, liste, ayrıntılarla ekle
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Bir görevin ayrıca bir sorumlusu, bitiş tarihi ve hatırlatıcısı olabilir.
 

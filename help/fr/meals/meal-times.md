@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Heures des repas : une heure pour chaque repas
 summary: Donne à chaque repas une heure habituelle, mets un repas à une autre heure, et vois tes repas à leur heure dans l'agenda.
 keywords: heure des repas, heure du petit-déjeuner, heure du déjeuner, heure du dîner, heure de l'encas, plusieurs encas, agenda, calendrier, bloc horaire, ce repas uniquement, celui-ci et les suivants
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Chaque repas peut avoir une heure, et l'agenda montre les repas à leur heure.
 

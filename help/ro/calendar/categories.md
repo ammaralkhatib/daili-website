@@ -3,7 +3,7 @@ id: calendar-categories
 title: Categorii de evenimente și culori
 summary: Sortează evenimentele în categorii ca Muncă, Școală sau Sport. Fiecare categorie are culoarea ei.
 keywords: categorie, categorii, culoare, etichetă, tag, sortare, muncă, școală, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Culoarea unui eveniment vine de la categoria lui. Așa, „Sport” arată la fel peste tot. Fiecare familie începe cu șase: Familie, Muncă, Școală, Sport, Sănătate și Timp liber.
 

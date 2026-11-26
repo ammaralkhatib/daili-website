@@ -5,7 +5,7 @@ summary: Muestra los calendarios de tu teléfono o Google Calendar junto a los e
 keywords: calendario del teléfono, google calendar, añadir calendario, suscribirse, enlace, calendario escolar, calendario del trabajo, solo yo, editar en daili, vinculado, actualizar, color
 tipTitle: Mira en daili los calendarios de tu teléfono
 tipBody: Los calendarios del trabajo, del colegio o del deporte pueden aparecer junto a los eventos de la familia.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Abre **Calendario**, toca el engranaje y luego **Añadir un calendario** en **Otros calendarios**.
 2. **Calendario de Apple** (iPhone) o **Calendarios del teléfono** (Android).

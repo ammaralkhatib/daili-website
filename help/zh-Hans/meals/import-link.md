@@ -5,7 +5,7 @@ summary: 粘贴食谱页面的链接，daili 会帮你填好食材、步骤和�
 keywords: 导入, 链接, 网址, url, 网站, 食谱, 保存食谱, 博客, 粘贴链接, 网页
 tipTitle: 保存任何网站上的食谱
 tipBody: 粘贴食谱页面的链接，daili 会帮你填好食材和步骤。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 在网上看到好食谱？不用抄，直接保存。
 

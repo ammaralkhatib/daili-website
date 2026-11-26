@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Essenseinstellungen: welche Mahlzeiten, Portionen und Zeit fürs Abendessen
 summary: Wähle, welche Mahlzeiten deine Familie plant, wie viele Portionen du meist kochst und wann ihr zu Abend esst.
 keywords: essenseinstellungen, frühstück, mittagessen, abendessen, snack, portionen, familiengröße, essenszeit, voller abend, mahlzeiten
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Sag daili, wie deine Familie isst.
 

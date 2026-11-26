@@ -3,7 +3,7 @@ id: lists-todos
 title: Liste di attività
 summary: Liste di attività condivise per faccende, commissioni e cose di scuola. Spunta le attività e guarda chi fa cosa.
 keywords: attività, cose da fare, compito, faccende, commissioni, checklist, casa, spuntare, fatto, lista, aggiungi con dettagli
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Un'attività può avere anche una persona, una scadenza e un promemoria.
 

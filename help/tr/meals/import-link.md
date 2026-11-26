@@ -5,7 +5,7 @@ summary: Bir tarif sayfasının bağlantısını yapıştır, daili malzemeleri,
 keywords: içe aktar, bağlantı, link, url, web sitesi, tarif, tarifi kaydet, blog, bağlantı yapıştır, tarifi kopyala
 tipTitle: Her web sitesinden tarif kaydet
 tipBody: Bir tarif sayfasının bağlantısını yapıştır, daili malzemeleri ve adımları senin için doldursun.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 İnternette güzel bir tarif mi buldun? Yazmadan kaydet.
 

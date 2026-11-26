@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Barvy Google a kategorie
 summary: Události, kterým dáš barvu v Googlu, si ji v daili nechají. Barvě Google můžeš přiřadit jednu ze svých kategorií.
 keywords: barva google, google color, barva události, barva, kategorie, levandule, šalvěj, rajče, google kalendář, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Události, kterým dáš barvu v Google Kalendáři, si tu barvu v daili nechají. Události bez vlastní barvy si nechají barvu svého kalendáře.
 

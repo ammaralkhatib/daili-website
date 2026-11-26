@@ -3,7 +3,7 @@ id: meals-find
 title: Hľadanie receptov: vyhľadávanie, triedenie a vlastné štítky
 summary: Hľadaj recepty podľa názvu alebo suroviny, zoraď zoznam a zoskup recepty vlastnými štítkami vašej rodiny.
 keywords: hľadať, nájsť, surovina, štítky, označenie, filter, zoradiť, najnovšie, najrýchlejšie, bez lepku, obľúbené, spravovať štítky
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Na obrazovke **Recepty** ťukni na lupu a napíš slovo. Vyhľadávanie prechádza názov aj každú surovinu, takže „tekvica“ nájde každý recept, v ktorom je tekvica.
 

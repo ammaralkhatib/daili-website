@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Måltidstider: en tid för varje måltid
 summary: Ge varje måltid en vanlig tid, flytta en enda måltid till en annan tid och se måltiderna vid sin tid i kalendern.
 keywords: måltidstid, frukosttid, lunchtid, middagstid, mellanmålstid, flera mellanmål, kalender, tidsblock, bara den här måltiden, den här och följande, när äter vi
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Varje måltid kan ha en tid, och kalendern visar måltiderna vid sin tid.
 

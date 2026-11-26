@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Suunnittele vuorosi
 summary: Tallenna vuorosi kerran ja napauta sitten kuukauden päiviä suunnitellaksesi ne. Jokaisesta päivästä tulee perheen tapahtuma.
 keywords: vuoro, vuorot, vuorolista, työvuorot, työvuorolista, aamuvuoro, iltavuoro, yövuoro, vuorotyö, työaikataulu, sairaanhoitaja
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Tallenna vuorosi kerran ja napauta sitten päiviä suunnitellaksesi ne. Jokaisesta päivästä tulee tapahtuma, jonka perhe näkee.
 

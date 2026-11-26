@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Tidspunkt for måltider: et tidspunkt for hvert måltid
 summary: Gi hvert måltid et vanlig tidspunkt, flytt ett måltid til et annet tidspunkt, og se måltidene på tidspunktet sitt i kalenderen.
 keywords: måltidstid, tidspunkt for måltid, frokosttid, lunsjtid, middagstid, tid for mellommåltid, flere mellommåltider, kalender, tidsblokk, bare dette måltidet, dette og følgende
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Hvert måltid kan ha et tidspunkt, og kalenderen viser måltidene på tidspunktet sitt.
 

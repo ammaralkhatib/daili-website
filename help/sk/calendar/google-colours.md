@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Farby Google a kategórie
 summary: Udalosti, ktorým dáš farbu v Google, si ju v daili nechajú. Farbe Google môžeš priradiť jednu zo svojich kategórií.
 keywords: farba google, google color, farba udalosti, farba, kategória, levanduľa, šalvia, paradajka, kalendár google, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Udalosti, ktorým dáš farbu v Kalendári Google, si túto farbu v daili nechajú. Udalosti bez vlastnej farby si nechajú farbu svojho kalendára.
 

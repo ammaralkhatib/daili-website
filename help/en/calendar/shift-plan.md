@@ -6,8 +6,8 @@ summary: Save your shifts once, then tap days in a month to plan them. Each day 
 keywords: shift, shifts, shift plan, rota, roster, work schedule, early shift, late shift, night shift, dienstplan, nurse, shift work
 routes: /calendar/shifts, /calendar/shifts/types
 tryIt: /calendar/shifts
-since: 99.0.0
-updated: 2026-11-24
+since: 1.18.0
+updated: 2026-11-26
 mediaPending: the Shift plan month with Early and Night days; the My shifts list
 order: 11
 related: calendar-views, calendar-add-event, calendar-reminders

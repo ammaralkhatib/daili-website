@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: 食事の設定：計画する食事、人数分、夕食の時間
 summary: 家族が計画する食事、ふだん作る人数分、夕食の時間を選びます。
 keywords: 食事の設定, 朝食, 昼食, 夕食, 軽食, 人数分, 分量, 家族の人数, 夕食の時間, 忙しい夜
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 家族の食べ方をdailiに伝えましょう。
 

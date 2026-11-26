@@ -7,10 +7,10 @@ keywords: import, link, url, website, recipe, save recipe, blog, paste link, web
 routes: /recipes, /recipes/:id/edit
 tryIt: /recipes
 since: 1.4.0
-updated: 2026-11-10
+updated: 2026-11-26
 media: meals-import-link
 order: 3
-related: meals-share-sheet, meals-paste, meals-youtube, meals-instagram, meals-search-online, meals-add-recipe
+related: meals-share-sheet, meals-paste, meals-youtube, meals-instagram, meals-search-online, meals-add-recipe, meals-import-file
 tipTitle: Save recipes from any website
 tipBody: Paste a link to a recipe page, and daili fills in the ingredients and steps for you.
 tipSkipIf: hasRecipes

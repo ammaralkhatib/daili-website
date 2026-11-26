@@ -3,7 +3,7 @@ id: meals-find
 title: Temukan resep: pencarian, urutan, dan tag Anda sendiri
 summary: Cari resep menurut judul atau bahan, urutkan daftarnya, dan kelompokkan resep dengan tag milik keluarga Anda sendiri.
 keywords: cari, pencarian, bahan, tag, label, filter, urutkan, terbaru, tercepat, bebas gluten, favorit, kelola tag
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Di **Resep**, ketuk kaca pembesar lalu ketik sebuah kata. Pencarian melihat judul dan setiap bahan, jadi "labu" menemukan semua resep yang memakai labu.
 

@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Časy jídel: čas pro každé jídlo
 summary: Dej každému jídlu obvyklý čas, přesuň jedno jídlo na jiný čas a podívej se na jídla v kalendáři v jejich čase.
 keywords: čas jídla, čas snídaně, čas oběda, čas večeře, čas svačiny, více svačin, kalendář, časový blok, jen toto jídlo, toto a následující
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Každé jídlo může mít svůj čas a kalendář ukazuje jídla v jejich čase.
 

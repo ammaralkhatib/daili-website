@@ -3,7 +3,7 @@ id: lists-todos
 title: Opgavelister
 summary: Fælles opgavelister til husarbejde, ærinder og skoleting. Sæt flueben ved opgaver, og se, hvem der gør hvad.
 keywords: opgave, to-do, gøremål, pligter, ærinder, tjekliste, husholdning, flueben, færdig, liste, tilføj med detaljer
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 En opgave kan også have en person, en forfaldsdato og en påmindelse.
 

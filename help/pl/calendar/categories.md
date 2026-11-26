@@ -3,7 +3,7 @@ id: calendar-categories
 title: Kategorie i kolory wydarzeń
 summary: Dziel wydarzenia na kategorie, takie jak Praca, Szkoła albo Sport. Każda kategoria ma swój kolor.
 keywords: kategoria, kategorie, kolor, kolory, etykieta, tag, sortowanie, praca, szkoła, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Kolor wydarzenia bierze się z jego kategorii. Dzięki temu „Sport” wszędzie wygląda tak samo. Każda rodzina zaczyna z sześcioma: Rodzina, Praca, Szkoła, Sport, Zdrowie i Czas wolny.
 

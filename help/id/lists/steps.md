@@ -3,7 +3,7 @@ id: lists-steps
 title: Langkah di dalam tugas
 summary: Pecah tugas besar menjadi langkah-langkah kecil dan centang satu per satu.
 keywords: langkah, subtugas, sub-tugas, daftar periksa, checklist, pecah tugas, langkah kecil, kemajuan, centang, daftar barang bawaan
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Pecah tugas besar, seperti "Berkemas untuk perjalanan", menjadi langkah-langkah kecil. Centang satu per satu.
 

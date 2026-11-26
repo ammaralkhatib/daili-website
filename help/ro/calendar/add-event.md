@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Adaugă un eveniment
 summary: Pune o programare, o excursie sau un meci în calendarul familiei, ca să-l vadă toată lumea.
 keywords: adaugă eveniment, eveniment nou, creează eveniment, programare, întâlnire, plan, dată, intrare în calendar, toată ziua, mai multe zile, câteva zile
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Toată lumea din familia ta vede imediat un eveniment nou.
 

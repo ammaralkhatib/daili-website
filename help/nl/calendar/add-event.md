@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Een afspraak toevoegen
 summary: Zet een afspraak, een reisje of een wedstrijd in de gezinsagenda, zodat iedereen het ziet.
 keywords: afspraak toevoegen, nieuwe afspraak, afspraak maken, agenda, plannen, datum, agenda-item, hele dag, meer dagen, meerdere dagen
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Iedereen in je gezin ziet een nieuwe afspraak meteen.
 

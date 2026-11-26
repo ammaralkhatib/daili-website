@@ -5,7 +5,7 @@ summary: Lim inn en lenke til en oppskriftsside, så fyller daili inn ingrediens
 keywords: importer, lenke, url, nettside, oppskrift, lagre oppskrift, blogg, lim inn lenke, nett, kopier oppskrift
 tipTitle: Lagre oppskrifter fra alle nettsider
 tipBody: Lim inn en lenke til en oppskriftsside, så fyller daili inn ingrediensene og stegene for deg.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Har du funnet en god oppskrift på nettet? Lagre den uten å skrive den av.
 

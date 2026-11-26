@@ -6,15 +6,13 @@ summary: Moving from Paprika? Bring your recipes into daili in one go, with thei
 keywords: paprika, import, file, export, paprikarecipes, move, switch, recipe app, many recipes, collection, all at once
 routes: /recipes
 tryIt: /recipes
-since: 99.0.0
-updated: 2026-11-19
+since: 1.18.0
+updated: 2026-11-26
 mediaPending: the Recipes + menu with "From another app" circled
 order: 7
 related: meals-add-recipe, meals-paste, meals-import-link
 ---
-Moving from Paprika? Bring your recipes over in one go, with photos.
-
-In Paprika, export in the Paprika format (a .paprikarecipes file) and save it on your device, for example in Files or Downloads. Menu names can differ by version.
+In Paprika, export a .paprikarecipes file (Paprika format) and save it on your device, for example in Files. Menu names can differ.
 
 1. On Home, tap **Recipes**, then **+**, then **From another app**, and pick the file.
 2. Untick what you don't want. Recipes already in daili start unticked.
@@ -25,6 +23,8 @@ Title, ingredients, steps, servings, times, source link, notes and photo come al
 
 > Note: A family can have 50 tags; extra categories are left out. Long recipes are shortened (100 ingredients, 50 steps). The summary tells you.
 
-> Note: The file is read on your device; only imported recipes are saved. Importing again skips recipes with the same name and link.
+> Note: The file is read on your device; only imported recipes are saved.
 
-Paprika files only for now, and not on app.daili.app.
+Photos missing after **Stop** or with no internet? Import the same file again later. daili adds them and skips the recipes you already have.
+
+Paprika files only, and not on app.daili.app.

@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Jam makan: waktu untuk setiap menu
 summary: Beri setiap menu waktu biasa, pindahkan satu menu ke jam lain, dan lihat menu Anda pada jamnya di kalender.
 keywords: jam makan, waktu sarapan, waktu makan siang, waktu makan malam, waktu camilan, beberapa camilan, kalender, blok waktu, menu ini saja, ini dan berikutnya, jadwal makan
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Setiap menu bisa punya waktu, dan kalender menampilkan menu pada waktunya.
 

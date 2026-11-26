@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Ateria-asetukset: mitkä ateriat, annokset ja päivällisaika
 summary: Valitse, mitä aterioita perheesi suunnittelee, montako annosta yleensä teette ja milloin syötte päivällistä.
 keywords: ateria-asetukset, aamiainen, lounas, päivällinen, välipala, annokset, perheen koko, päivällisaika, kiireinen ilta
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Kerro dailille, miten perheesi syö.
 

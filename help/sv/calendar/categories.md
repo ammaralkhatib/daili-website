@@ -3,7 +3,7 @@ id: calendar-categories
 title: Händelsekategorier och färger
 summary: Sortera händelser i kategorier som Jobb, Skola eller Sport. Varje kategori har sin egen färg.
 keywords: kategori, kategorier, färg, etikett, tagg, sortera, jobb, arbete, skola, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 En händelses färg kommer från dess kategori. Då ser ”Sport” likadan ut överallt. Varje familj börjar med sex: Familj, Jobb, Skola, Sport, Hälsa och Fritid.
 

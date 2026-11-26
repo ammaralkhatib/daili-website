@@ -5,7 +5,7 @@ summary: Vis telefonens kalendere eller Google Kalender ved siden av familiens h
 keywords: telefonkalender, google kalender, legg til kalender, abonner, lenke, skolekalender, jobbkalender, bare meg, rediger i daili, tilknyttet, oppdater, farge
 tipTitle: Se telefonens kalendere i daili
 tipBody: Jobb-, skole- eller idrettskalendere kan vises ved siden av familiens hendelser.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Åpne **Kalender**, trykk på tannhjulet, og så på **Legg til en kalender** under **Andre kalendere**.
 2. **Apple Kalender** (iPhone) eller **Telefonens kalendere** (Android).

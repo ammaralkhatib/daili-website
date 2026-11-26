@@ -5,7 +5,7 @@ summary: Liitä linkki reseptisivulle, niin daili täyttää ainesosat, vaiheet 
 keywords: tuo, linkki, url, verkkosivu, resepti, tallenna resepti, blogi, liitä linkki, verkko, kopioi resepti
 tipTitle: Tallenna reseptejä miltä tahansa sivulta
 tipBody: Liitä linkki reseptisivulle, niin daili täyttää ainesosat ja vaiheet puolestasi.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Löysitkö hyvän reseptin verkosta? Tallenna se kirjoittamatta sitä uudelleen.
 

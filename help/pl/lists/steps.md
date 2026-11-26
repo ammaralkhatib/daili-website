@@ -3,7 +3,7 @@ id: lists-steps
 title: Kroki w zadaniu
 summary: Podziel duże zadanie na małe kroki i odhaczaj je po kolei.
 keywords: kroki, podzadania, podzadanie, checklista, w zadaniu, podziel zadanie, małe kroki, postęp, odhacz, lista do spakowania, pakowanie
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Podziel duże zadanie, np. „Spakuj się na wyjazd”, na małe kroki. Odhaczaj je po kolei.
 

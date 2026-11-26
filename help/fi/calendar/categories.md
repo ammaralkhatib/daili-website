@@ -3,7 +3,7 @@ id: calendar-categories
 title: Tapahtumien luokat ja värit
 summary: Järjestä tapahtumat luokkiin, kuten Työ, Koulu tai Urheilu. Jokaisella luokalla on oma värinsä.
 keywords: luokka, luokat, kategoria, väri, tunniste, lajittele, työ, koulu, urheilu
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Tapahtuman väri tulee sen luokasta. Siksi ”Urheilu” näyttää kaikkialla samalta. Jokainen perhe aloittaa kuudella: Perhe, Työ, Koulu, Urheilu, Terveys ja Vapaa-aika.
 

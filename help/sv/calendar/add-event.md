@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Lägg till en händelse
 summary: Lägg in ett besök, en resa eller en match i familjens kalender, så att alla ser det.
 keywords: lägg till händelse, ny händelse, skapa händelse, möte, tid, planera, datum, kalenderpost, heldag, fler dagar, flera dagar
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Alla i din familj ser en ny händelse direkt.
 

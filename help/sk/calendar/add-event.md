@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Pridaj udalosť
 summary: Zapíš termín u lekára, výlet alebo zápas do rodinného kalendára, aby ho videli všetci.
 keywords: pridať udalosť, nová udalosť, vytvoriť udalosť, termín, stretnutie, plán, dátum, záznam v kalendári, celý deň, viac dní, niekoľko dní
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Novú udalosť hneď uvidí každý v tvojej rodine.
 

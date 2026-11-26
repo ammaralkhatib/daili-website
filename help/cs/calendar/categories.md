@@ -3,7 +3,7 @@ id: calendar-categories
 title: Kategorie a barvy událostí
 summary: Rozděl události do kategorií jako Práce, Škola nebo Sport. Každá kategorie má vlastní barvu.
 keywords: kategorie, barva, barvy, štítek, značka, třídění, práce, škola, sport, zdraví
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Barva události je daná její kategorií. Díky tomu vypadá „Sport“ všude stejně. Každá rodina začíná se šesti: Rodina, Práce, Škola, Sport, Zdraví a Volný čas.
 

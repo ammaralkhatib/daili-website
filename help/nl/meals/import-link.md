@@ -5,7 +5,7 @@ summary: Plak een link naar een receptpagina, en daili vult de ingrediënten, st
 keywords: importeren, link, url, website, recept, recept bewaren, blog, link plakken, web, recept kopiëren
 tipTitle: Bewaar recepten van elke website
 tipBody: Plak een link naar een receptpagina, en daili vult de ingrediënten en stappen voor je in.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Online een lekker recept gevonden? Bewaar het zonder het over te typen.
 

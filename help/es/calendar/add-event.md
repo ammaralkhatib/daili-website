@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Añadir un evento
 summary: Pon una cita, un viaje o un partido en el calendario familiar, para que todos lo vean.
 keywords: añadir evento, evento nuevo, crear evento, cita, programar, planificar, fecha, entrada del calendario, todo el día, más días, varios días
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Toda tu familia ve un evento nuevo al momento.
 

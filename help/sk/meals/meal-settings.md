@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Nastavenia jedál: ktoré jedlá, porcie a čas večere
 summary: Vyber, ktoré jedlá tvoja rodina plánuje, koľko porcií zvyčajne varíš a kedy máte večeru.
 keywords: nastavenia jedál, raňajky, obed, večera, olovrant, porcie, veľkosť rodiny, čas večere, rušný večer
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Povedz daili, ako sa tvoja rodina stravuje.
 

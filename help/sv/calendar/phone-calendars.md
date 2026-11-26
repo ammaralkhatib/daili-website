@@ -5,7 +5,7 @@ summary: Visa telefonens kalendrar eller Google Kalender bredvid familjens händ
 keywords: telefonens kalender, google kalender, lägg till kalender, prenumerera, länk, skolkalender, jobbkalender, bara jag, redigera i daili, länkad, uppdatera, färg
 tipTitle: Se telefonens kalendrar i daili
 tipBody: Kalendrar för jobb, skola eller sport kan visas bredvid familjens händelser.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Öppna **Kalender**, tryck på kugghjulet och sedan på **Lägg till en kalender** under **Andra kalendrar**.
 2. **Apple Kalender** (iPhone) eller **Telefonens kalendrar** (Android).

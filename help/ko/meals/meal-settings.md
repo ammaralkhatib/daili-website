@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: 식사 설정: 계획할 식사, 인분, 저녁 시간
 summary: 가족이 계획할 식사, 평소 요리하는 인분 수, 저녁 먹는 시간을 고르세요.
 keywords: 식사 설정, 아침, 점심, 저녁, 간식, 인분, 분량, 가족 수, 저녁 시간, 바쁜 저녁
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 가족이 어떻게 먹는지 daili에 알려 주세요.
 

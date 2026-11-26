@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Horários das refeições: um horário para cada refeição
 summary: Dê a cada refeição um horário habitual, mude uma refeição para outro horário e veja suas refeições no horário delas no calendário.
 keywords: horário das refeições, hora do café da manhã, hora do almoço, hora do jantar, hora do lanche, vários lanches, calendário, bloco de horário, só esta refeição, esta e as seguintes
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Cada refeição pode ter um horário, e o calendário mostra as refeições nesse horário.
 

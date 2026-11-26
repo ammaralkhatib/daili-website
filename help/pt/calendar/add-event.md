@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Adicionar um evento
 summary: Coloque uma consulta, uma viagem ou um jogo no calendário da família, para todo mundo ver.
 keywords: adicionar evento, novo evento, criar evento, consulta, compromisso, agendar, planejar, data, dia inteiro, mais dias, vários dias
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Todo mundo da família vê um evento novo na hora.
 

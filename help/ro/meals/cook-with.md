@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Gătește cu ce avem
 summary: Spune-i lui daili ce mâncare ai acasă și vezi care dintre rețetele tale se potrivesc sau primește idei noi de la AI.
 keywords: ce pot găti, ingrediente de acasă, frigider, resturi, folosește tot, cămară, listă de stoc, idei, idei ai, poză cu frigiderul, spune ingredientele, lipsește
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Pe **Rețete**, apasă pe **Gătește cu ce avem**.
 2. Scrie mâncarea sau apasă pe lista ta de stoc (dacă ai mai multe, alege una sau **Toate listele de stoc**), pe **Spune** sau pe **Foto** (frigider sau dulap, 1 acțiune AI).

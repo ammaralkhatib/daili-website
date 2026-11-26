@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Pianifica i tuoi turni
 summary: Salva i tuoi turni una volta, poi tocca i giorni del mese per pianificarli. Ogni giorno diventa un evento di famiglia.
 keywords: turno, turni, piano turni, turnazione, calendario turni, orario di lavoro, lavoro a turni, turnista, turno del mattino, turno del pomeriggio, turno di notte, infermiera
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Salva i tuoi turni una volta, poi tocca i giorni per pianificarli. Ogni giorno diventa un evento che la famiglia vede.
 

@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planifica tus turnos
 summary: Guarda tus turnos una vez y luego toca los días del mes para planificarlos. Cada día se convierte en un evento familiar.
 keywords: turno, turnos, plan de turnos, cuadrante, horario de trabajo, trabajo por turnos, turno de mañana, turno de tarde, turno de noche, rotación, guardias, enfermera
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Guarda tus turnos una vez y luego toca los días para planificarlos. Cada día se convierte en un evento que ve la familia.
 

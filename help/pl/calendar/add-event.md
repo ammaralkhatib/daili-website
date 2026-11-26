@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Dodaj wydarzenie
 summary: Wpisz wizytę, wyjazd albo mecz do rodzinnego kalendarza, żeby wszyscy go widzieli.
 keywords: dodaj wydarzenie, nowe wydarzenie, utwórz wydarzenie, wizyta, termin, zaplanuj, data, wpis w kalendarzu, cały dzień, więcej dni, kilka dni
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Każdy w rodzinie od razu widzi nowe wydarzenie.
 

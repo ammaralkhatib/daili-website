@@ -3,11 +3,9 @@ id: meals-import-file
 title: Importuj recepty z inej aplikácie
 summary: Prechádzaš z aplikácie Paprika? Prenes si recepty do daili naraz, aj s fotkami.
 keywords: paprika, import, súbor, export, paprikarecipes, presun, prechod, aplikácia na recepty, veľa receptov, zbierka, všetko naraz
-translatedFrom: 2026-11-19
+translatedFrom: 2026-11-26
 ---
-Prechádzaš z aplikácie Paprika? Prenes si recepty naraz, aj s fotkami.
-
-V aplikácii Paprika exportuj recepty vo formáte Paprika (súbor .paprikarecipes) a ulož ho do zariadenia, napríklad do aplikácie Súbory alebo do priečinka Stiahnuté súbory. Názvy ponúk sa môžu v jednotlivých verziách líšiť.
+V aplikácii Paprika exportuj súbor .paprikarecipes (formát Paprika) a ulož ho do zariadenia, napríklad do aplikácie Súbory. Názvy ponúk sa môžu líšiť.
 
 1. Na domovskej obrazovke ťukni na **Recepty**, potom na **+**, potom na **Z inej aplikácie** a vyber súbor.
 2. Odškrtni, čo nechceš. Recepty, ktoré už v daili máš, nie sú zaškrtnuté.
@@ -18,6 +16,8 @@ Prenesú sa názov, suroviny, postup, porcie, časy, odkaz na zdroj, poznámky a
 
 > Note: Rodina môže mať 50 štítkov; ďalšie kategórie sa vynechajú. Dlhé recepty sa skrátia (100 surovín, 50 krokov). Súhrn na konci ti to povie.
 
-> Note: Súbor sa číta v tvojom zariadení; uložia sa len recepty, ktoré importuješ. Pri ďalšom importe sa preskočia recepty s rovnakým názvom a odkazom.
+> Note: Súbor sa číta v tvojom zariadení; uložia sa len recepty, ktoré importuješ.
 
-Zatiaľ len súbory z aplikácie Paprika a nie na app.daili.app.
+Chýbajú fotky po ťuknutí na **Zastaviť** alebo bez internetu? Neskôr importuj ten istý súbor znova. daili ich doplní a preskočí recepty, ktoré už máš.
+
+Len súbory z aplikácie Paprika a nie na app.daili.app.

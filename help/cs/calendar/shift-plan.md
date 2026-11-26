@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Naplánuj si směny
 summary: Ulož si své směny jednou a pak je klepáním na dny v měsíci naplánuješ. Z každého dne se stane rodinná událost.
 keywords: směna, směny, plán směn, rozpis směn, rozpis služeb, pracovní doba, ranní směna, odpolední směna, noční směna, směnný provoz, služba, zdravotní sestra
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Ulož si své směny jednou a pak je klepáním na dny naplánuješ. Z každého dne se stane rodinná událost.
 

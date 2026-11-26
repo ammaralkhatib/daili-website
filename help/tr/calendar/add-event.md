@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Etkinlik ekle
 summary: Bir randevuyu, geziyi ya da maçı aile takvimine ekle, herkes görsün.
 keywords: etkinlik ekle, yeni etkinlik, etkinlik oluştur, randevu, program, plan, tarih, takvim kaydı, tüm gün, diğer günler, birkaç gün
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Ailendeki herkes yeni bir etkinliği hemen görür.
 

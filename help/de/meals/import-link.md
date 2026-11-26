@@ -5,7 +5,7 @@ summary: Füg den Link zu einer Rezeptseite ein, und daili trägt Zutaten, Schri
 keywords: importieren, link, url, website, rezept, rezept speichern, blog, link einfügen, web, rezept kopieren
 tipTitle: Rezepte von jeder Website speichern
 tipBody: Füg den Link zu einer Rezeptseite ein, und daili trägt Zutaten und Schritte für dich ein.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Online ein gutes Rezept gefunden? Speicher es, ohne es abzutippen.
 

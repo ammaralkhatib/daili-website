@@ -3,7 +3,7 @@ id: lists-steps
 title: Etapas dentro de uma tarefa
 summary: Divida uma tarefa grande em etapas pequenas e marque uma por uma.
 keywords: etapas, subtarefas, subtarefa, checklist, dentro da tarefa, dividir, passos, etapas pequenas, progresso, marcar, lista de bagagem, fazer as malas
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Divida uma tarefa grande, como “Fazer as malas para a viagem”, em etapas pequenas. Marque uma por uma.
 

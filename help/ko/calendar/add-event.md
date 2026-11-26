@@ -3,7 +3,7 @@ id: calendar-add-event
 title: 일정 추가하기
 summary: 병원 예약, 여행, 경기 같은 일을 가족 캘린더에 넣어서 모두가 보게 하세요.
 keywords: 일정 추가, 새 일정, 일정 만들기, 약속, 예약, 스케줄, 날짜, 캘린더 등록, 하루 종일, 다른 날짜, 여러 날
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 새 일정은 가족 모두에게 바로 보여요.
 

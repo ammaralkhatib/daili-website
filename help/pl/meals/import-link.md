@@ -5,7 +5,7 @@ summary: Wklej link do strony z przepisem, a daili samo uzupełni składniki, kr
 keywords: import, link, url, strona, przepis, zapisz przepis, blog, wklej link, internet, skopiuj przepis
 tipTitle: Zapisuj przepisy z dowolnej strony
 tipBody: Wklej link do strony z przepisem, a daili samo uzupełni składniki i kroki.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Trafił ci się dobry przepis w sieci? Zapisz go bez przepisywania.
 

@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Godziny posiłków: godzina dla każdego posiłku
 summary: Ustaw każdemu posiłkowi zwykłą godzinę, przenieś jeden posiłek na inną godzinę i zobacz posiłki w kalendarzu o ich godzinie.
 keywords: godzina posiłku, pora śniadania, pora obiadu, pora kolacji, pora przekąski, kilka przekąsek, kalendarz, blok czasu, tylko ten posiłek, to i kolejne
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Każdy posiłek może mieć godzinę, a kalendarz pokazuje posiłki o ich godzinie.
 

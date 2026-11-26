@@ -3,7 +3,7 @@ id: lists-todos
 title: Tehtävälistat
 summary: Yhteiset tehtävälistat kotitöille, asioille ja koulujutuille. Merkitse tehtävät tehdyiksi ja näe, kuka tekee mitäkin.
 keywords: tehtävä, tehtävät, to-do, kotityöt, asiat, tarkistuslista, kotitalous, merkitse, tehty, lista, lisää tiedoilla
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Tehtävällä voi olla myös henkilö, eräpäivä ja muistutus.
 

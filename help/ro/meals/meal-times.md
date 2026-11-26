@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Orele meselor: o oră pentru fiecare masă
 summary: Dă fiecărei mese o oră obișnuită, mută o singură masă la altă oră și vezi mesele la ora lor în calendar.
 keywords: ora mesei, ora micului dejun, ora prânzului, ora cinei, ora gustării, mai multe gustări, calendar, bloc orar, doar această masă, aceasta și următoarele
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Fiecare masă poate avea o oră, iar calendarul arată mesele la ora lor.
 

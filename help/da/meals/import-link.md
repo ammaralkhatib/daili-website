@@ -5,7 +5,7 @@ summary: Indsæt et link til en opskriftsside, så udfylder daili ingredienser, 
 keywords: importér, link, url, hjemmeside, opskrift, gem opskrift, blog, indsæt link, web, kopiér opskrift
 tipTitle: Gem opskrifter fra enhver hjemmeside
 tipBody: Indsæt et link til en opskriftsside, så udfylder daili ingredienser og trin for dig.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Har du fundet en god opskrift på nettet? Gem den uden at skrive den af.
 

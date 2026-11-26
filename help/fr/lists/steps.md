@@ -3,7 +3,7 @@ id: lists-steps
 title: Étapes dans une tâche
 summary: Découpe une grande tâche en petites étapes et coche-les une par une.
 keywords: étapes, sous-tâches, sous-tâche, checklist, liste de contrôle, dans une tâche, découper, petites étapes, progression, cocher, liste de bagages
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Découpe une grande tâche, comme « Préparer les bagages », en petites étapes. Coche-les une par une.
 

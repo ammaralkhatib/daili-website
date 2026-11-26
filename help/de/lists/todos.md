@@ -3,7 +3,7 @@ id: lists-todos
 title: Aufgabenlisten
 summary: Gemeinsame Aufgabenlisten für Hausarbeit, Besorgungen und Schulsachen. Hake Aufgaben ab und sieh, wer was macht.
 keywords: aufgabe, aufgaben, to-do, todo, hausarbeit, besorgungen, checkliste, haushalt, abhaken, erledigt, liste, mit details hinzufügen
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Eine Aufgabe kann auch eine Person, ein Fälligkeitsdatum und eine Erinnerung haben.
 

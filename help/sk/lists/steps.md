@@ -3,7 +3,7 @@ id: lists-steps
 title: Kroky v úlohe
 summary: Rozdeľ veľkú úlohu na malé kroky a odškrtávaj ich jeden po druhom.
 keywords: kroky, podúlohy, podúloha, kontrolný zoznam, v úlohe, rozdeliť, malé kroky, pokrok, odškrtnúť, zoznam na balenie
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Rozdeľ veľkú úlohu, napríklad „Zbaliť sa na výlet“, na malé kroky. Odškrtávaj ich jeden po druhom.
 

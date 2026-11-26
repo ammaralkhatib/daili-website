@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Zaplanuj swoje zmiany
 summary: Zapisz swoje zmiany raz, a potem dotykaj dni w miesiącu, aby je zaplanować. Każdy dzień staje się wydarzeniem rodzinnym.
 keywords: zmiana, zmiany, grafik zmian, grafik, grafik pracy, harmonogram pracy, ranna zmiana, popołudniowa zmiana, nocna zmiana, praca zmianowa, dyżur, pielęgniarka
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Zapisz swoje zmiany raz, a potem dotykaj dni, aby je zaplanować. Każdy dzień staje się wydarzeniem rodzinnym.
 

@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Paramètres des repas : quels repas, portions et heure du dîner
 summary: Choisis les repas que ta famille prévoit, combien de portions tu cuisines d'habitude, et l'heure du dîner.
 keywords: paramètres des repas, petit-déjeuner, déjeuner, dîner, encas, portions, taille de la famille, heure du dîner, soirée chargée
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Dis à daili comment ta famille mange.
 

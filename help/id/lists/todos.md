@@ -3,7 +3,7 @@ id: lists-todos
 title: Daftar tugas
 summary: Daftar tugas bersama untuk pekerjaan rumah, urusan, dan keperluan sekolah. Centang tugas dan lihat siapa mengerjakan apa.
 keywords: tugas, to-do, todo, pekerjaan rumah, urusan, daftar periksa, rumah tangga, centang, selesai, daftar, tambah dengan detail
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Tugas juga bisa punya orang, tanggal jatuh tempo, dan pengingat.
 

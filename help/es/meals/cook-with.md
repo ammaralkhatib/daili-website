@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Cocinar con lo que hay
 summary: Dile a daili qué alimentos tienes en casa y mira cuáles de tus recetas encajan, o pide ideas nuevas a la IA.
 keywords: qué puedo cocinar, ingredientes en casa, nevera, sobras, aprovechar, despensa, lista de despensa, ideas, ideas con ia, foto de la nevera, dictar ingredientes, lo que falta
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. En **Recetas**, toca **Cocinar con lo que hay**.
 2. Escribe alimentos o toca tu lista de despensa (si tienes varias, elige una o **Todas las listas de despensa**), **Dictar** o **Foto** (nevera o armario, 1 acción de IA).

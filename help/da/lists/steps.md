@@ -3,7 +3,7 @@ id: lists-steps
 title: Trin i en opgave
 summary: Del en stor opgave op i små trin, og sæt flueben ved dem et ad gangen.
 keywords: trin, delopgaver, underopgaver, tjekliste, i en opgave, del op, små trin, fremskridt, flueben, pakkeliste
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Del en stor opgave, som »Pak til rejsen«, op i små trin. Sæt flueben ved dem et ad gangen.
 

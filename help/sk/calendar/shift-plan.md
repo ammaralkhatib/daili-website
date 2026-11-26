@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Naplánuj si zmeny
 summary: Raz si ulož svoje zmeny a potom ich naplánuješ ťuknutím na dni v mesiaci. Z každého dňa bude rodinná udalosť.
 keywords: zmena, zmeny, plán zmien, rozpis zmien, pracovný čas, ranná zmena, poobedná zmena, nočná zmena, zmenová práca, sestra, turnus
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Raz si ulož svoje zmeny a potom ich naplánuješ ťuknutím na dni. Z každého dňa bude rodinná udalosť.
 

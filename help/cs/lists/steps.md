@@ -3,7 +3,7 @@ id: lists-steps
 title: Kroky v úkolu
 summary: Rozděl velký úkol na malé kroky a odškrtávej je jeden po druhém.
 keywords: kroky, podúkoly, podúkol, checklist, uvnitř úkolu, rozdělit úkol, malé kroky, postup, odškrtnout, seznam na balení, balení
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Rozděl velký úkol, třeba „Sbalit se na výlet“, na malé kroky. Odškrtávej je jeden po druhém.
 

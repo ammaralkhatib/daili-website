@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google renkleri ve kategoriler
 summary: Google'da renklendirdiğin etkinlikler daili'de bu rengi korur. Bir Google rengine kategorilerinden birini verebilirsin.
 keywords: google rengi, google color, etkinlik rengi, renk, color, kategori, lavanta, adaçayı, domates, google takvim
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Google Takvim'de renklendirdiğin etkinlikler daili'de bu rengi korur. Kendi rengi olmayan etkinlikler takviminin rengini korur.
 

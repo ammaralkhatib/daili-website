@@ -3,7 +3,7 @@ id: calendar-categories
 title: Kategori acara dan warnanya
 summary: Kelompokkan acara ke kategori seperti Pekerjaan, Sekolah, atau Olahraga. Tiap kategori punya warna sendiri.
 keywords: kategori, warna, label, tag, kelompokkan, pekerjaan, sekolah, olahraga, kategori acara
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Warna sebuah acara berasal dari kategorinya. Jadi "Olahraga" terlihat sama di mana saja. Setiap keluarga mulai dengan enam: Keluarga, Pekerjaan, Sekolah, Olahraga, Kesehatan, dan Waktu luang.
 

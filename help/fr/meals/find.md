@@ -3,7 +3,7 @@ id: meals-find
 title: Trouver des recettes : recherche, tri et étiquettes perso
 summary: Cherche des recettes par titre ou par ingrédient, trie la liste, et regroupe les recettes avec les étiquettes de ta famille.
 keywords: rechercher, trouver, ingrédient, étiquettes, tag, filtre, trier, plus récentes, plus rapides, sans gluten, coup de cœur, gérer les étiquettes
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Sur **Recettes**, touche la loupe et tape un mot. La recherche regarde le titre et chaque ingrédient : « courge » trouve toutes les recettes qui contiennent de la courge.
 

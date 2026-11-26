@@ -3,7 +3,7 @@ id: lists-steps
 title: Passaggi dentro un'attività
 summary: Dividi un'attività grande in piccoli passaggi e spuntali uno alla volta.
 keywords: passaggi, sottoattività, sotto-attività, checklist, lista di controllo, dentro un'attività, suddividere, piccoli passaggi, avanzamento, spuntare, lista valigia
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Dividi un'attività grande, come «Fare le valigie», in piccoli passaggi. Spuntali uno alla volta.
 

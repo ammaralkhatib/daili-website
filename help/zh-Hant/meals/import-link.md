@@ -5,7 +5,7 @@ summary: 貼上食譜網頁的連結，daili 會幫你填好食材、步驟和�
 keywords: 匯入, 連結, 網址, url, 網站, 食譜, 儲存食譜, 部落格, 貼上連結, 網頁
 tipTitle: 從任何網站儲存食譜
 tipBody: 貼上食譜網頁的連結，daili 會幫你填好食材和步驟。
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 在網路上找到好食譜？不用自己打字就能存下來。
 

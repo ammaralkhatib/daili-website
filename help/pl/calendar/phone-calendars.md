@@ -5,7 +5,7 @@ summary: Pokaż kalendarze z telefonu albo Kalendarz Google obok rodzinnych wyda
 keywords: kalendarz w telefonie, kalendarz google, dodaj kalendarz, subskrypcja, link, kalendarz szkolny, kalendarz z pracy, tylko ja, edytuj w daili, połączony, odśwież, kolor
 tipTitle: Zobacz kalendarze z telefonu w daili
 tipBody: Kalendarze z pracy, szkoły albo zajęć sportowych mogą się pojawiać obok rodzinnych wydarzeń.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Otwórz **Kalendarz**, dotknij zębatki, a potem **Dodaj kalendarz** w sekcji **Inne kalendarze**.
 2. **Kalendarz Apple** (iPhone) albo **Kalendarze telefonu** (Android).

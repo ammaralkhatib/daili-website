@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Χρώματα Google και κατηγορίες
 summary: Τα γεγονότα που χρωμάτισες στο Google κρατούν αυτό το χρώμα στο daili. Μπορείς να δώσεις σε ένα χρώμα Google μία από τις κατηγορίες σου.
 keywords: χρώμα google, google color, χρώμα γεγονότος, χρώμα, color, κατηγορία, λεβάντα, φασκόμηλο, ντομάτα, google calendar, ημερολόγιο google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Τα γεγονότα που χρωμάτισες στο Google Calendar κρατούν αυτό το χρώμα στο daili. Τα γεγονότα χωρίς δικό τους χρώμα κρατούν το χρώμα του ημερολογίου τους.
 

@@ -5,7 +5,7 @@ summary: Näytä puhelimen kalenterit tai Google-kalenteri perheen tapahtumien v
 keywords: puhelimen kalenteri, google-kalenteri, lisää kalenteri, tilaa, linkki, koulun kalenteri, työkalenteri, vain minä, muokkaa dailissa, linkitetty, päivitä, väri
 tipTitle: Näe puhelimen kalenterit dailissa
 tipBody: Työ-, koulu- tai harrastuskalenterit voivat näkyä perheen tapahtumien vieressä.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Avaa **Kalenteri**, napauta ratasta ja sitten kohdan **Muut kalenterit** alla **Lisää kalenteri**.
 2. **Apple Kalenteri** (iPhone) tai **Puhelimen kalenterit** (Android).

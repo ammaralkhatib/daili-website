@@ -5,7 +5,7 @@ summary: Klistra in en länk till en receptsida, så fyller daili i ingredienser
 keywords: importera, länk, url, webbplats, recept, spara recept, blogg, klistra in länk, webb, kopiera recept
 tipTitle: Spara recept från vilken webbplats som helst
 tipBody: Klistra in en länk till en receptsida, så fyller daili i ingredienserna och stegen åt dig.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Hittat ett bra recept på nätet? Spara det utan att skriva av det.
 

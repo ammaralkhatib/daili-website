@@ -3,7 +3,7 @@ id: meals-find
 title: Find opskrifter: søgning, sortering og jeres egne tags
 summary: Søg i opskrifter efter titel eller ingrediens, sortér listen, og saml opskrifter med familiens egne tags.
 keywords: søg, find, ingrediens, tags, mærkat, filter, sortér, nyeste, hurtigste, glutenfri, favorit, administrer tags
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Tryk på forstørrelsesglasset i **Opskrifter**, og skriv et ord. Søgningen kigger i titlen og i hver ingrediens, så "græskar" finder alle opskrifter med græskar.
 

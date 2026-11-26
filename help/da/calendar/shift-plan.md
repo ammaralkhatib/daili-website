@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planlæg dine vagter
 summary: Gem dine vagter én gang, og tryk så på dage i en måned for at planlægge dem. Hver dag bliver en begivenhed for familien.
 keywords: vagt, vagter, vagtplan, vagtskema, arbejdsplan, dagvagt, aftenvagt, nattevagt, skifteholdsarbejde, turnus, sygeplejerske
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Gem dine vagter én gang, og tryk så på dage for at planlægge dem. Hver dag bliver en begivenhed, som familien kan se.
 

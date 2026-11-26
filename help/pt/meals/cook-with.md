@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Cozinhar com o que tem em casa
 summary: Diga ao daili que alimentos você tem em casa e veja quais das suas receitas combinam, ou receba ideias novas da IA.
 keywords: o que cozinhar, o que tem em casa, ingredientes em casa, geladeira, sobras, aproveitar, despensa, lista de despensa, ideias, ideias ia, foto da geladeira, o que falta
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Em **Receitas**, toque em **Cozinhar com o que tem em casa**.
 2. Digite alimentos ou toque na sua lista de despensa (com várias, escolha uma ou **Todas as listas de despensa**), em **Falar** ou em **Foto** (geladeira ou armário, 1 ação de IA).

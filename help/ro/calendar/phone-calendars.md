@@ -5,7 +5,7 @@ summary: Arată calendarele telefonului sau Google Calendar lângă evenimentele
 keywords: calendarul telefonului, google calendar, adaugă calendar, abonare, link, calendarul școlii, calendar de serviciu, doar eu, editează în daili, conectat, reîmprospătare, culoare
 tipTitle: Vezi calendarele telefonului în daili
 tipBody: Calendarele de serviciu, de școală sau de sport pot apărea lângă evenimentele familiei.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Deschide **Calendar**, apasă pe rotiță, apoi pe **Adaugă un calendar** la **Alte calendare**.
 2. **Calendar Apple** (iPhone) sau **Calendarele telefonului** (Android).

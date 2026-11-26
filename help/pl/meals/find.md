@@ -3,7 +3,7 @@ id: meals-find
 title: Znajdź przepisy: wyszukiwanie, sortowanie i własne tagi
 summary: Szukaj przepisów po tytule lub składniku, sortuj listę i grupuj przepisy własnymi tagami twojej rodziny.
 keywords: szukaj, znajdź, składnik, tagi, etykieta, filtr, sortuj, najnowsze, najszybsze, bez glutenu, ulubione, zarządzaj tagami
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Na ekranie **Przepisy** dotknij lupy i wpisz słowo. Wyszukiwanie sprawdza tytuł i każdy składnik, więc „dynia” znajdzie każdy przepis z dynią.
 

@@ -3,7 +3,7 @@ id: calendar-categories
 title: Catégories et couleurs des événements
 summary: Range les événements dans des catégories comme Travail, École ou Sport. Chaque catégorie a sa couleur.
 keywords: catégorie, catégories, couleur, étiquette, tag, trier, travail, école, sport, loisirs
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 La couleur d'un événement vient de sa catégorie. Ainsi, « Sport » a le même aspect partout. Chaque famille commence avec six catégories : Famille, Travail, École, Sport, Santé et Temps libre.
 

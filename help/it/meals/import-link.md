@@ -5,7 +5,7 @@ summary: Incolla il link di una pagina di ricette, e daili compila per te ingred
 keywords: importare, link, url, sito, ricetta, salvare ricetta, blog, incollare link, web, copiare ricetta
 tipTitle: Salva ricette da qualsiasi sito
 tipBody: Incolla il link di una pagina di ricette, e daili compila per te ingredienti e passaggi.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Hai trovato una buona ricetta online? Salvala senza ricopiarla.
 

@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Variť z toho, čo máme
 summary: Povedz daili, aké jedlo máš doma, a uvidíš, ktoré tvoje recepty sa hodia, alebo dostaneš nové nápady od AI.
 keywords: čo uvariť, suroviny doma, chladnička, zvyšky, spotrebovať, špajza, zoznam zásob, nápady, nápady ai, fotka chladničky, povedať suroviny, chýba
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Na obrazovke **Recepty** ťukni na **Variť z toho, čo máme**.
 2. Napíš jedlo alebo ťukni na svoj zoznam zásob (ak ich máš viac, vyber jeden alebo **Všetky zoznamy zásob**), na **Povedať** alebo na **Foto** (chladnička alebo skrinka, 1 akcia AI).

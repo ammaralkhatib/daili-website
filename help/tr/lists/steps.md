@@ -3,7 +3,7 @@ id: lists-steps
 title: Görevin içindeki adımlar
 summary: Büyük bir görevi küçük adımlara böl ve onları tek tek işaretle.
 keywords: adımlar, alt görevler, alt görev, kontrol listesi, görevin içinde, böl, küçük adımlar, ilerleme, işaretle, bavul listesi
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 "Tatil için bavul hazırla" gibi büyük bir görevi küçük adımlara böl. Onları tek tek işaretle.
 

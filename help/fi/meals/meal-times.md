@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Ateria-ajat: oma aika jokaiselle aterialle
 summary: Anna jokaiselle aterialle tavallinen aika, siirrä yksi ateria toiseen aikaan ja näe ateriasi omana aikanaan kalenterissa.
 keywords: ateria-aika, ruoka-aika, aamiaisaika, lounasaika, päivällisaika, välipala-aika, useita välipaloja, kalenteri, aikalohko, vain tämä ateria, tämä ja seuraavat
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Jokaisella aterialla voi olla aika, ja kalenteri näyttää ateriat niiden omaan aikaan.
 

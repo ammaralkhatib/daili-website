@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Je diensten plannen
 summary: Sla je diensten één keer op en tik daarna op dagen in een maand. Elke dag wordt een afspraak voor het gezin.
 keywords: dienst, diensten, dienstrooster, rooster, werkrooster, ploegendienst, vroege dienst, late dienst, nachtdienst, werktijden, verpleegkundige, zorg
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Sla je diensten één keer op en tik daarna op dagen om ze in te plannen. Elke dag wordt een afspraak voor het gezin.
 

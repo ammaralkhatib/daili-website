@@ -5,7 +5,7 @@ summary: Zobraz kalendáře z telefonu nebo Google Kalendář vedle rodinných u
 keywords: kalendář v telefonu, google kalendář, přidat kalendář, odebírat, odkaz, školní kalendář, pracovní kalendář, jen já, upravit v daili, propojený, obnovit, barva
 tipTitle: Kalendáře z telefonu v daili
 tipBody: Pracovní, školní nebo sportovní kalendáře se můžou zobrazovat vedle rodinných událostí.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Otevři **Kalendář**, klepni na ozubené kolečko a pak v sekci **Další kalendáře** na **Přidat kalendář**.
 2. **Apple Kalendář** (iPhone) nebo **Kalendáře telefonu** (Android).

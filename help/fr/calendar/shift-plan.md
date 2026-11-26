@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planifie tes postes
 summary: Enregistre tes postes une fois, puis touche des jours du mois pour les planifier. Chaque jour devient un événement de la famille.
 keywords: poste, postes, planning des postes, planning, roulement, horaires de travail, travail posté, poste du matin, poste d'après-midi, poste de nuit, 3x8, infirmière
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Enregistre tes postes une fois, puis touche des jours pour les planifier. Chaque jour devient un événement que ta famille voit.
 

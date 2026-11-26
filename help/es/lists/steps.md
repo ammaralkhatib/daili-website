@@ -3,7 +3,7 @@ id: lists-steps
 title: Pasos dentro de una tarea
 summary: Divide una tarea grande en pasos pequeños y márcalos uno a uno.
 keywords: pasos, subtareas, subtarea, checklist, lista de comprobación, dentro de una tarea, dividir, pasos pequeños, progreso, marcar, lista de equipaje
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Divide una tarea grande, como «Hacer la maleta», en pasos pequeños. Márcalos uno a uno.
 

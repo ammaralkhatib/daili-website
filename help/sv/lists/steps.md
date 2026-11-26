@@ -3,7 +3,7 @@ id: lists-steps
 title: Steg i en uppgift
 summary: Dela upp en stor uppgift i små steg och bocka av dem ett i taget.
 keywords: steg, deluppgifter, underuppgifter, checklista, dela upp uppgift, små steg, framsteg, bocka av, packlista, delsteg
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Dela upp en stor uppgift, som ”Packa för resan”, i små steg. Bocka av dem ett i taget.
 

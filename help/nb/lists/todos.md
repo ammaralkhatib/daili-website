@@ -3,7 +3,7 @@ id: lists-todos
 title: Oppgavelister
 summary: Felles oppgavelister for husarbeid, ærender og skoleting. Hak av oppgaver, og se hvem som gjør hva.
 keywords: oppgave, gjøremål, to-do, husarbeid, ærender, sjekkliste, husholdning, hak av, ferdig, liste, legg til med detaljer
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 En oppgave kan også ha en person, en frist og en påminnelse.
 

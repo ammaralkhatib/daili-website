@@ -5,7 +5,7 @@ summary: Mostre os calendários do celular ou o Google Agenda ao lado dos evento
 keywords: calendário do celular, google agenda, adicionar calendário, assinar, link, calendário da escola, calendário do trabalho, só eu, editar no daili, vinculado, atualizar, cor
 tipTitle: Veja os calendários do celular no daili
 tipBody: Calendários do trabalho, da escola ou do esporte podem aparecer ao lado dos eventos da família.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Abra o **Calendário**, toque na engrenagem e depois em **Adicionar um calendário**, em **Outros calendários**.
 2. **Calendário da Apple** (iPhone) ou **Calendários do celular** (Android).

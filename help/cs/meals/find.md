@@ -3,7 +3,7 @@ id: meals-find
 title: Hledání receptů: vyhledávání, řazení a vlastní štítky
 summary: Hledej recepty podle názvu nebo suroviny, seřaď seznam a seskup recepty vlastními štítky vaší rodiny.
 keywords: hledat, najít, surovina, štítky, označení, filtr, řadit, nejnovější, nejrychlejší, bez lepku, oblíbené, spravovat štítky
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Na obrazovce **Recepty** klepni na lupu a napiš slovo. Hledání prochází název i každou surovinu, takže „dýně“ najde každý recept, ve kterém je dýně.
 

@@ -5,7 +5,7 @@ summary: 在家庭行程旁邊顯示手機行事曆或 Google 日曆，追蹤學
 keywords: 手機行事曆, google 日曆, 新增行事曆, 訂閱, 連結, 學校行事曆, 工作行事曆, 僅自己, 在 daili 中編輯, 已連結, 重新整理, 顏色
 tipTitle: 在 daili 看手機裡的行事曆
 tipBody: 工作、學校或運動的行事曆，可以顯示在家庭行程旁邊。
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. 打開**行事曆**，點齒輪，再點**其他行事曆**下面的**新增行事曆**。
 2. **Apple行事曆**（iPhone）或**手機行事曆**（Android）。

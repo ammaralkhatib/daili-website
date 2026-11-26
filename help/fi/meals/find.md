@@ -3,7 +3,7 @@ id: meals-find
 title: Etsi reseptejä: haku, järjestys ja omat tunnisteet
 summary: Hae reseptejä otsikon tai ainesosan mukaan, järjestä lista ja ryhmittele reseptit perheen omilla tunnisteilla.
 keywords: haku, etsi, ainesosa, tunnisteet, merkintä, suodata, järjestä, uusimmat, nopeimmat, gluteeniton, suosikki, hallitse tunnisteita
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Napauta näkymässä **Reseptit** suurennuslasia ja kirjoita sana. Haku katsoo otsikosta ja jokaisesta ainesosasta, joten ”kurpitsa” löytää kaikki reseptit, joissa on kurpitsaa.
 

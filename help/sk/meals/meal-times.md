@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Časy jedál: čas pre každé jedlo
 summary: Daj každému jedlu obvyklý čas, presuň jedno jedlo na iný čas a pozri si jedlá v kalendári v ich čase.
 keywords: čas jedla, čas raňajok, čas obeda, čas večere, čas olovrantu, viac olovrantov, desiata, kalendár, časový blok, len toto jedlo, toto a nasledujúce
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Každé jedlo môže mať svoj čas a kalendár ukáže jedlá v ich čase.
 

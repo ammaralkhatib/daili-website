@@ -3,7 +3,7 @@ id: calendar-categories
 title: Categorie e colori degli eventi
 summary: Ordina gli eventi in categorie come Lavoro, Scuola o Sport. Ogni categoria ha il suo colore.
 keywords: categoria, categorie, colore, etichetta, tag, ordinare, lavoro, scuola, sport, tempo libero
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Il colore di un evento viene dalla sua categoria. Così «Sport» ha lo stesso aspetto ovunque. Ogni famiglia parte con sei categorie: Famiglia, Lavoro, Scuola, Sport, Salute e Tempo libero.
 

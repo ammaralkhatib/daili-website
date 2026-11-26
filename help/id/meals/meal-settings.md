@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Pengaturan makan: waktu makan, porsi, dan jam makan malam
 summary: Pilih waktu makan yang direncanakan keluarga Anda, berapa porsi yang biasa Anda masak, dan kapan Anda makan malam.
 keywords: pengaturan makan, sarapan, makan siang, makan malam, camilan, porsi, jumlah porsi, jumlah anggota keluarga, waktu makan malam, malam sibuk
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Beri tahu daili cara keluarga Anda makan.
 

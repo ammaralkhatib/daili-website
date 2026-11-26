@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Ustawienia posiłków: które posiłki, porcje i pora kolacji
 summary: Wybierz, które posiłki planuje twoja rodzina, ile porcji zwykle gotujesz i o której jecie kolację.
 keywords: ustawienia posiłków, śniadanie, obiad, kolacja, przekąska, porcje, wielkość rodziny, pora kolacji, pracowity wieczór
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Powiedz daili, jak je twoja rodzina.
 

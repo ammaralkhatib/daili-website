@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Tambah acara
 summary: Masukkan janji temu, perjalanan, atau pertandingan ke kalender keluarga, supaya semua orang melihatnya.
 keywords: tambah acara, acara baru, buat acara, janji temu, jadwal, rencana, tanggal, entri kalender, sepanjang hari, hari lainnya, beberapa hari
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Semua orang di keluarga Anda langsung melihat acara baru.
 

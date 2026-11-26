@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Öğün saatleri: her öğüne bir saat
 summary: Her öğüne her zamanki bir saat ver, tek bir öğünü başka bir saate al ve öğünleri takvimde kendi saatinde gör.
 keywords: öğün saati, yemek saati, kahvaltı saati, öğle yemeği saati, akşam yemeği saati, atıştırmalık saati, birden fazla atıştırmalık, takvim, zaman bloğu, yalnızca bu öğün, bu ve sonrakiler
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Her öğünün bir saati olabilir ve takvim öğünleri kendi saatinde gösterir.
 

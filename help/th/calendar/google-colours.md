@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: สีจาก Google และหมวดหมู่
 summary: กิจกรรมที่คุณใส่สีไว้ใน Google จะใช้สีนั้นใน daili ด้วย คุณให้หมวดหมู่ของคุณกับสีจาก Google ได้
 keywords: สีจาก google, สี google, สีกิจกรรม, สี, หมวดหมู่, ลาเวนเดอร์, เสจ, มะเขือเทศ, ปฏิทิน google, google calendar, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 กิจกรรมที่คุณใส่สีไว้ในปฏิทิน Google จะใช้สีนั้นใน daili ด้วย กิจกรรมที่ไม่มีสีของตัวเองจะใช้สีของปฏิทิน
 

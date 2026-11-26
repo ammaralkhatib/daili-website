@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Måltidsinställningar: vilka måltider, portioner och middagstid
 summary: Välj vilka måltider familjen planerar, hur många portioner ni brukar laga och när ni äter middag.
 keywords: måltidsinställningar, frukost, lunch, middag, mellanmål, portioner, familjens storlek, middagstid, fullbokad kväll
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Berätta för daili hur familjen äter.
 

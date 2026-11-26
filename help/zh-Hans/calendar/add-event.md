@@ -3,7 +3,7 @@ id: calendar-add-event
 title: 添加日程
 summary: 把预约、旅行或比赛放进家庭日历，让大家都能看到。
 keywords: 添加日程, 新日程, 创建日程, 预约, 约会, 安排, 计划, 日期, 日历, 全天, 多天, 好几天
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 新日程会马上出现在每个家人的日历里。
 

@@ -3,7 +3,7 @@ id: lists-steps
 title: Pași într-o sarcină
 summary: Împarte o sarcină mare în pași mici și bifează-i unul câte unul.
 keywords: pași, subsarcini, subsarcină, listă de verificare, într-o sarcină, împarte, pași mici, progres, bifează, listă de bagaje
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Împarte o sarcină mare, cum ar fi „Fă bagajele pentru excursie”, în pași mici. Bifează-i unul câte unul.
 

@@ -3,7 +3,7 @@ id: meals-find
 title: Finn oppskrifter: søk, sortering og egne tagger
 summary: Søk i oppskrifter etter tittel eller ingrediens, sorter listen, og grupper oppskrifter med familiens egne tagger.
 keywords: søk, finn, ingrediens, tagger, merkelapp, filter, sorter, nyeste, raskeste, glutenfri, favoritt, administrer tagger
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 På **Oppskrifter** trykker du på forstørrelsesglasset og skriver et ord. Søket ser i tittelen og i alle ingrediensene, så «gresskar» finner alle oppskrifter med gresskar.
 

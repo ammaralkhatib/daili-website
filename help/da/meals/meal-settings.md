@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Indstillinger for måltider: hvilke måltider, portioner og spisetid
 summary: Vælg, hvilke måltider familien planlægger, hvor mange portioner I plejer at lave, og hvornår I spiser aftensmad.
 keywords: indstillinger for måltider, morgenmad, frokost, aftensmad, mellemmåltid, portioner, familiens størrelse, spisetid, travl aften
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Fortæl daili, hvordan familien spiser.
 

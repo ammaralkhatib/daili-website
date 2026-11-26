@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google-Farben und Kategorien
 summary: Termine, die du in Google eingefärbt hast, behalten ihre Farbe in daili. Du kannst einer Google-Farbe eine deiner Kategorien geben.
 keywords: google farbe, google color, terminfarbe, farbe, color, kategorie, lavendel, salbei, tomate, google kalender
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Termine, die du in Google Kalender eingefärbt hast, behalten diese Farbe in daili. Termine ohne eigene Farbe behalten die Farbe ihres Kalenders.
 

@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Цветове от Google и категории
 summary: Събитията, оцветени в Google, запазват цвета си в daili. Можеш да дадеш на цвят от Google една от категориите си.
 keywords: цвят google, google color, цвят на събитие, цвят, категория, лавандула, градински чай, домат, google calendar, google календар
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Събитията, оцветени в Google Calendar, запазват цвета си в daili. Събитията без собствен цвят запазват цвета на календара си.
 

@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google-farver og kategorier
 summary: Begivenheder, du har farvet i Google, beholder farven i daili. Du kan give en Google-farve en af dine kategorier.
 keywords: google farve, google color, begivenhedsfarve, farve, color, kategori, lavendel, salvie, tomat, google kalender
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Begivenheder, du har farvet i Google Kalender, beholder farven i daili. Begivenheder uden egen farve beholder kalenderens farve.
 

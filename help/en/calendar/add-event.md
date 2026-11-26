@@ -7,10 +7,10 @@ keywords: add event, new event, create event, appointment, schedule, plan, date,
 routes: /calendar/new
 tryIt: /calendar/new
 since: 1.3.0
-updated: 2026-11-10
+updated: 2026-11-26
 media: calendar-add-event
 order: 2
-related: calendar-repeating, calendar-reminders, calendar-private, calendar-photo, meals-share-sheet
+related: calendar-repeating, calendar-reminders, calendar-private, calendar-photo, meals-share-sheet, calendar-shift-plan
 checklist: 2
 checklistDoneIf: hasEvent
 ---

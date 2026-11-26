@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Kokkaa siitä, mitä on
 summary: Kerro dailille, mitä ruokaa sinulla on kotona, ja katso, mitkä resepteistäsi sopivat – tai pyydä tekoälyltä uusia ideoita.
 keywords: mitä voin kokata, ainekset kotona, jääkaappi, tähteet, käytä loppuun, ruokakaappi, varastolista, ideat, tekoälyideat, kuva jääkaapista, sanele ainekset, puuttuu
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Napauta näkymässä **Reseptit** kohtaa **Kokkaa siitä, mitä on**.
 2. Kirjoita ruokia tai napauta varastolistaasi (jos niitä on useita, valitse yksi tai **Kaikki varastolistat**), **Sanele** tai **Kuva** (jääkaappi tai kaappi, 1 tekoälytoiminto).

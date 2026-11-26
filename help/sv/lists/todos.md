@@ -3,7 +3,7 @@ id: lists-todos
 title: Uppgiftslistor
 summary: Delade uppgiftslistor för sysslor, ärenden och skolgrejer. Bocka av uppgifter och se vem som gör vad.
 keywords: uppgift, uppgifter, att göra, todo, sysslor, ärenden, checklista, hushåll, bocka av, klar, lägg till med detaljer
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 En uppgift kan också ha en person, ett förfallodatum och en påminnelse.
 

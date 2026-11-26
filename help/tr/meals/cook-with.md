@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Elimizdekilerle pişir
 summary: Evde hangi yiyecekler olduğunu daili'ye söyle, tariflerinden hangilerinin uyduğunu gör ya da yapay zekâdan yeni fikirler al.
 keywords: ne pişirsem, evdeki malzemeler, buzdolabı, artan yemekler, değerlendir, kiler, stok listesi, fikirler, yapay zekâ fikirleri, buzdolabı fotoğrafı, malzemeleri söyle, eksik
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. **Tarifler** ekranında **Elimizdekilerle pişir** kartına dokun.
 2. Yiyecekleri yaz ya da stok listene dokun (birkaç tane varsa birini ya da **Tüm stok listeleri** seçeneğini seç); ya da **Söyle** veya **Fotoğraf** kutucuğuna dokun (buzdolabı ya da dolap, 1 yapay zekâ işlemi).

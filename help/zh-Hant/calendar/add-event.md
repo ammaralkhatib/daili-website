@@ -3,7 +3,7 @@ id: calendar-add-event
 title: 新增行程
 summary: 把看診、旅行或比賽放進家庭行事曆，大家都看得到。
 keywords: 新增行程, 新行程, 建立行程, 預約, 排程, 計畫, 日期, 行事曆, 整天, 約會, 多天, 好幾天
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 新行程一建立，全家馬上就看得到。
 

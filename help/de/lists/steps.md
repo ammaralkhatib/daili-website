@@ -3,7 +3,7 @@ id: lists-steps
 title: Schritte in einer Aufgabe
 summary: Teile eine große Aufgabe in kleine Schritte und hake sie einzeln ab.
 keywords: schritte, unteraufgaben, teilaufgaben, checkliste, aufgabe aufteilen, kleine schritte, fortschritt, abhaken, packliste, zwischenschritte
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Teile eine große Aufgabe wie „Für die Reise packen“ in kleine Schritte. Hake sie einzeln ab.
 

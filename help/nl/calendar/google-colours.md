@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google-kleuren en categorieën
 summary: Afspraken die je in Google een kleur hebt gegeven, houden die kleur in daili. Je kunt een Google-kleur een van je categorieën geven.
 keywords: google kleur, google color, afspraakkleur, kleur, color, categorie, lavendel, salie, tomaat, google agenda
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Afspraken die je in Google Agenda een kleur hebt gegeven, houden die kleur in daili. Afspraken zonder eigen kleur houden de kleur van hun agenda.
 

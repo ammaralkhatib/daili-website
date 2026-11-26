@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Googleの色とカテゴリ
 summary: Googleで色を付けた予定は、dailiでもその色のままです。Googleの色に自分のカテゴリを付けることもできます。
 keywords: googleの色, google 色, 予定の色, 色, カラー, カテゴリ, ラベンダー, セージ, トマト, googleカレンダー, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Googleカレンダーで色を付けた予定は、dailiでもその色のままです。独自の色がない予定は、カレンダーの色のままです。
 

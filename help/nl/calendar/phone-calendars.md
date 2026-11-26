@@ -5,7 +5,7 @@ summary: Toon de agenda’s van je telefoon of Google Agenda naast de afspraken 
 keywords: telefoonagenda, google agenda, agenda toevoegen, abonneren, link, schoolagenda, werkagenda, alleen ik, bewerken in daili, gekoppeld, vernieuwen, kleur
 tipTitle: Zie de agenda’s van je telefoon in daili
 tipBody: Agenda’s van werk, school of sport kunnen naast de afspraken van het gezin staan.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Open de **Agenda**, tik op het tandwiel en dan onder **Andere agenda's** op **Agenda toevoegen**.
 2. **Apple Agenda** (iPhone) of **Telefoonagenda's** (Android).

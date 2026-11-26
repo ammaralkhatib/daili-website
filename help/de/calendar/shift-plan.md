@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Schichten planen
 summary: Speichere deine Schichten einmal und tippe dann im Monat die Tage an. Jeder Tag wird ein Termin für die Familie.
 keywords: schicht, schichten, dienstplan, schichtplan, schichtarbeit, frühdienst, spätdienst, nachtschicht, arbeitszeiten, dienst, pflege, krankenschwester
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Speichere deine Schichten einmal und tippe dann die Tage an. Jeder Tag wird ein Termin für die Familie.
 

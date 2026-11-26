@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Kochen mit dem, was da ist
 summary: Sag daili, welches Essen du zu Hause hast, und sieh, welche deiner Rezepte passen – oder hol dir neue Ideen von der KI.
 keywords: was kann ich kochen, zutaten zu hause, kühlschrank, reste, resteverwertung, aufbrauchen, vorrat, vorratsliste, ideen, ki-ideen, foto vom kühlschrank, zutaten sagen
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Tippe auf dem Bildschirm **Rezepte** auf **Kochen mit dem, was da ist**.
 2. Gib Essen ein oder tippe auf deine Vorratsliste (bei mehreren wählst du eine oder **Alle Vorratslisten**), auf **Sagen** oder auf **Foto** (Kühlschrank oder Schrank, 1 KI-Aktion).

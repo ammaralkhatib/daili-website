@@ -6,8 +6,8 @@ summary: Break a big to-do into small steps and tick them one by one.
 keywords: steps, subtasks, sub-task, checklist, inside a task, break down, small steps, progress, tick, packing list
 routes: /lists/:id
 tryIt: /lists/todos
-since: 99.0.0
-updated: 2026-11-22
+since: 1.18.0
+updated: 2026-11-26
 mediaPending: the to-do sheet's Steps block under Name; a row with 2/5 and the round arrow
 order: 5
 related: lists-todos, lists-repeating, lists-assign

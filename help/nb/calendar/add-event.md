@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Legg til en hendelse
 summary: Legg en avtale, en tur eller en kamp i familiekalenderen, så alle ser den.
 keywords: legg til hendelse, ny hendelse, opprett hendelse, avtale, planlegg, dato, kalenderoppføring, hele dagen, time, flere dager, vakter
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Alle i familien ser en ny hendelse med en gang.
 

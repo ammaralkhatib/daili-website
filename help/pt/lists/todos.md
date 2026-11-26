@@ -3,7 +3,7 @@ id: lists-todos
 title: Listas de tarefas
 summary: Listas de tarefas compartilhadas para afazeres de casa, recados e coisas da escola. Marque as tarefas e veja quem faz o quê.
 keywords: tarefa, tarefas, afazeres, recados, checklist, lista de tarefas, casa, marcar, concluído, lista, adicionar com detalhes
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Uma tarefa também pode ter uma pessoa, um prazo e um lembrete.
 

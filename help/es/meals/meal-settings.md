@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Ajustes de comidas: qué comidas, porciones y hora de la cena
 summary: Elige qué comidas planifica tu familia, cuántas porciones sueles cocinar y a qué hora cenáis.
 keywords: ajustes de comidas, desayuno, almuerzo, cena, merienda, porciones, raciones, tamaño de la familia, hora de la cena, tarde ocupada
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Cuéntale a daili cómo come tu familia.
 

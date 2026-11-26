@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Maaltijdinstellingen: welke maaltijden, porties en etenstijd
 summary: Kies welke maaltijden je gezin plant, hoeveel porties je meestal kookt en hoe laat jullie eten.
 keywords: maaltijdinstellingen, ontbijt, lunch, avondeten, snack, porties, gezinsgrootte, etenstijd, drukke avond, maaltijden
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Vertel daili hoe je gezin eet.
 

@@ -5,7 +5,7 @@ summary: Pega el enlace de una página de recetas, y daili rellena por ti los in
 keywords: importar, enlace, url, web, receta, guardar receta, blog, pegar enlace, internet, copiar receta
 tipTitle: Guarda recetas de cualquier web
 tipBody: Pega el enlace de una página de recetas, y daili rellena por ti los ingredientes y los pasos.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 ¿Has encontrado una buena receta en internet? Guárdala sin copiarla a mano.
 

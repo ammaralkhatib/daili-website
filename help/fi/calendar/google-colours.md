@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google-värit ja luokat
 summary: Googlessa väritetyt tapahtumat säilyttävät värinsä dailissa. Voit antaa Google-värille yhden luokistasi.
 keywords: google-väri, google color, tapahtuman väri, väri, color, luokka, kategoria, laventeli, salvia, tomaatti, google-kalenteri
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Tapahtumat, jotka väritit Google Kalenterissa, säilyttävät värinsä dailissa. Tapahtumat, joilla ei ole omaa väriä, säilyttävät kalenterinsa värin.
 

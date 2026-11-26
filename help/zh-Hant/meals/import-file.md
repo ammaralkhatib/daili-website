@@ -3,11 +3,9 @@ id: meals-import-file
 title: 從其他應用程式匯入食譜
 summary: 要從 Paprika 搬過來嗎？一次把食譜連同相片匯入 daili。
 keywords: paprika, 匯入, 檔案, 匯出, paprikarecipes, 搬家, 換 app, 食譜 app, 大量食譜, 食譜收藏, 一次匯入
-translatedFrom: 2026-11-19
+translatedFrom: 2026-11-26
 ---
-要從 Paprika 搬過來嗎？一次把食譜連同相片帶過來。
-
-在 Paprika 裡，用 Paprika 格式匯出（.paprikarecipes 檔案），再存到你的裝置上，例如「檔案」App 或「下載」資料夾。不同版本的選單名稱可能不太一樣。
+在 Paprika 裡，匯出一個 .paprikarecipes 檔案（Paprika 格式），再存到你的裝置上，例如「檔案」App。選單名稱可能不太一樣。
 
 1. 在首頁上，點**食譜**，再點 **+**，然後點**從其他應用程式**，再選擇檔案。
 2. 取消勾選你不要的食譜。已在 daili 裡的食譜，一開始就不會勾選。
@@ -18,6 +16,8 @@ translatedFrom: 2026-11-19
 
 > Note: 一個家庭最多可以有 50 個標籤，超過的分類不會加入。太長的食譜會被縮短（最多 100 項食材、50 個步驟）。最後的摘要畫面會告訴你。
 
-> Note: 檔案在你的裝置上讀取，只會儲存你匯入的食譜。再次匯入時，名稱和連結都相同的食譜會被略過。
+> Note: 檔案在你的裝置上讀取，只會儲存你匯入的食譜。
 
-目前只支援 Paprika 檔案，而且 app.daili.app 上無法使用。
+點了**停止**或沒有網路，所以缺了相片？之後再匯入同一個檔案就好。daili 會補上相片，並略過你已經有的食譜。
+
+只支援 Paprika 檔案，而且 app.daili.app 上無法使用。

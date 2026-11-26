@@ -5,7 +5,7 @@ summary: Lipește linkul unei pagini cu rețetă, iar daili completează pentru 
 keywords: import, link, url, site, rețetă, salvează rețeta, blog, lipește linkul, web, copiază rețeta
 tipTitle: Salvează rețete de pe orice site
 tipBody: Lipește linkul unei pagini cu rețetă, iar daili completează pentru tine ingredientele și pașii.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Ai găsit o rețetă bună online? Salveaz-o fără s-o scrii de mână.
 

@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Innstillinger for måltider: hvilke måltider, porsjoner og middagstid
 summary: Velg hvilke måltider familien planlegger, hvor mange porsjoner dere vanligvis lager, og når dere spiser middag.
 keywords: måltidsinnstillinger, frokost, lunsj, middag, mellommåltid, porsjoner, familiestørrelse, middagstid, travel kveld
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Fortell daili hvordan familien spiser.
 

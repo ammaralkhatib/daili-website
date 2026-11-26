@@ -3,7 +3,7 @@ id: calendar-categories
 title: Etkinlik kategorileri ve renkler
 summary: Etkinlikleri İş, Okul ya da Spor gibi kategorilere ayır. Her kategorinin kendi rengi var.
 keywords: kategori, kategoriler, renk, etiket, sınıflandır, sırala, iş, okul, spor
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Bir etkinliğin rengi kategorisinden gelir. Böylece "Spor" her yerde aynı görünür. Her aile altı kategoriyle başlar: Aile, İş, Okul, Spor, Sağlık ve Boş zaman.
 

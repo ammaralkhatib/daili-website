@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Gotuj z tego, co jest
 summary: Powiedz daili, co masz w domu do jedzenia, i zobacz, które twoje przepisy pasują — albo dostań nowe pomysły od AI.
 keywords: co ugotować, składniki w domu, lodówka, resztki, zużyć, spiżarnia, lista zapasów, pomysły, pomysły ai, zdjęcie lodówki, powiedz składniki, brakuje
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Na ekranie **Przepisy** dotknij **Gotuj z tego, co jest**.
 2. Wpisz produkty albo dotknij swojej listy zapasów (gdy masz kilka, wybierz jedną lub **Wszystkie listy zapasów**), **Powiedz** albo **Zdjęcie** (lodówka lub szafka, 1 akcja AI).

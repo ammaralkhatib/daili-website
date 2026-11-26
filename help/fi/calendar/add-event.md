@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Lisää tapahtuma
 summary: Lisää meno, matka tai ottelu perheen kalenteriin, niin kaikki näkevät sen.
 keywords: lisää tapahtuma, uusi tapahtuma, luo tapahtuma, meno, aika, varaus, suunnittele, päivämäärä, kalenterimerkintä, koko päivä, lisää päiviä, useita päiviä
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Kaikki perheessäsi näkevät uuden tapahtuman heti.
 

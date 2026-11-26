@@ -5,7 +5,7 @@ summary: Affiche les calendriers de ton téléphone ou Google Agenda à côté d
 keywords: calendrier du téléphone, google agenda, ajouter un calendrier, s'abonner, lien, calendrier scolaire, agenda pro, moi seul, modifier dans daili, lié, actualiser, couleur
 tipTitle: Vois les agendas de ton téléphone dans daili
 tipBody: Les agendas du travail, de l'école ou du sport peuvent s'afficher à côté des événements de la famille.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Ouvre l'**Agenda**, touche la roue dentée, puis **Ajouter un calendrier** sous **Autres calendriers**.
 2. **Calendrier Apple** (iPhone) ou **Calendriers du téléphone** (Android).

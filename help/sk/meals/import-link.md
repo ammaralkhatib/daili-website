@@ -5,7 +5,7 @@ summary: Vlož odkaz na stránku s receptom a daili za teba vyplní suroviny, po
 keywords: import, odkaz, url, web, recept, uložiť recept, blog, vložiť odkaz, internet, skopírovať recept
 tipTitle: Ukladaj recepty z akéhokoľvek webu
 tipBody: Vlož odkaz na stránku s receptom a daili za teba vyplní suroviny aj postup.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Našiel sa na internete dobrý recept? Ulož si ho bez prepisovania.
 

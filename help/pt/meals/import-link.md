@@ -5,7 +5,7 @@ summary: Cole o link de uma página de receita, e o daili preenche os ingredient
 keywords: importar, link, url, site, receita, salvar receita, blog, colar link, web, copiar receita
 tipTitle: Salve receitas de qualquer site
 tipBody: Cole o link de uma página de receita, e o daili preenche os ingredientes e os passos para você.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Achou uma receita boa na internet? Salve sem precisar digitar tudo.
 

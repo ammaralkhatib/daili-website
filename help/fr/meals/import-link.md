@@ -5,7 +5,7 @@ summary: Colle le lien d'une page de recette, et daili remplit pour toi les ingr
 keywords: importer, lien, url, site, recette, enregistrer recette, blog, coller lien, web, copier recette
 tipTitle: Enregistre des recettes depuis n'importe quel site
 tipBody: Colle le lien d'une page de recette, et daili remplit pour toi les ingrédients et les étapes.
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Tu as trouvé une bonne recette en ligne ? Enregistre-la sans la recopier.
 

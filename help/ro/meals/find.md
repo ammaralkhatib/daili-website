@@ -3,7 +3,7 @@ id: meals-find
 title: Găsește rețete: căutare, sortare și etichete proprii
 summary: Caută rețete după titlu sau ingredient, sortează lista și grupează rețetele cu etichetele proprii ale familiei tale.
 keywords: caută, găsește, ingredient, etichete, marcaj, filtru, sortare, cele mai noi, cele mai rapide, fără gluten, preferate, gestionează etichetele
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Pe ecranul **Rețete**, apasă pe lupă și scrie un cuvânt. Căutarea se uită în titlu și în fiecare ingredient, așa că „dovleac” găsește orice rețetă care folosește dovleac.
 

@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google 색상과 카테고리
 summary: Google에서 색을 지정한 일정은 daili에서도 그 색을 유지해요. Google 색상에 내 카테고리를 붙일 수 있어요.
 keywords: google 색상, 구글 색상, 일정 색상, 색상, 색, 카테고리, 라벤더, 세이지, 토마토, 구글 캘린더, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Google 캘린더에서 색을 지정한 일정은 daili에서도 그 색을 유지해요. 자체 색이 없는 일정은 캘린더 색을 그대로 유지해요.
 

@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Colores de Google y categorías
 summary: Los eventos a los que diste color en Google conservan ese color en daili. Puedes dar a un color de Google una de tus categorías.
 keywords: color de google, google color, color del evento, color, categoría, lavanda, salvia, tomate, google calendar, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Los eventos a los que diste color en Google Calendar conservan ese color en daili. Los eventos sin color propio conservan el color de su calendario.
 

@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Tilføj en begivenhed
 summary: Sæt en aftale, en tur eller en kamp i familiekalenderen, så alle kan se den.
 keywords: tilføj begivenhed, ny begivenhed, opret begivenhed, aftale, planlæg, dato, kalenderpost, hele dagen, termin, flere dage, vagter
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Alle i din familie ser en ny begivenhed med det samme.
 

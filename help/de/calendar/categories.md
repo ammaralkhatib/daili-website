@@ -3,7 +3,7 @@ id: calendar-categories
 title: Terminkategorien und Farben
 summary: Sortiere Termine in Kategorien wie Arbeit, Schule oder Sport. Jede Kategorie hat ihre eigene Farbe.
 keywords: kategorie, kategorien, farbe, label, etikett, sortieren, arbeit, schule, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Die Farbe eines Termins kommt von seiner Kategorie. So sieht „Sport“ überall gleich aus. Jede Familie startet mit sechs: Familie, Arbeit, Schule, Sport, Gesundheit und Freizeit.
 

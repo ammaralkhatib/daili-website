@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Setări pentru mese: ce mese, câte porții și ora cinei
 summary: Alege ce mese planifică familia ta, câte porții gătești de obicei și când luați cina.
 keywords: setări pentru mese, mic dejun, prânz, cină, gustare, porții, mărimea familiei, ora cinei, seară aglomerată
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Spune-i lui daili cum mănâncă familia ta.
 

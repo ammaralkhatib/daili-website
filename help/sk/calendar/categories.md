@@ -3,7 +3,7 @@ id: calendar-categories
 title: Kategórie udalostí a farby
 summary: Rozdeľ udalosti do kategórií ako Práca, Škola alebo Šport. Každá kategória má vlastnú farbu.
 keywords: kategória, kategórie, farba, štítok, značka, triediť, práca, škola, šport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Farba udalosti pochádza z jej kategórie. Takže „Šport“ vyzerá všade rovnako. Každá rodina začína so šiestimi: Rodina, Práca, Škola, Šport, Zdravie a Voľný čas.
 

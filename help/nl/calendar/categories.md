@@ -3,7 +3,7 @@ id: calendar-categories
 title: Categorieën en kleuren voor afspraken
 summary: Deel afspraken in categorieën in, zoals Werk, School of Sport. Elke categorie heeft een eigen kleur.
 keywords: categorie, categorieën, kleur, label, tag, sorteren, werk, school, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 De kleur van een afspraak komt van de categorie. Zo ziet „Sport” er overal hetzelfde uit. Elk gezin begint met zes: Gezin, Werk, School, Sport, Gezondheid en Vrije tijd.
 

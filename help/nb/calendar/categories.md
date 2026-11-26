@@ -3,7 +3,7 @@ id: calendar-categories
 title: Kategorier og farger for hendelser
 summary: Sorter hendelser i kategorier som Jobb, Skole eller Sport. Hver kategori har sin egen farge.
 keywords: kategori, kategorier, farge, merke, tagg, sorter, jobb, skole, sport
-translatedFrom: 2026-09-24
+translatedFrom: 2026-11-26
 ---
 Fargen på en hendelse kommer fra kategorien. Da ser «Sport» likt ut overalt. Alle familier starter med seks: Familie, Jobb, Skole, Sport, Helse og Fritid.
 

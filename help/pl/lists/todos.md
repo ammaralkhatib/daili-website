@@ -3,7 +3,7 @@ id: lists-todos
 title: Listy zadań
 summary: Wspólne listy zadań na obowiązki domowe, sprawy do załatwienia i rzeczy do szkoły. Odhaczaj zadania i patrz, kto co robi.
 keywords: zadanie, zadania, to-do, obowiązki, sprawy, checklista, dom, odhacz, zrobione, lista, dodaj ze szczegółami
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Zadanie może też mieć osobę, termin i przypomnienie.
 

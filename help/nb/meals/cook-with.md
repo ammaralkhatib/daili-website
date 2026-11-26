@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Lag mat med det vi har
 summary: Fortell daili hvilken mat du har hjemme, og se hvilke av oppskriftene dine som passer – eller få nye ideer fra KI.
 keywords: hva kan jeg lage, ingredienser hjemme, kjøleskap, rester, bruke opp, matskap, lagerliste, ideer, ki-ideer, bilde av kjøleskapet, si ingrediensene, mangler
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. På **Oppskrifter** trykker du på **Lag mat med det vi har**.
 2. Skriv inn mat, eller trykk på lagerlisten din (har du flere, velger du én eller **Alle lagerlister**), **Si det** eller **Bilde** (kjøleskap eller skap, 1 KI-handling).

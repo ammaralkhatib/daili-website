@@ -6,8 +6,8 @@ summary: Give each meal a usual time, move one meal to another time, and see you
 keywords: meal time, breakfast time, lunch time, dinner time, snack time, several snacks, calendar, time block, just this meal, this and future
 routes: /meal-plan/settings, /meal-plan, /calendar/settings
 tryIt: /meal-plan/settings
-since: 99.0.0
-updated: 2026-11-25
+since: 1.18.0
+updated: 2026-11-26
 mediaPending: Meal settings with times next to the switches
 order: 13
 related: meals-meal-settings, meals-plan-week, calendar-views

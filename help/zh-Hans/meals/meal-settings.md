@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: 用餐设置：安排哪些餐、几人份和晚餐时间
 summary: 选择全家要安排哪些餐、平时做几人份，以及几点吃晚饭。
 keywords: 用餐设置, 早餐, 午餐, 晚餐, 加餐, 几人份, 分量, 家庭人数, 晚餐时间, 傍晚很忙
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 告诉 daili 你家怎么吃饭。
 

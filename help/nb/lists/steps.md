@@ -3,7 +3,7 @@ id: lists-steps
 title: Steg i en oppgave
 summary: Del en stor oppgave opp i små steg, og hak dem av ett etter ett.
 keywords: steg, deloppgaver, underoppgaver, sjekkliste, i en oppgave, dele opp, små steg, fremdrift, hak av, pakkeliste
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Del en stor oppgave, som «Pakk til turen», opp i små steg. Hak dem av ett etter ett.
 

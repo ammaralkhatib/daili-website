@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Rencanakan shift Anda
 summary: Simpan shift Anda sekali, lalu ketuk hari dalam bulan untuk menjadwalkannya. Setiap hari menjadi acara keluarga.
 keywords: shift, jadwal shift, jadwal kerja, giliran kerja, roster, shift pagi, shift siang, shift malam, kerja shift, perawat, jadwal dinas
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Simpan shift Anda sekali, lalu ketuk hari untuk menjadwalkannya. Setiap hari menjadi acara keluarga.
 

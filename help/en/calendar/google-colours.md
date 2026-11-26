@@ -6,8 +6,8 @@ summary: Events you coloured in Google keep that colour in daili. You can give a
 keywords: google colour, google color, event colour, colour, color, category, lavender, sage, tomato, google calendar
 routes: /family/event-categories/google-colors
 tryIt: /family/event-categories/google-colors
-since: 99.0.0
-updated: 2026-11-24
+since: 1.18.0
+updated: 2026-11-26
 mediaPending: the Google colors screen with two matched colours
 order: 8
 related: calendar-categories, calendar-two-way

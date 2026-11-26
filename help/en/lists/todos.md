@@ -7,10 +7,10 @@ keywords: to-do, todo, task, chores, errands, checklist, household, tick, done, 
 routes: /lists/todos, /lists/:id
 tryIt: /lists/todos
 since: 1.4.0
-updated: 2026-11-16
+updated: 2026-11-26
 media: lists-todos
 order: 4
-related: lists-assign, lists-due-reminders, lists-repeating
+related: lists-assign, lists-due-reminders, lists-repeating, lists-steps
 ---
 A task can also have a person, a due date and a reminder.
 

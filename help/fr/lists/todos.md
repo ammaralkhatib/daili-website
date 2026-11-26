@@ -3,7 +3,7 @@ id: lists-todos
 title: Listes de tâches
 summary: Des listes de tâches partagées pour les corvées, les courses à faire et l'école. Coche les tâches et vois qui fait quoi.
 keywords: tâche, tâches, à faire, corvées, commissions, checklist, ménage, cocher, fait, liste, ajouter avec détails
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Une tâche peut aussi avoir une personne, une échéance et un rappel.
 

@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Orari dei pasti: un orario per ogni pasto
 summary: Dai a ogni pasto un orario abituale, sposta un pasto a un altro orario e vedi i tuoi pasti al loro orario nel calendario.
 keywords: orario dei pasti, ora di colazione, ora di pranzo, ora di cena, ora dello spuntino, più spuntini, calendario, blocco orario, solo questo pasto, questo e i successivi
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Ogni pasto può avere un orario, e il calendario mostra i pasti al loro orario.
 

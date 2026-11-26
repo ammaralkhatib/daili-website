@@ -5,7 +5,7 @@ summary: Mostra i calendari del telefono o Google Calendar accanto agli eventi d
 keywords: calendario del telefono, google calendar, aggiungere calendario, iscriversi, link, calendario scolastico, calendario di lavoro, solo io, modifica in daili, collegato, aggiornare, colore
 tipTitle: Vedi in daili i calendari del telefono
 tipBody: I calendari di lavoro, scuola o sport possono comparire accanto agli eventi di famiglia.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. Apri **Calendario**, tocca l'ingranaggio, poi **Aggiungi un calendario** sotto **Altri calendari**.
 2. **Calendario Apple** (iPhone) o **Calendari del telefono** (Android).

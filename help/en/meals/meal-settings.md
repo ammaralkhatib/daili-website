@@ -7,10 +7,10 @@ keywords: meal settings, breakfast, lunch, dinner, snack, servings, portions, fa
 routes: /meal-plan/settings
 tryIt: /meal-plan/settings
 since: 1.15.0
-updated: 2026-11-10
+updated: 2026-11-26
 media: meals-meal-settings
 order: 12
-related: meals-plan-week, meals-leftovers-and-eating-out, meals-suggest
+related: meals-plan-week, meals-leftovers-and-eating-out, meals-suggest, meals-meal-times
 ---
 Tell daili how your family eats.
 

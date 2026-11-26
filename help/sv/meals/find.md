@@ -3,7 +3,7 @@ id: meals-find
 title: Hitta recept: sök, sortera och era egna taggar
 summary: Sök recept efter titel eller ingrediens, sortera listan och gruppera recepten med familjens egna taggar.
 keywords: sök, hitta, ingrediens, taggar, etikett, filter, sortera, nyast, snabbast, glutenfri, favorit, hantera taggar
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Tryck på förstoringsglaset i **Recept** och skriv ett ord. Sökningen letar i titeln och i varje ingrediens, så ”pumpa” hittar alla recept som innehåller pumpa.
 

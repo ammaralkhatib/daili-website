@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Nastavení jídel: která jídla, porce a čas večeře
 summary: Vyber, která jídla tvoje rodina plánuje, kolik porcí obvykle vaříš a kdy máte večeři.
 keywords: nastavení jídel, snídaně, oběd, večeře, svačina, porce, velikost rodiny, čas večeře, rušný večer
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Řekni daili, jak vaše rodina jí.
 

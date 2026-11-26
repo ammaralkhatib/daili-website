@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Culori Google și categorii
 summary: Evenimentele pe care le-ai colorat în Google își păstrează culoarea în daili. Poți da unei culori Google una dintre categoriile tale.
 keywords: culoare google, google color, culoarea evenimentului, culoare, color, categorie, lavandă, salvie, roșie, google calendar
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Evenimentele pe care le-ai colorat în Google Calendar își păstrează culoarea în daili. Evenimentele fără culoare proprie își păstrează culoarea calendarului.
 

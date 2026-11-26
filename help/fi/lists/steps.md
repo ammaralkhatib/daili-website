@@ -3,7 +3,7 @@ id: lists-steps
 title: Vaiheet tehtävän sisällä
 summary: Jaa iso tehtävä pieniin vaiheisiin ja merkitse ne tehdyiksi yksi kerrallaan.
 keywords: vaiheet, alitehtävät, osatehtävät, tarkistuslista, tehtävän sisällä, pilko, pienet vaiheet, edistyminen, merkitse tehdyksi, pakkauslista
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Jaa iso tehtävä, kuten ”Pakkaa matkalle”, pieniin vaiheisiin. Merkitse ne tehdyiksi yksi kerrallaan.
 

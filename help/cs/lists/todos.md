@@ -3,7 +3,7 @@ id: lists-todos
 title: Seznamy úkolů
 summary: Společné seznamy úkolů na domácí práce, pochůzky a věci do školy. Odškrtávej úkoly a měj přehled, kdo co dělá.
 keywords: úkol, úkoly, to-do, povinnosti, pochůzky, checklist, domácnost, odškrtnout, hotovo, seznam, přidat s podrobnostmi
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Úkol může mít navíc člověka, termín a připomenutí.
 

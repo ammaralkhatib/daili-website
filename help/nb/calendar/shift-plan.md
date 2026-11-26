@@ -3,7 +3,7 @@ id: calendar-shift-plan
 title: Planlegg vaktene dine
 summary: Lagre vaktene dine én gang, og trykk så på dager i en måned for å planlegge dem. Hver dag blir en hendelse for familien.
 keywords: vakt, vakter, vaktplan, turnus, vaktliste, arbeidsplan, dagvakt, kveldsvakt, nattevakt, skiftarbeid, sykepleier
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Lagre vaktene dine én gang, og trykk så på dager for å planlegge dem. Hver dag blir en hendelse som familien kan se.
 

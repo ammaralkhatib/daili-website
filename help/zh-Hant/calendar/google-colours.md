@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Google 顏色和分類
 summary: 你在 Google 裡設定了顏色的行程，在 daili 中會保留這個顏色。你可以為某個 Google 顏色指定一個你的分類。
 keywords: google 顏色, google, 行程顏色, 顏色, 分類, 薰衣草紫, 鼠尾草綠, 番茄紅, google 日曆, 行程分類
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 你在 Google 日曆裡設定了顏色的行程，在 daili 中會保留這個顏色。沒有自己顏色的行程會保留所屬行事曆的顏色。
 

@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Koken met wat we hebben
 summary: Vertel daili welk eten je in huis hebt en zie welke van je recepten passen, of krijg nieuwe ideeën van AI.
 keywords: wat kan ik koken, wat heb ik in huis, ingrediënten in huis, koelkast, restjes, opmaken, voorraadkast, voorraadlijst, ideeën, ai-ideeën, foto van de koelkast, wat ontbreekt
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Tik in **Recepten** op **Koken met wat we hebben**.
 2. Typ eten, of tik op je voorraadlijst (heb je er meerdere, kies er een of **Alle voorraadlijsten**), op **Inspreken** of op **Foto** (koelkast of kast, 1 AI-actie).

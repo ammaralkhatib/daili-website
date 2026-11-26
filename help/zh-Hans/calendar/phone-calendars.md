@@ -5,7 +5,7 @@ summary: 在家庭日程旁边显示手机日历或 Google 日历，关注学校
 keywords: 手机日历, 谷歌日历, 添加日历, 订阅, 链接, 学校日历, 工作日历, 仅自己, 在daili中编辑, 已关联, 刷新, 颜色
 tipTitle: 在 daili 里看手机日历
 tipBody: 工作、学校或运动日历可以显示在家庭日程旁边。
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. 打开**日历**，点齿轮，再点**其他日历**下面的**添加日历**。
 2. **Apple日历**（iPhone）或**手机日历**（Android）。

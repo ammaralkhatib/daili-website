@@ -3,7 +3,7 @@ id: lists-todos
 title: Listas de tareas
 summary: Listas de tareas compartidas para la casa, los recados y las cosas del colegio. Marca tareas y mira quién hace qué.
 keywords: tarea, tareas, pendientes, tareas de casa, recados, checklist, hogar, marcar, hecho, lista, añadir con detalles
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Una tarea también puede tener una persona, una fecha límite y un recordatorio.
 

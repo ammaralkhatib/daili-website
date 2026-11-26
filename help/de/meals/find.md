@@ -3,7 +3,7 @@ id: meals-find
 title: Rezepte finden: Suche, Sortierung und eigene Tags
 summary: Such Rezepte nach Titel oder Zutat, sortiere die Liste und ordne Rezepte mit den eigenen Tags deiner Familie.
 keywords: suchen, finden, zutat, tags, label, filter, sortieren, neueste, schnellste, glutenfrei, favorit, tags verwalten
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Tippe auf dem Bildschirm **Rezepte** auf die Lupe und gib ein Wort ein. Die Suche schaut im Titel und in jeder Zutat. So findet „Kürbis“ jedes Rezept mit Kürbis.
 

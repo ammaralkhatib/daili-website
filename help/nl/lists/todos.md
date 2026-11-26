@@ -3,7 +3,7 @@ id: lists-todos
 title: Takenlijsten
 summary: Gedeelde takenlijsten voor klusjes, boodschappen doen en schooldingen. Vink taken af en zie wie wat doet.
 keywords: taak, taken, to-do, todo, klusjes, huishouden, checklist, afvinken, klaar, takenlijst, toevoegen met details
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Een taak kan ook een persoon, een vervaldatum en een herinnering hebben.
 

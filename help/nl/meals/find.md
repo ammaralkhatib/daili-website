@@ -3,7 +3,7 @@ id: meals-find
 title: Recepten vinden: zoeken, sorteren en je eigen tags
 summary: Zoek recepten op titel of ingrediënt, sorteer de lijst, en groepeer recepten met de eigen tags van je gezin.
 keywords: zoeken, vinden, ingrediënt, tags, label, filter, sorteren, nieuwste, snelste, glutenvrij, favoriet, tags beheren
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Tik in **Recepten** op het vergrootglas en typ een woord. Er wordt gezocht in de titel en in elk ingrediënt, dus „pompoen” vindt elk recept met pompoen.
 

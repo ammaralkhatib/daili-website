@@ -3,11 +3,9 @@ id: meals-import-file
 title: Importar recetas desde otra app
 summary: ¿Te pasas desde Paprika? Trae tus recetas a daili de una sola vez, con sus fotos.
 keywords: paprika, importar, archivo, exportar, paprikarecipes, cambiar de app, pasar recetas, app de recetas, muchas recetas, colección, todas a la vez
-translatedFrom: 2026-11-19
+translatedFrom: 2026-11-26
 ---
-¿Te pasas desde Paprika? Trae tus recetas de una sola vez, con las fotos.
-
-En Paprika, exporta en el formato Paprika (un archivo .paprikarecipes) y guárdalo en tu dispositivo, por ejemplo en Archivos o en Descargas. Los nombres de los menús pueden cambiar según la versión.
+En Paprika, exporta un archivo .paprikarecipes (formato Paprika) y guárdalo en tu dispositivo, por ejemplo en Archivos. Los nombres de los menús pueden cambiar.
 
 1. En la pantalla de inicio, toca **Recetas**, luego **+**, luego **Desde otra app** y elige el archivo.
 2. Desmarca lo que no quieras. Las recetas que ya están en daili aparecen desmarcadas.
@@ -18,6 +16,8 @@ Se importan el título, los ingredientes, los pasos, las raciones, los tiempos, 
 
 > Note: Una familia puede tener 50 etiquetas; las categorías que sobran no se añaden. Las recetas muy largas se acortan (100 ingredientes, 50 pasos). El resumen final te lo indica.
 
-> Note: El archivo se lee en tu dispositivo; solo se guardan las recetas importadas. Si vuelves a importar, se omiten las recetas con el mismo nombre y el mismo enlace.
+> Note: El archivo se lee en tu dispositivo; solo se guardan las recetas importadas.
 
-Por ahora solo funcionan los archivos de Paprika, y no en app.daili.app.
+¿Faltan fotos después de **Detener** o sin internet? Vuelve a importar el mismo archivo más tarde. daili las añade y omite las recetas que ya tienes.
+
+Solo archivos de Paprika, y no en app.daili.app.

@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Cuisiner avec ce qu'on a
 summary: Dis à daili quels aliments tu as à la maison et vois lesquelles de tes recettes conviennent, ou demande de nouvelles idées à l'IA.
 keywords: quoi cuisiner, ingrédients à la maison, frigo, restes, finir les restes, placard, liste de stock, idées, idées ia, photo du frigo, dicter les ingrédients, ce qui manque
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Sur **Recettes**, touche **Cuisiner avec ce qu'on a**.
 2. Tape des aliments, ou touche ta liste de stock (s'il y en a plusieurs, choisis-en une ou **Toutes les listes de stock**), **Dicter** ou **Photo** (frigo ou placard, 1 action IA).

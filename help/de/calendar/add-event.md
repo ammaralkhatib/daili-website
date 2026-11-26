@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Einen Termin hinzufügen
 summary: Trag einen Arzttermin, eine Reise oder ein Spiel in den Familienkalender ein, damit alle es sehen.
 keywords: termin hinzufügen, neuer termin, termin erstellen, arzttermin, verabredung, planen, datum, kalendereintrag, ganztägig, weitere tage, mehrere tage
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Alle in deiner Familie sehen einen neuen Termin sofort.
 

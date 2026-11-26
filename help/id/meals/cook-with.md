@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Masak dengan yang ada
 summary: Beri tahu daili bahan makanan apa yang ada di rumah dan lihat resep Anda yang cocok, atau dapatkan ide baru dari AI.
 keywords: masak apa, bahan di rumah, kulkas, sisa makanan, habiskan bahan, dapur, daftar stok, ide masak, ide ai, foto kulkas, sebutkan bahan, bahan kurang
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Di **Resep**, ketuk **Masak dengan yang ada**.
 2. Ketik bahan, atau ketuk daftar stok Anda (jika ada beberapa, pilih satu atau **Semua daftar stok**), **Ucapkan**, atau **Foto** (kulkas atau lemari, 1 aksi AI).

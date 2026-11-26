@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Vařit z toho, co máme
 summary: Řekni daili, jaké jídlo máš doma, a uvidíš, které tvoje recepty se hodí — nebo si nech od AI dát nové nápady.
 keywords: co uvařit, suroviny doma, lednice, zbytky, spotřebovat, spíž, seznam zásob, nápady, nápady ai, fotka lednice, říct suroviny, chybí
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Na obrazovce **Recepty** klepni na **Vařit z toho, co máme**.
 2. Napiš jídlo, nebo klepni na svůj seznam zásob (když jich máš víc, vyber jeden nebo **Všechny seznamy zásob**), na **Říct** nebo na **Foto** (lednice nebo skříňka, 1 akce AI).

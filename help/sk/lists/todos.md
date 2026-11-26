@@ -3,7 +3,7 @@ id: lists-todos
 title: Zoznamy úloh
 summary: Spoločné zoznamy úloh na domáce práce, pochôdzky a školské veci. Odškrtávaj úlohy a pozri sa, kto čo robí.
 keywords: úloha, úlohy, to-do, domáce práce, pochôdzky, kontrolný zoznam, domácnosť, odškrtnúť, hotovo, zoznam, pridať s podrobnosťami
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 Úloha môže mať aj osobu, termín a pripomienku.
 

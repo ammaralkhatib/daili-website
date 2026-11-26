@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Warna Google dan kategori
 summary: Acara yang Anda beri warna di Google tetap memakai warna itu di daili. Anda bisa memberi sebuah warna Google salah satu kategori Anda.
 keywords: warna google, google, warna acara, warna, kategori, lavender, sage, tomat, google calendar, kalender google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Acara yang Anda beri warna di Google Calendar tetap memakai warna itu di daili. Acara tanpa warna sendiri tetap memakai warna kalendernya.
 

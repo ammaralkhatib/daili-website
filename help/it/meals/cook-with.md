@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Cucina con quello che c'è
 summary: Di' a daili quali alimenti hai in casa e scopri quali delle tue ricette vanno bene, o chiedi nuove idee all'IA.
 keywords: cosa cucino, ingredienti in casa, frigo, avanzi, svuotafrigo, consumare, dispensa, lista delle scorte, idee, idee ia, foto del frigo, dettare ingredienti
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. In **Ricette**, tocca **Cucina con quello che c'è**.
 2. Scrivi gli alimenti, o tocca la tua lista delle scorte (se ne hai più di una, scegline una o **Tutte le liste scorte**), **Dillo** o **Foto** (frigo o dispensa, 1 azione IA).

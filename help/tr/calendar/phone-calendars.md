@@ -5,7 +5,7 @@ summary: Telefonundaki takvimleri ya da Google Takvim'i aile etkinliklerinin yan
 keywords: telefon takvimi, google takvim, takvim ekle, abone ol, bağlantı, okul takvimi, iş takvimi, sadece ben, daili'de düzenle, bağlı, yenile, renk
 tipTitle: Telefonundaki takvimleri daili'de gör
 tipBody: İş, okul ya da spor takvimlerin aile etkinliklerinin yanında görünebilir.
-translatedFrom: 2026-11-16
+translatedFrom: 2026-11-26
 ---
 1. **Takvim** ekranını aç, dişliye dokun, sonra **Diğer takvimler** altında **Takvim ekle** seçeneğine dokun.
 2. **Apple Takvim** (iPhone) ya da **Telefon takvimleri** (Android).

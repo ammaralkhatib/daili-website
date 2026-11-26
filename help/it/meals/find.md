@@ -3,7 +3,7 @@ id: meals-find
 title: Trovare le ricette: ricerca, ordinamento ed etichette personali
 summary: Cerca le ricette per titolo o ingrediente, ordina l'elenco e raggruppa le ricette con le etichette della tua famiglia.
 keywords: cerca, trova, ingrediente, etichette, tag, filtro, ordinare, più recenti, più veloci, senza glutine, preferita, gestisci etichette
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 In **Ricette**, tocca la lente e scrivi una parola. La ricerca guarda nel titolo e in ogni ingrediente, quindi «zucca» trova tutte le ricette che usano la zucca.
 

@@ -3,7 +3,7 @@ id: calendar-add-event
 title: Přidat událost
 summary: Zapiš do rodinného kalendáře návštěvu lékaře, výlet nebo zápas, ať to vidí všichni.
 keywords: přidat událost, nová událost, vytvořit událost, schůzka, termín, naplánovat, datum, záznam v kalendáři, celý den, další dny, více dní
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Novou událost hned vidí každý v rodině.
 

@@ -7,10 +7,10 @@ keywords: category, categories, colour, color, label, tag, sort, work, school, s
 routes: /family/event-categories
 tryIt: /family/event-categories
 since: 1.3.0
-updated: 2026-09-24
+updated: 2026-11-26
 media: calendar-categories
 order: 8
-related: calendar-add-event, calendar-views
+related: calendar-add-event, calendar-views, calendar-google-colours
 ---
 An event's colour comes from its category. So "Sport" looks the same everywhere. Every family starts with six: Family, Work, School, Sport, Health and Free time.
 

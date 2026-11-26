@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Impostazioni pasti: quali pasti, porzioni e ora di cena
 summary: Scegli quali pasti pianifica la tua famiglia, quante porzioni cucini di solito e a che ora cenate.
 keywords: impostazioni pasti, colazione, pranzo, cena, spuntino, porzioni, quanti siamo, ora di cena, serata piena
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Di' a daili come mangia la tua famiglia.
 

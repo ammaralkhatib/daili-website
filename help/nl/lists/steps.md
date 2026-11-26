@@ -3,7 +3,7 @@ id: lists-steps
 title: Stappen in een taak
 summary: Deel een grote taak op in kleine stappen en vink ze een voor een af.
 keywords: stappen, subtaken, deeltaken, checklist, taak opdelen, kleine stappen, voortgang, afvinken, paklijst, tussenstappen
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 Deel een grote taak, zoals 'Inpakken voor de reis', op in kleine stappen. Vink ze een voor een af.
 

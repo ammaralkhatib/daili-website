@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Laga mat med det vi har
 summary: Berätta för daili vilken mat ni har hemma och se vilka av era recept som passar, eller få nya idéer från AI.
 keywords: vad kan jag laga, vad har vi hemma, ingredienser hemma, kylskåp, rester, använda upp, skafferi, förrådslista, idéer, ai-idéer, foto av kylskåpet, saknas
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Tryck på **Laga mat med det vi har** i **Recept**.
 2. Skriv in mat, eller tryck på din förrådslista (har du flera, välj en eller **Alla förrådslistor**), **Säg det** eller **Foto** (kylskåp eller skåp, 1 AI-åtgärd).

@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Кольори Google і категорії
 summary: Події з кольором із Google зберігають цей колір у daili. Ти можеш дати кольору Google одну зі своїх категорій.
 keywords: колір google, google color, колір події, колір, категорія, лаванда, шавлія, томат, google calendar, календар google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Події, яким у Google Calendar дали колір, зберігають цей колір у daili. Події без власного кольору зберігають колір свого календаря.
 

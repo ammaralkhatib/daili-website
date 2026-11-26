@@ -7,10 +7,10 @@ keywords: search, find, ingredient, tags, label, filter, sort, newest, quickest,
 routes: /recipes
 tryIt: /recipes
 since: 1.9.0
-updated: 2026-11-10
+updated: 2026-11-26
 media: meals-tags
 order: 1
-related: meals-add-recipe, meals-plan-week
+related: meals-add-recipe, meals-plan-week, meals-cook-with
 ---
 On **Recipes**, tap the magnifier and type a word. Search looks in the title and in every ingredient, so "pumpkin" finds every recipe that uses pumpkin.
 

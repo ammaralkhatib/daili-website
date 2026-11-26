@@ -3,7 +3,7 @@ id: meals-cook-with
 title: Lav mad med det, vi har
 summary: Fortæl daili, hvilken mad I har derhjemme, og se, hvilke af jeres opskrifter der passer, eller få nye idéer fra AI.
 keywords: hvad kan jeg lave, hvad har vi derhjemme, ingredienser, køleskab, rester, brug op, spisekammer, lagerliste, idéer, ai-idéer, foto af køleskabet, mangler
-translatedFrom: 2026-11-22
+translatedFrom: 2026-11-26
 ---
 1. Tryk på **Lav mad med det, vi har** i **Opskrifter**.
 2. Skriv mad, eller tryk på din lagerliste (har du flere, så vælg én eller **Alle lagerlister**), **Sig det** eller **Foto** (køleskab eller skab, 1 AI-handling).

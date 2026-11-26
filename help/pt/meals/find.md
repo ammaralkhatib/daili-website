@@ -3,7 +3,7 @@ id: meals-find
 title: Encontrar receitas: busca, ordem e etiquetas próprias
 summary: Pesquise receitas por título ou ingrediente, ordene a lista e agrupe as receitas com as etiquetas da sua família.
 keywords: buscar, pesquisar, ingrediente, etiquetas, filtro, ordenar, mais novas, mais rápidas, sem glúten, favorita, gerenciar etiquetas
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Em **Receitas**, toque na lupa e digite uma palavra. A busca olha o título e cada ingrediente, então “abóbora” encontra todas as receitas que levam abóbora.
 

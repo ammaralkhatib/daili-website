@@ -3,7 +3,7 @@ id: meals-meal-settings
 title: Configurações das refeições: quais refeições, porções e hora do jantar
 summary: Escolha quais refeições sua família planeja, quantas porções você costuma cozinhar e a que horas vocês jantam.
 keywords: configurações das refeições, café da manhã, almoço, jantar, lanche, porções, tamanho da família, hora do jantar, noite ocupada
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 Conte ao daili como sua família come.
 

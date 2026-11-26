@@ -3,7 +3,7 @@ id: calendar-google-colours
 title: Kolory Google i kategorie
 summary: Wydarzenia, którym nadasz kolor w Google, zachowują go w daili. Możesz przypisać kolorowi Google jedną ze swoich kategorii.
 keywords: kolor google, google color, kolor wydarzenia, kolor, kategoria, lawenda, szałwia, pomidor, kalendarz google, google
-translatedFrom: 2026-11-24
+translatedFrom: 2026-11-26
 ---
 Wydarzenia, którym nadasz kolor w Kalendarzu Google, zachowują ten kolor w daili. Wydarzenia bez własnego koloru zachowują kolor swojego kalendarza.
 

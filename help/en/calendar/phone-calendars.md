@@ -7,9 +7,9 @@ keywords: phone calendar, google calendar, add calendar, subscribe, link, school
 routes: /calendar/settings
 tryIt: /calendar/settings
 since: 1.3.0
-updated: 2026-11-16
+updated: 2026-11-26
 media: calendar-other-calendars
-related: calendar-import, calendar-private, calendar-views
+related: calendar-import, calendar-private, calendar-views, calendar-two-way
 tipTitle: See your phone's calendars in daili
 tipBody: Work, school or sports calendars can show up next to family events.
 tipSkipIf: hasPhoneCalendars

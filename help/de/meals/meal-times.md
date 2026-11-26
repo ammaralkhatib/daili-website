@@ -3,7 +3,7 @@ id: meals-meal-times
 title: Essenszeiten: eine Uhrzeit für jede Mahlzeit
 summary: Gib jeder Mahlzeit eine übliche Zeit, leg eine einzelne Mahlzeit auf eine andere Zeit und sieh deine Mahlzeiten zu ihrer Uhrzeit im Kalender.
 keywords: essenszeit, uhrzeit, frühstückszeit, mittagszeit, zeit fürs abendessen, snackzeit, mehrere snacks, kalender, zeitblock, nur diese mahlzeit, diese und künftige
-translatedFrom: 2026-11-25
+translatedFrom: 2026-11-26
 ---
 Jede Mahlzeit kann eine Uhrzeit haben, und der Kalender zeigt die Mahlzeiten zu ihrer Zeit.
 

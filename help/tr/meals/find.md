@@ -3,7 +3,7 @@ id: meals-find
 title: Tarif bul: arama, sıralama ve kendi etiketlerin
 summary: Tarifleri başlığa ya da malzemeye göre ara, listeyi sırala ve tarifleri ailenin kendi etiketleriyle grupla.
 keywords: ara, arama, bul, malzeme, etiketler, filtre, sırala, en yeni, en hızlı, glutensiz, favori, etiketleri yönet
-translatedFrom: 2026-11-10
+translatedFrom: 2026-11-26
 ---
 **Tarifler** ekranında büyütece dokun ve bir kelime yaz. Arama başlığa ve her malzemeye bakar, yani "balkabağı" balkabağı içeren her tarifi bulur.
 
